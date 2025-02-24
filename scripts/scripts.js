@@ -337,7 +337,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-    
+
     document.getElementById("add-text-btn").addEventListener("click", createTextCanvasItem);
 });
 
@@ -957,6 +957,7 @@ function loadProducts() {
     productListContent.appendChild(productItems);
 
     let renderToken = 0; // Global token to track the current render
+    let productsAmount_before = 0;
 
     function renderProductList() {
         // Increase the token each time we start a new render.
@@ -972,8 +973,8 @@ function loadProducts() {
         const outputTerm = outputFilter.value.toLowerCase().trim();
 
         productItems.innerHTML = "";
+
         let productsAmount_after = 0;
-        let productsAmount_before;
 
         for (const product of products) {
             // Check if a new input event has occurred by comparing tokens.
@@ -1014,32 +1015,59 @@ function loadProducts() {
             productsAmount_after++;
 
             // Optionally, update the product count incrementally if desired.
-            document.getElementById("productsLabel").innerHTML = `Products (${productsAmount})`;
+            //document.getElementById("productsLabel").innerHTML = `Products (${productsAmount_after})`;
 
         }
-        
+
         // Final update if needed.
         productsAmountAnimation(productsAmount_before, productsAmount_after);
-        console.log("Products displayed:", productsAmount1);
-        console.log("Products displayed:", productsAmount);
+        productsAmount_before = productsAmount_after;
+        console.log("Products displayed:", productsAmount_after);
+        console.log("Products displayed:", productsAmount_before);
     }
 
-    function lerp( a, b, alpha ) {
-        return a + alpha * ( b - a );
-       }
+    function lerp(a, b, alpha) {
+        return a + alpha * (b - a);
+    }
+
+    function easeInOutElastic(x) {
+        const c5 = (2 * Math.PI) / 4.5;
+
+        return x === 0
+            ? 0
+            : x === 1
+                ? 1
+                : x < 0.5
+                    ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) / 2
+                    : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) / 2 + 1;
+    }
+
+    function easeOutCubic(x) {
+        return 1 - Math.pow(1 - x, 3);
+        }
+
+        function easeInOutQuart(x) {
+            return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
+            }
 
     function productsAmountAnimation(from, to) {
         const start = performance.now();
         const animLength = 1000;
+        console.log("From:", from);
+        console.log("To:", to);
 
         const timerId = setInterval(() => {
             const alpha = (performance.now() - start) / animLength;
-            document.getElementById("productsLabel").innerHTML = `Products (${lerp(from, to, alpha)})`;
+            console.log("alpha", alpha);
 
-            if (alpha > 1) {
+            document.getElementById("productsLabel").innerHTML = `Products (${Math.round(lerp(from, to, easeInOutQuart(Math.min(1, alpha))))})`;
+
+            if (alpha >= 1) {
+                console.log("done");
                 clearInterval(timerId);
             }
-        }, 33);
+        }, 16);
+
     }
 
     // Debounce the input to avoid rapid re-calls.
