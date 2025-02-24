@@ -959,7 +959,97 @@ function loadProducts() {
     let renderToken = 0; // Global token to track the current render
     let productsAmount_before = 0;
 
+    function updateProductList() {
+        console.log("updating product list");
+        // Increase the token each time we start a new render.
+        renderToken++;
+        const token = renderToken; // Capture the current token value
+
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const searchWords = searchTerm.split(/\s+/).filter(Boolean);
+        const selectedBrand = brandSelect.value;
+        const minPrice = parseFloat(minPriceInput.value) || 0;
+        const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
+        const inputTerm = inputFilter.value.toLowerCase().trim();
+        const outputTerm = outputFilter.value.toLowerCase().trim();
+
+        //productItems.innerHTML = "";
+
+        let productsAmount_after = 0;
+
+        for (const product of products) {
+            // Check if a new input event has occurred by comparing tokens.
+            if (token !== renderToken) {
+                console.log("Render aborted due to new input");
+                return; // Abort this render loop.
+            }
+
+            // Exclude cable products.
+            if (product.category && product.category.toLowerCase() === "cable") {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+
+            const combinedData = (
+                product.name + " " +
+                product.brand + " " +
+                product.sku + " " +
+                (product.inputs || []).join(" ") + " " +
+                (product.outputs || []).join(" ")
+            ).toLowerCase();
+
+            const matchesSearch = searchWords.every(word => combinedData.includes(word));
+            if (!matchesSearch) {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+            if (selectedBrand && product.brand !== selectedBrand) {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+
+            const priceNum = parseFloat(product.price);
+            if (priceNum < minPrice || priceNum > maxPrice) {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+            if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+            if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) {
+                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                continue;
+            };
+
+            productItems.children[products.indexOf(product)].classList.remove("hidden-product");
+
+            // Create product element.
+            let item = document.createElement("div");
+            item.className = "product";
+            item.draggable = true;
+            item.innerHTML = `<img draggable="false" src="${product.image[0]}" alt="${product.name}"><br><strong>${product.name}</strong>`;
+            item.dataset.index = products.indexOf(product);
+            item.addEventListener("dragstart", dragStart);
+            productItems.appendChild(item);
+
+            productsAmount_after++;
+
+            // Optionally, update the product count incrementally if desired.
+            //document.getElementById("productsLabel").innerHTML = `Products (${productsAmount_after})`;
+
+        }
+
+        // Final update if needed.
+        productsAmountAnimation(productsAmount_after);
+        productsAmount_before = productsAmount_after;
+        console.log("Products displayed:", productsAmount_after);
+        console.log("Products displayed:", productsAmount_before);
+    }
+
     function renderProductList() {
+        console.log("rendering product list");
+
         // Increase the token each time we start a new render.
         renderToken++;
         const token = renderToken; // Capture the current token value
@@ -1020,7 +1110,7 @@ function loadProducts() {
         }
 
         // Final update if needed.
-        productsAmountAnimation(productsAmount_before, productsAmount_after);
+        productsAmountAnimation(productsAmount_after);
         productsAmount_before = productsAmount_after;
         console.log("Products displayed:", productsAmount_after);
         console.log("Products displayed:", productsAmount_before);
@@ -1044,27 +1134,54 @@ function loadProducts() {
 
     function easeOutCubic(x) {
         return 1 - Math.pow(1 - x, 3);
+    }
+
+    function easeInOutQuart(x) {
+        return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
+    }
+
+    let animation_id;
+    let animation_value = 0;
+    let animation_target = 0;
+
+    function productsAmountAnimation(to) {
+        animation_target = to;
+
+        if (animation_id) {
+            return;
         }
 
-        function easeInOutQuart(x) {
-            return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
-            }
+        animation_id = setInterval(() => {
+            var delta = Math.abs(animation_value - animation_target);
 
-    function productsAmountAnimation(from, to) {
+            animation_value = lerp(animation_value, animation_target, delta > 5 ? 0.15 : 0.05);
+            document.getElementById("productsLabel").innerHTML = `Products: ${Math.round(animation_value)}`;
+            
+            if (delta < 0.4) {
+                clearInterval(animation_id);
+                animation_id = undefined;
+            }
+        }, 16);
+
+        return;
+// OLD
         const start = performance.now();
         const animLength = 1000;
-        console.log("From:", from);
-        console.log("To:", to);
 
-        const timerId = setInterval(() => {
+        if (animation_id) {
+            clearInterval(animation_id);
+        }
+
+        animation_id = setInterval(() => {
             const alpha = (performance.now() - start) / animLength;
-            console.log("alpha", alpha);
 
-            document.getElementById("productsLabel").innerHTML = `Products (${Math.round(lerp(from, to, easeInOutQuart(Math.min(1, alpha))))})`;
+            animation_value = Math.round(lerp(animation_value, to, easeInOutQuart(Math.min(1, alpha))));
+
+            document.getElementById("productsLabel").innerHTML = `Products (${animation_value})`;
 
             if (alpha >= 1) {
-                console.log("done");
-                clearInterval(timerId);
+                clearInterval(animation_id);
+                animation_id = undefined;
             }
         }, 16);
 
@@ -1081,7 +1198,7 @@ function loadProducts() {
         };
     }
 
-    const debouncedRender = debounce(renderProductList, 0);
+    const debouncedRender = debounce(updateProductList, 0);
 
     searchInput.addEventListener("input", debouncedRender);
 
@@ -1090,7 +1207,7 @@ function loadProducts() {
         if (event.key === "Enter") {
             // Cancel the debounced call if needed
             debouncedRender.cancel && debouncedRender.cancel();
-            renderProductList();
+            updateProductList();
         }
     });
     renderProductList();
