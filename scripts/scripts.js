@@ -976,6 +976,7 @@ function loadProducts() {
         //productItems.innerHTML = "";
 
         let productsAmount_after = 0;
+        const childs = Array.from(productItems.children);
 
         for (const product of products) {
             // Check if a new input event has occurred by comparing tokens.
@@ -986,7 +987,6 @@ function loadProducts() {
 
             // Exclude cable products.
             if (product.category && product.category.toLowerCase() === "cable") {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
                 continue;
             };
 
@@ -1000,38 +1000,34 @@ function loadProducts() {
 
             const matchesSearch = searchWords.every(word => combinedData.includes(word));
             if (!matchesSearch) {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
             };
             if (selectedBrand && product.brand !== selectedBrand) {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
             };
 
             const priceNum = parseFloat(product.price);
             if (priceNum < minPrice || priceNum > maxPrice) {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
             };
             if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
             };
             if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) {
-                productItems.children[products.indexOf(product)].classList.add("hidden-product");
+                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
             };
 
-            productItems.children[products.indexOf(product)].classList.remove("hidden-product");
+            childs.find(o => o.dataset.index == products.indexOf(product)).classList.remove("hidden-product");
+
+            //productItems.children[].classList.remove("hidden-product");
 
             // Create product element.
-            let item = document.createElement("div");
-            item.className = "product";
-            item.draggable = true;
-            item.innerHTML = `<img draggable="false" src="${product.image[0]}" alt="${product.name}"><br><strong>${product.name}</strong>`;
-            item.dataset.index = products.indexOf(product);
-            item.addEventListener("dragstart", dragStart);
-            productItems.appendChild(item);
+
 
             productsAmount_after++;
 
