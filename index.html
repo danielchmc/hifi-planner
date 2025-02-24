@@ -1,0 +1,121 @@
+<!--- 
+TODO's
+XLR L/R -> BAL IN L/R 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Harmattan:wght@400;500;600;700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <link type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/styles/overlayscrollbars.min.css"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Product Assembler - With Floating Price Panel</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- html2canvas library for exporting the canvas as an image -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <link type="text/css" rel="stylesheet" href="styles/css.css" />
+</head>
+
+<body class="dark-mode">
+  <!-- Canvas Container -->
+  <div id="canvas-container">
+    <div id="canvas-content">
+      <svg id="connection-layer">
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+          </marker>
+        </defs>
+      </svg>
+    </div>
+    <!-- Note: The floating price panel is placed outside #canvas-content so that it stays fixed. -->
+    <div id="price-panel">
+      <h3>Items & Prices</h3>
+      <ul id="price-list"></ul>
+      <div id="total-price">Total: 0,-</div>
+    </div>
+    <button id="scrollBtn" onclick="scrollToTop()"> <!-- penis -->
+      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+      <svg width="400px" height="400px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
+        stroke="#555555" stroke-width="1px">
+        <polyline points="40 36 32 28 24 36" />
+        <rect x="0" y="0" width="64" height="64" />
+      </svg>
+    </button>
+  </div>
+  <!-- Floating Product List (Collapsible) -->
+  <div data-simplebar id="floating-product-list">
+    <header>
+      <span id="productsLabel">Products</span>
+      <span class="toggle-icon">&#x25B2;</span>
+    </header>
+    <div class="content">
+      <!-- Product filters and items will be loaded here -->
+    </div>
+  </div>
+
+  <div id="headermenu">
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <button id="add-text-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--hifi-white)"
+        stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+        <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path>
+        <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
+      </svg>
+    </button>
+    <!-- Export Button -->
+    <button id="export-btn">
+      <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080"
+        height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+        <desc>Created with Fabric.js 5.2.4</desc>
+        <defs>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+        <g transform="matrix(1 0 0 1 540 540)" id="59ad2c1f-4ed5-4a40-8cf1-46b10ce9f214">
+          <rect
+            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;"
+            vector-effect="non-scaling-stroke" x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+        </g>
+        <g transform="matrix(1 0 0 1 540 540)" id="ab74582c-a66c-4bbf-b8d2-9c6d17d9da86">
+        </g>
+        <g transform="matrix(4.92 0 0 4.92 539.72 539.72)" id="path1274">
+          <path
+            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: var(--hifi-white); fill-rule: evenodd; opacity: 1;"
+            transform=" translate(6844.23, -3540.16)"
+            d="M -6844.2302 3441.3444 C -6846.8190347648315 3441.3444 -6848.9177 3443.443065235168 -6848.9177 3446.0319 L -6848.9177 3581.8668 L -6884.5555 3547.7781 C -6885.453521831977 3546.9185392570826 -6886.656199667184 3546.450885165995 -6887.899 3546.478 C -6889.1421602017745 3546.5062253357582 -6890.323165350101 3547.0272474967755 -6891.1821 3547.9264000000003 C -6892.971172976812 3549.7968787051313 -6892.905589175196 3552.763415358985 -6891.0356 3554.5530000000003 L -6847.5444 3596.1491000000005 L -6847.471399999999 3596.2201000000005 C -6847.314131130625 3596.344694639652 -6847.149024851047 3596.459063221743 -6846.977099999999 3596.5625000000005 C -6846.780453229754 3596.723888579452 -6846.570994820841 3596.869001151106 -6846.350799999999 3596.9964000000004 C -6846.276630769591 3597.031970116416 -6846.201538097206 3597.0655817566308 -6846.125599999999 3597.0972000000006 C -6845.974877077202 3597.15138828925 -6845.821475853133 3597.197815857283 -6845.665999999999 3597.2363000000005 C -6845.439817187002 3597.323794410603 -6845.207185438953 3597.3936039952428 -6844.970199999999 3597.4451000000004 C -6844.81320379098 3597.460376961959 -6844.65553652482 3597.4677196373514 -6844.497799999999 3597.4671000000003 C -6844.411054508827 3597.487249971734 -6844.323752406915 3597.504923812075 -6844.235999999999 3597.5201 C -6844.1482337551215 3597.505588569865 -6844.060898383696 3597.4885816819587 -6843.9740999999985 3597.4691000000003 C -6843.818164351022 3597.468870999435 -6843.662337257591 3597.4608610396094 -6843.507199999998 3597.4451000000004 C -6843.270214561044 3597.3936039952428 -6843.037582812995 3597.323794410603 -6842.811399999998 3597.2363000000005 C -6842.808066667612 3597.2363035555572 -6842.804733332383 3597.2363035555572 -6842.801399999998 3597.2363000000005 C -6842.644675572036 3597.1979379936924 -6842.490036386711 3597.1515095225536 -6842.338099999997 3597.0972000000006 C -6842.264030393756 3597.0660881554386 -6842.190772859898 3597.0330772503316 -6842.118399999998 3596.9982000000005 C -6841.896211440637 3596.869868338886 -6841.684934986863 3596.723509978633 -6841.486699999998 3596.5606000000002 C -6841.316058600751 3596.457614284365 -6841.152159256382 3596.3438500359603 -6840.995999999997 3596.2200000000003 L -6840.925999999998 3596.1540000000005 C -6840.922327251589 3596.150339420123 -6840.918660579875 3596.1466727484085 -6840.914999999997 3596.1430000000005 L -6797.431099999997 3554.5524000000005 C -6795.561110824801 3552.7628153589853 -6795.495527023185 3549.7962787051315 -6797.284599999997 3547.9258000000004 C -6798.1435346498965 3547.0266474967757 -6799.324539798223 3546.5056253357584 -6800.567699999997 3546.4774 C -6801.810500332813 3546.450285165995 -6803.01317816802 3546.9179392570827 -6803.911199999997 3547.7775 L -6839.545399999997 3581.8626 L -6839.545399999997 3446.0313 C -6839.545399999997 3443.442465235168 -6841.644065235166 3441.3438 -6844.232899999997 3441.3438 z M -6939.4066 3557.6292 C -6941.995434764832 3557.6292 -6944.0941 3559.727865235168 -6944.0941 3562.3167 L -6944.0941 3634.2898999999998 C -6944.074189596616 3635.0263690940724 -6943.88096498312 3635.747775244138 -6943.5301 3636.3956 C -6943.474192317107 3636.51719254095 -6943.413103015398 3636.636335029427 -6943.347 3636.7527 C -6942.9716040189705 3637.3510392526823 -6942.465839252682 3637.856804018971 -6941.867499999999 3638.2322 C -6941.75113654927 3638.2976904566463 -6941.632027917981 3638.358178957634 -6941.510499999999 3638.4135 C -6940.86320595515 3638.7640574057273 -6940.142448905717 3638.9572390684375 -6939.406599999999 3638.9774 L -6749.0574 3638.9774 C -6748.320939067177 3638.9575203838845 -6747.599533393137 3638.7643301575504 -6746.9517 3638.4135 C -6746.83078172993 3638.358132813711 -6746.712274511417 3638.2976447542615 -6746.5965 3638.2322 C -6745.996446451712 3637.8561725210466 -6745.489387020049 3637.3490789002244 -6745.113399999999 3636.749 C -6745.049313212073 3636.6349638627044 -6744.990027984328 3636.5182950718086 -6744.935699999999 3636.3992999999996 C -6744.583646699155 3635.7505225030336 -6744.389785416825 3635.02777420161 -6744.369899999999 3634.2898999999998 L -6744.369899999999 3562.3167 C -6744.369899999999 3559.727865235168 -6746.468565235167 3557.6292 -6749.057399999999 3557.6292 C -6751.64623476483 3557.6292 -6753.744899999999 3559.727865235168 -6753.744899999999 3562.3167 L -6753.744899999999 3629.6023999999998 L -6934.719099999998 3629.6023999999998 L -6934.719099999998 3562.3167 C -6934.719099999998 3559.727865235168 -6936.817765235167 3557.6292 -6939.406599999998 3557.6292 z"
+            stroke-linecap="round" />
+        </g>
+      </svg>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/js/OverlayScrollbars.min.js"></script>
+
+
+</body>
+
+</html>

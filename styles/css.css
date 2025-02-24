@@ -1,0 +1,912 @@
+:root {
+    font-family: "Red Hat Text", serif;
+    --primary-color: #F16A52;
+    /* --primary-color: #EEEEEE;*/
+    --hover-color: #EAEBE8;
+    --secondary-color: #14BDEB;
+    --bg-color: #CFE0C3;
+    --panel-bg: #FFFFFF;
+    --border-color: #D8DBE2;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hifi-black: #333333;
+    --hifi-white: #FAFAFF;
+    transition: fill 0.3, background-color 0.3s, color 0.3s, border-color 0.3;
+
+    --background-gradient: #8e9eab;
+    /* fallback for old browsers */
+    --background-gradient: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --background-gradient: linear-gradient(to right, #eef2f3, #8e9eab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    --background-gradient4: #606c88;
+    /* fallback for old browsers */
+    --background-gradient4: -webkit-linear-gradient(to right, #332320, #9D726A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --background-gradient4: linear-gradient(to right, #332320, #9D726A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    --background-gradient3: #485563;
+    /* fallback for old browsers */
+    --background-gradient3: -webkit-linear-gradient(to right, #282828, #222222);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --background-gradient3: linear-gradient(to right, #282828, #222222);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    --background-gradient2: #abbaab;
+    /* fallback for old browsers */
+    --background-gradient2: -webkit-linear-gradient(to right, #ffffff, #8a8a8a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --background-gradient2: linear-gradient(to right, #ffffff, #e0e0e0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-mode {
+    --hifi-black: #FAFAFF;
+    --hifi-white: #333333;
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 5vh;
+    height: 5vh;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--hifi-black);
+    -webkit-transition: .4s;
+    transition: .2s;
+}
+
+.slider:hover {
+    background-color: var(--primary-color);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.8vh;
+    width: 1.8vh;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--hifi-white);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+input:checked+.slider {
+    background-color: var(--hifi-black);
+}
+
+h3 {
+    font-family: "Dela Gothic One", serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Dela Gothic One", serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 10px;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(2vh);
+    -ms-transform: translateX(2vh);
+    transform: translateX(1.1vw);
+}
+
+input:checked+.slider:hover {
+    background-color: var(--primary-color);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 0px;
+}
+
+.slider.round:before {
+    border-radius: 0%;
+}
+
+#headermenu {
+    position: fixed;
+    /* Fixes the container relative to the viewport */
+    top: 5vh;
+    /* Adjust as needed */
+    right: 5vh;
+    /* Adjust as needed */
+    display: flex;
+    /* Places child elements side-by-side */
+    gap: 0.5vh;
+    /* Optional spacing between the buttons */
+    z-index: 1350;
+    /* Ensures they stay on top */
+}
+
+#scrollBtn {
+    position: fixed;
+    top: calc(100vh - 60px);
+    right: calc(100vw - 288px);
+    display: none;
+    /* Hidden by default */
+    padding: 0px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    background: white;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    z-index: 2500;
+    transition-duration: 0.1s;
+    transform-origin: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 0px #555555;
+    animation: reminder 5s infinite;
+}
+
+@keyframes reminder {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: translateY(-5px);
+    }
+
+    90% {
+        transform: translateY(0px);
+    }
+
+    95% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#scrollBtn svg {
+    width: 100%;
+    height: 100%;
+}
+
+#scrollBtn:hover {
+    animation: none;
+    box-shadow: 0px 1px 5px 0px #888888;
+    transform: scale(1.05);
+}
+
+#scrollBtn:active {
+    transform: scale(0.97);
+}
+
+/* Optional: Style for the container */
+.toggle-container,
+#export-btn,
+#add-text-btn {
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    transform: translate(-50%, -50%);
+    width: 5vh;
+    height: 5vh;
+    border-radius: 0%;
+    border-color: var(--border-color);
+    background-color: var(--hifi-black);
+    font-size: 0;
+    opacity: 1;
+    z-index: 1350;
+    transition-duration: 0.2s;
+    transform-origin: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.toggle-container:active,
+#export-btn:active,
+#add-text-btn:active {
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+/* Optional: style the SVG so that it inherits currentColor */
+svg {
+    width: 32px;
+    height: 32px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--hifi-white);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+    transition: background 0.2s;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Canvas Container fills the whole window */
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    cursor: grab;
+    background-size: 10px 10px;
+}
+
+#canvas-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Virtual canvas (increased size) */
+#canvas-content {
+    position: relative;
+    width: 19200px;
+    height: 10800px;
+    z-index: 1300;
+}
+
+#canvas-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(0deg, var(--hifi-black) 1px, transparent 0.1px),
+        linear-gradient(90deg, var(--hifi-black) 1px, transparent 0.1px);
+    background-size: 10px 10px;
+    opacity: 0.05;
+    /* Adjust as needed */
+    z-index: -1;
+}
+
+/* Floating Product List (collapsible) */
+#floating-product-list {
+    position: fixed;
+    top: 2.5vh;
+    left: 2.5vh;
+    width: 280px;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    z-index: 1300;
+    overflow: hidden;
+    transition: transform 0.3s ease, height 0.3s;
+}
+
+#floating-product-list header {
+    background: var(--hifi-black);
+    color: var(--hifi-white);
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.2s ease, height 0.3s;
+}
+
+#floating-product-list header:hover {
+    background-color: var(--primary-color);
+}
+
+#floating-product-list header:active {
+    background-color: #d85f4aea;
+}
+
+#floating-product-list header span {
+    font-weight: bold;
+}
+
+#floating-product-list header .toggle-icon {
+    font-size: 14px;
+}
+
+#floating-product-list .content {
+    padding: 12px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+#floating-product-list .content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Filters and product items */
+#filter-container input,
+#filter-container select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#searchbar-container {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#filter-container input:focus,
+#filter-container select:focus {
+    outline: none;
+    border-color: var(--hifi-black);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#filter-container {
+    position: sticky;
+}
+
+.collapsible-header {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 5px;
+    user-select: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, height 0.3s;
+}
+
+.collapsible-header:hover {
+    background-color: var(--primary-color);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#product-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    position: relative;
+    /* Establishes a containing block for absolute children */
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: grab;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    /*transform: translateY(0px);*/
+    box-shadow: 0 2px 5px var(--shadow-color), 0 -2px 5px var(--shadow-color);
+}
+
+.hovered {
+    transform: scale(1.1);
+}
+
+.product:hover .edit-button {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+    mix-blend-mode: normal;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Trash Zone */
+#delete-zone {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    border-color: var(--border-color);
+    color: #37373B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    z-index: 1400;
+    transition-duration: 0.2s;
+    transform-origin: center;
+    box-shadow: 0px 0px 10px 5px rgba(34, 34, 34, 0.5);
+    outline: 2px;
+}
+
+#delete-zone:hover {
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+#delete-zone svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+button {
+    all: unset;
+    /* Removes all default styling */
+    display: inline-block;
+    /* Ensures proper box rendering */
+    cursor: pointer;
+    /* Makes it clear the button is clickable */
+}
+
+/* Export Button */
+#export-btn:hover,
+#add-text-btn:hover {
+    background: var(--primary-color);
+}
+
+#export-btn:active,
+#add-text-btn:active {
+    transform-origin: center;
+    box-shadow: rgba(0, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+#export-btn svg,
+#add-text-btn svg {
+    width: 50%;
+    height: 50%;
+}
+
+.button-16 {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    align-self: center;
+}
+
+.button-16:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.button-16:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+.button-17 {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 2px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    align-self: center;
+}
+
+.button-17:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.button-17:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+/* Canvas Items (Cards) */
+.canvas-item {
+    position: absolute;
+    cursor: move;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: box-shadow 2s, transform 0.2s, scale 0.05;
+    animation: fadeInUp 0.1s ease;
+    z-index: 1900;
+}
+
+.canvas-item:hover {
+    box-shadow: 0 2px 20px var(--shadow-color);
+    /*transform: translateY(0px);*/
+    scale: 1.01;
+    z-index: 1900;
+}
+
+.canvas-item-click {
+    transform: scale(0.99);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.05s ease, box-shadow 0.1s ease;
+}
+
+.canvas-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 0;
+    margin-bottom: 0;
+    z-index: 3000;
+}
+
+.canvas-item img:hover {
+    cursor: point;
+}
+
+.canvas-item-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.io-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    z-index: 2000;
+}
+
+.inputs,
+.outputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2000;
+}
+
+.io-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 2000;
+}
+
+.io-dot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}
+
+.input-dot {
+    background: var(--primary-color);
+    margin-left: -6px;
+    z-index: 2000;
+}
+
+.output-dot {
+    background: var(--secondary-color);
+    margin-right: -6px;
+    z-index: 2000;
+}
+
+.io-label {
+    font-size: 10px;
+    position: absolute;
+    white-space: nowrap;
+    color: #333;
+}
+
+.input-label {
+    left: 16px;
+    top: -2px;
+}
+
+.output-label {
+    right: 16px;
+    top: -2px;
+}
+
+/* Connection Layer */
+#connection-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1500;
+}
+
+.connection {
+    stroke-width: 6;
+    fill: none;
+    marker-end: none;
+    transition: stroke 0.05s ease, stroke-width 0.05s ease;
+    z-index: 1500;
+    opacity: 0.8;
+}
+
+.connection:hover {
+    stroke-width: 6;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.temp-connection {
+    stroke: var(--hifi-black);
+    stroke-width: 1;
+    stroke-dasharray: 4;
+    fill: none;
+    z-index: 100;
+}
+
+/* Floating Price Panel – using fixed so it “floats” over the viewport */
+#price-panel {
+    position: fixed;
+    bottom: 8vh;
+    left: 2vh;
+    background: 37373b;
+    color: black;
+    border: 0px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300px;
+    z-index: 1000;
+    color: var(--hifi-black);
+}
+
+#price-panel h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: var(--hifi-black);
+}
+
+#price-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--hifi-black);
+}
+
+#price-panel li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--hifi-black);
+}
+
+#price-panel #total-price {
+    font-family: "Dela Gothic One", serif;
+    text-align: right;
+    margin-top: 10px;
+    color: var(--hifi-black);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Edit Product Modal Styles */
+#edit-product-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+}
+
+#edit-product-modal .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+#edit-product-modal label {
+    display: block;
+    margin-top: 10px;
+}
+
+#edit-product-modal input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#edit-product-modal button {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-size: 80%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#edit-product-modal button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.os-scrollbar {
+    --os-handle-bg: #222222;
+}
+
+/* Main container styling */
+.canvas-item.text-item {
+    position: absolute;
+    resize: both;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 250px;
+    min-height: 120px;
+    z-index: 2000;
+}
+
+/* Drag handle styling */
+.drag-handle {
+    background: var(--hifi-white);
+    padding: 8px;
+    resize: both;
+    text-align: center;
+    cursor: move;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.drag-handle:hover {
+    background: var(--primary-color);
+}
+
+.placeholder {
+    color: #c7c7c7;
+    font-style: italic;
+    font-weight: 50;
+}
+
+/* Text area styling */
+.text-content {
+    padding: 10px;
+    cursor: text;
+}
+
+/* Optional: Style editable elements on focus */
+.text-content [contenteditable="true"]:focus {
+    outline: 1px dashed #222222;
+}
