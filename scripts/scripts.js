@@ -16,6 +16,104 @@ let deleteZone;
 let priceListEl;
 let totalPriceEl;
 
+const data = {
+    "brand": "Argon Audio",
+    "variants": [
+      { "sku": "ARGSA2WH", "price": { "price": 3499, "unit": "piece" } },
+      { "sku": "ARGSA2BK", "price": { "price": 3499, "unit": "piece" } },
+      { "sku": "ARGSA2BL", "price": { "price": 3499, "unit": "piece" } }
+    ],
+    "model": "SA2",
+    "sku": "ARGSA2X"
+  };
+  
+  // Transformation function
+  const transformData = (input) => {
+    // Default additional fields
+    const additionalFields = {
+      inputs: [
+        "HDMI ARC",
+        "OPTICAL IN",
+        "PHONO IN",
+        "LINE IN"
+      ],
+      outputs: [
+        "PRE OUT",
+        "SPEAKER L/R"
+      ],
+      image: [
+        "https://images.hifiklubben.com/image/aa399c7d-f4e6-44d6-8223-96d6f33ef952",
+        "https://images.hifiklubben.com/image/537ec76f-70d0-43d9-bb02-1f9d52eeaa6f"
+      ]
+    };
+  
+    // Map each variant to the new format
+    return input.variants.map(variant => ({
+      brand: input.brand,
+      name: input.model,
+      sku: variant.sku,
+      price: variant.price.price.toString(),  // Convert price to string if needed
+      ...additionalFields
+    }));
+  };
+  
+  // Transform and output the new entries
+  const transformedData = transformData(data);
+  console.log(JSON.stringify(transformedData, null, 2));
+
+async function fetchProducts() {
+    const body = {
+      facets: {
+        modelTypeName: [],
+        brand: ["Lyngdorf"],
+        amplifierStreamingFeature: [],
+        ampMultiroomPlatform: [],
+        ampConnectionsWired: [],
+        ampStreamingServices: [],
+        color: [],
+        amplifierTechnology: [],
+        ampFeatures: []
+      },
+      constraints: {},
+      pageSize: 50,
+      sortBy: "MostPopular",
+      outlet: "false",
+      source: "Product Listing Page",
+      query: "",
+      page: 0,
+      type: "category",
+      currency: "DKK",
+      locale: "da-DK",
+      user: {
+        classifications: {
+          country: "dk"
+        }
+      }
+    };
+    console.log(body);
+  
+    try {
+      const response = await fetch('http://localhost:3000/api/products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      });
+  
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+  
+      const data = await response.json();
+      console.log('Fetched data:', data);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
+  }
+
+  fetchProducts();
+
 window.addEventListener("DOMContentLoaded", () => {
     floatingProductList = document.getElementById("floating-product-list");
     productListContent = floatingProductList.querySelector(".content");
@@ -1508,4 +1606,3 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('dark-mode');
     document.getElementById('darkModeToggle').checked = true;
 });
-console.log("Test");
