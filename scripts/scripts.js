@@ -69,7 +69,7 @@ async function fetchProducts() {
     }
 }
 
-fetchProducts();
+//fetchProducts();
 
 // Transformation function
 function transformData(results) {
@@ -132,7 +132,7 @@ async function initializeProducts() {
     return products;
 }
 
-initializeProducts();
+//initializeProducts();
 
 window.addEventListener("DOMContentLoaded", () => {
     floatingProductList = document.getElementById("floating-product-list");
