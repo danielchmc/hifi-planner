@@ -16,103 +16,123 @@ let deleteZone;
 let priceListEl;
 let totalPriceEl;
 
-const data = {
-    "brand": "Argon Audio",
-    "variants": [
-      { "sku": "ARGSA2WH", "price": { "price": 3499, "unit": "piece" } },
-      { "sku": "ARGSA2BK", "price": { "price": 3499, "unit": "piece" } },
-      { "sku": "ARGSA2BL", "price": { "price": 3499, "unit": "piece" } }
-    ],
-    "model": "SA2",
-    "sku": "ARGSA2X"
-  };
-  
-  // Transformation function
-  const transformData = (input) => {
-    // Default additional fields
-    const additionalFields = {
-      inputs: [
-        "HDMI ARC",
-        "OPTICAL IN",
-        "PHONO IN",
-        "LINE IN"
-      ],
-      outputs: [
-        "PRE OUT",
-        "SPEAKER L/R"
-      ],
-      image: [
-        "https://images.hifiklubben.com/image/aa399c7d-f4e6-44d6-8223-96d6f33ef952",
-        "https://images.hifiklubben.com/image/537ec76f-70d0-43d9-bb02-1f9d52eeaa6f"
-      ]
-    };
-  
-    // Map each variant to the new format
-    return input.variants.map(variant => ({
-      brand: input.brand,
-      name: input.model,
-      sku: variant.sku,
-      price: variant.price.price.toString(),  // Convert price to string if needed
-      ...additionalFields
-    }));
-  };
-  
-  // Transform and output the new entries
-  const transformedData = transformData(data);
-  console.log(JSON.stringify(transformedData, null, 2));
-
 async function fetchProducts() {
     const body = {
-      facets: {
-        modelTypeName: [],
-        brand: ["Lyngdorf"],
-        amplifierStreamingFeature: [],
-        ampMultiroomPlatform: [],
-        ampConnectionsWired: [],
-        ampStreamingServices: [],
-        color: [],
-        amplifierTechnology: [],
-        ampFeatures: []
-      },
-      constraints: {},
-      pageSize: 50,
-      sortBy: "MostPopular",
-      outlet: "false",
-      source: "Product Listing Page",
-      query: "",
-      page: 0,
-      type: "category",
-      currency: "DKK",
-      locale: "da-DK",
-      user: {
-        classifications: {
-          country: "dk"
+        facets: {
+            modelTypeName: [],
+            brand: [],
+            amplifierStreamingFeature: [],
+            ampMultiroomPlatform: [],
+            ampConnectionsWired: [],
+            ampStreamingServices: [],
+            color: [],
+            amplifierTechnology: [],
+            ampFeatures: []
+        },
+        constraints: {},
+        pageSize: 50,
+        sortBy: "MostPopular",
+        outlet: "false",
+        source: "Product Listing Page",
+        query: "",
+        page: 0,
+        type: "category",
+        currency: "DKK",
+        locale: "da-DK",
+        user: {
+            classifications: {
+                country: "dk"
+            }
         }
-      }
     };
     console.log(body);
-  
-    try {
-      const response = await fetch('http://localhost:3000/api/products', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(body)
-      });
-  
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-  
-      const data = await response.json();
-      console.log('Fetched data:', data);
-    } catch (error) {
-      console.error('Error fetching products:', error);
-    }
-  }
 
-  fetchProducts();
+    try {
+        const response = await fetch('http://localhost:3000/api/products', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        console.log('Fetched data:', data);
+        return data;
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        return null;
+    }
+}
+
+fetchProducts();
+
+// Transformation function
+function transformData(results) {
+    if (!Array.isArray(results)) {
+        console.error('Invalid input data for transformation');
+        return [];
+    }
+
+    // Default additional fields
+    const additionalFields = {
+        inputs: [
+            "HDMI ARC",
+            "OPTICAL IN",
+            "PHONO IN",
+            "LINE IN"
+        ],
+        outputs: [
+            "PRE OUT",
+            "SPEAKER L/R"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/aa399c7d-f4e6-44d6-8223-96d6f33ef952",
+            "https://images.hifiklubben.com/image/537ec76f-70d0-43d9-bb02-1f9d52eeaa6f"
+        ]
+    };
+
+    // Map each product and its variants to the new format
+    return results.flatMap(product =>
+        product.variants.map(variant => ({
+            brand: product.brandName,
+            name: product.modelName,
+            sku: variant.sku,
+            price: variant.priceDetails.price.toString(), // Convert price to string if needed
+            ...additionalFields
+        }))
+    );
+}
+
+async function fetchedData() {
+    const data = await fetchProducts();
+    if (data && data.products && data.products.results) {
+        const transformedData = transformData(data.products.results);
+        console.log("Transformed Data:", transformedData);
+        return transformedData; // Return the transformed data
+    } else {
+        console.error('Failed to fetch products or data structure is incorrect');
+        return []; // Return an empty array in case of failure
+    }
+}
+
+async function initializeProducts() {
+    const transformedData = await fetchedData();
+    console.log("Transformed Data:", transformedData);
+
+    // Convert the transformed data to a string and then parse it back to an object
+    const products = JSON.parse(JSON.stringify(transformedData, null, 2));
+    console.log("Products:", products);
+
+    // You can now use the `products` constant as needed
+    return products;
+}
+
+initializeProducts();
 
 window.addEventListener("DOMContentLoaded", () => {
     floatingProductList = document.getElementById("floating-product-list");
@@ -124,18 +144,17 @@ window.addEventListener("DOMContentLoaded", () => {
     priceListEl = document.getElementById("price-list");
     totalPriceEl = document.getElementById("total-price");
 
-    canvasContent.addEventListener("click", function (e) {
+    canvasContent.addEventListener("click", function(e) {
         if (isDrawing && (e.target === canvasContent || e.target === connectionLayer)) {
             endConnection(e);
             e.stopPropagation();
             e.preventDefault();
-        }
-        else if (isDrawing) {
+        } else if (isDrawing) {
             cancelConnection();
         }
     });
 
-    document.getElementById("export-btn").addEventListener("click", function () {
+    document.getElementById("export-btn").addEventListener("click", function() {
         // Check if dark mode is currently active.
         const wasDarkMode = document.body.classList.contains("dark-mode");
 
@@ -195,7 +214,7 @@ window.addEventListener("DOMContentLoaded", () => {
         container.addEventListener("mousedown", dragMouseDown);
 
         // When creating a canvas item in the drop event listener:
-        container.addEventListener("mousedown", function (e) {
+        container.addEventListener("mousedown", function(e) {
             // Only add the effect if the target isn't an I/O dot or its label.
             if (!e.target.closest(".io-dot") && !e.target.closest(".io-label") && !e.target.closest(".canvas-item img")) {
                 container.classList.add("canvas-item-click");
@@ -203,12 +222,12 @@ window.addEventListener("DOMContentLoaded", () => {
         });
 
         // Remove the effect when the mouse is released.
-        container.addEventListener("mouseup", function (e) {
+        container.addEventListener("mouseup", function(e) {
             container.classList.remove("canvas-item-click");
         });
 
         //Add double-click event to delete the card with animation.
-        container.addEventListener("dblclick", function (e) {
+        container.addEventListener("dblclick", function(e) {
             // Prevent interfering with dragging.
             e.stopPropagation();
             animateRemoveCanvasItem(container);
@@ -226,19 +245,20 @@ window.addEventListener("DOMContentLoaded", () => {
             img.currentIndex = 0;
 
             // Variables to track movement
-            let startX = 0, startY = 0;
+            let startX = 0,
+                startY = 0;
             let wasDragged = false;
             const DRAG_THRESHOLD = 0.5; // pixels
 
             // On mousedown, record the start position
-            img.addEventListener("mousedown", function (event) {
+            img.addEventListener("mousedown", function(event) {
                 startX = event.clientX;
                 startY = event.clientY;
                 wasDragged = false;
             });
 
             // On mouseup, check if the pointer moved beyond the threshold
-            img.addEventListener("mouseup", function (event) {
+            img.addEventListener("mouseup", function(event) {
                 let dx = Math.abs(event.clientX - startX);
                 let dy = Math.abs(event.clientY - startY);
                 if (dx < DRAG_THRESHOLD || dy < DRAG_THRESHOLD) {
@@ -247,7 +267,7 @@ window.addEventListener("DOMContentLoaded", () => {
             });
 
             // On click, only toggle if there was no significant dragging
-            img.addEventListener("click", function (event) {
+            img.addEventListener("click", function(event) {
                 // Stop propagation if needed
                 event.stopPropagation();
                 // If the image was dragged, do not toggle
@@ -264,7 +284,7 @@ window.addEventListener("DOMContentLoaded", () => {
         img.src = product.image[0];
         img.array = product.image;
         img.currentIndex = 0;
-        img.addEventListener("click", function (event) {
+        img.addEventListener("click", function(event) {
             event.stopPropagation();
             let arr = img.array;
             let idx = img.currentIndex;
@@ -296,7 +316,7 @@ window.addEventListener("DOMContentLoaded", () => {
         ioContainer.appendChild(outputsContainer);
         container.appendChild(ioContainer);
 
-        container.addEventListener("click", function (e) {
+        container.addEventListener("click", function(e) {
             // If the click came from an I/O dot or its label, do nothing.
             if (e.target.closest(".io-dot") || e.target.closest(".io-label")) { /*Penis*/
                 return;
@@ -325,7 +345,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // Export functionality.
     // Because the price panel is fixed (floating), it won't be captured when exporting canvasContainer.
     // So before export, we clone the price panel into the canvasContent as an absolutely positioned element.
-    document.getElementById("export-btn").addEventListener("click", function () {
+    document.getElementById("export-btn").addEventListener("click", function() {
         // Disable animations
         const canvasItems = document.querySelectorAll(".canvas-item");
         canvasItems.forEach(item => item.style.animation = "none");
@@ -352,7 +372,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    canvasContainer.addEventListener("wheel", function (e) {
+    canvasContainer.addEventListener("wheel", function(e) {
         const now = Date.now();
         if (now - lastWheelTime < throttleDelay) {
             e.preventDefault();
@@ -393,7 +413,7 @@ window.addEventListener("DOMContentLoaded", () => {
         updateConnections();
     });
 
-    canvasContainer.addEventListener("mousedown", function (e) {
+    canvasContainer.addEventListener("mousedown", function(e) {
         if (!e.target.closest(".canvas-item")) {
             isPanning = true;
             panStartX = e.clientX;
@@ -408,7 +428,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Toggle collapse for floating product list.
     const floatingHeader = floatingProductList.querySelector("header");
-    floatingHeader.addEventListener("click", function () {
+    floatingHeader.addEventListener("click", function() {
 
         const btn = document.getElementById("scrollBtn");
         if (floatingProductList.classList.contains("collapsed")) {
@@ -426,7 +446,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    canvasContainer.addEventListener("click", function (e) {
+    canvasContainer.addEventListener("click", function(e) {
         // Check if the clicked element is not inside a contentEditable element.
         if (!e.target.closest('[contenteditable="true"]')) {
             // If an editable element is focused, remove focus.
@@ -467,7 +487,7 @@ const wireColors = [
     "#DC143C", // Crimson
     "#00008B", // DarkBlue
     "#FF1493", // DeepPink
-    "#2E8B57"  // SeaGreen
+    "#2E8B57" // SeaGreen
 ];
 
 let lastColor = null;
@@ -483,10 +503,10 @@ function getNextRandomColor() {
     return color;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-    darkModeToggle.addEventListener('change', function () {
+    darkModeToggle.addEventListener('change', function() {
         if (this.checked) {
             document.body.classList.add('dark-mode');
         } else {
@@ -641,7 +661,7 @@ function endConnection(event) {
         const randomColor = getNextRandomColor();
         connection.style.stroke = randomColor;
         connectionLayer.appendChild(connection);
-        connection.addEventListener("click", function (e) {
+        connection.addEventListener("click", function(e) {
             e.stopPropagation();
             // Find the connection object corresponding to this SVG element.
             const connObj = connections.find(conn => conn.element === connection);
@@ -681,7 +701,7 @@ function openCableSelectionModal(connObj) {
     });
 
     // Close modal when clicking on the overlay (but not on its content)
-    modal.addEventListener("click", function (event) {
+    modal.addEventListener("click", function(event) {
         if (event.target === modal) {
             document.body.removeChild(modal);
         }
@@ -799,7 +819,7 @@ function openCableSelectionModal(connObj) {
                         cursor: "pointer"
                     });
                     cableItem.textContent = `${cable.brand} - ${cable.name} - ${cable.price},-`;
-                    cableItem.addEventListener("click", function () {
+                    cableItem.addEventListener("click", function() {
                         // When the cable is selected, attach it to the connection.
                         connObj.cable = cable;
                         updateConnections();
@@ -831,7 +851,7 @@ function openCableSelectionModal(connObj) {
     cancelButton.classList.add("button-16");
     cancelButton.textContent = "Cancel";
     cancelButton.style.marginTop = "10px";
-    cancelButton.addEventListener("click", function () {
+    cancelButton.addEventListener("click", function() {
         document.body.removeChild(modal);
     });
     modalContent.appendChild(cancelButton);
@@ -863,7 +883,7 @@ function cancelConnection() {
 
 
 
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function(e) {
     if (e.key === "Escape") {
         // Your code here – for instance:
         cancelConnection();
@@ -985,7 +1005,7 @@ function loadProducts() {
     searchInput.style.width = "100%"; // or any width you prefer
     searchInput.style.outline = "none";
     searchInput.style.backgroundColor = "#fff"; // adjust if needed
-    searchInput.style.color = "#333";  // adjust text color if needed
+    searchInput.style.color = "#333"; // adjust text color if needed
     searchContainer.appendChild(searchInput);
 
     // Append the search container to your product list container
@@ -1217,13 +1237,13 @@ function loadProducts() {
     function easeInOutElastic(x) {
         const c5 = (2 * Math.PI) / 4.5;
 
-        return x === 0
-            ? 0
-            : x === 1
-                ? 1
-                : x < 0.5
-                    ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) / 2
-                    : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) / 2 + 1;
+        return x === 0 ?
+            0 :
+            x === 1 ?
+            1 :
+            x < 0.5 ?
+            -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) / 2 :
+            (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) / 2 + 1;
     }
 
     function easeOutCubic(x) {
@@ -1250,7 +1270,7 @@ function loadProducts() {
 
             animation_value = lerp(animation_value, animation_target, delta > 5 ? 0.15 : 0.05);
             document.getElementById("productsLabel").innerHTML = `Products: ${Math.round(animation_value)}`;
-            
+
             if (delta < 0.4) {
                 clearInterval(animation_id);
                 animation_id = undefined;
@@ -1258,7 +1278,7 @@ function loadProducts() {
         }, 16);
 
         return;
-// OLD
+        // OLD
         const start = performance.now();
         const animLength = 1000;
 
@@ -1284,7 +1304,7 @@ function loadProducts() {
     // Debounce the input to avoid rapid re-calls.
     function debounce(fn, delay) {
         let timeoutId;
-        return function (...args) {
+        return function(...args) {
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => {
                 fn.apply(this, args);
@@ -1493,7 +1513,7 @@ window.addEventListener("load", () => {
 
 
     // 3) Provide a scrollToTop function
-    window.scrollToTop = function () {
+    window.scrollToTop = function() {
         scrollEl.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -1576,7 +1596,7 @@ function createTextCanvasItem() {
     dragHandle.addEventListener("mousedown", dragMouseDown);
 
     // Allow dblclick on the container to remove it.
-    container.addEventListener("dblclick", function (e) {
+    container.addEventListener("dblclick", function(e) {
         e.stopPropagation();
         animateRemoveCanvasItem(container);
     });
@@ -1602,7 +1622,7 @@ window.addEventListener("load", () => {
     canvasContainer.scrollTop = (canvasContent.offsetHeight - canvasContainer.clientHeight) / 2;
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('dark-mode');
     document.getElementById('darkModeToggle').checked = true;
 });
