@@ -4030,6 +4030,42 @@ const products = [{
         ]
     },
     {
+        brand: "Denon",
+        name: "Home 150",
+        price: "1498",
+        inputs: [
+            "Minijack"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/efb29827-a313-47a8-b994-c8f9a2905ffb",
+            "https://images.hifiklubben.com/image/145d8989-e243-4fa4-966b-708b9696f93d"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "Home 250",
+        price: "3199",
+        inputs: [
+            "Minijack"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/1597caae-5f62-4fe5-9f1f-6962a9685020",
+            "https://images.hifiklubben.com/image/13e1a731-26ba-4d1b-88a1-2febe39473ef"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "Home 350",
+        price: "4399",
+        inputs: [
+            "Minijack"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/f985168a-6109-40bd-9e26-623062b1020d",
+            "https://images.hifiklubben.com/image/9e7e5af8-5b9f-4b3d-b5e7-01f152865dcd"
+        ]
+    },
+    {
         brand: "Essentials",
         name: "Excellence 1 Complete - 3.5m",
         price: "2799",
@@ -6974,6 +7010,25 @@ const products = [{
         ]
     },
     {
+        brand: "Soundboks",
+        name: "Soundboks 4 (USB-C)",
+        price: "7999",
+        inputs: [
+            "AUX IN",
+            "XLR IN",
+            "JACK IN"
+        ],
+        outputs: [
+            "AUX OUT",
+            "XLR OUT",
+            "JACK OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/a12197ce-e754-466c-878e-de77144c0222",
+            "https://images.hifiklubben.com/image/8978329e-0a2c-4cee-84c2-7ee9933d337d"
+        ]
+    },
+    {
         brand: "Sonos",
         name: "Amp",
         price: "5748",
@@ -7004,6 +7059,41 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/bd529f14-13b1-41eb-81dc-f63c9f276533",
             "https://media.sonos.com/images/znqtjj88/production/d6ad44383ccd04112a25b8c9dc09696439c47160-1888x897.png?w=640&q=100&fit=clip&auto=format"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Era 100",
+        price: "1690",
+        inputs: [
+            "USB C"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/bf7f8368-e53f-4fe5-99c3-4ffda5c6e4fb",
+            "https://images.hifiklubben.com/image/f72f8134-ac43-448c-8051-f7f53f698fee"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Era 300",
+        price: "3196",
+        inputs: [
+            "USB C"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/c8fa0640-17bb-4fe0-afd7-01cc187b9504",
+            "https://images.hifiklubben.com/image/28eb1a45-f2e5-4af7-9fea-ac981a388c0e"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Five",
+        price: "4395",
+        inputs: [
+            "Minijack"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/b4e9b8ac-a526-4bd0-8a19-cd3009e51477"
         ]
     },
     {
