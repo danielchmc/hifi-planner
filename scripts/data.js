@@ -305,7 +305,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
-        sku: "ARGMALMOSUB6"
+        sku: "ARGMALMOSUB6",
         image: [
             "https://images.hifiklubben.com/image/6fa18837-9740-452b-82ad-02bf130d6b7b",
             "https://images.hifiklubben.com/image/2cec2c57-a8f2-4f90-bffd-df793c57a086"
