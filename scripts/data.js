@@ -11,7 +11,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
-        sku: "something",
+        sku: "ARGFORTEA55WIFI",
         image: [
             "https://images.hifiklubben.com/image/24debd07-fdc8-4e34-bf95-3b21b59a42dc",
             "https://images.hifiklubben.com/image/ab458a74-5d96-4ec8-8243-9bd8ad3193a4"
@@ -19,7 +19,7 @@ const products = [{
     },
     {
         brand: "Argon Audio",
-        name: "Forte A55",
+        name: "Forte A55 MK2",
         price: "7999",
         inputs: [
             "HDMI ARC",
@@ -30,6 +30,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "ARGFORTEA55MK2",
         image: [
             "https://images.hifiklubben.com/image/24debd07-fdc8-4e34-bf95-3b21b59a42dc",
             "https://images.hifiklubben.com/image/ab458a74-5d96-4ec8-8243-9bd8ad3193a4"
@@ -48,6 +49,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "ARGFENRISA55",
         image: [
             "https://images.hifiklubben.com/image/9afe6dd9-277d-4409-ba8b-df2f4e1255a3",
             "https://images.hifiklubben.com/image/e696149d-e647-424a-9449-43fd3271ce3e"
@@ -66,6 +68,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "ARGFORTEA5MK2",
         image: [
             "https://images.hifiklubben.com/image/b6e5689b-f7a9-4226-b6fa-4115ecefd273",
             "https://images.hifiklubben.com/image/5feda286-9af0-4f12-9324-d4d7bf1c103f"
@@ -79,6 +82,7 @@ const products = [{
             "SPEAKER IN"
         ],
         outputs: ["SUB OUT"],
+        sku: "ARGALTO55MK2",
         image: [
             "https://images.hifiklubben.com/image/f62fcff8-78a9-403e-9c8e-daee394b5dc3"
         ]
@@ -90,6 +94,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUS55",
         image: [
             "https://images.hifiklubben.com/image/e47996f2-c67f-484e-87ef-27084fdaef3a"
         ]
@@ -107,6 +112,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "ARGFORTEA4MK2",
         image: [
             "https://images.hifiklubben.com/image/51894722-ba35-4bd4-9289-7b75044e01ca",
             "https://images.hifiklubben.com/image/d9a57e49-f516-4118-bd82-0727fd51547f"
@@ -126,6 +132,7 @@ const products = [{
             "PRE OUT",
             "SPEAKER L/R"
         ],
+        sku: "ARGSA2",
         image: [
             "https://images.hifiklubben.com/image/aa399c7d-f4e6-44d6-8223-96d6f33ef952",
             "https://images.hifiklubben.com/image/537ec76f-70d0-43d9-bb02-1f9d52eeaa6f"
@@ -143,6 +150,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "ARGSTUDIE3",
         image: [
             "https://images.hifiklubben.com/image/99300e04-3a20-4630-9db4-aa25cf086c9c",
             "https://images.hifiklubben.com/image/831f94c3-1524-4626-86cd-3ad3397df7f7"
@@ -161,6 +169,7 @@ const products = [{
         outputs: [
             "PRE OUT"
         ],
+        sku: "ARGFENRISA5",
         image: [
             "https://images.hifiklubben.com/image/568f7071-ba61-40ef-b781-7272956e0ebd",
             "https://images.hifiklubben.com/image/1224a497-043c-4a99-afb0-eeb79249d5e4"
@@ -173,6 +182,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUS5W",
         image: [
             "https://images.hifiklubben.com/image/9655b72e-16c6-4e6b-8c7d-288b6d670848"
         ]
@@ -191,6 +201,7 @@ const products = [{
             "PRE OUT",
             "SPEAKER L/R"
         ],
+        sku: "ARGSA1MK2",
         image: [
             "https://images.hifiklubben.com/image/49e6dce3-96e1-419c-a156-17686fe468bf",
             "https://images.hifiklubben.com/image/5d1d18b4-245f-438f-9f11-a7be91ec9758"
@@ -209,6 +220,7 @@ const products = [{
         outputs: [
             "PRE OUT"
         ],
+        sku: "ARGFENRISA4",
         image: [
             "https://images.hifiklubben.com/image/6be7ac35-f33c-4ad8-a6b3-ecc539165db8",
             "https://images.hifiklubben.com/image/f436ab79-4a84-4bc7-aba5-337d1909c5dd"
@@ -225,6 +237,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO2I",
         image: [
             "https://images.hifiklubben.com/image/5d7d463c-5670-4ec0-bc41-790b07ba344c",
             "https://images.hifiklubben.com/image/291d60ea-abf5-4a09-aec1-63fc6dc78743"
@@ -241,6 +254,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO3IMK2",
         image: [
             "https://images.hifiklubben.com/image/c67b88e5-1941-4d3c-9a88-990c902820a8",
             "https://images.hifiklubben.com/image/001ec900-2676-47bf-ad22-a5d3440b6555"
@@ -253,6 +267,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUS4W",
         image: [
             "https://images.hifiklubben.com/image/65d0c136-aafd-42e9-a65f-6358ec7bd45f"
         ]
@@ -265,6 +280,7 @@ const products = [{
             "AUDIO OUT",
             "OPTICAL OUT"
         ],
+        sku: "ARGSTREAM3MK2",
         image: [
             "https://images.hifiklubben.com/image/b657b4a2-2d99-4b61-a12c-ad6fdb94d911",
             "https://images.hifiklubben.com/image/81716876-6304-44f3-96aa-a8ad957cd884"
@@ -277,6 +293,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUS5",
         image: [
             "https://images.hifiklubben.com/image/e111d524-f542-4ec6-b72a-72965425b9d3"
         ]
@@ -288,6 +305,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "ARGMALMOSUB6"
         image: [
             "https://images.hifiklubben.com/image/6fa18837-9740-452b-82ad-02bf130d6b7b",
             "https://images.hifiklubben.com/image/2cec2c57-a8f2-4f90-bffd-df793c57a086"
@@ -300,6 +318,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "ARGMALMOSUB8",
         image: [
             "https://images.hifiklubben.com/image/c9cdf04e-3ef8-4652-98e1-8753201138b7",
             "https://images.hifiklubben.com/image/a4fb2724-2fec-4654-a5e8-76f15e715abf"
@@ -312,6 +331,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "ARGMALMOSUB10",
         image: [
             "https://images.hifiklubben.com/image/847fde91-9bfc-4653-9a74-fcf579d88ea6",
             "https://images.hifiklubben.com/image/562ac7b7-3bf4-444e-9778-442e007491ae"
@@ -328,6 +348,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO2IMK2",
         image: [
             "https://images.hifiklubben.com/image/5d7d463c-5670-4ec0-bc41-790b07ba344c",
             "https://images.hifiklubben.com/image/8622fb06-d4fd-423b-aa97-93b97c84fc4c"
@@ -341,6 +362,7 @@ const products = [{
             "AUDIO OUT",
             "OPTICAL OUT"
         ],
+        sku: "ARGSTREAM2MK3",
         image: [
             "https://images.hifiklubben.com/image/fa9a137e-3072-4118-955b-7b7bb5c97354",
             "https://images.hifiklubben.com/image/2eeb2a3d-0c02-480b-a7ba-b084d14de36c"
@@ -357,6 +379,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO3",
         image: [
             "https://images.hifiklubben.com/image/fd4d5f46-add8-4491-b065-e5d0a678ac6c",
             "https://images.hifiklubben.com/image/001ec900-2676-47bf-ad22-a5d3440b6555"
@@ -373,6 +396,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO2",
         image: [
             "https://images.hifiklubben.com/image/0fd62ea4-04ca-4e38-b962-027c6f9c5f6e",
             "https://images.hifiklubben.com/image/376d3e1c-3578-456b-ac30-03234ecfa6dd"
@@ -387,6 +411,7 @@ const products = [{
             "OPTICAL OUT",
             "COAXIAL OUT"
         ],
+        sku: "ARGSOLO",
         image: [
             "https://images.hifiklubben.com/image/a73e535c-eae1-45f2-a981-67c1e19af55f",
             "https://images.hifiklubben.com/image/de8816b1-3acc-4141-86a2-5e879a783ba0"
@@ -399,6 +424,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUS4",
         image: [
             "https://images.hifiklubben.com/image/e115290f-28f3-4f14-9f66-8bcdb89986dd"
         ]
@@ -414,6 +440,7 @@ const products = [{
             "PHONES OUT",
             "LINE OUT"
         ],
+        sku: "ARGRADIO1",
         image: [
             "https://images.hifiklubben.com/image/ac5efefc-339d-4028-be6e-26b450139a73",
             "https://images.hifiklubben.com/image/22fab4a1-4a2b-4eb7-abfa-ae5181a455cd"
@@ -426,6 +453,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "ARGFORUSC",
         image: [
             "https://images.hifiklubben.com/image/05037ad6-b24e-42be-8be4-f6f3b818489f"
         ]
@@ -440,6 +468,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "ARGNANODAC",
         image: [
             "https://images.hifiklubben.com/image/bfb688b1-6031-439a-8f40-6bfb1d95ae74",
             "https://images.hifiklubben.com/image/f11e6e97-b0f9-4fb6-ab18-f34bd0c8fa8c"
@@ -453,6 +482,7 @@ const products = [{
             "LINE OUT",
             "OPTICAL OUT"
         ],
+        sku: "ARGDABADAP3MK2",
         image: [
             "https://images.hifiklubben.com/image/4e8b7bb9-6eed-4c5b-b5d2-9e0bdef321b3",
             "https://images.hifiklubben.com/image/d4ffc262-303e-4f17-86bf-204857cfcdbe"
@@ -467,6 +497,7 @@ const products = [{
             "Minijack OUT",
             "OPTICAL OUT"
         ],
+        sku: "ARGBT2MK2",
         image: [
             "https://images.hifiklubben.com/image/2e3cfd63-38e8-491a-ae13-eccfd7791387",
             "https://images.hifiklubben.com/image/3921b26e-ca1b-49a3-8a55-f0ec38b1f08d"
@@ -484,6 +515,7 @@ const products = [{
             "AUDIO OUT (RX)",
             "OPTIAL OUT (RX)"
         ],
+        sku: "ARGBT3MK2",
         image: [
             "https://images.hifiklubben.com/image/7e8950e3-482d-4658-b44d-da51111c230d",
             "https://images.hifiklubben.com/image/25471a14-e18f-4206-a6f9-6263fd8bb54e"
@@ -497,6 +529,7 @@ const products = [{
             "LINE OUT",
             "PHONO OUT"
         ],
+        sku: "ARGTT4MK2",
         image: [
             "https://images.hifiklubben.com/image/11b75b05-0dc1-4aab-b1e8-b6ad6063a78f",
             "https://images.hifiklubben.com/image/c38e2bc9-55c0-4c2b-8605-f9cfd35a1dd1"
@@ -510,6 +543,7 @@ const products = [{
             "LINE OUT",
             "PHONO OUT"
         ],
+        sku: "ARGTTMK2",
         image: [
             "https://images.hifiklubben.com/image/636b4281-673c-4647-912a-ca368a6007f2",
             "https://images.hifiklubben.com/image/aa584232-95e5-4b74-b07b-b4b0d24c761c"
@@ -523,6 +557,7 @@ const products = [{
             "LINE OUT",
             "PHONO OUT"
         ],
+        sku: "ARGTT3PLUS",
         image: [
             "https://images.hifiklubben.com/image/f826203d-920b-4083-b27d-3becc58f0ca1",
             "https://images.hifiklubben.com/image/4e65b9a8-1a42-4661-9a5c-8dbabc4e624f"
@@ -535,6 +570,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "ARGTT3",
         image: [
             "https://images.hifiklubben.com/image/64b0d8b6-b9d7-4cab-85f5-087d896b2252",
             "https://images.hifiklubben.com/image/ed3b13f5-40a3-420f-bf24-94a4c33aa83a"
@@ -548,6 +584,7 @@ const products = [{
             "LINE OUT",
             "PHONO OUT"
         ],
+        sku: "ARGTT4SE",
         image: [
             "https://images.hifiklubben.com/image/f792256d-6311-4dae-b62a-c1a0ff1c08a1",
             "https://images.hifiklubben.com/image/db66f328-21c4-43b2-8256-d09240a48fae"
@@ -563,6 +600,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "ARGPHONO1",
         image: [
             "https://images.hifiklubben.com/image/1f76e4f0-793b-4102-91c4-643e8c27bda2",
             "https://images.hifiklubben.com/image/d5ab3a71-602c-4b78-9c53-d7a6b2d52788"
@@ -576,6 +614,7 @@ const products = [{
         tags: [
             "USB"
         ],
+        sku: "ARGRED1USB",
         image: [
             "https://images.hifiklubben.com/image/205b4058-1cdc-46b8-9f94-aff8223bd16b/pdp_d/pdp_d.jpg"
         ]
@@ -588,6 +627,7 @@ const products = [{
         tags: [
             "Speaker Cable"
         ],
+        sku: "AQROCKET44SC",
         image: [
             "https://i.ibb.co/G3P9SwCK/Untitled.png"
         ]
@@ -600,6 +640,7 @@ const products = [{
         tags: [
             "Speaker Cable"
         ],
+        sku: "AQROCKET33SC",
         image: [
             "https://i.ibb.co/G3P9SwCK/Untitled.png"
         ]
@@ -612,6 +653,7 @@ const products = [{
         tags: [
             "Speaker Cable"
         ],
+        sku: "AQROCKET33SC",
         image: [
             "https://i.ibb.co/G3P9SwCK/Untitled.png"
         ]
@@ -624,6 +666,7 @@ const products = [{
         tags: [
             "Speaker Cable"
         ],
+        sku: "AQROCKET44SC",
         image: [
             "https://i.ibb.co/G3P9SwCK/Untitled.png"
         ]
@@ -636,6 +679,7 @@ const products = [{
         tags: [
             "RCA"
         ],
+        sku: "AQGOLDENGATEIN",
         image: [
             "https://images.hifiklubben.com/image/0ee88961-94fa-48bb-b829-146fc9245566/pdp_d/pdp_d.jpg"
         ]
@@ -648,6 +692,7 @@ const products = [{
         tags: [
             "RCA"
         ],
+        sku: "AQGOLDENGATEIN",
         image: [
             "https://images.hifiklubben.com/image/0ee88961-94fa-48bb-b829-146fc9245566/pdp_d/pdp_d.jpg"
         ]
@@ -661,6 +706,7 @@ const products = [{
             "Minijack",
             "RCA"
         ],
+        sku: "AQEVERGREENMJIN",
         image: [
             "https://images.hifiklubben.com/image/e17297be-3ba6-4fbb-9342-80ce4c1cde7a/pdp_d/pdp_d.jpg"
         ]
