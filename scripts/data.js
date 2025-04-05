@@ -3972,6 +3972,39 @@ const products = [{
         ]
     },
     {
+        brand: "HEOS By Denon",
+        name: "Heos Drive HS2",
+        price: "19999",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL IN 1",
+            "OPTICAL IN 2",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2"
+        ],
+        outputs: [
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2",
+            "TRIGGER OUT 3",
+            "TRIGGER OUT 4",
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7b5aa298-9ae0-403c-9399-74b7cccdb2e3",
+            "https://images.hifiklubben.com/image/fac27fbf-1254-4470-a395-07d1f0e8ddb5"
+        ]
+    },
+    {
         brand: "Essentials",
         name: "Excellence 1 Complete - 3.5m",
         price: "2799",
@@ -4955,7 +4988,7 @@ const products = [{
         ],
         image: [
             "https://images.hifiklubben.com/image/2fd242a8-1186-4d11-a524-f885a548c28b",
-            "https://images.hifiklubben.com/image/4c4141c8-5f19-4896-aff5-7f5b8384fe57
+            "https://images.hifiklubben.com/image/4c4141c8-5f19-4896-aff5-7f5b8384fe57"
         ]
     },
     {
@@ -5631,7 +5664,7 @@ const products = [{
             "PHONO",
             "LINE IN 1",
             "LINE IN 2",
-            "LINE 3",
+            "LINE IN 3",
             "POWER AMP IN",
             "HDMI ARC",
             "COAXIAL",
@@ -5777,6 +5810,37 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/39357abc-2695-40ca-bd83-749ceda14288",
             "https://images.hifiklubben.com/image/7ca44925-34bb-4d14-a670-0cd20ea865f2"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "MODEL M4",
+        price: "25995",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL IN 1",
+            "OPTICAL IN 2"
+        ],
+        outputs: [
+            "TRIGGER 1",
+            "TRIGGER 2",
+            "TRIGGER 3",
+            "TRIGGER 4",
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/ba892dc8-70c6-4a61-8422-778d1acd6618",
+            "https://images.hifiklubben.com/image/819a3b84-a73a-4152-9d38-34d122694598"
         ]
     },
     {
@@ -6382,6 +6446,23 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/c992a10d-f9f0-4112-8d62-921711e76e9a",
             "https://images.hifiklubben.com/image/291d60ea-abf5-4a09-aec1-63fc6dc78743"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "CI720 V2",
+        price: "7999",
+        inputs: [
+            "ANALOG IN",
+            "OPTICAL IN"
+        ],
+        outputs: [
+            "SUBW OUT",
+            "SPEAKER OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/cc3b0b86-84fc-41b5-8120-796a9fe24537",
+            "https://images.hifiklubben.com/image/dec9f260-de12-4087-8d26-a33e40c9e89c"
         ]
     },
     {
