@@ -283,6 +283,42 @@ const products = [{
     },
     {
         brand: "Argon Audio",
+        name: "Malmö Sub 6",
+        price: "1999",
+        inputs: [
+            "LINE IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/6fa18837-9740-452b-82ad-02bf130d6b7b",
+            "https://images.hifiklubben.com/image/2cec2c57-a8f2-4f90-bffd-df793c57a086"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "Malmö Sub 8",
+        price: "2999",
+        inputs: [
+            "LINE IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/c9cdf04e-3ef8-4652-98e1-8753201138b7",
+            "https://images.hifiklubben.com/image/a4fb2724-2fec-4654-a5e8-76f15e715abf"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "Malmö Sub 10",
+        price: "3499",
+        inputs: [
+            "LINE IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/847fde91-9bfc-4653-9a74-fcf579d88ea6",
+            "https://images.hifiklubben.com/image/562ac7b7-3bf4-444e-9778-442e007491ae"
+        ]
+    },
+    {
+        brand: "Argon Audio",
         name: "RADIO2i MK2",
         price: "1899",
         inputs: [
@@ -1715,6 +1751,17 @@ const products = [{
         ]
     },
     {
+        brand: "Bang & Olufsen",
+        name: "Beosound Stage",
+        price: "17490",
+        inputs: [
+            "HDMI IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/597fc518-e485-4683-b4cd-a150c34220fa"
+        ]
+    },
+    {
         brand: "Bluesound",
         name: "Node Icon",
         price: "7999",
@@ -2289,14 +2336,15 @@ const products = [{
     {
         brand: "Bowers & Wilkins",
         name: "ASW610",
-        price: "16499",
+        price: "5999",
         inputs: [
             "LINE IN",
-            "BALANCED IN"
+            "TRIGGER IN",
+            "SPEAKER IN"
         ],
         image: [
-            "https://images.hifiklubben.com/image/3298a7bf-8cba-4e04-ad06-6678bf2f8b8b",
-            "https://images.hifiklubben.com/image/e8bca212-8286-4a2b-991b-fa648d6e2c12"
+            "https://images.hifiklubben.com/image/822725e2-1f0a-40aa-b75d-b9bb546e6bdf",
+            "https://images.hifiklubben.com/image/ad9e25cf-ba3e-40d0-919e-4e9027803488"
         ]
     },
     {
@@ -3353,7 +3401,7 @@ const products = [{
             "LFE"
         ],
         image: [
-            "https://images.hifiklubben.com/image/5a334b9d-2a0c-4ecb-b733-c621b2af345c",
+            "https://images.hifiklubben.com/image/1a856c89-81ca-4782-bfe7-3d0625b3e1cb",
             "https://images.hifiklubben.com/image/284875aa-891a-4406-92c4-4245b8f52cee"
         ]
     },
@@ -4168,7 +4216,7 @@ const products = [{
     },
     {
         brand: "Denon",
-        name: "Home Soundbar",
+        name: "Home Soundbar 550",
         price: "3999",
         inputs: [
             "OPTICAL IN",
@@ -4180,7 +4228,7 @@ const products = [{
         ],
         image: [
             "https://images.hifiklubben.com/image/f28f3743-9614-4f3d-a442-cfc539052164",
-            "https://images.hifiklubben.com/image/b16fc4f8-bd59-4c49-8902-29331280d628"
+            "https://images.hifiklubben.com/image/df228866-8e28-4c56-9928-f2dd83cb5427"
         ]
     },
     {
@@ -4193,6 +4241,24 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/b9955f65-c49b-420f-923a-8f39faf66d0c",
             "https://images.hifiklubben.com/image/4e40cab6-5fad-46e6-8374-c1d0cb8b8141"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "DHT-S218",
+        price: "1999",
+        inputs: [
+            "HDMI IN",
+            "OPTICAL IN",
+            "AUX IN"
+        ],
+        outputs: [
+            "HDMI OUT",
+            "SUBW OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/fe822257-5726-47ec-9161-749e695a6102",
+            "https://images.hifiklubben.com/image/dcd05e6f-eaed-4d66-9956-cf2e28ed5012"
         ]
     },
     {
@@ -5330,6 +5396,22 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/b21a4762-f25a-4328-a7e9-7bb4a976fbae",
             "https://images.hifiklubben.com/image/2c3cdfa3-2f4e-4af2-9ca2-2dc00a1878b9"
+        ]
+    },
+    {
+        brand: "KEF",
+        name: "KC62",
+        price: "12900",
+        inputs: [
+            "SPEAKER IN",
+            "LINE IN"
+        ],
+        outputs: [
+            "LINE OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7ab21154-1018-4f81-ab32-4ea8acbfda4a",
+            "https://images.hifiklubben.com/image/b73a21a4-f0f7-4ebc-8685-a74dfce1a306"
         ]
     },
     {
@@ -7127,6 +7209,57 @@ const products = [{
         ]
     },
     {
+        brand: "Sennheiser",
+        name: "Ambeo Soundbar Plus",
+        price: "5989",
+        inputs: [
+            "LINE IN",
+            "OPTICAL IN",
+            "HDMI IN 1",
+            "HDMI IN 2"
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBW OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/89560b4f-3fbd-4820-a2fc-d5277d38e1fc",
+            "https://images.hifiklubben.com/image/8cb60727-6b52-4e1f-b0ac-7948d631d8b0"
+        ]
+    },
+    {
+        brand: "Sennheiser",
+        name: "Ambeo Soundbar Max",
+        price: "18999",
+        inputs: [
+            "LINE IN",
+            "OPTICAL IN",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBW OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7e960c85-4b50-4a49-9975-cd4dd36a5ea9",
+            "https://images.hifiklubben.com/image/6661cc07-5fd8-4ca3-8189-b654a5653413"
+        ]
+    },
+    {
+        brand: "Sennheiser",
+        name: "Ambeo Sub",
+        price: "5490",
+        inputs: [
+            "SUBW IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/54df33ad-9e8c-4edf-ad08-6d785baddb71",
+            "https://images.hifiklubben.com/image/6a44450c-c2cf-4f7a-a38c-7951d0b17a4e"
+        ]
+    },
+    {
         brand: "Sinox",
         name: "SXA 1800 - DIN Female - 4xRCA",
         price: "99",
@@ -7257,6 +7390,65 @@ const products = [{
         ]
     },
     {
+        brand: "Sonos",
+        name: "Beam (Gen 2)",
+        price: "3222",
+        inputs: [
+            "HDMI IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/fb883f46-b89e-41b1-b3fa-82a8e489667b",
+            "https://images.hifiklubben.com/image/a234ebb3-3f74-4277-93b5-17a8f4346f1c"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Arc Ultra",
+        price: "7490",
+        inputs: [
+            "HDMI eARC IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/1523f5f7-2911-4b35-a1ee-3eb1354d88ea"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Arc",
+        price: "6109",
+        inputs: [
+            "HDMI eARC IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/53207b1e-d24d-4f14-8039-a89f81806796"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Sub Mini",
+        price: "3323",
+        image: [
+            "https://images.hifiklubben.com/image/8659f502-f1ce-497e-94b6-57233eb0fda4",
+            "https://images.hifiklubben.com/image/729f7852-90d9-43d6-bb25-777139920c8d"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Sub (Gen 3)",
+        price: "6699",
+        image: [
+            "https://images.hifiklubben.com/image/f5486b6f-8f96-4780-b0aa-e06de9883604"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Sub 4",
+        price: "5999",
+        image: [
+            "https://images.hifiklubben.com/image/97328c36-080b-47b3-bdc9-3b09d7332d26"
+        ]
+    },
+    {
         brand: "Marshall",
         name: "Tufton",
         price: "2480",
@@ -7362,6 +7554,18 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/ec5a4c82-2000-4267-acbf-303c59d8aa0e",
             "https://images.hifiklubben.com/image/c3530558-9f66-4b4c-823d-5131ca380115"
+        ]
+    },
+    {
+        brand: "Noon Audio",
+        name: "Compose SB201",
+        price: "2499",
+        inputs: [
+            "HDMI IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/a34e23a2-2fee-400d-9fe5-797a0b24fe95",
+            "https://images.hifiklubben.com/image/acb70f8b-594f-4c85-a81d-c077095266e9"
         ]
     },
     {
