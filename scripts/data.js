@@ -3600,6 +3600,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME60",
         image: [
             "https://images.hifiklubben.com/image/53d345a5-020a-4994-9cfe-23e8b4e6b571",
             "https://images.hifiklubben.com/image/71b33b50-15f0-4cfd-b754-85da703441c9"
@@ -3612,6 +3613,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME60WR",
         image: [
             "https://images.hifiklubben.com/image/363007d6-87c4-424b-8f61-08d95791200a",
             "https://images.hifiklubben.com/image/c1162709-814b-4474-9332-93856d6d8b2f"
@@ -3624,6 +3626,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME50",
         image: [
             "https://images.hifiklubben.com/image/0e7d5c0a-e0ed-48c4-99c7-f941346aafca",
             "https://images.hifiklubben.com/image/9b430883-aa8b-485e-8ccf-635d0a667343"
@@ -3636,6 +3639,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "DALIKATCHG2",
         image: [
             "https://images.hifiklubben.com/image/c290b257-c726-40ee-b70b-674b71196e4e"
         ]
@@ -3648,6 +3652,7 @@ const products = [{
             "LINE IN",
             "LFE"
         ],
+        sku: "DALIP10DSS",
         image: [
             "https://images.hifiklubben.com/image/1a856c89-81ca-4782-bfe7-3d0625b3e1cb",
             "https://images.hifiklubben.com/image/284875aa-891a-4406-92c4-4245b8f52cee"
@@ -3660,6 +3665,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIMENUETSE",
         image: [
             "https://images.hifiklubben.com/image/35900196-51e2-4fde-9016-b3bfc283e441"
         ]
@@ -3671,31 +3677,20 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMSUB100",
         image: [
             "https://images.hifiklubben.com/image/da7640fb-b829-450d-bb48-43b081b63055"
         ]
     },
     {
         brand: "DALI",
-        name: "Phantom Sub K-14 F",
+        name: "Sub K-14 F",
         price: "10999",
         inputs: [
             "LINE IN",
             "LFE"
         ],
-        image: [
-            "https://images.hifiklubben.com/image/45833ba0-0330-4cfc-8fc3-6bcc9640ca12",
-            "https://images.hifiklubben.com/image/e2b029e7-8faf-465c-8894-244f94e2a1a4"
-        ]
-    },
-    {
-        brand: "DALI",
-        name: "Sub E-14 F",
-        price: "10999",
-        inputs: [
-            "LINE IN",
-            "LFE"
-        ],
+        sku: "DALISUBK14",
         image: [
             "https://images.hifiklubben.com/image/45833ba0-0330-4cfc-8fc3-6bcc9640ca12",
             "https://images.hifiklubben.com/image/e2b029e7-8faf-465c-8894-244f94e2a1a4"
@@ -3709,6 +3704,7 @@ const products = [{
             "LINE IN",
             "LFE"
         ],
+        sku: "DALISUBE12F",
         image: [
             "https://images.hifiklubben.com/image/b6db83d8-b907-4c0e-b3f4-8541612d86a1",
             "https://images.hifiklubben.com/image/b9bc849b-29f1-45c2-9c80-6639355cf8f9"
@@ -3722,6 +3718,7 @@ const products = [{
             "LINE IN",
             "LFE"
         ],
+        sku: "DALISUBE9F",
         image: [
             "https://images.hifiklubben.com/image/8e7f85d3-43a0-4b41-a066-81bfd48ac0ca",
             "https://images.hifiklubben.com/image/14560ac0-20c1-4e9e-ab24-9a4aa23d2a2c"
@@ -3735,6 +3732,7 @@ const products = [{
             "LINE IN",
             "LFE"
         ],
+        sku: "DALISUBC8D",
         image: [
             "https://images.hifiklubben.com/image/a432f234-a848-4bb1-83c9-426f83a1d998",
             "https://images.hifiklubben.com/image/d9775849-869b-487a-bb02-cc0567cb88ff"
@@ -3747,6 +3745,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIMENUET",
         image: [
             "https://images.hifiklubben.com/image/0ae2396b-8093-4885-847e-732551c14e37"
         ]
@@ -3758,6 +3757,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIFAZONMIKRO",
         image: [
             "https://images.hifiklubben.com/image/690687b7-4298-424b-b718-31bd613055c6",
             "https://images.hifiklubben.com/image/d7c8d06c-02a8-4f1e-9d6e-90b7b5ea8490"
@@ -3770,6 +3770,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIFAZONSATSA",
         image: [
             "https://images.hifiklubben.com/image/f8a0776a-6607-4083-96a9-86aa1dc1c979",
             "https://images.hifiklubben.com/image/5d25c7a8-3646-4d05-bef2-6a672c71c337"
