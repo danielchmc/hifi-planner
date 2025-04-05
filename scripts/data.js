@@ -3783,6 +3783,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIFAZONMIKROVO",
         image: [
             "https://images.hifiklubben.com/image/b10b8922-61aa-4efc-8697-43d66e15029d",
             "https://images.hifiklubben.com/image/15a95f6f-7608-42f8-b703-0c216e878c78"
@@ -3795,6 +3796,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOPTICON8",
         image: [
             "https://images.hifiklubben.com/image/116fc541-a321-4054-8e4b-76a6da2bfd84"
         ]
@@ -3806,6 +3808,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOPTICON6",
         image: [
             "https://images.hifiklubben.com/image/9749c375-58fb-44b1-9b62-799be5b709d9"
         ]
@@ -3817,6 +3820,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOPTICON2",
         image: [
             "https://images.hifiklubben.com/image/7782cca2-d081-4992-87f1-339dcb31b3f2"
         ]
@@ -3828,6 +3832,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOPTICON1MK2",
         image: [
             "https://images.hifiklubben.com/image/46511954-e22a-468c-b7a4-d471e45737af"
         ]
@@ -3839,6 +3844,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOPTICONLCRMK2",
         image: [
             "https://images.hifiklubben.com/image/29fe9724-dc15-4ac9-a503-287454d0006e",
             "https://images.hifiklubben.com/image/8d78578c-a6ce-4e86-9619-4a24144cf8c1"
@@ -3848,6 +3854,7 @@ const products = [{
         brand: "DALI",
         name: "Opticon Vokal mk2",
         price: "5199",
+        sku: "DALIOPTICONVOKMK2",
         image: [
             "https://images.hifiklubben.com/image/987ac03d-9794-4860-a8b8-e9d99bfc2aef",
             "https://images.hifiklubben.com/image/333be392-a7b1-44a8-8f43-f23edf46873d"
@@ -3860,6 +3867,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERON9",
         image: [
             "https://images.hifiklubben.com/image/1c88397f-03f0-4962-8c1a-c883a4b811c2"
         ]
@@ -3871,6 +3879,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERON7",
         image: [
             "https://images.hifiklubben.com/image/32577e3f-0073-4a62-a2ec-f9c90c3194b7"
         ]
@@ -3882,6 +3891,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERON5",
         image: [
             "https://images.hifiklubben.com/image/4d6d111a-b68d-4bf3-bd27-739a393157f3",
             "https://images.hifiklubben.com/image/66655b15-a3f7-4673-b822-9846f7ac0484"
@@ -3894,6 +3904,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERON3",
         image: [
             "https://images.hifiklubben.com/image/b09b2a5e-82d7-496e-9cad-bbb78cb9ee8d"
         ]
@@ -3905,6 +3916,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERON1",
         image: [
             "https://images.hifiklubben.com/image/1aa9cbf9-c854-44a0-bb11-87dd8a8b336b"
         ]
@@ -3916,6 +3928,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERONGRANDVOK",
         image: [
             "https://images.hifiklubben.com/image/f9488a41-c0b9-4c90-a2ca-41a809dfaae5",
             "https://images.hifiklubben.com/image/321264a2-7dc9-46bf-8820-a737cf23103f"
@@ -3928,6 +3941,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERONONWALL",
         image: [
             "https://images.hifiklubben.com/image/0df825c9-6016-4267-8f19-981fafd521f5",
             "https://images.hifiklubben.com/image/45ddcb44-36ee-48a1-b865-b0e6b2670c2a"
@@ -3940,6 +3954,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIOBERONVOKAL",
         image: [
             "https://images.hifiklubben.com/image/f7cf9456-561c-410f-9326-dd46100d26e3",
             "https://images.hifiklubben.com/image/c830fcd4-7908-46a0-bda5-a100c3f01e4e"
@@ -3952,6 +3967,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALISPEKTOR6",
         image: [
             "https://images.hifiklubben.com/image/14851982-ba67-4221-be9f-31a4098f3e73"
         ]
@@ -3963,6 +3979,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALISPEKTOR2",
         image: [
             "https://images.hifiklubben.com/image/442788bf-940a-43a3-a595-a4ec9f3a0eda"
         ]
@@ -3974,6 +3991,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALISPEKTOR1",
         image: [
             "https://images.hifiklubben.com/image/6b516b46-4115-441e-9eef-ead9250e3942"
         ]
@@ -3985,6 +4003,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALISPEKTORVOKAL",
         image: [
             "https://images.hifiklubben.com/image/076200f0-462b-4c9b-a226-d3788ae7b4aa"
         ]
@@ -4004,6 +4023,7 @@ const products = [{
             "LINE OUT",
             "SUB OUT"
         ],
+        sku: "DALISOUNHUB",
         image: [
             "https://images.hifiklubben.com/image/28f30c6f-4e7a-405e-94e2-f78a9745c10d",
             "https://images.hifiklubben.com/image/c20dd21b-93cc-4b8d-bb37-91a194d402b9"
@@ -4022,6 +4042,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "DALISOUNHUBCOMP",
         image: [
             "https://images.hifiklubben.com/image/cd8dc001-5460-4b7a-a453-8914ee005488",
             "https://images.hifiklubben.com/image/788b9a49-7654-463d-9347-baf11823453c"
@@ -4034,6 +4055,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME80",
         image: [
             "https://images.hifiklubben.com/image/f6e1460d-776a-4eb7-a234-898d242c3990",
             "https://images.hifiklubben.com/image/00fe5c29-baa8-4ab0-8040-b546f7b2f7ef"
@@ -4046,6 +4068,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIALTEC1",
         image: [
             "https://images.hifiklubben.com/image/fb7f2816-870c-4163-b65f-bbe8a8b3b5cd",
             "https://images.hifiklubben.com/image/151de2e8-3a88-4092-ba7c-966ced741d05"
@@ -4064,6 +4087,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "DALIKATCHONE",
         image: [
             "https://images.hifiklubben.com/image/dd95e353-a4ef-4667-ac72-b9bf62045909",
             "https://www.soundandvision.com/images/220dalikatch.bac.jpg"
@@ -4090,6 +4114,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "DENPMA3000NE",
         image: [
             "https://images.hifiklubben.com/image/de309838-ac8d-4d82-9d41-e98321217762",
             "https://images.hifiklubben.com/image/859d9bbb-e249-4608-ad8e-8716d42462df"
@@ -4104,6 +4129,7 @@ const products = [{
             "OPTICAL",
             "COAXIAL"
         ],
+        sku: "DENDCD3000NE",
         image: [
             "https://images.hifiklubben.com/image/56f12804-211f-4863-bf7c-ffac7be2437a",
             "https://images.hifiklubben.com/image/62c6ba26-0243-4286-8474-08fa06bb48d5"
@@ -4130,6 +4156,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "DENPMA1700NE",
         image: [
             "https://images.hifiklubben.com/image/fdbe2cec-9555-48a0-af2f-97de2d3c5f95",
             "https://images.hifiklubben.com/image/560dbff2-f426-4130-9956-d7af7cac657c"
@@ -4150,6 +4177,7 @@ const products = [{
             "LINE OUT 1 (FIXED)",
             "LINE OUT 2 (VARIABLE)"
         ],
+        sku: "DENDNP2000NE",
         image: [
             "https://images.hifiklubben.com/image/ee2af76c-8a4b-4b6c-8ffc-97022d53bda0",
             "https://images.hifiklubben.com/image/90f35b66-ebb9-4a56-b57f-bd2cdd8b2079"
@@ -4164,6 +4192,7 @@ const products = [{
             "OPTICAL",
             "COAXIAL"
         ],
+        sku: "DENDCD1700NE",
         image: [
             "https://images.hifiklubben.com/image/1dd1b6ca-ea05-49a4-9a68-8cdcb44cbc1e",
             "https://images.hifiklubben.com/image/855a682a-9bd2-4180-9fbe-5c28a0a51da7"
@@ -4189,6 +4218,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "DENPMA900HNE",
         image: [
             "https://images.hifiklubben.com/image/b0628270-b9f1-4fdb-9611-b19a2de4a1e7",
             "https://images.hifiklubben.com/image/6afbacb8-ac73-4cf3-8419-38d04783b5ca"
@@ -4207,6 +4237,7 @@ const products = [{
             "SUB OUT",
             "SPEAKER L/R"
         ],
+        sku: "DENHOMEAMP",
         image: [
             "https://images.hifiklubben.com/image/be0ab4a9-f590-4e97-8461-bfb7eb9aec1c",
             "https://images.hifiklubben.com/image/2c679197-f497-4eeb-bc5d-77f6f3385586"
@@ -4227,6 +4258,7 @@ const products = [{
             "LINE OUT",
             "SUB OUT"
         ],
+        sku: "DENRCDN12",
         image: [
             "https://images.hifiklubben.com/image/5aef099d-c404-4f0d-96e8-27b5bbf1a5e0",
             "https://images.hifiklubben.com/image/0b496bd8-a210-4132-bfe2-db77281e6999"
@@ -4247,6 +4279,7 @@ const products = [{
             "LINE OUT",
             "SUB OUT"
         ],
+        sku: "DENRCDN12DAB",
         image: [
             "https://images.hifiklubben.com/image/00b687f8-6ac0-4681-9394-5ba6160369e5",
             "https://images.hifiklubben.com/image/0b496bd8-a210-4132-bfe2-db77281e6999"
@@ -4279,6 +4312,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "DENDRA900H",
         image: [
             "https://images.hifiklubben.com/image/0f32eda4-ea48-446c-ba4d-0cc01d89c447",
             "https://images.hifiklubben.com/image/10784076-7c82-4f9c-b443-205280ee3433"
@@ -4286,17 +4320,21 @@ const products = [{
     },
     {
         brand: "Denon",
-        name: "Heos Amp HS2",
-        price: "4449",
+        name: "Heos Link HS2",
+        price: "3199",
         inputs: [
             "LINE IN",
-            "AUX IN",
-            "OPTICAL IN"
+            "OPTICAL IN",
+            "AUX IN"
         ],
         outputs: [
-            "SUB WOOFER",
-            "SPEAKER L/R"
+            "TRIGGER OUT",
+            "COAXIAL OUT",
+            "OPTICAL OUT",
+            "PRE OUT",
+            "SUB WOOFER"
         ],
+        sku: "HEOSLINKHS2",
         image: [
             "https://images.hifiklubben.com/image/f24bf54f-ff7d-4f8b-b93f-64f6c5095b0d"
         ]
@@ -4314,6 +4352,7 @@ const products = [{
             "SPEAKER L/R",
             "SUB OUT"
         ],
+        sku: "DENRCDN10",
         image: [
             "https://images.hifiklubben.com/image/b8724a66-7db8-4df8-9d17-ea09b3720291",
             "https://images.hifiklubben.com/image/080d5460-05b2-4597-ae65-ec0748c322a8"
@@ -4338,6 +4377,7 @@ const products = [{
             "SUB OUT",
             "SPEAKERS L/R"
         ],
+        sku: "DENPMA600NE",
         image: [
             "https://images.hifiklubben.com/image/1dd1b6ca-ea05-49a4-9a68-8cdcb44cbc1e",
             "https://images.hifiklubben.com/image/332d4ed0-d314-44a7-a8b3-bb34d6fdf022"
@@ -4357,6 +4397,7 @@ const products = [{
             "SPEAKER L/R",
             "PHONES"
         ],
+        sku: "DENRCDM41DAB",
         image: [
             "https://images.hifiklubben.com/image/d71e4214-f45d-43af-ab3e-ac1de30bf439",
             "https://images.hifiklubben.com/image/bdebe1ec-c715-49ed-b54b-3db5d3c6140e"
@@ -4376,6 +4417,7 @@ const products = [{
             "SPEAKER L/R",
             "PHONES"
         ],
+        sku: "DENRCDM41",
         image: [
             "https://images.hifiklubben.com/image/d71e4214-f45d-43af-ab3e-ac1de30bf439",
             "https://images.hifiklubben.com/image/bdebe1ec-c715-49ed-b54b-3db5d3c6140e"
@@ -4389,6 +4431,7 @@ const products = [{
             "LINE OUT",
             "OPTICAL"
         ],
+        sku: "DENDCD600NE",
         image: [
             "https://images.hifiklubben.com/image/1dd1b6ca-ea05-49a4-9a68-8cdcb44cbc1e",
             "https://images.hifiklubben.com/image/61a173ec-321e-4d31-a882-7d9cdfd8dff2"
@@ -4422,6 +4465,7 @@ const products = [{
             "SPEAKER OUT 3",
             "SPEAKER OUT 4"
         ],
+        sku: "HEOSDRIVEHS2",
         image: [
             "https://images.hifiklubben.com/image/7b5aa298-9ae0-403c-9399-74b7cccdb2e3",
             "https://images.hifiklubben.com/image/fac27fbf-1254-4470-a395-07d1f0e8ddb5"
@@ -4434,6 +4478,7 @@ const products = [{
         inputs: [
             "Minijack"
         ],
+        sku: "DENHOME150",
         image: [
             "https://images.hifiklubben.com/image/efb29827-a313-47a8-b994-c8f9a2905ffb",
             "https://images.hifiklubben.com/image/145d8989-e243-4fa4-966b-708b9696f93d"
@@ -4446,6 +4491,7 @@ const products = [{
         inputs: [
             "Minijack"
         ],
+        sku: "DENHOME250",
         image: [
             "https://images.hifiklubben.com/image/1597caae-5f62-4fe5-9f1f-6962a9685020",
             "https://images.hifiklubben.com/image/13e1a731-26ba-4d1b-88a1-2febe39473ef"
@@ -4458,6 +4504,7 @@ const products = [{
         inputs: [
             "Minijack"
         ],
+        sku: "DENHOME350",
         image: [
             "https://images.hifiklubben.com/image/f985168a-6109-40bd-9e26-623062b1020d",
             "https://images.hifiklubben.com/image/9e7e5af8-5b9f-4b3d-b5e7-01f152865dcd"
@@ -4475,6 +4522,7 @@ const products = [{
         outputs: [
             "HDMI eARC"
         ],
+        sku: "DENHOMESOUNDBAR550",
         image: [
             "https://images.hifiklubben.com/image/f28f3743-9614-4f3d-a442-cfc539052164",
             "https://images.hifiklubben.com/image/df228866-8e28-4c56-9928-f2dd83cb5427"
@@ -4487,6 +4535,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "DENHOMESUB",
         image: [
             "https://images.hifiklubben.com/image/b9955f65-c49b-420f-923a-8f39faf66d0c",
             "https://images.hifiklubben.com/image/4e40cab6-5fad-46e6-8374-c1d0cb8b8141"
@@ -4505,6 +4554,7 @@ const products = [{
             "HDMI OUT",
             "SUBW OUT"
         ],
+        sku: "DENDHTS218",
         image: [
             "https://images.hifiklubben.com/image/fe822257-5726-47ec-9161-749e695a6102",
             "https://images.hifiklubben.com/image/dcd05e6f-eaed-4d66-9956-cf2e28ed5012"
@@ -4517,6 +4567,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "DENDP300F",
         image: [
             "https://images.hifiklubben.com/image/73235e88-0b64-45c8-910c-dbd67ca913f1"
         ]
@@ -4528,6 +4579,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "DENDP400",
         image: [
             "https://images.hifiklubben.com/image/b1745a38-114e-4290-9ce5-ccbb9bc79503"
         ]
@@ -4539,6 +4591,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "DENDP3000NE",
         image: [
             "https://images.hifiklubben.com/image/9caac406-2ba7-4913-8fe6-b3a0b2c80fe2"
         ]
@@ -4550,6 +4603,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "DENDP29F",
         image: [
             "https://images.hifiklubben.com/image/599af7d2-a366-4846-afec-45763b31c32f"
         ]
@@ -4562,6 +4616,7 @@ const products = [{
             "LINE OUT",
             "USB OUT"
         ],
+        sku: "DENDP450USB",
         image: [
             "https://images.hifiklubben.com/image/e588f3fe-55e4-4f7b-8e40-97e408a63543",
             "https://images.hifiklubben.com/image/23c2d226-6648-4add-8ff7-64d4f7009033"
@@ -5285,6 +5340,7 @@ const products = [{
         outputs: [
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH30A",
         image: [
             "https://images.hifiklubben.com/image/92567f44-110c-4b1a-9581-2e5ffc775e57",
             "https://images.hifiklubben.com/image/d8e14615-0c08-4d98-a450-51ef1327de0c"
@@ -5301,6 +5357,7 @@ const products = [{
         outputs: [
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH30",
         image: [
             "https://images.hifiklubben.com/image/a4ba0785-1def-4c87-a2ca-9077e8ac9ed5",
             "https://thevinylrevivers.com/wp-content/uploads/2021/09/H30Back.jpeg"
@@ -5327,6 +5384,7 @@ const products = [{
             "LINE OUT 2",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH600",
         image: [
             "https://images.hifiklubben.com/image/4f4c8830-f28b-463b-9315-4ba3af5b46d7",
             "https://images.hifiklubben.com/image/b455872a-4a55-432f-9fc7-ced78279c1de"
@@ -5355,6 +5413,7 @@ const products = [{
             "DIGITAL OUT",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH590",
         image: [
             "https://images.hifiklubben.com/image/a346d515-2609-4b58-b2c4-5929b47c5091",
             "https://images.hifiklubben.com/image/0a59b508-32d7-48af-aa80-00f28dce92b4"
@@ -5381,6 +5440,7 @@ const products = [{
             "DIGITAL OUT",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH400",
         image: [
             "https://images.hifiklubben.com/image/bdcb467f-0cf9-481f-910f-d3a2b046ae5b",
             "https://images.hifiklubben.com/image/279f2a39-4566-4616-9284-37605845f0c7"
@@ -5404,6 +5464,7 @@ const products = [{
             "LINE OUT 1",
             "LINE OUT 2"
         ],
+        sku: "HEGELP30",
         image: [
             "https://images.hifiklubben.com/image/4930324b-2d3b-4f51-bdb5-320a88f7b609",
             "https://images.hifiklubben.com/image/413b2545-84f0-4575-9221-e7af4522de61"
@@ -5427,6 +5488,7 @@ const products = [{
             "LINE OUT 1",
             "LINE OUT 2"
         ],
+        sku: "HEGELP30A",
         image: [
             "https://images.hifiklubben.com/image/295ea9fe-34fb-46c0-8ff0-41af1d3d0e82",
             "https://images.hifiklubben.com/image/bbacbc0c-3230-439e-b30f-751b9c198a67"
@@ -5453,6 +5515,7 @@ const products = [{
             "DIGITAL OUT",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH390",
         image: [
             "https://images.hifiklubben.com/image/1d84960e-f8a9-4c84-854a-6e856c7a457f",
             "https://images.hifiklubben.com/image/04a073ad-0761-428b-8014-d82520803d69"
@@ -5469,6 +5532,7 @@ const products = [{
         outputs: [
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH20",
         image: [
             "https://images.hifiklubben.com/image/1155ba4a-a986-45c0-97b6-e7d18e1723f9",
             "https://www.hegel.com/images/products/h20/H20Back.jpg"
@@ -5483,6 +5547,7 @@ const products = [{
             "LINE OUT",
             "DIGITAL OUT"
         ],
+        sku: "HEGELVIKING",
         image: [
             "https://images.hifiklubben.com/image/d49eb6ea-29f0-4f95-a4ae-9eec7fd3db12",
             "https://images.hifiklubben.com/image/e7f374c1-eb66-46ee-b02f-f67816488b28"
@@ -5506,6 +5571,7 @@ const products = [{
             "LINE OUT (VARIABLE)",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH120",
         image: [
             "https://images.hifiklubben.com/image/42b23781-b684-4849-b3e3-5c596717224d",
             "https://images.hifiklubben.com/image/75e50740-1377-4ae2-81b4-79b40b9ac596"
@@ -5528,6 +5594,7 @@ const products = [{
             "LINE OUT (VARIABLE)",
             "SPEAKERS L/R"
         ],
+        sku: "HEGELH95",
         image: [
             "https://images.hifiklubben.com/image/b867cd90-d33f-4cda-b0ba-3b77dd712453",
             "https://images.hifiklubben.com/image/f3cac274-1fb1-4256-892d-03c6b8b43e02"
@@ -5549,6 +5616,7 @@ const products = [{
             "LINE OUT",
             "BALANCED OUT"
         ],
+        sku: "HEGELD50",
         image: [
             "https://images.hifiklubben.com/image/2fd242a8-1186-4d11-a524-f885a548c28b",
             "https://images.hifiklubben.com/image/4c4141c8-5f19-4896-aff5-7f5b8384fe57"
@@ -5579,6 +5647,7 @@ const products = [{
             "SPEAKER OUT 5",
             "TRIGGER OUT"
         ],
+        sku: "HEGELC55",
         image: [
             "https://images.hifiklubben.com/image/7c595a13-c1eb-454c-9b16-8026128caeb4",
             "https://images.hifiklubben.com/image/fcf527cf-c2b4-4254-8ecf-e38bf1d45c04"
@@ -5606,6 +5675,7 @@ const products = [{
             "SPEAKER OUT 4",
             "TRIGGER OUT"
         ],
+        sku: "HEGELC54",
         image: [
             "https://images.hifiklubben.com/image/b24470d6-e561-4ec8-bfc7-9bab07bac8cf",
             "https://images.hifiklubben.com/image/ebcf1a49-8e00-400e-98ea-c8cf4a5ba913"
@@ -5630,6 +5700,7 @@ const products = [{
             "SPEAKER OUT 3",
             "TRIGGER OUT"
         ],
+        sku: "HEGELC53",
         image: [
             "https://images.hifiklubben.com/image/6f4adb6b-f7d2-4e63-8366-02a1468c4d26",
             "https://images.hifiklubben.com/image/93753919-924f-493c-9c25-4279037a8f7b"
@@ -5647,6 +5718,7 @@ const products = [{
             "BALANCED OUT",
             "LINE OUT"
         ],
+        sku: "HEGELV10",
         image: [
             "https://images.hifiklubben.com/image/7ea69147-973b-4b5d-98e3-ef1bb07b8a36",
             "https://images.hifiklubben.com/image/1cb10c4d-4bc2-4ee2-9c7f-51b6251f56bf"
@@ -5664,6 +5736,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "KEFLS60W",
         image: [
             "https://images.hifiklubben.com/image/1682c506-840d-42c0-8c66-be516389c7f1",
             "https://images.hifiklubben.com/image/5826fa90-9979-4168-ba1a-5257813801c8"
@@ -5682,6 +5755,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "KEFLS50W2",
         image: [
             "https://images.hifiklubben.com/image/9fb216a9-167a-4771-a42b-291c63eded43",
             "https://images.hifiklubben.com/image/e149dfad-8c8c-4185-abc9-2ad3411027d8"
@@ -5699,6 +5773,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "KEFLSX2LT",
         image: [
             "https://images.hifiklubben.com/image/c4c8b08f-59b9-4a7d-9188-027b11766375",
             "https://images.hifiklubben.com/image/573bc1b5-c2b3-45fd-9dd1-a253b6b05276"
