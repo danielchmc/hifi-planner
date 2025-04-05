@@ -1787,6 +1787,7 @@ const products = [{
             "TRIGGER OUT",
             "SPEAKER L/R"
         ],
+        sku: "BOBEOAMP2",
         image: [
             "https://images.hifiklubben.com/image/7e9fd617-f352-44ba-8482-a9a21994c574",
             "https://images.hifiklubben.com/image/66e047eb-76f3-4a02-8a64-6f6c31b049e6"
@@ -1796,6 +1797,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound A1 2nd Gen",
         price: "2390",
+        sku: "BOA1G2",
         image: [
             "https://images.hifiklubben.com/image/de2fb6df-61ad-4d47-b092-22da3182cbd5"
         ]
@@ -1807,6 +1809,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "BOBEOLIT20",
         image: [
             "https://images.hifiklubben.com/image/2ef4a06f-28a4-4761-a93c-11dfe7f3adf4"
         ]
@@ -1815,6 +1818,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Explore",
         price: "1899",
+        sku: "BOEXPLORE",
         image: [
             "https://images.hifiklubben.com/image/5795f7bb-d360-4cb3-a964-3022f384295e",
             "https://images.hifiklubben.com/image/e47e66a7-d781-4f9a-9aa9-6adc0a34c290"
@@ -1822,8 +1826,9 @@ const products = [{
     },
     {
         brand: "Bang & Olufsen",
-        name: "Beosound Explore",
+        name: "Beosound 2 3rd Gen.",
         price: "23990",
+        sku: "BOBEOS2V3",
         image: [
             "https://images.hifiklubben.com/image/33aebbe3-aaec-48b1-a75d-ce3f9010bb55",
             "https://images.hifiklubben.com/image/3cb41689-c63a-4513-aaa2-81e5df1f644d"
@@ -1833,6 +1838,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound A9 5th Gen.",
         price: "26490",
+        sku: "BOA9V5",
         image: [
             "https://images.hifiklubben.com/image/5d7d7ecf-858f-4853-86ec-baa68de647d5",
             "https://images.hifiklubben.com/image/8bd81c0e-a3a5-4bb7-b177-7dc2cc6169ae"
@@ -1845,6 +1851,7 @@ const products = [{
         inputs: [
             "USB-C"
         ],
+        sku: "BOA5",
         image: [
             "https://images.hifiklubben.com/image/1ae41b63-3c39-437c-abcc-55ef25b739ef",
             "https://images.hifiklubben.com/image/db0caafc-b1c5-40d2-abee-17703fb05562"
@@ -1854,6 +1861,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Level",
         price: "13490",
+        sku: "BOLEVEL",
         image: [
             "https://images.hifiklubben.com/image/5efdb019-56e5-4fc1-81da-a54ebbddeb47",
             "https://images.hifiklubben.com/image/76ac52b1-f57e-4aa4-8fc5-310ecee11495"
@@ -1863,6 +1871,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Balance",
         price: "22490",
+        sku: "BOBALANCE",
         image: [
             "https://images.hifiklubben.com/image/817fc4dd-d94b-415b-9f08-03ddf009db86"
         ]
@@ -1871,6 +1880,7 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Emerge",
         price: "7499",
+        sku: "BOEMERGENONGAGO",
         image: [
             "https://images.hifiklubben.com/image/084f86eb-6dca-4a3b-9a15-be313f909189"
         ]
@@ -1882,6 +1892,7 @@ const products = [{
         inputs: [
             "HDMI IN"
         ],
+        sku: "BOSTAGE",
         image: [
             "https://images.hifiklubben.com/image/597fc518-e485-4683-b4cd-a150c34220fa"
         ]
@@ -1903,6 +1914,7 @@ const products = [{
             "SUBW OUT",
             "OPTICAL OUT"
         ],
+        sku: "BLSN530",
         image: [
             "https://images.hifiklubben.com/image/6a0c4c01-d65f-407d-a414-3afa035d3e7a",
             "https://images.hifiklubben.com/image/d8049438-a3f4-400b-a02d-40c1aebf04fe"
@@ -1920,6 +1932,7 @@ const products = [{
         outputs: [
             "SUBW OUT"
         ],
+        sku: "BLSSOUNDBARPLUS",
         image: [
             "https://images.hifiklubben.com/image/f5275f22-d7b4-478c-a6f6-472779c72fb3",
             "https://images.hifiklubben.com/image/533784a5-f228-44e1-ab8f-930dd63e257a"
@@ -1927,7 +1940,7 @@ const products = [{
     },
     {
         brand: "Bluesound",
-        name: "Powernode",
+        name: "Powernode (N330)",
         price: "7499",
         inputs: [
             "ANALOG IN1",
@@ -1940,6 +1953,7 @@ const products = [{
             "SUBW OUT",
             "SPEAKER OUT"
         ],
+        sku: "BLSN330",
         image: [
             "https://images.hifiklubben.com/image/2dbd396d-b664-4c51-90f2-892fa80db879",
             "https://images.hifiklubben.com/image/c158f483-b45e-4735-946f-968d7f346a52"
@@ -1952,6 +1966,7 @@ const products = [{
         inputs: [
             "LFE IN"
         ],
+        sku: "BLSPULSESUBPLUS",
         image: [
             "https://images.hifiklubben.com/image/904a5508-a919-44be-81e0-eb1f34661611",
             "https://images.hifiklubben.com/image/f38930fb-7248-4f9d-8cf2-d748d6848609"
@@ -1968,6 +1983,7 @@ const products = [{
         outputs: [
             "HEADPHONE OUT"
         ],
+        sku: "BLSPULSE2I",
         image: [
             "https://images.hifiklubben.com/image/6b8ad14f-017e-448b-a4f1-bfebe3cf53c9",
             "https://images.hifiklubben.com/image/bec02d75-f3c5-40a1-90bb-59e48523beb9"
@@ -1975,7 +1991,7 @@ const products = [{
     },
     {
         brand: "Bluesound",
-        name: "Powernode Edge",
+        name: "Powernode Edge (N230)",
         price: "4999",
         inputs: [
             "ANALOG IN",
@@ -1986,6 +2002,7 @@ const products = [{
             "SUBW OUT",
             "SPEAKER OUT"
         ],
+        sku: "BLSN230",
         image: [
             "https://images.hifiklubben.com/image/a6a65889-1014-496a-b878-3db7a7c5a732",
             "https://images.hifiklubben.com/image/913bbe6c-0ef8-4ce5-a6ef-a8827f7fadb1"
@@ -2010,6 +2027,7 @@ const products = [{
             "TRIGGER OUT",
             "6.35mm JACK"
         ],
+        sku: "BLSN132",
         image: [
             "https://images.hifiklubben.com/image/5eeb2cb3-8b21-47e6-8d1b-d60fee2fe6df",
             "https://images.hifiklubben.com/image/baefa126-d42a-4c91-bbb5-80f18d59102a"
@@ -2026,6 +2044,7 @@ const products = [{
         outputs: [
             "HEADPHONE OUT"
         ],
+        sku: "BLSPULSEMINI2I",
         image: [
             "https://images.hifiklubben.com/image/6b8ad14f-017e-448b-a4f1-bfebe3cf53c9",
             "https://images.hifiklubben.com/image/5eb9b300-aa50-48f3-a6a9-6b2a03d1a254"
@@ -2033,7 +2052,7 @@ const products = [{
     },
     {
         brand: "Bluesound",
-        name: "Pulse M",
+        name: "Pulse M (P230)",
         price: "3299",
         inputs: [
             "ANALOG IN",
@@ -2042,6 +2061,7 @@ const products = [{
         outputs: [
             "HEADPHONE OUT"
         ],
+        sku: "BLSP230",
         image: [
             "https://images.hifiklubben.com/image/847ba128-797d-4d78-84f8-b540ee33547a",
             "https://images.hifiklubben.com/image/a662137a-1d9d-42f4-9930-24b4c9329bf3"
@@ -2049,7 +2069,7 @@ const products = [{
     },
     {
         brand: "Bluesound",
-        name: "Node Nano",
+        name: "Node Nano (N030)",
         price: "2599",
         outputs: [
             "LINE OUT",
@@ -2057,6 +2077,7 @@ const products = [{
             "OPTICAL OUT",
             "TRIGGER OUT"
         ],
+        sku: "BLSN030",
         image: [
             "https://images.hifiklubben.com/image/958840a3-1c98-4785-84c8-54fc1237bfe1",
             "https://images.hifiklubben.com/image/30e62752-7f12-494d-8425-19945c39234b"
@@ -2064,7 +2085,7 @@ const products = [{
     },
     {
         brand: "Bluesound",
-        name: "HUB",
+        name: "HUB (CB130)",
         price: "2499",
         inputs: [
             "HDMI eARC",
@@ -2074,6 +2095,7 @@ const products = [{
             "PHONO MM",
             "USB"
         ],
+        sku: "BLSCB130",
         image: [
             "https://images.hifiklubben.com/image/b3a215c9-8acd-4bf5-9d8c-d697648142a6",
             "https://images.hifiklubben.com/image/56629be6-a37d-4659-805f-cb3dd6ca1b57"
@@ -2090,6 +2112,7 @@ const products = [{
         outputs: [
             "HEADPHONE OUT"
         ],
+        sku: "BLSPULSEFLEX2I",
         image: [
             "https://images.hifiklubben.com/image/e210eaa4-8922-4a4d-b23d-44eaa6e82cb6",
             "https://images.hifiklubben.com/image/cb2a41f9-cc7a-4e31-b9ab-29081af163b4"
@@ -2099,6 +2122,7 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "Zeppelin Pro Edition",
         price: "5999",
+        sku: "BWZEPPELING5",
         image: [
             "https://images.hifiklubben.com/image/f6fae6f4-82fe-4884-9cf1-d8d9f0d99619",
             "https://images.hifiklubben.com/image/c5ae0de4-b413-4a11-a38e-06bbea705141"
@@ -2108,6 +2132,7 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "Zeppelin McLaren Edition",
         price: "6699",
+        sku: "BWZEPPELING4MCLAREN",
         image: [
             "https://images.hifiklubben.com/image/37beefca-b386-4574-b6d5-750aeed14a16",
             "https://images.hifiklubben.com/image/dbc19cd6-5272-454d-83fe-79beeafab718"
@@ -2120,6 +2145,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW800D3",
         image: [
             "https://images.hifiklubben.com/image/2d886157-a005-46f7-ae13-a05c14ec3c13/pdp_d/pdp_d.jpg"
         ]
@@ -2131,6 +2157,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW801D4",
         image: [
             "https://images.hifiklubben.com/image/50b95fb3-057f-4f52-a604-ee559af71bde"
         ]
@@ -2142,6 +2169,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW801D4SIGNATURE",
         image: [
             "https://images.hifiklubben.com/image/7f93b4e0-1808-4937-83aa-63af772333f4",
             "https://images.hifiklubben.com/image/45db78ac-6a53-4b27-aca0-60a6fa06cf5d"
@@ -2154,6 +2182,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW802D4",
         image: [
             "https://images.hifiklubben.com/image/7fee89a2-c6a0-4c71-9b5f-c43bc8760e56"
         ]
@@ -2165,6 +2194,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW803D4",
         image: [
             "https://images.hifiklubben.com/image/bd2917a8-fc57-4bc6-9bd7-b0d5723bb86c"
         ]
@@ -2176,6 +2206,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW804D4",
         image: [
             "https://images.hifiklubben.com/image/86d07381-7cc5-4c1c-bcde-ec2a3c814126"
         ]
@@ -2187,6 +2218,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW805D4",
         image: [
             "https://images.hifiklubben.com/image/432bb544-16a0-4f77-9806-6e40b178a05d",
             "https://images.hifiklubben.com/image/1da56ddb-6842-48ce-a8d6-a3b4a8c27fd2"
@@ -2199,6 +2231,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW805D4SIGNATURE",
         image: [
             "https://images.hifiklubben.com/image/1ad680e2-6be7-43a4-8426-119e4ee3ef64",
             "https://images.hifiklubben.com/image/6cc928b8-6483-47d6-a6a2-6830736c8319"
@@ -2211,6 +2244,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM81D4",
         image: [
             "https://images.hifiklubben.com/image/f1cc05dc-e50b-45c7-97a0-936a276be4b2",
             "https://images.hifiklubben.com/image/44f50ce2-f362-423a-94b5-67d9a64d4b88"
@@ -2223,6 +2257,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM82D4",
         image: [
             "https://images.hifiklubben.com/image/7ca61dab-7df4-4ec3-8d74-6ed4ac550785",
             "https://images.hifiklubben.com/image/aab4008c-a474-4b48-83d9-9f933665f77b"
@@ -2235,6 +2270,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW702S3",
         image: [
             "https://images.hifiklubben.com/image/7f481c14-e84c-41a9-84e8-43c6169a8f39"
         ]
@@ -2246,6 +2282,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW702S3SIGNATURE",
         image: [
             "https://images.hifiklubben.com/image/a90422bb-ff7f-492a-a7a4-06596360815f",
             "https://images.hifiklubben.com/image/25d5e770-272a-4e20-88ac-9b7fd1d06c73"
@@ -2258,6 +2295,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW703S3",
         image: [
             "https://images.hifiklubben.com/image/9b01a4ba-1b4e-42bb-9a9d-331082e76a0c"
         ]
@@ -2269,6 +2307,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW704S3",
         image: [
             "https://images.hifiklubben.com/image/55e63b03-84a7-4563-8fd1-80c5b09165f2"
         ]
@@ -2280,6 +2319,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW705S3",
         image: [
             "https://images.hifiklubben.com/image/aa20f863-b94d-4cdc-a18b-cc10550627ea"
         ]
@@ -2291,6 +2331,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW705S3SIGNATURE",
         image: [
             "https://images.hifiklubben.com/image/a3564b0a-688d-41fc-860a-42d2eb779599",
             "https://images.hifiklubben.com/image/e5207bb5-3173-4728-877d-cf387dd06f6b"
@@ -2303,6 +2344,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW706S3",
         image: [
             "https://images.hifiklubben.com/image/300ad482-3835-4388-862b-a5bf3adc4f82"
         ]
@@ -2314,6 +2356,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW707S3",
         image: [
             "https://images.hifiklubben.com/image/d2f33feb-c9ad-476e-a5bf-bd44d4070ce9"
         ]
@@ -2325,6 +2368,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM71S3SIGNATURE",
         image: [
             "https://images.hifiklubben.com/image/3755e03e-53b0-4ad5-8de2-76e4d7baf006",
             "https://images.hifiklubben.com/image/2e34c0a0-8607-4553-946c-0aad7b96cd9c"
@@ -2337,6 +2381,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM71S3",
         image: [
             "https://images.hifiklubben.com/image/bae1c083-1522-4664-98f8-8a4f1360cf1a",
             "https://images.hifiklubben.com/image/5de27e53-1b59-4b9d-a69a-9971b764f320"
@@ -2349,6 +2394,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM72S3",
         image: [
             "https://images.hifiklubben.com/image/d6aa9f05-cafc-4fa3-bf24-099b2e9b8b1c",
             "https://images.hifiklubben.com/image/2de6d66a-f822-45d5-bca1-11268cc9dff0"
@@ -2361,19 +2407,9 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW603S3",
         image: [
             "https://images.hifiklubben.com/image/63e1937d-72dc-4c34-b94e-bf06d599128a"
-        ]
-    },
-    {
-        brand: "Bowers & Wilkins",
-        name: "603 S2 ANNIV. EDT.",
-        price: "14998",
-        inputs: [
-            "SPEAKER IN"
-        ],
-        image: [
-            "https://images.hifiklubben.com/image/18677112-dbfd-4b82-bf16-20c6524a0aab"
         ]
     },
     {
@@ -2383,6 +2419,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW606S3",
         image: [
             "https://images.hifiklubben.com/image/3b6a9a2b-3284-47ef-aaf8-363cedda679a"
         ]
@@ -2394,6 +2431,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BW607S3",
         image: [
             "https://images.hifiklubben.com/image/45c9b026-9fad-4104-808f-8b074afbe616"
         ]
@@ -2405,6 +2443,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWHTM6S3",
         image: [
             "https://images.hifiklubben.com/image/5b3976b0-a326-478b-95bb-8ac74324d890"
         ]
@@ -2417,6 +2456,7 @@ const products = [{
             "LINE IN",
             "BALANCED IN"
         ],
+        sku: "BWDB1D",
         image: [
             "https://images.hifiklubben.com/image/f080c008-0d22-4c88-a24d-60972ccb279f/pdp_d/pdp_d.jpg"
         ]
@@ -2429,6 +2469,7 @@ const products = [{
             "LINE IN",
             "BALANCED IN"
         ],
+        sku: "BWDB2D",
         image: [
             "https://images.hifiklubben.com/image/84d93bb1-6b49-4d89-983b-f5e4802dabd2/pdp_d/pdp_d.jpg"
         ]
@@ -2441,6 +2482,7 @@ const products = [{
             "LINE IN",
             "BALANCED IN"
         ],
+        sku: "BWDB3D",
         image: [
             "https://images.hifiklubben.com/image/5a2eddb9-1b7b-4459-a036-e9d6771ff53e/pdp_d/pdp_d.jpg"
         ]
@@ -2453,6 +2495,7 @@ const products = [{
             "LINE IN",
             "BALANCED IN"
         ],
+        sku: "BWDB4S",
         image: [
             "https://images.hifiklubben.com/image/3298a7bf-8cba-4e04-ad06-6678bf2f8b8b",
             "https://images.hifiklubben.com/image/e8bca212-8286-4a2b-991b-fa648d6e2c12"
@@ -2467,6 +2510,7 @@ const products = [{
             "TRIGGER IN",
             "SPEAKER IN"
         ],
+        sku: "BWASW610",
         image: [
             "https://images.hifiklubben.com/image/822725e2-1f0a-40aa-b75d-b9bb546e6bdf",
             "https://images.hifiklubben.com/image/ad9e25cf-ba3e-40d0-919e-4e9027803488"
@@ -2479,6 +2523,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWM1",
         image: [
             "https://images.hifiklubben.com/image/094046a5-9e4c-47fb-8ec2-702bb119415c"
         ]
@@ -2490,6 +2535,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM8-5D",
         image: [
             "https://images.hifiklubben.com/image/4cc10635-85ea-4adb-8d9e-62baa1873c5a/pdp_d/pdp_d.jpg"
         ]
@@ -2501,6 +2547,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM8-3D",
         image: [
             "https://images.hifiklubben.com/image/75aa724e-4d26-4157-9808-d25fde1d7405",
             "https://images.hifiklubben.com/image/ebfb9921-88d4-4809-8dd7-ac87a992d707"
@@ -2513,6 +2560,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM7-5S2",
         image: [
             "https://images.hifiklubben.com/image/f6bfd021-4f25-4d08-b618-305513b33eaf",
             "https://images.hifiklubben.com/image/63c8bb02-fdf5-4ad6-97f1-87bde7185cf0"
@@ -2525,6 +2573,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM7-2S2",
         image: [
             "https://images.hifiklubben.com/image/d9750a93-a04b-4362-86a5-d1e4376cb005",
             "https://images.hifiklubben.com/image/ad917ca2-c033-4364-8728-1bfc38dffe9f"
@@ -2537,6 +2586,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM7-4S2",
         image: [
             "https://images.hifiklubben.com/image/11a030a7-7f18-4a72-a602-cdd65ff8bad8",
             "https://images.hifiklubben.com/image/da7a2fc9-c44b-49b9-9352-fbf161d4aa6a"
@@ -2549,6 +2599,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM7-3S2",
         image: [
             "https://images.hifiklubben.com/image/35e7658d-a50a-4e0e-8e10-688b3757d4ba",
             "https://images.hifiklubben.com/image/128ce137-0ee8-4bea-aed2-49b255e69bd3"
@@ -2561,6 +2612,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM8-5D",
         image: [
             "https://images.hifiklubben.com/image/705ba75d-d315-468a-a0f4-ff496507f1e9"
         ]
@@ -2572,6 +2624,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM7-3S2",
         image: [
             "https://images.hifiklubben.com/image/b2d46f28-c93c-4cf1-8ecb-701dc20b3d9d",
             "https://images.hifiklubben.com/image/b2f5f680-a1f7-4dc1-aaf0-5084d95104e4"
@@ -2584,6 +2637,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM662",
         image: [
             "https://images.hifiklubben.com/image/77328fe3-50ea-4865-967c-a3994d9a2da4",
             "https://images.hifiklubben.com/image/c22e9f58-399e-44f1-824e-e73a5b9488d3"
@@ -2596,6 +2650,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM663RD",
         image: [
             "https://images.hifiklubben.com/image/2f1d0947-f30e-4bac-9d37-b010974e06f9/pdp_d/pdp_d.jpg"
         ]
@@ -2607,6 +2662,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM652",
         image: [
             "https://images.hifiklubben.com/image/7713ef89-cbf6-471b-a5d1-cdddf5d847f8"
         ]
@@ -2618,6 +2674,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM664SR",
         image: [
             "https://images.hifiklubben.com/image/e88b6643-3632-4abb-9836-a363edf9d799"
         ]
@@ -2629,6 +2686,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM632",
         image: [
             "https://images.hifiklubben.com/image/55ef56bf-a121-45a9-9361-0ef1349ccdc8",
             "https://images.hifiklubben.com/image/2fd6fa21-b859-477a-9e09-948cd9fe4a91"
@@ -2641,6 +2699,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM663SR",
         image: [
             "https://images.hifiklubben.com/image/0cde24c7-89ee-468a-83a5-2056c6f5442c",
             "https://images.hifiklubben.com/image/797a2bbe-cb38-427f-a525-5d875918d9b0"
@@ -2653,6 +2712,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM665",
         image: [
             "https://images.hifiklubben.com/image/482d4132-c863-4db8-8c22-8478cdf3f8e4",
             "https://images.hifiklubben.com/image/decbf373-9e93-4b9c-9488-ddfb9e309927"
@@ -2665,6 +2725,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM683",
         image: [
             "https://images.hifiklubben.com/image/0f194b6a-4703-42ae-82b5-f795d842571b"
         ]
@@ -2676,6 +2737,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM664",
         image: [
             "https://images.hifiklubben.com/image/661d0822-b8e7-49f5-8ba0-44e55cf681c6",
             "https://images.hifiklubben.com/image/1802504d-e66b-4a1c-86ad-f4236bf35995"
@@ -2688,6 +2750,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM684",
         image: [
             "https://images.hifiklubben.com/image/ee637ebd-d170-4ba4-bb0e-0846397bbf8c"
         ]
@@ -2699,6 +2762,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM663",
         image: [
             "https://images.hifiklubben.com/image/facad351-6365-42b5-866d-e5b54d4023af"
         ]
@@ -2710,6 +2774,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM664",
         image: [
             "https://images.hifiklubben.com/image/df3e4728-2957-4300-aded-e20550c0878c"
         ]
@@ -2721,6 +2786,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM663",
         image: [
             "https://images.hifiklubben.com/image/d4d39505-2ea9-4eee-bca5-fb46819615ba",
             "https://images.hifiklubben.com/image/3de4e3a3-245b-47e2-9776-3ce0c873a0f7"
@@ -2733,6 +2799,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM682",
         image: [
             "https://images.hifiklubben.com/image/da28e009-16c7-4292-af41-54f47ee36ba5"
         ]
@@ -2744,6 +2811,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM382",
         image: [
             "https://images.hifiklubben.com/image/616ba8e6-c530-4a1c-99a0-748f111d26e2",
             "https://images.hifiklubben.com/image/bbfe3c67-44f2-40b5-93e9-ac4061707619"
@@ -2756,6 +2824,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCWM362",
         image: [
             "https://images.hifiklubben.com/image/41f0809f-b4a3-4fcb-827f-1da2de4b5397"
         ]
@@ -2767,6 +2836,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCCM362",
         image: [
             "https://images.hifiklubben.com/image/850509a0-5679-417d-8d83-45bcbe5cdca3"
         ]
@@ -2778,6 +2848,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-4D)"
         ],
+        sku: "BWISW6",
         image: [
             "https://images.hifiklubben.com/image/032ef71d-294f-47e1-8f0a-cdcaa49349c2"
         ]
@@ -2789,6 +2860,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-4D)"
         ],
+        sku: "BWISW3",
         image: [
             "https://images.hifiklubben.com/image/dc337306-f355-4e30-b737-c11bd12e0c72"
         ]
@@ -2800,6 +2872,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
+        sku: "BWISW8",
         image: [
             "https://images.hifiklubben.com/image/032ef71d-294f-47e1-8f0a-cdcaa49349c2"
         ]
@@ -2818,6 +2891,7 @@ const products = [{
             "SPEAKER 2",
             "TRIGGER OUT"
         ],
+        sku: "BWCDA2HD",
         image: [
             "https://images.hifiklubben.com/image/af60fc48-08cd-458b-b0a6-36b41f69e159",
             "https://images.hifiklubben.com/image/3d7a02ad-f373-4f62-9e21-3cb861e4cdf8"
@@ -2841,6 +2915,7 @@ const products = [{
             "SPEAKER 4",
             "TRIGGER OUT"
         ],
+        sku: "BWCDA4D",
         image: [
             "https://images.hifiklubben.com/image/30066fd4-b1ef-421b-9ae3-463d5c87bfd5",
             "https://images.hifiklubben.com/image/bf02ce52-6595-4f0a-93ca-90b1547310b1"
@@ -2880,6 +2955,7 @@ const products = [{
             "SPEAKER 16",
             "TRIGGER OUT"
         ],
+        sku: "BWCDA16",
         image: [
             "https://images.hifiklubben.com/image/e20c54dc-b9ac-4ce9-92e1-2f40e4774ea5",
             "https://images.hifiklubben.com/image/3c346ae7-cf19-47b2-8330-77675e80006a"
@@ -2892,6 +2968,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
+        sku: "BWCT8SW",
         image: [
             "https://images.hifiklubben.com/image/c4e99c40-6684-4a76-9f7a-a4811d69906e"
         ]
@@ -2903,6 +2980,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
+        sku: "BWCTSW10",
         image: [
             "https://images.hifiklubben.com/image/270a6d23-69ec-4359-a03d-d732d9e02912"
         ]
@@ -2914,6 +2992,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
+        sku: "BWCTSW12",
         image: [
             "https://images.hifiklubben.com/image/343a28de-6d57-479c-a17f-e6efaeea8cdb"
         ]
@@ -2925,6 +3004,7 @@ const products = [{
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
+        sku: "BWCTSW15",
         image: [
             "https://images.hifiklubben.com/image/e19da6d4-88ab-4278-bbb9-ad337fb95a11"
         ]
@@ -2936,6 +3016,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCT7-3LCR",
         image: [
             "https://images.hifiklubben.com/image/11d6a42b-8771-4036-bc45-62716f0cfb96"
         ]
@@ -2947,6 +3028,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCT7-4LCR",
         image: [
             "https://images.hifiklubben.com/image/85d3b067-865d-42fc-bce6-8bdf8f260496"
         ]
@@ -2958,6 +3040,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "BWCT7-5LCR",
         image: [
             "https://images.hifiklubben.com/image/19ac167a-df46-4bc9-9cce-0f305cd58d17"
         ]
@@ -2977,6 +3060,7 @@ const products = [{
             "LINE OUT (Minijack)",
             "LINE OUT (6.3mm Jack)"
         ],
+        sku: "BURCONDUCTOR3XPERF",
         image: [
             "https://images.hifiklubben.com/image/0fdfbe3a-dd9f-4600-8b22-e1b8a58d0f08",
             "https://images.hifiklubben.com/image/99fc5e7d-34ff-46e9-88e9-2fc95e6f6808"
@@ -2992,6 +3076,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "BURPLAYMATE2",
         image: [
             "https://images.hifiklubben.com/image/a29ce691-dbc8-4311-9f02-267a6f9e36ff",
             "https://images.hifiklubben.com/image/fd9596bf-eb3d-4ea2-a388-9275ac1c695b"
@@ -3008,6 +3093,7 @@ const products = [{
             "COAXIAL OUT",
             "OPTICAL OUT"
         ],
+        sku: "CYPAUD4",
         image: [
             "https://images.hifiklubben.com/image/cbf71694-dc04-456d-ac77-fb6ab85aa5d4",
             "https://images.hifiklubben.com/image/af409824-7109-42ac-bfe0-c069776fe656"
@@ -3025,6 +3111,7 @@ const products = [{
             "OPTICAL",
             "COAXIAL"
         ],
+        sku: "CYPAUD2",
         image: [
             "https://images.hifiklubben.com/image/711a03b2-8dba-44f7-8c18-d37e941e8a2a"
         ]
@@ -3036,6 +3123,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIKORE",
         image: [
             "https://images.hifiklubben.com/image/49422da4-35e8-4591-8edb-72877dfa0ecc"
         ]
@@ -3047,6 +3135,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPIKORE11",
         image: [
             "https://images.hifiklubben.com/image/424f6d4f-d528-4b24-b40a-fd60a8074574"
         ]
@@ -3058,6 +3147,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPIKORE9",
         image: [
             "https://images.hifiklubben.com/image/c85a24c4-24a2-46c5-8df3-08246b4a9f1e"
         ]
@@ -3069,6 +3159,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPIKORE7",
         image: [
             "https://images.hifiklubben.com/image/43e03db3-014c-4c09-a637-9c207145429c"
         ]
@@ -3080,6 +3171,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPIKORE3",
         image: [
             "https://images.hifiklubben.com/image/0238d49c-298f-4042-9f0e-700b3c8456cf"
         ]
@@ -3091,6 +3183,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPICON8",
         image: [
             "https://images.hifiklubben.com/image/ab23c481-0db2-4fac-908a-c506abed17a3"
         ]
@@ -3102,6 +3195,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPICON6",
         image: [
             "https://images.hifiklubben.com/image/3859abff-cbef-4770-b8eb-400917058339"
         ]
@@ -3113,6 +3207,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPICON2",
         image: [
             "https://images.hifiklubben.com/image/e09adecd-2e73-491d-b587-b79bf090f66b",
             "https://images.hifiklubben.com/image/d791509a-818d-448f-889b-47953169d8a7"
@@ -3120,11 +3215,12 @@ const products = [{
     },
     {
         brand: "DALI",
-        name: "Epicon Vocal",
+        name: "Epicon Vokal",
         price: "36999",
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALEPICONVOK",
         image: [
             "https://images.hifiklubben.com/image/bdace4a8-f5de-4fbd-a4fa-9e8cb889bc68",
             "https://images.hifiklubben.com/image/0d960fc0-093b-42f3-a054-d54f737a370d"
@@ -3137,6 +3233,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBIKORE8",
         image: [
             "https://images.hifiklubben.com/image/5e479fb2-0798-4b19-a777-b8e7007b782f"
         ]
@@ -3148,6 +3245,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBIKORE6",
         image: [
             "https://images.hifiklubben.com/image/6f4de179-916a-4e80-87a0-c6840398fc47"
         ]
@@ -3159,6 +3257,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBIKORE2",
         image: [
             "https://images.hifiklubben.com/image/dc3de766-b374-43fa-b1ad-b592b61e7e72"
         ]
@@ -3170,6 +3269,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBIKOREONW",
         image: [
             "https://images.hifiklubben.com/image/da3f5ed3-e02d-4385-8f99-3a0a4e8a778c",
             "https://images.hifiklubben.com/image/5e4d20db-b876-4fd8-9e58-49b903c7eea0"
@@ -3182,6 +3282,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBIKORECINE",
         image: [
             "https://images.hifiklubben.com/image/0cd2de7d-ebbc-4010-8bf3-6421f41ccc05",
             "https://images.hifiklubben.com/image/f387f46e-04dd-48fd-a674-f0d9665e3224"
@@ -3194,6 +3295,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBICON8",
         image: [
             "https://images.hifiklubben.com/image/d2e269fd-bbf4-4087-b7fe-50295a9d7731"
         ]
@@ -3205,6 +3307,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIRUBICON6",
         image: [
             "https://images.hifiklubben.com/image/a68dd5a0-0da2-41fa-b0a1-ee7ff84a88a0"
         ]
@@ -3216,6 +3319,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMS280",
         image: [
             "https://images.hifiklubben.com/image/ba561c15-aa75-4690-9bfc-d6bfde7b880d",
             "https://images.hifiklubben.com/image/5a07383b-3352-474b-8ed3-12e9e3eeda53"
@@ -3228,6 +3332,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMS180",
         image: [
             "https://images.hifiklubben.com/image/cca245d0-ea36-481d-ae3d-133c00fa29fa",
             "https://images.hifiklubben.com/image/d47ae884-24b6-46ac-99e7-df3ae5f8c6eb"
@@ -3250,6 +3355,7 @@ const products = [{
             "COAXIAL",
             "SPEAKERS L/R"
         ],
+        sku: "DALIPHANTOMAMP2500",
         image: [
             "https://images.hifiklubben.com/image/ca2d4b55-f602-4ad0-a4df-e8c218ab834c",
             "https://images.hifiklubben.com/image/7e82c272-87d0-4068-83ee-c7d90f0eca23"
@@ -3275,6 +3381,7 @@ const products = [{
             "SPEAKERS OUT 3",
             "SPEAKERS OUT 4"
         ],
+        sku: "DALIPHANTOMAMP4750",
         image: [
             "https://images.hifiklubben.com/image/76b7d1fa-f435-4a8a-9d07-258bedbe67f7",
             "https://images.hifiklubben.com/image/663d7b52-c265-4de6-b6e6-ae4b3bea39a2"
@@ -3287,6 +3394,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMM675",
         image: [
             "https://images.hifiklubben.com/image/a458ce13-3e76-4755-b41e-4223f1d71a5f",
             "https://images.hifiklubben.com/image/1344c1b9-270b-4378-bd79-7f46a9a57e18"
@@ -3299,6 +3407,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMS80",
         image: [
             "https://images.hifiklubben.com/image/146326e8-05e4-463a-8dbe-e2819aab5e62",
             "https://images.hifiklubben.com/image/c344f82c-c45a-439b-b52d-eb3ca5a002e3"
@@ -3311,6 +3420,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH120",
         image: [
             "https://images.hifiklubben.com/image/b9b35acf-8b32-4724-ac11-4ecf029d7231"
         ]
@@ -3322,6 +3432,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH80R",
         image: [
             "https://images.hifiklubben.com/image/e84b7095-22fb-4f16-adf7-20f5ca897969",
             "https://images.hifiklubben.com/image/cb4ea01b-1474-4f54-9793-fdd7b3ee1a5e"
@@ -3334,6 +3445,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH60R",
         image: [
             "https://images.hifiklubben.com/image/2de33784-03e9-4811-9f99-1f678a8d52ed",
             "https://images.hifiklubben.com/image/d9282c26-4d95-48df-a238-060c9afecc77"
@@ -3346,6 +3458,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMM375",
         image: [
             "https://images.hifiklubben.com/image/b90cb56b-f91b-41f5-a01f-20bba814cf75",
             "https://images.hifiklubben.com/image/be9b628e-5729-4ddd-8f6a-cfd47f33ebec"
@@ -3358,6 +3471,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH80",
         image: [
             "https://images.hifiklubben.com/image/83de19a2-e0e1-47d6-a485-fab6cb978330",
             "https://images.hifiklubben.com/image/5610d2d9-078a-41e5-9cfd-55210912f367"
@@ -3370,6 +3484,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH60",
         image: [
             "https://images.hifiklubben.com/image/3f67757f-1fe4-40c6-bbbe-a75dc6748259",
             "https://images.hifiklubben.com/image/9f6ef6b5-b160-4275-8782-b180eb2577c9"
@@ -3382,6 +3497,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMH50",
         image: [
             "https://images.hifiklubben.com/image/2218391c-0286-4ca0-a6d0-f0cbab6e2988",
             "https://images.hifiklubben.com/image/5fb904e5-14ba-4dca-aca6-78929ba4ef8b"
@@ -3394,6 +3510,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMK80",
         image: [
             "https://images.hifiklubben.com/image/ba64da39-5195-48d8-9c7e-946be2e9b106",
             "https://images.hifiklubben.com/image/96383982-757d-4faa-bfde-ad31ec3fafdc"
@@ -3406,6 +3523,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMK60",
         image: [
             "https://images.hifiklubben.com/image/5d67373d-9cd0-4383-94f1-90b26e90cc0b",
             "https://images.hifiklubben.com/image/405cf9ae-8ddf-4e1a-ada4-8cc011443442"
@@ -3418,6 +3536,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMK60LP",
         image: [
             "https://images.hifiklubben.com/image/f17757f0-527a-4323-8632-70677009a576",
             "https://images.hifiklubben.com/image/8f466ec7-e2f2-4fdb-88da-0061ddd83b3c"
@@ -3430,6 +3549,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMM80A",
         image: [
             "https://images.hifiklubben.com/image/5cc16d77-2407-4046-9c33-6ca82abb6361"
         ]
@@ -3441,6 +3561,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOMM250",
         image: [
             "https://images.hifiklubben.com/image/1cdfa252-15d0-468e-b6a4-6df286dfa516",
             "https://images.hifiklubben.com/image/d47ae884-24b6-46ac-99e7-df3ae5f8c6eb"
@@ -3453,6 +3574,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME80WR",
         image: [
             "https://images.hifiklubben.com/image/996848a6-e9af-4f4f-9bcb-0786e8e7b134",
             "https://images.hifiklubben.com/image/2d4f29b0-7377-4ab3-ac5a-a0a9c4df2d5d"
@@ -3465,6 +3587,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "DALIPHANTOME60S",
         image: [
             "https://images.hifiklubben.com/image/a2434eca-9531-4f30-8f9d-f88ad2a117cf",
             "https://images.hifiklubben.com/image/71b33b50-15f0-4cfd-b754-85da703441c9"
