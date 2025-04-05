@@ -2983,6 +2983,31 @@ const products = [{
     },
     {
         brand: "DALI",
+        name: "Phantom CI AMP-4750 DSP",
+        price: "31499",
+        inputs: [
+            "GPIO",
+            "COAXIAL IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4"
+        ],
+        outputs: [
+            "GPIO",
+            "COAXIAL OUT",
+            "SPEAKERS OUT 1",
+            "SPEAKERS OUT 2",
+            "SPEAKERS OUT 3",
+            "SPEAKERS OUT 4"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/76b7d1fa-f435-4a8a-9d07-258bedbe67f7",
+            "https://images.hifiklubben.com/image/663d7b52-c265-4de6-b6e6-ae4b3bea39a2"
+        ]
+    },
+    {
+        brand: "DALI",
         name: "Phantom M-675 (1 Unit)",
         price: "16299",
         inputs: [
@@ -4992,6 +5017,87 @@ const products = [{
         ]
     },
     {
+        brand: "Hegel",
+        name: "C55",
+        price: "62999",
+        inputs: [
+            "LINE IN 1",
+            "BALANCED IN 1",
+            "LINE IN 2",
+            "BALANCED IN 2",
+            "LINE IN 3",
+            "BALANCED IN 3",
+            "LINE IN 4",
+            "BALANCED IN 4",
+            "LINE IN 5",
+            "BALANCED IN 5",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4",
+            "SPEAKER OUT 5",
+            "TRIGGER OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7c595a13-c1eb-454c-9b16-8026128caeb4",
+            "https://images.hifiklubben.com/image/fcf527cf-c2b4-4254-8ecf-e38bf1d45c04"
+        ]
+    },
+    {
+        brand: "Hegel",
+        name: "C54",
+        price: "55499",
+        inputs: [
+            "LINE IN 1",
+            "BALANCED IN 1",
+            "LINE IN 2",
+            "BALANCED IN 2",
+            "LINE IN 3",
+            "BALANCED IN 3",
+            "LINE IN 4",
+            "BALANCED IN 4",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4",
+            "TRIGGER OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/b24470d6-e561-4ec8-bfc7-9bab07bac8cf",
+            "https://images.hifiklubben.com/image/ebcf1a49-8e00-400e-98ea-c8cf4a5ba913"
+        ]
+    },
+    {
+        brand: "Hegel",
+        name: "C53",
+        price: "47999",
+        inputs: [
+            "LINE IN 1",
+            "BALANCED IN 1",
+            "LINE IN 2",
+            "BALANCED IN 2",
+            "LINE IN 3",
+            "BALANCED IN 3",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "TRIGGER OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/6f4adb6b-f7d2-4e63-8366-02a1468c4d26",
+            "https://images.hifiklubben.com/image/93753919-924f-493c-9c25-4279037a8f7b"
+        ]
+    },
+    {
         brand: "KEF",
         name: "LS60 WIRELESS",
         price: "34990",
@@ -6036,6 +6142,41 @@ const products = [{
     },
     {
         brand: "NAD",
+        name: "M28",
+        price: "44999",
+        inputs: [
+            "LINE IN 1",
+            "BALANCED IN 1",
+            "LINE IN 2",
+            "BALANCED IN 2",
+            "LINE IN 3",
+            "BALANCED IN 3",
+            "LINE IN 4",
+            "BALANCED IN 4",
+            "LINE IN 5",
+            "BALANCED IN 5",
+            "LINE IN 6",
+            "BALANCED IN 6",
+            "LINE IN 7",
+            "BALANCED IN 7",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4",
+            "SPEAKER OUT 5",
+            "SPEAKER OUT 6",
+            "SPEAKER OUT 7",
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/52ad6157-711b-4544-ab3c-48f1a783a66f",
+            "https://images.hifiklubben.com/image/60dba502-e3c3-4dcc-82e6-e05425c398aa"
+        ]
+    },
+    {
+        brand: "NAD",
         name: "T778",
         price: "28999",
         inputs: [
@@ -6492,6 +6633,132 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/66c95291-7ec5-4bcb-b7e1-6b0e0013e0ae",
             "https://nadelectronics.com/wp-content/uploads/2016/09/NAD-CI-580-Rear-1.jpg"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "CI 980",
+        price: "10999",
+        inputs: [
+            "GLOBAL IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL IN 1",
+            "OPTICAL IN 2",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "TRIGGER OUT 1",
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/223227be-821a-41e0-8582-d0f8ba0e255a",
+            "https://images.hifiklubben.com/image/853e139b-5735-4b73-86a8-17973ec860cd"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "CI 16-60 DSP",
+        price: "23999",
+        inputs: [
+            "GLOBAL IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "LINE IN 7",
+            "LINE IN 8",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "TRIGGER OUT 1",
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "LINE OUT 5",
+            "LINE OUT 6",
+            "LINE OUT 7",
+            "LINE OUT 8",
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4",
+            "SPEAKER OUT 5",
+            "SPEAKER OUT 6",
+            "SPEAKER OUT 7",
+            "SPEAKER OUT 8",
+            "SPEAKER OUT 9",
+            "SPEAKER OUT 10",
+            "SPEAKER OUT 11",
+            "SPEAKER OUT 12",
+            "SPEAKER OUT 13",
+            "SPEAKER OUT 14",
+            "SPEAKER OUT 15",
+            "SPEAKER OUT 16"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/f2088296-bdc6-4be9-81c6-2d2d10447662",
+            "https://images.hifiklubben.com/image/5c3c98ec-a5b0-4e2e-8406-12cdd54c2c83"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "CI 16-60 DSP",
+        price: "23999",
+        inputs: [
+            "GLOBAL IN 1",
+            "GLOBAL IN 2",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "LINE IN 7",
+            "LINE IN 8",
+            "OPTICAL IN 1",
+            "OPTICAL IN 2",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "GLOBAL OUT 1",
+            "GLOBAL OUT 2",
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "LINE OUT 5",
+            "LINE OUT 6",
+            "LINE OUT 7",
+            "LINE OUT 8",
+            "SPEAKER OUT 1",
+            "SPEAKER OUT 2",
+            "SPEAKER OUT 3",
+            "SPEAKER OUT 4",
+            "SPEAKER OUT 5",
+            "SPEAKER OUT 6",
+            "SPEAKER OUT 7",
+            "SPEAKER OUT 8"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/6e72411a-2b14-46f8-b8a4-9390db008f3c",
+            "https://images.hifiklubben.com/image/4da816a7-4296-4346-8a93-882748ff0d23"
         ]
     },
     {
