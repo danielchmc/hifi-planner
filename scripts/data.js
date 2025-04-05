@@ -491,6 +491,85 @@ const products = [{
     },
     {
         brand: "Argon Audio",
+        name: "TT-4 MK2",
+        price: "5999",
+        outputs: [
+            "LINE OUT",
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/11b75b05-0dc1-4aab-b1e8-b6ad6063a78f",
+            "https://images.hifiklubben.com/image/c38e2bc9-55c0-4c2b-8605-f9cfd35a1dd1"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "TT MK2",
+        price: "1999",
+        outputs: [
+            "LINE OUT",
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/636b4281-673c-4647-912a-ca368a6007f2",
+            "https://images.hifiklubben.com/image/aa584232-95e5-4b74-b07b-b4b0d24c761c"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "TT-3 Plus",
+        price: "3999",
+        outputs: [
+            "LINE OUT",
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/f826203d-920b-4083-b27d-3becc58f0ca1",
+            "https://images.hifiklubben.com/image/4e65b9a8-1a42-4661-9a5c-8dbabc4e624f"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "TT-3",
+        price: "2999",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/64b0d8b6-b9d7-4cab-85f5-087d896b2252",
+            "https://images.hifiklubben.com/image/ed3b13f5-40a3-420f-bf24-94a4c33aa83a"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "TT-4 Special Edition",
+        price: "7499",
+        outputs: [
+            "LINE OUT",
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/f792256d-6311-4dae-b62a-c1a0ff1c08a1",
+            "https://images.hifiklubben.com/image/db66f328-21c4-43b2-8256-d09240a48fae"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "PHONO1",
+        price: "699",
+        inputs: [
+            "PHONO IN"
+        ],
+        outputs: [
+            "LINE OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/1f76e4f0-793b-4102-91c4-643e8c27bda2",
+            "https://images.hifiklubben.com/image/d5ab3a71-602c-4b78-9c53-d7a6b2d52788"
+        ]
+    },
+    {
+        brand: "Argon Audio",
         name: "Red Edition - USB B - USB A 1.5m",
         price: "199",
         category: "Cable",
@@ -4262,6 +4341,63 @@ const products = [{
         ]
     },
     {
+        brand: "Denon",
+        name: "DP-300F",
+        price: "3199",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/73235e88-0b64-45c8-910c-dbd67ca913f1"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "DP-400",
+        price: "4199",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/b1745a38-114e-4290-9ce5-ccbb9bc79503"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "DP-3000NE",
+        price: "18499",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/9caac406-2ba7-4913-8fe6-b3a0b2c80fe2"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "DP-29F",
+        price: "1499",
+        outputs: [
+            "LINE OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/599af7d2-a366-4846-afec-45763b31c32f"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "DP-450USB",
+        price: "4999",
+        outputs: [
+            "LINE OUT",
+            "USB OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/e588f3fe-55e4-4f7b-8e40-97e408a63543",
+            "https://images.hifiklubben.com/image/23c2d226-6648-4add-8ff7-64d4f7009033"
+        ]
+    },
+    {
         brand: "Essentials",
         name: "Excellence 1 Complete - 3.5m",
         price: "2799",
@@ -5330,6 +5466,23 @@ const products = [{
         ]
     },
     {
+        brand: "Hegel",
+        name: "V10",
+        price: "9999",
+        inputs: [
+            "PHONO IN (MM)",
+            "PHONO IN (MC)"
+        ],
+        outputs: [
+            "BALANCED OUT",
+            "LINE OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7ea69147-973b-4b5d-98e3-ef1bb07b8a36",
+            "https://images.hifiklubben.com/image/1cb10c4d-4bc2-4ee2-9c7f-51b6251f56bf"
+        ]
+    },
+    {
         brand: "KEF",
         name: "LS60 WIRELESS",
         price: "34990",
@@ -6198,6 +6351,17 @@ const products = [{
         ]
     },
     {
+        brand: "Marantz",
+        name: "TT-15S1",
+        price: "17995",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/aea33ab0-64ab-4123-8a2e-06d72120cee8"
+        ]
+    },
+    {
         brand: "MoFi Electronics",
         name: "Sourcepoint 888",
         price: "44990",
@@ -7007,6 +7171,95 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/6e72411a-2b14-46f8-b8a4-9390db008f3c",
             "https://images.hifiklubben.com/image/4da816a7-4296-4346-8a93-882748ff0d23"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "C558",
+        price: "3999",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/57c4c8b8-30df-4edc-94e5-9f1b6b138a91"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "C588",
+        price: "6499",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/6e15a1c9-c134-4dfe-9e45-0fb6e951c2dd"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "PP 2E",
+        price: "1499",
+        inputs: [
+            "PHONO IN (MM)",
+            "PHONO IN (MC)"
+        ],
+        outputs: [
+            "PRE OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/9e636aa4-845f-453e-9dd4-81922af46083",
+            "https://images.hifiklubben.com/image/6a3281cc-8cd5-44b2-9082-3d67df3a5b14"
+        ]
+    },
+    {
+        brand: "NAD",
+        name: "PP4 (Grafit)",
+        price: "1999",
+        inputs: [
+            "PHONO IN (MM)",
+            "PHONO IN (MC)",
+            "LINE IN"
+        ],
+        outputs: [
+            "LINE OUT",
+            "USB OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/6d634778-e4db-49cf-8b71-1b9ce51f0012",
+            "https://images.hifiklubben.com/image/9f53df8a-a001-498a-955f-9ad193d663a1"
+        ]
+    },
+    {
+        brand: "Pro-Ject",
+        name: "X1 B PICK IT PRO",
+        price: "8599",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/b7adb47c-1dc0-4410-9e8e-15f3c1b8e94d"
+        ]
+    },
+    {
+        brand: "Pro-Ject",
+        name: "X8",
+        price: "19990",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/3669962b-0c89-47d7-9295-8c8c0f9c7e2e"
+        ]
+    },
+    {
+        brand: "Pro-Ject",
+        name: "RPM 1 CARBON",
+        price: "5199",
+        outputs: [
+            "PHONO OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/dbce60d6-6b2a-44fb-8677-5332f39c8862/pdp_d/pdp_d.jpg"
         ]
     },
     {
