@@ -1632,6 +1632,14 @@ const products = [{
         ]
     },
     {
+        brand: "Bang & Olufsen",
+        name: "Beosound A1 2nd Gen",
+        price: "2390",
+        image: [
+            "https://images.hifiklubben.com/image/de2fb6df-61ad-4d47-b092-22da3182cbd5"
+        ]
+    },
+    {
         brand: "Bluesound",
         name: "Node Icon",
         price: "7999",
@@ -1838,6 +1846,15 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/e210eaa4-8922-4a4d-b23d-44eaa6e82cb6",
             "https://images.hifiklubben.com/image/cb2a41f9-cc7a-4e31-b9ab-29081af163b4"
+        ]
+    },
+    {
+        brand: "Bowers & Wilkins",
+        name: "Zeppelin Pro Edition",
+        price: "5999",
+        image: [
+            "https://images.hifiklubben.com/image/f6fae6f4-82fe-4884-9cf1-d8d9f0d99619",
+            "https://images.hifiklubben.com/image/c5ae0de4-b413-4a11-a38e-06bbea705141"
         ]
     },
     {
@@ -4063,6 +4080,35 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/f985168a-6109-40bd-9e26-623062b1020d",
             "https://images.hifiklubben.com/image/9e7e5af8-5b9f-4b3d-b5e7-01f152865dcd"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "Home Soundbar",
+        price: "3999",
+        inputs: [
+            "OPTICAL IN",
+            "AUX IN",
+            "HDMI IN"
+        ],
+        outputs: [
+            "HDMI eARC"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/f28f3743-9614-4f3d-a442-cfc539052164",
+            "https://images.hifiklubben.com/image/b16fc4f8-bd59-4c49-8902-29331280d628"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "Home Subwoofer",
+        price: "3699",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/b9955f65-c49b-420f-923a-8f39faf66d0c",
+            "https://images.hifiklubben.com/image/4e40cab6-5fad-46e6-8374-c1d0cb8b8141"
         ]
     },
     {
@@ -7094,6 +7140,63 @@ const products = [{
         ],
         image: [
             "https://images.hifiklubben.com/image/b4e9b8ac-a526-4bd0-8a19-cd3009e51477"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Move 2",
+        price: "3599",
+        inputs: [
+            "USB C"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/715bfc0a-9c56-4a48-9ce2-40c44146d519",
+            "https://images.hifiklubben.com/image/27ba61f6-051e-42dc-b2ea-4f0692f59e32"
+        ]
+    },
+    {
+        brand: "Sonos",
+        name: "Roam 2",
+        price: "1359",
+        image: [
+            "https://images.hifiklubben.com/image/565fc27c-f5c0-4872-bd01-ace2e5bf88cf",
+            "https://images.hifiklubben.com/image/8656b2cd-aa5f-4fd6-a85e-2f97f6afb039"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Tufton",
+        price: "2480",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/bcf679e9-b0a0-4cc8-8d7d-8f6d43e0150d",
+            "https://images.hifiklubben.com/image/9a91a58e-b120-4c10-9763-cc9a3a1e5c32"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Action III",
+        price: "1585",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/19129627-621a-4106-9b10-16ac12ee4a44",
+            "https://images.hifiklubben.com/image/0920d1e2-6efb-4d22-99ea-c8e65b8c934d"
+        ]
+    },
+    {
+        brand: "Noon Audio",
+        name: "Flixx",
+        price: "699",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/ec5a4c82-2000-4267-acbf-303c59d8aa0e",
+            "https://images.hifiklubben.com/image/c3530558-9f66-4b4c-823d-5131ca380115"
         ]
     },
     {
