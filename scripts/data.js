@@ -5791,6 +5791,7 @@ const products = [{
         outputs: [
             "SUB OUT"
         ],
+        sku: "KEFLSX2",
         image: [
             "https://images.hifiklubben.com/image/b21a4762-f25a-4328-a7e9-7bb4a976fbae",
             "https://images.hifiklubben.com/image/2c3cdfa3-2f4e-4af2-9ca2-2dc00a1878b9"
@@ -5807,6 +5808,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "KEFKC62",
         image: [
             "https://images.hifiklubben.com/image/7ab21154-1018-4f81-ab32-4ea8acbfda4a",
             "https://images.hifiklubben.com/image/b73a21a4-f0f7-4ebc-8685-a74dfce1a306"
@@ -5823,6 +5825,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "KEFKC92",
         image: [
             "https://images.hifiklubben.com/image/74ab65e1-453f-4a13-b9f3-65515dbbe45c",
             "https://images.hifiklubben.com/image/0d59e682-e108-4b26-ae5d-3552ad5ae3a9"
@@ -5839,6 +5842,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "KEFK692",
         image: [
             "https://images.hifiklubben.com/image/7ab21154-1018-4f81-ab32-4ea8acbfda4a",
             "https://images.hifiklubben.com/image/bbb7daab-ae45-4bde-84f0-191e9b9a87d2"
@@ -5852,6 +5856,7 @@ const products = [{
             "SPEAKER IN",
             "LINE IN"
         ],
+        sku: "KEFKUBE15MIE",
         image: [
             "https://images.hifiklubben.com/image/11117e2e-ae33-4304-997a-fc13449d6b29",
             "https://images.hifiklubben.com/image/ecd70a05-c4d7-4c0f-8f70-3bbd97f2cf8c"
@@ -5865,6 +5870,7 @@ const products = [{
             "SPEAKER IN",
             "LINE IN"
         ],
+        sku: "KEFKUBE12MIE",
         image: [
             "https://images.hifiklubben.com/image/b5655a7b-aedd-4001-b3bc-b98088069b59",
             "https://images.hifiklubben.com/image/a4f39fb4-b9f6-4a65-8d1d-2f941ead3b5b"
@@ -5878,6 +5884,7 @@ const products = [{
             "SPEAKER IN",
             "LINE IN"
         ],
+        sku: "KEFKUBE10MIE",
         image: [
             "https://images.hifiklubben.com/image/f2013ea2-5429-43ea-8b11-ff5fff77016c",
             "https://images.hifiklubben.com/image/182080ae-9408-4b8b-b701-be19fc149a05"
@@ -5891,6 +5898,7 @@ const products = [{
             "SPEAKER IN",
             "LINE IN"
         ],
+        sku: "KEFKUBE8MIE",
         image: [
             "https://images.hifiklubben.com/image/2b2500d7-f8a7-472e-862e-1b885e80e421",
             "https://images.hifiklubben.com/image/bedf8121-ca69-4ea4-931e-9d6e5d9f9438"
@@ -5929,6 +5937,7 @@ const products = [{
             "SPEAKER 8",
             "TRIGGER OUT"
         ],
+        sku: "LYNGMP60H21",
         image: [
             "https://images.hifiklubben.com/image/fdb1a34c-a25c-4de6-8f9c-a2375aa9eaf6",
             "https://images.hifiklubben.com/image/b50e573f-5912-4de3-bbf7-8c8985ad06e1"
@@ -5967,6 +5976,7 @@ const products = [{
             "SPEAKER 8",
             "TRIGGER OUT"
         ],
+        sku: "LYNGMP40H21",
         image: [
             "https://images.hifiklubben.com/image/b6ec6c7d-8495-43e5-b8ad-cb2af69c3781",
             "https://images.hifiklubben.com/image/942e92a9-1a60-4aa7-975c-eca803f9e04a"
@@ -6006,6 +6016,7 @@ const products = [{
             "BALANCED OUT 16",
             "COAXIAL OUT"
         ],
+        sku: "LYNGMXA8400",
         image: [
             "https://images.hifiklubben.com/image/19643cf8-c81d-4abd-a832-857cf1812354",
             "https://images.hifiklubben.com/image/f8e6c470-3430-4ef6-836e-a4ff76d8cd37"
@@ -6043,6 +6054,7 @@ const products = [{
             "TRIGGER OUT",
             "SPEAKER L/R"
         ],
+        sku: "LYNGTDAI3400",
         image: [
             "https://images.hifiklubben.com/image/a98f3a9e-36ae-45cb-8600-446452971b8c",
             "https://images.hifiklubben.com/image/3ef7a482-e007-4fe7-abec-5d7cae74dbaa"
@@ -6058,6 +6070,7 @@ const products = [{
             "OPTICAL",
             "SPDIF"
         ],
+        sku: "LYNGCD2",
         image: [
             "https://images.hifiklubben.com/image/5e0d0c50-156b-4d47-893a-3fe4f057e956",
             "https://images.hifiklubben.com/image/905ee1bf-74eb-48de-a88c-a0d9924d89d4"
@@ -6078,6 +6091,7 @@ const products = [{
             "TRIGGER OUT",
             "SPEAKER L/R"
         ],
+        sku: "LYNGSDA2400",
         image: [
             "https://images.hifiklubben.com/image/52205e4e-c950-434f-88be-6d22212b600b",
             "https://images.hifiklubben.com/image/11931397-330e-424f-bddd-0e707a532aca"
@@ -6103,6 +6117,7 @@ const products = [{
             "TRIGGER OUT",
             "SPEAKER L/R"
         ],
+        sku: "LYNGTDAI1120",
         image: [
             "https://images.hifiklubben.com/image/05f87dcf-bef4-4d4a-8ba4-1e71cb11104d",
             "https://images.hifiklubben.com/image/fc48fa86-6a06-42a0-ac43-d927986d207a"
@@ -6115,6 +6130,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LS-1000",
         image: [
             "https://images.hifiklubben.com/image/c21b7054-3845-4c24-a2bd-b8cb1baf2e54"
         ]
@@ -6126,6 +6142,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGCUE100",
         image: [
             "https://images.hifiklubben.com/image/3c7d1677-7a85-4a8f-a0a0-d37187c31290"
         ]
@@ -6137,6 +6154,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGD60",
         image: [
             "https://images.hifiklubben.com/image/4382ce8d-6608-4acb-9ab2-236fc86fc660",
             "https://images.hifiklubben.com/image/6111d796-4030-491e-ba19-94d1e5fc39a3"
@@ -6149,6 +6167,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGBW20",
         image: [
             "https://images.hifiklubben.com/image/2995e2ed-3f68-4027-b898-56d6ad370123",
             "https://images.hifiklubben.com/image/b7130ee0-a725-41e2-86ea-0d7fd08c16d0"
@@ -6161,6 +6180,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGFR2",
         image: [
             "https://images.hifiklubben.com/image/f2c9c270-669f-41b2-99b7-ed2e73892eb9"
         ]
@@ -6172,6 +6192,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGD500C",
         image: [
             "https://images.hifiklubben.com/image/6a77df90-39f3-43cd-a794-b8a4991cfa2f",
             "https://images.hifiklubben.com/image/b14a7cfd-cdc3-4b70-b3ae-59bc544bcae9"
@@ -6184,6 +6205,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGD500",
         image: [
             "https://images.hifiklubben.com/image/17cc7d9a-7d6d-4204-804c-7ff9e06f2cff",
             "https://images.hifiklubben.com/image/8b00c7a2-79ed-4db6-ab52-77ee6b2ccefc"
@@ -6196,6 +6218,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGD5IC",
         image: [
             "https://images.hifiklubben.com/image/cea907ec-047e-4167-af4f-8b0a8c0dbffc",
             "https://images.hifiklubben.com/image/dbbdc2e3-2aa5-4a27-9e40-b06c55e59bc0"
@@ -6208,6 +6231,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGD5",
         image: [
             "https://images.hifiklubben.com/image/0916e912-3309-4355-bdb0-ea6dd4f8daac",
             "https://images.hifiklubben.com/image/e444ef86-b5d6-45eb-8a15-e04eb0b677e8"
@@ -6220,6 +6244,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGCS1",
         image: [
             "https://images.hifiklubben.com/image/74e62384-925b-4056-a003-689c28c7e4d1",
             "https://images.hifiklubben.com/image/531b1ac8-6c01-4db3-bd00-71fce3dac76d"
@@ -6232,6 +6257,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGCS2",
         image: [
             "https://images.hifiklubben.com/image/daa9223b-5d06-406c-81d6-c543b9ddb934",
             "https://images.hifiklubben.com/image/a8b86caf-ae1c-44bd-8c8d-d0e8954a93c6"
@@ -6246,6 +6272,7 @@ const products = [{
             "LFE",
             "BYPASS IN"
         ],
+        sku: "LYNGBW2GA",
         image: [
             "https://images.hifiklubben.com/image/afc0e35a-1bc6-44ad-8a26-4ec1df9e7e07",
             "https://images.hifiklubben.com/image/2bfdc42b-a8e3-4060-857e-6105342472fe"
@@ -6260,6 +6287,7 @@ const products = [{
             "LFE",
             "BYPASS IN"
         ],
+        sku: "LYNGBW3GA",
         image: [
             "https://images.hifiklubben.com/image/645e638f-da66-4bca-b4bc-82f09585029a",
             "https://images.hifiklubben.com/image/d870f51f-032b-40e7-a760-ea693ceacd28"
@@ -6272,6 +6300,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGFR1GA",
         image: [
             "https://images.hifiklubben.com/image/3223d9f8-d07e-4e48-9150-586c8edbe68e",
             "https://images.hifiklubben.com/image/b312541a-5bda-424a-9afa-dce0ea258c47"
@@ -6284,6 +6313,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGMH2GA",
         image: [
             "https://images.hifiklubben.com/image/591f9023-5a0b-4749-8146-aff35fe2819a",
             "https://images.hifiklubben.com/image/dabec12b-9398-41e8-87fc-ef065abe66fd"
@@ -6296,6 +6326,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "LYNGMH3GA",
         image: [
             "https://images.hifiklubben.com/image/327cba3c-ace4-416f-b154-6ffb3edc5e09",
             "https://images.hifiklubben.com/image/71e22924-9387-4883-a389-168a836a95ec"
@@ -6359,6 +6390,7 @@ const products = [{
             "SPEAKER 16",
             "TRIGGER OUT"
         ],
+        sku: "MARAAMP10",
         image: [
             "https://images.hifiklubben.com/image/f749f1d3-afca-495e-8cf5-908202fce078",
             "https://images.hifiklubben.com/image/39ee63b7-b316-478c-a16a-478cf0084067"
@@ -6380,6 +6412,7 @@ const products = [{
             "OPTICAL",
             "COAXIAL"
         ],
+        sku: "MARASACD30N",
         image: [
             "https://images.hifiklubben.com/image/874300cf-6843-48b0-9c98-6fe90df5b0e1",
             "https://images.hifiklubben.com/image/eb6a7f41-5ea5-495c-bc14-2a36b432f0c9"
@@ -6403,6 +6436,7 @@ const products = [{
             "PRE OUT",
             "SPEAKERS L/R"
         ],
+        sku: "MARAMODEL30",
         image: [
             "https://images.hifiklubben.com/image/d5239f7e-f991-4285-bd25-197c2b963c7d",
             "https://images.hifiklubben.com/image/ed2bf7ab-feb0-4810-b38e-c9549ac9ad52"
@@ -6427,6 +6461,7 @@ const products = [{
             "SUB OUT",
             "SPEAKERS A L/R"
         ],
+        sku: "MARAMODEL40N",
         image: [
             "https://images.hifiklubben.com/image/ccc20232-7eb0-4bdb-86de-39e09f4f3ccf",
             "https://images.hifiklubben.com/image/44fb6e09-d01f-42f8-86fd-8ec2412e638f"
@@ -6451,6 +6486,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "MARAMODEL50N",
         image: [
             "https://images.hifiklubben.com/image/2d03ec9f-57b1-4c0e-af75-9e888b689785",
             "https://images.hifiklubben.com/image/e6b4df24-443d-4fbd-9bfc-0eb70c82e227"
@@ -6472,6 +6508,7 @@ const products = [{
             "COAXIAL",
             "OPTICAL"
         ],
+        sku: "MARACD50N",
         image: [
             "https://images.hifiklubben.com/image/8e622439-9688-43c5-b80f-c828c72439d2",
             "https://images.hifiklubben.com/image/e6b4df24-443d-4fbd-9bfc-0eb70c82e227"
@@ -6494,6 +6531,7 @@ const products = [{
             "SUB OUT",
             "SPEAKER L/R"
         ],
+        sku: "MARAMODEL60N",
         image: [
             "https://images.hifiklubben.com/image/d1327293-b1b1-4c45-a64a-a486f98b4066",
             "https://images.hifiklubben.com/image/8355ac60-3308-4abb-a83e-7024ac00e67e"
@@ -6512,6 +6550,7 @@ const products = [{
             "SUB OUT",
             "SPEAKER L/R"
         ],
+        sku: "MARAMODELM1",
         image: [
             "https://images.hifiklubben.com/image/bb38d793-fc11-40f3-8797-fdbe8a84829a",
             "https://images.hifiklubben.com/image/330fa6d1-f354-4550-b1ff-73272f0dcb5e"
@@ -6543,6 +6582,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "MARASTEREO70S",
         image: [
             "https://images.hifiklubben.com/image/f5859bb5-f515-4c99-8fab-2fea126c950f",
             "https://images.hifiklubben.com/image/c08ba258-769e-40cd-9ef8-09cd4f4f580e"
@@ -6559,6 +6599,7 @@ const products = [{
             "SPEAKERS A L/R",
             "SPEAKERS B L/R"
         ],
+        sku: "MARACD60",
         image: [
             "https://images.hifiklubben.com/image/39357abc-2695-40ca-bd83-749ceda14288",
             "https://images.hifiklubben.com/image/7ca44925-34bb-4d14-a670-0cd20ea865f2"
@@ -6590,6 +6631,7 @@ const products = [{
             "SPEAKER OUT 3",
             "SPEAKER OUT 4"
         ],
+        sku: "MARAMODELM4",
         image: [
             "https://images.hifiklubben.com/image/ba892dc8-70c6-4a61-8422-778d1acd6618",
             "https://images.hifiklubben.com/image/819a3b84-a73a-4152-9d38-34d122694598"
@@ -6602,6 +6644,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "MARATT15S1",
         image: [
             "https://images.hifiklubben.com/image/aea33ab0-64ab-4123-8a2e-06d72120cee8"
         ]
@@ -6613,6 +6656,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "MOFISOURCEPOINT888",
         image: [
             "https://images.hifiklubben.com/image/ccf31c42-9a18-4d4f-8bef-d611dcb8611b",
             "https://images.hifiklubben.com/image/1fd89e7f-b31b-4ddb-bcd6-5b3ec7aa86b3"
@@ -6625,6 +6669,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "MOFISOURCEPOINT10",
         image: [
             "https://images.hifiklubben.com/image/4b39a71b-6c8f-44f6-833d-fc0b1ec8359c",
             "https://images.hifiklubben.com/image/4003a2d3-7c05-4a90-a88e-c02a718ed7e3"
@@ -6637,6 +6682,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "MOFISOURCEPOINT8",
         image: [
             "https://images.hifiklubben.com/image/1f5935f5-64e3-4135-819b-f47100f6d14d",
             "https://images.hifiklubben.com/image/acaf4d55-3b8d-4efa-89ad-156831f3f162"
@@ -6649,6 +6695,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "MOFIMASTERDECK",
         image: [
             "https://images.hifiklubben.com/image/4df10cc0-074c-4983-98bd-d1bf1f12cc06"
         ]
@@ -6671,6 +6718,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "MOFIULTRADECK",
         image: [
             "https://images.hifiklubben.com/image/23e5432b-2b09-48c3-93b1-a60994ac5f6c"
         ]
@@ -6682,6 +6730,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "MOFISTUDIODECK",
         image: [
             "https://images.hifiklubben.com/image/15ffd518-eea6-41b7-bb69-e509a77afd0f"
         ]
@@ -6698,6 +6747,7 @@ const products = [{
             "LINE OUT",
             "BAL OUT"
         ],
+        sku: "MOFIMASTERPHONO",
         image: [
             "https://images.hifiklubben.com/image/6abc2605-8a13-445a-ab29-52c71eb6b2c1",
             "https://images.hifiklubben.com/image/d0bd25c6-3789-482c-95d4-2dc0ddbf08bf"
@@ -6714,6 +6764,7 @@ const products = [{
             "LINE OUT 1",
             "LINE OUT 2"
         ],
+        sku: "MOFIULTRAPHONO",
         image: [
             "https://images.hifiklubben.com/image/f0933079-db11-4bdb-b69c-478deda91e2c",
             "https://images.hifiklubben.com/image/f63ef0be-628a-4548-8837-95996440dfa1"
@@ -6729,6 +6780,7 @@ const products = [{
         outputs: [
             "LINE OUT 1"
         ],
+        sku: "MOFISTUDIOPHONO",
         image: [
             "https://images.hifiklubben.com/image/cc91343e-c864-4f35-abf3-b490da0d19b3",
             "https://images.hifiklubben.com/image/ebd92f89-9e4a-4b88-b89a-cdfd4836d0a9"
@@ -6767,6 +6819,7 @@ const products = [{
             "BALANCED OUT 2",
             "TRIGGER OUT"
         ],
+        sku: "NADM66",
         image: [
             "https://images.hifiklubben.com/image/1942344b-4e0d-41ae-a6bb-6d0fedff6313",
             "https://images.hifiklubben.com/image/62503998-9fca-4354-bbd8-424d5eeb6944"
@@ -6792,6 +6845,7 @@ const products = [{
             "SPEAKER B OUT",
             "TRIGGER OUT"
         ],
+        sku: "NADM33",
         image: [
             "https://images.hifiklubben.com/image/e50ca37c-41c3-451d-9e96-527b1c83fe2f",
             "https://images.hifiklubben.com/image/55c3b568-b0ef-41fc-a99b-cc17679eeba5"
@@ -6827,6 +6881,7 @@ const products = [{
             "SPEAKER OUT 6",
             "SPEAKER OUT 7",
         ],
+        sku: "NADM28",
         image: [
             "https://images.hifiklubben.com/image/52ad6157-711b-4544-ab3c-48f1a783a66f",
             "https://images.hifiklubben.com/image/60dba502-e3c3-4dcc-82e6-e05425c398aa"
@@ -6872,6 +6927,7 @@ const products = [{
             "SPEAKER OUT HT 1 R",
             "SPEAKER OUT HT 2 L"
         ],
+        sku: "NADT778",
         image: [
             "https://images.hifiklubben.com/image/abe6b8a8-94b8-4ced-a5e5-de9128502c88",
             "https://images.hifiklubben.com/image/472f7eb1-37d9-4d4f-8114-9c0d4f22a95b"
@@ -6891,6 +6947,7 @@ const products = [{
             "SPEAKER OUT",
             "TRIGGER OUT"
         ],
+        sku: "NADC298",
         image: [
             "https://images.hifiklubben.com/image/ad7ed5be-43f1-40a3-a910-719bd1bba5d6",
             "https://images.hifiklubben.com/image/31284ca3-56a2-49e3-a118-e566d380b89d"
@@ -6908,6 +6965,7 @@ const products = [{
         outputs: [
             "SPEAKER OUT"
         ],
+        sku: "NADM23",
         image: [
             "https://images.hifiklubben.com/image/7c19b95c-add0-4fc3-896d-df67b0a1f01e",
             "https://images.hifiklubben.com/image/78857ab2-39de-47b3-9d87-c204e19283bc"
@@ -6930,6 +6988,7 @@ const products = [{
             "SUBW OUT 2",
             "SPEAKER OUT"
         ],
+        sku: "NADM10V3",
         image: [
             "https://images.hifiklubben.com/image/baccb66f-ee95-4314-82ad-f9d3d4331033",
             "https://images.hifiklubben.com/image/7f379109-9e3a-4f7e-b917-de4f28eca55e"
@@ -6955,6 +7014,7 @@ const products = [{
             "TRIGGER OUT",
             "SPEAKER OUT"
         ],
+        sku: "NADC399",
         image: [
             "https://images.hifiklubben.com/image/d9e132d5-234a-44d8-b817-b542b0df4314",
             "https://images.hifiklubben.com/image/d40d41b2-8fc9-4fc3-9f97-c2e648c87be3"
@@ -6980,6 +7040,7 @@ const products = [{
             "SUBW",
             "TRIGGER OUT"
         ],
+        sku: "NADC658",
         image: [
             "https://images.hifiklubben.com/image/4f0ff706-9223-4311-b794-cf289dd03ed3",
             "https://images.hifiklubben.com/image/c0fc0832-f751-4c74-838b-d6d0984cca75"
@@ -7011,6 +7072,7 @@ const products = [{
             "SUBW",
             "HJTL 7CH"
         ],
+        sku: "NADT758V3I",
         image: [
             "https://images.hifiklubben.com/image/5a8fa182-d292-4c1e-b7de-c740b8b681ac",
             "https://images.hifiklubben.com/image/faac65d5-7046-4652-bc76-6a6b8a4d09a4"
@@ -7037,6 +7099,7 @@ const products = [{
             "SPEAKER A OUT",
             "SPEAKER B OUT"
         ],
+        sku: "NADC389",
         image: [
             "https://images.hifiklubben.com/image/2bb0dc6d-134c-4fb4-936b-b64201091ae0",
             "https://images.hifiklubben.com/image/f63e6a7b-4e95-480c-9da7-59b66c7fb3f8"
@@ -7060,6 +7123,7 @@ const products = [{
             "SUBW",
             "SPEAKER OUT"
         ],
+        sku: "NADC3050",
         image: [
             "https://images.hifiklubben.com/image/22222b60-9f04-4ce6-b621-273ef4751556",
             "https://images.hifiklubben.com/image/6e8850f1-c607-4be3-bf37-99c71a987016"
@@ -7082,6 +7146,7 @@ const products = [{
             "SUBW OUT 1",
             "SPEAKER OUT"
         ],
+        sku: "NADC700",
         image: [
             "https://images.hifiklubben.com/image/6e907515-1cac-4282-9370-27587582b1fd",
             "https://images.hifiklubben.com/image/f793cede-834a-4359-8e5f-05a6f64f7f03"
@@ -7108,6 +7173,7 @@ const products = [{
             "SPEAKER A OUT",
             "SPEAKER B OUT"
         ],
+        sku: "NADC379",
         image: [
             "https://images.hifiklubben.com/image/4d4de72f-d4b6-41c2-935c-033c548c28aa",
             "https://images.hifiklubben.com/image/476b0f94-3cb0-40f6-80cb-bf59a0927785"
@@ -7127,6 +7193,7 @@ const products = [{
             "SPEAKER OUT",
             "TRIGGER OUT"
         ],
+        sku: "NADC268",
         image: [
             "https://images.hifiklubben.com/image/2818c00f-0a60-4e51-a66d-25fadb09f9a4",
             "https://images.hifiklubben.com/image/adb1c098-b55d-4c3a-9672-50d791f2b59b"
@@ -7149,6 +7216,7 @@ const products = [{
             "SUBW OUT",
             "SPEAKER OUT"
         ],
+        sku: "NADC338",
         image: [
             "https://images.hifiklubben.com/image/945c5039-09b1-4231-8d58-8a8f30d6fd54",
             "https://images.hifiklubben.com/image/3630f18d-c8e6-4caf-96f3-9ac4e1873a89"
@@ -7171,6 +7239,7 @@ const products = [{
             "SUBW OUT",
             "SPEAKER OUT"
         ],
+        sku: "NADC328",
         image: [
             "https://images.hifiklubben.com/image/f6fac4cc-8fcf-40be-a202-d5ef132387f0",
             "https://images.hifiklubben.com/image/8d5801bf-2218-4392-9192-f1a97b02db4e"
@@ -7192,6 +7261,7 @@ const products = [{
             "PRE OUT",
             "SPEAKER OUT"
         ],
+        sku: "NADD3020V2",
         image: [
             "https://images.hifiklubben.com/image/3fb23086-d8a7-4c58-947c-3fbbbb311324",
             "https://images.hifiklubben.com/image/e839f0cf-d815-49dc-9860-de7e80633d4f"
@@ -7208,6 +7278,7 @@ const products = [{
         outputs: [
             "LINE OUT"
         ],
+        sku: "NADC538",
         image: [
             "https://images.hifiklubben.com/image/c034fb11-cd81-4c73-bf93-75b1d767d750",
             "https://images.hifiklubben.com/image/eec08558-f424-4caa-a0ce-93a346c96054"
@@ -7227,6 +7298,7 @@ const products = [{
         outputs: [
             "SPEAKER A OUT"
         ],
+        sku: "NADC316V2",
         image: [
             "https://images.hifiklubben.com/image/eeac206b-23ed-40a0-abdb-de2112ef7d12",
             "https://images.hifiklubben.com/image/285276ba-7839-4cca-8341-5d27ded5e7cb"
@@ -7241,6 +7313,7 @@ const products = [{
             "OPTICAL",
             "LINE OUT"
         ],
+        sku: "NADCS1",
         image: [
             "https://images.hifiklubben.com/image/c992a10d-f9f0-4112-8d62-921711e76e9a",
             "https://images.hifiklubben.com/image/291d60ea-abf5-4a09-aec1-63fc6dc78743"
@@ -7258,6 +7331,7 @@ const products = [{
             "SUBW OUT",
             "SPEAKER OUT"
         ],
+        sku: "NADCI720V2",
         image: [
             "https://images.hifiklubben.com/image/cc3b0b86-84fc-41b5-8120-796a9fe24537",
             "https://images.hifiklubben.com/image/dec9f260-de12-4087-8d26-a33e40c9e89c"
@@ -7287,6 +7361,7 @@ const products = [{
             "COAXIAL OUT 4",
             "TRIGGER OUT"
         ],
+        sku: "NADCI538V2",
         image: [
             "https://images.hifiklubben.com/image/66c95291-7ec5-4bcb-b7e1-6b0e0013e0ae",
             "https://nadelectronics.com/wp-content/uploads/2016/09/NAD-CI-580-Rear-1.jpg"
@@ -7319,6 +7394,7 @@ const products = [{
             "SPEAKER OUT 3",
             "SPEAKER OUT 4"
         ],
+        sku: "NADCI980",
         image: [
             "https://images.hifiklubben.com/image/223227be-821a-41e0-8582-d0f8ba0e255a",
             "https://images.hifiklubben.com/image/853e139b-5735-4b73-86a8-17973ec860cd"
@@ -7367,6 +7443,7 @@ const products = [{
             "SPEAKER OUT 15",
             "SPEAKER OUT 16"
         ],
+        sku: "NADCI16-60DSP",
         image: [
             "https://images.hifiklubben.com/image/f2088296-bdc6-4be9-81c6-2d2d10447662",
             "https://images.hifiklubben.com/image/5c3c98ec-a5b0-4e2e-8406-12cdd54c2c83"
@@ -7374,8 +7451,8 @@ const products = [{
     },
     {
         brand: "NAD",
-        name: "CI 16-60 DSP",
-        price: "23999",
+        name: "CI 8-150 DSP",
+        price: "33999",
         inputs: [
             "GLOBAL IN 1",
             "GLOBAL IN 2",
@@ -7413,6 +7490,7 @@ const products = [{
             "SPEAKER OUT 7",
             "SPEAKER OUT 8"
         ],
+        sku: "NADCI8-150DSP",
         image: [
             "https://images.hifiklubben.com/image/6e72411a-2b14-46f8-b8a4-9390db008f3c",
             "https://images.hifiklubben.com/image/4da816a7-4296-4346-8a93-882748ff0d23"
@@ -7425,6 +7503,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "NADC558",
         image: [
             "https://images.hifiklubben.com/image/57c4c8b8-30df-4edc-94e5-9f1b6b138a91"
         ]
@@ -7436,6 +7515,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "NADC588",
         image: [
             "https://images.hifiklubben.com/image/6e15a1c9-c134-4dfe-9e45-0fb6e951c2dd"
         ]
@@ -7451,6 +7531,7 @@ const products = [{
         outputs: [
             "PRE OUT"
         ],
+        sku: "NADPP2E",
         image: [
             "https://images.hifiklubben.com/image/9e636aa4-845f-453e-9dd4-81922af46083",
             "https://images.hifiklubben.com/image/6a3281cc-8cd5-44b2-9082-3d67df3a5b14"
@@ -7469,6 +7550,7 @@ const products = [{
             "LINE OUT",
             "USB OUT"
         ],
+        sku: "NADPP4",
         image: [
             "https://images.hifiklubben.com/image/6d634778-e4db-49cf-8b71-1b9ce51f0012",
             "https://images.hifiklubben.com/image/9f53df8a-a001-498a-955f-9ad193d663a1"
@@ -7481,6 +7563,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "PRJX1HGWHPIP",
         image: [
             "https://images.hifiklubben.com/image/b7adb47c-1dc0-4410-9e8e-15f3c1b8e94d"
         ]
@@ -7492,6 +7575,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "PRJX8EVOHGWHQB",
         image: [
             "https://images.hifiklubben.com/image/3669962b-0c89-47d7-9295-8c8c0f9c7e2e"
         ]
@@ -7503,6 +7587,7 @@ const products = [{
         outputs: [
             "PHONO OUT"
         ],
+        sku: "PRJRPM1CARHGBK2MR",
         image: [
             "https://images.hifiklubben.com/image/dbce60d6-6b2a-44fb-8677-5332f39c8862/pdp_d/pdp_d.jpg"
         ]
@@ -7668,6 +7753,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "RACLARITY62",
         image: [
             "https://images.hifiklubben.com/image/2578324f-b2ab-4b68-a6f8-4a8086afef73",
             "https://images.hifiklubben.com/image/22b1070a-1d7d-4ed8-9de7-94c9026f7d79"
@@ -7690,6 +7776,7 @@ const products = [{
             "LINE OUT (Minijack)",
             "LINE OUT (Minijack)"
         ],
+        sku: "SENHDV820",
         image: [
             "https://images.hifiklubben.com/image/8bca5559-f00f-4842-b8a8-5ae5c8effeaf",
             "https://images.hifiklubben.com/image/32711ca9-a55c-4c50-b6ed-aa894d61ef12"
@@ -7702,6 +7789,7 @@ const products = [{
         inputs: [
             "HDMI ARC"
         ],
+        sku: "SENAMBEOSBMINI",
         image: [
             "https://images.hifiklubben.com/image/9443815b-eca9-4c0d-8085-43a25adccfc8"
         ]
@@ -7720,6 +7808,7 @@ const products = [{
             "HDMI OUT 1",
             "SUBW OUT"
         ],
+        sku: "SENAMBEOSBPLUS",
         image: [
             "https://images.hifiklubben.com/image/89560b4f-3fbd-4820-a2fc-d5277d38e1fc",
             "https://images.hifiklubben.com/image/8cb60727-6b52-4e1f-b0ac-7948d631d8b0"
@@ -7740,6 +7829,7 @@ const products = [{
             "HDMI OUT 1",
             "SUBW OUT"
         ],
+        sku: "SENAMBEOSOUNDBAR1",
         image: [
             "https://images.hifiklubben.com/image/7e960c85-4b50-4a49-9975-cd4dd36a5ea9",
             "https://images.hifiklubben.com/image/6661cc07-5fd8-4ca3-8189-b654a5653413"
@@ -7752,6 +7842,7 @@ const products = [{
         inputs: [
             "SUBW IN"
         ],
+        sku: "SENAMBEOSUB",
         image: [
             "https://images.hifiklubben.com/image/54df33ad-9e8c-4edf-ad08-6d785baddb71",
             "https://images.hifiklubben.com/image/6a44450c-c2cf-4f7a-a38c-7951d0b17a4e"
@@ -7784,6 +7875,7 @@ const products = [{
             "XLR OUT",
             "JACK OUT"
         ],
+        sku: "SOUNDBOKS4BB4",
         image: [
             "https://images.hifiklubben.com/image/a12197ce-e754-466c-878e-de77144c0222",
             "https://images.hifiklubben.com/image/8978329e-0a2c-4cee-84c2-7ee9933d337d"
@@ -7793,6 +7885,7 @@ const products = [{
         brand: "Soundboks",
         name: "Soundboks Go",
         price: "4999",
+        sku: "SOUNDBOKSGOBB4",
         image: [
             "https://images.hifiklubben.com/image/e9a3459b-58cd-4ba4-8a5f-6bc913f32a44",
             "https://images.hifiklubben.com/image/9be3b1dd-610f-449c-ac63-f485ddd797a7"
@@ -7826,6 +7919,7 @@ const products = [{
             "LINE OUT",
             "COAXIAL"
         ],
+        sku: "SONPORT",
         image: [
             "https://images.hifiklubben.com/image/bd529f14-13b1-41eb-81dc-f63c9f276533",
             "https://media.sonos.com/images/znqtjj88/production/d6ad44383ccd04112a25b8c9dc09696439c47160-1888x897.png?w=640&q=100&fit=clip&auto=format"
@@ -7838,6 +7932,7 @@ const products = [{
         inputs: [
             "USB C"
         ],
+        sku: "SONERA100",
         image: [
             "https://images.hifiklubben.com/image/bf7f8368-e53f-4fe5-99c3-4ffda5c6e4fb",
             "https://images.hifiklubben.com/image/f72f8134-ac43-448c-8051-f7f53f698fee"
@@ -7850,6 +7945,7 @@ const products = [{
         inputs: [
             "USB C"
         ],
+        sku: "SONERA300",
         image: [
             "https://images.hifiklubben.com/image/c8fa0640-17bb-4fe0-afd7-01cc187b9504",
             "https://images.hifiklubben.com/image/28eb1a45-f2e5-4af7-9fea-ac981a388c0e"
@@ -7862,6 +7958,7 @@ const products = [{
         inputs: [
             "Minijack"
         ],
+        sku: "SONFIVE",
         image: [
             "https://images.hifiklubben.com/image/b4e9b8ac-a526-4bd0-8a19-cd3009e51477"
         ]
@@ -7882,6 +7979,7 @@ const products = [{
         brand: "Sonos",
         name: "Roam 2",
         price: "1359",
+        sku: "SONROAM2",
         image: [
             "https://images.hifiklubben.com/image/565fc27c-f5c0-4872-bd01-ace2e5bf88cf",
             "https://images.hifiklubben.com/image/8656b2cd-aa5f-4fd6-a85e-2f97f6afb039"
@@ -7894,6 +7992,7 @@ const products = [{
         inputs: [
             "HDMI IN"
         ],
+        sku: "SONBEAMG2",
         image: [
             "https://images.hifiklubben.com/image/fb883f46-b89e-41b1-b3fa-82a8e489667b",
             "https://images.hifiklubben.com/image/a234ebb3-3f74-4277-93b5-17a8f4346f1c"
@@ -7906,6 +8005,7 @@ const products = [{
         inputs: [
             "HDMI eARC IN"
         ],
+        sku: "SONARCULTRA",
         image: [
             "https://images.hifiklubben.com/image/1523f5f7-2911-4b35-a1ee-3eb1354d88ea"
         ]
@@ -7917,6 +8017,7 @@ const products = [{
         inputs: [
             "HDMI eARC IN"
         ],
+        sku: "SONARC",
         image: [
             "https://images.hifiklubben.com/image/53207b1e-d24d-4f14-8039-a89f81806796"
         ]
@@ -7925,6 +8026,7 @@ const products = [{
         brand: "Sonos",
         name: "Sub Mini",
         price: "3323",
+        sku: "SONSUBMINI",
         image: [
             "https://images.hifiklubben.com/image/8659f502-f1ce-497e-94b6-57233eb0fda4",
             "https://images.hifiklubben.com/image/729f7852-90d9-43d6-bb25-777139920c8d"
@@ -7934,6 +8036,7 @@ const products = [{
         brand: "Sonos",
         name: "Sub (Gen 3)",
         price: "6699",
+        sku: "SONSUBG3",
         image: [
             "https://images.hifiklubben.com/image/f5486b6f-8f96-4780-b0aa-e06de9883604"
         ]
@@ -7942,6 +8045,7 @@ const products = [{
         brand: "Sonos",
         name: "Sub 4",
         price: "5999",
+        sku: "SONSUBG4",
         image: [
             "https://images.hifiklubben.com/image/97328c36-080b-47b3-bdc9-3b09d7332d26"
         ]
@@ -7953,6 +8057,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "MARTUFTON",
         image: [
             "https://images.hifiklubben.com/image/bcf679e9-b0a0-4cc8-8d7d-8f6d43e0150d",
             "https://images.hifiklubben.com/image/9a91a58e-b120-4c10-9763-cc9a3a1e5c32"
@@ -7965,6 +8070,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "MARACTON3",
         image: [
             "https://images.hifiklubben.com/image/19129627-621a-4106-9b10-16ac12ee4a44",
             "https://images.hifiklubben.com/image/0920d1e2-6efb-4d22-99ea-c8e65b8c934d"
@@ -7977,6 +8083,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "MARKILBURN2",
         image: [
             "https://images.hifiklubben.com/image/edf9c578-aa48-4960-ad7c-4364bd86aa54",
             "https://images.hifiklubben.com/image/653956a9-fbc7-472a-9e32-753003668595"
@@ -7989,6 +8096,7 @@ const products = [{
         inputs: [
             "LINE IN"
         ],
+        sku: "MARSTANMORE3",
         image: [
             "https://images.hifiklubben.com/image/d1a1739a-eb36-4dcf-86dd-1c471a11c38f",
             "https://images.hifiklubben.com/image/a5d22f40-dc62-4b6a-af5d-f4bfdd13f5f1"
@@ -8002,6 +8110,7 @@ const products = [{
             "LINE IN",
             "HDMI IN"
         ],
+        sku: "MARWOBURN3",
         image: [
             "https://images.hifiklubben.com/image/46f755a2-3afd-4146-ac22-3be76509912c",
             "https://images.hifiklubben.com/image/89fefe1f-cc31-4485-a639-53406e4b4eb5"
@@ -8011,6 +8120,7 @@ const products = [{
         brand: "Marshall",
         name: "Emberton II",
         price: "1055",
+        sku: "MAREMBERTON2",
         image: [
             "https://images.hifiklubben.com/image/4d1cde30-5c5b-4a82-a35d-8464203c0201"
         ]
@@ -8019,6 +8129,7 @@ const products = [{
         brand: "Marshall",
         name: "Emberton III",
         price: "1390",
+        sku: "MAREMBERTON3",
         image: [
             "https://images.hifiklubben.com/image/e9dc9a4d-577e-40c4-8ff7-cff0bf25cd12"
         ]
@@ -8030,6 +8141,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "MARMIDDLETON",
         image: [
             "https://images.hifiklubben.com/image/5143641b-8368-4e18-b7b4-ecdb5b607c5a"
         ]
@@ -8038,6 +8150,7 @@ const products = [{
         brand: "Marshall",
         name: "Stockwell II",
         price: "1449",
+        sku: "MARSTOCKWELL2",
         image: [
             "https://images.hifiklubben.com/image/180851aa-0a1f-4eda-8fd1-24e5735f60e8"
         ]
@@ -8049,6 +8162,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "NOONAOFLIXX",
         image: [
             "https://images.hifiklubben.com/image/ec5a4c82-2000-4267-acbf-303c59d8aa0e",
             "https://images.hifiklubben.com/image/c3530558-9f66-4b4c-823d-5131ca380115"
@@ -8061,6 +8175,7 @@ const products = [{
         inputs: [
             "HDMI IN"
         ],
+        sku: "NACOMPOSESB201",
         image: [
             "https://images.hifiklubben.com/image/a34e23a2-2fee-400d-9fe5-797a0b24fe95",
             "https://images.hifiklubben.com/image/acb70f8b-594f-4c85-a81d-c077095266e9"
@@ -8103,6 +8218,7 @@ const products = [{
         outputs: [
             "Minijack"
         ],
+        sku: "AQDRAGONFLYCOBALT",
         image: [
             "https://images.hifiklubben.com/image/33d59438-bba9-450d-b91b-cb206752c9ae"
         ]
@@ -8114,6 +8230,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "STEINWAY-MODEL-O",
         image: [
             "https://images.hifiklubben.com/image/139155af-8dec-4aa9-b1ea-fce2f6afa1c1"
         ]
@@ -8125,6 +8242,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "STEINWAY-MODEL-S",
         image: [
             "https://steinwaylyngdorf.com/wp-content/uploads/2018/11/Steinway_ModelS2-1024x699.png"
         ]
@@ -8136,6 +8254,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "STEINWAY-MODEL-A",
         image: [
             "https://images.hifiklubben.com/image/d9afdc81-1b0b-499c-a4f7-e0d01db8fd0d"
         ]
@@ -8150,6 +8269,7 @@ const products = [{
         outputs: [
             "NONE"
         ],
+        sku: "STEINWAY-MODEL-B",
         image: [
             "https://images.hifiklubben.com/image/83aa7b91-5a56-4c43-88be-a7bb1d987f0e"
         ]
@@ -8164,6 +8284,7 @@ const products = [{
         outputs: [
             "NONE"
         ],
+        sku: "STEINWAY-MODEL-D",
         image: [
             "https://images.hifiklubben.com/image/c09b3d41-7e46-4f09-b63b-50b9a0656388"
         ]
@@ -8175,6 +8296,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "VESTV15C",
         image: [
             "https://images.hifiklubben.com/image/e16888e5-1c6c-4a4d-b43f-6ee5bee3b1c7"
         ]
@@ -8186,6 +8308,7 @@ const products = [{
         inputs: [
             "SPEAKER IN"
         ],
+        sku: "VESTV12C",
         image: [
             "https://images.hifiklubben.com/image/4b57df36-5d3c-4d0b-9b67-2b2fd98406a0"
         ]
@@ -8197,6 +8320,7 @@ const products = [{
         inputs: [
             "AUX IN"
         ],
+        sku: "VESTSTAGEA4",
         image: [
             "https://images.hifiklubben.com/image/9a90d5d9-1e28-4b72-bde4-4698296eb84f",
             "https://images.hifiklubben.com/image/21723047-0282-4d20-82ac-d1a391b44359"
