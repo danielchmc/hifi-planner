@@ -411,6 +411,50 @@ const products = [{
     },
     {
         brand: "Argon Audio",
+        name: "DAB Adapter3 Mk2",
+        price: "899",
+        outputs: [
+            "LINE OUT",
+            "OPTICAL OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/4e8b7bb9-6eed-4c5b-b5d2-9e0bdef321b3",
+            "https://images.hifiklubben.com/image/d4ffc262-303e-4f17-86bf-204857cfcdbe"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "BT2 MK2",
+        price: "699",
+        outputs: [
+            "LINE OUT",
+            "Minijack OUT",
+            "OPTICAL OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/2e3cfd63-38e8-491a-ae13-eccfd7791387",
+            "https://images.hifiklubben.com/image/3921b26e-ca1b-49a3-8a55-f0ec38b1f08d"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "BT3 MK2",
+        price: "999",
+        inputs: [
+            "AUDIO IN (TX)",
+            "OPTICAL IN (TX)"
+        ],
+        outputs: [
+            "AUDIO OUT (RX)",
+            "OPTIAL OUT (RX)"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/7e8950e3-482d-4658-b44d-da51111c230d",
+            "https://images.hifiklubben.com/image/25471a14-e18f-4206-a6f9-6263fd8bb54e"
+        ]
+    },
+    {
+        brand: "Argon Audio",
         name: "Red Edition - USB B - USB A 1.5m",
         price: "199",
         category: "Cable",
@@ -4894,6 +4938,27 @@ const products = [{
         ]
     },
     {
+        brand: "Hegel",
+        name: "D50 (The Raven)",
+        price: "36999",
+        inputs: [
+            "AES/EBU",
+            "BNC",
+            "Coaxial",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "USB"
+        ],
+        outputs: [
+            "LINE OUT",
+            "BALANCED OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/2fd242a8-1186-4d11-a524-f885a548c28b",
+            "https://images.hifiklubben.com/image/4c4141c8-5f19-4896-aff5-7f5b8384fe57
+        ]
+    },
+    {
         brand: "KEF",
         name: "LS60 WIRELESS",
         price: "34990",
@@ -6320,6 +6385,35 @@ const products = [{
         ]
     },
     {
+        brand: "NAD",
+        name: "CI538 V2",
+        price: "13499",
+        inputs: [
+            "LINE IN",
+            "OPTICAL IN",
+            "TRIGGER IN"
+        ],
+        outputs: [
+            "LINE OUT 1",
+            "LINE OUT 2",
+            "LINE OUT 3",
+            "LINE OUT 4",
+            "OPTICAL OUT 1",
+            "OPTICAL OUT 2",
+            "OPTICAL OUT 3",
+            "OPTICAL OUT 4",
+            "COAXIAL OUT 1",
+            "COAXIAL OUT 2",
+            "COAXIAL OUT 3",
+            "COAXIAL OUT 4",
+            "TRIGGER OUT"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/66c95291-7ec5-4bcb-b7e1-6b0e0013e0ae",
+            "https://nadelectronics.com/wp-content/uploads/2016/09/NAD-CI-580-Rear-1.jpg"
+        ]
+    },
+    {
         brand: "Peripherals",
         name: "SPEAKER SWITCH 2-WAY",
         price: "599",
@@ -6589,6 +6683,20 @@ const products = [{
         ],
         image: [
             "https://i.ibb.co/G3P9SwCK/Untitled.png"
+        ]
+    },
+    {
+        brand: "AudioQuest",
+        name: "Dragonfly Cobalt",
+        price: "1499",
+        inputs: [
+            "USB"
+        ],
+        outputs: [
+            "Minijack"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/33d59438-bba9-450d-b91b-cb206752c9ae"
         ]
     },
     {
