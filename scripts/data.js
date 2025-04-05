@@ -1640,6 +1640,81 @@ const products = [{
         ]
     },
     {
+        brand: "Bang & Olufsen",
+        name: "Beolit 20",
+        price: "4499",
+        inputs: [
+            "LINE IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/2ef4a06f-28a4-4761-a93c-11dfe7f3adf4"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound Explore",
+        price: "1899",
+        image: [
+            "https://images.hifiklubben.com/image/5795f7bb-d360-4cb3-a964-3022f384295e",
+            "https://images.hifiklubben.com/image/e47e66a7-d781-4f9a-9aa9-6adc0a34c290"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound Explore",
+        price: "23990",
+        image: [
+            "https://images.hifiklubben.com/image/33aebbe3-aaec-48b1-a75d-ce3f9010bb55",
+            "https://images.hifiklubben.com/image/3cb41689-c63a-4513-aaa2-81e5df1f644d"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound A9 5th Gen.",
+        price: "26490",
+        image: [
+            "https://images.hifiklubben.com/image/5d7d7ecf-858f-4853-86ec-baa68de647d5",
+            "https://images.hifiklubben.com/image/8bd81c0e-a3a5-4bb7-b177-7dc2cc6169ae"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound A5",
+        price: "10490",
+        inputs: [
+            "USB-C"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/1ae41b63-3c39-437c-abcc-55ef25b739ef",
+            "https://images.hifiklubben.com/image/db0caafc-b1c5-40d2-abee-17703fb05562"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound Level",
+        price: "13490",
+        image: [
+            "https://images.hifiklubben.com/image/5efdb019-56e5-4fc1-81da-a54ebbddeb47",
+            "https://images.hifiklubben.com/image/76ac52b1-f57e-4aa4-8fc5-310ecee11495"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound Balance",
+        price: "22490",
+        image: [
+            "https://images.hifiklubben.com/image/817fc4dd-d94b-415b-9f08-03ddf009db86"
+        ]
+    },
+    {
+        brand: "Bang & Olufsen",
+        name: "Beosound Emerge",
+        price: "7499",
+        image: [
+            "https://images.hifiklubben.com/image/084f86eb-6dca-4a3b-9a15-be313f909189"
+        ]
+    },
+    {
         brand: "Bluesound",
         name: "Node Icon",
         price: "7999",
@@ -1855,6 +1930,15 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/f6fae6f4-82fe-4884-9cf1-d8d9f0d99619",
             "https://images.hifiklubben.com/image/c5ae0de4-b413-4a11-a38e-06bbea705141"
+        ]
+    },
+    {
+        brand: "Bowers & Wilkins",
+        name: "Zeppelin McLaren Edition",
+        price: "6699",
+        image: [
+            "https://images.hifiklubben.com/image/37beefca-b386-4574-b6d5-750aeed14a16",
+            "https://images.hifiklubben.com/image/dbc19cd6-5272-454d-83fe-79beeafab718"
         ]
     },
     {
@@ -7075,6 +7159,15 @@ const products = [{
         ]
     },
     {
+        brand: "Soundboks",
+        name: "Soundboks Go",
+        price: "4999",
+        image: [
+            "https://images.hifiklubben.com/image/e9a3459b-58cd-4ba4-8a5f-6bc913f32a44",
+            "https://images.hifiklubben.com/image/9be3b1dd-610f-449c-ac63-f485ddd797a7"
+        ]
+    },
+    {
         brand: "Sonos",
         name: "Amp",
         price: "5748",
@@ -7185,6 +7278,78 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/19129627-621a-4106-9b10-16ac12ee4a44",
             "https://images.hifiklubben.com/image/0920d1e2-6efb-4d22-99ea-c8e65b8c934d"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Kilburn II",
+        price: "2299",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/edf9c578-aa48-4960-ad7c-4364bd86aa54",
+            "https://images.hifiklubben.com/image/653956a9-fbc7-472a-9e32-753003668595"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Stanmore III",
+        price: "2290",
+        inputs: [
+            "LINE IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/d1a1739a-eb36-4dcf-86dd-1c471a11c38f",
+            "https://images.hifiklubben.com/image/a5d22f40-dc62-4b6a-af5d-f4bfdd13f5f1"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Woburn III",
+        price: "3290",
+        inputs: [
+            "LINE IN",
+            "HDMI IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/46f755a2-3afd-4146-ac22-3be76509912c",
+            "https://images.hifiklubben.com/image/89fefe1f-cc31-4485-a639-53406e4b4eb5"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Emberton II",
+        price: "1055",
+        image: [
+            "https://images.hifiklubben.com/image/4d1cde30-5c5b-4a82-a35d-8464203c0201"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Emberton III",
+        price: "1390",
+        image: [
+            "https://images.hifiklubben.com/image/e9dc9a4d-577e-40c4-8ff7-cff0bf25cd12"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Middleton",
+        price: "1695",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/5143641b-8368-4e18-b7b4-ecdb5b607c5a"
+        ]
+    },
+    {
+        brand: "Marshall",
+        name: "Stockwell II",
+        price: "1449",
+        image: [
+            "https://images.hifiklubben.com/image/180851aa-0a1f-4eda-8fd1-24e5735f60e8"
         ]
     },
     {
@@ -7321,6 +7486,18 @@ const products = [{
         ],
         image: [
             "https://images.hifiklubben.com/image/4b57df36-5d3c-4d0b-9b67-2b2fd98406a0"
+        ]
+    },
+    {
+        brand: "Vestlyd",
+        name: "Stage A4",
+        price: "2699",
+        inputs: [
+            "AUX IN"
+        ],
+        image: [
+            "https://images.hifiklubben.com/image/9a90d5d9-1e28-4b72-bde4-4698296eb84f",
+            "https://images.hifiklubben.com/image/21723047-0282-4d20-82ac-d1a391b44359"
         ]
     }
 ];
