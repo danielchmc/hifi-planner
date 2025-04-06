@@ -4,7 +4,8 @@ const products = [{
         price: "9499",
         category: [
             "Active Speakers",
-            "Floorstanding Speakers"
+            "Floorstanding Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -27,7 +28,8 @@ const products = [{
         price: "7999",
         category: [
             "Active Speakers",
-            "Floorstanding Speakers"
+            "Floorstanding Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -50,7 +52,8 @@ const products = [{
         price: "6499",
         category: [
             "Active Speakers",
-            "Compact Speakers"
+            "Compact Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -73,7 +76,8 @@ const products = [{
         price: "5499",
         category: [
             "Active Speakers",
-            "Compact Speakers"
+            "Compact Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -96,7 +100,8 @@ const products = [{
         price: "5499",
         category: [
             "Active Speakers",
-            "Floorstanding Speakers"
+            "Floorstanding Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -119,7 +124,8 @@ const products = [{
         price: "4999",
         category: [
             "Active Speakers",
-            "Compact Speakers"
+            "Compact Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -173,7 +179,11 @@ const products = [{
         brand: "Argon Audio",
         name: "Forte A4 MK2",
         price: "3999",
-        category: "Active Speakers",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -214,6 +224,11 @@ const products = [{
         brand: "Argon Audio",
         name: "STUDIE 3",
         price: "3299",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL",
@@ -232,6 +247,11 @@ const products = [{
         brand: "Argon Audio",
         name: "Fenris A5",
         price: "2999",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -251,6 +271,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS 5 WALL",
         price: "2998",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -288,7 +312,8 @@ const products = [{
         price: "2499",
         category: [
             "Active Speakers",
-            "Compact Speakers"
+            "Compact Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -349,6 +374,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS 4 WALL",
         price: "2198",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -395,6 +424,9 @@ const products = [{
         brand: "Argon Audio",
         name: "Malmö Sub 6",
         price: "1999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -408,6 +440,9 @@ const products = [{
         brand: "Argon Audio",
         name: "Malmö Sub 8",
         price: "2999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -421,6 +456,9 @@ const products = [{
         brand: "Argon Audio",
         name: "Malmö Sub 10",
         price: "3499",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -562,6 +600,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS CENTER",
         price: "1199",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -643,6 +685,9 @@ const products = [{
         brand: "Argon Audio",
         name: "TT-4 MK2",
         price: "5999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT",
             "PHONO OUT"
@@ -657,6 +702,9 @@ const products = [{
         brand: "Argon Audio",
         name: "TT MK2",
         price: "1999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT",
             "PHONO OUT"
@@ -671,6 +719,9 @@ const products = [{
         brand: "Argon Audio",
         name: "TT-3 Plus",
         price: "3999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT",
             "PHONO OUT"
@@ -685,6 +736,9 @@ const products = [{
         brand: "Argon Audio",
         name: "TT-3",
         price: "2999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -698,6 +752,9 @@ const products = [{
         brand: "Argon Audio",
         name: "TT-4 Special Edition",
         price: "7499",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT",
             "PHONO OUT"
@@ -712,6 +769,9 @@ const products = [{
         brand: "Argon Audio",
         name: "PHONO1",
         price: "699",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "PHONO IN"
         ],
@@ -1918,6 +1978,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound A1 2nd Gen",
         price: "2390",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOA1G2",
         image: [
             "https://images.hifiklubben.com/image/de2fb6df-61ad-4d47-b092-22da3182cbd5"
@@ -1927,6 +1990,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beolit 20",
         price: "4499",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -1939,6 +2005,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Explore",
         price: "1899",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOEXPLORE",
         image: [
             "https://images.hifiklubben.com/image/5795f7bb-d360-4cb3-a964-3022f384295e",
@@ -1949,6 +2018,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound 2 3rd Gen.",
         price: "23990",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOBEOS2V3",
         image: [
             "https://images.hifiklubben.com/image/33aebbe3-aaec-48b1-a75d-ce3f9010bb55",
@@ -1959,6 +2031,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound A9 5th Gen.",
         price: "26490",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOA9V5",
         image: [
             "https://images.hifiklubben.com/image/5d7d7ecf-858f-4853-86ec-baa68de647d5",
@@ -1969,6 +2044,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound A5",
         price: "10490",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "USB-C"
         ],
@@ -1982,6 +2060,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Level",
         price: "13490",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOLEVEL",
         image: [
             "https://images.hifiklubben.com/image/5efdb019-56e5-4fc1-81da-a54ebbddeb47",
@@ -1992,6 +2073,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Balance",
         price: "22490",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOBALANCE",
         image: [
             "https://images.hifiklubben.com/image/817fc4dd-d94b-415b-9f08-03ddf009db86"
@@ -2001,6 +2085,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Emerge",
         price: "7499",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BOEMERGENONGAGO",
         image: [
             "https://images.hifiklubben.com/image/084f86eb-6dca-4a3b-9a15-be313f909189"
@@ -2010,6 +2097,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "Beosound Stage",
         price: "17490",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI IN"
         ],
@@ -2048,6 +2138,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse Soundbar+",
         price: "7999",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI eARC",
             "AUDIO IN",
@@ -2090,6 +2183,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse Sub+",
         price: "6299",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LFE IN"
         ],
@@ -2103,6 +2199,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse 2i",
         price: "5499",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN"
@@ -2170,6 +2269,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse Mini 2i",
         price: "4699",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN"
@@ -2187,6 +2289,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse M (P230)",
         price: "3299",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN"
@@ -2241,6 +2346,9 @@ const products = [{
         brand: "Bluesound",
         name: "Pulse Flex 2i",
         price: "1999",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN"
@@ -2258,6 +2366,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "Zeppelin Pro Edition",
         price: "5999",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BWZEPPELING5",
         image: [
             "https://images.hifiklubben.com/image/f6fae6f4-82fe-4884-9cf1-d8d9f0d99619",
@@ -2268,6 +2379,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "Zeppelin McLaren Edition",
         price: "6699",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "BWZEPPELING4MCLAREN",
         image: [
             "https://images.hifiklubben.com/image/37beefca-b386-4574-b6d5-750aeed14a16",
@@ -2409,6 +2523,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM81 D4",
         price: "62999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2422,6 +2540,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM82 D4",
         price: "44999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2565,6 +2687,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM71 S3 Signature",
         price: "18449",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2578,6 +2704,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM71 S3",
         price: "14899",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2591,6 +2721,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM72 S3",
         price: "8999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2652,6 +2786,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "HTM6 S3",
         price: "5499",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2664,6 +2802,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "DB1D",
         price: "37999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -2677,6 +2818,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "DB2D",
         price: "29999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -2690,6 +2834,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "DB3D",
         price: "22999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -2703,6 +2850,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "DB4S",
         price: "16499",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -2717,6 +2867,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "ASW610",
         price: "5999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "TRIGGER IN",
@@ -2732,6 +2885,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "M-1",
         price: "2199",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2744,6 +2901,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM8.5 D (1 Unit)",
         price: "19499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2756,6 +2916,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM8.3 D (1 Unit)",
         price: "31299",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2769,6 +2932,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM7.5 S2 (1 Unit)",
         price: "6299",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2795,6 +2961,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM7.4 S2 (1 Unit)",
         price: "7799",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2808,6 +2977,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM7.3 S2 (1 Unit)",
         price: "14999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2821,6 +2993,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM8.5 D (1 Unit)",
         price: "18599",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2833,6 +3008,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM7.3 S2 (1 Unit)",
         price: "15999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2846,6 +3024,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM662",
         price: "8898",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2859,6 +3040,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM663RD",
         price: "7198",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2871,6 +3055,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM652 (1 Unit)",
         price: "3399",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2883,6 +3070,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM664SR (1 Unit)",
         price: "3499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2895,6 +3085,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM632",
         price: "3998",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2908,6 +3101,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM663SR (1 Unit)",
         price: "4499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2921,6 +3117,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM665",
         price: "4598",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2934,6 +3133,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM683 (1 Unit)",
         price: "3999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2959,6 +3161,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM684 (1 Unit)",
         price: "2999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2971,6 +3176,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM663 (1 Unit)",
         price: "2999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2983,6 +3191,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM664 (1 Unit)",
         price: "2599",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2995,6 +3206,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM663 (1 Unit)",
         price: "2999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3008,6 +3222,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM682 (1 Unit)",
         price: "5199",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3020,6 +3237,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM382",
         price: "3998",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3033,6 +3253,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CWM362",
         price: "2798",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3045,6 +3268,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CCM362",
         price: "2998",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3186,6 +3412,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT8 SW",
         price: "48499",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
@@ -3198,6 +3427,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT SW10",
         price: "7999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
@@ -3210,6 +3442,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT SW12",
         price: "9999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
@@ -3222,6 +3457,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT SW15",
         price: "11999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN (CDA-2HD)"
         ],
@@ -3234,6 +3472,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT7.3 LCR",
         price: "14999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3246,6 +3487,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT7.4 LCR",
         price: "9999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3258,6 +3502,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CT7.5 LCR",
         price: "5999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3483,6 +3730,10 @@ const products = [{
         brand: "DALI",
         name: "Epicon Vokal",
         price: "36999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3544,6 +3795,10 @@ const products = [{
         brand: "DALI",
         name: "Rubikore ON-WALL",
         price: "21998",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3557,6 +3812,10 @@ const products = [{
         brand: "DALI",
         name: "Rubikore Cinema",
         price: "14999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3598,6 +3857,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom S-280 (1 Unit)",
         price: "36999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3611,6 +3873,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom S-180 (1 Unit)",
         price: "22499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3679,6 +3944,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom M-675 (1 Unit)",
         price: "16299",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3692,6 +3960,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom S-80 (1Unit)",
         price: "14999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3705,6 +3976,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom H-120 (1 Unit)",
         price: "7499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3717,6 +3991,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom H-80 R (1 Unit)",
         price: "3999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3743,6 +4020,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom M-375 (1 Unit)",
         price: "9999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3756,6 +4036,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom H-80 (Pair)",
         price: "7398",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3795,6 +4078,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom K-80 (1 Unit)",
         price: "3999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3808,6 +4094,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom K-60 (1 Unit)",
         price: "3349",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3821,6 +4110,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom K-60 LP (1 Unit)",
         price: "2999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3834,6 +4126,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom M-80 A (1 Unit)",
         price: "5999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3846,6 +4141,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom M-250",
         price: "6699",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3859,6 +4157,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom E-80 WR",
         price: "2999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3872,6 +4173,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom E-60 S (1 Unit)",
         price: "2599",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3885,6 +4189,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom E-60",
         price: "1849",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3898,6 +4205,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom E-60 WR",
         price: "2199",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3911,6 +4221,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom E-50",
         price: "1499",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3924,6 +4237,9 @@ const products = [{
         brand: "DALI",
         name: "Katch G2",
         price: "2999",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -3936,6 +4252,9 @@ const products = [{
         brand: "DALI",
         name: "Sub P-10 DSS",
         price: "24999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE"
@@ -3966,6 +4285,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom Sub S-100",
         price: "10999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3978,6 +4300,9 @@ const products = [{
         brand: "DALI",
         name: "Sub K-14 F",
         price: "10999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE"
@@ -3992,6 +4317,9 @@ const products = [{
         brand: "DALI",
         name: "Sub E-12 F",
         price: "6299",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE"
@@ -4006,6 +4334,9 @@ const products = [{
         brand: "DALI",
         name: "Sub E-9 F",
         price: "4899",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE"
@@ -4020,6 +4351,9 @@ const products = [{
         brand: "DALI",
         name: "Sub C-8 D",
         price: "3399",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE"
@@ -4067,6 +4401,10 @@ const products = [{
         brand: "DALI",
         name: "Fazon Sat",
         price: "2449",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4080,6 +4418,10 @@ const products = [{
         brand: "DALI",
         name: "Fazon Mikro Vokal",
         price: "1649",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4161,6 +4503,10 @@ const products = [{
         brand: "DALI",
         name: "Opticon LCR mk2 (1 Unit)",
         price: "5999",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4174,6 +4520,10 @@ const products = [{
         brand: "DALI",
         name: "Opticon Vokal mk2",
         price: "5199",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         sku: "DALIOPTICONVOKMK2",
         image: [
             "https://images.hifiklubben.com/image/987ac03d-9794-4860-a8b8-e9d99bfc2aef",
@@ -4265,6 +4615,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon Grand Vokal",
         price: "4449",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4278,6 +4632,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon On-Wall",
         price: "3998",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4291,6 +4649,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon Vokal",
         price: "2999",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4344,6 +4706,10 @@ const products = [{
         brand: "DALI",
         name: "Spektor Vokal",
         price: "1699",
+        category: [
+            "Passive Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4396,6 +4762,9 @@ const products = [{
         brand: "DALI ",
         name: "Phantom E-80",
         price: "2599",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4426,6 +4795,9 @@ const products = [{
         brand: "DALI ",
         name: "Katch One",
         price: "5499",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI eARC",
             "OPTICAL IN 1",
@@ -4445,6 +4817,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-S970H",
         price: "7199",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4481,6 +4856,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-S670H",
         price: "4999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4512,6 +4890,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-S770H",
         price: "5999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4544,6 +4925,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-X2800H",
         price: "4990",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4580,6 +4964,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-X2800H DAB",
         price: "8998",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4616,6 +5003,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-X1800H",
         price: "4999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4648,6 +5038,9 @@ const products = [{
         brand: "Denon",
         name: "AVR-X1800HDAB",
         price: "5499",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4680,6 +5073,9 @@ const products = [{
         brand: "Denon",
         name: "AVC-X3800H",
         price: "7695",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -4731,6 +5127,9 @@ const products = [{
         brand: "Denon",
         name: "AVC-X4800H",
         price: "13499",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -4789,6 +5188,9 @@ const products = [{
         brand: "Denon",
         name: "AVC-6800H",
         price: "25999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4849,6 +5251,9 @@ const products = [{
         brand: "Denon",
         name: "AVC-A10H",
         price: "33999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4912,6 +5317,9 @@ const products = [{
         brand: "Denon",
         name: "AVC-A1H",
         price: "51999",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4977,6 +5385,9 @@ const products = [{
     {
         brand: "Denon",
         name: "AVR-X580BT",
+        category: [
+            "Home Cinema Recievers"
+        ],
         price: "2699",
         inputs: [
             "PHONO IN",
@@ -5448,6 +5859,9 @@ const products = [{
         brand: "Denon",
         name: "Home 150",
         price: "1498",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "Minijack"
         ],
@@ -5461,6 +5875,9 @@ const products = [{
         brand: "Denon",
         name: "Home 250",
         price: "3199",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "Minijack"
         ],
@@ -5474,6 +5891,9 @@ const products = [{
         brand: "Denon",
         name: "Home 350",
         price: "4399",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "Minijack"
         ],
@@ -5487,6 +5907,9 @@ const products = [{
         brand: "Denon",
         name: "Home Soundbar 550",
         price: "3999",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "OPTICAL IN",
             "AUX IN",
@@ -5505,6 +5928,9 @@ const products = [{
         brand: "Denon",
         name: "Home Subwoofer",
         price: "3699",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -5518,6 +5944,9 @@ const products = [{
         brand: "Denon",
         name: "DHT-S218",
         price: "1999",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI IN",
             "OPTICAL IN",
@@ -5537,6 +5966,9 @@ const products = [{
         brand: "Denon",
         name: "DP-300F",
         price: "3199",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -5549,6 +5981,9 @@ const products = [{
         brand: "Denon",
         name: "DP-400",
         price: "4199",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -5561,6 +5996,9 @@ const products = [{
         brand: "Denon",
         name: "DP-3000NE",
         price: "18499",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -5573,6 +6011,9 @@ const products = [{
         brand: "Denon",
         name: "DP-29F",
         price: "1499",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT"
         ],
@@ -5585,6 +6026,9 @@ const products = [{
         brand: "Denon",
         name: "DP-450USB",
         price: "4999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "LINE OUT",
             "USB OUT"
@@ -6761,6 +7205,9 @@ const products = [{
         brand: "Hegel",
         name: "V10",
         price: "9999",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "PHONO IN (MM)",
             "PHONO IN (MC)"
@@ -6781,7 +7228,8 @@ const products = [{
         price: "34990",
         category: [
             "Active Speakers",
-            "Floorstanding Speakers"
+            "Floorstanding Speakers",
+            "Soundbar/TV Audio"
         ],
         inputs: [
             "HDMI ARC",
@@ -6801,6 +7249,11 @@ const products = [{
         brand: "KEF",
         name: "LS50 WIRELESS II",
         price: "17440",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -6820,6 +7273,11 @@ const products = [{
         brand: "KEF",
         name: "LSX II LT",
         price: "9995",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -6838,6 +7296,11 @@ const products = [{
         brand: "KEF",
         name: "LSX II",
         price: "9890",
+        category: [
+            "Active Speakers",
+            "Compact Speakers",
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -6856,6 +7319,9 @@ const products = [{
         brand: "KEF",
         name: "KC62",
         price: "12900",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6873,6 +7339,9 @@ const products = [{
         brand: "KEF",
         name: "KC92",
         price: "17900",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6907,6 +7376,9 @@ const products = [{
         brand: "KEF",
         name: "KUBE 15 MIE",
         price: "9850",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6921,6 +7393,9 @@ const products = [{
         brand: "KEF",
         name: "KUBE 12 MIE",
         price: "6849",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6935,6 +7410,9 @@ const products = [{
         brand: "KEF",
         name: "KUBE 10 MIE",
         price: "5950",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6949,6 +7427,9 @@ const products = [{
         brand: "KEF",
         name: "KUBE 8 MIE",
         price: "4975",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN",
             "LINE IN"
@@ -6963,6 +7444,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "MP-60 2.1",
         price: "124900",
+        category: [
+            "Surround-Processors"
+        ],
         inputs: [
             "MICROPHONE IN",
             "OPTICAL IN 1",
@@ -7002,6 +7486,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "MP-40 2.1",
         price: "83998",
+        category: [
+            "Surround-Processors"
+        ],
         inputs: [
             "MICROPHONE IN",
             "OPTICAL IN 1",
@@ -7197,6 +7684,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "LS-1000",
         price: "272388",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7225,6 +7715,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "D-60",
         price: "36998",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7238,6 +7731,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "BW-20",
         price: "29999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7267,6 +7763,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "D-500 CENTER",
         price: "18499",
+        category: [
+            "CI & Outdoor Speakers",
+            "Center Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7280,6 +7780,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "D-500",
         price: "13399",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7293,6 +7796,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "D-5 IC",
         price: "11899",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7306,6 +7812,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "D-5",
         price: "10999",
+        category: [
+            "CI & Outdoor Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7353,6 +7862,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "BW-2 GABRIEL",
         price: "9999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE",
@@ -7368,6 +7880,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "BW-3 GABRIEL",
         price: "7999",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "LINE IN",
             "LFE",
@@ -7383,6 +7898,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "FR-1 GABRIEL",
         price: "4999",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7396,6 +7915,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "MH-2 GABRIEL",
         price: "3999",
+        category: [
+            "Passive Speakers",
+            "On-Wall Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7426,6 +7949,9 @@ const products = [{
         brand: "Marantz",
         name: "Cinema 50",
         price: "13990",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -7475,8 +8001,54 @@ const products = [{
     },
     {
         brand: "Marantz",
+        name: "Cinema 70S",
+        price: "5837",
+        category: [
+            "Home Cinema Recievers"
+        ],
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "COAXIAL IN 1",
+            "OPTICAL 1",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "TRIGGER OUT"
+        ],
+        sku: "MARACINEMA70S",
+        image: [
+            "https://images.hifiklubben.com/image/2d11bd7b-5370-4a81-a5fb-ad895da19ef5",
+            "https://images.hifiklubben.com/image/0af93285-2755-4251-b467-a5b7a0319869"
+        ]
+    },
+    {
+        brand: "Marantz",
         name: "Cinema 60",
         price: "9475",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -7520,6 +8092,9 @@ const products = [{
         brand: "Marantz",
         name: "Cinema 60 DAB",
         price: "9975",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -7563,6 +8138,9 @@ const products = [{
         brand: "Marantz",
         name: "Cinema 40",
         price: "19990",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -7619,6 +8197,9 @@ const products = [{
         brand: "Marantz",
         name: "Cinema 30",
         price: "31260",
+        category: [
+            "Home Cinema Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -7679,6 +8260,9 @@ const products = [{
         brand: "Marantz",
         name: "AV 10",
         price: "49990",
+        category: [
+            "Surround-Processors",
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -8108,6 +8692,9 @@ const products = [{
         brand: "Marantz",
         name: "TT-15S1",
         price: "17995",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -8171,6 +8758,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Masterdeck",
         price: "53999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -8194,6 +8784,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Ultradeck",
         price: "17999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -8206,6 +8799,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Studiodeck",
         price: "12999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -8218,6 +8814,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Masterphono",
         price: "42999",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "LINE IN",
             "BAL IN"
@@ -8236,6 +8835,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Ultraphono",
         price: "3999",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -8253,6 +8855,9 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Studiophono",
         price: "2990",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -8379,6 +8984,9 @@ const products = [{
         brand: "NAD",
         name: "T778",
         price: "28999",
+        category: [
+            "Home Cinema Recievers",
+        ],
         inputs: [
             "OPTICAL IN 1",
             "OPTICAL IN 2",
@@ -8554,6 +9162,9 @@ const products = [{
         brand: "NAD",
         name: "T758 V3I",
         price: "12499",
+        category: [
+            "Home Cinema Recievers",
+        ],
         inputs: [
             "OPTICAL IN 1",
             "OPTICAL IN 2",
@@ -9055,6 +9666,9 @@ const products = [{
         brand: "NAD",
         name: "C558",
         price: "3999",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -9067,6 +9681,9 @@ const products = [{
         brand: "NAD",
         name: "C588",
         price: "6499",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -9079,6 +9696,9 @@ const products = [{
         brand: "NAD",
         name: "PP 2E",
         price: "1499",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "PHONO IN (MM)",
             "PHONO IN (MC)"
@@ -9096,6 +9716,9 @@ const products = [{
         brand: "NAD",
         name: "PP4 (Grafit)",
         price: "1999",
+        category: [
+            "RIAA Amplifiers"
+        ],
         inputs: [
             "PHONO IN (MM)",
             "PHONO IN (MC)",
@@ -9115,6 +9738,9 @@ const products = [{
         brand: "Pro-Ject",
         name: "X1 B PICK IT PRO",
         price: "8599",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -9127,6 +9753,9 @@ const products = [{
         brand: "Pro-Ject",
         name: "X8",
         price: "19990",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -9139,6 +9768,9 @@ const products = [{
         brand: "Pro-Ject",
         name: "RPM 1 CARBON",
         price: "5199",
+        category: [
+            "Turntables"
+        ],
         outputs: [
             "PHONO OUT"
         ],
@@ -9348,6 +9980,9 @@ const products = [{
         brand: "Sennheiser",
         name: "Ambeo Soundbar Mini",
         price: "5989",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI ARC"
         ],
@@ -9360,6 +9995,9 @@ const products = [{
         brand: "Sennheiser",
         name: "Ambeo Soundbar Plus",
         price: "5989",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL IN",
@@ -9380,6 +10018,9 @@ const products = [{
         brand: "Sennheiser",
         name: "Ambeo Soundbar Max",
         price: "18999",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL IN",
@@ -9401,6 +10042,9 @@ const products = [{
         brand: "Sennheiser",
         name: "Ambeo Sub",
         price: "5490",
+        category: [
+            "Subwoofers"
+        ],
         inputs: [
             "SUBW IN"
         ],
@@ -9427,6 +10071,9 @@ const products = [{
         brand: "Soundboks",
         name: "Soundboks 4 (USB-C)",
         price: "7999",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN",
             "XLR IN",
@@ -9447,6 +10094,9 @@ const products = [{
         brand: "Soundboks",
         name: "Soundboks Go",
         price: "4999",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "SOUNDBOKSGOBB4",
         image: [
             "https://images.hifiklubben.com/image/e9a3459b-58cd-4ba4-8a5f-6bc913f32a44",
@@ -9497,6 +10147,9 @@ const products = [{
         brand: "Sonos",
         name: "Era 100",
         price: "1690",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "USB C"
         ],
@@ -9510,6 +10163,9 @@ const products = [{
         brand: "Sonos",
         name: "Era 300",
         price: "3196",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "USB C"
         ],
@@ -9523,6 +10179,9 @@ const products = [{
         brand: "Sonos",
         name: "Five",
         price: "4395",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "Minijack"
         ],
@@ -9535,6 +10194,9 @@ const products = [{
         brand: "Sonos",
         name: "Move 2",
         price: "3599",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "USB C"
         ],
@@ -9547,6 +10209,9 @@ const products = [{
         brand: "Sonos",
         name: "Roam 2",
         price: "1359",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "SONROAM2",
         image: [
             "https://images.hifiklubben.com/image/565fc27c-f5c0-4872-bd01-ace2e5bf88cf",
@@ -9557,6 +10222,9 @@ const products = [{
         brand: "Sonos",
         name: "Beam (Gen 2)",
         price: "3222",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI IN"
         ],
@@ -9570,6 +10238,9 @@ const products = [{
         brand: "Sonos",
         name: "Arc Ultra",
         price: "7490",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI eARC IN"
         ],
@@ -9582,6 +10253,9 @@ const products = [{
         brand: "Sonos",
         name: "Arc",
         price: "6109",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI eARC IN"
         ],
@@ -9594,6 +10268,9 @@ const products = [{
         brand: "Sonos",
         name: "Sub Mini",
         price: "3323",
+        category: [
+            "Subwoofers"
+        ],
         sku: "SONSUBMINI",
         image: [
             "https://images.hifiklubben.com/image/8659f502-f1ce-497e-94b6-57233eb0fda4",
@@ -9604,6 +10281,9 @@ const products = [{
         brand: "Sonos",
         name: "Sub (Gen 3)",
         price: "6699",
+        category: [
+            "Subwoofers"
+        ],
         sku: "SONSUBG3",
         image: [
             "https://images.hifiklubben.com/image/f5486b6f-8f96-4780-b0aa-e06de9883604"
@@ -9613,6 +10293,9 @@ const products = [{
         brand: "Sonos",
         name: "Sub 4",
         price: "5999",
+        category: [
+            "Subwoofers"
+        ],
         sku: "SONSUBG4",
         image: [
             "https://images.hifiklubben.com/image/97328c36-080b-47b3-bdc9-3b09d7332d26"
@@ -9622,6 +10305,9 @@ const products = [{
         brand: "Marshall",
         name: "Tufton",
         price: "2480",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -9635,6 +10321,9 @@ const products = [{
         brand: "Marshall",
         name: "Action III",
         price: "1585",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -9648,6 +10337,9 @@ const products = [{
         brand: "Marshall",
         name: "Kilburn II",
         price: "2299",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -9661,6 +10353,9 @@ const products = [{
         brand: "Marshall",
         name: "Stanmore III",
         price: "2290",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -9674,6 +10369,9 @@ const products = [{
         brand: "Marshall",
         name: "Woburn III",
         price: "3290",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "LINE IN",
             "HDMI IN"
@@ -9688,6 +10386,9 @@ const products = [{
         brand: "Marshall",
         name: "Emberton II",
         price: "1055",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "MAREMBERTON2",
         image: [
             "https://images.hifiklubben.com/image/4d1cde30-5c5b-4a82-a35d-8464203c0201"
@@ -9697,6 +10398,9 @@ const products = [{
         brand: "Marshall",
         name: "Emberton III",
         price: "1390",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "MAREMBERTON3",
         image: [
             "https://images.hifiklubben.com/image/e9dc9a4d-577e-40c4-8ff7-cff0bf25cd12"
@@ -9706,6 +10410,9 @@ const products = [{
         brand: "Marshall",
         name: "Middleton",
         price: "1695",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -9718,6 +10425,9 @@ const products = [{
         brand: "Marshall",
         name: "Stockwell II",
         price: "1449",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         sku: "MARSTOCKWELL2",
         image: [
             "https://images.hifiklubben.com/image/180851aa-0a1f-4eda-8fd1-24e5735f60e8"
@@ -9727,6 +10437,9 @@ const products = [{
         brand: "Noon Audio",
         name: "Flixx",
         price: "699",
+        category: [
+            "Wireless/Bluetooth Speakers"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -9740,6 +10453,9 @@ const products = [{
         brand: "Noon Audio",
         name: "Compose SB201",
         price: "2499",
+        category: [
+            "Soundbar/TV Audio"
+        ],
         inputs: [
             "HDMI IN"
         ],
@@ -9896,6 +10612,9 @@ const products = [{
         brand: "Vestlyd",
         name: "Stage A4",
         price: "2699",
+        category: [
+            "Wireless/Bluetooth Speakers",
+        ],
         inputs: [
             "AUX IN"
         ],
