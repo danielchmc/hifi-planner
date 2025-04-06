@@ -132,7 +132,7 @@ async function initializeProducts() {
     return products;
 }
 
-//initializeProducts();
+initializeProducts();
 
 window.addEventListener("DOMContentLoaded", () => {
     floatingProductList = document.getElementById("floating-product-list");
@@ -1104,9 +1104,19 @@ function loadProducts() {
             }
 
             // Exclude cable products.
-            if (product.category && product.category.toLowerCase() === "cable") {
-                continue;
-            };
+            //if (product.category && product.category.toLowerCase() === "cable") {
+            //    continue;
+            //};
+
+            if (product.category) {
+                // If it's an array, check if any element matches "cable"
+                if (Array.isArray(product.category)) {
+                    if (product.category.some(cat => cat.toLowerCase() === "cable")) continue;
+                } else if (product.category.toLowerCase() === "cable") {
+                    continue;
+                }
+            }
+
 
             const combinedData = (
                 product.name + " " +
@@ -1188,7 +1198,15 @@ function loadProducts() {
             }
 
             // Exclude cable products.
-            if (product.category && product.category.toLowerCase() === "cable") continue;
+            //if (product.category && product.category.toLowerCase() === "cable") continue;
+            if (product.category) {
+                // If it's an array, check if any element matches "cable"
+                if (Array.isArray(product.category)) {
+                    if (product.category.some(cat => cat.toLowerCase() === "cable")) continue;
+                } else if (product.category.toLowerCase() === "cable") {
+                    continue;
+                }
+            }
 
             const combinedData = (
                 product.name + " " +

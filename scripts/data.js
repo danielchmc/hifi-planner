@@ -2,6 +2,10 @@ const products = [{
         brand: "Argon Audio",
         name: "Forte A55 WiFi",
         price: "9499",
+        category: [
+            "Active Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -21,6 +25,10 @@ const products = [{
         brand: "Argon Audio",
         name: "Forte A55 MK2",
         price: "7999",
+        category: [
+            "Active Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -38,8 +46,58 @@ const products = [{
     },
     {
         brand: "Argon Audio",
+        name: "Forte A5 WiFi",
+        price: "6499",
+        category: [
+            "Active Speakers",
+            "Compact Speakers"
+        ],
+        inputs: [
+            "HDMI ARC",
+            "OPTICAL",
+            "PHONO",
+            "AUX"
+        ],
+        outputs: [
+            "SUB OUT"
+        ],
+        sku: "ARGFORTEA5WIFI",
+        image: [
+            "https://images.hifiklubben.com/image/245ff3ea-3791-4d28-ac05-2e0c27ce0e63",
+            "https://images.hifiklubben.com/image/a03b8d04-c4dd-4e11-8096-fdc03c880bda"
+        ]
+    },
+    {
+        brand: "Argon Audio",
+        name: "Forte A4 WiFi",
+        price: "5499",
+        category: [
+            "Active Speakers",
+            "Compact Speakers"
+        ],
+        inputs: [
+            "HDMI ARC",
+            "OPTICAL",
+            "PHONO",
+            "AUX"
+        ],
+        outputs: [
+            "SUB OUT"
+        ],
+        sku: "ARGFORTEA4WIFI",
+        image: [
+            "https://images.hifiklubben.com/image/289c1b96-b9b2-4585-9764-2bcc23267bfe",
+            "https://images.hifiklubben.com/image/6d1416c5-9f7a-4b1c-bd37-03cedb466d5d"
+        ]
+    },
+    {
+        brand: "Argon Audio",
         name: "Fenris A55",
         price: "5499",
+        category: [
+            "Active Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -59,6 +117,10 @@ const products = [{
         brand: "Argon Audio",
         name: "Forte A5 MK2",
         price: "4999",
+        category: [
+            "Active Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -78,10 +140,14 @@ const products = [{
         brand: "Argon Audio",
         name: "ALTO55 MK2",
         price: "4598",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
+        category: "Passive Speakers",
         inputs: [
             "SPEAKER IN"
         ],
-        outputs: ["SUB OUT"],
         sku: "ARGALTO55MK2",
         image: [
             "https://images.hifiklubben.com/image/f62fcff8-78a9-403e-9c8e-daee394b5dc3"
@@ -91,6 +157,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS 55",
         price: "4598",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -103,6 +173,7 @@ const products = [{
         brand: "Argon Audio",
         name: "Forte A4 MK2",
         price: "3999",
+        category: "Active Speakers",
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -121,6 +192,7 @@ const products = [{
     {
         brand: "Argon Audio",
         name: "SA2",
+        category: "Integrated Amplifiers",
         price: "3499",
         inputs: [
             "HDMI ARC",
@@ -191,6 +263,9 @@ const products = [{
         brand: "Argon Audio",
         name: "SA1 MK2",
         price: "2499",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL IN",
@@ -211,6 +286,10 @@ const products = [{
         brand: "Argon Audio",
         name: "Fenris A4",
         price: "2499",
+        category: [
+            "Active Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL",
@@ -230,6 +309,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO2i",
         price: "2199",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -247,6 +329,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO3i MK2",
         price: "2199",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -276,6 +361,10 @@ const products = [{
         brand: "Argon Audio",
         name: "STREAM 3 MK2",
         price: "1999",
+        category: [
+            "Radios",
+            "Streamers with Radio"
+        ],
         outputs: [
             "AUDIO OUT",
             "OPTICAL OUT"
@@ -290,6 +379,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS 5",
         price: "1998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -358,6 +451,9 @@ const products = [{
         brand: "Argon Audio",
         name: "STREAM 2 MK3",
         price: "1699",
+        category: [
+            "Streamers"
+        ],
         outputs: [
             "AUDIO OUT",
             "OPTICAL OUT"
@@ -372,6 +468,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO3",
         price: "1699",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -389,6 +488,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO2",
         price: "1499",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -406,6 +508,9 @@ const products = [{
         brand: "Argon Audio",
         name: "SOLO",
         price: "1499",
+        category: [
+            "Streamers"
+        ],
         outputs: [
             "ANALOG OUT",
             "OPTICAL OUT",
@@ -421,6 +526,10 @@ const products = [{
         brand: "Argon Audio",
         name: "FORUS 4",
         price: "1498",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -433,6 +542,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO1",
         price: "1199",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
@@ -462,6 +574,9 @@ const products = [{
         brand: "Argon Audio",
         name: "NANODAC",
         price: "399",
+        category: [
+            "D/A Converters"
+        ],
         inputs: [
             "OPTICAL IN"
         ],
@@ -478,6 +593,9 @@ const products = [{
         brand: "Argon Audio",
         name: "DAB Adapter3 Mk2",
         price: "899",
+        category: [
+            "Radios"
+        ],
         outputs: [
             "LINE OUT",
             "OPTICAL OUT"
@@ -1778,6 +1896,9 @@ const products = [{
         brand: "Bang & Olufsen",
         name: "BEOAMP 2",
         price: "5100",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "LINE IN",
             "TRIGGER IN"
@@ -1901,6 +2022,9 @@ const products = [{
         brand: "Bluesound",
         name: "Node Icon",
         price: "7999",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL IN",
@@ -1942,6 +2066,9 @@ const products = [{
         brand: "Bluesound",
         name: "Powernode (N330)",
         price: "7499",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "ANALOG IN1",
             "OPTICAL IN1",
@@ -1993,6 +2120,9 @@ const products = [{
         brand: "Bluesound",
         name: "Powernode Edge (N230)",
         price: "4999",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN",
@@ -2012,6 +2142,9 @@ const products = [{
         brand: "Bluesound",
         name: "Node N132",
         price: "4299",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "OPTICAL IN",
             "ANALOG IN",
@@ -2071,6 +2204,9 @@ const products = [{
         brand: "Bluesound",
         name: "Node Nano (N030)",
         price: "2599",
+        category: [
+            "Streamers"
+        ],
         outputs: [
             "LINE OUT",
             "COAXIAL OUT",
@@ -2142,6 +2278,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "800 D3",
         price: "219800",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2154,6 +2294,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "801 D4",
         price: "309998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2166,6 +2310,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "801 D4 Signature",
         price: "399998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2179,6 +2327,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "802 D4",
         price: "229998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2191,6 +2343,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "803 D4",
         price: "185998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2203,6 +2359,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "804 D4",
         price: "119998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2215,6 +2375,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "805 D4",
         price: "73998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2228,6 +2392,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "805 D4 Signature",
         price: "99998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2267,6 +2435,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "702 S3",
         price: "47998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2279,6 +2451,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "702 S3 Signature",
         price: "62998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2292,6 +2468,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "703 S3",
         price: "36998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2304,6 +2484,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "704 S3",
         price: "25998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2316,6 +2500,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "705 S3",
         price: "21998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2328,6 +2516,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "705 S3 Signature",
         price: "29998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2341,6 +2533,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "706 S3",
         price: "14998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2353,6 +2549,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "707 S3",
         price: "10998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2404,6 +2604,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "603 S3",
         price: "16998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2416,6 +2620,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "606 S3",
         price: "7398",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2428,6 +2636,10 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "607 S3",
         price: "5998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -2881,6 +3093,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CDA-2HD",
         price: "18999",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "LINE IN",
             "COAXIAL IN",
@@ -2901,6 +3116,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CDA-4D",
         price: "14899",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -2925,6 +3143,9 @@ const products = [{
         brand: "Bowers & Wilkins",
         name: "CDA-16",
         price: "14999",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -3049,6 +3270,9 @@ const products = [{
         brand: "Burson Audio",
         name: "Conductor 3X Performance",
         price: "11499",
+        category: [
+            "Headphone Amplifiers",
+        ],
         inputs: [
             "USB",
             "OPTICAL",
@@ -3070,6 +3294,9 @@ const products = [{
         brand: "Burson Audio",
         name: "Playmate 2",
         price: "5999",
+        category: [
+            "Headphone Amplifiers",
+        ],
         inputs: [
             "OPTICAL IN"
         ],
@@ -3086,6 +3313,9 @@ const products = [{
         brand: "CYP",
         name: "AU-D4 (ADC)",
         price: "499",
+        category: [
+            "A/D Converters",
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -3103,13 +3333,17 @@ const products = [{
         brand: "CYP",
         name: "AU-D2 (OPTICAL <-> COAXIAL)",
         price: "499",
+        category: [
+            "A/D Converters",
+            "D/A Converters"
+        ],
         inputs: [
-            "COAXIAL",
-            "OPTICAL"
+            "COAXIAL IN",
+            "OPTICAL IN"
         ],
         outputs: [
-            "OPTICAL",
-            "COAXIAL"
+            "OPTICAL OUT",
+            "COAXIAL OUT"
         ],
         sku: "CYPAUD2",
         image: [
@@ -3120,6 +3354,10 @@ const products = [{
         brand: "DALI",
         name: "KORE",
         price: "669998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3132,6 +3370,10 @@ const products = [{
         brand: "DALI",
         name: "Epikore 11",
         price: "325998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3144,6 +3386,10 @@ const products = [{
         brand: "DALI",
         name: "Epikore 9",
         price: "219998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3156,6 +3402,10 @@ const products = [{
         brand: "DALI",
         name: "Epikore 7",
         price: "149998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3168,6 +3418,10 @@ const products = [{
         brand: "DALI",
         name: "Epikore 3",
         price: "73998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3180,6 +3434,10 @@ const products = [{
         brand: "DALI",
         name: "Epicon 8",
         price: "133998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3192,6 +3450,10 @@ const products = [{
         brand: "DALI",
         name: "Epicon 6",
         price: "88998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3204,6 +3466,10 @@ const products = [{
         brand: "DALI",
         name: "Epicon 2",
         price: "44998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3230,6 +3496,10 @@ const products = [{
         brand: "DALI",
         name: "Rubikore 8",
         price: "51998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3242,6 +3512,10 @@ const products = [{
         brand: "DALI",
         name: "Rubikore 6",
         price: "36998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3254,6 +3528,10 @@ const products = [{
         brand: "DALI",
         name: "Rubikore 2",
         price: "18998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3304,6 +3582,10 @@ const products = [{
         brand: "DALI",
         name: "Rubicon 6",
         price: "32998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3342,6 +3624,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom CI AMP-2500 DSP",
         price: "16499",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "GPIO",
             "COAXIAL",
@@ -3365,6 +3650,9 @@ const products = [{
         brand: "DALI",
         name: "Phantom CI AMP-4750 DSP",
         price: "31499",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "GPIO",
             "COAXIAL IN",
@@ -3662,6 +3950,10 @@ const products = [{
         brand: "DALI",
         name: "Menuet SE",
         price: "12598",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3742,6 +4034,10 @@ const products = [{
         brand: "DALI",
         name: "Menuet",
         price: "9698",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3754,6 +4050,10 @@ const products = [{
         brand: "DALI",
         name: "Fazon Mikro",
         price: "3298",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3793,6 +4093,10 @@ const products = [{
         brand: "DALI",
         name: "Opticon 8",
         price: "26998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3805,6 +4109,14 @@ const products = [{
         brand: "DALI",
         name: "Opticon 6",
         price: "14998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3817,6 +4129,10 @@ const products = [{
         brand: "DALI",
         name: "Opticon 2",
         price: "8998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3829,6 +4145,10 @@ const products = [{
         brand: "DALI",
         name: "Opticon 1 mk2",
         price: "6698",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3864,6 +4184,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon 9",
         price: "15998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3876,6 +4200,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon 7",
         price: "8998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3888,6 +4216,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon 5",
         price: "5998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3901,6 +4233,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon 3",
         price: "3998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3913,6 +4249,10 @@ const products = [{
         brand: "DALI",
         name: "Oberon 1",
         price: "2998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -3976,6 +4316,10 @@ const products = [{
         brand: "DALI",
         name: "Spektor 2",
         price: "2198",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4065,6 +4409,10 @@ const products = [{
         brand: "DALI ",
         name: "Alteco C-1",
         price: "3398",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -4095,8 +4443,573 @@ const products = [{
     },
     {
         brand: "Denon",
+        name: "AVR-S970H",
+        price: "7199",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "LINE OUT 1",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRS970H",
+        image: [
+            "https://images.hifiklubben.com/image/88d181e5-d5a0-4dbd-94a3-3ba530290c9a",
+            "https://images.hifiklubben.com/image/d288072b-6f85-45d1-a414-4bd786cb821d"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-S670H",
+        price: "4999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND"
+        ],
+        sku: "DENAVRS670H",
+        image: [
+            "https://images.hifiklubben.com/image/6a50dba1-22fc-4cd3-800f-ce986e26558b",
+            "https://images.hifiklubben.com/image/2208a63d-48cd-41ba-b988-f7edee5aaac1"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-S770H",
+        price: "5999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRS770H",
+        image: [
+            "https://images.hifiklubben.com/image/55e2e9fe-1c48-4b4a-9ab8-390c001bdd6c",
+            "https://images.hifiklubben.com/image/3dd13e1c-5c18-4367-9d63-1829c825295a"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-X2800H",
+        price: "4990",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "LINE OUT 1",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRX2800H",
+        image: [
+            "https://images.hifiklubben.com/image/d401e04d-be01-4cdc-a779-7718474f909d",
+            "https://images.hifiklubben.com/image/2a226659-a483-4ae4-971d-2bfc447395a4"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-X2800H DAB",
+        price: "8998",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "LINE OUT 1",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRX2800HDAB",
+        image: [
+            "https://images.hifiklubben.com/image/d5b7a518-cd5d-4782-80fe-58f97e22ec75",
+            "https://images.hifiklubben.com/image/6a5432c8-a967-4780-8883-ffc3583e06cb"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-X1800H",
+        price: "4999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRX1800H",
+        image: [
+            "https://images.hifiklubben.com/image/7427d356-8a75-47b8-8baf-823ed29f12ab",
+            "https://images.hifiklubben.com/image/1131a10f-89cd-4837-bac2-9a64539323ec"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-X1800HDAB",
+        price: "5499",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK"
+        ],
+        sku: "DENAVRX1800HDAB",
+        image: [
+            "https://images.hifiklubben.com/image/77dad96d-c8c6-4c99-86f7-cee12997b603",
+            "https://images.hifiklubben.com/image/e923746a-fa76-4471-9ced-f828a3371053"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVC-X3800H",
+        price: "7695",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "PHONO IN",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1 OUT",
+            "PRE OUT HEIGHT 2 OUT",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "TRIGGER OUT"
+        ],
+        sku: "DENAVCX3800H",
+        image: [
+            "https://images.hifiklubben.com/image/f56a1d1f-de1f-4cde-be9f-f7a278d6fbcb",
+            "https://images.hifiklubben.com/image/670e0fba-063e-4892-9cdc-f1e237ef056b"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVC-X4800H",
+        price: "13499",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "PHONO IN",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN 1",
+            "VIDEO IN 2",
+            "COMPOSITE IN"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1 OUT",
+            "PRE OUT HEIGHT 2 OUT",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2",
+            "TRIGGER OUT 3",
+        ],
+        sku: "DENAVCX4800H",
+        image: [
+            "https://images.hifiklubben.com/image/f53be595-3026-43b1-b404-53d7674dc7de",
+            "https://images.hifiklubben.com/image/c1cbe5b9-e16c-4ee6-a1ef-49e4d8dc8b83"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVC-6800H",
+        price: "25999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN",
+            "COMPOSITE IN",
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "PRE OUT HEIGHT 3",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "SPEAKERS OUT HEIGHT 3",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2",
+            "TRIGGER OUT 3"
+        ],
+        sku: "DENAVCX6800H",
+        image: [
+            "https://images.hifiklubben.com/image/65c16ccb-88f6-4535-ad3e-cf8e02ed8c67",
+            "https://images.hifiklubben.com/image/46f08c98-024a-4351-bdc5-b54980bdd578"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVC-A10H",
+        price: "33999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "LINE IN 7",
+            "BALANCED IN 1",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN",
+            "COMPOSITE IN",
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "PRE OUT HEIGHT 3",
+            "PRE OUT HEIGHT 4",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "SPEAKERS OUT HEIGHT 3",
+            "SPEAKERS OUT HEIGHT 4",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2"
+        ],
+        sku: "DENAVCA10H",
+        image: [
+            "https://images.hifiklubben.com/image/3ceab4bd-cf27-4593-9dcb-f66ce7c0b3dc",
+            "https://images.hifiklubben.com/image/669cc7b6-9b0e-484b-ad73-3dfd9188bc70"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVC-A1H",
+        price: "51999",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "BALANCED IN 1",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN",
+            "COMPOSITE IN",
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "PRE OUT HEIGHT 3",
+            "PRE OUT HEIGHT 4",
+            "PRE OUT CENTER",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SUBWOOFER BAL OUT 1",
+            "SUBWOOFER BAL OUT 2",
+            "SUBWOOFER BAL OUT 3",
+            "SUBWOOFER BAL OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "SPEAKERS OUT HEIGHT 3",
+            "SPEAKERS OUT HEIGHT 4",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2"
+        ],
+        sku: "DENAVCA1H",
+        image: [
+            "https://images.hifiklubben.com/image/ae2f9645-6f2b-45c1-bf19-7bc02b0c69cd",
+            "https://images.hifiklubben.com/image/27dc3a17-4e57-4487-9729-e731ade4d506"
+        ]
+    },
+    {
+        brand: "Denon",
+        name: "AVR-X580BT",
+        price: "2699",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+        ],
+        outputs: [
+            "HDMI OUT 1",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND"
+        ],
+        sku: "DENAVRX580BT",
+        image: [
+            "https://images.hifiklubben.com/image/8e8a696c-0229-48ea-bc51-a634d2b6e023",
+            "https://images.hifiklubben.com/image/a0285252-b3cc-48d8-823a-1570a6d2bc6c"
+        ]
+    },
+    {
+        brand: "Denon",
         name: "PMA-3000NE",
         price: "25999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "PHONO",
             "EXT. PRE",
@@ -4124,6 +5037,9 @@ const products = [{
         brand: "Denon",
         name: "DCD-3000NE",
         price: "18499",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "LINE OUT",
             "OPTICAL",
@@ -4139,6 +5055,9 @@ const products = [{
         brand: "Denon",
         name: "PMA-1700NE",
         price: "13499",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "OPTIXAL 1",
             "OPTICAL 2",
@@ -4166,6 +5085,9 @@ const products = [{
         brand: "Denon",
         name: "DNP-2000NE",
         price: "11899",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "HDMI ARC",
             "USB",
@@ -4187,6 +5109,9 @@ const products = [{
         brand: "Denon",
         name: "DCD-1700NE",
         price: "10999",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "LINE OUT",
             "OPTICAL",
@@ -4202,6 +5127,9 @@ const products = [{
         brand: "Denon",
         name: "PMA-900HNE",
         price: "6499",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "OPTIXAL 1",
             "OPTICAL 2",
@@ -4228,6 +5156,9 @@ const products = [{
         brand: "Denon",
         name: "Home Amp",
         price: "5899",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "LINE IN",
             "HDMI eARC",
@@ -4268,6 +5199,9 @@ const products = [{
         brand: "Denon",
         name: "CEOL RCD-N12DAB",
         price: "4999",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "HDMI ARC",
             "OPTICAL IN 1",
@@ -4289,6 +5223,9 @@ const products = [{
         brand: "Denon",
         name: "DRA-900H",
         price: "4790",
+        category: [
+            "Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -4322,6 +5259,9 @@ const products = [{
         brand: "Denon",
         name: "Heos Link HS2",
         price: "3199",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL IN",
@@ -4362,6 +5302,9 @@ const products = [{
         brand: "Denon",
         name: "PMA-600NE",
         price: "3399",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "COAXIAL",
             "OPTIXAL 1",
@@ -4387,6 +5330,9 @@ const products = [{
         brand: "Denon",
         name: "RCD-M41 DAB",
         price: "3199",
+        category: [
+            "Compact Amplifiers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN 1",
@@ -4407,6 +5353,9 @@ const products = [{
         brand: "Denon",
         name: "RCD-M41",
         price: "2699",
+        category: [
+            "Compact Amplifiers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN 1",
@@ -4427,9 +5376,12 @@ const products = [{
         brand: "Denon",
         name: "DCD-600NE",
         price: "2699",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "LINE OUT",
-            "OPTICAL"
+            "OPTICAL OUT"
         ],
         sku: "DENDCD600NE",
         image: [
@@ -4438,9 +5390,30 @@ const products = [{
         ]
     },
     {
+        brand: "Denon",
+        name: "DCD-900NE",
+        price: "3199",
+        category: [
+            "CD Players"
+        ],
+        outputs: [
+            "LINE OUT",
+            "OPTICAL OUT",
+            "COAXIAL OUT"
+        ],
+        sku: "DENDCD600NE",
+        image: [
+            "https://images.hifiklubben.com/image/58fe5726-ab77-49b4-a48a-b3724090c931",
+            "https://images.hifiklubben.com/image/660891d0-a975-4a51-9da2-c03054ceb2d6"
+        ]
+    },
+    {
         brand: "HEOS By Denon",
         name: "Heos Drive HS2",
         price: "19999",
+        category: [
+            "Multiroom Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -5329,6 +6302,9 @@ const products = [{
         brand: "Hegel",
         name: "H30A",
         price: "133900",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -5350,6 +6326,9 @@ const products = [{
         brand: "Hegel",
         name: "H30",
         price: "94990",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -5367,6 +6346,9 @@ const products = [{
         brand: "Hegel",
         name: "H600",
         price: "84999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "BALANCED IN 1",
             "BALANCED IN 2",
@@ -5394,6 +6376,9 @@ const products = [{
         brand: "Hegel",
         name: "H590",
         price: "79999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "BALANCED IN 1",
             "BALANCED IN 2",
@@ -5423,6 +6408,9 @@ const products = [{
         brand: "Hegel",
         name: "H400",
         price: "49999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "BALANCED IN",
             "LINE IN 1",
@@ -5450,6 +6438,9 @@ const products = [{
         brand: "Hegel",
         name: "P30",
         price: "47999",
+        category: [
+            "Pre Amplifiers"
+        ],
         inputs: [
             "BALANCED IN 1",
             "BALANCED IN 2",
@@ -5474,6 +6465,9 @@ const products = [{
         brand: "Hegel",
         name: "P30A",
         price: "47999",
+        category: [
+            "Pre Amplifiers"
+        ],
         inputs: [
             "BALANCED IN 1",
             "BALANCED IN 2",
@@ -5498,6 +6492,9 @@ const products = [{
         brand: "Hegel",
         name: "H390",
         price: "46999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "BALANCED IN",
             "LINE IN 1",
@@ -5525,6 +6522,9 @@ const products = [{
         brand: "Hegel",
         name: "H20",
         price: "43999",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN"
@@ -5542,6 +6542,9 @@ const products = [{
         brand: "Hegel",
         name: "VIKING",
         price: "33999",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "BALANCED OUT",
             "LINE OUT",
@@ -5557,6 +6560,9 @@ const products = [{
         brand: "Hegel",
         name: "H120",
         price: "17999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -5579,8 +6585,41 @@ const products = [{
     },
     {
         brand: "Hegel",
+        name: "H190V",
+        price: "27499",
+        category: [
+            "Power Amplifiers"
+        ],
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "BALANCED IN 1",
+            "BALANCED IN 2",
+            "COAXIAL",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "OPTICAL 3",
+            "USB"
+        ],
+        outputs: [
+            "LINE OUT (FIXED)",
+            "LINE OUT (VARIABLE)",
+            "SPEAKERS OUT"
+        ],
+        sku: "HEGELH190V",
+        image: [
+            "https://images.hifiklubben.com/image/124e3330-dbdb-4e06-a3c0-700fbb8e83d3",
+            "https://images.hifiklubben.com/image/8276d8ef-3b8b-4bbc-91cd-3ccbe88aebc1"
+        ]
+    },
+    {
+        brand: "Hegel",
         name: "H95",
         price: "12499",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -5604,6 +6643,9 @@ const products = [{
         brand: "Hegel",
         name: "D50 (The Raven)",
         price: "36999",
+        category: [
+            "D/A Converters"
+        ],
         inputs: [
             "AES/EBU",
             "BNC",
@@ -5626,6 +6668,9 @@ const products = [{
         brand: "Hegel",
         name: "C55",
         price: "62999",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -5657,6 +6702,9 @@ const products = [{
         brand: "Hegel",
         name: "C54",
         price: "55499",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -5685,6 +6733,9 @@ const products = [{
         brand: "Hegel",
         name: "C53",
         price: "47999",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -5728,6 +6779,10 @@ const products = [{
         brand: "KEF",
         name: "LS60 WIRELESS",
         price: "34990",
+        category: [
+            "Active Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "HDMI ARC",
             "COAXIAL",
@@ -5986,6 +7041,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "MXA-8400",
         price: "66999",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "BALANCED IN 1",
             "BALANCED IN 2",
@@ -6026,6 +7084,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "TDAI-3400",
         price: "41999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -6064,6 +7125,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "CD-2",
         price: "21999",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "LINE OUT",
             "BALANCED OUT",
@@ -6080,6 +7144,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "SDA-2400",
         price: "21999",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "LINE IN",
             "BALANCED IN",
@@ -6101,6 +7168,9 @@ const products = [{
         brand: "Lyngdorf",
         name: "TDAI-1120",
         price: "14499",
+        category: [
+            "Compact Amplifiers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN",
@@ -6139,6 +7209,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "Cue-100",
         price: "159998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6177,6 +7251,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "FR-2",
         price: "28998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6241,6 +7319,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "CS-1",
         price: "9998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6254,6 +7336,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "CS-2",
         price: "9998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6323,6 +7409,10 @@ const products = [{
         brand: "Lyngdorf",
         name: "MH-3 GABRIEL",
         price: "3499",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6334,8 +7424,330 @@ const products = [{
     },
     {
         brand: "Marantz",
+        name: "Cinema 50",
+        price: "13990",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "PHONO IN",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1 OUT",
+            "PRE OUT HEIGHT 2 OUT",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "TRIGGER OUT"
+        ],
+        sku: "MARACINEMA50",
+        image: [
+            "https://images.hifiklubben.com/image/a56d5772-66aa-4287-84ef-5f412f7b66a8",
+            "https://images.hifiklubben.com/image/18f32e49-1aac-41eb-a09d-546041d86e3e"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "Cinema 60",
+        price: "9475",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "TRIGGER OUT"
+        ],
+        sku: "MARACINEMA60",
+        image: [
+            "https://images.hifiklubben.com/image/40bd0a09-e96f-4584-b384-681a957cb21a",
+            "https://images.hifiklubben.com/image/c7711c3c-41ee-4022-9e2b-694123f39da8"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "Cinema 60 DAB",
+        price: "9975",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "TRIGGER OUT"
+        ],
+        sku: "MARACINEMA60DAB",
+        image: [
+            "https://images.hifiklubben.com/image/e1735c21-536c-418f-83a8-746d7d8590ca",
+            "https://images.hifiklubben.com/image/c8e8effd-83f4-4487-9411-4717f179992b"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "Cinema 40",
+        price: "19990",
+        inputs: [
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "PHONO IN",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN",
+            "COMPOSITE IN",
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "TRIGGER OUT"
+        ],
+        sku: "MARACINEMA40",
+        image: [
+            "https://images.hifiklubben.com/image/51cab2f3-fb2f-492f-a3db-e6f46ed9d064",
+            "https://images.hifiklubben.com/image/520b1038-7530-475c-8026-cd6209b2c4e8"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "Cinema 30",
+        price: "31260",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7",
+            "VIDEO IN",
+            "COMPOSITE IN",
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "PRE OUT HEIGHT 3",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SPEAKERS OUT FRONT",
+            "SPEAKERS OUT C",
+            "SPEAKERS OUT SURROUND",
+            "SPEAKERS OUT SURROUND BACK",
+            "SPEAKERS OUT HEIGHT 1",
+            "SPEAKERS OUT HEIGHT 2",
+            "SPEAKERS OUT HEIGHT 3",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2",
+            "TRIGGER OUT 3"
+        ],
+        sku: "MARACINEMA30",
+        image: [
+            "https://images.hifiklubben.com/image/b12a611e-3f80-40cb-b904-ed5cfbdfa35a",
+            "https://images.hifiklubben.com/image/b8759a82-aa9f-4b55-8c33-5fe5698c061d"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "AV 10",
+        price: "49990",
+        inputs: [
+            "PHONO IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "LINE IN 3",
+            "LINE IN 4",
+            "LINE IN 5",
+            "LINE IN 6",
+            "BALANCED IN 1",
+            "COAXIAL IN 1",
+            "COAXIAL IN 2",
+            "OPTICAL 1",
+            "OPTICAL 2",
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3",
+            "HDMI IN 4",
+            "HDMI IN 5",
+            "HDMI IN 6",
+            "HDMI IN 7"
+        ],
+        outputs: [
+            "ZONE 2 OUT",
+            "ZONE 3 OUT",
+            "PRE OUT FRONT",
+            "PRE OUT CENTER",
+            "PRE OUT SURROUND",
+            "PRE OUT SURROUND BACK",
+            "PRE OUT HEIGHT 1",
+            "PRE OUT HEIGHT 2",
+            "PRE OUT HEIGHT 3",
+            "PRE OUT HEIGHT 4",
+            "PRE OUT FRONT BAL",
+            "PRE OUT CENTER BAL",
+            "PRE OUT SURROUND BAL",
+            "PRE OUT SURROUND BACK BAL",
+            "PRE OUT HEIGHT 1 BAL",
+            "PRE OUT HEIGHT 2 BAL",
+            "PRE OUT HEIGHT 3 BAL",
+            "PRE OUT HEIGHT 4 BAL",
+            "HDMI OUT 1",
+            "HDMI OUT 2",
+            "HDMI OUT 3",
+            "SUBWOOFER OUT 1",
+            "SUBWOOFER OUT 2",
+            "SUBWOOFER OUT 3",
+            "SUBWOOFER OUT 4",
+            "SUBWOOFER OUT 1 BAL",
+            "SUBWOOFER OUT 2 BAL",
+            "SUBWOOFER OUT 3 BAL",
+            "SUBWOOFER OUT 4 BAL",
+            "TRIGGER OUT 1",
+            "TRIGGER OUT 2",
+            "AMP CONTROL 1",
+            "AMP CONTROL 2"
+        ],
+        sku: "MARAAV10",
+        image: [
+            "https://images.hifiklubben.com/image/ddfa7cfd-38ca-439d-aabe-478415d8d1bd",
+            "https://images.hifiklubben.com/image/3daa9ce0-8c5d-461c-89be-0c2ad46355b0"
+        ]
+    },
+    {
+        brand: "Marantz",
         name: "AMP 10",
         price: "49990",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -6400,6 +7812,9 @@ const products = [{
         brand: "Marantz",
         name: "SACD 30N",
         price: "22490",
+        category: [
+            "CD Players"
+        ],
         inputs: [
             "USB",
             "COAXIAL",
@@ -6422,6 +7837,9 @@ const products = [{
         brand: "Marantz",
         name: "MODEL 30",
         price: "21660",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "PHONO",
             "CD",
@@ -6446,6 +7864,9 @@ const products = [{
         brand: "Marantz",
         name: "MODEL 40N",
         price: "16990",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "PHONO",
             "LINE IN 1",
@@ -6465,6 +7886,34 @@ const products = [{
         image: [
             "https://images.hifiklubben.com/image/ccc20232-7eb0-4bdb-86de-39e09f4f3ccf",
             "https://images.hifiklubben.com/image/44fb6e09-d01f-42f8-86fd-8ec2412e638f"
+        ]
+    },
+    {
+        brand: "Marantz",
+        name: "MODEL 50",
+        price: "13490",
+        category: [
+            "Integrated Amplifiers"
+        ],
+        inputs: [
+            "PHONO",
+            "CD IN",
+            "LINE IN 1",
+            "LINE IN 2",
+            "RECORDER",
+            "POWER AMP IN"
+        ],
+        outputs: [
+            "PRE OUT",
+            "SUBW OUT",
+            "RECORDER OUT",
+            "SPEAKERS A OUT",
+            "SPEAKERS B OUT"
+        ],
+        sku: "MARAMODEL50",
+        image: [
+            "https://images.hifiklubben.com/image/2d03ec9f-57b1-4c0e-af75-9e888b689785",
+            "https://images.hifiklubben.com/image/e25defb3-ee1d-4493-bb0a-4628c8d8cf81"
         ]
     },
     {
@@ -6496,6 +7945,9 @@ const products = [{
         brand: "Marantz",
         name: "CD 50N",
         price: "13490",
+        category: [
+            "CD Players"
+        ],
         inputs: [
             "HDMI ARC",
             "USB",
@@ -6518,6 +7970,9 @@ const products = [{
         brand: "Marantz",
         name: "MODEL 60N",
         price: "10999",
+        category: [
+            "Amplifiers with Streaming"
+        ],
         inputs: [
             "CD",
             "LINE IN 1",
@@ -6541,6 +7996,9 @@ const products = [{
         brand: "Marantz",
         name: "MODEL M1",
         price: "7449",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "LINE IN",
             "HDMI eARC",
@@ -6560,6 +8018,9 @@ const products = [{
         brand: "Marantz",
         name: "Stereo 70S",
         price: "6995",
+        category: [
+            "Recievers"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN 1",
@@ -6592,6 +8053,9 @@ const products = [{
         brand: "Marantz",
         name: "CD 60",
         price: "6927",
+        category: [
+            "CD Players"
+        ],
         outputs: [
             "LINE OUT",
             "COAXIAL OUT",
@@ -6609,6 +8073,9 @@ const products = [{
         brand: "Marantz",
         name: "MODEL M4",
         price: "25995",
+        category: [
+            "Multiroom Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "LINE IN 2",
@@ -6653,6 +8120,10 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Sourcepoint 888",
         price: "44990",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6666,6 +8137,10 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Sourcepoint 10",
         price: "29998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6679,6 +8154,10 @@ const products = [{
         brand: "MoFi Electronics",
         name: "Sourcepoint 8",
         price: "16998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -6790,6 +8269,9 @@ const products = [{
         brand: "NAD",
         name: "M66",
         price: "44999",
+        category: [
+            "Pre Amplifiers"
+        ],
         inputs: [
             "PHONO (MM)",
             "PHONO (MC)",
@@ -6829,6 +8311,9 @@ const products = [{
         brand: "NAD",
         name: "M33",
         price: "39999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "COAXIAL IN 1",
             "COAXIAL IN 2",
@@ -6855,6 +8340,9 @@ const products = [{
         brand: "NAD",
         name: "M28",
         price: "44999",
+        category: [
+            "Multi-Channel Amplifiers"
+        ],
         inputs: [
             "LINE IN 1",
             "BALANCED IN 1",
@@ -6937,6 +8425,9 @@ const products = [{
         brand: "NAD",
         name: "C298",
         price: "17999",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "XLR L/R",
             "LINE IN",
@@ -6957,6 +8448,9 @@ const products = [{
         brand: "NAD",
         name: "M23",
         price: "17999",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "XLR L/R",
             "LINE IN",
@@ -6975,6 +8469,9 @@ const products = [{
         brand: "NAD",
         name: "M10 V3",
         price: "17998",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "PHONO IN",
             "LINE IN",
@@ -6998,6 +8495,10 @@ const products = [{
         brand: "NAD",
         name: "C399",
         price: "16399",
+        category: [
+            "Integrated Amplifiers",
+            "Amplifiers with Streaming"
+        ],
         inputs: [
             "HDMI eARC",
             "OPTICAL IN 1",
@@ -7024,6 +8525,9 @@ const products = [{
         brand: "NAD",
         name: "C658",
         price: "15999",
+        category: [
+            "Pre Amplifiers"
+        ],
         inputs: [
             "OPTICAL IN 1",
             "OPTICAL IN 2",
@@ -7082,6 +8586,10 @@ const products = [{
         brand: "NAD",
         name: "C389",
         price: "11399",
+        category: [
+            "Integrated Amplifiers",
+            "Amplifiers with Streaming"
+        ],
         inputs: [
             "HDMI eARC",
             "OPTICAL IN 1",
@@ -7109,6 +8617,10 @@ const products = [{
         brand: "NAD",
         name: "C3050",
         price: "10999",
+        category: [
+            "Integrated Amplifiers",
+            "Amplifiers with Streaming"
+        ],
         inputs: [
             "HDMI eARC",
             "OPTICAL IN",
@@ -7131,8 +8643,11 @@ const products = [{
     },
     {
         brand: "NAD",
-        name: "C700",
-        price: "9999",
+        name: "C 700 V2",
+        price: "10999",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "ANALOG IN 1",
             "ANALOG IN 2",
@@ -7156,6 +8671,10 @@ const products = [{
         brand: "NAD",
         name: "C379",
         price: "8999",
+        category: [
+            "Integrated Amplifiers",
+            "Amplifiers with Streaming"
+        ],
         inputs: [
             "HDMI eARC",
             "OPTICAL IN 1",
@@ -7183,6 +8702,9 @@ const products = [{
         brand: "NAD",
         name: "C268",
         price: "7499",
+        category: [
+            "Power Amplifiers"
+        ],
         inputs: [
             "XLR L/R",
             "LINE IN",
@@ -7203,6 +8725,9 @@ const products = [{
         brand: "NAD",
         name: "C338",
         price: "4999",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "OPTICAL IN 1",
             "OPTICAL IN 2",
@@ -7226,6 +8751,9 @@ const products = [{
         brand: "NAD",
         name: "C328",
         price: "4499",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "OPTICAL IN 1",
             "OPTICAL IN 2",
@@ -7249,6 +8777,9 @@ const products = [{
         brand: "NAD",
         name: "D3020 V2",
         price: "3699",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "PHONO",
             "AUX",
@@ -7271,6 +8802,9 @@ const products = [{
         brand: "NAD",
         name: "C538",
         price: "2999",
+        category: [
+            "CD Players"
+        ],
         inputs: [
             "OPTICAL",
             "COAXIAL"
@@ -7288,6 +8822,9 @@ const products = [{
         brand: "NAD",
         name: "C316 V2",
         price: "2699",
+        category: [
+            "Integrated Amplifiers"
+        ],
         inputs: [
             "PHONO IN",
             "CD",
@@ -7308,6 +8845,9 @@ const products = [{
         brand: "NAD",
         name: "CS1",
         price: "2599",
+        category: [
+            "Streamers"
+        ],
         outputs: [
             "COAXIAL",
             "OPTICAL",
@@ -7323,6 +8863,9 @@ const products = [{
         brand: "NAD",
         name: "CI720 V2",
         price: "7999",
+        category: [
+            "Multiroom Amplifiers"
+        ],
         inputs: [
             "ANALOG IN",
             "OPTICAL IN"
@@ -7339,8 +8882,11 @@ const products = [{
     },
     {
         brand: "NAD",
-        name: "CI538 V2",
+        name: "CI580 V2",
         price: "13499",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "LINE IN",
             "OPTICAL IN",
@@ -7361,7 +8907,7 @@ const products = [{
             "COAXIAL OUT 4",
             "TRIGGER OUT"
         ],
-        sku: "NADCI538V2",
+        sku: "NADCI580V2",
         image: [
             "https://images.hifiklubben.com/image/66c95291-7ec5-4bcb-b7e1-6b0e0013e0ae",
             "https://nadelectronics.com/wp-content/uploads/2016/09/NAD-CI-580-Rear-1.jpg"
@@ -7371,6 +8917,9 @@ const products = [{
         brand: "NAD",
         name: "CI 980",
         price: "10999",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "GLOBAL IN",
             "LINE IN 1",
@@ -7404,6 +8953,9 @@ const products = [{
         brand: "NAD",
         name: "CI 16-60 DSP",
         price: "23999",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "GLOBAL IN",
             "LINE IN 1",
@@ -7453,6 +9005,9 @@ const products = [{
         brand: "NAD",
         name: "CI 8-150 DSP",
         price: "33999",
+        category: [
+            "Power Amplifiers CI"
+        ],
         inputs: [
             "GLOBAL IN 1",
             "GLOBAL IN 2",
@@ -7706,7 +9261,7 @@ const products = [{
     },
     {
         brand: "Peripherals",
-        name: "PLADESPILLER",
+        name: "TURNTABLE",
         price: "0",
         outputs: [
             "PHONO OUT",
@@ -7750,6 +9305,10 @@ const products = [{
         brand: "Radiant Acoustics",
         name: "Clarity 6.2",
         price: "29998",
+        category: [
+            "Passive Speakers",
+            "Compact Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -7763,6 +9322,9 @@ const products = [{
         brand: "Sennheiser",
         name: "HDV 820",
         price: "19499",
+        category: [
+            "Headphone Amplifiers",
+        ],
         inputs: [
             "USB",
             "OPTICAL",
@@ -7895,6 +9457,9 @@ const products = [{
         brand: "Sonos",
         name: "Amp",
         price: "5748",
+        category: [
+            "Compact Amplifiers with Streaming"
+        ],
         inputs: [
             "LINE IN",
             "HDMI-CEC/ARC"
@@ -7912,6 +9477,9 @@ const products = [{
         brand: "Sonos",
         name: "Port",
         price: "3399",
+        category: [
+            "Streamers"
+        ],
         inputs: [
             "LINE IN"
         ],
@@ -8212,6 +9780,9 @@ const products = [{
         brand: "AudioQuest",
         name: "Dragonfly Cobalt",
         price: "1499",
+        category: [
+            "Headphone Amplifiers"
+        ],
         inputs: [
             "USB"
         ],
@@ -8293,6 +9864,10 @@ const products = [{
         brand: "Vestlyd",
         name: "V15C",
         price: "13998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
@@ -8305,6 +9880,10 @@ const products = [{
         brand: "Vestlyd",
         name: "V12C",
         price: "9998",
+        category: [
+            "Passive Speakers",
+            "Floorstanding Speakers"
+        ],
         inputs: [
             "SPEAKER IN"
         ],
