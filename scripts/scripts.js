@@ -1122,6 +1122,7 @@ function loadProducts() {
                 product.name + " " +
                 product.brand + " " +
                 product.sku + " " +
+                product.category + " " +
                 (product.inputs || []).join(" ") + " " +
                 (product.outputs || []).join(" ")
             ).toLowerCase();
@@ -1212,6 +1213,7 @@ function loadProducts() {
                 product.name + " " +
                 product.brand + " " +
                 product.sku + " " +
+                product.category + " " +
                 (product.inputs || []).join(" ") + " " +
                 (product.outputs || []).join(" ")
             ).toLowerCase();

@@ -472,6 +472,9 @@ const products = [{
         brand: "Argon Audio",
         name: "RADIO2i MK2",
         price: "1899",
+        category: [
+            "Radios"
+        ],
         inputs: [
             "AUX IN"
         ],
