@@ -11,28 +11,24 @@
     --hifi-black: #333333;
     --hifi-white: #FAFAFF;
     transition: fill 0.3, background-color 0.3s, color 0.3s, border-color 0.3;
-
     --background-gradient: #8e9eab;
     /* fallback for old browsers */
     --background-gradient: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
     /* Chrome 10-25, Safari 5.1-6 */
     --background-gradient: linear-gradient(to right, #eef2f3, #8e9eab);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     --background-gradient4: #606c88;
     /* fallback for old browsers */
     --background-gradient4: -webkit-linear-gradient(to right, #332320, #9D726A);
     /* Chrome 10-25, Safari 5.1-6 */
     --background-gradient4: linear-gradient(to right, #332320, #9D726A);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     --background-gradient3: #485563;
     /* fallback for old browsers */
     --background-gradient3: -webkit-linear-gradient(to right, #282828, #222222);
     /* Chrome 10-25, Safari 5.1-6 */
     --background-gradient3: linear-gradient(to right, #282828, #222222);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     --background-gradient2: #abbaab;
     /* fallback for old browsers */
     --background-gradient2: -webkit-linear-gradient(to right, #ffffff, #8a8a8a);
@@ -46,7 +42,9 @@
     --hifi-white: #333333;
 }
 
+
 /* Toggle Switch Styles */
+
 .switch {
     position: relative;
     display: inline-block;
@@ -114,7 +112,9 @@ input:checked+.slider:hover {
     background-color: var(--primary-color);
 }
 
+
 /* Rounded sliders */
+
 .slider.round {
     border-radius: 0px;
 }
@@ -166,31 +166,24 @@ input:checked+.slider:hover {
     0% {
         transform: translateY(0px);
     }
-
     20% {
         transform: translateY(0px);
     }
-
     30% {
         transform: translateY(0px);
     }
-
     80% {
         transform: translateY(0px);
     }
-
     85% {
         transform: translateY(-5px);
     }
-
     90% {
         transform: translateY(0px);
     }
-
     95% {
         transform: translateY(-5px);
     }
-
     100% {
         transform: translateY(0px);
     }
@@ -211,7 +204,9 @@ input:checked+.slider:hover {
     transform: scale(0.97);
 }
 
+
 /* Optional: Style for the container */
+
 .toggle-container,
 #export-btn,
 #add-text-btn {
@@ -242,7 +237,9 @@ input:checked+.slider:hover {
     transform: translate(-50%, -50%) scale(0.95);
 }
 
+
 /* Optional: style the SVG so that it inherits currentColor */
+
 svg {
     width: 32px;
     height: 32px;
@@ -274,17 +271,17 @@ body::-webkit-scrollbar {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
 }
 
+
 /* Canvas Container fills the whole window */
+
 #canvas-container {
     position: absolute;
     top: 0;
@@ -300,7 +297,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
 /* Virtual canvas (increased size) */
+
 #canvas-content {
     position: relative;
     width: 19200px;
@@ -315,16 +314,16 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-        linear-gradient(0deg, var(--hifi-black) 1px, transparent 0.1px),
-        linear-gradient(90deg, var(--hifi-black) 1px, transparent 0.1px);
+    background-image: linear-gradient(0deg, var(--hifi-black) 1px, transparent 0.1px), linear-gradient(90deg, var(--hifi-black) 1px, transparent 0.1px);
     background-size: 10px 10px;
     opacity: 0.05;
     /* Adjust as needed */
     z-index: -1;
 }
 
+
 /* Floating Product List (collapsible) */
+
 #floating-product-list {
     position: fixed;
     top: 2.5vh;
@@ -378,7 +377,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
 /* Filters and product items */
+
 #filter-container input,
 #filter-container select {
     width: 100%;
@@ -473,7 +474,9 @@ body::-webkit-scrollbar {
     transition: transform 0.3s ease;
 }
 
+
 /* Trash Zone */
+
 #delete-zone {
     position: absolute;
     top: 88%;
@@ -515,7 +518,9 @@ button {
     /* Makes it clear the button is clickable */
 }
 
+
 /* Export Button */
+
 #export-btn:hover,
 #add-text-btn:hover {
     background: var(--primary-color);
@@ -598,7 +603,9 @@ button {
     outline: none;
 }
 
+
 /* Canvas Items (Cards) */
+
 .canvas-item {
     position: absolute;
     cursor: move;
@@ -706,7 +713,9 @@ button {
     top: -2px;
 }
 
+
 /* Connection Layer */
+
 #connection-layer {
     position: absolute;
     top: 0;
@@ -740,7 +749,9 @@ button {
     z-index: 100;
 }
 
+
 /* Floating Price Panel – using fixed so it “floats” over the viewport */
+
 #price-panel {
     position: fixed;
     bottom: 8vh;
@@ -753,6 +764,7 @@ button {
     max-width: 300px;
     z-index: 1000;
     color: var(--hifi-black);
+    display: none;
 }
 
 #price-panel h3 {
@@ -786,7 +798,6 @@ button {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -797,17 +808,17 @@ button {
     0% {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.02);
     }
-
     100% {
         transform: scale(1);
     }
 }
 
+
 /* Edit Product Modal Styles */
+
 #edit-product-modal {
     display: none;
     position: fixed;
@@ -863,7 +874,9 @@ button {
     --os-handle-bg: #222222;
 }
 
+
 /* Main container styling */
+
 .canvas-item.text-item {
     position: absolute;
     resize: both;
@@ -877,7 +890,9 @@ button {
     z-index: 2000;
 }
 
+
 /* Drag handle styling */
+
 .drag-handle {
     background: var(--hifi-white);
     padding: 8px;
@@ -900,13 +915,17 @@ button {
     font-weight: 50;
 }
 
+
 /* Text area styling */
+
 .text-content {
     padding: 10px;
     cursor: text;
 }
 
+
 /* Optional: Style editable elements on focus */
+
 .text-content [contenteditable="true"]:focus {
     outline: 1px dashed #222222;
 }
