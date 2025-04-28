@@ -446,6 +446,16 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const btn = document.getElementById("toggle-price-panel-btn");
+    const panel = document.getElementById("price-panel");
+
+    // verify they both exist
+    console.log({ btn, panel });
+
+    btn.addEventListener("click", () => {
+        panel.classList.toggle("hidden");
+    });
+
     canvasContainer.addEventListener("click", function(e) {
         // Check if the clicked element is not inside a contentEditable element.
         if (!e.target.closest('[contenteditable="true"]')) {
@@ -456,8 +466,16 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+
     document.getElementById("add-text-btn").addEventListener("click", createTextCanvasItem);
 });
+
+function togglePricePanel() {
+    const pricePanel = document.getElementById("price-panel");
+    pricePanel.classList.toggle("hidden");
+    console.log("Yuss");
+}
 
 let isDrawing = false;
 let selectedOutput = null;

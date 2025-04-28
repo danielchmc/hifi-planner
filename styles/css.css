@@ -209,7 +209,8 @@ input:checked+.slider:hover {
 
 .toggle-container,
 #export-btn,
-#add-text-btn {
+#add-text-btn,
+#toggle-price-panel-btn {
     position: absolute;
     top: 0vh;
     right: 0vh;
@@ -232,7 +233,8 @@ input:checked+.slider:hover {
 
 .toggle-container:active,
 #export-btn:active,
-#add-text-btn:active {
+#add-text-btn:active,
+#toggle-price-panel-btn:active {
     background-color: var(--primary-color);
     transform: translate(-50%, -50%) scale(0.95);
 }
@@ -522,21 +524,28 @@ button {
 /* Export Button */
 
 #export-btn:hover,
-#add-text-btn:hover {
+#add-text-btn:hover,
+#toggle-price-panel-btn:hover {
     background: var(--primary-color);
 }
 
 #export-btn:active,
-#add-text-btn:active {
+#add-text-btn:active,
+#toggle-price-panel-btn:active {
     transform-origin: center;
     box-shadow: rgba(0, 0, 0, 1);
     transform: translate(-50%, -50%) scale(0.95);
 }
 
 #export-btn svg,
-#add-text-btn svg {
+#add-text-btn svg,
+#toggle-price-panel-btn svg {
     width: 50%;
     height: 50%;
+}
+
+#price-panel.hidden {
+    display: none !important;
 }
 
 .button-16 {
@@ -764,7 +773,6 @@ button {
     max-width: 300px;
     z-index: 1000;
     color: var(--hifi-black);
-    display: none;
 }
 
 #price-panel h3 {
