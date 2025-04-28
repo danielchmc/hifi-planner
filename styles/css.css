@@ -538,10 +538,14 @@ button {
 }
 
 #export-btn svg,
-#add-text-btn svg,
-#toggle-price-panel-btn svg {
+#add-text-btn svg {
     width: 50%;
     height: 50%;
+}
+
+.toggle-price-panel-btn svg {
+    width: 80%;
+    height: 80%;
 }
 
 #price-panel.hidden {
