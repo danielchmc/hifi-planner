@@ -504,12 +504,6 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-#delete-zone svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
 button {
     all: unset;
     /* Removes all default styling */
@@ -567,10 +561,14 @@ button {
 }
 
 #export-btn svg,
-#add-text-btn svg,
-#help-toggle-btn svg {
+#add-text-btn svg {
     width: 50%;
     height: 50%;
+}
+
+#help-toggle-btn svg {
+    width: 38%;
+    height: 38%;
 }
 
 .toggle-price-panel-btn svg {

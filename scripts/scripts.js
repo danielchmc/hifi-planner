@@ -1152,6 +1152,7 @@ function loadProducts() {
             ).toLowerCase();
 
             const matchesSearch = searchWords.every(word => combinedData.includes(word));
+
             if (!matchesSearch) {
                 childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
                 continue;
@@ -1243,6 +1244,7 @@ function loadProducts() {
             ).toLowerCase();
 
             const matchesSearch = searchWords.every(word => combinedData.includes(word));
+
             if (!matchesSearch) continue;
             if (selectedBrand && product.brand !== selectedBrand) continue;
 
