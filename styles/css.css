@@ -322,9 +322,6 @@ body::-webkit-scrollbar {
     z-index: -1;
 }
 
-
-/* Floating Product List (collapsible) */
-
 #floating-product-list {
     position: fixed;
     top: 2.5vh;
