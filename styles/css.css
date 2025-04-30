@@ -210,7 +210,8 @@ input:checked+.slider:hover {
 .toggle-container,
 #export-btn,
 #add-text-btn,
-#toggle-price-panel-btn {
+#toggle-price-panel-btn,
+#help-toggle-btn {
     position: absolute;
     top: 0vh;
     right: 0vh;
@@ -234,13 +235,11 @@ input:checked+.slider:hover {
 .toggle-container:active,
 #export-btn:active,
 #add-text-btn:active,
-#toggle-price-panel-btn:active {
+#toggle-price-panel-btn:active,
+#help-toggle-btn:active {
     background-color: var(--primary-color);
     transform: translate(-50%, -50%) scale(0.95);
 }
-
-
-/* Optional: style the SVG so that it inherits currentColor */
 
 svg {
     width: 32px;
@@ -525,27 +524,58 @@ button {
 
 #export-btn:hover,
 #add-text-btn:hover,
-#toggle-price-panel-btn:hover {
+#toggle-price-panel-btn:hover,
+#help-toggle-btn:hover {
     background: var(--primary-color);
 }
 
 #export-btn:active,
 #add-text-btn:active,
-#toggle-price-panel-btn:active {
+#toggle-price-panel-btn:active,
+#help-toggle-btn:active {
     transform-origin: center;
     box-shadow: rgba(0, 0, 0, 1);
     transform: translate(-50%, -50%) scale(0.95);
 }
 
+#help-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#help-content ul li {
+    margin-bottom: 6px;
+    font-weight: normal;
+}
+
+#help-content summary {
+    font-weight: normal;
+}
+
+#help-content li {
+    font-weight: normal;
+}
+
+#help-content summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#help-content details ul {
+    padding-left: 20px;
+}
+
 #export-btn svg,
-#add-text-btn svg {
+#add-text-btn svg,
+#help-toggle-btn svg {
     width: 50%;
     height: 50%;
 }
 
 .toggle-price-panel-btn svg {
-    width: 80%;
-    height: 80%;
+    width: 40%;
+    height: 40%;
 }
 
 #price-panel.hidden {

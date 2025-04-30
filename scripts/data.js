@@ -335,7 +335,10 @@ const products = [{
         name: "RADIO2i",
         price: "2199",
         category: [
-            "Radios"
+            "Radios",
+            "Radios with DAB",
+            "Radios with FM",
+            "Internet Radios"
         ],
         inputs: [
             "AUX IN"
@@ -355,7 +358,10 @@ const products = [{
         name: "RADIO3i MK2",
         price: "2199",
         category: [
-            "Radios"
+            "Radios",
+            "Radios with DAB",
+            "Radios with FM",
+            "Internet Radios"
         ],
         inputs: [
             "AUX IN"

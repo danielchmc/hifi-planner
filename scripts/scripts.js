@@ -154,49 +154,27 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    document.getElementById("export-btn").addEventListener("click", function() {
-        // Check if dark mode is currently active.
+    function darkModeToggle(e) {
+        // Check dark mode…
         const wasDarkMode = document.body.classList.contains("dark-mode");
-
-        // Temporarily remove dark mode so that the export uses the light theme.
         if (wasDarkMode) {
             document.body.classList.remove("dark-mode");
-            // (Optionally update the toggle UI, e.g. uncheck the dark mode toggle)
             document.getElementById("darkModeToggle").checked = false;
         }
 
-        // Clone the price panel and do any additional export preparation…
-        // const pricePanel = document.getElementById("price-panel");
-        // const clonedPanel = pricePanel.cloneNode(true);
-        // const panelRect = pricePanel.getBoundingClientRect();
-        // const canvasContent = document.getElementById("canvas-content");
-        // const canvasContentRect = canvasContent.getBoundingClientRect();
-        // const relativeTop = panelRect.top - canvasContentRect.top;
-        // const relativeLeft = panelRect.left - canvasContentRect.left;
-        // clonedPanel.style.position = "absolute";
-        // clonedPanel.style.top = relativeTop + "px";
-        // clonedPanel.style.left = relativeLeft + "px";
-        // canvasContent.appendChild(clonedPanel);
-
-        // Use html2canvas to export the canvasContainer.
         html2canvas(document.getElementById("canvas-container"), { useCORS: true })
-            .then((canvasExport) => {
-                // Remove the cloned panel after export.
-                clonedPanel.remove();
-
-                // Create a download link for the exported image.
-                let link = document.createElement("a");
-                link.download = "canvas.png";
-                link.href = canvasExport.toDataURL();
-                link.click();
-
-                // Restore dark mode if it was active.
+            .then(canvasExport => {
+                // …export logic…
                 if (wasDarkMode) {
                     document.body.classList.add("dark-mode");
                     document.getElementById("darkModeToggle").checked = true;
                 }
             });
-    });
+    }
+
+    const exportBtn = document.getElementById("export-btn");
+    exportBtn.addEventListener("click", darkModeToggle);
+
 
     // Handle drop events on the canvas container.
     canvasContainer.addEventListener("dragover", (event) => {
@@ -446,15 +424,15 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const btn = document.getElementById("toggle-price-panel-btn");
+    const toggle_price_btn = document.getElementById("toggle-price-panel-btn");
     const panel = document.getElementById("price-panel");
+    panel.classList.add("hidden");
 
-    // verify they both exist
-    console.log({ btn, panel });
-
-    btn.addEventListener("click", () => {
+    toggle_price_btn.addEventListener("click", () => {
         panel.classList.toggle("hidden");
     });
+
+    panel.classList.add("hidden");
 
     canvasContainer.addEventListener("click", function(e) {
         // Check if the clicked element is not inside a contentEditable element.
@@ -476,6 +454,29 @@ function togglePricePanel() {
     pricePanel.classList.toggle("hidden");
     console.log("Yuss");
 }
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        // Your code here – for instance:
+        cancelConnection();
+    }
+
+    if (e.key === "F1") {
+        e.preventDefault();
+        darkModeToggle();
+    }
+
+    if (e.key === "F3") {
+        e.preventDefault();
+        togglePricePanel();
+    }
+
+    if (e.key === "F4") {
+        e.preventDefault(); // stop browser help panel
+        exportBtn.click(); // trigger the click handler
+        console.log(exportBtn);
+    }
+});
 
 let isDrawing = false;
 let selectedOutput = null;
@@ -532,6 +533,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const helpBtn = document.getElementById("help-toggle-btn");
+    const helpPanel = document.getElementById("help-content");
+
+    if (helpPanel) {
+        helpBtn.addEventListener("click", () => {
+            const isVisible = helpPanel.style.display === "block";
+            helpPanel.style.display = isVisible ? "none" : "block";
+        });
+    }
+});
+
 
 
 /**
@@ -900,14 +914,6 @@ function cancelConnection() {
 }
 
 
-
-document.addEventListener("keydown", function(e) {
-    if (e.key === "Escape") {
-        // Your code here – for instance:
-        cancelConnection();
-    }
-});
-// --- End Connection Drawing ---
 
 // Helper to compute the cable image’s position along the connection.
 function getCableImagePosition(start, end, offset) {
@@ -1663,4 +1669,9 @@ window.addEventListener("load", () => {
 document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('dark-mode');
     document.getElementById('darkModeToggle').checked = true;
+    OverlayScrollbars(document.getElementById("help-content"), {
+        scrollbars: {
+            theme: "os-theme-dark"
+        }
+    });
 });
