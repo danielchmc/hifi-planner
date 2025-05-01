@@ -40,7 +40,17 @@ XLR L/R -> BAL IN L/R
         <div id="price-panel">
             <h3>Items & Prices</h3>
             <ul id="price-list"></ul>
-            <p>Priserne er vejledende</p>
+            <p>Priser gælder til: <span id="date"></span></p>
+
+            <script>
+                const today = new Date();
+                const month = today.getMonth() + 1; // months start from 0
+                const day = today.getDate();
+                const year = today.getFullYear();
+
+                const formattedDate = `${day}/${month}/${year}`;
+                document.getElementById('date').textContent = formattedDate;
+            </script>
             <div id="total-price">Total: 0,-</div>
         </div>
         <button id="scrollBtn" onclick="scrollToTop()"> <!-- penis -->
@@ -145,6 +155,8 @@ XLR L/R -> BAL IN L/R
             <h3 style="margin-top: 0;">Help</h3>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc84cmZgNr_lxXG7VqGd6xRD4UWbcvBiuaOobcauY2_yj3aMA/viewform?usp=dialog" target="_blank" style="text-decoration: none; color: #007BFF;">Feedback</a>
             <ul>
+                <li>Akut Support: Tlf. 30686303</li>
+                <hr>
                 <li>Drag & drop products from the list onto the canvas.</li>
                 <hr>
                 <li>Click the card's image to see the backside.</li>
@@ -159,7 +171,8 @@ XLR L/R -> BAL IN L/R
                 <hr>
                 <li>Use the "Add Text" button to insert notes onto the canvas.</li>
                 <hr>
-                <li>Click the "Export" button to save your design as an image. <span style="color: red;">Not supported yet!</span></li>
+                <li>Click the "Export" button to save your design as an image. </li>
+                <li><span style="color: red;">Not supported yet!</span><span style="color: green;"> Use Print Screen</span></li>
                 <hr>
                 <li>Use the "Dark Mode" toggle to switch between light and dark mode.</li>
                 <hr>

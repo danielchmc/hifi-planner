@@ -344,7 +344,7 @@ window.addEventListener("DOMContentLoaded", () => {
         html2canvas(canvasContainer, { useCORS: true }).then((canvasExport) => {
             clonedPanel.remove();
             let link = document.createElement("a");
-            link.download = "canvas.png";
+            link.download = "HiFi Planner.png";
             link.href = canvasExport.toDataURL();
             link.click();
         });

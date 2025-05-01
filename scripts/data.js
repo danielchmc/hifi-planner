@@ -5751,7 +5751,8 @@ const products = [{
         name: "RCD-M41 DAB",
         price: "3199",
         category: [
-            "Compact Amplifiers"
+            "Compact Amplifiers",
+            "Amplifiers with CD"
         ],
         inputs: [
             "ANALOG IN",
@@ -5774,7 +5775,8 @@ const products = [{
         name: "RCD-M41",
         price: "2699",
         category: [
-            "Compact Amplifiers"
+            "Compact Amplifiers",
+            "Amplifiers with CD"
         ],
         inputs: [
             "ANALOG IN",
@@ -10583,6 +10585,33 @@ const products = [{
         sku: "STEINWAY-MODEL-D",
         image: [
             "https://images.hifiklubben.com/image/c09b3d41-7e46-4f09-b63b-50b9a0656388"
+        ]
+    },
+    {
+        brand: "Samsung",
+        name: "S95F",
+        price: "19999",
+        category: [
+            "TV",
+            "OLED"
+        ],
+        inputs: [
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3 (eARC)",
+            "HDMI IN 4"
+        ],
+        outputs: [
+            "HDMI IN 1",
+            "HDMI IN 2",
+            "HDMI IN 3 (eARC)",
+            "HDMI IN 4",
+            "OPTICAL OUT"
+        ],
+        sku: "SAMTQ55S95F",
+        image: [
+            "https://images.hifiklubben.com/image/cab0aa06-297f-47d7-8c31-f32be3bb0f65",
+            "https://images.hifiklubben.com/image/15986964-16a9-4f63-abcc-a2f27dc6afe6"
         ]
     },
     {
