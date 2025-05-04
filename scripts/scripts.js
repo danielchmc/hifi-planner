@@ -154,26 +154,8 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    function darkModeToggle(e) {
-        // Check dark mode…
-        const wasDarkMode = document.body.classList.contains("dark-mode");
-        if (wasDarkMode) {
-            document.body.classList.remove("dark-mode");
-            document.getElementById("darkModeToggle").checked = false;
-        }
-
-        html2canvas(document.getElementById("canvas-container"), { useCORS: false })
-            .then(canvasExport => {
-                // …export logic…
-                if (wasDarkMode) {
-                    document.body.classList.add("dark-mode");
-                    document.getElementById("darkModeToggle").checked = true;
-                }
-            });
-    }
-
     const exportBtn = document.getElementById("export-btn");
-    exportBtn.addEventListener("click", darkModeToggle);
+    //exportBtn.addEventListener("click", darkModeToggle);
 
 
     // Handle drop events on the canvas container.
