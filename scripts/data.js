@@ -10087,6 +10087,32 @@ const products = [{
         "images/samsung-qn70f-back.jpg"
     ]
 }, {
+    brand: "Samsung",
+    name: "QN90F",
+    price: "19999",
+    category: [
+        "TV",
+        "QLED"
+    ],
+    inputs: [
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3 (eARC)",
+        "HDMI IN 4"
+    ],
+    outputs: [
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3 (eARC)",
+        "HDMI IN 4",
+        "OPTICAL OUT"
+    ],
+    sku: "SAMTQ55QN90F",
+    image: [
+        "images/samsung-qn90f-front.jpg",
+        "images/samsung-qn90f-back.jpg"
+    ]
+}, {
     brand: "Vestlyd",
     name: "V15C",
     price: "13998",

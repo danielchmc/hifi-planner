@@ -5,6 +5,7 @@
     --hover-color: #EAEBE8;
     --secondary-color: #14BDEB;
     --bg-color: #CFE0C3;
+    --canvas-bg: var(--hifi-white);
     --panel-bg: #FFFFFF;
     --border-color: #D8DBE2;
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -40,6 +41,7 @@
 .dark-mode {
     --hifi-black: #FAFAFF;
     --hifi-white: #333333;
+    --canvas-bg: var(--hifi-white);
 }
 
 
@@ -291,6 +293,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     overflow: auto;
     cursor: grab;
+    background-color: var(--hifi-white);
     background-size: 10px 10px;
 }
 
