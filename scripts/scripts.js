@@ -162,7 +162,7 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementById("darkModeToggle").checked = false;
         }
 
-        html2canvas(document.getElementById("canvas-container"), { useCORS: true })
+        html2canvas(document.getElementById("canvas-container"), { useCORS: false })
             .then(canvasExport => {
                 // …export logic…
                 if (wasDarkMode) {
@@ -341,7 +341,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Append the clone to canvasContent so it gets captured.
         canvasContent.appendChild(clonedPanel);
 
-        html2canvas(canvasContainer, { useCORS: true }).then((canvasExport) => {
+        html2canvas(canvasContainer, { useCORS: false }).then((canvasExport) => {
             clonedPanel.remove();
             let link = document.createElement("a");
             link.download = "HiFi Planner.png";
