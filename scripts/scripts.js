@@ -306,6 +306,9 @@ window.addEventListener("DOMContentLoaded", () => {
     // Because the price panel is fixed (floating), it won't be captured when exporting canvasContainer.
     // So before export, we clone the price panel into the canvasContent as an absolutely positioned element.
     document.getElementById("export-btn").addEventListener("click", function() {
+        const bg = getComputedStyle(canvasContainer).backgroundColor;
+        canvasContainer.style.backgroundColor = bg;
+
         // Disable animations
         const canvasItems = document.querySelectorAll(".canvas-item");
         canvasItems.forEach(item => item.style.animation = "none");
@@ -323,13 +326,15 @@ window.addEventListener("DOMContentLoaded", () => {
         // Append the clone to canvasContent so it gets captured.
         canvasContent.appendChild(clonedPanel);
 
-        html2canvas(canvasContainer, { useCORS: false }).then((canvasExport) => {
-            clonedPanel.remove();
-            let link = document.createElement("a");
-            link.download = "HiFi Planner.png";
-            link.href = canvasExport.toDataURL();
-            link.click();
-        });
+        html2canvas(canvasContainer, { useCORS: false, backgroundColor: null })
+            .then(canvasExport => {
+                canvasContainer.style.backgroundColor = "";
+                clonedPanel.remove();
+                let link = document.createElement("a");
+                link.download = "HiFi Planner.png";
+                link.href = canvasExport.toDataURL();
+                link.click();
+            });
     });
 
     canvasContainer.addEventListener("wheel", function(e) {
