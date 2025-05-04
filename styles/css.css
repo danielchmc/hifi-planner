@@ -298,6 +298,64 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#login-overlay {
+    position: fixed;
+    inset: 0;
+    /* cover the whole viewport */
+    background: rgba(255, 255, 255, .6);
+    /* hazy white */
+    backdrop-filter: blur(8px);
+    /* make whatever is behind blurry */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    /* stay on top of everything */
+}
+
+
+/* card keeps 16:9 ratio; grows/shrinks with viewport */
+
+#login-card {
+    aspect-ratio: 16/9;
+    width: 60vmin;
+    /* roughly 60% of smaller viewport dim */
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .15);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#login-card input {
+    width: 70%;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: .5rem;
+}
+
+#login-card button {
+    padding: .6rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: .5rem;
+    background: #111;
+    color: #fff;
+}
+
+#error {
+    color: #d40000;
+    font-size: .9rem;
+    min-height: 1.2rem;
+}
+
 
 /* Virtual canvas (increased size) */
 

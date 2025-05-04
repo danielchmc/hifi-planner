@@ -1371,9 +1371,7 @@ function loadProducts() {
         }
     });
     renderProductList();
-    searchInput.focus();
-}
-
+};
 
 function dragStart(event) {
     event.dataTransfer.setData("index", event.target.dataset.index);
@@ -1676,4 +1674,41 @@ document.addEventListener('DOMContentLoaded', function() {
             theme: "os-theme-dark"
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    /* ===== configuration ===== */
+    const VALID_USERNAMES = [
+        "442",
+        "440",
+        "441",
+        "admin"
+    ];
+    /* ===== DOM refs ===== */
+    const overlay = document.getElementById("login-overlay");
+    const input = document.getElementById("username");
+    const btn = document.getElementById("submit-btn");
+    const errorBox = document.getElementById("error");
+
+    /* ===== logic ===== */
+    function unlockSite() {
+        // remove the overlay node so nothing underneath is blocked
+        overlay.remove();
+        const searchInput = document.getElementById("search-input");
+        if (searchInput) searchInput.focus(); // caret jumps now
+    }
+
+    function checkLogin() {
+        const val = input.value.trim(); // what the visitor typed
+        if (VALID_USERNAMES.includes(val)) { // ✅ is it one of ours?
+            unlockSite();
+        } else {
+            errorBox.textContent = "Wrong username.";
+            input.focus();
+        }
+    }
+
+    /* ===== wire events ===== */
+    btn.addEventListener("click", checkLogin);
+    input.addEventListener("keydown", e => { if (e.key === "Enter") checkLogin(); });
 });
