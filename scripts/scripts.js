@@ -1667,8 +1667,6 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ===== configuration ===== */
     const VALID_USERNAMES = [
         "442",
-        "440",
-        "441",
         "admin"
     ];
     /* ===== DOM refs ===== */
