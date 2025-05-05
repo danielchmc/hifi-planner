@@ -16,6 +16,13 @@ let deleteZone;
 let priceListEl;
 let totalPriceEl;
 
+const GRID_SIZE = 10; // keep in sync with CSS background‑size
+function snap(val) {
+    return Math.round(val / GRID_SIZE) * GRID_SIZE;
+}
+
+const roundTo10 = v => Math.ceil(v / GRID_SIZE) * GRID_SIZE; // size ↑
+
 async function fetchProducts() {
     const body = {
         facets: {
@@ -163,11 +170,28 @@ window.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
     });
 
+    const MIN_CARD_W = 200; // don’t go smaller than the old fixed size
+    function getCardWidth(product) {
+        const GRID = GRID_SIZE; // same 10 px you already use for snapping
+        const labels = [...(product.inputs || []), ...(product.outputs || [])];
+
+        // quick‑n‑dirty text width estimate: 7 px per character at 10 px font
+        const maxLabelPx = Math.max(0, ...labels.map(txt => txt.length * 5));
+
+        // two columns of labels + a little breathing room in the middle
+        const raw = maxLabelPx * 2 + 20; // 60 = 12 px dot + gaps etc.
+
+        // respect minimum, then round up to nearest grid step
+        return Math.ceil(Math.max(MIN_CARD_W, raw) / GRID) * GRID;
+    }
+
     canvasContainer.addEventListener("drop", (event) => {
         event.preventDefault();
         let index = event.dataTransfer.getData("index");
         let product = products[index];
         let container = document.createElement("div");
+        const cardW = getCardWidth(product); // << NEW
+        container.style.width = cardW + "px"; // << NEW
         container.className = "canvas-item";
         container.dataset.cardId = cardIdCounter++;
         container.draggable = true;
@@ -195,6 +219,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Create the content of the canvas item.
         let img = document.createElement("img");
+        img.style.width = (cardW - 20) + "px"; // accounts for the 10 px padding left & right
+
 
         if (Array.isArray(product.image) && product.image.length > 0) {
             // Set the initial image source
@@ -289,13 +315,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // Append the container first to the DOM so that offsetWidth/offsetHeight are available.
         canvasContent.appendChild(container);
+        container.style.height = roundTo10(container.offsetHeight) + "px";
 
         // Get the drop coordinates.
         const coords = getContentCoordinates(event);
 
         // Adjust the position to center the element at the cursor.
-        container.style.left = (coords.x - container.offsetWidth / 2) + "px";
-        container.style.top = (coords.y - container.offsetHeight / 2) + "px";
+        container.style.left = snap(coords.x - container.offsetWidth / 2) + "px";
+        container.style.top = snap(coords.y - container.offsetHeight / 2) + "px";
 
         // Update the price panel.
         addedItems.push({ id: container.dataset.cardId, name: product.name, price: parseFloat(product.price) });
@@ -1391,8 +1418,11 @@ function dragMouseDown(event) {
 
     function moveElement(e) {
         const newCoords = getContentCoordinates(e);
-        element.style.left = (newCoords.x - offsetX) + "px";
-        element.style.top = (newCoords.y - offsetY) + "px";
+
+        // Snap the tentative x/y to the grid before applying them
+        element.style.left = snap(newCoords.x - offsetX) + "px";
+        element.style.top = snap(newCoords.y - offsetY) + "px";
+
         updateConnections();
     }
 
