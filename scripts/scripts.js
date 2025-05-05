@@ -1688,7 +1688,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (VALID_USERNAMES.includes(val)) { // ✅ is it one of ours?
             unlockSite();
         } else {
-            errorBox.textContent = "Wrong username.";
+            errorBox.textContent = "Invalid.";
             input.focus();
         }
     }
