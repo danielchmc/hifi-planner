@@ -325,37 +325,66 @@ body::-webkit-scrollbar {
 /* card keeps 16:9 ratio; grows/shrinks with viewport */
 
 #login-card {
-    aspect-ratio: 16/9;
+    height: 30vmin;
+    overflow: auto;
     width: 60vmin;
     /* roughly 60% of smaller viewport dim */
     background: #fff;
     border-radius: 1rem;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .15);
-    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0rem;
     justify-content: center;
+    display: flex;
     align-items: center;
     text-align: center;
 }
 
+#login-card img {
+    width: 60%;
+    vertical-align: middle;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#alignment {
+    width: 60%;
+    display: flex;
+    overflow: hidden;
+    border: #ddd solid 1px;
+}
+
+#submit-btn svg {
+    transition: transform 0.2s ease-in-out;
+    /* what → how fast → easing */
+}
+
+#submit-btn svg:hover {
+    transform: translateX(4px);
+}
+
 #login-card input {
-    width: 70%;
-    padding: .6rem 1rem;
+    border: none;
+    width: auto;
+    padding: 0.6rem;
     font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: .5rem;
+    flex: 1 1 auto;
+    outline: none;
+    min-width: 0;
 }
 
 #login-card button {
-    padding: .6rem 2rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
+    min-width: 0;
+    flex: 0 0 auto;
     cursor: pointer;
-    border: 0;
-    border-radius: .5rem;
-    background: #111;
+    border: none;
+    background: #fff;
     color: #fff;
+    border-left: 1px solid #fff;
+    /* optional separator */
 }
 
 #error {
