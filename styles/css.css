@@ -248,6 +248,11 @@ svg {
     height: 32px;
 }
 
+svg.logo {
+    width: 200px;
+    height: 40px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -863,6 +868,39 @@ button {
     max-width: 300px;
     z-index: 1000;
     color: var(--hifi-black);
+}
+
+#logo {
+    position: fixed;
+    bottom: 4vh;
+    right: 2vh;
+    background: 37373b;
+    color: black;
+    border: 0px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300px;
+    z-index: 1000;
+    color: var(--hifi-black);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: GroteskSemi23;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/semibold23/SharpGroteskSmBold23.eot);
+    src: local("Sharp Grotesk SmBold 23"), url(../fonts/semibold23/SharpGroteskSmBold23.eot?#iefix) format("embedded-opentype"), url(../fonts/semibold23/SharpGroteskSmBold23.woff2) format("woff2"), url(../fonts/semibold23/SharpGroteskSmBold23.woff) format("woff"), url(../fonts/semibold23/SharpGroteskSmBold23.ttf) format("truetype")
+}
+
+h1 {
+    font-family: GroteskSemi23, sans-serif;
+    font-feature-settings: "clig" off, "liga" off;
+    font-weight: 400;
+    hyphens: auto;
+    line-height: inherit;
+    text-transform: uppercase;
+    vertical-align: bottom
 }
 
 #price-panel h3 {
