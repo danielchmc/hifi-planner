@@ -10,7 +10,8 @@
     --border-color: #c0c1c6;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --hifi-black: #333333;
-    --hifi-white: #FAFAFF;
+    --hifi-white2: #FAFAFF;
+    --hifi-white: #efeff3e6;
     transition: fill 0.3, background-color 0.3s, color 0.3s, border-color 0.3;
     --background-gradient: #8e9eab;
     /* fallback for old browsers */
@@ -744,25 +745,26 @@ button {
     cursor: move;
     background: var(--panel-bg);
     border: 1px solid var(--border-color);
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 0px;
+    padding-bottom: 10px;
     min-width: 200px;
-    box-shadow: 0 2px 10px var(--shadow-color);
-    transition: box-shadow 2s ease, transform 0.2s ease, scale 0.05;
+    box-shadow: 0 1px 3px var(--shadow-color);
+    transition: border-color 0.1s ease, transform 0.2s ease;
     animation: fadeInUp 0.4s ease, box-shadow 2s ease;
-    ;
     z-index: 1900;
 }
 
 .canvas-item:hover {
-    box-shadow: 0 2px 5px var(--shadow-color);
+    border-color: #747474;
     /*transform: translateY(0px);*/
     z-index: 1900;
 }
 
 .canvas-item-click {
-    transform: scale(0.99);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: var(--hifi-black);
+    border-width: 1px;
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
     transition: transform 0.05s ease, box-shadow 0.1s ease;
 }
 
@@ -772,6 +774,9 @@ button {
     object-fit: contain;
     border-radius: 0;
     margin-bottom: 0;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
     z-index: 3000;
 }
 

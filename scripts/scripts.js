@@ -1684,8 +1684,6 @@ window.addEventListener("load", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('dark-mode');
-    document.getElementById('darkModeToggle').checked = true;
     OverlayScrollbars(document.getElementById("help-content"), {
         scrollbars: {
             theme: "os-theme-dark"
