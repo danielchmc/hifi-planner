@@ -1711,6 +1711,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "421",
         "418",
         "411",
+        "424",
         "admin"
     ];
     /* ===== DOM refs ===== */
