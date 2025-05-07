@@ -1583,7 +1583,12 @@ window.addEventListener("load", () => {
 })
 window.addEventListener("resize", initConnectionLayer);
 
+const roundToGrid = value => Math.ceil(value / GRID_SIZE) * GRID_SIZE;
 
+function snapTextCardSize(el) {
+    el.style.width = roundToGrid(el.offsetWidth) + "px";
+    el.style.height = roundToGrid(el.offsetHeight) + "px";
+}
 
 function createTextCanvasItem() {
     // Create the main container.
@@ -1607,6 +1612,9 @@ function createTextCanvasItem() {
     title.style.margin = "0";
     title.style.outline = "none";
     title.classList.add("placeholder");
+
+    dragHandle.addEventListener("mouseup", () => snapTextCardSize(container));
+    container.addEventListener("mouseup", () => snapTextCardSize(container));
 
     // Add focus and blur events for placeholder behavior.
     title.addEventListener("focus", () => {
@@ -1669,6 +1677,9 @@ function createTextCanvasItem() {
     // Append the container to canvasContent first so we can measure it.
     canvasContent.appendChild(container);
 
+    container.style.width = roundToGrid(container.offsetWidth) + "px";
+    container.style.height = roundToGrid(container.offsetHeight) + "px";
+
     // Compute the center in content coordinates.
     const centerX = (canvasContainer.scrollLeft + (canvasContainer.clientWidth * 1.5) / 2) / zoom;
     const centerY = (canvasContainer.scrollTop + (canvasContainer.clientHeight * 1.5) / 2) / zoom;
@@ -1695,6 +1706,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ===== configuration ===== */
     const VALID_USERNAMES = [
         "442",
+        "422",
         "admin"
     ];
     /* ===== DOM refs ===== */
