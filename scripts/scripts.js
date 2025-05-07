@@ -1707,6 +1707,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const VALID_USERNAMES = [
         "442",
         "422",
+        "415",
         "admin"
     ];
     /* ===== DOM refs ===== */
