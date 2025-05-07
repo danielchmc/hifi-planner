@@ -4,12 +4,12 @@
     /* --primary-color: #EEEEEE;*/
     --hover-color: #EAEBE8;
     --secondary-color: #14BDEB;
-    --bg-color: #CFE0C3;
+    --bg-color: #eeeeee;
     --canvas-bg: var(--hifi-white);
     --panel-bg: #FFFFFF;
     --border-color: #c0c1c6;
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --hifi-black: #333333;
+    --hifi-black: #380e0e;
     --hifi-white2: #FAFAFF;
     --hifi-white: #efeff3e6;
     transition: fill 0.3, background-color 0.3s, color 0.3s, border-color 0.3;
