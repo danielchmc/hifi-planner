@@ -1713,7 +1713,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "411",
         "424",
         "428",
-        "438"
+        "438",
+        "426",
+        "412"
     ];
     /* ===== DOM refs ===== */
     const overlay = document.getElementById("login-overlay");
