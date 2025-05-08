@@ -9,9 +9,10 @@
     --panel-bg: #FFFFFF;
     --border-color: #c0c1c6;
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --hifi-black: #380e0e;
-    --hifi-white2: #FAFAFF;
-    --hifi-white: #efeff3e6;
+    --hifi-black2: #380e0e;
+    --hifi-white: #FAFAFF;
+    --hifi-black: #231f20;
+    --hifi-white2: #efeff3e6;
     transition: fill 0.3, background-color 0.3s, color 0.3s, border-color 0.3;
     --background-gradient: #8e9eab;
     /* fallback for old browsers */

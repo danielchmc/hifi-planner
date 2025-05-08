@@ -16,6 +16,8 @@ Categories
         D/A Converters
         A/D Converters
         Headphone Amplifiers
+        Wireless Adapters
+        Peripherals
     Radios
         Radios
         Radios with DAB

@@ -8762,8 +8762,8 @@ const products = [{
         "Compact Amplifiers with Streaming"
     ],
     inputs: [
-        "ANALOG IN 1",
-        "ANALOG IN 2",
+        "PHONO IN",
+        "LINE IN",
         "COAXIAL IN",
         "OPTICAL IN",
         "HDMI eARC"
@@ -8774,7 +8774,7 @@ const products = [{
         "SUBW OUT 1",
         "SPEAKER OUT"
     ],
-    sku: "NADC700",
+    sku: "NADC700V2",
     image: [
         "images/nad-c-700-v2-front.jpg",
         "images/nad-c-700-v2-back.jpg"
