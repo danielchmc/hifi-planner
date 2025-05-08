@@ -8757,7 +8757,7 @@ const products = [{
 }, {
     brand: "NAD",
     name: "C 700 V2",
-    price: "10999",
+    price: "11999",
     category: [
         "Compact Amplifiers with Streaming"
     ],
