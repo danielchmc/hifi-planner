@@ -8438,8 +8438,7 @@ const products = [{
         "OPTICAL IN 1",
         "OPTICAL IN 2",
         "AES/EBU IN",
-        "XLR IN L",
-        "XLR IN R",
+        "XLR IN",
         "PHONO IN",
         "SE IN",
         "TRIGGER IN"
