@@ -8912,12 +8912,10 @@ const products = [{
     category: [
         "CD Players"
     ],
-    inputs: [
+    outputs: [
+        "LINE OUT",
         "OPTICAL",
         "COAXIAL"
-    ],
-    outputs: [
-        "LINE OUT"
     ],
     sku: "NADC538",
     image: [
