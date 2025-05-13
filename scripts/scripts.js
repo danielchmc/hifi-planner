@@ -22,6 +22,7 @@ function snap(val) {
 }
 
 const roundTo10 = v => Math.ceil(v / GRID_SIZE) * GRID_SIZE; // size ↑
+const rootStyles = getComputedStyle(document.documentElement);
 
 async function fetchProducts() {
     const body = {
@@ -151,7 +152,7 @@ window.addEventListener("DOMContentLoaded", () => {
     priceListEl = document.getElementById("price-list");
     totalPriceEl = document.getElementById("total-price");
 
-    canvasContent.addEventListener("click", function(e) {
+    canvasContent.addEventListener("click", function (e) {
         if (isDrawing && (e.target === canvasContent || e.target === connectionLayer)) {
             endConnection(e);
             e.stopPropagation();
@@ -160,6 +161,7 @@ window.addEventListener("DOMContentLoaded", () => {
             cancelConnection();
         }
     });
+
 
     const exportBtn = document.getElementById("export-btn");
     //exportBtn.addEventListener("click", darkModeToggle);
@@ -176,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const labels = [...(product.inputs || []), ...(product.outputs || [])];
 
         // quick‑n‑dirty text width estimate: 7 px per character at 10 px font
-        const maxLabelPx = Math.max(0, ...labels.map(txt => txt.length * 5));
+        const maxLabelPx = Math.max(0, ...labels.map(txt => txt.length * 7.5));
 
         // two columns of labels + a little breathing room in the middle
         const raw = maxLabelPx * 2 + 20; // 60 = 12 px dot + gaps etc.
@@ -192,13 +194,23 @@ window.addEventListener("DOMContentLoaded", () => {
         let container = document.createElement("div");
         const cardW = getCardWidth(product); // << NEW
         container.style.width = cardW + "px"; // << NEW
+        container.dataset.normalW = cardW;         // <―― add
+        // if you also want to restore the full height later:
+        container.dataset.normalH = roundTo10(container.offsetHeight);
         container.className = "canvas-item";
         container.dataset.cardId = cardIdCounter++;
         container.draggable = true;
+        container.dataset.productIndex = index;
         container.addEventListener("mousedown", dragMouseDown);
 
+        if (document.body.classList.contains("ci-mode")) {
+            const img = parseInt(rootStyles.getPropertyValue("--ci-img-size")) || 60;
+            container.style.width = img + 8 + "px";
+            container.style.height = "";          // let it hug the picture
+        }
+
         // When creating a canvas item in the drop event listener:
-        container.addEventListener("mousedown", function(e) {
+        container.addEventListener("mousedown", function (e) {
             // Only add the effect if the target isn't an I/O dot or its label.
             if (!e.target.closest(".io-dot") && !e.target.closest(".io-label") && !e.target.closest(".canvas-item img")) {
                 container.classList.add("canvas-item-click");
@@ -206,12 +218,12 @@ window.addEventListener("DOMContentLoaded", () => {
         });
 
         // Remove the effect when the mouse is released.
-        container.addEventListener("mouseup", function(e) {
+        container.addEventListener("mouseup", function (e) {
             container.classList.remove("canvas-item-click");
         });
 
         //Add double-click event to delete the card with animation.
-        container.addEventListener("dblclick", function(e) {
+        container.addEventListener("dblclick", function (e) {
             // Prevent interfering with dragging.
             e.stopPropagation();
             animateRemoveCanvasItem(container);
@@ -220,6 +232,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Create the content of the canvas item.
         let img = document.createElement("img");
         img.style.width = (cardW - 20) + "px"; // accounts for the 10 px padding left & right
+
 
 
         if (Array.isArray(product.image) && product.image.length > 0) {
@@ -237,14 +250,14 @@ window.addEventListener("DOMContentLoaded", () => {
             const DRAG_THRESHOLD = 0.5; // pixels
 
             // On mousedown, record the start position
-            img.addEventListener("mousedown", function(event) {
+            img.addEventListener("mousedown", function (event) {
                 startX = event.clientX;
                 startY = event.clientY;
                 wasDragged = false;
             });
 
             // On mouseup, check if the pointer moved beyond the threshold
-            img.addEventListener("mouseup", function(event) {
+            img.addEventListener("mouseup", function (event) {
                 let dx = Math.abs(event.clientX - startX);
                 let dy = Math.abs(event.clientY - startY);
                 if (dx < DRAG_THRESHOLD || dy < DRAG_THRESHOLD) {
@@ -253,7 +266,7 @@ window.addEventListener("DOMContentLoaded", () => {
             });
 
             // On click, only toggle if there was no significant dragging
-            img.addEventListener("click", function(event) {
+            img.addEventListener("click", function (event) {
                 // Stop propagation if needed
                 event.stopPropagation();
                 // If the image was dragged, do not toggle
@@ -270,7 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
         img.src = product.image[0];
         img.array = product.image;
         img.currentIndex = 0;
-        img.addEventListener("click", function(event) {
+        img.addEventListener("click", function (event) {
             event.stopPropagation();
             let arr = img.array;
             let idx = img.currentIndex;
@@ -302,7 +315,7 @@ window.addEventListener("DOMContentLoaded", () => {
         ioContainer.appendChild(outputsContainer);
         container.appendChild(ioContainer);
 
-        container.addEventListener("click", function(e) {
+        container.addEventListener("click", function (e) {
             // If the click came from an I/O dot or its label, do nothing.
             if (e.target.closest(".io-dot") || e.target.closest(".io-label")) { /*Penis*/
                 return;
@@ -332,7 +345,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // Export functionality.
     // Because the price panel is fixed (floating), it won't be captured when exporting canvasContainer.
     // So before export, we clone the price panel into the canvasContent as an absolutely positioned element.
-    document.getElementById("export-btn").addEventListener("click", function() {
+    document.getElementById("export-btn").addEventListener("click", function () {
         const bg = getComputedStyle(canvasContainer).backgroundColor;
         canvasContainer.style.backgroundColor = bg;
 
@@ -364,7 +377,7 @@ window.addEventListener("DOMContentLoaded", () => {
             });
     });
 
-    canvasContainer.addEventListener("wheel", function(e) {
+    canvasContainer.addEventListener("wheel", function (e) {
         const now = Date.now();
         if (now - lastWheelTime < throttleDelay) {
             e.preventDefault();
@@ -405,7 +418,7 @@ window.addEventListener("DOMContentLoaded", () => {
         updateConnections();
     });
 
-    canvasContainer.addEventListener("mousedown", function(e) {
+    canvasContainer.addEventListener("mousedown", function (e) {
         if (!e.target.closest(".canvas-item")) {
             isPanning = true;
             panStartX = e.clientX;
@@ -420,19 +433,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Toggle collapse for floating product list.
     const floatingHeader = floatingProductList.querySelector("header");
-    floatingHeader.addEventListener("click", function() {
+    floatingHeader.addEventListener("click", function () {
 
         const btn = document.getElementById("scrollBtn");
         if (floatingProductList.classList.contains("collapsed")) {
             floatingProductList.classList.remove("collapsed");
             floatingProductList.style.height = "";
             floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25B2;";
-            btn.style.display = "block";
             // Optionally, re-check scroll position to show the button if needed.
-            //btn.style.display = scrollEl.scrollTop > 20 ? "block" : "none";
+            btn.style.display = scrollEl.scrollTop > 20 ? "block" : "none";
         } else {
             floatingProductList.classList.add("collapsed");
-            floatingProductList.style.height = "40px";
+            floatingProductList.style.height = "10px";
             floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25BC;";
             btn.style.display = "none";
         }
@@ -448,7 +460,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     panel.classList.add("hidden");
 
-    canvasContainer.addEventListener("click", function(e) {
+    canvasContainer.addEventListener("click", function (e) {
         // Check if the clicked element is not inside a contentEditable element.
         if (!e.target.closest('[contenteditable="true"]')) {
             // If an editable element is focused, remove focus.
@@ -469,7 +481,7 @@ function togglePricePanel() {
     console.log("Yuss");
 }
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
         // Your code here – for instance:
         cancelConnection();
@@ -508,13 +520,9 @@ const wireColors = [
     "#FF7F00", // Orange
     "#8B00FF", // Violet
     "#A52A2A", // Brown
-    "#000000", // Black
-    "#FFFFFF", // White
     "#00FFFF", // Cyan
     "#FFC0CB", // Pink
-    "#808080", // Gray
     "#FFD700", // Gold
-    "#C0C0C0", // Silver
     "#8B4513", // SaddleBrown
     "#228B22", // ForestGreen
     "#DC143C", // Crimson
@@ -536,10 +544,10 @@ function getNextRandomColor() {
     return color;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-    darkModeToggle.addEventListener('change', function() {
+    darkModeToggle.addEventListener('change', function () {
         if (this.checked) {
             document.body.classList.add('dark-mode');
         } else {
@@ -548,7 +556,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const helpBtn = document.getElementById("help-toggle-btn");
     const helpPanel = document.getElementById("help-content");
 
@@ -578,6 +586,12 @@ function calculateManhattanPath(start, end, offset = 0) {
 
 
 // Create an I/O dot.
+/*function createIODot(ioType, label, connType=""){
+    const dot = document.createElement("div");
+    dot.className = "io-dot " + (ioType === "input" ? "input-dot" : "output-dot");
+    dot.dataset.type     = ioType;     // input / output
+    dot.dataset.label    = label;      // "HDMI ARC"
+    dot.dataset.connType = connType;   // "HDMI", "RCA", …*/
 function createIODot(type, label) {
     const dot = document.createElement("div");
     dot.className = `io-dot ${type}-dot`;
@@ -707,7 +721,7 @@ function endConnection(event) {
         const randomColor = getNextRandomColor();
         connection.style.stroke = randomColor;
         connectionLayer.appendChild(connection);
-        connection.addEventListener("click", function(e) {
+        connection.addEventListener("click", function (e) {
             e.stopPropagation();
             // Find the connection object corresponding to this SVG element.
             const connObj = connections.find(conn => conn.element === connection);
@@ -747,7 +761,7 @@ function openCableSelectionModal(connObj) {
     });
 
     // Close modal when clicking on the overlay (but not on its content)
-    modal.addEventListener("click", function(event) {
+    modal.addEventListener("click", function (event) {
         if (event.target === modal) {
             document.body.removeChild(modal);
         }
@@ -865,7 +879,7 @@ function openCableSelectionModal(connObj) {
                         cursor: "pointer"
                     });
                     cableItem.textContent = `${cable.brand} - ${cable.name} - ${cable.price},-`;
-                    cableItem.addEventListener("click", function() {
+                    cableItem.addEventListener("click", function () {
                         // When the cable is selected, attach it to the connection.
                         connObj.cable = cable;
                         updateConnections();
@@ -897,7 +911,7 @@ function openCableSelectionModal(connObj) {
     cancelButton.classList.add("button-16");
     cancelButton.textContent = "Cancel";
     cancelButton.style.marginTop = "10px";
-    cancelButton.addEventListener("click", function() {
+    cancelButton.addEventListener("click", function () {
         document.body.removeChild(modal);
     });
     modalContent.appendChild(cancelButton);
@@ -1026,24 +1040,27 @@ function loadProducts() {
     searchContainer.style.backgroundColor = "white";
     searchContainer.style.alignContent = "center";
     searchContainer.style.display = "flex";
+    searchContainer.style.flexDirection = "column";
     searchContainer.style.justifyContent = "center";
     searchContainer.style.alignItems = "center";
-    searchContainer.style.marginTop = "0vh";
+    searchContainer.style.marginTop = ".5vh";
     searchContainer.style.boxShadow = "0px -20px 0px 20px white";
 
     // Create the search input
     const searchInput = document.createElement("input");
     searchInput.type = "text";
     searchInput.id = "search-input";
-    searchInput.placeholder = "Search products by name";
+    searchInput.placeholder = "Search...";
     searchInput.style.border = "1px solid var(--border-color)"; // custom border
     searchInput.style.borderRadius = "4px";
     searchInput.style.padding = "8px 10px";
-    searchInput.style.fontSize = "16px";
+    searchInput.style.marginBottom = "5px";
+    searchInput.style.fontSize = "12px";
     searchInput.style.width = "100%"; // or any width you prefer
     searchInput.style.outline = "none";
     searchInput.style.backgroundColor = "#fff"; // adjust if needed
     searchInput.style.color = "#333"; // adjust text color if needed
+    searchInput.style.overflowY = "hidden";
     searchContainer.appendChild(searchInput);
 
     // Append the search container to your product list container
@@ -1055,7 +1072,6 @@ function loadProducts() {
     filterContainer.style.display = "flex";
     filterContainer.style.flexDirection = "column";
     filterContainer.style.gap = "5px";
-    filterContainer.style.marginBottom = "10px";
 
     const collapsibleHeader = document.createElement("div");
     collapsibleHeader.className = "collapsible-header button-17";
@@ -1064,12 +1080,43 @@ function loadProducts() {
     const collapsibleContent = document.createElement("div");
     collapsibleContent.className = "collapsible-content";
 
+    // Create the <select>
+    const categorySelect = document.createElement("select");
+    categorySelect.id = "category-select";
+
+    // “All” option
+    const allOpt = document.createElement("option");
+    allOpt.value = "";
+    allOpt.textContent = "All Categories";
+    categorySelect.appendChild(allOpt);
+
+    // 1) Pull out every category entry (flatten the arrays)
+    // 2) Remove any falsy or duplicate values
+    const allCats = products
+        .flatMap(p => Array.isArray(p.category) ? p.category : [p.category])
+        .filter(Boolean)                          // drop null/undefined/“”
+        .filter(cat => cat.toLowerCase() !== "cable");  // ← exclude Cable
+    const uniqueCats = Array.from(new Set(allCats)).sort();
+
+    // 3) Build one <option> per unique category
+    uniqueCats.forEach(cat => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = cat;
+        categorySelect.appendChild(opt);
+    });
+
+    // Finally, add it into your collapsibleContent
+    collapsibleContent.appendChild(categorySelect);
+
+
     const brandSelect = document.createElement("select");
     brandSelect.id = "brand-select";
     const allBrandsOption = document.createElement("option");
     allBrandsOption.value = "";
     allBrandsOption.textContent = "All Brands";
     brandSelect.appendChild(allBrandsOption);
+
     const brands = [...new Set(products.map(product => product.brand))];
     brands.forEach(brand => {
         const option = document.createElement("option");
@@ -1083,29 +1130,78 @@ function loadProducts() {
     minPriceInput.type = "number";
     minPriceInput.id = "min-price";
     minPriceInput.placeholder = "Min Price";
-    collapsibleContent.appendChild(minPriceInput);
+    //collapsibleContent.appendChild(minPriceInput);
 
     const maxPriceInput = document.createElement("input");
     maxPriceInput.type = "number";
     maxPriceInput.id = "max-price";
     maxPriceInput.placeholder = "Max Price";
-    collapsibleContent.appendChild(maxPriceInput);
+    //collapsibleContent.appendChild(maxPriceInput);
 
     const inputFilter = document.createElement("input");
     inputFilter.type = "text";
     inputFilter.id = "input-filter";
     inputFilter.placeholder = "Filter by Input type";
-    collapsibleContent.appendChild(inputFilter);
+    //collapsibleContent.appendChild(inputFilter);
 
     const outputFilter = document.createElement("input");
     outputFilter.type = "text";
     outputFilter.id = "output-filter";
     outputFilter.placeholder = "Filter by Output type";
-    collapsibleContent.appendChild(outputFilter);
+    //collapsibleContent.appendChild(outputFilter);
 
-    filterContainer.appendChild(collapsibleHeader);
     filterContainer.appendChild(collapsibleContent);
-    // productListContent.appendChild(filterContainer);
+    productListContent.appendChild(filterContainer);
+    searchContainer.appendChild(filterContainer);
+
+
+    // returns an array of products matching the current filter settings
+    function getFilteredProducts() {
+        const searchTerm = document.getElementById("search-input").value.toLowerCase().trim();
+        const searchWords = searchTerm.split(/\s+/).filter(Boolean);
+        const selectedBrand = document.getElementById("brand-select").value;
+        const selectedCat = document.getElementById("category-select").value;
+        const minPrice = parseFloat(document.getElementById("min-price").value) || 0;
+        const maxPrice = parseFloat(document.getElementById("max-price").value) || Infinity;
+        const inputTerm = document.getElementById("input-filter").value.toLowerCase().trim();
+        const outputTerm = document.getElementById("output-filter").value.toLowerCase().trim();
+
+        return products.filter(product => {
+            // — flatten category into a string array
+            const cats = Array.isArray(product.category)
+                ? product.category
+                : (product.category ? [product.category] : []);
+
+            // 1) text search: include categories as well
+            const combined = (
+                product.name + " " +
+                product.brand + " " +
+                (product.sku || "") + " " +
+                cats.join(" ") + " " +
+                (product.inputs || []).join(" ") + " " +
+                (product.outputs || []).join(" ")
+            ).toLowerCase();
+            if (!searchWords.every(w => combined.includes(w))) return false;
+
+            // 2) category filter: string must be in the cats array
+            if (selectedCat && !cats.includes(selectedCat)) return false;
+
+            // 3) brand
+            if (selectedBrand && product.brand !== selectedBrand) return false;
+
+            // 4) price
+            const p = parseFloat(product.price);
+            if (p < minPrice || p > maxPrice) return false;
+
+            // 5) I/O filters
+            if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) return false;
+            if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) return false;
+
+            return true;
+        });
+    }
+
+
 
     // Create container for product items
     const productItems = document.createElement("div");
@@ -1117,99 +1213,72 @@ function loadProducts() {
 
     function updateProductList() {
         console.log("updating product list");
-        // Increase the token each time we start a new render.
         renderToken++;
-        const token = renderToken; // Capture the current token value
+        const token = renderToken;
 
         const searchTerm = searchInput.value.toLowerCase().trim();
         const searchWords = searchTerm.split(/\s+/).filter(Boolean);
         const selectedBrand = brandSelect.value;
+        const selectedCat = categorySelect.value;
         const minPrice = parseFloat(minPriceInput.value) || 0;
         const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
         const inputTerm = inputFilter.value.toLowerCase().trim();
         const outputTerm = outputFilter.value.toLowerCase().trim();
 
-        //productItems.innerHTML = "";
-
-        let productsAmount_after = 0;
         const childs = Array.from(productItems.children);
+        let productsAmount_after = 0;
 
-        for (const product of products) {
-            // Check if a new input event has occurred by comparing tokens.
-            if (token !== renderToken) {
-                console.log("Render aborted due to new input");
-                return; // Abort this render loop.
+        products.forEach((product, idx) => {
+            if (token !== renderToken) return;
+
+            // 1) Flatten category into array
+            const cats = Array.isArray(product.category)
+                ? product.category
+                : (product.category ? [product.category] : []);
+
+            // 2) Exclude cables
+            if (cats.some(cat => cat.toLowerCase() === "cable")) {
+                return; // skip entirely
             }
 
-            // Exclude cable products.
-            //if (product.category && product.category.toLowerCase() === "cable") {
-            //    continue;
-            //};
+            // 3) Build combined searchable string
+            const combinedData = [
+                product.name,
+                product.brand,
+                product.sku || "",
+                ...cats,
+                ...(product.inputs || []),
+                ...(product.outputs || [])
+            ].join(" ").toLowerCase();
 
-            if (product.category) {
-                // If it's an array, check if any element matches "cable"
-                if (Array.isArray(product.category)) {
-                    if (product.category.some(cat => cat.toLowerCase() === "cable")) continue;
-                } else if (product.category.toLowerCase() === "cable") {
-                    continue;
-                }
+            // 4) Apply filters in order, hiding if any fail
+            const cardEl = childs.find(el => el.dataset.index == idx);
+            let hide = false;
+
+            if (!searchWords.every(w => combinedData.includes(w))) hide = true;
+            else if (selectedCat && !cats.includes(selectedCat)) hide = true;
+            else if (selectedBrand && product.brand !== selectedBrand) hide = true;
+            else {
+                const p = parseFloat(product.price);
+                if (p < minPrice || p > maxPrice) hide = true;
+                else if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) hide = true;
+                else if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) hide = true;
             }
 
+            if (hide) {
+                cardEl && cardEl.classList.add("hidden-product");
+            } else {
+                cardEl && cardEl.classList.remove("hidden-product");
+                productsAmount_after++;
+            }
+        });
 
-            const combinedData = (
-                product.name + " " +
-                product.brand + " " +
-                product.sku + " " +
-                product.category + " " +
-                (product.inputs || []).join(" ") + " " +
-                (product.outputs || []).join(" ")
-            ).toLowerCase();
-
-            const matchesSearch = searchWords.every(word => combinedData.includes(word));
-
-            if (!matchesSearch) {
-                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
-                continue;
-            };
-            if (selectedBrand && product.brand !== selectedBrand) {
-                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
-                continue;
-            };
-
-            const priceNum = parseFloat(product.price);
-            if (priceNum < minPrice || priceNum > maxPrice) {
-                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
-                continue;
-            };
-            if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) {
-                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
-                continue;
-            };
-            if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) {
-                childs.find(o => o.dataset.index == products.indexOf(product)).classList.add("hidden-product");
-                continue;
-            };
-
-            childs.find(o => o.dataset.index == products.indexOf(product)).classList.remove("hidden-product");
-
-            //productItems.children[].classList.remove("hidden-product");
-
-            // Create product element.
-
-
-            productsAmount_after++;
-
-            // Optionally, update the product count incrementally if desired.
-            //document.getElementById("productsLabel").innerHTML = `Products (${productsAmount_after})`;
-
-        }
-
-        // Final update if needed.
+        // Update count
         productsAmountAnimation(productsAmount_after);
         productsAmount_before = productsAmount_after;
         console.log("Products displayed:", productsAmount_after);
-        console.log("Products displayed:", productsAmount_before);
     }
+
 
     function renderProductList() {
         console.log("rendering product list");
@@ -1221,6 +1290,7 @@ function loadProducts() {
         const searchTerm = searchInput.value.toLowerCase().trim();
         const searchWords = searchTerm.split(/\s+/).filter(Boolean);
         const selectedBrand = brandSelect.value;
+        const selectedCat = categorySelect.value;
         const minPrice = parseFloat(minPriceInput.value) || 0;
         const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
         const inputTerm = inputFilter.value.toLowerCase().trim();
@@ -1231,64 +1301,65 @@ function loadProducts() {
         let productsAmount_after = 0;
 
         for (const product of products) {
-            // Check if a new input event has occurred by comparing tokens.
-            if (token !== renderToken) {
-                console.log("Render aborted due to new input");
-                return; // Abort this render loop.
-            }
+            // Abort if a newer render started
+            if (token !== renderToken) return;
 
-            // Exclude cable products.
-            //if (product.category && product.category.toLowerCase() === "cable") continue;
-            if (product.category) {
-                // If it's an array, check if any element matches "cable"
-                if (Array.isArray(product.category)) {
-                    if (product.category.some(cat => cat.toLowerCase() === "cable")) continue;
-                } else if (product.category.toLowerCase() === "cable") {
-                    continue;
-                }
-            }
+            // --- 1) Flatten category into an array & exclude Cables ---
+            const cats = Array.isArray(product.category)
+                ? product.category
+                : (product.category ? [product.category] : []);
+            if (cats.some(cat => cat.toLowerCase() === "cable")) continue;
 
-            const combinedData = (
-                product.name + " " +
-                product.brand + " " +
-                product.sku + " " +
-                product.category + " " +
-                (product.inputs || []).join(" ") + " " +
-                (product.outputs || []).join(" ")
-            ).toLowerCase();
+            // --- 2) Build your combined searchable string ---
+            const combinedData = [
+                product.name,
+                product.brand,
+                product.sku || "",
+                ...cats,
+                ...(product.inputs || []),
+                ...(product.outputs || [])
+            ].join(" ").toLowerCase();
 
-            const matchesSearch = searchWords.every(word => combinedData.includes(word));
+            // --- 3) Search-term filter ---
+            if (!searchWords.every(w => combinedData.includes(w))) continue;
 
-            if (!matchesSearch) continue;
+            // --- 4) Category filter ---
+            if (selectedCat && !cats.includes(selectedCat)) continue;
+
+            // --- 5) Brand filter ---
             if (selectedBrand && product.brand !== selectedBrand) continue;
 
+            // --- 6) Price filter ---
             const priceNum = parseFloat(product.price);
             if (priceNum < minPrice || priceNum > maxPrice) continue;
-            if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm))) continue;
-            if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm))) continue;
 
-            // Create product element.
+            // --- 7) I/O filters ---
+            if (inputTerm && !(product.inputs || []).some(i => i.toLowerCase().includes(inputTerm)))
+                continue;
+            if (outputTerm && !(product.outputs || []).some(o => o.toLowerCase().includes(outputTerm)))
+                continue;
+
+            // --- Passed all filters → render the product ---
             let item = document.createElement("div");
             item.className = "product";
             item.draggable = true;
-            item.innerHTML = `<img draggable="false" src="${product.image[0]}" alt="${product.name}"><br><strong>${product.name}</strong>`;
             item.dataset.index = products.indexOf(product);
+            item.innerHTML = `
+              <img draggable="false" src="${product.image[0]}" alt="${product.name}">
+              <br><strong>${product.name}</strong>
+            `;
             item.addEventListener("dragstart", dragStart);
             productItems.appendChild(item);
 
             productsAmount_after++;
-
-            // Optionally, update the product count incrementally if desired.
-            //document.getElementById("productsLabel").innerHTML = `Products (${productsAmount_after})`;
-
         }
 
-        // Final update if needed.
+        // Animate/display the count
         productsAmountAnimation(productsAmount_after);
         productsAmount_before = productsAmount_after;
         console.log("Products displayed:", productsAmount_after);
-        console.log("Products displayed:", productsAmount_before);
     }
+
 
     function lerp(a, b, alpha) {
         return a + alpha * (b - a);
@@ -1300,10 +1371,10 @@ function loadProducts() {
         return x === 0 ?
             0 :
             x === 1 ?
-            1 :
-            x < 0.5 ?
-            -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) / 2 :
-            (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) / 2 + 1;
+                1 :
+                x < 0.5 ?
+                    -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) / 2 :
+                    (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) / 2 + 1;
     }
 
     function easeOutCubic(x) {
@@ -1364,7 +1435,7 @@ function loadProducts() {
     // Debounce the input to avoid rapid re-calls.
     function debounce(fn, delay) {
         let timeoutId;
-        return function(...args) {
+        return function (...args) {
             clearTimeout(timeoutId);
             timeoutId = setTimeout(() => {
                 fn.apply(this, args);
@@ -1375,6 +1446,13 @@ function loadProducts() {
     const debouncedRender = debounce(updateProductList, 0);
 
     searchInput.addEventListener("input", debouncedRender);
+    const filterEls = document.querySelectorAll(
+        "#filter-container input, #filter-container select"
+    );
+    filterEls.forEach(el => {
+        el.addEventListener("input", debouncedRender);
+        el.addEventListener("change", debouncedRender);
+    });
 
     // Optional: if you want to trigger on Enter as well:
     searchInput.addEventListener("keydown", (event) => {
@@ -1492,8 +1570,6 @@ const throttleDelay = 10; // milliseconds
 
 
 
-
-
 // ----- Panning functionality -----
 let isPanning = false;
 let panStartX = 0;
@@ -1523,6 +1599,9 @@ function panEnd(e) {
 window.addEventListener("load", () => {
     loadProducts();
     initConnectionLayer();
+    //Notification Dot
+    document.querySelector('.icon-btn.has-badge')
+        .addEventListener('click', e => e.currentTarget.classList.add('used'));
 
 
     // 1) Initialize OverlayScrollbars
@@ -1574,7 +1653,7 @@ window.addEventListener("load", () => {
 
 
     // 3) Provide a scrollToTop function
-    window.scrollToTop = function() {
+    window.scrollToTop = function () {
         scrollEl.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -1665,7 +1744,7 @@ function createTextCanvasItem() {
     dragHandle.addEventListener("mousedown", dragMouseDown);
 
     // Allow dblclick on the container to remove it.
-    container.addEventListener("dblclick", function(e) {
+    container.addEventListener("dblclick", function (e) {
         e.stopPropagation();
         animateRemoveCanvasItem(container);
     });
@@ -1694,7 +1773,7 @@ window.addEventListener("load", () => {
     canvasContainer.scrollTop = (canvasContent.offsetHeight - canvasContainer.clientHeight) / 2;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     OverlayScrollbars(document.getElementById("help-content"), {
         scrollbars: {
             theme: "os-theme-dark"
@@ -1702,7 +1781,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     /* ===== configuration ===== */
     const VALID_USERNAMES = [
         "442",
@@ -1748,4 +1827,21 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ===== wire events ===== */
     btn.addEventListener("click", checkLogin);
     input.addEventListener("keydown", e => { if (e.key === "Enter") checkLogin(); });
+
+    const ppbtn = document.getElementById('toggle-price-panel-btn');
+
+    ppbtn.addEventListener('click', () => {
+        const pressed = ppbtn.getAttribute('aria-pressed') === 'true';   // read string
+        ppbtn.setAttribute('aria-pressed', String(!pressed));            // write string
+        console.log("Clicked");
+    });
+
 });
+
+window.getCardWidth = product => {
+    if (!body.classList.contains("ci-mode")) return originalGetCardWidth(product);
+    const img = parseInt(getComputedStyle(document.documentElement)
+        .getPropertyValue("--ci-img-size")) || 60;
+    return img + 8;          // keep in sync with CSS padding
+};
+

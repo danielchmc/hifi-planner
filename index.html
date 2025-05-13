@@ -9,9 +9,13 @@ XLR L/R -> BAL IN L/R
     <link rel="icon" href="assets/favicon.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Harmattan:wght@400;500;600;700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Harmattan:wght@400;500;600;700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
-    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/styles/overlayscrollbars.min.css" rel="stylesheet" />
+    <link type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/styles/overlayscrollbars.min.css"
+        rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HiFi Planner</title>
@@ -21,17 +25,18 @@ XLR L/R -> BAL IN L/R
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/ci-mode.js"></script>
     <link type="text/css" rel="stylesheet" href="styles/css.css" />
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW00S9FNRZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-BW00S9FNRZ');
+    gtag('config', 'G-BW00S9FNRZ');
 </script>
 
 <body>
@@ -39,12 +44,12 @@ XLR L/R -> BAL IN L/R
     <div id="canvas-container">
         <div id="canvas-content">
             <svg id="connection-layer">
-        <defs>
-          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
-          </marker>
-        </defs>
-      </svg>
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+                    </marker>
+                </defs>
+            </svg>
         </div>
         <!-- Note: The floating price panel is placed outside #canvas-content so that it stays fixed. -->
         <div id="price-panel">
@@ -65,23 +70,23 @@ XLR L/R -> BAL IN L/R
         </div>
         <div id="logo">
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.6 32.6">
-                <path fill="var(--hifi-black)" d="M0 0v32.6h52.2V0zm41.3 9.7c.8 0 1.5.7 1.5 1.5v.1c0 .8-.7 1.5-1.5 1.4-.8 0-1.5-.7-1.5-1.5.1-.8.7-1.5 1.5-1.5m-16 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.6-1.5 1.5-1.5m-4 2.1h-1.5v9h1.5v1.9H16v-1.9h1.5v-3.5h-5.4v3.5h1.5v1.9H8.3v-1.9h1.5v-9H8.3V9.9h5.3v1.9h-1.5v3.5h5.4v-3.5H16V9.9h5.3zm6.4 10.9h-4.9v-1.9h1.3V16h-1.3v-2h3.6v6.8h1.3zm10.6-9.3h-2.2v-1.6h-3.3v3.5h4v1.9h-4v3.5h1.7v1.9h-5.4v-1.9h1.3v-9H29V9.9h9.3zm5.5 9.3h-4.9v-1.9h1.3V16h-1.3v-2h3.6v6.8h1.3zm25.1-1.9h1.2v1.9H65v-1.9h1.2l-2.6-4-1.5 1.4v2.6h1.5v1.9h-5.3v-1.9h1.5v-9h-1.5V9.9h5.3v1.9h-1.5v4l4.1-4H65V9.9h5.1v1.9h-1.3l-3.6 3.4zm5.9 0H76v1.9h-4.6v-1.9h1.2v-9h-1.2V9.9h3.4zm10.6 0h1.3v1.9h-3.2v-.8c-.8.7-1.8 1-2.8 1-1.8 0-3.1-1-3.1-3.3v-3.7h-1.2V14h3.4v5.4c0 1.1.6 1.5 1.4 1.5.7 0 1.3-.3 1.8-.8V16h-1v-2h3.4zm4.9 1.1v.8h-2.2V11.8H87V9.9h3.4v4.9c.7-.6 1.6-.9 2.5-.9 2 0 3.6 1.7 3.6 4.3 0 2.9-1.6 4.6-3.8 4.6-.8.1-1.7-.3-2.4-.9m4-3.5c0-1.5-.7-2.6-2-2.6s-2 1.1-2 2.5.7 2.6 2.1 2.6 1.9-1 1.9-2.5m5.8 3.5v.8H98V11.8h-1.1V9.9h3.4v4.9c.7-.6 1.6-.9 2.5-.9 2 0 3.6 1.7 3.6 4.3 0 2.9-1.6 4.6-3.8 4.6-1 .1-1.9-.2-2.5-.9m3.9-3.5c0-1.5-.7-2.6-1.9-2.6s-2 1.1-2 2.5.8 2.6 2.1 2.6 1.8-1 1.8-2.5m11.5 0v.6h-5.8c-.1 1 .7 1.9 1.8 2h.2c.7.1 1.4-.3 1.7-.8h2c-.4 1.7-2 2.8-3.7 2.8-2.7 0-4.2-1.7-4.2-4.5s1.6-4.5 4.1-4.5 3.9 1.5 3.9 4.4m-2.3-1c0-.9-.7-1.7-1.6-1.7h-.2c-.9 0-1.7.8-1.8 1.7zm13.4 3.4v1.9h-3.4v-5.4c0-1.1-.6-1.5-1.4-1.5-.7 0-1.3.3-1.8.8v4.1h1.2v1.9h-4.6v-1.9h1.2v-4.8h-1.2V14h3v.8c.7-.7 1.7-1 2.7-1 1.7-.1 3.1 1.2 3.2 2.8v4.1z"/>
+                <path fill="var(--hifi-black)"
+                    d="M0 0v32.6h52.2V0zm41.3 9.7c.8 0 1.5.7 1.5 1.5v.1c0 .8-.7 1.5-1.5 1.4-.8 0-1.5-.7-1.5-1.5.1-.8.7-1.5 1.5-1.5m-16 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.6-1.5 1.5-1.5m-4 2.1h-1.5v9h1.5v1.9H16v-1.9h1.5v-3.5h-5.4v3.5h1.5v1.9H8.3v-1.9h1.5v-9H8.3V9.9h5.3v1.9h-1.5v3.5h5.4v-3.5H16V9.9h5.3zm6.4 10.9h-4.9v-1.9h1.3V16h-1.3v-2h3.6v6.8h1.3zm10.6-9.3h-2.2v-1.6h-3.3v3.5h4v1.9h-4v3.5h1.7v1.9h-5.4v-1.9h1.3v-9H29V9.9h9.3zm5.5 9.3h-4.9v-1.9h1.3V16h-1.3v-2h3.6v6.8h1.3zm25.1-1.9h1.2v1.9H65v-1.9h1.2l-2.6-4-1.5 1.4v2.6h1.5v1.9h-5.3v-1.9h1.5v-9h-1.5V9.9h5.3v1.9h-1.5v4l4.1-4H65V9.9h5.1v1.9h-1.3l-3.6 3.4zm5.9 0H76v1.9h-4.6v-1.9h1.2v-9h-1.2V9.9h3.4zm10.6 0h1.3v1.9h-3.2v-.8c-.8.7-1.8 1-2.8 1-1.8 0-3.1-1-3.1-3.3v-3.7h-1.2V14h3.4v5.4c0 1.1.6 1.5 1.4 1.5.7 0 1.3-.3 1.8-.8V16h-1v-2h3.4zm4.9 1.1v.8h-2.2V11.8H87V9.9h3.4v4.9c.7-.6 1.6-.9 2.5-.9 2 0 3.6 1.7 3.6 4.3 0 2.9-1.6 4.6-3.8 4.6-.8.1-1.7-.3-2.4-.9m4-3.5c0-1.5-.7-2.6-2-2.6s-2 1.1-2 2.5.7 2.6 2.1 2.6 1.9-1 1.9-2.5m5.8 3.5v.8H98V11.8h-1.1V9.9h3.4v4.9c.7-.6 1.6-.9 2.5-.9 2 0 3.6 1.7 3.6 4.3 0 2.9-1.6 4.6-3.8 4.6-1 .1-1.9-.2-2.5-.9m3.9-3.5c0-1.5-.7-2.6-1.9-2.6s-2 1.1-2 2.5.8 2.6 2.1 2.6 1.8-1 1.8-2.5m11.5 0v.6h-5.8c-.1 1 .7 1.9 1.8 2h.2c.7.1 1.4-.3 1.7-.8h2c-.4 1.7-2 2.8-3.7 2.8-2.7 0-4.2-1.7-4.2-4.5s1.6-4.5 4.1-4.5 3.9 1.5 3.9 4.4m-2.3-1c0-.9-.7-1.7-1.6-1.7h-.2c-.9 0-1.7.8-1.8 1.7zm13.4 3.4v1.9h-3.4v-5.4c0-1.1-.6-1.5-1.4-1.5-.7 0-1.3.3-1.8.8v4.1h1.2v1.9h-4.6v-1.9h1.2v-4.8h-1.2V14h3v.8c.7-.7 1.7-1 2.7-1 1.7-.1 3.1 1.2 3.2 2.8v4.1z" />
             </svg>
         </div>
-        <button id="scrollBtn" onclick="scrollToTop()"> <!-- penis -->
-      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-      <svg width="400px" height="400px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
-        stroke="#555555" stroke-width="1px">
-        <polyline points="40 36 32 28 24 36" />
-        <rect x="0" y="0" width="64" height="64" />
-      </svg>
-    </button>
+        <button id="scrollBtn" onclick="scrollToTop()">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="400px" height="400px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
+                stroke="#555555" stroke-width="1px">
+                <polyline points="40 36 32 28 24 36" />
+                <rect x="0" y="0" width="64" height="64" />
+            </svg>
+        </button>
     </div>
     <!-- Floating Product List (Collapsible) -->
     <div data-simplebar id="floating-product-list">
         <header>
-            <span id="productsLabel">Products</span>
-            <span class="toggle-icon">&#x25B2;</span>
+            <span id="productsLabel" style="color: var(--hifi-black); font-size:smaller; padding: 4px;"></span>
         </header>
         <div class="content">
             <!-- Product filters and items will be loaded here -->
@@ -89,67 +94,202 @@ XLR L/R -> BAL IN L/R
     </div>
 
     <div id="headermenu">
-        <div class="toggle-container">
-            <label class="switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider round"></span>
-      </label>
-        </div>
-        <button id="add-text-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--hifi-white)"
-        stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
-        <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path>
-        <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
-      </svg>
-    </button>
-        <button id="toggle-price-panel-btn">
-          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-          <svg fill="var(--hifi-white)" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M541.7 768v-45.3c46.3-2.4 81.5-15 108.7-37.8 27.2-22.8 40.8-53.1 40.8-88.2 0-37.8-11-65.7-35.3-83.4-24.6-20.1-59.8-35.4-111.6-45.3h-2.6V351.8c35.3 5.1 65.3 15 95.1 35.4l43.6-55.5c-43.6-27.9-89.9-42.9-138.8-45.3V256h-40.8v30.3c-40.8 2.4-76.3 15-103.5 37.8-27.2 22.8-40.8 53.1-40.8 88.2s11 63 35.3 80.7c21.7 17.7 59.8 32.7 108.7 42.9v118.5c-38.2-5.1-76.3-22.8-114.2-53.1l-48.9 53.1c48.9 40.5 103.5 63 163.3 68.1V768h41zm2.6-219.6c27.2 7.5 43.6 15 54.4 22.8 8.1 10.2 13.6 20.1 13.6 35.4s-5.5 25.2-19.1 35.4c-13.6 10.2-30.1 15-48.9 17.7V548.4zM449.2 440c-8.1-7.5-13.6-20.1-13.6-32.7 0-15 5.5-25.2 16.2-35.4 13.6-10.2 27.2-15 48.9-17.7v108.6c-27.2-7.8-43.4-15.3-51.5-22.8z"/></svg>
-    </button>
-        <!-- Export Button -->
-        <button id="export-btn">
-        <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080"
-          height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
-         <desc>Created with Fabric.js 5.2.4</desc>
-        <defs>
-        </defs>
-        <rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
-        <g transform="matrix(1 0 0 1 540 540)" id="59ad2c1f-4ed5-4a40-8cf1-46b10ce9f214">
-          <rect
-            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;"
-            vector-effect="non-scaling-stroke" x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
-        </g>
-        <g transform="matrix(1 0 0 1 540 540)" id="ab74582c-a66c-4bbf-b8d2-9c6d17d9da86"></g>
-        <g transform="matrix(4.92 0 0 4.92 539.72 539.72)" id="path1274">
-          <path
-            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: var(--hifi-white); fill-rule: evenodd; opacity: 1;"
-            transform=" translate(6844.23, -3540.16)"
-            d="M -6844.2302 3441.3444 C -6846.8190347648315 3441.3444 -6848.9177 3443.443065235168 -6848.9177 3446.0319 L -6848.9177 3581.8668 L -6884.5555 3547.7781 C -6885.453521831977 3546.9185392570826 -6886.656199667184 3546.450885165995 -6887.899 3546.478 C -6889.1421602017745 3546.5062253357582 -6890.323165350101 3547.0272474967755 -6891.1821 3547.9264000000003 C -6892.971172976812 3549.7968787051313 -6892.905589175196 3552.763415358985 -6891.0356 3554.5530000000003 L -6847.5444 3596.1491000000005 L -6847.471399999999 3596.2201000000005 C -6847.314131130625 3596.344694639652 -6847.149024851047 3596.459063221743 -6846.977099999999 3596.5625000000005 C -6846.780453229754 3596.723888579452 -6846.570994820841 3596.869001151106 -6846.350799999999 3596.9964000000004 C -6846.276630769591 3597.031970116416 -6846.201538097206 3597.0655817566308 -6846.125599999999 3597.0972000000006 C -6845.974877077202 3597.15138828925 -6845.821475853133 3597.197815857283 -6845.665999999999 3597.2363000000005 C -6845.439817187002 3597.323794410603 -6845.207185438953 3597.3936039952428 -6844.970199999999 3597.4451000000004 C -6844.81320379098 3597.460376961959 -6844.65553652482 3597.4677196373514 -6844.497799999999 3597.4671000000003 C -6844.411054508827 3597.487249971734 -6844.323752406915 3597.504923812075 -6844.235999999999 3597.5201 C -6844.1482337551215 3597.505588569865 -6844.060898383696 3597.4885816819587 -6843.9740999999985 3597.4691000000003 C -6843.818164351022 3597.468870999435 -6843.662337257591 3597.4608610396094 -6843.507199999998 3597.4451000000004 C -6843.270214561044 3597.3936039952428 -6843.037582812995 3597.323794410603 -6842.811399999998 3597.2363000000005 C -6842.808066667612 3597.2363035555572 -6842.804733332383 3597.2363035555572 -6842.801399999998 3597.2363000000005 C -6842.644675572036 3597.1979379936924 -6842.490036386711 3597.1515095225536 -6842.338099999997 3597.0972000000006 C -6842.264030393756 3597.0660881554386 -6842.190772859898 3597.0330772503316 -6842.118399999998 3596.9982000000005 C -6841.896211440637 3596.869868338886 -6841.684934986863 3596.723509978633 -6841.486699999998 3596.5606000000002 C -6841.316058600751 3596.457614284365 -6841.152159256382 3596.3438500359603 -6840.995999999997 3596.2200000000003 L -6840.925999999998 3596.1540000000005 C -6840.922327251589 3596.150339420123 -6840.918660579875 3596.1466727484085 -6840.914999999997 3596.1430000000005 L -6797.431099999997 3554.5524000000005 C -6795.561110824801 3552.7628153589853 -6795.495527023185 3549.7962787051315 -6797.284599999997 3547.9258000000004 C -6798.1435346498965 3547.0266474967757 -6799.324539798223 3546.5056253357584 -6800.567699999997 3546.4774 C -6801.810500332813 3546.450285165995 -6803.01317816802 3546.9179392570827 -6803.911199999997 3547.7775 L -6839.545399999997 3581.8626 L -6839.545399999997 3446.0313 C -6839.545399999997 3443.442465235168 -6841.644065235166 3441.3438 -6844.232899999997 3441.3438 z M -6939.4066 3557.6292 C -6941.995434764832 3557.6292 -6944.0941 3559.727865235168 -6944.0941 3562.3167 L -6944.0941 3634.2898999999998 C -6944.074189596616 3635.0263690940724 -6943.88096498312 3635.747775244138 -6943.5301 3636.3956 C -6943.474192317107 3636.51719254095 -6943.413103015398 3636.636335029427 -6943.347 3636.7527 C -6942.9716040189705 3637.3510392526823 -6942.465839252682 3637.856804018971 -6941.867499999999 3638.2322 C -6941.75113654927 3638.2976904566463 -6941.632027917981 3638.358178957634 -6941.510499999999 3638.4135 C -6940.86320595515 3638.7640574057273 -6940.142448905717 3638.9572390684375 -6939.406599999999 3638.9774 L -6749.0574 3638.9774 C -6748.320939067177 3638.9575203838845 -6747.599533393137 3638.7643301575504 -6746.9517 3638.4135 C -6746.83078172993 3638.358132813711 -6746.712274511417 3638.2976447542615 -6746.5965 3638.2322 C -6745.996446451712 3637.8561725210466 -6745.489387020049 3637.3490789002244 -6745.113399999999 3636.749 C -6745.049313212073 3636.6349638627044 -6744.990027984328 3636.5182950718086 -6744.935699999999 3636.3992999999996 C -6744.583646699155 3635.7505225030336 -6744.389785416825 3635.02777420161 -6744.369899999999 3634.2898999999998 L -6744.369899999999 3562.3167 C -6744.369899999999 3559.727865235168 -6746.468565235167 3557.6292 -6749.057399999999 3557.6292 C -6751.64623476483 3557.6292 -6753.744899999999 3559.727865235168 -6753.744899999999 3562.3167 L -6753.744899999999 3629.6023999999998 L -6934.719099999998 3629.6023999999998 L -6934.719099999998 3562.3167 C -6934.719099999998 3559.727865235168 -6936.817765235167 3557.6292 -6939.406599999998 3557.6292 z"
-            stroke-linecap="round" />
-        </g>
-      </svg>
-    </button>
-        <button id="help-toggle-btn">
-          <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-          <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg fill="var(--hifi-white)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="20px" height="20px" viewBox="0 0 31.357 31.357"
-	 xml:space="preserve">
-<g>
-	<path d="M15.255,0c5.424,0,10.764,2.498,10.764,8.473c0,5.51-6.314,7.629-7.67,9.62c-1.018,1.481-0.678,3.562-3.475,3.562
-		c-1.822,0-2.712-1.482-2.712-2.838c0-5.046,7.414-6.188,7.414-10.343c0-2.287-1.522-3.643-4.066-3.643
-		c-5.424,0-3.306,5.592-7.414,5.592c-1.483,0-2.756-0.89-2.756-2.584C5.339,3.683,10.084,0,15.255,0z M15.044,24.406
-		c1.904,0,3.475,1.566,3.475,3.476c0,1.91-1.568,3.476-3.475,3.476c-1.907,0-3.476-1.564-3.476-3.476
-		C11.568,25.973,13.137,24.406,15.044,24.406z"/>
-</g>
-</svg>
-</button>
+        <!-- size input (only visible in CI‑mode via JS) -->
+        <label id="ciImgSizeWrap" class="ci-img-size" style="display:none;">
+            <input type="number" id="ciImgSize" value="150" min="1" max="200" step="5" style="text-align: center; max-width: 10vh; max-height: 5vh; margin-right: -10px;">
+        </label>
 
-        <div id="help-content" style="
+        <!-- dark‑mode toggle -->
+        <label class="icon-btn" id="dmLabel" aria-label="Dark/Light Mode" title="Dark/Light Mode">
+            <input type="checkbox" id="darkModeToggle">
+            <svg class="icon off" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                id="Sun-Cloud--Streamline-Core" height="14" width="14">
+                <desc>Sun Cloud Streamline Icon: https://streamlinehq.com</desc>
+                <g id="sun-cloud--cloud-meteorology-cloudy-partly-sunny-weather">
+                    <path id="Vector" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M11 8.5c-0.5408 0.00072 -1.06692 0.17609 -1.5 0.5 0 -0.89001 -0.26392 -1.76004 -0.75838 -2.50006 -0.49447 -0.74003 -1.19728 -1.3168 -2.01954 -1.6574 -0.82227 -0.34059 -1.72707 -0.42971 -2.59998 -0.25607 -0.87292 0.17363 -1.67474 0.60221 -2.30408 1.23155C1.18869 6.44736 0.760102 7.24918 0.586468 8.1221c-0.173633 0.87291 -0.084518 1.77771 0.256076 2.6 0.340596 0.8222 0.917366 1.525 1.657396 2.0195C3.23996 13.2361 4.10999 13.5 5 13.5h6c0.663 0 1.2989 -0.2634 1.7678 -0.7322 0.4688 -0.4689 0.7322 -1.1048 0.7322 -1.7678s-0.2634 -1.29892 -0.7322 -1.76777C12.2989 8.76339 11.663 8.5 11 8.5Z"
+                        stroke-width="1"></path>
+                    <path id="Vector_2" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.25 5c1.2426 0 2.25 -1.00736 2.25 -2.25S12.4926 0.5 11.25 0.5 9 1.50736 9 2.75 10.0074 5 11.25 5Z"
+                        stroke-width="1"></path>
+                </g>
+            </svg>
+            <svg class="icon on" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                id="Moon-Cloud--Streamline-Core" height="14" width="14">
+                <desc>Moon Cloud Streamline Icon: https://streamlinehq.com</desc>
+                <g id="moon-cloud--cloud-meteorology-cloudy-partly-sunny-weather">
+                    <path id="Vector" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M7.67065 2.5c0.41184 -1.16519 1.52308 -2 2.82925 -2 0.0577 0 0.1149 0.001624 0.1717 0.004828C10.2595 0.871173 9.99995 1.40527 9.99995 2c0 1.10457 0.89545 2 1.99995 2 0.5948 0 1.1289 -0.25959 1.4952 -0.67164 0.0032 0.05681 0.0048 0.11403 0.0048 0.17164 0 1.30623 -0.8348 2.41747 -2 2.8293"
+                        stroke-width="1"></path>
+                    <path id="Vector_2" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M11 8.5c-0.5408 0.00072 -1.06692 0.17609 -1.5 0.5 0 -0.89001 -0.26392 -1.76004 -0.75838 -2.50006 -0.49447 -0.74003 -1.19728 -1.3168 -2.01954 -1.6574 -0.82227 -0.34059 -1.72707 -0.42971 -2.59998 -0.25607 -0.87292 0.17363 -1.67474 0.60221 -2.30408 1.23155C1.18869 6.44736 0.760102 7.24918 0.586468 8.1221c-0.173633 0.87291 -0.084518 1.77771 0.256076 2.6 0.340596 0.8222 0.917366 1.525 1.657396 2.0195C3.23996 13.2361 4.10999 13.5 5 13.5h6c0.663 0 1.2989 -0.2634 1.7678 -0.7322 0.4688 -0.4689 0.7322 -1.1048 0.7322 -1.7678s-0.2634 -1.29892 -0.7322 -1.76777C12.2989 8.76339 11.663 8.5 11 8.5Z"
+                        stroke-width="1"></path>
+                </g>
+            </svg>
+        </label>
+
+        <!-- upload floor‑plan (file input + label) -->
+        <input type="file" id="floorUpload" accept="image/*,.pdf" hidden>
+        <label for="floorUpload" class="icon-btn" aria-label="Upload plan" title="Upload Floor Plan">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                id="Orientation-Landscape--Streamline-Core" height="14" width="14">
+                <desc>Orientation Landscape Streamline Icon: https://streamlinehq.com</desc>
+                <g
+                    id="orientation-landscape--photos-photo-orientation-landscape-picture-photography-camera-pictures-image">
+                    <path id="Vector" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="m1.5 12 11 0c0.5523 0 1 -0.4477 1 -1l0 -8c0 -0.55229 -0.4477 -1 -1 -1l-11 0c-0.552285 0 -1 0.44771 -1 1l0 8c0 0.5523 0.447715 1 1 1Z"
+                        stroke-width="1"></path>
+                    <path id="Vector_2" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.50191 6.21206c0.68769 0 1.24519 -0.55749 1.24519 -1.24519s-0.5575 -1.24519 -1.24519 -1.24519c-0.6877 0 -1.2452 0.55749 -1.2452 1.24519s0.5575 1.24519 1.2452 1.24519Z"
+                        stroke-width="1"></path>
+                    <path id="Vector_3" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.08269 12.0001c-0.31051 -1.6539 -1.19854 -3.14364 -2.50563 -4.20344 -1.30709 -1.05981 -2.94821 -1.62073 -4.63054 -1.58269C1.46114 6.21268 0.976755 6.25789 0.5 6.34898"
+                        stroke-width="1"></path>
+                    <path id="Vector_4" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 8.94077c-0.7877 -0.26599 -1.6135 -0.40143 -2.4449 -0.40096 -1.0523 -0.00228 -2.09399 0.21071 -3.06096 0.62589"
+                        stroke-width="1"></path>
+                </g>
+            </svg>
+        </label>
+
+        <!-- CI‑mode toggle (checkbox + label) -->
+        <input type="checkbox" id="ciModeToggle" hidden>
+        <label for="ciModeToggle" class="icon-btn" aria-label="CI mode" title="Custom Install Mode">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Shrink--Streamline-Ultimate"
+                height="24" width="24">
+                <desc>Shrink Streamline Icon: https://streamlinehq.com</desc>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="m23.25 0.748047 -7.5 7.500003" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M8.25 21.748v-6h-6"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M15.75 2.24805v6h6"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="m8.25 15.748 -7.5 7.5" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="m0.75 0.748047 7.5 7.500003" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M15.75 21.748v-6h6"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M8.25 2.24805v6h-6"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="m15.75 15.748 7.5 7.5" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.75 11.998c0 0.5968 0.23705 1.1691 0.659 1.591 0.422 0.422 0.9943 0.659 1.591 0.659s1.169 -0.237 1.591 -0.659c0.4219 -0.4219 0.659 -0.9942 0.659 -1.591 0 -0.5967 -0.2371 -1.169 -0.659 -1.5909 -0.422 -0.422 -0.9943 -0.65905 -1.591 -0.65905s-1.169 0.23705 -1.591 0.65905c-0.42195 0.4219 -0.659 0.9942 -0.659 1.5909Z"
+                    stroke-width="1.5"></path>
+            </svg>
+        </label>
+
+        <!-- add‑text -->
+        <button id="add-text-btn" class="icon-btn" aria-label="Add text" title="Add Textbox">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                id="Coding-Apps-Website-Web-Form-Text-Area-1--Streamline-Ultimate" height="24" width="24">
+                <desc>Coding Apps Website Web Form Text Area 1 Streamline Icon: https://streamlinehq.com</desc>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="M1.75 0.75h20.5s1 0 1 1v20.5s0 1 -1 1H1.75s-1 0 -1 -1V1.75s0 -1 1 -1Z" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M4 6.5V5h6v1.5"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M7 10.75V5"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M13.25 5h6.25"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M13.25 9.5h6.25"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M4 14h15.5"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M4 18.5h15.5"
+                    stroke-width="1.5"></path>
+            </svg>
+        </button>
+
+        <!-- price‑panel toggle -->
+        <button id="toggle-price-panel-btn" class="icon-btn" aria-label="Show prices" aria-pressed="false" title="Toggle Price Panel">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="Scanner-3--Streamline-Core"
+                height="14" width="14">
+                <desc>Scanner 3 Streamline Icon: https://streamlinehq.com</desc>
+                <g id="scanner-3--payment-electronic-cash-dollar-codes-tags-upc-barcode-qr">
+                    <path id="Vector 3" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.70185 5.13816c-0.05853 -0.16561 -0.14885 -0.3162 -0.26363 -0.44445 -0.24415 -0.27278 -0.59894 -0.44444 -0.99383 -0.44444H6.41235c-0.65732 0 -1.19018 0.53286 -1.19018 1.19017 0 0.55932 0.38945 1.04317 0.93584 1.16269l1.57131 0.34372c0.61211 0.1339 1.0484 0.67634 1.0484 1.30293 0 0.73638 -0.59695 1.33382 -1.33333 1.33382H6.5555c-0.58054 0 -1.07442 -0.37102 -1.25746 -0.88889"
+                        stroke-width="1"></path>
+                    <path id="Vector 2489" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M7 4.2491V2.91577" stroke-width="1"></path>
+                    <path id="Vector 2490" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M7 10.9159V9.58252" stroke-width="1"></path>
+                    <path id="vector" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.06858 0.65625H1.16474c-0.12942 0 -0.253542 0.051412 -0.345056 0.142926C0.72817 0.89069 0.676758 1.01481 0.676758 1.14423v3.90385"
+                        stroke-width="1"></path>
+                    <path id="vector_2" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.3642 5.04808V1.14423c0 -0.12942 -0.0514 -0.25354 -0.1429 -0.345054 -0.0915 -0.091514 -0.2156 -0.142926 -0.345 -0.142926H8.97241"
+                        stroke-width="1"></path>
+                    <path id="vector_3" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.97241 13.3437h3.90389c0.1294 0 0.2535 -0.0514 0.345 -0.1429 0.0915 -0.0915 0.1429 -0.2156 0.1429 -0.345V8.9519"
+                        stroke-width="1"></path>
+                    <path id="vector_4" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M0.676758 8.9519v3.9039c0 0.1294 0.051412 0.2535 0.142926 0.345 0.091514 0.0915 0.215636 0.1429 0.345056 0.1429h3.90384"
+                        stroke-width="1"></path>
+                </g>
+            </svg>
+        </button>
+
+        <!-- export -->
+        <button id="export-btn" class="icon-btn" aria-label="Export image" title="Download Image">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                id="Move-Down-1--Streamline-Ultimate" height="24" width="24">
+                <desc>Move Down 1 Streamline Icon: https://streamlinehq.com</desc>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M12 18.748V0.748047"
+                    stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                    d="m8.25 14.998 3.75 3.75 3.75 -3.75" stroke-width="1.5"></path>
+                <path stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round" d="M0.75 23.248h22.5"
+                    stroke-width="1.5"></path>
+            </svg>
+        </button>
+
+        <!-- help -->
+        <button id="help-toggle-btn" class="icon-btn has-badge" aria-label="Help" title="Help & Feedback">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="Manual-Book--Streamline-Core"
+                height="14" width="14">
+                <desc>Manual Book Streamline Icon: https://streamlinehq.com</desc>
+                <g id="manual-book">
+                    <path id="vector" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.5 4.05371c0 -0.29667 0.08797 -0.58668 0.2528 -0.83335 0.16482 -0.24668 0.39909 -0.43894 0.67317 -0.55247 0.27409 -0.11353 0.57569 -0.14323 0.86667 -0.08536 0.29097 0.05788 0.55824 0.20074 0.76802 0.41052 0.20978 0.20978 0.35264 0.47705 0.41052 0.76803 0.05788 0.29097 0.02817 0.59257 -0.08536 0.86666 -0.11353 0.27409 -0.30579 0.50835 -0.55246 0.67318 -0.24668 0.16482 -0.53669 0.25279 -0.83336 0.25279v0.5"
+                        stroke-width="1"></path>
+                    <g id="Group 14">
+                        <path id="vector_2" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                            d="M7 8.11621c-0.13807 0 -0.25 -0.11193 -0.25 -0.25s0.11193 -0.25 0.25 -0.25"
+                            stroke-width="1"></path>
+                        <path id="vector_3" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                            d="M7 8.11621c0.13807 0 0.25 -0.11193 0.25 -0.25s-0.11193 -0.25 -0.25 -0.25"
+                            stroke-width="1"></path>
+                    </g>
+                    <path id="vector_4" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M12.5 13.5H3c-0.39782 0 -0.77936 -0.158 -1.06066 -0.4393C1.65804 12.7794 1.5 12.3978 1.5 12c0 -0.3978 0.15804 -0.7794 0.43934 -1.0607S2.60218 10.5 3 10.5h8.5c0.2652 0 0.5196 -0.1054 0.7071 -0.2929S12.5 9.76522 12.5 9.5v-8c0 -0.26522 -0.1054 -0.51957 -0.2929 -0.707107C12.0196 0.605357 11.7652 0.5 11.5 0.5H3c-0.39099 -0.000139 -0.76658 0.152394 -1.04676 0.425105C1.67305 1.19782 1.51043 1.56915 1.5 1.96v10"
+                        stroke-width="1"></path>
+                    <path id="vector_5" stroke="var(--hifi-black)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.5 10.5v3" stroke-width="1"></path>
+                </g>
+            </svg>
+            <span class="badge"></span> <!-- 🔴 tiny notification dot -->
+        </button>
+    </div>
+
+    <!-- CI‑mode confirmation ------------------------------------------- -->
+    <dialog id="ciConfirm">
+        <form method="dialog">
+            <p style="margin:0 0 1rem">
+                <strong>Enabling CI Mode will delete all cables<br>
+                    between products.  Continue?</strong>
+            </p>
+
+            <menu style="display:flex;gap:2rem;justify-content:flex-end">
+                <button value="cancel">[ESC] Cancel</button>
+                <button id="ciProceed" value="ok" autofocus>[Enter] Continue</button>
+            </menu>
+        </form>
+    </dialog>
+
+
+    <div id="help-content" style="
         display: none;
         position: fixed;
         right: 20px;
@@ -167,154 +307,174 @@ XLR L/R -> BAL IN L/R
         font-size: 0.95rem;
         line-height: 1.4;
       ">
-            <h3 style="margin-top: 0;">Help</h3>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc84cmZgNr_lxXG7VqGd6xRD4UWbcvBiuaOobcauY2_yj3aMA/viewform?usp=dialog" target="_blank" style="text-decoration: none; color: #007BFF;">Feedback</a>
-            <ul>
-                <li>Akut Support: Tlf. 30686303</li>
-                <hr>
-                <li>Prices are NOT updated real time, so never rely on the price list</li>
-                <hr>
-                <li>Use the search term "Peripherals" to filter stand-in products</li>
-                <hr>
-                <li>Drag & drop products from the list onto the canvas.</li>
-                <hr>
-                <li>Click the card's image to see the backside.</li>
-                <hr>
-                <li>Double-click a card to delete it.</li>
-                <hr>
-                <li>Click an output dot, then an input dot to draw a wire.</li>
-                <hr>
-                <li>Click the wire to add a specific cable.</li>
-                <hr>
-                <li>Scroll to zoom, and click and drag empty canvas to pan.</li>
-                <hr>
-                <li>Use the "Add Text" button to insert notes onto the canvas.</li>
-                <hr>
-                <li>Click the "Export" button to save your design as an image. </li>
-                <hr>
-                <li>Use the "Dark Mode" toggle to switch between light and dark mode.</li>
-                <hr>
-                <li>Search with:
-                    <div style="margin-top: 5px;"></div>
-                    <ul style="margin-left: 10px;">
-                        <li>Model Name</li>
-                        <li>SKU</li>
-                        <li>Brand</li>
-                        <li>Input/Output Name ie. LINE IN, XLR OUT</li>
-                        <li>Product Category - <span style="font-style: italic">See an overview of categories ↓</span></li>
-                        <li><i>Combine search terms by seperating with space</i></li>
-                    </ul>
-                </li>
-                <hr>
-                <li><b>Categories</b>
-                    <ul style="padding-left: 5px;">
-                        <li>
-                            <details>
-                                <summary>Amplifiers</summary>
-                                <ul>
-                                    <li>Power Amplifiers</li>
-                                    <li>Power Amplifiers CI</li>
-                                    <li>Pre Amplifiers</li>
-                                    <li>Integrated Amplifiers</li>
-                                    <li>Compact Amplifiers</li>
-                                    <li>Compact Amplifiers with Streaming</li>
-                                    <li>Multi-Channel Amplifiers</li>
-                                    <li>Multiroom Amplifiers</li>
-                                    <li>Recievers</li>
-                                    <li>Home Cinema Recievers</li>
-                                    <li>Amplifiers with Streaming</li>
-                                    <li>Amplifiers with CD</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>TV &amp; Surround</summary>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Utilities</summary>
-                                <ul>
-                                    <li>CD Players</li>
-                                    <li>D/A Converters</li>
-                                    <li>A/D Converters</li>
-                                    <li>Headphone Amplifiers</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Radios</summary>
-                                <ul>
-                                    <li>Radios</li>
-                                    <li>Radios with DAB</li>
-                                    <li>Radios with FM</li>
-                                    <li>Internet Radios</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Streamers</summary>
-                                <ul>
-                                    <li>Streamers</li>
-                                    <li>Streamers with Radio</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Speakers</summary>
-                                <ul>
-                                    <li>Active Speakers</li>
-                                    <li>Passive Speakers</li>
-                                    <li>Floorstanding Speakers</li>
-                                    <li>Compact Speakers</li>
-                                    <li>On-Wall Speakers</li>
-                                    <li>Wireless/Bluetooth Speakers</li>
-                                    <li>Soundbar/TV Audio</li>
-                                    <li>Subwoofers</li>
-                                    <li>CI &amp; Outdoor Speakers</li>
-                                    <li>Center Speakers</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Turntables</summary>
-                                <ul>
-                                    <li>Turntables</li>
-                                    <li>RIAA Amplifiers</li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>TV</summary>
-                                <ul>
-                                    <li>OLED</li>
-                                </ul>
-                            </details>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <h3 style="margin-top: 0;">Help</h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc84cmZgNr_lxXG7VqGd6xRD4UWbcvBiuaOobcauY2_yj3aMA/viewform?usp=dialog"
+            target="_blank" style="text-decoration: none; color: #007BFF;">Feedback</a>
+        <ul>
+            <li>Akut Support: Tlf. 30686303</li>
+            <hr>
+            <li>Prices are NOT updated real time, so never rely on the price list</li>
+            <hr>
+            <li>Use the search term "Peripherals" or "Stand-in Products" to filter stand-in products</li>
+            <hr>
+            <li><span style="color:#1a8c00; font-weight:600;">NEW</span> Add a Floor Plan to your canvas. .JPG, .PNG Files
+                Supported</li>
+            <hr>
+            <li><span style="color:#1a8c00; font-weight:600;">NEW</span> Enter CI Mode. Adjust the size of products
+                from 20px to 180px to match Floor Plan</li>
+            <hr>
+            <li><span style="color:#1a8c00; font-weight:600;">NEW</span> Filter by product category and brand with
+                dropdown selectors. You can still write categories/brands manually in the search field.</li>
+            <hr>
+            <li>Drag & drop products from the list onto the canvas.</li>
+            <hr>
+            <li>Click the card's image to see the backside.</li>
+            <hr>
+            <li>Double-click a card to delete it.</li>
+            <hr>
+            <li>Click an output dot, then an input dot to draw a wire.</li>
+            <hr>
+            <li>Click the wire to add a specific cable.</li>
+            <hr>
+            <li>Scroll to zoom, and click and drag empty canvas to pan.</li>
+            <hr>
+            <li>Use the "Add Text" button to insert notes onto the canvas.</li>
+            <hr>
+            <li>Click the "Export" button to save your design as an image. </li>
+            <hr>
+            <li>Use the "Dark Mode" toggle to switch between light and dark mode.</li>
+            <hr>
+            <li>Search with:
+                <div style="margin-top: 5px;"></div>
+                <ul style="margin-left: 10px;">
+                    <li>Model Name</li>
+                    <li>SKU</li>
+                    <li>Brand</li>
+                    <li>Input/Output Name ie. LINE IN, XLR OUT</li>
+                    <li>Product Category - <span style="font-style: italic">See an overview of categories ↓</span>
+                    </li>
+                    <li><i>Combine search terms by seperating with space</i></li>
+                </ul>
+            </li>
+            <hr>
+            <li><b>Categories</b>
+                <ul style="padding-left: 5px;">
+                    <li>
+                        <details>
+                            <summary>Amplifiers</summary>
+                            <ul>
+                                <li>Power Amplifiers</li>
+                                <li>Power Amplifiers CI</li>
+                                <li>Pre Amplifiers</li>
+                                <li>Integrated Amplifiers</li>
+                                <li>Compact Amplifiers</li>
+                                <li>Compact Amplifiers with Streaming</li>
+                                <li>Multi-Channel Amplifiers</li>
+                                <li>Multiroom Amplifiers</li>
+                                <li>Recievers</li>
+                                <li>Home Cinema Recievers</li>
+                                <li>Amplifiers with Streaming</li>
+                                <li>Amplifiers with CD</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>TV &amp; Surround</summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Utilities</summary>
+                            <ul>
+                                <li>CD Players</li>
+                                <li>D/A Converters</li>
+                                <li>A/D Converters</li>
+                                <li>Headphone Amplifiers</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Radios</summary>
+                            <ul>
+                                <li>Radios</li>
+                                <li>Radios with DAB</li>
+                                <li>Radios with FM</li>
+                                <li>Internet Radios</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Streamers</summary>
+                            <ul>
+                                <li>Streamers</li>
+                                <li>Streamers with Radio</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Speakers</summary>
+                            <ul>
+                                <li>Active Speakers</li>
+                                <li>Passive Speakers</li>
+                                <li>Floorstanding Speakers</li>
+                                <li>Compact Speakers</li>
+                                <li>On-Wall Speakers</li>
+                                <li>Wireless/Bluetooth Speakers</li>
+                                <li>Soundbar/TV Audio</li>
+                                <li>Subwoofers</li>
+                                <li>CI &amp; Outdoor Speakers</li>
+                                <li>Center Speakers</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Turntables</summary>
+                            <ul>
+                                <li>Turntables</li>
+                                <li>RIAA Amplifiers</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>TV</summary>
+                            <ul>
+                                <li>OLED</li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/js/OverlayScrollbars.min.js"></script>
     <div id="login-overlay">
         <div id="login-card">
             <img src="assets/logo.webp" alt="Logo" width="100%" />
             <div id="alignment">
                 <input id="username" type="text" placeholder="Shop Number" autofocus />
-                <button id="submit-btn"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                    <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><polyline points="8 7 8 2 20 2 20 22 8 22 8 17"></polyline><line x1="4" y1="12" x2="16" y2="12"></line><polyline points="12 8 16 12 12 16"></polyline></svg></button>
+                <button id="submit-btn">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter">
+                        <polyline points="8 7 8 2 20 2 20 22 8 22 8 17"></polyline>
+                        <line x1="4" y1="12" x2="16" y2="12"></line>
+                        <polyline points="12 8 16 12 12 16"></polyline>
+                    </svg>
+                </button>
             </div>
             <div id="error"></div>
         </div>

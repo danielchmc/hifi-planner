@@ -54,12 +54,9 @@
     display: inline-block;
     width: 5vh;
     height: 5vh;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
 }
 
 .slider {
@@ -69,7 +66,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--hifi-black);
+    background-color: var(--hifi-white);
     -webkit-transition: .4s;
     transition: .2s;
 }
@@ -85,13 +82,13 @@
     width: 1.8vh;
     left: 4px;
     bottom: 4px;
-    background-color: var(--hifi-white);
+    background-color: var(--hifi-black);
     -webkit-transition: .3s;
     transition: .3s;
 }
 
 input:checked+.slider {
-    background-color: var(--hifi-black);
+    background-color: var(--hifi-white);
 }
 
 h3 {
@@ -145,7 +142,7 @@ input:checked+.slider:hover {
 #scrollBtn {
     position: fixed;
     top: calc(100vh - 60px);
-    right: calc(100vw - 288px);
+    right: calc(100vw - 250px);
     display: none;
     /* Hidden by default */
     padding: 0px 0px;
@@ -170,24 +167,31 @@ input:checked+.slider:hover {
     0% {
         transform: translateY(0px);
     }
+
     20% {
         transform: translateY(0px);
     }
+
     30% {
         transform: translateY(0px);
     }
+
     80% {
         transform: translateY(0px);
     }
+
     85% {
         transform: translateY(-5px);
     }
+
     90% {
         transform: translateY(0px);
     }
+
     95% {
         transform: translateY(-5px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -210,12 +214,13 @@ input:checked+.slider:hover {
 
 
 /* Optional: Style for the container */
-
+/*
 .toggle-container,
 #export-btn,
 #add-text-btn,
 #toggle-price-panel-btn,
-#help-toggle-btn {
+#help-toggle-btn,
+#ciModeToggle {
     position: absolute;
     top: 0vh;
     right: 0vh;
@@ -240,10 +245,34 @@ input:checked+.slider:hover {
 #export-btn:active,
 #add-text-btn:active,
 #toggle-price-panel-btn:active,
-#help-toggle-btn:active {
+#help-toggle-btn:active,
+#ciModeToggle:active {
     background-color: var(--primary-color);
     transform: translate(-50%, -50%) scale(0.95);
 }
+
+/* Export Button */
+/*
+
+#export-btn:hover,
+#add-text-btn:hover,
+#toggle-price-panel-btn:hover,
+#help-toggle-btn:hover,
+#ciModeToggle {
+    background: var(--primary-color);
+}
+
+#export-btn:active,
+#add-text-btn:active,
+#toggle-price-panel-btn:active,
+#help-toggle-btn:active,
+#ciModeToggle:active {
+    transform-origin: center;
+    box-shadow: rgba(0, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+*/
 
 svg {
     width: 32px;
@@ -269,7 +298,7 @@ body {
     background: var(--hifi-white);
     background-size: 400% 400%;
     animation: gradient 60s ease infinite;
-    transition: background 0.2s;
+    transition: background-color 1s;
     height: 100vh;
 }
 
@@ -281,14 +310,15 @@ body::-webkit-scrollbar {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
-
 
 /* Canvas Container fills the whole window */
 
@@ -299,9 +329,10 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     overflow: auto;
-    cursor: grab;
+    cursor: default;
     background-color: var(--hifi-white);
     background-size: 10px 10px;
+    transition: background-color 1s;
 }
 
 #canvas-container::-webkit-scrollbar {
@@ -423,7 +454,7 @@ body::-webkit-scrollbar {
     position: fixed;
     top: 2.5vh;
     left: 2.5vh;
-    width: 280px;
+    width: 240px;
     background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 0px;
@@ -431,6 +462,7 @@ body::-webkit-scrollbar {
     z-index: 1300;
     overflow: hidden;
     transition: transform 0.3s ease, height 0.3s;
+    min-height: 33px;
 }
 
 #floating-product-list header {
@@ -443,10 +475,24 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
     transition: transform 0.3s ease, background-color 0.2s ease, height 0.3s;
+
+    background-color: var(--hifi-black);
+    opacity: 1;
+    z-index: 1350;
+    transition-duration: 0s;
+    transform-origin: center;
+    box-sizing: border-box;
+    /* include border in width/height */
+    padding: 3px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--hifi-white);
+    cursor: pointer;
+    transition: background .15s, transform 0s, box-shadow .1s;
+    opacity: 0.97;
 }
 
 #floating-product-list header:hover {
-    background-color: var(--primary-color);
+    opacity: 1;
 }
 
 #floating-product-list header:active {
@@ -454,7 +500,7 @@ body::-webkit-scrollbar {
 }
 
 #floating-product-list header span {
-    font-weight: bold;
+    font-weight:normal;
 }
 
 #floating-product-list header .toggle-icon {
@@ -463,7 +509,7 @@ body::-webkit-scrollbar {
 
 #floating-product-list .content {
     padding: 12px;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh);
     overflow-y: auto;
     scrollbar-width: none;
 }
@@ -478,11 +524,11 @@ body::-webkit-scrollbar {
 #filter-container input,
 #filter-container select {
     width: 100%;
-    padding: 8px 10px;
+    padding: 8px 5px;
     margin-bottom: 5px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 11px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -523,7 +569,7 @@ body::-webkit-scrollbar {
 }
 
 .collapsible-content {
-    max-height: 0;
+    max-height: auto;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
@@ -563,7 +609,6 @@ body::-webkit-scrollbar {
 .product img {
     width: 80px;
     height: 80px;
-    mix-blend-mode: normal;
     object-fit: contain;
     margin-bottom: 5px;
     transition: transform 0.3s ease;
@@ -608,23 +653,7 @@ button {
 }
 
 
-/* Export Button */
 
-#export-btn:hover,
-#add-text-btn:hover,
-#toggle-price-panel-btn:hover,
-#help-toggle-btn:hover {
-    background: var(--primary-color);
-}
-
-#export-btn:active,
-#add-text-btn:active,
-#toggle-price-panel-btn:active,
-#help-toggle-btn:active {
-    transform-origin: center;
-    box-shadow: rgba(0, 0, 0, 1);
-    transform: translate(-50%, -50%) scale(0.95);
-}
 
 #help-content ul {
     list-style-type: none;
@@ -652,22 +681,6 @@ button {
 
 #help-content details ul {
     padding-left: 20px;
-}
-
-#export-btn svg,
-#add-text-btn svg {
-    width: 50%;
-    height: 50%;
-}
-
-#help-toggle-btn svg {
-    width: 38%;
-    height: 38%;
-}
-
-.toggle-price-panel-btn svg {
-    width: 40%;
-    height: 40%;
 }
 
 #price-panel.hidden {
@@ -749,7 +762,7 @@ button {
     border-radius: 3px;
     padding: 0px;
     padding-bottom: 10px;
-    min-width: 200px;
+    width: 200px;
     box-shadow: 0 1px 3px var(--shadow-color);
     transition: border-color 0.1s ease, transform 0.2s ease;
     animation: fadeInUp 0.4s ease, box-shadow 2s ease;
@@ -970,6 +983,7 @@ h1 {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -980,9 +994,11 @@ h1 {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.02);
     }
+
     100% {
         transform: scale(1);
     }
@@ -1104,4 +1120,293 @@ h1 {
 
 .hidden-product {
     display: none;
+}
+
+/*******************************************/
+/*****************CI-MODE*******************/
+/*******************************************/
+/* === CI MODE ==================================== */
+body.ci-mode {
+    --ci-card-w: 120px;
+    background-color: #FFFFFF;
+    --canvas-bg: #FFFFFF;
+    /* easy one‑point resize later */
+}
+
+/* shrink everything automatically */
+.ci-mode .canvas-item,
+.canvas-item.ci-mode {
+    padding: 4px;
+    box-shadow: none;
+}
+
+/* hide name and I/O rows */
+.ci-mode .canvas-item-name,
+.ci-mode .io-container {
+    display: none !important;
+}
+
+/* slim image & “knock out” white background */
+.ci-mode .canvas-item img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    /* white → transparent‑ish */
+    background: transparent;
+}
+
+body.ci-mode #canvas-container {
+    background-color: #FFFFFF;
+}
+
+body.ci-mode #text-item {
+    mix-blend-mode: normal !important;
+}
+
+/* 3.  Optional: also blend the thumbnails in the sidebar while CI‑mode is on */
+body.ci-mode #product-items .product img {
+    mix-blend-mode: multiply;
+}
+
+.ci-mode .canvas-item,
+.canvas-item.ci-mode {
+    background: transparent !important;
+    /* let the grid show through          */
+    border-color: transparent;
+    /* optional –– removes the thin frame */
+}
+
+.ci-mode .canvas-item.text-item {
+    border-color: var(--border-color);
+    mix-blend-mode: normal;
+}
+
+body.ci-mode .canvas-item {
+    isolation: auto !important;
+}
+
+body.ci-mode .canvas-item,
+body.ci-mode #product-items .product img {
+    mix-blend-mode: multiply;
+    /* !important = override guard  */
+    background: #FFFFFF !important;
+}
+
+body:not(.ci-mode) .canvas-item {
+    background: var(--panel-bg) !important;
+    border-color: var(--border-color) !important;
+    width: unset !important;
+    height: unset !important;
+}
+
+/* === CI‑MODE · image size driven by --ci-img-size ====================== */
+body.ci-mode .canvas-item img {
+    max-width: var(--ci-img-size, 60px);
+    height: auto;
+}
+
+/* FLOOR‒PLAN LAYER  ---------------------------------------------- */
+#floorplan-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    /* so we can scale from top‑left */
+    pointer-events: none;
+    /* layer itself is non‑interactive */
+    z-index: 0;
+    /* under .canvas-item (which is z‑index:1) */
+    opacity: 0.85;
+    /* faintly greyed so speakers pop on top */
+}
+
+body.ci-mode #floorplan-layer {
+    mix-blend-mode: multiply;
+    /* knocks out any white in blueprint scans */
+}
+
+.ci-img-size {
+    translate: -50% -50%;
+}
+
+/* CI‑Mode cards shrink/grow with the image size */
+body.ci-mode .canvas-item {
+    width: calc(var(--ci-img-size, 60px) + 8px) !important;
+    /* 4 px pad L/R */
+    height: calc(var(--ci-img-size, 60px) + 14px) !important;
+    /* 4 px top + 10 px bottom */
+}
+
+/* square picture that drives the card size */
+body.ci-mode .canvas-item img {
+    width: var(--ci-img-size, 60px);
+    height: var(--ci-img-size, 60px);
+}
+
+/* ============================================================
+   ICON‑BUTTON  (export, add‑text, upload, toggles…)
+   ============================================================ */
+.icon-btn {
+    position: relative;
+    top: 0vh;
+    right: 0vh;
+    transform: translate(-50%, -50%);
+    background-color: var(--hifi-black);
+    font-size: 0;
+    opacity: 1;
+    z-index: 1350;
+    transition-duration: 0s;
+    transform-origin: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    /* include border in width/height */
+
+    --btn-size: 5vh;
+    /* dial once for ALL buttons      */
+    width: var(--btn-size);
+    height: var(--btn-size);
+    padding: 0;
+    border: 1px solid var(--border-color);
+    background: var(--hifi-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .15s, transform 0s, box-shadow .1s;
+
+}
+
+.icon-btn svg {
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.icon-btn:hover {
+    background: var(--primary-color);
+}
+
+.icon-btn:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+.icon-btn:focus {
+    outline: 1px solid var(--border-color);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    /* Safari / old Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* the spec */
+}
+
+.icon-btn input[type="checkbox"] {
+    position: absolute;
+    /* pull it out of normal flow            */
+    inset: 0;
+    /* stretch over the whole button         */
+    margin: 0;
+    /* reset any UA default                  */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* invisible but still focus‑able/click‑able */
+    cursor: pointer;
+    /* keeps hand cursor on the whole button */
+    appearance: none;
+    /* removes the browser tick graphic      */
+    transition-duration: 0ms !important;
+}
+
+input[type="checkbox"]:checked+.icon-btn,
+input[type="radio"]:checked+.icon-btn,
+.icon-btn[aria-pressed="true"] {
+    background: var(--primary-color);
+    /* “pressed” look for toggles */
+}
+
+.icon-btn .icon.on {
+    display: none
+}
+
+/* default */
+.icon-btn>input:checked~.icon.on {
+    display: block
+}
+
+.icon-btn>input:checked~.icon.off {
+    display: none
+}
+
+/*  tiny red circle in the top‑right corner  */
+.icon-btn.has-badge .badge {
+    position: absolute;
+    top: -4px;
+    /* tweak to taste (btn = 5 vh) */
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    background: green;
+    /* red */
+    border-radius: 50%;
+    pointer-events: none;
+    /* never blocks clicks */
+    transition: opacity .25s ease;
+}
+
+/*  hide it after the button is “used” … */
+.icon-btn.has-badge.used .badge {
+    opacity: 0;
+    /* fades out          */
+    pointer-events: none;
+    /* stays non-blocking */
+}
+.icon-btn.btn-disabled,
+.icon-btn.btn-disabled:hover,
+.icon-btn.btn-disabled:active {
+    background:#d9d9d9;          /* fixed grey */
+    border:1px solid #bfbfbf;
+    cursor:not-allowed;
+    opacity:.6;
+    transform:none;              /* cancel the scale‑down press */
+    box-shadow:none;
+    pointer-events:none;         /* mouse events ignored ⇒ no hover */
+    translate: -50% -50%;
+    transition-duration: 0s;
+    transform-origin: center;
+    position: relative;
+    align-items: center;
+}
+
+/* === CI‑mode confirmation ========================================= */
+#ciConfirm {
+    /* box ------------------------------------------------------------ */
+    max-width: 360px;
+    padding: 1.6rem 1rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--panel-bg);
+    color: var(--hifi-black);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .35);
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* dark‑mode flavour (optional) */
+.dark-mode #ciConfirm {
+    background: #2a2a2c;
+    color: #eee;
+    border-color: #444;
+}
+
+/* Back‑drop that appears behind the dialog */
+#ciConfirm::backdrop {
+    background: rgba(0, 0, 0, .55);
 }

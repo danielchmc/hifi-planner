@@ -18,6 +18,15 @@ const products = [{
     outputs: [
         "SUB OUT"
     ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
     sku: "ARGFORTEA55WIFI",
     image: [
         "images/argon-audio-forte-a55-wifi-front.jpg",
@@ -40,6 +49,15 @@ const products = [{
     ],
     outputs: [
         "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
     ],
     sku: "ARGFORTEA55MK2",
     image: [
@@ -64,6 +82,15 @@ const products = [{
     outputs: [
         "SUB OUT"
     ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
     sku: "ARGFORTEA5WIFI",
     image: [
         "images/argon-audio-forte-a5-wifi-front.jpg",
@@ -86,6 +113,15 @@ const products = [{
     ],
     outputs: [
         "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
     ],
     sku: "ARGFORTEA4WIFI",
     image: [
@@ -110,6 +146,15 @@ const products = [{
     outputs: [
         "SUB OUT"
     ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
     sku: "ARGFENRISA55",
     image: [
         "images/argon-audio-fenris-a55-front.jpg",
@@ -133,6 +178,15 @@ const products = [{
     outputs: [
         "SUB OUT"
     ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
     sku: "ARGFORTEA5MK2",
     image: [
         "images/argon-audio-forte-a5-mk2-front.jpg",
@@ -145,6 +199,9 @@ const products = [{
     category: "Passive Speakers",
     inputs: [
         "SPEAKER IN"
+    ],
+    intype: [
+        "Speaker Cable"
     ],
     sku: "ARGALTO55MK2",
     image: [
@@ -160,6 +217,9 @@ const products = [{
     ],
     inputs: [
         "SPEAKER IN"
+    ],
+    intype: [
+        "Speaker Cable"
     ],
     sku: "ARGFORUS55",
     image: [
@@ -182,6 +242,15 @@ const products = [{
     ],
     outputs: [
         "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
     ],
     sku: "ARGFORTEA4MK2",
     image: [
@@ -502,25 +571,6 @@ const products = [{
     image: [
         "images/argon-audio-radio3-front.jpg",
         "images/argon-audio-radio3-back.jpg"
-    ]
-}, {
-    brand: "Argon Audio",
-    name: "RADIO2",
-    price: "1499",
-    category: [
-        "Radios"
-    ],
-    inputs: [
-        "AUX IN"
-    ],
-    outputs: [
-        "PHONES OUT",
-        "LINE OUT"
-    ],
-    sku: "ARGRADIO2",
-    image: [
-        "images/argon-audio-radio2-front.jpg",
-        "images/argon-audio-radio2-back.jpg"
     ]
 }, {
     brand: "Argon Audio",
@@ -1842,17 +1892,6 @@ const products = [{
     image: [
         "images/bang--olufsen-beoamp-2-front.jpg",
         "images/bang--olufsen-beoamp-2-back.jpg"
-    ]
-}, {
-    brand: "Bang & Olufsen",
-    name: "Beosound A1 2nd Gen",
-    price: "2390",
-    category: [
-        "Wireless/Bluetooth Speakers"
-    ],
-    sku: "BOA1G2",
-    image: [
-        "images/bang--olufsen-beosound-a1-2nd-gen-front.jpg"
     ]
 }, {
     brand: "Bang & Olufsen",
@@ -4456,7 +4495,7 @@ const products = [{
         "images/dali-sound-hub-compact-back.jpg"
     ]
 }, {
-    brand: "DALI ",
+    brand: "DALI",
     name: "Phantom E-80",
     price: "2599",
     category: [
@@ -4471,7 +4510,7 @@ const products = [{
         "images/dali-phantom-e-80-back.jpg"
     ]
 }, {
-    brand: "DALI ",
+    brand: "DALI",
     name: "Alteco C-1",
     price: "3398",
     category: [
@@ -4487,7 +4526,7 @@ const products = [{
         "images/dali-alteco-c-1-back.jpg"
     ]
 }, {
-    brand: "DALI ",
+    brand: "DALI",
     name: "Katch One",
     price: "5499",
     category: [
@@ -7108,23 +7147,16 @@ const products = [{
         "TRIGGER IN"
     ],
     outputs: [
-        "BALANCED OUT 1",
-        "BALANCED OUT 2",
-        "BALANCED OUT 3",
-        "BALANCED OUT 4",
-        "BALANCED OUT 5",
-        "BALANCED OUT 6",
-        "BALANCED OUT 7",
-        "BALANCED OUT 8",
-        "BALANCED OUT 9",
-        "BALANCED OUT 10",
-        "BALANCED OUT 11",
-        "BALANCED OUT 12",
-        "BALANCED OUT 13",
-        "BALANCED OUT 14",
-        "BALANCED OUT 15",
-        "BALANCED OUT 16",
-        "COAXIAL OUT"
+        "SPEAKON OUT 1",
+        "SPEAKON OUT 2",
+        "SPEAKON OUT 3",
+        "SPEAKON OUT 4",
+        "SPEAKON OUT 5",
+        "SPEAKON OUT 6",
+        "SPEAKON OUT 7",
+        "SPEAKON OUT 8",
+        "TRIGGER OUT"
+        
     ],
     sku: "LYNGMXA8400",
     image: [
@@ -9262,6 +9294,7 @@ const products = [{
     brand: "Peripherals",
     name: "SPEAKER SWITCH 2-WAY",
     price: "599",
+    category: "Stand-in Products",
     inputs: [
         "SPEAKER L/R IN"
     ],
@@ -9276,6 +9309,7 @@ const products = [{
     brand: "Peripherals",
     name: "SPEAKER TERMINALS ADVANCED",
     price: "599",
+    category: "Stand-in Products",
     inputs: [
         "SPEAKER -",
         "SPEAKER +"
@@ -9291,6 +9325,7 @@ const products = [{
     brand: "Peripherals",
     name: "CD PLAYER",
     price: "0",
+    category: "Stand-in Products",
     outputs: [
         "LINE OUT",
         "OPTICAL OUT"
@@ -9302,6 +9337,7 @@ const products = [{
     brand: "Peripherals",
     name: "TV",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "HDMI eARC",
         "HDMI ARC"
@@ -9319,6 +9355,7 @@ const products = [{
     brand: "Peripherals",
     name: "AMPLIFIER",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "HDMI eARC",
         "OPTICAL",
@@ -9339,6 +9376,7 @@ const products = [{
     brand: "Peripherals",
     name: "SPEAKER PASSIVE",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "SPEAKER OUT"
     ],
@@ -9349,6 +9387,7 @@ const products = [{
     brand: "Peripherals",
     name: "SPEAKER ACTIVE",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "HDMI eARC",
         "OPTICAL",
@@ -9367,6 +9406,7 @@ const products = [{
     brand: "Peripherals",
     name: "TURNTABLE",
     price: "0",
+    category: "Stand-in Products",
     outputs: [
         "PHONO OUT",
         "LINE OUT"
@@ -9378,6 +9418,7 @@ const products = [{
     brand: "Peripherals",
     name: "RIAA AMPLIFIER",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "PHONO IN"
     ],
@@ -9391,6 +9432,7 @@ const products = [{
     brand: "Peripherals",
     name: "INPUT SWITCH (not a SKU)",
     price: "0",
+    category: "Stand-in Products",
     inputs: [
         "RCA"
     ],
@@ -9704,20 +9746,6 @@ const products = [{
     ]
 }, {
     brand: "Sonos",
-    name: "Arc",
-    price: "6109",
-    category: [
-        "Soundbar/TV Audio"
-    ],
-    inputs: [
-        "HDMI eARC IN"
-    ],
-    sku: "SONARC",
-    image: [
-        "images/sonos-arc-front.jpg"
-    ]
-}, {
-    brand: "Sonos",
     name: "Sub Mini",
     price: "3323",
     category: [
@@ -9727,17 +9755,6 @@ const products = [{
     image: [
         "images/sonos-sub-mini-front.jpg",
         "images/sonos-sub-mini-back.jpg"
-    ]
-}, {
-    brand: "Sonos",
-    name: "Sub (Gen 3)",
-    price: "6699",
-    category: [
-        "Subwoofers"
-    ],
-    sku: "SONSUBG3",
-    image: [
-        "images/sonos-sub-gen-3-front.jpg"
     ]
 }, {
     brand: "Sonos",
@@ -9767,7 +9784,7 @@ const products = [{
     ]
 }, {
     brand: "Marshall",
-    name: "Action III",
+    name: "Acton III",
     price: "1585",
     category: [
         "Wireless/Bluetooth Speakers"
@@ -10119,7 +10136,8 @@ const products = [{
         "Floorstanding Speakers"
     ],
     inputs: [
-        "SPEAKER IN"
+        "SPEAKER IN",
+        "SPEAKON IN"
     ],
     sku: "VESTV15C",
     image: [
@@ -10134,7 +10152,8 @@ const products = [{
         "Floorstanding Speakers"
     ],
     inputs: [
-        "SPEAKER IN"
+        "SPEAKER IN",
+        "SPEAKON IN"
     ],
     sku: "VESTV12C",
     image: [
