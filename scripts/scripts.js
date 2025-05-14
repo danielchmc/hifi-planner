@@ -1756,6 +1756,7 @@ function createTextCanvasItem() {
     // Append the container to canvasContent first so we can measure it.
     canvasContent.appendChild(container);
 
+    // Snap to grid functionality
     container.style.width = roundToGrid(container.offsetWidth) + "px";
     container.style.height = roundToGrid(container.offsetHeight) + "px";
 

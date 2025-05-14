@@ -6887,7 +6887,7 @@ const products = [{
 }, {
     brand: "KEF",
     name: "LSX II LT",
-    price: "9995",
+    price: "7690",
     category: [
         "Active Speakers",
         "Compact Speakers",

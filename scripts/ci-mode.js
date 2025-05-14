@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "display:none;position:absolute;pointer-events:none;";
     canvasContent.insertBefore(planLayer, canvasContent.firstChild);
 
-    /* — upload blueprint and fill the viewport — */
+    /* — upload floorplan and fill the viewport — */
     uploadInput.addEventListener("change", e => {
         const file = e.target.files[0];
         if (!file) return;
@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
             planLayer.style.transform = "none";
 
             /* —— compute current viewport —— */
+                // Compute the center in content coordinates.
+            /*const vpW = (canvasContainer.scrollLeft + (canvasContainer.clientWidth) / 2) / zoom;
+            const vpH = (canvasContainer.scrollTop + (canvasContainer.clientHeight) / 2) / zoom;*/
             const vpW = canvasContainer.clientWidth;
             const vpH = canvasContainer.clientHeight;
             const scale = Math.max(
@@ -57,8 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             /* —— place + scale —— */
-            planLayer.style.left = canvasContainer.scrollLeft + "px";
-            planLayer.style.top = canvasContainer.scrollTop + "px";
+            planLayer.style.left = (canvasContainer.scrollLeft + (canvasContainer.clientWidth * 0.3) / 2) / zoom + "px";
+            planLayer.style.top = (canvasContainer.scrollTop + (canvasContainer.clientHeight * 0.3) / 2) / zoom + "px";
+            /*planLayer.style.left = canvasContainer.scrollLeft + "px";
+            planLayer.style.top = canvasContainer.scrollTop + "px";*/
             planLayer.style.transformOrigin = "0 0";
             planLayer.style.transform = `scale(${scale})`;
             planLayer.style.display = "block";
