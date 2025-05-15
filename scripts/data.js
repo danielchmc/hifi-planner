@@ -2215,7 +2215,10 @@ const products = [{
 }, {
     brand: "Bluesound",
     name: "HUB (CB130)",
-    price: "2499",
+    price: "2699",
+    category: [
+        "Streamers"
+    ],
     inputs: [
         "HDMI eARC",
         "COAXIAL",

@@ -459,7 +459,7 @@ body::-webkit-scrollbar {
     border: 1px solid var(--border-color);
     border-radius: 0px;
     box-shadow: 0 2px 8px var(--shadow-color);
-    z-index: 1300;
+    z-index: 9999;
     overflow: hidden;
     transition: transform 0.3s ease, height 0.3s;
     min-height: 33px;
@@ -792,6 +792,7 @@ button {
     margin: 0 auto;
     padding-top: 5px;
     z-index: 3000;
+    transform-origin: center;
 }
 
 .canvas-item img:hover {
@@ -915,7 +916,7 @@ button {
     border-radius: 8px;
     padding: 10px;
     max-width: 300px;
-    z-index: 1000;
+    z-index: 9999;
     color: var(--hifi-black);
 }
 
@@ -1127,6 +1128,7 @@ h1 {
 /*******************************************/
 /* === CI MODE ==================================== */
 body.ci-mode {
+    --ci-img-size-norm: .calc(var(--ci-img-size) / 180);
     --ci-card-w: 120px;
     background-color: #FFFFFF;
     --canvas-bg: #FFFFFF;
@@ -1201,6 +1203,8 @@ body:not(.ci-mode) .canvas-item {
 
 /* === CI‑MODE · image size driven by --ci-img-size ====================== */
 body.ci-mode .canvas-item img {
+    /*transform-origin: center !important;
+    transform: scale(var(--ci-img-size-norm));*/
     max-width: var(--ci-img-size, 60px);
     height: auto;
 }
@@ -1231,16 +1235,20 @@ body.ci-mode #floorplan-layer {
 
 /* CI‑Mode cards shrink/grow with the image size */
 body.ci-mode .canvas-item {
-    width: calc(var(--ci-img-size, 60px) + 8px) !important;
+    transform-origin: center !important;
+    /*width: calc(var(--ci-img-size, 60px) + 8px) !important;
     /* 4 px pad L/R */
-    height: calc(var(--ci-img-size, 60px) + 14px) !important;
+    /*height: calc(var(--ci-img-size, 60px) + 14px) !important;
     /* 4 px top + 10 px bottom */
+    transform: scale(var(--ci-img-size)/180) !important;
 }
 
 /* square picture that drives the card size */
 body.ci-mode .canvas-item img {
-    width: var(--ci-img-size, 60px);
-    height: var(--ci-img-size, 60px);
+    /*width: var(--ci-img-size, 60px);
+    height: var(--ci-img-size, 60px);*/
+    transform-origin: center !important;
+    transform: scale(var(--ci-img-size)/180) !important;
 }
 
 /* ============================================================
