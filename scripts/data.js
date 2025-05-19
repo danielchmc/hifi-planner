@@ -5458,7 +5458,7 @@ const products = [{
     inputs: [
         "ANALOG IN",
         "OPTICAL IN 1",
-        "OPTICAL 2"
+        "OPTICAL IN 2"
     ],
     outputs: [
         "SUB OUT",
