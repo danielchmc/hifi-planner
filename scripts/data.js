@@ -7296,7 +7296,7 @@ const products = [{
         "XLR MIC"
     ],
     outputs: [
-        "ANALOG BALANCED OUT",
+        "BALANCED OUT",
         "ANALOG OUT",
         "TRIGGER OUT",
         "SPEAKER L/R"
