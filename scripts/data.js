@@ -7159,7 +7159,7 @@ const products = [{
         "SPEAKON OUT 7",
         "SPEAKON OUT 8",
         "TRIGGER OUT"
-        
+
     ],
     sku: "LYNGMXA8400",
     image: [
@@ -7274,6 +7274,37 @@ const products = [{
     image: [
         "images/lyngdorf-tdai-1120-front.jpg",
         "images/lyngdorf-tdai-1120-back.jpg"
+    ]
+}, {
+    brand: "Lyngdorf",
+    name: "TDAI-2210",
+    price: "29999",
+    category: [
+        "Compact Amplifiers"
+    ],
+    inputs: [
+        "ANALOG IN 1",
+        "ANALOG IN 2",
+        "DIGITAL IN 1",
+        "DIGITAL IN 2",
+        "DIGITAL IN 3",
+        "DIGITAL IN 4",
+        "DITIGAL IN 5",
+        "HDMI IN",
+        "USB-C IN",
+        "TRIGGER IN",
+        "XLR MIC"
+    ],
+    outputs: [
+        "ANALOG BALANCED OUT",
+        "ANALOG OUT",
+        "TRIGGER OUT",
+        "SPEAKER L/R"
+    ],
+    sku: "LYNGTDAI2210",
+    image: [
+        "images/lyngdorf-tdai-2210-front.jpg",
+        "images/lyngdorf-tdai-2210-back.jpg"
     ]
 }, {
     brand: "Lyngdorf",
@@ -9462,6 +9493,22 @@ const products = [{
     image: [
         "images/radiant-acoustics-clarity-62-front.jpg",
         "images/radiant-acoustics-clarity-62-back.jpg"
+    ]
+}, {
+    brand: "Radiant Acoustics",
+    name: "Clarity 4.2",
+    price: "19998",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "RACLARITY42",
+    image: [
+        "images/radiant-acoustics-clarity-42-front.jpg",
+        "images/radiant-acoustics-clarity-42-back.jpg"
     ]
 }, {
     brand: "Sennheiser",
