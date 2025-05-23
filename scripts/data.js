@@ -1,5 +1,3 @@
-// Auto‑generated — DO NOT EDIT
-
 const products = [{
     brand: "Argon Audio",
     name: "Forte A55 WiFi",
@@ -2737,6 +2735,22 @@ const products = [{
     image: [
         "images/bowers--wilkins-asw610-front.jpg",
         "images/bowers--wilkins-asw610-back.jpg"
+    ]
+}, {
+    brand: "Bowers & Wilkins",
+    name: "AM-1",
+    price: "6998",
+    category: [
+        "CI & Outdoor Speakers",
+        "On-Wall Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "BWAM1",
+    image: [
+        "images/bowers--wilkins-am-1-front.jpg",
+        "images/bowers--wilkins-am-1-back.jpg"
     ]
 }, {
     brand: "Bowers & Wilkins",
