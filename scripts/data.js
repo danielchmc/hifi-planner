@@ -2176,7 +2176,7 @@ const products = [{
 }, {
     brand: "Bluesound",
     name: "Pulse M (P230)",
-    price: "3299",
+    price: "3399",
     category: [
         "Wireless/Bluetooth Speakers"
     ],
