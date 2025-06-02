@@ -8010,6 +8010,137 @@ const products = [{
     ]
 }, {
     brand: "Marantz",
+    name: "AV 20",
+    price: "40990",
+    category: [
+        "Surround-Processors"
+    ],
+    inputs: [
+        "PHONO IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "LINE IN 4",
+        "LINE IN 5",
+        "LINE IN 6",
+        "BALANCED IN 1",
+        "COAXIAL IN 1",
+        "COAXIAL IN 2",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6",
+        "HDMI IN 7"
+    ],
+    outputs: [
+        "ZONE 2 OUT",
+        "ZONE 3 OUT",
+        "PRE OUT FRONT",
+        "PRE OUT CENTER",
+        "PRE OUT SURROUND",
+        "PRE OUT SURROUND BACK",
+        "PRE OUT HEIGHT 1",
+        "PRE OUT HEIGHT 2",
+        "PRE OUT HEIGHT 3",
+        "PRE OUT HEIGHT 4",
+        "PRE OUT FRONT BAL",
+        "PRE OUT CENTER BAL",
+        "PRE OUT SURROUND BAL",
+        "PRE OUT SURROUND BACK BAL",
+        "PRE OUT HEIGHT 1 BAL",
+        "PRE OUT HEIGHT 2 BAL",
+        "PRE OUT HEIGHT 3 BAL",
+        "PRE OUT HEIGHT 4 BAL",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "HDMI OUT 3",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SUBWOOFER OUT 3",
+        "SUBWOOFER OUT 4",
+        "SUBWOOFER OUT 1 BAL",
+        "SUBWOOFER OUT 2 BAL",
+        "SUBWOOFER OUT 3 BAL",
+        "SUBWOOFER OUT 4 BAL",
+        "TRIGGER OUT 1",
+        "TRIGGER OUT 2",
+        "AMP CONTROL 1",
+        "AMP CONTROL 2"
+    ],
+    sku: "MARAAV20",
+    image: [
+        "images/marantz-av-20-front.jpg",
+        "images/marantz-av-20-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
+    name: "AMP 20",
+    price: "40990",
+    category: [
+        "Multi-Channel Amplifiers"
+    ],
+    inputs: [
+        "AMP CONTROL",
+        "LINE IN 1",
+        "BALANCED IN 1",
+        "LINE IN 2",
+        "BALANCED IN 2",
+        "LINE IN 3",
+        "BALANCED IN 3",
+        "LINE IN 4",
+        "BALANCED IN 4",
+        "LINE IN 5",
+        "BALANCED IN 5",
+        "LINE IN 6",
+        "BALANCED IN 6",
+        "LINE IN 7",
+        "BALANCED IN 7",
+        "LINE IN 8",
+        "BALANCED IN 8",
+        "LINE IN 9",
+        "BALANCED IN 9",
+        "LINE IN 10",
+        "BALANCED IN 10",
+        "LINE IN 11",
+        "BALANCED IN 11",
+        "LINE IN 12",
+        "BALANCED IN 12",
+        "LINE IN 13",
+        "BALANCED IN 13",
+        "LINE IN 14",
+        "BALANCED IN 14",
+        "LINE IN 15",
+        "BALANCED IN 15",
+        "LINE IN 16",
+        "BALANCED IN 16",
+        "TRIGGER IN"
+    ],
+    outputs: [
+        "SPEAKER 1",
+        "SPEAKER 2",
+        "SPEAKER 3",
+        "SPEAKER 4",
+        "SPEAKER 5",
+        "SPEAKER 6",
+        "SPEAKER 7",
+        "SPEAKER 8",
+        "SPEAKER 9",
+        "SPEAKER 10",
+        "SPEAKER 11",
+        "SPEAKER 12",
+        "TRIGGER OUT"
+    ],
+    sku: "MARAAMP20",
+    image: [
+        "images/marantz-amp-20-front.jpg",
+        "images/marantz-amp-20-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
     name: "SACD 30N",
     price: "22490",
     category: [
@@ -8322,6 +8453,22 @@ const products = [{
     image: [
         "images/mofi-electronics-sourcepoint-888-front.jpg",
         "images/mofi-electronics-sourcepoint-888-back.jpg"
+    ]
+},{
+    brand: "MoFi Electronics",
+    name: "Sourcepoint 10 Master Edition",
+    price: "29998",
+    category: [
+        "Passive Speakers",
+        "Floorstanding Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "MOFISOURCEPOINT10M",
+    image: [
+        "images/mofi-electronics-sourcepoint-master-edition-front.jpg",
+        "images/mofi-electronics-sourcepoint-master-edition-back.jpg"
     ]
 }, {
     brand: "MoFi Electronics",
