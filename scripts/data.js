@@ -8650,6 +8650,7 @@ const products = [{
         "OPTICAL IN 2",
         "AES/EBU IN",
         "XLR IN",
+        "HDMI IN",
         "PHONO IN",
         "SE IN",
         "TRIGGER IN"
@@ -8663,6 +8664,35 @@ const products = [{
     image: [
         "images/nad-m33-front.jpg",
         "images/nad-m33-back.jpg"
+    ]
+}, {
+    brand: "NAD",
+    name: "M33 V2",
+    price: "46999",
+    category: [
+        "Integrated Amplifiers"
+    ],
+    inputs: [
+        "COAXIAL IN 1",
+        "COAXIAL IN 2",
+        "OPTICAL IN 1",
+        "OPTICAL IN 2",
+        "AES/EBU IN",
+        "BALANCED IN 1",
+        "PHONO IN 1",
+        "LINE IN 1",
+        "HDMI eARC IN",
+        "TRIGGER IN"
+    ],
+    outputs: [
+        "SPEAKER A OUT",
+        "PRE OUT BALANCED",
+        "TRIGGER OUT"
+    ],
+    sku: "NADM33V2",
+    image: [
+        "images/nad-m33v2-front.jpg",
+        "images/nad-m33v2-back.jpg"
     ]
 }, {
     brand: "NAD",
@@ -8791,6 +8821,27 @@ const products = [{
     image: [
         "images/nad-m23-front.jpg",
         "images/nad-m23-back.jpg"
+    ]
+}, {
+    brand: "NAD",
+    name: "M23 V2",
+    price: "32999",
+    category: [
+        "Power Amplifiers"
+    ],
+    inputs: [
+        "BALANCED IN",
+        "LINE IN",
+        "TRIGGER IN"
+    ],
+    outputs: [
+        "SPEAKER OUT",
+        "TRIGGER OUT"
+    ],
+    sku: "NADM23V2",
+    image: [
+        "images/nad-m23v2-front.jpg",
+        "images/nad-m23v2-back.jpg"
     ]
 }, {
     brand: "NAD",
