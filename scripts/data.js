@@ -6985,22 +6985,6 @@ const products = [{
     ]
 }, {
     brand: "KEF",
-    name: "K692",
-    price: "12900",
-    inputs: [
-        "SPEAKER IN",
-        "LINE IN"
-    ],
-    outputs: [
-        "LINE OUT"
-    ],
-    sku: "KEFK692",
-    image: [
-        "images/kef-k692-front.jpg",
-        "images/kef-k692-back.jpg"
-    ]
-}, {
-    brand: "KEF",
     name: "KUBE 15 MIE",
     price: "9850",
     category: [
