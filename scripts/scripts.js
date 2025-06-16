@@ -439,14 +439,15 @@ window.addEventListener("DOMContentLoaded", () => {
         if (floatingProductList.classList.contains("collapsed")) {
             floatingProductList.classList.remove("collapsed");
             floatingProductList.style.height = "";
-            floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25B2;";
+            //floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25B2;";
             // Optionally, re-check scroll position to show the button if needed.
-            btn.style.display = scrollEl.scrollTop > 20 ? "block" : "none";
+            btn.style.display = "block";
         } else {
             floatingProductList.classList.add("collapsed");
             floatingProductList.style.height = "10px";
-            floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25BC;";
+            //floatingHeader.querySelector(".toggle-icon").innerHTML = "&#x25BC;";
             btn.style.display = "none";
+            console.log("Scroll button hidden");
         }
     });
 
