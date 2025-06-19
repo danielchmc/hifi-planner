@@ -382,13 +382,12 @@ const products = [{
     ]
 }, {
     brand: "Argon Audio",
-    name: "RADIO2i",
-    price: "2199",
+    name: "RADIO2",
+    price: "1499",
     category: [
         "Radios",
         "Radios with DAB",
-        "Radios with FM",
-        "Internet Radios"
+        "Radios with FM"
     ],
     inputs: [
         "AUX IN"
@@ -397,7 +396,7 @@ const products = [{
         "PHONES OUT",
         "LINE OUT"
     ],
-    sku: "ARGRADIO2I",
+    sku: "ARGRADIO2",
     image: [
         "images/argon-audio-radio2i-front.jpg",
         "images/argon-audio-radio2i-back.jpg"
@@ -521,7 +520,10 @@ const products = [{
     name: "RADIO2i MK2",
     price: "1899",
     category: [
-        "Radios"
+        "Radios",
+        "Radios with DAB",
+        "Radios with FM",
+        "Internet Radios"
     ],
     inputs: [
         "AUX IN"
@@ -607,7 +609,9 @@ const products = [{
     name: "RADIO1",
     price: "1199",
     category: [
-        "Radios"
+        "Radios",
+        "Radios with DAB",
+        "Radios with FM"
     ],
     inputs: [
         "AUX IN"
