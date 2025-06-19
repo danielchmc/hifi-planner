@@ -5319,6 +5319,10 @@ const products = [{
     brand: "Denon",
     name: "CEOL RCD-N12",
     price: "4999",
+    category: [
+        "Amplifiers with CD",
+        "Compact Amplifiers with Streaming"
+    ],
     inputs: [
         "HDMI ARC",
         "OPTICAL IN 1",
@@ -5340,6 +5344,7 @@ const products = [{
     name: "CEOL RCD-N12DAB",
     price: "4999",
     category: [
+        "Amplifiers with CD",
         "Compact Amplifiers with Streaming"
     ],
     inputs: [
