@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         /* revoke any previous ObjectURL to avoid leaks */
         if (planLayer.dataset.url) URL.revokeObjectURL(planLayer.dataset.url);
-
         /* create new ObjectURL & remember it */
         const url = URL.createObjectURL(file);
         planLayer.dataset.url = url;

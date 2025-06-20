@@ -1837,9 +1837,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ppbtn.addEventListener('click', () => {
         const pressed = ppbtn.getAttribute('aria-pressed') === 'true';   // read string
         ppbtn.setAttribute('aria-pressed', String(!pressed));            // write string
-        console.log("Clicked");
+        console.log("Price Panel Toggled");
     });
-
 });
 
 window.getCardWidth = product => {

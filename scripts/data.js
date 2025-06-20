@@ -258,7 +258,10 @@ const products = [{
 }, {
     brand: "Argon Audio",
     name: "SA2",
-    category: "Integrated Amplifiers",
+    category: [
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
+    ],
     price: "3499",
     inputs: [
         "HDMI ARC",
@@ -5275,7 +5278,8 @@ const products = [{
     name: "PMA-900HNE",
     price: "6499",
     category: [
-        "Integrated Amplifiers"
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
     ],
     inputs: [
         "OPTIXAL 1",
@@ -7178,7 +7182,8 @@ const products = [{
     name: "TDAI-3400",
     price: "41999",
     category: [
-        "Integrated Amplifiers"
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
     ],
     inputs: [
         "LINE IN 1",
@@ -8187,7 +8192,8 @@ const products = [{
     name: "MODEL 40N",
     price: "16990",
     category: [
-        "Integrated Amplifiers"
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
     ],
     inputs: [
         "PHONO",
@@ -8650,7 +8656,8 @@ const products = [{
     name: "M33",
     price: "39999",
     category: [
-        "Integrated Amplifiers"
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
     ],
     inputs: [
         "COAXIAL IN 1",
@@ -8679,7 +8686,8 @@ const products = [{
     name: "M33 V2",
     price: "46999",
     category: [
-        "Integrated Amplifiers"
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
     ],
     inputs: [
         "COAXIAL IN 1",
@@ -9289,7 +9297,8 @@ const products = [{
     name: "CI 980",
     price: "10999",
     category: [
-        "Power Amplifiers CI"
+        "Power Amplifiers CI",
+        "Multiroom Amplifiers"
     ],
     inputs: [
         "GLOBAL IN",
@@ -9324,7 +9333,8 @@ const products = [{
     name: "CI 16-60 DSP",
     price: "23999",
     category: [
-        "Power Amplifiers CI"
+        "Power Amplifiers CI",
+        "Multiroom Amplifiers"
     ],
     inputs: [
         "GLOBAL IN",
@@ -9375,7 +9385,8 @@ const products = [{
     name: "CI 8-150 DSP",
     price: "33999",
     category: [
-        "Power Amplifiers CI"
+        "Power Amplifiers CI",
+        "Multiroom Amplifiers"
     ],
     inputs: [
         "GLOBAL IN 1",
