@@ -4299,6 +4299,9 @@ const products = [{
         "Passive Speakers",
         "Center Speakers"
     ],
+    inputs: [
+        "SPEAKER IN"
+    ],
     sku: "DALIOPTICONVOKMK2",
     image: [
         "images/dali-opticon-vokal-mk2-front.jpg",
