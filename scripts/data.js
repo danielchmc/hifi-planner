@@ -3685,7 +3685,7 @@ const products = [{
     sku: "DALIGARDIANOW6",
     image: [
         "images/dali-gardian-front.jpg",
-        "images/dali-gardian-back.jpg
+        "images/dali-gardian-back.jpg"
     ]
 }, {
     brand: "DALI",
