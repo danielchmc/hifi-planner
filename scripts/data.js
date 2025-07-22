@@ -3672,6 +3672,21 @@ const products = [{
     image: [
         "images/dali-rubicon-6-front.jpg"
     ]
+},{
+    brand: "DALI",
+    name: "Gardian",
+    price: "6998",
+    category: [
+        "CI & Outdoor Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIGARDIANOW6",
+    image: [
+        "images/dali-gardian-front.jpg",
+        "images/dali-gardian-back.jpg
+    ]
 }, {
     brand: "DALI",
     name: "Phantom S-280 (1 Unit)",
