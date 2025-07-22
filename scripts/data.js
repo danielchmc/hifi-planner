@@ -9336,10 +9336,14 @@ const products = [{
         "LINE OUT 2",
         "LINE OUT 3",
         "LINE OUT 4",
-        "SPEAKER OUT 1",
-        "SPEAKER OUT 2",
-        "SPEAKER OUT 3",
-        "SPEAKER OUT 4"
+        "SPEAKER OUT 1L",
+        "SPEAKER OUT 1R",
+        "SPEAKER OUT 2L",
+        "SPEAKER OUT 2R",
+        "SPEAKER OUT 3L",
+        "SPEAKER OUT 3R",
+        "SPEAKER OUT 4L",
+        "SPEAKER OUT 4R"
     ],
     sku: "NADCI980",
     image: [
