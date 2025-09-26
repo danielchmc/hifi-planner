@@ -2166,7 +2166,8 @@ const products = [{
     ],
     outputs: [
         "SUBW OUT",
-        "SPEAKER OUT"
+        "SPEAKER OUT L",
+        "SPEAKER OUT R"
     ],
     sku: "BLSN230",
     image: [
@@ -4331,7 +4332,7 @@ const products = [{
     ]
 }, {
     brand: "DALI",
-    name: "Opticon LCR mk2 (1 Unit)",
+    name: "Opticon LCR mk2",
     price: "5999",
     category: [
         "Passive Speakers",
