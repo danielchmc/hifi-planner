@@ -1965,6 +1965,21 @@ const products = [{
     ]
 }, {
     brand: "Bang & Olufsen",
+    name: "Beosound A1 3rd Gen",
+    price: "2699",
+    category: [
+        "Wireless/Bluetooth Speakers"
+    ],
+    inputs: [
+        "USB-C"
+    ],
+    sku: "BOA1G3",
+    image: [
+        "images/bang--olufsen-beosound-a5-front.jpg",
+        "images/bang--olufsen-beosound-a5-back.jpg"
+    ]
+}, {
+    brand: "Bang & Olufsen",
     name: "Beosound Level",
     price: "13490",
     category: [
@@ -2078,6 +2093,30 @@ const products = [{
     image: [
         "images/bluesound-powernode-n330-front.jpg",
         "images/bluesound-powernode-n330-back.jpg"
+    ]
+}, {
+    brand: "Bluesound",
+    name: "Powernode (N331)",
+    price: "7999",
+    category: [
+        "Compact Amplifiers with Streaming"
+    ],
+    inputs: [
+        "ANALOG IN1",
+        "OPTICAL IN1",
+        "ANALOG RCA IN2",
+        "HDMI eARC"
+    ],
+    outputs: [
+        "SUBW OUT",
+        "SPEAKER OUT L",
+        "SPEAKER OUT C",
+        "SPEAKER OUT R"
+    ],
+    sku: "BLSN331",
+    image: [
+        "images/bluesound-powernode-n331-front.jpg",
+        "images/bluesound-powernode-n331-back.jpg"
     ]
 }, {
     brand: "Bluesound",
