@@ -8732,6 +8732,9 @@ const products = [{
     outputs: [
         "SPEAKER A OUT",
         "SPEAKER B OUT",
+        "PRE OUT",
+        "SUB OUT L",
+        "SUB OUT R",
         "TRIGGER OUT"
     ],
     sku: "NADM33",
@@ -8762,6 +8765,9 @@ const products = [{
     outputs: [
         "SPEAKER A OUT",
         "PRE OUT BALANCED",
+        "PRE OUT LINE",
+        "SUB OUT 1",
+        "SUB OUT 2",
         "TRIGGER OUT"
     ],
     sku: "NADM33V2",
