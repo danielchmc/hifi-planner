@@ -2071,6 +2071,46 @@ const products = [{
         "images/bluesound-pulse-soundbar-front.jpg",
         "images/bluesound-pulse-soundbar-back.jpg"
     ]
+},{
+    brand: "Bluesound",
+    name: "Pulse Cinema Mini",
+    price: "6499",
+    category: [
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "HDMI eARC",
+        "LINE IN"
+    ],
+    outputs: [
+        "SUBW OUT"
+    ],
+    sku: "BLSP431",
+    image: [
+        "images/bluesound-pulse-cinema-mini-front.jpg",
+        "images/bluesound-pulse-cinema-mini-back.jpg"
+    ]
+},{
+    brand: "Bluesound",
+    name: "Pulse Cinema",
+    price: "9399",
+    category: [
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "HDMI eARC",
+        "LINE IN",
+        "OPTICAL IN",
+        "USB STORAGE"
+    ],
+    outputs: [
+        "SUBW OUT"
+    ],
+    sku: "BLSP530",
+    image: [
+        "images/bluesound-pulse-cinema-front.jpg",
+        "images/bluesound-pulse-cinema-back.jpg"
+    ]
 }, {
     brand: "Bluesound",
     name: "Powernode (N330)",
