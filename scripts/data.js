@@ -4404,6 +4404,118 @@ const products = [{
     ]
 }, {
     brand: "DALI",
+    name: "Sonik 1",
+    price: "3998",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIK1",
+    image: [
+        "images/dali-sonik-1-front.jpg",
+        "images/dali-sonik-1-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik 3",
+    price: "5696",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIK3",
+    image: [
+        "images/dali-sonik-3-front.jpg",
+        "images/dali-sonik-3-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik 5",
+    price: "7998",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIK5",
+    image: [
+        "images/dali-sonik-5-front.jpg",
+        "images/dali-sonik-5-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik 7",
+    price: "11998",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIK7",
+    image: [
+        "images/dali-sonik-7-front.jpg",
+        "images/dali-sonik-7-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik 9",
+    price: "19998",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIK9",
+    image: [
+        "images/dali-sonik-9-front.jpg",
+        "images/dali-sonik-9-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik Cinema",
+    price: "3999",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIKCINEMA",
+    image: [
+        "images/dali-sonik-cinema-front.jpg",
+        "images/dali-sonik-cinema-back.jpg"
+    ]
+}, {
+    brand: "DALI",
+    name: "Sonik On-Wall",
+    price: "5198",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIOSONIKONWALL",
+    image: [
+        "images/dali-sonik-onwall-front.jpg",
+        "images/dali-sonik-onwall-back.jpg"
+    ]
+}, {
+    brand: "DALI",
     name: "Oberon 9",
     price: "15998",
     category: [
