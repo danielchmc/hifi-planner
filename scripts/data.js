@@ -3769,6 +3769,22 @@ const products = [{
     ]
 }, {
     brand: "DALI",
+    name: "Kupid",
+    price: "2598",
+    category: [
+        "Passive Speakers",
+        "Compact Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "DALIKUPID",
+    image: [
+        "images/dali-kupid-front.jpg",
+        "images/dali-kupid-back.jpg"
+    ]
+},{
+    brand: "DALI",
     name: "Phantom S-280 (1 Unit)",
     price: "36999",
     category: [
