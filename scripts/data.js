@@ -2337,6 +2337,24 @@ const products = [{
         "images/bluesound-pulse-flex-2i-back.jpg"
     ]
 }, {
+    brand: "Bluesound",
+    name: "Pulse Flex",
+    price: "2199",
+    category: [
+        "Wireless/Bluetooth Speakers"
+    ],
+    inputs: [
+        "ANALOG IN",
+        "OPTICAL IN"
+    ],
+    outputs: [
+    ],
+    sku: "BLSP130",
+    image: [
+        "images/bluesound-pulse-flex-front.png",
+        "images/bluesound-pulse-flex-back.png"
+    ]
+}, {
     brand: "Bowers & Wilkins",
     name: "Zeppelin Pro Edition",
     price: "5999",
