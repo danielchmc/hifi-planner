@@ -2351,8 +2351,8 @@ const products = [{
     ],
     sku: "BLSP130",
     image: [
-        "images/bluesound-pulse-flex-front.png",
-        "images/bluesound-pulse-flex-back.png"
+        "images/bluesound-pulse-flex-front.jpg",
+        "images/bluesound-pulse-flex-back.jpg"
     ]
 }, {
     brand: "Bowers & Wilkins",
