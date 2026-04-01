@@ -9950,6 +9950,22 @@ const products = [{
     ]
 }, {
     brand: "Radiant Acoustics",
+    name: "Clarity 66",
+    price: "59998",
+    category: [
+        "Passive Speakers",
+        "Floorstanding Speakers"
+    ],
+    inputs: [
+        "SPEAKER IN"
+    ],
+    sku: "RACLARITY66",
+    image: [
+        "images/radiant-acoustics-clarity-66-front.jpg",
+        "images/radiant-acoustics-clarity-66-back.jpg"
+    ]
+},{
+    brand: "Radiant Acoustics",
     name: "Clarity 6.2",
     price: "29998",
     category: [
