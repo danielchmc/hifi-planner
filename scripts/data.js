@@ -6713,8 +6713,9 @@ const products = [{
         "USB"
     ],
     outputs: [
-        "LINE OUT 1",
-        "LINE OUT 2",
+        "LINE OUT (FIXED)",
+        "LINE OUT (VARIABLE)",
+        "DIGITAL OUT",
         "SPEAKERS L/R"
     ],
     sku: "HEGELH600",
