@@ -6892,7 +6892,7 @@ const products = [{
     outputs: [
         "BALANCED OUT",
         "LINE OUT",
-        "DIGITAL OUT"
+        "BNC OUT"
     ],
     sku: "HEGELVIKING",
     image: [
