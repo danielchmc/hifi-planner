@@ -31,6 +31,76 @@ const products = [{
         "images/argon-audio-forte-a55-wifi-back.jpg"
     ]
 }, {
+    brand: "Vestlyd",
+    name: "M6C Active",
+    price: "6499",
+    category: [
+        "Active Speakers",
+        "Floorstanding Speakers",
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "XLR",
+        "TRS",
+        "HDMI ARC",
+        "OPTICAL",
+        "USB-C",
+        "PHONO",
+        "AUX"
+    ],
+    outputs: [
+        "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
+    sku: "VESTM6CA",
+    image: [
+        "https://images.hifiklubben.com/image/bc3f8e56-14f5-4136-8ee1-b5a2dfb650ab/yuge/vestm6ca.jpg",
+        "https://images.hifiklubben.com/image/061ffb69-fa17-4b40-a932-a58d6230f09e/yuge/vestm6ca.jpg"
+    ]
+}, {
+    brand: "Vestlyd",
+    name: "M8C Active",
+    price: "6499",
+    category: [
+        "Active Speakers",
+        "Floorstanding Speakers",
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "XLR",
+        "TRS",
+        "HDMI ARC",
+        "OPTICAL",
+        "USB-C",
+        "PHONO",
+        "AUX"
+    ],
+    outputs: [
+        "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
+    sku: "VESTM8CA",
+    image: [
+        "https://images.hifiklubben.com/image/9c2a7efa-b381-41fb-b19f-551243146dc0/yuge/vestm8ca.jpg",
+        "https://images.hifiklubben.com/image/829ca752-8bd8-407c-9dca-a567a3b0963d/yuge/vestm8ca.jpg"
+    ]
+}, {
     brand: "Argon Audio",
     name: "Forte A55 MK2",
     price: "7999",
