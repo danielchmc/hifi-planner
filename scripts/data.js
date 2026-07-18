@@ -1,36 +1,4 @@
 const products = [{
-    brand: "Argon Audio",
-    name: "Forte A55 WiFi",
-    price: "9499",
-    category: [
-        "Active Speakers",
-        "Floorstanding Speakers",
-        "Soundbar/TV Audio"
-    ],
-    inputs: [
-        "HDMI ARC",
-        "OPTICAL",
-        "PHONO",
-        "AUX"
-    ],
-    outputs: [
-        "SUB OUT"
-    ],
-    intype: [
-        "HDMI",
-        "Optical",
-        "RCA",
-        "RCA"
-    ],
-    outtype: [
-        "Subwoofer"
-    ],
-    sku: "ARGFORTEA55WIFI",
-    image: [
-        "images/argon-audio-forte-a55-wifi-front.jpg",
-        "images/argon-audio-forte-a55-wifi-back.jpg"
-    ]
-}, {
     brand: "Vestlyd",
     name: "M6C Active",
     price: "6499",
@@ -99,6 +67,38 @@ const products = [{
     image: [
         "https://images.hifiklubben.com/image/9c2a7efa-b381-41fb-b19f-551243146dc0/yuge/vestm8ca.jpg",
         "https://images.hifiklubben.com/image/829ca752-8bd8-407c-9dca-a567a3b0963d/yuge/vestm8ca.jpg"
+    ]
+}, {
+    brand: "Argon Audio",
+    name: "Forte A55 WiFi",
+    price: "9499",
+    category: [
+        "Active Speakers",
+        "Floorstanding Speakers",
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "HDMI ARC",
+        "OPTICAL",
+        "PHONO",
+        "AUX"
+    ],
+    outputs: [
+        "SUB OUT"
+    ],
+    intype: [
+        "HDMI",
+        "Optical",
+        "RCA",
+        "RCA"
+    ],
+    outtype: [
+        "Subwoofer"
+    ],
+    sku: "ARGFORTEA55WIFI",
+    image: [
+        "images/argon-audio-forte-a55-wifi-front.jpg",
+        "images/argon-audio-forte-a55-wifi-back.jpg"
     ]
 }, {
     brand: "Argon Audio",
