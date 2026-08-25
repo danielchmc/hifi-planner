@@ -583,7 +583,7 @@ const products = [{
     ]
 }, {
     brand: "Argon Audio",
-    name: "Berlin Sub 6",
+    name: "Malmö Sub 6",
     price: "1999",
     category: [
         "Subwoofers"
