@@ -897,6 +897,22 @@ const products = [{
     ]
 }, {
     brand: "Argon Audio",
+    name: "Aurora",
+    price: "9999",
+    category: [
+        "Turntables"
+    ],
+    outputs: [
+        "LINE OUT",
+        "PHONO OUT"
+    ],
+    sku: "ARGTT4SE",
+    image: [
+        "images/argon-audio-aurora-front.jpg",
+        "images/argon-audio-aurora-back.jpg"
+    ]
+}, {
+    brand: "Argon Audio",
     name: "PHONO1",
     price: "699",
     category: [
