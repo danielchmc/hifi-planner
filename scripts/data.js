@@ -545,7 +545,45 @@ const products = [{
     ]
 }, {
     brand: "Argon Audio",
-    name: "Malmö Sub 6",
+    name: "Berlin Sub 10",
+    price: "6699",
+    category: [
+        "Subwoofers"
+    ],
+    inputs: [
+        "XLR LINE IN",
+        "LINE IN"
+    ],
+    outputs: [
+        "LINE OUT"
+    ],
+    sku: "ARGBERLINSUB10",
+    image: [
+        "images/argon-audio-berlin-sub-10-front.jpg",
+        "images/argon-audio-berlin-sub-10-back.jpg"
+    ]
+}, {
+    brand: "Argon Audio",
+    name: "Berlin Sub 12",
+    price: "7999",
+    category: [
+        "Subwoofers"
+    ],
+    inputs: [
+        "XLR LINE IN",
+        "LINE IN"
+    ],
+    outputs: [
+        "LINE OUT"
+    ],
+    sku: "ARGBERLINSUB12",
+    image: [
+        "images/argon-audio-berlin-sub-12-front.jpg",
+        "images/argon-audio-berlin-sub-12-back.jpg"
+    ]
+}, {
+    brand: "Argon Audio",
+    name: "Berlin Sub 6",
     price: "1999",
     category: [
         "Subwoofers"
