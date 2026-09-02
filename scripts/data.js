@@ -7262,6 +7262,30 @@ const products = [{
     ]
 }, {
     brand: "KEF",
+    name: "Luxe",
+    price: "29995",
+    category: [
+        "Active Speakers",
+        "Compact Speakers",
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "HDMI ARC",
+        "COAXIAL",
+        "OPTICAL",
+        "LINE IN",
+        "USB-C IN"
+    ],
+    outputs: [
+        "SUB OUT"
+    ],
+    sku: "KEFLS60W",
+    image: [
+        "images/kef-luxe-front.jpg",
+        "images/kef-luxe-back.jpg"
+    ]
+}, {
+    brand: "KEF",
     name: "LS50 WIRELESS II",
     price: "17440",
     category: [
