@@ -7262,7 +7262,7 @@ const products = [{
     ]
 }, {
     brand: "KEF",
-    name: "Luxe",
+    name: "LS Luxe",
     price: "29995",
     category: [
         "Active Speakers",
@@ -7279,7 +7279,7 @@ const products = [{
     outputs: [
         "SUB OUT"
     ],
-    sku: "KEFLS60W",
+    sku: "KEFLSLUXE",
     image: [
         "images/kef-luxe-front.jpg",
         "images/kef-luxe-back.jpg"
