@@ -5539,7 +5539,7 @@ const products = [{
         "CD",
         "NETWORK/AUX",
         "RECORDER",
-        "OPTIXAL 1",
+        "OPTICAL 1",
         "OPTICAL 2",
         "OPTICAL 3",
         "COAXIAL",
@@ -5580,7 +5580,7 @@ const products = [{
         "Integrated Amplifiers"
     ],
     inputs: [
-        "OPTIXAL 1",
+        "OPTICAL 1",
         "OPTICAL 2",
         "USB",
         "COAXIAL",
@@ -5650,7 +5650,7 @@ const products = [{
         "Amplifiers with Streaming"
     ],
     inputs: [
-        "OPTIXAL 1",
+        "OPTICAL 1",
         "OPTICAL 2",
         "OPTICAL 3",
         "COAXIAL",
@@ -5824,7 +5824,7 @@ const products = [{
     ],
     inputs: [
         "COAXIAL",
-        "OPTIXAL 1",
+        "OPTICAL 1",
         "OPTICAL 2",
         "PHONO",
         "LINE IN 1",
