@@ -3656,6 +3656,30 @@ const products = [{
     ]
 }, {
     brand: "DALI",
+    name: "Vega",
+    price: "22499",
+    category: [
+        "Active Speakers",
+        "Compact Speakers",
+        "Soundbar/TV Audio",
+        "Wireless/Bluetooth Speakers"
+    ],
+    inputs: [
+        "LINE IN",
+        "OPTICAL IN",
+        "HDMI eARC",
+        "USB A IN"
+    ],
+    outputs: [
+        "SUB OUT"
+    ],
+    sku: "DALIVEGA",
+    image: [
+        "images/dali-vega-front.jpg",
+        "images/dali-vega-back.jpg"
+    ]
+}, {
+    brand: "DALI",
     name: "KORE",
     price: "669998",
     category: [
