@@ -9431,6 +9431,53 @@ const products = [{
     ]
 }, {
     brand: "NAD",
+    name: "C3030",
+    price: "7999",
+    category: [
+        "Integrated Amplifiers"
+    ],
+    inputs: [
+        "HDMI eARC",
+        "OPTICAL IN",
+        "PHONO IN",
+        "LINE IN"
+    ],
+    outputs: [
+        "TRIGGER OUT",
+        "SUBW",
+        "SPEAKER OUT"
+    ],
+    sku: "NADC3030",
+    image: [
+        "images/nad-c3030-front.jpg",
+        "images/nad-c3030-back.jpg"
+    ]
+}, {
+    brand: "NAD",
+    name: "C3030S",
+    price: "9999",
+    category: [
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
+    ],
+    inputs: [
+        "HDMI eARC",
+        "OPTICAL IN",
+        "PHONO IN",
+        "LINE IN"
+    ],
+    outputs: [
+        "TRIGGER OUT",
+        "SUBW",
+        "SPEAKER OUT"
+    ],
+    sku: "NADC3030S",
+    image: [
+        "images/nad-c3030s-front.jpg",
+        "images/nad-c3030s-back.jpg"
+    ]
+}, {
+    brand: "NAD",
     name: "C3050",
     price: "10999",
     category: [
