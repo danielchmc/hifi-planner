@@ -4415,6 +4415,22 @@ const products = [{
     ]
 }, {
     brand: "DALI",
+    name: "Basik Sub",
+    price: "3799",
+    category: [
+        "Subwoofers"
+    ],
+    inputs: [
+        "LINE IN",
+        "LFE"
+    ],
+    sku: "DALIBASUB",
+    image: [
+        "images/dali-basik-sub-front.jpg",
+        "images/dali-basik-sub-back.jpg"
+    ]
+}, {
+    brand: "DALI",
     name: "Sub C-8 D",
     price: "3399",
     category: [
@@ -7105,6 +7121,58 @@ const products = [{
     ]
 }, {
     brand: "Hegel",
+    name: "A200",
+    price: "24999",
+    category: [
+        "Integrated Amplifiers"
+    ],
+    inputs: [
+        "PHONO (MM) IN",
+        "RCA 1",
+        "RCA 2",
+        "XLR 1",
+        "XLR 2"
+    ],
+    outputs: [
+        "LINE OUT (FIXED)",
+        "LINE OUT (VARIABLE)",
+        "SPEAKERS OUT"
+    ],
+    sku: "HEGELA200",
+    image: [
+        "images/hegel-a200-front.jpg",
+        "images/hegel-a200-back.jpg"
+    ]
+}, {
+    brand: "Hegel",
+    name: "H200",
+    price: "29999",
+    category: [
+        "Integrated Amplifiers",
+        "Amplifiers with Streaming"
+    ],
+    inputs: [
+        "RCA 1",
+        "RCA 2",
+        "XLR 1",
+        "COAXIAL",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "USB"
+    ],
+    outputs: [
+        "LINE OUT (FIXED)",
+        "LINE OUT (VARIABLE)",
+        "DIGITAL OUT",
+        "SPEAKERS L/R"
+    ],
+    sku: "HEGELH200",
+    image: [
+        "images/hegel-h200-front.jpg",
+        "images/hegel-h200-back.jpg"
+    ]
+}, {
+    brand: "Hegel",
     name: "H95",
     price: "12499",
     category: [
@@ -8039,6 +8107,59 @@ const products = [{
     ]
 }, {
     brand: "Marantz",
+    name: "Cinema 50 Series 2",
+    price: "14999",
+    category: [
+        "Home Cinema Recievers"
+    ],
+    inputs: [
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "LINE IN 4",
+        "LINE IN 5",
+        "LINE IN 6",
+        "PHONO IN",
+        "COAXIAL IN 1",
+        "COAXIAL IN 2",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6"
+    ],
+    outputs: [
+        "ZONE 2 OUT",
+        "PRE OUT FRONT",
+        "PRE OUT CENTER",
+        "PRE OUT SURROUND",
+        "PRE OUT SURROUND BACK",
+        "PRE OUT HEIGHT 1 OUT",
+        "PRE OUT HEIGHT 2 OUT",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SUBWOOFER OUT 3",
+        "SUBWOOFER OUT 4",
+        "SPEAKERS OUT FRONT",
+        "SPEAKERS OUT C",
+        "SPEAKERS OUT SURROUND",
+        "SPEAKERS OUT SURROUND BACK",
+        "SPEAKERS OUT HEIGHT 1",
+        "SPEAKERS OUT HEIGHT 2",
+        "TRIGGER OUT"
+    ],
+    sku: "MARACINEMA50S2",
+    image: [
+        "images/marantz-cinema-50-s2-front.jpg",
+        "images/marantz-cinema-50-s2-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
     name: "Cinema 70S",
     price: "5837",
     category: [
@@ -8078,6 +8199,48 @@ const products = [{
     image: [
         "images/marantz-cinema-70s-front.jpg",
         "images/marantz-cinema-70s-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
+    name: "Cinema 70S Series 2",
+    price: "8249",
+    category: [
+        "Home Cinema Recievers"
+    ],
+    inputs: [
+        "PHONO IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "COAXIAL IN 1",
+        "OPTICAL 1",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6"
+    ],
+    outputs: [
+        "ZONE 2 OUT",
+        "PRE OUT FRONT",
+        "PRE OUT CENTER",
+        "PRE OUT SURROUND",
+        "PRE OUT SURROUND BACK",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SPEAKERS OUT FRONT",
+        "SPEAKERS OUT C",
+        "SPEAKERS OUT SURROUND",
+        "SPEAKERS OUT SURROUND BACK",
+        "TRIGGER OUT"
+    ],
+    sku: "MARACINEMA70SS2",
+    image: [
+        "images/marantz-cinema-70s-s2-front.jpg",
+        "images/marantz-cinema-70s-s2-back.jpg"
     ]
 }, {
     brand: "Marantz",
@@ -8168,6 +8331,51 @@ const products = [{
     image: [
         "images/marantz-cinema-60-dab-front.jpg",
         "images/marantz-cinema-60-dab-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
+    name: "Cinema 60 DAB Series 2",
+    price: "9999",
+    category: [
+        "Home Cinema Recievers"
+    ],
+    inputs: [
+        "PHONO IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "LINE IN 4",
+        "COAXIAL IN 1",
+        "COAXIAL IN 2",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6"
+    ],
+    outputs: [
+        "ZONE 2 OUT",
+        "PRE OUT FRONT",
+        "PRE OUT CENTER",
+        "PRE OUT SURROUND",
+        "PRE OUT SURROUND BACK",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SPEAKERS OUT FRONT",
+        "SPEAKERS OUT CENTER",
+        "SPEAKERS OUT SURROUND",
+        "SPEAKERS OUT SURROUND BACK",
+        "TRIGGER OUT"
+    ],
+    sku: "MARACINEMA60DABS2",
+    image: [
+        "images/marantz-cinema-60-dab-s2-front.jpg",
+        "images/marantz-cinema-60-dab-s2-back.jpg"
     ]
 }, {
     brand: "Marantz",
@@ -8606,6 +8814,32 @@ const products = [{
     ]
 }, {
     brand: "Marantz",
+    name: "MCR 60N",
+    price: "6749",
+    category: [
+        "Integrated Amplifiers",
+        "Amplifiers with CD",
+        "Amplifiers with Streaming"
+    ],
+    inputs: [
+        "PHONO (MM)",
+        "LINE",
+        "OPTICAL IN",
+        "HDMI (eARC)"
+    ],
+    outputs: [
+        "LINE OUT",
+        "SUBW OUT",
+        "SPEAKERS A L/R",
+        "SPEAKERS B L/R"
+    ],
+    sku: "MARAMCR60NDAB",
+    image: [
+        "images/marantz-mcr-60n-dab-front.jpg",
+        "images/marantz-mcr-60n-dab--back.jpg"
+    ]
+}, {
+    brand: "Marantz",
     name: "MODEL 40N",
     price: "16990",
     category: [
@@ -8789,6 +9023,49 @@ const products = [{
     ]
 }, {
     brand: "Marantz",
+    name: "Model 70",
+    price: "6349",
+    category: [
+        "Integrated Amplifiers"
+    ],
+    inputs: [
+        "PHONO (MM) IN",
+        "CD IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "COAXIAL IN",
+        "OPTICAL IN",
+        "HDMI (ARC) IN"
+    ],
+    outputs: [
+        "PREAMP OUT",
+        "SUBW OUT",
+        "SPEAKERS A OUT"
+    ],
+    sku: "MARAMODEL70",
+    image: [
+        "images/marantz-model-70-front.jpg",
+        "images/marantz-model-70-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
+    name: "CD 70",
+    price: "4499",
+    category: [
+        "CD Players"
+    ],
+    outputs: [
+        "LINE OUT",
+        "COAXIAL OUT",
+        "OPTICAL OUT"
+    ],
+    sku: "MARACD70",
+    image: [
+        "images/marantz-cd-70-front.jpg",
+        "images/marantz-cd-70-back.jpg"
+    ]
+}, {
+    brand: "Marantz",
     name: "CD 60",
     price: "6927",
     category: [
@@ -8797,9 +9074,7 @@ const products = [{
     outputs: [
         "LINE OUT",
         "COAXIAL OUT",
-        "OPTICAL OUT",
-        "SPEAKERS A L/R",
-        "SPEAKERS B L/R"
+        "OPTICAL OUT"
     ],
     sku: "MARACD60",
     image: [
@@ -10470,6 +10745,21 @@ const products = [{
     image: [
         "images/sonos-roam-2-front.jpg",
         "images/sonos-roam-2-back.jpg"
+    ]
+}, {
+    brand: "Sonos",
+    name: "Beam Ultra",
+    price: "5699",
+    category: [
+        "Soundbar/TV Audio"
+    ],
+    inputs: [
+        "HDMI IN"
+    ],
+    sku: "SONBEAMULTRA",
+    image: [
+        "images/sonos-beam-ultra-front.jpg",
+        "images/sonos-beam-ultra-back.jpg"
     ]
 }, {
     brand: "Sonos",
