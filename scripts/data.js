@@ -5085,6 +5085,83 @@ const products = [{
     ]
 }, {
     brand: "Denon",
+    name: "AVR-X2900H DAB",
+    price: "7499",
+    category: [
+        "Home Cinema Recievers"
+    ],
+    inputs: [
+        "PHONO IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "LINE IN 4",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6"
+    ],
+    outputs: [
+        "LINE OUT 1",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SPEAKERS OUT FRONT",
+        "SPEAKERS OUT CENTER",
+        "SPEAKERS OUT SURROUND",
+        "SPEAKERS OUT SURROUND BACK"
+    ],
+    sku: "DENAVRX2900HDAB",
+    image: [
+        "images/denon-avr-x2900h-dab-front.jpg",
+        "images/denon-avr-x2900h-dab-back.jpg"
+    ]
+}, {
+    brand: "Denon",
+    name: "AVC-X2850H",
+    price: "6399",
+    category: [
+        "Home Cinema Recievers"
+    ],
+    inputs: [
+        "PHONO (MM) IN",
+        "LINE IN 1",
+        "LINE IN 2",
+        "LINE IN 3",
+        "LINE IN 4",
+        "LINE IN 5",
+        "OPTICAL 1",
+        "OPTICAL 2",
+        "HDMI IN 1",
+        "HDMI IN 2",
+        "HDMI IN 3",
+        "HDMI IN 4",
+        "HDMI IN 5",
+        "HDMI IN 6"
+    ],
+    outputs: [
+        "LINE OUT 1",
+        "HDMI OUT 1",
+        "HDMI OUT 2",
+        "SUBWOOFER OUT 1",
+        "SUBWOOFER OUT 2",
+        "SPEAKERS OUT FRONT",
+        "SPEAKERS OUT CENTER",
+        "SPEAKERS OUT SURROUND",
+        "SPEAKERS OUT SURROUND BACK"
+    ],
+    sku: "DENAVCX2850H",
+    image: [
+        "images/denon-avc-x2850h-front.jpg",
+        "images/denon-avc-x2850h-back.jpg"
+    ]
+}, {
+    brand: "Denon",
     name: "AVR-X2800H",
     price: "4990",
     category: [
@@ -5229,8 +5306,8 @@ const products = [{
     ]
 }, {
     brand: "Denon",
-    name: "AVC-X3800H",
-    price: "7695",
+    name: "AVC-X3900H",
+    price: "11499",
     category: [
         "Home Cinema Recievers"
     ],
@@ -5275,10 +5352,10 @@ const products = [{
         "SPEAKERS OUT HEIGHT 2",
         "TRIGGER OUT"
     ],
-    sku: "DENAVCX3800H",
+    sku: "DENAVCX3900H",
     image: [
-        "images/denon-avc-x3800h-front.jpg",
-        "images/denon-avc-x3800h-back.jpg"
+        "images/denon-avc-x3900h-front.jpg",
+        "images/denon-avc-x3900h-back.jpg"
     ]
 }, {
     brand: "Denon",
