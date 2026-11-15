@@ -7,9 +7,9 @@
   /* ---------- shared: product row + drag from a list onto the canvas ---------- */
   function productRow(p, extra) {
     return h('.prow', { data: { id: p.id } },
-      h('.thumb', null, h('img', { src: (p.img || [])[0] || '', loading: 'lazy', draggable: false, alt: '', onerror() { this.style.visibility = 'hidden'; } })),
-      h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, p.brand + (p.price ? ' · ' + HP.money(p.price) : ''))),
-      h('.pmeta', null, p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
+      h('.thumb', null, HP.imgEl((p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
+      h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, p.brand, p.price ? ' · ' : '', (p.vars || []).length > 1 && new Set(p.vars.map((v) => v.price)).size > 1 ? t('from ', 'fra ') : '', p.was > p.price ? h('s', null, HP.money(p.was)) : null, p.was > p.price ? ' ' : '', p.price ? h('span' + (p.was > p.price ? '.sale' : ''), null, HP.money(p.price)) : null)),
+      h('.pmeta', null, (p.vars || []).length > 1 && h('span.nvar', { title: p.vars.map((v) => v.label).join(', ') }, p.vars.slice(0, 4).map((v) => h('i', { style: { background: HP.site.swatch(v) } }))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
   }
   function listDrag(e, label, onDrop, onClick, hover) {
     if (e.button !== 0) return;
@@ -66,7 +66,7 @@
     }
     function buildList() {
       list.textContent = '';
-      rows = cat.products().map((p) => {
+      rows = cat.products().slice().sort((a, b) => !!a.gone - !!b.gone).map((p) => {
         const r = productRow(p);
         r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y), () => C().addProductCenter(p.id), (x, y) => C().dragHover(x, y)));
         list.append(r);
@@ -91,7 +91,7 @@
       cat.templates.forEach((tp) => {
         const prods = tp.items.filter((i) => i.kind === 'product').map((i) => cat.get(i.pid)).filter(Boolean);
         const card = h('.sc', null,
-          h('.sc-thumbs', null, prods.slice(0, 4).map((p) => h('img', { src: (p.img || [])[0] || '', draggable: false, alt: '' }))),
+          h('.sc-thumbs', null, prods.slice(0, 4).map((p) => HP.imgEl((p.img || [])[0] || '', 'thumb'))),
           h('.sc-name', null, tp.name), tp.desc && h('.sc-desc', null, tp.desc),
           h('.sc-meta', null, prods.length + ' ' + t('products', 'produkter') + ' · ' + (tp.conns || []).length + ' ' + t('connections', 'forbindelser')),
           HP.isAdmin() && h('.sc-admin', null,
@@ -113,6 +113,7 @@
     const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: label + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'),
       onchange: () => { store.doc.name = name.value.trim(); store.commit(); } });
+    const scale = Pn.scaleStepper();
     const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1 });
     const ci = tb('tb-ci', 'plan', t('CI mode', 'CI-tilstand'), () => C().setCI(!store.doc.ci), { text: 1 });
@@ -122,12 +123,13 @@
     const bar = h('header#topbar', null,
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
       name,
-      h('.tgroup', null, undo, redo),
+      h('.tgroup', null, tb('tb-new', 'eraser', t('Clear canvas', 'Ryd lærredet'), () => C().clearCanvas()), undo, redo),
       h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, ci),
+      h('.tgroup#tb-scale', null, scale),
       h('.tgroup', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => C().print(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
       h('.spacer'),
       adminBox,
-      h('.tgroup', null, tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
+      h('.tgroup', null, tb('tb-share', 'link', t('Share link', 'Del link'), Pn.share, { text: 1, key: 'Ctrl+Shift+S' }), tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
       h('.tgroup', null,
         h('button.tbtn.lang', { title: t('Language', 'Sprog'), onclick: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } }, HP.lang() === 'da' ? 'DA' : 'EN'),
         tb('tb-theme', document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', t('Light / dark', 'Lys / mørk'), () => { const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = d; LS.set('theme', d); const b = document.getElementById('tb-theme'); b.replaceChild(icon(d === 'dark' ? 'sun' : 'moon'), b.firstChild); }),
@@ -135,6 +137,7 @@
     const sync = () => {
       undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
+      document.getElementById('tb-scale') && (document.getElementById('tb-scale').hidden = !!store.doc.ci);
       if (document.activeElement !== name) name.value = store.doc.name || '';
       orient.lastChild.textContent = 'A4 ' + (store.doc.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende'));
       adminBox.hidden = !HP.isAdmin();
@@ -146,15 +149,30 @@
     return bar;
   }
 
+  /* ---------- card size relative to the A4 page ---------- */
+  Pn.scaleStepper = () => {
+    const STEPS = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.25, 1.4, 1.6];
+    const cur = () => store.doc.cardScale || 1;
+    const step = (d) => { const i = STEPS.findIndex((s) => s >= cur() - 0.001), j = HP.clamp((STEPS[i] > cur() + 0.001 && d < 0 ? i : i + d), 0, STEPS.length - 1); C().setCardScale(STEPS[j], true); };
+    const val = h('button.sval', { title: t('Card size relative to the A4 page. Click to reset to 100%.', 'Kortstørrelse i forhold til A4-siden. Klik for at nulstille til 100%.'), onclick: () => C().setCardScale(1, true) });
+    const el = h('.stepper', { title: t('Card size', 'Kortstørrelse') }, icon('scale', 15), h('span.slab', null, t('Cards', 'Kort')),
+      h('button', { title: t('Smaller cards', 'Mindre kort'), onclick: () => step(-1) }, icon('minus', 14)), val, h('button', { title: t('Larger cards', 'Større kort'), onclick: () => step(1) }, icon('plus', 14)));
+    const sync = () => { val.textContent = Math.round(cur() * 100) + '%'; };
+    sync(); HP.on('doc', sync);
+    return el;
+  };
+
   /* ---------- CI bar (inside the viewport) ---------- */
   function buildCIBar() {
     const file = h('input', { type: 'file', accept: 'image/*', hidden: true, onchange: () => { C().loadPlan(file.files[0]); file.value = ''; } });
     const size = h('input', { type: 'range', min: 20, max: 180, step: 5, oninput: () => { C().setCISize(+size.value, false); val.textContent = size.value + ' px'; }, onchange: () => C().setCISize(+size.value, true) });
     const val = h('span.mono');
+    let rm;
     const bar = h('.cibar', { hidden: true }, h('b', null, t('CI mode', 'CI-tilstand')), h('span.muted', null, t('Product size', 'Produktstørrelse')), size, val,
-      h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), t('Floor plan', 'Plantegning')),
+      h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), h('span', null, t('Floor plan', 'Plantegning'))),
+      (rm = h('button.btn.sm.danger', { onclick: () => C().removePlan(), title: t('Remove floor plan', 'Fjern plantegning') }, icon('trash', 14), t('Remove plan', 'Fjern plan'))),
       h('button.btn.sm', { onclick: () => C().setCI(false) }, t('Exit', 'Afslut')), file);
-    const sync = () => { bar.hidden = !store.doc.ci; size.value = store.doc.ciSize; val.textContent = store.doc.ciSize + ' px'; };
+    const sync = () => { bar.hidden = !store.doc.ci; size.value = store.doc.ciSize; val.textContent = store.doc.ciSize + ' px'; rm.hidden = !C().hasPlan(); bar.querySelector('.btn span').textContent = C().hasPlan() ? t('Replace plan', 'Udskift plan') : t('Floor plan', 'Plantegning'); };
     HP.on('doc', sync); setTimeout(sync);
     return bar;
   }
@@ -258,6 +276,22 @@
     draw();
   };
 
+  /* ---------- share link ---------- */
+  Pn.share = async () => {
+    if (!store.doc.items.length) return HP.toast(t('The canvas is empty. Add something first.', 'Lærredet er tomt. Tilføj noget først.'), { kind: 'warn' });
+    const url = await HP.share.url();
+    const input = h('input', { value: url, readOnly: true, onfocus: () => input.select() });
+    const copy = async () => { try { await navigator.clipboard.writeText(url); } catch (e) { input.select(); document.execCommand('copy'); } HP.toast(t('Link copied', 'Link kopieret'), { kind: 'ok' }); };
+    const drafts = store.doc.items.some((i) => i.kind === 'product' && cat.draft.products[i.pid]);
+    HP.modal({ title: t('Share this proposal', 'Del dette tilbud'), size: 'md',
+      body: [h('.row', null, input, h('button.btn.primary', { onclick: copy }, icon('copy', 14), t('Copy link', 'Kopiér link'))),
+        h('p.muted', null, t('Anyone who opens the link in HiFi Planner gets a copy of this canvas: products, cables, notes and page setup. The whole proposal is inside the link itself, so nothing is uploaded, and later changes need a new link.', 'Alle, der åbner linket i HiFi Planner, får en kopi af lærredet: produkter, kabler, noter og sideopsætning. Hele tilbuddet ligger i selve linket, så intet uploades, og senere ændringer kræver et nyt link.')),
+        store.doc.items.some((i) => i.kind === 'plan') && h('.note-box', null, icon('warn', 15), t('The floor plan image is not included in links. Use Projects → Export file to send it.', 'Plantegningen er ikke med i links. Brug Projekter → Eksportér fil for at sende den.')),
+        drafts && h('.note-box', null, icon('warn', 15), t('This canvas uses products you have not published yet. They will show as unknown for others until you publish.', 'Lærredet bruger produkter, du ikke har udgivet endnu. De vises som ukendte for andre, indtil du udgiver.')),
+        location.protocol === 'file:' && h('.note-box', null, icon('warn', 15), t('You are running the planner from a local file, so this link only works on this PC. Links from the online version work everywhere.', 'Du kører planneren fra en lokal fil, så linket virker kun på denne PC. Links fra onlineversionen virker overalt.'))] });
+    setTimeout(() => input.select(), 60);
+  };
+
   /* ---------- help ---------- */
   Pn.help = () => {
     const k = (x) => h('kbd', null, x);
@@ -267,30 +301,35 @@
         h('.help-top', null, h('button.btn.primary', { onclick: () => { close(); HP.tour.start(); } }, icon('play', 14), t('Start guided tour', 'Start guidet rundvisning')),
           HP.config.feedbackUrl && h('a.btn', { href: HP.config.feedbackUrl, target: '_blank', rel: 'noopener' }, t('Send feedback', 'Send feedback')),
           HP.config.supportPhone && h('span.muted', null, t('Urgent support: ', 'Akut support: ') + 'Tlf. ' + HP.config.supportPhone)),
-        h('.note-box', null, icon('warn', 15), t('Prices are not updated in real time. Never rely on the price list alone; check the till system.', 'Priser opdateres ikke i realtid. Stol aldrig kun på prislisten; tjek kassesystemet.')),
+        h('.note-box', null, icon('warn', 15), (HP.priceSyncText() ? HP.priceSyncText() + '. ' : '') + t('Prices are not updated in real time. Never rely on the price list alone; check the till system.', 'Priser opdateres ikke i realtid. Stol aldrig kun på prislisten; tjek kassesystemet.')),
         h('.cols', null,
           h('div', null, h('h3', null, t('Build a system', 'Byg et system')), h('ul', null,
             li(t('Drag a product from the list onto the canvas, or click it to add it in the middle.', 'Træk et produkt fra listen ind på lærredet, eller klik for at tilføje det i midten.')),
             li(t('Drag from an output dot (right side) to an input dot (left side) to draw a cable. You can also click one dot, then the other.', 'Træk fra en udgangsprik (højre side) til en indgangsprik (venstre side) for at trække et kabel. Du kan også klikke på én prik og derefter den anden.')),
             li(t('Dot and wire colours show the connector type. A dashed wire with a warning means the two connectors do not match.', 'Farven på prikker og ledninger viser stiktypen. En stiplet ledning med advarsel betyder, at de to stik ikke passer sammen.')),
             li(t('Click a wire to choose a cable. Matching cables are listed first. Drag a wire sideways to tidy its route.', 'Klik på en ledning for at vælge et kabel. Passende kabler vises først. Træk en ledning sidelæns for at rydde op i føringen.')),
-            li(t('Click a card image to flip between front and back.', 'Klik på et kortbillede for at skifte mellem for- og bagside.')),
+            li(t('Click a card image to flip between front and back. Double-click it (or press I) to inspect it full screen, e.g. to show a customer the rear panel. Zooming in on the canvas also loads sharper images.', 'Klik på et kortbillede for at skifte mellem for- og bagside. Dobbeltklik på det (eller tryk I) for at se det i fuld skærm, fx for at vise en kunde bagpanelet. Når du zoomer ind på lærredet, hentes også skarpere billeder.')),
             li(t('Select a card and press Replace (or drop another product on top of it) to swap the product and keep its cables.', 'Markér et kort og tryk Udskift (eller slip et andet produkt oven på det) for at skifte produktet og beholde kablerne.')),
-            li(t('The round badges on a card show Bluetooth and WiFi.', 'De runde mærker på et kort viser Bluetooth og WiFi.')))),
+            li(t('The round badges on a card show Bluetooth and WiFi. The small colour dots on the image pick the colour/finish (also with C); the price list follows the chosen colour.', 'De runde mærker på et kort viser Bluetooth og WiFi. De små farveprikker på billedet vælger farve/finish (også med C); prislisten følger den valgte farve.')))),
           h('div', null, h('h3', null, t('Proposal & print', 'Tilbud & print')), h('ul', null,
             li(t('The frame on the canvas is an A4 page. What is inside the frame is what gets printed. Add pages with the + on the right.', 'Rammen på lærredet er en A4-side. Det, der ligger inden for rammen, bliver printet. Tilføj sider med + til højre.')),
             li(t('Print / PDF opens the print dialog. Choose "Save as PDF" to email the proposal.', 'Print / PDF åbner printdialogen. Vælg "Gem som PDF" for at maile tilbuddet.')),
             li(t('Price list adds a movable list with all products, cables and the total.', 'Prisliste tilføjer en flytbar liste med alle produkter, kabler og total.')),
             li(t('Text adds a note. Drag the top edge to move it, the corner to resize.', 'Tekst tilføjer en note. Træk i den øverste kant for at flytte, hjørnet for at ændre størrelse.')),
+            li(t('Cards − / + makes all product cards smaller or larger relative to the A4 page, so bigger systems fit on one page.', 'Kort − / + gør alle produktkort mindre eller større i forhold til A4-siden, så større systemer kan være på én side.')),
+            li(t('The eraser in the top bar clears the canvas. You can undo it.', 'Viskelæderet i topbjælken rydder lærredet. Det kan fortrydes.')),
             li(t('Shortcuts are ready-made systems. Click or drag one onto the canvas.', 'Genveje er færdige systemer. Klik eller træk en ind på lærredet.')),
             li(t('CI mode shrinks products to icons for floor plans. Upload a plan (JPG/PNG) and set the product size. Cables are hidden, not deleted.', 'CI-tilstand gør produkter til ikoner til plantegninger. Upload en plan (JPG/PNG) og vælg produktstørrelse. Kabler skjules, de slettes ikke.')),
-            li(t('Projects saves proposals in this browser and exports them as files.', 'Projekter gemmer tilbud i denne browser og eksporterer dem som filer.'))))),
+            li(t('Projects saves proposals in this browser and exports them as files.', 'Projekter gemmer tilbud i denne browser og eksporterer dem som filer.')),
+            li(t('Share link copies a link that opens this exact canvas on any PC, handy for sending a proposal to a colleague.', 'Del link kopierer et link, der åbner netop dette lærred på en hvilken som helst PC; praktisk til at sende et tilbud til en kollega.'))))),
         h('h3', null, t('Search', 'Søgning')),
         h('p', null, t('Search by model, brand, SKU, category, port name (e.g. "HDMI eARC", "PHONO IN") or "bluetooth" / "wifi". Combine words with spaces. Use "Peripherals" or "Stand-in" for generic stand-in products.', 'Søg på model, brand, SKU, kategori, portnavn (fx "HDMI eARC", "PHONO IN") eller "bluetooth" / "wifi". Kombinér ord med mellemrum. Brug "Peripherals" eller "Stand-in" for generiske stand-in-produkter.')),
         h('h3', null, t('Keyboard', 'Tastatur')),
-        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
-          [['Shift', t('drag', 'træk')], t('Box select', 'Markér med boks')], [['R'], t('Replace selected card', 'Udskift markeret kort')], [['F'], t('Fit to window', 'Tilpas til vindue')], [['/'], t('Search products', 'Søg produkter')],
-          [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
+        h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
+        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
+          [['T'], t('Add text', 'Tilføj tekst')], [['R'], t('Replace selected card', 'Udskift markeret kort')], [['B'], t('Flip front/back', 'Vend for/bag')], [['C'], t('Colour / finish', 'Farve / finish')], [['I'], t('Inspect image', 'Se billedet nærmere')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
+          [['F'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [['Shift', t('drag', 'træk')], t('Box select', 'Markér med boks')],
+          [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
         h('h3', null, t('Categories', 'Kategorier')),
         h('.cattree', null, HP.CAT_TREE.map(([g, subs]) => h('details', null, h('summary', null, g), h('ul', null, subs.map((s) => h('li', null, s))))))) });
@@ -316,23 +355,99 @@
         h('.grid2', null, f('Owner', owner), f('Repository', repo), f('Branch', branch), f(t('Folder in repo', 'Mappe i repo'), path, t('Empty if the app is in the repo root', 'Tom, hvis appen ligger i roden'))),
         f('GitHub token', token),
         h('.row', null, h('button.btn', { onclick: async () => { saveGh(); status.textContent = t('Testing…', 'Tester…'); status.textContent = await HP.editor.testGitHub(); } }, t('Save & test connection', 'Gem & test forbindelse')), status),
+        h('h3', null, t('Catalogue sync', 'Katalogsynkronisering')),
+        h('p.muted', null, (HP.priceSyncText() || t('The catalogue sync has not run yet.', 'Katalogsynkroniseringen har ikke kørt endnu.')) + ' ' + t('A GitHub Action mirrors hifiklubben.dk every hour: prices, discounts, colours, new and discontinued products, Bluetooth/WiFi and images. To start a run from here, the token also needs "Actions: Read and write".', 'En GitHub Action spejler hifiklubben.dk hver time: priser, rabatter, farver, nye og udgåede produkter, Bluetooth/WiFi og billeder. For at starte en kørsel herfra skal tokenet også have "Actions: Read and write".')),
+        h('.row', null, h('button.btn', { onclick: async () => { saveGh(); status.textContent = t('Starting…', 'Starter…'); status.textContent = await HP.editor.runPriceSync(); } }, icon('rotate', 14), t('Run catalogue sync now', 'Kør katalogsynkronisering nu'))),
         h('.row', null, h('button.btn', { onclick: () => HP.editor.exportData() }, icon('download', 14), t('Export data files', 'Eksportér datafiler')),
           h('button.btn', { onclick: () => { LS.set('admin', false); HP.emit('admin'); HP.emit('catalog'); drawAdmin(); } }, t('Leave admin mode', 'Forlad admin-tilstand'))));
     }
     drawAdmin();
     HP.modal({ title: t('Settings', 'Indstillinger'), size: 'md', onClose: () => { if (HP.isAdmin()) saveGh(); },
-      body: [h('h3', null, t('Shop', 'Butik')), h('.row', null, shop, h('button.btn', { onclick: () => { if (HP.config.shops.includes(shop.value.trim())) { LS.set('shop', shop.value.trim()); HP.emit('doc'); HP.toast(t('Shop number saved', 'Butiksnummer gemt'), { kind: 'ok' }); } else HP.toast(t('Unknown shop number', 'Ukendt butiksnummer'), { kind: 'err' }); } }, t('Change', 'Skift'))),
+      body: [h('h3', null, t('Shop account', 'Butikskonto')), Pn.shopForm(HP.shop(), () => HP.toast(t('Shop details saved', 'Butiksoplysninger gemt'), { kind: 'ok' })),
+        h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { LS.del('shop'); location.reload(); } }, t('Switch shop', 'Skift butik'))),
         h('h3', null, 'Admin'), adminPane] });
+  };
+
+  /* ---------- shop account (stored in this browser; printed in the A4 footer) ---------- */
+  Pn.shopForm = (no, onSave, submitLabel) => {
+    const p = HP.shopProfile(no);
+    const name = h('input', { value: p.name || 'HiFi Klubben ', placeholder: 'HiFi Klubben Amager', autocomplete: 'organization' });
+    const email = h('input', { type: 'email', value: p.email, placeholder: 'amager@hifiklubben.dk', autocomplete: 'email' });
+    const phone = h('input', { type: 'tel', value: p.phone, placeholder: '12 34 56 78', autocomplete: 'tel' });
+    const err = h('.err');
+    const f = (label, el) => h('label.field', null, h('span', null, label), el);
+    const save = () => {
+      const v = { no, name: name.value.trim(), email: email.value.trim(), phone: phone.value.trim() };
+      if (v.name.length < 3 || /^hifi klubben$/i.test(v.name)) { err.textContent = t('Enter the shop name, e.g. "HiFi Klubben Amager".', 'Skriv butikkens navn, fx "HiFi Klubben Amager".'); return name.focus(); }
+      if (v.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.email)) { err.textContent = t('That email address does not look right.', 'E-mailadressen ser forkert ud.'); return email.focus(); }
+      err.textContent = ''; HP.saveShop(v); onSave && onSave(v);
+    };
+    const form = h('.shopform', { onkeydown: (e) => e.key === 'Enter' && save() },
+      h('.grid2', null, f(t('Shop number', 'Butiksnummer'), h('input', { value: no, readOnly: true, disabled: true })), f(t('Shop name', 'Butiksnavn'), name), f(t('Email', 'E-mail'), email), f(t('Phone', 'Telefon'), phone)),
+      h('small.muted', null, t('Name, phone and email are printed at the bottom of every A4 page.', 'Navn, telefon og e-mail printes nederst på hver A4-side.')), err,
+      h('.row', null, h('button.btn.primary', { onclick: save }, icon('check', 14), submitLabel || t('Save', 'Gem'))));
+    setTimeout(() => { name.focus(); name.setSelectionRange(name.value.length, name.value.length); }, 60);
+    return form;
   };
 
   /* ---------- login ---------- */
   Pn.login = (then) => {
-    if (HP.config.shops.includes(HP.shop())) return then();
-    const err = h('.err');
-    const input = h('input', { placeholder: t('Shop number', 'Butiksnummer'), inputMode: 'numeric', autofocus: true, onkeydown: (e) => e.key === 'Enter' && go() });
-    const go = () => { const v = input.value.trim(); if (HP.config.shops.includes(v)) { LS.set('shop', v); ov.remove(); then(); } else { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); input.select(); } };
-    const ov = h('#login', null, h('.login-card', null, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' }),
-      h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Enter', 'Log ind'))), err));
-    document.body.append(ov); setTimeout(() => input.focus(), 50);
+    const known = (no) => HP.config.shops.includes(no), hasAccount = (no) => !!HP.shopProfile(no).name;
+    if (known(HP.shop()) && hasAccount(HP.shop())) return then();
+    const card = h('.login-card', null, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' }));
+    const ov = h('#login', null, card);
+    const done = () => { ov.remove(); then(); };
+    const step2 = (no) => {
+      card.replaceChildren(card.firstChild, h('h2', null, t('Create shop account', 'Opret butikskonto')),
+        h('p.muted', null, t('First time on this PC for shop ' + no + '. Add the shop details shown on proposals.', 'Første gang på denne PC for butik ' + no + '. Tilføj butikkens oplysninger, som vises på tilbud.')),
+        Pn.shopForm(no, () => { LS.set('shop', no); done(); }, t('Create account', 'Opret konto')),
+        h('button.link', { onclick: step1 }, t('Back', 'Tilbage')));
+    };
+    function step1() {
+      const err = h('.err');
+      const input = h('input', { placeholder: t('Shop number', 'Butiksnummer'), inputMode: 'numeric', autofocus: true, onkeydown: (e) => e.key === 'Enter' && go() });
+      const go = () => { const v = input.value.trim(); if (!known(v)) { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); return input.select(); } if (hasAccount(v)) { LS.set('shop', v); done(); } else step2(v); };
+      card.replaceChildren(card.firstChild, h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Enter', 'Log ind'))), err);
+      setTimeout(() => input.focus(), 50);
+    }
+    document.body.append(ov);
+    if (known(HP.shop())) step2(HP.shop()); else step1();
+  };
+
+  /* ---------- full-screen image viewer (show a customer the rear panel) ---------- */
+  Pn.viewer = (pid, face, onFace, item) => {
+    const p = cat.get(pid), imgs = HP.imagesOf(p, item); if (!p || !imgs.length) return;
+    let f = HP.clamp(face || 0, 0, imgs.length - 1), z = 1, x = 0, y = 0;
+    const img = h('img', { draggable: false, alt: p.name, onerror: HP.site.onerr });
+    const stage = h('.vstage', null, img), zl = h('span.mono');
+    const apply = () => { img.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + z + ')'; zl.textContent = Math.round(z * 100) + '%'; };
+    const reset = () => { z = 1; x = 0; y = 0; apply(); };
+    const show = (i) => { f = i; img.dataset.fb = HP.site.fallback(imgs[f], 'hd'); img.classList.remove('broken'); img.src = HP.site.src(imgs[f], 'hd'); tabs.forEach((b, j) => b.classList.toggle('on', j === f)); reset(); onFace && onFace(f); };
+    const zoomAt = (cx, cy, nz) => { nz = HP.clamp(nz, 1, 8); const r = stage.getBoundingClientRect(), px = cx - r.left - r.width / 2, py = cy - r.top - r.height / 2; x = px - ((px - x) * nz) / z; y = py - ((py - y) * nz) / z; z = nz; if (z === 1) { x = 0; y = 0; } apply(); };
+    stage.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, z * Math.exp(-e.deltaY * 0.002)); }, { passive: false });
+    stage.addEventListener('dblclick', (e) => zoomAt(e.clientX, e.clientY, z > 1.5 ? 1 : 3));
+    stage.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return; e.preventDefault(); stage.setPointerCapture(e.pointerId); stage.classList.add('grab');
+      const sx = e.clientX - x, sy = e.clientY - y;
+      const mv = (ev) => { x = ev.clientX - sx; y = ev.clientY - sy; apply(); };
+      const up = () => { stage.removeEventListener('pointermove', mv); stage.removeEventListener('pointerup', up); stage.classList.remove('grab'); };
+      stage.addEventListener('pointermove', mv); stage.addEventListener('pointerup', up);
+    });
+    const tabs = imgs.map((u, i) => h('button', { onclick: () => show(i) }, i ? t('Back', 'Bagside') : t('Front', 'Forside')));
+    const close = () => { ov.remove(); document.removeEventListener('keydown', key, true); };
+    const key = (e) => {
+      if (e.key === 'Escape') close(); else if (e.key === 'b' || e.key === 'B' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { if (imgs.length > 1) show((f + 1) % imgs.length); }
+      else if (e.key === '+' || e.key === '=') zoomAt(innerWidth / 2, innerHeight / 2, z * 1.4); else if (e.key === '-') zoomAt(innerWidth / 2, innerHeight / 2, z / 1.4); else if (e.key === '0') reset(); else return;
+      e.preventDefault(); e.stopPropagation();
+    };
+    const ov = h('.viewer', null,
+      h('.vbar', null, h('.vtitle', null, h('span.brand', null, p.brand + (HP.variantOf(p, item) ? ' · ' + HP.variantOf(p, item).label : '')), h('b', null, p.name)), imgs.length > 1 && h('.vtabs', null, tabs), h('.spacer'),
+        h('button.icon-btn', { title: t('Zoom out (−)', 'Zoom ud (−)'), onclick: () => zoomAt(innerWidth / 2, innerHeight / 2, z / 1.4) }, icon('minus')), zl,
+        h('button.icon-btn', { title: t('Zoom in (+)', 'Zoom ind (+)'), onclick: () => zoomAt(innerWidth / 2, innerHeight / 2, z * 1.4) }, icon('plus')),
+        h('button.icon-btn', { title: t('Reset (0)', 'Nulstil (0)'), onclick: reset }, icon('fit')),
+        h('button.icon-btn', { title: t('Close (Esc)', 'Luk (Esc)'), onclick: close }, icon('x'))),
+      stage, h('.vhint', null, t('Scroll or double-click to zoom · drag to move · B flips front/back · Esc closes', 'Scroll eller dobbeltklik for at zoome · træk for at flytte · B vender for/bag · Esc lukker')));
+    document.body.append(ov); document.addEventListener('keydown', key, true);
+    show(f);
   };
 })();

@@ -1,12 +1,12 @@
 """Trim white margins and compress product images to WebP for HiFi Planner v2.
-Usage: python3 optimize_images.py <src_images_dir> <dst_img_dir> [seconds_budget]
+Usage: python3 optimize_images.py <src_images_dir> <dst_img_dir> [seconds_budget] [max_px, default 640]
 Resumable: skips files that already exist in dst."""
 import os, sys, time
 from PIL import Image, ImageChops
 Image.MAX_IMAGE_PIXELS = None
 src, dst = sys.argv[1], sys.argv[2]
 budget = float(sys.argv[3]) if len(sys.argv) > 3 else 1e9
-MAX = 640
+MAX = int(sys.argv[4]) if len(sys.argv) > 4 else 640
 t0 = time.time(); done = skipped = failed = 0
 os.makedirs(dst, exist_ok=True)
 for f in sorted(os.listdir(src)):
@@ -33,7 +33,7 @@ for f in sorted(os.listdir(src)):
             bbox = (max(0, bbox[0] - pad), max(0, bbox[1] - pad), min(im.size[0], bbox[2] + pad), min(im.size[1], bbox[3] + pad))
             im = im.crop(bbox)
         im.thumbnail((MAX, MAX), Image.LANCZOS)
-        im.save(out, 'WEBP', quality=80, method=4)
+        im.save(out, 'WEBP', quality=80 if MAX <= 640 else 74, method=4)
         done += 1
     except Exception as e:
         failed += 1; print('FAIL', f, e)

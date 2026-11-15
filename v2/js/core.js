@@ -43,6 +43,12 @@
     kids.forEach(add);
     return el;
   });
+  /* images: hk:<uuid> (website, mirrored) or img/... (own); local copy first, website fallback */
+  HP.imgEl = (u, size, props) => h('img', Object.assign({ src: HP.site.src(u, size), data: { fb: HP.site.fallback(u, size) }, onerror: HP.site.onerr, draggable: false, alt: '' }, props));
+  // colour variant chosen on a canvas item (item.v = variant SKU)
+  HP.variantOf = (p, item) => (item && item.v && p && (p.vars || []).find((x) => x.sku === item.v)) || null;
+  HP.imagesOf = (p, item) => { const imgs = ((p && p.img) || []).slice(), v = HP.variantOf(p, item); if (v && v.img) imgs[0] = v.img; return imgs.filter(Boolean); };
+  HP.priceOf = (p, item) => { const v = HP.variantOf(p, item); return v ? { price: v.price, was: v.was || 0, label: v.label } : { price: p.price || 0, was: p.was > p.price ? p.was : 0, label: '' }; };
   HP.esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   HP.uid = () => Math.random().toString(36).slice(2, 9);
   HP.clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -63,7 +69,10 @@
     flip: '<path d="M12 3v18M8 7H4v10h4M16 7h4v10h-4"/>', copy: '<path d="M8 8h12v12H8z"/><path d="M16 8V4H4v12h4"/>',
     bt: '<path d="M7 7l10 10-5 5V2l5 5L7 17"/>',
     wifi: '<path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><path d="M12 19.5h.01"/>',
-    gear: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
+    gear: '<circle cx="12" cy="12" r="3"/><path d="M10.3 2.5h3.4l.5 2.6 1.6.9 2.5-.9 1.7 2.9-2 1.8v1.9l2 1.8-1.7 2.9-2.5-.9-1.6.9-.5 2.6h-3.4l-.5-2.6-1.6-.9-2.5.9-1.7-2.9 2-1.8V11l-2-1.8 1.7-2.9 2.5.9 1.6-.9z"/>',
+    store: '<path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/>',
+    eraser: '<path d="M8 20h12M5 14l8-8 6 6-6 6H9z"/><path d="M9 10l6 6"/>',
+    scale: '<path d="M4 4h7v7H4zM14 14h6v6h-6zM11 7.5h3.5V14"/>',
     folder: '<path d="M3 6h7l2 2h9v12H3z"/>', bolt: '<path d="M13 2L5 13h6l-1 9 8-11h-6z"/>',
     edit: '<path d="M4 20h4L20 8l-4-4L4 16z"/><path d="M14 6l4 4"/>', fit: '<path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/>',
     page: '<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/>', rotate: '<path d="M4 12a8 8 0 1 1 3 6.2"/><path d="M4 20v-5h5"/>',
@@ -72,6 +81,7 @@
     download: '<path d="M12 3v12M7 11l5 5 5-5M4 21h16"/>', upload: '<path d="M12 16V4M7 8l5-5 5 5M4 21h16"/>',
     lock: '<path d="M6 11h12v10H6z"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/>', move: '<path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"/>',
     cloud: '<path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 10a4 4 0 0 1 0 8z"/><path d="M12 16v-5M9.5 13l2.5-2.5 2.5 2.5"/>',
+    link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
     up: '<path d="M6 15l6-6 6 6"/>', down: '<path d="M6 9l6 6 6-6"/>', play: '<path d="M7 4l13 8-13 8z"/>', layers: '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
   };
   HP.icon = (name, size) => {
@@ -92,6 +102,33 @@
       opts.action && h('button.link', { onclick: () => { opts.action.fn(); el.remove(); } }, opts.action.label));
     box.append(el);
     setTimeout(() => el.remove(), opts.ms || 4200);
+  };
+
+  /* ---------- context menu ---------- */
+  HP.menu = (x, y, entries) => {
+    const old = document.getElementById('ctxmenu'); if (old) old.remove();
+    const close = () => { m.remove(); window.removeEventListener('pointerdown', outside, true); window.removeEventListener('keydown', key, true); window.removeEventListener('blur', close); window.removeEventListener('resize', close); };
+    const outside = (e) => { if (!m.contains(e.target)) close(); };
+    const key = (e) => {
+      const rows = [...m.querySelectorAll('button.mi:not(:disabled)')], i = rows.indexOf(document.activeElement);
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') rows[(i + (e.key === 'ArrowDown' ? 1 : rows.length - 1)) % rows.length].focus();
+      else return;
+      e.preventDefault(); e.stopPropagation();
+    };
+    const m = h('#ctxmenu', { role: 'menu', oncontextmenu: (e) => e.preventDefault() }, entries.filter((e, i, a) => !(e === 'sep' && (i === 0 || a[i - 1] === 'sep' || i === a.length - 1))).map((e) => {
+      if (e === 'sep') return h('.msep');
+      if (e.head) return h('.mhead', null, e.head);
+      if (e.el) return h('.mcustom', null, e.el);
+      return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
+        e.swatch ? h('span.sw', { style: { background: e.swatch } }) : e.icon ? HP.icon(e.icon, 15) : h('span.ic'), h('span.ml', null, e.label), e.key ? h('span.mk', null, e.key.split('+').map((k) => h('kbd', null, k))) : null);
+    }));
+    document.body.append(m);
+    const r = m.getBoundingClientRect();
+    m.style.left = Math.min(x, innerWidth - r.width - 6) + 'px';
+    m.style.top = Math.max(6, Math.min(y, innerHeight - r.height - 6)) + 'px';
+    setTimeout(() => { window.addEventListener('pointerdown', outside, true); window.addEventListener('keydown', key, true); window.addEventListener('blur', close); window.addEventListener('resize', close); });
+    return close;
   };
 
   /* ---------- modal ---------- */
@@ -115,7 +152,7 @@
   };
 
   /* ---------- catalogue (published data + local admin drafts) ---------- */
-  const emptyDraft = () => ({ products: {}, delProducts: [], templates: {}, delTemplates: [] });
+  const emptyDraft = () => ({ products: {}, delProducts: [], templates: {}, delTemplates: [], ignore: [] });
   const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get('draft', {})), version: 0 });
   cat.rebuild = () => {
     const d = cat.draft, base = DATA.products || [];
@@ -137,13 +174,14 @@
   cat.get = (id) => cat.byId[id];
   cat.products = () => cat.list.filter((p) => !p.cable);
   cat.cables = () => cat.list.filter((p) => p.cable);
-  cat.dirtyCount = () => { const d = cat.draft; return Object.keys(d.products).length + d.delProducts.length + Object.keys(d.templates).length + d.delTemplates.length; };
+  cat.dirtyCount = () => { const d = cat.draft; return Object.keys(d.products).length + d.delProducts.length + Object.keys(d.templates).length + d.delTemplates.length + (d.ignore || []).length; };
   cat.saveDraft = () => {
     if (!LS.set('draft', cat.draft)) HP.toast(HP.t('Browser storage is full. Publish or use smaller images.', 'Browserens lager er fuldt. Udgiv eller brug mindre billeder.'), { kind: 'err' });
     cat.rebuild(); HP.emit('catalog');
   };
   cat.putProduct = (p) => { const c = Object.assign({}, p); delete c._hay; cat.draft.products[p.id] = c; cat.draft.delProducts = cat.draft.delProducts.filter((x) => x !== p.id); cat.saveDraft(); };
-  cat.removeProduct = (id) => { delete cat.draft.products[id]; if ((DATA.products || []).some((p) => p.id === id)) cat.draft.delProducts.push(id); cat.saveDraft(); };
+  cat.ignoreSite = (sku) => { if (!sku) return; cat.draft.ignore = cat.draft.ignore || []; if (!cat.draft.ignore.includes(sku)) cat.draft.ignore.push(sku); cat.saveDraft(); };
+  cat.removeProduct = (id) => { const p = cat.get(id); if (p && p.site) cat.ignoreSite(p.site); delete cat.draft.products[id]; if ((DATA.products || []).some((p) => p.id === id)) cat.draft.delProducts.push(id); cat.saveDraft(); };
   cat.putTemplate = (t) => { cat.draft.templates[t.id] = t; cat.draft.delTemplates = cat.draft.delTemplates.filter((x) => x !== t.id); cat.saveDraft(); };
   cat.removeTemplate = (id) => { delete cat.draft.templates[id]; if ((DATA.templates || []).some((t) => t.id === id)) cat.draft.delTemplates.push(id); cat.saveDraft(); };
   cat.clearDraft = () => { cat.draft = emptyDraft(); cat.saveDraft(); };
@@ -178,14 +216,61 @@
   store.canUndo = () => hist.length > 0; store.canRedo = () => fut.length > 0;
   store.load = (doc, planSrc) => {
     hist.push(last); fut = [];
-    store.doc = Object.assign(blank(), doc); store.planSrc = planSrc || null; store.sel.clear(); store.selConn = null;
+    store.doc = Object.assign(blank(), doc); if (planSrc !== undefined) store.planSrc = planSrc || null; // keep the image when none is given, so Undo can bring a plan back store.sel.clear(); store.selConn = null;
     last = JSON.stringify(store.doc); LS.set('doc', store.doc); store.savePlan(); HP.emit('doc'); HP.emit('loaded');
   };
   store.savePlan = () => { if (store.planSrc) { if (!LS.set('plan', store.planSrc)) HP.toast(HP.t('Floor plan is too large to autosave. Export the project to keep it.', 'Plantegningen er for stor til autosave. Eksportér projektet for at gemme den.'), { kind: 'warn' }); } else LS.del('plan'); };
   store.blank = blank;
   store.item = (id) => store.doc.items.find((i) => i.id === id);
 
+  /* ---------- shareable links: the proposal packed into the URL (#p=...) ---------- */
+  const b64u = (bytes) => { let s = ''; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000)); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); };
+  const unb64u = (s) => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/')), (c) => c.charCodeAt(0));
+  const pipe = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
+  // Compact link format ("c"): arrays instead of objects, item ids replaced by their position, coordinates in 10 px grid steps.
+  const R = (v) => Math.round((v || 0) / 10);
+  function compact(doc) {
+    const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
+    return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
+      items.map((i) => i.kind === 'product' ? (i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''] : [2, R(i.x), R(i.y)]),
+      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift) r.push(c.cable || 0); if (c.shift) r.push(Math.round(c.shift / 5)); return r; })];
+  }
+  function expand(a) {
+    if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
+    const ids = a[7].map(() => HP.uid());
+    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {})
+      : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6] } : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
+    const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5 }));
+    return { v: 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null };
+  }
+  HP.share = {
+    async pack(doc) {
+      const bytes = new TextEncoder().encode(JSON.stringify(compact(doc)));
+      return window.CompressionStream ? 'c' + b64u(await pipe(bytes, new CompressionStream('deflate-raw'))) : 'k' + b64u(bytes);
+    },
+    async unpack(s) {
+      const bytes = unb64u(s.slice(1)), kind = s[0];
+      const raw = kind === 'z' || kind === 'c' ? await pipe(bytes, new DecompressionStream('deflate-raw')) : bytes;
+      const data = JSON.parse(new TextDecoder().decode(raw));
+      const doc = kind === 'c' || kind === 'k' ? expand(data) : data; // 'z' / 'j' = first version of links, still supported
+      if (!doc || !Array.isArray(doc.items) || !Array.isArray(doc.conns)) throw new Error('bad link');
+      return doc;
+    },
+    async url() { return location.href.split('#')[0] + '#p=' + (await HP.share.pack(store.doc)); },
+    async openFromHash() {
+      const m = /^#p=(.+)$/.exec(location.hash); if (!m) return false;
+      history.replaceState(null, '', location.href.split('#')[0]);
+      try { store.load(await HP.share.unpack(m[1])); HP.toast(HP.t('Opened the shared proposal.', 'Åbnede det delte tilbud.'), { kind: 'ok', ms: 7000, action: { label: HP.t('Undo', 'Fortryd'), fn: store.undo } }); return true; }
+      catch (e) { HP.toast(HP.t('That link could not be opened.', 'Linket kunne ikke åbnes.'), { kind: 'err' }); return false; }
+    },
+  };
+  HP.priceSyncText = () => { const ps = DATA.priceSync; if (!ps || !ps.date) return ''; const d = new Date(ps.date); return HP.t('Prices synced with hifiklubben.dk ', 'Priser synkroniseret med hifiklubben.dk ') + d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
+
   /* ---------- roles ---------- */
   HP.isAdmin = () => !!LS.get('admin', false);
   HP.shop = () => LS.get('shop', '');
+  // Shop accounts are kept per browser: { "442": { no, name, email, phone } }
+  HP.shops = () => LS.get('shops', {});
+  HP.shopProfile = (no) => { no = no || HP.shop(); return Object.assign({ no, name: '', email: '', phone: '' }, HP.shops()[no]); };
+  HP.saveShop = (p) => { const all = HP.shops(); all[p.no] = p; LS.set('shops', all); HP.emit('doc'); };
 })();

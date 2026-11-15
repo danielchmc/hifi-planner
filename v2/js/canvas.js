@@ -9,7 +9,8 @@
   let vp, world, pagesEl, planEl, wiresSvg, itemsEl, chipsEl, tempSvg, overlay, selbar, marqueeEl, zoomLbl;
   const view = { x: 40, y: 40, z: 0.6 };
   const els = new Map(), geom = new Map(), routes = new Map();
-  let wiring = null, spaceDown = false;
+  let wiring = null, spaceDown = false, order = '', lastPtr = null, lastImgClick = { id: null, t: 0 };
+  C.hd = false;
 
   const pageSize = () => (store.doc.orient === 'portrait' ? { w: SHORT, h: LONG } : { w: LONG, h: SHORT });
   const pageRect = (i) => { const s = pageSize(); return { x: i * (s.w + GAP), y: 0, w: s.w, h: s.h }; };
@@ -21,26 +22,40 @@
     return Math.ceil(Math.max(210, (len(p.in) + len(p.out)) * 6.4 + 54) / 10) * 10;
   }
   function buildCard(p, item, ci, ciSize) {
-    const imgs = p.img || [], face = clamp(item.face || 0, 0, Math.max(0, imgs.length - 1));
-    const img = h('img', { src: imgs[face] || '', draggable: false, alt: p.name, onerror() { this.classList.add('broken'); } });
+    const imgs = HP.imagesOf(p, item), face = clamp(item.face || 0, 0, Math.max(0, imgs.length - 1)), v = HP.variantOf(p, item);
+    const img = HP.imgEl(imgs[face] || '', C.hd ? 'hd' : 'card', { alt: p.name });
     if (ci) return h('.card.ci', { style: { width: ciSize + 'px' }, title: p.brand + ' ' + p.name }, h('.card-img', { style: { height: ciSize + 'px' } }, img), h('.ci-name', null, p.name));
     const port = (x, side) => h('.port.' + side, { data: { key: x.key, side, conn: x.conn }, title: P.CONNECTORS[x.conn] || '' }, h('i.dot.c-' + x.conn), h('span.lbl', null, x.label));
     const hasIO = (p.in || []).length || (p.out || []).length;
     return h('.card', { style: { width: cardW(p) + 'px' } },
       (p.bt || p.wifi) && h('.fabs', null, p.bt && h('span.fab', { title: 'Bluetooth' }, icon('bt')), p.wifi && h('span.fab', { title: 'WiFi' }, icon('wifi'))),
-      h('.card-head', null, h('span.brand', null, p.brand), h('span.name', null, p.name)),
-      h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back', 'Klik for at vende for/bag') : '' }, img, imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT'))),
+      h('.card-head', null, h('span.brand', null, p.brand, v && h('span.vlabel', null, ' · ' + v.label),
+          p.gone && h('span.gone-tag.no-print', { title: t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
+          p.review && h('span.gone-tag.auto.no-print', { title: t('Added automatically from hifiklubben.dk. Inputs/outputs are suggested from the website and not checked yet.', 'Tilføjet automatisk fra hifiklubben.dk. Ind-/udgange er foreslået ud fra hjemmesiden og ikke kontrolleret endnu.') }, 'AUTO')),
+        h('span.name', null, p.name)),
+      h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
+        imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
+        imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (I)', 'Se billedet nærmere (I)'), data: { inspect: '1' } }, icon('search', 13)),
+        (p.vars || []).length > 1 && h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
+          p.vars.length > 8 && h('span.more', null, '+' + (p.vars.length - 8)))),
       hasIO ? h('.card-io', null, h('.col.in', null, (p.in || []).map((x) => port(x, 'in'))), h('.col.out', null, (p.out || []).map((x) => port(x, 'out')))) : null);
   }
   C.buildCard = buildCard; C.cardW = cardW;
+  const cardScale = () => (store.doc.ci ? 1 : store.doc.cardScale || 1);
+  C.cardScale = cardScale;
 
   function priceRows() {
     const d = store.doc, rows = new Map();
-    const add = (p, cable) => { if (!p) return; const r = rows.get(p.id) || { name: p.brand + ' ' + p.name, price: p.price || 0, qty: 0, cable }; r.qty++; rows.set(p.id, r); };
-    d.items.forEach((it) => it.kind === 'product' && add(cat.get(it.pid), false));
+    const add = (p, cable, it) => {
+      if (!p) return;
+      const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || '');
+      const r = rows.get(key) || { name: p.brand + ' ' + p.name + (pr.label ? ' (' + pr.label + ')' : ''), price: pr.price, was: pr.was, qty: 0, cable };
+      r.qty++; rows.set(key, r);
+    };
+    d.items.forEach((it) => it.kind === 'product' && add(cat.get(it.pid), false, it));
     d.conns.forEach((c) => c.cable && add(cat.get(c.cable), true));
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
-    return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0) };
+    return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
   }
   C.priceRows = priceRows;
 
@@ -58,10 +73,14 @@
         edit('.note-title', 'title', t('Title', 'Titel')), edit('.note-body', 'body', t('Write something…', 'Skriv noget…')), h('i.resize.no-print'));
     }
     if (it.kind === 'prices') {
-      const { list, total } = priceRows();
+      const { list, total, saving } = priceRows();
+      const pct = (r) => Math.round((1 - r.price / r.was) * 100);
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
-        list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''), h('td', null, r.name), h('td.p', null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
+        list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''),
+          h('td', null, r.name, r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
+          h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
+        saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()));
     }
     if (it.kind === 'plan') return h('.plan' + (it.lock ? '.locked' : ''), { style: { width: it.w + 'px', height: it.h + 'px' } }, h('img', { src: store.planSrc || '', draggable: false }), h('i.resize.no-print'));
@@ -69,7 +88,7 @@
   }
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
-    if (it.kind === 'product') return ['p', it.pid, it.face, d.ci, d.ciSize, cat.version, L].join('|');
+    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, d.ci, d.ciSize, cardScale(), C.hd, cat.version, L].join('|');
     if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, L].join('|');
     if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + L + HP.today();
     if (it.kind === 'plan') return ['f', it.w, it.h, it.lock, (store.planSrc || '').length].join('|');
@@ -88,16 +107,20 @@
         els.set(it.id, ne); el = ne; geom.delete(it.id);
       }
       el.style.left = it.x + 'px'; el.style.top = it.y + 'px';
+      if (it.kind === 'product') { const s = cardScale(); el.style.transform = s !== 1 ? 'scale(' + s + ')' : ''; }
       el.classList.toggle('sel', store.sel.has(it.id));
     });
     for (const [id, el] of els) if (!seen.has(id)) { el.remove(); els.delete(id); geom.delete(id); }
+    const ord = store.doc.items.map((i) => i.id).join(',');
+    if (ord !== order) { order = ord; store.doc.items.forEach((it) => { const el = els.get(it.id); if (el && it.kind !== 'plan') itemsEl.append(el); }); }
   }
   function measure(it) {
     let g = geom.get(it.id);
     const el = els.get(it.id);
     if (!g && el) {
-      g = { w: el.offsetWidth, h: el.offsetHeight, p: {} };
-      el.querySelectorAll('.port').forEach((pe) => { g.p[pe.dataset.side + ':' + pe.dataset.key] = pe.offsetTop + pe.offsetHeight / 2; });
+      const s = it.kind === 'product' ? cardScale() : 1;
+      g = { w: el.offsetWidth * s, h: el.offsetHeight * s, p: {} };
+      el.querySelectorAll('.port').forEach((pe) => { g.p[pe.dataset.side + ':' + pe.dataset.key] = (pe.offsetTop + pe.offsetHeight / 2) * s; });
       geom.set(it.id, g);
     }
     return g || { w: 0, h: 0, p: {} };
@@ -177,7 +200,8 @@
         h('.page-label.no-print', null, 'A4 · ' + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')) + ' · ' + (i + 1) + '/' + d.pages),
         i === d.pages - 1 && d.pages > 1 && h('button.page-x.no-print', { title: t('Remove page', 'Fjern side'), onclick: () => { d.pages--; store.commit(); } }, icon('x', 14)),
         h('.page-foot', null, h('span', { html: HP.klubbenSvg() }),
-          h('span.page-meta', null, [d.name, HP.shop() && t('Shop ', 'Butik ') + HP.shop(), HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  ')))));
+          h('.page-meta', null, h('div.shopline', null, [HP.shopProfile().name, HP.shopProfile().phone && t('Tel. ', 'Tlf. ') + HP.shopProfile().phone, HP.shopProfile().email].filter(Boolean).join('  ·  ')),
+            h('div', null, [d.name, HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  '))))));
     }
     const r = pageRect(d.pages);
     pagesEl.append(h('button.page-add.no-print', { style: { left: r.x + 'px', top: '0px', height: s.h + 'px' }, title: t('Add an A4 page', 'Tilføj en A4-side'), onclick: () => { d.pages++; store.commit(); } }, icon('plus'), h('span', null, t('Add page', 'Tilføj side'))));
@@ -190,11 +214,13 @@
     vp.style.backgroundSize = g + 'px ' + g + 'px';
     vp.style.backgroundPosition = view.x + 'px ' + view.y + 'px';
     if (zoomLbl) zoomLbl.textContent = Math.round(view.z * 100) + '%';
+    const hd = view.z * cardScale() >= 1.3;
+    if (hd !== C.hd) { C.hd = hd; renderItems(); }
     placeBar();
     HP.LS.set('view', view);
   }
   function zoomAt(cx, cy, z) {
-    z = clamp(z, 0.15, 3);
+    z = clamp(z, 0.15, 8);
     const r = vp.getBoundingClientRect(), px = cx - r.left, py = cy - r.top;
     view.x = px - ((px - view.x) * z) / view.z; view.y = py - ((py - view.y) * z) / view.z; view.z = z;
     applyView();
@@ -231,12 +257,13 @@
       if (one && one.kind === 'product') {
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
         const p = cat.get(one.pid);
-        if (p && (p.img || []).length > 1 && !d.ci) selbar.append(btn('flip', t('Flip', 'Vend'), () => { one.face = ((one.face || 0) + 1) % p.img.length; store.commit(); }));
+        if (p && HP.imagesOf(p, one).length > 1 && !d.ci) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
+        if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Colour', 'Farve'), (e) => C.colourMenu(one.id, e.currentTarget)));
       }
-      if (one && one.kind === 'plan') selbar.append(btn(one.lock ? 'move' : 'lock', one.lock ? t('Unlock to move', 'Lås op for at flytte') : t('Lock', 'Lås'), () => { one.lock = !one.lock; store.commit(); }));
+      if (one && one.kind === 'plan') selbar.append(btn(one.lock ? 'move' : 'lock', one.lock ? t('Unlock to move', 'Lås op for at flytte') : t('Lock', 'Lås'), () => { one.lock = !one.lock; store.commit(); }), btn('trash', t('Remove floor plan', 'Fjern plantegning'), C.removePlan, '.danger'));
       if (!(one && (one.kind === 'prices' || one.kind === 'plan'))) selbar.append(btn('copy', t('Duplicate', 'Dublér'), C.duplicateSelection));
       if (HP.isAdmin() && ids.some((id) => store.item(id).kind === 'product')) selbar.append(btn('bolt', t('Save as Shortcut', 'Gem som genvej'), () => HP.editor.saveShortcut()));
-      selbar.append(btn('trash', t('Delete', 'Slet'), C.deleteSelection, '.danger'));
+      if (!(one && one.kind === 'plan')) selbar.append(btn('trash', t('Delete', 'Slet'), C.deleteSelection, '.danger'));
     }
     selbar.hidden = !anchor;
     if (anchor) { selbar.style.left = anchor.x * view.z + view.x + 'px'; selbar.style.top = anchor.y * view.z + view.y - 12 + 'px'; }
@@ -283,7 +310,13 @@
       if (moved) return store.commit();
       if (add && was) store.sel.delete(it.id); else if (!add) { store.sel.clear(); store.sel.add(it.id); }
       const p = it.kind === 'product' && cat.get(it.pid);
-      if (p && onImg && !add && !store.doc.ci && (p.img || []).length > 1) { it.face = ((it.face || 0) + 1) % p.img.length; return store.commit(); }
+      if (p && onImg && !add) {
+        const now = Date.now(), dbl = lastImgClick.id === it.id && now - lastImgClick.t < 350, flipped = lastImgClick.flipped;
+        lastImgClick = { id: it.id, t: dbl ? 0 : now };
+        if (dbl) { if (flipped) store.undo(); return C.inspect(it.id); }
+        const n = HP.imagesOf(p, it).length;
+        if (!store.doc.ci && n > 1) { it.face = ((it.face || 0) + 1) % n; lastImgClick.flipped = true; return store.commit(); }
+      }
       refreshSel();
     });
   }
@@ -354,6 +387,10 @@
     if (e.button !== 0) return;
     const portEl = e.target.closest('.port');
     if (wiring && wiring.sticky) { e.preventDefault(); return portEl ? finishWire(portEl) : cancelWire(); }
+    const sw = e.target.closest('[data-var]');
+    if (sw) { e.preventDefault(); e.stopPropagation(); return C.setVariant(sw.closest('.item').dataset.id, sw.dataset.var); }
+    const insp = e.target.closest('[data-inspect]');
+    if (insp) { e.preventDefault(); e.stopPropagation(); return C.inspect(insp.closest('.item').dataset.id); }
     if (e.target.closest('[contenteditable="true"], button, input, #selbar, .zoomer, .cibar')) return;
     e.preventDefault(); blurActive();
     if (portEl && portEl.closest('.item')) return startWire(e, portEl);
@@ -372,7 +409,7 @@
   /* ================= operations ================= */
   C.addProduct = (pid, wx, wy) => {
     const p = cat.get(pid), d = store.doc; if (!p) return null;
-    const w = d.ci ? d.ciSize : cardW(p), hh = d.ci ? d.ciSize : 170 + Math.max((p.in || []).length, (p.out || []).length) * 17;
+    const s = cardScale(), w = d.ci ? d.ciSize : cardW(p) * s, hh = d.ci ? d.ciSize : (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
@@ -392,8 +429,8 @@
     if (el) return C.replaceItem(el.dataset.id, pid);
     const w = toWorld(cx, cy); C.addProduct(pid, w.x, w.y);
   };
-  C.addText = () => {
-    const c = centerWorld(), it = { id: HP.uid(), kind: 'text', x: snap(c.x - 120), y: snap(c.y - 50), w: 240, h: 90, title: '', body: '' };
+  C.addText = (cx, cy) => {
+    const c = cx != null ? toWorld(cx, cy) : C.pointerWorld() || centerWorld(), it = { id: HP.uid(), kind: 'text', x: snap(c.x - 120), y: snap(c.y - 50), w: 240, h: 90, title: '', body: '' };
     store.doc.items.push(it); store.sel = new Set([it.id]); store.commit();
     const el = els.get(it.id); if (el) el.querySelector('.note-title').focus();
   };
@@ -401,7 +438,7 @@
   C.togglePrices = () => {
     const d = store.doc;
     if (C.hasPrices()) d.items = d.items.filter((i) => i.kind !== 'prices');
-    else d.items.push({ id: HP.uid(), kind: 'prices', x: pageSize().w - 330, y: 30 });
+    else d.items.push({ id: HP.uid(), kind: 'prices', x: snap(pageSize().w - 330), y: 30 });
     store.commit();
   };
   C.deleteSelection = () => {
@@ -431,8 +468,8 @@
       if (c.b.item === id) { if (!mi[c.b.key]) { lost++; return false; } c.b.key = mi[c.b.key]; kept++; }
       return true;
     });
-    if (!d.ci) it.x = snap(it.x + (measure(it).w - cardW(newP)) / 2);
-    it.pid = pid; it.face = 0; store.sel = new Set([id]); store.selConn = null; store.commit();
+    if (!d.ci) it.x = snap(it.x + (measure(it).w - cardW(newP) * cardScale()) / 2);
+    it.pid = pid; it.face = 0; delete it.v; store.sel = new Set([id]); store.selConn = null; store.commit();
     const msg = (oldP.name || '?') + ' → ' + newP.name + '. ' + (kept + lost === 0 ? '' : lost
       ? t(kept + ' connection(s) kept, ' + lost + ' removed (no matching port).', kept + ' forbindelse(r) bevaret, ' + lost + ' fjernet (ingen matchende port).')
       : t('All ' + kept + ' connection(s) kept.', 'Alle ' + kept + ' forbindelse(r) bevaret.'));
@@ -440,6 +477,109 @@
   };
   C.selectAll = () => C.select(store.doc.items.filter((i) => i.kind !== 'plan').map((i) => i.id));
   C.nudge = (dx, dy) => { const g = [...store.sel].map(store.item).filter(Boolean); if (!g.length) return; g.forEach((i) => { i.x += dx; i.y += dy; }); store.commit(); };
+
+  /* ---- clipboard, layers, reset, floor plan ---- */
+  C.pointerWorld = () => { if (!lastPtr) return null; const r = vp.getBoundingClientRect(); return lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom ? toWorld(lastPtr.x, lastPtr.y) : null; };
+  C.copy = () => {
+    if (!store.sel.size) return false;
+    const snapC = C.capture(); if (!snapC) return false;
+    HP.LS.set('clip', snapC); HP.toast(t('Copied. Paste with Ctrl+V, also in another proposal.', 'Kopieret. Indsæt med Ctrl+V, også i et andet tilbud.'), { ms: 2500 }); HP.emit('clip');
+    return true;
+  };
+  C.canPaste = () => !!HP.LS.get('clip', null);
+  C.paste = (cx, cy) => {
+    const clip = HP.LS.get('clip', null); if (!clip) return;
+    if (cx == null && lastPtr) { cx = lastPtr.x; cy = lastPtr.y; }
+    const r = vp.getBoundingClientRect();
+    if (cx == null || cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) { cx = r.left + r.width / 2 + 30; cy = r.top + r.height / 2 + 30; }
+    C.insertTemplate(clip, cx, cy);
+  };
+  C.order = (front) => {
+    const d = store.doc, sel = d.items.filter((i) => store.sel.has(i.id) && i.kind !== 'plan'); if (!sel.length) return;
+    const rest = d.items.filter((i) => !sel.includes(i));
+    d.items = front ? rest.concat(sel) : rest.filter((i) => i.kind === 'plan').concat(sel, rest.filter((i) => i.kind !== 'plan'));
+    store.commit();
+  };
+  C.clearCanvas = () => {
+    const d = store.doc;
+    if (!d.items.length && !d.name) return;
+    store.load(Object.assign(store.blank(), { orient: d.orient, cardScale: d.cardScale }));
+    HP.toast(t('Canvas cleared.', 'Lærredet er ryddet.'), { ms: 8000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
+  C.hasPlan = () => store.doc.items.some((i) => i.kind === 'plan');
+  C.removePlan = () => {
+    if (!C.hasPlan()) return;
+    store.doc.items = store.doc.items.filter((i) => i.kind !== 'plan'); store.sel.clear(); store.commit();
+    HP.toast(t('Floor plan removed.', 'Plantegningen er fjernet.'), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
+  C.setCardScale = (s, commit) => { store.doc.cardScale = Math.round(clamp(s, 0.4, 1.6) * 100) / 100; geom.clear(); if (commit) store.commit(); else render(); };
+  C.flip = (id) => { const it = store.item(id), p = it && cat.get(it.pid), n = HP.imagesOf(p, it).length; if (p && n > 1) { it.face = ((it.face || 0) + 1) % n; store.commit(); } };
+  C.setVariant = (id, sku) => { const it = store.item(id); if (!it) return; if (sku) it.v = sku; else delete it.v; it.face = 0; store.commit(); };
+  C.colourMenu = (id, anchor, x, y) => {
+    const it = store.item(id), p = it && cat.get(it.pid); if (!p || !(p.vars || []).length) return;
+    const r = anchor ? anchor.getBoundingClientRect() : null;
+    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Colour / finish', 'Farve / finish') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
+  };
+  C.inspect = (id) => { const it = store.item(id); if (it && it.kind === 'product') HP.panels.viewer(it.pid, it.face || 0, (face) => { if ((it.face || 0) !== face) { it.face = face; store.commit(); } }, it); };
+
+  /* ---- right-click menu ---- */
+  function onContext(e) {
+    e.preventDefault();
+    if (wiring) cancelWire();
+    const itemEl = e.target.closest('.item'), wireEl = e.target.closest('.wire, .chip'), d = store.doc, admin = HP.isAdmin();
+    if (wireEl) { store.sel.clear(); store.selConn = wireEl.dataset.id; refreshSel(); }
+    else if (itemEl && !store.sel.has(itemEl.dataset.id)) { store.sel = new Set([itemEl.dataset.id]); store.selConn = null; refreshSel(); }
+    else if (!itemEl && !e.target.closest('.overlay')) { if (store.sel.size || store.selConn) { store.sel.clear(); store.selConn = null; refreshSel(); } }
+    const ids = [...store.sel], one = ids.length === 1 && store.item(ids[0]), p = one && one.kind === 'product' && cat.get(one.pid);
+    const M = [], x = e.clientX, y = e.clientY;
+    const add = (label, key, ic, fn, opts) => M.push(Object.assign({ label, key, icon: ic, fn }, opts));
+    if (store.selConn) {
+      const c = d.conns.find((q) => q.id === store.selConn);
+      M.push({ head: t('Connection', 'Forbindelse') });
+      add(t('Choose cable…', 'Vælg kabel…'), 'Enter', 'cable', () => HP.panels.cablePicker(store.selConn));
+      if (c && c.cable) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; store.commit(); });
+      add(t('Straighten wire', 'Ret ledningen ud'), '', 'fit', () => { c.shift = 0; store.commit(); }, { disabled: !c || !c.shift });
+      add(t('Delete connection', 'Slet forbindelse'), 'Del', 'trash', C.deleteSelection, { danger: true });
+      M.push('sep');
+    } else if (ids.length) {
+      M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
+      if (p) {
+        add(t('Replace…', 'Udskift…'), 'R', 'swap', () => HP.panels.replacePicker(one.id));
+        if (HP.imagesOf(p, one).length > 1 && !d.ci) add(t('Flip front/back', 'Vend for/bag'), 'B', 'flip', () => C.flip(one.id));
+        if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'I', 'search', () => C.inspect(one.id));
+        if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'C', 'layers', () => C.colourMenu(one.id, null, x, y));
+        if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
+      }
+      if (one && one.kind === 'plan') {
+        add(one.lock ? t('Unlock to move/resize', 'Lås op for at flytte/skalere') : t('Lock', 'Lås'), 'L', one.lock ? 'move' : 'lock', () => { one.lock = !one.lock; store.commit(); });
+        add(t('Remove floor plan', 'Fjern plantegning'), '', 'trash', C.removePlan, { danger: true });
+      } else {
+        add(t('Copy', 'Kopiér'), 'Ctrl+C', 'copy', C.copy);
+        add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && one.kind === 'prices' });
+        add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
+        add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
+        if (admin && ids.some((id) => store.item(id).kind === 'product')) add(t('Save as Shortcut…', 'Gem som genvej…'), '', 'bolt', () => HP.editor.saveShortcut());
+        add(t('Delete', 'Slet'), 'Del', 'trash', C.deleteSelection, { danger: true });
+      }
+      M.push('sep');
+    }
+    add(t('Undo', 'Fortryd'), 'Ctrl+Z', 'undo', store.undo, { disabled: !store.canUndo() });
+    add(t('Redo', 'Annuller fortryd'), 'Ctrl+Y', 'redo', store.redo, { disabled: !store.canRedo() });
+    add(t('Paste', 'Indsæt'), 'Ctrl+V', 'page', () => C.paste(x, y), { disabled: !C.canPaste() });
+    M.push('sep');
+    add(t('Add text here', 'Tilføj tekst her'), 'T', 'text', () => C.addText(x, y));
+    add(C.hasPrices() ? t('Hide price list', 'Skjul prisliste') : t('Show price list', 'Vis prisliste'), 'F3', 'tag', C.togglePrices);
+    if (C.hasPlan()) add(t('Remove floor plan', 'Fjern plantegning'), '', 'plan', C.removePlan);
+    add(t('Select all', 'Markér alt'), 'Ctrl+A', 'layers', C.selectAll);
+    add(t('Fit to window', 'Tilpas til vindue'), 'F', 'fit', C.fit);
+    if (!d.ci) M.push({ el: HP.panels.scaleStepper() });
+    M.push('sep');
+    add(t('Save project…', 'Gem projekt…'), 'Ctrl+S', 'folder', HP.panels.projects);
+    add(t('Share link…', 'Del link…'), 'Ctrl+Shift+S', 'link', HP.panels.share);
+    add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', C.print);
+    add(t('Clear canvas', 'Ryd lærredet'), '', 'trash', C.clearCanvas, { danger: true, disabled: !d.items.length });
+    HP.menu(x, y, M);
+  }
 
   /* ---- templates (Shortcuts) ---- */
   C.capture = () => {
@@ -520,6 +660,8 @@
         h('button', { title: t('Fit to window (F)', 'Tilpas til vindue (F)'), onclick: C.fit }, icon('fit'))));
     mount.append(vp);
     vp.addEventListener('pointerdown', onDown);
+    vp.addEventListener('contextmenu', onContext);
+    window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY }; }, { passive: true });
     vp.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, view.z * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
     vp.addEventListener('dragover', (e) => e.preventDefault());
     vp.addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) C.loadPlan(f); });

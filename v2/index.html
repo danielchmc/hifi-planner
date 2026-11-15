@@ -16,9 +16,12 @@
   <script src="data/config.js"></script>
   <script>
     // Catalogue data is loaded with a timestamp so shops always get the latest published version.
-    (function () { var v = Date.now(); ['data/products.js', 'data/templates.js'].forEach(function (s) { document.write('<script src="' + s + '?t=' + v + '"><\/script>'); }); })();
+    (function () { var v = Date.now(); var files = ['data/products.js', 'data/templates.js', 'data/price-sync.js'];
+      try { if (localStorage.getItem('hp2.admin') === 'true') files.push('data/site-new.js'); } catch (e) { /* no storage */ } // website scan: admins only
+      files.forEach(function (s) { document.write('<script src="' + s + '?t=' + v + '"><\/script>'); }); })();
   </script>
   <script src="js/ports.js?v=2.0.0"></script>
+  <script src="js/site.js?v=2.0.0"></script>
   <script src="js/core.js?v=2.0.0"></script>
   <script src="js/canvas.js?v=2.0.0"></script>
   <script src="js/panels.js?v=2.0.0"></script>
