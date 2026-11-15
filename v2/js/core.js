@@ -70,6 +70,7 @@
     bt: '<path d="M7 7l10 10-5 5V2l5 5L7 17"/>',
     wifi: '<path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><path d="M12 19.5h.01"/>',
     gear: '<circle cx="12" cy="12" r="3"/><path d="M10.3 2.5h3.4l.5 2.6 1.6.9 2.5-.9 1.7 2.9-2 1.8v1.9l2 1.8-1.7 2.9-2.5-.9-1.6.9-.5 2.6h-3.4l-.5-2.6-1.6-.9-2.5.9-1.7-2.9 2-1.8V11l-2-1.8 1.7-2.9 2.5.9 1.6-.9z"/>',
+    user: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>',
     store: '<path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/>',
     eraser: '<path d="M8 20h12M5 14l8-8 6 6-6 6H9z"/><path d="M9 10l6 6"/>',
     scale: '<path d="M4 4h7v7H4zM14 14h6v6h-6zM11 7.5h3.5V14"/>',
@@ -273,4 +274,10 @@
   HP.shops = () => LS.get('shops', {});
   HP.shopProfile = (no) => { no = no || HP.shop(); return Object.assign({ no, name: '', email: '', phone: '' }, HP.shops()[no]); };
   HP.saveShop = (p) => { const all = HP.shops(); all[p.no] = p; LS.set('shops', all); HP.emit('doc'); };
+  // Sellers (staff logins, 5-7 digits) are kept per browser and belong to a shop: { "44240": { no, name, shop } }
+  HP.sellerRe = /^\d{5,7}$/;
+  HP.sellers = (shop) => Object.values(LS.get('sellers', {})).filter((s) => !shop || s.shop === shop).sort((a, b) => a.name.localeCompare(b.name));
+  HP.seller = () => { const s = LS.get('sellers', {})[LS.get('seller', '')]; return s && s.shop === HP.shop() ? s : null; };
+  HP.saveSeller = (s) => { const all = LS.get('sellers', {}); all[s.no] = s; LS.set('sellers', all); LS.set('seller', s.no); HP.emit('doc'); HP.emit('seller'); };
+  HP.removeSeller = (no) => { const all = LS.get('sellers', {}); delete all[no]; LS.set('sellers', all); if (LS.get('seller', '') === no) LS.del('seller'); };
 })();

@@ -201,7 +201,7 @@
         i === d.pages - 1 && d.pages > 1 && h('button.page-x.no-print', { title: t('Remove page', 'Fjern side'), onclick: () => { d.pages--; store.commit(); } }, icon('x', 14)),
         h('.page-foot', null, h('span', { html: HP.klubbenSvg() }),
           h('.page-meta', null, h('div.shopline', null, [HP.shopProfile().name, HP.shopProfile().phone && t('Tel. ', 'Tlf. ') + HP.shopProfile().phone, HP.shopProfile().email].filter(Boolean).join('  ·  ')),
-            h('div', null, [d.name, HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  '))))));
+            h('div', null, [HP.seller() && t('Your adviser: ', 'Din rådgiver: ') + HP.seller().name, d.name, HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  '))))));
     }
     const r = pageRect(d.pages);
     pagesEl.append(h('button.page-add.no-print', { style: { left: r.x + 'px', top: '0px', height: s.h + 'px' }, title: t('Add an A4 page', 'Tilføj en A4-side'), onclick: () => { d.pages++; store.commit(); } }, icon('plus'), h('span', null, t('Add page', 'Tilføj side'))));

@@ -41,9 +41,9 @@ Rebuild of HiFi Planner as a static web app. No build step and no dependencies: 
 
 The admin code only hides the admin tools; it is visible in the page source like the shop numbers. The GitHub token is what actually protects the data.
 
-## Shop accounts
+## Shop accounts and sellers
 
-The first time a shop number is used on a PC, the planner asks for the shop's name, email and phone. These are printed at the bottom of every A4 page and can be changed under Settings. They are stored in that browser only.
+Login is two steps: the shop number (from `data/config.js`), then the seller's own number (5–7 digits). The first time a shop is used on a PC, staff enter the shop's name, email and phone; the first time a seller number is used, its owner enters their name. Both are stored in that browser only. The A4 footer prints the shop's details and "Your adviser: <seller name>". The top bar shows the signed-in seller; click it to switch. Sellers already used on the PC are listed for one-click login and can be removed there.
 
 ## Catalogue sync (hifiklubben.dk mirror)
 

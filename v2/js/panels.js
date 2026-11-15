@@ -110,6 +110,7 @@
 
   /* ---------- top bar ---------- */
   function buildTopbar() {
+    let sellerBtn;
     const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: label + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'),
       onchange: () => { store.doc.name = name.value.trim(); store.commit(); } });
@@ -133,7 +134,10 @@
       h('.tgroup', null,
         h('button.tbtn.lang', { title: t('Language', 'Sprog'), onclick: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } }, HP.lang() === 'da' ? 'DA' : 'EN'),
         tb('tb-theme', document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', t('Light / dark', 'Lys / mørk'), () => { const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = d; LS.set('theme', d); const b = document.getElementById('tb-theme'); b.replaceChild(icon(d === 'dark' ? 'sun' : 'moon'), b.firstChild); }),
-        tb('tb-settings', 'gear', t('Settings', 'Indstillinger'), Pn.settings)));
+        tb('tb-settings', 'gear', t('Settings', 'Indstillinger'), Pn.settings)),
+      h('.tgroup', null, (sellerBtn = h('button.tbtn#tb-seller', { title: t('Signed-in seller. Click to switch seller', 'Logget ind som sælger. Klik for at skifte sælger'), onclick: () => Pn.switchSeller() }, icon('user'), h('span')))));
+    const drawSeller = () => { const s = HP.seller(); sellerBtn.lastChild.textContent = s ? s.name.split(' ')[0] : t('Seller', 'Sælger'); sellerBtn.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Click to switch seller', 'Klik for at skifte sælger'); };
+    drawSeller(); HP.on('seller', drawSeller);
     const sync = () => {
       undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
@@ -362,9 +366,11 @@
           h('button.btn', { onclick: () => { LS.set('admin', false); HP.emit('admin'); HP.emit('catalog'); drawAdmin(); } }, t('Leave admin mode', 'Forlad admin-tilstand'))));
     }
     drawAdmin();
-    HP.modal({ title: t('Settings', 'Indstillinger'), size: 'md', onClose: () => { if (HP.isAdmin()) saveGh(); },
+    const closeSettings = HP.modal({ title: t('Settings', 'Indstillinger'), size: 'md', onClose: () => { if (HP.isAdmin()) saveGh(); },
       body: [h('h3', null, t('Shop account', 'Butikskonto')), Pn.shopForm(HP.shop(), () => HP.toast(t('Shop details saved', 'Butiksoplysninger gemt'), { kind: 'ok' })),
-        h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { LS.del('shop'); location.reload(); } }, t('Switch shop', 'Skift butik'))),
+        h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { LS.del('shop'); LS.del('seller'); location.reload(); } }, t('Switch shop', 'Skift butik'))),
+        h('h3', null, t('Seller', 'Sælger')), HP.seller() ? Pn.sellerForm(HP.seller().no, () => HP.toast(t('Seller saved', 'Sælger gemt'), { kind: 'ok' })) : '',
+        h('.row', null, h('button.link', { onclick: () => { closeSettings(); Pn.switchSeller(); } }, t('Switch seller', 'Skift sælger'))),
         h('h3', null, 'Admin'), adminPane] });
   };
 
@@ -390,28 +396,69 @@
     return form;
   };
 
-  /* ---------- login ---------- */
+  /* ---------- seller (staff login, printed as "Your adviser" on proposals) ---------- */
+  Pn.sellerForm = (no, onSave, submitLabel) => {
+    const cur = LS.get('sellers', {})[no] || {};
+    const name = h('input', { value: cur.name || '', placeholder: t('First and last name', 'For- og efternavn'), autocomplete: 'name' });
+    const err = h('.err');
+    const f = (label, el) => h('label.field', null, h('span', null, label), el);
+    const save = () => {
+      const v = { no, name: name.value.trim().replace(/\s+/g, ' '), shop: HP.shop() };
+      if (v.name.length < 2) { err.textContent = t('Enter your name.', 'Skriv dit navn.'); return name.focus(); }
+      err.textContent = ''; HP.saveSeller(v); onSave && onSave(v);
+    };
+    setTimeout(() => name.focus(), 60);
+    return h('.shopform', { onkeydown: (e) => e.key === 'Enter' && save() },
+      h('.grid2', null, f(t('Seller number', 'Sælgernummer'), h('input', { value: no, readOnly: true, disabled: true })), f(t('Name', 'Navn'), name)),
+      h('small.muted', null, t('Your name is printed on proposals as the customer’s adviser.', 'Dit navn printes på tilbud som kundens rådgiver.')), err,
+      h('.row', null, h('button.btn.primary', { onclick: save }, icon('check', 14), submitLabel || t('Save', 'Gem'))));
+  };
+  Pn.switchSeller = () => { LS.del('seller'); HP.emit('seller'); HP.emit('doc'); Pn.login(() => {}); };
+
+  /* ---------- login: shop number -> (shop account) -> seller number -> (name) ---------- */
   Pn.login = (then) => {
     const known = (no) => HP.config.shops.includes(no), hasAccount = (no) => !!HP.shopProfile(no).name;
-    if (known(HP.shop()) && hasAccount(HP.shop())) return then();
+    if (known(HP.shop()) && hasAccount(HP.shop()) && HP.seller()) return then();
     const card = h('.login-card', null, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' }));
     const ov = h('#login', null, card);
     const done = () => { ov.remove(); then(); };
     const step2 = (no) => {
       card.replaceChildren(card.firstChild, h('h2', null, t('Create shop account', 'Opret butikskonto')),
         h('p.muted', null, t('First time on this PC for shop ' + no + '. Add the shop details shown on proposals.', 'Første gang på denne PC for butik ' + no + '. Tilføj butikkens oplysninger, som vises på tilbud.')),
-        Pn.shopForm(no, () => { LS.set('shop', no); done(); }, t('Create account', 'Opret konto')),
+        Pn.shopForm(no, () => { LS.set('shop', no); step3(); }, t('Create account', 'Opret konto')),
         h('button.link', { onclick: step1 }, t('Back', 'Tilbage')));
+    };
+    const step3 = () => {
+      const shop = HP.shopProfile(), err = h('.err');
+      const input = h('input', { placeholder: t('Your seller number (5–7 digits)', 'Dit sælgernummer (5–7 cifre)'), inputMode: 'numeric', autocomplete: 'off', onkeydown: (e) => e.key === 'Enter' && go() });
+      const pick = (s) => { LS.set('seller', s.no); HP.emit('seller'); HP.emit('doc'); done(); };
+      const go = () => {
+        const v = input.value.replace(/\s/g, '');
+        if (!HP.sellerRe.test(v)) { err.textContent = t('A seller number has 5 to 7 digits.', 'Et sælgernummer har 5 til 7 cifre.'); return input.select(); }
+        const s = LS.get('sellers', {})[v];
+        if (s && s.name) { HP.saveSeller(Object.assign({}, s, { shop: shop.no })); return done(); }
+        card.replaceChildren(card.firstChild, h('h2', null, t('New seller', 'Ny sælger')),
+          h('p.muted', null, t('First time for ' + v + ' on this PC. Add your name.', 'Første gang for ' + v + ' på denne PC. Tilføj dit navn.')),
+          Pn.sellerForm(v, done, t('Create seller', 'Opret sælger')), h('button.link', { onclick: step3 }, t('Back', 'Tilbage')));
+      };
+      const list = HP.sellers(shop.no).map((s) => h('.seller-row', null,
+        h('button.seller-pick', { onclick: () => pick(s) }, icon('user', 14), h('b', null, s.name), h('span.muted', null, s.no)),
+        h('button.icon-x', { title: t('Remove from this PC', 'Fjern fra denne PC'), onclick: () => HP.confirm(t('Remove ' + s.name + ' from this PC?', 'Fjern ' + s.name + ' fra denne PC?'), t('Remove', 'Fjern'), () => { HP.removeSeller(s.no); step3(); }) }, icon('x', 13))));
+      card.replaceChildren(card.firstChild, h('h2', null, shop.name), h('p.muted', null, t('Shop ', 'Butik ') + shop.no + ' · ' + t('Who is using HiFi Planner?', 'Hvem bruger HiFi Planner?')),
+        list.length ? h('.seller-list', null, list) : '',
+        h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Log in', 'Log ind'))), err,
+        h('button.link', { onclick: () => { LS.del('shop'); step1(); } }, t('Another shop', 'Anden butik')));
+      setTimeout(() => input.focus(), 50);
     };
     function step1() {
       const err = h('.err');
       const input = h('input', { placeholder: t('Shop number', 'Butiksnummer'), inputMode: 'numeric', autofocus: true, onkeydown: (e) => e.key === 'Enter' && go() });
-      const go = () => { const v = input.value.trim(); if (!known(v)) { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); return input.select(); } if (hasAccount(v)) { LS.set('shop', v); done(); } else step2(v); };
+      const go = () => { const v = input.value.trim(); if (!known(v)) { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); return input.select(); } if (hasAccount(v)) { LS.set('shop', v); step3(); } else step2(v); };
       card.replaceChildren(card.firstChild, h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Enter', 'Log ind'))), err);
       setTimeout(() => input.focus(), 50);
     }
     document.body.append(ov);
-    if (known(HP.shop())) step2(HP.shop()); else step1();
+    if (known(HP.shop()) && hasAccount(HP.shop())) step3(); else if (known(HP.shop())) step2(HP.shop()); else step1();
   };
 
   /* ---------- full-screen image viewer (show a customer the rear panel) ---------- */
