@@ -52,10 +52,17 @@
 
   /* ---------- product page parsing (raw HTML, as served) ---------- */
   const KEEP = /indgang|udgang|HDMI|Trådløs|Tilslutning|Bluetooth|Wi-?Fi|Zoner|Forstærker kanaler|Kanaler|RIAA|Indgange|Udgange|Højtaler type|Streaming$/i;
+  S.DESC = 'Fra beskrivelsen';
+  const DESC_IO = /indgang|udgang|input|output|tilslutning|-ud\b|-ind\b|\bud\b|hdmi|optisk|toslink|coax|koaksial|xlr|euroblock|trigger|ethernet|lan-port|subwoofer-?ud|pre-?out|line-?out|højtalerudgang|højttalerudgang/i;
+  const DESC_SKIP = /^(ikke|kun|obs: dobbelt)|udgangseffekt|effekt:|watt|impedans|vælger|standby|medfølger|ladekabel|kabel med|opløsning|thd|støj|firmware/i;
   S.parsePage = (html) => {
     const dec = (s) => s.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
     const spec = {};
     for (const m of html.matchAll(/<tr><th>([\s\S]*?)<\/th><td>([\s\S]*?)<\/td><\/tr>/g)) { const k = dec(m[1]), v = dec(m[2]); if (k && KEEP.test(k) && !(k in spec)) spec[k] = v.slice(0, 240); }
+    // many pages list the connections only in the description ("Indgange: USB-B, optisk…", "4 x balanceret analog indgang")
+    const desc = [];
+    for (const m of html.matchAll(/<tr><td>([\s\S]*?)<\/td><\/tr>/g)) { const v = dec(m[1]); if (v.length < 220 && DESC_IO.test(v) && !DESC_SKIP.test(v) && !desc.includes(v)) desc.push(v); }
+    if (desc.length) spec[S.DESC] = desc.slice(0, 14).join(' · ');
     let prod = null;
     for (const m of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
       try { const j = JSON.parse(m[1]); for (const x of j['@graph'] || [j]) if (x && x['@type'] === 'Product') prod = prod || x; } catch (e) { /* not JSON */ }
@@ -80,6 +87,45 @@
   };
 
   /* ---------- port suggestions from specs + category (a starting point; an admin checks them) ---------- */
+  /* Ports from the description lines. Rough by nature: the admin checks them against the rear photo. */
+  S.descPorts = (text, cats) => {
+    const hpAmp = (cats || []).includes('Headphone Amplifiers');
+    const IN = [], OUT = [];
+    const T = [ // [regex, signal] in priority order
+      [/\bhdmi\b/i, 'hdmi'], [/optisk|optical|toslink/i, 'optical'], [/coax|koaksial|s\/pdif/i, 'coax'],
+      [/euroblock|\bxlr\b|(?<!u)balanceret analog/i, 'bal'], [/phono/i, 'phono'], [/usb-?c\b/i, 'usbc'], [/\busb\b|usb-?b\b|usb-?a\b/i, 'usb'],
+      [/minijack|3,5 ?mm/i, 'minijack'], [/subwoofer/i, 'sub'], [/pre-?out|forforstærker-?ud/i, 'pre'], [/ethernet|lan-port|\blan\b/i, 'lan'],
+      [/trigger/i, 'trigger'], [/højt?talerudgang|højt?talerterminal|lo-z|hi-z|speaker/i, 'speaker'], [/\brca\b|line|linje|analog/i, 'line'],
+    ];
+    const PH = [[/4-pin xlr|xlr.*høretelefon/i, 'XLR'], [/4,4 ?mm/i, '4.4'], [/6,3?5? ?mm|6,3\b/i, '6.35'], [/3,5 ?mm|minijack/i, '3.5']];
+    for (const line of String(text || '').split(' · ')) {
+      const c = line.indexOf(':'), pre = c > 0 && c < 45 ? line.slice(0, c) : '', body = pre ? line.slice(c + 1) : line;
+      const phones = /høretelefon|hovedtelefon|headphone/i.test(pre) || (/høretelefon/i.test(line) && /udgang|-ud\b|\bud\b/i.test(line)) || (hpAmp && /jack|\d ?mm/i.test(line));
+      const dirOf = (s) => { const i = /indgang|input|-ind\b|\bind\b|\bin\b/i.test(s), o = /udgang|output|-ud\b|\bud\b|\bout\b|-out\b/i.test(s); return i && o ? 'both' : i ? 'in' : o ? 'out' : ''; };
+      const dir0 = dirOf(pre);
+      // "1 HDMI-indgang og 1 HDMI-udgang", "Indgange: A, B, C"
+      for (const seg of body.split(/,(?=\s)|;| og | \/ | \+ /)) {
+        const hits = T.filter(([r]) => r.test(seg)).map(([, sig]) => sig);
+        const dir = dirOf(seg) || dir0 || (phones ? 'out' : '') || (hits[0] === 'lan' ? 'in' : '');
+        if (!dir) continue;
+        const n = Math.min(8, +((/(\d+)\s*x\b/i.exec(seg) || /^\s*(\d+)\s/.exec(seg) || [])[1] || 1));
+        if (phones && dir === 'out') { const ph = PH.find(([r]) => r.test(seg)); if (ph) { OUT.push(['phones', ph[1]]); continue; } }
+        // "line-out (RCA/optisk)" and "phono- eller linjeniveau" = both; otherwise the first match wins ("ubalanceret analog indgang (RCA)" = line)
+        const sigs = /\(.*\/.*\)| eller /.test(seg) ? [...new Set(hits)] : hits.slice(0, 1);
+        for (const sig of sigs) {
+          const s = sig === 'hdmi' && /earc/i.test(seg) ? 'hdmi-earc' : sig === 'hdmi' && /\barc/i.test(seg) ? 'hdmi-arc' : sig === 'minijack' && dir === 'in' ? 'aux' : sig;
+          const hz = /hi-z/i.test(seg) ? 'HI-Z ' : '';
+          for (let i = 1; i <= n; i++) {
+            const detail = n > 1 ? hz + i : hz.trim();
+            if (dir === 'in' || dir === 'both') IN.push([s, detail]);
+            if (dir === 'out' || dir === 'both') OUT.push([s === 'aux' ? 'minijack' : s, detail]);
+          }
+        }
+      }
+    }
+    return { in: IN, out: OUT };
+  };
+
   S.suggestPorts = (spec, cats) => {
     const P = HP.ports; spec = spec || {}; cats = cats || [];
     const has = (c) => cats.includes(c);
@@ -101,6 +147,10 @@
     const cdAnalogOut = has('CD Players') && audioIn.includes('Analog RCA'); // the website lists a CD player's analog output as an input
     audioIn.concat(wired.filter((w) => /Pladespiller|Analog XLR|Minijack/.test(w))).forEach((x) => { if (map[x] && !(cdAnalogOut && x === 'Analog RCA')) add(IN, 'in', map[x], '', x === 'Minijack/AUX' ? { conn: 'minijack' } : undefined); });
     if (otherIn.includes('12V trigger')) add(IN, 'in', 'trigger', '');
+    // the description is only used when the spec table lists no connections (otherwise ports would be counted twice)
+    const tableIO = ['Lydindgang', 'Indgange', 'Indgang (andet)', 'Tilslutninger (kablet)', 'HDMI indgange', 'Total HDMI Inputs', 'Lydudgang', 'Udgange', 'Udgang (andet)', 'HDMI udgange'].some((k) => spec[k]);
+    const dp = tableIO ? { in: [], out: [] } : S.descPorts(spec[S.DESC], cats);
+    dp.in.forEach(([sig, d]) => add(IN, 'in', sig, d, sig === 'aux' ? { conn: 'minijack' } : undefined));
     if (otherIn.includes('Ethernet') || wired.includes('Ethernet')) add(IN, 'in', 'lan', '');
     if (has('Passive Speakers') || has('CI & Outdoor Speakers') || (has('Subwoofers') && !audioIn.length && !otherIn.length && !has('Wireless/Bluetooth Speakers') && /Passiv/.test(spec['Højtaler type'] || ''))) add(IN, 'in', 'speaker', '');
     if (has('Subwoofers') && !IN.length && !otherIn.includes('Ethernet')) add(IN, 'in', 'line', '');
@@ -116,6 +166,7 @@
     if (wired.includes('Subwoofer') && !OUT.some((p) => p.sig === 'sub')) add(OUT, 'out', 'sub', '');
     if (wired.includes('Pre-out') && !OUT.some((p) => p.sig === 'pre')) add(OUT, 'out', 'pre', '');
     if (otherOut.includes('12V trigger')) add(OUT, 'out', 'trigger', '');
+    dp.out.forEach(([sig, d]) => add(OUT, 'out', sig, d));
     if (has('Turntables')) { add(OUT, 'out', 'phono', ''); if (/^ja/i.test(spec['RIAA-forstærker'] || '')) add(OUT, 'out', 'line', ''); }
     if (has('RIAA Amplifiers') && !IN.some((p) => p.sig === 'phono')) { IN.length = 0; add(IN, 'in', 'phono', ''); }
     if (amp || has('Compact Amplifiers') || has('Compact Amplifiers with Streaming')) {
@@ -123,7 +174,7 @@
       if (has('Home Cinema Receivers') || ch >= 5) {
         ['FRONT', 'CENTER', 'SURROUND'].concat(ch >= 7 ? ['SURROUND BACK'] : []).forEach((d) => add(OUT, 'out', 'speaker', d));
         for (let i = 1; i <= Math.max(0, Math.floor((ch - 7) / 2)); i++) add(OUT, 'out', 'speaker', 'HEIGHT ' + i);
-      } else add(OUT, 'out', 'speaker', '');
+      } else if (!OUT.some((p) => p.sig === 'speaker')) add(OUT, 'out', 'speaker', '');
     }
     return { in: P.uniqueKeys(IN), out: P.uniqueKeys(OUT) };
   };

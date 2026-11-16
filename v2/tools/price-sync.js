@@ -185,13 +185,15 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   /* 4. product pages: gallery, specs, Bluetooth/WiFi, availability */
   const detailFixture = DETAILS_FIXTURE ? JSON.parse(fs.readFileSync(DETAILS_FIXTURE, 'utf8')) : null;
   const wanted = products.filter((p) => p.site && bySku.has(p.site.toUpperCase()));
-  const queue = wanted.slice().sort((a, b) => ((details[a.site] || {}).t || '').localeCompare((details[b.site] || {}).t || '')).slice(0, detailFixture ? wanted.length : PAGES);
+  // oldest read first; products waiting for review, whose page was read before descriptions were parsed (v2), come before everything else
+  const stale = (p) => (p.review && !(details[p.site] || {}).v ? 0 : 1);
+  const queue = wanted.slice().sort((a, b) => stale(a) - stale(b) || ((details[a.site] || {}).t || '').localeCompare((details[b.site] || {}).t || '')).slice(0, detailFixture ? wanted.length : PAGES);
   for (const p of queue) {
     const s = bySku.get(p.site.toUpperCase());
     try {
       const d = detailFixture ? detailFixture[s.sku] : (await sleep(250), await fetchDetails(s));
       if (!d) continue;
-      details[s.sku] = { g: d.gallery, spec: d.spec, avail: d.avail, t: TODAY };
+      details[s.sku] = { g: d.gallery, spec: d.spec, avail: d.avail, t: TODAY, v: 2 }; // v2: description lines read too
       R.details++;
     } catch (e) { R.detailErrors++; }
   }
@@ -200,9 +202,9 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
     const w = S.wireless(d.spec);
     // only ever switch ON: the website's lists are sometimes incomplete (e.g. a receiver with Bluetooth that only lists "Roon Tested")
     if (w && !p.manualWireless && !p.cable && ((w.bt && !p.bt) || (w.wifi && !p.wifi))) { if (w.bt) p.bt = true; if (w.wifi) p.wifi = true; R.wireless++; dirty = true; }
-    if (p.review && !p.cable && !(p.in || []).length && !(p.out || []).length) {
-      const sug = S.suggestPorts(d.spec, p.cats);
-      if (sug.in.length || sug.out.length) { p.in = sug.in.map(({ key, label, sig, conn, n, detail }) => ({ key, label, sig, conn, n, detail })); p.out = sug.out.map(({ key, label, sig, conn, n, detail }) => ({ key, label, sig, conn, n, detail })); R.suggested++; dirty = true; }
+    if (p.review && !p.cable) { // not checked by an admin yet: keep the suggestion up to date with the latest page read
+      const sug = S.suggestPorts(d.spec, p.cats), strip = (a) => JSON.stringify((a || []).map((x) => x.label));
+      if ((sug.in.length || sug.out.length) && (strip(sug.in) !== strip(p.in) || strip(sug.out) !== strip(p.out))) { p.in = sug.in.map(({ key, label, sig, conn, n, detail }) => ({ key, label, sig, conn, n, detail })); p.out = sug.out.map(({ key, label, sig, conn, n, detail }) => ({ key, label, sig, conn, n, detail })); R.suggested++; dirty = true; }
     }
     if (d.avail === 'Discontinued' && !p.gone) { p.gone = TODAY; dirty = true; R.gone.push(p.brand + ' ' + p.name + ' [' + p.site + '] (marked discontinued on its page)'); }
   }
