@@ -57,13 +57,17 @@ async function fetchSite() {
   }
   return out;
 }
+// outlet = exhibition/demo units at a reduced price. The listing returns them even with outlet: 'false', as separate products.
+const isOutletRibbon = (r) => r && r.ribbonType === 'outlet';
 const fromApi = (p) => ({ brand: p.brandName, model: p.modelName, sku: p.skuCode, type: p.modelType, url: p.url, bundle: !!p.isBundle,
+  outlet: !!(p.outletOnly || p.isOutletItem || (p.ribbons || []).some(isOutletRibbon) || /\/outlet\//.test(p.url || '')),
   variants: (p.variants || []).map((v) => ({ sku: v.sku, price: v.priceDetails && v.priceDetails.price, before: v.priceDetails && v.priceDetails.priceBefore,
-    unit: v.priceDetails && v.priceDetails.rawSalesUnit, image: v.image, label: v.label || v.color, key: v.colorKey, hex: v.colorCode, url: v.url })) });
+    unit: v.priceDetails && v.priceDetails.rawSalesUnit, image: v.image, label: v.label || v.color, key: v.colorKey, hex: v.colorCode, url: v.url,
+    outlet: (v.ribbons || []).some(isOutletRibbon) })) });
 const readFixture = (f) => fs.readFileSync(f, 'utf8').split(/\r?\n/).filter((l) => l.trim()).map((l) => {
   const j = JSON.parse(l.replace(/^﻿/, ''));
   if (j.brandName) return fromApi(j);
-  return { brand: j.brand, model: j.model, sku: j.sku, type: j.type, url: j.url, bundle: !!j.bundle,
+  return { brand: j.brand, model: j.model, sku: j.sku, type: j.type, url: j.url, bundle: !!j.bundle, outlet: !!j.outlet || /\/outlet\//.test(j.url || ''),
     variants: j.variants.map((v) => ({ sku: v.sku, price: v.price && typeof v.price === 'object' ? v.price.price : v.price, before: v.price && typeof v.price === 'object' ? v.price.priceBefore || v.price.before : v.before,
       unit: v.price && v.price.unit, image: v.image, label: v.label || v.color, key: v.key, hex: v.hex, url: v.url })) };
 });
@@ -103,19 +107,41 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   const products = readData('products.js', 'products', []);
   const details = readData('site-details.js', 'siteDetails', {});
   const ignore = new Set(readData('site-ignore.js', 'siteIgnore', []).map((s) => s.toUpperCase()));
-  const site = FIXTURE ? readFixture(FIXTURE) : await fetchSite();
+  const listing = FIXTURE ? readFixture(FIXTURE) : await fetchSite();
+  // outlet units never set prices, never become catalogue products and are not suggested
+  const outletSite = listing.filter((s) => s.outlet);
+  const site = listing.filter((s) => !s.outlet).map((s) => (s.variants.some((v) => v.outlet) ? Object.assign({}, s, { variants: s.variants.filter((v) => !v.outlet) }) : s)).filter((s) => s.variants.length);
+  const outletBySku = new Map(outletSite.map((s) => [String(s.sku).toUpperCase(), s])), outletMatch = matcher(outletSite);
   if (site.length < MIN_SITE_PRODUCTS) throw new Error('Only ' + site.length + ' products came back from hifiklubben.dk. Refusing to touch the catalogue.');
   const bySku = new Map(site.map((s) => [String(s.sku).toUpperCase(), s]));
   const match = matcher(site);
   const skuCount = {}; products.forEach((p) => { if (p.sku) skuCount[p.sku.toUpperCase()] = (skuCount[p.sku.toUpperCase()] || 0) + 1; });
   const dupSku = new Set(Object.keys(skuCount).filter((k) => skuCount[k] > 1));
-  const R = { changed: [], suspicious: [], discounts: [], unmatched: [], gone: [], back: [], added: [], details: 0, detailErrors: 0, wireless: 0, suggested: 0 };
+  const R = { changed: [], suspicious: [], discounts: [], unmatched: [], gone: [], back: [], added: [], outlet: [], outletRemoved: [], details: 0, detailErrors: 0, wireless: 0, suggested: 0 };
   let dirty = false;
   const seen = new Set();
+
+  /* 1b. products added for review from an outlet-only listing (before outlet units were filtered out): not real catalogue products */
+  for (let i = products.length - 1; i >= 0; i--) {
+    const p = products[i];
+    if (p.review && p.auto && p.site && outletBySku.has(p.site.toUpperCase()) && !bySku.has(p.site.toUpperCase())) {
+      products.splice(i, 1); dirty = true; R.outletRemoved.push(p.brand + ' ' + p.name + ' [' + p.site + ']');
+    }
+  }
 
   /* 2. catalogue products */
   for (const p of products) {
     const m = match(p);
+    const om = !m && outletMatch(p);
+    if (om) {
+      // only an outlet unit is listed right now: never use its price, and undo an outlet price an earlier run copied in
+      const before = om.v.before > om.v.price ? Math.round(om.v.before) : 0, half = /\(1 unit\)/i.test(p.name) && om.v.unit === 'pair' ? 0.5 : 1;
+      if (before && p.price <= Math.round(om.v.price * half)) { p.price = Math.round(before * half); delete p.was; dirty = true; }
+      if (p.was && p.was <= p.price) { delete p.was; dirty = true; }
+      if (p.vars) { delete p.vars; dirty = true; }
+      R.outlet.push(p.brand + ' ' + p.name + ' [' + om.s.sku + '] ' + p.price + ' kr.');
+      seen.add(om.s); continue; // keep its status as it is; only the outlet price is ignored
+    }
     if (!m) {
       R.unmatched.push(p.brand + ' ' + p.name + (p.sku ? ' [' + p.sku + ']' : ''));
       if (p.sku && !(p.cats || []).includes('Stand-in Products') && !p.gone) { p.gone = TODAY; dirty = true; R.gone.push(p.brand + ' ' + p.name + ' [' + p.sku + ']'); }
@@ -193,6 +219,7 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   const table = (title, rows) => rows.length && md.push('### ' + title, '', '| Product | Old | New | Matched by | Website product | Note |', '|---|---:|---:|---|---|---|', ...rows.map((r) => `| ${r.name} | ${r.old} | ${r.new} | ${r.how} | ${r.site} | ${r.why || ''} |`), '');
   table('Price changes', R.changed); table('Check by hand (left unchanged)', R.suspicious); table('On discount (Old = price before discount)', R.discounts);
   const list = (title, rows) => rows.length && md.push('### ' + title + ' (' + rows.length + ')', '', rows.map((r) => '- ' + r).join('\n'), '');
+  list('Only an outlet unit is listed (outlet price not used, status unchanged)', R.outlet); list('Removed: had been added from an outlet listing', R.outletRemoved);
   list('Added from the website (marked for review)', R.added); list('Newly discontinued', R.gone);
   list('All discontinued products still in HiFi Planner', products.filter((p) => p.gone).map((p) => { const sim = similar(p); return p.brand + ' ' + p.name + ' [' + p.sku + '] since ' + p.gone + (sim.length ? ' · maybe replaced by: ' + sim.join(', ') : ''); }));
   const report = md.join('\n');
