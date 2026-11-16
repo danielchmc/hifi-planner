@@ -53,7 +53,9 @@
       edit(p, true);
     }
     function edit(p, asNew) { cur = JSON.parse(JSON.stringify(cat.clean(p))); isNew = !!asNew; if (asNew) cur.id = ''; drawList(); drawForm(); }
-    const siteLink = (p) => p._url || (p.site || p.sku ? 'https://www.hifiklubben.dk/search/?q=' + encodeURIComponent(p.site || p.sku) : '');
+    // the product page when the sync knows it, otherwise the website's search
+    const siteLink = (p) => { const u = p._url || p.url; if (u) return /^https?:/.test(u) ? u : 'https://www.hifiklubben.dk' + u;
+      return p.site || p.sku ? 'https://www.hifiklubben.dk/sog/?q=' + encodeURIComponent(p.site || p.sku) : ''; };
 
     const imgSetters = [];
     function imageField(i, label) {
@@ -162,6 +164,7 @@
       if (!cur.brand || !cur.name) return HP.toast(t('Brand and model name are required.', 'Brand og modelnavn skal udfyldes.'), { kind: 'err' });
       if (isNew) { const base = P.slug(cur.brand + ' ' + cur.name); let id = base, i = 1; while (cat.get(id)) id = base + '-' + ++i; cur.id = id; }
       const out = Object.assign({}, cur, { img: cur.img.filter(Boolean), price: +cur.price || 0 });
+      if (out._url && !out.url) out.url = out._url.replace(/^https?:\/\/www\.hifiklubben\.dk/, '');
       delete out._url; delete out._type; delete out.review; // saved by an admin = checked
       if (!(+out.was > out.price)) delete out.was; else out.was = +out.was;
       if (!out.cable) { ['in', 'out'].forEach((s) => { out[s] = P.uniqueKeys(out[s].map((x) => Object.assign({}, x, { key: P.slug(x.label) }))); }); if (!out.bt) delete out.bt; if (!out.wifi) delete out.wifi; }

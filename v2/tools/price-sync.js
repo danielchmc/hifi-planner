@@ -124,10 +124,12 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
     seen.add(m.s);
     if (p.gone) { delete p.gone; dirty = true; R.back.push(p.brand + ' ' + p.name); }
     if (p.site !== m.s.sku) { p.site = m.s.sku; dirty = true; }
+    const url = m.v.url || m.s.url; // product page path, e.g. /argon-audio-tt-mk2-pladespiller/argttmk2wa/
+    if (url && p.url !== url) { p.url = url; dirty = true; }
     const half = /\(1 unit\)/i.test(p.name) && m.v.unit === 'pair' ? 0.5 : 1; // the card is one speaker, the website sells pairs
     // colour variants (not for cables: their website variants are lengths, and each length is its own catalogue card)
     const colours = !p.cable && !m.exactVariant && m.s.variants.length > 1 && new Set(m.s.variants.map((v) => v.label)).size > 1;
-    const vars = colours ? m.s.variants.map((v) => { const o = { sku: v.sku, label: v.label || v.sku, price: Math.round(v.price * half) }; if (v.key) o.key = v.key; if (v.hex) o.hex = v.hex; if (v.before > v.price) o.was = Math.round(v.before * half); const u = uuidOf(v.image); if (u) o.img = S.hk(u); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label)) : null;
+    const vars = colours ? m.s.variants.map((v) => { const o = { sku: v.sku, label: v.label || v.sku, price: Math.round(v.price * half) }; if (v.key) o.key = v.key; if (v.hex) o.hex = v.hex; if (v.before > v.price) o.was = Math.round(v.before * half); if (v.url) o.url = v.url; const u = uuidOf(v.image); if (u) o.img = S.hk(u); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label)) : null;
     if (JSON.stringify(vars || null) !== JSON.stringify(p.vars || null)) { if (vars) p.vars = vars; else delete p.vars; dirty = true; }
     const np = Math.round(m.v.price * half), before = m.v.before > m.v.price ? Math.round(m.v.before * half) : 0;
     const row = { name: p.brand + ' ' + p.name, old: p.price, new: np, how: m.how, site: m.s.brand + ' ' + m.s.model + ' / ' + m.v.sku };
@@ -145,12 +147,12 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
     if (seen.has(s) || s.bundle || !s.variants.length || /DummyVariant/i.test(s.variants[0].sku) || !S.relevant(s.type) || ignore.has(String(s.sku).toUpperCase())) continue;
     const v = s.variants.reduce((a, b) => (b.price < a.price ? b : a));
     let id = P.slug(s.brand + ' ' + s.model), i = 1; const base = id; while (ids.has(id)) id = base + '-' + ++i; ids.add(id);
-    const p = { id, brand: s.brand, name: s.model, sku: s.sku, site: s.sku, price: Math.round(v.price), cats: [], img: [], auto: TODAY, review: true };
+    const p = { id, brand: s.brand, name: s.model, sku: s.sku, site: s.sku, url: v.url || s.url, price: Math.round(v.price), cats: [], img: [], auto: TODAY, review: true };
     if (v.before > v.price) p.was = Math.round(v.before);
     const u = uuidOf((s.variants[0] || {}).image) || uuidOf(v.image); if (u) p.img = [S.hk(u)];
     if (S.TYPE_CABLE[s.type]) { p.cats = ['Cable']; p.cable = S.TYPE_CABLE[s.type].slice(); }
     else { p.cats = S.TYPE_CATS[s.type].slice(); p.in = []; p.out = []; }
-    if (new Set(s.variants.map((x) => x.label)).size > 1 && !p.cable) p.vars = s.variants.map((x) => { const o = { sku: x.sku, label: x.label || x.sku, price: Math.round(x.price) }; if (x.key) o.key = x.key; if (x.hex) o.hex = x.hex; if (x.before > x.price) o.was = Math.round(x.before); const uu = uuidOf(x.image); if (uu) o.img = S.hk(uu); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label));
+    if (new Set(s.variants.map((x) => x.label)).size > 1 && !p.cable) p.vars = s.variants.map((x) => { const o = { sku: x.sku, label: x.label || x.sku, price: Math.round(x.price) }; if (x.key) o.key = x.key; if (x.hex) o.hex = x.hex; if (x.before > x.price) o.was = Math.round(x.before); if (x.url) o.url = x.url; const uu = uuidOf(x.image); if (uu) o.img = S.hk(uu); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label));
     products.push(p); seen.add(s); dirty = true; R.added.push(p.brand + ' ' + p.name + ' [' + s.sku + '] · ' + s.type);
   }
 
