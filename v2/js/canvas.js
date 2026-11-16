@@ -9,6 +9,8 @@
   let vp, world, pagesEl, planEl, wiresSvg, itemsEl, chipsEl, tempSvg, overlay, selbar, marqueeEl, zoomLbl;
   const view = { x: 40, y: 40, z: 0.6 };
   const els = new Map(), geom = new Map(), routes = new Map();
+  let stamp = null, ghost = null, tool = null, toolSvg, lastCable = null;
+  const snap5 = (v) => Math.round(v / 5) * 5;
   let wiring = null, spaceDown = false, order = '', lastPtr = null, lastImgClick = { id: null, t: 0 };
   C.hd = false;
 
@@ -16,18 +18,94 @@
   const pageRect = (i) => { const s = pageSize(); return { x: i * (s.w + GAP), y: 0, w: s.w, h: s.h }; };
   C.pageSize = pageSize; C.pageRect = pageRect;
 
+  /* ================= CI marks =================
+     A mark is a small lettered symbol on the floor plan. One letter per product (doc.mk keeps the order), the shape shows the
+     kind of product, the colour the product. Keys starting with "@" are generic symbols (rack, router, TV…), not products. */
+  const MARK_COLORS = ['#1f6feb', '#d1242f', '#1a7f37', '#bc4c00', '#8250df', '#0a7ea4', '#bf3989', '#57606a', '#9a6700', '#0f5132'];
+  const SHAPES = { circle: '<circle cx="20" cy="20" r="18.5"/>', square: '<rect x="2.5" y="2.5" width="35" height="35"/>', triangle: '<path d="M20 1.5 39.5 37.5H.5z"/>', diamond: '<path d="M20 .5 39.5 20 20 39.5 .5 20z"/>', hex: '<path d="M10.5 3h19L39.5 20l-10 17h-19L.5 20z"/>' };
+  const INK = '#141518';
+  const GENERIC = {
+    rack: ['Amplifier / rack', 'Forstærker / rack', '<rect x="10" y="10" width="20" height="20"/><path d="M10 16.7h20M10 23.3h20"/>'],
+    router: ['Router / network', 'Router / netværk', '<path d="M10.5 17.5a13.5 13.5 0 0 1 19 0M15 22.5a7 7 0 0 1 10 0"/><circle cx="20" cy="28" r="1.6" fill="' + INK + '"/>'],
+    tv: ['TV', 'TV', '<rect x="8.5" y="11" width="23" height="14.5"/><path d="M15 30.5h10"/>'],
+    listen: ['Listening position', 'Lytteposition', '<circle cx="20" cy="14.5" r="4.5"/><path d="M11 31c0-5 4-8 9-8s9 3 9 8"/>'],
+    vol: ['Volume control / keypad', 'Volumenkontrol / betjening', '<circle cx="20" cy="20" r="9.5"/><path d="M20 20l5.5-6.5"/>'],
+    outlet: ['Cable outlet', 'Kabeludtag', '<circle cx="20" cy="20" r="10.5"/><circle cx="16" cy="20" r="1.4" fill="' + INK + '"/><circle cx="24" cy="20" r="1.4" fill="' + INK + '"/>'],
+  };
+  C.GENERIC = GENERIC;
+  const SPEAKER_CATS = (HP.CAT_TREE.find((g) => g[0] === 'Speakers') || [0, []])[1];
+  function shapeOf(p) {
+    const cats = p.cats || [], name = p.name.toLowerCase(), hay = (p.url || '').toLowerCase() + ' ' + name;
+    if (cats.includes('Subwoofers')) return 'triangle';
+    if (cats.includes('CI & Outdoor Speakers')) return /^ccm|ceiling/.test(name) ? 'circle' : /^cwm|in-?wall/.test(name) ? 'square' // the model name beats the website's category
+      : /vaeg|væg|\bwall/.test(hay) ? 'square' : /udendoer|udendørs|outdoor/.test(hay) ? 'hex' : 'circle';
+    if (cats.includes('On-Wall Speakers')) return 'square';
+    if (cats.some((c) => SPEAKER_CATS.includes(c))) return 'hex';
+    return 'diamond';
+  }
+  const SHAPE_NAMES = { circle: ['ceiling speaker', 'loftshøjtaler'], square: ['wall speaker', 'væghøjtaler'], triangle: ['subwoofer', 'subwoofer'], hex: ['speaker', 'højtaler'], diamond: ['electronics', 'elektronik'] };
+  const letter = (i) => (i < 26 ? '' : String.fromCharCode(64 + Math.floor(i / 26))) + String.fromCharCode(65 + (i % 26));
+  let MK = []; // product keys that have marks, in letter order (recomputed on every render)
+  function markKeys() {
+    const d = store.doc, present = [];
+    d.items.forEach((i) => { if (i.kind === 'mark' && i.k[0] !== '@' && !present.includes(i.k)) present.push(i.k); });
+    const keep = (d.mk || []).filter((k) => present.includes(k));
+    return keep.concat(present.filter((k) => !keep.includes(k)));
+  }
+  const normMarks = () => { store.doc.mk = MK = markKeys(); };
+  const markIndex = (key) => { const i = MK.indexOf(key); return i < 0 ? MK.length : i; };
+  function markHtml(key) {
+    const open = '<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">';
+    if (key[0] === '@') {
+      const g = GENERIC[key.slice(1)] || GENERIC.outlet;
+      return open + '<rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#fff" stroke="' + INK + '" stroke-width="2.4"/><g fill="none" stroke="' + INK + '" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' + g[2] + '</g></svg>';
+    }
+    const p = cat.get(key), i = markIndex(key), L = p ? letter(i) : '?', shape = p ? shapeOf(p) : 'circle';
+    return open + '<g fill="' + (p ? MARK_COLORS[i % MARK_COLORS.length] : '#8b949e') + '">' + SHAPES[shape] + '</g><text x="20" y="' + (shape === 'triangle' ? 32 : 26.6) + '" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="' +
+      (shape === 'triangle' ? (L.length > 1 ? 11 : 15) : L.length > 1 ? 14 : 19) + '" fill="#fff">' + L + '</text></svg>';
+  }
+  const markTitle = (key) => { if (key[0] === '@') { const g = GENERIC[key.slice(1)]; return g ? t(g[0], g[1]) : ''; } const p = cat.get(key); return p ? letter(markIndex(key)) + ' · ' + p.brand + ' ' + p.name : t('Unknown product', 'Ukendt produkt'); };
+  C.markHtml = markHtml; C.markTitle = markTitle;
+  /* zones (rooms), scale and cable runs */
+  const ZONE_COLORS = ['#0a7ea4', '#8250df', '#1a7f37', '#bc4c00', '#bf3989', '#57606a'];
+  const fmtM = (m) => (Math.round(m * 10) / 10).toLocaleString('da-DK', { minimumFractionDigits: 1 }) + ' m';
+  const runPx = (it) => it.pts.reduce((s, p, i) => (i ? s + Math.hypot(p[0] - it.pts[i - 1][0], p[1] - it.pts[i - 1][1]) : 0), 0);
+  // cable per product: metres over all runs, sold in whole metres
+  function cableRows() {
+    const d = store.doc, m = new Map();
+    d.items.forEach((i) => { if (i.kind !== 'run') return; const k = i.cable || '', r = m.get(k) || { k, runs: 0, px: 0 }; r.runs++; r.px += runPx(i); m.set(k, r); });
+    return [...m.values()].map((r) => { const p = r.k && cat.get(r.k), len = d.sc ? r.px / d.sc : 0, qty = Math.ceil(len - 1e-6);
+      return { k: r.k, name: p ? p.brand + ' ' + p.name : '', runs: r.runs, m: Math.round(len * 10) / 10, qty, price: p && d.sc ? qty * (p.price || 0) : 0 }; });
+  }
+  function legendRows() {
+    const d = store.doc, n = {}, S = (d.ms || 34) / 2;
+    d.items.forEach((i) => { if (i.kind === 'mark') n[i.k] = (n[i.k] || 0) + 1; });
+    const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k], price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
+    // a mark belongs to the first zone that contains its centre
+    const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', n: {}, total: 0 })), other = { name: null, n: {}, total: 0 };
+    if (zs.length) d.items.forEach((i) => {
+      if (i.kind !== 'mark' || i.k[0] === '@') return;
+      const cx = i.x + S, cy = i.y + S, zi = zs.findIndex((z) => cx >= z.x && cx <= z.x + z.w && cy >= z.y && cy <= z.y + z.h), r = zi < 0 ? other : zr[zi], p = cat.get(i.k);
+      r.n[i.k] = (r.n[i.k] || 0) + 1; r.total += p ? p.price || 0 : 0;
+    });
+    const zones = zr.concat(Object.keys(other.n).length ? [other] : []).map((r) => ({ name: r.name, parts: MK.filter((k) => r.n[k]).map((k) => r.n[k] + '× ' + letter(MK.indexOf(k))).join('   '), total: r.total }));
+    const cables = cableRows();
+    return { products, generic: Object.keys(GENERIC).map((g) => '@' + g).filter((k) => n[k]).map((k) => ({ k, qty: n[k] })), zones, cables, sc: d.sc || 0,
+      total: products.reduce((s, r) => s + r.price * r.qty, 0) + cables.reduce((s, r) => s + r.price, 0) };
+  }
+
   /* ================= cards ================= */
   function cardW(p) {
     const len = (a) => Math.max(0, ...(a || []).map((x) => x.label.length));
     return Math.ceil(Math.max(210, (len(p.in) + len(p.out)) * 6.4 + 54) / 10) * 10;
   }
-  function buildCard(p, item, ci, ciSize) {
+  function buildCard(p, item) {
     const imgs = HP.imagesOf(p, item), face = clamp(item.face || 0, 0, Math.max(0, imgs.length - 1)), v = HP.variantOf(p, item);
     const img = HP.imgEl(imgs[face] || '', C.hd ? 'hd' : 'card', { alt: p.name });
-    if (ci) return h('.card.ci', { style: { width: ciSize + 'px' }, title: p.brand + ' ' + p.name }, h('.card-img', { style: { height: ciSize + 'px' } }, img), h('.ci-name', null, p.name));
     const port = (x, side) => h('.port.' + side, { data: { key: x.key, side, conn: x.conn }, title: P.CONNECTORS[x.conn] || '' }, h('i.dot.c-' + x.conn), h('span.lbl', null, x.label));
     const hasIO = (p.in || []).length || (p.out || []).length;
     return h('.card', { style: { width: cardW(p) + 'px' } },
+      MK.includes(p.id) && h('span.card-mark', { title: t('Marked on the floor plan as ', 'Markeret på plantegningen som ') + letter(MK.indexOf(p.id)), html: markHtml(p.id) }),
       (p.bt || p.wifi) && h('.fabs', null, p.bt && h('span.fab', { title: 'Bluetooth' }, icon('bt')), p.wifi && h('span.fab', { title: 'WiFi' }, icon('wifi'))),
       h('.card-head', null, h('span.brand', null, p.brand, v && h('span.vlabel', null, ' · ' + v.label),
           p.gone && h('span.gone-tag.no-print', { title: t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
@@ -41,7 +119,7 @@
       hasIO ? h('.card-io', null, h('.col.in', null, (p.in || []).map((x) => port(x, 'in'))), h('.col.out', null, (p.out || []).map((x) => port(x, 'out')))) : null);
   }
   C.buildCard = buildCard; C.cardW = cardW;
-  const cardScale = () => (store.doc.ci ? 1 : store.doc.cardScale || 1);
+  const cardScale = () => store.doc.cardScale || 1;
   C.cardScale = cardScale;
 
   function priceRows() {
@@ -53,7 +131,15 @@
       r.qty++; rows.set(key, r);
     };
     d.items.forEach((it) => it.kind === 'product' && add(cat.get(it.pid), false, it));
+    const mc = {};
+    d.items.forEach((it) => { if (it.kind === 'mark' && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
+    for (const pid in mc) { // a product placed as marks and also drawn as cards is the same hardware: count the larger number once
+      const p = cat.get(pid); let have = 0;
+      rows.forEach((r, key) => { if (key.startsWith(pid + '|')) have += r.qty; });
+      for (let i = have; i < mc[pid]; i++) add(p, false, null);
+    }
     d.conns.forEach((c) => c.cable && add(cat.get(c.cable), true));
+    cableRows().forEach((r) => { if (r.k && d.sc) for (let i = 0; i < r.qty; i++) add(cat.get(r.k), true); });
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
     return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
   }
@@ -64,7 +150,7 @@
     if (it.kind === 'product') {
       const p = cat.get(it.pid);
       if (!p) return h('.card.missing', { style: { width: '210px' } }, h('.card-head', null, h('span.brand', null, t('Unknown product', 'Ukendt produkt')), h('span.name', null, it.pid)));
-      return buildCard(p, it, d.ci, d.ciSize);
+      return buildCard(p, it);
     }
     if (it.kind === 'text') {
       // Tab / Enter in the title jumps to the paragraph, Shift+Tab jumps back
@@ -100,12 +186,57 @@
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()));
     }
+    if (it.kind === 'zone') {
+      const col = ZONE_COLORS[d.items.filter((i) => i.kind === 'zone').indexOf(it) % ZONE_COLORS.length];
+      const nm = h('.zone-name', { contentEditable: 'true', data: { ph: t('Room name', 'Rumnavn') }, textContent: it.name || '', style: { background: col },
+        onkeydown(e) { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); nm.blur(); } },
+        onblur() { const v = nm.innerText.trim(); if (v !== (it.name || '')) { it.name = v; store.commit(); } } });
+      nm.setAttribute('spellcheck', 'false');
+      return h('.zone', { style: { width: it.w + 'px', height: it.h + 'px', borderColor: col } },
+        h('.zone-tab', null, h('i.zgrip.no-print', { style: { background: col }, title: t('Drag to move the room', 'Træk for at flytte rummet') }), nm), h('i.resize.no-print', { style: { background: col } }));
+    }
+    if (it.kind === 'run') {
+      const w = Math.max(1, ...it.pts.map((p) => p[0])), hh = Math.max(1, ...it.pts.map((p) => p[1])), dd = 'M' + it.pts.map((p) => p.join(',')).join(' L');
+      let half = runPx(it) / 2, mid = it.pts[0];
+      for (let i = 1; i < it.pts.length; i++) { const a = it.pts[i - 1], b = it.pts[i], seg = Math.hypot(b[0] - a[0], b[1] - a[1]); if (half <= seg) { const f = seg ? half / seg : 0; mid = [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f]; break; } half -= seg; }
+      const a = it.pts[0], b = it.pts[it.pts.length - 1], cp = it.cable && cat.get(it.cable);
+      return h('.run' + (cp ? '.has' : ''), { style: { width: w + 'px', height: hh + 'px' }, title: cp ? cp.brand + ' ' + cp.name : t('Cable run: no cable chosen', 'Kabeltræk: intet kabel valgt'),
+        html: '<svg width="' + w + '" height="' + hh + '"><path class="hit" d="' + dd + '"/><path class="line" d="' + dd + '"/><circle cx="' + a[0] + '" cy="' + a[1] + '" r="3.5"/><circle cx="' + b[0] + '" cy="' + b[1] + '" r="3.5"/></svg>' },
+        h('span.rl', { style: { left: mid[0] + 'px', top: mid[1] + 'px' } }, d.sc ? fmtM(runPx(it) / d.sc) : '? m'));
+    }
+    if (it.kind === 'mark') { const S = d.ms || 34; return h('.mark', { style: { width: S + 'px', height: S + 'px' }, title: markTitle(it.k), html: markHtml(it.k) }); }
+    if (it.kind === 'legend') {
+      const { products, generic, total, zones, cables, sc } = legendRows();
+      const bar = sc ? [5, 2, 1, 0.5].find((m) => m * sc <= 150) || 0.25 : 0;
+      return h('.prices.legend', null, h('.prices-head', null, t('On the floor plan', 'På plantegningen')),
+        products.length || generic.length ? h('table', null,
+          products.map((r) => h('tr', null, h('td.lm', null, h('span', { html: markHtml(r.k) })),
+            h('td.li', null, r.p && (r.p.img || [])[0] ? HP.imgEl(r.p.img[0], 'thumb') : null),
+            h('td', null, r.p ? [h('span.lb', null, r.p.brand), r.p.name, h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
+            h('td.q', null, r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk')),
+            h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, r.price ? HP.money(r.price * r.qty) : ''))),
+          generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 3 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
+          : h('.muted', null, t('No marks yet. Switch on CI mode and click a product to place marks.', 'Ingen mærker endnu. Slå CI-tilstand til, og klik på et produkt for at placere mærker.')),
+        zones.length ? [h('.lsec', null, t('Per room', 'Pr. rum')), h('table', null, zones.map((z) => h('tr', null,
+          h('td.zn', null, z.name === null ? t('Outside the rooms', 'Uden for rum') : z.name || t('Room', 'Rum')), h('td.zp', null, z.parts || '–'), h('td.p', null, z.total ? HP.money(z.total) : ''))))] : null,
+        cables.length ? [h('.lsec', null, t('Installation cable', 'Installationskabel')), h('table', null, cables.map((c) => h('tr', null,
+          h('td.zn', null, c.name || h('span.muted2', null, t('Cable not chosen', 'Kabel ikke valgt'))),
+          h('td.zp', null, c.runs + ' ' + t(c.runs === 1 ? 'run' : 'runs', 'træk') + (sc ? ' · ' + fmtM(c.m) : '')),
+          h('td.p', null, c.price ? HP.money(c.price) : ''))))] : null,
+        cables.length && !sc ? h('.lnote', null, t('Set the scale to get cable lengths.', 'Sæt målestokken for at få kabellængder.')) : null,
+        bar ? h('.lscale', null, h('i', { style: { width: bar * sc + 'px' } }), (bar + ' m').replace('.', ',')) : null,
+        total > 0 && h('.prices-total', null, h('span', null, t('On the plan', 'På planen')), h('span', null, HP.money(total))));
+    }
     if (it.kind === 'plan') return h('.plan' + (it.lock ? '.locked' : ''), { style: { width: it.w + 'px', height: it.h + 'px' } }, h('img', { src: store.planSrc || '', draggable: false }), h('i.resize.no-print'));
     return h('div');
   }
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
-    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, d.ci, d.ciSize, cardScale(), C.hd, cat.version, L].join('|');
+    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
+    if (it.kind === 'mark') return ['m', it.k, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
+    if (it.kind === 'zone') return ['z', it.w, it.h, it.name, d.items.filter((i) => i.kind === 'zone').indexOf(it), L].join('|');
+    if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
+    if (it.kind === 'legend') return 'l' + JSON.stringify(legendRows(), (k, v) => (k === 'p' ? (v ? v.id + v.name : 0) : v)) + cat.version + L;
     if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, it.noTitle ? 1 : 0, it.noBody ? 1 : 0, L].join('|');
     if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + L + HP.today();
     if (it.kind === 'plan') return ['f', it.w, it.h, it.lock, (store.planSrc || '').length].join('|');
@@ -114,13 +245,14 @@
 
   function renderItems() {
     const seen = new Set();
+    MK = markKeys();
     store.doc.items.forEach((it) => {
       seen.add(it.id);
       const sig = itemSig(it);
       let el = els.get(it.id);
       if (!el || el._sig !== sig) {
         const ne = buildItem(it); ne._sig = sig; ne.dataset.id = it.id; ne.classList.add('item', 'k-' + it.kind);
-        if (el) el.replaceWith(ne); else (it.kind === 'plan' ? planEl : itemsEl).append(ne);
+        if (el) el.replaceWith(ne); else if (it.kind === 'plan') planEl.prepend(ne); else (it.kind === 'zone' ? planEl : itemsEl).append(ne); // plan and rooms sit under everything else
         els.set(it.id, ne); el = ne; geom.delete(it.id);
       }
       el.style.left = it.x + 'px'; el.style.top = it.y + 'px';
@@ -129,7 +261,7 @@
     });
     for (const [id, el] of els) if (!seen.has(id)) { el.remove(); els.delete(id); geom.delete(id); }
     const ord = store.doc.items.map((i) => i.id).join(',');
-    if (ord !== order) { order = ord; store.doc.items.forEach((it) => { const el = els.get(it.id); if (el && it.kind !== 'plan') itemsEl.append(el); }); }
+    if (ord !== order) { order = ord; store.doc.items.forEach((it) => { const el = els.get(it.id); if (el && it.kind !== 'plan' && it.kind !== 'zone') itemsEl.append(el); }); }
   }
   function measure(it) {
     let g = geom.get(it.id);
@@ -185,7 +317,6 @@
     const d = store.doc;
     wiresSvg.textContent = ''; chipsEl.textContent = ''; routes.clear();
     world.querySelectorAll('.port.on').forEach((e) => e.classList.remove('on'));
-    if (d.ci) return;
     const bySrc = {};
     d.conns.forEach((c) => (bySrc[c.a.item] = bySrc[c.a.item] || []).push(c));
     const lanes = new Map();
@@ -230,6 +361,7 @@
     const g = 20 * view.z * (view.z < 0.5 ? 5 : 1);
     vp.style.backgroundSize = g + 'px ' + g + 'px';
     vp.style.backgroundPosition = view.x + 'px ' + view.y + 'px';
+    moveGhost();
     if (zoomLbl) zoomLbl.textContent = Math.round(view.z * 100) + '%';
     const hd = view.z * cardScale() >= 1.3;
     if (hd !== C.hd) { C.hd = hd; renderItems(); }
@@ -274,14 +406,17 @@
       if (one && one.kind === 'product') {
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
         const p = cat.get(one.pid);
-        if (p && HP.imagesOf(p, one).length > 1 && !d.ci) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
+        if (p && HP.imagesOf(p, one).length > 1) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
         if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Colour', 'Farve'), (e) => C.colourMenu(one.id, e.currentTarget)));
       }
       if (one && one.kind === 'text') selbar.append(
         btn('text', t('Title', 'Titel'), () => C.toggleNotePart(one.id, 'title'), (one.noTitle ? '' : '.on') + (one.noBody ? '.locked' : '')),
         btn('text', t('Paragraph', 'Afsnit'), () => C.toggleNotePart(one.id, 'body'), (one.noBody ? '' : '.on') + (one.noTitle ? '.locked' : '')));
+      if (one && one.kind === 'mark' && one.k[0] !== '@') selbar.append(btn('swap', t('Replace all ', 'Udskift alle ') + letter(markIndex(one.k)), () => HP.panels.replacePicker(one.id)),
+        btn('layers', t('Select all ', 'Markér alle ') + letter(markIndex(one.k)), () => C.selectMarks(one.k)));
+      if (one && one.kind === 'run') selbar.append(btn('cable', t('Cable', 'Kabel'), () => HP.panels.runCablePicker(one.id)));
       if (one && one.kind === 'plan') selbar.append(btn(one.lock ? 'move' : 'lock', one.lock ? t('Unlock to move', 'Lås op for at flytte') : t('Lock', 'Lås'), () => { one.lock = !one.lock; store.commit(); }), btn('trash', t('Remove floor plan', 'Fjern plantegning'), C.removePlan, '.danger'));
-      if (!(one && (one.kind === 'prices' || one.kind === 'plan'))) selbar.append(btn('copy', t('Duplicate', 'Dublér'), C.duplicateSelection));
+      if (!(one && (one.kind === 'prices' || one.kind === 'plan' || one.kind === 'legend'))) selbar.append(btn('copy', t('Duplicate', 'Dublér'), C.duplicateSelection));
       if (HP.isAdmin() && ids.some((id) => store.item(id).kind === 'product')) selbar.append(btn('bolt', t('Save as Shortcut', 'Gem som genvej'), () => HP.editor.saveShortcut()));
       if (!(one && one.kind === 'plan')) selbar.append(btn('trash', t('Delete', 'Slet'), C.deleteSelection, '.danger'));
     }
@@ -315,7 +450,7 @@
       const b = toWorld(ev.clientX, ev.clientY), x0 = Math.min(a.x, b.x), y0 = Math.min(a.y, b.y), x1 = Math.max(a.x, b.x), y1 = Math.max(a.y, b.y);
       Object.assign(marqueeEl.style, { display: 'block', left: Math.min(e.clientX, ev.clientX) - r.left + 'px', top: Math.min(e.clientY, ev.clientY) - r.top + 'px', width: Math.abs(ev.clientX - e.clientX) + 'px', height: Math.abs(ev.clientY - e.clientY) + 'px' });
       store.sel = new Set(base);
-      store.doc.items.forEach((it) => { if (it.kind === 'plan') return; const g = measure(it); if (it.x < x1 && it.x + g.w > x0 && it.y < y1 && it.y + g.h > y0) store.sel.add(it.id); });
+      store.doc.items.forEach((it) => { if (it.kind === 'plan' || it.kind === 'zone') return; const g = measure(it); if (it.x < x1 && it.x + g.w > x0 && it.y < y1 && it.y + g.h > y0) store.sel.add(it.id); });
       store.selConn = null; refreshSel();
     }, () => { marqueeEl.style.display = 'none'; });
   }
@@ -324,7 +459,7 @@
     if (!was) { if (!add) store.sel.clear(); store.sel.add(it.id); store.selConn = null; refreshSel(); }
     const group = [...store.sel].map(store.item).filter((i) => i && !(i.kind === 'plan' && i.lock)), start = group.map((i) => [i.x, i.y]);
     drag(e, (ev, dx, dy) => {
-      group.forEach((i, k) => { i.x = snap(start[k][0] + dx / view.z); i.y = snap(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
+      group.forEach((i, k) => { const sn = i.kind === 'mark' || i.kind === 'run' ? snap5 : snap; i.x = sn(start[k][0] + dx / view.z); i.y = sn(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
       renderWires(); placeBar();
     }, (ev, moved) => {
       if (moved) return store.commit();
@@ -335,7 +470,7 @@
         lastImgClick = { id: it.id, t: dbl ? 0 : now };
         if (dbl) { if (flipped) store.undo(); return C.inspect(it.id); }
         const n = HP.imagesOf(p, it).length;
-        if (!store.doc.ci && n > 1) { it.face = ((it.face || 0) + 1) % n; lastImgClick.flipped = true; return store.commit(); }
+        if (n > 1) { it.face = ((it.face || 0) + 1) % n; lastImgClick.flipped = true; return store.commit(); }
       }
       refreshSel();
     });
@@ -345,7 +480,7 @@
     drag(e, (ev, dx, dy) => {
       if (it.kind === 'plan') { it.w = Math.max(100, snap(w0 + dx / view.z)); it.h = Math.round((it.w * h0) / w0); }
       else { it.w = Math.max(140, snap(w0 + dx / view.z)); it.h = Math.max(60, snap(h0 + dy / view.z)); }
-      el.style.width = it.w + 'px'; el.style[it.kind === 'plan' ? 'height' : 'minHeight'] = it.h + 'px';
+      el.style.width = it.w + 'px'; el.style[it.kind === 'plan' || it.kind === 'zone' ? 'height' : 'minHeight'] = it.h + 'px';
     }, (ev, moved) => { if (moved) { geom.delete(it.id); store.commit(); } });
   }
   function startWireDrag(e, id) {
@@ -413,6 +548,31 @@
     if (insp) { e.preventDefault(); e.stopPropagation(); return C.inspect(insp.closest('.item').dataset.id); }
     if (e.target.closest('[contenteditable="true"], button, input, #selbar, .zoomer, .cibar')) return;
     e.preventDefault(); blurActive();
+    if (tool && tool.type === 'zone') { // drag a rectangle around the room
+      const a = toWorld(e.clientX, e.clientY), r = vp.getBoundingClientRect();
+      return drag(e, (ev) => Object.assign(marqueeEl.style, { display: 'block', left: Math.min(e.clientX, ev.clientX) - r.left + 'px', top: Math.min(e.clientY, ev.clientY) - r.top + 'px', width: Math.abs(ev.clientX - e.clientX) + 'px', height: Math.abs(ev.clientY - e.clientY) + 'px' }),
+        (ev, moved) => {
+          marqueeEl.style.display = 'none'; if (!tool) return;
+          const b = toWorld(ev.clientX, ev.clientY); let x = Math.min(a.x, b.x), y = Math.min(a.y, b.y), w = Math.abs(b.x - a.x), hh = Math.abs(b.y - a.y);
+          if (!moved || w < 60 || hh < 40) { w = 280; hh = 180; x = a.x - 140; y = a.y - 90; }
+          C.addZone(snap(x), snap(y), snap(w), snap(hh));
+        });
+    }
+    if (tool) { // cable run / scale: click = next point, drag = pan
+      const x0 = view.x, y0 = view.y;
+      return drag(e, (ev, dx, dy) => { view.x = x0 + dx; view.y = y0 + dy; applyView(); }, (ev, moved) => {
+        if (moved || !tool) return;
+        const p = toolPoint(ev), last = tool.pts[tool.pts.length - 1];
+        if (tool.type === 'run' && last && Math.hypot(p[0] - last[0], p[1] - last[1]) < 8 / view.z) return finishRun(); // second click on the same spot = done
+        tool.pts.push(p);
+        if (tool.type === 'scale' && tool.pts.length === 2) return askScale();
+        toolPreview();
+      });
+    }
+    if (stamp) { // click = place a mark, drag = pan
+      const x0 = view.x, y0 = view.y;
+      return drag(e, (ev, dx, dy) => { view.x = x0 + dx; view.y = y0 + dy; applyView(); moveGhost(); }, (ev, moved) => { if (!moved && stamp) { const w = toWorld(ev.clientX, ev.clientY); C.placeMark(stamp.key, w.x, w.y); } });
+    }
     if (portEl && portEl.closest('.item')) return startWire(e, portEl);
     const w = e.target.closest('.wire, .chip'); if (w) return startWireDrag(e, w.dataset.id);
     const itemEl = e.target.closest('.item');
@@ -429,23 +589,24 @@
   /* ================= operations ================= */
   C.addProduct = (pid, wx, wy) => {
     const p = cat.get(pid), d = store.doc; if (!p) return null;
-    const s = cardScale(), w = d.ci ? d.ciSize : cardW(p) * s, hh = d.ci ? d.ciSize : (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
+    const s = cardScale(), w = cardW(p) * s, hh = (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
-  C.addProductCenter = (pid) => { const c = centerWorld(), n = store.doc.items.length % 6; return C.addProduct(pid, c.x + n * 20, c.y + n * 20); };
+  C.addProductCenter = (pid) => { if (store.doc.ci) return C.startStamp(pid); const c = centerWorld(), n = store.doc.items.length % 6; return C.addProduct(pid, c.x + n * 20, c.y + n * 20); };
   const cardAt = (cx, cy) => {
     const hit = document.elementFromPoint(cx, cy), el = hit && hit.closest('.item.k-product');
     if (!el) return null;
     const r = el.getBoundingClientRect(), ix = r.width * 0.2, iy = r.height * 0.2;
     return cx > r.left + ix && cx < r.right - ix && cy > r.top + iy && cy < r.bottom - iy ? el : null;
   };
-  C.dragHover = (cx, cy) => { const el = cx == null ? null : cardAt(cx, cy); world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace'); };
+  C.dragHover = (cx, cy) => { const el = cx == null || store.doc.ci ? null : cardAt(cx, cy); world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace'); };
   C.dropProduct = (pid, cx, cy) => {
     const r = vp.getBoundingClientRect(), el = cardAt(cx, cy);
     C.dragHover(null);
     if (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) return;
+    if (store.doc.ci) { const w = toWorld(cx, cy); return C.placeMark(pid, w.x, w.y); }
     if (el) return C.replaceItem(el.dataset.id, pid);
     const w = toWorld(cx, cy); C.addProduct(pid, w.x, w.y);
   };
@@ -467,7 +628,7 @@
   C.togglePrices = () => {
     const d = store.doc;
     if (C.hasPrices()) d.items = d.items.filter((i) => i.kind !== 'prices');
-    else d.items.push({ id: HP.uid(), kind: 'prices', x: snap(pageSize().w - 330), y: 30 });
+    else d.items.push({ id: HP.uid(), kind: 'prices', x: snap(pageSize().w - 330), y: snap(below('legend', pageSize().w - 330, 300)) });
     store.commit();
   };
   C.deleteSelection = () => {
@@ -476,17 +637,19 @@
     if (!store.sel.size) return;
     d.items = d.items.filter((i) => !store.sel.has(i.id));
     d.conns = d.conns.filter((c) => !store.sel.has(c.a.item) && !store.sel.has(c.b.item));
-    store.sel.clear(); store.commit();
+    normMarks(); store.sel.clear(); store.commit();
   };
   C.duplicateSelection = () => {
-    const d = store.doc, map = {}, src = d.items.filter((i) => store.sel.has(i.id) && i.kind !== 'prices' && i.kind !== 'plan');
+    const d = store.doc, map = {}, src = d.items.filter((i) => store.sel.has(i.id) && i.kind !== 'prices' && i.kind !== 'plan' && i.kind !== 'legend');
     if (!src.length) return;
     src.forEach((i) => { const n = JSON.parse(JSON.stringify(i)); n.id = map[i.id] = HP.uid(); n.x += 30; n.y += 30; d.items.push(n); });
     d.conns.slice().forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push(Object.assign({}, c, { id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key } })); });
     store.sel = new Set(Object.values(map)); store.commit();
   };
   C.replaceItem = (id, pid) => {
-    const d = store.doc, it = store.item(id), oldP = cat.get(it.pid) || {}, newP = cat.get(pid);
+    const d = store.doc, it = store.item(id);
+    if (it.kind === 'mark') return C.replaceMarks(it.k, pid);
+    const oldP = cat.get(it.pid) || {}, newP = cat.get(pid);
     if (!newP || it.pid === pid) return;
     const used = { in: [], out: [] };
     d.conns.forEach((c) => { if (c.a.item === id) used.out.push(c.a.key); if (c.b.item === id) used.in.push(c.b.key); });
@@ -497,13 +660,125 @@
       if (c.b.item === id) { if (!mi[c.b.key]) { lost++; return false; } c.b.key = mi[c.b.key]; kept++; }
       return true;
     });
-    if (!d.ci) it.x = snap(it.x + (measure(it).w - cardW(newP) * cardScale()) / 2);
+    it.x = snap(it.x + (measure(it).w - cardW(newP) * cardScale()) / 2);
     it.pid = pid; it.face = 0; delete it.v; store.sel = new Set([id]); store.selConn = null; store.commit();
     const msg = (oldP.name || '?') + ' → ' + newP.name + '. ' + (kept + lost === 0 ? '' : lost
       ? t(kept + ' connection(s) kept, ' + lost + ' removed (no matching port).', kept + ' forbindelse(r) bevaret, ' + lost + ' fjernet (ingen matchende port).')
       : t('All ' + kept + ' connection(s) kept.', 'Alle ' + kept + ' forbindelse(r) bevaret.'));
     HP.toast(msg, { kind: lost ? 'warn' : 'ok', ms: 7000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
   };
+  /* ---- marks ---- */
+  const LEGEND_W = 340;
+  // beside the floor plan when there is room (new plans leave a column free on landscape pages), otherwise top-left
+  const below = (kind, x, w) => { const o = store.doc.items.find((i) => i.kind === kind); return o && o.x < x + w && o.x + measure(o).w > x && o.y < 400 ? o.y + measure(o).h + 20 : 30; }; // do not land on the other list
+  const legendSpot = () => { const s = pageSize(), plan = store.doc.items.find((i) => i.kind === 'plan'), x = !plan || plan.x + plan.w <= s.w - LEGEND_W - 40 ? s.w - LEGEND_W - 30 : 30; return { x, y: snap(below('prices', x, LEGEND_W)) }; };
+  C.placeMark = (key, wx, wy) => {
+    const d = store.doc, S = d.ms || 34, first = !d.items.some((i) => i.kind === 'mark');
+    if (key[0] !== '@' && !cat.get(key)) return null;
+    const it = { id: HP.uid(), kind: 'mark', k: key, x: snap5(wx - S / 2), y: snap5(wy - S / 2) };
+    d.items.push(it);
+    if (first && !C.hasLegend()) d.items.push(Object.assign({ id: HP.uid(), kind: 'legend' }, legendSpot())); // the first mark brings the legend along
+    normMarks(); store.sel.clear(); store.selConn = null; store.commit();
+    return it;
+  };
+  // every mark of one product changes to another product and keeps its letter
+  C.replaceMarks = (key, pid) => {
+    const d = store.doc, newP = cat.get(pid), oldP = cat.get(key);
+    if (!newP || key === pid) return;
+    d.mk = markKeys().map((k) => (k === key ? pid : k)).filter((k, i, a) => a.indexOf(k) === i);
+    let n = 0; d.items.forEach((i) => { if (i.kind === 'mark' && i.k === key) { i.k = pid; n++; } });
+    normMarks(); store.commit();
+    HP.toast((oldP ? oldP.name : '?') + ' → ' + newP.name + ' (' + n + ' ' + t('marks', 'mærker') + ')', { kind: 'ok', ms: 7000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
+  C.selectMarks = (key) => C.select(store.doc.items.filter((i) => i.kind === 'mark' && i.k === key).map((i) => i.id));
+  C.hasLegend = () => store.doc.items.some((i) => i.kind === 'legend');
+  C.toggleLegend = () => {
+    const d = store.doc;
+    if (C.hasLegend()) d.items = d.items.filter((i) => i.kind !== 'legend'); else d.items.push(Object.assign({ id: HP.uid(), kind: 'legend' }, legendSpot()));
+    store.commit();
+  };
+  C.setMarkSize = (px, commit) => { store.doc.ms = clamp(px, 18, 70); geom.clear(); commit ? store.commit() : render(); moveGhost(); };
+  // stamp mode: the chosen product or symbol follows the pointer; every click on the canvas places one
+  function moveGhost() {
+    if (!ghost) return;
+    const r = vp.getBoundingClientRect(), inside = lastPtr && lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom;
+    ghost.hidden = !inside; if (!inside) return;
+    const S = (store.doc.ms || 34) * view.z;
+    Object.assign(ghost.style, { width: S + 'px', height: S + 'px', left: lastPtr.x - r.left + 'px', top: lastPtr.y - r.top + 'px' });
+  }
+  /* ---- tools: room, cable run, scale ---- */
+  C.tool = () => tool;
+  C.startTool = (type) => {
+    const same = tool && tool.type === type;
+    C.stopTool(true); C.stopStamp(true);
+    if (same) return HP.emit('stamp');
+    if (wiring) cancelWire();
+    tool = { type, pts: [] }; vp.classList.add('stamping');
+    if (store.sel.size || store.selConn) { store.sel.clear(); store.selConn = null; refreshSel(); }
+    HP.emit('stamp');
+  };
+  C.stopTool = (quiet) => { if (!tool) return; tool = null; toolSvg.textContent = ''; marqueeEl.style.display = 'none'; vp.classList.remove('stamping'); if (!quiet) HP.emit('stamp'); };
+  // points snap to the centre of a mark, so a run starts and ends exactly on a speaker or the rack
+  function toolPoint(ev) {
+    const w = toWorld(ev.clientX, ev.clientY), S = (store.doc.ms || 34) / 2;
+    const m = store.doc.items.find((i) => i.kind === 'mark' && Math.hypot(i.x + S - w.x, i.y + S - w.y) <= S);
+    return m ? [m.x + S, m.y + S] : [Math.round(w.x), Math.round(w.y)];
+  }
+  function toolPreview() {
+    if (!toolSvg) return;
+    toolSvg.textContent = '';
+    if (!tool || !tool.pts.length) return;
+    const pts = tool.pts.slice(), r = vp.getBoundingClientRect();
+    if (lastPtr && lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom) { const w = toWorld(lastPtr.x, lastPtr.y); pts.push([w.x, w.y]); }
+    toolSvg.append(svg('path', { class: 'tline', d: 'M' + pts.map((p) => p.join(',')).join(' L') }));
+    tool.pts.forEach((p) => toolSvg.append(svg('circle', { class: 'tdot', cx: p[0], cy: p[1], r: 4 })));
+    if (tool.type === 'run' && store.doc.sc && pts.length > 1) {
+      const len = runPx({ pts }) / store.doc.sc, l = pts[pts.length - 1], tx = svg('text', { class: 'ttext', x: l[0] + 12, y: l[1] - 10 }); tx.textContent = fmtM(len); toolSvg.append(tx);
+    }
+  }
+  function finishRun() {
+    if (!tool || tool.type !== 'run') return;
+    const pts = tool.pts; tool.pts = []; toolPreview();
+    if (pts.length < 2) return;
+    const x = Math.min(...pts.map((p) => p[0])), y = Math.min(...pts.map((p) => p[1]));
+    const it = { id: HP.uid(), kind: 'run', x, y, cable: lastCable && cat.get(lastCable) ? lastCable : null, pts: pts.map((p) => [p[0] - x, p[1] - y]) };
+    store.doc.items.push(it);
+    if (!C.hasLegend() && store.doc.items.some((i) => i.kind === 'mark')) store.doc.items.push(Object.assign({ id: HP.uid(), kind: 'legend' }, legendSpot()));
+    store.commit(); // the tool stays on for the next run
+  }
+  function askScale() {
+    const px = Math.hypot(tool.pts[1][0] - tool.pts[0][0], tool.pts[1][1] - tool.pts[0][1]);
+    toolPreview();
+    const inp = h('input', { type: 'text', inputMode: 'decimal', placeholder: t('e.g. 4,2', 'f.eks. 4,2'), autofocus: true, onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); ok(); } } });
+    const ok = () => {
+      const m = parseFloat(inp.value.replace(',', '.'));
+      if (!(m > 0) || px < 5) return inp.select();
+      store.doc.sc = Math.round((px / m) * 1000) / 1000; close(); store.commit();
+      HP.toast(t('Scale set. Cable runs now show their length.', 'Målestokken er sat. Kabeltræk viser nu deres længde.'), { kind: 'ok' });
+    };
+    const close = HP.modal({ title: t('How long is that line?', 'Hvor lang er den linje?'), onClose: () => C.stopTool(),
+      body: [h('p.muted', null, t('Type the real length of the line you just marked, in metres.', 'Skriv den rigtige længde af den linje, du lige har markeret, i meter.')), h('label.field', null, h('span', null, t('Length in metres', 'Længde i meter')), inp)],
+      foot: [h('button.btn.primary', { onclick: ok }, t('Set scale', 'Sæt målestok'))] });
+  }
+  C.addZone = (x, y, w, hh) => {
+    const it = { id: HP.uid(), kind: 'zone', x, y, w, h: hh, name: '' };
+    store.doc.items.push(it); C.stopTool(); store.sel = new Set([it.id]); store.selConn = null; store.commit();
+    const el = els.get(it.id), nm = el && el.querySelector('.zone-name'); if (nm) nm.focus();
+    return it;
+  };
+  C.setRunCable = (id, pid) => { const it = store.item(id); if (!it) return; it.cable = pid || null; lastCable = pid || null; store.commit(); };
+  C.stamp = () => stamp;
+  C.startStamp = (key) => {
+    const same = stamp && stamp.key === key;
+    C.stopStamp(true); C.stopTool(true);
+    if (same || (key[0] !== '@' && !cat.get(key))) return HP.emit('stamp');
+    if (wiring) cancelWire();
+    stamp = { key }; ghost = h('.mark.ghost', { html: markHtml(key) }); overlay.append(ghost); vp.classList.add('stamping');
+    if (store.sel.size || store.selConn) { store.sel.clear(); store.selConn = null; refreshSel(); }
+    moveGhost(); HP.emit('stamp');
+  };
+  C.stopStamp = (quiet) => { if (!stamp) return; stamp = null; ghost.remove(); ghost = null; vp.classList.remove('stamping'); if (!quiet) HP.emit('stamp'); };
+
   C.selectAll = () => C.select(store.doc.items.filter((i) => i.kind !== 'plan').map((i) => i.id));
   C.nudge = (dx, dy) => { const g = [...store.sel].map(store.item).filter(Boolean); if (!g.length) return; g.forEach((i) => { i.x += dx; i.y += dy; }); store.commit(); };
 
@@ -554,6 +829,8 @@
   /* ---- right-click menu ---- */
   function onContext(e) {
     e.preventDefault();
+    if (tool) { if (tool.type === 'run' && tool.pts.length > 1) finishRun(); return C.stopTool(); } // right-click ends the tool (and finishes the run being drawn)
+    if (stamp) return C.stopStamp(); // right-click ends placing
     if (wiring) cancelWire();
     const itemEl = e.target.closest('.item'), wireEl = e.target.closest('.wire, .chip'), d = store.doc, admin = HP.isAdmin();
     if (wireEl) { store.sel.clear(); store.selConn = wireEl.dataset.id; refreshSel(); }
@@ -571,14 +848,20 @@
       add(t('Delete connection', 'Slet forbindelse'), 'Del', 'trash', C.deleteSelection, { danger: true });
       M.push('sep');
     } else if (ids.length) {
-      M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
+      M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : one.kind === 'mark' ? markTitle(one.k) : one.kind === 'legend' ? t('Legend', 'Signaturforklaring') : one.kind === 'zone' ? t('Room', 'Rum') + (one.name ? ': ' + one.name : '') : one.kind === 'run' ? t('Cable run', 'Kabeltræk') + (d.sc ? ' · ' + fmtM(runPx(one) / d.sc) : '') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
       if (p) {
         add(t('Replace…', 'Udskift…'), 'R', 'swap', () => HP.panels.replacePicker(one.id));
-        if (HP.imagesOf(p, one).length > 1 && !d.ci) add(t('Flip front/back', 'Vend for/bag'), 'B', 'flip', () => C.flip(one.id));
+        if (HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'B', 'flip', () => C.flip(one.id));
         if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'I', 'search', () => C.inspect(one.id));
         if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'C', 'layers', () => C.colourMenu(one.id, null, x, y));
         if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
+      if (one && one.kind === 'mark' && one.k[0] !== '@') {
+        add(t('Replace all ', 'Udskift alle ') + letter(markIndex(one.k)) + '…', 'R', 'swap', () => HP.panels.replacePicker(one.id));
+        add(t('Select all ', 'Markér alle ') + letter(markIndex(one.k)), '', 'layers', () => C.selectMarks(one.k));
+        add(t('Place more of these', 'Placér flere af disse'), '', 'plus', () => C.startStamp(one.k));
+      }
+      if (one && one.kind === 'run') add(t('Choose cable…', 'Vælg kabel…'), '', 'cable', () => HP.panels.runCablePicker(one.id));
       if (one && one.kind === 'text') {
         add(t('Show title', 'Vis titel'), '', 'text', () => C.toggleNotePart(one.id, 'title'), { on: !one.noTitle, disabled: !!one.noBody });
         add(t('Show paragraph', 'Vis afsnit'), '', 'text', () => C.toggleNotePart(one.id, 'body'), { on: !one.noBody, disabled: !!one.noTitle });
@@ -588,7 +871,7 @@
         add(t('Remove floor plan', 'Fjern plantegning'), '', 'trash', C.removePlan, { danger: true });
       } else {
         add(t('Copy', 'Kopiér'), 'Ctrl+C', 'copy', C.copy);
-        add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && one.kind === 'prices' });
+        add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && (one.kind === 'prices' || one.kind === 'legend') });
         add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
         add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
         if (admin && ids.some((id) => store.item(id).kind === 'product')) add(t('Save as Shortcut…', 'Gem som genvej…'), '', 'bolt', () => HP.editor.saveShortcut());
@@ -605,7 +888,7 @@
     if (C.hasPlan()) add(t('Remove floor plan', 'Fjern plantegning'), '', 'plan', C.removePlan);
     add(t('Select all', 'Markér alt'), 'Ctrl+A', 'layers', C.selectAll);
     add(t('Fit to window', 'Tilpas til vindue'), 'F', 'fit', C.fit);
-    if (!d.ci) M.push({ el: HP.panels.scaleStepper() });
+    M.push({ el: HP.panels.scaleStepper() });
     M.push('sep');
     add(t('Save project…', 'Gem projekt…'), 'Ctrl+S', 'folder', HP.panels.projects);
     add(t('Share link…', 'Del link…'), 'Ctrl+Shift+S', 'link', HP.panels.share);
@@ -617,7 +900,7 @@
   /* ---- templates (Shortcuts) ---- */
   C.capture = () => {
     const d = store.doc, pick = store.sel.size ? d.items.filter((i) => store.sel.has(i.id)) : d.items;
-    const items = pick.filter((i) => i.kind === 'product' || i.kind === 'text').map((i) => JSON.parse(JSON.stringify(i)));
+    const items = pick.filter((i) => i.kind === 'product' || i.kind === 'text' || i.kind === 'mark').map((i) => JSON.parse(JSON.stringify(i)));
     if (!items.length) return null;
     const x0 = Math.min(...items.map((i) => i.x)), y0 = Math.min(...items.map((i) => i.y)), ids = new Set(items.map((i) => i.id));
     items.forEach((i) => { i.x -= x0; i.y -= y0; });
@@ -626,16 +909,16 @@
   C.insertTemplate = (tpl, cx, cy) => {
     const d = store.doc, map = {}, at = cx == null ? centerWorld() : toWorld(cx, cy);
     const w = Math.max(...tpl.items.map((i) => i.x)) + 220, hh = Math.max(...tpl.items.map((i) => i.y)) + 200;
-    const missing = tpl.items.filter((i) => i.kind === 'product' && !cat.get(i.pid)).length;
-    tpl.items.forEach((i) => { if (i.kind === 'product' && !cat.get(i.pid)) return; const n = JSON.parse(JSON.stringify(i)); n.id = map[i.id] = HP.uid(); n.x = snap(at.x - w / 2 + i.x); n.y = snap(at.y - hh / 2 + i.y); d.items.push(n); });
+    const gone = (i) => (i.kind === 'product' && !cat.get(i.pid)) || (i.kind === 'mark' && i.k[0] !== '@' && !cat.get(i.k));
+    const missing = tpl.items.filter(gone).length;
+    tpl.items.forEach((i) => { if (gone(i)) return; const n = JSON.parse(JSON.stringify(i)); n.id = map[i.id] = HP.uid(); n.x = snap(at.x - w / 2 + i.x); n.y = snap(at.y - hh / 2 + i.y); d.items.push(n); });
     (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0 }); });
-    store.sel = new Set(Object.values(map)); store.selConn = null; store.commit();
+    normMarks(); store.sel = new Set(Object.values(map)); store.selConn = null; store.commit();
     if (missing) HP.toast(t(missing + ' product(s) in this Shortcut no longer exist and were skipped.', missing + ' produkt(er) i genvejen findes ikke længere og blev sprunget over.'), { kind: 'warn' });
   };
 
   /* ---- CI mode + floor plan ---- */
-  C.setCI = (on) => { store.doc.ci = on; geom.clear(); store.commit(); };
-  C.setCISize = (px, commit) => { store.doc.ciSize = clamp(px, 20, 180); geom.clear(); commit ? store.commit() : render(); };
+  C.setCI = (on) => { store.doc.ci = on; if (!on) { C.stopStamp(); C.stopTool(); } store.commit(); };
   C.loadPlan = (file) => {
     if (!file || !/^image\//.test(file.type)) return HP.toast(t('Pick a JPG or PNG image.', 'Vælg et JPG- eller PNG-billede.'), { kind: 'warn' });
     const fr = new FileReader();
@@ -644,12 +927,13 @@
       cv.width = Math.round(im.width * k); cv.height = Math.round(im.height * k);
       const g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height); g.drawImage(im, 0, 0, cv.width, cv.height);
       store.planSrc = cv.toDataURL('image/jpeg', 0.85); store.savePlan();
-      const d = store.doc, s = pageSize(), m = 60, f = Math.min((s.w - m * 2) / cv.width, (s.h - m * 2 - 40) / cv.height);
+      const d = store.doc, s = pageSize(), m = 40, col = s.w > s.h ? 370 : 0; // landscape: keep a column free on the right for the legend
+      const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 40) / cv.height);
       d.items = d.items.filter((i) => i.kind !== 'plan');
-      d.items.unshift({ id: HP.uid(), kind: 'plan', x: snap((s.w - cv.width * f) / 2), y: snap((s.h - 40 - cv.height * f) / 2), w: Math.round(cv.width * f), h: Math.round(cv.height * f), lock: true });
+      d.items.unshift({ id: HP.uid(), kind: 'plan', x: snap((s.w - col - cv.width * f) / 2), y: snap((s.h - 40 - cv.height * f) / 2), w: Math.round(cv.width * f), h: Math.round(cv.height * f), lock: true });
       if (!d.ci) d.ci = true;
       geom.clear(); store.commit(); C.fit();
-      HP.toast(t('Floor plan added and CI mode switched on. Alt-click the plan to move or resize it.', 'Plantegning tilføjet, og CI-tilstand er slået til. Alt-klik på planen for at flytte eller skalere den.'), { ms: 7000 });
+      HP.toast(t('Floor plan added and CI mode switched on. Click a product to place marks. Alt-click the plan to move or resize it.', 'Plantegning tilføjet, og CI-tilstand er slået til. Klik på et produkt for at placere mærker. Alt-klik på planen for at flytte eller skalere den.'), { ms: 8000 });
     }; im.src = fr.result; };
     fr.readAsDataURL(file);
   };
@@ -684,7 +968,7 @@
 
   C.init = (mount) => {
     vp = h('#viewport', null,
-      (world = h('#world.world', null, (pagesEl = h('.layer.pages')), (planEl = h('.layer.plans')), (wiresSvg = svg('svg', { class: 'layer wires' })), (itemsEl = h('.layer.items')), (chipsEl = h('.layer.chips')), (tempSvg = svg('svg', { class: 'layer wires temp' })))),
+      (world = h('#world.world', null, (pagesEl = h('.layer.pages')), (planEl = h('.layer.plans')), (wiresSvg = svg('svg', { class: 'layer wires' })), (itemsEl = h('.layer.items')), (chipsEl = h('.layer.chips')), (tempSvg = svg('svg', { class: 'layer wires temp' })), (toolSvg = svg('svg', { class: 'layer wires temp tool' })))),
       (overlay = h('.overlay', null, (selbar = h('#selbar', { hidden: true })), (marqueeEl = h('.marquee')))),
       h('.zoomer', null,
         h('button', { title: t('Zoom out', 'Zoom ud'), onclick: () => C.zoomBy(1 / 1.25) }, icon('minus')),
@@ -694,11 +978,11 @@
     mount.append(vp);
     vp.addEventListener('pointerdown', onDown);
     vp.addEventListener('contextmenu', onContext);
-    window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY }; }, { passive: true });
+    window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY }; moveGhost(); if (tool && tool.pts.length) toolPreview(); }, { passive: true });
     vp.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, view.z * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
     vp.addEventListener('dragover', (e) => e.preventDefault());
     vp.addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) C.loadPlan(f); });
-    window.addEventListener('keydown', (e) => { if (e.code === 'Space' && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && !e.target.isContentEditable) { spaceDown = true; vp.classList.add('space'); e.preventDefault(); } if (e.key === 'Escape') cancelWire(); });
+    window.addEventListener('keydown', (e) => { if (e.code === 'Space' && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && !e.target.isContentEditable) { spaceDown = true; vp.classList.add('space'); e.preventDefault(); } if (e.key === 'Escape') { cancelWire(); C.stopStamp(); C.stopTool(); } if (e.key === 'Enter' && tool && tool.type === 'run' && tool.pts.length > 1) { e.preventDefault(); finishRun(); } });
     window.addEventListener('keyup', (e) => { if (e.code === 'Space') { spaceDown = false; vp.classList.remove('space'); } });
     HP.on('doc', render); HP.on('catalog', render);
     const saved = HP.LS.get('view', null);

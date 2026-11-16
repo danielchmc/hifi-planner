@@ -34,7 +34,7 @@
     if (k === 'c' && one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); return C.colourMenu(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); }
     if (k === 'i' && one) return C.inspect(one.id);
     if (k === 'l' && one && one.kind === 'plan') { one.lock = !one.lock; return store.commit(); }
-    if (k === 'r' && store.sel.size === 1) { const it = store.item([...store.sel][0]); if (it && it.kind === 'product') HP.panels.replacePicker(it.id); return; }
+    if (k === 'r' && store.sel.size === 1) { const it = store.item([...store.sel][0]); if (it && (it.kind === 'product' || (it.kind === 'mark' && it.k[0] !== '@'))) HP.panels.replacePicker(it.id); return; }
     const step = e.shiftKey ? 50 : 10, mv = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] }[e.key];
     if (mv && store.sel.size) { e.preventDefault(); C.nudge(mv[0], mv[1]); }
   }

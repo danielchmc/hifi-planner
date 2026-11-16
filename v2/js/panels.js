@@ -64,6 +64,8 @@
       chips.textContent = '';
       [['', t('All', 'Alle')], ...HP.CAT_TREE.map((g) => [g[0], g[0]])].forEach(([g, label]) => chips.append(h('button' + (group === g ? '.on' : ''), { onclick: () => { group = g; fillSelects(); filter(); } }, label)));
     }
+    const arm = () => { const s = C().stamp && C().stamp(); (rows || []).forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };
+    HP.on('stamp', arm);
     function buildList() {
       list.textContent = '';
       rows = cat.products().slice().sort((a, b) => !!a.gone - !!b.gone).map((p) => {
@@ -72,7 +74,7 @@
         list.append(r);
         return { p, r };
       });
-      filter();
+      arm(); filter();
     }
     function filter() {
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), cv = catSel.value, bv = brandSel.value;
@@ -141,7 +143,6 @@
     const sync = () => {
       undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
-      document.getElementById('tb-scale') && (document.getElementById('tb-scale').hidden = !!store.doc.ci);
       if (document.activeElement !== name) name.value = store.doc.name || '';
       orient.lastChild.textContent = 'A4 ' + (store.doc.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende'));
       adminBox.hidden = !HP.isAdmin();
@@ -169,15 +170,34 @@
   /* ---------- CI bar (inside the viewport) ---------- */
   function buildCIBar() {
     const file = h('input', { type: 'file', accept: 'image/*', hidden: true, onchange: () => { C().loadPlan(file.files[0]); file.value = ''; } });
-    const size = h('input', { type: 'range', min: 20, max: 180, step: 5, oninput: () => { C().setCISize(+size.value, false); val.textContent = size.value + ' px'; }, onchange: () => C().setCISize(+size.value, true) });
-    const val = h('span.mono');
-    let rm;
-    const bar = h('.cibar', { hidden: true }, h('b', null, t('CI mode', 'CI-tilstand')), h('span.muted', null, t('Product size', 'Produktstørrelse')), size, val,
-      h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), h('span', null, t('Floor plan', 'Plantegning'))),
-      (rm = h('button.btn.sm.danger', { onclick: () => C().removePlan(), title: t('Remove floor plan', 'Fjern plantegning') }, icon('trash', 14), t('Remove plan', 'Fjern plan'))),
+    const size = h('input', { type: 'range', min: 18, max: 70, step: 2, title: t('Mark size', 'Mærkestørrelse'), oninput: () => C().setMarkSize(+size.value, false), onchange: () => C().setMarkSize(+size.value, true) });
+    const hint = h('span.ci-hint');
+    const syms = Object.keys(C().GENERIC).map((g) => h('button.symbtn', { data: { k: '@' + g }, title: t(C().GENERIC[g][0], C().GENERIC[g][1]), html: C().markHtml('@' + g), onclick: () => C().startStamp('@' + g) }));
+    let rm, plan, legend;
+    const tool = (type, ic, label, tip) => h('button.btn.sm', { data: { tool: type }, title: tip, onclick: () => C().startTool(type) }, icon(ic, 14), h('span', null, label));
+    const tools = [tool('zone', 'page', t('Room', 'Rum'), t('Draw a room: marks inside are grouped in the legend', 'Tegn et rum: mærker indeni grupperes i signaturforklaringen')),
+      tool('run', 'cable', t('Cable', 'Kabel'), t('Draw a cable run and get its length', 'Tegn et kabeltræk og få længden')),
+      tool('scale', 'scale', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'))];
+    const HINTS = { zone: [' Drag a rectangle around the room', 'Træk et rektangel rundt om rummet'], run: ['Click along the cable route · double-click or Enter to finish · Esc to stop', 'Klik langs kabelvejen · dobbeltklik eller Enter afslutter · Esc stopper'],
+      scale: ['Click the two ends of a wall or door you know the length of', 'Klik på de to ender af en væg eller dør, du kender længden på'] };
+    const bar = h('.cibar', { hidden: true }, h('b', null, 'CI'), hint,
+      h('.symbar', { title: t('Symbols', 'Symboler') }, syms), tools,
+      h('label.ci-size', null, h('span.muted', null, t('Size', 'Størrelse')), size),
+      (legend = h('button.btn.sm', { onclick: () => C().toggleLegend(), title: t('Show or hide the legend', 'Vis eller skjul signaturforklaringen') }, icon('tag', 14), t('Legend', 'Forklaring'))),
+      (plan = h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), h('span'))),
+      (rm = h('button.btn.sm.danger', { onclick: () => C().removePlan(), title: t('Remove floor plan', 'Fjern plantegning') }, icon('trash', 14))),
       h('button.btn.sm', { onclick: () => C().setCI(false) }, t('Exit', 'Afslut')), file);
-    const sync = () => { bar.hidden = !store.doc.ci; size.value = store.doc.ciSize; val.textContent = store.doc.ciSize + ' px'; rm.hidden = !C().hasPlan(); bar.querySelector('.btn span').textContent = C().hasPlan() ? t('Replace plan', 'Udskift plan') : t('Floor plan', 'Plantegning'); };
-    HP.on('doc', sync); setTimeout(sync);
+    const sync = () => {
+      const st = C().stamp(), tl = C().tool();
+      tools.forEach((b) => b.classList.toggle('on', !!tl && tl.type === b.dataset.tool));
+      tools[2].lastChild.textContent = t('Scale', 'Målestok') + (store.doc.sc ? ' ✓' : '');
+      bar.hidden = !store.doc.ci; size.value = store.doc.ms || 34; rm.hidden = !C().hasPlan(); legend.classList.toggle('on', C().hasLegend());
+      plan.lastChild.textContent = C().hasPlan() ? t('Replace plan', 'Udskift plan') : t('Floor plan', 'Plantegning');
+      hint.classList.toggle('active', !!st || !!tl);
+      hint.textContent = tl ? t(HINTS[tl.type][0].trim(), HINTS[tl.type][1]) : st ? t('Placing ', 'Placerer ') + C().markTitle(st.key) + t(' · click on the plan · Esc to stop', ' · klik på planen · Esc stopper') : t('Click a product or a symbol, then click on the plan', 'Klik på et produkt eller et symbol, og klik så på planen');
+      syms.forEach((b) => b.classList.toggle('on', !!st && st.key === b.dataset.k));
+    };
+    HP.on('doc', sync); HP.on('stamp', sync); setTimeout(sync);
     return bar;
   }
 
@@ -189,6 +209,26 @@
   };
 
   /* ---------- cable picker ---------- */
+  /* cable for a cable run on a floor plan: only cable sold by the metre */
+  Pn.runCablePicker = (runId) => {
+    const it = store.item(runId); if (!it) return;
+    const q = h('input', { type: 'search', placeholder: t('Search cables…', 'Søg kabler…'), oninput: draw, autofocus: true });
+    const list = h('.plist.tall');
+    const perMetre = (p) => (p.cable || []).includes('speaker') && /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()); // speaker cable named "… - 1m" or SLiP installation cable
+    function draw() {
+      const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      list.textContent = '';
+      const rows = cat.cables().filter((p) => perMetre(p) && words.every((w) => p._hay.includes(w))).sort((a, b) => a.price - b.price);
+      if (it.cable) { const none = h('button.link.pad', { onclick: () => { C().setRunCable(runId, null); close(); } }, t('No cable (length only)', 'Intet kabel (kun længde)')); list.append(none); }
+      rows.forEach((p) => { const r = productRow(p, h('span.tagline', null, t('per metre', 'pr. meter'))); if (it.cable === p.id) r.classList.add('on'); r.onclick = () => { C().setRunCable(runId, p.id); close(); }; list.append(r); });
+      if (!rows.length) list.append(h('.empty', null, t('No cable sold by the metre found.', 'Ingen kabler i metermål fundet.')));
+    }
+    const close = HP.modal({ title: t('Cable for this run', 'Kabel til dette træk'), size: 'md', flush: true,
+      body: [h('.conn-head', null, h('span.muted', null, t('Speaker cable sold by the metre. The length is rounded up to whole metres per cable type; the next run you draw gets the same cable.', 'Højtalerkabel i metermål. Længden rundes op til hele meter pr. kabeltype; det næste træk, du tegner, får samme kabel.'))),
+        h('.searchbox.pad', null, icon('search', 15), q), list] });
+    draw();
+  };
+
   Pn.cablePicker = (connId) => {
     const c = store.doc.conns.find((x) => x.id === connId); if (!c) return;
     const info = C().connInfo(c), a = info.a || { label: '?', conn: 'other' }, b = info.b || { label: '?', conn: 'other' };
@@ -220,7 +260,7 @@
 
   /* ---------- replace picker ---------- */
   Pn.replacePicker = (itemId) => {
-    const it = store.item(itemId), old = cat.get(it.pid) || { cats: [], in: [], out: [], name: '?' };
+    const it = store.item(itemId), old = cat.get(it.pid || it.k) || { cats: [], in: [], out: [], name: '?' };
     const used = { in: [], out: [] };
     store.doc.conns.forEach((c) => { if (c.a.item === itemId) used.out.push(c.a.key); if (c.b.item === itemId) used.in.push(c.b.key); });
     const total = used.in.length + used.out.length;
@@ -323,7 +363,8 @@
             li(t('Cards − / + makes all product cards smaller or larger relative to the A4 page, so bigger systems fit on one page.', 'Kort − / + gør alle produktkort mindre eller større i forhold til A4-siden, så større systemer kan være på én side.')),
             li(t('The eraser in the top bar clears the canvas. You can undo it.', 'Viskelæderet i topbjælken rydder lærredet. Det kan fortrydes.')),
             li(t('Shortcuts are ready-made systems. Click or drag one onto the canvas.', 'Genveje er færdige systemer. Klik eller træk en ind på lærredet.')),
-            li(t('CI mode shrinks products to icons for floor plans. Upload a plan (JPG/PNG) and set the product size. Cables are hidden, not deleted.', 'CI-tilstand gør produkter til ikoner til plantegninger. Upload en plan (JPG/PNG) og vælg produktstørrelse. Kabler skjules, de slettes ikke.')),
+            li(t('CI mode is for floor plans. Upload a plan (JPG/PNG), then click a product and click on the plan once per speaker: each product gets a lettered mark (A, B, C…). Esc or right-click stops placing. The legend lists every mark with quantity and price.', 'CI-tilstand er til plantegninger. Upload en plan (JPG/PNG), klik på et produkt, og klik på planen én gang pr. højtaler: hvert produkt får et mærke med bogstav (A, B, C…). Esc eller højreklik stopper placeringen. Signaturforklaringen viser alle mærker med antal og pris.')),
+            li(t('The bar in CI mode also has symbols for rack, router, TV, listening position, volume control and cable outlet. Switch CI mode off to add normal product cards, for example a wiring diagram on page 2; cards show the same letter as their marks. Room groups marks per room in the legend; Scale and Cable give cable lengths in metres and add the cable to the prices.', 'Bjælken i CI-tilstand har også symboler for rack, router, TV, lytteposition, volumenkontrol og kabeludtag. Slå CI-tilstand fra for at tilføje almindelige produktkort, f.eks. et tilslutningsdiagram på side 2; kortene viser samme bogstav som deres mærker. Rum grupperer mærker pr. rum i signaturforklaringen; Målestok og Kabel giver kabellængder i meter og lægger kablet til priserne.')),
             li(t('Projects saves proposals in this browser and exports them as files.', 'Projekter gemmer tilbud i denne browser og eksporterer dem som filer.')),
             li(t('Share link copies a link that opens this exact canvas on any PC, handy for sending a proposal to a colleague.', 'Del link kopierer et link, der åbner netop dette lærred på en hvilken som helst PC; praktisk til at sende et tilbud til en kollega.'))))),
         h('h3', null, t('Search', 'Søgning')),

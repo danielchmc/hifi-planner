@@ -45,6 +45,20 @@ The admin code only hides the admin tools; it is visible in the page source like
 
 Login is two steps: the shop number (from `data/config.js`), then the seller's own number (5–7 digits). The first time a shop is used on a PC, staff enter the shop's name, email and phone; the first time a seller number is used, its owner enters their name. Both are stored in that browser only. The A4 footer prints the shop's details and "Your adviser: <seller name>". The top bar shows the signed-in seller; click it to switch. Sellers already used on the PC are listed for one-click login and can be removed there.
 
+## CI mode: marks on a floor plan
+
+CI mode is for custom-install proposals. Upload a floor plan (JPG/PNG); on landscape pages it leaves a column free on the right for the legend.
+
+- **Marks.** With CI mode on, clicking a product in the list arms it: every click on the canvas places one mark, Esc or right-click stops (dragging a product onto the plan places a single mark). Each product gets one letter (A, B, C…) and colour; the shape shows the kind of product: circle = ceiling speaker, square = wall speaker, triangle = subwoofer, hexagon = other/outdoor speaker, diamond = electronics. Marks have one size for the whole proposal (slider in the CI bar) and move on a 5 px grid.
+- **Symbols.** The CI bar has generic symbols that are not products: rack, router, TV, listening position, volume control, cable outlet.
+- **Legend.** Appears with the first mark and lists every mark with image, name, quantity and price, plus the symbols used. Movable; show/hide with the Legend button.
+- **Replace.** "Replace all A" swaps the product behind every A mark and keeps the letter.
+- **Cards and price list.** With CI mode off, products are added as normal cards (for a wiring diagram on another page). A card whose product has marks shows the same letter. The price list counts marks too; a product that is both marked and drawn as cards is counted once (the larger number).
+- **Rooms.** "Room" in the CI bar: drag a rectangle around a room and type its name. Marks inside a room are grouped in the legend with a subtotal per room. Move a room by the dotted grip beside its name, resize it at the bottom-right corner.
+- **Scale.** "Scale": click the two ends of something with a known length (a wall, a door) and type the length in metres. The legend then shows a scale bar.
+- **Cable runs.** "Cable": click along the route (points snap to the centre of marks), double-click or Enter to finish; the tool stays on for the next run. Each run shows its length once the scale is set. Select a run and choose "Cable" to pick speaker cable sold by the metre; the next runs get the same cable. Metres are summed per cable type, rounded up to whole metres, and added to the legend and the price list. Runs cannot be reshaped afterwards: delete and redraw.
+- **Data.** Rooms are `{ kind: 'zone', x, y, w, h, name }`, cable runs `{ kind: 'run', x, y, pts, cable }`, and `doc.sc` is the scale in canvas units per metre. Marks are items `{ kind: 'mark', k: <product id or '@symbol'> }`, the legend is `{ kind: 'legend' }`, `doc.mk` keeps the letter order and `doc.ms` the mark size (document version 3). Older CI drawings, where products were thumbnails, are converted to marks when opened.
+
 ## Catalogue sync (hifiklubben.dk mirror)
 
 A GitHub Action runs every hour (`tools/price-sync.workflow.yml`; copy it into the repository as `.github/workflows/price-sync.yml` once). It can also be started under Actions → Catalogue sync → Run workflow, or from Settings → Admin (token needs *Actions: Read and write*). Each run's report is under Actions → the run → Summary.
