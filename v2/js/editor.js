@@ -6,6 +6,40 @@
   const CABLE_CONNS = ['rca', 'minijack', 'speaker', 'hdmi', 'sub', 'optical', 'coax', 'usb', 'ethernet', 'xlr', 'din', 'wireless'];
 
   const TYPE_CATS = HP.site.TYPE_CATS, TYPE_CABLE = HP.site.TYPE_CABLE;
+
+  /* Floating image window: stays open beside the editor so the rear panel can be checked while the ports are edited.
+     Wheel = zoom at the pointer, drag = pan, double-click = fit. The window can be moved by its title bar and resized at its corner. */
+  let peekEl = null;
+  E.closePeek = () => { if (peekEl) { peekEl.remove(); peekEl = null; } };
+  E.peek = (faces, start, title) => { // faces: [{ label, src }]
+    faces = faces.filter((f) => f.src); if (!faces.length) return;
+    let face = Math.max(0, Math.min(start || 0, faces.length - 1)), z = 1, x = 0, y = 0, base = 1;
+    const img = h('img', { draggable: false, alt: '', onerror: HP.site.onerr, onload: () => fit() });
+    const stage = h('.peek-stage', null, img), zl = h('span.peek-z');
+    const apply = () => { img.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + base * z + ')'; zl.textContent = Math.round(z * 100) + '%'; };
+    const fit = () => { const r = stage.getBoundingClientRect(), w = img.naturalWidth || 1, hh = img.naturalHeight || 1; base = Math.min(r.width / w, r.height / hh); z = 1; x = (r.width - w * base) / 2; y = (r.height - hh * base) / 2; apply(); };
+    const zoomAt = (cx, cy, nz) => { nz = Math.max(1, Math.min(12, nz)); const r = stage.getBoundingClientRect(), px = cx - r.left, py = cy - r.top; x = px - (px - x) * nz / z; y = py - (py - y) * nz / z; z = nz; apply(); };
+    const show = (i) => { face = i; img.classList.remove('broken'); img.dataset.fb = HP.site.fallback(faces[i].src, 'hd'); img.src = HP.site.src(faces[i].src, 'hd'); tabs.forEach((b, j) => b.classList.toggle('on', j === i)); };
+    stage.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, z * Math.exp(-e.deltaY * 0.0018)); }, { passive: false });
+    stage.addEventListener('dblclick', fit);
+    stage.addEventListener('pointerdown', (e) => { if (e.button !== 0) return; stage.setPointerCapture(e.pointerId); stage.classList.add('drag'); const sx = e.clientX - x, sy = e.clientY - y;
+      const mv = (ev) => { x = ev.clientX - sx; y = ev.clientY - sy; apply(); }, up = () => { stage.removeEventListener('pointermove', mv); stage.classList.remove('drag'); };
+      stage.addEventListener('pointermove', mv); stage.addEventListener('pointerup', up, { once: true }); });
+    const tabs = faces.length > 1 ? faces.map((f, i) => h('button', { onclick: () => show(i) }, f.label)) : [];
+    const head = h('.peek-head', null, h('b', null, title || ''), h('.peek-tabs', null, tabs), zl,
+      h('button.icon-btn', { title: t('Fit', 'Tilpas'), onclick: fit }, icon('fit', 14)), h('button.icon-btn', { title: t('Close', 'Luk'), onclick: E.closePeek }, icon('x', 14)));
+    head.addEventListener('pointerdown', (e) => { if (e.target.closest('button')) return; const r = el.getBoundingClientRect(), dx = e.clientX - r.left, dy = e.clientY - r.top; head.setPointerCapture(e.pointerId);
+      const mv = (ev) => { el.style.left = Math.max(0, Math.min(innerWidth - 80, ev.clientX - dx)) + 'px'; el.style.top = Math.max(0, Math.min(innerHeight - 40, ev.clientY - dy)) + 'px'; };
+      head.addEventListener('pointermove', mv); head.addEventListener('pointerup', () => head.removeEventListener('pointermove', mv), { once: true }); });
+    const prev = peekEl && peekEl.getBoundingClientRect();
+    E.closePeek();
+    const el = (peekEl = h('#peek', null, head, stage, h('.peek-hint', null, t('Scroll to zoom · drag to move · double-click to fit', 'Scroll for at zoome · træk for at flytte · dobbeltklik for at tilpasse'))));
+    Object.assign(el.style, prev ? { left: prev.left + 'px', top: prev.top + 'px', width: prev.width + 'px', height: prev.height + 'px' }
+      : { width: Math.min(760, innerWidth * 0.5) + 'px', height: Math.min(560, innerHeight * 0.6) + 'px', left: Math.max(8, innerWidth - Math.min(760, innerWidth * 0.5) - 24) + 'px', top: '72px' });
+    document.body.append(el);
+    new ResizeObserver(() => fit()).observe(stage);
+    show(face);
+  };
   E.TYPE_CATS = TYPE_CATS;
 
   /* ================= product editor ================= */
@@ -58,9 +92,10 @@
       return p.site || p.sku ? 'https://www.hifiklubben.dk/sog/?q=' + encodeURIComponent(p.site || p.sku) : ''; };
 
     const imgSetters = [];
+    const peekCur = (i) => E.peek([{ label: t('Front', 'Forside'), src: cur.img[0] }, { label: t('Back', 'Bagside'), src: cur.img[1] }].filter((f) => f.src), cur.img[0] ? i : 0, cur.brand + ' ' + cur.name);
     function imageField(i, label) {
       const url = h('input', { value: /^data:/.test(cur.img[i] || '') ? '' : cur.img[i] || '', placeholder: t('Image URL, or upload →', 'Billed-URL, eller upload →'), onchange: () => { set(url.value.trim()); } });
-      const prev = h('.imgprev', null, cur.img[i] ? HP.imgEl(cur.img[i], 'thumb') : t('none', 'ingen'));
+      const prev = h('.imgprev', { title: t('Click to enlarge', 'Klik for at forstørre'), onclick: () => cur.img[i] && peekCur(cur.img[0] ? i : 0) }, cur.img[i] ? HP.imgEl(cur.img[i], 'thumb') : t('none', 'ingen'));
       const file = h('input', { type: 'file', accept: 'image/*', hidden: true, onchange: () => { const fr = new FileReader(); fr.onload = () => { const im = new Image(); im.onload = () => {
         const k = Math.min(1, 1600 / Math.max(im.width, im.height)), cv = document.createElement('canvas'); cv.width = Math.round(im.width * k); cv.height = Math.round(im.height * k);
         cv.getContext('2d').drawImage(im, 0, 0, cv.width, cv.height); set(cv.toDataURL('image/webp', 0.78)); url.value = ''; }; im.src = fr.result; }; fr.readAsDataURL(file.files[0]); } });
@@ -127,7 +162,7 @@
           h('.checks', null, h('label.check', null, h('input', { type: 'checkbox', checked: !!cur.bt, onchange(e) { cur.bt = e.target.checked; cur.manualWireless = true; preview(); } }), icon('bt', 14), 'Bluetooth'),
             h('label.check', null, h('input', { type: 'checkbox', checked: !!cur.wifi, onchange(e) { cur.wifi = e.target.checked; cur.manualWireless = true; preview(); } }), icon('wifi', 14), 'WiFi'),
             cur.manualWireless ? h('small.muted', null, t('Set by hand: the sync will not change it.', 'Sat manuelt: synkroniseringen ændrer det ikke.')) : h('small.muted', null, t('The sync switches these on when the website lists Bluetooth/WiFi.', 'Synkroniseringen slår dem til, når hjemmesiden angiver Bluetooth/WiFi.'))),
-          h('.lab', null, t('Inputs & outputs', 'Ind- og udgange'), h('small', null, t('Pick a standard signal; the label is generated so names stay consistent across products.', 'Vælg et standardsignal; navnet genereres, så navne er ens på tværs af produkter.'))),
+          h('.lab', null, t('Inputs & outputs', 'Ind- og udgange'), cur.img[1] || cur.img[0] ? h('button.btn.sm.lab-btn', { onclick: () => peekCur(cur.img[1] ? 1 : 0) }, icon('search', 13), cur.img[1] ? t('Show rear panel', 'Vis bagpanel') : t('Show image', 'Vis billede')) : '', h('small', null, t('Pick a standard signal; the label is generated so names stay consistent across products.', 'Vælg et standardsignal; navnet genereres, så navne er ens på tværs af produkter.'))),
           h('.io2', null, h('div', null, h('.sublab', null, t('Inputs (left side)', 'Indgange (venstre side)')), portList('in')), h('div', null, h('.sublab', null, t('Outputs (right side)', 'Udgange (højre side)')), portList('out'))),
           h('.lab', null, t('Card preview', 'Forhåndsvisning')), (prevBox = h('.ed-preview')));
         preview();
@@ -144,7 +179,7 @@
       if (!cur.site) return '';
       if (!d) return h('.sitepanel', null, h('.muted', null, window.HP_DATA.siteDetails ? t('No product page read for ' + cur.site + ' yet. The hourly sync reads it soon.', 'Produktsiden for ' + cur.site + ' er ikke læst endnu. Den timelige synkronisering læser den snart.') : t('Loading website data…', 'Henter data fra hjemmesiden…')));
       const gal = (d.g || []).map((u) => { const hk = HP.site.hk(u), on = cur.img[0] === hk ? 'front' : cur.img[1] === hk ? 'back' : '';
-        return h('.gal' + (on ? '.on' : ''), null, HP.imgEl(hk, 'thumb'), h('.galbtns', null,
+        return h('.gal' + (on ? '.on' : ''), null, HP.imgEl(hk, 'thumb', { title: t('Click to enlarge', 'Klik for at forstørre'), onclick: () => E.peek((d.g || []).map((x, j) => ({ label: String(j + 1), src: HP.site.hk(x) })), (d.g || []).indexOf(u), cur.brand + ' ' + cur.name) }), h('.galbtns', null,
           h('button' + (on === 'front' ? '.on' : ''), { onclick: () => { imgSetters[0](hk); drawForm(); } }, t('Front', 'For')),
           !cur.cable && h('button' + (on === 'back' ? '.on' : ''), { onclick: () => { imgSetters[1](hk); drawForm(); } }, t('Back', 'Bag')))); });
       const specRows = Object.entries(d.spec || {}).map(([k, v]) => h('tr', null, h('th', null, k), h('td', null, v)));
@@ -171,7 +206,7 @@
       cat.putProduct(out); isNew = false; cur = JSON.parse(JSON.stringify(out)); drawModes(); drawList(); drawForm();
       HP.toast(t('Saved as draft. Publish to send it to all shops.', 'Gemt som kladde. Udgiv for at sende det til alle butikker.'), { kind: 'ok' });
     }
-    HP.modal({ title: t('Product Editor', 'Produkt-editor'), size: 'xl', flush: true,
+    HP.modal({ title: t('Product Editor', 'Produkt-editor'), size: 'xl', flush: true, onClose: E.closePeek,
       body: h('.editor', null, h('.ed-side', null, modes, h('.searchbox.pad', null, icon('search', 15), q),
         h('.row.pad', null, h('button.btn.sm', { onclick: () => edit(blankProduct(false), true) }, icon('plus', 13), t('New product', 'Nyt produkt')), h('button.btn.sm', { onclick: () => edit(blankProduct(true), true) }, icon('plus', 13), t('New cable', 'Nyt kabel'))), list), form) });
     // website data is admin-only and loaded on demand

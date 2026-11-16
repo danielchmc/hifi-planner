@@ -347,3 +347,14 @@ img.broken { visibility: hidden; }
 #selbar button.on.locked { opacity: .55; cursor: default; } #selbar button.on.locked:hover { background: none; color: inherit; }
 #ctxmenu .mi.on .ml::after { content: "  ✓"; }
 .note-title.solo { padding-bottom: 8px; flex: 1; }
+/* ---------- v2.6: floating image window (editor) ---------- */
+#peek { position: fixed; z-index: 9500; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--fg); box-shadow: 6px 6px 0 rgba(0, 0, 0, .18); resize: both; overflow: hidden; min-width: 280px; min-height: 220px; }
+.peek-head { display: flex; align-items: center; gap: 8px; height: 34px; padding: 0 4px 0 10px; border-bottom: 1px solid var(--line); cursor: move; user-select: none; flex: none; }
+.peek-head b { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.peek-tabs { display: flex; margin-left: auto; } .peek-tabs button { border: 1px solid var(--line); background: none; height: 24px; padding: 0 9px; font-size: 11.5px; cursor: pointer; } .peek-tabs button + button { border-left: 0; } .peek-tabs button.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.peek-z { font: 11px var(--mono); color: var(--muted); min-width: 38px; text-align: right; } .peek-tabs:empty + .peek-z { margin-left: auto; }
+.peek-stage { position: relative; flex: 1; overflow: hidden; background: #fff; cursor: grab; touch-action: none; } .peek-stage.drag { cursor: grabbing; }
+.peek-stage img { position: absolute; left: 0; top: 0; transform-origin: 0 0; max-width: none; user-select: none; }
+.peek-hint { font-size: 11px; color: var(--muted); padding: 4px 10px; border-top: 1px solid var(--line); flex: none; }
+.imgprev:has(img), .gal img { cursor: zoom-in; }
+.lab .lab-btn { margin-left: 8px; vertical-align: middle; }
