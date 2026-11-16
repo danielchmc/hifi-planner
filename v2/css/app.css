@@ -342,3 +342,8 @@ img.broken { visibility: hidden; }
 #tb-seller span { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; }
 .modal-back { z-index: 9000; }
 @media (max-width: 1320px) { #tb-seller span { display: inline; } }
+/* ---------- v2.5: text box parts ---------- */
+#selbar button.on { box-shadow: inset 0 -2px 0 var(--accent); }
+#selbar button.on.locked { opacity: .55; cursor: default; } #selbar button.on.locked:hover { background: none; color: inherit; }
+#ctxmenu .mi.on .ml::after { content: "  ✓"; }
+.note-title.solo { padding-bottom: 8px; flex: 1; }

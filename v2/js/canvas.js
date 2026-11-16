@@ -67,10 +67,27 @@
       return buildCard(p, it, d.ci, d.ciSize);
     }
     if (it.kind === 'text') {
-      const edit = (cls, key, ph) => h(cls, { contentEditable: 'true', spellcheck: false, data: { ph }, textContent: it[key] || '',
-        onblur(e) { const v = e.target.innerText.replace(/\n+$/, ''); if (v !== (it[key] || '')) { it[key] = v; store.commit(); } } });
+      // Tab / Enter in the title jumps to the paragraph, Shift+Tab jumps back
+      const jump = (from, e) => {
+        e.preventDefault();
+        const sel = from.classList.contains('note-title') ? '.note-body' : '.note-title';
+        from.blur(); // saves the field; the text box is redrawn, so find the other field again afterwards
+        const box = els.get(it.id), to = box && box.querySelector(sel); if (!to) return;
+        to.focus(); const r = document.createRange(); r.selectNodeContents(to); r.collapse(false); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      };
+      const edit = (cls, key, ph) => {
+        const el = h(cls, { contentEditable: 'true', data: { ph }, textContent: it[key] || '',
+          onkeydown(e) {
+            if (e.key === 'Tab') jump(el, e);
+            else if (e.key === 'Enter' && key === 'title' && !e.shiftKey) jump(el, e);
+          },
+          onblur(e) { const v = e.target.innerText.replace(/\n+$/, ''); if (v !== (it[key] || '')) { it[key] = v; store.commit(); } } });
+        el.setAttribute('spellcheck', 'false'); el.setAttribute('autocorrect', 'off'); el.setAttribute('autocapitalize', 'off'); // no red underlines
+        return el;
+      };
       return h('.note', { style: { width: it.w + 'px', minHeight: it.h + 'px' } }, h('.note-grip', { title: t('Drag to move', 'Træk for at flytte') }),
-        edit('.note-title', 'title', t('Title', 'Titel')), edit('.note-body', 'body', t('Write something…', 'Skriv noget…')), h('i.resize.no-print'));
+        !it.noTitle && edit('.note-title' + (it.noBody ? '.solo' : ''), 'title', t('Title', 'Titel')),
+        !it.noBody && edit('.note-body', 'body', t('Write something…', 'Skriv noget…')), h('i.resize.no-print'));
     }
     if (it.kind === 'prices') {
       const { list, total, saving } = priceRows();
@@ -89,7 +106,7 @@
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
     if (it.kind === 'product') return ['p', it.pid, it.face, it.v, d.ci, d.ciSize, cardScale(), C.hd, cat.version, L].join('|');
-    if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, L].join('|');
+    if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, it.noTitle ? 1 : 0, it.noBody ? 1 : 0, L].join('|');
     if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + L + HP.today();
     if (it.kind === 'plan') return ['f', it.w, it.h, it.lock, (store.planSrc || '').length].join('|');
     return '';
@@ -260,6 +277,9 @@
         if (p && HP.imagesOf(p, one).length > 1 && !d.ci) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
         if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Colour', 'Farve'), (e) => C.colourMenu(one.id, e.currentTarget)));
       }
+      if (one && one.kind === 'text') selbar.append(
+        btn('text', t('Title', 'Titel'), () => C.toggleNotePart(one.id, 'title'), (one.noTitle ? '' : '.on') + (one.noBody ? '.locked' : '')),
+        btn('text', t('Paragraph', 'Afsnit'), () => C.toggleNotePart(one.id, 'body'), (one.noBody ? '' : '.on') + (one.noTitle ? '.locked' : '')));
       if (one && one.kind === 'plan') selbar.append(btn(one.lock ? 'move' : 'lock', one.lock ? t('Unlock to move', 'Lås op for at flytte') : t('Lock', 'Lås'), () => { one.lock = !one.lock; store.commit(); }), btn('trash', t('Remove floor plan', 'Fjern plantegning'), C.removePlan, '.danger'));
       if (!(one && (one.kind === 'prices' || one.kind === 'plan'))) selbar.append(btn('copy', t('Duplicate', 'Dublér'), C.duplicateSelection));
       if (HP.isAdmin() && ids.some((id) => store.item(id).kind === 'product')) selbar.append(btn('bolt', t('Save as Shortcut', 'Gem som genvej'), () => HP.editor.saveShortcut()));
@@ -434,6 +454,15 @@
     store.doc.items.push(it); store.sel = new Set([it.id]); store.commit();
     const el = els.get(it.id); if (el) el.querySelector('.note-title').focus();
   };
+  // show/hide the title or the paragraph of a text box (never both); hidden text is kept and comes back when switched on
+  C.toggleNotePart = (id, part) => {
+    const it = store.item(id); if (!it || it.kind !== 'text') return;
+    const key = part === 'title' ? 'noTitle' : 'noBody', other = part === 'title' ? 'noBody' : 'noTitle';
+    if (!it[key] && it[other]) return;
+    if (it[key]) delete it[key]; else it[key] = true;
+    store.commit();
+    const el = els.get(id), f = el && el.querySelector(part === 'title' ? '.note-title' : '.note-body'); if (f) f.focus();
+  };
   C.hasPrices = () => store.doc.items.some((i) => i.kind === 'prices');
   C.togglePrices = () => {
     const d = store.doc;
@@ -549,6 +578,10 @@
         if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'I', 'search', () => C.inspect(one.id));
         if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'C', 'layers', () => C.colourMenu(one.id, null, x, y));
         if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
+      }
+      if (one && one.kind === 'text') {
+        add(t('Show title', 'Vis titel'), '', 'text', () => C.toggleNotePart(one.id, 'title'), { on: !one.noTitle, disabled: !!one.noBody });
+        add(t('Show paragraph', 'Vis afsnit'), '', 'text', () => C.toggleNotePart(one.id, 'body'), { on: !one.noBody, disabled: !!one.noTitle });
       }
       if (one && one.kind === 'plan') {
         add(one.lock ? t('Unlock to move/resize', 'Lås op for at flytte/skalere') : t('Lock', 'Lås'), 'L', one.lock ? 'move' : 'lock', () => { one.lock = !one.lock; store.commit(); });

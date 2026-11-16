@@ -233,14 +233,14 @@
   function compact(doc) {
     const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
-      items.map((i) => i.kind === 'product' ? (i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''] : [2, R(i.x), R(i.y)]),
+      items.map((i) => i.kind === 'product' ? (i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift) r.push(c.cable || 0); if (c.shift) r.push(Math.round(c.shift / 5)); return r; })];
   }
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
     const ids = a[7].map(() => HP.uid());
     const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {})
-      : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6] } : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
+      : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6], ...(r[7] & 1 ? { noTitle: true } : {}), ...(r[7] & 2 ? { noBody: true } : {}) } : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
     const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5 }));
     return { v: 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null };
   }
