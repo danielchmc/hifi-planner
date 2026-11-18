@@ -2,7 +2,10 @@
 (function () {
   const HP = window.HP, { h, t, store, catalog: cat, ports: P, snap, clamp, icon } = HP;
   const C = (HP.canvas = {});
-  const LONG = 1414, SHORT = 1000, GAP = 60; // A4 in world units (1 : sqrt 2)
+  // A4 in world units. 1400 × 1000 (A4 is 1 : 1.414) so every page edge falls on the 20-unit grid and on the 100-unit grid
+  // shown when zoomed out; pages are 100 apart for the same reason. Printing scales the page to fit A4 (1.5 mm side margins).
+  const LONG = 1400, SHORT = 1000, GAP = 100, GRID = 20;
+  const snapGrid = (v) => Math.round(v / GRID) * GRID;
   const SVGNS = 'http://www.w3.org/2000/svg';
   const svg = (tag, attrs) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
 
@@ -360,9 +363,9 @@
   /* ================= view ================= */
   function applyView() {
     world.style.transform = 'translate(' + view.x + 'px,' + view.y + 'px) scale(' + view.z + ')';
-    const g = 20 * view.z * (view.z < 0.5 ? 5 : 1);
+    const g = GRID * view.z * (view.z < 0.5 ? 5 : 1);
     vp.style.backgroundSize = g + 'px ' + g + 'px';
-    vp.style.backgroundPosition = view.x + 'px ' + view.y + 'px';
+    vp.style.backgroundPosition = view.x - g / 2 + 'px ' + (view.y - g / 2) + 'px'; // a dot exactly on every grid point, page corners included
     moveGhost();
     if (zoomLbl) zoomLbl.textContent = Math.round(view.z * 100) + '%';
     const hd = view.z * cardScale() >= 1.3;
@@ -492,7 +495,7 @@
     if (!was) { if (!add) store.sel.clear(); store.sel.add(it.id); store.selConn = null; refreshSel(); }
     const group = [...store.sel].map(store.item).filter((i) => i && !(i.kind === 'plan' && i.lock)), start = group.map((i) => [i.x, i.y]);
     drag(e, (ev, dx, dy) => {
-      group.forEach((i, k) => { const sn = i.kind === 'mark' || i.kind === 'run' ? snap5 : snap; i.x = sn(start[k][0] + dx / view.z); i.y = sn(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
+      group.forEach((i, k) => { const sn = i.kind === 'mark' || i.kind === 'run' ? snap5 : i.kind === 'plan' ? snapGrid : snap; i.x = sn(start[k][0] + dx / view.z); i.y = sn(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
       renderWires(); placeBar();
     }, (ev, moved, aborted) => {
       if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); return render(); } // second finger: put things back, pinch instead
@@ -512,7 +515,7 @@
   function startResize(e, it) {
     const w0 = it.w, h0 = it.h, el = els.get(it.id);
     drag(e, (ev, dx, dy) => {
-      if (it.kind === 'plan') { it.w = Math.max(100, snap(w0 + dx / view.z)); it.h = Math.round((it.w * h0) / w0); }
+      if (it.kind === 'plan') { it.w = Math.max(100, snapGrid(w0 + dx / view.z)); it.h = Math.max(100, snapGrid((it.w * h0) / w0)); } // frame on the grid, image keeps its proportions
       else { it.w = Math.max(140, snap(w0 + dx / view.z)); it.h = Math.max(60, snap(h0 + dy / view.z)); }
       el.style.width = it.w + 'px'; el.style[it.kind === 'plan' || it.kind === 'zone' ? 'height' : 'minHeight'] = it.h + 'px';
     }, (ev, moved, aborted) => { if (aborted) { it.w = w0; it.h = h0; return render(); } if (moved) { geom.delete(it.id); store.commit(); } });
@@ -1029,8 +1032,11 @@
     store.planSrc = cv.toDataURL('image/jpeg', 0.85); store.savePlan();
     const d = store.doc, s = pageSize(), m = 40, col = s.w > s.h ? 370 : 0; // landscape: keep a column free on the right for the legend
     const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 40) / cv.height);
+    // the plan's frame is placed on the grid and sized in whole grid steps (rounded down, so it never grows past the margins);
+    // the image keeps its proportions inside the frame (object-fit: contain), so a measured scale stays true
+    const w = Math.max(GRID * 5, Math.floor((cv.width * f) / GRID) * GRID), hh = Math.max(GRID * 5, Math.floor((cv.height * f) / GRID) * GRID);
     d.items = d.items.filter((i) => i.kind !== 'plan');
-    d.items.unshift({ id: HP.uid(), kind: 'plan', x: snap((s.w - col - cv.width * f) / 2), y: snap((s.h - 40 - cv.height * f) / 2), w: Math.round(cv.width * f), h: Math.round(cv.height * f), lock: true });
+    d.items.unshift({ id: HP.uid(), kind: 'plan', x: snapGrid((s.w - col - w) / 2), y: snapGrid((s.h - 40 - hh) / 2), w, h: hh, lock: true });
     if (!d.ci) d.ci = true;
     geom.clear(); store.commit(); C.fit();
     HP.toast(t('Floor plan added and CI mode switched on. Click a product to place marks. Alt-click the plan to move or resize it.', 'Plantegning tilføjet, og CI-tilstand er slået til. Klik på et produkt for at placere mærker. Alt-klik på planen for at flytte eller skalere den.'), { ms: 8000 });
@@ -1081,7 +1087,8 @@
 
   /* ================= print ================= */
   C.print = () => {
-    const d = store.doc, s = pageSize(), mm = d.orient === 'portrait' ? [210, 297] : [297, 210], k = ((mm[0] * 96) / 25.4) / s.w;
+    const d = store.doc, s = pageSize(), mm = d.orient === 'portrait' ? [210, 297] : [297, 210], px = (m) => (m * 96) / 25.4;
+    const k = Math.min(px(mm[0]) / s.w, px(mm[1]) / s.h), ox = (px(mm[0]) - s.w * k) / 2, oy = (px(mm[1]) - s.h * k) / 2; // fit A4, centred
     const total = d.pages * (s.w + GAP) - GAP;
     const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; return cx < 0 || cx > total || cy < 0 || cy > s.h; }).length;
     if (outside) HP.toast(t(outside + ' item(s) are outside the A4 pages and will not be printed.', outside + ' element(er) ligger uden for A4-siderne og bliver ikke printet.'), { kind: 'warn', ms: 7000 });
@@ -1090,7 +1097,7 @@
     for (let i = 0; i < d.pages; i++) {
       const r = pageRect(i), clone = world.cloneNode(true);
       clone.removeAttribute('id'); clone.classList.remove('wiring');
-      clone.style.transform = 'scale(' + k + ') translate(' + -r.x + 'px,' + -r.y + 'px)';
+      clone.style.transform = 'translate(' + ox + 'px,' + oy + 'px) scale(' + k + ') translate(' + -r.x + 'px,' + -r.y + 'px)';
       clone.querySelectorAll('.no-print').forEach((e) => e.remove());
       root.append(h('.sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
     }

@@ -178,7 +178,7 @@ html[data-theme="dark"] .world.ci .ci-name { color: #141518; }
 .prices td.q { width: 1%; padding-right: 0; color: var(--muted); } .prices td.p { text-align: right; white-space: nowrap; font-family: var(--mono); font-size: 11px; }
 .prices-total { display: flex; justify-content: space-between; padding: 8px 10px; font: 600 14px var(--display); } .prices-total span:last-child { font-family: var(--mono); }
 .prices-note { padding: 0 10px 8px; font: 9.5px var(--mono); color: var(--muted); } .prices .muted { padding: 8px 10px; }
-.plan img { width: 100%; height: 100%; display: block; } .plan:not(.locked) { cursor: move; outline: 1px dashed var(--accent); } .plan.locked .resize { display: none; }
+.plan img { width: 100%; height: 100%; display: block; object-fit: contain; } .plan:not(.locked) { cursor: move; outline: 1px dashed var(--accent); } .plan.locked .resize { display: none; }
 
 .wire .hit { fill: none; stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: pointer; }
 .wire .line, .temp .line { fill: none; stroke: var(--c, var(--fg)); stroke-width: 2; pointer-events: none; }

@@ -200,10 +200,18 @@
   ];
 
   /* ---------- document store ---------- */
-  const blank = () => ({ v: 3, name: '', pages: 1, orient: 'landscape', ci: false, ciSize: 90, ms: 34, mk: [], sc: 0, items: [], conns: [], plan: null });
+  const blank = () => ({ v: 4, name: '', pages: 1, orient: 'landscape', ci: false, ciSize: 90, ms: 34, mk: [], sc: 0, items: [], conns: [], plan: null });
   // v2 -> v3: CI mode used to shrink every product to a thumbnail; it now places lettered marks. Old CI drawings become marks.
   const migrate = (doc) => {
-    if ((doc.v || 2) >= 3) return doc;
+    if ((doc.v || 2) < 3) migrate3(doc);
+    if (doc.v < 4) { // v4: A4 became 1400 wide (was 1414) and pages 100 apart (was 60): items on page 2+ move with their page
+      const port = doc.orient === 'portrait', oldPitch = (port ? 1000 : 1414) + 60, step = (port ? 1000 : 1400) + 100 - oldPitch;
+      doc.items.forEach((i) => { const n = Math.max(0, Math.floor((i.x + 30) / oldPitch)); if (n) i.x += n * step; });
+      doc.v = 4;
+    }
+    return doc;
+  };
+  const migrate3 = (doc) => {
     doc.ms = 34; doc.mk = [];
     if (doc.ci) {
       const gone = new Set(), half = (doc.ciSize || 90) / 2 - 17;
@@ -211,7 +219,7 @@
       doc.conns = (doc.conns || []).filter((c) => !gone.has(c.a.item) && !gone.has(c.b.item));
       if (gone.size) doc.items.push({ id: HP.uid(), kind: 'legend', x: 30, y: 30 });
     }
-    doc.v = 3; return doc;
+    doc.v = 3;
   };
   const store = (HP.store = { doc: migrate(Object.assign(blank(), LS.get('doc', {}))), planSrc: LS.get('plan', null), sel: new Set(), selConn: null });
   let hist = [], fut = [], last = JSON.stringify(store.doc);
@@ -250,7 +258,7 @@
       items.map((i) => i.kind === 'product' ? (i.np ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, 1] : i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift) r.push(c.cable || 0); if (c.shift) r.push(Math.round(c.shift / 5)); return r; }),
-      [doc.ms || 34, doc.mk || [], doc.sc || 0]];
+      [doc.ms || 34, doc.mk || [], doc.sc || 0, 4]];
   }
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
@@ -261,7 +269,7 @@
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
     const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5 }));
-    return Object.assign({ v: a[9] ? 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
+    return Object.assign({ v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   HP.share = {
     async pack(doc) {

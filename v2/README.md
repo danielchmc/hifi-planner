@@ -67,6 +67,12 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - **Cable runs.** "Cable": click along the route (points snap to the centre of marks), double-click or Enter to finish; the tool stays on for the next run. Each run shows its length once the scale is set. Select a run and choose "Cable" to pick speaker cable sold by the metre; the next runs get the same cable. Metres are summed per cable type, rounded up to whole metres; the legend shows the metres and the price list the cable. Runs cannot be reshaped afterwards: delete and redraw.
 - **Data.** Rooms are `{ kind: 'zone', x, y, w, h, name }`, cable runs `{ kind: 'run', x, y, pts, cable }`, and `doc.sc` is the scale in canvas units per metre. Marks are items `{ kind: 'mark', k: <product id or '@symbol'> }`, the legend is `{ kind: 'legend' }`, `doc.mk` keeps the letter order and `doc.ms` the mark size (document version 3). Older CI drawings, where products were thumbnails, are converted to marks when opened.
 
+## Grid and A4 pages
+
+- The canvas grid is 20 units (100 when zoomed out). An A4 page is 1400 × 1000 units (portrait 1000 × 1400) and pages are 100 apart, so every page edge falls exactly on a grid dot. Printing scales the page uniformly to fit A4 and centres it (1.5 mm side margins, since 1400 : 1000 is 1 % narrower than A4).
+- A new floor plan is placed on the grid and its frame is sized in whole grid steps; the image keeps its proportions inside the frame, so a measured scale stays true. Moving and resizing the plan keeps it on the grid.
+- Drawings from before this change (document version 3, page width 1414, gap 60) are converted when opened: items on page 2 and later move with their page.
+
 ## Mouse controls
 
 - Left-drag on empty canvas: selection box (Shift or Ctrl adds to the selection). A click on empty canvas deselects.
