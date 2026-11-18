@@ -510,3 +510,6 @@ html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 @media (pointer: coarse) { #cibar { height: 46px; } #main.ci-on #viewport { top: 46px; } #cibar .tgroup { height: 36px; } #cibar .symbtn { width: 38px; } }
 @media (max-width: 700px) { #cibar { overflow-x: auto; scrollbar-width: none; gap: 6px; } #cibar .ci-hint { display: none; } .ci-tag { padding: 0 10px; } .ci-tag span { display: none; } }
 @media print { #cibar { display: none !important; } }
+/* ---------- v3.3: rooms in the price list ---------- */
+.prices .lsec { padding: 5px 10px 3px; font: 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--panel2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.prices table.rooms td.zn { font-weight: 600; white-space: nowrap; } .prices table.rooms td.zp { font: 10.5px var(--mono); white-space: nowrap; }

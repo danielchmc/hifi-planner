@@ -79,7 +79,7 @@
   }
   function legendRows() {
     const d = store.doc, n = {}, S = (d.ms || 34) / 2;
-    d.items.forEach((i) => { if (i.kind === 'mark' && !i.np) n[i.k] = (n[i.k] || 0) + 1; });
+    d.items.forEach((i) => { if (i.kind === 'mark') n[i.k] = (n[i.k] || 0) + 1; });
     const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k] || 0, price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
     // a mark belongs to the first zone that contains its centre
     const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', n: {}, total: 0 })), other = { name: null, n: {}, total: 0 };
@@ -181,10 +181,14 @@
     if (it.kind === 'prices') {
       const { list, total, saving } = priceRows();
       const pct = (r) => Math.round((1 - r.price / r.was) * 100);
+      // rooms drawn in CI mode: what each room gets from the floor plan, with a subtotal (cards and cables are not tied to a room)
+      const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
+        h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''),
           h('td', null, r.name, r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
           h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
+        roomRows(),
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()));
@@ -209,26 +213,21 @@
     }
     if (it.kind === 'mark') { const S = d.ms || 34; return h('.mark' + (it.np ? '.np' : ''), { style: { width: S + 'px', height: S + 'px' }, title: markTitle(it.k), html: markHtml(it.k) }); }
     if (it.kind === 'legend') {
-      const { products, generic, total, zones, cables, sc } = legendRows();
+      const { products, generic, cables, sc } = legendRows();
       const bar = sc ? [5, 2, 1, 0.5].find((m) => m * sc <= 150) || 0.25 : 0;
       return h('.prices.legend', null, h('.prices-head', null, t('On the floor plan', 'På plantegningen')),
         products.length || generic.length ? h('table', null,
           products.map((r) => h('tr', null, h('td.lm', null, h('span', { html: markHtml(r.k) })),
             h('td.li', null, r.p && (r.p.img || [])[0] ? HP.imgEl(r.p.img[0], 'thumb') : null),
             h('td', null, r.p ? [h('span.lb', null, r.p.brand), r.p.name, h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
-            h('td.q', null, r.qty ? r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk') : h('span.muted', null, t('not priced', 'ikke i pris'))),
-            h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, r.price ? HP.money(r.price * r.qty) : ''))),
-          generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 3 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
+            h('td.q', null, r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk')))),
+          generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 2 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
           : h('.muted', null, t('No marks yet. Switch on CI mode and click a product to place marks.', 'Ingen mærker endnu. Slå CI-tilstand til, og klik på et produkt for at placere mærker.')),
-        zones.length ? [h('.lsec', null, t('Per room', 'Pr. rum')), h('table', null, zones.map((z) => h('tr', null,
-          h('td.zn', null, z.name === null ? t('Outside the rooms', 'Uden for rum') : z.name || t('Room', 'Rum')), h('td.zp', null, z.parts || '–'), h('td.p', null, z.total ? HP.money(z.total) : ''))))] : null,
         cables.length ? [h('.lsec', null, t('Installation cable', 'Installationskabel')), h('table', null, cables.map((c) => h('tr', null,
           h('td.zn', null, c.name || h('span.muted2', null, t('Cable not chosen', 'Kabel ikke valgt'))),
-          h('td.zp', null, c.runs + ' ' + t(c.runs === 1 ? 'run' : 'runs', 'træk') + (sc ? ' · ' + fmtM(c.m) : '')),
-          h('td.p', null, c.price ? HP.money(c.price) : ''))))] : null,
+          h('td.zp', null, c.runs + ' ' + t(c.runs === 1 ? 'run' : 'runs', 'træk') + (sc ? ' · ' + fmtM(c.m) : '')))))] : null,
         cables.length && !sc ? h('.lnote', null, t('Set the scale to get cable lengths.', 'Sæt målestokken for at få kabellængder.')) : null,
-        bar ? h('.lscale', null, h('i', { style: { width: bar * sc + 'px' } }), (bar + ' m').replace('.', ',')) : null,
-        total > 0 && h('.prices-total', null, h('span', null, t('On the plan', 'På planen')), h('span', null, HP.money(total))));
+        bar ? h('.lscale', null, h('i', { style: { width: bar * sc + 'px' } }), (bar + ' m').replace('.', ',')) : null);
     }
     if (it.kind === 'plan') return h('.plan' + (it.lock ? '.locked' : ''), { style: { width: it.w + 'px', height: it.h + 'px' } }, h('img', { src: store.planSrc || '', draggable: false }), h('i.resize.no-print'));
     return h('div');
@@ -239,9 +238,9 @@
     if (it.kind === 'mark') return ['m', it.k, it.np, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
     if (it.kind === 'zone') return ['z', it.w, it.h, it.name, d.items.filter((i) => i.kind === 'zone').indexOf(it), L].join('|');
     if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
-    if (it.kind === 'legend') return 'l' + JSON.stringify(legendRows(), (k, v) => (k === 'p' ? (v ? v.id + v.name : 0) : v)) + cat.version + L;
+    if (it.kind === 'legend') { const r = legendRows(); return 'l' + JSON.stringify([r.products.map((x) => [x.k, x.qty]), r.generic, r.cables.map((c) => [c.k, c.runs, c.m]), r.sc]) + cat.version + L; }
     if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, it.noTitle ? 1 : 0, it.noBody ? 1 : 0, L].join('|');
-    if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + L + HP.today();
+    if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + JSON.stringify(legendRows().zones) + L + HP.today();
     if (it.kind === 'plan') return ['f', it.w, it.h, it.lock, (store.planSrc || '').length].join('|');
     return '';
   }
