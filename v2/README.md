@@ -59,6 +59,15 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG/PNG); on lands
 - **Cable runs.** "Cable": click along the route (points snap to the centre of marks), double-click or Enter to finish; the tool stays on for the next run. Each run shows its length once the scale is set. Select a run and choose "Cable" to pick speaker cable sold by the metre; the next runs get the same cable. Metres are summed per cable type, rounded up to whole metres, and added to the legend and the price list. Runs cannot be reshaped afterwards: delete and redraw.
 - **Data.** Rooms are `{ kind: 'zone', x, y, w, h, name }`, cable runs `{ kind: 'run', x, y, pts, cable }`, and `doc.sc` is the scale in canvas units per metre. Marks are items `{ kind: 'mark', k: <product id or '@symbol'> }`, the legend is `{ kind: 'legend' }`, `doc.mk` keeps the letter order and `doc.ms` the mark size (document version 3). Older CI drawings, where products were thumbnails, are converted to marks when opened.
 
+## Phones and tablets
+
+The app works on phones and iPads with touch.
+
+- **Layout.** Up to 1024 px wide (iPad portrait, phones) the product list is a drawer opened with the orange **Products** button, and a **⋯** button holds everything that does not fit in the top bar. Up to 700 px (phones) the top bar only keeps Products, undo/redo, Print and ⋯; windows open full screen.
+- **Canvas gestures.** One finger on empty canvas pans; two fingers pinch-zoom and pan. Long-press (about half a second) opens the context menu on a product, cable or empty spot; long-press on empty canvas and then drag selects an area. Dragging items, wiring (tap an output dot, then an input dot) and the CI tools work with a finger; drawing a cable run has a **Finish run** button.
+- **Product list.** Scrolls with a finger. Tap adds the product (in CI mode: arms it for placing marks); long-press picks it up for dragging onto the canvas, and the drawer slides away while dragging.
+- **Touch details.** Larger hit areas for port dots and resize handles; form fields use 16 px text so iOS does not zoom when typing; the full-screen image viewer supports pinch and double-tap. Code: `drag()` and the pinch handler in `js/canvas.js`, `listDrag()`, `Pn.drawer` and `moreMenu()` in `js/panels.js`, the "v3.0" section of `css/app.css`.
+
 ## Catalogue sync (hifiklubben.dk mirror)
 
 A GitHub Action runs every hour (`tools/price-sync.workflow.yml`; copy it into the repository as `.github/workflows/price-sync.yml` once). It can also be started under Actions → Catalogue sync → Run workflow, or from Settings → Admin (token needs *Actions: Read and write*). Each run's report is under Actions → the run → Summary.

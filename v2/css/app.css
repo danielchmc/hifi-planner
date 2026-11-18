@@ -405,3 +405,97 @@ img.broken { visibility: hidden; }
 .legend .lscale { display: flex; align-items: center; gap: 8px; padding: 7px 10px 3px; font: 9.5px var(--mono); color: var(--muted); }
 .legend .lscale i { height: 5px; border: 1px solid var(--fg); border-top: 0; display: block; }
 @media print { .sheet .zone-name:empty { display: none; } }
+/* ==========================================================================
+   v3.0: phones and tablets
+   ≤1024 px: sidebar becomes a drawer, "More" menu holds what does not fit in the top bar.
+   ≤700 px (phones): only Products, undo/redo, Print and More stay in the top bar.
+   pointer: coarse: larger touch targets, inputs at 16 px (stops iOS zooming on focus).
+   ========================================================================== */
+#app { height: 100vh; height: 100dvh; }
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+#tb-drawer, #tb-more, .drawer-x, .hint-touch { display: none; }
+.prow { touch-action: pan-y; } .sc { touch-action: pan-y; }
+.prow.lifted, .sc.lifted { background: var(--fg); color: var(--panel); } .prow.lifted .psub { color: inherit; }
+#viewport.selecting { cursor: crosshair; }
+
+@media (pointer: coarse) {
+  .hint-mouse { display: none; } .hint-touch { display: inline; }
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]), select, textarea, [contenteditable="true"] { font-size: 16px; }
+  .note [contenteditable="true"] { font-size: inherit; }  /* note text is sized by the canvas zoom; keep it */
+  .tgroup { height: 38px; } .tbtn { padding: 0 11px; }
+  .btn { height: 38px; } .btn.sm { height: 34px; padding: 0 10px; }
+  .icon-btn { width: 36px; height: 36px; }
+  .chips button { padding: 6px 10px; font-size: 12.5px; }
+  .prow { padding: 8px 10px; }
+  #selbar button { height: 40px; padding: 0 12px; }
+  #ctxmenu .mi { height: 42px; } #ctxmenu { min-width: 260px; max-height: calc(100dvh - 16px); overflow-y: auto; }
+  .zoomer button { width: 42px; height: 42px; } .zoomer .zl { width: 58px; }
+  .cibar .symbtn { width: 36px; height: 36px; }
+  /* ports: a bigger invisible hit area that reaches past the card edge */
+  .port::before { content: ""; position: absolute; top: -3px; bottom: -3px; width: 30px; }
+  .port.in::before { left: -18px; } .port.out::before { right: -18px; }
+  .dot { width: 11px; height: 11px; top: 3px; } .port.in .dot { left: -6px; } .port.out .dot { right: -6px; }
+  .resize { width: 22px; height: 22px; } .zone .resize { width: 18px; height: 18px; right: -10px; bottom: -10px; }
+  .swatches .sw { width: 16px; height: 16px; }
+
+}
+
+@media (max-width: 1024px) {
+  #tb-drawer, #tb-more { display: inline-flex; }
+  #tb-drawer { background: var(--accent); color: var(--accent-fg); border: 0; height: 100%; padding: 0 14px; gap: 6px; font-weight: 600; }
+  #tb-drawer .ic { stroke-width: 2.2; }
+  #tb-more { border: 1px solid var(--line); height: 32px; padding: 0 10px; }
+  .brandmark { display: none; }
+  #topbar { gap: 6px; padding: 0 6px 0 0; height: 52px; padding-top: env(safe-area-inset-top); box-sizing: content-box; }
+  #tb-scale, #tb-orient, #tb-prefs, #tb-sellergrp, .tgroup.admin { display: none !important; }
+  .docname { min-width: 80px; }
+
+  #body { position: relative; }
+  #sidebar { position: absolute; left: 0; top: 0; bottom: 0; z-index: 7000; width: min(380px, 92vw); transform: translateX(-102%); transition: transform .22s ease; box-shadow: 8px 0 0 rgba(0, 0, 0, .12); padding-bottom: env(safe-area-inset-bottom); }
+  body.drawer-open #sidebar { transform: none; }
+  body.drawer-open #main::after { content: ""; position: absolute; inset: 0; background: rgba(12, 12, 14, .35); z-index: 6999; }
+  .drawer-x { display: inline-grid; position: absolute; right: 4px; top: 2px; z-index: 2; }
+  #sidebar .tabs { padding-right: 44px; }
+  body.dragging #sidebar { transform: translateX(-102%); }
+
+  .modal-back { padding: 10px; }
+  .modal.xl { width: 100%; height: calc(100dvh - 20px); }
+  .editor { flex-direction: column; overflow-y: auto; }
+  .ed-side { width: auto; border-right: 0; border-bottom: 1px solid var(--fg); max-height: 40dvh; flex: none; }
+  .ed-form { overflow: visible; }
+  #peek { left: 8px !important; right: 8px; width: auto !important; }
+  .cibar { top: 8px; padding: 6px 8px; gap: 6px; }
+}
+
+@media (max-width: 700px) {
+  #tb-edit #tb-new, .docname, #tb-insert, #tb-sharegrp, .spacer { display: none !important; }
+  #topbar { justify-content: space-between; }
+  #tb-drawer span { display: inline !important; }
+  #tb-print span { display: none; }
+  .modal-back { padding: 0; place-items: stretch; }
+  .modal, .modal.sm, .modal.md, .modal.lg, .modal.xl { width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh; box-shadow: none; border: 0; }
+  .modal-body { padding-bottom: calc(14px + env(safe-area-inset-bottom)); }
+  .plist.tall { height: auto; flex: 1; }
+  .modal-body.flush { flex: 1; }
+  .login-card { width: calc(100vw - 24px); padding: 20px; }
+  .grid2 { grid-template-columns: minmax(0, 1fr); }
+  .zoomer { right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); }
+  .cibar { left: 8px; right: 8px; transform: none; max-width: none; justify-content: flex-start; }
+  .cibar .symbar { border: 0; padding: 0; flex-wrap: wrap; }
+  .cibar .ci-size { display: none; }
+  .cibar .ci-hint { white-space: normal; text-align: left; font-size: 11.5px; }
+  .vbar { padding: 0 6px 0 10px; gap: 4px; } .vtitle .brand { display: none; }
+  #toasts { left: 8px; right: 8px; transform: none; bottom: calc(60px + env(safe-area-inset-bottom)); } .toast { max-width: 100%; }
+}
+/* phones held sideways: little height, so the product filters get compact */
+@media (max-height: 520px) and (max-width: 1024px) {
+  #sidebar .filters { padding: 6px 8px; gap: 5px; } #sidebar .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  #sidebar .chips button { flex: none; padding: 3px 9px; }
+  #sidebar .tabs button { height: 32px; }
+  #topbar { height: 44px; }
+}
+@media (pointer: coarse) { #ctxmenu .mk { display: none; } }   /* keyboard shortcuts mean nothing on a touch screen */
+@media (max-width: 700px) {
+  #selbar { max-width: calc(100vw - 12px); overflow-x: auto; scrollbar-width: none; } #selbar button { flex: none; }
+  .modal-back { grid-template-columns: minmax(0, 1fr); } .modal { min-width: 0; } .modal .row { flex-wrap: wrap; }
+}

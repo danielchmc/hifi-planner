@@ -421,7 +421,11 @@
       if (!(one && one.kind === 'plan')) selbar.append(btn('trash', t('Delete', 'Slet'), C.deleteSelection, '.danger'));
     }
     selbar.hidden = !anchor;
-    if (anchor) { selbar.style.left = anchor.x * view.z + view.x + 'px'; selbar.style.top = anchor.y * view.z + view.y - 12 + 'px'; }
+    if (anchor) { // keep the bar inside the visible canvas (matters on phones)
+      const W = vp.clientWidth, sw = selbar.offsetWidth, sh = selbar.offsetHeight;
+      selbar.style.left = clamp(anchor.x * view.z + view.x, Math.min(W / 2, sw / 2 + 6), Math.max(W / 2, W - sw / 2 - 6)) + 'px';
+      selbar.style.top = Math.max(sh + 6, anchor.y * view.z + view.y - 12) + 'px';
+    }
   }
   function refreshSel() {
     els.forEach((el, id) => el.classList.toggle('sel', store.sel.has(id)));
@@ -430,29 +434,50 @@
   C.select = (ids) => { store.sel = new Set(ids); store.selConn = null; refreshSel(); };
 
   /* ================= pointer interactions ================= */
-  function drag(e, onMove, onEnd) {
-    const sx = e.clientX, sy = e.clientY; let moved = false;
+  /* One pointer drag. Touch: a larger dead zone, an optional long-press (onLong, fired after ~0.5 s without moving),
+     and a second finger aborts it (pinch-zoom takes over; onEnd gets aborted = true). */
+  let curDrag = null, lastTouch = 0;
+  function drag(e, onMove, onEnd, onLong) {
+    const sx = e.clientX, sy = e.clientY, touch = e.pointerType === 'touch' || e.pointerType === 'pen', thr = touch ? 9 : 4;
+    let moved = false, last = e, timer = 0;
     try { vp.setPointerCapture(e.pointerId); } catch (err) { /* synthetic */ }
-    const mv = (ev) => { if (!moved && Math.hypot(ev.clientX - sx, ev.clientY - sy) < 4) return; moved = true; onMove(ev, ev.clientX - sx, ev.clientY - sy); };
-    const up = (ev) => { vp.removeEventListener('pointermove', mv); vp.removeEventListener('pointerup', up); vp.removeEventListener('pointercancel', up); onEnd(ev, moved); };
+    const stop = () => { clearTimeout(timer); vp.removeEventListener('pointermove', mv); vp.removeEventListener('pointerup', up); vp.removeEventListener('pointercancel', up); if (curDrag === ctl) curDrag = null; };
+    const mv = (ev) => { if (ev.pointerId !== e.pointerId) return; last = ev; if (!moved && Math.hypot(ev.clientX - sx, ev.clientY - sy) < thr) return; moved = true; clearTimeout(timer); onMove(ev, ev.clientX - sx, ev.clientY - sy); };
+    const up = (ev) => { if (ev.pointerId !== e.pointerId) return; stop(); onEnd(ev, moved, false); };
+    const ctl = { abort: () => { stop(); onEnd(last, true, true); } };
+    curDrag = ctl;
     vp.addEventListener('pointermove', mv); vp.addEventListener('pointerup', up); vp.addEventListener('pointercancel', up);
+    if (touch && onLong) timer = setTimeout(() => { if (!moved && curDrag === ctl) { stop(); if (navigator.vibrate) navigator.vibrate(12); onLong(last); } }, 480);
   }
+  // long-press on touch = right-click
+  // the finger lifting after a long-press sends a click to whatever is under it (the menu that just opened): swallow that one click
+  const eatClick = (liftEv) => {
+    let lift = liftEv ? { x: liftEv.clientX, y: liftEv.clientY, t: Date.now() } : null;
+    const eat = (ev) => { if (lift && (Date.now() - lift.t > 350 || Math.hypot(ev.clientX - lift.x, ev.clientY - lift.y) > 24)) return done(); ev.preventDefault(); ev.stopPropagation(); done(); };
+    const up = (ev) => { if (!lift) lift = { x: ev.clientX, y: ev.clientY, t: Date.now() }; }; // only the lift that ends the long-press
+    const done = () => { window.removeEventListener('click', eat, true); window.removeEventListener('pointerup', up, true); clearTimeout(tm); };
+    window.addEventListener('click', eat, true); window.addEventListener('pointerup', up, true);
+    const tm = setTimeout(done, 3000);
+  };
+  const longMenu = (ev, lifted) => eatClick(lifted) || onContext({ clientX: ev.clientX, clientY: ev.clientY, target: document.elementFromPoint(ev.clientX, ev.clientY) || vp, preventDefault() {}, fromTouch: true });
   const blurActive = () => { const a = document.activeElement; if (a && a !== document.body && a.blur) a.blur(); };
 
   function startPan(e, clickClears) {
     const x0 = view.x, y0 = view.y; vp.classList.add('panning');
     drag(e, (ev, dx, dy) => { view.x = x0 + dx; view.y = y0 + dy; applyView(); },
-      (ev, moved) => { vp.classList.remove('panning'); if (!moved && clickClears && (store.sel.size || store.selConn)) { store.sel.clear(); store.selConn = null; refreshSel(); } });
+      (ev, moved) => { vp.classList.remove('panning'); if (!moved && clickClears && (store.sel.size || store.selConn)) { store.sel.clear(); store.selConn = null; refreshSel(); } },
+      clickClears ? (ev) => { vp.classList.remove('panning'); store.sel.clear(); store.selConn = null; refreshSel(); startMarquee(ev, (up) => longMenu(ev, up)); } : null);
   }
-  function startMarquee(e) {
+  function startMarquee(e, onTap) {
     const r = vp.getBoundingClientRect(), a = toWorld(e.clientX, e.clientY), base = new Set(store.sel);
+    if (onTap) vp.classList.add('selecting');
     drag(e, (ev) => {
       const b = toWorld(ev.clientX, ev.clientY), x0 = Math.min(a.x, b.x), y0 = Math.min(a.y, b.y), x1 = Math.max(a.x, b.x), y1 = Math.max(a.y, b.y);
       Object.assign(marqueeEl.style, { display: 'block', left: Math.min(e.clientX, ev.clientX) - r.left + 'px', top: Math.min(e.clientY, ev.clientY) - r.top + 'px', width: Math.abs(ev.clientX - e.clientX) + 'px', height: Math.abs(ev.clientY - e.clientY) + 'px' });
       store.sel = new Set(base);
       store.doc.items.forEach((it) => { if (it.kind === 'plan' || it.kind === 'zone') return; const g = measure(it); if (it.x < x1 && it.x + g.w > x0 && it.y < y1 && it.y + g.h > y0) store.sel.add(it.id); });
       store.selConn = null; refreshSel();
-    }, () => { marqueeEl.style.display = 'none'; });
+    }, (ev, moved, aborted) => { marqueeEl.style.display = 'none'; vp.classList.remove('selecting'); if (!moved && !aborted && onTap) onTap(ev); });
   }
   function startItemDrag(e, it) {
     const add = e.shiftKey || e.ctrlKey || e.metaKey, was = store.sel.has(it.id), onImg = !!e.target.closest('.card-img');
@@ -461,7 +486,8 @@
     drag(e, (ev, dx, dy) => {
       group.forEach((i, k) => { const sn = i.kind === 'mark' || i.kind === 'run' ? snap5 : snap; i.x = sn(start[k][0] + dx / view.z); i.y = sn(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
       renderWires(); placeBar();
-    }, (ev, moved) => {
+    }, (ev, moved, aborted) => {
+      if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); return render(); } // second finger: put things back, pinch instead
       if (moved) return store.commit();
       if (add && was) store.sel.delete(it.id); else if (!add) { store.sel.clear(); store.sel.add(it.id); }
       const p = it.kind === 'product' && cat.get(it.pid);
@@ -473,7 +499,7 @@
         if (n > 1) { it.face = ((it.face || 0) + 1) % n; lastImgClick.flipped = true; return store.commit(); }
       }
       refreshSel();
-    });
+    }, longMenu);
   }
   function startResize(e, it) {
     const w0 = it.w, h0 = it.h, el = els.get(it.id);
@@ -481,13 +507,13 @@
       if (it.kind === 'plan') { it.w = Math.max(100, snap(w0 + dx / view.z)); it.h = Math.round((it.w * h0) / w0); }
       else { it.w = Math.max(140, snap(w0 + dx / view.z)); it.h = Math.max(60, snap(h0 + dy / view.z)); }
       el.style.width = it.w + 'px'; el.style[it.kind === 'plan' || it.kind === 'zone' ? 'height' : 'minHeight'] = it.h + 'px';
-    }, (ev, moved) => { if (moved) { geom.delete(it.id); store.commit(); } });
+    }, (ev, moved, aborted) => { if (aborted) { it.w = w0; it.h = h0; return render(); } if (moved) { geom.delete(it.id); store.commit(); } });
   }
   function startWireDrag(e, id) {
     const c = store.doc.conns.find((x) => x.id === id); if (!c) return;
     const r = routes.get(id), s0 = c.shift || 0;
     drag(e, (ev, dx, dy) => { c.shift = Math.round((s0 + (r.axis === 'x' ? dx : dy) / view.z) / 5) * 5; renderWires(); },
-      (ev, moved) => { store.sel.clear(); store.selConn = id; if (moved) store.commit(); else { refreshSel(); HP.panels.cablePicker(id); } });
+      (ev, moved, aborted) => { if (aborted) { c.shift = s0; return renderWires(); } store.sel.clear(); store.selConn = id; if (moved) store.commit(); else { refreshSel(); HP.panels.cablePicker(id); } }, longMenu);
   }
 
   /* ---- wiring ---- */
@@ -510,7 +536,8 @@
     portEl.classList.add('from');
     tempSvg.textContent = ''; tempSvg.append(svg('path', { class: 'line c-' + from.conn }));
     tempPath(e);
-    drag(e, tempPath, (ev, moved) => {
+    drag(e, tempPath, (ev, moved, aborted) => {
+      if (aborted) return cancelWire();
       const hit = document.elementFromPoint(ev.clientX, ev.clientY), target = hit && hit.closest('.port');
       if (target && target !== portEl) finishWire(target);
       else if (!moved) { wiring.sticky = true; vp.addEventListener('pointermove', tempPath); }
@@ -551,8 +578,8 @@
     if (tool && tool.type === 'zone') { // drag a rectangle around the room
       const a = toWorld(e.clientX, e.clientY), r = vp.getBoundingClientRect();
       return drag(e, (ev) => Object.assign(marqueeEl.style, { display: 'block', left: Math.min(e.clientX, ev.clientX) - r.left + 'px', top: Math.min(e.clientY, ev.clientY) - r.top + 'px', width: Math.abs(ev.clientX - e.clientX) + 'px', height: Math.abs(ev.clientY - e.clientY) + 'px' }),
-        (ev, moved) => {
-          marqueeEl.style.display = 'none'; if (!tool) return;
+        (ev, moved, aborted) => {
+          marqueeEl.style.display = 'none'; if (!tool || aborted) return;
           const b = toWorld(ev.clientX, ev.clientY); let x = Math.min(a.x, b.x), y = Math.min(a.y, b.y), w = Math.abs(b.x - a.x), hh = Math.abs(b.y - a.y);
           if (!moved || w < 60 || hh < 40) { w = 280; hh = 180; x = a.x - 140; y = a.y - 90; }
           C.addZone(snap(x), snap(y), snap(w), snap(hh));
@@ -566,7 +593,7 @@
         if (tool.type === 'run' && last && Math.hypot(p[0] - last[0], p[1] - last[1]) < 8 / view.z) return finishRun(); // second click on the same spot = done
         tool.pts.push(p);
         if (tool.type === 'scale' && tool.pts.length === 2) return askScale();
-        toolPreview();
+        toolPreview(); HP.emit('stamp');
       });
     }
     if (stamp) { // click = place a mark, drag = pan
@@ -702,7 +729,7 @@
   function moveGhost() {
     if (!ghost) return;
     const r = vp.getBoundingClientRect(), inside = lastPtr && lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom;
-    ghost.hidden = !inside; if (!inside) return;
+    ghost.hidden = !inside || lastPtr.touch; if (ghost.hidden) return;
     const S = (store.doc.ms || 34) * view.z;
     Object.assign(ghost.style, { width: S + 'px', height: S + 'px', left: lastPtr.x - r.left + 'px', top: lastPtr.y - r.top + 'px' });
   }
@@ -738,7 +765,7 @@
   }
   function finishRun() {
     if (!tool || tool.type !== 'run') return;
-    const pts = tool.pts; tool.pts = []; toolPreview();
+    const pts = tool.pts; tool.pts = []; toolPreview(); HP.emit('stamp');
     if (pts.length < 2) return;
     const x = Math.min(...pts.map((p) => p[0])), y = Math.min(...pts.map((p) => p[1]));
     const it = { id: HP.uid(), kind: 'run', x, y, cable: lastCable && cat.get(lastCable) ? lastCable : null, pts: pts.map((p) => [p[0] - x, p[1] - y]) };
@@ -760,6 +787,7 @@
       body: [h('p.muted', null, t('Type the real length of the line you just marked, in metres.', 'Skriv den rigtige længde af den linje, du lige har markeret, i meter.')), h('label.field', null, h('span', null, t('Length in metres', 'Længde i meter')), inp)],
       foot: [h('button.btn.primary', { onclick: ok }, t('Set scale', 'Sæt målestok'))] });
   }
+  C.finishRun = () => finishRun();
   C.addZone = (x, y, w, hh) => {
     const it = { id: HP.uid(), kind: 'zone', x, y, w, h: hh, name: '' };
     store.doc.items.push(it); C.stopTool(); store.sel = new Set([it.id]); store.selConn = null; store.commit();
@@ -829,6 +857,7 @@
   /* ---- right-click menu ---- */
   function onContext(e) {
     e.preventDefault();
+    if (!e.fromTouch && Date.now() - lastTouch < 1200) return; // Android fires its own contextmenu on long-press: the touch handler already opened ours
     if (tool) { if (tool.type === 'run' && tool.pts.length > 1) finishRun(); return C.stopTool(); } // right-click ends the tool (and finishes the run being drawn)
     if (stamp) return C.stopStamp(); // right-click ends placing
     if (wiring) cancelWire();
@@ -976,9 +1005,33 @@
         h('button', { title: t('Zoom in', 'Zoom ind'), onclick: () => C.zoomBy(1.25) }, icon('plus')),
         h('button', { title: t('Fit to window (F)', 'Tilpas til vindue (F)'), onclick: C.fit }, icon('fit'))));
     mount.append(vp);
+    // two fingers: pinch to zoom and pan together. Runs in the capture phase so a second finger never reaches onDown.
+    const fingers = new Map(); let pinch = null;
+    const mid = () => { const [a, b] = [...fingers.values()]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2, d: Math.hypot(a.x - b.x, a.y - b.y) || 1 }; };
+    vp.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'touch') return;
+      lastTouch = Date.now(); fingers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (fingers.size === 2) {
+        if (curDrag) curDrag.abort();
+        const m = mid(); pinch = { x: m.x, y: m.y, d: m.d, z: view.z };
+        try { vp.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+      }
+      if (fingers.size >= 2) { e.preventDefault(); e.stopImmediatePropagation(); }
+    }, true);
+    vp.addEventListener('pointermove', (e) => {
+      if (!fingers.has(e.pointerId)) return;
+      fingers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (!pinch || fingers.size !== 2) return;
+      const m = mid();
+      zoomAt(pinch.x, pinch.y, pinch.z * (m.d / pinch.d));
+      view.x += m.x - pinch.x; view.y += m.y - pinch.y; applyView();
+      pinch.x = m.x; pinch.y = m.y; pinch.z = view.z; pinch.d = m.d;
+    }, true);
+    const lift = (e) => { if (!fingers.delete(e.pointerId)) return; lastTouch = Date.now(); if (fingers.size < 2) pinch = null; };
+    window.addEventListener('pointerup', lift, true); window.addEventListener('pointercancel', lift, true);
     vp.addEventListener('pointerdown', onDown);
     vp.addEventListener('contextmenu', onContext);
-    window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY }; moveGhost(); if (tool && tool.pts.length) toolPreview(); }, { passive: true });
+    window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY, touch: e.pointerType === 'touch' }; moveGhost(); if (tool && tool.pts.length) toolPreview(); }, { passive: true });
     vp.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, view.z * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
     vp.addEventListener('dragover', (e) => e.preventDefault());
     vp.addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) C.loadPlan(f); });

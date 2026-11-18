@@ -11,19 +11,38 @@
       h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, p.brand, p.price ? ' · ' : '', (p.vars || []).length > 1 && new Set(p.vars.map((v) => v.price)).size > 1 ? t('from ', 'fra ') : '', p.was > p.price ? h('s', null, HP.money(p.was)) : null, p.was > p.price ? ' ' : '', p.price ? h('span' + (p.was > p.price ? '.sale' : ''), null, HP.money(p.price)) : null)),
       h('.pmeta', null, (p.vars || []).length > 1 && h('span.nvar', { title: p.vars.map((v) => v.label).join(', ') }, p.vars.slice(0, 4).map((v) => h('i', { style: { background: HP.site.swatch(v) } }))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
   }
+  /* Drag a product or Shortcut from the sidebar onto the canvas.
+     Mouse: drag, or click to add. Touch: the list scrolls normally, a tap adds, a long-press picks it up for dragging. */
+  const narrow = () => matchMedia('(max-width: 1024px)').matches;
   function listDrag(e, label, onDrop, onClick, hover) {
     if (e.button !== 0) return;
-    const sx = e.clientX, sy = e.clientY; let ghost = null;
+    const touch = e.pointerType === 'touch' || e.pointerType === 'pen', src = e.currentTarget;
+    const sx = e.clientX, sy = e.clientY; let ghost = null, armed = !touch, cancelled = false, timer = 0;
+    const startGhost = () => {
+      ghost = h('.drag-ghost', null, label); document.body.append(ghost); document.body.classList.add('dragging');
+      if (narrow()) Pn.drawer(false); // the drawer covers the canvas: slide it away so there is somewhere to drop
+    };
+    const block = (ev) => { if (armed) ev.preventDefault(); }; // once picked up, stop the list from scrolling
     const mv = (ev) => {
-      if (!ghost) { if (Math.hypot(ev.clientX - sx, ev.clientY - sy) < 6) return; ghost = h('.drag-ghost', null, label); document.body.append(ghost); document.body.classList.add('dragging'); }
-      ghost.style.transform = 'translate(' + (ev.clientX + 14) + 'px,' + (ev.clientY + 14) + 'px)';
+      if (ev.pointerId !== e.pointerId) return;
+      if (!armed) { if (Math.hypot(ev.clientX - sx, ev.clientY - sy) > 10) { clearTimeout(timer); cancelled = true; } return; } // a scroll
+      if (!ghost) { if (Math.hypot(ev.clientX - sx, ev.clientY - sy) < 6) return; startGhost(); }
+      ghost.style.transform = 'translate(' + (ev.clientX + 14) + 'px,' + (ev.clientY + (touch ? -44 : 14)) + 'px)';
       hover && hover(ev.clientX, ev.clientY);
     };
-    const up = (ev) => {
-      window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up);
-      if (ghost) { ghost.remove(); document.body.classList.remove('dragging'); onDrop(ev.clientX, ev.clientY); } else onClick();
+    const end = (ev, cancel) => {
+      if (ev.pointerId !== e.pointerId) return;
+      clearTimeout(timer); src.classList.remove('lifted');
+      window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', can); src.removeEventListener('touchmove', block);
+      if (ghost) { ghost.remove(); document.body.classList.remove('dragging'); hover && hover(null); if (!cancel) onDrop(ev.clientX, ev.clientY); }
+      else if (!cancel && !cancelled) { onClick(); if (touch && narrow()) Pn.drawer(false); }
     };
-    window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up);
+    const up = (ev) => end(ev, false), can = (ev) => end(ev, true);
+    if (touch) {
+      src.addEventListener('touchmove', block, { passive: false });
+      timer = setTimeout(() => { if (cancelled) return; armed = true; src.classList.add('lifted'); if (navigator.vibrate) navigator.vibrate(12); }, 380);
+    }
+    window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up); window.addEventListener('pointercancel', can);
   }
   const inViewport = (cx, cy) => { const r = document.getElementById('viewport').getBoundingClientRect(); return cx > r.left && cx < r.right && cy > r.top && cy < r.bottom; };
 
@@ -41,9 +60,9 @@
       h('button', { data: { tab: 'products' }, onclick: () => setTab('products') }, t('Products', 'Produkter')),
       h('button#tab-shortcuts', { data: { tab: 'shortcuts' }, onclick: () => setTab('shortcuts') }, icon('bolt', 14), t('Shortcuts', 'Genveje')));
     const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search), chips, h('.selrow', null, catSel, brandSel)),
-      h('.listhead', null, count, h('span.hint', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik'))), list);
+      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list);
     const scPane = h('.pane', null, scList);
-    const el = h('aside#sidebar', null, tabs, prodPane, scPane);
+    const el = h('aside#sidebar', null, h('button.icon-btn.drawer-x', { title: t('Close', 'Luk'), onclick: () => Pn.drawer(false) }, icon('x')), tabs, prodPane, scPane);
 
     function setTab(x) { tab = x; LS.set('tab', x); tabs.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.tab === x)); prodPane.hidden = x !== 'products'; scPane.hidden = x !== 'shortcuts'; }
     function fillSelects() {
@@ -70,7 +89,7 @@
       list.textContent = '';
       rows = cat.products().slice().sort((a, b) => !!a.gone - !!b.gone).map((p) => {
         const r = productRow(p);
-        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y), () => C().addProductCenter(p.id), (x, y) => C().dragHover(x, y)));
+        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y), () => { C().addProductCenter(p.id); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
         list.append(r);
         return { p, r };
       });
@@ -99,7 +118,7 @@
           HP.isAdmin() && h('.sc-admin', null,
             h('button.icon-btn', { title: t('Rename', 'Omdøb'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.editor.saveShortcut(tp) }, icon('edit', 14)),
             h('button.icon-btn', { title: t('Delete', 'Slet'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.confirm(t('Delete Shortcut "' + tp.name + '"?', 'Slet genvejen "' + tp.name + '"?'), t('Delete', 'Slet'), () => cat.removeTemplate(tp.id)) }, icon('trash', 14))));
-        card.addEventListener('pointerdown', (e) => listDrag(e, tp.name, (x, y) => inViewport(x, y) && C().insertTemplate(tp, x, y), () => C().insertTemplate(tp)));
+        card.addEventListener('pointerdown', (e) => listDrag(e, tp.name, (x, y) => inViewport(x, y) && C().insertTemplate(tp, x, y), () => { C().insertTemplate(tp); if (narrow()) Pn.drawer(false); }));
         scList.append(card);
       });
     }
@@ -111,6 +130,42 @@
   }
 
   /* ---------- top bar ---------- */
+  /* on screens up to 1024 px the sidebar is a drawer over the canvas */
+  Pn.drawer = (open) => {
+    const on = open === undefined ? !document.body.classList.contains('drawer-open') : !!open;
+    document.body.classList.toggle('drawer-open', on);
+    if (on && !matchMedia('(pointer: coarse)').matches) setTimeout(() => { const s = document.getElementById('sb-search'); if (s) s.focus(); }, 200);
+  };
+
+  /* everything in the top bar, as one menu, for screens where it does not fit */
+  function moreMenu(btn) {
+    const r = btn.getBoundingClientRect(), d = store.doc, admin = HP.isAdmin(), s = HP.seller();
+    const rename = () => { const v = prompt(t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'), d.name || ''); if (v !== null) { d.name = v.trim(); store.commit(); } };
+    HP.menu(r.right - 260, r.bottom + 4, [
+      { head: d.name || t('Untitled proposal', 'Unavngivet tilbud') },
+      { label: t('Rename proposal…', 'Omdøb tilbud…'), icon: 'edit', fn: rename },
+      { label: t('Clear canvas', 'Ryd lærredet'), icon: 'eraser', fn: () => C().clearCanvas() },
+      'sep',
+      { label: t('Text', 'Tekst'), icon: 'text', fn: () => C().addText() },
+      { label: t('Price list', 'Prisliste'), icon: 'tag', on: C().hasPrices(), fn: () => C().togglePrices() },
+      { label: t('CI mode', 'CI-tilstand'), icon: 'plan', on: !!d.ci, fn: () => C().setCI(!d.ci) },
+      { el: Pn.scaleStepper() },
+      { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', fn: () => { d.orient = d.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } },
+      'sep',
+      { label: t('Share link', 'Del link'), icon: 'link', fn: Pn.share },
+      { label: t('Projects', 'Projekter'), icon: 'folder', fn: Pn.projects },
+      { label: t('Help', 'Hjælp'), icon: 'help', fn: Pn.help },
+      'sep',
+      admin && { label: t('Product Editor', 'Produkt-editor'), icon: 'edit', fn: () => HP.editor.open() },
+      admin && cat.dirtyCount() && { label: t('Publish', 'Udgiv') + ' (' + cat.dirtyCount() + ')', icon: 'cloud', fn: () => HP.editor.publish() },
+      admin && 'sep',
+      { label: HP.lang() === 'da' ? 'English' : 'Dansk', icon: 'globe', fn: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } },
+      { label: t('Light / dark', 'Lys / mørk'), icon: document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', fn: () => document.getElementById('tb-theme').click() },
+      { label: t('Settings', 'Indstillinger'), icon: 'gear', fn: Pn.settings },
+      { label: (s ? s.name + ' · ' : '') + t('switch seller', 'skift sælger'), icon: 'user', fn: () => Pn.switchSeller() },
+    ].filter(Boolean));
+  }
+
   function buildTopbar() {
     let sellerBtn;
     const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: label + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
@@ -124,20 +179,22 @@
     const publish = h('button.tbtn.publish#tb-publish', { onclick: () => HP.editor.publish() }, icon('cloud'), h('span'));
     const adminBox = h('.tgroup.admin', null, tb('tb-editor', 'edit', t('Product Editor', 'Produkt-editor'), () => HP.editor.open(), { text: 1 }), publish);
     const bar = h('header#topbar', null,
+      h('button.tbtn#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus'), h('span', null, t('Products', 'Produkter'))),
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
       name,
-      h('.tgroup', null, tb('tb-new', 'eraser', t('Clear canvas', 'Ryd lærredet'), () => C().clearCanvas()), undo, redo),
+      h('.tgroup#tb-edit', null, tb('tb-new', 'eraser', t('Clear canvas', 'Ryd lærredet'), () => C().clearCanvas()), undo, redo),
       h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, ci),
       h('.tgroup#tb-scale', null, scale),
-      h('.tgroup', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => C().print(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
+      h('.tgroup#tb-printgrp', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => C().print(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
       h('.spacer'),
       adminBox,
-      h('.tgroup', null, tb('tb-share', 'link', t('Share link', 'Del link'), Pn.share, { text: 1, key: 'Ctrl+Shift+S' }), tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
-      h('.tgroup', null,
+      h('.tgroup#tb-sharegrp', null, tb('tb-share', 'link', t('Share link', 'Del link'), Pn.share, { text: 1, key: 'Ctrl+Shift+S' }), tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
+      h('.tgroup#tb-prefs', null,
         h('button.tbtn.lang', { title: t('Language', 'Sprog'), onclick: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } }, HP.lang() === 'da' ? 'DA' : 'EN'),
         tb('tb-theme', document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', t('Light / dark', 'Lys / mørk'), () => { const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = d; LS.set('theme', d); const b = document.getElementById('tb-theme'); b.replaceChild(icon(d === 'dark' ? 'sun' : 'moon'), b.firstChild); }),
         tb('tb-settings', 'gear', t('Settings', 'Indstillinger'), Pn.settings)),
-      h('.tgroup', null, (sellerBtn = h('button.tbtn#tb-seller', { title: t('Signed-in seller. Click to switch seller', 'Logget ind som sælger. Klik for at skifte sælger'), onclick: () => Pn.switchSeller() }, icon('user'), h('span')))));
+      h('button.tbtn#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more')),
+      h('.tgroup#tb-sellergrp', null, (sellerBtn = h('button.tbtn#tb-seller', { title: t('Signed-in seller. Click to switch seller', 'Logget ind som sælger. Klik for at skifte sælger'), onclick: () => Pn.switchSeller() }, icon('user'), h('span')))));
     const drawSeller = () => { const s = HP.seller(); sellerBtn.lastChild.textContent = s ? s.name.split(' ')[0] : t('Seller', 'Sælger'); sellerBtn.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Click to switch seller', 'Klik for at skifte sælger'); };
     drawSeller(); HP.on('seller', drawSeller);
     const sync = () => {
@@ -180,7 +237,8 @@
       tool('scale', 'scale', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'))];
     const HINTS = { zone: [' Drag a rectangle around the room', 'Træk et rektangel rundt om rummet'], run: ['Click along the cable route · double-click or Enter to finish · Esc to stop', 'Klik langs kabelvejen · dobbeltklik eller Enter afslutter · Esc stopper'],
       scale: ['Click the two ends of a wall or door you know the length of', 'Klik på de to ender af en væg eller dør, du kender længden på'] };
-    const bar = h('.cibar', { hidden: true }, h('b', null, 'CI'), hint,
+    const finish = h('button.btn.sm.primary', { hidden: true, onclick: () => C().finishRun() }, icon('check', 14), t('Finish run', 'Afslut træk'));
+    const bar = h('.cibar', { hidden: true }, h('b', null, 'CI'), hint, finish,
       h('.symbar', { title: t('Symbols', 'Symboler') }, syms), tools,
       h('label.ci-size', null, h('span.muted', null, t('Size', 'Størrelse')), size),
       (legend = h('button.btn.sm', { onclick: () => C().toggleLegend(), title: t('Show or hide the legend', 'Vis eller skjul signaturforklaringen') }, icon('tag', 14), t('Legend', 'Forklaring'))),
@@ -190,6 +248,7 @@
     const sync = () => {
       const st = C().stamp(), tl = C().tool();
       tools.forEach((b) => b.classList.toggle('on', !!tl && tl.type === b.dataset.tool));
+      finish.hidden = !(tl && tl.type === 'run' && tl.pts.length > 1);
       tools[2].lastChild.textContent = t('Scale', 'Målestok') + (store.doc.sc ? ' ✓' : '');
       bar.hidden = !store.doc.ci; size.value = store.doc.ms || 34; rm.hidden = !C().hasPlan(); legend.classList.toggle('on', C().hasLegend());
       plan.lastChild.textContent = C().hasPlan() ? t('Replace plan', 'Udskift plan') : t('Floor plan', 'Plantegning');
@@ -346,6 +405,12 @@
           HP.config.feedbackUrl && h('a.btn', { href: HP.config.feedbackUrl, target: '_blank', rel: 'noopener' }, t('Send feedback', 'Send feedback')),
           HP.config.supportPhone && h('span.muted', null, t('Urgent support: ', 'Akut support: ') + 'Tlf. ' + HP.config.supportPhone)),
         h('.note-box', null, icon('warn', 15), (HP.priceSyncText() ? HP.priceSyncText() + '. ' : '') + t('Prices are not updated in real time. Never rely on the price list alone; check the till system.', 'Priser opdateres ikke i realtid. Stol aldrig kun på prislisten; tjek kassesystemet.')),
+        matchMedia('(pointer: coarse)').matches && h('div', null, h('h3', null, t('Touch screen (phone and iPad)', 'Touchskærm (telefon og iPad)')), h('ul', null,
+          li(t('Products button (top left) opens the product list. Tap a product to add it; hold it, then drag, to place it exactly.', 'Knappen Produkter (øverst til venstre) åbner produktlisten. Tryk på et produkt for at tilføje det; hold på det og træk for at placere det præcist.')),
+          li(t('One finger on empty canvas moves around. Two fingers pinch to zoom and move.', 'Én finger på tomt lærred flytter rundt. To fingre knibes for at zoome og flytte.')),
+          li(t('Hold a product, cable or empty spot to open the menu (the right-click menu on a computer). Hold on empty canvas and drag to select several things.', 'Hold på et produkt, et kabel eller et tomt sted for at åbne menuen (højrekliksmenuen på en computer). Hold på tomt lærred og træk for at markere flere ting.')),
+          li(t('Cables: tap an output dot, then an input dot. Zoom in first so the dots are easy to hit.', 'Kabler: tryk på en udgangsprik og derefter en indgangsprik. Zoom ind først, så prikkerne er nemme at ramme.')),
+          li(t('On a phone, the ⋯ button holds everything that does not fit in the top bar.', 'På en telefon findes alt det, der ikke er plads til i topbjælken, under knappen ⋯.')))),
         h('.cols', null,
           h('div', null, h('h3', null, t('Build a system', 'Byg et system')), h('ul', null,
             li(t('Drag a product from the list onto the canvas, or click it to add it in the middle.', 'Træk et produkt fra listen ind på lærredet, eller klik for at tilføje det i midten.')),
@@ -514,13 +579,28 @@
     const zoomAt = (cx, cy, nz) => { nz = HP.clamp(nz, 1, 8); const r = stage.getBoundingClientRect(), px = cx - r.left - r.width / 2, py = cy - r.top - r.height / 2; x = px - ((px - x) * nz) / z; y = py - ((py - y) * nz) / z; z = nz; if (z === 1) { x = 0; y = 0; } apply(); };
     stage.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, z * Math.exp(-e.deltaY * 0.002)); }, { passive: false });
     stage.addEventListener('dblclick', (e) => zoomAt(e.clientX, e.clientY, z > 1.5 ? 1 : 3));
+    // one pointer drags, two fingers pinch; double-tap toggles zoom
+    const pts = new Map(); let pinch = null, lastTap = 0;
+    const mid = () => { const [a, b] = [...pts.values()]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2, d: Math.hypot(a.x - b.x, a.y - b.y) || 1 }; };
     stage.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return; e.preventDefault(); stage.setPointerCapture(e.pointerId); stage.classList.add('grab');
-      const sx = e.clientX - x, sy = e.clientY - y;
-      const mv = (ev) => { x = ev.clientX - sx; y = ev.clientY - sy; apply(); };
-      const up = () => { stage.removeEventListener('pointermove', mv); stage.removeEventListener('pointerup', up); stage.classList.remove('grab'); };
-      stage.addEventListener('pointermove', mv); stage.addEventListener('pointerup', up);
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY, sx: e.clientX - x, sy: e.clientY - y });
+      if (pts.size === 2) { const m = mid(); pinch = { x: m.x, y: m.y, d: m.d }; }
+      if (e.pointerType === 'touch' && pts.size === 1) { const now = Date.now(); if (now - lastTap < 300) zoomAt(e.clientX, e.clientY, z > 1.5 ? 1 : 3); lastTap = now; }
     });
+    stage.addEventListener('pointermove', (e) => {
+      const p = pts.get(e.pointerId); if (!p) return;
+      p.x = e.clientX; p.y = e.clientY;
+      if (pinch && pts.size === 2) { const m = mid(); zoomAt(pinch.x, pinch.y, z * (m.d / pinch.d)); x += m.x - pinch.x; y += m.y - pinch.y; apply(); pinch = { x: m.x, y: m.y, d: m.d }; }
+      else if (!pinch && pts.size === 1) { x = e.clientX - p.sx; y = e.clientY - p.sy; apply(); }
+    });
+    const lift = (e) => {
+      if (!pts.delete(e.pointerId)) return;
+      if (pts.size < 2) pinch = null;
+      pts.forEach((p) => { p.sx = p.x - x; p.sy = p.y - y; }); // the finger left behind continues from here
+      if (!pts.size) stage.classList.remove('grab');
+    };
+    stage.addEventListener('pointerup', lift); stage.addEventListener('pointercancel', lift);
     const tabs = imgs.map((u, i) => h('button', { onclick: () => show(i) }, i ? t('Back', 'Bagside') : t('Front', 'Forside')));
     const close = () => { ov.remove(); document.removeEventListener('keydown', key, true); };
     const key = (e) => {
@@ -534,7 +614,7 @@
         h('button.icon-btn', { title: t('Zoom in (+)', 'Zoom ind (+)'), onclick: () => zoomAt(innerWidth / 2, innerHeight / 2, z * 1.4) }, icon('plus')),
         h('button.icon-btn', { title: t('Reset (0)', 'Nulstil (0)'), onclick: reset }, icon('fit')),
         h('button.icon-btn', { title: t('Close (Esc)', 'Luk (Esc)'), onclick: close }, icon('x'))),
-      stage, h('.vhint', null, t('Scroll or double-click to zoom · drag to move · B flips front/back · Esc closes', 'Scroll eller dobbeltklik for at zoome · træk for at flytte · B vender for/bag · Esc lukker')));
+      stage, h('.vhint', null, matchMedia('(pointer: coarse)').matches ? t('Pinch to zoom · double-tap · drag to move', 'Knib for at zoome · dobbelttryk · træk for at flytte') : t('Scroll or double-click to zoom · drag to move · B flips front/back · Esc closes', 'Scroll eller dobbeltklik for at zoome · træk for at flytte · B vender for/bag · Esc lukker')));
     document.body.append(ov); document.addEventListener('keydown', key, true);
     show(f);
   };

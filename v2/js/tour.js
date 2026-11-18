@@ -36,13 +36,18 @@
     let i = 0;
     const spot = h('.tour-spot'), tip = h('.tour-tip'), layer = h('.tour', null, spot, tip);
     document.body.append(layer);
-    const end = () => { layer.remove(); window.removeEventListener('resize', show); document.removeEventListener('keydown', key, true); HP.LS.set('toured', true); };
+    const end = () => { if (HP.panels.drawer && matchMedia('(max-width: 1024px)').matches) HP.panels.drawer(false); layer.remove(); window.removeEventListener('resize', show); document.removeEventListener('keydown', key, true); HP.LS.set('toured', true); };
     const key = (e) => { if (e.key === 'Escape') end(); else if (e.key === 'ArrowRight' || e.key === 'Enter') go(1); else if (e.key === 'ArrowLeft') go(-1); else return; e.stopPropagation(); e.preventDefault(); };
     const go = (d) => { i += d; if (i >= list.length) return end(); i = Math.max(0, i); show(); };
     function show() {
       const s = list[i];
+      // small screens: open the product drawer for the sidebar steps, and point at "More" for top-bar buttons that are tucked away there
+      const narrow = matchMedia('(max-width: 1024px)').matches, inSide = !!(s.sel && /^#(sb-|sidebar|tab-shortcuts)/.test(s.sel));
+      if (narrow && HP.panels.drawer && document.body.classList.contains('drawer-open') !== inSide) { HP.panels.drawer(inSide); return setTimeout(show, 260); } // wait for the slide
       s.before && s.before();
-      const target = s.sel && [...document.querySelectorAll(s.sel)].find((e) => e.getClientRects().length && !e.closest('[hidden]'));
+      const visible = (e) => { if (!e.getClientRects().length || e.closest('[hidden]')) return false; const b = e.getBoundingClientRect(); return b.width > 0 && b.right > 0 && b.left < innerWidth; };
+      let target = s.sel && [...document.querySelectorAll(s.sel)].find(visible);
+      if (!target && narrow && s.sel && s.sel.startsWith('#tb-')) target = document.getElementById('tb-more');
       const r = target ? target.getBoundingClientRect() : null, pad = 6;
       if (r) Object.assign(spot.style, { display: 'block', left: r.left - pad + 'px', top: r.top - pad + 'px', width: r.width + pad * 2 + 'px', height: r.height + pad * 2 + 'px' });
       else Object.assign(spot.style, { display: 'block', left: '50%', top: '50%', width: '0px', height: '0px' });
