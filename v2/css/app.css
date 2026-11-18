@@ -499,3 +499,8 @@ html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
   #selbar { max-width: calc(100vw - 12px); overflow-x: auto; scrollbar-width: none; } #selbar button { flex: none; }
   .modal-back { grid-template-columns: minmax(0, 1fr); } .modal { min-width: 0; } .modal .row { flex-wrap: wrap; }
 }
+/* ---------- v3.1: items left out of the price list ---------- */
+.np-tag { align-self: flex-start; margin-top: 4px; font: 600 8.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px dashed var(--muted); padding: 1px 4px; white-space: nowrap; }
+.mark.np { opacity: .5; } .mark.np svg { outline: 1.5px dashed #57606a; outline-offset: 2px; border-radius: 50%; }
+@media print { .mark.np { opacity: 1; } .mark.np svg { outline: 0; } }
+#selbar button.off { opacity: .8; } #selbar button.off .ic { opacity: .5; }
