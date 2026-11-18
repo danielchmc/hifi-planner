@@ -45,6 +45,14 @@ The admin code only hides the admin tools; it is visible in the page source like
 
 Login is two steps: the shop number (from `data/config.js`), then the seller's own number (5–7 digits). The first time a shop is used on a PC, staff enter the shop's name, email and phone; the first time a seller number is used, its owner enters their name. Both are stored in that browser only. The A4 footer prints the shop's details and "Your adviser: <seller name>". The top bar shows the signed-in seller; click it to switch. Sellers already used on the PC are listed for one-click login and can be removed there.
 
+## Shortcuts
+
+An admin saves the canvas (or the selection) as a Shortcut; Publish shares it with all shops. A Shortcut keeps everything on the canvas except the floor plan image: product cards (colour, front/back, left out of the price list), text boxes, marks with their letters, symbols, rooms, cable runs with their cable, the legend, the price list and the connections. It also keeps the drawing's settings: card size, CI mode, mark size, scale, A4 orientation and pages (`s` in the template).
+
+- **On an empty canvas** (or one with only a floor plan) a click puts everything back exactly where it was on the page and applies the settings. A scale already set for the floor plan is kept, and so is the orientation of a page that has a floor plan.
+- **On a drawing in progress** the Shortcut only adds its items, at the drop point or in the middle, and the drawing keeps its own settings. A second legend or price list is not added.
+- Shortcuts saved before this change contain only products, text and connections and still work.
+
 ## CI mode: marks on a floor plan
 
 CI mode is for custom-install proposals. Upload a floor plan (JPG/PNG); on landscape pages it leaves a column free on the right for the legend.

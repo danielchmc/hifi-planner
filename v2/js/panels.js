@@ -110,11 +110,13 @@
       if (HP.isAdmin()) scList.append(h('button.btn.block', { onclick: () => HP.editor.saveShortcut() }, icon('plus', 14), t('Save canvas / selection as Shortcut', 'Gem lærred / markering som genvej')));
       if (!cat.templates.length) scList.append(h('.empty', null, t('No Shortcuts yet. An admin can save a system from the canvas as a Shortcut.', 'Ingen genveje endnu. En admin kan gemme et system fra lærredet som genvej.')));
       cat.templates.forEach((tp) => {
-        const prods = tp.items.filter((i) => i.kind === 'product').map((i) => cat.get(i.pid)).filter(Boolean);
+        const ids = [...new Set(tp.items.map((i) => (i.kind === 'product' ? i.pid : i.kind === 'mark' && i.k[0] !== '@' ? i.k : null)).filter(Boolean))];
+        const prods = ids.map((id) => cat.get(id)).filter(Boolean), nMarks = tp.items.filter((i) => i.kind === 'mark').length, nRooms = tp.items.filter((i) => i.kind === 'zone').length;
         const card = h('.sc', null,
           h('.sc-thumbs', null, prods.slice(0, 4).map((p) => HP.imgEl((p.img || [])[0] || '', 'thumb'))),
           h('.sc-name', null, tp.name), tp.desc && h('.sc-desc', null, tp.desc),
-          h('.sc-meta', null, prods.length + ' ' + t('products', 'produkter') + ' · ' + (tp.conns || []).length + ' ' + t('connections', 'forbindelser')),
+          h('.sc-meta', null, [prods.length + ' ' + t('products', 'produkter'), (tp.conns || []).length && (tp.conns || []).length + ' ' + t('connections', 'forbindelser'),
+            nMarks && nMarks + ' ' + t('marks', 'mærker'), nRooms && nRooms + ' ' + t(nRooms === 1 ? 'room' : 'rooms', 'rum'), tp.s && tp.s.ci && 'CI'].filter(Boolean).join(' · ')),
           HP.isAdmin() && h('.sc-admin', null,
             h('button.icon-btn', { title: t('Rename', 'Omdøb'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.editor.saveShortcut(tp) }, icon('edit', 14)),
             h('button.icon-btn', { title: t('Delete', 'Slet'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.confirm(t('Delete Shortcut "' + tp.name + '"?', 'Slet genvejen "' + tp.name + '"?'), t('Delete', 'Slet'), () => cat.removeTemplate(tp.id)) }, icon('trash', 14))));

@@ -943,22 +943,48 @@
   }
 
   /* ---- templates (Shortcuts) ---- */
+  // everything on the canvas except the floor plan image (customer-specific and large), plus the drawing's settings
+  const SHORTCUT_KINDS = ['product', 'text', 'mark', 'zone', 'run', 'legend', 'prices'];
+  const extent = (i) => [i.x + (i.w || (i.kind === 'run' ? Math.max(0, ...i.pts.map((p) => p[0])) : i.kind === 'mark' ? store.doc.ms || 34 : 220)),
+    i.y + (i.h || (i.kind === 'run' ? Math.max(0, ...i.pts.map((p) => p[1])) : i.kind === 'mark' ? store.doc.ms || 34 : 200))];
   C.capture = () => {
     const d = store.doc, pick = store.sel.size ? d.items.filter((i) => store.sel.has(i.id)) : d.items;
-    const items = pick.filter((i) => i.kind === 'product' || i.kind === 'text' || i.kind === 'mark').map((i) => JSON.parse(JSON.stringify(i)));
+    const items = pick.filter((i) => SHORTCUT_KINDS.includes(i.kind)).map((i) => JSON.parse(JSON.stringify(i)));
     if (!items.length) return null;
     const x0 = Math.min(...items.map((i) => i.x)), y0 = Math.min(...items.map((i) => i.y)), ids = new Set(items.map((i) => i.id));
     items.forEach((i) => { i.x -= x0; i.y -= y0; });
-    return { items, conns: d.conns.filter((c) => ids.has(c.a.item) && ids.has(c.b.item)).map((c) => JSON.parse(JSON.stringify(c))) };
+    const keys = new Set(items.filter((i) => i.kind === 'mark').map((i) => i.k));
+    const s = { x0, y0, cardScale: d.cardScale || 1, ci: !!d.ci, ms: d.ms || 34, sc: d.sc || 0, orient: d.orient || 'landscape', pages: d.pages || 1, mk: (d.mk || []).filter((k) => keys.has(k)) };
+    return { items, conns: d.conns.filter((c) => ids.has(c.a.item) && ids.has(c.b.item)).map((c) => JSON.parse(JSON.stringify(c))), s };
   };
   C.insertTemplate = (tpl, cx, cy) => {
-    const d = store.doc, map = {}, at = cx == null ? centerWorld() : toWorld(cx, cy);
-    const w = Math.max(...tpl.items.map((i) => i.x)) + 220, hh = Math.max(...tpl.items.map((i) => i.y)) + 200;
-    const gone = (i) => (i.kind === 'product' && !cat.get(i.pid)) || (i.kind === 'mark' && i.k[0] !== '@' && !cat.get(i.k));
-    const missing = tpl.items.filter(gone).length;
-    tpl.items.forEach((i) => { if (gone(i)) return; const n = JSON.parse(JSON.stringify(i)); n.id = map[i.id] = HP.uid(); n.x = snap(at.x - w / 2 + i.x); n.y = snap(at.y - hh / 2 + i.y); d.items.push(n); });
+    const d = store.doc, map = {}, S = tpl.s || {};
+    const hasPlan = d.items.some((i) => i.kind === 'plan'), empty = !d.items.some((i) => i.kind !== 'plan');
+    // an empty canvas takes the Shortcut's settings; a drawing in progress keeps its own
+    if (empty && tpl.s) {
+      d.cardScale = S.cardScale || 1; d.ms = S.ms || 34; d.ci = !!S.ci || hasPlan;
+      if (!d.sc && S.sc) d.sc = S.sc;                                   // the scale belongs to the floor plan: never overwrite one already set
+      if (!hasPlan) { d.orient = S.orient || d.orient; d.pages = Math.max(d.pages || 1, S.pages || 1); }
+      geom.clear();
+    }
+    const gone = (i) => (i.kind === 'product' && !cat.get(i.pid)) || (i.kind === 'mark' && i.k[0] !== '@' && !cat.get(i.k))
+      || ((i.kind === 'legend' || i.kind === 'prices') && d.items.some((x) => x.kind === i.kind)); // only one legend and one price list
+    const missing = tpl.items.filter((i) => (i.kind === 'product' && !cat.get(i.pid)) || (i.kind === 'mark' && i.k[0] !== '@' && !cat.get(i.k))).length;
+    const ext = tpl.items.map(extent), w = Math.max(...ext.map((e) => e[0])), hh = Math.max(...ext.map((e) => e[1]));
+    // on an empty canvas a click puts things back where they were on the page; a drop puts them under the pointer
+    const exact = cx == null && empty && S.x0 != null, at = cx == null ? centerWorld() : toWorld(cx, cy);
+    const ox = exact ? S.x0 : at.x - w / 2, oy = exact ? S.y0 : at.y - hh / 2;
+    tpl.items.forEach((i) => {
+      if (gone(i)) return;
+      const n = JSON.parse(JSON.stringify(i)); n.id = map[i.id] = HP.uid();
+      const sn = exact ? (v) => Math.round(v * 10) / 10 : n.kind === 'mark' || n.kind === 'run' ? snap5 : snap; n.x = sn(ox + i.x); n.y = sn(oy + i.y); // exact: back where it was
+      if (n.kind === 'run' && n.cable && !cat.get(n.cable)) n.cable = null;
+      d.items.push(n);
+    });
     (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0 }); });
-    normMarks(); store.sel = new Set(Object.values(map)); store.selConn = null; store.commit();
+    d.mk = (d.mk || []).concat((S.mk || []).filter((k) => !(d.mk || []).includes(k))); // keep the Shortcut's letters (A, B, C…) where possible
+    normMarks(); store.sel = new Set(Object.values(map).filter((id) => store.item(id))); store.selConn = null; store.commit();
+    if (exact) C.fit();
     if (missing) HP.toast(t(missing + ' product(s) in this Shortcut no longer exist and were skipped.', missing + ' produkt(er) i genvejen findes ikke længere og blev sprunget over.'), { kind: 'warn' });
   };
 

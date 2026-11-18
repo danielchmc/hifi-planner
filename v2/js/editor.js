@@ -227,7 +227,7 @@
     const desc = h('input', { value: existing ? existing.desc || '' : '', placeholder: t('Short description (optional)', 'Kort beskrivelse (valgfri)') });
     const close = HP.modal({ title: existing ? t('Edit Shortcut', 'Redigér genvej') : t('Save as Shortcut', 'Gem som genvej'), size: 'sm',
       body: [h('label.field', null, h('span', null, t('Name', 'Navn')), name), h('label.field', null, h('span', null, t('Description', 'Beskrivelse')), desc),
-        !existing && h('p.muted', null, (store.sel.size ? t('Uses the selected items: ', 'Bruger de markerede elementer: ') : t('Uses the whole canvas: ', 'Bruger hele lærredet: ')) + snap.items.length + ' ' + t('items', 'elementer') + ', ' + snap.conns.length + ' ' + t('connections', 'forbindelser') + '.')],
+        !existing && h('p.muted', null, (store.sel.size ? t('Uses the selected items: ', 'Bruger de markerede elementer: ') : t('Uses the whole canvas: ', 'Bruger hele lærredet: ')) + snap.items.length + ' ' + t('items', 'elementer') + ', ' + snap.conns.length + ' ' + t('connections', 'forbindelser') + '. ' + t('Card size, CI mode, mark size, scale and A4 layout are saved too; the floor plan image is not', 'Kortstørrelse, CI-tilstand, mærkestørrelse, målestok og A4-opsætning gemmes også; selve plantegningen gemmes ikke') + '.')],
       foot: [h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), h('button.btn.primary', { onclick: () => {
         if (!name.value.trim()) return name.focus();
         cat.putTemplate(Object.assign({}, existing || { id: 'sc-' + HP.uid() }, snap || {}, { name: name.value.trim(), desc: desc.value.trim() }));
