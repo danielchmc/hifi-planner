@@ -55,7 +55,7 @@ An admin saves the canvas (or the selection) as a Shortcut; Publish shares it wi
 
 ## CI mode: marks on a floor plan
 
-CI mode is for custom-install proposals. Upload a floor plan (JPG/PNG); on landscape pages it leaves a column free on the right for the legend.
+CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, or drop the file on the canvas); on landscape pages it leaves a column free on the right for the legend. A PDF is drawn to an image with the bundled pdf.js (`vendor/pdfjs`, Mozilla, Apache-2.0), which is loaded only when a PDF is opened; a PDF with several pages shows the pages so the seller can pick the floor plan. PDFs work in the online version, not when the planner is opened as a local file (browsers block it there).
 
 - **Marks.** With CI mode on, clicking a product in the list arms it: every click on the canvas places one mark, Esc or right-click stops (dragging a product onto the plan places a single mark). Each product gets one letter (A, B, C…) and colour; the shape shows the kind of product: circle = ceiling speaker, square = wall speaker, triangle = subwoofer, hexagon = other/outdoor speaker, diamond = electronics. Marks have one size for the whole proposal (slider in the CI bar) and move on a 5 px grid.
 - **Symbols.** The CI bar has generic symbols that are not products: rack, router, TV, listening position, volume control, cable outlet.
@@ -66,6 +66,12 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG/PNG); on lands
 - **Scale.** "Scale": click the two ends of something with a known length (a wall, a door) and type the length in metres. The legend then shows a scale bar.
 - **Cable runs.** "Cable": click along the route (points snap to the centre of marks), double-click or Enter to finish; the tool stays on for the next run. Each run shows its length once the scale is set. Select a run and choose "Cable" to pick speaker cable sold by the metre; the next runs get the same cable. Metres are summed per cable type, rounded up to whole metres; the legend shows the metres and the price list the cable. Runs cannot be reshaped afterwards: delete and redraw.
 - **Data.** Rooms are `{ kind: 'zone', x, y, w, h, name }`, cable runs `{ kind: 'run', x, y, pts, cable }`, and `doc.sc` is the scale in canvas units per metre. Marks are items `{ kind: 'mark', k: <product id or '@symbol'> }`, the legend is `{ kind: 'legend' }`, `doc.mk` keeps the letter order and `doc.ms` the mark size (document version 3). Older CI drawings, where products were thumbnails, are converted to marks when opened.
+
+## Mouse controls
+
+- Left-drag on empty canvas: selection box (Shift or Ctrl adds to the selection). A click on empty canvas deselects.
+- Right-drag or middle-drag (also starting on a card): pan. Right-click without moving: the menu. Space + left-drag: pan. Scroll wheel: zoom.
+- Left-drag on a card, note, mark or wire: move it.
 
 ## Phones and tablets
 

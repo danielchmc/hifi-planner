@@ -440,7 +440,7 @@
   /* ================= pointer interactions ================= */
   /* One pointer drag. Touch: a larger dead zone, an optional long-press (onLong, fired after ~0.5 s without moving),
      and a second finger aborts it (pinch-zoom takes over; onEnd gets aborted = true). */
-  let curDrag = null, lastTouch = 0;
+  let curDrag = null, lastTouch = 0, lastRight = 0;
   function drag(e, onMove, onEnd, onLong) {
     const sx = e.clientX, sy = e.clientY, touch = e.pointerType === 'touch' || e.pointerType === 'pen', thr = touch ? 9 : 4;
     let moved = false, last = e, timer = 0;
@@ -472,8 +472,8 @@
       (ev, moved) => { vp.classList.remove('panning'); if (!moved && clickClears && (store.sel.size || store.selConn)) { store.sel.clear(); store.selConn = null; refreshSel(); } },
       clickClears ? (ev) => { vp.classList.remove('panning'); store.sel.clear(); store.selConn = null; refreshSel(); startMarquee(ev, (up) => longMenu(ev, up)); } : null);
   }
-  function startMarquee(e, onTap) {
-    const r = vp.getBoundingClientRect(), a = toWorld(e.clientX, e.clientY), base = new Set(store.sel);
+  function startMarquee(e, onTap, fresh) { // fresh: replace the selection (plain drag); otherwise add to it (Shift/Ctrl)
+    const r = vp.getBoundingClientRect(), a = toWorld(e.clientX, e.clientY), base = fresh ? new Set() : new Set(store.sel);
     if (onTap) vp.classList.add('selecting');
     drag(e, (ev) => {
       const b = toWorld(ev.clientX, ev.clientY), x0 = Math.min(a.x, b.x), y0 = Math.min(a.y, b.y), x1 = Math.max(a.x, b.x), y1 = Math.max(a.y, b.y);
@@ -481,7 +481,11 @@
       store.sel = new Set(base);
       store.doc.items.forEach((it) => { if (it.kind === 'plan' || it.kind === 'zone') return; const g = measure(it); if (it.x < x1 && it.x + g.w > x0 && it.y < y1 && it.y + g.h > y0) store.sel.add(it.id); });
       store.selConn = null; refreshSel();
-    }, (ev, moved, aborted) => { marqueeEl.style.display = 'none'; vp.classList.remove('selecting'); if (!moved && !aborted && onTap) onTap(ev); });
+    }, (ev, moved, aborted) => {
+      marqueeEl.style.display = 'none'; vp.classList.remove('selecting');
+      if (!moved && !aborted && onTap) onTap(ev);
+      else if (!moved && !aborted && fresh && (store.sel.size || store.selConn)) { store.sel.clear(); store.selConn = null; refreshSel(); } // a click on empty canvas deselects
+    });
   }
   function startItemDrag(e, it) {
     const add = e.shiftKey || e.ctrlKey || e.metaKey, was = store.sel.has(it.id), onImg = !!e.target.closest('.card-img');
@@ -568,9 +572,17 @@
   }
   C.connect = (aItem, aKey, bItem, bKey) => { store.doc.conns.push({ id: HP.uid(), a: { item: aItem, key: aKey }, b: { item: bItem, key: bKey }, cable: null, shift: 0 }); };
 
+  /* Mouse: left-drag on empty canvas = selection box (Shift/Ctrl adds), middle- or right-drag = pan,
+     right-click without moving = menu, Space + left-drag = pan. Touch: one finger pans, long-press selects (see drag()). */
   function onDown(e) {
+    const mouse = e.pointerType === 'mouse';
+    if (e.button === 2 && mouse) {
+      if (e.target.closest('input, textarea, [contenteditable="true"]:focus')) return; // the browser's own menu (spelling, paste)
+      e.preventDefault(); lastRight = Date.now(); return startRightPan(e);
+    }
     if (e.button === 1 || (e.button === 0 && spaceDown)) { e.preventDefault(); return startPan(e, false); }
     if (e.button !== 0) return;
+    if (mouse && e.ctrlKey && /Mac/.test(navigator.platform)) return; // Ctrl-click on a Mac is a right-click: the contextmenu event opens the menu
     const portEl = e.target.closest('.port');
     if (wiring && wiring.sticky) { e.preventDefault(); return portEl ? finishWire(portEl) : cancelWire(); }
     const sw = e.target.closest('[data-var]');
@@ -613,8 +625,14 @@
       if (it && !(it.kind === 'plan' && it.lock)) return startItemDrag(e, it);
       if (it && it.kind === 'plan' && e.altKey) return C.select([it.id]);
     }
-    if (e.shiftKey) return startMarquee(e);
+    if (mouse || e.pointerType === 'pen') return startMarquee(e, null, !(e.shiftKey || e.ctrlKey || e.metaKey));
     startPan(e, true);
+  }
+  // right button: drag = pan, release without moving = the menu
+  function startRightPan(e) {
+    const x0 = view.x, y0 = view.y;
+    drag(e, (ev, dx, dy) => { vp.classList.add('panning'); view.x = x0 + dx; view.y = y0 + dy; applyView(); },
+      (ev, moved) => { vp.classList.remove('panning'); lastRight = Date.now(); if (!moved) onContext({ clientX: ev.clientX, clientY: ev.clientY, target: e.target, preventDefault() {}, fromPointer: true }); });
   }
 
   /* ================= operations ================= */
@@ -871,6 +889,7 @@
   /* ---- right-click menu ---- */
   function onContext(e) {
     e.preventDefault();
+    if (!e.fromPointer && !e.fromTouch && Date.now() - lastRight < 1500) return; // the browser's contextmenu after a right press: already handled on release
     if (!e.fromTouch && Date.now() - lastTouch < 1200) return; // Android fires its own contextmenu on long-press: the touch handler already opened ours
     if (tool) { if (tool.type === 'run' && tool.pts.length > 1) finishRun(); return C.stopTool(); } // right-click ends the tool (and finishes the run being drawn)
     if (stamp) return C.stopStamp(); // right-click ends placing
@@ -991,24 +1010,74 @@
 
   /* ---- CI mode + floor plan ---- */
   C.setCI = (on) => { store.doc.ci = on; if (!on) { C.stopStamp(); C.stopTool(); } store.commit(); };
+  /* floor plan from an image (JPG/PNG) or a PDF (one page, rendered to an image with the bundled pdf.js) */
+  const isPdf = (f) => f.type === 'application/pdf' || /\.pdf$/i.test(f.name || '');
   C.loadPlan = (file) => {
-    if (!file || !/^image\//.test(file.type)) return HP.toast(t('Pick a JPG or PNG image.', 'Vælg et JPG- eller PNG-billede.'), { kind: 'warn' });
+    if (!file) return;
+    if (isPdf(file)) return loadPdfPlan(file);
+    if (!/^image\//.test(file.type)) return HP.toast(t('Pick a JPG, PNG or PDF file.', 'Vælg en JPG-, PNG- eller PDF-fil.'), { kind: 'warn' });
     const fr = new FileReader();
     fr.onload = () => { const im = new Image(); im.onload = () => {
       const k = Math.min(1, 2200 / Math.max(im.width, im.height)), cv = document.createElement('canvas');
       cv.width = Math.round(im.width * k); cv.height = Math.round(im.height * k);
       const g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height); g.drawImage(im, 0, 0, cv.width, cv.height);
-      store.planSrc = cv.toDataURL('image/jpeg', 0.85); store.savePlan();
-      const d = store.doc, s = pageSize(), m = 40, col = s.w > s.h ? 370 : 0; // landscape: keep a column free on the right for the legend
-      const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 40) / cv.height);
-      d.items = d.items.filter((i) => i.kind !== 'plan');
-      d.items.unshift({ id: HP.uid(), kind: 'plan', x: snap((s.w - col - cv.width * f) / 2), y: snap((s.h - 40 - cv.height * f) / 2), w: Math.round(cv.width * f), h: Math.round(cv.height * f), lock: true });
-      if (!d.ci) d.ci = true;
-      geom.clear(); store.commit(); C.fit();
-      HP.toast(t('Floor plan added and CI mode switched on. Click a product to place marks. Alt-click the plan to move or resize it.', 'Plantegning tilføjet, og CI-tilstand er slået til. Klik på et produkt for at placere mærker. Alt-klik på planen for at flytte eller skalere den.'), { ms: 8000 });
+      usePlan(cv);
     }; im.src = fr.result; };
     fr.readAsDataURL(file);
   };
+  function usePlan(cv) {
+    store.planSrc = cv.toDataURL('image/jpeg', 0.85); store.savePlan();
+    const d = store.doc, s = pageSize(), m = 40, col = s.w > s.h ? 370 : 0; // landscape: keep a column free on the right for the legend
+    const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 40) / cv.height);
+    d.items = d.items.filter((i) => i.kind !== 'plan');
+    d.items.unshift({ id: HP.uid(), kind: 'plan', x: snap((s.w - col - cv.width * f) / 2), y: snap((s.h - 40 - cv.height * f) / 2), w: Math.round(cv.width * f), h: Math.round(cv.height * f), lock: true });
+    if (!d.ci) d.ci = true;
+    geom.clear(); store.commit(); C.fit();
+    HP.toast(t('Floor plan added and CI mode switched on. Click a product to place marks. Alt-click the plan to move or resize it.', 'Plantegning tilføjet, og CI-tilstand er slået til. Klik på et produkt for at placere mærker. Alt-klik på planen for at flytte eller skalere den.'), { ms: 8000 });
+  }
+  let pdfLib = null;
+  async function pdfjs() { // loaded the first time a PDF is opened (about 1.8 MB), never on normal page loads
+    if (!pdfLib) {
+      const base = new URL('vendor/pdfjs/', location.href).href;
+      pdfLib = await import(base + 'pdf.min.mjs');
+      pdfLib.GlobalWorkerOptions.workerSrc = base + 'pdf.worker.min.mjs';
+    }
+    return pdfLib;
+  }
+  const renderPage = async (page, longest) => {
+    const v1 = page.getViewport({ scale: 1 }), vp1 = page.getViewport({ scale: Math.min(6, longest / Math.max(v1.width, v1.height)) });
+    const cv = document.createElement('canvas'); cv.width = Math.round(vp1.width); cv.height = Math.round(vp1.height);
+    const g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height);
+    await page.render({ canvasContext: g, viewport: vp1 }).promise;
+    return cv;
+  };
+  // a PDF with several pages: show the pages and let the seller pick the floor plan
+  const pickPage = (pdf) => new Promise((resolve) => {
+    const n = Math.min(pdf.numPages, 24), grid = h('.pdf-pages');
+    const close = HP.modal({ title: t('Which page is the floor plan?', 'Hvilken side er plantegningen?'), size: 'lg', onClose: () => resolve(0),
+      body: [h('p.muted', null, t('The PDF has ' + pdf.numPages + ' pages. Click the floor plan.', 'PDF-filen har ' + pdf.numPages + ' sider. Klik på plantegningen.') + (pdf.numPages > n ? t(' The first ' + n + ' are shown.', ' De første ' + n + ' vises.') : '')), grid] });
+    for (let i = 1; i <= n; i++) {
+      const cell = h('button.pdf-page', { onclick: () => { resolve(i); close(); } }, h('span.muted', null, t('Page ', 'Side ') + i));
+      grid.append(cell);
+      pdf.getPage(i).then((pg) => renderPage(pg, 220)).then((cv) => cell.prepend(cv)).catch(() => {});
+    }
+  });
+  async function loadPdfPlan(file) {
+    if (location.protocol === 'file:') return HP.toast(t('PDF floor plans work in the online version (hifiplanner.dk), not when the planner is opened as a local file. Use a JPG or PNG here.', 'PDF-plantegninger virker i onlineversionen (hifiplanner.dk), ikke når planneren åbnes som en lokal fil. Brug JPG eller PNG her.'), { kind: 'warn', ms: 9000 });
+    const busy = HP.toast(t('Reading the PDF…', 'Læser PDF-filen…'), { ms: 60000 });
+    const done = () => { if (typeof busy === 'function') busy(); };
+    let pdf;
+    try { const lib = await pdfjs(); pdf = await lib.getDocument({ data: new Uint8Array(await file.arrayBuffer()) }).promise; }
+    catch (err) { done(); console.error(err); return HP.toast(err && err.name === 'PasswordException' ? t('This PDF is password protected.', 'Denne PDF er beskyttet med adgangskode.') : t('Could not read this PDF.', 'Kunne ikke læse denne PDF.'), { kind: 'warn' }); }
+    try {
+      let no = 1;
+      if (pdf.numPages > 1) { done(); no = await pickPage(pdf); if (!no) return; }
+      const cv = await renderPage(await pdf.getPage(no), 2600); // sharp enough for thin plan lines when zoomed in
+      done(); usePlan(cv);
+    } catch (err) { done(); console.error(err); HP.toast(t('Could not draw this PDF page.', 'Kunne ikke tegne denne PDF-side.'), { kind: 'warn' }); }
+    finally { try { (pdf.loadingTask || pdf).destroy(); } catch (e) { /* already closed */ } }
+  }
+
 
   /* ================= print ================= */
   C.print = () => {

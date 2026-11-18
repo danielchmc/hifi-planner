@@ -513,3 +513,8 @@ html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 /* ---------- v3.3: rooms in the price list ---------- */
 .prices .lsec { padding: 5px 10px 3px; font: 9px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--panel2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .prices table.rooms td.zn { font-weight: 600; white-space: nowrap; } .prices table.rooms td.zp { font: 10.5px var(--mono); white-space: nowrap; }
+/* ---------- v3.4: PDF page picker ---------- */
+.pdf-pages { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-top: 10px; }
+.pdf-page { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; min-height: 120px; justify-content: flex-end; }
+.pdf-page:hover { border-color: var(--accent); } .pdf-page canvas { max-width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
+@media (max-width: 1024px) { .modal.lg, .modal.md { max-width: calc(100vw - 20px); } }

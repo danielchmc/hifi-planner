@@ -104,6 +104,7 @@
       opts.action && h('button.link', { onclick: () => { opts.action.fn(); el.remove(); } }, opts.action.label));
     box.append(el);
     setTimeout(() => el.remove(), opts.ms || 4200);
+    return () => el.remove(); // close early
   };
 
   /* ---------- context menu ---------- */
