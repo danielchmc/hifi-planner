@@ -79,12 +79,12 @@
   }
   function legendRows() {
     const d = store.doc, n = {}, S = (d.ms || 34) / 2;
-    d.items.forEach((i) => { if (i.kind === 'mark') n[i.k] = (n[i.k] || 0) + 1; });
-    const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k], price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
+    d.items.forEach((i) => { if (i.kind === 'mark' && !i.np) n[i.k] = (n[i.k] || 0) + 1; });
+    const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k] || 0, price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
     // a mark belongs to the first zone that contains its centre
     const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', n: {}, total: 0 })), other = { name: null, n: {}, total: 0 };
     if (zs.length) d.items.forEach((i) => {
-      if (i.kind !== 'mark' || i.k[0] === '@') return;
+      if (i.kind !== 'mark' || i.np || i.k[0] === '@') return;
       const cx = i.x + S, cy = i.y + S, zi = zs.findIndex((z) => cx >= z.x && cx <= z.x + z.w && cy >= z.y && cy <= z.y + z.h), r = zi < 0 ? other : zr[zi], p = cat.get(i.k);
       r.n[i.k] = (r.n[i.k] || 0) + 1; r.total += p ? p.price || 0 : 0;
     });
@@ -130,9 +130,10 @@
       const r = rows.get(key) || { name: p.brand + ' ' + p.name + (pr.label ? ' (' + pr.label + ')' : ''), price: pr.price, was: pr.was, qty: 0, cable };
       r.qty++; rows.set(key, r);
     };
-    d.items.forEach((it) => it.kind === 'product' && add(cat.get(it.pid), false, it));
+    // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
+    d.items.forEach((it) => it.kind === 'product' && !it.np && add(cat.get(it.pid), false, it));
     const mc = {};
-    d.items.forEach((it) => { if (it.kind === 'mark' && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
+    d.items.forEach((it) => { if (it.kind === 'mark' && !it.np && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
     for (const pid in mc) { // a product placed as marks and also drawn as cards is the same hardware: count the larger number once
       const p = cat.get(pid); let have = 0;
       rows.forEach((r, key) => { if (key.startsWith(pid + '|')) have += r.qty; });
@@ -150,7 +151,9 @@
     if (it.kind === 'product') {
       const p = cat.get(it.pid);
       if (!p) return h('.card.missing', { style: { width: '210px' } }, h('.card-head', null, h('span.brand', null, t('Unknown product', 'Ukendt produkt')), h('span.name', null, it.pid)));
-      return buildCard(p, it);
+      const card = buildCard(p, it);
+      if (it.np) card.querySelector('.card-head').append(h('span.np-tag.no-print', { title: t('Not counted in the price list', 'Tælles ikke med i prislisten') }, t('Not priced', 'Ikke i pris')));
+      return card;
     }
     if (it.kind === 'text') {
       // Tab / Enter in the title jumps to the paragraph, Shift+Tab jumps back
@@ -204,7 +207,7 @@
         html: '<svg width="' + w + '" height="' + hh + '"><path class="hit" d="' + dd + '"/><path class="line" d="' + dd + '"/><circle cx="' + a[0] + '" cy="' + a[1] + '" r="3.5"/><circle cx="' + b[0] + '" cy="' + b[1] + '" r="3.5"/></svg>' },
         h('span.rl', { style: { left: mid[0] + 'px', top: mid[1] + 'px' } }, d.sc ? fmtM(runPx(it) / d.sc) : '? m'));
     }
-    if (it.kind === 'mark') { const S = d.ms || 34; return h('.mark', { style: { width: S + 'px', height: S + 'px' }, title: markTitle(it.k), html: markHtml(it.k) }); }
+    if (it.kind === 'mark') { const S = d.ms || 34; return h('.mark' + (it.np ? '.np' : ''), { style: { width: S + 'px', height: S + 'px' }, title: markTitle(it.k), html: markHtml(it.k) }); }
     if (it.kind === 'legend') {
       const { products, generic, total, zones, cables, sc } = legendRows();
       const bar = sc ? [5, 2, 1, 0.5].find((m) => m * sc <= 150) || 0.25 : 0;
@@ -213,7 +216,7 @@
           products.map((r) => h('tr', null, h('td.lm', null, h('span', { html: markHtml(r.k) })),
             h('td.li', null, r.p && (r.p.img || [])[0] ? HP.imgEl(r.p.img[0], 'thumb') : null),
             h('td', null, r.p ? [h('span.lb', null, r.p.brand), r.p.name, h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
-            h('td.q', null, r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk')),
+            h('td.q', null, r.qty ? r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk') : h('span.muted', null, t('not priced', 'ikke i pris'))),
             h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, r.price ? HP.money(r.price * r.qty) : ''))),
           generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 3 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
           : h('.muted', null, t('No marks yet. Switch on CI mode and click a product to place marks.', 'Ingen mærker endnu. Slå CI-tilstand til, og klik på et produkt for at placere mærker.')),
@@ -232,8 +235,8 @@
   }
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
-    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
-    if (it.kind === 'mark') return ['m', it.k, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
+    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, it.np, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
+    if (it.kind === 'mark') return ['m', it.k, it.np, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
     if (it.kind === 'zone') return ['z', it.w, it.h, it.name, d.items.filter((i) => i.kind === 'zone').indexOf(it), L].join('|');
     if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
     if (it.kind === 'legend') return 'l' + JSON.stringify(legendRows(), (k, v) => (k === 'p' ? (v ? v.id + v.name : 0) : v)) + cat.version + L;
@@ -416,6 +419,8 @@
         btn('layers', t('Select all ', 'Markér alle ') + letter(markIndex(one.k)), () => C.selectMarks(one.k)));
       if (one && one.kind === 'run') selbar.append(btn('cable', t('Cable', 'Kabel'), () => HP.panels.runCablePicker(one.id)));
       if (one && one.kind === 'plan') selbar.append(btn(one.lock ? 'move' : 'lock', one.lock ? t('Unlock to move', 'Lås op for at flytte') : t('Lock', 'Lås'), () => { one.lock = !one.lock; store.commit(); }), btn('trash', t('Remove floor plan', 'Fjern plantegning'), C.removePlan, '.danger'));
+      const pr = ids.map((id) => store.item(id)).filter(priceable);
+      if (pr.length) selbar.append(btn('tag', pr[0].np ? t('Not priced', 'Ikke i pris') : t('In price list', 'I prislisten'), C.togglePriced, pr[0].np ? '.off' : '.on'));
       if (!(one && (one.kind === 'prices' || one.kind === 'plan' || one.kind === 'legend'))) selbar.append(btn('copy', t('Duplicate', 'Dublér'), C.duplicateSelection));
       if (HP.isAdmin() && ids.some((id) => store.item(id).kind === 'product')) selbar.append(btn('bolt', t('Save as Shortcut', 'Gem som genvej'), () => HP.editor.saveShortcut()));
       if (!(one && one.kind === 'plan')) selbar.append(btn('trash', t('Delete', 'Slet'), C.deleteSelection, '.danger'));
@@ -807,6 +812,16 @@
   };
   C.stopStamp = (quiet) => { if (!stamp) return; stamp = null; ghost.remove(); ghost = null; vp.classList.remove('stamping'); if (!quiet) HP.emit('stamp'); };
 
+  // leave products or marks out of the price list (they stay on the drawing); acts on the whole selection
+  const priceable = (i) => i.kind === 'product' || (i.kind === 'mark' && i.k[0] !== '@');
+  C.togglePriced = () => {
+    const its = [...store.sel].map((id) => store.item(id)).filter((i) => i && priceable(i));
+    if (!its.length) return;
+    const leaveOut = !its[0].np;
+    its.forEach((i) => { if (leaveOut) i.np = 1; else delete i.np; });
+    store.commit();
+    HP.toast(leaveOut ? t('Left out of the price list', 'Udeladt af prislisten') + (its.length > 1 ? ' (' + its.length + ')' : '') : t('Counted in the price list again', 'Tælles med i prislisten igen'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
   C.selectAll = () => C.select(store.doc.items.filter((i) => i.kind !== 'plan').map((i) => i.id));
   C.nudge = (dx, dy) => { const g = [...store.sel].map(store.item).filter(Boolean); if (!g.length) return; g.forEach((i) => { i.x += dx; i.y += dy; }); store.commit(); };
 
@@ -900,6 +915,8 @@
         add(t('Remove floor plan', 'Fjern plantegning'), '', 'trash', C.removePlan, { danger: true });
       } else {
         add(t('Copy', 'Kopiér'), 'Ctrl+C', 'copy', C.copy);
+        { const pr = [...store.sel].map((id) => store.item(id)).filter((x) => x && priceable(x));
+          if (pr.length) add(t('Count in price list', 'Tæl med i prislisten'), '', 'tag', C.togglePriced, { on: !pr[0].np }); }
         add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && (one.kind === 'prices' || one.kind === 'legend') });
         add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
         add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
