@@ -225,35 +225,44 @@
   };
 
   /* ---------- CI bar (inside the viewport) ---------- */
+  /* CI mode: a second row of the top menu, shown while CI mode is on. Same buttons and groups as the top bar. */
   function buildCIBar() {
     const file = h('input', { type: 'file', accept: 'image/*', hidden: true, onchange: () => { C().loadPlan(file.files[0]); file.value = ''; } });
-    const size = h('input', { type: 'range', min: 18, max: 70, step: 2, title: t('Mark size', 'Mærkestørrelse'), oninput: () => C().setMarkSize(+size.value, false), onchange: () => C().setMarkSize(+size.value, true) });
+    const size = h('input', { type: 'range', min: 18, max: 70, step: 2, oninput: () => C().setMarkSize(+size.value, false), onchange: () => C().setMarkSize(+size.value, true) });
     const hint = h('span.ci-hint');
-    const syms = Object.keys(C().GENERIC).map((g) => h('button.symbtn', { data: { k: '@' + g }, title: t(C().GENERIC[g][0], C().GENERIC[g][1]), html: C().markHtml('@' + g), onclick: () => C().startStamp('@' + g) }));
-    let rm, plan, legend;
-    const tool = (type, ic, label, tip) => h('button.btn.sm', { data: { tool: type }, title: tip, onclick: () => C().startTool(type) }, icon(ic, 14), h('span', null, label));
-    const tools = [tool('zone', 'page', t('Room', 'Rum'), t('Draw a room: marks inside are grouped in the legend', 'Tegn et rum: mærker indeni grupperes i signaturforklaringen')),
-      tool('run', 'cable', t('Cable', 'Kabel'), t('Draw a cable run and get its length', 'Tegn et kabeltræk og få længden')),
-      tool('scale', 'scale', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'))];
-    const HINTS = { zone: [' Drag a rectangle around the room', 'Træk et rektangel rundt om rummet'], run: ['Click along the cable route · double-click or Enter to finish · Esc to stop', 'Klik langs kabelvejen · dobbeltklik eller Enter afslutter · Esc stopper'],
+    const tb = (cls, ic, label, tip, fn, data) => h('button.tbtn' + (cls || ''), { title: tip || label, onclick: fn, data }, ic && icon(ic, 15), label && h('span', null, label));
+    const syms = Object.keys(C().GENERIC).map((g) => h('button.tbtn.symbtn', { data: { k: '@' + g }, title: t(C().GENERIC[g][0], C().GENERIC[g][1]), html: C().markHtml('@' + g), onclick: () => C().startStamp('@' + g) }));
+    const tools = [
+      tb('', 'page', t('Room', 'Rum'), t('Draw a room: marks inside are grouped in the legend', 'Tegn et rum: mærker indeni grupperes i signaturforklaringen'), () => C().startTool('zone'), { tool: 'zone' }),
+      tb('', 'cable', t('Cable', 'Kabel'), t('Draw a cable run and get its length', 'Tegn et kabeltræk og få længden'), () => C().startTool('run'), { tool: 'run' }),
+      tb('', 'scale', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'), () => C().startTool('scale'), { tool: 'scale' })];
+    const HINTS = { zone: ['Drag a rectangle around the room', 'Træk et rektangel rundt om rummet'], run: ['Click along the cable route · double-click or Enter to finish · Esc to stop', 'Klik langs kabelvejen · dobbeltklik eller Enter afslutter · Esc stopper'],
       scale: ['Click the two ends of a wall or door you know the length of', 'Klik på de to ender af en væg eller dør, du kender længden på'] };
     const finish = h('button.btn.sm.primary', { hidden: true, onclick: () => C().finishRun() }, icon('check', 14), t('Finish run', 'Afslut træk'));
-    const bar = h('.cibar', { hidden: true }, h('b', null, 'CI'), hint, finish,
-      h('.symbar', { title: t('Symbols', 'Symboler') }, syms), tools,
-      h('label.ci-size', null, h('span.muted', null, t('Size', 'Størrelse')), size),
-      (legend = h('button.btn.sm', { onclick: () => C().toggleLegend(), title: t('Show or hide the legend', 'Vis eller skjul signaturforklaringen') }, icon('tag', 14), t('Legend', 'Forklaring'))),
-      (plan = h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), h('span'))),
-      (rm = h('button.btn.sm.danger', { onclick: () => C().removePlan(), title: t('Remove floor plan', 'Fjern plantegning') }, icon('trash', 14))),
-      h('button.btn.sm', { onclick: () => C().setCI(false) }, t('Exit', 'Afslut')), file);
+    const legend = tb('', 'tag', t('Legend', 'Forklaring'), t('Show or hide the legend', 'Vis eller skjul signaturforklaringen'), () => C().toggleLegend());
+    const plan = tb('', 'upload', t('Floor plan', 'Plantegning'), '', () => file.click());
+    const rm = tb('.danger', 'trash', '', t('Remove floor plan', 'Fjern plantegning'), () => C().removePlan());
+    const bar = h('#cibar.cibar', { hidden: true },
+      h('.ci-tag', { title: t('CI mode: marks on a floor plan', 'CI-tilstand: mærker på en plantegning') }, icon('plan', 15), h('span', null, 'CI')),
+      h('.tgroup.ci-syms', { title: t('Symbols', 'Symboler') }, syms),
+      h('.tgroup', null, tools),
+      h('label.tgroup.ci-size', { title: t('Mark size', 'Mærkestørrelse') }, h('span.ci-size-ic', { html: '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="15" r="3"/><circle cx="16" cy="11" r="6"/></svg>' }), size),
+      h('.tgroup', null, legend, plan, rm),
+      hint, finish,
+      h('.tgroup', null, tb('', 'x', t('Exit', 'Afslut'), t('Leave CI mode', 'Forlad CI-tilstand'), () => C().setCI(false))), file);
     const sync = () => {
-      const st = C().stamp(), tl = C().tool();
+      const st = C().stamp(), tl = C().tool(), on = !!store.doc.ci;
+      if (bar.hidden === on) { bar.hidden = !on; document.getElementById('main').classList.toggle('ci-on', on); }
       tools.forEach((b) => b.classList.toggle('on', !!tl && tl.type === b.dataset.tool));
-      finish.hidden = !(tl && tl.type === 'run' && tl.pts.length > 1);
       tools[2].lastChild.textContent = t('Scale', 'Målestok') + (store.doc.sc ? ' ✓' : '');
-      bar.hidden = !store.doc.ci; size.value = store.doc.ms || 34; rm.hidden = !C().hasPlan(); legend.classList.toggle('on', C().hasLegend());
+      tools[2].title = store.doc.sc ? t('Scale is set. Click to set it again.', 'Målestokken er sat. Klik for at sætte den igen.') : t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse');
+      finish.hidden = !(tl && tl.type === 'run' && tl.pts.length > 1);
+      size.value = store.doc.ms || 34; rm.hidden = !C().hasPlan(); legend.classList.toggle('on', C().hasLegend());
       plan.lastChild.textContent = C().hasPlan() ? t('Replace plan', 'Udskift plan') : t('Floor plan', 'Plantegning');
+      plan.title = plan.lastChild.textContent;
       hint.classList.toggle('active', !!st || !!tl);
-      hint.textContent = tl ? t(HINTS[tl.type][0].trim(), HINTS[tl.type][1]) : st ? t('Placing ', 'Placerer ') + C().markTitle(st.key) + t(' · click on the plan · Esc to stop', ' · klik på planen · Esc stopper') : t('Click a product or a symbol, then click on the plan', 'Klik på et produkt eller et symbol, og klik så på planen');
+      hint.textContent = tl ? t(HINTS[tl.type][0], HINTS[tl.type][1]) : st ? t('Placing ', 'Placerer ') + C().markTitle(st.key) + t(' · click on the plan · Esc to stop', ' · klik på planen · Esc stopper') : t('Click a product or a symbol, then click on the plan', 'Klik på et produkt eller et symbol, og klik så på planen');
+      hint.title = hint.textContent;
       syms.forEach((b) => b.classList.toggle('on', !!st && st.key === b.dataset.k));
     };
     HP.on('doc', sync); HP.on('stamp', sync); setTimeout(sync);
@@ -264,7 +273,7 @@
     const main = h('#main');
     root.append(buildTopbar(), h('#body', null, buildSidebar(), main));
     HP.canvas.init(main);
-    document.getElementById('viewport').append(buildCIBar());
+    main.prepend(buildCIBar()); // docked above the canvas
   };
 
   /* ---------- cable picker ---------- */
