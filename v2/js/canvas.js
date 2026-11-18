@@ -838,7 +838,7 @@
     if (cx == null && lastPtr) { cx = lastPtr.x; cy = lastPtr.y; }
     const r = vp.getBoundingClientRect();
     if (cx == null || cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) { cx = r.left + r.width / 2 + 30; cy = r.top + r.height / 2 + 30; }
-    C.insertTemplate(clip, cx, cy);
+    C.insertTemplate(Object.assign(clip, { paste: true }), cx, cy); // paste: under the pointer, no settings
   };
   C.order = (front) => {
     const d = store.doc, sel = d.items.filter((i) => store.sel.has(i.id) && i.kind !== 'plan'); if (!sel.length) return;
@@ -959,9 +959,10 @@
   };
   C.insertTemplate = (tpl, cx, cy) => {
     const d = store.doc, map = {}, S = tpl.s || {};
-    const hasPlan = d.items.some((i) => i.kind === 'plan'), empty = !d.items.some((i) => i.kind !== 'plan');
+    // "empty" = nothing drawn yet; a floor plan, legend or price list on its own does not count
+    const hasPlan = d.items.some((i) => i.kind === 'plan'), empty = !d.items.some((i) => !['plan', 'legend', 'prices'].includes(i.kind));
     // an empty canvas takes the Shortcut's settings; a drawing in progress keeps its own
-    if (empty && tpl.s) {
+    if (empty && tpl.s && !tpl.paste) {
       d.cardScale = S.cardScale || 1; d.ms = S.ms || 34; d.ci = !!S.ci || hasPlan;
       if (!d.sc && S.sc) d.sc = S.sc;                                   // the scale belongs to the floor plan: never overwrite one already set
       if (!hasPlan) { d.orient = S.orient || d.orient; d.pages = Math.max(d.pages || 1, S.pages || 1); }
@@ -971,8 +972,8 @@
       || ((i.kind === 'legend' || i.kind === 'prices') && d.items.some((x) => x.kind === i.kind)); // only one legend and one price list
     const missing = tpl.items.filter((i) => (i.kind === 'product' && !cat.get(i.pid)) || (i.kind === 'mark' && i.k[0] !== '@' && !cat.get(i.k))).length;
     const ext = tpl.items.map(extent), w = Math.max(...ext.map((e) => e[0])), hh = Math.max(...ext.map((e) => e[1]));
-    // on an empty canvas a click puts things back where they were on the page; a drop puts them under the pointer
-    const exact = cx == null && empty && S.x0 != null, at = cx == null ? centerWorld() : toWorld(cx, cy);
+    // on an empty canvas a Shortcut goes back exactly where it was on the page (click or drop); otherwise under the pointer / in the middle
+    const exact = empty && S.x0 != null && !tpl.paste, at = cx == null ? centerWorld() : toWorld(cx, cy);
     const ox = exact ? S.x0 : at.x - w / 2, oy = exact ? S.y0 : at.y - hh / 2;
     tpl.items.forEach((i) => {
       if (gone(i)) return;

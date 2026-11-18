@@ -49,9 +49,9 @@ Login is two steps: the shop number (from `data/config.js`), then the seller's o
 
 An admin saves the canvas (or the selection) as a Shortcut; Publish shares it with all shops. A Shortcut keeps everything on the canvas except the floor plan image: product cards (colour, front/back, left out of the price list), text boxes, marks with their letters, symbols, rooms, cable runs with their cable, the legend, the price list and the connections. It also keeps the drawing's settings: card size, CI mode, mark size, scale, A4 orientation and pages (`s` in the template).
 
-- **On an empty canvas** (or one with only a floor plan) a click puts everything back exactly where it was on the page and applies the settings. A scale already set for the floor plan is kept, and so is the orientation of a page that has a floor plan.
+- **On an empty canvas** (nothing drawn yet; a floor plan, legend or price list on its own does not count) the Shortcut goes back exactly where it was on the page, whether clicked or dragged in, and applies the settings. A scale already set for the floor plan is kept, and so is the orientation of a page that has a floor plan.
 - **On a drawing in progress** the Shortcut only adds its items, at the drop point or in the middle, and the drawing keeps its own settings. A second legend or price list is not added.
-- Shortcuts saved before this change contain only products, text and connections and still work.
+- Shortcuts saved before this change (no `s`) contain only products, text, marks and connections, and no settings or page position: re-save them to get those. Copy/paste never changes settings and always pastes under the pointer.
 
 ## CI mode: marks on a floor plan
 
