@@ -2995,7 +2995,7 @@
      "ean": "092592097919",
      "url": "/audioquest-cinnamon-usb-c-to-usb-c-usb-kabel/aqcinnusbcc075/",
      "img": "hk:a65053ee-7464-4266-b78c-294c0d7a20fc",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Kabellængde (m)": "0,75",
       "Vægt (kg)": "0,1",
@@ -3059,7 +3059,7 @@
      "ean": "092592086647",
      "url": "/audioquest-coffee-usb-kabel/aqcoffeeusbab0,75/",
      "img": "hk:44798bb1-3a9f-498c-990f-4a44ecbc489a",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Bredde emballage (cm)": "16",
       "Højde emballage (cm)": "4",
@@ -3355,8 +3355,8 @@
      "AQDRAGONTAILAND1X"
     ],
     "rec": [
-     "AQDRAGONFLYC",
-     "AQJITTERBUG1X"
+     "AQJITTERBUG1X",
+     "AQDRAGONFLYC"
     ]
    },
    "read": "2026-11-19"
@@ -3686,7 +3686,7 @@
      "ean": "092592062245",
      "url": "/audioquest-evergreen-minijack-kabel/aqevergreenmj8,0/",
      "img": "hk:15ff35df-206a-4814-8df7-ab1d5d5689d6",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Kabellængde (m)": "8",
       "Vægt (kg)": "0,2",
@@ -8890,7 +8890,8 @@
    "scope": "pricelist",
    "facets": {
     "conn": "speaker",
-    "axis": "colour"
+    "axis": "metre",
+    "perMetre": true
    },
    "variants": [
     {
@@ -8996,7 +8997,8 @@
    "scope": "pricelist",
    "facets": {
     "conn": "speaker",
-    "axis": "colour"
+    "axis": "metre",
+    "perMetre": true
    },
    "variants": [
     {
@@ -9057,7 +9059,8 @@
    "scope": "pricelist",
    "facets": {
     "conn": "speaker",
-    "axis": "colour"
+    "axis": "metre",
+    "perMetre": true
    },
    "variants": [
     {
@@ -11778,22 +11781,6 @@
      }
     },
     {
-     "sku": "ARGFORTEA5WIFIBK",
-     "label": "Sort",
-     "price": 6499,
-     "colorKey": "Black",
-     "ean": "5706957014798",
-     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifibk/",
-     "img": "hk:d588f8c2-0971-4bce-b52d-920753e6b911",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "10",
-      "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "ARGFORTEA5WIFIWA",
      "label": "Valnød",
      "price": 6499,
@@ -11806,6 +11793,22 @@
       "Vægt (kg)": "9",
       "Vægt emballage (kg)": "10",
       "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGFORTEA5WIFIBK",
+     "label": "Sort",
+     "price": 6499,
+     "colorKey": "Black",
+     "ean": "5706957014798",
+     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifibk/",
+     "img": "hk:d588f8c2-0971-4bce-b52d-920753e6b911",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "9",
+      "Vægt emballage (kg)": "10",
+      "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
       "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
      }
     },
@@ -54284,22 +54287,6 @@
      }
     },
     {
-     "sku": "JBLLIVE780GR",
-     "label": "Grøn",
-     "price": 799,
-     "was": 1299,
-     "colorKey": "Green",
-     "ean": "1200130039072",
-     "url": "/jbl-live-780nc-traadloest-headset/jbllive780gr/",
-     "img": "hk:6bb39357-883d-4602-af29-f1044a66d382",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "0,26",
-      "Vægt emballage (kg)": "0,48",
-      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVE780BL",
      "label": "Blå",
      "price": 799,
@@ -54309,6 +54296,22 @@
      "url": "/jbl-live-780nc-traadloest-headset/jbllive780bl/",
      "img": "hk:dccf6b7f-80c1-4c9b-b76a-58cbf9b874db",
      "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,26",
+      "Vægt emballage (kg)": "0,48",
+      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVE780GR",
+     "label": "Grøn",
+     "price": 799,
+     "was": 1299,
+     "colorKey": "Green",
+     "ean": "1200130039072",
+     "url": "/jbl-live-780nc-traadloest-headset/jbllive780gr/",
+     "img": "hk:6bb39357-883d-4602-af29-f1044a66d382",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,26",
       "Vægt emballage (kg)": "0,48",
@@ -54457,38 +54460,6 @@
      }
     },
     {
-     "sku": "JBLLIVEBEAM4SI",
-     "label": "Sølv",
-     "price": 799,
-     "was": 1499,
-     "colorKey": "Silver",
-     "ean": "1200130035685",
-     "url": "/jbl-live-beam-4-traadloese-in-ear-hoeretelefoner/jbllivebeam4si/",
-     "img": "hk:3ce67c75-ab57-49bd-8714-618fa8174bda",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "0,09",
-      "Vægt emballage (kg)": "0,24",
-      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "JBLLIVEBEAM4GR",
-     "label": "Grøn",
-     "price": 799,
-     "was": 1499,
-     "colorKey": "Green",
-     "ean": "1200130040733",
-     "url": "/jbl-live-beam-4-traadloese-in-ear-hoeretelefoner/jbllivebeam4gr/",
-     "img": "hk:073c43ea-f131-4774-9c69-264d04c158df",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "0,09",
-      "Vægt emballage (kg)": "0,24",
-      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVEBEAM4PUR",
      "label": "Lilla",
      "price": 799,
@@ -54505,6 +54476,22 @@
      }
     },
     {
+     "sku": "JBLLIVEBEAM4SI",
+     "label": "Sølv",
+     "price": 799,
+     "was": 1499,
+     "colorKey": "Silver",
+     "ean": "1200130035685",
+     "url": "/jbl-live-beam-4-traadloese-in-ear-hoeretelefoner/jbllivebeam4si/",
+     "img": "hk:3ce67c75-ab57-49bd-8714-618fa8174bda",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "0,09",
+      "Vægt emballage (kg)": "0,24",
+      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
+     }
+    },
+    {
      "sku": "JBLLIVEBEAM4OR",
      "label": "Orange",
      "price": 790,
@@ -54514,6 +54501,22 @@
      "url": "/jbl-live-beam-4-traadloese-in-ear-hoeretelefoner/jbllivebeam4or/",
      "img": "hk:9f68cc90-c56c-4206-9d95-eb0b5d246f75",
      "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,09",
+      "Vægt emballage (kg)": "0,24",
+      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVEBEAM4GR",
+     "label": "Grøn",
+     "price": 799,
+     "was": 1499,
+     "colorKey": "Green",
+     "ean": "1200130040733",
+     "url": "/jbl-live-beam-4-traadloese-in-ear-hoeretelefoner/jbllivebeam4gr/",
+     "img": "hk:073c43ea-f131-4774-9c69-264d04c158df",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,09",
       "Vægt emballage (kg)": "0,24",
@@ -59577,10 +59580,13 @@
    },
    "cat": "",
    "url": "/lyngdorf-ls-1000-c-indbygningshoejtaler-til-vaeg/lyngls1000cbk/",
-   "kind": "other",
-   "scope": "skip",
+   "kind": "speaker",
+   "scope": "diagram",
    "facets": {
-    "axis": "colour"
+    "axis": "colour",
+    "active": false,
+    "mount": "inwall",
+    "role": "center"
    },
    "variants": [
     {
@@ -80489,7 +80495,7 @@
     {
      "sku": "SAMTU55M80H",
      "label": "55\"",
-     "price": 4555,
+     "price": 3999,
      "was": 7499,
      "colorKey": "Black",
      "ean": "8806099009410",
@@ -80540,7 +80546,7 @@
     {
      "sku": "SAMTU65M80H",
      "label": "65\"",
-     "price": 5888,
+     "price": 4999,
      "was": 8999,
      "colorKey": "Black",
      "ean": "8806099009427",
