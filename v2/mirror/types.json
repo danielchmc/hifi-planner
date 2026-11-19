@@ -1,0 +1,2762 @@
+{
+ "types": [
+  {
+   "type": "Stereosystem til TV",
+   "keys": {
+    "TVStereo": 50
+   },
+   "cats": {
+    "HiFi > Stereo systemer": 50
+   },
+   "count": 52,
+   "bundles": 52,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 52
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Soundbar system/pakke",
+   "keys": {
+    "SoundbarSystem": 39
+   },
+   "cats": {
+    "TV > Soundbar højtaler / TV-lyd": 39
+   },
+   "count": 40,
+   "bundles": 39,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 39,
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Trådløs højtaler",
+   "keys": {
+    "WirelessLoudspeaker": 38
+   },
+   "cats": {
+    "Højtaler > Trådløs / Bluetooth højtaler": 38
+   },
+   "count": 38,
+   "bundles": 11,
+   "outlet": 0,
+   "products": 27,
+   "inCatalogue": 27,
+   "variantAxes": {
+    "colorOptions": 26,
+    "none": 11,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Wireless/Bluetooth Speakers"
+   ]
+  },
+  {
+   "type": "Indbygningshøjtaler til loft",
+   "keys": {
+    "InCeilingLoudspeaker": 37
+   },
+   "cats": {
+    "Højtaler > Indbygning & udendørs højtaler": 37
+   },
+   "count": 37,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 36,
+   "inCatalogue": 36,
+   "variantAxes": {
+    "colorOptions": 33,
+    "dropDown": 3,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "CI & Outdoor Speakers"
+   ]
+  },
+  {
+   "type": "Trådløst headset",
+   "keys": {
+    "Wirelessheadset": 35
+   },
+   "cats": {
+    "Høretelefoner > On-ear / over-ear høretelefoner": 35
+   },
+   "count": 36,
+   "bundles": 1,
+   "outlet": 1,
+   "products": 34,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 35,
+    "none": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Højtalerkabel",
+   "keys": {
+    "LoudSpeakerCable": 34
+   },
+   "cats": {
+    "Kabler > Højtalerkabel": 34
+   },
+   "count": 35,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 34,
+   "inCatalogue": 34,
+   "variantAxes": {
+    "dropDown": 3,
+    "meterQuantitySelector": 14,
+    "sizeSelector": 12,
+    "colorOptions": 6
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: speaker"
+   ]
+  },
+  {
+   "type": "Højtalerstander",
+   "keys": {
+    "LoudspeakerStand": 30
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 30
+   },
+   "count": 35,
+   "bundles": 0,
+   "outlet": 5,
+   "products": 30,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 35
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Indbygningshøjtaler til væg",
+   "keys": {
+    "InWallLoudspeakers": 31
+   },
+   "cats": {
+    "Højtaler > Indbygning & udendørs højtaler": 31
+   },
+   "count": 34,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 32,
+   "inCatalogue": 32,
+   "variantAxes": {
+    "colorOptions": 34
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "CI & Outdoor Speakers"
+   ]
+  },
+  {
+   "type": "Gulvhøjtaler",
+   "keys": {
+    "FloorStandingLoudspeaker": 29
+   },
+   "cats": {
+    "Højtaler > Gulvhøjtaler": 29
+   },
+   "count": 32,
+   "bundles": 0,
+   "outlet": 3,
+   "products": 29,
+   "inCatalogue": 29,
+   "variantAxes": {
+    "colorOptions": 32
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "Floorstanding Speakers"
+   ]
+  },
+  {
+   "type": "Integreret forstærker",
+   "keys": {
+    "IntegratedAmplifier": 31
+   },
+   "cats": {
+    "HiFi > Forstærker": 31
+   },
+   "count": 32,
+   "bundles": 1,
+   "outlet": 1,
+   "products": 30,
+   "inCatalogue": 30,
+   "variantAxes": {
+    "colorOptions": 30,
+    "none": 1,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Integrated Amplifiers"
+   ]
+  },
+  {
+   "type": "Kompakt højtaler",
+   "keys": {
+    "CompactLoudSpeaker": 31
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 31
+   },
+   "count": 32,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 31,
+   "inCatalogue": 31,
+   "variantAxes": {
+    "colorOptions": 32
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "Compact Speakers"
+   ]
+  },
+  {
+   "type": "Trådløs højtaler med batteri",
+   "keys": {
+    "WirelessLoudspeakerWithBattery": 31
+   },
+   "cats": {
+    "Højtaler > Trådløs / Bluetooth højtaler": 31
+   },
+   "count": 32,
+   "bundles": 6,
+   "outlet": 1,
+   "products": 25,
+   "inCatalogue": 25,
+   "variantAxes": {
+    "colorOptions": 25,
+    "dropDown": 1,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Wireless/Bluetooth Speakers"
+   ]
+  },
+  {
+   "type": "Soundbar",
+   "keys": {
+    "Soundbar": 27
+   },
+   "cats": {
+    "TV > Soundbar højtaler / TV-lyd": 27
+   },
+   "count": 28,
+   "bundles": 4,
+   "outlet": 1,
+   "products": 23,
+   "inCatalogue": 23,
+   "variantAxes": {
+    "colorOptions": 22,
+    "none": 4,
+    "sizeSelector": 1,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Soundbar/TV Audio"
+   ]
+  },
+  {
+   "type": "Subwoofer",
+   "keys": {
+    "Subwoofer": 27
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 27
+   },
+   "count": 27,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 26,
+   "inCatalogue": 26,
+   "variantAxes": {
+    "colorOptions": 26,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
+   ]
+  },
+  {
+   "type": "Erstatnings pickup-nål",
+   "keys": {
+    "ReplacementStylus": 26
+   },
+   "cats": {
+    "Pladespiller > Pladespiller tilbehør": 26
+   },
+   "count": 26,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 26,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 26
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Trådløse in-ear høretelefoner",
+   "keys": {
+    "WirelessInEarHeadphone": 23
+   },
+   "cats": {
+    "Høretelefoner > In-ear høretelefoner": 23
+   },
+   "count": 25,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 23,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 25
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Head-fi høretelefoner",
+   "keys": {
+    "Headfi": 22
+   },
+   "cats": {
+    "Høretelefoner > Head-Fi høretelefoner": 22
+   },
+   "count": 22,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 21,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 19,
+    "dropDown": 2,
+    "none": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Hjemmebio-receiver",
+   "keys": {
+    "HomeCinemaReceiver": 17
+   },
+   "cats": {
+    "Surround > Surround receiver": 17
+   },
+   "count": 22,
+   "bundles": 0,
+   "outlet": 5,
+   "products": 17,
+   "inCatalogue": 17,
+   "variantAxes": {
+    "colorOptions": 22
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Home Cinema Receivers"
+   ]
+  },
+  {
+   "type": "Kompakt højtaler – Aktive",
+   "keys": {
+    "CompactSpeakerActive": 21
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 21
+   },
+   "count": 22,
+   "bundles": 6,
+   "outlet": 1,
+   "products": 15,
+   "inCatalogue": 15,
+   "variantAxes": {
+    "colorOptions": 16,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Active Speakers",
+    "Compact Speakers"
+   ]
+  },
+  {
+   "type": "MM-pickup",
+   "keys": {
+    "MMpickup": 21
+   },
+   "cats": {
+    "Pladespiller > Pickupper og erstatningsnåle": 21
+   },
+   "count": 22,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 21,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 22
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Pladespiller",
+   "keys": {
+    "Turntable": 19
+   },
+   "cats": {
+    "Pladespiller": 19
+   },
+   "count": 20,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 19,
+   "inCatalogue": 19,
+   "variantAxes": {
+    "colorOptions": 17,
+    "dropDown": 2,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Turntables"
+   ]
+  },
+  {
+   "type": "Stereosystem",
+   "keys": {
+    "StereoSystem": 20
+   },
+   "cats": {
+    "HiFi > Stereo systemer": 20
+   },
+   "count": 20,
+   "bundles": 20,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 20
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Videoprojektor",
+   "keys": {
+    "VideoProjector": 19
+   },
+   "cats": {
+    "TV > Projektor": 19
+   },
+   "count": 19,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 19,
+   "inCatalogue": 19,
+   "variantAxes": {
+    "colorOptions": 18,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
+   "type": "USB-kabel",
+   "keys": {
+    "USBCabel": 16
+   },
+   "cats": {
+    "Kabler > Digital kabel": 16
+   },
+   "count": 18,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 16,
+   "inCatalogue": 16,
+   "variantAxes": {
+    "sizeSelector": 17,
+    "colorOptions": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: usb"
+   ]
+  },
+  {
+   "type": "CD-afspiller",
+   "keys": {
+    "CDPlayer": 16
+   },
+   "cats": {
+    "HiFi > CD afspiller": 16
+   },
+   "count": 16,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 15,
+   "inCatalogue": 15,
+   "variantAxes": {
+    "colorOptions": 15,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "CD Players"
+   ]
+  },
+  {
+   "type": "Pladespiller vedligeholdelse",
+   "keys": {
+    "TurntableMaintenance": 15
+   },
+   "cats": {
+    "Pladespiller > Pladespiller vedligeholdelse": 15
+   },
+   "count": 16,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 15,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 16
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Frontgrill",
+   "keys": {
+    "FrontGrill": 15
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 15
+   },
+   "count": 15,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 15,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 15
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Højtaler med tilbehør",
+   "keys": {
+    "Speakerswithaccessories": 15
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 15
+   },
+   "count": 15,
+   "bundles": 15,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 15
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Musikstreamer",
+   "keys": {
+    "MusicStreamer": 14
+   },
+   "cats": {
+    "HiFi > Musikstreamer": 14
+   },
+   "count": 15,
+   "bundles": 5,
+   "outlet": 1,
+   "products": 9,
+   "inCatalogue": 9,
+   "variantAxes": {
+    "colorOptions": 10,
+    "none": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Streamers"
+   ]
+  },
+  {
+   "type": "Signalkabel",
+   "keys": {
+    "SignalCable": 14
+   },
+   "cats": {
+    "Kabler > Signalkabel": 14
+   },
+   "count": 15,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 14,
+   "inCatalogue": 14,
+   "variantAxes": {
+    "sizeSelector": 15
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: rca"
+   ]
+  },
+  {
+   "type": "Vægbeslag for Sonos",
+   "keys": {
+    "WallBracketForSonos": 10
+   },
+   "cats": {
+    "Tilbehør > Sonos tilbehør": 10
+   },
+   "count": 15,
+   "bundles": 0,
+   "outlet": 5,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 15
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Centerhøjtaler",
+   "keys": {
+    "Center": 14
+   },
+   "cats": {
+    "Højtaler > Centerhøjtaler": 14
+   },
+   "count": 14,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 13,
+   "inCatalogue": 13,
+   "variantAxes": {
+    "colorOptions": 13,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "Center Speakers"
+   ]
+  },
+  {
+   "type": "Kompaktanlæg med Streaming",
+   "keys": {
+    "Musicsystemwithstreaming": 13
+   },
+   "cats": {
+    "HiFi > Mini anlæg": 13
+   },
+   "count": 14,
+   "bundles": 4,
+   "outlet": 1,
+   "products": 9,
+   "inCatalogue": 9,
+   "variantAxes": {
+    "colorOptions": 10,
+    "none": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Compact Amplifiers with Streaming"
+   ]
+  },
+  {
+   "type": "Pladespiller system",
+   "keys": {
+    "TurntableSystem": 14
+   },
+   "cats": {
+    "Pladespiller > Pladespiller system": 14
+   },
+   "count": 14,
+   "bundles": 14,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 14
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Vægbeslag for højtalere",
+   "keys": {
+    "WallMountForLoudspeakers": 14
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 14
+   },
+   "count": 14,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 14,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 14
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Adapter",
+   "keys": {
+    "Adapter": 13
+   },
+   "cats": {
+    "Kabler > Diverse kabler, stik & adaptere": 13
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 13,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Bananstik",
+   "keys": {
+    "BananaPlug": 13
+   },
+   "cats": {
+    "Kabler > Højtalerstik": 13
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 13,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Effektforstærker til installation",
+   "keys": {
+    "PowerAmplifierInstallation": 11
+   },
+   "cats": {
+    "HiFi > Forstærker": 11
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 11,
+   "inCatalogue": 11,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Power Amplifiers CI"
+   ]
+  },
+  {
+   "type": "Hjemmebio-system",
+   "keys": {
+    "HomeCinemaSystem": 11
+   },
+   "cats": {
+    "Surround > Hjemmebio-system": 11
+   },
+   "count": 13,
+   "bundles": 13,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Højtalersystem",
+   "keys": {
+    "LoudSpeakerSystem": 12
+   },
+   "cats": {
+    "Højtaler > Højtalersystemer": 12
+   },
+   "count": 13,
+   "bundles": 13,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Møbeltilbehør",
+   "keys": {
+    "FurnitureAccessories": 13
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 13
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 13,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "TV-beslag",
+   "keys": {
+    "TvBracket": 12
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 12
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 12,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Vægbeslag",
+   "keys": {
+    "WallBracket": 10
+   },
+   "cats": {
+    "Tilbehør": 10
+   },
+   "count": 12,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 12
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Væghøjtaler",
+   "keys": {
+    "Onwallloudspeaker": 10
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 10
+   },
+   "count": 11,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 10,
+   "inCatalogue": 10,
+   "variantAxes": {
+    "colorOptions": 11
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "On-Wall Speakers"
+   ]
+  },
+  {
+   "type": "Backbox",
+   "keys": {
+    "Backbox": 10
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 10
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 10
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "MC-pickup",
+   "keys": {
+    "MCpickup": 10
+   },
+   "cats": {
+    "Pladespiller > Pickupper og erstatningsnåle": 10
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 9,
+    "sizeSelector": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Møbel",
+   "keys": {
+    "Furniture": 10
+   },
+   "cats": {
+    "Tilbehør > Møbler": 10
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 10
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Møbelsystem",
+   "keys": {
+    "FurnitureSystem": 10
+   },
+   "cats": {
+    "Tilbehør > Møbler": 10
+   },
+   "count": 10,
+   "bundles": 9,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 9,
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Neo QLED TV",
+   "keys": {
+    "NeoQLED": 6
+   },
+   "cats": {
+    "TV > TV": 6
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 4,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "sizeSelector": 10
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV",
+    "QLED"
+   ]
+  },
+  {
+   "type": "Passiv subwoofer",
+   "keys": {
+    "PassiveSubwoofer": 10
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 10
+   },
+   "count": 10,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 9,
+   "inCatalogue": 9,
+   "variantAxes": {
+    "colorOptions": 9,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
+   ]
+  },
+  {
+   "type": "Pladespillertilbehør",
+   "keys": {
+    "TurntableAccessories": 10
+   },
+   "cats": {
+    "Pladespiller > Pladespiller tilbehør": 10
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 10
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "HDMI-kabel",
+   "keys": {
+    "HDMIcable": 8
+   },
+   "cats": {
+    "Kabler > HDMI kabel": 8
+   },
+   "count": 9,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 8,
+   "inCatalogue": 8,
+   "variantAxes": {
+    "sizeSelector": 9
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: hdmi"
+   ]
+  },
+  {
+   "type": "Højtalertilbehør",
+   "keys": {
+    "LoudSpeakersAccessories": 7
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 7
+   },
+   "count": 9,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 7,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 8,
+    "sizeSelector": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Indbygningssystem",
+   "keys": {
+    "InstallationSystem": 9
+   },
+   "cats": {
+    "Højtaler > Indbygning & udendørs højtaler": 9
+   },
+   "count": 9,
+   "bundles": 9,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 9
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Minijack-kabel",
+   "keys": {
+    "MiniJackCable": 9
+   },
+   "cats": {
+    "Kabler > Minijack kabel": 9
+   },
+   "count": 9,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 9,
+   "inCatalogue": 9,
+   "variantAxes": {
+    "sizeSelector": 8,
+    "colorOptions": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: minijack"
+   ]
+  },
+  {
+   "type": "OLED TV",
+   "keys": {
+    "OLEDTV": 7
+   },
+   "cats": {
+    "TV > TV > OLED": 7
+   },
+   "count": 9,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 7,
+   "inCatalogue": 5,
+   "variantAxes": {
+    "sizeSelector": 9
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV",
+    "OLED"
+   ]
+  },
+  {
+   "type": "Fjernbetjening",
+   "keys": {
+    "RemoteControl": 8
+   },
+   "cats": {
+    "Tilbehør > Fjernbetjening": 8
+   },
+   "count": 8,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 8,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 8
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Kabel",
+   "keys": {
+    "Cable": 8
+   },
+   "cats": {
+    "Kabler": 8
+   },
+   "count": 8,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 7,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "sizeSelector": 4,
+    "none": 1,
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Møbel med anlæg",
+   "keys": {
+    "HiFiFurniture": 8
+   },
+   "cats": {
+    "Tilbehør > Møbler": 8
+   },
+   "count": 8,
+   "bundles": 8,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 8
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Multikanaleffektforstærker",
+   "keys": {
+    "MultiChannelPowerAmplifier": 8
+   },
+   "cats": {
+    "HiFi > Forstærker": 8
+   },
+   "count": 8,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 8,
+   "inCatalogue": 8,
+   "variantAxes": {
+    "colorOptions": 8
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Multi-Channel Amplifiers"
+   ]
+  },
+  {
+   "type": "RIAA-forstærker",
+   "keys": {
+    "RiaaAmplifier": 6
+   },
+   "cats": {
+    "Pladespiller > RIAA-forstærker": 6
+   },
+   "count": 8,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "colorOptions": 8
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "RIAA Amplifiers"
+   ]
+  },
+  {
+   "type": "Stofdør",
+   "keys": {
+    "Fabricdoor": 8
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 8
+   },
+   "count": 8,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 8,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 8
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "DJ-pickup",
+   "keys": {
+    "DJpickup": 7
+   },
+   "cats": {
+    "Pladespiller > Pickupper og erstatningsnåle": 7
+   },
+   "count": 7,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 7,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6,
+    "dropDown": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Justérbart TV vægbeslag",
+   "keys": {
+    "AdjustableWallmount": 7
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 7
+   },
+   "count": 7,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 7,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 7
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Optisk kabel",
+   "keys": {
+    "Opticalcabel": 6
+   },
+   "cats": {
+    "Kabler > Digital kabel": 6
+   },
+   "count": 7,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "sizeSelector": 7
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: optical"
+   ]
+  },
+  {
+   "type": "Skumpropper",
+   "keys": {
+    "FoamBungs": 7
+   },
+   "cats": {
+    "Høretelefoner > Høretelefon tilbehør": 7
+   },
+   "count": 7,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 7,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "sizeSelector": 6,
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Udendørshøjtaler",
+   "keys": {
+    "OutdoorLoudspeaker": 7
+   },
+   "cats": {
+    "Højtaler > Indbygning & udendørs højtaler": 7
+   },
+   "count": 7,
+   "bundles": 4,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "none": 4,
+    "colorOptions": 3
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "CI & Outdoor Speakers"
+   ]
+  },
+  {
+   "type": "Effektforstærker",
+   "keys": {
+    "PowerAmplifier": 6
+   },
+   "cats": {
+    "HiFi > Forstærker": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Power Amplifiers"
+   ]
+  },
+  {
+   "type": "Gulvhøjtaler – Aktive",
+   "keys": {
+    "FloorstandingSpeakerActive": 6
+   },
+   "cats": {
+    "Højtaler > Gulvhøjtaler": 6
+   },
+   "count": 6,
+   "bundles": 2,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "colorOptions": 4,
+    "none": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Gulvstander",
+   "keys": {
+    "FloorStand": 5
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 5
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Monteringsramme",
+   "keys": {
+    "InstallationFramePreMountKit": 6
+   },
+   "cats": {
+    "Højtaler > Indbygning & udendørs højtaler": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Strømfilter",
+   "keys": {
+    "Powerfilter": 6
+   },
+   "cats": {
+    "Kabler > Strømkabler": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Subwoofer-kabel",
+   "keys": {
+    "SubwooferCable": 6
+   },
+   "cats": {
+    "Kabler > Subwoofer kabel": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "sizeSelector": 6
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: sub"
+   ]
+  },
+  {
+   "type": "Trådløs subwoofer",
+   "keys": {
+    "WirelessSubwoofer": 6
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
+   ]
+  },
+  {
+   "type": "TV-ramme",
+   "keys": {
+    "TV-frame": 5
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 5
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5,
+    "dropDown": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Andet",
+   "keys": {
+    "Other": 4
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 4
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Høretelefon tilbehør",
+   "keys": {
+    "HeadphoneAccessories": 5
+   },
+   "cats": {
+    "Høretelefoner > Høretelefon tilbehør": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Høretelefon-forstærker",
+   "keys": {
+    "HeadphoneAmplifier": 5
+   },
+   "cats": {
+    "Høretelefoner > Høretelefon-forstærker": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 5,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Headphone Amplifiers"
+   ]
+  },
+  {
+   "type": "Licens",
+   "keys": {
+    "License": 5
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Loftbeslag",
+   "keys": {
+    "CeilingMount": 4
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 4
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "MDC-modul",
+   "keys": {
+    "MDCModule": 5
+   },
+   "cats": {
+    "Tilbehør": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 4,
+    "none": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 5
+   },
+   "cats": {
+    "TV > TV": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 5,
+   "variantAxes": {
+    "sizeSelector": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
+   "type": "Opgradering",
+   "keys": {
+    "Upgrade": 4
+   },
+   "cats": {
+    "Tilbehør": 4
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "QLED TV",
+   "keys": {
+    "QLEDTV": 3
+   },
+   "cats": {
+    "TV > TV > QLED": 3
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "colorOptions": 2,
+    "sizeSelector": 3
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV",
+    "QLED"
+   ]
+  },
+  {
+   "type": "Spadestik",
+   "keys": {
+    "Spade": 5
+   },
+   "cats": {
+    "Kabler > Højtalerstik": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Stereoforstærker med streaming",
+   "keys": {
+    "Stereoamplifierwithstreaming": 5
+   },
+   "cats": {
+    "HiFi > Forstærker": 5
+   },
+   "count": 5,
+   "bundles": 4,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 1,
+    "none": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Amplifiers with Streaming"
+   ]
+  },
+  {
+   "type": "Strømkabel",
+   "keys": {
+    "PowerCable": 5
+   },
+   "cats": {
+    "Kabler": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "sizeSelector": 4,
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Surround-processor",
+   "keys": {
+    "HomeCinemaPreAmplifier": 5
+   },
+   "cats": {
+    "Surround > Surround-processor": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 5,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Surround-Processors"
+   ]
+  },
+  {
+   "type": "Trådløs adapter",
+   "keys": {
+    "Wirelessadaptor": 5
+   },
+   "cats": {
+    "Kabler > Diverse kabler, stik & adaptere": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 5,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Wireless Adapters"
+   ]
+  },
+  {
+   "type": "Blu-ray afspiller",
+   "keys": {
+    "BluRayPlayer": 4
+   },
+   "cats": {
+    "Surround > Blu-ray afspiller": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "colorOptions": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Peripherals"
+   ]
+  },
+  {
+   "type": "CD",
+   "keys": {
+    "CD": 4
+   },
+   "cats": {
+    "Tilbehør": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 4
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Coaxial-kabel",
+   "keys": {
+    "CoaxialCabel": 4
+   },
+   "cats": {
+    "Kabler > Digital kabel": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "sizeSelector": 3,
+    "colorOptions": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: coax"
+   ]
+  },
+  {
+   "type": "Dæmpningsfødder",
+   "keys": {
+    "DampingFeet": 4
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3,
+    "sizeSelector": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Høretelefoner",
+   "keys": {
+    "Headphone": 3
+   },
+   "cats": {
+    "Høretelefoner > On-ear / over-ear høretelefoner": 3
+   },
+   "count": 4,
+   "bundles": 3,
+   "outlet": 1,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1,
+    "none": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Multirumsforstærker",
+   "keys": {
+    "MultiRoomAmplifier": 4
+   },
+   "cats": {
+    "HiFi > Forstærker": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "colorOptions": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Multiroom Amplifiers"
+   ]
+  },
+  {
+   "type": "Netværkskabel",
+   "keys": {
+    "Networkcabel": 4
+   },
+   "cats": {
+    "Kabler > Digital kabel": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "sizeSelector": 4
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: ethernet"
+   ]
+  },
+  {
+   "type": "Y-splitter/Y-adapter",
+   "keys": {
+    "YSplitYAdapter": 4
+   },
+   "cats": {
+    "Kabler > Diverse kabler, stik & adaptere": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "colorOptions": 3,
+    "sizeSelector": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: rca"
+   ]
+  },
+  {
+   "type": "Bluetooth receiver",
+   "keys": {
+    "BluetoothReceiver": 3
+   },
+   "cats": {
+    "HiFi > Musikstreamer": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Bluetooth Receivers"
+   ]
+  },
+  {
+   "type": "Bordstander",
+   "keys": {
+    "TableStand": 3
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Fødder",
+   "keys": {
+    "Foot": 3
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Forforstærker",
+   "keys": {
+    "PreAmplifier": 2
+   },
+   "cats": {
+    "HiFi > Forstærker": 2
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Pre Amplifiers"
+   ]
+  },
+  {
+   "type": "Head-fi in-ear høretelefoner",
+   "keys": {
+    "HeadfiInEar": 3
+   },
+   "cats": {
+    "Høretelefoner > Head-Fi høretelefoner": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "In-ear høretelefoner",
+   "keys": {
+    "ActiveInEarHeadphone": 3
+   },
+   "cats": {
+    "Høretelefoner > In-ear høretelefoner": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Kabelskjuler",
+   "keys": {
+    "CableCovering": 3
+   },
+   "cats": {
+    "Tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Kompaktanlæg",
+   "keys": {
+    "Musicsystem": 3
+   },
+   "cats": {
+    "HiFi > Mini anlæg": 3
+   },
+   "count": 3,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "colorOptions": 2,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Compact Amplifiers"
+   ]
+  },
+  {
+   "type": "LED TV",
+   "keys": {
+    "LEDTV": 3
+   },
+   "cats": {
+    "TV > TV": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "colorOptions": 1,
+    "sizeSelector": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
+   "type": "LP-plade",
+   "keys": {
+    "LPdisc": 3
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Mikrofon",
+   "keys": {
+    "Microphone": 3
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Skuffe",
+   "keys": {
+    "Drawer": 3
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 3
+   },
+   "count": 3,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 3,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Antennekabel",
+   "keys": {
+    "AntennaCable": 2
+   },
+   "cats": {
+    "Kabler > Antennekabel & stik": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Batteri",
+   "keys": {
+    "Battery": 2
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Beslag",
+   "keys": {
+    "MountingBracket": 2
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Cover",
+   "keys": {
+    "Cover": 2
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "D/A-konverter",
+   "keys": {
+    "DAConverter": 2
+   },
+   "cats": {
+    "HiFi > D/A konverter": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "D/A Converters"
+   ]
+  },
+  {
+   "type": "Gaming headset",
+   "keys": {
+    "GamingHeadset": 2
+   },
+   "cats": {
+    "Høretelefoner > Gaming headset": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1,
+    "sizeSelector": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Hylde",
+   "keys": {
+    "Shelf": 2
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Micro RGB TV",
+   "keys": {
+    "MicroRGB": 2
+   },
+   "cats": {
+    "TV > TV": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "sizeSelector": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
+   "type": "Radio",
+   "keys": {
+    "Radio": 2
+   },
+   "cats": {
+    "HiFi > DAB radio / FM / internet": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Radios"
+   ]
+  },
+  {
+   "type": "Receiver",
+   "keys": {
+    "Receiver": 2
+   },
+   "cats": {
+    "HiFi > Forstærker": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Receivers"
+   ]
+  },
+  {
+   "type": "Trædør",
+   "keys": {
+    "Woodendoor": 2
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "True RGB TV",
+   "keys": {
+    "TrueRGB": 2
+   },
+   "cats": {
+    "TV > TV": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "sizeSelector": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
+   "type": "",
+   "keys": {},
+   "cats": {},
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "AES/EBU-kabel",
+   "keys": {
+    "AesEbuCabel": 1
+   },
+   "cats": {
+    "Kabler > Digital kabel": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "sizeSelector": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: xlr"
+   ]
+  },
+  {
+   "type": "Antennestik",
+   "keys": {
+    "AntennaPlug": 1
+   },
+   "cats": {
+    "Kabler > Antennekabel & stik": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Digitalkabel",
+   "keys": {
+    "DigitalCable": 1
+   },
+   "cats": {
+    "Kabler > Digital kabel": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: coax"
+   ]
+  },
+  {
+   "type": "Gavekort",
+   "keys": {
+    "Giftcard": 1
+   },
+   "cats": {
+    "Tilbehør": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "dropDown": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Musikstreamer med Radio",
+   "keys": {
+    "MusicStreamerAndRadio": 1
+   },
+   "cats": {
+    "HiFi > Musikstreamer": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Streamers with Radio"
+   ]
+  },
+  {
+   "type": "QD-OLED TV",
+   "keys": {
+    "QDOLED": 1
+   },
+   "cats": {
+    "TV > TV": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "sizeSelector": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV",
+    "OLED"
+   ]
+  },
+  {
+   "type": "Rack",
+   "keys": {
+    "Rack": 1
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Spikes",
+   "keys": {
+    "Spikes": 1
+   },
+   "cats": {
+    "Tilbehør > Højtaler tilbehør": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Stik",
+   "keys": {
+    "Plug": 1
+   },
+   "cats": {
+    "Kabler > Diverse kabler, stik & adaptere": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Støjfilter",
+   "keys": {
+    "NoiseFilter": 1
+   },
+   "cats": {
+    "HiFi": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Strømforsyning",
+   "keys": {
+    "PowerSupply": 1
+   },
+   "cats": {
+    "Kabler > Strømkabler": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Switch box",
+   "keys": {
+    "SwitchBox": 1
+   },
+   "cats": {
+    "Tilbehør": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Peripherals"
+   ]
+  },
+  {
+   "type": "Topdæksel",
+   "keys": {
+    "TopCover": 1
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Trådløs forforstærker",
+   "keys": {
+    "Wirelesspreamp": 1
+   },
+   "cats": {
+    "HiFi > Forstærker": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  }
+ ]
+}

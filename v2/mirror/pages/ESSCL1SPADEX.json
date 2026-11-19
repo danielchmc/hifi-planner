@@ -1,0 +1,154 @@
+{
+ "sku": "ESSCL1SPADEX",
+ "url": "/essentials-classic-spade-spadestik/esscl1spade/",
+ "breadcrumb": [
+  {
+   "title": "Kabler",
+   "key": "cables",
+   "url": "/kabler/"
+  },
+  {
+   "title": "Højtalerstik",
+   "key": "speakerplug",
+   "url": "/kabler/hojtaler-stik/"
+  }
+ ],
+ "product": {
+  "id": 219537,
+  "skuCode": "ESSCL1SPADEX",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/essentials_v2_200px.png?height=50",
+  "brandPage": "/marker/essentials/",
+  "recommendedAlternatives": {
+   "productCodes": [
+    "DALI4SPADESTDX",
+    "AQSPADE100SX",
+    "AQSPADE300SX",
+    "AQSPADE500SX"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Spadestik til højtalerkabler\nForgyldte kontaktflader\nMaksimal kabeltykkelse (ekskl. isolering): 5 mm2 / 10AWG\nSælges parvist. \nOBS: Ved bestilling af flere stik fordeles ligeligt mellem rød og sort farve, med mindre andet ønskes."
+     }
+    ]
+   },
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "AWG",
+      "value": "10"
+     },
+     {
+      "term": "Leder overfladeareal",
+      "value": "5 mm2"
+     }
+    ]
+   }
+  ],
+  "concepts": [
+   {
+    "header": " ",
+    "text": "<h3>25 års garanti på Essentials kabler</h3><p>Hos HiFi Klubben står vi inde for kvaliteten af vores Essentials kabler i Classic-, Prime- og Excellence-serierne. Derfor giver vi dig hele 25 års garanti – et tydeligt bevis på, at du får kabler bygget til at levere suveræn lyd og holde i mange år. Det gælder både signalkabler, højtalerkabler og tilbehør, hvor du kan regne med stabil kvalitet og lang holdbarhed. Læs mere <a href=\"https://www.hifiklubben.dk/kundeservice/garanti/kabelgaranti/\" target=\"_blank\">her</a>.</p>"
+   }
+  ],
+  "category": "Højtalerstik",
+  "modelTypeLink": {
+   "productFilterPageName": "Højtalerstik",
+   "text": "Se alt fra kategorien: Højtalerstik",
+   "url": "/kabler/hojtaler-stik/",
+   "id": 69916
+  },
+  "variants": [
+   {
+    "id": 219546,
+    "displayName": "Hvid",
+    "condition": "NewNeverUsedAndNotOpened",
+    "productCode": "ESSCL1SPADE",
+    "ean": "5706957015467",
+    "priceDetails": {
+     "priceValueId": 800712,
+     "price": 70,
+     "priceFormatted": "70,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 70
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Hvid"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,01"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,01"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "21 x 3 x 3,1 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "White",
+     "text": "Hvid",
+     "productCode": "ESSCL1SPADE"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 6,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/3563fe04-928d-491f-bc29-7f638e933750"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/essentials-classic-spade-spadestik/esscl1spade/",
+    "canonicalUrl": "/essentials-classic-spade-spadestik/esscl1spade/",
+    "lowestShippingPriceRaw": 29,
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {
+   "rating": 4.4,
+   "count": 5,
+   "reviewCount": 3,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 2
+   }
+  },
+  "brandName": "Essentials",
+  "modelName": "Classic Spade",
+  "modelType": "Spadestik",
+  "modelTypeKey": "Spade"
+ }
+}

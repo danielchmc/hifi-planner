@@ -1,0 +1,134 @@
+{
+ "sku": "BWISW8-BWBBISW8",
+ "url": "/bwisw8-bwbbisw8/",
+ "breadcrumb": [
+  {
+   "title": "Højtaler",
+   "key": "speaker",
+   "url": "/hojtalere/"
+  },
+  {
+   "title": "Subwoofer",
+   "key": "subwoofer",
+   "url": "/hojtalere/subwoofer/"
+  }
+ ],
+ "product": {
+  "id": 257954,
+  "skuCode": "BWISW8-BWBBISW8",
+  "category": "Bundle",
+  "modelTypeLink": {
+   "productFilterPageName": "Subwoofer",
+   "text": "Se alt fra kategorien: Subwoofer",
+   "url": "/hojtalere/subwoofer/",
+   "id": 69681
+  },
+  "featureLogos": [],
+  "testGroups": [],
+  "bundle": {
+   "name": "Bowers & Wilkins ISW-8 + BB ISW 8 Passiv subwoofer",
+   "code": "BWISW8-BWBBISW8",
+   "images": [
+    {
+     "url": "https://images.hifiklubben.com/image/12ab7180-f9c1-435e-a072-06a1f865505e"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/a43c3985-3bdc-41b2-ad81-fc490b122016"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/ba16b48a-c28f-4724-98e7-69ad863b8857"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/a8002c8b-3ba9-451e-96a4-c89cee293064"
+    }
+   ],
+   "lifestyleImages": [],
+   "priceDetails": {
+    "price": 23598,
+    "priceFormatted": "23.598,-",
+    "salesUnit": "System",
+    "rawSalesUnit": "system",
+    "salesQuantity": 1,
+    "unitPrice": 23598,
+    "unitPriceBefore": 23598
+   },
+   "bundleProducts": [
+    {
+     "brand": "Bowers & Wilkins",
+     "modelType": "Backbox",
+     "modelName": "BB ISW 8",
+     "name": "Bowers & Wilkins BB ISW 8 Backbox",
+     "bundleVariants": [
+      {
+       "productCode": "BWBBISW8",
+       "url": "/bowers--wilkins-bb-isw-8-backbox/bwbbisw8/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "BWBBISW8"
+       },
+       "inventoryStatus": {
+        "inStock": true,
+        "description": "På lager. Leveringstid 2-4 hverdage",
+        "canBuyOnline": true,
+        "availableQuantity": 1,
+        "inventoryStatusType": "warehouseInStock"
+       },
+       "priceFormatted": "10.599,-",
+       "priceRaw": 10599,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "BWBBISW8X"
+    },
+    {
+     "brand": "Bowers & Wilkins",
+     "modelType": "Passiv subwoofer",
+     "modelName": "ISW-8",
+     "name": "Bowers & Wilkins ISW-8 Passiv subwoofer",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/7cbab20e-cdcf-445e-9277-8e14ed0053ea",
+       "productCode": "BWISW8WH",
+       "url": "/bowers--wilkins-isw-8-passiv-subwoofer/bwisw8wh/",
+       "displayName": "Hvid",
+       "color": {
+        "inRiverKey": "White",
+        "text": "Hvid",
+        "productCode": "BWISW8WH"
+       },
+       "inventoryStatus": {
+        "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "notInStockNonStockedItem"
+       },
+       "priceFormatted": "12.999,-",
+       "priceRaw": 12999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "BWISW8"
+    }
+   ],
+   "sellableOnWeb": true,
+   "inventoryStatus": {
+    "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+    "canBuyOnline": true
+   }
+  },
+  "variantNavigationType": "dropDown",
+  "displayBookDemo": true,
+  "reviews": {},
+  "boxContent": [],
+  "brandName": "Bowers & Wilkins",
+  "modelName": "ISW-8 + BB ISW 8",
+  "modelType": "Passiv subwoofer",
+  "modelTypeKey": "PassiveSubwoofer"
+ }
+}

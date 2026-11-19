@@ -1,0 +1,159 @@
+{
+ "sku": "NADHTR10",
+ "url": "/nad-htr-10-fjernbetjening/nadhtr10gr/",
+ "breadcrumb": [
+  {
+   "title": "Tilbehør",
+   "key": "accessories",
+   "url": "/tilbehor/"
+  },
+  {
+   "title": "Fjernbetjening",
+   "key": "remotecontrol",
+   "url": "/tilbehor/fjernbetjening/"
+  }
+ ],
+ "product": {
+  "id": 179156,
+  "skuCode": "NADHTR10",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/nad_logo_3.jpg?height=50",
+  "brandPage": "/marker/nad/",
+  "category": "Fjernbetjening",
+  "modelTypeLink": {
+   "productFilterPageName": "Fjernbetjening",
+   "text": "Se alt fra kategorien: Fjernbetjening",
+   "url": "/tilbehor/fjernbetjening/",
+   "id": 69788
+  },
+  "variants": [
+   {
+    "id": 187742,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "NADHTR10GR",
+    "ean": "786357002132",
+    "priceDetails": {
+     "priceValueId": 1088348,
+     "price": 1099,
+     "priceFormatted": "1.099,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 1099
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,2"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,2"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "6,1 x 4,5 x 28 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "NADHTR10GR"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 2,
+     "availableQuantity": 23,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/dd0fc4e2-e580-4e32-aa4d-f2c988d04a2d"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/nad-andet/nadhtr10gr/",
+    "canonicalUrl": "/nad-andet/nadhtr10gr/",
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {
+   "summary": "En alsidig NAD-fjernbetjening med bred styring af flere apparater, pålidelig betjening af forstærkeren og praktiske kombinerede tændekommandoer. Programmering og daglig brug kan være nemt, men kompatibiliteten med apparater er ujævn, og de faste viskelæderknapper mindsker komforten. Fjernbetjeningen føles som en varm og slagkraftig kontrolcentral til et ryddeligt, medrivende hi-fi-setup, selv om bekymringer om holdbarhed og manglende dokumentation dæmper begejstringen.",
+   "headlines": {
+    "works well with NAD amplifiers": {
+     "sentimentAnalysis": "Flere anmeldelser bekræfter, at betjeningen af NAD-forstærkere fungerer.",
+     "simpleTitle": "Fungerer godt med NAD-forstærkere",
+     "bias": "positive",
+     "key": "nad_amp_control",
+     "groupId": "9290f174-a1b8-4a97-a8a1-8b2d22490a34"
+    },
+    "limited control of other devices": {
+     "sentimentAnalysis": "To anmeldelser fortæller, at betjeningen er begrænset til en forstærker eller ikke virker med en cd-afspiller.",
+     "simpleTitle": "Begrænset betjening af andre enheder",
+     "bias": "negative",
+     "key": "limited_device_support",
+     "groupId": "9290f174-a1b8-4a97-a8a1-8b2d22490a34"
+    },
+    "buttons can be hard to press and unreliable": {
+     "sentimentAnalysis": "Knapperne kritiseres for at kræve hårde, lange tryk og for at kunne udvikle kontaktfejl.",
+     "simpleTitle": "Knapperne kan være hårde at trykke på og upålidelige",
+     "bias": "negative",
+     "key": "button_issues",
+     "groupId": "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8"
+    }
+   },
+   "grouping": {
+    "9290f174-a1b8-4a97-a8a1-8b2d22490a34": {
+     "title": "Enhedskompatibilitet og betjening",
+     "id": "9290f174-a1b8-4a97-a8a1-8b2d22490a34",
+     "references": [
+      "8ce8ed47-90a6-4233-b2a1-a559b5c50aa4",
+      "807e2167-fad5-470a-ae2d-baa860a9ed78",
+      "d2c5e459-9b8a-47dd-80b1-fcd512098b95",
+      "34ee516b-3394-4aea-a712-0e507550fb8a"
+     ]
+    },
+    "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8": {
+     "title": "Knapdesign og holdbarhed",
+     "id": "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8",
+     "references": [
+      "c1a68c19-e362-41d8-9418-5b35cdb0b002",
+      "d2c5e459-9b8a-47dd-80b1-fcd512098b95"
+     ]
+    }
+   },
+   "rating": 4.38461538461538,
+   "count": 13,
+   "reviewCount": 10,
+   "distribution": {
+    "1": 0,
+    "2": 1,
+    "3": 1,
+    "4": 3,
+    "5": 8
+   }
+  },
+  "brandName": "NAD",
+  "modelName": "HTR-10",
+  "modelType": "Fjernbetjening",
+  "modelTypeKey": "RemoteControl"
+ }
+}

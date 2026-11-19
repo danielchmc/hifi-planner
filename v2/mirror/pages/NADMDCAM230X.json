@@ -1,0 +1,130 @@
+{
+ "sku": "NADMDCAM230X",
+ "url": "/nad-am230-mdc-modul/nadmdcam230/",
+ "breadcrumb": [
+  {
+   "title": "Tilbehør",
+   "key": "accessories",
+   "url": "/tilbehor/"
+  }
+ ],
+ "product": {
+  "id": 81455,
+  "skuCode": "NADMDCAM230X",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/nad_logo_3.jpg?height=50",
+  "brandPage": "/marker/nad/",
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Dolby Atmos MDC-indstiksmodul til NAD surround-receivere og -forstærkere \r\nPasser til T757, T758, T765, T775, T777, T785, T787, T185, T187, alle versioner \r\nSurround-formater: Dolby Atmos, Dolby TrueHD, Dolby Digital, DTS:X*, DTS HD Master Audio m.fl. \r\nDirac Live LE digital rumkorrektion \r\nAuto-setup* \r\nAudio-opløsning op til 24-bit/192kHz \r\nDigital audio-ind: 2 x optisk / 2 x coaxial \r\nMulige Atmos-konfigurationer: op til 7.1.4 (via eksterne effekttrin), op til 5.1.2 (via receiverens indbyggede forstærkerkanaler) \r\nMontering foretages i en Hi-Fi Klubben butik (inkluderet i pris) \r\n* Senere software-opgradering (inkluderet i pris)  \r\n"
+     }
+    ]
+   }
+  ],
+  "category": "Tilbehør",
+  "modelTypeLink": {
+   "productFilterPageName": "Tilbehør",
+   "text": "Se alt fra kategorien: Tilbehør",
+   "url": "/tilbehor/",
+   "id": 69665
+  },
+  "variants": [
+   {
+    "id": 65770,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "NADMDCAM230",
+    "ean": "5703120273709",
+    "priceDetails": {
+     "priceValueId": 1088365,
+     "price": 6999,
+     "priceFormatted": "6.999,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 6999
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Model / Variant",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,23"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "1"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "17 x 9 x 28,5 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "NADMDCAM230"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 3,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/1a4dd884-8c6b-41b4-91e2-13e463eec233"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/nad-am230-mdc-modul/nadmdcam230/",
+    "canonicalUrl": "/nad-am230-mdc-modul/nadmdcam230/",
+    "addOns": [
+     {
+      "sku": "ESSCL1IN150",
+      "priceDetails": {
+       "price": 299,
+       "priceFormatted": "299,-",
+       "salesUnit": "sæt",
+       "rawSalesUnit": "set",
+       "salesQuantity": 1,
+       "unitPrice": 299
+      },
+      "url": "/essentials-classic-rca-signalkabel/esscl1in150/",
+      "imageUrl": "https://images.hifiklubben.com/image/40f64e7e-9828-4daf-8f5a-f5761e8b9c75",
+      "brand": "Essentials",
+      "modelType": "Signalkabel",
+      "modelName": "Classic RCA (1.5 Meter)"
+     }
+    ]
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "NAD",
+  "modelName": "AM230",
+  "modelType": "MDC-modul",
+  "modelTypeKey": "MDCModule"
+ }
+}

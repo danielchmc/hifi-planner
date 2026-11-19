@@ -1,0 +1,111 @@
+{
+ "sku": "SELCTV4800X",
+ "url": "/sinox-connectech-ctv4800-antennekabel/selctv4800/",
+ "breadcrumb": [
+  {
+   "title": "Kabler",
+   "key": "cables",
+   "url": "/kabler/"
+  },
+  {
+   "title": "Antennekabel & stik",
+   "key": "antennacables",
+   "url": "/kabler/antenne-kabel-stik/"
+  }
+ ],
+ "product": {
+  "id": 998,
+  "skuCode": "SELCTV4800X",
+  "recommendedAccessories": {
+   "productCodes": [
+    "SELCTV1552X",
+    "SELCTV1512X",
+    "SELCTV1522X"
+   ],
+   "isOutlet": "false"
+  },
+  "category": "Antennekabel & stik",
+  "modelTypeLink": {
+   "productFilterPageName": "Antennekabel & stik",
+   "text": "Se alt fra kategorien: Antennekabel & stik",
+   "url": "/kabler/antenne-kabel-stik/",
+   "id": 69898
+  },
+  "variants": [
+   {
+    "id": 2439,
+    "displayName": "1,0 meter",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "SELCTV4800",
+    "ean": "5706808004114",
+    "priceDetails": {
+     "priceValueId": 803581,
+     "price": 20,
+     "priceFormatted": "20,-",
+     "salesUnit": "Meter",
+     "rawSalesUnit": "variableLength",
+     "salesQuantity": 1,
+     "unitPrice": 20
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Hvid"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,04"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,05"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "10 x 0,7 x 10 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "White",
+     "text": "Hvid",
+     "productCode": "SELCTV4800"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 1,
+     "availableQuantity": 284,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/e06de49c-cc76-4838-9a92-09e43b9013e5"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/bandridge-connectech-ctv4800-antennekabel/selctv4800/",
+    "canonicalUrl": "/bandridge-connectech-ctv4800-antennekabel/selctv4800/",
+    "lowestShippingPriceRaw": 29,
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "variantNavigationType": "meterQuantitySelector",
+  "reviews": {},
+  "brandName": "Sinox",
+  "modelName": "Connectech CTV4800",
+  "modelType": "Antennekabel",
+  "modelTypeKey": "AntennaCable"
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "sku": "BWISW3",
+ "url": "/bowers--wilkins-isw-3-passiv-subwoofer/bwisw3wh/",
+ "breadcrumb": [
+  {
+   "title": "Højtaler",
+   "key": "speaker",
+   "url": "/hojtalere/"
+  },
+  {
+   "title": "Subwoofer",
+   "key": "subwoofer",
+   "url": "/hojtalere/subwoofer/"
+  }
+ ],
+ "product": {
+  "id": 161086,
+  "skuCode": "BWISW3",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/bw_x1000.png?height=50",
+  "brandPage": "/marker/bowers-wilkins/",
+  "recommendedProducts": {
+   "productCodes": [
+    "BWCDA4D",
+    "BWCDA2HD"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAccessories": {
+   "productCodes": [
+    "ESSCL1SCX",
+    "ESSCL1SCPROX",
+    "AQSLIPDB14-2SCX"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAlternatives": {
+   "productCodes": [
+    "BWISW4",
+    "BWISW6",
+    "BWISW8",
+    "DALIPHANTOMSUB100"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "Bas størrelse",
+      "value": "6.5\""
+     }
+    ]
+   }
+  ],
+  "category": "Subwoofer",
+  "modelTypeLink": {
+   "productFilterPageName": "Subwoofer",
+   "text": "Se alt fra kategorien: Subwoofer",
+   "url": "/hojtalere/subwoofer/",
+   "id": 69681
+  },
+  "variants": [
+   {
+    "id": 31779,
+    "displayName": "Hvid",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "BWISW3WH",
+    "ean": "0714346313907",
+    "priceDetails": {
+     "priceValueId": 1087536,
+     "price": 10499,
+     "priceFormatted": "10.499,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 10499
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Hvid"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "15"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "16"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "37 x 67 x 45 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "White",
+     "text": "Hvid",
+     "productCode": "BWISW3WH"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/dc337306-f355-4e30-b737-c11bd12e0c72"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/bowers--wilkins-isw-3-subwoofer/bwisw3wh/",
+    "canonicalUrl": "/bowers--wilkins-isw-3-subwoofer/bwisw3wh/",
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [
+   {
+    "modelType": "Indbygningssystem",
+    "price": {
+     "price": 26998,
+     "priceFormatted": "26.998,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 26998,
+     "unitPriceBefore": 26998
+    },
+    "image": "https://images.hifiklubben.com/image/c7a958b9-79a9-4f74-b352-18f5e907a0c0",
+    "title": "Bowers & Wilkins ISW-3 + CDA-4D",
+    "url": "/bowers-wilkins-isw-3-cda-4d/"
+   }
+  ],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "Bowers & Wilkins",
+  "modelName": "ISW-3",
+  "modelType": "Passiv subwoofer",
+  "modelTypeKey": "PassiveSubwoofer"
+ }
+}

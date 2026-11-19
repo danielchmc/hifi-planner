@@ -1,0 +1,171 @@
+{
+ "sku": "BWCT8SW",
+ "url": "/bowers--wilkins-ct8-sw-passiv-subwoofer/bwct8swbk/",
+ "breadcrumb": [
+  {
+   "title": "Højtaler",
+   "key": "speaker",
+   "url": "/hojtalere/"
+  },
+  {
+   "title": "Subwoofer",
+   "key": "subwoofer",
+   "url": "/hojtalere/subwoofer/"
+  }
+ ],
+ "product": {
+  "id": 197596,
+  "skuCode": "BWCT8SW",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/bw_x1000.png?height=50",
+  "brandPage": "/marker/bowers-wilkins/",
+  "recommendedProducts": {
+   "productCodes": [
+    "BWCT7.3",
+    "BWCT7.4",
+    "BWCT7.5",
+    "BWCWM8.3D",
+    "BWCWM8.5D",
+    "BWCCM8.5D",
+    "BWCWM7.3S2",
+    "BWCWM7.4S2",
+    "BWCWM7.5S2"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAccessories": {
+   "productCodes": [
+    "BWCDA2HD",
+    "SPEAKONNNL4FX",
+    "ESSCL1SCX",
+    "ESSCL1SCPROX",
+    "ESSPR1SCX",
+    "ESSPR2SCX",
+    "AQSLIPDB14-2SCX"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAlternatives": {
+   "productCodes": [
+    "BWCTSW10",
+    "BWCTSW12",
+    "BWCTSW15",
+    "DALIPHANTOMSUB100"
+   ],
+   "isOutlet": "false"
+  },
+  "category": "Subwoofer",
+  "modelTypeLink": {
+   "productFilterPageName": "Subwoofer",
+   "text": "Se alt fra kategorien: Subwoofer",
+   "url": "/hojtalere/subwoofer/",
+   "id": 69681
+  },
+  "variants": [
+   {
+    "id": 65370,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "BWCT8SWBK",
+    "ean": "0714346302383",
+    "priceDetails": {
+     "priceValueId": 1214579,
+     "price": 53499,
+     "priceFormatted": "53.499,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 53499
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "4,55"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "46,5"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "59 x 63 x 59 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "BWCT8SWBK"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-4 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 2,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/554d7086-eafa-47d9-8913-709917eb4062"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/bowers--wilkins-ct8-sw-passiv-subwoofer/bwct8swbk/",
+    "canonicalUrl": "/bowers--wilkins-ct8-sw-passiv-subwoofer/bwct8swbk/",
+    "addOns": [
+     {
+      "sku": "ESSBA1SUB300",
+      "priceDetails": {
+       "price": 199,
+       "priceFormatted": "199,-",
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "salesQuantity": 1,
+       "unitPrice": 199
+      },
+      "url": "/essentials-basic-sub-subwoofer-kabel/essba1sub300/",
+      "imageUrl": "https://images.hifiklubben.com/image/e5cae6e4-65ff-46fb-9e80-8d5b886f2e4d",
+      "brand": "Essentials",
+      "modelType": "Subwoofer-kabel",
+      "modelName": "Basic Sub (3 Meter)"
+     }
+    ]
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [
+   {
+    "modelType": "Indbygningssystem",
+    "price": {
+     "price": 73998,
+     "priceFormatted": "73.998,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 73998,
+     "unitPriceBefore": 73998
+    },
+    "image": "https://images.hifiklubben.com/image/cb100453-63dd-4e8b-b3c4-b99d15fe8482",
+    "title": "Bowers & Wilkins CT8 SW + CDA-2HD",
+    "url": "/bowers-wilkins-ct8-sw-cda-2hd/"
+   }
+  ],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "Bowers & Wilkins",
+  "modelName": "CT8 SW",
+  "modelType": "Passiv subwoofer",
+  "modelTypeKey": "PassiveSubwoofer"
+ }
+}

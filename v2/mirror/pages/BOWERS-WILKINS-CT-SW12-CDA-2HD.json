@@ -1,0 +1,145 @@
+{
+ "sku": "BOWERS-WILKINS-CT-SW12-CDA-2HD",
+ "url": "/bowers-wilkins-ct-sw12-cda-2hd/",
+ "breadcrumb": [
+  {
+   "title": "Højtaler",
+   "key": "speaker",
+   "url": "/hojtalere/"
+  },
+  {
+   "title": "Indbygning & udendørs højtaler",
+   "key": "cispeaker",
+   "url": "/hojtalere/indbygning-udendors-hojtaler/"
+  }
+ ],
+ "product": {
+  "id": 227287,
+  "skuCode": "BOWERS-WILKINS-CT-SW12-CDA-2HD",
+  "recommendedAccessories": {
+   "productCodes": [
+    "SPEAKONNNL4FX",
+    "ESSCL1SCX",
+    "ESSCL1SCPROX",
+    "ESSPR1SCX",
+    "ESSPR2SCX",
+    "AQSLIPDB14-2SCX",
+    "AQGOLDENGATEIN",
+    "AQREDRIVERIN",
+    "AQFORESTCOX",
+    "AQCINNCOX"
+   ],
+   "isOutlet": "false"
+  },
+  "category": "Bundle",
+  "modelTypeLink": {
+   "productFilterPageName": "Indbygning & udendørs højtaler",
+   "text": "Se alt fra kategorien: Indbygning & udendørs højtaler",
+   "url": "/hojtalere/indbygning-udendors-hojtaler/",
+   "id": 69680
+  },
+  "featureLogos": [],
+  "testGroups": [],
+  "bundle": {
+   "name": "Bowers & Wilkins CT SW12 + CDA-2HD Indbygningssystem",
+   "code": "BOWERS-WILKINS-CT-SW12-CDA-2HD",
+   "images": [
+    {
+     "url": "https://images.hifiklubben.com/image/631d9d0a-b8e8-4462-88d6-7af48a3c9174"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/343a28de-6d57-479c-a17f-e6efaeea8cdb"
+    }
+   ],
+   "lifestyleImages": [],
+   "priceDetails": {
+    "price": 31498,
+    "priceFormatted": "31.498,-",
+    "salesUnit": "System",
+    "rawSalesUnit": "system",
+    "salesQuantity": 1,
+    "unitPrice": 31498,
+    "unitPriceBefore": 31498
+   },
+   "bundleProducts": [
+    {
+     "brand": "Bowers & Wilkins",
+     "modelType": "Passiv subwoofer",
+     "modelName": "CT SW12",
+     "name": "Bowers & Wilkins CT SW12 Passiv subwoofer",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/213fc44f-f36d-4fea-97d1-bb8fca216eb1",
+       "productCode": "BWCTSW12BK",
+       "url": "/bowers--wilkins-ct-sw12-subwoofer/bwctsw12bk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "BWCTSW12BK"
+       },
+       "inventoryStatus": {
+        "description": "Forventes på lager lørdag den 28. november",
+        "deliveryDate": "2026-11-28T00:00:00Z",
+        "canBuyOnline": true,
+        "inventoryStatusType": "notInStockAtpDate"
+       },
+       "priceFormatted": "10.999,-",
+       "priceRaw": 10999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "BWCTSW12"
+    },
+    {
+     "brand": "Bowers & Wilkins",
+     "modelType": "Effektforstærker til installation",
+     "modelName": "CDA-2HD",
+     "name": "Bowers & Wilkins CDA-2HD Effektforstærker til installation",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/25e053eb-44f9-41a1-b303-9f644118a23d",
+       "productCode": "BWCDA2HDBK",
+       "url": "/bowers--wilkins-cda-2hd-effektforstaerker/bwcda2hdbk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "BWCDA2HDBK"
+       },
+       "inventoryStatus": {
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
+        "canBuyOnline": true,
+        "availableQuantity": 6,
+        "inventoryStatusType": "warehouseInStock"
+       },
+       "priceFormatted": "20.499,-",
+       "priceRaw": 20499,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "BWCDA2HD"
+    }
+   ],
+   "sellableOnWeb": true,
+   "inventoryStatus": {
+    "description": "Forventes på lager lørdag den 28. november",
+    "deliveryDate": "2026-11-28T00:00:00Z",
+    "canBuyOnline": true
+   }
+  },
+  "variantNavigationType": "dropDown",
+  "displayBookDemo": true,
+  "reviews": {},
+  "boxContent": [],
+  "brandName": "Bowers & Wilkins",
+  "modelName": "CT SW12 + CDA-2HD",
+  "modelType": "Indbygningssystem",
+  "modelTypeKey": "InstallationSystem"
+ }
+}

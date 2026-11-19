@@ -1,0 +1,154 @@
+{
+ "sku": "AQSPADE300SX",
+ "url": "/audioquest-multi-spade-300s-spadestik/aqspade300s/",
+ "breadcrumb": [
+  {
+   "title": "Kabler",
+   "key": "cables",
+   "url": "/kabler/"
+  },
+  {
+   "title": "Højtalerstik",
+   "key": "speakerplug",
+   "url": "/kabler/hojtaler-stik/"
+  }
+ ],
+ "product": {
+  "id": 56990,
+  "skuCode": "AQSPADE300SX",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/audioquest_x1000.png?height=50",
+  "brandPage": "/marker/audioquest/",
+  "recommendedAlternatives": {
+   "productCodes": [
+    "AQSPADE100SX",
+    "AQSPADE500SX",
+    "ARGCL1SPADEX",
+    "ESSCL1SPADEX",
+    "DALI4SPADESTDX"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Spadestik til højtalerkabler\nForsølvede kontaktflader (Direct-Silver over Beryllium-Copper)\nMaksimal kabeltykkelse (ekskl. isolering): 6,6 mm2 / 9AWG\nSælges i sæt af fire styk"
+     }
+    ]
+   },
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "AWG",
+      "value": "9"
+     },
+     {
+      "term": "Leder overfladeareal",
+      "value": "6,6 mm2"
+     }
+    ]
+   }
+  ],
+  "category": "Højtalerstik",
+  "modelTypeLink": {
+   "productFilterPageName": "Højtalerstik",
+   "text": "Se alt fra kategorien: Højtalerstik",
+   "url": "/kabler/hojtaler-stik/",
+   "id": 69916
+  },
+  "variants": [
+   {
+    "id": 51027,
+    "displayName": "Sort/Rød",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "AQSPADE300S",
+    "ean": "092592048065",
+    "priceDetails": {
+     "priceValueId": 1014212,
+     "price": 599,
+     "priceFormatted": "599,-",
+     "salesUnit": "sæt",
+     "rawSalesUnit": "set",
+     "salesQuantity": 1,
+     "unitPrice": 599
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Grå"
+       },
+       {
+        "term": "Model / Variant",
+        "value": "Sort/Rød"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,15"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,15"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "7,5 x 2,5 x 21 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Grey",
+     "text": "Sort/Rød",
+     "productCode": "AQSPADE300S"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 4,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/d1192edc-ad74-4c84-a7a9-9fc688e9d606"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/audioquest-spade-300s-spadestik/aqspade300s/",
+    "canonicalUrl": "/audioquest-spade-300s-spadestik/aqspade300s/",
+    "lowestShippingPriceRaw": 29,
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {
+   "rating": 4.6,
+   "count": 10,
+   "reviewCount": 4,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 7
+   }
+  },
+  "brandName": "AudioQuest",
+  "modelName": "Multi-Spade 300S",
+  "modelType": "Spadestik",
+  "modelTypeKey": "Spade"
+ }
+}

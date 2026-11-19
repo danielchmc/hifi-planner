@@ -1,0 +1,160 @@
+{
+ "sku": "ORTCADENZABR",
+ "url": "/ortofon-cadenza-bronze-mc-pickup/ortcadenzabronze/",
+ "breadcrumb": [
+  {
+   "title": "Pladespiller",
+   "key": "turntable",
+   "url": "/pladespiller/"
+  },
+  {
+   "title": "Pickupper og erstatningsnåle",
+   "key": "Pickup",
+   "url": "/pladespiller/pickupper-erstatningsnale/"
+  }
+ ],
+ "product": {
+  "id": 44154,
+  "skuCode": "ORTCADENZABR",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/ortofon_x1000.png?height=50",
+  "brandPage": "/marker/ortofon/",
+  "recommendedProducts": {
+   "productCodes": [
+    "ESSTTSTYLUSGAUGEX",
+    "ESSTTBRUSHSTYLUS1X",
+    "ESSTTBRUSHSTYLUS3X"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAlternatives": {
+   "productCodes": [
+    "ORTCADENZABC",
+    "ORTCADENZARE",
+    "ORTCADENZABK"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "GRATIS MONTERING: Hvis du køber en ny pickup i Hi-Fi Klubben, monterer vi den gratis på din pladespiller. Spørg i din Hi-Fi Klubben butik for info. \r\nHi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information. \r\n"
+     }
+    ]
+   }
+  ],
+  "concepts": [
+   {
+    "header": "Hvad gør en pickup god?",
+    "text": "<p>Du kan læse mere om Ortofons produkter og dyk ned i detaljerne på deres hjemmeside <a href=\"https://ortofon.com/pages/what-makes-acartridge-good\" target=\"_blank\">her</a>. Få indsigt i, hvad der definerer en god pickup, og lær mere om teknologien og materialerne bag Ortofons produkter. Ellers ved vi alt om Ortofon i vores butikker, hvor vi altid er klar til at hjælpe.</p>"
+   }
+  ],
+  "category": "Pickupper og erstatningsnåle",
+  "modelTypeLink": {
+   "productFilterPageName": "Pickupper og erstatningsnåle",
+   "text": "Se alt fra kategorien: Pickupper og erstatningsnåle",
+   "url": "/pladespiller/pickupper-erstatningsnale/",
+   "id": 166140
+  },
+  "variants": [
+   {
+    "id": 42124,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "ORTCADENZABRONZE",
+    "ean": "5705796230130",
+    "priceDetails": {
+     "priceValueId": 832773,
+     "price": 18999,
+     "priceFormatted": "18.999,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 18999
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,33"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,33"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "9 x 12 x 9 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "ORTCADENZABRONZE"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/d732bba7-2c07-406b-8195-a3bfdbb5e84d"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/1fad83f4-caf7-4b4a-bafa-1c68146b8636"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/ortofon-cadenza-bronze-mc-pickup/ortcadenzabronze/",
+    "canonicalUrl": "/ortofon-cadenza-bronze-mc-pickup/ortcadenzabronze/",
+    "addOns": [
+     {
+      "sku": "ESSTTVINYLKIT100",
+      "priceDetails": {
+       "price": 249,
+       "priceFormatted": "249,-",
+       "priceBefore": 299,
+       "priceBeforeFormatted": "299,-",
+       "priceSavingsFormatted": "50,-",
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "salesQuantity": 1,
+       "offerExpiryDate": "2026-12-12T22:59:00Z",
+       "unitPrice": 249,
+       "unitPriceBefore": 299
+      },
+      "url": "/essentials-tt-vinyl-kit-100-pladespiller-vedligeholdelse/essttvinylkit100/",
+      "imageUrl": "https://images.hifiklubben.com/image/a071f028-d295-4a12-9537-22f3a7a36755",
+      "brand": "Essentials",
+      "modelType": "Pladespiller vedligeholdelse",
+      "modelName": "TT Vinyl Kit 100"
+     }
+    ]
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "Ortofon",
+  "modelName": "Cadenza Bronze",
+  "modelType": "MC-pickup",
+  "modelTypeKey": "MCpickup"
+ }
+}

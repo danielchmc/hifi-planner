@@ -1,0 +1,552 @@
+{
+ "sku": "240-FURNITURE",
+ "url": "/240-furniture/",
+ "breadcrumb": [
+  {
+   "title": "Tilbehør",
+   "key": "accessories",
+   "url": "/tilbehor/"
+  },
+  {
+   "title": "Møbler",
+   "key": "soundfurniture",
+   "url": "/tilbehor/mobler/"
+  }
+ ],
+ "product": {
+  "id": 255213,
+  "skuCode": "240-FURNITURE",
+  "category": "Bundle",
+  "modelTypeLink": {
+   "productFilterPageName": "Møbler",
+   "text": "Se alt fra kategorien: Møbler",
+   "url": "/tilbehor/mobler/",
+   "id": 110938
+  },
+  "featureLogos": [],
+  "testGroups": [],
+  "bundle": {
+   "name": "unnu 240 Furniture Møbelsystem",
+   "code": "240-FURNITURE",
+   "images": [
+    {
+     "url": "https://images.hifiklubben.com/image/e64a5f9d-c385-4e2e-9421-77925aa2b9a6"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/00f4a2e6-7ce2-4784-87bb-d69d1bcd6b1b"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/61660e54-2bd8-4761-85ab-95ed76d5c233"
+    }
+   ],
+   "lifestyleImages": [],
+   "priceDetails": {
+    "price": 20241,
+    "priceFormatted": "20.241,-",
+    "salesUnit": "System",
+    "rawSalesUnit": "system",
+    "salesQuantity": 1,
+    "unitPrice": 20241,
+    "unitPriceBefore": 20241
+   },
+   "bundleProducts": [
+    {
+     "brand": "unnu",
+     "modelType": "Stofdør",
+     "modelName": "C21 v2",
+     "name": "unnu C21 v2 Stofdør",
+     "bundleVariants": [
+      {
+       "productCode": "UNNUC21V2BK",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2bk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "UNNUC21V2BK"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/25d8f1bf-17c1-4326-b327-b3c0d11d226b",
+       "productCode": "UNNUC21V2GR",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2gr/",
+       "displayName": "Grå",
+       "color": {
+        "inRiverKey": "Grey",
+        "colorCode": "#666666",
+        "text": "Grå",
+        "productCode": "UNNUC21V2GR"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/f0e5a246-aedd-4b43-ad5a-a9cd6be161a5",
+       "productCode": "UNNUC21V2WH",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2wh/",
+       "displayName": "Hvid",
+       "color": {
+        "inRiverKey": "White",
+        "text": "Hvid",
+        "productCode": "UNNUC21V2WH"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2SI",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2si/",
+       "displayName": "Sølv",
+       "color": {
+        "inRiverKey": "Silver",
+        "text": "Sølv",
+        "productCode": "UNNUC21V2SI"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2COAL",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2coal/",
+       "displayName": "Grå",
+       "color": {
+        "inRiverKey": "Grey",
+        "colorCode": "#534F4C",
+        "text": "Grå",
+        "productCode": "UNNUC21V2COAL"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2COFEE",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2cofee/",
+       "displayName": "Brun",
+       "color": {
+        "inRiverKey": "Brown",
+        "colorCode": "#634832",
+        "text": "Brun",
+        "productCode": "UNNUC21V2COFEE"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2CONCRETE",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2concrete/",
+       "displayName": "Grå",
+       "color": {
+        "inRiverKey": "Grey",
+        "colorCode": "#786F6A",
+        "text": "Grå",
+        "productCode": "UNNUC21V2CONCRETE"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2FROST",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2frost/",
+       "displayName": "Frost",
+       "color": {
+        "inRiverKey": "Blue",
+        "text": "Frost",
+        "productCode": "UNNUC21V2FROST"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUC21V2LATTE",
+       "url": "/unnu-c21-v2-stofdoer/unnuc21v2latte/",
+       "displayName": "Grå",
+       "color": {
+        "inRiverKey": "Grey",
+        "colorCode": "#817569",
+        "text": "Grå",
+        "productCode": "UNNUC21V2LATTE"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      }
+     ],
+     "parentProductCode": "UNNUC21V2"
+    },
+    {
+     "brand": "unnu",
+     "modelType": "Trædør",
+     "modelName": "D21 v2",
+     "name": "unnu D21 v2 Trædør",
+     "bundleVariants": [
+      {
+       "productCode": "UNNUD21V2OA",
+       "url": "/unnu-d21-v2-traedoer/unnud21v2oa/",
+       "displayName": "Træfarvet",
+       "color": {
+        "inRiverKey": "Wood",
+        "colorCode": "#C6A27E",
+        "text": "Træfarvet",
+        "productCode": "UNNUD21V2OA"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "3.198,-",
+       "priceRaw": 1599,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/7ebedb33-bde9-4343-9f7c-91e30d791c0a",
+       "productCode": "UNNUD21V2BK",
+       "url": "/unnu-d21-v2-traedoer/unnud21v2bk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "UNNUD21V2BK"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/3eb06aa3-df35-42ab-bd57-9b73e37ebcc3",
+       "productCode": "UNNUD21V2WH",
+       "url": "/unnu-d21-v2-traedoer/unnud21v2wh/",
+       "displayName": "Hvid",
+       "color": {
+        "inRiverKey": "White",
+        "text": "Hvid",
+        "productCode": "UNNUD21V2WH"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "2.398,-",
+       "priceRaw": 1199,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      },
+      {
+       "productCode": "UNNUD21V2WA",
+       "url": "/unnu-d21-v2-traedoer/unnud21v2wa/",
+       "displayName": "Brun",
+       "color": {
+        "inRiverKey": "Brown",
+        "colorCode": "#773F1A",
+        "text": "Brun",
+        "productCode": "UNNUD21V2WA"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "3.198,-",
+       "priceRaw": 1599,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 2
+      }
+     ],
+     "parentProductCode": "UNNUD21V2"
+    },
+    {
+     "brand": "unnu",
+     "modelType": "Møbel",
+     "modelName": "UNNU 240 V2",
+     "name": "unnu UNNU 240 V2 Møbel",
+     "bundleVariants": [
+      {
+       "productCode": "UNNU240V2OA",
+       "url": "/unnu-unnu-240-v2-moebel/unnu240v2oa/",
+       "displayName": "Træfarvet",
+       "color": {
+        "inRiverKey": "Wood",
+        "colorCode": "#C6A27E",
+        "text": "Træfarvet",
+        "productCode": "UNNU240V2OA"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "12.999,-",
+       "priceRaw": 12999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      },
+      {
+       "productCode": "UNNU240V2BK",
+       "url": "/unnu-unnu-240-v2-moebel/unnu240v2bk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "UNNU240V2BK"
+       },
+       "inventoryStatus": {
+        "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "notInStockNonStockedItem"
+       },
+       "priceFormatted": "9.999,-",
+       "priceRaw": 9999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      },
+      {
+       "productCode": "UNNU240V2WA",
+       "url": "/unnu-unnu-240-v2-moebel/unnu240v2wa/",
+       "displayName": "Brun",
+       "color": {
+        "inRiverKey": "Brown",
+        "colorCode": "#773F1A",
+        "text": "Brun",
+        "productCode": "UNNU240V2WA"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "12.999,-",
+       "priceRaw": 12999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      },
+      {
+       "productCode": "UNNU240V2WH",
+       "url": "/unnu-unnu-240-v2-moebel/unnu240v2wh/",
+       "displayName": "Hvid",
+       "color": {
+        "inRiverKey": "White",
+        "text": "Hvid",
+        "productCode": "UNNU240V2WH"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "9.999,-",
+       "priceRaw": 9999,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "UNNU240V2"
+    },
+    {
+     "brand": "unnu",
+     "modelType": "Møbeltilbehør",
+     "modelName": "UNNU WB4X",
+     "name": "unnu UNNU WB4X Møbeltilbehør",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/352f7b1b-92df-4fcf-813f-8c1af90c00e7",
+       "productCode": "UNNUWB4",
+       "url": "/unnu-unnu-wb4x-moebeltilbehoer/unnuwb4/",
+       "displayName": "Sølv",
+       "color": {
+        "inRiverKey": "Silver",
+        "text": "Sølv",
+        "productCode": "UNNUWB4"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "749,-",
+       "priceRaw": 749,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "UNNUWB4X",
+     "reviews": {
+      "rating": 4.33333333333333,
+      "count": 3,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 1,
+       "4": 0,
+       "5": 2
+      }
+     }
+    },
+    {
+     "brand": "unnu",
+     "modelType": "Kabelskjuler",
+     "modelName": "05",
+     "name": "unnu 05 Kabelskjuler",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/f5196b96-3ded-4fb4-804a-5783d938fb9b",
+       "productCode": "UNNU05A",
+       "url": "/unnu-05-kabelskjuler/unnu05a/",
+       "displayName": "05A - med slids",
+       "color": {
+        "inRiverKey": "Grey",
+        "text": "05A - med slids",
+        "productCode": "UNNU05A"
+       },
+       "inventoryStatus": {
+        "description": "Forventet leveringstid 3-8 uger",
+        "canBuyOnline": true,
+        "hideNotificationOption": true,
+        "inventoryStatusType": "externalPurchaseNotInStock"
+       },
+       "priceFormatted": "897,-",
+       "priceRaw": 299,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 3
+      }
+     ],
+     "parentProductCode": "UNNU05BX"
+    }
+   ],
+   "lowestShippingPriceRaw": 499,
+   "sellableOnWeb": true,
+   "inventoryStatus": {
+    "description": "Forventet leveringstid 3-8 uger",
+    "canBuyOnline": true,
+    "numberOfStoresExperiencePartly": 7
+   }
+  },
+  "variantNavigationType": "dropDown",
+  "displayBookDemo": true,
+  "reviews": {
+   "rating": 4.86206896551724,
+   "count": 29,
+   "reviewCount": 2,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 2,
+    "5": 26
+   }
+  },
+  "boxContent": [],
+  "brandName": "unnu",
+  "modelName": "240 Furniture",
+  "modelType": "Møbelsystem",
+  "modelTypeKey": "FurnitureSystem"
+ }
+}

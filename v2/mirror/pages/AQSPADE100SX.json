@@ -1,0 +1,149 @@
+{
+ "sku": "AQSPADE100SX",
+ "url": "/audioquest-multi-spade-100s-spadestik/aqspade100s/",
+ "breadcrumb": [
+  {
+   "title": "Kabler",
+   "key": "cables",
+   "url": "/kabler/"
+  },
+  {
+   "title": "Højtalerstik",
+   "key": "speakerplug",
+   "url": "/kabler/hojtaler-stik/"
+  }
+ ],
+ "product": {
+  "id": 56984,
+  "skuCode": "AQSPADE100SX",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/audioquest_x1000.png?height=50",
+  "brandPage": "/marker/audioquest/",
+  "recommendedAlternatives": {
+   "productCodes": [
+    "AQSPADE300SX",
+    "AQSPADE500SX",
+    "DALI4SPADESTDX",
+    "ESSCL1SPADEX",
+    "ARGCL1SPADEX"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Spadestik til højtalerkabler\nForsølvede kontaktflader (Direct-Silver over Beryllium-Copper)\nMaksimal kabeltykkelse (ekskl. isolering): 6,6 mm2 / 9AWG\nSælges i sæt af 8 styk"
+     }
+    ]
+   },
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "AWG",
+      "value": "9"
+     },
+     {
+      "term": "Leder overfladeareal",
+      "value": "6,6 mm2"
+     }
+    ]
+   }
+  ],
+  "category": "Højtalerstik",
+  "modelTypeLink": {
+   "productFilterPageName": "Højtalerstik",
+   "text": "Se alt fra kategorien: Højtalerstik",
+   "url": "/kabler/hojtaler-stik/",
+   "id": 69916
+  },
+  "variants": [
+   {
+    "id": 55663,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "productCode": "AQSPADE100S",
+    "ean": "092592008076",
+    "priceDetails": {
+     "priceValueId": 795004,
+     "price": 472,
+     "priceFormatted": "472,-",
+     "salesUnit": "sæt",
+     "rawSalesUnit": "set",
+     "salesQuantity": 8,
+     "unitPrice": 59
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "0,2 x 0,2 x 5 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "AQSPADE100S"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 3,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/93129da4-3602-4f1a-a3f2-ac42c28d11ec"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/audioquest-spade-100s-spadestik/aqspade100s/",
+    "canonicalUrl": "/audioquest-spade-100s-spadestik/aqspade100s/",
+    "lowestShippingPriceRaw": 29,
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {
+   "rating": 4.33333333333333,
+   "count": 9,
+   "reviewCount": 4,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 4,
+    "5": 4
+   }
+  },
+  "brandName": "AudioQuest",
+  "modelName": "Multi-Spade 100S",
+  "modelType": "Spadestik",
+  "modelTypeKey": "Spade"
+ }
+}

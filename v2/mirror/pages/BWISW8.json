@@ -1,0 +1,176 @@
+{
+ "sku": "BWISW8",
+ "url": "/bowers--wilkins-isw-8-passiv-subwoofer/bwisw8wh/",
+ "breadcrumb": [
+  {
+   "title": "Højtaler",
+   "key": "speaker",
+   "url": "/hojtalere/"
+  },
+  {
+   "title": "Subwoofer",
+   "key": "subwoofer",
+   "url": "/hojtalere/subwoofer/"
+  }
+ ],
+ "product": {
+  "id": 197600,
+  "skuCode": "BWISW8",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/bw_x1000.png?height=50",
+  "brandPage": "/marker/bowers-wilkins/",
+  "recommendedProducts": {
+   "productCodes": [
+    "BWCDA2HD"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAccessories": {
+   "productCodes": [
+    "SPEAKONNNL4FX",
+    "BWBBISW8X"
+   ],
+   "isOutlet": "false"
+  },
+  "recommendedAlternatives": {
+   "productCodes": [
+    "DALIPHANTOMSUB100",
+    "LYNGBW20",
+    "BWISW3",
+    "BWISW4",
+    "BWISW6"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "Bas størrelse",
+      "value": "12\""
+     }
+    ]
+   }
+  ],
+  "category": "Subwoofer",
+  "modelTypeLink": {
+   "productFilterPageName": "Subwoofer",
+   "text": "Se alt fra kategorien: Subwoofer",
+   "url": "/hojtalere/subwoofer/",
+   "id": 69681
+  },
+  "variants": [
+   {
+    "id": 197603,
+    "displayName": "Hvid",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "BWISW8WH",
+    "ean": "0714346337569",
+    "priceDetails": {
+     "priceValueId": 1087543,
+     "price": 12999,
+     "priceFormatted": "12.999,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 12999
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Hvid"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "5"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "6"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "33,2 x 46 x 45,5 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "White",
+     "text": "Hvid",
+     "productCode": "BWISW8WH"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/7cbab20e-cdcf-445e-9277-8e14ed0053ea"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/bc918f42-761e-4797-87b4-a1fdde0d246c"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/7422cda9-80c2-4d0b-89f5-0e2158570216"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/bowers--wilkins-isw-8-passiv-subwoofer/bwisw8wh/",
+    "canonicalUrl": "/bowers--wilkins-isw-8-passiv-subwoofer/bwisw8wh/",
+    "addOns": [
+     {
+      "sku": "ESSBA1SUB300",
+      "priceDetails": {
+       "price": 199,
+       "priceFormatted": "199,-",
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "salesQuantity": 1,
+       "unitPrice": 199
+      },
+      "url": "/essentials-basic-sub-subwoofer-kabel/essba1sub300/",
+      "imageUrl": "https://images.hifiklubben.com/image/e5cae6e4-65ff-46fb-9e80-8d5b886f2e4d",
+      "brand": "Essentials",
+      "modelType": "Subwoofer-kabel",
+      "modelName": "Basic Sub (3 Meter)"
+     }
+    ]
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [
+   {
+    "modelType": "Passiv subwoofer",
+    "price": {
+     "price": 23598,
+     "priceFormatted": "23.598,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 23598,
+     "unitPriceBefore": 23598
+    },
+    "image": "https://images.hifiklubben.com/image/12ab7180-f9c1-435e-a072-06a1f865505e",
+    "title": "ISW-8 + BBISW8",
+    "url": "/bwisw8-bwbbisw8/"
+   }
+  ],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "Bowers & Wilkins",
+  "modelName": "ISW-8",
+  "modelType": "Passiv subwoofer",
+  "modelTypeKey": "PassiveSubwoofer"
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "sku": "SENAMBEOSBMINI-SENAMBEOSUB",
+ "url": "/senambeosbmini-senambeosub/",
+ "breadcrumb": [
+  {
+   "title": "TV",
+   "key": "tvandsurround",
+   "url": "/tv/"
+  },
+  {
+   "title": "Soundbar højtaler / TV-lyd",
+   "key": "soundbar",
+   "url": "/tv/soundbar-hojtaler-tv-lyd/"
+  }
+ ],
+ "product": {
+  "id": 242228,
+  "skuCode": "SENAMBEOSBMINI-SENAMBEOSUB",
+  "recommendedAccessories": {
+   "productCodes": [
+    "SENAMBEOSBPLUSWM",
+    "SENAMBEOSBPLUS"
+   ],
+   "isOutlet": "false"
+  },
+  "category": "Bundle",
+  "modelTypeLink": {
+   "productFilterPageName": "Soundbar højtaler / TV-lyd",
+   "text": "Se alt fra kategorien: Soundbar højtaler / TV-lyd",
+   "url": "/tv/soundbar-hojtaler-tv-lyd/",
+   "id": 69786
+  },
+  "featureLogos": [],
+  "testGroups": [
+   {
+    "title": "Sennheiser AMBEO Sub Trådløs subwoofer",
+    "tests": [
+     {
+      "awardLanguage": "Dansk",
+      "link": {
+       "title": "Lyd og Billede - Sennheiser Ambeo Plus + Subwoofer",
+       "url": "https://www.lydogbillede.dk/test/hojttalere/6-high-end-soundbars/sennheiser/"
+      },
+      "image": {
+       "url": "https://static.hifiklubben.com/globalassets/product-images/test/ambeo_award_dk.png",
+       "altText": ""
+      }
+     },
+     {
+      "awardLanguage": "Svensk",
+      "link": {
+       "title": "Ljud och Bild - Sennheiser Ambeo Plus + Subwoofer",
+       "url": "https://www.ljudochbild.se/test/horlurar/anvand-huvudet/sennheiser-hd555/"
+      },
+      "image": {
+       "url": "https://static.hifiklubben.com/globalassets/product-images/test/ambeo_award_se.png",
+       "altText": ""
+      }
+     }
+    ]
+   },
+   {
+    "title": "Sennheiser AMBEO Soundbar Mini Soundbar",
+    "tests": [
+     {
+      "awardLanguage": "Hollandsk",
+      "link": {
+       "title": "HiFI NL",
+       "url": "https://hifi.nl/artikel/34311/Review-Sennheiser-Ambeo-Mini.html"
+      },
+      "image": {
+       "url": "https://static.hifiklubben.com/globalassets/product-images/test/2024-11-18-11_38_15-review-sennheiser-ambeo-mini.png",
+       "altText": ""
+      }
+     }
+    ]
+   }
+  ],
+  "bundle": {
+   "name": "Sennheiser AMBEO SB MINI + AMBEO SUB Soundbar system/pakke",
+   "code": "SENAMBEOSBMINI-SENAMBEOSUB",
+   "ribbons": [
+    {
+     "text": "Spar 28%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
+   "images": [
+    {
+     "url": "https://images.hifiklubben.com/image/5d2157fd-2592-4090-98d4-38e13bb041e4"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/7749444a-6a88-4bda-915c-32a98602a067"
+    }
+   ],
+   "lifestyleImages": [
+    {
+     "url": "https://images.hifiklubben.com/image/1eb3aac8-38db-4275-af81-570bbffd588e"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/c4fe9760-1b0d-4de0-9d01-e758cd72a411"
+    },
+    {
+     "url": "https://images.hifiklubben.com/image/d198aa9a-bbe8-4181-ad46-9dcf3441b553"
+    }
+   ],
+   "priceDetails": {
+    "price": 8480,
+    "priceFormatted": "8.480,-",
+    "priceBefore": 11789,
+    "priceBeforeFormatted": "11.789,-",
+    "priceSavingsFormatted": "3.309,-",
+    "salesUnit": "System",
+    "rawSalesUnit": "system",
+    "salesQuantity": 1,
+    "unitPrice": 8480,
+    "unitPriceBefore": 11789
+   },
+   "bundleProducts": [
+    {
+     "brand": "Sennheiser",
+     "modelType": "Trådløs subwoofer",
+     "modelName": "AMBEO Sub",
+     "name": "Sennheiser AMBEO Sub Trådløs subwoofer",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/caf7338b-a44e-4c4b-b60a-0aa265ab4343",
+       "productCode": "SENAMBEOSUBBK",
+       "url": "/sennheiser-ambeo-sub-traadloes-subwoofer/senambeosubbk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "SENAMBEOSUBBK"
+       },
+       "inventoryStatus": {
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
+        "canBuyOnline": true,
+        "availableQuantity": 48,
+        "inventoryStatusType": "warehouseInStock"
+       },
+       "priceFormatted": "4.490,-",
+       "priceRaw": 4490,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "SENAMBEOSUB"
+    },
+    {
+     "brand": "Sennheiser",
+     "modelType": "Soundbar",
+     "modelName": "AMBEO Soundbar Mini",
+     "name": "Sennheiser AMBEO Soundbar Mini Soundbar",
+     "bundleVariants": [
+      {
+       "imageUrl": "https://images.hifiklubben.com/image/c71398ba-044a-4ddb-a838-120ff662fe16",
+       "productCode": "SENAMBEOSBMINIBK",
+       "url": "/sennheiser-ambeo-soundbar-mini-soundbar/senambeosbminibk/",
+       "displayName": "Sort",
+       "color": {
+        "inRiverKey": "Black",
+        "text": "Sort",
+        "productCode": "SENAMBEOSBMINIBK"
+       },
+       "inventoryStatus": {
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
+        "canBuyOnline": true,
+        "availableQuantity": 36,
+        "inventoryStatusType": "warehouseInStock"
+       },
+       "priceFormatted": "3.990,-",
+       "priceRaw": 3990,
+       "salesUnit": "stk",
+       "rawSalesUnit": "piece",
+       "quantity": 1
+      }
+     ],
+     "parentProductCode": "SENAMBEOSBMINI"
+    }
+   ],
+   "sellableOnWeb": true,
+   "inventoryStatus": {
+    "inStock": true,
+    "description": "På lager. Leveringstid 1-2 hverdage",
+    "canBuyOnline": true
+   }
+  },
+  "variantNavigationType": "dropDown",
+  "displayBookDemo": true,
+  "reviews": {
+   "rating": 4.67368421052632,
+   "count": 95,
+   "reviewCount": 55,
+   "distribution": {
+    "1": 2,
+    "2": 0,
+    "3": 6,
+    "4": 11,
+    "5": 76
+   }
+  },
+  "boxContent": [],
+  "brandName": "Sennheiser",
+  "modelName": "AMBEO SB MINI + AMBEO SUB",
+  "modelType": "Soundbar system/pakke",
+  "modelTypeKey": "SoundbarSystem"
+ }
+}

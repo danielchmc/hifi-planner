@@ -1,0 +1,153 @@
+{
+ "sku": "AQBANANA500SX",
+ "url": "/audioquest-banana-500s-bananstik/aqbanana500s/",
+ "breadcrumb": [
+  {
+   "title": "Kabler",
+   "key": "cables",
+   "url": "/kabler/"
+  },
+  {
+   "title": "Højtalerstik",
+   "key": "speakerplug",
+   "url": "/kabler/hojtaler-stik/"
+  }
+ ],
+ "product": {
+  "id": 141276,
+  "skuCode": "AQBANANA500SX",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/audioquest_x1000.png?height=50",
+  "brandPage": "/marker/audioquest/",
+  "recommendedAlternatives": {
+   "productCodes": [
+    "AQBANANA100SX",
+    "AQBANANA300SX",
+    "DALI4BANANALUXX",
+    "ESSCL1BANANAX",
+    "ESSBA1BANANAX",
+    "ESSPR1BANANAX",
+    "ESSPR1BANANAANGLEX",
+    "ESSBA1BANBFASIX",
+    "ESSCL1BANBFASIX"
+   ],
+   "isOutlet": "false"
+  },
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Bananstik til højtalerkabler\nUdført i ét stykke ultrarent kobber (Pure Purple Copper)\nForsølvede kontaktflader (Hanging-Silver)\nMaksimal kabeltykkelse (ekskl. isolering): 6,6 mm2 / 9AWG\nSælges i sæt af fire styk\n\nOBS: For at forhindre uheld er terminalerne på forstærkere, receivere og højtalere ofte blokeret med små plasticpropper. De skal lirkes ud med en meget lille skruetrækker eller en anden spids genstand, inden du kan tilslutte bananstikkene."
+     }
+    ]
+   },
+   {
+    "index": 10,
+    "title": "Ydelse",
+    "content": [
+     {
+      "term": "AWG",
+      "value": "9"
+     },
+     {
+      "term": "Leder overfladeareal",
+      "value": "6 mm2"
+     }
+    ]
+   }
+  ],
+  "category": "Højtalerstik",
+  "modelTypeLink": {
+   "productFilterPageName": "Højtalerstik",
+   "text": "Se alt fra kategorien: Højtalerstik",
+   "url": "/kabler/hojtaler-stik/",
+   "id": 69916
+  },
+  "variants": [
+   {
+    "id": 141277,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "AQBANANA500S",
+    "ean": "092592079762",
+    "priceDetails": {
+     "priceValueId": 1012156,
+     "price": 1199,
+     "priceFormatted": "1.199,-",
+     "salesUnit": "sæt",
+     "rawSalesUnit": "set",
+     "salesQuantity": 1,
+     "unitPrice": 1199
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,14"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,14"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "7 x 3 x 21 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "AQBANANA500S"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 2,
+     "availableQuantity": 13,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/4cc27d50-c0e2-4bda-8574-576a745aebfa"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/audioquest-banana-500s-bananstik/aqbanana500s/",
+    "canonicalUrl": "/audioquest-banana-500s-bananstik/aqbanana500s/",
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "reviews": {
+   "rating": 5,
+   "count": 5,
+   "reviewCount": 2,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 5
+   }
+  },
+  "brandName": "AudioQuest",
+  "modelName": "Banana 500S",
+  "modelType": "Bananstik",
+  "modelTypeKey": "BananaPlug"
+ }
+}

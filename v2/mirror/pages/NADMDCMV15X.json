@@ -1,0 +1,109 @@
+{
+ "sku": "NADMDCMV15X",
+ "url": "/nad-mv15-mdc-modul/nadmdcmv15/",
+ "breadcrumb": [
+  {
+   "title": "Tilbehør",
+   "key": "accessories",
+   "url": "/tilbehor/"
+  }
+ ],
+ "product": {
+  "id": 178690,
+  "skuCode": "NADMDCMV15X",
+  "brandLogo": "https://static.hifiklubben.com/globalassets/brands-images/nad_logo_3.jpg?height=50",
+  "brandPage": "/marker/nad/",
+  "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "MDC-indstiksmodul til NAD M15HD* HDMI 1.4a med 3D/Audio Return Channel/HDMI-CEC 6 x HDMI-ind 2 x HDMI-ud (samtidigt output)** Fuld 3D video-understøttelse op til 1080p/24*** Understøtter analog-til-HDMI videokonvertering*** Ethernet-tilslutning til netværksbaserede kontrolsystemer Montering foretages i en Hi-Fi Klubben butik (inkluderet i pris) * MV15 kan ikke installeres i den oprindelige M15, da denne ikke er MDC-opbygget. Passer heller ikke til NAD’s MDC-opbyggede receivere, da tilslutninger er specielt tilpasset M15HD. ** De to udgange har samme videospecifikationer. Ved samtidig brug bestemmes det fælles output af HDMI 1-displayet. HDMI 1- og HDMI 2-udgangene kan herudover køre én ad gangen med opløsning bestemt af det respektive display. *** Ingen indbygget scalerfunktion. \r\n"
+     }
+    ]
+   }
+  ],
+  "category": "Tilbehør",
+  "modelTypeLink": {
+   "productFilterPageName": "Tilbehør",
+   "text": "Se alt fra kategorien: Tilbehør",
+   "url": "/tilbehor/",
+   "id": 69665
+  },
+  "variants": [
+   {
+    "id": 2286,
+    "displayName": "Sort",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "NADMDCMV15",
+    "ean": "5703120270531",
+    "priceDetails": {
+     "priceValueId": 1175176,
+     "price": 4999,
+     "priceFormatted": "4.999,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 4999
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Sort"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,23"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "1"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "16,5 x 6 x 29 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Black",
+     "text": "Sort",
+     "productCode": "NADMDCMV15"
+    },
+    "inventoryStatus": {
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 27,
+     "inventoryStatusType": "warehouseInStock"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/fc478df5-6131-4d8c-8305-874267933056"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/nad-mv15-mdc-modul/nadmdcmv15/",
+    "canonicalUrl": "/nad-mv15-mdc-modul/nadmdcmv15/",
+    "addOns": []
+   }
+  ],
+  "featureLogos": [],
+  "testGroups": [],
+  "bundleRelations": [],
+  "displayBookDemo": true,
+  "reviews": {},
+  "brandName": "NAD",
+  "modelName": "MV15",
+  "modelType": "MDC-modul",
+  "modelTypeKey": "MDCModule"
+ }
+}
