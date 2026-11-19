@@ -54,6 +54,19 @@
     const q = (v && v.sku) || p.site || p.sku;
     return q ? 'https://www.hifiklubben.dk/sog/?q=' + encodeURIComponent(q) : '';
   };
+  // the one colour a search points at: a word that is in this variant's SKU, colour name or colour key but not in every variant's
+  // ("raclarity66b", "66bk", "sort", "black" → Clarity 66 Sort). null when the search fits all colours alike.
+  HP.matchVariant = (p, words) => {
+    const vs = (p && p.vars) || [];
+    if (vs.length < 2 || !words || !words.length) return null;
+    const hay = vs.map((v) => (v.sku + ' ' + v.label + ' ' + (v.key || '')).toLowerCase());
+    let best = null, bs = 0;
+    vs.forEach((v, i) => {
+      const sc = words.filter((w) => hay[i].includes(w) && !hay.every((x) => x.includes(w))).length;
+      if (sc > bs) { bs = sc; best = v; }
+    });
+    return best;
+  };
   HP.variantOf = (p, item) => (item && item.v && p && (p.vars || []).find((x) => x.sku === item.v)) || null;
   HP.imagesOf = (p, item) => { const imgs = ((p && p.img) || []).slice(), v = HP.variantOf(p, item); if (v && v.img) imgs[0] = v.img; return imgs.filter(Boolean); };
   HP.priceOf = (p, item) => { const v = HP.variantOf(p, item); return v ? { price: v.price, was: v.was || 0, label: v.label } : { price: p.price || 0, was: p.was > p.price ? p.was : 0, label: '' }; };
@@ -174,7 +187,7 @@
     cat.byId = {};
     cat.list.forEach((p) => {
       cat.byId[p.id] = p;
-      p._hay = [p.brand, p.name, p.sku, ...(p.vars || []).map((v) => v.sku + ' ' + v.label), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
+      p._hay = [p.brand, p.name, p.sku, ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
         p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
     });
     const tb = (DATA.templates || []).filter((t) => !d.delTemplates.includes(t.id)).map((t) => d.templates[t.id] || t);
@@ -206,6 +219,19 @@
     ['TV', ['TV', 'OLED', 'QLED']],
     ['Utilities', ['D/A Converters', 'A/D Converters', 'Headphone Amplifiers', 'Wireless Adapters', 'Bluetooth Receivers', 'Peripherals', 'Stand-in Products']],
   ];
+
+  // Danish names for the category chips (the catalogue's categories are in English)
+  const CAT_DA = { Amplifiers: 'Forstærkere', Speakers: 'Højttalere', Sources: 'Kilder', TV: 'TV', Utilities: 'Tilbehør',
+    'Integrated Amplifiers': 'Integrerede', 'Amplifiers with Streaming': 'Med streaming', 'Amplifiers with CD': 'Med CD', 'Compact Amplifiers': 'Kompakte', 'Compact Amplifiers with Streaming': 'Kompakte m. streaming',
+    'Pre Amplifiers': 'Forforstærkere', 'Power Amplifiers': 'Effektforstærkere', 'Power Amplifiers CI': 'Effekt CI', 'Multi-Channel Amplifiers': 'Flerkanals', 'Multiroom Amplifiers': 'Multiroom',
+    Receivers: 'Receivere', 'Home Cinema Receivers': 'Hjemmebio-receivere', 'Surround-Processors': 'Surround-processorer',
+    'Active Speakers': 'Aktive', 'Passive Speakers': 'Passive', 'Floorstanding Speakers': 'Gulvhøjttalere', 'Compact Speakers': 'Kompakthøjttalere', 'On-Wall Speakers': 'Væghøjttalere', 'Center Speakers': 'Center',
+    Subwoofers: 'Subwoofere', 'Wireless/Bluetooth Speakers': 'Trådløse / Bluetooth', 'Soundbar/TV Audio': 'Soundbars / TV-lyd', 'CI & Outdoor Speakers': 'Indbygning & udendørs',
+    Streamers: 'Streamere', 'Streamers with Radio': 'Streamere m. radio', 'CD Players': 'CD-afspillere', Turntables: 'Pladespillere', 'RIAA Amplifiers': 'RIAA', Radios: 'Radioer', 'Radios with DAB': 'DAB-radioer',
+    'Radios with FM': 'FM-radioer', 'Internet Radios': 'Internetradioer', OLED: 'OLED', QLED: 'QLED',
+    'D/A Converters': 'DAC', 'A/D Converters': 'ADC', 'Headphone Amplifiers': 'Hovedtelefonforstærkere', 'Wireless Adapters': 'Trådløse adaptere', 'Bluetooth Receivers': 'Bluetooth-modtagere', Peripherals: 'Udstyr', 'Stand-in Products': 'Pladsholdere' };
+  const CAT_EN = { 'Floorstanding Speakers': 'Floorstanding', 'Compact Speakers': 'Compact', 'On-Wall Speakers': 'On-wall', 'Center Speakers': 'Center', 'Active Speakers': 'Active', 'Passive Speakers': 'Passive', 'Wireless/Bluetooth Speakers': 'Wireless / Bluetooth', 'CI & Outdoor Speakers': 'CI & outdoor', Utilities: 'Accessories' };
+  HP.catLabel = (c) => (HP.lang() === 'da' ? CAT_DA[c] : CAT_EN[c]) || c;
 
   /* ---------- document store ---------- */
   const blank = () => ({ v: 4, name: '', pages: 1, orient: 'landscape', ci: false, ciSize: 90, ms: 34, mk: [], sc: 0, items: [], conns: [], plan: null });

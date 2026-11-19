@@ -5,11 +5,13 @@
   const C = () => HP.canvas;
 
   /* ---------- shared: product row + drag from a list onto the canvas ---------- */
-  function productRow(p, extra) {
-    return h('.prow', { data: { id: p.id } },
-      h('.thumb', null, HP.imgEl((p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
-      h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, p.brand, p.price ? ' · ' : '', (p.vars || []).length > 1 && new Set(p.vars.map((v) => v.price)).size > 1 ? t('from ', 'fra ') : '', p.was > p.price ? h('s', null, HP.money(p.was)) : null, p.was > p.price ? ' ' : '', p.price ? h('span' + (p.was > p.price ? '.sale' : ''), null, HP.money(p.price)) : null)),
-      h('.pmeta', null, (p.vars || []).length > 1 && h('span.nvar', { title: p.vars.map((v) => v.label).join(', ') }, p.vars.slice(0, 4).map((v) => h('i', { style: { background: HP.site.swatch(v) } }))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
+  // v: a colour variant to show (picture, colour name and price of that colour)
+  function productRow(p, extra, v) {
+    const price = v ? v.price : p.price, was = v ? v.was || 0 : p.was || 0;
+    return h('.prow' + (v ? '.isvar' : ''), { data: { id: p.id } },
+      h('.thumb', null, HP.imgEl((v && v.img) || (p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
+      h('.pinfo', null, h('.pname', null, p.name, v && h('span.vlabel', null, ' · ' + v.label)), h('.psub', null, v ? v.sku : p.brand, price ? ' · ' : '', !v && (p.vars || []).length > 1 && new Set(p.vars.map((x) => x.price)).size > 1 ? t('from ', 'fra ') : '', was > price ? h('s', null, HP.money(was)) : null, was > price ? ' ' : '', price ? h('span' + (was > price ? '.sale' : ''), null, HP.money(price)) : null)),
+      h('.pmeta', null, (p.vars || []).length > 1 && h('span.nvar', { title: p.vars.map((x) => x.label).join(', ') }, p.vars.slice(0, 4).map((x) => h('i' + (v && x.sku === v.sku ? '.on' : ''), { style: { background: HP.site.swatch(x) } }))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
   }
   /* Drag a product or Shortcut from the sidebar onto the canvas.
      Mouse: drag, or click to add. Touch: the list scrolls normally, a tap adds, a long-press picks it up for dragging. */
@@ -48,64 +50,100 @@
 
   /* ---------- sidebar ---------- */
   function buildSidebar() {
-    let tab = LS.get('tab', 'products'), group = '', rows = [];
-    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, port…', 'Søg navn, brand, SKU, port…'), oninput: filter });
-    const catSel = h('select', { onchange: filter, title: t('Category', 'Kategori') });
-    const brandSel = h('select', { onchange: filter, title: 'Brand' });
-    const chips = h('.chips');
+    let tab = LS.get('tab', 'products'), group = '', sub = '', page = 0, rows = [], hits = [];
+    const flags = { sale: false, bt: false, wifi: false };
+    const PER = 30; // rows per page: only these rows (and their thumbnails) are built and loaded
+    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { page = 0; filter(); } });
+    const brandSel = h('select', { onchange: () => { page = 0; filter(); }, title: 'Brand' });
+    const sortSel = h('select', { onchange: () => { page = 0; filter(); }, title: t('Sort', 'Sortér') },
+      [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
+    const chips = h('.chips.groups'), subChips = h('.chips.subs'), flagChips = h('.chips.flags');
     const count = h('span.count');
     const list = h('.plist#sb-list');
+    const pager = h('.pager');
     const scList = h('.sclist');
     const tabs = h('.tabs', null,
       h('button', { data: { tab: 'products' }, onclick: () => setTab('products') }, t('Products', 'Produkter')),
       h('button#tab-shortcuts', { data: { tab: 'shortcuts' }, onclick: () => setTab('shortcuts') }, icon('bolt', 14), t('Shortcuts', 'Genveje')));
-    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search), chips, h('.selrow', null, catSel, brandSel)),
-      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list);
+    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search), chips, subChips, flagChips, h('.selrow', null, brandSel, sortSel)),
+      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list, pager);
     const scPane = h('.pane', null, scList);
     const el = h('aside#sidebar', null, h('button.icon-btn.drawer-x', { title: t('Close', 'Luk'), onclick: () => Pn.drawer(false) }, icon('x')), tabs, prodPane, scPane);
 
     function setTab(x) { tab = x; LS.set('tab', x); tabs.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.tab === x)); prodPane.hidden = x !== 'products'; scPane.hidden = x !== 'shortcuts'; }
     function fillSelects() {
-      const present = new Set(cat.products().flatMap((p) => p.cats || []));
-      const keepCat = catSel.value, keepBrand = brandSel.value;
-      catSel.textContent = ''; catSel.append(h('option', { value: '' }, t('All categories', 'Alle kategorier')));
-      const known = new Set();
-      HP.CAT_TREE.filter((g) => !group || g[0] === group).forEach(([g, subs]) => {
-        const og = h('optgroup', { label: g });
-        subs.forEach((s) => { known.add(s); if (present.has(s)) og.append(h('option', { value: s }, s)); });
-        if (og.children.length) catSel.append(og);
-      });
-      if (!group) { const rest = [...present].filter((c) => !HP.CAT_TREE.some((g) => g[1].includes(c))).sort(); if (rest.length) catSel.append(h('optgroup', { label: t('Other', 'Andet') }, rest.map((s) => h('option', { value: s }, s)))); }
-      catSel.value = [...catSel.options].some((o) => o.value === keepCat) ? keepCat : '';
+      const keepBrand = brandSel.value;
       brandSel.textContent = ''; brandSel.append(h('option', { value: '' }, t('All brands', 'Alle brands')));
       [...new Set(cat.products().map((p) => p.brand))].sort((a, b) => a.localeCompare(b)).forEach((b) => brandSel.append(h('option', { value: b }, b)));
       brandSel.value = keepBrand;
-      chips.textContent = '';
-      [['', t('All', 'Alle')], ...HP.CAT_TREE.map((g) => [g[0], g[0]])].forEach(([g, label]) => chips.append(h('button' + (group === g ? '.on' : ''), { onclick: () => { group = g; fillSelects(); filter(); } }, label)));
     }
-    const arm = () => { const s = C().stamp && C().stamp(); (rows || []).forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };
+    const groupOf = (g) => (HP.CAT_TREE.find((x) => x[0] === g) || [0, []])[1];
+    const inGroup = (p, g) => !g || (p.cats || []).some((c) => groupOf(g).includes(c));
+    const onSale = (p) => p.was > p.price || (p.vars || []).some((v) => v.was > v.price);
+    // chips show how many products each choice would give with the other filters as they are
+    function drawChips(base) {
+      chips.textContent = ''; subChips.textContent = ''; flagChips.textContent = '';
+      const chip = (on, label, n, fn) => h('button' + (on ? '.on' : ''), { onclick: fn, disabled: !on && !n }, label, h('span.n', null, n));
+      chips.append(chip(!group, t('All', 'Alle'), base.length, () => { group = ''; sub = ''; page = 0; filter(); }));
+      HP.CAT_TREE.forEach(([g]) => chips.append(chip(group === g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, () => { group = group === g ? '' : g; sub = ''; page = 0; filter(); })));
+      if (group) {
+        const inG = base.filter((p) => inGroup(p, group));
+        groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subChips.append(chip(sub === c, HP.catLabel(c), n, () => { sub = sub === c ? '' : c; page = 0; filter(); })); });
+      }
+      subChips.hidden = !group;
+      const sb = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)));
+      [['sale', t('Sale', 'Tilbud'), onSale], ['bt', 'Bluetooth', (p) => p.bt], ['wifi', 'WiFi', (p) => p.wifi]].forEach(([k, label, fn]) => {
+        const others = sb.filter((p) => Object.keys(flags).every((f) => f === k || !flags[f] || flagFn[f](p)));
+        flagChips.append(chip(flags[k], label, others.filter(fn).length, () => { flags[k] = !flags[k]; page = 0; filter(); }));
+      });
+    }
+    const flagFn = { sale: onSale, bt: (p) => p.bt, wifi: (p) => p.wifi };
+    const arm = () => { const s = C().stamp && C().stamp(); rows.forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };
     HP.on('stamp', arm);
-    function buildList() {
+    function buildList() { page = 0; filter(); }
+    // relevance: SKU or name starting with the search, then name/brand containing it, discontinued last
+    const score = (p, words, v) => {
+      if (!words.length) return p.gone ? 9 : 0;
+      const w = words.join(' '), name = (p.brand + ' ' + p.name).toLowerCase(), skus = [p.sku, ...(p.vars || []).map((x) => x.sku)].map((x) => String(x || '').toLowerCase());
+      let s = skus.some((x) => x === w) ? 0 : skus.some((x) => x.startsWith(w)) ? 1 : p.name.toLowerCase().startsWith(w) || name.startsWith(w) ? 2 : name.includes(w) ? 3 : 4;
+      if (v) s -= 0.5;
+      return s + (p.gone ? 9 : 0);
+    };
+    function filter() {
+      const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
+      const base = cat.products().filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
+      drawChips(base);
+      hits = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)) && Object.keys(flags).every((f) => !flags[f] || flagFn[f](p)))
+        .map((p, i) => { const v = HP.matchVariant(p, words); return { p, v, i, s: score(p, words, v), price: (v ? v.price : p.price) || 0 }; });
+      const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
+      hits.sort(so === 'pa' ? (a, b) => !!a.p.gone - !!b.p.gone || a.price - b.price : so === 'pd' ? (a, b) => !!a.p.gone - !!b.p.gone || b.price - a.price
+        : so === 'name' ? (a, b) => loc(a.p.name, b.p.name) : so === 'brand' ? (a, b) => loc(a.p.brand, b.p.brand) || loc(a.p.name, b.p.name) : (a, b) => a.s - b.s || a.i - b.i);
+      const pages = Math.max(1, Math.ceil(hits.length / PER));
+      page = Math.min(page, pages - 1);
+      count.textContent = hits.length ? (page * PER + 1) + '–' + Math.min(hits.length, (page + 1) * PER) + ' ' + t('of', 'af') + ' ' + hits.length : '0 ' + t('products', 'produkter');
       list.textContent = '';
-      rows = cat.products().slice().sort((a, b) => !!a.gone - !!b.gone).map((p) => {
-        const r = productRow(p);
-        // searching for a colour's own SKU (e.g. RACLARITY66BK) adds the product in that colour
-        const vsku = () => { const q = ((document.getElementById('sb-search') || {}).value || '').toUpperCase().split(/\s+/); const v = (p.vars || []).find((x) => q.includes(x.sku.toUpperCase())); return v && v.sku; };
-        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku()), () => { C().addProductCenter(p.id, vsku()); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
+      if (!hits.length) list.append(h('.empty', null, t('No products match.', 'Ingen produkter passer.')));
+      rows = hits.slice(page * PER, (page + 1) * PER).map(({ p, v }) => {
+        const r = productRow(p, null, v);
+        // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
+        const vsku = v && v.sku;
+        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
         list.append(r);
         return { p, r };
       });
-      arm(); filter();
+      drawPager(pages);
+      arm();
     }
-    function filter() {
-      const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), cv = catSel.value, bv = brandSel.value;
-      const gcats = group ? HP.CAT_TREE.find((g) => g[0] === group)[1] : null;
-      let n = 0;
-      rows.forEach(({ p, r }) => {
-        const ok = words.every((w) => p._hay.includes(w)) && (!cv || (p.cats || []).includes(cv)) && (!bv || p.brand === bv) && (!gcats || (p.cats || []).some((c) => gcats.includes(c)));
-        r.hidden = !ok; if (ok) n++;
-      });
-      count.textContent = n + ' ' + t('products', 'produkter');
+    function go(n) { page = n; filter(); list.scrollTop = 0; }
+    function drawPager(pages) {
+      pager.textContent = ''; pager.hidden = pages < 2;
+      if (pages < 2) return;
+      const btn = (n, label, on) => h('button' + (on ? '.on' : ''), { onclick: () => go(n), disabled: n < 0 || n >= pages }, label);
+      pager.append(btn(page - 1, '‹'));
+      const show = new Set([0, pages - 1, page - 1, page, page + 1].filter((n) => n >= 0 && n < pages));
+      let last = -1;
+      [...show].sort((a, b) => a - b).forEach((n) => { if (n - last > 1) pager.append(h('span.gap', null, '…')); pager.append(btn(n, String(n + 1), n === page)); last = n; });
+      pager.append(btn(page + 1, '›'));
     }
     function buildShortcuts() {
       scList.textContent = '';

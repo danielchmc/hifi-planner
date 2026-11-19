@@ -107,7 +107,14 @@ Product pages are read in batches (60 per run, new products first), so all pages
 
 - In the printed PDF every product name (on cards, in the price list and in the legend) is a link to the product page on hifiklubben.dk, marked with a small ↗. On screen the names are not clickable, so cards still select and drag normally.
 - If a colour is chosen on the card, the link goes to that colour's page.
-- Colour variant SKUs (e.g. RACLARITY66BK) are in the catalogue and can be searched in the sidebar. Adding a product from such a search adds it in that colour.
+- Colour variant SKUs (e.g. RACLARITY66BK) are in the catalogue and can be searched in the sidebar.
+
+## Product search (sidebar)
+
+- **Pages.** The list shows 30 products at a time with page buttons below it, so only those 30 thumbnails are loaded. Changing the search or a filter goes back to page 1.
+- **Categories.** The top row of chips is the main groups (Amplifiers, Speakers, Sources, TV, Accessories) with the number of matching products. Picking a group opens a second row with its sub-categories (Floorstanding, Subwoofers, …), also with counts. Click a chip again to turn it off. Counts follow the search and the other filters; a chip with nothing to show is greyed out.
+- **Quick filters.** Sale, Bluetooth and WiFi can be combined with everything else. Brand and sort order (best match, price up/down, name, brand) are dropdowns.
+- **Colours.** If the search points at one colour, by part of its SKU (`raclarity66b`, `66bk`) or its colour name (`clarity sort`, `black`), the row shows that colour's picture, name, SKU and price, and adding it gives the card that colour. A search that fits every colour alike (`raclarity66`) shows the product normally. Code: `HP.matchVariant` in `js/core.js`, `buildSidebar()` in `js/panels.js`, Danish chip names in `HP.catLabel`.
 
 ## Share links
 
