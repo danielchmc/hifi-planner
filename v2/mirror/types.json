@@ -3,10 +3,10 @@
   {
    "type": "Stereosystem til TV",
    "keys": {
-    "TVStereo": 50
+    "TVStereo": 1
    },
    "cats": {
-    "HiFi > Stereo systemer": 50
+    "HiFi > Stereo systemer": 1
    },
    "count": 52,
    "bundles": 52,
@@ -22,10 +22,10 @@
   {
    "type": "Soundbar system/pakke",
    "keys": {
-    "SoundbarSystem": 39
+    "SoundbarSystem": 1
    },
    "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 39
+    "TV > Soundbar højtaler / TV-lyd": 1
    },
    "count": 40,
    "bundles": 39,
@@ -41,12 +41,8 @@
   },
   {
    "type": "Trådløs højtaler",
-   "keys": {
-    "WirelessLoudspeaker": 38
-   },
-   "cats": {
-    "Højtaler > Trådløs / Bluetooth højtaler": 38
-   },
+   "keys": {},
+   "cats": {},
    "count": 38,
    "bundles": 11,
    "outlet": 0,
@@ -64,12 +60,8 @@
   },
   {
    "type": "Indbygningshøjtaler til loft",
-   "keys": {
-    "InCeilingLoudspeaker": 37
-   },
-   "cats": {
-    "Højtaler > Indbygning & udendørs højtaler": 37
-   },
+   "keys": {},
+   "cats": {},
    "count": 37,
    "bundles": 1,
    "outlet": 0,
@@ -87,12 +79,8 @@
   },
   {
    "type": "Trådløst headset",
-   "keys": {
-    "Wirelessheadset": 35
-   },
-   "cats": {
-    "Høretelefoner > On-ear / over-ear høretelefoner": 35
-   },
+   "keys": {},
+   "cats": {},
    "count": 36,
    "bundles": 1,
    "outlet": 1,
@@ -108,10 +96,10 @@
   {
    "type": "Højtalerkabel",
    "keys": {
-    "LoudSpeakerCable": 34
+    "LoudSpeakerCable": 2
    },
    "cats": {
-    "Kabler > Højtalerkabel": 34
+    "Kabler > Højtalerkabel": 2
    },
    "count": 35,
    "bundles": 0,
@@ -131,12 +119,8 @@
   },
   {
    "type": "Højtalerstander",
-   "keys": {
-    "LoudspeakerStand": 30
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 30
-   },
+   "keys": {},
+   "cats": {},
    "count": 35,
    "bundles": 0,
    "outlet": 5,
@@ -150,12 +134,8 @@
   },
   {
    "type": "Indbygningshøjtaler til væg",
-   "keys": {
-    "InWallLoudspeakers": 31
-   },
-   "cats": {
-    "Højtaler > Indbygning & udendørs højtaler": 31
-   },
+   "keys": {},
+   "cats": {},
    "count": 34,
    "bundles": 0,
    "outlet": 2,
@@ -172,10 +152,10 @@
   {
    "type": "Gulvhøjtaler",
    "keys": {
-    "FloorStandingLoudspeaker": 29
+    "FloorStandingLoudspeaker": 1
    },
    "cats": {
-    "Højtaler > Gulvhøjtaler": 29
+    "Højtaler > Gulvhøjtaler": 1
    },
    "count": 32,
    "bundles": 0,
@@ -193,12 +173,8 @@
   },
   {
    "type": "Integreret forstærker",
-   "keys": {
-    "IntegratedAmplifier": 31
-   },
-   "cats": {
-    "HiFi > Forstærker": 31
-   },
+   "keys": {},
+   "cats": {},
    "count": 32,
    "bundles": 1,
    "outlet": 1,
@@ -216,12 +192,8 @@
   },
   {
    "type": "Kompakt højtaler",
-   "keys": {
-    "CompactLoudSpeaker": 31
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 31
-   },
+   "keys": {},
+   "cats": {},
    "count": 32,
    "bundles": 0,
    "outlet": 1,
@@ -238,12 +210,8 @@
   },
   {
    "type": "Trådløs højtaler med batteri",
-   "keys": {
-    "WirelessLoudspeakerWithBattery": 31
-   },
-   "cats": {
-    "Højtaler > Trådløs / Bluetooth højtaler": 31
-   },
+   "keys": {},
+   "cats": {},
    "count": 32,
    "bundles": 6,
    "outlet": 1,
@@ -261,12 +229,8 @@
   },
   {
    "type": "Soundbar",
-   "keys": {
-    "Soundbar": 27
-   },
-   "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 27
-   },
+   "keys": {},
+   "cats": {},
    "count": 28,
    "bundles": 4,
    "outlet": 1,
@@ -285,12 +249,8 @@
   },
   {
    "type": "Subwoofer",
-   "keys": {
-    "Subwoofer": 27
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 27
-   },
+   "keys": {},
+   "cats": {},
    "count": 27,
    "bundles": 1,
    "outlet": 0,
@@ -307,12 +267,8 @@
   },
   {
    "type": "Erstatnings pickup-nål",
-   "keys": {
-    "ReplacementStylus": 26
-   },
-   "cats": {
-    "Pladespiller > Pladespiller tilbehør": 26
-   },
+   "keys": {},
+   "cats": {},
    "count": 26,
    "bundles": 0,
    "outlet": 0,
@@ -326,12 +282,8 @@
   },
   {
    "type": "Trådløse in-ear høretelefoner",
-   "keys": {
-    "WirelessInEarHeadphone": 23
-   },
-   "cats": {
-    "Høretelefoner > In-ear høretelefoner": 23
-   },
+   "keys": {},
+   "cats": {},
    "count": 25,
    "bundles": 0,
    "outlet": 2,
@@ -345,12 +297,8 @@
   },
   {
    "type": "Head-fi høretelefoner",
-   "keys": {
-    "Headfi": 22
-   },
-   "cats": {
-    "Høretelefoner > Head-Fi høretelefoner": 22
-   },
+   "keys": {},
+   "cats": {},
    "count": 22,
    "bundles": 1,
    "outlet": 0,
@@ -366,12 +314,8 @@
   },
   {
    "type": "Hjemmebio-receiver",
-   "keys": {
-    "HomeCinemaReceiver": 17
-   },
-   "cats": {
-    "Surround > Surround receiver": 17
-   },
+   "keys": {},
+   "cats": {},
    "count": 22,
    "bundles": 0,
    "outlet": 5,
@@ -387,12 +331,8 @@
   },
   {
    "type": "Kompakt højtaler – Aktive",
-   "keys": {
-    "CompactSpeakerActive": 21
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 21
-   },
+   "keys": {},
+   "cats": {},
    "count": 22,
    "bundles": 6,
    "outlet": 1,
@@ -410,12 +350,8 @@
   },
   {
    "type": "MM-pickup",
-   "keys": {
-    "MMpickup": 21
-   },
-   "cats": {
-    "Pladespiller > Pickupper og erstatningsnåle": 21
-   },
+   "keys": {},
+   "cats": {},
    "count": 22,
    "bundles": 0,
    "outlet": 1,
@@ -429,12 +365,8 @@
   },
   {
    "type": "Pladespiller",
-   "keys": {
-    "Turntable": 19
-   },
-   "cats": {
-    "Pladespiller": 19
-   },
+   "keys": {},
+   "cats": {},
    "count": 20,
    "bundles": 0,
    "outlet": 1,
@@ -452,12 +384,8 @@
   },
   {
    "type": "Stereosystem",
-   "keys": {
-    "StereoSystem": 20
-   },
-   "cats": {
-    "HiFi > Stereo systemer": 20
-   },
+   "keys": {},
+   "cats": {},
    "count": 20,
    "bundles": 20,
    "outlet": 0,
@@ -471,12 +399,8 @@
   },
   {
    "type": "Videoprojektor",
-   "keys": {
-    "VideoProjector": 19
-   },
-   "cats": {
-    "TV > Projektor": 19
-   },
+   "keys": {},
+   "cats": {},
    "count": 19,
    "bundles": 0,
    "outlet": 0,
@@ -494,10 +418,10 @@
   {
    "type": "USB-kabel",
    "keys": {
-    "USBCabel": 16
+    "USBCabel": 12
    },
    "cats": {
-    "Kabler > Digital kabel": 16
+    "Kabler > Digital kabel": 12
    },
    "count": 18,
    "bundles": 0,
@@ -515,12 +439,8 @@
   },
   {
    "type": "CD-afspiller",
-   "keys": {
-    "CDPlayer": 16
-   },
-   "cats": {
-    "HiFi > CD afspiller": 16
-   },
+   "keys": {},
+   "cats": {},
    "count": 16,
    "bundles": 1,
    "outlet": 0,
@@ -538,10 +458,10 @@
   {
    "type": "Pladespiller vedligeholdelse",
    "keys": {
-    "TurntableMaintenance": 15
+    "TurntableMaintenance": 1
    },
    "cats": {
-    "Pladespiller > Pladespiller vedligeholdelse": 15
+    "Pladespiller > Pladespiller vedligeholdelse": 1
    },
    "count": 16,
    "bundles": 0,
@@ -556,12 +476,8 @@
   },
   {
    "type": "Frontgrill",
-   "keys": {
-    "FrontGrill": 15
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 15
-   },
+   "keys": {},
+   "cats": {},
    "count": 15,
    "bundles": 0,
    "outlet": 0,
@@ -575,12 +491,8 @@
   },
   {
    "type": "Højtaler med tilbehør",
-   "keys": {
-    "Speakerswithaccessories": 15
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 15
-   },
+   "keys": {},
+   "cats": {},
    "count": 15,
    "bundles": 15,
    "outlet": 0,
@@ -594,12 +506,8 @@
   },
   {
    "type": "Musikstreamer",
-   "keys": {
-    "MusicStreamer": 14
-   },
-   "cats": {
-    "HiFi > Musikstreamer": 14
-   },
+   "keys": {},
+   "cats": {},
    "count": 15,
    "bundles": 5,
    "outlet": 1,
@@ -617,10 +525,10 @@
   {
    "type": "Signalkabel",
    "keys": {
-    "SignalCable": 14
+    "SignalCable": 4
    },
    "cats": {
-    "Kabler > Signalkabel": 14
+    "Kabler > Signalkabel": 4
    },
    "count": 15,
    "bundles": 0,
@@ -637,12 +545,8 @@
   },
   {
    "type": "Vægbeslag for Sonos",
-   "keys": {
-    "WallBracketForSonos": 10
-   },
-   "cats": {
-    "Tilbehør > Sonos tilbehør": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 15,
    "bundles": 0,
    "outlet": 5,
@@ -656,12 +560,8 @@
   },
   {
    "type": "Centerhøjtaler",
-   "keys": {
-    "Center": 14
-   },
-   "cats": {
-    "Højtaler > Centerhøjtaler": 14
-   },
+   "keys": {},
+   "cats": {},
    "count": 14,
    "bundles": 1,
    "outlet": 0,
@@ -679,12 +579,8 @@
   },
   {
    "type": "Kompaktanlæg med Streaming",
-   "keys": {
-    "Musicsystemwithstreaming": 13
-   },
-   "cats": {
-    "HiFi > Mini anlæg": 13
-   },
+   "keys": {},
+   "cats": {},
    "count": 14,
    "bundles": 4,
    "outlet": 1,
@@ -701,12 +597,8 @@
   },
   {
    "type": "Pladespiller system",
-   "keys": {
-    "TurntableSystem": 14
-   },
-   "cats": {
-    "Pladespiller > Pladespiller system": 14
-   },
+   "keys": {},
+   "cats": {},
    "count": 14,
    "bundles": 14,
    "outlet": 0,
@@ -720,12 +612,8 @@
   },
   {
    "type": "Vægbeslag for højtalere",
-   "keys": {
-    "WallMountForLoudspeakers": 14
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 14
-   },
+   "keys": {},
+   "cats": {},
    "count": 14,
    "bundles": 0,
    "outlet": 0,
@@ -739,12 +627,8 @@
   },
   {
    "type": "Adapter",
-   "keys": {
-    "Adapter": 13
-   },
-   "cats": {
-    "Kabler > Diverse kabler, stik & adaptere": 13
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 0,
    "outlet": 0,
@@ -759,10 +643,10 @@
   {
    "type": "Bananstik",
    "keys": {
-    "BananaPlug": 13
+    "BananaPlug": 3
    },
    "cats": {
-    "Kabler > Højtalerstik": 13
+    "Kabler > Højtalerstik": 3
    },
    "count": 13,
    "bundles": 0,
@@ -777,12 +661,8 @@
   },
   {
    "type": "Effektforstærker til installation",
-   "keys": {
-    "PowerAmplifierInstallation": 11
-   },
-   "cats": {
-    "HiFi > Forstærker": 11
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 0,
    "outlet": 2,
@@ -798,12 +678,8 @@
   },
   {
    "type": "Hjemmebio-system",
-   "keys": {
-    "HomeCinemaSystem": 11
-   },
-   "cats": {
-    "Surround > Hjemmebio-system": 11
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 13,
    "outlet": 0,
@@ -817,12 +693,8 @@
   },
   {
    "type": "Højtalersystem",
-   "keys": {
-    "LoudSpeakerSystem": 12
-   },
-   "cats": {
-    "Højtaler > Højtalersystemer": 12
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 13,
    "outlet": 0,
@@ -836,12 +708,8 @@
   },
   {
    "type": "Møbeltilbehør",
-   "keys": {
-    "FurnitureAccessories": 13
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 13
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 0,
    "outlet": 0,
@@ -855,12 +723,8 @@
   },
   {
    "type": "TV-beslag",
-   "keys": {
-    "TvBracket": 12
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 12
-   },
+   "keys": {},
+   "cats": {},
    "count": 13,
    "bundles": 0,
    "outlet": 1,
@@ -874,12 +738,8 @@
   },
   {
    "type": "Vægbeslag",
-   "keys": {
-    "WallBracket": 10
-   },
-   "cats": {
-    "Tilbehør": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 12,
    "bundles": 0,
    "outlet": 2,
@@ -893,12 +753,8 @@
   },
   {
    "type": "Væghøjtaler",
-   "keys": {
-    "Onwallloudspeaker": 10
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 11,
    "bundles": 0,
    "outlet": 1,
@@ -915,12 +771,8 @@
   },
   {
    "type": "Backbox",
-   "keys": {
-    "Backbox": 10
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 0,
    "outlet": 0,
@@ -934,12 +786,8 @@
   },
   {
    "type": "MC-pickup",
-   "keys": {
-    "MCpickup": 10
-   },
-   "cats": {
-    "Pladespiller > Pickupper og erstatningsnåle": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 0,
    "outlet": 0,
@@ -954,12 +802,8 @@
   },
   {
    "type": "Møbel",
-   "keys": {
-    "Furniture": 10
-   },
-   "cats": {
-    "Tilbehør > Møbler": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 0,
    "outlet": 0,
@@ -974,10 +818,10 @@
   {
    "type": "Møbelsystem",
    "keys": {
-    "FurnitureSystem": 10
+    "FurnitureSystem": 6
    },
    "cats": {
-    "Tilbehør > Møbler": 10
+    "Tilbehør > Møbler": 6
    },
    "count": 10,
    "bundles": 9,
@@ -993,12 +837,8 @@
   },
   {
    "type": "Neo QLED TV",
-   "keys": {
-    "NeoQLED": 6
-   },
-   "cats": {
-    "TV > TV": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 0,
    "outlet": 4,
@@ -1015,12 +855,8 @@
   },
   {
    "type": "Passiv subwoofer",
-   "keys": {
-    "PassiveSubwoofer": 10
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 1,
    "outlet": 0,
@@ -1037,12 +873,8 @@
   },
   {
    "type": "Pladespillertilbehør",
-   "keys": {
-    "TurntableAccessories": 10
-   },
-   "cats": {
-    "Pladespiller > Pladespiller tilbehør": 10
-   },
+   "keys": {},
+   "cats": {},
    "count": 10,
    "bundles": 0,
    "outlet": 0,
@@ -1057,10 +889,10 @@
   {
    "type": "HDMI-kabel",
    "keys": {
-    "HDMIcable": 8
+    "HDMIcable": 4
    },
    "cats": {
-    "Kabler > HDMI kabel": 8
+    "Kabler > HDMI kabel": 4
    },
    "count": 9,
    "bundles": 0,
@@ -1077,12 +909,8 @@
   },
   {
    "type": "Højtalertilbehør",
-   "keys": {
-    "LoudSpeakersAccessories": 7
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 9,
    "bundles": 0,
    "outlet": 2,
@@ -1097,12 +925,8 @@
   },
   {
    "type": "Indbygningssystem",
-   "keys": {
-    "InstallationSystem": 9
-   },
-   "cats": {
-    "Højtaler > Indbygning & udendørs højtaler": 9
-   },
+   "keys": {},
+   "cats": {},
    "count": 9,
    "bundles": 9,
    "outlet": 0,
@@ -1117,10 +941,10 @@
   {
    "type": "Minijack-kabel",
    "keys": {
-    "MiniJackCable": 9
+    "MiniJackCable": 5
    },
    "cats": {
-    "Kabler > Minijack kabel": 9
+    "Kabler > Minijack kabel": 5
    },
    "count": 9,
    "bundles": 0,
@@ -1138,12 +962,8 @@
   },
   {
    "type": "OLED TV",
-   "keys": {
-    "OLEDTV": 7
-   },
-   "cats": {
-    "TV > TV > OLED": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 9,
    "bundles": 0,
    "outlet": 2,
@@ -1160,12 +980,8 @@
   },
   {
    "type": "Fjernbetjening",
-   "keys": {
-    "RemoteControl": 8
-   },
-   "cats": {
-    "Tilbehør > Fjernbetjening": 8
-   },
+   "keys": {},
+   "cats": {},
    "count": 8,
    "bundles": 0,
    "outlet": 0,
@@ -1180,10 +996,10 @@
   {
    "type": "Kabel",
    "keys": {
-    "Cable": 8
+    "Cable": 1
    },
    "cats": {
-    "Kabler": 8
+    "Kabler": 1
    },
    "count": 8,
    "bundles": 1,
@@ -1201,10 +1017,10 @@
   {
    "type": "Møbel med anlæg",
    "keys": {
-    "HiFiFurniture": 8
+    "HiFiFurniture": 5
    },
    "cats": {
-    "Tilbehør > Møbler": 8
+    "Tilbehør > Møbler": 5
    },
    "count": 8,
    "bundles": 8,
@@ -1219,12 +1035,8 @@
   },
   {
    "type": "Multikanaleffektforstærker",
-   "keys": {
-    "MultiChannelPowerAmplifier": 8
-   },
-   "cats": {
-    "HiFi > Forstærker": 8
-   },
+   "keys": {},
+   "cats": {},
    "count": 8,
    "bundles": 0,
    "outlet": 0,
@@ -1240,12 +1052,8 @@
   },
   {
    "type": "RIAA-forstærker",
-   "keys": {
-    "RiaaAmplifier": 6
-   },
-   "cats": {
-    "Pladespiller > RIAA-forstærker": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 8,
    "bundles": 0,
    "outlet": 2,
@@ -1261,12 +1069,8 @@
   },
   {
    "type": "Stofdør",
-   "keys": {
-    "Fabricdoor": 8
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 8
-   },
+   "keys": {},
+   "cats": {},
    "count": 8,
    "bundles": 0,
    "outlet": 0,
@@ -1280,12 +1084,8 @@
   },
   {
    "type": "DJ-pickup",
-   "keys": {
-    "DJpickup": 7
-   },
-   "cats": {
-    "Pladespiller > Pickupper og erstatningsnåle": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 7,
    "bundles": 0,
    "outlet": 0,
@@ -1300,12 +1100,8 @@
   },
   {
    "type": "Justérbart TV vægbeslag",
-   "keys": {
-    "AdjustableWallmount": 7
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 7,
    "bundles": 0,
    "outlet": 0,
@@ -1320,10 +1116,10 @@
   {
    "type": "Optisk kabel",
    "keys": {
-    "Opticalcabel": 6
+    "Opticalcabel": 3
    },
    "cats": {
-    "Kabler > Digital kabel": 6
+    "Kabler > Digital kabel": 3
    },
    "count": 7,
    "bundles": 0,
@@ -1340,12 +1136,8 @@
   },
   {
    "type": "Skumpropper",
-   "keys": {
-    "FoamBungs": 7
-   },
-   "cats": {
-    "Høretelefoner > Høretelefon tilbehør": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 7,
    "bundles": 0,
    "outlet": 0,
@@ -1360,12 +1152,8 @@
   },
   {
    "type": "Udendørshøjtaler",
-   "keys": {
-    "OutdoorLoudspeaker": 7
-   },
-   "cats": {
-    "Højtaler > Indbygning & udendørs højtaler": 7
-   },
+   "keys": {},
+   "cats": {},
    "count": 7,
    "bundles": 4,
    "outlet": 0,
@@ -1382,12 +1170,8 @@
   },
   {
    "type": "Effektforstærker",
-   "keys": {
-    "PowerAmplifier": 6
-   },
-   "cats": {
-    "HiFi > Forstærker": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 0,
@@ -1403,12 +1187,8 @@
   },
   {
    "type": "Gulvhøjtaler – Aktive",
-   "keys": {
-    "FloorstandingSpeakerActive": 6
-   },
-   "cats": {
-    "Højtaler > Gulvhøjtaler": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 2,
    "outlet": 0,
@@ -1423,12 +1203,8 @@
   },
   {
    "type": "Gulvstander",
-   "keys": {
-    "FloorStand": 5
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 1,
@@ -1442,12 +1218,8 @@
   },
   {
    "type": "Monteringsramme",
-   "keys": {
-    "InstallationFramePreMountKit": 6
-   },
-   "cats": {
-    "Højtaler > Indbygning & udendørs højtaler": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 0,
@@ -1461,12 +1233,8 @@
   },
   {
    "type": "Strømfilter",
-   "keys": {
-    "Powerfilter": 6
-   },
-   "cats": {
-    "Kabler > Strømkabler": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 0,
@@ -1481,10 +1249,10 @@
   {
    "type": "Subwoofer-kabel",
    "keys": {
-    "SubwooferCable": 6
+    "SubwooferCable": 3
    },
    "cats": {
-    "Kabler > Subwoofer kabel": 6
+    "Kabler > Subwoofer kabel": 3
    },
    "count": 6,
    "bundles": 0,
@@ -1501,12 +1269,8 @@
   },
   {
    "type": "Trådløs subwoofer",
-   "keys": {
-    "WirelessSubwoofer": 6
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 6
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 0,
@@ -1522,12 +1286,8 @@
   },
   {
    "type": "TV-ramme",
-   "keys": {
-    "TV-frame": 5
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 6,
    "bundles": 0,
    "outlet": 1,
@@ -1542,12 +1302,8 @@
   },
   {
    "type": "Andet",
-   "keys": {
-    "Other": 4
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 1,
@@ -1561,12 +1317,8 @@
   },
   {
    "type": "Høretelefon tilbehør",
-   "keys": {
-    "HeadphoneAccessories": 5
-   },
-   "cats": {
-    "Høretelefoner > Høretelefon tilbehør": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1581,10 +1333,10 @@
   {
    "type": "Høretelefon-forstærker",
    "keys": {
-    "HeadphoneAmplifier": 5
+    "HeadphoneAmplifier": 1
    },
    "cats": {
-    "Høretelefoner > Høretelefon-forstærker": 5
+    "Høretelefoner > Høretelefon-forstærker": 1
    },
    "count": 5,
    "bundles": 0,
@@ -1601,12 +1353,8 @@
   },
   {
    "type": "Licens",
-   "keys": {
-    "License": 5
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1620,12 +1368,8 @@
   },
   {
    "type": "Loftbeslag",
-   "keys": {
-    "CeilingMount": 4
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 1,
@@ -1639,12 +1383,8 @@
   },
   {
    "type": "MDC-modul",
-   "keys": {
-    "MDCModule": 5
-   },
-   "cats": {
-    "Tilbehør": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1659,12 +1399,8 @@
   },
   {
    "type": "Mini-LED TV",
-   "keys": {
-    "MiniLED": 5
-   },
-   "cats": {
-    "TV > TV": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1680,12 +1416,8 @@
   },
   {
    "type": "Opgradering",
-   "keys": {
-    "Upgrade": 4
-   },
-   "cats": {
-    "Tilbehør": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 1,
@@ -1699,12 +1431,8 @@
   },
   {
    "type": "QLED TV",
-   "keys": {
-    "QLEDTV": 3
-   },
-   "cats": {
-    "TV > TV > QLED": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 2,
@@ -1722,12 +1450,8 @@
   },
   {
    "type": "Spadestik",
-   "keys": {
-    "Spade": 5
-   },
-   "cats": {
-    "Kabler > Højtalerstik": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1741,12 +1465,8 @@
   },
   {
    "type": "Stereoforstærker med streaming",
-   "keys": {
-    "Stereoamplifierwithstreaming": 5
-   },
-   "cats": {
-    "HiFi > Forstærker": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 4,
    "outlet": 0,
@@ -1763,12 +1483,8 @@
   },
   {
    "type": "Strømkabel",
-   "keys": {
-    "PowerCable": 5
-   },
-   "cats": {
-    "Kabler": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1783,12 +1499,8 @@
   },
   {
    "type": "Surround-processor",
-   "keys": {
-    "HomeCinemaPreAmplifier": 5
-   },
-   "cats": {
-    "Surround > Surround-processor": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1804,12 +1516,8 @@
   },
   {
    "type": "Trådløs adapter",
-   "keys": {
-    "Wirelessadaptor": 5
-   },
-   "cats": {
-    "Kabler > Diverse kabler, stik & adaptere": 5
-   },
+   "keys": {},
+   "cats": {},
    "count": 5,
    "bundles": 0,
    "outlet": 0,
@@ -1825,12 +1533,8 @@
   },
   {
    "type": "Blu-ray afspiller",
-   "keys": {
-    "BluRayPlayer": 4
-   },
-   "cats": {
-    "Surround > Blu-ray afspiller": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 0,
    "outlet": 0,
@@ -1846,12 +1550,8 @@
   },
   {
    "type": "CD",
-   "keys": {
-    "CD": 4
-   },
-   "cats": {
-    "Tilbehør": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 0,
    "outlet": 0,
@@ -1887,12 +1587,8 @@
   },
   {
    "type": "Dæmpningsfødder",
-   "keys": {
-    "DampingFeet": 4
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 0,
    "outlet": 0,
@@ -1907,12 +1603,8 @@
   },
   {
    "type": "Høretelefoner",
-   "keys": {
-    "Headphone": 3
-   },
-   "cats": {
-    "Høretelefoner > On-ear / over-ear høretelefoner": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 3,
    "outlet": 1,
@@ -1927,12 +1619,8 @@
   },
   {
    "type": "Multirumsforstærker",
-   "keys": {
-    "MultiRoomAmplifier": 4
-   },
-   "cats": {
-    "HiFi > Forstærker": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 0,
    "outlet": 0,
@@ -1949,10 +1637,10 @@
   {
    "type": "Netværkskabel",
    "keys": {
-    "Networkcabel": 4
+    "Networkcabel": 2
    },
    "cats": {
-    "Kabler > Digital kabel": 4
+    "Kabler > Digital kabel": 2
    },
    "count": 4,
    "bundles": 0,
@@ -1969,12 +1657,8 @@
   },
   {
    "type": "Y-splitter/Y-adapter",
-   "keys": {
-    "YSplitYAdapter": 4
-   },
-   "cats": {
-    "Kabler > Diverse kabler, stik & adaptere": 4
-   },
+   "keys": {},
+   "cats": {},
    "count": 4,
    "bundles": 0,
    "outlet": 0,
@@ -1991,12 +1675,8 @@
   },
   {
    "type": "Bluetooth receiver",
-   "keys": {
-    "BluetoothReceiver": 3
-   },
-   "cats": {
-    "HiFi > Musikstreamer": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2012,12 +1692,8 @@
   },
   {
    "type": "Bordstander",
-   "keys": {
-    "TableStand": 3
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2031,12 +1707,8 @@
   },
   {
    "type": "Fødder",
-   "keys": {
-    "Foot": 3
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2050,12 +1722,8 @@
   },
   {
    "type": "Forforstærker",
-   "keys": {
-    "PreAmplifier": 2
-   },
-   "cats": {
-    "HiFi > Forstærker": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 1,
@@ -2071,12 +1739,8 @@
   },
   {
    "type": "Head-fi in-ear høretelefoner",
-   "keys": {
-    "HeadfiInEar": 3
-   },
-   "cats": {
-    "Høretelefoner > Head-Fi høretelefoner": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2090,12 +1754,8 @@
   },
   {
    "type": "In-ear høretelefoner",
-   "keys": {
-    "ActiveInEarHeadphone": 3
-   },
-   "cats": {
-    "Høretelefoner > In-ear høretelefoner": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2109,12 +1769,8 @@
   },
   {
    "type": "Kabelskjuler",
-   "keys": {
-    "CableCovering": 3
-   },
-   "cats": {
-    "Tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2128,12 +1784,8 @@
   },
   {
    "type": "Kompaktanlæg",
-   "keys": {
-    "Musicsystem": 3
-   },
-   "cats": {
-    "HiFi > Mini anlæg": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 1,
    "outlet": 0,
@@ -2150,12 +1802,8 @@
   },
   {
    "type": "LED TV",
-   "keys": {
-    "LEDTV": 3
-   },
-   "cats": {
-    "TV > TV": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2172,12 +1820,8 @@
   },
   {
    "type": "LP-plade",
-   "keys": {
-    "LPdisc": 3
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2191,12 +1835,8 @@
   },
   {
    "type": "Mikrofon",
-   "keys": {
-    "Microphone": 3
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2210,12 +1850,8 @@
   },
   {
    "type": "Skuffe",
-   "keys": {
-    "Drawer": 3
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 3
-   },
+   "keys": {},
+   "cats": {},
    "count": 3,
    "bundles": 0,
    "outlet": 0,
@@ -2229,12 +1865,8 @@
   },
   {
    "type": "Antennekabel",
-   "keys": {
-    "AntennaCable": 2
-   },
-   "cats": {
-    "Kabler > Antennekabel & stik": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2248,12 +1880,8 @@
   },
   {
    "type": "Batteri",
-   "keys": {
-    "Battery": 2
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2267,12 +1895,8 @@
   },
   {
    "type": "Beslag",
-   "keys": {
-    "MountingBracket": 2
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2286,12 +1910,8 @@
   },
   {
    "type": "Cover",
-   "keys": {
-    "Cover": 2
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2305,12 +1925,8 @@
   },
   {
    "type": "D/A-konverter",
-   "keys": {
-    "DAConverter": 2
-   },
-   "cats": {
-    "HiFi > D/A konverter": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2326,12 +1942,8 @@
   },
   {
    "type": "Gaming headset",
-   "keys": {
-    "GamingHeadset": 2
-   },
-   "cats": {
-    "Høretelefoner > Gaming headset": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2346,12 +1958,8 @@
   },
   {
    "type": "Hylde",
-   "keys": {
-    "Shelf": 2
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2365,12 +1973,8 @@
   },
   {
    "type": "Micro RGB TV",
-   "keys": {
-    "MicroRGB": 2
-   },
-   "cats": {
-    "TV > TV": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2386,12 +1990,8 @@
   },
   {
    "type": "Radio",
-   "keys": {
-    "Radio": 2
-   },
-   "cats": {
-    "HiFi > DAB radio / FM / internet": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2407,12 +2007,8 @@
   },
   {
    "type": "Receiver",
-   "keys": {
-    "Receiver": 2
-   },
-   "cats": {
-    "HiFi > Forstærker": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2428,12 +2024,8 @@
   },
   {
    "type": "Trædør",
-   "keys": {
-    "Woodendoor": 2
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2447,12 +2039,8 @@
   },
   {
    "type": "True RGB TV",
-   "keys": {
-    "TrueRGB": 2
-   },
-   "cats": {
-    "TV > TV": 2
-   },
+   "keys": {},
+   "cats": {},
    "count": 2,
    "bundles": 0,
    "outlet": 0,
@@ -2504,12 +2092,8 @@
   },
   {
    "type": "Antennestik",
-   "keys": {
-    "AntennaPlug": 1
-   },
-   "cats": {
-    "Kabler > Antennekabel & stik": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2523,12 +2107,8 @@
   },
   {
    "type": "Digitalkabel",
-   "keys": {
-    "DigitalCable": 1
-   },
-   "cats": {
-    "Kabler > Digital kabel": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2544,12 +2124,8 @@
   },
   {
    "type": "Gavekort",
-   "keys": {
-    "Giftcard": 1
-   },
-   "cats": {
-    "Tilbehør": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2563,12 +2139,8 @@
   },
   {
    "type": "Musikstreamer med Radio",
-   "keys": {
-    "MusicStreamerAndRadio": 1
-   },
-   "cats": {
-    "HiFi > Musikstreamer": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2584,12 +2156,8 @@
   },
   {
    "type": "QD-OLED TV",
-   "keys": {
-    "QDOLED": 1
-   },
-   "cats": {
-    "TV > TV": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2606,12 +2174,8 @@
   },
   {
    "type": "Rack",
-   "keys": {
-    "Rack": 1
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2625,12 +2189,8 @@
   },
   {
    "type": "Spikes",
-   "keys": {
-    "Spikes": 1
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2644,12 +2204,8 @@
   },
   {
    "type": "Stik",
-   "keys": {
-    "Plug": 1
-   },
-   "cats": {
-    "Kabler > Diverse kabler, stik & adaptere": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2663,12 +2219,8 @@
   },
   {
    "type": "Støjfilter",
-   "keys": {
-    "NoiseFilter": 1
-   },
-   "cats": {
-    "HiFi": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2682,12 +2234,8 @@
   },
   {
    "type": "Strømforsyning",
-   "keys": {
-    "PowerSupply": 1
-   },
-   "cats": {
-    "Kabler > Strømkabler": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2701,12 +2249,8 @@
   },
   {
    "type": "Switch box",
-   "keys": {
-    "SwitchBox": 1
-   },
-   "cats": {
-    "Tilbehør": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2722,12 +2266,8 @@
   },
   {
    "type": "Topdæksel",
-   "keys": {
-    "TopCover": 1
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
@@ -2741,12 +2281,8 @@
   },
   {
    "type": "Trådløs forforstærker",
-   "keys": {
-    "Wirelesspreamp": 1
-   },
-   "cats": {
-    "HiFi > Forstærker": 1
-   },
+   "keys": {},
+   "cats": {},
    "count": 1,
    "bundles": 0,
    "outlet": 0,
