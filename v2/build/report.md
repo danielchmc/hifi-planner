@@ -235,3 +235,30 @@ Read by the next mirror runs.
 - Lyngdorf TDAI-1120 - 2.1 System [LYNGDORF-TDAI1120-2-1]
 - Marantz CINEMA 60 DAB SURROUND [MARACINEMA60DAB-SURROUND]
 - Bluesound POWERNODE EDGE (N230) + OBERON 3 [N230-OBERON3]
+
+## Round trip (stage 3): own layer + website → catalogue
+
+`build/products.js` is generated from `data/own.js` and the mirror, in the app's current format. Compared with today's `data/products.js`:
+
+- **847** of 847 products identical in every field
+- 718 follow the website through their link, 129 are frozen (not on the website)
+- Prices held by the plausibility check (as the sync does): 14
+- Every link points at a product the website lists
+
+**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
+
+- AudioQuest Evergreen - Minijack - RCA 20m: 3099 kept, website 699 (large change (over -35% / +60%))
+- AudioQuest Greyhound - Sub 16m: 999 kept, website 1699 (large change (over -35% / +60%))
+- Marshall Acton III: 2290 kept, website 1399 (large change (over -35% / +60%))
+- Marshall Stanmore III: 3090 kept, website 1799 (large change (over -35% / +60%))
+- Noon Audio Compose SB201: 2499 kept, website 1249 (large change (over -35% / +60%))
+- Samsung QN90F: 19999 kept, website 44990 (large change (over -35% / +60%))
+- Samsung R85H: 12999 kept, website 7999 (large change (over -35% / +60%))
+- Samsung R95H: 29999 kept, website 16999 (large change (over -35% / +60%))
+- Samsung M80H: 7499 kept, website 4555 (large change (over -35% / +60%))
+- Samsung M90H: 21999 kept, website 12666 (large change (over -35% / +60%))
+- Samsung QN80H: 34999 kept, website 17999 (large change (over -35% / +60%))
+- Samsung DU9005: 29999 kept, website 11111 (large change (over -35% / +60%))
+- Argon Audio TT-4: 3799 kept, website 7499 (large change (over -35% / +60%))
+- AudioQuest Coffee: 5399 kept, website 3499 (large change (over -35% / +60%))
+

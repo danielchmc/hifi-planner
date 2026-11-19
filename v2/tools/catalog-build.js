@@ -6,13 +6,16 @@
    In:   mirror/listing.jsonl, mirror/pages/*.json   the website, as mirrored (never changed)
          tools/taxonomy.js                          the rules: what each website type is for HiFi Planner, corrections
          data/products.js                           today's catalogue, only for the comparison report
+         data/own.js                                HiFi Planner's own layer (tools/own-split.js), if it exists
    Out:  build/catalog.json   categories (the website's tree + ours), products, bundles as parts lists
-         build/report.md      what the new structure would change compared with today's catalogue */
+         build/products.js    own layer + website, in the app's current format (stage 3; not used by the app yet)
+         build/report.md      what the new structure would change compared with today's catalogue, and the round-trip check */
 const fs = require('fs'), path = require('path');
 global.window = global.window || {};
 require('../js/ports.js'); require('../js/site.js');
 const S = window.HP.site;
 const { KIND_SCOPE, CATEGORIES, TYPES } = require('./taxonomy.js');
+const SM = require('./site-match.js');
 
 const APP = process.argv[2] || path.join(__dirname, '..');
 const M = path.join(APP, 'mirror'), OUT = path.join(APP, 'build');
@@ -161,5 +164,70 @@ P('', '## New to HiFi Planner, by category', '', 'Website products in scope that
 const nw = {}; products.filter((p) => p.scope !== 'skip' && !inOurs.has(p.sku)).forEach((p) => { const k = catTitle(p.cat); const o = nw[k] || (nw[k] = { d: 0, p: 0, ex: [] }); o[p.scope === 'diagram' ? 'd' : 'p']++; if (o.ex.length < 3) o.ex.push(p.brand + ' ' + p.model); });
 Object.entries(nw).sort((a, b) => b[1].d + b[1].p - a[1].d - a[1].p).forEach(([k, o]) => P('| ' + k + ' | ' + o.d + ' | ' + o.p + ' | ' + o.ex.join(', ') + ' |'));
 if (R.noPage.length) list('Products without a mirrored page yet', 'Read by the next mirror runs.', R.noPage);
+/* ---------- stage 3: own layer + website = the app's catalogue ---------- */
+const ownFile = path.join(APP, 'data', 'own.js');
+if (fs.existsSync(ownFile)) {
+  global.window.HP_DATA = {}; new Function('window', fs.readFileSync(ownFile, 'utf8'))(global.window);
+  const own = global.window.HP_DATA.own || [];
+  const match = SM.matcher(SM.sellable(listing));
+  const facetsBySku = new Map(products.map((p) => [p.sku, p.facets]));
+  const hk = (u) => S.hk(u);
+  const RT = { lost: [], frozen: 0, held: [] };
+  // the previous catalogue, for the sync's plausibility check (today's data/products.js until the switch, then the previous build)
+  const prevById = new Map(catalogue.map((c) => [c.id, c]));
+  const skuCount = {}; own.forEach((o) => { if (o.sku) skuCount[U(o.sku)] = (skuCount[U(o.sku)] || 0) + 1; });
+  const generated = own.map((o) => {
+    const p = {};
+    for (const k of ['id', 'brand', 'name', 'sku']) if (o[k] !== undefined) p[k] = o[k];
+    const m = o.link ? match.byLink(o.link) : null;
+    if (o.link && !m) RT.lost.push(o.brand + ' ' + o.name + ' [' + o.link.site + ']');
+    if (m) {
+      const w = SM.webFacts(m, { single: !!o.link.single, cable: !!o.cable, hk });
+      if (w.vars) p.vars = w.vars; if (w.url) p.url = w.url; p.site = w.site;
+      // as the sync: a price is held (old price and discount kept, listed for a human to check) when it is implausible
+      const prev = prevById.get(o.id) || {};
+      const why = o.sku && skuCount[U(o.sku)] > 1 && SM.norm(m.s.brand + m.s.model) !== SM.norm(o.brand + o.name) ? 'SKU is used by several catalogue products'
+        : prev.price > 0 && (w.price < prev.price * 0.65 || w.price > prev.price * 1.6) ? 'large change (over -35% / +60%)' : '';
+      if (why) { p.price = prev.price; if (prev.was) p.was = prev.was; if (w.price !== prev.price) RT.held.push(o.brand + ' ' + o.name + ': ' + prev.price + ' kept, website ' + w.price + ' (' + why + ')'); }
+      else { p.price = w.price; if (w.was) p.was = w.was; }
+    } else if (o.frozen) { Object.assign(p, o.frozen); RT.frozen++; }
+    else if (o.link) { p.gone = TODAY; } // the website product left since the last split: price etc. kept from the last build at the switch (stage 4)
+    for (const k of ['cats', 'img', 'in', 'out', 'cable', 'auto', 'review', 'manualWireless']) if (o[k] !== undefined) p[k] = o[k];
+    // Bluetooth/WiFi: the website can add them, never remove them, unless set by hand (as the sync does)
+    const f = m ? facetsBySku.get(U(m.s.sku)) : null;
+    const bt = o.bt || (!o.manualWireless && !o.cable && f && f.bt), wifi = o.wifi || (!o.manualWireless && !o.cable && f && f.wifi);
+    if (bt) p.bt = true; if (wifi) p.wifi = true;
+    return p;
+  });
+  fs.writeFileSync(path.join(OUT, 'products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/. Not used by the app yet. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + generated.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+
+  // round trip: the generated catalogue against today's data/products.js, field by field
+  const today = new Map(catalogue.map((c) => [c.id, c]));
+  const fields = {}, ex = {}, keys = new Set();
+  catalogue.forEach((c) => Object.keys(c).forEach((k) => keys.add(k))); generated.forEach((g) => Object.keys(g).forEach((k) => keys.add(k)));
+  let same = 0;
+  for (const g of generated) {
+    const c = today.get(g.id); if (!c) continue;
+    let ok = true;
+    for (const k of keys) {
+      const a = JSON.stringify(c[k] === undefined ? null : c[k]), b = JSON.stringify(g[k] === undefined ? null : g[k]);
+      if (a === b) continue;
+      ok = false; fields[k] = (fields[k] || 0) + 1;
+      (ex[k] = ex[k] || []).push(c.brand + ' ' + c.name + ': today ' + a.slice(0, 90) + ' → built ' + b.slice(0, 90));
+    }
+    if (ok) same++;
+  }
+  P('', '## Round trip (stage 3): own layer + website → catalogue', '',
+    '`build/products.js` is generated from `data/own.js` and the mirror, in the app\'s current format. Compared with today\'s `data/products.js`:', '',
+    '- **' + same + '** of ' + catalogue.length + ' products identical in every field' + (generated.length !== catalogue.length ? ' (own layer has ' + generated.length + ')' : ''),
+    '- ' + (own.length - RT.frozen) + ' follow the website through their link, ' + RT.frozen + ' are frozen (not on the website)',
+    '- Prices held by the plausibility check (as the sync does): ' + RT.held.length,
+    RT.lost.length ? '- Link no longer on the website: ' + RT.lost.join(', ') : '- Every link points at a product the website lists', '');
+  if (RT.held.length) { P('**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)', ''); RT.held.forEach((x) => P('- ' + x)); P(''); }
+  if (Object.keys(fields).length) {
+    P('| Field | Products that differ |', '|---|---:|', ...Object.entries(fields).sort((a, b) => b[1] - a[1]).map(([k, n]) => '| ' + k + ' | ' + n + ' |'), '');
+    Object.entries(ex).forEach(([k, l]) => { P('**' + k + '**', ''); l.slice(0, 12).forEach((x) => P('- ' + x)); if (l.length > 12) P('- … ' + (l.length - 12) + ' more'); P(''); });
+  }
+}
 fs.writeFileSync(path.join(OUT, 'report.md'), L.join('\n') + '\n');
 console.log('build/catalog.json: ' + products.length + ' products, ' + bundles.length + ' bundles, ' + cats.size + ' categories · build/report.md written' + (Object.keys(R.unknownTypes).length ? ' · unknown types: ' + Object.keys(R.unknownTypes).join(', ') : ''));
