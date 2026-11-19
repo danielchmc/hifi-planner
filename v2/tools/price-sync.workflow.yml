@@ -1,24 +1,28 @@
 # HiFi Planner catalogue sync: mirrors hifiklubben.dk every hour (prices, discounts, colour variants, new and
-# discontinued products, Bluetooth/WiFi, images). Copy this file into the repository as .github/workflows/price-sync.yml.
+# discontinued products, Bluetooth/WiFi, images) and keeps a raw mirror of the website's product data in mirror/. Copy this file into the repository as .github/workflows/price-sync.yml.
 # Run it by hand under the repository's Actions tab -> "Catalogue sync" -> "Run workflow".
 name: Catalogue sync
 on:
   schedule:
     - cron: "17 * * * *"   # every hour at :17
   workflow_dispatch:
+    inputs:
+      mirror_pages:
+        description: "Product pages the website mirror reads this run (60 an hour reads every page about once a day)"
+        default: "60"
 permissions:
   contents: write
 concurrency: catalogue-sync
 jobs:
   sync:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
-      - uses: actions/setup-python@v5
+          node-version: 22
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install --quiet pillow
@@ -27,14 +31,23 @@ jobs:
           APP=$([ -d v2/data ] && echo v2 || echo .)
           echo "APP=$APP" >> "$GITHUB_ENV"
           node "$APP/tools/price-sync.js" "$APP/data" --pages 60
+      - name: Mirror hifiklubben.dk (raw website data, see mirror/README.md)
+        continue-on-error: true   # the mirror must never stop prices and images from being committed
+        run: |
+          if [ -f "$APP/tools/mirror.js" ]; then node "$APP/tools/mirror.js" "$APP/mirror" --pages "${{ inputs.mirror_pages || '60' }}"
+          else echo "::warning::$APP/tools/mirror.js is missing, the website mirror is not updated this run"; fi
       - name: Copy new website images
-        run: python "$APP/tools/mirror_images.py" "$APP" --budget 400
+        run: |
+          if [ -f "$APP/tools/mirror_images.py" ]; then python "$APP/tools/mirror_images.py" "$APP" --budget 400
+          else echo "::warning::$APP/tools/mirror_images.py is missing, images are not copied this run"; fi
       - name: Commit
         run: |
           git config user.name "HiFi Planner catalogue sync"
           git config user.email "actions@users.noreply.github.com"
-          git add "$APP/data" "$APP/img/hk" "$APP/img/hd/hk" 2>/dev/null || true
+          git add "$APP/data"
+          [ -d "$APP/mirror" ] && git add "$APP/mirror" || true
+          [ -d "$APP/img/hk" ] && git add "$APP/img/hk" "$APP/img/hd/hk" || true
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           git commit -m "Catalogue sync from hifiklubben.dk"
-          git pull --rebase
+          git pull --rebase -X theirs
           git push

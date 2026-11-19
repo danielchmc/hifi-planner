@@ -30,7 +30,8 @@ Rebuild of HiFi Planner as a static web app. No build step and no dependencies: 
 | `img/` | Product images, trimmed and compressed to WebP, max 640 px (20 MB instead of 278 MB) |
 | `img/hd/` | The same images at full resolution (max 1600 px, 61 MB), used when zooming in and in the full-screen viewer |
 | `img/hk/`, `img/hd/hk/` | Copies of hifiklubben.com images, named by their image ID (written by the sync job) |
-| `tools/` | Catalogue sync (`price-sync.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
+| `mirror/` | Raw copy of hifiklubben.dk's product data (listing, product pages, types), written by `tools/mirror.js`; never loaded by the app, never edited by hand. See `mirror/README.md` |
+| `tools/` | Catalogue sync (`price-sync.js`, `mirror.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
 
 ## Admin
 
@@ -102,6 +103,8 @@ What it keeps in step with the website:
 - **Images.** Website images are referenced as `hk:<image id>`. `tools/mirror_images.py` copies them into `img/hk/` (640 px) and `img/hd/hk/` (1600 px, front/back only), up to 400 per run. Until a copy exists, the app shows the image straight from images.hifiklubben.com.
 
 Product pages are read in batches (60 per run, new products first), so all pages are refreshed about once a day. `tools/sync-report-2026-11-15.md` is the first full run against live data.
+
+**Website mirror.** After the sync, the same run updates `mirror/` (`tools/mirror.js`): the raw listing, the product record of about 60 product pages per hour, an index of every website SKU (first/last seen, gone) and `types.json`, which compares the website's product types with what HiFi Planner maps. The run summary lists new website types and the types the sync does not map, so a missing category (like projectors) shows up there instead of being skipped silently. The mirror step may fail without stopping prices and images from being committed. It is stage 1 of the planned data rework: later stages build a normalized catalogue from the mirror, with HiFi Planner's own data (ports, corrections, picked images) kept in a separate layer.
 
 ## Product links and colour variants
 
