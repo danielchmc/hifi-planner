@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main   # the newest commit, not the one the run was started on: an hourly run queued behind a long manual run must not undo it
       - uses: actions/setup-node@v5
         with:
           node-version: 22

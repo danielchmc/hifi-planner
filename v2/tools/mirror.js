@@ -100,6 +100,15 @@ async function fetchPage(rec) {
   }
   for (const [sku, e] of Object.entries(prods)) if (!live.has(sku) && !e.gone) { e.gone = TODAY; R.gone.push(e.brand + ' ' + e.model + ' [' + sku + ']'); }
 
+  // the index is derived data: fill it in again from page files already in the mirror (e.g. after two runs overlapped)
+  for (const [sku, e] of Object.entries(prods)) {
+    if (e.page && e.typeKey !== undefined) continue;
+    const d = readJson(file('pages', safe(sku) + '.json'), null);
+    if (!d || !d.product) continue;
+    e.typeKey = d.product.modelTypeKey || ''; e.cat = (d.breadcrumb || []).map((b) => b.title).join(' > ');
+    if (!e.page) e.page = TODAY;
+    R.restored = (R.restored || 0) + 1;
+  }
   // product pages: never read first, then the oldest; outlet units are skipped (their page is the normal product's)
   const queue = listing.filter((p) => !isOutlet(p) && p.url).sort((a, b) => ((prods[String(a.skuCode).toUpperCase()].page || '') < (prods[String(b.skuCode).toUpperCase()].page || '') ? -1 : 1)).slice(0, PAGES);
   for (const p of queue) {
@@ -140,7 +149,7 @@ async function fetchPage(rec) {
   L.push('## Website mirror ' + TODAY, '',
     '- Listing: **' + R.listing + '** products (' + R.bundles + ' bundles, ' + R.outlet + ' outlet units), ' + types.length + ' product types',
     '- Product pages read this run: ' + R.pages + ' (' + R.pagesChanged + ' changed), ' + R.pageErrors.length + ' errors. Pages in the mirror: ' + read + ' of ' + readable,
-    '- New on the website: ' + R.newProducts.length + ' · gone: ' + R.gone.length + ' · back: ' + R.back.length);
+    (R.restored ? '- Index entries filled in again from page files: ' + R.restored + '\n' : '') + '- New on the website: ' + R.newProducts.length + ' · gone: ' + R.gone.length + ' · back: ' + R.back.length);
   if (R.newTypes.length) L.push('', '### New product types on the website', '', ...R.newTypes.map((x) => '- ' + x));
   L.push('', '### Website types HiFi Planner does not map (' + R.unmapped.length + ')', '', 'The catalogue sync skips these. Bundles and outlet units are not counted.', '',
     '| Type | Products | Type key | Website category |', '|---|---:|---|---|',
