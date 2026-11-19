@@ -38,10 +38,9 @@ jobs:
         run: |
           if [ -f "$APP/tools/mirror.js" ]; then node "$APP/tools/mirror.js" "$APP/mirror" --pages "${{ inputs.mirror_pages || '60' }}"
           else echo "::warning::$APP/tools/mirror.js is missing, the website mirror is not updated this run"; fi
-      - name: Own layer and normalized catalogue (data/own.js, build/; not used by the app yet)
+      - name: Build the app catalogue from data/own.js and the mirror (build/)
         continue-on-error: true
         run: |
-          if [ -f "$APP/tools/own-split.js" ]; then node "$APP/tools/own-split.js" "$APP"; fi
           if [ -f "$APP/tools/catalog-build.js" ]; then node "$APP/tools/catalog-build.js" "$APP" && cat "$APP/build/report.md" >> "$GITHUB_STEP_SUMMARY"
           else echo "::warning::$APP/tools/catalog-build.js is missing"; fi
       - name: Copy new website images

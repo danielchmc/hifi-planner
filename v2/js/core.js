@@ -178,7 +178,7 @@
   /* ---------- catalogue (published data + local admin drafts) ---------- */
   const emptyDraft = () => ({ products: {}, delProducts: [], templates: {}, delTemplates: [], ignore: [] });
   // the test page (next.html) keeps its own drafts, so trying it out never mixes with the real catalogue's drafts
-  HP.NEXT = !!(window.HP_NEXT && DATA.categories);
+  HP.NEXT = !!DATA.categories; // the generated catalogue (build/app-products.js + build/categories.js) is loaded
   HP.DRAFT_KEY = window.HP_NEXT ? 'draft-next' : 'draft';
   const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get(HP.DRAFT_KEY, {})), version: 0 });
   cat.rebuild = () => {
@@ -243,7 +243,27 @@
     HP.CAT_TREE = DATA.categories.filter((x) => !x.parent).map((s) => [s.id, DATA.categories.filter((x) => x.parent && top(x.id) === s.id).map((x) => x.id)]);
     const legacy = HP.catLabel;
     HP.catLabel = (id) => { const x = C.get(id); return x ? (HP.lang() === 'da' ? x.title : x.en || x.title) : legacy(id); };
+    // a category id → its path from the section down, e.g. '/tv/projektor/' → ['/tv/', '/tv/projektor/']
+    HP.catChain = (id) => { const out = []; let x = C.get(id), g = 0; while (x && g++ < 6) { out.unshift(x.id); x = C.get(x.parent); } return out; };
+    HP.catDeepest = (ids) => (ids || []).filter((id) => C.has(id)).sort((a, b) => HP.catChain(b).length - HP.catChain(a).length)[0] || '';
   }
+
+  /* ---------- own layer (data/own.js): what HiFi Planner adds to the website's data ----------
+     A catalogue product as the app holds it → its own-layer entry. prev = the product's current entry in data/own.js.
+     Website facts (price, discount, colours, URL) are not kept for products that follow the website (link); they come from
+     the hourly build. Products without a link keep them in "frozen". Same format as tools/own-split.js writes. */
+  HP.toOwn = (p, prev) => {
+    const o = {};
+    ['id', 'brand', 'name', 'sku', 'img', 'in', 'out', 'cable', 'bt', 'wifi', 'manualWireless', 'review', 'auto'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) o[k] = p[k]; });
+    o.cats = (prev && prev.cats) || p.lcats || (DATA.categories ? [] : p.cats) || []; // today's (legacy) categories: the build's fallback
+    const deep = DATA.categories ? HP.catDeepest(p.cats) : '';
+    if (deep && deep !== p.wc) o.cat = deep; // a category chosen by hand (differs from the website's)
+    const up = (s) => String(s || '').toUpperCase();
+    if (prev && prev.link && (!p.site || up(prev.link.site) === up(p.site))) o.link = prev.link;
+    else if (p.site && !p.gone && !(prev && prev.frozen && up(prev.frozen.site) === up(p.site))) o.link = { site: p.site }; // a new link (a frozen product stays frozen)
+    if (!o.link) { const f = {}; ['price', 'was', 'vars', 'url', 'site', 'gone'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) f[k] = p[k]; }); o.frozen = f; }
+    return o;
+  };
 
   /* ---------- document store ---------- */
   const blank = () => ({ v: 4, name: '', pages: 1, orient: 'landscape', ci: false, ciSize: 90, ms: 34, mk: [], sc: 0, items: [], conns: [], plan: null });

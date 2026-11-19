@@ -18,6 +18,7 @@ require('../js/ports.js'); require('../js/site.js');
 const S = window.HP.site;
 const { KIND_SCOPE, CATEGORIES, TYPES, SECTION_ORDER, EN } = require('./taxonomy.js');
 const SM = require('./site-match.js');
+const OVERRIDES = (() => { try { return require('./overrides.js'); } catch (e) { return {}; } })();
 
 const APP = process.argv[2] || path.join(__dirname, '..');
 const M = path.join(APP, 'mirror'), OUT = path.join(APP, 'build');
@@ -32,6 +33,10 @@ const isOutlet = (p) => !!(p.outletOnly || p.isOutletItem || (p.variants || []).
 /* ---------- read ---------- */
 const listing = fs.readFileSync(path.join(M, 'listing.jsonl'), 'utf8').split(/\r?\n/).filter((l) => l.trim()).map((l) => JSON.parse(l));
 const index = readJson(path.join(M, 'index.json'), { products: {} }).products;
+// has the app switched to the generated catalogue? (index.html loads build/app-products.js). Then data/own.js is the master and
+// data/products.js is no longer used; before, data/products.js is the master and data/own.js follows it.
+const SWITCHED = (() => { try { return fs.readFileSync(path.join(APP, 'index.html'), 'utf8').includes('build/app-products.js'); } catch (e) { return false; } })();
+const prevBuild = (() => { try { global.window.HP_DATA = {}; new Function('window', fs.readFileSync(path.join(APP, 'build', 'app-products.js'), 'utf8'))(global.window); return global.window.HP_DATA.products || null; } catch (e) { return null; } })();
 const catalogue = (() => { global.window.HP_DATA = {}; new Function('window', fs.readFileSync(path.join(APP, 'data', 'products.js'), 'utf8'))(global.window); return global.window.HP_DATA.products || []; })();
 
 /* ---------- categories: the website's tree from the breadcrumbs, plus ours ---------- */
@@ -48,19 +53,21 @@ for (const p of listing) {
 for (const c of CATEGORIES) addCat(Object.assign({ website: false }, c));
 
 /* ---------- products ---------- */
-const R = { unknownTypes: {}, noPage: [], corrected: {}, products: 0, bundles: 0, outlet: 0 };
+const R = { unknownTypes: {}, noPage: [], corrected: {}, products: 0, bundles: 0, outlet: 0, overrides: [] };
 const products = [], bundles = [];
 const flatSpecs = (groups) => { const o = {}; for (const g of groups || []) for (const c of g.content || []) { if (!c.term) continue; const v = String(c.value == null ? '' : c.value).trim(); if (v && !/^0([,.]0+)?$/.test(v) && !/^0 x 0 x 0/.test(v) && !(c.term in o)) o[c.term] = v; } return o; };
 for (const p of listing) {
   if (isOutlet(p)) { R.outlet++; continue; }
   const sku = U(p.skuCode), d = pages.get(sku), pr = (d && d.product) || {};
   const key = pr.modelTypeKey || '', rule = TYPES[key];
+  const ov = OVERRIDES[sku] || null; // tools/overrides.js: corrections of website facts
+  if (ov) R.overrides.push(p.brandName + ' ' + p.modelName + ' [' + sku + ']: ' + (ov.note || JSON.stringify(ov)));
   if (!d) R.noPage.push(p.brandName + ' ' + p.modelName + ' [' + sku + ']');
   if (key && !rule) R.unknownTypes[key] = (R.unknownTypes[key] || 0) + 1;
   const webCat = d && d.breadcrumb.length ? d.breadcrumb[d.breadcrumb.length - 1].url : '';
-  const cat = (rule && rule.cat) || webCat;
+  const cat = (ov && ov.cat) || (rule && rule.cat) || webCat;
   if (rule && rule.cat && rule.cat !== webCat) R.corrected[key] = { from: webCat, to: rule.cat, n: (R.corrected[key] || { n: 0 }).n + 1 };
-  const kind = p.isBundle ? 'bundle' : rule ? rule.kind : 'other';
+  const kind = ov && ov.kind ? ov.kind : p.isBundle ? 'bundle' : rule ? rule.kind : 'other';
   const base = { sku, brand: p.brandName, model: p.modelName, type: { key, da: p.modelType || '' }, cat, url: p.url };
   if (cats.has(cat)) cats.get(cat)[kind === 'bundle' ? 'bundles' : 'products']++;
   if (kind === 'bundle') {
@@ -88,7 +95,8 @@ for (const p of listing) {
     return o;
   });
   const rel = {}; for (const [k, f] of [['acc', 'recommendedAccessories'], ['alt', 'recommendedAlternatives'], ['rec', 'recommendedProducts']]) { const l = ((pr[f] || {}).productCodes || []).map(U); if (l.length) rel[k] = l; }
-  products.push(Object.assign(base, { kind, scope: (rule && rule.scope) || KIND_SCOPE[kind] || 'skip', facets, variants, specs, rel, read: (index[sku] || {}).page || '' }));
+  if (ov && ov.facets) Object.assign(facets, ov.facets);
+  products.push(Object.assign(base, { kind, scope: (ov && ov.scope) || (rule && rule.scope) || KIND_SCOPE[kind] || 'skip', facets, variants, specs, rel, read: (index[sku] || {}).page || '' }));
 }
 
 /* ---------- category tree with counts (rolled up) ---------- */
@@ -132,6 +140,7 @@ const countOurs = (id) => products.filter((p) => p.cat === id && inOurs.has(p.sk
 const walk = (c, d) => { P('  '.repeat(d) + '- ' + (c.website ? '' : '★ ') + c.title + ' — ' + c.all + (c.bundles ? ' (' + c.bundles + ' bundles)' : '') + ' · ' + countOurs(c.id) + ' in catalogue'); kids(c.id).sort((a, b) => b.all - a.all).forEach((k) => walk(k, d + 1)); };
 roots.sort((a, b) => b.all - a.all).forEach((c) => walk(c, 0));
 
+if (R.overrides.length) P('## Corrections of website facts (tools/overrides.js)', '', ...R.overrides.map((x) => '- ' + x), '');
 P('', '## Corrections applied (tools/taxonomy.js)', '', '| Type key | Products | Website category | Moved to |', '|---|---:|---|---|',
   ...Object.entries(R.corrected).map(([k, v]) => '| ' + k + ' | ' + v.n + ' | ' + catTitle(v.from) + ' | ' + catTitle(v.to) + ' |'));
 
@@ -176,7 +185,7 @@ if (fs.existsSync(ownFile)) {
   const hk = (u) => S.hk(u);
   const RT = { lost: [], frozen: 0, held: [] };
   // the previous catalogue, for the sync's plausibility check (today's data/products.js until the switch, then the previous build)
-  const prevById = new Map(catalogue.map((c) => [c.id, c]));
+  const prevById = new Map((SWITCHED && prevBuild ? prevBuild : catalogue).map((c) => [c.id, c]));
   const skuCount = {}; own.forEach((o) => { if (o.sku) skuCount[U(o.sku)] = (skuCount[U(o.sku)] || 0) + 1; });
   const generated = own.map((o) => {
     const p = {};
@@ -199,9 +208,17 @@ if (fs.existsSync(ownFile)) {
     const f = m ? facetsBySku.get(U(m.s.sku)) : null;
     const bt = o.bt || (!o.manualWireless && !o.cable && f && f.bt), wifi = o.wifi || (!o.manualWireless && !o.cable && f && f.wifi);
     if (bt) p.bt = true; if (wifi) p.wifi = true;
+    if (m) Object.defineProperty(p, '_web', { value: m.v.image || '', enumerable: false });
     return p;
   });
-  fs.writeFileSync(path.join(OUT, 'products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/. Not used by the app yet. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + generated.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  // stock pictures: one local image file used by cards of 3 or more different website products (e.g. a generic RCA plug photo on
+  // speaker cables) is replaced by the website's own photo of each product. The own layer keeps its value; only the build swaps it.
+  const crypto = require('crypto'), hashOf = new Map(), sitesOf = {};
+  const fileHash = (rel) => { if (!/^img\//.test(rel || '')) return ''; if (!hashOf.has(rel)) { let h = ''; try { h = crypto.createHash('md5').update(fs.readFileSync(path.join(APP, rel))).digest('hex'); } catch (e) { /* missing */ } hashOf.set(rel, h); } return hashOf.get(rel); };
+  generated.forEach((g) => { const h = fileHash((g.img || [])[0]); if (h && g.site) (sitesOf[h] = sitesOf[h] || new Set()).add(g.site); });
+  RT.stock = [];
+  generated.forEach((g) => { const h = fileHash((g.img || [])[0]), u = SM.uuidOf(g._web); if (h && sitesOf[h] && sitesOf[h].size >= 3 && u) { g.img = [S.hk(u)].concat((g.img || []).slice(1)); RT.stock.push(g.brand + ' ' + g.name); } });
+  if (!SWITCHED) fs.writeFileSync(path.join(OUT, 'products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/. Not used by the app yet. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + generated.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
 
   /* ---------- stage 4 test page: the new structure on top of the generated catalogue ---------- */
   const webBySku = new Map(products.map((w) => [w.sku, w]));
@@ -219,24 +236,26 @@ if (fs.existsSync(ownFile)) {
     const best = Object.entries(m).sort((a, b) => b[1] - a[1])[0];
     return best ? best[0] : oc.map((c) => FALLBACK[c]).find(Boolean) || '';
   };
-  const enrich = (p, w, catId) => {
-    const id = (w && w.cat) || catId;
+  const enrich = (p, w, catId, o) => {
+    const id = (o && o.cat && cats.has(o.cat) ? o.cat : '') || (w && w.cat) || catId;
     p.lcats = p.cats; p.cats = id ? chain(id) : []; p.ct = p.cats.map(label).join(' ');
+    if (w && w.cat) p.wc = w.cat; // the website's category (the Editor shows it when another is chosen)
     if (w) { p.kind = w.kind; p.scope = w.scope; p.fx = w.facets; } else if (id === '/tilbehor/pladsholdere/') p.kind = 'standin';
     return p;
   };
-  const next = generated.map((g, i) => enrich(Object.assign({}, g), g.site ? webBySku.get(U(g.site)) : null, learnt(own[i])));
+  const next = generated.map((g, i) => enrich(Object.assign({}, g), g.site ? webBySku.get(U(g.site)) : null, learnt(own[i]), own[i]));
+  const ignored = new Set((() => { try { global.window.HP_DATA = {}; new Function('window', fs.readFileSync(path.join(APP, 'data', 'site-ignore.js'), 'utf8'))(global.window); return global.window.HP_DATA.siteIgnore || []; } catch (e) { return []; } })().map(U));
   const linked = new Set(next.map((p) => p.site && U(p.site)).filter(Boolean));
   let added = 0;
   for (const w of products) {
-    if (w.scope === 'skip' || linked.has(w.sku)) continue;
+    if (w.scope === 'skip' || linked.has(w.sku) || ignored.has(w.sku)) continue; // deleted in the Editor = on the ignore list
     const m = match.byLink({ site: w.sku }); if (!m) continue;
     const isCable = w.kind === 'cable' && w.facets.conn;
     const f = SM.webFacts(m, { single: false, cable: !!isCable, hk });
     const p = { id: 'w-' + w.sku.toLowerCase(), brand: w.brand, name: w.model, sku: w.sku, price: f.price, site: w.sku, web: 1 };
     if (f.was) p.was = f.was; if (f.vars) p.vars = f.vars; if (f.url) p.url = f.url;
     const im = (w.variants.find((v) => v.img) || {}).img; p.img = im ? [im] : [];
-    if (isCable) p.cable = [w.facets.conn]; else if (w.scope === 'diagram') { p.in = []; p.out = []; }
+    if (isCable) p.cable = [w.facets.conn]; else if (w.scope === 'diagram') { p.in = []; p.out = []; p.review = true; } // diagram gear needs its ports checked: listed under Review
     if (w.facets.bt) p.bt = true; if (w.facets.wifi) p.wifi = true;
     next.push(enrich(p, w)); added++;
   }
@@ -244,11 +263,20 @@ if (fs.existsSync(ownFile)) {
   const secRank = (id) => { const i = SECTION_ORDER.indexOf(chain(id)[0]); return i < 0 ? 99 : i; };
   const tree = [...cats.values()].filter((c) => used[c.id]).map((c) => ({ id: c.id, title: c.title, en: EN[c.id] || c.en || c.title, parent: c.parent && cats.has(c.parent) ? c.parent : null, n: used[c.id] }))
     .sort((a, b) => secRank(a.id) - secRank(b.id) || b.n - a.n || a.title.localeCompare(b.title, 'da'));
-  fs.writeFileSync(path.join(OUT, 'next.js'), '/* Written by tools/catalog-build.js: the generated catalogue with the new structure, for the test page next.html. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.categories = ' + JSON.stringify(tree) + ';\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  // the app's catalogue: products (one per line; the Editor's Publish rewrites this file too) and the category tree
+  fs.writeFileSync(path.join(OUT, 'app-products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/ (and by Publish in the Editor until the next build). The app\'s catalogue. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  fs.writeFileSync(path.join(OUT, 'categories.js'), '/* Written by tools/catalog-build.js: the category tree (the website\'s, plus HiFi Planner\'s own from tools/taxonomy.js). */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.categories = ' + JSON.stringify(tree) + ';\n');
+  try { fs.unlinkSync(path.join(OUT, 'next.js')); } catch (e) { /* gone already */ }
+  // what changed since the previous build (prices and products), for the report
+  if (prevBuild) {
+    const before = new Map(prevBuild.map((p) => [p.id, p]));
+    RT.changes = { prices: next.filter((p) => before.has(p.id) && before.get(p.id).price !== p.price).map((p) => p.brand + ' ' + p.name + ': ' + before.get(p.id).price + ' → ' + p.price),
+      added: next.filter((p) => !before.has(p.id)).map((p) => p.brand + ' ' + p.name), removed: prevBuild.filter((p) => !next.some((x) => x.id === p.id)).map((p) => p.brand + ' ' + p.name) };
+  }
   RT.next = { products: next.length, added, uncategorised: next.filter((p) => !p.cats.length).map((p) => p.brand + ' ' + p.name) };
 
   // round trip: the generated catalogue against today's data/products.js, field by field
-  const today = new Map(catalogue.map((c) => [c.id, c]));
+  const today = new Map((SWITCHED ? [] : catalogue).map((c) => [c.id, c])); // after the switch data/products.js is no longer used: no round trip
   const fields = {}, ex = {}, keys = new Set();
   catalogue.forEach((c) => Object.keys(c).forEach((k) => keys.add(k))); generated.forEach((g) => Object.keys(g).forEach((k) => keys.add(k)));
   let same = 0;
@@ -263,13 +291,19 @@ if (fs.existsSync(ownFile)) {
     }
     if (ok) same++;
   }
-  P('', '## Round trip (stage 3): own layer + website → catalogue', '',
-    '`build/products.js` is generated from `data/own.js` and the mirror, in the app\'s current format. Compared with today\'s `data/products.js`:', '',
-    '- **' + same + '** of ' + catalogue.length + ' products identical in every field' + (generated.length !== catalogue.length ? ' (own layer has ' + generated.length + ')' : ''),
+  P('', SWITCHED ? '## Own layer + website → app catalogue' : '## Round trip (stage 3): own layer + website → catalogue', '',
+    ...(SWITCHED ? ['`data/own.js` is the master for what HiFi Planner adds; `build/app-products.js` is rebuilt from it and the mirror every hour.', '']
+      : ['`build/products.js` is generated from `data/own.js` and the mirror, in the app\'s current format. Compared with today\'s `data/products.js`:', '',
+        '- **' + same + '** of ' + catalogue.length + ' products identical in every field' + (generated.length !== catalogue.length ? ' (own layer has ' + generated.length + ')' : '')]),
     '- ' + (own.length - RT.frozen) + ' follow the website through their link, ' + RT.frozen + ' are frozen (not on the website)',
     '- Prices held by the plausibility check (as the sync does): ' + RT.held.length,
     RT.lost.length ? '- Link no longer on the website: ' + RT.lost.join(', ') : '- Every link points at a product the website lists', '');
-  P('', '**Test page** (`next.html`, `build/next.js`): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
+  P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
+  if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');
+  if (RT.changes) {
+    P('Since the previous build: ' + RT.changes.prices.length + ' price changes, ' + RT.changes.added.length + ' products added, ' + RT.changes.removed.length + ' removed.', '');
+    [['Price changes', RT.changes.prices], ['Added', RT.changes.added], ['Removed', RT.changes.removed]].forEach(([k, l]) => { if (l.length) { P('**' + k + '**', ''); l.slice(0, 30).forEach((x) => P('- ' + x)); if (l.length > 30) P('- … ' + (l.length - 30) + ' more'); P(''); } });
+  }
   if (RT.held.length) { P('**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)', ''); RT.held.forEach((x) => P('- ' + x)); P(''); }
   if (Object.keys(fields).length) {
     P('| Field | Products that differ |', '|---|---:|', ...Object.entries(fields).sort((a, b) => b[1] - a[1]).map(([k, n]) => '| ' + k + ' | ' + n + ' |'), '');

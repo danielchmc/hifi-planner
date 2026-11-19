@@ -22,6 +22,8 @@ const { sellable, matcher, webFacts } = require('./site-match.js');
 
 const APP = process.argv[2] || path.join(__dirname, '..');
 const read = (f, key) => { global.window = { HP_DATA: {} }; new Function('window', fs.readFileSync(f, 'utf8'))(global.window); return global.window.HP_DATA[key]; };
+// after the switch data/own.js is the master (the Editor writes it) and data/products.js is stale: never overwrite own.js from it
+if (fs.readFileSync(path.join(APP, 'index.html'), 'utf8').includes('build/app-products.js')) { console.log('The app uses the generated catalogue: data/own.js is the master now. own-split.js does nothing.'); process.exit(0); }
 const products = read(path.join(APP, 'data', 'products.js'), 'products') || [];
 const listing = fs.readFileSync(path.join(APP, 'mirror', 'listing.jsonl'), 'utf8').split(/\r?\n/).filter((l) => l.trim()).map((l) => JSON.parse(l));
 const match = matcher(sellable(listing));

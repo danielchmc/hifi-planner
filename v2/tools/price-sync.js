@@ -228,7 +228,10 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, report + '\n');
   if (DRY) return;
-  if (dirty) writeData('products.js', 'products', products, 'HiFi Planner products. Edit through the app (Admin), not by hand.', '},{"id"');
+  // after the switch to the generated catalogue (index.html loads build/app-products.js) prices, colours and new products come from
+  // tools/catalog-build.js, and data/own.js is the master for HiFi Planner's own data: data/products.js is no longer written
+  const switched = (() => { try { return fs.readFileSync(path.join(DIR, '..', 'index.html'), 'utf8').includes('build/app-products.js'); } catch (e) { return false; } })();
+  if (dirty && !DRY && !switched) writeData('products.js', 'products', products, 'HiFi Planner products. Edit through the app (Admin), not by hand.', '},{"id"');
   writeData('site-details.js', 'siteDetails', details, 'Written by tools/price-sync.js: hifiklubben.dk product pages (gallery, connection specs, availability). Admins only.', '},"');
   writeData('site-new.js', 'siteNew', fresh, 'Written by tools/price-sync.js: hifiklubben.dk products not in HiFi Planner (mostly accessories). Admins only.', '},{"sku"');
   writeData('price-sync.js', 'priceSync', { date: new Date().toISOString(), products: products.length, changed: R.changed.length, discounts: R.discounts.length, added: R.added.length, gone: products.filter((p) => p.gone).length, review: products.filter((p) => p.review).length }, 'Written by tools/price-sync.js.');

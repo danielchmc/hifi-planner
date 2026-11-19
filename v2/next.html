@@ -1,40 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#141518">
-  <title>HiFi Planner · test: new catalogue</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="assets/favicon.webp" type="image/webp">
-  <link rel="stylesheet" href="css/app.css?v=2.0.0">
-  <!-- Google tag (gtag.js), same property as the previous version -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW00S9FNRZ"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-BW00S9FNRZ');</script>
+  <title>HiFi Planner</title>
+  <!-- The test page for the new catalogue is now the normal planner. -->
+  <meta http-equiv="refresh" content="0; url=index.html">
+  <script>location.replace('index.html' + location.hash);</script>
 </head>
-<body>
-  <div id="app"></div>
-  <noscript>HiFi Planner needs JavaScript.</noscript>
-  <!-- Test page for the new catalogue (stage 4): the same app, with the catalogue generated from the website mirror (build/next.js).
-       Publishing is switched off here and drafts are kept apart from the real catalogue's. See README → Normalized catalogue. -->
-  <script>window.HP_NEXT = true;</script>
-  <script src="data/config.js"></script>
-  <script>
-    // Catalogue data is loaded with a timestamp so shops always get the latest published version.
-    (function () { var v = Date.now(); var files = ['build/next.js', 'data/templates.js', 'data/price-sync.js'];
-      try { if (localStorage.getItem('hp2.admin') === 'true') files.push('data/site-new.js'); } catch (e) { /* no storage */ } // website scan: admins only
-      files.forEach(function (s) { document.write('<script src="' + s + '?t=' + v + '"><\/script>'); }); })();
-  </script>
-  <script src="js/ports.js?v=2.0.0"></script>
-  <script src="js/site.js?v=2.0.0"></script>
-  <script src="js/core.js?v=2.0.0"></script>
-  <script src="js/canvas.js?v=2.0.0"></script>
-  <script src="js/panels.js?v=2.0.0"></script>
-  <script src="js/editor.js?v=2.0.0"></script>
-  <script src="js/tour.js?v=2.0.0"></script>
-  <script src="js/main.js?v=2.0.0"></script>
-  <a class="next-badge" href="index.html" title="This page tries out the new catalogue. Click to go back to the normal planner.">TEST · nyt katalog · tilbage</a>
-</body>
+<body><a href="index.html">HiFi Planner</a></body>
 </html>

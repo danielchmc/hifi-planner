@@ -45,7 +45,7 @@
   /* ================= product editor ================= */
   E.open = (startId) => {
     let cur = null, isNew = false, mode = 'all', showAcc = false;
-    const siteNew = () => { const have = new Set(cat.list.map((p) => (p.sku || '').toUpperCase())); return (window.HP_DATA.siteNew || []).filter((s) => !have.has(s.sku.toUpperCase())); };
+    const siteNew = () => { const have = new Set(cat.list.flatMap((p) => [p.sku, p.site]).filter(Boolean).map((s) => s.toUpperCase())); return (window.HP_DATA.siteNew || []).filter((s) => !have.has(s.sku.toUpperCase())); };
     const relevant = (s) => TYPE_CATS[s.type] || TYPE_CABLE[s.type];
     const modes = h('.ed-modes');
     const q = h('input', { type: 'search', placeholder: t('Search catalogue…', 'Søg i kataloget…'), oninput: drawList });
@@ -139,17 +139,27 @@
       const f = (label, el) => h('label.field', null, h('span', null, label), el);
       const allCats = [...new Set([...HP.CAT_TREE.flatMap((g) => g[1]), ...cat.products().flatMap((p) => p.cats || [])])].sort();
       const catBox = h('.catchips');
-      const drawCats = () => { catBox.textContent = ''; cur.cats.forEach((c) => catBox.append(h('span.chipx', null, c, h('button', { onclick: () => { cur.cats = cur.cats.filter((x) => x !== c); drawCats(); } }, '×'))));
+      const drawCats = HP.NEXT ? () => { // the website's category tree: one category per product; the website's own unless chosen here
+        catBox.textContent = '';
+        const deep = HP.catDeepest(cur.cats);
+        if (deep) catBox.append(h('span.chipx', null, HP.catChain(deep).map(HP.catLabel).join(' › '), h('button', { onclick: () => { cur.cats = []; drawCats(); } }, '×')));
+        catBox.append(h('select', { onchange(e) { if (e.target.value) cur.cats = HP.catChain(e.target.value); drawCats(); } }, h('option', { value: '' }, deep ? t('Change category…', 'Skift kategori…') : t('+ choose category', '+ vælg kategori')),
+          HP.CAT_TREE.map(([g, subs]) => h('optgroup', { label: HP.catLabel(g) }, subs.map((c) => h('option', { value: c }, HP.catChain(c).slice(1).map(HP.catLabel).join(' › ')))))));
+        if (cur.wc && deep && deep !== cur.wc) catBox.append(h('small.muted', null, t('The website files it under ', 'Hjemmesiden har den under ') + HP.catChain(cur.wc).map(HP.catLabel).join(' › ')));
+      } : () => { catBox.textContent = ''; cur.cats.forEach((c) => catBox.append(h('span.chipx', null, c, h('button', { onclick: () => { cur.cats = cur.cats.filter((x) => x !== c); drawCats(); } }, '×'))));
         catBox.append(h('select', { onchange(e) { const v = e.target.value === '+' ? (prompt(t('New category name', 'Navn på ny kategori')) || '').trim() : e.target.value; if (v && !cur.cats.includes(v)) cur.cats.push(v); drawCats(); } },
           h('option', { value: '' }, t('+ add category', '+ tilføj kategori')), allCats.filter((c) => !cur.cats.includes(c)).map((c) => h('option', { value: c }, c)), h('option', { value: '+' }, t('New category…', 'Ny kategori…')))); };
+      // with the new catalogue, products that follow the website get price, discount and colours from it every hour: not editable here
+      const fromSite = HP.NEXT && !!cur.site && !cur.gone && !isNew, ro = fromSite ? { readOnly: true, title: t('From hifiklubben.dk, updated every hour', 'Fra hifiklubben.dk, opdateres hver time') } : {};
       form.append(
         cur.gone ? h('.note-box', null, icon('warn', 15), t('Not on hifiklubben.dk since ' + cur.gone + ' (discontinued, or the SKU is wrong). Staff see it marked as discontinued.', 'Ikke på hifiklubben.dk siden ' + cur.gone + ' (udgået, eller SKU’en er forkert). Personalet ser det markeret som udgået.'), h('button.link', { onclick: () => { delete cur.gone; HP.toast(t('Mark removed. Save to keep it.', 'Markering fjernet. Gem for at beholde det.')); drawForm(); } }, t('Clear mark', 'Fjern markering'))) : '',
         cur._url ? h('.note-box.info', null, icon('cloud', 15), t('Filled in from hifiklubben.dk (' + cur._type + '). Add the inputs and outputs, and pick a back-panel image from the product page if you want one.', 'Udfyldt fra hifiklubben.dk (' + cur._type + '). Tilføj ind- og udgange, og vælg et bagsidebillede fra produktsiden, hvis du vil have et.')) : '',
         h('.ed-head', null, h('h3', null, isNew ? (cur.cable ? t('New cable', 'Nyt kabel') : t('New product', 'Nyt produkt')) : cur.brand + ' ' + cur.name),
           siteLink(cur) && h('a.link', { href: siteLink(cur), target: '_blank', rel: 'noopener' }, t('Open on hifiklubben.dk ↗', 'Åbn på hifiklubben.dk ↗')), !isNew && h('code', null, cur.id)),
-        h('.grid2', null, f('Brand', inp('brand', { list: 'ed-brands' })), f(t('Model name', 'Modelnavn'), inp('name')), f('SKU', inp('sku')), f(t('Price (DKK)', 'Pris (DKK)'), inp('price', { type: 'number', min: 0, step: 1 })),
-          h('span'), f(t('Price before discount (empty if none)', 'Førpris ved rabat (tom hvis ingen)'), inp('was', { type: 'number', min: 0, step: 1 }))),
-        h('small.muted', null, t('Price, discount and colours are updated every hour from hifiklubben.dk when the SKU matches.', 'Pris, rabat og farver opdateres hver time fra hifiklubben.dk, når SKU’en matcher.')),
+        h('.grid2', null, f('Brand', inp('brand', { list: 'ed-brands' })), f(t('Model name', 'Modelnavn'), inp('name')), f('SKU', inp('sku')), f(t('Price (DKK)', 'Pris (DKK)'), inp('price', Object.assign({ type: 'number', min: 0, step: 1 }, ro))),
+          h('span'), f(t('Price before discount (empty if none)', 'Førpris ved rabat (tom hvis ingen)'), inp('was', Object.assign({ type: 'number', min: 0, step: 1 }, ro)))),
+        h('small.muted', null, fromSite ? t('Price, discount and colours come from hifiklubben.dk (' + cur.site + ') and are updated every hour.', 'Pris, rabat og farver kommer fra hifiklubben.dk (' + cur.site + ') og opdateres hver time.')
+          : t('Price, discount and colours are updated every hour from hifiklubben.dk when the SKU matches.', 'Pris, rabat og farver opdateres hver time fra hifiklubben.dk, når SKU’en matcher.')),
         h('datalist#ed-brands', null, [...new Set(cat.list.map((p) => p.brand))].sort().map((b) => h('option', { value: b }))),
         h('.lab', null, t('Images', 'Billeder')), imageField(0, t('Front', 'Forside')), !cur.cable && imageField(1, t('Back', 'Bagside')), sitePanel());
       if (cur.cable) {
@@ -184,7 +194,7 @@
           !cur.cable && h('button' + (on === 'back' ? '.on' : ''), { onclick: () => { imgSetters[1](hk); drawForm(); } }, t('Back', 'Bag')))); });
       const specRows = Object.entries(d.spec || {}).map(([k, v]) => h('tr', null, h('th', null, k), h('td', null, v)));
       const apply = () => {
-        const sug = HP.site.suggestPorts(d.spec, cur.cats);
+        const sug = HP.site.suggestPorts(d.spec, cur.lcats || cur.cats);
         const go = () => { cur.in = sug.in; cur.out = sug.out; drawForm(); HP.toast(t('Suggested ports filled in. Check them against the rear panel, then Save.', 'Foreslåede porte er udfyldt. Tjek dem mod bagpanelet, og tryk Gem.')); };
         if ((cur.in || []).length || (cur.out || []).length) HP.confirm(t('Replace the current inputs/outputs with the suggestion?', 'Erstat de nuværende ind-/udgange med forslaget?'), t('Replace', 'Erstat'), go); else go();
       };
@@ -202,6 +212,7 @@
       if (out._url && !out.url) out.url = out._url.replace(/^https?:\/\/www\.hifiklubben\.dk/, '');
       delete out._url; delete out._type; delete out.review; // saved by an admin = checked
       if (!(+out.was > out.price)) delete out.was; else out.was = +out.was;
+      if (HP.NEXT && !out.cable) { const deep = HP.catDeepest(out.cats); out.cats = deep ? HP.catChain(deep) : []; }
       if (!out.cable) { ['in', 'out'].forEach((s) => { out[s] = P.uniqueKeys(out[s].map((x) => Object.assign({}, x, { key: P.slug(x.label) }))); }); if (!out.bt) delete out.bt; if (!out.wifi) delete out.wifi; }
       cat.putProduct(out); isNew = false; cur = JSON.parse(JSON.stringify(out)); drawModes(); drawList(); drawForm();
       HP.toast(t('Saved as draft. Publish to send it to all shops.', 'Gemt som kladde. Udgiv for at sende det til alle butikker.'), { kind: 'ok' });
@@ -297,6 +308,36 @@
       return 'GitHub ' + r.status;
     } catch (e) { return t('Could not reach GitHub: ', 'Kunne ikke nå GitHub: ') + e.message; }
   };
+  // the new catalogue: edits go to data/own.js (the master), and into build/app-products.js too, so shops see them at once.
+  // The hourly build regenerates build/app-products.js from data/own.js and the website mirror.
+  async function publishOwn(c, status, close) {
+    const d = cat.draft;
+    const [of, af, tf] = await Promise.all([getFile(c, 'data/own.js'), getFile(c, 'build/app-products.js'), getFile(c, 'data/templates.js')]);
+    if (!of || !af) throw new Error(t('data/own.js or build/app-products.js is missing on GitHub', 'data/own.js eller build/app-products.js mangler på GitHub'));
+    const own = parseFile(of.text), app = parseFile(af.text), byId = new Map(own.map((o) => [o.id, o]));
+    const dels = new Set(d.delProducts), edits = Object.values(d.products).map(cat.clean);
+    const ownOut = own.filter((o) => !dels.has(o.id)).map((o) => (d.products[o.id] ? HP.toOwn(cat.clean(d.products[o.id]), o) : o));
+    edits.forEach((p) => { if (!byId.has(p.id)) ownOut.unshift(HP.toOwn(p, null)); });
+    const appOut = app.filter((p) => !dels.has(p.id)).map((p) => (d.products[p.id] ? Object.assign(cat.clean(d.products[p.id]), { wc: p.wc }) : p));
+    edits.forEach((p) => { if (!app.some((x) => x.id === p.id)) appOut.unshift(p); });
+    const enc = (s) => b64(new TextEncoder().encode(s)), who = 'HiFi Planner (shop ' + HP.shop() + ')';
+    const lines = (arr) => '[\n' + arr.map((x) => JSON.stringify(x)).join(',\n') + '\n]';
+    const head = (key, a) => a.text.slice(0, a.text.indexOf('window.HP_DATA.' + key));
+    if (Object.keys(d.products).length || dels.size) {
+      status.textContent = t('Writing catalogue…', 'Skriver katalog…');
+      await putFile(c, 'data/own.js', enc(head('own', of) + 'window.HP_DATA.own = ' + lines(ownOut) + ';\n'), of.sha, 'Catalogue update via ' + who);
+      await putFile(c, 'build/app-products.js', enc(head('products', af) + 'window.HP_DATA.products = ' + lines(appOut) + ';\n'), af.sha, 'Catalogue update via ' + who + ' (until the next build)');
+    }
+    if ((d.ignore || []).length) {
+      const xf = await getFile(c, 'data/site-ignore.js'), cur0 = xf ? parseFile(xf.text) : [];
+      await putFile(c, 'data/site-ignore.js', enc('/* Website SKUs the catalogue sync must not add. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.siteIgnore = ' + JSON.stringify([...new Set(cur0.concat(d.ignore))]) + ';\n'), xf && xf.sha, 'Ignore list via ' + who);
+    }
+    const m = merged([], tf ? parseFile(tf.text) : DATA.templates || []);
+    if (Object.keys(d.templates).length || d.delTemplates.length || !tf) await putFile(c, 'data/templates.js', enc(fileText('templates', m.tpls)), tf && tf.sha, 'Shortcuts update via ' + who);
+    DATA.products = appOut; DATA.own = ownOut; DATA.templates = m.tpls; cat.clearDraft(); close();
+    HP.toast(t('Published. Shops get the update a few minutes from now when they reload.', 'Udgivet. Butikkerne får opdateringen om få minutter, når de genindlæser.'), { kind: 'ok', ms: 8000 });
+  }
+
   E.publish = () => {
     if (window.HP_NEXT) return HP.toast(t('This is the test page for the new catalogue: publishing is switched off here. Drafts made here stay on this page.', 'Dette er testsiden for det nye katalog: udgivelse er slået fra her. Kladder lavet her bliver på denne side.'), { kind: 'warn', ms: 7000 });
     const c = cfg(), d = cat.draft;
@@ -326,6 +367,7 @@
           await putFile(c, 'img/' + name, await shrink(p.img[i], 640), null, 'Add image for ' + p.name); p.img[i] = 'img/' + name;
         }
         LS.set(HP.DRAFT_KEY, d);
+        if (DATA.categories) return await publishOwn(c, status, close);
         const m = merged(pf ? parseFile(pf.text) : DATA.products || [], tf ? parseFile(tf.text) : DATA.templates || []);
         const enc = (s) => b64(new TextEncoder().encode(s)), who = 'HiFi Planner (shop ' + HP.shop() + ')';
         status.textContent = t('Writing catalogue…', 'Skriver katalog…');
