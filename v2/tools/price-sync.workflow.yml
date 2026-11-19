@@ -38,6 +38,11 @@ jobs:
         run: |
           if [ -f "$APP/tools/mirror.js" ]; then node "$APP/tools/mirror.js" "$APP/mirror" --pages "${{ inputs.mirror_pages || '60' }}"
           else echo "::warning::$APP/tools/mirror.js is missing, the website mirror is not updated this run"; fi
+      - name: Build the normalized catalogue from the mirror (build/, not used by the app yet)
+        continue-on-error: true
+        run: |
+          if [ -f "$APP/tools/catalog-build.js" ]; then node "$APP/tools/catalog-build.js" "$APP" && cat "$APP/build/report.md" >> "$GITHUB_STEP_SUMMARY"
+          else echo "::warning::$APP/tools/catalog-build.js is missing"; fi
       - name: Copy new website images
         run: |
           if [ -f "$APP/tools/mirror_images.py" ]; then python "$APP/tools/mirror_images.py" "$APP" --budget 400
@@ -48,6 +53,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add "$APP/data"
           [ -d "$APP/mirror" ] && git add "$APP/mirror" || true
+          [ -d "$APP/build" ] && git add "$APP/build" || true
           [ -d "$APP/img/hk" ] && git add "$APP/img/hk" "$APP/img/hd/hk" || true
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           git commit -m "Catalogue sync from hifiklubben.dk"

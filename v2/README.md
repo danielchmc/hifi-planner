@@ -31,7 +31,8 @@ Rebuild of HiFi Planner as a static web app. No build step and no dependencies: 
 | `img/hd/` | The same images at full resolution (max 1600 px, 61 MB), used when zooming in and in the full-screen viewer |
 | `img/hk/`, `img/hd/hk/` | Copies of hifiklubben.com images, named by their image ID (written by the sync job) |
 | `mirror/` | Raw copy of hifiklubben.dk's product data (listing, product pages, types), written by `tools/mirror.js`; never loaded by the app, never edited by hand. See `mirror/README.md` |
-| `tools/` | Catalogue sync (`price-sync.js`, `mirror.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
+| `build/` | Normalized catalogue generated from `mirror/` by `tools/catalog-build.js` (`catalog.json`, `report.md`); not used by the app yet |
+| `tools/` | Catalogue sync (`price-sync.js`, `mirror.js`, `catalog-build.js`, `taxonomy.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
 
 ## Admin
 
@@ -104,7 +105,16 @@ What it keeps in step with the website:
 
 Product pages are read in batches (60 per run, new products first), so all pages are refreshed about once a day. `tools/sync-report-2026-11-15.md` is the first full run against live data.
 
-**Website mirror.** After the sync, the same run updates `mirror/` (`tools/mirror.js`): the raw listing, the product record of about 60 product pages per hour, an index of every website SKU (first/last seen, gone) and `types.json`, which compares the website's product types with what HiFi Planner maps. The run summary lists new website types and the types the sync does not map, so a missing category (like projectors) shows up there instead of being skipped silently. The mirror step may fail without stopping prices and images from being committed. It is stage 1 of the planned data rework: later stages build a normalized catalogue from the mirror, with HiFi Planner's own data (ports, corrections, picked images) kept in a separate layer.
+**Website mirror.** After the sync, the same run updates `mirror/` (`tools/mirror.js`): the raw listing, the product record of about 60 product pages per hour, an index of every website SKU (first/last seen, gone) and `types.json`, which compares the website's product types with what HiFi Planner maps. The run summary lists new website types and the types the sync does not map, so a missing category (like projectors) shows up there instead of being skipped silently. The mirror step may fail without stopping prices and images from being committed.
+
+**Normalized catalogue (stage 2, not used by the app yet).** `tools/catalog-build.js` turns the mirror into `build/catalog.json` and `build/report.md`, every hour after the mirror:
+
+- **Categories** are the website's own tree (from the product pages' breadcrumbs, identified by URL path such as `/tv/projektor/`), plus a few of HiFi Planner's own (Væghøjtaler, Pladespillere, Moduler & opgraderinger).
+- **Rules** live in `tools/taxonomy.js`, the only hand-edited part: for every website type key (`modelTypeKey`, e.g. `InCeilingLoudspeaker`) its *kind*, *scope* (`diagram` = drawn and wired, `pricelist` = on proposals without ports, `skip`), *facets* (active, wireless, battery, mount, role, cable connector) and, where the website files it oddly, the category to move it to. A new website type without a rule is listed in the report.
+- **Products** carry variants (SKU, colour, EAN, price, stock, image), the variant kind (colour, size, metre), flattened specs, and the website's accessory/alternative SKU lists. **Bundles** become parts lists (product SKUs with quantities).
+- **report.md** compares the result with today's catalogue: where today's categories end up, Bluetooth/WiFi/per-metre differences, products not on the website, and what is new per category.
+
+Next stages: move HiFi Planner's own data (ports, picked images, corrections, stand-ins) into a separate layer keyed by SKU (including per-product overrides, e.g. cables the website marks wrongly), then switch the app over to the generated catalogue.
 
 ## Product links and colour variants
 
