@@ -31,7 +31,28 @@ const CATEGORIES = [
   { id: '/hojtalere/vaeghojtaler/', title: 'Væghøjtaler', en: 'On-wall speakers', parent: '/hojtalere/' },
   { id: '/pladespiller/pladespillere/', title: 'Pladespillere', en: 'Turntables', parent: '/pladespiller/' },
   { id: '/tilbehor/opgraderinger/', title: 'Moduler & opgraderinger', en: 'Modules & upgrades', parent: '/tilbehor/' },
+  { id: '/tilbehor/pladsholdere/', title: 'Pladsholdere', en: 'Stand-ins', parent: '/tilbehor/' }, // HiFi Planner's generic devices (any TV, any amplifier…)
 ];
+
+// order of the sections in the app (the website's order is not in its data); categories within a section follow product count
+const SECTION_ORDER = ['/hojtalere/', '/stereo/', '/surround/', '/tv/', '/pladespiller/', '/horetelefoner/', '/kabler/', '/tilbehor/'];
+// English names for the website's sections and categories (the website's own names are Danish)
+const EN = {
+  '/hojtalere/': 'Speakers', '/stereo/': 'HiFi', '/surround/': 'Surround', '/tv/': 'TV', '/pladespiller/': 'Turntables', '/horetelefoner/': 'Headphones', '/kabler/': 'Cables', '/tilbehor/': 'Accessories',
+  '/hojtalere/gulvhojtaler/': 'Floorstanding', '/hojtalere/kompakt-hojtaler/': 'Compact', '/hojtalere/centerhojtaler/': 'Center', '/hojtalere/subwoofer/': 'Subwoofers',
+  '/hojtalere/bluetooth-tradlos-hojtaler/': 'Wireless / Bluetooth', '/hojtalere/indbygning-udendors-hojtaler/': 'In-wall, in-ceiling & outdoor', '/hojtalere/systemer/': 'Speaker systems',
+  '/stereo/forstarker/': 'Amplifiers', '/stereo/musikstreamer/': 'Streamers', '/stereo/cd-afspiller/': 'CD players', '/stereo/mini-anlag/': 'Compact systems', '/stereo/da-konverter/': 'DACs',
+  '/stereo/dab-radio-fm-internet/': 'Radios', '/stereo/systemer/': 'Stereo systems', '/surround/surround-receiver/': 'AV receivers', '/surround/surround-processor/': 'AV processors',
+  '/surround/blu-ray-afspiller/': 'Blu-ray players', '/surround/hjemmebio-system/': 'Home cinema systems', '/tv/tv/': 'TVs', '/tv/tv/oled/': 'OLED', '/tv/tv/qled/': 'QLED', '/tv/projektor/': 'Projectors',
+  '/tv/soundbar-hojtaler-tv-lyd/': 'Soundbars / TV audio', '/pladespiller/riaa-forstaerker/': 'Phono stages', '/pladespiller/pickupper-erstatningsnale/': 'Cartridges & styli',
+  '/pladespiller/tilbehoer/': 'Turntable accessories', '/pladespiller/vedligeholdelse/': 'Vinyl care', '/pladespiller/pladespiller-system/': 'Turntable systems',
+  '/horetelefoner/on-ear-over-ear/': 'On-ear / over-ear', '/horetelefoner/in-ear/': 'In-ear', '/horetelefoner/head-fi/': 'Head-Fi', '/horetelefoner/horetelefon-forstarker/': 'Headphone amplifiers',
+  '/horetelefoner/horetelefon-tilbehor/': 'Headphone accessories', '/horetelefoner/gaming-headset/': 'Gaming headsets', '/kabler/hojtaler-kabel/': 'Speaker cable', '/kabler/signal-kabel/': 'Interconnects',
+  '/kabler/digital-kabel/': 'Digital cables', '/kabler/hdmi-kabel/': 'HDMI cables', '/kabler/minijack-kabel/': 'Minijack cables', '/kabler/subwoofer-kabel/': 'Subwoofer cables',
+  '/kabler/hojtaler-stik/': 'Speaker plugs', '/kabler/strom-kabler/': 'Power', '/kabler/antenne-kabel-stik/': 'Antenna', '/kabler/diverse-kabel-stik-adapter/': 'Other cables & adapters',
+  '/tilbehor/hojtaler-tilbehor/': 'Speaker accessories', '/tilbehor/tv-tilbehor/': 'TV accessories', '/tilbehor/mobler/': 'Furniture', '/tilbehor/mobel-tilbehor/': 'Furniture accessories',
+  '/tilbehor/sonos-tilbehor/': 'Sonos accessories', '/tilbehor/fjernbetjening/': 'Remote controls', '/tilbehor/andet-tilbehor/': 'Other accessories',
+};
 
 const T = (kind, facets, extra) => Object.assign({ kind, facets: facets || {} }, extra || {});
 const TYPES = {
@@ -125,4 +146,4 @@ const TYPES = {
   TurntableSystem: T('bundle'), SoundbarSystem: T('bundle'), Speakerswithaccessories: T('bundle'), HiFiFurniture: T('bundle'), FurnitureSystem: T('bundle'),
 };
 
-module.exports = { KIND_SCOPE, CATEGORIES, TYPES };
+module.exports = { KIND_SCOPE, CATEGORIES, TYPES, SECTION_ORDER, EN };

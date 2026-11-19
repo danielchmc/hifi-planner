@@ -31,6 +31,7 @@ Website categories as they are, plus HiFi Planner's own (marked ★). Counts: pr
   - Møbler — 10 (18 bundles) · 0 in catalogue
   - Sonos tilbehør — 10 · 0 in catalogue
   - Fjernbetjening — 8 · 0 in catalogue
+  - ★ Pladsholdere — 0 · 0 in catalogue
 - Kabler — 163 · 109 in catalogue
   - Højtalerkabel — 34 · 34 in catalogue
   - Digital kabel — 32 · 32 in catalogue
@@ -244,6 +245,9 @@ Read by the next mirror runs.
 - 718 follow the website through their link, 129 are frozen (not on the website)
 - Prices held by the plausibility check (as the sync does): 14
 - Every link points at a product the website lists
+
+
+**Test page** (`next.html`, `build/next.js`): 1287 products (440 from the website that HiFi Planner does not have yet, without ports), every product has a category.
 
 **Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
 

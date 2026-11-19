@@ -324,7 +324,7 @@
     const it = store.item(runId); if (!it) return;
     const q = h('input', { type: 'search', placeholder: t('Search cables…', 'Søg kabler…'), oninput: draw, autofocus: true });
     const list = h('.plist.tall');
-    const perMetre = (p) => (p.cable || []).includes('speaker') && /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()); // speaker cable named "… - 1m" or SLiP installation cable
+    const perMetre = (p) => (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim())); // the website says so, or a speaker cable named "… - 1m" or SLiP installation cable
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       list.textContent = '';
@@ -494,7 +494,7 @@
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
         h('h3', null, t('Categories', 'Kategorier')),
-        h('.cattree', null, HP.CAT_TREE.map(([g, subs]) => h('details', null, h('summary', null, g), h('ul', null, subs.map((s) => h('li', null, s))))))) });
+        h('.cattree', null, HP.CAT_TREE.map(([g, subs]) => h('details', null, h('summary', null, HP.catLabel(g)), h('ul', null, subs.map((s) => h('li', null, HP.catLabel(s)))))))) });
   };
 
   /* ---------- settings (shop, admin, GitHub) ---------- */

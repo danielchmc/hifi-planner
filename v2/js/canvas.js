@@ -39,6 +39,13 @@
   const SPEAKER_CATS = (HP.CAT_TREE.find((g) => g[0] === 'Speakers') || [0, []])[1];
   function shapeOf(p) {
     const cats = p.cats || [], name = p.name.toLowerCase(), hay = (p.url || '').toLowerCase() + ' ' + name;
+    if (p.kind) { // generated catalogue: the website's own type says what it is
+      const fx = p.fx || {};
+      if (p.kind === 'subwoofer') return 'triangle';
+      if (p.kind !== 'speaker') return 'diamond';
+      if (fx.mount === 'ceiling' || fx.mount === 'inwall') return /^ccm/.test(name) ? 'circle' : /^cwm/.test(name) ? 'square' : fx.mount === 'ceiling' ? 'circle' : 'square';
+      return fx.mount === 'wall' ? 'square' : 'hex';
+    }
     if (cats.includes('Subwoofers')) return 'triangle';
     if (cats.includes('CI & Outdoor Speakers')) return /^ccm|ceiling/.test(name) ? 'circle' : /^cwm|in-?wall/.test(name) ? 'square' // the model name beats the website's category
       : /vaeg|væg|\bwall/.test(hay) ? 'square' : /udendoer|udendørs|outdoor/.test(hay) ? 'hex' : 'circle';
@@ -224,7 +231,7 @@
         products.length || generic.length ? h('table', null,
           products.map((r) => h('tr', null, h('td.lm', null, h('span', { html: markHtml(r.k) })),
             h('td.li', null, r.p && (r.p.img || [])[0] ? HP.imgEl(r.p.img[0], 'thumb') : null),
-            h('td', null, r.p ? [h('span.lb', null, r.p.brand), plink(HP.productUrl(r.p), '', r.p.name), h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
+            h('td', null, r.p ? [h('span.lb', null, r.p.brand), plink(HP.productUrl(r.p), '', r.p.name), h('span.ls', null, shapeOf(r.p) === 'hex' && ((r.p.cats || []).includes('CI & Outdoor Speakers') || (r.p.fx || {}).mount === 'outdoor') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
             h('td.q', null, r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk')))),
           generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 2 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
           : h('.muted', null, t('No marks yet. Switch on CI mode and click a product to place marks.', 'Ingen mærker endnu. Slå CI-tilstand til, og klik på et produkt for at placere mærker.')),

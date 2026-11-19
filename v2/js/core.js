@@ -177,7 +177,10 @@
 
   /* ---------- catalogue (published data + local admin drafts) ---------- */
   const emptyDraft = () => ({ products: {}, delProducts: [], templates: {}, delTemplates: [], ignore: [] });
-  const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get('draft', {})), version: 0 });
+  // the test page (next.html) keeps its own drafts, so trying it out never mixes with the real catalogue's drafts
+  HP.NEXT = !!(window.HP_NEXT && DATA.categories);
+  HP.DRAFT_KEY = window.HP_NEXT ? 'draft-next' : 'draft';
+  const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get(HP.DRAFT_KEY, {})), version: 0 });
   cat.rebuild = () => {
     const d = cat.draft, base = DATA.products || [];
     const seen = new Set();
@@ -188,7 +191,7 @@
     cat.list.forEach((p) => {
       cat.byId[p.id] = p;
       p._hay = [p.brand, p.name, p.sku, ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
-        p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
+        p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', p.ct || '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
     });
     const tb = (DATA.templates || []).filter((t) => !d.delTemplates.includes(t.id)).map((t) => d.templates[t.id] || t);
     Object.values(d.templates).forEach((t) => { if (!tb.some((x) => x.id === t.id)) tb.push(t); });
@@ -200,7 +203,7 @@
   cat.cables = () => cat.list.filter((p) => p.cable);
   cat.dirtyCount = () => { const d = cat.draft; return Object.keys(d.products).length + d.delProducts.length + Object.keys(d.templates).length + d.delTemplates.length + (d.ignore || []).length; };
   cat.saveDraft = () => {
-    if (!LS.set('draft', cat.draft)) HP.toast(HP.t('Browser storage is full. Publish or use smaller images.', 'Browserens lager er fuldt. Udgiv eller brug mindre billeder.'), { kind: 'err' });
+    if (!LS.set(HP.DRAFT_KEY, cat.draft)) HP.toast(HP.t('Browser storage is full. Publish or use smaller images.', 'Browserens lager er fuldt. Udgiv eller brug mindre billeder.'), { kind: 'err' });
     cat.rebuild(); HP.emit('catalog');
   };
   cat.putProduct = (p) => { const c = Object.assign({}, p); delete c._hay; cat.draft.products[p.id] = c; cat.draft.delProducts = cat.draft.delProducts.filter((x) => x !== p.id); cat.saveDraft(); };
@@ -232,6 +235,15 @@
     'D/A Converters': 'DAC', 'A/D Converters': 'ADC', 'Headphone Amplifiers': 'Hovedtelefonforstærkere', 'Wireless Adapters': 'Trådløse adaptere', 'Bluetooth Receivers': 'Bluetooth-modtagere', Peripherals: 'Udstyr', 'Stand-in Products': 'Pladsholdere' };
   const CAT_EN = { 'Floorstanding Speakers': 'Floorstanding', 'Compact Speakers': 'Compact', 'On-Wall Speakers': 'On-wall', 'Center Speakers': 'Center', 'Active Speakers': 'Active', 'Passive Speakers': 'Passive', 'Wireless/Bluetooth Speakers': 'Wireless / Bluetooth', 'CI & Outdoor Speakers': 'CI & outdoor', Utilities: 'Accessories' };
   HP.catLabel = (c) => (HP.lang() === 'da' ? CAT_DA[c] : CAT_EN[c]) || c;
+  // the generated catalogue (test page): the website's category tree replaces the list above. Products carry their category path
+  // in cats (e.g. ['/tv/', '/tv/projektor/']), so everything that groups by category works unchanged.
+  if (DATA.categories) {
+    const C = new Map(DATA.categories.map((x) => [x.id, x]));
+    const top = (id) => { let x = C.get(id), g = 0; while (x && x.parent && g++ < 6) x = C.get(x.parent); return x ? x.id : id; };
+    HP.CAT_TREE = DATA.categories.filter((x) => !x.parent).map((s) => [s.id, DATA.categories.filter((x) => x.parent && top(x.id) === s.id).map((x) => x.id)]);
+    const legacy = HP.catLabel;
+    HP.catLabel = (id) => { const x = C.get(id); return x ? (HP.lang() === 'da' ? x.title : x.en || x.title) : legacy(id); };
+  }
 
   /* ---------- document store ---------- */
   const blank = () => ({ v: 4, name: '', pages: 1, orient: 'landscape', ci: false, ciSize: 90, ms: 34, mk: [], sc: 0, items: [], conns: [], plan: null });

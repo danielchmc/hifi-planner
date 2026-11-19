@@ -298,6 +298,7 @@
     } catch (e) { return t('Could not reach GitHub: ', 'Kunne ikke nå GitHub: ') + e.message; }
   };
   E.publish = () => {
+    if (window.HP_NEXT) return HP.toast(t('This is the test page for the new catalogue: publishing is switched off here. Drafts made here stay on this page.', 'Dette er testsiden for det nye katalog: udgivelse er slået fra her. Kladder lavet her bliver på denne side.'), { kind: 'warn', ms: 7000 });
     const c = cfg(), d = cat.draft;
     if (!c.token) { HP.toast(t('Add a GitHub token under Settings → Admin to publish.', 'Tilføj et GitHub-token under Indstillinger → Admin for at udgive.'), { kind: 'warn' }); return HP.panels.settings(); }
     const names = (ids, src) => ids.map((id) => { const x = src(id); return x ? (x.brand ? x.brand + ' ' : '') + x.name : id; });
@@ -324,7 +325,7 @@
           await putFile(c, 'img/hd/' + name, m[2], null, 'Add image for ' + p.name);
           await putFile(c, 'img/' + name, await shrink(p.img[i], 640), null, 'Add image for ' + p.name); p.img[i] = 'img/' + name;
         }
-        LS.set('draft', d);
+        LS.set(HP.DRAFT_KEY, d);
         const m = merged(pf ? parseFile(pf.text) : DATA.products || [], tf ? parseFile(tf.text) : DATA.templates || []);
         const enc = (s) => b64(new TextEncoder().encode(s)), who = 'HiFi Planner (shop ' + HP.shop() + ')';
         status.textContent = t('Writing catalogue…', 'Skriver katalog…');

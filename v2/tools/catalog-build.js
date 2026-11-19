@@ -9,12 +9,14 @@
          data/own.js                                HiFi Planner's own layer (tools/own-split.js), if it exists
    Out:  build/catalog.json   categories (the website's tree + ours), products, bundles as parts lists
          build/products.js    own layer + website, in the app's current format (stage 3; not used by the app yet)
+         build/next.js        the same products with the new structure (website category, kind, scope, facts), the website
+                              products HiFi Planner does not have yet, and the category tree; loaded by the test page next.html
          build/report.md      what the new structure would change compared with today's catalogue, and the round-trip check */
 const fs = require('fs'), path = require('path');
 global.window = global.window || {};
 require('../js/ports.js'); require('../js/site.js');
 const S = window.HP.site;
-const { KIND_SCOPE, CATEGORIES, TYPES } = require('./taxonomy.js');
+const { KIND_SCOPE, CATEGORIES, TYPES, SECTION_ORDER, EN } = require('./taxonomy.js');
 const SM = require('./site-match.js');
 
 const APP = process.argv[2] || path.join(__dirname, '..');
@@ -201,6 +203,50 @@ if (fs.existsSync(ownFile)) {
   });
   fs.writeFileSync(path.join(OUT, 'products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/. Not used by the app yet. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + generated.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
 
+  /* ---------- stage 4 test page: the new structure on top of the generated catalogue ---------- */
+  const webBySku = new Map(products.map((w) => [w.sku, w]));
+  const chain = (id) => { const out = []; let c = cats.get(id), guard = 0; while (c && guard++ < 6) { out.unshift(c.id); c = cats.get(c.parent); } return out; };
+  const label = (id) => { const c = cats.get(id); return c ? c.title + ' ' + (EN[id] || c.en || '') : ''; };
+  // today's categories → new category, learnt from the products that have both (for products the website does not list)
+  const learn = {};
+  own.forEach((o, i) => { const g = generated[i], w = g.site && webBySku.get(U(g.site)); if (!w || !w.cat) return; const k = (o.cats || []).join('+'); (learn[k] = learn[k] || {})[w.cat] = (learn[k][w.cat] || 0) + 1; });
+  const FALLBACK = { 'A/D Converters': '/stereo/da-konverter/' }; // old categories no linked product has
+  const learnt = (o) => {
+    const oc = o.cats || [];
+    if (oc.includes('Stand-in Products')) return '/tilbehor/pladsholdere/';
+    let m = learn[oc.join('+')];
+    if (!m) { m = {}; for (const [k, t] of Object.entries(learn)) if (k.split('+').some((x) => oc.includes(x))) for (const [c, n] of Object.entries(t)) m[c] = (m[c] || 0) + n; } // any of its old categories
+    const best = Object.entries(m).sort((a, b) => b[1] - a[1])[0];
+    return best ? best[0] : oc.map((c) => FALLBACK[c]).find(Boolean) || '';
+  };
+  const enrich = (p, w, catId) => {
+    const id = (w && w.cat) || catId;
+    p.lcats = p.cats; p.cats = id ? chain(id) : []; p.ct = p.cats.map(label).join(' ');
+    if (w) { p.kind = w.kind; p.scope = w.scope; p.fx = w.facets; } else if (id === '/tilbehor/pladsholdere/') p.kind = 'standin';
+    return p;
+  };
+  const next = generated.map((g, i) => enrich(Object.assign({}, g), g.site ? webBySku.get(U(g.site)) : null, learnt(own[i])));
+  const linked = new Set(next.map((p) => p.site && U(p.site)).filter(Boolean));
+  let added = 0;
+  for (const w of products) {
+    if (w.scope === 'skip' || linked.has(w.sku)) continue;
+    const m = match.byLink({ site: w.sku }); if (!m) continue;
+    const isCable = w.kind === 'cable' && w.facets.conn;
+    const f = SM.webFacts(m, { single: false, cable: !!isCable, hk });
+    const p = { id: 'w-' + w.sku.toLowerCase(), brand: w.brand, name: w.model, sku: w.sku, price: f.price, site: w.sku, web: 1 };
+    if (f.was) p.was = f.was; if (f.vars) p.vars = f.vars; if (f.url) p.url = f.url;
+    const im = (w.variants.find((v) => v.img) || {}).img; p.img = im ? [im] : [];
+    if (isCable) p.cable = [w.facets.conn]; else if (w.scope === 'diagram') { p.in = []; p.out = []; }
+    if (w.facets.bt) p.bt = true; if (w.facets.wifi) p.wifi = true;
+    next.push(enrich(p, w)); added++;
+  }
+  const used = {}; next.forEach((p) => p.cats.forEach((c) => (used[c] = (used[c] || 0) + 1)));
+  const secRank = (id) => { const i = SECTION_ORDER.indexOf(chain(id)[0]); return i < 0 ? 99 : i; };
+  const tree = [...cats.values()].filter((c) => used[c.id]).map((c) => ({ id: c.id, title: c.title, en: EN[c.id] || c.en || c.title, parent: c.parent && cats.has(c.parent) ? c.parent : null, n: used[c.id] }))
+    .sort((a, b) => secRank(a.id) - secRank(b.id) || b.n - a.n || a.title.localeCompare(b.title, 'da'));
+  fs.writeFileSync(path.join(OUT, 'next.js'), '/* Written by tools/catalog-build.js: the generated catalogue with the new structure, for the test page next.html. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.categories = ' + JSON.stringify(tree) + ';\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  RT.next = { products: next.length, added, uncategorised: next.filter((p) => !p.cats.length).map((p) => p.brand + ' ' + p.name) };
+
   // round trip: the generated catalogue against today's data/products.js, field by field
   const today = new Map(catalogue.map((c) => [c.id, c]));
   const fields = {}, ex = {}, keys = new Set();
@@ -223,6 +269,7 @@ if (fs.existsSync(ownFile)) {
     '- ' + (own.length - RT.frozen) + ' follow the website through their link, ' + RT.frozen + ' are frozen (not on the website)',
     '- Prices held by the plausibility check (as the sync does): ' + RT.held.length,
     RT.lost.length ? '- Link no longer on the website: ' + RT.lost.join(', ') : '- Every link points at a product the website lists', '');
+  P('', '**Test page** (`next.html`, `build/next.js`): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
   if (RT.held.length) { P('**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)', ''); RT.held.forEach((x) => P('- ' + x)); P(''); }
   if (Object.keys(fields).length) {
     P('| Field | Products that differ |', '|---|---:|', ...Object.entries(fields).sort((a, b) => b[1] - a[1]).map(([k, n]) => '| ' + k + ' | ' + n + ' |'), '');

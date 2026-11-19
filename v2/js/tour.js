@@ -6,7 +6,7 @@
   function demo() { // put a small real system on an empty canvas so every step has something to point at
     if (store.doc.items.some((i) => i.kind === 'product')) return;
     const C = HP.canvas, amp = cat.products().find((p) => (p.out || []).some((x) => x.sig === 'speaker') && (p.in || []).length > 2 && (p.img || []).length > 1);
-    const spk = cat.products().find((p) => (p.cats || []).includes('Passive Speakers') && (p.in || []).some((x) => x.sig === 'speaker'));
+    const spk = cat.products().find((p) => ((p.cats || []).includes('Passive Speakers') || (p.kind === 'speaker' && (p.fx || {}).active === false)) && (p.in || []).some((x) => x.sig === 'speaker'));
     if (!amp || !spk) return;
     const a = C.addProduct(amp.id, 420, 420), b = C.addProduct(spk.id, 980, 420);
     C.connect(a.id, amp.out.find((x) => x.sig === 'speaker').key, b.id, spk.in.find((x) => x.sig === 'speaker').key);

@@ -543,3 +543,9 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 #sb-list .empty { padding: 20px 12px; color: var(--muted); text-align: center; }
 @media (pointer: coarse) { .pager button { min-width: 36px; height: 34px; } }
 @media (max-width: 1024px) { #sidebar .chips.subs, #sidebar .chips.flags { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } #sidebar .chips.subs button, #sidebar .chips.flags button { flex: none; } }
+
+/* ---------- v3.7: test page for the new catalogue (next.html) ---------- */
+.next-badge { position: fixed; left: 50%; bottom: 10px; transform: translateX(-50%); z-index: 9000; padding: 5px 12px; background: #d23c1f; color: #fff;
+  font: 600 11px var(--mono); letter-spacing: .04em; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.next-badge:hover { background: #a92e16; }
+@media print { .next-badge { display: none; } }
