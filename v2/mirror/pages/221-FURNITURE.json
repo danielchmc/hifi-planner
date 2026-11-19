@@ -982,7 +982,200 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALIOPTICON1MK2"
+     "parentProductCode": "DALIOPTICON1MK2",
+     "reviews": {
+      "summary": "DALI OPTICON 1 MK2 leverer en varm, klar og detaljeret lyd, der føles bemærkelsesværdigt fyldig, dynamisk og omsluttende for så kompakt en højttaler. Afbalanceret diskant, tydelig mellemtone og overraskende kompetent bas gør højttalerne alsidige til musik, tv, skrivebord og surround, selv om en subwoofer kan være en fordel til den dybeste bas, og store rum kan afsløre begrænsningerne ved det lille kabinet. De kompakte mål, det flotte design og den stærke værdi gør højttalerne særligt attraktive til mindre rum og krævende lyttere.",
+      "headlines": {
+       "clear, detailed and balanced sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den rene, præcise og velafbalancerede gengivelse med klar diskant, overbevisende detaljer og en fyldig musikalsk karakter.",
+        "simpleTitle": "Klar, detaljeret og balanceret lyd",
+        "bias": "positive",
+        "key": "sound_quality",
+        "groupId": "4cb76b09-84cf-4add-aae0-f93039ca6d30"
+       },
+       "surprisingly powerful bass for the size": {
+        "sentimentAnalysis": "De kompakte kabinetter leverer dyb, punchy og veldefineret bas, som ofte gør en subwoofer overflødig.",
+        "simpleTitle": "Overraskende kraftig bas i forhold til størrelsen",
+        "bias": "positive",
+        "key": "bass",
+        "groupId": "074fb9a7-b2de-434d-8db4-8a6c5a08b254"
+       },
+       "strong value for money": {
+        "sentimentAnalysis": "Kombinationen af raffineret lyd, kompakt konstruktion og en tilgængelig pris bliver gentagne gange vurderet som fremragende værdi.",
+        "simpleTitle": "Stærk værdi for pengene",
+        "bias": "positive",
+        "key": "value",
+        "groupId": "43a6ac8b-8ef7-48b9-9019-892bafe59170"
+       },
+       "ideal for compact rooms and setups": {
+        "sentimentAnalysis": "Det kompakte format gør højttalerne nemme at placere i reoler, på skænke, skriveborde eller vægge, med særligt gode resultater i mindre rum.",
+        "simpleTitle": "Ideel til små rum og opsætninger",
+        "bias": "positive",
+        "key": "compact_design",
+        "groupId": "74f26b29-38b2-458e-a3a6-b94b114ebe22"
+       },
+       "deep bass still benefits from a subwoofer": {
+        "sentimentAnalysis": "Flere anmeldelser bemærker, at højttalerne lyder fyldigt i forhold til størrelsen, men mangler den dybeste bas, især ved højere niveauer eller i et mere komplet musiksystem.",
+        "simpleTitle": "Den dybeste bas har stadig gavn af en subwoofer",
+        "bias": "negative",
+        "key": "bass",
+        "groupId": "074fb9a7-b2de-434d-8db4-8a6c5a08b254"
+       },
+       "large rooms can sound thin at high output": {
+        "sentimentAnalysis": "Det kompakte design fungerer fremragende i mindre rum, men større rum og krævende festniveauer kan afsløre begrænset skala og fylde.",
+        "simpleTitle": "Store rum kan lyde tyndt ved høj lydstyrke",
+        "bias": "negative",
+        "key": "room_placement",
+        "groupId": "6aa0e131-f889-473b-bebe-703b56d25959"
+       }
+      },
+      "grouping": {
+       "4cb76b09-84cf-4add-aae0-f93039ca6d30": {
+        "title": "Lydkvalitet",
+        "id": "4cb76b09-84cf-4add-aae0-f93039ca6d30",
+        "references": [
+         "74f15617-8a15-48ae-a7a1-1a53efa297b1",
+         "4b2b0415-e6de-4264-8550-968d3dfe6cc0",
+         "d08e90dd-9ac9-42c5-8162-23cc38063407",
+         "bb043058-0f90-4aee-8a89-975ab22c0f53",
+         "1d605296-8ee2-464f-b3e8-02e8a61f57e3",
+         "2ef5adc9-803b-4036-aa7f-5c5d0aa399e9",
+         "8b115814-21aa-4515-b1ca-2a25b719a9ab",
+         "1001cfd9-c69c-4f77-bbff-7ed73307aa53",
+         "2d40475b-41b2-470f-97e0-9cdf52130b57",
+         "004ede3a-1e00-46ad-a76f-4e3c3d01f200",
+         "9a7da8e9-275c-4a5f-b7f3-de52788819ea",
+         "6c004c60-6813-4b6a-afa7-5614a699be7d",
+         "8913b195-f0fc-499f-a1fa-3d5829a5d96c",
+         "a60341b5-f915-46ce-af33-ad2896e7598c",
+         "366707fc-573a-41ef-b060-4bc4dded239c",
+         "adbd15ed-68f1-46ce-8667-f343b2b3e368",
+         "4cefeb09-e642-49e2-92af-7869c845839c",
+         "e056ac37-2afb-4109-b2f5-55cc81efd492",
+         "c734606d-e1be-456d-b1c9-30c59c9468a4",
+         "a577a172-5b2e-4785-ad6d-35ad063e6ebd",
+         "ec5ba27f-7f92-49d3-a5e2-5731d30e51c9",
+         "732aa1e6-d183-45a8-aec2-7ab8728e4393",
+         "8b0e7a98-d884-4cb3-b81d-58ec476c24ae",
+         "56e33048-364c-4174-adbd-9915c6552736",
+         "10d91775-530d-48a6-93af-3f59419294fe",
+         "280bcdb4-ba1f-48ff-9252-effd24d1df8f",
+         "2bc5bf9f-e60d-4cff-aa40-efb5adb6441a",
+         "62988e84-b685-47a0-b296-bc5731e83da3",
+         "2d334424-936b-4cc2-b062-89193243dbcc",
+         "0ad1d65d-e16a-41dd-a78d-402ba839c1dc",
+         "a47fdd62-4c12-4d11-9e59-13042680262e",
+         "7b1946d9-f8d5-463c-9a2a-34c6862c85ad",
+         "ca2a3b51-d3a7-4e8a-9aa8-c30df462cee0",
+         "b447577a-ef3d-4f6a-a3fa-6dacb374fb6d",
+         "88d684b5-11cf-484c-be5b-f7cd4940e796",
+         "14e0f1cb-26e5-4780-951a-210d28521490",
+         "e7d24e36-cd14-4a53-91c0-734dc46ba6d4",
+         "fe1b0cf9-3606-410b-a73d-8be18c170b6e",
+         "fc684c1f-66be-481f-bf2c-2261e27a62b8",
+         "75023f39-dcfe-40df-bb2e-92311c3f8dc2",
+         "d5a8be30-a28a-44b3-abf6-f9f579109f68",
+         "fa58a43b-bcd6-481e-ab50-2809a8b26548",
+         "cbe6acbb-843b-4c73-b455-cfa26322645c",
+         "891e8494-60e3-4572-925d-81ef5dd7471f",
+         "216e26ab-e388-4d69-af05-17ac560ea5eb",
+         "5de6d9eb-f79c-46eb-aa3d-7ce101d09de7",
+         "bc02c40a-9e26-44b8-8313-848e164af52c",
+         "9fa3127b-0e35-41a2-ad0c-cb7ffad00edf",
+         "f42ec3ec-f535-41cb-a398-19fb215efef5",
+         "d3f6c652-d200-42fb-8956-209773671ce5",
+         "590d482e-ca31-49f9-917f-fb002db5d6f5",
+         "4796e8e2-a116-4bce-a24a-27e777a9483b",
+         "f0a06b85-9705-4094-90e0-df3789e3b8db",
+         "b6a9733d-6c07-4fb2-8656-d627ce36d4db",
+         "497cd5c7-4611-45c5-b877-47ed7522f9aa",
+         "a6603725-52b9-4562-9dfe-ca21643b08ee",
+         "63d6ed92-5230-4b53-b6b2-4e9f7cad1b25",
+         "a75e99ed-f782-4d81-a1a6-05bb2286971c",
+         "92ab95d9-ec48-4852-af68-9d13b8dfe89e"
+        ]
+       },
+       "074fb9a7-b2de-434d-8db4-8a6c5a08b254": {
+        "title": "Basgengivelse",
+        "id": "074fb9a7-b2de-434d-8db4-8a6c5a08b254",
+        "references": [
+         "b5c84ec3-4655-4900-826a-fb171cca1de1",
+         "8b115814-21aa-4515-b1ca-2a25b719a9ab",
+         "adbd15ed-68f1-46ce-8667-f343b2b3e368",
+         "4cefeb09-e642-49e2-92af-7869c845839c",
+         "10d91775-530d-48a6-93af-3f59419294fe",
+         "280bcdb4-ba1f-48ff-9252-effd24d1df8f",
+         "2bc5bf9f-e60d-4cff-aa40-efb5adb6441a",
+         "7b1946d9-f8d5-463c-9a2a-34c6862c85ad",
+         "fe1b0cf9-3606-410b-a73d-8be18c170b6e",
+         "75023f39-dcfe-40df-bb2e-92311c3f8dc2",
+         "891e8494-60e3-4572-925d-81ef5dd7471f",
+         "9fa3127b-0e35-41a2-ad0c-cb7ffad00edf",
+         "d3f6c652-d200-42fb-8956-209773671ce5",
+         "590d482e-ca31-49f9-917f-fb002db5d6f5"
+        ]
+       },
+       "74f26b29-38b2-458e-a3a6-b94b114ebe22": {
+        "title": "Kompakt design",
+        "id": "74f26b29-38b2-458e-a3a6-b94b114ebe22",
+        "references": [
+         "2d40475b-41b2-470f-97e0-9cdf52130b57",
+         "004ede3a-1e00-46ad-a76f-4e3c3d01f200",
+         "8913b195-f0fc-499f-a1fa-3d5829a5d96c",
+         "aaafdf28-ac0b-4a23-a1a0-8aa59ab440cd",
+         "d5a8be30-a28a-44b3-abf6-f9f579109f68",
+         "34e67a68-9453-45b3-8424-908757a2cff5",
+         "8d198041-89f0-4276-9a58-4150edde14c6",
+         "c734606d-e1be-456d-b1c9-30c59c9468a4",
+         "63d6ed92-5230-4b53-b6b2-4e9f7cad1b25",
+         "a75e99ed-f782-4d81-a1a6-05bb2286971c",
+         "d3f6c652-d200-42fb-8956-209773671ce5"
+        ]
+       },
+       "6aa0e131-f889-473b-bebe-703b56d25959": {
+        "title": "Egnethed til rum",
+        "id": "6aa0e131-f889-473b-bebe-703b56d25959",
+        "references": [
+         "74f15617-8a15-48ae-a7a1-1a53efa297b1",
+         "bb043058-0f90-4aee-8a89-975ab22c0f53",
+         "1001cfd9-c69c-4f77-bbff-7ed73307aa53",
+         "8913b195-f0fc-499f-a1fa-3d5829a5d96c",
+         "8d198041-89f0-4276-9a58-4150edde14c6",
+         "10d91775-530d-48a6-93af-3f59419294fe",
+         "280bcdb4-ba1f-48ff-9252-effd24d1df8f",
+         "7b1946d9-f8d5-463c-9a2a-34c6862c85ad",
+         "fe1b0cf9-3606-410b-a73d-8be18c170b6e",
+         "216e26ab-e388-4d69-af05-17ac560ea5eb",
+         "d5a8be30-a28a-44b3-abf6-f9f579109f68"
+        ]
+       },
+       "43a6ac8b-8ef7-48b9-9019-892bafe59170": {
+        "title": "Værdi for pengene",
+        "id": "43a6ac8b-8ef7-48b9-9019-892bafe59170",
+        "references": [
+         "9a7da8e9-275c-4a5f-b7f3-de52788819ea",
+         "8b115814-21aa-4515-b1ca-2a25b719a9ab",
+         "aaafdf28-ac0b-4a23-a1a0-8aa59ab440cd",
+         "8b0e7a98-d884-4cb3-b81d-58ec476c24ae",
+         "56e33048-364c-4174-adbd-9915c6552736",
+         "e056ac37-2afb-4109-b2f5-55cc81efd492",
+         "75023f39-dcfe-40df-bb2e-92311c3f8dc2",
+         "5de6d9eb-f79c-46eb-aa3d-7ce101d09de7",
+         "f0a06b85-9705-4094-90e0-df3789e3b8db"
+        ]
+       }
+      },
+      "rating": 4.8041958041958,
+      "count": 143,
+      "reviewCount": 67,
+      "distribution": {
+       "1": 1,
+       "2": 0,
+       "3": 3,
+       "4": 18,
+       "5": 121
+      }
+     }
     },
     {
      "brand": "unnu",
