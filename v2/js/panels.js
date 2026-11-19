@@ -89,7 +89,9 @@
       list.textContent = '';
       rows = cat.products().slice().sort((a, b) => !!a.gone - !!b.gone).map((p) => {
         const r = productRow(p);
-        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y), () => { C().addProductCenter(p.id); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
+        // searching for a colour's own SKU (e.g. RACLARITY66BK) adds the product in that colour
+        const vsku = () => { const q = ((document.getElementById('sb-search') || {}).value || '').toUpperCase().split(/\s+/); const v = (p.vars || []).find((x) => q.includes(x.sku.toUpperCase())); return v && v.sku; };
+        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku()), () => { C().addProductCenter(p.id, vsku()); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
         list.append(r);
         return { p, r };
       });

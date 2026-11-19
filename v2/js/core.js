@@ -46,6 +46,14 @@
   /* images: hk:<uuid> (website, mirrored) or img/... (own); local copy first, website fallback */
   HP.imgEl = (u, size, props) => h('img', Object.assign({ src: HP.site.src(u, size), data: { fb: HP.site.fallback(u, size) }, onerror: HP.site.onerr, draggable: false, alt: '' }, props));
   // colour variant chosen on a canvas item (item.v = variant SKU)
+  // the product's page on hifiklubben.dk (the chosen colour's page when it has one), else the website's search for the SKU
+  HP.productUrl = (p, item) => {
+    if (!p) return '';
+    const v = HP.variantOf(p, item), u = (v && v.url) || p.url;
+    if (u) return /^https?:/.test(u) ? u : 'https://www.hifiklubben.dk' + u;
+    const q = (v && v.sku) || p.site || p.sku;
+    return q ? 'https://www.hifiklubben.dk/sog/?q=' + encodeURIComponent(q) : '';
+  };
   HP.variantOf = (p, item) => (item && item.v && p && (p.vars || []).find((x) => x.sku === item.v)) || null;
   HP.imagesOf = (p, item) => { const imgs = ((p && p.img) || []).slice(), v = HP.variantOf(p, item); if (v && v.img) imgs[0] = v.img; return imgs.filter(Boolean); };
   HP.priceOf = (p, item) => { const v = HP.variantOf(p, item); return v ? { price: v.price, was: v.was || 0, label: v.label } : { price: p.price || 0, was: p.was > p.price ? p.was : 0, label: '' }; };
@@ -166,7 +174,7 @@
     cat.byId = {};
     cat.list.forEach((p) => {
       cat.byId[p.id] = p;
-      p._hay = [p.brand, p.name, p.sku, ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
+      p._hay = [p.brand, p.name, p.sku, ...(p.vars || []).map((v) => v.sku + ' ' + v.label), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
         p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
     });
     const tb = (DATA.templates || []).filter((t) => !d.delTemplates.includes(t.id)).map((t) => d.templates[t.id] || t);

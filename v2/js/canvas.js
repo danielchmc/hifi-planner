@@ -98,6 +98,8 @@
   }
 
   /* ================= cards ================= */
+  // product names are links to hifiklubben.dk. On screen they do nothing (cards are dragged and clicked); the printed PDF keeps them clickable.
+  const plink = (url, cls, kids) => (url ? h('a.plink' + (cls ? '.' + cls : ''), { href: url, target: '_blank', rel: 'noopener', tabIndex: -1, draggable: false }, kids) : h('span' + (cls ? '.' + cls : ''), null, kids));
   function cardW(p) {
     const len = (a) => Math.max(0, ...(a || []).map((x) => x.label.length));
     return Math.ceil(Math.max(210, (len(p.in) + len(p.out)) * 6.4 + 54) / 10) * 10;
@@ -113,7 +115,7 @@
       h('.card-head', null, h('span.brand', null, p.brand, v && h('span.vlabel', null, ' · ' + v.label),
           p.gone && h('span.gone-tag.no-print', { title: t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
           p.review && h('span.gone-tag.auto.no-print', { title: t('Added automatically from hifiklubben.dk. Inputs/outputs are suggested from the website and not checked yet.', 'Tilføjet automatisk fra hifiklubben.dk. Ind-/udgange er foreslået ud fra hjemmesiden og ikke kontrolleret endnu.') }, 'AUTO')),
-        h('span.name', null, p.name)),
+        plink(HP.productUrl(p, item), 'name', [p.name, h('span.plink-ic.print-only', null, ' ↗')])),
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
         imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (I)', 'Se billedet nærmere (I)'), data: { inspect: '1' } }, icon('search', 13)),
@@ -130,7 +132,7 @@
     const add = (p, cable, it) => {
       if (!p) return;
       const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || '');
-      const r = rows.get(key) || { name: p.brand + ' ' + p.name + (pr.label ? ' (' + pr.label + ')' : ''), price: pr.price, was: pr.was, qty: 0, cable };
+      const r = rows.get(key) || { name: p.brand + ' ' + p.name + (pr.label ? ' (' + pr.label + ')' : ''), url: HP.productUrl(p, it), price: pr.price, was: pr.was, qty: 0, cable };
       r.qty++; rows.set(key, r);
     };
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
@@ -189,7 +191,7 @@
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''),
-          h('td', null, r.name, r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
+          h('td', null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
           h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
@@ -222,7 +224,7 @@
         products.length || generic.length ? h('table', null,
           products.map((r) => h('tr', null, h('td.lm', null, h('span', { html: markHtml(r.k) })),
             h('td.li', null, r.p && (r.p.img || [])[0] ? HP.imgEl(r.p.img[0], 'thumb') : null),
-            h('td', null, r.p ? [h('span.lb', null, r.p.brand), r.p.name, h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
+            h('td', null, r.p ? [h('span.lb', null, r.p.brand), plink(HP.productUrl(r.p), '', r.p.name), h('span.ls', null, shapeOf(r.p) === 'hex' && (r.p.cats || []).includes('CI & Outdoor Speakers') ? t('outdoor speaker', 'udendørshøjtaler') : t(SHAPE_NAMES[shapeOf(r.p)][0], SHAPE_NAMES[shapeOf(r.p)][1]))] : t('Unknown product', 'Ukendt produkt')),
             h('td.q', null, r.qty + ' ' + t(r.qty === 1 ? 'pc' : 'pcs', 'stk')))),
           generic.map((r) => h('tr.lg', null, h('td.lm', null, h('span', { html: markHtml(r.k) })), h('td', { colSpan: 2 }, markTitle(r.k)), h('td.q', null, r.qty > 1 ? r.qty + ' ' + t('pcs', 'stk') : ''))))
           : h('.muted', null, t('No marks yet. Switch on CI mode and click a product to place marks.', 'Ingen mærker endnu. Slå CI-tilstand til, og klik på et produkt for at placere mærker.')),
@@ -639,14 +641,15 @@
   }
 
   /* ================= operations ================= */
-  C.addProduct = (pid, wx, wy) => {
+  C.addProduct = (pid, wx, wy, vsku) => {
     const p = cat.get(pid), d = store.doc; if (!p) return null;
     const s = cardScale(), w = cardW(p) * s, hh = (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
+    if (vsku && (p.vars || []).some((x) => x.sku === vsku)) it.v = vsku; // added from a search for a colour's own SKU
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
-  C.addProductCenter = (pid) => { if (store.doc.ci) return C.startStamp(pid); const c = centerWorld(), n = store.doc.items.length % 6; return C.addProduct(pid, c.x + n * 20, c.y + n * 20); };
+  C.addProductCenter = (pid, vsku) => { if (store.doc.ci) return C.startStamp(pid); const c = centerWorld(), n = store.doc.items.length % 6; return C.addProduct(pid, c.x + n * 20, c.y + n * 20, vsku); };
   const cardAt = (cx, cy) => {
     const hit = document.elementFromPoint(cx, cy), el = hit && hit.closest('.item.k-product');
     if (!el) return null;
@@ -654,13 +657,13 @@
     return cx > r.left + ix && cx < r.right - ix && cy > r.top + iy && cy < r.bottom - iy ? el : null;
   };
   C.dragHover = (cx, cy) => { const el = cx == null || store.doc.ci ? null : cardAt(cx, cy); world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace'); };
-  C.dropProduct = (pid, cx, cy) => {
+  C.dropProduct = (pid, cx, cy, vsku) => {
     const r = vp.getBoundingClientRect(), el = cardAt(cx, cy);
     C.dragHover(null);
     if (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) return;
     if (store.doc.ci) { const w = toWorld(cx, cy); return C.placeMark(pid, w.x, w.y); }
     if (el) return C.replaceItem(el.dataset.id, pid);
-    const w = toWorld(cx, cy); C.addProduct(pid, w.x, w.y);
+    const w = toWorld(cx, cy); C.addProduct(pid, w.x, w.y, vsku);
   };
   C.addText = (cx, cy) => {
     const c = cx != null ? toWorld(cx, cy) : C.pointerWorld() || centerWorld(), it = { id: HP.uid(), kind: 'text', x: snap(c.x - 120), y: snap(c.y - 50), w: 240, h: 90, title: '', body: '' };

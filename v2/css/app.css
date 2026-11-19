@@ -518,3 +518,8 @@ html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 .pdf-page { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; min-height: 120px; justify-content: flex-end; }
 .pdf-page:hover { border-color: var(--accent); } .pdf-page canvas { max-width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
 @media (max-width: 1024px) { .modal.lg, .modal.md { max-width: calc(100vw - 20px); } }
+/* ---------- v3.5: product links (clickable in the printed PDF only) ---------- */
+a.plink { color: inherit; text-decoration: none; pointer-events: none; }
+.card a.name { display: block; }
+.print-only { display: none; }
+@media print { .sheet .print-only { display: inline; } .sheet .plink-ic { font: 600 10px var(--mono); color: var(--muted); vertical-align: 2px; } }
