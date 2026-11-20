@@ -536,12 +536,7 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 .prow .vlabel { font-weight: 400; color: var(--muted); }
 .prow.isvar .psub { font-family: var(--mono); font-size: 10.5px; }
 .nvar i.on { outline: 1.5px solid var(--fg); outline-offset: 1px; }
-.pager { display: flex; align-items: center; justify-content: center; gap: 3px; padding: 6px 8px; border-top: 1px solid var(--line); flex: none; }
-.pager button { min-width: 28px; height: 26px; padding: 0 6px; border: 1px solid var(--line); background: none; font: 600 11.5px var(--mono); }
-.pager button:hover:not(:disabled) { border-color: var(--fg); } .pager button.on { background: var(--fg); color: var(--panel); border-color: var(--fg); }
-.pager button:disabled { opacity: .3; } .pager .gap { color: var(--muted); padding: 0 2px; }
 #sb-list .empty { padding: 20px 12px; color: var(--muted); text-align: center; }
-@media (pointer: coarse) { .pager button { min-width: 36px; height: 34px; } }
 @media (max-width: 1024px) { #sidebar .chips.subs, #sidebar .chips.flags { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } #sidebar .chips.subs button, #sidebar .chips.flags button { flex: none; } }
 
 /* ---------- v3.7: test page for the new catalogue (next.html) ---------- */
@@ -569,3 +564,9 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 .lens .lab { font: 600 11px var(--mono); color: var(--muted); }
 .lens input { width: 70px; font: 600 12px var(--mono); padding: 3px 5px; }
 @media (pointer: coarse) { .lens button.len { padding: 6px 9px; } .lens input { width: 80px; font-size: 16px; } }
+
+/* v4.0: product list scrolls on (sentinel), cable picker selects before it commits */
+#sb-list .more { height: 1px; flex: none; }
+.cablegroup.picked { box-shadow: inset 3px 0 0 var(--fg); background: var(--hover, rgba(0,0,0,.035)); }
+.selbar { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: 13px; min-height: 36px; }
+.selbar b { font-weight: 600; }

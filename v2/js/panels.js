@@ -50,23 +50,23 @@
 
   /* ---------- sidebar ---------- */
   function buildSidebar() {
-    let tab = LS.get('tab', 'products'), group = '', sub = '', page = 0, rows = [], hits = [];
+    let tab = LS.get('tab', 'products'), group = '', sub = '', shown = 0, rows = [], hits = [];
     const flags = { sale: false, bt: false, wifi: false };
-    const PER = 30; // rows per page: only these rows (and their thumbnails) are built and loaded
-    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { page = 0; filter(); } });
-    const brandSel = h('select', { onchange: () => { page = 0; filter(); }, title: 'Brand' });
-    const sortSel = h('select', { onchange: () => { page = 0; filter(); }, title: t('Sort', 'Sortér') },
+    const PER = 30; // rows built per step: more are added as the list scrolls near its end, so only rows (and thumbnails) in reach load
+    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { filter(); } });
+    const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
+    const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
       [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
     const chips = h('.chips.groups'), subChips = h('.chips.subs'), flagChips = h('.chips.flags');
     const count = h('span.count');
     const list = h('.plist#sb-list');
-    const pager = h('.pager');
+    const more = h('.more'); // sentinel at the end of the list: when it scrolls into view the next rows are added
     const scList = h('.sclist');
     const tabs = h('.tabs', null,
       h('button', { data: { tab: 'products' }, onclick: () => setTab('products') }, t('Products', 'Produkter')),
       h('button#tab-shortcuts', { data: { tab: 'shortcuts' }, onclick: () => setTab('shortcuts') }, icon('bolt', 14), t('Shortcuts', 'Genveje')));
     const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search), chips, subChips, flagChips, h('.selrow', null, brandSel, sortSel)),
-      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list, pager);
+      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list);
     const scPane = h('.pane', null, scList);
     const el = h('aside#sidebar', null, h('button.icon-btn.drawer-x', { title: t('Close', 'Luk'), onclick: () => Pn.drawer(false) }, icon('x')), tabs, prodPane, scPane);
 
@@ -84,23 +84,23 @@
     function drawChips(base) {
       chips.textContent = ''; subChips.textContent = ''; flagChips.textContent = '';
       const chip = (on, label, n, fn) => h('button' + (on ? '.on' : ''), { onclick: fn, disabled: !on && !n }, label, h('span.n', null, n));
-      chips.append(chip(!group, t('All', 'Alle'), base.length, () => { group = ''; sub = ''; page = 0; filter(); }));
-      HP.CAT_TREE.forEach(([g]) => chips.append(chip(group === g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, () => { group = group === g ? '' : g; sub = ''; page = 0; filter(); })));
+      chips.append(chip(!group, t('All', 'Alle'), base.length, () => { group = ''; sub = ''; filter(); }));
+      HP.CAT_TREE.forEach(([g]) => chips.append(chip(group === g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, () => { group = group === g ? '' : g; sub = ''; filter(); })));
       if (group) {
         const inG = base.filter((p) => inGroup(p, group));
-        groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subChips.append(chip(sub === c, HP.catLabel(c), n, () => { sub = sub === c ? '' : c; page = 0; filter(); })); });
+        groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subChips.append(chip(sub === c, HP.catLabel(c), n, () => { sub = sub === c ? '' : c; filter(); })); });
       }
       subChips.hidden = !group;
       const sb = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)));
       [['sale', t('Sale', 'Tilbud'), onSale], ['bt', 'Bluetooth', (p) => p.bt], ['wifi', 'WiFi', (p) => p.wifi]].forEach(([k, label, fn]) => {
         const others = sb.filter((p) => Object.keys(flags).every((f) => f === k || !flags[f] || flagFn[f](p)));
-        flagChips.append(chip(flags[k], label, others.filter(fn).length, () => { flags[k] = !flags[k]; page = 0; filter(); }));
+        flagChips.append(chip(flags[k], label, others.filter(fn).length, () => { flags[k] = !flags[k]; filter(); }));
       });
     }
     const flagFn = { sale: onSale, bt: (p) => p.bt, wifi: (p) => p.wifi };
     const arm = () => { const s = C().stamp && C().stamp(); rows.forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };
     HP.on('stamp', arm);
-    function buildList() { page = 0; filter(); }
+    function buildList() { filter(); }
     // relevance: SKU or name starting with the search, then name/brand containing it, discontinued last
     const score = (p, words, v) => {
       if (!words.length) return p.gone ? 9 : 0;
@@ -118,33 +118,30 @@
       const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
       hits.sort(so === 'pa' ? (a, b) => !!a.p.gone - !!b.p.gone || a.price - b.price : so === 'pd' ? (a, b) => !!a.p.gone - !!b.p.gone || b.price - a.price
         : so === 'name' ? (a, b) => loc(a.p.name, b.p.name) : so === 'brand' ? (a, b) => loc(a.p.brand, b.p.brand) || loc(a.p.name, b.p.name) : (a, b) => a.s - b.s || a.i - b.i);
-      const pages = Math.max(1, Math.ceil(hits.length / PER));
-      page = Math.min(page, pages - 1);
-      count.textContent = hits.length ? (page * PER + 1) + '–' + Math.min(hits.length, (page + 1) * PER) + ' ' + t('of', 'af') + ' ' + hits.length : '0 ' + t('products', 'produkter');
-      list.textContent = '';
+      shown = 0; rows = [];
+      list.textContent = ''; list.scrollTop = 0;
       if (!hits.length) list.append(h('.empty', null, t('No products match.', 'Ingen produkter passer.')));
-      rows = hits.slice(page * PER, (page + 1) * PER).map(({ p, v }) => {
+      addRows();
+    }
+    // append the next PER rows; the sentinel goes after them, and the observer adds more when it comes into view
+    function addRows() {
+      more.remove();
+      hits.slice(shown, shown + PER).forEach(({ p, v }) => {
         const r = productRow(p, null, v);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
         r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
         list.append(r);
-        return { p, r };
+        rows.push({ p, r });
       });
-      drawPager(pages);
+      shown = Math.min(hits.length, shown + PER);
+      count.textContent = hits.length ? (shown < hits.length ? t('Showing ', 'Viser ') + shown + ' ' + t('of', 'af') + ' ' : '') + hits.length + ' ' + t('products', 'produkter') : '0 ' + t('products', 'produkter');
+      if (shown < hits.length) list.append(more);
       arm();
     }
-    function go(n) { page = n; filter(); list.scrollTop = 0; }
-    function drawPager(pages) {
-      pager.textContent = ''; pager.hidden = pages < 2;
-      if (pages < 2) return;
-      const btn = (n, label, on) => h('button' + (on ? '.on' : ''), { onclick: () => go(n), disabled: n < 0 || n >= pages }, label);
-      pager.append(btn(page - 1, '‹'));
-      const show = new Set([0, pages - 1, page - 1, page, page + 1].filter((n) => n >= 0 && n < pages));
-      let last = -1;
-      [...show].sort((a, b) => a - b).forEach((n) => { if (n - last > 1) pager.append(h('span.gap', null, '…')); pager.append(btn(n, String(n + 1), n === page)); last = n; });
-      pager.append(btn(page + 1, '›'));
-    }
+    const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting) && shown < hits.length) addRows(); }, { root: list, rootMargin: '0px 0px 400px 0px' }) : null;
+    if (io) io.observe(more);
+    else list.addEventListener('scroll', () => { if (shown < hits.length && list.scrollTop + list.clientHeight > list.scrollHeight - 400) addRows(); });
     function buildShortcuts() {
       scList.textContent = '';
       if (HP.isAdmin()) scList.append(h('button.btn.block', { onclick: () => HP.editor.saveShortcut() }, icon('plus', 14), t('Save canvas / selection as Shortcut', 'Gem lærred / markering som genvej')));
@@ -348,6 +345,19 @@
     // the chosen cable, with its length: lv = the website length (a cable without its own card for that length), m = metres for
     // cable sold by the metre. The last length used is remembered and pre-selected next time.
     const pick = (id, o) => { c.cable = id; delete c.lv; delete c.m; if (o && o.lv) c.lv = o.lv; if (o && o.m) c.m = o.m; if (o && o.len) LS.set('cableLen', o.len); store.commit(); close(); };
+    // a click only selects: sel = { key, id, o, name, price }. The summary in the footer shows it, and "Use cable" (or Enter,
+    // or a double-click) commits it, so a length can be compared with the others before it goes on the connection.
+    let sel = null;
+    const summary = h('span.selsum.muted', null, t('Choose a cable and a length', 'Vælg et kabel og en længde'));
+    const useBtn = h('button.btn.primary', { disabled: true, onclick: () => commit() }, t('Use cable', 'Brug kabel'));
+    const commit = () => { if (sel) pick(sel.id, sel.o); };
+    const select = (s) => {
+      sel = s;
+      list.querySelectorAll('.cablegroup').forEach((g) => { const on = g.dataset.key === s.group; g.classList.toggle('picked', on); g.querySelectorAll('button.len').forEach((b) => b.classList.toggle('on', on && b.dataset.k === s.key)); });
+      summary.textContent = ''; summary.classList.remove('muted');
+      summary.append(h('b', null, s.name), ' · ' + HP.money(s.price));
+      useBtn.disabled = false;
+    };
     const isPerMetre = (p) => (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()));
     const lenIn = (s) => { const m = /(\d+(?:[.,]\d+)?)\s?m$/i.exec(String(s || '').trim()); return m ? parseFloat(m[1].replace(',', '.')) : 0; };
     const fmtM = (m) => String(m).replace('.', ',') + ' m';
@@ -366,29 +376,38 @@
       });
     };
     function groupRow(G) {
-      const rep = G.rep, e = P.cableEnds(rep) || [], mine = G.members.some((p) => p.id === c.cable);
+      const rep = G.rep, e = P.cableEnds(rep) || [], mine = G.members.some((p) => p.id === c.cable), gk = String(rep.site || rep.id);
       const r = productRow(rep, h('span.tagline', null, e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
-      const nm = r.querySelector('.pname'); if (nm) nm.textContent = C().stripLen(rep.name) || rep.name;
+      const base = C().stripLen(rep.name) || rep.name;
+      const nm = r.querySelector('.pname'); if (nm) nm.textContent = base;
       const sub = r.querySelector('.psub'); if (sub) sub.textContent = rep.brand + ' · ' + (G.metre ? HP.money(rep.price) + ' / m' : (G.opts.length > 1 ? t('from ', 'fra ') : '') + HP.money(G.min));
       if (mine) r.classList.add('on');
       const box = h('.lens');
+      let choose;
       if (G.metre) {
         const last = +LS.get('cableLen', 0);
-        const inp = h('input', { type: 'number', min: 0.5, step: 0.5, value: mine && c.m ? c.m : last || 2, onclick: (ev) => ev.stopPropagation(), oninput: () => tot.textContent = '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price) });
+        const metres = () => Math.max(0.5, Math.round((+inp.value || 0) * 2) / 2);
+        choose = () => { const m = metres(); select({ group: gk, key: 'm', id: rep.id, o: { m, len: m }, name: base + ' ' + fmtM(m), price: Math.ceil(m) * rep.price }); };
+        const inp = h('input', { type: 'number', min: 0.5, step: 0.5, value: mine && c.m ? c.m : last || 2, onclick: (ev) => { ev.stopPropagation(); choose(); },
+          oninput: () => { tot.textContent = '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price); choose(); } });
         const tot = h('span.muted', null, '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price));
-        const go = (ev) => { if (ev) ev.stopPropagation(); const m = Math.max(0.5, Math.round((+inp.value || 0) * 2) / 2); pick(rep.id, { m, len: m }); };
-        inp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') go(ev); });
-        box.append(h('span.lab', null, t('Metres', 'Meter')), inp, tot, h('button.btn.sm', { onclick: go }, t('Choose', 'Vælg')));
-        r.onclick = () => go();
+        inp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); choose(); commit(); } });
+        box.append(h('span.lab', null, t('Metres', 'Meter')), inp, tot);
       } else {
         const last = +LS.get('cableLen', 0);
         const cur = mine ? G.opts.find((o) => o.id === c.cable && (o.lv || null) === (c.lv || null)) : null;
         const pre = cur || (last && G.opts.find((o) => o.m >= last)) || G.opts.find((o) => o.m >= 1) || G.opts[0];
-        if (G.opts.length > 1 || (G.opts[0] && G.opts[0].m)) G.opts.forEach((o) => box.append(h('button.len' + (o === pre ? '.on' : ''), { title: HP.money(o.price), onclick: (ev) => { ev.stopPropagation(); pick(o.id, { lv: o.lv, len: o.m }); } },
+        const pickOpt = (o, i) => select({ group: gk, key: String(i), id: o.id, o: { lv: o.lv, len: o.m }, name: base + (o.label ? ' ' + o.label : ''), price: o.price || 0 });
+        if (G.opts.length > 1 || (G.opts[0] && G.opts[0].m)) G.opts.forEach((o, i) => box.append(h('button.len', { data: { k: String(i) }, title: HP.money(o.price),
+          onclick: (ev) => { ev.stopPropagation(); pickOpt(o, i); }, ondblclick: (ev) => { ev.stopPropagation(); pickOpt(o, i); commit(); } },
           h('b', null, o.label || '—'), h('span', null, HP.money(o.price)))));
-        r.onclick = () => pick(pre.id, { lv: pre.lv, len: pre.m });
+        // the row itself selects the length that is on the connection now, else the last length used, else the first of 1 m or more
+        choose = () => { if (sel && sel.group === gk) return; const i = G.opts.indexOf(pre); pickOpt(pre, i); };
+        if (mine) setTimeout(() => { if (!sel) choose(); });
       }
-      return h('.cablegroup', null, r, box.childNodes.length ? box : null);
+      r.onclick = () => choose();
+      r.ondblclick = () => { choose(); commit(); };
+      return h('.cablegroup', { data: { key: gk } }, r, box.childNodes.length ? box : null);
     }
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
@@ -402,6 +421,7 @@
       if (showAll || words.length || !(good.length + maybe.length)) sec(t('Other cables', 'Andre kabler'), other);
       else if (other.length) list.append(h('button.link.pad', { onclick: () => { showAll = true; draw(); } }, t('Show ' + other.length + ' other cables', 'Vis ' + other.length + ' andre kabler')));
       if (!all.length) list.append(h('.empty', null, t('No cables found.', 'Ingen kabler fundet.')));
+      if (sel) select(sel);
     }
     const close = HP.modal({ title: t('Cable for this connection', 'Kabel til denne forbindelse'), size: 'md', flush: true,
       body: [h('.conn-head', null, h('span.pill.c-' + P.colorOf(a), null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + P.colorOf(b), null, b.label),
@@ -409,7 +429,10 @@
         info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.'))),
         h('.searchbox.pad', null, icon('search', 15), q), list],
       foot: [h('button.btn.danger', { onclick: () => { store.selConn = c.id; C().deleteSelection(); close(); } }, icon('trash', 14), t('Delete connection', 'Slet forbindelse')), h('.spacer'),
-        c.cable && h('button.btn', { onclick: () => pick(null) }, t('Remove cable', 'Fjern kabel')), h('button.btn', { onclick: () => close() }, t('Close', 'Luk'))] });
+        c.cable && h('button.btn', { onclick: () => pick(null) }, t('Remove cable', 'Fjern kabel')), h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), useBtn] });
+    // the choice is shown in a bar above the buttons
+    useBtn.closest('.modal-foot').before(h('.selbar', null, summary));
+    q.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' && sel) commit(); });
     draw();
   };
 
