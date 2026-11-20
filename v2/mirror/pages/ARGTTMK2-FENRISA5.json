@@ -199,7 +199,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 436,
+        "availableQuantity": 617,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.699,-",
@@ -222,7 +222,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 507,
+        "availableQuantity": 499,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.699,-",
@@ -245,7 +245,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 526,
+        "availableQuantity": 514,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.699,-",
@@ -265,11 +265,10 @@
         "productCode": "ARGFENRISA5WA"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 21. november",
+        "deliveryDate": "2026-11-21T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 5,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "2.699,-",
        "priceRaw": 2699,
@@ -291,7 +290,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 182,
+        "availableQuantity": 386,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.699,-",
@@ -312,7 +311,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 349,
+        "availableQuantity": 341,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.299,-",
@@ -545,14 +544,14 @@
         ]
        }
       },
-      "rating": 4.69098712446352,
-      "count": 699,
+      "rating": 4.69,
+      "count": 700,
       "reviewCount": 329,
       "distribution": {
        "1": 9,
        "2": 5,
        "3": 26,
-       "4": 113,
+       "4": 114,
        "5": 546
       }
      }
@@ -577,7 +576,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2253,
+        "availableQuantity": 2230,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -600,7 +599,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1020,
+        "availableQuantity": 975,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -623,7 +622,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1734,
+        "availableQuantity": 1715,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -646,7 +645,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 512,
+        "availableQuantity": 499,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -670,7 +669,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 910,
+        "availableQuantity": 883,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -694,7 +693,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1157,
+        "availableQuantity": 1133,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -718,7 +717,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2041,
+        "availableQuantity": 2023,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -962,20 +961,20 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 22
+    "numberOfStoresExperience": 21
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.66849178695869,
-   "count": 2009,
+   "rating": 4.6681592039801,
+   "count": 2010,
    "reviewCount": 903,
    "distribution": {
     "1": 19,
     "2": 22,
     "3": 84,
-    "4": 356,
+    "4": 357,
     "5": 1528
    }
   },

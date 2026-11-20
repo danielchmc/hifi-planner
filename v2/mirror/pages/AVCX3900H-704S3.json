@@ -176,7 +176,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 27,
+        "availableQuantity": 26,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "17.999,-",
@@ -209,7 +209,126 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "BWDB4"
+     "parentProductCode": "BWDB4",
+     "reviews": {
+      "summary": "BWDB4 leverer varm, dyb, slagkraftig og imponerende kontrolleret bas, som giver både musik og film et medrivende fundament. Den sømløse integration med eksisterende højttalere udvider lydbilledet og fremhæver flere detaljer uden at blive dominerende eller buldrende. Det kompakte design, den stærke ydelse og den fleksible app-justering gør BWDB4 til en imponerende opgradering, selv om appen kræver tålmodighed og tilvænning.",
+      "headlines": {
+       "deep, controlled and musical bass": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den dybe, stramme, hurtige, præcise og musikalske bas.",
+        "simpleTitle": "Dyb, kontrolleret og musikalsk bas",
+        "bias": "positive",
+        "key": "deep-bass",
+        "groupId": "7f26b797-822b-4731-9cc7-d72d0b00304c"
+       },
+       "seamless integration with existing speakers": {
+        "sentimentAnalysis": "Flere anmeldelser beskriver subwooferen som en naturlig, afbalanceret og meget effektiv udvidelse af eksisterende højttalersystemer.",
+        "simpleTitle": "Sømløs integration med eksisterende højttalere",
+        "bias": "positive",
+        "key": "seamless-integration",
+        "groupId": "e1dc0ac5-fe8a-4265-a779-5976e221e931"
+       },
+       "app control takes patience to master": {
+        "sentimentAnalysis": "Appen vurderes som nyttig og funktionel, men flere anmeldelser finder brugerfladen besværlig eller uintuitiv i starten.",
+        "simpleTitle": "Appstyringen kræver tilvænning",
+        "bias": "negative",
+        "key": "app-learning-curve",
+        "groupId": "d15854d5-29cc-46a0-a962-7bf7d3e57284"
+       },
+       "a richer and more immersive presentation": {
+        "sentimentAnalysis": "Den ekstra dybbas beriger den samlede gengivelse, fremhæver detaljer og øger biografoplevelsen.",
+        "simpleTitle": "Et fyldigere og mere medrivende lydbillede",
+        "bias": "positive",
+        "key": "richer-sound",
+        "groupId": "7f26b797-822b-4731-9cc7-d72d0b00304c"
+       },
+       "compact size with impressive output": {
+        "sentimentAnalysis": "Anmeldelserne fremhæver det elegante, kompakte kabinet og den overraskende stærke ydelse i forhold til størrelsen.",
+        "simpleTitle": "Kompakt størrelse med imponerende ydelse",
+        "bias": "positive",
+        "key": "compact-power",
+        "groupId": "edafdd2e-b9cb-41d7-b32e-7363ac9f9336"
+       }
+      },
+      "grouping": {
+       "7f26b797-822b-4731-9cc7-d72d0b00304c": {
+        "title": "Bas og lydkvalitet",
+        "id": "7f26b797-822b-4731-9cc7-d72d0b00304c",
+        "references": [
+         "57d4af57-6609-42d5-8819-163520e9af86",
+         "1731cb0e-52a7-4280-98c5-d64a3894d28d",
+         "d4f6ca0a-72f1-44e9-ab4a-128bfb836025",
+         "c9d5ef38-f8fe-4dbc-a9b3-a4cda928066f",
+         "35125d38-ef8d-42fa-acad-4073021045c6",
+         "b1027d9a-cac1-4d47-85a5-64835b782311",
+         "19ff199c-3f95-4ebc-b72e-4f7fbc32a447",
+         "25a69995-dfbd-4fe9-9423-81aa35d493e9",
+         "cbfa586e-5634-4ffd-9952-90e2bf0023cb",
+         "decf9817-9499-45a3-8b8e-def55e8011b0",
+         "92c3928c-257d-4ef2-b3fb-04806953bac3",
+         "7f5911b3-8247-424a-b81a-6c9b67947bf7",
+         "2361aed8-063c-4c51-bee8-e209cba1b312",
+         "3d83b0fc-04a5-40d4-89cd-a75a055d6a8e",
+         "15ad1f0c-d651-4815-aeef-addfad420de1",
+         "3834aefb-5a61-40c9-b409-a6ab45060f51",
+         "7ce63384-2851-44bf-99f4-9e131501ae8a",
+         "1ee81b88-165c-4a0c-8cbf-959dec90b393"
+        ]
+       },
+       "e1dc0ac5-fe8a-4265-a779-5976e221e931": {
+        "title": "Integration med højttalere",
+        "id": "e1dc0ac5-fe8a-4265-a779-5976e221e931",
+        "references": [
+         "57d4af57-6609-42d5-8819-163520e9af86",
+         "06f3f59f-f404-402c-88ff-31c1ccf78142",
+         "d4f6ca0a-72f1-44e9-ab4a-128bfb836025",
+         "c9d5ef38-f8fe-4dbc-a9b3-a4cda928066f",
+         "19ff199c-3f95-4ebc-b72e-4f7fbc32a447",
+         "9d690563-78f9-4340-8cf2-f74964b3fcb4",
+         "a8c29201-f4f3-4da5-b9d5-7ae12801d2ef",
+         "cfd2f258-d68d-43f6-9963-4d4350f9453b",
+         "a9de1310-a784-47bf-9f95-d53a0491b548",
+         "decf9817-9499-45a3-8b8e-def55e8011b0",
+         "a34306b7-9f47-4d16-a54e-f00fb36f91a2",
+         "e9734064-5bd0-4681-a9b4-56fa37ac6ed9",
+         "3834aefb-5a61-40c9-b409-a6ab45060f51",
+         "cefb8838-74e3-47ac-93eb-0737cda12d33",
+         "529c097f-9e01-4952-a344-831e066c53ab"
+        ]
+       },
+       "d15854d5-29cc-46a0-a962-7bf7d3e57284": {
+        "title": "App og opsætning",
+        "id": "d15854d5-29cc-46a0-a962-7bf7d3e57284",
+        "references": [
+         "57d4af57-6609-42d5-8819-163520e9af86",
+         "35125d38-ef8d-42fa-acad-4073021045c6",
+         "a8c29201-f4f3-4da5-b9d5-7ae12801d2ef",
+         "cbfa586e-5634-4ffd-9952-90e2bf0023cb",
+         "3834aefb-5a61-40c9-b409-a6ab45060f51",
+         "1ee81b88-165c-4a0c-8cbf-959dec90b393"
+        ]
+       },
+       "edafdd2e-b9cb-41d7-b32e-7363ac9f9336": {
+        "title": "Design og størrelse",
+        "id": "edafdd2e-b9cb-41d7-b32e-7363ac9f9336",
+        "references": [
+         "fd27431b-45c2-41dc-8eb8-6ee915c0f507",
+         "73531214-88fa-48bb-8e68-9acb6899e3b1",
+         "3834aefb-5a61-40c9-b409-a6ab45060f51",
+         "1ee81b88-165c-4a0c-8cbf-959dec90b393"
+        ]
+       }
+      },
+      "rating": 4.78461538461538,
+      "count": 65,
+      "reviewCount": 36,
+      "distribution": {
+       "1": 1,
+       "2": 0,
+       "3": 1,
+       "4": 8,
+       "5": 55
+      }
+     }
     },
     {
      "brand": "Bowers & Wilkins",
@@ -387,7 +506,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 18,
+        "availableQuantity": 16,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.598,-",
@@ -465,7 +584,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 156,
+        "availableQuantity": 150,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "11.499,-",
@@ -475,85 +594,7 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DENAVCX3900H",
-     "reviews": {
-      "summary": "Denon AVC-X3900H roses bredt for varm, klar og kraftfuld lyd med dyb bas, transparente højder, medrivende surround og tydelig dialog. Avanceret signalbehandling, Dirac Live og Auro-3D giver imponerende fleksibilitet og musikalitet, mens receiveren byder på rigelig effekt og mange funktioner. Opsætning og kalibrering kan være krævende, og enkelte vejledninger og komfortfunktioner mangler, men den samlede vurdering er meget begejstret.",
-      "headlines": {
-       "clear, deep and immersive sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den klare, velafbalancerede og kraftfulde gengivelse med dybere bas, transparente højder, høj dynamik og medrivende surround.",
-        "simpleTitle": "Klar, dyb og medrivende lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "2d9d8151-2ec3-4969-b900-26b96194d3ce"
-       },
-       "advanced modes and processing add flexibility": {
-        "sentimentAnalysis": "Anmeldelserne fremhæver de mange lydtilstande, moderne signalbehandling og især den engagerende Auro-3D-tilstand til musik.",
-        "simpleTitle": "Avancerede tilstande og signalbehandling giver fleksibilitet",
-        "bias": "positive",
-        "key": "features",
-        "groupId": "53c9b0f8-0ae9-44bd-bcd4-724cc40e3f11"
-       },
-       "dirac Live improves bass, timing and dialogue": {
-        "sentimentAnalysis": "Dirac Live værdsættes for bedre baskontrol, præcis timing af effekter og klarere dialog og foretrækkes frem for Audyssey i én anmeldelse.",
-        "simpleTitle": "Dirac Live forbedrer bas, timing og dialog",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "2d9d8151-2ec3-4969-b900-26b96194d3ce"
-       },
-       "setup and calibration can be difficult": {
-        "sentimentAnalysis": "Receiveren kritiseres for vanskelig TV-opsætning og kalibrering, hvor vejledning og indstillinger er utilstrækkelige og kan kræve gentagne forsøg.",
-        "simpleTitle": "Opsætning og kalibrering kan være vanskelig",
-        "bias": "negative",
-        "key": "setup",
-        "groupId": "17d262b2-057a-4d1b-8dbe-51759c9a7db2"
-       }
-      },
-      "grouping": {
-       "2d9d8151-2ec3-4969-b900-26b96194d3ce": {
-        "title": "Lydkvalitet",
-        "id": "2d9d8151-2ec3-4969-b900-26b96194d3ce",
-        "references": [
-         "957805f8-c92c-4eb7-aec3-63ae836d8373",
-         "06ca9205-d72b-4da3-80af-4bd971f0b9c9",
-         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
-         "1ca29f9a-7750-48f9-9bb9-41acee176ec9",
-         "98400810-f5fb-4d25-bb69-49e8bcdcd1ea",
-         "29aac145-a113-497e-a2a7-c1621bd4cde2",
-         "0dde59db-4d78-4499-bacf-e905cc082a14",
-         "41f33456-165c-4664-9cd2-db3cb0010e91"
-        ]
-       },
-       "53c9b0f8-0ae9-44bd-bcd4-724cc40e3f11": {
-        "title": "Funktioner og signalbehandling",
-        "id": "53c9b0f8-0ae9-44bd-bcd4-724cc40e3f11",
-        "references": [
-         "957805f8-c92c-4eb7-aec3-63ae836d8373",
-         "29aac145-a113-497e-a2a7-c1621bd4cde2",
-         "0dde59db-4d78-4499-bacf-e905cc082a14",
-         "41f33456-165c-4664-9cd2-db3cb0010e91"
-        ]
-       },
-       "17d262b2-057a-4d1b-8dbe-51759c9a7db2": {
-        "title": "Opsætning og kalibrering",
-        "id": "17d262b2-057a-4d1b-8dbe-51759c9a7db2",
-        "references": [
-         "3d0cdff9-ad1f-444c-a097-29df753f4f60",
-         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
-         "41f33456-165c-4664-9cd2-db3cb0010e91"
-        ]
-       }
-      },
-      "rating": 4.8,
-      "count": 20,
-      "reviewCount": 11,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 1,
-       "4": 2,
-       "5": 17
-      }
-     }
+     "parentProductCode": "DENAVCX3900H"
     }
    ],
    "sellableOnWeb": true,
@@ -561,7 +602,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 2-4 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 9
+    "numberOfStoresExperiencePartly": 10
    }
   },
   "variantNavigationType": "dropDown",

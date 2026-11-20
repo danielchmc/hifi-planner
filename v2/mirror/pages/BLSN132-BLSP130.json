@@ -205,7 +205,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 58,
+        "availableQuantity": 56,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.999,-",
@@ -228,7 +228,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 379,
+        "availableQuantity": 372,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.999,-",
@@ -238,7 +238,255 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "BLSN132"
+     "parentProductCode": "BLSN132",
+     "reviews": {
+      "summary": "Bluesound NODE N132 roses bredt som en alsidig og let opsat streamer med varm, detaljeret og opslugende lyd, der kan måle sig med CD-kvalitet og løfte eksisterende hi-fi-anlæg markant. BluOS, den brede streamingunderstøttelse, TV-integration og Dirac-funktionalitet giver imponerende fleksibilitet, mens stabil drift og stærk kundeservice understøtter det positive indtryk. Et mindretal oplever problemer med appen, ustabilt Wi-Fi eller begrænsninger i enkelte tjenester samt langsom opstart og manglen på en fysisk tænd/sluk-knap.",
+      "headlines": {
+       "setup is generally quick, stable and flexible": {
+        "sentimentAnalysis": "De fleste opsætninger er ligetil med stabil afspilning og bred integration med forstærkere, TV, højttalere og eksisterende hi-fi-anlæg.",
+        "simpleTitle": "Opsætningen er generelt hurtig, stabil og fleksibel",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "e9c9b190-bb42-4151-9fdd-7cb7561b1a44"
+       },
+       "broad streaming support and Dirac add useful flexibility": {
+        "sentimentAnalysis": "Anmeldelserne fremhæver streaming i høj opløsning, Tidal- og Qobuz-integration, TV- og USB-afspilning, multiroom-styring og Dirac-rumkorrektion.",
+        "simpleTitle": "Bred streamingunderstøttelse og Dirac giver nyttig fleksibilitet",
+        "bias": "positive",
+        "key": "features",
+        "groupId": "5c18b2e7-4d27-4362-8198-6b46a74933ea"
+       },
+       "warm, detailed sound with a spacious, immersive presentation": {
+        "sentimentAnalysis": "Anmelderne beskriver en musikalsk, varm og meget detaljeret gengivelse med bedre rumfornemmelse, placering og nærvær; Dirac kan finjustere bas, diskant og rummets balance yderligere.",
+        "simpleTitle": "Varm og detaljeret lyd med rummelig, opslugende gengivelse",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "efb93fea-23ae-43b1-9fe7-b0b948f2a8ad"
+       },
+       "bluOS is intuitive and makes streaming easy": {
+        "sentimentAnalysis": "BluOS opleves ofte som intuitiv, hurtig og lettere at bruge end konkurrerende apps med praktisk styring af musik, radio, TV og multiroom-systemer.",
+        "simpleTitle": "BluOS er intuitiv og gør streaming nemt",
+        "bias": "positive",
+        "key": "app",
+        "groupId": "2e431c03-321d-48e2-8a0c-72457726ae08"
+       },
+       "helpful advice and service support the purchase": {
+        "sentimentAnalysis": "Personlig rådgivning, hurtig levering og effektiv problemløsning roses gentagne gange, især af kunder, der handler hos HiFi Klubben.",
+        "simpleTitle": "God rådgivning og service understøtter købet",
+        "bias": "positive",
+        "key": "service",
+        "groupId": "3e522e2d-ea31-4b02-a737-3d4d723b429c"
+       },
+       "a clear upgrade over older Bluesound and Sonos models": {
+        "sentimentAnalysis": "Flere ejere hører flere detaljer, bedre stereoperspektiv og en fyldigere, mere raffineret gengivelse end med tidligere Node-generationer eller Sonos Connect.",
+        "simpleTitle": "En tydelig opgradering i forhold til ældre Bluesound- og Sonos-modeller",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "efb93fea-23ae-43b1-9fe7-b0b948f2a8ad"
+       },
+       "app navigation and service support can be frustrating": {
+        "sentimentAnalysis": "Nogle brugere finder BluOS mindre begejstrende eller besværlig, især ved lokale netværksbiblioteker, mens manglende integrationer som Apple Music, Chromecast og YouTube Music mindsker bekvemmeligheden.",
+        "simpleTitle": "App-navigation og tjenesteunderstøttelse kan være frustrerende",
+        "bias": "negative",
+        "key": "app",
+        "groupId": "2e431c03-321d-48e2-8a0c-72457726ae08"
+       },
+       "wi-Fi and HDMI compatibility can be inconsistent": {
+        "sentimentAnalysis": "En mindre, men relevant gruppe rapporter nævner problemer med TV-handshake eller ustabilt Wi-Fi, hvor kablet netværk til tider er nødvendigt for stabil drift.",
+        "simpleTitle": "Wi-Fi- og HDMI-kompatibilitet kan være ustabil",
+        "bias": "negative",
+        "key": "setup",
+        "groupId": "e9c9b190-bb42-4151-9fdd-7cb7561b1a44"
+       },
+       "some services and hardware details limit convenience": {
+        "sentimentAnalysis": "Problemer med Tidal-afspilning, manglende tjenester, begrænset USB-kompatibilitet samt afhængighed af ekstern DAC eller internetforbindelse nævnes som begrænsninger.",
+        "simpleTitle": "Visse tjenester og hardwaredetaljer begrænser komforten",
+        "bias": "negative",
+        "key": "features",
+        "groupId": "5c18b2e7-4d27-4362-8198-6b46a74933ea"
+       }
+      },
+      "grouping": {
+       "efb93fea-23ae-43b1-9fe7-b0b948f2a8ad": {
+        "title": "Lydkvalitet",
+        "id": "efb93fea-23ae-43b1-9fe7-b0b948f2a8ad",
+        "references": [
+         "a098c7af-6022-47e7-af0e-0f35e0593678",
+         "680bd611-e63b-44b3-af27-0c8a7a574a7d",
+         "345f0378-5937-47ee-bdf8-b19dadea0d5f",
+         "5037441d-9602-4a5a-96ac-815efadcfa93",
+         "75608cd9-970a-4a14-a95f-6002306b9e02",
+         "cbd80213-a67b-4aae-92da-5b5bc8b8f8ef",
+         "f3852289-6509-4ed7-97dc-401fd2d7cf4b",
+         "5f8d39eb-e3e3-4fd4-b3d7-a26b5b20af1a",
+         "2fdbf2e9-4666-42bc-bcf6-95f42c0023d7",
+         "a297dfca-7f56-404a-aefc-5aea566eae02",
+         "74d16947-130f-4c88-ac99-e0a25b84879e",
+         "a27f53f3-1cd1-4430-a0a7-3bd0c266f660",
+         "62fb1c09-6334-4881-9e8e-386b5f4ebd43",
+         "c26b4e80-523a-4d23-9570-19b603771738",
+         "2a0bc4db-f390-415a-a421-0c7cf8f879e8",
+         "9505e693-8e7f-427a-ba1a-bb650a756a7a",
+         "3ef5db7f-7dd8-4ca3-bac8-0d685a7867e7",
+         "b226f9c6-79ef-4be0-8923-d058a46c23b1",
+         "96946246-3465-4a64-9f68-9a11c0e6befe",
+         "93a02a97-dc42-4354-9c1d-019009772965",
+         "e16da233-f940-4e92-b6b9-b8ba56b6d1ea",
+         "52f69ccd-9359-4077-9022-5621ad3b510d",
+         "6e054438-15d1-4233-82fd-9415d775e51e",
+         "91860e49-2159-424c-9473-2306953fe929",
+         "4df725b8-85e4-4b9d-b7b3-c3c5ed29960e",
+         "dc36789a-ae45-4712-861b-827631262edf",
+         "bbf44c84-cbc6-48b9-a990-c3210402e4bb",
+         "a37aa45c-0d5e-432a-aece-9b4d294a8ac0",
+         "4b75f0ac-1f1f-4361-b7d1-315bfdcf2b4a",
+         "c0a86905-55ef-41d8-ae42-836b250067e8",
+         "e73c4bb0-6aea-4876-b802-b04f0a3287d9",
+         "723df2eb-071f-4cb1-944a-b3aaf22af642",
+         "2f7f8df5-05d0-4dbe-b5dc-e6101a8f6c4f",
+         "5fe090c5-9879-4e4c-9693-4914f0a40450",
+         "ca66a060-43b6-41ae-9166-7bf1dcaa7044",
+         "832f9ea2-8996-4a8d-9445-ad969376f07a",
+         "562ed9f6-fea7-4b79-871d-8dd69a236686",
+         "360c22e8-2854-42a1-9b81-0f247a3e959a",
+         "77466c2c-1dce-4e2f-b6a1-e848946f87fd",
+         "9d84e342-f582-480d-ac59-0b8804b330f7",
+         "5c644b94-4e91-4150-b467-07cc8034f3b1",
+         "0a1e7a3a-d2fb-44a6-befc-4a088a34948e",
+         "1f94df46-35c9-4157-908f-154e82d8eac9",
+         "205e1a9a-3259-476c-ae6f-e3174b7338a7",
+         "2927ea74-4f69-441e-a318-62c024a8a1e5",
+         "33371d19-2f51-4af6-9b92-84e0aa0440f7",
+         "49cf1b72-4bea-4dcb-a057-c2551a2268d6",
+         "b2d1bf57-afb1-4664-a24e-9c4e3c60ae2b"
+        ]
+       },
+       "e9c9b190-bb42-4151-9fdd-7cb7561b1a44": {
+        "title": "Opsætning og forbindelse",
+        "id": "e9c9b190-bb42-4151-9fdd-7cb7561b1a44",
+        "references": [
+         "75608cd9-970a-4a14-a95f-6002306b9e02",
+         "f7eb0b16-507d-4d6a-befb-f630657bfeb9",
+         "5f8d39eb-e3e3-4fd4-b3d7-a26b5b20af1a",
+         "9b066cf5-75c7-4a51-ad64-8fa093e48902",
+         "a297dfca-7f56-404a-aefc-5aea566eae02",
+         "74d16947-130f-4c88-ac99-e0a25b84879e",
+         "94cf4ea2-03e9-43f4-8e63-70b5931ee724",
+         "a27f53f3-1cd1-4430-a0a7-3bd0c266f660",
+         "1cf6136f-4732-4592-b026-61332c99419f",
+         "97e69f4e-e3a8-401f-8e5f-d43dbcecc07d",
+         "3ef5db7f-7dd8-4ca3-bac8-0d685a7867e7",
+         "93a02a97-dc42-4354-9c1d-019009772965",
+         "6e054438-15d1-4233-82fd-9415d775e51e",
+         "b3662988-c136-4f6c-9d28-6f16d3e1f705",
+         "5f4ad4c9-a77e-4977-9c95-d53823adfadb",
+         "c2b492da-2b37-48bb-824c-eba9a3ad9255",
+         "6bb3c40f-4b51-4117-9c6f-61929e2ac1aa",
+         "cfd2cc7b-3954-4902-a6a7-5236b6f1d03e",
+         "20cc4eda-7149-4f8f-9a1e-0f77571c4afa",
+         "a37aa45c-0d5e-432a-aece-9b4d294a8ac0",
+         "c0a86905-55ef-41d8-ae42-836b250067e8",
+         "4086c744-ac99-4fe5-897d-9bd878d4d6d4",
+         "e31f3f9c-a652-4d2a-9635-43361188701c",
+         "832f9ea2-8996-4a8d-9445-ad969376f07a",
+         "0dcedc26-e6c3-4011-a761-d634033f3212",
+         "da2c61d3-2ceb-4e15-9571-85e755c34e26",
+         "77466c2c-1dce-4e2f-b6a1-e848946f87fd",
+         "293fd10e-d187-4aff-b03f-b49fe85f9f99",
+         "86a01de7-2a19-4e5b-ab6f-872fdeaa8ba4"
+        ]
+       },
+       "2e431c03-321d-48e2-8a0c-72457726ae08": {
+        "title": "App og brugervenlighed",
+        "id": "2e431c03-321d-48e2-8a0c-72457726ae08",
+        "references": [
+         "a098c7af-6022-47e7-af0e-0f35e0593678",
+         "680bd611-e63b-44b3-af27-0c8a7a574a7d",
+         "75608cd9-970a-4a14-a95f-6002306b9e02",
+         "cbd80213-a67b-4aae-92da-5b5bc8b8f8ef",
+         "f7eb0b16-507d-4d6a-befb-f630657bfeb9",
+         "8c1e7b60-99c6-4541-866a-73d73a698849",
+         "f3852289-6509-4ed7-97dc-401fd2d7cf4b",
+         "6ff34c04-41f9-4fa2-abfd-b638e7f98aac",
+         "2fdbf2e9-4666-42bc-bcf6-95f42c0023d7",
+         "9b066cf5-75c7-4a51-ad64-8fa093e48902",
+         "1cf6136f-4732-4592-b026-61332c99419f",
+         "93a02a97-dc42-4354-9c1d-019009772965",
+         "b3662988-c136-4f6c-9d28-6f16d3e1f705",
+         "8f3867ab-6767-464f-9d47-e36329f8688c",
+         "6bb3c40f-4b51-4117-9c6f-61929e2ac1aa",
+         "d9b0c6ac-6006-47a4-96b9-53d830053fc1",
+         "4086c744-ac99-4fe5-897d-9bd878d4d6d4",
+         "e31f3f9c-a652-4d2a-9635-43361188701c",
+         "2f7f8df5-05d0-4dbe-b5dc-e6101a8f6c4f",
+         "5fe090c5-9879-4e4c-9693-4914f0a40450",
+         "a37aa45c-0d5e-432a-aece-9b4d294a8ac0",
+         "33371d19-2f51-4af6-9b92-84e0aa0440f7",
+         "dca71e5c-01f3-4be9-bdb5-e707a1a13902",
+         "13f7d699-8cbe-4656-907e-6caf39dc8e0c",
+         "1f94df46-35c9-4157-908f-154e82d8eac9",
+         "2927ea74-4f69-441e-a318-62c024a8a1e5",
+         "b2d1bf57-afb1-4664-a24e-9c4e3c60ae2b",
+         "360c22e8-2854-42a1-9b81-0f247a3e959a"
+        ]
+       },
+       "5c18b2e7-4d27-4362-8198-6b46a74933ea": {
+        "title": "Streamingfunktioner og kompatibilitet",
+        "id": "5c18b2e7-4d27-4362-8198-6b46a74933ea",
+        "references": [
+         "75608cd9-970a-4a14-a95f-6002306b9e02",
+         "cbd80213-a67b-4aae-92da-5b5bc8b8f8ef",
+         "bf555db0-a4ff-484a-a7e0-63fe58520b8b",
+         "8c1e7b60-99c6-4541-866a-73d73a698849",
+         "f3852289-6509-4ed7-97dc-401fd2d7cf4b",
+         "2fdbf2e9-4666-42bc-bcf6-95f42c0023d7",
+         "b9da6836-1562-42ad-8f69-274f8b4ee997",
+         "c26b4e80-523a-4d23-9570-19b603771738",
+         "93a02a97-dc42-4354-9c1d-019009772965",
+         "91860e49-2159-424c-9473-2306953fe929",
+         "0918e760-9dd7-426b-aac6-827f1320286b",
+         "b3662988-c136-4f6c-9d28-6f16d3e1f705",
+         "e31f3f9c-a652-4d2a-9635-43361188701c",
+         "67509dee-0800-44a7-9db9-b5141c959733",
+         "c402b65a-1b20-49d5-88af-881c2d660003",
+         "360c22e8-2854-42a1-9b81-0f247a3e959a",
+         "13f7d699-8cbe-4656-907e-6caf39dc8e0c",
+         "33371d19-2f51-4af6-9b92-84e0aa0440f7",
+         "49cf1b72-4bea-4dcb-a057-c2551a2268d6",
+         "b2d1bf57-afb1-4664-a24e-9c4e3c60ae2b"
+        ]
+       },
+       "3e522e2d-ea31-4b02-a737-3d4d723b429c": {
+        "title": "Rådgivning og kundeservice",
+        "id": "3e522e2d-ea31-4b02-a737-3d4d723b429c",
+        "references": [
+         "840b10e9-8eff-4d61-9324-b37071893bb5",
+         "5037441d-9602-4a5a-96ac-815efadcfa93",
+         "03d299a8-00c7-434a-9dc3-5ce5d5bdc62e",
+         "d0e80e27-706c-4d49-b629-a5c634f4e032",
+         "2a0bc4db-f390-415a-a421-0c7cf8f879e8",
+         "5f4ad4c9-a77e-4977-9c95-d53823adfadb",
+         "cfd2cc7b-3954-4902-a6a7-5236b6f1d03e",
+         "dc36789a-ae45-4712-861b-827631262edf",
+         "3a42303c-95a1-496e-8ed3-eac5dc046224",
+         "e73c4bb0-6aea-4876-b802-b04f0a3287d9",
+         "723df2eb-071f-4cb1-944a-b3aaf22af642",
+         "7d1f995f-8a01-45ee-88ba-88e75208ccb8",
+         "832f9ea2-8996-4a8d-9445-ad969376f07a"
+        ]
+       }
+      },
+      "rating": 4.78409090909091,
+      "count": 176,
+      "reviewCount": 97,
+      "distribution": {
+       "1": 0,
+       "2": 2,
+       "3": 5,
+       "4": 22,
+       "5": 147
+      }
+     }
     },
     {
      "brand": "Bluesound",
@@ -260,7 +508,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1483,
+        "availableQuantity": 1465,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -283,7 +531,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2400,
+        "availableQuantity": 2357,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -306,7 +554,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2062,
+        "availableQuantity": 2049,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -476,15 +724,15 @@
         ]
        }
       },
-      "rating": 4.61875,
-      "count": 160,
+      "rating": 4.62111801242236,
+      "count": 161,
       "reviewCount": 78,
       "distribution": {
        "1": 0,
        "2": 4,
        "3": 9,
        "4": 31,
-       "5": 116
+       "5": 117
       }
      }
     }
@@ -500,15 +748,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.70535714285714,
-   "count": 336,
+   "rating": 4.70623145400594,
+   "count": 337,
    "reviewCount": 175,
    "distribution": {
     "1": 0,
     "2": 6,
     "3": 14,
     "4": 53,
-    "5": 263
+    "5": 264
    }
   },
   "boxContent": [

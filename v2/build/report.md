@@ -246,14 +246,14 @@ Read by the next mirror runs.
 
 `data/own.js` is the master for what HiFi Planner adds; `build/app-products.js` is rebuilt from it and the mirror every hour.
 
-- 718 follow the website through their link, 129 are frozen (not on the website)
-- Prices held by the plausibility check (as the sync does): 14
+- 722 follow the website through their link, 124 are frozen (not on the website)
+- Prices held by the plausibility check (as the sync does): 15
 - Every link points at a product the website lists
 
 
-**App catalogue** (`build/app-products.js`, used by the app): 1285 products (438 from the website that HiFi Planner does not have yet, without ports), every product has a category.
+**App catalogue** (`build/app-products.js`, used by the app): 1284 products (438 from the website that HiFi Planner does not have yet, without ports), every product has a category.
 
-**Cable ends**: 120 from the name, 8 from the old connector list, 57 from the cable type, 35 from the website's connector list, 8 guessed.
+**Cable ends**: 17 set by hand, 57 from the cable type, 36 from the website's connector list, 106 from the name, 3 from the old connector list, 8 guessed.
 
 Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
@@ -266,14 +266,26 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 - AudioQuest Coffee: usba ↔ usbb
 - AudioQuest Coffee: usba ↔ usbb
 
-**Cable lengths**: 171 cables offer their website lengths in the cable picker.
+**Cable lengths**: 175 cables offer their website lengths in the cable picker.
 
-Stock pictures replaced by the website's photo (22): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53, Sonos Line in Adapter.
+**Length no longer sold, cable still sold** (4): the card follows the cable and offers its current lengths instead of being discontinued.
 
-Since the previous build: 0 price changes, 0 products added, 0 removed.
+- AudioQuest Golden Gate 16m [AQGOLDENGATEIN16,0] → AQGOLDENGATEIN
+- AudioQuest Golden Gate 1.5m [AQGOLDENGATEIN1,5] → AQGOLDENGATEIN
+- AudioQuest Golden Gate - Minijack 1.5m [AQGOLDENGATEMJ1,5] → AQGOLDENGATEMJ
+- AudioQuest Evergreen In 1.5m [AQEVERGREENIN1,5] → AQEVERGREENIN
+
+Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
+
+Since the previous build: 1 price changes, 0 products added, 0 removed.
+
+**Price changes**
+
+- AudioQuest Evergreen In: 699 → 599
 
 **Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
 
+- AudioQuest Golden Gate 16m: 3399 kept, website 999 (large change (over -35% / +60%))
 - AudioQuest Evergreen - Minijack - RCA 20m: 3099 kept, website 699 (large change (over -35% / +60%))
 - AudioQuest Greyhound - Sub 16m: 999 kept, website 1699 (large change (over -35% / +60%))
 - Marshall Acton III: 2290 kept, website 1399 (large change (over -35% / +60%))
