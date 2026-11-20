@@ -1,6 +1,6 @@
 {
  "sku": "BULOWBS19BK",
- "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19laobk/",
+ "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19sobk/",
  "breadcrumb": [
   {
    "title": "Tilbehør",
@@ -46,6 +46,87 @@
    "id": 69792
   },
   "variants": [
+   {
+    "id": 156903,
+    "displayName": "Smoked Oak",
+    "condition": "NewNeverUsedAndNotOpened",
+    "sellableOnWeb": true,
+    "productCode": "BULOWBS19SOBK",
+    "ean": "5713003001916",
+    "priceDetails": {
+     "priceValueId": 1003919,
+     "price": 2995,
+     "priceFormatted": "2.995,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 2995
+    },
+    "techSpecs": [
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Træfarvet"
+       },
+       {
+        "term": "Model / Variant",
+        "value": "Smoked Oak"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "8,6"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "8,6"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "59,5 x 15,5 x 71 cm (bredde x højde x dybde)"
+       },
+       {
+        "term": "Mål (produkt)",
+        "value": "76,5 x 71,5 x 58 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "Wood",
+     "text": "Smoked Oak",
+     "productCode": "BULOWBS19SOBK"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "numberOfStoresExperience": 2,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/aa8eb662-f61a-4c7d-8379-5b3bcde69c89"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/7a81c167-18fc-4688-a573-3137d9f93fd0"
+     }
+    ],
+    "lifestyleImages": [
+     {
+      "url": "https://images.hifiklubben.com/image/c67a3efe-b80b-4c26-9edf-df1d7dfaf5c8"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/3899d633-4e03-4e88-95b0-9a0e62dbc54f"
+     }
+    ],
+    "energySpecifications": {},
+    "url": "/bulow-bs19bk-gulvstander/bulowbs19sobk/",
+    "canonicalUrl": "/bulow-bs19bk-gulvstander/bulowbs19sobk/",
+    "addOns": []
+   },
    {
     "id": 156906,
     "displayName": "Lacquered Oak",

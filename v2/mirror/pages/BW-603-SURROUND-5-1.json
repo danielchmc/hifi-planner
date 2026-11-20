@@ -143,7 +143,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 58,
+        "availableQuantity": 57,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "7.499,-",
@@ -176,7 +176,162 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "BWASW610M"
+     "parentProductCode": "BWASW610M",
+     "reviews": {
+      "summary": "B&W ASW610 leverer varm, punchy og kraftfuld bas med imponerende dybde, præcision og kontrol til både musik og film. Det kompakte kabinet passer flot ind i mange højttalersystemer, forbliver klart ved både lav og høj lydstyrke og har nyttige justeringsmuligheder til forskellige rum. Enkelte anmeldelser nævner, at omhyggelig opsætning er vigtig, samt lejlighedsvise bekymringer om pris, for dominerende bas, brum eller et sporadisk klik, men lydkvalitet og værdi får samlet set stor ros.",
+      "headlines": {
+       "warm, powerful and precise bass": {
+        "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, varm, kontrolleret, musikalsk og kraftfuld frem for løs eller buldrende.",
+        "simpleTitle": "Varm, kraftfuld og præcis bas",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "c6450117-c26f-4c57-9922-363a29f39baf"
+       },
+       "seamless speaker matching": {
+        "sentimentAnalysis": "ASW610 roses ofte for at falde naturligt ind sammen med B&W- og andre højttalersystemer.",
+        "simpleTitle": "Problemfri tilpasning til højttalere",
+        "bias": "positive",
+        "key": "system-integration",
+        "groupId": "da13729d-ecf4-4c5c-921b-0b8591c1bc21"
+       },
+       "strong immersion for films and music": {
+        "sentimentAnalysis": "Subwooferen tilfører biografisk effekt og en fyldigere musikoplevelse, især med kraftfulde dybeffekter i film.",
+        "simpleTitle": "Stærk indlevelse til film og musik",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "c6450117-c26f-4c57-9922-363a29f39baf"
+       },
+       "compact cabinet, substantial output": {
+        "sentimentAnalysis": "Det kompakte design er nemt at placere og leverer samtidig overraskende kraftig bas.",
+        "simpleTitle": "Kompakt kabinet, stor ydelse",
+        "bias": "positive",
+        "key": "size-room-fit",
+        "groupId": "acd8374c-ab40-465d-872b-ced689d72011"
+       },
+       "careful setup is essential": {
+        "sentimentAnalysis": "Anmeldelserne viser, at placering, tilslutningsmetode og kalibrering påvirker balance og ydelse mærkbart.",
+        "simpleTitle": "Omhyggelig opsætning er vigtig",
+        "bias": "negative",
+        "key": "setup-adjustment",
+        "groupId": "9f9a0c3b-42d7-48af-b0f3-0ed240dd50bd"
+       }
+      },
+      "grouping": {
+       "c6450117-c26f-4c57-9922-363a29f39baf": {
+        "title": "Lydkvalitet",
+        "id": "c6450117-c26f-4c57-9922-363a29f39baf",
+        "references": [
+         "4901c31e-be79-4945-a1a0-0507c9f170d0",
+         "b3322017-6b7d-477c-84a8-9d7d0a6a4211",
+         "9ebebd6b-41f6-4afa-a67f-a54dd58db04b",
+         "f7984205-e7ab-4000-a412-bbb07f1b1d02",
+         "15b44a2d-b1a1-4490-a9d9-ff116376e99b",
+         "9b5d6fe2-7716-4481-ba7c-de27d280646b",
+         "7c4948b2-46e9-4633-9670-128668d75562",
+         "24997b86-1796-432e-9c04-c48fbc222b01",
+         "bfa7d5bb-8f50-4527-974c-f7f9c2f21480",
+         "a12646a9-2f27-45f1-939a-c75dbd5eb73e",
+         "10dd931e-455c-4a0e-8765-e760880211ce",
+         "a3ede764-dd2b-4fb3-bb56-cc21017d5a1e",
+         "ad44d000-b3d2-4506-90a9-9585ea776adb",
+         "3a3f76f3-ce1e-406c-a848-f2f75739f0eb",
+         "c0c2307e-525d-4e28-8f15-770b989377f4",
+         "1d609716-d8ee-451b-b2b7-a8a3b64c2c2a",
+         "62efb01e-4f29-4b17-bfda-3eb1c054102c",
+         "48e0acca-5df2-4cba-b590-70914a94db20",
+         "a71efe25-3f54-4917-9c51-f8272176d8d6",
+         "07073435-ede5-4f80-bd64-b7765c27e50d",
+         "dba6de97-15cf-4f8d-aafb-b9a280b3cbc0",
+         "34367e5c-0cb1-4e8d-a9ce-34cd65a22d16",
+         "b0d068be-99f8-4135-8586-f92f0188476d",
+         "366a84ca-200f-4278-90f3-03040a5d5942",
+         "77c5eedb-dfac-49fc-8a28-45753dd65467",
+         "433a9a2d-2400-41bc-b6fd-d1ef770d3206",
+         "d438c33c-90f8-4884-a21b-baeaf5a03766",
+         "38ca7105-829c-4918-b387-2bd21a217d61",
+         "556c6fc7-bd7c-4b8f-8172-95f48476ec9a",
+         "1c1d57fb-8350-47fc-af7b-b92d6ec3c4e7",
+         "253acfcf-633e-4cad-844a-f1a2827a0b97",
+         "6f6f7099-d55e-4cc1-b6b6-b1cc470e83ab",
+         "5a289d7f-902d-471e-b35a-3f771fb91603",
+         "e7a91d54-9940-444d-9f30-6a2787b64930",
+         "929f722a-9660-4bf4-a4f0-554f86c68c0b",
+         "be224a21-67ae-46bb-9b05-e7e76ffb3e8f",
+         "98141a1d-78b1-4841-90c5-48957c3681a6",
+         "92d88c72-67d6-4bfb-bebb-2f226b8874d0",
+         "23411e31-fb3d-4796-b2b5-0a9894036fe1",
+         "cdb9f4f2-bfd8-4c75-825e-6dfabb2536fa",
+         "82ea24e5-c4f0-4913-92ed-39170b56a571",
+         "a6268a27-9096-409f-a557-4e2d41456f0c",
+         "07d48447-c9ee-40d7-b6f1-1cc96d412d43",
+         "c4d7a2e5-e6d9-46f7-8899-5785fb2272a8"
+        ]
+       },
+       "da13729d-ecf4-4c5c-921b-0b8591c1bc21": {
+        "title": "Systemintegration",
+        "id": "da13729d-ecf4-4c5c-921b-0b8591c1bc21",
+        "references": [
+         "18e8d698-e02d-4beb-9304-b96ff9b29110",
+         "08561ba1-e36b-4fb4-9a85-2c416cdd86c3",
+         "56c108ba-d8d3-4d72-ab35-2cdc5a37b10c",
+         "01a0d3d6-8769-4e8f-9d54-d09409f213e4",
+         "ac4340ad-2fbf-474f-b539-b443ef74b486",
+         "03263f31-f861-45d2-aeb2-0f21a534b4fd",
+         "a12646a9-2f27-45f1-939a-c75dbd5eb73e",
+         "676d9532-c0d7-484a-b4d1-08153f46a9ea",
+         "ad44d000-b3d2-4506-90a9-9585ea776adb",
+         "1085ab7b-1a24-4036-881d-02a0b667c45c",
+         "c0c2307e-525d-4e28-8f15-770b989377f4",
+         "07073435-ede5-4f80-bd64-b7765c27e50d",
+         "d438c33c-90f8-4884-a21b-baeaf5a03766",
+         "7c0c1a6c-ab09-4574-b981-57e325c2196e",
+         "6b755559-0644-4194-9919-8fb5b025f681",
+         "be224a21-67ae-46bb-9b05-e7e76ffb3e8f",
+         "98141a1d-78b1-4841-90c5-48957c3681a6"
+        ]
+       },
+       "acd8374c-ab40-465d-872b-ced689d72011": {
+        "title": "Størrelse og rumtilpasning",
+        "id": "acd8374c-ab40-465d-872b-ced689d72011",
+        "references": [
+         "9b5d6fe2-7716-4481-ba7c-de27d280646b",
+         "56c108ba-d8d3-4d72-ab35-2cdc5a37b10c",
+         "3a3f76f3-ce1e-406c-a848-f2f75739f0eb",
+         "d40d5bb2-2d00-4d31-8508-ae783b8f61a5",
+         "34367e5c-0cb1-4e8d-a9ce-34cd65a22d16",
+         "b0d068be-99f8-4135-8586-f92f0188476d",
+         "433a9a2d-2400-41bc-b6fd-d1ef770d3206",
+         "85b7de14-0a00-4317-b381-e26c5edf9027",
+         "929f722a-9660-4bf4-a4f0-554f86c68c0b",
+         "c4d7a2e5-e6d9-46f7-8899-5785fb2272a8"
+        ]
+       },
+       "9f9a0c3b-42d7-48af-b0f3-0ed240dd50bd": {
+        "title": "Opsætning og justering",
+        "id": "9f9a0c3b-42d7-48af-b0f3-0ed240dd50bd",
+        "references": [
+         "037025c1-1dee-41d1-9daa-8c592f1702bf",
+         "dba6de97-15cf-4f8d-aafb-b9a280b3cbc0",
+         "366a84ca-200f-4278-90f3-03040a5d5942",
+         "77c5eedb-dfac-49fc-8a28-45753dd65467",
+         "d438c33c-90f8-4884-a21b-baeaf5a03766",
+         "5a289d7f-902d-471e-b35a-3f771fb91603",
+         "23411e31-fb3d-4796-b2b5-0a9894036fe1",
+         "82ea24e5-c4f0-4913-92ed-39170b56a571"
+        ]
+       }
+      },
+      "rating": 4.76219512195122,
+      "count": 164,
+      "reviewCount": 82,
+      "distribution": {
+       "1": 2,
+       "2": 1,
+       "3": 3,
+       "4": 22,
+       "5": 136
+      }
+     }
     },
     {
      "brand": "Bowers & Wilkins",
@@ -198,7 +353,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 76,
+        "availableQuantity": 72,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.398,-",
@@ -254,7 +409,177 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "BW607S3"
+     "parentProductCode": "BW607S3",
+     "reviews": {
+      "summary": "BW607S3 leverer bemærkelsesværdigt klar, detaljeret og dynamisk lyd fra det kompakte kabinet med et engagerende, rummeligt lydbillede og en overbevisende tonal balance. Bassen er stram og ofte overraskende dyb for størrelsen, men en subwoofer er en fordel, hvis der ønskes dyb bas i hele rummet. Den livlige diskant kan lejlighedsvis virke lidt fremtrædende, men korrekt forstærker, placering og equalizer kan skabe en varm, slagkraftig og meget medrivende lyd.",
+      "headlines": {
+       "clear, detailed and spacious sound": {
+        "sentimentAnalysis": "Lytterne roser den rene, detaljerede, dynamiske og rummelige gengivelse, som gør musikken levende og engagerende.",
+        "simpleTitle": "Klar, detaljeret og rummelig lyd",
+        "bias": "positive",
+        "key": "clear-detailed-sound",
+        "groupId": "f62af95e-bf1a-4ad0-8fd8-e1b036ff8bfb"
+       },
+       "a subwoofer adds essential depth": {
+        "sentimentAnalysis": "Det kompakte kabinet kan ikke gengive den dybeste bas fuldt ud for alle lyttere, så en subwoofer er nyttig for mere fylde i bunden.",
+        "simpleTitle": "En subwoofer tilføjer nødvendig dybde",
+        "bias": "negative",
+        "key": "subwoofer-benefit",
+        "groupId": "7954474c-5f73-4b97-b6bd-b33f1bb175bf"
+       },
+       "surprisingly deep bass for the size": {
+        "sentimentAnalysis": "Flere anmeldelser oplever bassen som usædvanligt fyldig, dyb og slagkraftig for en kompakt reolhøjttaler.",
+        "simpleTitle": "Overraskende dyb bas i størrelsen",
+        "bias": "positive",
+        "key": "deep-bass",
+        "groupId": "7954474c-5f73-4b97-b6bd-b33f1bb175bf"
+       },
+       "placement and system matching matter": {
+        "sentimentAnalysis": "Højttalerne reagerer tydeligt på forstærkermatching, equalizer, tilspilning og omhyggelig placering; korrekt opsætning forbedrer balance og rumfornemmelse.",
+        "simpleTitle": "Placering og systemmatching er vigtig",
+        "bias": "meh",
+        "key": "placement-matching",
+        "groupId": "341fd9b1-1f13-457a-82b6-d9408007ecdd"
+       },
+       "treble can sound forward or fatiguing": {
+        "sentimentAnalysis": "En mindre del af anmeldelserne oplever diskanten som lidt fremhævet, hvilket lejlighedsvis kan virke trættende eller kræve equalizer og omhyggelig matching.",
+        "simpleTitle": "Diskanten kan virke fremtrædende eller trættende",
+        "bias": "negative",
+        "key": "forward-treble",
+        "groupId": "f62af95e-bf1a-4ad0-8fd8-e1b036ff8bfb"
+       }
+      },
+      "grouping": {
+       "f62af95e-bf1a-4ad0-8fd8-e1b036ff8bfb": {
+        "title": "Lydkvalitet",
+        "id": "f62af95e-bf1a-4ad0-8fd8-e1b036ff8bfb",
+        "references": [
+         "d968cc55-97c3-4ec6-a18c-b24c6ccb1ba4",
+         "36197a41-e921-44ff-85fc-5b6682db2be9",
+         "ddad2b0a-2576-4c35-be8c-d37c24272f35",
+         "f0c82ba3-8bed-422b-9f02-692f32387590",
+         "fbcf3166-36f4-4b94-b98e-83a1a3c2f5fb",
+         "e71475ce-61e6-4a72-b7fa-189b44443d24",
+         "acc1cb72-946d-4efb-aa5d-c5e22bf018a2",
+         "ffca61b6-3c32-43f2-ac20-1a0d27766e38",
+         "70bcc1e7-b54a-4f58-9f18-d35c558eccd5",
+         "213e89e7-bb94-439e-a1b1-4c5bf545f4d9",
+         "bf688c01-cc20-4d8b-8a3f-f298328d1a3d",
+         "a7f85af7-b0af-4be7-b279-0f545b95e486",
+         "738e54a1-bb94-42d1-b317-6d2f43405a92",
+         "33e49923-bfed-40bf-9aa9-5f5a6bb390e1",
+         "00569076-d87d-49df-8a2e-97629a253c8b",
+         "01e99484-901c-46a0-b962-312c8c081f24",
+         "06f90ca1-1d65-4b06-a5ab-e97263b83796",
+         "335ef1b8-3268-484b-9e6e-b29f97578b76",
+         "1b1c2956-442d-41d3-a836-9fd32897b6a2",
+         "8bfd1eed-1769-4253-9fe7-5b3a09153f74",
+         "05a00d5d-826f-48f0-b1ce-7b27dc9b62a7",
+         "e842ac91-3fc3-4eb2-b6df-2f2156b4d872",
+         "257f4d8d-ebd8-4295-8eda-477d9a76b99e",
+         "88a3fcd8-27e3-443e-b3b2-37f9dc515f90",
+         "02288cb6-9f26-4e4b-9d17-7ed8aad2c31c",
+         "999863a4-316f-424f-8899-12cdaacb2523",
+         "bcd67e03-16f1-4851-83cf-03d8c5634950",
+         "d1b60f20-4660-45dd-ad5f-2ec19263a5c0",
+         "845d7130-0eaf-4a56-8a94-553e923b128c",
+         "1ef92f26-1548-4103-911c-7bac56135dec",
+         "e183c2cf-3586-4425-89cc-e66ea0f24566",
+         "c9bf04dd-3419-4c7e-9099-cedb1117d93d",
+         "3a47f17b-6459-424c-8101-077fb9c8bffb",
+         "2cb2688e-0277-45c5-8633-f1b3943c9294",
+         "6fd961e5-1fe9-46cb-ad56-35c19f1d6531",
+         "b46ddfaa-4b8c-4692-88f4-bc591e0f4d1f",
+         "1446d85b-e72b-439a-b74f-8c1c5e9a65d8",
+         "9e7292cb-d357-488f-930f-9ec1524b7c19",
+         "a05c1b21-1f2d-4233-a613-3d9d6afe16ec",
+         "f1ccfb5d-4adb-4f2b-8cc8-a64b334b432b",
+         "1502c82c-2510-479f-a1ff-7f6ab059fcfc",
+         "bc02cd0b-3404-4f81-8bc7-81d0e20cfa0d",
+         "7c5c64f1-80a9-4f22-a6c3-5bbbc3324822",
+         "69ad3a29-cb0c-4262-95d7-54aab1191290",
+         "88690ac6-2661-4017-95af-44937b79496f",
+         "3f8f1b08-814e-42c7-983d-47b45fc71b9e",
+         "a96ddd17-fa16-4569-9bb2-830b11326b39",
+         "824cd10a-a7b4-4529-998f-90c1c44dde8a",
+         "696d3847-561d-4f2b-96ba-5342cdfc95a5",
+         "b78a4eaf-75e7-454e-ab54-71212fafc39f",
+         "fab02c92-bffd-4f1f-a11a-dc9e3356c0e3",
+         "e38b4c80-6f18-4e57-9837-3ad828789faf",
+         "ec91e7ff-de85-4abb-b0c2-0256e1b3949a",
+         "77d29703-22b2-4c83-953f-2ced84f4bf2a",
+         "19fd679b-708a-4ee3-b9b6-a7961308a3b5",
+         "076e1afe-d043-4581-96bc-b630a58af764",
+         "1cbe49b6-682c-4c3a-b186-c75ac687d765",
+         "6ada340f-6dd5-4634-90ad-099c1794abae",
+         "5988feb2-d139-45a2-8110-67f51e9a612e",
+         "6625375e-55fd-48b6-a435-20a0db72b25b",
+         "e698ef31-ec00-42a1-befb-1c0c0de6f50b",
+         "2512d9eb-e8f3-45d1-b6ae-fbe303f8bc3f",
+         "e243d2aa-1cce-4721-935b-9883e6b98288",
+         "fafbedd9-739a-425a-baf0-be5003670377",
+         "aa36c232-d623-466d-8f53-016f7ff75c8a",
+         "91c69cc6-bd04-4c8c-a28e-f5deebe4ad87",
+         "8992f48d-f9b1-4c50-b406-ff801e71ee15",
+         "9f24b867-9b99-4a30-bae2-53451e543e13"
+        ]
+       },
+       "7954474c-5f73-4b97-b6bd-b33f1bb175bf": {
+        "title": "Bas",
+        "id": "7954474c-5f73-4b97-b6bd-b33f1bb175bf",
+        "references": [
+         "d968cc55-97c3-4ec6-a18c-b24c6ccb1ba4",
+         "f0c82ba3-8bed-422b-9f02-692f32387590",
+         "e71475ce-61e6-4a72-b7fa-189b44443d24",
+         "acc1cb72-946d-4efb-aa5d-c5e22bf018a2",
+         "b7242497-aa12-40dd-9d75-6c2637262c77",
+         "70bcc1e7-b54a-4f58-9f18-d35c558eccd5",
+         "06f90ca1-1d65-4b06-a5ab-e97263b83796",
+         "074d6bb3-a7d1-4d63-a871-8595a2e55578",
+         "999863a4-316f-424f-8899-12cdaacb2523",
+         "1ef92f26-1548-4103-911c-7bac56135dec",
+         "6fd961e5-1fe9-46cb-ad56-35c19f1d6531",
+         "a05c1b21-1f2d-4233-a613-3d9d6afe16ec",
+         "1502c82c-2510-479f-a1ff-7f6ab059fcfc",
+         "bc02cd0b-3404-4f81-8bc7-81d0e20cfa0d",
+         "5e20efea-8032-4946-8042-ed8aef4f4ffd",
+         "3f8f1b08-814e-42c7-983d-47b45fc71b9e",
+         "e38b4c80-6f18-4e57-9837-3ad828789faf",
+         "2512d9eb-e8f3-45d1-b6ae-fbe303f8bc3f",
+         "fafbedd9-739a-425a-baf0-be5003670377",
+         "91c69cc6-bd04-4c8c-a28e-f5deebe4ad87",
+         "8992f48d-f9b1-4c50-b406-ff801e71ee15"
+        ]
+       },
+       "341fd9b1-1f13-457a-82b6-d9408007ecdd": {
+        "title": "Opsætning og placering",
+        "id": "341fd9b1-1f13-457a-82b6-d9408007ecdd",
+        "references": [
+         "36197a41-e921-44ff-85fc-5b6682db2be9",
+         "01e99484-901c-46a0-b962-312c8c081f24",
+         "70bcc1e7-b54a-4f58-9f18-d35c558eccd5",
+         "e842ac91-3fc3-4eb2-b6df-2f2156b4d872",
+         "257f4d8d-ebd8-4295-8eda-477d9a76b99e",
+         "a96ddd17-fa16-4569-9bb2-830b11326b39",
+         "1cbe49b6-682c-4c3a-b186-c75ac687d765",
+         "e698ef31-ec00-42a1-befb-1c0c0de6f50b",
+         "8992f48d-f9b1-4c50-b406-ff801e71ee15",
+         "aa36c232-d623-466d-8f53-016f7ff75c8a",
+         "9f24b867-9b99-4a30-bae2-53451e543e13"
+        ]
+       }
+      },
+      "rating": 4.83582089552239,
+      "count": 201,
+      "reviewCount": 91,
+      "distribution": {
+       "1": 2,
+       "2": 0,
+       "3": 3,
+       "4": 19,
+       "5": 177
+      }
+     }
     },
     {
      "brand": "Bowers & Wilkins",
@@ -322,7 +647,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 30,
+        "availableQuantity": 28,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "17.998,-",
@@ -400,7 +725,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 6,
+        "availableQuantity": 5,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.199,-",

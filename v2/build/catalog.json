@@ -44,7 +44,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 71,
+   "all": 70,
    "bundles": 0
   },
   {
@@ -511,8 +511,8 @@
    "title": "TV",
    "parent": "/tv/",
    "website": true,
-   "products": 19,
-   "all": 29,
+   "products": 18,
+   "all": 28,
    "bundles": 0
   },
   {
@@ -952,7 +952,7 @@
     "da": "Minijack-kabel"
    },
    "cat": "/kabler/minijack-kabel/",
-   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin800/",
+   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin1,0/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -13579,7 +13579,7 @@
     "da": "Højtalerkabel"
    },
    "cat": "/kabler/hojtaler-kabel/",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -20350,7 +20350,7 @@
      "DALICDVOLUME6X"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BULOWBS15SB",
@@ -20397,7 +20397,7 @@
      "BULOWBS15S"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BULOWBS19BK",
@@ -20408,7 +20408,7 @@
     "da": "Gulvstander"
    },
    "cat": "/tilbehor/tv-tilbehor/",
-   "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19laobk/",
+   "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19sobk/",
    "kind": "mounting",
    "scope": "pricelist",
    "facets": {
@@ -20416,6 +20416,22 @@
     "axis": "colour"
    },
    "variants": [
+    {
+     "sku": "BULOWBS19SOBK",
+     "label": "Smoked Oak",
+     "price": 2995,
+     "colorKey": "Wood",
+     "ean": "5713003001916",
+     "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19sobk/",
+     "img": "hk:aa8eb662-f61a-4c7d-8379-5b3bcde69c89",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "8,6",
+      "Vægt emballage (kg)": "8,6",
+      "Mål (emballage)": "59,5 x 15,5 x 71 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "76,5 x 71,5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
     {
      "sku": "BULOWBS19LAOBK",
      "label": "Lacquered Oak",
@@ -20442,7 +20458,7 @@
      "BULOWBS19WH"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BULOWBS19WH",
@@ -20524,7 +20540,7 @@
      "BULOWBS16C"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW603S3",
@@ -20653,7 +20669,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW606S3",
@@ -20777,7 +20793,7 @@
      "ARGSA1MK2X"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW607S3",
@@ -20904,7 +20920,7 @@
      "ARGSA1MK2X"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW702S3",
@@ -21028,7 +21044,7 @@
      "NADC399"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW702S3SIGNATURE",
@@ -21135,7 +21151,7 @@
      "NADC700V2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW703S3",
@@ -21256,7 +21272,7 @@
      "DENPMA1700NE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW704S3",
@@ -21383,7 +21399,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW705S3",
@@ -21529,7 +21545,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW705S3SIGNATURE",
@@ -21644,7 +21660,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW706S3",
@@ -21781,7 +21797,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW707S3",
@@ -21915,7 +21931,7 @@
      "BLSN230"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW707S3PRE",
@@ -22011,7 +22027,7 @@
      "ARGSA1MK2X"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW801D4",
@@ -22095,7 +22111,7 @@
      "NADM23V2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW801D4SIGNATURE",
@@ -22178,7 +22194,7 @@
      "NADM23V2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW801D5",
@@ -22320,7 +22336,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW802D4",
@@ -22405,7 +22421,7 @@
      "LYNGMP40H21"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW802D5",
@@ -22546,7 +22562,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW803D5",
@@ -22688,7 +22704,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW804D5",
@@ -22831,7 +22847,7 @@
      "HEGELH200"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW805D4",
@@ -22912,7 +22928,7 @@
      "DENPMA3000NE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW805D4SIGNATURE",
@@ -23011,7 +23027,7 @@
      "DENPMA3000NE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BW805D5",
@@ -23149,7 +23165,7 @@
      "BWHTM82D5"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWAM1",
@@ -23232,7 +23248,7 @@
      "NADCIPA4-60"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWASW608M",
@@ -23327,7 +23343,7 @@
      "DALISONIK7"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWASW610M",
@@ -23429,7 +23445,7 @@
      "DALIOPTICON8MK2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWBB6CX",
@@ -23479,7 +23495,6 @@
     ],
     "rec": [
      "BWCCM362",
-     "BWCCM382",
      "BWCCM662",
      "BWCCM663",
      "BWCCM663SR",
@@ -23491,10 +23506,11 @@
      "DALIPHANTOME60",
      "DALIPHANTOME60S",
      "DALIPHANTOME60WR",
-     "DALIPHANTOMK80"
+     "DALIPHANTOMK80",
+     "BWCCM382"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWBB6WX",
@@ -23540,7 +23556,7 @@
      "DALIPHANTOMH60"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWBBCWM8.3X",
@@ -23580,7 +23596,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWBBCWM8.5X",
@@ -23620,7 +23636,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWBBLCR7X",
@@ -23662,7 +23678,7 @@
      "BWCWM7.4S2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM362",
@@ -23738,7 +23754,7 @@
      "DENAVRX1800H"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM382",
@@ -23813,7 +23829,7 @@
      "DENAVRX1800H"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM632",
@@ -23887,7 +23903,7 @@
      "BWASW608M"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM662",
@@ -23969,7 +23985,7 @@
      "NADCI8-120DSP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM663",
@@ -24051,7 +24067,7 @@
      "SONAMP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM663RD",
@@ -24124,7 +24140,7 @@
      "MARAMODELM4"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM663SR",
@@ -24197,7 +24213,7 @@
      "NADCI16-60DSP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM664",
@@ -24277,7 +24293,7 @@
      "SONAMP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM664SR",
@@ -24351,7 +24367,7 @@
      "SONAMP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM665",
@@ -24427,7 +24443,7 @@
      "SONAMP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM682",
@@ -24510,7 +24526,7 @@
      "NADCI16-60DSP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM683",
@@ -24591,7 +24607,7 @@
      "NADCI16-60DSP"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BWCCM684",
@@ -33726,7 +33742,7 @@
     "da": "Væghøjtaler"
    },
    "cat": "/hojtalere/vaeghojtaler/",
-   "url": "/dali-oberon-on-wall-vaeghoejtaler/dalioberononwallloa/",
+   "url": "/dali-oberon-on-wall-vaeghoejtaler/dalioberononwallbk/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33735,15 +33751,6 @@
     "axis": "colour"
    },
    "variants": [
-    {
-     "sku": "DALIOBERONONWALLLOA",
-     "label": "Lys eg",
-     "price": 3498,
-     "was": 4598,
-     "colorKey": "Wood",
-     "url": "/dali-oberon-on-wall-vaeghoejtaler/dalioberononwallloa/",
-     "img": "hk:70891e55-9ce6-4a80-a8c8-3177c25ca468"
-    },
     {
      "sku": "DALIOBERONONWALLBK",
      "label": "Sort ask",
@@ -81389,7 +81396,7 @@
     {
      "sku": "SAMVGSCFH75SGM",
      "label": "75\" Sand Gold",
-     "price": 799,
+     "price": 1499,
      "colorKey": "Beige",
      "ean": "8806099104665",
      "url": "/samsung-the-frame-2026---frame-tv-ramme/samvgscfh75sgm/",
@@ -81986,7 +81993,7 @@
     "da": "USB-kabel"
    },
    "cat": "/kabler/digital-kabel/",
-   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
+   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -87761,106 +87768,6 @@
      "BLSP431",
      "BLSP530",
      "KEFLSX2"
-    ]
-   },
-   "read": "2026-11-19"
-  },
-  {
-   "sku": "SONYKXR9B",
-   "brand": "Sony",
-   "model": "Bravia 9",
-   "type": {
-    "key": "MiniLED",
-    "da": "Mini-LED TV"
-   },
-   "cat": "/tv/tv/",
-   "url": "/sony-bravia-9-mini-led-tv/sonyk65xr9p/",
-   "kind": "display",
-   "scope": "diagram",
-   "facets": {
-    "tech": "Mini LED",
-    "axis": "size"
-   },
-   "variants": [
-    {
-     "sku": "SONYK65XR9P",
-     "label": "65\"",
-     "price": 9999,
-     "was": 24999,
-     "colorKey": "Black",
-     "ean": "4548736166066",
-     "url": "/sony-bravia-9-mini-led-tv/sonyk65xr9p/",
-     "img": "hk:782a8045-a56f-4ac3-8206-783361fedcdd",
-     "stock": "warehouseInStock",
-     "specs": {
-      "HDMI": "2.1",
-      "Antal HDMI 2.1 Indgange": "4x",
-      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
-      "HDMI ARC/eARC": "eARC",
-      "Antal USB-porte": "2x",
-      "DVB-tuners": "DVB-T (x2), DVB-S (x2), DVB-C",
-      "HDCP": "2.3",
-      "Vægt (kg)": "25",
-      "Vægt emballage (kg)": "33",
-      "Skærmstørrelse": "65\"",
-      "VESA": "300x300",
-      "Vægt inkl. bordstativ, kg": "34,8",
-      "Mål inkl. stander, cm (BxHxD)": "144,3x90,8x34,9",
-      "Vægt ekskl. bordstativ, kg": "32,4",
-      "Mål ekskl. stander, cm (BxHxD)": "144,3x83,5x4,8",
-      "Mål (emballage)": "19,7 x 100,4 x 157 cm (bredde x højde x dybde)",
-      "EPREL Code": "2053964",
-      "Energy Efficiency": "E",
-      "Max strømforbrug (watt)": "366",
-      "Standby strømforbrug (watt)": "0,5",
-      "Styresystem": "Android",
-      "USB Recording": "Ja",
-      "Elektronisk Programguide (EPG)\r\n": "Ja",
-      "Vægbeslag inkluderet": "Nej",
-      "HDMI-kabel inkluderet": "Nej",
-      "Fjernbetjening inkluderet": "Ja",
-      "Fjernbetjening type": "IR",
-      "Bordstander inkluderet": "Ja",
-      "Gulvstander inkluderet": "Nej",
-      "Opløsning": "4K Ultra HD",
-      "Skærmteknologi": "Mini LED",
-      "HDR-formater": "Dolby Vision, HDR10, HLG",
-      "Skærmopdatering": "120 Hz",
-      "Billedprocessor": "XR Processor",
-      "Game mode": "Ja",
-      "Bluetooth": "Ja (5.3)",
-      "Understøttede lydformater": "DTS, Dolby Atmos"
-     }
-    }
-   ],
-   "specs": {},
-   "rel": {
-    "acc": [
-     "ESSCL1HDMIX",
-     "AQPEARL48HDMI",
-     "AQFOREST48HDMI",
-     "AQCINN48HDMI",
-     "ESSCL1OPTX",
-     "ESSCL1HDMI8KX"
-    ],
-    "alt": [
-     "SONYKXR77A",
-     "SONYKXR82B",
-     "SONYKXR8B",
-     "SONYKXR5B"
-    ],
-    "rec": [
-     "SONYUBPX700KBX",
-     "DALIKATCHONE",
-     "ARGFORTEA55WIFIX",
-     "DENRCDN12DAB",
-     "BW606S3",
-     "DENPMA1700NE",
-     "DALIOPTICON8MK2",
-     "NADC399",
-     "BW603S3",
-     "HEGELH150",
-     "DALIRUBIKORE6"
     ]
    },
    "read": "2026-11-19"
