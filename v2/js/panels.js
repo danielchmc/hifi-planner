@@ -345,13 +345,58 @@
     const q = h('input', { type: 'search', placeholder: t('Search cables…', 'Søg kabler…'), oninput: draw, autofocus: true });
     const list = h('.plist.tall');
     let showAll = false;
-    const pick = (id) => { c.cable = id; store.commit(); close(); };
+    // the chosen cable, with its length: lv = the website length (a cable without its own card for that length), m = metres for
+    // cable sold by the metre. The last length used is remembered and pre-selected next time.
+    const pick = (id, o) => { c.cable = id; delete c.lv; delete c.m; if (o && o.lv) c.lv = o.lv; if (o && o.m) c.m = o.m; if (o && o.len) LS.set('cableLen', o.len); store.commit(); close(); };
+    const isPerMetre = (p) => (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()));
+    const lenIn = (s) => { const m = /(\d+(?:[.,]\d+)?)\s?m$/i.exec(String(s || '').trim()); return m ? parseFloat(m[1].replace(',', '.')) : 0; };
+    const fmtM = (m) => String(m).replace('.', ',') + ' m';
+    // one row per cable: the cards of one website cable (one per length) and its website lengths together
+    const groupsOf = (cables) => {
+      const g = new Map();
+      cables.forEach((p) => { const k = p.site ? 'S' + String(p.site).toUpperCase() : 'I' + p.id; (g.get(k) || g.set(k, []).get(k)).push(p); });
+      return [...g.values()].map((members) => {
+        const rep = members.find((p) => !p.web && p.id === c.cable) || members.find((p) => !p.web) || members[0];
+        if (isPerMetre(rep)) return { rep, members, metre: true, min: rep.price || 0 };
+        const lens = (members.find((p) => p.lens) || {}).lens || [];
+        let opts = lens.map((l) => ({ m: l.m, label: l.label, price: l.price, id: l.id || rep.id, lv: l.id ? null : l.sku }));
+        members.forEach((p) => { const m = lenIn(p.name); if ((m || !opts.length) && !opts.some((o) => o.id === p.id && !o.lv) && !(m && opts.some((o) => o.m === m))) opts.push({ m, label: m ? fmtM(m) : '', price: p.price || 0, id: p.id, lv: null }); });
+        opts = opts.sort((x, y) => x.m - y.m || x.price - y.price);
+        return { rep, members, opts, min: Math.min(...opts.map((o) => o.price || Infinity)) };
+      });
+    };
+    function groupRow(G) {
+      const rep = G.rep, e = P.cableEnds(rep) || [], mine = G.members.some((p) => p.id === c.cable);
+      const r = productRow(rep, h('span.tagline', null, e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
+      const nm = r.querySelector('.pname'); if (nm) nm.textContent = C().stripLen(rep.name) || rep.name;
+      const sub = r.querySelector('.psub'); if (sub) sub.textContent = rep.brand + ' · ' + (G.metre ? HP.money(rep.price) + ' / m' : (G.opts.length > 1 ? t('from ', 'fra ') : '') + HP.money(G.min));
+      if (mine) r.classList.add('on');
+      const box = h('.lens');
+      if (G.metre) {
+        const last = +LS.get('cableLen', 0);
+        const inp = h('input', { type: 'number', min: 0.5, step: 0.5, value: mine && c.m ? c.m : last || 2, onclick: (ev) => ev.stopPropagation(), oninput: () => tot.textContent = '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price) });
+        const tot = h('span.muted', null, '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price));
+        const go = (ev) => { if (ev) ev.stopPropagation(); const m = Math.max(0.5, Math.round((+inp.value || 0) * 2) / 2); pick(rep.id, { m, len: m }); };
+        inp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') go(ev); });
+        box.append(h('span.lab', null, t('Metres', 'Meter')), inp, tot, h('button.btn.sm', { onclick: go }, t('Choose', 'Vælg')));
+        r.onclick = () => go();
+      } else {
+        const last = +LS.get('cableLen', 0);
+        const cur = mine ? G.opts.find((o) => o.id === c.cable && (o.lv || null) === (c.lv || null)) : null;
+        const pre = cur || (last && G.opts.find((o) => o.m >= last)) || G.opts.find((o) => o.m >= 1) || G.opts[0];
+        if (G.opts.length > 1 || (G.opts[0] && G.opts[0].m)) G.opts.forEach((o) => box.append(h('button.len' + (o === pre ? '.on' : ''), { title: HP.money(o.price), onclick: (ev) => { ev.stopPropagation(); pick(o.id, { lv: o.lv, len: o.m }); } },
+          h('b', null, o.label || '—'), h('span', null, HP.money(o.price)))));
+        r.onclick = () => pick(pre.id, { lv: pre.lv, len: pre.m });
+      }
+      return h('.cablegroup', null, r, box.childNodes.length ? box : null);
+    }
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
-      const all = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w)))).map((p) => ({ p, fit: P.cableFit(p, a, b) })); // by the cable's two ends
+      const hits = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w))));
+      const all = groupsOf(hits).map((G) => Object.assign(G, { fit: P.cableFit(G.rep, a, b) })); // by the cable's two ends
       list.textContent = '';
       const sec = (title, items) => { if (!items.length) return; list.append(h('.sec', null, title + ' (' + items.length + ')'));
-        items.sort((x, y) => x.p.price - y.p.price).forEach(({ p }) => { const e = P.cableEnds(p) || []; const r = productRow(p, h('span.tagline', null, e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : '')); if (c.cable === p.id) r.classList.add('on'); r.onclick = () => pick(p.id); list.append(r); }); };
+        items.sort((x, y) => x.min - y.min).forEach((G) => list.append(groupRow(G))); };
       const good = all.filter((x) => x.fit === 2), maybe = all.filter((x) => x.fit === 1), other = all.filter((x) => x.fit === 0);
       sec(t('Matching cables', 'Passende kabler'), good); sec(t('May fit', 'Passer muligvis'), maybe);
       if (showAll || words.length || !(good.length + maybe.length)) sec(t('Other cables', 'Andre kabler'), other);

@@ -270,6 +270,19 @@ if (fs.existsSync(ownFile)) {
     if (w.facets.bt) p.bt = true; if (w.facets.wifi) p.wifi = true;
     next.push(enrich(p, w)); added++;
   }
+  // cable lengths: a cable the website sells in fixed lengths gets them all (lens), so the cable picker can offer one row with a
+  // length button per length. A length that has its own card in HiFi Planner (a per-length card, link.v) points at that card (id).
+  const lenOf = (v) => { const t = (v.specs || {})['Kabellængde (m)'] || ((/([\d.,]+)\s*(m\b|meter)/i.exec(v.label || '') || [])[1]); const n = parseFloat(String(t || '').replace(',', '.')); return n > 0 ? n : 0; };
+  const cardOfVariant = new Map(); own.forEach((o) => { if (o.link && o.link.v) cardOfVariant.set(U(o.link.site) + '|' + U(o.link.v), o.id); });
+  RT.lens = 0;
+  next.forEach((p) => {
+    if (!p.cable || !p.site) return;
+    const w = webBySku.get(U(p.site));
+    if (!w || w.facets.perMetre) return;
+    const lens = w.variants.map((v) => { const l = { sku: v.sku, m: lenOf(v), label: '', price: v.price }; l.label = String(l.m).replace('.', ',') + ' m'; if (v.was) l.was = v.was; if (v.url) l.url = v.url; const id = cardOfVariant.get(U(p.site) + '|' + v.sku); if (id) l.id = id; return l; })
+      .filter((l) => l.m > 0 && l.price > 0).sort((a, b) => a.m - b.m);
+    if (new Set(lens.map((l) => l.m)).size >= 2) { p.lens = lens; RT.lens++; }
+  });
   const used = {}; next.forEach((p) => p.cats.forEach((c) => (used[c] = (used[c] || 0) + 1)));
   const secRank = (id) => { const i = SECTION_ORDER.indexOf(chain(id)[0]); return i < 0 ? 99 : i; };
   const tree = [...cats.values()].filter((c) => used[c.id]).map((c) => ({ id: c.id, title: c.title, en: EN[c.id] || c.en || c.title, parent: c.parent && cats.has(c.parent) ? c.parent : null, n: used[c.id] }))
@@ -312,6 +325,7 @@ if (fs.existsSync(ownFile)) {
   P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
   P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
   if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
+  P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
   if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');
   if (RT.changes) {
     P('Since the previous build: ' + RT.changes.prices.length + ' price changes, ' + RT.changes.added.length + ' products added, ' + RT.changes.removed.length + ' removed.', '');

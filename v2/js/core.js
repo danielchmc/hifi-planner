@@ -67,7 +67,8 @@
     });
     return best;
   };
-  HP.variantOf = (p, item) => (item && item.v && p && (p.vars || []).find((x) => x.sku === item.v)) || null;
+  // a colour (item.v) or, for a cable on a wire, a length (item.len): price, label ('3 m') and page of that variant
+  HP.variantOf = (p, item) => (item && item.v && p && (p.vars || []).find((x) => x.sku === item.v)) || (item && item.len && p && (p.lens || []).find((x) => x.sku === item.len)) || null;
   HP.imagesOf = (p, item) => { const imgs = ((p && p.img) || []).slice(), v = HP.variantOf(p, item); if (v && v.img) imgs[0] = v.img; return imgs.filter(Boolean); };
   HP.priceOf = (p, item) => { const v = HP.variantOf(p, item); return v ? { price: v.price, was: v.was || 0, label: v.label } : { price: p.price || 0, was: p.was > p.price ? p.was : 0, label: '' }; };
   HP.esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -327,7 +328,7 @@
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
       items.map((i) => i.kind === 'product' ? (i.np ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, 1] : i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
-      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift) r.push(c.cable || 0); if (c.shift) r.push(Math.round(c.shift / 5)); return r; }),
+      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift || c.lv || c.m) r.push(c.cable || 0); if (c.shift || c.lv || c.m) r.push(Math.round((c.shift || 0) / 5)); if (c.lv || c.m) r.push(c.lv || 0, c.m || 0); return r; }), // [.., cable, shift, length SKU, metres]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4]];
   }
   function expand(a) {
@@ -338,7 +339,7 @@
       : r[0] === 5 ? { id: ids[n], kind: 'zone', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, name: r[5] }
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
-    const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5 }));
+    const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}) }));
     return Object.assign({ v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   HP.share = {

@@ -134,12 +134,24 @@
   const cardScale = () => store.doc.cardScale || 1;
   C.cardScale = cardScale;
 
+  // a wire's cable as shown on the wire and in its tooltip: the name with the chosen length or metres
+  const stripLen = (s) => String(s || '').replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '').trim();
+  C.cableName = (c, p) => {
+    if (!p) return '';
+    const l = c && c.lv && (p.lens || []).find((x) => x.sku === c.lv);
+    if (l) return stripLen(p.name) + ' ' + l.label;
+    if (c && c.m) return stripLen(p.name) + ' ' + String(c.m).replace('.', ',') + ' m';
+    return p.name;
+  };
+  C.cablePrice = (c, p) => (c && c.m ? Math.ceil(c.m) * (p.price || 0) : HP.priceOf(p, c && c.lv ? { len: c.lv } : null).price);
+  C.stripLen = stripLen;
+
   function priceRows() {
     const d = store.doc, rows = new Map();
     const add = (p, cable, it) => {
       if (!p) return;
       const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || '');
-      const r = rows.get(key) || { name: p.brand + ' ' + p.name + (pr.label ? ' (' + pr.label + ')' : ''), url: HP.productUrl(p, it), price: pr.price, was: pr.was, qty: 0, cable };
+      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), price: pr.price, was: pr.was, qty: 0, cable };
       r.qty++; rows.set(key, r);
     };
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
@@ -151,7 +163,8 @@
       rows.forEach((r, key) => { if (key.startsWith(pid + '|')) have += r.qty; });
       for (let i = have; i < mc[pid]; i++) add(p, false, null);
     }
-    d.conns.forEach((c) => c.cable && add(cat.get(c.cable), true));
+    // a wire's cable: in the chosen length (lv), or by the metre (m metres, counted per started metre like cable runs)
+    d.conns.forEach((c) => { const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true); } else add(p, true, c.lv ? { len: c.lv } : null); });
     cableRows().forEach((r) => { if (r.k && d.sc) for (let i = 0; i < r.qty; i++) add(cat.get(r.k), true); });
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
     return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
@@ -346,8 +359,8 @@
       [[c.a, 'out'], [c.b, 'in']].forEach(([e, side]) => { const el = els.get(e.item), pe = el && el.querySelector('.port.' + side + '[data-key="' + e.key + '"]'); if (pe) pe.classList.add('on'); });
       if (info.cable || info.warn) {
         chipsEl.append(h('.chip.c-' + info.color + (info.warn ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
-          title: info.cable ? info.cable.brand + ' ' + info.cable.name + ' · ' + HP.money(info.cable.price) : t('Connector types do not match', 'Stiktyperne passer ikke sammen') },
-          info.warn && icon('warn', 11), info.cable ? info.cable.name.replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
+          title: info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : t('Connector types do not match', 'Stiktyperne passer ikke sammen') },
+          info.warn && icon('warn', 11), info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
       }
     });
   }
@@ -918,7 +931,7 @@
       const c = d.conns.find((q) => q.id === store.selConn);
       M.push({ head: t('Connection', 'Forbindelse') });
       add(t('Choose cable…', 'Vælg kabel…'), 'Enter', 'cable', () => HP.panels.cablePicker(store.selConn));
-      if (c && c.cable) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; store.commit(); });
+      if (c && c.cable) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; delete c.lv; delete c.m; store.commit(); });
       add(t('Straighten wire', 'Ret ledningen ud'), '', 'fit', () => { c.shift = 0; store.commit(); }, { disabled: !c || !c.shift });
       add(t('Delete connection', 'Slet forbindelse'), 'Del', 'trash', C.deleteSelection, { danger: true });
       M.push('sep');
@@ -1014,7 +1027,7 @@
       if (n.kind === 'run' && n.cable && !cat.get(n.cable)) n.cable = null;
       d.items.push(n);
     });
-    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0 }); });
+    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0, ...(c.cable && c.lv ? { lv: c.lv } : {}), ...(c.cable && c.m ? { m: c.m } : {}) }); });
     d.mk = (d.mk || []).concat((S.mk || []).filter((k) => !(d.mk || []).includes(k))); // keep the Shortcut's letters (A, B, C…) where possible
     normMarks(); store.sel = new Set(Object.values(map).filter((id) => store.item(id))); store.selConn = null; store.commit();
     if (exact) C.fit();

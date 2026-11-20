@@ -556,3 +556,16 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 .cable-ends { display: flex; align-items: flex-end; gap: 8px; margin: 4px 0 6px; }
 .cable-ends .field { flex: 1; } .cable-ends .arrow { padding-bottom: 7px; color: var(--muted); }
 @media (max-width: 700px) { .portrow { grid-template-columns: minmax(0, 1fr) 76px 92px 26px 26px 26px; } }
+
+/* ---------- v3.9: cable lengths in the cable picker ---------- */
+.cablegroup { border-bottom: 1px solid var(--line); }
+.cablegroup .prow { border-bottom: 0; }
+.cablegroup .lens { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding: 0 10px 8px 62px; }
+.lens button.len { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 3px 7px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; font: 10.5px var(--mono); }
+.lens button.len b { font: 600 11.5px var(--mono); }
+.lens button.len span { color: var(--muted); }
+.lens button.len:hover { border-color: var(--fg); }
+.lens button.len.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.lens .lab { font: 600 11px var(--mono); color: var(--muted); }
+.lens input { width: 70px; font: 600 12px var(--mono); padding: 3px 5px; }
+@media (pointer: coarse) { .lens button.len { padding: 6px 9px; } .lens input { width: 80px; font-size: 16px; } }
