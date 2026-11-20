@@ -91,14 +91,27 @@
     const d = store.doc, n = {}, S = (d.ms || 34) / 2;
     d.items.forEach((i) => { if (i.kind === 'mark') n[i.k] = (n[i.k] || 0) + 1; });
     const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k] || 0, price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
-    // a mark belongs to the first zone that contains its centre
-    const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', n: {}, total: 0 })), other = { name: null, n: {}, total: 0 };
+    // a mark, or a product card, belongs to the first room (zone) that contains its centre. Marks outside every room are listed as
+    // "Outside the rooms"; cards outside are not (they are usually a wiring diagram on another page). Within a room a product that is
+    // both marked and drawn as cards counts once (the larger number), as in the price list.
+    const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', m: {}, c: {} })), other = { name: null, m: {}, c: {} };
+    const zoneAt = (cx, cy) => zs.findIndex((z) => cx >= z.x && cx <= z.x + z.w && cy >= z.y && cy <= z.y + z.h);
     if (zs.length) d.items.forEach((i) => {
-      if (i.kind !== 'mark' || i.np || i.k[0] === '@') return;
-      const cx = i.x + S, cy = i.y + S, zi = zs.findIndex((z) => cx >= z.x && cx <= z.x + z.w && cy >= z.y && cy <= z.y + z.h), r = zi < 0 ? other : zr[zi], p = cat.get(i.k);
-      r.n[i.k] = (r.n[i.k] || 0) + 1; r.total += p ? p.price || 0 : 0;
+      if (i.np) return;
+      if (i.kind === 'mark' && i.k[0] !== '@') { const zi = zoneAt(i.x + S, i.y + S), r = zi < 0 ? other : zr[zi]; (r.m[i.k] = r.m[i.k] || []).push(null); }
+      else if (i.kind === 'product' && cat.get(i.pid)) { const g = measure(i) || { w: 0, h: 0 }, zi = zoneAt(i.x + g.w / 2, i.y + g.h / 2); if (zi >= 0) (zr[zi].c[i.pid] = zr[zi].c[i.pid] || []).push(i); }
     });
-    const zones = zr.concat(Object.keys(other.n).length ? [other] : []).map((r) => ({ name: r.name, parts: MK.filter((k) => r.n[k]).map((k) => r.n[k] + '× ' + letter(MK.indexOf(k))).join('   '), total: r.total }));
+    const zones = zr.concat(Object.keys(other.m).length ? [other] : []).map((r) => {
+      const ids = [...new Set(MK.filter((k) => r.m[k] || r.c[k]).concat(Object.keys(r.c).filter((k) => !MK.includes(k))))];
+      let total = 0;
+      const parts = ids.map((k) => {
+        const p = cat.get(k), cards = r.c[k] || [], qty = Math.max((r.m[k] || []).length, cards.length);
+        // cards carry their colour's price; extra marks beyond the cards are priced as the product
+        for (let j = 0; j < qty; j++) total += cards[j] ? HP.priceOf(p, cards[j]).price : p ? p.price || 0 : 0;
+        return qty + '× ' + (MK.includes(k) ? letter(MK.indexOf(k)) : p ? p.name : k);
+      });
+      return { name: r.name, parts: parts.join('   '), total };
+    });
     const cables = cableRows();
     return { products, generic: Object.keys(GENERIC).map((g) => '@' + g).filter((k) => n[k]).map((k) => ({ k, qty: n[k] })), zones, cables, sc: d.sc || 0,
       total: products.reduce((s, r) => s + r.price * r.qty, 0) + cables.reduce((s, r) => s + r.price, 0) };
@@ -209,7 +222,7 @@
     if (it.kind === 'prices') {
       const { list, total, saving } = priceRows();
       const pct = (r) => Math.round((1 - r.price / r.was) * 100);
-      // rooms drawn in CI mode: what each room gets from the floor plan, with a subtotal (cards and cables are not tied to a room)
+      // rooms drawn in CI mode: what each room gets (marks and product cards inside it), with a subtotal (cables are not tied to a room)
       const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
