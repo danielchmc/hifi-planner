@@ -266,6 +266,8 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 - AudioQuest Coffee: usba ↔ usbb
 - AudioQuest Coffee: usba ↔ usbb
 
+**Cable lengths**: 171 cables offer their website lengths in the cable picker.
+
 Stock pictures replaced by the website's photo (22): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53, Sonos Line in Adapter.
 
 Since the previous build: 0 price changes, 0 products added, 0 removed.

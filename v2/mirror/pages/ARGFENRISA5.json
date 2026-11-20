@@ -268,7 +268,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 507,
+     "availableQuantity": 501,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -382,7 +382,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 526,
+     "availableQuantity": 518,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -511,7 +511,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 436,
+     "availableQuantity": 620,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -633,12 +633,11 @@
      "productCode": "ARGFENRISA5WA"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 21. november",
+     "deliveryDate": "2026-11-21T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 5,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -767,7 +766,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 182,
+     "availableQuantity": 306,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -877,7 +876,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 349,
+     "availableQuantity": 341,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1261,14 +1260,14 @@
      ]
     }
    },
-   "rating": 4.69098712446352,
-   "count": 699,
+   "rating": 4.69,
+   "count": 700,
    "reviewCount": 329,
    "distribution": {
     "1": 9,
     "2": 5,
     "3": 26,
-    "4": 113,
+    "4": 114,
     "5": 546
    }
   },
