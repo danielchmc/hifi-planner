@@ -137,13 +137,13 @@
    "cats": {
     "Tilbehør > Højtaler tilbehør": 30
    },
-   "count": 34,
+   "count": 35,
    "bundles": 0,
-   "outlet": 4,
+   "outlet": 5,
    "products": 30,
    "inCatalogue": 0,
    "variantAxes": {
-    "colorOptions": 34
+    "colorOptions": 35
    },
    "mapped": null,
    "hifiPlanner": []
@@ -2509,6 +2509,25 @@
    },
    "cats": {
     "Kabler > Antennekabel & stik": 1
+   },
+   "count": 1,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "DAB-tuner",
+   "keys": {
+    "DabTuner": 1
+   },
+   "cats": {
+    "HiFi > DAB radio / FM / internet": 1
    },
    "count": 1,
    "bundles": 0,
