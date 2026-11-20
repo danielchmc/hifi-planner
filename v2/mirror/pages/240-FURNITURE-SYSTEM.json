@@ -104,6 +104,17 @@
   "bundle": {
    "name": "Clic 240 Furniture system Møbel med anlæg",
    "code": "240-FURNITURE-SYSTEM",
+   "ribbons": [
+    {
+     "text": "Spar 5%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
    "images": [],
    "lifestyleImages": [
     {
@@ -129,12 +140,15 @@
     }
    ],
    "priceDetails": {
-    "price": 56746,
-    "priceFormatted": "56.746,-",
+    "price": 53746,
+    "priceFormatted": "53.746,-",
+    "priceBefore": 56746,
+    "priceBeforeFormatted": "56.746,-",
+    "priceSavingsFormatted": "3.000,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 56746,
+    "unitPrice": 53746,
     "unitPriceBefore": 56746
    },
    "bundleProducts": [
@@ -161,8 +175,8 @@
         "availableQuantity": 44,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "17.999,-",
-       "priceRaw": 17999,
+       "priceFormatted": "14.999,-",
+       "priceRaw": 14999,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
