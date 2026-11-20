@@ -190,7 +190,10 @@
     cat.byId = {};
     cat.list.forEach((p) => {
       cat.byId[p.id] = p;
-      p._hay = [p.brand, p.name, p.sku, ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
+      // connectors from the strict list (old values such as 'coax', 'sub' or plain 'usb' are mapped; see js/ports.js)
+      if (HP.ports) ['in', 'out'].forEach((side) => (p[side] || []).forEach((x) => { x.conn = HP.ports.conn(x.conn, x, side); }));
+      if (HP.ports && p.cable) { const e = HP.ports.cableEnds(p); if (e) p._ends = e; }
+      p._hay = [p.brand, p.name, p.sku, ...(p._ends || []).map((c) => (HP.ports.CONNECTORS[c] || c) + ' ' + c), ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
         p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', p.ct || '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
     });
     const tb = (DATA.templates || []).filter((t) => !d.delTemplates.includes(t.id)).map((t) => d.templates[t.id] || t);
@@ -212,7 +215,7 @@
   cat.putTemplate = (t) => { cat.draft.templates[t.id] = t; cat.draft.delTemplates = cat.draft.delTemplates.filter((x) => x !== t.id); cat.saveDraft(); };
   cat.removeTemplate = (id) => { delete cat.draft.templates[id]; if ((DATA.templates || []).some((t) => t.id === id)) cat.draft.delTemplates.push(id); cat.saveDraft(); };
   cat.clearDraft = () => { cat.draft = emptyDraft(); cat.saveDraft(); };
-  cat.clean = (p) => { const c = Object.assign({}, p); delete c._hay; return c; };
+  cat.clean = (p) => { const c = Object.assign({}, p); delete c._hay; delete c._ends; return c; };
   cat.rebuild();
 
   HP.CAT_TREE = [
@@ -254,13 +257,14 @@
      the hourly build. Products without a link keep them in "frozen". Same format as tools/own-split.js writes. */
   HP.toOwn = (p, prev) => {
     const o = {};
-    ['id', 'brand', 'name', 'sku', 'img', 'in', 'out', 'cable', 'bt', 'wifi', 'manualWireless', 'review', 'auto'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) o[k] = p[k]; });
+    ['id', 'brand', 'name', 'sku', 'img', 'in', 'out', 'cable', 'ends', 'bt', 'wifi', 'manualWireless', 'review', 'auto'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) o[k] = p[k]; });
     o.cats = (prev && prev.cats) || p.lcats || (DATA.categories ? [] : p.cats) || []; // today's (legacy) categories: the build's fallback
     const deep = DATA.categories ? HP.catDeepest(p.cats) : '';
     if (deep && deep !== p.wc) o.cat = deep; // a category chosen by hand (differs from the website's)
     const up = (s) => String(s || '').toUpperCase();
     if (prev && prev.link && (!p.site || up(prev.link.site) === up(p.site))) o.link = prev.link;
     else if (p.site && !p.gone && !(prev && prev.frozen && up(prev.frozen.site) === up(p.site))) o.link = { site: p.site }; // a new link (a frozen product stays frozen)
+    if (o.ends && p.endsAuto) delete o.ends; // worked out by the build, not chosen by hand: not stored
     if (!o.link) { const f = {}; ['price', 'was', 'vars', 'url', 'site', 'gone'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) f[k] = p[k]; }); o.frozen = f; }
     return o;
   };

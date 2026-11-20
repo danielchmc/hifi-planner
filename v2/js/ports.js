@@ -8,11 +8,34 @@
 (function () {
   const HP = (window.HP = window.HP || {});
 
+  // The physical plug or socket, from one strict list (what is written on the product goes in the port's label instead).
+  // Ordered as shown in the Editor. Speaker terminals are one type for now (no banana / spade / bare wire).
   const CONNECTORS = {
-    hdmi: 'HDMI', optical: 'Optical', coax: 'Coaxial', rca: 'RCA', sub: 'Subwoofer', xlr: 'XLR',
-    speaker: 'Speaker cable', speakon: 'Speakon', minijack: 'Minijack', jack: 'Jack 6.3', usb: 'USB',
-    ethernet: 'Ethernet', trigger: 'Trigger', bnc: 'BNC', din: 'DIN', wireless: 'Wireless', other: 'Other',
+    rca: 'RCA', xlr: 'XLR', jack: 'Jack 6.35 mm', minijack: 'Minijack 3.5 mm', jack44: 'Jack 4.4 mm', jack25: 'Jack 2.5 mm', xlr4: 'XLR 4-pin', din: 'DIN',
+    speaker: 'Speaker terminal', speakon: 'Speakon',
+    optical: 'Toslink (optical)', minitoslink: 'Mini-Toslink', bnc: 'BNC', hdmi: 'HDMI',
+    usba: 'USB-A', usbb: 'USB-B', usbc: 'USB-C', microusb: 'Micro-USB',
+    ethernet: 'RJ45 (Ethernet)', rs232: 'RS-232', antenna: 'Antenna', power: 'Power (IEC)', wireless: 'Wireless', other: 'Other',
   };
+  // connector values from before the strict list: a use of a plug, or USB without its type
+  const LEGACY_CONN = { coax: 'rca', sub: 'rca', trigger: 'minijack', usb: 'usbb' };
+  // a port's connector as one of CONNECTORS (old values are mapped; USB without a type is decided from the label and side)
+  function conn(c, port, side) {
+    if (CONNECTORS[c]) return c;
+    if (c === 'usb') {
+      const l = String((port && port.label) || '').toUpperCase(), sig = port && port.sig;
+      if (sig === 'usbc' || /USB[- ]?C\b|TYPE[- ]?C/.test(l)) return 'usbc';
+      if (/MICRO/.test(l)) return 'microusb';
+      if (/USB[- ]?B\b|\bPC\b|COMPUTER|DAC|AUDIO|ASYNC/.test(l)) return 'usbb';
+      if (/USB[- ]?A\b|DRIVE|STORAGE|HOST|MEDIA|SERVICE|POWER|5 ?V|CHARG/.test(l)) return 'usba';
+      return (side || (port && / OUT\b/.test(l) ? 'out' : 'in')) === 'out' ? 'usba' : 'usbb';
+    }
+    return LEGACY_CONN[c] || (c ? 'other' : 'other');
+  }
+  // wire and dot colour: by what the plug carries where one plug serves several uses (RCA: line, coax, sub), else by the plug
+  const COLOR_BY_SIG = { coax: 'coax', digital: 'coax', sub: 'sub', trigger: 'trigger', aes: 'xlr' };
+  const COLOR_BY_CONN = { usba: 'usb', usbb: 'usb', usbc: 'usb', microusb: 'usb', minitoslink: 'optical', jack44: 'jack', jack25: 'jack', xlr4: 'xlr', rs232: 'other', antenna: 'other', power: 'other' };
+  const colorOf = (p) => { const c = conn(p && p.conn, p); return (p && COLOR_BY_SIG[p.sig] && ['rca', 'bnc', 'xlr', 'minijack'].includes(c) ? COLOR_BY_SIG[p.sig] : COLOR_BY_CONN[c] || c); };
 
   // label = text on the card, conn = default connector, nodir = no IN/OUT word in the label
   const SIGNALS = [
@@ -20,12 +43,12 @@
     { id: 'hdmi-arc', label: 'HDMI ARC', conn: 'hdmi', nodir: true, fam: 'hdmi' },
     { id: 'hdmi-earc', label: 'HDMI eARC', conn: 'hdmi', nodir: true, fam: 'hdmi' },
     { id: 'optical', label: 'OPTICAL', conn: 'optical' },
-    { id: 'coax', label: 'COAXIAL', conn: 'coax' },
-    { id: 'digital', label: 'DIGITAL', conn: 'coax' },
+    { id: 'coax', label: 'COAXIAL', conn: 'rca' },
+    { id: 'digital', label: 'DIGITAL', conn: 'rca' },
     { id: 'aes', label: 'AES/EBU', conn: 'xlr' },
     { id: 'bnc', label: 'BNC', conn: 'bnc' },
-    { id: 'usb', label: 'USB', conn: 'usb' },
-    { id: 'usbc', label: 'USB-C', conn: 'usb', fam: 'usb' },
+    { id: 'usb', label: 'USB', conn: 'usbb' },
+    { id: 'usbc', label: 'USB-C', conn: 'usbc', fam: 'usb' },
     { id: 'lan', label: 'LAN', conn: 'ethernet', nodir: true },
     { id: 'line', label: 'LINE', conn: 'rca' },
     { id: 'aux', label: 'AUX', conn: 'rca' },
@@ -38,10 +61,10 @@
     { id: 'pre', label: 'PRE', conn: 'rca' },
     { id: 'main', label: 'MAIN', conn: 'rca' },
     { id: 'zone', label: 'ZONE', conn: 'rca' },
-    { id: 'sub', label: 'SUB', conn: 'sub' },
+    { id: 'sub', label: 'SUB', conn: 'rca' },
     { id: 'speaker', label: 'SPEAKER', conn: 'speaker' },
     { id: 'speakon', label: 'SPEAKON', conn: 'speakon' },
-    { id: 'trigger', label: 'TRIGGER', conn: 'trigger' },
+    { id: 'trigger', label: 'TRIGGER', conn: 'minijack' },
     { id: 'video', label: 'VIDEO', conn: 'rca' },
     { id: 'control', label: 'CONTROL', conn: 'other', custom: true },
     { id: 'other', label: 'OTHER', conn: 'other', custom: true },
@@ -63,8 +86,9 @@
     else if (def.nodir) label = (def.label + ' ' + detail).trim();
     else if (sig === 'zone') label = ('ZONE ' + detail + ' ' + dir).replace(/\s+/g, ' ').trim();
     else label = (def.label + ' ' + dir + ' ' + detail).trim();
-    const m = /(\d+)/.exec(detail);
-    return { key: slug(label), label, sig: def.id, conn: opts.conn || def.conn, n: m ? +m[1] : 0, detail };
+    if (opts.label != null && String(opts.label).trim()) { label = String(opts.label).replace(/\s+/g, ' ').trim(); detail = ''; } // as written on the product
+    const m = /(\d+)/.exec(opts.label != null && String(opts.label).trim() ? label : detail);
+    return { key: slug(label), label, sig: def.id, conn: conn(opts.conn || def.conn, { label, sig: def.id }, side), n: m ? +m[1] : 0, detail };
   }
 
   /* Legacy label (free text from the old data.js) -> standard port. Returns null to drop,
@@ -95,7 +119,7 @@
     [/JACK|6\.3/, 'jack', /LINE|6\.35? ?MM|JACK/g],
     [/VIDEO|COMPOSITE/, 'video', /VIDEO/g],
     [/AUX/, 'aux', /AUX/g],
-    [/LINE|ANALOG|AUDIO|RCA|^CD\b|TUNER|RECORDER|STREAMING|^TV$/, 'line', /LINE|ANALOG|AUDIO|RCA/g],
+    [/LINE|ANALOG|AUDIO|RCA|^CD\b|TUNER|RECORDER|STREAMING|^TV$|TAPE|\bREC\b|DVD|\bBD\b|\bSAT\b|GAME|MEDIA|\bVCR\b|\bDAT\b/, 'line', /LINE|ANALOG|AUDIO|RCA/g],
   ];
 
   function parseLegacy(raw, side) {
@@ -134,26 +158,28 @@
   }
 
   /* ---- smart cabling ---- */
-  // which cable connector tags physically fit a port of a given connector type
-  const ACCEPT = {
-    hdmi: ['hdmi'], optical: ['optical'], coax: ['coax', 'rca'], rca: ['rca'], sub: ['sub', 'rca'],
-    speaker: ['speaker'], speakon: ['speaker'], minijack: ['minijack'], trigger: ['minijack'],
-    usb: ['usb'], ethernet: ['ethernet'], din: ['din'],
-  };
-  const accept = (conn) => ACCEPT[conn] || null; // null = unknown, anything goes
+  // two different plugs that are commonly joined by one cable (or a standard adapter): no warning when wiring them
+  const CROSS = new Set(['minijack|rca', 'jack|minijack', 'jack|rca', 'din|rca', 'bnc|rca', 'minitoslink|optical', 'jack25|minijack', 'jack44|minijack',
+    'usba|usbb', 'usba|usbc', 'usbb|usbc', 'microusb|usba', 'microusb|usbc', 'rca|xlr', 'jack|xlr']);
+  const loose = (c) => !c || c === 'other' || c === 'wireless'; // unknown: anything goes
   function compatible(a, b) {
-    const A = accept(a), B = accept(b);
-    if (a === b || !A || !B) return true;
-    if (A.some((x) => B.includes(x))) return true;
-    const pair = [a, b].sort().join('|');
-    return ['minijack|rca', 'minijack|sub', 'jack|minijack', 'jack|rca'].includes(pair);
+    const A = conn(a), B = conn(b);
+    if (A === B || loose(A) || loose(B)) return true;
+    return CROSS.has([A, B].sort().join('|'));
   }
-  // 2 = made for this wire, 1 = fits one end / unknown, 0 = wrong connector
-  function cableFit(cableConns, a, b) {
-    const A = accept(a), B = accept(b), C = cableConns || [];
-    if (!A && !B) return 1;
-    const fa = !A || C.some((c) => A.includes(c)), fb = !B || C.some((c) => B.includes(c));
-    if (fa && fb) return A && B ? 2 : 1;
+  // a cable's two ends: set in the Editor or by the catalogue build (ends), or from its connector list (cable) of old data
+  function cableEnds(p) {
+    if (p && Array.isArray(p.ends) && p.ends.length === 2) return p.ends.map((c) => conn(c));
+    const l = ((p && p.cable) || (Array.isArray(p) ? p : [])).map((c) => conn(c)).filter((c, i, a) => a.indexOf(c) === i);
+    return l.length ? [l[0], l[1] || l[0]] : null;
+  }
+  // 2 = made for this connection (both ends fit, either way round), 1 = one end fits or a port is unknown, 0 = wrong plugs.
+  // a, b: ports (or connector ids)
+  function cableFit(cable, a, b) {
+    const A = conn(a && a.conn !== undefined ? a.conn : a), B = conn(b && b.conn !== undefined ? b.conn : b), E = cableEnds(cable);
+    if (!E) return 1;
+    if ((E[0] === A && E[1] === B) || (E[0] === B && E[1] === A)) return 2;
+    if (loose(A) || loose(B)) return E.includes(loose(A) ? B : A) || (loose(A) && loose(B)) ? 1 : 0;
     return 0;
   }
 
@@ -174,5 +200,5 @@
     return map;
   }
 
-  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, mapPorts, family };
+  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf };
 })();

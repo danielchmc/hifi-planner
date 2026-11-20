@@ -114,7 +114,7 @@
   function buildCard(p, item) {
     const imgs = HP.imagesOf(p, item), face = clamp(item.face || 0, 0, Math.max(0, imgs.length - 1)), v = HP.variantOf(p, item);
     const img = HP.imgEl(imgs[face] || '', C.hd ? 'hd' : 'card', { alt: p.name });
-    const port = (x, side) => h('.port.' + side, { data: { key: x.key, side, conn: x.conn }, title: P.CONNECTORS[x.conn] || '' }, h('i.dot.c-' + x.conn), h('span.lbl', null, x.label));
+    const port = (x, side) => h('.port.' + side, { data: { key: x.key, side, conn: P.conn(x.conn, x, side), color: P.colorOf(x) }, title: P.CONNECTORS[P.conn(x.conn, x, side)] || '' }, h('i.dot.c-' + P.colorOf(x)), h('span.lbl', null, x.label));
     const hasIO = (p.in || []).length || (p.out || []).length;
     return h('.card', { style: { width: cardW(p) + 'px' } },
       MK.includes(p.id) && h('span.card-mark', { title: t('Marked on the floor plan as ', 'Markeret på plantegningen som ') + letter(MK.indexOf(p.id)), html: markHtml(p.id) }),
@@ -296,7 +296,7 @@
   const portDef = (itemId, side, key) => { const it = store.item(itemId), p = it && cat.get(it.pid); return p && (p[side] || []).find((x) => x.key === key); };
   function connInfo(c) {
     const a = portDef(c.a.item, 'out', c.a.key), b = portDef(c.b.item, 'in', c.b.key);
-    return { a, b, conn: a ? a.conn : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn)), cable: c.cable ? cat.get(c.cable) : null };
+    return { a, b, conn: a ? P.conn(a.conn, a) : 'other', color: a ? P.colorOf(a) : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn)), cable: c.cable ? cat.get(c.cable) : null };
   }
   C.connInfo = connInfo;
 
@@ -340,12 +340,12 @@
       const r = route(c, lanes.get(c.id) || 0); if (!r) return;
       routes.set(c.id, r);
       const info = connInfo(c), dd = pathD(r.pts, 7), sel = store.selConn === c.id;
-      const g = svg('g', { class: 'wire c-' + info.conn + (sel ? ' sel' : '') + (info.warn ? ' warn' : ''), 'data-id': c.id });
+      const g = svg('g', { class: 'wire c-' + info.color + (sel ? ' sel' : '') + (info.warn ? ' warn' : ''), 'data-id': c.id });
       g.append(svg('path', { class: 'hit', d: dd }), svg('path', { class: 'line', d: dd }));
       wiresSvg.append(g);
       [[c.a, 'out'], [c.b, 'in']].forEach(([e, side]) => { const el = els.get(e.item), pe = el && el.querySelector('.port.' + side + '[data-key="' + e.key + '"]'); if (pe) pe.classList.add('on'); });
       if (info.cable || info.warn) {
-        chipsEl.append(h('.chip.c-' + info.conn + (info.warn ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
+        chipsEl.append(h('.chip.c-' + info.color + (info.warn ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
           title: info.cable ? info.cable.brand + ' ' + info.cable.name + ' · ' + HP.money(info.cable.price) : t('Connector types do not match', 'Stiktyperne passer ikke sammen') },
           info.warn && icon('warn', 11), info.cable ? info.cable.name.replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
       }
@@ -544,7 +544,7 @@
     tempSvg.firstChild.setAttribute('d', pathD([[a.x, a.y], [mx, a.y], [mx, b.y], [b.x, b.y]], 7));
   }
   function startWire(e, portEl) {
-    const itemEl = portEl.closest('.item'), from = { item: itemEl.dataset.id, key: portEl.dataset.key, side: portEl.dataset.side, conn: portEl.dataset.conn };
+    const itemEl = portEl.closest('.item'), from = { item: itemEl.dataset.id, key: portEl.dataset.key, side: portEl.dataset.side, conn: portEl.dataset.conn, color: portEl.dataset.color };
     if (store.sel.size || store.selConn) { store.sel.clear(); store.selConn = null; refreshSel(); }
     wiring = { from, sticky: false };
     world.classList.add('wiring');
@@ -554,7 +554,7 @@
       pe.classList.toggle('cand-warn', other && !P.compatible(from.conn, pe.dataset.conn));
     });
     portEl.classList.add('from');
-    tempSvg.textContent = ''; tempSvg.append(svg('path', { class: 'line c-' + from.conn }));
+    tempSvg.textContent = ''; tempSvg.append(svg('path', { class: 'line c-' + (from.color || from.conn) }));
     tempPath(e);
     drag(e, tempPath, (ev, moved, aborted) => {
       if (aborted) return cancelWire();
@@ -579,7 +579,7 @@
     if (d.conns.some((c) => c.a.item === a.item && c.a.key === a.key && c.b.item === b.item && c.b.key === b.key)) return;
     const c = { id: HP.uid(), a: { item: a.item, key: a.key }, b: { item: b.item, key: b.key }, cable: null, shift: 0 };
     d.conns.push(c);
-    if (!P.compatible(a.conn, b.conn)) HP.toast(P.CONNECTORS[a.conn] + ' → ' + P.CONNECTORS[b.conn] + ': ' + t('these connectors do not match. Check the connection.', 'disse stik passer ikke sammen. Tjek forbindelsen.'), { kind: 'warn', ms: 6000 });
+    if (!P.compatible(a.conn, b.conn)) HP.toast(P.CONNECTORS[P.conn(a.conn, a)] + ' → ' + P.CONNECTORS[P.conn(b.conn, b)] + ': ' + t('these connectors do not match. Check the connection.', 'disse stik passer ikke sammen. Tjek forbindelsen.'), { kind: 'warn', ms: 6000 });
     store.sel.clear(); store.selConn = null; store.commit();
   }
   C.connect = (aItem, aKey, bItem, bKey) => { store.doc.conns.push({ id: HP.uid(), a: { item: aItem, key: aKey }, b: { item: bItem, key: bKey }, cable: null, shift: 0 }); };

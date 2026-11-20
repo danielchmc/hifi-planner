@@ -34,7 +34,7 @@ Rebuild of HiFi Planner as a static web app. No build step and no dependencies: 
 | `img/hk/`, `img/hd/hk/` | Copies of hifiklubben.com images, named by their image ID (written by the sync job) |
 | `mirror/` | Raw copy of hifiklubben.dk's product data (listing, product pages, types), written by `tools/mirror.js`; never loaded by the app, never edited by hand. See `mirror/README.md` |
 | `build/` | Generated every hour by `tools/catalog-build.js`: `app-products.js` (**the app's catalogue**: own layer + website), `categories.js` (the category tree), `catalog.json` (normalized website catalogue), `report.md` |
-| `tools/` | Catalogue sync (`price-sync.js`, `mirror.js`, `catalog-build.js`, `taxonomy.js`, `overrides.js`, `own-split.js`, `site-match.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
+| `tools/` | Catalogue sync (`price-sync.js`, `mirror.js`, `catalog-build.js`, `taxonomy.js`, `overrides.js`, `cable-ends.js`, `migrate-connectors.js`, `own-split.js`, `site-match.js`, `mirror_images.py`, `price-sync.workflow.yml`), one-off migration scripts and reports |
 
 ## Admin
 
@@ -129,7 +129,7 @@ Product pages are read in batches (60 per run, new products first), so all pages
 - **The hourly run** no longer writes `data/products.js`: `price-sync.js` still reads the website for its report, the product-page details (`data/site-details.js`) and the Website tab (`data/site-new.js`), and `own-split.js` does nothing (both check whether `index.html` loads `build/app-products.js`). `catalog-build.js` rebuilds `build/app-products.js` from `data/own.js` and the mirror; the plausibility check now compares with the previous build, and the report lists the changes since the previous build.
 - **Corrections of website facts** live in `tools/overrides.js`, per website product SKU (kind, scope, facts such as `perMetre`, category, with a note), applied by the build and listed in the report. Example: the SLiP cables, which the website sells by the metre but marks as colours.
 - **Stock pictures**: a local image file used by cards of 3 or more different website products (the generic RCA photo that was on 23 speaker cables) is replaced in the build by each product's own website photo.
-- Still to do: ports for the new website products, connector types per cable end, and using the facets in more places (filters, the cable picker).
+- Still to do: ports for the new website products, banana/spade/bare-wire speaker connectors, and using the facets in more places (filters).
 
 ## Product links and colour variants
 
@@ -148,9 +148,19 @@ Product pages are read in batches (60 per run, new products first), so all pages
 
 **Share link** in the top bar packs the whole canvas (products, cables, notes, page setup) into the URL after `#p=`, in a compact format (about half the length of a plain encoding). Nothing is uploaded. Opening the link loads a copy; the floor plan image is not included.
 
-## I/O standard
+## I/O standard: ports, connectors and cables
 
-Every port is `{ key, label, sig, conn }`. Labels follow `SIGNAL DIR DETAIL`, for example `HDMI IN 1`, `SPEAKER OUT SURROUND BACK`, `SUB OUT 2`. The Editor builds labels from a signal dropdown so new products stay consistent. When a card is replaced, connections are carried over by: same key → same signal and number → same signal → same connector type. `tools/io-migration-report.md` lists how each of the 409 old labels was renamed.
+Every port is `{ key, label, sig, conn }`:
+
+- **label**: what is written on the product, free text in the Editor (`AUX IN`, `CD`, `TAPE IN`, `Line In (Analog)`). Older ports were named `SIGNAL DIR DETAIL` (`HDMI IN 1`, `SUB OUT 2`), which still works.
+- **sig**: what the port carries, from the list in `js/ports.js` (`SIGNALS`: line, aux, phono, coax, sub, speaker, hdmi-arc, usb…). For a new port the Editor suggests it from the label (AUX/LINE/CD/TAPE → line or aux, MM/MC/PHONO → phono, USB-C → usbc) until one is picked by hand.
+- **conn**: the physical connector, from one strict list (`CONNECTORS`): RCA, XLR, Jack 6.35 mm, Minijack 3.5 mm, Jack 4.4 mm, Jack 2.5 mm, XLR 4-pin, DIN, Speaker terminal, Speakon, Toslink, Mini-Toslink, BNC, HDMI, USB-A, USB-B, USB-C, Micro-USB, RJ45, RS-232, Antenna, Power (IEC), Wireless, Other. Speaker terminals are one type (no banana/spade/bare wire yet). Older values are mapped wherever they appear (`P.conn`): `coax` and `sub` → RCA, `trigger` → Minijack, `usb` → USB-A/B/C from the label and side; `tools/migrate-connectors.js` converted the ports in `data/own.js` (501 ports on 202 products, report in `build/connector-migration.md`; it runs every hour and does nothing once everything is converted).
+- **key** is made from the label once and then kept, also when the label is edited later, so wires in saved drawings stay connected.
+- Wires and port dots are coloured by the signal where one plug serves several uses (RCA: line, coax, sub; `P.colorOf`), otherwise by the connector.
+
+**Cables** have two ends, `ends: [A, B]` (connector ids). The cable picker offers a cable as *matching* when its two ends fit the two ports, either way round (`P.cableFit`): a Minijack ↔ RCA cable for a minijack output to an RCA input, but not for RCA to RCA. In the Editor a cable has *End A* and *End B*. Ends set there are stored in `data/own.js`; for all other cables `tools/catalog-build.js` works them out (`tools/cable-ends.js`, marked `endsAuto`): from the connectors named in the cable's name, in order (`Evergreen - Minijack - RCA`, `USB B - USB A`, `USB CC`), else the website's connector list (`Stik`), else the usual plugs of the cable type (HDMI cable → HDMI ↔ HDMI, subwoofer cable → RCA ↔ RCA). The report lists the guessed ones (a USB cable that does not say which USB, Y-splitters) for checking in the Editor. The website itself has no standard for this: only 35 of 154 cable pages list connectors, and never which end is which.
+
+Wiring two ports whose connectors do not normally go together (e.g. HDMI to RCA) shows a warning; common pairs joined by one cable (Minijack–RCA, Jack–RCA, DIN–RCA, USB-A–USB-B, Toslink–Mini-Toslink, RCA–XLR…) do not. When a card is replaced, connections are carried over by: same key → same signal and number → same signal → same connector type. `tools/io-migration-report.md` lists how each of the 409 old labels was renamed.
 
 ## Going live
 

@@ -348,10 +348,10 @@
     const pick = (id) => { c.cable = id; store.commit(); close(); };
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
-      const all = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w)))).map((p) => ({ p, fit: P.cableFit(p.cable, a.conn, b.conn) }));
+      const all = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w)))).map((p) => ({ p, fit: P.cableFit(p, a, b) })); // by the cable's two ends
       list.textContent = '';
       const sec = (title, items) => { if (!items.length) return; list.append(h('.sec', null, title + ' (' + items.length + ')'));
-        items.sort((x, y) => x.p.price - y.p.price).forEach(({ p }) => { const r = productRow(p, h('span.tagline', null, (p.cable || []).map((x) => P.CONNECTORS[x] || x).join(' / '))); if (c.cable === p.id) r.classList.add('on'); r.onclick = () => pick(p.id); list.append(r); }); };
+        items.sort((x, y) => x.p.price - y.p.price).forEach(({ p }) => { const e = P.cableEnds(p) || []; const r = productRow(p, h('span.tagline', null, e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : '')); if (c.cable === p.id) r.classList.add('on'); r.onclick = () => pick(p.id); list.append(r); }); };
       const good = all.filter((x) => x.fit === 2), maybe = all.filter((x) => x.fit === 1), other = all.filter((x) => x.fit === 0);
       sec(t('Matching cables', 'Passende kabler'), good); sec(t('May fit', 'Passer muligvis'), maybe);
       if (showAll || words.length || !(good.length + maybe.length)) sec(t('Other cables', 'Andre kabler'), other);
@@ -359,8 +359,8 @@
       if (!all.length) list.append(h('.empty', null, t('No cables found.', 'Ingen kabler fundet.')));
     }
     const close = HP.modal({ title: t('Cable for this connection', 'Kabel til denne forbindelse'), size: 'md', flush: true,
-      body: [h('.conn-head', null, h('span.pill.c-' + a.conn, null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + b.conn, null, b.label),
-        h('span.muted', null, P.CONNECTORS[a.conn] + (a.conn !== b.conn ? ' → ' + P.CONNECTORS[b.conn] : '')),
+      body: [h('.conn-head', null, h('span.pill.c-' + P.colorOf(a), null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + P.colorOf(b), null, b.label),
+        h('span.muted', null, P.CONNECTORS[P.conn(a.conn, a)] + (P.conn(a.conn, a) !== P.conn(b.conn, b) ? ' → ' + P.CONNECTORS[P.conn(b.conn, b)] : '')),
         info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.'))),
         h('.searchbox.pad', null, icon('search', 15), q), list],
       foot: [h('button.btn.danger', { onclick: () => { store.selConn = c.id; C().deleteSelection(); close(); } }, icon('trash', 14), t('Delete connection', 'Slet forbindelse')), h('.spacer'),

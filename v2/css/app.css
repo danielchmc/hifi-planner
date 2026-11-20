@@ -549,3 +549,10 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
   font: 600 11px var(--mono); letter-spacing: .04em; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 .next-badge:hover { background: #a92e16; }
 @media print { .next-badge { display: none; } }
+
+/* ---------- v3.8: ports = label as on the product + signal + connector; cables = two ends ---------- */
+.portrow { grid-template-columns: minmax(0, 1fr) 84px 104px 22px 22px 22px; }
+.portrow .plabel-in { font: 600 11.5px var(--mono); text-transform: none; }
+.cable-ends { display: flex; align-items: flex-end; gap: 8px; margin: 4px 0 6px; }
+.cable-ends .field { flex: 1; } .cable-ends .arrow { padding-bottom: 7px; color: var(--muted); }
+@media (max-width: 700px) { .portrow { grid-template-columns: minmax(0, 1fr) 76px 92px 26px 26px 26px; } }

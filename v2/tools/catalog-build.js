@@ -18,6 +18,7 @@ require('../js/ports.js'); require('../js/site.js');
 const S = window.HP.site;
 const { KIND_SCOPE, CATEGORIES, TYPES, SECTION_ORDER, EN } = require('./taxonomy.js');
 const SM = require('./site-match.js');
+const CE = require('./cable-ends.js');
 const OVERRIDES = (() => { try { return require('./overrides.js'); } catch (e) { return {}; } })();
 
 const APP = process.argv[2] || path.join(__dirname, '..');
@@ -183,7 +184,15 @@ if (fs.existsSync(ownFile)) {
   const match = SM.matcher(SM.sellable(listing));
   const facetsBySku = new Map(products.map((p) => [p.sku, p.facets]));
   const hk = (u) => S.hk(u);
-  const RT = { lost: [], frozen: 0, held: [] };
+  const RT = { lost: [], frozen: 0, held: [], ends: {}, endsGuess: [] };
+  const wBySku = new Map(products.map((w) => [w.sku, w]));
+  // a cable's two ends: chosen by hand (data/own.js) or worked out (tools/cable-ends.js), marked endsAuto
+  const setEnds = (p, handEnds, name, w, set) => {
+    if (handEnds && handEnds.length === 2) { p.ends = handEnds; RT.ends.hand = (RT.ends.hand || 0) + 1; return; }
+    const r = CE.deriveEnds({ name, model: w && w.model, typeKey: w && w.type.key, stik: w && w.specs && w.specs.Stik, set });
+    p.ends = r.ends; p.endsAuto = 1; RT.ends[r.how] = (RT.ends[r.how] || 0) + 1;
+    if (r.how === 'guess') RT.endsGuess.push((p.brand || '') + ' ' + p.name + ': ' + r.ends.join(' ↔ '));
+  };
   // the previous catalogue, for the sync's plausibility check (today's data/products.js until the switch, then the previous build)
   const prevById = new Map((SWITCHED && prevBuild ? prevBuild : catalogue).map((c) => [c.id, c]));
   const skuCount = {}; own.forEach((o) => { if (o.sku) skuCount[U(o.sku)] = (skuCount[U(o.sku)] || 0) + 1; });
@@ -209,6 +218,7 @@ if (fs.existsSync(ownFile)) {
     const bt = o.bt || (!o.manualWireless && !o.cable && f && f.bt), wifi = o.wifi || (!o.manualWireless && !o.cable && f && f.wifi);
     if (bt) p.bt = true; if (wifi) p.wifi = true;
     if (m) Object.defineProperty(p, '_web', { value: m.v.image || '', enumerable: false });
+    if (o.cable) setEnds(p, o.ends, o.name, m ? wBySku.get(U(m.s.sku)) : null, o.cable);
     return p;
   });
   // stock pictures: one local image file used by cards of 3 or more different website products (e.g. a generic RCA plug photo on
@@ -253,9 +263,10 @@ if (fs.existsSync(ownFile)) {
     const isCable = w.kind === 'cable' && w.facets.conn;
     const f = SM.webFacts(m, { single: false, cable: !!isCable, hk });
     const p = { id: 'w-' + w.sku.toLowerCase(), brand: w.brand, name: w.model, sku: w.sku, price: f.price, site: w.sku, web: 1 };
+    p.cats = (S.TYPE_CABLE[w.type.da] ? ['Cable'] : S.TYPE_CATS[w.type.da]) || []; // the old categories (kept in lcats): the Editor's port suggestions use them
     if (f.was) p.was = f.was; if (f.vars) p.vars = f.vars; if (f.url) p.url = f.url;
     const im = (w.variants.find((v) => v.img) || {}).img; p.img = im ? [im] : [];
-    if (isCable) p.cable = [w.facets.conn]; else if (w.scope === 'diagram') { p.in = []; p.out = []; p.review = true; } // diagram gear needs its ports checked: listed under Review
+    if (isCable) { p.cable = [w.facets.conn]; setEnds(p, null, w.model, w, p.cable); } else if (w.scope === 'diagram') { p.in = []; p.out = []; p.review = true; } // diagram gear needs its ports checked: listed under Review
     if (w.facets.bt) p.bt = true; if (w.facets.wifi) p.wifi = true;
     next.push(enrich(p, w)); added++;
   }
@@ -299,6 +310,8 @@ if (fs.existsSync(ownFile)) {
     '- Prices held by the plausibility check (as the sync does): ' + RT.held.length,
     RT.lost.length ? '- Link no longer on the website: ' + RT.lost.join(', ') : '- Every link points at a product the website lists', '');
   P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
+  P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
+  if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
   if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');
   if (RT.changes) {
     P('Since the previous build: ' + RT.changes.prices.length + ' price changes, ' + RT.changes.added.length + ' products added, ' + RT.changes.removed.length + ' removed.', '');

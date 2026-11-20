@@ -41,6 +41,7 @@ jobs:
       - name: Build the app catalogue from data/own.js and the mirror (build/)
         continue-on-error: true
         run: |
+          if [ -f "$APP/tools/migrate-connectors.js" ]; then node "$APP/tools/migrate-connectors.js" "$APP"; fi
           if [ -f "$APP/tools/catalog-build.js" ]; then node "$APP/tools/catalog-build.js" "$APP" && cat "$APP/build/report.md" >> "$GITHUB_STEP_SUMMARY"
           else echo "::warning::$APP/tools/catalog-build.js is missing"; fi
       - name: Copy new website images

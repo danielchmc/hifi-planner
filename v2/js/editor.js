@@ -3,7 +3,6 @@
   const HP = window.HP, { h, t, store, catalog: cat, ports: P, icon, LS } = HP;
   const E = (HP.editor = {});
   const DATA = window.HP_DATA;
-  const CABLE_CONNS = ['rca', 'minijack', 'speaker', 'hdmi', 'sub', 'optical', 'coax', 'usb', 'ethernet', 'xlr', 'din', 'wireless'];
 
   const TYPE_CATS = HP.site.TYPE_CATS, TYPE_CABLE = HP.site.TYPE_CABLE;
 
@@ -103,24 +102,38 @@
       function set(v) { cur.img[i] = v; cur.img = [cur.img[0] || '', cur.img[1] || '']; prev.textContent = ''; prev.append(v ? HP.imgEl(v, 'thumb') : t('none', 'ingen')); preview(); }
       return h('.imgfield', null, h('span.lab', null, label), prev, url, h('button.btn.sm', { onclick: () => file.click() }, icon('upload', 14), 'Upload'), cur.img[i] && h('button.icon-btn', { title: t('Remove', 'Fjern'), onclick: () => { set(''); url.value = ''; } }, icon('x', 14)), file);
     }
+    // a port: the label as written on the product (free text), what it carries (signal, suggested from the label) and the
+    // physical connector (strict list). Ports added in this session follow the label until a signal or connector is picked.
+    const fresh = new WeakSet(), autoSig = new WeakSet(), autoConn = new WeakSet(); // new ports: key follows the label; suggestions until picked by hand
     function portList(side) {
       const box = h('.ports');
       const draw = () => {
         box.textContent = '';
         cur[side].forEach((p, i) => {
-          const def = P.SIG[p.sig] || P.SIG.other;
-          const upd = () => { const np = P.makePort(sig.value, side, detail.value, { conn: conn.value, dir: p.label && / (IN|OUT)\b/.test(p.label) && !P.SIG[sig.value].custom && !P.SIG[sig.value].nodir && sig.value === p.sig ? (/ IN\b/.test(p.label) ? 'IN' : 'OUT') : undefined }); cur[side][i] = np; lab.textContent = np.label; preview(); };
-          const sig = h('select', { onchange: () => { conn.value = P.SIG[sig.value].conn; upd(); } }, P.SIGNALS.map((s) => h('option', { value: s.id, selected: s.id === p.sig }, s.custom ? s.label + ' (' + t('free text', 'fri tekst') + ')' : s.label)));
-          const detail = h('input.detail', { value: def.custom ? p.label : p.detail || '', placeholder: t('no. / detail', 'nr. / detalje'), oninput: upd });
-          const conn = h('select.conn', { onchange: upd, title: t('Connector', 'Stik') }, Object.entries(P.CONNECTORS).map(([k, v]) => h('option', { value: k, selected: k === p.conn }, v)));
-          const lab = h('span.plabel', null, p.label);
+          const upd = () => {
+            const np = P.makePort(sig.value, side, '', { label: label.value || P.SIG[sig.value].label, conn: conn.value });
+            if (fresh.has(p)) fresh.add(np); else if (p.key) np.key = p.key; // an existing port keeps its key, so wires in saved drawings stay connected
+            if (autoSig.has(p)) autoSig.add(np); if (autoConn.has(p)) autoConn.add(np);
+            cur[side][i] = np; p = np; preview();
+          };
+          const label = h('input.plabel-in', { value: p.label || '', placeholder: t('as written on the product, e.g. AUX IN', 'som på produktet, fx AUX IN'), spellcheck: false,
+            oninput: () => {
+              const g = (autoSig.has(p) || autoConn.has(p)) && P.parseLegacy(label.value, side);
+              if (g && g.sig && P.SIG[g.sig]) { if (autoSig.has(p)) sig.value = g.sig; if (autoConn.has(p)) conn.value = P.conn(autoSig.has(p) ? g.conn : P.SIG[sig.value].conn, { label: label.value, sig: sig.value }, side); }
+              upd();
+            } });
+          const sig = h('select.sig', { title: t('What the port carries', 'Hvad porten fører'), onchange: () => { autoSig.delete(p); if (autoConn.has(p)) conn.value = P.conn(P.SIG[sig.value].conn, { label: label.value, sig: sig.value }, side); upd(); } },
+            P.SIGNALS.map((s) => h('option', { value: s.id, selected: s.id === p.sig }, s.label)));
+          const conn = h('select.conn', { title: t('Connector', 'Stik'), onchange: () => { autoConn.delete(p); upd(); } },
+            Object.entries(P.CONNECTORS).map(([k, v]) => h('option', { value: k, selected: k === P.conn(p.conn, p, side) }, v)));
           const mv = (d) => () => { const j = i + d; if (j < 0 || j >= cur[side].length) return; [cur[side][i], cur[side][j]] = [cur[side][j], cur[side][i]]; draw(); preview(); };
-          box.append(h('.portrow', null, sig, detail, conn, h('button.icon-btn', { onclick: mv(-1), title: t('Up', 'Op') }, icon('up', 13)), h('button.icon-btn', { onclick: mv(1), title: t('Down', 'Ned') }, icon('down', 13)),
-            h('button.icon-btn', { onclick: () => { cur[side].splice(i, 1); draw(); preview(); }, title: t('Remove', 'Fjern') }, icon('x', 13)), lab));
+          box.append(h('.portrow', null, label, sig, conn, h('button.icon-btn', { onclick: mv(-1), title: t('Up', 'Op') }, icon('up', 13)), h('button.icon-btn', { onclick: mv(1), title: t('Down', 'Ned') }, icon('down', 13)),
+            h('button.icon-btn', { onclick: () => { cur[side].splice(i, 1); draw(); preview(); }, title: t('Remove', 'Fjern') }, icon('x', 13))));
         });
         box.append(h('button.btn.sm', { onclick: () => {
           const last = cur[side][cur[side].length - 1], sig = last ? last.sig : side === 'in' ? 'line' : 'speaker';
-          const n = last && last.n ? String(last.n + 1) : ''; cur[side].push(P.makePort(sig, side, P.SIG[sig].custom ? '' : n, last ? { conn: last.conn } : {})); draw(); preview(); } }, icon('plus', 13), side === 'in' ? t('Add input', 'Tilføj indgang') : t('Add output', 'Tilføj udgang')));
+          const n = last && last.n ? String(last.n + 1) : ''; const np = P.makePort(sig, side, P.SIG[sig].custom ? '' : n, last ? { conn: last.conn } : {});
+          fresh.add(np); autoSig.add(np); autoConn.add(np); cur[side].push(np); draw(); preview(); } }, icon('plus', 13), side === 'in' ? t('Add input', 'Tilføj indgang') : t('Add output', 'Tilføj udgang')));
       };
       draw();
       return box;
@@ -163,8 +176,14 @@
         h('datalist#ed-brands', null, [...new Set(cat.list.map((p) => p.brand))].sort().map((b) => h('option', { value: b }))),
         h('.lab', null, t('Images', 'Billeder')), imageField(0, t('Front', 'Forside')), !cur.cable && imageField(1, t('Back', 'Bagside')), sitePanel());
       if (cur.cable) {
-        form.append(h('.lab', null, t('Connectors (used to suggest this cable for matching ports)', 'Stik (bruges til at foreslå kablet til matchende porte)')),
-          h('.checks', null, CABLE_CONNS.map((c) => h('label.check', null, h('input', { type: 'checkbox', checked: cur.cable.includes(c), onchange(e) { cur.cable = e.target.checked ? [...cur.cable, c] : cur.cable.filter((x) => x !== c); } }), P.CONNECTORS[c]))));
+        // the plug at each end: the cable is suggested for a connection whose two ports have these connectors (either way round)
+        const ends = (cur.ends && cur.ends.length === 2 ? cur.ends : P.cableEnds(cur) || ['rca', 'rca']).slice();
+        const setEnds = () => { cur.ends = ends.slice(); cur.cable = [...new Set(ends)]; delete cur.endsAuto; };
+        if (!P.cableEnds(cur)) setEnds(); // a new cable starts as RCA ↔ RCA
+        const endSel = (i) => h('select.conn', { onchange(ev) { ends[i] = ev.target.value; setEnds(); } }, Object.entries(P.CONNECTORS).filter(([k]) => k !== 'wireless').map(([k, v]) => h('option', { value: k, selected: k === ends[i] }, v)));
+        form.append(h('.lab', null, t('Connectors at each end (used to suggest this cable for matching ports)', 'Stik i hver ende (bruges til at foreslå kablet til matchende porte)')),
+          h('.cable-ends', null, h('label.field', null, h('span', null, t('End A', 'Ende A')), endSel(0)), h('span.arrow', null, '↔'), h('label.field', null, h('span', null, t('End B', 'Ende B')), endSel(1))),
+          cur.endsAuto ? h('small.muted', null, t('Worked out from the website (type, name, connector list). Change it here if it is wrong.', 'Udledt fra hjemmesiden (type, navn, stikliste). Ret det her, hvis det er forkert.')) : '');
       } else {
         drawCats();
         form.append(h('.lab', null, t('Categories', 'Kategorier')), catBox,
@@ -213,7 +232,7 @@
       delete out._url; delete out._type; delete out.review; // saved by an admin = checked
       if (!(+out.was > out.price)) delete out.was; else out.was = +out.was;
       if (HP.NEXT && !out.cable) { const deep = HP.catDeepest(out.cats); out.cats = deep ? HP.catChain(deep) : []; }
-      if (!out.cable) { ['in', 'out'].forEach((s) => { out[s] = P.uniqueKeys(out[s].map((x) => Object.assign({}, x, { key: P.slug(x.label) }))); }); if (!out.bt) delete out.bt; if (!out.wifi) delete out.wifi; }
+      if (!out.cable) { ['in', 'out'].forEach((s) => { out[s] = P.uniqueKeys(out[s].map((x) => Object.assign({}, x, { key: x.key || P.slug(x.label) }))); }); if (!out.bt) delete out.bt; if (!out.wifi) delete out.wifi; } // keys are kept: saved drawings stay wired
       cat.putProduct(out); isNew = false; cur = JSON.parse(JSON.stringify(out)); drawModes(); drawList(); drawForm();
       HP.toast(t('Saved as draft. Publish to send it to all shops.', 'Gemt som kladde. Udgiv for at sende det til alle butikker.'), { kind: 'ok' });
     }
