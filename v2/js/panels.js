@@ -386,11 +386,11 @@
       let choose;
       if (G.metre) {
         const last = +LS.get('cableLen', 0);
-        const metres = () => Math.max(0.5, Math.round((+inp.value || 0) * 2) / 2);
+        const metres = () => Math.max(1, Math.round(+inp.value || 0)); // whole metres, as cable is cut in the shop
         choose = () => { const m = metres(); select({ group: gk, key: 'm', id: rep.id, o: { m, len: m }, name: base + ' ' + fmtM(m), price: Math.ceil(m) * rep.price }); };
-        const inp = h('input', { type: 'number', min: 0.5, step: 0.5, value: mine && c.m ? c.m : last || 2, onclick: (ev) => { ev.stopPropagation(); choose(); },
-          oninput: () => { tot.textContent = '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price); choose(); } });
-        const tot = h('span.muted', null, '= ' + HP.money(Math.ceil(+inp.value || 0) * rep.price));
+        const inp = h('input', { type: 'number', min: 1, step: 1, value: Math.max(1, Math.round(mine && c.m ? c.m : last || 2)), onclick: (ev) => { ev.stopPropagation(); choose(); },
+          oninput: () => { tot.textContent = '= ' + HP.money(metres() * rep.price); choose(); } });
+        const tot = h('span.muted', null, '= ' + HP.money(metres() * rep.price));
         inp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); choose(); commit(); } });
         box.append(h('span.lab', null, t('Metres', 'Meter')), inp, tot);
       } else {

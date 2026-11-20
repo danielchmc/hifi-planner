@@ -196,13 +196,25 @@ if (fs.existsSync(ownFile)) {
   // the previous catalogue, for the sync's plausibility check (today's data/products.js until the switch, then the previous build)
   const prevById = new Map((SWITCHED && prevBuild ? prevBuild : catalogue).map((c) => [c.id, c]));
   const skuCount = {}; own.forEach((o) => { if (o.sku) skuCount[U(o.sku)] = (skuCount[U(o.sku)] || 0) + 1; });
+  // a cable card for one length the website no longer sells (e.g. Rocket 44 Single-Wire 1.5 m, AQROCKET44SC1,5AA) while the cable is
+  // still sold in other lengths (AQROCKET44SC2,0AA …): it follows the cable instead of being discontinued. Found by the variant SKU
+  // with its length taken out (AQROCKET44SC#AA), which must point at exactly one website product.
+  const fam = (sku) => U(sku).replace(/\d+,\d+/, '#');
+  const famSite = new Map();
+  products.forEach((w) => (w.variants || []).forEach((v) => { if (!/\d+,\d+/.test(v.sku || '')) return; const k = fam(v.sku); famSite.set(k, famSite.has(k) && famSite.get(k) !== w.sku ? null : w.sku); }));
+  const stripLen = (s) => String(s || '').replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '').trim();
+  RT.lenGone = [];
   const generated = own.map((o) => {
     const p = {};
     for (const k of ['id', 'brand', 'name', 'sku']) if (o[k] !== undefined) p[k] = o[k];
-    const m = o.link ? match.byLink(o.link) : null;
+    let m = o.link ? match.byLink(o.link) : null;
+    if (!m && o.cable && o.sku && /\d+,\d+/.test(o.sku)) {
+      const site = famSite.get(fam(o.sku)), m2 = site && match.byLink({ site });
+      if (m2) { m = m2; p.name = stripLen(o.name) || o.name; p.lenGone = (/(\d+,\d+)/.exec(o.sku)[1].replace(/,0$/, '')) + ' m'; RT.lenGone.push(o.brand + ' ' + o.name + ' [' + o.sku + '] → ' + site); }
+    }
     if (o.link && !m) RT.lost.push(o.brand + ' ' + o.name + ' [' + o.link.site + ']');
     if (m) {
-      const w = SM.webFacts(m, { single: !!o.link.single, cable: !!o.cable, hk });
+      const w = SM.webFacts(m, { single: !!(o.link && o.link.single), cable: !!o.cable, hk });
       if (w.vars) p.vars = w.vars; if (w.url) p.url = w.url; p.site = w.site;
       // as the sync: a price is held (old price and discount kept, listed for a human to check) when it is implausible
       const prev = prevById.get(o.id) || {};
@@ -326,6 +338,7 @@ if (fs.existsSync(ownFile)) {
   P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
   if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
+  if (RT.lenGone.length) P('**Length no longer sold, cable still sold** (' + RT.lenGone.length + '): the card follows the cable and offers its current lengths instead of being discontinued.', '', ...RT.lenGone.map((x) => '- ' + x), '');
   if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');
   if (RT.changes) {
     P('Since the previous build: ' + RT.changes.prices.length + ' price changes, ' + RT.changes.added.length + ' products added, ' + RT.changes.removed.length + ' removed.', '');

@@ -141,6 +141,9 @@
     const l = c && c.lv && (p.lens || []).find((x) => x.sku === c.lv);
     if (l) return stripLen(p.name) + ' ' + l.label;
     if (c && c.m) return stripLen(p.name) + ' ' + String(c.m).replace('.', ',') + ' m';
+    // a card whose own length the website stopped selling (lenGone) is priced at the cable's cheapest length: name that length
+    const d = !(c && (c.lv || c.m)) && p.lenGone && (p.lens || []).find((x) => x.price === p.price);
+    if (d) return stripLen(p.name) + ' ' + d.label;
     return p.name;
   };
   C.cablePrice = (c, p) => (c && c.m ? Math.ceil(c.m) * (p.price || 0) : HP.priceOf(p, c && c.lv ? { len: c.lv } : null).price);
