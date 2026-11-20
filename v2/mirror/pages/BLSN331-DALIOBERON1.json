@@ -225,7 +225,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1031,
+        "availableQuantity": 993,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.498,-",
@@ -245,11 +245,8 @@
         "productCode": "DALIOBERON1WH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
-        "canBuyOnline": true,
-        "availableQuantity": 6,
-        "inventoryStatusType": "warehouseInStock"
+        "description": "Ukendt leveringstid",
+        "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
        },
        "priceFormatted": "2.498,-",
        "priceRaw": 1249,
@@ -456,7 +453,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 18,
+        "availableQuantity": 16,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "7.999,-",
@@ -479,7 +476,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 743,
+        "availableQuantity": 734,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "7.999,-",

@@ -26,7 +26,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 271,
+   "all": 272,
    "bundles": 0
   },
   {
@@ -250,8 +250,8 @@
    "title": "Kompakt højtaler",
    "parent": "/hojtalere/",
    "website": true,
-   "products": 46,
-   "all": 46,
+   "products": 47,
+   "all": 47,
    "bundles": 6
   },
   {
@@ -952,7 +952,7 @@
     "da": "Minijack-kabel"
    },
    "cat": "/kabler/minijack-kabel/",
-   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin1,0/",
+   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin800/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -13579,7 +13579,7 @@
     "da": "Højtalerkabel"
    },
    "cat": "/kabler/hojtaler-kabel/",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -14006,7 +14006,7 @@
     "da": "Pladespiller"
    },
    "cat": "/pladespiller/pladespillere/",
-   "url": "/argon-audio-tt-3-plus-pladespiller/argtt3plusbk/",
+   "url": "/argon-audio-tt-3-plus-pladespiller/argtt3pluswa/",
    "kind": "source",
    "scope": "diagram",
    "facets": {
@@ -14014,23 +14014,6 @@
     "axis": "colour"
    },
    "variants": [
-    {
-     "sku": "ARGTT3PLUSBK",
-     "label": "Sort",
-     "price": 3199,
-     "was": 3999,
-     "colorKey": "Black",
-     "ean": "5706957016396",
-     "url": "/argon-audio-tt-3-plus-pladespiller/argtt3plusbk/",
-     "img": "hk:ae7dd9a2-ec17-46dc-a5e3-372c36f44a92",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "5,9",
-      "Vægt emballage (kg)": "6,8",
-      "Mål (emballage)": "41,5 x 21 x 50 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "41,8 x 12,7 x 36 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "ARGTT3PLUSWA",
      "label": "Valnød",
@@ -14040,6 +14023,23 @@
      "ean": "5706957016402",
      "url": "/argon-audio-tt-3-plus-pladespiller/argtt3pluswa/",
      "img": "hk:a045c93f-d737-40a1-a425-e81a01b98e38",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "5,9",
+      "Vægt emballage (kg)": "6,8",
+      "Mål (emballage)": "41,5 x 21 x 50 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "41,8 x 12,7 x 36 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGTT3PLUSBK",
+     "label": "Sort",
+     "price": 3199,
+     "was": 3999,
+     "colorKey": "Black",
+     "ean": "5706957016396",
+     "url": "/argon-audio-tt-3-plus-pladespiller/argtt3plusbk/",
+     "img": "hk:ae7dd9a2-ec17-46dc-a5e3-372c36f44a92",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,9",
@@ -14455,7 +14455,7 @@
     "da": "Pladespiller"
    },
    "cat": "/pladespiller/pladespillere/",
-   "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
+   "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
    "kind": "source",
    "scope": "diagram",
    "facets": {
@@ -14464,14 +14464,15 @@
    },
    "variants": [
     {
-     "sku": "ARGTTMK2WA",
-     "label": "Valnød",
+     "sku": "ARGTTMK2GR",
+     "label": "Pine Green",
      "price": 1599,
      "was": 1999,
-     "colorKey": "Wood",
-     "ean": "5706957016914",
-     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
-     "img": "hk:2aa2b430-fd10-4c79-9106-36ecbda631c5",
+     "colorKey": "Green",
+     "hex": "#305544",
+     "ean": "5706957016891",
+     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
+     "img": "hk:bcd25129-2e59-4fa0-b065-03a2549217d5",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "6,2",
@@ -14498,15 +14499,14 @@
      }
     },
     {
-     "sku": "ARGTTMK2GR",
-     "label": "Pine Green",
+     "sku": "ARGTTMK2WA",
+     "label": "Valnød",
      "price": 1599,
      "was": 1999,
-     "colorKey": "Green",
-     "hex": "#305544",
-     "ean": "5706957016891",
-     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
-     "img": "hk:bcd25129-2e59-4fa0-b065-03a2549217d5",
+     "colorKey": "Wood",
+     "ean": "5706957016914",
+     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
+     "img": "hk:2aa2b430-fd10-4c79-9106-36ecbda631c5",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "6,2",
@@ -16707,7 +16707,7 @@
      "DALIRUBIKORE2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSN530",
@@ -16803,7 +16803,7 @@
      "HEGELH400"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSP130",
@@ -16929,7 +16929,7 @@
      "BLSPULSESUBPLUS"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSP230",
@@ -17029,7 +17029,7 @@
      "BLSCB130"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSP431",
@@ -17139,7 +17139,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSP530",
@@ -17236,7 +17236,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSPULSE2I",
@@ -17336,7 +17336,7 @@
      "BLSPULSEMINI2I"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSPULSEMINI2I",
@@ -17436,7 +17436,7 @@
      "NADM10V3"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSRC1",
@@ -17486,7 +17486,7 @@
      "NADM33"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSSW200",
@@ -17561,7 +17561,7 @@
      "BLSP230"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSWM100",
@@ -17602,7 +17602,7 @@
      "BLSPULSEFLEX2I"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSWM200",
@@ -17663,7 +17663,7 @@
      "BLSPULSEMINI2I"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BLSWM230",
@@ -17721,7 +17721,7 @@
      "BLSP230"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BO11X",
@@ -17848,7 +17848,7 @@
      "KEFMU3"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOA1G3",
@@ -18011,7 +18011,7 @@
      "MARMIDDLETON2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOA5",
@@ -18161,7 +18161,7 @@
      "BOBALANCE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOA9V5",
@@ -18284,7 +18284,7 @@
      "BOEMERGE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOA9WB",
@@ -18326,7 +18326,7 @@
      "BOA9V5"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOBALANCE",
@@ -18372,7 +18372,7 @@
      "ean": "5705260082272",
      "url": "/bang--olufsen-beosound-balance-traadloes-hoejtaler/bobalancebkx/",
      "img": "hk:300550b7-e78d-49e7-bd8d-c659acedb640",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "10",
       "Vægt emballage (kg)": "11",
@@ -18432,7 +18432,7 @@
      "BOEXPLORE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOBEOAMP2",
@@ -18491,14 +18491,14 @@
     "alt": [
      "BLSN230",
      "BLSN330",
-     "NADCI720V2",
      "SONAMP",
      "DENHOMEAMP",
      "MARAMODELM1",
-     "MARAMODELM4",
      "NADCI8-120DSP",
      "NADCI980",
-     "BLSN331"
+     "BLSN331",
+     "NADCI720V2",
+     "MARAMODELM4"
     ],
     "rec": [
      "BOC62",
@@ -18508,7 +18508,7 @@
      "BOLCR66"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOBEOLIT20",
@@ -18594,7 +18594,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOBEOS2",
@@ -18624,7 +18624,7 @@
      "ean": "5705260099447",
      "url": "/bang--olufsen-beosound-2-3rd-gen.-traadloes-hoejtaler/bobeos2v3go/",
      "img": "hk:fa0faa7f-14f4-49f9-90bf-8f2f413cdc6f",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "4,1",
       "Vægt emballage (kg)": "5,23",
@@ -18700,7 +18700,7 @@
      "BOEMERGE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC106",
@@ -18750,10 +18750,10 @@
    },
    "rel": {
     "acc": [
+     "BOCADVGRILL10",
      "AQROCKET22SC",
      "AQROCKET33SCX",
-     "AQSLIPXTREM14-4SCX",
-     "BOCADVGRILL10"
+     "AQSLIPXTREM14-4SCX"
     ],
     "alt": [
      "BOC86",
@@ -18770,7 +18770,7 @@
      "HEGELH600"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC62",
@@ -18824,8 +18824,8 @@
      "AQSLIPDB14-2SCX",
      "ESSBBGHOSTBOX24X",
      "DALIPHANTOMBB25L",
-     "BOCADVGRILL6-8",
-     "ESSCL1SCPROX"
+     "ESSCL1SCPROX",
+     "BOCADVGRILL6-8"
     ],
     "alt": [
      "BOC82",
@@ -18836,14 +18836,14 @@
      "BWCCM683"
     ],
     "rec": [
-     "BOBEOAMP2",
      "BLSN230",
      "SONAMP",
      "DENHOMEAMP",
-     "NADCI980"
+     "NADCI980",
+     "BOBEOAMP2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC66",
@@ -18919,7 +18919,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC82",
@@ -18996,7 +18996,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC82DT",
@@ -19068,7 +19068,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOC86",
@@ -19142,7 +19142,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOCADVGRILL10",
@@ -19180,7 +19180,7 @@
      "BOC106"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOCADVGRILL6-8",
@@ -19239,7 +19239,7 @@
      "BOC86"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOEMERGE",
@@ -19318,7 +19318,7 @@
      "BOA5"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOEXPLORE",
@@ -19447,7 +19447,7 @@
      "NOONAOFLIXX"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOH100",
@@ -19579,7 +19579,7 @@
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOH95",
@@ -19708,7 +19708,7 @@
      "SONYWH1000XX"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOHALOTABLE",
@@ -19735,7 +19735,7 @@
      "ean": "5705260092554",
      "url": "/bang--olufsen-beoremote-halo-table-fjernbetjening/bohalotablego/",
      "img": "hk:d0bc602c-1483-47dc-934c-fffc4f66c7c9",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,8",
       "Vægt emballage (kg)": "1",
@@ -19794,7 +19794,7 @@
      "BOHALOWALL"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOHALOWALL",
@@ -19877,7 +19877,7 @@
      "BOHALOTABLE"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOHX",
@@ -19993,7 +19993,7 @@
      "BWPX8"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOLCR66",
@@ -20070,7 +20070,7 @@
      "MARACINEMA50S2"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOLEVEL",
@@ -20101,7 +20101,7 @@
      "ean": "5705260082500",
      "url": "/bang--olufsen-beosound-level-traadloes-hoejtaler-med-batteri/bolevelgox/",
      "img": "hk:82734d77-a672-4526-bcb8-d306d19c403d",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "3,3",
       "Vægt emballage (kg)": "5,75",
@@ -20155,7 +20155,7 @@
      "BOBEOLIT20"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOLEVELWB",
@@ -20196,7 +20196,7 @@
      "BOLEVEL"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOPGRILLLCR",
@@ -20234,7 +20234,7 @@
      "BOLCR66"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BOTHTR66",
@@ -20308,7 +20308,7 @@
      "NADT778"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-20"
   },
   {
    "sku": "BRODALIDEMOCDX5",
@@ -31428,7 +31428,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33739,6 +33739,7 @@
      "sku": "DALIOBERONONWALLLOA",
      "label": "Lys eg",
      "price": 3498,
+     "was": 4598,
      "colorKey": "Wood",
      "url": "/dali-oberon-on-wall-vaeghoejtaler/dalioberononwallloa/",
      "img": "hk:70891e55-9ce6-4a80-a8c8-3177c25ca468"
@@ -33806,6 +33807,90 @@
     ]
    },
    "read": "2026-11-19"
+  },
+  {
+   "sku": "DALIOBERONONWALLC",
+   "brand": "DALI",
+   "model": "OBERON ON-WALL C",
+   "type": {
+    "key": "CompactSpeakerActive",
+    "da": "Kompakt højtaler – Aktive"
+   },
+   "cat": "/hojtalere/kompakt-hojtaler/",
+   "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
+   "kind": "speaker",
+   "scope": "diagram",
+   "facets": {
+    "active": true,
+    "mount": "stand",
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "DALIOBERONONWALLCWH",
+     "label": "Hvid mat",
+     "price": 4999,
+     "colorKey": "White",
+     "ean": "5703120110868",
+     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
+     "img": "hk:044e57ff-1fc1-4515-a023-d05fb98a07e0",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "5",
+      "Vægt emballage (kg)": "6,1",
+      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "DALIOBERONONWALLCOA",
+     "label": "Lys eg",
+     "price": 4999,
+     "colorKey": "Wood",
+     "ean": "5703120110899",
+     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcoa/",
+     "img": "hk:a2156b47-c0c3-47f5-9dce-afaa4121b951",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "5",
+      "Vægt emballage (kg)": "6,1",
+      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Frekvensområde (-3dB)": "51 - 26000 Hz",
+    "Kabinet type": "Basrefleks",
+    "Delefrekvens": "2700",
+    "Diskant": "29mm Diamond Dome",
+    "Bas": "1x 5.25\" Low-loss med træfiber-membran (SMC)",
+    "Højtaler type": "Aktive HiFi højtalere",
+    "Spikes inkluderet": "Ja (også gummifødder)"
+   },
+   "rel": {
+    "acc": [
+     "DALISOUNDHUBCOMP",
+     "DALISOUNDHUB",
+     "DALIWSR"
+    ],
+    "alt": [
+     "DALIOBERON1C",
+     "DALIOBERON7C",
+     "ARGFORTEA5MK2",
+     "ARGFORTEA4MK2",
+     "KEFLSX2LT",
+     "KEFLSX2",
+     "KEFLS50W2"
+    ],
+    "rec": [
+     "DALISUBE9F",
+     "DALISUBE12F",
+     "DALISUBC8D",
+     "ARGMALMOSUB10X",
+     "DALIOBERONVOKALC",
+     "DALIBASUBC8D"
+    ]
+   },
+   "read": "2026-11-20"
   },
   {
    "sku": "DALIOPTICON1MK2",
@@ -54349,22 +54434,6 @@
      }
     },
     {
-     "sku": "JBLLIVE780BL",
-     "label": "Blå",
-     "price": 799,
-     "was": 1299,
-     "colorKey": "Blue",
-     "ean": "1200130033483",
-     "url": "/jbl-live-780nc-traadloest-headset/jbllive780bl/",
-     "img": "hk:dccf6b7f-80c1-4c9b-b76a-58cbf9b874db",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,26",
-      "Vægt emballage (kg)": "0,48",
-      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVE780GR",
      "label": "Grøn",
      "price": 799,
@@ -54374,6 +54443,22 @@
      "url": "/jbl-live-780nc-traadloest-headset/jbllive780gr/",
      "img": "hk:6bb39357-883d-4602-af29-f1044a66d382",
      "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "0,26",
+      "Vægt emballage (kg)": "0,48",
+      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVE780BL",
+     "label": "Blå",
+     "price": 799,
+     "was": 1299,
+     "colorKey": "Blue",
+     "ean": "1200130033483",
+     "url": "/jbl-live-780nc-traadloest-headset/jbllive780bl/",
+     "img": "hk:dccf6b7f-80c1-4c9b-b76a-58cbf9b874db",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,26",
       "Vægt emballage (kg)": "0,48",
@@ -75964,7 +76049,8 @@
    "kind": "source",
    "scope": "diagram",
    "facets": {
-    "role": "turntable"
+    "role": "turntable",
+    "axis": "colour"
    },
    "variants": [
     {
@@ -75975,6 +76061,21 @@
      "ean": "9120129869355",
      "url": "/pro-ject-x1-b-pladespiller/prjx1beucapip/",
      "img": "hk:e20dde37-128a-4ee1-ace2-27715f5df8c1",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "7",
+      "Vægt emballage (kg)": "9,5",
+      "Mål (emballage)": "40 x 25 x 49 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "PRJX1BWAPIP",
+     "label": "Træfarvet",
+     "price": 8599,
+     "colorKey": "Wood",
+     "ean": "9120129862868",
+     "url": "/pro-ject-x1-b-pladespiller/prjx1bwapip/",
+     "img": "hk:18888604-98c1-4e29-99c9-14aef9a3eca7",
      "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "7",
@@ -76005,21 +76106,6 @@
      "ean": "9120137908862",
      "url": "/pro-ject-x1-b-pladespiller/prjx1bmabkpip/",
      "img": "hk:e09011b2-afea-431e-bbf8-cbfee5dd905b",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "7",
-      "Vægt emballage (kg)": "9,5",
-      "Mål (emballage)": "40 x 25 x 49 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "PRJX1BWAPIP",
-     "label": "Træfarvet",
-     "price": 8599,
-     "colorKey": "Wood",
-     "ean": "9120129862868",
-     "url": "/pro-ject-x1-b-pladespiller/prjx1bwapip/",
-     "img": "hk:18888604-98c1-4e29-99c9-14aef9a3eca7",
      "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "7",
@@ -78168,54 +78254,6 @@
      }
     },
     {
-     "sku": "SAMTQ55QN72H",
-     "label": "55\"",
-     "price": 7999,
-     "colorKey": "Black",
-     "ean": "8806099124298",
-     "url": "/samsung-qn72h-neo-qled-tv/samtq55qn72h/",
-     "img": "hk:06a172d4-124f-4538-89c0-463a1c6b9939",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "18,1",
-      "Vægt emballage (kg)": "18,5",
-      "Skærmstørrelse": "55\"",
-      "VESA": "200x200",
-      "Vægt inkl. bordstativ, kg": "14,2",
-      "Mål inkl. stander, cm (BxHxD)": "123,2 x 76,8 x 23,9",
-      "Vægt ekskl. bordstativ, kg": "13,8",
-      "Mål ekskl. stander, cm (BxHxD)": "123,2 x 70,9 x 2,6",
-      "Slim Fit Wallmount kompatibel": "Nej",
-      "Full-motion Slim Wallmount kompatibel": "Nej",
-      "Auto Rotating Wallmount kompatibel": "Nej",
-      "Mål (emballage)": "12,7 x 74,3 x 122,8 cm (bredde x højde x dybde)",
-      "Bluetooth ": "Ja",
-      "Bluetooth version": "5.3",
-      "Total HDMI Inputs": "3x",
-      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM)",
-      "HDMI ARC/eARC": "eARC (Port 1)",
-      "Antal USB-porte": "2x",
-      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2)",
-      "Wi-Fi version": "Wi-Fi 5 (802.11ac)",
-      "Styresystem": "Tizen",
-      "Mikrofon": "Ja",
-      "USB Recording": "Ja",
-      "Stemmestyring": "Indbygget",
-      "Stemmeassistenter": "Samsung Bixby",
-      "Elektronisk Programguide (EPG)": "Ja",
-      "Pausefunktion": "Nej",
-      "EPREL Code": "2571556",
-      "Opløsning": "4K Ultra HD",
-      "Skærmteknologi": "Neo QLED, Mini LED",
-      "HDR-formater": "HDR10",
-      "Billedprocessor": "NQ4 AI Processor",
-      "Game mode": "Ja",
-      "Full / edge backlight": "Mini LED",
-      "Skærmopdatering (Hz)": "60Hz",
-      "Energy Efficiency": "E"
-     }
-    },
-    {
      "sku": "SAMTQ50QN72H",
      "label": "50\"",
      "price": 7499,
@@ -78253,6 +78291,54 @@
       "Elektronisk Programguide (EPG)": "Ja",
       "Pausefunktion": "Nej",
       "EPREL Code": "2571542",
+      "Opløsning": "4K Ultra HD",
+      "Skærmteknologi": "Neo QLED, Mini LED",
+      "HDR-formater": "HDR10",
+      "Billedprocessor": "NQ4 AI Processor",
+      "Game mode": "Ja",
+      "Full / edge backlight": "Mini LED",
+      "Skærmopdatering (Hz)": "60Hz",
+      "Energy Efficiency": "E"
+     }
+    },
+    {
+     "sku": "SAMTQ55QN72H",
+     "label": "55\"",
+     "price": 7999,
+     "colorKey": "Black",
+     "ean": "8806099124298",
+     "url": "/samsung-qn72h-neo-qled-tv/samtq55qn72h/",
+     "img": "hk:06a172d4-124f-4538-89c0-463a1c6b9939",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "18,1",
+      "Vægt emballage (kg)": "18,5",
+      "Skærmstørrelse": "55\"",
+      "VESA": "200x200",
+      "Vægt inkl. bordstativ, kg": "14,2",
+      "Mål inkl. stander, cm (BxHxD)": "123,2 x 76,8 x 23,9",
+      "Vægt ekskl. bordstativ, kg": "13,8",
+      "Mål ekskl. stander, cm (BxHxD)": "123,2 x 70,9 x 2,6",
+      "Slim Fit Wallmount kompatibel": "Nej",
+      "Full-motion Slim Wallmount kompatibel": "Nej",
+      "Auto Rotating Wallmount kompatibel": "Nej",
+      "Mål (emballage)": "12,7 x 74,3 x 122,8 cm (bredde x højde x dybde)",
+      "Bluetooth ": "Ja",
+      "Bluetooth version": "5.3",
+      "Total HDMI Inputs": "3x",
+      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM)",
+      "HDMI ARC/eARC": "eARC (Port 1)",
+      "Antal USB-porte": "2x",
+      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2)",
+      "Wi-Fi version": "Wi-Fi 5 (802.11ac)",
+      "Styresystem": "Tizen",
+      "Mikrofon": "Ja",
+      "USB Recording": "Ja",
+      "Stemmestyring": "Indbygget",
+      "Stemmeassistenter": "Samsung Bixby",
+      "Elektronisk Programguide (EPG)": "Ja",
+      "Pausefunktion": "Nej",
+      "EPREL Code": "2571556",
       "Opløsning": "4K Ultra HD",
       "Skærmteknologi": "Neo QLED, Mini LED",
       "HDR-formater": "HDR10",
@@ -81900,7 +81986,7 @@
     "da": "USB-kabel"
    },
    "cat": "/kabler/digital-kabel/",
-   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
+   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -87699,7 +87785,8 @@
     {
      "sku": "SONYK65XR9P",
      "label": "65\"",
-     "price": 24999,
+     "price": 9999,
+     "was": 24999,
      "colorKey": "Black",
      "ean": "4548736166066",
      "url": "/sony-bravia-9-mini-led-tv/sonyk65xr9p/",
@@ -88915,22 +89002,6 @@
      }
     },
     {
-     "sku": "SONYWH1000XM6S",
-     "label": "Sølv",
-     "price": 2490,
-     "was": 3299,
-     "colorKey": "Silver",
-     "ean": "4548736162662",
-     "url": "/sony-wh-1000xm6-traadloest-headset/sonywh1000xm6s/",
-     "img": "hk:1dd6d9c8-1318-439b-83f2-c9f6b3983e33",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,27",
-      "Vægt emballage (kg)": "0,71",
-      "Mål (emballage)": "20 x 25,7 x 7,8 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "SONYWH1000XM6P",
      "label": "Pink",
      "price": 2490,
@@ -88939,6 +89010,22 @@
      "ean": "4548736175242",
      "url": "/sony-wh-1000xm6-traadloest-headset/sonywh1000xm6p/",
      "img": "hk:d80bcc03-19b8-42ea-a266-d097e1f718c9",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,27",
+      "Vægt emballage (kg)": "0,71",
+      "Mål (emballage)": "20 x 25,7 x 7,8 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "SONYWH1000XM6S",
+     "label": "Sølv",
+     "price": 2490,
+     "was": 3299,
+     "colorKey": "Silver",
+     "ean": "4548736162662",
+     "url": "/sony-wh-1000xm6-traadloest-headset/sonywh1000xm6s/",
+     "img": "hk:1dd6d9c8-1318-439b-83f2-c9f6b3983e33",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,27",

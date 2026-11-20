@@ -376,11 +376,12 @@
      "productCode": "BOBALANCEBKX"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 20. november",
-     "deliveryDate": "2026-11-20T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

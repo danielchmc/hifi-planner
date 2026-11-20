@@ -344,6 +344,29 @@
    "hifiPlanner": []
   },
   {
+   "type": "Kompakt højtaler – Aktive",
+   "keys": {
+    "CompactSpeakerActive": 22
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 22
+   },
+   "count": 23,
+   "bundles": 6,
+   "outlet": 1,
+   "products": 16,
+   "inCatalogue": 15,
+   "variantAxes": {
+    "colorOptions": 17,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Active Speakers",
+    "Compact Speakers"
+   ]
+  },
+  {
    "type": "Head-fi høretelefoner",
    "keys": {
     "Headfi": 22
@@ -386,29 +409,6 @@
    ]
   },
   {
-   "type": "Kompakt højtaler – Aktive",
-   "keys": {
-    "CompactSpeakerActive": 21
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 21
-   },
-   "count": 22,
-   "bundles": 6,
-   "outlet": 1,
-   "products": 15,
-   "inCatalogue": 15,
-   "variantAxes": {
-    "colorOptions": 16,
-    "none": 6
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Active Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "MM-pickup",
    "keys": {
     "MMpickup": 21
@@ -441,9 +441,8 @@
    "products": 19,
    "inCatalogue": 19,
    "variantAxes": {
-    "colorOptions": 17,
-    "dropDown": 2,
-    "none": 1
+    "colorOptions": 18,
+    "dropDown": 2
    },
    "mapped": "cats",
    "hifiPlanner": [
