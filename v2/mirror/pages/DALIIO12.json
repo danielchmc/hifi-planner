@@ -13,6 +13,20 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.2 ( aptX, aptX HD, aptX Adaptive, AAC )"
+  },
+  "gallery": [
+   "9a937295-bf3a-4983-bca1-21c82294e96e",
+   "7192da4f-cbb0-4406-97de-2c20feb7eb5f",
+   "10bc8dcb-8ec2-4ac7-a9b8-be45229b2393",
+   "76091d9a-8c68-4c01-bda4-414f1f9d483a",
+   "c3c92520-81d6-43fa-be82-cd2d12af4258",
+   "60f05921-15d3-40ba-b6d6-103043bd498c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 215147,
   "skuCode": "DALIIO12",
@@ -215,7 +229,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 31,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -349,7 +363,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 10,
+     "availableQuantity": 9,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -484,53 +498,59 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI IO-12 leverer en usædvanligt klar, naturlig og medrivende lyd med imponerende detaljer, rumfornemmelse og musikalsk dybde på tværs af genrer. De store ørekopper og den generelt fremragende komfort gør lange lyttesessioner behagelige, mens kabel-, USB- og Bluetooth-afspilning alle klarer sig stærkt. De største kompromiser er den meget høje pris, de begrænsede app- og EQ-muligheder, middelmådig ANC sammenlignet med Bose, Sony og Apple samt en stor eller ved bevægelse til tider usikker pasform.",
+   "summary": "DALI IO-12 leverer en usædvanligt varm, klar, detaljeret og medrivende lyd med imponerende lagdeling, rumfornemmelse og dynamik på tværs af musikgenrer. De store ørekopper giver mange lyttere fremragende komfort under lange sessioner, mens afspilning via kabel, USB og Bluetooth er på et meget højt niveau. De største kompromiser er kun middelmådig støjreduktion, et stort og til tider tungt design, begrænsede app-baserede lydindstillinger og en høj pris.",
    "headlines": {
     "detailed, spacious and highly musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser gentagne gange den rene, naturlige og detaljerede gengivelse, den gode separation og den overbevisende rumfornemmelse.",
-     "simpleTitle": "Detaljeret, rummelig og meget musikalsk lyd",
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent en klar, naturlig og meget detaljeret gengivelse med god instrumentseparation, dybde og rumfornemmelse.",
+     "simpleTitle": "Detaljeret, rummelig og musikalsk lyd",
      "bias": "positive",
-     "key": "sound_detail",
-     "groupId": "4c634491-5187-490f-8177-bf2d02e77011"
+     "key": "sound",
+     "groupId": "64a869e3-1a7c-4043-b1bf-751616d7f6f9"
     },
-    "premium performance justifies the high price for many": {
-     "sentimentAnalysis": "Mange ejere mener, at den fremragende lyd og byggekvalitet er merprisen værd trods den høje købspris.",
-     "simpleTitle": "Premiumydelsen retfærdiggør den høje pris for mange",
+    "excellent comfort for long listening sessions": {
+     "sentimentAnalysis": "Store ørekopper og blød polstring roses gentagne gange for at passe til store ører og forblive behagelige i timevis.",
+     "simpleTitle": "Fremragende komfort til lange lytte-sessioner",
      "bias": "positive",
-     "key": "value_premium",
-     "groupId": "6424966b-e04e-45cc-be28-a10636eb63f6"
+     "key": "comfort",
+     "groupId": "33be2cd9-9c90-4b42-9ffd-20c0ddd6de73"
     },
-    "comfortable for long listening": {
-     "sentimentAnalysis": "Store ørekopper og bløde puder beskrives ofte som behagelige i flere timer eller endda hele dagen.",
-     "simpleTitle": "Behagelig til lang tids lytning",
+    "simple controls and broad wired and wireless support": {
+     "sentimentAnalysis": "Anmeldelserne roser den intuitive betjening på hovedtelefonen, hurtig parring, stærk Bluetooth-ydeevne og fremragende gengivelse via USB eller kabel uden behov for en app.",
+     "simpleTitle": "Enkel betjening og alsidig kablet og trådløs brug",
      "bias": "positive",
-     "key": "comfort_long",
-     "groupId": "31324eeb-0486-4205-97cd-9988343656e4"
+     "key": "connectivity",
+     "groupId": "91a00eba-680e-491e-b12b-d785deb837e7"
     },
-    "the fit can feel heavy or insecure during movement": {
-     "sentimentAnalysis": "Trods mange positive komfortanmeldelser nævner flere brugere tryk fra hovedbøjlen, vægt, størrelse eller utilstrækkeligt greb under bevægelse.",
-     "simpleTitle": "Pasformen kan føles tung eller usikker under bevægelse",
+    "headband and weight can reduce comfort": {
+     "sentimentAnalysis": "Nogle ejere finder den tunge konstruktion eller den sparsomt polstrede hovedbøjle ukomfortabel, mens andre oplever, at pasformen bliver for løs under bevægelse.",
+     "simpleTitle": "Hovedbøjle og vægt kan påvirke komforten",
      "bias": "negative",
-     "key": "fit_movement",
-     "groupId": "31324eeb-0486-4205-97cd-9988343656e4"
+     "key": "comfort",
+     "groupId": "33be2cd9-9c90-4b42-9ffd-20c0ddd6de73"
     },
-    "noise cancellation is good but not class-leading": {
-     "sentimentAnalysis": "Flere anmeldelser finder ANC acceptabel eller effektiv, men svagere end de førende alternativer fra Bose, Sony og Apple.",
-     "simpleTitle": "Støjreduktionen er god, men ikke førende",
+    "large design limits travel and active use": {
+     "sentimentAnalysis": "Hovedtelefonerne vurderes generelt som bedre til hjemmebrug end træning eller rejser på grund af størrelse, vægt, etui og følsomhed over for bevægelse eller sved.",
+     "simpleTitle": "Det store design begrænser rejser og aktiv brug",
      "bias": "negative",
-     "key": "anc_limited",
-     "groupId": "6c53d035-a8b7-4dd4-985b-8d71ad1b15fa"
+     "key": "portability",
+     "groupId": "17f2e579-784e-4d29-b75d-d26face044b5"
+    },
+    "anc is good but behind leading competitors": {
+     "sentimentAnalysis": "Støjreduktionen vurderes som funktionel og til tider god, men flere sammenligninger placerer Apple, Sony eller Bose klart foran.",
+     "simpleTitle": "ANC er god, men halter efter de bedste konkurrenter",
+     "bias": "negative",
+     "key": "anc",
+     "groupId": "c6083f34-ab19-481e-8854-cf3186dc7b0c"
     }
    },
    "grouping": {
-    "4c634491-5187-490f-8177-bf2d02e77011": {
+    "64a869e3-1a7c-4043-b1bf-751616d7f6f9": {
      "title": "Lydkvalitet",
-     "id": "4c634491-5187-490f-8177-bf2d02e77011",
+     "id": "64a869e3-1a7c-4043-b1bf-751616d7f6f9",
      "references": [
       "f9a81259-0b36-463a-a74b-cab6f1fbd511",
       "b66876ef-6f26-4ae4-8700-019a0853cf06",
       "257fd50c-df01-468a-8d26-974f39160246",
-      "ba285548-77fb-41af-8dfe-95d21d7572e8",
       "c21d0fa1-1ca2-4ad6-8811-c5bb1e3829ba",
       "c9d8a76f-44f4-49c1-b1e1-12e1c021458c",
       "ab20996e-40b2-4140-9b24-0212ac78ccf8",
@@ -542,9 +562,7 @@
       "7d59e1c0-5912-4ad5-bacc-323122fcab5c",
       "0ce17975-8847-4af6-9d15-7c9a7e7273a3",
       "1876fede-0246-4899-8b0c-deab48fd9676",
-      "a5b6442a-9fc7-45cc-a953-589c83dea25e",
       "da4db658-1d18-4f3d-b350-2aa9a49a7dc1",
-      "94e9323c-e86e-47d7-b3be-e721fd5b9410",
       "c693fd2a-4314-41da-bb13-4da8413940a4",
       "65f01e53-fbb2-49c3-8582-d56d7ab63410",
       "3c4d89e3-2399-4a99-823c-e70d7a630ede",
@@ -556,7 +574,6 @@
       "e0f5f19a-3261-412b-8659-e61887f081c4",
       "e04d90ad-667d-42b1-b962-bf3c5e329818",
       "ddc99ea3-a7f4-4292-bd91-232fe3c54855",
-      "b882ae03-720c-4854-a74b-70284441e9cc",
       "c3278f95-6bbe-4583-8156-f1d62e85dd68",
       "80776769-cb66-4068-92ef-e4650943ed06",
       "a6c48a32-97db-44c3-b937-99c82d3864ba",
@@ -571,7 +588,6 @@
       "c48c4850-a302-47ba-8879-ec086a618632",
       "6d5f106a-f8c4-4ff7-8f28-86fd4f95d804",
       "da7b1bde-ef21-4baf-93db-2931aac684c9",
-      "a66f0349-52e5-405e-b737-30cbabe414f7",
       "41421767-49bf-40bf-a784-7aedec9eeab9",
       "60041541-6634-4ba1-8ba9-f541584d4fe5",
       "33031009-e033-48df-b89c-162756d51a5f",
@@ -581,17 +597,14 @@
       "70ebf4fd-de22-4e2d-8168-873704190c2e",
       "047de842-c9d0-46bb-9b28-579cd639f9ed",
       "5f9e03c7-95f1-4ada-9318-4eb4682461fa",
-      "4ce26c32-398e-4262-85a6-2ecadf07d924",
       "c4ba3eda-b7b1-4852-8563-c8686044eef6",
       "4336fd8f-386a-486d-92f3-8e8b5c7b1954",
-      "d69de775-971f-40b1-8315-aad81b4d63c8",
       "befd7811-f487-46d7-9a9c-e6c7e0ef3ddd",
       "eca3b420-f507-4b9a-a25b-fa97a35f8102",
       "6ec7621b-be8b-4662-afc8-ef1930e7d251",
       "50373da4-1c38-4944-979e-cc5e39269fc9",
       "bbcbecb1-b6d1-4884-ad75-3131abd9b996",
       "3c4631fa-e8db-43b5-b59a-2e2e072c4914",
-      "31e73bd5-74a2-4cb6-bfda-c2d395950164",
       "83e9560f-4c15-41b7-916f-5c3a2f903c74",
       "b35536e5-dd9d-4ce9-93ac-6d33c59ca604",
       "267db75e-15cb-439b-90a7-88aaf7b4b0f9",
@@ -614,21 +627,17 @@
       "7342bbae-9396-4a01-91ba-7a045a4efb7f",
       "eee05e8e-bea0-476a-abd1-830bc8e16ea5",
       "1fa30d10-8357-4560-a258-ffc5ab189848",
-      "d47ba091-4708-4967-a3b8-bc71c5275dad",
       "b9f05078-0337-4f76-89fe-21b8e60e64d5",
       "1da3517e-212b-4b15-a769-986efb3232c4",
       "3be6ecea-060e-4773-a7c2-028294af860f",
       "29b4a7ab-26af-4d1a-910a-448fcbff8e34",
       "c732c1cb-b9e0-411f-9289-033e8420378b",
       "f0c3aa2c-1594-40b9-8fa5-738d59f18971",
-      "08aebdc4-58df-4372-b6aa-f44283667d27",
       "8e8f7429-bdbc-466c-84f3-02a75a392637",
       "5440fa86-e694-4a51-a459-fe4431ae8deb",
       "98cd2444-2bcf-46c3-a8dd-ccc62d80dfc3",
       "40738098-b564-485a-8d51-ded6b1b48bd6",
       "a5dbe9bf-64d8-45d2-8a9c-d4bc35bb48cc",
-      "59b41da8-a701-46f1-a9ad-9ddee6e3225d",
-      "c16aee20-211a-4e3b-8140-c8e04f4c6a2d",
       "7c041380-4a2a-46ad-9e43-6bc124eb152f",
       "54062bab-ef9a-44c0-8704-bcaf87ffb825",
       "1ea0a623-ba8c-4952-a9a5-9a7557fcacb7",
@@ -639,28 +648,27 @@
       "c1c4f000-b9b2-4d46-8533-0937aa051510"
      ]
     },
-    "31324eeb-0486-4205-97cd-9988343656e4": {
+    "33be2cd9-9c90-4b42-9ffd-20c0ddd6de73": {
      "title": "Komfort",
-     "id": "31324eeb-0486-4205-97cd-9988343656e4",
+     "id": "33be2cd9-9c90-4b42-9ffd-20c0ddd6de73",
      "references": [
       "257fd50c-df01-468a-8d26-974f39160246",
       "3c653789-2bb4-41d5-983f-1a7a09cc911d",
       "3ec2ee3f-398b-4839-a6d2-78568849b866",
       "195f4902-2213-4e4c-946d-4a3cf7bf811b",
-      "d960fa79-d09b-4494-a115-dfa4939a33df",
       "94e9323c-e86e-47d7-b3be-e721fd5b9410",
       "7919a0ee-c4f2-48d5-b4b3-e1b876efc2c4",
       "96faf097-0e17-4c4c-995d-95ad4a544fc6",
       "e0f5f19a-3261-412b-8659-e61887f081c4",
+      "e04d90ad-667d-42b1-b962-bf3c5e329818",
       "ddc99ea3-a7f4-4292-bd91-232fe3c54855",
       "b882ae03-720c-4854-a74b-70284441e9cc",
-      "c3278f95-6bbe-4583-8156-f1d62e85dd68",
       "80776769-cb66-4068-92ef-e4650943ed06",
       "5730a475-4e0f-4e1b-895d-4716506f1494",
       "f9543201-1d63-4371-9732-f4d750462103",
       "6d5f106a-f8c4-4ff7-8f28-86fd4f95d804",
       "a66f0349-52e5-405e-b737-30cbabe414f7",
-      "33031009-e033-48df-b89c-162756d51a5f",
+      "dcfa7070-9dca-4ecd-a0c4-dc8a05759665",
       "af4ae884-a050-41e9-8724-e3381c3d09e3",
       "047de842-c9d0-46bb-9b28-579cd639f9ed",
       "c4ba3eda-b7b1-4852-8563-c8686044eef6",
@@ -676,61 +684,61 @@
       "29b4a7ab-26af-4d1a-910a-448fcbff8e34",
       "c732c1cb-b9e0-411f-9289-033e8420378b",
       "f0c3aa2c-1594-40b9-8fa5-738d59f18971",
-      "98cd2444-2bcf-46c3-a8dd-ccc62d80dfc3",
-      "40738098-b564-485a-8d51-ded6b1b48bd6",
-      "59b41da8-a701-46f1-a9ad-9ddee6e3225d",
-      "7c041380-4a2a-46ad-9e43-6bc124eb152f",
-      "54062bab-ef9a-44c0-8704-bcaf87ffb825",
+      "b9f05078-0337-4f76-89fe-21b8e60e64d5",
+      "3be6ecea-060e-4773-a7c2-028294af860f",
       "4dc88209-98b3-47a0-bb5b-c63b5c19ff64",
       "c1c4f000-b9b2-4d46-8533-0937aa051510"
      ]
     },
-    "6424966b-e04e-45cc-be28-a10636eb63f6": {
-     "title": "Pris og værdi",
-     "id": "6424966b-e04e-45cc-be28-a10636eb63f6",
+    "91a00eba-680e-491e-b12b-d785deb837e7": {
+     "title": "Tilslutning og betjening",
+     "id": "91a00eba-680e-491e-b12b-d785deb837e7",
      "references": [
-      "195f4902-2213-4e4c-946d-4a3cf7bf811b",
-      "1876fede-0246-4899-8b0c-deab48fd9676",
-      "7919a0ee-c4f2-48d5-b4b3-e1b876efc2c4",
-      "da4db658-1d18-4f3d-b350-2aa9a49a7dc1",
-      "c48c4850-a302-47ba-8879-ec086a618632",
-      "6d5f106a-f8c4-4ff7-8f28-86fd4f95d804",
-      "4792bf50-8c7a-43dd-bdac-f4d949309b66",
-      "a66f0349-52e5-405e-b737-30cbabe414f7",
-      "41421767-49bf-40bf-a784-7aedec9eeab9",
-      "af4ae884-a050-41e9-8724-e3381c3d09e3",
-      "5440fa86-e694-4a51-a459-fe4431ae8deb",
-      "2610314c-aa53-43e5-821d-4a4cda84cf09",
-      "eb22c557-1a1e-4517-a7e7-2770141853e3",
-      "243eaaf5-f975-4fde-bdcb-4c0879b46002",
-      "fad61311-2b46-45c2-a77e-d2744a1e4cec",
-      "5ef5f9df-9c2a-452b-973b-20aee22e3e2a",
+      "d960fa79-d09b-4494-a115-dfa4939a33df",
+      "41325640-da72-4b47-98c3-78ef1826fa80",
+      "65f01e53-fbb2-49c3-8582-d56d7ab63410",
+      "e04d90ad-667d-42b1-b962-bf3c5e329818",
+      "249650e3-500c-4a2b-ba68-6c9284faa5c5",
+      "60041541-6634-4ba1-8ba9-f541584d4fe5",
+      "33031009-e033-48df-b89c-162756d51a5f",
+      "5f9e03c7-95f1-4ada-9318-4eb4682461fa",
+      "4ce26c32-398e-4262-85a6-2ecadf07d924",
+      "617c1eff-123c-4916-b201-0cee85cd946f",
+      "c732c1cb-b9e0-411f-9289-033e8420378b",
       "f0c3aa2c-1594-40b9-8fa5-738d59f18971",
-      "08aebdc4-58df-4372-b6aa-f44283667d27",
-      "5440fa86-e694-4a51-a459-fe4431ae8deb",
-      "98cd2444-2bcf-46c3-a8dd-ccc62d80dfc3",
-      "40738098-b564-485a-8d51-ded6b1b48bd6",
-      "d3dbf97f-bc02-41e5-979d-914a8f0b1e25",
-      "7c041380-4a2a-46ad-9e43-6bc124eb152f"
+      "18bfeb38-87b9-488e-9fd1-9f352dfcbb45"
      ]
     },
-    "6c53d035-a8b7-4dd4-985b-8d71ad1b15fa": {
+    "c6083f34-ab19-481e-8854-cf3186dc7b0c": {
      "title": "Støjreduktion",
-     "id": "6c53d035-a8b7-4dd4-985b-8d71ad1b15fa",
+     "id": "c6083f34-ab19-481e-8854-cf3186dc7b0c",
      "references": [
       "da4db658-1d18-4f3d-b350-2aa9a49a7dc1",
       "e04d90ad-667d-42b1-b962-bf3c5e329818",
       "b882ae03-720c-4854-a74b-70284441e9cc",
       "237ab74a-0f18-4ecf-b208-61166449a92d",
       "f9543201-1d63-4371-9732-f4d750462103",
-      "e04d90ad-667d-42b1-b962-bf3c5e329818",
       "5f9e03c7-95f1-4ada-9318-4eb4682461fa",
       "c4ba3eda-b7b1-4852-8563-c8686044eef6",
-      "b35536e5-dd9d-4ce9-93ac-6d33c59ca604",
+      "eee05e8e-bea0-476a-abd1-830bc8e16ea5",
       "1da3517e-212b-4b15-a769-986efb3232c4",
       "f0c3aa2c-1594-40b9-8fa5-738d59f18971",
-      "eee05e8e-bea0-476a-abd1-830bc8e16ea5",
       "98cd2444-2bcf-46c3-a8dd-ccc62d80dfc3",
+      "315b93ef-28d4-4275-aa8b-9a12c82be3d3"
+     ]
+    },
+    "17f2e579-784e-4d29-b75d-d26face044b5": {
+     "title": "Bærbarhed",
+     "id": "17f2e579-784e-4d29-b75d-d26face044b5",
+     "references": [
+      "a5b6442a-9fc7-45cc-a953-589c83dea25e",
+      "4ce26c32-398e-4262-85a6-2ecadf07d924",
+      "c4ba3eda-b7b1-4852-8563-c8686044eef6",
+      "a66f0349-52e5-405e-b737-30cbabe414f7",
+      "fad61311-2b46-45c2-a77e-d2744a1e4cec",
+      "2610314c-aa53-43e5-821d-4a4cda84cf09",
+      "29b4a7ab-26af-4d1a-910a-448fcbff8e34",
+      "f0c3aa2c-1594-40b9-8fa5-738d59f18971",
       "315b93ef-28d4-4275-aa8b-9a12c82be3d3"
      ]
     }

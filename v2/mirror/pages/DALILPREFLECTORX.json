@@ -13,6 +13,14 @@
    "url": "/tilbehor/andet-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "8ef71746-c267-4856-bc16-4a04cd7b0b99",
+   "d07e0558-48b9-420b-b206-55169bf62314"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 164783,
   "skuCode": "DALILPREFLECTORX",
@@ -90,11 +98,12 @@
      "productCode": "DALILPREFELCTOR"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

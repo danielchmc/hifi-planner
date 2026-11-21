@@ -13,6 +13,18 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "USB-tilslutning (kun service/opdatering)"
+  },
+  "gallery": [
+   "916d705f-b485-46a8-b0e6-9630965c2bd4",
+   "d6734d67-b13d-48fe-a6eb-6666abf09bee",
+   "c364bf5d-a64b-406e-9e8c-0de65861c65c",
+   "319055e1-910f-4a7c-a4da-6ffa037a3b24"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 138708,
   "skuCode": "DALIOBERON1C",
@@ -116,10 +128,10 @@
    "id": 69678
   },
   "stockItemAlternative": {
-   "save": "2.000,-",
+   "save": "3.000,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DALIOBERON1C",
    "availableQuantity": 1,
-   "lowestPrice": "5.998,-"
+   "lowestPrice": "4.998,-"
   },
   "variants": [
    {
@@ -177,7 +189,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 592,
+     "availableQuantity": 574,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -295,48 +307,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI Oberon 1C roses bredt for varm, klar, detaljeret og medrivende lyd fra et kompakt kabinet samt overraskende kraftig bas og godt tryk. Den nemme installation og kabelfri komfort gør højttalerne særligt attraktive til TV og mindre rum. Basbalancen kan afhænge af placeringen, og lejlighedsvise forbindelsesudfald samt begrænset finopløsning kan skuffe nogle lyttere.",
+   "summary": "DALIOBERON1C leverer en imponerende klar, varm og detaljeret lyd fra et kompakt kabinet med fyldig bas og overbevisende dybde i forhold til størrelsen. Den enkle installation og kabelfri bekvemmelighed gør højttalerne særligt velegnede til TV-lyd og almindelig brug. Afhængigt af placeringen kan bassen blive for dominerende, og der rapporteres også om lejlighedsvise forbindelsesudfald.",
    "headlines": {
-    "warm, clear and detailed sound": {
-     "sentimentAnalysis": "Højttalerne leverer en varm, klar og meget opløst gengivelse med god detaljegrad.",
-     "simpleTitle": "Varm, klar og detaljeret lyd",
+    "clear, warm and detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, varme og venlige gengivelse samt den gode opløsning af fine musikalske nuancer.",
+     "simpleTitle": "Klar, varm og detaljeret lyd",
      "bias": "positive",
-     "key": "warm-clear-detailed-sound",
-     "groupId": "eeb9c30a-bc67-4684-ab1c-d801d2a2fb20"
+     "key": "clear_warm_detailed",
+     "groupId": "1cb859a9-92b1-4b1e-a9cf-294695ef4db6"
     },
-    "surprisingly powerful bass from a compact cabinet": {
-     "sentimentAnalysis": "De kompakte højttalere leverer imponerende dybde, slagkraft og tryk i bassen i forhold til størrelsen.",
-     "simpleTitle": "Overraskende kraftig bas fra et kompakt kabinet",
+    "powerful depth from compact speakers": {
+     "sentimentAnalysis": "Flere anmeldelser er overraskede over det tryk, den dybe bas og den samlede virkning fra de små kabinetter.",
+     "simpleTitle": "Kraftfuld dybde fra kompakte højttalere",
      "bias": "positive",
-     "key": "powerful-compact-bass",
-     "groupId": "df463f67-25a1-4113-99dc-227d6fb9b3c5"
+     "key": "compact_powerful_bass",
+     "groupId": "24df8ea0-d4ae-4c92-acc5-6467feb080f4"
     },
-    "bass can become too dominant": {
-     "sentimentAnalysis": "Bassen er ikke altid afbalanceret: Nogle placeringer giver for meget basenergi, og justeringsmuligheder savnes.",
-     "simpleTitle": "Bassen kan blive for dominerende",
+    "bass balance depends on placement": {
+     "sentimentAnalysis": "Bassen er ikke altid afbalanceret: Én anmeldelse finder den skuffende, mens en anden oplever for meget dominans tæt på en væg.",
+     "simpleTitle": "Basbalancen afhænger af placeringen",
      "bias": "negative",
-     "key": "dominant-placement-sensitive-bass",
-     "groupId": "df463f67-25a1-4113-99dc-227d6fb9b3c5"
+     "key": "bass_balance",
+     "groupId": "24df8ea0-d4ae-4c92-acc5-6467feb080f4"
     },
-    "simple installation without speaker cables": {
-     "sentimentAnalysis": "Kabelfri komfort og enkel opsætning gør systemet praktisk, især til TV-lyd.",
-     "simpleTitle": "Nem installation uden højttalerkabler",
+    "simple, cable-free installation": {
+     "sentimentAnalysis": "Det kompakte, fleksible design og den ukomplicerede opsætning værdsættes især til TV-lyd og uden højttalerkabler.",
+     "simpleTitle": "Enkel, kabelfri installation",
      "bias": "positive",
-     "key": "easy-cable-free-installation",
-     "groupId": "e816a561-2e1d-4f54-8c52-a2c3f9d86537"
-    },
-    "compact and easy to place": {
-     "sentimentAnalysis": "Det lille kabinet giver fleksibel placering og leverer samtidig en fyldig lyd.",
-     "simpleTitle": "Kompakt og nem at placere",
-     "bias": "positive",
-     "key": "compact-easy-placement",
-     "groupId": "42fe441a-6c31-47da-87c2-9ef9de49b22e"
+     "key": "easy_cable_free_installation",
+     "groupId": "f819d974-fc82-4f66-8a35-2dde6cca2817"
     }
    },
    "grouping": {
-    "eeb9c30a-bc67-4684-ab1c-d801d2a2fb20": {
+    "1cb859a9-92b1-4b1e-a9cf-294695ef4db6": {
      "title": "Lydkvalitet",
-     "id": "eeb9c30a-bc67-4684-ab1c-d801d2a2fb20",
+     "id": "1cb859a9-92b1-4b1e-a9cf-294695ef4db6",
      "references": [
       "3f6964e3-44bb-4bcc-ade2-5c7ca7e71319",
       "eeb22974-a224-4f04-82f3-511659786f97",
@@ -346,12 +351,12 @@
       "c8e7a7e8-e1bb-4670-916b-55004bcf2d13",
       "7aaf3a27-1338-497d-85ed-2a88aa803655",
       "ee852fba-11bb-4857-81f0-6b45a6a3c085",
-      "6f36e8b4-2a7b-4445-8c7a-597b6c5dfeef"
+      "b18fae88-a72e-4582-8517-1b188ded6dca"
      ]
     },
-    "df463f67-25a1-4113-99dc-227d6fb9b3c5": {
+    "24df8ea0-d4ae-4c92-acc5-6467feb080f4": {
      "title": "Bas",
-     "id": "df463f67-25a1-4113-99dc-227d6fb9b3c5",
+     "id": "24df8ea0-d4ae-4c92-acc5-6467feb080f4",
      "references": [
       "3f6964e3-44bb-4bcc-ade2-5c7ca7e71319",
       "eeb22974-a224-4f04-82f3-511659786f97",
@@ -360,24 +365,12 @@
       "7aaf3a27-1338-497d-85ed-2a88aa803655"
      ]
     },
-    "42fe441a-6c31-47da-87c2-9ef9de49b22e": {
-     "title": "Størrelse og placering",
-     "id": "42fe441a-6c31-47da-87c2-9ef9de49b22e",
+    "f819d974-fc82-4f66-8a35-2dde6cca2817": {
+     "title": "Installation",
+     "id": "f819d974-fc82-4f66-8a35-2dde6cca2817",
      "references": [
       "fbed04a3-d902-4727-b589-65154bdad8b9",
-      "a4ee329b-7f81-491a-b9b0-13758a57189c",
-      "a2c42bb2-d73d-4be8-a127-3d034b0cfe41",
-      "400f9e1f-0055-4edb-9a6a-c6167857fbc3",
-      "7aaf3a27-1338-497d-85ed-2a88aa803655"
-     ]
-    },
-    "e816a561-2e1d-4f54-8c52-a2c3f9d86537": {
-     "title": "Installation og forbindelse",
-     "id": "e816a561-2e1d-4f54-8c52-a2c3f9d86537",
-     "references": [
-      "fbed04a3-d902-4727-b589-65154bdad8b9",
-      "cd73d0f5-63c9-44a5-9844-179929e45211",
-      "6f36e8b4-2a7b-4445-8c7a-597b6c5dfeef"
+      "cd73d0f5-63c9-44a5-9844-179929e45211"
      ]
     }
    },

@@ -13,6 +13,18 @@
    "url": "/hojtalere/indbygning-udendors-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5605b565-87a7-4d95-8260-1518cf8588e2",
+   "96383982-757d-4faa-bfde-ad31ec3fafdc",
+   "aaaf0a5d-89ff-45de-ba2c-abf0e081a54f",
+   "90fb9929-ee3f-4492-bac3-d212441b2b34",
+   "83657609-fb7e-4c85-8958-d4ea9628e651",
+   "7b2a191d-3555-477a-bc20-5a3225d6610d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 170156,
   "skuCode": "DALIPHANTOMK80",
@@ -202,7 +214,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 48,
+     "availableQuantity": 69,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -292,7 +304,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 31,
+     "availableQuantity": 15,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -348,48 +360,47 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIPHANTOMK80 leverer en varm, fyldig og medrivende lyd, der konsekvent overgår forventningerne, med klare diskanttoner og nem installation. De diskrete gitre falder flot ind i loftet, mens den største begrænsning er en lidt tilbageholdende bas ved højere lydstyrke, som kan kræve en subwoofer. Samlet set giver højttalerne en særdeles fornøjelig og imponerende lytteoplevelse i loftet.",
+   "summary": "DALIPHANTOMK80 leverer en varm, fyldig og omsluttende lyd, der overgår forventningerne til en indbygningshøjttaler. Installationen er enkel, og de diskrete gitre falder naturligt ind i loftet uden behov for maling. Samlet set er gengivelsen meget overbevisende, selv om krævende lyttere måske vil supplere med en subwoofer for dybere bas.",
    "headlines": {
-    "warm, full and impressive sound": {
-     "sentimentAnalysis": "Højttalerne roses for en kraftfuld, varm, fyldig og meget behagelig lyd, der ofte overgår forventningerne.",
-     "simpleTitle": "Varm, fyldig og imponerende lyd",
+    "rich, warm and enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses for sin varme, fylde og behagelige karakter ved længere tids lytning.",
+     "simpleTitle": "Fyldig, varm og behagelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d67a95df-c500-470c-b273-4030dc0cb1d5"
+     "key": "sound-quality",
+     "groupId": "d8977e52-1305-496d-a7de-64f4901666ce"
     },
-    "clear, well-defined treble": {
-     "sentimentAnalysis": "Lyden roses specifikt for sin klare og veldefinerede diskant, der bidrager til en mere detaljeret gengivelse.",
-     "simpleTitle": "Klar og veldefineret diskant",
+    "sound exceeds expectations": {
+     "sentimentAnalysis": "Højttaleren præsterer langt bedre end forventet, især for en indbygningsmodel.",
+     "simpleTitle": "Lyden overgår forventningerne",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d67a95df-c500-470c-b273-4030dc0cb1d5"
+     "key": "sound-quality",
+     "groupId": "d8977e52-1305-496d-a7de-64f4901666ce"
     },
-    "easy to install": {
-     "sentimentAnalysis": "Monteringen beskrives som enkel og ukompliceret.",
-     "simpleTitle": "Nem montering",
+    "simple installation and discreet appearance": {
+     "sentimentAnalysis": "Installationen opleves som enkel, mens gitrene hjælper højttalerne med at falde diskret ind i loftet.",
+     "simpleTitle": "Enkel installation og diskret udseende",
      "bias": "positive",
      "key": "installation",
-     "groupId": "95c13834-b147-426a-833a-4eb0f8a78ba4"
+     "groupId": "f347e4e3-de51-4428-b6bb-c996123121d2"
     }
    },
    "grouping": {
-    "d67a95df-c500-470c-b273-4030dc0cb1d5": {
+    "d8977e52-1305-496d-a7de-64f4901666ce": {
      "title": "Lydkvalitet",
-     "id": "d67a95df-c500-470c-b273-4030dc0cb1d5",
+     "id": "d8977e52-1305-496d-a7de-64f4901666ce",
      "references": [
       "ade6eb52-9ff1-4d0d-b578-bc3572220b20",
       "7cc3f546-d45d-45c2-a6c3-5ad2fec4adab",
       "ec93f958-567e-4af6-92ae-6de614dfe3de",
-      "5ab99f85-82e5-4bbd-b1a3-c0c54f7ea7bd",
       "284ead43-ae21-433f-84d5-2c799e17f846",
       "7a1a5a05-7610-4a76-a779-dcbc4de3bde3",
       "875f938e-17e9-42ea-ad7f-88eedd164d08",
       "870f417a-a5df-4b5a-8f0c-8fcecaacf8d1"
      ]
     },
-    "95c13834-b147-426a-833a-4eb0f8a78ba4": {
-     "title": "Montering",
-     "id": "95c13834-b147-426a-833a-4eb0f8a78ba4",
+    "f347e4e3-de51-4428-b6bb-c996123121d2": {
+     "title": "Installation",
+     "id": "f347e4e3-de51-4428-b6bb-c996123121d2",
      "references": [
       "ec93f958-567e-4af6-92ae-6de614dfe3de",
       "284ead43-ae21-433f-84d5-2c799e17f846"

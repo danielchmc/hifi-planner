@@ -13,6 +13,19 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "c7745027-232d-4390-8ce6-41e8752a77ec",
+   "e98e6c19-94b5-424a-8ba5-aeeb7c975c92",
+   "5f5d5e03-7252-40f4-b986-85912f4c0658",
+   "91534594-47ca-4a24-be86-58d99bd7839a",
+   "d92dd6d1-8518-4464-ac3c-1bc8f3801ee9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 142836,
   "skuCode": "DALIOPTICON8MK2",
@@ -226,7 +239,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 18,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -330,7 +343,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 28,
+     "availableQuantity": 34,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -392,35 +405,43 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI Opticon 8 MK2 leverer en begejstrende, varm og immersiv hi-fi-gengivelse med punchy, tilfredsstillende bas, klare detaljerede højder og en overbevisende åbenhed. Lyden er stadig imponerende ved lav lydstyrke og byder på stærk dynamik, præcision og et stort lydbillede til musik, film og surround-opsætninger. En kraftig forstærker og god plads anbefales, men højttalerne leverer en usædvanligt givende og raffineret præstation til prisen.",
+   "summary": "DALIOPTICON 8 MK2 leverer en usædvanligt rummelig, detaljeret og musikalsk hi-fi-gengivelse med varm, slagkraftig bas samt klare, åbne og præcise mellemtoner og diskant. Højttalerne er stadig engagerende ved lav lydstyrke og imponerer med musik, film og surroundsystemer. En kraftig forstærker og god plads anbefales, mens diskanten for nogle kan virke lidt for fremtrædende.",
    "headlines": {
-    "open, detailed and engaging sound": {
-     "sentimentAnalysis": "Højttalerne roses for en åben, klar, præcis og meget detaljeret gengivelse med en stor og engagerende præsentation.",
-     "simpleTitle": "Åben, detaljeret og engagerende lyd",
+    "open, detailed and musical sound": {
+     "sentimentAnalysis": "Højttalerne roses for en åben, detaljeret, præcis og behagelig gengivelse, der fungerer godt med musik, film og surroundsystemer.",
+     "simpleTitle": "Åben, detaljeret og musikalsk lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "2618fd80-0eec-4cab-b031-4ca27243da90"
+     "key": "open-detailed-and-musical-sound",
+     "groupId": "c7da3b2b-1a71-447e-b0e3-035f8b198c13"
     },
-    "powerful, satisfying bass": {
-     "sentimentAnalysis": "Bassen beskrives konsekvent som dyb, stram, slagkraftig og kraftig nok til de fleste lyttebehov.",
-     "simpleTitle": "Kraftig og tilfredsstillende bas",
+    "powerful, tight bass": {
+     "sentimentAnalysis": "Bassen beskrives bredt som fyldig, kraftfuld, stram og tilfredsstillende og tilfører musik og filmlyd tyngde og slagkraft.",
+     "simpleTitle": "Kraftig og stram bas",
      "bias": "positive",
-     "key": "bass",
-     "groupId": "7c824c4e-986d-4998-855f-94da231df25e"
+     "key": "powerful-tight-bass",
+     "groupId": "c3813d32-9fa4-4ad9-b83c-2838668662f6"
     },
     "a powerful amplifier is recommended": {
-     "sentimentAnalysis": "Højttalerne kræver ifølge anmeldelserne en solid forstærker, og en anmeldelse bemærker også behovet for god fysisk plads.",
+     "sentimentAnalysis": "De store højttalere kræver ifølge erfaringerne en del af forstærkeren og profiterer især ved højere lydstyrker af en kraftig model.",
      "simpleTitle": "En kraftig forstærker anbefales",
      "bias": "negative",
-     "key": "amplification",
-     "groupId": "07650719-a99e-4c81-b46a-4760a3742140"
+     "key": "powerful-amplifier-recommended",
+     "groupId": "721f67df-52c7-4caa-8682-c78fe15118c6"
+    },
+    "treble can sound prominent": {
+     "sentimentAnalysis": "Én opsætning oplever diskanten som for fremtrædende, mens en anden beskriver toppen som mere rolig. Den tonale balance kan derfor afhænge af anlæg og smag.",
+     "simpleTitle": "Diskanten kan virke fremtrædende",
+     "bias": "negative",
+     "key": "prominent-treble",
+     "groupId": "c7da3b2b-1a71-447e-b0e3-035f8b198c13"
     }
    },
    "grouping": {
-    "2618fd80-0eec-4cab-b031-4ca27243da90": {
+    "c7da3b2b-1a71-447e-b0e3-035f8b198c13": {
      "title": "Lydkvalitet",
-     "id": "2618fd80-0eec-4cab-b031-4ca27243da90",
+     "id": "c7da3b2b-1a71-447e-b0e3-035f8b198c13",
      "references": [
+      "fc0b5935-85e4-4126-96dc-4e1bd5d557b3",
       "60eb876d-b29c-49c2-9e68-d6feae43875e",
       "6efb8f46-b49e-4df2-aab0-aa2c18ed4ac4",
       "9e5e928e-6aa3-44f7-b8c3-7d8c979340ac",
@@ -430,6 +451,7 @@
       "94300dc8-c227-410b-b40f-f571a918925f",
       "bb234fd6-6359-4027-a241-01136ce39a67",
       "9a2dc85c-b2a1-4fe8-a128-75905e1947e2",
+      "2291d73f-3da6-4384-8ae0-b045b14d636a",
       "569df56e-8b03-49c4-b627-fec52c2cb544",
       "a0c696c5-ac4e-4540-ab72-61e7b5bca3e8",
       "b0135486-2add-4487-a72f-208942d42777",
@@ -440,9 +462,9 @@
       "a8794344-3632-42e3-9f58-dd52ed11f96e"
      ]
     },
-    "7c824c4e-986d-4998-855f-94da231df25e": {
-     "title": "Basgengivelse",
-     "id": "7c824c4e-986d-4998-855f-94da231df25e",
+    "c3813d32-9fa4-4ad9-b83c-2838668662f6": {
+     "title": "Bas",
+     "id": "c3813d32-9fa4-4ad9-b83c-2838668662f6",
      "references": [
       "fc0b5935-85e4-4126-96dc-4e1bd5d557b3",
       "60eb876d-b29c-49c2-9e68-d6feae43875e",
@@ -455,9 +477,9 @@
       "9c8dacd0-fb75-49d5-b2b2-32eec089f355"
      ]
     },
-    "07650719-a99e-4c81-b46a-4760a3742140": {
+    "721f67df-52c7-4caa-8682-c78fe15118c6": {
      "title": "Krav til forstærker",
-     "id": "07650719-a99e-4c81-b46a-4760a3742140",
+     "id": "721f67df-52c7-4caa-8682-c78fe15118c6",
      "references": [
       "9a2dc85c-b2a1-4fe8-a128-75905e1947e2",
       "c1b30359-1898-42e7-bf8e-38c1e753a004",

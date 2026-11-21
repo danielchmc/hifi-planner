@@ -13,6 +13,16 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "91a5d2d7-0783-4bce-a7dd-4ac4d8656e70",
+   "c75263a9-a764-4642-baea-b498cc49d554",
+   "85f6653a-12c3-4b49-97e8-1aebce7f9649",
+   "e973e502-4925-47a1-a7e6-742442845ccf"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 94448,
   "skuCode": "DALIOBERONONWALL",
@@ -133,12 +143,6 @@
    "url": "/hojtalere/kompakt-hojtaler/",
    "id": 69678
   },
-  "stockItemAlternative": {
-   "save": "300,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DALIOBERONONWALL",
-   "availableQuantity": 2,
-   "lowestPrice": "3.198,-"
-  },
   "variants": [
    {
     "id": 93038,
@@ -212,8 +216,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 12,
-     "availableQuantity": 264,
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 260,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -286,48 +290,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI Oberon On-Wall roses bredt for en klar, detaljeret og overraskende fyldig lyd fra det slanke og attraktive vægkabinet. Højttalerne fungerer især godt som diskrete surround-, bag- eller højdehøjttalere og er nemme at integrere i kompakte rum og hjemmebiografer. Bassen er imponerende i forhold til størrelsen, selv om flere anmeldelser anbefaler en subwoofer for dybere effekt, mens et lille mindretal synes, at lyden er for svag eller mangler finhed.",
+   "summary": "DALIOBERONONWALL leverer en varm, klar og overraskende fyldig lyd fra et slankt og attraktivt vægmonteret design. Højttalerne fungerer især godt som surround-, bag- eller TV-højttalere og giver en detaljeret og omsluttende lydoplevelse, også i mindre rum. Bassen er imponerende størrelsen taget i betragtning, men flere anmeldelser anbefaler en subwoofer til dybere og kraftigere bas.",
    "headlines": {
+    "slim, attractive and easy to place": {
+     "sentimentAnalysis": "Den slanke vægmonterede konstruktion, det diskrete udseende og den flotte finish gør højttalerne praktiske i mindre rum og boliger.",
+     "simpleTitle": "Slankt, flot og nemt at placere",
+     "bias": "positive",
+     "key": "design-and-placement",
+     "groupId": "c8b03c64-359d-4a28-8494-4172058531c3"
+    },
+    "strong surround and TV performance": {
+     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som effektive bag-, surround-, højde- og TV-højttalere, der forbedrer stereoperspektiv, dialog og filmoplevelse.",
+     "simpleTitle": "Stærk surround- og TV-gengivelse",
+     "bias": "positive",
+     "key": "home-cinema-use",
+     "groupId": "d5e29fca-b0c9-4689-b9d9-2c1bef3bdf00"
+    },
     "clear, detailed and full sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gentagne gange lyden som klar, detaljeret, fyldig og overraskende kraftfuld for en kompakt væghøjttaler.",
+     "sentimentAnalysis": "Anmeldelserne roser ofte den klare, detaljerede, velafbalancerede og størrelsen taget i betragtning overraskende fyldige lyd.",
      "simpleTitle": "Klar, detaljeret og fyldig lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "b6e27355-e5f7-440e-a2ae-7648deaf1213"
-    },
-    "slim, attractive and discreet on the wall": {
-     "sentimentAnalysis": "Det slanke kabinet, det flotte design og den diskrete vægplacering roses gentagne gange, især hvor pladsen er begrænset.",
-     "simpleTitle": "Slank, flot og diskret på væggen",
-     "bias": "positive",
-     "key": "design-and-placement",
-     "groupId": "ec811ee2-df72-44d8-b48f-49fcbdb1a892"
-    },
-    "excellent for surround and home cinema": {
-     "sentimentAnalysis": "Anmeldelserne finder konsekvent højttalerne velegnede som bag-, side- eller højttalere i højden samt til kompakte hjemmebiografer.",
-     "simpleTitle": "Fremragende til surround og hjemmebio",
-     "bias": "positive",
-     "key": "surround-and-home-cinema",
-     "groupId": "558602ef-85b0-460e-bd59-d7fd5bd6d815"
+     "groupId": "59f1e82e-c027-4de9-a61a-d229e9f4d1f1"
     },
     "a subwoofer adds deeper bass": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver bassen som brugbar eller overraskende god, men en subwoofer forbedrer de dybeste frekvenser og slagkraften.",
+     "sentimentAnalysis": "Bassen vurderes som tilstrækkelig eller overraskende kraftig i forhold til kabinettets størrelse, mens en subwoofer ofte anbefales for dybere bas.",
      "simpleTitle": "En subwoofer giver dybere bas",
      "bias": "meh",
      "key": "bass-response",
-     "groupId": "1100c9fd-d5f6-486b-abfb-e694717f8cbd"
+     "groupId": "8954ff29-6b5e-4406-a182-a7430d8190a9"
     },
-    "sound can lack refinement or volume": {
-     "sentimentAnalysis": "To anmeldelser beskriver tydelige svagheder som dæmpet vokal, skarp diskant og utilstrækkelig lydstyrke.",
-     "simpleTitle": "Lyden kan mangle finhed eller lydstyrke",
+    "some reports of weak or subdued sound": {
+     "sentimentAnalysis": "En lille minoritet kritiserer den lave lydstyrke, dæmpede vokaler, begrænsede spredning i rummet eller et lidt svagt mellemregister.",
+     "simpleTitle": "Nogle oplever svag eller dæmpet lyd",
      "bias": "negative",
      "key": "sound-quality",
-     "groupId": "b6e27355-e5f7-440e-a2ae-7648deaf1213"
+     "groupId": "59f1e82e-c027-4de9-a61a-d229e9f4d1f1"
     }
    },
    "grouping": {
-    "b6e27355-e5f7-440e-a2ae-7648deaf1213": {
+    "59f1e82e-c027-4de9-a61a-d229e9f4d1f1": {
      "title": "Lydkvalitet",
-     "id": "b6e27355-e5f7-440e-a2ae-7648deaf1213",
+     "id": "59f1e82e-c027-4de9-a61a-d229e9f4d1f1",
      "references": [
       "fc555ab2-6bea-4b74-b51a-6657d889de04",
       "1b92d944-a8a2-45bd-a3cd-d03b867b73ce",
@@ -337,57 +341,85 @@
       "a76dc51f-0841-4e7b-a764-27cb05b0740a",
       "94a73dff-5ac3-487d-afab-0aff74381e6c",
       "8b247f23-2277-490c-af3d-9339ad49b6e2",
+      "803d5b99-458b-4332-b822-08a85a581b99",
       "6e09ad11-8a78-40dd-a939-ab3b5395d0e2",
       "b4946890-e00e-4bc9-b95d-ce9a0794ab45",
+      "359908d1-041a-402d-be67-83b43f2ea85c",
       "d880454e-7aa1-481f-8082-613d8ca56a66",
       "37beeb0b-8783-4d4a-b724-17be63d42ab7",
       "181d0ba3-cbbe-4680-90a9-2b88c918a4c5",
+      "b429d21b-a86a-4d1e-99e9-9bf17b0b0620",
       "2cc362cf-6432-43d3-b8da-1f1431033749",
       "94d7b503-4eda-403f-9528-60a6114583d7",
+      "9cec9d15-2900-45f4-bb0c-dc5a9b2aa77d",
       "714f22d5-62a6-43f0-9106-68697cc21322",
       "eeded016-bc64-4b30-bd84-a85990dfbb25",
+      "8f55d55b-def4-4255-a7ae-1aeadd0b46b4",
       "084e2d81-3689-4652-9bb9-6dbfceb3e646",
       "4f7423bf-c6d1-48de-bcb0-15d48263815d",
       "c84ccbdd-a5b2-4e36-95ba-ee70930af232",
+      "2b1f672a-aed2-4915-85d0-2331654717d6",
+      "2104c6ab-4855-4192-8153-4c65d89a6173",
+      "ff297743-fa57-433c-a451-618822198126",
+      "e5c2687a-be7e-496b-9f72-80b9d8439a17",
       "3d3932e8-b30e-4a6f-b245-00d172dd79fa",
+      "9810fe38-aa2b-4c8f-8d02-4c90dd0557a5",
       "6a27aa99-c7f7-444c-a7ab-2188bf4416fc",
+      "0f95b397-1059-4870-8185-80affea36e4f",
       "dfc74062-3cd8-4c91-ac15-aaf159b6539f",
       "dc58d544-daf6-43b8-bac4-c954e610b41a",
+      "d2bd9e6d-4970-4775-be5f-7530206f71ab",
       "8e193def-48b5-4556-b936-c8b82396c98d",
+      "c8a1a195-6116-4d8d-84ff-66d7987c29e9",
       "0febc249-0581-400f-8d29-7d546d2c2ac8",
       "3fe66e1e-d3ae-4940-b9c2-d188b89d9cf6",
       "fca7e7a2-70ac-4810-90b8-97a7e5b603f7",
       "7be6078b-b430-4eac-a26f-b2e0b44792c8",
+      "9bb8acba-aa82-42c2-82bf-cca34e9d6c59",
       "0fef012a-f38a-4924-b3d1-1136ef1b484d",
+      "6c9d180d-aa91-4af3-b387-fe40c2d2eaa7",
+      "a6eda3aa-1f57-4f6e-94b7-f694e5b1ea3b",
       "6067fecf-998e-42f7-abda-6ced52aeae19",
       "c9399b28-72e7-48e3-bb33-84d84b4a9507",
       "af6dd5b6-2f78-42c2-acef-8f13cf1a60ea",
       "f51b76d8-ee88-45dd-af82-082bb2620476",
       "4f1d0e41-e1c6-408b-8414-dd7dcee8005e",
       "1d95ed38-0721-411c-9ad7-6359f429d851",
+      "fcab419e-0ab7-424d-9140-88fb071b07e0",
       "316ecb49-bd0a-4d5e-a30b-fd78ef1628e8",
+      "2990a09c-4dd0-494e-ae69-d4bbdd08660b",
       "0cf712a8-95e1-475e-b22c-dc2989193fd9",
       "7c567abd-5307-4a04-aa0c-6d1cb58a9c49",
       "6aba8b8b-5ecb-44a5-95c4-ad23d6c83e84",
+      "f3de7786-2844-409b-89b0-b10990cb9e75",
+      "c2e6c99c-0454-41e0-8676-4ad4a7d79d12",
+      "b1c7df5b-9e5d-45c3-a025-8e79202d3931",
       "8db50b34-d115-4e6d-9452-c3d85e7b59cd",
+      "0bfb1493-a042-4550-8d34-b1077cc3b40d",
+      "a172f66a-0d4e-4586-9894-356c650ffc58",
       "666860b9-c9db-468d-8d19-68862cdcf69c"
      ]
     },
-    "ec811ee2-df72-44d8-b48f-49fcbdb1a892": {
+    "c8b03c64-359d-4a28-8494-4172058531c3": {
      "title": "Design og placering",
-     "id": "ec811ee2-df72-44d8-b48f-49fcbdb1a892",
+     "id": "c8b03c64-359d-4a28-8494-4172058531c3",
      "references": [
       "1b92d944-a8a2-45bd-a3cd-d03b867b73ce",
       "9a88ee7b-44dc-49fc-8e40-0fa7f829d782",
+      "a76dc51f-0841-4e7b-a764-27cb05b0740a",
       "8b247f23-2277-490c-af3d-9339ad49b6e2",
       "6e09ad11-8a78-40dd-a939-ab3b5395d0e2",
       "b429d21b-a86a-4d1e-99e9-9bf17b0b0620",
-      "94d7b503-4eda-403f-9528-60a6114583d7",
-      "f9433db5-565e-4f6f-a311-50e8c2a16496",
       "9cec9d15-2900-45f4-bb0c-dc5a9b2aa77d",
-      "ff297743-fa57-433c-a451-618822198126",
-      "e5c2687a-be7e-496b-9f72-80b9d8439a17",
+      "f9433db5-565e-4f6f-a311-50e8c2a16496",
+      "f4915cb6-577c-450e-b754-325e256e4283",
+      "4f7423bf-c6d1-48de-bcb0-15d48263815d",
       "c84ccbdd-a5b2-4e36-95ba-ee70930af232",
+      "6e6179d3-7d65-4b5b-bada-84d2ce49dccf",
+      "ff297743-fa57-433c-a451-618822198126",
+      "dc58d544-daf6-43b8-bac4-c954e610b41a",
+      "d2bd9e6d-4970-4775-be5f-7530206f71ab",
+      "c8a1a195-6116-4d8d-84ff-66d7987c29e9",
       "fca7e7a2-70ac-4810-90b8-97a7e5b603f7",
       "9bb8acba-aa82-42c2-82bf-cca34e9d6c59",
       "0fef012a-f38a-4924-b3d1-1136ef1b484d",
@@ -395,30 +427,34 @@
       "84bd63c0-aca1-4f5c-8d64-bce5fd63d534",
       "f51b76d8-ee88-45dd-af82-082bb2620476",
       "1d95ed38-0721-411c-9ad7-6359f429d851",
+      "ba2d95da-96f4-4099-b15d-75d057bc2924",
       "fcab419e-0ab7-424d-9140-88fb071b07e0",
       "316ecb49-bd0a-4d5e-a30b-fd78ef1628e8",
       "c7c6c4f6-eff7-4118-892b-760e34fe82a0",
+      "904100f5-75a3-4c96-a752-82b710b1442e",
+      "6aba8b8b-5ecb-44a5-95c4-ad23d6c83e84",
       "f3de7786-2844-409b-89b0-b10990cb9e75",
       "b1c7df5b-9e5d-45c3-a025-8e79202d3931",
-      "904100f5-75a3-4c96-a752-82b710b1442e",
-      "8db50b34-d115-4e6d-9452-c3d85e7b59cd"
+      "8db50b34-d115-4e6d-9452-c3d85e7b59cd",
+      "666860b9-c9db-468d-8d19-68862cdcf69c"
      ]
     },
-    "558602ef-85b0-460e-bd59-d7fd5bd6d815": {
-     "title": "Surround og hjemmebio",
-     "id": "558602ef-85b0-460e-bd59-d7fd5bd6d815",
+    "d5e29fca-b0c9-4689-b9d9-2c1bef3bdf00": {
+     "title": "Hjemmebiografbrug",
+     "id": "d5e29fca-b0c9-4689-b9d9-2c1bef3bdf00",
      "references": [
       "1b92d944-a8a2-45bd-a3cd-d03b867b73ce",
       "a76dc51f-0841-4e7b-a764-27cb05b0740a",
       "8b247f23-2277-490c-af3d-9339ad49b6e2",
-      "803d5b99-458b-4332-b822-08a85a581b99",
       "359908d1-041a-402d-be67-83b43f2ea85c",
       "37beeb0b-8783-4d4a-b724-17be63d42ab7",
       "181d0ba3-cbbe-4680-90a9-2b88c918a4c5",
       "f9433db5-565e-4f6f-a311-50e8c2a16496",
       "f4915cb6-577c-450e-b754-325e256e4283",
+      "d2bd9e6d-4970-4775-be5f-7530206f71ab",
       "c8a1a195-6116-4d8d-84ff-66d7987c29e9",
-      "6067fecf-998e-42f7-abda-6ced52aeae19",
+      "3fe66e1e-d3ae-4940-b9c2-d188b89d9cf6",
+      "9bb8acba-aa82-42c2-82bf-cca34e9d6c59",
       "c9399b28-72e7-48e3-bb33-84d84b4a9507",
       "84bd63c0-aca1-4f5c-8d64-bce5fd63d534",
       "ba2d95da-96f4-4099-b15d-75d057bc2924",
@@ -427,9 +463,9 @@
       "e8f35a30-6c84-4390-b00f-5e0312782437"
      ]
     },
-    "1100c9fd-d5f6-486b-abfb-e694717f8cbd": {
+    "8954ff29-6b5e-4406-a182-a7430d8190a9": {
      "title": "Basgengivelse",
-     "id": "1100c9fd-d5f6-486b-abfb-e694717f8cbd",
+     "id": "8954ff29-6b5e-4406-a182-a7430d8190a9",
      "references": [
       "b4946890-e00e-4bc9-b95d-ce9a0794ab45",
       "d880454e-7aa1-481f-8082-613d8ca56a66",
@@ -438,11 +474,13 @@
       "2104c6ab-4855-4192-8153-4c65d89a6173",
       "ff297743-fa57-433c-a451-618822198126",
       "3fe66e1e-d3ae-4940-b9c2-d188b89d9cf6",
+      "fca7e7a2-70ac-4810-90b8-97a7e5b603f7",
       "9bb8acba-aa82-42c2-82bf-cca34e9d6c59",
       "6c9d180d-aa91-4af3-b387-fe40c2d2eaa7",
       "a6eda3aa-1f57-4f6e-94b7-f694e5b1ea3b",
       "fcab419e-0ab7-424d-9140-88fb071b07e0",
       "316ecb49-bd0a-4d5e-a30b-fd78ef1628e8",
+      "0bfb1493-a042-4550-8d34-b1077cc3b40d",
       "666860b9-c9db-468d-8d19-68862cdcf69c"
      ]
     }

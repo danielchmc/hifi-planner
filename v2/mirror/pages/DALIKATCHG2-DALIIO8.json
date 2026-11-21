@@ -13,6 +13,16 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "32a5bb35-5614-494f-8e6c-1b79b58d164b",
+   "80143ac2-fb6a-45d1-93fd-0520932ea736",
+   "6889b4dd-a92b-41e7-b6a5-a18ef669ac5f",
+   "9d4d0e45-9c7c-48d1-8069-6c1e66824b82"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 283716,
   "skuCode": "DALIKATCHG2-DALIIO8",
@@ -251,7 +261,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 263,
+        "availableQuantity": 254,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -275,7 +285,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 33,
+        "availableQuantity": 24,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -299,7 +309,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 138,
+        "availableQuantity": 134,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -311,48 +321,48 @@
      ],
      "parentProductCode": "DALIKATCHG2",
      "reviews": {
-      "summary": "DALI KATCH G2 roses bredt for varm, klar, detaljeret og overraskende rummelig lyd fra en kompakt og flot bygget transportabel højttaler. Lang batteritid, enkel betjening, stabil Bluetooth og god mobilitet øger attraktiviteten, mens stereoparring kan skabe en endnu mere omsluttende gengivelse. Begrænset dybbas, mindre kontrol ved høj lydstyrke, manglende indbygget USB-C-opladning og en høj pris er de tydeligste begrænsninger.",
+      "summary": "DALI KATCH G2 leverer en imponerende varm, klar og detaljeret lyd fra et kompakt og elegant kabinet med afbalanceret bas, tydelig diskant og et usædvanligt rummeligt lydbillede. Lang batteritid, enkel Bluetooth-betjening, solid konstruktion og nem transport gør højttaleren til en fremragende ledsager i hverdagen og på rejser. Begrænset dybbas, begrænsninger ved høj lydstyrke, manglende USB-C-opladning og forsinkelse ved stereoparring er de vigtigste svagheder, mens de fleste anmeldelser finder premiumprisen rimelig i forhold til ydelsen.",
       "headlines": {
-       "slim, attractive and easy to carry": {
-        "sentimentAnalysis": "Det slanke format, den fine finish og den praktiske størrelse gør højttaleren attraktiv til hjemmet, rejser, ferier og udendørs brug.",
-        "simpleTitle": "Slankt, attraktivt og nemt at tage med",
+       "elegant and highly portable": {
+        "sentimentAnalysis": "Slankt design, gode materialer og en håndterbar størrelse gør højttaleren attraktiv i hjemmet og praktisk på rejser, selv om enkelte nævner vægten eller små detaljer.",
+        "simpleTitle": "Elegant og let at transportere",
         "bias": "positive",
-        "key": "slim-portable-design",
-        "groupId": "64956db6-cb72-40d8-b288-6bf5f104dbc2"
+        "key": "design_portability",
+        "groupId": "aa07c691-8843-4f26-93df-55b5ac8a1d62"
        },
        "warm, clear and detailed sound": {
-        "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en ren, afbalanceret, varm og meget detaljeret gengivelse, der lyder langt større end kabinettet.",
+        "sentimentAnalysis": "Det dominerende indtryk er en afbalanceret, naturlig og meget detaljeret gengivelse med klar diskant, overbevisende bas og stor opløsning for en kompakt Bluetooth-højttaler.",
         "simpleTitle": "Varm, klar og detaljeret lyd",
         "bias": "positive",
-        "key": "warm-clear-detailed-sound",
-        "groupId": "e0d9f040-830b-4bb5-8f8a-3e3bf97f8c75"
+        "key": "sound",
+        "groupId": "567daf8d-1328-4a82-8915-9e4ce905eef1"
        },
        "long-lasting battery": {
-        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som fremragende, og flere anmeldelser fremhæver heldagsbrug eller omkring 30 timers afspilning.",
+        "sentimentAnalysis": "Batteritiden roses gentagne gange som usædvanligt lang, og flere anmeldelser nævner omkring 30 timers afspilning eller fremragende egnethed til rejser.",
         "simpleTitle": "Lang batteritid",
         "bias": "positive",
-        "key": "long-battery-life",
-        "groupId": "f9ec1596-7bca-4bd2-8265-e50a50dac7fe"
+        "key": "battery",
+        "groupId": "88762cb8-7516-4f19-96df-7202feb95deb"
        },
-       "bluetooth is generally easy and stable": {
-        "sentimentAnalysis": "De fleste tilslutningsanmeldelser roser den hurtige, stabile og ukomplicerede Bluetooth-parring til hverdagsbrug.",
-        "simpleTitle": "Bluetooth er generelt nemt og stabilt",
+       "easy Bluetooth connection and operation": {
+        "sentimentAnalysis": "Bluetooth-forbindelsen beskrives generelt som stabil, hurtig og ukompliceret, mens enkel betjening gør daglig brug nem.",
+        "simpleTitle": "Nem Bluetooth-forbindelse og betjening",
         "bias": "positive",
-        "key": "reliable-bluetooth",
-        "groupId": "cb94c219-efd1-46a7-b91a-26ef4346dbba"
+        "key": "connectivity",
+        "groupId": "fb99e3d2-ddd8-4ede-9bc9-510731d98966"
        },
-       "deep bass is limited by the compact cabinet": {
-        "sentimentAnalysis": "Flere anmeldelser oplever bassen som præcis og behagelig, men mindre dyb eller kraftfuld end fra større højttalere, især ved festniveauer.",
-        "simpleTitle": "Den dybe bas begrænses af det kompakte kabinet",
+       "bass lacks deep impact": {
+        "sentimentAnalysis": "De kompakte mål begrænser dybbas og festtryk, men bassen er stadig kontrolleret og tilstrækkelig til de fleste formål.",
+        "simpleTitle": "Bassen mangler dybde",
         "bias": "negative",
-        "key": "limited-deep-bass",
-        "groupId": "e0d9f040-830b-4bb5-8f8a-3e3bf97f8c75"
+        "key": "sound",
+        "groupId": "567daf8d-1328-4a82-8915-9e4ce905eef1"
        }
       },
       "grouping": {
-       "e0d9f040-830b-4bb5-8f8a-3e3bf97f8c75": {
+       "567daf8d-1328-4a82-8915-9e4ce905eef1": {
         "title": "Lydkvalitet",
-        "id": "e0d9f040-830b-4bb5-8f8a-3e3bf97f8c75",
+        "id": "567daf8d-1328-4a82-8915-9e4ce905eef1",
         "references": [
          "069f36bb-770b-4978-840a-7548f43d0f80",
          "ff4cb262-0a7a-4484-9f8b-9e212a68a267",
@@ -374,7 +384,7 @@
          "ced56ac5-0aac-4069-a832-9ec0da74c9b4",
          "f978e2a1-e492-4afe-9633-3837863f5966",
          "33402c2b-e4ad-44be-8ba1-0abd1477fd67",
-         "87c725ab-3ebd-43a3-a9d9-b89ff70d4163",
+         "87c725ab-3ebd-43a3-a9d9-b89ff70d416a",
          "01b116ad-8b57-4e92-964f-934614382915",
          "8a2b25ba-d262-42c7-a431-dc7b095b395f",
          "89adbaeb-867c-4a30-9e89-652bda4f49b3",
@@ -396,7 +406,6 @@
          "3bbb7127-67b0-4570-8933-70cd1fb9eef0",
          "6a779a35-7acb-4ee0-a5a3-4d73946d6cc3",
          "fb901beb-3106-4db8-ac1f-b34f73eba488",
-         "8bc64c51-7aba-47f8-ad73-9adb659aeeb1",
          "e35f2490-c410-495f-96e9-9d3cf9af1138",
          "3a17f612-f147-48f1-82dc-2da23eb67c11",
          "e40a6605-69ef-4702-9ff5-e7add7ab9370",
@@ -413,7 +422,6 @@
          "6feb9f92-46d4-4077-b7d7-3964f46e4ff7",
          "851630de-54e1-40cf-a40d-cf7a330434e0",
          "c7f9361a-26d0-423e-b1bc-d741c4028f5d",
-         "4e88bb9a-fbcf-4fdd-9454-48a44e627644",
          "e2303794-899b-4ac7-9be2-172e141d4787",
          "26fcfe95-5cb0-48f9-bfbc-e6b1c15f7b26",
          "46db687a-55c8-4275-a629-2d8fcb33b03b",
@@ -432,7 +440,6 @@
          "cead0f72-216f-48ad-bf85-9b19335fac71",
          "37d1b96f-928b-4f4a-997f-a8f786dffe15",
          "61ace141-f82e-4be0-83e9-b8e3fa7a1ebf",
-         "e193ca6d-48f4-4860-ae2b-8cb543f1191c",
          "8b6d17b0-a9ad-44ed-9c43-6a5356e35466",
          "9e3755a2-cd06-4241-94b8-83811b7a82a2",
          "39652ef3-fc24-41f6-8df1-1687f0c02b8f",
@@ -445,7 +452,6 @@
          "678b379d-bdbb-448a-b3d6-1a6592244e30",
          "aa817064-ff31-4f02-84da-efd7d86cbbbe",
          "1208a949-1edc-48ab-bceb-959e961ed072",
-         "a075239b-2e63-4f4b-b495-30064d495b9a",
          "440f177e-5dd3-4b0f-bc82-8b5e24b36e73",
          "6d1b8204-2822-416d-9c07-3d1da047b8fc",
          "0afa27ed-5acb-4ba6-9189-85a114dbb80b",
@@ -454,7 +460,6 @@
          "b36b4e0f-72cc-4f79-8b62-a0246e4e49a8",
          "9011b9c2-2725-4223-b7a3-9f78dbf39df6",
          "a2d56ed2-c76f-4a39-9f4e-e263317ae591",
-         "18e7fb67-69c3-40f7-8c64-0cf0117badaf",
          "133cc903-809f-4c5f-937e-12eba3428522",
          "c36a37d0-96ae-4e0a-9f2b-d0ea6336ef05",
          "585d5187-7f3c-44ed-8608-f4d0df001f61",
@@ -469,7 +474,6 @@
          "d3e62ab0-fe06-4acd-b419-1536c1c3c59d",
          "a9da3ed3-1d90-40af-b11c-16a1045118fe",
          "c80a0f93-7b78-4abb-a746-ab833220270b",
-         "5ca5d56a-d1e9-4df5-8735-b2d6b57c0167",
          "a157b50b-aba2-41b2-906c-e1484be97fba",
          "cca6f8c1-0706-4b47-875f-5d00f88aa6ae",
          "05259cc7-25d5-4692-bfd8-e2039bc716cc",
@@ -490,81 +494,86 @@
          "c68f313f-2838-4bb5-9a38-db74f868f676"
         ]
        },
-       "64956db6-cb72-40d8-b288-6bf5f104dbc2": {
-        "title": "Design og mobilitet",
-        "id": "64956db6-cb72-40d8-b288-6bf5f104dbc2",
+       "aa07c691-8843-4f26-93df-55b5ac8a1d62": {
+        "title": "Design og transport",
+        "id": "aa07c691-8843-4f26-93df-55b5ac8a1d62",
         "references": [
          "ff4cb262-0a7a-4484-9f8b-9e212a68a267",
          "404e2507-d1b0-416d-b542-f196ac0a1d78",
          "c340bc17-c40a-4998-ace7-c6aaed0b8160",
          "0157da57-e502-4b2d-8035-29ce964ea71f",
+         "f860f6d6-3a5e-46bc-af41-45fb3e0991bd",
          "c6363d57-365c-41e8-a034-5fb9b9176ecb",
          "ced56ac5-0aac-4069-a832-9ec0da74c9b4",
          "89adbaeb-867c-4a30-9e89-652bda4f49b3",
+         "ed1c7dec-2dd9-4342-98a2-a4fca8d8dd13",
+         "75f84926-da50-4314-a950-d4badfd6d958",
+         "76444195-f008-462b-a6c1-f8a26817617a",
          "a28bbea6-897c-4f68-88d8-9228d424df85",
          "d2442874-14c1-4032-abc7-34cc05ead127",
          "e35f2490-c410-495f-96e9-9d3cf9af1138",
          "e40a6605-69ef-4702-9ff5-e7add7ab9370",
          "d5cef24c-a885-440d-ac9f-20f380b86a98",
-         "f1cbd8f1-b684-40a0-98b2-3de1cb3c69a4",
-         "d64968f5-64ca-418c-b8b0-a2a7b9c444d1",
+         "f4e03e29-14eb-4f19-b87d-8e533384b98a",
+         "c75aa194-3645-4360-9a65-6b2ffe28ce2a",
+         "37d1b96f-928b-4f4a-997f-a8f786dffe15",
+         "61ace141-f82e-4be0-83e9-b8e3fa7a1ebf",
+         "9e3755a2-cd06-4241-94b8-83811b7a82a2",
          "c7f9361a-26d0-423e-b1bc-d741c4028f5d",
          "26fcfe95-5cb0-48f9-bfbc-e6b1c15f7b26",
          "46db687a-55c8-4275-a629-2d8fcb33b03b",
          "35e9b34f-6ff3-4326-9118-90d1a498d370",
-         "f4e03e29-14eb-4f19-b87d-8e533384b98a",
-         "9e3755a2-cd06-4241-94b8-83811b7a82a2",
+         "c36a37d0-96ae-4e0a-9f2b-d0ea6336ef05",
          "1208a949-1edc-48ab-bceb-959e961ed072",
          "a075239b-2e63-4f4b-b495-30064d495b9a",
          "6d1b8204-2822-416d-9c07-3d1da047b8fc",
          "0afa27ed-5acb-4ba6-9189-85a114dbb80b",
-         "61ace141-f82e-4be0-83e9-b8e3fa7a1ebf",
          "8b6d17b0-a9ad-44ed-9c43-6a5356e35466",
-         "39652ef3-fc24-41f6-8df1-1687f0c02b8f",
-         "a2d56ed2-c76f-4a39-9f4e-e263317ae591",
-         "c36a37d0-96ae-4e0a-9f2b-d0ea6336ef05",
-         "884f29e8-e0b3-4cc5-a0ca-85315bae2ce2",
-         "db491a85-5491-4e35-8fd7-19854c94074d",
-         "237c3e6d-1948-4b7c-baa7-f02b433fb72c",
+         "d64968f5-64ca-418c-b8b0-a2a7b9c444d1",
+         "c80a0f93-7b78-4abb-a746-ab833220270b",
          "a157b50b-aba2-41b2-906c-e1484be97fba",
          "f20cce77-56a7-41ce-ae93-db7ee31383e6",
+         "884f29e8-e0b3-4cc5-a0ca-85315bae2ce2",
+         "db491a85-5491-4e35-8fd7-19854c94074d",
          "e0c01e5d-2b3e-48a9-acaf-807449b448a0",
          "d7b9292f-0801-4418-b660-1f31ecb263b8",
+         "adb04fa2-90e0-43ed-a096-78acd49a81845",
          "37a521ee-3384-43c1-aefd-c889e8b9504e",
          "4fe5dd17-e344-44df-ac9e-be668e8223f9",
-         "37b1d5ed-01eb-4d62-b05c-7fd0eea323c2",
-         "c68f313f-2838-4bb5-9a38-db74f868f676"
-        ]
-       },
-       "f9ec1596-7bca-4bd2-8265-e50a50dac7fe": {
-        "title": "Batteritid",
-        "id": "f9ec1596-7bca-4bd2-8265-e50a50dac7fe",
-        "references": [
-         "069f36bb-770b-4978-840a-7548f43d0f80",
-         "0157da57-e502-4b2d-8035-29ce964ea71f",
-         "f860f6d6-3a5e-46bc-af41-45fb3e0991bd",
-         "fb901beb-3106-4db8-ac1f-b34f73eba488",
-         "e35f2490-c410-495f-96e9-9d3cf9af1138",
-         "e40a6605-69ef-4702-9ff5-e7add7ab9370",
-         "4875fe1c-c57e-447a-a77f-767a5d4364fc",
-         "9d3aff25-c807-4bc9-bde1-47d941525d80",
-         "f1cbd8f1-b684-40a0-98b2-3de1cb3c69a4",
-         "296aff3b-92a6-4285-b655-766dd44b9b95",
-         "35e9b34f-6ff3-4326-9118-90d1a498d370",
-         "f4e03e29-14eb-4f19-b87d-8e533384b98a",
-         "9e3755a2-cd06-4241-94b8-83811b7a82a2",
-         "2059eb80-f837-4ace-9d7b-082584f2cd60",
-         "d3e62ab0-fe06-4acd-b419-1536c1c3c59d",
-         "05259cc7-25d5-4692-bfd8-e2039bc716cc",
-         "e0c01e5d-2b3e-48a9-acaf-807449b448a0",
-         "c68f313f-2838-4bb5-9a38-db74f868f676",
          "37b1d5ed-01eb-4d62-b05c-7fd0eea323c2",
          "d6a85549-dca1-4ea0-8270-f97c79bbc549"
         ]
        },
-       "cb94c219-efd1-46a7-b91a-26ef4346dbba": {
-        "title": "Bluetooth og tilslutning",
-        "id": "cb94c219-efd1-46a7-b91a-26ef4346dbba",
+       "88762cb8-7516-4f19-96df-7202feb95deb": {
+        "title": "Batteritid",
+        "id": "88762cb8-7516-4f19-96df-7202feb95deb",
+        "references": [
+         "069f36bb-770b-4978-840a-7548f43d0f80",
+         "0157da57-e502-4b2d-8035-29ce964ea71f",
+         "f860f6d6-3a5e-46bc-af41-45fb3e0991bd",
+         "01b116ad-8b57-4e92-964f-934614382915",
+         "89adbaeb-867c-4a30-9e89-652bda4f49b3",
+         "9d3aff25-c807-4bc9-bde1-47d941525d80",
+         "4875fe1c-c57e-447a-a77f-767a5d4364fc",
+         "fb901beb-3106-4db8-ac1f-b34f73eba488",
+         "e35f2490-c410-495f-96e9-9d3cf9af1138",
+         "e40a6605-69ef-4702-9ff5-e7add7ab9370",
+         "9e3755a2-cd06-4241-94b8-83811b7a82a2",
+         "2059eb80-f837-4ace-9d7b-082584f2cd60",
+         "35e9b34f-6ff3-4326-9118-90d1a498d370",
+         "f4e03e29-14eb-4f19-b87d-8e533384b98a",
+         "76b7e947-c25f-40a4-87c8-7ef148a929ea",
+         "296aff3b-92a6-4285-b655-766dd44b9b95",
+         "d3e62ab0-fe06-4acd-b419-1536c1c3c59d",
+         "05259cc7-25d5-4692-bfd8-e2039bc716cc",
+         "f1c46e92-92ad-4a93-b120-12be7d179855",
+         "237c3e6d-1948-4b7c-baa7-f02b433fb72c",
+         "c68f313f-2838-4bb5-9a38-db74f868f676"
+        ]
+       },
+       "fb99e3d2-ddd8-4ede-9bc9-510731d98966": {
+        "title": "Forbindelse og betjening",
+        "id": "fb99e3d2-ddd8-4ede-9bc9-510731d98966",
         "references": [
          "ff4cb262-0a7a-4484-9f8b-9e212a68a267",
          "77ddf27f-5762-4260-9fbd-f9391455dd4b",
@@ -572,19 +581,22 @@
          "0157da57-e502-4b2d-8035-29ce964ea71f",
          "9d3aff25-c807-4bc9-bde1-47d941525d80",
          "33402c2b-e4ad-44be-8ba1-0abd1477fd67",
-         "4875fe1c-c57e-447a-a77f-767a5d4364fc",
+         "a2b25ba-d262-42c7-a431-dc7b095b395f",
+         "89adbaeb-867c-4a30-9e89-652bda4f49b3",
          "4dd43b87-5b8d-49c8-b830-96781e40da12",
          "3bbb7127-67b0-4570-8933-70cd1fb9eef0",
-         "88ecf490-2870-4215-9628-324486741c52",
-         "4de5619c-3cb0-47e4-8035-001a1970cfe2",
+         "8b6d17b0-a9ad-44ed-9c43-6a5356e35466",
+         "9e3755a2-cd06-4241-94b8-83811b7a82a2",
          "081f2413-3f0c-49a7-af84-6b1582748c0e",
-         "a2d56ed2-c76f-4a39-9f4e-e263317ae591",
+         "4de5619c-3cb0-47e4-8035-001a1970cfe2",
+         "133cc903-809f-4c5f-937e-12eba3428522",
          "e0c01e5d-2b3e-48a9-acaf-807449b448a0",
-         "28ce2a20-6ca8-416f-9d54-d2778e4ed596",
+         "88ecf490-2870-4215-9628-324486741c52",
          "f1c46e92-92ad-4a93-b120-12be7d179855",
-         "5ca5d56a-d1e9-4df5-8735-b2d6b57c0167",
-         "adb04fa2-90e0-43ed-a096-78acd49a81845",
-         "4fe5dd17-e344-44df-ac9e-be668e8223f9"
+         "ff732628-6608-4fae-939c-573c20f14ae8",
+         "57ed0f68-b43a-4233-aba7-702740f11ba3",
+         "cc81886a-76e0-465f-9bc1-c29247c357e2",
+         "adb04fa2-90e0-43ed-a096-78acd49a8186"
         ]
        }
       },
@@ -620,7 +632,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 71,
+        "availableQuantity": 91,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -643,7 +655,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 47,
+        "availableQuantity": 53,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -653,7 +665,225 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALIIO8"
+     "parentProductCode": "DALIIO8",
+     "reviews": {
+      "summary": "DALI IO8 roses bredt for sin varme, afbalancerede, detaljerede og rummelige lyd, som fungerer fremragende til mange musikgenrer. Komfort, byggekvalitet, enkle fysiske knapper og lang batteritid er også klare styrker, mens den effektive støjreduktion gør hovedtelefonerne velegnede til rejser og daglig lytning. Tilbagevendende forbehold er de runde ørekopper, som er for små til nogle ører, en lidt tung pasform, ustabil Bluetooth-rækkevidde eller parring samt en pris, som nogle købere synes er høj.",
+      "headlines": {
+       "warm, balanced and highly detailed sound": {
+        "sentimentAnalysis": "Anmeldelserne beskriver gennemgående gengivelsen som ren, afbalanceret, varm, kontrolleret og meget opløst med overbevisende bas og diskant.",
+        "simpleTitle": "Varm, afbalanceret og meget detaljeret lyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "889095a4-f3f8-4270-ae68-8a4188581596"
+       },
+       "wide, immersive soundstage": {
+        "sentimentAnalysis": "Flere anmeldelser fremhæver en usædvanligt bred, adskilt og omsluttende gengivelse, der placerer instrumenterne omkring lytteren.",
+        "simpleTitle": "Bred og omsluttende lydscene",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "889095a4-f3f8-4270-ae68-8a4188581596"
+       },
+       "earcups and weight can limit comfort": {
+        "sentimentAnalysis": "Flere anmeldelser nævner små runde ørekopper, tryk, at de glider eller en mærkbar vægt, især ved større ører eller lang tids brug.",
+        "simpleTitle": "Ørekopper og vægt kan begrænse komforten",
+        "bias": "negative",
+        "key": "comfort",
+        "groupId": "d964c600-5a19-4f56-9fcb-e53294624ec0"
+       },
+       "effective noise cancellation": {
+        "sentimentAnalysis": "Støjreduktionen beskrives gentagne gange som kraftig, effektiv på fly og i offentlig transport samt konkurrencedygtig med førende alternativer.",
+        "simpleTitle": "Effektiv støjreduktion",
+        "bias": "positive",
+        "key": "noise",
+        "groupId": "75451821-7c16-45ce-8a33-1e1bbc64152d"
+       },
+       "comfortable for long listening": {
+        "sentimentAnalysis": "Mange ejere finder hovedtelefonerne komfortable og velegnede til lange sessioner, flyrejser og hele arbejdsdage.",
+        "simpleTitle": "Komfortable ved lang tids lytning",
+        "bias": "positive",
+        "key": "comfort",
+        "groupId": "d964c600-5a19-4f56-9fcb-e53294624ec0"
+       },
+       "bluetooth pairing and range can be unreliable": {
+        "sentimentAnalysis": "Flere ejere rapporterer om parringsfejl, udfald eller begrænset rækkevidde indendørs trods generelt god lyd via Bluetooth.",
+        "simpleTitle": "Bluetooth-parring og rækkevidde kan være ustabil",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "b4fd79c8-16d9-4ca7-b852-11895e35471d"
+       },
+       "some listeners want stronger bass": {
+        "sentimentAnalysis": "Et lille, men tydeligt mindretal ønsker mere basvægt eller endnu større præcision end IO8 leverer.",
+        "simpleTitle": "Nogle ønsker kraftigere bas",
+        "bias": "negative",
+        "key": "sound",
+        "groupId": "889095a4-f3f8-4270-ae68-8a4188581596"
+       }
+      },
+      "grouping": {
+       "889095a4-f3f8-4270-ae68-8a4188581596": {
+        "title": "Lydkvalitet",
+        "id": "889095a4-f3f8-4270-ae68-8a4188581596",
+        "references": [
+         "00988131-a4c3-4f19-9682-da9c773fe689",
+         "35909c51-109f-4834-a420-5ba962804b3b",
+         "e5c9d6c3-40be-4236-8aa9-8903d685c140",
+         "32c4e8d2-b6ac-46f2-91d9-57fc04b48033",
+         "f9b777b0-5892-4b48-b457-4fdfd37e374f",
+         "2d176583-17c7-4ee5-9aa5-1c153ba2a386",
+         "6ae327c1-2f93-48b2-b04c-f9b7b7519bfd",
+         "ed038fc7-b2b0-4bc9-a84c-5f53e5952e2a",
+         "c077b492-9404-466c-9b28-b631c667a4c3",
+         "25771015-416f-4a1a-be67-a482ec7684f5",
+         "4b44d8eb-7045-4bd4-83b6-1064516e1cf6",
+         "6e6e5938-85e5-4eef-96eb-fd604aaea894",
+         "3fa8f009-7d5a-4c00-803f-7c5a600ad1f7",
+         "81f1b13c-c1af-4c8f-8b7f-ba2db0cca7a9",
+         "9ede6cd4-eae7-4ff4-8d1f-9528f3a24b82",
+         "ec9f1352-756c-4b37-b4e7-36f153171468",
+         "cabea8b6-aa22-48af-8b29-7cb3f3eff1c3",
+         "f3a74ee5-78ad-410c-89e0-942dddcb3ed0",
+         "7ae3d177-4d27-4f97-888d-d7b9d0dae2e7",
+         "b6d5914e-33f8-4210-8bf7-8b0b353f3bc9",
+         "08cd3b85-ddc7-4cd3-b97a-33198be2f4c9",
+         "60fdaa42-89cd-49e4-971d-8571783f6a36",
+         "f23c3160-e433-43f8-93fa-703a48d32aa3",
+         "4021a7e6-bfc8-400b-a029-29dd6a239d7e",
+         "ea671cb9-2793-4bb0-a0bb-1382be451228",
+         "888bc484-5662-4e7f-a1b7-af3b89ba5bd1",
+         "1f08754c-6376-4b5c-bd92-a03d67bb6b83",
+         "700771d9-8a46-4ec4-9564-ff50c4868bca",
+         "48f3bfff-e0c3-4ffe-bb0f-bd455427dea4",
+         "9a24a4a1-051b-4fa7-abd2-c556389c101a",
+         "262984a1-c588-4fc5-b73f-7564d2695bd2",
+         "abb17db3-7ba3-4535-9c1b-b98fea3fd9b6",
+         "57970b0d-0a08-43b5-8908-10414ea4c355",
+         "6b54f4fb-a373-4aa3-bb2a-2c13b2d7758e",
+         "4e94760e-a11b-4e88-afde-c0ee37512616",
+         "1cae5ac5-adbb-4981-920b-47efd167fbb8",
+         "19ff91d1-ae71-45f5-a7db-36f9540c6198",
+         "3e4bef75-c698-49b6-a002-a9c26222ee6d",
+         "c20cf4ee-8f98-452b-81d9-10bf6519bd96",
+         "67e7612d-2c39-47a6-ab5b-dd6a6e4861e3",
+         "4180a364-029e-404a-a1e8-aaf37e651575",
+         "42bb52ff-7d82-4067-9b86-960827c582bd",
+         "bf0391fe-2d03-46b1-bb06-358c53113c95",
+         "34898cd1-3c6c-4452-ad71-968fbc035f87",
+         "21d4fe74-7835-4b69-a89d-2f48d71f6417",
+         "4361086f-6399-4195-bbbc-08cbe6f2bcaa",
+         "417a8aa4-58a3-4dda-8175-a00a81d7a616",
+         "5e082c3b-3957-4c9c-86e1-ad56ac744c95",
+         "0a320cd1-e255-4441-bb32-a5822e8aba71",
+         "44dfb808-9890-4e84-bf22-598cd9fad15e",
+         "88efeca3-b66c-4214-bbf7-aea5ebd0a021",
+         "d5dccd87-b451-4d6f-a369-51ca7b9b51f0",
+         "c8c8d27b-1919-4d26-83e9-b8ea9b0fdc2c",
+         "ae57c4ed-6d9d-4faf-a931-15e6f31a8c87",
+         "2f7c7150-7d88-4ac7-98e1-612a58099a67",
+         "42006f57-365a-4b9a-9f7a-ce01ee8ac247",
+         "2c1ed6a5-b4cd-49bc-b06d-fcde42256a3d",
+         "a5da9fe1-c02c-4941-908f-e6632327e5cc",
+         "d23ff623-679e-4341-8737-ee13ff6ad1b5",
+         "28fba997-7617-4204-a20a-10d9bf17ea40",
+         "05486e9e-412a-476e-b472-cef1b721f09c",
+         "2e38f265-345a-4f14-a27d-bb07a0cdd500",
+         "ad13dfa8-6766-4872-baed-66156649404c",
+         "4edfcc1d-3c18-4f5c-a891-e5fe46119d75",
+         "1f29ff92-e364-4298-a67c-67c1a5a45b7a",
+         "73a6a47e-fa98-406b-988e-4439c0014a2d",
+         "8949cb98-2516-401f-9e1e-ef9282057e90",
+         "50e4d377-50fc-4f18-a82a-2cdfd31b7b7f",
+         "f6771479-12c1-46a8-a02c-8c420dfa0a3a",
+         "58de9900-2cef-437b-a241-235a1cc9343f",
+         "b0e8ae69-d16f-45ff-bf7e-17ed38e88b41",
+         "00c89d81-deaf-4763-890c-632d743d9180",
+         "18e0e69d-7588-4696-82ab-26c1af6eb545",
+         "7601cabb-d3b2-40bd-8f61-61f2b77430f6",
+         "1d03ef83-7734-490e-9247-2722d910ad50",
+         "6edc72ba-fde8-4229-8a42-d320bf09d016",
+         "2b58e21a-41ce-4c11-a603-d27fab80ba3b",
+         "68c72792-0242-494e-b534-652ecc2d4485",
+         "62255387-10f0-48c4-ae20-e48d3ed36e82",
+         "b2d75d77-df03-49fe-a481-ed8b97b6004c",
+         "5b920192-0c89-4186-bc11-49793915699b",
+         "ddccac85-8a26-4281-ae5e-0129aaf21e8d"
+        ]
+       },
+       "d964c600-5a19-4f56-9fcb-e53294624ec0": {
+        "title": "Komfort og pasform",
+        "id": "d964c600-5a19-4f56-9fcb-e53294624ec0",
+        "references": [
+         "00988131-a4c3-4f19-9682-da9c773fe689",
+         "32c4e8d2-b6ac-46f2-91d9-57fc04b48033",
+         "f9b777b0-5892-4b48-b457-4fdfd37e374f",
+         "6ae327c1-2f93-48b2-b04c-f9b7b7519bfd",
+         "ed038fc7-b2b0-4bc9-a84c-5f53e5952e2a",
+         "c077b492-9404-466c-9b28-b631c667a4c3",
+         "4b44d8eb-7045-4bd4-83b6-1064516e1cf6",
+         "7ae3d177-4d27-4f97-888d-d7b9d0dae2e7",
+         "b6d5914e-33f8-4210-8bf7-8b0b353f3bc9",
+         "9ede6cd4-eae7-4ff4-8d1f-9528f3a24b82",
+         "cabea8b6-aa22-48af-8b29-7cb3f3eff1c3",
+         "25771015-416f-4a1a-be67-a482ec7684f5",
+         "4021a7e6-bfc8-400b-a029-29dd6a239d7e",
+         "ea671cb9-2793-4bb0-a0bb-1382be451228",
+         "9a24a4a1-051b-4fa7-abd2-c556389c101a",
+         "19ff91d1-ae71-45f5-a7db-36f9540c6198",
+         "34898cd1-3c6c-4452-ad71-968fbc035f87",
+         "44dfb808-9890-4e84-bf22-598cd9fad15e",
+         "88efeca3-b66c-4214-bbf7-aea5ebd0a021",
+         "a9f66525-cb84-4eb7-bcef-e6f4a7ea848c",
+         "2f7c7150-7d88-4ac7-98e1-612a58099a67",
+         "42006f57-365a-4b9a-9f7a-ce01ee8ac247",
+         "2c1ed6a5-b4cd-49bc-b06d-fcde42256a3d",
+         "28fba997-7617-4204-a20a-10d9bf17ea40",
+         "7601cabb-d3b2-40bd-8f61-61f2b77430f6",
+         "1d03ef83-7734-490e-9247-2722d910ad50",
+         "68c72792-0242-494e-b534-652ecc2d4485",
+         "b2d75d77-df03-49fe-a481-ed8b97b6004c",
+         "5b920192-0c89-4186-bc11-49793915699b",
+         "ddccac85-8a26-4281-ae5e-0129aaf21e8d"
+        ]
+       },
+       "b4fd79c8-16d9-4ca7-b852-11895e35471d": {
+        "title": "Bluetooth og forbindelse",
+        "id": "b4fd79c8-16d9-4ca7-b852-11895e35471d",
+        "references": [
+         "44888236-f5f6-4b51-8431-295cab47bb0a",
+         "81f1b13c-c1af-4c8f-8b7f-ba2db0cca7a9",
+         "f3a74ee5-78ad-410c-89e0-942dddcb3ed0",
+         "4e94760e-a11b-4e88-afde-c0ee37512616",
+         "62255387-10f0-48c4-ae20-e48d3ed36e82",
+         "5ab2914c-e003-4cfe-a55b-2b75faff71a3",
+         "321e78d5-b174-48bc-b986-e43fd619b92b",
+         "4edfcc1d-3c18-4f5c-a891-e5fe46119d75",
+         "7601cabb-d3b2-40bd-8f61-61f2b77430f6"
+        ]
+       },
+       "75451821-7c16-45ce-8a33-1e1bbc64152d": {
+        "title": "Støjreduktion",
+        "id": "75451821-7c16-45ce-8a33-1e1bbc64152d",
+        "references": [
+         "9ede6cd4-eae7-4ff4-8d1f-9528f3a24b82",
+         "888bc484-5662-4e7f-a1b7-af3b89ba5bd1",
+         "6b54f4fb-a373-4aa3-bb2a-2c13b2d7758e",
+         "4361086f-6399-4195-bbbc-08cbe6f2bcaa",
+         "5e082c3b-3957-4c9c-86e1-ad56ac744c95",
+         "1f29ff92-e364-4298-a67c-67c1a5a45b7a",
+         "8949cb98-2516-401f-9e1e-ef9282057e90"
+        ]
+       }
+      },
+      "rating": 4.79640718562874,
+      "count": 167,
+      "reviewCount": 92,
+      "distribution": {
+       "1": 3,
+       "2": 0,
+       "3": 3,
+       "4": 16,
+       "5": 145
+      }
+     }
     }
    ],
    "sellableOnWeb": true,
@@ -661,20 +891,20 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 18
+    "numberOfStoresExperience": 14
    }
   },
   "variantNavigationType": "dropDown",
   "reviews": {
-   "rating": 4.76081424936387,
-   "count": 393,
-   "reviewCount": 237,
+   "rating": 4.76142131979695,
+   "count": 394,
+   "reviewCount": 238,
    "distribution": {
     "1": 4,
     "2": 3,
     "3": 9,
     "4": 51,
-    "5": 326
+    "5": 327
    }
   },
   "boxContent": [],

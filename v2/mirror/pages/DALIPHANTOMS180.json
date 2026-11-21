@@ -13,6 +13,17 @@
    "url": "/hojtalere/indbygning-udendors-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b7efbcd4-5a90-41a6-9a40-9ad9c6074284",
+   "76e64bbd-984e-45e5-9e7e-186390feac0a",
+   "d47ae884-24b6-46ac-99e7-df3ae5f8c6eb",
+   "53310791-cb31-4a41-9d5d-19e6212f71d4",
+   "1be4c0f4-d6f4-4aa7-8c45-cf6a638500c8"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 68559,
   "skuCode": "DALIPHANTOMS180",
@@ -186,11 +197,12 @@
      "productCode": "DALIPHANTOMS180WH"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "availableQuantity": 7,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

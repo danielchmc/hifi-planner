@@ -192,29 +192,6 @@
    ]
   },
   {
-   "type": "Integreret forstærker",
-   "keys": {
-    "IntegratedAmplifier": 31
-   },
-   "cats": {
-    "HiFi > Forstærker": 31
-   },
-   "count": 32,
-   "bundles": 1,
-   "outlet": 1,
-   "products": 30,
-   "inCatalogue": 30,
-   "variantAxes": {
-    "colorOptions": 30,
-    "none": 1,
-    "dropDown": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Integrated Amplifiers"
-   ]
-  },
-  {
    "type": "Kompakt højtaler",
    "keys": {
     "CompactLoudSpeaker": 31
@@ -257,6 +234,29 @@
    "mapped": "cats",
    "hifiPlanner": [
     "Wireless/Bluetooth Speakers"
+   ]
+  },
+  {
+   "type": "Integreret forstærker",
+   "keys": {
+    "IntegratedAmplifier": 30
+   },
+   "cats": {
+    "HiFi > Forstærker": 30
+   },
+   "count": 31,
+   "bundles": 1,
+   "outlet": 1,
+   "products": 29,
+   "inCatalogue": 29,
+   "variantAxes": {
+    "colorOptions": 29,
+    "none": 1,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Integrated Amplifiers"
    ]
   },
   {

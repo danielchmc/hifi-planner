@@ -13,6 +13,18 @@
    "url": "/hojtalere/centerhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e6027172-caad-4b68-991a-5ffe11d22593",
+   "7fe62e38-dd1c-46a5-9f70-12a045441be6",
+   "77def4e6-dff8-4b0b-97b6-23096fb512a1",
+   "24626605-ad1a-4935-9d0d-f5911505db32",
+   "5f7dd22c-e1a7-48ee-b721-b75498089d1f",
+   "abb6e66c-05e4-45b3-9b05-31b4af46cf15"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 207917,
   "skuCode": "DALIOBERONGRANDVOK",
@@ -172,7 +184,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 7,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -223,34 +235,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI Oberon Grand Vokal leverer en varm, kraftfuld og omsluttende lyd med særligt tydelig dialog, punchy bas og detaljeret gengivelse til hjemmebiograf og musik. Den gode integration med DALI Oberon-systemer gør centerhøjttaleren til en overbevisende opgradering i mange opsætninger. Det store kabinet kræver en del plads, og udvalget af matchende finish er lidt begrænset, men lydkvaliteten får stor ros.",
+   "summary": "DALI Oberon Grand Vokal leverer en varm, kraftfuld og medrivende lyd med særligt tydelige dialoger, mange detaljer og solid bas til hjemmebiografen. Højttaleren passer fremragende ind i Oberon-systemer og roses ofte for byggekvaliteten og det stilfulde udseende. Det store kabinet kræver dog en del plads, og matchningen kan være mindre ideel med visse andre eller dyrere DALI-systemer.",
    "headlines": {
-    "a strong match for DALI Oberon systems": {
-     "sentimentAnalysis": "Anmeldelserne beskriver problemfri integration med eksisterende DALI- og Oberon-hjemmebiografer samt et godt match med Oberon-gulvhøjttalere.",
-     "simpleTitle": "Et stærkt match til DALI Oberon-systemer",
-     "bias": "positive",
-     "key": "system-fit",
-     "groupId": "45db5082-39a5-4652-a829-fea0f3ff05c2"
-    },
-    "powerful, clear and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser centerhøjttaleren for kraftfuld bas, tydelig dialog, klare højder og detaljeret gengivelse.",
-     "simpleTitle": "Kraftfuld, klar og detaljeret lyd",
+    "rich, powerful and detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmigt den behagelige, fyldige og detaljerede gengivelse.",
+     "simpleTitle": "Fyldig, kraftfuld og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "1a28f807-4e44-4ac2-a024-c4dcfebb8852"
+     "groupId": "9ba361c2-0002-44f1-af55-c070da5be3c3"
     },
-    "the cabinet is large and takes up space": {
-     "sentimentAnalysis": "To anmeldelser fremhæver specifikt den betydelige størrelse og pladskravet, men accepterer kompromiset for den bedre lyd.",
-     "simpleTitle": "Kabinetten er stort og fylder meget",
+    "excellent match with Oberon systems": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver centeren som en stærk tilføjelse eller et naturligt match til Oberon-hjemmebiografer.",
+     "simpleTitle": "Fremragende match med Oberon-systemer",
+     "bias": "positive",
+     "key": "system",
+     "groupId": "5e7f9920-677a-4271-a1f2-40bf247c0fd9"
+    },
+    "clear dialogue and strong bass": {
+     "sentimentAnalysis": "Centeren værdsættes for tydelig dialog kombineret med kraftfuld bas.",
+     "simpleTitle": "Klar dialog og kraftig bas",
+     "bias": "positive",
+     "key": "dialogue",
+     "groupId": "af34a779-f0fa-4767-a522-6c5f09c82173"
+    },
+    "large cabinet needs space": {
+     "sentimentAnalysis": "Det store kabinet nævnes direkte som en ulempe, selv om en anmeldelse mener, at størrelsen er lyden værd.",
+     "simpleTitle": "Stort kabinet kræver plads",
      "bias": "negative",
-     "key": "size",
-     "groupId": "615051ba-b33a-49cf-9643-9c3f28bb607d"
+     "key": "design",
+     "groupId": "ac8fd352-96ba-422c-9d79-128bc781a726"
     }
    },
    "grouping": {
-    "1a28f807-4e44-4ac2-a024-c4dcfebb8852": {
+    "9ba361c2-0002-44f1-af55-c070da5be3c3": {
      "title": "Lydkvalitet",
-     "id": "1a28f807-4e44-4ac2-a024-c4dcfebb8852",
+     "id": "9ba361c2-0002-44f1-af55-c070da5be3c3",
      "references": [
       "5f413d57-e7b7-4c50-918a-25f82978250a",
       "cfba30f0-bed9-4932-b734-66663dbc5864",
@@ -258,6 +277,7 @@
       "de75f902-efc3-481f-954f-7048a23977ea",
       "dd139eee-7cd3-482b-a08c-a2760fec9b8c",
       "ee0d72f7-9068-4206-b08c-765c5373a2de",
+      "05d435a0-3971-4186-9647-95d927cf4f0d",
       "7b461a7a-03bd-41b8-8621-0271ad0104c4",
       "d2337656-8c56-4222-9327-32a1ee290f12",
       "f1172268-5745-4f85-aae4-0fdd786ef7b6",
@@ -266,9 +286,9 @@
       "9ed71edc-0de4-4ed3-bd58-8b8e9595ee5e"
      ]
     },
-    "45db5082-39a5-4652-a829-fea0f3ff05c2": {
+    "5e7f9920-677a-4271-a1f2-40bf247c0fd9": {
      "title": "Systemkompatibilitet",
-     "id": "45db5082-39a5-4652-a829-fea0f3ff05c2",
+     "id": "5e7f9920-677a-4271-a1f2-40bf247c0fd9",
      "references": [
       "0e14da87-08ec-424b-a7ff-e66c02d29966",
       "ac4c49d6-29cb-41bd-9a11-5c4716136cd9",
@@ -276,15 +296,29 @@
       "4e555bf0-5188-4e4d-bf15-69a5595a36d4",
       "05d435a0-3971-4186-9647-95d927cf4f0d",
       "34a8a82c-0c94-4093-ba67-7577b38abd72",
+      "5c1b79a4-69c5-4f11-9d4e-96a714eb980d",
       "9ed71edc-0de4-4ed3-bd58-8b8e9595ee5e"
      ]
     },
-    "615051ba-b33a-49cf-9643-9c3f28bb607d": {
-     "title": "Størrelse",
-     "id": "615051ba-b33a-49cf-9643-9c3f28bb607d",
+    "ac8fd352-96ba-422c-9d79-128bc781a726": {
+     "title": "Design og finish",
+     "id": "ac8fd352-96ba-422c-9d79-128bc781a726",
      "references": [
+      "5f413d57-e7b7-4c50-918a-25f82978250a",
+      "cfba30f0-bed9-4932-b734-66663dbc5864",
+      "fb3dd599-55d5-4e90-b65b-0a8773acc5cc",
       "7b461a7a-03bd-41b8-8621-0271ad0104c4",
       "0fd138e0-6593-4519-8b66-849467c0bd00"
+     ]
+    },
+    "af34a779-f0fa-4767-a522-6c5f09c82173": {
+     "title": "Dialogklarhed",
+     "id": "af34a779-f0fa-4767-a522-6c5f09c82173",
+     "references": [
+      "4e555bf0-5188-4e4d-bf15-69a5595a36d4",
+      "ee0d72f7-9068-4206-b08c-765c5373a2de",
+      "7b461a7a-03bd-41b8-8621-0271ad0104c4",
+      "d2337656-8c56-4222-9327-32a1ee290f12"
      ]
     }
    },

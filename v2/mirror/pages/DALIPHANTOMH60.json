@@ -13,6 +13,16 @@
    "url": "/hojtalere/indbygning-udendors-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e1b311cb-1941-4b84-afbf-efbdbf272f30",
+   "505b55d3-10c6-4355-8636-14de11a49161",
+   "9f6ef6b5-b160-4275-8782-b180eb2577c9",
+   "a5a22de3-efab-4180-a923-b3524e6ef724"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 1592,
   "skuCode": "DALIPHANTOMH60",
@@ -44,13 +54,13 @@
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "DALIPHANTOMH50",
     "DALIPHANTOMH60R",
     "DALIPHANTOMH80",
     "DALIPHANTOMH80R",
-    "BWCWM652",
     "BWCWM663",
-    "BWCWM664"
+    "BWCWM664",
+    "DALIPHANTOMH50",
+    "BWCWM652"
    ],
    "isOutlet": "false"
   },
@@ -199,7 +209,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 6,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
