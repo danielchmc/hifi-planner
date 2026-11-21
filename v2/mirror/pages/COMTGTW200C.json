@@ -13,6 +13,13 @@
    "url": "/horetelefoner/horetelefon-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "6c2473a4-50df-44a8-bfa2-4d5537bd5313"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 154767,
   "skuCode": "COMTGTW200C",
@@ -91,7 +98,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 157,
+     "availableQuantity": 153,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -160,7 +167,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 32,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -249,48 +256,58 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Comply-skumpropper giver som regel en sikker og behagelig pasform, bedre tætning og en mere omsluttende, fyldig lyd end standardpropper. Kompatibilitet og størrelse kan dog variere, og nogle brugere oplever, at propperne glider ud, er ubehagelige eller isolerer dårligere. De største ulemper er den høje pris, den korte levetid og skum, der let samler snavs eller løsner sig fra kernen.",
+   "summary": "Disse skumpropper giver generelt en sikker og behagelig pasform med bedre tætning og stærkere passiv støjisolering, og de får ofte øretelefonerne til at lyde varmere, mere fyldige og mere detaljerede. Kompatibilitet og størrelse varierer dog, og nogle brugere oplever, at de glider ud, er ubehagelige eller giver dårligere lyd end originalerne. Den største ulempe er holdbarheden: Flere brugere synes, at propperne er dyre og hurtigt bliver klistrede, snavsede, slidte eller går i stykker.",
    "headlines": {
-    "secure, comfortable fit and strong sealing": {
-     "sentimentAnalysis": "Skumpropperne roses bredt for bedre stabilitet, komfort og passiv isolering.",
-     "simpleTitle": "Sikker, behagelig pasform og god tætning",
+    "better sealing and a secure, comfortable fit": {
+     "sentimentAnalysis": "Skumpropperne roses bredt for at give en tættere forsegling og en mere sikker og behagelig pasform, også ved længere tids brug.",
+     "simpleTitle": "Bedre tætning og sikker, behagelig pasform",
      "bias": "positive",
-     "key": "fit-seal",
-     "groupId": "1d1d99fc-2310-4238-a521-ad7ec98aaa18"
+     "key": "fit_seal_comfort",
+     "groupId": "275cf471-c03d-4b20-a120-7494ddc6426b"
     },
-    "fit and sizing can be inconsistent": {
-     "sentimentAnalysis": "Nogle brugere oplever, at propperne glider ud, er for bløde, er ubehagelige i mindre øregange eller isolerer dårligere end standardpropperne.",
-     "simpleTitle": "Pasform og størrelse kan variere",
+    "high price weakens the value proposition": {
+     "sentimentAnalysis": "Flere brugere synes, at prisen er for høj, især når pasform, ydeevne eller levetid ikke lever op til forventningerne.",
+     "simpleTitle": "Den høje pris svækker værdien for pengene",
      "bias": "negative",
-     "key": "fit-seal",
-     "groupId": "1d1d99fc-2310-4238-a521-ad7ec98aaa18"
+     "key": "value_price",
+     "groupId": "019237c8-caa5-47e5-98ad-c8386d817d7f"
     },
-    "foam wears out or separates too quickly": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kort levetid, snavs, revner eller skum, der løsner sig fra gummikernen.",
-     "simpleTitle": "Skummet slides for hurtigt eller løsner sig",
+    "some users experience slipping or poorer sound": {
+     "sentimentAnalysis": "Pasformen fungerer ikke for alle: Nogle propper er for bløde eller små eller vanskelige at montere, hvilket giver glidning, dårligere isolering og ringere lyd.",
+     "simpleTitle": "Nogle brugere oplever, at de glider ud eller giver dårligere lyd",
+     "bias": "negative",
+     "key": "fit_seal_comfort",
+     "groupId": "275cf471-c03d-4b20-a120-7494ddc6426b"
+    },
+    "tips wear out or detach too quickly": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver kort levetid, hvor propperne bliver snavsede eller klistrede, revner i etuier eller løsner sig fra den indvendige kerne.",
+     "simpleTitle": "Propperne slides eller løsner sig for hurtigt",
      "bias": "negative",
      "key": "durability",
-     "groupId": "b3b1b941-3f9f-4953-b641-11c0a995fc6d"
+     "groupId": "3ee7a45e-69ba-4c56-b468-5db194d23d56"
     },
-    "high price weakens the value": {
-     "sentimentAnalysis": "Købet opfattes som dyrt, og nogle brugere mener ikke, at ydeevnen står mål med prisen.",
-     "simpleTitle": "Den høje pris svækker værdien",
-     "bias": "negative",
-     "key": "value",
-     "groupId": "9d9d2db5-0127-477a-a745-92ade9be2e89"
+    "sound becomes fuller and more detailed": {
+     "sentimentAnalysis": "Den bedre tætning forbindes med kraftigere bas, et fyldigere lydbillede og flere detaljer end med originalpropperne.",
+     "simpleTitle": "Lyden bliver fyldigere og mere detaljeret",
+     "bias": "positive",
+     "key": "sound_quality",
+     "groupId": "0ef74dad-6799-4eed-b56b-c58b44d96ce5"
     }
    },
    "grouping": {
-    "1d1d99fc-2310-4238-a521-ad7ec98aaa18": {
-     "title": "Pasform og tætning",
-     "id": "1d1d99fc-2310-4238-a521-ad7ec98aaa18",
+    "275cf471-c03d-4b20-a120-7494ddc6426b": {
+     "title": "Pasform, tætning og komfort",
+     "id": "275cf471-c03d-4b20-a120-7494ddc6426b",
      "references": [
       "33240c4a-973b-435e-b2b3-0f078ff8f535",
       "73a182e4-5ae4-47c3-944d-f56bfae4cf80",
       "43519a7e-6129-4ce4-8d89-cea31f4f394c",
       "f0a59f1b-abc5-47ce-8dbe-484af3135ac3",
+      "8c617377-19d0-47e1-aa43-10b75a35b0b9",
       "87be0ead-5e5e-4508-b748-713ba81eedc1",
       "716112d6-ff1d-4008-a363-a0179b1c8fc6",
+      "9a646aad-56af-41ed-8ddf-b5bd7bfce3d8f",
+      "aea02440-c4f2-4b9e-8b26-314941fc54bf",
       "55e8ce77-5675-48a5-839c-533854ca5fbc",
       "89bb81ef-894d-441a-a443-79eb8f328168",
       "e7d8f6a9-8606-4eea-b66c-08bc4e0e880e",
@@ -300,9 +317,20 @@
       "992aea07-5b2b-4645-a75b-c2a5587892ad"
      ]
     },
-    "b3b1b941-3f9f-4953-b641-11c0a995fc6d": {
+    "0ef74dad-6799-4eed-b56b-c58b44d96ce5": {
+     "title": "Lydkvalitet",
+     "id": "0ef74dad-6799-4eed-b56b-c58b44d96ce5",
+     "references": [
+      "33240c4a-973b-435e-b2b3-0f078ff8f535",
+      "9a646aad-56af-41ed-8ddf-b5bd7bfce3d8f",
+      "f0a59f1b-abc5-47ce-8dbe-484af3135ac3",
+      "89bb81ef-894d-441a-a443-79eb8f328168",
+      "992aea07-5b2b-4645-a75b-c2a5587892ad"
+     ]
+    },
+    "3ee7a45e-69ba-4c56-b468-5db194d23d56": {
      "title": "Holdbarhed",
-     "id": "b3b1b941-3f9f-4953-b641-11c0a995fc6d",
+     "id": "3ee7a45e-69ba-4c56-b468-5db194d23d56",
      "references": [
       "4396246a-9c31-4890-9c3e-57939217229f",
       "aea02440-c4f2-4b9e-8b26-314941fc54bf",
@@ -310,12 +338,13 @@
       "a0396a7a-04a0-4631-b71d-b0b655297aa0"
      ]
     },
-    "9d9d2db5-0127-477a-a745-92ade9be2e89": {
-     "title": "Pris og værdi",
-     "id": "9d9d2db5-0127-477a-a745-92ade9be2e89",
+    "019237c8-caa5-47e5-98ad-c8386d817d7f": {
+     "title": "Værdi for pengene",
+     "id": "019237c8-caa5-47e5-98ad-c8386d817d7f",
      "references": [
       "2fdb2dda-0c30-4781-ad2c-1ebd8558fee1",
       "ffa87c57-52ae-49f4-b31f-5459979f34fe",
+      "8c617377-19d0-47e1-aa43-10b75a35b0b9",
       "992aea07-5b2b-4645-a75b-c2a5587892ad"
      ]
     }

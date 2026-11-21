@@ -13,6 +13,18 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "31fde10a-ff70-41c8-bcf6-a5b689595030",
+   "67bc5a7e-0ec8-4782-a601-bb330d6cf5db",
+   "7326abae-7f6e-4a1a-b59c-cabed87b9411",
+   "54871ca7-8b09-4b55-b9ca-833c89566dc6",
+   "411b68dd-930a-4624-bd7f-af735b1ccd88",
+   "8839a2df-60e4-4fc2-bb08-6e93f0347b2e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 304,
   "skuCode": "DALIFAZONSAT",
@@ -169,7 +181,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 7,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -256,7 +268,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 22,
+     "availableQuantity": 24,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -295,48 +307,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIFAZONSAT leverer en bemærkelsesværdig klar, detaljeret og fyldig lyd fra et kompakt kabinet med åben dynamik, fin opløsning og en omsluttende karakter, der passer til stereo-, surround- og Dolby Atmos-systemer. Det kompakte design, det attraktive udseende og de praktiske monteringsmuligheder gør højttaleren nem at integrere ved siden af et TV, i et 5.1-setup eller som Atmos-højttaler i højden. Samlet set roses højttaleren som et fremragende valg til et kraftfuldt kompakt system, selv om en anmeldelse bemærker forskel mellem butikkens udstilling og det leverede produkt.",
+   "summary": "DALIFAZONSAT leverer varm, klar og detaljeret lyd med imponerende fylde, dynamik og rumfornemmelse for så kompakt en højttaler. Højttaleren fungerer særligt godt i surround- og Dolby Atmos-systemer, også som center- eller højttaler til højderkanaler. Det elegante, kompakte design og den praktiske montering gør DALIFAZONSAT til et fremragende valg til en pladsbesparende hjemmebiograf.",
    "headlines": {
     "clear, detailed and full-bodied sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent højttaleren for en klar, fyldig, moden og fint detaljeret lyd med imponerende fylde i forhold til størrelsen.",
+     "sentimentAnalysis": "Anmeldelserne roser den klare, detaljerede, modne og fyldige lyd.",
      "simpleTitle": "Klar, detaljeret og fyldig lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "d7e644dc-d90e-44d0-9d58-d17a362004b8"
+     "groupId": "b8bd5527-691e-4f30-830d-e4e7ff73d1e8"
     },
-    "well suited to surround and Atmos systems": {
-     "sentimentAnalysis": "Højttaleren anbefales gentagne gange som en kompakt løsning til surround-, bag- eller Dolby Atmos-højdekanaler, der fungerer godt i større systemer.",
-     "simpleTitle": "Velegnet til surround- og Atmos-systemer",
+    "ideal for surround and Atmos setups": {
+     "sentimentAnalysis": "Højttaleren fungerer godt i 5.1-surround- og Dolby Atmos-systemer, også som lofts- og bagkanal.",
+     "simpleTitle": "Ideel til surround- og Atmos-systemer",
      "bias": "positive",
      "key": "surround-atmos",
-     "groupId": "a358de8f-087b-47a0-ba4c-554557b157ca"
+     "groupId": "0aaf0b05-21cf-47d4-a649-eea9ee639db0"
     },
-    "compact format with strong output": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den usædvanligt store og fyldige lyd fra det lille og praktiske kabinet.",
-     "simpleTitle": "Kompakt format med stor lyd",
+    "small size, substantial sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver det imponerende lydvolumen og den gode ydeevne fra det kompakte kabinet.",
+     "simpleTitle": "Lille størrelse, stor lyd",
      "bias": "positive",
      "key": "compact-design",
-     "groupId": "50ff84a8-95f5-418a-8b61-621731609af1"
+     "groupId": "6380516b-71ea-4fbe-9b01-5ff328227028"
     },
-    "practical mounting and attractive appearance": {
-     "sentimentAnalysis": "Anmeldelserne roser den praktiske monteringsløsning, den nemme installation og det flotte udseende omkring et TV eller i et Atmos-setup.",
-     "simpleTitle": "Praktisk montering og flot udseende",
-     "bias": "positive",
-     "key": "surround-atmos",
-     "groupId": "a358de8f-087b-47a0-ba4c-554557b157ca"
-    },
-    "open dynamics and immersive presentation": {
-     "sentimentAnalysis": "Højttaleren beskrives som åben, nuanceret og dynamisk og skaber et bredt og engagerende lydbillede til både musik og hjemmebiograf.",
-     "simpleTitle": "Åben dynamik og omsluttende gengivelse",
+    "open sound with strong dynamics": {
+     "sentimentAnalysis": "Lyden beskrives som smuk, åben, dynamisk og engagerende.",
+     "simpleTitle": "Åben lyd med stærk dynamik",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "d7e644dc-d90e-44d0-9d58-d17a362004b8"
+     "groupId": "b8bd5527-691e-4f30-830d-e4e7ff73d1e8"
+    },
+    "convenient to install and mount": {
+     "sentimentAnalysis": "Monteringsløsningen anses for praktisk, og installationen beskrives som nem.",
+     "simpleTitle": "Nem at installere og montere",
+     "bias": "positive",
+     "key": "installation-mounting",
+     "groupId": "d8875b9e-e906-4821-bca7-7c2316291d48"
     }
    },
    "grouping": {
-    "d7e644dc-d90e-44d0-9d58-d17a362004b8": {
+    "b8bd5527-691e-4f30-830d-e4e7ff73d1e8": {
      "title": "Lydkvalitet",
-     "id": "d7e644dc-d90e-44d0-9d58-d17a362004b8",
+     "id": "b8bd5527-691e-4f30-830d-e4e7ff73d1e8",
      "references": [
       "4dcccc9f-ce55-41fe-ba8e-d0dd05ed3aa6",
       "bec903c7-5ef1-41f0-b3bb-02559a36f84c",
@@ -353,9 +365,9 @@
       "18afb304-6788-4456-8e37-19a3bea462e1"
      ]
     },
-    "a358de8f-087b-47a0-ba4c-554557b157ca": {
-     "title": "Surround- og Atmos-opsætning",
-     "id": "a358de8f-087b-47a0-ba4c-554557b157ca",
+    "0aaf0b05-21cf-47d4-a649-eea9ee639db0": {
+     "title": "Surround og Dolby Atmos",
+     "id": "0aaf0b05-21cf-47d4-a649-eea9ee639db0",
      "references": [
       "3f269f92-d3ad-407a-8af1-feb9f24915c9",
       "df226ce4-cfad-468b-865a-16431f7cfcd0",
@@ -366,15 +378,23 @@
       "59add494-2515-441c-a29d-38143187923b"
      ]
     },
-    "50ff84a8-95f5-418a-8b61-621731609af1": {
+    "6380516b-71ea-4fbe-9b01-5ff328227028": {
      "title": "Kompakt design",
-     "id": "50ff84a8-95f5-418a-8b61-621731609af1",
+     "id": "6380516b-71ea-4fbe-9b01-5ff328227028",
      "references": [
       "3f269f92-d3ad-407a-8af1-feb9f24915c9",
       "e2c17148-9480-4c51-b08a-88384a03f4a6",
       "4f5ab7e4-ac07-48d0-a72a-c928a1bb7264",
       "1444c353-d3df-4f27-9d82-658b3167bd1c",
       "18afb304-6788-4456-8e37-19a3bea462e1"
+     ]
+    },
+    "d8875b9e-e906-4821-bca7-7c2316291d48": {
+     "title": "Installation og montering",
+     "id": "d8875b9e-e906-4821-bca7-7c2316291d48",
+     "references": [
+      "df226ce4-cfad-468b-865a-16431f7cfcd0",
+      "7b7a4d97-c515-48c1-b57c-6decef435130"
      ]
     }
    },

@@ -13,6 +13,13 @@
    "url": "/horetelefoner/horetelefon-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fc929afe-8443-49e4-a8c0-a4d1b3056bde"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 162865,
   "skuCode": "COMTGTW400CMX",
@@ -96,8 +103,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 9,
-     "availableQuantity": 65,
+     "numberOfStoresExperience": 10,
+     "availableQuantity": 64,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -165,7 +172,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 18,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -255,61 +262,57 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse ørepropper kan give en tæt, behagelig pasform og en bedre forsegling, som giver varmere, mere kraftfuld bas og en mere omsluttende lytteoplevelse samt forbedrer lydisolering og ANC for mange brugere. Komfort og stabilitet roses ofte, når den rigtige størrelse er fundet. Pasformens pålidelighed, den store størrelse, kompatibilitet, voksophobning og holdbarhed er dog stadig væsentlige problemer.",
+   "summary": "Comply-skumpropper kan give en varm, fyldig og omsluttende lytteoplevelse ved at forbedre forseglingen, basdetaljerne og støjisoleringen. Mange brugere oplever også en fremragende komfort. Pasformen varierer dog meget, da nogle ører finder propperne for store eller svære at placere, og holdbarhed samt værdi for pengene giver anledning til kritik.",
    "headlines": {
-    "comfortable and secure once fitted": {
-     "sentimentAnalysis": "Flere brugere beskriver en komfortabel og sikker pasform efter isætning, mindre ømhed i ørerne og næsten umærkelige øretelefoner.",
-     "simpleTitle": "Komfortable og sikre ved korrekt pasform",
+    "comfortable, secure fit": {
+     "sentimentAnalysis": "Propperne roses for at blive komfortable, sidde sikkert og forbedre pasformen på kompatible øretelefoner.",
+     "simpleTitle": "Komfortabel og sikker pasform",
      "bias": "positive",
-     "key": "comfortable_secure_fit",
-     "groupId": "e267b3da-140e-47b7-9007-c3daee392cae"
+     "key": "fit_comfort",
+     "groupId": "a14b52d4-8c79-4f9b-9855-20833e83df4b"
     },
-    "improved isolation and ANC": {
-     "sentimentAnalysis": "Flere brugere roser den bedre lydafskærmning og markant forbedrede ANC, når propperne slutter tæt.",
-     "simpleTitle": "Forbedret isolering og ANC",
+    "stronger noise isolation and ANC": {
+     "sentimentAnalysis": "En bedre forsegling forbindes ofte med mærkbart bedre passiv isolering og mere effektiv aktiv støjreduktion.",
+     "simpleTitle": "Bedre støjisolering og ANC",
      "bias": "positive",
-     "key": "improved_isolation_anc",
-     "groupId": "bd61f191-f092-4c34-95e2-63aa18bd03c3"
+     "key": "noise_isolation",
+     "groupId": "107c0bfe-6aca-448a-9782-4c64b5f505c4"
     },
-    "large or inconsistent fit can be problematic": {
-     "sentimentAnalysis": "Nogle brugere oplever for store propper, vanskelig placering, dårlig kompatibilitet eller en løs pasform, der forringer ydeevnen.",
-     "simpleTitle": "Stor eller uensartet pasform kan give problemer",
+    "oversized or difficult to fit": {
+     "sentimentAnalysis": "Flere brugere oplever, at propperne er for store, svære at placere eller inkompatible med de anbefalede øretelefoner, hvilket giver en løs eller dårlig pasform.",
+     "simpleTitle": "For store eller svære at tilpasse",
      "bias": "negative",
-     "key": "fit_size_issues",
-     "groupId": "e267b3da-140e-47b7-9007-c3daee392cae"
+     "key": "fit_comfort",
+     "groupId": "a14b52d4-8c79-4f9b-9855-20833e83df4b"
     },
     "richer, more detailed sound": {
-     "sentimentAnalysis": "En bedre forsegling forbindes med klarere gengivelse, mere detaljeret bas og generelt forbedret lyd fra øretelefonerne.",
+     "sentimentAnalysis": "Den forbedrede forsegling får æren for en klarere gengivelse og især mere detaljerede og kraftfulde lave frekvenser.",
      "simpleTitle": "Fyldigere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "richer_sound",
-     "groupId": "023febda-66fd-4deb-952e-5a03068902a4"
+     "key": "sound_quality",
+     "groupId": "d8dc50f5-959f-4190-ae87-8d38b4a0b2f1"
     },
-    "anc may fail with a poor match": {
-     "sentimentAnalysis": "Dårlig kombination eller forsegling kan gøre støjreduktionen ineffektiv trods potentialet for forbedring.",
-     "simpleTitle": "ANC kan svigte ved dårlig pasform",
+    "noise cancellation can fail": {
+     "sentimentAnalysis": "Nogle brugere oplever ingen ANC-forbedring eller mister bas, når propperne ikke slutter tæt eller passer korrekt til øretelefonerne.",
+     "simpleTitle": "Støjreduktionen kan udeblive",
      "bias": "negative",
-     "key": "anc_fit_failure",
-     "groupId": "bd61f191-f092-4c34-95e2-63aa18bd03c3"
-    },
-    "tips can deteriorate quickly": {
-     "sentimentAnalysis": "Rapporterede problemer omfatter hurtigt tab af form, brud og tilstopning med ørevoks, hvilket rejser tvivl om den langsigtede værdi.",
-     "simpleTitle": "Propperne kan hurtigt blive slidte",
-     "bias": "negative",
-     "key": "rapid_deterioration",
-     "groupId": "b6f3428f-38a3-4cf1-80e7-9634750839b5"
+     "key": "noise_isolation",
+     "groupId": "107c0bfe-6aca-448a-9782-4c64b5f505c4"
     }
    },
    "grouping": {
-    "e267b3da-140e-47b7-9007-c3daee392cae": {
+    "a14b52d4-8c79-4f9b-9855-20833e83df4b": {
      "title": "Pasform og komfort",
-     "id": "e267b3da-140e-47b7-9007-c3daee392cae",
+     "id": "a14b52d4-8c79-4f9b-9855-20833e83df4b",
      "references": [
       "71ef5166-14c6-4a17-b2cd-df76fc2e21e4",
       "52a02f23-af36-4dea-a95e-8d824e3851b0",
       "a00569d3-a01f-403e-9566-231dd09d6eed",
       "8bb5eefd-83da-4b2e-a4bb-ed1419ca1df5",
+      "7835b381-ef19-4a6d-98f2-d810751d855c",
       "f5fce7ce-a313-4002-9888-035be47818dd",
+      "2960d639-60d6-4f2e-8acd-965c0a5e7e80",
+      "ce51dc36-ead0-4c6c-8ff0-8877d47231b5",
       "fae7cc2b-9f2b-49f2-b353-76536875a556",
       "85ef45a6-73c1-4a64-bbf5-d5f41fa4a786",
       "f759a2c3-f25a-4331-b3f5-a67f042a65b6",
@@ -317,36 +320,27 @@
       "b41ee17b-9a9d-46fd-9fd1-2a7cac0798f6"
      ]
     },
-    "bd61f191-f092-4c34-95e2-63aa18bd03c3": {
-     "title": "Lydisolering og ANC",
-     "id": "bd61f191-f092-4c34-95e2-63aa18bd03c3",
+    "107c0bfe-6aca-448a-9782-4c64b5f505c4": {
+     "title": "Støjisolering",
+     "id": "107c0bfe-6aca-448a-9782-4c64b5f505c4",
      "references": [
       "52a02f23-af36-4dea-a95e-8d824e3851b0",
       "64558c3b-fd36-4bcb-b6b7-3a405bd0ea31",
       "021104f7-b13c-49f4-a17e-7437367c96d7",
       "7835b381-ef19-4a6d-98f2-d810751d855c",
-      "2960d639-60d6-4f2e-8acd-965c0a5e7e80",
       "ce51dc36-ead0-4c6c-8ff0-8877d47231b5",
-      "e8ad08fc-6461-43f7-9457-1daf352918bb",
+      "2960d639-60d6-4f2e-8acd-965c0a5e7e80",
       "52e0eccf-a6d0-4e31-a3e4-3191d82202b4"
      ]
     },
-    "023febda-66fd-4deb-952e-5a03068902a4": {
+    "d8dc50f5-959f-4190-ae87-8d38b4a0b2f1": {
      "title": "Lydkvalitet",
-     "id": "023febda-66fd-4deb-952e-5a03068902a4",
+     "id": "d8dc50f5-959f-4190-ae87-8d38b4a0b2f1",
      "references": [
       "3bbaccc8-ff62-42ba-9620-f3ab497819fb",
       "2960d639-60d6-4f2e-8acd-965c0a5e7e80",
-      "e8ad08fc-6461-43f7-9457-1daf352918bb",
-      "b41ee17b-9a9d-46fd-9fd1-2a7cac0798f6"
-     ]
-    },
-    "b6f3428f-38a3-4cf1-80e7-9634750839b5": {
-     "title": "Holdbarhed",
-     "id": "b6f3428f-38a3-4cf1-80e7-9634750839b5",
-     "references": [
-      "4743dd16-1ccd-428a-85b4-27295bc02294",
-      "f759a2c3-f25a-4331-b3f5-a67f042a65b6"
+      "ce51dc36-ead0-4c6c-8ff0-8877d47231b5",
+      "e8ad08fc-6461-43f7-9457-1daf352918bb"
      ]
     }
    },

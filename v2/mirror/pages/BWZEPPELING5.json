@@ -13,6 +13,24 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Indgang (andet)": "USB C",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang, Wi-Fi, Airplay 2, Spotify Connect",
+   "Bluetooth type": "5"
+  },
+  "gallery": [
+   "f85ed093-704c-41a3-8e54-8837bb263c39",
+   "1cdca8dc-73d5-47a1-be8f-c4038bba7917",
+   "b3ae41a5-8567-4666-b3e6-676a07b51c3b",
+   "1800fb22-bb38-44b5-8a9b-d88210a768a6",
+   "6095cb3e-ad25-4e22-83ff-eaea484b8c61",
+   "b58d593d-ee50-4519-95bb-aa46400df75f",
+   "13149bb7-0311-44bc-93ec-4e7d54fb6f0d",
+   "13f3758a-1803-4060-8bbd-2ecb5d6fcbc9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243382,
   "skuCode": "BWZEPPELING5",
@@ -230,7 +248,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 83,
+     "availableQuantity": 80,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -566,41 +584,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Zeppelin Pro leverer en varm, detaljeret og slagkraftig lyd med overraskende dyb bas for en kompakt enkeltstående højttaler. Det elegante og karakteristiske design gør højttaleren til en skulpturel del af rummet, mens appen og betjeningen generelt er nemme at bruge. Den trådløse stabilitet er den største svaghed, da flere nævner udfald i Wi-Fi, app eller AirPlay, men den samlede tilfredshed er stadig usædvanligt høj.",
+   "summary": "BWZEPPELING5 leverer en varm, klar, kraftfuld og omsluttende lyd med overraskende dyb og velkontrolleret bas for et kompakt enkeltstående højttalersystem. Det elegante, skulpturelle design, den kompakte størrelse og den nemme app-betjening gør højttaleren særligt attraktiv til køkkener, kontorer og mindre rum. Wi-Fi- og app-forbindelsen er lejlighedsvis ustabil, og den høje vægt, manglen på LAN-tilslutning og fjernbetjening er praktiske ulemper, men lydkvalitet og design gør samlet set Zeppelin Pro til et særdeles tilfredsstillende valg.",
    "headlines": {
-    "simple controls and app": {
-     "sentimentAnalysis": "Flere anmeldelser finder betjening, app og installation ligetil og praktisk.",
-     "simpleTitle": "Nem betjening og app",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "4cd561f8-bace-4f01-aab6-ec30972833ac"
-    },
-    "warm, detailed and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, naturlig, præcis, fyldig og kraftfuld med fremragende bas og stærk ydelse for en kompakt højttaler.",
-     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "73bcc528-b816-4638-b494-47c79d7e0f20"
-    },
-    "distinctive, elegant design": {
-     "sentimentAnalysis": "Zeppelin Pro roses gentagne gange for sit smukke, anderledes og skulpturelle udtryk, som pynter i rummet i stedet for blot at huse en højttaler.",
-     "simpleTitle": "Karakteristisk og elegant design",
+    "elegant, distinctive design": {
+     "sentimentAnalysis": "Zeppelinens skulpturelle og iøjnefaldende udseende værdsættes bredt som et dekorativt element og ikke blot som et højttalerkabinet.",
+     "simpleTitle": "Elegant og særpræget design",
      "bias": "positive",
      "key": "design",
-     "groupId": "b47ad207-3807-417a-bdc7-8e82d6729549"
+     "groupId": "3f52b68c-cd7c-4994-99b3-7883790bc12f"
     },
-    "wireless connection can drop out": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer lejlighedsvise udfald af Wi-Fi, synlighed i appen eller AirPlay-adgang, som nogle gange kræver genforbindelse eller genstart.",
-     "simpleTitle": "Den trådløse forbindelse kan falde ud",
+    "simple app and speaker control": {
+     "sentimentAnalysis": "Den enkle betjening og den velfungerende app gør opsætning og daglig brug nem.",
+     "simpleTitle": "Nem app- og højttalerbetjening",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "cf42b953-40b3-4de4-8687-7eb1d181545c"
+    },
+    "clear, powerful sound with deep bass": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, fyldige og kraftfulde gengivelse, især den dybe og velafstemte bas.",
+     "simpleTitle": "Klar og kraftfuld lyd med dyb bas",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "919a393b-79a2-4883-b7c6-30c65175a680"
+    },
+    "outstanding sound for a compact speaker": {
+     "sentimentAnalysis": "Det kompakte kabinet beskrives gentagne gange som leverandør af en usædvanligt fyldig, imponerende lyd i høj kvalitet.",
+     "simpleTitle": "Fremragende lyd fra en kompakt højttaler",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "919a393b-79a2-4883-b7c6-30c65175a680"
+    },
+    "wi-Fi and app connections can drop": {
+     "sentimentAnalysis": "Flere anmeldelser rapporterer om lejlighedsvise udfald af Wi-Fi eller synlighed i appen, så netværksafspilning nogle gange kræver genforbindelse eller genstart.",
+     "simpleTitle": "Wi-Fi- og appforbindelser kan afbrydes",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "af6ed67b-a6a6-45ec-b390-5661af76fe7a"
+     "groupId": "8dfe30e2-b180-42a8-85ca-b9a797b7b1f4"
     }
    },
    "grouping": {
-    "73bcc528-b816-4638-b494-47c79d7e0f20": {
+    "919a393b-79a2-4883-b7c6-30c65175a680": {
      "title": "Lydkvalitet",
-     "id": "73bcc528-b816-4638-b494-47c79d7e0f20",
+     "id": "919a393b-79a2-4883-b7c6-30c65175a680",
      "references": [
       "15a4c73c-1a7a-4a34-8fc1-45074b91ca3b",
       "4b6ce8a1-4b35-4143-8e88-da14da9080a4",
@@ -608,14 +633,13 @@
       "62aa844b-1494-463d-80af-a86b26f771af",
       "a5e0445d-c55c-4a15-a19a-fbc724d61e40",
       "532e439d-c34d-40b4-85db-f8fcbbd7ee8e",
-      "9ec36015-2b94-424a-a2b7-827bc8d53449",
+      "9ec36015-2b94-4244-a2b7-827bc8d53449",
       "9cd0c411-406c-42c7-b7d8-876fb6f28dcf",
       "4f66f8ad-df00-4fc0-8bbf-d04ed64d1e49",
       "f2a89f21-bf31-45f5-a136-e1fe4149a33e",
       "d080dfe8-4cb6-464d-a32d-2c2199427aa4",
       "196220e0-9172-4604-8f23-dd8b9ae08dae",
       "7cb28a7b-3e24-40ad-9093-46b83ae5a082",
-      "793d1117-5884-45e4-9ef8-370a87c982db",
       "7632ddae-690d-4f24-a18a-c05209023d47",
       "fb83e5c6-1691-48cf-b8aa-c63e60037bc3",
       "a3acaf11-5277-4335-a389-830cfacb1d06",
@@ -625,7 +649,7 @@
       "dd8fbf11-1c04-442d-8b40-14ab6fea8f56",
       "6a6818f3-99bf-4db0-b74a-ab8f45285631",
       "52870080-c01d-4f74-90ae-83f8fd585240",
-      "bbb5b091-b0a-4524-b1bf-84025361100a",
+      "bbb5b091-b0a4-4524-b1bf-84025361100a",
       "9b7d31fd-c696-43c1-996d-de66fbe44f8b",
       "3c0651b7-37ba-4079-a82a-9a95e3abe5fd",
       "fdb2fdca-f2f4-491b-9df7-6893067cde46",
@@ -644,14 +668,14 @@
       "9e88bcfe-1f7f-4ef6-ac52-a4f9cc6110f0"
      ]
     },
-    "b47ad207-3807-417a-bdc7-8e82d6729549": {
+    "3f52b68c-cd7c-4994-99b3-7883790bc12f": {
      "title": "Design",
-     "id": "b47ad207-3807-417a-bdc7-8e82d6729549",
+     "id": "3f52b68c-cd7c-4994-99b3-7883790bc12f",
      "references": [
       "15a4c73c-1a7a-4a34-8fc1-45074b91ca3b",
       "4b6ce8a1-4b35-4143-8e88-da14da9080a4",
       "532e439d-c34d-40b4-85db-f8fcbbd7ee8e",
-      "9ec36015-2b94-424a-a2b7-827bc8d53449",
+      "9ec36015-2b94-4244-a2b7-827bc8d53449",
       "f2a89f21-bf31-45f5-a136-e1fe4149a33e",
       "e900ceb7-c001-4d94-bff8-10311ec3c648",
       "7cb28a7b-3e24-40ad-9093-46b83ae5a082",
@@ -661,12 +685,11 @@
       "7863d62f-aeb6-4222-b974-853f9b2bafb2",
       "01a4bb72-418e-435a-8696-ee5ce368f5a7",
       "52870080-c01d-4f74-90ae-83f8fd585240",
-      "bbb5b091-b0a-4524-b1bf-84025361100a",
+      "bbb5b091-b0a4-4524-b1bf-84025361100a",
       "3c0651b7-37ba-4079-a82a-9a95e3abe5fd",
       "4e68b363-e79c-40d5-85c2-2ecfb97de0dc",
       "efa2f66e-5e90-4fe3-90d0-d9e22e19dddc",
       "8e7a3291-e2a2-43a2-a1b4-feab7b035633",
-      "e4d618de-5388-4ee7-8f47-5f9882a3c737",
       "83e2fd5d-4fec-4e2c-887f-c9180da83db4",
       "1f8268a0-81a9-48c1-9b21-17b33a216709",
       "849fa297-dc77-440c-b102-93de4a5cdfe7",
@@ -675,9 +698,9 @@
       "9e88bcfe-1f7f-4ef6-ac52-a4f9cc6110f0"
      ]
     },
-    "4cd561f8-bace-4f01-aab6-ec30972833ac": {
+    "cf42b953-40b3-4de4-8687-7eb1d181545c": {
      "title": "Brugervenlighed",
-     "id": "4cd561f8-bace-4f01-aab6-ec30972833ac",
+     "id": "cf42b953-40b3-4de4-8687-7eb1d181545c",
      "references": [
       "4b6ce8a1-4b35-4143-8e88-da14da9080a4",
       "97b6ba54-b25a-4029-8621-bb8623c0917e",
@@ -691,9 +714,9 @@
       "e4d618de-5388-4ee7-8f47-5f9882a3c737"
      ]
     },
-    "af6ed67b-a6a6-45ec-b390-5661af76fe7a": {
-     "title": "Trådløs forbindelse",
-     "id": "af6ed67b-a6a6-45ec-b390-5661af76fe7a",
+    "8dfe30e2-b180-42a8-85ca-b9a797b7b1f4": {
+     "title": "Forbindelse",
+     "id": "8dfe30e2-b180-42a8-85ca-b9a797b7b1f4",
      "references": [
       "9cd0c411-406c-42c7-b7d8-876fb6f28dcf",
       "6a6818f3-99bf-4db0-b74a-ab8f45285631",

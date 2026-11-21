@@ -13,6 +13,14 @@
    "url": "/tilbehor/mobler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "8cf7014e-0b6d-4b60-92d3-bb14596da2a8",
+   "85e5293f-cf8c-46f5-86b7-5846cf4a73c3"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 151946,
   "skuCode": "CLIC240",
@@ -310,7 +318,6 @@
     "url": "/clic-240-moebel/clic240oa/",
     "canonicalUrl": "/clic-240-moebel/clic240oa/",
     "buyButtonState": "buyNow",
-    "lowestShippingPriceRaw": 499,
     "addOns": []
    },
    {
@@ -457,14 +464,28 @@
    {
     "modelType": "Møbel med anlæg",
     "price": {
-     "price": 56746,
-     "priceFormatted": "56.746,-",
+     "price": 53746,
+     "priceFormatted": "53.746,-",
+     "priceBefore": 56746,
+     "priceBeforeFormatted": "56.746,-",
+     "priceSavingsFormatted": "3.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 56746,
+     "unitPrice": 53746,
      "unitPriceBefore": 56746
     },
+    "ribbons": [
+     {
+      "text": "Spar 5%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Clic 240",
     "url": "/240-furniture-system/"
    }

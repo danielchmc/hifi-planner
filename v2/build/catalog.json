@@ -8,7 +8,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 226,
+   "all": 227,
    "bundles": 0
   },
   {
@@ -421,8 +421,8 @@
    "title": "Andet tilbehør",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 28,
-   "all": 28,
+   "products": 29,
+   "all": 29,
    "bundles": 0
   },
   {
@@ -13579,7 +13579,7 @@
     "da": "Højtalerkabel"
    },
    "cat": "/kabler/hojtaler-kabel/",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -20398,6 +20398,53 @@
     ]
    },
    "read": "2026-11-20"
+  },
+  {
+   "sku": "BULOWBS15SBL",
+   "brand": "Bülow Stand",
+   "model": "BS15 Bracket Soundbar Long",
+   "type": {
+    "key": "Other",
+    "da": "Andet"
+   },
+   "cat": "/tilbehor/andet-tilbehor/",
+   "url": "/bulow-stand-bs15-bracket-soundbar-long-andet/bulowbs15sbbkl/",
+   "kind": "accessory",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "BULOWBS15SBBKL",
+     "label": "Sort",
+     "price": 795,
+     "colorKey": "Black",
+     "ean": "5713003001015",
+     "url": "/bulow-stand-bs15-bracket-soundbar-long-andet/bulowbs15sbbkl/",
+     "img": "hk:246e5974-ae63-4023-ab40-b6560561b95b",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "1,28",
+      "Mål (emballage)": "18 x 4 x 38 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {},
+   "rel": {
+    "acc": [
+     "BULOWBS15C",
+     "BULOWBS15CO",
+     "BULOWBS16C"
+    ],
+    "alt": [
+     "BULOWBS15SB",
+     "BULOWBS15P",
+     "BULOWBS15S"
+    ]
+   },
+   "read": "2026-11-21"
   },
   {
    "sku": "BULOWBS19BK",
@@ -28937,7 +28984,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "BWPX8",
@@ -29065,7 +29112,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "BWPX8S2",
@@ -29185,7 +29232,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "BWPX8S2GROR",
@@ -29256,7 +29303,7 @@
      "SONYWH1000XX"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "BWZEPPELING4WBX",
@@ -29297,11 +29344,11 @@
    },
    "rel": {
     "acc": [
-     "BWZEPPELING4",
-     "BWZEPPELING5"
+     "BWZEPPELING5",
+     "BWZEPPELING4"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "BWZEPPELING5",
@@ -29395,7 +29442,7 @@
      "BOLEVEL"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CANVASUNIT",
@@ -29455,7 +29502,7 @@
     "Standby strømforbrug": "<2 watt"
    },
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CANVASZENMIC",
@@ -29491,7 +29538,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC05AX",
@@ -29530,7 +29577,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC05BX",
@@ -29560,7 +29607,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC05CX",
@@ -29663,7 +29710,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC220-2",
@@ -29742,15 +29789,15 @@
    "specs": {},
    "rel": {
     "acc": [
-     "CLICCM15",
      "CLIC05AX",
      "CLICD21",
      "CLICC21",
      "CLICWALLBRACKET",
+     "CLICCM15",
      "CLICD22"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC240",
@@ -29834,7 +29881,7 @@
      "CLICWALLBRACKET"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLIC242",
@@ -29912,7 +29959,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICC21",
@@ -30010,7 +30057,7 @@
      "CLIC410"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICC23",
@@ -30057,7 +30104,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICD21",
@@ -30148,7 +30195,7 @@
      "CLIC410"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICDRAWER37,5",
@@ -30225,7 +30272,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICDRAWER4555",
@@ -30300,7 +30347,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICSTAND1",
@@ -30360,7 +30407,7 @@
      "CLIC230S"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICSTAND2",
@@ -30406,7 +30453,6 @@
    "specs": {},
    "rel": {
     "acc": [
-     "CLIC111",
      "CLIC211",
      "CLIC221-2",
      "CLIC231",
@@ -30418,10 +30464,11 @@
      "CLIC230",
      "CLIC430",
      "CLIC420",
-     "CLIC410"
+     "CLIC410",
+     "CLIC111"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICSTAND3",
@@ -30477,7 +30524,7 @@
      "CLIC232"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "CLICWALLBRACKET",
@@ -30534,7 +30581,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMCSTZ200",
@@ -30607,7 +30654,7 @@
      "SENIE300"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTW170A",
@@ -30673,7 +30720,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTW180B",
@@ -30744,7 +30791,7 @@
      "BWPI8MCLAREN"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTW200C",
@@ -30810,7 +30857,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTW300B",
@@ -30846,7 +30893,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTW400CMX",
@@ -30912,7 +30959,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "COMTGTWO220C",
@@ -30978,7 +31025,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIALTECOC1",
@@ -31080,7 +31127,7 @@
      "DENAVRX1800HDAB"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIBASUBC8D",
@@ -31228,7 +31275,7 @@
      "ARGFORUS5X"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIBLUOSNPM2IX",
@@ -31271,7 +31318,7 @@
      "DALIHDMIAUDIOX"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALICDLETTHEHARDTIMX",
@@ -31313,7 +31360,7 @@
      "DALIREFELCTORCD"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALICDVOLUME6X",
@@ -31355,7 +31402,7 @@
      "DALIREFELCTORCD"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALICONE",
@@ -31391,7 +31438,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPICONSTD",
@@ -31433,7 +31480,7 @@
      "DALIEPICONVOK"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPIKORE11",
@@ -31444,7 +31491,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -31556,7 +31603,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPIKORE3",
@@ -31662,13 +31709,13 @@
      "ESSEX2BANAIRGOX",
      "ESSEX1SCCOMSX",
      "ESSEX1SCCOMX",
-     "DALIEPIKORE3STD",
      "AQROCKET33SCX",
      "AQBANANA300SX",
      "AQBANANA100SX",
      "AQBANANA500SX",
      "AQROCKET88SCBA",
-     "AQROCKET44SCX"
+     "AQROCKET44SCX",
+     "DALIEPIKORE3STD"
     ],
     "alt": [
      "BW805D5",
@@ -31696,7 +31743,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPIKORE3STD",
@@ -31736,7 +31783,7 @@
      "DALIEPIKORE3"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPIKORE7",
@@ -31876,7 +31923,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIEPIKORE9",
@@ -31920,7 +31967,7 @@
      "ean": "5703120114088",
      "url": "/dali-epikore-9-gulvhoejtaler/daliepikore9hgwa/",
      "img": "hk:a2b00dfb-15c4-4055-956e-d884f4412e0d",
-     "stock": "warehouseInStock",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "69,5",
       "Vægt emballage (kg)": "71,5",
@@ -32014,7 +32061,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFAZONSAT",
@@ -32104,7 +32151,7 @@
      "DENAVRX2800H"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFRAMEM675",
@@ -32146,7 +32193,7 @@
      "DALIPHANTOMM675"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFRAMES180",
@@ -32187,7 +32234,7 @@
      "DALIPHANTOMS180"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFRAMES280",
@@ -32228,7 +32275,7 @@
      "DALIPHANTOMS280"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFRAMES80",
@@ -32269,7 +32316,7 @@
      "DALIPHANTOMS80"
     ]
    },
-   "read": "2026-11-19"
+   "read": "2026-11-21"
   },
   {
    "sku": "DALIFRAMM250375",
@@ -75146,13 +75193,13 @@
      }
     },
     {
-     "sku": "PEDPBAR5MMGR",
-     "label": "Grøn",
+     "sku": "PEDPBAR5MPRL",
+     "label": "Beige",
      "price": 450,
-     "colorKey": "Green",
-     "ean": "5740027300039",
-     "url": "/pedestal-power-bar-5m-kabel/pedpbar5mmgr/",
-     "img": "hk:ba39e937-76d9-428b-b83e-c159ab0757ee",
+     "colorKey": "Beige",
+     "ean": "5745000652730",
+     "url": "/pedestal-power-bar-5m-kabel/pedpbar5mprl/",
+     "img": "hk:145e4c61-8cb9-474f-a4a8-f69157557b13",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,81",
@@ -75161,13 +75208,13 @@
      }
     },
     {
-     "sku": "PEDPBAR5MPRL",
-     "label": "Beige",
+     "sku": "PEDPBAR5MMGR",
+     "label": "Grøn",
      "price": 450,
-     "colorKey": "Beige",
-     "ean": "5745000652730",
-     "url": "/pedestal-power-bar-5m-kabel/pedpbar5mprl/",
-     "img": "hk:145e4c61-8cb9-474f-a4a8-f69157557b13",
+     "colorKey": "Green",
+     "ean": "5740027300039",
+     "url": "/pedestal-power-bar-5m-kabel/pedpbar5mmgr/",
+     "img": "hk:ba39e937-76d9-428b-b83e-c159ab0757ee",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,81",
@@ -81993,7 +82040,7 @@
     "da": "USB-kabel"
    },
    "cat": "/kabler/digital-kabel/",
-   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
+   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -88629,22 +88676,6 @@
      }
     },
     {
-     "sku": "SONYWH1000XM4CV",
-     "label": "Lilla",
-     "price": 1390,
-     "was": 2299,
-     "colorKey": "Purple",
-     "ean": "4548736181908",
-     "url": "/sony-wh-1000xm4c-traadloest-headset/sonywh1000xm4cv/",
-     "img": "hk:dad54225-0751-4d31-bcde-790f00141162",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,25",
-      "Vægt emballage (kg)": "0,67",
-      "Mål (emballage)": "20,3 x 26,900000000000002 x 32,4 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "SONYWH1000XM4CS",
      "label": "Sølv",
      "price": 1390,
@@ -88653,6 +88684,22 @@
      "ean": "4548736181854",
      "url": "/sony-wh-1000xm4c-traadloest-headset/sonywh1000xm4cs/",
      "img": "hk:4ee76a7d-2080-43b6-b37a-6f9642a0eae3",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,25",
+      "Vægt emballage (kg)": "0,67",
+      "Mål (emballage)": "20,3 x 26,900000000000002 x 32,4 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "SONYWH1000XM4CV",
+     "label": "Lilla",
+     "price": 1390,
+     "was": 2299,
+     "colorKey": "Purple",
+     "ean": "4548736181908",
+     "url": "/sony-wh-1000xm4c-traadloest-headset/sonywh1000xm4cv/",
+     "img": "hk:dad54225-0751-4d31-bcde-790f00141162",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,25",
@@ -93365,13 +93412,13 @@
      }
     },
     {
-     "sku": "WAV5APEXBL",
-     "label": "Blå",
+     "sku": "WAV5APEXWH",
+     "label": "Hvid",
      "price": 799,
-     "colorKey": "Blue",
-     "ean": "5745000424757",
-     "url": "/wavell-5-apex-traadloese-in-ear-hoeretelefoner/wav5apexbl/",
-     "img": "hk:fc9da87a-c3de-4859-8c29-f48f96cad0dc",
+     "colorKey": "White",
+     "ean": "5745000424764",
+     "url": "/wavell-5-apex-traadloese-in-ear-hoeretelefoner/wav5apexwh/",
+     "img": "hk:58a601c0-0973-4201-8b9a-b494b4205794",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,04",
@@ -93380,13 +93427,13 @@
      }
     },
     {
-     "sku": "WAV5APEXWH",
-     "label": "Hvid",
+     "sku": "WAV5APEXBL",
+     "label": "Blå",
      "price": 799,
-     "colorKey": "White",
-     "ean": "5745000424764",
-     "url": "/wavell-5-apex-traadloese-in-ear-hoeretelefoner/wav5apexwh/",
-     "img": "hk:58a601c0-0973-4201-8b9a-b494b4205794",
+     "colorKey": "Blue",
+     "ean": "5745000424757",
+     "url": "/wavell-5-apex-traadloese-in-ear-hoeretelefoner/wav5apexbl/",
+     "img": "hk:fc9da87a-c3de-4859-8c29-f48f96cad0dc",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,04",

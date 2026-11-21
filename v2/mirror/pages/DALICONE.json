@@ -13,6 +13,13 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "56a98fd5-c93a-4323-882a-2fababb2f0a6"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 68,
   "skuCode": "DALICONE",
@@ -91,7 +98,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 4,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -112,38 +119,23 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALICONE-spikes giver en tydelig lydmæssig forbedring med strammere, mere kontant bas og en mere kontrolleret, omsluttende gengivelse. Den robuste og stilfulde konstruktion giver stabil støtte og et rent visuelt udtryk til højttalere og andet udstyr. Nem højdejustering og fleksibel anvendelse gør spikesene til et meget effektivt tilbehør, selv om pakken med fire spikes kan kræve en ekstra bestilling til et stereopar.",
+   "summary": "DALICONE-spikes giver en tydelig og slagkraftig forbedring af højttalerlyden med strammere og tørrere bas, der stadig bevarer sin kraft. Spikesene giver også en stabil og elegant platform og fungerer både under højttalere og en pladespiller. Nem højdejustering og enkel montering gør produktet praktisk, mens pakken med fire styk kan kræve en ekstra bestilling til et stereosæt.",
    "headlines": {
-    "tighter, more controlled bass": {
-     "sentimentAnalysis": "Spikesene roses for en tydelig forbedring i forhold til placering direkte på gulvet, med mere kontant lyd og strammere, tørrere bas, der bevarer trykket.",
-     "simpleTitle": "Strammere, mere kontant bas",
+    "tighter, punchier sound": {
+     "sentimentAnalysis": "Spikesene forbindes med en tydelig lydmæssig forbedring, især strammere, tørrere bas og en mere kontant gengivelse.",
+     "simpleTitle": "Strammere og mere slagkraftig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "45f4639d-d1f0-4929-bf12-6185a1198a8e"
-    },
-    "stable and stylish appearance": {
-     "sentimentAnalysis": "Produktet vurderes som effektivt, attraktivt og stilrent og får højttalerne til at stå meget stabilt.",
-     "simpleTitle": "Stabilt og stilfuldt udseende",
-     "bias": "positive",
-     "key": "design-stability",
-     "groupId": "2087c6de-61be-4147-b511-f90ceadc08d2"
+     "key": "tighter-punchier-sound",
+     "groupId": "b18d91e7-aeeb-4a07-83a8-0edf9465cf50"
     }
    },
    "grouping": {
-    "45f4639d-d1f0-4929-bf12-6185a1198a8e": {
+    "b18d91e7-aeeb-4a07-83a8-0edf9465cf50": {
      "title": "Lydkvalitet",
-     "id": "45f4639d-d1f0-4929-bf12-6185a1198a8e",
+     "id": "b18d91e7-aeeb-4a07-83a8-0edf9465cf50",
      "references": [
       "255e34dc-156e-4921-92df-b0a8de24d495",
       "c405cd3d-8502-418c-83bd-b079e9e4f0d6"
-     ]
-    },
-    "2087c6de-61be-4147-b511-f90ceadc08d2": {
-     "title": "Design og stabilitet",
-     "id": "2087c6de-61be-4147-b511-f90ceadc08d2",
-     "references": [
-      "3e9e4b13-aeaa-4631-982e-8de193bb0c5d",
-      "28d7b08d-0046-4fe9-b7e0-ac992549fb69"
      ]
     }
    },

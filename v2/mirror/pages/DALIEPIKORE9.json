@@ -13,6 +13,16 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "45c66e05-8973-41f6-8214-733f6456280b",
+   "6b3333c6-0bcd-412b-ac70-2677fbac0b75",
+   "60a25dda-c1fc-419a-a22e-6fcd0d5114f9",
+   "74d3953f-9e4f-4620-ab9a-f45a0a9979fe"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 240168,
   "skuCode": "DALIEPIKORE9",
@@ -216,7 +226,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
+     "numberOfStoresExperience": 4,
      "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -310,7 +320,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
+     "numberOfStoresExperience": 4,
      "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -403,12 +413,11 @@
      "productCode": "DALIEPIKORE9HGWA"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 4,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -479,7 +488,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
+     "numberOfStoresExperience": 4,
      "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },

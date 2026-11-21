@@ -13,6 +13,13 @@
    "url": "/horetelefoner/horetelefon-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "41eaf71e-91ce-4588-a931-99b5e6983689"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 175615,
   "skuCode": "COMTGTWO220C",
@@ -91,7 +98,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 32,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -251,34 +258,48 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse ørepropper giver en markant sikker og behagelig pasform med en tæt forsegling, der kan forbedre indlevelsen og støjisoleringen. Kompatibiliteten er fremragende med visse earbuds, blandt andet AKG N5 og Nuraphones, men pasformen er ikke universel, og nogle modeller er inkompatible. De små, bløde propper føles diskrete og bidrager til en varm og fokuseret lytteoplevelse.",
+   "summary": "Disse ørepropper giver en sikker og behagelig tætning, som kan gøre lytteoplevelsen mere intens og fornøjelig. Kompatibiliteten er fremragende med nogle høretelefoner, mens pasformen kan afhænge af modellen og være uegnet til andre. Den forbedrede tætning kan gavne lyd og støjreduktion og skabe en varmere og mere fyldig lytteoplevelse.",
    "headlines": {
-    "secure, comfortable fit": {
-     "sentimentAnalysis": "Propperne beskrives som behagelige, velsiddende og diskrete i øret.",
-     "simpleTitle": "Sikker og behagelig pasform",
+    "secure sealing improves the listening experience": {
+     "sentimentAnalysis": "En tæt og pålidelig forsegling roses gentagne gange for at forbedre komforten og den samlede lytteoplevelse.",
+     "simpleTitle": "Sikker tætning forbedrer lytteoplevelsen",
      "bias": "positive",
-     "key": "secure-comfortable-fit",
-     "groupId": "b721c8a1-cbf8-40bb-a333-9dc096e3068a"
+     "key": "fit-seal",
+     "groupId": "5b560e78-4e0e-4941-a611-34096e50c270"
     },
-    "strong seal improves isolation": {
-     "sentimentAnalysis": "En pålidelig tætning roses gentagne gange for at forbedre støjreduktionen eller løse tætningsproblemer med de originale silikonetips.",
-     "simpleTitle": "Tæt forsegling forbedrer isoleringen",
+    "sound and noise cancellation benefit from the improved seal": {
+     "sentimentAnalysis": "Den forbedrede tætning forbindes med bedre støjreduktion og en bedre samlet lydoplevelse.",
+     "simpleTitle": "Lyd og støjreduktion forbedres af den bedre tætning",
      "bias": "positive",
-     "key": "strong-seal",
-     "groupId": "b721c8a1-cbf8-40bb-a333-9dc096e3068a"
+     "key": "sound",
+     "groupId": "20f37562-8e15-4e5e-bfc0-b0cfc74fdc21"
     },
-    "compatibility varies by model": {
-     "sentimentAnalysis": "Nogle kunder rapporterer, at propperne ikke passer til deres hovedtelefoner, herunder JBL Tour 2, selv efter online rådgivning.",
-     "simpleTitle": "Kompatibiliteten varierer efter model",
+    "comfortable fit in the ear": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver ørepropperne som behagelige og komfortable i øret.",
+     "simpleTitle": "Behagelig pasform i øret",
+     "bias": "positive",
+     "key": "comfort",
+     "groupId": "60b7a5ca-351c-4414-9c7a-c8a7261e9d6a"
+    },
+    "perfect fit with some earphone models": {
+     "sentimentAnalysis": "Kompatibiliteten roses for perfekt pasform til AKG N5 Hybrid in-ear-høretelefoner og Nuraphones.",
+     "simpleTitle": "Perfekt pasform til nogle høretelefonmodeller",
+     "bias": "positive",
+     "key": "compatibility",
+     "groupId": "5d9954b0-d5f5-4948-9e9a-4cbf988972c4"
+    },
+    "not compatible with every headphone model": {
+     "sentimentAnalysis": "Nogle høretelefonmodeller passer ikke til ørepropperne, hvilket kan føre til skuffende køb og ubrugeligt tilbehør.",
+     "simpleTitle": "Ikke kompatibel med alle høretelefonmodeller",
      "bias": "negative",
-     "key": "model-compatibility",
-     "groupId": "d719f0ee-8cb7-404f-8cd0-33ac248345ff"
+     "key": "compatibility",
+     "groupId": "5d9954b0-d5f5-4948-9e9a-4cbf988972c4"
     }
    },
    "grouping": {
-    "b721c8a1-cbf8-40bb-a333-9dc096e3068a": {
-     "title": "Komfort og tætning",
-     "id": "b721c8a1-cbf8-40bb-a333-9dc096e3068a",
+    "5b560e78-4e0e-4941-a611-34096e50c270": {
+     "title": "Pasform og tætning",
+     "id": "5b560e78-4e0e-4941-a611-34096e50c270",
      "references": [
       "4eee9ee5-3e71-44ba-b49c-ac460d862a5a",
       "7ee6aaf5-ff48-445f-bd8c-5ff300525b06",
@@ -288,14 +309,29 @@
       "ca1ce6ae-88dc-4a5b-8b5b-986b4975c295"
      ]
     },
-    "d719f0ee-8cb7-404f-8cd0-33ac248345ff": {
-     "title": "Pasform og kompatibilitet",
-     "id": "d719f0ee-8cb7-404f-8cd0-33ac248345ff",
+    "5d9954b0-d5f5-4948-9e9a-4cbf988972c4": {
+     "title": "Kompatibilitet",
+     "id": "5d9954b0-d5f5-4948-9e9a-4cbf988972c4",
      "references": [
       "3c629893-4da6-4b91-b998-19473a77fcda",
       "9bb83137-8565-4d91-af4d-a7c2c11233c2",
       "3219a5bd-3b6a-4f37-a19a-42bced35faa3",
-      "7c299b66-194d-44a6-9022-c461c791e18f",
+      "e7535ca3-67dd-4f21-8378-537ee82c1461"
+     ]
+    },
+    "20f37562-8e15-4e5e-bfc0-b0cfc74fdc21": {
+     "title": "Lydkvalitet",
+     "id": "20f37562-8e15-4e5e-bfc0-b0cfc74fdc21",
+     "references": [
+      "4eee9ee5-3e71-44ba-b49c-ac460d862a5a",
+      "7c299b66-194d-44a6-9022-c461c791e18f"
+     ]
+    },
+    "60b7a5ca-351c-4414-9c7a-c8a7261e9d6a": {
+     "title": "Komfort",
+     "id": "60b7a5ca-351c-4414-9c7a-c8a7261e9d6a",
+     "references": [
+      "4eee9ee5-3e71-44ba-b49c-ac460d862a5a",
       "e7535ca3-67dd-4f21-8378-537ee82c1461"
      ]
     }

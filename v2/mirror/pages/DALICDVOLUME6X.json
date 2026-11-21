@@ -8,6 +8,14 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fbff951f-9558-4de6-95ba-e7d7a46cdbba",
+   "85d8a22e-9bbc-42bf-85f3-9339c4ec5a78"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 252283,
   "skuCode": "DALICDVOLUME6X",
@@ -79,7 +87,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -103,40 +111,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALICDVOLUME6X hyldes som en varm, audiophilekvalitetsoptagelse og en værdifuld tilføjelse til enhver hi-fi-samling. Den velpolerede, medrivende lyd gør cd'en til en fornøjelse på afslørende anlæg og en stærk anbefaling til musikelskere. Udgivelsen fremstår som en slagkraftig og engagerende efterfølger i DALI-serien samt en fremragende oplevelse for ørerne.",
+   "summary": "DALICDVOLUME6X roses varmt som en smuk optagelse i audiophile kvalitet og som en værdig fortsættelse af DALI-cd-serien. Præsentationen beskrives som behagelig og raffineret og særligt velegnet til afslørende hi-fi-anlæg og kvalitets højttalere. Stærke anbefalinger og gentagne must-have-vurderinger gør albummet attraktivt for audioentusiaster.",
    "headlines": {
-    "excellent recording quality": {
-     "sentimentAnalysis": "Optagelsen roses som en kvalitetsmæssig fortsættelse af de tidligere DALI-udgivelser.",
-     "simpleTitle": "Fremragende optagekvalitet",
+    "beautiful, audiophile-quality recording": {
+     "sentimentAnalysis": "Optagelsen roses konsekvent som smuk, behagelig og audiophilegnet.",
+     "simpleTitle": "Smuk optagelse i audiophile kvalitet",
      "bias": "positive",
-     "key": "audio_quality",
-     "groupId": "48fb9ba5-522b-4a6c-bfcd-920a017bed26"
+     "key": "sound_quality",
+     "groupId": "10719e67-e101-476e-a7d3-18779fb45002"
     },
-    "must-have for hi-fi enthusiasts": {
-     "sentimentAnalysis": "Udgivelsen betragtes som et uundværligt køb for audiofile og hi-fi-entusiaster.",
-     "simpleTitle": "Et must for hi-fi-entusiaster",
+    "a must-have for hi-fi enthusiasts": {
+     "sentimentAnalysis": "Albummet anbefales kraftigt som et vigtigt køb for hi-fi-entusiaster.",
+     "simpleTitle": "Et must-have for hi-fi-entusiaster",
      "bias": "positive",
-     "key": "audio_quality",
-     "groupId": "48fb9ba5-522b-4a6c-bfcd-920a017bed26"
-    },
-    "a rewarding listening experience": {
-     "sentimentAnalysis": "Den fyldige gengivelse beskrives som fornøjelig og behagelig for ørerne, især på kompetent hi-fi-udstyr.",
-     "simpleTitle": "En givende lytteoplevelse",
-     "bias": "positive",
-     "key": "audio_quality",
-     "groupId": "48fb9ba5-522b-4a6c-bfcd-920a017bed26"
+     "key": "hifi_appeal",
+     "groupId": "548bc152-6251-4a22-a442-73930c886e41"
     }
    },
    "grouping": {
-    "48fb9ba5-522b-4a6c-bfcd-920a017bed26": {
+    "10719e67-e101-476e-a7d3-18779fb45002": {
      "title": "Lydkvalitet",
-     "id": "48fb9ba5-522b-4a6c-bfcd-920a017bed26",
+     "id": "10719e67-e101-476e-a7d3-18779fb45002",
      "references": [
       "b1ef96f9-8ce1-4f9c-82ad-9bacefb7fceb",
       "d661a4a1-32e3-42b2-8357-dec53a7fbea8",
       "5381762a-339e-41c4-a4c0-536954c34ae3",
-      "6e919edf-85d3-4dc0-862b-0b1ebe994a6b",
       "33798543-25f0-426f-b0ef-9a710d489631"
+     ]
+    },
+    "548bc152-6251-4a22-a442-73930c886e41": {
+     "title": "Hi-fi-egnethed",
+     "id": "548bc152-6251-4a22-a442-73930c886e41",
+     "references": [
+      "d661a4a1-32e3-42b2-8357-dec53a7fbea8",
+      "5381762a-339e-41c4-a4c0-536954c34ae3",
+      "6e919edf-85d3-4dc0-862b-0b1ebe994a6b"
      ]
     }
    },

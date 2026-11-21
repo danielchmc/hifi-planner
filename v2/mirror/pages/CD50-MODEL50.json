@@ -13,6 +13,17 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5ff1832f-86bc-4cae-8499-6d9146e837e0",
+   "e548bc5f-84fc-49d9-a8d8-9cc8b19743c5",
+   "e6b4df24-443d-4fbd-9bfc-0eb70c82e227",
+   "9457bf55-e8d8-4d51-b476-b8d9ddfa1469",
+   "e25defb3-ee1d-4493-bb0a-4628c8d8cf81"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 232873,
   "skuCode": "CD50-MODEL50",
@@ -268,10 +279,10 @@
         "productCode": "MARACD50NSI"
        },
        "inventoryStatus": {
-        "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+        "description": "Forventes på lager lørdag den 30. januar",
+        "deliveryDate": "2027-01-30T00:00:00Z",
         "canBuyOnline": true,
-        "hideNotificationOption": true,
-        "inventoryStatusType": "notInStockNonStockedItem"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "13.475,-",
        "priceRaw": 13475,
@@ -308,8 +319,8 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager tirsdag den 22. december",
-    "deliveryDate": "2026-12-22T00:00:00Z",
+    "description": "Forventes på lager lørdag den 30. januar",
+    "deliveryDate": "2027-01-30T00:00:00Z",
     "canBuyOnline": true
    }
   },

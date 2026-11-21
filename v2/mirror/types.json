@@ -344,29 +344,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Kompakt højtaler – Aktive",
-   "keys": {
-    "CompactSpeakerActive": 22
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 22
-   },
-   "count": 23,
-   "bundles": 6,
-   "outlet": 1,
-   "products": 16,
-   "inCatalogue": 15,
-   "variantAxes": {
-    "colorOptions": 17,
-    "none": 6
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Active Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "Head-fi høretelefoner",
    "keys": {
     "Headfi": 22
@@ -406,6 +383,29 @@
    "mapped": "cats",
    "hifiPlanner": [
     "Home Cinema Receivers"
+   ]
+  },
+  {
+   "type": "Kompakt højtaler – Aktive",
+   "keys": {
+    "CompactSpeakerActive": 22
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 22
+   },
+   "count": 22,
+   "bundles": 6,
+   "outlet": 0,
+   "products": 16,
+   "inCatalogue": 15,
+   "variantAxes": {
+    "colorOptions": 16,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Active Speakers",
+    "Compact Speakers"
    ]
   },
   {
@@ -1542,15 +1542,15 @@
   {
    "type": "Andet",
    "keys": {
-    "Other": 4
+    "Other": 5
    },
    "cats": {
-    "Tilbehør > Andet tilbehør": 4
+    "Tilbehør > Andet tilbehør": 5
    },
    "count": 5,
    "bundles": 0,
-   "outlet": 1,
-   "products": 4,
+   "outlet": 0,
+   "products": 5,
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 5
@@ -1655,6 +1655,27 @@
    },
    "mapped": null,
    "hifiPlanner": []
+  },
+  {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 5
+   },
+   "cats": {
+    "TV > TV": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 4,
+   "inCatalogue": 4,
+   "variantAxes": {
+    "sizeSelector": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
   },
   {
    "type": "Opgradering",
@@ -1902,27 +1923,6 @@
    },
    "mapped": null,
    "hifiPlanner": []
-  },
-  {
-   "type": "Mini-LED TV",
-   "keys": {
-    "MiniLED": 4
-   },
-   "cats": {
-    "TV > TV": 4
-   },
-   "count": 4,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 4,
-   "inCatalogue": 4,
-   "variantAxes": {
-    "sizeSelector": 4
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
   },
   {
    "type": "Multirumsforstærker",

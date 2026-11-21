@@ -13,6 +13,19 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "bbfa451e-9713-4708-9039-11c89c31b3a7",
+   "67f193a9-380d-4897-b1c2-64f1fa0a8d18",
+   "151de2e8-3a88-4092-ba7c-966ced741d05",
+   "2041add8-2543-49c5-9284-5610e4865456",
+   "7117b3f5-65c0-4370-a03b-acac978c4d27",
+   "69e51d5a-06a3-44cc-bb9b-cf5d8a87c388",
+   "f63f68f3-8378-471b-909d-e26dbe77cd68"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 66071,
   "skuCode": "DALIALTECOC1",
@@ -194,7 +207,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 44,
+     "availableQuantity": 42,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -287,7 +300,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 52,
+     "availableQuantity": 50,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -325,81 +338,88 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIALTECOC1-højttalerne giver et varmt, slagkraftigt og omsluttende løft til hjemmebiografen, især til Dolby Atmos og surroundeffekter. De kompakte, vinklede kabinetter gør placeringen meget fleksibel, mens tydelige dialoger, overbevisende højdeeffekter og en rummelig lyd skaber ægte biografstemning. Ydelsen roses især til prisen, selv om små højttalerterminaler og lejlighedsvis begrænset lydstyrke eller præcision i objektplaceringen er kompromiser.",
+   "summary": "DALIALTECOC1 leverer en varm, fyldig og immersiv lyd, der tilfører overbevisende højde og rumfornemmelse til Dolby Atmos-, surround- og musikanlæg. Det kompakte, vinklede kabinet giver meget fleksible placeringsmuligheder samt nem væg- eller loftmontering og et flot design. Ydelsen er generelt fremragende til prisen, men niveauet kan virke beskedent uden omhyggelig kalibrering af forstærkeren, og de små højttalerterminaler er upraktiske.",
    "headlines": {
-    "clear, warm and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en præcis, klar og fyldig gengivelse med stærk biografeffekt, flotte mellemtoner og varm klang.",
-     "simpleTitle": "Klar, varm og kraftfuld lyd",
+    "expansive, cinematic surround sound": {
+     "sentimentAnalysis": "Højttalerne skaber et større, varmere og mere omsluttende lydbillede med overbevisende filmeffekter og bedre rumlig dybde.",
+     "simpleTitle": "Stor, biograflignende surroundlyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "c060e63c-dcca-4cfb-a4fe-1054d132db83"
-    },
-    "immersive, spacious Atmos effects": {
-     "sentimentAnalysis": "Højttalerne udvider og løfter lydbilledet markant med overbevisende højde, surround-indlevelse og biografisk effekt.",
-     "simpleTitle": "Omsluttende, rummelige Atmos-effekter",
-     "bias": "positive",
-     "key": "atmos",
-     "groupId": "6ecbd8c5-b3fa-41e3-9654-301d201e8e8d"
+     "groupId": "a51d4910-c8df-4526-8692-8d70b1115bd8"
     },
     "compact angled design simplifies placement": {
-     "sentimentAnalysis": "Det kompakte format, det vinklede kabinet og den enkle montering gør højttalerne velegnede til vægge, lofter og begrænset plads.",
+     "sentimentAnalysis": "Det lille, flotte og vinklede kabinet passer til trange rum og muliggør praktisk væg-, loft- eller forhøjet placering uden komplicerede beslag.",
      "simpleTitle": "Kompakt, vinklet design gør placeringen nem",
      "bias": "positive",
      "key": "design",
-     "groupId": "2b742627-7bf8-4194-93ed-7b84ef498137"
+     "groupId": "806176ee-6575-49db-bf46-c3181fdb1b8c"
     },
-    "speaker terminals are too small": {
-     "sentimentAnalysis": "De usædvanligt små terminaler gør det svært at tilslutte tykke højttalerkabler og kan kræve tynde kabler eller særlige stik.",
-     "simpleTitle": "Højttalerterminalerne er for små",
-     "bias": "negative",
-     "key": "design",
-     "groupId": "2b742627-7bf8-4194-93ed-7b84ef498137"
+    "strong value for Atmos upgrades": {
+     "sentimentAnalysis": "Højttalerne vurderes som fornuftigt prissat og særligt effektive til at udvide et surroundanlæg med Atmos-højdekanaler.",
+     "simpleTitle": "Stærk værdi til Atmos-opgraderinger",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "001918a7-e83f-4aa4-bf8f-3c36e26e9810"
     },
-    "low output can require extra amplifier volume": {
-     "sentimentAnalysis": "Nogle brugere oplever, at højttalerne spiller svagt alene og kræver højere forstærkerniveauer for at fylde.",
-     "simpleTitle": "Lavt output kan kræve mere forstærkerstyrke",
-     "bias": "negative",
+    "clear and musical reproduction": {
+     "sentimentAnalysis": "Anmeldelserne roser den præcise, klare og fyldige gengivelse med tydelige stemmer, behagelig mellemtone samt god musik- og klassisk gengivelse.",
+     "simpleTitle": "Klar og musikalsk gengivelse",
+     "bias": "positive",
      "key": "sound",
-     "groupId": "c060e63c-dcca-4cfb-a4fe-1054d132db83"
+     "groupId": "a51d4910-c8df-4526-8692-8d70b1115bd8"
+    },
+    "height effects can be subtle": {
+     "sentimentAnalysis": "Nogle anlæg kræver justering af forstærkeren, og placeringen af højdeobjekter eller niveauet alene kan være begrænset sammenlignet med dedikerede loftshøjttalere.",
+     "simpleTitle": "Højdeffekter kan være afdæmpede",
+     "bias": "negative",
+     "key": "atmos",
+     "groupId": "c1b0ae8e-acd4-41cb-ad2b-953e01f5a34a"
     }
    },
    "grouping": {
-    "6ecbd8c5-b3fa-41e3-9654-301d201e8e8d": {
-     "title": "Dolby Atmos og surround",
-     "id": "6ecbd8c5-b3fa-41e3-9654-301d201e8e8d",
+    "c1b0ae8e-acd4-41cb-ad2b-953e01f5a34a": {
+     "title": "Atmos- og surroundydelse",
+     "id": "c1b0ae8e-acd4-41cb-ad2b-953e01f5a34a",
      "references": [
       "740b649c-95ac-4024-a705-278017df6335",
       "2fe0b3e4-4211-4d4f-b820-e4db6cd741b7",
       "85c6747b-edd3-45d6-b92b-7062f17addeb",
       "49f849e9-7612-4586-bc85-de4d7932300c",
+      "6841823c-8ce0-419e-84ad-f5a2e3c456e4",
+      "cd2ac910-618d-479a-a823-7e6d705ab5d6",
       "9974688c-a999-4c74-8f91-b83e798bbe16",
       "0d18c631-cc27-42f5-8963-ce5a5e2453cb",
       "4d1766a8-02ec-464b-b441-470085f7b916",
       "fb659c70-5b1a-474e-a8dc-136721797936",
       "5aeb3f6c-854c-402d-ba06-e40a1cd82bb6",
       "f4b7bbc4-23c4-42d6-8911-6792ee1b5db4",
+      "0d1b433b-3666-463f-9ec0-c18be1a8020b",
       "7d220b5e-6a99-4464-bf8f-8d40be3372a5",
       "d9d9f0df-c645-41bc-8fcb-6a23133f7a91",
       "cef0145d-6262-4f70-aa76-a52f0cf4cc0e",
       "734276fb-0da1-439d-b19a-f5a5c35b9480",
       "5a2a2e75-34a0-4142-86d8-44efb1a84399",
-      "4fcdc2fa-f750-4072-b376-8e5690faf40e",
+      "f00644b9-f645-40b8-8f65-c83b3ad827a5",
       "8391cb3e-27e4-4a2c-8f96-ce29440df17f",
+      "7ff061cc-7902-4c18-9ee1-161722d711a0",
       "1a02909e-b88e-46c5-b2ff-3930ffce6770",
       "3feff2d0-228c-4abb-b4b7-8f73aeea50f3",
       "ccd8f316-dcda-41c3-b247-e62bc8908e0f",
       "1c5934e6-5653-48b7-9472-6953645be0e9",
+      "e0b218ea-7762-4bfd-a40c-c1068ebd3db8",
       "91dd678b-b5dd-408c-bb14-f8d1cb18a0e4",
+      "8b863bc3-f429-4ba7-a9c1-9e8af12404e3",
       "654b5380-cf88-4e93-94b5-46a025847a46",
+      "c88006f6-f62d-4841-93ec-38a25570315e",
       "4875c06e-5dd9-448a-8c63-b1134ac85239",
       "fbba53b0-a15a-490f-ae17-751800b248c6",
       "f69e7b0e-0c77-4139-a7a8-b7764f266e31",
       "ac0f88e6-4a04-47da-a07d-fcd32793d849"
      ]
     },
-    "c060e63c-dcca-4cfb-a4fe-1054d132db83": {
+    "a51d4910-c8df-4526-8692-8d70b1115bd8": {
      "title": "Lydkvalitet",
-     "id": "c060e63c-dcca-4cfb-a4fe-1054d132db83",
+     "id": "a51d4910-c8df-4526-8692-8d70b1115bd8",
      "references": [
       "740b649c-95ac-4024-a705-278017df6335",
       "2fe0b3e4-4211-4d4f-b820-e4db6cd741b7",
@@ -409,7 +429,6 @@
       "0593d307-0dd6-486f-965b-ac2fce008845",
       "9974688c-a999-4c74-8f91-b83e798bbe16",
       "0d18c631-cc27-42f5-8963-ce5a5e2453cb",
-      "6841823c-8ce0-419e-84ad-f5a2e3c456e4",
       "4418368f-a7e6-490b-9108-ce6ad8de1761",
       "fb659c70-5b1a-474e-a8dc-136721797936",
       "5aeb3f6c-854c-402d-ba06-e40a1cd82bb6",
@@ -418,39 +437,56 @@
       "c06d04f7-2170-49e5-93af-df4f27ba7b77",
       "734276fb-0da1-439d-b19a-f5a5c35b9480",
       "ad762637-ce8f-4284-8afa-2e32fdb6b256",
+      "8391cb3e-27e4-4a2c-8f96-ce29440df17f",
       "dd92a73d-aaf6-4b2a-b8b7-9dddf6c24c67",
       "ccd8f316-dcda-41c3-b247-e62bc8908e0f",
       "d8000bcf-c97e-4636-86d9-8ede51c7258b",
+      "9d46d0b1-c20f-4cac-92ab-053e213790fa",
+      "e0b218ea-7762-4bfd-a40c-c1068ebd3db8",
       "c41f18e6-ffb8-4437-9f5c-a563b2c8072a",
+      "91dd678b-b5dd-408c-bb14-f8d1cb18a0e4",
       "8b863bc3-f429-4ba7-a9c1-9e8af12404e3",
       "42399607-324f-47ae-8b63-941e779e0f84",
       "51729f25-eb64-4de0-b774-ac29b10cd9c6",
       "d867daac-6bbc-4312-8b4e-c844049643b7",
+      "f69e7b0e-0c77-4139-a7a8-b7764f266e31",
       "ac0f88e6-4a04-47da-a07d-fcd32793d849"
      ]
     },
-    "2b742627-7bf8-4194-93ed-7b84ef498137": {
-     "title": "Design og placering",
-     "id": "2b742627-7bf8-4194-93ed-7b84ef498137",
+    "806176ee-6575-49db-bf46-c3181fdb1b8c": {
+     "title": "Design og montering",
+     "id": "806176ee-6575-49db-bf46-c3181fdb1b8c",
      "references": [
       "2fe0b3e4-4211-4d4f-b820-e4db6cd741b7",
       "49f849e9-7612-4586-bc85-de4d7932300c",
+      "004a21bf-f9c7-458c-82e9-95b6af7aba19",
       "0593d307-0dd6-486f-965b-ac2fce008845",
-      "0d18c631-cc27-42f5-8963-ce5a5e2453cb",
-      "4418368f-a7e6-490b-9108-ce6ad8de1761",
       "12876e94-1e80-4b49-9796-5bcfa859ff1c",
       "537c2f8d-746b-413b-a930-df52ab99af49",
-      "fe39cf0b-3107-4d8e-b42b-16df8dd7c2ee",
-      "d9d9f0df-c645-41bc-8fcb-6a23133f7a91",
-      "f00644b9-f645-40b8-8f65-c83b3ad827a5",
+      "f4b7bbc4-23c4-42d6-8911-6792ee1b5db4",
       "ad762637-ce8f-4284-8afa-2e32fdb6b256",
       "b42bb99d-2d1a-484c-ac7b-d7212a432eac",
       "8391cb3e-27e4-4a2c-8f96-ce29440df17f",
-      "418d15e3-3324-4c6f-9bcd-4bc7310dbf84",
       "42399607-324f-47ae-8b63-941e779e0f84",
       "51729f25-eb64-4de0-b774-ac29b10cd9c6",
+      "d867daac-6bbc-4312-8b4e-c844049643b7",
       "4875c06e-5dd9-448a-8c63-b1134ac85239",
-      "fbba53b0-a15a-490f-ae17-751800b248c6"
+      "fbba53b0-a15a-490f-ae17-751800b248c6",
+      "418d15e3-3324-4c6f-9bcd-4bc7310dbf84",
+      "ac0f88e6-4a04-47da-a07d-fcd32793d849"
+     ]
+    },
+    "001918a7-e83f-4aa4-bf8f-3c36e26e9810": {
+     "title": "Værdi for pengene",
+     "id": "001918a7-e83f-4aa4-bf8f-3c36e26e9810",
+     "references": [
+      "3837bd52-ce5f-47ae-8a2e-9e68441ecd1c",
+      "fe39cf0b-3107-4d8e-b42b-16df8dd7c2ee",
+      "d9d9f0df-c645-41bc-8fcb-6a23133f7a91",
+      "cef0145d-6262-4f70-aa76-a52f0cf4cc0e",
+      "7ff061cc-7902-4c18-9ee1-161722d711a0",
+      "8391cb3e-27e4-4a2c-8f96-ce29440df17f",
+      "92261bc7-5d56-4fb4-bd30-18484e231d54"
      ]
     }
    },

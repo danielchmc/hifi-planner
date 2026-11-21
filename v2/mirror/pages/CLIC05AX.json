@@ -13,6 +13,15 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "a1a28996-b170-4e22-b997-9473ef19aad4",
+   "341a4d0c-b4df-4873-b726-147216d3f384",
+   "d4cb926e-40cb-4862-b12a-262aa79a7c11"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 1214,
   "skuCode": "CLIC05AX",
@@ -321,7 +330,6 @@
     "url": "/clic-05-topdaeksel/clic05c/",
     "canonicalUrl": "/clic-05-topdaeksel/clic05c/",
     "buyButtonState": "buyNow",
-    "lowestShippingPriceRaw": 29,
     "addOns": []
    },
    {
@@ -601,6 +609,34 @@
   "testGroups": [],
   "bundleRelations": [
    {
+    "modelType": "Møbel med anlæg",
+    "price": {
+     "price": 53746,
+     "priceFormatted": "53.746,-",
+     "priceBefore": 56746,
+     "priceBeforeFormatted": "56.746,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 53746,
+     "unitPriceBefore": 56746
+    },
+    "ribbons": [
+     {
+      "text": "Spar 5%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Clic 240",
+    "url": "/240-furniture-system/"
+   },
+   {
     "modelType": "Møbelsystem",
     "price": {
      "price": 15798,
@@ -614,20 +650,6 @@
     "image": "https://images.hifiklubben.com/image/6189e040-0e7d-456f-b278-e9af597d1df7",
     "title": "Clic 220-2",
     "url": "/220-furniture/"
-   },
-   {
-    "modelType": "Møbel med anlæg",
-    "price": {
-     "price": 56746,
-     "priceFormatted": "56.746,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 56746,
-     "unitPriceBefore": 56746
-    },
-    "title": "Clic 240",
-    "url": "/240-furniture-system/"
    },
    {
     "modelType": "Møbelsystem",

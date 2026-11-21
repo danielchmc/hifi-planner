@@ -13,6 +13,13 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "50a797e3-d0e0-4c72-a81c-73d47b4d3837"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 1224,
   "skuCode": "CLICC21",
@@ -238,7 +245,7 @@
     "inventoryStatus": {
      "description": "Forventet leveringstid 3-8 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 19,
+     "numberOfStoresExperience": 20,
      "hideNotificationOption": true,
      "inventoryStatusType": "externalPurchaseNotInStock"
     },
@@ -465,6 +472,34 @@
    {
     "modelType": "Møbel med anlæg",
     "price": {
+     "price": 53746,
+     "priceFormatted": "53.746,-",
+     "priceBefore": 56746,
+     "priceBeforeFormatted": "56.746,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 53746,
+     "unitPriceBefore": 56746
+    },
+    "ribbons": [
+     {
+      "text": "Spar 5%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Clic 240",
+    "url": "/240-furniture-system/"
+   },
+   {
+    "modelType": "Møbel med anlæg",
+    "price": {
      "price": 33147,
      "priceFormatted": "33.147,-",
      "priceBefore": 33896,
@@ -489,20 +524,6 @@
     ],
     "title": "Clic 23",
     "url": "/23-furniture/"
-   },
-   {
-    "modelType": "Møbel med anlæg",
-    "price": {
-     "price": 56746,
-     "priceFormatted": "56.746,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 56746,
-     "unitPriceBefore": 56746
-    },
-    "title": "Clic 240",
-    "url": "/240-furniture-system/"
    }
   ],
   "displayBookDemo": true,
