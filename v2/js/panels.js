@@ -182,15 +182,17 @@
     // append the next PER rows; the sentinel goes after them, and the observer adds more when it comes into view
     function addRows() {
       more.remove();
-      hits.slice(shown, shown + PER).forEach(({ p, v, sys }) => {
+      const first = !shown;
+      hits.slice(shown, shown + PER).forEach(({ p, v, sys }, i) => {
+        const anim = (r) => { if (first && i < 12) { r.classList.add('in'); r.style.animationDelay = i * 12 + 'ms'; } };
         if (sys) {
           const r = systemRow(sys);
-          r._add = () => C().addSystem(sys.sku);
+          r._add = () => C().addSystem(sys.sku); anim(r);
           r.addEventListener('pointerdown', (e) => listDrag(e, cat.systemName(sys), (x, y) => C().addSystem(sys.sku, x, y), () => { C().addSystem(sys.sku); if (narrow()) Pn.drawer(false); }));
           list.append(r);
           return;
         }
-        const r = productRow(p, null, v);
+        const r = productRow(p, null, v); anim(r);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
         r._add = () => { C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };

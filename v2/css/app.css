@@ -701,3 +701,29 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 .searchbox .kat-open:hover { border-color: var(--fg); }
 /* v4.4: the result chosen with ↓/↑ in the search box (Enter adds it) */
 #sb-list .prow.hl { background: var(--panel2); box-shadow: inset 3px 0 0 var(--accent); }
+
+/* v4.5: motion: short and snappy (100–180 ms), nothing on a "reduce motion" system */
+:root { --ease-out: cubic-bezier(.2, .8, .2, 1); }
+@keyframes hp-fade { from { opacity: 0; } }
+@keyframes hp-pop { from { opacity: 0; scale: .97; } }
+@keyframes hp-rise { from { opacity: 0; translate: 0 6px; } }
+@keyframes hp-row { from { opacity: 0; translate: -6px 0; } }
+.modal-back { animation: hp-fade .12s ease-out; }
+.modal { animation: hp-pop .16s var(--ease-out); }
+#ctxmenu { animation: hp-pop .1s var(--ease-out); transform-origin: top left; }
+.toast { animation: hp-rise .16s var(--ease-out); }
+#selbar { animation: hp-fade .12s ease-out; }
+.item.enter { animation: hp-rise .18s var(--ease-out); }
+.item.lifting { filter: drop-shadow(5px 7px 0 rgba(0, 0, 0, .14)); z-index: 5; }
+#sb-list .prow.in { animation: hp-row .16s var(--ease-out) both; }
+#sb-list .prow { transition: background .12s, box-shadow .12s; }
+.kat-back { animation: hp-fade .12s ease-out; }
+.kat-win { animation: hp-pop .16s var(--ease-out); }
+.kat-back.closing { animation: hp-fade .11s ease-in reverse forwards; }
+.kat-back.closing .kat-win { animation: hp-pop .11s ease-in reverse forwards; }
+.kat-tile.in { animation: hp-rise .18s var(--ease-out) both; }
+.kat-tile .kat-pic, .kat-cat .pic, .kat-check .box, .kat-pill, .kat-menu button { transition: border-color .12s, background .12s, color .12s, transform .12s; }
+.kat-bar { animation: hp-rise .14s var(--ease-out); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
+}

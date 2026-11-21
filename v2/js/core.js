@@ -72,6 +72,7 @@
   HP.imagesOf = (p, item) => { const imgs = ((p && p.img) || []).slice(), v = HP.variantOf(p, item); if (v && v.img) imgs[0] = v.img; return imgs.filter(Boolean); };
   HP.priceOf = (p, item) => { const v = HP.variantOf(p, item); return v ? { price: v.price, was: v.was || 0, label: v.label } : { price: p.price || 0, was: p.was > p.price ? p.was : 0, label: '' }; };
   HP.esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  HP.reducedMotion = () => !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   HP.uid = () => Math.random().toString(36).slice(2, 9);
   HP.clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   HP.snap = (v) => Math.round(v / 10) * 10;

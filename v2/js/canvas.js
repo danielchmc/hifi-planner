@@ -305,8 +305,9 @@
     return '';
   }
 
+  let rendered = false; // after the first drawing is on screen, new cards animate in
   function renderItems() {
-    const seen = new Set();
+    const seen = new Set(), fresh = [];
     MK = markKeys();
     store.doc.items.forEach((it) => {
       seen.add(it.id);
@@ -315,6 +316,7 @@
       if (!el || el._sig !== sig) {
         const ne = buildItem(it); ne._sig = sig; ne.dataset.id = it.id; ne.classList.add('item', 'k-' + it.kind);
         if (el) el.replaceWith(ne); else if (it.kind === 'plan') planEl.prepend(ne); else (it.kind === 'zone' ? planEl : itemsEl).append(ne); // plan and rooms sit under everything else
+        if (!el && rendered) fresh.push(ne);
         els.set(it.id, ne); el = ne; geom.delete(it.id);
       }
       el.style.left = it.x + 'px'; el.style.top = it.y + 'px';
@@ -322,6 +324,9 @@
       el.classList.toggle('sel', store.sel.has(it.id));
     });
     for (const [id, el] of els) if (!seen.has(id)) { el.remove(); els.delete(id); geom.delete(id); }
+    // cards that are new on the canvas fade in: a few at a time (added, pasted, a system), not a whole drawing being opened
+    if (fresh.length && fresh.length <= 12 && !HP.reducedMotion()) fresh.forEach((ne) => { ne.classList.add('enter'); setTimeout(() => ne.classList.remove('enter'), 260); });
+    rendered = true;
     const ord = store.doc.items.map((i) => i.id).join(',');
     if (ord !== order) { order = ord; store.doc.items.forEach((it) => { const el = els.get(it.id); if (el && it.kind !== 'plan' && it.kind !== 'zone') itemsEl.append(el); }); }
   }
@@ -551,12 +556,27 @@
     const add = e.shiftKey || e.ctrlKey || e.metaKey, was = store.sel.has(it.id), onImg = !!e.target.closest('.card-img');
     if (!was) { if (!add) store.sel.clear(); store.sel.add(it.id); store.selConn = null; refreshSel(); }
     const group = [...store.sel].map(store.item).filter((i) => i && !(i.kind === 'plan' && i.lock)), start = group.map((i) => [i.x, i.y]);
+    // while dragging, the cards follow the pointer exactly (no jumping from grid point to grid point); on release they settle
+    // onto the grid with a short ease, the wires following frame by frame
+    const snapOf = (i) => (i.kind === 'mark' || i.kind === 'run' ? snap5 : i.kind === 'plan' ? snapGrid : snap);
+    const place = (i) => { const el = els.get(i.id); if (el) { el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; } };
     drag(e, (ev, dx, dy) => {
-      group.forEach((i, k) => { const sn = i.kind === 'mark' || i.kind === 'run' ? snap5 : i.kind === 'plan' ? snapGrid : snap; i.x = sn(start[k][0] + dx / view.z); i.y = sn(start[k][1] + dy / view.z); const el = els.get(i.id); el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; });
+      group.forEach((i, k) => { i.x = start[k][0] + dx / view.z; i.y = start[k][1] + dy / view.z; place(i); const el = els.get(i.id); if (el) el.classList.add('lifting'); });
       renderWires(); placeBar();
     }, (ev, moved, aborted) => {
+      group.forEach((i) => { const el = els.get(i.id); if (el) el.classList.remove('lifting'); });
       if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); return render(); } // second finger: put things back, pinch instead
-      if (moved) return store.commit();
+      if (moved) {
+        const from = group.map((i) => [i.x, i.y]), to = group.map((i) => [snapOf(i)(i.x), snapOf(i)(i.y)]);
+        const T = HP.reducedMotion() ? 0 : 110, t0 = performance.now();
+        const step = (now) => {
+          const k = T ? Math.min(1, (now - t0) / T) : 1, e2 = 1 - Math.pow(1 - k, 3);
+          group.forEach((i, j) => { i.x = from[j][0] + (to[j][0] - from[j][0]) * e2; i.y = from[j][1] + (to[j][1] - from[j][1]) * e2; place(i); });
+          renderWires(); placeBar();
+          if (k < 1) requestAnimationFrame(step); else { group.forEach((i, j) => { i.x = to[j][0]; i.y = to[j][1]; }); store.commit(); }
+        };
+        return requestAnimationFrame(step);
+      }
       if (add && was) store.sel.delete(it.id); else if (!add) { store.sel.clear(); store.sel.add(it.id); }
       const p = it.kind === 'product' && cat.get(it.pid);
       if (p && onImg && !add) {

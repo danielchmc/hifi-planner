@@ -85,7 +85,11 @@
     render();
     setTimeout(() => { const i = root.querySelector('.kat-search input'); i.focus(); i.select(); }, 30);
   }
-  function close() { if (!root) return; root.hidden = true; }
+  function close() {
+    if (!root || root.hidden || root.classList.contains('closing')) return;
+    if (HP.reducedMotion()) { root.hidden = true; return; }
+    root.classList.add('closing'); setTimeout(() => { root.hidden = true; root.classList.remove('closing'); }, 110);
+  }
 
   function build() {
     const search = h('input', { type: 'search', placeholder: t('Search for products, brands, SKU…', 'Søg efter produkter, mærker, varenummer…'),
@@ -104,7 +108,9 @@
         h('aside.kat-side'),
         h('main.kat-main', null, h('.kat-head'), h('.kat-grid'), h('.kat-more'))),
       h('.kat-bar'));
-    root = h('.kat-back', { hidden: true, onkeydown: keys, onpointerdown: (e) => { if (e.target === root) close(); } }, win);
+    root = h('.kat-back', { hidden: true, onpointerdown: (e) => { if (e.target === root) close(); } }, win);
+    // keys are read on the whole page while the Katalog is open, so Esc works wherever the focus is (also after a filter redraws)
+    document.addEventListener('keydown', (e) => { if (root && !root.hidden && !root.classList.contains('closing')) keys(e); }, true);
     document.body.append(root);
     const main = root.querySelector('.kat-main'), more = root.querySelector('.kat-more');
     io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting) && shown < hits.length) addTiles(); }, { root: main, rootMargin: '0px 0px 600px 0px' }) : null;
@@ -114,7 +120,7 @@
   function keys(e) {
     if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); if (st.sel.size) { st.sel.clear(); render(true); } else close(); return; }
     if (e.key === 'Enter' && st.sel.size && !/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) { e.preventDefault(); addSelection(); }
-    e.stopPropagation(); // the canvas's own shortcuts stay quiet while the Katalog is open
+    // the canvas's own shortcuts stay quiet while the Katalog is open (js/main.js checks HP.katalog.isOpen())
   }
 
   function render(keepScroll) {
@@ -229,7 +235,7 @@
   const key = (x) => (isSys() ? 's:' + x.sku : 'p:' + x.id);
   function addTiles() {
     const grid = root.querySelector('.kat-grid'), more = root.querySelector('.kat-more');
-    hits.slice(shown, shown + PER).forEach((x) => grid.append(isSys() ? sysTile(x) : prodTile(x)));
+    hits.slice(shown, shown + PER).forEach((x, i) => { const el = isSys() ? sysTile(x) : prodTile(x); if (!shown && i < 15) { el.classList.add('in'); el.style.animationDelay = i * 14 + 'ms'; } grid.append(el); });
     shown = Math.min(hits.length, shown + PER);
     more.hidden = shown >= hits.length;
   }

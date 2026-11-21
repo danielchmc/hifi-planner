@@ -89,6 +89,15 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - **Shortcuts for the selection are Alt + a letter** (read by key position, so Option+letter works on a Mac): Alt+T text, Alt+B flip front/back, Alt+C colour, Alt+I inspect image, Alt+L lock the floor plan, Alt+R replace. Until 2026-11-21 they were plain letters, which now type into the search.
 - **Shift+1** fits the drawing to the window (as in Figma and Miro). Unchanged: Delete, arrows (nudge), [ and ] (order), Enter (cable picker on a selected wire, otherwise the Katalog), Esc, Ctrl+Z/Y/C/V/D/A/S/P, F3, F4, /.
 
+## Motion
+
+Short and snappy (100–180 ms), in the "v4.5" CSS section; all of it is switched off when the system asks for reduced motion (`HP.reducedMotion()`).
+
+- **Dragging:** cards follow the pointer exactly while dragged (with a slightly deeper shadow) and settle onto the grid with a 110 ms ease on release, the wires following frame by frame; one step for Undo (`startItemDrag` in `js/canvas.js`).
+- **New cards** fade and rise in when up to 12 appear at once (added, pasted, a system); opening a whole drawing does not animate.
+- **Search results** slide in with a slight stagger when the search changes; the highlighted result moves smoothly.
+- **Dialogs, the Katalog, the right-click menu, toasts and the selection bar** fade and scale in; the Katalog fades out when closed and its tiles fade in.
+
 ## Phones and tablets
 
 The app works on phones and iPads with touch.
@@ -158,7 +167,7 @@ The sidebar is for finding a product quickly and dragging it onto the canvas; br
 
 A large dialog over the canvas (the drawing stays visible, dimmed, behind it; a click outside closes it), laid out like hifiklubben.dk so staff know where things are, drawn in HiFi Planner's own style, light and dark (`js/katalog.js`, the "v4.3" CSS section). Product photos keep a light background in dark mode, as they are shot on white.
 
-- **Open:** Enter anywhere on the canvas (a selected wire still opens the cable picker with Enter, and Enter still finishes a cable run being drawn), Shift+Enter in the sidebar search (that search, across all sections, like the website's search page), or the Katalog button. **Esc** clears the selection, then closes. Filters are kept while the page is open, so the seller can go back and forth with a customer.
+- **Open:** Enter anywhere on the canvas (a selected wire still opens the cable picker with Enter, and Enter still finishes a cable run being drawn), Shift+Enter in the sidebar search (that search, across all sections, like the website's search page), or the Katalog button. **Esc** clears the selection, then closes (wherever the keyboard focus is). Filters are kept while the page is open, so the seller can go back and forth with a customer.
 - **Top:** title, search, sort, close. **Menu:** the website's sections in its order (HI-FI, HØJTALER, PLADESPILLER, HØRETELEFONER, SURROUND, TV, SYSTEMER, KABLER, TILBEHØR) with counts, and TILBUD in red (only discounted products, in any section). Under a section its categories as round pictures (each the category's first product picture).
 - **Left column**, collapsible groups as on the website, each option with the number it would give: **Type** (the website's product type, `ty` on the product, written by `tools/catalog-build.js`, e.g. *Gulvhøjtaler – Aktive*, *Passiv subwoofer*; products the website does not list use their category), **Pris** (from/to), **Vis kun** (Tilbud, Bluetooth, WiFi), **Tilslutninger** (from the ports: phono input, HDMI ARC/eARC, HDMI/optical/coaxial/analogue input, USB-DAC, XLR, sub out, pre-out, speaker and headphone outputs) and **Mærke** (top 10, "Vis alle"). The active filters show as pills above the grid ("Nulstil" clears them). On narrow screens the column opens with **Filtre**.
 - **Tiles** as on the website: picture on grey, SPAR x % (systems: SPAR x kr. against the parts one by one), colour pictures (click one to pick that colour, before or after selecting the tile; the colour is kept while the page is open), name, type, price in red with FØR when discounted. Discontinued products are not shown. Website products without ports say so.
