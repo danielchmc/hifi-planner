@@ -200,5 +200,75 @@
     return map;
   }
 
-  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf };
+  /* ---------- automatic wiring of a system (a website bundle dropped from the sidebar) ----------
+     devs: [{ uid, p }] one entry per card. Returns [{ a: { uid, key }, b: { uid, key } }], output → input.
+     Every possible output → input pair gets a score; the best are taken first, one at a time, as long as
+       - each input takes one wire (a speaker pair card takes two: L and R from a stereo amp with separate L/R outputs),
+       - each output gives one wire (a stereo speaker output gives two when it feeds two single speakers),
+       - two cards are joined once (again except L+R into one speaker pair), and no loop is made,
+       - a source (anything but an amplifier's speaker or sub outputs) feeds one card only.
+     Scores: same signal 10, same group 7 (line/aux/pre/main/zone, HDMI, USB, coaxial digital), line-level into a sub input 5;
+     a speaker output's FRONT/CENTER/SURROUND must agree with the speaker (center needs a centre speaker; front goes to the
+     dearest pair); a dedicated box (fewer inputs, e.g. a phono stage) wins over an amplifier's own input; digital (optical)
+     loses to analogue between the same two cards only by the order of the ports. Ties: the first port in the list wins. */
+  const WGROUP = { line: 'an', aux: 'an', pre: 'an', main: 'an', zone: 'an', minijack: 'an', jack: 'an', bal: 'an',
+    hdmi: 'hdmi', 'hdmi-arc': 'hdmi', 'hdmi-earc': 'hdmi', usb: 'usb', usbc: 'usb', coax: 'dig', digital: 'dig', speakon: 'speaker' };
+  const wgroup = (sig) => WGROUP[sig] || sig;
+  const SKIPSIG = new Set(['lan', 'trigger', 'control', 'other', 'video', 'phones', 'mic']);
+  const LR = (label) => { const m = /(?:^|[\s_-])(L|R|LEFT|RIGHT|VENSTRE|HØJRE)$/i.exec(String(label || '').trim()); return m ? m[1][0].toUpperCase() : ''; };
+  function autoWire(devs) {
+    const role = (p) => { const r = String((p.fx || {}).role || '').toLowerCase(), n = String(p.name || '');
+      return /center|centre/.test(r) || /center|centre/i.test(n) ? 'center' : /sub/.test(r) || p.kind === 'subwoofer' || /\bsub\b/i.test(n) ? 'sub' : /surround|rear|atmos|height/.test(r) ? 'surround' : 'main'; };
+    const cand = [];
+    devs.forEach((A, ai) => (A.p.out || []).forEach((o, oi) => {
+      if (SKIPSIG.has(o.sig)) return;
+      devs.forEach((B, bi) => { if (bi === ai) return; const ins = (B.p.in || []).filter((x) => !SKIPSIG.has(x.sig));
+        ins.forEach((i) => {
+          const ii = (B.p.in || []).indexOf(i);
+          let s = o.sig === i.sig ? 10 : wgroup(o.sig) === wgroup(i.sig) ? 7 : (wgroup(o.sig) === 'an' && i.sig === 'sub') || (o.sig === 'sub' && wgroup(i.sig) === 'an') ? 5 : 0;
+          if (!s) return;
+          if (o.sig === 'sub' && role(B.p) !== 'sub') return; // a sub output only feeds a subwoofer
+          if (o.sig === 'speaker' || o.sig === 'speakon') {
+            const L = String(o.label).toUpperCase(), r = role(B.p);
+            if (/CENTER|CENTRE/.test(L)) { if (r !== 'center') return; s += 3; } else if (r === 'center') s -= 4;
+            if (/SURR|REAR|BACK/.test(L)) s += r === 'surround' ? 3 : 0;
+            if (/HEIGHT|ATMOS|TOP/.test(L)) s += r === 'surround' ? 1 : -2;
+            if (/FRONT/.test(L) && r === 'main') s += 2 + Math.min(1, (B.p.price || 0) / 1e6); // the dearest pair goes in front
+            if (r === 'sub') s -= 3; // a passive sub on a speaker output only when nothing else fits
+          }
+          if (o.sig === 'sub' || i.sig === 'sub') s += role(B.p) === 'sub' ? 2 : -2;
+          if (o.sig === 'sub' && role(B.p) === 'sub') s += 8; // an amplifier's sub output before its line or pre output
+          // an input named for this kind of source (LINE IN CD for a CD player, TUNER, NETWORK/STREAMER, TV, GAME)
+          const IL = String(i.label).toUpperCase(), what = (A.p.kind + ' ' + A.p.name + ' ' + (A.p.cats || []).join(' ')).toLowerCase();
+          if ((/\bCD\b/.test(IL) && /\bcd\b|cd-?afspill|cd-?spiller|\/cd/.test(what)) || (/TUNER|DAB|FM/.test(IL) && /tuner|dab|radio/.test(what))
+            || (/NET|STREAM/.test(IL) && /stream|node|network/.test(what)) || (/\bTV\b/.test(IL) && /\btv\b|fjernsyn/.test(what)) || (/GAME/.test(IL) && /game|konsol/.test(what))) s += 0.5;
+          if (conn(o.conn, o, 'out') === conn(i.conn, i, 'in')) s += 1; // same plug at both ends: no adapter (RCA sub out to the RCA input, not XLR)
+          s += 1 / Math.max(1, ins.length); // a dedicated box (phono stage, DAC) before the amplifier's own input
+          cand.push({ s, ai, oi, bi, ii, o, i });
+        });
+      });
+    }));
+    cand.sort((x, y) => y.s - x.s || x.oi - y.oi || x.ii - y.ii || x.ai - y.ai || x.bi - y.bi);
+    const unit = (p) => !!(p.single || /\(1 unit\)/i.test(p.name || '') || /^(left|right)$|\b(left|right)$/i.test(String(p.name || '').trim()));
+    const usedOut = new Map(), inUse = new Map(), pairs = new Map(), fed = new Map(), edges = devs.map(() => new Set()), out = [];
+    const reach = (from, to) => { const seen = new Set([from]), st = [from]; while (st.length) { const n = st.pop(); if (n === to) return true; edges[n].forEach((m) => { if (!seen.has(m)) { seen.add(m); st.push(m); } }); } return false; };
+    for (const c of cand) {
+      const ok = c.ai + ':' + c.oi, ik = c.bi + ':' + c.ii, pk = c.ai + '>' + c.bi, side = LR(c.o.label);
+      // a stereo speaker output (no L/R of its own) feeds two single speakers (cards of one unit, e.g. Phantom K-60 (1 Unit) x2)
+      const first = usedOut.get(ok);
+      if (first && !(first.n === 1 && !side && (c.o.sig === 'speaker' || c.o.sig === 'speakon') && unit(devs[c.bi].p) && unit(devs[first.bi].p) && first.bi !== c.bi)) continue;
+      const prevIn = inUse.get(ik), prevPair = pairs.get(pk);
+      // L and R outputs may both go to one input (a speaker pair card); nothing else shares an input or a pair of cards
+      if (prevIn && !(side && prevIn.side && prevIn.side !== side && prevIn.ai === c.ai)) continue;
+      if (prevPair && !(side && prevPair.side && prevPair.side !== side && prevPair.ik === ik)) continue;
+      if (!prevPair && (pairs.has(c.bi + '>' + c.ai) || reach(c.bi, c.ai))) continue;
+      const amp = c.o.sig === 'speaker' || c.o.sig === 'speakon' || c.o.sig === 'sub';
+      if (!amp && fed.has(c.ai) && fed.get(c.ai) !== c.bi) continue;
+      usedOut.set(ok, first ? { n: 2, bi: c.bi } : { n: 1, bi: c.bi }); inUse.set(ik, { side, ai: c.ai }); if (!prevPair) pairs.set(pk, { side, ik }); if (!amp) fed.set(c.ai, c.bi); edges[c.ai].add(c.bi);
+      out.push({ a: { uid: devs[c.ai].uid, key: c.o.key }, b: { uid: devs[c.bi].uid, key: c.i.key } });
+    }
+    return out;
+  }
+
+  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire };
 })();

@@ -170,13 +170,30 @@
       const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), price: pr.price, was: pr.was, qty: 0, cable };
       r.qty++; rows.set(key, r);
     };
+    // systems: every complete set of cards placed from one bundle (sy) is one line at the bundle price, its parts listed under it;
+    // "was" is what the parts cost one by one (or the website's own before-price, if higher). Cards left over (a part deleted, an
+    // extra card) are priced on their own below.
+    const used = new Set(), sysHave = {};
+    const bySy = {}; d.items.forEach((it) => { if (it.kind === 'product' && !it.np && it.sy && cat.get(it.pid)) (bySy[it.sy] = bySy[it.sy] || []).push(it); });
+    Object.keys(bySy).forEach((sku) => {
+      const b = cat.system(sku); if (!b) return;
+      const pool = bySy[sku];
+      const n = Math.min(...b.parts.map((x) => Math.floor(pool.filter((it) => it.pid === x.id).length / x.qty)));
+      if (!(n >= 1)) return;
+      let parts = 0;
+      b.parts.forEach((x) => { const its = pool.filter((it) => it.pid === x.id && !used.has(it.id)).slice(0, x.qty * n); its.forEach((it) => { used.add(it.id); parts += HP.priceOf(cat.get(it.pid), it).price; }); sysHave[x.id] = (sysHave[x.id] || 0) + its.length; });
+      const each = parts / n, was = Math.max(each, b.was || 0);
+      rows.set('sys|' + sku, { name: cat.systemName(b), url: b.url ? 'https://www.hifiklubben.dk' + b.url : '', price: b.price, was: was > b.price ? Math.round(was) : 0, qty: n, cable: false, sys: true,
+        parts: b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · ') });
+    });
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
-    d.items.forEach((it) => it.kind === 'product' && !it.np && add(cat.get(it.pid), false, it));
+    d.items.forEach((it) => it.kind === 'product' && !it.np && !used.has(it.id) && add(cat.get(it.pid), false, it));
     const mc = {};
     d.items.forEach((it) => { if (it.kind === 'mark' && !it.np && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
     for (const pid in mc) { // a product placed as marks and also drawn as cards is the same hardware: count the larger number once
       const p = cat.get(pid); let have = 0;
       rows.forEach((r, key) => { if (key.startsWith(pid + '|')) have += r.qty; });
+      have += sysHave[pid] || 0; // cards inside a system count too
       for (let i = have; i < mc[pid]; i++) add(p, false, null);
     }
     // a wire's cable: in the chosen length (lv), or by the metre (m metres, counted per started metre like cable runs)
@@ -193,6 +210,8 @@
       const p = cat.get(it.pid);
       if (!p) return h('.card.missing', { style: { width: '210px' } }, h('.card-head', null, h('span.brand', null, t('Unknown product', 'Ukendt produkt')), h('span.name', null, it.pid)));
       const card = buildCard(p, it);
+      const sb = it.sy && cat.system(it.sy);
+      if (sb) card.querySelector('.card-head').append(h('span.sys-tag.no-print', { title: t('Part of the system ', 'Del af systemet ') + cat.systemName(sb) + t(' (priced as the system while all its parts are on the canvas)', ' (prissat som systemet, så længe alle dele er på lærredet)') }, 'System'));
       if (it.np) card.querySelector('.card-head').append(h('span.np-tag.no-print', { title: t('Not counted in the price list', 'Tælles ikke med i prislisten') }, t('Not priced', 'Ikke i pris')));
       return card;
     }
@@ -227,7 +246,7 @@
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''),
-          h('td', null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
+          h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null, r.sys ? h('.sysparts', null, r.parts) : null),
           h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
@@ -700,6 +719,54 @@
     if (store.doc.ci) { const w = toWorld(cx, cy); return C.placeMark(pid, w.x, w.y); }
     if (el) return C.replaceItem(el.dataset.id, pid);
     const w = toWorld(cx, cy); C.addProduct(pid, w.x, w.y, vsku);
+  };
+  /* a system (website bundle) from the sidebar: one card per part, in columns from the sources to the speakers, wired by
+     P.autoWire (no cables: the seller picks them). Every card carries sy = the bundle's SKU, so the price list can price it as
+     the bundle. Parts that are not drawn and wired (stands, a backbox) go in a row underneath. */
+  C.addSystem = (sku, cx, cy) => {
+    const b = cat.system(sku), d = store.doc; if (!b) return null;
+    const r = vp.getBoundingClientRect();
+    if (cx != null && (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom)) return null;
+    const devs = [];
+    b.parts.forEach((x) => { const p = cat.get(x.id); if (p) for (let i = 0; i < x.qty; i++) devs.push({ uid: HP.uid(), p, v: x.v }); });
+    if (!devs.length) return null;
+    const wires = HP.ports.autoWire(devs.filter((x) => x.p.scope !== 'pricelist'));
+    // column = longest chain of wires leading into the card (sources 0, amplifier 1, speakers 2…)
+    const lvl = new Map(devs.map((x) => [x.uid, 0])), wired = new Set();
+    wires.forEach((w) => { wired.add(w.a.uid); wired.add(w.b.uid); });
+    for (let k = 0; k < devs.length; k++) wires.forEach((w) => lvl.set(w.b.uid, Math.max(lvl.get(w.b.uid), lvl.get(w.a.uid) + 1)));
+    const sc = cardScale(), W = (x) => cardW(x.p) * sc, H = (x) => (170 + Math.max((x.p.in || []).length, (x.p.out || []).length) * 17) * sc, GX = 130 * sc, GY = 50 * sc;
+    const cols = [];
+    devs.filter((x) => wired.has(x.uid)).forEach((x) => (cols[lvl.get(x.uid)] = cols[lvl.get(x.uid)] || []).push(x));
+    // within a column, the order of the ports they are wired to (SUB, FRONT, CENTER, SURROUND as on the receiver), so wires do not cross
+    const byUid = new Map(devs.map((x) => [x.uid, x]));
+    const portIdx = (uid, key, side) => { const l = (byUid.get(uid).p[side] || []); const i = l.findIndex((pt) => pt.key === key); return i < 0 ? 99 : i; };
+    const rank = (x) => { const inc = wires.filter((w) => w.b.uid === x.uid), outg = wires.filter((w) => w.a.uid === x.uid);
+      return inc.length ? Math.min(...inc.map((w) => portIdx(w.a.uid, w.a.key, 'out'))) : outg.length ? Math.min(...outg.map((w) => portIdx(w.b.uid, w.b.key, 'in'))) : 99; };
+    cols.forEach((col) => col.sort((a, b) => rank(a) - rank(b)));
+    const rest = devs.filter((x) => !wired.has(x.uid));
+    const place = new Map();
+    let x0 = 0, maxH = 0;
+    cols.forEach((col) => { const cw = Math.max(...col.map(W)), ch = col.reduce((a, x) => a + H(x), 0) + GY * (col.length - 1); maxH = Math.max(maxH, ch); col.forEach((x) => place.set(x.uid, { x: x0 + (cw - W(x)) / 2 })); x0 += cw + GX; });
+    cols.forEach((col) => { const ch = col.reduce((a, x) => a + H(x), 0) + GY * (col.length - 1); let y = (maxH - ch) / 2; col.forEach((x) => { place.get(x.uid).y = y; y += H(x) + GY; }); });
+    const totW = Math.max(x0 - GX, 0);
+    let rx = 0; const ry = cols.length ? maxH + GY * 2 : 0, rowH = Math.max(0, ...rest.map(H));
+    rest.forEach((x) => { place.set(x.uid, { x: rx, y: ry }); rx += W(x) + GY; });
+    const fullW = Math.max(totW, rx - GY), fullH = (cols.length ? maxH : 0) + (rest.length ? (cols.length ? GY * 2 : 0) + rowH : 0);
+    const at = cx == null ? centerWorld() : toWorld(cx, cy), ox = at.x - fullW / 2, oy = at.y - fullH / 2;
+    const ids = new Map();
+    devs.forEach((x) => {
+      const pl = place.get(x.uid), it = { id: HP.uid(), kind: 'product', pid: x.p.id, x: snap(ox + pl.x), y: snap(oy + pl.y), face: 0, sy: b.sku };
+      if (x.v && (x.p.vars || []).some((y) => y.sku === x.v)) it.v = x.v;
+      ids.set(x.uid, it.id); d.items.push(it);
+    });
+    wires.forEach((w) => d.conns.push({ id: HP.uid(), a: { item: ids.get(w.a.uid), key: w.a.key }, b: { item: ids.get(w.b.uid), key: w.b.key }, cable: null, shift: 0 }));
+    store.sel = new Set(ids.values()); store.selConn = null; store.commit();
+    const dia = devs.filter((x) => x.p.scope !== 'pricelist'), lone = dia.filter((x) => !wired.has(x.uid)).length;
+    HP.toast(cat.systemName(b) + ': ' + devs.length + ' ' + t('products', 'produkter') + ', ' + wires.length + ' ' + t(wires.length === 1 ? 'connection' : 'connections', wires.length === 1 ? 'forbindelse' : 'forbindelser')
+      + (dia.length > 1 && lone ? ' · ' + (wires.length ? t(lone + ' not wired (wireless, or no matching port)', lone + ' uden ledning (trådløs eller ingen passende port)') : t('wireless or not wired', 'trådløst eller uden ledninger')) : '')
+      + '. ' + t('Pick cables on the wires.', 'Vælg kabler på forbindelserne.'), { kind: 'ok', ms: 6000 });
+    return ids;
   };
   C.addText = (cx, cy) => {
     const c = cx != null ? toWorld(cx, cy) : C.pointerWorld() || centerWorld(), it = { id: HP.uid(), kind: 'text', x: snap(c.x - 120), y: snap(c.y - 50), w: 240, h: 90, title: '', body: '' };

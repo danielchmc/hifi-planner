@@ -13,6 +13,16 @@
       h('.pinfo', null, h('.pname', null, p.name, v && h('span.vlabel', null, ' · ' + v.label)), h('.psub', null, v ? v.sku : p.brand, price ? ' · ' : '', !v && (p.vars || []).length > 1 && new Set(p.vars.map((x) => x.price)).size > 1 ? t('from ', 'fra ') : '', was > price ? h('s', null, HP.money(was)) : null, was > price ? ' ' : '', price ? h('span' + (was > price ? '.sale' : ''), null, HP.money(price)) : null)),
       h('.pmeta', null, (p.vars || []).length > 1 && h('span.nvar', { title: p.vars.map((x) => x.label).join(', ') }, p.vars.slice(0, 4).map((x) => h('i' + (v && x.sku === v.sku ? '.on' : ''), { style: { background: HP.site.swatch(x) } }))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
   }
+  // a system (website bundle): its picture, name, the parts, the bundle price and what it saves against the parts one by one
+  const sysParts = (b) => b.parts.reduce((a, x) => a + (HP.priceOf(cat.get(x.id), x.v ? { v: x.v } : null).price || 0) * x.qty, 0);
+  function systemRow(b) {
+    const parts = sysParts(b), was = Math.max(parts, b.was || 0);
+    return h('.prow.sysrow', { data: { sku: b.sku } },
+      h('.thumb', null, HP.imgEl(b.img || '', 'thumb', { loading: 'lazy' })),
+      h('.pinfo', null, h('.pname', null, cat.systemName(b)),
+        h('.psub', null, b.type, ' · ', was > b.price ? h('s', null, HP.money(was)) : null, HP.money(b.price), was > b.price ? h('span.sale', null, ' ' + t('save ', 'spar ') + HP.money(was - b.price)) : null),
+        h('.sysparts', null, b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · '))));
+  }
   /* Drag a product or Shortcut from the sidebar onto the canvas.
      Mouse: drag, or click to add. Touch: the list scrolls normally, a tap adds, a long-press picks it up for dragging. */
   const narrow = () => matchMedia('(max-width: 1024px)').matches;
@@ -81,11 +91,21 @@
     const inGroup = (p, g) => !g || (p.cats || []).some((c) => groupOf(g).includes(c));
     const onSale = (p) => p.was > p.price || (p.vars || []).some((v) => v.was > v.price);
     // chips show how many products each choice would give with the other filters as they are
-    function drawChips(base) {
+    function drawChips(base, sysBase) {
       chips.textContent = ''; subChips.textContent = ''; flagChips.textContent = '';
       const chip = (on, label, n, fn) => h('button' + (on ? '.on' : ''), { onclick: fn, disabled: !on && !n }, label, h('span.n', null, n));
       chips.append(chip(!group, t('All', 'Alle'), base.length, () => { group = ''; sub = ''; filter(); }));
       HP.CAT_TREE.forEach(([g]) => chips.append(chip(group === g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, () => { group = group === g ? '' : g; sub = ''; filter(); })));
+      // hifiklubben.dk's bundles: dropped as a whole system, wired
+      if (sysBase) chips.append(chip(group === SYS, t('Systems', 'Systemer'), sysBase.length, () => { group = group === SYS ? '' : SYS; sub = ''; filter(); }));
+      if (group === SYS) {
+        [...new Set(sysBase.map((b) => b.type))].sort((a, b) => sysBase.filter((x) => x.type === b).length - sysBase.filter((x) => x.type === a).length)
+          .forEach((ty) => subChips.append(chip(sub === ty, ty, sysBase.filter((b) => b.type === ty).length, () => { sub = sub === ty ? '' : ty; filter(); })));
+        subChips.hidden = false;
+        const sb = sysBase.filter((b) => !sub || b.type === sub);
+        flagChips.append(chip(flags.sale, t('Sale', 'Tilbud'), sb.filter((b) => b.was > b.price).length, () => { flags.sale = !flags.sale; filter(); }));
+        return;
+      }
       if (group) {
         const inG = base.filter((p) => inGroup(p, group));
         groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subChips.append(chip(sub === c, HP.catLabel(c), n, () => { sub = sub === c ? '' : c; filter(); })); });
@@ -109,10 +129,26 @@
       if (v) s -= 0.5;
       return s + (p.gone ? 9 : 0);
     };
+    const SYS = '@systems', sysHay = new WeakMap();
+    const hayOf = (b) => { if (!sysHay.has(b)) sysHay.set(b, [b.sku, b.brand, b.model, b.type, ...b.parts.map((x) => { const p = cat.get(x.id); return p.brand + ' ' + p.name + ' ' + (p.sku || ''); })].join(' ').toLowerCase()); return sysHay.get(b); };
     function filter() {
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
       const base = cat.products().filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
-      drawChips(base);
+      const sysAll = cat.systems();
+      const sysBase = sysAll.length ? sysAll.filter((b) => words.every((w) => hayOf(b).includes(w)) && (!bv || b.brand === bv || b.parts.some((x) => cat.get(x.id).brand === bv))) : null;
+      if (group === SYS && !sysBase) group = '';
+      drawChips(base, sysBase);
+      if (group === SYS) {
+        const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
+        hits = sysBase.filter((b) => (!sub || b.type === sub) && (!flags.sale || b.was > b.price)).map((b, i) => ({ sys: b, i, price: b.price,
+          s: !words.length ? 0 : b.sku.toLowerCase() === words.join(' ') ? 0 : cat.systemName(b).toLowerCase().includes(words.join(' ')) ? 1 : 2 }));
+        hits.sort(so === 'pa' ? (a, b) => a.price - b.price : so === 'pd' ? (a, b) => b.price - a.price : so === 'name' || so === 'brand' ? (a, b) => loc(cat.systemName(a.sys), cat.systemName(b.sys)) : (a, b) => a.s - b.s || a.i - b.i);
+        shown = 0; rows = [];
+        list.textContent = ''; list.scrollTop = 0;
+        if (!hits.length) list.append(h('.empty', null, t('No systems match.', 'Ingen systemer passer.')));
+        addRows();
+        return;
+      }
       hits = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)) && Object.keys(flags).every((f) => !flags[f] || flagFn[f](p)))
         .map((p, i) => { const v = HP.matchVariant(p, words); return { p, v, i, s: score(p, words, v), price: (v ? v.price : p.price) || 0 }; });
       const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
@@ -126,7 +162,13 @@
     // append the next PER rows; the sentinel goes after them, and the observer adds more when it comes into view
     function addRows() {
       more.remove();
-      hits.slice(shown, shown + PER).forEach(({ p, v }) => {
+      hits.slice(shown, shown + PER).forEach(({ p, v, sys }) => {
+        if (sys) {
+          const r = systemRow(sys);
+          r.addEventListener('pointerdown', (e) => listDrag(e, cat.systemName(sys), (x, y) => C().addSystem(sys.sku, x, y), () => { C().addSystem(sys.sku); if (narrow()) Pn.drawer(false); }));
+          list.append(r);
+          return;
+        }
         const r = productRow(p, null, v);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
@@ -135,7 +177,8 @@
         rows.push({ p, r });
       });
       shown = Math.min(hits.length, shown + PER);
-      count.textContent = hits.length ? (shown < hits.length ? t('Showing ', 'Viser ') + shown + ' ' + t('of', 'af') + ' ' : '') + hits.length + ' ' + t('products', 'produkter') : '0 ' + t('products', 'produkter');
+      const unit = group === SYS ? t('systems', 'systemer') : t('products', 'produkter');
+      count.textContent = (hits.length && shown < hits.length ? t('Showing ', 'Viser ') + shown + ' ' + t('of', 'af') + ' ' : '') + hits.length + ' ' + unit;
       if (shown < hits.length) list.append(more);
       arm();
     }

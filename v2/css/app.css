@@ -570,3 +570,9 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 .cablegroup.picked { box-shadow: inset 3px 0 0 var(--fg); background: var(--hover, rgba(0,0,0,.035)); }
 .selbar { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: 13px; min-height: 36px; }
 .selbar b { font-weight: 600; }
+
+/* v4.1: systems (website bundles) in the sidebar, on cards and in the price list */
+.prow.sysrow .sysparts { font-size: 11px; color: var(--muted); margin-top: 2px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.sys-tag { margin-left: auto; font: 600 8.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 1px 5px; border: 1px solid currentColor; color: var(--muted); white-space: nowrap; }
+.prices .systag { font: 600 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 0 4px; margin-right: 5px; border: 1px solid currentColor; vertical-align: 1px; }
+.prices .sysparts { font-size: 10px; color: var(--muted); margin-top: 1px; line-height: 1.3; }

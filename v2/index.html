@@ -21,7 +21,7 @@
     // Catalogue data is loaded with a timestamp so shops always get the latest published version. The catalogue is generated every
     // hour by tools/catalog-build.js from data/own.js and the website mirror (README → Normalized catalogue). Rollback: load
     // 'data/products.js' here instead of the two build/ files (data/products.js is the catalogue as it was at the switch).
-    (function () { var v = Date.now(); var files = ['build/app-products.js', 'build/categories.js', 'data/templates.js', 'data/price-sync.js'];
+    (function () { var v = Date.now(); var files = ['build/app-products.js', 'build/categories.js', 'build/bundles.js', 'data/templates.js', 'data/price-sync.js'];
       try { if (localStorage.getItem('hp2.admin') === 'true') files.push('data/site-new.js'); } catch (e) { /* no storage */ } // website scan: admins only
       files.forEach(function (s) { document.write('<script src="' + s + '?t=' + v + '"><\/script>'); }); })();
   </script>

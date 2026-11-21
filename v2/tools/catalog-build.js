@@ -303,6 +303,32 @@ if (fs.existsSync(ownFile)) {
   fs.writeFileSync(path.join(OUT, 'app-products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/ (and by Publish in the Editor until the next build). The app\'s catalogue. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
   fs.writeFileSync(path.join(OUT, 'categories.js'), '/* Written by tools/catalog-build.js: the category tree (the website\'s, plus HiFi Planner\'s own from tools/taxonomy.js). */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.categories = ' + JSON.stringify(tree) + ';\n');
   try { fs.unlinkSync(path.join(OUT, 'next.js')); } catch (e) { /* gone already */ }
+  // systems: the website's bundles whose parts are all in the app catalogue, as parts lists of app product ids. The sidebar's
+  // Systems section drops them onto the canvas, wired by P.autoWire (js/ports.js); the price list shows the bundle price.
+  {
+    const appBy = new Map();
+    next.forEach((p) => [p.site, p.sku, ...(p.vars || []).map((v) => v.sku), ...(p.lens || []).map((l) => l.sku)].filter(Boolean).forEach((k) => { const K = U(k), cur = appBy.get(K); if (!cur || (cur.web && !p.web)) appBy.set(K, p); }));
+    const sys = [], miss = [];
+    for (const b of bundles) {
+      if (!(b.price > 0) || !b.parts.length) continue;
+      const parts = [];
+      let ok = true;
+      for (const x of b.parts) {
+        const p = appBy.get(x.sku) || x.variants.map((v) => appBy.get(v)).find(Boolean);
+        if (!p) { ok = false; break; }
+        // one listed variant of a product sold in colours: the system comes in that colour
+        const v = x.variants.length === 1 && (p.vars || []).some((y) => U(y.sku) === x.variants[0]) ? x.variants[0] : undefined;
+        const same = parts.find((q) => q.id === p.id && q.v === v);
+        if (same) same.qty += x.qty; else parts.push(Object.assign({ id: p.id, qty: x.qty }, v ? { v } : {}));
+      }
+      if (!ok) { miss.push(b.brand + ' ' + b.model); continue; }
+      sys.push({ sku: b.sku, brand: b.brand, model: b.model, type: b.type.da, cat: b.cat, url: b.url, price: Math.round(b.price), was: b.was > b.price ? Math.round(b.was) : 0, img: b.img, parts });
+    }
+    sys.sort((a, b) => a.brand.localeCompare(b.brand, 'da') || a.model.localeCompare(b.model, 'da'));
+    fs.writeFileSync(path.join(OUT, 'bundles.js'), '/* Written by tools/catalog-build.js: hifiklubben.dk\'s bundles (systems) whose parts are all in the app catalogue. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.bundles = '
+      + JSON.stringify(sys).split('},{"sku"').join('},\n{"sku"') + ';\n');
+    RT.systems = { n: sys.length, miss };
+  }
   // what changed since the previous build (prices and products), for the report
   if (prevBuild) {
     const before = new Map(prevBuild.map((p) => [p.id, p]));
@@ -337,6 +363,7 @@ if (fs.existsSync(ownFile)) {
   P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
   P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
   if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
+  if (RT.systems) P('**Systems**: ' + RT.systems.n + ' of the website\'s bundles are in the sidebar\'s Systems section (`build/bundles.js`)' + (RT.systems.miss.length ? '; ' + RT.systems.miss.length + ' are not, because a part is not in the catalogue: ' + RT.systems.miss.slice(0, 30).join(', ') + (RT.systems.miss.length > 30 ? ', …' : '') : '') + '.', '');
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
   if (RT.lenGone.length) P('**Length no longer sold, cable still sold** (' + RT.lenGone.length + '): the card follows the cable and offers its current lengths instead of being discontinued.', '', ...RT.lenGone.map((x) => '- ' + x), '');
   if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');

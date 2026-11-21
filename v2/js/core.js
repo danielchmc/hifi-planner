@@ -214,6 +214,12 @@
   cat.ignoreSite = (sku) => { if (!sku) return; cat.draft.ignore = cat.draft.ignore || []; if (!cat.draft.ignore.includes(sku)) cat.draft.ignore.push(sku); cat.saveDraft(); };
   cat.removeProduct = (id) => { const p = cat.get(id); if (p && p.site) cat.ignoreSite(p.site); delete cat.draft.products[id]; if ((DATA.products || []).some((p) => p.id === id)) cat.draft.delProducts.push(id); cat.saveDraft(); };
   cat.putTemplate = (t) => { cat.draft.templates[t.id] = t; cat.draft.delTemplates = cat.draft.delTemplates.filter((x) => x !== t.id); cat.saveDraft(); };
+  // systems: hifiklubben.dk's bundles (build/bundles.js), as parts lists of catalogue product ids. A card placed as part of a
+  // system carries sy: <bundle SKU>; the price list prices every complete set of such cards at the bundle price.
+  const sysBy = new Map();
+  cat.systems = () => (DATA.bundles || []).filter((b) => b.parts.every((x) => cat.get(x.id)));
+  cat.system = (sku) => { if (!sysBy.size) (DATA.bundles || []).forEach((b) => sysBy.set(b.sku, b)); return sysBy.get(sku) || null; };
+  cat.systemName = (b) => (b.model.toLowerCase().startsWith(b.brand.toLowerCase()) ? b.model : b.brand + ' ' + b.model);
   cat.removeTemplate = (id) => { delete cat.draft.templates[id]; if ((DATA.templates || []).some((t) => t.id === id)) cat.draft.delTemplates.push(id); cat.saveDraft(); };
   cat.clearDraft = () => { cat.draft = emptyDraft(); cat.saveDraft(); };
   cat.clean = (p) => { const c = Object.assign({}, p); delete c._hay; delete c._ends; return c; };
@@ -326,7 +332,7 @@
   function compact(doc) {
     const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
-      items.map((i) => i.kind === 'product' ? (i.np ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, 1] : i.v ? [i.pid, R(i.x), R(i.y), i.face || 0, i.v] : [i.pid, R(i.x), R(i.y), i.face || 0]) : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
+      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift || c.lv || c.m) r.push(c.cable || 0); if (c.shift || c.lv || c.m) r.push(Math.round((c.shift || 0) / 5)); if (c.lv || c.m) r.push(c.lv || 0, c.m || 0); return r; }), // [.., cable, shift, length SKU, metres]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4]];
@@ -334,7 +340,7 @@
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
     const ids = a[7].map(() => HP.uid());
-    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] ? { np: 1 } : {})
+    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] ? { np: 1 } : {}, r[6] ? { sy: r[6] } : {})
       : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6], ...(r[7] & 1 ? { noTitle: true } : {}), ...(r[7] & 2 ? { noBody: true } : {}) } : r[0] === 3 ? Object.assign({ id: ids[n], kind: 'mark', k: r[3], x: r[1] * 5, y: r[2] * 5 }, r[4] ? { np: 1 } : {}) : r[0] === 4 ? { id: ids[n], kind: 'legend', x: r[1] * 10, y: r[2] * 10 }
       : r[0] === 5 ? { id: ids[n], kind: 'zone', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, name: r[5] }
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
