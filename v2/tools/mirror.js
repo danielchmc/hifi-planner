@@ -1,6 +1,6 @@
-/* HiFi Planner raw mirror of hifiklubben.dk. Runs every hour on GitHub after the catalogue sync (workflow "Catalogue sync").
-   No dependencies, Node 18+. Separate from price-sync.js on purpose: if the website changes, the mirror can fail without
-   touching prices or the catalogue.
+/* HiFi Planner raw mirror of hifiklubben.dk. Runs every hour on GitHub as the first step of the workflow "Catalogue sync".
+   No dependencies, Node 18+. It is the only part of the sync that reads hifiklubben.dk: price-sync.js (--mirror) and
+   catalog-build.js read what it stored, so the website is read once per run. If it fails, price-sync.js reads the listing itself.
 
    node tools/mirror.js <mirror dir> [--pages N] [--listing-fixture <file>] [--pages-fixture <dir>] [--dry]
      --pages N            product pages to (re)read this run, default 120 (never-read pages first, then the oldest)
@@ -10,7 +10,8 @@
 
    The mirror is the website's own data, stored as it comes and never edited by hand (see mirror/README.md):
      listing.jsonl     every product in the website's product listing, one raw record per line, sorted by SKU
-     pages/<SKU>.json  the product record from each product page (window.initialState) and its category breadcrumb.
+     pages/<SKU>.json  the product record from each product page (window.initialState) and its category breadcrumb, plus
+                       hp: what price-sync.js takes from the page (spec table, connection lines, gallery, availability).
                        Only the marketing prose listed in DROP is left out, to keep the files small.
      index.json        per product: type, type key, category path, first/last seen in the listing, last page read, gone
      types.json        every website product type: count, type key, category paths, bundles/outlet, and whether HiFi Planner
@@ -67,7 +68,9 @@ function extract(html) {
   const st = JSON.parse(JSON.parse(m[1])), pg = st && st.page;
   const product = pg && pg.payload && pg.payload.product;
   if (!product || !product.skuCode) throw new Error('no product record in initialState');
-  return { breadcrumb: (pg.breadcrumb || []).filter((b) => b.url && b.url !== '/').map((b) => ({ title: b.title, key: String(b.subtitle || '').trim(), url: b.url })), product: strip(product) };
+  // hp: what tools/price-sync.js reads from the page (spec table, the description's connection lines, gallery, availability), parsed
+  // here with the same code (js/site.js S.parsePage), so price-sync can work from the mirror instead of reading every page again
+  return { breadcrumb: (pg.breadcrumb || []).filter((b) => b.url && b.url !== '/').map((b) => ({ title: b.title, key: String(b.subtitle || '').trim(), url: b.url })), hp: S.parsePage(html), product: strip(product) };
 }
 async function fetchPage(rec) {
   if (PAGES_FIXTURE) return extract(fs.readFileSync(path.join(PAGES_FIXTURE, safe(rec.skuCode) + '.html'), 'utf8'));
@@ -116,7 +119,7 @@ async function fetchPage(rec) {
     try {
       if (!PAGES_FIXTURE) await sleep(300);
       const d = await fetchPage(p);
-      if (writeIfChanged(file('pages', safe(sku) + '.json'), pretty({ sku, url: p.url, breadcrumb: d.breadcrumb, product: d.product }))) R.pagesChanged++;
+      if (writeIfChanged(file('pages', safe(sku) + '.json'), pretty({ sku, url: p.url, breadcrumb: d.breadcrumb, hp: d.hp, product: d.product }))) R.pagesChanged++;
       e.page = TODAY; e.typeKey = d.product.modelTypeKey || ''; e.cat = d.breadcrumb.map((b) => b.title).join(' > ');
       R.pages++;
     } catch (err) { R.pageErrors.push(sku + ': ' + err.message); }
@@ -139,6 +142,7 @@ async function fetchPage(rec) {
   const types = Object.values(T).sort((a, b) => b.count - a.count || a.type.localeCompare(b.type));
   types.forEach((t) => { if (prevTypes.size && !prevTypes.has(t.type)) R.newTypes.push(t.type + ' (' + t.count + ')'); if (!t.mapped && t.products) R.unmapped.push(t); });
   index.updated = TODAY; index.listing = { products: R.listing, bundles: R.bundles, outlet: R.outlet };
+  if (!LISTING_FIXTURE) index.listingAt = new Date().toISOString(); // price-sync.js --mirror uses the listing only when it is this fresh
   const sortedProds = {}; Object.keys(prods).sort().forEach((k) => (sortedProds[k] = prods[k])); index.products = sortedProds;
   write(file('index.json'), pretty(index));
   writeIfChanged(file('types.json'), pretty({ types }));

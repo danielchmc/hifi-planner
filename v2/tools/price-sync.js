@@ -5,6 +5,9 @@
      --fixture          read the product listing from a file (one JSON product per line) instead of the website
      --details-fixture  read product-page details from a JSON file { SITESKU: {spec, gallery, avail} } instead of the website
      --pages N          product pages to (re)read this run, default 60 (new products first, then the oldest)
+     --mirror <dir>     read the listing and the product pages from the website mirror (tools/mirror.js, run just before)
+                        instead of the website. Falls back to reading the listing itself when the mirror's listing is more
+                        than 2 hours old (the mirror step failed); product pages are then not read this run.
      --dry              report only, write nothing
 
    What it does each run:
@@ -24,7 +27,7 @@ const P = window.HP.ports, S = window.HP.site;
 
 const args = process.argv.slice(2), DIR = args[0] || 'data', DRY = args.includes('--dry');
 const opt = (k) => (args.includes(k) ? args[args.indexOf(k) + 1] : null);
-const FIXTURE = opt('--fixture'), DETAILS_FIXTURE = opt('--details-fixture'), PAGES = +(opt('--pages') || 60);
+const FIXTURE = opt('--fixture'), DETAILS_FIXTURE = opt('--details-fixture'), PAGES = +(opt('--pages') || 60), MIRROR = opt('--mirror');
 const BASE = 'https://www.hifiklubben.dk', MIN_SITE_PRODUCTS = 800; // the listing is ~1,400 products; less means a partial answer
 const TODAY = new Date().toISOString().slice(0, 10);
 const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '');
@@ -107,7 +110,12 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   const products = readData('products.js', 'products', []);
   const details = readData('site-details.js', 'siteDetails', {});
   const ignore = new Set(readData('site-ignore.js', 'siteIgnore', []).map((s) => s.toUpperCase()));
-  const listing = FIXTURE ? readFixture(FIXTURE) : await fetchSite();
+  // the mirror's listing, when the mirror read it in the last 2 hours (normally minutes ago, in the same run)
+  const mIndex = MIRROR ? (() => { try { return JSON.parse(fs.readFileSync(path.join(MIRROR, 'index.json'), 'utf8')); } catch (e) { return null; } })() : null;
+  const mFresh = !!(mIndex && mIndex.listingAt && Date.now() - Date.parse(mIndex.listingAt) < 2 * 3600e3 && fs.existsSync(path.join(MIRROR, 'listing.jsonl')));
+  if (MIRROR && !mFresh) console.log('::warning::The website mirror\'s listing is missing or older than 2 hours: reading the listing from hifiklubben.dk instead.');
+  const listing = FIXTURE ? readFixture(FIXTURE) : mFresh ? readFixture(path.join(MIRROR, 'listing.jsonl')) : await fetchSite();
+  const source = FIXTURE ? 'fixture' : mFresh ? 'mirror' : 'website';
   // outlet units never set prices, never become catalogue products and are not suggested
   const outletSite = listing.filter((s) => s.outlet);
   const site = listing.filter((s) => !s.outlet).map((s) => (s.variants.some((v) => v.outlet) ? Object.assign({}, s, { variants: s.variants.filter((v) => !v.outlet) }) : s)).filter((s) => s.variants.length);
@@ -187,7 +195,17 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   const wanted = products.filter((p) => p.site && bySku.has(p.site.toUpperCase()));
   // oldest read first; products waiting for review, whose page was read before descriptions were parsed (v2), come before everything else
   const stale = (p) => (p.review && !(details[p.site] || {}).v ? 0 : 1);
-  const queue = wanted.slice().sort((a, b) => stale(a) - stale(b) || ((details[a.site] || {}).t || '').localeCompare((details[b.site] || {}).t || '')).slice(0, detailFixture ? wanted.length : PAGES);
+  const queue = MIRROR ? [] : wanted.slice().sort((a, b) => stale(a) - stale(b) || ((details[a.site] || {}).t || '').localeCompare((details[b.site] || {}).t || '')).slice(0, detailFixture ? wanted.length : PAGES);
+  // --mirror: take the page details from the mirror's page files (field hp), for every page the mirror has read since we last took it.
+  // Page files written before hp existed are skipped, so their details stay as they are until the mirror reads the page again.
+  if (MIRROR) for (const p of wanted) {
+    const s = bySku.get(p.site.toUpperCase()), key = String(s.sku).toUpperCase(), e = ((mIndex || {}).products || {})[key], old = details[s.sku];
+    if (!e || !e.page || (old && old.t && old.t > e.page)) continue;
+    let d = null; try { d = JSON.parse(fs.readFileSync(path.join(MIRROR, 'pages', key.replace(/[^A-Z0-9._-]/g, '_') + '.json'), 'utf8')).hp; } catch (err) { /* not read yet */ }
+    if (!d) continue;
+    const nd = { g: d.gallery, spec: d.spec, avail: d.avail, t: e.page, v: 2 };
+    if (JSON.stringify(nd) !== JSON.stringify(old)) { details[s.sku] = nd; R.details++; }
+  }
   for (const p of queue) {
     const s = bySku.get(p.site.toUpperCase());
     try {
@@ -217,7 +235,7 @@ const uuidOf = (u) => { const m = /image\/([0-9a-f-]{36})/.exec(u || ''); return
   const similar = (p) => { const n = norm(p.name.replace(/\(1 unit\)/i, '')); return site.filter((s) => norm(s.brand) === norm(p.brand) && norm(s.model) !== n && norm(s.model).startsWith(n.replace(/(mk)?\d+$|ii+$/, '')) && Math.abs(norm(s.model).length - n.length) <= 5).slice(0, 3).map((s) => s.model + ' [' + s.sku + ']'); };
   const md = ['## HiFi Planner catalogue sync', '',
     `Website products: **${site.length}** · catalogue: **${products.length}** · prices changed: **${R.changed.length}** · on discount: **${R.discounts.length}** · check by hand: **${R.suspicious.length}**`, '',
-    `Added from the website: **${R.added.length}** · discontinued today: **${R.gone.length}** · back again: **${R.back.length}** · product pages read: **${R.details}** (errors ${R.detailErrors}) · Bluetooth/WiFi added: **${R.wireless}** · port suggestions: **${R.suggested}** · other website products (mostly accessories): **${fresh.length}**`, ''];
+    `Listing and pages from: **${source}** · added from the website: **${R.added.length}** · discontinued today: **${R.gone.length}** · back again: **${R.back.length}** · product pages ${MIRROR ? 'taken from the mirror' : 'read'}: **${R.details}** (errors ${R.detailErrors}) · Bluetooth/WiFi added: **${R.wireless}** · port suggestions: **${R.suggested}** · other website products (mostly accessories): **${fresh.length}**`, ''];
   const table = (title, rows) => rows.length && md.push('### ' + title, '', '| Product | Old | New | Matched by | Website product | Note |', '|---|---:|---:|---|---|---|', ...rows.map((r) => `| ${r.name} | ${r.old} | ${r.new} | ${r.how} | ${r.site} | ${r.why || ''} |`), '');
   table('Price changes', R.changed); table('Check by hand (left unchanged)', R.suspicious); table('On discount (Old = price before discount)', R.discounts);
   const list = (title, rows) => rows.length && md.push('### ' + title + ' (' + rows.length + ')', '', rows.map((r) => '- ' + r).join('\n'), '');
