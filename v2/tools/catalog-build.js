@@ -262,7 +262,7 @@ if (fs.existsSync(ownFile)) {
     const id = (o && o.cat && cats.has(o.cat) ? o.cat : '') || (w && w.cat) || catId;
     p.lcats = p.cats; p.cats = id ? chain(id) : []; p.ct = p.cats.map(label).join(' ');
     if (w && w.cat) p.wc = w.cat; // the website's category (the Editor shows it when another is chosen)
-    if (w) { p.kind = w.kind; p.scope = w.scope; p.fx = w.facets; } else if (id === '/tilbehor/pladsholdere/') p.kind = 'standin';
+    if (w) { p.kind = w.kind; p.scope = w.scope; p.fx = w.facets; p.ty = w.type.da; } // ty: the website's product type (Gulvhøjtaler – Aktive), the Katalog's TYPE filter else if (id === '/tilbehor/pladsholdere/') p.kind = 'standin';
     return p;
   };
   const next = generated.map((g, i) => enrich(Object.assign({}, g), g.site ? webBySku.get(U(g.site)) : null, learnt(own[i]), own[i]));

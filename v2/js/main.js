@@ -6,7 +6,7 @@
 
   function keys(e) {
     const tag = e.target.tagName, typing = /INPUT|TEXTAREA|SELECT/.test(tag) || e.target.isContentEditable;
-    if (document.querySelector('.modal-back, .tour, #login, .viewer, #ctxmenu')) return;
+    if (document.querySelector('.modal-back, .tour, #login, .viewer, #ctxmenu') || (HP.katalog && HP.katalog.isOpen())) return;
     const C = HP.canvas, mod = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
     if (mod && k === 'z' && !typing) { e.preventDefault(); return e.shiftKey ? store.redo() : store.undo(); }
     if (mod && k === 'y' && !typing) { e.preventDefault(); return store.redo(); }
@@ -29,6 +29,8 @@
     if (k === '/') { e.preventDefault(); return HP.panels.focusSearch(); }
     if (k === 't') { e.preventDefault(); return C.addText(); }
     if (e.key === 'Enter' && store.selConn) return HP.panels.cablePicker(store.selConn);
+    // Enter anywhere else opens the Katalog (a cable run being drawn is finished by Enter in canvas.js instead)
+    if (e.key === 'Enter' && !(C.tool && C.tool())) { e.preventDefault(); return HP.katalog.open(); }
     const one = store.sel.size === 1 && store.item([...store.sel][0]);
     if (k === 'b' && one) return C.flip(one.id);
     if (k === 'c' && one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); return C.colourMenu(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); }

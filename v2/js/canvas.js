@@ -704,6 +704,19 @@
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
+  // several products at once (from the Katalog): side by side in the middle of the view, five to a row, one step for Undo
+  C.addProducts = (list) => {
+    const d = store.doc, s = cardScale(), ps = list.map((x) => ({ p: cat.get(x.id), v: x.v })).filter((x) => x.p);
+    if (!ps.length) return [];
+    const W = (x) => cardW(x.p) * s, H = (x) => (170 + Math.max((x.p.in || []).length, (x.p.out || []).length) * 17) * s, G = 60 * s, rows = [];
+    for (let i = 0; i < ps.length; i += 5) rows.push(ps.slice(i, i + 5));
+    const rw = rows.map((r) => r.reduce((a, x) => a + W(x), 0) + G * (r.length - 1)), rh = rows.map((r) => Math.max(...r.map(H)));
+    const c = centerWorld(), totH = rh.reduce((a, b) => a + b, 0) + G * (rows.length - 1);
+    let y = c.y - totH / 2; const ids = [];
+    rows.forEach((r, ri) => { let x = c.x - rw[ri] / 2; r.forEach((e) => { const it = { id: HP.uid(), kind: 'product', pid: e.p.id, x: snap(x), y: snap(y), face: 0 }; if (e.v && (e.p.vars || []).some((q) => q.sku === e.v)) it.v = e.v; d.items.push(it); ids.push(it.id); x += W(e) + G; }); y += rh[ri] + G; });
+    store.sel = new Set(ids); store.selConn = null; store.commit();
+    return ids;
+  };
   C.addProductCenter = (pid, vsku) => { if (store.doc.ci) return C.startStamp(pid); const c = centerWorld(), n = store.doc.items.length % 6; return C.addProduct(pid, c.x + n * 20, c.y + n * 20, vsku); };
   const cardAt = (cx, cy) => {
     const hit = document.elementFromPoint(cx, cy), el = hit && hit.closest('.item.k-product');

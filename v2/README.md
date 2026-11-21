@@ -141,10 +141,22 @@ Product pages are read in batches (60 per run, new products first), so all pages
 
 ## Product search (sidebar)
 
-- **Scrolling.** The list builds 30 products at first and adds the next 30 when you scroll near its end, so only thumbnails in reach are loaded. The count shows how many are on screen (*Viser 60 af 1057 produkter*). Changing the search or a filter starts again from the top.
-- **Categories.** The top row of chips is the main groups (Amplifiers, Speakers, Sources, TV, Accessories) with the number of matching products. Picking a group opens a second row with its sub-categories (Floorstanding, Subwoofers, …), also with counts. Click a chip again to turn it off. Counts follow the search and the other filters; a chip with nothing to show is greyed out.
-- **Quick filters.** Sale, Bluetooth and WiFi can be combined with everything else. Brand and sort order (best match, price up/down, name, brand) are dropdowns.
-- **Colours.** If the search points at one colour, by part of its SKU (`raclarity66b`, `66bk`) or its colour name (`clarity sort`, `black`), the row shows that colour's picture, name, SKU and price, and adding it gives the card that colour. A search that fits every colour alike (`raclarity66`) shows the product normally. Code: `HP.matchVariant` in `js/core.js`, `buildSidebar()` in `js/panels.js`, Danish chip names in `HP.catLabel`.
+The sidebar is for finding a product quickly and dragging it onto the canvas; browsing with filters is in the Katalog (below).
+
+- **Search** finds name, brand, SKU, colour and port. **Enter** in the search box opens the Katalog with the same search, and the **Katalog** button in the search box opens it too.
+- **One row of filters:** section (Alle sektioner, Højtaler, HiFi, …, Systemer) and, once a section is chosen, its categories (or a system's types), with the number of matches in each option. Sort is in the line above the list ("Viser 30 af 220 · Bedste match").
+- **Scrolling.** The list builds 30 products at first and adds the next 30 when you scroll near its end, so only thumbnails in reach are loaded. Changing the search or a filter starts again from the top.
+- **Colours.** If the search points at one colour, by part of its SKU (`raclarity66b`, `66bk`) or its colour name (`clarity sort`, `black`), the row shows that colour's picture, name, SKU and price, and adding it gives the card that colour. Code: `HP.matchVariant` in `js/core.js`, `buildSidebar()` in `js/panels.js`.
+
+## Katalog (full-screen product browser)
+
+A large dialog over the canvas (the drawing stays visible, dimmed, behind it; a click outside closes it), laid out like hifiklubben.dk so staff know where things are, drawn in HiFi Planner's own style, light and dark (`js/katalog.js`, the "v4.3" CSS section). Product photos keep a light background in dark mode, as they are shot on white.
+
+- **Open:** Enter anywhere on the canvas (a selected wire still opens the cable picker with Enter, and Enter still finishes a cable run being drawn), Enter in the sidebar search (that search, across all sections, like the website's search page), or the Katalog button. **Esc** clears the selection, then closes. Filters are kept while the page is open, so the seller can go back and forth with a customer.
+- **Top:** title, search, sort, close. **Menu:** the website's sections in its order (HI-FI, HØJTALER, PLADESPILLER, HØRETELEFONER, SURROUND, TV, SYSTEMER, KABLER, TILBEHØR) with counts, and TILBUD in red (only discounted products, in any section). Under a section its categories as round pictures (each the category's first product picture).
+- **Left column**, collapsible groups as on the website, each option with the number it would give: **Type** (the website's product type, `ty` on the product, written by `tools/catalog-build.js`, e.g. *Gulvhøjtaler – Aktive*, *Passiv subwoofer*; products the website does not list use their category), **Pris** (from/to), **Vis kun** (Tilbud, Bluetooth, WiFi), **Tilslutninger** (from the ports: phono input, HDMI ARC/eARC, HDMI/optical/coaxial/analogue input, USB-DAC, XLR, sub out, pre-out, speaker and headphone outputs) and **Mærke** (top 10, "Vis alle"). The active filters show as pills above the grid ("Nulstil" clears them). On narrow screens the column opens with **Filtre**.
+- **Tiles** as on the website: picture on grey, SPAR x % (systems: SPAR x kr. against the parts one by one), colour pictures (click one to pick that colour, before or after selecting the tile; the colour is kept while the page is open), name, type, price in red with FØR when discounted. Discontinued products are not shown. Website products without ports say so.
+- **Adding:** click a tile (or its Vælg box) to select it; the bar at the bottom shows how many and the total, and **Tilføj til lærredet** (or Enter) adds them side by side in the middle of the view, five to a row, as one step for Undo (`C.addProducts` in `js/canvas.js`). A double-click adds one tile at once. Systems are added wired, as from the sidebar.
 
 ## Systems (the website's bundles)
 

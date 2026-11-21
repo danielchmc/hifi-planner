@@ -63,11 +63,16 @@
     let tab = LS.get('tab', 'products'), group = '', sub = '', shown = 0, rows = [], hits = [];
     const flags = { sale: false, bt: false, wifi: false };
     const PER = 30; // rows built per step: more are added as the list scrolls near its end, so only rows (and thumbnails) in reach load
-    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { filter(); } });
+    const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { filter(); },
+      onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); HP.katalog.open(search.value); } } }); // Enter: the same search in the Katalog
+    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Enter)', 'Åbn Katalog (Enter)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
     const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
     const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
       [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
-    const chips = h('.chips.groups'), subChips = h('.chips.subs'), flagChips = h('.chips.flags');
+    // one compact row: section, its types/categories, sort. The brand filter and the Sale/Bluetooth/WiFi toggles live in the Katalog,
+    // which has room for them; the sidebar is for finding a product quickly and dragging it onto the canvas.
+    const grpSel = h('select.grp', { title: t('Section', 'Sektion'), onchange: () => { group = grpSel.value; sub = ''; filter(); } });
+    const subSel = h('select.sub', { title: t('Type', 'Type'), onchange: () => { sub = subSel.value; filter(); } });
     const count = h('span.count');
     const list = h('.plist#sb-list');
     const more = h('.more'); // sentinel at the end of the list: when it scrolls into view the next rows are added
@@ -75,8 +80,9 @@
     const tabs = h('.tabs', null,
       h('button', { data: { tab: 'products' }, onclick: () => setTab('products') }, t('Products', 'Produkter')),
       h('button#tab-shortcuts', { data: { tab: 'shortcuts' }, onclick: () => setTab('shortcuts') }, icon('bolt', 14), t('Shortcuts', 'Genveje')));
-    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search), chips, subChips, flagChips, h('.selrow', null, brandSel, sortSel)),
-      h('.listhead', null, count, h('span.hint.hint-mouse', null, t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik')), h('span.hint.hint-touch', null, t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække'))), list);
+    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search, katBtn), h('.selrow.slim', null, grpSel, subSel)),
+      h('.listhead', null, count, sortSel), list);
+    list.title = matchMedia('(pointer: coarse)').matches ? t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække') : t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik');
     const scPane = h('.pane', null, scList);
     const el = h('aside#sidebar', null, h('button.icon-btn.drawer-x', { title: t('Close', 'Luk'), onclick: () => Pn.drawer(false) }, icon('x')), tabs, prodPane, scPane);
 
@@ -92,30 +98,24 @@
     const onSale = (p) => p.was > p.price || (p.vars || []).some((v) => v.was > v.price);
     // chips show how many products each choice would give with the other filters as they are
     function drawChips(base, sysBase) {
-      chips.textContent = ''; subChips.textContent = ''; flagChips.textContent = '';
-      const chip = (on, label, n, fn) => h('button' + (on ? '.on' : ''), { onclick: fn, disabled: !on && !n }, label, h('span.n', null, n));
-      chips.append(chip(!group, t('All', 'Alle'), base.length, () => { group = ''; sub = ''; filter(); }));
-      HP.CAT_TREE.forEach(([g]) => chips.append(chip(group === g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, () => { group = group === g ? '' : g; sub = ''; filter(); })));
+      const opt = (v, label, n, on) => h('option', { value: v, disabled: !on && !n }, label + (n != null ? '  (' + n + ')' : ''));
+      grpSel.textContent = ''; subSel.textContent = '';
+      grpSel.append(opt('', t('All sections', 'Alle sektioner'), base.length, !group));
+      HP.CAT_TREE.forEach(([g]) => grpSel.append(opt(g, HP.catLabel(g), base.filter((p) => inGroup(p, g)).length, group === g)));
       // hifiklubben.dk's bundles: dropped as a whole system, wired
-      if (sysBase) chips.append(chip(group === SYS, t('Systems', 'Systemer'), sysBase.length, () => { group = group === SYS ? '' : SYS; sub = ''; filter(); }));
+      if (sysBase) grpSel.append(opt(SYS, t('Systems', 'Systemer'), sysBase.length, group === SYS));
+      grpSel.value = group;
       if (group === SYS) {
+        subSel.append(opt('', t('All types', 'Alle typer'), sysBase.length, true));
         [...new Set(sysBase.map((b) => b.type))].sort((a, b) => sysBase.filter((x) => x.type === b).length - sysBase.filter((x) => x.type === a).length)
-          .forEach((ty) => subChips.append(chip(sub === ty, ty, sysBase.filter((b) => b.type === ty).length, () => { sub = sub === ty ? '' : ty; filter(); })));
-        subChips.hidden = false;
-        const sb = sysBase.filter((b) => !sub || b.type === sub);
-        flagChips.append(chip(flags.sale, t('Sale', 'Tilbud'), sb.filter((b) => b.was > b.price).length, () => { flags.sale = !flags.sale; filter(); }));
-        return;
-      }
-      if (group) {
+          .forEach((ty) => subSel.append(opt(ty, ty, sysBase.filter((b) => b.type === ty).length, sub === ty)));
+      } else if (group) {
         const inG = base.filter((p) => inGroup(p, group));
-        groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subChips.append(chip(sub === c, HP.catLabel(c), n, () => { sub = sub === c ? '' : c; filter(); })); });
+        subSel.append(opt('', t('All categories', 'Alle kategorier'), inG.length, true));
+        groupOf(group).forEach((c) => { const n = inG.filter((p) => (p.cats || []).includes(c)).length; if (n || sub === c) subSel.append(opt(c, HP.catLabel(c), n, sub === c)); });
       }
-      subChips.hidden = !group;
-      const sb = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)));
-      [['sale', t('Sale', 'Tilbud'), onSale], ['bt', 'Bluetooth', (p) => p.bt], ['wifi', 'WiFi', (p) => p.wifi]].forEach(([k, label, fn]) => {
-        const others = sb.filter((p) => Object.keys(flags).every((f) => f === k || !flags[f] || flagFn[f](p)));
-        flagChips.append(chip(flags[k], label, others.filter(fn).length, () => { flags[k] = !flags[k]; filter(); }));
-      });
+      subSel.value = sub;
+      subSel.hidden = !group;
     }
     const flagFn = { sale: onSale, bt: (p) => p.bt, wifi: (p) => p.wifi };
     const arm = () => { const s = C().stamp && C().stamp(); rows.forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };

@@ -576,3 +576,126 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 .sys-tag { margin-left: auto; font: 600 8.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 1px 5px; border: 1px solid currentColor; color: var(--muted); white-space: nowrap; }
 .prices .systag { font: 600 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 0 4px; margin-right: 5px; border: 1px solid currentColor; vertical-align: 1px; }
 .prices .sysparts { font-size: 10px; color: var(--muted); margin-top: 1px; line-height: 1.3; }
+
+/* v4.2: slim sidebar filters: section and type in one row, sort in the list header (the Katalog has the rest) */
+.selrow.slim { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px; }
+.selrow.slim select { width: 100%; min-width: 0; }
+.selrow.slim select.grp:has(+ select.sub[hidden]) { grid-column: 1 / 3; }
+.listhead select { margin-left: auto; height: 22px; border: 0; background: transparent; font: inherit; color: var(--muted); text-transform: none; padding: 0 2px; cursor: pointer; max-width: 55%; }
+.listhead select:hover { color: var(--fg); }
+.listhead { align-items: center; }
+
+/* v4.3: Katalog: a large dialog in HiFi Planner's style, laid out like hifiklubben.dk (menu row, round category pictures,
+   filters on the left, a grid of tiles). The canvas stays visible, dimmed, behind it. */
+.kat-back { position: fixed; inset: 0; z-index: 4000; background: rgba(12, 12, 14, .5); display: grid; place-items: center; padding: 36px 48px; }
+.kat-win { width: min(1320px, 100%); height: calc(100vh - 72px); background: var(--panel); border: 1px solid var(--fg); box-shadow: 10px 10px 0 rgba(0, 0, 0, .25);
+  display: flex; flex-direction: column; min-height: 0; animation: kat-in .14s ease-out; }
+@keyframes kat-in { from { opacity: 0; transform: translateY(8px); } }
+.kat-top { display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 8px 0 16px; border-bottom: 1px solid var(--fg); flex: none; }
+.kat-title { display: flex; align-items: center; gap: 8px; margin: 0 6px 0 0; font: 600 16px var(--display); }
+.kat-search { flex: 1; display: flex; align-items: center; gap: 8px; height: 34px; padding: 0 10px; border: 1px solid var(--line); background: var(--panel2); color: var(--muted); max-width: 720px; }
+.kat-search:focus-within { border-color: var(--fg); color: var(--fg); }
+.kat-search input { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; font: 14px var(--ui); color: var(--fg); padding: 0; height: 100%; }
+.kat-sort { margin-left: auto; height: 34px; font-size: 13px; }
+.kat-menu { display: flex; align-items: stretch; padding: 0 10px; border-bottom: 1px solid var(--line); flex: none; overflow-x: auto; scrollbar-width: none; }
+.kat-menu button { display: flex; align-items: baseline; gap: 5px; padding: 11px 9px 9px; border: 0; border-bottom: 2px solid transparent; background: none; white-space: nowrap;
+  font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.kat-menu button .n { font: 10px var(--mono); color: var(--muted); opacity: .8; }
+.kat-menu button:hover { color: var(--fg); }
+.kat-menu button.on { color: var(--fg); border-bottom-color: var(--accent); }
+.kat-menu .sp { flex: 1; }
+.kat-menu button.sale { align-self: center; padding: 4px 8px; border: 1px solid var(--accent); color: var(--accent); margin-left: 8px; }
+.kat-menu button.sale.on { background: var(--accent); color: var(--accent-fg); }
+.kat-cats { display: flex; gap: 6px; padding: 10px 14px 8px; overflow-x: auto; border-bottom: 1px solid var(--line); flex: none; scrollbar-width: thin; }
+.kat-cat { width: 92px; flex: none; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 4px 2px; border: 0; background: none; font: 11.5px/1.25 var(--ui); text-align: center; white-space: normal; }
+.kat-cat .pic { width: 62px; height: 62px; border-radius: 50%; background: var(--panel2); border: 1px solid var(--line); display: grid; place-items: center; overflow: hidden; }
+.kat-cat .pic img { width: 74%; height: 74%; object-fit: contain; mix-blend-mode: multiply; }
+/* product photos are on white: in dark mode they keep a light photo background, so the white blends away as in light mode */
+html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[data-theme="dark"] .kat-sw .sw { background: #e8e8e4; border-color: #3a3c42; }
+.kat-cat .klbl { display: block; max-width: 88px; overflow-wrap: anywhere; }
+.kat-cat .n { font: 10px var(--mono); color: var(--muted); }
+.kat-cat:hover .pic { border-color: var(--fg); }
+.kat-cat.on .pic { border: 2px solid var(--accent); }
+.kat-cat.on .klbl { font-weight: 600; }
+.kat-cat:disabled { opacity: .35; cursor: default; }
+.kat-body { flex: 1; min-height: 0; display: grid; grid-template-columns: 232px minmax(0, 1fr); }
+.kat-side { overflow-y: auto; padding: 4px 16px 30px; border-right: 1px solid var(--line); }
+.kat-group { border-bottom: 1px solid var(--line); }
+.kat-gh { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 12px 0 10px; border: 0; background: none;
+  font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--fg); }
+.kat-gh .ic { width: 14px; height: 14px; color: var(--muted); }
+.kat-list { display: flex; flex-direction: column; padding-bottom: 10px; }
+.kat-check { display: grid; grid-template-columns: 16px minmax(0, 1fr) auto; align-items: center; gap: 9px; padding: 4px 0; font-size: 13px; cursor: pointer; line-height: 1.25; }
+.kat-check:hover .l { text-decoration: underline; }
+.kat-check input, .kat-pick input { position: absolute; opacity: 0; pointer-events: none; }
+.kat-check .box, .kat-pick .box { width: 15px; height: 15px; border: 1px solid var(--fg); background: var(--panel); display: grid; place-items: center; }
+.kat-check.on .box, .kat-pick input:checked + .box { background: var(--fg); }
+.kat-check.on .box::after, .kat-pick input:checked + .box::after { content: ''; width: 4px; height: 8px; border: solid var(--panel); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg) translate(-1px, -1px); }
+.kat-check .n { font: 10.5px var(--mono); color: var(--muted); }
+.kat-check.off { color: var(--muted); opacity: .55; cursor: default; }
+.kat-check.off .box { border-color: var(--line); }
+.kat-morelink { border: 0; background: none; padding: 4px 0; text-align: left; font: 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline; color: var(--muted); }
+.kat-price { display: flex; align-items: center; gap: 6px; padding-bottom: 12px; }
+.kat-price input { width: 72px; height: 30px; border: 1px solid var(--line); background: var(--panel); padding: 0 6px; font: 12px var(--mono); }
+.kat-price input:focus { border-color: var(--fg); outline: none; }
+.kat-price .unit { font: 11px var(--mono); color: var(--muted); }
+.kat-main { overflow-y: auto; padding: 12px 18px 30px; }
+.kat-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 12px; min-height: 26px; }
+.kat-count { font: 11px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-right: 6px; }
+.kat-pill { display: inline-flex; align-items: center; gap: 5px; height: 24px; padding: 0 7px; border: 1px solid var(--fg); background: var(--panel); font-size: 12px; }
+.kat-pill .ic { width: 11px; height: 11px; }
+.kat-pill:hover { background: var(--fg); color: var(--panel); }
+.kat-reset, .kat-filters { border: 0; background: none; font: 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; text-decoration: underline; color: var(--muted); }
+.kat-filters { display: none; }
+.kat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); gap: 18px 14px; }
+.kat-tile { position: relative; display: flex; flex-direction: column; gap: 2px; cursor: pointer; outline: none; min-width: 0; }
+.kat-pic { position: relative; aspect-ratio: 1; background: var(--panel2); border: 1px solid var(--line); display: grid; place-items: center; overflow: hidden; margin-bottom: 6px; }
+.kat-pic img { max-width: 80%; max-height: 80%; width: auto; height: auto; object-fit: contain; mix-blend-mode: multiply; transition: transform .2s; }
+.kat-tile:hover .kat-pic { border-color: var(--fg); }
+.kat-tile:hover .kat-pic img { transform: scale(1.04); }
+.kat-tile.sel .kat-pic { border: 2px solid var(--accent); }
+.kat-tile:focus-visible .kat-pic { outline: 2px solid var(--fg); outline-offset: 2px; }
+.kat-tile.pop .kat-pic { transform: scale(.98); transition: transform .12s; }
+.kat-save { position: absolute; top: 8px; left: 8px; background: var(--accent); color: var(--accent-fg); font: 600 10.5px var(--mono); text-transform: uppercase; letter-spacing: .04em; padding: 2px 6px; }
+.noimg { color: var(--muted); opacity: .5; }
+.kat-sw { display: flex; gap: 4px; align-items: center; margin-bottom: 4px; }
+.kat-sw .sw { width: 30px; height: 30px; padding: 2px; border: 1px solid var(--line); background: var(--panel2); display: grid; place-items: center; overflow: hidden; }
+.kat-sw .sw img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; mix-blend-mode: multiply; }
+.kat-sw .sw i { width: 100%; height: 100%; display: block; }
+.kat-sw .sw:hover { border-color: var(--fg); }
+.kat-sw .sw.on { border: 1.5px solid var(--fg); }
+.kat-sw .more { font: 10px var(--mono); color: var(--muted); }
+.kat-brand { font: 10.5px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.kat-name { font: 600 14.5px/1.2 var(--display); }
+.kat-type { font-size: 12px; color: var(--muted); }
+.kat-price-l { display: flex; align-items: baseline; gap: 8px; margin-top: 4px; }
+.kat-price-l b { font: 600 15px var(--display); }
+.kat-price-l b.red { color: var(--accent); }
+.kat-price-l s { font: 12px var(--ui); color: var(--muted); }
+.kat-parts { font-size: 11.5px; color: var(--muted); line-height: 1.35; }
+.kat-tags { display: flex; gap: 4px; flex-wrap: wrap; min-height: 4px; }
+.kat-tags span { font: 9.5px var(--mono); text-transform: uppercase; letter-spacing: .04em; border: 1px solid var(--line); color: var(--muted); padding: 0 4px; }
+.kat-tags .warn { color: var(--warn); border-color: var(--warn); }
+.kat-pick { display: inline-flex; align-items: center; gap: 7px; margin-top: 5px; font: 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); cursor: pointer; width: max-content; position: relative; }
+.kat-tile.sel .kat-pick { color: var(--fg); }
+.kat-more { height: 1px; }
+.kat-empty { grid-column: 1 / -1; padding: 50px 0; text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.kat-empty button { border: 0; background: none; text-decoration: underline; color: var(--fg); }
+.kat-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid var(--fg); background: var(--panel); flex: none; }
+.kat-sel { font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+.kat-hint { font-size: 12px; color: var(--muted); }
+.kat-clear { margin-left: auto; }
+.kat-add kbd { background: transparent; color: inherit; border-color: currentColor; margin: 0 0 0 4px; opacity: .8; }
+@media (max-width: 1000px) {
+  .kat-back { padding: 10px; } .kat-win { height: calc(100vh - 20px); box-shadow: none; }
+  .kat-sort, .kat-hint { display: none; } .kat-title { font-size: 0; gap: 0; } .kat-title .ic { width: 18px; height: 18px; }
+  .kat-body { grid-template-columns: minmax(0, 1fr); position: relative; } .kat-side { display: none; }
+  .kat-back.show-side .kat-side { display: block; position: absolute; inset: 0 auto 0 0; width: min(300px, 86%); background: var(--panel); z-index: 2; border-right: 1px solid var(--fg); box-shadow: 8px 0 0 rgba(0, 0, 0, .12); }
+  .kat-filters { display: inline; } .kat-main { padding: 10px 12px 24px; }
+  .kat-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px 10px; }
+}
+@media (max-width: 700px) { .kat-back { padding: 0; } .kat-win { height: 100vh; border: 0; } .kat-search { height: 36px; } }
+@media (max-width: 420px) { .kat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* the sidebar's Katalog button, inside the search box */
+.searchbox .kat-open { display: flex; align-items: center; gap: 5px; height: 24px; padding: 0 8px; margin-right: -4px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+.searchbox .kat-open:hover { border-color: var(--fg); }

@@ -78,6 +78,7 @@
 
   const ICONS = {
     search: '<circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/>',
+    'chevron-down': '<path d="M6 9l6 6 6-6"/>', 'chevron-up': '<path d="M6 15l6-6 6 6"/>', grid: '<rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/>',
     plus: '<path d="M12 5v14M5 12h14"/>', minus: '<path d="M5 12h14"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>',
     undo: '<path d="M9 7L4 12l5 5"/><path d="M4 12h10a5 5 0 0 1 5 5v1"/>',
     redo: '<path d="M15 7l5 5-5 5"/><path d="M20 12H10a5 5 0 0 0-5 5v1"/>',
