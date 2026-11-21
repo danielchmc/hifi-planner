@@ -27,13 +27,13 @@
    "cats": {
     "TV > Soundbar højtaler / TV-lyd": 39
    },
-   "count": 40,
-   "bundles": 39,
+   "count": 41,
+   "bundles": 40,
    "outlet": 0,
    "products": 1,
    "inCatalogue": 0,
    "variantAxes": {
-    "none": 39,
+    "none": 40,
     "colorOptions": 1
    },
    "mapped": null,
@@ -1657,27 +1657,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Mini-LED TV",
-   "keys": {
-    "MiniLED": 5
-   },
-   "cats": {
-    "TV > TV": 5
-   },
-   "count": 5,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 4,
-   "inCatalogue": 4,
-   "variantAxes": {
-    "sizeSelector": 5
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
-  },
-  {
    "type": "Opgradering",
    "keys": {
     "Upgrade": 4
@@ -1923,6 +1902,27 @@
    },
    "mapped": null,
    "hifiPlanner": []
+  },
+  {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 4
+   },
+   "cats": {
+    "TV > TV": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "sizeSelector": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
   },
   {
    "type": "Multirumsforstærker",

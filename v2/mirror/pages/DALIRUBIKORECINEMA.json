@@ -13,6 +13,18 @@
    "url": "/hojtalere/centerhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "53864656-74dc-44d1-a145-35ce897c0561",
+   "95e233c2-abcb-4a53-9405-4f2415029f0b",
+   "30172d5c-6128-42f2-a39e-9b0e6ea9a772",
+   "c64ac5c7-6b1c-470a-ba67-c0262a6ea536",
+   "bdcacb84-7bf3-4915-9224-d0e666088b85",
+   "fe1bfd79-8283-4d37-a10b-a0d3ab53e7cf"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 232247,
   "skuCode": "DALIRUBIKORECINEMA",
@@ -206,11 +218,12 @@
      "productCode": "DALIRUBIKORECINEHGBK"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "availableQuantity": 3,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -309,7 +322,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -459,27 +472,27 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIRUBIKORECINEMA leverer en varm, klar og immersiv gengivelse fra centerkanalen og integrerer sig fremragende med Rubikore 2-højttalere. Lyden er stor, velafbalanceret og slagkraftig, mens bassen følger godt med, og det kompakte design sparer plads. Én anmeldelse oplever lyden som lidt dæmpet og krævende med hensyn til effekt, men den samlede vurdering er meget begejstret.",
+   "summary": "DALIRUBIKORECINEMA leverer en stor, klar og velintegreret gengivelse fra centerkanalen med kraftfuld bas og en varm, homogen karakter. Højttaleren passer naturligt ind i flerkanalssystemer og fungerer særligt godt sammen med DALI Rubikore 2. Den samlede modtagelse er meget begejstret, selv om én anmeldelse beskriver lyden som noget dump og krævende med hensyn til effekt.",
    "headlines": {
-    "large, clear and balanced sound": {
-     "sentimentAnalysis": "Centerhøjttaleren roses for klarere gengivelse, en stærk basgengivelse og en stor, naturlig helhedslyd.",
+    "seamless multichannel integration": {
+     "sentimentAnalysis": "Centerhøjttaleren opleves som meget homogen med matchende DALI-højttalere og effektiv som del af et komplet flerkanalssetup.",
+     "simpleTitle": "Problemfri integration i flerkanalssystemer",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "d77f224c-2e99-47c7-91f2-cc732cd0bf3c"
+    },
+    "large, clear and well-balanced sound": {
+     "sentimentAnalysis": "Anmeldelserne roser højttaleren for en klarere, storladen og korrekt lydgengivelse med samtidig kraftfuld bas.",
      "simpleTitle": "Stor, klar og velafbalanceret lyd",
      "bias": "positive",
-     "key": "large-clear-balanced-sound",
-     "groupId": "de1ec1ec-b735-4c92-8382-fafe70239ddb"
-    },
-    "excellent system integration": {
-     "sentimentAnalysis": "Højttaleren opleves som meget sammenhængende i et komplet system med sømløs integration og overbevisende flerkanalslyd.",
-     "simpleTitle": "Fremragende systemintegration",
-     "bias": "positive",
-     "key": "system-integration",
-     "groupId": "de1ec1ec-b735-4c92-8382-fafe70239ddb"
+     "key": "sound-quality",
+     "groupId": "d77f224c-2e99-47c7-91f2-cc732cd0bf3c"
     }
    },
    "grouping": {
-    "de1ec1ec-b735-4c92-8382-fafe70239ddb": {
+    "d77f224c-2e99-47c7-91f2-cc732cd0bf3c": {
      "title": "Lydkvalitet",
-     "id": "de1ec1ec-b735-4c92-8382-fafe70239ddb",
+     "id": "d77f224c-2e99-47c7-91f2-cc732cd0bf3c",
      "references": [
       "9b2e951d-f6ab-43f3-8446-976baf276aec",
       "609d653c-0b04-46d1-b9d3-3a40385521d6",

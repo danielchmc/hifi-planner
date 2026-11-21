@@ -13,6 +13,22 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth type": "5",
+   "Bluetooth teknologi": "aptX, AAC, SBC",
+   "Trådløs opladning": "Nej"
+  },
+  "gallery": [
+   "2edbe42b-0ff5-4f02-8ef7-f83dbaf71eae",
+   "5691391c-73c4-44e9-a950-eaf9ce499198",
+   "e3282f2c-9125-4510-b647-66bd749225d0",
+   "87e526de-c2fc-409e-bd0c-d616b6f16483",
+   "b8fc56a0-f608-466b-a663-1105183ad009",
+   "91baa529-2598-41df-be8b-54bc025a9a46"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212421,
   "skuCode": "DENAHC10PL",
@@ -454,60 +470,59 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon PerL-øretelefonerne roses bredt for varm, detaljeret og omsluttende lyd, især efter den personlige høretilpasning, med fyldig bas og et rummeligt lydbillede. De sidder behageligt og sikkert for mange, også under træning, men den store konstruktion og pasformen med ørepropperne giver problemer for nogle. Støjreduktionen er generelt effektiv, mens samtalekvalitet, touch-betjening og enkelte pasformproblemer vurderes mere blandet.",
+   "summary": "Denon PerL leverer en varm, detaljeret og slagkraftig lyd, der bliver særligt medrivende efter den individuelle høretilpasning. Den komfortable og sikre pasform fungerer fremragende for mange, også under træning, men det store design og valget af ørepropper gør pasformen vanskelig for andre. Den aktive støjreduktion er generelt effektiv, mens samtalekvalitet, touchbetjening og lejlighedsvise pasformsproblemer er de største forbehold.",
    "headlines": {
-    "large design and ear-tip fit can be problematic": {
-     "sentimentAnalysis": "De større huse og vanskeligheden ved at finde en sikker, behagelig tætning giver hos nogle problemer med at falde ud eller ubehag.",
-     "simpleTitle": "Stor konstruktion og ørepropper kan give problemer",
-     "bias": "negative",
-     "key": "fit",
-     "groupId": "6be8b738-0332-4aa4-8ad0-4dbf2df4eeda"
-    },
-    "warm, detailed sound with powerful bass": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som fyldig, klar, rummelig og basstærk.",
-     "simpleTitle": "Varm, detaljeret lyd med kraftig bas",
+    "rich, detailed and powerful sound": {
+     "sentimentAnalysis": "Lyden roses bredt for at være klar, fyldig, basrig og medrivende.",
+     "simpleTitle": "Fyldig, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "290398a2-ae36-419a-b06e-a34a4c2d5239"
+     "groupId": "970b3b37-2a56-4498-850b-93c6160f4273"
+    },
+    "secure and comfortable for many users": {
+     "sentimentAnalysis": "Mange oplever en komfortabel og stabil pasform, der bliver siddende under gang, løb og anden træning.",
+     "simpleTitle": "Komfortabel og sikker for mange",
+     "bias": "positive",
+     "key": "fit",
+     "groupId": "7a64a837-51d0-4410-9df9-066e3da72ef7"
     },
     "personal calibration transforms the listening experience": {
-     "sentimentAnalysis": "Den hørebaserede personlige tilpasning opleves som en stor forbedring, der gør lyden mere levende og omsluttende.",
+     "sentimentAnalysis": "Høreprofilen og tilpasningen beskrives gentagne gange som en stor forbedring med mere klarhed, dybde og en mere medrivende gengivelse.",
      "simpleTitle": "Personlig tilpasning forvandler lytteoplevelsen",
      "bias": "positive",
      "key": "personalization",
-     "groupId": "98e1f603-ba96-4945-b854-34a29df6086a"
+     "groupId": "98c80b70-7fe0-41df-b73c-2e795cf7e57d"
     },
-    "secure fit works well for exercise": {
-     "sentimentAnalysis": "Flere beskriver en behagelig og stabil pasform under løb eller anden aktivitet.",
-     "simpleTitle": "Sikkert fit fungerer godt under træning",
-     "bias": "positive",
+    "the large design and fit can be troublesome": {
+     "sentimentAnalysis": "Flere brugere finder øretelefonerne klodsede eller svære at få til at sidde fast, og nogle oplever, at en øretelefon falder ud trods forskellige propper.",
+     "simpleTitle": "Det store design og pasformen kan give problemer",
+     "bias": "negative",
      "key": "fit",
-     "groupId": "6be8b738-0332-4aa4-8ad0-4dbf2df4eeda"
+     "groupId": "7a64a837-51d0-4410-9df9-066e3da72ef7"
     },
-    "noise cancellation blocks most surrounding sound": {
-     "sentimentAnalysis": "Den aktive støjreduktion vurderes ofte som stærk og effektiv i hverdagsmiljøer.",
-     "simpleTitle": "Støjreduktionen lukker de fleste omgivelseslyde ude",
+    "noise cancellation is effective in many environments": {
+     "sentimentAnalysis": "Støjreduktionen roses for at lukke meget omgivelseslyd ude, mens social mode giver nyttig opmærksomhed på omgivelserne ved behov.",
+     "simpleTitle": "Støjreduktionen virker effektivt i mange miljøer",
      "bias": "positive",
      "key": "anc",
-     "groupId": "4d86adf9-b72c-4854-8cbb-acc5efa1b8ee"
+     "groupId": "fb8e830b-7e06-418e-abe8-45b54487b4a3"
     },
     "noise cancellation can struggle with loud sounds": {
-     "sentimentAnalysis": "Nogle oplever ANC'en som for svag, knitrende eller mindre effektiv mod kraftig støj udefra.",
+     "sentimentAnalysis": "Kritikken fokuserer på svagere isolering end forventet samt hørbare forstyrrelser og skarpe eller knitrende artefakter ved høje omgivelseslyde.",
      "simpleTitle": "Støjreduktionen kan have svært ved høje lyde",
      "bias": "negative",
      "key": "anc",
-     "groupId": "4d86adf9-b72c-4854-8cbb-acc5efa1b8ee"
+     "groupId": "fb8e830b-7e06-418e-abe8-45b54487b4a3"
     }
    },
    "grouping": {
-    "290398a2-ae36-419a-b06e-a34a4c2d5239": {
+    "970b3b37-2a56-4498-850b-93c6160f4273": {
      "title": "Lydkvalitet",
-     "id": "290398a2-ae36-419a-b06e-a34a4c2d5239",
+     "id": "970b3b37-2a56-4498-850b-93c6160f4273",
      "references": [
       "06430bd3-4c48-443f-983e-d6b3eec8ec6d",
       "7147f7a9-729f-4fdb-b3ea-99b2c9d78dc6",
       "bf27fb70-c216-4f7e-ba17-e8a222f2ad0b",
-      "364afc3e-f877-4d95-8bf5-430607580de8",
       "ff4b8c6c-27d8-4ead-aecb-92a147c36b07",
       "1c4edc4f-bb73-43a1-8bb4-e9bf82444558",
       "c105aee1-0bc7-415a-802d-d769948dcf77",
@@ -542,9 +557,9 @@
       "6d366527-ab91-4327-9e31-e2361c58423c",
       "a30117a0-0f20-424a-b0db-26b3bf103007",
       "8dc44a92-5d05-4d4d-9095-7ef89aa61ac0",
-      "7a85c23e-f4b1-4fb0-b7b7-49cf530ed4a0",
       "de6da8d9-bc4d-478b-982e-f1215ebb16fb",
       "e508c009-5b3f-478d-88e1-6063a236d15b",
+      "bdf94419-ba61-4d41-ef8441-da9d22547bdb",
       "2aca5869-dba9-4245-a1a4-327ba2e61aa7",
       "5ef71591-f122-41e3-a7ae-588abad76db6",
       "8e2b268c-4816-4012-976d-c28eb141d73a",
@@ -554,7 +569,6 @@
       "728ec842-618a-4ef8-a4b5-90e8f80423ff",
       "e091daf5-db20-47d4-a411-4034a2123561",
       "c86a08d8-dd1a-4529-b315-064214695846",
-      "b8983d29-0d99-4bc6-8dab-644f8f0f44e3",
       "438d462d-2e91-43f7-9551-aabeb563e113",
       "0ee2a842-4e5c-4446-af41-56a619f49db4",
       "a0f1b727-cf56-4161-a078-c7ad1cbcae5f",
@@ -565,15 +579,16 @@
       "19339bd8-fd80-40ca-83a3-5cedca0d9db2"
      ]
     },
-    "6be8b738-0332-4aa4-8ad0-4dbf2df4eeda": {
+    "7a64a837-51d0-4410-9df9-066e3da72ef7": {
      "title": "Pasform og komfort",
-     "id": "6be8b738-0332-4aa4-8ad0-4dbf2df4eeda",
+     "id": "7a64a837-51d0-4410-9df9-066e3da72ef7",
      "references": [
-      "bf27fb70-c216-4f7e-ba17-e8a222f2ad0b",
+      "364afc3e-f877-4d95-8bf5-430607580de8",
       "b4378ad1-ccce-4706-9074-58a53e511f1f",
       "ba78a603-6365-48cb-9c05-4756d5da4a2e",
       "6c448019-213e-47d5-88d8-629553618171",
-      "cc591e58-6a8f-43d0-aace-51e9a2b965d7",
+      "008cef6f-90d6-4638-bcef-0e3760460011",
+      "3626d7cf-51bb-4034-9d1e-a7fa2b6e0c7e",
       "61144972-539f-4cb0-9cd9-86f392f8810a",
       "6a491c9a-a0bc-4e0d-b276-68e1e738b3ce",
       "3ac57e58-4b75-4178-807a-e4112435e677",
@@ -583,41 +598,42 @@
       "04d40ddd-e42d-419f-81d0-c38ed5b9d6b9",
       "ae54367f-2ab8-407f-b212-64fdbeeb35c9",
       "fda896e8-46ae-4f8e-bda5-6cc79b7de9ee",
+      "7a85c23e-f4b1-4fb0-b7b7-49cf530ed4a0",
+      "bdf94419-ba61-4e40-b594-b052d7a8ac2f",
       "8e2b268c-4816-4012-976d-c28eb141d73a",
       "08a7e93c-2f16-4caf-9e8b-c01498a18e27",
       "aef38e96-88bc-47ef-a6d7-cb8192a224ee",
       "728ec842-618a-4ef8-a4b5-90e8f80423ff",
       "c86a08d8-dd1a-4529-b315-064214695846",
-      "e5dc69a9-90b4-404b-ae4c-4895cf1a98c3",
       "d7d42fcd-bf9a-4e24-9a98-c8f2a95efa33",
       "08d25e9e-144d-4b95-a552-7ec95357fdf7",
       "19339bd8-fd80-40ca-83a3-5cedca0d9db2"
      ]
     },
-    "4d86adf9-b72c-4854-8cbb-acc5efa1b8ee": {
+    "fb8e830b-7e06-418e-abe8-45b54487b4a3": {
      "title": "Støjreduktion",
-     "id": "4d86adf9-b72c-4854-8cbb-acc5efa1b8ee",
+     "id": "fb8e830b-7e06-418e-abe8-45b54487b4a3",
      "references": [
       "d0fdc146-36dc-47c9-be0c-e8ea02f88d5b",
       "364afc3e-f877-4d95-8bf5-430607580de8",
       "c105aee1-0bc7-415a-802d-d769948dcf77",
       "008cef6f-90d6-4638-bcef-0e3760460011",
-      "6a5dde93-6f0e-4b49-a918-3394ba6b63c6",
       "f46192d6-4107-4c27-a1b3-e29d576470ba",
+      "6a5dde93-6f0e-4b49-a918-3394ba6b63c6",
       "ae54367f-2ab8-407f-b212-64fdbeeb35c9",
       "8e2b268c-4816-4012-976d-c28eb141d73a",
       "a8cdce8d-ded9-4715-82a6-27a25b681457",
       "263d9fac-9a5f-4f59-93c2-a8a74daec98a",
+      "c86a08d8-dd1a-4529-b315-064214695846",
       "0ee2a842-4e5c-4446-af41-56a619f49db4",
       "a0f1b727-cf56-4161-a078-c7ad1cbcae5f",
-      "e5dc69a9-90b4-404b-ae4c-4895cf1a98c3",
       "d7d42fcd-bf9a-4e24-9a98-c8f2a95efa33",
       "08d25e9e-144d-4b95-a552-7ec95357fdf7"
      ]
     },
-    "98e1f603-ba96-4945-b854-34a29df6086a": {
-     "title": "Personlig lyd",
-     "id": "98e1f603-ba96-4945-b854-34a29df6086a",
+    "98c80b70-7fe0-41df-b73c-2e795cf7e57d": {
+     "title": "Personlig lydtilpasning",
+     "id": "98c80b70-7fe0-41df-b73c-2e795cf7e57d",
      "references": [
       "bf27fb70-c216-4f7e-ba17-e8a222f2ad0b",
       "c105aee1-0bc7-415a-802d-d769948dcf77",
@@ -626,10 +642,12 @@
       "3b5ebbbc-6877-4fc8-91cd-cd536b42dd3d",
       "ae54367f-2ab8-407f-b212-64fdbeeb35c9",
       "a30117a0-0f20-424a-b0db-26b3bf103007",
+      "8e2b268c-4816-4012-976d-c28eb141d73a",
       "0ee2a842-4e5c-4446-af41-56a619f49db4",
       "263d9fac-9a5f-4f59-93c2-a8a74daec98a",
-      "438d462d-2e91-43f7-9551-aabeb563e113",
-      "08d25e9e-144d-4b95-a552-7ec95357fdf7"
+      "d7d42fcd-bf9a-4e24-9a98-c8f2a95efa33",
+      "08d25e9e-144d-4b95-a552-7ec95357fdf7",
+      "19339bd8-fd80-40ca-83a3-5cedca0d9db2"
      ]
     }
    },

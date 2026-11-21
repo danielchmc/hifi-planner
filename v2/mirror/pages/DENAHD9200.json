@@ -13,6 +13,19 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Fra beskrivelsen": "Tilslutning : 6,35 mm forsølvet jack / 3,5 mm forgyldt minijack"
+  },
+  "gallery": [
+   "6a4f2799-a7f3-44b7-9bbf-e5f87cd2ab8b",
+   "53648827-9f9a-46b4-8fd0-7b97e8006557",
+   "8d527b40-4e5b-4197-8ca8-b17d7d3afe99",
+   "959db7c1-1d0e-4879-944a-1456491f474e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 98172,
   "skuCode": "DENAHD9200",
@@ -257,41 +270,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon AH-D9200 leverer en varm, slagkraftig og meget detaljeret lyd med fremragende separation, præcis bas og en usædvanligt rummelig gengivelse for en lukket hovedtelefon. Den komfortable konstruktion, den lave vægt og den solide byggekvalitet gør hovedtelefonen behagelig til lange lyttesessioner, mens den energiske musikalitet fungerer på tværs af mange genrer. Den høje pris og enkelte mindre begrænsninger ændrer kun i ringe grad på den overvældende begejstring.",
+   "summary": "Denon AH-D9200 leverer en varm, punchy og meget detaljeret lyd med imponerende separation, præcis bas og et usædvanligt stort lydbillede for en lukket hovedtelefon. Musikalskhed, transparens og medrivende rumfornemmelse gør hovedtelefonen engagerende på tværs af genrer, mens den solide konstruktion og komfort ved lange lyt isessioner styrker helhedsindtrykket. Samlet set får produktet en begejstret anbefaling, selv om komfort og isolation viser enkelte mindre begrænsninger for nogle lyttere.",
    "headlines": {
-    "spacious, detailed and precise sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den usædvanligt rummelige gengivelse for en lukket hovedtelefon, den høje opløsning, instrumentseparationen og den præcise placering.",
-     "simpleTitle": "Rummelig, detaljeret og præcis lyd",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "68b749f2-a04c-4db6-9e85-9dc0abf83005"
-    },
     "powerful, controlled bass and engaging musicality": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en stram, slagkraftig og kraftfuld bas samt en energisk og følelsesmæssigt engagerende gengivelse.",
+     "sentimentAnalysis": "Dyb, stram bas kombineres med levende dynamik og smittende musikalitet, så energisk musik forbliver kraftfuld uden at blive ukontrolleret.",
      "simpleTitle": "Kraftfuld, kontrolleret bas og medrivende musikalitet",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "68b749f2-a04c-4db6-9e85-9dc0abf83005"
+     "key": "sound",
+     "groupId": "e66d0b09-00a2-44e5-81b2-ddce5a9a2609"
+    },
+    "detailed, spacious and precise sound": {
+     "sentimentAnalysis": "Lyden roses for høj opløsning, stærk separation, et stort lydbillede og præcis placering, der kan nærme sig åbne hovedtelefoner.",
+     "simpleTitle": "Detaljeret, rummelig og præcis lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "e66d0b09-00a2-44e5-81b2-ddce5a9a2609"
     },
     "premium, durable construction": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver fremragende materialer, attraktivt design, solid konstruktion og en holdbar fornemmelse.",
+     "sentimentAnalysis": "Materialer, håndværk og soliditet opleves som førsteklasses og understøtter indtrykket af et langtidsholdbart produkt.",
      "simpleTitle": "Førsteklasses og holdbar konstruktion",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "8b67f372-1dc3-489f-9a30-42bcf0755150"
+     "key": "build",
+     "groupId": "96408835-a70b-48ab-957a-d40252ff5d93"
     },
     "comfortable for long listening": {
-     "sentimentAnalysis": "Flere anmeldelser roser den behagelige pasform, den lave vægt og egnetheden til lange lyttesessioner.",
+     "sentimentAnalysis": "Det lette design og den behagelige pasform gør lang tids lytning mulig uden mærkbart tryk eller træthed.",
      "simpleTitle": "Komfortabel ved lang tids lytning",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "dbbc9630-3e29-4c15-bbf1-7ff35888ae93"
+     "groupId": "3399bbd0-eadc-47d5-b805-dfbd489ec454"
     }
    },
    "grouping": {
-    "68b749f2-a04c-4db6-9e85-9dc0abf83005": {
+    "e66d0b09-00a2-44e5-81b2-ddce5a9a2609": {
      "title": "Lydkvalitet",
-     "id": "68b749f2-a04c-4db6-9e85-9dc0abf83005",
+     "id": "e66d0b09-00a2-44e5-81b2-ddce5a9a2609",
      "references": [
       "c2122ef1-1981-4633-a004-cddfcbbc21c6",
       "da7232ee-8b7d-442f-b4db-4dfc8fad290d",
@@ -311,22 +324,9 @@
       "db7d57e2-a386-48f8-9be4-c8b7efd5b3e7"
      ]
     },
-    "8b67f372-1dc3-489f-9a30-42bcf0755150": {
-     "title": "Byggekvalitet",
-     "id": "8b67f372-1dc3-489f-9a30-42bcf0755150",
-     "references": [
-      "165e21c4-b26f-4446-baab-c8bc0bab1304",
-      "282d7a81-4339-4b21-ae79-74d0cc8601cf",
-      "8d1aa1d9-4f26-4838-afa6-3afeccf43990",
-      "a374d858-11f4-4c36-a54c-ffd960580ae0",
-      "9cd65bbe-1d79-421c-94de-ca2f87d02833",
-      "fbbf8561-a0a6-480e-84ca-bf5419e0f37a",
-      "db7d57e2-a386-48f8-9be4-c8b7efd5b3e7"
-     ]
-    },
-    "dbbc9630-3e29-4c15-bbf1-7ff35888ae93": {
+    "3399bbd0-eadc-47d5-b805-dfbd489ec454": {
      "title": "Komfort",
-     "id": "dbbc9630-3e29-4c15-bbf1-7ff35888ae93",
+     "id": "3399bbd0-eadc-47d5-b805-dfbd489ec454",
      "references": [
       "da7232ee-8b7d-442f-b4db-4dfc8fad290d",
       "36cc69f8-12bb-4abb-be23-134b3aa4eb47",
@@ -334,6 +334,18 @@
       "56b117cf-9b0a-4cc4-bffa-658648b6a5dd",
       "8d1aa1d9-4f26-4838-afa6-3afeccf43990",
       "a374d858-11f4-4c36-a54c-ffd960580ae0"
+     ]
+    },
+    "96408835-a70b-48ab-957a-d40252ff5d93": {
+     "title": "Byggekvalitet",
+     "id": "96408835-a70b-48ab-957a-d40252ff5d93",
+     "references": [
+      "165e21c4-b26f-4446-baab-c8bc0bab1304",
+      "282d7a81-4339-4b21-ae79-74d0cc8601cf",
+      "8d1aa1d9-4f26-4838-afa6-3afeccf43990",
+      "a374d858-11f4-4c36-a54c-ffd960580ae0",
+      "9cd65bbe-1d79-421c-94de-ca2f87d02833",
+      "db7d57e2-a386-48f8-9be4-c8b7efd5b3e7"
      ]
     }
    },

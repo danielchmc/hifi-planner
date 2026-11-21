@@ -13,6 +13,19 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( AAC, SBC )"
+  },
+  "gallery": [
+   "664978e0-0201-4ac2-8fbd-d7777ea466c0",
+   "8cf6a448-dfe5-44d6-9233-05679ba922d4",
+   "8ee79310-093e-460b-a6df-a66b2402012f",
+   "4d2be681-d59f-4f70-a908-7825b7a865c9",
+   "73b72219-001e-4bb4-848a-ce7b77e8aef9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 253515,
   "skuCode": "DENAHC500W",
@@ -204,7 +217,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 68,
+     "availableQuantity": 67,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -436,55 +449,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENAHC500W leverer varm, klar og medrivende lyd til en attraktiv pris samt nem betjening i hverdagen og god samtalekvalitet. Den behagelige pasform, den pålidelige forbindelse og muligheden for at høre omgivelserne gør høretelefonerne velegnede til arbejde, musik og taleindhold. Bassen kan virke lidt tilbageholdende, mens pasform og mikrofonkvalitet varierer fra bruger til bruger, men pakken er samlet set meget anbefalelsesværdig.",
+   "summary": "DENAHC500W leverer en varm og behagelig lyd samt god værdi for pengene. Flere anmeldelser fremhæver den behagelige pasform, nemme forbindelse og gode samtalekvalitet. Det åbne design lader omgivende lyde være hørbare, men pasformen kan dele vandene, bassen kan virke lidt svag, og enkelte oplever problemer med Bluetooth eller mikrofonen.",
    "headlines": {
     "clear, enjoyable sound": {
-     "sentimentAnalysis": "Lyden roses generelt som klar, behagelig og god til prisen.",
+     "sentimentAnalysis": "Lyden beskrives bredt som god, klar og behagelig, især til prisen.",
      "simpleTitle": "Klar og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "d3433265-f8f6-43ef-a881-f0ee1492ad4c"
+     "groupId": "314d0d89-cf2d-4eb0-834c-f319ec129d4c"
     },
-    "comfortable fit for many ears": {
-     "sentimentAnalysis": "Flere anmeldelser roser høretelefonerne for at være behagelige og sidde sikkert i øret.",
-     "simpleTitle": "Behagelig pasform for mange ører",
+    "comfortable fit": {
+     "sentimentAnalysis": "Flere anmeldelser roser den behagelige og sikre pasform i øret.",
+     "simpleTitle": "Behagelig pasform",
      "bias": "positive",
      "key": "fit",
-     "groupId": "74f3dedd-9638-4ec5-b533-4841511a42ab"
+     "groupId": "687048d0-6c5e-4af7-a48f-c99f27537d11"
     },
-    "strong value for money": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver produktet som prisvenligt og med god værdi for pengene.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "ef0d88cb-4b5b-4123-a21a-9c69c47da949"
-    },
-    "fit can cause discomfort or slipping": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver ubehag, løs pasform eller en pasform, der ikke passer.",
-     "simpleTitle": "Pasformen kan give ubehag eller glide",
+    "fit can be uncomfortable or loose": {
+     "sentimentAnalysis": "Flere anmeldelser nævner ubehag, dårlig pasform eller en løs fornemmelse, og størrelsen på ørepropperne fremhæves som et problem.",
+     "simpleTitle": "Pasformen kan være ukomfortabel eller løs",
      "bias": "negative",
      "key": "fit",
-     "groupId": "74f3dedd-9638-4ec5-b533-4841511a42ab"
+     "groupId": "687048d0-6c5e-4af7-a48f-c99f27537d11"
     },
-    "bass feels light": {
-     "sentimentAnalysis": "To anmeldelser beskriver specifikt bassen som svag eller uden fylde.",
-     "simpleTitle": "Bassen virker lidt tynd",
+    "light bass": {
+     "sentimentAnalysis": "To anmeldelser oplever specifikt, at bassen er lidt svag eller mangler fylde.",
+     "simpleTitle": "Tynd bas",
      "bias": "negative",
      "key": "sound",
-     "groupId": "d3433265-f8f6-43ef-a881-f0ee1492ad4c"
+     "groupId": "314d0d89-cf2d-4eb0-834c-f319ec129d4c"
     },
-    "good call performance": {
-     "sentimentAnalysis": "Samtalefunktion og mikrofonydelse roses i flere anmeldelser.",
-     "simpleTitle": "God samtaleydelse",
+    "effective call performance": {
+     "sentimentAnalysis": "Mikrofonen og samtalefunktionerne roses som effektive og velegnede til arbejdssamtaler.",
+     "simpleTitle": "God samtalekvalitet",
      "bias": "positive",
      "key": "calls",
-     "groupId": "ab69124d-ab77-4b5e-894e-c636e0ca9403"
+     "groupId": "9079867f-d8b1-42e4-9cc3-b59680c95ecd"
     }
    },
    "grouping": {
-    "d3433265-f8f6-43ef-a881-f0ee1492ad4c": {
+    "314d0d89-cf2d-4eb0-834c-f319ec129d4c": {
      "title": "Lydkvalitet",
-     "id": "d3433265-f8f6-43ef-a881-f0ee1492ad4c",
+     "id": "314d0d89-cf2d-4eb0-834c-f319ec129d4c",
      "references": [
       "e93c4bf0-2565-4d1e-991f-fec98d7f2a38",
       "364057ec-7100-4032-890d-9acc580b4a72",
@@ -494,17 +500,15 @@
       "55d43e56-1008-4484-bb72-0cac21c4aeae",
       "fa6a0669-7c9d-4a24-90f9-fd7de9cdebad",
       "379ff65e-cc24-47b5-bb9b-d48cf8d822fc",
-      "cfaea201-dc5e-4c6c-8946-18e6bfbe5c7b",
       "8e5efb23-0475-4f4b-aa46-c36ea0edc659"
      ]
     },
-    "74f3dedd-9638-4ec5-b533-4841511a42ab": {
+    "687048d0-6c5e-4af7-a48f-c99f27537d11": {
      "title": "Pasform og komfort",
-     "id": "74f3dedd-9638-4ec5-b533-4841511a42ab",
+     "id": "687048d0-6c5e-4af7-a48f-c99f27537d11",
      "references": [
       "734114a2-9996-42aa-9a9e-495a9f3eb2e3",
       "e65de0ff-ac62-4747-bfc7-fd96f0e98214",
-      "121fd5cd-67eb-428f-8b18-45b0529a0427",
       "2b48f4d3-8b62-492c-9a76-bb9fbee5918c",
       "79470554-fedc-4da4-bac1-643fe77cdcfb",
       "55d43e56-1008-4484-bb72-0cac21c4aeae",
@@ -512,20 +516,9 @@
       "8e5efb23-0475-4f4b-aa46-c36ea0edc659"
      ]
     },
-    "ef0d88cb-4b5b-4123-a21a-9c69c47da949": {
-     "title": "Pris og kvalitet",
-     "id": "ef0d88cb-4b5b-4123-a21a-9c69c47da949",
-     "references": [
-      "e93c4bf0-2565-4d1e-991f-fec98d7f2a38",
-      "734114a2-9996-42aa-9a9e-495a9f3eb2e3",
-      "55d43e56-1008-4484-bb72-0cac21c4aeae",
-      "379ff65e-cc24-47b5-bb9b-d48cf8d822fc",
-      "cc785607-e825-4161-98b3-62a4e5ab841e"
-     ]
-    },
-    "ab69124d-ab77-4b5e-894e-c636e0ca9403": {
-     "title": "Samtalekvalitet",
-     "id": "ab69124d-ab77-4b5e-894e-c636e0ca9403",
+    "9079867f-d8b1-42e4-9cc3-b59680c95ecd": {
+     "title": "Samtaler og mikrofon",
+     "id": "9079867f-d8b1-42e4-9cc3-b59680c95ecd",
      "references": [
       "cc785607-e825-4161-98b3-62a4e5ab841e",
       "121fd5cd-67eb-428f-8b18-45b0529a0427",

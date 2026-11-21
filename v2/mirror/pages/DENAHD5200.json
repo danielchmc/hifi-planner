@@ -13,6 +13,23 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Trådløs opladning": "Nej",
+   "Fra beskrivelsen": "Tilslutning : 3,5 mm forgyldt stereo minijack"
+  },
+  "gallery": [
+   "b99bbf4b-c53e-4ca3-91e1-8ac6aabc7ac7",
+   "50ba48d8-5c70-47e9-86e8-e2c6369f1d83",
+   "e57c5688-7557-4f8b-99c9-425623a0a3b7",
+   "6df03998-ddb5-48bd-ac13-dafb39182d80",
+   "8529eec8-bb62-4f41-b5f7-a0a1f751a6c2",
+   "3f3b070b-74f3-426e-b7bf-cdfe0df18c24",
+   "018195cf-0c3d-4424-8166-63d1785be1c3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 84501,
   "skuCode": "DENAHD5200",
@@ -214,7 +231,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
+     "numberOfStoresExperience": 9,
      "availableQuantity": 30,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -289,48 +306,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENAHD5200 leverer en varm, detaljeret og meget præcis lyd med en bred og medrivende gengivelse, der får musikken til at føles bemærkelsesværdigt tæt på et high-end-højttalersystem. Komforten er generelt fremragende til lange lytte-sessioner, mens den robuste konstruktion, det attraktive design og de førsteklasses materialer understøtter premiumindtrykket. De fleste mener, at prisen er berettiget, selv om vægten, polstringen på hovedbøjlen, kabelstøj og enkelte problemer med tilbehør eller finish dæmper en ellers usædvanligt begejstret dom.",
+   "summary": "DENAHD5200 leverer en varm, detaljeret og meget medrivende lyd med klare mellemtoner og diskant samt kontrolleret bas. Den robuste konstruktion, de eksklusive materialer og den komfortable pasform ved lange lyttesessioner giver et førsteklasses indtryk, mens den rummelige gengivelse får musik, film og TV til at føles levende. Prisen er høj, men den samlede kvalitet og lytteoplevelse vurderes i vid udstrækning til at være investeringen værd.",
    "headlines": {
+    "comfortable for long listening": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den komfortable pasform til lang tids lytning, også med briller.",
+     "simpleTitle": "Komfortable ved lang tids lytning",
+     "bias": "positive",
+     "key": "comfort",
+     "groupId": "52cc13ab-a64d-4275-b2d1-84e18da02767"
+    },
+    "premium, robust construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent en solid konstruktion, kvalitetsmaterialer, flot finish og en eksklusiv fornemmelse.",
+     "simpleTitle": "Førsteklasses, robust konstruktion",
+     "bias": "positive",
+     "key": "build",
+     "groupId": "1bf99d88-2ce9-4d4b-b02e-59732fd202ff"
+    },
     "warm, detailed and immersive sound": {
-     "sentimentAnalysis": "Lyden roses gentagne gange som varm, detaljeret, balanceret og meget afslørende med kraftig bas, klare mellemtoner og diskant samt en medrivende gengivelse.",
+     "sentimentAnalysis": "Anmeldelserne roser en fyldig, varm og meget detaljeret gengivelse med kraftig bas, klar lyd over hele frekvensområdet og en medrivende rumfornemmelse.",
      "simpleTitle": "Varm, detaljeret og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "2678d9f9-5172-4ae5-beb1-99d2611189c3"
+     "groupId": "909e9c42-08c4-4c1c-9501-f5e29e138145"
     },
-    "comfortable for long listening": {
-     "sentimentAnalysis": "Hovedtelefonerne beskrives konsekvent som komfortable, sikre og velegnede til lang tids lytning, også med briller.",
-     "simpleTitle": "Behagelig ved lang tids lytning",
-     "bias": "positive",
-     "key": "comfort",
-     "groupId": "77336c75-f9f5-47a7-bb26-84e7a3fb2f5a"
-    },
-    "robust, premium construction": {
-     "sentimentAnalysis": "Byggekvalitet, materialer og finish opfattes bredt som robuste, raffinerede og passende eksklusive.",
-     "simpleTitle": "Robust konstruktion i premiumklasse",
-     "bias": "positive",
-     "key": "build",
-     "groupId": "22812d0d-90a9-4b23-b53a-5bab223a9951"
-    },
-    "price is justified by the quality": {
-     "sentimentAnalysis": "Trods premiumprisen vurderes den samlede kvalitet og lytteoplevelse som god værdi for pengene.",
-     "simpleTitle": "Prisen retfærdiggøres af kvaliteten",
+    "worth the premium price": {
+     "sentimentAnalysis": "Selvom prisen bemærkes som høj, vurderer flere anmeldelser lyd, konstruktion og den samlede oplevelse som pengene værd.",
+     "simpleTitle": "Prisen værd",
      "bias": "positive",
      "key": "value",
-     "groupId": "0e616d70-9adf-47f2-957f-44f57e4bc2a3"
+     "groupId": "11e5c577-359a-46b1-8bf0-643ea7c2d2a9"
     },
-    "cable can transmit clothing noise": {
-     "sentimentAnalysis": "Kablet roses i én anmeldelse for kvaliteten, men kritiseres for at overføre tydelig gnidningsstøj fra tøjet.",
-     "simpleTitle": "Kablet kan overføre støj fra tøj",
+    "clear, neutral and distortion-free playback": {
+     "sentimentAnalysis": "Hovedtelefonen beskrives som afbalanceret eller neutral med kontrolleret bas og ren gengivelse uden forvrængning selv ved høj lydstyrke.",
+     "simpleTitle": "Klar, neutral og forvrængningsfri gengivelse",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "909e9c42-08c4-4c1c-9501-f5e29e138145"
+    },
+    "premium pricing": {
+     "sentimentAnalysis": "Hovedtelefonen betragtes som dyr på trods af stor anerkendelse af kvaliteten.",
+     "simpleTitle": "Høj pris",
      "bias": "negative",
-     "key": "cable",
-     "groupId": "0813eff3-b8d0-49ee-af35-1a3a4674d4ef"
+     "key": "value",
+     "groupId": "11e5c577-359a-46b1-8bf0-643ea7c2d2a9"
     }
    },
    "grouping": {
-    "2678d9f9-5172-4ae5-beb1-99d2611189c3": {
+    "909e9c42-08c4-4c1c-9501-f5e29e138145": {
      "title": "Lydkvalitet",
-     "id": "2678d9f9-5172-4ae5-beb1-99d2611189c3",
+     "id": "909e9c42-08c4-4c1c-9501-f5e29e138145",
      "references": [
       "8f4d14a1-afc2-49b5-a04a-2bd7bfffce3a",
       "fb55dc48-bf34-49d6-9864-a553011bca57",
@@ -367,32 +391,12 @@
       "37375a90-33da-4e81-9d68-3f95b4ea1d09"
      ]
     },
-    "22812d0d-90a9-4b23-b53a-5bab223a9951": {
-     "title": "Byggekvalitet og design",
-     "id": "22812d0d-90a9-4b23-b53a-5bab223a9951",
-     "references": [
-      "fb55dc48-bf34-49d6-9864-a553011bca57",
-      "6a5668da-60b8-4438-96fd-53f2e897d8ed",
-      "3baf5405-c751-41d9-a5fe-4d0fd552e5cb",
-      "187a3ddd-8fa0-4c33-8890-e7cddda6046b",
-      "3ad2b10e-b51a-4552-8bf4-9cd4546417ce",
-      "dde0f91a-c042-4eee-9e81-1b25e133cbdf",
-      "a6f94fde-4485-4891-9678-7a7e7dd3640d",
-      "c100b199-402c-48fa-8757-c65019b16374",
-      "37033891-af24-45fa-8eaa-32d1d053961c",
-      "65d2b21b-7198-4725-aaa3-dcec99251ec5",
-      "8a6281ed-28c2-4384-bb68-87b4510604a2",
-      "751b47ef-2a2c-41d1-9b2c-1403cb5b2e40",
-      "f880094a-9b0c-4056-b57e-5cdac15aa975",
-      "ccb95635-5664-4da9-937f-a3e10be8ec1f",
-      "2b199942-ddaf-457c-adc3-69e88d1a0f0f"
-     ]
-    },
-    "77336c75-f9f5-47a7-bb26-84e7a3fb2f5a": {
+    "52cc13ab-a64d-4275-b2d1-84e18da02767": {
      "title": "Komfort",
-     "id": "77336c75-f9f5-47a7-bb26-84e7a3fb2f5a",
+     "id": "52cc13ab-a64d-4275-b2d1-84e18da02767",
      "references": [
       "8f4d14a1-afc2-49b5-a04a-2bd7bfffce3a",
+      "fb55dc48-bf34-49d6-9864-a553011bca57",
       "3baf5405-c751-41d9-a5fe-4d0fd552e5cb",
       "7dbc2e84-a306-472d-b538-34ceaa7e5975",
       "2ade1791-6809-4218-957e-926e66b10b83",
@@ -408,26 +412,36 @@
       "37375a90-33da-4e81-9d68-3f95b4ea1d09"
      ]
     },
-    "0e616d70-9adf-47f2-957f-44f57e4bc2a3": {
-     "title": "Pris og værdi",
-     "id": "0e616d70-9adf-47f2-957f-44f57e4bc2a3",
+    "1bf99d88-2ce9-4d4b-b02e-59732fd202ff": {
+     "title": "Byggekvalitet og design",
+     "id": "1bf99d88-2ce9-4d4b-b02e-59732fd202ff",
+     "references": [
+      "fb55dc48-bf34-49d6-9864-a553011bca57",
+      "6a5668da-60b8-4438-96fd-53f2e897d8ed",
+      "3baf5405-c751-41d9-a5fe-4d0fd552e5cb",
+      "187a3ddd-8fa0-4c33-8890-e7cddda6046b",
+      "3ad2b10e-b51a-4552-8bf4-9cd4546417ce",
+      "dde0f91a-c042-4eee-9e81-1b25e133cbdf",
+      "a6f94fde-4485-4891-9678-7a7e7dd3640d",
+      "c100b199-402c-48fa-8757-c65019b16374",
+      "37033891-af24-45fa-8eaa-32d1d053961c",
+      "65d2b21b-7198-4725-aaa3-dcec99251ec5",
+      "8a6281ed-28c2-4384-bb68-87b4510604a2",
+      "ccb95635-5664-4da9-937f-a3e10be8ec1f",
+      "2b199942-ddaf-457c-adc3-69e88d1a0f0f",
+      "37375a90-33da-4e81-9d68-3f95b4ea1d09"
+     ]
+    },
+    "11e5c577-359a-46b1-8bf0-643ea7c2d2a9": {
+     "title": "Pris i forhold til kvalitet",
+     "id": "11e5c577-359a-46b1-8bf0-643ea7c2d2a9",
      "references": [
       "6a5668da-60b8-4438-96fd-53f2e897d8ed",
       "3baf5405-c751-41d9-a5fe-4d0fd552e5cb",
       "187a3ddd-8fa0-4c33-8890-e7cddda6046b",
       "a6f94fde-4485-4891-9678-7a7e7dd3640d",
       "faefdc38-7c94-4cef-aa95-33e54f895b23",
-      "f880094a-9b0c-4056-b57e-5cdac15aa975",
       "37375a90-33da-4e81-9d68-3f95b4ea1d09"
-     ]
-    },
-    "0813eff3-b8d0-49ee-af35-1a3a4674d4ef": {
-     "title": "Kabel",
-     "id": "0813eff3-b8d0-49ee-af35-1a3a4674d4ef",
-     "references": [
-      "dde0f91a-c042-4eee-9e81-1b25e133cbdf",
-      "8eae08c1-a14a-4b59-94c7-8ddb85707dda",
-      "3baf5405-c751-41d9-a5fe-4d0fd552e5cb"
      ]
     }
    },

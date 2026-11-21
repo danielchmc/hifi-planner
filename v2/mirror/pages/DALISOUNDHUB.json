@@ -13,6 +13,25 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Nej",
+   "Lydudgang": "Analog RCA, LFE",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA, Minijack/AUX",
+   "Indgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Fra beskrivelsen": "Kan modul-udbygges med Bluesound/multirum/AirPlay 2 og HDMI/trådløs surround (ekstraudstyr) · Auto-tænd/sluk på alle indgange · USB-tilslutning (kun ladefunktion, 5V/1A)"
+  },
+  "gallery": [
+   "5c874299-014b-49af-87fb-1f3edf25cf15",
+   "28f30c6f-4e7a-405e-94e2-f78a9745c10d",
+   "1b044142-89da-4160-a089-6dfcc7ab0b93",
+   "e4b31bbb-a5ed-46af-8a0e-90b4e1990c2d",
+   "c20dd21b-93cc-4b8d-bb37-91a194d402b9",
+   "485a81bf-bc19-4ff6-bd20-24c7b9153b82"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 88824,
   "skuCode": "DALISOUNDHUB",
@@ -194,7 +213,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 169,
+     "availableQuantity": 155,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -468,63 +487,79 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALISOUNDHUB leverer varm, naturlig og omsluttende lyd, især sammen med aktive DALI-højttalere, samtidig med at løsningen er kompakt, fleksibel og elegant uden kabler. Den enkle betjening, de nyttige streamingfunktioner og de mange tilslutninger gør hubben meget praktisk i minimalistiske hi-fi-systemer. Stabiliteten er dog ikke altid overbevisende, da der gentagne gange nævnes udfald fra højttalere, app eller fjernbetjening samt enkelte problemer med opsætningen, mens servicen ofte roses.",
+   "summary": "DALISOUNDHUB leverer en varm, detaljeret og omsluttende lyd, især sammen med aktive DALI-højttalere. Det kompakte design med få kabler, de fleksible tilslutninger og den enkle betjening giver et meget attraktivt high-end-system. Stabiliteten i den trådløse forbindelse og Bluetooth-fjernbetjeningen er de største svagheder, da lejlighedsvise udfald, vanskelig parring og firmwareproblemer dæmper det ellers meget positive indtryk.",
    "headlines": {
-    "rich, natural sound with DALI active speakers": {
-     "sentimentAnalysis": "Lyden beskrives konsekvent som god, naturlig eller fremragende, især med aktive DALI-højttalere, men noget af rosen afhænger af, at forbindelsen fungerer.",
-     "simpleTitle": "Fyldig, naturlig lyd med aktive DALI-højttalere",
+    "clear, natural and immersive sound": {
+     "sentimentAnalysis": "Hubben roses gentagne gange for naturlig, fremragende og meget behagelig lyd, også sammen med aktive DALI-højttalere og i 5.1-systemer.",
+     "simpleTitle": "Klar, naturlig og omsluttende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "414b6b74-13be-4e67-a74f-f5f8dc8e2d07"
+     "groupId": "63352295-ff76-463d-b636-c195af356fb4"
     },
-    "poor and unreliable remote control": {
-     "sentimentAnalysis": "Bluetooth-fjernbetjeningen kritiseres gentagne gange for dårlig kvalitet, vanskelig opsætning og lejlighedsvis eller fuldstændig manglende reaktion.",
-     "simpleTitle": "Dårlig og ustabil fjernbetjening",
+    "bluetooth remote control is unreliable": {
+     "sentimentAnalysis": "Fjernbetjeningen kritiseres ofte for dårlig kvalitet, manglende reaktioner samt Bluetooth-forstyrrelser eller firmwareproblemer; lejlighedsvis kræves en genstart for at få den til at virke igen.",
+     "simpleTitle": "Bluetooth-fjernbetjeningen er ustabil",
      "bias": "negative",
      "key": "remote",
-     "groupId": "46050527-6cf6-45f7-a684-0761903c5ef9"
+     "groupId": "1f086584-2d0c-4a91-a67a-7e7c88b0c627"
     },
-    "compact, flexible wireless setup": {
-     "sentimentAnalysis": "Hubben roses for sit kompakte design, sin trådløse fleksibilitet og egnethed til minimalistiske systemer.",
-     "simpleTitle": "Kompakt og fleksibel trådløs opsætning",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "16089bf6-d9d0-4edc-a45b-8e2fd7b345cc"
-    },
-    "recurring connection dropouts": {
-     "sentimentAnalysis": "Flere anmeldelser nævner mistede forbindelser til højttalere, app eller system, som nogle gange kræver genstart eller yderligere fejlsøgning.",
-     "simpleTitle": "Gentagne forbindelsesudfald",
+    "wireless speaker connections can drop out": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver mistede højttaler- eller appforbindelser og pludselige lydudfald, som nogle gange kræver en genstart ved at afbryde strømmen; i ét tilfælde beskrives musikstreaming som mere stabilt.",
+     "simpleTitle": "Trådløse højttalerforbindelser kan falde ud",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "cd928b77-a2d4-4433-b143-64fbe9d732b7"
+     "groupId": "03a435e8-54c2-45f0-90a9-faf5bca05b28"
     },
-    "simple controls and useful streaming features": {
-     "sentimentAnalysis": "Fysiske betjeningsknapper, automatisk kildevalg, multiroom-udvidelse og streamingadgang giver mere komfort og fleksibilitet.",
-     "simpleTitle": "Enkel betjening og nyttige streamingfunktioner",
+    "simple controls and flexible inputs": {
+     "sentimentAnalysis": "De fysiske betjeningsknapper, det automatiske kildevalg og den ukomplicerede betjening værdsættes især af brugere, der ikke ønsker at være helt afhængige af en telefonapp.",
+     "simpleTitle": "Enkel betjening og fleksible tilslutninger",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "9847e2ef-256a-489c-959c-16b452cc91db"
+    },
+    "flexible streaming and multi-room expansion": {
+     "sentimentAnalysis": "BluOS-integration, adgang til streaming, multiroom-udvidelse samt omfattende analoge og digitale tilslutninger gør hubben alsidig i moderne trådløse systemer.",
+     "simpleTitle": "Fleksibel streaming og multiroom-udvidelse",
      "bias": "positive",
      "key": "features",
-     "groupId": "9f336672-83d8-47c3-a477-ca072d586f3f"
+     "groupId": "71edaf51-0a38-45da-bbce-ac20e8bf98b7"
     }
    },
    "grouping": {
-    "cd928b77-a2d4-4433-b143-64fbe9d732b7": {
-     "title": "Forbindelse og stabilitet",
-     "id": "cd928b77-a2d4-4433-b143-64fbe9d732b7",
+    "9847e2ef-256a-489c-959c-16b452cc91db": {
+     "title": "Opsætning og betjening",
+     "id": "9847e2ef-256a-489c-959c-16b452cc91db",
+     "references": [
+      "3464a520-e5bc-4785-97b7-f2f3d3271579",
+      "e1df2262-e532-44a5-92ce-34d898f2d1f3",
+      "527e832f-e75a-45b6-a677-d709d8319fc4",
+      "c598ba95-c80b-407e-bf6d-c2a14a45cea4",
+      "ebcd8654-9ae2-4e0e-be8c-d3d0d9749aef",
+      "81dc3ee2-f5ee-446d-b467-48e4e5a54d56",
+      "0df57e6b-6d7a-4d80-9b53-01d33e9b2c3d",
+      "8e5e3744-93da-468d-8788-3e9064c36467",
+      "9f01830c-8758-4d1a-a49f-2651286d0356",
+      "2a468d66-8edb-4f1d-a0af-e9d0fe80ac8c"
+     ]
+    },
+    "03a435e8-54c2-45f0-90a9-faf5bca05b28": {
+     "title": "Forbindelse og driftssikkerhed",
+     "id": "03a435e8-54c2-45f0-90a9-faf5bca05b28",
      "references": [
       "3464a520-e5bc-4785-97b7-f2f3d3271579",
       "da58f1a3-75ca-4dc6-9fb3-17f47bed2177",
+      "71492704-01d2-427c-a7ba-1bd6ae640416",
       "e091c664-d489-4833-b509-443ce890370d",
-      "c598ba95-c80b-407e-bf6d-c2a14a45cea4",
       "f60bcd36-164b-49f1-873f-9823d8715067",
+      "934f998a-7107-4000-b259-b3f4ca45409e",
       "0df57e6b-6d7a-4d80-9b53-01d33e9b2c3d",
       "948e612f-b373-4102-aa12-db11873c2e42",
-      "c92167eb-17dc-486b-85b6-03564661930d",
-      "4addfd00-75fc-4d9d-895b-9c7b8031af56"
+      "c92167eb-17dc-486b-85b6-03564661930d"
      ]
     },
-    "414b6b74-13be-4e67-a74f-f5f8dc8e2d07": {
+    "63352295-ff76-463d-b636-c195af356fb4": {
      "title": "Lydkvalitet",
-     "id": "414b6b74-13be-4e67-a74f-f5f8dc8e2d07",
+     "id": "63352295-ff76-463d-b636-c195af356fb4",
      "references": [
       "da58f1a3-75ca-4dc6-9fb3-17f47bed2177",
       "8b962cfa-7bf1-4bc4-a1b6-a4dcba6dbb3a",
@@ -536,22 +571,9 @@
       "c92167eb-17dc-486b-85b6-03564661930d"
      ]
     },
-    "16089bf6-d9d0-4edc-a45b-8e2fd7b345cc": {
-     "title": "Brugervenlighed og design",
-     "id": "16089bf6-d9d0-4edc-a45b-8e2fd7b345cc",
-     "references": [
-      "54b4c797-e19f-4686-ac7c-97533e7007c6",
-      "e1df2262-e532-44a5-92ce-34d898f2d1f3",
-      "ebcd8654-9ae2-4e0e-be8c-d3d0d9749aef",
-      "81dc3ee2-f5ee-446d-b467-48e4e5a54d56",
-      "8e5e3744-93da-468d-8788-3e9064c36467",
-      "9f01830c-8758-4d1a-a49f-2651286d0356",
-      "2a468d66-8edb-4f1d-a0af-e9d0fe80ac8c"
-     ]
-    },
-    "46050527-6cf6-45f7-a684-0761903c5ef9": {
+    "1f086584-2d0c-4a91-a67a-7e7c88b0c627": {
      "title": "Fjernbetjening",
-     "id": "46050527-6cf6-45f7-a684-0761903c5ef9",
+     "id": "1f086584-2d0c-4a91-a67a-7e7c88b0c627",
      "references": [
       "71492704-01d2-427c-a7ba-1bd6ae640416",
       "f60bcd36-164b-49f1-873f-9823d8715067",
@@ -562,10 +584,11 @@
       "049dd02b-43b1-4ab6-ba50-be8ecc9503ce"
      ]
     },
-    "9f336672-83d8-47c3-a477-ca072d586f3f": {
+    "71edaf51-0a38-45da-bbce-ac20e8bf98b7": {
      "title": "Funktioner og kompatibilitet",
-     "id": "9f336672-83d8-47c3-a477-ca072d586f3f",
+     "id": "71edaf51-0a38-45da-bbce-ac20e8bf98b7",
      "references": [
+      "54b4c797-e19f-4686-ac7c-97533e7007c6",
       "fb72b224-11c0-47eb-8461-865bd907fc8b",
       "71492704-01d2-427c-a7ba-1bd6ae640416",
       "8b962cfa-7bf1-4bc4-a1b6-a4dcba6dbb3a",

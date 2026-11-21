@@ -13,6 +13,19 @@
    "url": "/hojtalere/centerhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "8f6e8a37-0a90-41b0-868c-78b2e196b519",
+   "329224b7-b3d3-4a09-9c56-11aaa9a4c215",
+   "d6f3bc6c-96a9-4082-8a8f-091e72d3b80d",
+   "41064594-971a-487a-bd60-442c63ac6c5d",
+   "19aa243b-8ae1-4338-b7b9-7d9d6f930309"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270660,
   "skuCode": "DALISONIKCINEMA",
@@ -290,7 +303,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 10,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -452,7 +465,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 9,
+     "availableQuantity": 13,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -525,63 +538,58 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALISONIKCINEMA leverer en varm, kontant og omsluttende hjemmebiografoplevelse med tydelige dialoger, mange detaljer og kraftfuld dynamik. Den sømløse integration med matchende DALI-højttalere skaber et sammenhængende system, mens det store kabinet kan kræve omhyggelig placering. Filmlyd får den største ros, og den flotte finish samt den gode værdi for pengene styrker helhedsindtrykket.",
+   "summary": "DALISONIKCINEMA bliver bredt rost som en kraftfuld, klar og medrivende centerhøjttaler, der forbedrer hjemmebiograflyden markant. Dialoger er usædvanligt tydelige og varme, mens film får mere slagkraft, dynamik, detaljer og fylde. Den sømløse integration i DALI-systemer, den flotte finish og den stærke værdi går igen som klare fordele, selv om det store kabinet kræver omhyggelig placering.",
    "headlines": {
-    "warm, rich and dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den fyldige, varme, kraftfulde og detaljerede lyd med stærk dynamik.",
-     "simpleTitle": "Varm, fyldig og dynamisk lyd",
+    "powerful, detailed and immersive film sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver en fyldig, kraftfuld, dynamisk og meget detaljeret lyd, der løfter film og serier.",
+     "simpleTitle": "Kraftfuld, detaljeret og medrivende filmlyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "ecd286ce-c362-4f04-8792-f270c9b7838d"
+     "key": "sound",
+     "groupId": "f6f3fc9d-42dd-431b-8fb7-40917074d1bc"
     },
-    "especially effective for films": {
-     "sentimentAnalysis": "Afspilning af film og serier beskrives gentagne gange som meget underholdende, kraftfuld og engagerende.",
-     "simpleTitle": "Særligt stærk til film",
+    "seamless match with the rest of the system": {
+     "sentimentAnalysis": "Centeren integreres problemfrit med DALI-højttalere og forbedrer hjemmebiografens samlede sammenhæng.",
+     "simpleTitle": "Sømløst samspil med resten af systemet",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "ecd286ce-c362-4f04-8792-f270c9b7838d"
+     "key": "system-fit",
+     "groupId": "e6c6695c-6e8f-4758-a5b9-601ff519c4a8"
     },
-    "clearer, more intelligible dialogue": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver usædvanligt klar og varm tale samt langt mindre utydelig dialog.",
-     "simpleTitle": "Klarere og tydeligere dialog",
+    "clear, warm and punchy dialogue": {
+     "sentimentAnalysis": "Dialog og vokaler beskrives konsekvent som usædvanligt tydelige, varme og nemme at forstå.",
+     "simpleTitle": "Tydelig, varm og slagkraftig dialog",
      "bias": "positive",
-     "key": "dialogue-clarity",
-     "groupId": "5aed5822-ca52-45fa-a6d4-59e943c0e2b8"
+     "key": "sound",
+     "groupId": "f6f3fc9d-42dd-431b-8fb7-40917074d1bc"
     },
-    "blends seamlessly with matching speakers": {
-     "sentimentAnalysis": "Matchende DALI-højttalere integreres ifølge anmeldelserne perfekt og skaber et sammenhængende hjemmebiografsystem.",
-     "simpleTitle": "Sømløs sammenkobling med matchende højttalere",
-     "bias": "positive",
-     "key": "system-integration",
-     "groupId": "c884b28f-7c76-4c1c-b440-1e5771cf115b"
-    },
-    "large cabinet needs careful placement": {
-     "sentimentAnalysis": "Den betydelige størrelse kan være vanskelig at placere, men opleves ikke nødvendigvis som forstyrrende.",
+    "large cabinet requires careful placement": {
+     "sentimentAnalysis": "Den betydelige størrelse nævnes som muligvis svær at placere, selv om den er acceptabel eller flot i passende opsætninger.",
      "simpleTitle": "Stort kabinet kræver omhyggelig placering",
      "bias": "negative",
-     "key": "design-placement",
-     "groupId": "64f186eb-6218-4519-9d3b-529de4244d57"
+     "key": "design",
+     "groupId": "f71c281f-a8ed-4428-86f6-c6fba77c0a86"
     }
    },
    "grouping": {
-    "ecd286ce-c362-4f04-8792-f270c9b7838d": {
+    "f6f3fc9d-42dd-431b-8fb7-40917074d1bc": {
      "title": "Lydkvalitet",
-     "id": "ecd286ce-c362-4f04-8792-f270c9b7838d",
+     "id": "f6f3fc9d-42dd-431b-8fb7-40917074d1bc",
      "references": [
       "011f7619-00bf-4505-8892-0a593fc8b3ea",
       "52a9c4c3-5d8a-4cf6-b205-6238e8ba4df5",
       "ee47e6a5-b654-4aa6-bf54-517de1866218",
       "8c45223e-234c-4552-967d-e45f66b6ba11",
+      "3e8c5891-c9ca-44fb-8a15-07359b898bc8",
       "d04d2c1f-ac13-44c5-8f4f-ddca2db65b4d",
       "545b2c52-c7ec-498a-9577-28f908b863ef",
       "40671280-57bb-40e6-abd7-902bfc717b33",
       "4b1d0474-7d66-49bc-b7a6-a0d0d4ceba76",
+      "dd7ebaec-49ab-446b-9597-d07ef8a0beae",
       "d3c6c6e2-454b-4a5d-9f94-00ee0cb4f271"
      ]
     },
-    "c884b28f-7c76-4c1c-b440-1e5771cf115b": {
+    "e6c6695c-6e8f-4758-a5b9-601ff519c4a8": {
      "title": "Systemintegration",
-     "id": "c884b28f-7c76-4c1c-b440-1e5771cf115b",
+     "id": "e6c6695c-6e8f-4758-a5b9-601ff519c4a8",
      "references": [
       "52a9c4c3-5d8a-4cf6-b205-6238e8ba4df5",
       "faddd82b-2310-40b0-8be1-0f9c2b5d9e8c",
@@ -590,19 +598,9 @@
       "dd7ebaec-49ab-446b-9597-d07ef8a0beae"
      ]
     },
-    "5aed5822-ca52-45fa-a6d4-59e943c0e2b8": {
-     "title": "Dialogklarhed",
-     "id": "5aed5822-ca52-45fa-a6d4-59e943c0e2b8",
-     "references": [
-      "52a9c4c3-5d8a-4cf6-b205-6238e8ba4df5",
-      "8c45223e-234c-4552-967d-e45f66b6ba11",
-      "813491ac-fc33-4a98-97d0-ec75f00ad72f",
-      "40671280-57bb-40e6-abd7-902bfc717b33"
-     ]
-    },
-    "64f186eb-6218-4519-9d3b-529de4244d57": {
+    "f71c281f-a8ed-4428-86f6-c6fba77c0a86": {
      "title": "Design og placering",
-     "id": "64f186eb-6218-4519-9d3b-529de4244d57",
+     "id": "f71c281f-a8ed-4428-86f6-c6fba77c0a86",
      "references": [
       "52a9c4c3-5d8a-4cf6-b205-6238e8ba4df5",
       "813491ac-fc33-4a98-97d0-ec75f00ad72f",
@@ -610,15 +608,15 @@
      ]
     }
    },
-   "rating": 4.97619047619048,
-   "count": 42,
+   "rating": 4.97674418604651,
+   "count": 43,
    "reviewCount": 14,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 1,
-    "5": 41
+    "5": 42
    }
   },
   "displayDecadeWarranty": true,

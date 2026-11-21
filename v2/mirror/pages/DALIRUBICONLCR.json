@@ -13,6 +13,17 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "48e97268-0225-4123-9d05-b29b2fde08d1",
+   "93f8757b-36cb-46ca-83bc-796505a06553",
+   "e20cc236-4871-4f5e-bc59-1ea220907dfe",
+   "e7362511-aa73-4a93-a3cf-b4ac4825ba12",
+   "43859ea2-ed4f-4934-8fdf-9411ebe3b2f5"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 20995,
   "skuCode": "DALIRUBICONLCR",
@@ -389,54 +400,46 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIRUBICONLCR leverer varm, krystalklar og omsluttende lyd med fremragende detaljer, dynamik og godt tryk. Den dybe, kontrollerede bas tilfredsstiller mange lyttere uden subwoofer, mens det enkle vægdesign giver et elegant udtryk og frigør gulvplads. I enkelte anlæg kan en subwoofer stadig være en fordel til de allerlaveste frekvenser.",
+   "summary": "DALIRUBICONLCR leverer varm, krystalklar og meget detaljeret lyd med dynamik, godt instrumentel overblik og en medrivende gengivelse. Den dybe og kontrollerede bas rækker langt ud over typiske væghøjttalere, selv om en subwoofer kan supplere den dybeste oktav i større anlæg. Den elegante udførelse, den pladsbesparende vægmontering samt den stærke stereo- og surroundgengivelse gør DALIRUBICONLCR til et fremragende valg til krævende hjemmeaudio.",
    "headlines": {
-    "clear, refined and immersive presentation": {
-     "sentimentAnalysis": "Lyden beskrives som krystalklar uden skarphed, dyb og omsluttende, og fungerer især godt i stereo-, surround- og hjemmebiografopsætninger.",
-     "simpleTitle": "Klar, raffineret og omsluttende gengivelse",
+    "detailed, dynamic and clear sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den krystalklare, detaljerede og dynamiske lyd med godt tryk og fin separation.",
+     "simpleTitle": "Detaljeret, dynamisk og klar lyd",
      "bias": "positive",
-     "key": "clear-refined-presentation",
-     "groupId": "d18b1d4d-48fa-4c0f-8e7b-f7972939ee66"
-    },
-    "detailed, dynamic sound with plenty of punch": {
-     "sentimentAnalysis": "Anmeldelserne roser de fine detaljer, den stærke dynamik og det energiske tryk.",
-     "simpleTitle": "Detaljeret, dynamisk lyd med masser af tryk",
-     "bias": "positive",
-     "key": "detailed-dynamic-sound",
-     "groupId": "d18b1d4d-48fa-4c0f-8e7b-f7972939ee66"
+     "key": "sound-detail-dynamics",
+     "groupId": "67ce4657-d8b0-4256-8a04-d3db1866b728"
     },
     "powerful bass without always needing a subwoofer": {
-     "sentimentAnalysis": "Flere anmeldelser finder bassen så fyldig og tilfredsstillende, at en subwoofer er unødvendig.",
-     "simpleTitle": "Kraftig bas uden altid at behøve en subwoofer",
+     "sentimentAnalysis": "Flere anmeldelser beskriver en fyldig og dyb bas, der også fungerer overbevisende uden subwoofer.",
+     "simpleTitle": "Kraftig bas uden altid behov for subwoofer",
      "bias": "positive",
-     "key": "subwoofer-free-bass",
-     "groupId": "9933a34b-d876-4aa4-852b-1fa8da874048"
+     "key": "bass-output",
+     "groupId": "9ca8503b-c222-4f6f-9ac5-56f49257926d"
     },
-    "the lowest bass may benefit from a subwoofer": {
-     "sentimentAnalysis": "Nogle anlæg forventes især at få gavn af en subwoofer til de dybeste toner og den nederste oktav.",
-     "simpleTitle": "Den dybeste bas kan have gavn af en subwoofer",
+    "the lowest bass can benefit from a subwoofer": {
+     "sentimentAnalysis": "Nogle anmeldelser bemærker, at de dybeste frekvenser mangler lidt fylde, eller at en subwoofer kan være en fordel.",
+     "simpleTitle": "Den dybeste bas kan få hjælp af en subwoofer",
      "bias": "negative",
-     "key": "deepest-bass-limit",
-     "groupId": "9933a34b-d876-4aa4-852b-1fa8da874048"
+     "key": "lowest-bass-limit",
+     "groupId": "9ca8503b-c222-4f6f-9ac5-56f49257926d"
     },
-    "elegant wall-mounted design saves floor space": {
-     "sentimentAnalysis": "Det slanke vægmonterede format roses for den flotte finish og for at frigøre gulvplads.",
-     "simpleTitle": "Elegant vægdesign frigør gulvplads",
+    "elegant, space-saving wall-mounted design": {
+     "sentimentAnalysis": "Anmeldelserne roser den flotte udførelse, den gode vægoptik og den frigivne gulvplads.",
+     "simpleTitle": "Elegant og pladsbesparende vægdesign",
      "bias": "positive",
-     "key": "wall-mounted-design",
-     "groupId": "5f790a7c-6957-425f-bb16-2a2eeec6f294"
+     "key": "wall-design",
+     "groupId": "cba13433-d35b-4f3e-8156-fe5015cc527d"
     }
    },
    "grouping": {
-    "d18b1d4d-48fa-4c0f-8e7b-f7972939ee66": {
+    "67ce4657-d8b0-4256-8a04-d3db1866b728": {
      "title": "Lydkvalitet",
-     "id": "d18b1d4d-48fa-4c0f-8e7b-f7972939ee66",
+     "id": "67ce4657-d8b0-4256-8a04-d3db1866b728",
      "references": [
       "b8c78509-6f91-4b14-a058-5d78dcf61592",
       "4b4315dc-a862-4ace-b281-ff30577ae9cb",
       "36f459d5-0676-4d3f-b934-79f07f90dbac",
       "d56380fd-1022-4abe-b524-c1324f8e00df",
-      "04ab774f-4433-4642-a7f0-7e12f0b44d78",
       "212e63fa-c0b5-419f-955d-d5bc1467da79",
       "e579fb74-58d7-439c-89fc-3ae14d606951",
       "5910dc7d-2702-4440-9106-779be1c38d31",
@@ -446,9 +449,9 @@
       "6fb4cd48-8d32-4214-9984-be3469d284c2"
      ]
     },
-    "9933a34b-d876-4aa4-852b-1fa8da874048": {
+    "9ca8503b-c222-4f6f-9ac5-56f49257926d": {
      "title": "Basgengivelse",
-     "id": "9933a34b-d876-4aa4-852b-1fa8da874048",
+     "id": "9ca8503b-c222-4f6f-9ac5-56f49257926d",
      "references": [
       "36f459d5-0676-4d3f-b934-79f07f90dbac",
       "d56380fd-1022-4abe-b524-c1324f8e00df",
@@ -457,13 +460,12 @@
       "443dcf2d-a828-49fa-9245-247b5237f9f2"
      ]
     },
-    "5f790a7c-6957-425f-bb16-2a2eeec6f294": {
-     "title": "Design og installation",
-     "id": "5f790a7c-6957-425f-bb16-2a2eeec6f294",
+    "cba13433-d35b-4f3e-8156-fe5015cc527d": {
+     "title": "Design og placering",
+     "id": "cba13433-d35b-4f3e-8156-fe5015cc527d",
      "references": [
       "d56380fd-1022-4abe-b524-c1324f8e00df",
       "e579fb74-58d7-439c-89fc-3ae14d606951",
-      "abd32931-8e5f-4f7f-8b1b-b9b056cab40c",
       "6fb4cd48-8d32-4214-9984-be3469d284c2"
      ]
     }

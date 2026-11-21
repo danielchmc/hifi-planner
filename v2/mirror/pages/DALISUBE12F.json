@@ -13,6 +13,20 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "LFE",
+   "Fra beskrivelsen": "Linjeindgange : Linje mono LFE), linje stereo"
+  },
+  "gallery": [
+   "67312c01-2da9-420e-a41c-4df2785b34c6",
+   "760d9926-876c-471d-81b8-0dd62dd3c073",
+   "b55b4683-c892-4c90-aad0-7ca516d4970d",
+   "f0d30601-95a0-407b-bba0-1b778bdb1a4c",
+   "b9bc849b-29f1-45c2-9c80-6639355cf8f9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 517,
   "skuCode": "DALISUBE12F",
@@ -134,10 +148,10 @@
    "id": 69681
   },
   "stockItemAlternative": {
-   "save": "1.100,-",
+   "save": "1.200,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DALISUBE12F",
-   "availableQuantity": 6,
-   "lowestPrice": "5.599,-"
+   "availableQuantity": 7,
+   "lowestPrice": "5.499,-"
   },
   "variants": [
    {
@@ -194,7 +208,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 109,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -274,7 +288,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 215,
+     "availableQuantity": 221,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -394,34 +408,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALI SUB E-12 F leverer varm, dyb og slagkraftig bas, som giver film overbevisende effekt og musik større fylde og skala. Den kraftige ydelse forbliver i høj grad kontrolleret og kan justeres, hvilket gør subwooferen til en stærk opgradering af stereo- og surroundanlæg. Enkelte ejere oplever dog, at placering og kalibrering kræver omhu, og at den fyldige bas kan blive for meget i mindre hjem.",
+   "summary": "DALISUBE12F roses bredt for sin dybe, kraftfulde og kontrollerede bas, der tilfører varme, effekt og indlevelse til både musik og film. Den slagkraftige og rumfyldende gengivelse fungerer godt sammen med mange DALI- og andre højttalersystemer, mens justeringsmulighederne gør det muligt at opnå en afbalanceret lyd med omhyggelig opsætning. Enkelte anmeldelser nævner placeringsfølsomhed, for meget bas i mindre rum eller lejlighedsvis uønsket støj, men den samlede vurdering er meget begejstret, og værdien anses som stærk.",
    "headlines": {
-    "a major upgrade for music and movies": {
-     "sentimentAnalysis": "Ejerne beskriver fyldigere musik, mere omsluttende film og større skala i både stereo- og surroundgengivelse.",
-     "simpleTitle": "En stor opgradering til musik og film",
+    "clear and controlled rather than boomy": {
+     "sentimentAnalysis": "Flere anmeldelser roser den tørre, præcise, transparente og kontante bas, som forbliver afbalanceret uden at dominere resten af lyden.",
+     "simpleTitle": "Klar og kontrolleret bas uden bulder",
      "bias": "positive",
-     "key": "immersive-upgrade",
-     "groupId": "979e9224-88e3-4c40-a56a-f786b3d92ff6"
+     "key": "controlled_bass",
+     "groupId": "9e45c390-2a9a-4c70-8756-843d6d035fc3"
     },
-    "deep, powerful and controlled bass": {
-     "sentimentAnalysis": "Anmeldelserne roser den dybe gengivelse, det kraftige tryk, præcisionen og den rene kontrol til både musik og film.",
-     "simpleTitle": "Dyb, kraftfuld og kontrolleret bas",
+    "deep, powerful bass transforms music and films": {
+     "sentimentAnalysis": "Anmeldelserne beskriver dyb, kraftfuld og rumfyldende bas med stor effekt i actionfilm samt ekstra varme og dybde i musik.",
+     "simpleTitle": "Dybt og kraftfuldt basløft til musik og film",
      "bias": "positive",
-     "key": "deep-bass",
-     "groupId": "979e9224-88e3-4c40-a56a-f786b3d92ff6"
+     "key": "bass_impact",
+     "groupId": "9e45c390-2a9a-4c70-8756-843d6d035fc3"
     },
-    "careful placement and calibration are important": {
-     "sentimentAnalysis": "Flere anmeldelser bemærker, at placering, rumakustik og kalibrering kan være krævende; enkelte oplever uønsket støj ved meget dyb bas.",
-     "simpleTitle": "Omhyggelig placering og kalibrering er vigtig",
+    "placement and room matching require care": {
+     "sentimentAnalysis": "Nogle lyttere fandt placering, rumakustik eller kalibrering krævende, fordi bassen blev for kraftig eller mindre kontrolleret i bestemte rum.",
+     "simpleTitle": "Placering og rumstilpasning kræver omhu",
      "bias": "negative",
-     "key": "placement-challenges",
-     "groupId": "26761897-1ac8-4510-a21e-61d2bbb1e0ac"
+     "key": "placement_limits",
+     "groupId": "905d42d4-455e-4342-825d-ad5392890078"
     }
    },
    "grouping": {
-    "979e9224-88e3-4c40-a56a-f786b3d92ff6": {
-     "title": "Lydkvalitet",
-     "id": "979e9224-88e3-4c40-a56a-f786b3d92ff6",
+    "9e45c390-2a9a-4c70-8756-843d6d035fc3": {
+     "title": "Bas og lydkvalitet",
+     "id": "9e45c390-2a9a-4c70-8756-843d6d035fc3",
      "references": [
       "ef36e3d3-721e-4024-add2-b9b1d081aa96",
       "b0c8da4d-f3d8-4ebd-aa00-6385b38a88ea",
@@ -438,8 +452,6 @@
       "5ceb2147-11ac-4d8c-be89-50c741d3a69a",
       "ca70613c-05f4-4fad-81d0-6c330b42c85c",
       "b48670cf-6450-4282-826a-fe5013138d0d",
-      "5bfaddff-c3b9-426a-9fb3-a00cb7a0d80c",
-      "615883e6-2783-4826-a12e-357c99906240",
       "4bba2bf2-ebdc-406b-9089-c262c666cade",
       "82a56ff1-f20f-4b8a-9944-52580f6b6f52",
       "37956d07-e37e-44cb-aa90-4b7b775ac40d",
@@ -449,17 +461,15 @@
       "dadd8d6d-a7fd-4739-ac5b-9e18778a1704",
       "85506396-0da2-42cc-9c75-f3d96d24cc4a",
       "dae59093-e643-4924-af81-70729d83b5e8",
-      "b8487320-7caa-4f77-ba0d-36140801e5cd",
       "9f0e634b-35b5-402a-905b-b97026bc8cb5",
-      "d0701f41-f1be-464a-9792-610404f11c8d",
       "17227021-28a7-4fea-b8b1-4744f79049df",
       "02bc735d-4ebb-4d0b-824a-04eaa5b0450a",
       "a43ae132-30e5-4373-8508-bc626fa294c5",
       "24c51e3e-3d9c-458a-bf13-0b951c6a3989",
-      "afe429c2-4cc9-4538-b633-11e0c5ce27fd",
       "f24bc45e-e3ba-4f8d-a4b9-61d064cc0ac3",
       "d1be939f-ceb3-42c0-abe9-00c7e6932e5a",
       "5a92c811-ce0e-4b73-9ea9-364671934fee",
+      "f52802be-fc63-4e87-ba4b-c53085926a65",
       "e549623f-3718-4e1d-a5a1-3c171e19f370",
       "c6bc8bee-a2e4-4507-87fe-99c89f38ed9f",
       "fcf1f646-6144-4666-82df-2d81e67e5fbf",
@@ -468,30 +478,21 @@
       "2055edc7-a2d8-440e-ad8c-ea11657acd9d",
       "d97dfd19-1ce5-4b5a-b9ff-56af35248316",
       "4ddac9cf-c5b0-4ea8-a8bb-c6de9d6d5052",
-      "2dab86b1-364d-4eba-aa3d-3665215cc235",
+      "7eb3d51f-d4cb-4e8d-b60f-d97ae33c4b1b",
       "ea6d31d7-b898-440c-9c98-ec677d025f3e",
       "743a6ae3-1504-4027-86aa-79c6e4a40b4f",
       "d0c042d7-7887-47f4-8d34-7a76563c6a0c",
       "7b8a0840-9300-4651-aa01-dd9a44bb71ad",
-      "f95042e3-b997-4d8d-a150-29f8ad4a80ef",
       "b53f34ae-149d-47d0-bead-3f09786719ed",
-      "67c316b4-98ae-451a-a5c6-4faaf5b4e132",
       "6c909e84-d6b2-4e90-b729-627eb7d51e83",
-      "f1f14602-5aaa-4d69-b449-d82a4c03c914",
-      "40d58150-4c27-4eb6-917b-e8fa57732aca",
       "88466e21-12b5-40b2-acc2-11d555d260f3",
-      "2bcfc802-e08d-4ff2-bb78-911773f0eedd",
-      "47258cc7-e26f-4870-b1d2-86049c3b2b97",
-      "86bb3526-abd2-4c5a-af76-73a8eb824bb5",
-      "fd5c72fd-6b24-4fa1-a738-0b4d369ed4eb",
-      "24b6e37d-a811-4173-86df-9ae948025f78",
-      "f52802be-fc63-4e87-ba4b-c53085926a65",
-      "09f91455-99ed-455c-a9c3-8f90b4da4ca8"
+      "f1f14602-5aaa-4d69-b449-d82a4c03c914",
+      "40d58150-4c27-4eb6-917b-e8fa57732aca"
      ]
     },
-    "26761897-1ac8-4510-a21e-61d2bbb1e0ac": {
+    "905d42d4-455e-4342-825d-ad5392890078": {
      "title": "Opsætning og integration",
-     "id": "26761897-1ac8-4510-a21e-61d2bbb1e0ac",
+     "id": "905d42d4-455e-4342-825d-ad5392890078",
      "references": [
       "ef36e3d3-721e-4024-add2-b9b1d081aa96",
       "bc83b3d0-1577-43ea-8cc4-e34e8fcd952e",
@@ -504,11 +505,11 @@
       "b8487320-7caa-4f77-ba0d-36140801e5cd",
       "f18919ea-008c-4a00-928f-cd066fbf0594",
       "918c83da-b081-423c-8a93-c8f5ccd7859a",
-      "d97dfd19-1ce5-4b5a-b9ff-56af35248316",
       "4ddac9cf-c5b0-4ea8-a8bb-c6de9d6d5052",
       "7eb3d51f-d4cb-4e8d-b60f-d97ae33c4b1b",
+      "d97dfd19-1ce5-4b5a-b9ff-56af35248316",
       "0b52f8ae-cb25-455b-9204-08bfd3a910fd",
-      "00d6a7e8-8250-4ca6-9a2c-9c54bbdff192"
+      "f95042e3-b997-4d8d-a150-29f8ad4a80ef"
      ]
     }
    },

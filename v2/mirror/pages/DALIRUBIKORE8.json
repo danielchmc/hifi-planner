@@ -13,6 +13,22 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Premium ”outrigger” Spike Set"
+  },
+  "gallery": [
+   "3fc32456-1dcb-4b99-90eb-904ae83893cd",
+   "04735486-5b66-47cc-8424-15fbe5afe440",
+   "52fd40f2-ad35-49d6-abd0-9c9da3aeb402",
+   "341e0ca7-dde2-41db-a6fb-a2bb0aec2179",
+   "2dc30dad-a2f2-4f32-92fc-0b8f1d6ebda0",
+   "c16a906a-9c43-4820-b6f7-234fa09c9e75",
+   "c947239f-5b86-4a6b-8356-1e0bdc6c3321",
+   "da26a667-d089-4a7b-90b6-3eb469a902ce"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 232246,
   "skuCode": "DALIRUBIKORE8",
@@ -219,7 +235,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 10,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -499,7 +515,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 12,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -581,48 +597,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIRUBIKORE8 leverer en varm, detaljeret og særdeles medrivende lyd med imponerende klarhed, punch og rumfornemmelse til både musik og film. Den kontrollerede bas, den store scene og de raffinerede højder gør højttalerne engagerende ved både moderate og høje niveauer, mens sammenligninger placerer dem tæt på langt dyrere modeller. Det elegante, stuevenlige design og den stærke værdi giver en gennemgående begejstret vurdering, dog med anbefaling om tålmodig tilspilning.",
+   "summary": "DALIRUBIKORE8 leverer en varm, detaljeret og meget medrivende lyd med punchy, kontrolleret bas, et stort lydbillede og fremragende dybde. Højttalerne afslører fine detaljer i hele frekvensområdet, gør musik og film intenst engagerende og fungerer særligt godt med passende forstærkere. Førsteklasses konstruktion, elegant design og en ydelse tæt på langt dyrere modeller gør DALIRUBIKORE8 til et stærkt anbefalet valg, selv om grundig tilspilning kan betale sig, og den dybeste bas kan få hjælp af en subwoofer.",
    "headlines": {
-    "detailed, expansive and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, detaljerede gengivelse, den brede scene og den medrivende musik- og filmoplevelse.",
-     "simpleTitle": "Detaljeret, stor og medrivende lyd",
+    "detailed, warm and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den varme, klare, præcise og meget detaljerede gengivelse med stor, dyb og medrivende lyd.",
+     "simpleTitle": "Detaljeret, varm og medrivende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "46b68342-b0e5-46da-8ccf-aacc3f2594c3"
+     "groupId": "52aad3a0-bfd2-4e49-ae49-afbe4743a636"
+    },
+    "a major step up from earlier DALI models": {
+     "sentimentAnalysis": "Sammenligninger fremstiller konsekvent Rubikore 8 som en markant forbedring i forhold til Rubicon-, Rubicon 2- og Opticon-modeller og tæt på langt dyrere alternativer.",
+     "simpleTitle": "Et stort skridt frem fra tidligere DALI-modeller",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "52aad3a0-bfd2-4e49-ae49-afbe4743a636"
     },
     "powerful, controlled bass": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den dybe, kontante og velkontrollerede bas, som normalt gør en subwoofer overflødig.",
+     "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, punchy og kontrolleret med rigelig effekt til musik og film.",
      "simpleTitle": "Kraftfuld, kontrolleret bas",
      "bias": "positive",
-     "key": "bass",
-     "groupId": "096ecaa5-e0a8-4ead-bab3-47d651653243"
+     "key": "sound-quality",
+     "groupId": "52aad3a0-bfd2-4e49-ae49-afbe4743a636"
     },
-    "elegant, room-friendly construction": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter det flotte udseende, den eksklusive finish, kvaliteten og den stuevenlige størrelse.",
-     "simpleTitle": "Elegant og stuevenligt design",
+    "elegant, well-built and room-friendly": {
+     "sentimentAnalysis": "Anmeldelserne roser det attraktive, møbellignende udseende, den eksklusive finish, byggekvaliteten og den stuevenlige størrelse.",
+     "simpleTitle": "Elegant, velbygget og stuevenlig",
      "bias": "positive",
-     "key": "design",
-     "groupId": "2939dd14-a2e8-41fe-b13a-54150814114a"
+     "key": "design-build",
+     "groupId": "13bb7beb-e88a-48f2-8965-f6e809351287"
     },
-    "bass can feel restrained at low volume": {
-     "sentimentAnalysis": "Ved visse lytteforhold virker den dybe bas mindre fyldig; en subwoofer kan tilføje mere dybde eller stramhed.",
-     "simpleTitle": "Bassen kan virke afdæmpet ved lav lydstyrke",
+    "bass can be light at low volume or lack the deepest reach": {
+     "sentimentAnalysis": "Nogle anmeldelser bemærker en mere tilbageholdende bas ved lav lydstyrke eller lidt mindre dybbas og foreslår en subwoofer som supplement.",
+     "simpleTitle": "Bassen kan være lidt tam ved lav lydstyrke eller mangle den dybeste bas",
      "bias": "negative",
-     "key": "bass",
-     "groupId": "096ecaa5-e0a8-4ead-bab3-47d651653243"
+     "key": "sound-quality",
+     "groupId": "52aad3a0-bfd2-4e49-ae49-afbe4743a636"
     },
-    "patient break-in improves the sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring efter længere tilspilning, som belønner tålmodighed med en fyldigere lyd.",
-     "simpleTitle": "Tålmodig tilspilning forbedrer lyden",
-     "bias": "positive",
+    "a patient break-in period pays off": {
+     "sentimentAnalysis": "Begge anmeldelser beskriver en mærkbar tilspilningsperiode, efterfulgt af en tydeligt forbedret og belønnende lyd.",
+     "simpleTitle": "Tålmodig tilspilning betaler sig",
+     "bias": "meh",
      "key": "break-in",
-     "groupId": "77ccf3da-d6c2-44f3-bcb5-455d9480fbe4"
+     "groupId": "7ba06d92-1842-4750-b467-9ae93e3f9bf5"
     }
    },
    "grouping": {
-    "46b68342-b0e5-46da-8ccf-aacc3f2594c3": {
+    "52aad3a0-bfd2-4e49-ae49-afbe4743a636": {
      "title": "Lydkvalitet",
-     "id": "46b68342-b0e5-46da-8ccf-aacc3f2594c3",
+     "id": "52aad3a0-bfd2-4e49-ae49-afbe4743a636",
      "references": [
       "fd69fde0-591d-477a-9cc1-b242849acbf9",
       "38f1650d-533e-47fe-8f86-c78fa87bb7da",
@@ -636,12 +659,12 @@
       "030fc5b8-16cd-4712-9abb-bb04765782c4",
       "1c063c1f-69d8-4f66-885a-303a1e29d87a",
       "7f90d852-c5cb-43bd-8662-9e185206050a",
+      "69edaba0-df70-4987-a6e9-6963b33c448d",
       "fffc4436-628d-4877-bac8-336c034bac01",
       "99ec6b2e-1627-4833-973d-447d9b4d69e3",
       "0b53cfb4-dd3a-4004-afd2-2865821b6db1",
       "85f9c8bd-a631-4ff6-8745-f4469b85e385",
       "b25c8b92-d3c6-4796-b192-388049758043",
-      "a7c1b2a4-5a12-47d4-99f6-4689b8e28c2c",
       "7a3838a3-3a0b-4eda-9b76-58c0772d64d8",
       "9033fda0-5c62-4047-8e86-6149247671e2",
       "11daa325-e535-46c4-8ea2-7a82a8aff421",
@@ -653,22 +676,9 @@
       "82cde381-60da-4723-9ea0-fba424e371d5"
      ]
     },
-    "096ecaa5-e0a8-4ead-bab3-47d651653243": {
-     "title": "Basgengivelse",
-     "id": "096ecaa5-e0a8-4ead-bab3-47d651653243",
-     "references": [
-      "9f919502-c5c1-4fc4-92fe-e1695336dff0",
-      "7f90d852-c5cb-43bd-8662-9e185206050a",
-      "69edaba0-df70-4987-a6e9-6963b33c448d",
-      "99ec6b2e-1627-4833-973d-447d9b4d69e3",
-      "9033fda0-5c62-4047-8e86-6149247671e2",
-      "8cddced2-8574-47eb-9a01-97810d8373d1",
-      "82cde381-60da-4723-9ea0-fba424e371d5"
-     ]
-    },
-    "2939dd14-a2e8-41fe-b13a-54150814114a": {
-     "title": "Design og forarbejdning",
-     "id": "2939dd14-a2e8-41fe-b13a-54150814114a",
+    "13bb7beb-e88a-48f2-8965-f6e809351287": {
+     "title": "Design og byggekvalitet",
+     "id": "13bb7beb-e88a-48f2-8965-f6e809351287",
      "references": [
       "1fbcbf01-67d3-4028-9cbc-7b51c3ebacb3",
       "878abb77-bb1f-41e3-886e-6bd37b43d0be",
@@ -676,9 +686,9 @@
       "5dd53095-dbd4-4407-b0b9-212f8a5db829"
      ]
     },
-    "77ccf3da-d6c2-44f3-bcb5-455d9480fbe4": {
+    "7ba06d92-1842-4750-b467-9ae93e3f9bf5": {
      "title": "Tilspilning",
-     "id": "77ccf3da-d6c2-44f3-bcb5-455d9480fbe4",
+     "id": "7ba06d92-1842-4750-b467-9ae93e3f9bf5",
      "references": [
       "9e48565a-e3b5-4337-acb0-7517326c6b05",
       "9f919502-c5c1-4fc4-92fe-e1695336dff0"

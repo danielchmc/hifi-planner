@@ -13,6 +13,18 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "b678683d-b3d8-45c8-b269-d74aaeb30b33",
+   "282f2be3-f3b2-4573-b315-62467cdd6fbb",
+   "ba4afaa3-75e6-4ae4-90b8-8852332c9790",
+   "9cb1cbb5-a081-40e0-af00-a36f1911b392"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270661,
   "skuCode": "DALISONIK1",
@@ -288,7 +300,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 42,
+     "availableQuantity": 48,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -369,7 +381,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 120,
+     "availableQuantity": 118,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -459,7 +471,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 90,
+     "availableQuantity": 94,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -618,48 +630,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALISONIK1 leverer en imponerende klar, detaljeret og rummelig lyd for så kompakt en højttaler. Stemmer, instrumenter og diskant roses gennemgående, ligesom den kontante bas og den stærke præstation i mindre rum, TV-systemer og surroundopsætninger. Den største begrænsning er, at bassen ikke har større højttaleres fylde i større rum, men den samlede værdi, finish og mulighed for opgradering gør højttaleren meget attraktiv.",
+   "summary": "DALISONIK1 leverer varm, klar og detaljeret lyd fra et imponerende kompakt kabinet med et stort, omsluttende lydbillede og en kontant bas. Højttalerne fungerer især godt i små og mellemstore rum, som TV- eller musikhøjttalere og som surroundkanaler, mens en subwoofer kan tilføre ekstra dybde og fylde. Den solide kvalitet, det flotte design og den stærke værdi gør DALISONIK1 til en varm anbefaling, selv om større anlæg kan afsløre begrænsninger i den dybe bas.",
    "headlines": {
-    "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne roser klarhed, detaljeopløsning, naturlige stemmer og en overbevisende rumlig gengivelse.",
-     "simpleTitle": "Klar, detaljeret og rummelig lyd",
+    "clear, detailed sound with a spacious presentation": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver fremragende klarhed, detaljegrad, naturlige stemmer og et stort, omsluttende lydbillede.",
+     "simpleTitle": "Klar og detaljeret lyd med stor rumlighed",
      "bias": "positive",
-     "key": "clear_detailed_sound",
-     "groupId": "19a3a6d1-f816-45a4-8a12-e8976aba044f"
+     "key": "sound",
+     "groupId": "496b4f2b-8123-4bba-819e-943699c4f15a"
     },
-    "punchy bass with a larger sound than expected": {
-     "sentimentAnalysis": "De kompakte kabinetter leverer en fyldig, kontant og overraskende stor lyd, især sammen med en subwoofer eller ved højere lydstyrke.",
-     "simpleTitle": "Kontant bas og overraskende stor lyd",
+    "surprisingly powerful sound for a compact speaker": {
+     "sentimentAnalysis": "De kompakte kabinetter leverer høj lydstyrke, fyldig lyd og imponerende bas i forhold til størrelsen, især i mindre rum.",
+     "simpleTitle": "Overraskende kraftig lyd fra en kompakt højttaler",
      "bias": "positive",
-     "key": "punchy_compact_sound",
-     "groupId": "19a3a6d1-f816-45a4-8a12-e8976aba044f"
+     "key": "sound",
+     "groupId": "496b4f2b-8123-4bba-819e-943699c4f15a"
     },
-    "excellent for compact spaces and surround systems": {
-     "sentimentAnalysis": "Det kompakte format, den nemme placering og den stærke ydelse gør højttaleren særligt velegnet til mindre rum og surroundkanaler.",
-     "simpleTitle": "Fremragende til små rum og surroundsystemer",
+    "highly effective for surround and TV systems": {
+     "sentimentAnalysis": "Anmeldelserne beskriver stærk ydelse som bag-, surround- eller TV-højttalere med kræfter nok til frontbrug i mindre opsætninger.",
+     "simpleTitle": "Meget velegnet til surround- og TV-systemer",
      "bias": "positive",
-     "key": "compact_surround_use",
-     "groupId": "6d665bdf-0951-45b9-8301-b2fe40a729f4"
+     "key": "surround",
+     "groupId": "8b0b39fb-fa3d-454d-9b33-8af872b9eeea"
     },
-    "premium finish and strong value": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den flotte udførelse, det tidløse udseende og den imponerende værdi for pengene.",
-     "simpleTitle": "Flot finish og stærk værdi",
+    "compact, discreet and easy to place": {
+     "sentimentAnalysis": "Det kompakte kabinet roses gentagne gange for at være diskret, flot og nemt at placere i mindre rum.",
+     "simpleTitle": "Kompakt, diskret og nem at placere",
      "bias": "positive",
-     "key": "value_and_finish",
-     "groupId": "6d665bdf-0951-45b9-8301-b2fe40a729f4"
+     "key": "compact",
+     "groupId": "a14b5dbf-b41a-48d3-8bfa-8d540a420f41"
     },
-    "bass can lack fullness in larger rooms": {
-     "sentimentAnalysis": "Nogle anmeldelser bemærker, at det lille kabinet i visse opsætninger ikke kan matche større højttalere i basfylde eller rumfyldende gengivelse.",
-     "simpleTitle": "Bassen kan mangle fylde i større rum",
+    "bass can lack the fullness of larger speakers": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at den rene bas mangler større højttaleres fylde; opgraderede delefiltre eller større højttalere forbedrer resultatet.",
+     "simpleTitle": "Bassen kan mangle større højttaleres fylde",
      "bias": "negative",
-     "key": "limited_large_room_bass",
-     "groupId": "19a3a6d1-f816-45a4-8a12-e8976aba044f"
+     "key": "sound",
+     "groupId": "496b4f2b-8123-4bba-819e-943699c4f15a"
     }
    },
    "grouping": {
-    "19a3a6d1-f816-45a4-8a12-e8976aba044f": {
+    "496b4f2b-8123-4bba-819e-943699c4f15a": {
      "title": "Lydkvalitet",
-     "id": "19a3a6d1-f816-45a4-8a12-e8976aba044f",
+     "id": "496b4f2b-8123-4bba-819e-943699c4f15a",
      "references": [
       "436369f2-d265-42d2-8992-48e7e8f016e4",
       "e7cd9840-2164-4503-ae0b-9b84141592d5",
@@ -668,6 +680,7 @@
       "abdd6d3d-3978-45b5-a8e1-5ddbdc0da175",
       "c68d5140-a40b-42c0-89ea-e3f87d9e28b1",
       "b2a202dc-f138-40ca-b068-4f57cf471806",
+      "1bf0cfa2-d727-4858-af7d-088f4da9d7aa",
       "5f98c3ae-b75e-4a4a-8402-2e1b27ae32bb",
       "89fb8f3f-fd45-476b-bddd-bc222b895d26",
       "4c9edb55-161b-4d52-a42c-2625e1f64044",
@@ -690,9 +703,9 @@
       "dfa3b65f-02c3-4f8a-8fab-0771d41860b6"
      ]
     },
-    "6d665bdf-0951-45b9-8301-b2fe40a729f4": {
-     "title": "Kompakt design",
-     "id": "6d665bdf-0951-45b9-8301-b2fe40a729f4",
+    "a14b5dbf-b41a-48d3-8bfa-8d540a420f41": {
+     "title": "Kompakt størrelse og placering",
+     "id": "a14b5dbf-b41a-48d3-8bfa-8d540a420f41",
      "references": [
       "436369f2-d265-42d2-8992-48e7e8f016e4",
       "35c04c78-8d8e-4a3d-9baf-3d270c894027",
@@ -700,12 +713,24 @@
       "5f98c3ae-b75e-4a4a-8402-2e1b27ae32bb",
       "8aebdbc9-969a-4d19-a083-019883a3335e",
       "7737723a-ad35-4b3c-89f2-40c438d538f5",
+      "0fb56235-23e4-4f87-a2e2-aaa19a750dec",
       "0057c653-2eae-4bbe-9d7f-0f87e1c90400",
-      "7a1244f1-7f1b-4afa-9d5e-bba760f87163",
       "b03a78fc-e2c4-4c56-a4b2-776fa671c581",
       "462f16d0-c8fe-4b22-bd73-afcf5572c64c",
+      "543090d3-38b9-48c5-a732-b6e4780d681e"
+     ]
+    },
+    "8b0b39fb-fa3d-454d-9b33-8af872b9eeea": {
+     "title": "Hjemmebiograf og alsidighed",
+     "id": "8b0b39fb-fa3d-454d-9b33-8af872b9eeea",
+     "references": [
+      "abdd6d3d-3978-45b5-a8e1-5ddbdc0da175",
+      "48a657a7-f52b-4bc4-a3ea-9ad3f233d8da",
+      "f393be5f-56e4-4c9f-b17d-3f185225524d",
+      "7a1244f1-7f1b-4afa-9d5e-bba760f87163",
+      "b03a78fc-e2c4-4c56-a4b2-776fa671c581",
       "543090d3-38b9-48c5-a732-b6e4780d681e",
-      "0fb56235-23e4-4f87-a2e2-aaa19a750dec"
+      "dfa3b65f-02c3-4f8a-8fab-0771d41860b6"
      ]
     }
    },

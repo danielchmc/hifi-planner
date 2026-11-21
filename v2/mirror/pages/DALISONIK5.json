@@ -13,6 +13,18 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "585c5771-ff1c-4614-a6be-e7db75cfd802",
+   "0c00a1b5-5234-4385-b103-60c76b619f14",
+   "7c32ff41-1c47-4304-b727-053fc20477f3",
+   "fbfaac98-e0e8-4a14-a23b-ad5a95d1fb74"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270655,
   "skuCode": "DALISONIK5",
@@ -290,7 +302,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 88,
+     "availableQuantity": 84,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -371,7 +383,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 34,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -452,7 +464,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 38,
+     "availableQuantity": 42,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -514,13 +526,13 @@
    {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 14988,
-     "priceFormatted": "14.988,-",
+     "price": 14993,
+     "priceFormatted": "14.993,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 14988,
-     "unitPriceBefore": 14988
+     "unitPrice": 14993,
+     "unitPriceBefore": 14993
     },
     "image": "https://images.hifiklubben.com/image/fb2505d8-f340-48d1-9337-125fba4317ca",
     "title": "DALI SONIK 5 + Marantz STEREO 70s",
@@ -559,41 +571,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALISONIK5 leverer en varm, klar, detaljeret og imponerende kraftfuld lyd fra et kompakt gulvhøjttalerdesign. Den fyldige bas, præcise diskant, velafbalancerede mellemtone og brede, medrivende lydbillede gør musik og film engagerende ved både lav og høj lydstyrke. Elegante proportioner, nem integration i rummet og et fremragende forhold mellem pris og kvalitet gør højttalerne til et stærkt anbefalet valg, selv om enkelte efterlyser mere dybbas eller et lidt højere kabinet.",
+   "summary": "DALISONIK5 leverer varm, klar og imponerende detaljeret lyd fra et kompakt gulvhøjttalerdesign. Punchy og kontrolleret bas, præcis diskant og et bredt, omsluttende lydbillede gør musik og film meget engagerende, mens den kraftige lyd fylder små og mellemstore rum uden besvær. Elegante proportioner, fleksibel placering og fremragende værdi fuldender en stærkt anbefalelsesværdig pakke.",
    "headlines": {
-    "powerful bass and room-filling sound": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den dybe, punchy bas og det overraskende høje output fra den kompakte højttaler, ofte uden subwoofer.",
-     "simpleTitle": "Kraftfuld bas og fyldig lyd",
+    "powerful, deep and controlled bass": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den fyldige, dybe og kontrollerede bas, som ofte gør en subwoofer overflødig.",
+     "simpleTitle": "Kraftig, dyb og kontrolleret bas",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "4ee83aed-f5ea-4bc9-9143-ca61317fe8db"
+     "key": "bass_response",
+     "groupId": "18cf3197-4007-4c3e-a687-40ece8abfeb8"
     },
-    "slim, elegant and easy to place": {
-     "sentimentAnalysis": "Anmeldelserne roser gentagne gange det slanke, elegante udseende, det kompakte format og den harmoniske integration i stuen.",
-     "simpleTitle": "Slankt, elegant og nemt at placere",
+    "compact, elegant and easy to place": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det slanke format, det attraktive udseende og den nemme integration i stuen, også i mindre rum.",
+     "simpleTitle": "Kompakt, elegant og let at placere",
      "bias": "positive",
-     "key": "design-and-size",
-     "groupId": "ccfd9e93-3d46-407f-8538-20ee22877593"
+     "key": "compact_design",
+     "groupId": "a102bf9a-36be-42a6-b3c2-70dd7295f6ef"
     },
     "clear, detailed and balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare, præcise, detaljerede og velafbalancerede gengivelse over hele frekvensområdet.",
-     "simpleTitle": "Klar, detaljeret og afbalanceret lyd",
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare, detaljerede, afbalancerede og præcise gengivelse af musik og film.",
+     "simpleTitle": "Klar, detaljeret og balanceret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "4ee83aed-f5ea-4bc9-9143-ca61317fe8db"
+     "key": "sound_clarity",
+     "groupId": "18cf3197-4007-4c3e-a687-40ece8abfeb8"
     },
-    "some setups benefit from added low end": {
-     "sentimentAnalysis": "Et lille mindretal oplever, at dybbassen er lidt begrænset eller bliver for fremtrædende på basstærke optagelser; i ét setup løser en subwoofer problemet.",
-     "simpleTitle": "Nogle opsætninger har fordel af mere dybbas",
+    "some systems may benefit from a subwoofer": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne nævner mindre dybbas eller en opsætning, der har gavn af en subwoofer.",
+     "simpleTitle": "Nogle anlæg kan have glæde af en subwoofer",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "4ee83aed-f5ea-4bc9-9143-ca61317fe8db"
+     "key": "subwoofer_need",
+     "groupId": "18cf3197-4007-4c3e-a687-40ece8abfeb8"
+    },
+    "correct placement improves the presentation": {
+     "sentimentAnalysis": "Nogle lytteindtryk viser, at afstand og nærhed til væggen kan påvirke den tonale balance og lydbilledet.",
+     "simpleTitle": "Korrekt placering forbedrer gengivelsen",
+     "bias": "meh",
+     "key": "placement",
+     "groupId": "18cf3197-4007-4c3e-a687-40ece8abfeb8"
     }
    },
    "grouping": {
-    "4ee83aed-f5ea-4bc9-9143-ca61317fe8db": {
+    "18cf3197-4007-4c3e-a687-40ece8abfeb8": {
      "title": "Lydkvalitet",
-     "id": "4ee83aed-f5ea-4bc9-9143-ca61317fe8db",
+     "id": "18cf3197-4007-4c3e-a687-40ece8abfeb8",
      "references": [
       "4c07ee07-5a8d-47af-9513-27fe0a6a253a",
       "72578e2a-46d1-4811-ba43-6a9a9a6ff1cf",
@@ -613,6 +632,7 @@
       "f711b901-698a-4343-98d8-4cc3a925a52c",
       "17f00f53-ad8b-4f68-8b20-833b23635e6c",
       "1124d4f3-1baa-4900-b355-40aad657ecfe",
+      "d91f2648-7416-4446-83ab-45e03700b15a",
       "48192a14-fa9c-418a-8204-9355a674693c",
       "c087398b-ce0c-4217-8c90-faea1a4ba7ab",
       "a3b43c4a-6694-4c75-96ee-e5a30ed0daba",
@@ -632,8 +652,6 @@
       "c9024b6a-6409-41b6-9fb1-3e44ddc53f87",
       "059c0e7d-a918-41a9-a7b5-829854aa0e60",
       "a2d368c6-c1f6-46df-bfaf-2805707b2bb9",
-      "8d4e5346-60dc-460f-b4af-ab960cc79079",
-      "559fcb9a-4496-4af3-b98b-4fb02935ee3e",
       "c08da392-9efe-46ad-ae07-b6f7d155115c",
       "3ed824ac-081e-4764-aa8f-819d6b425feb",
       "26cd7453-a83d-422a-b2b2-b05fd72a79ff",
@@ -653,12 +671,11 @@
       "97d1d76e-9baf-4a7c-85be-6f15c7979c58"
      ]
     },
-    "ccfd9e93-3d46-407f-8538-20ee22877593": {
+    "a102bf9a-36be-42a6-b3c2-70dd7295f6ef": {
      "title": "Design og størrelse",
-     "id": "ccfd9e93-3d46-407f-8538-20ee22877593",
+     "id": "a102bf9a-36be-42a6-b3c2-70dd7295f6ef",
      "references": [
       "26c1cebd-d84f-4011-aed3-099059cbb849",
-      "4fa31aec-db5b-4d91-9f5f-1a7e14610eaf",
       "51f60339-1034-4ade-8ca0-c99acda03422",
       "1124d4f3-1baa-4900-b355-40aad657ecfe",
       "fba7cbfc-bea7-4616-a320-09dd8c903991",
@@ -669,23 +686,21 @@
       "db6873e0-cff6-4bea-b75e-6da42219f457",
       "3ce2f9dc-925c-4ba0-8afa-7796805b5c12",
       "9105a934-54f8-4962-8d57-14cd75e2e312",
-      "681f00f4-20c6-4590-af45-d8437e08ca57",
       "d8f918a0-494e-4cbb-b993-ff9ab4d5340c",
       "de15774b-dd9f-4832-a633-3e189955d080",
       "e77be52a-f0ed-4aaf-bfbf-c162c760c18f",
-      "97d1d76e-9baf-4a7c-85be-6f15c7979c58",
-      "218fc9e4-5355-4899-9659-c2acacf7ebd0"
+      "97d1d76e-9baf-4a7c-85be-6f15c7979c58"
      ]
     }
    },
-   "rating": 4.83471074380165,
-   "count": 121,
+   "rating": 4.82786885245902,
+   "count": 122,
    "reviewCount": 63,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
-    "4": 18,
+    "4": 19,
     "5": 102
    }
   },

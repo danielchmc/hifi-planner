@@ -13,6 +13,18 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "3ac2337f-3bb2-4254-bc30-5e1a525756f7",
+   "e62bb8a4-2d7f-45bb-96f2-e0fb43aa1b1c",
+   "839046ae-344d-4069-98b4-b2b92ed20f78",
+   "5d48d7f3-d720-4bb4-a4c6-9732505cca84"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270671,
   "skuCode": "DALISONIKONWALL",
@@ -199,7 +211,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 34,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -283,7 +295,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 34,
+     "availableQuantity": 50,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -364,7 +376,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 22,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -445,7 +457,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 54,
+     "availableQuantity": 62,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -535,62 +547,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALISONIKONWALL leverer varm, slagkraftig og overraskende omsluttende lyd fra et slankt vægmonteret design. Tydelige detaljer, en balanceret klang og overbevisende vokaler gør højttalerne meget velegnede til musik og surround, især i forhold til størrelse og pris. Den dybe bas er naturligt begrænset, men en subwoofer forvandler det kompakte setup til en mere fyldig og kraftfuld oplevelse.",
+   "summary": "DALISONIKONWALL leverer en varm, detaljeret og omsluttende lyd, der virker imponerende stor fra så kompakte væghøjttalere. Kontante mellemtoner, tydelige vokaler og en stærk surround-rumlighed gør højttalerne særdeles velegnede til musik og hjemmebio. Det slanke design og den fleksible vægplacering er store styrker, mens dybere bas får fordel af en subwoofer og omhyggelig systemtilpasning.",
    "headlines": {
-    "excellent sound for the size and price": {
-     "sentimentAnalysis": "Højttalerne roses gentagne gange for imponerende lydkvalitet trods den kompakte størrelse og moderate pris.",
-     "simpleTitle": "Fremragende lyd i forhold til størrelse og pris",
+    "remarkably large, detailed sound": {
+     "sentimentAnalysis": "Højttalerne leverer en usædvanligt god, detaljeret og rummelig lyd i forhold til den kompakte størrelse.",
+     "simpleTitle": "Imponerende stor og detaljeret lyd",
      "bias": "positive",
-     "key": "sound_size_price",
-     "groupId": "1655cebb-5f39-41d8-90fb-4259f9da9d26"
+     "key": "sound",
+     "groupId": "0d785de0-68b2-42d2-856c-f02861f35b81"
     },
-    "detailed and balanced presentation": {
-     "sentimentAnalysis": "Den tonale balance, detaljegengivelsen og vokalernes klarhed roses konsekvent.",
-     "simpleTitle": "Detaljeret og balanceret gengivelse",
+    "effective and spacious surround performance": {
+     "sentimentAnalysis": "Højttalerne tilfører en omsluttende surrounddimension og fungerer meget godt som baghøjttalere.",
+     "simpleTitle": "Overbevisende og rummelig surroundgengivelse",
      "bias": "positive",
-     "key": "detailed_balanced",
-     "groupId": "1655cebb-5f39-41d8-90fb-4259f9da9d26"
+     "key": "surround",
+     "groupId": "a3692cc0-b8d8-4171-b11c-30da157a2738"
     },
-    "a subwoofer completes the experience": {
-     "sentimentAnalysis": "Kombinationen med en subwoofer beskrives gentagne gange som vejen til et mere fyldigt og stærkere system.",
-     "simpleTitle": "En subwoofer fuldender oplevelsen",
+    "slim, space-saving wall design": {
+     "sentimentAnalysis": "Slanke kabinetter, praktisk vægmontering og et rent udtryk passer til rum med begrænset dybde eller plads.",
+     "simpleTitle": "Slankt og pladsbesparende vægdesign",
      "bias": "positive",
-     "key": "subwoofer_pairing",
-     "groupId": "f0b9e612-1636-4803-8be1-c7ec8d1f545b"
+     "key": "design",
+     "groupId": "d791559b-42b9-4dd5-8e49-d079d62e011a"
     },
-    "strong choice for surround channels": {
-     "sentimentAnalysis": "Højttalerne øger omslutningen og fungerer især godt som bag- eller surroundhøjttalere.",
-     "simpleTitle": "Et stærkt valg til surroundkanaler",
+    "clear and convincing vocal reproduction": {
+     "sentimentAnalysis": "Vokaler gengives med en behagelig klarhed og mange detaljer.",
+     "simpleTitle": "Klar og overbevisende gengivelse af vokaler",
      "bias": "positive",
-     "key": "surround_channels",
-     "groupId": "bb85ceef-de7a-4b63-b7d7-e28aba8c425d"
+     "key": "sound",
+     "groupId": "0d785de0-68b2-42d2-856c-f02861f35b81"
     },
-    "deep bass is limited without support": {
-     "sentimentAnalysis": "Kompakte kabinetter kan ikke matche større højttalere i dyb bas og har gavn af en subwoofer.",
-     "simpleTitle": "Den dybe bas er begrænset uden støtte",
+    "deep bass is limited without a subwoofer": {
+     "sentimentAnalysis": "Kompakte kabinetter kan ikke matche større højttalere i den dybe bas, så en subwoofer er en nyttig tilføjelse.",
+     "simpleTitle": "Den dybe bas er begrænset uden subwoofer",
      "bias": "negative",
-     "key": "bass_limit",
-     "groupId": "f0b9e612-1636-4803-8be1-c7ec8d1f545b"
-    },
-    "slim design fits tight spaces": {
-     "sentimentAnalysis": "Det flade vægformat værdsættes i rum og skabe med begrænset dybde.",
-     "simpleTitle": "Slankt design til begrænset plads",
-     "bias": "positive",
-     "key": "slim_placement",
-     "groupId": "8abd867a-d94e-4b5c-a8af-9d48dba1c902"
-    },
-    "clean and discreet appearance": {
-     "sentimentAnalysis": "Højttalerne passer godt ind i indretningen, mens skjulte monteringsdetaljer bevarer et rent udtryk.",
-     "simpleTitle": "Rent og diskret udseende",
-     "bias": "positive",
-     "key": "clean_appearance",
-     "groupId": "8abd867a-d94e-4b5c-a8af-9d48dba1c902"
+     "key": "bass",
+     "groupId": "1662b81f-faf6-41b2-b454-43cd87d923c8"
     }
    },
    "grouping": {
-    "1655cebb-5f39-41d8-90fb-4259f9da9d26": {
+    "0d785de0-68b2-42d2-856c-f02861f35b81": {
      "title": "Lydkvalitet",
-     "id": "1655cebb-5f39-41d8-90fb-4259f9da9d26",
+     "id": "0d785de0-68b2-42d2-856c-f02861f35b81",
      "references": [
       "7c6e67ae-97d3-4e07-b850-d4245ecf0f29",
       "e9b24e62-d21b-416d-bae0-2f8729a8239c",
@@ -605,9 +603,9 @@
       "ef0a6cc0-e0db-409f-bc37-172f7e01cd2e"
      ]
     },
-    "f0b9e612-1636-4803-8be1-c7ec8d1f545b": {
-     "title": "Bas og subwoofer",
-     "id": "f0b9e612-1636-4803-8be1-c7ec8d1f545b",
+    "1662b81f-faf6-41b2-b454-43cd87d923c8": {
+     "title": "Basgengivelse",
+     "id": "1662b81f-faf6-41b2-b454-43cd87d923c8",
      "references": [
       "32653b7b-5d2d-4f1b-b235-3c6d86bcdb62",
       "a9c03f73-450b-43f4-9e39-be77aa972341",
@@ -615,18 +613,19 @@
       "ef0a6cc0-e0db-409f-bc37-172f7e01cd2e"
      ]
     },
-    "bb85ceef-de7a-4b63-b7d7-e28aba8c425d": {
-     "title": "Surround-brug",
-     "id": "bb85ceef-de7a-4b63-b7d7-e28aba8c425d",
+    "a3692cc0-b8d8-4171-b11c-30da157a2738": {
+     "title": "Surroundbrug",
+     "id": "a3692cc0-b8d8-4171-b11c-30da157a2738",
      "references": [
       "62b19af9-3fc0-4c86-8ff8-a7d6be5c07be",
+      "32653b7b-5d2d-4f1b-b235-3c6d86bcdb62",
       "b11045ac-8d3a-4319-9197-c3a53ec66133",
       "ef0a6cc0-e0db-409f-bc37-172f7e01cd2e"
      ]
     },
-    "8abd867a-d94e-4b5c-a8af-9d48dba1c902": {
+    "d791559b-42b9-4dd5-8e49-d079d62e011a": {
      "title": "Design og montering",
-     "id": "8abd867a-d94e-4b5c-a8af-9d48dba1c902",
+     "id": "d791559b-42b9-4dd5-8e49-d079d62e011a",
      "references": [
       "e542d4e9-9d49-4439-8fd8-5fa4cb4808b2",
       "a9c03f73-450b-43f4-9e39-be77aa972341",

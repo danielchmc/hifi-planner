@@ -13,6 +13,21 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "48293382-b9b5-4b97-a86f-75915a6a3cdb",
+   "5e4d20db-b876-4fd8-9e58-49b903c7eea0",
+   "6c372903-13cc-4cf4-b2d0-4ba0aec5799f",
+   "322efc13-7546-464a-8592-c72ec1d7e547",
+   "673f3fc0-8bd7-4303-be84-d5968c49a8bb",
+   "54ffe2be-d2b7-40c1-8803-06de8c998b10",
+   "48b31503-1c7d-48da-b92d-d65f908515e8",
+   "1eb5d8f1-5846-41fd-8f98-2cce114eddd0",
+   "1d3ab4f5-518e-41db-8ef1-be36ff95e27a"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 232219,
   "skuCode": "DALIRUBIKOREONWALL",
@@ -207,7 +222,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 4,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -309,7 +324,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
+     "numberOfStoresExperience": 26,
      "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -405,8 +420,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
-     "availableQuantity": 21,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -508,65 +523,56 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DALIRUBIKOREONWALL leverer varm, kraftfuld og imponerende klar lyd med en bred og medrivende gengivelse, der fungerer fremragende til både musik og hjemmebio. Det væghængte design sparer gulvplads og skaber samtidig en overraskende stor og detaljeret lyd for størrelsen. Premiumprisen virker berettiget i forhold til lyd og finish, selv om monteringssystemet er unødigt besværligt og kunne være mere sikkert.",
+   "summary": "DALIRUBIKOREONWALL roses bredt for sin varme, klare og detaljerede lyd, der giver en imponerende rummelig og omsluttende gengivelse trods vægmonteringen. Højttalerne fungerer fremragende til både musik og hjemmebio med en neutral, slagkraftig og fyldig lyd, der kan måle sig med fritstående modeller i samme prisklasse. Det elegante design, den pladsbesparende placering og den gode samlede værdi gør produktet særligt attraktivt, selv om vægbeslaget er besværligt, og prisen kan føles høj.",
    "headlines": {
-    "warm, clear and smooth sound": {
-     "sentimentAnalysis": "Højttalerne roses for varm, blød, behagelig og krystalklar gengivelse til både musik og film.",
-     "simpleTitle": "Varm, klar og blød lyd",
+    "warm, clear and detailed sound": {
+     "sentimentAnalysis": "Lyden roses for at være varm, blød, klar og meget detaljeret og forbliver behagelig ved forskellige lydstyrker og musikgenrer.",
+     "simpleTitle": "Varm, klar og detaljeret lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "7160ca5f-dae3-401e-a1c7-0ed494792ce5"
+     "groupId": "dc86237f-a9cd-43c9-8dfa-5b98f43ca298"
     },
-    "large, immersive soundstage": {
-     "sentimentAnalysis": "De væghængte højttalere skaber en rumfyldende og stor lyd med et bredt lytteområde og lyder større, end størrelsen antyder.",
-     "simpleTitle": "Stor, medrivende lydscene",
+    "wide, immersive soundstage": {
+     "sentimentAnalysis": "Højttalerne skaber en rumfyldende gengivelse med et bredt sweet spot og en størrelse, der overgår forventningerne til en væghængt model.",
+     "simpleTitle": "Stor og omsluttende lydscene",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "7160ca5f-dae3-401e-a1c7-0ed494792ce5"
+     "groupId": "dc86237f-a9cd-43c9-8dfa-5b98f43ca298"
     },
-    "neutral and detailed playback": {
-     "sentimentAnalysis": "Lyden beskrives som neutral og detaljeret og kan især med gode indspilninger måle sig med fritstående højttalere i samme prisklasse.",
-     "simpleTitle": "Neutral og detaljeret gengivelse",
+    "neutral and powerful performance": {
+     "sentimentAnalysis": "Højttalerne beskrives som neutrale og slagkraftige med kraftig bas og god integration med en subwoofer.",
+     "simpleTitle": "Neutral og kraftfuld gengivelse",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "7160ca5f-dae3-401e-a1c7-0ed494792ce5"
+     "groupId": "dc86237f-a9cd-43c9-8dfa-5b98f43ca298"
     },
-    "wall mounting saves valuable floor space": {
-     "sentimentAnalysis": "On-wall-formatet værdsættes, fordi højttalerne ikke står i vejen og opfylder behovet for plads og indretning uden at gå på kompromis med ydeevnen.",
-     "simpleTitle": "Vægmontering sparer værdifuld gulvplads",
+    "space-saving and attractive design": {
+     "sentimentAnalysis": "Det væghængte format værdsættes, fordi det frigør gulvplads, passer ind i hjemmet og kombinerer et attraktivt udseende med god byggekvalitet.",
+     "simpleTitle": "Pladsbesparende og attraktivt design",
      "bias": "positive",
-     "key": "wall-mounting",
-     "groupId": "8eb1aa69-7543-434d-b6f8-894a1c1021be"
+     "key": "design-placement",
+     "groupId": "548021a3-0884-46c1-9e84-9a3abf5e6fba"
     },
-    "mounting system is fiddly and insecure": {
-     "sentimentAnalysis": "Monteringen kritiseres for at kræve millimeterpræcis boring og besværlig justering, samtidig med at der er bekymring for, hvor sikkert højttaleren sidder på væggen.",
-     "simpleTitle": "Monteringssystemet er besværligt og usikkert",
-     "bias": "negative",
-     "key": "wall-mounting",
-     "groupId": "8eb1aa69-7543-434d-b6f8-894a1c1021be"
-    },
-    "premium price feels justified": {
-     "sentimentAnalysis": "Kombinationen af god lyd, flot udseende og fin forarbejdning får prisen til at virke berettiget.",
-     "simpleTitle": "Premiumprisen føles berettiget",
+    "worth the investment": {
+     "sentimentAnalysis": "Trods den højere pris vurderes lydkvaliteten og den samlede ydeevne til at retfærdiggøre købet.",
+     "simpleTitle": "Pengene værd",
      "bias": "positive",
-     "key": "value-design",
-     "groupId": "b42a3218-1258-4ae4-87d9-682a8af52864"
+     "key": "value",
+     "groupId": "abc04726-4dde-4fe7-87f0-cbdfb875da26"
     }
    },
    "grouping": {
-    "7160ca5f-dae3-401e-a1c7-0ed494792ce5": {
+    "dc86237f-a9cd-43c9-8dfa-5b98f43ca298": {
      "title": "Lydkvalitet",
-     "id": "7160ca5f-dae3-401e-a1c7-0ed494792ce5",
+     "id": "dc86237f-a9cd-43c9-8dfa-5b98f43ca298",
      "references": [
       "2a8cc140-afb4-41e6-8aff-2b410cacd46e",
       "b3572f60-eecc-4441-a32b-d848e278b8b3",
       "bde53112-1cba-4bbd-8930-16582c5d381e",
-      "b5960dae-aca1-4fb0-a008-561738119d9f",
       "4d8fee60-8a1e-4995-8a58-0719e4bb7c06",
       "ff139773-b8fb-4565-ad97-d087ab0d85ce",
       "c35eb1bd-a29b-4404-9b40-9f7c0e10c6a2",
       "2f606d06-da5e-4312-8bec-f20c59f013ec",
-      "a9261bff-a3d6-439d-a1f0-8a00a4306802",
       "7140c76a-e8b1-43e2-8071-a3b9a637a741",
       "bb5d4342-f6eb-4eeb-b38f-040712ef5e61",
       "679b946f-f553-4521-80cb-fb1d0d72e4d9",
@@ -575,24 +581,27 @@
       "901951c1-778c-4f07-acea-03aa4b549b74"
      ]
     },
-    "8eb1aa69-7543-434d-b6f8-894a1c1021be": {
-     "title": "Vægmontering og plads",
-     "id": "8eb1aa69-7543-434d-b6f8-894a1c1021be",
+    "548021a3-0884-46c1-9e84-9a3abf5e6fba": {
+     "title": "Design og placering",
+     "id": "548021a3-0884-46c1-9e84-9a3abf5e6fba",
      "references": [
-      "b5960dae-aca1-4fb0-a008-561738119d9f",
+      "4d8fee60-8a1e-4995-8a58-0719e4bb7c06",
+      "ff139773-b8fb-4565-ad97-d087ab0d85ce",
       "2f606d06-da5e-4312-8bec-f20c59f013ec",
+      "a9261bff-a3d6-439d-a1f0-8a00a4306802",
       "d65335f8-39c0-49d3-9f15-e488bc595c83",
-      "bb5d4342-f6eb-4eeb-b38f-040712ef5e61"
+      "bb5d4342-f6eb-4eeb-b38f-040712ef5e61",
+      "76c5c990-27a4-4a9a-8bd8-9eb2cf263a66"
      ]
     },
-    "b42a3218-1258-4ae4-87d9-682a8af52864": {
-     "title": "Værdi og design",
-     "id": "b42a3218-1258-4ae4-87d9-682a8af52864",
+    "abc04726-4dde-4fe7-87f0-cbdfb875da26": {
+     "title": "Værdi for pengene",
+     "id": "abc04726-4dde-4fe7-87f0-cbdfb875da26",
      "references": [
       "a9261bff-a3d6-439d-a1f0-8a00a4306802",
+      "2f606d06-da5e-4312-8bec-f20c59f013ec",
       "ac7f3772-54ad-47e6-88ab-a0f9c8fc4a52",
-      "7140c76a-e8b1-43e2-8071-a3b9a637a741",
-      "ff139773-b8fb-4565-ad97-d087ab0d85ce"
+      "7140c76a-e8b1-43e2-8071-a3b9a637a741"
      ]
     }
    },
