@@ -560,12 +560,22 @@
     // onto the grid with a short ease, the wires following frame by frame
     const snapOf = (i) => (i.kind === 'mark' || i.kind === 'run' ? snap5 : i.kind === 'plan' ? snapGrid : snap);
     const place = (i) => { const el = els.get(i.id); if (el) { el.style.left = i.x + 'px'; el.style.top = i.y + 'px'; } };
+    // the cards being moved go on top of all others (the last moved is the topmost); the floor plan and rooms stay underneath
+    let raised = false, before = null;
+    const raise = () => {
+      raised = true; before = store.doc.items.slice();
+      const up = group.filter((i) => i.kind !== 'plan' && i.kind !== 'zone'), d = store.doc;
+      if (!up.length || d.items.slice(-up.length).every((i, k) => i === up[k])) return;
+      d.items = d.items.filter((i) => !up.includes(i)).concat(d.items.filter((i) => up.includes(i)));
+      up.forEach((i) => { const el = els.get(i.id); if (el) itemsEl.append(el); });
+    };
     drag(e, (ev, dx, dy) => {
+      if (!raised) raise();
       group.forEach((i, k) => { i.x = start[k][0] + dx / view.z; i.y = start[k][1] + dy / view.z; place(i); const el = els.get(i.id); if (el) el.classList.add('lifting'); });
       renderWires(); placeBar();
     }, (ev, moved, aborted) => {
       group.forEach((i) => { const el = els.get(i.id); if (el) el.classList.remove('lifting'); });
-      if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); return render(); } // second finger: put things back, pinch instead
+      if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); if (before) store.doc.items = before; return render(); } // second finger: put things back, pinch instead
       if (moved) {
         const from = group.map((i) => [i.x, i.y]), to = group.map((i) => [snapOf(i)(i.x), snapOf(i)(i.y)]);
         const T = HP.reducedMotion() ? 0 : 110, t0 = performance.now();

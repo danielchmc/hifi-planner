@@ -81,7 +81,7 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 
 - Left-drag on empty canvas: selection box (Shift or Ctrl adds to the selection). A click on empty canvas deselects.
 - Right-drag or middle-drag (also starting on a card): pan. Right-click without moving: the menu. Space + left-drag: pan. Scroll wheel: zoom.
-- Left-drag on a card, note, mark or wire: move it.
+- Left-drag on a card, note, mark or wire: move it. Whatever you move goes on top of everything else (the last moved is the topmost; the floor plan and rooms stay underneath); [ and ] still reorder by hand.
 
 ## Keyboard
 
