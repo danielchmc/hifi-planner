@@ -410,7 +410,9 @@
         h('.page-label.no-print', null, 'A4 · ' + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')) + ' · ' + (i + 1) + '/' + d.pages),
         i === d.pages - 1 && d.pages > 1 && h('button.page-x.no-print', { title: t('Remove page', 'Fjern side'), onclick: () => { d.pages--; store.commit(); } }, icon('x', 14)),
         h('.page-foot', null, h('span', { html: HP.klubbenSvg() }),
-          h('.page-meta', null, h('div.shopline', null, [HP.shopProfile().name, HP.shopProfile().phone && t('Tel. ', 'Tlf. ') + HP.shopProfile().phone, HP.shopProfile().email].filter(Boolean).join('  ·  ')),
+          // three short lines (shop, how to reach it, adviser and date): large enough to read on paper, and they never wrap mid-line
+          h('.page-meta', null, h('div.shopline', null, HP.shopProfile().name || ''),
+            (HP.shopProfile().phone || HP.shopProfile().email) && h('div', null, [HP.shopProfile().phone && t('Tel. ', 'Tlf. ') + HP.shopProfile().phone, HP.shopProfile().email].filter(Boolean).join('  ·  ')),
             h('div', null, [HP.seller() && t('Your adviser: ', 'Din rådgiver: ') + HP.seller().name, d.name, HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  '))))));
     }
     const r = pageRect(d.pages);
@@ -1137,7 +1139,7 @@
   function usePlan(cv) {
     store.planSrc = cv.toDataURL('image/jpeg', 0.85); store.savePlan();
     const d = store.doc, s = pageSize(), m = 40, col = s.w > s.h ? 370 : 0; // landscape: keep a column free on the right for the legend
-    const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 40) / cv.height);
+    const f = Math.min((s.w - m * 2 - col) / cv.width, (s.h - m * 2 - 70) / cv.height); // 70: room for the footer (three lines)
     // the plan's frame is placed on the grid and sized in whole grid steps (rounded down, so it never grows past the margins);
     // the image keeps its proportions inside the frame (object-fit: contain), so a measured scale stays true
     const w = Math.max(GRID * 5, Math.floor((cv.width * f) / GRID) * GRID), hh = Math.max(GRID * 5, Math.floor((cv.height * f) / GRID) * GRID);
