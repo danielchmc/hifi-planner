@@ -8,6 +8,8 @@ window.HP_DATA.config = {
   adminCode: "44240",
   // Where "Publish" commits the catalogue. "path" is the folder of this app inside the repository ("" for the root).
   github: { owner: "danielchmc", repo: "hifi-planner", branch: "main", path: "v2" },
+  // The address of the live planner: the QR code on a printed proposal links here, also when printed from a local copy.
+  publicUrl: "https://hifiplanner.dk/v2/",
   supportPhone: "30686303",
   feedbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc84cmZgNr_lxXG7VqGd6xRD4UWbcvBiuaOobcauY2_yj3aMA/viewform?usp=dialog"
 };

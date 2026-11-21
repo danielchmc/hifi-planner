@@ -284,6 +284,11 @@
     const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1 });
     const ci = tb('tb-ci', 'plan', t('CI mode', 'CI-tilstand'), () => C().setCI(!store.doc.ci), { text: 1 });
+    // "Gør færdig": the cables and accessories still missing; the badge counts the connections without a cable
+    const done = tb('tb-complete', 'check', t('Complete', 'Gør færdig'), () => HP.complete.open(), { text: 1 }), doneN = h('span.badge');
+    done.append(doneN);
+    const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: complete the proposal', ' forbindelser uden kabel: gør tilbuddet færdigt') : t('Complete the proposal: cables and accessories', 'Gør tilbuddet færdigt: kabler og tilbehør'); };
+    HP.on('doc', doneUpd); setTimeout(doneUpd);
     const orient = h('button.tbtn#tb-orient', { title: t('Switch A4 portrait / landscape', 'Skift A4 stående / liggende'), onclick: () => { store.doc.orient = store.doc.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } }, icon('rotate'), h('span'));
     const publish = h('button.tbtn.publish#tb-publish', { onclick: () => HP.editor.publish() }, icon('cloud'), h('span'));
     const adminBox = h('.tgroup.admin', null, tb('tb-editor', 'edit', t('Product Editor', 'Produkt-editor'), () => HP.editor.open(), { text: 1 }), publish);
@@ -292,9 +297,9 @@
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
       name,
       h('.tgroup#tb-edit', null, tb('tb-new', 'eraser', t('Clear canvas', 'Ryd lærredet'), () => C().clearCanvas()), undo, redo),
-      h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, ci),
+      h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, done, ci),
       h('.tgroup#tb-scale', null, scale),
-      h('.tgroup#tb-printgrp', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => C().print(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
+      h('.tgroup#tb-printgrp', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => HP.cover.dialog(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
       h('.spacer'),
       adminBox,
       h('.tgroup#tb-sharegrp', null, tb('tb-share', 'link', t('Share link', 'Del link'), Pn.share, { text: 1, key: 'Ctrl+Shift+S' }), tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
@@ -577,6 +582,9 @@
     const drafts = store.doc.items.some((i) => i.kind === 'product' && cat.draft.products[i.pid]);
     HP.modal({ title: t('Share this proposal', 'Del dette tilbud'), size: 'md',
       body: [h('.row', null, input, h('button.btn.primary', { onclick: copy }, icon('copy', 14), t('Copy link', 'Kopiér link'))),
+        // the customer's link: the same proposal read only on any phone, without logging in (also what the QR code on the cover opens)
+        h('.row.custlink', null, h('span.muted', null, t('For the customer (read only, no login):', 'Til kunden (kun visning, uden login):')),
+          h('button.btn', { onclick: async () => { const u = await HP.share.customerUrl(); try { await navigator.clipboard.writeText(u); } catch (e) { /* ignore */ } HP.toast(t('Customer link copied', 'Kundelink kopieret'), { kind: 'ok' }); } }, icon('link', 14), t('Copy customer link', 'Kopiér kundelink'))),
         h('p.muted', null, t('Anyone who opens the link in HiFi Planner gets a copy of this canvas: products, cables, notes and page setup. The whole proposal is inside the link itself, so nothing is uploaded, and later changes need a new link.', 'Alle, der åbner linket i HiFi Planner, får en kopi af lærredet: produkter, kabler, noter og sideopsætning. Hele tilbuddet ligger i selve linket, så intet uploades, og senere ændringer kræver et nyt link.')),
         store.doc.items.some((i) => i.kind === 'plan') && h('.note-box', null, icon('warn', 15), t('The floor plan image is not included in links. Use Projects → Export file to send it.', 'Plantegningen er ikke med i links. Brug Projekter → Eksportér fil for at sende den.')),
         drafts && h('.note-box', null, icon('warn', 15), t('This canvas uses products you have not published yet. They will show as unknown for others until you publish.', 'Lærredet bruger produkter, du ikke har udgivet endnu. De vises som ukendte for andre, indtil du udgiver.')),

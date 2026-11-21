@@ -306,7 +306,7 @@
     const s = JSON.stringify(store.doc);
     if (s === last) { HP.emit('doc'); return; }
     hist.push(last); if (hist.length > 120) hist.shift();
-    fut = []; last = s; LS.set('doc', store.doc); HP.emit('doc');
+    fut = []; last = s; if (!store.view) LS.set('doc', store.doc); HP.emit('doc');
   };
   const restore = (s) => {
     last = s; store.doc = JSON.parse(s); LS.set('doc', store.doc);
@@ -322,6 +322,7 @@
     last = JSON.stringify(store.doc); LS.set('doc', store.doc); store.savePlan(); HP.emit('doc'); HP.emit('loaded');
   };
   store.savePlan = () => { if (store.planSrc) { if (!LS.set('plan', store.planSrc)) HP.toast(HP.t('Floor plan is too large to autosave. Export the project to keep it.', 'Plantegningen er for stor til autosave. Eksportér projektet for at gemme den.'), { kind: 'warn' }); } else LS.del('plan'); };
+  store.show = (doc) => { store.doc = migrate(Object.assign(blank(), doc)); store.view = true; HP.emit('doc'); }; // view only: never saved in this browser
   store.blank = blank;
   store.item = (id) => store.doc.items.find((i) => i.id === id);
 
@@ -337,7 +338,8 @@
       items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift || c.lv || c.m) r.push(c.cable || 0); if (c.shift || c.lv || c.m) r.push(Math.round((c.shift || 0) / 5)); if (c.lv || c.m) r.push(c.lv || 0, c.m || 0); return r; }), // [.., cable, shift, length SKU, metres]
-      [doc.ms || 34, doc.mk || [], doc.sc || 0, 4]];
+      [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
+      doc.cv ? [doc.cv.c || '', doc.cv.s || '', doc.cv.sh || [], doc.cv.d || ''] : 0]; // cover: customer, adviser, shop [name, phone, email], date
   }
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
@@ -348,7 +350,8 @@
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
     const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}) }));
-    return Object.assign({ v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
+    const cv = a[10] ? { c: a[10][0], s: a[10][1], sh: a[10][2], d: a[10][3] } : null;
+    return Object.assign(cv ? { cv } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   HP.share = {
     async pack(doc) {
@@ -364,6 +367,8 @@
       return doc;
     },
     async url() { return location.href.split('#')[0] + '#p=' + (await HP.share.pack(store.doc)); },
+    // the customer's link (#t=): the read-only proposal view, no login; on the public site even when printed from a local copy
+    async customerUrl(doc) { const base = /^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/'); return base + '#t=' + (await HP.share.pack(doc || store.doc)); },
     async openFromHash() {
       const m = /^#p=(.+)$/.exec(location.hash); if (!m) return false;
       history.replaceState(null, '', location.href.split('#')[0]);

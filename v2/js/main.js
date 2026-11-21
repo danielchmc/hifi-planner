@@ -12,10 +12,10 @@
     if (mod && k === 'y' && !typing) { e.preventDefault(); return store.redo(); }
     if (e.key === 'F1') { e.preventDefault(); return document.getElementById('tb-theme').click(); } // same hotkeys as the old planner
     if (e.key === 'F3') { e.preventDefault(); return C.togglePrices(); }
-    if (e.key === 'F4') { e.preventDefault(); return C.print(); }
+    if (e.key === 'F4') { e.preventDefault(); return HP.cover.dialog(); }
     if (mod && e.shiftKey && k === 's') { e.preventDefault(); return HP.panels.share(); }
     if (mod && k === 's') { e.preventDefault(); return HP.panels.projects(); }
-    if (mod && k === 'p') { e.preventDefault(); return C.print(); }
+    if (mod && k === 'p') { e.preventDefault(); return HP.cover.dialog(); }
     if (typing) { if (e.key === 'Escape') e.target.blur(); return; }
     if (mod && k === 'd') { e.preventDefault(); return C.duplicateSelection(); }
     if (mod && k === 'a') { e.preventDefault(); return C.selectAll(); }
@@ -51,6 +51,8 @@
   }
 
   window.addEventListener('DOMContentLoaded', () => {
+    // a customer's link (#t=…, from the QR code on a printed proposal): the proposal read only, without logging in
+    const tv = /^#t=(.+)$/.exec(location.hash); if (tv) return HP.cover.viewer(tv[1]);
     HP.panels.login(() => {
       HP.panels.build(document.getElementById('app'));
       HP.share.openFromHash();

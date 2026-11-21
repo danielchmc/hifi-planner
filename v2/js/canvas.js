@@ -149,6 +149,7 @@
 
   // a wire's cable as shown on the wire and in its tooltip: the name with the chosen length or metres
   const stripLen = (s) => String(s || '').replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '').trim();
+  const nMissing = () => (HP.complete ? HP.complete.missing() : 0);
   C.cableName = (c, p) => {
     if (!p) return '';
     const l = c && c.lv && (p.lens || []).find((x) => x.sku === c.lv);
@@ -164,10 +165,11 @@
 
   function priceRows() {
     const d = store.doc, rows = new Map();
-    const add = (p, cable, it) => {
+    const add = (p, cable, it, perM) => {
       if (!p) return;
-      const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || '');
-      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), price: pr.price, was: pr.was, qty: 0, cable };
+      const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || ''), vv = HP.variantOf(p, it);
+      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
+      if (perM) { r.cableM = true; r.name = p.brand + ' ' + (stripLen(p.name) || p.name); } // sold by the metre: qty is metres
       r.qty++; rows.set(key, r);
     };
     // systems: every complete set of cards placed from one bundle (sy) is one line at the bundle price, its parts listed under it;
@@ -183,7 +185,7 @@
       let parts = 0;
       b.parts.forEach((x) => { const its = pool.filter((it) => it.pid === x.id && !used.has(it.id)).slice(0, x.qty * n); its.forEach((it) => { used.add(it.id); parts += HP.priceOf(cat.get(it.pid), it).price; }); sysHave[x.id] = (sysHave[x.id] || 0) + its.length; });
       const each = parts / n, was = Math.max(each, b.was || 0);
-      rows.set('sys|' + sku, { name: cat.systemName(b), url: b.url ? 'https://www.hifiklubben.dk' + b.url : '', price: b.price, was: was > b.price ? Math.round(was) : 0, qty: n, cable: false, sys: true,
+      rows.set('sys|' + sku, { name: cat.systemName(b), url: b.url ? 'https://www.hifiklubben.dk' + b.url : '', sku, price: b.price, was: was > b.price ? Math.round(was) : 0, qty: n, cable: false, sys: true,
         parts: b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · ') });
     });
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
@@ -197,7 +199,7 @@
       for (let i = have; i < mc[pid]; i++) add(p, false, null);
     }
     // a wire's cable: in the chosen length (lv), or by the metre (m metres, counted per started metre like cable runs)
-    d.conns.forEach((c) => { const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true); } else add(p, true, c.lv ? { len: c.lv } : null); });
+    d.conns.forEach((c) => { const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true, null, true); } else add(p, true, c.lv ? { len: c.lv } : null); });
     cableRows().forEach((r) => { if (r.k && d.sc) for (let i = 0; i < r.qty; i++) add(cat.get(r.k), true); });
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
     return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
@@ -245,13 +247,16 @@
       const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
-        list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.qty > 1 ? r.qty + '×' : ''),
+        list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.cableM ? r.qty + ' m' : r.qty > 1 ? r.qty + '×' : ''),
           h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null, r.sys ? h('.sysparts', null, r.parts) : null),
           h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
-        h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()));
+        h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()),
+        // on screen only: connections still without a cable, and the way to complete the proposal
+        nMissing() ? h('button.pl-nudge.no-print', { onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.complete.open() }, icon('cable', 13),
+          nMissing() + ' ' + t(nMissing() === 1 ? 'connection without a cable' : 'connections without a cable', nMissing() === 1 ? 'forbindelse uden kabel' : 'forbindelser uden kabel'), h('b', null, t('Complete →', 'Gør færdig →'))) : null);
     }
     if (it.kind === 'zone') {
       const col = ZONE_COLORS[d.items.filter((i) => i.kind === 'zone').indexOf(it) % ZONE_COLORS.length];
@@ -300,7 +305,7 @@
     if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
     if (it.kind === 'legend') { const r = legendRows(); return 'l' + JSON.stringify([r.products.map((x) => [x.k, x.qty]), r.generic, r.cables.map((c) => [c.k, c.runs, c.m]), r.sc]) + cat.version + L; }
     if (it.kind === 'text') return ['t', it.w, it.h, it.title, it.body, it.noTitle ? 1 : 0, it.noBody ? 1 : 0, L].join('|');
-    if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + JSON.stringify(legendRows().zones) + L + HP.today();
+    if (it.kind === 'prices') return 'r' + JSON.stringify(priceRows()) + JSON.stringify(legendRows().zones) + L + HP.today() + '|' + nMissing();
     if (it.kind === 'plan') return ['f', it.w, it.h, it.lock, (store.planSrc || '').length].join('|');
     return '';
   }
@@ -1068,6 +1073,7 @@
         if (HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'Alt+B', 'flip', () => C.flip(one.id));
         if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
         if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'Alt+C', 'layers', () => C.colourMenu(one.id, null, x, y));
+        if ((p.acc || []).length || store.doc.conns.some((c) => !c.cable && (c.a.item === one.id || c.b.item === one.id))) add(t('Accessories and cables…', 'Tilbehør og kabler…'), '', 'plus', () => HP.complete.open({ pid: p.id }));
         if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
       if (one && one.kind === 'mark' && one.k[0] !== '@') {
@@ -1102,13 +1108,14 @@
     add(t('Add text here', 'Tilføj tekst her'), 'Alt+T', 'text', () => C.addText(x, y));
     add(C.hasPrices() ? t('Hide price list', 'Skjul prisliste') : t('Show price list', 'Vis prisliste'), 'F3', 'tag', C.togglePrices);
     if (C.hasPlan()) add(t('Remove floor plan', 'Fjern plantegning'), '', 'plan', C.removePlan);
+    if (store.doc.items.some((x) => x.kind === 'product')) add(t('Complete the proposal…', 'Gør tilbuddet færdigt…'), '', 'check', () => HP.complete.open());
     add(t('Select all', 'Markér alt'), 'Ctrl+A', 'layers', C.selectAll);
     add(t('Fit to window', 'Tilpas til vindue'), 'Shift+1', 'fit', C.fit);
     M.push({ el: HP.panels.scaleStepper() });
     M.push('sep');
     add(t('Save project…', 'Gem projekt…'), 'Ctrl+S', 'folder', HP.panels.projects);
     add(t('Share link…', 'Del link…'), 'Ctrl+Shift+S', 'link', HP.panels.share);
-    add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', C.print);
+    add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', () => HP.cover.dialog());
     add(t('Clear canvas', 'Ryd lærredet'), '', 'trash', C.clearCanvas, { danger: true, disabled: !d.items.length });
     HP.menu(x, y, M);
   }
@@ -1235,21 +1242,30 @@
 
 
   /* ================= print ================= */
-  C.print = () => {
+  // the A4 pages as sheets (clones of the canvas, fitted to A4), for printing and for the customer view (js/cover.js)
+  C.sheets = () => {
     const d = store.doc, s = pageSize(), mm = d.orient === 'portrait' ? [210, 297] : [297, 210], px = (m) => (m * 96) / 25.4;
     const k = Math.min(px(mm[0]) / s.w, px(mm[1]) / s.h), ox = (px(mm[0]) - s.w * k) / 2, oy = (px(mm[1]) - s.h * k) / 2; // fit A4, centred
-    const total = d.pages * (s.w + GAP) - GAP;
-    const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; return cx < 0 || cx > total || cy < 0 || cy > s.h; }).length;
-    if (outside) HP.toast(t(outside + ' item(s) are outside the A4 pages and will not be printed.', outside + ' element(er) ligger uden for A4-siderne og bliver ikke printet.'), { kind: 'warn', ms: 7000 });
     store.sel.clear(); store.selConn = null; refreshSel();
-    const root = h('#print-root');
+    const out = [];
     for (let i = 0; i < d.pages; i++) {
       const r = pageRect(i), clone = world.cloneNode(true);
       clone.removeAttribute('id'); clone.classList.remove('wiring');
       clone.style.transform = 'translate(' + ox + 'px,' + oy + 'px) scale(' + k + ') translate(' + -r.x + 'px,' + -r.y + 'px)';
       clone.querySelectorAll('.no-print').forEach((e) => e.remove());
-      root.append(h('.sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
+      out.push(h('.sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
     }
+    return { sheets: out, mm };
+  };
+  C.print = (opts) => {
+    const d = store.doc, s = pageSize();
+    const total = d.pages * (s.w + GAP) - GAP;
+    const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; return cx < 0 || cx > total || cy < 0 || cy > s.h; }).length;
+    if (outside) HP.toast(t(outside + ' item(s) are outside the A4 pages and will not be printed.', outside + ' element(er) ligger uden for A4-siderne og bliver ikke printet.'), { kind: 'warn', ms: 7000 });
+    const { sheets, mm } = C.sheets();
+    const root = h('#print-root');
+    if (opts && opts.cover) root.append(h('.sheet.cover-sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, opts.cover));
+    sheets.forEach((sh) => root.append(sh));
     const st = h('style', { textContent: '@page{size:A4 ' + (d.orient === 'portrait' ? 'portrait' : 'landscape') + ';margin:0}' });
     document.head.append(st); document.body.append(root); document.body.classList.add('printing');
     const done = () => { root.remove(); st.remove(); document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };
