@@ -1252,7 +1252,9 @@
       const r = pageRect(i), clone = world.cloneNode(true);
       clone.removeAttribute('id'); clone.classList.remove('wiring');
       clone.style.transform = 'translate(' + ox + 'px,' + oy + 'px) scale(' + k + ') translate(' + -r.x + 'px,' + -r.y + 'px)';
-      clone.querySelectorAll('.no-print').forEach((e) => e.remove());
+      // screen-only marks inside a card (SYSTEM, UDGÅET, AUTO, not priced) are hidden, not removed: the card keeps its exact size,
+      // so its ports stay where the wires (drawn on screen) end. Everything else that is screen-only is removed.
+      clone.querySelectorAll('.no-print').forEach((e) => { if (e.closest('.item.k-product, .item.k-mark')) e.style.visibility = 'hidden'; else e.remove(); });
       out.push(h('.sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
     }
     return { sheets: out, mm };
