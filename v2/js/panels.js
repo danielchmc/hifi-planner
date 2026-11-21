@@ -65,8 +65,9 @@
     const PER = 30; // rows built per step: more are added as the list scrolls near its end, so only rows (and thumbnails) in reach load
     const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { filter(); },
       onkeydown: (e) => searchKeys(e) });
-    // ↓/↑ walk through the results; Enter adds the highlighted one to the canvas and clears the box for the next search.
-    // Enter with nothing highlighted opens the Katalog with the same search; Esc goes back to the canvas.
+    // While there is a search, the first result is highlighted, so a SKU + Enter adds that product at once; ↓/↑ move the highlight.
+    // Enter adds the highlighted result to the canvas; the search stays as it is. Shift+Enter (or Enter with no
+    // search or no results) opens the Katalog with the same search; Esc goes back to the canvas.
     let hl = -1;
     const rowEls = () => [...list.querySelectorAll('.prow')];
     const light = (i) => { const els = rowEls(); hl = Math.max(-1, Math.min(i, els.length - 1)); els.forEach((r, j) => r.classList.toggle('hl', j === hl)); if (hl >= 0) els[hl].scrollIntoView({ block: 'nearest' }); };
@@ -77,12 +78,13 @@
         light(e.key === 'ArrowDown' ? hl + 1 : hl - 1);
       } else if (e.key === 'Enter') {
         e.preventDefault();
+        if (e.shiftKey) return HP.katalog.open(search.value); // Shift+Enter: the same search in the Katalog
         const r = hl >= 0 && rowEls()[hl];
-        if (r && r._add) { r._add(); search.value = ''; filter(); search.focus(); }
+        if (r && r._add) { r._add(); search.focus(); } // the search and its results stay, so Enter again adds another one
         else HP.katalog.open(search.value);
       }
     }
-    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Enter)', 'Åbn Katalog (Enter)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
+    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Shift+Enter in the search, Enter on the canvas)', 'Åbn Katalog (Shift+Enter i søgningen, Enter på lærredet)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
     const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
     const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
       [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
@@ -199,6 +201,7 @@
       shown = Math.min(hits.length, shown + PER);
       const unit = group === SYS ? t('systems', 'systemer') : t('products', 'produkter');
       count.textContent = (hits.length && shown < hits.length ? t('Showing ', 'Viser ') + shown + ' ' + t('of', 'af') + ' ' : '') + hits.length + ' ' + unit;
+      if (hl < 0 && search.value.trim() && hits.length) light(0);
       if (shown < hits.length) list.append(more);
       arm();
     }
@@ -622,7 +625,7 @@
         h('h3', null, t('Keyboard', 'Tastatur')),
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
         h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
-          [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['↓', '↑', 'Enter'], t('In the search: pick a result and add it', 'I søgningen: vælg et resultat og tilføj det')], [['Enter'], t('Open the Katalog', 'Åbn Katalog')],
+          [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Enter'], t('On the canvas: open the Katalog', 'På lærredet: åbn Katalog')],
           [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Colour / finish', 'Farve / finish')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
