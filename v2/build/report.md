@@ -268,6 +268,8 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 - AudioQuest Coffee: usba ↔ usbb
 - AudioQuest Coffee: usba ↔ usbb
 
+**Accessories**: 778 products list accessories from the website (`acc`), offered by "Complete the proposal".
+
 **Systems**: 220 of the website's bundles are in the sidebar's Systems section (`build/bundles.js`); 25 are not, because a part is not in the catalogue: unnu 1540 Furniture, Clic 220 Furniture, Clic 23 Furniture, unnu 240 Furniture, unnu 241 Furniture, Clic 242 Furniture, Bowers & Wilkins ISW-8 + BB ISW 8, CANVAS HiFi 55", CANVAS HiFi 65", CANVAS HiFi 75", CANVAS HiFi 77", HITH 231 + DALI Sonik 3 + BLS N331, HITH 231 + Fenris A4, HITH 231 + Forte A5 WIFI, DALI OBERON C SURROUND, DALI Oberon Vokal C + HDMI Module, DALI RUBICON 2 C + SOUNDHUB, DALI RUBICON 6 C + SOUNDHUB, Wavell 4 SIGNATURE + ALCANTARA CUPS, Steinway Lyngdorf Model A, Steinway Lyngdorf Model B, Steinway Lyngdorf Model D, Steinway Lyngdorf Model O, Steinway Lyngdorf Model S, Argon Audio TT MK2 + Vinylkit 10.
 
 **Cable lengths**: 175 cables offer their website lengths in the cable picker.
@@ -281,11 +283,7 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
 
-Since the previous build: 1 price changes, 0 products added, 0 removed.
-
-**Price changes**
-
-- Sony Bravia 5: 19999 → undefined
+Since the previous build: 0 price changes, 0 products added, 0 removed.
 
 **Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
 

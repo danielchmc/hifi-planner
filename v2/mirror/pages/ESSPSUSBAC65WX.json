@@ -13,6 +13,15 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning: USB-A og USB-C* · ** Ladetid forlænges ved brug af begge udgange samtidig (12W + 45W)."
+  },
+  "gallery": [
+   "0748b3d4-16c6-479f-98dc-e88afa8bd734"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243012,
   "skuCode": "ESSPSUSBAC65WX",
@@ -103,7 +112,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 881,
+     "availableQuantity": 871,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -140,27 +149,27 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "En kompakt og pålidelig oplader, der leverer imponerende hurtig strøm til telefoner, laptops, Soundboks-enheder og mere. Praktisk design, bred anvendelighed og stabil ydeevne gør den daglige opladning nem. God værdi og punchy ladehastighed giver et begejstret helhedsindtryk trods ét rapporteret ladeproblem.",
+   "summary": "En kompakt og praktisk oplader med hurtig, pålidelig ydeevne til telefoner, laptops og Soundboks-udstyr samt en attraktiv pris og nem hverdagsbrug. Opladningen føles kraftfuld og effektiv med en stabil strømforsyning. En enkelt anmeldelse nævner problemer med at oplade et Soundboks-batteri, mens en anden bemærker, at opladeren kan blive varm.",
    "headlines": {
     "reliable everyday operation": {
-     "sentimentAnalysis": "Produktet opfattes som enkelt, funktionelt og pålideligt til det tilsigtede brug.",
+     "sentimentAnalysis": "Produktet opfattes som enkelt, pålideligt og velegnet til de tilsigtede opladningsopgaver.",
      "simpleTitle": "Pålidelig drift i hverdagen",
      "bias": "positive",
-     "key": "reliable_operation",
-     "groupId": "cb208328-f69c-4261-9dc2-8c6afbc3cfaf"
+     "key": "reliable-operation",
+     "groupId": "8dfe74f6-a45d-48fa-b42a-f33dfc486791"
     },
     "fast charging": {
-     "sentimentAnalysis": "Opladeren roses gentagne gange for meget hurtig opladning af flere enheder.",
+     "sentimentAnalysis": "Opladeren roses gentagne gange for sin meget hurtige opladning.",
      "simpleTitle": "Hurtig opladning",
      "bias": "positive",
-     "key": "fast_charging",
-     "groupId": "b24c4128-4948-4611-bcfb-568fd9c8dc35"
+     "key": "fast-charging",
+     "groupId": "ebe26b4e-60d3-47e8-963e-7c98c57bdd4f"
     }
    },
    "grouping": {
-    "b24c4128-4948-4611-bcfb-568fd9c8dc35": {
-     "title": "Ladeevne",
-     "id": "b24c4128-4948-4611-bcfb-568fd9c8dc35",
+    "ebe26b4e-60d3-47e8-963e-7c98c57bdd4f": {
+     "title": "Opladning",
+     "id": "ebe26b4e-60d3-47e8-963e-7c98c57bdd4f",
      "references": [
       "4bcd8722-bf48-4324-9e0b-baf5b995fbec",
       "0d67d705-578b-4f42-92b1-d8abc74a97ba",
@@ -171,14 +180,16 @@
       "b55709da-5768-40bb-a007-eea92c182657"
      ]
     },
-    "cb208328-f69c-4261-9dc2-8c6afbc3cfaf": {
+    "8dfe74f6-a45d-48fa-b42a-f33dfc486791": {
      "title": "Brugervenlighed",
-     "id": "cb208328-f69c-4261-9dc2-8c6afbc3cfaf",
+     "id": "8dfe74f6-a45d-48fa-b42a-f33dfc486791",
      "references": [
       "4edeef1f-11c5-4b21-94a3-8737a4326a31",
       "cfbc41e4-e644-445b-964a-f2bbcb3f63d0",
       "b4ba56fe-ddb6-4014-8786-ebe26ed81251",
-      "45cb1ffd-8166-4993-8510-5f688c55f1bd"
+      "45cb1ffd-8166-4993-8510-5f688c55f1bd",
+      "054beb11-ec51-4890-ad6b-3ac4fb1d21fb",
+      "afce59f5-894b-4d2d-8177-a7e2a2d12368"
      ]
     }
    },

@@ -13,6 +13,14 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fabddc8c-0354-4718-a94d-87771a7d8007",
+   "7490409d-a316-41fe-9bf1-a4a4d1226b34"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236918,
   "skuCode": "ESSTTRECORDCLEANX",
@@ -115,8 +123,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 614,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 609,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -157,34 +165,36 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTRECORDCLEANX giver imponerende rene og velplejede plader og hjælper med at reducere statisk elektricitet, hvilket skaber en varmere, klarere og mere medrivende lytteoplevelse. Den enkle funktion gør rensemidlet til et pålideligt valg til almindelig manuel pladerengøring. Værdien virker mindre overbevisende, når den lille mængde og den svagere antistatiske effekt i nyere flasker tages i betragtning.",
+   "summary": "ESSTTRECORDCLEANX roses bredt som et effektivt og pålideligt pladerenseprodukt, der efterlader vinylen synligt renere og klar til fornøjelig lytning. Rengøringen føles frisk, praktisk og tilfredsstillende og giver gamle plader nyt liv. En mindre bekymring gælder en tilsyneladende svagere antistatisk effekt i en nyere formulering, men helhedsindtrykket er klart positivt.",
    "headlines": {
+    "works reliably as intended": {
+     "sentimentAnalysis": "Den enkle og pålidelige ydeevne lever op til forventningerne og gør produktet tillidsvækkende.",
+     "simpleTitle": "Fungerer pålideligt som forventet",
+     "bias": "positive",
+     "key": "cleaning",
+     "groupId": "813ae790-2845-412a-879c-74a69ac47546"
+    },
     "cleans records effectively": {
-     "sentimentAnalysis": "Rensemidlet roses gentagne gange for at gøre plader rene og genskabe en tilfredsstillende afspilningstilstand.",
+     "sentimentAnalysis": "Pladerne bliver synligt renere, og især ældre vinyl får en mærkbar opfriskning.",
      "simpleTitle": "Renser plader effektivt",
      "bias": "positive",
-     "key": "cleaning-positive",
-     "groupId": "107b4c54-083b-42bd-9b2b-bfdee43a08bb"
+     "key": "cleaning",
+     "groupId": "813ae790-2845-412a-879c-74a69ac47546"
     }
    },
    "grouping": {
-    "107b4c54-083b-42bd-9b2b-bfdee43a08bb": {
-     "title": "Rengøringsevne",
-     "id": "107b4c54-083b-42bd-9b2b-bfdee43a08bb",
+    "813ae790-2845-412a-879c-74a69ac47546": {
+     "title": "Rengøringseffekt",
+     "id": "813ae790-2845-412a-879c-74a69ac47546",
      "references": [
       "89574c59-4181-4d69-833a-f47e2eb4b8de",
-      "375d7fa1-1e58-4684-a9a5-f488b7327e25",
       "524f5696-f47f-40b8-8ac6-940ffbc53f44",
       "05aa9df4-1197-40a7-84f7-c3e67dcdac62",
-      "ee611096-1efb-4a57-8abf-76374f8c6172",
+      "d8dafda3-3c5d-4198-af01-75be011c7de1",
       "d4b6ad78-06ab-4115-a2e3-b9ed0d9db4b3",
       "ef7f2b5a-3b5c-4851-afdd-cd1d5189b33b",
       "dcd03297-3019-45a0-9825-4f3b90590734",
-      "60322ed8-788e-4966-a4e8-165dd353ea0c",
-      "efc5089b-eb9f-457c-8d73-57bcee653b3e",
-      "7edf8a50-a0cc-4818-bc78-19dbb3b12360",
-      "51a6902d-baf5-494a-a006-6db079b0ed15",
-      "4c9ed54f-11c2-425c-a21f-feecc3b67854"
+      "62d74d37-a984-42b7-b6f0-1b7819d7ce50"
      ]
     }
    },

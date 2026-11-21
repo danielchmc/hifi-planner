@@ -13,6 +13,23 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Minijack/AUX",
+   "Indgang (andet)": "USB C",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, HEOS Multiroom",
+   "Bluetooth type": "5.2",
+   "Højtaler type": "Trådløs højtaler",
+   "Fra beskrivelsen": "Tilslutninger: analog audio-in (stereo minijack), USB-lagermedier"
+  },
+  "gallery": [
+   "dc29b47b-d832-458c-97e6-e51244e574d4",
+   "71e77d66-f826-466a-80ff-5e51d66d3c46",
+   "f0691982-122a-42fb-843d-da1e29f5cedb",
+   "da3ac584-3b2e-4103-9954-a4502b37ed0a"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 277898,
   "skuCode": "DENHOME600",
@@ -237,7 +254,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 77,
+     "availableQuantity": 75,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -483,48 +500,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENHOME600 leverer varm, fyldig og medrivende lyd med imponerende klarhed, dybde og rumfornemmelse, selv fra én højttaler. Streaming er en stor bekvemmelighed, mens stereopar kan give en endnu fyldigere og mindre trættende gengivelse. Det attraktive design og den nemme betjening på selve enheden er klare fordele, selv om appens brugervenlighed, forbindelsesstabilitet og lejlighedsvise problemer med basbalancen forhindrer en helt fejlfri oplevelse.",
+   "summary": "DENHOME600 leverer en varm, kraftfuld og medrivende lyd med et imponerende bredt stereoperspektiv, selv med kun én højttaler. Streaming giver fremragende bekvemmelighed i hverdagen, mens det stilfulde design og den enkle betjening på enheden løfter helhedsoplevelsen. Appens stabilitet og forbindelser kan være frustrerende, men den kraftfulde og detaljerede lyd gør produktet meget attraktivt.",
    "headlines": {
-    "excellent, spacious sound": {
-     "sentimentAnalysis": "Højttaleren roses gentagne gange for fyldig, kraftfuld, detaljeret og rummelig lyd samt stærk bas og forbedret dybde.",
-     "simpleTitle": "Fremragende, rummelig lyd",
+    "excellent, powerful sound": {
+     "sentimentAnalysis": "Lyden roses gentagne gange som fremragende, fyldig, dyb og kraftfuld, og især den stærke bas nævnes i en anmeldelse.",
+     "simpleTitle": "Fremragende, kraftfuld lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "0dfce0f1-0b7b-402c-8a23-312a5b8f24a5"
+     "key": "sound_quality",
+     "groupId": "713fd87c-64c9-46a6-83e6-7579a6a5f491"
     },
-    "app and connections can be unreliable": {
-     "sentimentAnalysis": "Appen beskrives som ikke særlig intuitiv med lejlighedsvise kontaktproblemer, en equalizer der ikke virker, og ustabile Bluetooth- eller enhedsforbindelser.",
-     "simpleTitle": "App og forbindelser kan være ustabile",
+    "broad, immersive stereo image": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den brede, rumfyldende lyd, den forbedrede dybde og den mere tilfredsstillende stereogengivelse, især med to højttalere.",
+     "simpleTitle": "Bredt, medrivende stereoperspektiv",
+     "bias": "positive",
+     "key": "sound_quality",
+     "groupId": "713fd87c-64c9-46a6-83e6-7579a6a5f491"
+    },
+    "app and connection problems": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en uoverskuelig eller ustabil app, en equalizer der ikke fungerer, samt ustabile forbindelser inklusive Bluetooth-udfald.",
+     "simpleTitle": "Problemer med app og forbindelse",
      "bias": "negative",
-     "key": "app",
-     "groupId": "fb1bec6f-689d-4016-8f13-0b415d370696"
+     "key": "app_connectivity",
+     "groupId": "3c8a6539-ac39-4e7c-912c-08f3de21fa6d"
     },
-    "stereo pairing adds fullness": {
-     "sentimentAnalysis": "To højttalere skaber ifølge anmeldelserne et bredere, fyldigere og mindre trættende stereobillede, mens den nye model også giver mere dybde.",
-     "simpleTitle": "Stereopar giver mere fylde",
+    "streaming is convenient and reliable": {
+     "sentimentAnalysis": "Streaming via HEOS-appen og AirPlay beskrives som problemfrit og giver stor bekvemmelighed i hverdagen.",
+     "simpleTitle": "Streaming er nemt og pålideligt",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "0dfce0f1-0b7b-402c-8a23-312a5b8f24a5"
+     "key": "app_connectivity",
+     "groupId": "3c8a6539-ac39-4e7c-912c-08f3de21fa6d"
     },
-    "streaming is convenient": {
-     "sentimentAnalysis": "Streaming betragtes som en stor fordel, og HEOS og AirPlay fungerer problemfrit ved normal brug.",
-     "simpleTitle": "Streaming er praktisk",
-     "bias": "positive",
-     "key": "app",
-     "groupId": "fb1bec6f-689d-4016-8f13-0b415d370696"
-    },
-    "attractive design and easy controls": {
-     "sentimentAnalysis": "Designet roses som flot, og betjeningen på selve enheden anses for at være særligt praktisk.",
-     "simpleTitle": "Flot design og nem betjening",
+    "stylish design": {
+     "sentimentAnalysis": "Højttaleren roses for sit attraktive udseende og tiltalende format.",
+     "simpleTitle": "Stilfuldt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "1d0540a8-87d9-43bc-b623-30b8e959de6e"
+     "groupId": "c4dd4b15-4deb-409a-b82d-a6933774cd00"
     }
    },
    "grouping": {
-    "0dfce0f1-0b7b-402c-8a23-312a5b8f24a5": {
+    "713fd87c-64c9-46a6-83e6-7579a6a5f491": {
      "title": "Lydkvalitet",
-     "id": "0dfce0f1-0b7b-402c-8a23-312a5b8f24a5",
+     "id": "713fd87c-64c9-46a6-83e6-7579a6a5f491",
      "references": [
       "6ad3b4aa-c947-480e-9b34-8ea6d9238dde",
       "a1f079e0-aa7a-49c7-8e4f-8f805c8de695",
@@ -538,20 +555,19 @@
       "44fe5ce7-b39c-486f-a647-74025e3e1a52"
      ]
     },
-    "fb1bec6f-689d-4016-8f13-0b415d370696": {
-     "title": "App og forbindelser",
-     "id": "fb1bec6f-689d-4016-8f13-0b415d370696",
+    "3c8a6539-ac39-4e7c-912c-08f3de21fa6d": {
+     "title": "App og forbindelse",
+     "id": "3c8a6539-ac39-4e7c-912c-08f3de21fa6d",
      "references": [
-      "a1f079e0-aa7a-49c7-8e4f-8f805c8de695",
       "eed91e49-0dc5-4df4-a454-8db167b5621e",
       "72d249d3-9a24-47c7-8cc2-4d4930af6c61",
       "90b8ba1e-489c-4f9f-8594-75b64c72c5f7",
       "d73e2396-e208-4034-bc79-d584f0f0565c"
      ]
     },
-    "1d0540a8-87d9-43bc-b623-30b8e959de6e": {
-     "title": "Design og betjening",
-     "id": "1d0540a8-87d9-43bc-b623-30b8e959de6e",
+    "c4dd4b15-4deb-409a-b82d-a6933774cd00": {
+     "title": "Design",
+     "id": "c4dd4b15-4deb-409a-b82d-a6933774cd00",
      "references": [
       "43d9c6c8-3271-432d-bd9e-a6c9270d04e4",
       "72d249d3-9a24-47c7-8cc2-4d4930af6c61"

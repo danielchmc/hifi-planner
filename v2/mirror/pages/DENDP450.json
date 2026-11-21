@@ -8,6 +8,19 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Ja",
+   "Fra beskrivelsen": "RIAA-forstærker : Ja, inkl. USB-ud · Indbygget A/D-konverter med USB-udgang"
+  },
+  "gallery": [
+   "b1d8ba2e-0198-45ad-acae-dd4609530222",
+   "23c2d226-6648-4add-8ff7-64d4f7009033",
+   "4d5162f1-58a3-43d1-8b25-3ab24d0e8d04",
+   "b1972967-6e73-421b-ae94-6a83a5a0a7d9"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 95720,
   "skuCode": "DENDP450",
@@ -267,7 +280,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 20,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -328,55 +341,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENDP450 betragtes generelt som en velbygget, flot og brugervenlig pladespiller med varm, klar og engagerende lyd. Automatisk løft og stop, USB-optagelse og enkel opsætning giver stor praktisk værdi. De vigtigste forbehold gælder det ufuldstændige støvlåg, enkelte problemer med betjening af tonearmen, lavt USB-optageniveau samt begrænset vejledning til software og tilslutning.",
+   "summary": "DENDP450 opfattes generelt som en velbygget, stilfuld og brugervenlig pladespiller med varm, klar og behagelig lyd. USB-optagelse samt automatisk lift- og stopfunktion giver ekstra komfort, selv om støvlåget kun beskytter delvist mod støv, og enkelte betjeningselementer kunne forbedres. Nogle brugere nævner også problemer med betjening af tonearmen, et for lavt USB-optageniveau eller mindre udfordringer med opsætning og software.",
    "headlines": {
     "warm, clear and enjoyable sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent lyden som god, fantastisk eller behagelig og tilstrækkeligt tilgivende over for ældre plader.",
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som god, fantastisk, ren og meget behagelig, også med ældre plader.",
      "simpleTitle": "Varm, klar og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "3d549d5b-33bf-4063-80c1-d1b647dc2ba9"
+     "groupId": "3e56450e-21f2-4ef0-9baa-f0ded0bf79a7"
     },
-    "simple vinyl digitization via USB": {
-     "sentimentAnalysis": "USB-optagelse til en USB-nøgle opleves som praktisk, nem og meget værdifuld.",
-     "simpleTitle": "Enkel digitalisering af vinyl via USB",
+    "usb digitisation is convenient": {
+     "sentimentAnalysis": "USB-porten gør det nemt og attraktivt at optage plader på en USB-nøgle.",
+     "simpleTitle": "USB-digitalisering er praktisk",
      "bias": "positive",
      "key": "usb",
-     "groupId": "b71fdae0-8cda-4c21-b607-cc8d42e8fcfc"
+     "groupId": "f11144d5-2f00-4f19-8467-c4cbc003e7d9"
     },
-    "dust cover leaves parts exposed": {
-     "sentimentAnalysis": "Flere anmeldelser finder det stiliserede støvlåg ineffektivt, fordi det ikke beskytter pladespilleren eller en plade, der ligger på, fuldstændigt.",
+    "the dust cover leaves parts exposed": {
+     "sentimentAnalysis": "Flere anmeldelser oplever det stilfulde låg som ufuldstændigt eller ineffektivt mod støv, og det frarådes at lade en plade ligge på pladespilleren.",
      "simpleTitle": "Støvlåget efterlader dele ubeskyttede",
      "bias": "negative",
      "key": "dustcover",
-     "groupId": "65d412ff-556d-4f95-a996-6e8f2fe87f67"
+     "groupId": "ae2c339b-cbd4-4c8f-8410-d54f8a956d8d"
     },
-    "convenient automatic lifting and stop": {
-     "sentimentAnalysis": "Automatisk stop og løft roses som pålideligt og særligt praktisk sammenlignet med helt manuelle pladespillere.",
-     "simpleTitle": "Praktisk automatisk løft og stop",
-     "bias": "positive",
-     "key": "automation",
-     "groupId": "001e8e87-88a3-405b-b8e6-924811f730dc"
-    },
-    "usb recording level is too low": {
-     "sentimentAnalysis": "USB-digitaliseringen er nyttig, men optageniveauet kritiseres for at være for lavt.",
-     "simpleTitle": "USB-optageniveauet er for lavt",
+    "usb recording level can be too low": {
+     "sentimentAnalysis": "En anmeldelse ønsker et højere niveau på den digitaliserede udgang, mens en anden har problemer med at få den tilhørende software.",
+     "simpleTitle": "USB-optageniveauet kan være for lavt",
      "bias": "negative",
      "key": "usb",
-     "groupId": "b71fdae0-8cda-4c21-b607-cc8d42e8fcfc"
+     "groupId": "f11144d5-2f00-4f19-8467-c4cbc003e7d9"
+    },
+    "automatic lift and stop add convenience": {
+     "sentimentAnalysis": "Automatisk stop og lift roses som pålidelige og mere praktiske end fuldt manuel betjening.",
+     "simpleTitle": "Automatisk lift og stop giver ekstra komfort",
+     "bias": "positive",
+     "key": "tonearm",
+     "groupId": "559fe32a-e966-4b3f-a354-cb3fb3274937"
     },
     "tonearm controls need more clearance": {
-     "sentimentAnalysis": "Det korte løftehåndtag og placeringen tæt på tonearmen kan medføre utilsigtet berøring og upræcis sænkning.",
+     "sentimentAnalysis": "Det korte eller tæt placerede liftgreb kan få tonearmen til at bevæge sig utilsigtet og gøre betjeningen besværlig.",
      "simpleTitle": "Tonearmsbetjeningen kræver mere afstand",
      "bias": "negative",
-     "key": "automation",
-     "groupId": "001e8e87-88a3-405b-b8e6-924811f730dc"
+     "key": "tonearm",
+     "groupId": "559fe32a-e966-4b3f-a354-cb3fb3274937"
     }
    },
    "grouping": {
-    "3d549d5b-33bf-4063-80c1-d1b647dc2ba9": {
+    "3e56450e-21f2-4ef0-9baa-f0ded0bf79a7": {
      "title": "Lydkvalitet",
-     "id": "3d549d5b-33bf-4063-80c1-d1b647dc2ba9",
+     "id": "3e56450e-21f2-4ef0-9baa-f0ded0bf79a7",
      "references": [
       "1945124d-470d-4075-aa0c-b8369d340235",
       "35acfecc-9a30-49a5-909d-1279911f7306",
@@ -385,13 +398,12 @@
       "69272693-36dd-4086-b086-d4f7e5180df6",
       "7c1cbbeb-1149-4b80-91f8-56bdb9528eca",
       "b9de9475-ef2a-4991-b76e-9f224ccf135f",
-      "f288853e-0e8c-4e43-95d6-5ef3b4b70dab",
-      "234ab080-500a-4d1d-b917-0c567902b654"
+      "f288853e-0e8c-4e43-95d6-5ef3b4b70dab"
      ]
     },
-    "b71fdae0-8cda-4c21-b607-cc8d42e8fcfc": {
+    "f11144d5-2f00-4f19-8467-c4cbc003e7d9": {
      "title": "USB-optagelse",
-     "id": "b71fdae0-8cda-4c21-b607-cc8d42e8fcfc",
+     "id": "f11144d5-2f00-4f19-8467-c4cbc003e7d9",
      "references": [
       "32587394-f128-4469-bf88-73d5bdd3c3db",
       "626efafb-491f-44e4-a8c9-706150fba751",
@@ -400,9 +412,9 @@
       "f288853e-0e8c-4e43-95d6-5ef3b4b70dab"
      ]
     },
-    "65d412ff-556d-4f95-a996-6e8f2fe87f67": {
+    "ae2c339b-cbd4-4c8f-8410-d54f8a956d8d": {
      "title": "Støvlåg",
-     "id": "65d412ff-556d-4f95-a996-6e8f2fe87f67",
+     "id": "ae2c339b-cbd4-4c8f-8410-d54f8a956d8d",
      "references": [
       "1945124d-470d-4075-aa0c-b8369d340235",
       "11a01604-e4dc-4340-aa05-dd34c5a0ad1f",
@@ -411,14 +423,14 @@
       "7c1cbbeb-1149-4b80-91f8-56bdb9528eca"
      ]
     },
-    "001e8e87-88a3-405b-b8e6-924811f730dc": {
-     "title": "Automatiske funktioner",
-     "id": "001e8e87-88a3-405b-b8e6-924811f730dc",
+    "559fe32a-e966-4b3f-a354-cb3fb3274937": {
+     "title": "Tonearm og automatiske funktioner",
+     "id": "559fe32a-e966-4b3f-a354-cb3fb3274937",
      "references": [
       "1945124d-470d-4075-aa0c-b8369d340235",
-      "11a01604-e4dc-4340-aa05-dd34c5a0ad1f",
+      "35acfecc-9a30-49a5-909d-1279911f7306",
       "6359c766-f250-4a54-b722-6545bdfe3999",
-      "35acfecc-9a30-49a5-909d-1279911f7306"
+      "11a01604-e4dc-4340-aa05-dd34c5a0ad1f"
      ]
     }
    },

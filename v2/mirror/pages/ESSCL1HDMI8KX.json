@@ -13,6 +13,16 @@
    "url": "/kabler/hdmi-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI Speed": "Ultra High Speed",
+   "Fra beskrivelsen": "Ultra High Speed-certificeret i alle længder (HDMI 2.1, 8K/60, 4K/120, 48Gbps, eARC)"
+  },
+  "gallery": [
+   "21f771c1-cd7d-4b66-a8d2-9555a3b4ef36"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 242975,
   "skuCode": "ESSCL1HDMI8KX",
@@ -176,7 +186,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 75,
+     "availableQuantity": 58,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -254,8 +264,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
-     "availableQuantity": 1267,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 1248,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -333,8 +343,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 613,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 607,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -413,7 +423,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 370,
+     "availableQuantity": 366,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -513,41 +523,48 @@
   "bundleRelations": [],
   "variantNavigationType": "sizeSelector",
   "reviews": {
-   "summary": "ESSCL1HDMI8KX betragtes generelt som et pålideligt HDMI-kabel i god kvalitet, der leverer stabil og problemfri billed- og lydoverførsel. Kablet giver en klar, fyldig og omsluttende lyd, og flere anmeldelser roser lydkvaliteten og forbindelsen. Den stabile funktion og det gode forhold mellem pris og kvalitet dominerer tilbagemeldingerne, selv om enkelte synes, at prisen er høj, og én anmeldelse ikke kunne høre nogen fordel sammenlignet med billigere kabler.",
+   "summary": "ESSCL1HDMI8KX betragtes generelt som et pålideligt HDMI-kabel, der leverer stabil billed- og lydoverførsel uden besvær. Anmeldelserne beskriver en klar, fyldig og omsluttende TV-lyd samt problemfri overførsel i høj opløsning uden synligt kvalitetstab. Forholdet mellem pris og kvalitet vurderes oftest som godt, selv om nogle synes, at prisen er høj, og bemærker begrænsede længdemuligheder eller lejlighedsvis forsinket aktivering af højttalerne.",
    "headlines": {
-    "reliable, trouble-free operation": {
-     "sentimentAnalysis": "Kablet fungerer konsekvent som tilsigtet, og anmeldelserne fremhæver stabile forbindelser og fravær af problemer.",
-     "simpleTitle": "Pålidelig og problemfri drift",
+    "reliable plug-and-play operation": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som problemfrit og fungerende præcis som forventet.",
+     "simpleTitle": "Pålidelig plug-and-play-drift",
      "bias": "positive",
-     "key": "reliable-operation",
-     "groupId": "a0fe4d3e-8684-499c-b2a8-9e266a774678"
+     "key": "reliable_operation",
+     "groupId": "b10c83c1-4ee5-4c76-82dc-52cf4f68eb73"
     },
-    "good value for the money": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer, at kablet er rimeligt prissat i forhold til kvalitet og ydeevne.",
+    "strong high-resolution picture and sound transmission": {
+     "sentimentAnalysis": "Anmeldelserne roser den störingsfri HDMI-overførsel, det rene billede og den klare lyd samt den gode ydeevne med krævende udstyr i høj opløsning.",
+     "simpleTitle": "Stabil billed- og lydoverførsel i høj opløsning",
+     "bias": "positive",
+     "key": "transmission_quality",
+     "groupId": "b10c83c1-4ee5-4c76-82dc-52cf4f68eb73"
+    },
+    "good value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer, at kablets kvalitet er passende eller god i forhold til prisen.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "good-value",
-     "groupId": "d0ba70b1-2c55-4f95-9658-f382e147a9a0"
+     "key": "price_value",
+     "groupId": "69f73443-1ee1-428e-9596-c5cac701791d"
     },
-    "clear, enjoyable sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som god, af høj kvalitet og behagelig til tv- og lydbrug.",
-     "simpleTitle": "Klar og behagelig lyd",
+    "clear, enjoyable TV audio": {
+     "sentimentAnalysis": "Flere anmeldelser forbinder kablet med god, behagelig og lyd i høj kvalitet fra TV'et.",
+     "simpleTitle": "Klar og behagelig TV-lyd",
      "bias": "positive",
-     "key": "clear-enjoyable-sound",
-     "groupId": "ca1c4901-981d-4ddb-bf15-f445bd2c153e"
+     "key": "audio_quality",
+     "groupId": "5791f6a8-aa36-4434-abd1-ffeefdeff4c7"
     },
-    "price feels high to some": {
-     "sentimentAnalysis": "Et mindretal synes, at kablet er dyrt, selv om én anmeldelse stadig mener, at den højere pris er det værd.",
-     "simpleTitle": "Prisen føles høj for nogle",
+    "price feels high or offers no audible upgrade": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever begrænset værdi, fordi prisen er høj, eller fordi kablet ikke lyder anderledes end billigere alternativer.",
+     "simpleTitle": "Prisen virker høj uden hørbar merværdi",
      "bias": "negative",
-     "key": "high-price",
-     "groupId": "d0ba70b1-2c55-4f95-9658-f382e147a9a0"
+     "key": "price_concerns",
+     "groupId": "69f73443-1ee1-428e-9596-c5cac701791d"
     }
    },
    "grouping": {
-    "a0fe4d3e-8684-499c-b2a8-9e266a774678": {
-     "title": "Pålidelighed og forbindelse",
-     "id": "a0fe4d3e-8684-499c-b2a8-9e266a774678",
+    "b10c83c1-4ee5-4c76-82dc-52cf4f68eb73": {
+     "title": "Ydeevne og forbindelse",
+     "id": "b10c83c1-4ee5-4c76-82dc-52cf4f68eb73",
      "references": [
       "309ee5c9-8631-427f-947d-3e16e090074b",
       "9b8cb1aa-f1ae-4913-bac5-207b0a0b0e6e",
@@ -555,6 +572,7 @@
       "e51d7e6d-d59b-4bcc-9e28-99d4eaeb147d",
       "da5ce82b-f7b3-4ecb-94bf-339ec029e96d",
       "2651e3af-5a07-42bf-9992-f25d999e8aac",
+      "b889f2b0-181d-4ad1-8955-4b04c82cbfbc",
       "6015b257-c361-4a49-94a9-1f41140b0006",
       "f6a255e3-0fc3-42b8-9ed6-4deaa5baa311",
       "36df533e-cd1f-48ab-b82d-b111d5bcf616",
@@ -564,28 +582,30 @@
       "62384d12-546d-4fad-80fb-627a099f1e80",
       "0e562ec5-e7e2-4c6d-860d-f2e9734180a2",
       "88d18d46-6e5e-4459-8bc3-bd4596186a0c",
-      "40450f4f-7c31-4b65-8fe8-5faee4b9f32c",
-      "9008f5df-48ac-4873-bc28-7a54f48a04b1",
+      "bb71d7c3-15ed-4e91-b30a-9b4029fb39ff",
       "520b9783-7ea8-491d-af34-353d1832b360",
-      "b082df73-0003-4d84-8b7a-f7683f8c880d"
+      "9008f5df-48ac-4873-bc28-7a54f48a04b1",
+      "bed9ace7-f80a-4f58-8cff-39ec6aea483e"
      ]
     },
-    "ca1c4901-981d-4ddb-bf15-f445bd2c153e": {
-     "title": "Lydkvalitet",
-     "id": "ca1c4901-981d-4ddb-bf15-f445bd2c153e",
+    "5791f6a8-aa36-4434-abd1-ffeefdeff4c7": {
+     "title": "Billed- og lydkvalitet",
+     "id": "5791f6a8-aa36-4434-abd1-ffeefdeff4c7",
      "references": [
+      "309ee5c9-8631-427f-947d-3e16e090074b",
       "9a7dfc97-2929-4a2a-aa96-385522c41e49",
-      "e12fb846-ae6d-4c3b-9cd7-a0f996814d68",
-      "6e110925-5aa8-4ea9-b9a2-a88680a3dd88",
       "5d8bfdd7-eee0-4d33-9b86-3325197ceced",
+      "b889f2b0-181d-4ad1-8955-4b04c82cbfbc",
       "acdf69de-306c-4422-9232-319d34973cd4",
+      "bb71d7c3-15ed-4e91-b30a-9b4029fb39ff",
       "e05edbbc-2bd8-45e7-b112-6cd1813414d4"
      ]
     },
-    "d0ba70b1-2c55-4f95-9658-f382e147a9a0": {
+    "69f73443-1ee1-428e-9596-c5cac701791d": {
      "title": "Pris og værdi",
-     "id": "d0ba70b1-2c55-4f95-9658-f382e147a9a0",
+     "id": "69f73443-1ee1-428e-9596-c5cac701791d",
      "references": [
+      "6e110925-5aa8-4ea9-b9a2-a88680a3dd88",
       "24f26d5f-b5e6-4ebc-aaef-30b5c8b03619",
       "1030a650-fd8f-4a98-89d2-02fa3ee04de4",
       "f823782d-5aa7-4b22-b09f-f464abd09456",
@@ -595,15 +615,15 @@
      ]
     }
    },
-   "rating": 4.75,
-   "count": 156,
-   "reviewCount": 56,
+   "rating": 4.7515923566879,
+   "count": 157,
+   "reviewCount": 57,
    "distribution": {
     "1": 1,
     "2": 1,
     "3": 6,
     "4": 20,
-    "5": 128
+    "5": 129
    }
   },
   "brandName": "Essentials",

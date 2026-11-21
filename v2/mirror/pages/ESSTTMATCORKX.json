@@ -13,6 +13,16 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "de0c1c9c-cfc2-430e-ac6c-6dba394e83fa",
+   "1ae39cb8-06c9-4ef7-8381-e77a9b4888b1",
+   "49a16987-1d74-49f6-8f02-be7d717b188a",
+   "c138ac9b-52fc-4c75-9e5e-0a41e46f948e"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 236758,
   "skuCode": "ESSTTMATCORKX",
@@ -167,40 +177,54 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTMATCORKX giver en varm og punchy opgradering i forhold til almindelige filtunderlag med klarere, mere omsluttende lyd og en eksklusiv korkfornemmelse. Den stilfulde, robuste konstruktion og den bedre dæmpning får pladerne til at lyde mere raffinerede og giver pladespilleren et flottere udtryk. Den antistatiske ydeevne bliver generelt værdsat, selv om det for store centerhul kan gøre måtten mindre stabil ved pladeskift.",
+   "summary": "ESSTTMATCORKX leverer en varm, punchy og mere omsluttende gengivelse end standardfiltmåtter med tydeligere musikalsk gennemslagskraft og bedre dæmpning. Den tykke korkkonstruktion føles eksklusiv og giver pladespillere et mere raffineret udtryk. Den antistatiske ydeevne roses af nogle lyttere, men er ikke helt ensartet, og det for store centerhul kan gøre håndteringen mindre sikker.",
    "headlines": {
-    "clearer, more immersive sound": {
-     "sentimentAnalysis": "Korkmåtten roses bredt som en markant lydmæssig forbedring i forhold til standardfilt og giver klarere, bedre dæmpet og mere raffineret afspilning.",
-     "simpleTitle": "Klarere og mere omsluttende lyd",
+    "more detailed and immersive sound than felt mats": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring i forhold til standardfiltmåtter med bedre lyd, større musikalsk gennemslagskraft og bedre dæmpning.",
+     "simpleTitle": "Mere detaljeret og omsluttende lyd end med filtmåtter",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "7264897d-fa7d-45a4-9ec8-478491471ff8"
+     "key": "sound_quality",
+     "groupId": "c0307cb8-17b6-4f30-9355-a0ca084e4bea"
     },
-    "premium, stylish construction": {
-     "sentimentAnalysis": "Korkmaterialet, den øgede tykkelse og det attraktive udseende giver pladespilleren et mere eksklusivt og solidt udtryk.",
-     "simpleTitle": "Eksklusiv og stilfuld konstruktion",
+    "thick, premium-feeling cork construction": {
+     "sentimentAnalysis": "Korkmaterialet og tykkelsen vurderes gentagne gange som bedre end filt og som tegn på solid kvalitet.",
+     "simpleTitle": "Tykt korkmateriale med eksklusiv fornemmelse",
+     "bias": "positive",
+     "key": "build_quality",
+     "groupId": "9bed2806-a39e-4bbf-817f-6215a073ea77"
+    },
+    "stylish upgrade for the turntable": {
+     "sentimentAnalysis": "Måtten roses for sit attraktive udseende og for at få pladespilleren til at virke mere eksklusiv.",
+     "simpleTitle": "Stilfuld opgradering af pladespilleren",
      "bias": "positive",
      "key": "design",
-     "groupId": "e33ad0ef-c894-4a5e-8b89-a62b75d310ee"
+     "groupId": "0d6bec99-3110-4c8d-8b80-9ea5ca81e042"
     }
    },
    "grouping": {
-    "e33ad0ef-c894-4a5e-8b89-a62b75d310ee": {
-     "title": "Materiale og design",
-     "id": "e33ad0ef-c894-4a5e-8b89-a62b75d310ee",
+    "c0307cb8-17b6-4f30-9355-a0ca084e4bea": {
+     "title": "Lydkvalitet",
+     "id": "c0307cb8-17b6-4f30-9355-a0ca084e4bea",
+     "references": [
+      "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
+      "dfaea29d-e944-40e6-9c07-36ea38bd5216",
+      "c882e2f2-41e6-4cbf-ae0f-648882682bc1"
+     ]
+    },
+    "9bed2806-a39e-4bbf-817f-6215a073ea77": {
+     "title": "Byggekvalitet",
+     "id": "9bed2806-a39e-4bbf-817f-6215a073ea77",
      "references": [
       "2c788914-bc07-4eb4-b74d-9d0483b9ada3",
-      "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
       "c882e2f2-41e6-4cbf-ae0f-648882682bc1",
       "23eaa0b9-0468-4fbd-bb3d-6d4913a983c7"
      ]
     },
-    "7264897d-fa7d-45a4-9ec8-478491471ff8": {
-     "title": "Lydkvalitet",
-     "id": "7264897d-fa7d-45a4-9ec8-478491471ff8",
+    "0d6bec99-3110-4c8d-8b80-9ea5ca81e042": {
+     "title": "Design og udseende",
+     "id": "0d6bec99-3110-4c8d-8b80-9ea5ca81e042",
      "references": [
       "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
-      "dfaea29d-e944-40e6-9c07-36ea38bd5216",
       "c882e2f2-41e6-4cbf-ae0f-648882682bc1"
      ]
     }

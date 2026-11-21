@@ -13,6 +13,16 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b53dd322-6e55-4863-b2b0-07128c01d848",
+   "1b362e11-c95c-4a80-ac7b-58b583055f36",
+   "8a5eed51-fe21-410d-8ad9-794f3038cad1",
+   "8363843a-8a87-4bd1-9f48-7df82d7927e5"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 237243,
   "skuCode": "ESSTTVINYLKIT10X",
@@ -56,7 +66,7 @@
   "stockItemAlternative": {
    "save": "100,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=ESSTTVINYLKIT10X",
-   "availableQuantity": 1,
+   "availableQuantity": 2,
    "lowestPrice": "199,-"
   },
   "variants": [
@@ -107,7 +117,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
+     "numberOfStoresExperience": 23,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -138,106 +148,122 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et praktisk og uundværligt plejesæt til vinyl, som holder plader og nåle rene og kan give gamle LP’er en frisk, varm og medrivende lyd. Børsterne og de grundlæggende rengøringsværktøjer får ros for at fungere godt og have en solid kvalitet til prisen. Manglende vejledning, en skrøbelig børstebeskytter, hurtigt slidte børstehår og bekymringer ved den våde nålerens er de største ulemper.",
+   "summary": "ESSTTVINYLKIT10X er et praktisk og effektivt plejesæt til vinyl, som rengør plader og nåle godt, fjerner støv og hjælper med at beskytte udstyret. Sættet er generelt nemt at bruge og giver en nyttig samlet startpakke til en rimelig pris, og mange betragter det som uundværligt til vinylafspilning. Der er dog enkelte mangler: Der følger ingen vejledning med, nogle børste- og kludekomponenter kunne være mere robuste, og den våde nålerens kræver forsigtighed med visse pickupper.",
    "headlines": {
-    "a complete and essential starter kit": {
-     "sentimentAnalysis": "Sættet opfattes som en nyttig og bred startpakke med de grundlæggende værktøjer til regelmæssig pleje af vinyl og nåle.",
-     "simpleTitle": "Et komplet og uundværligt startsæt",
+    "effective cleaning for records and styluses": {
+     "sentimentAnalysis": "Sættet rengør plader og nåle effektivt, fjerner støv og snavs og får pladerne til at lyde friske.",
+     "simpleTitle": "Effektiv rengøring af plader og nåle",
      "bias": "positive",
-     "key": "kit-usefulness",
-     "groupId": "940c80f3-9416-4d8b-a145-376f6ba9e885"
+     "key": "cleaning",
+     "groupId": "fe6efbc8-b9bf-4f79-b727-417cb2998c1d"
     },
-    "cleans records and styluses effectively": {
-     "sentimentAnalysis": "Sættet beskrives gentagne gange som effektivt til at fjerne støv og snavs fra plader og holde nåle rene.",
-     "simpleTitle": "Renser plader og nåle effektivt",
+    "useful all-in-one starter kit": {
+     "sentimentAnalysis": "Sættet indeholder de vigtigste værktøjer til almindelig pleje af plader og nåle og fungerer godt som startpakke.",
+     "simpleTitle": "Nyttigt samlet startsæt",
      "bias": "positive",
-     "key": "cleaning-performance",
-     "groupId": "c4791d0e-3df8-435e-aefb-9eeb0dcf6a82"
+     "key": "kit-value",
+     "groupId": "18641104-7c03-40e3-bcec-16784c299f5a"
     },
-    "good quality for the price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer sættet som solidt eller pengene værd, mens en anmeldelse synes, at det er dyrt.",
-     "simpleTitle": "God kvalitet til prisen",
+    "simple and practical to use": {
+     "sentimentAnalysis": "Vedligeholdelsesværktøjerne opleves som enkle, praktiske og nemme at håndtere.",
+     "simpleTitle": "Nem og praktisk at bruge",
      "bias": "positive",
-     "key": "quality-value",
-     "groupId": "0b6a605a-4b94-496b-b007-8f7159b1f756"
+     "key": "usability",
+     "groupId": "d3e10f58-bb69-41c0-8e28-de164239a50d"
+    },
+    "missing instructions make some tools unclear": {
+     "sentimentAnalysis": "Flere brugere efterlyser tydelige instruktioner, fordi brugen af alle dele ikke er selvforklarende.",
+     "simpleTitle": "Manglende vejledning gør nogle værktøjer uklare",
+     "bias": "negative",
+     "key": "instructions-safety",
+     "groupId": "10c697b8-68e6-4536-80a9-9bb51f19ec11"
+    },
+    "wet stylus cleaning raises cartridge-safety concerns": {
+     "sentimentAnalysis": "Advarsler anbefaler at undgå den våde nålerens på visse pickupper, fordi væsken kan beskadige limen, der holder nålen fast.",
+     "simpleTitle": "Våd nålerens giver bekymring for pickup-sikkerheden",
+     "bias": "negative",
+     "key": "instructions-safety",
+     "groupId": "10c697b8-68e6-4536-80a9-9bb51f19ec11"
     }
    },
    "grouping": {
-    "940c80f3-9416-4d8b-a145-376f6ba9e885": {
-     "title": "Sættets anvendelighed",
-     "id": "940c80f3-9416-4d8b-a145-376f6ba9e885",
+    "fe6efbc8-b9bf-4f79-b727-417cb2998c1d": {
+     "title": "Rengøringsevne",
+     "id": "fe6efbc8-b9bf-4f79-b727-417cb2998c1d",
      "references": [
       "466c26b6-1ac3-4293-ac7a-5c0bb65bcc4d",
-      "c82f0366-c889-4f11-bca4-4788e27cf36a",
-      "66d15df5-a2ee-4b91-99c1-01ed60bc3b1c",
-      "13daa67f-62f5-4407-ab65-3d7a7553c8a2",
-      "68527638-f384-49fc-8a81-c1c50ba5541e",
-      "d3fbad50-f642-49cf-bc12-6e322926bbc8",
-      "92ec0eed-6946-4c0e-93a3-579acda86c5a",
-      "df81d2cd-aed2-4078-8f75-bf931ef9dbd4",
-      "b2d05ebd-4419-4d8e-aa58-837f8bc31b4b",
-      "63d0c316-b099-450b-b13f-427859084769",
-      "4fd9c86b-2a33-4490-974d-c72cd6c95832",
-      "0ce4ef82-86be-4989-923b-50341f4b8157",
-      "8c6dbf97-4ea3-431f-9df2-ddd60bcbdee4",
-      "353ba5c1-6d4f-49f1-bb1f-06f757caaaf5",
-      "6eee716e-ac7c-496c-ba7c-c986e962264c",
-      "3d8f201c-da34-4e80-83e2-b59375586e56",
-      "45520f30-178c-4627-871f-511c594f8266",
-      "7ebe833c-acc7-4212-b2eb-75ec1a2f5dfc",
-      "4e5bfec2-25a0-4ba1-8d49-a6db60e43803",
-      "dea143b0-f837-4d15-866f-c5a85d91d9a6",
-      "7548b010-93d3-4caa-9c5f-862cf6f6dad2",
-      "1c547e8e-b9e6-454d-bbef-c76385430ac7",
-      "4ef3f7ed-e933-4fbb-85d6-25b988ace870"
-     ]
-    },
-    "c4791d0e-3df8-435e-aefb-9eeb0dcf6a82": {
-     "title": "Rengøringsevne",
-     "id": "c4791d0e-3df8-435e-aefb-9eeb0dcf6a82",
-     "references": [
+      "837381bf-cab9-4a86-9a1d-b1e6650809ea",
       "bec3dae4-bfe7-405d-a36f-093c8800a19e",
-      "948d27c0-6a4b-4fbf-ae0a-d3e9e4b068ed",
-      "0d5c8f56-861e-4a39-905b-8cadd2913160",
-      "e19e59e1-fc05-4478-ae6d-b1addee1e5a0",
+      "ed23daf5-9efc-4a62-9fae-51c5fcacd75f",
       "8902e344-c4f1-4b29-9f76-251c7b474f0a",
+      "e19e59e1-fc05-4478-ae6d-b1addee1e5a0",
       "ece2d413-8e85-49bf-8db9-874e634dd823",
       "44afcc5e-f1d2-4de5-b6ca-2548190f2afc",
       "6bacb2e1-622e-491c-8863-6f542b77313a",
+      "3b32b1ae-9191-4230-bcc3-e87937d55f27",
       "410172d9-8c16-4a95-a144-198b5d0089f8",
-      "445d0d22-c662-4979-a3c8-ac6354f75459",
+      "dce3dbf0-6e25-460d-8015-cb3bbaf388f7",
       "1c2c37b9-87e0-469e-a704-d3d821b79402",
       "4880657e-f4f4-4a9a-875f-eea8336498ed",
-      "61228207-b6c9-4677-95b2-3d4f21fe2f25",
-      "dce3dbf0-6e25-460d-8015-cb3bbaf388f7",
-      "3a8a8b52-5182-4f2d-946e-2212f1b7df17",
-      "71da31d1-ab8a-410c-ad13-4c5096a3dce5"
+      "445d0d22-c662-4979-a3c8-ac6354f75459",
+      "4e5bfec2-25a0-4ba1-8d49-a6db60e43803"
      ]
     },
-    "0b6a605a-4b94-496b-b007-8f7159b1f756": {
-     "title": "Kvalitet og værdi",
-     "id": "0b6a605a-4b94-496b-b007-8f7159b1f756",
+    "18641104-7c03-40e3-bcec-16784c299f5a": {
+     "title": "Sættets indhold og værdi",
+     "id": "18641104-7c03-40e3-bcec-16784c299f5a",
      "references": [
+      "a236b14f-8087-4bfd-8c36-7c7b89081697",
       "62c2b9cd-17ca-4624-9c4e-616a7180ee8f",
-      "edd62df6-c388-41a8-ac80-9a4be95dde2c",
       "7899219c-4a8e-47f1-9e4a-eea81c252c39",
-      "de7bea86-352e-4a8f-9e87-0b617064ef53",
+      "2ba74363-92f3-49a1-8f9f-ea49d28b2886",
+      "63d0c316-b099-450b-b13f-427859084769",
       "5bf3a05b-44ef-44c9-aa0f-e4f192e2d0a4",
-      "5277f4f1-a4b2-4db3-8851-54e9d104d243",
-      "a86895fa-5185-4a34-8522-b58e76a6772d",
-      "dcd338b1-f0f5-4124-8255-fc0a6b981fd1"
+      "e1bb6ade-77cd-431e-a1ff-92ba91ae8f16",
+      "65f7d343-f84f-4208-812c-2f95e0271329",
+      "3d8f201c-da34-4e80-83e2-b59375586e56",
+      "46ddf3b3-808a-4e18-83eb-1854c2ea1ed8",
+      "61228207-b6c9-4677-95b2-3d4f21fe2f25"
+     ]
+    },
+    "d3e10f58-bb69-41c0-8e28-de164239a50d": {
+     "title": "Brugervenlighed",
+     "id": "d3e10f58-bb69-41c0-8e28-de164239a50d",
+     "references": [
+      "d9af73da-d7d7-492a-8c3d-f8e93d729f2c",
+      "5ebdd147-93dd-487a-9f9d-443218203ca5",
+      "01d2508b-3e03-48fe-941e-a96c5fb5bace",
+      "c26be96a-df28-40ed-bbd0-5cd931908e9a",
+      "17299de0-37d1-478b-a776-cfb4c89cdf18",
+      "f4?",
+      "34032251-0080-4b22-b08e-1b77f5b4c908",
+      "71da31d1-ab8a-410c-ad13-4c5096a3dce5",
+      "7548b010-93d3-4caa-9c5f-862cf6f6dad2"
+     ]
+    },
+    "10c697b8-68e6-4536-80a9-9bb51f19ec11": {
+     "title": "Vejledning og sikkerhed",
+     "id": "10c697b8-68e6-4536-80a9-9bb51f19ec11",
+     "references": [
+      "948d27c0-6a4b-4fbf-ae0a-d3e9e4b068ed",
+      "4850099f-7b7a-49c3-b3f5-70bcefd0fca2",
+      "e947a4cf-87aa-485b-8d6d-c8a58f85e176",
+      "44b145f3-4ed1-4a5f-a3ed-62d22571a9da",
+      "ece2d413-8e85-49bf-8db9-874e634dd823",
+      "7847e962-9a8b-4f04-a84f-47820e612228",
+      "66a9e175-8704-4889-9468-573a619ac3f0"
      ]
     }
    },
-   "rating": 4.57504873294347,
-   "count": 513,
-   "reviewCount": 153,
+   "rating": 4.57669902912621,
+   "count": 515,
+   "reviewCount": 154,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 54,
     "4": 106,
-    "5": 352
+    "5": 354
    }
   },
   "brandName": "Essentials",

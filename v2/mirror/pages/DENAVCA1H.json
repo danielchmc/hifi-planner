@@ -13,6 +13,34 @@
    "url": "/surround/surround-receiver/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI indgange": "7",
+   "HDMI udgange": "3",
+   "HDMI ARC/CEC": "Ja",
+   "Lydudgang": "Analog RCA, Analog XLR, LFE",
+   "Lydindgang": "Coaxial, Optisk, Analog XLR",
+   "Udgang (andet)": "IR, 12V trigger",
+   "Indgang (andet)": "RS-232, Ethernet, IR",
+   "Trådløs overførsel": "Airplay 2, Bluetooth-indgang, Bluetooth-udgang, HEOS Multiroom, Wi-Fi",
+   "Billedeindgang": "HDMI",
+   "Zoner": "3",
+   "Udgangseffekt (8 ohm, 2 kanaler)": "150 watt",
+   "Udgangseffekt (6 ohm, 1 kanal)": "210 watt",
+   "Udgangseffekt (6 ohm, 2 kanaler)": "190 watt",
+   "Forstærker kanaler": "15",
+   "Fra beskrivelsen": "Specialfremstillede DHCT-udgangstransistorer (Denon High Current Transistors) · HDMI 2.1 med HDCP2.3, 8K/60Hz pass-through, eARC, Deep Color, xvYCC, 4:4:4 Pure Color sub-sampling, BT.2020 pass-through, Auto Lipsync og HDMI-CEC · HDMI 2.1/8K samt 4K/120 understøttes på alle HDMI indgange og 2 udgange · Avanceret gaming via HDMI med 4K/120Hz pass-through, ALLM (Auto Low Latency Mode) / QFT (Quick Frame Transport) / VRR (Variable Refresh Rate) · HDMI Zone 2 (audio/video med uafhængigt kildevalg), Zone 2/3 (inkl. digitale lydkilder) · Indgange kan navngives individuelt · DSD streaming via HDMI og netværk (op til DSD5.6) · Automatisk følsomheds-justering på alle indgange · HDMI Diagnostic Mode"
+  },
+  "gallery": [
+   "327e9e28-9171-45b7-883f-2a63348c220f",
+   "d7ece289-d6b6-4ac3-9058-ef4e26ead8b4",
+   "59b48e65-3e9d-4b8f-bf6c-7998a98c6cb2",
+   "76cef664-f3fb-43fb-b710-35e39967e7f5",
+   "ae2f9645-6f2b-45c1-bf19-7bc02b0c69cd",
+   "27dc3a17-4e57-4487-9729-e731ade4d506"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 192049,
   "skuCode": "DENAVCA1H",
@@ -532,65 +560,78 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENON AVC-A1H er en fremragende high-end AV-receiver med varm, slagkraftig og meget detaljeret stereo- og flerkanalslyd, imponerende baskontrol og en vidunderligt omsluttende gengivelse. Byggekvalitet, effekt, funktioner og tilslutningsmuligheder føles passende eksklusive, mens opsætningen giver omfattende og samtidig generelt brugervenlig kontrol. Omhyggelig kalibrering og tilpasning til systemet kan betale sig, selv om nogle ejere synes, at finish og betjening er lidt mindre luksuriøs end på ældre topmodeller.",
+   "summary": "DENAVCA1H leverer en enestående, varm og slagkraftig lyd med imponerende detaljer i både stereo og multikanal, kraftig bas og en omsluttende skala. De mange funktioner, den fleksible kalibrering og den tydelige betjening gør receiveren meget alsidig, mens en omhyggelig opsætning kan frigive endnu mere ydelse. Den solide konstruktion og de førsteklasses materialer understreger high-end-karakteren, selv om enkelte kabinetdetaljer og højttalertilslutninger virker mindre raffinerede end på tidligere topmodeller.",
    "headlines": {
-    "warm, powerful and detailed sound": {
-     "sentimentAnalysis": "Receiveren roses bredt for klar, kraftfuld, detaljeret og meget engagerende stereo- og flerkanalsgengivelse med forbedret bas og en overbevisende opgradering i forhold til ældre udstyr.",
-     "simpleTitle": "Varm, kraftfuld og detaljeret lyd",
+    "powerful, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmelderne roser den klare, kraftfulde og meget detaljerede stereo- og multikanalgengivelse med præcis bas og en omsluttende opgradering af de tilsluttede højttalere.",
+     "simpleTitle": "Kraftfuld, detaljeret og omsluttende lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "00d080fb-c84b-417e-88ac-e722928d2b9f"
+     "key": "sound-quality",
+     "groupId": "8f6200b9-13c9-4011-8689-df5ac61a66d1"
     },
-    "premium, solid construction": {
-     "sentimentAnalysis": "Receiveren opleves som tung, solid og professionelt fremstillet med materialer af høj kvalitet og overbevisende sans for detaljer.",
-     "simpleTitle": "Førsteklasses, solid konstruktion",
+    "advanced calibration can unlock even better sound": {
+     "sentimentAnalysis": "Dirac og omhyggeligt justerede rumkorrektionsindstillinger forbindes med en markant forbedring af den allerede fremragende lyd.",
+     "simpleTitle": "Avanceret kalibrering kan frigive endnu bedre lyd",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "5ebb8b7f-3611-47ab-b202-ed96ccab9944"
+     "key": "sound-quality",
+     "groupId": "8f6200b9-13c9-4011-8689-df5ac61a66d1"
     },
-    "extensive but user-friendly setup": {
-     "sentimentAnalysis": "Trods de mange indstillinger opleves opsætning og daglig betjening generelt som overskuelig, hurtig og nem at håndtere.",
-     "simpleTitle": "Omfattende, men brugervenlig opsætning",
+    "premium, robust construction": {
+     "sentimentAnalysis": "Receiveren beskrives som tung, solidt bygget og udført i hochwertige materialer med overbevisende håndværk.",
+     "simpleTitle": "Førsteklasses, robust konstruktion",
      "bias": "positive",
-     "key": "setup_controls",
-     "groupId": "5069e871-c586-4c62-adbd-c3eb722a436e"
+     "key": "build-quality",
+     "groupId": "b964786c-0ba2-4f8b-9be0-27e2539ea6d3"
     },
-    "calibration requires careful fine-tuning": {
-     "sentimentAnalysis": "Den automatiske kalibrering giver muligvis ikke det bedste resultat med det samme, og optimal lyd kan kræve manuelle justeringer og omfattende konfiguration.",
-     "simpleTitle": "Kalibreringen kræver omhyggelig finjustering",
+    "some physical details feel less premium": {
+     "sentimentAnalysis": "Sammenlignet med tidligere topmodeller virker kabinettet lidt mindre massivt, mens tæt placerede højttalerterminaler og et lettere topdæksel svækker premiumindtrykket.",
+     "simpleTitle": "Enkelte fysiske detaljer virker mindre eksklusive",
      "bias": "negative",
-     "key": "setup_controls",
-     "groupId": "5069e871-c586-4c62-adbd-c3eb722a436e"
+     "key": "build-quality",
+     "groupId": "b964786c-0ba2-4f8b-9be0-27e2539ea6d3"
+    },
+    "feature-rich controls remain user-friendly": {
+     "sentimentAnalysis": "Trods de mange indstillinger og funktioner opfattes brugerflade, fjernbetjening og generelle betjening som overskuelige og nemme.",
+     "simpleTitle": "Den omfattende betjening er stadig brugervenlig",
+     "bias": "positive",
+     "key": "setup-and-controls",
+     "groupId": "7c56b41b-c1bd-471c-a7a3-5a4e4bd6fc43"
+    },
+    "initial setup can require considerable effort": {
+     "sentimentAnalysis": "Automatisk kalibrering eller omfattende konfiguration kan først give utilfredsstillende resultater og kræve manuelle justeringer, før receiveren yder bedst.",
+     "simpleTitle": "Den første opsætning kan kræve en del arbejde",
+     "bias": "negative",
+     "key": "setup-and-controls",
+     "groupId": "7c56b41b-c1bd-471c-a7a3-5a4e4bd6fc43"
     }
    },
    "grouping": {
-    "00d080fb-c84b-417e-88ac-e722928d2b9f": {
+    "8f6200b9-13c9-4011-8689-df5ac61a66d1": {
      "title": "Lydkvalitet",
-     "id": "00d080fb-c84b-417e-88ac-e722928d2b9f",
+     "id": "8f6200b9-13c9-4011-8689-df5ac61a66d1",
      "references": [
       "c4c557d3-28dc-4246-af68-e50b82163a75",
-      "f0206e9a-7083-4969-8948-f6a0afb13231",
       "0ad2ce6b-6857-46e7-adf4-bee687770c80",
+      "3167d916-b1fb-41e6-ad44-88ea0d47babe",
       "6aca24c0-23a7-4e2b-bd6f-a6649b355d3b",
       "2bbcfe79-ffe5-4d34-98cc-3d545fcd36bd",
       "a7bf4c5e-eac4-4bf7-aa8e-22ff8300ce4b",
-      "e214f945-ae1e-42e8-938a-c2859866583d",
       "3cb472ce-76c2-4efb-bbb2-ae3eb732d5dc"
      ]
     },
-    "5069e871-c586-4c62-adbd-c3eb722a436e": {
+    "7c56b41b-c1bd-471c-a7a3-5a4e4bd6fc43": {
      "title": "Opsætning og betjening",
-     "id": "5069e871-c586-4c62-adbd-c3eb722a436e",
+     "id": "7c56b41b-c1bd-471c-a7a3-5a4e4bd6fc43",
      "references": [
       "c4c557d3-28dc-4246-af68-e50b82163a75",
       "2bbcfe79-ffe5-4d34-98cc-3d545fcd36bd",
-      "3cb472ce-76c2-4efb-bbb2-ae3eb732d5dc",
-      "1a203e10-1545-461a-b0ad-16cca8349c5f"
+      "1a203e10-1545-461a-b0ad-16cca8349c5f",
+      "3cb472ce-76c2-4efb-bbb2-ae3eb732d5dc"
      ]
     },
-    "5ebb8b7f-3611-47ab-b202-ed96ccab9944": {
+    "b964786c-0ba2-4f8b-9be0-27e2539ea6d3": {
      "title": "Byggekvalitet",
-     "id": "5ebb8b7f-3611-47ab-b202-ed96ccab9944",
+     "id": "b964786c-0ba2-4f8b-9be0-27e2539ea6d3",
      "references": [
       "c4c557d3-28dc-4246-af68-e50b82163a75",
       "0ad2ce6b-6857-46e7-adf4-bee687770c80",

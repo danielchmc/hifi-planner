@@ -13,6 +13,14 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b6e15f82-5383-4911-aa8e-74cef6ecc66e",
+   "55767c3a-47f9-44f1-8ae7-dbe208186fbe"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236735,
   "skuCode": "ESSTTBRUSHSTYLUS3X",
@@ -115,8 +123,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 18,
-     "availableQuantity": 275,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 271,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -140,27 +148,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTBRUSHSTYLUS3X roses bredt som en effektiv og veludført nålebørste, der holder nålen ren. De bløde og skånsomme børstehår gør rengøringen tryg, mens det kompakte design er praktisk til regelmæssig brug. Samlet set tilfører børsten vinylplejen en varm og punchy fornemmelse og understøtter en medrivende lytteoplevelse.",
+   "summary": "En varm og punchy lille nålebørste, der fungerer pålideligt og rengør nålen effektivt. De bløde, skånsomme børstehår gør den daglige vedligeholdelse sikker og nem. Et veludført og behageligt tilbehør med en næsten immersiv følelse af omhu, selv om prisen kan virke lidt høj.",
    "headlines": {
-    "cleans the stylus effectively": {
-     "sentimentAnalysis": "Børsten beskrives konsekvent som velfungerende og effektiv til rengøring af nålen.",
-     "simpleTitle": "Renser nålen effektivt",
+    "reliable everyday cleaning": {
+     "sentimentAnalysis": "Børsten beskrives konsekvent som velfungerende, pålidelig og effektiv.",
+     "simpleTitle": "Pålidelig rengøring i hverdagen",
      "bias": "positive",
-     "key": "cleaning_effectiveness",
-     "groupId": "2fa82040-f5ab-4a89-9af9-dc5fff586310"
+     "key": "reliable-cleaning",
+     "groupId": "6280a934-9847-472a-9e3a-2031b594b5aa"
     },
-    "exceptionally soft and gentle bristles": {
-     "sentimentAnalysis": "Bløde, behagelige og skånsomme børstehår er en klar styrke ved børsten.",
-     "simpleTitle": "Ekstra bløde og skånsomme børstehår",
+    "soft and gentle bristles": {
+     "sentimentAnalysis": "Børstehårene roses gentagne gange som meget bløde, skånsomme og behagelige at bruge.",
+     "simpleTitle": "Bløde og skånsomme børstehår",
      "bias": "positive",
-     "key": "softness_gentleness",
-     "groupId": "3f14f27c-cea7-4268-9677-154381feed7d"
+     "key": "soft-gentle-bristles",
+     "groupId": "9b61b059-e512-4300-af8c-b87e56ea5888"
+    },
+    "effective needle cleaning": {
+     "sentimentAnalysis": "Konkrete kommentarer roser børsten for at rengøre nålen godt og holde den ren.",
+     "simpleTitle": "Effektiv nålerengøring",
+     "bias": "positive",
+     "key": "needle-cleaning",
+     "groupId": "6280a934-9847-472a-9e3a-2031b594b5aa"
     }
    },
    "grouping": {
-    "2fa82040-f5ab-4a89-9af9-dc5fff586310": {
+    "6280a934-9847-472a-9e3a-2031b594b5aa": {
      "title": "Rengøringseffektivitet",
-     "id": "2fa82040-f5ab-4a89-9af9-dc5fff586310",
+     "id": "6280a934-9847-472a-9e3a-2031b594b5aa",
      "references": [
       "989a0c06-ad0f-44bb-ac56-7413dbc685fa",
       "887bc352-c43c-430c-a283-2949023fe8fa",
@@ -172,9 +187,9 @@
       "f123595d-7f64-4184-8556-996859ddef75"
      ]
     },
-    "3f14f27c-cea7-4268-9677-154381feed7d": {
-     "title": "Blødhed og skånsomhed",
-     "id": "3f14f27c-cea7-4268-9677-154381feed7d",
+    "9b61b059-e512-4300-af8c-b87e56ea5888": {
+     "title": "Børstehårenes blødhed og skånsomhed",
+     "id": "9b61b059-e512-4300-af8c-b87e56ea5888",
      "references": [
       "5eeea131-6583-4644-b862-e966a7aa0ec8",
       "43d9b887-2dd3-4936-934b-ccf5951944bd",

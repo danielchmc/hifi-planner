@@ -13,6 +13,19 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk",
+   "Fra beskrivelsen": "Fuldt diskret differential udgangstrin"
+  },
+  "gallery": [
+   "6d33740d-19ff-4e1d-bb3e-22b2751bdd53",
+   "e40fd514-1614-415f-b1be-f3a1b445db99",
+   "32e1500d-c3bc-41fe-b0e3-d4e2f7fbdfc7",
+   "5cd9d4c8-2f0c-4648-8ca9-634d3ee85540"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 247224,
   "skuCode": "DENDCD3000NE",
@@ -280,8 +293,8 @@
      "productCode": "DENDCD3000NEPS"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager onsdag den 23. december",
-     "deliveryDate": "2026-12-23T00:00:00Z",
+     "description": "Forventes på lager lørdag den 30. januar",
+     "deliveryDate": "2027-01-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
      "inventoryStatusType": "notInStockAtpDate"
@@ -380,51 +393,44 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon DCD-3000NE roses bredt for sin varme, meget detaljerede og raffinerede lyd fra både CD og SACD samt fremragende opskalering og en meget kompetent DAC. Solid japansk konstruktion, førsteklasses materialer og smidig betjening understøtter high-end-indtrykket. Den høje pris anses generelt for rimelig, selv om én anmeldelse beskriver en uacceptabel brummen under stille passager i starten.",
+   "summary": "Denon DCD-3000NE leverer en varm, detaljeret og medrivende lyd med særligt imponerende CD- og SACD-gengivelse. Den raffinerede, rolige gengivelse, den kraftige DAC og den usædvanligt solide konstruktion giver ægte high-end-fornemmelse. Premiumprisen anses generelt for berettiget, selv om en anmeldelse rapporterer en hørbar mekanisk summen under stille passager i begyndelsen af visse discs.",
    "headlines": {
-    "detailed, refined and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gengivelsen som fantastisk, raffineret, rolig, detaljeret, neutral og usædvanligt klar.",
-     "simpleTitle": "Detaljeret, raffineret og immersiv lyd",
+    "detailed and refined sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den meget detaljerede, raffinerede, neutrale og rolige gengivelse med en oplevelse af større åbenhed og klarhed.",
+     "simpleTitle": "Detaljeret og raffineret lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "a3cf00cc-7357-4c5c-a15a-2d39b93dcdda"
+     "key": "sound-quality",
+     "groupId": "8c1ccea7-5db3-41b2-99ac-20df8935d6fc"
     },
     "excellent CD and SACD playback": {
-     "sentimentAnalysis": "Begge diskformater roses gentagne gange, hvor SACD beskrives som smuk og CD-afspilning som enestående.",
+     "sentimentAnalysis": "CD- og SACD-afspilningen beskrives gentagne gange som kraftfuld, smuk og usædvanligt klar, og opskaleringen af Red Book-CD'er roses især.",
      "simpleTitle": "Fremragende CD- og SACD-afspilning",
      "bias": "positive",
-     "key": "formats",
-     "groupId": "ba34030f-5dd6-440c-bb08-6f8d0250dc54"
+     "key": "disc-playback",
+     "groupId": "204e43bf-0b1a-456e-bd81-608e41709d86"
     },
-    "premium price feels justified": {
-     "sentimentAnalysis": "Trods den betydelige pris mener flere anmeldelser, at ydeevne og kvalitet er investeringen værd.",
-     "simpleTitle": "Premiumprisen føles berettiget",
+    "high price justified by performance": {
+     "sentimentAnalysis": "Trods den betydelige pris anses ydelse, lydkvalitet og konstruktion for mere end investeringen værd.",
+     "simpleTitle": "Den høje pris berettiges af ydelsen",
      "bias": "positive",
      "key": "value",
-     "groupId": "1f6d55c2-1c70-44fb-b681-90d8f3b7ca1b"
+     "groupId": "07bda46e-d8c6-4834-815e-11672d012fe8"
     },
-    "heavy, premium construction": {
-     "sentimentAnalysis": "Afspilleren forbindes konsekvent med robust japansk teknik, tungt metal og betryggende solide knapper og mekanik.",
-     "simpleTitle": "Tung og førsteklasses konstruktion",
+    "exceptionally solid construction": {
+     "sentimentAnalysis": "Det tunge metalchassis, de solide knapper og den smidige skuffemekanisme giver et eksklusivt og holdbart indtryk.",
+     "simpleTitle": "Usædvanligt solid konstruktion",
      "bias": "positive",
-     "key": "build",
-     "groupId": "c182fed4-761f-4b35-8553-6f60fd5cad79"
-    },
-    "effective CD upscaling and strong DAC": {
-     "sentimentAnalysis": "CD-opskalering siges at fjerne et slør fra musikken, mens den integrerede DAC anses for at være fremragende.",
-     "simpleTitle": "Effektiv CD-opskalering og stærk DAC",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "a3cf00cc-7357-4c5c-a15a-2d39b93dcdda"
+     "key": "build-quality",
+     "groupId": "82431dce-5f1f-4478-aa43-98f9ae1ab0ea"
     }
    },
    "grouping": {
-    "a3cf00cc-7357-4c5c-a15a-2d39b93dcdda": {
+    "8c1ccea7-5db3-41b2-99ac-20df8935d6fc": {
      "title": "Lydkvalitet",
-     "id": "a3cf00cc-7357-4c5c-a15a-2d39b93dcdda",
+     "id": "8c1ccea7-5db3-41b2-99ac-20df8935d6fc",
      "references": [
+      "e15ccdd6-e360-4f36-bce4-5c227b5595f3",
       "3cb1101f-ef43-495d-824f-b724c4efb20a",
-      "62069d6e-3c31-414a-b0e1-83cd60acc157",
       "2c4965e1-0a40-4df4-a83a-b5dbcf8c801d",
       "41e4d173-2dcf-4415-a5e1-88db62fc23da",
       "7eea0189-d0d2-4b00-bfe7-43b4502d114d",
@@ -437,9 +443,9 @@
       "c766211c-b28b-46c4-9195-8919bb779225"
      ]
     },
-    "ba34030f-5dd6-440c-bb08-6f8d0250dc54": {
-     "title": "CD- og SACD-afspilning",
-     "id": "ba34030f-5dd6-440c-bb08-6f8d0250dc54",
+    "204e43bf-0b1a-456e-bd81-608e41709d86": {
+     "title": "Discafspilning",
+     "id": "204e43bf-0b1a-456e-bd81-608e41709d86",
      "references": [
       "62069d6e-3c31-414a-b0e1-83cd60acc157",
       "2c4965e1-0a40-4df4-a83a-b5dbcf8c801d",
@@ -449,35 +455,36 @@
       "d6ce4fc7-f911-4b7d-9d0d-d761b29ce1c2"
      ]
     },
-    "1f6d55c2-1c70-44fb-b681-90d8f3b7ca1b": {
+    "82431dce-5f1f-4478-aa43-98f9ae1ab0ea": {
+     "title": "Byggekvalitet",
+     "id": "82431dce-5f1f-4478-aa43-98f9ae1ab0ea",
+     "references": [
+      "41e4d173-2dcf-4415-a5e1-88db62fc23da",
+      "efb44825-9e22-497d-9c4d-bf259a2afde4",
+      "b5332e6b-424a-43d1-827d-42d04a98a046",
+      "d6ce4fc7-f911-4b7d-9d0d-d761b29ce1c2"
+     ]
+    },
+    "07bda46e-d8c6-4834-815e-11672d012fe8": {
      "title": "Værdi for pengene",
-     "id": "1f6d55c2-1c70-44fb-b681-90d8f3b7ca1b",
+     "id": "07bda46e-d8c6-4834-815e-11672d012fe8",
      "references": [
       "2c4965e1-0a40-4df4-a83a-b5dbcf8c801d",
       "efb44825-9e22-497d-9c4d-bf259a2afde4",
       "3e2315ab-94b8-4d65-8aca-f2596917d52b",
       "d6ce4fc7-f911-4b7d-9d0d-d761b29ce1c2"
      ]
-    },
-    "c182fed4-761f-4b35-8553-6f60fd5cad79": {
-     "title": "Byggekvalitet",
-     "id": "c182fed4-761f-4b35-8553-6f60fd5cad79",
-     "references": [
-      "41e4d173-2dcf-4415-a5e1-88db62fc23da",
-      "b5332e6b-424a-43d1-827d-42d04a98a046",
-      "d6ce4fc7-f911-4b7d-9d0d-d761b29ce1c2"
-     ]
     }
    },
-   "rating": 4.84,
-   "count": 25,
-   "reviewCount": 14,
+   "rating": 4.84615384615385,
+   "count": 26,
+   "reviewCount": 15,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 2,
-    "5": 22
+    "5": 23
    }
   },
   "brandName": "Denon",

@@ -13,6 +13,14 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "eeb1fc5f-edb1-4724-af75-15a33e0d1e0f",
+   "a412f38d-7818-4c00-89cd-8a4a5af59a7f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 237336,
   "skuCode": "ESSCL1SCPROX",
@@ -149,7 +157,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 14743,
+     "availableQuantity": 14593,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -174,56 +182,50 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1SCPROX er et enkelt og pålideligt højttalerkabel, der fungerer som forventet og giver god værdi for pengene. Installationen er nem, med praktiske muligheder for bananstik og diskret føring gennem rør. Lyden beskrives som fantastisk, mens det samlede indtryk er et solidt og effektivt kabel med en mindre kosmetisk indvending mod den hvide farve.",
+   "summary": "ESSCL1SCPROX er et pålideligt og veludført højttalerkabel med god værdi for pengene, som fungerer efter hensigten. Installationen er enkel, og kablet passer praktisk til bananstik, surroundhøjttalere, udendørshøjttalere og skjult montering. Musikken lyder fantastisk med et varmt, energisk og omsluttende indtryk, selv om den hvide kabelfarve ikke falder i alles smag, og kablets præcise lydmæssige bidrag er svært at vurdere uden en reference.",
    "headlines": {
-    "reliable performance": {
-     "sentimentAnalysis": "Kablet udfører konsekvent sin tilsigtede funktion og opfattes som pålideligt i daglig brug.",
-     "simpleTitle": "Pålidelig ydeevne",
+    "reliable everyday performance": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som velfungerende, formålsmæssigt korrekt og pålideligt i hverdagen.",
+     "simpleTitle": "Pålidelig ydeevne i hverdagen",
      "bias": "positive",
-     "key": "reliable_performance",
-     "groupId": "57d7f72a-53d8-41e7-ae17-dd9283305aca"
+     "key": "reliable-everyday-performance",
+     "groupId": "ee63f6ec-ab68-4484-ad96-970d7d80c0ba"
     },
-    "easy installation and discreet routing": {
-     "sentimentAnalysis": "Kablet er nemt at klargøre og tilslutte, mens fleksibiliteten gør det muligt at føre det pænt gennem skjulte rør.",
-     "simpleTitle": "Nem installation og diskret kabelføring",
+    "simple, flexible installation": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver enkel klargøring, kompatibilitet med bananstik, egnethed til surround- og udendørshøjttalere samt praktisk skjult montering.",
+     "simpleTitle": "Enkel og fleksibel installation",
      "bias": "positive",
-     "key": "easy_installation",
-     "groupId": "602b9873-26ee-4b3f-bae1-f5733d7111d1"
+     "key": "simple-flexible-installation",
+     "groupId": "7894064f-4665-4fc4-bc12-fa8252f7042e"
     },
-    "great, immersive sound": {
-     "sentimentAnalysis": "Kablet forbindes med behagelig og klar højttalerafspilning og egner sig til surroundhøjttalere.",
-     "simpleTitle": "Fantastisk, omsluttende lyd",
-     "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "57d7f72a-53d8-41e7-ae17-dd9283305aca"
-    },
-    "white color is less appealing": {
-     "sentimentAnalysis": "Kablet fungerer godt, men den hvide overflade opfattes som en mindre æstetisk ulempe.",
-     "simpleTitle": "Hvid farve er mindre attraktiv",
-     "bias": "negative",
-     "key": "cable_colour",
-     "groupId": "57d7f72a-53d8-41e7-ae17-dd9283305aca"
+    "pleasant sound, with limited reference for comparison": {
+     "sentimentAnalysis": "De tilgængelige kommentarer kombinerer et begejstret musikindtryk med usikkerhed om, hvor meget resultatet specifikt kan tilskrives kablet.",
+     "simpleTitle": "Behagelig lyd, men begrænset sammenligningsgrundlag",
+     "bias": "meh",
+     "key": "sound-impression",
+     "groupId": "ee63f6ec-ab68-4484-ad96-970d7d80c0ba"
     }
    },
    "grouping": {
-    "57d7f72a-53d8-41e7-ae17-dd9283305aca": {
-     "title": "Kabelkvalitet og ydeevne",
-     "id": "57d7f72a-53d8-41e7-ae17-dd9283305aca",
+    "ee63f6ec-ab68-4484-ad96-970d7d80c0ba": {
+     "title": "Kvalitet og ydeevne",
+     "id": "ee63f6ec-ab68-4484-ad96-970d7d80c0ba",
      "references": [
       "5f1168d2-9128-430d-a177-31242a9d2837",
+      "4ae435c1-ca30-46f2-b50d-d55109a286f3",
       "52166893-8f83-45df-83f0-e121b3ccb202",
       "f732c1ed-6a13-47f7-9ba1-0a9b7f1e509b",
-      "356353c5-28c1-4a09-9fb7-331b909f3075",
       "126ba765-f724-46a6-a82f-f150c919af47",
       "e8460d1e-cfe2-400e-bbc8-4b9c08a7d4c6",
-      "78af4912-d8f0-4b6c-8ab0-c9fdd13788d9",
-      "5c944fb8-386e-43ff-a1fc-9674a711e1c6"
+      "78af4912-d8f0-4b6c-8ab0-c9fdd13788d9"
      ]
     },
-    "602b9873-26ee-4b3f-bae1-f5733d7111d1": {
-     "title": "Installation og brugervenlighed",
-     "id": "602b9873-26ee-4b3f-bae1-f5733d7111d1",
+    "7894064f-4665-4fc4-bc12-fa8252f7042e": {
+     "title": "Installation og brug",
+     "id": "7894064f-4665-4fc4-bc12-fa8252f7042e",
      "references": [
+      "52166893-8f83-45df-83f0-e121b3ccb202",
+      "7cc2f5d3-a0c8-443a-8b06-b09674dd4564",
       "356353c5-28c1-4a09-9fb7-331b909f3075",
       "5c944fb8-386e-43ff-a1fc-9674a711e1c6"
      ]

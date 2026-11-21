@@ -13,6 +13,13 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "42d8b763-72f7-41fd-a0aa-f044ec74b9fd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212765,
   "skuCode": "ESSPR1INX",
@@ -113,10 +120,10 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 49-50 hverdage",
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 556,
+     "availableQuantity": 555,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -195,7 +202,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 267,
+     "availableQuantity": 266,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -274,7 +281,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 197,
+     "availableQuantity": 192,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -296,84 +303,63 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSPR1INX-kabler leverer en klar, detaljeret og ofte varmere og mere omsluttende lyd, især i pladespiller-, CD- og streaminganlæg. Den solide konstruktion, det flotte design og de pålidelige forbindelser gør kablerne til værdifulde opgraderinger, og mange modeller giver god værdi for pengene. Nogle kabler er dog stive eller kraftige ved stikkene, og den høje pris giver ikke altid en hørbar forbedring sammenlignet med billigere alternativer.",
+   "summary": "ESSPR1INX-kabler roses bredt for solid konstruktion, pålidelige forbindelser og god værdi for pengene. Mange lyttere oplever en klarere, mere detaljeret og mere balanceret lyd, især som opgradering til pladespillere, cd-afspillere, streamere og tv-anlæg. Enkelte anmeldelser nævner dog den høje pris, stivhed, store stik eller ingen hørbar forskel fra billigere kabler.",
    "headlines": {
     "clearer, more detailed sound": {
-     "sentimentAnalysis": "Kablerne roses for hørbare forbedringer, klarere gengivelse og flere detaljer fra både analoge og digitale kilder.",
+     "sentimentAnalysis": "Anmeldelserne beskriver hørbare forbedringer med klarere, mere detaljeret, nuanceret og balanceret gengivelse i analoge og digitale anlæg.",
      "simpleTitle": "Klarere og mere detaljeret lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "0fd891e8-a54c-4b33-a998-0c1cfcdb0204"
+     "groupId": "42fcc69c-1956-4f4f-b8c8-9de0b6fdb2a5"
     },
-    "reliable signal transfer": {
-     "sentimentAnalysis": "Den enkle installation og de pålidelige forbindelser fremhæves gentagne gange, især mellem pladespillere og forstærkere.",
-     "simpleTitle": "Pålidelig signaloverførsel",
-     "bias": "positive",
-     "key": "connection-and-fit",
-     "groupId": "7428fd6f-1899-4c50-b43e-df748fa70001"
-    },
-    "premium, robust construction": {
-     "sentimentAnalysis": "Kraftige materialer, flot design og eksklusiv finish giver et stærkt indtryk af holdbarhed og kvalitet.",
-     "simpleTitle": "Eksklusiv, robust konstruktion",
+    "reliable, high-quality construction": {
+     "sentimentAnalysis": "Kablerne beskrives gentagne gange som tykke, robuste, flotte, eksklusivt udførte og velbyggede.",
+     "simpleTitle": "Robust konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "build-quality",
-     "groupId": "6a000e72-5731-4c10-984a-94c1abf5320f"
+     "groupId": "c30ff54d-d04f-455a-9227-d0e353d311a8"
     },
-    "excellent value at accessible prices": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kablerne som fornuftigt prissat og som særdeles gode til prisen i forhold til kvalitet og ydelse.",
-     "simpleTitle": "Fremragende værdi til en god pris",
+    "strong value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer kablerne som rimeligt prissat eller som fremragende værdi, især i deres kategori.",
+     "simpleTitle": "Stærk værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "4979e262-5796-4bc0-9098-21b460a94f5c"
+     "key": "price-value",
+     "groupId": "f32e752e-f047-4614-abae-391314e97c53"
     },
-    "stiffness and bulk can hinder installation": {
-     "sentimentAnalysis": "Det tykke og ufleksible kabel kan give trang plads ved tilslutningerne og gøre føring eller installation mindre praktisk.",
-     "simpleTitle": "Stivhed og størrelse kan gøre installationen vanskelig",
-     "bias": "negative",
-     "key": "connection-and-fit",
-     "groupId": "7428fd6f-1899-4c50-b43e-df748fa70001"
+    "works as a dependable connection": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent nem installation, sikre forbindelser og pålidelig signaloverførsel mellem lydkomponenter.",
+     "simpleTitle": "Fungerer som en pålidelig forbindelse",
+     "bias": "positive",
+     "key": "connection-functionality",
+     "groupId": "241c2a39-2cbc-4fd7-8ace-2d65c3886ac4"
     },
-    "premium pricing is not always justified by audible gains": {
-     "sentimentAnalysis": "En del af tilbagemeldingerne sætter spørgsmålstegn ved, om merprisen giver en meningsfuld hørbar fordel sammenlignet med almindelige eller billigere kabler.",
-     "simpleTitle": "Merprisen giver ikke altid hørbare forbedringer",
+    "premium price is not always justified": {
+     "sentimentAnalysis": "Nogle anmeldelser beskriver kablerne som dyre, og én lytter hørte ingen forbedring i forhold til billigere alternativer.",
+     "simpleTitle": "Premiumprisen er ikke altid berettiget",
      "bias": "negative",
-     "key": "value",
-     "groupId": "4979e262-5796-4bc0-9098-21b460a94f5c"
+     "key": "price-value",
+     "groupId": "f32e752e-f047-4614-abae-391314e97c53"
+    },
+    "some cables are stiff or bulky to install": {
+     "sentimentAnalysis": "Enkelte anmeldelser nævner begrænset fleksibilitet og tykke ender, som kan gøre trange tilslutningspunkter eller monteringen vanskeligere.",
+     "simpleTitle": "Nogle kabler er stive eller besværlige at montere",
+     "bias": "negative",
+     "key": "connection-functionality",
+     "groupId": "241c2a39-2cbc-4fd7-8ace-2d65c3886ac4"
     }
    },
    "grouping": {
-    "6a000e72-5731-4c10-984a-94c1abf5320f": {
-     "title": "Byggekvalitet",
-     "id": "6a000e72-5731-4c10-984a-94c1abf5320f",
+    "42fcc69c-1956-4f4f-b8c8-9de0b6fdb2a5": {
+     "title": "Lydkvalitet",
+     "id": "42fcc69c-1956-4f4f-b8c8-9de0b6fdb2a5",
      "references": [
       "d5eb613d-ee52-4160-a3c3-da9ecdcb2780",
-      "8987aa0a-c8d4-4b69-99cf-21b6a56efc35",
-      "91b4362d-e194-4efa-92d7-596a7ab1c495",
-      "fbc1e595-d10a-4706-9aa5-4af60910514c",
-      "335388ec-73ca-4dc6-8dbf-67d860cf09e5",
-      "ba141886-b813-4097-b511-2824a876eb73",
-      "ac9bdf9a-7b4d-4062-8c73-5bef4e125d53",
-      "fa651b46-5c38-48f7-abd2-84edb9286513",
-      "d3223138-8f84-4b59-ae05-06009b2aa3c2",
-      "4db78654-d367-4371-9bc0-cc0af2f42095",
-      "338d1f4f-53d1-4887-86c7-99fbba992aaf",
-      "c99dbea0-8aaa-467e-8285-56fb3df6c455",
-      "f7ea4c6f-7689-44ce-bbe2-5721dd35e5d5",
-      "50551393-9b4f-4d70-ab3a-9829629faf76",
-      "6cac65d2-4767-493a-92e7-b8e4a4961cf7",
-      "06c2cf6d-1b28-4351-bd1b-e14e71f5469e",
-      "806b6b42-2153-47d4-bce3-e1115957ef80"
-     ]
-    },
-    "0fd891e8-a54c-4b33-a998-0c1cfcdb0204": {
-     "title": "Lydkvalitet",
-     "id": "0fd891e8-a54c-4b33-a998-0c1cfcdb0204",
-     "references": [
-      "cc0ffb81-7fd2-43a0-8b94-92d7397f7cd3",
       "294fa1c8-62b3-4e90-9e1f-808f6d10387e",
       "c58fa51c-c404-4cf5-b0a8-6c161c629fef",
       "4b224f74-97a8-4d46-981c-12d8f40e4b00",
       "e7a01dde-f2c4-43f6-af7e-088561fdb790",
+      "985f069e-c0b8-4903-8065-8401f10cab92",
+      "0e5fc75c-67c5-4fe0-908a-4d9a47080ab9",
       "e4e2f603-eba9-43e2-b8e2-82b4a8700db7",
       "dbe61e89-6015-4fb5-a1bd-e006a5ddeda7",
       "2f0d78ad-9748-4e9f-8345-8829ea811933",
@@ -382,43 +368,65 @@
       "ef257344-66e6-42d0-94d5-6e45b5ec80bd",
       "652e9dee-46ea-4ae4-b569-987ba2585ab5",
       "09ddbc86-d623-4a8d-9b76-0858e3f9e2db",
-      "749eec59-0bdd-4416-9067-76926023b94b"
+      "749eec59-0bdd-4416-9067-76926023b94b",
+      "c1274bc2-d032-4cbf-9fd9-a6b446e3f798",
+      "338d1f4f-53d1-4887-86c7-99fbba992aaf"
      ]
     },
-    "4979e262-5796-4bc0-9098-21b460a94f5c": {
-     "title": "Pris-kvalitet",
-     "id": "4979e262-5796-4bc0-9098-21b460a94f5c",
+    "241c2a39-2cbc-4fd7-8ace-2d65c3886ac4": {
+     "title": "Tilslutning og funktionalitet",
+     "id": "241c2a39-2cbc-4fd7-8ace-2d65c3886ac4",
+     "references": [
+      "0e64463d-7135-4967-b6e5-7d91cdc8f85b",
+      "d11d5903-a5cc-4b0f-aca7-8bdff2da916a",
+      "7fba0b28-0b23-4fcd-b888-0d1e1d81557d",
+      "ac9bdf9a-7b4d-4062-8c73-5bef4e125d53",
+      "4b224f74-97a8-4d46-981c-12d8f40e4b00",
+      "e4e2f603-eba9-43e2-b8e2-82b4a8700db7",
+      "f41e82b3-0e1d-4e7e-b2c3-aadfda9ce0b7",
+      "737b9e34-45e8-4f2e-b8e3-a67cfb9df63d",
+      "ad07a950-26eb-480e-9e59-f7713b33431c",
+      "e19ac5c9-16bd-4420-9aa6-18f924b37a37",
+      "09ddbc86-d623-4a8d-9b76-0858e3f9e2db",
+      "71756bd1-d91a-45c2-a23a-245c3ba5ed58",
+      "8e2bed43-f41d-44fa-be7b-72c7a80d0cb7"
+     ]
+    },
+    "c30ff54d-d04f-455a-9227-d0e353d311a8": {
+     "title": "Byggekvalitet",
+     "id": "c30ff54d-d04f-455a-9227-d0e353d311a8",
+     "references": [
+      "c99dbea0-8aaa-467e-8285-56fb3df6c455",
+      "fa651b46-5c38-48f7-abd2-84edb9286513",
+      "d3223138-8f84-4b59-ae05-06009b2aa3c2",
+      "4db78654-d367-4371-9bc0-cc0af2f42095",
+      "f7ea4c6f-7689-44ce-bbe2-5721dd35e5d5",
+      "50551393-9b4f-4d70-ab3a-9829629faf76",
+      "6cac65d2-4767-493a-92e7-b8e4a4961cf7",
+      "2f0d78ad-9748-4e9f-8345-8829ea811933",
+      "06c2cf6d-1b28-4351-bd1b-e14e71f5469e",
+      "806b6b42-2153-47d4-bce3-e1115957ef80",
+      "f7ea4c6f-7689-44ce-bbe2-5721dd35e5d5",
+      "335388ec-73ca-4dc6-8dbf-67d860cf09e5",
+      "ba141886-b813-4097-b511-2824a876eb73"
+     ]
+    },
+    "f32e752e-f047-4614-abae-391314e97c53": {
+     "title": "Pris og værdi",
+     "id": "f32e752e-f047-4614-abae-391314e97c53",
      "references": [
       "8987aa0a-c8d4-4b69-99cf-21b6a56efc35",
       "fbc1e595-d10a-4706-9aa5-4af60910514c",
       "335388ec-73ca-4dc6-8dbf-67d860cf09e5",
       "985f069e-c0b8-4903-8065-8401f10cab92",
       "e7a01dde-f2c4-43f6-af7e-088561fdb790",
-      "dbe61e89-6015-4fb5-a1bd-e006a5ddeda7",
       "8ec546cb-bebb-454d-befe-fd3c57cb9ee6",
       "6a514402-30e9-4285-a3af-0dfbb08e56fc",
       "6237721c-22b1-412e-a58c-49a7f3ba7bfe",
       "c1274bc2-d032-4cbf-9fd9-a6b446e3f798",
       "226907fb-a7f4-4e54-850f-7ef08943f2de",
-      "5cecf360-b29f-45f3-94f7-dbba08aa2a69"
-     ]
-    },
-    "7428fd6f-1899-4c50-b43e-df748fa70001": {
-     "title": "Tilslutning og pasform",
-     "id": "7428fd6f-1899-4c50-b43e-df748fa70001",
-     "references": [
-      "0e64463d-7135-4967-b6e5-7d91cdc8f85b",
-      "d11d5903-a5cc-4b0f-aca7-8bdff2da916a",
-      "49e7148b-b18e-4e79-a855-d164f2afc12e",
-      "7fba0b28-0b23-4fcd-b888-0d1e1d81557d",
-      "4db78654-d367-4371-9bc0-cc0af2f42095",
-      "e4e2f603-eba9-43e2-b8e2-82b4a8700db7",
-      "f41e82b3-0e1d-4e7e-b2c3-aadfda9ce0b7",
-      "737b9e34-45e8-4f2e-b8e3-a67cfb9df63d",
-      "ad07a950-26eb-480e-9e59-f7713b33431c",
-      "71756bd1-d91a-45c2-a23a-245c3ba5ed58",
-      "e19ac5c9-16bd-4420-9aa6-18f924b37a37",
-      "8e2bed43-f41d-44fa-be7b-72c7a80d0cb7"
+      "5cecf360-b29f-45f3-94f7-dbba08aa2a69",
+      "dbe61e89-6015-4fb5-a1bd-e006a5ddeda7"
      ]
     }
    },

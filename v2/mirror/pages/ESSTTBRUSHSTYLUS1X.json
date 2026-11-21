@@ -13,6 +13,15 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "6e1eb4ec-57c3-4a30-8a1d-be56be390f0a",
+   "7a672216-aaba-4c4a-9db7-78727439a2bc",
+   "4b1b33d8-febc-4e22-87e1-5bd10710e63e"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 242729,
   "skuCode": "ESSTTBRUSHSTYLUS1X",
@@ -116,7 +125,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 19,
+     "numberOfStoresExperience": 18,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -161,27 +170,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTT Brush Stylus 1 får en begejstret modtagelse som et enkelt og effektivt værktøj til at holde pickupnåle og pickupper fri for støv. Den nemme håndtering, de kompakte mål og den fair pris gør børsten til et praktisk supplement til vinylpleje med en ren og fyldig lydgengivelse. Det samlede indtryk er varmt og pålideligt, selv om det smalle skaft kan føles mindre behageligt for større hænder, og der mangler beskyttende opbevaring.",
+   "summary": "Denne kompakte pickupbørste opfattes generelt som en effektiv og nem måde at fjerne støv fra en pickup på. Børsten virker praktisk og giver god værdi for pengene, så en ren, detaljeret og varm gengivelse bevares. Det slanke skaft kan føles mindre behageligt for større hænder, og en opbevaringsæske ville forbedre oplevelsen.",
    "headlines": {
     "effectively removes dust from the stylus": {
-     "sentimentAnalysis": "Børsten roses gentagne gange for at gøre rengøringen af pickupnål og pickup nem og effektiv.",
+     "sentimentAnalysis": "Børsten roses for effektivt at fjerne støv fra pickupnålen eller pickupen.",
      "simpleTitle": "Fjerner effektivt støv fra pickupnålen",
      "bias": "positive",
-     "key": "cleaning_effective",
-     "groupId": "8af168a1-1ee2-4bb4-99df-fe8b6edb7cb8"
+     "key": "cleaning",
+     "groupId": "36a0cf47-8a2b-41b3-8514-323799686d53"
     },
-    "compact and easy to handle": {
-     "sentimentAnalysis": "Den lille børste opleves samlet set som praktisk og nem at håndtere.",
-     "simpleTitle": "Kompakt og nem at håndtere",
+    "simple and easy to use": {
+     "sentimentAnalysis": "Produktet opfattes som enkelt og praktisk til rengøring af pickupnålen.",
+     "simpleTitle": "Enkel og nem at bruge",
      "bias": "positive",
-     "key": "compact_handling",
-     "groupId": "0f0bdd9e-1a2f-474d-b9cb-5679e102d8c9"
+     "key": "ease-of-use",
+     "groupId": "4a578a54-108d-4b82-a5c2-113537a497ea"
+    },
+    "compact and handy design": {
+     "sentimentAnalysis": "Det lille format opfattes som praktisk og nemt at håndtere.",
+     "simpleTitle": "Kompakt og praktisk design",
+     "bias": "positive",
+     "key": "size-handling",
+     "groupId": "c11f0443-86d0-40ac-8369-c02789b41163"
     }
    },
    "grouping": {
-    "8af168a1-1ee2-4bb4-99df-fe8b6edb7cb8": {
-     "title": "Rengøringseffekt",
-     "id": "8af168a1-1ee2-4bb4-99df-fe8b6edb7cb8",
+    "36a0cf47-8a2b-41b3-8514-323799686d53": {
+     "title": "Rengøringseffektivitet",
+     "id": "36a0cf47-8a2b-41b3-8514-323799686d53",
      "references": [
       "c8e9bba4-1ae9-4b4e-b183-534eed2fae02",
       "054243f7-3a0a-4cb1-b528-5ac757446ecb",
@@ -190,25 +206,33 @@
       "3cffe42e-4ea3-4e6c-8658-e50318a56986"
      ]
     },
-    "0f0bdd9e-1a2f-474d-b9cb-5679e102d8c9": {
+    "c11f0443-86d0-40ac-8369-c02789b41163": {
      "title": "Størrelse og håndtering",
-     "id": "0f0bdd9e-1a2f-474d-b9cb-5679e102d8c9",
+     "id": "c11f0443-86d0-40ac-8369-c02789b41163",
      "references": [
       "66830ac9-9441-47bd-8db5-6a136b54b294",
       "1dbfc9ac-b562-4160-85f9-0a5e8050b833",
       "33dc398a-0f2b-4064-9de5-1b8ab067100a"
      ]
+    },
+    "4a578a54-108d-4b82-a5c2-113537a497ea": {
+     "title": "Brugervenlighed",
+     "id": "4a578a54-108d-4b82-a5c2-113537a497ea",
+     "references": [
+      "054243f7-3a0a-4cb1-b528-5ac757446ecb",
+      "ac201637-5fbe-4634-8e02-80171f62d845"
+     ]
     }
    },
-   "rating": 4.72727272727273,
-   "count": 55,
+   "rating": 4.73214285714286,
+   "count": 56,
    "reviewCount": 18,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 11,
-    "5": 42
+    "5": 43
    }
   },
   "brandName": "Essentials",

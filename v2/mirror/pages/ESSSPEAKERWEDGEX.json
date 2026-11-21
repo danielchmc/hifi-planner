@@ -13,6 +13,16 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "a28d1451-98df-4932-9b2c-476e92206a29",
+   "e734125e-0336-449b-b78b-054e95d46a83",
+   "94fdcebe-8a31-426d-88ab-a0d2182de51a",
+   "1b169c4c-ab1d-4c34-afe7-c23dd06eb207"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243011,
   "skuCode": "ESSSPEAKERWEDGEX",
@@ -116,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 276,
+     "availableQuantity": 265,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -146,83 +156,88 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse kiler er en stabil og vellavet måde at vinkle højttalerne mod lyttepositionen på, og flere anmeldelser fremhæver en klarere, bedre rettet og mere omsluttende lyd. Vibrationsdæmpningen roses især ved placering på skrivebord, mens pasformen generelt er god, men kan variere efter højttalermodel. De største ulemper er, at de nogle gange stikker lidt ud, er for lave for enkelte brugere og af én anmelder opleves som dyre.",
+   "summary": "Disse wedges er en enkel og stabil måde at vinkle højttalerne mod lyttepositionen på, og flere anmeldelser beskriver en klarere, mere fokuseret gengivelse og bedre bas. Den tunge, stabile konstruktion og vibrationsdæmpningen bliver værdsat, mens kompatibiliteten generelt er god, men ikke perfekt til alle højttalere, og nogle brugere kunne ønske sig mere højde. Samlet leverer ESSSPEAKERWEDGEX en varm, punchy og mere omsluttende lyd til en rimelig pris trods én kritik af prisen.",
    "headlines": {
-    "a better listening angle": {
-     "sentimentAnalysis": "Kilerne gør det nemt at vinkle højttalerne mod lytteren, og hældningen beskrives som ideel eller fremragende.",
-     "simpleTitle": "En bedre lytte-vinkel",
-     "bias": "positive",
-     "key": "angle",
-     "groupId": "7a193949-ddff-43b2-a131-417a82d8af51"
-    },
-    "sound becomes clearer and more engaging": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en mærkbar forbedring af lydens retning, klarhed eller lytteoplevelse efter brug af kilerne.",
-     "simpleTitle": "Lyden bliver klarere og mere engagerende",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "96399c46-c925-4e1a-9b40-fa0f1c855606"
-    },
-    "fit varies by speaker model": {
-     "sentimentAnalysis": "Kilerne passer meget godt til flere højttalermodeller, men er uegnede til én model og stikker lidt ud ved en anden opsætning.",
-     "simpleTitle": "Pasformen varierer efter højttalermodel",
+    "good compatibility, with occasional fit limitations": {
+     "sentimentAnalysis": "Wedgesene passer godt til flere højttalermodeller og fungerer som nyttige erstatninger, men enkelte kombinationer er ikke optimale eller egnede.",
+     "simpleTitle": "God kompatibilitet med enkelte pasformsbegrænsninger",
      "bias": "meh",
-     "key": "fit",
-     "groupId": "04918059-923b-4e6d-a5bb-0544aabb4c71"
+     "key": "speaker-fit",
+     "groupId": "951957f8-6716-4ef4-92e1-f88319b50723"
     },
-    "effective vibration damping": {
-     "sentimentAnalysis": "Silikonekilerne dæmper vibrationer og bas effektivt, især på skriveborde.",
-     "simpleTitle": "Effektiv vibrationsdæmpning",
+    "more precise speaker direction": {
+     "sentimentAnalysis": "Wedgesene giver en nyttig lytte vinkel og retter lyden bedre mod lytteren.",
+     "simpleTitle": "Mere præcis højttalerretning",
      "bias": "positive",
-     "key": "damping",
-     "groupId": "aabcbb07-eec6-4900-b06e-1238327c3913"
+     "key": "speaker-angle",
+     "groupId": "d6d99d03-8b75-47fb-8057-25c3d187287a"
     },
-    "not high enough for everyone": {
-     "sentimentAnalysis": "To anmeldelser angiver, at kilerne ikke giver tilstrækkelig højde til den ønskede opsætning.",
-     "simpleTitle": "Ikke høje nok til alle",
+    "improved, more immersive sound": {
+     "sentimentAnalysis": "Korrekt placering forbindes med en mærkbar bedre lytteoplevelse, klarere gengivelse og et mere engagerende lydbillede.",
+     "simpleTitle": "Forbedret og mere omsluttende lyd",
+     "bias": "positive",
+     "key": "sound-improvement",
+     "groupId": "720c03ec-c5ab-462a-a17e-fae6fbaa6cb7"
+    },
+    "stable construction and vibration damping": {
+     "sentimentAnalysis": "Tunge, stabile baser og effektiv vibrationsdæmpning holder højttalerne stabile og hjælper med at kontrollere uønsket resonans.",
+     "simpleTitle": "Stabil konstruktion og vibrationsdæmpning",
+     "bias": "positive",
+     "key": "stability-damping",
+     "groupId": "0d6403f4-d8c6-43ff-8aa1-282ae43ee6ab"
+    },
+    "some users want more height": {
+     "sentimentAnalysis": "Wedge-vinklen er nyttig, men den samlede løftehøjde er utilstrækkelig i nogle lytteopstillinger.",
+     "simpleTitle": "Nogle brugere ønsker større højde",
      "bias": "negative",
-     "key": "angle",
-     "groupId": "7a193949-ddff-43b2-a131-417a82d8af51"
+     "key": "speaker-angle",
+     "groupId": "d6d99d03-8b75-47fb-8057-25c3d187287a"
     }
    },
    "grouping": {
-    "7a193949-ddff-43b2-a131-417a82d8af51": {
+    "d6d99d03-8b75-47fb-8057-25c3d187287a": {
      "title": "Højttalervinkel",
-     "id": "7a193949-ddff-43b2-a131-417a82d8af51",
+     "id": "d6d99d03-8b75-47fb-8057-25c3d187287a",
      "references": [
       "c13ecc54-cfb5-4082-bce6-b9db5a53a76f",
       "19b83a5d-7fca-4090-b991-f87ad0a47088",
+      "e6bc9277-5df4-49e0-a75b-69f58d19c44d",
       "fd6d2941-f0f7-4ebe-a8a7-5b0bb34cf86d",
       "af87c40b-4a2b-4333-90bf-9260b53a1f57",
       "d7f15575-5e0f-4bdb-af35-815ee60e76f1",
       "edde681f-93a1-40b3-adc0-61a54d4e071a",
       "64bee95d-cbe8-4f03-a836-55b6a35d1e6b",
-      "f4157828-a854-45cd-b32c-99678b25abf2"
-     ]
-    },
-    "96399c46-c925-4e1a-9b40-fa0f1c855606": {
-     "title": "Lydforbedring",
-     "id": "96399c46-c925-4e1a-9b40-fa0f1c855606",
-     "references": [
-      "e6bc9277-5df4-49e0-a75b-69f58d19c44d",
-      "fd6d2941-f0f7-4ebe-a8a7-5b0bb34cf86d",
-      "d7f15575-5e0f-4bdb-af35-815ee60e76f1",
       "940aa296-7d61-4c3c-8c49-9d64efcd44c0",
       "f4157828-a854-45cd-b32c-99678b25abf2"
      ]
     },
-    "04918059-923b-4e6d-a5bb-0544aabb4c71": {
+    "951957f8-6716-4ef4-92e1-f88319b50723": {
      "title": "Pasform til højttalere",
-     "id": "04918059-923b-4e6d-a5bb-0544aabb4c71",
+     "id": "951957f8-6716-4ef4-92e1-f88319b50723",
      "references": [
       "b0e6c05d-a777-4e42-9d9d-c02943757239",
       "19b83a5d-7fca-4090-b991-f87ad0a47088",
+      "af87c40b-4a2b-4333-90bf-9260b53a1f57",
       "b6369d79-98ac-45ee-9184-39ddfd7a0ae2",
-      "9c0508eb-7b66-4740-afb8-ecccf130ece8"
+      "9c0508eb-7b66-4740-afb8-ecccf130ece8",
+      "940aa296-7d61-4c3c-8c49-9d64efcd44c0"
      ]
     },
-    "aabcbb07-eec6-4900-b06e-1238327c3913": {
-     "title": "Vibrationsdæmpning",
-     "id": "aabcbb07-eec6-4900-b06e-1238327c3913",
+    "720c03ec-c5ab-462a-a17e-fae6fbaa6cb7": {
+     "title": "Lydforbedring",
+     "id": "720c03ec-c5ab-462a-a17e-fae6fbaa6cb7",
+     "references": [
+      "e6bc9277-5df4-49e0-a75b-69f58d19c44d",
+      "fd6d2941-f0f7-4ebe-a8a7-5b0bb34cf86d",
+      "d7f15575-5e0f-4bdb-af35-815ee60e76f1",
+      "9b363be2-d65c-4ffd-8dc8-80b7d10fef27",
+      "940aa296-7d61-4c3c-8c49-9d64efcd44c0",
+      "f4157828-a854-45cd-b32c-99678b25abf2"
+     ]
+    },
+    "0d6403f4-d8c6-43ff-8aa1-282ae43ee6ab": {
+     "title": "Stabilitet og dæmpning",
+     "id": "0d6403f4-d8c6-43ff-8aa1-282ae43ee6ab",
      "references": [
       "d7f15575-5e0f-4bdb-af35-815ee60e76f1",
       "b6369d79-98ac-45ee-9184-39ddfd7a0ae2",

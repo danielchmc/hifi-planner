@@ -8,6 +8,20 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Analog RCA",
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "b6aeada6-7aa2-49e7-8ba8-1df4b34717a5",
+   "d5dba316-04e6-425c-b853-9d9b315fdf7e",
+   "724511d4-c2b7-4fed-856b-c7a0a0a8d783",
+   "59791f9d-b568-43bd-b774-e2d0a9346d06",
+   "21f56800-5f33-43fd-991a-d603ab2c2200"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 95714,
   "skuCode": "DENDP400",
@@ -198,7 +212,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 13,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -353,8 +367,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 19,
+     "numberOfStoresExperience": 5,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -415,112 +429,83 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon DP400 roses bredt som en stilfuld og velbygget pladespiller med varm, detaljeret og omsluttende lyd, nem opsætning og intuitiv betjening. Automatisk stop, 78 rpm-afspilning og mulighed for at opgradere pickup’en giver ekstra fleksibilitet, mens pris og kvalitet generelt opleves som et godt match. Den karakteristiske løse støvlåge er den mest gennemgående kritik, fordi beskyttelsen mod støv er begrænset; den lille løftearm nævnes også, og enkelte anbefaler en bedre pickup eller RIAA-forstærker.",
+   "summary": "DENDP400 roses bredt for varm, detaljeret og medrivende lyd, attraktivt design, nem opsætning og intuitiv betjening. Automatisk stop, afspilning ved 78 omdrejninger og fleksible tilslutningsmuligheder giver ekstra praktisk værdi, mens forholdet mellem pris og ydelse vurderes som fremragende. Det løse støvlåg og den begrænsede støvbeskyttelse kritiseres gentagne gange, og nogle lyttere anbefaler en bedre pickup eller en kraftigere RIAA-forforstærker for maksimal ydelse.",
    "headlines": {
-    "the distinctive dust cover leaves parts exposed": {
-     "sentimentAnalysis": "Den usædvanlige låge er flot, men opfattes ofte som upraktisk, fordi den løse konstruktion ikke beskytter pladespilleren fuldstændigt mod støv.",
-     "simpleTitle": "Den karakteristiske støvlåge efterlader dele ubeskyttede",
+    "easy assembly and intuitive operation": {
+     "sentimentAnalysis": "Montering, justering af pickup og daglig betjening beskrives generelt som ligetil og brugervenlig.",
+     "simpleTitle": "Nem montering og intuitiv betjening",
+     "bias": "positive",
+     "key": "setup_easy",
+     "groupId": "048ce8c8-eef2-4c5e-8f56-aa4668ccad75"
+    },
+    "the dust cover leaves parts exposed": {
+     "sentimentAnalysis": "Det løse, åbne låg kritiseres for at lade støv komme ned på pladetallerkenen og for ikke at give beskyttelsen fra et traditionelt fast låg.",
+     "simpleTitle": "Støvlåget efterlader dele ubeskyttede",
      "bias": "negative",
-     "key": "design",
-     "groupId": "a86c25f7-3d77-41ed-ade4-32d84937b5ba"
+     "key": "dust_protection",
+     "groupId": "d6906081-d0c3-4232-b71d-d585c7e8625e"
     },
-    "warm, rich and immersive sound": {
-     "sentimentAnalysis": "Lytterne beskriver gennemgående gengivelsen som varm, fyldig, rig og meget behagelig, så pladesamlinger lyder levende og omsluttende.",
-     "simpleTitle": "Varm, fyldig og omsluttende lyd",
+    "warm, rich and highly enjoyable sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gengivelsen som varm, fyldig, rig og medrivende, så vinylsamlinger lyder mere engagerende og fornøjelige.",
+     "simpleTitle": "Varm, fyldig og meget fornøjelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "491f7489-3b14-405d-b352-1de163b43922"
+     "key": "sound_warm",
+     "groupId": "5a7f1db8-7858-4837-a505-b75137587466"
     },
-    "easy installation and intuitive operation": {
-     "sentimentAnalysis": "Opsætning, justering af pickup og daglig betjening beskrives gentagne gange som enkel og brugervenlig.",
-     "simpleTitle": "Nem opsætning og intuitiv betjening",
+    "stylish design that attracts attention": {
+     "sentimentAnalysis": "Den usædvanlige form på støvlåget og det samlede design opleves ofte som attraktivt, moderne og velegnet til at stå fremme.",
+     "simpleTitle": "Stilfuldt design, der tiltrækker opmærksomhed",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "93e2e805-0fcf-414a-a9d4-c5541d711292"
+     "key": "design_style",
+     "groupId": "d6906081-d0c3-4232-b71d-d585c7e8625e"
     },
-    "automatic stop and 78 rpm playback are useful extras": {
-     "sentimentAnalysis": "Automatisk stop værdsættes for bekvemmeligheden, mens 78 rpm-understøttelse udvider mulighederne for ældre plader.",
-     "simpleTitle": "Automatisk stop og 78 rpm-afspilning er nyttige funktioner",
+    "upgrading the cartridge can improve performance": {
+     "sentimentAnalysis": "Flere anmeldelser fortæller om eller anbefaler en pickup-opgradering med bedre klarhed og ydelse end den medfølgende pickup.",
+     "simpleTitle": "En bedre pickup kan forbedre ydelsen",
      "bias": "positive",
-     "key": "features",
-     "groupId": "cd4560b6-3be6-4b33-a24b-25a8b62040c9"
+     "key": "cartridge_upgrade",
+     "groupId": "5a7f1db8-7858-4837-a505-b75137587466"
     },
-    "strong value and premium-looking construction": {
-     "sentimentAnalysis": "DP400 vurderes gentagne gange som prisvenlig, solidt bygget og mere eksklusiv end forventet i klassen.",
-     "simpleTitle": "Stærk værdi og eksklusiv fornemmelse",
+    "automatic stop is a useful feature": {
+     "sentimentAnalysis": "Automatisk stop fremhæves gentagne gange som praktisk og som en grund til at vælge pladespilleren.",
+     "simpleTitle": "Automatisk stop er en nyttig funktion",
      "bias": "positive",
-     "key": "value",
-     "groupId": "4dfc4df6-0604-4af8-a0de-49f1c752dff9"
-    },
-    "the cueing lever sits too close to the tonearm": {
-     "sentimentAnalysis": "Flere brugere synes, at den lille løftearm sidder uhensigtsmæssigt og let berøres ved et uheld.",
-     "simpleTitle": "Løftearmen sidder for tæt på tonearmen",
-     "bias": "negative",
-     "key": "usability",
-     "groupId": "93e2e805-0fcf-414a-a9d4-c5541d711292"
+     "key": "auto_stop",
+     "groupId": "de37e955-c9c7-42db-b9d1-84ab79f50002"
     }
    },
    "grouping": {
-    "93e2e805-0fcf-414a-a9d4-c5541d711292": {
-     "title": "Opsætning og betjening",
-     "id": "93e2e805-0fcf-414a-a9d4-c5541d711292",
-     "references": [
-      "3c4517f9-5a64-4b5f-9103-4a2c0b671454",
-      "a8d2cd43-79b5-4741-8f39-b929026f9ddb",
-      "6c68de4a-e791-4142-9833-28be2e10c5b0",
-      "e725f01e-95ba-4550-9b8e-27bb62c375b1",
-      "330888a6-4f97-4327-ace5-072f94a02f1d",
-      "01182376-20fe-4a3b-bdca-2b9e7946af96",
-      "44064ed0-07fc-4980-916c-31fe5a0562e0",
-      "e20f2747-0e91-4433-9abf-5136b71bddc0",
-      "632ca8dd-83a4-4abf-9f75-84104165ee50",
-      "0f239be8-05c8-43ea-afa9-9be9d81c44c9",
-      "a2e2fde8-bc59-4ed8-aa77-ed503c58be89",
-      "3e17e043-e1b2-4a42-a514-0dbf003ec16d",
-      "d4f9605d-89b2-4816-9169-83bfe3453b2f",
-      "88784fa6-42e5-468d-805c-4c1088ab0340",
-      "93a65ba5-3c4a-472e-b13d-23ae83afbfd0",
-      "5a622260-7910-471c-ad5a-faa6746a61cc",
-      "e6f4b7ad-d272-4fe7-ae66-d8e8d0e15480",
-      "948b11e8-2d71-4c65-a8f8-b11ba1e46bc9",
-      "86af71ef-ac1a-4e4e-92f5-70ce75b7d3c7",
-      "483481f0-fd00-4f7f-bb91-1274c1bdea1a",
-      "05d95f8c-9539-4367-bf93-00007f6dfed0",
-      "ec5f6cf6-7ea4-4a56-9f7c-3c73d69986e8",
-      "e87b0e0f-628f-4e67-9a5b-3e94f8124006"
-     ]
-    },
-    "491f7489-3b14-405d-b352-1de163b43922": {
+    "5a7f1db8-7858-4837-a505-b75137587466": {
      "title": "Lydkvalitet",
-     "id": "491f7489-3b14-405d-b352-1de163b43922",
+     "id": "5a7f1db8-7858-4837-a505-b75137587466",
      "references": [
       "5b0d92d6-ad0d-40c6-9965-2fe5fbe7d54e",
       "f717ae9e-9e54-461d-8043-7edf55878b71",
       "e725f01e-95ba-4550-9b8e-27bb62c375b1",
       "0f0cc6ba-41f2-4187-9275-02b458251a13",
       "58f10bbe-5be6-41ca-a4b7-e1b84e570282",
-      "b970054e-354c-46e8-8acc-d44971436b24",
-      "b7948c96-e42f-4626-82d4-66ce74bddf04",
-      "0ed7a1e6-a96d-4577-923e-207f3b944a28",
+      "a2e2fde8-bc59-4ed8-aa77-ed503c58be89",
       "652c76a6-d2b0-49ea-a1ae-258be9d7e8f6",
       "1f2759c8-da60-4775-9c54-324f9ebbd8fe",
+      "b7948c96-e42f-4626-82d4-66ce74bddf04",
+      "0ed7a1e6-a96d-4577-923e-207f3b944a28",
       "c146c9d4-df01-49a7-868a-2d16e36a172a",
       "93a65ba5-3c4a-472e-b13d-23ae83afbfd0",
       "c48f6876-5f14-47e1-a03a-587580678c97",
       "948b11e8-2d71-4c65-a8f8-b11ba1e46bc9",
       "4efd5458-6c2a-4753-912f-b458045dc36f",
-      "d303ea5b-0e8e-42f5-a991-de9a28e20599",
       "968a54c8-041d-4ad2-8ceb-3cfe4376b6a0",
       "9c20f08f-fa48-4f6c-bcda-ca754d176eec",
       "a91a8127-d7e7-4a3e-a703-fe0a8a8b9c3b",
+      "42f5e6b8-ba46-4a2a-911f-765b920ff537",
       "82c9e55b-f451-4b4f-a832-2705f7b80a20",
       "e87b0e0f-628f-4e67-9a5b-3e94f8124006",
       "28ca8c3d-e325-4363-b4bb-d29838a0ec6a"
      ]
     },
-    "a86c25f7-3d77-41ed-ade4-32d84937b5ba": {
-     "title": "Design og støvlåge",
-     "id": "a86c25f7-3d77-41ed-ade4-32d84937b5ba",
+    "d6906081-d0c3-4232-b71d-d585c7e8625e": {
+     "title": "Design og støvlåg",
+     "id": "d6906081-d0c3-4232-b71d-d585c7e8625e",
      "references": [
       "e69ecc0f-d96a-496b-a09d-f05bd6896d3d",
       "6c68de4a-e791-4142-9833-28be2e10c5b0",
@@ -533,7 +518,6 @@
       "dcf1ffd6-5518-4e72-baa3-efab1111ccef",
       "9aa44c25-8d10-4675-bac7-9b7a9eb9e70a",
       "c146c9d4-df01-49a7-868a-2d16e36a172a",
-      "93a65ba5-3c4a-472e-b13d-23ae83afbfd0",
       "dc222b04-a628-480c-bfb8-d36ba0335ad7",
       "65e889da-d8b0-483a-9b10-5bbbc59475b1",
       "e6f4b7ad-d272-4fe7-ae66-d8e8d0e15480",
@@ -541,14 +525,38 @@
       "86af71ef-ac1a-4e4e-92f5-70ce75b7d3c7",
       "a7a89505-6f5d-4b20-82b1-194821830e00",
       "cf17e550-1dde-4bd1-a0d0-67744ef0c09c",
-      "3f35f03c-52ee-437a-811f-399eb53f84b7",
+      "e68b88b0-11a7-4147-89de-1a20a265a6a9",
       "42f5e6b8-ba46-4a2a-911f-765b920ff537",
+      "3f35f03c-52ee-437a-811f-399eb53f84b7",
       "28ca8c3d-e325-4363-b4bb-d29838a0ec6a"
      ]
     },
-    "cd4560b6-3be6-4b33-a24b-25a8b62040c9": {
+    "048ce8c8-eef2-4c5e-8f56-aa4668ccad75": {
+     "title": "Opsætning og betjening",
+     "id": "048ce8c8-eef2-4c5e-8f56-aa4668ccad75",
+     "references": [
+      "a8d2cd43-79b5-4741-8f39-b929026f9ddb",
+      "6c68de4a-e791-4142-9833-28be2e10c5b0",
+      "330888a6-4f97-4327-ace5-072f94a02f1d",
+      "44064ed0-07fc-4980-916c-31fe5a0562e0",
+      "58f10bbe-5be6-41ca-a4b7-e1b84e570282",
+      "e20f2747-0e91-4433-9abf-5136b71bddc0",
+      "0f239be8-05c8-43ea-afa9-9be9d81c44c9",
+      "a2e2fde8-bc59-4ed8-aa77-ed503c58be89",
+      "3e17e043-e1b2-4a42-a514-0dbf003ec16d",
+      "d4f9605d-89b2-4816-9169-83bfe3453b2f",
+      "88784fa6-42e5-468d-805c-4c1088ab0340",
+      "93a65ba5-3c4a-472e-b13d-23ae83afbfd0",
+      "e6f4b7ad-d272-4fe7-ae66-d8e8d0e15480",
+      "948b11e8-2d71-4c65-a8f8-b11ba1e46bc9",
+      "483481f0-fd00-4f7f-bb91-1274c1bdea1a",
+      "5a622260-7910-471c-ad5a-faa6746a61cc",
+      "e87b0e0f-628f-4e67-9a5b-3e94f8124006"
+     ]
+    },
+    "de37e955-c9c7-42db-b9d1-84ab79f50002": {
      "title": "Funktioner",
-     "id": "cd4560b6-3be6-4b33-a24b-25a8b62040c9",
+     "id": "de37e955-c9c7-42db-b9d1-84ab79f50002",
      "references": [
       "3c4517f9-5a64-4b5f-9103-4a2c0b671454",
       "b3edd924-18ed-4579-8940-0f8a1daf8baf",
@@ -557,28 +565,9 @@
       "75e2480e-2f68-4c61-910f-96f9e52044f4",
       "806a0c1f-3b1a-4162-b18e-d5df562b82df",
       "86af71ef-ac1a-4e4e-92f5-70ce75b7d3c7",
-      "05d95f8c-9539-4367-bf93-00007f6dfed0",
       "ec5f6cf6-7ea4-4a56-9f7c-3c73d69986e8",
-      "e87b0e0f-628f-4e67-9a5b-3e94f8124006",
-      "42f5e6b8-ba46-4a2a-911f-765b920ff537"
-     ]
-    },
-    "4dfc4df6-0604-4af8-a0de-49f1c752dff9": {
-     "title": "Pris, kvalitet og konstruktion",
-     "id": "4dfc4df6-0604-4af8-a0de-49f1c752dff9",
-     "references": [
-      "e69ecc0f-d96a-496b-a09d-f05bd6896d3d",
-      "3bab4a1b-e24a-4043-a3fd-2a3ed060d8f2",
-      "a982a68f-a488-41ae-b6a6-8b5d5c1ac8f5",
-      "5d17037e-341f-425e-b0d0-7518808f0098",
-      "652c76a6-d2b0-49ea-a1ae-258be9d7e8f6",
-      "f52670b2-93fe-45d3-8975-4fe1c9600f31",
-      "4c61c09a-7245-4c86-94da-0ea0a3c1b4d7",
-      "16e246b8-8c32-4e6d-916a-5e26c574f911",
-      "0e326809-3109-4ef7-92ab-ceb9f0e26256",
-      "250a059f-6e46-4c17-97ef-8499dc4d748f",
-      "e68b88b0-11a7-4147-89de-1a20a265a6a9",
-      "652c76a6-d2b0-49ea-a1ae-258be9d7e8f6"
+      "05d95f8c-9539-4367-bf93-00007f6dfed0",
+      "e87b0e0f-628f-4e67-9a5b-3e94f8124006"
      ]
     }
    },

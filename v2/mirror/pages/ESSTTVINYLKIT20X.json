@@ -13,6 +13,16 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "f1184b87-4dee-40cf-a293-6b0f8c30b803",
+   "c6cbb689-075f-4c98-bef0-66a2a69ecd72",
+   "530ac88a-da12-421d-a908-884874b2d806",
+   "963a0adc-72af-4b8a-a28a-58082e218b7e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 237242,
   "skuCode": "ESSTTVINYLKIT20X",
@@ -109,7 +119,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
+     "numberOfStoresExperience": 23,
      "availableQuantity": 325,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -140,45 +150,38 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et alsidigt vinylplejesæt, der effektivt reducerer støv og statisk elektricitet og understøtter den almindelige vedligeholdelse af plader og pladespiller, med nyttige børster og tilbehør. Rengøringsredskaberne fungerer generelt godt, men den sammenrullede slipmat tager lang tid at blive plan, og pladerne ligger muligvis ikke plant på pladespilleren. Flere anmeldere stiller spørgsmål ved værdien for pengene, og én anmeldelse advarer om, at pladebørstens hår kan være for stive og give fine ridser.",
+   "summary": "ESSTTVINYLKIT20X opfattes generelt som et nyttigt og effektivt vedligeholdelsessæt til plader, pladespillere og pickupper. Børsterne fungerer godt og hjælper med at reducere støv og statisk elektricitet, mens nålebørsten især får ros. Værdi for pengene betvivles af nogle, og den sammenrullede slipmat kan tage lang tid at blive flad eller forblive ujævn; der er også meldt om for hårde pladebørstehår, som kan give fine ridser.",
    "headlines": {
-    "effective everyday record care": {
-     "sentimentAnalysis": "Sættet anses generelt for effektivt mod støv og statisk elektricitet samt til almindelig pleje af vinyl og pladespiller.",
-     "simpleTitle": "Effektiv daglig pladepleje",
+    "comprehensive and effective maintenance kit": {
+     "sentimentAnalysis": "Sættet opfattes som komplet, nyttigt og effektivt til vedligeholdelse af plader, pladespillere og pickupper.",
+     "simpleTitle": "Omfattende og effektivt vedligeholdelsessæt",
      "bias": "positive",
-     "key": "maintenance",
-     "groupId": "5b12319d-8813-4558-b99f-c56b66fa900d"
+     "key": "kit-care",
+     "groupId": "1edd1539-e8ac-4292-9d8a-d943456032d8"
     },
-    "poor value for money": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer, at sættet er for dyrt eller anderledes end forventet.",
-     "simpleTitle": "Dårlig værdi for pengene",
+    "price feels too high": {
+     "sentimentAnalysis": "Flere anmeldelser finder sættet dyrt i forhold til kvaliteten eller forventningerne.",
+     "simpleTitle": "Prisen føles for høj",
      "bias": "negative",
-     "key": "value",
-     "groupId": "ff9152a6-baac-46b9-bb2a-a70e7e675f80"
+     "key": "price-value",
+     "groupId": "c2ba0bac-8721-4908-a2eb-a3a2344f18a5"
     },
-    "useful, effective brushes": {
-     "sentimentAnalysis": "Børsterne beskrives som funktionelle og effektive til rengøring.",
-     "simpleTitle": "Nyttige og effektive børster",
-     "bias": "positive",
-     "key": "brushes",
-     "groupId": "659e83d6-9df1-4b60-8d6b-2cbc90924d1d"
-    },
-    "slipmat takes too long to flatten": {
-     "sentimentAnalysis": "Den sammenrullede måtte kritiseres for at forblive bulet og forhindre, at plader ligger plant.",
-     "simpleTitle": "Slipmatten er for lang tid om at blive plan",
+    "slipmat is difficult to flatten": {
+     "sentimentAnalysis": "Den sammenrullede slipmat tager for lang tid at blive flad og kan forhindre plader i at ligge plant på pladespilleren.",
+     "simpleTitle": "Slipmatten er svær at gøre flad",
      "bias": "negative",
      "key": "slipmat",
-     "groupId": "4549e0ef-76f5-49f6-a171-404ce1427387"
+     "groupId": "72ab350f-c55e-4481-9be1-b109bd80acbe"
     }
    },
    "grouping": {
-    "5b12319d-8813-4558-b99f-c56b66fa900d": {
-     "title": "Vedligeholdelseseffekt",
-     "id": "5b12319d-8813-4558-b99f-c56b66fa900d",
+    "1edd1539-e8ac-4292-9d8a-d943456032d8": {
+     "title": "Sættets pleje og effektivitet",
+     "id": "1edd1539-e8ac-4292-9d8a-d943456032d8",
      "references": [
       "7730a1f1-4294-4c80-8230-79c31f7aacb0",
       "6fc4a774-0528-4c57-94b5-5a0d57a71f9f",
-      "19007947-675f-45f9-bab8-fb99d9999600",
+      "19007947-675f-45f9-bab8-fb99d999960c",
       "d5cf1682-b204-427f-a204-9bf547ffad3d",
       "84a08460-d8be-41ca-b1e4-222cce2082ee",
       "afe1b7f1-6fdd-4004-aca2-f803af2d686c",
@@ -188,32 +191,23 @@
       "310ad9e9-fa98-4301-9a57-d7cee6df3eb6"
      ]
     },
-    "4549e0ef-76f5-49f6-a171-404ce1427387": {
-     "title": "Slipmat",
-     "id": "4549e0ef-76f5-49f6-a171-404ce1427387",
-     "references": [
-      "d5cf1682-b204-427f-a204-9bf547ffad3d",
-      "0a96d8bc-fabc-4c70-937e-bbf03f881a30",
-      "f6f748aa-4fbd-4ba7-a8f1-252381d2d70b",
-      "56bb30bd-57de-4d05-888c-fbe892436177"
-     ]
-    },
-    "659e83d6-9df1-4b60-8d6b-2cbc90924d1d": {
-     "title": "Børster",
-     "id": "659e83d6-9df1-4b60-8d6b-2cbc90924d1d",
-     "references": [
-      "6fc4a774-0528-4c57-94b5-5a0d57a71f9f",
-      "f6f748aa-4fbd-4ba7-a8f1-252381d2d70b",
-      "56bb30bd-57de-4d05-888c-fbe892436177"
-     ]
-    },
-    "ff9152a6-baac-46b9-bb2a-a70e7e675f80": {
-     "title": "Værdi for pengene",
-     "id": "ff9152a6-baac-46b9-bb2a-a70e7e675f80",
+    "c2ba0bac-8721-4908-a2eb-a3a2344f18a5": {
+     "title": "Pris og værdi",
+     "id": "c2ba0bac-8721-4908-a2eb-a3a2344f18a5",
      "references": [
       "17f0d1cf-4e41-44d8-a08b-425d0aa14256",
       "82707e28-53f9-48f3-a5c2-e41480352067",
-      "9f35db50-3750-43ae-8658-14e1a7196f69"
+      "9f35db50-3750-43ae-8658-14e1a7196f69",
+      "78c21c1a-b71f-41bb-9ecd-92cfc07e8db6"
+     ]
+    },
+    "72ab350f-c55e-4481-9be1-b109bd80acbe": {
+     "title": "Slipmat",
+     "id": "72ab350f-c55e-4481-9be1-b109bd80acbe",
+     "references": [
+      "d5cf1682-b204-427f-a204-9bf547ffad3d",
+      "0a96d8bc-fabc-4c70-937e-bbf03f881a30",
+      "56bb30bd-57de-4d05-888c-fbe892436177"
      ]
     }
    },

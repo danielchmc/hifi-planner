@@ -13,6 +13,33 @@
    "url": "/surround/surround-receiver/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI indgange": "7",
+   "HDMI udgange": "3",
+   "HDMI ARC/CEC": "Ja",
+   "Lydudgang": "LFE",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA",
+   "Udgang (andet)": "IR, 12V trigger",
+   "Indgang (andet)": "RS-232, Ethernet, IR",
+   "Trådløs overførsel": "Airplay 2, Bluetooth-indgang, Bluetooth-udgang, HEOS Multiroom, Roon Ready, Wi-Fi",
+   "Billedeindgang": "HDMI",
+   "Zoner": "3",
+   "Udgangseffekt (8 ohm, 2 kanaler)": "125 watt",
+   "Udgangseffekt (6 ohm, 1 kanal)": "200 watt",
+   "Udgangseffekt (6 ohm, 2 kanaler)": "165 watt",
+   "Forstærker kanaler": "9",
+   "Fra beskrivelsen": "Ekstra strømstærke udgangstransistorer · HDMI 2.1 med HDCP2.3, 8K/60Hz pass-through, eARC, Deep Color, xvYCC, 4:4:4 Pure Color sub-sampling, BT.2020 pass-through, Auto Lipsync og HDMI-CEC · HDMI 2.1/8K samt 4K/120 understøttes på alle HDMI indgange og 2 udgange · Avanceret gaming via HDMI med 4K/120Hz pass-through, ALLM (Auto Low Latency Mode) / QFT (Quick Frame Transport) / VRR (Variable Refresh Rate) · Analog > HDMI videokonvertering · HDMI Zone 2 (audio/video med uafhængigt kildevalg), Zone 2/3 (inkl. digitale lydkilder) · Indgange kan navngives individuelt · DSD streaming via HDMI og netværk (op til DSD5.6) · Automatisk følsomheds-justering på alle indgange · HDMI Diagnostic Mode"
+  },
+  "gallery": [
+   "d0edda80-dd17-4cdc-befe-772289cfa736",
+   "61af823e-b090-42fb-875d-63b512c279e5",
+   "e69e5bcf-ce82-43af-ba06-99da58296da8",
+   "865ed0b0-5388-4fa0-8073-4bc0dc49a4a8",
+   "5db291bd-bb01-4492-bcad-fa9f72927381"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 192048,
   "skuCode": "DENAVCX4800H",
@@ -342,7 +369,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 44,
+     "availableQuantity": 42,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -554,57 +581,58 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon AVC-X4800H er en usædvanligt kapabel AV-receiver med varm, detaljeret og omsluttende lyd til både musik og film. Den kraftige forstærkning, den fremragende kontrol, de mange tilslutningsmuligheder og den overbevisende Dolby Atmos-gengivelse gør receiveren til en markant opgradering fra ældre og mindre kraftige modeller. Opsætning og kalibrering er som regel enkel, men de mange muligheder kræver tålmodighed, mens manglen på baggrundsbelyst fjernbetjening, inkluderet Dirac-licens og indbygget tuner er tydelige ulemper.",
+   "summary": "Denon AVC-X4800H roses bredt som en kraftfuld og alsidig AV-receiver, der leverer varm, detaljeret og omsluttende lyd til både musik og film. Den stærke forstærkning, fremragende surroundgengivelse, omfattende tilslutninger og gode rumkorrektionsmuligheder gør den til en markant opgradering fra ældre eller mindre kraftige modeller. Opsætningen er som regel overskuelig og enkel, men avanceret kalibrering kan kræve tålmodighed; Dirac Live koster ekstra, og enkelte kritiserer fjernbetjening, volumenkontrol, manglende tuner eller lejlighedsvise app- og kildeproblemer.",
    "headlines": {
-    "easy installation and clear operation": {
-     "sentimentAnalysis": "Mange anmeldelser beskriver installation, menunavigation og daglig betjening som enkel, logisk og godt forklaret.",
-     "simpleTitle": "Nem installation og overskuelig betjening",
-     "bias": "positive",
-     "key": "operation",
-     "groupId": "996a5f22-f28d-4834-9ab3-a5f54a386230"
-    },
-    "warm, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en varm, kraftfuld, detaljeret og omsluttende gengivelse, der fungerer særligt godt til både musik og film.",
-     "simpleTitle": "Varm, detaljeret og omsluttende lyd",
+    "warm, detailed sound for music and films": {
+     "sentimentAnalysis": "Anmelderne beskriver gengivelsen som varm, kraftfuld, detaljeret, musikalsk og meget engagerende i både stereo og hjemmebiograf.",
+     "simpleTitle": "Varm og detaljeret lyd til musik og film",
      "bias": "positive",
      "key": "sound",
-     "groupId": "79ca619f-5a99-4800-85c6-58736640d5f8"
+     "groupId": "c32c9549-61a9-4c5b-b7fd-28b4a178b313"
     },
-    "excellent Dolby Atmos and room correction": {
-     "sentimentAnalysis": "Dirac- og Audyssey-kalibrering roses sammen med Dolby Atmos-behandlingen for et rummeligt og overbevisende surroundfelt.",
-     "simpleTitle": "Fremragende Dolby Atmos og rumskorrektion",
+    "powerful amplification and immersive surround": {
+     "sentimentAnalysis": "Receiveren roses gentagne gange for store effektreserver, bedre højttalerkontrol, kontant bas og overbevisende Dolby Atmos- eller multikanalslyd.",
+     "simpleTitle": "Kraftig forstærkning og omsluttende surround",
+     "bias": "positive",
+     "key": "power",
+     "groupId": "a10c4067-96d0-43ac-9fdb-e5d05b3eec34"
+    },
+    "clear setup and effective room correction": {
+     "sentimentAnalysis": "Den guidede opsætning og Audyssey- eller Dirac-kalibrering opfattes generelt som overskuelig, effektiv og i stand til at forbedre lyden markant.",
+     "simpleTitle": "Overskuelig opsætning og effektiv rumkorrektion",
      "bias": "positive",
      "key": "setup",
-     "groupId": "00a590f2-8cc8-4a2c-839c-d267fc4cc59a"
+     "groupId": "e0baac47-0e35-4b79-bacc-db0a538820e1"
     },
     "extensive connections and modern features": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver det store udvalg af ind- og udgange, HDMI 2.1- og 8K-understøttelse, multiroom-funktioner, streaming og fleksibel systemudvidelse.",
+     "sentimentAnalysis": "Anmeldelserne fremhæver omfattende HDMI 2.1-, streaming-, multiroom-, zone-, subwoofer- og analoge tilslutninger samt mange konfigurationsmuligheder.",
      "simpleTitle": "Omfattende tilslutninger og moderne funktioner",
      "bias": "positive",
      "key": "features",
-     "groupId": "542cd1e5-d078-4144-bc60-9e07b23010e6"
+     "groupId": "df3962b2-9ade-41d4-9242-934be660d34e"
     },
-    "very strong amplification and speaker control": {
-     "sentimentAnalysis": "Anmeldelserne roser gentagne gange den store effekt, den kraftige bas og den forbedrede kontrol med krævende højttalersystemer.",
-     "simpleTitle": "Meget kraftig forstærkning og højttalerkontrol",
-     "bias": "positive",
-     "key": "power",
-     "groupId": "4d050801-5fa8-4198-9a74-b67f6dc8b9a5"
-    },
-    "calibration and sound tuning can require patience": {
-     "sentimentAnalysis": "Nogle ejere oplevede den indledende lyd som for lys, tilbagelænet eller utilfredsstillende og havde brug for omhyggelig måling, app-justering eller manuel tilpasning.",
-     "simpleTitle": "Kalibrering og lydjustering kan kræve tålmodighed",
+    "calibration and control can need refinement": {
+     "sentimentAnalysis": "Nogle ejere finder den indledende klangbalance eller Audyssey-resultatet utilfredsstillende, mens andre kritiserer ekstraudgiften til Dirac eller ustabil appstyring.",
+     "simpleTitle": "Kalibrering og betjening kan kræve finjustering",
      "bias": "negative",
      "key": "setup",
-     "groupId": "00a590f2-8cc8-4a2c-839c-d267fc4cc59a"
+     "groupId": "e0baac47-0e35-4b79-bacc-db0a538820e1"
+    },
+    "missing tuner and dated control details": {
+     "sentimentAnalysis": "Kritikken gælder manglende FM- eller DAB-tuner, en fjernbetjening uden lys, plastiktilslutninger på bagsiden samt delvist besværlig volumen- eller zonebetjening.",
+     "simpleTitle": "Manglende tuner og gammeldags betjeningsdetaljer",
+     "bias": "negative",
+     "key": "features",
+     "groupId": "df3962b2-9ade-41d4-9242-934be660d34e"
     }
    },
    "grouping": {
-    "79ca619f-5a99-4800-85c6-58736640d5f8": {
+    "c32c9549-61a9-4c5b-b7fd-28b4a178b313": {
      "title": "Lydkvalitet",
-     "id": "79ca619f-5a99-4800-85c6-58736640d5f8",
+     "id": "c32c9549-61a9-4c5b-b7fd-28b4a178b313",
      "references": [
       "5b709fe1-6379-434e-95b3-178c845eb3bb",
+      "d874393a-7af7-4f7b-a9ca-a1a9bd1431e7",
       "d7e865b5-7e7f-40b7-979e-bfce6593fae5",
       "b33cc100-9185-4934-a948-47339c702b6e",
       "b50ad9d8-2c88-4e0d-9fb9-26f9f7c3595a",
@@ -622,6 +650,7 @@
       "4187ea0b-10a4-479c-9f09-e84b53e3c48a",
       "dc46ce47-ae0b-4394-84bd-68867198e62b",
       "ecb23dfb-622a-44cb-8384-ced0726d6536",
+      "5dfcfee3-99b4-431a-97c5-9a2dea4e96d5",
       "a27fca77-5516-454b-a87d-df29d374b2bb",
       "0decc5b8-60a3-4771-89c6-48f20a9dec24",
       "318f2ef2-65c4-4028-b1af-5897a50b5317",
@@ -639,15 +668,16 @@
       "d42bed51-58cf-4a8e-a3d2-8690c674d49b",
       "2c771b7c-e609-471f-b5d4-d1565922e6a1",
       "8111ec74-f987-45a0-b32e-be0a5fee3bea",
+      "7bb293a1-1e51-4b96-8d27-fbf7f371f5f7",
       "06320060-a47e-43ea-866e-3f66b8e79d67",
       "77e6b705-5cf4-4d4c-b04c-ff5929056e60",
       "144e5443-c476-45f2-a0bb-023e1a047c8a",
-      "e0b346f7-08c8-4e06-a404-d05e710f149f",
+      "ef35da89-5994-4977-9649-62707ce9b46a",
       "c274ce73-4c98-455a-8e16-348db6be79f0",
       "47c9f8fe-df50-4ef9-ad5a-7f536bd2cb59",
       "00ae5704-880f-465a-ba2a-9993dac99c0e",
       "8eb46462-170e-466d-babf-fe78458fd543",
-      "2e5b34c1-344c-4cee-8ff9-83418deae460",
+      "962dbf0b-7a71-4179-bf23-0eacba21833b",
       "d3cec102-b909-499b-8924-76f67cdc40e6",
       "ef57081d-667f-4a1e-baf2-8d19b7a2a33b",
       "16582354-864d-441a-8e2d-3d7eb062118e",
@@ -660,95 +690,97 @@
       "468c28a5-2ff6-44c1-b768-3a191de72a55",
       "a8eea5d8-b753-4d99-a216-8b22628e138b",
       "4af41827-f69f-4251-9bbb-58eef00818cf",
-      "3fd7afa0-099a-4c58-9578-0c561ce6eb78",
-      "3db0fa3f-1b40-4e3d-a8ff-db290a2fd189",
-      "de257e1b-4bf0-43cb-930d-de3b4a9cbfe6"
-     ]
-    },
-    "00a590f2-8cc8-4a2c-839c-d267fc4cc59a": {
-     "title": "Opsætning og kalibrering",
-     "id": "00a590f2-8cc8-4a2c-839c-d267fc4cc59a",
-     "references": [
-      "d7e865b5-7e7f-40b7-979e-bfce6593fae5",
-      "b50ad9d8-2c88-4e0d-9fb9-26f9f7c3595a",
-      "5c754c37-dd6c-4d19-9a5b-4c67e728ee51",
-      "717188b0-e6f2-45eb-8d00-70c045f20e2d",
-      "ce89edec-d92a-4637-bc5e-1e4f40e3dacd",
-      "6552c74e-835f-4d2d-8f9d-5a8524324711",
-      "dc46ce47-ae0b-4394-84bd-68867198e62b",
-      "afa9022b-8de4-4feb-86fc-a10bcbe5904e",
-      "0259b915-e3f2-4199-b021-31f90ea8a644",
-      "a15b3d3d-16a1-479c-8179-cf8e67a772f6",
-      "47876b6e-319f-43ab-b747-16792db1615e",
-      "48e9cbaa-7b03-420b-b1fd-cf73715ed504",
-      "962dbf0b-7a71-4179-bf23-0eacba21833b",
-      "6b81d726-28e5-4fa2-9d07-1e2a7f05f243",
       "3fd7afa0-099a-4c58-9578-0c561ce6eb78"
      ]
     },
-    "996a5f22-f28d-4834-9ab3-a5f54a386230": {
-     "title": "Brugervenlighed",
-     "id": "996a5f22-f28d-4834-9ab3-a5f54a386230",
+    "a10c4067-96d0-43ac-9fdb-e5d05b3eec34": {
+     "title": "Kraft og hjemmebiograf",
+     "id": "a10c4067-96d0-43ac-9fdb-e5d05b3eec34",
      "references": [
-      "d7e865b5-7e7f-40b7-979e-bfce6593fae5",
-      "b33cc100-9185-4934-a948-47339c702b6e",
-      "f19099f4-0583-4f6d-8f84-7257c26de0e2",
-      "5c754c37-dd6c-4d19-9a5b-4c67e728ee51",
-      "6552c74e-835f-4d2d-8f9d-5a8524324711",
-      "03115c65-95b6-4108-818c-e7d8ab9e9d73",
-      "0259b915-e3f2-4199-b021-31f90ea8a644",
-      "28834167-f851-44d5-84d0-b6062fc5f421",
-      "47876b6e-319f-43ab-b747-16792db1615e",
-      "11f650ec-b7d2-4748-84b2-410ce520115c",
-      "d3cec102-b909-499b-8924-76f67cdc40e6",
-      "94c58df0-3c70-4ec2-a673-14fec4a7a4f7"
-     ]
-    },
-    "542cd1e5-d078-4144-bc60-9e07b23010e6": {
-     "title": "Funktioner og tilslutninger",
-     "id": "542cd1e5-d078-4144-bc60-9e07b23010e6",
-     "references": [
-      "28d89041-b4bd-471c-b35e-9aac39816ea0",
-      "c9d5616e-bac9-4211-8efa-1090c2408db1",
-      "b894cf03-7891-41cf-9c6c-86dcf8e3c5f5",
-      "c9d5616e-bac9-4211-8efa-1090c2408db1",
-      "cbf7c3c0-6824-47c8-8a53-b5f720ebf83e",
-      "2588e702-d56c-4ba2-8a4b-07e80c5dba8e",
-      "904cbc1d-c09d-4193-8152-af95be35103a",
-      "16582354-864d-441a-8e2d-3d7eb062118e",
-      "498b7cb8-d18e-4707-b78b-d115821ce87f",
-      "791aafb8-bd74-44db-96ad-a29b43e35665",
-      "6b81d726-28e5-4fa2-9d07-1e2a7f05f243",
-      "c5c793c9-236d-49fb-8ee1-984a12da022f"
-     ]
-    },
-    "4d050801-5fa8-4198-9a74-b67f6dc8b9a5": {
-     "title": "Effekt og kontrol",
-     "id": "4d050801-5fa8-4198-9a74-b67f6dc8b9a5",
-     "references": [
+      "5b709fe1-6379-434e-95b3-178c845eb3bb",
       "c36a0661-7d54-45ed-b43b-c5dd04c4d16d",
       "ac5a2f65-dc28-4edc-a8e5-5db62e52beda",
       "c71b6bc7-51a5-495f-a13c-2319730dcd8c",
       "4187ea0b-10a4-479c-9f09-e84b53e3c48a",
       "189d1ce9-18a4-42a3-89a8-0982ae921d04",
       "0bcd31a2-113c-43fd-b422-21ddc50c5f43",
-      "c36a0661-7d54-45ed-b43b-c5dd04c4d16d",
-      "16582354-864d-441a-8e2d-3d7eb062118e",
+      "dc46ce47-ae0b-4394-84bd-68867198e62b",
+      "5dfcfee3-99b4-431a-97c5-9a2dea4e96d5",
+      "318f2ef2-65c4-4028-b1af-5897a50b5317",
+      "8977fc9a-58a9-4f51-9082-347f5af9afc8",
+      "2588e702-d56c-4ba2-8a4b-07e80c5dba8e",
+      "904cbc1d-c09d-4193-8152-af95be35103a",
+      "d31cb62f-4571-4273-a84f-3630bad6cf1f",
+      "42b55d27-1f11-4f81-9730-9d0f30a99ea1",
+      "6af92008-b614-48e1-a410-ef3549cb0114",
+      "11f650ec-b7d2-4748-84b2-410ce520115c",
+      "28834167-f851-44d5-84d0-b6062fc5f421",
+      "2c771b7c-e609-471f-b5d4-d1565922e6a1",
+      "8111ec74-f987-45a0-b32e-be0a5fee3bea",
+      "c274ce73-4c98-455a-8e16-348db6be79f0",
       "47c9f8fe-df50-4ef9-ad5a-7f536bd2cb59",
       "468c28a5-2ff6-44c1-b768-3a191de72a55",
-      "8111ec74-f987-45a0-b32e-be0a5fee3bea"
+      "3fd7afa0-099a-4c58-9578-0c561ce6eb78"
+     ]
+    },
+    "e0baac47-0e35-4b79-bacc-db0a538820e1": {
+     "title": "Opsætning og kalibrering",
+     "id": "e0baac47-0e35-4b79-bacc-db0a538820e1",
+     "references": [
+      "d7e865b5-7e7f-40b7-979e-bfce6593fae5",
+      "b50ad9d8-2c88-4e0d-9fb9-26f9f7c3595a",
+      "5c754c37-dd6c-4d19-9a5b-4c67e728ee51",
+      "717188b0-e6f2-45eb-8d00-70c045f20e2d",
+      "ce89edec-d92a-4637-bc5e-1e4f40e3dacd",
+      "afa9022b-8de4-4feb-86fc-a10bcbe5904e",
+      "6552c74e-835f-4d2d-8f9d-5a8524324711",
+      "dc46ce47-ae0b-4394-84bd-68867198e62b",
+      "5dfcfee3-99b4-431a-97c5-9a2dea4e96d5",
+      "a27fca77-5516-454b-a87d-df29d374b2bb",
+      "2588e702-d56c-4ba2-8a4b-07e80c5dba8e",
+      "fc488e66-d3c6-4aa3-ac37-0f8bdcadb0de",
+      "0259b915-e3f2-4199-b021-31f90ea8a644",
+      "a15b3d3d-16a1-479c-8179-cf8e67a772f6",
+      "47876b6e-319f-43ab-b747-16792db1615e",
+      "48e9cbaa-7b03-420b-b1fd-cf73715ed504",
+      "e0b346f7-08c8-4e06-a404-d05e710f149f",
+      "962dbf0b-7a71-4179-bf23-0eacba21833b",
+      "6b81d726-28e5-4fa2-9d07-1e2a7f05f243",
+      "3fd7afa0-099a-4c58-9578-0c561ce6eb78"
+     ]
+    },
+    "df3962b2-9ade-41d4-9242-934be660d34e": {
+     "title": "Funktioner og tilslutninger",
+     "id": "df3962b2-9ade-41d4-9242-934be660d34e",
+     "references": [
+      "28d89041-b4bd-471c-b35e-9aac39816ea0",
+      "c9d5616e-bac9-4211-8efa-1090c2408db1",
+      "b894cf03-7891-41cf-9c6c-86dcf8e3c5f5",
+      "c9d5616e-bac9-4211-8efa-1090c2408db1",
+      "c9d5616e-bac9-4211-8efa-1090c2408db1",
+      "6552c74e-835f-4d2d-8f9d-5a8524324711",
+      "ecb23dfb-622a-44cb-8384-ced0726d6536",
+      "a27fca77-5516-454b-a87d-df29d374b2bb",
+      "cbf7c3c0-6824-47c8-8a53-b5f720ebf83e",
+      "904cbc1d-c09d-4193-8152-af95be35103a",
+      "16582354-864d-441a-8e2d-3d7eb062118e",
+      "498b7cb8-d18e-4707-b78b-d115821ce87f",
+      "6b81d726-28e5-4fa2-9d07-1e2a7f05f243",
+      "791aafb8-bd74-44db-96ad-a29b43e35665",
+      "c5c793c9-236d-49fb-8ee1-984a12da022f",
+      "74803b0d-20f9-4ef8-b507-d24bff3aa5b8"
      ]
     }
    },
-   "rating": 4.77637130801688,
-   "count": 237,
+   "rating": 4.77731092436975,
+   "count": 238,
    "reviewCount": 121,
    "distribution": {
     "1": 2,
     "2": 2,
     "3": 7,
     "4": 25,
-    "5": 201
+    "5": 202
    }
   },
   "brandName": "Denon",

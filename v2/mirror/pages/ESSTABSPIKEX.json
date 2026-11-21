@@ -13,6 +13,15 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e067d575-b1a4-4d9d-87de-8499e3240ed1",
+   "f42cb60d-0bef-4c1f-88fd-50f32be4b7e7",
+   "dfac1b3c-68db-49cb-b099-45715c4787e5"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243783,
   "skuCode": "ESSTABSPIKEX",
@@ -86,8 +95,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 486,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 481,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -114,89 +123,93 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTABSPIKEX betragtes generelt som effektive og prisvenlige plader til højttalerspidser, der opfylder deres formål og kan give en tydelig lydforbedring med mere fyldig mellemtone og en mere præcis og tilfredsstillende lyd. Pladerne passer til mange højttalere og fungerer især godt på træ- eller glatte gulve, selv om nogle brugere synes, at placeringen er besværlig, størrelsen mindre end forventet, eller prisen høj for et lille antal skiver. Samlet set giver produktet en praktisk og slagkraftig opgradering med god værdi trods mindre problemer med brug og størrelse.",
+   "summary": "ESSTABSPIKEX giver en effektiv og prisvenlig måde at understøtte højttalerspidser og forbedre afkoblingen på. De solide plader passer til mange højttalere, fungerer især godt på trægulve eller glatte gulve og kan give en varmere, mere detaljeret og omsluttende lyd. Placeringen kan være lidt besværlig, den kompakte størrelse passer ikke til alle, og prisen føles høj for nogle, men den samlede værdi er stadig stærk.",
    "headlines": {
-    "does the job reliably": {
-     "sentimentAnalysis": "Pladerne betragtes konsekvent som funktionelle og effektive til deres formål.",
-     "simpleTitle": "Gør pålideligt det, den skal",
+    "works as intended and fits many speakers": {
+     "sentimentAnalysis": "Pladerne opfylder pålideligt deres formål, og flere anmeldelser bekræfter god kompatibilitet med højttalere og effektiv støtte.",
+     "simpleTitle": "Fungerer som tiltænkt og passer til mange højttalere",
      "bias": "positive",
-     "key": "functionality",
-     "groupId": "09b18efc-2215-422d-b43d-bdf25587dcd9"
+     "key": "works-as-intended",
+     "groupId": "52983c88-9ec6-4198-a036-0746c516f563"
     },
-    "noticeable sound improvement": {
-     "sentimentAnalysis": "Produkterne forbindes med bedre afkobling, fyldigere mellemtone og en mere tilfredsstillende samlet lyd.",
-     "simpleTitle": "Mærkbar lydforbedring",
+    "improves clarity and midrange presence": {
+     "sentimentAnalysis": "Afkoblingspladerne forbindes med en tydelig lydforbedring, især mere mellemtone og en mere tilfredsstillende samlet gengivelse.",
+     "simpleTitle": "Forbedrer klarhed og mellemtone",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "05d4dc9c-69ae-4afb-9304-18c0a8860330"
+     "key": "sound-improvement",
+     "groupId": "52ec2a2e-1e3d-49bd-a8d8-fcdad3555202"
     },
-    "good value despite price concerns": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pladerne som billige eller meget værdifulde, selv om nogle synes, at prisen er høj for et lille sæt.",
-     "simpleTitle": "God værdi trods priskritik",
+    "good value for a small upgrade": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver pladerne som prisvenlige eller meget værdifulde, især på grund af den hørbare forbedring og den enkle funktion.",
+     "simpleTitle": "God værdi for en lille opgradering",
      "bias": "positive",
-     "key": "price",
-     "groupId": "1aee5c56-51ac-455c-a28a-840ace845b60"
+     "key": "value",
+     "groupId": "8990bad4-edde-4434-a1d8-020b9e816f7d"
     },
-    "placement can be fiddly": {
-     "sentimentAnalysis": "Flere brugere synes, at placeringen af spikes eller plader er lidt besværlig.",
-     "simpleTitle": "Placeringen kan være besværlig",
+    "fiddly to position": {
+     "sentimentAnalysis": "Det kan kræve omhu og tålmodighed at placere spidserne i pladerne, hvilket gør monteringen mindre bekvem.",
+     "simpleTitle": "Besværlige at placere",
      "bias": "negative",
-     "key": "functionality",
-     "groupId": "09b18efc-2215-422d-b43d-bdf25587dcd9"
+     "key": "difficult-placement",
+     "groupId": "440d9cc3-561a-46a2-ad51-47251968c6b3"
     },
-    "smaller than expected": {
-     "sentimentAnalysis": "Flere brugere synes, at diameteren er mindre end ideel, selv om pladerne fungerer.",
-     "simpleTitle": "Mindre end forventet",
+    "price feels high for the quantity": {
+     "sentimentAnalysis": "En del af anmeldelserne vurderer produktet som dyrt i forhold til det lille antal medfølgende plader.",
+     "simpleTitle": "Prisen føles høj i forhold til mængden",
      "bias": "negative",
-     "key": "size",
-     "groupId": "60ba9a9d-30a2-4830-9788-9843bbc2fb52"
+     "key": "price-concern",
+     "groupId": "8990bad4-edde-4434-a1d8-020b9e816f7d"
     }
    },
    "grouping": {
-    "09b18efc-2215-422d-b43d-bdf25587dcd9": {
-     "title": "Funktionalitet",
-     "id": "09b18efc-2215-422d-b43d-bdf25587dcd9",
+    "52983c88-9ec6-4198-a036-0746c516f563": {
+     "title": "Funktion og pasform",
+     "id": "52983c88-9ec6-4198-a036-0746c516f563",
      "references": [
       "1a1fed30-7710-4022-b338-d9c03b117c44",
       "15ea0946-6bb1-4ce8-b7ba-7e44eedb03d1",
       "70c0701a-9814-4e32-9ab9-3aefb2672968",
+      "ff5f8db4-a3ae-4b9e-b97b-267badec89e3",
       "9df76c1e-4efc-4582-a810-c3652344dcec",
       "a863c2c7-3531-4c0b-a5c3-80a3f4308cb9",
+      "c16605b4-5c4e-434f-9aab-09f8ebb9c8ef",
       "b74ca4e2-d289-42b8-8e9b-cbce33995598",
       "496413b4-b582-430c-b45b-cf3c0140cb61",
-      "b7382be9-20ef-478a-8b16-ddc332a8fe0c",
       "d131a7c4-d54f-4539-8552-73b6acd59614",
       "b77abcd4-65b7-4690-b3b1-68c2f931401e",
       "6e8540ec-65c5-4839-8943-a34a9971d3ac"
      ]
     },
-    "1aee5c56-51ac-455c-a28a-840ace845b60": {
-     "title": "Pris og værdi",
-     "id": "1aee5c56-51ac-455c-a28a-840ace845b60",
+    "440d9cc3-561a-46a2-ad51-47251968c6b3": {
+     "title": "Montering og håndtering",
+     "id": "440d9cc3-561a-46a2-ad51-47251968c6b3",
      "references": [
-      "a09ba07c-6c43-4033-a868-bee6e7c3662d",
-      "0b978062-e2aa-48e2-a9ca-2aa9db9a6a34",
-      "6e8540ec-65c5-4839-8943-a34a9971d3ac",
-      "d2d94389-7a0d-4167-a640-76c6d319eaf9",
+      "1a1fed30-7710-4022-b338-d9c03b117c44",
+      "70c0701a-9814-4e32-9ab9-3aefb2672968",
+      "a863c2c7-3531-4c0b-a5c3-80a3f4308cb9",
+      "b7382be9-20ef-478a-8b16-ddc332a8fe0c",
       "b77abcd4-65b7-4690-b3b1-68c2f931401e"
      ]
     },
-    "05d4dc9c-69ae-4afb-9304-18c0a8860330": {
+    "8990bad4-edde-4434-a1d8-020b9e816f7d": {
+     "title": "Pris og værdi",
+     "id": "8990bad4-edde-4434-a1d8-020b9e816f7d",
+     "references": [
+      "a09ba07c-6c43-4033-a868-bee6e7c3662d",
+      "0b978062-e2aa-48e2-a9ca-2aa9db9a6a34",
+      "b77abcd4-65b7-4690-b3b1-68c2f931401e",
+      "6e8540ec-65c5-4839-8943-a34a9971d3ac",
+      "d2d94389-7a0d-4167-a640-76c6d319eaf9"
+     ]
+    },
+    "52ec2a2e-1e3d-49bd-a8d8-fcdad3555202": {
      "title": "Lydkvalitet",
-     "id": "05d4dc9c-69ae-4afb-9304-18c0a8860330",
+     "id": "52ec2a2e-1e3d-49bd-a8d8-fcdad3555202",
      "references": [
       "80a88583-10fc-4e06-8194-742d9e417749",
       "16512f00-e7e2-4deb-8e92-25d1c6cef9d1",
       "d2d94389-7a0d-4167-a640-76c6d319eaf9",
       "b7fbdaa6-8b92-4d77-a4cb-fa9e6bab29c8"
-     ]
-    },
-    "60ba9a9d-30a2-4830-9788-9843bbc2fb52": {
-     "title": "Størrelse",
-     "id": "60ba9a9d-30a2-4830-9788-9843bbc2fb52",
-     "references": [
-      "d131a7c4-d54f-4539-8552-73b6acd59614",
-      "b77abcd4-65b7-4690-b3b1-68c2f931401e"
      ]
     }
    },

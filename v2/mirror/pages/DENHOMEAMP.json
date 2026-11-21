@@ -13,6 +13,30 @@
    "url": "/stereo/mini-anlag/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI indgange": "1",
+   "Bluetooth": "Ja",
+   "Bluetooth version": "4.2",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, USB A",
+   "Indgang (andet)": "Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang, Airplay 2, Spotify Connect",
+   "Tilslutninger (kablet)": "HDMI, Ethernet",
+   "Udgangseffekt 4 ohm": "125 watt",
+   "Udgangseffekt 8 ohm": "100 watt",
+   "Fra beskrivelsen": "Subwoofer-udgang med High Pass Filter"
+  },
+  "gallery": [
+   "16af14eb-dfda-40ef-8ada-de36ccf77128",
+   "e4defcdf-8602-4889-a182-dd7595141f95",
+   "4de7fcb3-d03a-40c1-8c63-9a6839461a84",
+   "222f0b82-d71a-49fa-b8b4-6063d1d3dbb8",
+   "2c679197-f497-4eeb-bc5d-77f6f3385586",
+   "d9d95172-b5f0-449a-9c4b-ee85832537f1",
+   "73b551ac-45e4-4675-ad5c-d89a80e4f181"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 234983,
   "skuCode": "DENHOMEAMP",
@@ -256,7 +280,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 44,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -435,54 +459,60 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENHOMEAMP leverer varm, ren og kraftfuld lyd med rigelig effekt, så både tv-lyd og streamet musik bliver mere medrivende. Det kompakte design, den enkle opsætning og den stærke HEOS-streaming bliver værdsat, mens skift mellem kilder, appens logik og eARC-kompatibilitet kan give frustrationer i enkelte systemer. Samlet set er forstærkeren et meget kompetent og fornøjeligt valg til et enkelt setup med to højttalere.",
+   "summary": "DENHOMEAMP leverer varm, ren og slagkraftig lyd med rigeligt overskud og giver en medrivende opgradering til musik og tv. Opsætningen er generelt nem, og HEOS-streaming, multiroom-brug og den daglige betjening fungerer meget godt i de fleste systemer. Det kompakte design er særdeles praktisk, men skift mellem HDMI/eARC kan være ustabilt, appen har enkelte besværlige områder, og der følger ingen fjernbetjening med.",
    "headlines": {
     "warm, clean and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, detaljerede, dynamiske og kraftfulde gengivelse med forskellige højttalerkombinationer.",
+     "sentimentAnalysis": "Anmelderne roser forstærkeren for klar, musikalsk og kraftfuld lyd til både musik og tv.",
      "simpleTitle": "Varm, ren og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "d9e2dd17-3a55-4a00-8e91-bc9043aa6b4c"
+     "groupId": "2a0d0fe8-ba01-4b35-a1ee-9df4381ec63c"
     },
-    "easy HEOS setup and streaming": {
-     "sentimentAnalysis": "HEOS roses gentagne gange for enkel betjening, stabil streaming og nem opsætning.",
-     "simpleTitle": "Nem HEOS-opsætning og streaming",
+    "easy HEOS streaming and control": {
+     "sentimentAnalysis": "HEOS roses bredt for stabil streaming, multiroom-funktionalitet og enkel betjening.",
+     "simpleTitle": "Nem HEOS-streaming og betjening",
      "bias": "positive",
      "key": "app",
-     "groupId": "051c9a67-a7f2-4bc1-9350-c657c62c7a2f"
+     "groupId": "a549ffa0-3dff-4b11-bcf9-c95647c4ccfb"
     },
-    "strong power reserves": {
-     "sentimentAnalysis": "Forstærkeren leverer masser af effekt, tryk og headroom uden at virke presset.",
-     "simpleTitle": "Store effektreserver",
+    "strong output for demanding speakers": {
+     "sentimentAnalysis": "Forstærkeren vurderes at være kraftig nok til at drive større højttalere højt uden besvær.",
+     "simpleTitle": "Stor effekt til krævende højttalere",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d9e2dd17-3a55-4a00-8e91-bc9043aa6b4c"
+     "key": "power",
+     "groupId": "dbe6789d-fe47-4e0f-b0be-21c443d2ee59"
     },
-    "tv sound is a major upgrade": {
-     "sentimentAnalysis": "Forstærkeren giver en mærkbart mere medrivende og stærk TV-oplevelse.",
-     "simpleTitle": "Markant bedre TV-lyd",
+    "compact, attractive form factor": {
+     "sentimentAnalysis": "Forstærkeren værdsættes for sit attraktive udseende og pladsbesparende format.",
+     "simpleTitle": "Kompakt og attraktivt design",
      "bias": "positive",
-     "key": "tv",
-     "groupId": "086e54a6-1ced-4b56-92f5-e58d43ea479a"
+     "key": "design",
+     "groupId": "2f16812c-6943-48ab-acdf-7791539edceb"
     },
-    "input switching and app logic can frustrate": {
-     "sentimentAnalysis": "Nogle brugere finder appen ulogisk og oplever upålideligt skift mellem HDMI- og trådløse indgange.",
-     "simpleTitle": "Kildeskift og appens logik kan frustrere",
+    "app interface can feel illogical": {
+     "sentimentAnalysis": "Visse begrænsninger i betjening og equalizer gør appen mindre intuitiv ved detaljerede justeringer.",
+     "simpleTitle": "Appens brugerflade kan virke ulogisk",
      "bias": "negative",
      "key": "app",
-     "groupId": "051c9a67-a7f2-4bc1-9350-c657c62c7a2f"
+     "groupId": "a549ffa0-3dff-4b11-bcf9-c95647c4ccfb"
+    },
+    "hdmi and eARC switching can be unreliable": {
+     "sentimentAnalysis": "Der rapporteres om problemer med indgangsregistrering og eARC-kompatibilitet i nogle tv-opsætninger.",
+     "simpleTitle": "Skift mellem HDMI og eARC kan være ustabilt",
+     "bias": "negative",
+     "key": "connectivity",
+     "groupId": "5b72151a-d4d2-453c-9dc0-84e95538c065"
     }
    },
    "grouping": {
-    "d9e2dd17-3a55-4a00-8e91-bc9043aa6b4c": {
+    "2a0d0fe8-ba01-4b35-a1ee-9df4381ec63c": {
      "title": "Lydkvalitet",
-     "id": "d9e2dd17-3a55-4a00-8e91-bc9043aa6b4c",
+     "id": "2a0d0fe8-ba01-4b35-a1ee-9df4381ec63c",
      "references": [
       "b08ba1a4-f5db-4396-ab57-17b637da3cf6",
       "88a55184-97ab-4610-9525-fbfeb170d066",
       "5481ac3e-af53-47ca-8b34-32feeb3dca59",
       "af20c080-1f81-4cbd-ae03-b8afd4b0dfe9",
-      "02d9e867-2423-4dfe-abe9-ad11be0dfe72",
       "4a9fbb9f-79c1-4d65-a9c3-8bf84827b116",
       "d8ca29f4-7215-4138-b80c-a588b4d8372d",
       "49e1a421-b744-46cd-9211-4eaf46c4ec53",
@@ -495,29 +525,45 @@
       "c372ef11-a8b8-42dc-8396-ff9b0333f372"
      ]
     },
-    "051c9a67-a7f2-4bc1-9350-c657c62c7a2f": {
+    "a549ffa0-3dff-4b11-bcf9-c95647c4ccfb": {
      "title": "App og streaming",
-     "id": "051c9a67-a7f2-4bc1-9350-c657c62c7a2f",
+     "id": "a549ffa0-3dff-4b11-bcf9-c95647c4ccfb",
      "references": [
       "b08ba1a4-f5db-4396-ab57-17b637da3cf6",
       "5481ac3e-af53-47ca-8b34-32feeb3dca59",
-      "4a9fbb9f-79c1-4d65-a9c3-8bf84827b116",
       "d8ca29f4-7215-4138-b80c-a588b4d8372d",
       "d0e77821-58bf-4a82-95f4-e7d6a370b01d",
       "af8a8446-68e2-4421-86aa-df5ca93feb7c",
-      "d776eff0-0aa8-4cbf-8e83-961fd2d45aa6",
-      "acdd5110-214e-4751-8622-ba9d1168e28c"
+      "9bf03aac-b7ab-4a18-baba-4f2d8ab19c1d",
+      "d776eff0-0aa8-4cbf-8e83-961fd2d45aa6"
      ]
     },
-    "086e54a6-1ced-4b56-92f5-e58d43ea479a": {
-     "title": "TV-tilslutning",
-     "id": "086e54a6-1ced-4b56-92f5-e58d43ea479a",
+    "dbe6789d-fe47-4e0f-b0be-21c443d2ee59": {
+     "title": "Effekt og højttalerydelse",
+     "id": "dbe6789d-fe47-4e0f-b0be-21c443d2ee59",
      "references": [
-      "5aa6aee6-b151-4c90-bc1e-5b342bb0d6f3",
-      "9bf03aac-b7ab-4a18-baba-4f2d8ab19c1d",
+      "88a55184-97ab-4610-9525-fbfeb170d066",
+      "af20c080-1f81-4cbd-ae03-b8afd4b0dfe9",
       "d0e77821-58bf-4a82-95f4-e7d6a370b01d",
-      "d776eff0-0aa8-4cbf-8e83-961fd2d45aa6",
-      "4a9fbb9f-79c1-4d65-a9c3-8bf84827b116"
+      "9bf03aac-b7ab-4a18-baba-4f2d8ab19c1d"
+     ]
+    },
+    "5b72151a-d4d2-453c-9dc0-84e95538c065": {
+     "title": "Tilslutning og indgange",
+     "id": "5b72151a-d4d2-453c-9dc0-84e95538c065",
+     "references": [
+      "4a9fbb9f-79c1-4d65-a9c3-8bf84827b116",
+      "d0e77821-58bf-4a82-95f4-e7d6a370b01d",
+      "9bf03aac-b7ab-4a18-baba-4f2d8ab19c1d"
+     ]
+    },
+    "2f16812c-6943-48ab-acdf-7791539edceb": {
+     "title": "Design og størrelse",
+     "id": "2f16812c-6943-48ab-acdf-7791539edceb",
+     "references": [
+      "5481ac3e-af53-47ca-8b34-32feeb3dca59",
+      "d0e77821-58bf-4a82-95f4-e7d6a370b01d",
+      "af8a8446-68e2-4421-86aa-df5ca93feb7c"
      ]
     }
    },

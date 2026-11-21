@@ -13,6 +13,13 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "43ec74e2-817d-4089-b6ef-b23a3e56fecc"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236943,
   "skuCode": "ESSTTSTYLUSGAUGEX",
@@ -107,7 +114,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 745,
+     "availableQuantity": 714,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -150,130 +157,140 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTSTYLUSGAUGEX får stor ros som en præcis, praktisk og brugervenlig løsning til indstilling af nåletrykket. Den digitale måling fjerner gætteriet, kan forbedre pickup’ens sporing og give en renere og mere medrivende gengivelse, samtidig med at prisen opleves som attraktiv. Mindre kritikpunkter handler om byggekvalitet, batterikontakter, kalibrering samt uklare eller manglende instruktioner.",
+   "summary": "ESSTTSTYLUSGAUGEX er et præcist, prisvenligt og brugervenligt værktøj til indstilling af nåletrykket, som erstatter gætterier med pålidelige målinger. Korrekt sporing og renere, mere behagelig gengivelse nævnes ofte, med varm, fokuseret og mere medrivende lyd efter justeringen. Finish, batterikontakter og vejledning kritiseres af nogle, men den samlede værdi er stadig fremragende.",
    "headlines": {
-    "simple operation and easy adjustment": {
-     "sentimentAnalysis": "Den kompakte vægt beskrives gentagne gange som intuitiv, enkel og let at bruge til indstilling af nåletrykket.",
-     "simpleTitle": "Enkel betjening og justering",
+    "simple operation makes setup easy": {
+     "sentimentAnalysis": "Vægten beskrives bredt som intuitiv, enkel og nem at bruge.",
+     "simpleTitle": "Enkel betjening gør opsætningen nem",
      "bias": "positive",
      "key": "usability",
-     "groupId": "a010bf90-4f75-4270-883c-20523fee4ced"
+     "groupId": "9c7484de-dd36-4284-a112-2c98daac8aab"
     },
-    "strong value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer vægten som billig og pengene værd, især sammenlignet med mere komplicerede alternativer.",
+    "good value for the money": {
+     "sentimentAnalysis": "Produktet vurderes gentagne gange som prisvenligt og pengene værd, især sammenlignet med manuelle eller konkurrerende løsninger.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "6074ece1-234c-4802-bbb1-97e0e2522adf"
+     "groupId": "aa68bbd3-b521-4c20-afca-d5f1c9e6bc61"
     },
-    "accurate measurement removes guesswork": {
-     "sentimentAnalysis": "Anmeldelserne beskriver vægten som præcis og pålidelig og nyttig som erstatning for upræcise manuelle indstillinger eller skalaer på tonearmen.",
-     "simpleTitle": "Præcis måling fjerner gætteriet",
-     "bias": "positive",
-     "key": "measurement",
-     "groupId": "393e6a8a-849c-4145-9764-2e7f7f9d1746"
-    },
-    "instructions could be clearer or included": {
-     "sentimentAnalysis": "Anmeldelserne påpeger manglende eller uklare instruktioner og fortæller, at opsætningsdetaljer nogle gange måtte findes på egen hånd.",
-     "simpleTitle": "Vejledningen burde være tydeligere eller medfølge",
+    "instructions could be clearer": {
+     "sentimentAnalysis": "Flere brugere savnede en medfølgende vejledning eller tydeligere instruktioner om kalibrering og placering.",
+     "simpleTitle": "Vejledningen kunne være tydeligere",
      "bias": "negative",
      "key": "instructions",
-     "groupId": "26c4bb4c-c224-4cd1-9409-26642493235d"
+     "groupId": "dca4fc14-d8bd-4e47-956d-348b409f14e4"
     },
-    "battery and finish quality can be disappointing": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne nævner tvivlsom finish, løse eller svage batterikontakter og uklar batteriretning.",
-     "simpleTitle": "Batteri- og byggekvalitet kan skuffe",
+    "accurate pressure measurement improves tracking": {
+     "sentimentAnalysis": "Præcis vejning korrigerer unøjagtige manuelle indstillinger og hjælper pickupper med at spore optimalt.",
+     "simpleTitle": "Præcis trykmåling forbedrer sporingen",
+     "bias": "positive",
+     "key": "precision",
+     "groupId": "01ac7bcc-9dff-4798-a5f9-39e054de26da"
+    },
+    "finish feels less than premium": {
+     "sentimentAnalysis": "En mindre del af brugerne sætter spørgsmålstegn ved byggekvaliteten og finishen trods tilfredsstillende funktion.",
+     "simpleTitle": "Finishen virker ikke særlig eksklusiv",
      "bias": "negative",
      "key": "build",
-     "groupId": "76fe5af3-fc3a-4a56-9a26-8e512ac74589"
+     "groupId": "edbefaaa-e73b-48cf-95fd-cb4b70ecf88a"
+    },
+    "battery contacts can prevent startup": {
+     "sentimentAnalysis": "Svage eller dårligt placerede batterikontakter gav nogle brugere problemer med opstarten.",
+     "simpleTitle": "Batterikontakter kan forhindre opstart",
+     "bias": "negative",
+     "key": "build",
+     "groupId": "edbefaaa-e73b-48cf-95fd-cb4b70ecf88a"
     }
    },
    "grouping": {
-    "a010bf90-4f75-4270-883c-20523fee4ced": {
+    "9c7484de-dd36-4284-a112-2c98daac8aab": {
      "title": "Brugervenlighed",
-     "id": "a010bf90-4f75-4270-883c-20523fee4ced",
+     "id": "9c7484de-dd36-4284-a112-2c98daac8aab",
      "references": [
+      "5e76299e-0512-4d62-8062-3f988db70d07",
       "c7b53daa-ba64-4f50-af74-9682830dccba",
       "cb0a1257-d2d6-48be-8b91-2bc44703553f",
-      "ca0ad1d5-c1b7-4a4f-8c8e-8eb2423e55df",
       "85dac210-18c1-4631-901c-1162360bd68c",
-      "3629c96f-9709-4fad-af06-273e191c3b84",
       "37ec2a8b-d25b-4823-a1c1-10fa6b7aa46f",
-      "d223ccda-c346-4062-99df-21d4b71484e2",
       "27086bf5-9ea7-43ed-8983-8dfca28366d4",
       "c82aafc6-6fef-40eb-8ca6-c0906f3c97b1",
+      "d223ccda-c346-4062-99df-21d4b71484e2",
+      "fd6dccfc-18a3-45df-8fe1-51483f3295c4",
+      "42f6a7b9-0a57-4fce-b7e6-ee4b357bb0c6",
       "6f649562-81ae-49b8-a7f9-314652d22521",
       "9d3ae789-7d94-4bee-ae45-7bff155ee495",
+      "35f8ba64-3484-43d3-98c8-0d412e13ff54",
       "3e30cad0-5e15-4753-88f5-6f73d39610ea",
       "315bdb29-fc2f-48ea-95ab-b952ad64f04d",
       "f6bdbef8-5bdf-403d-873a-92fe9e66b45f",
       "c2bb0fc2-d393-4701-9afb-cf4421ed9243",
       "fdfa94a1-1ffa-4a81-8025-1ab40db62d19",
+      "058c8a03-8d8a-4679-b56f-16c408b1dc32",
       "77f1cef6-6925-4f28-9035-914df415730e",
-      "7c2ca10c-91f5-4463-bca4-6c89b7e48655"
+      "7c2ca10c-91f5-4463-bca4-6c89b7e48655",
+      "94589da3-0c30-48bf-80b7-55d4347c23b1",
+      "0bb92bf0-e030-4e03-ac00-f8d40ef3d693"
      ]
     },
-    "393e6a8a-849c-4145-9764-2e7f7f9d1746": {
-     "title": "Målenøjagtighed",
-     "id": "393e6a8a-849c-4145-9764-2e7f7f9d1746",
+    "01ac7bcc-9dff-4798-a5f9-39e054de26da": {
+     "title": "Præcision og sporing",
+     "id": "01ac7bcc-9dff-4798-a5f9-39e054de26da",
      "references": [
-      "5e76299e-0512-4d62-8062-3f988db70d07",
       "6020b0ad-6537-402e-88a3-e4efa02abf2a",
+      "5e76299e-0512-4d62-8062-3f988db70d07",
       "1387afe1-dddb-4766-a8cf-8fafc6ff7411",
       "2932b5ff-2510-477a-9a0b-752c4c663206",
-      "21ccfebc-764a-4bc0-8e90-f79fe191aab8",
+      "d223ccda-c346-4062-99df-21d4b71484e2",
       "27086bf5-9ea7-43ed-8983-8dfca28366d4",
       "fae73a59-2d1b-4047-8b93-fe9941585562",
       "d9655ac8-ec34-498d-9f85-6f9dd3af43d0",
+      "7c4ecfee-60df-4b6f-b4c3-4994272034dd",
       "fd6dccfc-18a3-45df-8fe1-51483f3295c4",
-      "35f8ba64-3484-43d3-98c8-0d412e13ff54",
       "7943fe98-7f3d-45b0-a1b8-116212163072",
       "33342d4d-7b3a-4285-95a3-7e7a5f2f3230",
+      "b84ea617-58b1-4e10-9105-aedc399234d5",
       "5be3eab6-1ffd-480a-b36b-8407e8c52282",
-      "783312f9-76cf-4952-961d-242f197dc1aa",
-      "94589da3-0c30-48bf-80b7-55d4347c23b1",
       "75000215-1750-4313-8070-c25041e87122",
       "97a22e0d-860d-4c54-9474-277c4d7370b4"
      ]
     },
-    "6074ece1-234c-4802-bbb1-97e0e2522adf": {
+    "aa68bbd3-b521-4c20-afca-d5f1c9e6bc61": {
      "title": "Pris og værdi",
-     "id": "6074ece1-234c-4802-bbb1-97e0e2522adf",
+     "id": "aa68bbd3-b521-4c20-afca-d5f1c9e6bc61",
      "references": [
       "c7b53daa-ba64-4f50-af74-9682830dccba",
       "7e02bdf4-b0cd-4377-8a38-b21703d92665",
       "0fe8901a-e470-4c6a-a9dd-fc6b9e5b8a58",
+      "35f8ba64-3484-43d3-98c8-0d412e13ff54",
       "4b100e57-878e-4edb-9665-73c360a6b202",
       "5be3eab6-1ffd-480a-b36b-8407e8c52282",
       "058c8a03-8d8a-4679-b56f-16c408b1dc32",
       "7c2ca10c-91f5-4463-bca4-6c89b7e48655",
-      "35f8ba64-3484-43d3-98c8-0d412e13ff54",
       "75cbb864-5dc5-4164-9273-78799c9f9f61",
       "0bb92bf0-e030-4e03-ac00-f8d40ef3d693",
-      "75000215-1750-4313-8070-c25041e87122",
-      "97a22e0d-860d-4c54-9474-277c4d7370b4"
+      "75000215-1750-4313-8070-c25041e87122"
      ]
     },
-    "26c4bb4c-c224-4cd1-9409-26642493235d": {
-     "title": "Vejledning og opsætning",
-     "id": "26c4bb4c-c224-4cd1-9409-26642493235d",
-     "references": [
-      "a53ac16e-ca74-4263-9a0b-17916cbc6ab2",
-      "9d3ae789-7d94-4bee-ae45-7bff155ee495",
-      "d3e6d5aa-19c9-4c0f-b145-41fc89d65899",
-      "6c14a90e-b46c-4417-9f17-a828c8668e64",
-      "783312f9-76cf-4952-961d-242f197dc1aa"
-     ]
-    },
-    "76fe5af3-fc3a-4a56-9a26-8e512ac74589": {
-     "title": "Byggekvalitet og batteri",
-     "id": "76fe5af3-fc3a-4a56-9a26-8e512ac74589",
+    "edbefaaa-e73b-48cf-95fd-cb4b70ecf88a": {
+     "title": "Byggekvalitet og batterier",
+     "id": "edbefaaa-e73b-48cf-95fd-cb4b70ecf88a",
      "references": [
       "168f54cb-bb6a-43d3-8bf1-ab525c9e2d6a",
       "57976ce5-9c8e-46f7-81c0-b6a3bcfe7468",
       "da0cb380-1e18-46e9-a08f-ce4660eee278",
       "42f6a7b9-0a57-4fce-b7e6-ee4b357bb0c6",
       "97a22e0d-860d-4c54-9474-277c4d7370b4"
+     ]
+    },
+    "dca4fc14-d8bd-4e47-956d-348b409f14e4": {
+     "title": "Vejledning og opsætning",
+     "id": "dca4fc14-d8bd-4e47-956d-348b409f14e4",
+     "references": [
+      "a53ac16e-ca74-4263-9a0b-17916cbc6ab2",
+      "d3e6d5aa-19c9-4c0f-b145-41fc89d65899",
+      "6c14a90e-b46c-4417-9f17-a828c8668e64",
+      "783312f9-76cf-4952-961d-242f197dc1aa",
+      "9d3ae789-7d94-4bee-ae45-7bff155ee495"
      ]
     }
    },

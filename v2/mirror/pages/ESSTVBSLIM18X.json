@@ -13,6 +13,19 @@
    "url": "/tilbehor/tv-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "770fc775-e099-401e-a99f-d79c33ce8621",
+   "3727ca18-85c6-49d6-ae1d-42b931a4373f",
+   "d3660817-a73b-4484-9f76-9b4e0b11fd69",
+   "1526b85a-3191-4a17-a487-e4361157c87c",
+   "ad8a2314-64ce-41d8-bbb0-f09fdacbb1e5",
+   "b50f7816-968a-459e-b582-2d85c3886315",
+   "59ce0f3c-d9fd-4263-a6cf-533c9dd247a5"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 240917,
   "skuCode": "ESSTVBSLIM18X",
@@ -22,9 +35,9 @@
    "productCodes": [
     "ESSTVBMICROGAP09X",
     "VOGTVM5705",
-    "ESSBASICWMSFLATX",
     "VOGTVM3615X",
-    "VOGTVM3215X"
+    "VOGTVM3215X",
+    "ESSBASICWMSFLATX"
    ],
    "isOutlet": "false"
   },
@@ -144,8 +157,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 51,
+     "numberOfStoresExperience": 20,
+     "availableQuantity": 43,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -184,72 +197,58 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTVBSLIM18X roses bredt som et kompakt TV-vægbeslag, der er nemt at montere, ser flot ud og giver god værdi for pengene. Udvalget af medfølgende skruer og den tydelige vejledning gør opsætningen enkel, selv om nogle Samsung-modeller kan kræve længere skruer. Det slanke design holder TV’et tæt på væggen, mens tilknyttede lydopsætninger kan levere varm, kraftfuld og omsluttende lyd.",
+   "summary": "ESSTVBSLIM18X er et slankt og prisvenligt TV-vægbeslag, som er særdeles nemt at montere og leveres med nyttigt monteringsudstyr. Det enkle, pladsbesparende design bliver værdsat, mens lyd og billede kan være fremragende afhængigt af det samlede setup. Nogle Samsung-modeller kan kræve længere M8-skruer, og den meget korte afstand til væggen er ikke ideel for alle.",
    "headlines": {
     "very easy to install": {
-     "sentimentAnalysis": "Tydelig vejledning, flere skruetyper og enkel opsætning gør monteringen særligt nem.",
+     "sentimentAnalysis": "Monteringen beskrives gentagne gange som hurtig, enkel og praktisk, mens tydelig vejledning og flere skruetyper gør den endnu nemmere.",
      "simpleTitle": "Meget nem at montere",
      "bias": "positive",
-     "key": "easy-installation",
-     "groupId": "02c5fcb3-a25c-44d7-9ccd-d1bae93ed5f2"
+     "key": "installation",
+     "groupId": "dafe64db-869c-4b67-a193-0020cc02aaa1"
     },
-    "good value and quality": {
-     "sentimentAnalysis": "Beslaget anses for billigt og tilbyder samtidig tilfredsstillende kvalitet.",
-     "simpleTitle": "God værdi og kvalitet",
+    "good value for the price": {
+     "sentimentAnalysis": "Produktet opfattes både som prisvenligt og af god kvalitet, hvilket giver et positivt samlet indtryk af værdien.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "good-value",
-     "groupId": "394030b7-2bfa-485d-a1be-0631f73af19e"
+     "key": "value",
+     "groupId": "d275d822-aee3-48ab-a897-368c07cd348a"
     },
-    "compact, close-to-wall design": {
-     "sentimentAnalysis": "Det slanke design sparer plads og holder TV’et flot tæt på væggen.",
-     "simpleTitle": "Kompakt design tæt på væggen",
+    "strong sound quality in the full setup": {
+     "sentimentAnalysis": "Det samlede lydsetup roses for en tilfredsstillende lyd i høj kvalitet, især sammen med ekstra udstyr.",
+     "simpleTitle": "God lydkvalitet i det samlede setup",
      "bias": "positive",
-     "key": "close-to-wall",
-     "groupId": "407a02e1-aa02-4a59-9d25-2d5f50ed2093"
-    },
-    "warm, detailed sound": {
-     "sentimentAnalysis": "Det tilknyttede lydudstyr roses for klar, tilfredsstillende og omsluttende lyd.",
-     "simpleTitle": "Varm og detaljeret lyd",
-     "bias": "positive",
-     "key": "good-sound",
-     "groupId": "41cf7b7d-caa3-4a25-aee5-25b22739dd54"
+     "key": "sound",
+     "groupId": "396be3b9-9c73-4044-b8e2-d89394d6d2a9"
     }
    },
    "grouping": {
-    "02c5fcb3-a25c-44d7-9ccd-d1bae93ed5f2": {
+    "dafe64db-869c-4b67-a193-0020cc02aaa1": {
      "title": "Montering",
-     "id": "02c5fcb3-a25c-44d7-9ccd-d1bae93ed5f2",
+     "id": "dafe64db-869c-4b67-a193-0020cc02aaa1",
      "references": [
+      "a6ef18fb-56a1-4834-8c1a-da6ee0567602",
       "bef1720d-74bb-43f1-a01f-154433bd1a8b",
       "b73d8c46-530a-48be-b053-df96f5c0cebc",
       "f537594d-aff6-4004-ae78-367d5ccbef6f",
       "8bc36d83-85cc-4178-b5a8-c8970213dd3a",
-      "6f8f7055-2b2e-4e2e-8b28-2e792dd3df1b",
+      "6f8f7055-2b2e-4e2e-8b28-2e792dd3f1b",
       "6b7ede95-d6f6-4793-8168-04e9f62728ff"
      ]
     },
-    "394030b7-2bfa-485d-a1be-0631f73af19e": {
-     "title": "Værdi for pengene",
-     "id": "394030b7-2bfa-485d-a1be-0631f73af19e",
-     "references": [
-      "02e222dc-f3a7-43d6-9cef-3ba5a68bb010",
-      "020e612a-37c2-451c-a502-f0fddf9f8385"
-     ]
-    },
-    "407a02e1-aa02-4a59-9d25-2d5f50ed2093": {
-     "title": "Slankt design",
-     "id": "407a02e1-aa02-4a59-9d25-2d5f50ed2093",
-     "references": [
-      "da4c126c-8b96-4482-bc39-9cf3091df0d0",
-      "5a70f344-e9fb-4e1e-abe1-1eaabde4c4ad"
-     ]
-    },
-    "41cf7b7d-caa3-4a25-aee5-25b22739dd54": {
+    "396be3b9-9c73-4044-b8e2-d89394d6d2a9": {
      "title": "Lydkvalitet",
-     "id": "41cf7b7d-caa3-4a25-aee5-25b22739dd54",
+     "id": "396be3b9-9c73-4044-b8e2-d89394d6d2a9",
      "references": [
       "5a70f344-e9fb-4e1e-abe1-1eaabde4c4ad",
       "55d59944-7d09-4d3b-97a5-461729fbb201"
+     ]
+    },
+    "d275d822-aee3-48ab-a897-368c07cd348a": {
+     "title": "Værdi for pengene",
+     "id": "d275d822-aee3-48ab-a897-368c07cd348a",
+     "references": [
+      "02e222dc-f3a7-43d6-9cef-3ba5a68bb010",
+      "020e612a-37c2-451c-a502-f0fddf9f8385"
      ]
     }
    },

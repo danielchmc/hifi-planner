@@ -13,6 +13,15 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e36f0f6a-e533-43ab-bba1-6439019319eb",
+   "5a68d680-004f-4548-948c-a5a5801a2dcc",
+   "95681af2-72f2-45f9-b1df-82a534624142"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 269967,
   "skuCode": "ESSTTMATRUBCORK",
@@ -124,8 +133,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 428,
+     "numberOfStoresExperience": 20,
+     "availableQuantity": 407,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -174,45 +183,46 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTMATRUBCORK er en meget effektiv slipmat, der fungerer godt med kompatible pladespillere og giver en tydelig opgradering i forhold til en almindelig filtmåtte. Den gode dæmpning reducerer uønskede vibrationer, mens afspilningen kan få en tungere, varmere og mere omsluttende karakter. Kontrollen af statisk elektricitet er nyttig, men ikke helt konsekvent, og der rapporteres lejlighedsvis om statisk elektricitet ved den første afspilning.",
+   "summary": "Denne slipmat er en værdifuld opgradering til pladespillere og giver effektiv dæmpning samt en varmere, fyldigere og mere medrivende lyd. Statisk støj reduceres under brug, selv om den antistatiske effekt ikke altid er fuldstændig, og den første afspilning nogle gange kan gøre vinylen mere statisk. Samlet set fungerer måtten pålideligt og giver vinylafspilningen en slagkraftig og raffineret karakter.",
    "headlines": {
-    "effective vibration damping": {
-     "sentimentAnalysis": "Slipmatten roses for effektiv dæmpning og reduktion af uønskede vibrationer.",
-     "simpleTitle": "Effektiv vibrationsdæmpning",
+    "effective damping": {
+     "sentimentAnalysis": "Slipmatten roses for effektiv dæmpning af vibrationer og resonans.",
+     "simpleTitle": "Effektiv dæmpning",
      "bias": "positive",
-     "key": "damping",
-     "groupId": "199132aa-7e8d-44ef-805b-99931cc55a0e"
+     "key": "damping-sound",
+     "groupId": "a763b486-77fe-4fcb-8b0b-85a4cc99fe00"
     },
     "reduced static noise": {
-     "sentimentAnalysis": "Statisk støj reduceres, selv om den antistatiske effekt ikke anses for fuldstændig.",
+     "sentimentAnalysis": "Måtten forbindes med mindre statisk støj under vinylafspilning, selv om effekten kan afhænge af grundig rengøring af pladen.",
      "simpleTitle": "Mindre statisk støj",
      "bias": "positive",
-     "key": "static-control",
-     "groupId": "dbe7fe1f-8b1b-4962-beb5-7d8c538fa8d5"
+     "key": "anti-static",
+     "groupId": "3faa8202-eee1-471f-9b70-38da48fbe7e0"
     },
-    "static buildup can still occur": {
-     "sentimentAnalysis": "Den antistatiske ydeevne er begrænset, og statisk elektricitet kan stadig opstå, især ved den første afspilning.",
-     "simpleTitle": "Statisk elektricitet kan stadig opstå",
+    "antistatic performance is inconsistent": {
+     "sentimentAnalysis": "Den antistatiske effekt er begrænset: En anmeldelse bemærker, at måtten ikke er helt antistatisk, mens en anden rapporterer mere statisk elektricitet ved første afspilning.",
+     "simpleTitle": "Den antistatiske effekt er ujævn",
      "bias": "negative",
-     "key": "static-control",
-     "groupId": "dbe7fe1f-8b1b-4962-beb5-7d8c538fa8d5"
+     "key": "anti-static",
+     "groupId": "3faa8202-eee1-471f-9b70-38da48fbe7e0"
     }
    },
    "grouping": {
-    "dbe7fe1f-8b1b-4962-beb5-7d8c538fa8d5": {
-     "title": "Kontrol af statisk elektricitet",
-     "id": "dbe7fe1f-8b1b-4962-beb5-7d8c538fa8d5",
+    "3faa8202-eee1-471f-9b70-38da48fbe7e0": {
+     "title": "Antistatisk effekt",
+     "id": "3faa8202-eee1-471f-9b70-38da48fbe7e0",
      "references": [
       "0eeec714-cdbf-49ea-9344-762695673a6e",
       "400e7e21-7537-4861-ac5a-96bd081a5012",
       "e1a1d16c-5efd-4deb-8412-b527a8286c53"
      ]
     },
-    "199132aa-7e8d-44ef-805b-99931cc55a0e": {
-     "title": "Dæmpning",
-     "id": "199132aa-7e8d-44ef-805b-99931cc55a0e",
+    "a763b486-77fe-4fcb-8b0b-85a4cc99fe00": {
+     "title": "Dæmpning og lyd",
+     "id": "a763b486-77fe-4fcb-8b0b-85a4cc99fe00",
      "references": [
       "c8b7f004-8281-4817-8b31-d5e30237526e",
+      "0eeec714-cdbf-49ea-9344-762695673a6e",
       "e1a1d16c-5efd-4deb-8412-b527a8286c53"
      ]
     }

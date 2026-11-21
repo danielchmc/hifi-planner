@@ -8,6 +8,20 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "54c118f3-74ae-416a-bd2a-2b54fb3cde9f",
+   "6895fef0-5518-4818-8261-54fd190f654d",
+   "ac846bd0-892b-40b5-a728-95cd6a3088c5",
+   "15d3f7c4-1b66-4714-a985-a00c9faa005e",
+   "212a9e87-48c4-4e9d-8dff-24d28a8c4a4a",
+   "8fbacef7-99b0-4e57-a6e3-05625db04f03"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 26,
   "skuCode": "DP29FX",
@@ -157,7 +171,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 89,
+     "availableQuantity": 88,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -227,41 +241,70 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DP29FX roses bredt som en prisvenlig og brugervenlig pladespiller med ren, behagelig lyd og tilstrækkelige funktioner til daglig vinylafspilning. Enkelte oplever konstruktionen som lidt spinkel, og forventningerne bør ligge under high-end-niveau, men samlet set vurderes den som fremragende til prisen.",
+   "summary": "DP29FX er en meget prisvenlig og brugervenlig pladespiller med ren, varm og behagelig lyd til daglig vinyllytning. Den enkle betjening, de fornuftige funktioner og den stærke værdi gør afspilleren til et overbevisende valg til almindelige hjemmeanlæg, mens den lette konstruktion og visse begrænsninger i pickup-styringen forhindrer perfektion. Samlet leverer DP29FX en fyldig, medrivende musikoplevelse og pålidelig ydelse til en attraktiv pris.",
    "headlines": {
-    "excellent value for the price": {
-     "sentimentAnalysis": "Pladespilleren betragtes gentagne gange som et fornuftigt og prisvenligt køb med god ydelse uden high-end-ambitioner.",
+    "excellent value for money": {
+     "sentimentAnalysis": "Mange anmeldelser betragter pladespilleren som et fornuftigt og prisvenligt køb med ydeevne, der matcher eller overgår forventningerne til prisen.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "price-value",
-     "groupId": "c58c7380-8be0-452d-b602-23a966bd7bf4"
+     "key": "value",
+     "groupId": "f10a9473-fe77-42a3-8eff-c05cc9b2d993"
+    },
+    "simple and easy to operate": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange den enkle betjening, nemme installation og fraværet af kompliceret kalibrering.",
+     "simpleTitle": "Enkel og nem at betjene",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "ebd887e4-4aec-4a02-99ac-5eacc79f6a5c"
     },
     "clean, enjoyable sound": {
-     "sentimentAnalysis": "Anmelderne beskriver lyden som ren, meget god og velegnet til almindelig lytning derhjemme, inklusive rock, pop og ældre vinyl.",
+     "sentimentAnalysis": "Flere anmeldelser roser den klare lyd af god kvalitet, også på almindelige hjemmeanlæg og monitorer.",
      "simpleTitle": "Ren og behagelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "24b70e1f-24ce-4084-bbef-b9a94dc593bc"
+     "key": "sound",
+     "groupId": "9c61427b-2748-4d3a-b838-f367005893a6"
     },
-    "simple and convenient to use": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver enkel betjening, nem installation og fraværet af besværlig kalibrering.",
-     "simpleTitle": "Enkel og bekvem at bruge",
-     "bias": "positive",
-     "key": "ease-of-use",
-     "groupId": "9a34cecb-df05-43a3-871f-9fad37384b71"
-    },
-    "somewhat light construction": {
-     "sentimentAnalysis": "To anmeldelser kritiserer de mekaniske betjeningselementer eller den samlede konstruktion som mindre solid end forventet, selv om funktionaliteten er acceptabel.",
-     "simpleTitle": "Lidt spinkel konstruktion",
+    "poor results for some listeners": {
+     "sentimentAnalysis": "To anmeldelser er meget kritiske og beskriver resultatet som forfærdeligt eller knap nok funktionelt.",
+     "simpleTitle": "Svagt resultat for nogle lyttere",
      "bias": "negative",
-     "key": "build-quality",
-     "groupId": "e558a51a-2674-473a-a86b-348d8a985996"
+     "key": "sound",
+     "groupId": "9c61427b-2748-4d3a-b838-f367005893a6"
+    },
+    "lightweight construction": {
+     "sentimentAnalysis": "To anmeldelser kritiserer de mekaniske knapper eller konstruktionen som helhed for at være spinkel.",
+     "simpleTitle": "Spinkel konstruktion",
+     "bias": "negative",
+     "key": "build",
+     "groupId": "7dde64dc-4bf8-4351-b274-efc9a0680469"
+    },
+    "limited pickup positioning": {
+     "sentimentAnalysis": "To anmeldelser peger på en begrænsning ved manuel placering eller løft af pickuppen.",
+     "simpleTitle": "Begrænset pickup-placering",
+     "bias": "negative",
+     "key": "usability",
+     "groupId": "ebd887e4-4aec-4a02-99ac-5eacc79f6a5c"
     }
    },
    "grouping": {
-    "c58c7380-8be0-452d-b602-23a966bd7bf4": {
+    "9c61427b-2748-4d3a-b838-f367005893a6": {
+     "title": "Lydkvalitet",
+     "id": "9c61427b-2748-4d3a-b838-f367005893a6",
+     "references": [
+      "d81a8c9b-48f0-4e46-84f6-36073609ae09",
+      "1ab28e91-84cb-43d5-aff3-ec767cc40d28",
+      "581b9301-3765-4415-ac57-ffe75246c188",
+      "407a947a-cd77-477c-80cf-a205adeb8c0a",
+      "caee8b85-b9c0-41b5-a6d0-2d532d2589cd",
+      "f9fb9287-10cc-4904-afe9-da9243ec044e",
+      "79c719da-af06-4918-b69a-47e74a672f23",
+      "fe89f577-cfa8-493b-82d5-2409fb598f6b",
+      "f5c22abf-5a7a-4497-9683-9b550303122f"
+     ]
+    },
+    "f10a9473-fe77-42a3-8eff-c05cc9b2d993": {
      "title": "Pris og værdi",
-     "id": "c58c7380-8be0-452d-b602-23a966bd7bf4",
+     "id": "f10a9473-fe77-42a3-8eff-c05cc9b2d993",
      "references": [
       "14652331-f45e-4e3f-839a-8eb866a8867a",
       "21b32535-595f-4085-ba87-b28d8b56ae4c",
@@ -274,22 +317,11 @@
       "1512f0b5-3467-4a34-90aa-56613760e19c"
      ]
     },
-    "24b70e1f-24ce-4084-bbef-b9a94dc593bc": {
-     "title": "Lydkvalitet",
-     "id": "24b70e1f-24ce-4084-bbef-b9a94dc593bc",
-     "references": [
-      "d81a8c9b-48f0-4e46-84f6-36073609ae09",
-      "1ab28e91-84cb-43d5-aff3-ec767cc40d28",
-      "581b9301-3765-4415-ac57-ffe75246c188",
-      "caee8b85-b9c0-41b5-a6d0-2d532d2589cd",
-      "f9fb9287-10cc-4904-afe9-da9243ec044e",
-      "79c719da-af06-4918-b69a-47e74a672f23"
-     ]
-    },
-    "9a34cecb-df05-43a3-871f-9fad37384b71": {
+    "ebd887e4-4aec-4a02-99ac-5eacc79f6a5c": {
      "title": "Brugervenlighed",
-     "id": "9a34cecb-df05-43a3-871f-9fad37384b71",
+     "id": "ebd887e4-4aec-4a02-99ac-5eacc79f6a5c",
      "references": [
+      "0a0630cd-0cc0-412a-a377-578ee2a4a45c",
       "caee8b85-b9c0-41b5-a6d0-2d532d2589cd",
       "28d53f99-33bb-42a4-9de9-b3cedac8965b",
       "f9fb9287-10cc-4904-afe9-da9243ec044e",
@@ -298,12 +330,14 @@
       "0caed874-e081-4b66-9224-47179c1cd71a"
      ]
     },
-    "e558a51a-2674-473a-a86b-348d8a985996": {
+    "7dde64dc-4bf8-4351-b274-efc9a0680469": {
      "title": "Byggekvalitet",
-     "id": "e558a51a-2674-473a-a86b-348d8a985996",
+     "id": "7dde64dc-4bf8-4351-b274-efc9a0680469",
      "references": [
       "e765bb32-1571-487b-b005-b8ac7031c7f3",
-      "e00014a6-291b-4cd4-ac27-2707bfa1bb78"
+      "e00014a6-291b-4cd4-ac27-2707bfa1bb78",
+      "0c7b29af-72d3-4512-b22a-adf397ac9482",
+      "623817df-05b2-430e-88c8-e9a86cbc187a"
      ]
     }
    },

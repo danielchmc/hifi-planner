@@ -13,6 +13,15 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7cbdf8fc-5ac2-4e0a-a83d-20944db40d66",
+   "c8fa5cff-16a5-4fdd-8406-b4971d3aa403",
+   "9555bd13-f68b-42f5-9949-d390c0489a9c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236796,
   "skuCode": "ESSTTMATLEATHERX",
@@ -114,7 +123,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 639,
+     "availableQuantity": 635,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -163,34 +172,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTMATLEATHERX roses bredt for at reducere statisk elektricitet, ligge fladt og give pladespilleren et eksklusivt læderlook. Måtten føles mere eksklusiv end alternativer i filt, og flere anmeldelser beskriver en renere, mere stabil gengivelse med behagelig dæmpning. Effekten mod statisk elektricitet er dog ikke helt ensartet, og én anmeldelse kritiserer et skævt snit, men helhedsindtrykket er varmt, elegant og meget tilfredsstillende.",
+   "summary": "ESSTTMATLEATHERX er en stilfuld slipmat i læder med et eksklusivt udseende, som ligger fladt, reducerer statisk elektricitet og undgår fnuller og fastklæbning som ved filtmåtter. Måtten roses bredt for sit pæne udseende, sin stabile håndtering og sin varme, elegante fremtoning, og enkelte lyttere oplever også forbedret eller behageligt dæmpet lyd. Resultaterne er dog ikke helt ensartede: Én anmeldelse oplevede stadig statisk elektricitet, en anden hørte ingen lydforbedring, og en tredje rapporterede en mulig centrerings- eller skærefejl.",
    "headlines": {
-    "strongly reduces static and sticking": {
-     "sentimentAnalysis": "De fleste anmeldelser fortæller, at lædermåtten fjerner eller reducerer statisk elektricitet markant og dermed forhindrer fastklæbning samt støv- og fnugproblemer.",
-     "simpleTitle": "Reducerer effektiv statisk elektricitet og fastklæbning",
+    "strongly reduces static electricity": {
+     "sentimentAnalysis": "De fleste anmeldelser beskriver en tydelig reduktion eller eliminering af statisk elektricitet, selv om én anmeldelse rapporterer fortsatte problemer.",
+     "simpleTitle": "Reducerer statisk elektricitet markant",
      "bias": "positive",
      "key": "static",
-     "groupId": "cab6d01f-304a-452a-a3d0-98096afde13f"
+     "groupId": "8ff4d8c6-840d-42db-a90b-49d3863abf3b"
     },
-    "premium, flat leather design": {
-     "sentimentAnalysis": "Anmeldelserne roser det eksklusive udseende, den flotte præsentation og evnen til at ligge fladt på pladetallerkenen.",
-     "simpleTitle": "Eksklusivt, fladt læderdesign",
+    "clean, premium-looking design": {
+     "sentimentAnalysis": "Lædermåtten roses gentagne gange for sit attraktive, pæne og eksklusive udseende.",
+     "simpleTitle": "Flot design med eksklusivt udtryk",
      "bias": "positive",
-     "key": "design",
-     "groupId": "e5bc9e5b-c60d-4d21-a824-65753b7f5b0d"
+     "key": "appearance",
+     "groupId": "d813ae47-228b-4786-8afa-af1500916302"
     },
-    "sound benefits are mixed": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver god lyd og dæmpning, mens en anden ikke hører nogen forbedring i forhold til den originale gummimåtte; de hørbare fordele er derfor ikke ensartede.",
-     "simpleTitle": "Lydeffekterne er blandede",
-     "bias": "meh",
+    "avoids lint and sticking to records": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den praktiske fordel ved, at måtten hverken efterlader fnuller eller hænger fast i pladen.",
+     "simpleTitle": "Undgår fnuller og fastklæbning til plader",
+     "bias": "positive",
+     "key": "static",
+     "groupId": "8ff4d8c6-840d-42db-a90b-49d3863abf3b"
+    },
+    "pleasantly improved or damped sound": {
+     "sentimentAnalysis": "Nogle anmeldelser forbinder måtten med god lyd og behagelig dæmpning, mens en anden ikke hører nogen forbedring.",
+     "simpleTitle": "Behageligt forbedret eller dæmpet lyd",
+     "bias": "positive",
      "key": "sound",
-     "groupId": "de7924f9-8d9f-4dc4-b25b-ff29f77414d3"
+     "groupId": "7260fde3-ce98-4af9-9fbb-7d0dfb30da41"
     }
    },
    "grouping": {
-    "cab6d01f-304a-452a-a3d0-98096afde13f": {
+    "8ff4d8c6-840d-42db-a90b-49d3863abf3b": {
      "title": "Statisk elektricitet",
-     "id": "cab6d01f-304a-452a-a3d0-98096afde13f",
+     "id": "8ff4d8c6-840d-42db-a90b-49d3863abf3b",
      "references": [
       "6687a7ac-5211-4d3e-8a7c-8f2db9ed07c1",
       "f8ee4dd5-a163-4cbd-9c96-d7fca64d8732",
@@ -205,22 +221,20 @@
       "174bc2aa-4895-499a-9c41-6466d730a1eb"
      ]
     },
-    "e5bc9e5b-c60d-4d21-a824-65753b7f5b0d": {
-     "title": "Design og udseende",
-     "id": "e5bc9e5b-c60d-4d21-a824-65753b7f5b0d",
+    "d813ae47-228b-4786-8afa-af1500916302": {
+     "title": "Udseende og design",
+     "id": "d813ae47-228b-4786-8afa-af1500916302",
      "references": [
       "f8ee4dd5-a163-4cbd-9c96-d7fca64d8732",
-      "12c6d802-5663-40b1-a8ff-02f8a59a0a24",
-      "209b9024-35a3-47dc-beac-327f2d0ed24f",
       "6ce71106-d8ab-4832-984d-1b72a2cc4373",
-      "50cd31ec-7871-4a5b-b89b-eb4ab6489309",
-      "98abcd2a-5586-40e9-8af2-3a88c3345fe9",
-      "66725993-f750-4b80-bdca-877680beef31"
+      "209b9024-35a3-47dc-beac-327f2d0ed24f",
+      "66725993-f750-4b80-bdca-877680beef31",
+      "50cd31ec-7871-4a5b-b89b-eb4ab6489309"
      ]
     },
-    "de7924f9-8d9f-4dc4-b25b-ff29f77414d3": {
-     "title": "Lyd og dæmpning",
-     "id": "de7924f9-8d9f-4dc4-b25b-ff29f77414d3",
+    "7260fde3-ce98-4af9-9fbb-7d0dfb30da41": {
+     "title": "Lydkvalitet",
+     "id": "7260fde3-ce98-4af9-9fbb-7d0dfb30da41",
      "references": [
       "1b926783-22cf-4b7c-8535-e936af2007e3",
       "6ce71106-d8ab-4832-984d-1b72a2cc4373",

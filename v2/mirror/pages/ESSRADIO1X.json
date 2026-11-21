@@ -13,6 +13,22 @@
    "url": "/stereo/dab-radio-fm-internet/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Hovedtelefon",
+   "Lydindgang": "Minijack/AUX"
+  },
+  "gallery": [
+   "167a0895-1321-4791-bb0b-00b16f8fcff1",
+   "75feca94-c32a-4950-b25d-d2674111e22d",
+   "338d694e-32bb-484e-8ce4-8858551e6ab0",
+   "939061f3-7623-4d18-bf8c-add908238b53",
+   "ffd89616-b404-4b92-afa7-a5fdad1f9158",
+   "81b2f413-0a4c-4e1d-a199-3e483e331807",
+   "ae7994ab-bf8d-4164-a0ed-d1cdc1e972ee"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 267802,
   "skuCode": "ESSRADIO1X",
@@ -159,7 +175,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 1095,
+     "availableQuantity": 1069,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -278,8 +294,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 853,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 841,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -398,8 +414,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 309,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 297,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -455,48 +471,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSRADIO1X er en kompakt og attraktiv hverdagsradio med varm, klar og fyldig lyd, enkel betjening og god værdi for pengene. Det lille design passer til køkkener, soveværelser og andre mindre rum, mens den hurtige opsætning og stabile modtagelse ofte fremhæves. De vigtigste forbehold gælder DAB-modtagelsen nogle steder, den først forvirrende automatiske slukning efter to timer samt enkelte begrænsninger ved display og funktioner.",
+   "summary": "ESSRADIO1X bliver generelt værdsat som en kompakt og attraktiv radio til hverdagen med klar, varm og fyldig lyd. Den enkle betjening, hurtige opsætning og gode værdi gør radioen særligt velegnet til køkkener, soveværelser og mindre rum. Modtagelsen er ofte fremragende, men DAB-dækning, den automatiske slukning efter to timer og et lidt billigt eller svært læseligt display er ulemper for nogle.",
    "headlines": {
-    "warm, clear and powerful sound": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som rigtig god, klar, kraftig og imponerende for en lille radio.",
-     "simpleTitle": "Varm, klar og fyldig lyd",
+    "clear, powerful sound from a small radio": {
+     "sentimentAnalysis": "Radioen leverer konsekvent klar, fyldig og behagelig lyd, som er imponerende for den kompakte størrelse.",
+     "simpleTitle": "Klar og kraftig lyd fra en lille radio",
      "bias": "positive",
      "key": "sound",
-     "groupId": "25ed2a32-f234-4b58-8e24-b625df8e131d"
+     "groupId": "0ee4e233-9d3e-4dd7-b2f3-19228540767d"
     },
     "simple controls and quick setup": {
-     "sentimentAnalysis": "Betjeningen opfattes som let at forstå med hurtig automatisk indstilling og enkel daglig brug.",
+     "sentimentAnalysis": "Overskuelige knapper og hurtig automatisk opsætning gør den daglige lytning ubesværet.",
      "simpleTitle": "Enkel betjening og hurtig opsætning",
      "bias": "positive",
      "key": "usability",
-     "groupId": "c7caeb2d-13d1-41d3-b141-c7fefd271fcd"
+     "groupId": "92fe84f2-b701-4294-9aff-223c9dc54e32"
     },
-    "compact, discreet and attractive design": {
-     "sentimentAnalysis": "Den kompakte form, diskrete fremtoning og tidløse stil passer godt til køkkener, soveværelser og mindre rum.",
-     "simpleTitle": "Kompakt, diskret og attraktivt design",
+    "compact, attractive design suits small rooms": {
+     "sentimentAnalysis": "Det diskrete, tidløse format passer godt i køkkener, soveværelser og andre mindre rum.",
+     "simpleTitle": "Kompakt og flot design passer til små rum",
      "bias": "positive",
      "key": "design",
-     "groupId": "bed85fad-5126-45c3-8856-63a37ae638ff"
+     "groupId": "bb457408-31f4-44ed-82e3-6cfefebec28e"
     },
-    "dab reception can fail in some locations": {
-     "sentimentAnalysis": "DAB-modtagelsen beskrives som utilgængelig i nogle områder, selv om modtagelsen roses andre steder.",
-     "simpleTitle": "DAB-modtagelsen kan svigte nogle steder",
-     "bias": "negative",
+    "reception can be excellent, but DAB availability varies": {
+     "sentimentAnalysis": "Modtagelsen roses som hurtig og stabil nogle steder, mens DAB ikke er tilgængelig eller skuffer andre steder.",
+     "simpleTitle": "Modtagelsen kan være fremragende, men DAB-dækningen varierer",
+     "bias": "meh",
      "key": "reception",
-     "groupId": "d4738e64-bb4a-4a27-9b75-6d9c72de1dcd"
+     "groupId": "0cfd219e-817f-4911-9384-9c5db151c91c"
     },
     "two-hour shutoff causes confusion": {
-     "sentimentAnalysis": "Den forudindstillede sluk efter to timer opleves som en uforklarlig afbrydelse og kræver en ændring fra brugeren.",
+     "sentimentAnalysis": "Den forudindstillede slukning efter to timer afbryder lytningen og er først uklar for brugerne.",
      "simpleTitle": "Slukning efter to timer skaber forvirring",
      "bias": "negative",
      "key": "autooff",
-     "groupId": "cc06bc5f-6fee-45fc-9e3c-066b68ce7fc9"
+     "groupId": "78f94b0d-4e8f-49e2-a565-b457cf18deb4"
+    },
+    "display text is hard to read and looks dated": {
+     "sentimentAnalysis": "Displayet kritiseres for dårlig læsbarhed, lav opløsning og et billigere udtryk end ældre konkurrerende modeller.",
+     "simpleTitle": "Displayteksten er svær at læse og virker gammeldags",
+     "bias": "negative",
+     "key": "display",
+     "groupId": "49132e38-8409-4a88-a2b1-d75a8124f97d"
     }
    },
    "grouping": {
-    "25ed2a32-f234-4b58-8e24-b625df8e131d": {
+    "0ee4e233-9d3e-4dd7-b2f3-19228540767d": {
      "title": "Lydkvalitet",
-     "id": "25ed2a32-f234-4b58-8e24-b625df8e131d",
+     "id": "0ee4e233-9d3e-4dd7-b2f3-19228540767d",
      "references": [
       "c7c7ec74-244c-4d94-a3dd-58f713b9b6fc",
       "8d0de4a8-b659-4d58-a5f3-67b6b6d0bb7c",
@@ -519,9 +542,9 @@
       "6785955a-6b94-4a3a-bbe9-efcb4c5ce2fb"
      ]
     },
-    "c7caeb2d-13d1-41d3-b141-c7fefd271fcd": {
+    "92fe84f2-b701-4294-9aff-223c9dc54e32": {
      "title": "Brugervenlighed",
-     "id": "c7caeb2d-13d1-41d3-b141-c7fefd271fcd",
+     "id": "92fe84f2-b701-4294-9aff-223c9dc54e32",
      "references": [
       "1ffd486b-40f3-4530-8de5-d1391a8621b7",
       "669693fd-1578-4102-9bf3-001b3944f20e",
@@ -529,39 +552,51 @@
       "28c17ef3-4b48-44be-9370-1d2a6e9ab8ac",
       "832adc55-4b7e-4bd3-935a-d91d998ff2f6",
       "8ab3b296-98d1-4bf9-a3fd-2718393d7df1",
-      "e281aa64-e38b-4ea9-9870-b77d583fdff5"
+      "e281aa64-e38b-4ea9-9870-b77d583fdff5",
+      "3f0b1a09-d94d-42bb-a1db-54c6a620d4f8"
      ]
     },
-    "bed85fad-5126-45c3-8856-63a37ae638ff": {
-     "title": "Design og størrelse",
-     "id": "bed85fad-5126-45c3-8856-63a37ae638ff",
+    "bb457408-31f4-44ed-82e3-6cfefebec28e": {
+     "title": "Størrelse og design",
+     "id": "bb457408-31f4-44ed-82e3-6cfefebec28e",
      "references": [
       "edce01e7-120d-4945-8d34-ccc1ea297d72",
+      "97920b2a-324d-4654-bed7-8c4f38aeb2de",
       "d6b6f8b2-ff57-48f3-8381-1283cb3972a9",
       "ea8993fb-c984-43bb-b320-a0c90e109eb2",
       "7a1109ae-feb8-49b7-8661-e92a1d87122c",
       "8d22249a-01a8-425a-b9c0-fb58b6c4d754",
+      "a4d838d1-97c1-410e-bdfc-f69bba87e8e6",
       "6785955a-6b94-4a3a-bbe9-efcb4c5ce2fb"
      ]
     },
-    "d4738e64-bb4a-4a27-9b75-6d9c72de1dcd": {
-     "title": "Radiomodtagelse",
-     "id": "d4738e64-bb4a-4a27-9b75-6d9c72de1dcd",
+    "0cfd219e-817f-4911-9384-9c5db151c91c": {
+     "title": "Modtagelse og DAB",
+     "id": "0cfd219e-817f-4911-9384-9c5db151c91c",
      "references": [
       "06f0ed30-3dfd-4639-9d22-eaa7f9ea541e",
       "0791ab39-6c0d-47d7-af01-e7143ea87a2f",
       "d6b6f8b2-ff57-48f3-8381-1283cb3972a9",
+      "49619982-b361-44d0-b3b4-2aa1956296c4",
       "cf810498-e6f8-4710-8846-2e95b44fba74",
-      "49619982-b361-44d0-b3b4-2aa1956296c4"
+      "3f0b1a09-d94d-42bb-a1db-54c6a620d4f8"
      ]
     },
-    "cc06bc5f-6fee-45fc-9e3c-066b68ce7fc9": {
+    "78f94b0d-4e8f-49e2-a565-b457cf18deb4": {
      "title": "Automatisk slukning",
-     "id": "cc06bc5f-6fee-45fc-9e3c-066b68ce7fc9",
+     "id": "78f94b0d-4e8f-49e2-a565-b457cf18deb4",
      "references": [
       "669693fd-1578-4102-9bf3-001b3944f20e",
       "ace73591-c624-4a61-aea1-4222388bbc36",
       "832adc55-4b7e-4bd3-935a-d91d998ff2f6"
+     ]
+    },
+    "49132e38-8409-4a88-a2b1-d75a8124f97d": {
+     "title": "Display",
+     "id": "49132e38-8409-4a88-a2b1-d75a8124f97d",
+     "references": [
+      "49619982-b361-44d0-b3b4-2aa1956296c4",
+      "6785955a-6b94-4a3a-bbe9-efcb4c5ce2fb"
      ]
     }
    },

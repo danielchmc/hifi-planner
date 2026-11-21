@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ce580266-c252-4562-833c-829fbf7efef6",
+   "5a615e43-dabb-47a6-b96d-b1916b00a196",
+   "29ddbdd2-a34c-482a-b6d6-cbeb9919685d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214265,
   "skuCode": "ESSPR1SCX",
@@ -157,7 +166,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 26669,
+     "availableQuantity": 26403,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -202,55 +211,55 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSPR1SCX betragtes generelt som et kvalitetskabel til højttalere, der leverer ren, detaljeret og ofte mærkbart forbedret lyd. Kablet roses også for solid konstruktion, fleksibilitet og nem montering, blandt andet diskret rundt om møbler og gennem kabelkanaler. Prisforholdet vurderes overvejende positivt, selv om nogle ikke hører forskel fra billigere kabler og synes, at prisen er høj.",
+   "summary": "ESSPR1SCX roses bredt som et solidt kabel af høj kvalitet, der leverer en ren, detaljeret og engagerende lyd. Den fleksible konstruktion gør kabelføring og montering nem, mens det diskrete udseende passer godt ind i hjemmet. De vigtigste forbehold er den relativt høje pris, at polariteten kan være svær at se, og at forskellen fra billigere kabler er begrænset i nogle anlæg.",
    "headlines": {
-    "clean, detailed and improved sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver ren, detaljeret og mere medrivende lyd, og nogle oplever en tydelig forbedring i forhold til billigere eller almindelige kabler.",
-     "simpleTitle": "Ren, detaljeret og forbedret lyd",
+    "clean, detailed and engaging sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en ren, klar og detaljeret gengivelse med større musikglæde og tydeligere detaljer i flere anlæg.",
+     "simpleTitle": "Ren, detaljeret og engagerende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "15d38e87-b0e8-467e-9223-e80f32ce2b80"
-    },
-    "high-quality, solid construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående kablet som holdbart, velbygget, solidt og passende eksklusivt til kvalitetsanlæg.",
-     "simpleTitle": "Høj kvalitet og solid konstruktion",
-     "bias": "positive",
-     "key": "build",
-     "groupId": "feea3b6e-2856-4552-8bc1-100adbb2a306"
-    },
-    "good value for the performance": {
-     "sentimentAnalysis": "Mange anmeldelser vurderer kablet som rimeligt prissat eller som god værdi, især i forhold til den oplevede lyd- og byggekvalitet.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "454ad179-8e6a-4eb8-83b1-113634cf2c74"
+     "groupId": "4a01ab75-f39c-414e-8985-9750dddb00a2"
     },
     "flexible and easy to route": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som smidigt, nemt at arbejde med, enkelt at montere og let at skjule rundt om møbler eller i kabelkanaler.",
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som smidigt, nemt at afisolere, enkelt at montere og let at skjule bag møbler eller i kabelkanaler.",
      "simpleTitle": "Fleksibelt og nemt at føre",
      "bias": "positive",
      "key": "installation",
-     "groupId": "618c8686-c295-48cd-ac5a-4ce84f06bd8e"
+     "groupId": "6e238ddf-f805-40bf-95c0-ca65ecdafc1d"
     },
-    "some hear little or no difference": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne kan ikke skelne kablet fra billigere eller almindelige alternativer eller vil ikke konkludere uden en direkte sammenligning.",
-     "simpleTitle": "Nogle hører lille eller ingen forskel",
+    "good value despite a premium price": {
+     "sentimentAnalysis": "Mange anmeldelser vurderer kvalitet og lyd som pengene værd, selv om kablet ikke er blandt de billigste muligheder.",
+     "simpleTitle": "God værdi trods en højere pris",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "badea323-bb99-4c86-b8f3-a7a43b0edca4"
+    },
+    "little audible difference from cheaper cables": {
+     "sentimentAnalysis": "Nogle lyttere kan især uden direkte sammenligning ikke høre forskel på kablet og billigere eller almindelige alternativer.",
+     "simpleTitle": "Begrænset hørbar forskel fra billigere kabler",
      "bias": "negative",
      "key": "sound",
-     "groupId": "15d38e87-b0e8-467e-9223-e80f32ce2b80"
+     "groupId": "4a01ab75-f39c-414e-8985-9750dddb00a2"
     },
-    "price feels high for some": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kablet som dyrt, især når den hørbare forbedring i forhold til billigere alternativer er usikker.",
-     "simpleTitle": "Nogle synes, prisen er høj",
+    "polarity and terminal fit can be awkward": {
+     "sentimentAnalysis": "Flere kommentarer nævner vanskelig polaritetsidentifikation, behov for at fjerne bananstik eller en stram pasform i visse apparattilslutninger.",
+     "simpleTitle": "Polaritet og tilslutning kan være besværlig",
+     "bias": "negative",
+     "key": "installation",
+     "groupId": "6e238ddf-f805-40bf-95c0-ca65ecdafc1d"
+    },
+    "some consider the cable too expensive": {
+     "sentimentAnalysis": "Prisen er den tydeligste tilbagevendende kritik, og nogle stiller spørgsmål ved merprisen, når lydforbedringer er svære at påvise.",
+     "simpleTitle": "Nogle synes, kablet er for dyrt",
      "bias": "negative",
      "key": "value",
-     "groupId": "454ad179-8e6a-4eb8-83b1-113634cf2c74"
+     "groupId": "badea323-bb99-4c86-b8f3-a7a43b0edca4"
     }
    },
    "grouping": {
-    "15d38e87-b0e8-467e-9223-e80f32ce2b80": {
+    "4a01ab75-f39c-414e-8985-9750dddb00a2": {
      "title": "Lydkvalitet",
-     "id": "15d38e87-b0e8-467e-9223-e80f32ce2b80",
+     "id": "4a01ab75-f39c-414e-8985-9750dddb00a2",
      "references": [
       "4b2b04ee-46a6-4d4d-ae7e-490dbead4d76",
       "4c84f1c9-a427-4122-aae0-25d2262e650c",
@@ -268,7 +277,6 @@
       "03a54748-81c6-40a8-9ef6-34a406cab37b",
       "6aa52aa3-535b-411c-98e5-389e5a039821",
       "24ce5fe2-6fad-447b-8ee8-3ac478c5c48a",
-      "2bfcb4e8-02ab-4732-ac6a-4bd7334d1780",
       "52a20899-571e-45d1-9fda-57d98e8bf9d3",
       "5e682a34-df69-4c82-a978-6881cb75c76a",
       "23a60c4a-2e70-4439-9689-7f8bf37f581d",
@@ -278,42 +286,12 @@
       "3d3fcf9a-8bd8-44d6-99c6-f497005c7eef",
       "87c98fff-54f2-4493-9462-6f91c09e2d8f",
       "c31cce81-b5a9-4e09-a302-1de3b49538e7",
-      "e8d8f89a-3df2-4102-8619-afb45dda7583",
-      "1b6ce997-86cb-4f9c-b932-7b522c78e138"
+      "e8d8f89a-3df2-4102-8619-afb45dda7583"
      ]
     },
-    "feea3b6e-2856-4552-8bc1-100adbb2a306": {
-     "title": "Byggekvalitet",
-     "id": "feea3b6e-2856-4552-8bc1-100adbb2a306",
-     "references": [
-      "ec431eb8-e88d-467a-bd80-19a5fec2b4ec",
-      "4c84f1c9-a427-4122-aae0-25d2262e650c",
-      "eb3eaf14-32d4-450a-880f-deff0a4a1a94",
-      "bcac7ab9-b6ac-4deb-af33-88185a75f288",
-      "7941d2d5-c037-4442-976c-c128a7bc6d0d",
-      "7a00f815-f3a4-4e4c-a15b-4c7e4a0070e7",
-      "a7c2645d-ef15-484f-827e-001fc04b2921",
-      "e9ea07df-e0ad-4ba8-a859-7076ae1f2d47",
-      "7a00f815-f3a4-4e4c-a15b-4c7e4a0070e7",
-      "7a00f815-f3a4-4e4c-a15b-4c7e4a0070e7",
-      "fa61ca69-c9fa-48c9-9ce5-78ed8c6a5294",
-      "2662e532-fd8f-4edd-a6cd-77811fed178f",
-      "f8dce666-dbbb-4066-9947-92d2510f8ef8",
-      "dcd06ef2-3a33-4639-b234-0a09481ad480",
-      "9e574731-eecd-4308-8f74-ec8ff9ef50aa",
-      "6426a466-c934-4fff-954c-0e58d9c3245e",
-      "bd541d9c-21d3-4c23-9b98-4131a8d3682f",
-      "d0347a60-1a5e-4ad1-a072-74c202b7901f",
-      "7a584846-1b85-4102-a7ed-1050c6dff647",
-      "29acf049-054b-428e-9267-4eeaedf50dec",
-      "01e212ac-b5bf-483c-bd1c-506b5b101bf1",
-      "8aa73530-aaa7-4fe0-9288-f015208bad9d",
-      "f15a2f88-26e8-486d-b57a-9cfaf7dd351d"
-     ]
-    },
-    "618c8686-c295-48cd-ac5a-4ce84f06bd8e": {
+    "6e238ddf-f805-40bf-95c0-ca65ecdafc1d": {
      "title": "Montering og håndtering",
-     "id": "618c8686-c295-48cd-ac5a-4ce84f06bd8e",
+     "id": "6e238ddf-f805-40bf-95c0-ca65ecdafc1d",
      "references": [
       "4c84f1c9-a427-4122-aae0-25d2262e650c",
       "eb3eaf14-32d4-450a-880f-deff0a4a1a94",
@@ -323,35 +301,35 @@
       "b732fbf1-cb6e-4528-bfc7-b830e03ca913",
       "f15a2f88-26e8-486d-b57a-9cfaf7dd351d",
       "bad32282-312c-46b8-b907-b7a7c9092934",
-      "a280fdb5-abd0-4411-831b-e5dfb7fce83c",
+      "bd541d9c-21d3-4c23-9b98-4131a8d3682f",
       "29acf049-054b-428e-9267-4eeaedf50dec",
       "84ab13da-cdbd-4f13-b2f3-314f6b54945d",
+      "c31cce81-b5a9-4e09-a302-1de3b49538e7",
       "fcf5bf95-9bff-44ac-9ae6-56ffa5990c66",
-      "afa289cc-2d6a-4533-81d9-7439adba4188",
-      "be748636-5ac3-4982-966b-bc52674400fb",
-      "8aecb5aa-2454-4cda-8fe0-1ab0e7782ad0",
-      "83390649-9af7-4c33-8f9c-c4d110ab48f0"
+      "a280fdb5-abd0-4411-831b-e5dfb7fce83c",
+      "d0757c4a-d445-4b89-ab33-c2490852830e",
+      "8aecb5aa-2454-4cda-8fe0-1ab0e7782ad0"
      ]
     },
-    "454ad179-8e6a-4eb8-83b1-113634cf2c74": {
+    "badea323-bb99-4c86-b8f3-a7a43b0edca4": {
      "title": "Pris og værdi",
-     "id": "454ad179-8e6a-4eb8-83b1-113634cf2c74",
+     "id": "badea323-bb99-4c86-b8f3-a7a43b0edca4",
      "references": [
       "ec431eb8-e88d-467a-bd80-19a5fec2b4ec",
       "e935e9b8-6bff-4d66-9da4-c3c3227f84e1",
       "eb3eaf14-32d4-450a-880f-deff0a4a1a94",
       "1f9abb71-cbaf-4aac-948d-8b962ec0f4f8",
       "76618c37-63f0-4033-8594-679f123233fa",
-      "9c6f3fc8-de31-460c-b0fd-a84be0892764",
       "326571ee-b59a-42be-bb36-de3309f2b214",
-      "9dec44e5-aea0-4ae1-a0b9-5a88fdce93e9",
       "3ef3ff74-f34b-412d-9237-817886c8ce45",
-      "52a20899-571e-45d1-9fda-57d98e8bf9d3",
+      "9dec44e5-aea0-4ae1-a0b9-5a88fdce93e9",
       "7aa31fae-bc1f-4877-a437-aa0e14c2e2b2",
       "23a60c4a-2e70-4439-9689-7f8bf37f581d",
       "313cc7ef-4821-43e9-b0a3-3459e5b8f6df",
       "8aecb5aa-2454-4cda-8fe0-1ab0e7782ad0",
-      "8aa73530-aaa7-4fe0-9288-f015208bad9d"
+      "8aa73530-aaa7-4fe0-9288-f015208bad9d",
+      "be748636-5ac3-4982-966b-bc52674400fb",
+      "d0757c4a-d445-4b89-ab33-c2490852830e"
      ]
     }
    },

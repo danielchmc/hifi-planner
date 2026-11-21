@@ -13,6 +13,19 @@
    "url": "/tilbehor/tv-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b9b9889b-53ae-4fd8-9712-0a59ecfad1ec",
+   "25db35ee-2598-4bf8-8011-4b9829536417",
+   "b646e533-1c7f-4d3e-9be5-4d18a2c46bcd",
+   "8cd5a38f-2eb2-4b52-a757-d9dc796da172",
+   "44267ea2-de7a-4500-9613-bb784689152f",
+   "92387b25-0e9c-457a-bcb6-680a8d721d10",
+   "e5795ad8-cacb-43bc-8c36-22d0827764fe"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 240916,
   "skuCode": "ESSTVBMOTSLIM19X",
@@ -169,7 +182,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
+     "numberOfStoresExperience": 13,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -209,38 +222,21 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En varm og kraftfuld vurdering: Dette TV-vægbeslag føles solidt, sikkert og imponerende nemt at montere. Den tydelige vejledning og enkle håndtering gør monteringen ligetil, mens den robuste konstruktion holder TV'et sikkert på plads. Den fleksible placering giver praktisk værdi, selv om den begrænsede vinkelmulighed og et synligt beslag på mindre TV bør bemærkes.",
+   "summary": "ESSTVBMOTSLIM19X giver en enkel og solid oplevelse med pålidelig støtte på væggen. Den nemme håndtering og robuste konstruktion skaber et sikkert grundlag for varm, fyldig og medrivende TV-lyd. Den begrænsede justering af synsvinklen er den største begrænsning, mens den samlede ydeevne lever op til forventningerne.",
    "headlines": {
-    "easy to install and handle": {
-     "sentimentAnalysis": "Beslaget beskrives som enkelt, smidigt og understøttet af en tydelig vejledning.",
-     "simpleTitle": "Nem at montere og håndtere",
+    "secure and solid wall mounting": {
+     "sentimentAnalysis": "Beslaget roses for at holde TV'et sikkert og føles solidt på væggen.",
+     "simpleTitle": "Sikker og solid vægmontering",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "bc76c0e3-67ef-44a4-878c-1f01bcdfc809"
-    },
-    "solid and secure wall support": {
-     "sentimentAnalysis": "Konstruktionen roses for at være solid, og TV'et hænger sikkert på væggen.",
-     "simpleTitle": "Solid og sikkert væghold",
-     "bias": "positive",
-     "key": "stability",
-     "groupId": "260ba486-99ec-4e4b-983b-2af5deae60ee"
+     "key": "mounting",
+     "groupId": "6a157fc6-18c4-4eea-91c0-732ec92056c2"
     }
    },
    "grouping": {
-    "bc76c0e3-67ef-44a4-878c-1f01bcdfc809": {
-     "title": "Montering og håndtering",
-     "id": "bc76c0e3-67ef-44a4-878c-1f01bcdfc809",
+    "6a157fc6-18c4-4eea-91c0-732ec92056c2": {
+     "title": "Stabilitet ved montering",
+     "id": "6a157fc6-18c4-4eea-91c0-732ec92056c2",
      "references": [
-      "13503628-94d6-4c93-861d-1f747468fe39",
-      "c89fc3b5-021a-4b9e-9cc5-61f869db6512",
-      "b773bf64-dfe7-4746-b6bb-cfae7d6c26ee"
-     ]
-    },
-    "260ba486-99ec-4e4b-983b-2af5deae60ee": {
-     "title": "Stabilitet og støtte",
-     "id": "260ba486-99ec-4e4b-983b-2af5deae60ee",
-     "references": [
-      "13503628-94d6-4c93-861d-1f747468fe39",
       "2f6ded95-fc97-44f6-a3e8-3d923000702e",
       "e8967db9-17d6-4039-b3ba-f4b13906f5ff"
      ]

@@ -13,6 +13,16 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "0,3",
+   "Fra beskrivelsen": "Princip: Moving Coil, low output · Udgangsspænding: 0,3 mV"
+  },
+  "gallery": [
+   "23e3c462-d1e5-47f8-b256-5e808e518326"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 89,
   "skuCode": "DL103X",
@@ -210,47 +220,47 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DL103X leverer en varm, naturlig og meget detaljeret MC-gengivelse med punchy bas, musikalsk fylde og uden generende skarphed. Den solide konstruktion og fremragende værdi for pengene gør pickup'en til et overbevisende valg til mange forskellige musikgenrer. Omhyggelig matching med en solid tonearm og et kompetent RIAA-trin frigiver den mest immersive og raffinerede lyd.",
+   "summary": "DL103X leverer varm, naturlig og meget detaljeret MC-lyd med en slagkraftig bas og en medrivende musikalsk præsentation. Fremragende værdi, solid konstruktion og alsidighed på tværs af musikgenrer gør pickup'en til et oplagt valg i prisklassen. Omhyggelig tilpasning med en tilstrækkeligt robust tonearm og en kvalitets-phono-trin frigiver det fulde potentiale.",
    "headlines": {
-    "excellent value at the price": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pickup'en som usædvanligt prisvenlig, solidt bygget og stærk i ydelse for pengene.",
-     "simpleTitle": "Fremragende værdi til prisen",
+    "exceptional value": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver pickup'en som usædvanligt god værdi for lyd og ydelse.",
+     "simpleTitle": "Fremragende værdi",
      "bias": "positive",
-     "key": "excellent-price-value",
-     "groupId": "cf871e59-d79c-4703-a69b-2978b5c2ce09"
+     "key": "value_exceptional",
+     "groupId": "b97acf51-f087-4ef5-8509-2268fb9477a1"
     },
-    "warm, natural and detailed sound": {
-     "sentimentAnalysis": "Pickup'en roses gentagne gange for en varm, naturlig, detaljeret og musikalsk gengivelse.",
-     "simpleTitle": "Varm, naturlig og detaljeret lyd",
+    "warm, detailed and natural sound": {
+     "sentimentAnalysis": "Anmeldelserne roser en varm, naturlig og meget detaljeret gengivelse uden skarphed.",
+     "simpleTitle": "Varm, detaljeret og naturlig lyd",
      "bias": "positive",
-     "key": "warm-natural-detailed-sound",
-     "groupId": "b849b6bc-6710-497d-a8de-e8640f206e1a"
+     "key": "sound_warm_detailed",
+     "groupId": "d1d7d92f-8df3-4d96-b718-041418db2240"
     },
-    "powerful bass and smooth, non-harsh treble": {
-     "sentimentAnalysis": "Dyb bas og en blød top fremhæves som særligt behagelige styrker.",
-     "simpleTitle": "Kraftig bas og bløde, ikke-skarpe diskanttoner",
+    "powerful, musical bass": {
+     "sentimentAnalysis": "Bassen beskrives som fremragende, fyldig og varmt engagerende på tværs af musik.",
+     "simpleTitle": "Kraftfuld, musikalsk bas",
      "bias": "positive",
-     "key": "powerful-smooth-presentation",
-     "groupId": "b849b6bc-6710-497d-a8de-e8640f206e1a"
+     "key": "sound_bass",
+     "groupId": "d1d7d92f-8df3-4d96-b718-041418db2240"
     }
    },
    "grouping": {
-    "b849b6bc-6710-497d-a8de-e8640f206e1a": {
+    "d1d7d92f-8df3-4d96-b718-041418db2240": {
      "title": "Lydkvalitet",
-     "id": "b849b6bc-6710-497d-a8de-e8640f206e1a",
+     "id": "d1d7d92f-8df3-4d96-b718-041418db2240",
      "references": [
       "2a1b90eb-f438-4ca5-8116-5025da0b875b",
       "18837a3a-cdb2-4ae1-86f0-cb1d5135d53a",
       "04bfe907-cb63-41ce-8c42-b1c1c5ea3d5f",
       "2e190d24-4030-47f1-be9d-95900c1f9989",
       "e73b7de5-575a-4a7b-9c8e-c4985ba25c43",
-      "a4a689cb-8d71-4175-91e9-970608dfb70c",
-      "c635ff65-85ca-4117-93da-1951f0894f04"
+      "c635ff65-85ca-4117-93da-1951f0894f04",
+      "a4a689cb-8d71-4175-91e9-970608dfb70c"
      ]
     },
-    "cf871e59-d79c-4703-a69b-2978b5c2ce09": {
-     "title": "Værdi for pengene",
-     "id": "cf871e59-d79c-4703-a69b-2978b5c2ce09",
+    "b97acf51-f087-4ef5-8509-2268fb9477a1": {
+     "title": "Pris i forhold til kvalitet",
+     "id": "b97acf51-f087-4ef5-8509-2268fb9477a1",
      "references": [
       "2a1b90eb-f438-4ca5-8116-5025da0b875b",
       "04bfe907-cb63-41ce-8c42-b1c1c5ea3d5f",

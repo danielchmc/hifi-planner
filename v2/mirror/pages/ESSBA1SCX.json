@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "2030de31-3fb2-4475-9213-5eaf21f8d047",
+   "ff72e649-9193-448d-b862-35b4d71e0fd7",
+   "2fab04f6-4fdf-4a4e-b31d-7c3a45f59282"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 219536,
   "skuCode": "ESSBA1SCX",
@@ -129,7 +138,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 20348,
+     "availableQuantity": 20330,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -190,61 +199,59 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSBA1SCX leverer en klar, varm og punchy lyd med pålidelig ydeevne i hverdagen. Solid konstruktion, passende tilslutninger og god værdi gør kablet til et tilfredsstillende valg til budget- og mellemklasseanlæg. Den største ulempe er den stive og ufleksible PVC-kappe, mens udseendet virker mere funktionelt end eksklusivt.",
+   "summary": "ESSBA1SCX leverer varm, klar og slagkraftig lyd med pålidelige tilslutninger og solid ydeevne i hverdagen. Kablet giver især god værdi til budgetanlæg, og flere brugere oplever lyden som tydeligt bedre end fra ældre kabler. Den største ulempe er den forholdsvis stive og ufleksible PVC-konstruktion, mens udseendet virker mere funktionelt end eksklusivt.",
    "headlines": {
-    "clear, satisfying sound for everyday listening": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som god, behagelig og egnet til regelmæssig musiklytning.",
-     "simpleTitle": "Klar og tilfredsstillende lyd til hverdagsbrug",
-     "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "6c7570bc-d6c5-4439-9e71-d89033b41c4b"
-    },
-    "solid construction and quality feel": {
-     "sentimentAnalysis": "Flere anmeldelser roser kablet som solidt, robust og af høj kvalitet.",
-     "simpleTitle": "Solid konstruktion og kvalitetsfornemmelse",
-     "bias": "positive",
-     "key": "build_quality",
-     "groupId": "eaab9254-8a18-4ea7-b21a-a499d45ccfd5"
-    },
-    "the cable is stiff and not very flexible": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver stivhed og begrænset fleksibilitet som den tydeligste svaghed.",
-     "simpleTitle": "Kablet er stift og ikke særlig fleksibelt",
+    "cable is stiff and inflexible": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer kablet for at være stift og kræve forsigtig håndtering for at undgå knæk.",
+     "simpleTitle": "Kablet er stift og ufleksibelt",
      "bias": "negative",
-     "key": "flexibility",
-     "groupId": "fcbbfd71-fc40-4c76-aa40-015e8130c059"
+     "key": "build-flexibility",
+     "groupId": "3fe93a52-d458-45de-b046-431462ce77f1"
     },
-    "strong value for budget systems": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som billigt og velegnet til budgetorienteret udstyr.",
-     "simpleTitle": "God værdi til budgetanlæg",
+    "affordable choice for budget systems": {
+     "sentimentAnalysis": "Kablet betragtes gennemgående som prisvenligt og velegnet til budgetudstyr.",
+     "simpleTitle": "Prisvenligt valg til budgetanlæg",
      "bias": "positive",
      "key": "value",
-     "groupId": "3a7f716c-466d-4e0f-8526-6201a9562604"
+     "groupId": "2b01df30-f3d1-419b-b834-a6510641e956"
+    },
+    "clear, enjoyable sound": {
+     "sentimentAnalysis": "Kablet roses for at levere god og behagelig lyd.",
+     "simpleTitle": "Klar og behagelig lyd",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "afccf4a4-b391-4e79-9108-efae57f00031"
+    },
+    "sound improves on older cables": {
+     "sentimentAnalysis": "Lyden opleves som en mærkbar forbedring i forhold til tidligere kabler.",
+     "simpleTitle": "Bedre lyd end med ældre kabler",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "afccf4a4-b391-4e79-9108-efae57f00031"
+    },
+    "solid and durable construction": {
+     "sentimentAnalysis": "Kablet opleves som solidt og tilstrækkeligt godt bygget til formålet.",
+     "simpleTitle": "Solid og holdbar konstruktion",
+     "bias": "positive",
+     "key": "build-flexibility",
+     "groupId": "3fe93a52-d458-45de-b046-431462ce77f1"
     }
    },
    "grouping": {
-    "6c7570bc-d6c5-4439-9e71-d89033b41c4b": {
-     "title": "Lydkvalitet",
-     "id": "6c7570bc-d6c5-4439-9e71-d89033b41c4b",
+    "3fe93a52-d458-45de-b046-431462ce77f1": {
+     "title": "Byggekvalitet og fleksibilitet",
+     "id": "3fe93a52-d458-45de-b046-431462ce77f1",
      "references": [
-      "178b6386-cca4-42fb-aa25-8c5e564f5a84",
-      "7d846274-8a95-4f28-b28f-8389c46d47f5",
-      "ca084ab5-60bd-41d8-ae3b-f8ebef6339d2",
-      "959e8b9b-ebd1-413f-a46f-9c29442d1f38"
-     ]
-    },
-    "eaab9254-8a18-4ea7-b21a-a499d45ccfd5": {
-     "title": "Byggekvalitet",
-     "id": "eaab9254-8a18-4ea7-b21a-a499d45ccfd5",
-     "references": [
+      "72953760-cfd7-4adc-89c3-9364c9049316",
+      "6ca88a8b-bfe1-4882-b0a1-434f2b0f6fb3",
+      "d71fa9aa-fe14-4223-92b1-0f993df259dd",
       "77a7fd13-f9d7-4989-8ee1-8328d661db57",
-      "88ad7c34-4431-49b8-9544-c22bc92e33ad",
-      "d0de5221-90ff-4be3-b12c-fc132f6af87d",
-      "663d0921-186e-49c0-b426-5515511dd6a1"
+      "d0de5221-90ff-4be3-b12c-fc132f6af87d"
      ]
     },
-    "3a7f716c-466d-4e0f-8526-6201a9562604": {
+    "2b01df30-f3d1-419b-b834-a6510641e956": {
      "title": "Værdi for pengene",
-     "id": "3a7f716c-466d-4e0f-8526-6201a9562604",
+     "id": "2b01df30-f3d1-419b-b834-a6510641e956",
      "references": [
       "663d0921-186e-49c0-b426-5515511dd6a1",
       "f0ad41f6-7cb8-4662-9f41-681d0323a584",
@@ -252,13 +259,13 @@
       "d0de5221-90ff-4be3-b12c-fc132f6af87d"
      ]
     },
-    "fcbbfd71-fc40-4c76-aa40-015e8130c059": {
-     "title": "Kablets fleksibilitet",
-     "id": "fcbbfd71-fc40-4c76-aa40-015e8130c059",
+    "afccf4a4-b391-4e79-9108-efae57f00031": {
+     "title": "Lydkvalitet",
+     "id": "afccf4a4-b391-4e79-9108-efae57f00031",
      "references": [
-      "72953760-cfd7-4adc-89c3-9364c9049316",
-      "6ca88a8b-bfe1-4882-b0a1-434f2b0f6fb3",
-      "d71fa9aa-fe14-4223-92b1-0f993df259dd"
+      "178b6386-cca4-42fb-aa25-8c5e564f5a84",
+      "7d846274-8a95-4f28-b28f-8389c46d47f5",
+      "ca084ab5-60bd-41d8-ae3b-f8ebef6339d2"
      ]
     }
    },

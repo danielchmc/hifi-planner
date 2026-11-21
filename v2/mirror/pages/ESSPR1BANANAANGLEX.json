@@ -13,6 +13,14 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "f758d3b7-742c-4e08-9a99-9fda51fc928d",
+   "1c0ce6da-763c-4089-949e-fd91bc2151c6"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 235753,
   "skuCode": "ESSPR1BANANAANGLEX",
@@ -133,8 +141,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
-     "availableQuantity": 39,
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -174,70 +182,74 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "En flot og solidt fremstillet bananstik-løsning, der gør højttalertilslutninger pæne, sikre og lettere at føre i trange omgivelser. Det vinklede design og det faste greb i terminalerne værdsættes bredt, mens den klodsede form og begrænsede kabelkompatibilitet kan gøre installationen besværlig. Den varme, raffinerede fremtoning og pålidelige konstruktion gør disse stik til en attraktiv opgradering til kompatible højttalerkabler.",
+   "summary": "ESSPR1BANANAANGLEX er et solidt, elegant og praktisk højttalerstik med sikkert greb i terminalen og et nyttigt vinklet design til trange placeringer. Finishen virker eksklusiv, og kablet ligger naturligt, mens kompatibiliteten med tykke kabler og visse terminaler kan være begrænset. Samlet giver stikket en pæn og pålidelig installation med en ren, punchy og omsluttende lydoplevelse.",
    "headlines": {
     "solid, premium construction": {
      "sentimentAnalysis": "Stikkene beskrives gentagne gange som solide, veludførte, elegante og eksklusive.",
-     "simpleTitle": "Solid konstruktion i premiumkvalitet",
+     "simpleTitle": "Solid konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "build_quality",
-     "groupId": "c17908f3-f846-40d7-b2b8-07dd034cc7b3"
+     "groupId": "eecd1473-7c66-4e1d-9a03-8fa0c33e63cd"
     },
-    "useful angled cable routing": {
-     "sentimentAnalysis": "Den vinklede form gør det muligt at placere højttalerne tættere på væggen og føre kablerne mere naturligt mod gulvet eller stativet.",
-     "simpleTitle": "Praktisk vinklet kabelføring",
+    "useful angled design for tight spaces": {
+     "sentimentAnalysis": "Den vinklede form gør det muligt at placere højttalere eller receivere tæt på væggen og føre kabler naturligt mod gulvet eller stativet.",
+     "simpleTitle": "Praktisk vinklet design til trange pladser",
      "bias": "positive",
-     "key": "angled_routing",
-     "groupId": "1ebf7b62-3fb0-4a17-bce4-18840a7a9ff0"
+     "key": "installation_design",
+     "groupId": "f3ae3fd5-ad7e-47eb-aa8f-6eb1070e7a1e"
     },
-    "bulky fit and limited cable capacity": {
-     "sentimentAnalysis": "Flere anmeldelser advarer om, at tykke kabler eller terminaler måske ikke passer; ét kabelsæt blev returneret, fordi lederne var for store.",
-     "simpleTitle": "Klodset pasform og begrænset kabelkapacitet",
+    "thick cables and terminals can be difficult to fit": {
+     "sentimentAnalysis": "Flere anmeldelser advarer om, at stikkene ikke kan rumme visse tykke kabler eller er svære at sætte i bestemte højttalerterminaler.",
+     "simpleTitle": "Tykke kabler og terminaler kan være svære at få til at passe",
      "bias": "negative",
-     "key": "fit_compatibility",
-     "groupId": "e9410c60-d88d-454f-b08e-02dd4f32b3ee"
+     "key": "cable_compatibility",
+     "groupId": "cebc456a-ea33-4609-b7d2-1574bdd16523"
     },
-    "secure grip in speaker terminals": {
-     "sentimentAnalysis": "Stikkene sidder fast, og kablet holdes sikkert af sætskruerne.",
-     "simpleTitle": "Sikkert greb i højttalerterminalerne",
+    "secure cable and terminal hold": {
+     "sentimentAnalysis": "Stikkene sidder fast i højttalerterminalerne, og sæt-skruerne holder kablet sikkert.",
+     "simpleTitle": "Sikkert greb om kabel og terminal",
      "bias": "positive",
-     "key": "fit_compatibility",
-     "groupId": "e9410c60-d88d-454f-b08e-02dd4f32b3ee"
+     "key": "connection_security",
+     "groupId": "2774b70d-177d-421b-b696-bac2875b2e92"
     }
    },
    "grouping": {
-    "e9410c60-d88d-454f-b08e-02dd4f32b3ee": {
-     "title": "Pasform og kabelkompatibilitet",
-     "id": "e9410c60-d88d-454f-b08e-02dd4f32b3ee",
-     "references": [
-      "cd39e939-94f6-4cae-8e2b-5eaa2c40c096",
-      "5418ea21-7d2e-4936-828a-202c35936fbb",
-      "34645fc3-3553-40df-9563-caac28c6625c",
-      "4a4c34c7-681d-4551-a602-ffce1db3e83d",
-      "9f6e26e4-806a-4a2b-aec0-a80c47c5a8e1",
-      "d17bf1eb-17ca-4425-bfb2-1f0e4df634d2",
-      "44403746-da2a-4ba3-b68b-1dead85ac15c"
-     ]
-    },
-    "c17908f3-f846-40d7-b2b8-07dd034cc7b3": {
+    "eecd1473-7c66-4e1d-9a03-8fa0c33e63cd": {
      "title": "Byggekvalitet",
-     "id": "c17908f3-f846-40d7-b2b8-07dd034cc7b3",
+     "id": "eecd1473-7c66-4e1d-9a03-8fa0c33e63cd",
      "references": [
       "4933e1cd-f09f-4f48-ba0f-2cbe0178bc5d",
-      "34645fc3-3553-40df-9563-caac28c6625c",
       "4c171a21-6b76-4c21-ac74-2f08cdfb01f3",
       "8b740c5a-effd-4980-ae3a-c2b78a012657",
       "d17bf1eb-17ca-4425-bfb2-1f0e4df634d2",
       "44403746-da2a-4ba3-b68b-1dead85ac15c"
      ]
     },
-    "1ebf7b62-3fb0-4a17-bce4-18840a7a9ff0": {
-     "title": "Vinklet design og kabelføring",
-     "id": "1ebf7b62-3fb0-4a17-bce4-18840a7a9ff0",
+    "cebc456a-ea33-4609-b7d2-1574bdd16523": {
+     "title": "Kabelkompatibilitet",
+     "id": "cebc456a-ea33-4609-b7d2-1574bdd16523",
+     "references": [
+      "5418ea21-7d2e-4936-828a-202c35936fbb",
+      "34645fc3-3553-40df-9563-caac28c6625c",
+      "9f6e26e4-806a-4a2b-aec0-a80c47c5a8e1"
+     ]
+    },
+    "f3ae3fd5-ad7e-47eb-aa8f-6eb1070e7a1e": {
+     "title": "Installationsdesign",
+     "id": "f3ae3fd5-ad7e-47eb-aa8f-6eb1070e7a1e",
      "references": [
       "cd39e939-94f6-4cae-8e2b-5eaa2c40c096",
       "4a4c34c7-681d-4551-a602-ffce1db3e83d",
       "94fb96c5-da44-4e27-a5c0-72b7b0ef5148"
+     ]
+    },
+    "2774b70d-177d-421b-b696-bac2875b2e92": {
+     "title": "Forbindelsessikkerhed",
+     "id": "2774b70d-177d-421b-b696-bac2875b2e92",
+     "references": [
+      "cd39e939-94f6-4cae-8e2b-5eaa2c40c096",
+      "d17bf1eb-17ca-4425-bfb2-1f0e4df634d2",
+      "44403746-da2a-4ba3-b68b-1dead85ac15c"
      ]
     }
    },

@@ -13,6 +13,30 @@
    "url": "/surround/surround-receiver/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI indgange": "4",
+   "HDMI udgange": "1",
+   "HDMI ARC/CEC": "Ja",
+   "Lydudgang": "Hovedtelefon",
+   "Lydindgang": "Optisk, Analog RCA",
+   "Indgang (andet)": "USB A",
+   "Billedeindgang": "HDMI",
+   "Udgangseffekt (8 ohm, 2 kanaler)": "70 watt",
+   "Udgangseffekt (6 ohm, 1 kanal)": "140 watt",
+   "Udgangseffekt (6 ohm, 2 kanaler)": "90 watt",
+   "Forstærker kanaler": "5",
+   "Fra beskrivelsen": "HDMI 2.1 med HDCP2.3, 8K/60Hz pass-through, eARC, Deep Color, xvYCC, 4:4:4 Pure Color sub-sampling, BT.2020 pass-through, Auto Lipsync og HDMI-CEC · HDMI 2.1/8K samt 4K/120 understøttes på alle HDMI-indgange og på HDMI-ud · Avanceret gaming via HDMI med 4K/120Hz pass-through, ALLM (Auto Low Latency Mode) / QFT (Quick Frame Transport) / VRR (Variable Refresh Rate) · Indgange kan navngives individuelt"
+  },
+  "gallery": [
+   "6fa65479-c03b-40b2-b9f0-d640adda6769",
+   "8e8a696c-0229-48ea-bc51-a634d2b6e023",
+   "91c7dc74-3ddf-492d-96ca-bf415bb5cd5d",
+   "a0285252-b3cc-48d8-823a-1570a6d2bc6c",
+   "8fa46eff-22a8-4a6b-9a30-138de05e3105"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 233955,
   "skuCode": "DENAVRX580BT",
@@ -284,7 +308,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 62,
+     "availableQuantity": 47,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -434,53 +458,75 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENAVRX580BT betragtes bredt som en kompakt receiver med fremragende værdi for pengene, som er nem at installere og betjene. Lyden roses generelt for at være klar, kraftfuld, varm og omsluttende til surround og hjemmebio, med god bas og overbevisende ydelse i stuen. Begrænsninger i tilslutninger og funktioner, herunder manglende Wi-Fi- eller radiofunktioner samt lejlighedsvise HDMI- eller Bluetooth-problemer, er de vigtigste forbehold.",
+   "summary": "Denon-receiveren leverer varm, klar og fyldig lyd med medrivende surroundgengivelse og imponerende effekt for det kompakte indstigningsformat. Nem opsætning, enkel betjening og god kompatibilitet gør receiveren til et stærkt valg til både hjemmebio og musik. Det fremragende forhold mellem pris og kvalitet bliver ofte fremhævet, selv om begrænset software, manglende trådløse funktioner, lejlighedsvise HDMI- eller Bluetooth-problemer og enkelte mangler i betjeningen trækker ned.",
    "headlines": {
-    "clear, powerful sound for surround and home cinema": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, kraftfuld og omsluttende surroundoplevelse med god bas og en markant forbedring i forhold til ældre receivere.",
-     "simpleTitle": "Klar og kraftfuld lyd til surround og hjemmebio",
+    "strong value for money": {
+     "sentimentAnalysis": "Receiveren betragtes gentagne gange som et fremragende køb med meget ydelse og funktionalitet til en overkommelig pris.",
+     "simpleTitle": "Stærk værdi for pengene",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "cc20990e-2932-47c5-b3fb-86f5355b57d7"
+     "key": "value_strong",
+     "groupId": "8123f3ec-ff1e-405d-93e1-627f48a51c0b"
     },
-    "quick and straightforward setup and operation": {
-     "sentimentAnalysis": "Receiveren beskrives gentagne gange som nem at installere, konfigurere og betjene, også sammen med eksisterende surroundsæt.",
-     "simpleTitle": "Hurtig og enkel opsætning og betjening",
+    "clear, powerful sound for home cinema": {
+     "sentimentAnalysis": "Medrivende surround, tydelige dialoger og kraftig bas gør receiveren særligt velegnet til hjemmebio.",
+     "simpleTitle": "Klar og kraftfuld lyd til hjemmebio",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "c763b059-73f4-4179-a8e8-12b7e9f6cb10"
+     "key": "sound_cinema",
+     "groupId": "767dfab0-feee-4494-87af-34c539298a55"
     },
-    "excellent value at the price": {
-     "sentimentAnalysis": "Flere anmeldelser kalder receiveren prisvenlig, pengene værd og værd at købe, især som indstigningsmodel.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "easy installation and operation": {
+     "sentimentAnalysis": "En enkel opsætning, intuitiv betjening og nyttig kalibrering gør receiveren let at bruge for mange forskellige brugere.",
+     "simpleTitle": "Nem opsætning og betjening",
      "bias": "positive",
-     "key": "value",
-     "groupId": "7c149673-87d8-482f-93e7-cea0243e05f1"
+     "key": "setup_easy",
+     "groupId": "9714f8ae-1cf6-4252-837a-b6d47c7f65ea"
     },
-    "useful surround connections and Bluetooth streaming": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver de mange tilslutningsmuligheder, 5.1-kompatibiliteten, Bluetooth og mikrofonen til rumkalibrering.",
-     "simpleTitle": "Praktiske surroundtilslutninger og Bluetooth-streaming",
+    "balanced everyday sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som meget god, behagelig og velegnet til almindelige stueanlæg.",
+     "simpleTitle": "Balanceret hverdagslyd",
      "bias": "positive",
-     "key": "connectivity",
-     "groupId": "de260d29-ad95-4ad3-920f-24653d0d2459"
+     "key": "sound_general",
+     "groupId": "767dfab0-feee-4494-87af-34c539298a55"
     },
-    "some desired wireless and radio options are missing": {
-     "sentimentAnalysis": "Flere anmeldelser nævner manglende eller utilgængelige radio- og Wi-Fi-funktioner som en begrænsning ved udstyret.",
-     "simpleTitle": "Ønskede trådløse funktioner og radioindstillinger mangler",
+    "menus and documentation can be limiting": {
+     "sentimentAnalysis": "Begrænset software, menubaserede indstillinger, svært tilgængelige manualer og et dårligt synligt display reducerer komforten for nogle brugere.",
+     "simpleTitle": "Menuer og dokumentation kan være begrænsende",
      "bias": "negative",
-     "key": "connectivity",
-     "groupId": "de260d29-ad95-4ad3-920f-24653d0d2459"
+     "key": "setup_limits",
+     "groupId": "9714f8ae-1cf6-4252-837a-b6d47c7f65ea"
+    },
+    "useful surround connectivity and expansion": {
+     "sentimentAnalysis": "Flere kanaler, Bluetooth og kompatibilitet med eksisterende 5.1-systemer giver nyttig fleksibilitet til hjemmebioanlæg.",
+     "simpleTitle": "Nyttige surroundtilslutninger og udvidelsesmuligheder",
+     "bias": "positive",
+     "key": "connect_expansion",
+     "groupId": "e423cf97-9b8e-4a86-97cd-e8ff26b2e654"
+    },
+    "missing wireless and radio features": {
+     "sentimentAnalysis": "Manglen på Wi-Fi, DAB og pålidelig FM-modtagelse begrænser funktionerne for brugere, der forventer bredere netværks- eller radioadgang.",
+     "simpleTitle": "Manglende trådløse funktioner og radio",
+     "bias": "negative",
+     "key": "connect_missing",
+     "groupId": "e423cf97-9b8e-4a86-97cd-e8ff26b2e654"
+    },
+    "limited stereo refinement": {
+     "sentimentAnalysis": "En anmeldelse finder biograflyden fremragende, men stereogengivelsen kun middelmådig, mens en anden beskriver meget god lyd i et hjemmebio-setup.",
+     "simpleTitle": "Begrænset stereokvalitet",
+     "bias": "negative",
+     "key": "sound_stereo",
+     "groupId": "767dfab0-feee-4494-87af-34c539298a55"
     }
    },
    "grouping": {
-    "cc20990e-2932-47c5-b3fb-86f5355b57d7": {
+    "767dfab0-feee-4494-87af-34c539298a55": {
      "title": "Lydkvalitet",
-     "id": "cc20990e-2932-47c5-b3fb-86f5355b57d7",
+     "id": "767dfab0-feee-4494-87af-34c539298a55",
      "references": [
       "8a329ff5-daee-443a-ad0b-6dde0f84b44a",
       "8563afd9-f63f-4c11-9a38-963a1c072e92",
       "3e42e006-f06a-4beb-a623-9d0ca2dbb037",
       "a31cda0b-c3bf-4720-a131-974aa77e35dc",
+      "1d36e4b8-b845-4686-bd90-115e7a52a719",
       "534f794e-2a1b-4a01-952b-daf1df681f8c",
       "30d69b9b-c5c4-41f1-9248-8b7c66138b41",
       "16ee4242-6b31-45b9-b65a-e4c8d9d1d81c",
@@ -498,61 +544,62 @@
       "14309388-33d7-4fde-a1dd-d28266ed7ba4"
      ]
     },
-    "c763b059-73f4-4179-a8e8-12b7e9f6cb10": {
+    "9714f8ae-1cf6-4252-837a-b6d47c7f65ea": {
      "title": "Opsætning og betjening",
-     "id": "c763b059-73f4-4179-a8e8-12b7e9f6cb10",
+     "id": "9714f8ae-1cf6-4252-837a-b6d47c7f65ea",
      "references": [
       "8563afd9-f63f-4c11-9a38-963a1c072e92",
-      "f244a6ab-69fc-4283-b1ee-398613be211b",
+      "ac834939-04cf-466e-984e-8b5a7649a5bd",
       "a31cda0b-c3bf-4720-a131-974aa77e35dc",
       "534f794e-2a1b-4a01-952b-daf1df681f8c",
       "3287cb47-0d44-4e6a-bca4-cd766e750c30",
       "4be2e328-7a4e-4976-b316-9a64803d5261",
       "a2f9f25a-c4d4-4d3e-849b-bac26b67a0d8",
       "fc8e6378-f83f-4ab1-86c2-5d3fc4bc49d0",
-      "4c637b24-1169-464b-9a06-8d9d4a59fa79",
-      "94a62413-9869-4fc8-897f-7dc18f6e8f3f",
       "7f4940d0-04c6-40cd-9f1c-6f22dfb1c2c7",
       "22373ea2-ceb4-4ffa-b55a-73eb7e4f296b",
       "3b6608de-f162-402a-8993-b8a02b49c2e2",
       "78f2efb9-5f8f-478e-8e0d-01816bd869fc",
       "8f6ad23f-d333-45a1-951d-385adecced58",
-      "9139d6a5-3b17-4f18-82c7-a6ad2a9c5f85"
+      "9139d6a5-3b17-4f18-82c7-a6ad2a9c5f85",
+      "94a62413-9869-4fc8-897f-7dc18f6e8f3f",
+      "4c637b24-1169-464b-9a06-8d9d4a59fa79"
      ]
     },
-    "7c149673-87d8-482f-93e7-cea0243e05f1": {
-     "title": "Værdi for pengene",
-     "id": "7c149673-87d8-482f-93e7-cea0243e05f1",
+    "8123f3ec-ff1e-405d-93e1-627f48a51c0b": {
+     "title": "Pris og kvalitet",
+     "id": "8123f3ec-ff1e-405d-93e1-627f48a51c0b",
      "references": [
       "8a329ff5-daee-443a-ad0b-6dde0f84b44a",
       "c5f01fbc-4e33-4de3-8e2d-ea0b0196a319",
+      "3e42e006-f06a-4beb-a623-9d0ca2dbb037",
       "3287cb47-0d44-4e6a-bca4-cd766e750c30",
       "851c0a32-fd10-46da-a0a9-6daaad34cac0",
-      "a2f9f25a-c4d4-4d3e-849b-bac26b67a0d8",
       "65217797-9310-4d40-805f-6b097a6744cf",
-      "8ee781c2-955f-4e1a-969f-04a84597ba08",
+      "a2f9f25a-c4d4-4d3e-849b-bac26b67a0d8",
+      "bfc2fb5c-09db-42dc-aac2-22db4ef0098c",
       "350a390c-31c8-40b1-bfc8-b45b8de9978c",
       "94a62413-9869-4fc8-897f-7dc18f6e8f3f",
       "cacce36f-2fc8-42e3-94f3-3755d0301fc5",
-      "bfc2fb5c-09db-42dc-aac2-22db4ef0098c",
-      "54e92373-c202-4849-a306-6e8316351ddf"
+      "54e92373-c202-4849-a306-6e8316351ddf",
+      "8ee781c2-955f-4e1a-969f-04a84597ba08"
      ]
     },
-    "de260d29-ad95-4ad3-920f-24653d0d2459": {
+    "e423cf97-9b8e-4a86-97cd-e8ff26b2e654": {
      "title": "Tilslutninger og funktioner",
-     "id": "de260d29-ad95-4ad3-920f-24653d0d2459",
+     "id": "e423cf97-9b8e-4a86-97cd-e8ff26b2e654",
      "references": [
       "c5f01fbc-4e33-4de3-8e2d-ea0b0196a319",
-      "3e42e006-f06a-4beb-a623-9d0ca2dbb037",
       "ac834939-04cf-466e-984e-8b5a7649a5bd",
-      "1d36e4b8-b845-4686-bd90-115e7a52a719",
       "30d69b9b-c5c4-41f1-9248-8b7c66138b41",
+      "1d36e4b8-b845-4686-bd90-115e7a52a719",
       "fc8e6378-f83f-4ab1-86c2-5d3fc4bc49d0",
+      "866cb51f-b011-47f1-a92f-820509dbdf72",
       "521195d0-909f-40f6-8d31-d19343e2f5da",
       "8ee781c2-955f-4e1a-969f-04a84597ba08",
-      "866cb51f-b011-47f1-a92f-820509dbdf72",
-      "04000aba-7139-41f7-ae00-b5b98d975627",
-      "214f8575-4ba8-4b18-892f-4bea18addf0f"
+      "214f8575-4ba8-4b18-892b-4bea18addf0f",
+      "94a62413-9869-4fc8-897f-7dc18f6e8f3f",
+      "04000aba-7139-41f7-ae00-b5b98d975627"
      ]
     }
    },

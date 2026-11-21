@@ -13,6 +13,22 @@
    "url": "/stereo/musikstreamer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk, Analog RCA, Hovedtelefon",
+   "Lydindgang": "Coaxial, Optisk",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Roon Ready, Airplay 2, Spotify Connect, HEOS Multiroom",
+   "Fra beskrivelsen": "Indbygget høretelefon-forstærker (3 gain-indstillinger, 6,3mm tilslutning) · TV-lyd via HDMI/eARC · Audio-ind: 2 x optisk, coaxial, USB-B (asynkron) · Audio-ud: analog (L/R RCA), analog variabel ud (L/R RCA), coaxial/optisk (toslink), høretelefoner (6,3 mm jack) · Ethernet: 10/100 Base-T · IR-ud til kontrol af kompatible Denon-forstærkere m.m."
+  },
+  "gallery": [
+   "83674c8c-6608-4cf6-bd35-fd9eab7830ba",
+   "ee2af76c-8a4b-4b6c-8ffc-97022d53bda0",
+   "1d997572-be01-4af0-a682-473445a87b27",
+   "dab3cdb8-4914-4224-bd49-547108dda9d1",
+   "9dccc2d4-a994-4b6a-bbf1-4d4dff340a04"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 205446,
   "skuCode": "DENDNP2000NE",
@@ -174,12 +190,11 @@
      "productCode": "DENDNP2000NEBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 22. december",
+     "deliveryDate": "2026-12-22T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -436,58 +451,59 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon DNP-2000NE roses bredt som en førsteklasses netværksafspiller med varm, detaljeret, rummelig og meget immersiv lyd. Den stærke DAC, alsidige streamingmuligheder og omfattende digitale tilslutninger gør enheden til en fremragende opgradering af krævende hi-fi-anlæg. HEOS-oplevelsen og displayet virker mindre moderne end lydkvaliteten, mens netværksopsætning og betjening kan kræve lidt tålmodighed.",
+   "summary": "Denon DNP-2000NE roses bredt som en førsteklasses og solidt bygget netværksafspiller og DAC med varm, detaljeret, rummelig og meget musikalsk lyd. Streaming, digitale indgange, HDMI ARC og den brede understøttelse af kilder gør enheden særdeles alsidig, mens stabil netværksdrift og enkel opsætning styrker helhedsindtrykket. HEOS-oplevelsen, det begrænsede display og enkelte manglende funktioner som Roon Ready og subwooferudgang gør, at produktet ikke er fejlfrit, men den samlede vurdering er særdeles begejstret.",
    "headlines": {
-    "broad streaming and connection options": {
-     "sentimentAnalysis": "Understøttelse af flere streamingtjenester, USB-afspilning, HDMI ARC, Bluetooth samt kablet og trådløst netværk gør afspilleren meget fleksibel.",
-     "simpleTitle": "Bredt udvalg af streaming og tilslutninger",
-     "bias": "positive",
-     "key": "streaming",
-     "groupId": "29c07706-5c13-4f0a-92b6-b4648fa3c630"
-    },
-    "detailed and immersive sound": {
-     "sentimentAnalysis": "Afspilleren leverer rummelig, klar og meget detaljeret lyd med overbevisende dybde og en stærk livefornemmelse.",
-     "simpleTitle": "Detaljeret og immersiv lyd",
+    "exceptional, spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en markant opgradering med detaljeret, tredimensionel, klar og meget musikalsk lyd, især fra højopløselige kilder.",
+     "simpleTitle": "Fremragende, rummelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "a229959d-9517-4e27-ad1d-f331867aa0a1"
+     "groupId": "044e744d-2f80-4e6f-a62d-2c15a5589a20"
     },
-    "excellent DAC and streaming upgrade": {
-     "sentimentAnalysis": "DAC'en beskrives gentagne gange som et stort skridt frem fra tidligere streamere og som særligt afslørende med højopløselige og tabsfrie kilder.",
-     "simpleTitle": "Fremragende DAC og streamingopgradering",
+    "simple setup and versatile sources": {
+     "sentimentAnalysis": "Afspilleren værdsættes for enkel opsætning, stabil streaming, HDMI ARC, USB- og digitaltilslutninger, Bluetooth og bred kildekompatibilitet.",
+     "simpleTitle": "Enkel opsætning og alsidige kilder",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "a229959d-9517-4e27-ad1d-f331867aa0a1"
+     "key": "connectivity",
+     "groupId": "86c72601-e33e-4841-9aec-fa5f5b729ec9"
     },
-    "heos operation can be awkward": {
-     "sentimentAnalysis": "HEOS og den direkte betjening fungerer, men app-samspillet kan føles uintuitivt eller tungt, før arbejdsgangen bliver velkendt.",
-     "simpleTitle": "HEOS-betjeningen kan være besværlig",
+    "heos and controls need refinement": {
+     "sentimentAnalysis": "Flere anmeldelser oplever HEOS eller betjeningen på enheden som lidt besværlig, selv om appen og fjernbetjeningen fungerer godt efter tilvænning.",
+     "simpleTitle": "HEOS og betjeningen kan forbedres",
      "bias": "negative",
-     "key": "controls",
-     "groupId": "a15549c3-6cc2-4280-9af6-24d352714c4a"
+     "key": "usability",
+     "groupId": "3ce8da58-f4d4-4ddd-b7fa-63e6dc34d665"
     },
-    "display lacks modern album information": {
-     "sentimentAnalysis": "Displayet er tydeligt og diskret, men manglen på farver, større visning og albumcovers virker gammeldags.",
-     "simpleTitle": "Displayet mangler moderne albuminformation",
+    "the display is dated and lacks album art": {
+     "sentimentAnalysis": "Displayet er tydeligt og diskret, men flere anmeldelser kritiserer den lille, monokrome og ikke moderne visning samt manglende coverbilleder.",
+     "simpleTitle": "Displayet virker forældet og mangler coverbilleder",
      "bias": "negative",
      "key": "display",
-     "groupId": "b9319ee0-91a0-4921-ab95-062eb9212943"
+     "groupId": "1b2037ba-6b4f-40f6-8449-0b0375373161"
+    },
+    "solid, premium construction": {
+     "sentimentAnalysis": "Anmeldelserne roser den høje vægt, det flotte Denon-design og den solide kvalitet, som passer godt ind i matchende anlæg.",
+     "simpleTitle": "Solid og eksklusiv konstruktion",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "5123ccdf-959a-4d02-998c-6b2ee356651f"
     }
    },
    "grouping": {
-    "a229959d-9517-4e27-ad1d-f331867aa0a1": {
+    "044e744d-2f80-4e6f-a62d-2c15a5589a20": {
      "title": "Lydkvalitet",
-     "id": "a229959d-9517-4e27-ad1d-f331867aa0a1",
+     "id": "044e744d-2f80-4e6f-a62d-2c15a5589a20",
      "references": [
       "cf5184bf-511a-4ba7-a2e0-cf333fee4ca7",
       "d4058f9c-4e08-4811-89f3-c214911b00d7",
       "7fa2e9bf-7a16-461a-8c09-067e792aca14",
       "a6bd1913-ddbd-4a36-8af9-9756b94569b8",
+      "cfad6d63-be62-4964-8a81-e13648fa02c9",
       "defc7076-5b56-4bae-acc2-de7aa66a96cd",
       "3b244472-e382-446a-83c3-6eea8818d1c9",
       "b1bd91bd-3d5a-423b-bf14-1479d1c3368b",
-      "ed0bfeb0-29cb-4bc2-82f3-51ef90e737bd",
       "98945275-2c57-4e90-aed3-995e27f4b29e",
+      "5c0395dd-b61a-4c0e-93ca-25a1f88cb01b",
       "3697ae00-5c3d-4d5b-9491-28de77443ef6",
       "df61aa2f-9872-4e06-ae20-ca7857e6c801",
       "44437a0f-87c7-421e-91b6-1b276987b09f",
@@ -495,39 +511,55 @@
       "ec955217-681a-4a44-8575-3d850c7022da"
      ]
     },
-    "29c07706-5c13-4f0a-92b6-b4648fa3c630": {
-     "title": "Streaming og tilslutning",
-     "id": "29c07706-5c13-4f0a-92b6-b4648fa3c630",
+    "3ce8da58-f4d4-4ddd-b7fa-63e6dc34d665": {
+     "title": "Betjening og app",
+     "id": "3ce8da58-f4d4-4ddd-b7fa-63e6dc34d665",
      "references": [
       "09552785-a729-43c5-8cac-5bac2d56cf4b",
       "37cf619c-882f-47bb-9342-e80d0a0e302d",
       "7fa2e9bf-7a16-461a-8c09-067e792aca14",
       "a6bd1913-ddbd-4a36-8af9-9756b94569b8",
-      "cfad6d63-be62-4964-8a81-e13648fa02c9",
-      "defc7076-5b56-4bae-acc2-de7aa66a96cd",
-      "df61aa2f-9872-4e06-ae20-ca7857e6c801",
-      "0cc983ee-7fa6-4db7-b3f5-aa6eebca53c9",
-      "cfb0995f-028d-4678-8036-bbcbbb8ee16c"
-     ]
-    },
-    "a15549c3-6cc2-4280-9af6-24d352714c4a": {
-     "title": "App og betjening",
-     "id": "a15549c3-6cc2-4280-9af6-24d352714c4a",
-     "references": [
-      "09552785-a729-43c5-8cac-5bac2d56cf4b",
-      "7fa2e9bf-7a16-461a-8c09-067e792aca14",
-      "defc7076-5b56-4bae-acc2-de7aa66a96cd",
       "4e49f942-ca3b-45a0-854b-6985d6aefd3a",
       "cfad6d63-be62-4964-8a81-e13648fa02c9",
+      "defc7076-5b56-4bae-acc2-de7aa66a96cd",
       "b1bd91bd-3d5a-423b-bf14-1479d1c3368b",
       "98945275-2c57-4e90-aed3-995e27f4b29e",
       "5c0395dd-b61a-4c0e-93ca-25a1f88cb01b",
       "df61aa2f-9872-4e06-ae20-ca7857e6c801"
      ]
     },
-    "b9319ee0-91a0-4921-ab95-062eb9212943": {
+    "86c72601-e33e-4841-9aec-fa5f5b729ec9": {
+     "title": "Tilslutninger og kilder",
+     "id": "86c72601-e33e-4841-9aec-fa5f5b729ec9",
+     "references": [
+      "09552785-a729-43c5-8cac-5bac2d56cf4b",
+      "a6bd1913-ddbd-4a36-8af9-9756b94569b8",
+      "cfad6d63-be62-4964-8a81-e13648fa02c9",
+      "defc7076-5b56-4bae-acc2-de7aa66a96cd",
+      "7fa2e9bf-7a16-461a-8c09-067e792aca14",
+      "df61aa2f-9872-4e06-ae20-ca7857e6c801",
+      "44437a0f-87c7-421e-91d6-1b276987b09f",
+      "001ba0bc-f7b8-40c9-998b-21162bb8bb86",
+      "0cc983ee-7fa6-4db7-b3f5-aa6eebca53c9",
+      "cfb0995f-028d-4678-8036-bbcbbb8ee16c",
+      "5c0395dd-b61a-4c0e-93ca-25a1f88cb01b",
+      "ec955217-681a-4a44-8575-3d850c7022da"
+     ]
+    },
+    "5123ccdf-959a-4d02-998c-6b2ee356651f": {
+     "title": "Byggekvalitet og design",
+     "id": "5123ccdf-959a-4d02-998c-6b2ee356651f",
+     "references": [
+      "37cf619c-882f-47bb-9342-e80d0a0e302d",
+      "cfad6d63-be62-4964-8a81-e13648fa02c9",
+      "defc7076-5b56-4bae-acc2-de7aa66a96cd",
+      "3697ae00-5c3d-4d5b-9491-28de77443ef6",
+      "001ba0bc-f7b8-40c9-998b-21162bb8bb86"
+     ]
+    },
+    "1b2037ba-6b4f-40f6-8449-0b0375373161": {
      "title": "Display",
-     "id": "b9319ee0-91a0-4921-ab95-062eb9212943",
+     "id": "1b2037ba-6b4f-40f6-8449-0b0375373161",
      "references": [
       "defc7076-5b56-4bae-acc2-de7aa66a96cd",
       "b1bd91bd-3d5a-423b-bf14-1479d1c3368b",

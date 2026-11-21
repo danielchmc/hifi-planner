@@ -13,6 +13,15 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "1a203280-5183-40e5-be08-4a0e2f65d85b",
+   "4510800a-cd64-4086-a752-5ed96025d52b",
+   "d44806bb-cb26-4030-bbe8-af31a10a2c7e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 268191,
   "skuCode": "ESSWBUNI20X",
@@ -20,8 +29,8 @@
   "brandPage": "/marker/essentials/",
   "recommendedAlternatives": {
    "productCodes": [
-    "ESSSTELWX",
-    "ESSWBUNI05"
+    "ESSWBUNI05",
+    "ESSSTELWX"
    ],
    "isOutlet": "false"
   },
@@ -115,8 +124,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 475,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 456,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -186,8 +195,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 525,
+     "numberOfStoresExperience": 22,
+     "availableQuantity": 513,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -214,55 +223,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse vægbeslag til højttalere roses bredt for den robuste konstruktion, det sikre greb, den nemme montering og den fleksible placering. Designet opfattes generelt som attraktivt og praktisk, selv om nogle synes, at beslagene er for store, ikke særlig flotte eller lidt besværlige at montere. Et varmt, punchy og omsluttende lydbillede bliver lettere at opnå, og beslagene giver god værdi til både mindre og forholdsvis store højttalere.",
+   "summary": "Disse vægbeslag til højttalere får stor ros for solid konstruktion, sikkert greb, fleksibel placering og enkel montering. Den kompakte klemmeløsning kræver ingen skruer i højttalerne og giver en ren, immersiv opsætning med præcis retning. Enkelte kommentarer nævner et lidt klodset udseende, besværlig montering eller begrænset lodret justering, men samlet set er værdi og ydeevne fremragende.",
    "headlines": {
-    "solid, secure construction": {
-     "sentimentAnalysis": "Beslagene beskrives gentagne gange som solide, robuste, stabile og sikre, også med forholdsvis store højttalere.",
-     "simpleTitle": "Solid og sikker konstruktion",
+    "solid, secure support": {
+     "sentimentAnalysis": "Beslagene beskrives gentagne gange som robuste, stabile, stærke og velbyggede, også til større højttalere.",
+     "simpleTitle": "Solidt og sikkert greb",
      "bias": "positive",
      "key": "stability",
-     "groupId": "705a22db-2df1-4e3d-9c66-270856a887f7"
+     "groupId": "e8b02671-1225-4bb3-b1bf-0ecf49d110d8"
     },
-    "easy to install and secure without speaker screws": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den enkle montering, den forståelige vejledning og fordelen ved at klemme højttaleren fast uden at bore eller skrue i den.",
-     "simpleTitle": "Nem montering uden skruer i højttaleren",
+    "easy installation and flexible adjustment": {
+     "sentimentAnalysis": "Flere anmeldelser roser den enkle samling, montering og justering samt klemningen uden boring i højttaleren.",
+     "simpleTitle": "Nem montering og fleksibel justering",
      "bias": "positive",
      "key": "installation",
-     "groupId": "e87dff87-5b1a-4f75-8f95-f1c129d8e2d4"
+     "groupId": "b4f911fe-20b6-4037-bc7a-094bd33da6da"
     },
-    "flexible positioning and adjustment": {
-     "sentimentAnalysis": "Beslagene giver nyttig justering i flere retninger og fleksibel placering af højttalerne.",
-     "simpleTitle": "Fleksibel placering og justering",
-     "bias": "positive",
-     "key": "adjustability",
-     "groupId": "16608ff0-88fc-4066-968a-1948e4d9eef7"
-    },
-    "attractive, practical appearance": {
-     "sentimentAnalysis": "Flere anmeldelser roser beslagene som flotte, elegante eller veldesignede.",
-     "simpleTitle": "Flot og praktisk udseende",
+    "neat, attractive design": {
+     "sentimentAnalysis": "Andre anmeldelser roser beslagene som flotte, stilrene og velegnede til en pæn højttaleropsætning.",
+     "simpleTitle": "Flot og stilrent design",
      "bias": "positive",
      "key": "design",
-     "groupId": "2cd7bb94-0de5-45d5-a6f5-1abb0cc4bb05"
+     "groupId": "bcc547df-8c96-4364-8e03-48b62a7041f8"
     },
-    "bulky or unattractive appearance": {
-     "sentimentAnalysis": "Nogle brugere synes, at beslagene er for store, visuelt dominerende eller ikke særlig flotte.",
-     "simpleTitle": "Klodset eller ikke særlig flot udseende",
+    "bulky appearance": {
+     "sentimentAnalysis": "Nogle anmeldelser synes, at beslagene virker store eller ikke særlig pæne i forhold til tv'et eller væggen.",
+     "simpleTitle": "Klodset udseende",
      "bias": "negative",
      "key": "design",
-     "groupId": "2cd7bb94-0de5-45d5-a6f5-1abb0cc4bb05"
+     "groupId": "bcc547df-8c96-4364-8e03-48b62a7041f8"
     },
-    "limited vertical angle and awkward mounting": {
-     "sentimentAnalysis": "Nogle brugere synes, at monteringen er besværlig, den lodrette vinkling er begrænset, eller at ét beslag kan vippe lidt uden en ekstra filtbrik.",
-     "simpleTitle": "Begrænset lodret vinkel og besværlig montering",
+    "vertical adjustment can feel limited": {
+     "sentimentAnalysis": "Nogle brugere finder monteringen besværlig eller oplever for lille lodret vinkel og let vipning i ét beslag.",
+     "simpleTitle": "Den lodrette justering kan være begrænset",
      "bias": "negative",
-     "key": "adjustability",
-     "groupId": "16608ff0-88fc-4066-968a-1948e4d9eef7"
+     "key": "installation",
+     "groupId": "b4f911fe-20b6-4037-bc7a-094bd33da6da"
     }
    },
    "grouping": {
-    "705a22db-2df1-4e3d-9c66-270856a887f7": {
+    "e8b02671-1225-4bb3-b1bf-0ecf49d110d8": {
      "title": "Stabilitet og byggekvalitet",
-     "id": "705a22db-2df1-4e3d-9c66-270856a887f7",
+     "id": "e8b02671-1225-4bb3-b1bf-0ecf49d110d8",
      "references": [
       "0e483fec-e768-4843-a32b-6125d846cf46",
       "06906a23-2267-4c43-8e4e-2ebd04609b83",
@@ -277,49 +279,35 @@
       "2fd09cf6-e7f6-4855-80c8-42694e189b33",
       "70ceddd2-ec95-40e7-a32b-422f1a916915",
       "57b57b9f-1462-43ee-bc1b-0d6c717572b6",
-      "df6266fc-4d33-4c3a-a171-e7fc6e6778f9",
-      "63857fb5-5058-4794-a7f9-208d5ef54432"
+      "0e1750c8-7e30-4f46-b9ed-7c2be81da7f8"
      ]
     },
-    "e87dff87-5b1a-4f75-8f95-f1c129d8e2d4": {
-     "title": "Montering og opsætning",
-     "id": "e87dff87-5b1a-4f75-8f95-f1c129d8e2d4",
+    "b4f911fe-20b6-4037-bc7a-094bd33da6da": {
+     "title": "Montering og justering",
+     "id": "b4f911fe-20b6-4037-bc7a-094bd33da6da",
      "references": [
       "0e483fec-e768-4843-a32b-6125d846cf46",
+      "2bb9903e-c9b2-444d-9fbf-caa2f8b65c2a",
+      "d3b21e26-9024-43e3-a026-2425f27ba625",
       "abc39293-6dba-4729-8eac-c6503c5310cc",
       "b4105dbb-22ce-42aa-a11d-e52ec9edb656",
       "516243f9-b558-406e-974f-5a01927860d0",
       "b9382eff-ea66-4d66-88af-17d9f270b687",
       "79ab36b8-4373-41db-ae58-38102f228719",
       "57b57b9f-1462-43ee-bc1b-0d6c717572b6",
-      "df6266fc-4d33-4c3a-a171-e7fc6e6778f9",
-      "0e1750c8-7e30-4f46-b9ed-7c2be81da7f8",
-      "d3b21e26-9024-43e3-a026-2425f27ba625"
+      "0e1750c8-7e30-4f46-b9ed-7c2be81da7f8"
      ]
     },
-    "2cd7bb94-0de5-45d5-a6f5-1abb0cc4bb05": {
-     "title": "Design og størrelse",
-     "id": "2cd7bb94-0de5-45d5-a6f5-1abb0cc4bb05",
+    "bcc547df-8c96-4364-8e03-48b62a7041f8": {
+     "title": "Design og udseende",
+     "id": "bcc547df-8c96-4364-8e03-48b62a7041f8",
      "references": [
       "e2bf8b85-d6c0-4b83-af89-b7894d8bf748",
       "8e5e2743-abd5-4d98-b298-a1ffc5ffe403",
       "d3b21e26-9024-43e3-a026-2425f27ba625",
       "4b41b325-2788-4123-b5dd-0d5fa25fd79d",
       "b4105dbb-22ce-42aa-a11d-e52ec9edb656",
-      "bad53098-5660-4a98-86cd-c892fbf5e114",
       "df6266fc-4d33-4c3a-a171-e7fc6e6778f9",
-      "8bffcbd5-2f73-459a-b229-f436232aa8b5"
-     ]
-    },
-    "16608ff0-88fc-4066-968a-1948e4d9eef7": {
-     "title": "Justerbarhed og placering",
-     "id": "16608ff0-88fc-4066-968a-1948e4d9eef7",
-     "references": [
-      "0e483fec-e768-4843-a32b-6125d846cf46",
-      "2bb9903e-c9b2-444d-9fbf-caa2f8b65c2a",
-      "d3b21e26-9024-43e3-a026-2425f27ba625",
-      "516243f9-b558-406e-974f-5a01927860d0",
-      "79ab36b8-4373-41db-ae58-38102f228719",
       "57b57b9f-1462-43ee-bc1b-0d6c717572b6"
      ]
     }

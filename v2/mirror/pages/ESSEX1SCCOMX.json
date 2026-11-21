@@ -13,6 +13,14 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e2b43138-2b33-4661-a580-163712c0cbd7",
+   "f2c5c983-7713-44a6-9b3d-2f3cf69a45d4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 237920,
   "skuCode": "ESSEX1SCCOMX",
@@ -182,8 +190,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
-     "availableQuantity": 254,
+     "numberOfStoresExperience": 16,
+     "availableQuantity": 249,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -279,8 +287,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 142,
+     "numberOfStoresExperience": 15,
+     "availableQuantity": 139,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -304,48 +312,48 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse højttalerkabler giver en varm, energisk og medrivende opgradering med tydeligere detaljer, kraftigere bas og et mere åbent lydbillede. Den solide konstruktion, det attraktive design og den nemme tilslutning virker pålidelige og gennemarbejdede. Premiumprisen kan være for høj til mere beskedne anlæg, men investeringen vurderes ofte som pengene værd i et kompetent setup.",
+   "summary": "ESSEX1SCCOMX roses bredt for en varm, klar, detaljeret og omsluttende lyd, som ofte får højttalerne til at virke mere kapable og anlægget opgraderet. Den robuste konstruktion, det flotte finish og den nemme tilslutning øger attraktionsværdien, mens prisen vurderes som rimelig i gode anlæg. Enkelte anmeldelser finder kablet overdimensioneret til visse anlæg, og der nævnes både svag bas før tilspilning og kritik af bananstikkenes finish.",
    "headlines": {
     "warmer, clearer and more detailed sound": {
-     "sentimentAnalysis": "Kab­lerne roses gentagne gange for en varmere, renere og mere detaljeret gengivelse med bedre tonal balance.",
+     "sentimentAnalysis": "Anmeldelserne beskriver en varmere klangbalance, renere detaljer og større klarhed i hele frekvensområdet.",
      "simpleTitle": "Varmere, klarere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "warm-clear-detailed",
-     "groupId": "c59aed0e-212c-4705-a419-9d4784a1eb4c"
+     "key": "sound-quality",
+     "groupId": "3313aa92-4a5a-40cf-92c2-d078bc9ed5d2"
     },
-    "robust and attractive construction": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kablerne som solide, holdbare, velbyggede og visuelt attraktive.",
+    "robust, attractive construction": {
+     "sentimentAnalysis": "Flere anmeldelser roser kablet som solidt, holdbart og flot udført.",
      "simpleTitle": "Robust og attraktiv konstruktion",
      "bias": "positive",
-     "key": "robust-design",
-     "groupId": "61399ed6-3fad-4540-8fab-45ae97c8f5ec"
+     "key": "build-finish",
+     "groupId": "099b429e-6602-4ad2-98c6-093916ce7ef3"
     },
-    "worthwhile investment in a capable system": {
-     "sentimentAnalysis": "Prisen anses for berettiget på grund af lydforbedringen og ydeevnen, især sammen med en kvalitetsforstærker og gode højttalere.",
-     "simpleTitle": "Pengene værd i et kompetent anlæg",
+    "speakers sound more capable and systems feel upgraded": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som en tydelig lydmæssig opgradering, der hjælper gode højttalere og forstærkere med at udnytte deres potentiale.",
+     "simpleTitle": "Højttalerne virker mere kapable, og anlægget føles opgraderet",
      "bias": "positive",
-     "key": "system-value",
-     "groupId": "30a3ac8e-cfb8-4ffc-9c11-61c6cea700f7"
+     "key": "sound-quality",
+     "groupId": "3313aa92-4a5a-40cf-92c2-d078bc9ed5d2"
     },
-    "more open soundstage and stronger bass after burn-in": {
-     "sentimentAnalysis": "Kab­lerne forbindes med en mere åben gengivelse og fyldigere bas; en anmeldelse bemærker, at tilspilning var nødvendig for at opnå det bedste resultat.",
-     "simpleTitle": "Mere åbent lydbillede og kraftigere bas efter tilspilning",
-     "bias": "positive",
-     "key": "open-bass",
-     "groupId": "c59aed0e-212c-4705-a419-9d4784a1eb4c"
+    "worthwhile in capable systems, but over-specified for some setups": {
+     "sentimentAnalysis": "Kablet anses som en god investering med godt udstyr, mens nogle anlæg måske ikke berettiger størrelse eller pris.",
+     "simpleTitle": "Pengene værd i gode anlæg, men overdimensioneret til visse opsætninger",
+     "bias": "meh",
+     "key": "value-compatibility",
+     "groupId": "a979274c-6f34-408a-aa46-cb94c09d7e80"
     },
-    "may be excessive for modest systems": {
-     "sentimentAnalysis": "To anmeldelser vurderer kablerne som lidt overdimensionerede til det nuværende udstyr, trods ellers positive vurderinger.",
-     "simpleTitle": "Kan være overdimensioneret til beskedne anlæg",
+    "finish quality is inconsistent at the banana plugs": {
+     "sentimentAnalysis": "Selvom tilslutningen generelt opleves som problemfri, kritiseres montage og finish omkring bananstikkene.",
+     "simpleTitle": "Uensartet finish ved bananstikkene",
      "bias": "negative",
-     "key": "overkill",
-     "groupId": "30a3ac8e-cfb8-4ffc-9c11-61c6cea700f7"
+     "key": "build-finish",
+     "groupId": "099b429e-6602-4ad2-98c6-093916ce7ef3"
     }
    },
    "grouping": {
-    "c59aed0e-212c-4705-a419-9d4784a1eb4c": {
+    "3313aa92-4a5a-40cf-92c2-d078bc9ed5d2": {
      "title": "Lydkvalitet",
-     "id": "c59aed0e-212c-4705-a419-9d4784a1eb4c",
+     "id": "3313aa92-4a5a-40cf-92c2-d078bc9ed5d2",
      "references": [
       "8dad05d4-feab-4378-b185-35911d39112b",
       "40015eb1-8570-4537-86df-f9b944d8d8db",
@@ -354,41 +362,39 @@
       "e1184e2e-6733-40f5-b323-a10cc745dd10",
       "c87a56c3-fc82-4985-a5d8-985479081c77",
       "37b08c2c-7e1e-45b9-aa9b-14f66bba1204",
-      "d8fd67e3-d416-4617-a1b7-10da90b9a96c",
-      "ccea2818-7fae-4e93-b556-892218afe3f2",
-      "b9ec1d09-fd12-4288-b38a-54128dd1c271",
       "9d53d240-807b-4d51-aaee-89ae961e9a8c",
       "65793db2-0e89-4904-9151-0796e986ca39",
       "8bbb7d29-ed40-4182-8ec9-ad850d307a12",
-      "7dfa0108-44a1-4137-9590-74edc5337364",
+      "b9ec1d09-fd12-4288-b38a-54128dd1c271",
+      "d8fd67e3-d416-4617-a1b7-10da90b9a96c",
+      "ccea2818-7fae-4e93-b556-892218afe3f2",
       "8ff6434b-9d20-4081-9023-91259d9e6a28"
      ]
     },
-    "61399ed6-3fad-4540-8fab-45ae97c8f5ec": {
+    "099b429e-6602-4ad2-98c6-093916ce7ef3": {
      "title": "Byggekvalitet og design",
-     "id": "61399ed6-3fad-4540-8fab-45ae97c8f5ec",
+     "id": "099b429e-6602-4ad2-98c6-093916ce7ef3",
      "references": [
       "e9546dca-fa65-4850-93fb-b206f5464cc0",
       "b2b32798-a802-441f-b7ad-c5db61b0567f",
-      "2dfb54a9-2489-4e65-a977-710656e6747f",
+      "b4ebfbf4-e89e-426b-9548-d61a4b898697",
       "c87a56c3-fc82-4985-a5d8-985479081c77",
       "ccea2818-7fae-4e93-b556-892218afe3f2",
       "e0a96a6a-d986-4b70-af86-133eb3706c4f",
       "65793db2-0e89-4904-9151-0796e986ca39",
-      "7dfa0108-44a1-4137-9590-74edc5337364",
       "d8fd67e3-d416-4617-a1b7-10da90b9a96c"
      ]
     },
-    "30a3ac8e-cfb8-4ffc-9c11-61c6cea700f7": {
-     "title": "Værdi for pengene",
-     "id": "30a3ac8e-cfb8-4ffc-9c11-61c6cea700f7",
+    "a979274c-6f34-408a-aa46-cb94c09d7e80": {
+     "title": "Værdi og systemkompatibilitet",
+     "id": "a979274c-6f34-408a-aa46-cb94c09d7e80",
      "references": [
-      "37b08c2c-7e1e-45b9-aa9b-14f66bba1204",
-      "d0b15228-64b8-4576-a7d1-17df324ee14f",
-      "9d53d240-807b-4d51-aaee-89ae961e9a8c",
+      "e9546dca-fa65-4850-93fb-b206f5464cc0",
       "e1184e2e-6733-40f5-b323-a10cc745dd10",
       "5b878e8b-5bc6-45be-b81d-c59b3a97a932",
-      "e9546dca-fa65-4850-93fb-b206f5464cc0"
+      "d0b15228-64b8-4576-a7d1-17df324ee14f",
+      "9d53d240-807b-4d51-aaee-89ae961e9a8c",
+      "37b08c2c-7e1e-45b9-aa9b-14f66bba1204"
      ]
     }
    },

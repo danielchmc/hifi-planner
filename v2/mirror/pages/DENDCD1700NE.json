@@ -13,6 +13,21 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk, Analog RCA",
+   "Udgang (andet)": "IR",
+   "Indgang (andet)": "IR"
+  },
+  "gallery": [
+   "56fee107-ed65-4c26-a6fc-66473b6ca1cc",
+   "926373fc-f3e5-4b37-8239-be340a2c2b1c",
+   "855a682a-9bd2-4180-9fbe-5c28a0a51da7",
+   "9e14ae74-a7b2-4e31-ad54-1cd5e03e52c6",
+   "956e2838-8723-40ad-bb52-842a90e4cb1f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 197401,
   "skuCode": "DENDCD1700NE",
@@ -94,10 +109,10 @@
    "id": 56169
   },
   "stockItemAlternative": {
-   "save": "3.000,-",
+   "save": "2.000,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DENDCD1700NE",
-   "availableQuantity": 2,
-   "lowestPrice": "8.999,-"
+   "availableQuantity": 1,
+   "lowestPrice": "9.999,-"
   },
   "variants": [
    {
@@ -149,7 +164,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 20,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -274,50 +289,62 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denon DCD-1700NE roses bredt for sin varme, detaljerede, dynamiske og rummelige lyd fra både CD og SACD med stram bas, naturlige stemmer og høj opløsning. Den solide konstruktion, det støjsvage drev og den japanske kvalitetsbygning understøtter indtrykket af en langsigtet high-end-investering. De største indvendinger er den manglende eject-knap på fjernbetjeningen, begrænset digital tilslutning og enkelte særheder ved display og betjening, men den fremragende musikgengivelse er den klare hovedoplevelse.",
+   "summary": "Denon DCD-1700NE roses bredt som en førsteklasses CD/SACD-afspiller med varm, detaljeret, dynamisk og omsluttende lyd, et støjsvagt drev og solid japansk konstruktion. SACD'er og almindelige CD'er får en rummelig og naturlig gengivelse med kontrolleret bas, klare mellemtoner og høj opløsning, især i et kapabelt anlæg. De vigtigste forbehold gælder den sparsomme tilslutning, den manglende eject-knap på fjernbetjeningen, små eller begrænsede displays samt enkelte upraktiske designvalg, men den samlede dom er meget begejstret.",
    "headlines": {
-    "missing eject button and limited inputs": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer den manglende åbn/luk-funktion på fjernbetjeningen og de få tilslutningsmuligheder, især fraværet af digitale, USB- og hovedtelefonudgange.",
-     "simpleTitle": "Manglende eject-knap og få tilslutninger",
+    "missing eject button on the remote": {
+     "sentimentAnalysis": "Manglen på åbne/lukke-funktion på fjernbetjeningen er den mest gennemgående betjeningskritik.",
+     "simpleTitle": "Manglende eject-knap på fjernbetjeningen",
      "bias": "negative",
-     "key": "controls",
-     "groupId": "3bea0ea9-af88-4fa3-9157-8a62d746ae2c"
+     "key": "usability",
+     "groupId": "5c472bf2-4371-4d5c-bc0e-2223934f9208"
     },
     "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmelderne roser den store, varme og meget detaljerede gengivelse med naturlige stemmer og stærk musikalsk tilstedeværelse.",
+     "sentimentAnalysis": "Anmeldelserne beskriver en fyldig og omsluttende gengivelse med stor lydboble, naturlige stemmer og mange detaljer.",
      "simpleTitle": "Varm, detaljeret og rummelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "3758584f-89b2-4e8a-b591-b62469fe9f56"
+     "groupId": "fb007fd8-4c60-4301-8604-eae7134c0e5c"
     },
-    "tight bass and powerful dynamics": {
-     "sentimentAnalysis": "Basområdet beskrives som kontrolleret og fyldigt, mens dynamik, detaljer og kraft får optagelserne til at leve.",
-     "simpleTitle": "Stram bas og kraftfuld dynamik",
+    "strong bass, dynamics and resolution": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den velkontrollerede eller stramme bas, den kraftfulde dynamik og den forbedrede opløsning sammenlignet med ældre afspillere.",
+     "simpleTitle": "Kontant bas, dynamik og opløsning",
      "bias": "positive",
      "key": "sound",
-     "groupId": "3758584f-89b2-4e8a-b591-b62469fe9f56"
+     "groupId": "fb007fd8-4c60-4301-8604-eae7134c0e5c"
     },
-    "solid, quiet construction": {
-     "sentimentAnalysis": "Det tunge kabinet med premiumfornemmelse og det usædvanligt støjsvage drev fremhæves gentagne gange som store styrker.",
-     "simpleTitle": "Solid og støjsvag konstruktion",
+    "quiet, solid and premium construction": {
+     "sentimentAnalysis": "Afspilleren beskrives gentagne gange som robust, velbygget og usædvanligt støjsvag i drift.",
+     "simpleTitle": "Støjsvag, solid og førsteklasses konstruktion",
      "bias": "positive",
      "key": "build",
-     "groupId": "39450966-5c63-4b0c-afac-14833df63019"
+     "groupId": "4b417ffa-9f86-49e3-8c87-22255e69c100"
+    },
+    "limited connectivity and features": {
+     "sentimentAnalysis": "Nogle ejere synes, at manglen på digitale indgange, USB, HDMI eller hovedtelefonudgang er sparsomt for prisen, mens andre passer den analoge fokusering.",
+     "simpleTitle": "Begrænsede tilslutninger og funktioner",
+     "bias": "negative",
+     "key": "features",
+     "groupId": "57f00e61-f318-4f42-8b21-2e421dc8ca5a"
     }
    },
    "grouping": {
-    "3758584f-89b2-4e8a-b591-b62469fe9f56": {
+    "fb007fd8-4c60-4301-8604-eae7134c0e5c": {
      "title": "Lydkvalitet",
-     "id": "3758584f-89b2-4e8a-b591-b62469fe9f56",
+     "id": "fb007fd8-4c60-4301-8604-eae7134c0e5c",
      "references": [
       "5a399fb5-364c-4c73-acc5-1503adb94c7d",
+      "e22ef46b-a048-4d8d-b124-621cef81e1e2",
       "029ce0f2-c614-48dd-a89a-dc44abbd6099",
+      "bff2f2d9-c8f8-4af1-ab49-98eaffb89cdc",
       "511681c6-3a7f-4582-a9b7-2e2e33738bb3",
       "16597d9a-50bd-481c-b8a4-d6a8866d6d23",
       "4ac0c5e3-a2db-4dd4-8ac1-1a1d17bea941",
       "b0fcf1a2-3909-47c5-b767-b16aea73ab50",
       "36019fc7-690f-40e3-9962-962e48767a32",
+      "bdebd898-0603-40da-a94b-2982d523383f",
+      "84652bed-99c5-437c-85c4-3dd25ce33e7e",
       "ce455484-2b9f-401a-9072-168679e44d86",
+      "6057d9f0-a769-4132-a74a-6195e575a26c",
       "e3cf8070-a81a-4b18-bd5d-0d9c99fec341",
       "968c0782-1ca9-44e4-a626-3a26ecebf2c1",
       "40632ed1-4e08-4718-b662-5828532f22b0",
@@ -328,56 +355,81 @@
       "0675bc36-f203-4bea-9f9e-b9b325fd537b",
       "7ed94102-492f-49f6-a364-7167cf33c214",
       "c368777f-9332-41a2-bc76-34993e29fb60",
+      "a1e021de-4e29-4274-816d-74098575a75d",
+      "d7042ba9-0b7a-4644-9d35-eea0264a0bc9",
       "6dfea67a-c54a-43f1-a983-18e3876f7d14",
       "b15e5b02-0221-4faf-825a-c170ac0c6d39",
       "83af59f9-0069-4395-b3e9-f78c85211079",
+      "7c9e1b70-ea5b-4455-bc7e-f801ea7d893a",
       "6363350d-fe64-4b7f-8b82-e47fe50478bb",
+      "e6581977-c4f4-4016-9be9-fa60f3cf7d5e",
       "13cd2361-f9d3-4a1e-aebc-121d527e1d6b",
       "2c10b06a-a6c5-4ddb-8953-a2e5478ee078",
       "828931af-6773-4149-a634-61ac09f222b9",
       "e65633e6-e7da-4f44-ba80-620bebc09b32",
-      "ae0ceea1-c5e6-4b1d-ba93-1e4854b5d0ab",
+      "6850035d-24bb-4b26-9caa-99b879ce0d2e",
+      "2e562902-2202-48ec-9362-c36c868f9940",
+      "8623de53-4b01-4182-9320-5d0dc9f8afc5",
+      "ea988574-9652-4d6a-aebd-7927c8fbaf31",
       "e7a00c41-6fbf-472d-94a0-85f6aa8e042c",
       "13fa660c-fd98-4108-a0fe-0d877a3bb3f4",
       "f6afeb01-87c1-455f-b104-bc3e7e2d23f4",
       "c006d3ce-381a-460d-a846-a40ca08f095f",
-      "2e562902-2202-48ec-9362-c36c868f9940"
+      "ae0ceea1-c5e6-4b1d-ba93-1e4854b5d0ab",
+      "4bfb8297-3e2b-4b27-ad4b-6d6eb86a3a17",
+      "d5b7ffba-bb79-4245-a71a-6b2aa8ddef5d"
      ]
     },
-    "39450966-5c63-4b0c-afac-14833df63019": {
-     "title": "Byggekvalitet",
-     "id": "39450966-5c63-4b0c-afac-14833df63019",
+    "4b417ffa-9f86-49e3-8c87-22255e69c100": {
+     "title": "Byggekvalitet og drev",
+     "id": "4b417ffa-9f86-49e3-8c87-22255e69c100",
      "references": [
       "470e15ce-27b2-43c8-be4c-97f33c9c09aa",
       "bff2f2d9-c8f8-4af1-ab49-98eaffb89cdc",
       "16597d9a-50bd-481c-b8a4-d6a8866d6d23",
       "bdebd898-0603-40da-a94b-2982d523383f",
-      "e3cf8070-a81a-4b18-bd5d-0d9c99fec341",
+      "ddccee39-c8f8-415a-aa65-e2c3a20b17c5",
       "7ed94102-492f-49f6-a364-7167cf33c214",
       "a1e021de-4e29-4274-816d-74098575a75d",
+      "e7b42268-0a8b-49d5-8f40-c48803d92b6f",
       "e6581977-c4f4-4016-9be9-fa60f3cf7d5e",
       "ea988574-9652-4d6a-aebd-7927c8fbaf31",
-      "6dfea67a-c54a-43f1-a983-18e3876f7d14",
-      "828931af-6773-4149-a634-61ac09f222b9",
+      "2e562902-2202-48ec-9362-c36c868f9940",
       "fb656a94-8720-44d2-91aa-736472e29748"
      ]
     },
-    "3bea0ea9-af88-4fa3-9157-8a62d746ae2c": {
-     "title": "Betjening og tilslutninger",
-     "id": "3bea0ea9-af88-4fa3-9157-8a62d746ae2c",
+    "57f00e61-f318-4f42-8b21-2e421dc8ca5a": {
+     "title": "Funktioner og tilslutninger",
+     "id": "57f00e61-f318-4f42-8b21-2e421dc8ca5a",
      "references": [
-      "e22ef46b-a048-4d8d-b124-621cef81e1e2",
       "bff2f2d9-c8f8-4af1-ab49-98eaffb89cdc",
       "16597d9a-50bd-481c-b8a4-d6a8866d6d23",
-      "5a206184-0460-4c1a-906e-6d9068512b75",
       "394d4f17-9ec3-4326-8d7d-f2ae9c45ce48",
+      "5a206184-0460-4c1a-906e-6d9068512b75",
       "a1e021de-4e29-4274-816d-74098575a75d",
       "e7b42268-0a8b-49d5-8f40-c48803d92b6f",
-      "f67d670f-2a33-4efe-add8-a18ad05006b5",
+      "e6581977-c4f4-4016-9be9-fa60f3cf7d5e",
       "f628e0c2-b067-4b0c-84b8-a7ba7b9cfd45",
+      "77d67ad0-8f6a-423f-aebd-85cb75d0e26d",
+      "f67d670f-2a33-4efe-add8-a18ad05006b5",
+      "c94aecc9-f8e1-4c9e-bb43-55d172bc216e"
+     ]
+    },
+    "5c472bf2-4371-4d5c-bc0e-2223934f9208": {
+     "title": "Brugervenlighed",
+     "id": "5c472bf2-4371-4d5c-bc0e-2223934f9208",
+     "references": [
+      "e22ef46b-a048-4d8d-b124-621cef81e1e2",
+      "16597d9a-50bd-481c-b8a4-d6a8866d6d23",
+      "394d4f17-9ec3-4326-8d7d-f2ae9c45ce48",
+      "82275ff1-83eb-46fe-84b8-ca08f78e139c",
       "e65633e6-e7da-4f44-ba80-620bebc09b32",
+      "f628e0c2-b067-4b0c-84b8-a7ba7b9cfd45",
+      "83bd184d-a172-4061-a5f9-4470a90922ca",
       "46198a8c-567e-48d1-abb9-037f37ad6029",
-      "2e562902-2202-48ec-9362-c36c868f9940"
+      "fb656a94-8720-44d2-91aa-736472e29748",
+      "f67d670f-2a33-4efe-add8-a18ad05006b5",
+      "e7b42268-0a8b-49d5-8f40-c48803d92b6f"
      ]
     }
    },

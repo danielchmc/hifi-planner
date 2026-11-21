@@ -13,6 +13,14 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "9904e317-5986-42d4-b765-7e5cd622bc77",
+   "3a9ac35b-0b8d-4831-8729-fb6dc3257ad9"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 236797,
   "skuCode": "ESSTTBRUSH1X",
@@ -137,34 +145,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denne kompakte pladebørste fjerner effektivt støv og giver et rent, varmt og fyldigt resultat. Det praktiske format gør den daglige pladepleje enkel og kontrolleret. En medrivende lytteoplevelse begynder med renere plader med mindre støj, hvilket gør dette tilbehør særdeles anbefalelsesværdigt.",
+   "summary": "ESSTTBRUSH1X er en enkel og praktisk pladebørste, der effektivt fjerner støv og udfører sin vigtigste opgave pålideligt. Det kompakte og handy design gør vinylpleje nemt, mens den ukomplicerede konstruktion giver god værdi for pengene. Det pålidelige tilbehør, der holder plader rene uden unødig kompleksitet, vækker stor begejstring.",
    "headlines": {
+    "reliable basic performance": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver pålidelig funktion og tilfredshed med, at børsten udfører sin tilsigtede opgave.",
+     "simpleTitle": "Pålidelig grundfunktion",
+     "bias": "positive",
+     "key": "basic-functionality",
+     "groupId": "372085f5-1e36-447c-be25-f77062775732"
+    },
+    "compact and handy handling": {
+     "sentimentAnalysis": "Det lille, praktiske format og den enkle håndtering opfattes som klare fordele.",
+     "simpleTitle": "Kompakt og handy håndtering",
+     "bias": "positive",
+     "key": "ease-of-use",
+     "groupId": "8c52db31-b0f0-494c-9bcb-238b0d87b9e5"
+    },
     "effective dust removal": {
-     "sentimentAnalysis": "Børsten roses gentagne gange for effektiv støvfjernelse og for at holde plader rene.",
+     "sentimentAnalysis": "Børsten roses for effektivt at fjerne støv fra vinylplader og hjælpe med at aflede statisk elektricitet.",
      "simpleTitle": "Effektiv støvfjernelse",
      "bias": "positive",
-     "key": "effective-dust-removal",
-     "groupId": "4213201c-7c78-490d-a4a8-ce0a296aa84e"
-    },
-    "compact and convenient": {
-     "sentimentAnalysis": "Det lille, håndterbare format og det flotte design opleves som praktiske i brug.",
-     "simpleTitle": "Kompakt og praktisk",
-     "bias": "positive",
-     "key": "compact-convenience",
-     "groupId": "c6580b0f-82c0-468e-be97-3b49b9cf1e13"
-    },
-    "useful for vinyl records": {
-     "sentimentAnalysis": "Anmeldelserne beskriver børsten som et nødvendigt eller praktisk redskab til afstøvning og vedligeholdelse af LP-plader.",
-     "simpleTitle": "Nyttig til vinylplader",
-     "bias": "positive",
-     "key": "vinyl-record-care",
-     "groupId": "4213201c-7c78-490d-a4a8-ce0a296aa84e"
+     "key": "cleaning-performance",
+     "groupId": "1a8b97fe-fc96-4256-aef1-9a7dc670e46b"
     }
    },
    "grouping": {
-    "4213201c-7c78-490d-a4a8-ce0a296aa84e": {
-     "title": "Rengøringsevne",
-     "id": "4213201c-7c78-490d-a4a8-ce0a296aa84e",
+    "372085f5-1e36-447c-be25-f77062775732": {
+     "title": "Grundlæggende funktionalitet",
+     "id": "372085f5-1e36-447c-be25-f77062775732",
+     "references": [
+      "074ce040-62e7-46e1-a9a6-f34d2602065e",
+      "5e956c65-6b7a-4767-bbb3-7617e934cbfa",
+      "5500d8e3-f93f-4d85-893e-fa50d00aa2b9",
+      "83e6dfd6-1994-4bde-af21-23c5a9051f10",
+      "8c1bec4c-900c-4cf3-a71a-4ff8cab2639f",
+      "711fa5bd-433a-4d1b-8251-5ef1ec6aa081",
+      "c1393ff7-580f-4033-b765-b22445837347",
+      "5336fa38-e009-41de-8521-1c7d8d55c089",
+      "b539d602-68b1-4e43-99d5-084b36d394e3",
+      "bb6dfd3d-bd49-4d00-8210-94e81f29d0ee"
+     ]
+    },
+    "1a8b97fe-fc96-4256-aef1-9a7dc670e46b": {
+     "title": "Støvfjernelse",
+     "id": "1a8b97fe-fc96-4256-aef1-9a7dc670e46b",
      "references": [
       "f3983641-2c63-4a0b-8ba4-1341da4cda27",
       "46b4ff88-0bb9-438b-96c0-0ac0915b9edd",
@@ -174,10 +198,11 @@
       "6cb8cba7-adc8-487b-8e6f-31e462626bef"
      ]
     },
-    "c6580b0f-82c0-468e-be97-3b49b9cf1e13": {
-     "title": "Håndtering og format",
-     "id": "c6580b0f-82c0-468e-be97-3b49b9cf1e13",
+    "8c52db31-b0f0-494c-9bcb-238b0d87b9e5": {
+     "title": "Brugervenlighed",
+     "id": "8c52db31-b0f0-494c-9bcb-238b0d87b9e5",
      "references": [
+      "1b454edb-ae55-4aa3-9382-f05c067bd69c",
       "7521af39-d3e5-4faf-9208-46ee0f5984f2",
       "63edafa5-71c7-4abb-9d23-87c41e8214ce",
       "217a6b22-e468-4619-b284-5a7f6c7f1254",
@@ -185,15 +210,15 @@
      ]
     }
    },
-   "rating": 4.57575757575758,
-   "count": 99,
-   "reviewCount": 28,
+   "rating": 4.57843137254902,
+   "count": 102,
+   "reviewCount": 30,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 10,
-    "4": 22,
-    "5": 67
+    "4": 23,
+    "5": 69
    }
   },
   "brandName": "Essentials",

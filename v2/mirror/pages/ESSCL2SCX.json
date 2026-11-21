@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "bdcdd1c9-7f68-4022-b58a-e1ae2831aa13",
+   "c1c1f5d2-cf13-421f-81e0-560fd138a377",
+   "c9071e69-a3fa-4135-afef-f2aeed6287dc"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214264,
   "skuCode": "ESSCL2SCX",
@@ -156,7 +165,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 22809,
+     "availableQuantity": 22684,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -201,46 +210,69 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL2SCX bliver generelt opfattet som et solidt og velbygget højttalerkabel, der leverer en klar, dynamisk og ofte mere rummelig lyd til en fair pris. Kablet fungerer pålideligt med mange anlæg og kan give kraftigere bas, flere detaljer og en mere medrivende gengivelse. Den største ulempe er den store diameter, som kan gøre montering, kabelføring og tilslutning til visse forstærkere eller højttalere besværlig.",
+   "summary": "ESSCL2SCX betragtes generelt som et velkonstrueret og pålideligt højttalerkabel, der leverer ren, detaljeret og ofte mere rummelig eller slagkraftig lyd. Den robuste konstruktion og store diameter skaber tillid, mens forholdet mellem pris og ydelse oftest vurderes som stærkt. Den primære anke er praktisk: Kablet kan være for stift eller tykt til visse forstærkere, tilslutninger og kabelkanaler.",
    "headlines": {
-    "clear, expansive sound with stronger bass": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en større, renere og kraftigere gengivelse med forbedret bas og uden mislyde.",
-     "simpleTitle": "Klar og rummelig lyd med kraftigere bas",
+    "cleaner, fuller and more spacious sound": {
+     "sentimentAnalysis": "Kablet forbindes med en klarere, mere rummelig og mere behagelig gengivelse samt større fylde og bedre signaloverførsel.",
+     "simpleTitle": "Renere, fyldigere og mere rummelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f80bd68b-be7f-4df0-9ec8-8aa34b2641cd"
+     "key": "sound-quality",
+     "groupId": "b1ba603d-3349-493d-a00f-710f858cb59d"
     },
-    "robust, high-quality construction": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for at være solidt, godt isoleret, tilstrækkeligt fleksibelt og flot udført.",
-     "simpleTitle": "Robust konstruktion i høj kvalitet",
-     "bias": "positive",
-     "key": "build",
-     "groupId": "d951c8a4-de10-4ece-b77e-a30e8f8108e3"
-    },
-    "large diameter can complicate installation": {
-     "sentimentAnalysis": "Flere anmeldelser finder det tykke eller stive kabel vanskeligt at få plads i forstærkertilslutninger, kabelkanaler eller langs fodpaneler.",
-     "simpleTitle": "Den store diameter kan besværliggøre installationen",
+    "too thick or stiff for some installations": {
+     "sentimentAnalysis": "Den kraftige konstruktion kan gøre det vanskeligt at føre, afisolere og tilslutte kablet på trange steder eller i mindre terminaler.",
+     "simpleTitle": "For tykt eller stift til visse installationer",
      "bias": "negative",
-     "key": "handling",
-     "groupId": "ed8a3530-e3b4-4527-b2ae-99a2407704bd"
+     "key": "build-handling",
+     "groupId": "92c4ab64-7209-4d13-a8d2-2cc68c408166"
     },
     "good value for the money": {
-     "sentimentAnalysis": "Kablet opfattes generelt som rimeligt prissat og som en fornuftig måde at undgå et svagt led i et kvalitetsanlæg.",
+     "sentimentAnalysis": "Kablet vurderes gentagne gange som rimeligt prissat, især i forhold til konstruktionens kvalitet og ydelsen i et komplet anlæg.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "9d548d37-545a-4d24-953d-92f7e946a365"
+     "key": "price-value",
+     "groupId": "56298fbb-cfd5-41dd-988b-4ec6bfa75bc5"
+    },
+    "strong bass and punch": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver kraftigere bas, bedre drive og en dynamisk forbedring af eksisterende højttalersystemer.",
+     "simpleTitle": "Kraftig bas og dynamik",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "b1ba603d-3349-493d-a00f-710f858cb59d"
     }
    },
    "grouping": {
-    "f80bd68b-be7f-4df0-9ec8-8aa34b2641cd": {
+    "92c4ab64-7209-4d13-a8d2-2cc68c408166": {
+     "title": "Konstruktion og håndtering",
+     "id": "92c4ab64-7209-4d13-a8d2-2cc68c408166",
+     "references": [
+      "fa25eea4-aed9-4ce1-889a-5eb58af5df85",
+      "c770fedb-8b2b-4444-b215-bd2dcdfb8dc5",
+      "2b2f5e38-9665-488d-a381-5ee86a823e73",
+      "6c2fcc76-fa55-44f1-869f-784cee70ab7d",
+      "e86e3560-b4f1-4457-8080-5bc30d84faae",
+      "7abe83dc-9ea8-4f39-bd99-1d433e5b4200",
+      "e0af683b-af7d-4b7c-b7b9-c9c3e38c575f",
+      "84635086-c6aa-430b-8e0e-f6633eae288c",
+      "840a763e-1ac0-4e70-9fda-69ea2c844b99",
+      "58c0c842-f172-4888-be67-ced36ae9df2e",
+      "c14f08d0-6638-4622-9179-8b6a78f60393",
+      "9b2bdc74-7d72-4408-b866-7ab25d4a562d",
+      "55f8613f-4246-4743-bfb6-d75500f7d542",
+      "3d72c098-b558-44bf-a7e8-10286e09a45c",
+      "2b26f02e-a496-4709-aecb-b9a89c4c0be7",
+      "b923ca34-7190-4d6d-b0e3-755b3dc95fa1",
+      "fc6ad670-3216-4a76-809f-843e6516846d",
+      "23ff7c60-fb4d-4064-a846-384290038e26"
+     ]
+    },
+    "b1ba603d-3349-493d-a00f-710f858cb59d": {
      "title": "Lydkvalitet",
-     "id": "f80bd68b-be7f-4df0-9ec8-8aa34b2641cd",
+     "id": "b1ba603d-3349-493d-a00f-710f858cb59d",
      "references": [
       "c83f6395-04fb-4d31-b948-6641e3bc2c54",
       "876e9a03-d37f-4a9c-9098-450eb74815ff",
       "ab53a155-0321-447e-9b3d-a7712b1657b5",
-      "2b2f5e38-9665-488d-a381-5ee86a823e73",
       "cbc93f59-ea14-409a-8119-9482277e5352",
       "f9d6fc70-96eb-4a9c-8499-e9d6fe0e7bf6",
       "f54f98a6-9bb9-4594-80c0-f99d166d0431",
@@ -248,59 +280,27 @@
       "81ce7234-6ac4-4445-82a9-801c29f88f12",
       "b1354306-b53a-4bf6-95cc-4fa07f73e53f",
       "1a6ee748-493f-47c2-9896-589f52b57d7f",
-      "d0252445-4d27-432f-9a24-b7f4c6ff082f",
       "49bd6968-2c06-4544-b48b-0037d8e5d049",
-      "f15e03d8-57b6-47cb-a549-b991b02cefb9"
+      "f15e03d8-57b6-47cb-a549-b991b02cefb9",
+      "d0252445-4d27-432f-9a24-b7f4c6ff082f",
+      "40a48ce4-8a02-42ab-aec5-82eeb545ddb4",
+      "8a8a52f4-83bb-459d-9870-6ba732540683"
      ]
     },
-    "d951c8a4-de10-4ece-b77e-a30e8f8108e3": {
-     "title": "Byggekvalitet",
-     "id": "d951c8a4-de10-4ece-b77e-a30e8f8108e3",
-     "references": [
-      "bedccd5a-6604-4bff-a925-cfb68b44002e",
-      "fb53ca75-8a54-4e15-a0bd-16fc2f68b78f",
-      "e86e3560-b4f1-4457-8080-5bc30d84faae",
-      "58c0c842-f172-4888-be67-ced36ae9df2e",
-      "c14f08d0-6638-4622-9179-8b6a78f60393",
-      "9b2bdc74-7d72-4408-b866-7ab25d4a562d",
-      "55f8613f-4246-4743-bfb6-d75500f7d542",
-      "e0af683b-af7d-4b7c-b7b9-c9c3e38c575f",
-      "84635086-c6aa-430b-8e0e-f6633eae288c",
-      "840a763e-1ac0-4e70-9fda-69ea2c844b99",
-      "22d1f2a5-dc88-4891-9dc9-fe661615fa33",
-      "ecb04662-413c-4127-a7f1-cac6d011fa13",
-      "199d947e-a8bb-4761-9814-c26ae37775d8"
-     ]
-    },
-    "ed8a3530-e3b4-4527-b2ae-99a2407704bd": {
-     "title": "Håndtering og installation",
-     "id": "ed8a3530-e3b4-4527-b2ae-99a2407704bd",
-     "references": [
-      "fa25eea4-aed9-4ce1-889a-5eb58af5df85",
-      "c770fedb-8b2b-4444-b215-bd2dcdfb8dc5",
-      "2b2f5e38-9665-488d-a381-5ee86a823e73",
-      "6c2fcc76-fa55-44f1-869f-784cee70ab7d",
-      "e86e3560-b4f1-4457-8080-5bc30d84faae",
-      "84635086-c6aa-430b-8e0e-f6633eae288c",
-      "840a763e-1ac0-4e70-9fda-69ea2c844b99",
-      "6a957ee9-b7fc-4f30-b248-d9d135ae7a58",
-      "9b2bdc74-7d72-4408-b866-7ab25d4a562d",
-      "3d72c098-b558-44bf-a7e8-10286e09a45c"
-     ]
-    },
-    "9d548d37-545a-4d24-953d-92f7e946a365": {
+    "56298fbb-cfd5-41dd-988b-4ec6bfa75bc5": {
      "title": "Pris og værdi",
-     "id": "9d548d37-545a-4d24-953d-92f7e946a365",
+     "id": "56298fbb-cfd5-41dd-988b-4ec6bfa75bc5",
      "references": [
       "4962c8c4-3469-490b-9dbd-d5ccef5550d4",
       "64bc4044-7515-40de-8213-401cdaa821aa",
       "b23fac14-95c1-4453-b49b-61109551f2df",
-      "f9d6fc70-96eb-4a9c-8499-e9d6fe0e7bf6",
       "85e3d6ba-88a7-471e-b9e7-ea8a65f0e997",
       "7a897ec8-0c46-49ea-985d-5e8339564453",
-      "e54a2f09-9c22-4162-b99c-4243b742ad89",
+      "c14f08d0-6638-4622-9179-8b6a78f60393",
       "3b7c3e73-ea27-4bbe-a07d-5805667dbb4e",
-      "90612cc4-f18c-42f7-b2bc-b19c2396ec0e"
+      "90612cc4-f18c-42f7-b2bc-b19c2396ec0e",
+      "e54a2f09-9c22-4162-b99c-4243b742ad89",
+      "d36cb07c-1b5b-4f78-a096-f5edc2fdae47"
      ]
     }
    },

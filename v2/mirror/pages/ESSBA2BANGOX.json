@@ -13,6 +13,17 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "155802de-7af1-41d5-bbe8-40af7c4fd5fa",
+   "40121345-88f4-4eef-9a14-024e94b61156",
+   "c1a600b7-d16f-462e-8ea4-cf68706f6924",
+   "d2b01c42-8f39-4a68-99a7-ec7cae804dc7",
+   "5658e854-2399-43ef-8434-2390c8cb4bb3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 288918,
   "skuCode": "ESSBA2BANGOX",
@@ -132,7 +143,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1913,
+     "availableQuantity": 1663,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -166,8 +177,7 @@
        "salesUnit": "Meter",
        "rawSalesUnit": "variableLength",
        "salesQuantity": 1,
-       "unitPrice": 65,
-       "unitPriceBefore": 60
+       "unitPrice": 65
       },
       "url": "/essentials-classic-speaker-cable-1-hoejtalerkabel/esscl1sc/",
       "imageUrl": "https://images.hifiklubben.com/image/b2b01cc5-491f-4189-a195-c1efd09820e9",
@@ -182,42 +192,50 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "ESSBA2BANGOX giver en ren og stabil forbindelse, nem montering samt et praktisk og robust design. Solide kontakter og enkel fastgørelse gør tilslutning af højttalerkabler hurtig og overskuelig. Den gode kvalitet understøtter en pålidelig lydforbindelse og giver en varm følelse af tryghed i hverdagen.",
+   "summary": "ESSBA2BANGOX giver en nem og sikker tilslutning samt en ryddelig installation med god kontakt. Stikkene virker robuste og sikrer en ren, stabil signalvej til varme, fyldige og omsluttende lydopsætninger. Byggekvaliteten er generelt stærk, selv om det stive kabel og nogle plastikdæksler kunne forbedres.",
    "headlines": {
-    "easy to install and connect": {
-     "sentimentAnalysis": "Montering og tilslutning beskrives konsekvent som nemt, hurtigt og praktisk.",
-     "simpleTitle": "Nem at montere og tilslutte",
+    "easy installation and connection": {
+     "sentimentAnalysis": "Montering og tilslutning til forstærkeren beskrives konsekvent som nem og praktisk.",
+     "simpleTitle": "Nem montering og tilslutning",
      "bias": "positive",
-     "key": "easy_installation",
-     "groupId": "b599d009-38de-462b-8fc6-2941a58ede69"
+     "key": "installation",
+     "groupId": "7e4cabc7-f726-43b2-9abd-c4702b661852"
     },
-    "solid and well-made construction": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver flot kvalitet, robusthed og solide skruer.",
-     "simpleTitle": "Solid og veludført konstruktion",
+    "good contact and secure fit": {
+     "sentimentAnalysis": "Stikkene sidder sikkert og opretholder en pålidelig elektrisk kontakt.",
+     "simpleTitle": "God kontakt og sikkert fit",
      "bias": "positive",
-     "key": "solid_construction",
-     "groupId": "d362c700-a4a9-4153-995d-750e37197e39"
+     "key": "installation",
+     "groupId": "7e4cabc7-f726-43b2-9abd-c4702b661852"
     },
-    "good, secure contact": {
-     "sentimentAnalysis": "Stikkene roses for god pasform og pålidelig elektrisk kontakt.",
-     "simpleTitle": "God og sikker kontakt",
+    "solid, robust construction": {
+     "sentimentAnalysis": "Konstruktionen vurderes samlet som af høj kvalitet, robust og pålidelig.",
+     "simpleTitle": "Solid og robust konstruktion",
      "bias": "positive",
-     "key": "secure_contact",
-     "groupId": "b599d009-38de-462b-8fc6-2941a58ede69"
+     "key": "build-quality",
+     "groupId": "abce1454-0791-4544-a343-393111d6a8b5"
     },
-    "straightforward, functional performance": {
-     "sentimentAnalysis": "Produktet opfattes som enkelt, men pålideligt, og udfører sin tilsigtede funktion uden ekstra funktioner.",
-     "simpleTitle": "Enkel og funktionel ydeevne",
-     "bias": "meh",
-     "key": "straightforward_functionality",
-     "groupId": "61f4b9ff-c112-4fca-8e89-388ab5f2e89b"
+    "tidy, manageable cabling": {
+     "sentimentAnalysis": "Stikkene gør højttalerkablerne mere ryddelige og lettere at håndtere.",
+     "simpleTitle": "Ryddelig og håndterbar kabelføring",
+     "bias": "positive",
+     "key": "cable-management",
+     "groupId": "5040ca21-da66-4d31-b825-25d6012c2acd"
+    },
+    "some hardware and plastic details could be improved": {
+     "sentimentAnalysis": "Et næsten manglende skruegevind og mindre eksklusive plastikdæksler nævnes som mindre kvalitetsmangler.",
+     "simpleTitle": "Nogle hardware- og plastikdetaljer kunne forbedres",
+     "bias": "negative",
+     "key": "build-quality",
+     "groupId": "abce1454-0791-4544-a343-393111d6a8b5"
     }
    },
    "grouping": {
-    "b599d009-38de-462b-8fc6-2941a58ede69": {
+    "7e4cabc7-f726-43b2-9abd-c4702b661852": {
      "title": "Montering og tilslutning",
-     "id": "b599d009-38de-462b-8fc6-2941a58ede69",
+     "id": "7e4cabc7-f726-43b2-9abd-c4702b661852",
      "references": [
+      "a66d8b2a-c92d-490c-96ec-2bf565f23585",
       "4aa7ec21-301b-45c7-b80b-8306d0bdf1b1",
       "d41f5398-d966-4cf1-ba49-758f9d0b33e1",
       "5a0f488f-cd68-4095-ae18-32172a056bea",
@@ -226,21 +244,23 @@
       "1d3d2b8f-d7a3-44f9-8f13-28e10e35410f"
      ]
     },
-    "d362c700-a4a9-4153-995d-750e37197e39": {
+    "abce1454-0791-4544-a343-393111d6a8b5": {
      "title": "Byggekvalitet",
-     "id": "d362c700-a4a9-4153-995d-750e37197e39",
+     "id": "abce1454-0791-4544-a343-393111d6a8b5",
      "references": [
       "a66d8b2a-c92d-490c-96ec-2bf565f23585",
+      "42c55bc5-2d98-4a1e-9e72-2c062ebca04b",
       "b938216d-6420-405f-af0c-2f08c0d75e53",
+      "06fba2bf-4473-4967-b7df-c4c6b125e225",
       "c4233638-4468-467a-80be-68ab9222ad48"
      ]
     },
-    "61f4b9ff-c112-4fca-8e89-388ab5f2e89b": {
-     "title": "Funktionalitet",
-     "id": "61f4b9ff-c112-4fca-8e89-388ab5f2e89b",
+    "5040ca21-da66-4d31-b825-25d6012c2acd": {
+     "title": "Kabelhåndtering",
+     "id": "5040ca21-da66-4d31-b825-25d6012c2acd",
      "references": [
-      "9fdad95e-aa0b-41a1-93d5-be48a47f38bd",
-      "6710e0f3-5c2b-4fcb-939c-20726cb1ee19"
+      "fe8c345b-5e48-49c8-ad0a-a4d3ce5ab6ac",
+      "7670428b-fb82-4bdb-ae83-32a76e79b55a"
      ]
     }
    },

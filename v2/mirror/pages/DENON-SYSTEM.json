@@ -13,6 +13,15 @@
    "url": "/pladespiller/pladespiller-system/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fdb78bb4-0d10-479e-a5ae-ce80ab5a5999",
+   "e2457a93-0f3e-4b69-8c52-eca33b61ed6a",
+   "4e98237d-10e7-4699-96f7-5db48743e31d"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 263223,
   "skuCode": "DENON-SYSTEM",
@@ -215,93 +224,82 @@
      ],
      "parentProductCode": "DENDP3000NE",
      "reviews": {
-      "summary": "Denon DP-3000NE roses bredt som en førsteklasses pladespiller med smuk konstruktion, enestående rolig og stabil drift samt præcis udførelse. Vinylgengivelsen beskrives som varm, detaljeret, musikalsk og medrivende, især sammen med en god pickup, mens direct drive-systemet giver hurtig start og stop. Nem justering, fleksibilitet med pickupper og mulighed for opgradering giver ekstra værdi og gør investeringen attraktiv for krævende lyttere.",
+      "summary": "DENDP3000NE roses bredt som en førsteklasses og smukt bygget pladespiller med en usædvanligt støjsvag drift og en stabil, præcis gengivelse. Vinylafspilningen beskrives som varm, fyldig, lagdelt, detaljeret, slagkraftig og meget musikalsk, især med en god pickup. Nem justering, opgraderingsmuligheder og fleksibel pickup-kompatibilitet gør DENDP3000NE til et overbevisende high-end-valg.",
       "headlines": {
-       "premium construction and finish": {
-        "sentimentAnalysis": "Anmeldelserne roser konsekvent pladespilleren for at være solid, elegant, præcis og særdeles veludført.",
-        "simpleTitle": "Førsteklasses konstruktion og finish",
-        "bias": "positive",
-        "key": "build",
-        "groupId": "7996490c-b59d-4d9c-ac90-5b61de46ed5f"
-       },
-       "detailed, full and musical sound": {
-        "sentimentAnalysis": "Anmeldelserne beskriver en fyldigere, mere lagdelt, detaljeret og meget musikalsk vinylgengivelse.",
-        "simpleTitle": "Detaljeret, fyldig og musikalsk lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "692cc708-b951-4f5b-8f97-4aa00c14deb0"
-       },
-       "excellent sound with a suitable cartridge": {
-        "sentimentAnalysis": "Flere anmeldelser forbinder den fremragende og sensationelle lyd med brugen af en god pickup.",
-        "simpleTitle": "Fremragende lyd med en passende pickup",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "692cc708-b951-4f5b-8f97-4aa00c14deb0"
-       },
-       "stable, smooth direct-drive operation": {
-        "sentimentAnalysis": "Pladespilleren roses for ekstremt rolig og stabil drift samt hurtig start og stop.",
-        "simpleTitle": "Stabil og jævn direct drive-drift",
+       "stable, precise and fast operation": {
+        "sentimentAnalysis": "Pladespilleren roses for støjsvag drift, præcision, stabilitet og især den hurtige start og stop fra direct drive-motoren.",
+        "simpleTitle": "Stabil, præcis og hurtig betjening",
         "bias": "positive",
         "key": "operation",
-        "groupId": "8467b13b-42d6-47eb-ba7d-ea91d5d2dc47"
+        "groupId": "a04851c6-6d3d-4a0d-af5a-7a2cb8c93c48"
        },
-       "anti-skating adjustment can be problematic": {
-        "sentimentAnalysis": "En anmeldelse fortæller, at låsning af anti-skating-kontrollen flytter nålen, mens en anden fremhæver behovet for omhyggelig justering ved skift mellem pladeformater.",
-        "simpleTitle": "Anti-skating-justeringen kan være problematisk",
-        "bias": "negative",
+       "full, layered and highly detailed sound": {
+        "sentimentAnalysis": "Anmeldelserne roser en fyldig, lagdelt og meget detaljeret gengivelse, der gør instrumenterne tydelige og nyder godt af en god pickup.",
+        "simpleTitle": "Fyldig, lagdelt og meget detaljeret lyd",
+        "bias": "positive",
+        "key": "sound_quality",
+        "groupId": "eb8db86f-5d1f-41ac-9277-bce56896381e"
+       },
+       "premium construction and finish": {
+        "sentimentAnalysis": "Anmeldelserne beskriver konsekvent pladespilleren som solid, elegant, attraktiv og forarbejdet i enestående kvalitet.",
+        "simpleTitle": "Førsteklasses konstruktion og finish",
+        "bias": "positive",
+        "key": "build_quality",
+        "groupId": "bb23e73c-53e3-4341-a79e-7a88e228682d"
+       },
+       "flexible setup and upgrade options": {
+        "sentimentAnalysis": "Anmeldelserne fremhæver nem opsætning, nyttige justeringsmuligheder og understøttelse af forskellige pickupper og pladeformater.",
+        "simpleTitle": "Fleksibel opsætning og opgradering",
+        "bias": "positive",
         "key": "setup",
-        "groupId": "6ff09224-c17b-420e-bf6d-a7b0a40277b9"
+        "groupId": "5167bffc-b2e7-4420-97a2-db924d4ad4a7"
        }
       },
       "grouping": {
-       "7996490c-b59d-4d9c-ac90-5b61de46ed5f": {
+       "bb23e73c-53e3-4341-a79e-7a88e228682d": {
         "title": "Byggekvalitet og design",
-        "id": "7996490c-b59d-4d9c-ac90-5b61de46ed5f",
+        "id": "bb23e73c-53e3-4341-a79e-7a88e228682d",
         "references": [
          "5be5d92d-c831-4833-b21a-c66b58d59970",
          "75cd4f2e-6b88-42b6-9b83-94a0116d333b",
          "6de965f0-cee2-49c3-b90a-71eee653c1d5",
          "544d3f98-b947-4c39-a75d-612253412338",
          "43107ca3-9327-4744-958e-4f1b534989f8",
-         "6f4ac0ff-f2fd-4757-bb2d-c60404f80a01",
-         "40880211-282f-4d97-be11-442701eb995c",
-         "34fa7e64-9ba3-42da-acdd-31f809e683d7",
          "833b9064-bb51-43fb-bc5a-dd7b265765a",
          "47df1cce-f301-432a-828d-2c20ffaa5aaa",
          "eaafc172-2c9a-417b-9881-2a103dabfaa6"
         ]
        },
-       "692cc708-b951-4f5b-8f97-4aa00c14deb0": {
+       "eb8db86f-5d1f-41ac-9277-bce56896381e": {
         "title": "Lydkvalitet",
-        "id": "692cc708-b951-4f5b-8f97-4aa00c14deb0",
+        "id": "eb8db86f-5d1f-41ac-9277-bce56896381e",
         "references": [
          "0994a569-dc6d-43a3-bdaa-d337373d0b49",
          "6fea635b-6363-4566-8cf4-cbb4449d2845",
-         "2cd9e4e4-917c-4b9c-99e8-8224d634d359",
-         "833b9064-bb51-43fb-bc5a-dd7b265765a",
+         "6f4ac0ff-f2fd-4757-bb2d-c60404f80a01",
          "2a3d1231-3506-4449-b297-3916a524976a",
          "d5335d0e-b8a2-4813-ac3c-6b54b952d446",
          "eaafc172-2c9a-417b-9881-2a103dabfaa6"
         ]
        },
-       "8467b13b-42d6-47eb-ba7d-ea91d5d2dc47": {
+       "a04851c6-6d3d-4a0d-af5a-7a2cb8c93c48": {
         "title": "Betjening og stabilitet",
-        "id": "8467b13b-42d6-47eb-ba7d-ea91d5d2dc47",
+        "id": "a04851c6-6d3d-4a0d-af5a-7a2cb8c93c48",
         "references": [
          "5be5d92d-c831-4833-b21a-c66b58d59970",
          "43107ca3-9327-4744-958e-4f1b534989f8",
          "6f4ac0ff-f2fd-4757-bb2d-c60404f80a01",
+         "40880211-282f-4d97-be11-442701eb995c",
          "34fa7e64-9ba3-42da-acdd-31f809e683d7"
         ]
        },
-       "6ff09224-c17b-420e-bf6d-a7b0a40277b9": {
-        "title": "Opsætning og justering",
-        "id": "6ff09224-c17b-420e-bf6d-a7b0a40277b9",
+       "5167bffc-b2e7-4420-97a2-db924d4ad4a7": {
+        "title": "Opsætning og justerbarhed",
+        "id": "5167bffc-b2e7-4420-97a2-db924d4ad4a7",
         "references": [
          "e1f4fe29-767c-45f7-973c-5986c29ebb72",
          "34fa7e64-9ba3-42da-acdd-31f809e683d7",
-         "f77bba28-e31c-4608-bf0c-c8d8d6bef02f",
-         "eaafc172-2c9a-417b-9881-2a103dabfaa6"
+         "f77bba28-e31c-4608-bf0c-c8d8d6bef02f"
         ]
        }
       },
@@ -337,7 +335,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 8,
+        "availableQuantity": 7,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "29.999,-",
@@ -389,8 +387,8 @@
         "productCode": "DENDCD3000NEPS"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager onsdag den 23. december",
-        "deliveryDate": "2026-12-23T00:00:00Z",
+        "description": "Forventes på lager lørdag den 30. januar",
+        "deliveryDate": "2027-01-30T00:00:00Z",
         "canBuyOnline": true,
         "inventoryStatusType": "notInStockAtpDate"
        },
@@ -428,8 +426,8 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager onsdag den 23. december",
-    "deliveryDate": "2026-12-23T00:00:00Z",
+    "description": "Forventes på lager lørdag den 30. januar",
+    "deliveryDate": "2027-01-30T00:00:00Z",
     "canBuyOnline": true,
     "numberOfStoresExperiencePartly": 2
    }
@@ -437,15 +435,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.94047619047619,
-   "count": 84,
-   "reviewCount": 53,
+   "rating": 4.94117647058824,
+   "count": 85,
+   "reviewCount": 54,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 3,
-    "5": 80
+    "5": 81
    }
   },
   "boxContent": [],

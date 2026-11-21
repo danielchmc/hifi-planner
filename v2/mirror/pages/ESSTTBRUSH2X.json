@@ -13,6 +13,14 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "4cb90bf2-86db-4cf7-9fc1-10288fb1df3d",
+   "e59e2fbc-408d-4575-b617-55c70c023d78"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236770,
   "skuCode": "ESSTTBRUSH2X",
@@ -112,7 +120,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 219,
+     "availableQuantity": 208,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -136,36 +144,36 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En meget effektiv pladebørste, der hurtigt fjerner støv og holder vinylen velplejet. Børsten virker praktisk, pålidelig og sikker til regelmæssig brug og bliver taget godt imod af vinylsamlere. Håndtering og design er ikke perfekte, og der er enkelte bekymringer om rengøring af børsten eller risikoen for ridser.",
+   "summary": "ESSTTBRUSH2X er en praktisk og effektiv pladebørste, der fjerner støv og hjælper med at holde vinylplader velplejede. Børsten giver en varm, punchy og immersiv oplevelse i plejen af værdifulde pladesamlinger og har stor værdi i hverdagen med enkel betjening. Enkelte brugere finder designet uhåndterligt, rengøringen vanskelig eller børsten muligvis for hård ved pladerne.",
    "headlines": {
-    "removes dust effectively": {
-     "sentimentAnalysis": "Børsten roses gentagne gange for hurtigt og grundigt at fjerne støv fra plader.",
-     "simpleTitle": "Fjerner støv effektivt",
+    "effectively removes dust from records": {
+     "sentimentAnalysis": "Børsten roses gentagne gange for effektivt at fjerne støv og holde plader rene.",
+     "simpleTitle": "Fjerner effektivt støv fra plader",
      "bias": "positive",
      "key": "cleaning",
-     "groupId": "cb09644c-3e16-4959-a97a-56151ba2aede"
+     "groupId": "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e"
     },
-    "handling and design can be awkward": {
-     "sentimentAnalysis": "Nogle anmeldelser kritiserer den upraktiske form og unødvendige designdetaljer.",
-     "simpleTitle": "Håndtering og design kan være upraktisk",
+    "design can feel awkward": {
+     "sentimentAnalysis": "Flere anmeldelser peger på uhåndterlig betjening eller et mindre vellykket design.",
+     "simpleTitle": "Designet kan virke uhåndterligt",
      "bias": "negative",
-     "key": "usability",
-     "groupId": "a0c44edf-3635-4989-85ee-18d86676669b"
+     "key": "handling",
+     "groupId": "a9af9832-17ec-4038-8ddd-b2dafda9649d"
     },
-    "easy to use on records": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver brugen under pladerengøring som enkel og praktisk.",
-     "simpleTitle": "Nem at bruge på plader",
+    "simple and convenient to use": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en enkel og praktisk betjening.",
+     "simpleTitle": "Nem og praktisk at bruge",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "a0c44edf-3635-4989-85ee-18d86676669b"
+     "key": "handling",
+     "groupId": "a9af9832-17ec-4038-8ddd-b2dafda9649d"
     }
    },
    "grouping": {
-    "cb09644c-3e16-4959-a97a-56151ba2aede": {
+    "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e": {
      "title": "Rengøringsevne",
-     "id": "cb09644c-3e16-4959-a97a-56151ba2aede",
+     "id": "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e",
      "references": [
-      "f7fd5359-94da-4242-a08b-d8874797037a",
+      "f7fd5359-cbac-44bc-bf36-978da594c3bd",
       "bee6a9a0-aeab-4929-a1bf-6745dac5a3d0",
       "3e6cb399-db00-4ff5-976e-7c7d005d438b",
       "5f54f24c-5d1f-4b7a-b592-d1c4e738a448",
@@ -175,9 +183,9 @@
       "a753d7c3-7979-4c1c-93cc-d5168f82ce87"
      ]
     },
-    "a0c44edf-3635-4989-85ee-18d86676669b": {
+    "a9af9832-17ec-4038-8ddd-b2dafda9649d": {
      "title": "Brugervenlighed og design",
-     "id": "a0c44edf-3635-4989-85ee-18d86676669b",
+     "id": "a9af9832-17ec-4038-8ddd-b2dafda9649d",
      "references": [
       "bee6a9a0-aeab-4929-a1bf-6745dac5a3d0",
       "6108745d-c44f-4f45-b3e4-01379ba7bc0c",

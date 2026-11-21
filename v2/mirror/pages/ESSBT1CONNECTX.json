@@ -13,6 +13,18 @@
    "url": "/stereo/musikstreamer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Fra beskrivelsen": "Udgange: L/R (RCA), optisk digital"
+  },
+  "gallery": [
+   "ad269746-1925-46f4-813f-b2120262f52b",
+   "98ba338b-0142-4a04-98ce-3e1899e392fb",
+   "6b8f13b3-769f-4a66-b27b-4c4794582a69"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 257364,
   "skuCode": "ESSBT1CONNECTX",
@@ -130,7 +142,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 483,
+     "availableQuantity": 481,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -179,71 +191,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSBT1CONNECTX får begejstret ros for nem opsætning, stabil drift og et kompakt design. Lyden opleves som klar, varm og fyldig med en behagelig lytteoplevelse, der overgår forventningerne. En mindre udfordring med modtagelsen nævnes, men den samlede vurdering er stadig meget positiv og klart anbefalelsesværdig.",
+   "summary": "ESSBT1CONNECTX leverer varm, klar og fyldig lyd med nem og problemfri opsætning. Det kompakte design og den pålidelige funktion i hverdagen gør enheden særligt praktisk. Den gode værdi og brede tilfredshed overskygges kun af en enkelt rapport om dårlig modtagelse.",
    "headlines": {
-    "reliable performance and strong value": {
-     "sentimentAnalysis": "Anmeldelserne beskriver stabil drift, høj tilfredshed og især god værdi for pengene.",
-     "simpleTitle": "Pålidelig ydeevne og god værdi",
+    "simple installation and connection": {
+     "sentimentAnalysis": "Flere anmeldelser roser produktet for at være nemt at installere, tilslutte og bruge.",
+     "simpleTitle": "Nem installation og tilslutning",
      "bias": "positive",
-     "key": "performance",
-     "groupId": "04948db9-5a69-4592-b3cf-8a95ba87e516"
+     "key": "setup_ease",
+     "groupId": "699f408e-4ca1-42e6-a73c-0413781d2d41"
     },
-    "easy to install and use": {
-     "sentimentAnalysis": "Produktet beskrives konsekvent som nemt at tilslutte, installere og betjene.",
-     "simpleTitle": "Nem at installere og bruge",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "684ba8d0-64a6-445f-b718-fb1fb85f0d2e"
-    },
-    "clear and enjoyable sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den gode, klare og behagelige lyd.",
+    "clear, enjoyable sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som god, og i ét tilfælde overgik ydelsen forventningerne.",
      "simpleTitle": "Klar og behagelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "4a4eae44-752b-487b-bbb4-cfaf1f15e3c7"
+     "key": "sound_quality",
+     "groupId": "df65949e-7d37-41d2-9097-ddc7e3b1d3e8"
+    },
+    "reliable everyday operation": {
+     "sentimentAnalysis": "Anmeldelserne viser samstemmende, at produktet fungerer godt og lever op til forventningerne.",
+     "simpleTitle": "Pålidelig funktion i hverdagen",
+     "bias": "positive",
+     "key": "functionality",
+     "groupId": "960dc356-cfbf-4100-9d0f-3db4958f29e5"
     }
    },
    "grouping": {
-    "04948db9-5a69-4592-b3cf-8a95ba87e516": {
-     "title": "Ydeevne og pålidelighed",
-     "id": "04948db9-5a69-4592-b3cf-8a95ba87e516",
+    "699f408e-4ca1-42e6-a73c-0413781d2d41": {
+     "title": "Nem opsætning og brug",
+     "id": "699f408e-4ca1-42e6-a73c-0413781d2d41",
      "references": [
-      "c8a74159-1bac-4844-bd4d-93184196c002",
+      "d7839ed3-6376-4165-afc6-d0f6423d01c7",
+      "cc6bbac0-9281-4cfb-aa52-6d670048a9cf",
+      "f815bb23-2505-46ce-9621-cce218a0f9fc",
+      "258abf5d-4168-49f6-a7d5-e95b4f01a9aa"
+     ]
+    },
+    "df65949e-7d37-41d2-9097-ddc7e3b1d3e8": {
+     "title": "Lydkvalitet",
+     "id": "df65949e-7d37-41d2-9097-ddc7e3b1d3e8",
+     "references": [
+      "d7839ed3-6376-4165-afc6-d0f6423d01c7",
+      "cc6bbac0-9281-4cfb-aa52-6d670048a9cf",
+      "258abf5d-4168-49f6-a7d5-e95b4f01a9aa"
+     ]
+    },
+    "960dc356-cfbf-4100-9d0f-3db4958f29e5": {
+     "title": "Funktionalitet",
+     "id": "960dc356-cfbf-4100-9d0f-3db4958f29e5",
+     "references": [
       "ffc87dfe-aedb-478c-b76b-779d73defef8",
       "f84b4ec0-4478-463c-8efe-7fb44375b5d1",
-      "f815bb23-2505-46ce-9621-cce218a0f9fc",
-      "e7fbe2f3-dc38-4b1f-a3ee-bcb19521c7be"
-     ]
-    },
-    "684ba8d0-64a6-445f-b718-fb1fb85f0d2e": {
-     "title": "Opsætning og brugervenlighed",
-     "id": "684ba8d0-64a6-445f-b718-fb1fb85f0d2e",
-     "references": [
-      "d7839ed3-6376-4165-afc6-d0f6423d01c7",
-      "cc6bbac0-9281-4cfb-aa52-6d670048a9cf",
-      "f815bb23-2505-46ce-9621-cce218a0f9fc",
-      "258abf5d-4168-49f6-a7d5-e95b4f01a9aa"
-     ]
-    },
-    "4a4eae44-752b-487b-bbb4-cfaf1f15e3c7": {
-     "title": "Lydkvalitet",
-     "id": "4a4eae44-752b-487b-bbb4-cfaf1f15e3c7",
-     "references": [
-      "d7839ed3-6376-4165-afc6-d0f6423d01c7",
-      "cc6bbac0-9281-4cfb-aa52-6d670048a9cf",
-      "258abf5d-4168-49f6-a7d5-e95b4f01a9aa"
+      "f815bb23-2505-46ce-9621-cce218a0f9fc"
      ]
     }
    },
-   "rating": 4.61111111111111,
-   "count": 18,
-   "reviewCount": 10,
+   "rating": 4.63157894736842,
+   "count": 19,
+   "reviewCount": 11,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 5,
-    "5": 12
+    "5": 13
    }
   },
   "brandName": "Essentials",

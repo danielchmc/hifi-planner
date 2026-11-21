@@ -13,6 +13,14 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "2c8508cc-5925-429a-819b-36d808d82401",
+   "7cabd22f-ec67-412b-b8af-0ab5368d701f"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 212767,
   "skuCode": "ESSPR1BANANAX",
@@ -177,97 +185,116 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "ESSPR1BANANAX-bananstik har en robust konstruktion, sikre forbindelser til kabler og forstærkere samt generelt nem og pålidelig montering. Den tætte pasform giver stabil kontakt, og flere anmeldelser beskriver forbedret eller renere lyd med en varm, fyldig og omsluttende gengivelse. De største ulemper er den manglende unbrakonøgle eller skruetrækker samt lejlighedsvise problemer med at få stikkene ind i terminalerne.",
+   "summary": "Disse bananstik føles robuste, ser elegante ud og giver sikre forbindelser med lav overgangsmodstand til højttalerkabler til en rimelig pris. Monteringen kan være besværlig, fordi stikkene sidder meget stramt, og den nødvendige unbrakonøgle ikke følger med. Den varme og dynamiske lydforbedring værdsættes af flere lyttere, selv om den hørbare gevinst ikke er universel.",
    "headlines": {
-    "high-quality, solid construction": {
-     "sentimentAnalysis": "Hardwaren roses gentagne gange for at være solid, robust, veldesignet og attraktiv.",
-     "simpleTitle": "Høj kvalitet og solid konstruktion",
+    "robust, refined construction": {
+     "sentimentAnalysis": "Stikkene beskrives gentagne gange som solide, robuste, veludførte, flotte og passende i størrelsen.",
+     "simpleTitle": "Robust og elegant konstruktion",
      "bias": "positive",
-     "key": "solid_construction",
-     "groupId": "2ff943cb-4426-435c-9121-9375aabd27b8"
+     "key": "build-quality",
+     "groupId": "a52fab91-b22e-461e-b699-8b5d0b77acc4"
     },
-    "secure, stable connections": {
-     "sentimentAnalysis": "Stikkene giver fast og pålidelig kontakt i forstærker- og højttalerterminaler samt lav modstand og sikker kabelfastgørelse.",
-     "simpleTitle": "Sikre, stabile forbindelser",
+    "secure, low-loss connections": {
+     "sentimentAnalysis": "Flere anmeldelser roser den faste pasform, den pålidelige kontakt, den sikre kabelfastgørelse og det minimale signaltab.",
+     "simpleTitle": "Sikre forbindelser med lavt tab",
      "bias": "positive",
-     "key": "secure_connections",
-     "groupId": "4b7b91ee-0a63-4b3b-aaa3-33d519a3d10e"
+     "key": "fit-contact",
+     "groupId": "fffd7711-0422-4bf1-9b0d-9e222a297a14"
     },
-    "improved sound": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en tydeligt forbedret og mere omsluttende lydgengivelse efter monteringen.",
-     "simpleTitle": "Forbedret lyd",
-     "bias": "positive",
-     "key": "improved_sound",
-     "groupId": "622e27a3-9588-4c9c-b807-cf8489846eef"
-    },
-    "missing hex key or screwdriver": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer, at det lille værktøj til fastgørelse af kablet mangler.",
-     "simpleTitle": "Manglende unbrakonøgle eller skruetrækker",
+    "very tight insertion": {
+     "sentimentAnalysis": "Flere anmeldelser nævner, at der kræves betydelig kraft og i ét tilfælde en tang for at sætte stikkene i bøsningerne.",
+     "simpleTitle": "Meget stram isætning",
      "bias": "negative",
-     "key": "missing_tool",
-     "groupId": "6cfe2b80-1ad8-47e2-a6f5-15e3556d181e"
+     "key": "fit-contact",
+     "groupId": "fffd7711-0422-4bf1-9b0d-9e222a297a14"
     },
-    "tight fit can make installation difficult": {
-     "sentimentAnalysis": "Den tætte pasform sikrer forbindelsen, men kan kræve betydelig kraft eller tilpasning ved isætning.",
-     "simpleTitle": "Den tætte pasform kan gøre monteringen vanskelig",
+    "good value for money": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer, at konstruktion, forbindelsesydelse og samlet kvalitet prisen værd.",
+     "simpleTitle": "God værdi for pengene",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "9c92bf38-99bd-4819-ba6e-c94829e15097"
+    },
+    "hex key is not included": {
+     "sentimentAnalysis": "Den manglende unbrakonøgle er en tilbagevendende monteringskritik og virker skuffende i forhold til prisen.",
+     "simpleTitle": "Unbrakonøgle medfølger ikke",
      "bias": "negative",
-     "key": "difficult_fit",
-     "groupId": "6cfe2b80-1ad8-47e2-a6f5-15e3556d181e"
+     "key": "installation",
+     "groupId": "101c9317-6f66-467d-8188-065133698761"
+    },
+    "audible sound improvement": {
+     "sentimentAnalysis": "Flere lyttere oplever en tydelig forbedring, hvor opgraderingen gør gengivelsen mere omsluttende og raffineret.",
+     "simpleTitle": "Hørbar lydforbedring",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "94b2a317-d1a2-41fd-a9d6-fa06e25bdbab"
     }
    },
    "grouping": {
-    "6cfe2b80-1ad8-47e2-a6f5-15e3556d181e": {
-     "title": "Pasform og montering",
-     "id": "6cfe2b80-1ad8-47e2-a6f5-15e3556d181e",
+    "fffd7711-0422-4bf1-9b0d-9e222a297a14": {
+     "title": "Pasform og kontakt",
+     "id": "fffd7711-0422-4bf1-9b0d-9e222a297a14",
      "references": [
       "a327ce2c-6840-4a72-b608-26edda2d4948",
-      "7afba1df-53d1-4751-84e7-0de8a7de6b27",
       "53d04373-3b50-47b7-acc2-4b019c7d5270",
-      "1adcbeef-ad29-4b9f-8d47-51bad96ae629",
+      "b0c18929-b453-4468-bf94-2ee5db30676f",
       "ffa5fce2-52bd-4463-884b-33a2ea4a9a6f",
-      "3358c801-13c3-42f1-9c4e-4aefffd8d7e3",
-      "dfec7ae1-92c1-4c8b-900e-50a734e50e4c",
-      "6bda59f1-9feb-47bd-a5c0-b2ab29b1fd0f"
+      "217600a7-1a0e-4950-80df-a0fa38cb32ca",
+      "a0f6afcd-1957-4aaa-8842-7224f86bac31",
+      "546f61a9-45f1-4bcf-a622-d54cdca4784d",
+      "6bda59f1-9feb-47bd-a5c0-b2ab29b1fd0f",
+      "863eb035-b5e9-482d-84b7-6ab1895d6048",
+      "d566970a-1a47-4ef7-bc61-f333d71d9aa8"
      ]
     },
-    "2ff943cb-4426-435c-9121-9375aabd27b8": {
+    "a52fab91-b22e-461e-b699-8b5d0b77acc4": {
      "title": "Byggekvalitet",
-     "id": "2ff943cb-4426-435c-9121-9375aabd27b8",
+     "id": "a52fab91-b22e-461e-b699-8b5d0b77acc4",
      "references": [
       "ac8cae87-1cde-4c73-a8fb-5f46bf2fa56f",
-      "15ac896e-4cb7-4298-b464-84d8660fb518",
       "217600a7-1a0e-4950-80df-a0fa38cb32ca",
       "3358c801-13c3-42f1-9c4e-4aefffd8d7e3",
       "2bce3f7e-7c4c-45f3-96ee-adfef1178786",
       "043e7140-fcac-4a3f-b937-993139c51359",
       "a0f6afcd-1957-4aaa-8842-7224f86bac31",
-      "546f61a9-45f1-4bcf-a622-d54cdca4784d"
+      "546f61a9-45f1-4bcf-a622-d54cdca4784d",
+      "e6ce0642-4a86-450b-b48e-91de2360dcc7",
+      "15ac896e-4cb7-4298-b464-84d8660fb518"
      ]
     },
-    "4b7b91ee-0a63-4b3b-aaa3-33d519a3d10e": {
-     "title": "Tilslutning og kontakt",
-     "id": "4b7b91ee-0a63-4b3b-aaa3-33d519a3d10e",
+    "101c9317-6f66-467d-8188-065133698761": {
+     "title": "Montering",
+     "id": "101c9317-6f66-467d-8188-065133698761",
      "references": [
       "a327ce2c-6840-4a72-b608-26edda2d4948",
-      "b0c18929-b453-4468-bf94-2ee5db30676f",
-      "1e460c5e-8883-4470-b002-1faca686538b",
-      "863eb035-b5e9-482d-84b7-6ab1895d6048",
-      "217600a7-1a0e-4950-80df-a0fa38cb32ca",
-      "a0f6afcd-1957-4aaa-8842-7224f86bac31",
-      "546f61a9-45f1-4bcf-a622-d54cdca4784d",
+      "7afba1df-53d1-4751-84e7-0de8a7de6b27",
+      "53d04373-3b50-47b7-acc2-4b019c7d5270",
+      "1adcbeef-ad29-4b9f-8d47-51bad96ae629",
+      "3358c801-13c3-42f1-9c4e-4aefffd8d7e3",
+      "dfec7ae1-92c1-4c8b-900e-50a734e50e4c",
       "6bda59f1-9feb-47bd-a5c0-b2ab29b1fd0f"
      ]
     },
-    "622e27a3-9588-4c9c-b807-cf8489846eef": {
+    "94b2a317-d1a2-41fd-a9d6-fa06e25bdbab": {
      "title": "Lydkvalitet",
-     "id": "622e27a3-9588-4c9c-b807-cf8489846eef",
+     "id": "94b2a317-d1a2-41fd-a9d6-fa06e25bdbab",
      "references": [
       "941bd7b1-1467-433a-8cb9-c85a1298d3d1",
-      "b0c18929-b453-4468-bf94-2ee5db30676f",
       "043e7140-fcac-4a3f-b937-993139c51359",
       "1ad05e43-6b50-4938-b6f6-88592ec4d2c3",
       "a0f6afcd-1957-4aaa-8842-7224f86bac31",
       "18a05d27-40e7-4a5c-b79e-fc9a6450526c"
+     ]
+    },
+    "9c92bf38-99bd-4819-ba6e-c94829e15097": {
+     "title": "Værdi for pengene",
+     "id": "9c92bf38-99bd-4819-ba6e-c94829e15097",
+     "references": [
+      "217600a7-1a0e-4950-80df-a0fa38cb32ca",
+      "043e7140-fcac-4a3f-b937-993139c51359",
+      "a0fafa1a-6bde-4247-aa86-2038af37cbcc",
+      "a0f6afcd-1957-4aaa-8842-7224f86bac31",
+      "546f61a9-45f1-4bcf-a622-d54cdca4784d"
      ]
     }
    },

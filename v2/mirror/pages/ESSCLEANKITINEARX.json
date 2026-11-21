@@ -13,6 +13,16 @@
    "url": "/horetelefoner/horetelefon-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e10432eb-d611-4e56-b748-f9effa9694d6",
+   "89e74236-519d-4c6f-a717-3ceb5f0da8a0",
+   "81857c1e-81a1-4bc2-b586-48c4455779ca",
+   "1df76d8a-8b37-4043-83b9-c23c198aa73b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243040,
   "skuCode": "ESSCLEANKITINEARX",
@@ -98,7 +108,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 634,
+     "availableQuantity": 622,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -128,27 +138,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCLEANKITINEARX giver varm, punchy og omsluttende renhed til in-ear-udstyr med effektive resultater ved daglig rengøring. Det praktiske sæt virker pålideligt og nyttigt og bidrager til en frisk og klar lytteoplevelse. Den høje samlede tilfredshed gør produktet let at anbefale.",
+   "summary": "ESSCLEANKITINEARX giver en varm og slagkraftig rengøring af in-ear-udstyr og opleves generelt som effektivt og nyttigt. Rengøringssættet leverer et omsluttende praktisk resultat og klarer daglige rengøringsopgaver med tilfredsstillende lethed. En mindre reservation består: Nogle købere har endnu ikke brugt sættet, mens én person oplever kun delvis kompatibilitet med hovedtelefoner.",
    "headlines": {
-    "effective cleaning": {
-     "sentimentAnalysis": "Rengøringssættet roses gentagne gange for at gøre in-ear-udstyr rent og levere effektive resultater.",
-     "simpleTitle": "Effektiv rengøring",
+    "effective cleaning results": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt sættet som effektivt, nyttigt og i stand til at udføre den tilsigtede rengøringsopgave.",
+     "simpleTitle": "Effektive rengøringsresultater",
      "bias": "positive",
      "key": "effective-cleaning",
-     "groupId": "2461bd7c-15ad-4534-8866-ecd57549a02a"
+     "groupId": "1de0137e-809c-481e-9f33-adf1f245e572"
     },
-    "does what it should": {
-     "sentimentAnalysis": "Produktet opfattes som pålideligt og i stand til at opfylde sit formål.",
-     "simpleTitle": "Gør det, den skal",
+    "positive overall impression": {
+     "sentimentAnalysis": "Produktet får en bredt begejstret anbefaling og beskrives som et virkelig godt rensesæt.",
+     "simpleTitle": "Positivt helhedsindtryk",
      "bias": "positive",
-     "key": "reliable-functionality",
-     "groupId": "2461bd7c-15ad-4534-8866-ecd57549a02a"
+     "key": "positive-impression",
+     "groupId": "1de0137e-809c-481e-9f33-adf1f245e572"
+    },
+    "several buyers have not used it yet": {
+     "sentimentAnalysis": "Noget af feedbacken kan ikke vurdere den praktiske ydeevne, fordi produktet endnu ikke er blevet brugt.",
+     "simpleTitle": "Flere købere har endnu ikke brugt det",
+     "bias": "meh",
+     "key": "not-yet-used",
+     "groupId": "9fec640e-ec64-4ca6-b68e-e1bafbd31d6a"
     }
    },
    "grouping": {
-    "2461bd7c-15ad-4534-8866-ecd57549a02a": {
-     "title": "Rengøringseffektivitet",
-     "id": "2461bd7c-15ad-4534-8866-ecd57549a02a",
+    "1de0137e-809c-481e-9f33-adf1f245e572": {
+     "title": "Rengøringsevne",
+     "id": "1de0137e-809c-481e-9f33-adf1f245e572",
      "references": [
       "24c0299d-25d0-429a-83c6-b9ee13f3f8fc",
       "c7b47a54-7689-47ca-9229-4c7811339cc8",
@@ -157,6 +174,14 @@
       "31beb8f8-6309-4012-93ee-04c2adf1ad1f",
       "304490a2-d12a-4a7c-9d41-4c28c0ba0f62",
       "401e2024-b7e1-4fda-abeb-c0572f747056"
+     ]
+    },
+    "9fec640e-ec64-4ca6-b68e-e1bafbd31d6a": {
+     "title": "Brugsstatus",
+     "id": "9fec640e-ec64-4ca6-b68e-e1bafbd31d6a",
+     "references": [
+      "8848beaa-477f-4357-b09f-734317785f2f",
+      "aca0ee34-5c3e-420b-9db5-97120c3fa3e5"
      ]
     }
    },

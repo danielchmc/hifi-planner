@@ -13,6 +13,13 @@
    "url": "/kabler/subwoofer-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "3c8f032f-c716-4434-ac8a-531f5f581e86"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212763,
   "skuCode": "ESSCL1SUBX",
@@ -133,7 +140,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 1340,
+     "availableQuantity": 1298,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -212,7 +219,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 489,
+     "availableQuantity": 468,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -290,8 +297,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 309,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 299,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -313,151 +320,177 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1SUBX betragtes generelt som et pålideligt og fleksibelt subwooferkabel, der er nemt at tilslutte og leverer en ren, punchy og velkontrolleret bas uden brummen eller støj. Den slanke konstruktion gør installationen diskret og praktisk, mens prisen generelt vurderes som rimelig. Enkelte anmeldelser nævner dog, at kablet virker tyndt, koster mere end simple alternativer eller kan kræve en Y-adapter til subwoofere med to indgange.",
+   "summary": "ESSCL1SUBX betragtes bredt som et pålideligt og brugervenligt subwooferkabel, der leverer ren, punchy og kontrolleret bas uden brum eller støj. Den fleksible og slanke konstruktion gør det nemt at føre kablet diskret, mens solide stik sikrer en stabil forbindelse. Enkelte anmeldelser nævner behov for en Y-adapter, bekymringer om den tynde konstruktion eller afskærmning samt en lidt høj pris, men den samlede oplevelse af ydelse og værdi er meget positiv.",
    "headlines": {
-    "slim, flexible and easy to hide": {
-     "sentimentAnalysis": "Den kompakte og smidige konstruktion er nem at håndtere, føre gennem kabelkanaler og skjule i et setup.",
-     "simpleTitle": "Slankt, fleksibelt og nemt at skjule",
+    "clean, powerful and detailed bass": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klar, fyldig og punchy bas med god kontrol og uden mudret lyd.",
+     "simpleTitle": "Ren, kraftfuld og detaljeret bas",
      "bias": "positive",
-     "key": "design",
-     "groupId": "bcf92fd4-b425-48bc-a704-ec2a5b72f630"
+     "key": "sound",
+     "groupId": "542709be-cb6c-420f-92df-3f3c6bebef36"
     },
-    "good value for a functional cable": {
-     "sentimentAnalysis": "Mange anmeldelser vurderer kablet som rimeligt eller attraktivt prissat i forhold til den pålidelige ydelse og lydkvalitet.",
-     "simpleTitle": "God værdi for et funktionelt kabel",
+    "reliable, trouble-free connection": {
+     "sentimentAnalysis": "De fleste kommentarer nævner, at kablet virker med det samme, har sikre stik og leverer et rent signal uden knitren, brum eller støj.",
+     "simpleTitle": "Pålidelig og problemfri forbindelse",
      "bias": "positive",
-     "key": "value",
-     "groupId": "4cb3dbb1-282e-4d91-946b-14490af14ce0"
+     "key": "connection",
+     "groupId": "0cfe8562-bee0-4563-bdf8-b051840ebf90"
     },
-    "clean, punchy and powerful bass": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, fyldig, direkte og punchy bas med en markant forbedring af den samlede lyd.",
-     "simpleTitle": "Ren, punchy og kraftfuld bas",
+    "slim and easy to hide": {
+     "sentimentAnalysis": "Det fleksible og kompakte kabel roses gentagne gange for nem håndtering og diskret føring gennem rum eller kabelkanaler.",
+     "simpleTitle": "Slankt og nemt at skjule",
      "bias": "positive",
-     "key": "signal",
-     "groupId": "f45e6880-ce6a-478a-96e7-a7249b95d7ef"
+     "key": "flexibility",
+     "groupId": "24d89b43-d10a-4596-be3d-9826366fb4dd"
     },
-    "reliable, quiet signal transmission": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for at fungere som forventet og holde signalet klart, stabilt og fri for brummen, knitren og støj.",
-     "simpleTitle": "Pålidelig og støjfri signaloverførsel",
-     "bias": "positive",
-     "key": "signal",
-     "groupId": "f45e6880-ce6a-478a-96e7-a7249b95d7ef"
-    },
-    "two-input subwoofers may need a Y-adapter": {
-     "sentimentAnalysis": "Anmeldelserne bemærker, at ét kabel fungerer, men at brug af begge indgange på visse subwoofere kræver en separat splitter eller Y-adapter.",
-     "simpleTitle": "Subwoofere med to indgange kan kræve en Y-adapter",
-     "bias": "meh",
-     "key": "compatibility",
-     "groupId": "266e3b6b-69d0-4eea-a458-0d7e7b0d70e9"
-    },
-    "some consider the price high": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kablet som dyrt, selv om funktionalitet og ydelse accepteres.",
-     "simpleTitle": "Nogle synes, prisen er høj",
+    "a Y-adapter may be needed": {
+     "sentimentAnalysis": "Flere anmeldelser bemærker, at opsætninger med to subwooferindgange kan kræve en separat splitter eller Y-adapter.",
+     "simpleTitle": "En Y-adapter kan være nødvendig",
      "bias": "negative",
-     "key": "value",
-     "groupId": "4cb3dbb1-282e-4d91-946b-14490af14ce0"
+     "key": "connection",
+     "groupId": "0cfe8562-bee0-4563-bdf8-b051840ebf90"
     },
     "thin construction can feel vulnerable": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne kritiserer den uskærmede eller meget tynde konstruktion som mindre robust, sårbar eller billig i følelsen.",
-     "simpleTitle": "Den tynde konstruktion kan virke sårbar",
+     "sentimentAnalysis": "Et mindre antal anmeldelser kritiserer kablet for at være meget tyndt, utilstrækkeligt afskærmet eller lidt billigt at se på.",
+     "simpleTitle": "Den tynde konstruktion kan føles skrøbelig",
      "bias": "negative",
-     "key": "design",
-     "groupId": "bcf92fd4-b425-48bc-a704-ec2a5b72f630"
+     "key": "flexibility",
+     "groupId": "24d89b43-d10a-4596-be3d-9826366fb4dd"
     }
    },
    "grouping": {
-    "f45e6880-ce6a-478a-96e7-a7249b95d7ef": {
-     "title": "Signalkvalitet",
-     "id": "f45e6880-ce6a-478a-96e7-a7249b95d7ef",
+    "0cfe8562-bee0-4563-bdf8-b051840ebf90": {
+     "title": "Tilslutning og ydeevne",
+     "id": "0cfe8562-bee0-4563-bdf8-b051840ebf90",
      "references": [
+      "3b5c7788-3d78-461a-a29b-b2cec4ba0de5",
+      "3bfbbd36-ac0f-4c8d-9c59-7635d70e135a",
+      "bfe4edec-9266-4c05-bd84-38f0653c589e",
       "f0118497-d96b-48ce-98d2-aa29dccb4d93",
-      "e54bae26-2a7e-4445-a2d2-c1e53263e5bd",
+      "99e9d91d-9121-4fd5-afb4-f3cb2e54b3f1",
+      "f9adb29f-2c0c-40b7-af78-850b691c1787",
+      "749033ca-7b5e-40e0-88e0-9524343ed674",
+      "51dfe06e-0bfd-4051-8cbd-1d0dbad64e44",
       "4b9d26b9-49dd-44b3-b723-7720d9eaee29",
-      "d74ae4c1-b536-4764-9765-d3e051a9d3b4",
-      "20d58ee6-75c8-4c07-adff-4560c01edc6c",
+      "91ade597-bbdc-4c25-8d39-820c8dfbb8ea",
+      "75f1ec51-d13c-4ea6-9ea4-ef2e5588a7d0",
+      "dcdab245-7a7f-48a3-aedc-5d49c8e2ad5d",
       "0aa83749-ebad-4d34-ad5b-c05c3d7581f7",
       "bffb0b3e-6205-4202-b645-dd77a1241c80",
       "87ec61a5-84b0-4545-86bf-8962e7d6f171",
+      "ed20d55d-547b-49b5-8a56-73874c5f100a",
       "ab50bbb7-8221-4a98-b582-e4e330c98a17",
+      "9f10f1d1-2546-4f50-89aa-375585850c73",
       "d5ecb23f-1f1a-4a0c-ac1d-bf6cd957822c",
+      "aa4f77f6-1f34-4f65-b916-47e94913ec89",
+      "d1b60318-0f45-4e33-8d42-f73cda1aa37a",
       "496f1001-33ad-451d-bca2-b4ce82b153b3",
-      "1eb07bcf-b9b6-4c19-87a0-89f3303c546a",
-      "aaee3890-db54-44bf-ba1d-a756ec7a3e18",
+      "32956861-e539-429a-935c-084a7600b4bf",
+      "2190ed0c-5dea-465b-b055-c0fc3cbe07eb",
+      "b0d8612d-8e28-48ff-ab39-c84df3517860",
       "536eaf2a-2a70-4866-ba55-d2da077ce137",
-      "dcdab245-7a7f-48a3-aedc-5d49c8e2ad5d",
-      "ee75a2c6-bdc5-48f2-af0b-e92ef0702928",
+      "4bf27e24-f573-4792-a750-5b941311bb4c",
+      "ee78e417-bee4-401b-8316-4ddb0ae2c2d0",
+      "fb0a7857-6296-4198-961c-279efe8ad702",
+      "961d26b0-b8b9-4f3b-b141-cf9e074166e2",
+      "e109950d-3473-4565-8bec-2e5103b1183a",
+      "b9cd6430-9e8a-4b4d-b686-a157e1418961",
+      "e007ed78-3dce-44df-97ea-21ce7a7c9659",
+      "f3a521ba-83ff-44bf-949f-55bdbcb9f9c3",
+      "21ac1314-65b7-4ed7-9918-86b0d8aed609",
+      "1129ce49-fe2d-455c-909d-ccab752fd645",
       "c6a165e8-df00-4c99-bdf9-fe8667aea86d",
-      "fa32b060-3e4d-4eed-ba9b-c2b6dc5e16ed",
-      "fe5e6d06-5555-4871-aba4-e5e299f131ad",
-      "8a000c38-cd7d-4e01-9199-e0d8791f152d",
-      "e216e754-1c61-4f65-a006-6516ef4103a1",
-      "473af17c-3b3c-48da-b22e-dfdf4d73811f",
-      "9a534656-a8ba-4025-b8eb-d8c26b34860e",
+      "9f89b6b0-d1ca-46a5-abd2-1c15a79d6440",
+      "0e7c1f14-6a64-4167-8cd2-bb0e02983e35",
+      "79d52440-57b9-42bd-91a1-829f2250b771",
+      "7f059c5a-5e04-4197-8318-ccf839fcc421",
+      "de981c6d-717a-4e0f-9275-98d3d5fcaa79",
+      "a6610526-5f36-44f8-9a1a-db974bcc0f75",
+      "e31a5f1b-0017-43e4-92e4-2e847743ff02",
+      "6438e9de-32d3-4b62-bc83-fe7f267f2005",
+      "659f4499-267e-4e99-b153-ba92ec096abd",
+      "64be784c-b408-4970-828a-62cf3b44a464",
+      "7fe63264-1a59-44cb-bba7-5aed1bf63de0",
+      "398297dd-9f64-4a89-92b3-0cc079ac1e4e",
+      "79369f4d-bf55-41da-b1a5-caff96892406",
+      "44a359cd-bdc6-421b-a7c6-3ec4ea918786",
+      "060433f7-0f72-4982-8013-6b9343f3a1c9",
+      "7ddce1a0-bddb-45c3-84ba-917133f0f75d",
       "1b15ab63-1d2c-4c5f-9a9e-9fe1557f8f27",
+      "8a000c38-cd7d-4e01-9199-e0d8791f152d",
+      "77c85e20-c61a-496c-851c-8592c6c858cc",
+      "e5684884-c172-4963-a32b-a5938ebacda4",
+      "57fada43-46b5-4efa-ac47-34cbb355f89d",
+      "48d0e09e-1756-4b8d-bea8-cdd573e00448",
+      "e216e754-1c61-4f65-a006-6516ef4103a1",
+      "b3c9861a-b66f-439c-b4aa-e1927b74874f",
+      "8e505b7a-2723-4879-8015-5dce19445a77",
+      "fe5dbc44-cd16-4b76-9214-48652f69cba6",
+      "9a534656-a8ba-4025-b8eb-d8c26b34860e",
+      "62e4aeb4-a122-4395-81f7-4d50c1d0ceb3",
+      "ffb9d34a-9eec-4536-956a-2f8a912198de",
+      "86690f6e-73c2-4e9d-9307-9b195267fe55",
+      "7cc5e35c-38d1-410e-b854-c05f91d4093e",
+      "1e9d978b-e9df-423c-96f8-dff8e0d96f5e",
+      "525713b1-7fad-4d96-a449-5bd579d4cf00",
+      "0ea6164f-8a39-436c-98c8-58c1f30ddde0",
+      "f6dc96ab-8c9a-4058-a8d8-d99a7ef3c6df",
+      "546523fc-629a-4929-8530-dae9fdecc503",
+      "9916d9f3-e99b-497d-8456-29e3c5bdca00",
+      "36436eb0-99df-4494-898f-ecbe17ec6af6",
+      "e7012d53-cbbb-4904-b8fb-09ca0730999c",
       "1bfc8245-8062-45d7-84a7-be572813ca56"
      ]
     },
-    "bcf92fd4-b425-48bc-a704-ec2a5b72f630": {
-     "title": "Fleksibilitet og håndtering",
-     "id": "bcf92fd4-b425-48bc-a704-ec2a5b72f630",
+    "542709be-cb6c-420f-92df-3f3c6bebef36": {
+     "title": "Lydkvalitet",
+     "id": "542709be-cb6c-420f-92df-3f3c6bebef36",
+     "references": [
+      "e54bae26-2a7e-4445-a2d2-c1e53263e5bd",
+      "4b9d26b9-49dd-44b3-b723-7720d9eaee29",
+      "d74ae4c1-b536-4764-9765-d3e051a9d3b4",
+      "bffb0b3e-6205-4202-b645-dd77a1241c80",
+      "d5ecb23f-1f1a-4a0c-ac1d-bf6cd957822c",
+      "aaee3890-db54-44bf-ba1d-a756ec7a3e18",
+      "1eb07bcf-b9b6-4c19-87a0-89f3303c546a",
+      "ee75a2c6-bdc5-48f2-af0b-e92ef0702928",
+      "fa32b060-3e34-4eed-ba9b-c2b6dc5e16ed",
+      "e988f328-0152-416f-8efb-f8617ba03879",
+      "473af17c-3b3c-48da-b22e-dfdf4d73811f",
+      "01e8b346-6d33-4ad6-9594-a053582bf1ad",
+      "8a000c38-cd7d-4e01-9199-e0d8791f152d",
+      "e216e754-1c61-4f65-a006-6516ef4103a1",
+      "1b15ab63-1d2c-4c5f-9a9e-9fe1557f8f27"
+     ]
+    },
+    "24d89b43-d10a-4596-be3d-9826366fb4dd": {
+     "title": "Fleksibilitet og diskret installation",
+     "id": "24d89b43-d10a-4596-be3d-9826366fb4dd",
      "references": [
       "5e296954-451b-43e9-9a71-73dd74ad1efe",
       "91ade597-bbdc-4c25-8d39-820c8dfbb8ea",
       "0aa83749-ebad-4d34-ad5b-c05c3d7581f7",
       "7a6e9acf-7607-48e9-8c6a-5d9f7fe30cee",
+      "5e296954-451b-43e9-9a71-73dd74ad1efe",
       "9c56f69d-5f51-4d0f-a8ba-f38687101ca5",
       "962c4139-c249-454d-8ad8-583ac11700a3",
       "e988f328-0152-416f-8efb-f8617ba03879",
       "4fa65f23-9169-4425-b8d6-f4b559bb9129",
       "fb178412-d263-4941-8524-1cfb0b26f02e",
-      "e7012d53-cbbb-4904-b8fb-09ca0730999c",
       "e5776a05-a664-4297-a13c-4bdf372be293",
-      "627d9e47-d0a4-4eb5-a179-20266c0a6085"
-     ]
-    },
-    "4cb3dbb1-282e-4d91-946b-14490af14ce0": {
-     "title": "Pris og værdi",
-     "id": "4cb3dbb1-282e-4d91-946b-14490af14ce0",
-     "references": [
-      "99e9d91d-9121-4fd5-afb4-f3cb2e54b3f1",
-      "dcdab245-7a7f-48a3-aedc-5d49c8e2ad5d",
-      "aa4f77f6-1f34-4f65-b916-47e94913ec89",
-      "398297dd-9f64-4a89-92b3-0cc079ac1e4e",
-      "f61d1ef3-045e-49fd-aa9c-f68aba0d2ec6",
-      "525713b1-7fad-4d96-a449-5bd579d4cf00",
-      "0ea6164f-8a39-436c-98c8-58c1f30ddde0",
-      "62e4aeb4-a122-4395-81f7-4d50c1d0ceb3",
-      "86690f6e-73c2-4e9d-9307-9b195267fe55",
-      "c64aa899-847e-4322-b8bb-0c72dad2ee0d",
-      "73776f2c-fd17-462e-99a9-83fc91d368cc"
-     ]
-    },
-    "266e3b6b-69d0-4eea-a458-0d7e7b0d70e9": {
-     "title": "Kompatibilitet og tilslutninger",
-     "id": "266e3b6b-69d0-4eea-a458-0d7e7b0d70e9",
-     "references": [
-      "773e59e6-ec58-45a7-a7fc-bc8d654123d4",
-      "924d44cf-c15d-43bb-893d-cd3d8356951f",
-      "38188f46-eec1-4c49-9e4c-919a9334fceb",
-      "43bba17f-8e6e-40da-982f-4d21a609f31d",
-      "a127d7a3-d33f-4e50-9567-579ea0cbddef",
-      "c39119b8-a985-4075-ac68-a3a4225bcdb4",
-      "7a28efc6-88bc-446c-94e5-ad1a0244422f",
-      "64be784c-b408-4970-828a-62cf3b44a464",
-      "a6610526-5f36-44f8-9a1a-db974bcc0f75",
-      "e5684884-c172-4963-a32b-a5938ebacda4"
+      "e7012d53-cbbb-4904-b8fb-09ca0730999c"
      ]
     }
    },
-   "rating": 4.68801652892562,
-   "count": 484,
-   "reviewCount": 136,
+   "rating": 4.68930041152263,
+   "count": 486,
+   "reviewCount": 138,
    "distribution": {
     "1": 4,
     "2": 4,
     "3": 29,
     "4": 65,
-    "5": 382
+    "5": 384
    }
   },
   "brandName": "Essentials",

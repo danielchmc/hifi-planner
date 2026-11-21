@@ -13,6 +13,13 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "91b73d7b-e4aa-4f24-836b-ba4f05063df9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236212,
   "skuCode": "ESSCL1YSPLIT2M1FX",
@@ -137,8 +144,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 832,
+     "numberOfStoresExperience": 22,
+     "availableQuantity": 815,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -160,34 +167,34 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et praktisk Y-/splitterkabel, der fungerer pålideligt til subwoofer-tilslutninger og giver god pasform og ydeevne. Kablet værdsættes for den lave pris og det nyttige design, selv om konstruktionen virker lidt tynd, og én anmeldelse finder prisen høj. Sikker tilslutning og klar, fyldig signaloverførsel gør kablet til et stærkt supplement til et subwoofer-setup.",
+   "summary": "Dette Y-splitterkabel leverer pålidelig plug-and-play-ydeevne til tilslutning af subwoofere og fungerer godt i forskellige opsætninger. Kablet sidder sikkert og giver en klar, punchy lyd med god værdi for pengene, selv om den tynde udførelse og prisen nævnes som kritikpunkter. Samlet set er det praktiske design en effektiv tilføjelse til et subwoofersystem.",
    "headlines": {
-    "works reliably as intended": {
-     "sentimentAnalysis": "Flere anmeldelser bekræfter, at kablet udfører sin tiltænkte funktion uden problemer.",
-     "simpleTitle": "Fungerer pålideligt som tiltænkt",
+    "works reliably for subwoofer connections": {
+     "sentimentAnalysis": "Flere anmeldelser bekræfter, at kablet fungerer efter hensigten og forbinder subwoofere korrekt.",
+     "simpleTitle": "Fungerer pålideligt til subwoofer-tilslutninger",
      "bias": "positive",
-     "key": "works_reliably",
-     "groupId": "bc685ca0-9376-4dc3-8909-3ddeb5ca6f71"
-    },
-    "useful for subwoofer connections": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som en nyttig eller nødvendig løsning til tilslutning af en subwoofer.",
-     "simpleTitle": "Nyttig til subwoofer-tilslutninger",
-     "bias": "positive",
-     "key": "subwoofer_use",
-     "groupId": "bc685ca0-9376-4dc3-8909-3ddeb5ca6f71"
+     "key": "reliable-subwoofer-connection",
+     "groupId": "076c24df-af11-4a87-aee1-0162448fa8e4"
     },
     "good value for money": {
-     "sentimentAnalysis": "Flere anmeldelser roser den lave pris og den gode ydeevne i forhold til omkostningerne.",
+     "sentimentAnalysis": "To anmeldelser roser kablet for at være billigt eller have et stærkt forhold mellem pris og ydelse.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "good_value",
-     "groupId": "4f4c6a5a-d1ca-4f8b-a619-f731564f49e2"
+     "key": "good-value",
+     "groupId": "3df49e6a-a040-4b3b-80da-1acc9c641b6e"
+    },
+    "secure fit and connection": {
+     "sentimentAnalysis": "Anmeldelser fremhæver kablets gode pasform og solide tilslutning.",
+     "simpleTitle": "Sikker pasform og tilslutning",
+     "bias": "positive",
+     "key": "secure-fit",
+     "groupId": "2a35fd30-1b60-489f-a340-bd31289c46b0"
     }
    },
    "grouping": {
-    "bc685ca0-9376-4dc3-8909-3ddeb5ca6f71": {
-     "title": "Funktionalitet og kompatibilitet",
-     "id": "bc685ca0-9376-4dc3-8909-3ddeb5ca6f71",
+    "076c24df-af11-4a87-aee1-0162448fa8e4": {
+     "title": "Ydeevne og kompatibilitet",
+     "id": "076c24df-af11-4a87-aee1-0162448fa8e4",
      "references": [
       "c238ca86-fb7c-44e9-b4d9-8793ff11753d",
       "220dd073-d1a8-47db-9eaf-5d8cc935a654",
@@ -198,13 +205,22 @@
       "b151bd79-f20a-48a6-bc71-c02bf951657e"
      ]
     },
-    "4f4c6a5a-d1ca-4f8b-a619-f731564f49e2": {
+    "3df49e6a-a040-4b3b-80da-1acc9c641b6e": {
      "title": "Pris og værdi",
-     "id": "4f4c6a5a-d1ca-4f8b-a619-f731564f49e2",
+     "id": "3df49e6a-a040-4b3b-80da-1acc9c641b6e",
      "references": [
       "c238ca86-fb7c-44e9-b4d9-8793ff11753d",
       "6e5fcf3e-0fb9-4a47-afde-48a5ef69e2b9",
       "fd583d07-bb83-4651-a3fe-c512fb96bf5c"
+     ]
+    },
+    "2a35fd30-1b60-489f-a340-bd31289c46b0": {
+     "title": "Byggekvalitet og pasform",
+     "id": "2a35fd30-1b60-489f-a340-bd31289c46b0",
+     "references": [
+      "c238ca86-fb7c-44e9-b4d9-8793ff11753d",
+      "2f71cb28-b276-45ef-bb55-9eb586e6c1bf",
+      "69cdad50-60bb-48dc-aecf-23f3355942fc"
      ]
     }
    },

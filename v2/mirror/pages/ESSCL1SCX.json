@@ -13,6 +13,16 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b2b01cc5-491f-4189-a195-c1efd09820e9",
+   "77d5359f-b457-4c30-81eb-fea534a1c4ec",
+   "b860c2f6-8c61-494d-949c-a3928b9ced26",
+   "8e0cda35-f5ec-46bc-9187-6fa07eb5be93"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214267,
   "skuCode": "ESSCL1SCX",
@@ -109,8 +119,7 @@
      "salesUnit": "Meter",
      "rawSalesUnit": "variableLength",
      "salesQuantity": 1,
-     "unitPrice": 65,
-     "unitPriceBefore": 60
+     "unitPrice": 65
     },
     "techSpecs": [
      {
@@ -156,7 +165,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 27209,
+     "availableQuantity": 27142,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -204,59 +213,75 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1SCX betragtes bredt som et solidt og prisvenligt højttalerkabel med ren, varm og kraftfuld lyd. Rigeligt kobber, god signaloverførsel og tilfredsstillende detaljer gør kablet til et overbevisende valg til almindelige hi-fi-anlæg. Den største ulempe er den markante stivhed, som dog kan være en fordel ved visse installationer.",
+   "summary": "ESSCL1SCX betragtes generelt som et solidt og prisvenligt højttalerkabel, der leverer en ren og kompetent lyd og fungerer pålideligt i almindelige anlæg. Kablet roses for den robuste konstruktion, den gode værdi og den nemme tilslutning i mange installationer. Den mest gennemgående ulempe er den meget stive yderkappe, som kan gøre det sværere at føre kablet rundt om hjørner, samle kablerne og afisolere det.",
    "headlines": {
-    "robust but very stiff": {
-     "sentimentAnalysis": "Den kraftige plastkappe beskrives gentagne gange som stiv, svær at bøje og upraktisk rundt om hjørner eller bag udstyr.",
-     "simpleTitle": "Robust, men meget stift",
+    "robust construction at a fair price": {
+     "sentimentAnalysis": "Kablet betragtes ofte som velbygget, tilstrækkeligt kraftigt og attraktivt prissat til almindelige højttalerinstallationer.",
+     "simpleTitle": "Robust konstruktion til en fair pris",
+     "bias": "positive",
+     "key": "quality-value",
+     "groupId": "026fae02-d966-4548-98d4-83c91beb3678"
+    },
+    "very stiff and hard to route": {
+     "sentimentAnalysis": "Den vigtigste kritik af håndteringen er den store stivhed, som gør bøjninger, hjørner, samling og diskret føring vanskeligere.",
+     "simpleTitle": "Meget stift og svært at føre",
      "bias": "negative",
      "key": "flexibility",
-     "groupId": "f735d75d-415f-4cb4-b020-355b9c20b05c"
+     "groupId": "d0dfb487-252f-4721-b6dd-48a6406d505e"
     },
-    "easy connection and installation": {
-     "sentimentAnalysis": "Trods stivheden fremhæver flere kommentarer enkel montering, sikre forbindelser og praktisk håndtering i passende installationer.",
-     "simpleTitle": "Nem tilslutning og montering",
-     "bias": "positive",
-     "key": "installation",
-     "groupId": "77ca22fa-2165-4b3f-b0e7-88757d8a3e52"
-    },
-    "strong value for money": {
-     "sentimentAnalysis": "Kablet vurderes gentagne gange som prisvenligt, tilstrækkeligt og velegnet til prisbevidste hi-fi-installationer.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "51290907-8438-44ce-96df-38d711d170f4"
-    },
-    "clean, detailed sound": {
-     "sentimentAnalysis": "Kablet roses for ren transmission, gode detaljer og en behagelig forbedring eller forfinelse af højttalerlyden.",
-     "simpleTitle": "Ren og detaljeret lyd",
+    "clean, capable sound": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som leverandør af ren, detaljeret og musikalsk lyd og løser sin lydmæssige opgave pålideligt.",
+     "simpleTitle": "Ren og kompetent lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "8832cf52-a84b-4166-a342-47061ecf782c"
+     "groupId": "29e86add-cbf0-4101-9fcb-29a75f24dee1"
     },
-    "warmer, fuller presentation": {
-     "sentimentAnalysis": "Flere kommentarer beskriver blødere mellemtone og diskant, kraftigere bas eller mere dynamik, hvilket giver en varmere og mere afslappet gengivelse.",
-     "simpleTitle": "Varmere og fyldigere gengivelse",
+    "softer, smoother treble": {
+     "sentimentAnalysis": "Flere anmeldelser forbinder kablet med en blødere og mindre skarp gengivelse, især i mellemtonen og diskanten.",
+     "simpleTitle": "Blødere og mere afslappet diskant",
      "bias": "positive",
      "key": "sound",
-     "groupId": "8832cf52-a84b-4166-a342-47061ecf782c"
-    },
-    "limited treble crispness": {
-     "sentimentAnalysis": "En mindretalsopfattelse finder lyden mindre klar eller tvivler på, at dyrere højttalerkabler giver en stor hørbar forskel.",
-     "simpleTitle": "Begrænset diskantklarhed",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "8832cf52-a84b-4166-a342-47061ecf782c"
+     "groupId": "29e86add-cbf0-4101-9fcb-29a75f24dee1"
     }
    },
    "grouping": {
-    "f735d75d-415f-4cb4-b020-355b9c20b05c": {
-     "title": "Fleksibilitet",
-     "id": "f735d75d-415f-4cb4-b020-355b9c20b05c",
+    "026fae02-d966-4548-98d4-83c91beb3678": {
+     "title": "Byggekvalitet og værdi",
+     "id": "026fae02-d966-4548-98d4-83c91beb3678",
+     "references": [
+      "2fbc0587-dab7-472c-96da-4acea7c0189b",
+      "4051410f-2d57-492f-883e-229733799206",
+      "08ef12c5-ef0b-4bda-b881-9ec5163568a0",
+      "17674dff-a984-46ff-9d1c-9baf5363892f",
+      "179d0e7f-0891-4c71-bf79-0b7a4737be66",
+      "e4a82e26-c911-4c23-b91e-044dbf058216",
+      "91b63d85-0510-4e97-b04c-30d2305d04c7",
+      "ff4a7308-beaa-4f6d-9c2f-f0a558be0241",
+      "9b1f7878-1497-484e-8f16-052762bbca40",
+      "1fa77712-7ad5-4459-b9eb-89d697c3cbd5",
+      "2e969470-94b7-4d2e-827c-5812a443b499",
+      "179da522-ec2b-4975-8f32-64ca5de60fe2",
+      "534e2cfc-cc1c-4e9d-b3b7-4e31c7fa31a8",
+      "cb099466-a429-4c0f-90b8-e1fec3c464da",
+      "4f774446-5cb4-4587-81ac-2a2ea8c4f26e",
+      "155eecec-db84-403b-ad85-1f42f21ef10b",
+      "2bc690eb-ffdb-44ef-bc7a-a6ecc5ace9cb",
+      "ce96b6e4-5c89-4b98-9764-fa0b779e2ba2",
+      "47dfcda5-531b-41ce-af14-c3f14cc1f7c5",
+      "4ff6b7b2-4d94-451b-b0f6-c50f10f53890",
+      "84f602db-a262-43eb-989d-f18a9c00c137",
+      "3d42f6ce-1796-4283-8ffd-11767057631f",
+      "d36767e1-af89-418b-b7ca-a8beb52352eb"
+     ]
+    },
+    "d0dfb487-252f-4721-b6dd-48a6406d505e": {
+     "title": "Fleksibilitet og håndtering",
+     "id": "d0dfb487-252f-4721-b6dd-48a6406d505e",
      "references": [
       "39a1baad-9c2e-4e56-a47a-fde15cdfc03e",
       "4051410f-2d57-492f-883e-229733799206",
       "8c5b8156-a8a7-4106-aa05-7345c4bc33f3",
+      "950f9b09-b93a-466e-9427-7c7659c3fac1",
       "4ea9bbb1-1167-4401-9d7d-2131915030c7",
       "9d70847f-3865-4c72-a242-82832af3d6e6",
       "05802835-7698-4562-82e4-8dfee9e57e18",
@@ -275,9 +300,9 @@
       "d36767e1-af89-418b-b7ca-a8beb52352eb"
      ]
     },
-    "8832cf52-a84b-4166-a342-47061ecf782c": {
+    "29e86add-cbf0-4101-9fcb-29a75f24dee1": {
      "title": "Lydkvalitet",
-     "id": "8832cf52-a84b-4166-a342-47061ecf782c",
+     "id": "29e86add-cbf0-4101-9fcb-29a75f24dee1",
      "references": [
       "2c9b1614-381e-4c4b-b865-5cec8e0e5295",
       "2cb513a6-72a9-4216-9b23-80a8c8804c48",
@@ -288,47 +313,11 @@
       "1fa77712-7ad5-4459-b9eb-89d697c3cbd5",
       "534e2cfc-cc1c-4e9d-b3b7-4e31c7fa31a8",
       "63f634f7-8415-44d7-a58a-7eaa41351c94",
-      "bae06932-4828-49f4-b724-269113ca288a",
-      "f1bbdfd1-1f20-4276-b21f-1234fa47cbb1",
-      "7197e466-c012-4470-8057-d7fa7637a63e",
-      "4ff6b7b2-4d94-451b-b0f6-c50f10f53890",
-      "8e3550bd-95fe-470a-87f4-381f0fae5a15"
-     ]
-    },
-    "77ca22fa-2165-4b3f-b0e7-88757d8a3e52": {
-     "title": "Montering og håndtering",
-     "id": "77ca22fa-2165-4b3f-b0e7-88757d8a3e52",
-     "references": [
-      "8c5b8156-a8a7-4106-aa05-7345c4bc33f3",
-      "3c6891f6-f7f8-485f-b412-a05d32e2c4fc",
-      "950f9b09-b93a-466e-9427-7c7659c3fac1",
-      "da4f0a68-c308-4a0c-b93b-3c1aecf4051a",
-      "a6a4f754-7fca-47f9-a53e-3796fdee1921",
-      "55c2c054-c618-4981-9038-d613da492a9d",
-      "7b664167-fafd-4b22-b6f2-5ba38ff2b44b",
-      "9b1f7878-1497-484e-8f16-052762bbca40",
-      "d35c3102-35ff-4573-8750-caedfe44036c",
-      "8e3550bd-95fe-470a-87f4-381f0fae5a15",
-      "8c4b5dc2-60c0-441c-bfc2-cf59890fa75e",
-      "dc3e17b2-82a5-4f7f-8cda-bb343fd54a8f",
-      "d36767e1-af89-418b-b7ca-a8beb52352eb"
-     ]
-    },
-    "51290907-8438-44ce-96df-38d711d170f4": {
-     "title": "Værdi for pengene",
-     "id": "51290907-8438-44ce-96df-38d711d170f4",
-     "references": [
-      "08ef12c5-ef0b-4bda-b881-9ec5163568a0",
-      "17674dff-a984-46ff-9d1c-9baf5363892f",
-      "179d0e7f-0891-4c71-bf79-0b7a4737be66",
-      "cb099466-a429-4c0f-90b8-e1fec3c464da",
-      "2bc690eb-ffdb-44ef-bc7a-a6ecc5ace9cb",
       "ce96b6e4-5c89-4b98-9764-fa0b779e2ba2",
-      "3d42f6ce-1796-4283-8ffd-11767057631f",
-      "028b43d4-fc0f-4be0-975f-87b6a3aef57a",
-      "06e9ce1f-7d59-4415-b2fe-778af875a72c",
-      "437e1357-1617-478d-a70b-085e218b3492",
-      "f1bbdfd1-1f20-4276-b21f-1234fa47cbb1"
+      "bae06932-4828-49f4-b724-269113ca288a",
+      "4ff6b7b2-4d94-451b-b0f6-c50f10f53890",
+      "f1bbdfd1-1f20-4276-b21f-1234fa47cbb1",
+      "7197e466-c012-4470-8057-d7fa7637a63e"
      ]
     }
    },

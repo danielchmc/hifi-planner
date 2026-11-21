@@ -13,6 +13,19 @@
    "url": "/stereo/musikstreamer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Optisk, Analog RCA",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Fra beskrivelsen": "Udgange: L/R (forgyldt RCA), optisk digital"
+  },
+  "gallery": [
+   "6fabf74a-617b-41a3-b52a-ac2855a61cd6",
+   "33be6f03-0d9b-4388-8636-2421b89a6aed",
+   "e00f7e69-21ac-4aea-a96c-9b273d60439e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243152,
   "skuCode": "ESSBT2CONNECTX",
@@ -125,8 +138,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 902,
+     "numberOfStoresExperience": 22,
+     "availableQuantity": 892,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -175,35 +188,43 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSBT2CONNECTX er en meget rost Bluetooth-modtager, der tilfører ældre forstærkere varm, klar og dynamisk lyd samt moderne streaming. Installation og daglig betjening beskrives konsekvent som hurtig, enkel og stabil, med pålidelige forbindelser og problemfrit skift mellem enheder. Det kompakte design giver god værdi for pengene, selv om enkelte anmeldelser nævner et kort kabel, lavt udgangssignal, manglende automatisk tilslutning og lejlighedsvise udfordringer med ældre udstyr.",
+   "summary": "ESSBT2CONNECTX får bred ros som en enkel og driftssikker Bluetooth-streamingløsning, der tilfører varm, detaljeret og slagkraftig lyd til eksisterende forstærkere og stereoanlæg. Hurtig parring, stabile forbindelser og enkel betjening gør den kompakte receiver særligt attraktiv til modernisering af ældre lydudstyr. Lydkvaliteten er generelt fremragende, selv om enkelte oplevelser peger på kildeafhængige begrænsninger, lavt output eller mindre imponerende resultater i bestemte opsætninger.",
    "headlines": {
-    "warm, clear and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent modtageren for klar, detaljeret og behagelig lyd, ofte som en markant opgradering af ældre lydsystemer.",
-     "simpleTitle": "Varm, klar og kraftfuld lyd",
+    "warm, detailed and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, musikalsk og af høj kvalitet samt som en markant opgradering af ældre forstærkere og stereoanlæg.",
+     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "45d0275e-2bdb-4e71-9b95-925959e473d4"
+     "groupId": "5b03a8ea-f5b7-4180-a51e-af3aa2a136aa"
     },
-    "quick and easy installation": {
-     "sentimentAnalysis": "Den kompakte modtager beskrives gentagne gange som nem at installere, konfigurere og betjene og giver praktisk plug-and-play-komfort i mange systemer.",
-     "simpleTitle": "Hurtig og enkel installation",
+    "simple and quick installation": {
+     "sentimentAnalysis": "Installation og første opsætning beskrives gentagne gange som hurtig, ukompliceret og nem.",
+     "simpleTitle": "Enkel og hurtig installation",
      "bias": "positive",
      "key": "installation",
-     "groupId": "ca459fd8-1180-4825-aa35-e2ebf1233183"
+     "groupId": "785f3215-67b2-4945-b2c0-956dcc5a8804"
     },
-    "stable connections and smooth device switching": {
-     "sentimentAnalysis": "Forbindelsen er generelt hurtig, konstant og stabil, mens skift til en anden enhed beskrives som problemfrit og smidigt.",
-     "simpleTitle": "Stabile forbindelser og problemfrit skift mellem enheder",
+    "sound quality depends on the setup": {
+     "sentimentAnalysis": "Nogle anmeldelser rapporterer skuffende lyd eller et mindre stereoperspektiv, hvor resultatet påvirkes af kilde, DAC og tilsluttet udstyr.",
+     "simpleTitle": "Lydkvaliteten afhænger af opsætningen",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "5b03a8ea-f5b7-4180-a51e-af3aa2a136aa"
+    },
+    "fast, stable device connections": {
+     "sentimentAnalysis": "Parringen er generelt hurtig og pålidelig, med problemfrit skift mellem enheder og stabil forbindelsesadfærd.",
+     "simpleTitle": "Hurtige og stabile enhedsforbindelser",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "5c3c744e-794e-466e-b9bf-48cc597cf165"
+     "groupId": "ce2198ba-3066-405f-9ea4-feecfc944c0c"
     }
    },
    "grouping": {
-    "45d0275e-2bdb-4e71-9b95-925959e473d4": {
+    "5b03a8ea-f5b7-4180-a51e-af3aa2a136aa": {
      "title": "Lydkvalitet",
-     "id": "45d0275e-2bdb-4e71-9b95-925959e473d4",
+     "id": "5b03a8ea-f5b7-4180-a51e-af3aa2a136aa",
      "references": [
+      "411cdd5e-0327-4cb5-91f0-fa9abdf61924",
       "153268dd-dae1-43d3-ab38-c43c1c5a7c0c",
       "1ea03577-f14b-43a1-bb2c-fbd708b4eece",
       "2575e485-4262-4464-8b79-cec8ec4f8f7a",
@@ -213,7 +234,6 @@
       "03d19e43-4309-4ea1-be0b-393e5841f764",
       "82ba411c-4fb8-4a0d-bd86-970c64d88fc9",
       "28c7ccb0-f835-46d7-861b-fc84e7f19a3e",
-      "16b3dfcc-cf55-4f5b-951f-4ed3ff3c89ae",
       "0590a64e-3a07-48a6-80d7-50aa71bc1e37",
       "f8fd6c12-c072-4401-b4ee-7ce374177b8b",
       "9713f326-8c36-4871-be0d-1f74b4b151e3",
@@ -225,9 +245,9 @@
       "6309c196-5e6c-44c4-bf84-9fd23d06e0b2"
      ]
     },
-    "ca459fd8-1180-4825-aa35-e2ebf1233183": {
+    "785f3215-67b2-4945-b2c0-956dcc5a8804": {
      "title": "Installation og opsætning",
-     "id": "ca459fd8-1180-4825-aa35-e2ebf1233183",
+     "id": "785f3215-67b2-4945-b2c0-956dcc5a8804",
      "references": [
       "153268dd-dae1-43d3-ab38-c43c1c5a7c0c",
       "a69ca7e2-231d-4e65-a78c-37bdb6e765d7",
@@ -240,34 +260,32 @@
       "89e92aea-6b57-4563-92b0-280bffb40722",
       "43fb720b-2d59-4caa-9e7b-b37ffe99ceb9",
       "ff046926-6145-4fc4-8f79-4b3b1e4c3e74",
-      "f0d98cdf-7d65-4715-8ec4-9d6ec72f50e0",
-      "9713f326-8c36-4871-be0d-1f74b4b151e3"
+      "f0d98cdf-7d65-4715-8ec4-9d6ec72f50e0"
      ]
     },
-    "5c3c744e-794e-466e-b9bf-48cc597cf165": {
-     "title": "Forbindelse og skift mellem enheder",
-     "id": "5c3c744e-794e-466e-b9bf-48cc597cf165",
+    "ce2198ba-3066-405f-9ea4-feecfc944c0c": {
+     "title": "Forbindelse og betjening",
+     "id": "ce2198ba-3066-405f-9ea4-feecfc944c0c",
      "references": [
-      "1ea03577-f14b-43a1-bb2c-fbd708b4eece",
-      "2575e485-4262-4464-8b79-cec8ec4f8f7a",
+      "1ea035dd-dae1-43d3-ab38-c43c1c5a7c0c",
       "2aeb1a3c-62c2-4753-aa8c-d377fc6a2d37",
+      "2efd637d-9839-4a84-98c3-2cf9db94dafe",
       "f8fd6c12-c072-4401-b4ee-7ce374177b8b",
       "d1823e6e-db4a-40fc-9d2a-b3e7d174142b",
       "8db18a96-da5e-47d7-8555-e7794f3ec605",
-      "16b3dfcc-cf55-4f5b-951f-4ed3ff3c89ae",
-      "9713f326-8c36-4871-be0d-1f74b4b151e3"
+      "ab89da5f-4f31-4b95-9da3-78ea5660cc51"
      ]
     }
    },
-   "rating": 4.77027027027027,
-   "count": 74,
-   "reviewCount": 41,
+   "rating": 4.77333333333333,
+   "count": 75,
+   "reviewCount": 42,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 1,
     "4": 12,
-    "5": 60
+    "5": 61
    }
   },
   "brandName": "Essentials",

@@ -8,6 +8,16 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "d2a1a164-a067-4fd6-af85-a1cc58278a42",
+   "ad6bf4ce-c599-4fcd-9c1b-10c86ea0bad0"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 27,
   "skuCode": "DENDP300F",
@@ -183,7 +193,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 89,
+     "availableQuantity": 59,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -299,7 +309,7 @@
      "description": "Forventes på lager tirsdag den 22. december",
      "deliveryDate": "2026-12-22T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
+     "numberOfStoresExperience": 15,
      "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
@@ -348,55 +358,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "DENDP300F roses bredt som en prisvenlig, flot og meget praktisk fuldautomatisk pladespiller. Lyden beskrives generelt som klar, varm, levende og meget god til prisen, mens den indbyggede phono-forforstærker og den enkle betjening giver ekstra praktisk værdi. Opsætningen er som regel nem, men nogle ejere kritiserer de lette betjeningsknapper, de faste eller korte kabler, den vanskelige pickupjustering og den manglende mulighed for at fastgøre tonearmen under transport.",
+   "summary": "Denon DP-300F roses bredt som en prisvenlig, flot og meget brugervenlig fuldautomatisk pladespiller. Lyden beskrives generelt som klar, afbalanceret og behagelig, især med en bedre pickup. Enkelte anmeldelser nævner en let plastagtig finish, faste eller korte kabler og følsom justering, men samlet leverer spilleren varm, fyldig og medrivende vinyllyd med stor bekvemmelighed og værdi for pengene.",
    "headlines": {
-    "clear, lively sound with strong value": {
-     "sentimentAnalysis": "Anmeldelserne beskriver ofte lyden som klar, fyldig, levende og meget god til prisen, især med en bedre pickup eller passende forstærker og højttalere.",
-     "simpleTitle": "Klar og levende lyd med stor værdi",
+    "clear, enjoyable sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver typisk lyden som klar, afbalanceret, fyldig og behagelig, især efter opgradering af pickup.",
+     "simpleTitle": "Klar og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "d59a39de-dcd3-43ff-8886-a5d21ec39ed5"
+     "groupId": "d592016a-0cae-4e66-913a-fb1c5c7c4d2b"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Mange ejere betragter pladespilleren som et fremragende og prisvenligt køb med god ydelse og nyttig automatik uden unødvendige funktioner.",
+    "excellent value for the money": {
+     "sentimentAnalysis": "Pladespilleren opfattes konsekvent som et stærkt køb til prisen med praktisk automatik, god lyd og solid hverdagsydelse.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "f1548b19-da4f-478f-bd0f-ae99903f0250"
+     "groupId": "3147747a-0593-4ae8-9dc9-9777ee015556"
     },
-    "automatic start and return make playback effortless": {
-     "sentimentAnalysis": "Den fuldautomatiske start, stop og retur af tonearmen roses gentagne gange for at gøre vinylafspilning nem, sikker og afslappende.",
-     "simpleTitle": "Automatisk start og retur gør afspilning ubesværet",
+    "automatic start and return are highly convenient": {
+     "sentimentAnalysis": "Automatisk start, stop og retur af armen roses gentagne gange for at gøre afspilning nem og sikker, især for begyndere og familier.",
+     "simpleTitle": "Automatisk start og retur er meget praktisk",
      "bias": "positive",
-     "key": "automatic",
-     "groupId": "2b4791b9-967a-4647-ada0-5d9be41f7d82"
+     "key": "automation",
+     "groupId": "c9f4f550-da19-4e9b-ad37-d60bd46de3a9"
     },
-    "setup and controls are generally easy": {
-     "sentimentAnalysis": "Installation, tilslutning og daglig betjening beskrives som regel som enkel, og tydelige manualer hjælper begyndere i gang.",
-     "simpleTitle": "Opsætning og betjening er generelt nem",
+    "easy installation and operation": {
+     "sentimentAnalysis": "De fleste brugere finder montering, tilslutning og daglig betjening enkel, og vejledningen giver som regel tilstrækkelig hjælp.",
+     "simpleTitle": "Nem opsætning og betjening",
      "bias": "positive",
      "key": "setup",
-     "groupId": "627640ac-30af-47b2-a5cc-06f5a885921c"
+     "groupId": "8dd51ad2-0395-423d-be1e-6e79706167de"
     },
-    "tonearm and cartridge setup can be difficult": {
-     "sentimentAnalysis": "En mindre gruppe ejere har haft svært ved at finde den rette nåletryk- og antiskating-indstilling, med lejlighedsvis nålespring eller behov for pickupopgradering.",
-     "simpleTitle": "Justering af tonearm og pickup kan være vanskelig",
-     "bias": "negative",
-     "key": "setup",
-     "groupId": "627640ac-30af-47b2-a5cc-06f5a885921c"
-    },
-    "fixed and short cables limit flexibility": {
-     "sentimentAnalysis": "Flere anmeldelser påpeger, at de fastmonterede eller korte signalkabler begrænser placeringsmulighederne og forhindrer kabelopgraderinger.",
-     "simpleTitle": "Faste og korte kabler begrænser fleksibiliteten",
+    "lightweight build and cable limitations": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne kritiserer den lette plastfornemmelse, faste eller korte lydkabler samt manglen på en armlås under transport.",
+     "simpleTitle": "Let konstruktion og begrænsede kabler",
      "bias": "negative",
      "key": "design",
-     "groupId": "681b4987-e464-468e-bcd2-e749c81a4879"
+     "groupId": "a68fecfc-cee3-4354-b268-cbba7d78bda4"
     }
    },
    "grouping": {
-    "d59a39de-dcd3-43ff-8886-a5d21ec39ed5": {
+    "d592016a-0cae-4e66-913a-fb1c5c7c4d2b": {
      "title": "Lydkvalitet",
-     "id": "d59a39de-dcd3-43ff-8886-a5d21ec39ed5",
+     "id": "d592016a-0cae-4e66-913a-fb1c5c7c4d2b",
      "references": [
       "f62ec642-a6a6-48e0-9692-8e0c5346c419",
       "4607a553-1dc4-4c05-a32e-e88b59280988",
@@ -405,131 +408,154 @@
       "f1de49a6-7ec0-4624-9ab4-e58f044c8ad8",
       "fe7c1e6a-35df-4fd6-b340-9b3f746550fe",
       "425233fa-69c3-4e65-9037-76188eda8b5f",
+      "671519d9-674a-4595-a02b-d633ccc9a40c",
       "32d1dbc4-b7ea-4b5d-ab34-519fe28cf678",
       "97ddbbf0-5d77-46a0-b07a-fd7321634cac",
       "68835d7d-43b9-442f-add1-66773fcd71dd",
       "cf714418-7312-41de-bfbf-eedb829fba16",
-      "0e3a2d32-48da-4ef7-8307-10a8727690db",
-      "4ee3ce4c-dfae-41e5-ab1e-63e15ed043b9",
+      "2651a6f1-73c4-4647-9a63-6871d24c6c8e",
       "0ddfaa54-63f3-4f07-9b95-2a077cdf1967",
+      "9b3a1f50-f234-40ad-a3aa-0bdc93c46671",
+      "e82f771d-de12-43c2-a232-409b7ee50249",
       "0fb3e0ff-aff3-4a5a-89fb-73be42d152cf",
       "32e24c4f-e1be-4dba-ab41-e6b9199783cc",
-      "621c5630-ed9d-46d7-a96c-8470ee061790",
       "84e0a9b5-364a-4c1d-9b8a-09ca459dd6e4",
       "31b0b08e-39ac-4543-b470-474b1b9ac7d2",
-      "788d0ea4-3681-41c8-94fb-eec862c16eb5",
+      "c1552a3f-05d6-4ea6-8e57-3c620ee874ff",
+      "38c7dfbb-6d3e-482a-9aed-1823cb0260ec",
+      "8de8aeba-2142-4981-bd0e-8e433ac7bdb7",
+      "ce833e12-df76-4fa3-b0b8-d24a1adece65",
+      "6a0e755e-f9b2-4fe4-8911-217909c9e488",
+      "991c08d9-6cc9-4589-bebc-eeb9d074cb38",
       "ca8cbabc-1450-41ba-b537-bab8c2b37d66",
+      "a32125f1-e928-4563-bf1d-42f0d5b2d91c",
       "6a820f60-20cc-400d-a1ee-84b0eaba16f4",
       "4a2eb345-8378-4d67-8023-0c886eafce01",
+      "42358a21-4720-44cb-9744-ce14ccbca5e7",
+      "788d0ea4-3681-41c8-94fb-eec862c16eb5",
+      "546730dd-757e-411e-8576-6ecb32976f73",
+      "0bbade24-7229-4195-a3f0-f6edf77710c1",
+      "b7f05355-27dc-4b59-8ef7-c29bc95e1e84",
+      "2eb66232-ebef-4c78-8b48-efaaf1ebe3c3",
+      "303ae492-e4d4-4fe8-a96e-28eec9cea3c3",
       "4194a00c-3a3b-42b2-82b2-2bcd3eb562a4",
       "b75cedfe-f5f8-4a96-9a4b-ecaea0302790"
      ]
     },
-    "f1548b19-da4f-478f-bd0f-ae99903f0250": {
+    "3147747a-0593-4ae8-9dc9-9777ee015556": {
      "title": "Pris og værdi",
-     "id": "f1548b19-da4f-478f-bd0f-ae99903f0250",
+     "id": "3147747a-0593-4ae8-9dc9-9777ee015556",
      "references": [
       "99c181aa-fb3e-4fc9-8689-8c9529168224",
       "ae84d39e-8f08-4288-a78d-069b184a5636",
       "f382507b-c769-4a81-846d-f03f680687f7",
       "425233fa-69c3-4e65-9037-76188eda8b5f",
+      "32d1dbc4-b7ea-4b5d-ab34-519fe28cf678",
+      "97ddbbf0-5d77-46a0-b07a-fd7321634cac",
       "7487a095-ebf1-4a6f-80aa-0643a46af196",
       "19239e75-9d5e-4fd0-a20d-e93c7f410f96",
       "2651a6f1-73c4-4647-9a63-6871d24c6c8e",
       "96d107e8-8e2c-4f92-b833-81945ef6fd24",
+      "76a11fed-ff42-40cf-a889-e931985f25bc",
       "aa29d62d-12f6-4262-aa98-167223c4fd71",
       "b61694c8-fe28-4978-90f0-9f091d46cad3",
-      "45fcf6fd-d98e-4e23-a48c-b3f387dce0cc",
       "66b6c8cc-d9ba-41d2-a222-72e03a7052f8",
+      "45fcf6fd-d98e-4e23-a48c-b3f387dce0cc",
       "5facb318-cd9b-46c4-851e-d703d3e30626",
       "0fb3e0ff-aff3-4a5a-89fb-73be42d152cf",
-      "8de8aeba-2142-4981-bd0e-8e433ac7bdb7",
       "f005dad6-bba9-4015-9b5c-84d894ab379b",
+      "8de8aeba-2142-4981-bd0e-8e433ac7bdb7",
+      "abf2ab3e-68d3-4f7c-bc39-cccaa7740754",
       "3bf35d03-c1b7-4e21-b4ee-4e019c49dcd3",
       "a784020b-3db6-4b0f-acfb-b625c9585b84",
       "86fb6a90-184a-427d-9511-cb14f54f896e",
+      "7ff0b61b-2e3f-44a0-b070-1efd10b116bb",
       "31b0b08e-39ac-4543-b470-474b1b9ac7d2",
-      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234",
-      "7ff0b61b-2e3f-44a0-b070-1efd10b116bb"
+      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234"
      ]
     },
-    "2b4791b9-967a-4647-ada0-5d9be41f7d82": {
-     "title": "Automatisk betjening",
-     "id": "2b4791b9-967a-4647-ada0-5d9be41f7d82",
+    "c9f4f550-da19-4e9b-ad37-d60bd46de3a9": {
+     "title": "Automatikfunktion",
+     "id": "c9f4f550-da19-4e9b-ad37-d60bd46de3a9",
      "references": [
       "4607a553-1dc4-4c05-a32e-e88b59280988",
       "f382507b-c769-4a81-846d-f03f680687f7",
-      "671519d9-674a-4595-a02b-d633ccc9a40c",
+      "97ddbbf0-5d77-46a0-b07a-fd7321634cac",
       "9b737151-2158-49dd-97f1-65fa025a1b04",
       "cb5b905b-982f-4ddf-9b67-7b1f3f185e38",
-      "57e32c4c-3252-4bf0-bc7d-ab34620cd26a",
-      "3434d10d-6c13-464b-95b5-5fb457dc50c2",
       "e479ed6d-4bbe-4874-a4ff-cc15f879223b",
+      "3434d10d-6c13-464b-95b5-5fb457dc50c2",
       "50aaa9ca-b643-47b4-a775-ca422f07d025",
       "c1552a3f-05d6-4ea6-8e57-3c620ee874ff",
+      "a784020b-3db6-4b0f-acfb-b625c9585b84",
+      "8a436096-6089-491f-9cdd-2952cc82f6a6",
       "09ab45b5-b7a0-4a5a-860c-e4f9e815cc7c",
       "20ff52d7-6553-4c32-a022-bbaa4fa8625d",
-      "8a436096-6089-491f-9cdd-2952cc82f6a6",
-      "875abff8-2758-4d11-877c-87ab6214f553",
-      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234",
-      "303ae492-e4d4-4fe8-a96e-28eec9cea3c3",
       "836b0246-f545-4ee9-ac0e-decbfa2dcca0",
       "bbfb980e-7c38-4c3d-9d96-e76eb5c80448",
-      "8d7ec78a-44cc-4589-bd45-983f7d85b8aa"
+      "8a000ce6-a5bf-45c4-9884-749f40c4797f",
+      "c7c98d3e-8289-4c88-a354-b730b0fc0be5",
+      "ea19f8ad-d4c3-480d-bb0f-010d67cbf7f3",
+      "875abff8-2758-4d11-877c-87ab6214f553",
+      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234",
+      "b77a8dcc-28dd-4f36-81df-3cb83f20bae8"
      ]
     },
-    "627640ac-30af-47b2-a5cc-06f5a885921c": {
-     "title": "Installation og brugervenlighed",
-     "id": "627640ac-30af-47b2-a5cc-06f5a885921c",
+    "8dd51ad2-0395-423d-be1e-6e79706167de": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "8dd51ad2-0395-423d-be1e-6e79706167de",
      "references": [
       "4782f7bd-554a-47ce-bdce-d9943793ac18",
       "32d1dbc4-b7ea-4b5d-ab34-519fe28cf678",
       "97ddbbf0-5d77-46a0-b07a-fd7321634cac",
       "88525029-ec86-430c-8913-53b66542cfa1",
       "f25dc550-f4fc-417b-9e80-9e9b6d3000b6",
+      "9f07d97c-a353-4864-b459-58b1a5885437",
       "d6bf081a-841e-4d59-9b27-1a9feda85af2",
       "0ddfaa54-63f3-4f07-9b95-2a077cdf1967",
+      "0e3a2d32-48da-4ef7-8307-10a8727690db",
       "0f727f52-6a39-4e31-bc6f-34f8fc1cf5db",
-      "d6115ffd-dee5-49ef-ae00-6b2beff5456a",
-      "e937cfce-65b2-43da-a800-e141642c01cb",
-      "b412a9e8-3371-4c5a-bb7c-9b24b53926cc",
-      "f92a4b8e-a382-49e4-b2e3-c5ff78abaa9b",
       "a32125f1-e928-4563-bf1d-42f0d5b2d91c",
       "ea19f8ad-d4c3-480d-bb0f-010d67cbf7f3",
       "bbfb980e-7c38-4c3d-9d96-e76eb5c80448",
       "d5d32ee6-ceaa-4a09-bab1-975dbe9181fe",
+      "0bbade24-7229-4195-a3f0-f6edf77710c1",
       "4167e002-af60-4bca-8ea3-3f80e1cb8a29",
-      "8a436096-6089-491f-9cdd-2952cc82f6a6"
+      "e937cfce-65b2-43da-a800-e141642c01cb",
+      "b7f05355-27dc-4b59-8ef7-c29bc95e1e84"
      ]
     },
-    "681b4987-e464-468e-bcd2-e749c81a4879": {
+    "a68fecfc-cee3-4354-b268-cbba7d78bda4": {
      "title": "Design og konstruktion",
-     "id": "681b4987-e464-468e-bcd2-e749c81a4879",
+     "id": "a68fecfc-cee3-4354-b268-cbba7d78bda4",
      "references": [
-      "f1de49a6-7ec0-4624-9ab4-e58f044c8ad8",
       "c166e92e-e4d0-4d52-af2f-d7310b4af350",
+      "f1de49a6-7ec0-4624-9ab4-e58f044c8ad8",
       "2f4d7b42-d0f6-4a42-a6b9-084a7e14c75f",
+      "bbf71248-91de-48e3-ae75-044c431934aa",
       "ed790d66-7a44-49a9-95aa-1e1b7657cdc8",
-      "0bbade24-7229-4195-a3f0-f6edf77710c1",
-      "b7f05355-27dc-4b59-8ef7-c29bc95e1e84",
+      "0e5df341-1347-4c07-b738-0ecb64e2719f",
+      "b412a9e8-3371-4c5a-bb7c-9b24b53926cc",
       "2eb66232-ebef-4c78-8b48-efaaf1ebe3c3",
+      "84e0a9b5-364a-4c1d-9b8a-09ca459dd6e4",
+      "33a8f25b-441d-4617-b35a-303fa7d45262",
+      "6b0ce183-cf77-4bbe-a7fd-420f6bafdb87",
       "83348f83-26c8-47d8-8355-7d6520208d50",
-      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234",
+      "2eb66232-ebef-4c78-8b48-efaaf1ebe3c3",
       "d5d32ee6-ceaa-4a09-bab1-975dbe9181fe",
-      "621c5630-ed9d-46d7-a96c-8470ee061790",
-      "84e0a9b5-364a-4c1d-9b8a-09ca459dd6e4"
+      "91dcc6dc-ccfc-4c94-ae29-1df9cd186234"
      ]
     }
    },
-   "rating": 4.73548387096774,
-   "count": 310,
+   "rating": 4.7363344051447,
+   "count": 311,
    "reviewCount": 181,
    "distribution": {
     "1": 3,
     "2": 1,
     "3": 7,
     "4": 53,
-    "5": 246
+    "5": 247
    }
   },
   "brandName": "Denon",

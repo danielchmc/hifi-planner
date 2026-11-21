@@ -13,6 +13,13 @@
    "url": "/kabler/minijack-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "082703ce-c4b9-46ed-9c24-0d0fcbd4e59c"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 212758,
   "skuCode": "ESSCL1MJX",
@@ -277,8 +284,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 39,
+     "numberOfStoresExperience": 12,
+     "availableQuantity": 113,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,7 +364,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 118,
+     "availableQuantity": 116,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -435,8 +442,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 334,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 323,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -458,48 +465,34 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1MJX er et alsidigt kabel til en god pris, som generelt giver pålidelige forbindelser og en klar, behagelig lyd. Trigger-funktioner fungerer problemfrit med kompatibelt udstyr, mens den generøse længde gør det særligt behageligt at lytte med hovedtelefoner fra sofaen. Den solide konstruktion, de forgyldte stik og den varme, rene lyd gør kablet til et oplagt valg, selv om kompatibiliteten med visse enheder bør kontrolleres.",
+   "summary": "Dette alsidige kabel leverer pålidelige forbindelser og nyttig funktion til triggersystemer, hovedtelefoner og lydanlæg. Triggerfunktionen roses for at være driftssikker, mens den robuste, guldbelagte konstruktion giver sikker kontakt og klar, fyldig lyd. Kablet gør det også muligt at lytte afslappet på afstand af tv'et og giver stor værdi i daglig brug.",
    "headlines": {
-    "trigger switching works reliably": {
-     "sentimentAnalysis": "Trigger-brugen roses for pålidelig drift mellem kompatible lydkomponenter.",
-     "simpleTitle": "Trigger-skift fungerer pålideligt",
+    "clearer, more enjoyable headphone listening": {
+     "sentimentAnalysis": "Kablet gør afslappet lytning på afstand mulig og beskrives som klart lydende sammenlignet med et simpelt medfølgende kabel.",
+     "simpleTitle": "Klarere og mere behagelig hovedtelefonlytning",
+     "bias": "positive",
+     "key": "headphone_use",
+     "groupId": "e026aeaf-515a-420e-a06d-9d02d34b8003"
+    },
+    "reliable trigger switching": {
+     "sentimentAnalysis": "Kablet udfører triggerfunktionen pålideligt mellem lydkomponenter og tænder og slukker en aktiv subwoofer som ønsket.",
+     "simpleTitle": "Pålidelig triggerstyring",
      "bias": "positive",
      "key": "trigger",
-     "groupId": "0e4a0304-d087-44e6-9ce2-dacb2a5b9d55"
+     "groupId": "74df0f5a-6208-42ea-bad3-c323e89ee658"
     },
-    "some device compatibility is uncertain": {
-     "sentimentAnalysis": "Trigger-funktionen er ikke universelt pålidelig, og der er bekymring for den forventede funktion med visse enheder.",
-     "simpleTitle": "Kompatibiliteten med visse enheder er usikker",
-     "bias": "negative",
-     "key": "trigger",
-     "groupId": "0e4a0304-d087-44e6-9ce2-dacb2a5b9d55"
-    },
-    "long length makes sofa listening comfortable": {
-     "sentimentAnalysis": "Kabellængden værdsættes, fordi den muliggør afslappet hovedtelefonlytning på afstand af fjernsynet eller lydkilden.",
-     "simpleTitle": "Den lange længde gør lytning fra sofaen behagelig",
+    "sturdy construction and secure contact": {
+     "sentimentAnalysis": "Det robuste kabel og de guldbelagte stik giver sikker kontakt og modvirker problemer med oxiderede forbindelser.",
+     "simpleTitle": "Robust konstruktion og sikker kontakt",
      "bias": "positive",
-     "key": "headphone-use",
-     "groupId": "5505177a-51e0-4b97-9ebc-f88d6909663c"
-    },
-    "clearer sound than basic cables": {
-     "sentimentAnalysis": "Kablet forbindes med ren, klar lyd og bedre forbindelseskvalitet end simple alternativer.",
-     "simpleTitle": "Klarere lyd end med standardkabler",
-     "bias": "positive",
-     "key": "cable-quality",
-     "groupId": "5c413ed2-ae61-4c7a-98f7-31a677d9c982"
-    },
-    "good value for money": {
-     "sentimentAnalysis": "Den lave pris fremhæves sammen med tilfredsstillende ydeevne og samlet kvalitet.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "cable-quality",
-     "groupId": "5c413ed2-ae61-4c7a-98f7-31a677d9c982"
+     "key": "cable_quality",
+     "groupId": "adc630a7-6f3c-43db-a50c-35a1bab0232b"
     }
    },
    "grouping": {
-    "5c413ed2-ae61-4c7a-98f7-31a677d9c982": {
+    "adc630a7-6f3c-43db-a50c-35a1bab0232b": {
      "title": "Kabelkvalitet",
-     "id": "5c413ed2-ae61-4c7a-98f7-31a677d9c982",
+     "id": "adc630a7-6f3c-43db-a50c-35a1bab0232b",
      "references": [
       "b5226068-2bfb-40ef-9406-c807122d1023",
       "a09e4e5b-f7a1-44e5-8ff1-d350a4d0f37b",
@@ -508,9 +501,9 @@
       "fe9d21a7-2d96-45fe-8365-ca2075d06429"
      ]
     },
-    "0e4a0304-d087-44e6-9ce2-dacb2a5b9d55": {
-     "title": "Trigger-funktion",
-     "id": "0e4a0304-d087-44e6-9ce2-dacb2a5b9d55",
+    "74df0f5a-6208-42ea-bad3-c323e89ee658": {
+     "title": "Triggerfunktion",
+     "id": "74df0f5a-6208-42ea-bad3-c323e89ee658",
      "references": [
       "13b89225-e469-40f1-8071-ecffd49d9579",
       "82807d53-1dff-476b-9a60-2d1cc440cb7b",
@@ -518,9 +511,9 @@
       "54a35c32-7d97-426a-9435-58cb51228057"
      ]
     },
-    "5505177a-51e0-4b97-9ebc-f88d6909663c": {
-     "title": "Hovedtelefonbrug",
-     "id": "5505177a-51e0-4b97-9ebc-f88d6909663c",
+    "e026aeaf-515a-420e-a06d-9d02d34b8003": {
+     "title": "Brug med hovedtelefoner",
+     "id": "e026aeaf-515a-420e-a06d-9d02d34b8003",
      "references": [
       "650d5256-b9d9-4abf-b0fc-b1882f17e92e",
       "2d51c547-d871-4b05-b6f0-fe2d926e9c41",

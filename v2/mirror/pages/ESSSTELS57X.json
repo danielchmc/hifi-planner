@@ -13,6 +13,18 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7bf1382a-4230-4975-9f68-ea9b7c8baf57",
+   "36e44cfe-af0a-49e9-bded-a72b50c31f9a",
+   "9f4f538a-9b38-46c9-ac69-8682496e0c0e",
+   "d2d60588-3fcc-4d4b-a519-0511367a551c",
+   "69930f56-baad-42a5-9b01-e883937d76ee",
+   "31624893-e14a-4a4a-ac92-64d4559d15a7"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214359,
   "skuCode": "ESSSTELS57X",
@@ -114,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 15,
+     "availableQuantity": 302,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -156,41 +168,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse stativer har et elegant, diskret og tidløst udtryk, der passer smukt til både højttalere og boligindretning. Den solide og funktionelle konstruktion giver højttalerne en sikker platform med varm visuel harmoni og praktisk gennemslagskraft. Skrøbelige plastfødder og en forholdsvis høj pris er de primære minusser ved en ellers stilfuld og imponerende opgradering.",
+   "summary": "Disse stativer har et elegant, minimalistisk og diskret udtryk, der passer smukt til både højttalere og indretning. Stabil støtte, funktionalitet og enkel placering gør designet attraktivt med en varm og praktisk elegance. Skrøbelige plastfødder, begrænset højde og en relativt høj pris svækker dog en ellers flot og attraktiv helhed.",
    "headlines": {
-    "sleek, understated design suits speakers and interiors": {
-     "sentimentAnalysis": "Stativernes attraktive, slanke, tidløse og diskrete udseende roses gentagne gange, ligesom evnen til at passe til højttalere og indretning.",
-     "simpleTitle": "Elegant og diskret design passer til højttalere og interiør",
+    "sleek design complements speakers and interiors": {
+     "sentimentAnalysis": "Stativerne roses gentagne gange for et stilfuldt, slankt og minimalistisk design, der er nemt at integrere med højttalere eller boligindretning.",
+     "simpleTitle": "Elegant design passer til højttalere og indretning",
      "bias": "positive",
      "key": "design",
-     "groupId": "4874bd70-ecd4-4cb1-bad2-83f5fab64d33"
+     "groupId": "ac038f3d-0846-493e-b70d-5f5fbb700b8b"
     },
-    "plastic feet break or come loose too easily": {
-     "sentimentAnalysis": "Plastfødderne kritiseres bredt for at være skrøbelige, dårligt fastgjorte og under det forventede kvalitetsniveau.",
+    "plastic feet break or detach too easily": {
+     "sentimentAnalysis": "Plastfødderne kritiseres konsekvent for at revne, knække eller løsne sig, hvilket svækker den oplevede kvalitet.",
      "simpleTitle": "Plastfødder knækker eller løsner sig for let",
      "bias": "negative",
-     "key": "feet",
-     "groupId": "118aa046-8ad6-487c-977c-0da22ce642aa"
+     "key": "feet_quality",
+     "groupId": "a2174a19-6443-4869-ac85-59bb7707290a"
     },
-    "stable platform for speakers": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver stativerne som solide, standhaftige og i stand til at holde højttalerne sikkert.",
-     "simpleTitle": "Stabil platform til højttalere",
+    "stable support keeps speakers secure": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver stativerne som solide eller stabile, så højttalerne står sikkert.",
+     "simpleTitle": "Stabil støtte holder højttalerne sikkert på plads",
      "bias": "positive",
      "key": "stability",
-     "groupId": "29c36dcb-83b7-4c17-b16e-baae783b194b"
+     "groupId": "2f6c0a00-84f1-4ab6-aac7-fc5ce4821db4"
     },
-    "price feels high for the quality": {
-     "sentimentAnalysis": "Stativernes pris vurderes som høj, især i betragtning af manglerne ved små detaljer og føddernes holdbarhed.",
-     "simpleTitle": "Prisen virker høj i forhold til kvaliteten",
+    "price feels high for the construction": {
+     "sentimentAnalysis": "Stativerne opfattes som dyre, især på grund af manglerne i de små konstruktionsdetaljer.",
+     "simpleTitle": "Prisen virker høj i forhold til konstruktionen",
      "bias": "negative",
      "key": "price",
-     "groupId": "ef2c3ebe-59d4-4201-a49b-869c66b0e7a3"
+     "groupId": "e1f039ba-5f31-46d8-bb21-10e1d123e181"
     }
    },
    "grouping": {
-    "4874bd70-ecd4-4cb1-bad2-83f5fab64d33": {
+    "ac038f3d-0846-493e-b70d-5f5fbb700b8b": {
      "title": "Design",
-     "id": "4874bd70-ecd4-4cb1-bad2-83f5fab64d33",
+     "id": "ac038f3d-0846-493e-b70d-5f5fbb700b8b",
      "references": [
       "24dd46ff-6486-41ee-bc2f-0020e6482928",
       "4c187cd0-917d-4198-b839-8ae128a11839",
@@ -201,13 +213,13 @@
       "2ac6a1bb-db46-4bee-b53f-4c3f32e68399",
       "9ced1fa2-9ae8-4ddc-b253-6829eb9e5414",
       "67082a04-95d9-437a-a17a-8686f59e8a9e",
-      "4bc939fc-c0be-45ad-9f59-7d380eb94c6c",
+      "1d6f064e-1c89-40b2-9654-1b0809f477e9",
       "8c82266c-8308-4128-ae6a-e77de8edd0fb"
      ]
     },
-    "29c36dcb-83b7-4c17-b16e-baae783b194b": {
+    "2f6c0a00-84f1-4ab6-aac7-fc5ce4821db4": {
      "title": "Stabilitet",
-     "id": "29c36dcb-83b7-4c17-b16e-baae783b194b",
+     "id": "2f6c0a00-84f1-4ab6-aac7-fc5ce4821db4",
      "references": [
       "4c187cd0-917d-4198-b839-8ae128a11839",
       "2fde73d9-3899-46ed-bdbd-226aeacbc20b",
@@ -217,9 +229,9 @@
       "321d1cb1-7604-4576-b6fe-6d943f1c251b"
      ]
     },
-    "118aa046-8ad6-487c-977c-0da22ce642aa": {
+    "a2174a19-6443-4869-ac85-59bb7707290a": {
      "title": "Fødder og byggekvalitet",
-     "id": "118aa046-8ad6-487c-977c-0da22ce642aa",
+     "id": "a2174a19-6443-4869-ac85-59bb7707290a",
      "references": [
       "76ed665d-037d-4c42-a4a9-fd6fef25623f",
       "100e5b67-b68e-40c7-8694-1e5d933b295c",
@@ -229,24 +241,24 @@
       "8c82266c-8308-4128-ae6a-e77de8edd0fb"
      ]
     },
-    "ef2c3ebe-59d4-4201-a49b-869c66b0e7a3": {
+    "e1f039ba-5f31-46d8-bb21-10e1d123e181": {
      "title": "Pris",
-     "id": "ef2c3ebe-59d4-4201-a49b-869c66b0e7a3",
+     "id": "e1f039ba-5f31-46d8-bb21-10e1d123e181",
      "references": [
       "d87420a8-e581-48e7-8a5e-8758bc4d8365",
       "67082a04-95d9-437a-a17a-8686f59e8a9e"
      ]
     }
    },
-   "rating": 4.47222222222222,
-   "count": 36,
+   "rating": 4.48648648648649,
+   "count": 37,
    "reviewCount": 18,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 7,
     "4": 5,
-    "5": 24
+    "5": 25
    }
   },
   "brandName": "Essentials",

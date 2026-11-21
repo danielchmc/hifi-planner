@@ -13,6 +13,15 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Optisk digitalkabel · Tilslutning: S/PDIF (Toslink)"
+  },
+  "gallery": [
+   "6294dba9-ae67-4b23-8136-4ea7ce52f3cd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212760,
   "skuCode": "ESSCL1OPTX",
@@ -126,7 +135,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 579,
+     "availableQuantity": 572,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -205,7 +214,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 615,
+     "availableQuantity": 613,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -284,7 +293,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 152,
+     "availableQuantity": 270,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -464,58 +473,75 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1OPTX opfattes generelt som et pålideligt, solidt og brugervenligt kabel, der leverer en ren og stabil signaloverførsel. Flere anmeldelser roser den efterfølgende lyd som klar, fyldig, varm og omsluttende, især til musik, tv og hovedtelefoner. Den væsentligste kritik er begrænset kompatibilitet med ét ældre Panasonic-tv, mens nogle anmeldere har svært ved at adskille lydforbedringen fra andet opgraderet udstyr.",
+   "summary": "ESSCL1OPTX leverer ren, stabil og ofte imponerende fyldig lyd med varm bas, tydelig tale og skarpe detaljer til både musik og tv. Installationen er generelt enkel, og kablet føles fleksibelt, solidt og pengene værd. Kompatibiliteten er fremragende i de fleste opsætninger, selv om et ældre Panasonic-tv muligvis ikke understøtter forbindelsen, og HDMI var tilstrækkeligt for nogle brugere.",
    "headlines": {
-    "clear, full and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en kraftfuld, klar og naturlig gengivelse med fyldig bas, gennemsigtige diskanttoner og en omsluttende oplevelse til musik, tv og hovedtelefoner.",
-     "simpleTitle": "Klar, fyldig og omsluttende lyd",
+    "solid, flexible and good value": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt et vellavet, fleksibelt kabel med stabil ydelse og god værdi for pengene.",
+     "simpleTitle": "Solid, fleksibel og god værdi",
+     "bias": "positive",
+     "key": "cable-quality",
+     "groupId": "5863d3ad-6060-4ae7-83cd-d588738d3e48"
+    },
+    "easy connection in most systems": {
+     "sentimentAnalysis": "De fleste brugere rapporterer om enkle forbindelser mellem tv, forstærkere, højttalere og streamere med få eller ingen opsætningsproblemer.",
+     "simpleTitle": "Nem tilslutning i de fleste systemer",
+     "bias": "positive",
+     "key": "setup-compatibility",
+     "groupId": "3bd169ff-4f1d-4597-ac71-c7ee08abb072"
+    },
+    "full, clear and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den fyldige, varme og detaljerede gengivelse med tydelig tale, kraftig bas og et omsluttende stereoperspektiv.",
+     "simpleTitle": "Fyldig, klar og omsluttende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "b08107ad-4032-435e-a552-ed1c4d7af28b"
+     "groupId": "5ead93a4-d41a-461b-9283-44ba69d7925b"
     },
-    "solid construction and good value": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som solidt, fleksibelt, vellavet og attraktivt prissat.",
-     "simpleTitle": "Solid konstruktion og god værdi",
-     "bias": "positive",
-     "key": "build-value",
-     "groupId": "60a7680a-0cb0-489f-9ee8-c57d24943852"
-    },
-    "easy connection and setup": {
-     "sentimentAnalysis": "Tilslutninger mellem tv, forstærkere, højttalere og hovedtelefoner beskrives generelt som problemfri og ligetil.",
-     "simpleTitle": "Nem tilslutning og opsætning",
-     "bias": "positive",
-     "key": "installation",
-     "groupId": "bda45c09-a5c5-4c13-a67e-624b1a679224"
-    },
-    "sound improvement is difficult to isolate": {
-     "sentimentAnalysis": "Kablet giver god signaloverførsel, men nogle lyttere kan ikke tydeligt afgøre, hvor meget af lydforbedringen der skyldes kablet frem for andet udstyr eller andre forbindelsestyper.",
-     "simpleTitle": "Lydforbedring svær at isolere",
-     "bias": "meh",
-     "key": "sound-quality",
-     "groupId": "b08107ad-4032-435e-a552-ed1c4d7af28b"
+    "limited compatibility with one older TV": {
+     "sentimentAnalysis": "Der er en mindre kompatibilitetsbekymring: Et ældre Panasonic-tv kunne ikke tilsluttes, mens en anden bruger fandt HDMI tilstrækkeligt.",
+     "simpleTitle": "Begrænset kompatibilitet med et ældre tv",
+     "bias": "negative",
+     "key": "setup-compatibility",
+     "groupId": "3bd169ff-4f1d-4597-ac71-c7ee08abb072"
     }
    },
    "grouping": {
-    "b08107ad-4032-435e-a552-ed1c4d7af28b": {
+    "5ead93a4-d41a-461b-9283-44ba69d7925b": {
      "title": "Lydkvalitet",
-     "id": "b08107ad-4032-435e-a552-ed1c4d7af28b",
+     "id": "5ead93a4-d41a-461b-9283-44ba69d7925b",
      "references": [
       "d537f63f-4775-41ca-976d-06bcf9ec1ceb",
       "56d45b19-5eeb-4ab5-9ac4-42e7e1babc50",
       "23ba99dd-4aa3-4c7c-b1d2-3d15a5089907",
       "f0891a0c-3d8c-4457-a652-b57c83bed8ab",
       "aef9a2e6-1930-4757-82c4-65e0abf3c698",
-      "3a067bfb-228a-46ca-8121-4171ca963800",
       "39bbcf79-c2da-4c36-940c-18e58a449cfb",
       "1914fa8e-66f7-4310-8032-15ebc638f121",
       "1bc6b12b-cb62-4dc7-af9e-387eff2e1b19",
       "44d908a8-a7ae-4e33-b748-3426fc1eec64",
+      "acba1aee-314a-4da1-8201-779c72e2f9d5",
       "9b27c525-f975-48bc-895c-4ea0ca758706"
      ]
     },
-    "60a7680a-0cb0-489f-9ee8-c57d24943852": {
-     "title": "Byggekvalitet og værdi",
-     "id": "60a7680a-0cb0-489f-9ee8-c57d24943852",
+    "3bd169ff-4f1d-4597-ac71-c7ee08abb072": {
+     "title": "Opsætning og kompatibilitet",
+     "id": "3bd169ff-4f1d-4597-ac71-c7ee08abb072",
+     "references": [
+      "419eec60-9c19-4dd2-98ae-d65ba275552f",
+      "56d45b19-5eeb-4ab5-9ac4-42e7e1babc50",
+      "4f158c0a-0973-427c-bc21-1252780815ae",
+      "3a067bfb-228a-46ca-8121-4171ca963800",
+      "bddbd827-5f2a-4c57-a217-df131d4cd9af",
+      "144ed692-2960-4ad0-a0d9-8eed9e7f11be",
+      "adbfbd0a-e2ec-4020-9ba6-f7d6c59c9202",
+      "1914fa8e-66f7-4310-8032-15ebc638f121",
+      "c31e03ed-8cf6-4187-a27e-61bcb6fe93ad",
+      "6055f54f-46d3-49f5-89c3-76a8dfe935f8",
+      "a790fcd8-5e5b-4a75-82a9-19c9d40ca6f5"
+     ]
+    },
+    "5863d3ad-6060-4ae7-83cd-d588738d3e48": {
+     "title": "Kabelkvalitet og værdi",
+     "id": "5863d3ad-6060-4ae7-83cd-d588738d3e48",
      "references": [
       "77fe1c47-114c-4c3d-8f24-60b704387760",
       "6fa1345d-107c-4211-8470-8ee608040597",
@@ -523,21 +549,10 @@
       "78a76f4d-3bf8-4f05-b7ad-7e6a9478dde1",
       "8d2e4b13-17a5-4776-82c9-84b8c0beeef0",
       "d6cd07a7-dfe1-471c-9d42-17564aaaff8c",
+      "1c969cf8-d328-4c59-83a2-6843d6c2b5e0",
       "9b27c525-f975-48bc-895c-4ea0ca758706",
-      "1c969cf8-d328-4c59-83a2-6843d6c2b5e0"
-     ]
-    },
-    "bda45c09-a5c5-4c13-a67e-624b1a679224": {
-     "title": "Installation og kompatibilitet",
-     "id": "bda45c09-a5c5-4c13-a67e-624b1a679224",
-     "references": [
-      "56d45b19-5eeb-4ab5-9ac4-42e7e1babc50",
-      "4f158c0a-0973-427d-bc21-1252780815ae",
-      "bddbd827-5f2a-4c57-a217-df131d4cd9af",
-      "3a067bfb-228a-46ca-8121-4171ca963800",
-      "6055f54f-46d3-49f5-89c3-76a8dfe935f8",
-      "144ed692-2960-4ad0-a0d9-8eed9e7f11be",
-      "a790fcd8-5e5b-4a75-82a9-19c9d40ca6f5"
+      "e7871995-1db9-4ff4-a10c-8fc0b9db4749",
+      "9aaa503d-1a10-4c0e-9b5a-63fa96575f71"
      ]
     }
    },

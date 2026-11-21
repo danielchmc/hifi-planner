@@ -13,6 +13,13 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7b20e8c7-0741-4132-a511-7e112c9655b7"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212757,
   "skuCode": "ESSCL1INX",
@@ -131,8 +138,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 1584,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 1568,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -211,7 +218,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1021,
+     "availableQuantity": 1003,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -290,7 +297,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 704,
+     "availableQuantity": 690,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -369,7 +376,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 314,
+     "availableQuantity": 305,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -447,8 +454,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 19,
-     "availableQuantity": 107,
+     "numberOfStoresExperience": 20,
+     "availableQuantity": 105,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -470,55 +477,123 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSCL1INX betragtes generelt som et vellavet og pålideligt RCA-kabel med god værdi for pengene, der fungerer effektivt med pladespillere, forstærkere, soundbars, subwoofere og andet lydudstyr. Mange anmeldelser roser den solide konstruktion, det fleksible design, de sikre stik og de hørbare forbedringer i forhold til enkle eller almindelige kabler, herunder klarere lyd og mindre baggrundsstøj. Enkelte forbehold gælder meget stramme eller for store stik, lejlighedsvis støj ved bevægelse, et begrænset lydbillede eller svag bas samt en pris, som nogle synes er lidt høj.",
+   "summary": "ESSCL1INX betragtes generelt som et velbygget, pålideligt og prisvenligt RCA-kabel. Den fleksible konstruktion og de sikre stik gør installationen nem, mens mange brugere oplever klarere, forbedret lyd og mindre baggrundsstøj. Enkelte kritikpunkter vedrører for stramme eller tykke stik, lejlighedsvis støj ved bevægelse og én anmeldelse af tynd lyd med lav kvalitet.",
    "headlines": {
-    "clearer, better sound than standard cables": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydeligt hørbar forbedring i forhold til enkle kabler med flere detaljer, større klarhed og bedre lyd generelt.",
-     "simpleTitle": "Klarere og bedre lyd end med standardkabler",
+    "clearer, more detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver hørbare forbedringer i forhold til enkel standardkabelføring, med tydeligere detaljer og en bedre samlet gengivelse.",
+     "simpleTitle": "Klarere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "c3e3b77a-3b29-45ef-958a-c8e2f886cd27"
+     "key": "sound",
+     "groupId": "e4eb0664-b672-4477-8f16-1caf690fc1c9"
     },
-    "flexible, easy-to-route cable design": {
-     "sentimentAnalysis": "Anmeldelserne roser den smidige og fleksible konstruktion, som gør kabelføring og installation lettere, især over længere afstande.",
-     "simpleTitle": "Fleksibelt kabeldesign, der er let at føre",
+    "solid, good-value construction": {
+     "sentimentAnalysis": "Kablet roses gentagne gange for at være solidt, velbygget og rimeligt prissat.",
+     "simpleTitle": "Solid konstruktion til en god pris",
+     "bias": "positive",
+     "key": "quality",
+     "groupId": "c003579e-e4c7-4086-893c-d10da062a0c5"
+    },
+    "flexible and easy to route": {
+     "sentimentAnalysis": "De separate, smidige kabler anses for nemme at føre og praktiske til længere installationer.",
+     "simpleTitle": "Fleksibel og nem at føre",
      "bias": "positive",
      "key": "flexibility",
-     "groupId": "a18a6d54-4bd6-425b-b625-1f0f67ceb1bd"
-    },
-    "secure, solid connectors": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver stikkene som gode, sikre og solide med pålidelig forbindelseskvalitet.",
-     "simpleTitle": "Sikre og solide stik",
-     "bias": "positive",
-     "key": "connections",
-     "groupId": "f651cf97-7d09-43a7-8621-1a6b47eb3a55"
-    },
-    "strong value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer, at kablet er billigt eller rimeligt prissat i forhold til kvalitet og ydeevne.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "7cc9b917-5624-4cb5-979d-c5ebb96c3350"
+     "groupId": "d614561f-fe69-4a50-bc3e-2ee02c228a2c"
     },
     "reduced background noise": {
-     "sentimentAnalysis": "Flere anmeldelser nævner specifikt forbindelser uden forstyrrelser og fjernelse af generende baggrundsstøj.",
+     "sentimentAnalysis": "Flere installationer beskrives som støjfrie eller med mærkbart mindre baggrundsstøj, også ved lange forbindelser fra pladespillere.",
      "simpleTitle": "Mindre baggrundsstøj",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "c3e3b77a-3b29-45ef-958a-c8e2f886cd27"
+     "key": "sound",
+     "groupId": "e4eb0664-b672-4477-8f16-1caf690fc1c9"
     },
-    "some plugs are too tight or too large": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne nævner problemer med at sætte et stik i eller tage det ud samt inkompatibilitet med ældre udstyr.",
-     "simpleTitle": "Nogle stik er for stramme eller for store",
+    "some plugs are too tight or thick": {
+     "sentimentAnalysis": "Enkelte brugere finder nogle stik svære at sætte i eller tage ud på grund af for stor stramhed eller tykkelse.",
+     "simpleTitle": "Nogle stik er for stramme eller tykke",
      "bias": "negative",
      "key": "connections",
-     "groupId": "f651cf97-7d09-43a7-8621-1a6b47eb3a55"
+     "groupId": "3ae367f2-9634-442c-875c-47a1129336c5"
     }
    },
    "grouping": {
-    "c3e3b77a-3b29-45ef-958a-c8e2f886cd27": {
+    "c003579e-e4c7-4086-893c-d10da062a0c5": {
+     "title": "Byggekvalitet og værdi",
+     "id": "c003579e-e4c7-4086-893c-d10da062a0c5",
+     "references": [
+      "8fb1beed-560d-4fe9-97d7-efbd4449a3ba",
+      "7242c937-828e-42ea-977d-69ec35ab74b3",
+      "55085902-14e8-4563-9d2b-ab3d23a15a3f",
+      "0aa38e36-f917-49b1-9f6f-b65c28bf8ea0",
+      "4884fef0-f723-4b30-a3ac-100bbd1b8cb7",
+      "4accf940-f4d3-4c65-9459-1b35fb6ce355",
+      "a71f3c25-eec2-426c-898e-3605948acd73",
+      "a13a3363-d452-4d70-bbeb-30c76ee4b142",
+      "bd5e0706-2105-43a7-8678-301fbbe5905e",
+      "d75cd793-7a04-401d-ac86-816619e4eeaa",
+      "f624f2a4-bb61-4322-94de-edcb7245384c",
+      "22021ee9-669d-48ad-b179-86e83afba42a",
+      "76f0d183-f630-4a31-845b-8c05ae804c88",
+      "f9e231d8-0f9e-4d27-b895-ac072c287af3",
+      "efcd1197-49b5-43a1-9e67-10c0093d1578",
+      "ea8027ac-8185-4dcc-bd2c-d609fe24a8a0",
+      "3aaa691f-77dd-4cad-bd87-6fb0bd81463b",
+      "5910329a-6604-432d-b86c-af9b2245d66c",
+      "06b26514-a060-407c-88ef-a11c8d922627",
+      "8a12ebc9-5930-4ca7-a8b4-f3fcc8b0b0ac",
+      "b6e89a44-703d-4d35-9c2c-d57ab54ac34a",
+      "564b07c0-bf5b-40e6-847e-b3021dc4c391",
+      "44af38ac-42a1-47a4-a29e-c47f20f07c93",
+      "38a22b26-bebb-4762-87cd-22fd3f6cf55b",
+      "b4ed218e-7d23-454c-9c36-6cee5bdba4a6",
+      "6f27de53-d828-4f8a-8255-87c89d572da1",
+      "76aa1538-324f-4ead-abe2-6eb6a2ee411e",
+      "a02e8022-4626-449e-968a-fd8325f863bb",
+      "38ff66fe-837b-4416-a832-465091a337eb",
+      "15847993-f04f-46bb-97e1-6054646e26db",
+      "bcff6462-432c-477f-a628-7f09001bde3f",
+      "9d391e1e-bfc2-468e-aedb-7f7bad38fba7",
+      "6723bafd-e71b-4da3-a88f-623b91efbe1b",
+      "0e6b6e18-8763-4b4e-8caa-b7ecffce3dfc",
+      "b47350ec-96c7-4174-82c1-57497019658e"
+     ]
+    },
+    "3ae367f2-9634-442c-875c-47a1129336c5": {
+     "title": "Tilslutninger og driftssikkerhed",
+     "id": "3ae367f2-9634-442c-875c-47a1129336c5",
+     "references": [
+      "77e4fef8-fa2f-495d-8fec-4835d4c22613",
+      "79e15039-4bb4-4838-b808-f07fd8f8a24c",
+      "195ff594-849b-4176-99d6-4da0de4e4788",
+      "faec97e9-e932-4a64-9de3-42dd44593555",
+      "02005c42-193a-4e77-a303-14f926827ec9",
+      "38e204af-5607-4fd2-a827-b3bc872e3ca9",
+      "c34c921d-5e16-49fa-8d73-1fed34280138",
+      "1bb0b3a5-09e6-440d-8ed6-acceae4dc822",
+      "318e5e5e-620d-4e1c-83cd-b44f5d96d3bf",
+      "3999755a-f179-41b0-b644-17b17cd3de9b",
+      "d6f72e7f-644f-465e-b92f-5c7b07a2d230",
+      "825006d8-f09b-448f-8ff2-5d237ace6080",
+      "72cf8b6d-ed0a-454e-8724-df55bd4bfcdb",
+      "998c10e1-1450-4643-b63c-b048df56c363",
+      "388bf4a9-6009-4bcc-9e83-e046902b4064",
+      "d0b08b42-3ef4-45ab-a682-e6c89164be22",
+      "5cd59ce8-d85e-48be-855f-bde5eb6c8ada",
+      "ee152afd-5e23-422f-b455-a244e227d222",
+      "8d0d5d55-5680-4ad1-a299-66a6e8cbf20d",
+      "6697825b-4cce-41f8-97b3-937f888c4003",
+      "2fa4c850-11de-41c5-9a79-1446bc6edeb0",
+      "045be379-9592-4435-9ca8-efcfaad33e23",
+      "d73570fb-66c8-48c9-8869-f6595f695f61",
+      "02820295-e91b-4330-b6e8-43be4ae36d1b",
+      "c57e0b68-4e62-42e4-9213-71f0011d7326",
+      "ed9f4417-0633-44db-8694-25ff35916ed5",
+      "0864fe0c-4263-4bb1-8b5f-70c3f272028f",
+      "9d391e1e-bfc2-468e-aedb-7f7bad38fba7"
+     ]
+    },
+    "e4eb0664-b672-4477-8f16-1caf690fc1c9": {
      "title": "Lydkvalitet",
-     "id": "c3e3b77a-3b29-45ef-958a-c8e2f886cd27",
+     "id": "e4eb0664-b672-4477-8f16-1caf690fc1c9",
      "references": [
       "40c09191-31f2-4881-925f-9b41e1fa62fc",
       "2c9dda77-4d3e-42bf-837b-f7dd34443d4f",
@@ -526,7 +601,6 @@
       "5d68a8a9-49e1-4e4d-bfd7-a6b8e585ecba",
       "e6ede4ce-7c78-4c5b-a3ce-4cae2891ef27",
       "806635a2-e9fd-40b7-8da6-9e6f9852c0bb",
-      "a84a2c0a-d0cb-4596-a0fb-043cf87d6342",
       "b5cde554-49d4-4749-993b-38dc3454667a",
       "81ce3039-267a-408b-a654-057b8113566b",
       "b6b9753f-23e0-4da1-a215-07065a58db90",
@@ -537,67 +611,35 @@
       "2b43827b-b4e6-43f5-a7eb-c312a0911c93",
       "96258142-e8de-4ad4-87e0-2f8edafa2911",
       "dc71217b-8eaa-47f6-b9e6-ac82ec28bab2",
-      "8f60e686-5b34-4742-b2a6-3d10f3dd6ede"
+      "8f60e686-5b34-4742-b2a6-3d10f3dd6ede",
+      "e175f1d9-3b2b-4061-80e0-ade8958f6760"
      ]
     },
-    "a18a6d54-4bd6-425b-b625-1f0f67ceb1bd": {
+    "d614561f-fe69-4a50-bc3e-2ee02c228a2c": {
      "title": "Fleksibilitet og håndtering",
-     "id": "a18a6d54-4bd6-425b-b625-1f0f67ceb1bd",
+     "id": "d614561f-fe69-4a50-bc3e-2ee02c228a2c",
      "references": [
       "40c09191-31f2-4881-925f-9b41e1fa62fc",
-      "79e15039-4bb4-4838-b808-f07fd8f8a24c",
       "02005c42-193a-4e77-a303-14f926827ec9",
+      "79e15039-4bb4-4838-b808-f07fd8f8a24c",
       "7230a340-0f71-4a06-9f8f-372f950b1f40",
       "ec7e1fda-f374-4cc0-a135-35981a47ec5d",
-      "1a2ea26e-2283-4724-a569-ac052fefc4c7",
       "22021ee9-669d-48ad-b179-86e83afba42a",
-      "9b96d0ac-543d-47bb-991e-e3a53c006164",
       "9414a241-cb73-4066-8b6b-9d14c3a8ced2",
-      "f37ec177-4f16-4ff7-bc76-3e9da1f46161"
-     ]
-    },
-    "f651cf97-7d09-43a7-8621-1a6b47eb3a55": {
-     "title": "Tilslutninger og pasform",
-     "id": "f651cf97-7d09-43a7-8621-1a6b47eb3a55",
-     "references": [
-      "79e15039-4bb4-4838-b808-f07fd8f8a24c",
-      "195ff594-849b-4176-99d6-4da0de4e4788",
-      "02005c42-193a-4e77-a303-14f926827ec9",
-      "c34c921d-5e16-49fa-8d73-1fed34280138",
-      "30a88b78-45d7-434c-85ee-516049ab5bfb",
-      "3999755a-f179-41b0-b644-17b17cd3de9b",
-      "5f23171d-07c4-44be-98cc-9773c05d33ee",
-      "7de95015-ec89-4aa3-bafe-71153e8f3458",
-      "ac078d7e-f11c-48ea-89ce-5fed0c2f8f6d",
-      "f37ec177-4f16-4ff7-bc76-3e9da1f46161"
-     ]
-    },
-    "7cc9b917-5624-4cb5-979d-c5ebb96c3350": {
-     "title": "Pris og værdi",
-     "id": "7cc9b917-5624-4cb5-979d-c5ebb96c3350",
-     "references": [
-      "4884fef0-f723-4b30-a3ac-100bbd1b8cb7",
-      "53da70f0-a793-4273-bff6-5c8f1aa366f6",
-      "f4496502-8f8e-4a9d-9a56-f5e872937570",
-      "a84a2c0a-d0cb-4596-a0fb-043cf87d6342",
-      "e984e4ef-d93a-44f9-a1fa-11c6dcba9692",
-      "5f4d808c-cb6c-4361-b152-733befdc2650",
-      "564b07c0-bf5b-40e6-847e-b3021dc4c391",
-      "fb922790-85cd-4052-92d5-7e9c74bb1652",
-      "cdddef01-c8a2-4c50-b52a-0adb3639571e",
-      "bcff6462-432c-477f-a628-7f09001bde3f"
+      "f37ec177-4f16-4ff7-bc76-3e9da1f46161",
+      "9b96d0ac-543d-47bb-991e-e3a53c006164"
      ]
     }
    },
-   "rating": 4.73981900452489,
-   "count": 442,
-   "reviewCount": 127,
+   "rating": 4.74040632054176,
+   "count": 443,
+   "reviewCount": 128,
    "distribution": {
     "1": 2,
     "2": 6,
     "3": 14,
     "4": 61,
-    "5": 359
+    "5": 360
    }
   },
   "brandName": "Essentials",
