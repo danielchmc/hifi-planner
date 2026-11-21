@@ -64,7 +64,24 @@
     const flags = { sale: false, bt: false, wifi: false };
     const PER = 30; // rows built per step: more are added as the list scrolls near its end, so only rows (and thumbnails) in reach load
     const search = h('input#sb-search', { type: 'search', placeholder: t('Search name, brand, SKU, colour, port…', 'Søg navn, brand, SKU, farve, port…'), oninput: () => { filter(); },
-      onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); HP.katalog.open(search.value); } } }); // Enter: the same search in the Katalog
+      onkeydown: (e) => searchKeys(e) });
+    // ↓/↑ walk through the results; Enter adds the highlighted one to the canvas and clears the box for the next search.
+    // Enter with nothing highlighted opens the Katalog with the same search; Esc goes back to the canvas.
+    let hl = -1;
+    const rowEls = () => [...list.querySelectorAll('.prow')];
+    const light = (i) => { const els = rowEls(); hl = Math.max(-1, Math.min(i, els.length - 1)); els.forEach((r, j) => r.classList.toggle('hl', j === hl)); if (hl >= 0) els[hl].scrollIntoView({ block: 'nearest' }); };
+    function searchKeys(e) {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (e.key === 'ArrowDown' && hl >= rowEls().length - 2 && shown < hits.length) addRows();
+        light(e.key === 'ArrowDown' ? hl + 1 : hl - 1);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        const r = hl >= 0 && rowEls()[hl];
+        if (r && r._add) { r._add(); search.value = ''; filter(); search.focus(); }
+        else HP.katalog.open(search.value);
+      }
+    }
     const katBtn = h('button.kat-open', { title: t('Open the Katalog (Enter)', 'Åbn Katalog (Enter)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
     const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
     const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
@@ -132,6 +149,7 @@
     const SYS = '@systems', sysHay = new WeakMap();
     const hayOf = (b) => { if (!sysHay.has(b)) sysHay.set(b, [b.sku, b.brand, b.model, b.type, ...b.parts.map((x) => { const p = cat.get(x.id); return p.brand + ' ' + p.name + ' ' + (p.sku || ''); })].join(' ').toLowerCase()); return sysHay.get(b); };
     function filter() {
+      hl = -1;
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
       const base = cat.products().filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
       const sysAll = cat.systems();
@@ -165,6 +183,7 @@
       hits.slice(shown, shown + PER).forEach(({ p, v, sys }) => {
         if (sys) {
           const r = systemRow(sys);
+          r._add = () => C().addSystem(sys.sku);
           r.addEventListener('pointerdown', (e) => listDrag(e, cat.systemName(sys), (x, y) => C().addSystem(sys.sku, x, y), () => { C().addSystem(sys.sku); if (narrow()) Pn.drawer(false); }));
           list.append(r);
           return;
@@ -172,6 +191,7 @@
         const r = productRow(p, null, v);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
+        r._add = () => { C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };
         r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
         list.append(r);
         rows.push({ p, r });
@@ -208,6 +228,8 @@
     HP.on('catalog', () => { fillSelects(); buildList(); buildShortcuts(); });
     Pn.showTab = setTab;
     Pn.focusSearch = () => { setTab('products'); search.focus(); search.select(); };
+    // a key typed on the canvas starts a new search with that character (on a narrow screen the product drawer opens)
+    Pn.typeSearch = (ch) => { setTab('products'); if (narrow()) Pn.drawer(true); search.value = ch; search.focus(); search.setSelectionRange(1, 1); filter(); };
     return el;
   }
 
@@ -579,7 +601,7 @@
             li(t('Drag from an output dot (right side) to an input dot (left side) to draw a cable. You can also click one dot, then the other.', 'Træk fra en udgangsprik (højre side) til en indgangsprik (venstre side) for at trække et kabel. Du kan også klikke på én prik og derefter den anden.')),
             li(t('Dot and wire colours show the connector type. A dashed wire with a warning means the two connectors do not match.', 'Farven på prikker og ledninger viser stiktypen. En stiplet ledning med advarsel betyder, at de to stik ikke passer sammen.')),
             li(t('Click a wire to choose a cable. Matching cables are listed first. Drag a wire sideways to tidy its route.', 'Klik på en ledning for at vælge et kabel. Passende kabler vises først. Træk en ledning sidelæns for at rydde op i føringen.')),
-            li(t('Click a card image to flip between front and back. Double-click it (or press I) to inspect it full screen, e.g. to show a customer the rear panel. Zooming in on the canvas also loads sharper images.', 'Klik på et kortbillede for at skifte mellem for- og bagside. Dobbeltklik på det (eller tryk I) for at se det i fuld skærm, fx for at vise en kunde bagpanelet. Når du zoomer ind på lærredet, hentes også skarpere billeder.')),
+            li(t('Click a card image to flip between front and back. Double-click it (or press Alt+I) to inspect it full screen, e.g. to show a customer the rear panel. Zooming in on the canvas also loads sharper images.', 'Klik på et kortbillede for at skifte mellem for- og bagside. Dobbeltklik på det (eller tryk Alt+I) for at se det i fuld skærm, fx for at vise en kunde bagpanelet. Når du zoomer ind på lærredet, hentes også skarpere billeder.')),
             li(t('Select a card and press Replace (or drop another product on top of it) to swap the product and keep its cables.', 'Markér et kort og tryk Udskift (eller slip et andet produkt oven på det) for at skifte produktet og beholde kablerne.')),
             li(t('The round badges on a card show Bluetooth and WiFi. The small colour dots on the image pick the colour/finish (also with C); the price list follows the chosen colour.', 'De runde mærker på et kort viser Bluetooth og WiFi. De små farveprikker på billedet vælger farve/finish (også med C); prislisten følger den valgte farve.')))),
           h('div', null, h('h3', null, t('Proposal & print', 'Tilbud & print')), h('ul', null,
@@ -600,8 +622,9 @@
         h('h3', null, t('Keyboard', 'Tastatur')),
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
         h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
-          [['T'], t('Add text', 'Tilføj tekst')], [['R'], t('Replace selected card', 'Udskift markeret kort')], [['B'], t('Flip front/back', 'Vend for/bag')], [['C'], t('Colour / finish', 'Farve / finish')], [['I'], t('Inspect image', 'Se billedet nærmere')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
-          [['F'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
+          [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['↓', '↑', 'Enter'], t('In the search: pick a result and add it', 'I søgningen: vælg et resultat og tilføj det')], [['Enter'], t('Open the Katalog', 'Åbn Katalog')],
+          [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Colour / finish', 'Farve / finish')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
+          [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
         h('h3', null, t('Categories', 'Kategorier')),

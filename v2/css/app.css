@@ -699,3 +699,5 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 /* the sidebar's Katalog button, inside the search box */
 .searchbox .kat-open { display: flex; align-items: center; gap: 5px; height: 24px; padding: 0 8px; margin-right: -4px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
 .searchbox .kat-open:hover { border-color: var(--fg); }
+/* v4.4: the result chosen with ↓/↑ in the search box (Enter adds it) */
+#sb-list .prow.hl { background: var(--panel2); box-shadow: inset 3px 0 0 var(--accent); }

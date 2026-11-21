@@ -83,6 +83,12 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - Right-drag or middle-drag (also starting on a card): pan. Right-click without moving: the menu. Space + left-drag: pan. Scroll wheel: zoom.
 - Left-drag on a card, note, mark or wire: move it.
 
+## Keyboard
+
+- **Type to search.** A letter or number typed on the canvas goes into the product search in the sidebar and starts a new search, so the mouse can stay on the canvas. In the search box, **↓/↑** highlight a result and **Enter** adds it to the middle of the canvas and clears the box for the next search; Enter with nothing highlighted opens the Katalog with that search; **Esc** goes back to the canvas. Code: `keys()` in `js/main.js`, `Pn.typeSearch` and `searchKeys` in `js/panels.js`.
+- **Shortcuts for the selection are Alt + a letter** (read by key position, so Option+letter works on a Mac): Alt+T text, Alt+B flip front/back, Alt+C colour, Alt+I inspect image, Alt+L lock the floor plan, Alt+R replace. Until 2026-11-21 they were plain letters, which now type into the search.
+- **Shift+1** fits the drawing to the window (as in Figma and Miro). Unchanged: Delete, arrows (nudge), [ and ] (order), Enter (cable picker on a selected wire, otherwise the Katalog), Esc, Ctrl+Z/Y/C/V/D/A/S/P, F3, F4, /.
+
 ## Phones and tablets
 
 The app works on phones and iPads with touch.

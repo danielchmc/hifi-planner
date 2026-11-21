@@ -138,7 +138,7 @@
         plink(HP.productUrl(p, item), 'name', [p.name, h('span.plink-ic.print-only', null, ' ↗')])),
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
-        imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (I)', 'Se billedet nærmere (I)'), data: { inspect: '1' } }, icon('search', 13)),
+        imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (Alt+I)', 'Se billedet nærmere (Alt+I)'), data: { inspect: '1' } }, icon('search', 13)),
         (p.vars || []).length > 1 && h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
           p.vars.length > 8 && h('span.more', null, '+' + (p.vars.length - 8)))),
       hasIO ? h('.card-io', null, h('.col.in', null, (p.in || []).map((x) => port(x, 'in'))), h('.col.out', null, (p.out || []).map((x) => port(x, 'out')))) : null);
@@ -1034,10 +1034,10 @@
     } else if (ids.length) {
       M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : one.kind === 'mark' ? markTitle(one.k) : one.kind === 'legend' ? t('Legend', 'Signaturforklaring') : one.kind === 'zone' ? t('Room', 'Rum') + (one.name ? ': ' + one.name : '') : one.kind === 'run' ? t('Cable run', 'Kabeltræk') + (d.sc ? ' · ' + fmtM(runPx(one) / d.sc) : '') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
       if (p) {
-        add(t('Replace…', 'Udskift…'), 'R', 'swap', () => HP.panels.replacePicker(one.id));
-        if (HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'B', 'flip', () => C.flip(one.id));
-        if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'I', 'search', () => C.inspect(one.id));
-        if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'C', 'layers', () => C.colourMenu(one.id, null, x, y));
+        add(t('Replace…', 'Udskift…'), 'Alt+R', 'swap', () => HP.panels.replacePicker(one.id));
+        if (HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'Alt+B', 'flip', () => C.flip(one.id));
+        if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
+        if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'Alt+C', 'layers', () => C.colourMenu(one.id, null, x, y));
         if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
       if (one && one.kind === 'mark' && one.k[0] !== '@') {
@@ -1069,11 +1069,11 @@
     add(t('Redo', 'Annuller fortryd'), 'Ctrl+Y', 'redo', store.redo, { disabled: !store.canRedo() });
     add(t('Paste', 'Indsæt'), 'Ctrl+V', 'page', () => C.paste(x, y), { disabled: !C.canPaste() });
     M.push('sep');
-    add(t('Add text here', 'Tilføj tekst her'), 'T', 'text', () => C.addText(x, y));
+    add(t('Add text here', 'Tilføj tekst her'), 'Alt+T', 'text', () => C.addText(x, y));
     add(C.hasPrices() ? t('Hide price list', 'Skjul prisliste') : t('Show price list', 'Vis prisliste'), 'F3', 'tag', C.togglePrices);
     if (C.hasPlan()) add(t('Remove floor plan', 'Fjern plantegning'), '', 'plan', C.removePlan);
     add(t('Select all', 'Markér alt'), 'Ctrl+A', 'layers', C.selectAll);
-    add(t('Fit to window', 'Tilpas til vindue'), 'F', 'fit', C.fit);
+    add(t('Fit to window', 'Tilpas til vindue'), 'Shift+1', 'fit', C.fit);
     M.push({ el: HP.panels.scaleStepper() });
     M.push('sep');
     add(t('Save project…', 'Gem projekt…'), 'Ctrl+S', 'folder', HP.panels.projects);
@@ -1241,7 +1241,7 @@
         h('button', { title: t('Zoom out', 'Zoom ud'), onclick: () => C.zoomBy(1 / 1.25) }, icon('minus')),
         (zoomLbl = h('button.zl', { title: t('Reset to 100%', 'Nulstil til 100%'), onclick: () => C.zoomBy(1 / view.z) }, '100%')),
         h('button', { title: t('Zoom in', 'Zoom ind'), onclick: () => C.zoomBy(1.25) }, icon('plus')),
-        h('button', { title: t('Fit to window (F)', 'Tilpas til vindue (F)'), onclick: C.fit }, icon('fit'))));
+        h('button', { title: t('Fit to window (Shift+1)', 'Tilpas til vindue (Shift+1)'), onclick: C.fit }, icon('fit'))));
     mount.append(vp);
     // two fingers: pinch to zoom and pan together. Runs in the capture phase so a second finger never reaches onDown.
     const fingers = new Map(); let pinch = null;
