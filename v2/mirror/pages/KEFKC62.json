@@ -13,6 +13,21 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Analog RCA",
+   "Lydindgang": "Speaker (Phoenix), Analog RCA, LFE"
+  },
+  "gallery": [
+   "cedb5010-c390-4d22-a1ff-c22d36ba9844",
+   "4b689fab-c74d-443f-b13d-687f41c2f290",
+   "f5903771-948f-4004-8e34-de33bac49aab",
+   "bbb7daab-ae45-4bde-84f0-191e9b9a87d2",
+   "066d18d2-e882-4bc6-8ce6-e0b2037164bf",
+   "9c178b89-2023-44f4-9d60-c1c80e37a51c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 221647,
   "skuCode": "KEFKC62",
@@ -198,7 +213,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 57,
+     "availableQuantity": 56,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -289,7 +304,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 15,
+     "availableQuantity": 14,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -376,7 +391,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 22,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -446,120 +461,113 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFKC62 roses bredt som en kompakt, men kraftfuld subwoofer, der tilfører dyb, kontrolleret og musikalsk bas til mange forskellige højttalersystemer. Bassen beskrives ofte som præcis, slagkraftig, ren og velintegreret, især til musik, mens det lille kabinet og det flotte design gør den nem at placere. En tilbagevendende kritik er den for følsomme dvaletilstand, som kan afbryde stille lytning, og enkelte systemer kan lyde for buldrende, hvis niveauet sættes for højt.",
+   "summary": "KEFKC62 roses bredt som en kompakt high-end-subwoofer, der leverer dyb, ren, slagkraftig og musikalsk bas, som beriger musik, film og aktive højttalersystemer markant. Integrationen beskrives generelt som problemfri og velafbalanceret med stærke kombinationer med blandt andre KEF, Lyngdorf, Dynaudio og Magnepan. Det elegante, pladsbesparende design og den enkle opsætning er store styrker, men flere anmeldelser nævner forstyrrende dvaletilstand ved lav lydstyrke samt lejlighedsvis overdreven eller rungende bas ved forkert justering.",
    "headlines": {
-    "deep, controlled and musical bass": {
-     "sentimentAnalysis": "Subwooferen leverer overraskende dyb, ren og kontrolleret bas med særligt høj musikalitet.",
-     "simpleTitle": "Dyb, kontrolleret og musikalsk bas",
+    "compact and attractive design": {
+     "sentimentAnalysis": "De kompakte mål, det flotte design og den høje ydelse roses ofte samlet.",
+     "simpleTitle": "Kompakt og attraktivt design",
      "bias": "positive",
-     "key": "deep-bass",
-     "groupId": "8a6ee26f-fc78-41d0-8f8c-e6a48765b661"
+     "key": "design",
+     "groupId": "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6"
     },
-    "compact, attractive and powerful cabinet": {
-     "sentimentAnalysis": "Det usædvanligt lille kabinet opfattes som flot og imponerende kraftfuldt og kombinerer nem placering med høj ydelse.",
-     "simpleTitle": "Kompakt, flot og kraftfuldt kabinet",
+    "deep, clean and musical bass": {
+     "sentimentAnalysis": "Anmeldelserne roser den dybe, rene, præcise og musikalske lyd.",
+     "simpleTitle": "Dyb, ren og musikalsk bas",
      "bias": "positive",
-     "key": "compact-design",
-     "groupId": "08151249-6e0c-4899-ab6e-179d3a5e1dc5"
+     "key": "sound",
+     "groupId": "0ae608e2-6564-4622-81c5-f299b3c8570e"
     },
-    "a richer, punchier and more immersive system": {
-     "sentimentAnalysis": "Subwooferen supplerer kompakte og aktive højttalere effektivt med mere tyngde, fylde, slagkraft og rumfornemmelse i bunden.",
-     "simpleTitle": "Et fyldigere, mere slagkraftigt og mere rummeligt system",
+    "a powerful boost for music and films": {
+     "sentimentAnalysis": "Mere bund, slagkraft og rumfornemmelse forbedrer lytteoplevelsen markant.",
+     "simpleTitle": "Et kraftfuldt løft til musik og film",
      "bias": "positive",
-     "key": "system-enhancement",
-     "groupId": "05a6a16c-c956-4614-9f65-4356a74b1329"
+     "key": "sound",
+     "groupId": "0ae608e2-6564-4622-81c5-f299b3c8570e"
+    },
+    "seamless system matching": {
+     "sentimentAnalysis": "Subwooferen integreres ifølge flere anmeldelser naturligt med højttalerne og forbedrer balancen.",
+     "simpleTitle": "Problemfri systemintegration",
+     "bias": "positive",
+     "key": "integration",
+     "groupId": "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a"
     },
     "sleep mode interrupts quiet listening": {
-     "sentimentAnalysis": "Den automatiske dvalefunktion er for følsom og kan afbryde musik eller tv ved lavere lydstyrker.",
-     "simpleTitle": "Dvaletilstand afbryder stille lytning",
+     "sentimentAnalysis": "Flere anmeldelser melder om for tidlig aktivering af dvaletilstand eller kliklyde ved stille musik og tv.",
+     "simpleTitle": "Dvaletilstand forstyrrer stille lytning",
      "bias": "negative",
-     "key": "sleep-interruption",
-     "groupId": "9e7eb327-3d9b-4779-b305-90a664f3dc5d"
-    },
-    "high levels can become boomy": {
-     "sentimentAnalysis": "Nogle systemer kræver omhyggelig niveaujustering, fordi for høj subwooferlydstyrke kan gøre bunden dominerende og buldrende.",
-     "simpleTitle": "Høje niveauer kan blive buldrende",
-     "bias": "negative",
-     "key": "excess-bass",
-     "groupId": "8a6ee26f-fc78-41d0-8f8c-e6a48765b661"
+     "key": "sleep-mode",
+     "groupId": "13abdb13-af6e-4134-b596-4b5b808d2762"
     }
    },
    "grouping": {
-    "8a6ee26f-fc78-41d0-8f8c-e6a48765b661": {
-     "title": "Lydkvalitet",
-     "id": "8a6ee26f-fc78-41d0-8f8c-e6a48765b661",
+    "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a": {
+     "title": "Systemintegration",
+     "id": "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a",
      "references": [
       "58b3f90b-9e1e-47b9-b11c-bc1ac04a5c24",
-      "81b224e0-2ef4-4f09-aaa4-f61fc2bfd336",
-      "9054a313-2501-4764-bd5f-34d944e029d8",
-      "7e0308c4-b344-49cd-93fa-5df6499399a8",
-      "a606ce56-0934-4949-98e1-cd786219fa02",
-      "2ce0ce7c-611a-441b-81ed-be23149b184c",
-      "e166d88f-96b1-4469-bd2f-61a114702380",
-      "a89a6d10-d8fb-456d-9ffc-f0fd1c5c0c33",
-      "27244dd3-d4de-4bed-8639-72c17d60fc36",
-      "e82cee89-ab03-4f61-9380-f0bd0c1038d9",
-      "9b30f9ab-ab84-4832-844c-376381c30cc4",
-      "17fbfc2d-b955-46cc-9608-34b715cfa4d7",
-      "7ba29448-57d9-4a84-b630-92ddb1b565ed",
-      "4a6951f9-f5fd-40a3-aef0-cee7341f7a4d",
-      "4383dd2c-63a7-488f-9c6f-d43b90e62b8a",
-      "c973ec80-3923-41ca-b26d-009340d42342",
-      "3ff04016-9e93-41d9-b534-fcda18138feb",
-      "f358c620-3d26-4454-ab1f-6dd58c711a87",
-      "fe9c2080-dbe2-47ee-92d2-63f946ef3c4e",
-      "6dcc11ff-93c1-4589-8512-d8f7c56182c0",
-      "be5f709b-f4b3-48d6-8af5-2cc30e71ba",
-      "7f05af2e-4762-4ab0-8e28-e7d70ab0dee9",
-      "f9dddfcc-bfe7-4ca6-9689-72e616d2de14",
-      "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
-      "92ba40c9-737d-4a8e-b293-aa9e86bd8774",
-      "e680cf73-4831-4cee-852d-7d77030cea88"
-     ]
-    },
-    "05a6a16c-c956-4614-9f65-4356a74b1329": {
-     "title": "Integration med højttalere",
-     "id": "05a6a16c-c956-4614-9f65-4356a74b1329",
-     "references": [
       "9054a313-2501-4764-bd5f-34d944e029d8",
       "7e0308c4-b344-49cd-93fa-5df6499399a8",
       "296ecb28-5df0-47e6-ad0c-bf80d37b3e3a",
       "2824c9ce-f1c1-4752-8e11-33d2257f656f",
-      "e166d88f-96b1-4469-bd2f-61a114702380",
+      "a606ce56-0934-4949-98e1-cd786219fa02",
       "a89a6d10-d8fb-456d-9ffc-f0fd1c5c0c33",
       "27244dd3-d4de-4bed-8639-72c17d60fc36",
+      "e82cee89-ab03-4f61-9380-f0fd0c1038d9",
       "9b30f9ab-ab84-4832-844c-376381c30cc4",
       "17fbfc2d-b955-46cc-9608-34b715cfa4d7",
       "e02d90e2-0cbf-4ff9-8e3c-8e9661d4ad20",
       "7ba29448-57d9-4a84-b630-92ddb1b565ed",
       "4a6951f9-f5fd-40a3-aef0-cee7341f7a4d",
       "4383dd2c-63a7-488f-9c6f-d43b90e62b8a",
-      "c973ec80-3923-41ca-b26d-009340d42342",
       "3ff04016-9e93-41d9-b534-fcda18138feb",
+      "9382e65e-ab99-422c-b68c-b69e70cf113b",
       "f358c620-3d26-4454-ab1f-6dd58c711a87",
-      "6dcc11ff-93c1-4589-8512-d8f7c56182c0",
-      "be5f709b-f4b3-48d6-8af5-2ccfb30e71ba"
+      "be5f709b-f4b3-48d6-8af5-2ccfb30e71ba",
+      "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
+      "e680cf73-4831-4cee-852d-7d77030cea88"
      ]
     },
-    "08151249-6e0c-4899-ab6e-179d3a5e1dc5": {
+    "0ae608e2-6564-4622-81c5-f299b3c8570e": {
+     "title": "Lydkvalitet",
+     "id": "0ae608e2-6564-4622-81c5-f299b3c8570e",
+     "references": [
+      "58b3f90b-9e1e-47b9-b11c-bc1ac04a5c24",
+      "81b224e0-2ef4-4f09-aaa4-f61fc2bfd336",
+      "9054a313-2501-4764-bd5f-34d944e029d8",
+      "a606ce56-0934-4949-98e1-cd786219fa02",
+      "e166d88f-96b1-4469-bd2f-61a114702380",
+      "a89a6d10-d8fb-456d-9ffc-f0fd1c5c0c33",
+      "27244dd3-d4de-4bed-8639-72c17d60fc36",
+      "e82cee89-ab03-4f61-9380-f0fd0c1038d9",
+      "c973ec80-3923-41ca-b26d-009340d42342",
+      "6dcc11ff-93c1-4589-8512-d8f7c56182c0",
+      "7f05af2e-4762-4ab0-8e28-e7d70ab0dee9",
+      "f9dddfcc-bfe7-4ca6-9689-72e616d2de14",
+      "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
+      "92ba40c9-737d-4a8e-b293-aa9e86bd8774",
+      "e680cf73-4831-4cee-852d-7d77030cea88",
+      "fe9c2080-dbe2-47ee-92d2-63f946ef3c4e"
+     ]
+    },
+    "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6": {
      "title": "Design og størrelse",
-     "id": "08151249-6e0c-4899-ab6e-179d3a5e1dc5",
+     "id": "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6",
      "references": [
       "81b224e0-2ef4-4f09-aaa4-f61fc2bfd336",
       "7e0308c4-b344-49cd-93fa-5df6499399a8",
       "2ce0ce7c-611a-441b-81ed-be23149b184c",
+      "e166d88f-96b1-4469-bd2f-61a114702380",
       "cd5da773-3bf1-4960-b336-985504b25276",
       "4383dd2c-63a7-488f-9c6f-d43b90e62b8a",
       "c973ec80-3923-41ca-b26d-009340d42342",
       "7f05af2e-4762-4ab0-8e28-e7d70ab0dee9",
       "f9dddfcc-bfe7-4ca6-9689-72e616d2de14",
-      "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
-      "be5f709b-f4b3-48d6-8af5-2ccfb30e71ba"
+      "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c"
      ]
     },
-    "9e7eb327-3d9b-4779-b305-90a664f3dc5d": {
+    "13abdb13-af6e-4134-b596-4b5b808d2762": {
      "title": "Dvaletilstand",
-     "id": "9e7eb327-3d9b-4779-b305-90a664f3dc5d",
+     "id": "13abdb13-af6e-4134-b596-4b5b808d2762",
      "references": [
       "2ce0ce7c-611a-441b-81ed-be23149b184c",
       "cd5da773-3bf1-4960-b336-985504b25276",

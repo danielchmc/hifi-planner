@@ -13,6 +13,26 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Subwoofer-out",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, Pladespiller",
+   "Udgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast, DTS Play-Fi",
+   "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX",
+   "Fra beskrivelsen": "HDMI/ARC for nem digital TV-lyd · USB-til-Ethernet adapter fås som ekstraudstyr · *Ikke auto-tænd på pladespillerindgang"
+  },
+  "gallery": [
+   "cd3d8a72-027f-4cc0-b113-5da43d170cff",
+   "2fe24cc7-9422-4e6f-bfd5-b827e1c5c090",
+   "5e58fa01-2eb8-4e4a-8ec7-9716eaa4c187",
+   "eb4bdeea-921b-4d0c-942f-d3011d09f30d",
+   "da7df227-73a9-4093-9942-9677fc348557"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 231572,
   "skuCode": "ARGFORTEA55WIFIX",
@@ -253,8 +273,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 21,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -389,8 +409,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 15,
-     "availableQuantity": 40,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -498,7 +518,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
+     "numberOfStoresExperience": 15,
      "availableQuantity": 229,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -628,59 +648,60 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon Forte A55 WiFi roses bredt for en varm, klar, detaljeret og kraftfuld lyd med imponerende fylde i rummet, god værdi for pengene og et attraktivt design. Nem opsætning samt alsidig brug til tv og musik gør højttalerne meget fornøjelige i hverdagen, selv om enkelte ejere oplever forbindelsesudfald, synkroniseringsproblemer eller lejlighedsvise tv-forstyrrelser. Bassen er generelt tilfredsstillende, men flere lyttere ønsker mere dybde og tilføjer en subwoofer.",
+   "summary": "Argon Forte A55 WiFi leverer en imponerende varm, klar og rumlig lyd med masser af detaljer, slagkraft og fylde i forhold til størrelsen. Musik, tv og streaming får glæde af den levende og medrivende gengivelse, mens det flotte design og den stærke værdi for pengene gør højttalerne nemme at anbefale. Bassen er generelt overbevisende, men nogle savner mere dybde eller supplerer med en subwoofer, og lejlighedsvise problemer med WiFi, parring, HDMI eller tv-synkronisering forhindrer en helt fejlfri brugeroplevelse.",
    "headlines": {
     "warm, detailed and room-filling sound": {
-     "sentimentAnalysis": "Anmelderne beskriver en klar, fyldig, dynamisk og medrivende gengivelse, der lyder større end højttalernes fysiske størrelse.",
-     "simpleTitle": "Varm, detaljeret og rumfyldig lyd",
+     "sentimentAnalysis": "Højttalerne roses for en klar, fyldig, detaljeret og dynamisk gengivelse, der fylder rummet og lyder imponerende stor i forhold til kabinettet.",
+     "simpleTitle": "Varm, detaljeret og rumfyldende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "fab0080c-86b2-4ce8-b7fd-ac594f8cba2b"
+     "groupId": "0e8ca7ac-6362-4867-9e50-8315db0f61ed"
     },
-    "attractive, solid floorstanding design": {
-     "sentimentAnalysis": "Anmelderne værdsætter gennemgående det stilfulde udseende, den solide konstruktion, de afrundede kabinetdetaljer og det kompakte gulvhøjttalerformat.",
-     "simpleTitle": "Flot og solid gulvhøjttalerdesign",
+    "intermittent connection and TV issues": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne nævner WiFi-udfald, vanskelig parring, Netflix-forstyrrelser, et løst HDMI-stik, behov for manuel tænding eller problemer med læbesynkronisering.",
+     "simpleTitle": "Lejlighedsvise forbindelses- og tv-problemer",
+     "bias": "negative",
+     "key": "setup",
+     "groupId": "e5ef2cc9-b1ee-49bd-a949-72afb23b5665"
+    },
+    "strong TV, music and streaming performance": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver tydelige dialoger, medrivende tv-lyd samt meget tilfredsstillende musik- og streamingafspilning.",
+     "simpleTitle": "Stærk ydelse til tv, musik og streaming",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "0e8ca7ac-6362-4867-9e50-8315db0f61ed"
+    },
+    "simple setup and versatile connections": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver opsætning og daglig brug som enkel og fremhæver de nyttige muligheder via WiFi, HDMI, Bluetooth og fysiske indgange.",
+     "simpleTitle": "Nem opsætning og alsidige tilslutninger",
+     "bias": "positive",
+     "key": "setup",
+     "groupId": "e5ef2cc9-b1ee-49bd-a949-72afb23b5665"
+    },
+    "attractive, solid cabinet design": {
+     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som stilfulde, flotte og solidt byggede, og kabinettet pynter i rummet.",
+     "simpleTitle": "Flot og solid kabinetdesign",
      "bias": "positive",
      "key": "design",
-     "groupId": "b16d64c0-2573-45e7-9580-cf5315c6a225"
+     "groupId": "1632008b-9340-4017-a844-3966e1534486"
     },
-    "strong bass, with some listeners adding a subwoofer": {
-     "sentimentAnalysis": "Flere anmeldelser roser den solide, dybe og fysisk mærkbare bas, også ved lav lydstyrke.",
-     "simpleTitle": "Kraftig bas, men nogle tilføjer en subwoofer",
-     "bias": "positive",
-     "key": "bass",
-     "groupId": "5ecc721a-2f68-4e87-9db9-50513003e51a"
-    },
-    "more low-end can be desirable": {
-     "sentimentAnalysis": "Nogle lyttere savner den dybeste bas fra højttalerne alene og bruger eller anbefaler en subwoofer til større rum eller mere slagkraft.",
-     "simpleTitle": "Mere dybbas kan ønskes",
+    "some listeners want deeper bass": {
+     "sentimentAnalysis": "Selv om bassen ofte roses, oplever flere anmeldelser den dybe bas som utilstrækkelig til personlige præferencer eller større rum og anbefaler en subwoofer.",
+     "simpleTitle": "Nogle lyttere savner dybere bas",
      "bias": "negative",
-     "key": "bass",
-     "groupId": "5ecc721a-2f68-4e87-9db9-50513003e51a"
-    },
-    "simple setup and versatile streaming": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver enkel opsætning, nem afspilning og praktisk WiFi-streaming med understøttelse af mange kilder.",
-     "simpleTitle": "Nem opsætning og alsidig streaming",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "c77d5af3-e454-4112-9dce-a9ec74709d48"
-    },
-    "connectivity glitches and TV synchronization issues": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne nævner udfald i WiFi- eller mobilforbindelsen, besværlig tænding og lejlighedsvise problemer med synkronisering af lyd og billede.",
-     "simpleTitle": "Forbindelsesproblemer og tv-synkroniseringsfejl",
-     "bias": "negative",
-     "key": "setup",
-     "groupId": "c77d5af3-e454-4112-9dce-a9ec74709d48"
+     "key": "sound",
+     "groupId": "0e8ca7ac-6362-4867-9e50-8315db0f61ed"
     }
    },
    "grouping": {
-    "fab0080c-86b2-4ce8-b7fd-ac594f8cba2b": {
+    "0e8ca7ac-6362-4867-9e50-8315db0f61ed": {
      "title": "Lydkvalitet",
-     "id": "fab0080c-86b2-4ce8-b7fd-ac594f8cba2b",
+     "id": "0e8ca7ac-6362-4867-9e50-8315db0f61ed",
      "references": [
       "7e32c557-f37b-41af-95d4-d9eaebac8431",
       "36cd51dc-4286-455a-8910-17d059476338",
       "8c4f5d84-fc5e-47ef-90d6-8f4175a907d4",
+      "3249fffe-d04b-497c-8fe2-ceeb5da7914e",
       "4736c350-b87a-433b-a7aa-9cfc3c6ab28d",
       "0b6eab7d-7965-4546-af30-dc450a9e2acc",
       "d150108a-d769-476a-8fb7-7d891562528d",
@@ -689,32 +710,37 @@
       "38651452-3bf5-426b-85c7-cc757063f7cb",
       "8b18ee37-04b8-47fa-9408-8478cb0b499f",
       "88d5b034-f6d7-47c2-b5b8-ad1ca38d7c0a",
+      "31544544-df63-4e7d-943a-04d6449ae6ec",
       "2befae1c-e029-42b1-9b9a-7a2d6bb8a7ba",
       "c15a229d-322c-4f7d-931e-1af6a01ed9c5",
       "3b0417bb-39ce-45be-b928-71aaab329d39",
-      "54f991c0-1be8-45c8-91bd-5bc40e338925",
+      "f1cdf264-665f-48bf-98bd-4d3ce604dc08",
+      "54f991c0-1be8-45c8-91cd-5bc40e338925",
       "d0af6e74-0e3e-4cfd-9132-286532cd66bc",
       "22b2ebc6-0be5-45e5-a128-3385c4d1ed3c",
       "dda89331-e324-49ea-b161-808ae7d986eb",
       "26b4a9ac-de64-4d6a-8412-b2f66124acf2",
+      "df85391c-59b9-4a70-8e4b-57533360bb91",
       "4dfd8c8c-b513-4b6f-9963-0aa8c8dd2402",
       "920852f8-c4a0-4bdd-bb12-6c76a3093563",
       "22ac8092-9725-4bc3-9dc0-9b400aa94b69",
+      "cb18676c-b6bc-4270-b9d9-fc0782f051c9",
       "698b010e-dc2b-452e-9d42-fe4173b78a74",
       "996b54fa-1fba-4af9-921b-8fbff4b75330",
       "d6b8f806-7fd0-4c4d-91cb-ac5e105b2266",
       "14e68b52-801b-4df8-a3d1-58b1b6f82773",
       "264552d0-7b65-48ff-a0af-4a53e3a69f82",
       "c0d7d08f-21ff-40fc-b88a-45852035b029",
+      "bf19746a-cec2-493b-b82a-6ec6d3a8531b",
       "f80e9f2f-2280-4cb8-819f-2cf0efcc3860",
       "be6cd522-ea84-4562-92c7-72efc4318e49",
       "b5c991d1-a6c4-45c8-8fef-74f5f0859894",
       "dafa1944-9099-4249-a26b-0b172b9fed6f"
      ]
     },
-    "c77d5af3-e454-4112-9dce-a9ec74709d48": {
+    "e5ef2cc9-b1ee-49bd-a949-72afb23b5665": {
      "title": "Opsætning og tilslutning",
-     "id": "c77d5af3-e454-4112-9dce-a9ec74709d48",
+     "id": "e5ef2cc9-b1ee-49bd-a949-72afb23b5665",
      "references": [
       "8c4f5d84-fc5e-47ef-90d6-8f4175a907d4",
       "3249fffe-d04b-497c-8fe2-ceeb5da7914e",
@@ -727,30 +753,13 @@
       "996b54fa-1fba-4af9-921b-8fbff4b75330",
       "bf19746a-cec2-493b-b82a-6ec6d3a8531b",
       "be6cd522-ea84-4562-92c7-72efc4318e49",
-      "698b010e-dc2b-452e-9d42-fe4173b78a74"
+      "264552d0-7b65-48ff-a0af-4a53e3a69f82",
+      "cb18676c-b6bc-4270-b9d9-fc0782f051c9"
      ]
     },
-    "5ecc721a-2f68-4e87-9db9-50513003e51a": {
-     "title": "Basgengivelse",
-     "id": "5ecc721a-2f68-4e87-9db9-50513003e51a",
-     "references": [
-      "4736c350-b87a-433b-a7aa-9cfc3c6ab28d",
-      "0b6eab7d-7965-4546-af30-dc450a9e2acc",
-      "d150108a-d769-476a-8fb7-7d891562528d",
-      "8b18ee37-04b8-47fa-9408-8478cb0b499f",
-      "aae0bfb6-f64c-405f-9619-ba527f2abf51",
-      "dda89331-e324-49ea-b161-808ae7d986eb",
-      "df85391c-59b9-4a70-8e4b-57533360bb91",
-      "14e68b52-801b-4df8-a3d1-58b1b6f82773",
-      "c0d7d08f-21ff-40fc-b88a-45852035b029",
-      "f80e9f2f-2280-4cb8-819f-2cf0efcc3860",
-      "be6cd522-ea84-4562-92c7-72efc4318e49",
-      "996b54fa-1fba-4af9-921b-8fbff4b75330"
-     ]
-    },
-    "b16d64c0-2573-45e7-9580-cf5315c6a225": {
-     "title": "Design og kvalitet",
-     "id": "b16d64c0-2573-45e7-9580-cf5315c6a225",
+    "1632008b-9340-4017-a844-3966e1534486": {
+     "title": "Design og konstruktion",
+     "id": "1632008b-9340-4017-a844-3966e1534486",
      "references": [
       "8c4f5d84-fc5e-47ef-90d6-8f4175a907d4",
       "0b6eab7d-7965-4546-af30-dc450a9e2acc",
@@ -758,8 +767,7 @@
       "88d5b034-f6d7-47c2-b5b8-ad1ca38d7c0a",
       "31544544-df63-4e7d-943a-04d6449ae6ec",
       "d0af6e74-0e3e-4cfd-9132-286532cd66bc",
-      "bf19746a-cec2-493b-b82a-6ec6d3a8531b",
-      "be6cd522-ea84-4562-92c7-72efc4318e49"
+      "bf19746a-cec2-493b-b82a-6ec6d3a8531b"
      ]
     }
    },

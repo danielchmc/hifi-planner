@@ -13,6 +13,23 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Optisk, Analog RCA",
+   "Indgang (andet)": "Ethernet, USB C",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Chromecast, Spotify Connect",
+   "Højtaler type": "Trådløs højtaler"
+  },
+  "gallery": [
+   "b9d965bc-430d-47be-95dc-41b845a65518",
+   "5ad2d522-bcc9-4275-a2d4-a3820efa30e2",
+   "44e8cacf-0156-4c14-a32e-a623ca5bc44e",
+   "2f491dc0-767f-4d5b-87fb-cc59e353bf99",
+   "84cfc724-3414-4eab-8067-3d95cb60b7fe",
+   "783dccb8-9220-436a-ab68-34d521eed26c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 153053,
   "skuCode": "BOEMERGE",
@@ -304,56 +321,67 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BOEMERGE leverer en imponerende fyldig, punchy og omsluttende lyd fra en bemærkelsesværdigt kompakt højttaler, med klar gengivelse over det meste af spektret og kraft nok til et mellemstort rum. Den varme og raffinerede lyd, det elegante design og den solide finish får højttaleren til at føles langt større, end størrelsen antyder. Stereoparring giver et endnu større lydbillede, mens appen gør betjeningen nem, selv om dybbas og kompatibilitet med YouTube Music er mindre begrænsninger.",
+   "summary": "BOEMERGE leverer en imponerende fyldig, kraftfuld og omsluttende lyd fra en bemærkelsesværdigt lille og elegant højttaler. Det raffinerede design, det kompakte format og den solide byggekvalitet passer ind i ethvert hjem, mens appen og stereoparring giver ekstra fleksibilitet. Den dybeste bas er noget begrænset, og kompatibiliteten med YouTube Music kan være ufuldstændig, men den samlede kvalitet og brugervenlighed gør BOEMERGE til et eksklusivt og meget tilfredsstillende køb.",
    "headlines": {
+    "elegant, compact and well-built": {
+     "sentimentAnalysis": "Det elegante udtryk, den lille størrelse og den solide konstruktion fremhæves gentagne gange som lette at integrere i hjemmet.",
+     "simpleTitle": "Elegant, kompakt og solidt bygget",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "1b55d3f4-995b-43b8-b0a0-9faa59ba1a3a"
+    },
     "surprisingly powerful, detailed sound": {
-     "sentimentAnalysis": "Højttaleren leverer en uventet kraftfuld, klar og fyldig lyd i forhold til størrelsen.",
+     "sentimentAnalysis": "Højttaleren leverer en klar, fyldig og overraskende kraftfuld lyd trods den lille størrelse og kan fylde et rum med lyd.",
      "simpleTitle": "Overraskende kraftfuld og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "31e377dc-b6fd-4651-b6e1-f5188c1f4d98"
+     "groupId": "26316d57-f2ff-41e3-8e9c-af97827c49c5"
     },
-    "elegant, compact premium design": {
-     "sentimentAnalysis": "Den kompakte højttaler roses gentagne gange for sit stilfulde udseende og sin høje byggekvalitet.",
-     "simpleTitle": "Elegant, kompakt premiumdesign",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "ca96c364-6a43-4d74-b5f0-454f938b43cb"
+    "limited deepest bass": {
+     "sentimentAnalysis": "Den samlede lyd er stærk, men de dybeste basfrekvenser gengives ikke fuldt ud.",
+     "simpleTitle": "Begrænset dybeste bas",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "26316d57-f2ff-41e3-8e9c-af97827c49c5"
     },
-    "stereo mode creates fuller sound": {
-     "sentimentAnalysis": "Brug af to højttalere i stereotilstand forbindes med en fyldigere og mere tilfredsstillende lyd.",
-     "simpleTitle": "Stereotilstand giver fyldigere lyd",
+    "stereo pairing adds fuller sound": {
+     "sentimentAnalysis": "Brug af to højttalere i stereotilstand forbindes med en fyldigere lytteoplevelse.",
+     "simpleTitle": "Stereoparring giver fyldigere lyd",
      "bias": "positive",
      "key": "stereo",
-     "groupId": "b8d26ff1-84e9-48f5-9d12-c4c68399dc79"
+     "groupId": "73b14f03-eabd-4552-b84e-6cc2716677ba"
     }
    },
    "grouping": {
-    "31e377dc-b6fd-4651-b6e1-f5188c1f4d98": {
+    "26316d57-f2ff-41e3-8e9c-af97827c49c5": {
      "title": "Lydkvalitet",
-     "id": "31e377dc-b6fd-4651-b6e1-f5188c1f4d98",
+     "id": "26316d57-f2ff-41e3-8e9c-af97827c49c5",
      "references": [
       "f88ceeb6-f2d3-4fae-8d8e-f195cbbd32c0",
       "2450745a-09d5-41dc-a5c6-b47eb2ca4969",
       "942abf33-60ce-40a3-8ebb-c3af97017c45",
       "30baa6c6-601c-42af-95cc-79a6f61b63b6",
+      "6149f42d-cccb-42bd-b420-1600ffa3d5d7",
       "337ec457-f454-48a3-9f64-2708e33f1fb6",
-      "e869262f-92c6-4e4b-8ada-7e409a28d224"
+      "e869262f-92c6-4e4b-8ada-7e409a28d224",
+      "b04e8ce8-95fe-4196-8182-139d2b2c292d"
      ]
     },
-    "ca96c364-6a43-4d74-b5f0-454f938b43cb": {
-     "title": "Design og udførelse",
-     "id": "ca96c364-6a43-4d74-b5f0-454f938b43cb",
+    "1b55d3f4-995b-43b8-b0a0-9faa59ba1a3a": {
+     "title": "Design og byggekvalitet",
+     "id": "1b55d3f4-995b-43b8-b0a0-9faa59ba1a3a",
      "references": [
       "2450745a-09d5-41dc-a5c6-b47eb2ca4969",
       "942abf33-60ce-40a3-8ebb-c3af97017c45",
+      "30baa6c6-601c-42af-95cc-79a6f61b63b6",
+      "785e133c-97d0-4fc0-896b-a183070c5220",
       "337ec457-f454-48a3-9f64-2708e33f1fb6",
       "e869262f-92c6-4e4b-8ada-7e409a28d224"
      ]
     },
-    "b8d26ff1-84e9-48f5-9d12-c4c68399dc79": {
+    "73b14f03-eabd-4552-b84e-6cc2716677ba": {
      "title": "Stereoparring",
-     "id": "b8d26ff1-84e9-48f5-9d12-c4c68399dc79",
+     "id": "73b14f03-eabd-4552-b84e-6cc2716677ba",
      "references": [
       "30baa6c6-601c-42af-95cc-79a6f61b63b6",
       "b04e8ce8-95fe-4196-8182-139d2b2c292d"

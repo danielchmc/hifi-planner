@@ -13,6 +13,27 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Analog RCA, Analog XLR",
+   "Indgang (andet)": "RS-232, 12V trigger, IR",
+   "Udgangseffekt (8 ohm, 2 kanaler)": "200 watt",
+   "Forstærker kanaler": "16",
+   "Fra beskrivelsen": "HDAM-SA2 teknologi i input/output buffertrin inkl. separat ringkernetrafo (Hyper Dynamic Amplifier Modules)"
+  },
+  "gallery": [
+   "c9c65af9-db5f-43f2-a358-8b74dcbc5deb",
+   "0d999f81-c5a4-4cec-9aaf-776f44f43de9",
+   "f749f1d3-afca-495e-8cf5-908202fce078",
+   "39ee63b7-b316-478c-a16a-478cf0084067",
+   "31be2702-fe58-49d5-ab03-dc27b9234718",
+   "e344a7f2-072e-4379-928c-d86d299a7381",
+   "0703b529-1d87-412d-8e6d-5e92a590e385",
+   "1609e29d-6909-4c1c-abd4-f0537569c902",
+   "0ba26697-2e72-49e2-a46e-7fef7896eced"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 230485,
   "skuCode": "MARAAMP10",
@@ -57,13 +78,13 @@
   },
   "recommendedAlternatives": {
    "productCodes": [
+    "MARAAMP20",
+    "MARAAMP30",
     "NADM28",
     "LYNGMXA8400",
     "HEGELC55",
     "HEGELC54",
-    "HEGELC53",
-    "MARAAMP20",
-    "MARAAMP30"
+    "HEGELC53"
    ],
    "isOutlet": "false"
   },

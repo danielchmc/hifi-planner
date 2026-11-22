@@ -13,6 +13,18 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7265f279-3201-4c4d-af64-b682a88ea777",
+   "2f6b1c9f-bf44-4c9d-b2aa-59be8ce1a634",
+   "239d7c74-f276-4647-a2c4-7a851738ebe2",
+   "3b7caf30-5638-40cc-b3b3-659bcfcd6131",
+   "9e84394b-eceb-432c-bdea-0f8574803168",
+   "5db20064-66dd-41d2-bb77-cdb8a201c701"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 221831,
   "skuCode": "KEFS2FS",
@@ -216,48 +228,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFS2FS er et flot forarbejdet, solidt og elegant stativ, der supplerer KEF LS50-højttalere med et raffineret udtryk, sikker støtte og gennemtænkt kabelføring. Den hurtige montering, matchende finish og generelt pålidelige levering giver et gennemført premiumindtryk, selv om prisen opleves som høj af nogle, og en anmeldelse nævner sporadiske problemer med den trådløse forbindelse. Samlet giver stativerne et varmt visuelt udtryk, slagkraftig stabilitet og en immersiv, velorganiseret løsning til KEF-højttalere.",
+   "summary": "KEFS2FS-stativerne roses bredt for solid, førsteklasses konstruktion, elegant design, sikker støtte til højttalerne og gennemtænkt kabelføring. Den hurtige montering, de matchende overflader og den pålidelige levering styrker det gennemførte helhedsindtryk, mens pris og kvalitet generelt vurderes positivt trods en enkelt bemærkning om en høj pris. Opsætningen skaber et stabilt og stilfuldt grundlag for en varm, punchy og omsluttende lytteoplevelse, selv om et enkelt problem med den trådløse forbindelse nævnes.",
    "headlines": {
-    "elegant, premium-looking design": {
-     "sentimentAnalysis": "Stativerne roses gentagne gange for det elegante udtryk, den høje finish og den harmoniske integration med KEF LS50-højttalere.",
-     "simpleTitle": "Elegant design med premiumudtryk",
+    "premium, elegant construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende stativerne som stilfulde, solide, veludførte og gennemtænkte med sikker støtte til højttalerne.",
+     "simpleTitle": "Førsteklasses, elegant konstruktion",
      "bias": "positive",
-     "key": "design",
-     "groupId": "ff18457a-1f75-4100-a254-f4aef18b753a"
+     "key": "design_build",
+     "groupId": "7fa9a947-ae17-4dd7-9228-45d778269849"
     },
-    "secure and solid speaker support": {
-     "sentimentAnalysis": "Stativerne beskrives som særdeles solide, sikre og velegnede til at placere højttalerne i den ideelle højde.",
-     "simpleTitle": "Sikker og solid støtte til højttalerne",
+    "neat, concealed cable routing": {
+     "sentimentAnalysis": "Den integrerede kabelføring roses for at gøre kabler nemme at skjule og fuldende det rene udtryk.",
+     "simpleTitle": "Pæn, skjult kabelføring",
      "bias": "positive",
-     "key": "stability",
-     "groupId": "ff18457a-1f75-4100-a254-f4aef18b753a"
+     "key": "cable_management",
+     "groupId": "fa567fdc-40a5-442b-8ec6-914fedd9c8e1"
     },
-    "cables can be hidden neatly": {
-     "sentimentAnalysis": "Den integrerede kabelføring opfattes som en gennemtænkt detalje, der holder installationen ren og diskret.",
-     "simpleTitle": "Kabler kan skjules pænt",
+    "quick, reliable setup and delivery": {
+     "sentimentAnalysis": "Stativerne er nemme at samle, og leveringen beskrives som hurtig eller tidligere end lovet.",
+     "simpleTitle": "Hurtig montering og pålidelig levering",
      "bias": "positive",
-     "key": "cables",
-     "groupId": "51e14eb7-d956-4162-abb2-92180cb67b45"
+     "key": "assembly_delivery",
+     "groupId": "f7b99f90-8489-4dc1-8f7e-82e852d416de"
     },
-    "fast assembly and delivery": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver enkel montering samt hurtig eller tidligere end lovet levering.",
-     "simpleTitle": "Hurtig montering og levering",
-     "bias": "positive",
-     "key": "delivery_speed",
-     "groupId": "0bf74268-7dca-4939-a3f5-b96a715a7dee"
-    },
-    "good value for the quality": {
-     "sentimentAnalysis": "Positive anmeldelser vurderer kombinationen af pris og kvalitet som attraktiv.",
-     "simpleTitle": "God værdi for kvaliteten",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "0d9b1631-8cc9-47e5-a606-94227fb5b1b2"
+    "good value, though not inexpensive": {
+     "sentimentAnalysis": "Pris og kvalitet vurderes samlet positivt, men den høje pris er stadig tydelig.",
+     "simpleTitle": "God værdi, men ikke billige",
+     "bias": "meh",
+     "key": "price_value",
+     "groupId": "e80b41ac-d281-4204-8b6f-0a8753ee173e"
     }
    },
    "grouping": {
-    "ff18457a-1f75-4100-a254-f4aef18b753a": {
+    "7fa9a947-ae17-4dd7-9228-45d778269849": {
      "title": "Design og byggekvalitet",
-     "id": "ff18457a-1f75-4100-a254-f4aef18b753a",
+     "id": "7fa9a947-ae17-4dd7-9228-45d778269849",
      "references": [
       "615daf9b-f7cf-4c63-b8aa-a3da4e55948f",
       "290a65de-acbe-4d81-978f-871be6995fbf",
@@ -269,9 +274,9 @@
       "3c46b4a1-6501-4725-98d4-86dc0a583ad4"
      ]
     },
-    "0bf74268-7dca-4939-a3f5-b96a715a7dee": {
-     "title": "Levering og montering",
-     "id": "0bf74268-7dca-4939-a3f5-b96a715a7dee",
+    "f7b99f90-8489-4dc1-8f7e-82e852d416de": {
+     "title": "Montering og levering",
+     "id": "f7b99f90-8489-4dc1-8f7e-82e852d416de",
      "references": [
       "d1e964c7-b2c2-4e34-8c4c-336b5d905a44",
       "9aea16df-88d8-4fae-ac30-29e0fd29af1b",
@@ -279,18 +284,18 @@
       "aa714de6-d21b-4c03-bc8e-89386b67c50f"
      ]
     },
-    "51e14eb7-d956-4162-abb2-92180cb67b45": {
-     "title": "Kabelstyring",
-     "id": "51e14eb7-d956-4162-abb2-92180cb67b45",
+    "fa567fdc-40a5-442b-8ec6-914fedd9c8e1": {
+     "title": "Kabelføring",
+     "id": "fa567fdc-40a5-442b-8ec6-914fedd9c8e1",
      "references": [
       "9aea16df-88d8-4fae-ac30-29e0fd29af1b",
       "b100f56b-c830-4d84-91ac-303f457a3b9c",
       "08cd7ef3-2bd6-4660-b789-8c8d7252fa6a"
      ]
     },
-    "0d9b1631-8cc9-47e5-a606-94227fb5b1b2": {
+    "e80b41ac-d281-4204-8b6f-0a8753ee173e": {
      "title": "Pris og værdi",
-     "id": "0d9b1631-8cc9-47e5-a606-94227fb5b1b2",
+     "id": "e80b41ac-d281-4204-8b6f-0a8753ee173e",
      "references": [
       "8069a083-9606-440f-9f0d-aa7a275efef7",
       "3bae7f30-bf6d-4ff2-ae28-9dfddf5ae1e4",

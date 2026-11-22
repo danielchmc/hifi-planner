@@ -13,6 +13,18 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Trådløs opladning": "Nej"
+  },
+  "gallery": [
+   "b34272ae-ef76-4fe0-b91a-bd93043bb0ec",
+   "80bbd5b3-35a4-4951-8b20-60a30e7a0363",
+   "3f8e9108-c2b6-4614-adb4-a8fa8b778b55",
+   "4ec2d2e0-8884-4683-9397-328445964665"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 285679,
   "skuCode": "WAV4AERO",
@@ -135,6 +147,12 @@
    "url": "/horetelefoner/in-ear/",
    "id": 69687
   },
+  "stockItemAlternative": {
+   "save": "55,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=WAV4AERO",
+   "availableQuantity": 1,
+   "lowestPrice": "1.044,-"
+  },
   "variants": [
    {
     "id": 285682,
@@ -206,7 +224,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 97,
+     "availableQuantity": 91,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -270,48 +288,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "WAV4AERO leverer en varm, klar og behageligt omsluttende lydoplevelse, samtidig med at brugeren kan høre sine omgivelser. Den sikre, lette og komfortable pasform gør høretelefonerne særligt velegnede til løb, træning og aktiv bevægelse. Den lange batteritid er praktisk, selv om bassen er mindre kraftfuld end i traditionelle in-ear-modeller, og opladningen kan være ustabil.",
+   "summary": "WAV4AERO leverer en varm, klar og behagelig lydoplevelse med særligt veldefinerede vokaler og instrumenter. Den lette, sikre pasform og det åbne design gør hovedtelefonerne velegnede til løb, træning og hverdagssituationer, hvor omgivelserne skal kunne høres. Den lange batteritid giver stor praktisk værdi, selv om vindstøj ved cykling, begrænset samtalekvalitet og lejlighedsvise opladningsproblemer er ulemper.",
    "headlines": {
-    "secure and comfortable during exercise": {
-     "sentimentAnalysis": "Høretelefonerne sidder sikkert under løb, træning og kraftige bevægelser, samtidig med at de er behagelige og næsten ikke mærkes.",
-     "simpleTitle": "Sikker og behagelig under træning",
+    "secure and comfortable for active use": {
+     "sentimentAnalysis": "Hovedtelefonerne roses gentagne gange for at være lette, behagelige og sikre, selv under løb eller kraftige bevægelser.",
+     "simpleTitle": "Sikker og behagelig til aktiv brug",
      "bias": "positive",
-     "key": "fit-comfort",
-     "groupId": "3ca7595b-d658-42e9-8b6b-1a844bb05864"
+     "key": "fit",
+     "groupId": "52a991ce-8896-489f-8517-1c64ad7d1039"
     },
-    "surroundings remain audible": {
-     "sentimentAnalysis": "Det åbne design bevarer opmærksomheden på normale omgivelseslyde og gør samtaler og udendørsaktiviteter lettere.",
+    "keeps the surroundings audible": {
+     "sentimentAnalysis": "Det åbne design gør det muligt at høre normale omgivelseslyde, hvilket gør hovedtelefonerne praktiske til løb, cykling og sociale situationer.",
      "simpleTitle": "Omgivelserne forbliver hørbare",
      "bias": "positive",
-     "key": "ambient-awareness",
-     "groupId": "e5e84ae9-d351-45a8-bd14-c9abc78ed795"
+     "key": "awareness",
+     "groupId": "10f6be87-ca1f-489f-838d-d7999983630e"
     },
     "clear, well-defined sound": {
-     "sentimentAnalysis": "Lyden vurderes generelt som god, især med klare vokaler, instrumenter og detaljer i mellemtonerne.",
+     "sentimentAnalysis": "Lyden beskrives overordnet som god med særligt klare vokaler og instrumenter samt en tilfredsstillende gengivelse til sport og hverdagsbrug.",
      "simpleTitle": "Klar og veldefineret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "b5cd2b0f-709f-4967-91a4-25e63e8db4e8"
+     "key": "sound",
+     "groupId": "333051be-8cbb-4e36-885c-13860c6b3659"
     },
-    "long battery life": {
-     "sentimentAnalysis": "Batterikapacitet og driftstid vurderes positivt, især den lange brugstid mellem opladninger.",
+    "long-lasting battery": {
+     "sentimentAnalysis": "Batteriydelsen vurderes konsekvent som god, idet kapaciteten lever op til forventningerne og holder længere end mange trådløse in-ear-alternativer.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
-     "key": "battery-life",
-     "groupId": "856c36dc-4743-4af3-bd7f-937e08a09993"
-    },
-    "bass is less powerful than in-ear alternatives": {
-     "sentimentAnalysis": "Open-ear-formatet giver mindre stram eller kraftfuld bas end traditionelle in-ear-høretelefoner.",
-     "simpleTitle": "Bassen er mindre kraftfuld end i in-ear-modeller",
-     "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "b5cd2b0f-709f-4967-91a4-25e63e8db4e8"
+     "key": "battery",
+     "groupId": "38a39349-e3ca-4aa6-8572-a8d11407940c"
     }
    },
    "grouping": {
-    "3ca7595b-d658-42e9-8b6b-1a844bb05864": {
+    "52a991ce-8896-489f-8517-1c64ad7d1039": {
      "title": "Pasform og komfort",
-     "id": "3ca7595b-d658-42e9-8b6b-1a844bb05864",
+     "id": "52a991ce-8896-489f-8517-1c64ad7d1039",
      "references": [
       "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "32082b96-9d37-415b-be8a-b555f990fd96",
@@ -320,9 +331,9 @@
       "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     },
-    "b5cd2b0f-709f-4967-91a4-25e63e8db4e8": {
+    "333051be-8cbb-4e36-885c-13860c6b3659": {
      "title": "Lydkvalitet",
-     "id": "b5cd2b0f-709f-4967-91a4-25e63e8db4e8",
+     "id": "333051be-8cbb-4e36-885c-13860c6b3659",
      "references": [
       "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "f2197591-3f7d-443f-9d4f-4bff344e4b09",
@@ -330,9 +341,9 @@
       "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     },
-    "e5e84ae9-d351-45a8-bd14-c9abc78ed795": {
-     "title": "Opmærksomhed på omgivelserne",
-     "id": "e5e84ae9-d351-45a8-bd14-c9abc78ed795",
+    "10f6be87-ca1f-489f-838d-d7999983630e": {
+     "title": "Hørelse af omgivende lyd",
+     "id": "10f6be87-ca1f-489f-838d-d7999983630e",
      "references": [
       "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "f2197591-3f7d-443f-9d4f-4bff344e4b09",
@@ -340,14 +351,13 @@
       "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     },
-    "856c36dc-4743-4af3-bd7f-937e08a09993": {
+    "38a39349-e3ca-4aa6-8572-a8d11407940c": {
      "title": "Batteritid",
-     "id": "856c36dc-4743-4af3-bd7f-937e08a09993",
+     "id": "38a39349-e3ca-4aa6-8572-a8d11407940c",
      "references": [
       "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "f2197591-3f7d-443f-9d4f-4bff344e4b09",
-      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5",
-      "226b8c2f-72c7-4bbc-b8dc-7d1af3c43de2"
+      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     }
    },

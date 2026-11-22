@@ -13,6 +13,25 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Subwoofer-out, USB C",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, USB C",
+   "Indgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Bluetooth type": "5.4",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Fra beskrivelsen": "Diskant: 1” coaxial aluminiumsdome"
+  },
+  "gallery": [
+   "ae33ceb0-10d7-4afa-a60c-ef37385c73f0",
+   "59cb1442-457c-479a-96d5-2dc59983a81b",
+   "0ef30e8d-9b40-422e-86dd-e8f1578c6fb5",
+   "3264c49f-0a1c-4868-8772-1fb95d408918",
+   "90549165-afc0-4a66-ac7e-8220ba407f1d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 267306,
   "skuCode": "KEFCODAW",
@@ -42,11 +61,11 @@
     "ESSCL1USBCCX",
     "KEFKW1KIT",
     "AQPEARL48HDMI",
+    "KEFS3FS",
     "AQEVERGREENIN",
     "AQFORESTOPT",
     "ESSCL1SUBX",
-    "AQFOREST48HDMI",
-    "KEFS3FS"
+    "AQFOREST48HDMI"
    ],
    "isOutlet": "false"
   },
@@ -373,7 +392,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 12,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -481,7 +500,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 15,
+     "availableQuantity": 14,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -601,7 +620,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 37,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -797,34 +816,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFCODAW leverer en varm, klar og velafbalanceret lyd med imponerende rumlig detalje, kontant bas og en medrivende gengivelse. Det kompakte design, de flotte materialer og de praktiske betjeningsknapper gør højttalerne nemme at bruge i hverdagen, mens USB-C og Bluetooth giver ekstra fleksibilitet. Appens ustabilitet, enkelte problemer med opsætningen og en billig fjernbetjening trækker ned i en ellers meget begejstret vurdering.",
+   "summary": "KEFCODAW leverer varm, klar og meget afbalanceret lyd fra et kompakt design med fyldig bas, der fungerer godt selv uden subwoofer. Bluetooth- og USB-C-afspilning imponerer især, mens de mange tilslutningsmuligheder og praktiske betjeningselementer gør hverdagen enkel. Eksklusive materialer og et flot udseende øger appellen, selv om appen, fjernbetjeningen og lejlighedsvise opdateringer kan være frustrerende.",
    "headlines": {
     "clear, balanced and immersive sound": {
-     "sentimentAnalysis": "Lyden roses gentagne gange som klar, afbalanceret, detaljeret og meget behagelig.",
-     "simpleTitle": "Klar, afbalanceret og medrivende lyd",
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for klar, rummelig, afbalanceret og fremragende lyd.",
+     "simpleTitle": "Klar, afbalanceret og omsluttende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "7ce80d0e-2bf5-49fa-a30d-e5580cfc5b79"
+     "groupId": "48162a3e-2210-4796-85c4-54d6e9781e8d"
     },
     "easy connections and convenient controls": {
-     "sentimentAnalysis": "Højttalerne beskrives som praktiske, nemme at tilslutte og gode at betjene takket være fysiske knapper og USB-C.",
+     "sentimentAnalysis": "Flere anmeldelser fremhæver enkel tilslutning, praktiske fysiske betjeningselementer samt USB-C- og Bluetooth-muligheder.",
      "simpleTitle": "Nem tilslutning og praktisk betjening",
      "bias": "positive",
      "key": "usability",
-     "groupId": "3ac8226b-f6d4-4130-b6ac-64cc6ce86cee"
+     "groupId": "f35171b6-0ab3-4580-be04-9dff841d144e"
     },
-    "attractive, compact build": {
-     "sentimentAnalysis": "De kompakte højttalere roses for flotte farver, materialer og en finish, der egner sig til at stå fremme.",
-     "simpleTitle": "Flot, kompakt konstruktion",
+    "strong bass without a subwoofer": {
+     "sentimentAnalysis": "Lyden opleves som fyldig og basstærk nok til at fungere godt uden en ekstra subwoofer.",
+     "simpleTitle": "Kraftig bas uden subwoofer",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "48162a3e-2210-4796-85c4-54d6e9781e8d"
+    },
+    "app and update problems": {
+     "sentimentAnalysis": "Softwarens stabilitet er en tydelig svaghed, da en mislykket opdatering og en ustabil app begrænser adgang og equalizer-funktioner.",
+     "simpleTitle": "Problemer med app og opdateringer",
+     "bias": "negative",
+     "key": "usability",
+     "groupId": "f35171b6-0ab3-4580-be04-9dff841d144e"
+    },
+    "attractive, premium-looking design": {
+     "sentimentAnalysis": "Materialer, finish og farve vurderes som flotte nok til at have højttalerne stående fremme i hjemmet.",
+     "simpleTitle": "Flot design med eksklusivt udtryk",
      "bias": "positive",
      "key": "design",
-     "groupId": "7d9f7052-75af-474e-846f-ce09668c131a"
+     "groupId": "4a39aeb2-ba44-40e1-ac99-d18441a9e06f"
     }
    },
    "grouping": {
-    "7ce80d0e-2bf5-49fa-a30d-e5580cfc5b79": {
+    "48162a3e-2210-4796-85c4-54d6e9781e8d": {
      "title": "Lydkvalitet",
-     "id": "7ce80d0e-2bf5-49fa-a30d-e5580cfc5b79",
+     "id": "48162a3e-2210-4796-85c4-54d6e9781e8d",
      "references": [
       "3bee90d3-d3cc-4a90-a01b-56f8d1333f93",
       "730a978a-b399-488c-aead-627dfbace7fc",
@@ -835,24 +868,26 @@
       "7c6ceee1-d70f-453f-bdec-7023c5321a22",
       "e029a1ae-6421-442d-a563-2a558f47659d",
       "08030037-67c6-4ac3-ae49-7d0240f59ca2",
+      "9861be3f-cb56-4914-ae2e-3f7226abfc78",
       "249f4fa1-3e15-401c-8e42-3351b042d7c2",
-      "4c0152f8-0f09-433d-9a4b-e3a2f3d08b2a",
       "7f98726f-3a11-457d-9d7b-5f8535c9497e"
      ]
     },
-    "3ac8226b-f6d4-4130-b6ac-64cc6ce86cee": {
-     "title": "Brugervenlighed og tilslutning",
-     "id": "3ac8226b-f6d4-4130-b6ac-64cc6ce86cee",
+    "f35171b6-0ab3-4580-be04-9dff841d144e": {
+     "title": "Tilslutning og betjening",
+     "id": "f35171b6-0ab3-4580-be04-9dff841d144e",
      "references": [
       "a8d83b41-8100-406c-a7a1-05554ba6e786",
       "e029a1ae-6421-442d-a563-2a558f47659d",
       "9861be3f-cb56-4914-ae2e-3f7226abfc78",
-      "249f4fa1-3e15-401c-8e42-3351b042d7c2"
+      "b6be1465-3934-4676-990f-5ab228cabc99",
+      "249f4fa1-3e15-401c-8e42-3351b042d7c2",
+      "4c0152f8-0f09-433d-9a4b-e3a2f3d08b2a"
      ]
     },
-    "7d9f7052-75af-474e-846f-ce09668c131a": {
-     "title": "Design og konstruktion",
-     "id": "7d9f7052-75af-474e-846f-ce09668c131a",
+    "4a39aeb2-ba44-40e1-ac99-d18441a9e06f": {
+     "title": "Design og byggekvalitet",
+     "id": "4a39aeb2-ba44-40e1-ac99-d18441a9e06f",
      "references": [
       "a8d83b41-8100-406c-a7a1-05554ba6e786",
       "7f98726f-3a11-457d-9d7b-5f8535c9497e"

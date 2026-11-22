@@ -13,6 +13,13 @@
    "url": "/kabler/minijack-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "be083229-0792-4232-b79a-607efeec726e"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 104638,
   "skuCode": "AQBIGSURMJIN",
@@ -287,10 +294,11 @@
      "productCode": "AQBIGSURMJIN300"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

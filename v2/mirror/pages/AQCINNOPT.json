@@ -13,6 +13,13 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "be154827-6867-48c9-b9c9-31ac07fbb3ed"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 140247,
   "skuCode": "AQCINNOPT",
@@ -134,7 +141,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 13,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -621,29 +628,37 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQCINNOPT leverer en klar, detaljeret og mærkbart forbedret lydgengivelse, især ved CD-afspilning. Kablet fremhæver flere musikalske detaljer og kan få et CD-afspillersystem til at lyde væsentligt bedre. Den stærke værdi for pengene og den imponerende ydelse gør kablet til en overbevisende opgradering af kompatible lydsystemer.",
+   "summary": "AQCINNOPT er et kabel i høj kvalitet, der leverer en klar, detaljeret og medrivende lydforbedring. Musikken får en varmere, mere raffineret og fyldig gengivelse med mærkbart flere detaljer og bedre cd-afspilning. Den stærke værdi for pengene og den solide kvalitet gør kablet til en imponerende opgradering i forhold til standardkabler.",
    "headlines": {
     "clear and detailed sound": {
-     "sentimentAnalysis": "Kablet roses for at levere klar og detaljeret lyd med mærkbart flere hørbare informationer.",
+     "sentimentAnalysis": "Kablet roses for klar lyd med markant flere hørbare detaljer.",
      "simpleTitle": "Klar og detaljeret lyd",
      "bias": "positive",
      "key": "clear-detailed-sound",
-     "groupId": "c00307b4-9c96-499c-8275-50f0745a8bf7"
+     "groupId": "15f01456-be9a-4ca0-8a65-7dd1e68e7bbc"
     },
-    "noticeable CD playback upgrade": {
-     "sentimentAnalysis": "Kablet får ifølge anmeldelserne CD'er til at lyde smukkere og giver indtryk af en markant bedre CD-afspiller.",
-     "simpleTitle": "Mærkbar opgradering af CD-afspilningen",
+    "noticeable upgrade to CD playback": {
+     "sentimentAnalysis": "Cd-afspilningen beskrives som markant bedre, nærmest som en opgradering af selve cd-afspilleren.",
+     "simpleTitle": "Mærkbar forbedring af cd-afspilningen",
      "bias": "positive",
      "key": "cd-playback-upgrade",
-     "groupId": "c00307b4-9c96-499c-8275-50f0745a8bf7"
+     "groupId": "15f01456-be9a-4ca0-8a65-7dd1e68e7bbc"
+    },
+    "improvement over standard cables": {
+     "sentimentAnalysis": "Kablet opfattes som en værdifuld lydmæssig opgradering fra standardkabler og får anlægget til at lyde mere avanceret.",
+     "simpleTitle": "Forbedring i forhold til standardkabler",
+     "bias": "positive",
+     "key": "standard-cable-upgrade",
+     "groupId": "15f01456-be9a-4ca0-8a65-7dd1e68e7bbc"
     }
    },
    "grouping": {
-    "c00307b4-9c96-499c-8275-50f0745a8bf7": {
+    "15f01456-be9a-4ca0-8a65-7dd1e68e7bbc": {
      "title": "Lydkvalitet",
-     "id": "c00307b4-9c96-499c-8275-50f0745a8bf7",
+     "id": "15f01456-be9a-4ca0-8a65-7dd1e68e7bbc",
      "references": [
       "3314fffb-2b8c-438a-90ee-806ef6f992bb",
+      "a00d4acb-9f27-42a6-808e-409a6ea5280a",
       "19eaaca2-2fdb-4063-a104-9ef871e97c4c",
       "46c75b5b-f321-438c-bb59-6e0b03f512b8"
      ]

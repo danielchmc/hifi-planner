@@ -13,6 +13,16 @@
    "url": "/stereo/systemer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "dfc54499-c409-456a-87ab-046b83a4be89",
+   "05ceb2d1-3b4a-4456-aa69-88565972d387",
+   "588bcf3b-0337-4c33-9925-e637f7e0e9d8",
+   "c09ad698-e329-4261-9aee-4987e97108be"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 242236,
   "skuCode": "KEFLSX2LT-KEFKUBE8MIE",
@@ -163,7 +173,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 32,
+        "availableQuantity": 30,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.540,-",
@@ -187,7 +197,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 33,
+        "availableQuantity": 29,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.333,-",
@@ -210,7 +220,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 8,
+        "availableQuantity": 4,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.333,-",
@@ -222,48 +232,48 @@
      ],
      "parentProductCode": "KEFLSX2LT",
      "reviews": {
-      "summary": "KEF LSX II LT leverer et usædvanligt klart, detaljeret og kraftfuldt lydbillede fra et kompakt og attraktivt design og imponerer til musik, tv og computerbrug. Den varme, punchy og medrivende gengivelse er behagelig ved både lav og høj lydstyrke, mens en ekstra subwoofer giver dybere bas til krævende lyttere. Tilslutning og opsætning er som regel alsidig og enkel, men appen, den trådløse stabilitet, fjernbetjeningen og enkelte digitale indgange kan være frustrerende for nogle brugere.",
+      "summary": "KEF LSX II LT leverer en bemærkelsesværdig klar, detaljeret, varm og kraftfuld lyd fra det kompakte kabinet og fungerer imponerende til musik, tv og computerbrug. Nem opsætning, brede tilslutningsmuligheder, streaming og fleksibel rumtilpasning giver stor praktisk værdi, mens den solide konstruktion og det flotte design styrker helhedsindtrykket. De største forbehold gælder en lejlighedsvis ustabil app eller trådløs forbindelse, enkelte problemer med fjernbetjeningen samt ønsket om en subwoofer til dybere bas.",
       "headlines": {
-       "clear, detailed and powerful sound from a compact speaker": {
-        "sentimentAnalysis": "Anmeldelserne roser en usædvanligt klar, detaljeret, varm og kraftfuld gengivelse, der langt overgår forventningerne til den kompakte størrelse.",
-        "simpleTitle": "Klar, detaljeret og kraftfuld lyd fra en kompakt højttaler",
+       "remarkably clear and detailed sound from a compact speaker": {
+        "sentimentAnalysis": "Anmeldelserne roser konsekvent lydens klarhed, detaljering, varme og størrelse i forhold til den kompakte konstruktion.",
+        "simpleTitle": "Bemærkelsesværdig klar og detaljeret lyd fra en kompakt højttaler",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "509e2389-4667-4224-950a-0b72e125ac09"
+        "key": "sound_quality",
+        "groupId": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf"
        },
-       "bass is impressive, but a subwoofer can deepen the experience": {
-        "sentimentAnalysis": "Højttalerne leverer en kraftig og ren bas i forhold til størrelsen, mens subwoofere giver et fyldigere og mere filmisk dybbasfundament.",
-        "simpleTitle": "Bassen er imponerende, men en subwoofer kan give en dybere oplevelse",
+       "a subwoofer adds deeper bass for a fuller experience": {
+        "sentimentAnalysis": "Flere anmeldelser finder den indbyggede bas kompetent, men anbefaler en subwoofer til dybere bas, især med bastung musik, tv og hjemmebiograf.",
+        "simpleTitle": "En subwoofer giver dybere bas og en mere komplet oplevelse",
         "bias": "positive",
-        "key": "bass-subwoofer",
-        "groupId": "301756c7-3de4-4d3a-9dd5-a54c4ad6f922"
+        "key": "bass",
+        "groupId": "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e"
        },
-       "streaming options are broad, but wireless and app reliability can disappoint": {
-        "sentimentAnalysis": "Platformen understøtter omfattende streaming og mange tilslutninger, men flere anmeldelser nævner forbindelsesudfald, vanskelig Wi-Fi-kompatibilitet og en ustabil eller ufærdig app.",
-        "simpleTitle": "Mange streamingmuligheder, men trådløs forbindelse og app kan svigte",
+       "the app and wireless connection can be unreliable": {
+        "sentimentAnalysis": "Streaming- og appfunktionerne værdsættes, men flere anmeldelser nævner forbindelsesudfald, vanskelig wi-fi-opsætning og komplicerede hi-res-forbindelser.",
+        "simpleTitle": "Appen og den trådløse forbindelse kan være ustabil",
         "bias": "negative",
-        "key": "connectivity-app",
-        "groupId": "197ebf03-ed62-46f4-8223-0da2469798c6"
+        "key": "connectivity_app",
+        "groupId": "f777ebca-079f-4ea8-abea-15541f42bc3f"
        },
-       "compact design fills rooms and suits desktop or TV setups": {
-        "sentimentAnalysis": "Anmeldelserne fremhæver de attraktive og eksklusive kompakte højttalere, som kan fylde rummet med lyd og fungerer godt ved skrivebordet, tv’et og i stuen.",
-        "simpleTitle": "Det kompakte design passer til rum, skrivebord og tv",
+       "compact design suits desks and living rooms": {
+        "sentimentAnalysis": "De kompakte højttalere roses gentagne gange som gode skrivebordshøjttalere og attraktive, kompetente løsninger til tv.",
+        "simpleTitle": "Det kompakte design passer til skrivebord og stue",
         "bias": "positive",
-        "key": "design-size",
-        "groupId": "e8b467d5-0237-4f95-a711-5a5dabc20b8d"
+        "key": "desktop_tv_use",
+        "groupId": "62cc4d6f-a4e6-415f-a5e4-2a768885323e"
        },
-       "some listeners find the upper midrange less separated": {
-        "sentimentAnalysis": "Enkelte anmeldelser oplever, at lyden ikke helt lever op til de høje forventninger, især når det gælder separation i det øvre mellemregister.",
-        "simpleTitle": "Nogle lyttere savner mere separation i det øvre mellemregister",
-        "bias": "negative",
-        "key": "sound-quality",
-        "groupId": "509e2389-4667-4224-950a-0b72e125ac09"
+       "high volume remains powerful and clean": {
+        "sentimentAnalysis": "Højttalerne fylder rum med overbevisende kraft, forbliver kontrollerede ved høj lydstyrke og bevarer kvaliteten ved lav volumen.",
+        "simpleTitle": "Kraftfuld og ren lyd ved høj lydstyrke",
+        "bias": "positive",
+        "key": "sound_quality",
+        "groupId": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf"
        }
       },
       "grouping": {
-       "509e2389-4667-4224-950a-0b72e125ac09": {
+       "9f46716a-06dc-4075-82e6-fd6c0e4c40bf": {
         "title": "Lydkvalitet",
-        "id": "509e2389-4667-4224-950a-0b72e125ac09",
+        "id": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf",
         "references": [
          "78598f5c-7bae-4cfb-a114-65377b29d66a",
          "c1411965-33ff-4700-b7a0-c4deeffe8f2b",
@@ -284,7 +294,6 @@
          "f6696e0a-5c8e-488f-9c2b-dd1ace1ecd1d",
          "ebddb881-8318-437a-8184-452f8d605440",
          "83f92403-d7f9-4a8e-9d47-c02bc5cde057",
-         "87b055c8-45e6-4043-a6d1-2bef6796658c",
          "bac143df-19ba-4125-9d7b-d72b59380196",
          "c3285563-70bf-4593-8cc3-bbe9fe7b2b97",
          "ceabd886-d53d-45e0-ae6d-e785ccc9f76a",
@@ -306,6 +315,7 @@
          "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
          "6b9fa542-db69-41b0-a8ce-bf5aed1551bb",
          "1b3d2b3a-19a0-45a3-b120-05fd78936072",
+         "c033e7e0-43eb-4e39-a604-161779a17bc9",
          "6acd8745-ff15-45ab-8425-2beced2a2df8",
          "1e959feb-9406-4eff-895f-37dfaed5ce7c",
          "e6eb1a67-72c8-4529-97e7-c92a87cf6957",
@@ -313,27 +323,9 @@
          "3619cfdf-6198-44c8-ba95-c4c862e5c27b"
         ]
        },
-       "e8b467d5-0237-4f95-a711-5a5dabc20b8d": {
-        "title": "Design og størrelse",
-        "id": "e8b467d5-0237-4f95-a711-5a5dabc20b8d",
-        "references": [
-         "e1170acc-24c0-40b3-abd8-4f6817018413",
-         "1a299c7c-653a-46cf-9c75-55c1ac98b65d",
-         "837d2655-bfb4-474c-8afe-7fde62f81ee1",
-         "a5c81973-2939-4dd1-8298-b9ae6ef6b294",
-         "bac143df-19ba-4125-9d7b-d72b59380196",
-         "92aecb45-8f87-4e98-b8c4-0d17fd160861",
-         "8bd1e2a0-8013-48ee-b3c3-beef23749955",
-         "133a6183-fac7-489d-9977-29730e4a986c",
-         "c45d04d5-e196-437c-8726-396a94450db4",
-         "49d8e20e-9fb5-490f-bf47-0547c451c8c9",
-         "1b3d2b3a-19a0-45a3-b120-05fd78936072",
-         "6acd8745-ff15-45ab-8425-2beced2a2df8"
-        ]
-       },
-       "197ebf03-ed62-46f4-8223-0da2469798c6": {
+       "f777ebca-079f-4ea8-abea-15541f42bc3f": {
         "title": "Tilslutning og app",
-        "id": "197ebf03-ed62-46f4-8223-0da2469798c6",
+        "id": "f777ebca-079f-4ea8-abea-15541f42bc3f",
         "references": [
          "78598f5c-7bae-4cfb-a114-65377b29d66a",
          "e356f13a-a586-47ec-9825-40cbda843cfb",
@@ -344,16 +336,18 @@
          "87b055c8-45e6-4043-a6d1-2bef6796658c",
          "c45d04d5-e196-437c-8726-396a94450db4",
          "154101ee-1024-4bd2-b1d3-cf5e2dd54cb8",
+         "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
          "6b9fa542-db69-41b0-a8ce-bf5aed1551bb",
+         "1b3d2b3a-19a0-45a3-b120-05fd78936072",
          "3619cfdf-6198-44c8-ba95-c4c862e5c27b"
         ]
        },
-       "301756c7-3de4-4d3a-9dd5-a54c4ad6f922": {
+       "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e": {
         "title": "Bas og subwoofer",
-        "id": "301756c7-3de4-4d3a-9dd5-a54c4ad6f922",
+        "id": "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e",
         "references": [
+         "e356f13a-a586-47ec-9825-40cbda843cfb",
          "00ab3818-ef5e-4141-84ec-b881befcd1ad",
-         "a55cdc66-228c-4f48-814e-ea9be063a1ff",
          "75ee8e27-f0c9-482f-b54e-3d9f3eafa970",
          "68faa21c-a2d3-43ac-b74c-e619722da40f",
          "5caa28fe-06ee-48c6-834f-f331292eb690",
@@ -361,8 +355,25 @@
          "83f92403-d7f9-4a8e-9d47-c02bc5cde057",
          "321eb842-7a54-445b-966a-e3d4be3afe6a",
          "8bd1e2a0-8013-48ee-b3c3-beef23749955",
+         "64f5bb0f-9440-4cf7-aa62-1bc8d84087c4",
          "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
          "ef60b96b-3828-4954-a243-9a84ff9e21a8"
+        ]
+       },
+       "62cc4d6f-a4e6-415f-a5e4-2a768885323e": {
+        "title": "Brug ved computer og tv",
+        "id": "62cc4d6f-a4e6-415f-a5e4-2a768885323e",
+        "references": [
+         "00004815-34d4-46a5-9fe1-8e8315fc4a4e",
+         "f6696e0a-5c8e-488f-9c2b-dd1ace1ecd1d",
+         "c3285563-70bf-4593-8cc3-bbe9fe7b2b97",
+         "ceabd886-d53d-45e0-ae6d-e785ccc9f76a",
+         "ef60b96b-3828-4954-a243-9a84ff9e21a8",
+         "92aecb45-8f87-4e98-b8c4-0d17fd160861",
+         "a5c81973-2939-4dd1-8298-b9ae6ef6b294",
+         "2ec76039-6770-489e-b3a8-e31cf93974ff",
+         "154101ee-1024-4bd2-b1d3-cf5e2dd54cb8",
+         "d687315c-508c-421f-a974-1996e6421726"
         ]
        }
       },
@@ -407,7 +418,60 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFKUBE8MIE"
+     "parentProductCode": "KEFKUBE8MIE",
+     "reviews": {
+      "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
+      "headlines": {
+       "adds fuller, deeper and more immersive bass": {
+        "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
+        "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
+        "bias": "positive",
+        "key": "bass_sound",
+        "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
+       },
+       "compact design works well in small rooms": {
+        "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
+        "simpleTitle": "Det kompakte design fungerer godt i små rum",
+        "bias": "positive",
+        "key": "compact_rooms",
+        "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
+       }
+      },
+      "grouping": {
+       "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
+        "title": "Bas og lydkvalitet",
+        "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
+        "references": [
+         "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
+         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
+         "82ea685e-eaaf-4a2e-be85-106c4d812aee",
+         "fe224355-6f96-4104-904f-404bbf41bab4",
+         "37700f85-5cd6-40a3-99c1-9da4745fcd02",
+         "d55951fc-53aa-4545-b0ec-bcf0e3401796",
+         "713d2299-5b00-46fd-87ee-839a9e232118"
+        ]
+       },
+       "2cd3e345-8629-407a-9d89-b25591820d17": {
+        "title": "Kompakt størrelse og egnethed til rum",
+        "id": "2cd3e345-8629-407a-9d89-b25591820d17",
+        "references": [
+         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
+         "fe224355-6f96-4104-904f-404bbf41bab4",
+         "6c7c3b50-1368-41b8-b349-ab8165768a20"
+        ]
+       }
+      },
+      "rating": 4.77777777777778,
+      "count": 18,
+      "reviewCount": 10,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 4,
+       "5": 14
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

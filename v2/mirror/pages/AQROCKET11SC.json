@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Valgfri"
+  },
+  "gallery": [
+   "37f5b5e3-fa4d-495e-a63a-a7849bf48b36"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 90411,
   "skuCode": "AQROCKET11SC",
@@ -128,7 +137,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 725,
+     "availableQuantity": 1025,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -194,8 +203,8 @@
      "productCode": "AQROCKET11SCBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 29. november",
+     "deliveryDate": "2026-11-29T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockAtpDate"
@@ -215,55 +224,55 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET11SC betragtes generelt som et kvalitetsrigt og robust højttalerkabel, der leverer klar, balanceret og dynamisk lyd med strammere bas og blødere diskant. Mange anmeldelser beskriver en tydeligt hørbar forbedring i forhold til simple kabler, mens den fleksible, veludførte konstruktion og det gode pris-kvalitetsforhold også roses. Installationen er som regel enkel, især med klargjorte stik, men det tykke kabel kan være svært at skjule, og enkelte brugere finder opsætning eller værdi mindre overbevisende.",
+   "summary": "AQROCKET11SC betragtes bredt som et kvalitetsrigt og robust højttalerkabel, der leverer en klar, afbalanceret og dynamisk lyd med fast bas, bløde diskanttoner og en rummelig, omsluttende gengivelse. Mange anmeldelser beskriver en tydeligt hørbar opgradering i forhold til enkle eller ældre kabler samt et stærkt forhold mellem pris og kvalitet og god egnethed til bi-wiring. Installationen er som regel enkel, især når kablerne er færdigmonterede, men det tykke kabel kan være vanskeligt at føre, og klargøring eller tilslutning kan føles lidt besværlig.",
    "headlines": {
-    "strong price-performance ratio": {
-     "sentimentAnalysis": "Produktet vurderes ofte som godt prissat i forhold til byggekvalitet og hørbar ydelse.",
-     "simpleTitle": "Stærkt pris-kvalitetsforhold",
+    "audible upgrade with punchier bass and smoother highs": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en tydelig forbedring i forhold til enkle eller ældre kabler, især med hensyn til baskontrol og klarhed.",
+     "simpleTitle": "Hørbar opgradering med fastere bas og blødere diskant",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d"
+    },
+    "thick, solid and professionally finished": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som robust, veludført og professionelt i udseende og følelse.",
+     "simpleTitle": "Tykt, solidt og professionelt udført",
+     "bias": "positive",
+     "key": "build-quality",
+     "groupId": "ccdaa574-6706-4eea-8273-b9a7916743f8"
+    },
+    "excellent value for money": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den stærke ydelse og kvalitet i forhold til prisen.",
+     "simpleTitle": "Fremragende forhold mellem pris og kvalitet",
      "bias": "positive",
      "key": "value",
-     "groupId": "b81f2abe-bb94-400b-a9b5-228cf8a4c8ac"
+     "groupId": "9a344cab-30bf-41f9-acf2-ce9aed176bb7"
     },
     "clear, balanced and dynamic sound": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for klar, balanceret, varm og dynamisk gengivelse med god bas, detaljering og lydbillede.",
-     "simpleTitle": "Klar, balanceret og dynamisk lyd",
+     "sentimentAnalysis": "Anmeldelserne roser den afbalancerede, klare og dynamiske gengivelse.",
+     "simpleTitle": "Klar, afbalanceret og dynamisk lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "c292dbde-a362-44c7-8bfc-8861d7ea2864"
+     "key": "sound-quality",
+     "groupId": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d"
     },
-    "audible upgrade over basic cables": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en tydeligt hørbar forbedring efter udskiftning af et billigt eller almindeligt højttalerkabel.",
-     "simpleTitle": "Hørbar forbedring i forhold til simple kabler",
+    "easy bi-wiring connection": {
+     "sentimentAnalysis": "Kablet anses for at være særligt praktisk til bi-wiring og understøtter både bi-wiring og single-wiring.",
+     "simpleTitle": "Nem bi-wiring-tilslutning",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "c292dbde-a362-44c7-8bfc-8861d7ea2864"
+     "key": "bi-wiring",
+     "groupId": "a852362b-52dd-4604-a1c2-f4688644da08"
     },
-    "easy to install and use for bi-wiring": {
-     "sentimentAnalysis": "Klargjorte kabelender, fleksibel håndtering og bi-wiring-kompatibilitet gør installationen nem for mange brugere.",
-     "simpleTitle": "Nem installation og egnet til bi-wiring",
-     "bias": "positive",
-     "key": "installation_handling",
-     "groupId": "2b8438df-077e-4cd4-9792-d3fa1591d0fc"
-    },
-    "solid but difficult to hide": {
-     "sentimentAnalysis": "Kablets tykkelse kan gøre tilpasning til stik og diskret kabelføring vanskeligere.",
-     "simpleTitle": "Solid, men svær at skjule",
+    "the thick cable can be difficult to route": {
+     "sentimentAnalysis": "Nogle anmeldelser påpeger, at kablets tykkelse kan gøre føring eller visuel tilpasning vanskelig.",
+     "simpleTitle": "Det tykke kabel kan være svært at føre",
      "bias": "negative",
-     "key": "installation_handling",
-     "groupId": "2b8438df-077e-4cd4-9792-d3fa1591d0fc"
-    },
-    "value can feel overstated": {
-     "sentimentAnalysis": "En minoritetsopfattelse anser investeringen eller anbefalingen for mere overdrevet end nødvendigt.",
-     "simpleTitle": "Værdien kan virke overvurderet",
-     "bias": "negative",
-     "key": "value",
-     "groupId": "b81f2abe-bb94-400b-a9b5-228cf8a4c8ac"
+     "key": "installation",
+     "groupId": "02fa7748-d967-4817-b36f-cba927a74b6a"
     }
    },
    "grouping": {
-    "c292dbde-a362-44c7-8bfc-8861d7ea2864": {
+    "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d": {
      "title": "Lydkvalitet",
-     "id": "c292dbde-a362-44c7-8bfc-8861d7ea2864",
+     "id": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d",
      "references": [
       "3bdb01c7-9675-4f20-a908-88ff960da0ae",
       "6f2adce6-962b-4e2a-8fda-6c671b625ecb",
@@ -289,14 +298,14 @@
       "d1a12110-8362-45b4-86d6-215816dd37eb"
      ]
     },
-    "2b8438df-077e-4cd4-9792-d3fa1591d0fc": {
+    "02fa7748-d967-4817-b36f-cba927a74b6a": {
      "title": "Installation og håndtering",
-     "id": "2b8438df-077e-4cd4-9792-d3fa1591d0fc",
+     "id": "02fa7748-d967-4817-b36f-cba927a74b6a",
      "references": [
       "4c8eba81-669e-46bc-9d4a-f4e9893de9b9",
       "333883c8-7e98-47bf-b39d-a47ea79a9491",
       "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
-      "02380ae4-65f3-46f9-aa33-71d775bb4212",
+      "7685b505-7c12-494c-8ce1-a15cabe465fa",
       "8ef4714c-9988-4671-b434-25a75c1e0b20",
       "85bbabed-7123-4553-b67c-3228b6148b7a",
       "d0f13715-b6c5-4ad4-8a2e-bfe6806e17b1",
@@ -306,20 +315,44 @@
       "d1a12110-8362-45b4-86d6-215816dd37eb"
      ]
     },
-    "b81f2abe-bb94-400b-a9b5-228cf8a4c8ac": {
-     "title": "Pris-kvalitetsforhold",
-     "id": "b81f2abe-bb94-400b-a9b5-228cf8a4c8ac",
+    "ccdaa574-6706-4eea-8273-b9a7916743f8": {
+     "title": "Byggekvalitet",
+     "id": "ccdaa574-6706-4eea-8273-b9a7916743f8",
+     "references": [
+      "4c8eba81-669e-46bc-9d4a-f4e9893de9b9",
+      "7685b505-7c12-494c-8ce1-a15cabe465fa",
+      "9966094c-4cfe-4c5a-83fa-2547ff1bbecf",
+      "99f2fd5f-00cf-4107-8358-783ed70868ed",
+      "8ef4714c-9988-4671-b434-25a75c1e0b20",
+      "238dca30-4c7c-446c-b19a-9719bec4405f",
+      "d0f13715-b6c5-4ad4-8a2e-bfe6806e17b1",
+      "f0cab3d2-ff8e-457e-9ea3-db1ca05ba09e",
+      "133ce000-4504-4466-9d79-ba24f331923d",
+      "d1a12110-8362-45b4-86d6-215816dd37eb"
+     ]
+    },
+    "9a344cab-30bf-41f9-acf2-ce9aed176bb7": {
+     "title": "Pris-kvalitet",
+     "id": "9a344cab-30bf-41f9-acf2-ce9aed176bb7",
      "references": [
       "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
-      "9966094c-4cfe-4c5a-83fa-2547ff1bbecf",
       "d33a5199-db3b-42fc-a91a-83416a219575",
-      "238dca30-4c7c-446c-b19a-9719bec4405f",
       "911e5a44-86ed-4ba7-9866-1a04f3638915",
       "ec4a3ada-28f4-41f3-9788-67feba761466",
-      "04400b1e-b86b-46fe-b0c4-00c47e17965f",
       "96b2c28c-8ab3-4845-ac2b-29349cffba39",
       "3f16f201-117e-4c13-854e-95e5e226b79e",
       "c322501f-51a5-42e8-8ce3-246ce225b8a0"
+     ]
+    },
+    "a852362b-52dd-4604-a1c2-f4688644da08": {
+     "title": "Bi-wiring",
+     "id": "a852362b-52dd-4604-a1c2-f4688644da08",
+     "references": [
+      "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
+      "f5948328-d792-4fd6-b4f4-d5a85a6466e0",
+      "85bbabed-7123-4553-b67c-3228b6148b7a",
+      "540d4e60-9448-4f24-bcce-5f38d184399e",
+      "96b2c28c-8ab3-4845-ac2b-29349cffba39"
      ]
     }
    },

@@ -13,6 +13,16 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5f051aff-f7b9-4c23-a39b-d9951fba74c1",
+   "74e62384-925b-4056-a003-689c28c7e4d1",
+   "7d78b34b-83fc-4f9e-b294-864e1b3c0aed",
+   "786c3ed9-f86c-4fbe-8639-21a8bf2e6786"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 143616,
   "skuCode": "LYNGCS1",
@@ -199,7 +209,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 11,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -240,6 +250,63 @@
   "testGroups": [],
   "bundleRelations": [
    {
+    "modelType": "Kompaktanlæg",
+    "price": {
+     "price": 25997,
+     "priceFormatted": "25.997,-",
+     "priceBefore": 28997,
+     "priceBeforeFormatted": "28.997,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 25997,
+     "unitPriceBefore": 28997
+    },
+    "image": "https://images.hifiklubben.com/image/d35d1ee9-3c46-461b-9879-87ed4858dd05",
+    "ribbons": [
+     {
+      "text": "Spar 10%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Lyngdorf TDAI-1120 + CS1",
+    "url": "/lyngdorf-tdai-1120-cs1/"
+   },
+   {
+    "modelType": "Møbel med anlæg",
+    "price": {
+     "price": 53746,
+     "priceFormatted": "53.746,-",
+     "priceBefore": 56746,
+     "priceBeforeFormatted": "56.746,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 53746,
+     "unitPriceBefore": 56746
+    },
+    "ribbons": [
+     {
+      "text": "Spar 5%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Clic 240",
+    "url": "/240-furniture-system/"
+   },
+   {
     "modelType": "Møbel med anlæg",
     "price": {
      "price": 28843,
@@ -267,82 +334,53 @@
     ],
     "title": "Unnu 230",
     "url": "/230-furniture-2/"
-   },
-   {
-    "modelType": "Kompaktanlæg",
-    "price": {
-     "price": 28997,
-     "priceFormatted": "28.997,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 28997,
-     "unitPriceBefore": 28997
-    },
-    "image": "https://images.hifiklubben.com/image/d35d1ee9-3c46-461b-9879-87ed4858dd05",
-    "title": "Lyngdorf TDAI-1120 + CS1",
-    "url": "/lyngdorf-tdai-1120-cs1/"
-   },
-   {
-    "modelType": "Møbel med anlæg",
-    "price": {
-     "price": 56746,
-     "priceFormatted": "56.746,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 56746,
-     "unitPriceBefore": 56746
-    },
-    "title": "Clic 240",
-    "url": "/240-furniture-system/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGCS1 leverer en klar, detaljeret og medrivende lyd med en rummelig gengivelse, der fungerer særligt godt til tv og musik. Den fremadrettede basport og det kompakte, vandrette design gør placering i møbler eller et tv-møbel meget praktisk. Bassen er generelt tilfredsstillende, selv om den dybeste bas kan føles begrænset for nogle lyttere.",
+   "summary": "LYNGCS1 leverer en klar, varm og meget detaljeret lyd med en bred og opslugende gengivelse, der fungerer særligt godt til musik og tv. De vinklede diskanter og den brede spredning skaber et engagerende lyttefelt, mens det kompakte, vandrette design passer godt i tv-møbler eller reoler. Bassen er tilstrækkelig i mange opsætninger, men lyttere, der ønsker større dybde, kan savne lidt i det nederste register.",
    "headlines": {
     "clear and detailed sound": {
-     "sentimentAnalysis": "Højttalerne roses for klar og ren gengivelse med mange detaljer over hele frekvensområdet.",
+     "sentimentAnalysis": "Anmeldelserne roser højttalerne for en klar, ren og nuanceret gengivelse ved forskellige lydstyrker.",
      "simpleTitle": "Klar og detaljeret lyd",
      "bias": "positive",
-     "key": "clear-and-detailed-sound",
-     "groupId": "c9406650-4cee-4b4f-8d07-af8ad57c9410"
+     "key": "clear-detailed-sound",
+     "groupId": "cbc8d776-087a-4d8e-b2fa-29ff9541e9c7"
     },
     "spacious and immersive presentation": {
-     "sentimentAnalysis": "De vinklede diskanter og højttalernes design forbindes med et bredt, medrivende lydbillede og stor lytteglæde.",
-     "simpleTitle": "Rummelig og medrivende gengivelse",
+     "sentimentAnalysis": "Højttalerne roses for et bredt lydbillede, god spredning og en opslugende lytteoplevelse.",
+     "simpleTitle": "Rumlig og opslugende gengivelse",
      "bias": "positive",
-     "key": "spacious-immersive-presentation",
-     "groupId": "c9406650-4cee-4b4f-8d07-af8ad57c9410"
+     "key": "spacious-immersive-sound",
+     "groupId": "cbc8d776-087a-4d8e-b2fa-29ff9541e9c7"
     },
-    "convenient furniture placement": {
-     "sentimentAnalysis": "Den vandrette form og den fremadrettede basport gør højttalerne velegnede til tv-møbler og andre møbelplaceringer uden at gå ud over lydspredningen.",
-     "simpleTitle": "Praktisk placering i møbler",
+    "fits TV furniture and shelving": {
+     "sentimentAnalysis": "Formatet opfattes som praktisk til montering i lofter, reoler og tv-møbler, mens den frontvendte basport hjælper ved placering i møbler.",
+     "simpleTitle": "Passer i tv-møbler og reoler",
      "bias": "positive",
-     "key": "convenient-furniture-placement",
-     "groupId": "5f708f07-cfc0-42e3-bd3b-5b05c503a287"
+     "key": "furniture-friendly-design",
+     "groupId": "37534672-b5c0-49b9-9cf1-d927c09565d6"
     }
    },
    "grouping": {
-    "c9406650-4cee-4b4f-8d07-af8ad57c9410": {
+    "cbc8d776-087a-4d8e-b2fa-29ff9541e9c7": {
      "title": "Lydkvalitet",
-     "id": "c9406650-4cee-4b4f-8d07-af8ad57c9410",
+     "id": "cbc8d776-087a-4d8e-b2fa-29ff9541e9c7",
      "references": [
       "629922bd-17df-40e4-8bef-eb6f59ac6152",
       "c9f61afc-d3f2-4971-b316-ce49eac4c336",
       "e4cada83-780a-4c2a-ae66-a6182898e062",
       "4fa40494-e236-415f-818a-cd9a9a0666a9",
+      "42bb72a5-7930-4b33-b4d0-673ec06b80c7",
       "c9454762-a455-4b4f-94d5-01b4f817894d"
      ]
     },
-    "5f708f07-cfc0-42e3-bd3b-5b05c503a287": {
+    "37534672-b5c0-49b9-9cf1-d927c09565d6": {
      "title": "Placering og design",
-     "id": "5f708f07-cfc0-42e3-bd3b-5b05c503a287",
+     "id": "37534672-b5c0-49b9-9cf1-d927c09565d6",
      "references": [
       "49fec0b1-d504-4114-a341-7dab4f56d43d",
       "4fa40494-e236-415f-818a-cd9a9a0666a9",
-      "42bb72a5-7930-4b33-b4d0-673ec06b80c7",
       "c9454762-a455-4b4f-94d5-01b4f817894d"
      ]
     }

@@ -13,6 +13,16 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "853ecbdd-98bc-4e7f-ab01-9d8015659ef3",
+   "68d030bd-36cc-4e3e-8530-ba725bcced03",
+   "cf4d3695-3c40-478e-b8e6-2f9e449daa06",
+   "05b0b2e8-9b00-4f98-8981-baa92d572fc8"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 222076,
   "skuCode": "KEFS1FS",
@@ -64,8 +74,7 @@
      "salesUnit": "sæt",
      "rawSalesUnit": "set",
      "salesQuantity": 2,
-     "unitPrice": 1287.5,
-     "unitPriceBefore": 1287.5
+     "unitPrice": 1287.5
     },
     "techSpecs": [
      {
@@ -106,7 +115,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 6,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -153,8 +162,7 @@
      "salesUnit": "sæt",
      "rawSalesUnit": "set",
      "salesQuantity": 2,
-     "unitPrice": 1445,
-     "unitPriceBefore": 1287.5
+     "unitPrice": 1445
     },
     "techSpecs": [
      {
@@ -190,12 +198,11 @@
      "productCode": "KEFS1FSMINWH"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 6,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -306,52 +313,52 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFS1FS-stativerne er et smukt, stilrent og perfekt match til LSX II-højttalerne. Stativerne giver et rent udtryk uden synlige kabler og passer særdeles godt til højttalernes design. Premiumprisen er den største indvending, men det raffinerede udseende og den fremragende pasform gør stativerne til en overbevisende opgradering.",
+   "summary": "KEFS1FS-stativerne passer stilfuldt og perfekt til KEF LSX II-højttalerne og skaber et rent, kabelfrit udtryk med imponerende visuel tilstedeværelse. Det elegante design og den præcise integration af højttalerne gør stativerne til en naturlig del af systemet. Den høje pris er den eneste gennemgående ulempe, mens kvalitet og funktionalitet generelt er overbevisende.",
    "headlines": {
-    "elegant, sleek design": {
-     "sentimentAnalysis": "Stativerne roses konsekvent for deres smukke, stilrene og raffinerede udseende.",
-     "simpleTitle": "Elegant, stilrent design",
+    "elegant, refined design": {
+     "sentimentAnalysis": "Stativerne roses gentagne gange for deres smukke, minimalistiske udseende og flotte finish.",
+     "simpleTitle": "Elegant og stilrent design",
      "bias": "positive",
      "key": "design",
-     "groupId": "89257d8b-9c5c-494f-bcfc-e7efa0ce0b37"
+     "groupId": "99cc6c50-1e8e-4aa9-af4f-07adb72a4b52"
     },
-    "excellent match for LSX II speakers": {
-     "sentimentAnalysis": "Stativerne opfattes som et særdeles velfungerende og specialtilpasset supplement til LSX II-højttalerne.",
-     "simpleTitle": "Fremragende match til LSX II-højttalerne",
+    "perfect match for LSX II speakers": {
+     "sentimentAnalysis": "Stativerne betragtes som en ideel placeringsløsning, der passer perfekt til højttalerne og supplerer LSX II-systemet.",
+     "simpleTitle": "Perfekt match til LSX II-højttalere",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "568ef193-d86b-4329-a2e9-4bbf9681c8a0"
+     "groupId": "1c2da952-a6a7-42a2-af86-b744a9c5f460"
     },
-    "premium price": {
-     "sentimentAnalysis": "Den primære kritik er, at stativerne er dyre eller overprisede trods deres kvalitet og udseende.",
+    "premium pricing": {
+     "sentimentAnalysis": "Den vigtigste kritik er den høje pris, som opleves som høj trods den gode kvalitet og det flotte udseende.",
      "simpleTitle": "Høj premiumpris",
      "bias": "negative",
      "key": "price",
-     "groupId": "ec1c7e50-c05a-4f98-a9ea-9c36977bf15f"
+     "groupId": "53b20588-1972-4088-b1de-ba39fef59b75"
     }
    },
    "grouping": {
-    "89257d8b-9c5c-494f-bcfc-e7efa0ce0b37": {
+    "99cc6c50-1e8e-4aa9-af4f-07adb72a4b52": {
      "title": "Design og udseende",
-     "id": "89257d8b-9c5c-494f-bcfc-e7efa0ce0b37",
+     "id": "99cc6c50-1e8e-4aa9-af4f-07adb72a4b52",
      "references": [
       "29c8648c-eb2d-4105-985c-177511c514bb",
-      "5cd9d74f-daca-46a9-8812-4b99781d6b31",
-      "87033561-359f-48d5-b4b8-fb4447f993ba"
+      "87033561-359f-48d5-b4b8-fb4447f993ba",
+      "5cd9d74f-daca-46a9-8812-4b99781d6b31"
      ]
     },
-    "568ef193-d86b-4329-a2e9-4bbf9681c8a0": {
-     "title": "Pasform og kompatibilitet med højttalerne",
-     "id": "568ef193-d86b-4329-a2e9-4bbf9681c8a0",
+    "1c2da952-a6a7-42a2-af86-b744a9c5f460": {
+     "title": "Højttalerkompatibilitet og pasform",
+     "id": "1c2da952-a6a7-42a2-af86-b744a9c5f460",
      "references": [
       "11ba6fd1-037c-4093-9d21-826d97822d4b",
       "615c24ed-24ee-4d21-a7c0-31ddfdd206bf",
       "5cd9d74f-daca-46a9-8812-4b99781d6b31"
      ]
     },
-    "ec1c7e50-c05a-4f98-a9ea-9c36977bf15f": {
+    "53b20588-1972-4088-b1de-ba39fef59b75": {
      "title": "Pris",
-     "id": "ec1c7e50-c05a-4f98-a9ea-9c36977bf15f",
+     "id": "53b20588-1972-4088-b1de-ba39fef59b75",
      "references": [
       "20d2864d-ea72-4502-9e2b-6c398dc51260",
       "29c8648c-eb2d-4105-985c-177511c514bb",

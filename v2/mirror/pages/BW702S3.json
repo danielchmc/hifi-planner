@@ -13,6 +13,17 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "cea46361-eea0-4dcb-afe7-39a20e740e00",
+   "0f273515-aca8-4dfc-b98c-767a6b93f0b5",
+   "da2595b2-cd35-4b03-8250-bf7d529c486a"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190135,
   "skuCode": "BW702S3",
@@ -469,55 +480,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BW702S3 leverer en usædvanligt klar, detaljeret og naturlig gengivelse med stram bas, stærk dynamik og et omsluttende lydbillede. Raffineret diskant, tydelig mellemtone og en tro gengivelse afslører både musikalske nuancer og optagekvalitet, mens den elegante udførelse gør et stærkt visuelt indtryk. Kraftig forstærkning kan frigive endnu mere ydelse, men højttalerne er allerede et særdeles engagerende og alsidigt løft til musik og film.",
+   "summary": "BW702S3 leverer en usædvanligt klar, detaljeret og naturlig gengivelse med stærk dynamik, præcis bas og et omsluttende lydbillede. Højttalerne fremhæver musikalske nuancer på tværs af genrer og imponerer samtidig med flot udførelse og et elegant udtryk. Den rette forstærkning kan frigive endnu mere performance, og den høje pris opleves generelt som berettiget af den store lydmæssige opgradering.",
    "headlines": {
     "clear, detailed and natural sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den krystalklare, meget detaljerede, naturlige og troværdige gengivelse.",
+     "sentimentAnalysis": "Anmeldelserne roser en transparent, meget detaljeret og naturlig gengivelse, der tydeliggør individuelle instrumenter og optagelsernes karakter.",
      "simpleTitle": "Klar, detaljeret og naturlig lyd",
      "bias": "positive",
-     "key": "clear-detailed-sound",
-     "groupId": "d625b471-666f-4cf1-931a-8a2cf2f94400"
+     "key": "sound",
+     "groupId": "a7f84ed9-f694-4a72-b0f5-1dba8667f015"
     },
-    "tight bass and impressive dynamics": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den kontrollerede bas, den levende dynamik og den hurtige, præcise transientgengivelse.",
-     "simpleTitle": "Stram bas og imponerende dynamik",
+    "punchy bass and impressive dynamics": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den kontrollerede, præcise bas samt den stærke dynamik og hurtige transientgengivelse.",
+     "simpleTitle": "Kontant bas og imponerende dynamik",
      "bias": "positive",
-     "key": "bass-dynamics",
-     "groupId": "d625b471-666f-4cf1-931a-8a2cf2f94400"
+     "key": "sound",
+     "groupId": "a7f84ed9-f694-4a72-b0f5-1dba8667f015"
     },
-    "elegant, well-built appearance": {
-     "sentimentAnalysis": "Anmeldelserne roser gentagne gange højttalerne som smukke møbler med fremragende finish og byggekvalitet.",
-     "simpleTitle": "Elegant og solid udførelse",
+    "refined construction and attractive finish": {
+     "sentimentAnalysis": "Kabinetdesign, finish og byggekvalitet roses gentagne gange som elegant og møbellignende.",
+     "simpleTitle": "Flot udførelse og attraktiv finish",
      "bias": "positive",
-     "key": "elegant-build",
-     "groupId": "cb4602b4-9f51-404d-8c9e-99d767ccdbf8"
+     "key": "design",
+     "groupId": "38c3fcd6-8730-4341-b6be-42373ba397b3"
     },
-    "amplification reveals further potential": {
-     "sentimentAnalysis": "Højttalerne fungerer meget godt med flere forstærkere, mens anmeldelserne antyder, at kraftigere eller bedre matchet forstærkning kan hente endnu mere ydelse frem.",
-     "simpleTitle": "Forstærkning frigiver yderligere potentiale",
+    "major upgrade worth the investment": {
+     "sentimentAnalysis": "Ejerne beskriver højttalerne som en markant opgradering og vurderer, at ydelse og langvarig glæde opvejer den høje pris.",
+     "simpleTitle": "Stor opgradering, der er investeringen værd",
      "bias": "positive",
-     "key": "amplifier-potential",
-     "groupId": "3564c216-26ef-4566-bd08-17731c06787b"
+     "key": "value",
+     "groupId": "b450c86b-5e90-434f-9ba7-c488355be2a9"
     },
-    "a substantial but worthwhile investment": {
-     "sentimentAnalysis": "Prisen anerkendes som høj, men ydeevnen og den langsigtede glæde vurderes bredt til at retfærdiggøre investeringen.",
-     "simpleTitle": "En stor, men givende investering",
+    "immersive, spacious presentation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver et omsluttende lydbillede, stærk nærvær og overbevisende rumgengivelse, også i vanskelige rum.",
+     "simpleTitle": "Omsluttende og rummelig gengivelse",
      "bias": "positive",
-     "key": "worthwhile-investment",
-     "groupId": "d86e8700-0029-4419-8e60-691fbacada9e"
+     "key": "sound",
+     "groupId": "a7f84ed9-f694-4a72-b0f5-1dba8667f015"
     },
-    "a slightly lean, analytical balance": {
-     "sentimentAnalysis": "Et mindretal oplever gengivelsen som mindre varm og kunne ønske sig fyldigere bas, selv om den nuværende balance anses for tilstrækkelig.",
-     "simpleTitle": "En lidt slank og analytisk klangbalance",
+    "benefits from capable amplification": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gode resultater med flere forstærkere, samtidig med at mere effekt kan frigive yderligere potentiale.",
+     "simpleTitle": "Drager fordel af kraftig forstærkning",
+     "bias": "positive",
+     "key": "amplification",
+     "groupId": "aaea67bf-9735-4345-bbce-f532048e9d19"
+    },
+    "premium price is noticeable": {
+     "sentimentAnalysis": "Prisen og produktionen i Kina nævnes som forbehold, selv om ydelsen generelt mindsker disse betænkeligheder.",
+     "simpleTitle": "Premiumprisen kan mærkes",
      "bias": "negative",
-     "key": "analytical-balance",
-     "groupId": "d625b471-666f-4cf1-931a-8a2cf2f94400"
+     "key": "value",
+     "groupId": "b450c86b-5e90-434f-9ba7-c488355be2a9"
+    },
+    "bass can feel slightly lean": {
+     "sentimentAnalysis": "En anmeldelse efterlyser mere fylde i bassen, mens en anden beskriver en varm gengivelse; basbalancen afhænger tilsyneladende af smag og system.",
+     "simpleTitle": "Bassen kan virke lidt slank",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "a7f84ed9-f694-4a72-b0f5-1dba8667f015"
     }
    },
    "grouping": {
-    "d625b471-666f-4cf1-931a-8a2cf2f94400": {
+    "a7f84ed9-f694-4a72-b0f5-1dba8667f015": {
      "title": "Lydkvalitet",
-     "id": "d625b471-666f-4cf1-931a-8a2cf2f94400",
+     "id": "a7f84ed9-f694-4a72-b0f5-1dba8667f015",
      "references": [
       "a9b6afd1-ae1a-4c81-8c63-8a6155b5f995",
       "1d48ab0f-304b-46c5-b92e-aba4f5b68749",
@@ -527,13 +552,11 @@
       "a8a0106c-067f-41fd-b708-9f5fef0638eb",
       "cdb1d488-cdc5-4129-9e06-c82a967f815b",
       "d0116152-51d2-47ee-a2e5-e11f818a93bc",
-      "86716f06-025b-4fef-8be1-2a2ac3bae337",
       "c0cd4b27-a3ab-4dd6-ab13-82d32fe4f11c",
       "59e2007e-7133-4576-b82a-332cf9b0e427",
       "1bfab40f-202b-40a7-934a-bcf76e12ad52",
       "1d045999-0e6c-4b7a-a05f-9baa2506c984",
       "6171782d-819f-474c-8c84-ce6e6f50498d",
-      "180f2187-af28-464a-9483-87f33f6323b0",
       "dd04d408-876d-4c52-beb9-0f6db905c697",
       "c2553da0-0159-42e7-9de4-36cb4d20b228",
       "20e9604e-a6ec-4d64-ab2e-af4b5296a34e",
@@ -556,10 +579,11 @@
       "7ee15c0a-3a87-4ec7-9417-41d4fa0a8ca9"
      ]
     },
-    "cb4602b4-9f51-404d-8c9e-99d767ccdbf8": {
+    "38c3fcd6-8730-4341-b6be-42373ba397b3": {
      "title": "Design og byggekvalitet",
-     "id": "cb4602b4-9f51-404d-8c9e-99d767ccdbf8",
+     "id": "38c3fcd6-8730-4341-b6be-42373ba397b3",
      "references": [
+      "8f635eff-3fac-43bf-a1bf-23649912fa96",
       "180f2187-af28-464a-9483-87f33f6323b0",
       "dd04d408-876d-4c52-beb9-0f6db905c697",
       "20e9604e-a6ec-4d64-ab2e-af4b5296a34e",
@@ -567,13 +591,14 @@
       "5b7586c2-2506-491a-9ea4-5c536c1ff759",
       "b379f90f-8dca-44b1-8206-7913e1025e5c",
       "6f94a8fd-e792-4da7-847f-26aa0d24047c",
+      "7de981a7-8968-44b7-b638-c80cb6ce1e4c",
       "eaf0a658-f4f5-4844-bb43-7c8dcbd078ac",
-      "7de981a7-8968-44b7-b638-c80cb6ce1e4c"
+      "764d6954-dec1-41f6-9069-58321741cb2d"
      ]
     },
-    "3564c216-26ef-4566-bd08-17731c06787b": {
-     "title": "Forstærkning og kompatibilitet",
-     "id": "3564c216-26ef-4566-bd08-17731c06787b",
+    "aaea67bf-9735-4345-bbce-f532048e9d19": {
+     "title": "Forstærkning og matchning",
+     "id": "aaea67bf-9735-4345-bbce-f532048e9d19",
      "references": [
       "a9b6afd1-ae1a-4c81-8c63-8a6155b5f995",
       "8f635eff-3fac-43bf-a1bf-23649912fa96",
@@ -581,19 +606,21 @@
       "d0116152-51d2-47ee-a2e5-e11f818a93bc",
       "f3c7831d-bb4a-4a89-829c-39c138c46f5d",
       "e28f3645-b2a5-4a3c-bd21-105b8f83cff0",
+      "7de981a7-8968-44b7-b638-c80cb6ce1e4c",
       "cd804462-abb3-4bd2-b2e3-77d454c79041",
       "7ee15c0a-3a87-4ec7-9417-41d4fa0a8ca9"
      ]
     },
-    "d86e8700-0029-4419-8e60-691fbacada9e": {
+    "b450c86b-5e90-434f-9ba7-c488355be2a9": {
      "title": "Værdi for pengene",
-     "id": "d86e8700-0029-4419-8e60-691fbacada9e",
+     "id": "b450c86b-5e90-434f-9ba7-c488355be2a9",
      "references": [
       "180f2187-af28-464a-9483-87f33f6323b0",
       "afe41856-daa8-41f1-9551-327f013de413",
       "64ced58c-dfc2-4738-8668-c4cc486cb1c6",
+      "764d6954-dec1-41f6-9069-58321741cb2d",
       "f3c7831d-bb4a-4a89-829c-39c138c46f5d",
-      "764d6954-dec1-41f6-9069-58321741cb2d"
+      "2a669430-8e34-4d28-a019-72aa733d31dd"
      ]
     }
    },

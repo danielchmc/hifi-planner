@@ -13,6 +13,37 @@
    "url": "/surround/surround-receiver/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI indgange": "7",
+   "HDMI udgange": "3",
+   "HDMI ARC/CEC": "Ja",
+   "Lydudgang": "Hovedtelefon",
+   "Lydindgang": "Coaxial, Optisk",
+   "Udgang (andet)": "12V trigger",
+   "Indgang (andet)": "RS-232, Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang",
+   "Billedeindgang": "HDMI, Component, Composit",
+   "Zoner": "3",
+   "Udgangseffekt (8 ohm, 2 kanaler)": "140 watt",
+   "Udgangseffekt (6 ohm, 1 kanal)": "205 watt",
+   "Udgangseffekt (6 ohm, 2 kanaler)": "175 watt",
+   "Forstærker kanaler": "11",
+   "Fra beskrivelsen": "HDMI 2.1 med HDCP2.3, 8K/60Hz pass-through, eARC, Deep Color, xvYCC, 4:4:4 Pure Color sub-sampling, BT.2020 pass-through, Auto Lipsync og HDMI-CEC · HDMI 2.1/8K samt 4K/120 understøttes på alle HDMI indgange og 2 udgange (4K/60 på Zone 2) · Avanceret gaming via HDMI med 4K/120Hz pass-through, ALLM (Auto Low Latency Mode) / QFT (Quick Frame Transport) / VRR (Variable Refresh Rate) · Analog > HDMI videokonvertering · HDMI Zone 2 (audio/video med uafhængigt kildevalg), Zone 2/3 (inkl. digitale lydkilder) · Indgange kan navngives individuelt · DSD streaming via HDMI og netværk (op til DSD5.6) · Automatisk følsomheds-justering på alle indgange · HDMI Diagnostic Mode"
+  },
+  "gallery": [
+   "f3b0a22e-4f76-418b-993e-958ef628e3f0",
+   "2a016795-08c2-4b8b-bdfd-38c18806c92e",
+   "b12a611e-3f80-40cb-b904-ed5cfbdfa35a",
+   "0e1657b3-2ced-495c-bfab-017dae14576c",
+   "b8759a82-aa9f-4b55-8c33-5fe5698c061d",
+   "a19deaa9-b279-4328-a3d5-2daaa6690c80",
+   "702fb72a-ead8-4eac-b856-84607043f96a",
+   "47ad0f0e-3abd-437f-94d0-190d192038c9",
+   "3964452d-2d64-4c30-b2a5-7efb357c78e1"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 229917,
   "skuCode": "MARACINEMA30",
@@ -327,7 +358,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 19,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -458,7 +489,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 8,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -644,55 +675,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marantz Cinema 30 leverer en varm, ren, dynamisk og punchy lyd til både musik og film samt rigelig effekt til krævende multikanalsystemer. Det eksklusive design, den solide konstruktion og de gode udvidelsesmuligheder understøtter high-end-oplevelsen. Dirac Live kan forbedre rumtilpasningen markant, men de ekstra omkostninger og den ustabile Android-app er tydelige ulemper.",
+   "summary": "MARACINEMA30 får stor ros for varm, klar, dynamisk og kraftfuld lyd til både musik og film, hvor den musikalske præstation især imponerer. Receiveren leverer rigeligt med effekt til krævende multikanalopsætninger samt solid konstruktion og et attraktivt design. Dirac Live kan give en imponerende, rumspecifik finjustering, men de ekstra omkostninger og den ustabile app er tydelige ulemper.",
    "headlines": {
     "warm, clear and dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den varme, rene, klare, dynamiske og kraftfulde musikgengivelse.",
+     "sentimentAnalysis": "Anmelderne beskriver lyden som varm, ren, dynamisk, smidig og kraftfuld med stærk gengivelse af både musik og film.",
      "simpleTitle": "Varm, klar og dynamisk lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "679f3383-d409-4054-9d84-a55fb4e47da5"
+     "groupId": "8ff96826-5629-431a-badb-4527084bdcac"
     },
-    "excellent for both music and movies": {
-     "sentimentAnalysis": "Receiveren beskrives konsekvent som en stor opgradering, der klarer musik, film og koncertafspilning fremragende.",
-     "simpleTitle": "Fremragende til både musik og film",
+    "especially impressive for music": {
+     "sentimentAnalysis": "Musik fremhæves gentagne gange som den tydeligste forbedring og en væsentlig grund til tilfredsheden.",
+     "simpleTitle": "Særligt imponerende til musik",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "679f3383-d409-4054-9d84-a55fb4e47da5"
+     "groupId": "8ff96826-5629-431a-badb-4527084bdcac"
     },
-    "ample multichannel power": {
-     "sentimentAnalysis": "Anmeldelserne beskriver høj effekt med mange tilsluttede højttalere og overbevisende kraft i krævende actionscener.",
-     "simpleTitle": "Rigelig effekt til multikanal",
-     "bias": "positive",
-     "key": "power",
-     "groupId": "f569896e-30c5-40d1-b68d-730e9a41fba2"
-    },
-    "premium, solid construction": {
-     "sentimentAnalysis": "Receiveren roses for sit stilfulde udseende, eksklusive præg og solide konstruktion.",
-     "simpleTitle": "Eksklusiv og solid konstruktion",
+    "premium design and solid construction": {
+     "sentimentAnalysis": "Receiveren beskrives gentagne gange som attraktiv, eksklusiv og solidt bygget.",
+     "simpleTitle": "Eksklusivt design og solid konstruktion",
      "bias": "positive",
      "key": "design-build",
-     "groupId": "ff23d8e3-2928-424b-9833-e97ca4ca6760"
+     "groupId": "e3bd6747-be8d-4f5b-b6c0-10f0295f6898"
     },
-    "dirac Live greatly improves room integration": {
-     "sentimentAnalysis": "Dirac Live-kalibrering vurderes som meget værdifuld og kan give en markant lydforbedring.",
-     "simpleTitle": "Dirac Live forbedrer rumtilpasningen markant",
+    "ample power for multichannel systems": {
+     "sentimentAnalysis": "Receiveren vurderes som kraftig nok til at bevare en stærk lyd med mange tilsluttede højttalere og krævende actionfilm.",
+     "simpleTitle": "Rigeligt med effekt til multikanalsystemer",
      "bias": "positive",
-     "key": "room-calibration",
-     "groupId": "87b3cde9-5f27-4422-8eeb-3fe7c3943f43"
+     "key": "power",
+     "groupId": "e1e3e43d-2ec8-478f-9b65-a61bf40a51d4"
     },
-    "the app is unreliable": {
-     "sentimentAnalysis": "Problemer med Android-appens reaktionsevne forringer den ellers gode brugeroplevelse.",
-     "simpleTitle": "Appen er ustabil",
+    "app reliability issues": {
+     "sentimentAnalysis": "Appen kritiseres for hyppige problemer med at reagere, hvilket forringer oplevelsen af den eksklusive receiver.",
+     "simpleTitle": "Problemer med appens stabilitet",
      "bias": "negative",
      "key": "app",
-     "groupId": "9036eff1-50d7-48fa-8648-6b4f3334dc53"
+     "groupId": "cbe09ac0-92fd-4620-b75c-3f5f7ce09b5f"
     }
    },
    "grouping": {
-    "679f3383-d409-4054-9d84-a55fb4e47da5": {
+    "8ff96826-5629-431a-badb-4527084bdcac": {
      "title": "Lydkvalitet",
-     "id": "679f3383-d409-4054-9d84-a55fb4e47da5",
+     "id": "8ff96826-5629-431a-badb-4527084bdcac",
      "references": [
       "b5f55797-ecfd-43e0-bf95-b4eea8a44ce4",
       "b1ccb1fb-da90-43cf-b272-5e70da8f5101",
@@ -709,37 +733,28 @@
       "ae3c987c-56e2-4817-b477-01c296855b11"
      ]
     },
-    "ff23d8e3-2928-424b-9833-e97ca4ca6760": {
+    "e3bd6747-be8d-4f5b-b6c0-10f0295f6898": {
      "title": "Design og byggekvalitet",
-     "id": "ff23d8e3-2928-424b-9833-e97ca4ca6760",
+     "id": "e3bd6747-be8d-4f5b-b6c0-10f0295f6898",
      "references": [
       "b5f55797-ecfd-43e0-bf95-b4eea8a44ce4",
       "dc8ab864-ff43-4d45-ad23-9732876b2d31",
       "c90872cf-5d5b-438e-9ce5-a8ff66eb5e96",
-      "03698cde-a013-44aa-b97c-8d1514a81317",
-      "8dcbee3b-9ec4-48f7-a9c1-888b299fc4cf"
+      "03698cde-a013-44aa-b97c-8d1514a81317"
      ]
     },
-    "f569896e-30c5-40d1-b68d-730e9a41fba2": {
+    "e1e3e43d-2ec8-478f-9b65-a61bf40a51d4": {
      "title": "Effekt",
-     "id": "f569896e-30c5-40d1-b68d-730e9a41fba2",
+     "id": "e1e3e43d-2ec8-478f-9b65-a61bf40a51d4",
      "references": [
       "324ea745-2b7f-4965-afd3-827ce25dee1a",
       "dc8ab864-ff43-4d45-ad23-9732876b2d31",
       "ae3c987c-56e2-4817-b477-01c296855b11"
      ]
     },
-    "87b3cde9-5f27-4422-8eeb-3fe7c3943f43": {
-     "title": "Rumkorrektion",
-     "id": "87b3cde9-5f27-4422-8eeb-3fe7c3943f43",
-     "references": [
-      "f39e8004-d722-4ce7-a2dd-44464dbb4113",
-      "c90872cf-5d5b-438e-9ce5-a8ff66eb5e96"
-     ]
-    },
-    "9036eff1-50d7-48fa-8648-6b4f3334dc53": {
+    "cbe09ac0-92fd-4620-b75c-3f5f7ce09b5f": {
      "title": "App",
-     "id": "9036eff1-50d7-48fa-8648-6b4f3334dc53",
+     "id": "cbe09ac0-92fd-4620-b75c-3f5f7ce09b5f",
      "references": [
       "487afb2c-ef96-4f13-bf79-c89dbd10e8dd",
       "8dcbee3b-9ec4-48f7-a9c1-888b299fc4cf"

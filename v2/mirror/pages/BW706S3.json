@@ -13,6 +13,15 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e662403e-add5-4726-81c4-c9adb3c8a2b1",
+   "6c149671-df76-406b-b8b2-1ea3c67061ab",
+   "437778d7-8cf2-4a7b-87e1-458f55ebc20b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190132,
   "skuCode": "BW706S3",
@@ -198,7 +207,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 40,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -297,7 +306,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 4,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -466,68 +475,73 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BW706S3 leverer en klar, detaljeret og engagerende lyd fra et kompakt kabinet, især med stærk gengivelse af vokaler, tydelig diskant og overbevisende stereoperspektiv. Bassen opleves generelt som kontrolleret og tilfredsstillende, men flere lyttere anbefaler en subwoofer for mere dybde eller krævende musik. Korrekt forstærkning, placering og tilspilning kan forbedre den varme, rummelige og punchy gengivelse yderligere, hvilket gør højttalerne til et stærkt premiumvalg.",
+   "summary": "BW706S3 leverer en usædvanligt klar, detaljeret og velafbalanceret lyd fra et kompakt kabinet med tydelige vokaler, omsluttende stereoperspektiv og stærk gengivelse af både musik og film. Højttalerne bliver rundere og mere naturlige efter tilspilning, og en kraftig forstærker hjælper dem med at yde deres bedste. Bassen er generelt ren og kontrolleret, men flere lyttere ønsker en subwoofer for mere dybde og punch, især ved højere lydstyrke eller krævende musik.",
    "headlines": {
-    "a subwoofer adds deeper impact": {
-     "sentimentAnalysis": "Flere lyttere finder højttalerne tilfredsstillende alene, men beskriver en subwoofer som en effektiv opgradering til dybere, fyldigere bas og krævende musik.",
-     "simpleTitle": "En subwoofer giver mere dybde",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, præcise, detaljerede og rummelige gengivelse med særligt tydelig vokal og instrumenter.",
+     "simpleTitle": "Klar, detaljeret og omsluttende lyd",
      "bias": "positive",
-     "key": "bass",
-     "groupId": "9d9f71fd-74a5-4903-b555-3ee2c3b4b1bc"
+     "key": "sound-detail",
+     "groupId": "96030609-5185-4f69-9cd5-d6674269f1b7"
     },
-    "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Lytterne roser de præcise detaljer, klarheden og det overbevisende lydbillede, især fra så kompakt et design.",
-     "simpleTitle": "Klar, detaljeret og rummelig lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "d3d141d7-042e-41f8-8c22-3984dc43a0f7"
-    },
-    "vocal and treble clarity": {
-     "sentimentAnalysis": "Tydelige vokaler, ren diskant og evnen til at gengive fine optagedetaljer nævnes gentagne gange som styrker.",
-     "simpleTitle": "Klar vokal og diskant",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "d3d141d7-042e-41f8-8c22-3984dc43a0f7"
-    },
-    "bass improves with running-in": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver, at gengivelsen bliver glattere og bassen fyldigere efter en indledende tilspilning.",
-     "simpleTitle": "Bassen forbedres under tilspilning",
-     "bias": "positive",
-     "key": "breakin",
-     "groupId": "57987e83-289f-4dec-91a6-b4014e6ea15b"
-    },
-    "some listeners find the treble too sharp and bass limited": {
-     "sentimentAnalysis": "Et mindretal beskriver en for skarp gengivelse og for lidt basvægt, især ved krævende musik eller sammenligning med større højttalere.",
-     "simpleTitle": "Nogle lyttere oplever for skarp diskant og begrænset bas",
+    "deep bass often benefits from a subwoofer": {
+     "sentimentAnalysis": "Flere anmeldelser synes, at bassen er for lidt dyb, tør eller tilbageholdende, og anbefaler en subwoofer for mere fylde i bunden.",
+     "simpleTitle": "Dyb bas får ofte hjælp af en subwoofer",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "d3d141d7-042e-41f8-8c22-3984dc43a0f7"
+     "key": "subwoofer-depth",
+     "groupId": "c7f1b4b8-64d6-41af-9bab-dfb90395722b"
+    },
+    "balanced, full-range sound without a mandatory subwoofer": {
+     "sentimentAnalysis": "Andre anmeldelser beskriver bassen som god, fyldig og tilstrækkelig alene, især i mindre rum eller ved moderate lydstyrker.",
+     "simpleTitle": "Balanceret fuldtonelyd uden nødvendig subwoofer",
+     "bias": "positive",
+     "key": "full-range-bass",
+     "groupId": "c7f1b4b8-64d6-41af-9bab-dfb90395722b"
+    },
+    "sound improves and bass opens up after run-in": {
+     "sentimentAnalysis": "Flere lyttere oplever, at højttalerne bliver mere naturlige efter timers eller ugers brug, især når bassen bliver rundere.",
+     "simpleTitle": "Lyden forbedres efter tilspilning",
+     "bias": "positive",
+     "key": "run-in-improvement",
+     "groupId": "a2edb991-68f3-4f75-92a8-720abbaf6610"
+    },
+    "compact and attractive design": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter de kompakte mål, det flotte udseende og egnetheden til mindre rum.",
+     "simpleTitle": "Kompakt og flot design",
+     "bias": "positive",
+     "key": "compact-design",
+     "groupId": "80b3295a-999d-44db-a100-19837f7ddb2f"
     }
    },
    "grouping": {
-    "d3d141d7-042e-41f8-8c22-3984dc43a0f7": {
+    "96030609-5185-4f69-9cd5-d6674269f1b7": {
      "title": "Lydkvalitet",
-     "id": "d3d141d7-042e-41f8-8c22-3984dc43a0f7",
+     "id": "96030609-5185-4f69-9cd5-d6674269f1b7",
      "references": [
       "43ad465f-5bdb-4ec9-9cdf-f759159b3ef9",
+      "c0ab1cea-5dcc-4a7d-8b8a-8410d4ebbfb5",
       "50c79847-f9b1-41f1-a68b-7ea5a395a4a4",
+      "9b8715c8-074b-4140-8059-754ec2a1ea38",
       "01181802-9154-456c-8a91-06ec32ef5603",
       "364804af-36c3-4849-aad7-258f0fbfee15",
+      "6a54f70f-cfcb-44d1-93c4-248cc7339c01",
       "fac79c1d-bf80-4f05-958f-8f5057f2f9a6",
       "1d140e78-7e31-4e27-ba96-2183cbd88b87",
       "0686dd96-c928-4103-9506-1c6c338643d5",
+      "c2ee6d69-9c64-4d36-8d32-8ed24db37891",
       "5ed3d874-35bc-4ef6-aaec-5129a71db2db",
-      "a2d4f6ad-4efd-4304-a9c8-66757e512013",
       "f78dd3a6-21d6-4d2c-a600-42fa6088cbad",
       "f283aeea-4682-4f46-9616-2b1f4a64ea17",
       "a3a93a09-ea05-4c3c-b4da-6dcdcd4be81b",
       "7456f7fb-c62f-45f6-98eb-bd9ea2ed9c9e",
       "5895d581-a6ff-43a3-b888-82242e7505f4",
       "e76bfbf6-a41f-4cd6-918f-9230f4a8eead",
+      "c9afdf4e-7cad-4524-b133-d42b749aa19c",
       "17dead79-7edb-4ee6-97af-58f6835cb2e9",
       "093a2d99-3f95-4d79-986e-c2f8b40055f1",
-      "5bdd63a9-79bd-43df-a010-05c261851ab4",
+      "a1bd28e5-15c6-4ae9-a161-fb4fc8528ff1",
       "2a23e7c1-b74e-4d3a-a013-da5e5c249d91",
+      "2d3a9b5b-fdca-4e30-bc2c-88d1d3472eb0",
       "67d5f3f5-e1ff-4b63-8aca-82f790ab085b",
       "dddc52c0-16b5-4644-82f2-6161e01f07be",
       "91211a5e-d63a-4ece-9796-feeee8810dac",
@@ -546,19 +560,23 @@
       "d7d70692-a567-496f-b643-d05ca2a13ae2"
      ]
     },
-    "9d9f71fd-74a5-4903-b555-3ee2c3b4b1bc": {
+    "c7f1b4b8-64d6-41af-9bab-dfb90395722b": {
      "title": "Bas og subwoofer",
-     "id": "9d9f71fd-74a5-4903-b555-3ee2c3b4b1bc",
+     "id": "c7f1b4b8-64d6-41af-9bab-dfb90395722b",
      "references": [
+      "43ad465f-5bdb-4ec9-9cdf-f759159b3ef9",
       "9b8715c8-074b-4140-8059-754ec2a1ea38",
+      "fac79c1d-bf80-4f05-958f-8f5057f2f9a6",
       "0686dd96-c928-4103-9506-1c6c338643d5",
       "a2d4f6ad-4efd-4304-a9c8-66757e512013",
+      "f78dd3a6-21d6-4d2c-a600-42fa6088cbad",
       "a3a93a09-ea05-4c3c-b4da-6dcdcd4be81b",
       "41caa4f7-2fca-4ccf-b070-bf7935202d38",
       "5895d581-a6ff-43a3-b888-82242e7505f4",
       "17dead79-7edb-4ee6-97af-58f6835cb2e9",
       "093a2d99-3f95-4d79-986e-c2f8b40055f1",
       "5bdd63a9-79bd-43df-a010-05c261851ab4",
+      "dddc52c0-16b5-4644-82f2-6161e01f07be",
       "91211a5e-d63a-4ece-9796-feeee8810dac",
       "054b1477-aace-44fb-b20a-225e3c2dbbb1",
       "8029f1ac-40a1-4a24-8e4a-16fe7ac8ca20",
@@ -567,9 +585,25 @@
       "71804c6b-5a78-4e30-86d8-ea696748b169"
      ]
     },
-    "57987e83-289f-4dec-91a6-b4014e6ea15b": {
-     "title": "Tilspilning og opsætning",
-     "id": "57987e83-289f-4dec-91a6-b4014e6ea15b",
+    "80b3295a-999d-44db-a100-19837f7ddb2f": {
+     "title": "Design og størrelse",
+     "id": "80b3295a-999d-44db-a100-19837f7ddb2f",
+     "references": [
+      "50c79847-f9b1-41f1-a68b-7ea5a395a4a4",
+      "70ea9400-7f08-4a50-9026-42392b69ebc0",
+      "3ff2134d-6f13-4cea-8ef2-cc4b716f4e88",
+      "7456f7fb-c62f-45f6-98eb-bd9ea2ed9c9e",
+      "a1bd28e5-15c6-4ae9-a161-fb4fc8528ff1",
+      "bb76991c-969b-4ac5-887b-7e8d08dd8a6a",
+      "8029f1ac-40a1-4a24-8e4a-16fe7ac8ca20",
+      "e7399de6-8369-45d4-9904-d7c6d1a24611",
+      "89caab1c-1e65-49b4-95eb-8c96d801493a",
+      "2583d313-501b-4f13-9e28-e3d840baff58"
+     ]
+    },
+    "a2edb991-68f3-4f75-92a8-720abbaf6610": {
+     "title": "Tilspilning",
+     "id": "a2edb991-68f3-4f75-92a8-720abbaf6610",
      "references": [
       "c0ab1cea-5dcc-4a7d-8b8a-8410d4ebbfb5",
       "30bde8b7-f325-4ef6-ad16-250984a056f6",

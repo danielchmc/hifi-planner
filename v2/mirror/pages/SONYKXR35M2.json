@@ -13,6 +13,32 @@
    "url": "/tv/tv/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.3",
+   "Total HDMI Inputs": "4x",
+   "HDMI": "2.1",
+   "Antal HDMI 2.1 Indgange": "4x",
+   "HDMI 2.1 porte": "1, 2, 3, 4",
+   "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+   "HDMI ARC/eARC": "eARC",
+   "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+   "Fra beskrivelsen": "HDMI 2.1 funktioner: Auto Game Mode, HFR, Variable Refresh Rate · 4 x HDMI-indgange"
+  },
+  "gallery": [
+   "bc1063fe-3f2d-4603-b12d-1bfe11866c50",
+   "9e12ea87-70d8-4c3c-9560-3251672a92e3",
+   "248a958e-e569-48ec-b39d-d6c65766eeaf",
+   "fbed2d33-47b4-466e-8f0f-c5dfad662ce4",
+   "092d6d7f-5719-4360-92fc-bb04a2bff9d4",
+   "964d4b10-b415-4d93-96ad-141bf11b314d",
+   "cfed02b7-70c2-4ef2-96d8-79abd65596f7",
+   "0a171ed3-7061-4f39-a976-8a98fc5fdace",
+   "0e9c7c92-05d1-4bac-9604-861c4397e62b"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 285171,
   "skuCode": "SONYKXR35M2",
@@ -320,11 +346,11 @@
      "productCode": "SONYK43XR35M2"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 22. november",
-     "deliveryDate": "2026-11-22T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -932,7 +958,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 10,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -979,7 +1005,6 @@
     },
     "url": "/sony-bravia-3-mii-lcd-tv/sonyk55xr35m2/",
     "canonicalUrl": "/sony-bravia-3-mii-lcd-tv/sonyk55xr35m2/",
-    "lowestShippingPriceRaw": 149,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -1222,7 +1247,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 5,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1269,7 +1294,6 @@
     },
     "url": "/sony-bravia-3-mii-lcd-tv/sonyk65xr35m2/",
     "canonicalUrl": "/sony-bravia-3-mii-lcd-tv/sonyk65xr35m2/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -1516,7 +1540,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1563,7 +1587,6 @@
     },
     "url": "/sony-bravia-3-mii-lcd-tv/sonyk75xr35m2/",
     "canonicalUrl": "/sony-bravia-3-mii-lcd-tv/sonyk75xr35m2/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -1837,7 +1860,6 @@
     },
     "url": "/sony-bravia-3-mii-lcd-tv/sonyk85xr35m2/",
     "canonicalUrl": "/sony-bravia-3-mii-lcd-tv/sonyk85xr35m2/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -2112,11 +2134,11 @@
      "productCode": "SONYK100XR35M2"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 21. november",
-     "deliveryDate": "2026-11-21T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -2162,7 +2184,6 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk100xr35m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk100xr35m2/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",

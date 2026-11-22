@@ -13,6 +13,32 @@
    "url": "/tv/tv/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.3",
+   "Total HDMI Inputs": "4x",
+   "HDMI": "2.1",
+   "Antal HDMI 2.1 Indgange": "2x",
+   "HDMI 2.1 porte": "3, 4",
+   "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+   "HDMI ARC/eARC": "eARC (Port 3)",
+   "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+   "Fra beskrivelsen": "4 HDMI-indgange · HDMI 2.1-funktioner på HDMI 3/4: 4K/120Hz, HFR, VRR og Auto Game Mode · HDMI eARC"
+  },
+  "gallery": [
+   "b21e2a70-400a-4f1e-9f29-7f9cc9353500",
+   "99f5d4da-879c-4df2-bccc-a2ee7184780c",
+   "472f9e58-e89d-4264-a8ec-a429d9ccc69d",
+   "4f699cec-3b14-4291-b17a-1e7228d58b69",
+   "1bfdbb6b-54d6-411b-a8bd-c4a5621f862a",
+   "8402740a-b9df-4236-859c-7986b5cb2488",
+   "9aaa7fe0-5636-410b-9e08-c3c71a8b0511",
+   "4debdf10-44a1-4644-a7ca-e5985121751f",
+   "f55c964f-f5b1-4353-ad83-74bdc2401999"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 285170,
   "skuCode": "SONYKXR95M2",
@@ -358,7 +384,6 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk115xr95m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk115xr95m2/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -667,7 +692,6 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk65xr95m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk65xr95m2/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -985,7 +1009,6 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk75xr95m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk75xr95m2/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -1302,7 +1325,6 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk85xr95m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk85xr95m2/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -1366,38 +1388,29 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony Bravia 9 leverer en enestående billedkvalitet med levende, men naturlige farver, høj 4K-lysstyrke, imponerende kontrast og fremragende blooming-håndtering. Skærmen fungerer især godt i lyse rum, hvor refleksioner næsten ikke er synlige, og detaljer forbliver tydelige. Samlet set føles fjernsynet eksklusivt og kan varmt anbefales, med enkelte mindre problemer omkring den matte belægning og judder.",
+   "summary": "Sony Bravia 9 leverer en spektakulær og naturligt udseende billedkvalitet med levende farver, høj lysstyrke og fremragende ydeevne i lyse rum. Billedet føles fyldigt, detaljerigt og medrivende, mens TV'et også byder på imponerende indbygget lyd. Mindre forbehold omfatter en mat skærm, der kræver tilvænning, en sart antirefleksbelægning og lejlighedsvis hakken ved kamerabevægelser.",
    "headlines": {
-    "vivid, natural colours and superb picture quality": {
-     "sentimentAnalysis": "Anmelderne roser de levende, mættede og naturligt udseende farver samt den fremragende billedkvalitet, herunder den høje 4K-lysstyrke og effektive blooming-håndtering.",
+    "vivid, natural colors and outstanding image quality": {
+     "sentimentAnalysis": "Anmeldelserne roser de levende, mættede og samtidig naturlige farver, den stærke 4K-lysstyrke, de fremragende detaljer og den enestående samlede billedkvalitet.",
      "simpleTitle": "Levende, naturlige farver og fremragende billedkvalitet",
      "bias": "positive",
-     "key": "picture-quality",
-     "groupId": "f7971d7d-573a-4ef6-a7f5-1d8c6330b1bf"
+     "key": "picture_quality",
+     "groupId": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e"
     },
-    "excellent choice for bright rooms": {
-     "sentimentAnalysis": "Fjernsynet vurderes som særligt velegnet til lyse stuer, fordi refleksioner næsten er fraværende, og kontrast og detaljer bevares i dagslys.",
-     "simpleTitle": "Fremragende valg til lyse rum",
+    "excellent for bright rooms with minimal reflections": {
+     "sentimentAnalysis": "TV'et egner sig især til lyse stuer, hvor kontrast og detaljer bevares, mens refleksioner næsten forsvinder.",
+     "simpleTitle": "Fremragende til lyse rum med minimale refleksioner",
      "bias": "positive",
-     "key": "bright-room-performance",
-     "groupId": "7531d1ef-1ab0-42e9-bcda-595294a0241a"
+     "key": "picture_quality",
+     "groupId": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e"
     }
    },
    "grouping": {
-    "f7971d7d-573a-4ef6-a7f5-1d8c6330b1bf": {
+    "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e": {
      "title": "Billedkvalitet",
-     "id": "f7971d7d-573a-4ef6-a7f5-1d8c6330b1bf",
+     "id": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e",
      "references": [
       "60d35c46-aea3-40cd-990c-7622568a9301",
-      "9eafade7-b8c0-43b8-a201-0bb5cf887aed",
-      "de6fe5be-a07e-4868-a277-2caa129bfd7d",
-      "30c246d3-974d-43a0-aeeb-0570db75d9b5"
-     ]
-    },
-    "7531d1ef-1ab0-42e9-bcda-595294a0241a": {
-     "title": "Ydeevne i lyse rum",
-     "id": "7531d1ef-1ab0-42e9-bcda-595294a0241a",
-     "references": [
       "9eafade7-b8c0-43b8-a201-0bb5cf887aed",
       "de6fe5be-a07e-4868-a277-2caa129bfd7d",
       "ccc3e148-9e24-4474-a0bc-0a03873191f6",

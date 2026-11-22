@@ -13,6 +13,18 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Analog RCA, Analog XLR, LFE",
+   "Indgang (andet)": "RS-232, 12V trigger",
+   "Fra beskrivelsen": "Linjeindgange : 2 x RCA, 2 x XLR · 1 sæt personlige grundindstillinger for hhv. RCA- og XLR-indgange · 2 x 12V trigger (minijack) · RS-232 indgang"
+  },
+  "gallery": [
+   "4a85e317-7da6-44da-a000-f5eda1fc7a61",
+   "b99eab7c-be43-4504-957c-716e9289a48c"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 61669,
   "skuCode": "BWDB3",
@@ -214,40 +226,49 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BWDB3 er en kompakt, men kraftfuld subwoofer, der tilfører et hi-fi-anlæg dyb, ren og slagkraftig bas. Bassen integreres stramt og afbalanceret, så musikken bliver fyldigere og mere komplet uden at tage fokus fra hovedhøjttalerne. Resultatet er en medrivende high-end-opgradering, der passer fremragende til Bowers & Wilkins-systemer.",
+   "summary": "BWDB3 er en kompakt high-end-subwoofer, som leverer dyb, ren og kraftfuld bas og får kompatible Bowers & Wilkins-anlæg til at lyde fyldigere, mere afbalancerede og komplette. Den diskrete integration med hovedhøjttalerne roses især til musik. Den samlede vurdering er meget begejstret og understøttes af fremragende service og hurtig kundesupport.",
    "headlines": {
     "deep, clean and powerful bass": {
-     "sentimentAnalysis": "Anmeldelserne roser gennemgående den dybe, rene, meget dybe og kraftfulde basgengivelse.",
+     "sentimentAnalysis": "Subwooferen roses for meget dyb, ren, kraftfuld og kontrolleret basgengivelse.",
      "simpleTitle": "Dyb, ren og kraftfuld bas",
      "bias": "positive",
-     "key": "deep_bass",
-     "groupId": "54def6ff-2913-42c1-898b-6e19013496fb"
+     "key": "deep-clean-powerful-bass",
+     "groupId": "68d7ef64-01f4-4b9f-99bc-407046787301"
     },
-    "tight, balanced integration": {
-     "sentimentAnalysis": "Subwooferen beskrives som naturligt integreret med hovedhøjttalerne, hvor den tilfører fylde og gør anlægget mere komplet uden at virke påtrængende.",
-     "simpleTitle": "Stram og afbalanceret integration",
+    "makes the system fuller and more complete": {
+     "sentimentAnalysis": "Subwooferen ses som en stærk tilføjelse, der løfter hele anlægget og fuldender lyden.",
+     "simpleTitle": "Gør anlægget fyldigere og mere komplet",
      "bias": "positive",
-     "key": "balanced_integration",
-     "groupId": "54def6ff-2913-42c1-898b-6e19013496fb"
+     "key": "fuller-complete-system",
+     "groupId": "bb4a728b-4b67-48d3-87e0-124c5ae95b9c"
     },
-    "compact design with substantial output": {
-     "sentimentAnalysis": "Det kompakte kabinet roses for at levere tilstrækkelig ydelse til et komplet hi-fi-anlæg.",
-     "simpleTitle": "Kompakt design med stor ydelse",
+    "seamless match with the main speakers": {
+     "sentimentAnalysis": "BWDB3 roses for at passe til eksisterende Bowers & Wilkins-højttalere og tilføre fylde uden at gøre opmærksom på sig selv.",
+     "simpleTitle": "Passer sømløst til hovedhøjttalerne",
      "bias": "positive",
-     "key": "compact_output",
-     "groupId": "54def6ff-2913-42c1-898b-6e19013496fb"
+     "key": "seamless-speaker-match",
+     "groupId": "bb4a728b-4b67-48d3-87e0-124c5ae95b9c"
     }
    },
    "grouping": {
-    "54def6ff-2913-42c1-898b-6e19013496fb": {
-     "title": "Lydkvalitet",
-     "id": "54def6ff-2913-42c1-898b-6e19013496fb",
+    "68d7ef64-01f4-4b9f-99bc-407046787301": {
+     "title": "Basgengivelse",
+     "id": "68d7ef64-01f4-4b9f-99bc-407046787301",
      "references": [
       "80e44137-a45e-4aa6-b62c-797aa77b7234",
       "d4624bd8-ce59-4857-8733-f6214bdf56de",
       "d0696a5f-50d9-4716-8791-adbe048ac514",
       "6e974a68-ea3b-4d29-b347-656b890be7a6",
       "ba92f418-e82c-4c04-aee4-291e5bac3ebe"
+     ]
+    },
+    "bb4a728b-4b67-48d3-87e0-124c5ae95b9c": {
+     "title": "Integration i anlægget",
+     "id": "bb4a728b-4b67-48d3-87e0-124c5ae95b9c",
+     "references": [
+      "80e44137-a45e-4aa6-b62c-797aa77b7234",
+      "d4624bd8-ce59-4857-8733-f6214bdf56de",
+      "d0696a5f-50d9-4716-8791-adbe048ac514"
      ]
     }
    },

@@ -13,6 +13,18 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( SBC, AAC, LDAC )"
+  },
+  "gallery": [
+   "fbcaa9e8-e7d4-4424-87e7-46da1ea49eb5",
+   "1fbbe21f-544f-4f29-807a-3d412e263335",
+   "5741ef74-d03a-4b55-b834-dc1f7a11b075",
+   "c99af670-7692-4929-b928-3e1cffce1788"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 285681,
   "skuCode": "WAV4PRO",
@@ -218,8 +230,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 104,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 88,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -284,65 +296,64 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "WAV4PRO leverer en varm, fyldig og kraftfuld lyd i en velfungerende og brugervenlig løsning. Den behagelige pasform, pålidelige funktion og hurtige service øger appellen, mens gummidutter, vindstøj og forstyrrelser kan begrænse fornøjelsen i visse situationer. Samlet set føles WAV4PRO som et fremragende køb med omsluttende lyd og stærk anvendelighed i hverdagen.",
+   "summary": "WAV4PRO leverer en varm, fyldig og behagelig lyd med pålidelig ydeevne. Den komfortable pasform og enkle opsætning roses, mens komforten ved øredutterne samt vind- eller værktøjsrelaterede forstyrrelser kan begrænse længere lyttesessioner. Hurtig og pålidelig service gør WAV4PRO til et attraktivt valg med god værdi for pengene.",
    "headlines": {
-    "warm and full sound": {
-     "sentimentAnalysis": "Lyden roses som god, fyldig og rig og giver en god lytteoplevelse.",
-     "simpleTitle": "Varm og fyldig lyd",
+    "full, enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses som god, fyldig og behagelig.",
+     "simpleTitle": "Fyldig og behagelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "05120824-fb51-4d55-a80d-3e3787ca3416"
+     "key": "sound-quality",
+     "groupId": "fed759fc-9521-446f-a71f-339e1b917c8e"
     },
-    "reliable everyday operation": {
-     "sentimentAnalysis": "Produktet fungerer ifølge anmeldelserne som forventet og pålideligt fra begyndelsen.",
-     "simpleTitle": "Pålidelig funktion i hverdagen",
-     "bias": "positive",
-     "key": "functionality",
-     "groupId": "6d924710-84d9-4d21-be22-74988af6cc7f"
-    },
-    "fast and helpful service": {
-     "sentimentAnalysis": "Servicen beskrives positivt, især på grund af hurtighed og den overordnede kvalitet.",
-     "simpleTitle": "Hurtig og god service",
+    "fast, reliable service": {
+     "sentimentAnalysis": "Servicen beskrives som hurtig, pålidelig og fremragende.",
+     "simpleTitle": "Hurtig og pålidelig service",
      "bias": "positive",
      "key": "service",
-     "groupId": "7a9164d0-1ed6-4c7a-986b-2e9947ba02d2"
+     "groupId": "f67f39e2-ba36-47b7-8be4-b3bcf5ad8a83"
+    },
+    "works reliably from the start": {
+     "sentimentAnalysis": "Produktet fungerer ifølge anmeldelserne som forventet og pålideligt fra starten.",
+     "simpleTitle": "Fungerer pålideligt fra starten",
+     "bias": "positive",
+     "key": "reliability",
+     "groupId": "87b88116-3db5-45f2-b3b6-edf57cab9c1c"
     }
    },
    "grouping": {
-    "6d924710-84d9-4d21-be22-74988af6cc7f": {
-     "title": "Funktionalitet",
-     "id": "6d924710-84d9-4d21-be22-74988af6cc7f",
-     "references": [
-      "92b0c125-a48d-4b7c-b1ac-5efd77c7eead",
-      "def8a2a3-d391-4e0f-879d-cf3a094c15cb",
-      "60a3cc73-5222-4535-889e-18e9c0b2b5cc"
-     ]
-    },
-    "05120824-fb51-4d55-a80d-3e3787ca3416": {
+    "fed759fc-9521-446f-a71f-339e1b917c8e": {
      "title": "Lydkvalitet",
-     "id": "05120824-fb51-4d55-a80d-3e3787ca3416",
+     "id": "fed759fc-9521-446f-a71f-339e1b917c8e",
      "references": [
       "b1a1e6b8-6f1c-4277-a36e-9f7e7661ab68",
       "b97ec164-71fd-45ba-9c6e-f58bd3dc3469"
      ]
     },
-    "7a9164d0-1ed6-4c7a-986b-2e9947ba02d2": {
+    "f67f39e2-ba36-47b7-8be4-b3bcf5ad8a83": {
      "title": "Service",
-     "id": "7a9164d0-1ed6-4c7a-986b-2e9947ba02d2",
+     "id": "f67f39e2-ba36-47b7-8be4-b3bcf5ad8a83",
      "references": [
       "82c7574c-2078-49d3-a598-26ca74abaf18",
       "8f88189d-efe3-46f9-ab78-cfa5dd12a41f"
      ]
+    },
+    "87b88116-3db5-45f2-b3b6-edf57cab9c1c": {
+     "title": "Driftsikkerhed",
+     "id": "87b88116-3db5-45f2-b3b6-edf57cab9c1c",
+     "references": [
+      "92b0c125-a48d-4b7c-b1ac-5efd77c7eead",
+      "60a3cc73-5222-4535-889e-18e9c0b2b5cc"
+     ]
     }
    },
-   "rating": 4.72222222222222,
-   "count": 18,
+   "rating": 4.68421052631579,
+   "count": 19,
    "reviewCount": 7,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
-    "4": 1,
+    "4": 2,
     "5": 15
    }
   },

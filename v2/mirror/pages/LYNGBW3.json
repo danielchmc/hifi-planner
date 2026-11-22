@@ -13,6 +13,18 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Analog RCA, LFE",
+   "Fra beskrivelsen": "Linjeindgange : LFE R/L, analog mono (RCA)"
+  },
+  "gallery": [
+   "3dd32af3-a3b2-4f2b-ba29-5c74bc57a355",
+   "17b2f23a-4c07-4143-8b7c-9aa5f04881b6",
+   "d870f51f-032b-40e7-a760-ea693ceacd28"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 124321,
   "skuCode": "LYNGBW3",
@@ -22,11 +34,11 @@
    "productCodes": [
     "DALIPHANTOMK60LP",
     "BLSN331",
-    "LYNGBW3GRILL",
     "LYNGTDAI1120",
     "LYNGTDAI2210",
     "LYNGMH3",
-    "LYNGTDAI3400"
+    "LYNGTDAI3400",
+    "LYNGBW3GRILL"
    ],
    "isOutlet": "false"
   },
@@ -318,28 +330,36 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGBW3 leverer imponerende dyb, stram og præcis bas fra et kompakt kabinet og tilfører både musik og hjemmebio en klar og veldefineret bund. Det lille format gør placering og diskret indpasning nemt, samtidig med at lyden er kraftfuld, detaljeret og omsluttende. Den samlede tilfredshed er meget høj, især for lyttere med begrænset plads og behov for markant bas.",
+   "summary": "LYNGDW3 leverer varm, slagkraftig og præcis bas med imponerende dybde og detaljering i så kompakt et kabinet. Den medrivende basgengivelse egner sig både til musik og film, mens den diskrete størrelse gør placeringen nem. Den gode integration i surroundsystemer og den stærke ydelse i forhold til kabinetstørrelsen gør subwooferen til et meget tilfredsstillende valg.",
    "headlines": {
-    "deep, tight and precise bass": {
-     "sentimentAnalysis": "Subwooferen roses for at levere kontrollerede, detaljerede og kraftfulde lave frekvenser, der fungerer godt til både musik og film.",
-     "simpleTitle": "Dyb, stram og præcis bas",
+    "tight, deep and detailed bass": {
+     "sentimentAnalysis": "Anmeldelserne roser bassen som klar, solid, stram, dyb og meget detaljeret.",
+     "simpleTitle": "Stram, dyb og detaljeret bas",
      "bias": "positive",
-     "key": "deep_tight_bass",
-     "groupId": "3e0bdf18-b409-4c3d-944b-c0b689b2d4d7"
+     "key": "tight-deep-bass",
+     "groupId": "902e2282-88f7-4ba4-982c-6fd7b4d3eb00"
     },
-    "remarkable output from a compact cabinet": {
-     "sentimentAnalysis": "Det kompakte kabinet forbindes gentagne gange med overraskende kraftig bas og nem placering i mindre rum.",
-     "simpleTitle": "Imponerende lyd fra et kompakt kabinet",
+    "impressive output from a compact cabinet": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den usædvanligt fyldige og kraftfulde lyd i forhold til subwooferens lille størrelse.",
+     "simpleTitle": "Imponerende ydelse fra et kompakt kabinet",
      "bias": "positive",
-     "key": "compact_output",
-     "groupId": "3f29b6b7-4bcf-40fc-89a2-e26068e2ff50"
+     "key": "compact-output",
+     "groupId": "10936bff-785c-4d9a-8c32-f78612708320"
+    },
+    "easy to hide and place": {
+     "sentimentAnalysis": "Det kompakte kabinet opleves som diskret og velegnet til pladsbesparende placering.",
+     "simpleTitle": "Nem at skjule og placere",
+     "bias": "positive",
+     "key": "discreet-placement",
+     "groupId": "10936bff-785c-4d9a-8c32-f78612708320"
     }
    },
    "grouping": {
-    "3e0bdf18-b409-4c3d-944b-c0b689b2d4d7": {
+    "902e2282-88f7-4ba4-982c-6fd7b4d3eb00": {
      "title": "Bas og lydkvalitet",
-     "id": "3e0bdf18-b409-4c3d-944b-c0b689b2d4d7",
+     "id": "902e2282-88f7-4ba4-982c-6fd7b4d3eb00",
      "references": [
+      "e1224f07-7a65-446a-b021-c74e1d084532",
       "766905db-8f06-45e8-8041-353b67fe2e59",
       "87867f21-95ef-401a-af32-75b482451ac4",
       "997a9ddb-a3a0-4d3c-b76d-2aeb02ffa616",
@@ -347,9 +367,9 @@
       "73a786a0-60ff-463c-bdd7-324fe37d50c5"
      ]
     },
-    "3f29b6b7-4bcf-40fc-89a2-e26068e2ff50": {
+    "10936bff-785c-4d9a-8c32-f78612708320": {
      "title": "Størrelse og placering",
-     "id": "3f29b6b7-4bcf-40fc-89a2-e26068e2ff50",
+     "id": "10936bff-785c-4d9a-8c32-f78612708320",
      "references": [
       "997a9ddb-a3a0-4d3c-b76d-2aeb02ffa616",
       "3535d1fc-bfa2-427b-bccf-5e27c9deb3c8",

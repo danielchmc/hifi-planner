@@ -13,6 +13,14 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c294b33c-7073-4da6-bca9-fb2cc580a7b9",
+   "d7bd4318-7514-4972-b0a2-769f5f619f06"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 293177,
   "skuCode": "PEDHOOKMNT",
@@ -202,12 +210,11 @@
      "productCode": "PEDHOOKMNTMGR"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 27. november",
+     "deliveryDate": "2026-11-27T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -378,7 +385,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 20,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

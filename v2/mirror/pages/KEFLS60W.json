@@ -13,6 +13,30 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "LFE",
+   "Lydindgang": "HDMI, Coaxial, Optisk, Minijack/AUX",
+   "Indgang (andet)": "Ethernet, USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast",
+   "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Analog RCA, Minijack/AUX",
+   "Bluetooth type": "5",
+   "Fra beskrivelsen": "Diskant: 19 mm (3/4”) coaxial MAT aluminiumsdome (Metamaterial Absorption Technology) · Mellemtone: 4” Uni-Q coaxial med aluminiumsmembran · Lydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis"
+  },
+  "gallery": [
+   "2c4cdc2a-2f8f-42d9-9e2d-0fa74adfb96a",
+   "fd72dac8-3067-450c-b8e6-acd6fc7e4b3e",
+   "53bb963d-b1f9-48ff-ae5e-1529beca4a9e",
+   "36baf18c-d559-4e9e-b07b-1e8c397ff338",
+   "6df1cfe6-1119-4ff6-8de9-1ca17f502b11",
+   "7796bc13-32b1-41cc-aa19-79fe9b7be822",
+   "9f1592af-5389-4863-808b-6e41537c42eb",
+   "46919fae-241c-4297-b7ce-8f83a6647f3f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 221237,
   "skuCode": "KEFLS60W",
@@ -549,90 +573,100 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF LS60 Wireless leverer en varm, fyldig og yderst detaljeret lyd med et imponerende stereoperspektiv, dyb bas og fremragende dynamik. Det slanke, elegante design kombineres med nem installation, enkel betjening og stærke forbindelsesmuligheder. Begrænsede EQ-muligheder og enkelte oplevelser af en tynd bas ved lav lydstyrke er mindre ulemper, mens den samlede tilfredshed er særdeles høj.",
+   "summary": "KEF LS60 Wireless roses bredt for varm, balanceret og meget detaljeret lyd, fremragende stereoseparation, dyb bas og imponerende dynamik. Det slanke, elegante design og det praktiske streaming-økosystem øger tiltrækningen, mens opsætningen normalt er enkel, men kan blive besværlig via Wi-Fi. En tilbagevendende kritik er den begrænsede equalizer og manglende rumkorrektion, og nogle lyttere oplever bassen som lidt tynd ved lav lydstyrke eller lyden som mindre imponerende end forventet.",
    "headlines": {
-    "detailed, spacious stereo sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den brede stereoseparation, den rummelige gengivelse, klarheden, detaljegraden og dynamikken.",
-     "simpleTitle": "Detaljeret, rummelig stereolyd",
+    "warm, balanced and highly detailed sound": {
+     "sentimentAnalysis": "Lytterne beskriver samstemmende gengivelsen som varm, balanceret, klar, detaljeret og meget behagelig.",
+     "simpleTitle": "Varm, balanceret og meget detaljeret lyd",
      "bias": "positive",
-     "key": "stereo_detail",
-     "groupId": "ca5df91f-42f0-4157-b853-04f237837499"
+     "key": "sound",
+     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
     },
-    "strong, deep and balanced bass": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver bassen som fremragende, dyb og flot eller som en del af en velafbalanceret gengivelse.",
-     "simpleTitle": "Kraftig, dyb og afbalanceret bas",
+    "exceptional stereo separation and spacious dynamics": {
+     "sentimentAnalysis": "Bred stereobredde, præcis kanalstyring, dybde og dynamisk skala fremhæves gentagne gange som markante styrker.",
+     "simpleTitle": "Fremragende stereoseparation og stor dynamik",
      "bias": "positive",
-     "key": "bass_quality",
-     "groupId": "ca5df91f-42f0-4157-b853-04f237837499"
+     "key": "sound",
+     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
     },
-    "slim and attractive design": {
-     "sentimentAnalysis": "Anmeldelserne roser den slanke profil, det flotte udseende og den gode integration i indretningen.",
-     "simpleTitle": "Slankt og attraktivt design",
+    "slim, elegant design with a small footprint": {
+     "sentimentAnalysis": "Det slanke udseende og den attraktive finish roses gentagne gange for at passe diskret ind i boligen.",
+     "simpleTitle": "Slankt, elegant design med lille pladsbehov",
      "bias": "positive",
-     "key": "design_appeal",
-     "groupId": "5e58f173-1910-4111-b2a7-97336b394e6a"
+     "key": "design",
+     "groupId": "db98b8bc-81f1-4ff7-bed2-e84ec05ba446"
     },
-    "easy installation and operation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver enkel installation, nem betjening og god konnektivitet.",
-     "simpleTitle": "Nem installation og betjening",
-     "bias": "positive",
-     "key": "easy_use",
-     "groupId": "e598fe36-b63e-42be-b78d-333bbef5ccd4"
-    },
-    "limited EQ and app control": {
-     "sentimentAnalysis": "Anmeldelserne kritiserer de begrænsede equalizer-muligheder i KEF-appen og finder alternativ software mere fleksibel eller praktisk til afspilning.",
-     "simpleTitle": "Begrænset EQ- og appstyring",
+    "limited equalizer and room correction": {
+     "sentimentAnalysis": "Flere anmeldelser værdsætter appen, men kritiserer specifikt den enkle equalizer og manglen på automatisk rummåling eller -korrektion.",
+     "simpleTitle": "Begrænset equalizer og rumkorrektion",
      "bias": "negative",
-     "key": "app_eq",
-     "groupId": "e598fe36-b63e-42be-b78d-333bbef5ccd4"
+     "key": "app",
+     "groupId": "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d"
     },
-    "bass can feel thin at low volume": {
-     "sentimentAnalysis": "To anmeldelser foreslår en subwoofer, fordi bunden kan mangle ekstra energi eller virke tynd, især ved lav lydstyrke.",
-     "simpleTitle": "Bassen kan virke tynd ved lav lydstyrke",
+    "bass is powerful, but can sound lean at low volume": {
+     "sentimentAnalysis": "Bassen værdsættes generelt, men to lyttere ønsker mere energi i det dybe register eller overvejer en subwoofer.",
+     "simpleTitle": "Bassen er kraftfuld, men kan virke tynd ved lav lydstyrke",
      "bias": "negative",
-     "key": "bass_limitation",
-     "groupId": "ca5df91f-42f0-4157-b853-04f237837499"
+     "key": "sound",
+     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
+    },
+    "setup is usually easy, but Wi-Fi can be troublesome": {
+     "sentimentAnalysis": "Erfaringerne med opsætningen varierer: Én installation var nem, mens en anden havde udfald, indtil netværk og højttalertilslutning blev ændret.",
+     "simpleTitle": "Opsætningen er normalt enkel, men Wi-Fi kan give problemer",
+     "bias": "meh",
+     "key": "setup",
+     "groupId": "a22cea34-ee1a-45a0-8b2f-bad125d5cb16"
     }
    },
    "grouping": {
-    "ca5df91f-42f0-4157-b853-04f237837499": {
+    "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b": {
      "title": "Lydkvalitet",
-     "id": "ca5df91f-42f0-4157-b853-04f237837499",
+     "id": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b",
      "references": [
+      "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
       "87234972-0cb1-48be-966c-9bde8edaf743",
       "89e0b4a6-069f-4e11-b6f4-5e326528a19a",
       "e2386e27-7692-44fa-842a-e22c490f8116",
       "2f9ef60e-c61e-4cbb-9826-7c1fd5586306",
       "3006f3ab-c886-42c5-a310-1119ee8baf79",
       "ce6d5772-6d35-4e53-8bda-fd5384873f37",
+      "bb72d09b-dbed-42db-a2fe-6ec1f212f6af",
       "a03896f3-6fc7-4b93-a316-c6e88609c755",
       "84944f8d-64a2-441e-a5f8-2b19c82300af",
       "1928a48e-772f-486e-9d16-05a9fcbf6aa3",
+      "9a8cb19b-aca8-4adb-9b79-8be443206ccb",
       "abf519ca-5591-4a72-bc3e-45a5d64c2c6b",
       "f148b7f0-4650-4f05-b160-583a3683cbc4",
       "9b2e6a9b-aa01-4a21-912f-633f588d1d6f"
      ]
     },
-    "e598fe36-b63e-42be-b78d-333bbef5ccd4": {
-     "title": "Installation og betjening",
-     "id": "e598fe36-b63e-42be-b78d-333bbef5ccd4",
+    "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d": {
+     "title": "App og tilslutning",
+     "id": "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d",
      "references": [
-      "87234972-0cb1-48be-966c-9bde8edaf743",
+      "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
       "89e0b4a6-069f-4e11-b6f4-5e326528a19a",
       "3006f3ab-c886-42c5-a310-1119ee8baf79",
-      "ce6d5772-6d35-4e53-8bda-fd5384873f37",
-      "a03896f3-6fc7-4b93-a316-c6e88609c755",
-      "9a8cb19b-aca8-4adb-9b79-8be443206ccb"
+      "a03896f3-6fc7-4b93-a316-c6e88609c755"
      ]
     },
-    "5e58f173-1910-4111-b2a7-97336b394e6a": {
+    "db98b8bc-81f1-4ff7-bed2-e84ec05ba446": {
      "title": "Design",
-     "id": "5e58f173-1910-4111-b2a7-97336b394e6a",
+     "id": "db98b8bc-81f1-4ff7-bed2-e84ec05ba446",
      "references": [
       "3006f3ab-c886-42c5-a310-1119ee8baf79",
       "b930cc93-6f47-4e1f-9ad2-5389ae1c2d7f",
       "f148b7f0-4650-4f05-b160-583a3683cbc4",
-      "9b2e6a9b-aa01-4a21-912f-633f588d1d6f"
+      "9a8cb19b-aca8-4adb-9b79-8be443206ccb"
+     ]
+    },
+    "a22cea34-ee1a-45a0-8b2f-bad125d5cb16": {
+     "title": "Installation og opsætning",
+     "id": "a22cea34-ee1a-45a0-8b2f-bad125d5cb16",
+     "references": [
+      "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
+      "87234972-0cb1-48be-966c-9bde8edaf743",
+      "ce6d5772-6d35-4e53-8bda-fd5384873f37"
      ]
     }
    },

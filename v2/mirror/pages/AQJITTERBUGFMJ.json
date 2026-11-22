@@ -8,6 +8,17 @@
    "url": "/stereo/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Indgang/udgang: USB-A han/hun"
+  },
+  "gallery": [
+   "1654abd1-34c4-42e2-b3e1-a240d9164c4c",
+   "88207ad2-7f6b-4c9e-9b96-f5ca220427ba",
+   "24142d79-b8d9-4149-ac83-8439a92284e0"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 154309,
   "skuCode": "AQJITTERBUGFMJ",
@@ -106,7 +117,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 11,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -152,49 +163,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ Jitterbug FMJ giver en overbevisende opgradering af digital lyd med varmere klangkrop, finere detaljer, mere præcis timing og et mere medrivende, holografisk lydbillede. De hørbare forbedringer spænder fra subtil forfinelse til en markant åbning af lyden, samtidig med at produktet giver meget for pengene. Kompatibilitet og støjreduktion afhænger af det enkelte setup, og visse DAC- eller grafikkortforstyrrelser kan fortsat være til stede.",
+   "summary": "AQJITTERBUGFMJ roses bredt for at gøre digital lyd renere, fyldigere og mere omsluttende med varmere klangkrop, skarpere detaljer og et mere holografisk lydbillede. Forbedringerne kan omfatte livligere timing, mere naturlig rytmik og stærkere musikalsk nærvær, ofte med imponerende værdi for pengene. Resultaterne afhænger af opsætningen: Nogle systemer har stadig støj, subtile forskelle kan være svære at høre, og visse DAC'er kan være inkompatible.",
    "headlines": {
-    "a clearly audible overall improvement": {
-     "sentimentAnalysis": "Flere setups rapporterer en mærkbar forbedring, selv om én anmeldelse beskriver gevinsten som moderat snarere end spektakulær.",
-     "simpleTitle": "En tydeligt hørbar samlet forbedring",
+    "cleaner, fuller and more immersive sound": {
+     "sentimentAnalysis": "Produktet beskrives gentagne gange som en hørbar forbedring af klarhed, fylde, klangkrop og den samlede musikalske gengivelse.",
+     "simpleTitle": "Renere, fyldigere og mere omsluttende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "6c5d14fc-09e5-4a89-bac6-02530b1f5815"
+     "groupId": "858c2bcc-83e2-48bb-a8bc-0435a8ad84a9"
     },
-    "more detail, body, and spatial clarity": {
-     "sentimentAnalysis": "Jitterbug roses for at tilføre detaljer, fylde, opløsning, rumlighed og en mere holografisk gengivelse.",
-     "simpleTitle": "Mere detaljer, fylde og rumlig klarhed",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "6c5d14fc-09e5-4a89-bac6-02530b1f5815"
-    },
-    "noise and interference are not always eliminated": {
-     "sentimentAnalysis": "Anmeldelserne viser, at hørbare forstyrrelser kan forblive, især ved gaming-pc'er eller grafikkortstøj, og at der muligvis kræves flere enheder.",
-     "simpleTitle": "Støj og forstyrrelser fjernes ikke altid",
+    "interference is not consistently eliminated": {
+     "sentimentAnalysis": "Flere anmeldelser oplyser, at enheden ikke fjerner al uønsket støj, herunder interferens fra grafikkort.",
+     "simpleTitle": "Interferens fjernes ikke konsekvent",
      "bias": "negative",
-     "key": "noise-reduction",
-     "groupId": "27b36f6e-25d9-44aa-b7b4-d7b8dce5f6cd"
+     "key": "noise-interference",
+     "groupId": "8f699905-120e-4937-85cf-dbdfc5ab1468"
+    },
+    "more detail and a holographic soundstage": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver højere opløsning, flere detaljer, større rumlighed og en markant tredimensionel gengivelse.",
+     "simpleTitle": "Flere detaljer og en holografisk lydbillede",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "858c2bcc-83e2-48bb-a8bc-0435a8ad84a9"
     }
    },
    "grouping": {
-    "6c5d14fc-09e5-4a89-bac6-02530b1f5815": {
+    "858c2bcc-83e2-48bb-a8bc-0435a8ad84a9": {
      "title": "Lydkvalitet",
-     "id": "6c5d14fc-09e5-4a89-bac6-02530b1f5815",
+     "id": "858c2bcc-83e2-48bb-a8bc-0435a8ad84a9",
      "references": [
       "7bd80529-cd47-4448-9896-67ee2e9ac213",
       "6431c8ff-a1f2-46c9-a827-0f4aa2aab3ca",
       "0b37b494-3dab-4102-9034-44dcd724fbf5",
       "837685c8-6d01-4c09-963b-33d634d9fb35",
+      "d44958f1-6b42-4762-b2f0-90d7712cb5b8",
       "fcd38c0f-359c-4263-a7ce-a418f9b8ea59",
       "3e1bcba6-fb84-4ebd-8159-11572d3595ba",
-      "0db2285a-b75d-40e3-95b3-b997ae39e73a"
+      "0db2285a-b75d-40e3-95b3-b997ae39e73a",
+      "f356eb58-e400-4ae5-82f4-aa1278657391"
      ]
     },
-    "27b36f6e-25d9-44aa-b7b4-d7b8dce5f6cd": {
-     "title": "Støjreduktion",
-     "id": "27b36f6e-25d9-44aa-b7b4-d7b8dce5f6cd",
+    "8f699905-120e-4937-85cf-dbdfc5ab1468": {
+     "title": "Støj og interferens",
+     "id": "8f699905-120e-4937-85cf-dbdfc5ab1468",
      "references": [
-      "d44958f1-6b42-4762-b2f0-90d7712cb5b8",
       "1e885f22-ac94-4ba1-b0d7-97fc4115180f",
       "d2dac021-e261-4474-bce2-d43e59deaa07",
       "c9fd038e-8919-4ca1-9dd8-b43a8d81807e"

@@ -13,6 +13,15 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Højpræcisions mini-XLR tilslutninger på ørekopper · 4-pin mini-XLR kabel fås som ekstratilbehør"
+  },
+  "gallery": [
+   "d9cca92c-9561-40c1-b653-cd714d0b02e2"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 135805,
   "skuCode": "AUDLCD2CLASSIC",
@@ -202,41 +211,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AUDLCD2CLASSIC leverer en varm, rummelig og meget detaljeret lyd med rene, naturlige mellemtoner samt kraftfuld og kontrolleret bas. Komforten er generelt god ved længere lytning, mens den solide metalkonstruktion gør hovedtelefonerne mærkbart tunge og mindre egnede til daglig brug. En kraftig hovedtelefonforstærker kan være nødvendig, men den alsidige og medrivende gengivelse er samlet set meget givende.",
+   "summary": "LCD-2 Classic leverer en medrivende, varm og meget detaljeret gengivelse med rene mellemtoner, sprøde højder og kraftfuld, kontrolleret bas. Komforten er generelt god ved længere lytning, men den solide metalkonstruktion gør hovedtelefonerne tunge, og pasformen kan føles usikker ved foroverbøjning. En kraftig forstærker og lejlighedsvis EQ hjælper med at få hele lydens punch, præcision og tilpasningsevne frem.",
    "headlines": {
-    "warm, spacious and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den rene, naturlige, rummelige og meget detaljerede gengivelse.",
-     "simpleTitle": "Varm, rummelig og detaljeret lyd",
+    "detailed, spacious and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmende lyden som detaljeret, rummelig, naturlig, afbalanceret og kraftfuld, især med stærk bas.",
+     "simpleTitle": "Detaljeret, rummelig og kraftfuld lyd",
      "bias": "positive",
-     "key": "warm-spacious-detailed-sound",
-     "groupId": "3e21ac41-94b3-4b7e-8e6c-184499911c3a"
-    },
-    "powerful, deep bass": {
-     "sentimentAnalysis": "Bassen beskrives som kraftfuld, dyb, kontrolleret og særligt imponerende efter equalizer-justering.",
-     "simpleTitle": "Kraftfuld og dyb bas",
-     "bias": "positive",
-     "key": "powerful-bass",
-     "groupId": "3e21ac41-94b3-4b7e-8e6c-184499911c3a"
+     "key": "sound-quality",
+     "groupId": "317cbe47-d5cc-4743-a293-6786a132702a"
     },
     "comfortable for extended listening": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en behagelig pasform, også ved længere sessioner.",
-     "simpleTitle": "Komfortable ved længere tids lytning",
+     "sentimentAnalysis": "Flere anmeldelser beskriver pasformen som komfortabel, også under længere sessioner, med generelt god bærekomfort.",
+     "simpleTitle": "Komfortabel ved længere tids lytning",
      "bias": "positive",
-     "key": "long-session-comfort",
-     "groupId": "f41224c2-0bbb-4e5e-b1ee-3fecfebf1fd5"
+     "key": "comfort-and-weight",
+     "groupId": "b4694bed-49cb-45db-9b7c-d60ac73e0748"
     },
     "heavy construction limits everyday use": {
-     "sentimentAnalysis": "Den solide metalkonstruktion kritiseres gentagne gange for at gøre hovedtelefonerne meget tunge og mindre praktiske til daglig brug.",
+     "sentimentAnalysis": "Metalkonstruktionen giver soliditet, men gør hovedtelefonerne mærkbart tunge og mindre velegnede til afslappet hverdagsbrug.",
      "simpleTitle": "Den høje vægt begrænser daglig brug",
      "bias": "negative",
-     "key": "heavy-construction",
-     "groupId": "c0244a5a-52f7-4223-b9cd-004097b36702"
+     "key": "comfort-and-weight",
+     "groupId": "b4694bed-49cb-45db-9b7c-d60ac73e0748"
     }
    },
    "grouping": {
-    "3e21ac41-94b3-4b7e-8e6c-184499911c3a": {
+    "317cbe47-d5cc-4743-a293-6786a132702a": {
      "title": "Lydkvalitet",
-     "id": "3e21ac41-94b3-4b7e-8e6c-184499911c3a",
+     "id": "317cbe47-d5cc-4743-a293-6786a132702a",
      "references": [
       "6eea646b-c382-4346-91c4-57fd049eba80",
       "9beeb8d1-3b27-45da-bc02-22c0229ea944",
@@ -248,23 +250,15 @@
       "645a1e4c-c029-497e-b41a-b81ddff32e31"
      ]
     },
-    "f41224c2-0bbb-4e5e-b1ee-3fecfebf1fd5": {
-     "title": "Komfort",
-     "id": "f41224c2-0bbb-4e5e-b1ee-3fecfebf1fd5",
+    "b4694bed-49cb-45db-9b7c-d60ac73e0748": {
+     "title": "Komfort og vægt",
+     "id": "b4694bed-49cb-45db-9b7c-d60ac73e0748",
      "references": [
+      "6eea646b-c382-4346-91c4-57fd049eba80",
       "9beeb8d1-3b27-45da-bc02-22c0229ea944",
       "08172722-aed0-4707-a9bd-65f3f562b753",
       "ae880f1f-aa68-4a6b-ba73-c92e5f6fe9a2",
       "4b47fc4d-695a-4708-a79e-2f4c46fb4ccc",
-      "58e24462-e9a7-4bd8-9a23-740c6a2f5541"
-     ]
-    },
-    "c0244a5a-52f7-4223-b9cd-004097b36702": {
-     "title": "Konstruktion og vægt",
-     "id": "c0244a5a-52f7-4223-b9cd-004097b36702",
-     "references": [
-      "6eea646b-c382-4346-91c4-57fd049eba80",
-      "08172722-aed0-4707-a9bd-65f3f562b753",
       "58e24462-e9a7-4bd8-9a23-740c6a2f5541"
      ]
     }

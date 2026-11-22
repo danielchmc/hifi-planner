@@ -13,6 +13,27 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "HDMI, Optisk, Minijack/AUX",
+   "Indgang (andet)": "Ethernet",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Fra beskrivelsen": "Indgange: HDMI eARC, optisk, coaxial, analog 3,5 mm · Udgange: subwoofer (RCA), USB-C strømudtag (5V/2A)"
+  },
+  "gallery": [
+   "546addae-d3f2-46dc-b6e2-48e3221dec04",
+   "2de97585-728e-43ba-a42a-024661631df6",
+   "95db82e8-1e95-4a52-8725-9388fe6654c5",
+   "1b969646-581b-49e8-af4e-a6e5f0ff7609",
+   "f618c4bb-4ddb-418c-b981-f5b6ee4b5b3f",
+   "9ce07553-e1ab-4edf-95f1-e3396d0fdcff",
+   "05a98d87-7067-4ad3-982f-32a0dc13227d",
+   "4bd7f8bb-440c-46c2-b50b-b7431712c0f3",
+   "347b48f8-1a3b-4752-acac-c26d1e88c293"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 290641,
   "skuCode": "KEFLSLUXE",
@@ -484,34 +505,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFLSLUXE leverer en varm, slagkraftig og omsluttende gengivelse med rene detaljer, et rummeligt lydbillede og et imponerende stort sweet spot. Den dybe, kraftfulde bas giver stor gennemslagskraft, især med korrekt placering eller en subwoofer, mens de kompakte kabinetter ser meget flotte ud. Den raffinerede kontrol, det høje lydniveau og det enklere setup gør KEFLSLUXE til en særdeles overbevisende opgradering til krævende musik- og hjemme-lydsystemer.",
+   "summary": "KEF LS Luxe leverer varm, ren og medrivende lyd fra et kompakt og stilfuldt kabinet med høj detaljegrad, stort lydbillede og tilfredsstillende dybde. Basgengivelsen kan være fremragende og slagkraftig, men placering i rummet og personlig smag kan kræve justering via appen, mens visse software- og fjernbetjeningsproblemer mindsker brugervenligheden. Det aktive design giver desuden højere lydstyrke, bedre kontrol og et bredere sweet spot end tidligere passive KEF-modeller.",
    "headlines": {
-    "clear, spacious and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt gengivelsen som klar, rummelig, engagerende og behagelig ved længere tids lytning.",
-     "simpleTitle": "Klar, rummelig og omsluttende lyd",
+    "clean, spacious and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, rummelige, kraftfulde og ikke-trættende gengivelse med en medrivende præsentation, selv uden subwoofer.",
+     "simpleTitle": "Ren, rummelig og medrivende lyd",
      "bias": "positive",
-     "key": "clear-spacious-sound",
-     "groupId": "44417882-4bf6-47aa-8193-1e76b91a513f"
+     "key": "sound-quality",
+     "groupId": "ec7901b4-909e-4fa2-8f3d-a2ab3985b7e3"
     },
-    "deep, powerful bass": {
-     "sentimentAnalysis": "Højttalerne roses for at levere en fyldig og dyb bas, både alene og sammen med en subwoofer.",
-     "simpleTitle": "Dybere, kraftfuld bas",
+    "deep, punchy bass": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver imponerende dybde og slagkraft i bassen, herunder stærk ydelse uden subwoofer og dybere bas end den tidligere passive model.",
+     "simpleTitle": "Dyb og slagkraftig bas",
      "bias": "positive",
-     "key": "deep-bass",
-     "groupId": "44417882-4bf6-47aa-8193-1e76b91a513f"
+     "key": "bass",
+     "groupId": "b41b68a8-b22e-459a-8c0b-33d5b4c6197a"
     },
-    "striking, stylish design": {
-     "sentimentAnalysis": "De kompakte højttalere beundres for deres attraktive og stilfulde udseende.",
-     "simpleTitle": "Markant og stilfuldt design",
+    "bass balance depends on the room": {
+     "sentimentAnalysis": "Bassen er ikke ideel for alle: Én anmeldelse oplever den som for kraftig tæt på en væg, mens en anden synes, den er for svag. Det viser, at rum og personlig smag spiller en rolle.",
+     "simpleTitle": "Basbalancen afhænger af rummet",
+     "bias": "negative",
+     "key": "bass",
+     "groupId": "b41b68a8-b22e-459a-8c0b-33d5b4c6197a"
+    },
+    "stylish, compact design": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter højttalernes attraktive udseende og kompakte, stilfulde form.",
+     "simpleTitle": "Stilfuldt, kompakt design",
      "bias": "positive",
-     "key": "stylish-design",
-     "groupId": "0290e81c-7d9e-421f-93be-814f86b64894"
+     "key": "design",
+     "groupId": "d9d130e2-2392-4f95-b9f1-729e91b34ccd"
     }
    },
    "grouping": {
-    "44417882-4bf6-47aa-8193-1e76b91a513f": {
+    "ec7901b4-909e-4fa2-8f3d-a2ab3985b7e3": {
      "title": "Lydkvalitet",
-     "id": "44417882-4bf6-47aa-8193-1e76b91a513f",
+     "id": "ec7901b4-909e-4fa2-8f3d-a2ab3985b7e3",
      "references": [
       "ddf88587-f43c-4e52-9c87-8797d7079df4",
       "ad9833e7-3040-4154-8f6e-0bcb1e4199f9",
@@ -521,9 +549,20 @@
       "620737ac-d613-4716-8e1d-588ae465a4f1"
      ]
     },
-    "0290e81c-7d9e-421f-93be-814f86b64894": {
+    "b41b68a8-b22e-459a-8c0b-33d5b4c6197a": {
+     "title": "Bas",
+     "id": "b41b68a8-b22e-459a-8c0b-33d5b4c6197a",
+     "references": [
+      "ddf88587-f43c-4e52-9c87-8797d7079df4",
+      "30aca82a-715f-4ce0-a904-422d0efa1088",
+      "6070795f-e6ad-46ff-9288-d04869aadf59",
+      "d9b93b3e-2a83-4bb1-ba15-14a69d7c55d2",
+      "620737ac-d613-4716-8e1d-588ae465a4f1"
+     ]
+    },
+    "d9d130e2-2392-4f95-b9f1-729e91b34ccd": {
      "title": "Design",
-     "id": "0290e81c-7d9e-421f-93be-814f86b64894",
+     "id": "d9d130e2-2392-4f95-b9f1-729e91b34ccd",
      "references": [
       "30aca82a-715f-4ce0-a904-422d0efa1088",
       "620737ac-d613-4716-8e1d-588ae465a4f1"

@@ -13,6 +13,16 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "4",
+   "Fra beskrivelsen": "Princip: Magnetisk high-output · Udgangsspænding: 4,0 mV ved 5 cm/s · OBS: Hi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "4f728eb9-45ad-43ce-b15b-b02ba4cead8d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 95,
   "skuCode": "ORTOM5EX",
@@ -163,7 +173,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 34,
+     "availableQuantity": 28,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -206,85 +216,96 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTOM5EX roses bredt som en pickup med stærk værdi for pengene, der tilfører varm, fyldig og detaljeret lyd til pladespillere og ofte giver en markant forbedring i forhold til enkle eller ældre pickupper. Installationen kan være lidt besværlig, men hjælpsom forhandlerservice og tydelige farvekoder gør opsætningen lettere. Et lille mindretal oplever gengivelsen som lidt steril eller bassen som en smule rodet, men den samlede vurdering er meget begejstret.",
+   "summary": "ORTOM5EX leverer varm, detaljeret og medrivende vinylgengivelse og er en markant forbedring i forhold til mange standardpickupper, især til prisen. Hjælp til installation og kundeservice roses konsekvent, mens pickuppen generelt er nem at integrere og har tydeligt markerede tilslutninger. Klangpræferencerne varierer: Nogle lyttere oplever lyden som lidt steril eller mindre tilgivende, og én anmeldelse nævner en lidt løs bas, men den samlede vurdering er meget positiv.",
    "headlines": {
-    "strong value for the money": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent pickuppen som et prisvenligt kvalitetsvalg med imponerende ydelse for pengene.",
-     "simpleTitle": "Stærk værdi for pengene",
+    "consistently excellent customer service": {
+     "sentimentAnalysis": "Hurtig levering, kompetent rådgivning, hjælpsomt personale og pålidelig service roses i de serviceorienterede anmeldelser.",
+     "simpleTitle": "Konsekvent fremragende kundeservice",
      "bias": "positive",
-     "key": "value-for-money",
-     "groupId": "ccf8f225-019e-470b-895a-2c6a22cd4c82"
+     "key": "customer-service",
+     "groupId": "c295b5b4-52b2-450e-a4fb-4b51d114f7fd"
     },
-    "helpful installation and customer service": {
-     "sentimentAnalysis": "Personalet får stor ros for installationshjælp, rådgivning og konsekvent fremragende service.",
-     "simpleTitle": "God hjælp til installation og kundeservice",
+    "good value for the price": {
+     "sentimentAnalysis": "Pickuppen beskrives gentagne gange som prisbillig, vellavet og som en fremragende opgradering til pengene.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "installation-help",
-     "groupId": "b42064ab-eb33-42b6-a5a8-b902ac30bb57"
+     "key": "price-value",
+     "groupId": "9d7b977d-58bc-46a8-9b6a-b2e7199a723f"
     },
-    "warm, detailed and lively sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den varme, fyldige, åbne og runde gengivelse med flere detaljer og livlig diskant.",
-     "simpleTitle": "Varm, detaljeret og levende lyd",
+    "warm, detailed and improved sound": {
+     "sentimentAnalysis": "Anmeldelserne roser større detaljering, præcision, åbenhed og en tydeligt forbedret gengivelse sammenlignet med tidligere pickupper.",
+     "simpleTitle": "Varm, detaljeret og forbedret lyd",
      "bias": "positive",
-     "key": "warm-detailed-sound",
-     "groupId": "c9856c33-1301-497a-943d-27cf382a7cbf"
+     "key": "sound-quality",
+     "groupId": "867c12dd-c47b-4f68-9874-07ac761c1f33"
     },
-    "a major sound upgrade": {
-     "sentimentAnalysis": "Pickuppen beskrives gentagne gange som en markant forbedring i forhold til medfølgende, ældre eller enkle pickupper med større klarhed og flere musikalske detaljer.",
-     "simpleTitle": "En markant lydopgradering",
+    "excellent installation assistance": {
+     "sentimentAnalysis": "Installation i butikken og personlig hjælp gør opsætningen nem og bekvem for flere kunder.",
+     "simpleTitle": "Fremragende hjælp til installation",
      "bias": "positive",
-     "key": "sound-upgrade",
-     "groupId": "c9856c33-1301-497a-943d-27cf382a7cbf"
+     "key": "installation",
+     "groupId": "590bff60-6b14-4201-9c7c-80024ca6b071"
     },
-    "some criticism of bass control and neutrality": {
-     "sentimentAnalysis": "To anmeldelser peger på mindre kontrolleret bas eller en lidt steril, cd-agtig balance i kontrast til den varme lyd, der roses andre steder.",
-     "simpleTitle": "Kritik af baskontrol og neutralitet",
+    "installation can be tricky": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at egen montering ikke er helt enkel, selv om resultatet er godt.",
+     "simpleTitle": "Installationen kan være vanskelig",
      "bias": "negative",
-     "key": "sound-criticism",
-     "groupId": "c9856c33-1301-497a-943d-27cf382a7cbf"
+     "key": "installation",
+     "groupId": "590bff60-6b14-4201-9c7c-80024ca6b071"
     }
    },
    "grouping": {
-    "c9856c33-1301-497a-943d-27cf382a7cbf": {
+    "867c12dd-c47b-4f68-9874-07ac761c1f33": {
      "title": "Lydkvalitet",
-     "id": "c9856c33-1301-497a-943d-27cf382a7cbf",
+     "id": "867c12dd-c47b-4f68-9874-07ac761c1f33",
      "references": [
       "8d415ca6-019a-4298-add9-10bc0210b4b6",
       "9ba74906-2372-463a-9bb0-d104297e1e05",
+      "f7a5e541-e9fb-4423-9384-9983b988cc1c",
       "ca1fc3f3-df5a-4697-bf70-16a5e2d9cda4",
       "17bafba4-fefd-4b2b-91e3-ddd146bb5d0e",
       "d0628a02-6f5b-4eda-a568-56966180d965",
       "d06c8545-d3ec-4590-841f-7fe846773dd0",
       "42f22470-18b5-4e60-8e96-ac408c7f5981",
       "c07de8d0-09fd-43e3-bff3-1792e19a939a",
-      "efd6e1f5-c782-495a-82aa-7e55f17afefb",
-      "f7a5e541-e9fb-4423-9384-9983b988cc1c"
+      "efd6e1f5-c782-495a-82aa-7e55f17afefb"
      ]
     },
-    "ccf8f225-019e-470b-895a-2c6a22cd4c82": {
-     "title": "Pris og værdi",
-     "id": "ccf8f225-019e-470b-895a-2c6a22cd4c82",
+    "c295b5b4-52b2-450e-a4fb-4b51d114f7fd": {
+     "title": "Kundeservice",
+     "id": "c295b5b4-52b2-450e-a4fb-4b51d114f7fd",
      "references": [
-      "e8f4f537-c9c5-4288-b4b5-bcb48f605877",
+      "6e2bc219-c745-4bf4-8fe5-39d90799232c",
+      "9159b8e5-1a51-4342-b51a-95186165c120",
+      "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
+      "27ea6bd2-c8ce-4d34-b1c4-b3ba7198cd9f",
+      "70ad0ed3-e88e-4f67-ad80-e295bda8aec1",
+      "f843c8ab-b06c-4f35-b982-44b807c92169",
+      "4edb9b2e-ed8d-4830-8cc2-50b0d76e9c37"
+     ]
+    },
+    "9d7b977d-58bc-46a8-9b6a-b2e7199a723f": {
+     "title": "Pris og værdi",
+     "id": "9d7b977d-58bc-46a8-9b6a-b2e7199a723f",
+     "references": [
       "8d415ca6-019a-4298-add9-10bc0210b4b6",
       "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
       "9ba74906-2372-463a-9bb0-d104297e1e05",
       "a59d9fb4-4ea6-42aa-9cf0-1e018ff6b52d",
-      "837775e9-80d1-415c-a304-1ac25f9fe6bf",
-      "c07de8d0-09fd-43e3-bff3-1792e19a939a"
+      "c07de8d0-09fd-43e3-bff3-1792e19a939a",
+      "837775e9-80d1-415c-a304-1ac25f9fe6bf"
      ]
     },
-    "b42064ab-eb33-42b6-a5a8-b902ac30bb57": {
-     "title": "Installation og support",
-     "id": "b42064ab-eb33-42b6-a5a8-b902ac30bb57",
+    "590bff60-6b14-4201-9c7c-80024ca6b071": {
+     "title": "Installation",
+     "id": "590bff60-6b14-4201-9c7c-80024ca6b071",
      "references": [
+      "e8f4f537-c9c5-4288-b4b5-bcb48f605877",
       "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
       "27ea6bd2-c8ce-4d34-b1c4-b3ba7198cd9f",
       "31f1c416-34d0-46b0-a6e6-ef8fbe115887",
       "17bafba4-fefd-4b2b-91e3-ddd146bb5d0e",
-      "d0628a02-6f5b-4eda-a568-56966180d965",
-      "70ad0ed3-e88e-4f67-ad80-e295bda8aec1",
-      "4edb9b2e-ed8d-4830-8cc2-50b0d76e9c37"
+      "d0628a02-6f5b-4eda-a568-56966180d965"
      ]
     }
    },

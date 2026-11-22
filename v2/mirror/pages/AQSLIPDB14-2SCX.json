@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "31aa5b3f-93be-4368-88c0-9d1f97736033"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 141411,
   "skuCode": "AQSLIPDB14-2SCX",
@@ -112,7 +119,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 4173,
+     "availableQuantity": 7055,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -134,55 +141,72 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQSLIPDB14-2SCX er et varmt og fyldigt højttalerkabel, der giver en tydelig lydforbedring og pålidelig ydeevne i hverdagen. Kablet føles robust, godt beskyttet og egnet til højttalerinstallationer både inde og ude, samtidig med at det er fleksibelt nok til mange føringer. Den stærke værdi for pengene og solide konstruktion gør kablet til et immersivt og driftssikkert valg, selv om den betydelige diameter og lejlighedsvise stivhed kan besværliggøre enkelte installationer.",
+   "summary": "En varm og slagkraftig opgradering til højttalersystemer med tydelig lydforbedring samt en robust og godt beskyttet konstruktion. Kablet føles eksklusivt og fungerer pålideligt, også ved krævende udendørsinstallationer. Den fleksible håndtering passer til mange opsætninger, selv om den kraftige udførelse kan være stiv i smalle kabelkanaler og måske ikke passer til ældre analogt udstyr.",
    "headlines": {
-    "robust, well-protected construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som høj kvalitet, robust og godt beskyttet, også til udendørs brug.",
-     "simpleTitle": "Robust og godt beskyttet konstruktion",
+    "premium, well-protected construction": {
+     "sentimentAnalysis": "Kablet roses gentagne gange for en robust konstruktion, høj kvalitet og god beskyttelse fra yderkappen.",
+     "simpleTitle": "Eksklusiv og godt beskyttet konstruktion",
      "bias": "positive",
-     "key": "cable-quality",
-     "groupId": "16137f1c-bc19-4575-9430-64ff474092a4"
+     "key": "quality",
+     "groupId": "aaa61a53-3738-4b46-9dd0-bc517e88fa63"
     },
-    "easy to route through walls and around speakers": {
-     "sentimentAnalysis": "Kablet vurderes som fleksibelt nok til pæn føring og gennemføring i vægge uden at virke for stift.",
-     "simpleTitle": "Nem at føre gennem vægge og rundt om højttalere",
+    "easy to route through walls and around installations": {
+     "sentimentAnalysis": "Kablet anses for fleksibelt nok til pæn føring og samtidig robust nok til at blive ført gennem vægge uden at være for stift.",
+     "simpleTitle": "Let at føre gennem vægge og rundt om installationer",
      "bias": "positive",
-     "key": "installation-flexibility",
-     "groupId": "4396c368-fe30-48e1-b7b5-cc498dd55551"
+     "key": "installation",
+     "groupId": "58c58abc-81cc-4884-b016-c5a0cf891e9d"
+    },
+    "suitable for outdoor speaker setups": {
+     "sentimentAnalysis": "Kablet roses til udendørs brug og til tilslutning af udendørshøjttalere gennem en dobbelt ydervæg.",
+     "simpleTitle": "Velegnet til udendørs højttalere",
+     "bias": "positive",
+     "key": "outdoor",
+     "groupId": "2d46e92b-d857-4a15-a897-eb933c97be1b"
     },
     "reliable everyday performance": {
-     "sentimentAnalysis": "Kablet fungerer ifølge anmeldelserne som forventet og pålideligt i brug.",
+     "sentimentAnalysis": "Korte anmeldelser bekræfter samstemmende, at kablet fungerer som tilsigtet.",
      "simpleTitle": "Pålidelig ydeevne i hverdagen",
      "bias": "positive",
      "key": "performance",
-     "groupId": "fe99187f-8545-4d8d-9f46-57a74d7491de"
+     "groupId": "f2fb8346-3c7c-4461-aa55-9f6e68ba6f6e"
     }
    },
    "grouping": {
-    "16137f1c-bc19-4575-9430-64ff474092a4": {
-     "title": "Kabelkvalitet",
-     "id": "16137f1c-bc19-4575-9430-64ff474092a4",
+    "aaa61a53-3738-4b46-9dd0-bc517e88fa63": {
+     "title": "Byggekvalitet",
+     "id": "aaa61a53-3738-4b46-9dd0-bc517e88fa63",
      "references": [
       "48a04327-92df-48e8-9403-fd8a553a6e11",
       "9baaa49c-4839-44f1-81fe-c159f8b5fa9a",
       "fc5f71b7-1242-4520-807c-a5e28211b10c",
+      "6e60395f-fc8a-48c0-a0f5-2f071e18d4a5",
       "e48eb519-bfb4-429b-939a-915dee183e72",
-      "a4a9a757-b95b-4590-90e0-0e6700955902",
+      "d2ba1dc6-5b19-40d7-8d65-fb52a45b41ef",
+      "c2f06d76-bb1b-4139-974c-94c6e4a3f967",
       "2d2f0ae8-f496-48e5-a88f-8f86c90d0ccf"
      ]
     },
-    "4396c368-fe30-48e1-b7b5-cc498dd55551": {
-     "title": "Fleksibilitet ved installation",
-     "id": "4396c368-fe30-48e1-b7b5-cc498dd55551",
+    "58c58abc-81cc-4884-b016-c5a0cf891e9d": {
+     "title": "Installation og fleksibilitet",
+     "id": "58c58abc-81cc-4884-b016-c5a0cf891e9d",
      "references": [
       "6e60395f-fc8a-48c0-a0f5-2f071e18d4a5",
       "4f67b014-279b-4519-b0de-60ecda37fcd6",
       "c2f06d76-bb1b-4139-974c-94c6e4a3f967"
      ]
     },
-    "fe99187f-8545-4d8d-9f46-57a74d7491de": {
+    "2d46e92b-d857-4a15-a897-eb933c97be1b": {
+     "title": "Egnethed til udendørs brug",
+     "id": "2d46e92b-d857-4a15-a897-eb933c97be1b",
+     "references": [
+      "a4a9a757-b95b-4590-90e0-0e6700955902",
+      "4f67b014-279b-4519-b0de-60ecda37fcd6"
+     ]
+    },
+    "f2fb8346-3c7c-4461-aa55-9f6e68ba6f6e": {
      "title": "Ydeevne",
-     "id": "fe99187f-8545-4d8d-9f46-57a74d7491de",
+     "id": "f2fb8346-3c7c-4461-aa55-9f6e68ba6f6e",
      "references": [
       "379b2a4a-86e4-46c2-8697-05a82f2cd8c2",
       "79c14634-3447-444f-a9fe-2e3f204c12ab"

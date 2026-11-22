@@ -13,6 +13,21 @@
    "url": "/tilbehor/tv-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "06303315-e6cf-4a71-8d02-60c8ba65967c",
+   "ad693281-fce8-42ce-bca9-58dc7ce5ef20",
+   "397145c8-a452-43fc-9514-1dd3a189fa7f",
+   "4f7cc337-7c30-4432-bd2e-c382734dd489",
+   "ea7e647d-3dcf-4089-95da-91d37024ea86",
+   "1d6ac35b-3546-4e48-acd9-60a3d655aaf4",
+   "1d3c9e6a-7b4f-4ecc-b15f-bd193eacdcf1",
+   "0c72a456-75ce-46db-8c20-3fd8da514c8a",
+   "c48f90cd-27f3-43fb-b995-8e2a5eee97f3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 178800,
   "skuCode": "VOGTVM5645X",
@@ -148,8 +163,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 35,
+     "numberOfStoresExperience": 5,
+     "availableQuantity": 26,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -244,7 +259,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -289,71 +304,72 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VOGTVM5645X får stor ros som et førsteklasses og robust vægbeslag, der er nemt at montere og trygt bærer tunge, store TV. Den glidende fulde bevægelighed giver fremragende fleksibilitet og gør det nemt at komme til tilslutningerne på bagsiden. Det slanke og elegante design holder TV'et tæt på væggen og giver et varmt, kraftfuldt og medrivende helhedsindtryk.",
+   "summary": "VOGTVM5645X er et fremragende og klippestabilt TV-beslag med en imponerende smidig og dynamisk montering. Det solide, fuldt bevægelige design skaber en medrivende TV-oplevelse og gør det muligt at placere store, tunge TV’er med varm og præcis fleksibilitet. Den fremragende byggekvalitet, det diskrete design og den vægnære placering gør beslaget til et særdeles overbevisende valg.",
    "headlines": {
-    "very stable with heavy TVs": {
-     "sentimentAnalysis": "Beslaget anses for at være særdeles solidt, også med et TV på 35 kg.",
-     "simpleTitle": "Meget stabil med tunge TV",
-     "bias": "positive",
-     "key": "heavy_tv_stability",
-     "groupId": "97be1ea1-7857-41f0-a95f-b73b9096f782"
-    },
     "easy to install": {
-     "sentimentAnalysis": "Monteringen beskrives som enkel og understøttes af skabeloner og appen.",
+     "sentimentAnalysis": "Anmeldelserne beskriver beslaget som nemt at montere, mens skabeloner og en app hjælper med præcis placering.",
      "simpleTitle": "Nem at montere",
      "bias": "positive",
-     "key": "easy_installation",
-     "groupId": "47ca93e8-b351-4bd1-a1e6-ea8f33139591"
+     "key": "easy-installation",
+     "groupId": "38a8fb0b-5de6-4a89-aded-d3c5e31727f8"
     },
-    "smooth and flexible positioning": {
-     "sentimentAnalysis": "Den fulde bevægelighed gør det nemt at vinkle TV'et til forskellige siddepladser og nå tilslutningerne på bagsiden.",
-     "simpleTitle": "Glat og fleksibel placering",
+    "extremely stable for heavy TVs": {
+     "sentimentAnalysis": "Beslaget roses for at være ekstraordinært stabilt, selv ved TV’er på op til 35 kg.",
+     "simpleTitle": "Ekstremt stabilt til tunge TV’er",
      "bias": "positive",
-     "key": "flexible_positioning",
-     "groupId": "1d989941-4ec6-45fd-8930-ca610db24379"
+     "key": "heavy-duty-stability",
+     "groupId": "e2df46b2-e826-4bf4-8945-985090673fbd"
     },
-    "slim, attractive appearance": {
-     "sentimentAnalysis": "Det smalle og kraftfulde design roses for at være diskret, når TV'et vinkles.",
-     "simpleTitle": "Slankt og attraktivt udseende",
+    "discreet, attractive design": {
+     "sentimentAnalysis": "Anmeldelserne roser det solide og flotte udseende samt den mindre synlighed end ved bredere alternativer.",
+     "simpleTitle": "Diskret og flot design",
      "bias": "positive",
-     "key": "slim_attractive_design",
-     "groupId": "0c9d59ed-e964-454a-9a3e-20388f5797b0"
+     "key": "discreet-design",
+     "groupId": "c242c495-992e-41a2-8085-eb317a6938d6"
+    },
+    "smooth full-motion adjustment": {
+     "sentimentAnalysis": "Den fuldt bevægelige arm beskrives som let at betjene og giver brede betragtningsvinkler samt nem adgang til tilslutningerne på bagsiden.",
+     "simpleTitle": "Smidig fuld bevægelighed",
+     "bias": "positive",
+     "key": "smooth-adjustment",
+     "groupId": "acff2fc5-2523-416a-b284-7d760cf3997b"
     }
    },
    "grouping": {
-    "97be1ea1-7857-41f0-a95f-b73b9096f782": {
+    "e2df46b2-e826-4bf4-8945-985090673fbd": {
      "title": "Stabilitet",
-     "id": "97be1ea1-7857-41f0-a95f-b73b9096f782",
+     "id": "e2df46b2-e826-4bf4-8945-985090673fbd",
      "references": [
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "9da4e06f-27a9-43dd-9616-ccbd452e6f3f",
       "49337088-ec34-4980-9b43-da8e81fde62f",
-      "bc5a2682-3f30-424c-88ac-06e16b7e9fba",
-      "880be15e-c7a4-4e9a-a841-f5d07647042a"
+      "bc5a2682-3f30-424c-88ac-06e16b7e9fba"
      ]
     },
-    "47ca93e8-b351-4bd1-a1e6-ea8f33139591": {
+    "38a8fb0b-5de6-4a89-aded-d3c5e31727f8": {
      "title": "Montering",
-     "id": "47ca93e8-b351-4bd1-a1e6-ea8f33139591",
+     "id": "38a8fb0b-5de6-4a89-aded-d3c5e31727f8",
      "references": [
+      "3b258b89-5dfc-4be4-bea8-413be2c39bf1",
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "9da4e06f-27a9-43dd-9616-ccbd452e6f3f"
      ]
     },
-    "1d989941-4ec6-45fd-8930-ca610db24379": {
-     "title": "Fuld bevægelighed",
-     "id": "1d989941-4ec6-45fd-8930-ca610db24379",
+    "c242c495-992e-41a2-8085-eb317a6938d6": {
+     "title": "Design og afstand til væggen",
+     "id": "c242c495-992e-41a2-8085-eb317a6938d6",
+     "references": [
+      "250826f7-4385-49c7-a524-ce5f3882ecae",
+      "49337088-ec34-4980-9b43-da8e81fde62f",
+      "880be15e-c7a4-4e9a-a841-f5d07647042a"
+     ]
+    },
+    "acff2fc5-2523-416a-b284-7d760cf3997b": {
+     "title": "Justerbarhed og adgang",
+     "id": "acff2fc5-2523-416a-b284-7d760cf3997b",
      "references": [
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "bc5a2682-3f30-424c-88ac-06e16b7e9fba"
-     ]
-    },
-    "0c9d59ed-e964-454a-9a3e-20388f5797b0": {
-     "title": "Design",
-     "id": "0c9d59ed-e964-454a-9a3e-20388f5797b0",
-     "references": [
-      "49337088-ec34-4980-9b43-da8e81fde62f",
-      "880be15e-c7a4-4e9a-a841-f5d07647042a"
      ]
     }
    },

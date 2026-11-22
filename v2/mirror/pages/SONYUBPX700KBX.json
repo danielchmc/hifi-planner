@@ -13,6 +13,22 @@
    "url": "/surround/blu-ray-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial",
+   "Indgang (andet)": "USB B",
+   "Fra beskrivelsen": "2 x HDMI-ud (inkl. audio-only) · USB indgang på front"
+  },
+  "gallery": [
+   "33a78fb6-d40f-490c-be3e-80c71c786bee",
+   "f632f16b-f52d-4f3b-a8cd-f3b307eaaaf4",
+   "fa066695-be91-4329-a5d0-bd13a69f66bf",
+   "f2ac3162-41da-4dd5-8f75-72b77854494f",
+   "33a7cf65-eeba-48a1-af3d-c5fcd59e242a",
+   "37837bee-c6c3-450c-ba1c-b1595bd1d54e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 260651,
   "skuCode": "SONYUBPX700KBX",
@@ -224,7 +240,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 68,
+     "availableQuantity": 65,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -276,36 +292,35 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En kompakt og brugervenlig Blu-ray-afspiller leverer pålidelig afspilning af forskellige disctyper med varm, detaljeret lyd og et klart, fordybende billede. Den gode opskalering og fremragende gengivelse af ældre dvd'er giver ekstra alsidighed. Den lette plastkonstruktion er en mindre ulempe, mens tilslutning til visse forstærkere kan kræve ekstra opmærksomhed.",
+   "summary": "SONYUBPX700KBX er en kompakt og brugervenlig Blu-ray-afspiller, der leverer godt billede og klar, varm lyd fra dvd'er, Blu-ray, 4K Blu-ray, cd'er og SACD'er. Opskalering fungerer godt, og det lille format passer til pladskrævende opsætninger. Den største ulempe er, at tilslutning til en Denon-forstærker kan være vanskelig, mens plastkonstruktionen virker mindre eksklusiv.",
    "headlines": {
-    "excellent disc playback": {
-     "sentimentAnalysis": "Den brede formatunderstøttelse, gode opskalering og stærke lyd- og billedgengivelse gør afspilningen ubesværet og fordybende.",
-     "simpleTitle": "Fremragende afspilning af diske",
+    "broad disc compatibility and good upscaling": {
+     "sentimentAnalysis": "Afspilleren håndterer mange diskformater effektivt og leverer godt billede og lyd, mens opskaleringen også fungerer godt.",
+     "simpleTitle": "Bred diskkompatibilitet og god opskalering",
      "bias": "positive",
-     "key": "excellent-disc-playback",
-     "groupId": "abb553e5-43f0-4598-ab29-397fbe0d8320"
+     "key": "media_playback",
+     "groupId": "423e5c88-5551-4e31-ba80-0d5af4d3fc50"
     },
-    "compact and easy to use": {
-     "sentimentAnalysis": "Det kompakte format og den enkle betjening passer godt til pladsbevidste opsætninger og daglig brug.",
-     "simpleTitle": "Kompakt og nem at bruge",
+    "small and easy to use": {
+     "sentimentAnalysis": "Det kompakte format og den enkle betjening værdsættes som praktiske styrker.",
+     "simpleTitle": "Lille og nem at bruge",
      "bias": "positive",
-     "key": "compact-easy",
-     "groupId": "0f2b32f0-7e19-4c17-abb4-20be107d6462"
+     "key": "compact_design",
+     "groupId": "b3b83433-17ae-4897-94f5-783277315e8b"
     }
    },
    "grouping": {
-    "abb553e5-43f0-4598-ab29-397fbe0d8320": {
-     "title": "Afspilningskvalitet",
-     "id": "abb553e5-43f0-4598-ab29-397fbe0d8320",
+    "423e5c88-5551-4e31-ba80-0d5af4d3fc50": {
+     "title": "Medieafspilning",
+     "id": "423e5c88-5551-4e31-ba80-0d5af4d3fc50",
      "references": [
       "0d65d8cf-14e7-49d7-a454-193a4110f85e",
-      "53e3724d-fcd3-429b-9e6f-ea1dc4d0990c",
-      "63096d6a-e45f-4564-b9d4-b2f1c5354411"
+      "53e3724d-fcd3-429b-9e6f-ea1dc4d0990c"
      ]
     },
-    "0f2b32f0-7e19-4c17-abb4-20be107d6462": {
-     "title": "Design og brugervenlighed",
-     "id": "0f2b32f0-7e19-4c17-abb4-20be107d6462",
+    "b3b83433-17ae-4897-94f5-783277315e8b": {
+     "title": "Kompakt design",
+     "id": "b3b83433-17ae-4897-94f5-783277315e8b",
      "references": [
       "ddf99974-2c51-463e-b67d-5d78212c30f4",
       "63096d6a-e45f-4564-b9d4-b2f1c5354411"

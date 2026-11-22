@@ -13,6 +13,24 @@
    "url": "/pladespiller/riaa-forstaerker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Indgangsimpedans": "10/50/100/1k/47k",
+   "Indgange": "Analog RCA, Analog XLR, Mini XLR",
+   "Udgange": "Analog RCA, Analog XLR",
+   "Lydudgang": "Analog RCA, Analog XLR",
+   "Lydindgang": "Analog RCA, Analog XLR, Mini XLR",
+   "Fra beskrivelsen": "Indgangskapacitans: 50, 150, 300, 400pF"
+  },
+  "gallery": [
+   "996dcd54-9744-440f-bd99-45209bb759b0",
+   "cf9ae388-ce05-41d1-a68c-f61fb6202a2e",
+   "7157f18d-1280-45ea-9839-ec49f7c3db45",
+   "3fdeb240-b1e7-4a24-b128-dae2d63447e9",
+   "4fcb9ac0-ff61-4db4-a7af-8ed2bc5553b8"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 196012,
   "skuCode": "PRJPHONOBOXS3B",
@@ -26,9 +44,9 @@
   },
   "recommendedAccessories": {
    "productCodes": [
-    "AQGOLDENGATEIN",
     "PRJX1B",
-    "PRJX2B"
+    "PRJX2B",
+    "AQGOLDENGATEIN"
    ],
    "isOutlet": "false"
   },

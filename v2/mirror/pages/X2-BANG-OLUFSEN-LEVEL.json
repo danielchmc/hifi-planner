@@ -13,6 +13,16 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "1ed3f2eb-3771-49e7-a392-b4d42f547bd5",
+   "5efdb019-56e5-4fc1-81da-a54ebbddeb47",
+   "08298b05-d5e3-4c14-9168-37a13abb47fe",
+   "bbefb4de-76b8-430f-8185-f778a77bb310"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 227344,
   "skuCode": "X2-BANG-OLUFSEN-LEVEL",
@@ -110,10 +120,11 @@
         "productCode": "BOLEVELGOX"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager fredag den 20. november",
-        "deliveryDate": "2026-11-20T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 12,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "26.980,-",
        "priceRaw": 13490,
@@ -150,8 +161,8 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager fredag den 20. november",
-    "deliveryDate": "2026-11-20T00:00:00Z",
+    "inStock": true,
+    "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
     "numberOfStoresExperience": 1
    }

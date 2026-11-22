@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c1a39a73-2d41-4288-aa8d-1c317405b509"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 129405,
   "skuCode": "AQROCKET88SCBA",
@@ -856,31 +863,61 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET88SCBA leverer en varm, slagkraftig og meget raffineret lyd med imponerende klarhed og definition. Gengivelsen føles åben, rummelig og medrivende med ekstra dybde og nærvær, samtidig med at den spiller ubesværet. Den solide konstruktion og gode systemmatchning understøtter premiumoplevelsen, selv om prisen kan virke høj for nogle købere.",
+   "summary": "AQROCKET88SCBA roses for en varm, åben og veldefineret lyd med punchy nærvær, større bredde og overbevisende dybde. Den solide konstruktion og gode systemtilpasning styrker premiumindtrykket, selv om en anmelder synes, at kablet er dyrt. Den samlede vurdering er meget begejstret med ubesværet, medrivende musikalitet og stor tilfredshed.",
    "headlines": {
-    "clear and well-defined sound": {
-     "sentimentAnalysis": "Kablet roses for en stærk og tilfredsstillende lyd med klarhed og definition.",
-     "simpleTitle": "Klar og veldefineret lyd",
+    "open, expansive and immersive sound": {
+     "sentimentAnalysis": "Kablet roses for at udvide bredden og dybden samt gøre gengivelsen mere åben, nærværende og ubesværet.",
+     "simpleTitle": "Åben, bred og medrivende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "8f33b81d-8735-4b39-ba5f-49eb31f7486e"
+     "key": "sound",
+     "groupId": "381fc4bd-2190-4277-bf59-29cbc4a6674b"
     },
-    "more open, spacious and present": {
-     "sentimentAnalysis": "Gengivelsen beskrives gennemgående som bredere, dybere, mere nærværende, åben og ubesværet.",
-     "simpleTitle": "Mere åben, rummelig og nærværende",
+    "clear, defined and satisfying performance": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydeligt forbedret, veldefineret og meget behagelig lyd samt stor tilfredshed trods indledende skepsis.",
+     "simpleTitle": "Klar, veldefineret og tilfredsstillende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "8f33b81d-8735-4b39-ba5f-49eb31f7486e"
+     "key": "sound",
+     "groupId": "381fc4bd-2190-4277-bf59-29cbc4a6674b"
+    },
+    "solid premium construction": {
+     "sentimentAnalysis": "Kablet opleves som velbygget og solidt med en kvalitet, der passer til avanceret lydudstyr.",
+     "simpleTitle": "Solid konstruktion i premiumklasse",
+     "bias": "positive",
+     "key": "build",
+     "groupId": "4901e9d3-f91b-4824-9c12-e24bb40f2127"
+    },
+    "good match for high-end systems": {
+     "sentimentAnalysis": "Kablet beskrives som særligt velegnet til udstyr fra Hegel og Epicon.",
+     "simpleTitle": "Godt match til high-end-systemer",
+     "bias": "positive",
+     "key": "compatibility",
+     "groupId": "b7c2b72d-81ab-4628-b6f4-fd1f95a87075"
     }
    },
    "grouping": {
-    "8f33b81d-8735-4b39-ba5f-49eb31f7486e": {
+    "381fc4bd-2190-4277-bf59-29cbc4a6674b": {
      "title": "Lydkvalitet",
-     "id": "8f33b81d-8735-4b39-ba5f-49eb31f7486e",
+     "id": "381fc4bd-2190-4277-bf59-29cbc4a6674b",
      "references": [
       "1faff2b3-6687-4a91-9243-763fb7429807",
       "f57f8527-5e09-4ebd-81b9-dcceaa93f541",
       "866cd393-dee1-4969-893e-3c77b6e51d20",
+      "a04ed380-dc44-464a-815c-07dfb8b82d79"
+     ]
+    },
+    "4901e9d3-f91b-4824-9c12-e24bb40f2127": {
+     "title": "Byggekvalitet",
+     "id": "4901e9d3-f91b-4824-9c12-e24bb40f2127",
+     "references": [
+      "1faff2b3-6687-4a91-9243-763fb7429807",
+      "a04ed380-dc44-464a-815c-07dfb8b82d79"
+     ]
+    },
+    "b7c2b72d-81ab-4628-b6f4-fd1f95a87075": {
+     "title": "Systemkompatibilitet",
+     "id": "b7c2b72d-81ab-4628-b6f4-fd1f95a87075",
+     "references": [
+      "5b02e2d1-a275-46d1-8df5-5fe748464f36",
       "a04ed380-dc44-464a-815c-07dfb8b82d79"
      ]
     }

@@ -13,6 +13,20 @@
    "url": "/hojtalere/centerhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "1db091af-daa3-4f53-9851-21c80142a94c",
+   "04bf3eb2-d7a0-47bd-bd01-02d17a920335",
+   "8028db01-6532-43e7-aee5-67d469ff7db9",
+   "395a2e12-91ff-427b-9063-d841f2115b6c",
+   "db64f1d7-7a54-4988-8ef3-0513cc8eb61b",
+   "4c9e043c-ea6a-4439-85a9-5b111a5ff17f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 210758,
   "skuCode": "BWHTM6S3",
@@ -285,7 +299,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 5,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -431,77 +445,84 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BWHTM6S3 leverer en varm, klar og meget detaljeret gengivelse fra centerkanalen med kontant bas og en medrivende filmlyd i velafstemte systemer. Dialoger står særligt tydeligt og forståeligt og giver filmoplevelsen mere klarhed og gennemslagskraft. Det kompakte design, den solide kvalitet og den tydelige forbedring i forhold til ældre B&W-generationer gør højttaleren til en overbevisende opgradering til de fleste hjemmebiografer.",
+   "summary": "B&W HTM6S3 leverer en varm, klar og detaljeret gengivelse med særligt tydelig tale i film. Integrationen i B&W-surroundsystemer bliver rost bredt, og centerhøjttaleren tilfører både film og musik en medrivende, slagkraftig og veldefineret dimension. Det kompakte design, det attraktive udseende og den gode værdi gør opgraderingen endnu mere overbevisende.",
    "headlines": {
-    "clear, detailed and warm sound": {
-     "sentimentAnalysis": "Anmelderne roser den klare, detaljerede, varme og velafbalancerede lyd.",
-     "simpleTitle": "Klar, detaljeret og varm lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "d157677c-969e-4fbc-9436-4ab1fb64926c"
-    },
-    "clearer dialogue improves films": {
-     "sentimentAnalysis": "Centerhøjttaleren roses gentagne gange for at gøre tale klar, detaljeret og lettere at følge i film.",
-     "simpleTitle": "Klarere dialoger løfter filmoplevelsen",
-     "bias": "positive",
-     "key": "dialogue",
-     "groupId": "43ce9fc6-d89f-4749-95dc-f14149386d3a"
-    },
-    "a clear improvement over older models": {
-     "sentimentAnalysis": "Flere ejere beskriver S3 som en markant forbedring i forhold til tidligere B&W- eller ældre højttalergenerationer.",
-     "simpleTitle": "En tydelig forbedring i forhold til ældre modeller",
+    "a strong upgrade for B&W surround systems": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver tydelige forbedringer i forhold til ældre højttalere eller soundbars samt fremragende matchning i B&W 600-serien.",
+     "simpleTitle": "En markant opgradering til B&W-surroundsystemer",
      "bias": "positive",
      "key": "upgrade",
-     "groupId": "10453423-6517-4ad4-a65d-2ee84f4c286c"
+     "groupId": "8babc7c5-3b1b-4c9a-9efb-9b47fea5bfdf"
     },
-    "compact and easy to integrate": {
-     "sentimentAnalysis": "Det kompakte og flotte kabinet passer nemt ind i møbler og matcher B&W 600-serien godt.",
-     "simpleTitle": "Kompakt og nem at integrere",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående lyden som klar, varm, detaljeret og veldefineret med solid bas i surroundsystemer.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "fc999c79-b481-4eee-9b97-49e4afd16a91"
+    },
+    "speech and dialogue are exceptionally clear": {
+     "sentimentAnalysis": "Centerhøjttaleren roses gentagne gange for at gengive tale og filmdialog klart, detaljeret og letforståeligt.",
+     "simpleTitle": "Tale og dialog gengives særdeles tydeligt",
+     "bias": "positive",
+     "key": "dialogue",
+     "groupId": "05b2a69f-aabd-4df1-9f93-37a3a5121f4c"
+    },
+    "compact and attractive design": {
+     "sentimentAnalysis": "Højttaleren opfattes som flot, kompakt og nem at placere i møbler eller et hjemmebiografsystem.",
+     "simpleTitle": "Kompakt og attraktivt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "facb7b49-7657-4af1-8bbc-94e973142161"
+     "groupId": "459ee08f-dcb1-4f77-8f1b-06f00eabb3a3"
+    },
+    "good value and build quality": {
+     "sentimentAnalysis": "Anmeldelserne roser produktkvaliteten og vurderer købet som pengene værd, især til kampagnepris.",
+     "simpleTitle": "God værdi og kvalitet",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "67b293f8-12c7-406c-91c0-211f40cf1545"
     }
    },
    "grouping": {
-    "d157677c-969e-4fbc-9436-4ab1fb64926c": {
+    "fc999c79-b481-4eee-9b97-49e4afd16a91": {
      "title": "Lydkvalitet",
-     "id": "d157677c-969e-4fbc-9436-4ab1fb64926c",
+     "id": "fc999c79-b481-4eee-9b97-49e4afd16a91",
      "references": [
       "8a91426f-3f10-4e18-8fb2-52c55f59f45b",
       "a3c2c424-6319-4f99-9d4d-27543ecc89fe",
       "9523a05c-1c33-431b-bbc0-90aa842b5f72",
       "0f8f15ae-a297-4b23-8deb-30a7429ed315",
-      "d9845e61-d128-49ba-a6ef-ae3bf045bb50",
       "b99db6e2-a8fc-40e8-a6eb-1138d11db72e",
       "3aa9c876-7a00-4382-a37d-4726aa8181a8",
-      "491e57ff-18ab-41f0-82e5-e4cb84414f71",
       "799f47cd-ba82-42b8-aa22-50fb7a8fe00a",
-      "a88dedb0-abd1-44d7-8cd9-0a6a54648b70",
       "e958deed-ff27-4441-a307-9841b8c610dc",
       "f3849d87-22bd-4f62-932b-5e8fbb77c706",
       "4e3e3d5b-450d-4076-af8e-5ffd4082725b",
       "0f978bad-16d6-4efc-a836-62b64fdb2ef5",
       "904ad7ec-19b2-4a94-b623-595c3cb0a6a8",
       "0a5c04b8-4741-4002-a725-3d73ee1f209b",
-      "d620b2a1-68ed-4ce7-85d1-91fb61215f0c",
       "3002a7ae-de75-4c19-8013-ccdc101f23da",
+      "d620b2a1-68ed-4ce7-85d1-91fb61215f0c",
       "76c316ce-2452-465d-bf6a-b91c38b021b7"
      ]
     },
-    "10453423-6517-4ad4-a65d-2ee84f4c286c": {
-     "title": "Opgradering",
-     "id": "10453423-6517-4ad4-a65d-2ee84f4c286c",
+    "8babc7c5-3b1b-4c9a-9efb-9b47fea5bfdf": {
+     "title": "Systemintegration og opgradering",
+     "id": "8babc7c5-3b1b-4c9a-9efb-9b47fea5bfdf",
      "references": [
       "a3c2c424-6319-4f99-9d4d-27543ecc89fe",
       "b99db6e2-a8fc-40e8-a6eb-1138d11db72e",
       "f4d0ad95-8940-4ec0-815b-41acafb7bfbf",
       "a9cbf50a-440c-4d2c-8d81-269ea98f3dbf",
-      "d620b2a1-68ed-4ce7-85d1-91fb61215f0c"
+      "a857a3c9-12a1-4271-a5b0-b6f80ca6ec7c",
+      "f3849d87-22bd-4f62-932b-5e8fbb77c706",
+      "d620b2a1-68ed-4ce7-85d1-91fb61215f0c",
+      "76c316ce-2452-465d-bf6a-b91c38b021b7"
      ]
     },
-    "43ce9fc6-d89f-4749-95dc-f14149386d3a": {
-     "title": "Dialogklarhed",
-     "id": "43ce9fc6-d89f-4749-95dc-f14149386d3a",
+    "05b2a69f-aabd-4df1-9f93-37a3a5121f4c": {
+     "title": "Tydelig tale",
+     "id": "05b2a69f-aabd-4df1-9f93-37a3a5121f4c",
      "references": [
       "111bd63c-bcb4-4b9e-b976-57c94524d81f",
       "e958deed-ff27-4441-a307-9841b8c610dc",
@@ -509,14 +530,21 @@
       "76c316ce-2452-465d-bf6a-b91c38b021b7"
      ]
     },
-    "facb7b49-7657-4af1-8bbc-94e973142161": {
+    "459ee08f-dcb1-4f77-8f1b-06f00eabb3a3": {
      "title": "Design og størrelse",
-     "id": "facb7b49-7657-4af1-8bbc-94e973142161",
+     "id": "459ee08f-dcb1-4f77-8f1b-06f00eabb3a3",
      "references": [
       "a88dedb0-abd1-44d7-8cd9-0a6a54648b70",
+      "0a5c04b8-4741-4002-a725-3d73ee1f209b",
+      "76c316ce-2452-465d-bf6a-b91c38b021b7"
+     ]
+    },
+    "67b293f8-12c7-406c-91c0-211f40cf1545": {
+     "title": "Værdi for pengene",
+     "id": "67b293f8-12c7-406c-91c0-211f40cf1545",
+     "references": [
       "3aa9c876-7a00-4382-a37d-4726aa8181a8",
-      "76c316ce-2452-465d-bf6a-b91c38b021b7",
-      "0a5c04b8-4741-4002-a725-3d73ee1f209b"
+      "805cdaf7-e6a8-4345-b38e-e60f77449670"
      ]
     }
    },

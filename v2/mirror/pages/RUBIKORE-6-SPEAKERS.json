@@ -13,6 +13,13 @@
    "url": "/hojtalere/systemer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ca33a697-13ee-4154-91e2-cf543b2f071f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236123,
   "skuCode": "RUBIKORE-6-SPEAKERS",
@@ -188,7 +195,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 21,
+        "availableQuantity": 11,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -211,7 +218,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 6,
+        "availableQuantity": 5,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -234,7 +241,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 6,
+        "availableQuantity": 10,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -286,10 +293,11 @@
         "productCode": "DALIRUBIKORECINEHGBK"
        },
        "inventoryStatus": {
-        "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "hideNotificationOption": true,
-        "inventoryStatusType": "notInStockNonStockedItem"
+        "availableQuantity": 3,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "16.499,-",
        "priceRaw": 16499,
@@ -366,7 +374,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 14,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -387,10 +395,11 @@
         "productCode": "DALIRUBIKORE6HGMA"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager fredag den 11. december",
-        "deliveryDate": "2026-12-11T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 8,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
        "priceRaw": 19999,
@@ -412,7 +421,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 26,
+        "availableQuantity": 24,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",

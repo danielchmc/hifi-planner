@@ -13,6 +13,22 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Analog RCA",
+   "Fra beskrivelsen": "Sender og modtager til trådløs tilslutning af KEF subwoofer · Lydindgang (sender): L/R RCA / LFA · Udgangssignal: 2 V (RMS)"
+  },
+  "gallery": [
+   "8cf8acf9-7833-4379-94a4-c8b93b1015de",
+   "59759988-d79f-4bcb-87ce-ed0f05294d69",
+   "5ae224a6-83e4-467e-8c93-8ec4e6b6f017",
+   "47ea0e97-8fd6-4ea7-ba71-251f75605687",
+   "56b10161-a639-4f62-8e18-80fafed72209",
+   "93dd0ee9-4afa-46ff-8538-420cd32df022",
+   "e1d8833c-013c-4c93-b386-e5d2158296a2"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 222098,
   "skuCode": "KEFKW1KIT",
@@ -185,34 +201,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF KW1KIT giver en varm følelse af bekvemmelighed med enkel installation, stabil trådløs forbindelse og fleksibel placering af subwooferen uden kabel. Kompatibiliteten med KEF-subwoofere er overbevisende, og flere opsætninger fungerer problemfrit. Den høje pris og én usædvanligt lang leveringstid dæmper en ellers begejstret vurdering en smule.",
+   "summary": "KEF KW1KIT imponerer med hurtig, enkel installation og en stabil trådløs forbindelse. Adapteren gør det muligt at placere subwooferen pænt uden kabler og integreres problemfrit med kompatible KEF-systemer. Bekvemmeligheden føles pengene værd trods den lidt høje pris og bidrager til et ryddeligt, punchy og immersivt bas-setup.",
    "headlines": {
-    "simple, fast installation": {
-     "sentimentAnalysis": "Installationen beskrives gentagne gange som enkel, hurtig og problemfri.",
-     "simpleTitle": "Enkel og hurtig installation",
+    "quick and easy installation": {
+     "sentimentAnalysis": "Installationen beskrives konsekvent som enkel, hurtig og problemfri.",
+     "simpleTitle": "Hurtig og enkel installation",
      "bias": "positive",
-     "key": "simple-installation",
-     "groupId": "90176c21-5b15-4ca8-b016-a77af128e6af"
+     "key": "installation",
+     "groupId": "e18f0849-7640-4af3-8f69-16e3d0e49c93"
     },
     "reliable wireless performance": {
-     "sentimentAnalysis": "Den trådløse forbindelse beskrives som god, stabil og fuldt funktionsdygtig i flere kompatible opsætninger.",
+     "sentimentAnalysis": "Den trådløse forbindelse beskrives som god, stabil og fungerende som forventet.",
      "simpleTitle": "Stabil trådløs ydeevne",
      "bias": "positive",
-     "key": "reliable-wireless-performance",
-     "groupId": "012b41f2-79f9-4dde-a1e3-9f6d0d42f996"
+     "key": "wireless",
+     "groupId": "239efa8c-17c7-4e9b-9745-303ff10609ff"
     },
-    "flexible subwoofer placement without cables": {
-     "sentimentAnalysis": "Kabelfri drift giver en mere ryddelig og fleksibel placering af subwooferen.",
-     "simpleTitle": "Fleksibel placering af subwoofer uden kabler",
+    "freedom from unnecessary cables": {
+     "sentimentAnalysis": "Kabelfri placering af subwooferen værdsættes for større fleksibilitet og mindre visuelt rod.",
+     "simpleTitle": "Frihed fra unødvendige kabler",
      "bias": "positive",
-     "key": "flexible-cable-free-placement",
-     "groupId": "edc68bd7-37b5-4182-8d36-20f9abca6e55"
+     "key": "cable-free-placement",
+     "groupId": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347"
     }
    },
    "grouping": {
-    "90176c21-5b15-4ca8-b016-a77af128e6af": {
+    "e18f0849-7640-4af3-8f69-16e3d0e49c93": {
      "title": "Installation",
-     "id": "90176c21-5b15-4ca8-b016-a77af128e6af",
+     "id": "e18f0849-7640-4af3-8f69-16e3d0e49c93",
      "references": [
       "2ee1ab35-dea9-47e5-ae22-6b1fa530c385",
       "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
@@ -222,9 +238,9 @@
       "6c0d518f-d1d2-4150-b949-ccdc90430d9d"
      ]
     },
-    "012b41f2-79f9-4dde-a1e3-9f6d0d42f996": {
+    "239efa8c-17c7-4e9b-9745-303ff10609ff": {
      "title": "Trådløs forbindelse",
-     "id": "012b41f2-79f9-4dde-a1e3-9f6d0d42f996",
+     "id": "239efa8c-17c7-4e9b-9745-303ff10609ff",
      "references": [
       "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
       "325378e8-cba6-42dc-b04c-710984eab3e0",
@@ -233,9 +249,9 @@
       "2e5868c2-5071-4703-8449-68a4193ec25f"
      ]
     },
-    "edc68bd7-37b5-4182-8d36-20f9abca6e55": {
-     "title": "Placering uden kabler",
-     "id": "edc68bd7-37b5-4182-8d36-20f9abca6e55",
+    "4b19d2e9-946b-4dbb-a63f-e23da7c4d347": {
+     "title": "Kabelfri placering",
+     "id": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347",
      "references": [
       "325378e8-cba6-42dc-b04c-710984eab3e0",
       "a270a5f7-a641-4f02-942b-ba709fb29fac",

@@ -13,6 +13,20 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Fra beskrivelsen": "Moduler til Bluesound musikstreaming og HDMI/trådløs surround kan tilkøbes til SOUND HUB"
+  },
+  "gallery": [
+   "044e57ff-1fc1-4515-a023-d05fb98a07e0",
+   "c60b0108-dcc7-41f5-a498-5aab0f5381e5",
+   "9ee7133f-5098-4b01-b388-0ec639906c70",
+   "d7999b25-d162-41ad-b8dd-4ae511049bbc",
+   "3a64338a-8bb5-40e4-95e6-b5b0869d8434"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 138774,
   "skuCode": "DALIOBERONONWALLC",
@@ -163,7 +177,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 115,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -251,7 +265,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 77,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -432,45 +446,53 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse kompakte væghøjttalere leverer en imponerende, varm og rummelig lyd med overraskende punch og indlevelse trods det flade kabinet. Det diskrete design og den enkle vægintegration er særligt attraktivt, hvor plads og indretning er vigtige. Musiklyttere kan ønske mere opløsning og fylde, mens de korte strømkabler er den tydeligste praktiske ulempe.",
+   "summary": "DALIOBERONONWALLC leverer en bemærkelsesværdig varm, naturlig og rummelig lyd fra et slankt og diskret vægdesign. De kompakte højttalere skaber et imponerende lydbillede og fungerer især godt som surround- eller pladsbesparende højttalere med enkel SoundHub-tilslutning. Ved musikafspilning kan der dog mangle opløsning og fylde, mens de korte strømkabler gentagne gange nævnes som en praktisk ulempe.",
    "headlines": {
-    "impressive, spacious sound from a compact speaker": {
-     "sentimentAnalysis": "Anmeldelserne roser gennemgående den overraskende fyldige, naturlige, rummelige og imponerende lyd fra de kompakte højttalere.",
-     "simpleTitle": "Imponerende, rummelig lyd fra en kompakt højttaler",
+    "rich, natural sound from a compact speaker": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående den imponerende, behagelige, naturlige og fyldige lyd trods den kompakte størrelse.",
+     "simpleTitle": "Fyldig, naturlig lyd fra en kompakt højttaler",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "236c214f-1e77-49b0-ae16-93d196ec54c8"
+     "key": "sound_quality",
+     "groupId": "72d076fd-78ae-4ed1-959a-d1e9f62483c8"
     },
-    "slim, discreet wall-friendly design": {
-     "sentimentAnalysis": "Det flade, diskrete kabinet integreres nemt på væggen og fungerer godt i rum med begrænset plads eller strenge krav til indretningen.",
-     "simpleTitle": "Slankt, diskret og vægvenligt design",
+    "slim and discreet wall-friendly design": {
+     "sentimentAnalysis": "De slanke mål, det diskrete udseende og den nemme vægintegration værdsættes gentagne gange, når plads og rummets æstetik er vigtig.",
+     "simpleTitle": "Slankt og diskret vægdesign",
      "bias": "positive",
-     "key": "design-and-size",
-     "groupId": "7adb384a-66b7-457a-8a52-cc55472ab69f"
+     "key": "design_size",
+     "groupId": "877fb8f8-efe3-4a66-a829-6259b6f353d4"
+    },
+    "effective as surround speakers": {
+     "sentimentAnalysis": "Højttalerne beskrives som fuldt ud i stand til at levere surroundeffekter og som et godt valg til diskrete hjemmebiografinstallationer.",
+     "simpleTitle": "Overbevisende som surroundhøjttalere",
+     "bias": "positive",
+     "key": "sound_quality",
+     "groupId": "72d076fd-78ae-4ed1-959a-d1e9f62483c8"
     },
     "power cables are too short": {
-     "sentimentAnalysis": "Begge relevante anmeldelser peger på kabellængden som en praktisk ulempe, der kræver overskydende ledning eller nye kabler.",
+     "sentimentAnalysis": "Begge anmeldelser påpeger, at de medfølgende strømkabler er kortere end ønsket og kræver kabelstyring eller udskiftningskabler.",
      "simpleTitle": "Strømkablerne er for korte",
      "bias": "negative",
-     "key": "power-cables",
-     "groupId": "fa8b9a74-5062-499d-8883-04c4d243cfd0"
+     "key": "power_cables",
+     "groupId": "721fa49e-463f-47c4-bb77-64dbc9631101"
     },
-    "simple connection with compatible systems": {
-     "sentimentAnalysis": "Højttalerne forbindes nemt med Soundhub-systemet og understøtter en praktisk trådløs installation.",
-     "simpleTitle": "Enkel tilslutning til kompatible systemer",
+    "simple SoundHub connectivity": {
+     "sentimentAnalysis": "SoundHub-tilslutningen beskrives som enkel og bruges med succes i trådløse væghøjttalerinstallationer.",
+     "simpleTitle": "Enkel SoundHub-tilslutning",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "14f943c7-c229-4aa2-b291-5aa839650d1e"
+     "groupId": "f65fa929-43d4-482a-b47c-64b57654508b"
     }
    },
    "grouping": {
-    "236c214f-1e77-49b0-ae16-93d196ec54c8": {
+    "72d076fd-78ae-4ed1-959a-d1e9f62483c8": {
      "title": "Lydkvalitet",
-     "id": "236c214f-1e77-49b0-ae16-93d196ec54c8",
+     "id": "72d076fd-78ae-4ed1-959a-d1e9f62483c8",
      "references": [
       "34ac1dfe-006c-4c28-9ac4-be83ebe7ccdb",
       "41979d0f-84c3-42cf-a08c-be4767f74cc1",
       "1d40da23-670e-40a2-8fa9-a44d21cbb44f",
+      "b52804be-cf95-4ab5-a522-6d4fbe22ee50",
       "562506a8-f753-4014-bb15-bf9bf887a68f",
       "cf58a151-3a2a-404d-aaa4-99371d0fdf0c",
       "d23e3a6d-0bb7-45d8-bd1e-ad1a759366e4",
@@ -479,28 +501,27 @@
       "14c1b5cd-2450-476d-96be-48e0e59a064d"
      ]
     },
-    "7adb384a-66b7-457a-8a52-cc55472ab69f": {
+    "877fb8f8-efe3-4a66-a829-6259b6f353d4": {
      "title": "Design og størrelse",
-     "id": "7adb384a-66b7-457a-8a52-cc55472ab69f",
+     "id": "877fb8f8-efe3-4a66-a829-6259b6f353d4",
      "references": [
       "34ac1dfe-006c-4c28-9ac4-be83ebe7ccdb",
-      "41979d0f-84c3-42cf-a08c-be4767f74cc1",
       "1d40da23-670e-40a2-8fa9-a44d21cbb44f",
       "562506a8-f753-4014-bb15-bf9bf887a68f",
       "176584b1-419d-44af-9397-84fb05ee72ee"
      ]
     },
-    "fa8b9a74-5062-499d-8883-04c4d243cfd0": {
+    "721fa49e-463f-47c4-bb77-64dbc9631101": {
      "title": "Strømkabler",
-     "id": "fa8b9a74-5062-499d-8883-04c4d243cfd0",
+     "id": "721fa49e-463f-47c4-bb77-64dbc9631101",
      "references": [
       "41979d0f-84c3-42cf-a08c-be4767f74cc1",
       "b52804be-cf95-4ab5-a522-6d4fbe22ee50"
      ]
     },
-    "14f943c7-c229-4aa2-b291-5aa839650d1e": {
-     "title": "Tilslutning",
-     "id": "14f943c7-c229-4aa2-b291-5aa839650d1e",
+    "f65fa929-43d4-482a-b47c-64b57654508b": {
+     "title": "Tilslutning og opsætning",
+     "id": "f65fa929-43d4-482a-b47c-64b57654508b",
      "references": [
       "d23e3a6d-0bb7-45d8-bd1e-ad1a759366e4",
       "176584b1-419d-44af-9397-84fb05ee72ee"

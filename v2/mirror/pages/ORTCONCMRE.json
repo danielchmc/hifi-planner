@@ -13,6 +13,22 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "6"
+  },
+  "gallery": [
+   "c0df92c1-7aa4-400b-9eca-cb85c6b2814c",
+   "3c0678c8-412c-4eeb-889d-6b51b6a8ea6a",
+   "b39efc64-01b8-418b-8f4d-bacb46db7f61",
+   "53e0cd5a-20ac-4a05-968d-a39c6884d08c",
+   "e761b472-6017-4a8e-acad-7c39cd40c7bd",
+   "72ef2d4b-2638-43eb-8b50-774cdf16339c",
+   "5bebb7e4-d343-4e04-9edc-f05822a01b65",
+   "5e123740-cfcd-4db5-b0ad-6c5582f0d2df"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 230963,
   "skuCode": "ORTCONCMRE",
@@ -154,7 +170,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 6,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -233,45 +249,53 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTCONCMRE leverer en meget tilfredsstillende opgradering med en varm, detaljeret og kraftfuld gengivelse. Pickupen roses for stærk ydelse, musikalsk klarhed og fremragende værdi for pengene. Nem montering, pålidelig drift og god service gør produktet til en begejstret anbefaling til vinyllyttere.",
+   "summary": "ORTCONCMRE får en begejstret vurdering som en raffineret pickup med varm lyd og detaljeret, musikalsk gengivelse. Den stærke værdi for pengene, pålidelige ydeevne og brede anvendelighed gør opgraderingen særligt attraktiv. Fremragende service og en meget tilfredsstillende lytteoplevelse fuldender helhedsindtrykket.",
    "headlines": {
-    "detailed, high-quality sound": {
-     "sentimentAnalysis": "Pickupen beskrives gennemgående som meget god, fin og yderst detaljeret med stærk samlet ydelse.",
-     "simpleTitle": "Detaljeret lyd i høj kvalitet",
+    "a very good pickup": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver pickup’en som meget god, fin eller fremragende.",
+     "simpleTitle": "En meget god pickup",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "18e85025-4969-41d5-a28c-8cebdc63c36b"
+     "key": "cartridge-quality",
+     "groupId": "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63"
     },
-    "clear upgrade over older systems": {
-     "sentimentAnalysis": "Produktet opfattes som en markant forbedring i forhold til tidligere DJ-udstyr og som en særdeles fin pickup.",
-     "simpleTitle": "Tydelig opgradering i forhold til ældre systemer",
+    "detailed sound and strong performance": {
+     "sentimentAnalysis": "Pickup’en roses for detaljeret lyd og meget god samlet ydeevne.",
+     "simpleTitle": "Detaljeret lyd og stærk ydeevne",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "18e85025-4969-41d5-a28c-8cebdc63c36b"
+     "key": "sound-performance",
+     "groupId": "668c6865-5e68-486a-8d07-15280bb7dbbd"
     },
-    "excellent value at an affordable price": {
-     "sentimentAnalysis": "Kombinationen af detaljeret ydelse og en overkommelig pris betragtes som en stor styrke.",
-     "simpleTitle": "Fremragende værdi til en overkommelig pris",
+    "excellent value for money": {
+     "sentimentAnalysis": "Produktet anses for prisvenligt og leverer samtidig meget god ydeevne.",
+     "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "d9ee8c1a-8245-4fdc-954f-0aa223f2ffe2"
+     "groupId": "f0dd186e-901b-46bd-bdfc-caa45de3e324"
     }
    },
    "grouping": {
-    "18e85025-4969-41d5-a28c-8cebdc63c36b": {
-     "title": "Lydkvalitet",
-     "id": "18e85025-4969-41d5-a28c-8cebdc63c36b",
+    "668c6865-5e68-486a-8d07-15280bb7dbbd": {
+     "title": "Lyd og ydeevne",
+     "id": "668c6865-5e68-486a-8d07-15280bb7dbbd",
      "references": [
       "37952b18-6dc6-41f4-a88c-9b4adb4e05d0",
-      "c882a35a-b5e5-49c2-ac3b-04edef434a1f",
-      "3149173e-e690-46de-b507-616f64b5d57f",
       "bb3cd688-cfc2-4ad8-bc8e-216abfa16502",
-      "dde65a19-3861-45b6-97a5-c19cf2a5bc7d"
+      "dde65a19-3861-45b6-97a5-c19cf2a5bc7d",
+      "8e29d5eb-88e0-4803-a9b1-db315bfd013c"
      ]
     },
-    "d9ee8c1a-8245-4fdc-954f-0aa223f2ffe2": {
+    "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63": {
+     "title": "Pickup-kvalitet",
+     "id": "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63",
+     "references": [
+      "6e0af9b4-fb29-4afd-89d6-a829b7dce8c3",
+      "c882a35a-b5e5-49c2-ac3b-04edef434a1f",
+      "3149173e-e690-46de-b507-616f64b5d57f"
+     ]
+    },
+    "f0dd186e-901b-46bd-bdfc-caa45de3e324": {
      "title": "Værdi for pengene",
-     "id": "d9ee8c1a-8245-4fdc-954f-0aa223f2ffe2",
+     "id": "f0dd186e-901b-46bd-bdfc-caa45de3e324",
      "references": [
       "bb3cd688-cfc2-4ad8-bc8e-216abfa16502",
       "dde65a19-3861-45b6-97a5-c19cf2a5bc7d"

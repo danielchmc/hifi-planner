@@ -13,6 +13,15 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Toslink · Type : Optisk digitalkabel · Eksklusiv optisk fiber med 19 enkeltledere"
+  },
+  "gallery": [
+   "645235fc-3a5a-4917-b80e-b9c7adaf4a3d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 59338,
   "skuCode": "AQCARBONOPT",
@@ -381,20 +390,27 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQCARBONOPT leverer en klar, varm og punchy optisk gengivelse med dybere bas, stærkere mikrodynamik og et mere rummeligt, immersivt lydbillede. Glasfiberkonstruktionen forbindes med gengivelse af fine musikalske detaljer og hørbare forbedringer sammenlignet med enklere kabler. En anmeldelse beskriver dog hyppige lydudfald og en optisk forbindelse, der ikke virkede, så kompatibilitet og pålidelighed kan variere fra system til system.",
+   "summary": "AQCARBONOPT roses generelt for en klarere, kraftigere og mere rummelig optisk lyd med forbedret mikrodynamik og en tydelig musikalsk forfinelse. Konstruktionen med glasfiberledere forbindes med gengivelse af selv de fineste musikalske detaljer og en hørbar merværdi i forhold til enklere kabler. En anmeldelse rapporterer dog hyppige udfald i lyden, så kompatibilitet og stabil drift kan variere.",
    "headlines": {
-    "clearer, more detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig lydmæssig forbedring med større klarhed, flere detaljer, bedre mikrodynamik og en mere rummelig gengivelse.",
-     "simpleTitle": "Klarere, mere detaljeret og mere rummelig lyd",
+    "more spacious, powerful and detailed sound": {
+     "sentimentAnalysis": "Kablet roses for at tilføre gengivelsen mere kraft, mikrodynamik, rummelighed og fine detaljer.",
+     "simpleTitle": "Mere rummelig, kraftfuld og detaljeret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "df53f15d-218d-4c6b-b7a7-39019914bf30"
+     "key": "spacious-detailed-sound",
+     "groupId": "387d5ece-4749-4f14-9738-b0f432ee660b"
+    },
+    "audible improvement over simpler cables": {
+     "sentimentAnalysis": "Kablet vurderes at give en mærkbar lydmæssig forbedring og ekstra værdi.",
+     "simpleTitle": "Hørbar forbedring i forhold til enklere kabler",
+     "bias": "positive",
+     "key": "audible-improvement",
+     "groupId": "387d5ece-4749-4f14-9738-b0f432ee660b"
     }
    },
    "grouping": {
-    "df53f15d-218d-4c6b-b7a7-39019914bf30": {
+    "387d5ece-4749-4f14-9738-b0f432ee660b": {
      "title": "Lydkvalitet",
-     "id": "df53f15d-218d-4c6b-b7a7-39019914bf30",
+     "id": "387d5ece-4749-4f14-9738-b0f432ee660b",
      "references": [
       "326591ab-235e-4cba-91bf-eae4087118ac",
       "84526031-179e-4bb7-bea7-f775b707093b",

@@ -13,6 +13,14 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b08e0dd7-83b7-43d3-9794-406e4dac2043",
+   "c042c10e-a2fa-4dd3-9f7e-5af0226b35be"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190213,
   "skuCode": "VESTV15CSTAND",
@@ -93,7 +101,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 330,
+     "availableQuantity": 329,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -116,103 +124,106 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse standere bliver generelt rost som en smart og flot opgradering, der passer godt til V15C-højttalerne og løfter lyden med en varm og medrivende gengivelse. Den solide stålkonstruktion, den gode stabilitet og det rene design gør parret til et naturligt match til højttalerne. Prisen, den begrænsede støtteflade og mulig ustabilitet eller bastab i visse opsætninger får dog kritik, så afkobling og bæreevne kunne forbedres.",
+   "summary": "VESTV15CSTAND-stativerne løfter højttalerne og passer flot ind visuelt, mens mange anmeldelser roser det solide, attraktive design og den præcise pasform. Den hævede placering kan give en klarere, fyldigere og mere omsluttende lyd med en varm og kraftfuld gengivelse fra højttalerne. En mindre del af anmeldelserne nævner uønskede vibrationer, tab af bas, begrænset støtte til højttalerne og en pris, der føles høj i forhold til konstruktionen.",
    "headlines": {
-    "raises the speakers for a clearer, more immersive sound": {
-     "sentimentAnalysis": "Standerne løfter konsekvent højttalerne og forbindes med klarere, fyldigere og mere medrivende lyd.",
-     "simpleTitle": "Løfter højttalerne for en klarere og mere medrivende lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "77c00781-81c7-4740-9dc1-edf1254526c6"
-    },
-    "solid steel construction stays firmly in place": {
-     "sentimentAnalysis": "Standerne beskrives gentagne gange som robuste, stabile og fremstillet af kraftige stålrør.",
-     "simpleTitle": "Solid stålkonstruktion står stabilt på plads",
+    "solid, attractive construction": {
+     "sentimentAnalysis": "De fleste kommentarer om konstruktionen beskriver stativerne som stabile, robuste, attraktive og veldesignede.",
+     "simpleTitle": "Solid og attraktiv konstruktion",
      "bias": "positive",
      "key": "stability",
-     "groupId": "6781ee72-23ac-452e-91b0-43a1d58bbaf1"
+     "groupId": "62513bf7-2e1e-4a31-869b-0d05f0133bb0"
     },
-    "clean design makes the speakers look even better": {
-     "sentimentAnalysis": "Standerne ses bredt som en flot tilføjelse, der fremhæver højttalernes udseende.",
-     "simpleTitle": "Det rene design får højttalerne til at se endnu bedre ud",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "749f356c-2824-41c0-8ff0-1b02ccdc676e"
-    },
-    "excellent fit for the V15C speakers": {
-     "sentimentAnalysis": "Flere anmeldelser oplever, at standerne passer præcist og er udviklet specifikt til højttalerne.",
-     "simpleTitle": "Fremragende pasform til V15C-højttalerne",
+    "speaker fit is generally precise": {
+     "sentimentAnalysis": "Flere korte anmeldelser roser stativerne for at passe perfekt eller passende til de vorgesehen højttalere.",
+     "simpleTitle": "Højttalerne passer generelt præcist",
      "bias": "positive",
      "key": "fit",
-     "groupId": "953627f9-1d00-4aca-9e35-c677eb78d112"
+     "groupId": "741c0eb2-7c13-4b3e-8fe5-9ddfa5bf8481"
     },
-    "unstable construction can reduce bass": {
-     "sentimentAnalysis": "To anmeldelser rapporterer, at bevægelse eller resonans i standerne forringer bassen og værdien.",
-     "simpleTitle": "Ustabil konstruktion kan svække bassen",
+    "raised stands improve the sound": {
+     "sentimentAnalysis": "Den hævede højttalerplacering forbindes gentagne gange med klarere, bedre og mere engagerende lyd.",
+     "simpleTitle": "Hævede stativer forbedrer lyden",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "513d8b43-87a0-4ed9-b835-518e55a91d6a"
+    },
+    "unstable stands can reduce bass": {
+     "sentimentAnalysis": "To anmeldelser kritiserer, at vibrationer i stativerne absorberer bas og forringer den tilsigtede lyd.",
+     "simpleTitle": "Ustabile stativer kan reducere bassen",
      "bias": "negative",
      "key": "sound",
-     "groupId": "77c00781-81c7-4740-9dc1-edf1254526c6"
+     "groupId": "513d8b43-87a0-4ed9-b835-518e55a91d6a"
+    },
+    "price is questioned by some": {
+     "sentimentAnalysis": "Nogle anmeldelser mener, at stativerne er dyre eller giver dårlig værdi i forhold til konstruktion og ydeevne.",
+     "simpleTitle": "Prisen kritiseres af nogle",
+     "bias": "negative",
+     "key": "price",
+     "groupId": "95d7f68a-7c94-48a7-9379-3468408eddc6"
     }
    },
    "grouping": {
-    "6781ee72-23ac-452e-91b0-43a1d58bbaf1": {
-     "title": "Stabilitet og konstruktion",
-     "id": "6781ee72-23ac-452e-91b0-43a1d58bbaf1",
+    "741c0eb2-7c13-4b3e-8fe5-9ddfa5bf8481": {
+     "title": "Pasform og kompatibilitet",
+     "id": "741c0eb2-7c13-4b3e-8fe5-9ddfa5bf8481",
+     "references": [
+      "c3c6eaad-7363-43e0-8602-bb62bec1e632",
+      "878d2b3a-49ee-4001-83ac-214f08a4d1a6",
+      "be0a6770-9ed0-4664-a5ed-c3f763d41ee1",
+      "1de134de-0236-4d3d-be28-dc084ca36b1e",
+      "0b3c4d81-d408-4140-a264-ee0c0eb95289",
+      "f887f4b8-bd7e-44a7-9fee-b88ec1bc8bd6",
+      "b026ae23-c970-40b1-b26d-a1effdc26371",
+      "fbc13a0a-48aa-4d4c-824c-578932cf87b4",
+      "b170c5ba-8148-4837-95e6-abaf1056eedf",
+      "5e3cb286-fbb0-4641-b5f4-ac06b96f1e1f",
+      "6a984d37-9b44-469c-b0d8-aa3758bdf98a",
+      "1f922bb9-41cb-4d68-b1a9-04774db22781",
+      "56b9a667-1a8c-46e9-a164-d43464059c93",
+      "5c7ac1a4-8f26-4766-810d-2eebd48a302b"
+     ]
+    },
+    "62513bf7-2e1e-4a31-869b-0d05f0133bb0": {
+     "title": "Stabilitet og byggekvalitet",
+     "id": "62513bf7-2e1e-4a31-869b-0d05f0133bb0",
      "references": [
       "c3c6eaad-7363-43e0-8602-bb62bec1e632",
       "bd985167-b3e5-44fb-ad79-a9f901f2ad61",
       "ac48c787-3762-4acf-b68e-df2c0afd37ec",
       "b2098570-ae68-4d11-8778-48c2e5988c25",
       "206accdb-d879-4dda-913c-73cda3029fd2",
+      "fb7500a1-a3ff-4b98-b1fa-d6b60736cda1",
+      "daa51575-e477-4b0b-8b2b-040e54d47b44",
       "ab547223-389d-4051-95b8-0a23f459ceef",
       "0b3c4d81-d408-4140-a264-ee0c0eb95289",
       "f887f4b8-bd7e-44a7-9fee-b88ec1bc8bd6",
       "765764d7-deeb-4542-bf56-1b7a6dd7ccff",
       "6a8f9f34-8107-470c-94d2-34fb440d144e",
-      "5c7ac1a4-8f26-4766-810d-2eebd48a302b",
-      "fb7500a1-a3ff-4b98-b1fa-d6b60736cda1",
-      "daa51575-e477-4b0b-8b2b-040e54d47b44"
+      "5c7ac1a4-8f26-4766-810d-2eebd48a302b"
      ]
     },
-    "953627f9-1d00-4aca-9e35-c677eb78d112": {
-     "title": "Pasform til højttalere",
-     "id": "953627f9-1d00-4aca-9e35-c677eb78d112",
-     "references": [
-      "c3c6eaad-7363-43e0-8602-bb62bec1e632",
-      "be0a6770-9ed0-4664-a5ed-c3f763d41ee1",
-      "1de134de-0236-4d3d-be28-dc084ca36b1e",
-      "0b3c4d81-d408-4140-a264-ee0c0eb95289",
-      "5e3cb286-fbb0-4641-b5f4-ac06b96f1e1f",
-      "1f922bb9-41cb-4d68-b1a9-04774db22781",
-      "5c7ac1a4-8f26-4766-810d-2eebd48a302b",
-      "f887f4b8-bd7e-44a7-9fee-b88ec1bc8bd6"
-     ]
-    },
-    "749f356c-2824-41c0-8ff0-1b02ccdc676e": {
-     "title": "Design og udseende",
-     "id": "749f356c-2824-41c0-8ff0-1b02ccdc676e",
-     "references": [
-      "878d2b3a-49ee-4001-83ac-214f08a4d1a6",
-      "bd985167-b3e5-44fb-ad79-a9f901f2ad61",
-      "ac48c787-3762-4acf-b68e-df2c0afd37ec",
-      "b2098570-ae68-4d11-8778-48c2e5988c25",
-      "0b3c4d81-d408-4140-a264-ee0c0eb95289",
-      "fbc13a0a-48aa-4d4c-824c-578932cf87b4",
-      "6a8f9f34-8107-470c-94d2-34fb440d144e",
-      "765764d7-deeb-4542-bf56-1b7a6dd7ccff"
-     ]
-    },
-    "77c00781-81c7-4740-9dc1-edf1254526c6": {
+    "513d8b43-87a0-4ed9-b835-518e55a91d6a": {
      "title": "Lydkvalitet",
-     "id": "77c00781-81c7-4740-9dc1-edf1254526c6",
+     "id": "513d8b43-87a0-4ed9-b835-518e55a91d6a",
      "references": [
       "717eafdb-ad37-44b5-b0f4-33e6751a885d",
+      "fb7500a1-a3ff-4b98-b1fa-d6b60736cda1",
       "4b6b5284-c389-4b80-b06d-2d99c1811129",
       "b026ae23-c970-40b1-b26d-a1effdc26371",
       "6a984d37-9b44-469c-b0d8-aa3758bdf98a",
       "1f922bb9-41cb-4d68-b1a9-04774db22781",
-      "5c7ac1a4-8f26-4766-810d-2eebd48a302b",
-      "fb7500a1-a3ff-4b98-b1fa-d6b60736cda1"
+      "5c7ac1a4-8f26-4766-810d-2eebd48a302b"
+     ]
+    },
+    "95d7f68a-7c94-48a7-9379-3468408eddc6": {
+     "title": "Pris og værdi",
+     "id": "95d7f68a-7c94-48a7-9379-3468408eddc6",
+     "references": [
+      "c3c6eaad-7363-43e0-8602-bb62bec1e632",
+      "206accdb-d879-4dda-913c-73cda3029fd2",
+      "ab547223-389d-4051-95b8-0a23f459ceef",
+      "765764d7-deeb-4542-bf56-1b7a6dd7ccff",
+      "daa51575-e477-4b0b-8b2b-040e54d47b44"
      ]
     }
    },

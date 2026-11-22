@@ -8,6 +8,13 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "f0dc3cc9-f250-4b70-a30f-caaf979e2968"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 121070,
   "skuCode": "SENSB01WMX",
@@ -94,7 +101,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 12,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -115,34 +122,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENSB01WMX får stor ros for stabil og pålidelig vægmontering, præcis pasform, komplet tilbehør og problemfri levering. Beslaget føles sikkert og praktisk med et gennemført design og solid konstruktion. Den tilhørende soundbar beskrives med varm, slagkraftig og omsluttende lyd, der overgår langt dyrere konkurrenter.",
+   "summary": "SENSB01WMX får stor ros for den stabile og pålidelige vægmontering samt den præcise pasform. Emballage, medfølgende tilbehør og levering vurderes også positivt, mens soundbaren beskrives som varm, kraftfuld, punchy og imponerende omsluttende. Det gennemførte design og den solide konstruktion gør produktet til en klar anbefaling.",
    "headlines": {
-    "secure and reliable mounting": {
-     "sentimentAnalysis": "Vægbeslaget roses for at være meget stabilt, pålideligt og effektivt.",
-     "simpleTitle": "Sikker og pålidelig montering",
+    "stable and reliable wall mounting": {
+     "sentimentAnalysis": "Vægbeslaget roses for den faste montering, pålidelige funktion og solide konstruktion.",
+     "simpleTitle": "Stabil og pålidelig vægmontering",
      "bias": "positive",
-     "key": "secure-mounting",
-     "groupId": "81655767-b7f2-477d-a3ef-5de8c6296660"
+     "key": "stable_mounting",
+     "groupId": "7423f9ca-61db-458f-9377-4ec5b78d7aed"
     },
-    "complete accessories and packaging": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver fremragende emballage, tydelige instruktioner og komplet tilbehør.",
-     "simpleTitle": "Komplet tilbehør og emballage",
+    "fast delivery": {
+     "sentimentAnalysis": "Leveringen beskrives som hurtig og pålidelig.",
+     "simpleTitle": "Hurtig levering",
      "bias": "positive",
-     "key": "complete-accessories",
-     "groupId": "da5ff815-e1b1-4c06-a661-30649af01e4c"
+     "key": "fast_delivery",
+     "groupId": "43f8eecd-c896-4903-a010-802a020b11e4"
     },
-    "fast, smooth delivery and service": {
-     "sentimentAnalysis": "Leveringen beskrives som hurtig, pålidelig og problemfri.",
-     "simpleTitle": "Hurtig og problemfri levering og service",
+    "complete packaging and accessories": {
+     "sentimentAnalysis": "Emballage, instruktioner og medfølgende tilbehør vurderes som komplet og godt præsenteret.",
+     "simpleTitle": "Komplet emballage og tilbehør",
      "bias": "positive",
-     "key": "fast-delivery",
-     "groupId": "f7b57ce6-a4b7-4004-aab6-39348ad54144"
+     "key": "complete_package",
+     "groupId": "23c5fda5-c56b-4f31-9030-cf54f307a860"
     }
    },
    "grouping": {
-    "81655767-b7f2-477d-a3ef-5de8c6296660": {
-     "title": "Montering og pasform",
-     "id": "81655767-b7f2-477d-a3ef-5de8c6296660",
+    "7423f9ca-61db-458f-9377-4ec5b78d7aed": {
+     "title": "Vægmontering",
+     "id": "7423f9ca-61db-458f-9377-4ec5b78d7aed",
      "references": [
       "70fac847-8bfe-47f6-865c-1b4e6f4e783c",
       "09373b3d-5b53-4e8f-b305-ba4e3a0b5063",
@@ -152,18 +159,17 @@
       "c1d571c8-1db4-40f8-83b0-acf8ba800e0b"
      ]
     },
-    "f7b57ce6-a4b7-4004-aab6-39348ad54144": {
-     "title": "Levering og service",
-     "id": "f7b57ce6-a4b7-4004-aab6-39348ad54144",
+    "43f8eecd-c896-4903-a010-802a020b11e4": {
+     "title": "Levering",
+     "id": "43f8eecd-c896-4903-a010-802a020b11e4",
      "references": [
       "685cc665-2a91-4a6b-91a5-9ef117808288",
-      "fbab87ac-8bfc-4972-967a-6cc68d5b4e99",
-      "a05b3c00-3429-4919-9cd4-21c62102b4f7"
+      "fbab87ac-8bfc-4972-967a-6cc68d5b4e99"
      ]
     },
-    "da5ff815-e1b1-4c06-a661-30649af01e4c": {
-     "title": "Tilbehør og emballage",
-     "id": "da5ff815-e1b1-4c06-a661-30649af01e4c",
+    "23c5fda5-c56b-4f31-9030-cf54f307a860": {
+     "title": "Emballage og tilbehør",
+     "id": "23c5fda5-c56b-4f31-9030-cf54f307a860",
      "references": [
       "09373b3d-5b53-4e8f-b305-ba4e3a0b5063",
       "0f089bd5-1e00-4775-87b2-2bc7dc1ddf61"

@@ -13,6 +13,19 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Optisk, Minijack/AUX",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang, Airplay 2, Chromecast, Spotify Connect",
+   "Højtaler type": "Trådløs højtaler"
+  },
+  "gallery": [
+   "c28caa30-a408-4ee7-ba36-cad92376faf4",
+   "927dcac6-df94-4f48-902a-367475839c57",
+   "cbdfc0ac-013f-442b-8a40-6fddcaafbfcc"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 149086,
   "skuCode": "BOBALANCE",
@@ -453,38 +466,44 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BOBALANCE leverer en raffineret, varm og meget detaljeret lyd med imponerende kraft i forhold til den kompakte størrelse og skaber en medrivende lytteoplevelse. Det elegante design understøtter den stærke lydoplevelse og løfter rummet visuelt. Opsætning via appen kan være frustrerende, men helhedsindtrykket er stadig fremragende.",
+   "summary": "BOBALANCE leverer varm, detaljeret og kraftfuld lyd i et smukt design, der løfter rummet. Lydkvaliteten roses bredt for klarhed, raffinement, immersive detaljer og en imponerende lyd i forhold til højttalerens størrelse. De primære forbehold gælder en til tider besværlig app og opsætning, mens nogle lyttere gerne ville have lidt mere tryk i de lave frekvenser.",
    "headlines": {
     "clear, detailed and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, raffinerede og kraftfulde lyd med imponerende detaljer og høj ydelse i forhold til størrelsen.",
+     "sentimentAnalysis": "Lyden roses konsekvent som klar, raffineret, detaljeret og kraftfuld med en stor gengivelse i forhold til højttalerens størrelse.",
      "simpleTitle": "Klar, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "bd0e742e-0f77-4b9f-9d34-3f0b907d5ac4"
+     "groupId": "66d60312-381d-49ca-bfdd-8e180751eaef"
     },
-    "elegant design enhances the room": {
-     "sentimentAnalysis": "Højttaleren beskrives konsekvent som visuelt flot, og designet tilfører stil til rummet.",
-     "simpleTitle": "Elegant design løfter rummet",
+    "beautiful design that enhances the room": {
+     "sentimentAnalysis": "Højttalerens udseende beskrives gentagne gange som smukt og stilfuldt og som noget, der løfter rummet visuelt.",
+     "simpleTitle": "Smukt design, der løfter rummet",
      "bias": "positive",
      "key": "design",
-     "groupId": "7baffd64-c9e6-43b0-b344-e14a728a17cf"
+     "groupId": "fdfdba1b-b857-4dc3-a24c-fbcbeede2e63"
     },
-    "app setup has difficulties and errors": {
-     "sentimentAnalysis": "Appens funktion og opsætning kritiseres for at være vanskelig og fejlbehæftet, især ved den første brug.",
-     "simpleTitle": "Opsætning via appen har problemer og fejl",
+    "app and setup can be troublesome": {
+     "sentimentAnalysis": "Appen og den indledende opsætning kritiseres for manglende software, fejl og en vanskelig brugeroplevelse, der kan skabe frustration.",
+     "simpleTitle": "App og opsætning kan være besværlig",
      "bias": "negative",
      "key": "app",
-     "groupId": "c16eb95b-a0ed-4305-abd6-ddbbc3efbecc"
+     "groupId": "2bed5099-904d-4994-bccd-dbd1eea72b38"
+    },
+    "slightly more low-end punch would be welcome": {
+     "sentimentAnalysis": "Den samlede lyd er stadig meget raffineret, men de lave frekvenser opleves som lidt mindre kraftfulde end ønsket.",
+     "simpleTitle": "Lidt mere tryk i de lave frekvenser ville være velkomment",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "66d60312-381d-49ca-bfdd-8e180751eaef"
     }
    },
    "grouping": {
-    "bd0e742e-0f77-4b9f-9d34-3f0b907d5ac4": {
+    "66d60312-381d-49ca-bfdd-8e180751eaef": {
      "title": "Lydkvalitet",
-     "id": "bd0e742e-0f77-4b9f-9d34-3f0b907d5ac4",
+     "id": "66d60312-381d-49ca-bfdd-8e180751eaef",
      "references": [
       "0ec150d6-67e3-454f-ae7b-287f27ab62f3",
       "e3cf6166-20fa-472f-b2bc-06d72e78477a",
-      "01e79c26-286a-423b-95f4-e676bd0538f5",
       "17835e94-74a4-46af-8179-48a3a814b6ee",
       "4d828605-606f-45a2-9c39-c6ab012f52aa",
       "f397828b-a877-476a-9659-70b489fbf5c6",
@@ -495,9 +514,9 @@
       "80852450-e21c-456c-bd06-68f7a8f0950a"
      ]
     },
-    "7baffd64-c9e6-43b0-b344-e14a728a17cf": {
+    "fdfdba1b-b857-4dc3-a24c-fbcbeede2e63": {
      "title": "Design",
-     "id": "7baffd64-c9e6-43b0-b344-e14a728a17cf",
+     "id": "fdfdba1b-b857-4dc3-a24c-fbcbeede2e63",
      "references": [
       "8794fb72-4fd8-459f-8c68-142682ee629f",
       "17835e94-74a4-46af-8179-48a3a814b6ee",
@@ -507,10 +526,11 @@
       "7f320d3f-5f2e-44ac-bc47-3f9aca82fbc9"
      ]
     },
-    "c16eb95b-a0ed-4305-abd6-ddbbc3efbecc": {
-     "title": "App",
-     "id": "c16eb95b-a0ed-4305-abd6-ddbbc3efbecc",
+    "2bed5099-904d-4994-bccd-dbd1eea72b38": {
+     "title": "App og opsætning",
+     "id": "2bed5099-904d-4994-bccd-dbd1eea72b38",
      "references": [
+      "8794fb72-4fd8-459f-8c68-142682ee629f",
       "f397828b-a877-476a-9659-70b489fbf5c6",
       "69aa314f-25a9-479e-ae4e-be5d18bb972a"
      ]

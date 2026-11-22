@@ -13,6 +13,15 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ca64910b-7aae-4d90-8ff5-f8fcfa441ac2",
+   "203d633b-bdeb-44a2-a1ce-ccea547ff141",
+   "eec08558-f424-4caa-a0ce-93a346c96054"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 242237,
   "skuCode": "NADC379-NADC538",
@@ -122,7 +131,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 539,
+        "availableQuantity": 499,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -134,48 +143,41 @@
      ],
      "parentProductCode": "NADC538",
      "reviews": {
-      "summary": "NAD C 538 roses bredt som en enkel og pålidelig CD-afspiller med varm, klar, detaljeret og dynamisk lyd. Den nemme betjening, støjsvage afspilning, gode integration med NAD-anlæg og stærke pris gør den særligt attraktiv. Enkelte anmeldelser nævner et svagt display, simple knapper eller fjernbetjening samt enkelte mekaniske problemer.",
+      "summary": "NAD C538 bliver bredt rost som en enkel og pålidelig cd-afspiller med varm, klar, detaljeret og dynamisk lyd, især sammen med NAD-forstærkere. Den nemme betjening, det afdæmpede design, den kompakte størrelse og det stærke forhold mellem pris og kvalitet fremhæves ofte. Nogle anmeldelser nævner den enkle fjernbetjening, plastpræget konstruktion, manglende slukknap, enkelte mekaniske problemer og mindre betjeningsdetaljer, men den samlede vurdering er meget begejstret: C538 gør det igen fornøjeligt at lytte til cd-samlingen.",
       "headlines": {
        "warm, clear and detailed sound": {
-        "sentimentAnalysis": "Afspilleren beskrives gentagne gange som varm, klar, naturlig, detaljeret, dynamisk og musikalsk engagerende.",
+        "sentimentAnalysis": "Afspilleren leverer en varm, klar, detaljeret og dynamisk gengivelse, som ofte lyder bedre end tidligere eller dyrere afspillere.",
         "simpleTitle": "Varm, klar og detaljeret lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "e5fc3d4e-d8ae-4e9d-81c2-0c0f8961cd00"
+        "groupId": "04acbb00-e03c-42e3-ad16-d2e35900f152"
        },
-       "strong value for the price": {
-        "sentimentAnalysis": "Anmeldelserne fremstiller konsekvent C 538 som en prisvenlig vej til CD-afspilning i høj kvalitet.",
-        "simpleTitle": "Stærk værdi for pengene",
+       "straightforward and easy to operate": {
+        "sentimentAnalysis": "Den ukomplicerede betjening, hurtige opsætning og overskuelige funktioner passer til lyttere, der bare vil lægge en cd i og gå i gang.",
+        "simpleTitle": "Enkel og nem at betjene",
+        "bias": "positive",
+        "key": "simplicity",
+        "groupId": "afa7ba8b-75d3-4701-b2d2-09a40905ba38"
+       },
+       "strong value and seamless NAD system matching": {
+        "sentimentAnalysis": "C538 opleves som en kompakt og prisstærk partner til NAD-forstærkere med matchende design, fælles betjening og et rent, enkelt udtryk.",
+        "simpleTitle": "Stærk værdi og perfekt match med NAD-systemer",
         "bias": "positive",
         "key": "value",
-        "groupId": "6d5a90aa-61d4-462c-9139-15247eba21ee"
+        "groupId": "c634973b-4fce-4d3b-b8ee-8f5cc68c2a4c"
        },
-       "simple operation without unnecessary features": {
-        "sentimentAnalysis": "Overskuelig betjening og fraværet af unødvendige funktioner er centrale styrker.",
-        "simpleTitle": "Enkel betjening uden unødvendige funktioner",
-        "bias": "positive",
-        "key": "usability",
-        "groupId": "0c015f0d-91da-47a9-b056-974f0eda8921"
-       },
-       "good match for NAD systems": {
-        "sentimentAnalysis": "NAD-design, systemintegration og fælles fjernbetjening værdsættes ofte.",
-        "simpleTitle": "Godt match til NAD-anlæg",
-        "bias": "positive",
-        "key": "build",
-        "groupId": "c3c0989e-a5e3-45d6-b9c7-9f2418660b7f"
-       },
-       "some controls and hardware feel basic": {
-        "sentimentAnalysis": "En mindre del af anmeldelserne kritiserer fjernbetjening, knapper, display eller skuffemekanik som enkel eller upraktisk.",
-        "simpleTitle": "Nogle betjeningselementer virker enkle",
+       "remote and mechanical details feel basic": {
+        "sentimentAnalysis": "Nogle ejere oplever fjernbetjeningen, knapperne, skuffemekanikken og plastkonstruktionen som mindre raffinerede end forventet, men det opvejer sjældent afspillerens lydkvalitet og værdi.",
+        "simpleTitle": "Fjernbetjening og mekanik virker enkel",
         "bias": "negative",
-        "key": "usability",
-        "groupId": "0c015f0d-91da-47a9-b056-974f0eda8921"
+        "key": "limitations",
+        "groupId": "c634973b-4fce-4d3b-b8ee-8f5cc68c2a4c"
        }
       },
       "grouping": {
-       "e5fc3d4e-d8ae-4e9d-81c2-0c0f8961cd00": {
+       "04acbb00-e03c-42e3-ad16-d2e35900f152": {
         "title": "Lydkvalitet",
-        "id": "e5fc3d4e-d8ae-4e9d-81c2-0c0f8961cd00",
+        "id": "04acbb00-e03c-42e3-ad16-d2e35900f152",
         "references": [
          "a9e05517-7cac-44b8-a62d-06b9cf3ca314",
          "6032e463-151d-475e-b4de-d75ee71e64e1",
@@ -196,8 +198,8 @@
          "c084a9bf-e3fe-41d3-b76b-4531c57e6707",
          "501e2062-1be3-4826-906f-8db6cf015d83",
          "6f3763f6-e07b-499a-abac-b057e2e721bd",
-         "6d13803e-584a-4101-a4df-80f802708266",
          "81e17ee6-dcb0-47e5-8191-e90b5543d528",
+         "cc331fde-2aa5-4512-a1f9-e1dba15e9450",
          "60f5ae0f-9739-4985-aaa1-2a14fab86a71",
          "e3083d3c-4be0-4e8b-8be7-964e3ec1b74e",
          "503726a9-9a3a-4f19-96c2-3945299643da",
@@ -206,6 +208,7 @@
          "33acf44b-6072-498b-be9b-f0514c17e8c9",
          "49adaa10-f658-4c96-9e89-7aecd4ceb61c",
          "552707ba-b59f-4a8a-a537-a8fea4bcc3bf",
+         "e15775cc-8afe-4c63-a59b-1655d6a0838c",
          "cbaa058b-6a50-4f66-97f1-804133a098b9",
          "468d7868-dbf4-4d48-8c9b-6aca65437146",
          "98d58976-b9ab-491c-9ca2-d058c95cca1d",
@@ -214,50 +217,75 @@
          "9d82925e-b000-4cf1-a14b-c2b5d5a746fb",
          "10b379b3-07f0-4d6d-b837-1287330bc98b",
          "98ac2d52-6b4a-4d1f-8e0a-d800cf42ef15",
+         "c1aab86a-b790-4262-b08a-14375410621e",
+         "11ad3a5a-5e3b-4eb1-a580-3bed9b59c193",
+         "08cb576e-0311-4f02-9f68-27a6ff83256d",
          "7e6dff23-0357-4b79-95dd-57aa634dae6c",
          "599bf23f-2cbf-4608-91a1-ae4f3d3c7699",
-         "c1aab86a-b790-4262-b08a-14375410621e",
-         "f5e1e855-cdc2-406e-8475-e96eb72058a1",
-         "dafdd807-b9ff-46c7-8a2a-ae3eef1de091",
-         "25e814b9-da29-46fe-add2-b9955e632d85",
-         "df140be3-23ab-4a1b-afaa-eedb02b8a125",
-         "df21210e-dc9b-4878-96d9-35ba38db1a78",
-         "a1e54fd6-1b26-4231-98aa-50d4037bcd62",
          "f5fa0451-ccdc-4137-af49-83f4840cb871",
-         "169ed949-c3a3-4e52-a2ac-a2a56585a6b8",
-         "5d68f510-44ff-4990-aeed-815082af2421",
-         "37387dca-4a33-459c-9d45-c01c0ea1c247",
-         "82e8f9c9-ebe6-4535-a1e0-ce04ae5d72df",
-         "2005511a-9057-4a53-a31c-106f8c544b14",
-         "727d4e97-e046-4a25-af2a-fcd83749bc99",
-         "da82031d-7a70-47db-949d-63ac40e48dec",
          "a24448c8-5c55-43e0-89fa-1aeba0cda44e",
          "e1d44a18-864c-42b8-98db-9d68129efd02",
          "6cfe0c4a-d6c5-4082-9de7-454363f19d7d",
-         "f475dfda-1772-41be-afd8-63260f09cba5",
-         "28f7e2f6-430b-471e-9196-21aac3369148",
-         "857aa30f-3496-48c8-a71d-72658b85b1dc",
-         "191a85d5-3c23-45a1-93d9-cd6e21ad2ef7",
-         "6ae6c359-7d70-4bbe-9e5d-ae33df68b961",
-         "155865bc-706e-45d2-adb2-b2ab75697343",
-         "11ad3a5a-5e3b-4eb1-a580-3bed9b59c193",
-         "08cb576e-0311-4f02-9f68-27a6ff83256d",
-         "7ab94bf9-f7b1-43eb-94b8-9e10c11453b1",
-         "15a7fad9-8ef9-4057-bedb-9707e273e251",
-         "6b55b3c8-cdb3-45fa-8beb-a742a6f18aa4",
-         "7292fcbf-a829-409f-91aa-accdaf55d2d2",
-         "bb2296e5-939a-480e-9940-df97fbc26da8",
+         "169ed949-c3a3-4e52-a2ac-a2a56585a6b8",
+         "d39311e3-dd03-42e0-9fcd-5798aaaccc84",
+         "5d68f510-44ff-4990-aeed-815082af2421",
+         "df140be3-23ab-4a1b-afaa-eedb02b8a125",
+         "df21210e-dc9b-4878-96d9-35ba38db1a78",
+         "dafdd807-b9ff-46c7-8a2a-ae3eef1de091",
+         "25e814b9-da29-46fe-add2-b9955e632d85",
+         "f5e1e855-cdc2-406e-8475-e96eb72058a1",
          "192712a5-8fed-41ca-bdcb-b2e5b588a286",
+         "bb2296e5-939a-480e-9940-df97fbc26da8",
          "8560130e-a416-4957-be33-db954971a068",
-         "50bc3181-65da-4bf1-a479-f05aeeadde06",
-         "f3ffa047-391e-416d-ad0d-08142f8ae0e7",
-         "5d44f4e2-b00f-42c9-8376-19c818c7580e",
-         "aa3e5554-63f1-453d-9021-a635dfed0b53"
+         "2005511a-9057-4a53-a31c-106f8c544b14"
         ]
        },
-       "0c015f0d-91da-47a9-b056-974f0eda8921": {
-        "title": "Brugervenlighed",
-        "id": "0c015f0d-91da-47a9-b056-974f0eda8921",
+       "c634973b-4fce-4d3b-b8ee-8f5cc68c2a4c": {
+        "title": "Pris, kvalitet og design",
+        "id": "c634973b-4fce-4d3b-b8ee-8f5cc68c2a4c",
+        "references": [
+         "3411beae-95e7-4151-953e-255b72df0b65",
+         "4913d4ee-f215-4282-8c13-282afcc3867e",
+         "4de0bc33-1814-4696-af64-bb5cdfd559d0",
+         "ef8e1d86-3e7c-40ed-9f60-87c61e9a6179",
+         "6b2b505f-f2c1-4897-a7b0-b4499ef5a336",
+         "8f6fa8cf-1291-4d57-b317-183589d41c92",
+         "f8c4cd30-4c5a-440e-b14a-99358d481bf3",
+         "8d03b5ff-f13d-486d-b500-78e3f098aef9",
+         "f1c86762-0f97-49af-832a-06cd4181a372",
+         "bd71b859-522c-4c1f-8607-8953f3bfddde",
+         "feb3ca9c-3bfa-402d-bb18-6df5f29391f6",
+         "62f6827a-9185-41ec-aa9b-ca30dbc92d63",
+         "b2094581-a3b3-435d-8327-8910f3c92ea4",
+         "9eec96ab-d559-4e50-803e-1991091fe5c0",
+         "c9aaa408-2af6-4106-a530-1be838a00da4",
+         "93fefbeb-3429-4a8e-90d2-0b333f12dcfb",
+         "529e3e1b-c6d2-45c6-96d2-68a53da95cd9",
+         "9e7ad0b3-ebd7-4fc6-b8c8-f5d830615e94",
+         "ba098b4f-5808-4470-9656-1d1c60d76f2b",
+         "f8a9c25b-3fca-4b7d-a3a1-f3cc9497dd4a",
+         "197a2682-b050-418d-9897-fed56f1392d2",
+         "881a7f08-dd1a-4712-be40-8245858ffb1d",
+         "fd1499fd-b553-4a92-8189-b6ed279a4387",
+         "57f6337a-76ea-4603-a894-36f59ab1a6ea",
+         "a5ecdaee-5306-47b0-86a2-1fcd02f79d46",
+         "350d5d30-3a66-4214-99cd-c136e407f5e1",
+         "15a7fad9-8ef9-4057-bedb-9707e273e251",
+         "266a9ca5-9a17-4260-a70c-1cc177f96944",
+         "0d1009eb-e4dc-41a4-a685-da1f8e6c3c8b",
+         "52396006-13c6-4f3f-bf71-296ae2e0eae7",
+         "019df13b-2dd1-42fc-b8ea-a11442e9227b",
+         "4f92f269-73d7-4538-a723-379e6c0512eb",
+         "3ac4e9ff-a0de-47bd-a21b-3125b15f0cd2",
+         "e3bf5023-3d84-4e2e-8937-44629e95048d",
+         "b5214324-1a38-4cef-9537-376f724e484f",
+         "a1e54fd6-1b26-4231-98aa-50d4037bcd62",
+         "42fbe55a-786d-460c-911d-77391c451639"
+        ]
+       },
+       "afa7ba8b-75d3-4701-b2d2-09a40905ba38": {
+        "title": "Betjening",
+        "id": "afa7ba8b-75d3-4701-b2d2-09a40905ba38",
         "references": [
          "8df13433-a8bf-4e43-b1a4-b71d3a2dca4a",
          "ad2e9e8b-f2a8-4651-b0bc-553cfdbb5e03",
@@ -267,96 +295,29 @@
          "06913853-d717-41d4-8bcd-d512dd8ac326",
          "947e570a-0d70-4943-ae07-4b480ca17060",
          "fbbdeba0-755c-431e-b7a3-76268d9e7ec3",
-         "d35eaf20-6474-4df1-ba65-c810e4c1877b",
-         "4af95c18-5051-4af9-a46a-bf36db31f962",
          "4d411235-1034-460c-8dba-4f99416dd3db",
-         "503726a9-9a3a-4f19-96c2-3945299643da",
-         "ffe71aad-f233-4eb1-904d-f52786659624",
-         "98ac2d52-6b4a-4d1f-8e0a-d800cf42ef15",
+         "4af95c18-5051-4af9-a46a-bf36db31f962",
+         "32ef74dc-e28e-402d-9c38-1f9408f01180",
          "aaeb884c-cc92-44e6-9ecb-e5d7b202e3c9",
-         "aff3b111-0a51-4814-8f82-37e6805e6103",
-         "8f6a2756-9bae-4fd1-b42b-0cc379abe962",
-         "24e0369c-ac62-4027-9dd8-008ec29b9fc7",
-         "3c9c382f-200b-4a90-8ca5-45f9244026ef",
-         "86d308e6-747e-4a42-a01c-4cd23114f30f",
-         "d29f8850-4db2-4980-97f9-d0300e1e773d",
+         "98ac2d52-6b4a-4d1f-8e0a-d800cf42ef15",
+         "14ebbcb3-9fce-4a70-9f25-32276bd218cc",
          "7ecf1d37-5d86-4873-bdd5-1e1ebe47bf69",
          "f3ffa047-391e-416d-ad0d-08142f8ae0e7",
-         "14ebbcb3-9fce-4a70-9f25-32276bd218cc",
-         "25e92d0e-293a-4e44-8814-eb9fd3dbd698",
-         "727d4e97-e046-4a25-af2a-fcd83749bc99",
-         "da82031d-7a70-47db-949d-63ac40e48dec",
+         "86d308e6-747e-4a42-a01c-4cd23114f30f",
          "a38ee185-c62d-40ed-8b6b-22a2163a7164",
-         "d92d7745-438c-4435-af76-b95eb0a649b2",
-         "155865bc-706e-45d2-adb2-b2ab75697343",
-         "7ab94bf9-f7b1-43eb-94b8-9e10c11453b1",
-         "a02db362-e231-4fda-b88c-92c9c85f0b86",
-         "d3a707b8-dc26-4abf-b1a7-b353610cbc9f",
          "d29f8850-4db2-4980-97f9-d0300e1e773d",
-         "5e7720f6-7155-46cc-9cb4-c46fc8ac9933",
+         "a7b6df5a-bdaa-4b25-a86f-d8958d4b9042",
+         "4db75b1d-00ff-472a-8239-2d591103d78c",
+         "3c9c382f-200b-4a90-8ca5-45f9244026ef",
+         "766952a5-c2c5-44bf-a841-3eb11bf74370",
          "3b247f1b-5344-47a5-ab09-cdf9d5ac2051",
-         "e7461878-7e2f-412c-9009-207805c211c0"
-        ]
-       },
-       "c3c0989e-a5e3-45d6-b9c7-9f2418660b7f": {
-        "title": "Design og kompatibilitet",
-        "id": "c3c0989e-a5e3-45d6-b9c7-9f2418660b7f",
-        "references": [
-         "6032e463-151d-475e-b4de-d75ee71e64e1",
-         "3411beae-95e7-4151-953e-255b72df0b65",
-         "510b4b8d-3c8a-48e1-a9a2-df2fcd4258f1",
-         "8d03b5ff-f13d-486d-b500-78e3f098aef9",
-         "947e570a-0d70-4943-ae07-4b480ca17060",
-         "968b5ce8-edfa-4f23-8868-7aabdd6e4165",
-         "17c08488-c977-4e39-85dc-816f5d79b092",
-         "62f6827a-9185-41ec-aa9b-ca30dbc92d63",
-         "468d7868-dbf4-4d48-8c9b-6aca65437146",
-         "529e3e1b-c6d2-45c6-96d2-68a53da95cd9",
-         "085bbca2-3eff-4265-a17a-96f80d5af560",
-         "657077b5-8b93-42c1-bbfa-8e7cb8289fa1",
-         "14ebbcb3-9fce-4a70-9f25-32276bd218cc",
+         "d92d7745-438c-4435-af76-b95eb0a649b2",
+         "8560130e-a416-4957-be33-db954971a068",
+         "5e7720f6-7155-46cc-9cb4-c46fc8ac9933",
+         "7ab94bf9-f7b1-43eb-94b8-9e10c11453b1",
          "dc9a83f1-ba31-4606-b779-42dd512ae57c",
-         "ac25e655-dcb5-4b83-8618-216b59e5d22e",
          "24e0369c-ac62-4027-9dd8-008ec29b9fc7",
-         "2005511a-9057-4a53-a31c-106f8c544b14",
-         "af1689f7-cd4e-49c5-9cf0-3c6b946c2308",
-         "4f92f269-73d7-4538-a723-379e6c0512eb",
-         "3ac4e9ff-a0de-47bd-a21b-3125b15f0cd2",
-         "f24953fd-21f3-4e6e-bbdc-bfd8e5362688",
-         "52396006-13c6-4f3f-bf71-296ae2e0eae7",
-         "f8c4cd30-4c5a-440e-b14a-99358d481bf3",
-         "32ef74dc-e28e-402d-9c38-1f9408f01180",
-         "a1e54fd6-1b26-4231-98aa-50d4037bcd62"
-        ]
-       },
-       "6d5a90aa-61d4-462c-9139-15247eba21ee": {
-        "title": "Pris og værdi",
-        "id": "6d5a90aa-61d4-462c-9139-15247eba21ee",
-        "references": [
-         "3411beae-95e7-4151-953e-255b72df0b65",
-         "4913d4ee-f215-4282-8c13-282afcc3867e",
-         "ef8e1d86-3e7c-40ed-9f60-87c61e9a6179",
-         "4de0bc33-1814-4696-af64-bb5cdfd559d0",
-         "6b2b505f-f2c1-4897-a7b0-b4499ef5a336",
-         "8f6fa8cf-1291-4d57-b317-183589d41c92",
-         "17c08488-c977-4e39-85dc-816f5d79b092",
-         "feb3ca9c-3bfa-402d-bb18-6df5f29391f6",
-         "b2094581-a3b3-435d-8327-8910f3c92ea4",
-         "9eec96ab-d559-4e50-803e-1991091fe5c0",
-         "881a7f08-dd1a-4712-be40-8245858ffb1d",
-         "9e7ad0b3-ebd7-4fc6-b8c8-f5d830615e94",
-         "ba098b4f-5808-4470-9656-1d1c60d76f2b",
-         "f8a9c25b-3fca-4b7d-a3a1-f3cc9497dd4a",
-         "c9aaa408-2af6-4106-a530-1be838a00da4",
-         "fd1499fd-b553-4a92-8189-b6ed279a4387",
-         "15a7fad9-8ef9-4057-bedb-9707e273e251",
-         "350d5d30-3a66-4214-99cd-c136e407f5e1",
-         "a5ecdaee-5306-47b0-86a2-1fcd02f79d46",
-         "0d1009eb-e4dc-41a4-a685-da1f8e6c3c8b",
-         "50935e93-5708-4dd5-ae4c-bb5faeb26741",
-         "57f6337a-76ea-4603-a894-36f59ab1a6ea",
-         "191a85d5-3c23-45a1-93d9-cd6e21ad2ef7",
-         "881a7f08-dd1a-4712-be40-8245858ffb1d"
+         "aa3e5554-63f1-453d-9021-a635dfed0b53"
         ]
        }
       },
@@ -392,7 +353,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 195,
+        "availableQuantity": 184,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "8.999,-",
@@ -402,7 +363,155 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "NADC379"
+     "parentProductCode": "NADC379",
+     "reviews": {
+      "summary": "NAD C 379 roses bredt som en kraftfuld og alsidig forstærker med varm, klar, detaljeret og dynamisk lyd. De mange tilslutninger, herunder HDMI ARC, Bluetooth, streamingmuligheder og phono, gør den nem at integrere i både moderne og analoge anlæg. En mindre gruppe nævner udfordringer med opsætning og menuer, softwarefejl, mangelfuld dokumentation, lejlighedsvis støj eller brum samt lidt mindre diskant og opløsning end hos dyrere forstærkere.",
+      "headlines": {
+       "warm, clear and detailed sound": {
+        "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som varm, klar, fyldig, detaljeret og meget behagelig.",
+        "simpleTitle": "Varm, klar og detaljeret lyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
+       },
+       "broad connections for digital and analogue sources": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter gennemgående det store udvalg af tilslutninger, herunder HDMI ARC, Bluetooth, streaming og phono.",
+        "simpleTitle": "Mange tilslutninger til digitale og analoge kilder",
+        "bias": "positive",
+        "key": "connectivity",
+        "groupId": "254d791e-d0e8-4b76-8cbd-106eb5b105cc"
+       },
+       "strong, dynamic and revealing presentation": {
+        "sentimentAnalysis": "Flere anmeldelser fremhæver kraftfuld drift, dynamisk energi og en afslørende gengivelse, der viser hidtil uhørte musikdetaljer.",
+        "simpleTitle": "Kraftfuld, dynamisk og afslørende gengivelse",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
+       },
+       "setup and documentation can be frustrating": {
+        "sentimentAnalysis": "Flere ejere fandt vejledningen svær at finde eller utilgængelig på tryk, mens opsætning og menunavigation til tider krævede ekstra arbejde.",
+        "simpleTitle": "Opsætning og dokumentation kan være frustrerende",
+        "bias": "negative",
+        "key": "usability",
+        "groupId": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5"
+       },
+       "simple operation after setup": {
+        "sentimentAnalysis": "Flere anmeldelser beskriver den daglige betjening og justering som enkel efter opsætningen.",
+        "simpleTitle": "Enkel betjening efter opsætning",
+        "bias": "positive",
+        "key": "usability",
+        "groupId": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5"
+       },
+       "treble can sound recessed or less refined": {
+        "sentimentAnalysis": "To sammenligninger peger på mindre diskantenergi eller opløsning end hos andre forstærkere og anlæg.",
+        "simpleTitle": "Diskanten kan virke tilbagetrukket eller mindre raffineret",
+        "bias": "negative",
+        "key": "sound",
+        "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
+       }
+      },
+      "grouping": {
+       "adcbdb4f-8c58-46a6-a225-ebc1105dfdee": {
+        "title": "Lydkvalitet",
+        "id": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee",
+        "references": [
+         "926805c6-9cfe-4539-a39d-db9a6be58850",
+         "dcffd5ee-6f44-4519-a9c9-ca905863317c",
+         "53d0bba6-f508-44cb-8558-eda445b73482",
+         "d899d688-31c3-4999-a757-11a1bfe71d61",
+         "357fbb56-d246-4c8d-aebd-25e48ea20bf1",
+         "91126463-202d-4a9c-9948-3ccfbf3f6300",
+         "dab63f25-2201-4656-b940-b146520739ee",
+         "f065e749-074f-494c-85ef-ed7daa28fc74",
+         "ee8579ce-6553-41db-97f6-7136c6bf7a13",
+         "7e27353b-32a2-46ad-aadd-d9a5b7025830",
+         "3f6ea180-6067-4c5b-8524-7bfdb64a1b7a",
+         "1322ecba-d759-4606-896d-9365a73649a4",
+         "b5387da3-2997-4ccf-b864-a0b813141aeb",
+         "4f4c5a98-0030-4e3c-97d7-fe44a44d20d7",
+         "ff09e70f-a058-4146-9389-10479b1b7e52",
+         "509ba3dd-2610-4690-80e9-9013a8a89be1",
+         "4c81e6d2-cd2f-4905-90d1-afad3a07d509",
+         "5109e791-597f-4b29-bfdb-e7fcde65247f",
+         "b3f0b655-0b54-4c70-a339-e7378493238b",
+         "8cd368c4-cd4a-4f5a-8e99-84ff3ca127f8",
+         "64f69489-238f-4678-b203-0928132d6cbf",
+         "0034117a-ef07-4b03-9f78-b93bfbcd8827",
+         "7227ed63-6583-4dcc-94e0-f5e271b10b79",
+         "70887c19-f1f7-45eb-a18a-cd16ec4dd4a5",
+         "ee211623-6899-4533-9df5-d35d4c488f53",
+         "5eeda713-fd91-4203-85e7-8b7fa21f3e06",
+         "f5d43617-3879-4026-a1b1-de9c8209b39e",
+         "9d0b5871-fd3d-4088-92a4-59a841ae7121",
+         "aee0d6e8-9195-492e-9684-f74aec065e49",
+         "8e16eb7e-83c2-4c53-a227-9fda712c87d8",
+         "28e36fc9-c04a-4d74-945a-50fe56d1bbef",
+         "87bc9bf8-7311-4a8a-a376-88ac8b24be93",
+         "7cc7a0b7-8baf-4ccd-9950-0b646aa04a38",
+         "5b933926-5ceb-4681-bebe-6fe647ddf52b",
+         "4885c524-c459-4e2a-9aa9-527513135584",
+         "0a7eaa20-7e07-4187-aabd-528de63a9b81",
+         "d8b62ef5-f211-42ae-acca-b267e9bdecd8",
+         "6e097438-cd66-4b54-9044-f64fbe303149",
+         "f2637de6-0942-4dac-b88d-84d41140bf0b",
+         "dab5fff1-f084-4079-b2c4-ad75e7a689a5",
+         "32e2583e-da91-4315-a6dd-9e5705fd28a8",
+         "30c94b9c-1a4b-45aa-aeeb-a0f86239d12f"
+        ]
+       },
+       "254d791e-d0e8-4b76-8cbd-106eb5b105cc": {
+        "title": "Tilslutninger og funktioner",
+        "id": "254d791e-d0e8-4b76-8cbd-106eb5b105cc",
+        "references": [
+         "1943ef95-514b-4ace-96f4-ef73c197156c",
+         "357fbb56-d246-4c8d-aebd-25e48ea20bf1",
+         "91126463-202d-4a9c-9948-3ccfbf3f6300",
+         "f065e749-074f-494c-85ef-ed7daa28fc74",
+         "4c81e6d2-cd2f-4905-90d1-afad3a07d509",
+         "5109e791-597f-4b29-bfdb-e7fcde65247f",
+         "5ba33cbd-0424-489b-9542-ee67440e234b",
+         "70887c19-f1f7-45eb-a18a-cd16ec4dd4a5",
+         "a7f1783f-3fb8-46c7-8895-94387c5e91fe",
+         "ee211623-6899-4533-9df5-d35d4c488f53",
+         "8e16eb7e-83c2-4c53-a227-9fda712c87d8",
+         "87bc9bf8-7311-4a8a-a376-88ac8b24be93",
+         "4885c524-c459-4e2a-9aa9-527513135584",
+         "d8b62ef5-f211-42ae-acca-b267e9bdecd8",
+         "6e097438-cd66-4b54-9044-f64fbe303149",
+         "53e8bdb9-e927-4229-aeda-ccf7fe4ddcab",
+         "30c94b9c-1a4b-45aa-aeeb-a0f86239d12f"
+        ]
+       },
+       "1ae6b72a-5bd5-4004-ac40-b6b8821500c5": {
+        "title": "Opsætning og betjening",
+        "id": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5",
+        "references": [
+         "fcaf6422-5a2d-4e2b-aeb5-0fb063325e9a",
+         "53d0bba6-f508-44cb-8558-eda445b73482",
+         "03898e77-af94-47da-935f-78bec6edb1f0",
+         "5ef7a35e-d03e-4b4d-8383-971020c5067d",
+         "71a25eb9-24b7-42bb-8adc-1146031350ee",
+         "d7c5bb15-629c-4252-984e-9c5c2ad9f291",
+         "e0efcf04-9b1c-421e-b219-e9b2fe86aad0",
+         "5eeda713-fd91-4203-85e7-8b7fa21f3e06",
+         "224923b3-cc2f-4696-9f04-b7f2af8ff03a",
+         "aee0d6e8-9195-492e-9684-f74aec065e49",
+         "11623368-ed22-4e0f-aee5-086979fa3fc1",
+         "32e2583e-da91-4315-a6dd-9e5705fd28a8"
+        ]
+       }
+      },
+      "rating": 4.65408805031446,
+      "count": 159,
+      "reviewCount": 75,
+      "distribution": {
+       "1": 3,
+       "2": 1,
+       "3": 8,
+       "4": 24,
+       "5": 123
+      }
+     }
     }
    ],
    "sellableOnWeb": true,
@@ -410,7 +519,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 21
+    "numberOfStoresExperience": 20
    }
   },
   "variantNavigationType": "dropDown",

@@ -13,6 +13,19 @@
    "url": "/pladespiller/riaa-forstaerker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Indgangsimpedans": "100 ohm/180pF (MC), 47kOhm/200pF (MM)",
+   "Indgange": "Analog RCA",
+   "Udgange": "Analog RCA",
+   "Fra beskrivelsen": "Passer til MM- og MC-pickupper (low/high-output) samt line-level lydkilder (f.eks. båndoptager)"
+  },
+  "gallery": [
+   "c5d78a54-0dba-4ef9-88cf-bcb1fd1e8379",
+   "9f53df8a-a001-498a-955f-9ad193d663a1"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 1408,
   "skuCode": "NADPP4",
@@ -218,48 +231,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NADPP4 leverer en klar, varm og dynamisk lyd og giver fremragende værdi for pengene. Vinylafspilning nyder godt af en tydelig forbedring i forhold til visse indbyggede receiver- eller ældre NAD-phono-forforstærkere, og ydelsen kan sagtens måle sig med cd og high-resolution streaming. USB-digitalisering er nyttig, men den medfølgende VinylStudio-software skuffer, og installationsvejledningen kunne være bedre.",
+   "summary": "NADPP4 leverer klar, varm, fyldig og medrivende lyd til en attraktiv pris, er nem at betjene og fungerer overbevisende med forskellige pladespilleropsætninger. Digitalisering af LP’er og singler er praktisk, mens USB-tilslutningen også gør kassetteoverførsel mulig. Den medfølgende VinylStudio-software er den største svaghed, da tilgængelighed, begrænsninger og optagestabilitet kritiseres.",
    "headlines": {
-    "clear, warm and highly detailed sound": {
-     "sentimentAnalysis": "Lyden roses konsekvent som klar, varm og meget god.",
-     "simpleTitle": "Klar, varm og meget detaljeret lyd",
+    "clear, warm sound": {
+     "sentimentAnalysis": "RIAA-trinnet roses gentagne gange for klar, varm og konsekvent ren lyd og for at forbedre eksisterende receiver- eller NAD-RIAA-trin.",
+     "simpleTitle": "Klar, varm lyd",
      "bias": "positive",
-     "key": "clear-warm-sound",
-     "groupId": "86e5b7e4-0df1-40bd-951c-abf2a37ede90"
+     "key": "sound-quality",
+     "groupId": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Produktet vurderes gentagne gange som billigt eller rimeligt prissat i forhold til ydelsen.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "attractive price": {
+     "sentimentAnalysis": "Enheden vurderes gentagne gange som prisvenlig og tilbyder meget god lyd og nyttige funktioner til prisen.",
+     "simpleTitle": "Attraktiv pris",
      "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "36b3fc26-f050-4e2d-8915-16e0664aa3e4"
+     "key": "value",
+     "groupId": "2870717e-4b2f-4ef8-8570-d53e105d8a23"
     },
-    "strong performance against higher-quality sources": {
-     "sentimentAnalysis": "Phonotrinnet beskrives som en forbedring i forhold til ældre NAD-udstyr og kan måle sig med cd og high-resolution streaming.",
-     "simpleTitle": "Stærk ydelse sammenlignet med bedre kilder",
+    "strong turntable performance": {
+     "sentimentAnalysis": "Kompatibilitet med Rega- og Thorens-pladespillere kombineres med meget god lyd, hvor vinyl kan måle sig med cd’er og streaming i høj opløsning.",
+     "simpleTitle": "Stærk pladespillerydelse",
      "bias": "positive",
-     "key": "strong-performance",
-     "groupId": "86e5b7e4-0df1-40bd-951c-abf2a37ede90"
+     "key": "sound-quality",
+     "groupId": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b"
     },
-    "convenient USB recording and digitisation": {
-     "sentimentAnalysis": "USB-tilslutningen vurderes som nyttig til at digitalisere plader og andre analoge optagelser.",
-     "simpleTitle": "Praktisk USB-optagelse og digitalisering",
+    "practical vinyl digitisation": {
+     "sentimentAnalysis": "USB-optagelse anses for nyttig til digitalisering af LP’er og singler, og kassetteoverførsel nævnes også som en praktisk anvendelse.",
+     "simpleTitle": "Praktisk vinyldigitalisering",
      "bias": "positive",
-     "key": "usb-digitisation",
-     "groupId": "d50f20ad-5018-43dd-aa6f-06f148544be5"
+     "key": "digitisation",
+     "groupId": "10f00935-cf00-48a9-b9b1-358fe9c5813a"
     },
-    "bundled VinylStudio software is unreliable and overly limited": {
-     "sentimentAnalysis": "Den anbefalede software kritiseres for manglende downloads, afbrudte optagelser, dårlig kvalitet og stramme begrænsninger i gratisversionen.",
-     "simpleTitle": "Den medfølgende VinylStudio-software er ustabil og stærkt begrænset",
+    "vinylStudio software is limited and unreliable": {
+     "sentimentAnalysis": "Den anbefalede VinylStudio-software kritiseres for manglende downloads, stramme begrænsninger i gratisversionen og gentagne optagelsesafbrydelser, så alternativer bliver brugt.",
+     "simpleTitle": "VinylStudio er begrænset og ustabilt",
      "bias": "negative",
-     "key": "software-limitations",
-     "groupId": "0bbc0986-9eb0-4af7-9278-f9010a77811c"
+     "key": "digitisation",
+     "groupId": "10f00935-cf00-48a9-b9b1-358fe9c5813a"
     }
    },
    "grouping": {
-    "86e5b7e4-0df1-40bd-951c-abf2a37ede90": {
+    "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b": {
      "title": "Lydkvalitet",
-     "id": "86e5b7e4-0df1-40bd-951c-abf2a37ede90",
+     "id": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b",
      "references": [
       "cad2995e-5e96-41ed-89bd-a97317368638",
       "65361059-b556-4639-9808-ef379696ed6d",
@@ -269,29 +282,22 @@
       "7d58d07b-9970-483a-ac3c-48140ebd95c8"
      ]
     },
-    "36b3fc26-f050-4e2d-8915-16e0664aa3e4": {
+    "10f00935-cf00-48a9-b9b1-358fe9c5813a": {
+     "title": "Digitalisering",
+     "id": "10f00935-cf00-48a9-b9b1-358fe9c5813a",
+     "references": [
+      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
+      "e53fe8db-5b77-49c4-9c4f-40f2b5225d97",
+      "467b99c4-ab2a-4d81-9a07-0c57b5df3b35"
+     ]
+    },
+    "2870717e-4b2f-4ef8-8570-d53e105d8a23": {
      "title": "Værdi for pengene",
-     "id": "36b3fc26-f050-4e2d-8915-16e0664aa3e4",
+     "id": "2870717e-4b2f-4ef8-8570-d53e105d8a23",
      "references": [
       "cad2995e-5e96-41ed-89bd-a97317368638",
       "e53fe8db-5b77-49c4-9c4f-40f2b5225d97",
       "ef812334-823c-4862-b481-f3179c0e5c5e"
-     ]
-    },
-    "d50f20ad-5018-43dd-aa6f-06f148544be5": {
-     "title": "Digitalisering",
-     "id": "d50f20ad-5018-43dd-aa6f-06f148544be5",
-     "references": [
-      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
-      "e53fe8db-5b77-49c4-9c4f-40f2b5225d97"
-     ]
-    },
-    "0bbc0986-9eb0-4af7-9278-f9010a77811c": {
-     "title": "Software",
-     "id": "0bbc0986-9eb0-4af7-9278-f9010a77811c",
-     "references": [
-      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
-      "467b99c4-ab2a-4d81-9a07-0c57b5df3b35"
      ]
     }
    },

@@ -13,6 +13,16 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "5",
+   "Fra beskrivelsen": "OBS: Hi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "0a350808-f47b-4817-9306-63b93173b385"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 208,
   "skuCode": "ORT2MBR",
@@ -170,7 +180,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 23,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -212,47 +222,53 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Ortofon 2M Bronze roses bredt som en meget musikalsk opgradering med varm, klar og detaljeret lyd samt større dybde, rumfornemmelse og stereoperspektiv. Den afbalancerede gengivelse kombinerer behagelige, bløde diskanttoner med tydelige mellemtoner og tilfredsstillende bas, hvilket gør vinylafspilning mere medrivende. Prisen opleves som pengene værd, og professionel rådgivning og montering giver ekstra tryghed ved købet.",
+   "summary": "ORT2MBR er en varm, detaljeret og meget musikalsk pickup, der giver vinylafspilningen et markant løft. Lyden kombinerer kontant bas, klare diskanter, et stort stereobillede og medrivende dybde med en afslappet, men præcis karakter. Montering og justering kan kræve omhu, men den gode værdi, hjælpsomme service og brede kompatibilitet gør pickuppen til et særdeles stærkt valg.",
    "headlines": {
-    "a major improvement over previous cartridges": {
-     "sentimentAnalysis": "2M Bronze beskrives gentagne gange som et markant løft i forhold til Red, Blue og andre standard-pickupper, og investeringen anses generelt for pengene værd.",
-     "simpleTitle": "En markant forbedring i forhold til tidligere pickup'er",
+    "helpful installation and store service": {
+     "sentimentAnalysis": "Butikspersonalet roses for god rådgivning, professionel montering og konsekvent god service.",
+     "simpleTitle": "God hjælp til montering og service i butikken",
      "bias": "positive",
-     "key": "upgrade-value",
-     "groupId": "3f418520-dee3-49a5-b6f1-48bed5ad1666"
+     "key": "installation",
+     "groupId": "0b31fa36-f14e-4980-905d-725c3372bcd3"
+    },
+    "a worthwhile upgrade from entry-level cartridges": {
+     "sentimentAnalysis": "2M Bronze beskrives gentagne gange som en tydelig og værdifuld opgradering fra Red, Blue og andre standardpickupper.",
+     "simpleTitle": "Værdifuld opgradering fra begynderpickupper",
+     "bias": "positive",
+     "key": "upgrade",
+     "groupId": "5f424cb8-11f3-478a-91bd-b5033909c845"
     },
     "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Pickup'en roses for sin varme, musikalske karakter kombineret med klarhed, detaljer, dybde og et stort stereoperspektiv.",
+     "sentimentAnalysis": "Pickuppen roses for varm klang, mange detaljer, dybde og et bredt stereobillede.",
      "simpleTitle": "Varm, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "2db1b295-cd2e-46ef-86cc-e1c676a2d1e2"
+     "key": "sound",
+     "groupId": "d034a244-f99c-4f9e-ae17-bc58cde97f8b"
     },
-    "clear, balanced highs, mids and bass": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver tydelig diskant, forbedret mellemtone, dybere bas og en mere jævn klangbalance med god dynamik og musikalitet.",
-     "simpleTitle": "Klar og afbalanceret diskant, mellemtone og bas",
+    "clearer, deeper and more dynamic playback": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring af klarhed, dybde, dynamik, klangfarver og mellemtoner.",
+     "simpleTitle": "Klarere, dybere og mere dynamisk lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "2db1b295-cd2e-46ef-86cc-e1c676a2d1e2"
+     "key": "sound",
+     "groupId": "d034a244-f99c-4f9e-ae17-bc58cde97f8b"
     },
-    "professional advice and installation are reassuring": {
-     "sentimentAnalysis": "Butikkens ekspertise, produktrådgivning og monteringsservice bliver konsekvent værdsat og gør det lettere at vælge og montere pickup'en med tryghed.",
-     "simpleTitle": "Professionel rådgivning og montering giver tryghed",
-     "bias": "positive",
-     "key": "service-advice",
-     "groupId": "8def922b-eb3d-4d2e-bff7-55b85bb1826a"
+    "setup may require careful adjustment": {
+     "sentimentAnalysis": "Lavt nåletryk, resonansfølsomhed og justering nævnes som udfordringer, selv om praktiske løsninger blev fundet.",
+     "simpleTitle": "Justering kan kræve omhu",
+     "bias": "negative",
+     "key": "installation",
+     "groupId": "0b31fa36-f14e-4980-905d-725c3372bcd3"
     }
    },
    "grouping": {
-    "2db1b295-cd2e-46ef-86cc-e1c676a2d1e2": {
+    "d034a244-f99c-4f9e-ae17-bc58cde97f8b": {
      "title": "Lydkvalitet",
-     "id": "2db1b295-cd2e-46ef-86cc-e1c676a2d1e2",
+     "id": "d034a244-f99c-4f9e-ae17-bc58cde97f8b",
      "references": [
       "dac0398f-7ade-445e-929b-a4c09262ba82",
       "1e3c05ab-f5b2-4b5f-b41e-c1e423314bf2",
       "d1d6ee88-beb5-45af-b3ab-4cbde5502680",
       "46089b6e-939a-4a4f-b5b5-6c1ae2bd5484",
-      "ce815d75-8cfa-4a2e-b27d-a356731d8dee",
       "ed98b8fa-9d2a-4158-986a-254d6543e70c",
       "75906ae9-c400-4faa-9926-1fd3a29008ae",
       "8effc9d7-7627-4c25-92a4-1abf48b8c7be",
@@ -267,41 +283,49 @@
       "6338e0e8-001e-45d7-8d79-ca9bae947497",
       "4e5eaad7-3acd-4e83-9a47-d5791d65b697",
       "cfc68228-7eda-49a3-b4bd-89bf56a1031b",
-      "807193c-4e67-4cd5-8b55-93f6586378ea",
+      "bb817a2c-beed-48ce-b203-b2b9fde21ff2",
+      "807f193c-4e67-4cd5-8b55-93f6586378ea",
       "14be0d5e-b26f-4024-99bd-ebce0f5bfbd8",
       "22cabfd9-ff95-4b29-ab6e-c3b8d6b348b0",
       "d791394a-198c-4391-acff-1d5523998b24"
      ]
     },
-    "3f418520-dee3-49a5-b6f1-48bed5ad1666": {
-     "title": "Opgraderingsværdi",
-     "id": "3f418520-dee3-49a5-b6f1-48bed5ad1666",
+    "5f424cb8-11f3-478a-91bd-b5033909c845": {
+     "title": "Opgradering og værdi",
+     "id": "5f424cb8-11f3-478a-91bd-b5033909c845",
      "references": [
+      "1e3c05ab-f5b2-4b5f-b41e-c1e423314bf2",
       "d1d6ee88-beb5-45af-b3ab-4cbde5502680",
       "7e6a0010-43b6-4754-9fc9-0cf46c277981",
-      "4b057136-0dc0-4170-a820-a6dc00a9b5e6",
+      "4b34fd3a-8f26-4cf6-ad52-3e4edef1b39e",
       "647a41e6-2ea4-4692-81ef-a1200d52f00f",
+      "4b057136-0dc0-4170-a820-a6dc00a9b5e6",
       "fca4ac8e-a309-449c-8eab-7d0434def432",
       "ac21e088-69e3-4002-8f0b-d67c255efa76",
       "2d178abd-141e-4ced-ac81-3c8b45c3b7a6",
       "1a4119f5-fff1-4a0a-ac4c-b78c19f2daa6",
+      "d897f197-9fa1-45fd-8403-8f5af176b3f6",
       "ef512d65-f88a-4368-b99a-e4595589b706",
       "0ebc635d-28e1-4203-b150-c87c9a9d46a7",
+      "4e5eaad7-3acd-4e83-9a47-d5791d65b697",
       "cfc68228-7eda-49a3-b4bd-89bf56a1031b",
       "bb817a2c-beed-48ce-b203-b2b9fde21ff2",
-      "807193c-4e67-4cd5-8b55-93f6586378ea",
+      "807f193c-4e67-4cd5-8b55-93f6586378ea",
       "22cabfd9-ff95-4b29-ab6e-c3b8d6b348b0",
       "b9fe7a0c-db4d-453e-949e-08532f5415f3",
       "d791394a-198c-4391-acff-1d5523998b24"
      ]
     },
-    "8def922b-eb3d-4d2e-bff7-55b85bb1826a": {
-     "title": "Service og rådgivning",
-     "id": "8def922b-eb3d-4d2e-bff7-55b85bb1826a",
+    "0b31fa36-f14e-4980-905d-725c3372bcd3": {
+     "title": "Montering og service",
+     "id": "0b31fa36-f14e-4980-905d-725c3372bcd3",
      "references": [
       "46089b6e-939a-4a4f-b5b5-6c1ae2bd5484",
+      "ce815d75-8cfa-4a2e-b27d-a356731d8dee",
       "cd1a4239-5d4e-4fcd-995b-607506773859",
       "d3b8a45f-2dba-49f0-8d1d-1ac9504593f9",
+      "ed98b8fa-9d2a-4158-986a-254d6543e70c",
+      "d3f940ff-3239-4e2f-b150-3598f8fe1b64",
       "f765fcd1-55b0-4fc3-98e8-479acaacf846",
       "ef512d65-f88a-4368-b99a-e4595589b706",
       "bb817a2c-beed-48ce-b203-b2b9fde21ff2"

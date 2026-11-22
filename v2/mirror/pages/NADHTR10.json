@@ -13,6 +13,13 @@
    "url": "/tilbehor/fjernbetjening/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "dd0fc4e2-e580-4e32-aa4d-f2c988d04a2d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 179156,
   "skuCode": "NADHTR10",
@@ -96,47 +103,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En alsidig NAD-fjernbetjening med bred styring af flere apparater, pålidelig betjening af forstærkeren og praktiske kombinerede tændekommandoer. Programmering og daglig brug kan være nemt, men kompatibiliteten med apparater er ujævn, og de faste viskelæderknapper mindsker komforten. Fjernbetjeningen føles som en varm og slagkraftig kontrolcentral til et ryddeligt, medrivende hi-fi-setup, selv om bekymringer om holdbarhed og manglende dokumentation dæmper begejstringen.",
+   "summary": "NADHTR10 er en alsidig originalfjernbetjening, der fungerer godt med NAD-udstyr og kan erstatte flere fjernbetjeninger. Programmering og betjening roses af nogle brugere, mens andre finder opsætningen vanskelig eller oplever begrænset kompatibilitet med DAC'er og CD-afspillere. En varm, punchy og medrivende betjeningsoplevelse opvejes dog af bekymringer om knappernes reaktion og den langsigtede holdbarhed.",
    "headlines": {
-    "works well with NAD amplifiers": {
-     "sentimentAnalysis": "Flere anmeldelser bekræfter, at betjeningen af NAD-forstærkere fungerer.",
-     "simpleTitle": "Fungerer godt med NAD-forstærkere",
+    "works well with NAD equipment": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver, at fjernbetjeningen fungerer korrekt med NAD-udstyr.",
+     "simpleTitle": "Virker godt med NAD-udstyr",
      "bias": "positive",
-     "key": "nad_amp_control",
-     "groupId": "9290f174-a1b8-4a97-a8a1-8b2d22490a34"
+     "key": "nad-compatibility",
+     "groupId": "e78fe941-6273-4229-b740-8dd79d514b53"
     },
-    "limited control of other devices": {
-     "sentimentAnalysis": "To anmeldelser fortæller, at betjeningen er begrænset til en forstærker eller ikke virker med en cd-afspiller.",
-     "simpleTitle": "Begrænset betjening af andre enheder",
+    "limited compatibility with some components": {
+     "sentimentAnalysis": "To anmeldelser fortæller, at fjernbetjeningen ikke styrer de forventede DAC- eller CD-afspillerfunktioner og primært er begrænset til forstærkerens volumenkontrol.",
+     "simpleTitle": "Begrænset kompatibilitet med visse komponenter",
      "bias": "negative",
-     "key": "limited_device_support",
-     "groupId": "9290f174-a1b8-4a97-a8a1-8b2d22490a34"
-    },
-    "buttons can be hard to press and unreliable": {
-     "sentimentAnalysis": "Knapperne kritiseres for at kræve hårde, lange tryk og for at kunne udvikle kontaktfejl.",
-     "simpleTitle": "Knapperne kan være hårde at trykke på og upålidelige",
-     "bias": "negative",
-     "key": "button_issues",
-     "groupId": "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8"
+     "key": "limited-compatibility",
+     "groupId": "e78fe941-6273-4229-b740-8dd79d514b53"
     }
    },
    "grouping": {
-    "9290f174-a1b8-4a97-a8a1-8b2d22490a34": {
-     "title": "Enhedskompatibilitet og betjening",
-     "id": "9290f174-a1b8-4a97-a8a1-8b2d22490a34",
+    "e78fe941-6273-4229-b740-8dd79d514b53": {
+     "title": "Kompatibilitet og funktioner",
+     "id": "e78fe941-6273-4229-b740-8dd79d514b53",
      "references": [
       "8ce8ed47-90a6-4233-b2a1-a559b5c50aa4",
       "807e2167-fad5-470a-ae2d-baa860a9ed78",
+      "8c0f29da-ef7b-448d-9983-154ca4412b8a",
+      "3d9e9805-fe05-41e6-bd7a-596ec0ee4edc",
       "d2c5e459-9b8a-47dd-80b1-fcd512098b95",
       "34ee516b-3394-4aea-a712-0e507550fb8a"
-     ]
-    },
-    "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8": {
-     "title": "Knapdesign og holdbarhed",
-     "id": "4dc9c1c8-e944-4e8b-aa48-c0bb93652fa8",
-     "references": [
-      "c1a68c19-e362-41d8-9418-5b35cdb0b002",
-      "d2c5e459-9b8a-47dd-80b1-fcd512098b95"
      ]
     }
    },

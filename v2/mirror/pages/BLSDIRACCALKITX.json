@@ -8,6 +8,14 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "85400a9b-da32-4bda-a887-b4edab077b06",
+   "80e37955-de51-4c9e-89c4-bb7477027743"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 250679,
   "skuCode": "BLSDIRACCALKITX",
@@ -100,7 +108,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 160,
+     "availableQuantity": 156,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -193,41 +201,51 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette kompakte Dirac-mikrofonkit fungerer pålideligt med kompatibelt Bluesound- og NAD-udstyr og er generelt nemt at installere og bruge. Sammen med Dirac-softwaren leverer kittet varmere, fyldigere, bredere og mere præcist defineret lyd med strammere bas og effektiv rumkorrektion. Den gode værdi, de nyttige resultater og den høje tilfredshed gør investeringen meget anbefalelsesværdig, selv om den manglende mikrofonholder og nødvendige USB-adapter er mindre ulemper.",
+   "summary": "BLSDIRACCALKITX er en særdeles effektiv og brugervenlig målemikrofon, der giver fremragende resultater med Dirac-kompatible Bluesound- og NAD-systemer. Dirac-kalibreringen giver en fyldigere, bredere og mere omsluttende lyd med strammere, mere kontrolleret bas og tydeligere definition. God kvalitet, en rimelig pris og bred anvendelighed gør sættet til en værdifuld investering.",
    "headlines": {
-    "works well with NAD and Bluesound equipment": {
-     "sentimentAnalysis": "Ifølge anmeldelserne fungerer kittet perfekt med flere NAD- og Bluesound-systemer.",
-     "simpleTitle": "Fungerer godt med NAD- og Bluesound-udstyr",
+    "worthwhile investment and fair pricing": {
+     "sentimentAnalysis": "Sættet vurderes som god værdi, fordi den rimelige pris og resultaterne retfærdiggør investeringen.",
+     "simpleTitle": "Værdifuld investering og rimelig pris",
+     "bias": "positive",
+     "key": "quality_value",
+     "groupId": "2e7140bf-00cb-4296-891b-c102bfabd165"
+    },
+    "works well with NAD and Bluesound systems": {
+     "sentimentAnalysis": "Sættet fungerer ifølge anmeldelserne godt sammen med flere NAD- og Bluesound-Powernode-enheder.",
+     "simpleTitle": "Fungerer godt med NAD- og Bluesound-systemer",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "20028406-7eca-4343-aed8-69ef280188f7"
-    },
-    "dirac creates fuller, wider and tighter sound": {
-     "sentimentAnalysis": "Dirac roses for en tydeligt mere medrivende, fyldig og veldefineret gengivelse med bredere stereo og strammere bas.",
-     "simpleTitle": "Dirac giver fyldigere, bredere og strammere lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "8d8fe405-a63d-44f0-b19b-15485183ae15"
+     "groupId": "a15307c5-f16f-4df0-8c0b-ba5d231daa8d"
     },
     "simple installation and operation": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kittet som nemt at installere, enkelt at bruge og pålideligt i drift.",
-     "simpleTitle": "Nem installation og betjening",
+     "sentimentAnalysis": "Flere anmeldelser beskriver sættet som nemt at installere og bruge med gode resultater.",
+     "simpleTitle": "Enkel installation og betjening",
      "bias": "positive",
-     "key": "ease",
-     "groupId": "cf82854c-6c8c-42a5-a6ce-b84dcab7a74a"
+     "key": "ease_of_use",
+     "groupId": "9cb6f28f-db30-499c-886c-eda473eebc0e"
     },
-    "good value for the investment": {
-     "sentimentAnalysis": "Produktet betragtes som en god investering med stærk ydeevne for pengene og høj kvalitet til en rimelig pris.",
-     "simpleTitle": "God værdi for investeringen",
+    "fuller, wider and tighter sound": {
+     "sentimentAnalysis": "Dirac-kalibreringen roses for fyldigere, bredere og bedre defineret lyd samt strammere bas.",
+     "simpleTitle": "Fyldigere, bredere og strammere lyd",
      "bias": "positive",
-     "key": "value",
-     "groupId": "ff5d0c16-650b-4771-98f4-867398acca49"
+     "key": "sound_results",
+     "groupId": "1969283f-82b1-43a8-ba3b-29c93d752351"
     }
    },
    "grouping": {
-    "8d8fe405-a63d-44f0-b19b-15485183ae15": {
-     "title": "Lydkvalitet",
-     "id": "8d8fe405-a63d-44f0-b19b-15485183ae15",
+    "a15307c5-f16f-4df0-8c0b-ba5d231daa8d": {
+     "title": "Systemkompatibilitet",
+     "id": "a15307c5-f16f-4df0-8c0b-ba5d231daa8d",
+     "references": [
+      "0d209d38-c3e9-4f0a-b9a8-be4b2e23b1fd",
+      "39d40030-6692-4ed7-850a-714e4228745b",
+      "b963a18a-e187-4b79-9743-917d6992290f",
+      "2676e493-9736-4809-8c63-8f8fc52bb63e"
+     ]
+    },
+    "1969283f-82b1-43a8-ba3b-29c93d752351": {
+     "title": "Lydforbedring",
+     "id": "1969283f-82b1-43a8-ba3b-29c93d752351",
      "references": [
       "b963a18a-e187-4b79-9743-917d6992290f",
       "ddd90d6f-7761-457f-9556-e6f6f05bbb66",
@@ -235,28 +253,21 @@
       "48f3e5c3-5b0c-4d81-9a7a-49ea36eead12"
      ]
     },
-    "20028406-7eca-4343-aed8-69ef280188f7": {
-     "title": "Enhedskompatibilitet",
-     "id": "20028406-7eca-4343-aed8-69ef280188f7",
+    "9cb6f28f-db30-499c-886c-eda473eebc0e": {
+     "title": "Brugervenlighed",
+     "id": "9cb6f28f-db30-499c-886c-eda473eebc0e",
      "references": [
-      "0d209d38-c3e9-4f0a-b9a8-be4b2e23b1fd",
-      "39d40030-6692-4ed7-850a-714e4228745b",
-      "2676e493-9736-4809-8c63-8f8fc52bb63e"
-     ]
-    },
-    "cf82854c-6c8c-42a5-a6ce-b84dcab7a74a": {
-     "title": "Installation og brugervenlighed",
-     "id": "cf82854c-6c8c-42a5-a6ce-b84dcab7a74a",
-     "references": [
+      "ddd90d6f-7761-457f-9556-e6f6f05bbb66",
       "64aa04e5-a66a-4fd9-b03b-cf0f7a457928",
       "48f3e5c3-5b0c-4d81-9a7a-49ea36eead12",
       "9ee1d29e-6d2f-4756-90b9-3078b5d26e9a"
      ]
     },
-    "ff5d0c16-650b-4771-98f4-867398acca49": {
-     "title": "Værdi for pengene",
-     "id": "ff5d0c16-650b-4771-98f4-867398acca49",
+    "2e7140bf-00cb-4296-891b-c102bfabd165": {
+     "title": "Kvalitet og værdi",
+     "id": "2e7140bf-00cb-4296-891b-c102bfabd165",
      "references": [
+      "b963a18a-e187-4b79-9743-917d6992290f",
       "2676e493-9736-4809-8c63-8f8fc52bb63e",
       "56bec6fd-3d8c-487e-9074-12cd536c596b",
       "c43f4650-b143-4c13-b6e1-bf1336449521"

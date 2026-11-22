@@ -13,6 +13,23 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Minijack/AUX",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Bluetooth type": "5.3",
+   "Højtaler type": "Trådløs højtaler"
+  },
+  "gallery": [
+   "069a4fe3-a69b-45db-a8b6-7ffa69da0b62",
+   "cc7af5c0-f061-4f9f-9a62-a60073ed4832",
+   "18fac523-4fd3-4bab-86c3-d5a58f8cfa07",
+   "95cef9f2-f40d-469b-920a-7fa76f56fa62",
+   "6e17e624-fc1c-4f4d-af44-bea2425d2111",
+   "a82d95e6-5372-4c33-9e65-cb30c97a6e95"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 259195,
   "skuCode": "MARMIDDLETON2",
@@ -237,7 +254,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 41,
+     "availableQuantity": 32,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -433,55 +450,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marshall Middleton II leverer en varm, slagkraftig og bemærkelsesværdigt klar lyd med imponerende bas, høj lydstyrke og en omsluttende 360°-gengivelse. Den solide konstruktion, det stilfulde retrodesign, den enkle betjening og den praktiske mobilitet gør højttaleren særligt attraktiv til lytning derhjemme og sociale sammenkomster. Batteriydelsen er generelt stærk med hurtig opladning, men basfylde, ydelse udendørs og den reelle spilletid kan variere afhængigt af placering og lydstyrke.",
+   "summary": "Marshall Middleton II leverer varm, slagkraftig og imponerende detaljeret lyd fra en kompakt Bluetooth-højttaler med særligt tilfredsstillende bas og klar gengivelse ved høj lydstyrke. Robust konstruktion, stilfuldt retrodesign, praktiske betjeningselementer og lang batteritid gør højttaleren meget attraktiv til hverdagslytning og sociale lejligheder. Placering indendørs giver fyldigere bas, mens begrænset dybbas udendørs, et smalt lydbillede for nogle lyttere og lejlighedsvise problemer med opladning eller opkaldsrouting nuancerer den ellers begejstrede vurdering.",
    "headlines": {
-    "clear, detailed and powerful sound": {
-     "sentimentAnalysis": "Højttaleren roses gentagne gange for sin klare, fyldige, detaljerede og kraftfulde lyd.",
-     "simpleTitle": "Klar, detaljeret og kraftfuld lyd",
+    "rich, clear and powerful sound": {
+     "sentimentAnalysis": "Højttaleren roses gentagne gange for detaljeret, klar og kraftfuld lyd, der overgår forventningerne.",
+     "simpleTitle": "Fyldig, klar og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "805607e9-ea16-4835-b4f9-4d2734a459f4"
+     "key": "sound",
+     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
     },
-    "strong and enjoyable bass": {
-     "sentimentAnalysis": "Bassen beskrives som fremragende, fyldig og kraftig nok til fortsat at være imponerende ved høj lydstyrke.",
-     "simpleTitle": "Kraftig og medrivende bas",
+    "deep, satisfying bass": {
+     "sentimentAnalysis": "Den kraftige bas er et fremtrædende kendetegn, og de dybe frekvenser forbliver klare selv ved høj lydstyrke.",
+     "simpleTitle": "Dyb og tilfredsstillende bas",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "805607e9-ea16-4835-b4f9-4d2734a459f4"
+     "key": "sound",
+     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
     },
-    "stylish and sturdy construction": {
-     "sentimentAnalysis": "Retrodesignet, den flotte finish og den robuste, bærbare konstruktion bliver konsekvent værdsat.",
-     "simpleTitle": "Stilfuld og solid konstruktion",
-     "bias": "positive",
-     "key": "design_build",
-     "groupId": "f10fd1fb-e8c2-4b08-94e7-e9585c19a17e"
-    },
-    "bass and soundstage can feel limited": {
-     "sentimentAnalysis": "I nogle lyttesituationer virker bassen, lydbilledet eller dækningen af store udendørsområder mindre overbevisende.",
-     "simpleTitle": "Bas og lydbillede kan virke begrænset",
+    "bass and soundstage vary by setting": {
+     "sentimentAnalysis": "Nogle lyttesituationer afslører tilbageholden bas udendørs, begrænset dybde eller et smallere lydbillede end ønsket.",
+     "simpleTitle": "Bas og lydbillede varierer efter placering",
      "bias": "negative",
-     "key": "sound_quality",
-     "groupId": "805607e9-ea16-4835-b4f9-4d2734a459f4"
-    },
-    "long-lasting battery with fast charging": {
-     "sentimentAnalysis": "Batteritiden vurderes generelt som meget god, mens hurtig opladning giver ekstra praktisk anvendelighed.",
-     "simpleTitle": "Lang batteritid med hurtig opladning",
-     "bias": "positive",
-     "key": "battery_life",
-     "groupId": "34044521-d392-41de-aaf5-d719981b8523"
+     "key": "sound",
+     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
     },
     "useful controls and connections": {
-     "sentimentAnalysis": "Bluetooth, kablet tilslutning, direkte EQ-justering og enkel betjening værdsættes som nyttige funktioner.",
-     "simpleTitle": "Praktisk betjening og tilslutning",
+     "sentimentAnalysis": "Bluetooth, kabeltilslutning, EQ-justering samt direkte bas- og diskantkontroller værdsættes for fleksibel betjening.",
+     "simpleTitle": "Praktiske betjeningselementer og tilslutninger",
      "bias": "positive",
-     "key": "controls_connectivity",
-     "groupId": "12c5a727-d355-4327-bcb1-436ba02a30d2"
+     "key": "controls",
+     "groupId": "a273403c-09a9-43b2-9b57-41d6e842dadd"
+    },
+    "long-lasting battery": {
+     "sentimentAnalysis": "Batteritiden vurderes som rigelig til lang tids lytning og beskrives delvist som fler­dages eller en hel uges brug.",
+     "simpleTitle": "Lang batteritid",
+     "bias": "positive",
+     "key": "battery",
+     "groupId": "1225aa8c-d23d-46a6-89c0-cde930178ea4"
     }
    },
    "grouping": {
-    "805607e9-ea16-4835-b4f9-4d2734a459f4": {
+    "1179e515-0dce-4adc-a112-dfac91b93a68": {
      "title": "Lydkvalitet",
-     "id": "805607e9-ea16-4835-b4f9-4d2734a459f4",
+     "id": "1179e515-0dce-4adc-a112-dfac91b93a68",
      "references": [
       "66be59b3-242e-40ea-b93c-368693a82428",
       "12d7d672-6d15-4c0c-980a-199a26ad63a3",
@@ -497,28 +507,18 @@
       "1720b15a-7b36-43e0-9ab6-27e637d744be"
      ]
     },
-    "f10fd1fb-e8c2-4b08-94e7-e9585c19a17e": {
-     "title": "Design og konstruktion",
-     "id": "f10fd1fb-e8c2-4b08-94e7-e9585c19a17e",
-     "references": [
-      "efddc7e2-9ee6-4815-9c4f-1d2ab187c675",
-      "ff05e85e-fe58-4ddd-b35e-547ffcbcdc83",
-      "db0b5321-9a8f-4dc9-9329-8eb5893d2c72",
-      "a4e22a5b-59f0-4200-b2dd-b0e288546980"
-     ]
-    },
-    "34044521-d392-41de-aaf5-d719981b8523": {
+    "1225aa8c-d23d-46a6-89c0-cde930178ea4": {
      "title": "Batteritid",
-     "id": "34044521-d392-41de-aaf5-d719981b8523",
+     "id": "1225aa8c-d23d-46a6-89c0-cde930178ea4",
      "references": [
       "efddc7e2-9ee6-4815-9c4f-1d2ab187c675",
       "db0b5321-9a8f-4dc9-9329-8eb5893d2c72",
       "1720b15a-7b36-43e0-9ab6-27e637d744be"
      ]
     },
-    "12c5a727-d355-4327-bcb1-436ba02a30d2": {
+    "a273403c-09a9-43b2-9b57-41d6e842dadd": {
      "title": "Betjening og tilslutning",
-     "id": "12c5a727-d355-4327-bcb1-436ba02a30d2",
+     "id": "a273403c-09a9-43b2-9b57-41d6e842dadd",
      "references": [
       "5819f025-a403-44b2-97e6-0c7683fa937f",
       "0dcbc517-4bdb-4031-a3dd-2dbb0c2cae72",

@@ -13,6 +13,29 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "HDMI, Optisk",
+   "Indgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang, Wi-Fi",
+   "Bluetooth type": "5.3",
+   "Fra beskrivelsen": "HDMI 2.1 (eARC, 4K60, HDCP 2.3) · USB-tilslutning med ladefunktion (kun service, 5V/0,5A)"
+  },
+  "gallery": [
+   "6cabf03e-d7ad-4b5d-a0d0-52e0aaf7261a",
+   "78ea1e6f-ef95-4065-b924-a7cd6e9ade10",
+   "da6f1ce5-4d2a-4559-a2c9-a7c7edfed0f5",
+   "f117585f-fb50-47a3-8de7-3ec99d2e4d8e",
+   "b3b1835e-594d-486e-9ac8-2a5956de364e",
+   "0a01757a-2663-4680-a9f6-6115aa176213",
+   "50a77965-48a3-4323-a095-ef8c44466dba",
+   "a5241c2a-dc5c-42a4-a1e1-8111a34c47dc",
+   "fb8881c6-76b9-4272-862a-4b0c82299498",
+   "b1e0f0de-d779-4ed7-908c-bd851a55301b",
+   "cf353f02-ad56-46a2-98d0-7137369e0be0"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 266640,
   "skuCode": "JBLBAR1300M2",
@@ -142,7 +165,7 @@
     "productCode": "JBLBAR1300M2BK",
     "ean": "1200130019944",
     "priceDetails": {
-     "priceValueId": 1218161,
+     "priceValueId": 1221093,
      "price": 6999,
      "priceFormatted": "6.999,-",
      "priceBefore": 11999,
@@ -340,48 +363,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBL Bar 1300MK2 leverer varm, kraftfuld og medrivende lyd, der løfter film, musik og tv-lyd markant. Dolby Atmos, surroundlyd, slagkraftig bas og et bredt lydbillede skaber en overbevisende hjemmebiografoplevelse, mens de aftagelige batteridrevne højttalere giver fleksibel placering uden strømkabler. Appen og indstillingsmulighederne giver nyttig kontrol og gør systemet til en imponerende og meget tilfredsstillende opgradering.",
+   "summary": "JBL BAR 1300M2 leverer varm, kraftfuld og omsluttende lyd, der løfter film, musik og tv-lyd markant. Dolby Atmos, et bredt frontperspektiv og kraftig bas skaber en overbevisende hjemmebiografoplevelse, mens de aftagelige batteridrevne højttalere giver fleksibel surroundlyd uden kabelrod. JBL-appen og de gode indstillingsmuligheder fuldender systemet og gør det til en særdeles tilfredsstillende opgradering af hjemmebiografen.",
    "headlines": {
-    "powerful, wide and highly detailed sound": {
-     "sentimentAnalysis": "Lyden beskrives som usædvanligt kraftfuld, bred og markant bedre end almindelig tv-lyd eller tidligere højttalersystemer.",
-     "simpleTitle": "Kraftfuld, bred og detaljeret lyd",
+    "immersive surround and Dolby Atmos": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den overbevisende surroundgengivelse og den særligt effektive Dolby Atmos-effekt til film.",
+     "simpleTitle": "Omsluttende surround og Dolby Atmos",
      "bias": "positive",
-     "key": "sound_power",
-     "groupId": "7f50adb8-a1b7-4463-b0df-4a212e53d759"
+     "key": "immersive-surround",
+     "groupId": "8094c72a-902e-42b5-902a-d087ad46db24"
     },
-    "punchy, plentiful bass": {
-     "sentimentAnalysis": "Subwooferen og soundbaren leverer masser af slagkraftig bas, der giver film og musik mere effekt, og som kan justeres efter behov.",
-     "simpleTitle": "Kraftfuld og fyldig bas",
+    "powerful bass and punchy output": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende dyb og rigelig bas samt imponerende slagkraft selv ved moderat lydstyrke.",
+     "simpleTitle": "Kraftig bas og slagkraftig lyd",
      "bias": "positive",
-     "key": "punchy_bass",
-     "groupId": "7f50adb8-a1b7-4463-b0df-4a212e53d759"
+     "key": "powerful-bass",
+     "groupId": "8094c72a-902e-42b5-902a-d087ad46db24"
     },
-    "battery-powered speakers simplify placement": {
-     "sentimentAnalysis": "De aftagelige baghøjttalere værdsættes, fordi de fjerner behovet for strømkabler, giver fleksibel placering og nemt kan sættes tilbage på soundbaren.",
-     "simpleTitle": "Batteridrevne højttalere gør placeringen nem",
+    "flexible cable-free surround speakers": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det batteridrevne, aftagelige design, fordi højttalerne ikke kræver strømkabler og kan flyttes eller sættes tilbage på soundbaren.",
+     "simpleTitle": "Fleksible trådløse surroundhøjttalere",
      "bias": "positive",
-     "key": "wireless_speaker_flexibility",
-     "groupId": "79307077-3ff2-4315-ad14-1e5312605660"
+     "key": "wireless-flexibility",
+     "groupId": "bce5d097-9403-4b2c-8e45-56ae85c18bf0"
     },
-    "convincing surround and Dolby Atmos immersion": {
-     "sentimentAnalysis": "Surround og Dolby Atmos roses for at skabe en langt mere omsluttende og biograflignende filmoplevelse.",
-     "simpleTitle": "Overbevisende surround- og Dolby Atmos-oplevelse",
+    "useful app and adjustment options": {
+     "sentimentAnalysis": "Anmeldelserne roser JBL-appen og muligheden for at finjustere lyden med indstillinger og EQ.",
+     "simpleTitle": "Nyttig app og justeringsmuligheder",
      "bias": "positive",
-     "key": "immersive_surround",
-     "groupId": "559bc41e-2354-4986-aa6e-009cb4fdd1b6"
-    },
-    "useful app and equalizer controls": {
-     "sentimentAnalysis": "JBL-appen og lydindstillingerne betragtes som stærke funktioner, der gør finjustering nemt.",
-     "simpleTitle": "Nyttige app- og equalizer-indstillinger",
-     "bias": "positive",
-     "key": "app_equalizer",
-     "groupId": "3089f102-5675-4565-9a24-bf9554405715"
+     "key": "useful-controls",
+     "groupId": "f94226dd-0795-48b8-b9ff-5d217ff9a865"
     }
    },
    "grouping": {
-    "7f50adb8-a1b7-4463-b0df-4a212e53d759": {
+    "8094c72a-902e-42b5-902a-d087ad46db24": {
      "title": "Lydkvalitet",
-     "id": "7f50adb8-a1b7-4463-b0df-4a212e53d759",
+     "id": "8094c72a-902e-42b5-902a-d087ad46db24",
      "references": [
       "f5a3f478-aa29-477f-b2b0-75e996f4deab",
       "61d9080b-1476-497d-82ac-d20b1048ef6c",
@@ -398,32 +414,22 @@
       "bf393f83-fb8a-4317-9bf4-dc2329fd99aa"
      ]
     },
-    "79307077-3ff2-4315-ad14-1e5312605660": {
+    "bce5d097-9403-4b2c-8e45-56ae85c18bf0": {
      "title": "Aftagelige højttalere",
-     "id": "79307077-3ff2-4315-ad14-1e5312605660",
+     "id": "bce5d097-9403-4b2c-8e45-56ae85c18bf0",
      "references": [
       "61d9080b-1476-497d-82ac-d20b1048ef6c",
       "070e8bf4-80ae-4369-b99a-fc6c2346ed68",
       "d7738783-c255-4cfc-a376-a492fd452cbe",
+      "f157f1be-efc4-4aa0-a586-c05be8f5fdac",
       "a61e3588-9fec-4d29-a5d8-507367da3b23",
       "482954d5-4281-45c8-9bef-c645156a2017",
       "bf393f83-fb8a-4317-9bf4-dc2329fd99aa"
      ]
     },
-    "559bc41e-2354-4986-aa6e-009cb4fdd1b6": {
-     "title": "Surroundlyd",
-     "id": "559bc41e-2354-4986-aa6e-009cb4fdd1b6",
-     "references": [
-      "61d9080b-1476-497d-82ac-d20b1048ef6c",
-      "070e8bf4-80ae-4369-b99a-fc6c2346ed68",
-      "e2ed0a3d-5bc5-46fa-8971-8dc5e5e6ae64",
-      "f157f1be-efc4-4aa0-a586-c05be8f5fdac",
-      "0147dc05-76f3-4082-99e0-534fb7f8c7ef"
-     ]
-    },
-    "3089f102-5675-4565-9a24-bf9554405715": {
-     "title": "App og lydindstillinger",
-     "id": "3089f102-5675-4565-9a24-bf9554405715",
+    "f94226dd-0795-48b8-b9ff-5d217ff9a865": {
+     "title": "App og indstillinger",
+     "id": "f94226dd-0795-48b8-b9ff-5d217ff9a865",
      "references": [
       "070e8bf4-80ae-4369-b99a-fc6c2346ed68",
       "b560fcdf-a7ee-4c33-8c0d-36ca3c977122"

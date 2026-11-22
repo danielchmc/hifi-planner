@@ -13,6 +13,16 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7fc73f47-41ff-4402-87c0-2ca6fa8c4b2d",
+   "1dbf26a6-2a9b-47cf-8781-cf4f348e9389",
+   "6591b9be-291c-4009-a19b-6bcce2a02440",
+   "406e1ea1-c939-40fe-b882-b278a291625c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190131,
   "skuCode": "BW705S3",
@@ -139,7 +149,7 @@
   "stockItemAlternative": {
    "save": "7.100,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=BW705S3",
-   "availableQuantity": 4,
+   "availableQuantity": 3,
    "lowestPrice": "17.898,-"
   },
   "variants": [
@@ -200,7 +210,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
+     "numberOfStoresExperience": 16,
      "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -302,7 +312,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
+     "numberOfStoresExperience": 16,
      "availableQuantity": 28,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -410,7 +420,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
+     "numberOfStoresExperience": 16,
      "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -503,54 +513,54 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "B&W 705S3 leverer en usædvanligt klar, varm og medrivende gengivelse med luftig diskant, præcis placering, livagtige mellemtoner og overraskende punchy bas for en kompakt højttaler. Detaljegrad, separation og rumlighed roses gentagne gange og får musikken til at føles levende, åben og engagerende. Omhyggeligt valg af forstærker, placering og rumforhold er vigtigt, mens nogle lyttere finder diskanten for fremtrædende og anbefaler en subwoofer i større rum.",
+   "summary": "B&W 705S3 leverer en usædvanligt klar, detaljeret og rummelig lyd fra et kompakt kabinet med funklende diskant, præcis stereogengivelse og overraskende dyb, slagkraftig bas. Omhyggeligt valg af forstærker, placering og tilspilning hjælper med at få det bedste frem, mens en subwoofer kan give mere tyngde i større rum eller ved højere lydstyrke. Det raffinerede design og den imponerende skala bliver rost bredt, selv om den lyse klang, den krævende opsætning og de høje priser på tilbehør eller højttalere ikke passer til alle.",
    "headlines": {
-    "surprisingly powerful and controlled bass": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver dyb, punchy eller overraskende fyldig bas, som ofte overgår forventningerne til kabinettets størrelse.",
-     "simpleTitle": "Overraskende kraftfuld og kontrolleret bas",
-     "bias": "positive",
-     "key": "bass_strength",
-     "groupId": "c5026b17-c7fa-4784-877d-83c76a8ec2df"
-    },
     "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne roser enestående klarhed, præcision, detaljegrad, separation og rumlig gengivelse.",
-     "simpleTitle": "Klar, detaljeret og rumlig lyd",
+     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange den usædvanlige klarhed, præcision, åbenhed, detaljegrad og rummelige, omsluttende gengivelse.",
+     "simpleTitle": "Klar, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "sound_detail",
-     "groupId": "32e41283-71e1-4bc8-9c31-fefe098812bb"
+     "key": "sound",
+     "groupId": "9bf913ce-4ea2-48ce-8bd9-066d2d86c248"
     },
-    "placement and amplification make a major difference": {
-     "sentimentAnalysis": "Anmeldelserne understreger samstemmende omhyggelig placering og passende forstærkning for den bedste rumlighed og kontrol.",
-     "simpleTitle": "Placering og forstærkervalg gør en stor forskel",
+    "surprisingly deep and powerful bass": {
+     "sentimentAnalysis": "De kompakte højttalere beskrives gentagne gange som leverende dyb, slagkraftig og for størrelsen overraskende fyldig bas.",
+     "simpleTitle": "Overraskende dyb og kraftfuld bas",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "3076902b-d131-4f9f-9594-70db0836a94e"
+    },
+    "placement and partnering matter": {
+     "sentimentAnalysis": "Anmeldelserne viser, at omhyggelig placering, passende forstærkning og gode kombinationer forbedrer kontrol, stereoperspektiv og den samlede ydelse markant.",
+     "simpleTitle": "Placering og matchning betyder noget",
+     "bias": "positive",
+     "key": "setup",
+     "groupId": "a34cf955-3462-4726-b336-1d5c4d04e963"
+    },
+    "a subwoofer adds authority in larger rooms": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter bassen uden ekstra højttaler, men bemærker, at en subwoofer især i større rum eller krævende anlæg forbedrer skala, slagkraft og dybbas.",
+     "simpleTitle": "En subwoofer giver mere tyngde i større rum",
      "bias": "meh",
-     "key": "setup_matching",
-     "groupId": "e76cc20e-9284-4321-b4ee-eb69b0363df4"
+     "key": "bass",
+     "groupId": "3076902b-d131-4f9f-9594-70db0836a94e"
     },
-    "subwoofer recommended in larger rooms": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever begrænset bas i større rum eller en markant forbedring med subwoofer.",
-     "simpleTitle": "Subwoofer anbefales i større rum",
+    "the treble can sound too forward": {
+     "sentimentAnalysis": "Selv om mange anmeldelser roser den funklende diskant, oplever nogle gengivelsen som tydeligt lys eller diskantdomineret og har brug for en tonal justering.",
+     "simpleTitle": "Diskanten kan virke for fremtrædende",
      "bias": "negative",
-     "key": "subwoofer_need",
-     "groupId": "c5026b17-c7fa-4784-877d-83c76a8ec2df"
-    },
-    "bright treble can expose harsh recordings": {
-     "sentimentAnalysis": "To anmeldelser bemærker, at den meget afslørende diskant kan virke fremtrædende eller afsløre fejl i optagelser.",
-     "simpleTitle": "Lys diskant kan afsløre hårde optagelser",
-     "bias": "negative",
-     "key": "treble_brightness",
-     "groupId": "32e41283-71e1-4bc8-9c31-fefe098812bb"
+     "key": "sound",
+     "groupId": "9bf913ce-4ea2-48ce-8bd9-066d2d86c248"
     }
    },
    "grouping": {
-    "32e41283-71e1-4bc8-9c31-fefe098812bb": {
+    "9bf913ce-4ea2-48ce-8bd9-066d2d86c248": {
      "title": "Lydkvalitet",
-     "id": "32e41283-71e1-4bc8-9c31-fefe098812bb",
+     "id": "9bf913ce-4ea2-48ce-8bd9-066d2d86c248",
      "references": [
       "d3e8b39b-0169-41d1-8060-fa9e20806ba5",
       "e91adfc6-a13f-4fa5-aa81-16545fa79491",
       "59926c25-e7bc-46de-8baf-a2221d0aaf43",
       "480b05bc-5721-4f9d-91ea-90802a1491b0",
-      "ac584202-dc25-45e9-9c7d-d01018c45180",
+      "ac584202-dc25-45a9-ac57-531906ce4b47",
       "aa9b751b-ac21-460a-aab7-62cb23da67d5",
       "ce8946d0-26bd-4303-9630-13b3caf6d8ab",
       "889bb2aa-0d6a-43d6-b7ae-751ecf5eee0c",
@@ -564,6 +574,7 @@
       "27b2658e-54d9-4211-be12-57f3ca733406",
       "b697c19b-0bed-42f2-afbb-56980aa04acb",
       "7ed1e130-fd51-4fc3-b2fa-e0c2f354be59",
+      "a5f89cba-e42c-4f57-baac-ac8dd796dd1a",
       "4af5f3d5-965a-4d20-9cd1-979f12d8ed79",
       "b9005614-19c5-45b8-9c23-61b710267957",
       "1a3326da-c872-4d15-98b9-dfa3301f8ddf",
@@ -575,39 +586,18 @@
       "b01d16cd-87c5-4aaf-afef-f88b72934e71",
       "8646fb93-74f3-43a6-9878-bd154d192969",
       "a7c2dd4f-69f7-47d5-8315-e506bd733fdf",
+      "0ff9c7df-983e-440b-9031-f4c7f4838ae2",
       "17ad7567-428e-48b0-9143-fb21bce83756",
       "c184d461-e619-420d-9505-ed275578c748",
+      "dc233854-8fea-46c8-8dda-59b3b8aed7cd",
       "40e40234-0848-4758-b785-b418f21795d6",
       "56095fe8-a637-431a-9cde-704e339392b6",
-      "bcafb479-2c6b-4ede-afc5-c8dd4553704d"
+      "bcafb479-2c6b-4ede-afef-ae?"
      ]
     },
-    "e76cc20e-9284-4321-b4ee-eb69b0363df4": {
-     "title": "Opsætning og forstærkning",
-     "id": "e76cc20e-9284-4321-b4ee-eb69b0363df4",
-     "references": [
-      "59926c25-e7bc-46de-8baf-a2221d0aaf43",
-      "b3e5cc04-6351-43f2-80cd-3b59d5353f4b",
-      "ac584202-dc25-45e9-ac57-531906ce4b47",
-      "aa9b751b-ac21-460a-aab7-62cb23da67d5",
-      "ce8946d0-26bd-4303-9630-13b3caf6d8ab",
-      "09f3a7b7-0681-4787-b26d-be04c9b0eefb",
-      "554ff38a-cd53-4ede-8bbe-74c525a6fae4",
-      "27b2658e-54d9-4211-be12-57f3ca733406",
-      "b697c19b-0bed-42f2-afbb-56980aa04acb",
-      "a5f89cba-e42c-4f57-baac-ac8dd796dd1a",
-      "4af5f3d5-965a-4d20-9cd1-979f12d8ed79",
-      "3b552889-47bf-4d6d-8a0f-7199c3629476",
-      "2c3a4a63-5185-4b1e-81d5-444fa6a7a105",
-      "f7307c8e-fd7e-48c4-865a-225d63cf7df8",
-      "2aff04f4-db83-4d96-a6a4-b6b4d2e59502",
-      "b01d16cd-87c5-4aaf-afef-f88b72934e71",
-      "8646fb93-74f3-43a6-9878-bd154d192969"
-     ]
-    },
-    "c5026b17-c7fa-4784-877d-83c76a8ec2df": {
-     "title": "Basgengivelse",
-     "id": "c5026b17-c7fa-4784-877d-83c76a8ec2df",
+    "3076902b-d131-4f9f-9594-70db0836a94e": {
+     "title": "Bas",
+     "id": "3076902b-d131-4f9f-9594-70db0836a94e",
      "references": [
       "e91adfc6-a13f-4fa5-aa81-16545fa79491",
       "59926c25-e7bc-46de-8baf-a2221d0aaf43",
@@ -616,21 +606,39 @@
       "06c7f143-c5bf-4442-b425-7e00d543adde",
       "b697c19b-0bed-42f2-afbb-56980aa04acb",
       "3b552889-47bf-4d6d-8a0f-7199c3629476",
+      "f7307c8e-fd7e-48c4-865a-225d63cf7df8",
+      "8646fb93-74f3-43a6-9878-bd154d192969",
       "c184d461-e619-420d-9505-ed275578c748",
-      "40e40234-0848-4758-b785-b418f21795d6",
+      "40e40234-0848-4758-b785-b418f21795d6"
+     ]
+    },
+    "a34cf955-3462-4726-b336-1d5c4d04e963": {
+     "title": "Forstærker og placering",
+     "id": "a34cf955-3462-4726-b336-1d5c4d04e963",
+     "references": [
+      "b3e5cc04-6351-43f2-80cd-3b59d5353f4b",
+      "ac584202-dc25-45a9-ac57-531906ce4b47",
+      "aa9b751b-ac21-460a-aab7-62cb23da67d5",
+      "09f3a7b7-0681-4787-b26d-be04c9b0eefb",
+      "554ff38a-cd53-4ede-8bbe-74c525a6fae4",
+      "27b2658e-54d9-4211-be12-57f3ca733406",
+      "b697c19b-0bed-42f2-afbb-56980aa04acb",
+      "a5f89cba-e42c-4f57-baac-ac8dd796dd1a",
+      "4af5f3d5-965a-4d20-9cd1-979f12d8ed79",
+      "b01d16cd-87c5-4aaf-afef-f88b72934e71",
       "8646fb93-74f3-43a6-9878-bd154d192969"
      ]
     }
    },
-   "rating": 4.89333333333333,
-   "count": 75,
-   "reviewCount": 46,
+   "rating": 4.89473684210526,
+   "count": 76,
+   "reviewCount": 47,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 6,
-    "5": 68
+    "5": 69
    }
   },
   "displayDecadeWarranty": true,

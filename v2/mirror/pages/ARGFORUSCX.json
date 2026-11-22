@@ -13,6 +13,15 @@
    "url": "/hojtalere/centerhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "88eb55df-9840-4997-bf9a-4a9399e5820b",
+   "96c5d063-1071-48b8-9f80-db30522c8e99",
+   "37870794-b565-4f29-bfd6-eeb1d23b6252"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 216162,
   "skuCode": "ARGFORUSCX",
@@ -136,7 +145,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 317,
+     "availableQuantity": 315,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -224,7 +233,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 15,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -425,45 +434,53 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFORUSCX leverer en klar, ren og ofte kraftfuld lyd med en immersiv gengivelse, hvilket gør systemet til en markant opgradering af hjemmebiografen. Centerhøjttaleren roses generelt for tydelige dialoger, mens enkelte lyttere oplever begrænset bastryk og dialogniveau ved højere krav. Fremragende værdi for pengene, et flot design og solid forarbejdning gør højttalerne særligt attraktive til kompakte surroundopsætninger og prisbevidste købere.",
+   "summary": "ARGFORUSCX leverer klar, ren og ofte kraftfuld lyd med en varm og medrivende gengivelse, der tydeligt forbedrer hjemmebio- og TV-opsætninger. Den fremragende værdi for pengene, det flotte design og den solide byggekvalitet gør centerhøjttaleren til et særligt godt valg til kompakte surroundsystemer. Enkelte anmeldelser nævner dog begrænset tryk og for svage dialoger ved moderat lydstyrke, mens nogle opsætninger får mindre ud af surroundeffekten end forventet.",
    "headlines": {
+    "clear, clean and immersive sound": {
+     "sentimentAnalysis": "Den klare, rene og detaljerede gengivelse roses gentagne gange, sammen med det medrivende lydbillede og den tydelige forbedring i forhold til TV- eller soundbar-lyd.",
+     "simpleTitle": "Klar, ren og medrivende lyd",
+     "bias": "positive",
+     "key": "clear-sound",
+     "groupId": "c220f32a-1a12-4138-845f-85f68709ebc3"
+    },
     "strong value for money": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent lyd og produkt som fremragende til prisen.",
+     "sentimentAnalysis": "Den lave pris forbindes gentagne gange med overraskende god lyd, hvilket gør højttaleren til et fremragende budgetkøb.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "strong-value-for-money",
-     "groupId": "bc70ef2c-8db3-4bd7-82d3-fe12dda92ea8"
+     "key": "excellent-value",
+     "groupId": "0f3be977-c7bc-48a9-9573-8d656e928dfc"
     },
-    "clear, clean and immersive sound": {
-     "sentimentAnalysis": "Klar, ren og kraftfuld lyd samt en bred lydbillede roses gentagne gange.",
-     "simpleTitle": "Klar, ren og immersiv lyd",
+    "easy fit in compact surround systems": {
+     "sentimentAnalysis": "Centerhøjttaleren beskrives som en vellykket tilføjelse til surround- og hjemmebiosystemer, især i kompakte opsætninger.",
+     "simpleTitle": "Passer godt i kompakte surroundsystemer",
      "bias": "positive",
-     "key": "clear-clean-and-immersive-sound",
-     "groupId": "241d1853-ce10-4340-a0a5-eecb8b7b0f2a"
+     "key": "surround-integration",
+     "groupId": "f1dfb6a3-8e9c-4546-9f38-09953854bd82"
     },
-    "seamless compact surround integration": {
-     "sentimentAnalysis": "Højttalerne beskrives som effektive tilføjelser til hjemmebiograf- og surroundsystemer, især kompakte opsætninger.",
-     "simpleTitle": "Problemfri integration i kompakte surroundsystemer",
+    "attractive design and solid build": {
+     "sentimentAnalysis": "Anmeldelserne roser det flotte udseende, den problemfri integration i stuen og en byggekvalitet, der kan måle sig med langt dyrere højttalere.",
+     "simpleTitle": "Flot design og solid byggekvalitet",
      "bias": "positive",
-     "key": "seamless-compact-surround-integration",
-     "groupId": "b922f37e-5b0b-4041-b626-6061aaa865e5"
+     "key": "design-build",
+     "groupId": "ec17fe6b-6813-4aef-90fa-61ccf0d595f7"
     },
-    "limited bass and dialogue impact": {
-     "sentimentAnalysis": "Nogle lyttere oplever svage dialoger uden højere lydstyrke og en begrænset forbedring af surroundoplevelsen.",
-     "simpleTitle": "Begrænset bastryk og dialogniveau",
+    "limited punch and weak dialogue at volume": {
+     "sentimentAnalysis": "Nogle lyttere savner tryk og vurderer, at kabinet eller enhed er for lille til stærkere dialoggengivelse og dynamik.",
+     "simpleTitle": "Begrænset tryk og svage dialoger ved højere lydstyrke",
      "bias": "negative",
-     "key": "limited-bass-and-dialogue-impact",
-     "groupId": "241d1853-ce10-4340-a0a5-eecb8b7b0f2a"
+     "key": "limited-punch",
+     "groupId": "c220f32a-1a12-4138-845f-85f68709ebc3"
     }
    },
    "grouping": {
-    "241d1853-ce10-4340-a0a5-eecb8b7b0f2a": {
+    "c220f32a-1a12-4138-845f-85f68709ebc3": {
      "title": "Lydkvalitet",
-     "id": "241d1853-ce10-4340-a0a5-eecb8b7b0f2a",
+     "id": "c220f32a-1a12-4138-845f-85f68709ebc3",
      "references": [
+      "08b81483-0dcf-4258-874a-c1853bc6fdca",
       "a92de1e9-f5b5-4894-a32b-b294aac5e5b6",
       "6844caaf-c6af-49d1-8444-720293b8a7df",
-      "372a874c-6f83-4ed0-91f0-0946591fb2a9",
+      "372a874c-6f83-4ed0-91f0-0946591fb2a7",
       "8361c4eb-2443-40fc-bcc6-3fa90e0c6a82",
       "23820958-3518-41aa-a4ec-0f08727bab95",
       "327b75da-2965-4414-b0da-bc073438e2d8",
@@ -476,36 +493,49 @@
       "4c38cec6-1c87-4697-90f3-be039db7f6c5",
       "7d2d2f58-2275-4715-a0a7-8f888cf6dfab",
       "5ac09eb9-b74c-41d0-9719-b4d0a48f1857",
-      "4daac8bd-8b22-4db0-a060-3b55dad69073",
       "41f2c97f-d7b4-4001-b76e-ee605302ebab",
-      "b7289545-e3b2-4500-a431-be10a4081896"
+      "4daac8bd-8b22-4db0-a060-3b55dad69073"
      ]
     },
-    "bc70ef2c-8db3-4bd7-82d3-fe12dda92ea8": {
-     "title": "Værdi for pengene",
-     "id": "bc70ef2c-8db3-4bd7-82d3-fe12dda92ea8",
+    "0f3be977-c7bc-48a9-9573-8d656e928dfc": {
+     "title": "Pris og værdi",
+     "id": "0f3be977-c7bc-48a9-9573-8d656e928dfc",
      "references": [
+      "fb030c5e-5ab1-4ad6-88b8-23e3e547df55",
       "8361c4eb-2443-40fc-bcc6-3fa90e0c6a82",
       "23820958-3518-41aa-a4ec-0f08727bab95",
       "0990c601-1fe9-4045-b1f5-8893c9498022",
+      "8203f605-2e12-49ea-900f-2fefd1dc6af1",
       "534d1c28-d949-4887-b57b-55aa5ac04d42",
       "470eb528-1d67-4886-a253-6a3a9f682745",
       "4c38cec6-1c87-4697-90f3-be039db7f6c5",
       "f4a54e1a-ce72-4677-b60e-c4a6968eae78",
-      "832d9339-4d7f-43c3-9031-ace67dff8c7f",
-      "765d6a64-d557-439f-977c-dd34f7c01f7c"
+      "765d6a64-d557-439f-977c-dd34f7c01f7c",
+      "4daac8bd-8b22-4db0-a060-3b55dad69073"
      ]
     },
-    "b922f37e-5b0b-4041-b626-6061aaa865e5": {
-     "title": "Integration i surroundsystem",
-     "id": "b922f37e-5b0b-4041-b626-6061aaa865e5",
+    "f1dfb6a3-8e9c-4546-9f38-09953854bd82": {
+     "title": "Systemintegration",
+     "id": "f1dfb6a3-8e9c-4546-9f38-09953854bd82",
      "references": [
       "6844caaf-c6af-49d1-8444-720293b8a7df",
-      "0990c601-1fe9-4045-b1f5-8893c9498022",
-      "8203f605-2e12-49ea-900f-2fefd1dc6af1",
       "b59134f4-b7c9-4824-ab9a-00f9ca07c9dc",
+      "8203f605-2e12-49ea-900f-2fefd1dc6af1",
       "b7289545-e3b2-4500-a431-be10a4081896",
       "ac7409be-1829-4519-8054-fbe9adf82a89",
+      "5ac09eb9-b74c-41d0-9719-b4d0a48f1857",
+      "4daac8bd-8b22-4db0-a060-3b55dad69073"
+     ]
+    },
+    "ec17fe6b-6813-4aef-90fa-61ccf0d595f7": {
+     "title": "Design og byggekvalitet",
+     "id": "ec17fe6b-6813-4aef-90fa-61ccf0d595f7",
+     "references": [
+      "fb030c5e-5ab1-4ad6-88b8-23e3e547df55",
+      "0ee6284b-2a77-45b7-bc4b-3cbc2f211aad",
+      "470eb528-1d67-4886-a253-6a3a9f682745",
+      "832d9339-4d7f-43c3-9031-ace67dff8c7f",
+      "6449b452-88f3-4a20-a853-3840e4aeca26",
       "4daac8bd-8b22-4db0-a060-3b55dad69073"
      ]
     }

@@ -13,6 +13,25 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk, Analog RCA, Hovedtelefon",
+   "Lydindgang": "HDMI, Coaxial, Optisk, USB A, USB B",
+   "Udgang (andet)": "IR",
+   "Indgang (andet)": "RS-232, Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang",
+   "Fra beskrivelsen": "Ethernet: 10/100 Base-T · IR-ud til kontrol af kompatible Marantz-forstærkere m.m."
+  },
+  "gallery": [
+   "934cf2f9-0eac-4293-b787-7349fcd58f1a",
+   "2f053138-9abb-4239-9586-9dd1acf4488d",
+   "8e622439-9688-43c5-b80f-c828c72439d2",
+   "e6b4df24-443d-4fbd-9bfc-0eb70c82e227",
+   "28e71684-da10-4d21-bebf-01ee751142de",
+   "95a68594-3ff6-4cb1-8d43-0a2d95b14bcf"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 229898,
   "skuCode": "MARACD50N",
@@ -231,7 +250,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 8,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -326,11 +345,11 @@
      "productCode": "MARACD50NSI"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager lørdag den 30. januar",
+     "deliveryDate": "2027-01-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -469,65 +488,60 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARANTZ CD50N leverer en varm, rummelig, slagkraftig og meget musikalsk lyd med detaljeret stereoperspektiv og overbevisende CD-gengivelse. Afspilleren passer desuden godt ind i både digitale og analoge anlæg og har omfattende netværksfunktioner. Betjeningen virker dog mindre gennemarbejdet med et enkelt display, kryptiske menuer, besværlig opsætning og ustabil streaming ifølge flere brugere.",
+   "summary": "MARACD50N leverer en varm, rummelig, slagkraftig og meget musikalsk lyd med et detaljeret stereoperspektiv og overbevisende cd-afspilning. Cd-lytning er en klar styrke, mens netværks- og streamingfunktionerne giver ekstra fleksibilitet, når de fungerer problemfrit. De største svagheder er det gammeldags display og en lejlighedsvis besværlig og upålidelig brugeroplevelse med HEOS og internetradio.",
    "headlines": {
     "warm, spacious and highly musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den detaljerede, afbalancerede, kraftfulde og rummelige gengivelse med tydelige stemmer samt moden CD- og streaminggengivelse.",
+     "sentimentAnalysis": "Anmeldelserne roser den detaljerede, balancerede, rummelige, kraftfulde og musikalske gengivelse, især i et komplet anlæg.",
      "simpleTitle": "Varm, rummelig og meget musikalsk lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "ad1adbd0-a3a0-40d9-856e-e73e6391d778"
+     "groupId": "d0b70da8-2a8d-465e-88be-dd2bfb47535a"
     },
-    "strong CD playback and system integration": {
-     "sentimentAnalysis": "CD-afspilleren værdsættes for behagelig afspilning af CD'er og for at forbinde moderne digitale kilder med analogt udstyr.",
-     "simpleTitle": "Stærk CD-gengivelse og god systemintegration",
+    "the interface feels dated and difficult": {
+     "sentimentAnalysis": "Anmeldelserne kritiserer det simple display, kryptiske menuer, vanskelig HEOS-betjening og besværlig opsætning af internetradio.",
+     "simpleTitle": "Brugerfladen virker gammeldags og besværlig",
+     "bias": "negative",
+     "key": "user-interface",
+     "groupId": "99ad0bec-3164-4238-b492-79931a16edd8"
+    },
+    "a strong choice for CD listening": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver cd-afspilningen som moden, fornøjelig og pålidelig; cd-lytning er en central styrke.",
+     "simpleTitle": "Et stærkt valg til cd-lytning",
      "bias": "positive",
-     "key": "cd-integration",
-     "groupId": "f5136433-776c-4215-9b2e-7c23aa77921b"
-    },
-    "network setup and menus feel cumbersome": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en langsom eller vanskelig opsætning af netværk og internetradio samt en uintuitiv app og menuer.",
-     "simpleTitle": "Netværksopsætning og menuer føles besværlige",
-     "bias": "negative",
-     "key": "network-setup",
-     "groupId": "b41504ec-d7e5-41c6-ac65-3b563178411e"
-    },
-    "the display is too basic for the premium design": {
-     "sentimentAnalysis": "Det enkle display og den kryptiske brugerflade virker forældede sammenlignet med det ellers eksklusive kabinet.",
-     "simpleTitle": "Displayet er for enkelt til det eksklusive design",
-     "bias": "negative",
-     "key": "display",
-     "groupId": "b41504ec-d7e5-41c6-ac65-3b563178411e"
+     "key": "cd-playback",
+     "groupId": "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4"
     }
    },
    "grouping": {
-    "ad1adbd0-a3a0-40d9-856e-e73e6391d778": {
+    "d0b70da8-2a8d-465e-88be-dd2bfb47535a": {
      "title": "Lydkvalitet",
-     "id": "ad1adbd0-a3a0-40d9-856e-e73e6391d778",
+     "id": "d0b70da8-2a8d-465e-88be-dd2bfb47535a",
      "references": [
       "38279a47-8590-4893-8c42-02e3afe147ec",
       "2cec66c8-9b51-49a4-b90a-432580307700",
+      "1bdbbf69-f142-471b-90f4-2db041302843",
       "69633139-3796-49c9-9a80-5d3a3615e045",
       "272a5238-01af-4bb0-89d6-f0ed95b37869"
      ]
     },
-    "b41504ec-d7e5-41c6-ac65-3b563178411e": {
-     "title": "Netværksfunktioner og betjening",
-     "id": "b41504ec-d7e5-41c6-ac65-3b563178411e",
+    "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4": {
+     "title": "Cd-afspilning",
+     "id": "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4",
+     "references": [
+      "38279a47-8590-4893-8c42-02e3afe147ec",
+      "1bdbbf69-f142-471b-90f4-2db041302843",
+      "69633139-3796-49c9-9a80-5d3a3615e045",
+      "272a5238-01af-4bb0-89d6-f0ed95b37869"
+     ]
+    },
+    "99ad0bec-3164-4238-b492-79931a16edd8": {
+     "title": "Brugerflade",
+     "id": "99ad0bec-3164-4238-b492-79931a16edd8",
      "references": [
       "38279a47-8590-4893-8c42-02e3afe147ec",
       "965a1648-8170-49f3-b0ba-ec39e80744ea",
       "d6af41df-5baa-4b71-9995-6947edd778f5",
       "abfc22bf-428d-4d7a-9a00-67fb22a32ecc"
-     ]
-    },
-    "f5136433-776c-4215-9b2e-7c23aa77921b": {
-     "title": "CD-afspilning",
-     "id": "f5136433-776c-4215-9b2e-7c23aa77921b",
-     "references": [
-      "1bdbbf69-f142-471b-90f4-2db041302843",
-      "69633139-3796-49c9-9a80-5d3a3615e045",
-      "272a5238-01af-4bb0-89d6-f0ed95b37869"
      ]
     }
    },

@@ -13,6 +13,15 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "214ea39b-2718-456b-8a02-cfb8d04f9568",
+   "d7bcf664-9ac8-4545-8db7-0e79da3e8323",
+   "2a913bda-4a0d-4290-ada0-90a1fdcb84ab"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190133,
   "skuCode": "BW707S3",
@@ -201,7 +210,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 44,
+     "availableQuantity": 40,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -625,48 +634,55 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BW707S3 leverer en bemærkelsesværdig klar, detaljeret og musikalsk lyd for en kompakt højttaler med en åben, varm og medrivende gengivelse. Bassen er overraskende fyldig og velkontrolleret i forhold til størrelsen, selv om en subwoofer kan tilføre endnu mere dybde. Den elegante udførelse, den fyldige rumgengivelse og den fremragende klarhed gør højttaleren særligt attraktiv i mindre rum og til fokuseret lytning.",
+   "summary": "BW707S3 leverer en bemærkelsesværdig klar, detaljeret og medrivende lyd fra et kompakt kabinet med åbne diskanttoner, tydelige mellemtoner og overraskende fyldig bas. Gengivelsen er generelt varm, musikalsk og behagelig ved lange lytte-sessioner, mens især mindre rum får glæde af det kontrollerede og rummelige lydbillede. Den elegante konstruktion og de stærke kombinationer med forstærkere eller subwoofere gør BW707S3 til en særdeles overbevisende reolhøjttaler.",
    "headlines": {
-    "clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Gengivelsen roses gentagne gange for klarhed, detaljer, renhed og en rummelig, musikalsk karakter.",
-     "simpleTitle": "Klar, detaljeret og medrivende lyd",
+    "clear, detailed and spacious sound": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for en ren, præcis, detaljeret og rummelig gengivelse, der lyder overraskende stor i forhold til størrelsen.",
+     "simpleTitle": "Klar, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f12146a3-d28a-4e49-8cf0-fea1c8e6ddd7"
+     "key": "sound-quality",
+     "groupId": "b928194d-16c3-4980-875a-5b8bcf17bdb9"
     },
-    "surprisingly full and powerful bass": {
-     "sentimentAnalysis": "Flere anmeldelser oplever bassen som usædvanligt dyb, fyldig og tilfredsstillende i forhold til det kompakte kabinet.",
-     "simpleTitle": "Overraskende fyldig og kraftig bas",
+    "surprisingly capable bass for the size": {
+     "sentimentAnalysis": "Mange kommentarer fremhæver den fyldige, kontrollerede eller overraskende dybe bas, der overgår forventningerne til så lille en højttaler.",
+     "simpleTitle": "Overraskende fyldig bas i forhold til størrelsen",
      "bias": "positive",
      "key": "bass",
-     "groupId": "7ed28de0-5d34-45aa-b4db-983dd0b95165"
+     "groupId": "c11ab015-e7ac-46c3-8108-edfc7d006df4"
     },
-    "subwoofer adds deeper full-range weight": {
-     "sentimentAnalysis": "Nogle anmeldelser anser en subwoofer for nyttig eller nødvendig til dybere bas, mens andre oplever tilfredsstillende bas uden.",
-     "simpleTitle": "En subwoofer tilfører mere dybde",
-     "bias": "negative",
-     "key": "bass",
-     "groupId": "7ed28de0-5d34-45aa-b4db-983dd0b95165"
-    },
-    "compact size suits smaller rooms": {
-     "sentimentAnalysis": "Det kompakte kabinet værdsættes gentagne gange for at levere fyldig lyd i små lytterum.",
-     "simpleTitle": "Kompakt størrelse passer til mindre rum",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "f12146a3-d28a-4e49-8cf0-fea1c8e6ddd7"
-    },
-    "elegant, attractive construction": {
-     "sentimentAnalysis": "Højttalerne beskrives konsekvent som elegante, slanke, smukke og veludførte.",
-     "simpleTitle": "Elegant og attraktiv udførelse",
+    "elegant and compact appearance": {
+     "sentimentAnalysis": "Højttalerne værdsættes for elegant konstruktion, attraktivt design og et kompakt format, der passer til mindre rum.",
+     "simpleTitle": "Elegant og kompakt udseende",
      "bias": "positive",
      "key": "design",
-     "groupId": "5cd1e7e8-e11f-4e42-bc61-9e09b0ecb750"
+     "groupId": "f600bff8-037b-4b0a-b4c6-eff9caadf7bd"
+    },
+    "warm and non-fatiguing presentation": {
+     "sentimentAnalysis": "Flere beskrivelser fremhæver den musikalske, varme og afslappede klang, som egner sig til lange og behagelige lytte-sessioner.",
+     "simpleTitle": "Varm og behagelig gengivelse",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "b928194d-16c3-4980-875a-5b8bcf17bdb9"
+    },
+    "a subwoofer can add deeper impact": {
+     "sentimentAnalysis": "Nogle lyttere oplever begrænset dybbas fra det kompakte kabinet og anbefaler en subwoofer for mere fuldtonelyd eller fysisk bastryk.",
+     "simpleTitle": "En subwoofer kan tilføre mere dybde",
+     "bias": "negative",
+     "key": "bass",
+     "groupId": "c11ab015-e7ac-46c3-8108-edfc7d006df4"
+    },
+    "occasionally sharp treble": {
+     "sentimentAnalysis": "Enkelte kommentarer oplever diskanten som lidt skarp, i kontrast til den generelle ros for klarhed og finesse.",
+     "simpleTitle": "Til tider skarp diskant",
+     "bias": "negative",
+     "key": "sound-quality",
+     "groupId": "b928194d-16c3-4980-875a-5b8bcf17bdb9"
     }
    },
    "grouping": {
-    "f12146a3-d28a-4e49-8cf0-fea1c8e6ddd7": {
+    "b928194d-16c3-4980-875a-5b8bcf17bdb9": {
      "title": "Lydkvalitet",
-     "id": "f12146a3-d28a-4e49-8cf0-fea1c8e6ddd7",
+     "id": "b928194d-16c3-4980-875a-5b8bcf17bdb9",
      "references": [
       "4b9ceb37-e8e4-4b8a-a731-6c0325ae55a4",
       "e7860db6-a30f-4448-b771-8436eb3eafa8",
@@ -684,6 +700,7 @@
       "433cd82c-ebf5-4e51-a8a7-2f112b26e06b",
       "0a109a17-d8db-4f5f-a4d4-55607328e512",
       "b76c63ed-5467-46c2-86a1-c48374d2d438",
+      "b0968d34-503f-475d-b1ce-8aa46a9d424f",
       "61e820f9-06ce-418e-882d-fc37feb6cf11",
       "6f4ca6f3-35f0-4811-bf06-83b9eb26d262",
       "00ae29fa-069b-4f5b-94cf-2254a8d2a268",
@@ -710,26 +727,25 @@
       "85ff1897-ded7-4120-8313-d75ffa7f48a7",
       "21388086-6fd7-49f3-974b-dabf92ee72a0",
       "48099d52-88c1-437f-bfcf-df19a88db1cb",
-      "40631790-05de-478a-8252-d3fdf6336a6d",
       "c1509b9c-f2eb-43c9-bd47-4fd4efdaedf0",
       "6b03c9c3-3b68-4d15-9e24-7bc24738783e"
      ]
     },
-    "7ed28de0-5d34-45aa-b4db-983dd0b95165": {
+    "c11ab015-e7ac-46c3-8108-edfc7d006df4": {
      "title": "Basgengivelse",
-     "id": "7ed28de0-5d34-45aa-b4db-983dd0b95165",
+     "id": "c11ab015-e7ac-46c3-8108-edfc7d006df4",
      "references": [
       "4b9ceb37-e8e4-4b8a-a731-6c0325ae55a4",
       "04e43e9e-0e77-4f84-aaa8-61c82a0bb1b3",
       "6c54abb3-9b62-46b3-91bc-f97de0deceaf",
       "70df91ff-e10a-437a-84bd-a370788efbac",
-      "433cd82c-ebf5-4e51-a8a7-2f112b26e06b",
+      "00ae29fa-069b-4f5b-94cf-2254a8d2a268",
       "b4d19043-4145-43f3-96f1-823213a1a33c",
       "4df4c088-74fd-49b1-8c4e-6f3a51434618",
       "94ab4b5a-8f28-432e-9ded-674fe3b837c4",
       "7b28cf17-799a-4584-933e-cdfcd256fe14",
       "9a6483ba-2433-435c-ae20-d7451b329612",
-      "c9c8ea38-7f8d-4f79-9a40-4de98367f216",
+      "1feb8126-3fed-4412-acbc-f6b48367d0ad",
       "9e82c4e8-71b8-4040-a50d-009c854b3a4b",
       "e12758ef-4d7c-4524-ab58-e298a824a900",
       "a191d028-2755-4da9-9bac-d510c311013e",
@@ -737,9 +753,9 @@
       "48099d52-88c1-437f-bfcf-df19a88db1cb"
      ]
     },
-    "5cd1e7e8-e11f-4e42-bc61-9e09b0ecb750": {
-     "title": "Design og udførelse",
-     "id": "5cd1e7e8-e11f-4e42-bc61-9e09b0ecb750",
+    "f600bff8-037b-4b0a-b4c6-eff9caadf7bd": {
+     "title": "Design og konstruktion",
+     "id": "f600bff8-037b-4b0a-b4c6-eff9caadf7bd",
      "references": [
       "4b9ceb37-e8e4-4b8a-a731-6c0325ae55a4",
       "c5f942f1-f0b4-4e12-8871-aa6b57c1fed5",

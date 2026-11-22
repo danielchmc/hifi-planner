@@ -13,6 +13,24 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Minijack/AUX",
+   "Lydindgang": "Optisk, Minijack/AUX",
+   "Indgang (andet)": "Ethernet, IR, USB A, USB B",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect",
+   "Højtaler type": "Trådløs højtaler",
+   "Fra beskrivelsen": "Tilslutninger: Digital/analog audio-ind (optisk/minijack combo), Ethernet, USB-A (eksterne USB-lagerenheder)***, USB-B mini (service) · Hovedtelefonudgang med dedikeret forstærker (stereo minijack) · Ethernet-tilslutning (RJ45 GigE) · Medfølgende tilbehør: Ethernetkabel, optisk-til-minijack adapter"
+  },
+  "gallery": [
+   "931c6d00-7f76-4aa5-aac4-e0584ae56074",
+   "09f4e003-371a-490f-b22a-93975463f170",
+   "6b8ad14f-017e-448b-a4f1-bfebe3cf53c9",
+   "0bc3eff1-5c6b-43b8-a83e-6267c4b615dc",
+   "2aa2c903-432b-4630-86a5-eb2962186f8e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 95505,
   "skuCode": "BLSPULSE2I",
@@ -246,7 +264,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 90,
+     "availableQuantity": 88,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -373,7 +391,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 69,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -477,63 +495,64 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSPULSE2I leverer varm, klar og kraftfuld lyd med imponerende bas, fine detaljer og nok styrke til at fylde både små og store rum. Den kompakte placering, nemme opsætning, fleksible appstyring og mulighed for stereokobling gør højttaleren alsidig, selv om nogle brugere oplever problemer med Wi-Fi, forbindelser og software. Samlet set giver BLSPULSE2I en medrivende og raffineret lytteoplevelse samt god værdi for en kompakt trådløs højttaler.",
+   "summary": "BLSPULSE2I leverer en varm, punchy og imponerende klar lyd med dyb bas, fine detaljer og kraft nok til at fylde alt fra et køkken til et stort showroom. Nem opsætning, fleksibel lydjustering, bekvem betjening og fremragende stereoparring gør højttaleren til et alsidigt valg til mindre rum. Sporadiske problemer med Wi-Fi og software, begrænset stereoeffekt fra én enhed samt delte meninger om basbalance og mellemtoner forhindrer en helt fejlfri oplevelse.",
    "headlines": {
     "clear, powerful sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, detaljerede og energiske gengivelse, især basgengivelsens dybde og kraft.",
+     "sentimentAnalysis": "Anmeldelserne roser højttalerens klarhed, kraft, dybde og stærke basgengivelse.",
      "simpleTitle": "Klar og kraftfuld lyd med dyb bas",
      "bias": "positive",
      "key": "sound",
-     "groupId": "34ccad96-0498-4dc7-a9b1-602037fd677d"
+     "groupId": "ffb28e57-9290-4669-851d-e3d2da83be05"
     },
-    "easy and flexible app control": {
-     "sentimentAnalysis": "Appen og betjeningsmulighederne opleves ofte som intuitive, praktiske og funktionsrige via både mobil og computer.",
-     "simpleTitle": "Nem og fleksibel appstyring",
+    "easy control and setup": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver intuitiv betjening, nem opsætning og praktisk styring via app eller fjernbetjening.",
+     "simpleTitle": "Nem betjening og opsætning",
      "bias": "positive",
-     "key": "control",
-     "groupId": "94a85b91-1052-4e98-8986-069441e85967"
+     "key": "usability",
+     "groupId": "1b44f8b2-d38e-4f4d-9700-5849bcfdaca4"
     },
-    "software and wireless connections can be unstable": {
-     "sentimentAnalysis": "Flere anmeldelser nævner Wi-Fi-udfald, ustabile forbindelser, hakkende lyd eller upålidelig styring af flere højttalere.",
-     "simpleTitle": "Software og trådløse forbindelser kan være ustabile",
+    "wi-Fi and software connections can be unstable": {
+     "sentimentAnalysis": "Flere anmeldelser nævner udfald, svag Wi-Fi-modtagelse eller upålidelig højttalerparring og app-forbindelse.",
+     "simpleTitle": "Wi-Fi- og softwareforbindelser kan være ustabile",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "cf60e29b-73a0-4c53-8d22-5dd39f0ff986"
+     "groupId": "9ea44227-7ba4-4e01-8e96-4afa3c345591"
     },
-    "sound fills large spaces with ease": {
-     "sentimentAnalysis": "Højttaleren beskrives som ren, kraftig og i stand til at dække køkkener, stuer og meget store erhvervsområder.",
-     "simpleTitle": "Fylder store rum uden besvær",
+    "powerful enough for large spaces": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ren, høj og rumfyldende lyd i køkkener, stuer og et stort showroom.",
+     "simpleTitle": "Kraftfuld nok til store rum",
      "bias": "positive",
      "key": "sound",
-     "groupId": "34ccad96-0498-4dc7-a9b1-602037fd677d"
+     "groupId": "ffb28e57-9290-4669-851d-e3d2da83be05"
     },
-    "stereo pairing improves the listening experience": {
-     "sentimentAnalysis": "Stereokobling af to højttalere fungerer ifølge anmeldelserne godt og giver en kraftigere og mere rummelig gengivelse.",
-     "simpleTitle": "Stereokobling forbedrer lytteoplevelsen",
+    "stereo pairing improves the experience": {
+     "sentimentAnalysis": "Stereoparring med to højttalere beskrives som effektiv og i stand til at skabe en markant bedre, rumfyldende gengivelse.",
+     "simpleTitle": "Stereoparring forbedrer oplevelsen",
      "bias": "positive",
      "key": "stereo",
-     "groupId": "387481e3-f329-4f60-b146-b07edf2fd64d"
+     "groupId": "36fa9216-1d16-421b-b2f6-4606bf44316e"
     },
-    "compact design suits flexible placement": {
-     "sentimentAnalysis": "Det kompakte format, det flotte udseende og mulighederne for vægmontering værdsættes i køkkener, stuer og andre rum.",
-     "simpleTitle": "Kompakt design giver fleksibel placering",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "b44d87b4-05a2-4025-bfdc-cb9b8b9f5538"
-    },
-    "bass and tonal balance can need adjustment": {
-     "sentimentAnalysis": "Nogle lytteforhold afslører dominerende bas, tilbagetrukket mellemtone eller mindre dybde end forventet, selv om tonekontroller kan hjælpe.",
-     "simpleTitle": "Bas og klangbalance kan kræve justering",
+    "bass and midrange balance can vary": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever bassen som for dominerende eller ønsker mere dybde, mens en anden savner tilstedeværelse i mellemtonen.",
+     "simpleTitle": "Bas- og mellemton balance kan variere",
      "bias": "negative",
      "key": "sound",
-     "groupId": "34ccad96-0498-4dc7-a9b1-602037fd677d"
+     "groupId": "ffb28e57-9290-4669-851d-e3d2da83be05"
+    },
+    "single-speaker stereo effect is limited": {
+     "sentimentAnalysis": "Brug som enkeltstående højttaler egner sig til afslappet lytning, men stereoperspektivet er begrænset sammenlignet med et par eller større højttalere.",
+     "simpleTitle": "Stereoeffekten fra én højttaler er begrænset",
+     "bias": "negative",
+     "key": "stereo",
+     "groupId": "36fa9216-1d16-421b-b2f6-4606bf44316e"
     }
    },
    "grouping": {
-    "34ccad96-0498-4dc7-a9b1-602037fd677d": {
+    "ffb28e57-9290-4669-851d-e3d2da83be05": {
      "title": "Lydkvalitet",
-     "id": "34ccad96-0498-4dc7-a9b1-602037fd677d",
+     "id": "ffb28e57-9290-4669-851d-e3d2da83be05",
      "references": [
+      "dd156069-61b1-4c91-93fb-b70e0eab9acb",
       "a8d39d81-4f1b-4822-acb1-2a07fd4abbae",
       "b929e1bb-b0e0-484c-b82a-18f36e50c184",
       "26e49ad4-caa1-4722-a608-740d4eeb1039",
@@ -541,15 +560,12 @@
       "888dac13-b9eb-455c-bf32-506e0bdbbf20",
       "44179c9b-513c-42a5-b31b-b7e18cc02dc1",
       "46ddd096-d3b1-467c-8ce4-5f001496d22f",
-      "d08c8ffa-817c-4d94-be0a-2dba50e99bf5",
       "e3d28a76-490d-40ce-b536-20c91630d632",
       "5902ca71-1db0-4495-96b6-77bca6ab41e9",
       "2cb98cfd-e0ef-4d26-b493-e9ee54139b68",
       "4ab69097-77e1-4bb3-923e-41a1da59243f",
-      "05d80fd8-8b66-4ee2-aeab-5e824a8da55d",
       "c7434ab5-82c9-4f97-9d97-733eb18fdfee",
       "03fcd760-f575-4f46-985f-f59cc2abdd17",
-      "04ce5a5c-6937-4cb9-8921-8353aacf5d59",
       "53693d47-8541-4a68-a351-d418dc2690da",
       "f600a003-b5e0-4e9d-9e64-da3e1bcadee9",
       "9fb44521-68de-4a07-87c4-cb8776aa901f",
@@ -566,12 +582,13 @@
       "5ae2c3be-e1f7-490b-97df-9a697f228009",
       "4313f706-6fe6-45bf-9fd4-f57181ed1a4d",
       "9e3b1dd2-6ec6-4883-907c-d04bb172be5c",
-      "321d4e51-7a09-4d91-8ece-9fd9cd4a5533"
+      "321d4e51-7a09-4d91-8ece-9fd9cd4a5533",
+      "8614b756-27bc-48de-ba60-3af798d0ba28"
      ]
     },
-    "94a85b91-1052-4e98-8986-069441e85967": {
-     "title": "App og betjening",
-     "id": "94a85b91-1052-4e98-8986-069441e85967",
+    "1b44f8b2-d38e-4f4d-9700-5849bcfdaca4": {
+     "title": "Opsætning og app-betjening",
+     "id": "1b44f8b2-d38e-4f4d-9700-5849bcfdaca4",
      "references": [
       "a8d39d81-4f1b-4822-acb1-2a07fd4abbae",
       "b929e1bb-b0e0-484c-b82a-18f36e50c184",
@@ -581,14 +598,15 @@
       "9fb44521-68de-4a07-87c4-cb8776aa901f",
       "1a6123f0-4b82-43db-9245-91878f3cf5c9",
       "efa662eb-a0bf-496a-bc1c-bfdee0da4338",
+      "000f714c-b968-4a29-81ea-4b7ab10cafd9",
       "a177d910-db9d-47ad-a059-b00f9e6faa3a",
       "321d4e51-7a09-4d91-8ece-9fd9cd4a5533",
       "16c90b8a-4f62-40dd-9f32-3af4c5b3ad85"
      ]
     },
-    "387481e3-f329-4f60-b146-b07edf2fd64d": {
-     "title": "Stereokobling",
-     "id": "387481e3-f329-4f60-b146-b07edf2fd64d",
+    "36fa9216-1d16-421b-b2f6-4606bf44316e": {
+     "title": "Stereoparring",
+     "id": "36fa9216-1d16-421b-b2f6-4606bf44316e",
      "references": [
       "61028da9-ed92-42d2-a546-9a1d0b96746c",
       "04ce5a5c-6937-4cb9-8921-8353aacf5d59",
@@ -597,20 +615,9 @@
       "16c90b8a-4f62-40dd-9f32-3af4c5b3ad85"
      ]
     },
-    "b44d87b4-05a2-4025-bfdc-cb9b8b9f5538": {
-     "title": "Design og placering",
-     "id": "b44d87b4-05a2-4025-bfdc-cb9b8b9f5538",
-     "references": [
-      "2cb98cfd-e0ef-4d26-b493-e9ee54139b68",
-      "9fb44521-68de-4a07-87c4-cb8776aa901f",
-      "4313f706-6fe6-45bf-9fd4-f57181ed1a4d",
-      "321d4e51-7a09-4d91-8ece-9fd9cd4a5533",
-      "00042782-2587-4514-b7d1-2a90e5e2f2a2"
-     ]
-    },
-    "cf60e29b-73a0-4c53-8d22-5dd39f0ff986": {
-     "title": "Wi-Fi og forbindelser",
-     "id": "cf60e29b-73a0-4c53-8d22-5dd39f0ff986",
+    "9ea44227-7ba4-4e01-8e96-4afa3c345591": {
+     "title": "Forbindelse",
+     "id": "9ea44227-7ba4-4e01-8e96-4afa3c345591",
      "references": [
       "00042782-2587-4514-b7d1-2a90e5e2f2a2",
       "f600a003-b5e0-4e9d-9e64-da3e1bcadee9",

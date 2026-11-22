@@ -13,6 +13,27 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "HDMI, Optisk",
+   "Indgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Bluetooth type": "5.3",
+   "Fra beskrivelsen": "HDMI 2.1 (eARC, 4K60, HDCP 2.3) · USB-tilslutning med ladefunktion (kun service, 5V/0,5A)"
+  },
+  "gallery": [
+   "4cef1a42-c59f-4e17-81d5-62d5d372acd1",
+   "6c799668-d507-4881-8e81-f4dec3999a49",
+   "0f2e7f26-00d1-4713-864d-3bf8a7d2c80b",
+   "568a9b7c-76b1-4fcd-bb24-984f8009c9c2",
+   "a963a56c-a356-479c-992b-baa83c65f689",
+   "ba2bad7e-6366-4c9f-98e7-842e86ef6d16",
+   "ecac9700-2841-418b-bcb7-4e595aa23fc2",
+   "95d81602-0a9a-469e-8a0a-ad7b35d1504b",
+   "86c90747-2c96-43a4-b78c-d6d51d392633"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 266649,
   "skuCode": "JBLBAR800M2",
@@ -147,7 +168,7 @@
     "productCode": "JBLBAR800M2BK",
     "ean": "1200130020032",
     "priceDetails": {
-     "priceValueId": 1217082,
+     "priceValueId": 1221105,
      "price": 4499,
      "priceFormatted": "4.499,-",
      "priceBefore": 6799,
@@ -209,7 +230,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 38,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -285,41 +306,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBL Bar 800 MK2 leverer en varm, kraftfuld og omsluttende lyd med fyldig bas og imponerende lydstyrke. De aftagelige baghøjttalere giver fleksibel og engagerende surroundlyd, mens opsætningen er enkel, og leveringen er pålidelig. Samlet set er soundbaren meget overbevisende, selv om lydkvaliteten for nogle lyttere er solid snarere end enestående.",
+   "summary": "JBL Bar 800 MK2 leverer en varm, kraftfuld og omsluttende lyd med tilfredsstillende bas og imponerende lydstyrke. De aftagelige sidehøjttalere giver fleksibel surroundlyd, mens opsætningen er enkel, og købsoplevelsen er problemfri. Lydkvaliteten får overvejende ros, selv om forventningen bør være solid soundbar-ydelse frem for absolut topklasse.",
    "headlines": {
-    "fast, reliable delivery and service": {
-     "sentimentAnalysis": "Købsoplevelsen roses for hurtig levering, omhyggelig emballering og problemfri service.",
-     "simpleTitle": "Hurtig og pålidelig levering og service",
-     "bias": "positive",
-     "key": "reliable-service",
-     "groupId": "8e817859-686b-4ff2-aacc-2e0858a37159"
-    },
-    "powerful, immersive sound with punchy bass": {
-     "sentimentAnalysis": "Lyden roses som fremragende, kraftfuld og meget underholdende, især på grund af den stærke bas og høje lydstyrke.",
+    "powerful, immersive sound with rich bass": {
+     "sentimentAnalysis": "Lyden roses som fremragende, kraftfuld og meget engagerende, især på grund af den stærke bas og høje lydstyrke.",
      "simpleTitle": "Kraftfuld, omsluttende lyd med fyldig bas",
      "bias": "positive",
      "key": "sound-power",
-     "groupId": "17181e9f-3cbf-4496-95c9-7737a87d380b"
+     "groupId": "9c9626ba-0615-478a-886e-a4d471b6cc61"
     },
-    "detachable speakers are practical and engaging": {
-     "sentimentAnalysis": "Designet med aftagelige højttalere anses for at være særligt nyttigt og attraktivt.",
-     "simpleTitle": "Aftagelige højttalere er praktiske og engagerende",
+    "fast delivery and smooth service": {
+     "sentimentAnalysis": "Forhandleroplevelsen roses for konkurrencedygtige priser, hurtig levering og problemfri håndtering.",
+     "simpleTitle": "Hurtig levering og problemfri service",
      "bias": "positive",
-     "key": "speaker-flexibility",
-     "groupId": "22632638-6025-4452-b886-9f17828b0ea0"
+     "key": "smooth-purchase",
+     "groupId": "d99478c8-af42-4fc4-bb35-5ad9bf40fe5c"
     },
-    "setup is quick and uncomplicated": {
-     "sentimentAnalysis": "Produktet er nemt at samle og konfigurere, og installationen er ligetil.",
-     "simpleTitle": "Opsætning og installation er hurtig og enkel",
+    "solid rather than outstanding sound quality": {
+     "sentimentAnalysis": "Den samlede soundbar-ydelse vurderes som god og passende, men ikke konsekvent som enestående.",
+     "simpleTitle": "Solid snarere end enestående lydkvalitet",
+     "bias": "negative",
+     "key": "sound-solid",
+     "groupId": "9c9626ba-0615-478a-886e-a4d471b6cc61"
+    },
+    "removable speakers are practical and versatile": {
+     "sentimentAnalysis": "De aftagelige sidehøjttalere opfattes som en særligt nyttig og attraktiv funktion.",
+     "simpleTitle": "Aftagelige højttalere er praktiske og fleksible",
+     "bias": "positive",
+     "key": "speakers-practical",
+     "groupId": "c3885ba6-6f0d-4582-84e1-91a608d7df08"
+    },
+    "setup is easy and uncomplicated": {
+     "sentimentAnalysis": "Produktet beskrives som hurtigt og nemt at samle og konfigurere.",
+     "simpleTitle": "Opsætningen er nem og ukompliceret",
      "bias": "positive",
      "key": "easy-setup",
-     "groupId": "cb3fd108-e829-46ef-80ba-74793fed4cfe"
+     "groupId": "b4edbe89-31d7-4e5c-a591-939bae3cbf3f"
     }
    },
    "grouping": {
-    "17181e9f-3cbf-4496-95c9-7737a87d380b": {
+    "9c9626ba-0615-478a-886e-a4d471b6cc61": {
      "title": "Lydkvalitet",
-     "id": "17181e9f-3cbf-4496-95c9-7737a87d380b",
+     "id": "9c9626ba-0615-478a-886e-a4d471b6cc61",
      "references": [
       "1428b32f-ecf0-4c8e-b7d9-2a2b38431bef",
       "26693b01-325e-48f1-b5a0-387dd02fc56e",
@@ -327,42 +355,41 @@
       "7faa5d8e-fec1-4afa-bfa6-8abf209b1cc6"
      ]
     },
-    "8e817859-686b-4ff2-aacc-2e0858a37159": {
-     "title": "Levering og service",
-     "id": "8e817859-686b-4ff2-aacc-2e0858a37159",
+    "d99478c8-af42-4fc4-bb35-5ad9bf40fe5c": {
+     "title": "Købsoplevelse",
+     "id": "d99478c8-af42-4fc4-bb35-5ad9bf40fe5c",
      "references": [
       "1428b32f-ecf0-4c8e-b7d9-2a2b38431bef",
       "e50b89bf-d997-47df-8d24-aa943262a31e",
-      "7c23065c-63f8-4a91-8ff7-209415fcd8ba",
-      "eec87daa-5162-4dc2-9ba8-5a2151a95ca7"
+      "7c23065c-63f8-4a91-8ff7-209415fcd8ba"
      ]
     },
-    "22632638-6025-4452-b886-9f17828b0ea0": {
+    "c3885ba6-6f0d-4582-84e1-91a608d7df08": {
      "title": "Aftagelige højttalere",
-     "id": "22632638-6025-4452-b886-9f17828b0ea0",
+     "id": "c3885ba6-6f0d-4582-84e1-91a608d7df08",
      "references": [
       "26693b01-325e-48f1-b5a0-387dd02fc56e",
       "e50b89bf-d997-47df-8d24-aa943262a31e"
      ]
     },
-    "cb3fd108-e829-46ef-80ba-74793fed4cfe": {
+    "b4edbe89-31d7-4e5c-a591-939bae3cbf3f": {
      "title": "Opsætning og installation",
-     "id": "cb3fd108-e829-46ef-80ba-74793fed4cfe",
+     "id": "b4edbe89-31d7-4e5c-a591-939bae3cbf3f",
      "references": [
       "1428b32f-ecf0-4c8e-b7d9-2a2b38431bef",
       "eec87daa-5162-4dc2-9ba8-5a2151a95ca7"
      ]
     }
    },
-   "rating": 4.83333333333333,
-   "count": 12,
+   "rating": 4.84615384615385,
+   "count": 13,
    "reviewCount": 6,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 0,
-    "5": 11
+    "5": 12
    }
   },
   "boxContent": [

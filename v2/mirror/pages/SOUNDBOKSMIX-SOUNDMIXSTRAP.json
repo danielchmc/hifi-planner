@@ -13,6 +13,19 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "917f38a6-86c8-45f7-98b8-546b48b139ff",
+   "b2df07a9-bb38-479a-814c-ed2dc0f353a3",
+   "90e8b490-298e-458a-b74a-7fe48d9e99cf",
+   "7ab2c491-8f96-4988-8d8c-ca484f72889b",
+   "d07bb4e4-e974-41d5-8e44-38b659b27c69",
+   "e904d953-eac8-41fa-a72d-cd78766aa086",
+   "cda79a6a-b5d2-4b2c-b08a-1c7759db6bd8"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 282727,
   "skuCode": "SOUNDBOKSMIX-SOUNDMIXSTRAP",
@@ -146,7 +159,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 167,
+        "availableQuantity": 154,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.999,-",
@@ -158,42 +171,43 @@
      ],
      "parentProductCode": "SOUNDBOKSMIX",
      "reviews": {
-      "summary": "SOUNDBOKS MIX leverer varm, punchy og imponerende kraftfuld lyd for en kompakt festhøjttaler med klare højder, mellemtoner og basser samt nyttige genreindstillinger. Det bærbare design, den lange batteritid og den nemme betjening gør højttaleren særdeles velegnet til fester, strandture og udendørs brug. Den samlede modtagelse er begejstret, selv om manglen på WiFi og de mere begrænsede dybeste basser sammenlignet med større Soundboks-modeller stadig er nævneværdige ulemper.",
+      "summary": "SOUNDBOKS MIX leverer varm, fyldig og omsluttende lyd med bemærkelsesværdigt velafbalancerede høje toner, mellemtoner og bas for en kompakt festhøjttaler. Det lettere og transportable design, den lange batteritid og den justerbare equalizer gør højttaleren alsidig til fester, strandture og hverdagslytning. Forventningerne til dyb bas bør være realistiske sammenlignet med større SOUNDBOKS-modeller, mens manglen på WiFi eller AirPlay er en tydelig begrænsning.",
       "headlines": {
        "powerful, balanced sound": {
-        "sentimentAnalysis": "Højttaleren roses gentagne gange for høj, klar og velafbalanceret lyd på tværs af højder, mellemtoner og basser.",
+        "sentimentAnalysis": "Anmeldelserne roser den kraftfulde lyd, klare høje toner, tydelige dybe toner og den generelt afbalancerede gengivelse, mens equalizerindstillinger giver ekstra alsidighed.",
         "simpleTitle": "Kraftfuld, afbalanceret lyd",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "41d9c05f-186e-4b6e-9709-effa0c0e773d"
+        "key": "powerful-balanced-sound",
+        "groupId": "351b5472-5aef-406a-bafc-96d21a99446d"
        },
-       "surprisingly deep bass for its size": {
-        "sentimentAnalysis": "De kompakte mål kombineres efter anmeldelserne med kraftig, overraskende dyb bas, især med den basforstærkede indstilling.",
-        "simpleTitle": "Overraskende dyb bas i forhold til størrelsen",
+       "compact size still delivers impressive bass": {
+        "sentimentAnalysis": "Det kompakte kabinet beskrives gentagne gange som overraskende kraftfuldt og basstærkt med masser af tryk trods den mindre størrelse.",
+        "simpleTitle": "Kompakt størrelse med imponerende bas",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "41d9c05f-186e-4b6e-9709-effa0c0e773d"
+        "key": "compact-bass",
+        "groupId": "351b5472-5aef-406a-bafc-96d21a99446d"
        },
-       "easy to carry": {
-        "sentimentAnalysis": "Det mindre og lettere format værdsættes, fordi det gør transporten nemmere end med større Soundboks-modeller.",
-        "simpleTitle": "Nem at bære",
+       "lighter and easier to carry": {
+        "sentimentAnalysis": "Det mindre og lettere format værdsættes, fordi højttaleren kan bæres med én hånd og nemmere tages med til strande og fester.",
+        "simpleTitle": "Lettere og nemmere at bære",
         "bias": "positive",
-        "key": "portability",
-        "groupId": "3188d3f5-ba3a-47f4-9d51-d05ba2b3f526"
+        "key": "easy-to-carry",
+        "groupId": "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa"
        },
-       "long battery life": {
-        "sentimentAnalysis": "Batteritiden roses som lang og velegnet til længere tids lytning.",
+       "long-lasting battery": {
+        "sentimentAnalysis": "Batteritiden roses for at være lang nok til langvarig lytning og fester.",
         "simpleTitle": "Lang batteritid",
         "bias": "positive",
-        "key": "battery-life",
-        "groupId": "ff3902ef-66f1-4c60-bfe2-ce7750c6f211"
+        "key": "long-battery",
+        "groupId": "6f1ffa02-69c6-42dc-86d3-0d01b381fb39"
        }
       },
       "grouping": {
-       "41d9c05f-186e-4b6e-9709-effa0c0e773d": {
+       "351b5472-5aef-406a-bafc-96d21a99446d": {
         "title": "Lydkvalitet",
-        "id": "41d9c05f-186e-4b6e-9709-effa0c0e773d",
+        "id": "351b5472-5aef-406a-bafc-96d21a99446d",
         "references": [
+         "15f38738-f6f0-4460-9aaa-0d23c8979025",
          "6019fa02-9852-430e-bc40-5525fde404fe",
          "eebf791f-1304-4887-9bef-111fbf8ac8c7",
          "86a6ba9d-6606-4953-99eb-1c8a529075b7",
@@ -206,18 +220,18 @@
          "bf3532ad-5274-4af1-a1c7-739e604ba60a"
         ]
        },
-       "3188d3f5-ba3a-47f4-9d51-d05ba2b3f526": {
+       "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa": {
         "title": "Bærbarhed",
-        "id": "3188d3f5-ba3a-47f4-9d51-d05ba2b3f526",
+        "id": "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa",
         "references": [
          "eebf791f-1304-4887-9bef-111fbf8ac8c7",
          "86a6ba9d-6606-4953-99eb-1c8a529075b7",
          "bf3532ad-5274-4af1-a1c7-739e604ba60a"
         ]
        },
-       "ff3902ef-66f1-4c60-bfe2-ce7750c6f211": {
+       "6f1ffa02-69c6-42dc-86d3-0d01b381fb39": {
         "title": "Batteritid",
-        "id": "ff3902ef-66f1-4c60-bfe2-ce7750c6f211",
+        "id": "6f1ffa02-69c6-42dc-86d3-0d01b381fb39",
         "references": [
          "86a6ba9d-6606-4953-99eb-1c8a529075b7",
          "82ee8401-f34b-4cc7-9317-84159cb92571"
@@ -256,7 +270,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 282,
+        "availableQuantity": 280,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "359,-",
@@ -275,7 +289,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 18
+    "numberOfStoresExperience": 17
    }
   },
   "variantNavigationType": "dropDown",

@@ -13,6 +13,18 @@
    "url": "/stereo/musikstreamer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Trådløs overførsel": "Spotify Connect",
+   "Fra beskrivelsen": "Tilslutninger: Analog line-in/out (RCA), digital line-out (optisk)"
+  },
+  "gallery": [
+   "9474d123-46b5-4cb8-b65c-74918e8349a1",
+   "d9e2951f-a65d-41a5-a086-2a8db3e13808",
+   "2eeb2a3d-0c02-480b-a7ba-b084d14de36c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 191785,
   "skuCode": "ARGSTREAM2MK3",
@@ -185,88 +197,111 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon Stream 2 MK3 er en kompakt, alsidig og meget prisvenlig streamer, der tilføjer internet radio og Spotify til eksisterende hi-fi-anlæg med varm, klar og punchy lyd. Opsætning og daglig betjening er som regel bemærkelsesværdigt enkel, med stabilt Wi-Fi og praktisk app-styring. De vigtigste forbehold er lejlighedsvise buffer- eller forbindelsesproblemer, begrænsede netværkskilder og tilslutninger, et lille display samt kritik af Spotify-lyden.",
+   "summary": "ARGON STREAM2MK3 er en kompakt, alsidig og generelt brugervenlig streamer, som opgraderer ældre hi-fi-anlæg med pålidelig internet-radio og Spotify-adgang. Lyden beskrives oftest som god, klar og overraskende kompetent til prisen, selv om enkelte anmeldelser nævner skuffende Spotify-kvalitet eller svag dynamik. Enkel opsætning og et stort udvalg af radiostationer er tydelige styrker, mens netværksudfald, begrænsede tilslutningsmuligheder, manglende NAS-understøttelse og et lille display går igen som kritikpunkter. Varm, punchy og immersiv streaming gør produktet til en levende moderne opgradering af eksisterende lydanlæg.",
    "headlines": {
-    "setup and operation are generally easy": {
-     "sentimentAnalysis": "Den mest gennemgående praktiske styrke er hurtig, enkel opsætning og ukompliceret daglig betjening.",
-     "simpleTitle": "Opsætning og betjening er som regel enkel",
+    "good sound and a clear improvement for older hi-fi systems": {
+     "sentimentAnalysis": "Streameren roses ofte for god lyd i høj kvalitet og for tydeligt at forbedre ældre lydanlæg.",
+     "simpleTitle": "God lyd og en tydelig forbedring af ældre hi-fi-anlæg",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "8643108b-eb09-4cad-92e3-ecd969d51473"
+    },
+    "excellent access to internet radio and Spotify": {
+     "sentimentAnalysis": "Internet-radio, det store udvalg af stationer og Spotify-streaming værdsættes konsekvent som nyttige funktioner.",
+     "simpleTitle": "Fremragende adgang til internet-radio og Spotify",
+     "bias": "positive",
+     "key": "features",
+     "groupId": "3292f0ff-3ca0-402d-a58f-fa804f526102"
+    },
+    "easy setup and convenient everyday use": {
+     "sentimentAnalysis": "Opsætning og betjening roses gentagne gange som hurtig, enkel og intuitiv.",
+     "simpleTitle": "Nem opsætning og bekvem daglig brug",
      "bias": "positive",
      "key": "setup",
-     "groupId": "607cd2ec-4078-4b72-9120-0acfca34e769"
+     "groupId": "8db998c8-e4e0-4ae1-80af-25104f5d5182"
     },
-    "internet radio and Spotify provide broad, useful access": {
-     "sentimentAnalysis": "Internet radio med mange stationer og praktisk Spotify-streaming fremhæves gentagne gange som produktets kerneværdi.",
-     "simpleTitle": "Internet radio og Spotify giver bred adgang",
+    "reliable network connection in many setups": {
+     "sentimentAnalysis": "Flere brugere oplever hurtig Wi-Fi-registrering, stabil modtagelse og problemfri netværksdrift.",
+     "simpleTitle": "Stabil netværksforbindelse i mange opsætninger",
      "bias": "positive",
-     "key": "streaming",
-     "groupId": "325d0019-1795-4d60-92e1-c69ab1fe76d3"
+     "key": "network",
+     "groupId": "43d90010-7db5-487f-b1e6-974b90d84205"
     },
-    "clear, enjoyable sound for existing hi-fi systems": {
-     "sentimentAnalysis": "Flere anmeldelser roser den gode, mærkbart forbedrede eller høje lydkvalitet gennem eksisterende anlæg.",
-     "simpleTitle": "Klar og behagelig lyd til eksisterende hi-fi-anlæg",
-     "bias": "positive",
+    "limited compatibility and connections": {
+     "sentimentAnalysis": "Flere anmeldelser savner afspilning fra NAS eller lokale biblioteker, kablet netværk eller bredere Bluetooth- og Wi-Fi-streamingmuligheder.",
+     "simpleTitle": "Begrænset kompatibilitet og tilslutninger",
+     "bias": "negative",
+     "key": "features",
+     "groupId": "3292f0ff-3ca0-402d-a58f-fa804f526102"
+    },
+    "sound quality can be disappointing": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer svag Spotify-lyd, begrænset dynamik eller middelmådig samlet kvalitet.",
+     "simpleTitle": "Lydkvaliteten kan skuffe",
+     "bias": "negative",
      "key": "sound",
-     "groupId": "cd587764-c903-4196-9cc2-9dceb97741f6"
+     "groupId": "8643108b-eb09-4cad-92e3-ecd969d51473"
     },
-    "network sources and connections are limited": {
-     "sentimentAnalysis": "Flere anmeldelser bemærker manglende NAS- eller LAN-musikafspilning, ingen Ethernet-port og begrænsede fysiske tilslutninger.",
-     "simpleTitle": "Netværkskilder og tilslutninger er begrænsede",
+    "dropouts and network limitations can disrupt listening": {
+     "sentimentAnalysis": "Nogle anmeldelser beskriver buffering, ustabile radioforbindelser og inkompatibilitet med visse Wi-Fi-opsætninger.",
+     "simpleTitle": "Udfald og netværksbegrænsninger kan forstyrre lytningen",
      "bias": "negative",
      "key": "network",
-     "groupId": "94f6c0d5-5565-4b81-8fd8-6de1af0047c9"
+     "groupId": "43d90010-7db5-487f-b1e6-974b90d84205"
     },
-    "sound quality can be dull or underwhelming": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver uklare detaljer, svag dynamik eller skuffende Spotify-lyd sammenlignet med andre kilder og enheder.",
-     "simpleTitle": "Lydkvaliteten kan være mat eller skuffende",
+    "compact design is attractive but the display is too small": {
+     "sentimentAnalysis": "De kompakte mål og det flotte design værdsættes, mens displayets læsbarhed gentagne gange kritiseres.",
+     "simpleTitle": "Det kompakte design er attraktivt, men displayet er for lille",
+     "bias": "meh",
+     "key": "design",
+     "groupId": "d2419842-b2ac-4787-9536-1b490e81f8ea"
+    },
+    "some users find installation difficult": {
+     "sentimentAnalysis": "Et mindretal rapporterer om vanskelig opsætning eller utilstrækkelige instruktioner.",
+     "simpleTitle": "Nogle brugere synes, opsætningen er vanskelig",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "cd587764-c903-4196-9cc2-9dceb97741f6"
+     "key": "setup",
+     "groupId": "8db998c8-e4e0-4ae1-80af-25104f5d5182"
     }
    },
    "grouping": {
-    "607cd2ec-4078-4b72-9120-0acfca34e769": {
+    "8db998c8-e4e0-4ae1-80af-25104f5d5182": {
      "title": "Opsætning og betjening",
-     "id": "607cd2ec-4078-4b72-9120-0acfca34e769",
+     "id": "8db998c8-e4e0-4ae1-80af-25104f5d5182",
      "references": [
       "42b6925f-3737-43c1-aa7e-562e1a776157",
       "068a64cb-d26f-4065-913e-a752ca08185c",
       "98a637b3-203f-4f7f-9b94-d737c648ea4c",
       "4643ac33-8502-4541-9d16-0bdd3335673a",
       "22579ea2-bdca-4875-ae1c-785658553b99",
-      "de208541-42b5-467a-a524-619a57b2256b",
-      "d591ac7b-979c-4e8f-951c-c71cfee0ee11",
-      "0217ab80-4356-49aa-af9b-f033c6dc533e",
-      "36f70e64-a9a0-4a16-846f-a02918b64ad5",
       "21ec26c3-78c6-4385-a3b1-0cfda2e78848",
       "102af7c0-bb6c-4a47-94f2-c1754da71ebc",
       "1f1a41b6-9567-4abc-8bd5-d2d91a4337dd",
       "30cb8a64-eca6-4fea-bdc4-921b71a802a9",
+      "e36e44c7-70cf-4910-9d23-979f10efe577",
       "f2a88304-4954-470e-90e4-8ab355f41b96",
       "9c22a7bb-94fc-4084-9a3b-1e57781f43e0",
       "19a25bd5-137d-46d8-baca-db6ae8b561f3",
-      "c855d186-08f4-40a1-8c3e-85d39c39c39b1",
-      "2f11a7f1-88c0-4821-b821-8ac5de19aa2a",
+      "c855d186-08f4-40a1-8c3e-85d39ec39b1",
       "0cbc7e6f-808c-41e7-a0a4-4a199215fa3e",
       "07a789ec-486a-41cf-b41b-7bd636faddaa",
+      "55bafc57-69b1-45dd-9372-3f80a108dc8e",
+      "fd9befcf-5344-4662-8641-ecdd15081e16",
       "585da624-6ec8-4d45-b121-a6f729b4123d",
-      "302c96e2-9a55-4c64-9147-4937b6bc6740",
-      "82a894da-7ad3-449c-8b0c-961c9442cf82",
-      "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c",
-      "fd9befcf-5344-4662-8641-ecdd15081e16"
+      "957f141d-0899-4283-a782-3b0421918c24",
+      "82a894da-7ad3-449c-8b0c-961c9442cf82"
      ]
     },
-    "cd587764-c903-4196-9cc2-9dceb97741f6": {
+    "8643108b-eb09-4cad-92e3-ecd969d51473": {
      "title": "Lydkvalitet",
-     "id": "cd587764-c903-4196-9cc2-9dceb97741f6",
+     "id": "8643108b-eb09-4cad-92e3-ecd969d51473",
      "references": [
       "068a64cb-d26f-4065-913e-a752ca08185c",
       "52d2e590-7f93-4905-9dbc-c49a8131c22e",
       "2c1bd241-1240-415d-8b25-224e45b0d2c3",
       "d21d8e98-5679-465e-b5bd-6716ca3bfdbf",
+      "f77d16db-6b36-4256-a3e6-a7fdc25aa904",
       "b4385316-53d9-4e6a-8205-47b0d3cf47a9",
       "557f546c-7bba-46ad-9c10-4a68d1aa2f38",
-      "e36e44c7-70cf-4910-9d23-979f10efe577",
-      "f77d16db-6b36-4256-a3e6-a7fdc25aa904",
       "c135b546-198b-4d95-805d-64b6465a808e",
       "387fbbdf-1286-4c5c-a248-03e947e5da16",
       "442b8bdc-0031-4e2b-a468-ca2588ff7831",
@@ -281,42 +316,52 @@
       "82a894da-7ad3-449c-8b0c-961c9442cf82"
      ]
     },
-    "325d0019-1795-4d60-92e1-c69ab1fe76d3": {
-     "title": "Radio- og streamingfunktioner",
-     "id": "325d0019-1795-4d60-92e1-c69ab1fe76d3",
+    "3292f0ff-3ca0-402d-a58f-fa804f526102": {
+     "title": "Streamingfunktioner og kompatibilitet",
+     "id": "3292f0ff-3ca0-402d-a58f-fa804f526102",
      "references": [
       "516e7aa3-95dd-4197-9133-b2e1c03f33b6",
-      "98a637b3-203f-4f7f-9b94-d737c648ea4c",
+      "08dff3d6-4355-49d1-bb7d-e02165bec410",
       "0217ab80-4356-49aa-af9b-f033c6dc533e",
-      "21ec26c3-78c6-4385-a3b1-0cfda2e78848",
       "557f546c-7bba-46ad-9c10-4a68d1aa2f38",
-      "cba5d533-938a-4a48-8945-b07d8dc403ca",
-      "a5ee14ff-46ca-4d83-98e4-fbf790cf6f4f",
-      "9a23def6-2cc1-467c-9af2-11eaf7e05dd9",
-      "e994498c-e390-4a30-a89b-998bb55a764e",
-      "e7972382-14fd-4c76-8597-1302795aad03",
-      "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c",
-      "f339b922-e07f-4188-bfc0-ee5f98235397",
       "d68f8ca8-ad22-4532-8a76-416653d4be10",
-      "fd9befcf-5344-4662-8641-ecdd15081e16"
+      "c135b546-198b-4d95-805d-64b6465a808e",
+      "cba5d533-938a-4a48-8945-b07d8dc403ca",
+      "90bc92cc-3267-4fed-9f86-ff6629a5bd91",
+      "9a23def6-2cc1-467c-9af2-11eaf7e05dd9",
+      "e7972382-14fd-4c76-8597-1302795aad03",
+      "f339b922-e07f-4188-bfc0-ee5f98235397",
+      "22b20651-ec8b-4c3b-84cb-e66e0d366f9f",
+      "302c96e2-9a55-4c64-9147-4937b6bc6740",
+      "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c"
      ]
     },
-    "94f6c0d5-5565-4b81-8fd8-6de1af0047c9": {
-     "title": "Netværksforbindelse",
-     "id": "94f6c0d5-5565-4b81-8fd8-6de1af0047c9",
+    "43d90010-7db5-487f-b1e6-974b90d84205": {
+     "title": "Netværksstabilitet og tilslutning",
+     "id": "43d90010-7db5-487f-b1e6-974b90d84205",
      "references": [
       "516e7aa3-95dd-4197-9133-b2e1c03f33b6",
       "a10d86a3-85a8-4f77-a63f-d6f3ff61e3e8",
       "08dff3d6-4355-49d1-bb7d-e02165bec410",
-      "30cb8a64-eca6-4fea-bdc4-921b71a802a9",
-      "de024133-361f-45cd-b08e-fbebdb7d7dc3",
-      "d68f8ca8-ad22-4532-8a76-416653d4be10",
       "c135b546-198b-4d95-805d-64b6465a808e",
       "bc7c6244-7d1d-4fff-9417-f6701c09f99f",
+      "de024133-361f-45cd-b08e-fbebdb7d7dc3",
       "957f141d-0899-4283-a782-3b0421918c24",
       "867622cf-a728-41f3-a239-422d3de92c1c",
       "bca2be92-e4c9-4fdb-9e4a-0ab05f395739",
-      "22b20651-ec8b-4c3b-84cb-e66e0d366f9f"
+      "30cb8a64-eca6-4fea-bdc4-921b71a802a9"
+     ]
+    },
+    "d2419842-b2ac-4787-9536-1b490e81f8ea": {
+     "title": "Display og design",
+     "id": "d2419842-b2ac-4787-9536-1b490e81f8ea",
+     "references": [
+      "de208541-42b5-467a-a524-619a57b2256b",
+      "29e29643-aad6-4913-af0e-a6cbd44d2f37",
+      "90bc92cc-3267-4fed-9f86-ff6629a5bd91",
+      "9a23def6-2cc1-467c-9af2-11eaf7e05dd9",
+      "4d1278ae-5451-45ab-b6c4-da483ba068bf",
+      "82a894da-7ad3-449c-8b0c-961c9442cf82"
      ]
     }
    },

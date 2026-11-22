@@ -13,6 +13,14 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ad740744-bcbd-4f24-981f-e40adcb195b1",
+   "0a8919d6-bc39-4f80-875f-ce94d0963969"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 267040,
   "skuCode": "SENBTD700",
@@ -22,11 +30,11 @@
    "productCodes": [
     "SENMOMENTUM5",
     "BWPX8S2",
-    "SENMOMENTUMTW4",
     "BWPX7S2E",
     "BWPX7S3",
     "DALIIO8",
-    "DALIIO12"
+    "DALIIO12",
+    "SENMOMENTUMTW4"
    ],
    "isOutlet": "false"
   },
@@ -109,7 +117,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 295,
+     "availableQuantity": 278,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -139,65 +147,91 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "SENBTD700 leverer en varm, fyldig og mere rummelig lyd med imponerende detaljer samt aptX Lossless i cd-kvalitet med kompatible hovedtelefoner. Adapteren fungerer særligt godt med understøttede hovedtelefoner fra Bowers & Wilkins, Sennheiser, Denon og andre premiummærker, mens bagudkompatibiliteten giver ekstra fleksibilitet. Parring kan være besværligt med visse enheder, og lejlighedsvise begrænsninger med slukning, lydstyrke og kompatibilitet forhindrer en helt fejlfri oplevelse.",
+   "summary": "SENBTD700 leverer en varm, kraftfuld og omsluttende lydforbedring, især med hovedtelefoner og earbuds, der understøtter aptX Adaptive eller aptX Lossless. Trådløs lyd i cd-kvalitet samt større åbenhed og flere detaljer gør adapteren til en fremragende ledsager til kompatible enheder. Parring kan være lidt besværlig, og enkelte anmeldelser nævner forbindelsesudfald, begrænset lydstyrke og inkompatibilitet med bestemte earbuds, men den samlede ydeevne er imponerende.",
    "headlines": {
-    "richer, warmer and more spacious sound": {
-     "sentimentAnalysis": "Adapteren roses for en tydeligt forbedret, fyldigere, varmere og mere rummelig gengivelse.",
-     "simpleTitle": "Fyldigere, varmere og mere rummelig lyd",
+    "richer, clearer and more spacious sound": {
+     "sentimentAnalysis": "Adapteren giver konsekvent en tydelig forbedring med rigere, varmere, mere åben og mere rummelig lyd.",
+     "simpleTitle": "Rigere, klarere og mere rummelig lyd",
      "bias": "positive",
      "key": "sound_quality",
-     "groupId": "724e1c85-b5d0-4743-8c11-5c35dbd9ed78"
+     "groupId": "39b91fe1-2f68-4933-ac83-6825e118ea59"
     },
-    "aptX Lossless and Adaptive support": {
-     "sentimentAnalysis": "De understøttede kvalitetskodeks betragtes som en stor fordel og muliggør trådløs lyd i cd-kvalitet samt nyttig bagudkompatibilitet.",
-     "simpleTitle": "Understøttelse af aptX Lossless og Adaptive",
+    "works reliably once connected": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver enkel, korrekt funktion og tilfredshed med adapterens grundlæggende ydeevne.",
+     "simpleTitle": "Fungerer pålideligt efter tilslutning",
      "bias": "positive",
-     "key": "audio_codecs",
-     "groupId": "bfee7c38-e810-47af-b715-3570edb259f0"
+     "key": "reliability",
+     "groupId": "903ebb76-2f60-42aa-a120-d52ffe44cce8"
     },
-    "pairing can be fiddly": {
-     "sentimentAnalysis": "Flere oplevelser beskriver forbindelse og valg af enhed som besværligt, selv om den efterfølgende drift fungerer.",
-     "simpleTitle": "Parring kan være besværligt",
+    "aptX Lossless enables CD-quality wireless audio": {
+     "sentimentAnalysis": "Understøttelse af aptX Adaptive og aptX Lossless ses som en stor fordel og giver cd-kvalitet fra enheder uden indbygget understøttelse.",
+     "simpleTitle": "aptX Lossless giver trådløs lyd i cd-kvalitet",
+     "bias": "positive",
+     "key": "aptx_features",
+     "groupId": "e7622ca8-864e-46ab-8899-89e52618a250"
+    },
+    "pairing can be fiddly across devices": {
+     "sentimentAnalysis": "Flere oplevelser beskriver opsætning og Bluetooth-parring som mere besværlig end forventet, selv om det fungerer efter lidt arbejde.",
+     "simpleTitle": "Parring på tværs af enheder kan være besværlig",
      "bias": "negative",
      "key": "compatibility",
-     "groupId": "9b091819-a480-449a-9186-cceb511a0780"
+     "groupId": "077e918c-44a7-4e8c-8d4d-66db6d5838e5"
+    },
+    "some devices may disconnect or lack volume": {
+     "sentimentAnalysis": "Enhedsspecifikke ulemper omfatter lejlighedsvise slukninger, Bluetooth-problemer og utilstrækkelig lydstyrke.",
+     "simpleTitle": "Nogle enheder kan miste forbindelsen eller have for lav lydstyrke",
+     "bias": "negative",
+     "key": "reliability",
+     "groupId": "903ebb76-2f60-42aa-a120-d52ffe44cce8"
     }
    },
    "grouping": {
-    "724e1c85-b5d0-4743-8c11-5c35dbd9ed78": {
+    "39b91fe1-2f68-4933-ac83-6825e118ea59": {
      "title": "Lydkvalitet",
-     "id": "724e1c85-b5d0-4743-8c11-5c35dbd9ed78",
+     "id": "39b91fe1-2f68-4933-ac83-6825e118ea59",
      "references": [
+      "8720606c-4137-477f-8f2d-69ee256da3f5",
+      "a0ec67b4-7045-40c5-973e-a99d6b390888",
       "7607491a-1858-4a5b-b55f-7ca6c41315e0",
+      "c8bb1ed9-c7f7-410c-916b-f223137ca047",
       "afab006e-33ee-42dc-b798-628d0013cf95",
       "346c4bb6-081f-48b2-8bb8-191a2ae25b40",
       "6a6a1bd9-a0de-4238-8374-e66f0593e380",
-      "c8bb1ed9-c7f7-410c-916b-f223137ca047",
       "21ae8eea-5894-420c-a60a-74d545e93b6e",
       "45a5a3dc-6d95-4238-873b-a24d70fb2922",
       "2be50e6a-e012-43ad-b24c-a6278190220c",
       "f310e5db-bcaf-4861-b460-ec54a77c0093",
-      "bc259d53-75c6-4069-b2ad-14786b382949"
-     ]
-    },
-    "9b091819-a480-449a-9186-cceb511a0780": {
-     "title": "Kompatibilitet",
-     "id": "9b091819-a480-449a-9186-cceb511a0780",
-     "references": [
-      "8720606c-4137-477f-8f2d-69ee256da3f5",
-      "a0ec67b4-7045-40c5-973e-a99d6b390888",
-      "c25d233c-09b6-4117-b431-ef6fca03e483",
-      "21ae8eea-5894-420c-a60a-74d545e93b6e",
-      "45a5a3dc-6d95-4238-873b-a24d70fb2922",
-      "c20016c4-4396-4f3f-9622-7c60d96403f5",
-      "2be50e6a-e012-43ad-b24c-a6278190220c",
       "0f2a8a09-aa4d-4803-8f2d-b1c59c892603",
       "bc259d53-75c6-4069-b2ad-14786b382949"
      ]
     },
-    "bfee7c38-e810-47af-b715-3570edb259f0": {
-     "title": "Lydkodeks",
-     "id": "bfee7c38-e810-47af-b715-3570edb259f0",
+    "077e918c-44a7-4e8c-8d4d-66db6d5838e5": {
+     "title": "Kompatibilitet og parring",
+     "id": "077e918c-44a7-4e8c-8d4d-66db6d5838e5",
+     "references": [
+      "8720606c-4137-477f-8f2d-69ee256da3f5",
+      "c25d233c-09b6-4117-b431-ef6fca03e483",
+      "21ae8eea-5894-420c-a60a-74d545e93b6e",
+      "45a5a3dc-6d95-4238-873b-a24d70fb2922",
+      "0f2a8a09-aa4d-4803-8f2d-b1c59c892603",
+      "bc259d53-75c6-4069-b2ad-14786b382949"
+     ]
+    },
+    "903ebb76-2f60-42aa-a120-d52ffe44cce8": {
+     "title": "Funktionalitet og driftssikkerhed",
+     "id": "903ebb76-2f60-42aa-a120-d52ffe44cce8",
+     "references": [
+      "5cee0c04-2c85-4ff9-9699-85e5a0e5af90",
+      "afab006e-33ee-42dc-b798-628d0013cf95",
+      "2f2f804a-3b17-4f90-9e2f-327350f04869",
+      "c25d233c-09b6-4117-b431-ef6fca03e483",
+      "79c2c6a9-ad77-44d5-a91f-ed58993f5472",
+      "0f2a8a09-aa4d-4803-8f2d-b1c59c892603"
+     ]
+    },
+    "e7622ca8-864e-46ab-8899-89e52618a250": {
+     "title": "Trådløse lydfunktioner",
+     "id": "e7622ca8-864e-46ab-8899-89e52618a250",
      "references": [
       "a0ec67b4-7045-40c5-973e-a99d6b390888",
       "c20016c4-4396-4f3f-9622-7c60d96403f5",

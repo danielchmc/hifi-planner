@@ -13,6 +13,29 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk, Analog RCA, Hovedtelefon",
+   "Lydindgang": "Coaxial, Optisk, USB A, USB B",
+   "Udgang (andet)": "RS-232, Ethernet, IR, USB A",
+   "Indgang (andet)": "RS-232, Ethernet, IR, USB A, USB B",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, DLNA",
+   "Fra beskrivelsen": "Audiofil diskret opbygget høretelefon-forstærker (HDAM-SA2, Low/Mid/High gain, 6,3mm tilslutning) · Ethernet: 10/100 Base-T · IR-ud til kontrol af kompatible Marantz-forstærkere m.m."
+  },
+  "gallery": [
+   "f15e26b5-86d9-4518-9efe-c7978cd53530",
+   "5b705277-bbc8-4ad7-a77a-245801fc1ae1",
+   "874300cf-6843-48b0-9c98-6fe90df5b0e1",
+   "eb6a7f41-5ea5-495c-bc14-2a36b432f0c9",
+   "594f341d-3140-45bf-a1eb-8cb56fe63cde",
+   "1e89ccd5-6722-481c-b189-8f9d5796d66d",
+   "05e8bcd3-c7ed-4c7d-9b78-cef3d105f05c",
+   "bebcddc1-5122-4ce2-9a59-941b334f881f",
+   "9d5cbcc9-73e0-4121-80a0-f61c96a0f9db",
+   "56a4ff51-b297-4f84-b7b8-71df34f8e451"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 140711,
   "skuCode": "MARASACD30N",
@@ -211,7 +234,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 4,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -471,55 +494,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARASACD30N leverer varm, slagkraftig og meget detaljeret lyd fra SACD, CD og streaming med medrivende mellemtone, diskant og rumfornemmelse. Streaming via HEOS, Roon, Qobuz og Tidal er alsidig og nem at betjene, mens fysiske discs får et særligt imponerende løft. Den førsteklasses byggekvalitet og musikalske oplevelse roses bredt, selv om enkelte lyttere savner mere substans i bassen, oplever en køligere mellemtone end hos Yamahas bedste afspillere og kritiserer den langsomme ilægningstid.",
+   "summary": "MARANTZ SACD 30n leverer en varm, detaljeret og medrivende lytteoplevelse på tværs af SACD, CD og streaming med særligt stærk mellemtone, diskant og rumfornemmelse. Netværksafspilning via tjenester som Qobuz, Tidal og Roon er fleksibel og praktisk, mens direkte betjening og appstyring gør anvendelsen enkel. Den solide konstruktion, det flotte design og den musikalske kvalitet imponerer, selv om plastskuffen og den relativt lange indlæsningstid trækker en smule ned i en ellers fremragende helhed.",
    "headlines": {
-    "excellent, detailed sound": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som fremragende, overlegen eller meget god med høj detaljegrad og stor musikalsk fornøjelse.",
-     "simpleTitle": "Fremragende, detaljeret lyd",
+    "outstanding, spacious sound": {
+     "sentimentAnalysis": "Lyden beskrives gentagne gange som fremragende eller enestående med stærke detaljer, rumlighed og musikalsk gennemslagskraft på tværs af formater.",
+     "simpleTitle": "Fremragende og rummelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "dfba1482-acf7-4629-b1ea-934befa660fb"
+     "groupId": "8503af7e-4328-4126-9aa3-162e7a7eca6d"
     },
     "streaming sounds excellent": {
-     "sentimentAnalysis": "Streaming får et tydeligt lydmæssigt løft og beskrives som fremragende på tværs af flere tjenester.",
+     "sentimentAnalysis": "Streaming roses kraftigt for lydkvaliteten med markante forbedringer og fremragende ydeevne via Qobuz, Tidal og Roon.",
      "simpleTitle": "Streaming lyder fremragende",
      "bias": "positive",
      "key": "streaming",
-     "groupId": "dca3cf37-271c-4a11-abc4-831423e7b1ec"
+     "groupId": "dca823f3-11a5-4a27-b4f6-a805add43b68"
     },
-    "easy and flexible operation": {
-     "sentimentAnalysis": "Direkte betjening, app-understøttelse og brugen som netværksafspiller opleves som enkel og bekvem.",
-     "simpleTitle": "Nem og fleksibel betjening",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "dbd38e45-8e09-44f7-8095-fbc6fc6a3831"
-    },
-    "physical discs sound especially impressive": {
-     "sentimentAnalysis": "CD- og SACD-afspilningen roses for at give fysiske samlinger nyt liv og enestående kvalitet.",
-     "simpleTitle": "Fysiske discs lyder særligt imponerende",
+    "sacd and CD playback is highly rewarding": {
+     "sentimentAnalysis": "Afspilning af fysiske medier roses for den enestående kvalitet på SACD'er og CD'er, som gør pladesamlinger attraktive igen.",
+     "simpleTitle": "SACD- og CD-afspilning er særdeles givende",
      "bias": "positive",
      "key": "discplayback",
-     "groupId": "62ba742c-4406-42e9-9716-bc8fe8fac314"
+     "groupId": "acad6315-2707-4de2-9674-fb2da9901cdf"
     },
-    "strong mids, treble and spaciousness": {
-     "sentimentAnalysis": "Mellemtone, diskant og rumlig gengivelse får særlig stor ros.",
-     "simpleTitle": "Stærk mellemtone, diskant og rumfornemmelse",
+    "simple control through the player and app": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver enkel betjening via direkte kontrol, appstyring og praktisk håndtering som netværksafspiller.",
+     "simpleTitle": "Enkel betjening på enheden og via app",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "dfba1482-acf7-4629-b1ea-934befa660fb"
-    },
-    "some tonal limitations": {
-     "sentimentAnalysis": "Nogle sammenligninger peger på lidt mindre bassubstans samt en mindre varm eller mindre fremragende mellemtone.",
-     "simpleTitle": "Visse tonale begrænsninger",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "dfba1482-acf7-4629-b1ea-934befa660fb"
+     "key": "operation",
+     "groupId": "009a1436-6359-43c0-a5ba-9e65155c739e"
     }
    },
    "grouping": {
-    "dfba1482-acf7-4629-b1ea-934befa660fb": {
+    "8503af7e-4328-4126-9aa3-162e7a7eca6d": {
      "title": "Lydkvalitet",
-     "id": "dfba1482-acf7-4629-b1ea-934befa660fb",
+     "id": "8503af7e-4328-4126-9aa3-162e7a7eca6d",
      "references": [
       "3293e639-9d32-4ae4-b5bb-ef71c8805388",
       "b5a16c0d-c40c-4d29-8d27-3a6aa044803c",
@@ -532,34 +541,32 @@
       "23443b24-b46d-4034-8ced-d869e36f1325"
      ]
     },
-    "dca3cf37-271c-4a11-abc4-831423e7b1ec": {
-     "title": "Streaming- og netværksfunktioner",
-     "id": "dca3cf37-271c-4a11-abc4-831423e7b1ec",
+    "dca823f3-11a5-4a27-b4f6-a805add43b68": {
+     "title": "Streaming og netværksafspilning",
+     "id": "dca823f3-11a5-4a27-b4f6-a805add43b68",
      "references": [
       "b5a16c0d-c40c-4d29-8d27-3a6aa044803c",
       "002122d0-14fc-4519-9d4b-25a7f0433ba2",
       "6f4a99d0-68c6-4bd8-92c7-1184b2039d3a",
-      "0cd2e9c4-eef4-477b-a72c-a354ddff0726",
-      "23443b24-b46d-4034-8ced-d869e36f1325"
+      "0cd2e9c4-eef4-477b-a72c-a354ddff0726"
      ]
     },
-    "62ba742c-4406-42e9-9716-bc8fe8fac314": {
-     "title": "Diskafspilning",
-     "id": "62ba742c-4406-42e9-9716-bc8fe8fac314",
-     "references": [
-      "b5a16c0d-c40c-4d29-8d27-3a6aa044803c",
-      "002122d0-14fc-4519-9d4b-25a7f0433ba2",
-      "6f4a99d0-68c6-4bd8-92c7-1184b2039d3a",
-      "23443b24-b46d-4034-8ced-d869e36f1325"
-     ]
-    },
-    "dbd38e45-8e09-44f7-8095-fbc6fc6a3831": {
+    "009a1436-6359-43c0-a5ba-9e65155c739e": {
      "title": "Brugervenlighed",
-     "id": "dbd38e45-8e09-44f7-8095-fbc6fc6a3831",
+     "id": "009a1436-6359-43c0-a5ba-9e65155c739e",
      "references": [
       "b5a16c0d-c40c-4d29-8d27-3a6aa044803c",
       "6f4a99d0-68c6-4bd8-92c7-1184b2039d3a",
       "0cd2e9c4-eef4-477b-a72c-a354ddff0726"
+     ]
+    },
+    "acad6315-2707-4de2-9674-fb2da9901cdf": {
+     "title": "SACD- og CD-afspilning",
+     "id": "acad6315-2707-4de2-9674-fb2da9901cdf",
+     "references": [
+      "b5a16c0d-c40c-4d29-8d27-3a6aa044803c",
+      "6f4a99d0-68c6-4bd8-92c7-1184b2039d3a",
+      "23443b24-b46d-4034-8ced-d869e36f1325"
      ]
     }
    },

@@ -13,6 +13,16 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "aa81f3ec-bec5-464c-a482-747a918fea3e",
+   "91a9720a-8a0c-4e98-b508-99224b50136c",
+   "543150b8-b4e8-422b-ab86-91ac4c904076",
+   "c9a968f2-58bc-4ab8-8748-e913ddab3d63"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 293173,
   "skuCode": "PEDSBBRACKETSET",
@@ -118,12 +128,11 @@
      "productCode": "PEDSBBRACKETSETCHCL"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 27. november",
+     "deliveryDate": "2026-11-27T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
-     "availableQuantity": 5,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 2,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

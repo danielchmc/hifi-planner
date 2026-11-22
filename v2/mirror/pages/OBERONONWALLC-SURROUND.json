@@ -13,6 +13,16 @@
    "url": "/surround/hjemmebio-system/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ea62a75d-1ddc-482d-9975-f9ab01ff89b7",
+   "28f30c6f-4e7a-405e-94e2-f78a9745c10d",
+   "94c02ced-08b7-490f-94cf-110eafc532ae",
+   "0bc66143-cfee-4a19-b5fb-fd922ffd7965"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 282243,
   "skuCode": "OBERONONWALLC-SURROUND",
@@ -231,7 +241,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 169,
+        "availableQuantity": 155,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.499,-",
@@ -241,7 +251,129 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALISOUNDHUB"
+     "parentProductCode": "DALISOUNDHUB",
+     "reviews": {
+      "summary": "DALISOUNDHUB leverer en varm, detaljeret og omsluttende lyd, især sammen med aktive DALI-højttalere. Det kompakte design med få kabler, de fleksible tilslutninger og den enkle betjening giver et meget attraktivt high-end-system. Stabiliteten i den trådløse forbindelse og Bluetooth-fjernbetjeningen er de største svagheder, da lejlighedsvise udfald, vanskelig parring og firmwareproblemer dæmper det ellers meget positive indtryk.",
+      "headlines": {
+       "clear, natural and immersive sound": {
+        "sentimentAnalysis": "Hubben roses gentagne gange for naturlig, fremragende og meget behagelig lyd, også sammen med aktive DALI-højttalere og i 5.1-systemer.",
+        "simpleTitle": "Klar, naturlig og omsluttende lyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "63352295-ff76-463d-b636-c195af356fb4"
+       },
+       "bluetooth remote control is unreliable": {
+        "sentimentAnalysis": "Fjernbetjeningen kritiseres ofte for dårlig kvalitet, manglende reaktioner samt Bluetooth-forstyrrelser eller firmwareproblemer; lejlighedsvis kræves en genstart for at få den til at virke igen.",
+        "simpleTitle": "Bluetooth-fjernbetjeningen er ustabil",
+        "bias": "negative",
+        "key": "remote",
+        "groupId": "1f086584-2d0c-4a91-a67a-7e7c88b0c627"
+       },
+       "wireless speaker connections can drop out": {
+        "sentimentAnalysis": "Flere anmeldelser beskriver mistede højttaler- eller appforbindelser og pludselige lydudfald, som nogle gange kræver en genstart ved at afbryde strømmen; i ét tilfælde beskrives musikstreaming som mere stabilt.",
+        "simpleTitle": "Trådløse højttalerforbindelser kan falde ud",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "03a435e8-54c2-45f0-90a9-faf5bca05b28"
+       },
+       "simple controls and flexible inputs": {
+        "sentimentAnalysis": "De fysiske betjeningsknapper, det automatiske kildevalg og den ukomplicerede betjening værdsættes især af brugere, der ikke ønsker at være helt afhængige af en telefonapp.",
+        "simpleTitle": "Enkel betjening og fleksible tilslutninger",
+        "bias": "positive",
+        "key": "usability",
+        "groupId": "9847e2ef-256a-489c-959c-16b452cc91db"
+       },
+       "flexible streaming and multi-room expansion": {
+        "sentimentAnalysis": "BluOS-integration, adgang til streaming, multiroom-udvidelse samt omfattende analoge og digitale tilslutninger gør hubben alsidig i moderne trådløse systemer.",
+        "simpleTitle": "Fleksibel streaming og multiroom-udvidelse",
+        "bias": "positive",
+        "key": "features",
+        "groupId": "71edaf51-0a38-45da-bbce-ac20e8bf98b7"
+       }
+      },
+      "grouping": {
+       "9847e2ef-256a-489c-959c-16b452cc91db": {
+        "title": "Opsætning og betjening",
+        "id": "9847e2ef-256a-489c-959c-16b452cc91db",
+        "references": [
+         "3464a520-e5bc-4785-97b7-f2f3d3271579",
+         "e1df2262-e532-44a5-92ce-34d898f2d1f3",
+         "527e832f-e75a-45b6-a677-d709d8319fc4",
+         "c598ba95-c80b-407e-bf6d-c2a14a45cea4",
+         "ebcd8654-9ae2-4e0e-be8c-d3d0d9749aef",
+         "81dc3ee2-f5ee-446d-b467-48e4e5a54d56",
+         "0df57e6b-6d7a-4d80-9b53-01d33e9b2c3d",
+         "8e5e3744-93da-468d-8788-3e9064c36467",
+         "9f01830c-8758-4d1a-a49f-2651286d0356",
+         "2a468d66-8edb-4f1d-a0af-e9d0fe80ac8c"
+        ]
+       },
+       "03a435e8-54c2-45f0-90a9-faf5bca05b28": {
+        "title": "Forbindelse og driftssikkerhed",
+        "id": "03a435e8-54c2-45f0-90a9-faf5bca05b28",
+        "references": [
+         "3464a520-e5bc-4785-97b7-f2f3d3271579",
+         "da58f1a3-75ca-4dc6-9fb3-17f47bed2177",
+         "71492704-01d2-427c-a7ba-1bd6ae640416",
+         "e091c664-d489-4833-b509-443ce890370d",
+         "f60bcd36-164b-49f1-873f-9823d8715067",
+         "934f998a-7107-4000-b259-b3f4ca45409e",
+         "0df57e6b-6d7a-4d80-9b53-01d33e9b2c3d",
+         "948e612f-b373-4102-aa12-db11873c2e42",
+         "c92167eb-17dc-486b-85b6-03564661930d"
+        ]
+       },
+       "63352295-ff76-463d-b636-c195af356fb4": {
+        "title": "Lydkvalitet",
+        "id": "63352295-ff76-463d-b636-c195af356fb4",
+        "references": [
+         "da58f1a3-75ca-4dc6-9fb3-17f47bed2177",
+         "8b962cfa-7bf1-4bc4-a1b6-a4dcba6dbb3a",
+         "f60bcd36-164b-49f1-873f-9823d8715067",
+         "934f998a-7107-4000-b259-b3f4ca45409e",
+         "81dc3ee2-f5ee-446d-b467-48e4e5a54d56",
+         "0df57e6b-6d7a-4d80-9b53-01d33e9b2c3d",
+         "948e612f-b373-4102-aa12-db11873c2e42",
+         "c92167eb-17dc-486b-85b6-03564661930d"
+        ]
+       },
+       "1f086584-2d0c-4a91-a67a-7e7c88b0c627": {
+        "title": "Fjernbetjening",
+        "id": "1f086584-2d0c-4a91-a67a-7e7c88b0c627",
+        "references": [
+         "71492704-01d2-427c-a7ba-1bd6ae640416",
+         "f60bcd36-164b-49f1-873f-9823d8715067",
+         "934f998a-7107-4000-b259-b3f4ca45409e",
+         "527e832f-e75a-45b6-a677-d709d8319fc4",
+         "3cae16c4-4e50-42fb-b1d6-a5258e8eb226",
+         "8e5e3744-93da-468d-8788-3e9064c36467",
+         "049dd02b-43b1-4ab6-ba50-be8ecc9503ce"
+        ]
+       },
+       "71edaf51-0a38-45da-bbce-ac20e8bf98b7": {
+        "title": "Funktioner og kompatibilitet",
+        "id": "71edaf51-0a38-45da-bbce-ac20e8bf98b7",
+        "references": [
+         "54b4c797-e19f-4686-ac7c-97533e7007c6",
+         "fb72b224-11c0-47eb-8461-865bd907fc8b",
+         "71492704-01d2-427c-a7ba-1bd6ae640416",
+         "8b962cfa-7bf1-4bc4-a1b6-a4dcba6dbb3a",
+         "8e5e3744-93da-468d-8788-3e9064c36467",
+         "948e612f-b373-4102-aa12-db11873c2e42"
+        ]
+       }
+      },
+      "rating": 4.43661971830986,
+      "count": 71,
+      "reviewCount": 25,
+      "distribution": {
+       "1": 3,
+       "2": 1,
+       "3": 5,
+       "4": 15,
+       "5": 47
+      }
+     }
     },
     {
      "brand": "DALI",
@@ -263,7 +395,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 77,
+        "availableQuantity": 66,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "19.996,-",
@@ -286,7 +418,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 126,
+        "availableQuantity": 106,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "19.996,-",
@@ -296,7 +428,101 @@
        "quantity": 4
       }
      ],
-     "parentProductCode": "DALIOBERONONWALLC"
+     "parentProductCode": "DALIOBERONONWALLC",
+     "reviews": {
+      "summary": "DALIOBERONONWALLC leverer en bemærkelsesværdig varm, naturlig og rummelig lyd fra et slankt og diskret vægdesign. De kompakte højttalere skaber et imponerende lydbillede og fungerer især godt som surround- eller pladsbesparende højttalere med enkel SoundHub-tilslutning. Ved musikafspilning kan der dog mangle opløsning og fylde, mens de korte strømkabler gentagne gange nævnes som en praktisk ulempe.",
+      "headlines": {
+       "rich, natural sound from a compact speaker": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den imponerende, behagelige, naturlige og fyldige lyd trods den kompakte størrelse.",
+        "simpleTitle": "Fyldig, naturlig lyd fra en kompakt højttaler",
+        "bias": "positive",
+        "key": "sound_quality",
+        "groupId": "72d076fd-78ae-4ed1-959a-d1e9f62483c8"
+       },
+       "slim and discreet wall-friendly design": {
+        "sentimentAnalysis": "De slanke mål, det diskrete udseende og den nemme vægintegration værdsættes gentagne gange, når plads og rummets æstetik er vigtig.",
+        "simpleTitle": "Slankt og diskret vægdesign",
+        "bias": "positive",
+        "key": "design_size",
+        "groupId": "877fb8f8-efe3-4a66-a829-6259b6f353d4"
+       },
+       "effective as surround speakers": {
+        "sentimentAnalysis": "Højttalerne beskrives som fuldt ud i stand til at levere surroundeffekter og som et godt valg til diskrete hjemmebiografinstallationer.",
+        "simpleTitle": "Overbevisende som surroundhøjttalere",
+        "bias": "positive",
+        "key": "sound_quality",
+        "groupId": "72d076fd-78ae-4ed1-959a-d1e9f62483c8"
+       },
+       "power cables are too short": {
+        "sentimentAnalysis": "Begge anmeldelser påpeger, at de medfølgende strømkabler er kortere end ønsket og kræver kabelstyring eller udskiftningskabler.",
+        "simpleTitle": "Strømkablerne er for korte",
+        "bias": "negative",
+        "key": "power_cables",
+        "groupId": "721fa49e-463f-47c4-bb77-64dbc9631101"
+       },
+       "simple SoundHub connectivity": {
+        "sentimentAnalysis": "SoundHub-tilslutningen beskrives som enkel og bruges med succes i trådløse væghøjttalerinstallationer.",
+        "simpleTitle": "Enkel SoundHub-tilslutning",
+        "bias": "positive",
+        "key": "connectivity",
+        "groupId": "f65fa929-43d4-482a-b47c-64b57654508b"
+       }
+      },
+      "grouping": {
+       "72d076fd-78ae-4ed1-959a-d1e9f62483c8": {
+        "title": "Lydkvalitet",
+        "id": "72d076fd-78ae-4ed1-959a-d1e9f62483c8",
+        "references": [
+         "34ac1dfe-006c-4c28-9ac4-be83ebe7ccdb",
+         "41979d0f-84c3-42cf-a08c-be4767f74cc1",
+         "1d40da23-670e-40a2-8fa9-a44d21cbb44f",
+         "b52804be-cf95-4ab5-a522-6d4fbe22ee50",
+         "562506a8-f753-4014-bb15-bf9bf887a68f",
+         "cf58a151-3a2a-404d-aaa4-99371d0fdf0c",
+         "d23e3a6d-0bb7-45d8-bd1e-ad1a759366e4",
+         "176584b1-419d-44af-9397-84fb05ee72ee",
+         "a35667bf-6106-41b6-9cf0-ed57328b5abd",
+         "14c1b5cd-2450-476d-96be-48e0e59a064d"
+        ]
+       },
+       "877fb8f8-efe3-4a66-a829-6259b6f353d4": {
+        "title": "Design og størrelse",
+        "id": "877fb8f8-efe3-4a66-a829-6259b6f353d4",
+        "references": [
+         "34ac1dfe-006c-4c28-9ac4-be83ebe7ccdb",
+         "1d40da23-670e-40a2-8fa9-a44d21cbb44f",
+         "562506a8-f753-4014-bb15-bf9bf887a68f",
+         "176584b1-419d-44af-9397-84fb05ee72ee"
+        ]
+       },
+       "721fa49e-463f-47c4-bb77-64dbc9631101": {
+        "title": "Strømkabler",
+        "id": "721fa49e-463f-47c4-bb77-64dbc9631101",
+        "references": [
+         "41979d0f-84c3-42cf-a08c-be4767f74cc1",
+         "b52804be-cf95-4ab5-a522-6d4fbe22ee50"
+        ]
+       },
+       "f65fa929-43d4-482a-b47c-64b57654508b": {
+        "title": "Tilslutning og opsætning",
+        "id": "f65fa929-43d4-482a-b47c-64b57654508b",
+        "references": [
+         "d23e3a6d-0bb7-45d8-bd1e-ad1a759366e4",
+         "176584b1-419d-44af-9397-84fb05ee72ee"
+        ]
+       }
+      },
+      "rating": 4.84615384615385,
+      "count": 26,
+      "reviewCount": 11,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 4,
+       "5": 22
+      }
+     }
     },
     {
      "brand": "DALI",
@@ -318,7 +544,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 237,
+        "availableQuantity": 223,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.999,-",
@@ -328,7 +554,85 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALIBLUOSNPM2IX"
+     "parentProductCode": "DALIBLUOSNPM2IX",
+     "reviews": {
+      "summary": "DALIBLUOSNPM2IX er en stærkt anbefalet opgradering til DALI Sound Hub-systemer med varm, energisk og detaljeret streaminglyd samt omfattende trådløse og multiroom-funktioner. BluOS-integration, tabsfri afspilning og fleksible tilslutningsmuligheder gør modulet til en central del af et moderne og immersivt setup. Første parring og lejlighedsvise forbindelsesudfald påvirker nogle installationer, mens manglende tonekontrol er en mærkbar begrænsning.",
+      "headlines": {
+       "broad streaming and system expansion": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter HDMI-integration, tabsfri streaming, multiroom- eller surround-udvidelse samt fleksible netværks-, Wi-Fi- og USB-muligheder.",
+        "simpleTitle": "Omfattende streaming- og udvidelsesmuligheder",
+        "bias": "positive",
+        "key": "features",
+        "groupId": "cbf0b791-729e-4526-98a6-b020f759ea12"
+       },
+       "clear, detailed streaming sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den fremragende, mærkbart forbedrede og velfungerende lyd, især ved streaming i høj opløsning.",
+        "simpleTitle": "Klar og detaljeret streaminglyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "abfb3814-b56c-4914-be32-18c13dac731d"
+       },
+       "frequent connection dropouts": {
+        "sentimentAnalysis": "Flere anmeldelser rapporterer ustabile forbindelser og udfald mellem højttalere og Sound Hub, selv om selve musikstreamingen kan være stabil.",
+        "simpleTitle": "Hyppige forbindelsesudfald",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "c047ec95-96a2-40b3-922e-76fa62a35cdf"
+       },
+       "no tone controls in the app": {
+        "sentimentAnalysis": "Flere anmeldelser kritiserer manglen på equalizer- eller tonekontrol med Sound Hub og bestemte DALI-højttalere, og en anmeldelse bemærker, at begrænsningen ikke er tydeligt oplyst.",
+        "simpleTitle": "Ingen tonekontrol i appen",
+        "bias": "negative",
+        "key": "features",
+        "groupId": "cbf0b791-729e-4526-98a6-b020f759ea12"
+       }
+      },
+      "grouping": {
+       "cbf0b791-729e-4526-98a6-b020f759ea12": {
+        "title": "Funktioner og kompatibilitet",
+        "id": "cbf0b791-729e-4526-98a6-b020f759ea12",
+        "references": [
+         "9f760d9b-13d2-4ec3-b93e-8c6baf695209",
+         "2456ccaf-6de2-492c-a499-b6f2cbb5090a",
+         "22684bd9-6237-400c-a0da-bc4cf16c4c57",
+         "21260d29-eb49-4d70-8bc1-da3088515538",
+         "fcefc475-cb7f-43a8-ba73-e3267099f595",
+         "2b210153-6790-45ca-9eb3-a0d65b279e6b"
+        ]
+       },
+       "abfb3814-b56c-4914-be32-18c13dac731d": {
+        "title": "Lydkvalitet",
+        "id": "abfb3814-b56c-4914-be32-18c13dac731d",
+        "references": [
+         "92b1d835-34cc-4b3a-9dc3-5d1613a20c20",
+         "2b210153-6790-45ca-9eb3-a0d65b279e6b",
+         "ee06e59c-535f-416a-8a1b-75d9d2a4a1d3",
+         "69baca3f-9be1-4fef-be9c-3ab47e029799",
+         "6535ae5a-2b60-471a-ae0a-dc5d8aa7efc1"
+        ]
+       },
+       "c047ec95-96a2-40b3-922e-76fa62a35cdf": {
+        "title": "Tilslutning",
+        "id": "c047ec95-96a2-40b3-922e-76fa62a35cdf",
+        "references": [
+         "cddded41-884f-40fa-a907-a2d45f380063",
+         "5b4a0186-5d97-46c7-bf8e-8c4351d1ad9b",
+         "86d594f2-0408-431e-8a83-11809460870d",
+         "ee06e59c-535f-416a-8a1b-75d9d2a4a1d3"
+        ]
+       }
+      },
+      "rating": 4.62903225806452,
+      "count": 62,
+      "reviewCount": 26,
+      "distribution": {
+       "1": 1,
+       "2": 2,
+       "3": 3,
+       "4": 7,
+       "5": 49
+      }
+     }
     },
     {
      "brand": "DALI",
@@ -382,7 +686,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 9,
+        "availableQuantity": 1,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -392,7 +696,59 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALIHDMIAUDIOX"
+     "parentProductCode": "DALIHDMIAUDIOX",
+     "reviews": {
+      "summary": "DALIHDMIAUDIOX leverer en varm, slagkraftig og omsluttende hjemmebiografoplevelse med pålidelig kompatibilitet med tv og projektorer. Dolby TrueHD, DTS-HD Master Audio og 5.1-afspilning giver biograflignende detaljer og dynamik, mens betjening via tv-fjernbetjeningen er ubesværet. Lejlighedsvise udfald i den trådløse forbindelse mellem højttalerne og Sound Hub er den eneste nævneværdige bekymring, mens musikstreaming fungerer stabilt.",
+      "headlines": {
+       "works smoothly with TVs and projectors": {
+        "sentimentAnalysis": "HDMI-modulet integreres problemfrit med hjemmebiografskærme og tv-styring, inklusive brug med projektorer.",
+        "simpleTitle": "Fungerer problemfrit med tv og projektorer",
+        "bias": "positive",
+        "key": "compatibility",
+        "groupId": "e561c59c-e9c2-48de-abc0-5a9bc3de66e2"
+       },
+       "rich, detailed home-cinema sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den kompromisløse og præcise lyd med højopløselige formater og en stærk 5.1-gengivelse.",
+        "simpleTitle": "Fyldig og detaljeret hjemmebiograflyd",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "312002a6-86ec-4556-9775-4e76a00781b3"
+       }
+      },
+      "grouping": {
+       "e561c59c-e9c2-48de-abc0-5a9bc3de66e2": {
+        "title": "Kompatibilitet med tv og projektor",
+        "id": "e561c59c-e9c2-48de-abc0-5a9bc3de66e2",
+        "references": [
+         "b2361e86-3f3c-459b-8c7f-78c23a802ea2",
+         "c17cc554-cc84-4002-88d4-c601887c86a1",
+         "bdc2b701-c79e-4c26-9a17-ac22a300edda",
+         "de791f7e-72a7-4a27-99e4-a59f55c20aa0",
+         "bf0395d1-4431-4416-a2bd-870151264ab9",
+         "63a6e2b4-3262-4453-b206-314aac4ad523"
+        ]
+       },
+       "312002a6-86ec-4556-9775-4e76a00781b3": {
+        "title": "Lydkvalitet",
+        "id": "312002a6-86ec-4556-9775-4e76a00781b3",
+        "references": [
+         "de791f7e-72a7-4a27-99e4-a59f55c20aa0",
+         "bf0395d1-4431-4416-a2bd-870151264ab9",
+         "7f9e3737-fb30-4f44-b20c-50c44c6ecf82"
+        ]
+       }
+      },
+      "rating": 4.86206896551724,
+      "count": 29,
+      "reviewCount": 7,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 1,
+       "4": 2,
+       "5": 26
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

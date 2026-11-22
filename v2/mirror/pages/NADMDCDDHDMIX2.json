@@ -8,6 +8,15 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "HDMI MDC-indstiksmodul til NAD stereoforstærkere · 3 x HDMI-ind (stereo, ingen surround-dekodning) · 1 x HDMI-ud (kun video pass-through, ikke lyd)"
+  },
+  "gallery": [
+   "5f7535f8-281f-4ad9-8226-3563d78a185f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 74008,
   "skuCode": "NADMDCDDHDMIX2",
@@ -123,67 +132,74 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NADMDCDDHDMIX2 giver varm, slagkraftig og mere omsluttende TV-lyd på kompatible NAD-systemer. HDMI-integrationen er praktisk, enkel og fungerer generelt præcis som forventet. Kompatibiliteten kan afhænge af konfigurationen, med lejlighedsvis ustabilitet og begrænset understøttelse af ældre eller inkompatible systemer.",
+   "summary": "NADMDCDDHDMIX2 leverer en varm, klar og punchy opgradering af TV-lyden med enkel HDMI-integration i kompatible NAD-systemer. Lyden kan opleves mere detaljeret og omsluttende end fra TV-højttalere eller via optisk forbindelse. Kompatibilitet og stabilitet er fremragende i mange opsætninger, selv om enkelte konfigurationer giver ustabilt signal eller begrænset kompatibilitet.",
    "headlines": {
-    "compatibility can be unreliable": {
-     "sentimentAnalysis": "Nogle opsætninger oplever inkompatibilitet, forsinket signalregistrering eller behov for at udskifte et ældre modul.",
-     "simpleTitle": "Kompatibiliteten kan være ustabil",
+    "simple, dependable operation": {
+     "sentimentAnalysis": "Produktet beskrives gentagne gange som enkelt og pålideligt.",
+     "simpleTitle": "Enkel og pålidelig funktion",
+     "bias": "positive",
+     "key": "functionality",
+     "groupId": "828c9a08-515e-4622-ac48-84f45c2a28b6"
+    },
+    "reliable HDMI integration for TV use": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver HDMI-tilslutningen til TV eller NAD-system som effektiv og tilfredsstillende.",
+     "simpleTitle": "Pålidelig HDMI-integration til TV-brug",
+     "bias": "positive",
+     "key": "hdmi-connectivity",
+     "groupId": "963e2ff6-1eeb-4279-aaf4-46a4dc26cec0"
+    },
+    "compatibility can be limiting": {
+     "sentimentAnalysis": "Nogle opsætninger oplever inkompatibilitet, forsinkede signaler eller ustabilitet, hvilket reducerer produktets anvendelighed.",
+     "simpleTitle": "Kompatibiliteten kan være begrænset",
      "bias": "negative",
-     "key": "compatibility-issues",
-     "groupId": "52abc51e-6a60-4031-a03b-f06a928d8253"
+     "key": "compatibility-stability",
+     "groupId": "b42198ee-900a-42c7-a460-2a54d421ad02"
     },
-    "better TV sound": {
-     "sentimentAnalysis": "Modulet forbedrer TV-lyden mærkbart sammenlignet med TV'ets indbyggede højttalere.",
-     "simpleTitle": "Bedre TV-lyd",
+    "a clear upgrade over TV speakers": {
+     "sentimentAnalysis": "Adapteren forbedrer TV-lyden mærkbart sammenlignet med de indbyggede højttalere.",
+     "simpleTitle": "En tydelig opgradering i forhold til TV-højttalere",
      "bias": "positive",
-     "key": "better-tv-sound",
-     "groupId": "847ab596-1cb8-4d56-ad1b-c2520082eb1a"
-    },
-    "clearer detail than optical audio": {
-     "sentimentAnalysis": "Lyden beskrives som mere detaljeret og bedre end via alternative TV-lydforbindelser.",
-     "simpleTitle": "Tydeligere detaljer end via optisk lyd",
-     "bias": "positive",
-     "key": "clearer-than-optical",
-     "groupId": "847ab596-1cb8-4d56-ad1b-c2520082eb1a"
-    },
-    "simple, tidy HDMI integration": {
-     "sentimentAnalysis": "Modulet gør det nemt at tilslutte enheder til forstærkeren og reducerer antallet af kabler og eksterne bokse.",
-     "simpleTitle": "Enkel og ryddig HDMI-integration",
-     "bias": "positive",
-     "key": "simple-hdmi-integration",
-     "groupId": "a5ced700-7c80-40f2-9b99-7319148aba85"
+     "key": "sound-quality",
+     "groupId": "8b55e6e4-c99c-4971-9ca2-5694b3447bf7"
     }
    },
    "grouping": {
-    "a5ced700-7c80-40f2-9b99-7319148aba85": {
-     "title": "HDMI- og TV-forbindelse",
-     "id": "a5ced700-7c80-40f2-9b99-7319148aba85",
+    "963e2ff6-1eeb-4279-aaf4-46a4dc26cec0": {
+     "title": "HDMI-tilslutning",
+     "id": "963e2ff6-1eeb-4279-aaf4-46a4dc26cec0",
      "references": [
       "f4944468-e134-4100-b55a-e4273b87733d",
-      "faba9e79-44fe-4262-b0ce-b83baf05faf4",
-      "fa431ed5-c0c2-405c-a7d0-1dd0f674bdcc",
       "7599560b-fe56-4e27-8c83-9cba9392653f",
-      "34bb4aae-09fa-4d55-92fe-e84f50fbaff0"
-     ]
-    },
-    "52abc51e-6a60-4031-a03b-f06a928d8253": {
-     "title": "Kompatibilitet",
-     "id": "52abc51e-6a60-4031-a03b-f06a928d8253",
-     "references": [
-      "34bb4aae-09fa-4d55-92fe-e84f50fbaff0",
-      "8d7edbf8-75ac-4d58-837a-fb8c36f464c3",
-      "4491f547-6ba4-4796-8141-fe03a011637d",
-      "a8b7e8e7-2ba4-4832-8aa7-2b97eb7aac92",
+      "faba9e79-44fe-4262-b0ce-b83baf05faf4",
       "fa431ed5-c0c2-405c-a7d0-1dd0f674bdcc"
      ]
     },
-    "847ab596-1cb8-4d56-ad1b-c2520082eb1a": {
+    "828c9a08-515e-4622-ac48-84f45c2a28b6": {
+     "title": "Funktionalitet",
+     "id": "828c9a08-515e-4622-ac48-84f45c2a28b6",
+     "references": [
+      "4fd3bcd6-97f3-4ba7-9aad-48843718df8c",
+      "ef17fdf0-45e9-47a6-8117-5d70a54b966a",
+      "f07f6dc1-3dd8-4952-b2bb-d3c038fe9f83",
+      "f58d025f-69ce-4c23-b317-0fd3fba801a9"
+     ]
+    },
+    "8b55e6e4-c99c-4971-9ca2-5694b3447bf7": {
      "title": "Lydkvalitet",
-     "id": "847ab596-1cb8-4d56-ad1b-c2520082eb1a",
+     "id": "8b55e6e4-c99c-4971-9ca2-5694b3447bf7",
      "references": [
       "f4944468-e134-4100-b55a-e4273b87733d",
       "642a3161-59a4-4b6f-99b4-660dbfa7034c",
       "a8b7e8e7-2ba4-4832-8aa7-2b97eb7aac92"
+     ]
+    },
+    "b42198ee-900a-42c7-a460-2a54d421ad02": {
+     "title": "Kompatibilitet og stabilitet",
+     "id": "b42198ee-900a-42c7-a460-2a54d421ad02",
+     "references": [
+      "34bb4aae-09fa-4d55-92fe-e84f50fbaff0",
+      "8d7edbf8-75ac-4d58-837a-fb8c36f464c3",
+      "4491f547-6ba4-4796-8141-fe03a011637d"
      ]
     }
    },

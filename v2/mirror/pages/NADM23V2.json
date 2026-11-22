@@ -13,6 +13,24 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Nej",
+   "HDMI indgange": "0",
+   "HDMI udgange": "0",
+   "Tilslutninger (kablet)": "Analog RCA, Analog XLR",
+   "Udgangseffekt 4 ohm": "2 x 400 watt",
+   "Udgangseffekt 8 ohm": "2 x 200 watt"
+  },
+  "gallery": [
+   "11dce355-627e-49f8-af14-46175a04c780",
+   "fabaa979-dd8d-4e22-acf9-291eb6851b2d",
+   "d290bc3a-2e82-4b42-b4e6-8405b0e81d72",
+   "e7bfa28e-ae5f-4fff-8f37-e918ea536d1e",
+   "c7593297-59af-4565-b2b4-58df16606441"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 258694,
   "skuCode": "NADM23V2",
@@ -274,34 +292,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD M23V2 leverer kraftfuld, særdeles kontrolleret og exceptionelt klar lyd med punchy bas og en detaljeret, medrivende gengivelse. Den stærke strømforsyning holder krævende højttalere under kontrol ved både høje lydstyrker og lav impedans. Den fremragende forstærkerydelse og byggekvalitet gør M23V2 til et overbevisende valg til seriøse high-end-anlæg.",
+   "summary": "NAD M23V2 leverer en kraftfuld, varm og yderst detaljeret lyd med fremragende klarhed over hele frekvensområdet. Den stærke kontrol, den rene gengivelse og den ubesværede ydeevne ved høj lydstyrke gør forstærkeren til et overbevisende valg til krævende højttalere. Den førsteklasses byggekvalitet og den fremragende samlede ydeevne understreger indtrykket af en seriøs high-end-effektforstærker.",
    "headlines": {
     "detailed and clean sound": {
-     "sentimentAnalysis": "Anmeldelserne roser forstærkerens meget detaljerede, rene, klare og imponerende gengivelse.",
+     "sentimentAnalysis": "Anmeldelserne roser den højtopløste, præcise og rene gengivelse, hvor detaljer stadig kan høres ved baggrundslydstyrke.",
      "simpleTitle": "Detaljeret og ren lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "efd131c2-b2da-40ab-8bc1-62cd0dfef172"
+     "key": "detailed-clean-sound",
+     "groupId": "016c033c-dcc4-4c00-822a-8f8c84f188fd"
     },
-    "powerful control at high volumes": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den store effekt og evnen til at drive krævende højttalere højt uden anstrengelse eller forvrængning.",
-     "simpleTitle": "Kraftfuld kontrol ved høje lydstyrker",
+    "powerful and effortless drive": {
+     "sentimentAnalysis": "Forstærkeren beskrives som særdeles kraftfuld med stram baskontrol og evnen til at drive krævende højttalere til ekstreme lydstyrker uden anstrengelse.",
+     "simpleTitle": "Kraftfuld og ubesværet drift",
      "bias": "positive",
-     "key": "power-handling",
-     "groupId": "a64880a7-b7ab-4f27-ac3e-060c3ce67f65"
-    },
-    "precise bass and low-impedance control": {
-     "sentimentAnalysis": "Anmeldelserne beskriver præcis bas og stabil drift med krævende belastninger ved lav impedans.",
-     "simpleTitle": "Præcis bas og kontrol ved lav impedans",
-     "bias": "positive",
-     "key": "power-handling",
-     "groupId": "a64880a7-b7ab-4f27-ac3e-060c3ce67f65"
+     "key": "powerful-drive",
+     "groupId": "ef4193f0-0f0b-4f37-b837-f0aecbb60a61"
     }
    },
    "grouping": {
-    "efd131c2-b2da-40ab-8bc1-62cd0dfef172": {
+    "016c033c-dcc4-4c00-822a-8f8c84f188fd": {
      "title": "Lydkvalitet",
-     "id": "efd131c2-b2da-40ab-8bc1-62cd0dfef172",
+     "id": "016c033c-dcc4-4c00-822a-8f8c84f188fd",
      "references": [
       "761be8e5-b2ff-41a9-8fb6-2b20bf468f9a",
       "c87eee29-6b3c-4b21-965a-9f2208e271bd",
@@ -311,11 +322,10 @@
       "858346eb-f964-40b6-beeb-8746250557d7"
      ]
     },
-    "a64880a7-b7ab-4f27-ac3e-060c3ce67f65": {
-     "title": "Effekthåndtering",
-     "id": "a64880a7-b7ab-4f27-ac3e-060c3ce67f65",
+    "ef4193f0-0f0b-4f37-b837-f0aecbb60a61": {
+     "title": "Kraft og ydeevne",
+     "id": "ef4193f0-0f0b-4f37-b837-f0aecbb60a61",
      "references": [
-      "761be8e5-b2ff-41a9-8fb6-2b20bf468f9a",
       "23083688-96e0-43cf-869a-c1e8d1f0b1c7",
       "fb5920da-f4ab-49b3-b802-d74ec34070f0",
       "d7d13153-2d82-4044-bf72-8769ef73f0a8"

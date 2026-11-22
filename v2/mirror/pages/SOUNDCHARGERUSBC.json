@@ -13,6 +13,16 @@
    "url": "/kabler/strom-kabler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "613fa50c-a8bf-45a1-bd88-73da96da506a",
+   "16abc8dc-ade5-46c9-94a8-092b5cb75e9f",
+   "47b82adf-0c02-48de-b23c-7577c39f01ec",
+   "eba7b00b-b97b-4326-a348-1d25e817215b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 232025,
   "skuCode": "SOUNDCHARGERUSBC",
@@ -118,7 +128,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 240,
+     "availableQuantity": 209,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -229,38 +239,38 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SOUNDCHARGERUSBC leverer hurtig og pålidelig opladning med en varm, kraftfuld hverdagsoplevelse. Et fuldt batteri opnås imponerende hurtigt, mens den enkle betjening giver en dejligt opslugende enkelhed. Prisindtrykket er overvejende stærkt, selv om prisen kan virke høj sammenlignet med kraftige alternativer.",
+   "summary": "SOUNDCHARGERUSBC leverer hurtig og pålidelig opladning med en behageligt enkel anvendelse i hverdagen. Den kraftfulde ladeydelse fylder batterier hurtigt, mens den ligetil betjening gør oplevelsen ubesværet. Samlet set er værdien stærk, selv om USB-C-forbindelsen kan virke overfølsom, og prisen giver anledning til lidt tøven.",
    "headlines": {
-    "fast charging": {
-     "sentimentAnalysis": "Opladningen roses konsekvent for at være hurtig, inklusive meget hurtig fuld opladning.",
-     "simpleTitle": "Hurtig opladning",
+    "fast battery charging": {
+     "sentimentAnalysis": "Opladningen beskrives konsekvent som imponerende hurtig, også når batteriet skal fyldes helt på kort tid.",
+     "simpleTitle": "Hurtig batteriopladning",
      "bias": "positive",
-     "key": "fast-charging",
-     "groupId": "d9658487-8760-4633-89bb-348246c1c139"
+     "key": "fast_charging",
+     "groupId": "e731debe-5d76-4a40-9a40-9d6855bd73fa"
     },
-    "reliable everyday operation": {
-     "sentimentAnalysis": "Opladeren opfattes som pålidelig og gør præcis det, en oplader skal gøre.",
-     "simpleTitle": "Pålidelig hverdagsdrift",
+    "simple, reliable operation": {
+     "sentimentAnalysis": "Laderen roses for at gøre præcis det, den skal, med enkel og pålidelig plug-and-charge-brug.",
+     "simpleTitle": "Enkel og pålidelig funktion",
      "bias": "positive",
-     "key": "reliable-operation",
-     "groupId": "1aa4b7de-44fb-44dd-b954-a1578bda58bc"
+     "key": "reliable_operation",
+     "groupId": "638ef758-eb84-40a6-9241-05e5ce42eafe"
     }
    },
    "grouping": {
-    "1aa4b7de-44fb-44dd-b954-a1578bda58bc": {
+    "638ef758-eb84-40a6-9241-05e5ce42eafe": {
      "title": "Funktionalitet",
-     "id": "1aa4b7de-44fb-44dd-b954-a1578bda58bc",
+     "id": "638ef758-eb84-40a6-9241-05e5ce42eafe",
      "references": [
       "516365d7-e4e2-4dd2-9842-daff41ccdd4e",
+      "999754a3-b7a4-4e9a-8bf9-121efabbe6cd",
       "cec1b138-0fe5-4bdd-b540-aa3a0aa657d0",
       "b24318b4-9d76-4897-a436-5875bfa571ea",
-      "999754a3-b7a4-4e9a-8bf9-121efabbe6cd",
       "053896de-48c5-4ab6-b15e-2da5d6109b4d"
      ]
     },
-    "d9658487-8760-4633-89bb-348246c1c139": {
+    "e731debe-5d76-4a40-9a40-9d6855bd73fa": {
      "title": "Ladehastighed",
-     "id": "d9658487-8760-4633-89bb-348246c1c139",
+     "id": "e731debe-5d76-4a40-9a40-9d6855bd73fa",
      "references": [
       "8c0307e2-2263-4275-95a3-07b7a4843ced",
       "23e857b3-c0a8-4ff1-991a-373e690e44ba",

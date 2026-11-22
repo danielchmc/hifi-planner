@@ -8,6 +8,14 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c876c06c-03c7-4f2f-9079-c2be3d202a49",
+   "71ae3bfa-d926-41bd-86d7-b3710feab7d3"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 175908,
   "skuCode": "SONRAYWM",
@@ -58,7 +66,6 @@
     "id": 175909,
     "displayName": "Sort",
     "condition": "NewNeverUsedAndNotOpened",
-    "sellableOnWeb": true,
     "productCode": "SONRAYWMBK",
     "ean": "8717755778550",
     "priceDetails": {
@@ -100,12 +107,11 @@
      "productCode": "SONRAYWMBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

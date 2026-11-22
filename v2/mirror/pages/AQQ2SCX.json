@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Valgfri"
+  },
+  "gallery": [
+   "4c676910-bd29-4731-8f72-27d1ccb8fcb0"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 32220,
   "skuCode": "AQQ2SCX",
@@ -132,7 +141,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 427,
+     "availableQuantity": 1027,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -154,41 +163,47 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQQ2SCX betragtes som et velbygget højttalerkabel med god værdi for pengene, der leverer en klar, varm og detaljeret lyd. Kablet fungerer pålideligt med forskellige højttaler- og forstærkersystemer, og flere anmeldelser beskriver musikken som mere fornøjelig eller bedre end forventet. Håndteringen er generelt enkel og fleksibel, selv om én anmeldelse fandt kablet stift og svært at arbejde med.",
+   "summary": "AQQ2SCX betragtes generelt som et velbygget højttalerkabel med god værdi for pengene, der leverer en klar, varm og detaljeret lyd. Musikken føles mere fornøjelig og omsluttende på forskellige anlæg, og flere anmeldelser beskriver en tydelig forbedring i forhold til almindelig højttalerledning. Meningerne om håndteringen er delte: Nogle finder kablet fleksibelt og nemt at fastgøre, mens en anden oplever kablet som stift og vanskeligt at arbejde med.",
    "headlines": {
-    "clear improvement in music": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver et tydeligt forbedret eller uventet stærkt musikalsk resultat i komplette stereoanlæg.",
-     "simpleTitle": "Tydelig forbedring af musikken",
+    "warmer, more detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig lydforbedring med varmere, mere detaljeret og meget fornøjelig musikgengivelse på flere anlæg.",
+     "simpleTitle": "Varmere, mere detaljeret og omsluttende lyd",
      "bias": "positive",
-     "key": "sound-improvement",
-     "groupId": "b8748e41-b410-426c-9f5f-97d447f7a150"
+     "key": "sound",
+     "groupId": "34c71371-4531-4895-9d4a-ddd4cd9fa42f"
     },
-    "solid, attractive construction": {
-     "sentimentAnalysis": "Kablet roses for sit pæne, diskrete udseende og den oplevede høje byggekvalitet.",
-     "simpleTitle": "Solid og flot konstruktion",
+    "solid quality at an attractive price": {
+     "sentimentAnalysis": "Flere anmeldelser roser kablet for solid udførelse, god kvalitet og en attraktiv pris.",
+     "simpleTitle": "Solid kvalitet til en attraktiv pris",
      "bias": "positive",
-     "key": "solid-attractive-build",
-     "groupId": "bb560ad0-e708-4299-b772-31cd4b8d35bb"
+     "key": "build",
+     "groupId": "88085104-8ae2-43df-9d43-ac25e6f3d9e7"
     },
-    "warm, detailed sound": {
-     "sentimentAnalysis": "Kablet roses for at gøre lyden varmere, mere detaljeret og mere fornøjelig trods den tynde kerne.",
-     "simpleTitle": "Varm og detaljeret lyd",
+    "flexible and easy to secure": {
+     "sentimentAnalysis": "Flere anmeldelser oplever kablet som forholdsvis nemt at arbejde med, fleksibelt og enkelt at føre eller fastgøre.",
+     "simpleTitle": "Fleksibel og nem at fastgøre",
      "bias": "positive",
-     "key": "sound-warm-detailed",
-     "groupId": "b8748e41-b410-426c-9f5f-97d447f7a150"
-    },
-    "easy to handle and route": {
-     "sentimentAnalysis": "Flere anmeldelser finder kablet nemt at arbejde med, føre og fastgøre.",
-     "simpleTitle": "Nem at håndtere og føre",
-     "bias": "positive",
-     "key": "easy-flexible-handling",
-     "groupId": "6e7d2ec5-ea9a-4a31-b5bb-031707facc52"
+     "key": "handling",
+     "groupId": "7ec7c601-477f-46d7-80b9-822a3fb6aed3"
     }
    },
    "grouping": {
-    "b8748e41-b410-426c-9f5f-97d447f7a150": {
+    "88085104-8ae2-43df-9d43-ac25e6f3d9e7": {
+     "title": "Byggekvalitet og værdi",
+     "id": "88085104-8ae2-43df-9d43-ac25e6f3d9e7",
+     "references": [
+      "e1f7b5da-5eb1-4a47-b578-35d82c48c9bc",
+      "c2886a53-1f2e-403f-90b5-b2a5f3899a58",
+      "8781b90b-cd0b-4eee-a7d9-36c6a8e65e09",
+      "06f63108-b5e2-44ed-87b3-59d1a3583a5b",
+      "66c234b9-29bc-4eee-b258-4519b74197b4",
+      "336cc0e3-ccf3-4844-8eb9-f6e2d99fd641",
+      "b012cc92-46d8-4b72-ab22-869dec2a9659"
+     ]
+    },
+    "34c71371-4531-4895-9d4a-ddd4cd9fa42f": {
      "title": "Lydkvalitet",
-     "id": "b8748e41-b410-426c-9f5f-97d447f7a150",
+     "id": "34c71371-4531-4895-9d4a-ddd4cd9fa42f",
      "references": [
       "8044bf7f-4a4c-4cea-a99e-35ab207aaa4d",
       "bda1b68f-8a33-4d58-9ca4-43a88aef88d2",
@@ -198,22 +213,9 @@
       "ae7bb616-08e1-445e-bfa9-8d83595749c7"
      ]
     },
-    "bb560ad0-e708-4299-b772-31cd4b8d35bb": {
-     "title": "Byggekvalitet og værdi",
-     "id": "bb560ad0-e708-4299-b772-31cd4b8d35bb",
-     "references": [
-      "e1f7b5da-5eb1-4a47-b578-35d82c48c9bc",
-      "c2886a53-1f2e-403f-90b5-b2a5f3899a58",
-      "8781b90b-cd0b-4eee-a7d9-36c6a8e65e09",
-      "06f63108-b5e2-44ed-87b3-59d1a3583a5b",
-      "66c234b9-29bc-4eee-b258-4519b74197b4",
-      "336cc0e3-ccf3-4844-8eb9-f6a2d99fd641",
-      "b012cc92-46d8-4b72-ab22-869dec2a9659"
-     ]
-    },
-    "6e7d2ec5-ea9a-4a31-b5bb-031707facc52": {
-     "title": "Håndtering og fleksibilitet",
-     "id": "6e7d2ec5-ea9a-4a31-b5bb-031707facc52",
+    "7ec7c601-477f-46d7-80b9-822a3fb6aed3": {
+     "title": "Håndtering og installation",
+     "id": "7ec7c601-477f-46d7-80b9-822a3fb6aed3",
      "references": [
       "192f7107-3d52-40d8-96e1-e1b046ccc00d",
       "bf849230-2f7a-4b32-9a13-13277e66db69",
@@ -222,15 +224,15 @@
      ]
     }
    },
-   "rating": 4.58870967741936,
-   "count": 124,
+   "rating": 4.592,
+   "count": 125,
    "reviewCount": 27,
    "distribution": {
     "1": 5,
     "2": 0,
     "3": 7,
     "4": 17,
-    "5": 95
+    "5": 96
    }
   },
   "brandName": "AudioQuest",

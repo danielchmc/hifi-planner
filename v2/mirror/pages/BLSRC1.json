@@ -13,6 +13,16 @@
    "url": "/tilbehor/fjernbetjening/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ae3a534b-3382-42c3-bf8a-9845a5cfc92f",
+   "0f7ef873-ebfb-42f6-b0ad-10ab20a76c39",
+   "56e8bbd6-6124-4f47-9b9c-00137fab1e08",
+   "39abd0bd-96a9-42dd-84e4-d08449dc45f8"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 122858,
   "skuCode": "BLSRC1",
@@ -106,8 +116,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 1018,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 1014,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -151,108 +161,129 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSRC1 er en praktisk og solidt bygget fjernbetjening, der gør den daglige betjening af Bluesound- og NAD-enheder hurtigere og mere behagelig end brug af en telefon. Knapperne til gemte radiostationer, playlister og andre kilder er særligt nyttige, og det kompakte design ligger godt i hånden. De største ulemper er den relativt høje pris, de mere begrænsede funktioner sammenlignet med appen og behovet for at rette det infrarøde signal præcist i nogle opsætninger.",
+   "summary": "BLSRC1 betragtes generelt som en praktisk og responsiv fjernbetjening, der gør Bluesound- og NAD-systemer nemmere at betjene uden at finde telefonen frem. Forudindstillede knapper, enkel betjening, kompakt konstruktion og god ergonomi bliver ofte fremhævet, især til radiostationer og playlister. De største forbehold gælder merprisen, infrarød betjening med begrænset sigtelinje, lejlighedsvise opsætningsproblemer, begrænsede funktioner og varierende batterilevetid.",
    "headlines": {
-    "presets make radio and playlists instantly accessible": {
-     "sentimentAnalysis": "Programmerbare knapper giver hurtig og praktisk adgang til favoritstationer, playlister og kilder uden appen.",
-     "simpleTitle": "Forudindstillinger giver hurtig adgang til radio og playlister",
+    "easy operation without a phone": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent fjernbetjeningen som et praktisk alternativ til BluOS-appen, især når telefonen ikke er i nærheden.",
+     "simpleTitle": "Nem betjening uden telefon",
      "bias": "positive",
-     "key": "preset-access",
-     "groupId": "6a83a598-9fbe-4d4f-9287-f6489d9f4fdb"
+     "key": "ease",
+     "groupId": "b4727418-c5e2-4bc7-944c-f0542c69529b"
     },
-    "a convenient alternative to the app": {
-     "sentimentAnalysis": "Fjernbetjeningen værdsættes bredt som et hurtigere, enklere og mere tilgængeligt alternativ til mobilappen.",
-     "simpleTitle": "Et praktisk alternativ til appen",
+    "quick access to presets and playlists": {
+     "sentimentAnalysis": "Programmerbare knapper giver hurtig direkte adgang til radiostationer, playlister, musiktjenester og andre ofte brugte kilder.",
+     "simpleTitle": "Hurtig adgang til forudindstillinger og playlister",
      "bias": "positive",
-     "key": "app-free-control",
-     "groupId": "fa50a49e-da35-4fbe-a547-c387334e6abe"
+     "key": "presets",
+     "groupId": "af935b6f-6210-4aa8-b2f8-2ac60819db40"
     },
-    "compact, attractive and comfortable to hold": {
-     "sentimentAnalysis": "Det kompakte format, det flotte udseende og den solide konstruktion fremhæves gentagne gange.",
-     "simpleTitle": "Kompakt, flot og behagelig at holde",
+    "compact, comfortable build": {
+     "sentimentAnalysis": "Fjernbetjeningen roses ofte for sin kompakte størrelse, solide konstruktion, flotte design og gode greb.",
+     "simpleTitle": "Kompakt og behagelig konstruktion",
      "bias": "positive",
-     "key": "handheld-design",
-     "groupId": "a3fc8ec9-d7aa-4d5d-b99f-a411551d0d61"
-    },
-    "the price feels too high": {
-     "sentimentAnalysis": "Flere anmeldelser finder fjernbetjeningen nyttig, men for dyr, især fordi appen kan udføre mange af de samme funktioner.",
-     "simpleTitle": "Prisen føles for høj",
-     "bias": "negative",
-     "key": "high-price",
-     "groupId": "f9d4307f-0ae9-40aa-b8f1-2a2281ecaa24"
+     "key": "design",
+     "groupId": "9f78075b-9753-4b49-b9be-ffb66ae69cb8"
     },
     "infrared aiming can be restrictive": {
-     "sentimentAnalysis": "Den infrarøde betjening virker, men kravet om direkte sigtning og begrænsninger gennem skabslåger opleves som upraktisk.",
-     "simpleTitle": "Infrarød betjening kan være begrænsende",
+     "sentimentAnalysis": "Flere anmeldelser nævner, at infrarød betjening kræver direkte sigtning og muligvis ikke virker gennem skabslåger, mens andre oplever god dækning i rummet.",
+     "simpleTitle": "Infrarød betjening kræver præcis sigtning",
      "bias": "negative",
-     "key": "infrared-limitations",
-     "groupId": "fa50a49e-da35-4fbe-a547-c387334e6abe"
+     "key": "performance",
+     "groupId": "caadff23-60c2-4332-ba15-59dd42e7ec86"
     }
    },
    "grouping": {
-    "fa50a49e-da35-4fbe-a547-c387334e6abe": {
+    "b4727418-c5e2-4bc7-944c-f0542c69529b": {
      "title": "Brugervenlighed",
-     "id": "fa50a49e-da35-4fbe-a547-c387334e6abe",
+     "id": "b4727418-c5e2-4bc7-944c-f0542c69529b",
      "references": [
-      "10bfed7e-a3db-40fe-87cb-3bd99304f0ae",
-      "8dcaa6ac-0831-4b13-a541-e6290fa9e6fa",
       "5b02e63e-6d1f-412b-b930-92fe1f8c4501",
       "d4563909-30b6-424a-87b1-fd940931195a",
+      "535d3329-f490-4190-9ccc-99e06c5b6fa0",
       "6158eb40-10b9-43cf-abde-5c61f02d8749",
       "04de83cd-1021-4019-9c11-c8e62585e03b",
+      "87dde5a8-8599-4586-b4c8-b5769d2b1da7",
+      "1f8422be-7e35-490f-b71f-95439d4ddffd",
+      "401b5fa3-0fba-41ba-954e-fc13394f71e4",
+      "c8d32a89-bd73-4150-b61e-2ecb9ca2c4fe",
+      "f8383229-26b3-4b0c-9843-a723a7c43ada",
+      "18f27b1b-ff9b-4a48-ba17-24fa5d68aa0a",
+      "abc2916b-e029-4253-91dc-7d9936c994f3",
+      "b19dd472-f4a9-453a-b034-21ccc5e896dd",
+      "90b0bc50-3301-4bf6-bfc4-b862b63b16d6",
+      "ad804c47-1141-48f1-9021-f9d54a05f86b",
+      "826dbae1-7e83-4513-931e-b35f851cc350",
+      "1aa40b10-0b6b-4d36-9906-6869bb0d451a",
+      "40168e83-1632-48fc-b8fe-3e6b2905656a",
+      "af3c46b4-0f29-4322-a1a8-a3ac6fb96101",
+      "d43c9d03-2c61-4652-9451-0fd5a7632b0c",
+      "637eb951-93a3-4e7e-8148-18854c05d6ee",
+      "5527b29e-ba6a-4b09-86d3-ec4e9cbc6570",
+      "192fe3e6-c00e-4440-ba30-26478502620f",
+      "e9b32538-8b0c-46b6-b435-d6dbbd62e3be",
+      "6eeb83d6-9b3f-4695-b640-80ad4273a852",
+      "055da70b-d826-4d5c-bb9e-418233e9d04e",
+      "a2f8d691-a535-4c0d-aaad-2b78e0e2e722",
+      "3d4f9a95-bd68-4000-a429-10140aaa36c8",
+      "956e083d-6e2e-49d1-be49-4c859a78b66c",
+      "ad6852d1-8e5e-47e4-b0e8-6558386fa55f"
+     ]
+    },
+    "caadff23-60c2-4332-ba15-59dd42e7ec86": {
+     "title": "Ydeevne og pålidelighed",
+     "id": "caadff23-60c2-4332-ba15-59dd42e7ec86",
+     "references": [
+      "8dcaa6ac-0831-4b13-a541-e6290fa9e6fa",
       "4f10fbea-e4da-425f-8416-4f5cabd4b609",
       "7ef16226-bb77-4cf7-9b8a-270e3735a4b2",
       "48a654bb-3fd2-4794-95c9-1faaebb97b9c",
       "2f419cf5-d75b-4897-9a2a-d4dae3e8dc8b",
       "5808c29f-ff38-4ce5-bfdb-86d951cbc556",
-      "fe2b54e5-7fb5-4e31-beae-0e837a83249b",
-      "87dde5a8-8599-4586-b4c8-b5769d2b1da7",
-      "1f8422be-7e35-490f-b71f-95439d4ddffd",
-      "454d5aac-0bcd-449d-b43a-1f1e0653c91c",
-      "858070dc-c27a-4164-9128-8406da9ca5a9",
-      "c8d32a89-bd73-4150-b61e-2ecb9ca2c4fe",
-      "b545458a-2485-45ef-b43a-14d4fd1a5fbf",
-      "1d79ceee-4044-49bc-ae7d-49187e8e1d9e",
-      "de0e92d2-fe34-416c-addb-d4bd58128ac9",
       "68345d69-d6de-4219-ae92-7b12b956ada9",
+      "de0e92d2-fe34-416c-addb-d4bd58128ac9",
+      "dfc36845-feed-4c9b-8864-7bef503c5afe",
       "b484d52c-bc90-4779-ac9e-be623ca12170",
-      "1424b577-fdd3-41b5-8607-bebcddc30828",
-      "1e223050-bf8b-4ebe-9633-c636d29a4467",
       "b72c43c9-f530-48c4-a2fe-ff3a1f4494dc",
-      "af3c46b4-0f29-4322-a1a8-a3ac6fb96101",
       "8c580f34-437f-4625-9a74-d5e1fd791870",
-      "1aa40b10-0b6b-4d36-9906-6869bb0d451a",
-      "3c50766e-bc3e-4ca2-802b-173bd3652312",
-      "e359c6fa-89b2-473c-a0fd-f446a8d686c6",
       "ea8c15e9-c539-4fda-aace-f48df9c59fce",
-      "0b4d8743-d430-4e9e-a197-930073b55f90",
-      "3a30b3e1-c8c1-4685-a294-210e1e2d1a6b",
-      "3a5d387b-6899-47cd-82e1-f9904fb8a7c6",
-      "b7981bdc-722f-4dcd-824e-c35510b0d925",
-      "c6067b04-d36b-44fe-bddb-aa5f7ef168ce",
-      "fd4a7cee-7b43-44bd-aa34-11d875986e0a",
-      "dee334ca-1544-4d64-ac5d-aa3bb26c4e35",
       "4a9ef477-6250-40bc-b18a-e49ac6723e5c",
-      "bf74f11e-68aa-46df-9a23-c55b70cb74b0",
+      "fd4a7cee-7b43-44bd-aa34-11d875986e0a",
+      "e359c6fa-89b2-473c-a0fd-f446a8d6863c",
       "048c44ff-502c-4e56-9cd5-7ee04ac681ee",
-      "37bd3a5d-9c80-41ce-a07d-bfc50dd6adea",
-      "2e404fbb-b2cd-4de0-a303-26d3e04d4fa8",
+      "f168f982-e4dc-4f8a-bcf0-59af24c70da3",
+      "e22f0bf6-4382-4dba-b623-ceacb070aa5b",
       "800b087d-a879-4998-8909-ed962f7e74c9",
-      "633faba1-7030-41dd-9405-ed3caaec2161",
       "fc5c6cca-3ef9-4bd9-b602-7c7b4be7ee3a",
-      "458c3d9c-4f18-4882-b680-a80811ef504a",
-      "ceefd9a4-8120-4a53-8cd8-1837dc072d9c",
-      "7cfbf6b0-bc53-4004-8c17-d34da6635b80",
-      "f7e6cd19-0eff-49f1-809b-531e60c6465f",
-      "4e490116-1d69-48b0-bf0b-213fb861e793",
-      "3d4f9a95-bd68-4000-a429-10140aaa36c8",
-      "91bde94a-3a7a-4f64-8c97-01b8903ca70d",
-      "ad6852d1-8e5e-47e4-b0e8-6558386fa55f"
+      "2e404fbb-b2cd-4de0-a303-26d3e04d4fa8",
+      "4e490116-1d69-48b0-bf0b-213fb861e793"
      ]
     },
-    "6a83a598-9fbe-4d4f-9287-f6489d9f4fdb": {
-     "title": "Forudindstillinger og betjening uden app",
-     "id": "6a83a598-9fbe-4d4f-9287-f6489d9f4fdb",
+    "9f78075b-9753-4b49-b9be-ffb66ae69cb8": {
+     "title": "Design og håndtering",
+     "id": "9f78075b-9753-4b49-b9be-ffb66ae69cb8",
+     "references": [
+      "7a035eb8-7b8f-477f-89c6-ff354e7bfd3c",
+      "799bd56b-1a9f-469a-ae91-7a33f885ee4f",
+      "f7cb3b36-1fdf-4796-8989-db872bf03333",
+      "18f27b1b-ff9b-4a48-ba17-24fa5d68aa0a",
+      "8252616e-dd1b-4a81-843e-4f2dc3eb5b63",
+      "d98cc0c2-ab2d-470d-acb9-6d95e3c38e10",
+      "ed617f9c-00bf-41c2-be77-3ad018579171",
+      "1b794ca5-c083-4fe9-b381-ebcd7d5ae29f",
+      "a88b2c1f-0adf-4c79-bdd4-89930a9d8a3c",
+      "b7981bdc-722f-4dcd-824e-c35510b0d925",
+      "c6067b04-d36b-44fe-bddb-aa5f7ef168ce",
+      "3a5d387b-6899-47cd-82e1-f9904fb8a7c6",
+      "b545458a-2485-45ef-b43a-14d4fd1a5fbf",
+      "1e86d17e-b2d3-4e17-8948-528b09b0aa17",
+      "91bde94a-3a7a-4f64-8c97-01b8903ca70d",
+      "92c83727-2564-453a-a425-0eb00fe8678d",
+      "6fe42d7b-521f-4d7d-9c6f-2d7359a8b443"
+     ]
+    },
+    "af935b6f-6210-4aa8-b2f8-2ac60819db40": {
+     "title": "Forudindstillinger og betjening",
+     "id": "af935b6f-6210-4aa8-b2f8-2ac60819db40",
      "references": [
       "535d3329-f490-4190-9ccc-99e06c5b6fa0",
       "1efc7292-21cc-435f-bfbb-81517e7bba98",
@@ -263,62 +294,12 @@
       "18f27b1b-ff9b-4a48-ba17-24fa5d68aa0a",
       "e4472fd9-b882-415e-bac7-cf2142766713",
       "0a59e19b-5575-4af2-9539-75bed2159880",
-      "826dbae1-7e83-4513-931e-b35f851cc350",
-      "abc2916b-e029-4253-91dc-7d9936c994f3",
-      "40168e83-1632-48fc-b8fe-3e6b2905656a",
       "f7098604-4ed0-40fb-b29f-36d1bcc275bc",
       "328b0009-05e7-40aa-99f8-6eaa4c4c56a8",
       "bf74f11e-68aa-46df-9a23-c55b70cb74b0",
-      "4ef706db-2378-4c41-ba6d-7f243c6459da",
-      "e8d54fe3-08c1-41d1-984c-908fd733275c",
       "530017a8-9fa0-48f1-966c-1b97451bad1a",
-      "92c83727-2564-453a-a425-0eb00fe8678d",
-      "956e083d-6e2e-49d1-be49-4c859a78b66c",
-      "637eb951-93a3-4e7e-8148-18854c05d6ee",
-      "5527b29e-ba6a-4b09-86d3-ec4e9cbc6570"
-     ]
-    },
-    "a3fc8ec9-d7aa-4d5d-b99f-a411551d0d61": {
-     "title": "Design og byggekvalitet",
-     "id": "a3fc8ec9-d7aa-4d5d-b99f-a411551d0d61",
-     "references": [
-      "7a035eb8-7b8f-477f-89c6-ff354e7bfd3c",
-      "799bd56b-1a9f-469a-ae91-7a33f885ee4f",
-      "401b5fa3-0fba-41ba-954e-fc13394f71e4",
-      "f7cb3b36-1fdf-4796-8989-db872bf03333",
-      "8252616e-dd1b-4a81-843e-4f2dc3eb5b63",
-      "d98cc0c2-4ab2-470d-acb9-6d95e3c38e10",
-      "ed617f9c-00bf-41c2-be77-3ad018579171",
-      "1b794ca5-c083-4fe9-b381-ebcd7d5ae29f",
-      "a88b2c1f-0adf-4c79-bdd4-89930a9d8a3c",
-      "328b0009-05e7-40aa-99f8-6eaa4c4c56a8",
-      "b7981bdc-722f-4dcd-824e-c35510b0d925",
-      "c6067b04-d36b-44fe-bddb-aa5f7ef168ce",
-      "1e86d17e-b2d3-4e17-8948-528b09b0aa17",
-      "4e490116-1d69-48b0-bf0b-213fb861e793",
-      "f86d2314-088c-4e52-bec0-8f70bbd35351",
-      "fa5d5cdf-e772-41b9-b5a2-e616ee0eea96",
-      "5338eba2-f5a3-47a0-a76b-c5e933dce406",
-      "91bde94a-3a7a-4f64-8c97-01b8903ca70d"
-     ]
-    },
-    "f9d4307f-0ae9-40aa-b8f1-2a2281ecaa24": {
-     "title": "Pris og værdi",
-     "id": "f9d4307f-0ae9-40aa-b8f1-2a2281ecaa24",
-     "references": [
-      "d4563909-30b6-424a-87b1-fd940931195a",
-      "041ddbe9-1fcc-4803-809d-08de9afe5244",
-      "d45ac8c6-2245-4885-9c2c-6e41e103578a",
-      "1b794ca5-c083-4fe9-b381-ebcd7d5ae29f",
-      "7748b970-7575-4676-bfdc-798aa29f6035",
-      "637eb951-93a3-4e7e-8148-18854c05d6ee",
-      "5338eba2-f5a3-47a0-a76b-c5e933dce406",
-      "7bea19f2-97e3-4406-aa22-634a969723e8",
-      "f580df2f-647a-42f9-89c4-9f98d5a2e5ec",
-      "656b415c-6886-4db9-9907-c602703712f0",
-      "84ac384e-bbf1-4622-8d84-938bb1b121d3",
-      "055da70b-d826-4d5c-bb9e-418233e9d04e",
-      "530017a8-9fa0-48f1-966c-1b97451bad1a"
+      "4ef706db-2378-4c41-ba6d-7f243c6459da",
+      "92c83727-2564-453a-a425-0eb00fe8678d"
      ]
     }
    },

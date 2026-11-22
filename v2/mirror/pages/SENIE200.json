@@ -13,6 +13,21 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej"
+  },
+  "gallery": [
+   "1fc2c8c9-ead1-4e5c-8932-b3f7ff0572fa",
+   "5d708ff9-2eb7-47d9-8d7d-7edfd6d92f7b",
+   "1cfa0025-9cf5-47ae-932a-96e7c83c1f5b",
+   "a4999bac-3264-4c27-b4d2-c29ce95204ee",
+   "3b206996-d8e8-4343-90f6-7e232687d417",
+   "727640b2-68f2-431e-921f-3810ebb828ef",
+   "19a78c2f-6862-4d88-bb00-a3bbe1f607c3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 196040,
   "skuCode": "SENIE200",
@@ -197,7 +212,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 282,
+     "availableQuantity": 278,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -274,48 +289,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENIE200 leverer en imponerende klar, detaljeret og omsluttende lyd til prisen med en varm til velafbalanceret klang, tilstrækkelig fyldig bas og fremragende opløsning, når pasformen er korrekt og en god DAC eller forstærker anvendes. Det lette design over øret er behageligt ved lang tids brug og sidder sikkert under aktivitet, mens den passive isolering virker naturligt. De største ulemper er en besværlig pasform for nogle ører, begrænset eller ørepropafhængig bas samt et medfølgende kabel, der giver forstyrrende støj ved bevægelse.",
+   "summary": "SENIE200 leverer en begejstrende hi-fi-oplevelse med varm, punchy og meget detaljeret lyd, især sammen med en egnet DAC eller hovedtelefonforstærker. Komfort og stabilitet er fremragende for mange lyttere, også under træning og lang tids brug, mens den passive isolering virker naturligt. De største ulemper er en til tider lidt basfattig gengivelse, besværlig tilpasning og valg af ørepropper samt et mikrofonisk og upraktisk kabel.",
    "headlines": {
-    "detailed, immersive sound for the price": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, velafbalanceret, detaljeret og meget omsluttende lyd, der kan konkurrere med langt dyrere hovedtelefoner og trådløse modeller.",
-     "simpleTitle": "Detaljeret, omsluttende lyd til prisen",
+    "detailed, balanced and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klar, afbalanceret, rummelig og meget detaljeret gengivelse på tværs af genrer, ofte sammenlignet positivt med trådløse og dyrere hovedtelefoner.",
+     "simpleTitle": "Detaljeret, afbalanceret og omsluttende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "3a14e3c7-ef8b-48dd-be85-dddd962e2450"
+     "key": "detailed-balanced-sound",
+     "groupId": "946baad7-d2c3-4278-97ae-f228ba93d5e5"
     },
-    "comfortable and secure for long wear": {
-     "sentimentAnalysis": "Mange anmeldelser roser den sikre pasform over øret og komforten ved lang tids lytning, træning og endda når man ligger på en pude.",
-     "simpleTitle": "Komfortable og sikre ved lang tids brug",
+    "comfortable and secure once fitted": {
+     "sentimentAnalysis": "Når den rigtige placering og de rette ørepropper er fundet, rapporterer anmeldelserne godt hold, lav træthed og komfort under træning, søvn og lang tids lytning.",
+     "simpleTitle": "Komfortabel og sikker efter tilpasning",
      "bias": "positive",
-     "key": "fit-comfort",
-     "groupId": "8ab0d144-86d1-4728-ad43-70c6b26b2143"
+     "key": "comfortable-secure-fit",
+     "groupId": "8d853952-82b9-44bf-b691-1ea2e0df80e0"
     },
-    "finding the right fit can be difficult": {
-     "sentimentAnalysis": "En tilbagevendende kritik er, at indsættelse og placering kræver tilvænning, og at de medfølgende ørepropper ikke passer lige godt til alle ører.",
-     "simpleTitle": "Det kan være svært at finde den rigtige pasform",
+    "fit and tip selection can be frustrating": {
+     "sentimentAnalysis": "Flere anmeldelser nævner en tilvænningsperiode eller problemer med at finde en pålidelig tætning; de medfølgende ørepropper og ørebøjler fungerer ikke lige godt for alle lyttere.",
+     "simpleTitle": "Pasform og valg af ørepropper kan være frustrerende",
      "bias": "negative",
-     "key": "fit-comfort",
-     "groupId": "8ab0d144-86d1-4728-ad43-70c6b26b2143"
+     "key": "difficult-fit",
+     "groupId": "8d853952-82b9-44bf-b691-1ea2e0df80e0"
     },
-    "bass can sound lean without the right tips or EQ": {
-     "sentimentAnalysis": "Flere anmeldelser nævner begrænset bas eller et tyndt dybbasområde, selv om andre ørepropper, modifikationer eller EQ kan forbedre balancen.",
-     "simpleTitle": "Bassen kan virke tynd uden de rigtige ørepropper eller EQ",
+    "bass can sound too light": {
+     "sentimentAnalysis": "Flere anmeldelser oplever basområdet som lettere eller tyndere end forventet; tætning, equalizer eller en modifikation kan forbedre bassen for nogle lyttere, mens én anmeldelse fandt den samlede tuning uacceptabel.",
+     "simpleTitle": "Bassen kan lyde for tynd",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "3a14e3c7-ef8b-48dd-be85-dddd962e2450"
+     "key": "light-bass",
+     "groupId": "946baad7-d2c3-4278-97ae-f228ba93d5e5"
     },
-    "the stock cable is noticeably microphonic": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer, at det medfølgende kabel overfører friktions- og bevægelsesstøj, hvilket får nogle til at overveje et erstatningskabel.",
-     "simpleTitle": "Standardkablet overfører tydeligt berøringsstøj",
+    "cable noise and handling are weak points": {
+     "sentimentAnalysis": "Det medfølgende kabel kritiseres gentagne gange for at overføre bevægelsesstøj, filtre let eller være upraktisk, selv om én anmeldelse ikke oplever kabelproblemer.",
+     "simpleTitle": "Kabelstøj og håndtering er svage punkter",
      "bias": "negative",
-     "key": "cable",
-     "groupId": "6fa7e029-9c8e-495f-a953-a333cd12c48f"
+     "key": "cable-issues",
+     "groupId": "bfb45a35-155a-4778-9d0b-1d638f7428b3"
     }
    },
    "grouping": {
-    "3a14e3c7-ef8b-48dd-be85-dddd962e2450": {
+    "946baad7-d2c3-4278-97ae-f228ba93d5e5": {
      "title": "Lydkvalitet",
-     "id": "3a14e3c7-ef8b-48dd-be85-dddd962e2450",
+     "id": "946baad7-d2c3-4278-97ae-f228ba93d5e5",
      "references": [
       "d17a5d2d-2f06-4296-9b5d-9819c2d9d91a",
       "88be756f-cb43-4858-bc08-f5a371202262",
@@ -348,9 +363,9 @@
       "adb47ab6-0180-471d-af92-076305f165b1"
      ]
     },
-    "8ab0d144-86d1-4728-ad43-70c6b26b2143": {
+    "8d853952-82b9-44bf-b691-1ea2e0df80e0": {
      "title": "Pasform og komfort",
-     "id": "8ab0d144-86d1-4728-ad43-70c6b26b2143",
+     "id": "8d853952-82b9-44bf-b691-1ea2e0df80e0",
      "references": [
       "2349a90f-a65a-41e2-8a64-4b2c1a08d8ee",
       "96b3d1d1-5f37-4b9f-b945-a4669dcfa77a",
@@ -375,17 +390,17 @@
       "adb47ab6-0180-471d-af92-076305f165b1"
      ]
     },
-    "6fa7e029-9c8e-495f-a953-a333cd12c48f": {
+    "bfb45a35-155a-4778-9d0b-1d638f7428b3": {
      "title": "Kabel",
-     "id": "6fa7e029-9c8e-495f-a953-a333cd12c48f",
+     "id": "bfb45a35-155a-4778-9d0b-1d638f7428b3",
      "references": [
       "ad50a2af-086c-40bb-922c-cc2ffe81f23b",
       "c525fe6b-7e74-4bd5-b793-b4a4f301bab1",
       "f72fba8a-9586-4272-bf32-02509a6125d4",
       "26bd9c47-833b-46c6-a2dc-29e0c6c63ac9",
       "8801be95-412b-4ec0-bd65-81813a7b27de",
-      "aa573b34-6962-4e80-bbf8-67688bd8f757",
-      "00d7327c-6fde-4c6e-857a-3bc78470d6be"
+      "00d7327c-6fde-4c6e-857a-3bc78470d6be",
+      "aa573b34-6962-4e80-bbf8-67688bd8f757"
      ]
     }
    },

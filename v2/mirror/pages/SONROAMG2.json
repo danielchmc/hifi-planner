@@ -13,6 +13,21 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom",
+   "Højtaler type": "Trådløs højtaler",
+   "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect"
+  },
+  "gallery": [
+   "7e1c0100-aa15-44a6-874d-07861caaee9c",
+   "b9afa737-f0e8-4399-9aaa-ec5503bca1a8",
+   "9e3594fa-96a7-4f57-ba21-48ad4c9d93bc",
+   "53f10bb0-967d-4841-ad31-bd94e0dd046d",
+   "5171d577-fb65-4b31-8bac-33d25081c07d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 230361,
   "skuCode": "SONROAMG2",
@@ -216,7 +231,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 466,
+     "availableQuantity": 456,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -348,7 +363,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 275,
+     "availableQuantity": 256,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -481,7 +496,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 382,
+     "availableQuantity": 365,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -665,62 +680,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONOS Roam 2 roses bredt for varm, klar og overraskende fyldig lyd fra en kompakt, transportabel højttaler, især i forhold til størrelsen. Nem Sonos-integration, Bluetooth, udendørs anvendelse og enkel opsætning gør højttaleren alsidig til rejser, forskellige rum og baggrundsmusik. Batteritid, forbindelsesproblemer, manglende tilbehør, begrænset kompatibilitet med ældre S1-systemer og prisen er de største forbehold.",
+   "summary": "SONOS Roam 2 roses bredt for varm, klar og overraskende kraftfuld lyd fra en kompakt og virkelig transportabel højttaler. Den nemme integration med nyere Sonos-systemer, Bluetooth og udendørs brug gør højttaleren alsidig, mens opsætning og betjening generelt er ligetil. Batteritid, Bluetooth- og netværksfunktion, stemmeassistenter, kompatibilitet med ældre S1-enheder og den manglende oplader får gentagen kritik, og nogle synes, at bassen eller lyden generelt er mindre imponerende end forventet.",
    "headlines": {
-    "surprisingly rich sound for the size": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en uventet fyldig, klar og kraftfuld lyd fra så lille en højttaler.",
-     "simpleTitle": "Overraskende fyldig lyd i forhold til størrelsen",
+    "surprisingly rich sound for a small speaker": {
+     "sentimentAnalysis": "Det kompakte kabinet leverer klar, kraftfuld og overraskende fyldig lyd, som overgår forventningerne til størrelsen.",
+     "simpleTitle": "Overraskende fyldig lyd fra en lille højttaler",
      "bias": "positive",
      "key": "sound",
-     "groupId": "b59da8f3-360d-4e49-9cc3-c140f55205ee"
+     "groupId": "5c3c80fd-09f4-4040-a254-96659c1b1475"
+    },
+    "works well as a portable indoor and outdoor speaker": {
+     "sentimentAnalysis": "Det lille, lette og vandafvisende design egner sig til rejser, køkkener, haver, badeværelser og mange andre fleksible lyttesituationer.",
+     "simpleTitle": "Fungerer godt som transportabel højttaler inde og ude",
+     "bias": "positive",
+     "key": "portability",
+     "groupId": "de6852d8-fde1-4dd7-a37b-6af247ac2cf3"
     },
     "easy Sonos integration and setup": {
-     "sentimentAnalysis": "Mange ejere oplever enkel opsætning og stabil sammenkobling med andre Sonos-produkter.",
+     "sentimentAnalysis": "Anmeldelserne beskriver enkel opsætning, pålidelig Bluetooth- eller Wi-Fi-brug og problemfri sammenkobling med andre nyere Sonos-højttalere.",
      "simpleTitle": "Nem Sonos-integration og opsætning",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "99af94d3-b419-4fe6-af21-d04bbe872945"
+     "groupId": "3dd4c276-86f0-4f27-97cf-a0c905d26291"
     },
-    "compact and useful outdoors": {
-     "sentimentAnalysis": "Det lille, mobile og vejrbestandige design værdsættes gentagne gange til rejser, haver og forskellige rum.",
-     "simpleTitle": "Kompakt og praktisk udendørs",
-     "bias": "positive",
-     "key": "portability",
-     "groupId": "db8e7902-913a-4c19-8fe8-acf169d249a8"
-    },
-    "price and accessories feel less generous": {
-     "sentimentAnalysis": "Nogle synes, højttaleren er dyr, og flere kritiserer, at oplader, kabel eller ladestation mangler.",
-     "simpleTitle": "Pris og tilbehør virker mindre generøst",
-     "bias": "negative",
-     "key": "value",
-     "groupId": "923fa6d4-f9ed-411d-8790-1ae591398745"
-    },
-    "connectivity and older-system limits can frustrate": {
-     "sentimentAnalysis": "Flere anmeldelser nævner problemer med Bluetooth eller netværk, lydforsinkelse samt manglende kompatibilitet med S1-enheder eller Google Assistant.",
-     "simpleTitle": "Forbindelsesproblemer og begrænsninger med ældre systemer kan irritere",
+    "connectivity and older-system limitations cause frustration": {
+     "sentimentAnalysis": "Flere anmeldelser nævner besværligt Bluetooth-valg, uklar netværksstatus, udfald eller manglende kompatibilitet med ældre S1-hardware og -software.",
+     "simpleTitle": "Forbindelses- og begrænsninger med ældre systemer skaber frustration",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "99af94d3-b419-4fe6-af21-d04bbe872945"
+     "groupId": "3dd4c276-86f0-4f27-97cf-a0c905d26291"
     },
-    "sound can be thin or underpowered": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever lyden som dåseagtig, basfattig eller utilstrækkeligt kraftfuld ved højere lydstyrke.",
-     "simpleTitle": "Lyden kan virke tynd eller for svag",
+    "bass and overall sound can feel underwhelming": {
+     "sentimentAnalysis": "Nogle lyttere oplever lyden som indelukket eller kun acceptabel, med svag bas og for lidt kraft ved højere lydstyrke eller festbrug.",
+     "simpleTitle": "Bas og samlet lyd kan skuffe",
      "bias": "negative",
      "key": "sound",
-     "groupId": "b59da8f3-360d-4e49-9cc3-c140f55205ee"
+     "groupId": "5c3c80fd-09f4-4040-a254-96659c1b1475"
     },
-    "battery life is a recurring concern": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer trods enkelte positive vurderinger om kort batteritid eller mærkbart forbrug i standby.",
-     "simpleTitle": "Batteritiden giver gentagne bekymringer",
+    "battery life is a recurring weakness": {
+     "sentimentAnalysis": "Brugere rapporterer gentagne gange om hyppig opladning, strømforbrug i standby eller kortere batteritid end ønsket, selv om nogle finder batteritiden acceptabel.",
+     "simpleTitle": "Batteritiden er en tilbagevendende svaghed",
      "bias": "negative",
      "key": "battery",
-     "groupId": "b124f5a2-e979-46f5-af09-90e4f6d84515"
+     "groupId": "3cf6ca16-5f25-4c7f-b4e2-c1b33ed5e006"
     }
    },
    "grouping": {
-    "b59da8f3-360d-4e49-9cc3-c140f55205ee": {
+    "5c3c80fd-09f4-4040-a254-96659c1b1475": {
      "title": "Lydkvalitet",
-     "id": "b59da8f3-360d-4e49-9cc3-c140f55205ee",
+     "id": "5c3c80fd-09f4-4040-a254-96659c1b1475",
      "references": [
       "1738e05b-d6b1-4d13-95c6-b6e445ade6d9",
       "c83f91dd-cfef-4155-841d-f2f34b9c7f1a",
@@ -741,7 +749,7 @@
       "fcf2c80a-c6cc-44ca-b5a5-edee8bf3aaee",
       "5141830d-65b0-45f5-930b-fa3333b5f344",
       "c02b1cdd-98c9-400f-b77f-f230e935ef1b",
-      "d5f22cc3-ec4f-4c68-89cd-a10588b2f5f9",
+      "d5f22cc3-4ecf-4c68-89cd-a10588b2f5f9",
       "4db17e9a-bd3a-499b-baa6-6b2e39a24682",
       "711e20f7-99dd-446f-8a9a-aaeac0f2c92c",
       "871955f7-fd50-4f93-a8af-81d27c995a67",
@@ -749,8 +757,6 @@
       "6895079c-c688-4fa6-afd2-4e1ba8f8b38d",
       "b1809a26-9ef6-4c8a-a371-73c23c4b44aa",
       "f498d4b3-96d0-48d5-a207-6d1e59b66402",
-      "afb9780d-5179-4c2e-9292-dfff0ac91b2d",
-      "cb8faf28-cf11-4421-b2f1-ff55234dbbbf",
       "95c34230-cca3-45d5-83b6-62a1221c88a8",
       "ea58707a-ab84-42a3-afaf-9036ec05a781",
       "8c82046c-2109-424b-b2d1-1241899e3bb0",
@@ -765,51 +771,45 @@
       "96716f8d-8768-42d5-97e6-641f799ea138",
       "c9be0482-1c65-4d79-9b94-a68ead8854c3",
       "f0352de8-482b-425d-ad68-267f3d2cd36d",
-      "e3b54612-029c-4bfc-bdb4-57c0d689e61c",
-      "460dc6e6-46e9-41f9-b0dd-a32393d61176",
+      "d4d4e4a5-632c-40fd-8571-957fad984743",
       "13fa5b5e-2eb9-4977-8adb-c102b9c81ef1",
       "e92ede51-75d1-472b-b6cb-48c1ea82c3c9",
       "f95d2f32-fc3d-4f53-aa5f-0e9f7861f629",
       "1ee3db6c-eab3-49a7-8a7e-e3e13cf89640",
       "40bb716e-1bfd-4f81-b91e-00c741fe0dc8",
-      "14e1f143-b99e-444d-90ec-dac34399bcd6",
-      "d4d4e4a5-632c-40fd-8571-957fad984743"
+      "14e1f143-b99e-444d-90ec-dac34399bcd6"
      ]
     },
-    "99af94d3-b419-4fe6-af21-d04bbe872945": {
-     "title": "Forbindelse og opsætning",
-     "id": "99af94d3-b419-4fe6-af21-d04bbe872945",
+    "3dd4c276-86f0-4f27-97cf-a0c905d26291": {
+     "title": "Forbindelse og Sonos-integration",
+     "id": "3dd4c276-86f0-4f27-97cf-a0c905d26291",
      "references": [
-      "4e392226-1590-4d16-9f40-b78c6368a4ec",
+      "46c6d0b3-c159-424e-9541-8de408ecde8f",
       "8577bd6b-337c-48b2-bb71-2f3e9aef9d76",
       "21a63fb0-8579-4d85-863d-7697b01a1f1c",
+      "0c0ef3d1-ec2a-4daa-9f50-a49972deb295",
       "5141830d-65b0-45f5-930b-fa3333b5f344",
       "99f45435-467b-474d-ac4e-2fcb3c2b0434",
       "c02b1cdd-98c9-400f-b77f-f230e935ef1b",
-      "07341d42-3785-40ad-89ab-2dc980f0d696",
-      "cb8faf28-cf11-4421-b2f1-ff55234dbbbf",
-      "63b083d0-9b79-4eea-9cb7-80985251955f",
       "5c2fc0e6-2ea4-4e1c-af3a-a5dc06bae368",
-      "aff8e566-7700-42ef-b6bc-cf350dc4c16d",
-      "d596c995-a424-4757-b359-14ee3ef27dcf",
-      "d4fa2097-b563-468d-ad4d-c81d1c611433",
       "03a5fa64-0ce5-46e2-a722-fbe6c12de766",
+      "1e41676b-5750-4fef-9876-3d50db8a61d9",
+      "63b083d0-9b79-4eea-9cb7-80985251955f",
+      "aff8e566-7700-42ef-b6bc-cf350dc4c16d",
+      "a3c3e8a0-932a-4634-bc14-d3f56015d767",
+      "d596c995-a424-4757-b359-14ee3ef27dcf",
       "57db6867-8a79-41d0-898a-4a4a72ed1d99",
-      "1ee3db6c-eab3-49a7-8a7e-e3e13cf89640",
-      "5b4ebf51-ebcf-4aa2-9e56-4e93558a6cf2",
+      "8025ee5e-f616-4385-92ca-c7a3e2bb0420",
       "e92ede51-75d1-472b-b6cb-48c1ea82c3c9",
-      "8025ee5f-f616-4385-92ca-c7a3e2bb0420",
-      "afb9780d-5179-4c2e-9292-dfff0ac91b2d",
-      "40bb716e-1bfd-4f81-b91e-00c741fe0dc8",
-      "aed55879-59c1-4039-90fb-ecf90a5aba64"
+      "40bb716e-1bfd-4f81-b91e-00c741fe0dc8"
      ]
     },
-    "db8e7902-913a-4c19-8fe8-acf169d249a8": {
-     "title": "Mobilitet og udendørs brug",
-     "id": "db8e7902-913a-4c19-8fe8-acf169d249a8",
+    "de6852d8-fde1-4dd7-a37b-6af247ac2cf3": {
+     "title": "Bærbarhed",
+     "id": "de6852d8-fde1-4dd7-a37b-6af247ac2cf3",
      "references": [
       "6853c348-b7cd-4d70-80a4-be68e928e301",
-      "f520a85a-e9b3-4e46-a782-c50fd0eb7f33",
+      "be5da6bd-818e-4996-a7dc-e64e9130fce8",
       "fcf2c80a-c6cc-44ca-b5a5-edee8bf3aaee",
       "251672dd-2da1-4846-bae9-85c855a4294a",
       "6895079c-c688-4fa6-afd2-4e1ba8f8b38d",
@@ -818,13 +818,13 @@
       "a3c3e8a0-932a-4634-bc14-d3f56015d767",
       "13fa5b5e-2eb9-4977-8adb-c102b9c81ef1",
       "e92ede51-75d1-472b-b6cb-48c1ea82c3c9",
-      "14e1f143-b99e-444d-90ec-dac34399bcd6",
-      "40bb716e-1bfd-4f81-b91e-00c741fe0dc8"
+      "40bb716e-1bfd-4f81-b91e-00c741fe0dc8",
+      "14e1f143-b99e-444d-90ec-dac34399bcd6"
      ]
     },
-    "b124f5a2-e979-46f5-af09-90e4f6d84515": {
+    "3cf6ca16-5f25-4c7f-b4e2-c1b33ed5e006": {
      "title": "Batteritid og opladning",
-     "id": "b124f5a2-e979-46f5-af09-90e4f6d84515",
+     "id": "3cf6ca16-5f25-4c7f-b4e2-c1b33ed5e006",
      "references": [
       "6853c348-b7cd-4d70-80a4-be68e928e301",
       "f91c54f3-97b5-4314-be20-ff0c84967ad4",
@@ -832,23 +832,9 @@
       "e71ff5f6-bedb-41b3-af06-e2b1ea389638",
       "d4fa2097-b563-468d-ad4d-c81d1c611433",
       "338482c1-0e7e-4acb-8fdc-e1341c5c5333",
-      "8e1ee007-b6fe-481b-b1c5-857222baddee",
       "e3b54612-029c-4bfc-bdb4-57c0d689e61c",
-      "f95d2f32-fc3d-4f53-aa5f-0e9f7861f629"
-     ]
-    },
-    "923fa6d4-f9ed-411d-8790-1ae591398745": {
-     "title": "Pris og medfølgende tilbehør",
-     "id": "923fa6d4-f9ed-411d-8790-1ae591398745",
-     "references": [
-      "f520a85a-e9b3-4e46-a782-c50fd0eb7f33",
-      "beb0cdcd-5650-44b2-969c-c3bc17834d40",
-      "e11c73bf-5fc7-4444-905e-df5ba539f9e2",
-      "99f45435-467b-474d-ac4e-2fcb3c2b0434",
-      "aff8e566-7700-42ef-b6bc-cf350dc4c16d",
-      "3aaa08b3-dc0f-466a-b146-ee7addaafe2b",
-      "0696511c-09c4-450d-82ed-e86312420149",
-      "e3b54612-029c-4bfc-bdb4-57c0d689e61c"
+      "f95d2f32-fc3d-4f53-aa5f-0e9f7861f629",
+      "8e1ee007-b6fe-481b-b1c5-857222baddee"
      ]
     }
    },

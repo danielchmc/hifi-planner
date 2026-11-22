@@ -13,6 +13,16 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "e12c0540-b04f-4404-8fde-93decb9cc5ed",
+   "791368f5-f884-4cad-a406-665fcd173825",
+   "f7b4c27f-bb1f-4b92-8507-e93f96882446",
+   "a427d8ae-5ab5-4821-b45c-a15f86c03040"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 217903,
   "skuCode": "ORT2MRBLU",
@@ -158,41 +168,45 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORT2MRBLU leverer en varm, kraftfuld og medrivende lyd med en tydelig forbedring i forhold til flere eksisterende opsætninger. Det stærke forhold mellem pris og kvalitet samt vellykkede opgraderinger af Rega-pladespillere er gennemgående styrker, understøttet af fremragende montering og butiksservice. Det lidt brede hus er den eneste nævnte ulempe, mens den samlede tilfredshed fortsat er usædvanligt høj.",
+   "summary": "ORT2MRBLU roses bredt for en varm, punchy og medrivende lyd, der giver en tydelig opgradering og fremragende værdi for pengene. Monteringen forløber problemfrit, og den omhyggelige service bidrager til den positive oplevelse. Det lidt brede hus er den eneste nævnte ulempe, mens den samlede vurdering er meget begejstret.",
    "headlines": {
-    "excellent value for money": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer pickuppen som et særdeles godt køb i forhold til prisen.",
-     "simpleTitle": "Fremragende pris for kvalitet",
+    "excellent value at the price": {
+     "sentimentAnalysis": "Pickuppen vurderes gentagne gange som et rigtig godt køb til prisen.",
+     "simpleTitle": "Fremragende værdi til prisen",
      "bias": "positive",
-     "key": "value",
-     "groupId": "8e1322ce-889c-4efd-b9be-9ae0525ba6b8"
+     "key": "value-for-money",
+     "groupId": "af423f91-65ca-418b-babe-8ce8e7ba31e5"
     },
-    "clear improvement in sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydeligt forbedret og tilfredsstillende lyd med fremragende kvalitet.",
-     "simpleTitle": "Tydelig forbedring af lyden",
+    "clear, enjoyable sound improvement": {
+     "sentimentAnalysis": "Anmeldelserne beskriver fremragende, behagelig lyd og en tydeligt hørbar forbedring.",
+     "simpleTitle": "Tydelig og fornøjelig lydforbedring",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "fe6616d2-8a38-46fa-b0d9-4b839e717676"
+     "groupId": "82792ff5-08c0-43a5-9d64-0385b9f48cce"
     },
-    "effective Rega upgrade": {
-     "sentimentAnalysis": "Pickuppen roses som en stærk opgradering til Rega-pladespillere.",
-     "simpleTitle": "Effektiv Rega-opgradering",
-     "bias": "positive",
-     "key": "turntable-upgrade",
-     "groupId": "a7ec864a-9850-4db1-ab58-7fdcfd258e12"
-    },
-    "careful, successful installation": {
-     "sentimentAnalysis": "Monteringen og installationen i butikken beskrives som problemfri, omhyggelig og meget tilfredsstillende.",
-     "simpleTitle": "Omhyggelig og vellykket montering",
+    "smooth installation with attentive service": {
+     "sentimentAnalysis": "Montering og installation i butikken beskrives som problemfri og omhyggeligt udført.",
+     "simpleTitle": "Problemfri montering med omhyggelig service",
      "bias": "positive",
      "key": "installation-service",
-     "groupId": "6d05b0b2-c9ef-45af-b8ab-861cb229c062"
+     "groupId": "4b49d28e-44f5-4e44-85c1-9ec075ce16d9"
     }
    },
    "grouping": {
-    "fe6616d2-8a38-46fa-b0d9-4b839e717676": {
+    "af423f91-65ca-418b-babe-8ce8e7ba31e5": {
+     "title": "Værdi for pengene",
+     "id": "af423f91-65ca-418b-babe-8ce8e7ba31e5",
+     "references": [
+      "4e5319e5-9951-444d-92c2-0f66a5aa8e72",
+      "40fb824e-3118-43e2-89af-004ead318c84",
+      "b12c6cc5-bae7-4156-8596-b61c3c14ca4b",
+      "ed27894f-89a5-4d4f-b1e6-6926e4d146a0",
+      "d7eb8a45-e771-4af6-bfcf-5524e2547f53"
+     ]
+    },
+    "82792ff5-08c0-43a5-9d64-0385b9f48cce": {
      "title": "Lydkvalitet",
-     "id": "fe6616d2-8a38-46fa-b0d9-4b839e717676",
+     "id": "82792ff5-08c0-43a5-9d64-0385b9f48cce",
      "references": [
       "4e5319e5-9951-444d-92c2-0f66a5aa8e72",
       "40fb824e-3118-43e2-89af-004ead318c84",
@@ -200,27 +214,9 @@
       "02b309b9-f70f-4d60-817d-c9e0eac90642"
      ]
     },
-    "8e1322ce-889c-4efd-b9be-9ae0525ba6b8": {
-     "title": "Pris for kvalitet",
-     "id": "8e1322ce-889c-4efd-b9be-9ae0525ba6b8",
-     "references": [
-      "40fb824e-3118-43e2-89af-004ead318c84",
-      "b12c6cc5-bae7-4156-8596-b61c3c14ca4b",
-      "ed27894f-89a5-4d4f-b1e6-6926e4d146a0",
-      "d7eb8a45-e771-4af6-bfcf-5524e2547f53"
-     ]
-    },
-    "a7ec864a-9850-4db1-ab58-7fdcfd258e12": {
-     "title": "Opgradering af pladespiller",
-     "id": "a7ec864a-9850-4db1-ab58-7fdcfd258e12",
-     "references": [
-      "d3d12cee-71bc-47c7-9764-2c5c8c22e6b8",
-      "de2885ed-53dc-4f65-8fba-0638af6e884a"
-     ]
-    },
-    "6d05b0b2-c9ef-45af-b8ab-861cb229c062": {
+    "4b49d28e-44f5-4e44-85c1-9ec075ce16d9": {
      "title": "Montering og service",
-     "id": "6d05b0b2-c9ef-45af-b8ab-861cb229c062",
+     "id": "4b49d28e-44f5-4e44-85c1-9ec075ce16d9",
      "references": [
       "e34dd64f-3b5b-47fe-9b4b-a0f48246a19f",
       "d7eb8a45-e771-4af6-bfcf-5524e2547f53"

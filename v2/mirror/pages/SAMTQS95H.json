@@ -18,6 +18,28 @@
    "url": "/tv/tv/oled/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.3",
+   "Total HDMI Inputs": "4x",
+   "HDMI": "2.1",
+   "HDMI 2.1 funktioner": "Variable Refresh Rate, Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120)",
+   "HDMI ARC/eARC": "eARC",
+   "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+   "Fra beskrivelsen": "HDMI 2.1 på alle indgange (VRR, ALLM, eARC, HFR) · HDMI-CEC (Anynet +)"
+  },
+  "gallery": [
+   "499e58c2-ebb2-47c7-9631-6e0801ce64ef",
+   "7b48c845-dd5c-4dee-86d3-094d9e53929c",
+   "f6411d5f-dc9e-4790-bb4f-c12d1158a841",
+   "7fb8a884-9ead-49f9-b5ae-e24757a95da0",
+   "9944ca30-e83b-4ca5-9052-1586fa71aa78",
+   "6c74999c-a5d5-4f2b-8a88-d0d62968e6fe",
+   "fd4e0f56-bcd6-40be-b42d-a51d11b45462"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 285196,
   "skuCode": "SAMTQS95H",
@@ -327,7 +349,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 18,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -392,7 +414,7 @@
     "productCode": "SAMTQ55S95H",
     "ean": "8806099143923",
     "priceDetails": {
-     "priceValueId": 1217644,
+     "priceValueId": 1219511,
      "price": 12666,
      "priceFormatted": "12.666,-",
      "priceBefore": 19999,
@@ -623,11 +645,11 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 2-3 hverdage",
+     "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "availableQuantity": 86,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {
@@ -666,7 +688,7 @@
     },
     "url": "/samsung-s95h-oled-tv/samtq55s95h/",
     "canonicalUrl": "/samsung-s95h-oled-tv/samtq55s95h/",
-    "lowestShippingPriceRaw": 499,
+    "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
       "VOGTVM5705",
@@ -978,7 +1000,6 @@
     },
     "url": "/samsung-s95h-oled-tv/samtq65s95h/",
     "canonicalUrl": "/samsung-s95h-oled-tv/samtq65s95h/",
-    "lowestShippingPriceRaw": 399,
     "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
@@ -1276,7 +1297,6 @@
     },
     "url": "/samsung-s95h-oled-tv/samtq77s95h/",
     "canonicalUrl": "/samsung-s95h-oled-tv/samtq77s95h/",
-    "lowestShippingPriceRaw": 399,
     "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
@@ -1315,34 +1335,34 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette er et fremragende fjernsyn med knivskarpe, naturlige billeder, flotte farver, dyb sort og en bred betragtningsvinkel. Det slanke, moderne design ser fantastisk ud på væggen og giver rummet et elegant udtryk. Billedoplevelsen er imponerende og medrivende, selv om den indbyggede lyd og systemoplevelsen kan kræve lidt ekstra opmærksomhed.",
+   "summary": "SAMTQS95H leverer en imponerende, knivskarp billedkvalitet med fyldige naturlige farver, dyb sort, høj lysstyrke og brede betragtningsvinkler. Det slanke, moderne design ser fremragende ud på væggen og understreger premium-indtrykket. Lydkvaliteten og TV-systemet er tydelige svagheder, mens omhyggelig kalibrering anbefales for det bedste resultat.",
    "headlines": {
-    "sharp, impressive picture quality": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent det særdeles skarpe billede af høj kvalitet.",
-     "simpleTitle": "Skarp og imponerende billedkvalitet",
+    "exceptional, sharp picture quality": {
+     "sentimentAnalysis": "Anmelderne roser konsekvent billedet for at være fremragende skarpt og imponerende.",
+     "simpleTitle": "Fremragende, skarp billedkvalitet",
      "bias": "positive",
      "key": "picture-quality",
-     "groupId": "053a7630-1910-42bb-8c57-1f93ad1e16db"
+     "groupId": "d79c2383-6daa-41da-b647-b2f82ca419a2"
     },
-    "natural colors and wide viewing angle": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver naturtro farver og gode billeder fra forskellige vinkler.",
-     "simpleTitle": "Naturlige farver og bred betragtningsvinkel",
+    "rich colours and wide viewing angles": {
+     "sentimentAnalysis": "Billedet roses for naturlige, levende farver og gode betragtningsvinkler.",
+     "simpleTitle": "Fyldige farver og brede betragtningsvinkler",
      "bias": "positive",
-     "key": "picture-quality",
-     "groupId": "053a7630-1910-42bb-8c57-1f93ad1e16db"
+     "key": "picture-colour-viewing",
+     "groupId": "d79c2383-6daa-41da-b647-b2f82ca419a2"
     },
     "slim, modern wall-friendly design": {
-     "sentimentAnalysis": "Det slanke og moderne udseende roses især til vægmontering.",
+     "sentimentAnalysis": "Det slanke, moderne udseende vurderes som særligt attraktivt ved vægmontering.",
      "simpleTitle": "Slankt, moderne design til vægmontering",
      "bias": "positive",
      "key": "design",
-     "groupId": "facb9e2e-d8f9-4433-999b-65fc98916df3"
+     "groupId": "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed"
     }
    },
    "grouping": {
-    "053a7630-1910-42bb-8c57-1f93ad1e16db": {
+    "d79c2383-6daa-41da-b647-b2f82ca419a2": {
      "title": "Billedkvalitet",
-     "id": "053a7630-1910-42bb-8c57-1f93ad1e16db",
+     "id": "d79c2383-6daa-41da-b647-b2f82ca419a2",
      "references": [
       "707b3eee-1640-4cd7-82b1-b4ac03f9d986",
       "ae65764e-9ead-4ef3-b6a3-ad570640d803",
@@ -1350,9 +1370,9 @@
       "9683035c-c5e8-46c5-a1bc-95bbcc83b71f"
      ]
     },
-    "facb9e2e-d8f9-4433-999b-65fc98916df3": {
+    "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed": {
      "title": "Design",
-     "id": "facb9e2e-d8f9-4433-999b-65fc98916df3",
+     "id": "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed",
      "references": [
       "707b3eee-1640-4cd7-82b1-b4ac03f9d986",
       "ae65764e-9ead-4ef3-b6a3-ad570640d803"

@@ -13,6 +13,19 @@
    "url": "/pladespiller/riaa-forstaerker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Indgangsimpedans": "100 ohm/180pF (MC), 47kOhm/200pF (MM)",
+   "Indgange": "Analog RCA",
+   "Udgange": "Analog RCA",
+   "Fra beskrivelsen": "Passer til MM- og MC-pickupper (low/high-output)"
+  },
+  "gallery": [
+   "daab1a4f-5d1f-48d7-bf61-28d6a463a873",
+   "6a3281cc-8cd5-44b2-9082-3d67df3a5b14"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 1429,
   "skuCode": "NADPP2E",
@@ -177,8 +190,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
-     "availableQuantity": 52,
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 49,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -218,51 +231,52 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD PP2e leverer en varm, klar og engagerende vinyllyd til en attraktiv pris og er enkel at bruge. Phonotrinnet fungerer godt med både MM- og MC-pickupper, forbedrer mange eksisterende anlæg og giver vinylafspilningen mere dynamik og nærvær. Automatisk standby og lejlighedsvis baggrundsstøj er de største ulemper, mens det kompakte design og den nemme installation tæller positivt.",
+   "summary": "NAD PP2e er en effektiv og brugervenlig phono-forforstærker, som giver varm, klar, dynamisk og medrivende lyd i vinylanlæg. Den enkle plug-and-play-opsætning, den brede MM/MC-kompatibilitet og den gode værdi gør den til en klar anbefaling for de fleste pladespillerejere. Enkelte anmeldelser nævner lidt baggrundsstøj og frustration over den faste automatiske standby-funktion, men helhedsindtrykket er meget positivt.",
    "headlines": {
-    "clear, warm and engaging vinyl sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, varm, åben, dynamisk og behagelig til vinyllytning.",
-     "simpleTitle": "Klar, varm og engagerende vinyllyd",
+    "warm, clear and dynamic vinyl sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den åbne, klare, varme og dynamiske gengivelse samt den forbedrede lyd fra vinylplader.",
+     "simpleTitle": "Varm, klar og dynamisk vinyllyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "15b44785-5e07-461c-a7ed-34a2ad180456"
+     "key": "sound",
+     "groupId": "5f24721f-e449-4976-a8d6-13fae5e8d047"
     },
-    "a noticeable upgrade to existing systems": {
-     "sentimentAnalysis": "Phonotrinnet roses for at gøre ældre eller indbyggede phonoløsninger mere dynamiske og bedre.",
-     "simpleTitle": "En mærkbar opgradering af eksisterende anlæg",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "15b44785-5e07-461c-a7ed-34a2ad180456"
-    },
-    "some background noise is audible": {
-     "sentimentAnalysis": "To anmeldelser nævner svag baggrundsstøj, især ved højere lydstyrke eller uden afspilning.",
-     "simpleTitle": "Der kan høres baggrundsstøj",
+    "some audible background noise": {
+     "sentimentAnalysis": "Flere anmeldelser nævner svag baggrundsstøj, især ved højere lydstyrke eller i stille passager.",
+     "simpleTitle": "Nogen hørbar baggrundsstøj",
      "bias": "negative",
      "key": "noise",
-     "groupId": "a8e42f12-6b20-4675-a12c-48d0a185334d"
+     "groupId": "aea88e64-a4d3-448a-827b-53a4612f1ca9"
     },
     "automatic standby cannot be disabled": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer den obligatoriske automatiske standby og efterlyser en fysisk afbryder eller mulighed for at slå funktionen fra.",
+     "sentimentAnalysis": "Anmeldelserne kritiserer den faste automatiske standby-funktion, herunder langsom aktivering og et hørbart plop ved tænding.",
      "simpleTitle": "Automatisk standby kan ikke deaktiveres",
      "bias": "negative",
      "key": "standby",
-     "groupId": "a7ee6c06-9e11-4678-ae94-aad2ea16b1e8"
+     "groupId": "3df27ac0-ea3c-4981-acca-34278875f2fb"
     },
     "supports both MM and MC cartridges": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter muligheden for at bruge både almindelige MM- og mere krævende MC-pickupper samt den enkle skift mellem indstillingerne.",
+     "sentimentAnalysis": "Anmeldelserne værdsætter muligheden for at skifte mellem almindelige MM- og dyrere MC-pickupper.",
      "simpleTitle": "Understøtter både MM- og MC-pickupper",
      "bias": "positive",
-     "key": "cartridge-compatibility",
-     "groupId": "ca0fdbf8-868e-47b5-8f25-f3cb7db90898"
+     "key": "compatibility",
+     "groupId": "e1e3e75c-6d29-48ee-b82b-958a23f58cf5"
+    },
+    "simple plug-and-play installation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver opsætningen som enkel og begrænset til at tilslutte kabler og strøm.",
+     "simpleTitle": "Enkel plug-and-play-opsætning",
+     "bias": "positive",
+     "key": "setup",
+     "groupId": "9f0b3e7d-60ac-425f-a574-a3f391b0796c"
     }
    },
    "grouping": {
-    "15b44785-5e07-461c-a7ed-34a2ad180456": {
+    "5f24721f-e449-4976-a8d6-13fae5e8d047": {
      "title": "Lydkvalitet",
-     "id": "15b44785-5e07-461c-a7ed-34a2ad180456",
+     "id": "5f24721f-e449-4976-a8d6-13fae5e8d047",
      "references": [
       "2ea1c23d-a611-46d6-af23-4d67f8c87cdf",
       "4cb2cf05-1b98-462a-a443-769484436e8b",
+      "aa5a6efc-e8f4-4cf7-a993-7197e4e54912",
       "467df7f4-95fe-4a10-ace3-bc6b6b0b9fd4",
       "db9ac634-e2bc-4931-b2cd-7de6a3396c0a",
       "2a437f4d-fab9-4af2-82d5-ebad6506106c",
@@ -274,49 +288,58 @@
       "d8ee99d0-36ef-41fe-bd71-fec646012ad1",
       "18d8b208-6227-47c1-a4bb-94786dcab01a",
       "b0e82093-4b38-443c-899d-84dacbf86a3d",
-      "511fbf6b-eb8d-495a-b8bd-98cd99870b8d",
+      "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
       "01704ffc-5bbc-45cb-a9fb-56d2df7b5e90",
       "35193bd0-c513-4e69-88b7-1878738d9007"
      ]
     },
-    "a7ee6c06-9e11-4678-ae94-aad2ea16b1e8": {
-     "title": "Automatisk standby",
-     "id": "a7ee6c06-9e11-4678-ae94-aad2ea16b1e8",
+    "3df27ac0-ea3c-4981-acca-34278875f2fb": {
+     "title": "Standby og strøm",
+     "id": "3df27ac0-ea3c-4981-acca-34278875f2fb",
      "references": [
       "c9604bcb-c154-45ae-85bc-e2a2d2597029",
       "d8ee99d0-36ef-41fe-bd71-fec646012ad1",
-      "511fbf6b-eb8d-495a-b8bd-98cd99870b8d",
+      "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
       "01704ffc-5bbc-45cb-a9fb-56d2df7b5e90"
      ]
     },
-    "a8e42f12-6b20-4675-a12c-48d0a185334d": {
+    "e1e3e75c-6d29-48ee-b82b-958a23f58cf5": {
+     "title": "MM/MC-kompatibilitet",
+     "id": "e1e3e75c-6d29-48ee-b82b-958a23f58cf5",
+     "references": [
+      "721fc112-53c9-4cd6-a307-b8b62d30a7de",
+      "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
+      "5ec5c8aa-71f8-4ff6-9533-86b43b4d8524"
+     ]
+    },
+    "aea88e64-a4d3-448a-827b-53a4612f1ca9": {
      "title": "Baggrundsstøj",
-     "id": "a8e42f12-6b20-4675-a12c-48d0a185334d",
+     "id": "aea88e64-a4d3-448a-827b-53a4612f1ca9",
      "references": [
       "467df7f4-95fe-4a10-ace3-bc6b6b0b9fd4",
       "547783e9-c510-4075-93ca-882cd3203d9d",
       "b0e82093-4b38-443c-899d-84dacbf86a3d"
      ]
     },
-    "ca0fdbf8-868e-47b5-8f25-f3cb7db90898": {
-     "title": "Pickup-kompatibilitet",
-     "id": "ca0fdbf8-868e-47b5-8f25-f3cb7db90898",
+    "9f0b3e7d-60ac-425f-a574-a3f391b0796c": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "9f0b3e7d-60ac-425f-a574-a3f391b0796c",
      "references": [
-      "721fc112-53c9-4cd6-a307-b8b62d30a7de",
-      "511fbf6b-eb8d-495a-b8bd-98cd99870b8d",
-      "5ec5c8aa-71f8-4ff6-9533-86b43b4d8524"
+      "546a8973-866c-4497-817a-f609d2c77d5a",
+      "c64418cd-428e-4d85-84bb-607f711eaec5",
+      "35193bd0-c513-4e69-88b7-1878738d9007"
      ]
     }
    },
-   "rating": 4.66666666666667,
-   "count": 57,
-   "reviewCount": 34,
+   "rating": 4.67241379310345,
+   "count": 58,
+   "reviewCount": 35,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 6,
     "4": 7,
-    "5": 44
+    "5": 45
    }
   },
   "brandName": "NAD",

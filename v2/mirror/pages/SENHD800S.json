@@ -13,6 +13,18 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Fra beskrivelsen": "Tilslutning : Forgyldt 6,35 mm jack / 4,4 mm stereo balanceret jack / XLR* · Højpræcisions ODU-tilslutninger på ørekopper · *Balanceret XLR-kabel fås som ekstratilbehør"
+  },
+  "gallery": [
+   "f05bcda4-8451-49fe-9b62-eb419d8b3417",
+   "fa9ef887-ab10-4783-be73-555a97ec322e",
+   "852e4ce4-cbd8-4919-ba75-356276bebbc0"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 47835,
   "skuCode": "SENHD800S",
@@ -20,9 +32,9 @@
   "brandPage": "/marker/sennheiser/",
   "recommendedProducts": {
    "productCodes": [
-    "SENHDV820",
     "LUXX8",
-    "LUXX9"
+    "LUXX9",
+    "SENHDV820"
    ],
    "isOutlet": "false"
   },
@@ -42,11 +54,11 @@
     "AUDLCDX",
     "AUDLCD2CLASSIC",
     "AUDMM500",
-    "AUDLCD3X",
     "SENHD660S2",
     "AUDLCD5",
     "BEYT1V3",
-    "BEYT5V3"
+    "BEYT5V3",
+    "AUDLCD3X"
    ],
    "isOutlet": "false"
   },
@@ -171,7 +183,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 73,
+     "availableQuantity": 72,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -280,48 +292,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHD800S leverer en meget detaljeret, klar og medrivende gengivelse med et enormt, præcist lydbillede og fremragende instrumentadskillelse. Komforten ved lange lyttesessioner er fremragende, mens det åbne design skaber en luftig og naturlig oplevelse uden skarp diskant for de fleste lyttere. Bassen kan virke tilbageholdende for lyttere, der ønsker kraftigt punch, og hovedtelefonerne fungerer bedst med en kapabel forstærker og kilde.",
+   "summary": "SENHD800S roses bredt for en usædvanligt detaljeret, klar og naturlig lyd med et enormt, medrivende lydbillede og præcis placering af instrumenterne. Det åbne design og den behagelige pasform gør lange lytte-sessioner komfortable, mens den afdæmpede bas er den væsentligste indvending for lyttere, der ønsker kraftigt tryk. Med en god forstærker og kilde leverer hovedtelefonerne en varm, rummelig lyd på referenceklasse-niveau.",
    "headlines": {
-    "highly detailed and precise sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den fremragende opløsning, klarhed og evne til at gengive fine musikalske detaljer og adskille instrumenterne.",
-     "simpleTitle": "Meget detaljeret og præcis lyd",
+    "exceptional detail and clarity": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den fine detaljegengivelse samt den klare og veldefinerede diskant og mellemtone.",
+     "simpleTitle": "Exceptionel detaljering og klarhed",
      "bias": "positive",
-     "key": "detail",
-     "groupId": "edffe214-1690-483b-8508-8c0556a89917"
+     "key": "sound_quality",
+     "groupId": "12195fbd-5f5d-4435-8d61-42ebfb0f80c5"
     },
-    "huge, spacious soundstage": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som usædvanligt åben, rummelig og medrivende med overbevisende instrumentplacering.",
-     "simpleTitle": "Enormt og rummeligt lydbillede",
+    "huge, immersive soundstage": {
+     "sentimentAnalysis": "Den åbne gengivelse beskrives gentagne gange som rummelig, naturlig og medrivende med overbevisende instrumentplacering.",
+     "simpleTitle": "Enormt, medrivende lydbillede",
      "bias": "positive",
      "key": "soundstage",
-     "groupId": "edffe214-1690-483b-8508-8c0556a89917"
+     "groupId": "c44755d0-89c9-4158-8829-afccf704e42e"
+    },
+    "natural, full and warm presentation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en behagelig og ufarvet gengivelse, der med passende forstærkning kan blive varm og fyldig.",
+     "simpleTitle": "Naturlig, fyldig og varm gengivelse",
+     "bias": "positive",
+     "key": "sound_quality",
+     "groupId": "12195fbd-5f5d-4435-8d61-42ebfb0f80c5"
     },
     "comfortable for hours": {
-     "sentimentAnalysis": "Begge komfortanmeldelser beskriver timevis af behagelig lytning uden irritation, også med briller.",
+     "sentimentAnalysis": "Pasformen roses som behagelig og uden irritation ved lang tids lytning, også med briller.",
      "simpleTitle": "Komfortable i timevis",
      "bias": "positive",
-     "key": "long-session-comfort",
-     "groupId": "43402330-e6df-4a45-9a49-40770e243b8e"
+     "key": "comfort",
+     "groupId": "5060ec0d-228b-470c-b940-0f8af0a30063"
     },
-    "open design creates an airy presentation": {
-     "sentimentAnalysis": "Den åbne konstruktion roses for at fjerne resonans fra lukkede hovedtelefoner og understøtte en rummelig, naturlig gengivelse.",
-     "simpleTitle": "Det åbne design skaber en luftig gengivelse",
-     "bias": "positive",
-     "key": "airy-open-sound",
-     "groupId": "50043972-cef9-4472-b9b4-1624dc290b73"
-    },
-    "bass lacks impact for some listeners": {
-     "sentimentAnalysis": "Bassen er det vigtigste forbehold: En anmeldelse kalder basområdet tilbageholdende, mens en anden tilføjer bas med EQ for et fyldigere resultat.",
-     "simpleTitle": "Bassen mangler pondus for nogle lyttere",
+    "bass may feel too restrained": {
+     "sentimentAnalysis": "Nogle anmeldelser bemærker begrænset basvægt og foreslår equalizer, hvis der ønskes mere punch.",
+     "simpleTitle": "Bassen kan virke for afdæmpet",
      "bias": "negative",
-     "key": "restrained-bass",
-     "groupId": "fbe6c9aa-3863-42cc-8296-cf155da59f19"
+     "key": "sound_quality",
+     "groupId": "12195fbd-5f5d-4435-8d61-42ebfb0f80c5"
     }
    },
    "grouping": {
-    "edffe214-1690-483b-8508-8c0556a89917": {
+    "12195fbd-5f5d-4435-8d61-42ebfb0f80c5": {
      "title": "Lydkvalitet",
-     "id": "edffe214-1690-483b-8508-8c0556a89917",
+     "id": "12195fbd-5f5d-4435-8d61-42ebfb0f80c5",
      "references": [
       "3ea7bf54-2f97-494d-bcc9-e05a48afc3ac",
       "a59a7a2b-701e-4855-9dfa-9a6f0924db76",
@@ -341,29 +353,25 @@
       "f5a526aa-abf3-4c65-b5b9-924d8d221f2e"
      ]
     },
-    "fbe6c9aa-3863-42cc-8296-cf155da59f19": {
-     "title": "Basgengivelse",
-     "id": "fbe6c9aa-3863-42cc-8296-cf155da59f19",
+    "c44755d0-89c9-4158-8829-afccf704e42e": {
+     "title": "Lydbillede",
+     "id": "c44755d0-89c9-4158-8829-afccf704e42e",
      "references": [
-      "8af24c71-ff5a-46cc-bc14-52188d4f7d2c",
+      "3ea7bf54-2f97-494d-bcc9-e05a48afc3ac",
+      "81d3e72e-4e37-4e4f-b57a-17de96cd897c",
       "a6aa9845-8bcc-40fd-99c2-7b1db30e5459",
-      "84c3622c-20c4-4a2d-b93f-fd4ddfcbc946"
+      "adcf6045-a995-4931-bf61-df52c32fd4d7",
+      "84c3622c-20c4-4a2d-b93f-fd4ddfcbc946",
+      "a6fe649e-e0e6-4fc6-b35a-d5c917b76d00",
+      "f5a526aa-abf3-4c65-b5b9-924d8d221f2e"
      ]
     },
-    "43402330-e6df-4a45-9a49-40770e243b8e": {
+    "5060ec0d-228b-470c-b940-0f8af0a30063": {
      "title": "Komfort",
-     "id": "43402330-e6df-4a45-9a49-40770e243b8e",
+     "id": "5060ec0d-228b-470c-b940-0f8af0a30063",
      "references": [
       "df2d75c1-6d93-4bc3-ad79-52a535f48388",
       "adcf6045-a995-4931-bf61-df52c32fd4d7"
-     ]
-    },
-    "50043972-cef9-4472-b9b4-1624dc290b73": {
-     "title": "Åbent design",
-     "id": "50043972-cef9-4472-b9b4-1624dc290b73",
-     "references": [
-      "8af24c71-ff5a-46cc-bc14-52188d4f7d2c",
-      "a6aa9845-8bcc-40fd-99c2-7b1db30e5459"
      ]
     }
    },

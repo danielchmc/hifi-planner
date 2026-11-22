@@ -13,6 +13,11 @@
    "url": "/tilbehor/mobler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 255335,
   "skuCode": "240-FURNITURE-SYSTEM",
@@ -172,7 +177,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 78,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "14.999,-",
@@ -781,7 +786,7 @@
    "inventoryStatus": {
     "description": "Forventet leveringstid 3-8 uger",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 17
+    "numberOfStoresExperiencePartly": 18
    }
   },
   "variantNavigationType": "dropDown",

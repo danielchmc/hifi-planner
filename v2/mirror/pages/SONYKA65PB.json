@@ -18,6 +18,22 @@
    "url": "/tv/tv/oled/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Fire HDMI 2.1-porte · 4K ved 120 fps via HDMI"
+  },
+  "gallery": [
+   "a5af9c2f-cd44-42d5-a77b-f8a9b295477e",
+   "aa35b259-248c-4bf7-9c12-630760a79b15",
+   "4d9c0bf4-c5f9-4b0a-bd74-aae50a0e4591",
+   "f833daf2-a080-405f-8fbf-0d57a30f5fe2",
+   "d0ae7fb0-77a7-4135-a076-85539ad95f95",
+   "4680344f-0328-4c30-a1cb-501df52b5664",
+   "218f3573-9d05-429a-8c39-d0d84ab3c2cb",
+   "998b6b7f-f0c3-479d-a6c8-d97591b0fdf5"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 293034,
   "skuCode": "SONYKA65PB",
@@ -136,12 +152,11 @@
      "productCode": "SONYK48A65PB"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 8,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -449,7 +464,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 6,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -493,7 +508,6 @@
     },
     "url": "/sony-bravia-6-oled-tv/sonyk65a65pb/",
     "canonicalUrl": "/sony-bravia-6-oled-tv/sonyk65a65pb/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -605,7 +619,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 4,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -649,7 +663,6 @@
     },
     "url": "/sony-bravia-6-oled-tv/sonyk77a65pb/",
     "canonicalUrl": "/sony-bravia-6-oled-tv/sonyk77a65pb/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -757,11 +770,11 @@
      "productCode": "SONYK83A65PB"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 20. november",
-     "deliveryDate": "2026-11-20T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -804,7 +817,6 @@
     },
     "url": "/sony-bravia-6-oled-tv/sonyk83a65pb/",
     "canonicalUrl": "/sony-bravia-6-oled-tv/sonyk83a65pb/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",

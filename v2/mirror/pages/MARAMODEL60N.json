@@ -13,6 +13,29 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "1",
+   "HDMI udgange": "0",
+   "Lydudgang": "Subwoofer-out, Pre-out",
+   "Lydindgang": "HDMI, Coaxial, Optisk, Analog RCA, USB A",
+   "Indgang (andet)": "Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang",
+   "Udgangseffekt 4 ohm": "80 watt",
+   "Udgangseffekt 8 ohm": "60 watt",
+   "Fra beskrivelsen": "Dedikeret MM-pladespillerindgang · Justering af delefrekvens på subwoofer-udgang (Bass Management), 40/60/80/100/120Hz · Høretelefon-udgang på front (6,3 mm, HDAM SA-2)"
+  },
+  "gallery": [
+   "44d769f1-90af-48bf-88a6-50d632a45234",
+   "05826f13-e90a-4692-acfe-ebecde918f51",
+   "d1327293-b1b1-4c45-a64a-a486f98b4066",
+   "8355ac60-3308-4abb-a83e-7024ac00e67e",
+   "b9b5485c-7d7d-45f7-b8f1-5587e947252d",
+   "d455f276-0988-44cb-b300-12aec6feb230"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 238576,
   "skuCode": "MARAMODEL60N",
@@ -352,12 +375,11 @@
      "productCode": "MARAMODEL60NSI"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 22. december",
+     "deliveryDate": "2026-12-22T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -468,55 +490,62 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marantz 60N får stor ros for en varm, afbalanceret, detaljeret og kraftfuld lyd med særligt stærk gengivelse af musik og TV-lyd. De mange tilslutningsmuligheder og problemfri streaming via HEOS, Tidal, Spotify, HDMI-ARC, Bluetooth, Wi-Fi og phono gør forstærkeren meget alsidig. Det elegante design og den generelt enkle betjening fuldender en fremragende pakke, selv om opsætningen kan virke forvirrende, og HEOS-appen samt lydstyrkekontrollen indimellem giver problemer.",
+   "summary": "MARAMODEL60N leverer en varm, dynamisk og meget detaljeret lyd med imponerende klarhed, dybde og rumfornemmelse. Streaming, TV-lyd og de mange tilslutninger gør forstærkeren alsidig i moderne hi-fi-anlæg. Det stilfulde design og den generelt enkle betjening fuldender pakken, selv om opsætning, app-stabilitet og lydstyrkeregulering kræver lidt omtanke.",
    "headlines": {
-    "broad connectivity and reliable streaming": {
-     "sentimentAnalysis": "Understøttelse af Tidal, Spotify, HEOS, HDMI-ARC, Bluetooth, Wi-Fi, USB og phono gør integrationen af kilder fleksibel og pålidelig.",
-     "simpleTitle": "Mange tilslutninger og stabil streaming",
+    "broad, reliable streaming and TV connectivity": {
+     "sentimentAnalysis": "Tidal, HEOS, Spotify Connect og HDMI-ARC beskrives gentagne gange som stabile og bekvemme.",
+     "simpleTitle": "Alsidig og stabil streaming samt TV-tilslutning",
      "bias": "positive",
-     "key": "versatile-streaming",
-     "groupId": "d0ee4b36-0760-4936-9b78-967152515ab9"
-    },
-    "warm, detailed and powerful sound": {
-     "sentimentAnalysis": "En varm, rummelig, afbalanceret og slagkraftig gengivelse leverer tydelige detaljer og stor musikalsk gennemslagskraft.",
-     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
-     "bias": "positive",
-     "key": "warm-detailed-sound",
-     "groupId": "258b7546-93de-42e4-92e6-aa89131f8803"
+     "key": "streaming-tv-connectivity",
+     "groupId": "7a9a014b-81a1-4690-9955-47ee77769dfa"
     },
     "simple everyday operation": {
-     "sentimentAnalysis": "Overskuelige betjeningselementer og nem installation gør den daglige brug behagelig for mange brugere.",
-     "simpleTitle": "Enkel betjening i hverdagen",
+     "sentimentAnalysis": "Flere anmeldelser beskriver forstærkeren som tilgængelig, nem at installere og enkel at betjene.",
+     "simpleTitle": "Enkel daglig betjening",
      "bias": "positive",
      "key": "easy-operation",
-     "groupId": "2ac5aa73-7a18-45b4-88f3-80b53a978866"
+     "groupId": "bf0db5d6-9e50-4a8f-8fd7-dd6d3c3b8921"
     },
-    "crystal-clear and immersive presentation": {
-     "sentimentAnalysis": "Den rene, dybe og medrivende lyd værdsættes især for klarheden og gengivelsen af klassisk musik.",
-     "simpleTitle": "Krystalklar og medrivende gengivelse",
+    "warm, clear and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne roser en varm, afbalanceret og rummelig gengivelse med god dynamik og klarhed.",
+     "simpleTitle": "Varm, klar og rummelig lyd",
      "bias": "positive",
-     "key": "clear-immersive-presentation",
-     "groupId": "258b7546-93de-42e4-92e6-aa89131f8803"
+     "key": "warm-clear-spacious-sound",
+     "groupId": "7978b56e-3d19-499e-84a5-0d64ea871774"
+    },
+    "detailed and immersive musical reproduction": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver tydeligt adskilte instrumenter, dyb gengivelse, nyt liv i højttalerne og især stærk gengivelse af klassisk musik.",
+     "simpleTitle": "Detaljeret og medrivende musikgengivelse",
+     "bias": "positive",
+     "key": "detailed-immersive-reproduction",
+     "groupId": "7978b56e-3d19-499e-84a5-0d64ea871774"
+    },
+    "flexible connections for varied systems": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter kombinationen af digitale og analoge indgange, phono, USB, Bluetooth, HDMI og subwoofer-tilslutning.",
+     "simpleTitle": "Fleksible tilslutninger til forskellige anlæg",
+     "bias": "positive",
+     "key": "flexible-connections",
+     "groupId": "7a9a014b-81a1-4690-9955-47ee77769dfa"
     },
     "stylish, well-finished construction": {
-     "sentimentAnalysis": "Det markante, elegante ydre og den flotte finish giver den kapable forstærker ekstra visuel appel.",
-     "simpleTitle": "Stilfuldt design og flot finish",
+     "sentimentAnalysis": "Anmeldelserne roser det attraktive design, den fine finish og det markante, industrielt inspirerede udtryk.",
+     "simpleTitle": "Stilfuld og veludført konstruktion",
      "bias": "positive",
-     "key": "stylish-construction",
-     "groupId": "125226ea-ea30-4880-bc07-fbee298c876e"
+     "key": "stylish-build",
+     "groupId": "5a0dca91-3040-4cdb-a3c5-cecff751a6a5"
     },
-    "setup and app controls can be frustrating": {
-     "sentimentAnalysis": "Den første kabelføring, netværksopsætningen, HEOS-frysninger og forvirrende lydstyrkekontrol kan besværliggøre betjeningen og medføre pludselige lydstyrkestigninger.",
-     "simpleTitle": "Opsætning og appbetjening kan være frustrerende",
+    "setup and volume control need care": {
+     "sentimentAnalysis": "Nogle anmeldelser advarer om en krævende opsætning og om, at app- eller betjeningsproblemer kan føre til farligt høj lydstyrke.",
+     "simpleTitle": "Opsætning og lydstyrkeregulering kræver omtanke",
      "bias": "negative",
-     "key": "setup-control-issues",
-     "groupId": "2ac5aa73-7a18-45b4-88f3-80b53a978866"
+     "key": "setup-volume-control",
+     "groupId": "bf0db5d6-9e50-4a8f-8fd7-dd6d3c3b8921"
     }
    },
    "grouping": {
-    "258b7546-93de-42e4-92e6-aa89131f8803": {
+    "7978b56e-3d19-499e-84a5-0d64ea871774": {
      "title": "Lydkvalitet",
-     "id": "258b7546-93de-42e4-92e6-aa89131f8803",
+     "id": "7978b56e-3d19-499e-84a5-0d64ea871774",
      "references": [
       "431a8e20-2be4-4b29-bc12-9574b6ddc4e2",
       "23cc7fd3-9504-41af-964a-f2f869cf5c76",
@@ -541,42 +570,44 @@
       "fa2f565a-4e85-4868-bfd4-c1cf9f0b35df"
      ]
     },
-    "2ac5aa73-7a18-45b4-88f3-80b53a978866": {
-     "title": "Betjening og opsætning",
-     "id": "2ac5aa73-7a18-45b4-88f3-80b53a978866",
-     "references": [
-      "431a8e20-2be4-4b29-bc12-9574b6ddc4e2",
-      "23cc7fd3-9504-41af-964a-f2f869cf5c76",
-      "2ad86966-b68b-4b03-912b-23054b88960f",
-      "e8bb2b92-2d56-4b9f-8d0e-f5683f1789d2",
-      "792dbf36-4aab-42c9-9c39-52f74439445e",
-      "c9c77b43-6714-4af3-a9ab-defba7bc9d5c",
-      "133eaf7c-b25c-435c-8616-97c3cd08dde5",
-      "b4aef528-000e-4b92-a92a-7075667a32cf",
-      "fa445063-4716-4fab-ad9d-1c922e79e292",
-      "3a84f013-f688-41b4-aeb2-8929fb72bcea",
-      "f16e038f-ea2a-4fc4-bc92-888730bb5d02"
-     ]
-    },
-    "d0ee4b36-0760-4936-9b78-967152515ab9": {
-     "title": "Tilslutninger og streaming",
-     "id": "d0ee4b36-0760-4936-9b78-967152515ab9",
+    "7a9a014b-81a1-4690-9955-47ee77769dfa": {
+     "title": "Tilslutning og streaming",
+     "id": "7a9a014b-81a1-4690-9955-47ee77769dfa",
      "references": [
       "23cc7fd3-9504-41af-964a-f2f869cf5c76",
+      "59378a96-b6be-4de5-aa72-eafe296ab3b5",
       "2ae3919b-38e5-4c3d-b2de-8cf9e263042a",
       "2ad86966-b68b-4b03-912b-23054b88960f",
       "e8bb2b92-2d56-4b9f-8d0e-f5683f1789d2",
+      "792dbf36-4aab-42c9-9c39-52f74439445e",
+      "34457bea-3d0c-49d9-baa6-21e9ce58f6c8",
       "2893d2eb-f7b0-49d8-870e-293cf35125d1",
       "c9c77b43-6714-4af3-a9ab-defba7bc9d5c",
       "133eaf7c-b25c-435c-8616-97c3cd08dde5",
       "fa445063-4716-4fab-ad9d-1c922e79e292",
       "e00779e6-46af-43eb-8aa1-5f4db74d5699",
+      "f16e038f-ea2a-4fc4-bc92-888730bb5d02",
       "fa2f565a-4e85-4868-bfd4-c1cf9f0b35df"
      ]
     },
-    "125226ea-ea30-4880-bc07-fbee298c876e": {
-     "title": "Design og finish",
-     "id": "125226ea-ea30-4880-bc07-fbee298c876e",
+    "bf0db5d6-9e50-4a8f-8fd7-dd6d3c3b8921": {
+     "title": "Betjening og opsætning",
+     "id": "bf0db5d6-9e50-4a8f-8fd7-dd6d3c3b8921",
+     "references": [
+      "431a8e20-2be4-4b29-bc12-9574b6ddc4e2",
+      "2ad86966-b68b-4b03-912b-23054b88960f",
+      "792dbf36-4aab-42c9-9c39-52f74439445e",
+      "133eaf7c-b25c-435c-8616-97c3cd08dde5",
+      "b4aef528-000e-4b92-a92a-7075667a32cf",
+      "fa445063-4716-4fab-ad9d-1c922e79e292",
+      "f16e038f-ea2a-4fc4-bc92-888730bb5d02",
+      "3a84f013-f688-41b4-aeb2-8929fb72bcea",
+      "fa2f565a-4e85-4868-bfd4-c1cf9f0b35df"
+     ]
+    },
+    "5a0dca91-3040-4cdb-a3c5-cecff751a6a5": {
+     "title": "Design og konstruktion",
+     "id": "5a0dca91-3040-4cdb-a3c5-cecff751a6a5",
      "references": [
       "23cc7fd3-9504-41af-964a-f2f869cf5c76",
       "34457bea-3d0c-49d9-baa6-21e9ce58f6c8",

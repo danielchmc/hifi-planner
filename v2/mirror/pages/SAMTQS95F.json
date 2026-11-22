@@ -18,6 +18,27 @@
    "url": "/tv/tv/oled/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja (5.3)",
+   "HDMI": "2.1",
+   "Antal HDMI 2.1 Indgange": "4x",
+   "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+   "HDMI ARC/eARC": "eARC",
+   "Wi-Fi version": "Wi-Fi 5 (802.11ac)",
+   "HDMI-kabel inkluderet": "Nej",
+   "Fra beskrivelsen": "HDMI 2.1 på alle indgange (VRR, ALLM, eARC, HFR) · HDMI-CEC (Anynet +)"
+  },
+  "gallery": [
+   "de0affb0-fe19-4ed1-b980-31e4b60aa3fc",
+   "d0696a7c-151c-4901-83cd-3a30921b795f",
+   "199cab88-74bc-44fe-bd5f-f23371a39763",
+   "3cc47552-ca69-4946-833e-67353a36b0e5",
+   "9b130f67-e458-41d9-8ae3-21e86cb33163",
+   "114a331e-14f4-43e0-a512-fb8461d87fb1"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 256824,
   "skuCode": "SAMTQS95F",
@@ -401,7 +422,6 @@
     },
     "url": "/samsung-s95f-oled-tv/samtq83s95f/",
     "canonicalUrl": "/samsung-s95f-oled-tv/samtq83s95f/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -497,48 +517,48 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SAMTQS95F leverer et fremragende, varmt og medrivende billede med levende, men naturlige detaljer – også i lyse rum. Den matte skærm dæmper effektivt refleksioner, mens det bemærkelsesværdigt tynde og solide design giver et eksklusivt indtryk. Smart-TV-softwaren og menuerne er mindre gennemarbejdede, men samlet set er pakken særdeles overbevisende til prisen.",
+   "summary": "Dette er et imponerende TV med varm, naturlig og særdeles detaljeret billedkvalitet, som giver en kraftfuld og medrivende seeroplevelse selv i lyse rum. Den matte skærm håndterer refleksioner fremragende, mens det bemærkelsesværdigt tynde og velbyggede design understreger det eksklusive indtryk. Smart-funktioner og menuer er mindre gennemarbejdede, men det fremragende billede og den gode værdi gør helheden meget overbevisende.",
    "headlines": {
     "outstanding picture quality": {
-     "sentimentAnalysis": "Anmeldelserne roser enstemmigt det usædvanligt klare, levende og naturlige billede.",
+     "sentimentAnalysis": "TV'et leverer særdeles skarpe, imponerende og tilfredsstillende billeder, og naturlige farver kan opnås efter justering.",
      "simpleTitle": "Fremragende billedkvalitet",
      "bias": "positive",
-     "key": "picture",
-     "groupId": "6bb9b785-0214-4326-bed2-9f6859b46809"
+     "key": "picture-quality",
+     "groupId": "26660ab2-7e04-4515-9b01-88d7277a543a"
     },
     "excellent reflection control": {
-     "sentimentAnalysis": "Den matte skærm roses for at holde billedet klart i sollys og rum med vinduer.",
-     "simpleTitle": "Fremragende refleksionsdæmpning",
+     "sentimentAnalysis": "Den matte skærm dæmper refleksioner bemærkelsesværdigt godt, så TV kan ses behageligt i dagslys selv med stærkt sollys eller mange vinduer.",
+     "simpleTitle": "Fremragende reflektionshåndtering",
      "bias": "positive",
-     "key": "reflections",
-     "groupId": "c397d95f-5d32-46ed-8719-1d357c4da801"
+     "key": "anti-reflection",
+     "groupId": "e0d8585f-4e84-4055-a042-1bbb2649fbdb"
     },
-    "software and menus feel unfinished": {
-     "sentimentAnalysis": "Menuer, operativsystemets funktion og stemmefunktioner kritiseres trods den stærke billedkvalitet.",
-     "simpleTitle": "Software og menuer virker ufærdige",
+    "smart software feels less polished": {
+     "sentimentAnalysis": "Menuer, stemmefunktioner, låste indstillinger og afspilningskompatibilitet skaber lidt besvær trods den ellers stærke TV-oplevelse.",
+     "simpleTitle": "Smart-softwaren virker mindre gennemarbejdet",
      "bias": "negative",
-     "key": "software",
-     "groupId": "00f09dd8-b735-4986-aca7-331e5a8db94f"
+     "key": "smart-interface",
+     "groupId": "bcca689d-1117-4ddb-919a-d7f683105925"
     },
-    "strong value for the price": {
-     "sentimentAnalysis": "TV'et leverer ifølge anmeldelserne den forventede kvalitet og de forventede funktioner i prisklassen.",
-     "simpleTitle": "Stærk værdi for pengene",
+    "strong value at the price": {
+     "sentimentAnalysis": "Produktet vurderes at levere fremragende funktioner og billedkvalitet i forhold til prisklassen.",
+     "simpleTitle": "God værdi til prisen",
      "bias": "positive",
      "key": "value",
-     "groupId": "cfb5bc50-6250-4221-bf44-0317cb010b1a"
+     "groupId": "08fddd58-c54a-4b15-ae6c-fda0757c5876"
     },
-    "slim, premium construction": {
-     "sentimentAnalysis": "Det usædvanligt tynde og solide TV giver et stærkt eksklusivt indtryk.",
-     "simpleTitle": "Slank konstruktion i høj kvalitet",
+    "remarkably thin and well built": {
+     "sentimentAnalysis": "Det slanke og velbyggede kabinet giver et eksklusivt indtryk.",
+     "simpleTitle": "Bemærkelsesværdigt tyndt og velbygget",
      "bias": "positive",
-     "key": "design",
-     "groupId": "2620e062-8146-47a3-a436-ad94b49b93b3"
+     "key": "design-build",
+     "groupId": "eb387a67-39d3-4816-97da-a56df07a25e2"
     }
    },
    "grouping": {
-    "6bb9b785-0214-4326-bed2-9f6859b46809": {
+    "26660ab2-7e04-4515-9b01-88d7277a543a": {
      "title": "Billedkvalitet",
-     "id": "6bb9b785-0214-4326-bed2-9f6859b46809",
+     "id": "26660ab2-7e04-4515-9b01-88d7277a543a",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "aabf472f-bfa6-4192-8f65-b80a5a33f37c",
@@ -557,9 +577,9 @@
       "0126c629-02ec-4708-89c9-de26ecc82ec9"
      ]
     },
-    "c397d95f-5d32-46ed-8719-1d357c4da801": {
-     "title": "Refleksionsdæmpning",
-     "id": "c397d95f-5d32-46ed-8719-1d357c4da801",
+    "e0d8585f-4e84-4055-a042-1bbb2649fbdb": {
+     "title": "Refleksionshåndtering",
+     "id": "e0d8585f-4e84-4055-a042-1bbb2649fbdb",
      "references": [
       "3853f912-ce18-4066-8893-e4c8fc6baf8e",
       "c73f7c66-403c-46df-87af-f9e8605da573",
@@ -568,9 +588,9 @@
       "e21782d5-facd-4d46-82a0-eafd7a376d06"
      ]
     },
-    "00f09dd8-b735-4986-aca7-331e5a8db94f": {
-     "title": "Smart-TV-software",
-     "id": "00f09dd8-b735-4986-aca7-331e5a8db94f",
+    "bcca689d-1117-4ddb-919a-d7f683105925": {
+     "title": "Smart-grænseflade",
+     "id": "bcca689d-1117-4ddb-919a-d7f683105925",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "570763a9-ad38-4f6e-8b1b-a26c19f3d150",
@@ -578,18 +598,18 @@
       "795a8550-3662-4244-b4ce-6738e3483c1c"
      ]
     },
-    "cfb5bc50-6250-4221-bf44-0317cb010b1a": {
+    "08fddd58-c54a-4b15-ae6c-fda0757c5876": {
      "title": "Værdi for pengene",
-     "id": "cfb5bc50-6250-4221-bf44-0317cb010b1a",
+     "id": "08fddd58-c54a-4b15-ae6c-fda0757c5876",
      "references": [
       "82926deb-c392-4ade-a39f-4bbdcc00c8b1",
       "86215f8e-bd38-4c54-9a89-676f2cd439c8",
       "6ff3fb5b-938f-4b76-a7b3-28fc973a05dd"
      ]
     },
-    "2620e062-8146-47a3-a436-ad94b49b93b3": {
+    "eb387a67-39d3-4816-97da-a56df07a25e2": {
      "title": "Design og konstruktion",
-     "id": "2620e062-8146-47a3-a436-ad94b49b93b3",
+     "id": "eb387a67-39d3-4816-97da-a56df07a25e2",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "795a8550-3662-4244-b4ce-6738e3483c1c"

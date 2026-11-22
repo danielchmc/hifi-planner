@@ -8,6 +8,29 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Nej"
+  },
+  "gallery": [
+   "be3246ec-a0ec-4529-b5ce-f48c151f1344",
+   "04812a6c-bc44-419a-be3a-fa5db746461e",
+   "2c3f87cf-af8d-4728-9847-db14178ee20f",
+   "06073255-f486-435d-8c63-0a41a37b3dc8",
+   "68f09b03-0494-4461-a2da-d3435a6fbc53",
+   "3c3a4dbc-5c28-4ce7-88df-a470b4b71cf0",
+   "8eb6d17b-5464-4f8a-beed-3d655576ed4b",
+   "bdba4e21-19ea-4d69-82d6-9c1334fc122b",
+   "b41f5ca7-0cc5-4447-8c12-a1bfec62654b",
+   "8667bcea-8589-4152-975f-3e327a7271ab",
+   "9e79502d-df0e-4da1-9750-c09b306eacf2",
+   "1d21b779-ed10-48d2-8e1a-82a9171bebb1",
+   "c98660b8-8356-4074-8470-8f995c48fa62",
+   "d1556eac-2a6e-4ca6-b175-075a3edf9680",
+   "2aa81da6-1f20-457c-b1eb-7a7b893ead19"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 256628,
   "skuCode": "ARGTTS",
@@ -18,13 +41,13 @@
     "NADC3050",
     "DALIOPTICON6MK2",
     "NADC399",
-    "ORTSTYLUS2MBK",
     "MARAMODEL30",
     "ORTSTYLUS2MBKLVB",
     "LYNGTDAI3400",
     "NADM33V2",
     "DENPMA3000NE",
-    "DALIRUBIKORE6"
+    "DALIRUBIKORE6",
+    "ORTSTYLUS2MBK"
    ],
    "isOutlet": "false"
   },
@@ -448,7 +471,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 120,
+     "availableQuantity": 118,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -540,10 +563,10 @@
     "recommendedAlternatives": {
      "productCodes": [
       "MOFISTUDIODECK",
-      "MOFIULTRADECK",
       "MOFIMASTERDECK",
       "DENDP3000NE",
-      "MARATT15S1"
+      "MARATT15S1",
+      "MOFIULTRADECK"
      ],
      "isOutlet": "false"
     },
@@ -690,56 +713,59 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon TT-Signature leverer en varm, dynamisk og særdeles detaljeret vinylgengivelse med et imponerende åbent og rummeligt lydbillede. Den solide konstruktion, det elegante retrodesign og den fremragende Ortofon 2M Black-pickup skaber en ægte high-end-oplevelse til en tilgængelig pris. Den enkle opsætning og stærke musikalitet gør pladespilleren til en meget tilfredsstillende opgradering, mens manglende endestop og enkelte mindre detaljer er de eneste tilbagevendende forbehold.",
+   "summary": "ARGTTS roses bredt for sit smukke finish, sin solide konstruktion og sin varme, åbne og meget detaljerede lyd. Den fabriksmonterede Ortofon 2M Black leverer imponerende klarhed, dynamik og fine musikalske detaljer, så velkendte plader kan opleves på ny. Opsætningen er generelt enkel, og helheden nærmer sig high-end-niveau, med kun mindre forbehold omkring støvlåget, placeringen af strømafbryderen, strømkablet og den manglende automatiske løft af armen ved pladens slutning.",
    "headlines": {
-    "elegant, solid and premium construction": {
-     "sentimentAnalysis": "Pladespilleren roses gentagne gange for det flotte retrodesign, de eksklusive materialer, valnøddefinishen og den solide konstruktion.",
-     "simpleTitle": "Elegant, solid og eksklusiv konstruktion",
+    "warm, open and highly detailed sound": {
+     "sentimentAnalysis": "Pladespilleren beskrives gentagne gange som klar, rummelig, dynamisk og meget detaljeret, så velkendte plader afslører flere nuancer.",
+     "simpleTitle": "Varm, åben og meget detaljeret lyd",
      "bias": "positive",
-     "key": "design_premium",
-     "groupId": "1fa70782-124a-4987-ad78-8eedd913ecc6"
+     "key": "sound",
+     "groupId": "23288350-f764-4b63-8ae0-c1132cf0b3d1"
     },
-    "open, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent en klar, rummelig, meget detaljeret og musikalsk engagerende gengivelse, der afslører flere informationer på velkendte plader.",
-     "simpleTitle": "Åben, detaljeret og omsluttende lyd",
+    "the Ortofon 2M Black is a standout cartridge": {
+     "sentimentAnalysis": "Den medfølgende Ortofon 2M Black roses for enestående musikalitet, detaljer, dynamik og godt samspil med pladespilleren.",
+     "simpleTitle": "Ortofon 2M Black er en fremragende pickup",
      "bias": "positive",
-     "key": "sound_open_detail",
-     "groupId": "4b711491-3823-44e5-91a5-67b0c00bae5e"
+     "key": "sound",
+     "groupId": "23288350-f764-4b63-8ae0-c1132cf0b3d1"
     },
-    "excellent Ortofon 2M Black cartridge": {
-     "sentimentAnalysis": "Ortofon 2M Black anses bredt som en fremragende, detaljeret og dynamisk pickup, der får vinyl til at yde sit bedste.",
-     "simpleTitle": "Fremragende Ortofon 2M Black-pickup",
+    "elegant, premium construction": {
+     "sentimentAnalysis": "Udseende og byggekvalitet opfattes gennemgående som smuk, tidløs, solid og eksklusiv.",
+     "simpleTitle": "Elegant konstruktion i høj kvalitet",
      "bias": "positive",
-     "key": "cartridge_excellent",
-     "groupId": "d841d382-6487-4152-96b7-1853ec7c4c38"
+     "key": "design",
+     "groupId": "4f1df36e-be22-4a86-9742-7931c82562f7"
     },
-    "simple setup and operation": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver enkel installation, nem justering og problemfri betjening.",
-     "simpleTitle": "Enkel opsætning og betjening",
+    "simple setup and adjustment": {
+     "sentimentAnalysis": "Opsætning, justering og daglig betjening beskrives som enkel og problemfri.",
+     "simpleTitle": "Enkel opsætning og justering",
      "bias": "positive",
-     "key": "setup_simple",
-     "groupId": "966cf62a-121f-4f27-8c06-83f936d7ed84"
+     "key": "setup",
+     "groupId": "bdaa4a20-7a69-4771-a719-b0cd8b3d8370"
     },
-    "tonearm lacks gentle or automatic end-of-record handling": {
-     "sentimentAnalysis": "Flere anmeldelser efterlyser automatisk løft ved pladens slutning eller en blidere sænkning af tonearmen, hvilket gør tonearmsbetjeningen til den tydeligste tilbagevendende kritik.",
-     "simpleTitle": "Tonearmen mangler blid eller automatisk afslutning",
+    "no automatic lift at the end of a record": {
+     "sentimentAnalysis": "To anmeldelser peger på den manglende automatiske løft- eller endestopfunktion som en mindre praktisk ulempe.",
+     "simpleTitle": "Ingen automatisk løft ved pladens slutning",
      "bias": "negative",
-     "key": "tonearm_end_handling",
-     "groupId": "88e11dce-29f9-4883-b72f-45e38845eed2"
+     "key": "tonearm",
+     "groupId": "6639c5e9-d590-4d67-af09-cb4aba6da872"
     }
    },
    "grouping": {
-    "4b711491-3823-44e5-91a5-67b0c00bae5e": {
+    "23288350-f764-4b63-8ae0-c1132cf0b3d1": {
      "title": "Lydkvalitet",
-     "id": "4b711491-3823-44e5-91a5-67b0c00bae5e",
+     "id": "23288350-f764-4b63-8ae0-c1132cf0b3d1",
      "references": [
+      "200f04ce-5a6b-489c-a42a-d0ce3f7c7136",
       "56f2b3ce-f854-4f29-bac1-0443612c5827",
       "fab6fae6-d2b4-40bb-9269-a5f1a5e74944",
       "373a1eab-80dd-4a66-9446-0e7278430429",
+      "4f0498ee-4729-4411-9fce-0cbb32287d5e",
       "39d93f92-ed33-423e-bf2e-18a384291535",
       "d3417bf9-d890-45ee-92d8-17d35420da47",
       "57811491-596f-4743-953d-b8935048b525",
       "25a21e84-a3b4-4417-951d-d636917f7860",
+      "5a1207de-b9e7-42dd-a153-d4b2e882bda0",
       "3d48e884-5bd3-4e98-a4ee-17181b1de323",
       "d49e56c8-7911-424d-87f4-92c78a13c8ed",
       "24ff9f18-f4f9-4d8e-a7d7-33f923686bd7",
@@ -752,39 +778,27 @@
       "b9ab260a-422a-408c-aa76-ebb46cfe0aac"
      ]
     },
-    "1fa70782-124a-4987-ad78-8eedd913ecc6": {
+    "4f1df36e-be22-4a86-9742-7931c82562f7": {
      "title": "Design og byggekvalitet",
-     "id": "1fa70782-124a-4987-ad78-8eedd913ecc6",
+     "id": "4f1df36e-be22-4a86-9742-7931c82562f7",
      "references": [
       "56f2b3ce-f854-4f29-bac1-0443612c5827",
       "fab6fae6-d2b4-40bb-9269-a5f1a5e74944",
       "373a1eab-80dd-4a66-9446-0e7278430429",
+      "d3417bf9-d890-45ee-92d8-17d35420da47",
       "3d48e884-5bd3-4e98-a4ee-17181b1de323",
       "d49e56c8-7911-424d-87f4-92c78a13c8ed",
-      "6af2c097-172f-4ad4-9a50-ea88ee89dbf2",
-      "c7828f4d-6f5b-405e-8d7f-522d32357401",
       "1bd496bf-d19b-421d-b6ed-f0598791f2bf",
       "70587e5c-c3af-4efa-a072-6e960a3c35ad",
       "b73867c4-3118-47ee-93d8-f998cfa3ac3c",
       "d3232a12-49c5-4d82-9032-15113ff834eb",
       "04aaa8df-ac17-45f4-9341-4ea0f24b82a1",
-      "626fda76-0b10-4a08-b79b-383e3634a0e2"
+      "b9ab260a-422a-408c-aa76-ebb46cfe0aac"
      ]
     },
-    "d841d382-6487-4152-96b7-1853ec7c4c38": {
-     "title": "Pickup-ydelse",
-     "id": "d841d382-6487-4152-96b7-1853ec7c4c38",
-     "references": [
-      "56f2b3ce-f854-4f29-bac1-0443612c5827",
-      "25a21e84-a3b4-4417-951d-d636917f7860",
-      "3d48e884-5bd3-4e98-a4ee-17181b1de323",
-      "24ff9f18-f4f9-4d8e-a7d7-33f923686bd7",
-      "b73867c4-3118-47ee-93d8-f998cfa3ac3c"
-     ]
-    },
-    "966cf62a-121f-4f27-8c06-83f936d7ed84": {
+    "bdaa4a20-7a69-4771-a719-b0cd8b3d8370": {
      "title": "Opsætning og betjening",
-     "id": "966cf62a-121f-4f27-8c06-83f936d7ed84",
+     "id": "bdaa4a20-7a69-4771-a719-b0cd8b3d8370",
      "references": [
       "d3417bf9-d890-45ee-92d8-17d35420da47",
       "d49e56c8-7911-424d-87f4-92c78a13c8ed",
@@ -792,9 +806,9 @@
       "b9ab260a-422a-408c-aa76-ebb46cfe0aac"
      ]
     },
-    "88e11dce-29f9-4883-b72f-45e38845eed2": {
-     "title": "Funktioner på tonearmen",
-     "id": "88e11dce-29f9-4883-b72f-45e38845eed2",
+    "6639c5e9-d590-4d67-af09-cb4aba6da872": {
+     "title": "Betjening af tonearm",
+     "id": "6639c5e9-d590-4d67-af09-cb4aba6da872",
      "references": [
       "56f2b3ce-f854-4f29-bac1-0443612c5827",
       "3d48e884-5bd3-4e98-a4ee-17181b1de323",

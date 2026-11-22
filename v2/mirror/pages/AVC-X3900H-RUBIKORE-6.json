@@ -13,6 +13,13 @@
    "url": "/surround/hjemmebio-system/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "6559f073-c6a2-4c7f-ba69-61d5a990db40"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 287787,
   "skuCode": "AVC-X3900H-RUBIKORE-6",
@@ -32,9 +39,9 @@
     "ESSPR1SCX",
     "ESSBA1SCX",
     "AQROCKET22SC",
-    "ARGBA2SCX",
     "ESSBA1BANBFASIX",
-    "ESSBA2BANGOX"
+    "ESSBA2BANGOX",
+    "ARGBA2SCX"
    ],
    "isOutlet": "false"
   },
@@ -189,7 +196,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 17,
+        "availableQuantity": 21,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "11.999,-",
@@ -221,7 +228,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 13,
+        "availableQuantity": 11,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -244,7 +251,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 4,
+        "availableQuantity": 5,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -267,7 +274,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 8,
+        "availableQuantity": 6,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -299,7 +306,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2,
+        "availableQuantity": 1,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "16.499,-",
@@ -322,7 +329,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 5,
+        "availableQuantity": 3,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "16.499,-",
@@ -345,7 +352,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 3,
+        "availableQuantity": 1,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "16.499,-",
@@ -377,7 +384,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 6,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -400,7 +407,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 18,
+        "availableQuantity": 12,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -421,10 +428,11 @@
         "productCode": "DALIRUBIKORE6HGMA"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager lørdag den 23. januar",
-        "deliveryDate": "2027-01-23T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 8,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
        "priceRaw": 19999,
@@ -446,7 +454,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24,
+        "availableQuantity": 22,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -478,7 +486,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 150,
+        "availableQuantity": 143,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "11.499,-",
@@ -488,7 +496,94 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DENAVCX3900H"
+     "parentProductCode": "DENAVCX3900H",
+     "reviews": {
+      "summary": "Denon AVC-X3900H roses bredt for varm, klar og kraftfuld lyd, imponerende surroundindlevelse, dyb bas og avanceret signalbehandling. Dirac Live værdsættes især for bedre baskontrol, timing og dialogklarhed, mens Auro-3D tilfører en spændende ekstra dimension til musiklytning. Opsætning og kalibrering kan være krævende, og enkelte begrænsninger som manglende EU-tuner og kun én 12 V-trigger nævnes.",
+      "headlines": {
+       "clear, powerful and immersive sound": {
+        "sentimentAnalysis": "Anmeldelserne beskriver markante forbedringer i klarhed, detaljer, dynamik, basdybde og surroundindlevelse samt en behagelig diskant uden skarphed.",
+        "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f"
+       },
+       "dirac Live improves bass, timing and dialogue": {
+        "sentimentAnalysis": "Dirac Live får æren for bedre baskontrol, timing på effekter og tydeligere dialog og foretrækkes af en anmelder frem for Audyssey.",
+        "simpleTitle": "Dirac Live forbedrer bas, timing og dialog",
+        "bias": "positive",
+        "key": "features",
+        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
+       },
+       "advanced sound modes add musical depth": {
+        "sentimentAnalysis": "De mange behandlingsmuligheder og Auro-3D-tilstanden roses for at udvide musikoplevelsen og tilføre en ny dimension.",
+        "simpleTitle": "Avancerede lydtilstande giver musikken mere dybde",
+        "bias": "positive",
+        "key": "features",
+        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
+       },
+       "setup and calibration can be difficult": {
+        "sentimentAnalysis": "Nogle anmeldere finder TV-integration, lydopsætning og den nødvendige kalibrering kompliceret og vejledningen utilstrækkelig.",
+        "simpleTitle": "Opsætning og kalibrering kan være vanskelig",
+        "bias": "negative",
+        "key": "setup",
+        "groupId": "063fce37-a522-4595-9861-a95d9a6c8cfe"
+       },
+       "some connectivity features are limited": {
+        "sentimentAnalysis": "Manglen på EU-tuner, manglende mulighed for at sortere webradiokanaler og kun én 12 V-trigger nævnes som funktionelle begrænsninger.",
+        "simpleTitle": "Nogle tilslutningsfunktioner er begrænsede",
+        "bias": "negative",
+        "key": "features",
+        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
+       }
+      },
+      "grouping": {
+       "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f": {
+        "title": "Lydkvalitet",
+        "id": "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f",
+        "references": [
+         "204dfc13-ca7d-4d3c-a8db-3c6b16bff220",
+         "957805f8-c92c-4eb7-aec3-63ae836d8373",
+         "06ca9205-d72b-4da3-80af-4bd971f0b9c9",
+         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
+         "1ca29f9a-7750-48f9-9bb9-41acee176ec9",
+         "98400810-f5fb-4d25-bb69-49e8bcdcd1ea",
+         "29aac145-a113-497e-a2a7-c1621bd4cde2",
+         "0dde59db-4d78-4499-bacf-e905cc082a14",
+         "41f33456-165c-4664-9cd2-db3cb0010e91"
+        ]
+       },
+       "7bde3f17-2429-4000-b2b7-cc55abbca93e": {
+        "title": "Funktioner og signalbehandling",
+        "id": "7bde3f17-2429-4000-b2b7-cc55abbca93e",
+        "references": [
+         "957805f8-c92c-4eb7-aec3-63ae836d8373",
+         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
+         "29aac145-a113-497e-a2a7-c1621bd4cde2",
+         "0dde59db-4d78-4499-bacf-e905cc082a14",
+         "41f33456-165c-4664-9cd2-db3cb0010e91"
+        ]
+       },
+       "063fce37-a522-4595-9861-a95d9a6c8cfe": {
+        "title": "Opsætning og kalibrering",
+        "id": "063fce37-a522-4595-9861-a95d9a6c8cfe",
+        "references": [
+         "3d0cdff9-ad1f-444c-a097-29df753f4f60",
+         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
+         "41f33456-165c-4664-9cd2-db3cb0010e91"
+        ]
+       }
+      },
+      "rating": 4.8,
+      "count": 20,
+      "reviewCount": 11,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 1,
+       "4": 2,
+       "5": 17
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

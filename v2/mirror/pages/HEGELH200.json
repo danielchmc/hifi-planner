@@ -13,6 +13,27 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Nej",
+   "HDMI indgange": "0",
+   "HDMI udgange": "0",
+   "Lydudgang": "Pre-out, Coaxial, Hovedtelefon",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR, USB A, USB B",
+   "Indgang (andet)": "Ethernet",
+   "Udgangseffekt 8 ohm": "2 x 150 watt",
+   "Fra beskrivelsen": "Ethernet / DLNA / UPnP · Valgfri variabel/fixed indstilling på alle indgange"
+  },
+  "gallery": [
+   "1e9d9425-0e0c-45f9-a57a-02c65d858583",
+   "02974b0e-9ffe-4b99-928a-3e6e3f3a89e9",
+   "f120aea0-7555-497b-bbb9-2e06425a143f",
+   "845913e3-9809-4841-aa36-5fa70c19f6f0",
+   "8a8b23c5-e0a2-40f8-b5e7-47f9012205c8",
+   "f1389410-05a3-4ea5-aed9-cbbe4466c879"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 291229,
   "skuCode": "HEGELH200",
@@ -218,12 +239,11 @@
      "productCode": "HEGELH200BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 27. november",
+     "deliveryDate": "2026-11-27T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

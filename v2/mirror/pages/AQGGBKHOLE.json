@@ -8,6 +8,13 @@
    "url": "/kabler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ff0e3d1b-a08f-4963-aee8-c674f582aea9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 230779,
   "skuCode": "AQGGBKHOLE",
@@ -227,7 +234,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 8,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -325,7 +332,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 5,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -560,37 +567,36 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQGGBKHOLE leverer et superkvalitets, godt afskærmet jordkabel, der understøtter en ren, støjsvag og medrivende lytteoplevelse. Kablet passer naturligt til pladespillersystemer, mens det samlede Denon-setup beskrives som varmt, detaljeret, slagkraftigt og meget musikalsk. Den hjælpsomme betjening og installation i hjemmet styrker det fremragende helhedsindtryk.",
+   "summary": "AQGGBKHOLE giver stor tilfredshed samlet set, især takket være det førsteklasses, godt afskærmede jordkabel og den problemfri personlige service. Kablet understøtter en stille og ren lyd baggrund og betragtes trods den relativt høje pris som en værdifuld opgradering i forhold til almindelige uskærmede alternativer. Varm, detaljeret og medrivende lyd gør hele opsætningen meget fornøjelig.",
    "headlines": {
-    "high-quality, well-shielded cable": {
-     "sentimentAnalysis": "Jordkablet roses gentagne gange som fremragende, vellavet og effektivt til at reducere støj, mens afskærmningen ses som en klar fordel.",
-     "simpleTitle": "Kabel i høj kvalitet med god afskærmning",
+    "well-shielded and high quality": {
+     "sentimentAnalysis": "Jordkablet roses for førsteklasses konstruktion, effektiv afskærmning og ren, støjsvag ydelse.",
+     "simpleTitle": "Godt afskærmet og af høj kvalitet",
      "bias": "positive",
      "key": "grounding-cable",
-     "groupId": "db837c5f-4721-4c11-b683-6b9c28bd5ebe"
+     "groupId": "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a"
     },
-    "excellent sales and installation service": {
-     "sentimentAnalysis": "Kundeservicen beskrives som fantastisk og omfatter både hjælp i butikken og vellykket tilslutning af udstyret i hjemmet.",
-     "simpleTitle": "Fremragende salgs- og installationsservice",
+    "helpful service from purchase to setup": {
+     "sentimentAnalysis": "Kunderne beskriver hjælpen og supporten ved tilslutningen som fremragende og meget tilfredsstillende.",
+     "simpleTitle": "Hjælpsom service fra køb til opsætning",
      "bias": "positive",
-     "key": "service-installation",
-     "groupId": "a5384301-705c-4bcc-bb6e-62adf0ea7e16"
+     "key": "customer-service",
+     "groupId": "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439"
     }
    },
    "grouping": {
-    "db837c5f-4721-4c11-b683-6b9c28bd5ebe": {
+    "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a": {
      "title": "Jordkabel",
-     "id": "db837c5f-4721-4c11-b683-6b9c28bd5ebe",
+     "id": "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a",
      "references": [
       "b4d91df6-ca41-4e92-97c5-e2b930795f9c",
       "562789f7-be80-4d98-85c2-c36d14ed3e82",
-      "e82f77b5-37f0-4c97-bdd5-24832561ecf2",
-      "0db74255-cf02-4f7c-80d0-d690dcff29b5"
+      "e82f77b5-37f0-4c97-bdd5-24832561ecf2"
      ]
     },
-    "a5384301-705c-4bcc-bb6e-62adf0ea7e16": {
-     "title": "Service og installation",
-     "id": "a5384301-705c-4bcc-bb6e-62adf0ea7e16",
+    "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439": {
+     "title": "Kundeservice",
+     "id": "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439",
      "references": [
       "9228d439-352b-4ca1-910c-d57bead6a6b6",
       "b61ade23-8265-4171-b00d-44b476c4ab64"

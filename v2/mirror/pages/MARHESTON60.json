@@ -13,6 +13,25 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Subwoofer-out",
+   "Lydindgang": "HDMI",
+   "Udgang (andet)": "USB C",
+   "Bluetooth type": "5.3",
+   "Fra beskrivelsen": "HDMI 2.1 eARC / HDCP 1.4 · Medfølgende tilbehør: HDMI-kabel, øjer til vægmontering"
+  },
+  "gallery": [
+   "c98b21bc-919d-4fe2-ba6b-3c2496cc4869",
+   "0f6e3286-6e40-4803-a73b-e3155abe4f7d",
+   "3c76f81e-d57b-43c9-8b74-041880e63aa8",
+   "b319484e-2b05-438e-9729-f198b1aa2801",
+   "f09bef01-7eff-4491-b39f-24dd889bbedf",
+   "1ca902ae-7080-4514-8c3a-150538fde1af",
+   "9aff7d5d-c35c-4aae-983e-8676671d4521"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 264797,
   "skuCode": "MARHESTON60",
@@ -20,12 +39,12 @@
   "brandPage": "/marker/marshall/",
   "recommendedProducts": {
    "productCodes": [
-    "MARHESTONSUB200",
     "ARGBERLINSUB10",
     "DALISUBE9F",
     "KEFKUBE8MIE",
     "ARGBERLINSUB12",
-    "KEFKUBE10MIE"
+    "KEFKUBE10MIE",
+    "MARHESTONSUB200"
    ],
    "isOutlet": "false"
   },
@@ -230,7 +249,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 39,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -314,41 +333,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARHESTON60 leverer en varm, fyldig og slagkraftig lyd, der især fungerer godt til tv og film, mens Dolby Atmos giver en immersiv rumfornemmelse. Musik er behagelig, især ved rolige optagelser, men komplekse arrangementer mangler adskillelse og dynamik sammenlignet med separate højttalere. Soundbaren er overordnet nem at bruge og har et stilfuldt design, men appen kan være frustrerende, og HDMI-forbindelsens stabilitet er et problem.",
+   "summary": "MARHESTON60 leverer en varm, fyldig og kraftfuld lyd, som især fungerer godt til film og almindeligt tv, mens Dolby Atmos giver en omsluttende rumfornemmelse. Musik lyder behagelig og rig, men komplekse numre mangler adskillelsen og dynamikken fra et dedikeret stereoanlæg. Appen er et svagt punkt, fordi parring kan være vanskelig, og ydeevnen kan være langsom, men samlet set gør brugervenlighed og lydkvalitet soundbaren let at anbefale.",
    "headlines": {
-    "full, punchy sound": {
-     "sentimentAnalysis": "Lyden roses som fyldig, behagelig og kraftfuld i forhold til soundbarens størrelse, og en ekstra subwoofer savnes ikke umiddelbart.",
-     "simpleTitle": "Fyldig og slagkraftig lyd",
+    "full, powerful sound without a subwoofer": {
+     "sentimentAnalysis": "Soundbaren leverer et tilfredsstillende og fyldigt lydbillede med tilstrækkelig bas til mange brugere uden behov for en ekstra subwoofer.",
+     "simpleTitle": "Fyldig og kraftfuld lyd uden subwoofer",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d71993cf-9280-469c-8319-341a03f3effd"
+     "key": "full-sound",
+     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
     },
-    "good for films and television": {
-     "sentimentAnalysis": "Dolby Surround- eller Atmos-ydelsen vurderes som mere end tilstrækkelig til film, selv om den ikke kan erstatte et komplet system med flere højttalere.",
-     "simpleTitle": "God til film og tv",
+    "excellent for films and Dolby surround": {
+     "sentimentAnalysis": "Filmafspilning vurderes som mere end tilstrækkelig, og Dolby-behandlingen skaber en omsluttende og engagerende gengivelse.",
+     "simpleTitle": "Fremragende til film og Dolby Surround",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d71993cf-9280-469c-8319-341a03f3effd"
+     "key": "film-sound",
+     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
     },
-    "music lacks high-end dynamics": {
-     "sentimentAnalysis": "Musikafspilningen er behagelig ved roligt materiale, men når især ved komplekse arrangementer ikke niveauet fra en god forstærker og separate high-end-højttalere.",
-     "simpleTitle": "Musik mangler high-end-dynamik",
+    "music lacks the dynamics of separate speakers": {
+     "sentimentAnalysis": "Musik forbliver behagelig, men komplekse arrangementer lyder mindre kontrollerede og mindre dynamiske end gennem en dedikeret forstærker og separate højttalere.",
+     "simpleTitle": "Musik mangler dynamikken fra separate højttalere",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "d71993cf-9280-469c-8319-341a03f3effd"
+     "key": "music-limitations",
+     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
     },
-    "app is slow and difficult to connect": {
-     "sentimentAnalysis": "Appen kritiseres for upålidelig parring på tværs af telefoner og langsom ydeevne, især på en nyere iPhone.",
-     "simpleTitle": "Appen er langsom og svær at forbinde",
+    "the app is slow and difficult to pair": {
+     "sentimentAnalysis": "Opsætning og ydeevne i appen giver gentagne frustrationer, herunder vanskelig parring med forskellige telefoner og mærkbart langsom drift.",
+     "simpleTitle": "Appen er langsom og svær at parre",
      "bias": "negative",
-     "key": "app",
-     "groupId": "374594d6-fc29-4c68-be8c-d64f559ff3b9"
+     "key": "app-pairing",
+     "groupId": "d0689c5d-5c51-421c-9062-3d43a4c2d540"
     }
    },
    "grouping": {
-    "d71993cf-9280-469c-8319-341a03f3effd": {
+    "1793b286-0dec-42d7-9f7c-0a5b16c245ea": {
      "title": "Lydkvalitet",
-     "id": "d71993cf-9280-469c-8319-341a03f3effd",
+     "id": "1793b286-0dec-42d7-9f7c-0a5b16c245ea",
      "references": [
       "c1a72dd9-8130-4cc9-ba55-7b9c1a13c743",
       "96d8d7b3-579e-4eac-bced-6699216037f2",
@@ -357,9 +376,9 @@
       "ffc819dd-d025-44ca-bca3-886bdcdb1aef"
      ]
     },
-    "374594d6-fc29-4c68-be8c-d64f559ff3b9": {
+    "d0689c5d-5c51-421c-9062-3d43a4c2d540": {
      "title": "App",
-     "id": "374594d6-fc29-4c68-be8c-d64f559ff3b9",
+     "id": "d0689c5d-5c51-421c-9062-3d43a4c2d540",
      "references": [
       "96d8d7b3-579e-4eac-bced-6699216037f2",
       "07dd4650-6585-4f5e-b825-ed0d3a7237f0"

@@ -8,6 +8,26 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "5a77e8f6-e072-404d-b766-91527b01932f",
+   "fff09686-d976-4dd1-a9b6-b5d18a726a51",
+   "ea460cdd-dd94-40a8-ae66-f4ecb2baba9c",
+   "89fd7309-b514-4171-a5d7-12f42acf4988",
+   "9c21d197-9180-435c-a90b-b779632472cc",
+   "c97626f0-e62d-4565-87a0-7120bee37726",
+   "44db61f3-214a-408a-a90d-1893c8b359f6",
+   "8628256d-0ed7-47cd-8712-7ef1e6f72252",
+   "b81d0c7b-0354-4341-ab8b-6e37dbd02d7c",
+   "25d321b8-a366-47c7-b154-f4be44a0a480",
+   "c693e09d-a75e-4fb7-add9-6f5a90082d12",
+   "f401e17e-06f4-4909-bcfb-88f6c53c21d8"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 259742,
   "skuCode": "VESTPROT1",
@@ -23,8 +43,8 @@
     "ORTCONCORDEMK2DJX",
     "ARGFORTEA4MK2",
     "ORTCONCORDEMK2SCRATX",
-    "ORTCONCORDEMK2CLUBX",
-    "ORTCONCORDEMK2MIXX"
+    "ORTCONCORDEMK2MIXX",
+    "ORTCONCORDEMK2CLUBX"
    ],
    "isOutlet": "false"
   },
@@ -180,8 +200,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 1406,
+     "numberOfStoresExperience": 15,
+     "availableQuantity": 1403,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -389,90 +409,89 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTPROT1 er en særdeles attraktiv og kompetent pladespiller, der leverer varm, præcis, ren og medrivende vinyllyd til en fremragende pris. Solid byggekvalitet, smidig direct drive, justerbar tonearm og understøttelse af flere formater gør pladespilleren til en særligt givende opgradering. Automatisk retur mangler, den løse plademåtte kan være irriterende, og forventet tilbehør eller dokumentation kan kræve ekstra besvær, men den samlede værdi er stadig enestående.",
+   "summary": "VESTPROT1 leverer varm, ren og engagerende vinylafspilning med et imponerende pris-kvalitetsforhold. Solide funktioner, et attraktivt klassisk design og understøttelse af forskellige pladetyper gør pladespilleren til en overbevisende opgradering. Små irritationer er den løse plademåtte, den manglende automatiske retur og de ufuldstændige kabler, men helhedsindtrykket er stadig særdeles anbefalelsesværdigt.",
    "headlines": {
     "excellent value for money": {
-     "sentimentAnalysis": "Pladespilleren roses gentagne gange for den enestående værdi, hvor kvalitet og funktioner overgår forventningerne til prisen.",
-     "simpleTitle": "Fremragende værdi for pengene",
+     "sentimentAnalysis": "Pladespilleren roses gentagne gange for at give usædvanligt meget for pengene og være en værdifuld opgradering.",
+     "simpleTitle": "Fremragende pris-kvalitetsforhold",
      "bias": "positive",
-     "key": "value_quality",
-     "groupId": "06dc76a2-d606-4c1f-bf74-bdb8ffdf4b86"
+     "key": "value",
+     "groupId": "4574116f-50a6-45ae-8f1a-287f41dcc9e8"
     },
-    "precise and clean sound": {
-     "sentimentAnalysis": "Gengivelsen beskrives som præcis, ren og fremragende og giver en fokuseret og behagelig vinyloplevelse.",
-     "simpleTitle": "Præcis og ren lyd",
+    "attractive, well-made design": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver det klassiske udseende, den pæne finish, de dæmpende fødder og den generelt solide kvalitet.",
+     "simpleTitle": "Attraktivt design i god kvalitet",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "7ac9ecc0-8a08-40dd-a08d-7078d37503ff"
+     "key": "design",
+     "groupId": "9c4635ee-7f6f-4877-8988-1a67d3fe07be"
     },
-    "classic, eye-catching design": {
-     "sentimentAnalysis": "Udseendet roses for klassisk stil, flot finish og en markant visuel tilstedeværelse.",
-     "simpleTitle": "Klassisk og iøjnefaldende design",
+    "clean, accurate sound": {
+     "sentimentAnalysis": "De tilgængelige lytteindtryk beskriver en præcis, ren og behagelig gengivelse.",
+     "simpleTitle": "Ren og præcis lyd",
      "bias": "positive",
-     "key": "design_build",
-     "groupId": "9f5f9f47-0224-41c0-85f7-25e3c2668f59"
+     "key": "sound",
+     "groupId": "926847a3-4323-4b03-9c1f-1fc99b04b493"
     },
-    "no automatic return": {
-     "sentimentAnalysis": "Manglen på automatisk retur af tonearmen eller automatisk afbrydelse nævnes gentagne gange som en ulempe.",
-     "simpleTitle": "Ingen automatisk retur",
-     "bias": "negative",
-     "key": "automatic_return",
-     "groupId": "4f56be6e-f5c6-4aab-9fe2-bd6652048252"
-    },
-    "loose platter mat can stick to records": {
-     "sentimentAnalysis": "Den løse måtte kritiseres, fordi friktion eller sug kan få den til at følge med pladen.",
-     "simpleTitle": "Løs plademåtte kan hænge fast i plader",
+    "loose platter mat is irritating": {
+     "sentimentAnalysis": "Måtten kan hænge fast i pladerne og løfte sig fra pladetallerkenen under håndtering.",
+     "simpleTitle": "Løs plademåtte er irriterende",
      "bias": "negative",
      "key": "platter_mat",
-     "groupId": "1b5c0112-3c8c-4c9a-b4e5-016743a37c91"
+     "groupId": "4721c3ea-c304-48a6-9a63-60c9e3e11893"
+    },
+    "no automatic tonearm return": {
+     "sentimentAnalysis": "Manglen på automatisk retur ved pladens slutning er en tydelig brugsmæssig ulempe.",
+     "simpleTitle": "Ingen automatisk retur af tonearmen",
+     "bias": "negative",
+     "key": "automatic_return",
+     "groupId": "b3a1c728-c4ae-4f55-a9c2-959cb5a88229"
     }
    },
    "grouping": {
-    "06dc76a2-d606-4c1f-bf74-bdb8ffdf4b86": {
-     "title": "Værdi og kvalitet",
-     "id": "06dc76a2-d606-4c1f-bf74-bdb8ffdf4b86",
+    "4574116f-50a6-45ae-8f1a-287f41dcc9e8": {
+     "title": "Pris og værdi",
+     "id": "4574116f-50a6-45ae-8f1a-287f41dcc9e8",
      "references": [
+      "5fe0523f-7425-4ca0-84e2-7cb5499fa327",
+      "e0194d2d-0d13-4766-a117-253383a73224",
       "89c98984-4ea9-49a5-bc95-2430dcb7d3ca",
-      "839141a6-7731-4d18-a504-6eac86b90aaa",
       "7de54864-4088-4991-9427-1084b90dddf2",
       "ae6d6049-7fe5-48a3-a810-0193f44c7ae1",
-      "086b33b6-831d-48bd-a32c-c0e1e3a60955",
-      "336cd4ae-9446-40af-942c-44e2dad49eb6",
-      "1798f149-7514-4bdc-8069-6e93b2c33e84",
-      "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
-      "cad146bf-2e97-4abd-b0e0-e9f0459c6350"
+      "336cd4ae-9446-40af-942c-44e2dad49eb6"
      ]
     },
-    "7ac9ecc0-8a08-40dd-a08d-7078d37503ff": {
+    "9c4635ee-7f6f-4877-8988-1a67d3fe07be": {
+     "title": "Design og byggekvalitet",
+     "id": "9c4635ee-7f6f-4877-8988-1a67d3fe07be",
+     "references": [
+      "839141a6-7731-4d18-a504-6eac86b90aaa",
+      "7de54864-4088-4991-9427-1084b90dddf2",
+      "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
+      "1798f149-7514-4bdc-8069-6e93b2c33e84"
+     ]
+    },
+    "926847a3-4323-4b03-9c1f-1fc99b04b493": {
      "title": "Lydkvalitet",
-     "id": "7ac9ecc0-8a08-40dd-a08d-7078d37503ff",
+     "id": "926847a3-4323-4b03-9c1f-1fc99b04b493",
      "references": [
       "336cd4ae-9446-40af-942c-44e2dad49eb6",
       "1798f149-7514-4bdc-8069-6e93b2c33e84"
      ]
     },
-    "9f5f9f47-0224-41c0-85f7-25e3c2668f59": {
-     "title": "Design og konstruktion",
-     "id": "9f5f9f47-0224-41c0-85f7-25e3c2668f59",
-     "references": [
-      "7de54864-4088-4991-9427-1084b90dddf2",
-      "7ea40b1d-52e5-461b-bd48-d35c1af7d9af"
-     ]
-    },
-    "4f56be6e-f5c6-4aab-9fe2-bd6652048252": {
-     "title": "Automatisk retur",
-     "id": "4f56be6e-f5c6-4aab-9fe2-bd6652048252",
-     "references": [
-      "c8176a01-edcd-45f3-907f-987bc8084d4e",
-      "08749b30-39d1-4eed-85fa-0a8da19a7767"
-     ]
-    },
-    "1b5c0112-3c8c-4c9a-b4e5-016743a37c91": {
+    "4721c3ea-c304-48a6-9a63-60c9e3e11893": {
      "title": "Plademåtte",
-     "id": "1b5c0112-3c8c-4c9a-b4e5-016743a37c91",
+     "id": "4721c3ea-c304-48a6-9a63-60c9e3e11893",
      "references": [
       "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
       "cad146bf-2e97-4abd-b0e0-e9f0459c6350"
+     ]
+    },
+    "b3a1c728-c4ae-4f55-a9c2-959cb5a88229": {
+     "title": "Automatisk retur af tonearm",
+     "id": "b3a1c728-c4ae-4f55-a9c2-959cb5a88229",
+     "references": [
+      "c8176a01-edcd-45f3-907f-987bc8084d4e",
+      "08749b30-39d1-4eed-85fa-0a8da19a7767"
      ]
     }
    },

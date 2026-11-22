@@ -13,6 +13,23 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej"
+  },
+  "gallery": [
+   "877507b3-5053-46bc-9b6c-8276f3a12ff4",
+   "1a29058d-ab95-4ec9-b643-f13934d4afa0",
+   "4f91cdba-dab1-43dc-93cd-81263068a6d6",
+   "e08ca439-bd0d-477f-b545-d362298bca98",
+   "f3905690-5947-4dbe-bd05-88705cba5ae5",
+   "06922c3f-b57f-4527-8256-a820c3682123",
+   "bced13c7-3466-4ab0-a540-8a1a1d19c5ca",
+   "de78325f-b0cc-4503-b2bb-1302bdcbe57c",
+   "840c70fc-a6e0-438f-8e55-658597cec5c9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 154414,
   "skuCode": "SENIE900",
@@ -280,62 +297,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sennheiser IE 900 leverer en fremragende, varm og meget detaljeret lyd med dyb, slagkraftig bas, rene mellemtoner, klare højder og en omsluttende rumfornemmelse på tværs af mange musikgenrer. Komforten forbliver fremragende under lange lyttesessioner, mens den høje pris generelt anses for berettiget af den enestående musikoplevelse og høje kvalitet. Kablet er den vigtigste tilbagevendende svaghed, men den samlede begejstring og tilfredshed er usædvanligt høj.",
+   "summary": "SENIE900 leverer en varm, kraftfuld og meget detaljeret lyd med dyb, ren bas, klare mellemtoner og en medrivende lydscene på tværs af næsten alle musikgenrer. Den gode komfort ved lange lyttesessioner og den sikre pasform gør timevis af musikglæde mulig, mens premiumprisen generelt vurderes som berettiget af den musikalske ydelse. Kabelkvaliteten og emballagens præsentation er de væsentligste forbehold, men den samlede vurdering er stadig særdeles begejstret.",
    "headlines": {
-    "detailed, balanced and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne roser IE 900 for ren, moden, meget detaljeret og rummelig lyd med god separation og en afbalanceret gengivelse.",
-     "simpleTitle": "Detaljeret, afbalanceret og rummelig lyd",
+    "detailed, balanced and versatile sound": {
+     "sentimentAnalysis": "Lyden roses som klar, ren, afbalanceret, meget detaljeret og velegnet til mange musikgenrer.",
+     "simpleTitle": "Detaljeret, afbalanceret og alsidig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f4de034e-427d-4089-916a-736053c508f1"
+     "key": "sound-quality",
+     "groupId": "0682281b-7cfe-411c-b6a1-44fcaad82a1f"
     },
     "deep and powerful bass": {
-     "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, ren, kraftfuld og engagerende uden at blive påtrængende.",
+     "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, ren, fyldig og usædvanligt kraftfuld uden at blive påtrængende.",
      "simpleTitle": "Dyb og kraftfuld bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f4de034e-427d-4089-916a-736053c508f1"
+     "key": "sound-quality",
+     "groupId": "0682281b-7cfe-411c-b6a1-44fcaad82a1f"
     },
     "comfortable for extended listening": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent øretelefonerne som komfortable, sikre i pasformen og egnede til lange lyttesessioner.",
+     "sentimentAnalysis": "Komfort og pasform vurderes som fremragende, også under flere timers lytning.",
      "simpleTitle": "Komfortabel ved lang tids lytning",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "97a156e8-f2bd-43c6-937d-7729c35f01cf"
+     "groupId": "0a193f18-dd7f-44ae-9ab0-bd4db6ae2875"
     },
-    "high price justified by the performance": {
-     "sentimentAnalysis": "Den høje pris anerkendes, men den fremragende lyd og musikoplevelse gør købet værdifuldt.",
-     "simpleTitle": "Den høje pris er berettiget af ydeevnen",
+    "the cable could be better": {
+     "sentimentAnalysis": "Det medfølgende kabel er den tydeligste tilbagevendende kritik af konstruktionen og anses for udskifteligt eller under øretelefonernes samlede niveau.",
+     "simpleTitle": "Kablet kunne være bedre",
+     "bias": "negative",
+     "key": "cable-build",
+     "groupId": "09956c2f-4236-47c0-8bc3-17502939cfda"
+    },
+    "high price justified by performance": {
+     "sentimentAnalysis": "Købet anses som dyrt, men værdifuldt på grund af den fremragende lyd og større musikglæde.",
+     "simpleTitle": "Den høje pris berettiges af ydeevnen",
      "bias": "positive",
      "key": "value",
-     "groupId": "b6a4d0ff-68ee-4667-81f8-e78738ca3f6c"
-    },
-    "excellent retailer service": {
-     "sentimentAnalysis": "Forhandlerservice, leveringshastighed og kundesupport får stor ros.",
-     "simpleTitle": "Fremragende forhandlerservice",
-     "bias": "positive",
-     "key": "service",
-     "groupId": "657b5fa0-50e1-4807-bc2d-d3108511fce4"
-    },
-    "excellent across musical genres": {
-     "sentimentAnalysis": "IE 900 anses for alsidig nok til forskellige genrer samt både afslappet og analytisk lytning.",
-     "simpleTitle": "Fremragende på tværs af musikgenrer",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "f4de034e-427d-4089-916a-736053c508f1"
-    },
-    "cable quality could be improved": {
-     "sentimentAnalysis": "Det medfølgende kabel er den tydeligste tilbagevendende kritik, og anmeldelserne foreslår udskiftning eller en mere robust konstruktion.",
-     "simpleTitle": "Kablets kvalitet kunne være bedre",
-     "bias": "negative",
-     "key": "cable",
-     "groupId": "861c1c12-6c9a-4bf6-8294-f2d210a37e0c"
+     "groupId": "f1a7ea5a-c10c-43fd-b13d-a477d0e42ecd"
     }
    },
    "grouping": {
-    "f4de034e-427d-4089-916a-736053c508f1": {
+    "0682281b-7cfe-411c-b6a1-44fcaad82a1f": {
      "title": "Lydkvalitet",
-     "id": "f4de034e-427d-4089-916a-736053c508f1",
+     "id": "0682281b-7cfe-411c-b6a1-44fcaad82a1f",
      "references": [
       "8d22da7b-da2c-4973-8a10-194d751e4b16",
       "8e85a87d-20a9-4bcd-ae7e-79bef9617cdb",
@@ -350,9 +353,9 @@
       "807c8997-4ebb-4ad0-b5fa-9eefcdc81ce3"
      ]
     },
-    "97a156e8-f2bd-43c6-937d-7729c35f01cf": {
+    "0a193f18-dd7f-44ae-9ab0-bd4db6ae2875": {
      "title": "Komfort og pasform",
-     "id": "97a156e8-f2bd-43c6-937d-7729c35f01cf",
+     "id": "0a193f18-dd7f-44ae-9ab0-bd4db6ae2875",
      "references": [
       "8d22da7b-da2c-4973-8a10-194d751e4b16",
       "3a2f60e3-b75f-44c1-bce1-f387c2f48118",
@@ -360,30 +363,20 @@
       "2f59e48e-e975-4f93-9007-531df44bb5af"
      ]
     },
-    "b6a4d0ff-68ee-4667-81f8-e78738ca3f6c": {
-     "title": "Pris og værdi",
-     "id": "b6a4d0ff-68ee-4667-81f8-e78738ca3f6c",
+    "09956c2f-4236-47c0-8bc3-17502939cfda": {
+     "title": "Kabel og byggekvalitet",
+     "id": "09956c2f-4236-47c0-8bc3-17502939cfda",
      "references": [
       "8d22da7b-da2c-4973-8a10-194d751e4b16",
+      "2f59e48e-e975-4f93-9007-531df44bb5af"
+     ]
+    },
+    "f1a7ea5a-c10c-43fd-b13d-a477d0e42ecd": {
+     "title": "Værdi for pengene",
+     "id": "f1a7ea5a-c10c-43fd-b13d-a477d0e42ecd",
+     "references": [
       "8fd45fff-4bcb-41dc-83ce-d2708a66d8df",
       "406edea1-b596-4afb-a89b-272282ff6a1a"
-     ]
-    },
-    "657b5fa0-50e1-4807-bc2d-d3108511fce4": {
-     "title": "Kundeservice",
-     "id": "657b5fa0-50e1-4807-bc2d-d3108511fce4",
-     "references": [
-      "8d22da7b-da2c-4973-8a10-194d751e4b16",
-      "93bef885-aa24-4a82-95f9-dcd23cb7413e",
-      "2f59e48e-e975-4f93-9007-531df44bb5af"
-     ]
-    },
-    "861c1c12-6c9a-4bf6-8294-f2d210a37e0c": {
-     "title": "Kabel og stik",
-     "id": "861c1c12-6c9a-4bf6-8294-f2d210a37e0c",
-     "references": [
-      "8d22da7b-da2c-4973-8a10-194d751e4b16",
-      "2f59e48e-e975-4f93-9007-531df44bb5af"
      ]
     }
    },

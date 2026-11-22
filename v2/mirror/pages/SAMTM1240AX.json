@@ -13,6 +13,15 @@
    "url": "/tilbehor/fjernbetjening/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "PC-tilslutning :"
+  },
+  "gallery": [
+   "fe2676a7-8d3c-4a8d-aeed-04062b981fbe"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 43739,
   "skuCode": "SAMTM1240AX",
@@ -90,8 +99,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 8,
-     "availableQuantity": 8,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -112,22 +121,21 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SAMTM1240AX leverer varm og pålidelig hverdagsydelse og fungerer som forventet med en enkel batteridrevet opsætning. Den nye fjernbetjening føles som en klar opgradering til et fladskærms-tv, understøttet af hurtig levering og fremragende service ved købet. Tydeligere og større knapmarkeringer samt en stærkere signalvinkel ville gøre oplevelsen endnu mere effektiv, immersiv og bekvem.",
+   "summary": "SAMTM1240AX giver en problemfri og pålidelig betjening af tv'et med en varm, kraftfuld og næsten omsluttende brugeroplevelse. Plug-and-play-opsætning og stabil drift i hverdagen gør fjernbetjeningen særligt attraktiv. Tydeligere knapmarkeringer og større signalrækkevidde ville gøre oplevelsen endnu bedre.",
    "headlines": {
-    "works as expected": {
-     "sentimentAnalysis": "Fjernbetjeningen fungerer ifølge anmeldelserne pålideligt som forventet og er nem at tage i brug med batterier.",
-     "simpleTitle": "Fungerer som forventet",
+    "works as expected and starts up easily": {
+     "sentimentAnalysis": "Fjernbetjeningen roses for pålidelig funktion, nem isætning af batterier og øjeblikkelig anvendelse.",
+     "simpleTitle": "Fungerer som forventet og er nem at komme i gang med",
      "bias": "positive",
-     "key": "funktion",
-     "groupId": "e82dab46-3269-4386-9dd5-e58da82ba232"
+     "key": "functionality",
+     "groupId": "9a496b30-f9c2-4074-9b02-c8312e30a0b8"
     }
    },
    "grouping": {
-    "e82dab46-3269-4386-9dd5-e58da82ba232": {
-     "title": "Funktionalitet",
-     "id": "e82dab46-3269-4386-9dd5-e58da82ba232",
+    "9a496b30-f9c2-4074-9b02-c8312e30a0b8": {
+     "title": "Funktionalitet og brugervenlighed",
+     "id": "9a496b30-f9c2-4074-9b02-c8312e30a0b8",
      "references": [
-      "6e4fe264-4d25-4e3b-b3c0-a19b1a4dff30",
       "4065b7ae-d6c5-45b4-bd40-41ef156f5031",
       "14320c90-25ed-4714-b7cf-bd46c5fed011",
       "00c8b3b5-4aa3-4b01-8b4d-a7e160d070a3"

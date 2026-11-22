@@ -13,6 +13,25 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( Auracast, LE Audio, LDAC, SBC )"
+  },
+  "gallery": [
+   "19a905d0-10ac-44c8-8b48-2406b2f7fbf0",
+   "21f465af-8955-4990-a076-f7d2fe7b948e",
+   "20cf7f59-de22-42a9-90af-383c5d8999f3",
+   "43885250-2849-4e5f-b637-2b1f25d03f5f",
+   "78300b05-d8f0-4e85-a7c7-6e26e78fc32e",
+   "4efa98c8-fb46-4a47-86fe-d4213a12a667",
+   "18c741f4-9cfb-448f-896f-f8dc79a3991d",
+   "3f2fe19d-bdd5-4177-93f0-ebfc02d8d06f",
+   "2df704e8-d8e0-4aca-aaad-f85784c82f66",
+   "3862db60-1070-4be6-9a20-679197b79805",
+   "56c04c3e-16e2-4063-8fc1-9952ef36e6a3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 264722,
   "skuCode": "JBLTOURPRO3",
@@ -159,7 +178,7 @@
     "productCode": "JBLTOURPRO3BK",
     "ean": "1200130013836",
     "priceDetails": {
-     "priceValueId": 1217538,
+     "priceValueId": 1221359,
      "price": 1290,
      "priceFormatted": "1.290,-",
      "priceBefore": 2290,
@@ -221,7 +240,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 287,
+     "availableQuantity": 248,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -309,7 +328,7 @@
     "productCode": "JBLTOURPRO3BL",
     "ean": "1200130032905",
     "priceDetails": {
-     "priceValueId": 1217973,
+     "priceValueId": 1221365,
      "price": 1290,
      "priceFormatted": "1.290,-",
      "priceBefore": 2290,
@@ -371,7 +390,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 41,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -456,7 +475,7 @@
     "productCode": "JBLTOURPRO3LATTE",
     "ean": "1200130013850",
     "priceDetails": {
-     "priceValueId": 1213096,
+     "priceValueId": 1221371,
      "price": 1299,
      "priceFormatted": "1.299,-",
      "priceBefore": 2290,
@@ -518,7 +537,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 157,
+     "availableQuantity": 135,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -600,56 +619,92 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBL Tour Pro 3 leverer en varm, kraftfuld og omsluttende lyd med klare diskanttoner, fyldig bas og mange indstillingsmuligheder. Støjreduktion, komfort, forbindelse og samtalekvalitet får generelt ros, mens det funktionsrige etui og appen giver stor alsidighed. Softwarefejl, begrænsninger i touch-betjeningen, svingende samtalekvalitet udendørs og lejlighedsvise Bluetooth- eller bevægelsesproblemer forhindrer en helt fejlfri oplevelse.",
+   "summary": "JBL Tour Pro 3 leverer en varmt og kraftfuldt lydbillede med klar diskant, medrivende detaljer og stærk bas, som får stor ros, suppleret af effektiv støjreduktion og god pasform. Appen, det smarte etui og de mange forbindelsesmuligheder giver imponerende alsidighed, mens batteritid og samtalekvalitet generelt er gode. Mindre forbehold gælder telefonsamtaler udendørs, tilpasning af touch og app, lejlighedsvis ustabil forbindelse eller afspilning samt et etui, der kan være upraktisk eller for følsomt.",
    "headlines": {
     "rich, powerful and immersive sound": {
-     "sentimentAnalysis": "Anmelderne roser den fyldige, detaljerede og omsluttende gengivelse med især kraftig bas og klar diskant.",
-     "simpleTitle": "Fyldig, kraftfuld og omsluttende lyd",
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare, fyldige og kraftfulde lyd, især bas, diskant og den medrivende lytteoplevelse.",
+     "simpleTitle": "Fyldig, kraftfuld og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "e0c4e81d-ccf8-4217-b798-9b45819c63f8"
+     "groupId": "375de17f-0aa2-4110-95ad-d834385eb461"
     },
-    "noise cancellation is highly effective": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver støjreduktionen som kraftig, nyttig og effektiv til at lukke omgivende lyd ude.",
-     "simpleTitle": "Støjreduktionen er meget effektiv",
+    "effective noise cancellation": {
+     "sentimentAnalysis": "Støjreduktionen beskrives bredt som god, ideel eller effektiv til at lukke omgivende lyd ude.",
+     "simpleTitle": "Effektiv støjreduktion",
      "bias": "positive",
      "key": "noise-cancellation",
-     "groupId": "052cf99a-1015-4f5a-a321-7374d92fb173"
+     "groupId": "6226fc75-db85-45b5-9429-e17b0b7f0fad"
     },
-    "the app and touch controls need refinement": {
-     "sentimentAnalysis": "Den funktionsrige app og etui værdsættes, men anmelderne ønsker flere tilpasningsmuligheder for touch-funktioner, direkte lydstyrkekontrol og en mindre følsom eller begrænset brugerflade.",
-     "simpleTitle": "Appen og touch-betjeningen bør forbedres",
-     "bias": "negative",
-     "key": "app-controls",
-     "groupId": "d3ce1edc-5bbb-44b1-b9a2-51bb751e9a85"
-    },
-    "the earbuds are comfortable and fit well": {
-     "sentimentAnalysis": "De fleste kommentarer om pasformen beskriver behagelig brug og en sikker, tilfredsstillende pasform.",
-     "simpleTitle": "Øretelefonerne sidder behageligt og godt",
+    "comfortable fit for everyday listening": {
+     "sentimentAnalysis": "Flere anmeldelser roser øretelefonerne for at være komfortable og sidde godt ved normal brug.",
+     "simpleTitle": "Komfortabel pasform til hverdagsbrug",
      "bias": "positive",
      "key": "comfort-fit",
-     "groupId": "0df79a34-58bd-43e8-b6be-d17402a41798"
+     "groupId": "e827699f-4a00-4c38-a2ab-337b642fae37"
     },
-    "call quality is clear for many users": {
-     "sentimentAnalysis": "Flere anmeldelser roser mikrofonen og samtaleklarheden, herunder god forståelighed for begge parter.",
-     "simpleTitle": "Samtalekvaliteten er klar for mange brugere",
+    "useful app and smart-case features": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter de mange app-indstillinger og det smarte etui, herunder den særlige tv-forbindelse og praktiske betjeningsfunktioner.",
+     "simpleTitle": "Nyttige app- og smart-etui-funktioner",
      "bias": "positive",
-     "key": "calls-connectivity",
-     "groupId": "69442c4f-54a1-45a5-b224-ee1f608b10be"
+     "key": "app-controls",
+     "groupId": "e915b2e6-15ae-4eac-8947-e14fc579fbd2"
     },
-    "outdoor calls and Bluetooth can be unreliable": {
-     "sentimentAnalysis": "Nogle anmeldere oplever ustabil Bluetooth og markant forringet samtalekvalitet udendørs, hvor støjbehandlingen nogle gange fjerner talerens stemme.",
-     "simpleTitle": "Opkald udendørs og Bluetooth kan være ustabile",
+    "call quality is generally good": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver tydelig tale og god samtaleydelse under egnede forhold.",
+     "simpleTitle": "Samtalekvaliteten er generelt god",
+     "bias": "positive",
+     "key": "calls",
+     "groupId": "830294c9-bc4b-494c-92e5-cb0c7bb34667"
+    },
+    "touch and app controls need more flexibility": {
+     "sentimentAnalysis": "Flere anmeldelser efterlyser mere tilpasselige touch-funktioner, direkte lydstyrkekontrol og flere redigerbare sider på etuiets skærm.",
+     "simpleTitle": "Touch- og app-betjeningen bør være mere fleksibel",
      "bias": "negative",
-     "key": "calls-connectivity",
-     "groupId": "69442c4f-54a1-45a5-b224-ee1f608b10be"
+     "key": "app-controls",
+     "groupId": "e915b2e6-15ae-4eac-8947-e14fc579fbd2"
+    },
+    "noise cancellation can struggle outdoors": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever, at den adaptive støjreduktion reagerer dårligt på forbipasserende køretøjer eller er svagere end hos konkurrenter.",
+     "simpleTitle": "Støjreduktionen kan have problemer udendørs",
+     "bias": "negative",
+     "key": "noise-cancellation",
+     "groupId": "6226fc75-db85-45b5-9429-e17b0b7f0fad"
+    },
+    "less secure during sports": {
+     "sentimentAnalysis": "To anmeldelser nævner lejlighedsvis ustabilitet under bevægelse, herunder at øretelefonerne falder ud under sport.",
+     "simpleTitle": "Mindre sikre under sport",
+     "bias": "negative",
+     "key": "comfort-fit",
+     "groupId": "e827699f-4a00-4c38-a2ab-337b642fae37"
+    },
+    "outdoor calls can be problematic": {
+     "sentimentAnalysis": "To anmeldelser rapporterer dårlig taleoverførsel eller store mikrofonproblemer under samtaler, især udendørs.",
+     "simpleTitle": "Samtaler udendørs kan være problematiske",
+     "bias": "negative",
+     "key": "calls",
+     "groupId": "830294c9-bc4b-494c-92e5-cb0c7bb34667"
+    },
+    "fast and versatile connections": {
+     "sentimentAnalysis": "Anmeldelserne roser hurtig parring med flere enheder og muligheden for at forbinde til et ældre tv via etuiet.",
+     "simpleTitle": "Hurtige og alsidige forbindelser",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "644347cb-0ab9-4ad4-b3fd-e7833824297d"
+    },
+    "bluetooth stability can vary": {
+     "sentimentAnalysis": "To anmeldelser nævner ustabil Bluetooth eller lejlighedsvis skift mellem stereo og mono under bevægelse.",
+     "simpleTitle": "Bluetooth-stabiliteten kan variere",
+     "bias": "negative",
+     "key": "connectivity",
+     "groupId": "644347cb-0ab9-4ad4-b3fd-e7833824297d"
     }
    },
    "grouping": {
-    "e0c4e81d-ccf8-4217-b798-9b45819c63f8": {
+    "375de17f-0aa2-4110-95ad-d834385eb461": {
      "title": "Lydkvalitet",
-     "id": "e0c4e81d-ccf8-4217-b798-9b45819c63f8",
+     "id": "375de17f-0aa2-4110-95ad-d834385eb461",
      "references": [
+      "0fd58661-aa70-4be1-93e8-cdf31763b421",
       "9df370cb-a63f-408e-aef6-321e0ab7e59f",
       "a62c5f25-1314-40cd-8a09-024f2f8b6c26",
       "cdf80376-12c1-4454-91ca-03fec1643768",
@@ -676,61 +731,70 @@
       "17ccef48-0c1d-4826-a109-17f0fdf2f66a"
      ]
     },
-    "052cf99a-1015-4f5a-a321-7374d92fb173": {
+    "6226fc75-db85-45b5-9429-e17b0b7f0fad": {
      "title": "Støjreduktion",
-     "id": "052cf99a-1015-4f5a-a321-7374d92fb173",
+     "id": "6226fc75-db85-45b5-9429-e17b0b7f0fad",
      "references": [
       "9df370cb-a63f-408e-aef6-321e0ab7e59f",
       "cdf80376-12c1-4454-91ca-03fec1643768",
       "fc03fd09-7b82-4cf6-b91f-2b2b25890f97",
-      "3a0bdbc2-003a-4c53-8cbf-9b0ce623ab9f",
       "53b41dbe-3cdb-4fcb-b2f0-6711aa0f8729",
       "76b36945-4309-41fa-b7ea-ed63f4aa7c52",
       "83e15f8d-97a2-488c-ac9c-a6a4faf8cf8c",
+      "3a0bdbc2-003a-4c53-8cbf-9b0ce623ab9f",
       "9e5ba5d9-76e2-4298-8f2b-a381728d848b",
       "00b686eb-ec7d-4e1e-88a2-9e37dc1b2f75"
      ]
     },
-    "d3ce1edc-5bbb-44b1-b9a2-51bb751e9a85": {
+    "e915b2e6-15ae-4eac-8947-e14fc579fbd2": {
      "title": "App og betjening",
-     "id": "d3ce1edc-5bbb-44b1-b9a2-51bb751e9a85",
+     "id": "e915b2e6-15ae-4eac-8947-e14fc579fbd2",
      "references": [
       "cdf80376-12c1-4454-91ca-03fec1643768",
-      "642455fd-991e-4d60-97fb-6d3fd50662ef",
       "767dc1d5-fd2c-4ec3-95a4-70ef6dc8e270",
       "53b41dbe-3cdb-4fcb-b2f0-6711aa0f8729",
       "90cf786f-d923-42f9-be25-7954613f6907",
+      "84f6100d-6339-4b04-85a5-cc32df21b9fc",
       "a0a8c454-4cb3-463c-ac85-44beb098ab13",
       "9e5ba5d9-76e2-4298-8f2b-a381728d848b",
       "7e1bbcf8-ac68-4b0e-aadd-76014a0b0ea8",
       "1e0b5c27-b53a-4bc4-9d5d-8d95610e27bd"
      ]
     },
-    "69442c4f-54a1-45a5-b224-ee1f608b10be": {
-     "title": "Opkald og forbindelse",
-     "id": "69442c4f-54a1-45a5-b224-ee1f608b10be",
-     "references": [
-      "80a23373-933c-4335-ac98-28f225e622d9",
-      "fc03fd09-7b82-4cf6-b91f-2b2b25890f97",
-      "3a0bdbc2-003a-4c53-8cbf-9b0ce623ab9f",
-      "ed1591f0-68dc-4a4a-980b-5fa77a688381",
-      "53b41dbe-3cdb-4fcb-b2f0-6711aa0f8729",
-      "f4dac86c-7a23-4e50-8806-ef335660937f",
-      "a0a8c454-4cb3-463c-ac85-44beb098ab13",
-      "cdf80376-12c1-4454-91ca-03fec1643768"
-     ]
-    },
-    "0df79a34-58bd-43e8-b6be-d17402a41798": {
+    "e827699f-4a00-4c38-a2ab-337b642fae37": {
      "title": "Komfort og pasform",
-     "id": "0df79a34-58bd-43e8-b6be-d17402a41798",
+     "id": "e827699f-4a00-4c38-a2ab-337b642fae37",
      "references": [
       "cdf80376-12c1-4454-91ca-03fec1643768",
       "fc03fd09-7b82-4cf6-b91f-2b2b25890f97",
       "34446543-ca0e-4523-aa2b-d060dea6e2f3",
       "c4ca8dee-e82b-459d-bc8a-908e38ce5d9f",
       "b2901966-1e36-4da7-bbb4-8557bf842644",
-      "17ccef48-0c1d-4826-a109-17f0fdf2f66a",
-      "62fe5b3e-ebe9-4163-8500-4848efdd2f75"
+      "62fe5b3e-ebe9-4163-8500-4848efdd2f75",
+      "767dc1d5-fd2c-4ec3-95a4-70ef6dc8e270",
+      "17ccef48-0c1d-4826-a109-17f0fdf2f66a"
+     ]
+    },
+    "830294c9-bc4b-494c-92e5-cb0c7bb34667": {
+     "title": "Samtalekvalitet",
+     "id": "830294c9-bc4b-494c-92e5-cb0c7bb34667",
+     "references": [
+      "80a23373-933c-4335-ac98-28f225e622d9",
+      "fc03fd09-7b82-4cf6-b91f-2b2b25890f97",
+      "3a0bdbc2-003a-4c53-8cbf-9b0ce623ab9f",
+      "53b41dbe-3cdb-4fcb-b2f0-6711aa0f8729",
+      "ed1591f0-68dc-4a4a-980b-5fa77a688381",
+      "a0a8c454-4cb3-463c-ac85-44beb098ab13",
+      "f4dac86c-7a23-4e50-8806-ef335660937f"
+     ]
+    },
+    "644347cb-0ab9-4ad4-b3fd-e7833824297d": {
+     "title": "Forbindelse",
+     "id": "644347cb-0ab9-4ad4-b3fd-e7833824297d",
+     "references": [
+      "80a23373-933c-4335-ac98-28f225e622d9",
+      "fc03fd09-7b82-4cf6-b91f-2b2b25890f97",
+      "ed1591f0-68dc-4a4a-980b-5fa77a688381"
      ]
     }
    },

@@ -13,6 +13,14 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fc1c954b-6afb-47b1-8936-cdd76b90fa29",
+   "43ee4582-150b-4377-9d08-20ad6f263a62"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 216161,
   "skuCode": "ARGFORUS4WX",
@@ -173,7 +181,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 110,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -273,7 +281,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 112,
+     "availableQuantity": 110,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -369,7 +377,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 300,
+     "availableQuantity": 298,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -444,41 +452,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFORUS4WX leverer en bemærkelsesværdig klar, detaljeret og fyldig lyd i forhold til den kompakte størrelse og fungerer især godt som vægmonterede surround- eller ekstrahøjttalere. Det slanke, attraktive design og den nemme montering gør højttalerne meget praktiske til diskret placering. Pris-kvalitetsforholdet er fremragende, selv om dyb bas og skala er begrænset ved brug som primære musikhøjttalere uden subwoofer.",
+   "summary": "ARGON Audio Forus 4 leverer varm, ren og overraskende fyldig lyd fra et kompakt, slankt kabinet og præsterer især stærkt som surround- eller væghøjttaler. Diskanten er detaljeret og silkeblød, mens en subwoofer kan tilføre en tilfredsstillende dybde; ved krævende musiklytning kan bassen dog virke mindre fyldig end med større højttalere. Det elegante design, den nemme montering og den fremragende værdi gør Forus 4 til et begejstrende valg til kompakte anlæg og hjemmebio.",
    "headlines": {
-    "clear, full and detailed sound": {
-     "sentimentAnalysis": "Højttalerne roses gentagne gange for en klar, ren, fyldig og detaljeret lyd, som er særligt imponerende i forhold til den lille størrelse.",
-     "simpleTitle": "Klar, fyldig og detaljeret lyd",
+    "surprisingly full, clear and detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, fyldige og detaljerede lyd trods den kompakte størrelse.",
+     "simpleTitle": "Overraskende fyldig, klar og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "ecc6477a-d3dd-45be-a184-4b6f43e682b6"
+     "groupId": "f2781f65-4494-4795-a5aa-4b0c2021f641"
     },
-    "strong performance for surround and secondary systems": {
-     "sentimentAnalysis": "De kompakte højttalere vurderes gennemgående som meget effektive som bag-, surround- eller ekstrahøjttalere og supplerer eksisterende systemer godt.",
-     "simpleTitle": "Stærk ydelse til surround- og ekstrasystemer",
+    "strong surround and wall-speaker performance": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver Forus 4 som et effektivt valg til surroundkanaler og kompakte vægmonterede opsætninger.",
+     "simpleTitle": "Stærk ydelse som surround- og væghøjttaler",
      "bias": "positive",
-     "key": "surround_use",
-     "groupId": "a144178d-a4b2-4713-88fa-4decdfbfcc90"
+     "key": "surround",
+     "groupId": "983eb799-fa87-4465-8f22-e87b7af40c6d"
+    },
+    "excellent value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den stærke ydelse og tilfredshed i forhold til prisen.",
+     "simpleTitle": "Fremragende værdi for pengene",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "665c6676-7a2b-4c5b-874e-fbdc6e5b32a9"
     },
     "slim design and easy wall mounting": {
-     "sentimentAnalysis": "Det slanke udseende, de kompakte mål og den enkle vægmontering fremhæves gentagne gange som praktiske og attraktive.",
+     "sentimentAnalysis": "Det kompakte, flotte design og den enkle vægmontering bliver gentagne gange rost.",
      "simpleTitle": "Slankt design og nem vægmontering",
      "bias": "positive",
-     "key": "design_installation",
-     "groupId": "c1c4be46-7754-4dfa-9fbb-c5a7832e2bff"
+     "key": "design-mounting",
+     "groupId": "ad9635cb-15a4-4bd8-866c-1926dcc60d57"
     },
-    "limited depth for main music use": {
-     "sentimentAnalysis": "Det kompakte kabinet leverer mindre dyb og storslået musikgengivelse som hovedhøjttaler, især uden en subwoofer.",
-     "simpleTitle": "Begrænset dybde til musik som hovedhøjttaler",
+    "bass is limited compared with larger speakers": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at de kompakte højttalere ikke kan matche større modeller som fronthøjttalere, især hvad angår dyb bas.",
+     "simpleTitle": "Mindre bas end fra større højttalere",
      "bias": "negative",
      "key": "sound",
-     "groupId": "ecc6477a-d3dd-45be-a184-4b6f43e682b6"
+     "groupId": "f2781f65-4494-4795-a5aa-4b0c2021f641"
     }
    },
    "grouping": {
-    "ecc6477a-d3dd-45be-a184-4b6f43e682b6": {
+    "f2781f65-4494-4795-a5aa-4b0c2021f641": {
      "title": "Lydkvalitet",
-     "id": "ecc6477a-d3dd-45be-a184-4b6f43e682b6",
+     "id": "f2781f65-4494-4795-a5aa-4b0c2021f641",
      "references": [
       "109fa2f0-5bbd-4023-b334-9642244a36d1",
       "4af9fff6-e338-4a9a-9e2e-296055d46145",
@@ -500,15 +515,14 @@
       "5c86166a-3f17-4699-9d1d-bd79c1006a64",
       "cac68aa5-97ff-48fd-9a76-663866f13b3e",
       "8271af7b-d729-4e31-958b-dc9466d97d22",
-      "1bc92788-2b91-42c3-9ab7-81322f4c21f0",
       "53d9b976-02bc-4e7b-a917-c4e6d985361a",
       "8b97013c-76e2-4670-b67f-90fb7f868618",
       "05f539d6-8c7e-4fb1-b4ce-0496d80a0fe1"
      ]
     },
-    "c1c4be46-7754-4dfa-9fbb-c5a7832e2bff": {
+    "ad9635cb-15a4-4bd8-866c-1926dcc60d57": {
      "title": "Design og montering",
-     "id": "c1c4be46-7754-4dfa-9fbb-c5a7832e2bff",
+     "id": "ad9635cb-15a4-4bd8-866c-1926dcc60d57",
      "references": [
       "ca067caa-8a0e-4f7d-850e-5a2bfa720238",
       "8162545c-53a0-42fd-bd96-779163ed9434",
@@ -520,18 +534,27 @@
       "05f539d6-8c7e-4fb1-b4ce-0496d80a0fe1"
      ]
     },
-    "a144178d-a4b2-4713-88fa-4decdfbfcc90": {
-     "title": "Surround- og ekstrabrug",
-     "id": "a144178d-a4b2-4713-88fa-4decdfbfcc90",
+    "983eb799-fa87-4465-8f22-e87b7af40c6d": {
+     "title": "Surround-brug",
+     "id": "983eb799-fa87-4465-8f22-e87b7af40c6d",
      "references": [
       "b4f33c11-ddf9-48d7-87b7-70c4050340f1",
-      "ef220a41-4508-4137-b5a4-86bf3c76d1fe",
       "5d07fd38-25f8-4a13-9f47-96de361a02d0",
       "93ad51c2-e1fe-40b3-b494-ef2ad04a21da",
       "4ec34633-f7c3-455e-a976-2abc07258990",
       "1bc92788-2b91-42c3-9ab7-81322f4c21f0",
-      "53d9b976-02bc-4e7b-a917-c4e6d985361a",
       "8b97013c-76e2-4670-b67f-90fb7f868618"
+     ]
+    },
+    "665c6676-7a2b-4c5b-874e-fbdc6e5b32a9": {
+     "title": "Pris og kvalitet",
+     "id": "665c6676-7a2b-4c5b-874e-fbdc6e5b32a9",
+     "references": [
+      "d32a3eaf-a0c8-4962-86f6-414d7dcbdc8b",
+      "b5f3ad86-5ba6-4c39-8e83-ee41ecbae8f5",
+      "ce18d6d2-ef90-4786-81b3-0fa353f6a6b9",
+      "8271af7b-d729-4e31-958b-dc9466d97d22",
+      "05f539d6-8c7e-4fb1-b4ce-0496d80a0fe1"
      ]
     }
    },

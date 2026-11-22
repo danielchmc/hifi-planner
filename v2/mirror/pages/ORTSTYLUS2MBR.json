@@ -13,6 +13,16 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "5",
+   "Fra beskrivelsen": "OBS: HiFi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "2d2a719d-27f5-4c32-98ba-97ac7c3f464b"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 209,
   "skuCode": "ORTSTYLUS2MBR",
@@ -145,12 +155,11 @@
      "productCode": "ORTSTYLUS2MBRON"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 26. november",
+     "deliveryDate": "2026-11-26T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -191,34 +200,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS2MBR leverer en varm, slagkraftig og medrivende lytteoplevelse med en markant forbedring af lydkvaliteten sammenlignet med standardnåle som Ortofon Red og Blue. Den detaljerede gengivelse, den stramme bas og den gode kanalseparation gør nålen særdeles tilfredsstillende på kompatible pladespillere. Hurtig og hjælpsom service styrker det allerede fremragende indtryk yderligere.",
+   "summary": "ORTSTYLUS2MBR leverer en varm, slagkraftig og meget detaljeret lytteoplevelse med markante forbedringer i forhold til enklere nåle. Lyden er medrivende og rummelig med stram bas og tydelig kanalseparation. Hurtig og venlig service styrker det allerede fremragende helhedsindtryk.",
    "headlines": {
-    "excellent overall sound": {
-     "sentimentAnalysis": "Nålen roses for at levere en enestående og medrivende lytteoplevelse samt en markant forbedring af lyden sammenlignet med andre nåle.",
-     "simpleTitle": "Fremragende lyd i det hele taget",
+    "clear improvement over competing styli": {
+     "sentimentAnalysis": "Nålen beskrives som markant bedre klingende end tidligere eller konkurrerende modeller.",
+     "simpleTitle": "Tydelig forbedring i forhold til andre nåle",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "6288260c-626b-4991-9472-c1b72f50a413"
+     "key": "sound-quality",
+     "groupId": "48b5d3f7-5e3b-478a-879c-e037e3372e28"
     },
-    "fast, helpful service": {
-     "sentimentAnalysis": "Servicen beskrives konsekvent som god, hurtig og hjælpsom, inklusive effektiv hjælp ved udskiftning.",
+    "detailed, powerful and spacious presentation": {
+     "sentimentAnalysis": "Anmeldelserne roser en medrivende lyd med kraftig bas, imponerende detaljer og en fremragende musikalsk gengivelse.",
+     "simpleTitle": "Detaljeret, kraftfuld og rummelig gengivelse",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "48b5d3f7-5e3b-478a-879c-e037e3372e28"
+    },
+    "fast and helpful service": {
+     "sentimentAnalysis": "Servicen roses konsekvent som hurtig, hjælpsom og professionel.",
      "simpleTitle": "Hurtig og hjælpsom service",
      "bias": "positive",
      "key": "service",
-     "groupId": "40482f54-639a-4958-8ad8-5cf663019961"
-    },
-    "clear improvement over Ortofon Red and Blue": {
-     "sentimentAnalysis": "To anmeldelser beskriver specifikt en stor eller overvældende forbedring sammenlignet med Ortofon Blue- eller Red-nålen.",
-     "simpleTitle": "Tydelig forbedring i forhold til Ortofon Red og Blue",
-     "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "6288260c-626b-4991-9472-c1b72f50a413"
+     "groupId": "56e7fe39-b992-41fe-bba8-5bd0052785a4"
     }
    },
    "grouping": {
-    "6288260c-626b-4991-9472-c1b72f50a413": {
+    "48b5d3f7-5e3b-478a-879c-e037e3372e28": {
      "title": "Lydkvalitet",
-     "id": "6288260c-626b-4991-9472-c1b72f50a413",
+     "id": "48b5d3f7-5e3b-478a-879c-e037e3372e28",
      "references": [
       "c1bf8f2d-f85a-439d-9a38-2ed7bb3c3627",
       "5579c0b4-64be-459c-a7fa-b6bcd1315ebc",
@@ -226,9 +235,9 @@
       "21bb277c-18e0-4de5-b053-1ccd656e776e"
      ]
     },
-    "40482f54-639a-4958-8ad8-5cf663019961": {
+    "56e7fe39-b992-41fe-bba8-5bd0052785a4": {
      "title": "Service",
-     "id": "40482f54-639a-4958-8ad8-5cf663019961",
+     "id": "56e7fe39-b992-41fe-bba8-5bd0052785a4",
      "references": [
       "f3e21c67-7d94-4161-b764-3b9e01bf33fb",
       "930976aa-5399-47fc-b547-8bed35eab47c",

@@ -13,6 +13,23 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.1 ( aptX Adaptive, AAC, SBC )",
+   "Lydindgang": "Minijack/AUX, USB C",
+   "Trådløs overførsel": "Bluetooth-indgang",
+   "Trådløs opladning": "Nej"
+  },
+  "gallery": [
+   "a15812db-d2b7-4a4f-b6b5-7534f8418e75",
+   "000ae58b-a38a-4f3c-be5e-0aad94468397",
+   "0750de46-f6a8-407a-8a83-e5f6cb27c6bb",
+   "c7b1eb60-be49-45f6-911a-703c4bb47aa6",
+   "8d8eb73a-e350-406f-91c4-87438d4cd25a",
+   "51510ba7-176d-4ee0-8880-04ab032119fb"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 141173,
   "skuCode": "BOH95",
@@ -233,7 +250,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 22,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -356,7 +373,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 15,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -499,7 +516,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 30,
+     "availableQuantity": 24,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -643,7 +660,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 19,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -767,79 +784,66 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BOH95 leverer en luksuriøs, varm og meget detaljeret lytteoplevelse med punchy, kontrolleret bas, et bredt lydbillede og førsteklasses materialer. God komfort ved lang tids brug, stærk batteritid, elegant design og intuitiv betjening giver en ægte flagskibsfølelse, især på rejser og til daglig musiklytning. Den høje pris er det største forbehold, mens ANC, transparenstilstand, lydstyrke, pasform samt enkelte app- og forbindelsesdetaljer ikke altid opleves som førsteklasses.",
+   "summary": "BOH95 leverer en luksuriøs premium-lytteoplevelse med varm, detaljeret og rummelig lyd, kontrolleret bas, fremragende materialer og høj komfort over længere tid. Batteritid, mobilitet og støjreduktion bliver også ofte fremhævet positivt, mens appen og den intuitive betjening giver ekstra fleksibilitet. Den høje pris nævnes ofte, men trods enkelte kritiske bemærkninger om lydstyrke, ANC eller pasform er den samlede vurdering overvældende positiv.",
    "headlines": {
-    "premium materials and elegant construction": {
-     "sentimentAnalysis": "Anmelderne beundrer de luksuriøse materialer, den raffinerede udførelse, det flotte design og den førsteklasses fornemmelse.",
-     "simpleTitle": "Førsteklasses materialer og elegant udførelse",
-     "bias": "positive",
-     "key": "premium-build",
-     "groupId": "056bb1e6-5641-4ef2-974e-35b31e0c0197"
-    },
     "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmelderne roser gennemgående lyden som velafbalanceret, detaljeret, klar og rummelig med en engagerende musikalsk karakter.",
+     "sentimentAnalysis": "Anmeldelserne roser en klar, afbalanceret, meget detaljeret og rummelig gengivelse med stærk musikalitet.",
      "simpleTitle": "Varm, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "warm-detailed-sound",
-     "groupId": "41addad1-f3ae-4732-b7a1-5d02388468b1"
+     "key": "sound_warm_detailed",
+     "groupId": "ae4e6b3e-4edc-4707-aec1-b00e0fce99b6"
     },
-    "comfortable for extended listening": {
-     "sentimentAnalysis": "Komforten roses gentagne gange ved lang tids lytning, hjulpet af lav vægt, bløde puder og en sikker pasform.",
-     "simpleTitle": "Behagelige ved lang tids brug",
+    "premium materials and craftsmanship": {
+     "sentimentAnalysis": "Hovedtelefonerne roses gentagne gange for eksklusive materialer, flot design og omhyggelig forarbejdning.",
+     "simpleTitle": "Eksklusive materialer og forarbejdning",
      "bias": "positive",
-     "key": "long-session-comfort",
-     "groupId": "12bc7d60-741e-4ab2-8277-70402aace248"
+     "key": "design_premium",
+     "groupId": "455b025c-c531-4950-b5e6-062b5784e01b"
     },
-    "strong, controlled bass and useful tuning": {
-     "sentimentAnalysis": "Bassen roses bredt som fyldig, punchy og kontrolleret, mens app-baseret justering giver nyttig personalisering.",
-     "simpleTitle": "Kraftig, kontrolleret bas og nyttig lydjustering",
+    "comfortable for long listening sessions": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en behagelig pasform, der også fungerer godt ved mange timers brug.",
+     "simpleTitle": "Behagelige ved lange lytteperioder",
      "bias": "positive",
-     "key": "bass-tuning",
-     "groupId": "41addad1-f3ae-4732-b7a1-5d02388468b1"
+     "key": "comfort_long_sessions",
+     "groupId": "03d2a71f-8aeb-49bf-9fbd-b48a608c467f"
     },
-    "some listeners find the output too quiet or lacking punch": {
-     "sentimentAnalysis": "Et mindretal kritiserer den maksimale lydstyrke eller gennemslagskraft, hvilket tyder på, at den energiske gengivelse ikke passer til alle.",
-     "simpleTitle": "Nogle oplever lyden som for lav eller uden tilstrækkeligt tryk",
-     "bias": "negative",
-     "key": "output-limitations",
-     "groupId": "41addad1-f3ae-4732-b7a1-5d02388468b1"
-    },
-    "tight headband or less comfortable fit for some": {
-     "sentimentAnalysis": "Selvom komforten generelt er god, oplever nogle tryk, en mindre behagelig pasform eller en for stor konstruktion.",
-     "simpleTitle": "Stram bøjle eller mindre behagelig pasform for nogle",
-     "bias": "negative",
-     "key": "fit-variation",
-     "groupId": "12bc7d60-741e-4ab2-8277-70402aace248"
-    },
-    "long-lasting battery": {
-     "sentimentAnalysis": "Batteritiden beskrives som fremragende og velegnet til lang tids lytning og rejser.",
-     "simpleTitle": "Lang batteritid",
+    "rich, controlled and punchy bass": {
+     "sentimentAnalysis": "Bassen beskrives som fyldig, kontrolleret og kraftfuld og supplerer de klare diskanttoner og den detaljerede gengivelse.",
+     "simpleTitle": "Fyldig, kontrolleret og energisk bas",
      "bias": "positive",
-     "key": "lasting-battery",
-     "groupId": "3660fae2-6fef-4b9a-8266-4000ebdb8457"
+     "key": "sound_bass",
+     "groupId": "ae4e6b3e-4edc-4707-aec1-b00e0fce99b6"
     },
     "effective noise cancellation for travel": {
-     "sentimentAnalysis": "ANC roses som effektiv nok til at skabe et privat lytterum, især på rejser.",
-     "simpleTitle": "Effektiv støjreduktion til rejser",
+     "sentimentAnalysis": "Anmeldelserne beskriver ANC som effektiv nok til kraftig afskærmning, især på rejser.",
+     "simpleTitle": "Effektiv støjreduktion på rejser",
      "bias": "positive",
-     "key": "effective-anc",
-     "groupId": "710f83c2-c4d9-4492-bbeb-9bd3fbafed07"
+     "key": "noise_effective",
+     "groupId": "c257d7bd-e8af-4252-94d7-f70d060d594c"
     },
-    "anc and transparency are not best-in-class": {
-     "sentimentAnalysis": "Sammenligninger med konkurrerende hovedtelefoner viser svagere transparenstilstand og manglende fuldstændig stilhed for nogle.",
-     "simpleTitle": "ANC og transparenstilstand er ikke i topklasse",
+    "long-lasting battery": {
+     "sentimentAnalysis": "Batterikapacitet og lang afspilningstid bliver konsekvent fremhævet som store styrker.",
+     "simpleTitle": "Lang batteritid",
+     "bias": "positive",
+     "key": "battery_long",
+     "groupId": "b8df0610-8136-434d-84c6-2c0e3f1ae5de"
+    },
+    "some listeners find the sound too quiet or lacking punch": {
+     "sentimentAnalysis": "Et lille mindretal kritiserer den maksimale lydstyrke eller savner mere kraft i gengivelsen.",
+     "simpleTitle": "Nogle lyttere oplever lyden som for lav eller uden nok punch",
      "bias": "negative",
-     "key": "anc-limitations",
-     "groupId": "710f83c2-c4d9-4492-bbeb-9bd3fbafed07"
+     "key": "sound_volume_punch",
+     "groupId": "ae4e6b3e-4edc-4707-aec1-b00e0fce99b6"
     }
    },
    "grouping": {
-    "41addad1-f3ae-4732-b7a1-5d02388468b1": {
+    "ae4e6b3e-4edc-4707-aec1-b00e0fce99b6": {
      "title": "Lydkvalitet",
-     "id": "41addad1-f3ae-4732-b7a1-5d02388468b1",
+     "id": "ae4e6b3e-4edc-4707-aec1-b00e0fce99b6",
      "references": [
       "3a0040c4-f847-47d7-bbd0-fa2cceacb533",
       "85085a66-ea81-4981-a15a-f876fe01cb29",
+      "b07da64d-8329-480e-8f24-97791ccbaa48",
       "94a47ff2-dc96-42be-b7c7-c1efea9b6854",
       "809100ac-1d2b-47e3-afb3-84c33cfb690a",
       "551efa00-c0cc-47c2-adae-29ccf7c1d37a",
@@ -867,7 +871,7 @@
       "9cbcee59-1003-4768-bf5f-0273dd1cf60a",
       "5d5da452-3b7d-4d41-a34c-cf649890404b",
       "c26168f6-b1fd-4b0c-9cab-57d9835b6d1a",
-      "0435e7d0-9a81-4302-b5ea-f057aaf025ae",
+      "799158ac-35b0-49e1-93a0-d2d2ae13ea57",
       "dc17c5b0-12ae-44e4-8306-2f75a5c5e824",
       "e9507304-be7a-4dee-bf22-545f16090c0e",
       "98562526-2d5d-4efc-b114-8e6adaff791f",
@@ -891,67 +895,67 @@
       "746e2c0e-521a-4631-8fa3-1ac536869096"
      ]
     },
-    "056bb1e6-5641-4ef2-974e-35b31e0c0197": {
-     "title": "Design og byggekvalitet",
-     "id": "056bb1e6-5641-4ef2-974e-35b31e0c0197",
-     "references": [
-      "b07da64d-8329-480e-8f24-97791ccbaa48",
-      "809100ac-1d2b-47e3-afb3-84c33cfb690a",
-      "b9421765-f848-4708-a797-6ebab4685c6f",
-      "f963cf4b-d2e5-40f8-912c-33fb300c8608",
-      "0c2ec7ec-7fb8-4a68-a454-d0950ea40f34",
-      "fc12d8f4-be5a-4da5-b56f-5438ebc12d6c",
-      "18b1db38-ea65-46d5-a5ef-14e3fa38285c",
-      "2b884561-ce0d-4255-baa0-1b7860d415d7",
-      "d355e293-483c-441c-9852-3171505b6dba",
-      "62bf47e4-ac01-4097-806b-49b4a1aa5eb2",
-      "1ed8bd66-4513-4c76-942a-d97abfccdd5a",
-      "85a44128-70b6-4724-8e5c-3936c49da53d",
-      "eae7b933-e4f9-470e-ae83-55d55f14891b",
-      "3d008beb-ff71-4276-be5f-8345bf9e4cf5",
-      "9cbcee59-1003-4768-bf5f-0273dd1cf60a",
-      "06ff75fd-1ed9-4efa-a02f-d6cac55f785b",
-      "9982785b-f55e-4773-ae4f-f67b3ce81d8b",
-      "48a45078-4955-413f-9499-8ee372adf284"
-     ]
-    },
-    "12bc7d60-741e-4ab2-8277-70402aace248": {
+    "03d2a71f-8aeb-49bf-9fbd-b48a608c467f": {
      "title": "Komfort",
-     "id": "12bc7d60-741e-4ab2-8277-70402aace248",
+     "id": "03d2a71f-8aeb-49bf-9fbd-b48a608c467f",
      "references": [
       "b07da64d-8329-480e-8f24-97791ccbaa48",
       "f963cf4b-d2e5-40f8-912c-33fb300c8608",
       "3c3d9777-2691-4c00-9f27-a0162fb951b1",
       "d355e293-483c-441c-9852-3171505b6dba",
+      "62bf47e4-ac01-4097-806b-49b4a1aa5eb2",
       "014d784b-3e41-4404-90df-9e4c0972a3d9",
       "5d5da452-3b7d-4d41-a34c-cf649890404b",
       "1ed8bd66-4513-4c76-942a-d97abfccdd5a",
       "799158ac-35b0-49e1-93a0-d2d2ae13ea57",
+      "ab1debb7-3f83-407e-a957-a523117fcfb8",
       "85a44128-70b6-4724-8e5c-3936c49da53d",
       "eae7b933-e4f9-470e-ae83-55d55f14891b",
       "7850c05b-3a47-429c-8ed9-681e3e258d5b",
       "8868e664-7974-4fe3-ace2-7146f9cd8cb5",
       "80ffb705-6ddd-44f5-a441-a370dc0bd349",
       "9982785b-f55e-4773-ae4f-f67b3ce81d8b",
-      "4d526250-87f7-457d-bfe1-3635ae5c18e0",
-      "ab1debb7-3f83-407e-a957-a523117fcfb8"
+      "4d526250-87f7-457d-bfe1-3635ae5c18e0"
      ]
     },
-    "710f83c2-c4d9-4492-bbeb-9bd3fbafed07": {
+    "455b025c-c531-4950-b5e6-062b5784e01b": {
+     "title": "Design og byggekvalitet",
+     "id": "455b025c-c531-4950-b5e6-062b5784e01b",
+     "references": [
+      "b07da64d-8329-480e-8f24-97791ccbaa48",
+      "809100ac-1d2b-47e3-afb3-84c33cfb690a",
+      "f963cf4b-d2e5-40f8-912c-33fb300c8608",
+      "b9421765-f848-4708-a797-6ebab4685c6f",
+      "0c2ec7ec-7fb8-4a68-a454-d0950ea40f34",
+      "fc12d8f4-be5a-4da5-b56f-5438ebc12d6c",
+      "18b1db38-ea65-46d5-a5ef-14e3fa38285c",
+      "2b884561-ce0d-4255-baa0-1b7860d415d7",
+      "d355e293-483c-441c-9852-3171505b6dba",
+      "9cbcee59-1003-4768-bf5f-0273dd1cf60a",
+      "85a44128-70b6-4724-8e5c-3936c49da53d",
+      "3d008beb-ff71-4276-be5f-8345bf9e4cf5",
+      "48a45078-4955-413f-9499-8ee372adf284",
+      "06ff75fd-1ed9-4efa-a02f-d6cac55f785b",
+      "9982785b-f55e-4773-ae4f-f67b3ce81d8b"
+     ]
+    },
+    "c257d7bd-e8af-4252-94d7-f70d060d594c": {
      "title": "Støjreduktion",
-     "id": "710f83c2-c4d9-4492-bbeb-9bd3fbafed07",
+     "id": "c257d7bd-e8af-4252-94d7-f70d060d594c",
      "references": [
       "809100ac-1d2b-47e3-afb3-84c33cfb690a",
       "8e18544f-6fb4-4ff0-9e9d-d42f4d63c07c",
       "9cbcee59-1003-4768-bf5f-0273dd1cf60a",
       "0435e7d0-9a81-4302-b5ea-f057aaf025ae",
+      "c26168f6-b1fd-4b0c-9cab-57d9835b6d1a",
+      "e9507304-be7a-4dee-bf22-545f16090c0e",
       "7e151bdf-dbf6-4264-8f09-ae41164cb797",
-      "e9507304-be7a-4dee-bf22-545f16090c0e"
+      "4d526250-87f7-457d-bfe1-3635ae5c18e0"
      ]
     },
-    "3660fae2-6fef-4b9a-8266-4000ebdb8457": {
+    "b8df0610-8136-434d-84c6-2c0e3f1ae5de": {
      "title": "Batteritid",
-     "id": "3660fae2-6fef-4b9a-8266-4000ebdb8457",
+     "id": "b8df0610-8136-434d-84c6-2c0e3f1ae5de",
      "references": [
       "12a1e90a-6093-439e-9b3a-a53645f78f6b",
       "62bf47e4-ac01-4097-806b-49b4a1aa5eb2",

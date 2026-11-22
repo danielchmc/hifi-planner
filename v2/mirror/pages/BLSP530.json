@@ -13,6 +13,26 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Subwoofer-out",
+   "Lydindgang": "HDMI, Optisk, Analog RCA",
+   "Indgang (andet)": "Ethernet, USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Bluetooth type": "5.2",
+   "Bluetooth technologi": "aptX Adaptive",
+   "Fra beskrivelsen": "Automatisk tænd/sluk og kontrol af lydstyrke/play/pause via HDMI/eARC · Ethernet-tilslutning (RJ45 GigE) · Medfølgende tilbehør: HDMI-kabel, Ethernetkabel, vægbeslag m/monteringsskabelon"
+  },
+  "gallery": [
+   "1f59d98b-2c0b-4ab9-b56b-f4877d6d431e",
+   "dc7e5618-ca1e-462a-b619-fe1277fc3990",
+   "2a709403-980b-417d-ae17-6a7d01a58fac",
+   "5ae2ff51-1c64-4523-8231-8d6725ad4dab",
+   "eb4fa69f-027c-45d8-9452-c2c2035953a9",
+   "7935b73c-3021-49f2-8d35-2be644351c18"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 263700,
   "skuCode": "BLSP530",
@@ -192,10 +212,10 @@
    "id": 69786
   },
   "stockItemAlternative": {
-   "save": "1.400,-",
+   "save": "1.500,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=BLSP530",
-   "availableQuantity": 8,
-   "lowestPrice": "8.599,-"
+   "availableQuantity": 9,
+   "lowestPrice": "8.499,-"
   },
   "variants": [
    {
@@ -268,7 +288,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 480,
+     "availableQuantity": 470,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -399,76 +419,77 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSP530 leverer en usædvanligt klar, kraftfuld og medrivende lyd for en soundbar med tydelige dialoger og overbevisende musikgengivelse. Bassen er ofte tilfredsstillende alene, men flere anmeldelser anbefaler en subwoofer for større dybde, mens surroundeffekterne virker mindre overbevisende for nogle brugere. Nem udvidelse, fleksible streamingfunktioner og et diskret design gør produktet attraktivt, selv om HDMI ARC, kildeskift og lejlighedsvise driftsproblemer kan svække en ellers fremragende oplevelse.",
+   "summary": "BLSP530 leverer varm, klar og slagkraftig TV-lyd med en imponerende omsluttende gengivelse for en soundbar og fungerer samtidig fremragende til musik og streaming. Den dedikerede centerkanal gør dialoger særligt tydelige, mens Bluesound-økosystemet giver fleksible udvidelsesmuligheder og praktisk afspilning. Tilfredsheden med bassen uden subwoofer varierer, og enkelte ejere oplever HDMI-, kildevalgs- eller opsætningsproblemer, men helhedsindtrykket er meget positivt.",
    "headlines": {
-    "clear, powerful and musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent lyden som klar, kraftfuld, detaljeret og behagelig til både tv og musik.",
-     "simpleTitle": "Klar, kraftfuld og musikalsk lyd",
+    "clear, powerful and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser lyden som klar, kraftfuld, ren og usædvanligt god for en soundbar.",
+     "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "9533f706-5e88-4d34-8fec-9bf89cc099ac"
+     "groupId": "8ac0272c-ffe6-49d2-8745-d0db6e236a27"
     },
-    "bass is good, but a subwoofer can add depth": {
-     "sentimentAnalysis": "Basgengivelsen vurderes forskelligt: Nogle finder den dyb nok uden subwoofer, mens andre ønsker en subwoofer for fyldigere lave frekvenser.",
-     "simpleTitle": "God bas, men en subwoofer giver mere dybde",
-     "bias": "meh",
+    "detailed dialogue and music playback": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver tydelig tale, fine detaljer og stærk gengivelse af både musik og TV.",
+     "simpleTitle": "Detaljerede dialoger og musikgengivelse",
+     "bias": "positive",
      "key": "sound",
-     "groupId": "9533f706-5e88-4d34-8fec-9bf89cc099ac"
+     "groupId": "8ac0272c-ffe6-49d2-8745-d0db6e236a27"
     },
-    "easy connections and expansion": {
-     "sentimentAnalysis": "Anmeldelserne roser den ligetil opsætning og enkle integration med ekstra Bluesound-højttalere og tv.",
-     "simpleTitle": "Nem tilslutning og udvidelse",
+    "flexible Bluesound features": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter streaming, netradio, musikafspilning fra USB, appstyring og den bredere Bluesound-platform.",
+     "simpleTitle": "Fleksible Bluesound-funktioner",
+     "bias": "positive",
+     "key": "features",
+     "groupId": "6de2a63e-4e63-4e16-b558-551202aa92dd"
+    },
+    "strong bass without a subwoofer": {
+     "sentimentAnalysis": "Andre anmeldelser beskriver tilfredsstillende og dyb bas fra soundbaren alene.",
+     "simpleTitle": "Kraftig bas uden subwoofer",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "6a7faf7e-1bbd-4dfc-93c0-9cb73c9b4154"
+    },
+    "easy setup and operation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver tilslutning, parring og daglig betjening som enkel.",
+     "simpleTitle": "Nem opsætning og betjening",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "9c206739-bdef-4cb0-aea6-a69b3c6e8549"
+     "groupId": "f7a1123a-4829-44a6-bdbe-4da771b27db6"
     },
     "hdmi and source switching can be troublesome": {
-     "sentimentAnalysis": "Flere anmeldelser nævner begrænsninger med HDMI ARC, den enkelte HDMI-forbindelse eller ustabilt kildeskift.",
+     "sentimentAnalysis": "Flere anmeldelser nævner begrænset HDMI-tilslutning, ARC-problemer eller upålideligt kildeskift.",
      "simpleTitle": "HDMI og kildeskift kan give problemer",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "9c206739-bdef-4cb0-aea6-a69b3c6e8549"
+     "groupId": "f7a1123a-4829-44a6-bdbe-4da771b27db6"
     },
-    "useful streaming and app features": {
-     "sentimentAnalysis": "Nettradio, USB-afspilning, bred understøttelse af kilder og BlueOS-appen værdsættes som nyttige tilføjelser.",
-     "simpleTitle": "Nyttige streaming- og appfunktioner",
-     "bias": "positive",
-     "key": "features",
-     "groupId": "5bf35a4f-78d0-43d8-ae8f-019b3a9572e8"
-    },
-    "unobtrusive, attractive design": {
-     "sentimentAnalysis": "Designet beskrives gentagne gange som stilfuldt, tidløst og diskret.",
+    "discreet, attractive design": {
+     "sentimentAnalysis": "Anmeldelserne roser soundbarens diskrete, tidløse og attraktive udseende.",
      "simpleTitle": "Diskret og attraktivt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "2359a07e-b0b7-471e-b6c3-b1c8502a0140"
+     "groupId": "0725aba9-f273-4140-9413-3f5fc0c34af1"
     },
-    "surround effect can feel limited": {
-     "sentimentAnalysis": "Nogle anmeldelser finder lydscenen god, men bemærker, at surroundoplevelsen er svagere end med et avanceret separat anlæg.",
-     "simpleTitle": "Surroundeffekten kan virke begrænset",
+    "bass can benefit from a subwoofer": {
+     "sentimentAnalysis": "Nogle anmeldelser savner dybde i de lave frekvenser uden subwoofer og anbefaler en for mere fylde.",
+     "simpleTitle": "Bassen kan få gavn af en subwoofer",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "9533f706-5e88-4d34-8fec-9bf89cc099ac"
-    },
-    "some reliability concerns": {
-     "sentimentAnalysis": "To anmeldelser nævner tidlige produktfejl eller langvarig genoprettelse, hvilket peger på lejlighedsvise driftsproblemer.",
-     "simpleTitle": "Visse driftsproblemer",
-     "bias": "negative",
-     "key": "reliability",
-     "groupId": "aec8ad7c-dc03-4607-b66b-9ceb251eb6b4"
+     "key": "bass",
+     "groupId": "6a7faf7e-1bbd-4dfc-93c0-9cb73c9b4154"
     }
    },
    "grouping": {
-    "9533f706-5e88-4d34-8fec-9bf89cc099ac": {
+    "8ac0272c-ffe6-49d2-8745-d0db6e236a27": {
      "title": "Lydkvalitet",
-     "id": "9533f706-5e88-4d34-8fec-9bf89cc099ac",
+     "id": "8ac0272c-ffe6-49d2-8745-d0db6e236a27",
      "references": [
+      "f497695c-d5a5-43eb-a99b-3418ce6fddab",
       "7af39163-d511-4837-b543-e225ae5ee06c",
       "d50c0f9c-d7fe-458c-88db-ab1c04d7f403",
       "01d33c86-5b67-4937-a5d5-f402a4f00359",
       "d77d00e4-28ca-4edc-a644-61e26e6a0eee",
       "104e1905-18c5-468e-b34a-6e8792e72030",
-      "d906a6d4-489c-4f41-be70-5b89a566127d",
+      "d906a6d4-489c-4f41-be70-5b89a5661274",
       "b917908f-ad5b-4d17-8931-818cfd8da0b3",
       "7aa7307f-10a0-47e5-a758-b2be2aec938b",
       "cec9bd44-af5c-4d8d-909e-48f098fc6fc8",
@@ -489,60 +510,68 @@
       "c5decd70-70d3-450e-97bb-a0305b8c014f"
      ]
     },
-    "9c206739-bdef-4cb0-aea6-a69b3c6e8549": {
+    "f7a1123a-4829-44a6-bdbe-4da771b27db6": {
      "title": "Tilslutning og opsætning",
-     "id": "9c206739-bdef-4cb0-aea6-a69b3c6e8549",
+     "id": "f7a1123a-4829-44a6-bdbe-4da771b27db6",
      "references": [
       "7af39163-d511-4837-b543-e225ae5ee06c",
+      "d77d00e4-28ca-4edc-a644-61e26e6a0eee",
       "104e1905-18c5-468e-b34a-6e8792e72030",
       "1296ce8c-ba82-43f7-b079-e97f5acf23f5",
       "a942abab-b19d-4a89-9e8c-8c6e6db02036",
       "11b92826-740d-40bd-aca7-72c50c69813f",
       "06185168-d8cb-4057-815d-6ce9d5990f94",
       "d6ec653f-c1b2-4d7e-a433-755ff2e839b0",
+      "e9573053-59ad-4147-a622-50ad893729d5",
       "63b705fd-2824-4117-b80a-951fe23b1396",
       "c5decd70-70d3-450e-97bb-a0305b8c014f"
      ]
     },
-    "5bf35a4f-78d0-43d8-ae8f-019b3a9572e8": {
-     "title": "Funktioner og betjening",
-     "id": "5bf35a4f-78d0-43d8-ae8f-019b3a9572e8",
+    "6a7faf7e-1bbd-4dfc-93c0-9cb73c9b4154": {
+     "title": "Bas og subwoofer",
+     "id": "6a7faf7e-1bbd-4dfc-93c0-9cb73c9b4154",
      "references": [
-      "d77d00e4-28ca-4edc-a644-61e26e6a0eee",
-      "4f932975-9ac4-4811-ba1f-5fdd6b5009e6",
-      "1296ce8c-ba82-43f7-b079-e97f5acf23f5",
-      "bb4d89bb-4a3a-401a-b0d9-3d12ea46a2b9",
+      "f497695c-d5a5-43eb-a99b-3418ce6fddab",
+      "7af39163-d511-4837-b543-e225ae5ee06c",
+      "01d33c86-5b67-4937-a5d5-f402a4f00359",
+      "a942abab-b19d-4a89-9e8c-8c6e6db02036",
       "9c0f08a6-7ea4-436e-a74b-d5bb82961f4b",
-      "63b705fd-2824-4117-b80a-951fe23b1396"
+      "d6ec653f-c1b2-4d7e-a433-755ff2e839b0",
+      "c5decd70-70d3-450e-97bb-a0305b8c014f"
      ]
     },
-    "2359a07e-b0b7-471e-b6c3-b1c8502a0140": {
+    "6de2a63e-4e63-4e16-b558-551202aa92dd": {
+     "title": "Funktioner og betjening",
+     "id": "6de2a63e-4e63-4e16-b558-551202aa92dd",
+     "references": [
+      "f497695c-d5a5-43eb-a99b-3418ce6fddab",
+      "d77d00e4-28ca-4edc-a644-61e26e6a0eee",
+      "4f932975-9ac4-4811-ba1f-5fdd6b5009e6",
+      "a942abab-b19d-4a89-9e8c-8c6e6db02036",
+      "bb4d89bb-4a3a-401a-b0d9-3d12ea46a2b9",
+      "9c0f08a6-7ea4-436e-a74b-d5bb82961f4b",
+      "e9573053-59ad-4147-a622-50ad893729d5"
+     ]
+    },
+    "0725aba9-f273-4140-9413-3f5fc0c34af1": {
      "title": "Design",
-     "id": "2359a07e-b0b7-471e-b6c3-b1c8502a0140",
+     "id": "0725aba9-f273-4140-9413-3f5fc0c34af1",
      "references": [
       "c38faab4-49b9-49fd-b746-600835609cd9",
       "1296ce8c-ba82-43f7-b079-e97f5acf23f5",
       "bb4d89bb-4a3a-401a-b0d9-3d12ea46a2b9"
      ]
-    },
-    "aec8ad7c-dc03-4607-b66b-9ceb251eb6b4": {
-     "title": "Driftssikkerhed",
-     "id": "aec8ad7c-dc03-4607-b66b-9ceb251eb6b4",
-     "references": [
-      "41f6b84b-a6a6-4515-a325-ebfac4df2798",
-      "63b705fd-2824-4117-b80a-951fe23b1396"
-     ]
     }
    },
-   "rating": 4.65909090909091,
-   "count": 44,
-   "reviewCount": 29,
+   "rating": 4.66666666666667,
+   "count": 45,
+   "reviewCount": 30,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 3,
     "4": 9,
-    "5": 32
+    "5": 33
    }
   },
   "brandName": "Bluesound",

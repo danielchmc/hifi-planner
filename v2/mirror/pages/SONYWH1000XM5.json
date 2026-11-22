@@ -13,6 +13,23 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.2 ( LDAC, AAC, SBC )"
+  },
+  "gallery": [
+   "3cb7cba4-ce14-4028-90d0-05e22cef5cf7",
+   "e18158a9-d897-4856-8321-9cdc1658e891",
+   "b8639565-bcf9-4760-a354-3c36efcc8c52",
+   "15dfee59-3071-482f-ad5e-41b1311f5495",
+   "bce60c46-aa32-4cce-ae80-9820b8dd246a",
+   "2314e451-ec27-42cd-8bfe-b7f4186083b8",
+   "052a8f2d-6c56-4cf8-82aa-fd9f870be075",
+   "cf00a2e8-f60c-47ea-8bcf-4dd3194082e4",
+   "3c69991e-7d5c-46d1-b9df-6c8ff45be372"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 176002,
   "skuCode": "SONYWH1000XM5",
@@ -741,59 +758,60 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony WH-1000XM5 får stor ros for varm, kraftfuld og medrivende lyd, god komfort, lang batteritid og effektiv støjreduktion. Høretelefonerne egner sig især godt til rejser, arbejde og træning, mens lydjustering via appen giver ekstra fleksibilitet. Bluetooth-oplevelsen er dog ikke helt ensartet, da én anmeldelse nævner afbrydelser efter cirka 30 minutter, mens en anden beskriver forbindelsen som problemfri.",
+   "summary": "Disse hovedtelefoner leverer en varm, kraftfuld og omsluttende lyd med fremragende detaljer i musikken. Komforten får gennemgående ros, mens den lange batteritid og effektive støjreduktion gør dem særligt velegnede til rejser og daglig brug. Bluetooth-forbindelsen fungerer for det meste problemfrit, selv om én anmeldelse nævner afbrydelser, og servicen beskrives som hjælpsom og kompetent.",
    "headlines": {
     "rich, powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent lyden som lækker, fremragende, fantastisk og i topklasse med en kraftfuld og engagerende karakter.",
-     "simpleTitle": "Fyldig og kraftfuld lyd",
+     "sentimentAnalysis": "Lyden roses som lækkert sprød, fantastisk, fremragende og detaljeret.",
+     "simpleTitle": "Fyldig, kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "25afeb0f-9ea5-479a-8b4c-30fe2aa9d6aa"
+     "groupId": "c68bfe8e-5572-4815-a1d7-d5c85aac7716"
     },
     "comfortable for extended wear": {
-     "sentimentAnalysis": "Flere anmeldelser roser høretelefonerne for at være behagelige, sidde godt og ikke give smerter, også under træning og lang tids brug.",
+     "sentimentAnalysis": "Høretelefonerne opleves gennemgående som behagelige, også under træning og lange lytteperioder.",
      "simpleTitle": "Behagelige ved længere tids brug",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "ceb4f487-0e1a-4f09-9020-290d6bc4218a"
+     "groupId": "a5edcb0b-0d77-4c45-9dd3-a3e5856122be"
     },
-    "long battery life": {
-     "sentimentAnalysis": "Batteritiden roses gentagne gange som god eller meget god og understøtter lang tids brug.",
+    "long-lasting battery": {
+     "sentimentAnalysis": "Batteritiden beskrives gentagne gange som god eller meget god.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
      "key": "battery",
-     "groupId": "dd2f2688-7015-444a-88ac-498012bc6121"
+     "groupId": "295c87d9-7e9c-46e4-b769-63c7fb2e4a0e"
     },
     "powerful noise cancellation": {
-     "sentimentAnalysis": "Begge anmeldelser fremhæver den meget effektive støjreduktion, som gør støjende omgivelser mere rolige og behagelige.",
-     "simpleTitle": "Effektiv støjreduktion",
+     "sentimentAnalysis": "Støjreduktionen beskrives som ekstremt kraftig og kan justeres via appen.",
+     "simpleTitle": "Kraftig støjreduktion",
      "bias": "positive",
      "key": "noise-cancellation",
-     "groupId": "98f4daa6-ad02-4cfc-b266-154dde137eaf"
+     "groupId": "73ed374a-2cae-4fd2-adf5-ec4fdd80d854"
     },
-    "helpful, knowledgeable service": {
-     "sentimentAnalysis": "Begge anmeldelser udtrykker tydelig tilfredshed med rådgivningen og serviceoplevelsen i butikken.",
-     "simpleTitle": "Hjælpsom og kompetent service",
-     "bias": "positive",
-     "key": "service",
-     "groupId": "4ffaaa38-21a6-431e-9426-7a0e950f6997"
+    "mostly smooth Bluetooth connection": {
+     "sentimentAnalysis": "Én anmeldelse roser den problemfri Bluetooth-brug, mens en anden rapporterer afbrydelser efter cirka 30 minutter.",
+     "simpleTitle": "For det meste problemfri Bluetooth-forbindelse",
+     "bias": "meh",
+     "key": "connectivity",
+     "groupId": "b54150ed-cbbe-4d0e-884e-f31067e1b01c"
     }
    },
    "grouping": {
-    "25afeb0f-9ea5-479a-8b4c-30fe2aa9d6aa": {
+    "c68bfe8e-5572-4815-a1d7-d5c85aac7716": {
      "title": "Lydkvalitet",
-     "id": "25afeb0f-9ea5-479a-8b4c-30fe2aa9d6aa",
+     "id": "c68bfe8e-5572-4815-a1d7-d5c85aac7716",
      "references": [
       "08f85e14-54bc-4919-a6d7-7df83d417493",
       "80acd04f-0b37-4e08-9a4c-e180b7a61883",
       "1fef6725-9067-475a-a390-934bdb174d12",
       "cabed620-c0df-4e71-9e49-37ffb95a4d22",
+      "4e7990a7-9ef0-4c0b-9069-9953e5214cf2",
       "59dd8f80-7bd3-41b0-b772-33ba3a7b618d"
      ]
     },
-    "ceb4f487-0e1a-4f09-9020-290d6bc4218a": {
+    "a5edcb0b-0d77-4c45-9dd3-a3e5856122be": {
      "title": "Komfort",
-     "id": "ceb4f487-0e1a-4f09-9020-290d6bc4218a",
+     "id": "a5edcb0b-0d77-4c45-9dd3-a3e5856122be",
      "references": [
       "08f85e14-54bc-4919-a6d7-7df83d417493",
       "4603ba5f-7de2-4317-a043-7f01ac8f62ec",
@@ -802,29 +820,29 @@
       "59dd8f80-7bd3-41b0-b772-33ba3a7b618d"
      ]
     },
-    "dd2f2688-7015-444a-88ac-498012bc6121": {
+    "295c87d9-7e9c-46e4-b769-63c7fb2e4a0e": {
      "title": "Batteritid",
-     "id": "dd2f2688-7015-444a-88ac-498012bc6121",
+     "id": "295c87d9-7e9c-46e4-b769-63c7fb2e4a0e",
      "references": [
       "4603ba5f-7de2-4317-a043-7f01ac8f62ec",
       "80acd04f-0b37-4e08-9a4c-e180b7a61883",
       "59dd8f80-7bd3-41b0-b772-33ba3a7b618d"
      ]
     },
-    "98f4daa6-ad02-4cfc-b266-154dde137eaf": {
+    "73ed374a-2cae-4fd2-adf5-ec4fdd80d854": {
      "title": "Støjreduktion",
-     "id": "98f4daa6-ad02-4cfc-b266-154dde137eaf",
+     "id": "73ed374a-2cae-4fd2-adf5-ec4fdd80d854",
      "references": [
       "cabed620-c0df-4e71-9e49-37ffb95a4d22",
       "4e7990a7-9ef0-4c0b-9069-9953e5214cf2"
      ]
     },
-    "4ffaaa38-21a6-431e-9426-7a0e950f6997": {
-     "title": "Kundeservice",
-     "id": "4ffaaa38-21a6-431e-9426-7a0e950f6997",
+    "b54150ed-cbbe-4d0e-884e-f31067e1b01c": {
+     "title": "Forbindelse",
+     "id": "b54150ed-cbbe-4d0e-884e-f31067e1b01c",
      "references": [
-      "a42e0243-abd8-4be7-9a2d-6470d6e95554",
-      "d5f6bb30-766e-45b9-8c14-1e633c58ba02"
+      "d5d10219-c0e8-444c-a935-70b68a06cc00",
+      "1fef6725-9067-475a-a390-934bdb174d12"
      ]
     }
    },

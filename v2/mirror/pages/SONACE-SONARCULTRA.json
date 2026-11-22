@@ -13,16 +13,24 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "67268113-66c3-4ac1-8bfa-5ff15047a445",
+   "ccfc7433-e755-4885-bb07-5a3dc23d1d53"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 242225,
   "skuCode": "SONACE-SONARCULTRA",
   "recommendedAccessories": {
    "productCodes": [
     "SONARCULTRAWM",
-    "SONSUBG3",
     "SONERA100",
     "SONERA300",
-    "SONSUBG4"
+    "SONSUBG4",
+    "SONSUBG3"
    ],
    "isOutlet": "false"
   },
@@ -335,7 +343,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 308,
+        "availableQuantity": 256,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.499,-",
@@ -358,7 +366,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 164,
+        "availableQuantity": 145,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.499,-",
@@ -370,83 +378,73 @@
      ],
      "parentProductCode": "SONACE",
      "reviews": {
-      "summary": "SONOS Ace leverer en varm, fyldig og omsluttende lydoplevelse, især med imponerende rumklang til film og TV. Den effektive støjreduktion, den behagelige pasform og det problemfri skift fra soundbar gør hovedtelefonerne særligt attraktive i et Sonos-system. Lydkvaliteten når ikke altid niveauet fra de bedste dedikerede hi-fi-modeller, mens manglende Wi-Fi, app-problemer og lejlighedsvise forbindelsesproblemer dæmper den ellers meget positive vurdering.",
+      "summary": "SONOS Ace leverer en varm, detaljeret og omsluttende lyd med især fyldig filmlyd og overbevisende rumlig surround. Komfort, førsteklasses byggekvalitet og effektiv støjreduktion gør hovedtelefonerne velegnede til rejser, arbejde og lang tids lytning. Den problemfri overførsel af TV- og soundbar-lyd er en fremragende funktion for eksisterende Sonos-ejere, selv om begrænset Wi-Fi-integration, app-problemer og lejlighedsvise forbindelsesproblemer forhindrer en helt fejlfri oplevelse.",
       "headlines": {
-       "warm, detailed and immersive sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den klare, fyldige og rumlige gengivelse, især til film, spil og TV.",
-        "simpleTitle": "Varm, detaljeret og omsluttende lyd",
+       "seamless TV and soundbar audio swapping": {
+        "sentimentAnalysis": "Swap-funktionen beskrives gentagne gange som praktisk, omsluttende og ideel til TV-kiggeri uden at forstyrre andre.",
+        "simpleTitle": "Problemfri skift mellem TV- og soundbar-lyd",
+        "bias": "positive",
+        "key": "sonos",
+        "groupId": "eaef5bae-a424-431d-ba64-0257ff959882"
+       },
+       "warm, immersive sound with strong film and spatial audio": {
+        "sentimentAnalysis": "Anmeldelserne roser konsekvent den fyldige, klare og omsluttende gengivelse, især til film, spil og rumlig lyd.",
+        "simpleTitle": "Varm, omsluttende lyd med stærk film- og rumlig lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "b08a8fac-6ce7-4ed6-a215-20f3b6f3d24c"
+        "groupId": "43c9978a-002d-463e-ab55-fb47b9499435"
        },
-       "seamless soundbar switching": {
-        "sentimentAnalysis": "Overførsel af TV-lyd og omsluttende surround er fremragende funktioner til stille TV-aftener i et Sonos-system.",
-        "simpleTitle": "Problemfrit skift fra soundbar",
-        "bias": "positive",
-        "key": "tv-integration",
-        "groupId": "a5f263ee-c7e9-4322-ab17-8a31cc2edbec"
-       },
-       "excellent noise cancellation": {
-        "sentimentAnalysis": "Støjreduktionen beskrives gentagne gange som kraftig, effektiv og tæt på den bedste i klassen.",
-        "simpleTitle": "Fremragende støjreduktion",
-        "bias": "positive",
-        "key": "noise-cancellation",
-        "groupId": "90145e30-2a10-4c48-b88b-ec9959f1c686"
-       },
-       "comfortable for long listening": {
-        "sentimentAnalysis": "Den lette, sikre og trykfri pasform roses ofte til arbejde, rejser og længere tids brug.",
-        "simpleTitle": "Behagelige ved lang tids brug",
+       "excellent comfort for long listening": {
+        "sentimentAnalysis": "Mange anmeldelser beskriver en komfortabel og sikker pasform, der forbliver behagelig i timevis, også med briller.",
+        "simpleTitle": "Fremragende komfort til lang tids lytning",
         "bias": "positive",
         "key": "comfort",
-        "groupId": "574db250-5738-496b-a683-e03407c98457"
+        "groupId": "d67a5461-6573-4756-9f86-533b34adf2aa"
        },
-       "wi-Fi and app limitations reduce system integration": {
-        "sentimentAnalysis": "Manglende Wi-Fi-integration, begrænset samtidig afspilning og frustrerende appoplevelser er tilbagevendende kritikpunkter.",
-        "simpleTitle": "Wi-Fi- og appbegrænsninger svækker systemintegrationen",
-        "bias": "negative",
-        "key": "tv-integration",
-        "groupId": "a5f263ee-c7e9-4322-ab17-8a31cc2edbec"
-       },
-       "battery lasts through long journeys": {
-        "sentimentAnalysis": "Batteritiden opfattes som pålidelig med omkring 30 timer og rigelig kapacitet til flyrejser, rejser og daglig brug.",
-        "simpleTitle": "Batteriet holder på lange rejser",
+       "powerful noise cancellation for travel and work": {
+        "sentimentAnalysis": "Støjreduktionen roses bredt til kontor, flyrejser og offentlig transport, mens transparenstilstanden også får positiv omtale.",
+        "simpleTitle": "Effektiv støjreduktion til rejser og arbejde",
         "bias": "positive",
-        "key": "battery",
-        "groupId": "c76986af-1684-4bcb-b238-3a196e3730a5"
+        "key": "noise",
+        "groupId": "380de077-fe98-456e-b62f-1b5240db948f"
        },
-       "bass and hi-fi detail can lag behind rivals": {
-        "sentimentAnalysis": "Nogle sammenligninger finder svagere diskant, bas eller samlet hi-fi-forfinelse end hos konkurrerende premiumhovedtelefoner.",
-        "simpleTitle": "Bas og hi-fi-detaljer halter efter konkurrenterne",
+       "limited Wi-Fi integration and app experience": {
+        "sentimentAnalysis": "Flere anmeldelser kritiserer manglende Wi-Fi som selvstændig Sonos-enhed og beskriver appen som skuffende eller ubrugelig.",
+        "simpleTitle": "Begrænset Wi-Fi-integration og appoplevelse",
+        "bias": "negative",
+        "key": "sonos",
+        "groupId": "eaef5bae-a424-431d-ba64-0257ff959882"
+       },
+       "sound quality falls short for some audiophile listeners": {
+        "sentimentAnalysis": "En mindre gruppe vurderer lyden som mindre raffineret end hos konkurrerende premium-hovedtelefoner og kritiserer delvist bas, diskant og equalizer-muligheder.",
+        "simpleTitle": "Lydkvaliteten skuffer nogle HiFi-lyttere",
         "bias": "negative",
         "key": "sound",
-        "groupId": "b08a8fac-6ce7-4ed6-a215-20f3b6f3d24c"
-       },
-       "noise cancellation can be affected by fit": {
-        "sentimentAnalysis": "Flere anmeldelser bemærker, at udefrakommende støj kan trænge igennem i krævende omgivelser eller ved en mindre god pasform.",
-        "simpleTitle": "Støjreduktionen kan påvirkes af pasformen",
-        "bias": "negative",
-        "key": "noise-cancellation",
-        "groupId": "90145e30-2a10-4c48-b88b-ec9959f1c686"
+        "groupId": "43c9978a-002d-463e-ab55-fb47b9499435"
        }
       },
       "grouping": {
-       "b08a8fac-6ce7-4ed6-a215-20f3b6f3d24c": {
+       "43c9978a-002d-463e-ab55-fb47b9499435": {
         "title": "Lydkvalitet",
-        "id": "b08a8fac-6ce7-4ed6-a215-20f3b6f3d24c",
+        "id": "43c9978a-002d-463e-ab55-fb47b9499435",
         "references": [
          "569c83f4-96a1-4af5-8e67-66a90ccea5b5",
          "c3270d4c-d1c2-43e3-8d86-acd10ef02a99",
          "5bde4456-a1a8-4859-8731-0f3fcc5d705d",
-         "70263842-9d38-4cf2-b413-86ffb89b1323",
+         "882f168c-cb47-4b89-bc74-749e9216eab8",
          "b76cc956-5040-4362-9250-042409e525ca",
+         "70263842-9d38-4cf2-b413-86ffb89b1323",
          "3f0f2d80-cbb0-490e-8ba8-00822cacee62",
          "ca4c01f2-aaae-4b30-b26a-f97fbcc99744",
          "733c434c-f588-4aa5-8076-ba33133aaa2a",
+         "e264cff2-bd9a-4a4c-8f89-21463499f969",
          "00b4b382-4881-47c0-9320-44996c6b7bdc",
          "52714757-510f-46ec-90c8-f979d7d225eb",
          "1d1cca37-bd8b-4c32-a7cf-5b72e4b05a9d",
          "4e3e16d5-1f27-4258-9a35-f7b25933dc0b",
          "92200518-8bab-4657-aa9e-c4ef2e146254",
+         "9c6c7d34-8dcb-43a5-a0d5-d5ea666b9ecf",
+         "a8f7cfe1-0f58-4fe7-8465-5b71d54c21f0",
          "b728f758-9927-44c3-8ff4-b1997a624992",
          "3552849c-1d0c-427a-9654-30ffcde682e1",
          "1961841a-320f-4c8d-9f72-a53079fa2d62",
@@ -454,19 +452,30 @@
          "6acae084-84d9-45b8-9181-f9ab7ace145e",
          "f5c0f7a0-0389-4618-b55b-6fa5c60e9f20",
          "59105415-a720-4a1d-ad01-0160151a34c1",
+         "3b6e1bbd-0af8-41e0-b705-2d8741f489e6",
          "37a69638-fde4-4bd6-bffa-a429109cc1d5",
          "6a4aedd3-b205-4766-8626-11f105f003ec",
          "7ebf988e-9521-4a29-95e4-45c7c4d22158",
          "b2f22014-ccb2-4c3c-a6a6-f41aa9d0a440",
+         "185d4543-6d3e-4709-b256-044923fcba29",
          "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
          "37a30bcf-e038-4cbe-a1fc-cd618f4eb0bb",
+         "6946b440-b9c9-4ea3-bdf6-8099e91c2551",
+         "a7f68b68-bb95-446f-9190-200c72b5403a",
+         "c734cb38-1615-4fc3-96c4-6f14fa0b1481",
          "4a7a590a-e198-4a54-9896-0a67049d0365",
+         "6dc145be-549f-4cc5-8092-73e0ef197e32",
          "a8aa54d8-b42f-4d62-bc6d-adbe08c05f58",
          "517a85d0-d01c-4131-b5fc-6b095b427c7c",
+         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
+         "28a1c4a0-dbf4-4d76-b182-1ad7f98c3f49",
+         "f178f63c-c0a2-4f2b-a32a-3c522f229a96",
          "729cd872-62ee-4cd7-8391-af3c2dab01e1",
          "4bc7486a-f97f-450d-8790-dfe21b797c76",
+         "5198d3f8-a229-48e0-a0bf-83d7e7386091",
          "9cd265ec-614a-4935-9e8a-da18471ec43f",
          "2c2f74d5-e0ec-40e2-bc73-e02416196b25",
+         "2276cd61-2e4a-4d48-9d2b-24ba8a44a738",
          "e4429a65-61a1-479b-aa8e-c5b18d3c564a",
          "d3164d40-b371-42a3-a7f7-c40b998747c8",
          "7d332e50-fef4-495d-a50f-67723fa2df0e",
@@ -475,80 +484,34 @@
          "61e14b02-6b75-4056-ba0a-2c10c8b36dc6",
          "200054b0-7d3c-4233-adae-2545b1d52d65",
          "eeb63b79-d8f7-40ed-85e7-3e08b80e853f",
+         "fbd00cc4-e546-42e0-b4af-5503f02fba86",
+         "09389055-5b01-482f-900d-d46b296c1227",
+         "66c819a0-47e3-49a5-a95f-9e0945d47c85",
+         "23d87049-55d7-413c-a8e6-1cc0b09868c9",
+         "efd29a51-c73e-45b2-94e9-65751184296f",
          "8d64d1c4-cb83-461f-b76f-2a93c96569e6",
+         "12d52e4b-0527-4398-831e-bcef0822932a",
          "cdec50ec-dff7-4f1c-9f2e-120d591d42a0",
          "d3cd7dab-a563-4782-b300-46931a66c7c7",
          "e85e6850-a9ea-44b0-a392-8c465c36a4d3",
          "ef42aa58-a9f1-46f4-8922-fbd8fae17565"
         ]
        },
-       "90145e30-2a10-4c48-b88b-ec9959f1c686": {
-        "title": "Støjreduktion",
-        "id": "90145e30-2a10-4c48-b88b-ec9959f1c686",
-        "references": [
-         "da0b35c6-1383-42f9-994c-03a02df20eca",
-         "882f168c-cb47-4b89-bc74-749e9216eab8",
-         "00b4b382-4881-47c0-9320-44996c6b7bdc",
-         "9c6c7d34-8dcb-43a5-a0d5-d5ea666b9ecf",
-         "a8f7cfe1-0f58-4fe7-8465-5b71d54c21f0",
-         "d31329e6-0b5e-4bd8-893d-55118c3e0b8b",
-         "d5ca12a3-278c-4019-b7fb-d0cabe6444c4",
-         "7ebf988e-9521-4a29-95e4-45c7c4d22158",
-         "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
-         "dbcc356a-94bd-4ccd-b2ab-f39e2e931cc3",
-         "f6d80c1b-c971-404d-8da7-2e3062ccccf5",
-         "a8aa54d8-b42f-4d62-bc6d-adbe08c05f58",
-         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
-         "28a1c4a0-dbf4-4d76-b182-1ad7f98c3f49",
-         "2276cd61-2e4a-4d48-9d2b-24ba8a44a738",
-         "7eaad262-6cd5-450f-8ccf-7a181607b0f7",
-         "95d04e30-413c-483e-b712-4ae160ab440b",
-         "61e14b02-6b75-4056-ba0a-2c10c8b36dc6",
-         "0582abda-fa09-41f5-8953-87b1492b4dd9",
-         "23d87049-55d7-413c-a8e6-1cc0b09868c9",
-         "efd29a51-c73e-45b2-94e9-65751184296f",
-         "60736abf-4b6c-47ce-a9c6-33de92b36ce1",
-         "e4429a65-61a1-479b-aa8e-c5b18d3c564a",
-         "d3164d40-b371-42a3-a7f7-c40b998747c8"
-        ]
-       },
-       "574db250-5738-496b-a683-e03407c98457": {
-        "title": "Komfort",
-        "id": "574db250-5738-496b-a683-e03407c98457",
-        "references": [
-         "c3270d4c-d1c2-43e3-8d86-acd10ef02a99",
-         "831f6afd-43d3-42b2-a504-6536d10a56fa",
-         "ca4c01f2-aaae-4b30-b26a-f97fbcc99744",
-         "b728f758-9927-44c3-8ff4-b1997a624992",
-         "3552849c-1d0c-427a-9654-30ffcde682e1",
-         "d31329e6-0b5e-4bd8-893d-55118c3e0b8b",
-         "d5ca12a3-278c-4019-b7fb-d0cabe6444c4",
-         "59105415-a720-4a1d-ad01-0160151a34c1",
-         "fa7a15b5-0d55-4893-b4d3-a84275da2b42",
-         "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
-         "dbcc356a-94bd-4ccd-b2ab-f39e2e931cc3",
-         "37a30bcf-e038-4cbe-a1fc-cd618f4eb0bb",
-         "f6d80c1b-c971-404d-8da7-2e3062ccccf5",
-         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
-         "76458bd3-f7d4-4fe1-b689-a4d32df85e1d",
-         "4bc7486a-f97f-450d-8790-dfe21b797c76",
-         "9cd265ec-614a-4935-9e8a-da18471ec43f",
-         "7d332e50-fef4-495d-a50f-67723fa2df0e",
-         "e4429a65-61a1-479b-aa8e-c5b18d3c564a",
-         "cdec50ec-dff7-4f1c-9f2e-120d591d42a0",
-         "eeb63b79-d8f7-40ed-85e7-3e08b80e853f",
-         "fbd00cc4-e546-42e0-b4af-5503f02fba86"
-        ]
-       },
-       "a5f263ee-c7e9-4322-ab17-8a31cc2edbec": {
-        "title": "TV- og Sonos-integration",
-        "id": "a5f263ee-c7e9-4322-ab17-8a31cc2edbec",
+       "eaef5bae-a424-431d-ba64-0257ff959882": {
+        "title": "Sonos-integration",
+        "id": "eaef5bae-a424-431d-ba64-0257ff959882",
         "references": [
          "c3270d4c-d1c2-43e3-8d86-acd10ef02a99",
          "3f0f2d80-cbb0-490e-8ba8-00822cacee62",
          "4e3e16d5-1f27-4258-9a35-f7b25933dc0b",
+         "a8f7cfe1-0f58-4fe7-8465-5b71d54c21f0",
          "3552849c-1d0c-427a-9654-30ffcde682e1",
          "3b6e1bbd-0af8-41e0-b705-2d8741f489e6",
+         "37a69638-fde4-4bd6-bffa-a429109cc1d5",
+         "cfb8ab9b-bcae-4322-afc3-c3c2f060623b",
+         "b2f22014-ccb2-4c3c-a6a6-f41aa9d0a440",
+         "185d4543-6d3e-4709-b256-044923fcba29",
+         "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
          "37a30bcf-e038-4cbe-a1fc-cd618f4eb0bb",
          "a7f68b68-bb95-446f-9190-200c72b5403a",
          "c734cb38-1615-4fc3-96c4-6f14fa0b1481",
@@ -556,6 +519,7 @@
          "6dc145be-549f-4cc5-8092-73e0ef197e32",
          "a8aa54d8-b42f-4d62-bc6d-adbe08c05f58",
          "517a85d0-d01c-4131-b5fc-6b095b427c7c",
+         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
          "f178f63c-c0a2-4f2b-a32a-3c522f229a96",
          "2276cd61-2e4a-4d48-9d2b-24ba8a44a738",
          "7eaad262-6cd5-450f-8ccf-7a181607b0f7",
@@ -564,23 +528,75 @@
          "eeb63b79-d8f7-40ed-85e7-3e08b80e853f",
          "0582abda-fa09-41f5-8953-87b1492b4dd9",
          "5cd16d6a-2a23-4cbc-8195-3f1c09ca4f2e",
-         "53ce0cef-4e4a-4e6e-81c5-aac8a0f0c454",
+         "53ce0cef-4e4e-81c5-aac8a0f0c454",
          "12d52e4b-0527-4398-831e-bcef0822932a",
          "ef42aa58-a9f1-46f4-8922-fbd8fae17565"
         ]
        },
-       "c76986af-1684-4bcb-b238-3a196e3730a5": {
-        "title": "Batteritid",
-        "id": "c76986af-1684-4bcb-b238-3a196e3730a5",
+       "d67a5461-6573-4756-9f86-533b34adf2aa": {
+        "title": "Komfort",
+        "id": "d67a5461-6573-4756-9f86-533b34adf2aa",
         "references": [
+         "c3270d4c-d1c2-43e3-8d86-acd10ef02a99",
          "831f6afd-43d3-42b2-a504-6536d10a56fa",
-         "e264cff2-bd9a-4a4c-8f89-21463499f969",
-         "52714757-510f-46ec-90c8-f979d7d225eb",
+         "ca4c01f2-aaae-4b30-b26a-f97fbcc99744",
+         "92200518-8bab-4657-aa9e-c4ef2e146254",
+         "b728f758-9927-44c3-8ff4-b1997a624992",
          "3552849c-1d0c-427a-9654-30ffcde682e1",
+         "d31329e6-0b5e-4bd8-893d-55118c3e0b8b",
+         "d5ca12a3-278c-4019-b7fb-d0cabe6444c4",
+         "f5c0f7a0-0389-4618-b55b-6fa5c60e9f20",
+         "59105415-a720-4a1d-ad01-0160151a34c1",
+         "fa7a15b5-0d55-4893-b4d3-a84275da2b42",
          "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
+         "dbcc356a-94bd-4ccd-b2ab-f39e2e931cc3",
+         "37a30bcf-e038-4cbe-a1fc-cd618f4eb0bb",
+         "f6d80c1b-c971-404d-8da7-2e3062ccccf5",
+         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
+         "76458bd3-f7d4-4fe1-b689-a4d32df85e1d",
+         "cdec50ec-dff7-4f1c-9f2e-120d591d42a0",
+         "fbd00cc4-e546-42e0-b4af-5503f02fba86",
+         "66c819a0-47e3-49a5-a95f-9e0945d47c85",
+         "5cd16d6a-2a23-4cbc-8195-3f1c09ca4f2e",
+         "4bc7486a-f97f-450d-8790-dfe21b797c76",
+         "9cd265ec-614a-4935-9e8a-da18471ec43f",
+         "e4429a65-61a1-479b-aa8e-c5b18d3c564a",
+         "eeb63b79-d8f7-40ed-85e7-3e08b80e853f",
+         "60736abf-4b6c-47ce-a9c6-33de92b36ce1",
+         "95d04e30-413c-483e-b712-4ae160ab440b"
+        ]
+       },
+       "380de077-fe98-456e-b62f-1b5240db948f": {
+        "title": "Støjreduktion",
+        "id": "380de077-fe98-456e-b62f-1b5240db948f",
+        "references": [
+         "da0b35c6-1383-42f9-994c-03a02df20eca",
+         "882f168c-cb47-4b89-bc74-749e9216eab8",
+         "00b4b382-4881-47c0-9320-44996c6b7bdc",
+         "9c6c7d34-8dcb-43a5-a0d5-d5ea666b9ecf",
+         "a8f7cfe1-0f58-4fe7-8465-5b71d54c21f0",
+         "d31329e6-0b5e-4bd8-893d-55118c3e0b8b",
+         "d5ca12a3-278c-4019-b7fb-d0cabe6444c4",
+         "3b6e1bbd-0af8-41e0-b705-2d8741f489e6",
+         "7ebf988e-9521-4a29-95e4-45c7c4d22158",
+         "1909157c-8ad2-4e9a-8bfd-9e158ee4fd42",
+         "dbcc356a-94bd-4ccd-b2ab-f39e2e931cc3",
          "6946b440-b9c9-4ea3-bdf6-8099e91c2551",
-         "a7f68b68-bb95-446f-9190-200c72b5403a",
-         "7eaad262-6cd5-450f-8ccf-7a181607b0f7"
+         "6f?",
+         "a8aa54d8-b42f-4d62-bc6d-adbe08c05f58",
+         "de42a967-ffe2-4fe9-8389-896c6b4a6ee6",
+         "28a1c4a0-dbf4-4d76-b182-1ad7f98c3f49",
+         "7eaad262-6cd5-450f-8ccf-7a181607b0f7",
+         "95d04e30-413c-483e-b712-4ae160ab440b",
+         "61e14b02-6b75-4056-ba0a-2c10c8b36dc6",
+         "2276cd61-2e4a-4d48-9d2b-24ba8a44a738",
+         "d3164d40-b371-42a3-a7f7-c40b998747c8",
+         "66c819a0-47e3-49a5-a95f-9e0945d47c85",
+         "23d87049-55d7-413c-a8e6-1cc0b09868c9",
+         "e4429a65-61a1-479b-aa8e-c5b18d3c564a",
+         "0582abda-fa09-41f5-8953-87b1492b4dd9",
+         "ef42aa58-a9f1-46f4-8922-fbd8fae17565",
+         "60736abf-4b6c-47ce-a9c6-33de92b36ce1"
         ]
        }
       },
@@ -616,7 +632,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1152,
+        "availableQuantity": 1044,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.379,-",
@@ -639,7 +655,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 362,
+        "availableQuantity": 317,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.379,-",
@@ -651,48 +667,48 @@
      ],
      "parentProductCode": "SONARCULTRA",
      "reviews": {
-      "summary": "SONARCULTRA roses bredt for enestående klar, rummelig og biografagtig lyd, kraftig bas, tydelige stemmer og imponerende Dolby Atmos-gengivelse. Soundbaren leverer ofte en fyldig lyd, der fylder rummet, uden separat subwoofer, mens ekstra Sub- og Era-højttalere kan skabe en endnu mere omsluttende hjemmebiograf. Opsætningen er generelt enkel, og produktet opleves som en stor opgradering i forhold til ældre Sonos-modeller, selv om enkelte anmeldelser nævner problemer med forbindelse, app, synkronisering, pris og kompatibilitet.",
+      "summary": "SONARCULTRA leverer et varmt, kraftfuldt og meget omsluttende lydbillede med tydelige dialoger, detaljeret musik og overraskende dyb bas fra én soundbar. Dolby Atmos og udvidede Sonos-systemer med Sub- og Era-højttalere kan skabe en overbevisende biografoplevelse, mens opsætningen generelt er hurtig og enkel. Enkelte oplever forbindelses-, app-, synkroniserings- eller lydstyrkeproblemer, og den høje pris samt et lejlighedsvist behov for Sub dæmper den ellers meget begejstrede vurdering.",
       "headlines": {
-       "a major upgrade over older Sonos models": {
-        "sentimentAnalysis": "Sammenlignet med tidligere Beam- og Arc-modeller nævner anmeldelser ofte tydeligere tale, dybere bas, større rummelighed og en samlet mere kapabel gengivelse.",
-        "simpleTitle": "En stor opgradering i forhold til ældre Sonos-modeller",
+       "warm, detailed and immersive sound": {
+        "sentimentAnalysis": "Anmeldelserne beskriver en klar, fyldig og biografisk lyd, der engagerer med stærk musikgengivelse.",
+        "simpleTitle": "Varm, detaljeret og omsluttende lyd",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "d1d7d36b-a80e-4c65-86f3-b048410923d0"
+        "key": "sound_quality",
+        "groupId": "0397f5e3-0018-4779-a1c2-f8381ececcaa"
        },
-       "setup is quick and straightforward": {
-        "sentimentAnalysis": "Sonos-appen, den automatiske kalibrering og den guidede proces gør opsætningen nem for de fleste brugere.",
-        "simpleTitle": "Opsætningen er hurtig og enkel",
-        "bias": "positive",
-        "key": "setup",
-        "groupId": "2234ed01-d4e0-44a2-af85-154aec7ca88f"
-       },
-       "clear, spacious and cinematic sound": {
-        "sentimentAnalysis": "Anmeldelserne beskriver en bred, detaljeret og omsluttende gengivelse, der bringer film, musik og spil tæt på en biografoplevelse.",
-        "simpleTitle": "Klar, rummelig og biografagtig lyd",
-        "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "d1d7d36b-a80e-4c65-86f3-b048410923d0"
-       },
-       "powerful bass without a subwoofer": {
-        "sentimentAnalysis": "Mange anmeldelser oplever den indbyggede bas som dyb, ren og kraftig nok til normal lytning uden ekstra subwoofer.",
-        "simpleTitle": "Kraftig bas uden subwoofer",
+       "deep bass, often without a Sub": {
+        "sentimentAnalysis": "Mange anmeldelser roser soundbarens kraftfulde, kontrollerede og overraskende dybe bas, også uden en ekstern Sub.",
+        "simpleTitle": "Dyb bas, ofte uden Sub",
         "bias": "positive",
         "key": "bass",
-        "groupId": "24aa23f2-6895-4ac9-9e3c-1e8e678ab6c8"
+        "groupId": "8c60917d-6e36-4d5e-99c4-981d9af2eeff"
        },
-       "connection and compatibility issues occur": {
-        "sentimentAnalysis": "Nogle brugere rapporterer udfald, vanskelig integration med TV, problemer med læbesynkronisering eller Dolby Atmos samt en mindre intuitiv app.",
-        "simpleTitle": "Der opstår problemer med forbindelse og kompatibilitet",
-        "bias": "negative",
+       "easy installation and calibration": {
+        "sentimentAnalysis": "Opsætning, app-vejledning og rumkalibrering opleves generelt som hurtig, enkel og brugervenlig.",
+        "simpleTitle": "Nem opsætning og kalibrering",
+        "bias": "positive",
         "key": "setup",
-        "groupId": "2234ed01-d4e0-44a2-af85-154aec7ca88f"
+        "groupId": "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1"
+       },
+       "immersive cinema with Atmos and rear speakers": {
+        "sentimentAnalysis": "Atmos og ekstra Era-højttalere fremhæves ofte for at skabe et bredt, realistisk og biograflignende surroundfelt.",
+        "simpleTitle": "Omsluttende biograflyd med Atmos og baghøjttalere",
+        "bias": "positive",
+        "key": "surround",
+        "groupId": "2cfe1060-73a5-45e5-848b-480f12b51178"
+       },
+       "intermittent connection and app issues": {
+        "sentimentAnalysis": "En mindre gruppe rapporterer om ustabile forbindelser, en besværlig app, problemer med læbesynkronisering eller inkompatible Atmos-opsætninger.",
+        "simpleTitle": "Periodiske forbindelses- og appproblemer",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "a6e17550-d76b-4be0-a87b-e98746a15354"
        }
       },
       "grouping": {
-       "d1d7d36b-a80e-4c65-86f3-b048410923d0": {
+       "0397f5e3-0018-4779-a1c2-f8381ececcaa": {
         "title": "Lydkvalitet",
-        "id": "d1d7d36b-a80e-4c65-86f3-b048410923d0",
+        "id": "0397f5e3-0018-4779-a1c2-f8381ececcaa",
         "references": [
          "5ce758ba-174b-4180-9251-8313f5a21ec7",
          "34b4e73f-d33d-4110-a643-40942ed7a683",
@@ -703,7 +719,6 @@
          "1a4be9f5-0b7b-4b3d-b3aa-f89c16583d17",
          "19500ba7-39da-4e3c-b461-73f70b4c2aa9",
          "02d9df74-464e-47b0-af0f-b2b8b5224941",
-         "ad3ab224-d17a-4770-845a-f41cba7f05a7",
          "8eba5837-561e-4073-871d-041ab1594572",
          "9e052f2d-beda-4908-a22f-2de996e96763",
          "79a5e2b3-025d-4af0-bb17-c3d4bd2676a0",
@@ -713,6 +728,8 @@
          "5688a921-e4be-479d-a18c-3a6b5c799a18",
          "f1833fa0-058c-4de4-ae97-cf478eb3b608",
          "ac7e4d4a-0376-4bbe-b841-7d2f0d288ef4",
+         "c8d61a6b-cc11-4558-a40d-7c8cc625d16b",
+         "5f83d083-682c-4bc8-83c4-121ffeed665d",
          "3080eb6f-c719-4555-b1cb-68db11f6814d",
          "ec300da6-6efb-4e00-b875-675096ab8772",
          "13b89a93-97d7-4ddf-964f-56eeb190d5c9",
@@ -721,13 +738,16 @@
          "782ececc-1c48-49f9-bd4f-6c6598b4c983",
          "7eff3f25-bc40-49bd-8460-8a02cb4a4cc4",
          "203bd3b0-5545-4573-a199-8fe6fd9aa52b",
+         "300aa72a-bba4-4259-a596-bbb0f05ca5d2",
          "eeca69fd-e1d3-47c1-910b-81d52d36821e",
          "1beb442c-0d92-4186-8eac-e3d3db2c3230",
          "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
          "f90813ec-e50a-472d-a0c2-f0efb631ee0c",
          "d78cf216-5859-4f3e-8c48-6d55a157ef18",
+         "169eb1fb-a669-4e50-92b9-67eca7b3f0e0",
          "8cb812ce-27bc-48d7-9e7e-d248f373e829",
          "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
+         "61d3bf43-81be-4abc-8be5-3efce6224e57",
          "adc75951-16f4-4416-9dc5-55b934ba8ec2",
          "386f6c15-fd26-4345-b988-bd6e8f238c07",
          "53befd2e-d032-4207-ae10-428c5019dbf3",
@@ -743,30 +763,70 @@
          "0d0e2533-b28b-4bd8-883e-0bc746de117d",
          "a1f108c0-68bf-43da-aeec-d035a4299b94",
          "3fb2ca49-c7aa-41fa-a91c-751c84ab1ad7",
+         "e70e8c8b-e579-4f50-a623-958ba529953d",
+         "3b5e28b3-2a71-4990-8631-5701b5340791",
+         "63b1649a-fb0b-45e0-8d3f-684dda8199e2",
+         "c3ba28b4-d872-4af4-9fe2-cbf8e2762268",
+         "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
+         "4e75e5c0-4eb1-4183-a38c-2cf2979b67de",
+         "7ed6f962-9717-4943-8b40-70a1c5bee897",
+         "dc6ad7a2-e656-458b-abba-79be35c366fe",
+         "af46fe49-5667-4105-9f4f-893a0aa5f460",
+         "5bda3f25-ca68-4cc7-95f6-18a7b720fee2",
+         "f5468282-fac6-4184-8b64-d45c887ef2d5",
+         "85a1e4d1-1baa-4b6c-af1b-08015e90642d",
+         "f9b687d5-2e20-47ff-8c9e-37326ae515e2",
+         "e3d84155-c639-4a64-8ab8-6e11f3241e4e",
+         "9890fef0-3f70-4ff0-a8b5-aa580e4fcb2b",
+         "5414e5c9-c844-4563-8e09-45f2f53f0333",
+         "5a6eb94b-1e18-4732-b550-823864d72f5b",
+         "c1a25523-8c6b-458e-b372-2a0487c5d63a",
+         "143d30fc-80f4-4ddf-8f45-5df62d0d0fc0",
          "e49b60a1-49ae-49c3-b680-cacddfc0e075",
+         "52e0071a-c9bd-43a5-b79d-daf02b1c41c3",
          "387e1899-1dea-4114-a2f2-62a4cdbb033a",
          "e01a2f2c-954d-481f-a54e-b15a274783dd",
          "43142782-6871-440a-b243-73d24902c5a5",
+         "36709118-0286-40ce-82f3-31412f409b2e",
          "46789695-b0f6-4f63-a028-2e981fcb70f6",
+         "ec436bfa-a55e-4fb0-bbd9-246b4f051bc6",
          "2b25005b-dead-41a3-89ec-9a54fed3700f",
          "9f6179f6-1c58-4424-82ee-3c6d0042d438",
          "9a84adee-f9a8-4f6e-801f-b38c2c832b46",
+         "412b8de2-d166-4700-ba63-c735ccc21033",
+         "674ddb17-15e4-41ff-85fe-b64f89783e03",
+         "62e940e9-9f75-4d23-9091-f617689d64b5",
          "68f42110-6a23-4768-9a65-d04184e1931a",
          "3b256bc0-4ff2-43e2-980a-8c64308369a6",
+         "e3ab5ba2-f04a-4292-a354-1860c847edb3",
+         "391a4c70-b441-4d13-b7d8-34db3920cbf9",
          "53774021-cd5c-4978-bb74-55b6654ef68b",
          "c3a6cb8f-5742-4cd4-8179-401766a76c20",
          "880d8ed4-6747-4f85-b65a-30272ff88985",
+         "3f590382-9f7b-4574-aa8f-a631e9766248",
+         "423581ea-4607-4414-b8fc-e6fbfa6d2eea",
          "38cffeb5-81d2-4398-8cd3-556263d53f8e",
          "fafa29d7-d2af-47f9-ae6f-5955bbbc5aec",
+         "3182127f-edd7-4e52-b12a-d1f1c885a916",
          "b1feb64f-2269-45ad-9541-5cbfa95e3b24",
+         "557b3921-0bc9-415c-9c46-6ae66e0c15ca",
          "1b88461c-aec8-42c5-9ae3-cef5b7abf0f0",
+         "8ee5f6bc-21f9-44e8-9c66-bab10d483d9f",
          "3af918ed-8ef9-4a39-a913-89a8641baf90",
          "dbc01ae2-0674-445a-9a4d-829fedf8e32a",
+         "f1eb5fc3-68c8-47c2-848c-83358a1bb882",
          "1439ab8e-45a6-45ef-aeee-04718eba6c56",
+         "4bd7f707-92ab-4cfd-9ad9-785033d98907",
+         "cec04703-b6f3-4dc7-81c7-02510afc9180",
          "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
+         "6a3c6c70-e382-4dc9-8a18-061c26cec14c",
+         "224bc494-9ffc-42bf-8a7f-0053db898b42",
+         "18c0b0fe-1c3a-4e2c-9fbc-69faa729a4b1",
          "6ebeb0f9-e200-4528-9383-45476f359288",
          "91880db8-f6ee-4541-8b83-a0f357f0374e",
+         "62646f7f-e2fc-4d50-b1a0-355e4123a3e3",
          "055a2190-f459-4c03-bb1b-08813f131064",
+         "952f3e9c-02d5-4aed-8a49-0eb74d9332c8",
          "80afa99a-6d5d-46ce-baec-c648d610efbf",
          "e7716532-dbb2-4f76-b6fd-d6a6465da587",
          "48d6afad-7a45-4903-b166-273a99dad0d7",
@@ -778,9 +838,9 @@
          "165ce05f-4e06-4bfe-9fb5-37d484a83f1c"
         ]
        },
-       "24aa23f2-6895-4ac9-9e3c-1e8e678ab6c8": {
+       "8c60917d-6e36-4d5e-99c4-981d9af2eeff": {
         "title": "Bas",
-        "id": "24aa23f2-6895-4ac9-9e3c-1e8e678ab6c8",
+        "id": "8c60917d-6e36-4d5e-99c4-981d9af2eeff",
         "references": [
          "d0daffb3-b8d0-45ad-8e97-358da4be50b9",
          "317408f0-a4eb-4812-a16d-dd661ed70b7c",
@@ -789,33 +849,33 @@
          "7103cf15-58b9-49ad-aa77-02e875d4051c",
          "5688a921-e4be-479d-a18c-3a6b5c799a18",
          "eeca69fd-e1d3-47c1-910b-81d52d36821e",
-         "e8d5252f-7972-47b9-be50-cdb06c85aa2d",
          "169eb1fb-a669-4e50-92b9-67eca7b3f0e0",
          "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
-         "53befd2e-d032-4207-ae10-428c5019dbf3",
+         "adc75951-16f4-4416-9dc5-55b934ba8ec2",
          "66589524-7e32-4614-b27c-9148b1cb0e17",
          "7fb98d43-53f1-494b-89b7-1ed17856e56e",
          "44e1ea69-fcdc-4b6d-96fe-02112d075ec6",
          "c3ba28b4-d872-4af4-9fe2-cbf8e2762268",
          "af46fe49-5667-4105-9f4f-893a0aa5f460",
          "5bda3f25-ca68-4cc7-95f6-18a7b720fee2",
-         "5c0a3398-a0b6-49ef-a96b-f578ab29270e",
-         "5414e5c9-c844-4563-8e09-45f2f53f0333",
          "5a6eb94b-1e18-4732-b550-823864d72f5b",
          "e49b60a1-49ae-49c3-b680-cacddfc0e075",
          "480559f6-33ee-489b-860b-a84a0f069834",
          "46789695-b0f6-4f63-a028-2e981fcb70f6",
          "2b25005b-dead-41a3-89ec-9a54fed3700f",
          "9a84adee-f9a8-4f6e-801f-b38c2c832b46",
+         "68f42110-6a23-4768-9a65-d04184e1931a",
+         "e3ab5ba2-f04a-4292-a354-1860c847edb3",
          "dbc01ae2-0674-445a-9a4d-829fedf8e32a",
+         "1b88461c-aec8-42c5-9ae3-cef5b7abf0f0",
          "1439ab8e-45a6-45ef-aeee-04718eba6c56",
          "91880db8-f6ee-4541-8b83-a0f357f0374e",
          "774438d7-0d2e-4542-96a8-66e4d4ed9599"
         ]
        },
-       "2234ed01-d4e0-44a2-af85-154aec7ca88f": {
+       "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1": {
         "title": "Opsætning og installation",
-        "id": "2234ed01-d4e0-44a2-af85-154aec7ca88f",
+        "id": "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1",
         "references": [
          "8a9355d1-9458-4973-be59-65ba34014516",
          "19500ba7-39da-4e3c-b461-73f70b4c2aa9",
@@ -823,23 +883,66 @@
          "78b82db1-6ce8-40d6-8aad-85963df67fc6",
          "658871e9-f74b-48a1-9877-bd25aab7644b",
          "5688a921-e4be-479d-a18c-3a6b5c799a18",
-         "977742d9-cc88-4c03-a365-7f38c74d3d66",
          "13b89a93-97d7-4ddf-964f-56eeb190d5c9",
+         "977742d9-cc88-4c03-a365-7f38c74d3d66",
          "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
          "8c4764e9-4fb0-4be0-8621-9b09adfeccb6",
          "386f6c15-fd26-4345-b988-bd6e8f238c07",
-         "a0e06395-c0f3-4e04-acdc-898b48a3b2ae",
-         "64a8a6cd-07c7-4384-9b2f-1c53221b1fb6",
-         "a1f108c0-68bf-43da-aeec-d035a4299b94",
-         "0d0e2533-b28b-4bd8-883e-0bc746de117d",
-         "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
+         "4e75e5c0-4eb1-4183-a38c-2cf2979b67de",
          "143d30fc-80f4-4ddf-8f45-5df62d0d0fc0",
          "f9b687d5-2e20-47ff-8c9e-37326ae515e2",
+         "a0e06395-c0f3-4e04-acdc-898b48a3b2ae",
+         "64a8a6cd-07c7-4384-9b2f-1c53221b1fb6",
+         "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
+         "7ed6f962-9717-4943-8b40-70a1c5bee897",
+         "1a59d88d-7bd7-4494-be37-995c247bebd1",
          "e7d8e952-8f1b-4034-add2-42d62be91958",
          "3af918ed-8ef9-4a39-a913-89a8641baf90",
-         "53774021-cd5c-4978-bb74-55b6654ef68b",
          "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
-         "9a067117-462d-43e8-94a4-6ab2f3e1d31e"
+         "0d0e2533-b28b-4bd8-883e-0bc746de117d"
+        ]
+       },
+       "2cfe1060-73a5-45e5-848b-480f12b51178": {
+        "title": "Surround og Dolby Atmos",
+        "id": "2cfe1060-73a5-45e5-848b-480f12b51178",
+        "references": [
+         "fce1199c-6d51-4a0f-b8dc-03fd54643912",
+         "91c8d87b-90e2-49ea-869b-3a5263dd3e71",
+         "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
+         "203bd3b0-5545-4573-a199-8fe6fd9aa52b",
+         "8cb812ce-27bc-48d7-9e7e-d248f373e829",
+         "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
+         "755365ee-8328-486a-9c6b-1fd272bd4c27",
+         "3fb2ca49-c7aa-41fa-a91c-751c84ab1ad7",
+         "7ed6f962-9717-4943-8b40-70a1c5bee897",
+         "e7716532-dbb2-4f76-b6fd-d6a6465da587",
+         "f5468282-fac6-4184-8b64-d45c887ef2d5",
+         "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
+         "fafa29d7-d2af-47f9-ae6f-5955bbbc5aec",
+         "557b3921-0bc9-415c-9c46-6ae66e0c15ca",
+         "80afa99a-6d5d-46ce-baec-c648d610efbf",
+         "38cffeb5-81d2-4398-8cd3-556263d53f8e",
+         "892ceb68-7705-4d9e-b717-cdbc38214794",
+         "4a58dfee-5257-4fea-9660-05f460ff6af5",
+         "55233fbd-b604-49c6-8435-aeb62c783d32",
+         "3d4192e4-6c05-47e0-a2f9-1330fb76ad4b",
+         "4ae2a27e-7890-49bd-b9f5-37ffc463b573"
+        ]
+       },
+       "a6e17550-d76b-4be0-a87b-e98746a15354": {
+        "title": "Forbindelse og app",
+        "id": "a6e17550-d76b-4be0-a87b-e98746a15354",
+        "references": [
+         "c750e545-b390-4b62-83b8-2e079314dabc",
+         "d4244230-118d-4b9c-a8b3-141d00530911",
+         "7fb98d43-53f1-494b-89b7-1ed17856e56e",
+         "59e31d3c-d3f7-4abe-88f7-9d401fba2e7f",
+         "1a59d88d-7bd7-4494-be37-995c247bebd1",
+         "df748edb-7b7e-4b99-a3dc-4c47d92479a2",
+         "4ae2a27e-7890-49bd-b9f5-37ffc463b573",
+         "8ee5f6bc-21f9-44e8-9c66-bab10d483d9f",
+         "3d4192e4-6c05-47e0-a2f9-1330fb76ad4b",
+         "f1eb5fc3-68c8-47c2-848c-83358a1bb882"
         ]
        }
       },

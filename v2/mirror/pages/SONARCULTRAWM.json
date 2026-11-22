@@ -13,6 +13,15 @@
    "url": "/tilbehor/sonos-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "1f9f295e-1bc9-45f2-9b07-f702116306da",
+   "de06dc60-03b3-4719-8970-44e0b6b35b19",
+   "0e0a3ff8-c2ca-44e1-95ff-d54e95677441"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 240820,
   "skuCode": "SONARCULTRAWM",
@@ -81,8 +90,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 456,
+     "numberOfStoresExperience": 20,
+     "availableQuantity": 435,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -122,36 +131,35 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONOSULTRAWM roses som et stabilt og diskret vægbeslag, der generelt er nemt at montere og passer godt til soundbaren. Det samlede Sonos-system kan levere varm, punchy og omsluttende biograflyd sammen med Era 300-højttalere og en Sub. Den høje pris samt enkelte monteringsdetaljer, herunder begrænset kabelplads og dårlige skruer, svækker det ellers begejstrede indtryk.",
+   "summary": "SONARCULTRAWM giver en ren, stabil og velintegreret montering af soundbaren med en slank profil, der holder opsætningen diskret. Monteringen er ofte enkel, men begrænset plads til kabler og monteringsdelene kan gøre installationen mindre bekvem. Det tilhørende Sonos-system leverer en rummelig, punchy og medrivende biograflyd, selv om prisen på beslaget virker høj.",
    "headlines": {
-    "easy to install": {
-     "sentimentAnalysis": "Monteringen beskrives som enkel og ligetil.",
-     "simpleTitle": "Nem at montere",
+    "slim, discreet fit for the soundbar": {
+     "sentimentAnalysis": "Beslaget passer godt til soundbaren og ligger næsten plant mod væggen.",
+     "simpleTitle": "Slankt og diskret fit til soundbaren",
      "bias": "positive",
-     "key": "easy_installation",
-     "groupId": "51bf72e7-64e5-408f-9c2e-c0a3c4050521"
+     "key": "slim-soundbar-fit",
+     "groupId": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454"
     },
-    "neat, close-to-wall fit": {
-     "sentimentAnalysis": "Beslaget opleves som stabilt og diskret og bygger ikke længere ud fra væggen end selve Arc-soundbaren.",
-     "simpleTitle": "Diskret pasform tæt på væggen",
+    "installation is generally easy": {
+     "sentimentAnalysis": "Flere oplevelser beskriver monteringen som enkel og ukompliceret.",
+     "simpleTitle": "Installationen er generelt enkel",
      "bias": "positive",
-     "key": "discreet_fit",
-     "groupId": "51bf72e7-64e5-408f-9c2e-c0a3c4050521"
+     "key": "easy-installation",
+     "groupId": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454"
     },
-    "the mount is too expensive": {
-     "sentimentAnalysis": "Produktet kritiseres for at være overprissat, og et køb blev desuden ramt af en ugunstig prisforskel før tilbuddet.",
-     "simpleTitle": "Beslaget er for dyrt",
+    "the bracket is expensive": {
+     "sentimentAnalysis": "Prisen opfattes som for høj og skiller sig negativt ud sammenlignet med forventninger eller alternativer.",
+     "simpleTitle": "Beslaget er dyrt",
      "bias": "negative",
-     "key": "high_price",
-     "groupId": "e2b98f2f-3ff7-41da-971e-d76cd0390d20"
+     "key": "high-price",
+     "groupId": "a6231fc1-dc2b-458a-a48f-9feda13efa91"
     }
    },
    "grouping": {
-    "51bf72e7-64e5-408f-9c2e-c0a3c4050521": {
-     "title": "Montering og pasform",
-     "id": "51bf72e7-64e5-408f-9c2e-c0a3c4050521",
+    "db7f8b9f-4c10-4198-8886-7f7cfa7ca454": {
+     "title": "Montering og installation",
+     "id": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454",
      "references": [
-      "3f29f79e-1e09-4bae-94a0-a7b2949135c0",
       "18ce309b-41a8-4d07-be83-f687412b6b0f",
       "980d459c-c77c-4678-95fe-85a4bcf54df6",
       "1ce20313-f17a-4535-9505-30b12a6fd9c8",
@@ -161,9 +169,9 @@
       "8308b1c4-adcd-4581-9380-b2e722418c97"
      ]
     },
-    "e2b98f2f-3ff7-41da-971e-d76cd0390d20": {
-     "title": "Pris og værdi",
-     "id": "e2b98f2f-3ff7-41da-971e-d76cd0390d20",
+    "a6231fc1-dc2b-458a-a48f-9feda13efa91": {
+     "title": "Pris",
+     "id": "a6231fc1-dc2b-458a-a48f-9feda13efa91",
      "references": [
       "731bbc99-a9eb-41d7-a122-a1e17cfeae9b",
       "e797784b-5734-4c68-8eb5-169230392cc3"

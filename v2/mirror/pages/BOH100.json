@@ -13,6 +13,22 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( AAC, SBC )"
+  },
+  "gallery": [
+   "f01c3f74-d178-4baa-9da1-f77561657982",
+   "395b6ce5-676a-4ee2-81a9-caf0e94f88e5",
+   "f7ee014f-babb-4aef-882f-6384d06e7422",
+   "c577d6b1-476a-42eb-ab62-8106b9745570",
+   "90a44756-4b9c-4558-8993-9620d2e0a8d2",
+   "1addb893-01f7-4d16-bce7-4a7d27159eef",
+   "b2d71eed-43f9-40d5-9a9d-2bd3d0a1a1ba",
+   "214dd0ec-da41-4ce3-9c8c-b9cbaaeb9c97"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 237653,
   "skuCode": "BOH100",
@@ -335,7 +351,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -592,7 +608,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 18,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -724,79 +740,65 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BOH100 leverer en usædvanligt klar, detaljeret og omsluttende lyd med varm, kraftfuld bas og en velafbalanceret gengivelse. Eksklusive materialer, luksuriøst design, intuitiv betjening og gode tilpasningsmuligheder gør hovedtelefonerne fremragende i daglig brug. Støjreduktionen er generelt stærk, men vurderes af nogle som mindre effektiv end de bedste konkurrenters, mens batteritid og høj pris giver enkelte forbehold.",
+   "summary": "BOH100 leverer en enestående klar, detaljeret og omsluttende lyd med fyldig bas og en velafbalanceret gengivelse. Eksklusive materialer, luksuriøst design og gennemtænkte, intuitive betjeningselementer får hovedtelefonerne til at føles helt særlige, mens ANC og tilslutning generelt imponerer. Batteritid og størrelsen på ørepuderne er de væsentligste kritikpunkter, og den høje pris skaber forventninger, som ikke fuldt ud indfries for alle lyttere.",
    "headlines": {
-    "clear, detailed and balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den usædvanligt klare, detaljerede og velafbalancerede gengivelse, som gør tidligere uhørte musikdetaljer hørbare.",
-     "simpleTitle": "Klar, detaljeret og velafbalanceret lyd",
+    "clear, detailed and richly balanced sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent den klare, detaljerede, afbalancerede og omsluttende lyd med fyldig bas og mange musikalske detaljer.",
+     "simpleTitle": "Klar, detaljeret og fyldigt afbalanceret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "ed050fb3-9a22-4a96-a05b-3d70b187332f"
+     "groupId": "7a3a8e56-9c03-4589-adb2-18f1d4883087"
     },
-    "luxurious materials and design": {
-     "sentimentAnalysis": "Eksklusiv konstruktion, luksuriøs haptik, flot design og materialer af høj kvalitet fremhæves gentagne gange som styrker.",
-     "simpleTitle": "Eksklusive materialer og design",
+    "luxurious, high-quality construction": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange eksklusive materialer, luksuriøs fornemmelse, flot design og fremragende byggekvalitet.",
+     "simpleTitle": "Luksuriøs konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "design",
-     "groupId": "d8f81687-1a13-4403-816b-f97ae8aefd06"
+     "groupId": "6069902c-dfc0-4ba5-adc1-13d22e7ec5e7"
+    },
+    "intuitive controls and easy connectivity": {
+     "sentimentAnalysis": "Anmeldelserne roser den enkle Bluetooth-parring, intuitive betjening, nyttige app og mange tilpasningsmuligheder.",
+     "simpleTitle": "Intuitiv betjening og enkel tilslutning",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "3472c78b-b728-4f04-8dae-8b2712df3676"
     },
     "strong noise cancellation": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver støjreduktionen som meget god, fremragende eller uovertruffen som supplement til den stærke lytteoplevelse.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver ANC som meget god, fremragende eller uovertruffen.",
      "simpleTitle": "Effektiv støjreduktion",
      "bias": "positive",
      "key": "anc",
-     "groupId": "951ff3b2-ff32-4e01-b046-92302851713a"
+     "groupId": "731546e7-a712-479f-90d6-9e5a79bfe1e5"
     },
-    "simple, intuitive operation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver enkel parring, intuitiv betjening, en overskuelig app og gennemtænkt brugervenlighed.",
-     "simpleTitle": "Enkel og intuitiv betjening",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "4b2ebf9a-17b7-4035-ad00-69b5cf71bc5c"
-    },
-    "comfortable fit for long listening": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en god eller meget behagelig pasform, der egner sig til lang tids lytning.",
-     "simpleTitle": "Komfortabel pasform til lang tids lytning",
-     "bias": "positive",
+    "comfortable fit for some, small earcups for others": {
+     "sentimentAnalysis": "Pasformen vurderes forskelligt: Nogle finder hovedtelefonerne komfortable, mens en anden synes, ørepuderne er for små.",
+     "simpleTitle": "Komfortabel pasform for nogle, små ørepuder for andre",
+     "bias": "meh",
      "key": "comfort",
-     "groupId": "028bd256-c044-42cb-b462-fb29f6946398"
+     "groupId": "96a57fa4-6199-4e88-b3ae-610f594a9d3f"
     },
-    "powerful, beautiful bass without listening fatigue": {
-     "sentimentAnalysis": "Dybe, smukke og kraftfulde basgange giver gennemslagskraft og forbliver behagelige under lange lyttepassager.",
-     "simpleTitle": "Kraftfuld, fyldig bas uden lyttetræthed",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "ed050fb3-9a22-4a96-a05b-3d70b187332f"
-    },
-    "anc falls short of the best rival": {
-     "sentimentAnalysis": "En sammenligning vurderer støjreduktionen som svagere end på PX8 og efterlyser forbedringer.",
-     "simpleTitle": "Støjreduktionen når ikke den bedste konkurrent",
+    "anc could be stronger": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne oplever ANC som svagere end forventet eller ikke helt så stærk som hos konkurrenterne.",
+     "simpleTitle": "ANC kunne være bedre",
      "bias": "negative",
      "key": "anc",
-     "groupId": "951ff3b2-ff32-4e01-b046-92302851713a"
+     "groupId": "731546e7-a712-479f-90d6-9e5a79bfe1e5"
     },
-    "battery life feels underwhelming": {
-     "sentimentAnalysis": "Batteritiden vurderes som skuffende i forhold til premiumprisen, selv om den stadig er brugbar i praksis.",
-     "simpleTitle": "Batteritiden føles utilstrækkelig",
+    "battery life feels disappointing for the price": {
+     "sentimentAnalysis": "Begge anmeldelser om batteriet kritiserer batteritiden, især i forhold til den høje pris.",
+     "simpleTitle": "Batteritiden skuffer i forhold til prisen",
      "bias": "negative",
      "key": "battery",
-     "groupId": "4258c344-baea-454a-8ddc-e95264a1a758"
-    },
-    "ear cups may be too small": {
-     "sentimentAnalysis": "Noget pasformsfeedback peger på begrænset størrelse af ørepuderne i kontrast til de ellers positive komfortvurderinger.",
-     "simpleTitle": "Ørepuderne kan være for små",
-     "bias": "negative",
-     "key": "comfort",
-     "groupId": "028bd256-c044-42cb-b462-fb29f6946398"
+     "groupId": "3356004a-a8de-4026-9b0c-70f2d8a0960b"
     }
    },
    "grouping": {
-    "ed050fb3-9a22-4a96-a05b-3d70b187332f": {
+    "7a3a8e56-9c03-4589-adb2-18f1d4883087": {
      "title": "Lydkvalitet",
-     "id": "ed050fb3-9a22-4a96-a05b-3d70b187332f",
+     "id": "7a3a8e56-9c03-4589-adb2-18f1d4883087",
      "references": [
+      "8abb56b4-748a-43f5-9209-2add6d94d198",
       "0f2edd10-378c-42b2-b2d2-4c3e86e8aa3c",
-      "008937db-02db-43dd-9196-291486a93e03",
       "f4c24189-ea0f-4110-b753-fe3b4490fbbb",
       "a5255d50-e363-428a-9146-506703a6461f",
       "0d6e0cd0-fed9-46f5-8c74-1810df3f49c7",
@@ -821,35 +823,24 @@
       "f89067c7-0cb8-4f61-8e08-b19447135d7b"
      ]
     },
-    "d8f81687-1a13-4403-816b-f97ae8aefd06": {
+    "6069902c-dfc0-4ba5-adc1-13d22e7ec5e7": {
      "title": "Design og byggekvalitet",
-     "id": "d8f81687-1a13-4403-816b-f97ae8aefd06",
+     "id": "6069902c-dfc0-4ba5-adc1-13d22e7ec5e7",
      "references": [
+      "8abb56b4-748a-43f5-9209-2add6d94d198",
       "61a141fb-2789-4c7b-986c-4e10fd911b52",
       "a4bf86f8-7af5-4acd-8916-df314c574cd2",
       "c36f2cb3-2313-4a3c-adf1-cc2381ef06ce",
       "01be2cf5-3f16-4953-b33a-0e22f8647091",
       "9419a593-0ac6-4d35-b55f-5e611b54fea9",
       "b0a7adc7-1508-461b-80a7-8ca58615ce13",
-      "38d64e8f-2274-4a8a-9408-94268292fcf5"
+      "38d64e8f-2274-4a8a-9408-94268292fcf5",
+      "0b8e7b99-1479-4280-89fa-bb1aad0e4bfa"
      ]
     },
-    "4b2ebf9a-17b7-4035-ad00-69b5cf71bc5c": {
-     "title": "Brugervenlighed og funktioner",
-     "id": "4b2ebf9a-17b7-4035-ad00-69b5cf71bc5c",
-     "references": [
-      "0f2edd10-378c-42b2-b2d2-4c3e86e8aa3c",
-      "0d6e0cd0-fed9-46f5-8c74-1810df3f49c7",
-      "a2e4824a-3842-4335-a69b-54803bea9437",
-      "a4bf86f8-7af5-4acd-8916-df314c574cd2",
-      "c36f2cb3-2313-4a3c-adf1-cc2381ef06ce",
-      "b0a7adc7-1508-461b-80a7-8ca58615ce13",
-      "98e46ca2-9442-46d1-9035-d37aaf0bdd66"
-     ]
-    },
-    "951ff3b2-ff32-4e01-b046-92302851713a": {
+    "731546e7-a712-479f-90d6-9e5a79bfe1e5": {
      "title": "Støjreduktion",
-     "id": "951ff3b2-ff32-4e01-b046-92302851713a",
+     "id": "731546e7-a712-479f-90d6-9e5a79bfe1e5",
      "references": [
       "0f2edd10-378c-42b2-b2d2-4c3e86e8aa3c",
       "9f6a1af4-5b82-4da6-90c8-e3ea0849d99a",
@@ -859,34 +850,45 @@
       "0b8e7b99-1479-4280-89fa-bb1aad0e4bfa"
      ]
     },
-    "028bd256-c044-42cb-b462-fb29f6946398": {
-     "title": "Komfort og pasform",
-     "id": "028bd256-c044-42cb-b462-fb29f6946398",
+    "3472c78b-b728-4f04-8dae-8b2712df3676": {
+     "title": "Brugervenlighed og tilslutning",
+     "id": "3472c78b-b728-4f04-8dae-8b2712df3676",
      "references": [
-      "f4c24189-ea0f-4110-b753-fe3b4490fbbb",
+      "0f2edd10-378c-42b2-b2d2-4c3e86e8aa3c",
+      "0d6e0cd0-fed9-46f5-8c74-1810df3f49c7",
+      "a4bf86f8-7af5-4acd-8916-df314c574cd2",
+      "c36f2cb3-2313-4a3c-adf1-cc2381ef06ce",
+      "b0a7adc7-1508-461b-80a7-8ca58615ce13",
+      "98e46ca2-9442-46d1-9035-d37aaf0bdd66"
+     ]
+    },
+    "96a57fa4-6199-4e88-b3ae-610f594a9d3f": {
+     "title": "Komfort og pasform",
+     "id": "96a57fa4-6199-4e88-b3ae-610f594a9d3f",
+     "references": [
       "665f8f50-4916-40d1-b828-d72fb8a7bd39",
       "bc49072d-6588-4abf-96e2-1e51e93af0f8",
       "f89067c7-0cb8-4f61-8e08-b19447135d7b"
      ]
     },
-    "4258c344-baea-454a-8ddc-e95264a1a758": {
+    "3356004a-a8de-4026-9b0c-70f2d8a0960b": {
      "title": "Batteritid",
-     "id": "4258c344-baea-454a-8ddc-e95264a1a758",
+     "id": "3356004a-a8de-4026-9b0c-70f2d8a0960b",
      "references": [
       "008937db-02db-43dd-9196-291486a93e03",
       "0b8e7b99-1479-4280-89fa-bb1aad0e4bfa"
      ]
     }
    },
-   "rating": 4.6,
-   "count": 35,
-   "reviewCount": 27,
+   "rating": 4.61111111111111,
+   "count": 36,
+   "reviewCount": 28,
    "distribution": {
     "1": 2,
     "2": 0,
     "3": 1,
     "4": 4,
-    "5": 28
+    "5": 29
    }
   },
   "brandName": "Bang & Olufsen",

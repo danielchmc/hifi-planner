@@ -13,6 +13,16 @@
    "url": "/stereo/systemer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c3e3e571-47eb-46de-b6ed-ec27a2275e6b",
+   "86a83b11-ca5a-420f-89ba-bfdcb09da5b4",
+   "e41aa475-96f5-4c05-9710-b83e8faa86a6",
+   "f33d4822-d497-42ac-92df-2327c320f969"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270503,
   "skuCode": "MARAMODEL40N-DALIRUBIKORE6",
@@ -244,7 +254,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 14,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -265,10 +275,11 @@
         "productCode": "DALIRUBIKORE6HGMA"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager fredag den 11. december",
-        "deliveryDate": "2026-12-11T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 8,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
        "priceRaw": 19999,
@@ -313,7 +324,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 26,
+        "availableQuantity": 24,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",

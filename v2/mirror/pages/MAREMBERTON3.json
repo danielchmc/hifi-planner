@@ -13,6 +13,28 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Højtaler type": "Trådløs højtaler",
+   "Bluetooth type": "5.3"
+  },
+  "gallery": [
+   "a8ec93b1-c374-4f0c-b8a7-b6ebee4bacb6",
+   "1f64ce70-b8dd-4509-8756-02f58e65197e",
+   "17504a9e-1376-44f1-8e3f-518e211bd9dc",
+   "8d6a0a74-e6a7-4fd4-a41e-5b35f7edc2ba",
+   "3741692c-f0cd-418e-9028-0f486a8470c4",
+   "5d423518-a689-441c-88a6-96262d467ac7",
+   "829f97d0-f6b4-4149-a855-39798580c370",
+   "493556cc-d85f-48d8-84d1-c03e4cf2a48b",
+   "268d9b09-e9fa-4b1d-b769-17cdd4e6489e",
+   "cbdbbee2-e415-450b-9e30-80c11e8cffc8",
+   "35324c33-fd7b-4452-bb12-435131bc36c8",
+   "93f6aea8-62fc-4580-a0a3-dfdbaa9eb55c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 237734,
   "skuCode": "MAREMBERTON3",
@@ -223,8 +245,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 137,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 122,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -509,8 +531,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 126,
+     "numberOfStoresExperience": 15,
+     "availableQuantity": 123,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -707,62 +729,69 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MAREMBERTON3 leverer varm, slagkraftig og overraskende omsluttende lyd fra en kompakt højttaler med velafbalancerede mellemtoner, tilfredsstillende bas og imponerende lydstyrke. Lang batteritid, hurtig opladning, robust mobilitet og et flot design gør højttaleren særligt attraktiv til rejser, udendørs brug og hverdagslytning. Enkelte anmeldelser nævner en høj pris, mindre ren eller tyndere lyd i visse sammenligninger samt begrænsede eller ustabile app-funktioner, men det samlede indtryk er meget begejstret.",
+   "summary": "MAREMBERTON3 leverer imponerende varm, slagkraftig og rummelig lyd fra en kompakt højttaler med klare detaljer, tilfredsstillende bas og rigelig lydstyrke til hverdagsbrug. Lang batteritid, hurtig opladning, transportabelt design og robust konstruktion til udendørs brug gør højttaleren særdeles alsidig til rejser, hjemmet og haven. Nogle anmeldelser nævner dog en højere pris end forventet, begrænset equalizer i appen, lejlighedsvise problemer med betjening eller app samt en lyd, der afhængigt af forventninger kan virke mindre ren eller mindre dyb.",
    "headlines": {
-    "surprisingly rich, balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, afbalancerede og for kabinettets størrelse uventet fyldige lyd, især mellemtoner og bas.",
-     "simpleTitle": "Overraskende fyldig og afbalanceret lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "c06f20bc-e74e-42d8-b064-229ef94c69c5"
-    },
-    "long-lasting battery and quick charging": {
-     "sentimentAnalysis": "Den lange spilletid er en af de tydeligste gennemgående fordele, og den hurtige opladning fremhæves også.",
+    "long battery life and quick charging": {
+     "sentimentAnalysis": "Batteriets holdbarhed er en klar styrke med mange timers afspilning og hurtig opladning, som er praktisk på rejser og i hverdagen.",
      "simpleTitle": "Lang batteritid og hurtig opladning",
      "bias": "positive",
      "key": "battery",
-     "groupId": "b89565bd-364d-47ed-a29d-f95ea37390ca"
+     "groupId": "3de5dd76-efdd-4b92-a90e-95988b5eb1d4"
     },
-    "high volume and strong bass": {
-     "sentimentAnalysis": "Den kompakte højttaler roses gentagne gange for at levere mere tryk, lydstyrke og bas, end størrelsen antyder.",
-     "simpleTitle": "Høj lydstyrke og kraftig bas",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "c06f20bc-e74e-42d8-b064-229ef94c69c5"
-    },
-    "sound can be less clean or deep": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever lyden som mindre ren, mindre dyb eller lidt basfattig sammenlignet med egne forventninger eller tidligere højttalere.",
-     "simpleTitle": "Lyden kan være mindre ren eller dyb",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "c06f20bc-e74e-42d8-b064-229ef94c69c5"
-    },
-    "compact, stylish and easy to take anywhere": {
-     "sentimentAnalysis": "Det kompakte format, det flotte design og den nemme mobilitet gør højttaleren praktisk på kontoret, i weekenden og på rejser.",
+    "compact, stylish and easy to carry": {
+     "sentimentAnalysis": "Det lille, attraktive format er praktisk til kontoret, tasken, weekender og udendørs lytning.",
      "simpleTitle": "Kompakt, stilfuld og nem at tage med",
      "bias": "positive",
-     "key": "design",
-     "groupId": "5fea47cb-9903-48fa-aa38-1d0a772a361a"
+     "key": "portability",
+     "groupId": "0f54a868-9db4-4772-94d1-a2326f9b8cfd"
     },
-    "app and adjustment options disappoint": {
-     "sentimentAnalysis": "Appen kritiseres for ustabil funktion og utilstrækkelige muligheder for lydjustering.",
-     "simpleTitle": "App og justeringsmuligheder skuffer",
+    "rich, balanced sound with strong detail and bass": {
+     "sentimentAnalysis": "Højttaleren leverer overraskende fyldig, afbalanceret og detaljeret lyd i forhold til størrelsen med overbevisende bas og klare mellemtoner.",
+     "simpleTitle": "Fyldig, afbalanceret lyd med gode detaljer og bas",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
+    },
+    "sound can be less clean or deep than expected": {
+     "sentimentAnalysis": "Nogle lytteoplevelser lever ikke helt op til forventningerne med hensyn til renhed, dybde eller bas, især sammenlignet med større anlæg eller tidligere højttalere.",
+     "simpleTitle": "Lyden kan være mindre ren eller dyb end forventet",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
+    },
+    "plenty of volume and room-filling projection": {
+     "sentimentAnalysis": "Den kompakte højttaler leverer imponerende tryk, høj lydstyrke og tilstrækkelig spredning til at fylde et større rum.",
+     "simpleTitle": "Høj lydstyrke og fyldig lyd i rummet",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
+    },
+    "app and control limitations reduce convenience": {
+     "sentimentAnalysis": "De begrænsede muligheder for basjustering, den ustabile app og betjeningselementer, der let aktiveres eller er svære at se, forringer en ellers enkel brugeroplevelse.",
+     "simpleTitle": "Begrænsninger i app og betjening mindsker komforten",
      "bias": "negative",
      "key": "controls",
-     "groupId": "7099db6a-1ef7-4493-a401-ca008ad273b2"
+     "groupId": "66cc2f3d-0876-48d0-85d2-1be3ac257c6e"
     },
-    "good value compared with pricier alternatives": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer lyd og samlet ydelse som stærk til prisen, især sammenlignet med dyrere konkurrenter.",
-     "simpleTitle": "God værdi sammenlignet med dyrere alternativer",
+    "good value for sound and use cases": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer højttaleren som et godt køb, fordi lyd og anvendelighed klarer sig godt sammenlignet med dyrere alternativer.",
+     "simpleTitle": "God værdi for lyd og anvendelse",
      "bias": "positive",
      "key": "value",
-     "groupId": "27d588ef-1405-4517-98f4-371142102548"
+     "groupId": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41"
+    },
+    "price feels high for the package": {
+     "sentimentAnalysis": "Vurderingen af prisen varierer: En anmeldelse synes, højttaleren er dyr, mens en anden roser ydelsen sammenlignet med dyrere modeller.",
+     "simpleTitle": "Prisen føles høj i forhold til indholdet",
+     "bias": "negative",
+     "key": "value",
+     "groupId": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41"
     }
    },
    "grouping": {
-    "c06f20bc-e74e-42d8-b064-229ef94c69c5": {
+    "5294fa0c-1cc6-4aec-9747-a75617af0ef1": {
      "title": "Lydkvalitet",
-     "id": "c06f20bc-e74e-42d8-b064-229ef94c69c5",
+     "id": "5294fa0c-1cc6-4aec-9747-a75617af0ef1",
      "references": [
       "a120d126-361f-44d3-b739-56545423cde1",
       "8d70d499-e3a1-4b01-8798-7520bd311dd2",
@@ -794,9 +823,9 @@
       "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
      ]
     },
-    "b89565bd-364d-47ed-a29d-f95ea37390ca": {
+    "3de5dd76-efdd-4b92-a90e-95988b5eb1d4": {
      "title": "Batteritid",
-     "id": "b89565bd-364d-47ed-a29d-f95ea37390ca",
+     "id": "3de5dd76-efdd-4b92-a90e-95988b5eb1d4",
      "references": [
       "edeb5857-2274-49d7-a0c5-4c9003e54a8f",
       "12b6cf3e-8b73-4914-84d3-341b851d37cc",
@@ -810,24 +839,22 @@
       "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
      ]
     },
-    "5fea47cb-9903-48fa-aa38-1d0a772a361a": {
-     "title": "Design og mobilitet",
-     "id": "5fea47cb-9903-48fa-aa38-1d0a772a361a",
+    "0f54a868-9db4-4772-94d1-a2326f9b8cfd": {
+     "title": "Bærbarhed og design",
+     "id": "0f54a868-9db4-4772-94d1-a2326f9b8cfd",
      "references": [
-      "8d70d499-e3a1-4b01-8798-7520bd311dd2",
       "b9392ec0-de46-499d-9972-724c0c2834d1",
       "a41f05cb-46c7-4d45-90be-9381bebe7e8a",
+      "4487df02-7fa8-473a-a1fd-34544ef97d6c",
       "3375bcf4-af08-4faf-8abc-608ef83eea09",
       "b2e34eac-bcc0-43e7-9b16-45557367c9b6",
-      "66d89ba3-cd9f-4aad-994e-ffac7f53f883",
       "e25e8f4d-d3ad-4e12-806d-d9f1aee06f88",
-      "8ed8a39f-19d5-4fa4-824b-7e739e0b414b",
-      "dd592873-dea6-46ed-a29d-273ef3a2146d"
+      "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
      ]
     },
-    "7099db6a-1ef7-4493-a401-ca008ad273b2": {
+    "66cc2f3d-0876-48d0-85d2-1be3ac257c6e": {
      "title": "Betjening og app",
-     "id": "7099db6a-1ef7-4493-a401-ca008ad273b2",
+     "id": "66cc2f3d-0876-48d0-85d2-1be3ac257c6e",
      "references": [
       "4487df02-7fa8-473a-a1fd-34544ef97d6c",
       "b2e34eac-bcc0-43e7-9b16-45557367c9b6",
@@ -836,9 +863,9 @@
       "407ebfc7-df2c-4ec7-bc16-c3c74c3c90ef"
      ]
     },
-    "27d588ef-1405-4517-98f4-371142102548": {
+    "59aba22a-7bbe-473b-bc8d-981ab0e9ff41": {
      "title": "Værdi for pengene",
-     "id": "27d588ef-1405-4517-98f4-371142102548",
+     "id": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41",
      "references": [
       "3689df7d-3d1d-4332-b753-5316f068a344",
       "c570048c-7b9d-4f58-aca8-463ab7d03c39",
@@ -846,15 +873,15 @@
      ]
     }
    },
-   "rating": 4.72857142857143,
-   "count": 70,
+   "rating": 4.73239436619718,
+   "count": 71,
    "reviewCount": 35,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 4,
     "4": 11,
-    "5": 55
+    "5": 56
    }
   },
   "brandName": "Marshall",

@@ -13,6 +13,13 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "203ff578-8f3e-45c4-a01a-12fd746770bf"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 33277,
   "skuCode": "AQYSPLITTER1F2MX",
@@ -106,8 +113,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 21,
+     "numberOfStoresExperience": 13,
+     "availableQuantity": 75,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -129,41 +136,41 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQYSPLITTER1F2MX er en kompakt, robust og alsidig Y-splitter, der fungerer pålideligt til tilslutning af subwoofer og forstærkere. Splitteren kan forbedre subwooferens output og levere et rent, støjfrit signal, når den placeres korrekt. Flot konstruktion, god afskærmning og en stærk pris gør den til et overbevisende valg til praktiske lydopsætninger.",
+   "summary": "AQ-splitteren er en vellavet, kompakt og pålidelig løsning til tilslutning af subwoofere, DAC'er og forstærkere. Splitteren fungerer som forventet, leverer et rent signal og kan forbedre subwooferens ydeevne, når begge RCA-indgange bruges. Den robuste konstruktion, gode afskærmning og lave pris gør den til et stærkt anbefalet tilbehør.",
    "headlines": {
     "works reliably as intended": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent splitteren som effektiv, pålidelig og egnet til formålet.",
-     "simpleTitle": "Fungerer pålideligt som tilsigtet",
+     "sentimentAnalysis": "Splitteren udfører konsekvent sin grundlæggende funktion og anses generelt for at være pålidelig.",
+     "simpleTitle": "Fungerer pålideligt som forventet",
      "bias": "positive",
-     "key": "functionality",
-     "groupId": "c26bfc8c-9c47-4db6-aaa9-24c949331f7d"
+     "key": "works_reliably",
+     "groupId": "58eefa29-fb1f-4e60-88eb-3be003902498"
     },
-    "compact, attractive and high quality": {
-     "sentimentAnalysis": "Den fysiske konstruktion roses for kvalitet, kompakt størrelse, flot udseende og robusthed.",
-     "simpleTitle": "Kompakt, flot og af høj kvalitet",
+    "high-quality, robust construction": {
+     "sentimentAnalysis": "Anmeldelserne roser de førsteklasses materialer, det attraktive udseende og den robuste fornemmelse.",
+     "simpleTitle": "Høj kvalitet og robust konstruktion",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "04af7adb-ab85-46a0-8827-a4c1d4e3124e"
+     "key": "quality_construction",
+     "groupId": "ef92e814-a429-43ce-abe0-b8034d64b989"
     },
-    "improves subwoofer output": {
-     "sentimentAnalysis": "Flere anmeldelser forbinder splitteren med bedre eller kraftigere subwoofer-output til en lav pris.",
-     "simpleTitle": "Forbedrer subwooferens output",
+    "a practical subwoofer upgrade": {
+     "sentimentAnalysis": "Splitteren giver en effektiv tilslutningsløsning til subwoofere og forbindes med et kraftigere output.",
+     "simpleTitle": "Praktisk subwoofer-opgradering",
      "bias": "positive",
-     "key": "audio_performance",
-     "groupId": "d00159ca-6c32-4923-8f34-1bb5f48d0b41"
+     "key": "subwoofer_upgrade",
+     "groupId": "668ec8d5-1c75-4327-ae46-56659fd27fa5"
     },
-    "solves difficult connection requirements": {
-     "sentimentAnalysis": "Splitteren værdsættes som en praktisk løsning, når udstyr kræver to RCA-indgange eller mangler en dedikeret subwoofer-tilslutning.",
-     "simpleTitle": "Løser vanskelige tilslutningsbehov",
+    "compact and interference-free": {
+     "sentimentAnalysis": "Det kompakte design er ikke i vejen, mens den korte kabelføring og afskærmning hjælper med at bevare et rent signal.",
+     "simpleTitle": "Kompakt og uden forstyrrelser",
      "bias": "positive",
-     "key": "compatibility",
-     "groupId": "f2bcf8f4-30ff-48e7-91a3-8d9cba365b8a"
+     "key": "compact_clean_signal",
+     "groupId": "58eefa29-fb1f-4e60-88eb-3be003902498"
     }
    },
    "grouping": {
-    "c26bfc8c-9c47-4db6-aaa9-24c949331f7d": {
+    "58eefa29-fb1f-4e60-88eb-3be003902498": {
      "title": "Funktionalitet",
-     "id": "c26bfc8c-9c47-4db6-aaa9-24c949331f7d",
+     "id": "58eefa29-fb1f-4e60-88eb-3be003902498",
      "references": [
       "64106b7a-f095-43cc-a4ed-a395b860248e",
       "19ca87e7-89c1-4dcc-a5b6-c611c55e0641",
@@ -173,37 +180,26 @@
       "ae942b9b-e942-4ba0-a1d5-615616b84d31",
       "ae315603-2a49-43d8-8849-50e1c56f8890",
       "6d24a1a3-08da-4700-976c-db61bbe111a3",
-      "9af86be6-e3e9-4590-8f7e-3ee79061e095"
+      "f84ac1ae-4f68-4fa3-9583-5b968f478655"
      ]
     },
-    "04af7adb-ab85-46a0-8827-a4c1d4e3124e": {
-     "title": "Byggekvalitet og design",
-     "id": "04af7adb-ab85-46a0-8827-a4c1d4e3124e",
+    "ef92e814-a429-43ce-abe0-b8034d64b989": {
+     "title": "Byggekvalitet",
+     "id": "ef92e814-a429-43ce-abe0-b8034d64b989",
      "references": [
       "710b9f50-bef7-40c1-b386-99ec6b3bb9dc",
       "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
-      "0e75a1ca-6e6d-4f10-9da0-8a4a69b1ab92",
       "623efa1b-d25f-42b5-bfe6-e16081fd08f7",
       "f84ac1ae-4f68-4fa3-9583-5b968f478655"
      ]
     },
-    "d00159ca-6c32-4923-8f34-1bb5f48d0b41": {
-     "title": "Lydkvalitet",
-     "id": "d00159ca-6c32-4923-8f34-1bb5f48d0b41",
+    "668ec8d5-1c75-4327-ae46-56659fd27fa5": {
+     "title": "Subwoofer-tilslutning",
+     "id": "668ec8d5-1c75-4327-ae46-56659fd27fa5",
      "references": [
       "db4ca157-b931-4a48-812a-96a909e7d6a5",
       "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
-      "f84ac1ae-4f68-4fa3-9583-5b968f478655",
-      "9af86be6-e3e9-4590-8f7e-3ee79061e095"
-     ]
-    },
-    "f2bcf8f4-30ff-48e7-91a3-8d9cba365b8a": {
-     "title": "Kompatibilitet og tilslutninger",
-     "id": "f2bcf8f4-30ff-48e7-91a3-8d9cba365b8a",
-     "references": [
-      "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
-      "ae942b9b-e942-4ba0-a1d5-615616b84d31",
-      "f84ac1ae-4f68-4fa3-9583-5b968f478655"
+      "ae942b9b-e942-4ba0-a1d5-615616b84d31"
      ]
     }
    },

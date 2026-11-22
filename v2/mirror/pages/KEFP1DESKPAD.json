@@ -13,6 +13,14 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "1459e992-f4d6-4fb6-9f66-326cc44fb54f",
+   "d93d9fb6-f531-42f3-b42a-b0ec4d183d7d"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 222077,
   "skuCode": "KEFP1DESKPAD",
@@ -101,12 +109,11 @@
      "productCode": "KEFP1DESKPADBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

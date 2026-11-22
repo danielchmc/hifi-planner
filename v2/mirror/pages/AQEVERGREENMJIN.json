@@ -13,6 +13,15 @@
    "url": "/kabler/minijack-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning :"
+  },
+  "gallery": [
+   "821fa827-e07e-4b13-9a62-2e282e15d77e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 60688,
   "skuCode": "AQEVERGREENMJIN",
@@ -194,7 +203,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 4,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -681,57 +690,39 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQEVERGREENMJIN er et førsteklasses kabel med solid konstruktion, der leverer ren og pålidelig signaloverførsel med en medrivende og kraftfuld gengivelse. Installationen er enkel, mens sikre stik og effektiv afskærmning hjælper med at holde støj og forsinkelse væk. Den flotte grønne finish og den pålidelige konstruktion gør kablet til en klar anbefaling til hi-fi-anlæg.",
+   "summary": "AQEVERGREENMJIN er et førsteklasses og robust kabel, der leverer ren og pålidelig lyd med en behagelig varm klang. Den solide konstruktion, effektive afskærmning og sikre tilslutninger føles langt bedre end almindelige budgetkabler. Den nemme installation og overbevisende ydeevne giver en medrivende, slagkraftig opgradering til hi-res-afspillere, forstærkere og aktive højttalere.",
    "headlines": {
-    "solid premium construction": {
-     "sentimentAnalysis": "Kablet bliver gentagne gange rost for høj kvalitet, førsteklasses udførelse, soliditet og holdbarhed.",
-     "simpleTitle": "Solid førsteklasses konstruktion",
+    "solid, premium construction": {
+     "sentimentAnalysis": "Kablet roses konsekvent for høj kvalitet, soliditet, holdbarhed og for at være pengene værd.",
+     "simpleTitle": "Solid konstruktion i premiumkvalitet",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "70d64955-1b22-4e59-91f5-652d7905828e"
+     "key": "solid-premium-construction",
+     "groupId": "5785e71e-23bc-47f1-be95-6ae4fb9d81ae"
     },
-    "easy setup and secure connections": {
-     "sentimentAnalysis": "Anmeldelserne beskriver kablet som nemt at tilslutte og pålideligt efter installation med sikre RCA-stik.",
-     "simpleTitle": "Nem opsætning og sikre tilslutninger",
+    "clean, reliable signal transfer": {
+     "sentimentAnalysis": "Kablet overfører lyden klart og fungerer uden hørbar støj eller forsinkelse.",
+     "simpleTitle": "Ren og pålidelig signaloverførsel",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "9dcbcb7a-800f-4ad2-b7a3-c6c5c67fcaf2"
-    },
-    "effective shielding keeps the signal clean": {
-     "sentimentAnalysis": "Afskærmningen værdsættes for at reducere støj og understøtte ren drift uden forsinkelse.",
-     "simpleTitle": "Effektiv afskærmning holder signalet rent",
-     "bias": "positive",
-     "key": "shielding",
-     "groupId": "35ee7cdf-8b21-48c4-8ecb-ff1dcc89e707"
+     "key": "clean-reliable-signal",
+     "groupId": "902e4f61-5f66-40ca-b272-14abe625bbbf"
     }
    },
    "grouping": {
-    "70d64955-1b22-4e59-91f5-652d7905828e": {
+    "5785e71e-23bc-47f1-be95-6ae4fb9d81ae": {
      "title": "Byggekvalitet",
-     "id": "70d64955-1b22-4e59-91f5-652d7905828e",
+     "id": "5785e71e-23bc-47f1-be95-6ae4fb9d81ae",
      "references": [
       "e47a5553-8ae7-4573-ae35-50f5865cd7c0",
       "df30e827-b6af-4196-8b87-5abe39ef0c49",
-      "c761e6b5-8744-4b57-bf66-c5f870e686ee",
-      "19059b39-93ff-4e5b-b9fd-6ae4c312fe41"
-     ]
-    },
-    "9dcbcb7a-800f-4ad2-b7a3-c6c5c67fcaf2": {
-     "title": "Installation og tilslutninger",
-     "id": "9dcbcb7a-800f-4ad2-b7a3-c6c5c67fcaf2",
-     "references": [
-      "e47a5553-8ae7-4573-ae35-50f5865cd7c0",
-      "df30e827-b6af-4196-8b87-5abe39ef0c49",
-      "be8e86e7-1533-407c-8006-708b3aec2387",
       "c761e6b5-8744-4b57-bf66-c5f870e686ee"
      ]
     },
-    "35ee7cdf-8b21-48c4-8ecb-ff1dcc89e707": {
-     "title": "Afskærmning og støjkontrol",
-     "id": "35ee7cdf-8b21-48c4-8ecb-ff1dcc89e707",
+    "902e4f61-5f66-40ca-b272-14abe625bbbf": {
+     "title": "Signalkvalitet",
+     "id": "902e4f61-5f66-40ca-b272-14abe625bbbf",
      "references": [
-      "c761e6b5-8744-4b57-bf66-c5f870e686ee",
-      "19059b39-93ff-4e5b-b9fd-6ae4c312fe41"
+      "df30e827-b6af-4196-8b87-5abe39ef0c49",
+      "c761e6b5-8744-4b57-bf66-c5f870e686ee"
      ]
     }
    },

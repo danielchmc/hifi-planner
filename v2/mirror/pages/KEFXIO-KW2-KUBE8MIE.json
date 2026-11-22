@@ -13,6 +13,19 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "757bf0f8-8a79-4ed9-837e-d1fd82c48427",
+   "a12f59cf-11a8-44d5-a3a0-3354f7061e37",
+   "3e0b4768-4b3b-4716-9477-8edff943698c",
+   "700a4e4e-23d2-4e42-9193-4275a2422f9a",
+   "cf86a6f9-b16b-40d4-a7b9-bfa8b9a6329a",
+   "ce46372f-576f-486a-8aba-29186ce90de9",
+   "2b2500d7-f8a7-472e-862e-1b885e80e421"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 283899,
   "skuCode": "KEFXIO-KW2-KUBE8MIE",
@@ -195,7 +208,60 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFKUBE8MIE"
+     "parentProductCode": "KEFKUBE8MIE",
+     "reviews": {
+      "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
+      "headlines": {
+       "adds fuller, deeper and more immersive bass": {
+        "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
+        "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
+        "bias": "positive",
+        "key": "bass_sound",
+        "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
+       },
+       "compact design works well in small rooms": {
+        "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
+        "simpleTitle": "Det kompakte design fungerer godt i små rum",
+        "bias": "positive",
+        "key": "compact_rooms",
+        "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
+       }
+      },
+      "grouping": {
+       "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
+        "title": "Bas og lydkvalitet",
+        "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
+        "references": [
+         "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
+         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
+         "82ea685e-eaaf-4a2e-be85-106c4d812aee",
+         "fe224355-6f96-4104-904f-404bbf41bab4",
+         "37700f85-5cd6-40a3-99c1-9da4745fcd02",
+         "d55951fc-53aa-4545-b0ec-bcf0e3401796",
+         "713d2299-5b00-46fd-87ee-839a9e232118"
+        ]
+       },
+       "2cd3e345-8629-407a-9d89-b25591820d17": {
+        "title": "Kompakt størrelse og egnethed til rum",
+        "id": "2cd3e345-8629-407a-9d89-b25591820d17",
+        "references": [
+         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
+         "fe224355-6f96-4104-904f-404bbf41bab4",
+         "6c7c3b50-1368-41b8-b349-ab8165768a20"
+        ]
+       }
+      },
+      "rating": 4.77777777777778,
+      "count": 18,
+      "reviewCount": 10,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 4,
+       "5": 14
+      }
+     }
     },
     {
      "brand": "KEF",

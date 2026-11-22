@@ -13,6 +13,24 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja x (5)",
+   "Fra beskrivelsen": "Tilslutninger: 1 x HDMI (v2.1 eARC), USB (kun service/ladefunktion) · HDMI/CEC / HDCP 2.2 · Medfølgende tilbehør: fjernbetjening, highspeed HDMI-kabel, strømkabel og manual"
+  },
+  "gallery": [
+   "c71398ba-044a-4ddb-a838-120ff662fe16",
+   "9443815b-eca9-4c0d-8085-43a25adccfc8",
+   "c768a631-065c-423b-b7aa-11286c1f285c",
+   "2f1f0c03-bc03-4f8b-9df8-6a5a3416a61c",
+   "70bfd2b7-8837-4dd1-a72a-08f742af4078",
+   "0311ff39-2938-43ee-bdb9-aff9d9f48d26",
+   "d64906b3-ad95-4cf4-bcde-e46370be78c6",
+   "a0e6346c-0bc0-4ea7-a2ac-dc60cabed2f8",
+   "ff569513-5698-430c-b1a6-70ff7a00116d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 212171,
   "skuCode": "SENAMBEOSBMINI",
@@ -148,8 +166,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 2,
-     "availableQuantity": 35,
+     "numberOfStoresExperience": 3,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -270,69 +288,76 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENAMBEOSBMINI leverer imponerende klar, detaljeret og slagkraftig lyd fra et kompakt og diskret kabinet, som løfter både TV, musik og streaming. Opsætningen beskrives oftest som enkel, mens Wi-Fi, Bluetooth og app-integration giver ekstra fleksibilitet. Dyb bas, omsluttende rumfornemmelse og TV-tilslutning kan være begrænset i nogle opsætninger, og en subwoofer kan give mere fylde; værdien er bedst til tilbudspris.",
+   "summary": "SENAMBEOSBMINI leverer en bemærkelsesværdigt klar, fyldig og varm lyd fra et kompakt og elegant kabinet, som gør TV, musik og streaming langt mere medrivende. Opsætningen er som regel hurtig og intuitiv, med praktisk Bluetooth og Wi-Fi, mens rumkalibrering hjælper med at skabe et særligt overbevisende lydbillede. Basdybde, Atmos-ydeevne, TV-tilslutning og værdi kan være begrænset i visse opsætninger, så en subwoofer eller en tilbudspris kan være en fordel.",
    "headlines": {
     "clear, powerful sound from a compact bar": {
-     "sentimentAnalysis": "Anmelderne roser den klare, detaljerede og for den kompakte størrelse overraskende kraftfulde lyd.",
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, kraftfuld, imponerende og usædvanligt god i forhold til størrelsen.",
      "simpleTitle": "Klar og kraftfuld lyd fra en kompakt soundbar",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "fb6306f6-c133-43d7-9268-3af9b2c80439"
+     "key": "compact_sound",
+     "groupId": "ff2a1d63-9695-4d04-a21a-58190882ff80"
     },
-    "compact, discreet design fits well": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter konsekvent det attraktive, lille og diskrete design, især ved siden af et TV i samme størrelse.",
+    "installation is usually quick and simple": {
+     "sentimentAnalysis": "De fleste relevante anmeldelser roser den ukomplicerede opsætning og tilslutning.",
+     "simpleTitle": "Opsætningen er som regel hurtig og enkel",
+     "bias": "positive",
+     "key": "easy_setup",
+     "groupId": "3acbfafb-8e72-4cc6-8dab-33dc33f4a8a0"
+    },
+    "compact, understated design fits neatly": {
+     "sentimentAnalysis": "Anmeldelserne roser den kompakte størrelse, det flotte udseende og den diskrete integration med TV og rum.",
      "simpleTitle": "Kompakt og diskret design passer godt ind",
      "bias": "positive",
-     "key": "design",
-     "groupId": "d6902004-21ff-43a5-bcce-e2ef3538e60d"
+     "key": "compact_design",
+     "groupId": "b58fcd04-f3c1-4dba-bc3b-225d4ff35461"
     },
-    "setup is usually quick and straightforward": {
-     "sentimentAnalysis": "De fleste anmeldelser beskriver installation, parring og opstart som nem og intuitiv.",
-     "simpleTitle": "Opsætningen er normalt hurtig og enkel",
+    "strong value when purchased at a good price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer produktet som et fremragende eller konkurrencedygtigt køb, især til en god pris.",
+     "simpleTitle": "God værdi til en god tilbudspris",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "705a3596-46f8-4e58-84ad-9664bc506643"
+     "key": "value_for_money",
+     "groupId": "09cf5b1c-7364-4f60-9488-cac6afde45c9"
     },
-    "strong value when discounted": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer soundbaren som et fremragende køb, især når den fås til en lavere tilbudspris.",
-     "simpleTitle": "God værdi til tilbudspris",
+    "music sounds lively, but bass benefits from a subwoofer": {
+     "sentimentAnalysis": "Musik- og surroundafspilning roses som levende og behagelig, mens en ekstra subwoofer forbedrer basgengivelsen.",
+     "simpleTitle": "Musik lyder levende, men bassen får hjælp af en subwoofer",
      "bias": "positive",
-     "key": "value",
-     "groupId": "20618111-1f79-4a5b-b5f0-b3b01fbd1c28"
+     "key": "music_bass",
+     "groupId": "ff2a1d63-9695-4d04-a21a-58190882ff80"
     },
-    "full price can feel high": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever normalprisen som høj sammenlignet med konkurrenterne og anbefaler at vente på et tilbud.",
-     "simpleTitle": "Normalprisen kan føles høj",
+    "bass and spatial effects can feel limited": {
+     "sentimentAnalysis": "Nogle anmeldelser nævner begrænset basdybde, manglende Atmos-effekter eller et svagere rumligt indtryk afhængigt af placering og opsætning.",
+     "simpleTitle": "Bas og rumlige effekter kan virke begrænsede",
      "bias": "negative",
-     "key": "value",
-     "groupId": "20618111-1f79-4a5b-b5f0-b3b01fbd1c28"
-    },
-    "indicator and connection glitches occur": {
-     "sentimentAnalysis": "Nogle anmeldelser nævner, at indikator eller fjernbetjening lejlighedsvis svigter, eller at forbindelsen til TV'et afbrydes.",
-     "simpleTitle": "Problemer med indikator og forbindelse forekommer",
-     "bias": "negative",
-     "key": "reliability",
-     "groupId": "f29b35e6-115f-4e36-a836-916a6ca22a55"
-    },
-    "bass and immersion benefit from a subwoofer": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever begrænset dyb bas og stor rumfornemmelse uden den tilhørende subwoofer.",
-     "simpleTitle": "Bas og rumfornemmelse forbedres med en subwoofer",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "fb6306f6-c133-43d7-9268-3af9b2c80439"
+     "key": "sound_limits",
+     "groupId": "ff2a1d63-9695-4d04-a21a-58190882ff80"
     },
     "tv connection can be fiddly": {
-     "sentimentAnalysis": "Et mindretal oplever problemer med TV-forbindelsen eller begrænsede tilslutningsmuligheder.",
+     "sentimentAnalysis": "Et mindretal nævner vanskelig TV-integration, begrænsede TV-tilslutninger eller behov for justering af indstillinger.",
      "simpleTitle": "TV-tilslutningen kan være besværlig",
      "bias": "negative",
-     "key": "setup",
-     "groupId": "705a3596-46f8-4e58-84ad-9664bc506643"
+     "key": "tv_connection",
+     "groupId": "3acbfafb-8e72-4cc6-8dab-33dc33f4a8a0"
+    },
+    "full price can feel high": {
+     "sentimentAnalysis": "Nogle anmeldere synes, at normalprisen er for høj sammenlignet med konkurrerende soundbarer og anbefaler at vente på et tilbud.",
+     "simpleTitle": "Fuld pris kan føles høj",
+     "bias": "negative",
+     "key": "high_price",
+     "groupId": "09cf5b1c-7364-4f60-9488-cac6afde45c9"
+    },
+    "indicator and connection faults may occur": {
+     "sentimentAnalysis": "Anmeldelser nævner fejl i indikator eller fjernbetjening efter flere uger samt periodiske TV-afbrydelser; en genstart gendannede nogle funktioner.",
+     "simpleTitle": "Der kan opstå fejl med indikator og forbindelse",
+     "bias": "negative",
+     "key": "faults",
+     "groupId": "dc11f3d4-a72d-48a4-887b-ec1cfec375c5"
     }
    },
    "grouping": {
-    "fb6306f6-c133-43d7-9268-3af9b2c80439": {
+    "ff2a1d63-9695-4d04-a21a-58190882ff80": {
      "title": "Lydkvalitet",
-     "id": "fb6306f6-c133-43d7-9268-3af9b2c80439",
+     "id": "ff2a1d63-9695-4d04-a21a-58190882ff80",
      "references": [
       "6633451e-f23d-4425-ac28-1da719111cd5",
       "3d0a85c2-b21a-4883-9af8-dee2090765bb",
@@ -340,7 +365,7 @@
       "cce26481-0992-46d0-8905-a5ee0a08cbe8",
       "9a9fa433-10e0-4f25-98be-96137e7b6dc7",
       "1dd0f3d2-e857-4290-8d8d-e874fb60d0a0",
-      "33abeb0d-90a6-4886-bce0-c616e06bf50b",
+      "33abeb0d-90a6-4886-bce0-c616e06bf50d",
       "ff804e9a-b6f4-40b3-93ae-353e4abf0ad8",
       "1f91e544-4424-440a-a310-5f4597e0c8fa",
       "eee9138e-5574-478e-9803-5eb63a5b6dc1",
@@ -358,17 +383,15 @@
       "4ed702c2-bff4-4c87-bfa7-1994c8c6da7a",
       "b419179a-51d0-4377-8027-486e113bb3d1",
       "30e3021a-5a2c-4ce1-b903-6d2c557c7e12",
-      "579beb17-14bf-49e5-a150-e754709ed611",
-      "9bf550cc-11dc-4d63-a876-9aae7fc9e09e",
       "ce610610-6bd6-4890-a86e-9eec95feaa34",
       "2e471ed3-18f3-48e7-abc2-0af78327f370",
       "fda24da0-83fc-4b80-8356-4790db906c9f",
       "4eb315e9-9581-4ba9-b8d5-37674ebbf89c"
      ]
     },
-    "705a3596-46f8-4e58-84ad-9664bc506643": {
+    "3acbfafb-8e72-4cc6-8dab-33dc33f4a8a0": {
      "title": "Opsætning og tilslutning",
-     "id": "705a3596-46f8-4e58-84ad-9664bc506643",
+     "id": "3acbfafb-8e72-4cc6-8dab-33dc33f4a8a0",
      "references": [
       "6633451e-f23d-4425-ac28-1da719111cd5",
       "3d0a85c2-b21a-4883-9af8-dee2090765bb",
@@ -376,15 +399,14 @@
       "c2a89ec1-8b5a-4621-a2b4-1e4d598661f1",
       "2fea2bbe-73a8-428d-928a-1efa1ea6b439",
       "556c5960-abdc-4e4b-aad9-f811b229e7ee",
-      "eee9138e-5574-478e-9803-5eb63a5b6dc1",
       "b419179a-51d0-4377-8027-486e113bb3d1",
-      "439960d4-0b8b-4063-953d-a41df52bff8c",
-      "2e471ed3-18f3-48e7-abc2-0af78327f370"
+      "2e471ed3-18f3-48e7-abc2-0af78327f370",
+      "ce610610-6bd6-4890-a86e-9eec95feaa34"
      ]
     },
-    "20618111-1f79-4a5b-b5f0-b3b01fbd1c28": {
+    "09cf5b1c-7364-4f60-9488-cac6afde45c9": {
      "title": "Pris og værdi",
-     "id": "20618111-1f79-4a5b-b5f0-b3b01fbd1c28",
+     "id": "09cf5b1c-7364-4f60-9488-cac6afde45c9",
      "references": [
       "3d0a85c2-b21a-4883-9af8-dee2090765bb",
       "cce26481-0992-46d0-8905-a5ee0a08cbe8",
@@ -396,21 +418,22 @@
       "2e471ed3-18f3-48e7-abc2-0af78327f370"
      ]
     },
-    "d6902004-21ff-43a5-bcce-e2ef3538e60d": {
+    "b58fcd04-f3c1-4dba-bc3b-225d4ff35461": {
      "title": "Design og størrelse",
-     "id": "d6902004-21ff-43a5-bcce-e2ef3538e60d",
+     "id": "b58fcd04-f3c1-4dba-bc3b-225d4ff35461",
      "references": [
-      "6633451e-f23d-4425-ac28-1da719111cd5",
+      "cce26481-0992-46d0-8905-a5ee0a08cbe8",
       "9a9fa433-10e0-4f25-98be-96137e7b6dc7",
       "db78f123-19fe-491b-acf1-53cdb1af7c13",
       "659c5e75-f1a0-4def-b00b-ea2617344bf1",
       "579beb17-14bf-49e5-a150-e754709ed611",
-      "2e471ed3-18f3-48e7-abc2-0af78327f370"
+      "2e471ed3-18f3-48e7-abc2-0af78327f370",
+      "a3bfd881-1635-4fdb-b0c3-a3435d6125b8"
      ]
     },
-    "f29b35e6-115f-4e36-a836-916a6ca22a55": {
-     "title": "Driftsikkerhed",
-     "id": "f29b35e6-115f-4e36-a836-916a6ca22a55",
+    "dc11f3d4-a72d-48a4-887b-ec1cfec375c5": {
+     "title": "Driftssikkerhed",
+     "id": "dc11f3d4-a72d-48a4-887b-ec1cfec375c5",
      "references": [
       "1dd0f3d2-e857-4290-8d8d-e874fb60d0a0",
       "2fea2bbe-73a8-428d-928a-1efa1ea6b439",

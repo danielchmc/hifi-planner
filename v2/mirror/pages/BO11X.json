@@ -13,6 +13,20 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.2 ( aptX, aptX Adaptive, AAC, SBC )",
+   "Trådløs opladning": "Ja"
+  },
+  "gallery": [
+   "30d7d682-5aa6-41d8-96b3-adb957057d22",
+   "dae38829-47a3-4705-b7dc-0e378e635515",
+   "a0519194-3edf-4c46-974b-5100906c8586",
+   "c8c0d0b1-2161-4b43-a361-e32461fba708",
+   "dae26683-c641-4da5-97b4-0888d0882847"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 243083,
   "skuCode": "BO11X",
@@ -229,7 +243,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 59,
+     "availableQuantity": 49,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -362,7 +376,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 38,
+     "availableQuantity": 32,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -488,7 +502,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 15,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -657,76 +671,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BO11X leverer en førsteklasses, varm og kraftfuld lytteoplevelse med tydelige detaljer, fyldig bas og et sikkert fit for mange brugere. Komfort, finish og alsidighed i hverdagen får stor ros, mens forbindelse og app-funktioner generelt er gode, men ikke fejlfri. Klangbalance, vindstøj, betjening og pasform kan variere efter enhed, øreform og personlige forventninger.",
+   "summary": "BO11X leverer en førsteklasses, varm og kraftfuld lyd med imponerende klarhed, detaljer og bas. Komfort, pasform og byggekvalitet roses af mange, mens forbindelse og støjreduktion fungerer godt i hverdagen, men kan være ustabile for enkelte. Samlet føles pakken både medrivende og eksklusiv, selv om appstyring, vindhåndtering, batteribalance og lejlighedsvise Bluetooth-problemer kan forbedres.",
    "headlines": {
-    "warm, powerful and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser en fyldig, varm og kraftfuld gengivelse med stærk, veldefineret bas og tydelige musikalske detaljer.",
-     "simpleTitle": "Varm, kraftfuld og detaljeret lyd",
+    "warm, detailed and powerful sound": {
+     "sentimentAnalysis": "Lyden roses bredt for at være klar, varm, kraftfuld og rig på bas og detaljer.",
+     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0b65b731-a4af-4048-b52a-22d62f486687"
+     "groupId": "e36e5662-2466-4427-9679-11d1220c61c8"
     },
-    "sound quality varies by device and expectation": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver for lidt volumen eller bas, dårlig lyd på bestemte telefoner eller en lyd, der ligger under konkurrerende modeller.",
-     "simpleTitle": "Lydkvaliteten varierer efter enhed og forventning",
+    "secure and comfortable fit": {
+     "sentimentAnalysis": "Flere brugere beskriver øretelefonerne som sikre, komfortable og behagelige at have på i længere tid.",
+     "simpleTitle": "Sikker og komfortabel pasform",
+     "bias": "positive",
+     "key": "fit",
+     "groupId": "db77a741-1cbf-425b-bd24-29721c0650bf"
+    },
+    "bass and volume can feel underpowered": {
+     "sentimentAnalysis": "Nogle lyttere oplever lyden som mindre fyldig end forventet, med livløs bas eller svagere ydelse end konkurrerende earbuds.",
+     "simpleTitle": "Bas og lydstyrke kan føles for svag",
      "bias": "negative",
      "key": "sound",
-     "groupId": "0b65b731-a4af-4048-b52a-22d62f486687"
+     "groupId": "e36e5662-2466-4427-9679-11d1220c61c8"
     },
-    "comfortable and secure for many ears": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den komfortable, næsten umærkelige pasform, som bliver siddende.",
-     "simpleTitle": "Komfortable og sikre i mange ører",
-     "bias": "positive",
-     "key": "fit",
-     "groupId": "9b7fdd30-f92c-4030-837f-f876ab33ad64"
-    },
-    "fit can be uncomfortable or unstable": {
-     "sentimentAnalysis": "Andre anmeldelser nævner ubehag, dårlig pasform eller øretelefoner, der let falder ud, hvilket viser forskelle fra øre til øre.",
-     "simpleTitle": "Pasformen kan være ukomfortabel eller ustabil",
-     "bias": "negative",
-     "key": "fit",
-     "groupId": "9b7fdd30-f92c-4030-837f-f876ab33ad64"
-    },
-    "controls require adjustment": {
-     "sentimentAnalysis": "Anmeldelserne nævner en ændret betjening, utilsigtede ændringer og styring, der ikke overbeviser alle brugere.",
-     "simpleTitle": "Betjeningen kræver tilvænning",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "759a9a3e-1b92-4332-810b-c830c426c1e3"
-    },
-    "reliable everyday connections": {
-     "sentimentAnalysis": "Positive anmeldelser beskriver skarpere og stabile forbindelser, der egner sig til daglig brug.",
-     "simpleTitle": "Stabile forbindelser i hverdagen",
-     "bias": "positive",
-     "key": "connectivity",
-     "groupId": "29adc043-0dc3-4775-a352-fd285ce58445"
-    },
-    "connection dropouts and noise occur": {
-     "sentimentAnalysis": "Negative anmeldelser nævner problemer med parring, udfald, forstyrrelser og lyd i kun den ene side.",
-     "simpleTitle": "Forbindelsesudfald og støj forekommer",
+    "bluetooth connection is not always reliable": {
+     "sentimentAnalysis": "Nogle anmeldelser nævner parringsproblemer, udfald, forstyrrelser og ubalanceret lyd mellem kanalerne.",
+     "simpleTitle": "Bluetooth-forbindelsen er ikke altid stabil",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "29adc043-0dc3-4775-a352-fd285ce58445"
+     "groupId": "b06cb794-e3d9-4d31-9428-f1d5b1ad8a65"
     },
-    "noise reduction works well in many settings": {
-     "sentimentAnalysis": "Anmeldelserne beskriver effektiv støj- og vinddæmpning, især på rejser og under pendling.",
-     "simpleTitle": "Støjreduktionen fungerer godt i mange situationer",
+    "noise cancellation handles everyday noise well": {
+     "sentimentAnalysis": "Støjreduktionen vurderes som god til pendling og beskrives af nogle brugere som effektiv mod generel støj og vind.",
+     "simpleTitle": "Støjreduktionen håndterer hverdagsstøj godt",
      "bias": "positive",
-     "key": "noise",
-     "groupId": "a4f8ace5-d114-4dc4-8f8c-9d75068f514b"
+     "key": "noise-cancellation",
+     "groupId": "b1c1287a-607d-4a9d-bb72-18fc770fbdeb"
     },
-    "wind noise remains a weakness": {
-     "sentimentAnalysis": "Vindhåndteringen kritiseres på grund af kraftig vindstøj og støjreduktion, der ikke helt lever op til forventningerne.",
-     "simpleTitle": "Vindstøj er fortsat en svaghed",
+    "on-ear controls and app functions need refinement": {
+     "sentimentAnalysis": "Betjening og appfunktioner beskrives som mindre intuitive og stadig med behov for udvikling.",
+     "simpleTitle": "Betjening og appfunktioner kræver forbedringer",
      "bias": "negative",
-     "key": "noise",
-     "groupId": "a4f8ace5-d114-4dc4-8f8c-9d75068f514b"
+     "key": "controls-app",
+     "groupId": "bffa9673-ea4f-4192-8777-1fc09c0ff7ff"
     }
    },
    "grouping": {
-    "0b65b731-a4af-4048-b52a-22d62f486687": {
+    "e36e5662-2466-4427-9679-11d1220c61c8": {
      "title": "Lydkvalitet",
-     "id": "0b65b731-a4af-4048-b52a-22d62f486687",
+     "id": "e36e5662-2466-4427-9679-11d1220c61c8",
      "references": [
       "493a07d8-a348-4814-8404-b33af2d4952b",
       "b81b39d4-8a14-4010-8b7d-1a43ec8fda76",
@@ -757,48 +750,49 @@
       "109b9d97-d4dc-47af-83fe-026294539ff9"
      ]
     },
-    "9b7fdd30-f92c-4030-837f-f876ab33ad64": {
+    "db77a741-1cbf-425b-bd24-29721c0650bf": {
      "title": "Pasform og komfort",
-     "id": "9b7fdd30-f92c-4030-837f-f876ab33ad64",
+     "id": "db77a741-1cbf-425b-bd24-29721c0650bf",
      "references": [
-      "4076b765-9d89-4499-b63d-2d52978d2566",
       "379a8931-2e18-4def-889b-70f51eb15bfb",
+      "4076b765-9d89-4499-b63d-2d52978d2566",
       "8efead10-0dd2-4f34-bf41-8cc75ef91d42",
-      "dce68537-fa35-4f03-b58b-5a4e67f73262",
+      "f3a655d1-1a98-4469-bdc2-4886bcd72688",
       "2d61a700-6a51-48bc-aa67-b92082320453",
       "50c8292c-0705-4521-b742-a84ea3cbad45",
-      "f3a655d1-1a98-4469-bdc2-4886bcd72688",
       "b11e8906-8935-441d-917c-afe27768d1fe",
       "578c5859-5a48-4cee-9243-76bf58002c1f",
       "3242b425-f205-4136-ada1-44448a32e441"
      ]
     },
-    "29adc043-0dc3-4775-a352-fd285ce58445": {
+    "b06cb794-e3d9-4d31-9428-f1d5b1ad8a65": {
      "title": "Forbindelse",
-     "id": "29adc043-0dc3-4775-a352-fd285ce58445",
+     "id": "b06cb794-e3d9-4d31-9428-f1d5b1ad8a65",
      "references": [
       "71a8a574-8afc-4bb6-9fdf-b441c8f3703a",
       "2746f136-e91c-49eb-9af2-b120dfd2ebfd",
       "578c5859-5a48-4cee-9243-76bf58002c1f",
-      "3655e851-455f-44e2-80f3-3d42fa2f8441"
+      "3655e851-455f-44e2-80f3-3d42fa2f8441",
+      "d45fe4fa-e292-4bf4-962c-13d96269a29c"
      ]
     },
-    "a4f8ace5-d114-4dc4-8f8c-9d75068f514b": {
+    "bffa9673-ea4f-4192-8777-1fc09c0ff7ff": {
+     "title": "Betjening og app",
+     "id": "bffa9673-ea4f-4192-8777-1fc09c0ff7ff",
+     "references": [
+      "71a8a574-8afc-4bb6-9fdf-b441c8f3703a",
+      "2746f136-e91c-49eb-9af2-b120dfd2ebfd",
+      "f3a655d1-1a98-4469-bdc2-4886bcd72688",
+      "2d61a700-6a51-48bc-aa67-b92082320453"
+     ]
+    },
+    "b1c1287a-607d-4a9d-bb72-18fc770fbdeb": {
      "title": "Støjreduktion",
-     "id": "a4f8ace5-d114-4dc4-8f8c-9d75068f514b",
+     "id": "b1c1287a-607d-4a9d-bb72-18fc770fbdeb",
      "references": [
       "1350b352-6f79-4704-ae37-3ef5acbf8383",
       "dce68537-fa35-4f03-b58b-5a4e67f73262",
       "f3a655d1-1a98-4469-bdc2-4886bcd72688"
-     ]
-    },
-    "759a9a3e-1b92-4332-810b-c830c426c1e3": {
-     "title": "Betjening",
-     "id": "759a9a3e-1b92-4332-810b-c830c426c1e3",
-     "references": [
-      "71a8a574-8afc-4bb6-9fdf-b441c8f3703a",
-      "1350b352-6f79-4704-ae37-3ef5acbf8383",
-      "2746f136-e91c-49eb-9af2-b120dfd2ebfd"
      ]
     }
    },

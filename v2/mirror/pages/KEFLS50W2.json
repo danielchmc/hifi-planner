@@ -13,6 +13,32 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "LFE",
+   "Lydindgang": "HDMI, Coaxial, Optisk, Minijack/AUX",
+   "Indgang (andet)": "Ethernet, USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast",
+   "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Analog RCA, Minijack/AUX",
+   "Bluetooth type": "5",
+   "Fra beskrivelsen": "Diskant: 1” coaxial MAT aluminiumsdome (Metamaterial Absorption Technology) · Lydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis"
+  },
+  "gallery": [
+   "33a9a02b-1a38-4c6d-951b-c7578811baa2",
+   "fc63dfaa-462d-4f98-9abe-bdb0b46a4180",
+   "521bcf4d-5755-4054-b69e-33e308623439",
+   "1fa1985c-1a86-46b0-b72d-ff93e80c73be",
+   "93dc5e43-df20-44fa-8c34-8174d48c97e5",
+   "9d3dcee1-5ca7-48dd-ab9d-710b982669b5",
+   "f7fc5c4e-153b-41a1-99e6-d4c6fa751417",
+   "5e4814a2-8d33-45c0-b6c5-70c5eda8215b",
+   "dbdc64d3-7916-4f81-8f7d-4c75811e86c7",
+   "0bbae288-f033-4907-9def-364317800650"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 221236,
   "skuCode": "KEFLS50W2",
@@ -247,12 +273,11 @@
      "productCode": "KEFLS50W2CARBONBLACK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -386,7 +411,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 3,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -517,8 +542,8 @@
      "productCode": "KEFLS50W2SANDSHELL"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockAtpDate"
@@ -654,8 +679,8 @@
      "productCode": "KEFLS50W2MOSSGREEN"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 24. november",
-     "deliveryDate": "2026-11-24T00:00:00Z",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockAtpDate"
@@ -777,62 +802,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF LS50 Wireless II leverer en imponerende detaljeret, kraftfuld og rummelig lyd fra et kompakt design med solid bas, flot stereoperspektiv og fremragende gengivelse af musik, tv og streaming. Den førsteklasses konstruktion, det elegante udseende og de fleksible tilslutningsmuligheder gør højttalerne til et komplet alt-i-én-system. Opsætning via appen og den daglige betjening fungerer som regel problemfrit, men nogle brugere oplever udfald i den trådløse forbindelse, en lidt klinisk eller varm klang og begrænset brugervenlighed i visse situationer.",
+   "summary": "KEF LS50 Wireless II leverer en usædvanligt klar, detaljeret og rummelig lyd med imponerende bas samt en varm og medrivende gengivelse fra et kompakt design. Det elegante udseende, den høje byggekvalitet og de alsidige muligheder for TV, streaming og trådløs tilslutning gør systemet til en komplet high-end-lydløsning. Opsætning via appen er som regel enkel og stabil, men enkelte oplevelser nævner udfald i den trådløse forbindelse, begrænset brugervenlighed samt en til tider klinisk eller for varm klangbalance.",
    "headlines": {
-    "detailed, powerful sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne roser den usædvanligt detaljerede, kraftfulde og basrige lyd trods det kompakte format.",
-     "simpleTitle": "Detaljeret og kraftfuld lyd med dyb bas",
+    "detailed, spacious and powerful sound": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for en ren, meget detaljeret, rummelig og kraftfuld gengivelse med overraskende markant bas.",
+     "simpleTitle": "Detaljeret, rummelig og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "dbde5a71-c2a2-4bb4-8053-9d0de5447ba6"
+     "key": "detailed-spacious-powerful",
+     "groupId": "4e5514cc-20bd-4f7b-8164-c43750181cde"
     },
-    "wide, spacious and transparent stereo presentation": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som klar, bred, transparent og overbevisende tredimensionel.",
-     "simpleTitle": "Bred, rummelig og transparent stereogengivelse",
+    "elegant, premium design": {
+     "sentimentAnalysis": "De kompakte højttalere beskrives konsekvent som flotte, velbyggede og eksklusive i udtrykket.",
+     "simpleTitle": "Elegant premiumdesign",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "dbde5a71-c2a2-4bb4-8053-9d0de5447ba6"
+     "key": "premium-design",
+     "groupId": "8634812c-c09b-46ee-8083-e26a22c6f871"
     },
-    "elegant, premium construction and compact appearance": {
-     "sentimentAnalysis": "Højttalerne får konsekvent ros for deres attraktive udseende og førsteklasses byggekvalitet.",
-     "simpleTitle": "Elegant design, førsteklasses byggekvalitet og kompakt udseende",
+    "easy setup and flexible connections": {
+     "sentimentAnalysis": "Tilslutningerne beskrives ofte som hurtige, stabile og praktiske, mens appen gør opsætning og daglig brug enklere.",
+     "simpleTitle": "Nem opsætning og fleksible tilslutninger",
      "bias": "positive",
-     "key": "design",
-     "groupId": "9c430459-9de0-4254-89cc-987b2d76edd1"
+     "key": "easy-connections",
+     "groupId": "183122b5-fd3f-470c-a73f-f91d87859d1c"
     },
-    "app setup and source connections are fast and convenient": {
-     "sentimentAnalysis": "Brugerne fremhæver hurtig opsætning via app, stabil drift og fleksible tilslutninger til flere kilder.",
-     "simpleTitle": "Opsætning via app og kildetilslutning er hurtig og nem",
+    "strong TV performance without extra components": {
+     "sentimentAnalysis": "Højttalerne leverer detaljeret, rummelig og kraftfuld TV-lyd, og nogle opsætninger savner hverken centerhøjttaler eller subwoofer.",
+     "simpleTitle": "Stærk TV-lyd uden ekstra komponenter",
      "bias": "positive",
-     "key": "connectivity",
-     "groupId": "f5558844-9bdf-4739-997c-106c19e8a481"
+     "key": "tv-performance",
+     "groupId": "e0f10f0c-d909-4f4a-b154-c6bf51ea9f03"
     },
-    "strong TV performance without needing extra speakers": {
-     "sentimentAnalysis": "Højttalerne leverer rummelig og fyldig TV-lyd og kan i nogle opsætninger gøre en centerhøjttaler eller subwoofer overflødig.",
-     "simpleTitle": "Fremragende TV-lyd uden behov for ekstra højttalere",
-     "bias": "positive",
-     "key": "tv",
-     "groupId": "3dd6599b-5cd7-4320-88d4-d69bcee43842"
-    },
-    "tonal balance can sound clinical or reduce vocal and instrumental clarity": {
-     "sentimentAnalysis": "Nogle sammenligninger oplever gengivelsen som lidt klinisk eller varm på en måde, der kan svække taleforståelse og instrumentadskillelse.",
-     "simpleTitle": "Klangbalancen kan virke klinisk eller reducere klarheden i stemmer og instrumenter",
+    "wireless dropouts and usability concerns": {
+     "sentimentAnalysis": "Nogle oplevelser beskriver lav brugervenlighed eller trådløse udfald, som kræver kabeltilstand eller en kablet forbindelse.",
+     "simpleTitle": "Trådløse udfald og problemer med brugervenlighed",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "dbde5a71-c2a2-4bb4-8053-9d0de5447ba6"
+     "key": "wireless-usability-issues",
+     "groupId": "183122b5-fd3f-470c-a73f-f91d87859d1c"
     },
-    "wireless connection can drop out and require a cable": {
-     "sentimentAnalysis": "Trådløse udfald mellem højttalerne får nogle brugere til at skifte til kabeltilstand eller LAN.",
-     "simpleTitle": "Den trådløse forbindelse kan falde ud og kræve kabel",
+    "warm and immersive tonal balance": {
+     "sentimentAnalysis": "En varm, fyldig og medrivende gengivelse fremhæves til både musik og TV-lyd.",
+     "simpleTitle": "Varm og medrivende klangbalance",
+     "bias": "positive",
+     "key": "warm-immersive",
+     "groupId": "4e5514cc-20bd-4f7b-8164-c43750181cde"
+    },
+    "some tonal and clarity limitations": {
+     "sentimentAnalysis": "En vurdering oplever gengivelsen som lidt klinisk, mens en anden oplever lavere taleforståelighed og instrumentadskillelse på grund af den varme tuning.",
+     "simpleTitle": "Visse begrænsninger i klang og klarhed",
      "bias": "negative",
-     "key": "connectivity",
-     "groupId": "f5558844-9bdf-4739-997c-106c19e8a481"
+     "key": "tonal-limitations",
+     "groupId": "4e5514cc-20bd-4f7b-8164-c43750181cde"
+    },
+    "long-term durability remains uncertain": {
+     "sentimentAnalysis": "Købstilfredsheden dæmpes af håb og spørgsmål om, hvor længe højttalerne forbliver pålidelige.",
+     "simpleTitle": "Langtidsholdbarheden er stadig usikker",
+     "bias": "meh",
+     "key": "durability-uncertain",
+     "groupId": "bf8f13e7-d40e-4948-8276-2a5aa7d827de"
     }
    },
    "grouping": {
-    "dbde5a71-c2a2-4bb4-8053-9d0de5447ba6": {
+    "4e5514cc-20bd-4f7b-8164-c43750181cde": {
      "title": "Lydkvalitet",
-     "id": "dbde5a71-c2a2-4bb4-8053-9d0de5447ba6",
+     "id": "4e5514cc-20bd-4f7b-8164-c43750181cde",
      "references": [
       "af640ffd-9f26-44ef-88a4-f22d2e2250ff",
       "97c79214-90e5-42cf-8660-8740d7d7509d",
@@ -844,57 +876,67 @@
       "dfb4d1aa-8820-469f-b976-3a69a005564a",
       "4ee0ab29-e354-4d77-abde-6b3679f9d480",
       "4c9f1350-db38-448c-9658-bcf835a13bd6",
-      "5b4f1abc-0783-4a5e-9acc-1689208e730f",
+      "46f6eb31-c688-4c5e-bfe9-4f38ee7cf1f6",
       "d4fa5731-1a91-420d-89fb-fae8e2e538c1",
+      "5b4f1abc-0783-4a5e-9acc-1689208e730f",
       "490580dd-c95b-4e9d-a705-7ac11199bb0c",
       "5b2984f2-215f-4d5e-ae00-c35089fc1e30",
       "b78ba64d-c2b9-4977-afaa-2d279595557f",
       "1548fa8d-c69f-4f50-86b3-fb55c279a6a9",
       "300be8d2-8ade-476b-a5f7-3e5e8e1f74b7",
+      "b7cbe3a7-1f7e-4594-ae21-92bad98b7988",
       "08f14e0d-c380-454a-8af1-daf06dccd965",
+      "dfd14bec-8264-43db-98c6-a352110fdaad",
       "10c9f543-e381-4748-a072-5983601e4a07",
       "a9de3290-90a1-4fdc-80a9-434515453273"
      ]
     },
-    "9c430459-9de0-4254-89cc-987b2d76edd1": {
+    "8634812c-c09b-46ee-8083-e26a22c6f871": {
      "title": "Design og byggekvalitet",
-     "id": "9c430459-9de0-4254-89cc-987b2d76edd1",
+     "id": "8634812c-c09b-46ee-8083-e26a22c6f871",
      "references": [
       "af640ffd-9f26-44ef-88a4-f22d2e2250ff",
       "66f4c6ac-d101-4051-ae48-d60e741d9db7",
       "dfb4d1aa-8820-469f-b976-3a69a005564a",
       "4ee0ab29-e354-4d77-abde-6b3679f9d480",
       "46f6eb31-c688-4c5e-bfe9-4f38ee7cf1f6",
+      "d4fa5731-1a91-420d-89fb-fae8e2e538c1",
       "d9538acb-04d4-4f32-8083-3a029bdf4f47",
       "5b2984f2-215f-4d5e-ae00-c35089fc1e30",
       "b7cbe3a7-1f7e-4594-ae21-92bad98b7988",
-      "08f14e0d-c380-454a-8af1-daf06dccd965",
       "dfd14bec-8264-43db-98c6-a352110fdaad"
      ]
     },
-    "f5558844-9bdf-4739-997c-106c19e8a481": {
-     "title": "Tilslutning og opsætning",
-     "id": "f5558844-9bdf-4739-997c-106c19e8a481",
+    "183122b5-fd3f-470c-a73f-f91d87859d1c": {
+     "title": "Tilslutning og app",
+     "id": "183122b5-fd3f-470c-a73f-f91d87859d1c",
      "references": [
-      "97c79214-90e5-42cf-8660-8740d7d7509d",
+      "82562b9e-d406-449d-85ef-19583c0c46b2",
       "b65ec173-d220-401f-949d-cb03aa5b23a7",
       "17038fb6-eec0-4f31-853d-394e3aa56d0e",
-      "1bfc8cfe-d469-455a-b4cc-252f6f815107",
-      "5b4f1abc-0783-4a5e-9acc-1689208e730f",
       "d9538acb-04d4-4f32-8083-3a029bdf4f47",
+      "5b4f1abc-0783-4a5e-9acc-1689208e730f",
       "10c9f543-e381-4748-a072-5983601e4a07",
       "1548fa8d-c69f-4f50-86b3-fb55c279a6a9"
      ]
     },
-    "3dd6599b-5cd7-4320-88d4-d69bcee43842": {
-     "title": "TV og hjemmebiograf",
-     "id": "3dd6599b-5cd7-4320-88d4-d69bcee43842",
+    "e0f10f0c-d909-4f4a-b154-c6bf51ea9f03": {
+     "title": "TV-lyd",
+     "id": "e0f10f0c-d909-4f4a-b154-c6bf51ea9f03",
      "references": [
       "97c79214-90e5-42cf-8660-8740d7d7509d",
       "1128a56c-bc27-4a73-a720-f5910734429a",
       "1bfc8cfe-d469-455a-b4cc-252f6f815107",
       "5b2984f2-215f-4d5e-ae00-c35089fc1e30",
       "10c9f543-e381-4748-a072-5983601e4a07"
+     ]
+    },
+    "bf8f13e7-d40e-4948-8276-2a5aa7d827de": {
+     "title": "Holdbarhed",
+     "id": "bf8f13e7-d40e-4948-8276-2a5aa7d827de",
+     "references": [
+      "4ee0ab29-e354-4d77-abde-6b3679f9d480",
+      "b78ba64d-c2b9-4977-afaa-2d279595557f"
      ]
     }
    },

@@ -13,6 +13,13 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "290188d8-9499-421d-9262-6f96e2478ea4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 162099,
   "skuCode": "AQEVERGREENIN",
@@ -142,7 +149,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 25,
+     "availableQuantity": 84,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -217,11 +224,12 @@
      "productCode": "AQEVERGREENIN1"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 12. december",
-     "deliveryDate": "2026-12-12T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 19,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -784,73 +792,49 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQEVERGREENIN-kabler leverer ren, neutral til varm og rummelig lyd med klare, velafbalancerede detaljer. Solid konstruktion, sikre forbindelser og en flot finish giver et overbevisende kvalitetsindtryk, mens prisen generelt anses for rimelig. Den største kritik er forskellen mellem de annoncerede og de faktiske stik, suppleret af en enkelt rapport om brum i et pladespiller-setup.",
+   "summary": "AQ Evergreen-kablerne får bred ros for en ren, afbalanceret og musikalsk lyd med en varm, rummelig og detaljeret gengivelse. Konstruktionen føles solid, og tilslutningerne sidder sikkert, mens forholdet mellem pris og kvalitet generelt vurderes stærkt. Et mindretal oplever brummen i et pladespiller-setup, og de faktiske mørke plastikstik skuffer sammenlignet med de lysegrønne metalfarvede produktbilleder.",
    "headlines": {
-    "warm, spacious and detailed sound": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som meget god, ren, varm, rummelig og behagelig.",
-     "simpleTitle": "Varm, rummelig og detaljeret lyd",
+    "clean, balanced and immersive sound": {
+     "sentimentAnalysis": "Kablerne beskrives med god, neutral, afbalanceret, ren, varm og rummelig lyd samt tydeligere diskant og en medrivende gengivelse.",
+     "simpleTitle": "Ren, afbalanceret og medrivende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "8cfca80f-ca74-4f86-b7d2-27cf3a05fd6d"
+     "key": "sound_quality",
+     "groupId": "0dac6293-6ea2-4ee4-96f8-4038a4432e72"
     },
     "solid construction and secure connections": {
-     "sentimentAnalysis": "Kablet anses for solidt, velafsluttet, pålideligt og med en fast forbindelse.",
+     "sentimentAnalysis": "Anmeldelserne fremhæver solid konstruktion, pæn finish og stik, der sidder fast og fungerer som forventet.",
      "simpleTitle": "Solid konstruktion og sikre forbindelser",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "b2109a50-df2d-4e42-9f9a-ab4521ee36b5"
+     "key": "build_quality",
+     "groupId": "4f52effa-98f0-4d90-b8e4-88a965f2abe0"
     },
-    "balanced and neutral presentation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver balanceret lyd, tydeligere diskant og en præcis, neutral karakter.",
-     "simpleTitle": "Balanceret og neutral gengivelse",
+    "excellent value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer kablet som meget pengene værd, rimeligt prissat og med stærk ydeevne i forhold til prisen.",
+     "simpleTitle": "Fremragende værdi til prisen",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "8cfca80f-ca74-4f86-b7d2-27cf3a05fd6d"
+     "key": "value",
+     "groupId": "87b88a15-ae53-4e79-8686-516b2042cd2a"
     },
-    "good value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver kablet som pengene værd, overkommeligt og tilfredsstillende til prisen.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "price-value",
-     "groupId": "15bcc5be-734b-4043-8cee-3eec166007b6"
-    },
-    "plug appearance disappoints": {
-     "sentimentAnalysis": "De faktiske mørke plastikstik svarer ikke til de lysegrønne metallic-stik, der vises online og på emballagen.",
-     "simpleTitle": "Stikkenes udseende skuffer",
+    "plug appearance does not match the images": {
+     "sentimentAnalysis": "De medfølgende mørke plastikstik kritiseres for at se mindre attraktive ud end de lysegrønne metalfarvede stik, der vises online og på emballagen.",
+     "simpleTitle": "Stikkenes udseende svarer ikke til billederne",
      "bias": "negative",
-     "key": "build-quality",
-     "groupId": "b2109a50-df2d-4e42-9f9a-ab4521ee36b5"
+     "key": "appearance",
+     "groupId": "6ca8cbc6-da88-4431-b994-fead7c840199"
     }
    },
    "grouping": {
-    "b2109a50-df2d-4e42-9f9a-ab4521ee36b5": {
-     "title": "Byggekvalitet",
-     "id": "b2109a50-df2d-4e42-9f9a-ab4521ee36b5",
+    "0dac6293-6ea2-4ee4-96f8-4038a4432e72": {
+     "title": "Lydkvalitet",
+     "id": "0dac6293-6ea2-4ee4-96f8-4038a4432e72",
      "references": [
       "9268cc75-9199-4d1c-bc7b-80598b86cf25",
-      "17ac1969-338b-4021-ba0e-16fe147aa15f",
-      "d4426b3c-8a8d-47b3-aa72-a17a64bc39a2",
-      "1ddb52e1-1662-4a13-ab60-b082974a0e26",
-      "8c81cc3a-2c9f-49c5-9eaf-e5c4269c2972",
       "69bc3c73-6f68-42b9-ad4d-709ae424e418",
       "cda1577c-4698-4625-8729-7ee1b45499ae",
-      "44f8e460-5208-4100-9585-b54177985171",
-      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
-      "76eea446-8c62-4db1-a39d-0b3f17ba3cde",
-      "0c153137-40ba-44c5-a88f-ef049fce00b4",
-      "fed1c471-356d-4c4c-aa3a-8fb7e75d9075",
-      "80c79558-bb32-4d4d-b907-85c261f01d51",
-      "03521839-084f-4bb2-9d55-926573efb434",
-      "1a5e5b6f-7b02-4a85-9fb2-e6743c230dc4"
-     ]
-    },
-    "8cfca80f-ca74-4f86-b7d2-27cf3a05fd6d": {
-     "title": "Lydkvalitet",
-     "id": "8cfca80f-ca74-4f86-b7d2-27cf3a05fd6d",
-     "references": [
-      "9268cc75-9199-4d1c-bc7b-80598b86cf25",
       "c064a387-e9e1-4302-ac2a-4e7501aa343c",
       "5e16b891-4f12-410c-83b8-fd7e47181158",
+      "44f8e460-5208-4100-9585-b54177985171",
+      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
       "6a7f2690-5e61-491f-ad35-8e2f9f9bad34",
       "5fa29e30-ba07-428b-a79b-05053376eec5",
       "76eea446-8c62-4db1-a39d-0b3f17ba3cde",
@@ -860,16 +844,39 @@
       "861dd9a8-241c-4937-9aa7-1d6a35170d23"
      ]
     },
-    "15bcc5be-734b-4043-8cee-3eec166007b6": {
-     "title": "Pris og værdi",
-     "id": "15bcc5be-734b-4043-8cee-3eec166007b6",
+    "4f52effa-98f0-4d90-b8e4-88a965f2abe0": {
+     "title": "Byggekvalitet",
+     "id": "4f52effa-98f0-4d90-b8e4-88a965f2abe0",
+     "references": [
+      "9268cc75-9199-4d1c-bc7b-80598b86cf25",
+      "17ac1969-338b-4021-ba0e-16fe147aa15f",
+      "44f8e460-5208-4100-9585-b54177985171",
+      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
+      "76eea446-8c62-4db1-a39d-0b3f17ba3cde",
+      "d4426b3c-8a8d-47b3-aa72-a17a64bc39a2",
+      "1ddb52e1-1662-4a13-ab60-b082974a0e26",
+      "fed1c471-356d-4c4c-aa3a-8fb7e75d9075",
+      "0c153137-40ba-44c5-a88f-ef049fce00b4"
+     ]
+    },
+    "87b88a15-ae53-4e79-8686-516b2042cd2a": {
+     "title": "Værdi for pengene",
+     "id": "87b88a15-ae53-4e79-8686-516b2042cd2a",
      "references": [
       "7eb882ed-c157-4ad7-ae6e-2d5336cc649e",
       "c064a387-e9e1-4302-ac2a-4e7501aa343c",
+      "5e16b891-4f12-410c-83b8-fd7e47181158",
       "23c1f521-5dfc-4f66-9689-771bfde147b5",
-      "e95be396-9ce8-4439-bfac-4fff280ba1d7",
+      "e95be396-9ce8-4439-bfac-4fff280ba1d7"
+     ]
+    },
+    "6ca8cbc6-da88-4431-b994-fead7c840199": {
+     "title": "Udseende",
+     "id": "6ca8cbc6-da88-4431-b994-fead7c840199",
+     "references": [
       "69bc3c73-6f68-42b9-ad4d-709ae424e418",
-      "cda1577c-4698-4625-8729-7ee1b45499ae"
+      "cda1577c-4698-4625-8729-7ee1b45499ae",
+      "f12075ee-8207-471d-8cb3-8fcf8f8743c0"
      ]
     }
    },

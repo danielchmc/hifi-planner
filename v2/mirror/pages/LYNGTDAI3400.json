@@ -13,6 +13,31 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "3",
+   "HDMI udgange": "1",
+   "HDMI version": "2.1",
+   "Lydudgang": "HDMI, Coaxial, Analog RCA, Analog XLR, Hovedtelefon",
+   "Lydindgang": "HDMI, Coaxial, Optisk, Analog RCA, Digital XLR (AES/EBU)",
+   "Udgang (andet)": "RS-232, 12V trigger",
+   "Indgang (andet)": "SD-kort, RS-232, Ethernet, 12V trigger, USB A",
+   "Trådløs overførsel": "Airplay, Spotify Connect",
+   "Tilslutninger (kablet)": "Subwoofer, Pre-out, Analog RCA, Analog XLR, Høretelefon, Ethernet",
+   "Udgangseffekt 4 ohm": "400 watt",
+   "Udgangseffekt 8 ohm": "200 watt",
+   "Fra beskrivelsen": "Kan udbygges med high-end analog-modul (2 x L/R RCA, 1 x XLR, 1 x RIAA Phono MM)** · Kan udbygges med HDMI 2.1-modul inkl. e/ARC/CEC/HDCP2.3 og pass-through for 8K/HDR/Dolby Vision (2 x HDMI-ind, 1 x HDMI-ud)** · Asynkront design på alle digitale indgange · Understøtter tokanals SACD bitstream native via USB og HDMI-modul (2,8/5,6 MHz – DSD64/DSD128)***** · Subwoofer-udgang med elektronisk delefilter og Bass Management · Analoge og digitale udgange kan konfigureres individuelt, f.eks. til en eller to aktive subwoofere eller separat effekttrin · Ethernet-tilslutning (RJ45) · ** Analogmodul kan monteres i butikken. HDMI-modulet skal monteres på HiFi Klubbens centralværksted."
+  },
+  "gallery": [
+   "cdda8968-7aa1-416c-a367-25d1b9e72228",
+   "d0656222-3709-4359-a9d6-2d0e375d5f6c",
+   "3ef7a482-e007-4fe7-abec-5d7cae74dbaa",
+   "69ae4433-e7a5-485e-990e-2b39345ad869",
+   "0d6f43e5-e6b8-4124-9c4d-c21b452b7222"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 85667,
   "skuCode": "LYNGTDAI3400",
@@ -208,12 +233,6 @@
    "url": "/stereo/forstarker/",
    "id": 69671
   },
-  "stockItemAlternative": {
-   "save": "12.000,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=LYNGTDAI3400",
-   "availableQuantity": 1,
-   "lowestPrice": "49.999,-"
-  },
   "variants": [
    {
     "id": 80955,
@@ -223,14 +242,30 @@
     "productCode": "LYNGTDAI3400BK",
     "ean": "5704505103406",
     "priceDetails": {
-     "priceValueId": 1201567,
-     "price": 51999,
-     "priceFormatted": "51.999,-",
+     "priceValueId": 1206302,
+     "price": 37999,
+     "priceFormatted": "37.999,-",
+     "priceBefore": 51999,
+     "priceBeforeFormatted": "51.999,-",
+     "priceSavingsFormatted": "14.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 51999
+     "offerExpiryDate": "2026-12-20T22:59:00Z",
+     "unitPrice": 37999,
+     "unitPriceBefore": 51999
     },
+    "ribbons": [
+     {
+      "text": "Spar 27%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -273,7 +308,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 7,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -307,14 +342,30 @@
     "productCode": "LYNGTDAI3400ABK",
     "ean": "5704505103604",
     "priceDetails": {
-     "priceValueId": 1201561,
-     "price": 55999,
-     "priceFormatted": "55.999,-",
+     "priceValueId": 1206296,
+     "price": 41999,
+     "priceFormatted": "41.999,-",
+     "priceBefore": 55999,
+     "priceBeforeFormatted": "55.999,-",
+     "priceSavingsFormatted": "14.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 55999
+     "offerExpiryDate": "2026-12-20T22:59:00Z",
+     "unitPrice": 41999,
+     "unitPriceBefore": 55999
     },
+    "ribbons": [
+     {
+      "text": "Spar 25%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -401,14 +452,30 @@
     "productCode": "LYNGTDAI3400H8ABK",
     "ean": "5704505103758",
     "priceDetails": {
-     "priceValueId": 1217236,
-     "price": 61999,
-     "priceFormatted": "61.999,-",
+     "priceValueId": 1206307,
+     "price": 47999,
+     "priceFormatted": "47.999,-",
+     "priceBefore": 61999,
+     "priceBeforeFormatted": "61.999,-",
+     "priceSavingsFormatted": "14.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 61999
+     "offerExpiryDate": "2026-12-20T23:59:00Z",
+     "unitPrice": 47999,
+     "unitPriceBefore": 61999
     },
+    "ribbons": [
+     {
+      "text": "Spar 23%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -481,14 +548,30 @@
     "productCode": "LYNGTDAI3400H8BK",
     "ean": "5704505103550",
     "priceDetails": {
-     "priceValueId": 1217245,
-     "price": 58999,
-     "priceFormatted": "58.999,-",
+     "priceValueId": 1206312,
+     "price": 44999,
+     "priceFormatted": "44.999,-",
+     "priceBefore": 58999,
+     "priceBeforeFormatted": "58.999,-",
+     "priceSavingsFormatted": "14.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 58999
+     "offerExpiryDate": "2026-12-20T23:59:00Z",
+     "unitPrice": 44999,
+     "unitPriceBefore": 58999
     },
+    "ribbons": [
+     {
+      "text": "Spar 24%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -527,12 +610,11 @@
      "productCode": "LYNGTDAI3400H8BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 07. december",
+     "deliveryDate": "2026-12-07T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -587,48 +669,48 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGDORF TDAI3400 roses bredt som en kraftfuld, transparent og meget detaljeret forstærker med et usædvanligt effektivt RoomPerfect-rumkorrektionssystem. Opsætning og app-styring opleves som enkel, mens streaming og de mange funktioner gør apparatet til en alsidig forstærker og streamer. Den høje pris og de begrænsede muligheder i analogmodulet er ulemper, og der nævnes lejlighedsvise Spotify-udfald samt en langsom fjernbetjening, men den samlede vurdering er meget begejstret.",
+   "summary": "LYNGDORF TDAI3400 bliver bredt rost som en kraftfuld, transparent og meget detaljeret forstærker med varm, slagkraftig og medrivende lyd. RoomPerfect gør en særlig stor forskel med præcis baskontrol, fokus og dybde, samtidig med at vanskelig rumakustik bliver let at håndtere. Funktionerne og appen er fremragende, men den høje pris, den begrænsede MC-phonosupport, lejlighedsvise Spotify-afbrydelser og den langsomme fjernbetjening er tydelige ulemper.",
    "headlines": {
     "transparent, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en ren, præcis og meget afslørende gengivelse med stærk dynamik, fokus, dybde og musikalsk engagement.",
+     "sentimentAnalysis": "Anmeldelserne beskriver en ren, transparent og meget opløst gengivelse med stærk dynamik, fokus, dybde og nyt liv i velkendt musik.",
      "simpleTitle": "Transparent, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "13d677b5-5311-44cc-b908-b5b7fbb87025"
+     "key": "sound_quality",
+     "groupId": "492aaec1-78a1-4391-9abd-c897d6034115"
     },
-    "roomPerfect makes difficult rooms sound right": {
-     "sentimentAnalysis": "RoomPerfect får gentagne gange æren for at forbedre rumakustikken, især i bassen, samtidig med at systemet er let at opsætte.",
-     "simpleTitle": "RoomPerfect får vanskelige rum til at lyde rigtigt",
+    "roomPerfect delivers major acoustic improvements": {
+     "sentimentAnalysis": "RoomPerfect får gentagne gange ros for at tæmme vanskelig rumakustik samt forbedre mellembas, klarhed, fokus og dybde.",
+     "simpleTitle": "RoomPerfect giver store akustiske forbedringer",
      "bias": "positive",
-     "key": "roomperfect",
-     "groupId": "c6fddab2-ebbe-4da2-907f-425053e79ec4"
+     "key": "room_correction",
+     "groupId": "f102d884-12bc-4243-b0c4-a12c8796cf77"
     },
-    "easy app control and broad functionality": {
-     "sentimentAnalysis": "Appen, indgangsjusteringen og de mange funktioner opleves som intuitive og alsidige, og appen kan ofte erstatte fjernbetjeningen.",
-     "simpleTitle": "Nem app-styring og mange funktioner",
+    "simple installation and intuitive control": {
+     "sentimentAnalysis": "Opsætningen og appen opleves som nemme at bruge, og appen giver omfattende kontrol, så den fysiske fjernbetjening stort set bliver overflødig.",
+     "simpleTitle": "Enkel opsætning og intuitiv betjening",
      "bias": "positive",
-     "key": "features",
-     "groupId": "e8f29ee5-c018-4da7-b72d-01468f3131a1"
+     "key": "features_and_app",
+     "groupId": "39e23412-c616-496d-b3e8-b77439aa9898"
     },
-    "powerful enough for demanding speakers": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den ubesværede kontrol over store eller krævende højttalere og den usædvanligt stærke forstærkerkapacitet.",
-     "simpleTitle": "Kraftfuld nok til krævende højttalere",
+    "strong power for demanding speakers": {
+     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som i stand til ubesværet at drive store eller krævende højttalere og fungere godt med eksklusive højttalersystemer.",
+     "simpleTitle": "Høj effekt til krævende højttalere",
      "bias": "positive",
-     "key": "power",
-     "groupId": "90fc725d-ee91-4db0-b2db-a810b1861758"
+     "key": "power_and_compatibility",
+     "groupId": "931b8367-290e-411a-93aa-0d58d810e553"
     },
-    "premium pricing limits the value proposition": {
-     "sentimentAnalysis": "Produktet anses for exceptionelt, men dyrt; prisstigningen og de ekstra betalte analogmuligheder reducerer værdien.",
-     "simpleTitle": "Den høje pris begrænser værdien",
+    "streaming can occasionally stutter": {
+     "sentimentAnalysis": "Nogle tilbagemeldinger peger på lejlighedsvise Spotify-afbrydelser, mens fjernbetjeningen også beskrives som langsom og upålidelig.",
+     "simpleTitle": "Streaming kan lejlighedsvis hakke",
      "bias": "negative",
-     "key": "value",
-     "groupId": "422f6441-e220-4600-94ac-f3a6886ff5a1"
+     "key": "features_and_app",
+     "groupId": "39e23412-c616-496d-b3e8-b77439aa9898"
     }
    },
    "grouping": {
-    "13d677b5-5311-44cc-b908-b5b7fbb87025": {
+    "492aaec1-78a1-4391-9abd-c897d6034115": {
      "title": "Lydkvalitet",
-     "id": "13d677b5-5311-44cc-b908-b5b7fbb87025",
+     "id": "492aaec1-78a1-4391-9abd-c897d6034115",
      "references": [
       "41ceb302-3890-426a-8940-c8b48731a9be",
       "2473dc7d-967f-49ed-a41b-2f683cd97f4b",
@@ -641,9 +723,9 @@
       "e1e8e127-21f8-4bdc-92cc-69c7e1a8b2aa"
      ]
     },
-    "c6fddab2-ebbe-4da2-907f-425053e79ec4": {
+    "f102d884-12bc-4243-b0c4-a12c8796cf77": {
      "title": "Rumkorrektion og opsætning",
-     "id": "c6fddab2-ebbe-4da2-907f-425053e79ec4",
+     "id": "f102d884-12bc-4243-b0c4-a12c8796cf77",
      "references": [
       "41ceb302-3890-426a-8940-c8b48731a9be",
       "2473dc7d-967f-49ed-a41b-2f683cd97f4b",
@@ -655,37 +737,25 @@
       "e1e8e127-21f8-4bdc-92cc-69c7e1a8b2aa"
      ]
     },
-    "e8f29ee5-c018-4da7-b72d-01468f3131a1": {
-     "title": "Streaming og funktioner",
-     "id": "e8f29ee5-c018-4da7-b72d-01468f3131a1",
+    "39e23412-c616-496d-b3e8-b77439aa9898": {
+     "title": "Funktioner og app",
+     "id": "39e23412-c616-496d-b3e8-b77439aa9898",
      "references": [
       "41ceb302-3890-426a-8940-c8b48731a9be",
-      "2473dc7d-967f-49ed-a41b-2f683cd97f4b",
       "374d6e93-83a4-4ffa-8c9e-dba9309b0b74",
-      "92009565-9a63-4107-b095-8921bcd07be8",
       "35704c7a-58af-45fa-8e01-043679d5a8d1",
       "6952c43d-db88-4f78-a7d3-aaecb63fae63",
       "a0e819a3-a95c-4566-973b-a58bf9d3c124"
      ]
     },
-    "90fc725d-ee91-4db0-b2db-a810b1861758": {
-     "title": "Effekt og højttalerstyring",
-     "id": "90fc725d-ee91-4db0-b2db-a810b1861758",
+    "931b8367-290e-411a-93aa-0d58d810e553": {
+     "title": "Effekt og højttalerkompatibilitet",
+     "id": "931b8367-290e-411a-93aa-0d58d810e553",
      "references": [
-      "41ceb302-3890-426a-8940-c8b48731a9be",
       "35704c7a-58af-45fa-8e01-043679d5a8d1",
       "a0724953-f2ed-44db-9200-755bdba04de6",
+      "356b4397-e8a6-4dc8-b545-0bc3900609c6",
       "6952c43d-db88-4f78-a7d3-aaecb63fae63"
-     ]
-    },
-    "422f6441-e220-4600-94ac-f3a6886ff5a1": {
-     "title": "Værdi for pengene",
-     "id": "422f6441-e220-4600-94ac-f3a6886ff5a1",
-     "references": [
-      "40a9fde9-4fd9-4298-b2d5-1f172a7706bf",
-      "6952c43d-db88-4f78-a7d3-aaecb63fae63",
-      "41ceb302-3890-426a-8940-c8b48731a9be",
-      "a63c22cb-7a62-43d0-819a-d620c7864bc0"
      ]
     }
    },

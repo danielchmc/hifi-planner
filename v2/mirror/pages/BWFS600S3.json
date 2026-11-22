@@ -13,6 +13,17 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "37cb435d-4ebb-4fe7-9eab-7acad4e6da47",
+   "fe039f4e-ab87-4bfa-ba11-c5519e8bfd62",
+   "de00d8b8-0644-4142-8673-9b6c15171e6c",
+   "e04de582-12d8-46d1-8116-b89f0e33c698",
+   "b0e79dfc-7270-429a-8574-9f3b3325a1e4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 210742,
   "skuCode": "BWFS600S3",
@@ -220,130 +231,111 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BWFS600S3-stativene er elegante, solide og meget stabile, og sandfyldning giver ekstra vægt og betryggende fasthed. Stativene passer smukt til kompatible Bowers & Wilkins-højttalere og kan give en mere luftig, slagkraftig og behagelig lyd. Den nemme montering og den gode byggekvalitet imponerer, men integreret kabelstyring mangler, og enkelte højttalerkombinationer kan kræve tilpasninger.",
+   "summary": "BWFS600S3-stativerne leverer en varm, kraftfuld og mærkbart mere omsluttende lydgengivelse, og flere ejere oplever en tydelig forbedring af lyden. Den solide konstruktion, den fremragende stabilitet efter sandfyldning og det enkle, elegante design gør stativerne til et stærkt visuelt og praktisk match til B&W-højttalere. Den nemme montering og kompatibiliteten med højttalerne roses bredt, men indbygget kabelstyring mangler.",
    "headlines": {
-    "elegant design complements the room and speakers": {
-     "sentimentAnalysis": "De fleste kommentarer beskriver stativene som flotte, elegante og velegnede til både rum og højttalere.",
-     "simpleTitle": "Elegant design passer til rummet og højttalerne",
+    "elegant design matches B&W speakers": {
+     "sentimentAnalysis": "Stativerne roses bredt for deres attraktive, minimalistiske udseende og tætte visuelle og fysiske pasform til B&W-højttalere.",
+     "simpleTitle": "Elegant design passer til B&W-højttalere",
      "bias": "positive",
-     "key": "elegant-design",
-     "groupId": "fe1c504d-66a6-493f-b4d9-8193e168fc63"
+     "key": "design_fit",
+     "groupId": "649810f9-e26e-4466-9678-e1e6699caee0"
     },
-    "sand filling adds impressive stability": {
-     "sentimentAnalysis": "Sandfyldning roses gentagne gange for at gøre stativene tungere, fastere og mere sikre.",
-     "simpleTitle": "Sandfyldning giver imponerende stabilitet",
+    "sand filling greatly boosts stability": {
+     "sentimentAnalysis": "Sandfyldning anbefales gentagne gange som en effektiv måde at tilføre vægt og skabe en meget sikker og stabil platform.",
+     "simpleTitle": "Sandfyldning øger stabiliteten markant",
      "bias": "positive",
-     "key": "sand-stability",
-     "groupId": "d73237d2-0f56-4650-b52a-22f66c3f4cdf"
+     "key": "stability",
+     "groupId": "86c8d335-0d9e-4aa4-b87b-405359ec8407"
     },
-    "the stands noticeably improve the sound": {
-     "sentimentAnalysis": "Stativene tilskrives en klarere, mere rumlig og behagelig gengivelse med god bas og luftig lyd.",
-     "simpleTitle": "Stativene forbedrer lyden mærkbart",
+    "simple assembly and secure mounting": {
+     "sentimentAnalysis": "Monteringen beskrives som enkel, mens passende fastgørelse og sikker montering giver højttaleropsætningen tryghed og stabilitet.",
+     "simpleTitle": "Nem montering og sikker fastgørelse",
      "bias": "positive",
-     "key": "sound-improvement",
-     "groupId": "13bae4a9-3f30-4297-9132-ed2f8b8cf166"
+     "key": "assembly",
+     "groupId": "b8144bb1-0bf5-4614-88b6-7e3cf64ccb97"
     },
-    "speaker fit is excellent for matching Bowers & Wilkins models": {
-     "sentimentAnalysis": "Flere ejere rapporterer om en nøjagtig eller perfekt pasform og sikker fastgørelse af kompatible Bowers & Wilkins-højttalere.",
-     "simpleTitle": "Fremragende pasform til matchende Bowers & Wilkins-modeller",
+    "clear improvement in sound": {
+     "sentimentAnalysis": "Stativerne får æren for at forbedre højttalerlyden med kraftig bas og en luftig, rummelig gengivelse.",
+     "simpleTitle": "Tydelig forbedring af lyden",
      "bias": "positive",
-     "key": "speaker-fit",
-     "groupId": "3f1e0fdb-c457-4617-b243-5d030813e149"
+     "key": "sound",
+     "groupId": "8f5806b8-a632-43e2-804a-3487321e6e81"
     },
-    "assembly is straightforward": {
-     "sentimentAnalysis": "Flere kommentarer roser stativene for nem og praktisk montering.",
-     "simpleTitle": "Monteringen er enkel",
-     "bias": "positive",
-     "key": "easy-assembly",
-     "groupId": "12d3084a-e68e-4206-9f98-903745d698ff"
-    },
-    "integrated cable management is missing": {
-     "sentimentAnalysis": "Manglen på indbygget kabelføring kritiseres af flere, og en ejer borede derfor selv kabelhuller.",
-     "simpleTitle": "Integreret kabelstyring mangler",
+    "built-in cable management is missing": {
+     "sentimentAnalysis": "Manglen på dedikeret kabelføring er en tydelig designmangel, som får ejere til at bore eller skabe deres egen kabelløsning.",
+     "simpleTitle": "Indbygget kabelstyring mangler",
      "bias": "negative",
-     "key": "missing-cable-management",
-     "groupId": "31e9a7dc-9a4b-4572-80a4-14890603b5f9"
+     "key": "cable_management",
+     "groupId": "492bb1c0-4803-4e9b-b97b-a8845fd4b2d3"
     }
    },
    "grouping": {
-    "fe1c504d-66a6-493f-b4d9-8193e168fc63": {
-     "title": "Design",
-     "id": "fe1c504d-66a6-493f-b4d9-8193e168fc63",
+    "649810f9-e26e-4466-9678-e1e6699caee0": {
+     "title": "Design og højttalertilpasning",
+     "id": "649810f9-e26e-4466-9678-e1e6699caee0",
      "references": [
+      "336c6dc7-80e3-4e2c-a74a-edd35f8f6c4a",
       "060cae5b-c896-474a-b5b5-19b3266e00ec",
       "2f6409a5-06a3-4885-901b-52ac9b6780a5",
-      "8624e602-9694-4459-b759-b00c2fd16eb9",
+      "b5ef37f5-a0b6-4c2d-a9b2-bb59f663748e",
+      "112282c6-e070-4fba-a353-0bdf04b9c896",
+      "5141b4e4-eb07-4041-a0d1-fbd8dc337289",
       "2f567da6-a21d-4ee3-9bf2-f3710ebedc4c",
       "e4c5ec57-3b31-4312-b1f9-016700a19fc7",
       "a83b78d2-b167-4997-b180-249fbde275d0",
       "903653e8-244a-4686-80e0-b9f524cee37d",
       "265c7815-5b9a-4182-8645-af956b9ea8e5",
-      "5bd5f5bb-07b9-4349-a698-15ad6760eec9",
-      "5f0776fa-bba1-48c7-843a-6203bf2cebab",
       "6bee183c-4388-4782-846a-4967cd006a32",
-      "238664b1-3138-4853-9321-51452bd05f71",
       "8086382a-45f2-438b-9129-ab72dc9b03ac",
       "5ea71ae9-e3e7-4fe7-bb31-9cc8a32c6e43",
       "241fb21e-ed4b-4425-9eb8-f7e12fc2fe3a",
-      "9f598413-3746-437f-a9fc-fe134ecf19e6",
       "ed4a2a25-a4c8-4a74-87d6-39b2b9cae575"
      ]
     },
-    "d73237d2-0f56-4650-b52a-22f66c3f4cdf": {
+    "86c8d335-0d9e-4aa4-b87b-405359ec8407": {
      "title": "Stabilitet",
-     "id": "d73237d2-0f56-4650-b52a-22f66c3f4cdf",
+     "id": "86c8d335-0d9e-4aa4-b87b-405359ec8407",
      "references": [
       "d8dcb744-9acc-4fa4-99b5-7767f10c8c38",
       "84252d13-644c-496c-95a1-eb7e69501ea0",
       "8624e602-9694-4459-b759-b00c2fd16eb9",
       "903653e8-244a-4686-80e0-b9f524cee37d",
+      "265c7815-5b9a-4182-8645-af956b9ea8e5",
       "5bd5f5bb-07b9-4349-a698-15ad6760eec9",
       "5f0776fa-bba1-48c7-843a-6203bf2cebab",
       "2b49fb19-66e3-4367-bda6-de23cf812903",
       "528c7b36-3642-4c8b-ac69-32ffb9189715",
       "6bee183c-4388-4782-846a-4967cd006a32",
-      "238664b1-3138-4853-9321-51452bd05f71",
-      "265c7815-5b9a-4182-8645-af956b9ea8e5"
+      "238664b1-3138-4853-9321-51452bd05f71"
      ]
     },
-    "3f1e0fdb-c457-4617-b243-5d030813e149": {
-     "title": "Højttalerkompatibilitet",
-     "id": "3f1e0fdb-c457-4617-b243-5d030813e149",
+    "b8144bb1-0bf5-4614-88b6-7e3cf64ccb97": {
+     "title": "Montering og fastgørelse",
+     "id": "b8144bb1-0bf5-4614-88b6-7e3cf64ccb97",
      "references": [
-      "336c6dc7-80e3-4e2c-a74a-edd35f8f6c4a",
       "b5ef37f5-a0b6-4c2d-a9b2-bb59f663748e",
       "112282c6-e070-4fba-a353-0bdf04b9c896",
-      "e4c5ec57-3b31-4312-b1f9-016700a19fc7",
+      "84252d13-644c-496c-95a1-eb7e69501ea0",
+      "5f0776fa-bba1-48c7-843a-6203bf2cebab",
       "6bee183c-4388-4782-846a-4967cd006a32",
       "8086382a-45f2-438b-9129-ab72dc9b03ac",
-      "ed4a2a25-a4c8-4a74-87d6-39b2b9cae575"
+      "9f598413-3746-437f-a9fc-fe134ecf19e6"
      ]
     },
-    "13bae4a9-3f30-4297-9132-ed2f8b8cf166": {
+    "8f5806b8-a632-43e2-804a-3487321e6e81": {
      "title": "Lydkvalitet",
-     "id": "13bae4a9-3f30-4297-9132-ed2f8b8cf166",
+     "id": "8f5806b8-a632-43e2-804a-3487321e6e81",
      "references": [
       "1b0192f1-9386-4a0b-9092-fbb6380a3697",
       "da52317b-928a-46b2-8238-e1aba554ac0f",
       "4c71849f-c7a2-436c-9b29-3be2615de745",
-      "baa574da-3d7c-4074-9835-71f07ba24d40",
       "3d11927d-ff9b-44d2-99aa-34fe610f7030",
-      "528c7b36-3642-4c8b-ac69-32ffb9189715"
+      "baa574da-3d7c-4074-9835-71f07ba24d40"
      ]
     },
-    "12d3084a-e68e-4206-9f98-903745d698ff": {
-     "title": "Montering",
-     "id": "12d3084a-e68e-4206-9f98-903745d698ff",
-     "references": [
-      "84252d13-644c-496c-95a1-eb7e69501ea0",
-      "5f0776fa-bba1-48c7-843a-6203bf2cebab",
-      "9f598413-3746-437f-a9fc-fe134ecf19e6",
-      "6bee183c-4388-4782-846a-4967cd006a32"
-     ]
-    },
-    "31e9a7dc-9a4b-4572-80a4-14890603b5f9": {
+    "492bb1c0-4803-4e9b-b97b-a8845fd4b2d3": {
      "title": "Kabelstyring",
-     "id": "31e9a7dc-9a4b-4572-80a4-14890603b5f9",
+     "id": "492bb1c0-4803-4e9b-b97b-a8845fd4b2d3",
      "references": [
       "5141b4e4-eb07-4041-a0d1-fbd8dc337289",
       "d22fa020-7d10-46b1-b842-d4be57483f33"

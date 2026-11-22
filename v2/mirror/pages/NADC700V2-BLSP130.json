@@ -13,6 +13,14 @@
    "url": "/stereo/mini-anlag/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "9ba533e0-b904-40a7-b092-5025ff4e1d32",
+   "0c2454bc-5def-4e92-9c33-ec9b7362c11b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 291438,
   "skuCode": "NADC700V2-BLSP130",
@@ -204,7 +212,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 529,
+        "availableQuantity": 527,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.999,-",
@@ -236,7 +244,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2400,
+        "availableQuantity": 2349,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -259,7 +267,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1483,
+        "availableQuantity": 1455,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -282,7 +290,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2062,
+        "availableQuantity": 2043,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.999,-",
@@ -294,56 +302,54 @@
      ],
      "parentProductCode": "BLSP130",
      "reviews": {
-      "summary": "Bluesound PULSE FLEX P130 leverer en bemærkelsesværdig varm, klar og fyldig lyd fra det kompakte kabinet, især med imponerende dybde og rumfornemmelse i stereo. Nem app-betjening, multiroom-integration og praktiske forvalgsknapper gør den alsidig til køkken, soveværelse og musik i hele hjemmet. Trådløs opsætning og software er de største svagheder, da nogle brugere oplever besværlig installation, ustabile forbindelser, fejl og udfald; kablet netværk er ofte mere stabilt.",
+      "summary": "BLSP130 leverer en imponerende varm, fyldig og detaljeret lyd fra det kompakte kabinet samt en medrivende stereo- og multiroom-oplevelse ved sammenkobling med andet Bluesound-udstyr. Den nemme app-betjening, alsidige streaming og gode værdi gør den til et fremragende valg til køkken, soveværelse og mindre rum. Stabiliteten på Wi-Fi og softwaren er de største forbehold, da der lejlighedsvis opstår forbindelsesudfald, parringsproblemer og fejl, som ofte kan løses med en omhyggelig netværksopsætning eller kablet Ethernet.",
       "headlines": {
-       "rich, clear sound from a compact speaker": {
-        "sentimentAnalysis": "Anmeldelserne roser den klare, velafbalancerede og for størrelsen overraskende kraftige lyd samt den gode dybde og detaljering.",
+       "wireless connection and software can be unreliable": {
+        "sentimentAnalysis": "Flere anmeldelser rapporterer om Wi-Fi-udfald, parringsfejl, softwareproblemer i stereo og gentagen opsætning, selv om netværksforholdene nogle gange bidrager.",
+        "simpleTitle": "Trådløs forbindelse og software kan være ustabil",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "c463f4d6-ffcb-475c-8c47-c8b04974cc51"
+       },
+       "full, clear sound from a compact speaker": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den usædvanligt fyldige, klare og detaljerede lyd i forhold til størrelsen.",
         "simpleTitle": "Fyldig og klar lyd fra en kompakt højttaler",
         "bias": "positive",
         "key": "sound",
-        "groupId": "a4136e75-cb50-4fac-98eb-6c4f615e48e9"
+        "groupId": "f25e3513-1b84-4080-9c5f-c286f4b5cfb1"
        },
-       "wi-Fi stability and software bugs can disrupt listening": {
-        "sentimentAnalysis": "Flere anmeldelser nævner ustabilt Wi-Fi, mistede forbindelser, parringsproblemer eller softwarefejl, selv om nogle problemer blev løst med netværksændringer eller support.",
-        "simpleTitle": "Ustabilt Wi-Fi og softwarefejl kan forstyrre lytningen",
-        "bias": "negative",
-        "key": "setup",
-        "groupId": "a8efb538-e2db-41bf-b199-1e9751438a41"
-       },
-       "stereo creates a spacious whole-home listening experience": {
-        "sentimentAnalysis": "Parrede højttalere beskrives som en bred og immersiv lydscene med effektiv synkron afspilning i flere rum.",
-        "simpleTitle": "Stereo skaber en rummelig lytteoplevelse i hele hjemmet",
+       "easy app control and versatile streaming": {
+        "sentimentAnalysis": "Mange anmeldelser fremhæver enkel betjening, praktiske forvalgsknapper og pålidelig adgang til radio, musiktjenester og tilsluttede kilder.",
+        "simpleTitle": "Nem app-betjening og alsidig streaming",
         "bias": "positive",
-        "key": "stereo",
-        "groupId": "d0ee8d00-015c-41ff-9128-cb30c55db88c"
+        "key": "usability",
+        "groupId": "ede6f5d1-ef8a-4531-b639-d65d01c961db"
        },
-       "the app and presets are convenient to use": {
-        "sentimentAnalysis": "Anmeldelserne fremhæver intuitiv app-betjening og hurtig adgang til radio eller favoritter via forvalgsknapperne.",
-        "simpleTitle": "App og forvalgsknapper er praktiske",
+       "stereo pairing creates a spacious, immersive presentation": {
+        "sentimentAnalysis": "Parrede højttalere beskrives som et bredt stereoperspektiv, en medrivende oplevelse og problemfri afspilning i hele hjemmet.",
+        "simpleTitle": "Stereoparring skaber en rummelig og medrivende lyd",
         "bias": "positive",
-        "key": "controls",
-        "groupId": "508b8e93-29ad-4327-a8d0-84276ea6136d"
+        "key": "integration",
+        "groupId": "bd6173e1-8233-43ac-b9b4-548649082cc6"
        },
-       "bass can sound light and less substantial": {
-        "sentimentAnalysis": "En mindre del af anmeldelserne nævner begrænset dybbas eller en lidt tynd gengivelse trods den generelt roste klarhed.",
-        "simpleTitle": "Bassen kan virke let og mindre fyldig",
+       "bass is limited and the sound can become thin": {
+        "sentimentAnalysis": "Et mindretal af anmeldelserne nævner begrænset dybbas, en tynd klangbalance eller svag gengivelse ved lav lydstyrke trods et generelt positivt indtryk.",
+        "simpleTitle": "Bassen er begrænset, og lyden kan virke tynd",
         "bias": "negative",
         "key": "sound",
-        "groupId": "a4136e75-cb50-4fac-98eb-6c4f615e48e9"
+        "groupId": "f25e3513-1b84-4080-9c5f-c286f4b5cfb1"
        }
       },
       "grouping": {
-       "a4136e75-cb50-4fac-98eb-6c4f615e48e9": {
+       "f25e3513-1b84-4080-9c5f-c286f4b5cfb1": {
         "title": "Lydkvalitet",
-        "id": "a4136e75-cb50-4fac-98eb-6c4f615e48e9",
+        "id": "f25e3513-1b84-4080-9c5f-c286f4b5cfb1",
         "references": [
-         "ba194236-9d82-47e6-880c-1a13f7dd403d",
-         "d0c0b65c-8701-42cf-92ab-1eae6d410900",
-         "acb818c8-5be8-41d5-b28c-6d8f19480159",
-         "e05f2cf7-d610-4575-a603-64cb05232696",
+         "60f9da77-1f85-4f2c-b490-7130b5f06315",
+         "ba194236-9d82-47e6-880c-1a1908032b3b",
          "15500fe1-2fde-496c-9f7c-24692b922d4d",
-         "1d74fb68-f205-40b0-9200-5530746258a6",
-         "0cdb57d7-68a9-40db-a1a9-616395add3a7",
+         "e05f2cf7-d610-4575-a603-64cb05232696",
+         "acb818c8-5be8-41d5-b28c-6d8f19480159",
          "92e62e33-e061-4f85-8e7f-8ec54a293432",
          "447c26c7-ce40-4499-8049-3192f295cd5b",
          "4eb5b97d-a0d4-441f-bcd4-1944cbf6ff03",
@@ -353,22 +359,14 @@
          "0a8bbbe0-78f9-4df6-a6bf-2887948314f8",
          "ddc45812-e7e1-4874-915f-87df005cd35f",
          "eee0ec6f-b755-40a9-ae07-a92ff67e9bf6",
-         "9ada38ac-4b70-4e7a-be2f-072bc9e339b1",
-         "fbe1e7a4-e797-464b-9b00-f7b6e1a76c37",
          "699d0814-556e-450f-bb5a-56730f358346",
-         "60eabeeb-f8b3-4f30-9c9d-1437a5b36642",
-         "36dc8ea2-ff3b-4c52-a832-2119a9e41988",
-         "03685f48-d7b1-4753-ada0-c03518b3bc47",
-         "7ee4cebb-dcac-48bf-b73c-8cc4b5c3ba36",
          "98353d48-cf64-487f-b1e3-bb78d3313e81",
-         "5c5a2c70-9113-4a0d-81e4-a98f4fb694c7",
          "583fb144-9de8-429c-81f0-6b3b0ab027e6",
          "d9ff34cf-78b9-4e8a-8c6f-25b823163cbf",
          "ca53a583-238e-4487-8e48-b30a913e754e",
          "f439901d-25b9-42f5-8670-99395eb27077",
          "b9ff7df0-2de9-4e82-bad0-8a10ab6c89bd",
          "47a2e42d-07fa-43d8-9ede-f98d46922e7c",
-         "84d271fb-05bf-4159-b9a2-ede907e1120c",
          "e697fe18-cfa7-49b7-92a6-3a6ff0a0378a",
          "f14256f9-5a4d-4b69-a7ce-fba1a1edc37c",
          "0099a5f5-edb1-4027-9fa9-24a1db8333a4",
@@ -385,82 +383,75 @@
          "0efd7419-0e20-4f8f-b626-113ec5422647"
         ]
        },
-       "a8efb538-e2db-41bf-b199-1e9751438a41": {
-        "title": "Opsætning og forbindelse",
-        "id": "a8efb538-e2db-41bf-b199-1e9751438a41",
+       "c463f4d6-ffcb-475c-8c47-c8b04974cc51": {
+        "title": "Forbindelse og software",
+        "id": "c463f4d6-ffcb-475c-8c47-c8b04974cc51",
         "references": [
          "0f119d17-a688-4121-97e4-d6ed7e4f5146",
-         "acb818c8-5be8-41d5-b28c-6d8f19480159",
          "26aba2b2-717c-4865-8ec4-3cebccd5db6b",
          "0cc8c4b8-3cae-474f-850f-1d135ade60e7",
          "71bd86b7-f169-4d64-996b-91ab881dec60",
          "7aa4ce9b-5ce6-4b71-a6aa-005f9534d747",
          "76119a55-95cb-4db8-b68e-72409ffeba5e",
          "a123f9a7-4459-4138-b06e-ef04d8c41300",
+         "60eabeeb-f8b3-4f30-9c9d-1437a5b36642",
+         "36dc8ea2-ff3b-4c52-a832-2119a9e41988",
          "9c271da8-09f6-4894-9b8f-84dd235559a7",
+         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
          "6144feb7-fc44-4ca8-9c2b-62706a71fa78",
          "d8d7e20f-3664-4748-8242-46ab79af8e85",
          "a24b3940-da4c-4eac-9fc9-ece673ad2688",
-         "f14256f9-5a4d-4b69-a7ce-fba1a1edc37c",
-         "0099a5f5-edb1-4027-9fa9-24a1db8333a4",
-         "3074f681-dce6-4c02-93f8-7d68690f24a7",
-         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
          "42a8cc1d-c1c0-41bf-a702-c72ae7a03f7d"
         ]
        },
-       "d0ee8d00-015c-41ff-9128-cb30c55db88c": {
-        "title": "Stereo og multiroom",
-        "id": "d0ee8d00-015c-41ff-9128-cb30c55db88c",
+       "ede6f5d1-ef8a-4531-b639-d65d01c961db": {
+        "title": "Installation og betjening",
+        "id": "ede6f5d1-ef8a-4531-b639-d65d01c961db",
         "references": [
-         "ba194236-9d82-47e6-880c-1a13f7dd403d",
+         "60f9da77-1f85-4f2c-b490-7130b5f06315",
+         "0f119d17-a688-4121-97e4-d6ed7e4f5146",
+         "1d74fb68-f205-40b0-9200-5530746258a6",
+         "e05f2cf7-d610-4575-a603-64cb05232696",
+         "00f10b63-67e8-4b40-88db-6a99ef1015a2",
+         "d289aa4f-cdfb-4641-98d1-e6dfad92069c",
+         "68f5e993-0d12-4370-9172-94a947720db3",
+         "a123f9a7-4459-4138-b06e-ef04d8c41300",
+         "03685f48-d7b1-4753-ada0-c03518b3bc47",
+         "f14256f9-5a4d-4b69-a7ce-fba1a1edc37c",
+         "0099a5f5-edb1-4027-9fa9-24a1db8333a4",
+         "3074f681-dce6-4c02-93f8-7d68690f24a7",
+         "4497a257-6dd8-43e9-8799-b6351a9ca01c"
+        ]
+       },
+       "bd6173e1-8233-43ac-b9b4-548649082cc6": {
+        "title": "Stereo og multiroom",
+        "id": "bd6173e1-8233-43ac-b9b4-548649082cc6",
+        "references": [
+         "ba194236-9d82-47e6-880c-1a1908032b3b",
          "acb818c8-5be8-41d5-b28c-6d8f19480159",
-         "d9ff34cf-78b9-4e8a-8c6f-25b823163cbf",
-         "9ada38ac-4b70-4e7a-be2f-072bc9e339b1",
-         "fbe1e7a4-e797-464b-9b00-f7b6e1a76c37",
-         "60eabeeb-f8b3-4f30-9c9d-1437a5b36642",
-         "36dc8ea2-ff3b-4c52-a832-2119a9e41988",
          "0a8bbbe0-78f9-4df6-a6bf-2887948314f8",
+         "d9ff34cf-78b9-4e8a-8c6f-25b823163cbf",
          "173cbc98-1b6f-442e-8e06-0c297f65b552",
          "2e9d5a75-72ec-4d8b-9f48-173ebead4856",
          "ff2fa7a5-396d-42fb-aad0-4e934ff5e986",
-         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
-         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
+         "fbe1e7a4-e797-464b-9b00-f7b6e1a76c37",
          "47a2e42d-07fa-43d8-9ede-f98d46922e7c",
          "84d271fb-05bf-4159-b9a2-ede907e1120c",
          "a24b3940-da4c-4eac-9fc9-ece673ad2688",
-         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
-         "42a8cc1d-c1c0-41bf-a702-c72ae7a03f7d",
-         "f277069a-0340-4720-8a30-b55c388f7c5e"
-        ]
-       },
-       "508b8e93-29ad-4327-a8d0-84276ea6136d": {
-        "title": "App og betjening",
-        "id": "508b8e93-29ad-4327-a8d0-84276ea6136d",
-        "references": [
-         "e05f2cf7-d610-4575-a603-64cb05232696",
-         "26aba2b2-717c-4865-8ec4-3cebccd5db6b",
-         "7aa4ce9b-5ce6-4b71-a6aa-005f9534d747",
-         "0c0038ba-d66e-471c-b47e-4778ed066ac6",
-         "76119a55-95cb-4db8-b68e-72409ffeba5e",
-         "5c5a2c70-9113-4a0d-81e4-a98f4fb694c7",
-         "3855d5a0-698d-4020-ac84-c49253fd2504",
-         "d9ff34cf-78b9-4e8a-8c6f-25b823163cbf",
-         "6144feb7-fc44-4ca8-9c2b-62706a71fa78",
-         "d289aa4f-cdfb-4641-98d1-e6dfad92069c",
-         "4b8fc291-e1c9-4639-92cf-75db44a72acf",
-         "68f5e993-0d12-4370-9172-94a947720db3"
+         "f14256f9-5a4d-4b69-a7ce-fba1a1edc37c",
+         "4b8fc291-e1c9-4639-92cf-75db44a72acf"
         ]
        }
       },
-      "rating": 4.61875,
-      "count": 160,
+      "rating": 4.62111801242236,
+      "count": 161,
       "reviewCount": 78,
       "distribution": {
        "1": 0,
        "2": 4,
        "3": 9,
        "4": 31,
-       "5": 116
+       "5": 117
       }
      }
     }
@@ -470,21 +461,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 25
+    "numberOfStoresExperience": 23
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.71912832929782,
-   "count": 413,
+   "rating": 4.71980676328502,
+   "count": 414,
    "reviewCount": 206,
    "distribution": {
     "1": 0,
     "2": 4,
     "3": 15,
     "4": 74,
-    "5": 320
+    "5": 321
    }
   },
   "boxContent": [

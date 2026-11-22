@@ -13,6 +13,13 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "307e8e8c-7157-46a6-ac70-8a61437173f0"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 242301,
   "skuCode": "LYNGFR2",
@@ -40,11 +47,11 @@
     "ESSPR1SCX",
     "ESSEX2BANAIRGOX",
     "ESSPR2SCX",
+    "LYNGFR2WM",
     "ESSEX1SCCOMSX",
     "ESSCL1BANANAX",
     "ESSBA1BANBFASIX",
     "ESSCL2SCX",
-    "LYNGFR2WM",
     "LYNGFR2GRILL",
     "LYNGFR2COVER"
    ],
@@ -714,57 +721,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGFR2 leverer en usædvanligt klar, detaljeret og medrivende lyd med varm, præcis og slagkraftig bas. Den fulde frekvensgengivelse og høje opløsning får musikken til at føles levende, rummelig og nuanceret, mens det kompakte vægdesign passer smukt i mindre rum. Den dybe, kontrollerede bas og fremragende gengivelse i rummet gør LYNGFR2 til et begejstrende valg for førsteklasses lyd uden store højttalere.",
+   "summary": "LYNGFR2 leverer en usædvanligt detaljeret, præcis og medrivende lyd over hele frekvensområdet med varm klarhed og overraskende dyb, slagkraftig bas. Højttalerne gengiver fine musikalske detaljer uden at blive skarpe og spreder samtidig lyden overbevisende i rummet. Det slanke, attraktive og vægmonterbare design gør LYNGFR2 særligt velegnet til mindre stuer og krævende rumforhold.",
    "headlines": {
-    "detailed, high-resolution sound": {
-     "sentimentAnalysis": "Anmeldelserne roser højttalerne for fine detaljer, præcis gengivelse og en usædvanligt høj opløsning.",
-     "simpleTitle": "Detaljeret lyd med høj opløsning",
+    "detailed, precise and expansive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den høje opløsning, den præcise detaljegengivelse og den brede lydspredning.",
+     "simpleTitle": "Detaljeret, præcis og bred lyd",
      "bias": "positive",
-     "key": "detailed-sound",
-     "groupId": "8f3f0123-3246-49e7-b86e-dfb5fccbbde5"
+     "key": "sound-detail",
+     "groupId": "5359c761-05f2-4e38-8007-f244b5855bc9"
     },
-    "compact and attractive wall-mounted design": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter det pladsbesparende format, den enkle vægmontering og det flotte udseende, især i mindre stuer.",
-     "simpleTitle": "Kompakt og flot vægmonteret design",
+    "slim and attractive wall-mountable design": {
+     "sentimentAnalysis": "Højttalerne værdsættes for at fylde meget lidt og se godt ud på væggen.",
+     "simpleTitle": "Slankt og attraktivt design til vægmontering",
      "bias": "positive",
-     "key": "wall-mounting",
-     "groupId": "d7a7810a-f101-4901-a335-3c9608556bf0"
+     "key": "placement",
+     "groupId": "4d858887-0488-4f5d-b06d-7d9da6f6d070"
     },
-    "deep, precise and punchy bass": {
-     "sentimentAnalysis": "Begge anmeldelser fremhæver den uventet dybe, kontrollerede og præcise bas, som løser rumudfordringer og ikke efterlader indtryk af for lidt bas.",
-     "simpleTitle": "Dyb, præcis og slagkraftig bas",
+    "deep, punchy and precise bass": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den overraskende dybe og kontrollerede bas med kraftigt anslag og afviser bekymringer om, at de kompakte højttalere skulle mangle tyngde i bunden.",
+     "simpleTitle": "Dyb, slagkraftig og præcis bas",
      "bias": "positive",
-     "key": "deep-bass",
-     "groupId": "a0583684-170b-4415-b711-2da1f457c12f"
+     "key": "bass",
+     "groupId": "5359c761-05f2-4e38-8007-f244b5855bc9"
     }
    },
    "grouping": {
-    "8f3f0123-3246-49e7-b86e-dfb5fccbbde5": {
+    "5359c761-05f2-4e38-8007-f244b5855bc9": {
      "title": "Lydkvalitet",
-     "id": "8f3f0123-3246-49e7-b86e-dfb5fccbbde5",
+     "id": "5359c761-05f2-4e38-8007-f244b5855bc9",
      "references": [
       "61477528-70dc-4dd0-ba69-03e71dc6a8f6",
       "f3da14a1-1ae3-436c-9767-643c821bc46c",
+      "70b5de17-5459-4748-a209-d5c88412ae29",
       "47a0d093-9f6a-4363-b292-54a961463a09",
       "f3ad4e8c-9c4f-4653-bfeb-8301b43d5835",
       "bdb8a6d4-7b44-49bb-9a62-45d258a8afed",
       "a18819d1-a863-493a-ba95-3d2c8eeacd46"
      ]
     },
-    "d7a7810a-f101-4901-a335-3c9608556bf0": {
-     "title": "Design og montering",
-     "id": "d7a7810a-f101-4901-a335-3c9608556bf0",
+    "4d858887-0488-4f5d-b06d-7d9da6f6d070": {
+     "title": "Design og placering",
+     "id": "4d858887-0488-4f5d-b06d-7d9da6f6d070",
      "references": [
       "f3da14a1-1ae3-436c-9767-643c821bc46c",
       "bdb8a6d4-7b44-49bb-9a62-45d258a8afed",
-      "a18819d1-a863-493a-ba95-3d2c8eeacd46"
-     ]
-    },
-    "a0583684-170b-4415-b711-2da1f457c12f": {
-     "title": "Bas",
-     "id": "a0583684-170b-4415-b711-2da1f457c12f",
-     "references": [
-      "70b5de17-5459-4748-a209-d5c88412ae29",
       "a18819d1-a863-493a-ba95-3d2c8eeacd46"
      ]
     }

@@ -13,6 +13,28 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Nej",
+   "HDMI indgange": "0",
+   "HDMI udgange": "0",
+   "Bluetooth": "Nej",
+   "Lydudgang": "Analog RCA, BNC",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC",
+   "Indgang (andet)": "Ethernet, USB B",
+   "Tilslutninger (kablet)": "Pre-out, Analog RCA, Ethernet",
+   "Udgangseffekt 8 ohm": "250 watt",
+   "Fra beskrivelsen": "USB-B indgang til afspilning fra PC/Mac (24/384) · Mulighed for DAC-Loop (BNC-ud/XLR-ind) · Ethernet-tilslutning / DLNA / UPnP · Valgfri variabel/fixed indstilling på alle indgange (undtagen USB) · Digital input sense på alle digitale indgange undtagen USB"
+  },
+  "gallery": [
+   "1d4adb0a-3008-4d89-8ae8-d7ad897fb3e8",
+   "bdcb467f-0cf9-481f-910f-d3a2b046ae5b",
+   "279f2a39-4566-4616-9284-37605845f0c7",
+   "0d0599a8-7551-46c7-b51a-f55119fb27e8",
+   "6bc1b39d-bed3-431d-a743-386bfe4e0ca1"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 235669,
   "skuCode": "HEGELH400",
@@ -351,27 +373,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Hegel H400 roses bredt som en kraftfuld og præcis alt-i-en-forstærker med fremragende kontrol over højttalerne og en meget engagerende lyd. Gengivelsen er varm, slagkraftig, krystalklar og naturlig på tværs af genrer, mens den indbyggede streamer og DAC giver overbevisende alsidighed. TV-integration kan være problematisk i visse opsætninger med lejlighedsvise udfald og forsinket parring af fjernbetjeningen, men den samlede ydelse er stadig fremragende.",
+   "summary": "HEGELH400 er en kraftfuld og præcis alt-i-en-forstærker med varm, slagkraftig og krystalklar lyd samt sikker kontrol over krævende højttalere. Forstærkeren passer særligt godt sammen med avancerede højttalere og leverer medrivende, naturlige detaljer på tværs af musikgenrer. TV-integrationen kan være problematisk med lejlighedsvise lydudfald og langsom parring af fjernbetjeningen, selv om musikgengivelsen er fremragende.",
    "headlines": {
-    "powerful control and punch": {
-     "sentimentAnalysis": "Forstærkeren roses gentagne gange for rigelig kraft, stram kontrol og evnen til at drive krævende højttalere med autoritet.",
-     "simpleTitle": "Kraftfuld kontrol og dynamik",
+    "confident control of demanding speakers": {
+     "sentimentAnalysis": "H400 værdsættes konsekvent for sin effekt, autoritet og evne til at drive og kontrollere store højttalersystemer.",
+     "simpleTitle": "Sikker kontrol over krævende højttalere",
      "bias": "positive",
-     "key": "powerful-control",
-     "groupId": "68b5f954-63bc-41ed-b682-6edf87187205"
+     "key": "amplification",
+     "groupId": "c9343ee4-de3a-4e2b-b777-4acedc07cb28"
     },
-    "crystal-clear, natural sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver H400 som krystalklar, præcis og naturlig med stærk musikalsk realisme på tværs af forskelligt materiale.",
-     "simpleTitle": "Krystalklar, naturlig lyd",
+    "warm, clear and natural sound": {
+     "sentimentAnalysis": "Forstærkeren roses for krystalklar, præcis og naturlig lyd med stærk musikalsk gennemslagskraft.",
+     "simpleTitle": "Varm, klar og naturlig lyd",
      "bias": "positive",
-     "key": "clear-natural-sound",
-     "groupId": "305e2c57-6022-40d7-a082-4fde7c2cc633"
+     "key": "sound",
+     "groupId": "2b01bdb4-5b67-4859-8273-d85f06493217"
     }
    },
    "grouping": {
-    "68b5f954-63bc-41ed-b682-6edf87187205": {
-     "title": "Kraft og højttalerkontrol",
-     "id": "68b5f954-63bc-41ed-b682-6edf87187205",
+    "c9343ee4-de3a-4e2b-b777-4acedc07cb28": {
+     "title": "Forstærkereffekt og kontrol",
+     "id": "c9343ee4-de3a-4e2b-b777-4acedc07cb28",
      "references": [
       "36f3ee2c-bd33-4e26-a2b9-9566758d21b5",
       "d129836d-f192-4c4b-ba80-82c400a8e706",
@@ -380,12 +402,13 @@
       "932aab41-74a4-4d51-8edb-071ae44e6a54"
      ]
     },
-    "305e2c57-6022-40d7-a082-4fde7c2cc633": {
+    "2b01bdb4-5b67-4859-8273-d85f06493217": {
      "title": "Lydkvalitet",
-     "id": "305e2c57-6022-40d7-a082-4fde7c2cc633",
+     "id": "2b01bdb4-5b67-4859-8273-d85f06493217",
      "references": [
       "d129836d-f192-4c4b-ba80-82c400a8e706",
       "62972013-aa25-4e28-a753-0c51e1e48163",
+      "078b264f-3400-473d-8d8b-333a5c5aead5",
       "932aab41-74a4-4d51-8edb-071ae44e6a54"
      ]
     }

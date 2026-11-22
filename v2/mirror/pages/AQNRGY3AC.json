@@ -8,6 +8,15 @@
    "url": "/kabler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Schuko > C-13"
+  },
+  "gallery": [
+   "d8e27f5e-a581-4d79-a739-713d43d04cf7"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 100175,
   "skuCode": "AQNRGY3AC",
@@ -102,7 +111,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 26,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -278,63 +287,57 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQNRGY3AC roses bredt som et velbygget strømkabel, der kan give renere, roligere, mere dynamisk og rummelig lyd med strammere bas og flere detaljer. Flere anmeldelser beskriver en tydeligt hørbar opgradering i forhold til standardkabler, mens en mindre gruppe ikke hører nogen eller kun ringe forskel. Den største praktiske ulempe er stivheden, mens afskærmning, konstruktion og værdi for pengene får ros.",
+   "summary": "AQ NRG-Y3-strømkabler roses bredt for en renere, roligere og mere detaljeret lyd med mere punch i bassen, større dynamik samt et bredere og dybere lydbillede. Den solide byggekvalitet, gode afskærmning og egnethed til avancerede lydanlæg øger attraktiviteten, mens værdi for pengene ofte vurderes positivt. Et mindretal hører kun lille eller ingen lydmæssig forskel, og kablet kan være mærkbart stift, men den samlede vurdering er meget begejstret.",
    "headlines": {
     "cleaner, more dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klarere, renere og mere dynamisk lyd efter tilslutning af kablet.",
-     "simpleTitle": "Renere, mere dynamisk lyd",
+     "sentimentAnalysis": "Kablet forbindes gentagne gange med renere, mere detaljeret, roligere og mere dynamisk lyd.",
+     "simpleTitle": "Renere og mere dynamisk lyd",
      "bias": "positive",
-     "key": "clean-dynamic-sound",
-     "groupId": "58341091-6c5d-4b70-9b54-a120c7d9c1e7"
+     "key": "cleaner-more-dynamic-sound",
+     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
     },
-    "tighter bass and greater detail": {
-     "sentimentAnalysis": "Anmeldelserne roser bedre basrækkevidde eller -kontrol samt flere musikalske detaljer.",
-     "simpleTitle": "Strammere bas og flere detaljer",
+    "solid, well-constructed cable": {
+     "sentimentAnalysis": "Byggekvaliteten vurderes konsekvent som robust, pålidelig og egnet til avanceret udstyr.",
+     "simpleTitle": "Solidt og velkonstrueret kabel",
      "bias": "positive",
-     "key": "bass-detail",
-     "groupId": "58341091-6c5d-4b70-9b54-a120c7d9c1e7"
+     "key": "solid-construction",
+     "groupId": "b9ed8e55-89c6-4588-9af4-d518307550c9"
     },
-    "wider, deeper and more immersive presentation": {
-     "sentimentAnalysis": "Lydbilledet beskrives som bredere, dybere og mere rummeligt med en stærkere følelse af indlevelse.",
+    "no clear audible improvement for some systems": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver usikkerhed eller ingen umiddelbart hørbar forbedring sammenlignet med eksisterende kabler.",
+     "simpleTitle": "Ingen tydelig hørbar forbedring i visse anlæg",
+     "bias": "negative",
+     "key": "no-clear-audible-improvement",
+     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
+    },
+    "broader, deeper and more spacious presentation": {
+     "sentimentAnalysis": "Gengivelsen beskrives som bredere, dybere og mere rummelig med større indlevelse.",
      "simpleTitle": "Bredere, dybere og mere rummelig gengivelse",
      "bias": "positive",
-     "key": "spacious-presentation",
-     "groupId": "58341091-6c5d-4b70-9b54-a120c7d9c1e7"
+     "key": "broader-deeper-soundstage",
+     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
     },
-    "no clearly audible improvement for some systems": {
-     "sentimentAnalysis": "Nogle anmeldelser udtrykker tvivl eller rapporterer ingen mærkbar opgradering sammenlignet med et eksisterende eller standardkabel.",
-     "simpleTitle": "Ingen tydelig hørbar forbedring i nogle anlæg",
-     "bias": "negative",
-     "key": "limited-audible-difference",
-     "groupId": "58341091-6c5d-4b70-9b54-a120c7d9c1e7"
-    },
-    "stiff construction": {
-     "sentimentAnalysis": "Flere anmeldelser bemærker, at kablet er forholdsvis stift, selv om en anden anmeldelse beskriver det som blødere end en anden model.",
-     "simpleTitle": "Stiv konstruktion",
-     "bias": "negative",
-     "key": "stiff-cable",
-     "groupId": "8c8e321a-e5c6-46bb-80c0-d06fd5f8a823"
-    },
-    "strong shielding": {
-     "sentimentAnalysis": "Kablet roses for effektiv afskærmning og en renere, roligere gengivelse.",
-     "simpleTitle": "God afskærmning",
+    "good shielding reduces unwanted noise": {
+     "sentimentAnalysis": "Afskærmningen roses for at understøtte renere lyd og reducere støj.",
+     "simpleTitle": "God afskærmning reducerer uønsket støj",
      "bias": "positive",
      "key": "effective-shielding",
-     "groupId": "8e25588f-ea98-4017-826c-dd0336b767ba"
+     "groupId": "3b3bd583-4386-4513-bb64-addfd722c1fe"
     }
    },
    "grouping": {
-    "58341091-6c5d-4b70-9b54-a120c7d9c1e7": {
+    "86383e23-53ca-4645-86d7-ebe41b403e87": {
      "title": "Lydkvalitet",
-     "id": "58341091-6c5d-4b70-9b54-a120c7d9c1e7",
+     "id": "86383e23-53ca-4645-86d7-ebe41b403e87",
      "references": [
+      "9c77ae41-942f-4ce7-83af-cd9930a7e351",
       "bc8bf896-6f6e-4c4d-8d83-eeb26d2d45c9",
       "84f432b4-ae28-4801-9368-2a8eeb2b71fe",
-      "ef4049a9-5c00-4d78-a110-222dbb33ed5f",
+      "ef4049a9-5c00-4d78-a110-222db33ed5f",
       "b1c06255-51ab-4d94-acf1-472a6ecfa33e",
-      "e6311e68-bac2-4443-8aad-a081f25d2624",
       "1bd3fbc9-5dd0-42cb-bf38-c8da83d5e768",
       "836872fb-a580-4bfc-b87d-25a6f41e7508",
+      "e6311e68-bac2-4443-8aad-a081f25d2624",
       "f4176a47-98f0-4e66-8adf-ca46c6764516",
       "26963e5e-caa4-41c9-89b1-2797173c9e9f",
       "7b91e5d7-36cb-4d80-a63c-d80cf428938d",
@@ -349,34 +352,41 @@
       "4eed19a4-d7ed-464a-af2c-06ab03dea14c"
      ]
     },
-    "8c8e321a-e5c6-46bb-80c0-d06fd5f8a823": {
-     "title": "Fleksibilitet",
-     "id": "8c8e321a-e5c6-46bb-80c0-d06fd5f8a823",
+    "b9ed8e55-89c6-4588-9af4-d518307550c9": {
+     "title": "Byggekvalitet",
+     "id": "b9ed8e55-89c6-4588-9af4-d518307550c9",
      "references": [
-      "b2f239a5-ea81-48bf-aa7c-1e485dd31ca0",
-      "ef4049a9-5c00-4d78-a110-222dbb33ed5f",
-      "e6311e68-bac2-4443-8aad-a081f25d2624",
-      "bd30582e-9d3b-496f-8fe3-ea3a0fa5042c"
+      "cd165a64-ae39-4394-9a1f-f85529620c11",
+      "4667ebbc-8714-4430-af85-ef3bcd24780d",
+      "9d20e42c-e960-4f74-89c7-0749dae7c2e0",
+      "ee2291e1-28a5-4fba-9354-a3137428029e",
+      "52854fc2-f277-4f2f-aa7b-264c1950d003",
+      "b053c151-b5f8-451d-9e58-8990307918e3",
+      "babb6c70-7cb7-44b0-bfb2-d1a612e12c26",
+      "33b8f546-0899-4fc1-9d91-b7447bd1bf32",
+      "989ed06b-f42e-47bf-9ef4-1a40d66000f4",
+      "718f2a91-f712-4538-a79d-27492c0a618d",
+      "0dcf554e-fb53-497a-8f73-8197778b7075"
      ]
     },
-    "8e25588f-ea98-4017-826c-dd0336b767ba": {
+    "3b3bd583-4386-4513-bb64-addfd722c1fe": {
      "title": "Afskærmning",
-     "id": "8e25588f-ea98-4017-826c-dd0336b767ba",
+     "id": "3b3bd583-4386-4513-bb64-addfd722c1fe",
      "references": [
       "b2f239a5-ea81-48bf-aa7c-1e485dd31ca0",
       "20139e10-3ae9-4524-a213-1e293a5d8b37"
      ]
     }
    },
-   "rating": 4.85294117647059,
-   "count": 68,
-   "reviewCount": 35,
+   "rating": 4.85507246376812,
+   "count": 69,
+   "reviewCount": 36,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 6,
-    "5": 60
+    "5": 61
    }
   },
   "brandName": "AudioQuest",

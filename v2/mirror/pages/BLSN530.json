@@ -13,6 +13,27 @@
    "url": "/stereo/musikstreamer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.2",
+   "Lydudgang": "Coaxial, Optisk, Analog RCA, Analog XLR, USB A",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, USB C",
+   "Udgang (andet)": "Ethernet, 12V trigger",
+   "Indgang (andet)": "Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang, Wi-Fi, Roon Ready, Airplay 2, Spotify Connect, TIDAL Connect, BluOS Multiroom",
+   "Fra beskrivelsen": "High-end høretelefonudgang med dedikeret THX Frontier THXAAA-78 forstærkertrin (2 x 6,3 mm jack) · Kontrol af TV-lyd fra eksisterende TV-fjernbetjening via HDMI-CEC (inkl. ARC/eARC) samt IR-lærefunktion til brug sammen med ældre TV · Audio-ind: HDMI/eARC, optisk, RCA L/R, USB-C (lyd fra PC/Mac/Linux), USB-A (eksterne USB-lagerenheder)*** · Audio-ud: optisk, coaxial, analog (balanceret XLR, RCA, mulighed for FIXED output), USB-A (DAC), subwoofer (RCA) · Andre tilslutninger, 12V trigger-ud, IR-ind, Ethernet · Indbygget elektronisk delefilter ved tilslutning af subwoofer (80 Hz) · Ethernet-tilslutning (RJ45 GigE) · Medfølgende tilbehør: USB-strømforsyning/kabel (USB-C), Ethernetkabel, stereo RCA-kabel · **** Via HDMI og optisk indgang, automatisk downmix til stereo"
+  },
+  "gallery": [
+   "fb525476-383e-4416-9e28-0184bf696806",
+   "5c99b165-df9e-4562-878b-e0de5fa00fb1",
+   "210eec7f-76f7-4ec6-87fc-3a11f784ed61",
+   "169c40e3-024d-4e15-a5c5-b874253ec808",
+   "d2f3cbc0-2f0c-4b57-bc65-d9aac6dcd298",
+   "c0b82ab7-d41f-4424-8ad6-00abbd57d93c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236679,
   "skuCode": "BLSN530",
@@ -219,7 +240,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 622,
+     "availableQuantity": 620,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -380,178 +401,147 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSN530 roses bredt som en meget alsidig streamer, DAC og forforstærker med varm, slagkraftig og særdeles detaljeret lyd. Det brede, medrivende lydbillede, den præcise bas og de stærke balancerede XLR-udgange gør den til en stor opgradering fra tidligere Bluesound-modeller og mange separate DAC’er, mens BluOS-appen generelt er overskuelig, stabil og nem at bruge. Der er dog enkelte begrænsninger, blandt andet den lille og begrænset justerbare skærm, den manglende coax-indgang, lejlighedsvise netværks- eller streamingproblemer og mangelfulde vejledninger, men samlet set vurderes pakken som fremragende og meget værdifuld.",
+   "summary": "BLSN530 roses bredt som en meget kapabel streamer/DAC med varm, detaljeret og rummelig lyd, præcist stereobillede, stram bas og stor opgraderingsværdi i forhold til tidligere Bluesound-modeller. BluOS opleves generelt som nemt og stabilt, mens de mange tilslutninger, hovedtelefonforstærkeren og Dirac-muligheden giver ekstra fleksibilitet. Gentagen kritik handler om det lille eller ikke helt slukbare display, manglende coax-indgang, lejlighedsvise netværks- eller streamingproblemer samt sparsom dokumentation.",
    "headlines": {
-    "detailed, dynamic and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en bred, holografisk og meget opløst gengivelse med præcis, fyldig bas og stærk dynamik.",
-     "simpleTitle": "Detaljeret, dynamisk og medrivende lyd",
+    "a major upgrade over earlier streamers": {
+     "sentimentAnalysis": "Sammenlignet med tidligere Node-generationer og konkurrerende enheder vurderes Icon gentagne gange som mere opløst, rummelig, dynamisk og raffineret.",
+     "simpleTitle": "En markant opgradering fra tidligere streamere",
      "bias": "positive",
      "key": "sound",
-     "groupId": "adafc419-6a45-4e97-99ad-f02e5089b581"
+     "groupId": "ce9419e7-c07e-4854-8da3-7fbd2be471b4"
     },
-    "bluOS is easy and reliable to use": {
-     "sentimentAnalysis": "App og installation beskrives ofte som overskuelig, hurtig, stabil og intuitiv.",
-     "simpleTitle": "BluOS er nem og stabil at bruge",
+    "easy, stable BluOS operation": {
+     "sentimentAnalysis": "Opsætning og daglig betjening beskrives generelt som intuitiv, hurtig og pålidelig på tværs af streamingtjenester og enheder.",
+     "simpleTitle": "Nem og stabil BluOS-betjening",
      "bias": "positive",
      "key": "app",
-     "groupId": "51c1dbe6-550b-4866-8fa7-cd41fad5f0aa"
+     "groupId": "88d5b80f-84b4-43dc-87f7-59b249566f3e"
     },
-    "display is small and cannot be fully switched off": {
-     "sentimentAnalysis": "Frontdisplayet værdsættes som en nyttig funktion, men kritiseres gentagne gange for lille størrelse, begrænset fleksibilitet og manglende mulighed for at slukke helt.",
-     "simpleTitle": "Displayet er lille og kan ikke slukkes helt",
+    "detailed, spacious and dynamic sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en klar, detaljeret og medrivende gengivelse med god separation, dybde og dynamik.",
+     "simpleTitle": "Detaljeret, rummelig og dynamisk lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "ce9419e7-c07e-4854-8da3-7fbd2be471b4"
+    },
+    "display is too small or cannot be fully disabled": {
+     "sentimentAnalysis": "Displayet ses som en nyttig funktion, men flere anmeldelser kritiserer den lille størrelse, de begrænsede indstillingsmuligheder eller manglende mulighed for at slukke helt.",
+     "simpleTitle": "Displayet er for lille eller kan ikke slukkes helt",
      "bias": "negative",
      "key": "display",
-     "groupId": "a83b43b8-2f80-458e-b0f4-7655aff5f546"
+     "groupId": "4a2c92d8-19be-4d5b-abb0-47e0f3701b2c"
     },
     "missing coaxial input": {
-     "sentimentAnalysis": "Flere anmeldelser savner specifikt en coaxial digitalindgang til tilslutning af en CD-afspiller eller anden kilde.",
+     "sentimentAnalysis": "Nogle anmeldelser bemærker specifikt, at en coaxial digitalindgang ville gøre tilslutningsmulighederne mere komplette.",
      "simpleTitle": "Manglende coax-indgang",
      "bias": "negative",
      "key": "connections",
-     "groupId": "c4b6cea6-b6f8-4db0-b85f-3a9e6a30ca9f"
+     "groupId": "943dd25f-3b5b-4523-b157-8f30a4cd9898"
     }
    },
    "grouping": {
-    "adafc419-6a45-4e97-99ad-f02e5089b581": {
+    "ce9419e7-c07e-4854-8da3-7fbd2be471b4": {
      "title": "Lydkvalitet",
-     "id": "adafc419-6a45-4e97-99ad-f02e5089b581",
+     "id": "ce9419e7-c07e-4854-8da3-7fbd2be471b4",
      "references": [
       "9a9daf85-bef4-428d-ba0c-f4cbe843ceb3",
       "8e7cd881-2fdc-4391-8d0a-7417409e07bc",
       "6536cd77-9c80-452b-b2d8-615841c5bfff",
-      "35264d60-47f9-47d4-94e0-d80950457859",
-      "6e934da6-3fd0-4a98-bf26-288b4a72363d",
-      "0a027add-0cca-4ea7-9c93-3b3fc327d601",
       "57172068-c0c2-4d19-8274-f575cc55bc62",
       "a686a877-204f-4082-8f17-a0a8092f4e7c",
-      "91ee05b6-dc8b-47a3-86ff-4ca760d404f4",
       "53b57db8-5dd4-4866-974c-c5e85580a4ca",
       "f8e582bb-57be-4387-86af-cb9f3e6ef744",
+      "3e347cfa-83ec-4695-a782-ab72d5022cc4",
       "007f771f-c70b-4f5a-adbc-307e4a05cbb7",
-      "838c6ff6-8b22-47e6-a0f2-f2d235db573b",
-      "86ef511c-28f0-4a01-92f8-7870009fb164",
       "59b29227-c7d5-4048-bd54-be22a56d0cc3",
       "a52645d1-445d-4a8a-869b-b7adb39f9b9a",
-      "782b4bc1-bbf4-46fa-ad57-a525fb59ca12",
       "ddfc12c7-6d12-4450-8248-4ecfcd1f1e72",
       "1547a715-bd6a-4cc3-b070-ea1725313fee",
       "76f2870b-411f-4b57-84b5-5f1cb6fc8879",
+      "125648ed-9568-4742-b622-a80e0850bbe7",
       "3bb73bd0-cc8a-4585-90e8-e6fa2f28f7c7",
       "b3552020-6cf5-4c7d-9c08-4fd239dcd439",
       "d5438ff7-223f-4b89-a056-2efa9bb4e8b1",
-      "990cf1f0-0ad6-4238-aa58-b2629292aac6",
       "ab872089-5d4e-43c3-a18a-3de7500b6a40",
-      "32a02e04-21e9-4757-adf5-248da713d95a",
       "3e1125d4-4860-452b-b37d-77ec9306b98d",
       "c28e539c-8ac2-4a05-a28a-abfa40157f3a",
-      "cb1ea4d0-731b-4d83-92d1-3f5785e2482f",
       "0a93e9f2-9793-4b2b-95dc-06acc3ff85b6",
       "cce310c5-62a2-4469-92e0-6edc81a1b533",
-      "c92e941b-157c-4d8d-8c82-7c9ef8aa6fb0",
-      "ce334041-8248-4f33-8faf-c09c47404265",
-      "fee2e504-2faa-422a-81d6-972b43382f40",
-      "dadef901-847c-489b-a4ca-33dd98230cf4",
-      "5e22e9af-983b-4836-9484-d5cee86d9715",
-      "1685f65e-fceb-4447-960b-90aa8fd7b90f",
-      "f59fe49e-ce97-464a-9064-5f3a75c8162c",
-      "d8318bea-04cb-4464-97d3-e5f24c6b3343",
-      "298794a3-9a08-48c7-8dbf-495d63c9f7f3",
-      "59cdc40a-96ed-492d-9bce-a5d6705169b2",
       "fddc44a6-aea0-4e35-b543-dc06f8e0cdf9",
       "8b135b08-68ea-4713-b500-e6336e5c5661",
-      "18010a70-0212-4fe1-91e5-738ea6cc0eb5",
-      "d3d763dd-cfe7-4a16-8342-c54a68e5c1f6",
-      "f6d6fda5-e5d6-4dd4-a2e9-556204409a44",
-      "90e42dce-7269-4855-99dc-ebe9d9e1712d",
-      "f17e3cc1-4d7b-48e0-ae0e-98fb76d1884d",
-      "accad50f-9e71-4f54-967e-d01d2b043c44",
-      "74cf7692-cfa5-4a10-a382-7c0b1379c725",
-      "72448dcb-2aa4-44cf-9f16-987d62335585",
-      "ce47315a-e866-4602-b3d8-a288aab46ed9",
-      "7f09d7c7-6396-4148-bae6-a5e5ecf11970",
-      "b6aff89a-185f-4801-ac02-8d6108e73453",
-      "58251db2-18e4-4fdc-b135-f945e9117034",
-      "acf35684-0865-418e-bf83-a747ee406f97",
+      "10907d68-e503-45d3-8c12-7dc2cf909774",
       "06d61905-73fd-4fc6-be58-3cb11188b501",
-      "eb2eaca4-1021-4c39-a88d-6d6f7fc1f23f",
-      "ceda5716-519d-4061-b59c-1faeae4ad953",
-      "f3774c81-a6b3-4e2c-9088-2dcf09d48df9",
-      "cf4088b6-a175-472a-8579-3eea84c4c1ca",
-      "4958b961-39b5-4cbb-9f77-d03621e50890",
-      "964f8964-1373-4aa6-bde0-0de91422e055",
+      "58251db2-18e4-4fdc-b135-f945e9117034",
+      "d3d763dd-cfe7-4a16-8342-c54a68e5c1f6",
+      "72448dcb-2aa4-44cf-9f16-987d62335585",
       "49a6ca0c-66e8-4cb3-8b87-7befa918877a",
-      "6e700c78-30fe-4351-b4ac-93eef12e51c8",
       "6164c370-7a45-41d2-aaf1-ddc0abf0c560",
-      "51f2e17e-dafd-40c0-b926-680e20d737b6",
       "8790a8e8-3c08-4d1d-8e42-588552aff699"
      ]
     },
-    "51c1dbe6-550b-4866-8fa7-cd41fad5f0aa": {
+    "88d5b80f-84b4-43dc-87f7-59b249566f3e": {
      "title": "App og brugervenlighed",
-     "id": "51c1dbe6-550b-4866-8fa7-cd41fad5f0aa",
+     "id": "88d5b80f-84b4-43dc-87f7-59b249566f3e",
      "references": [
       "d38a9507-bb3c-40d5-9ac9-5be6a00b8500",
       "c5a821c0-5da7-425e-aaf2-77f28a73f042",
-      "a686a877-204f-4082-8f17-a0a8092f4e7c",
+      "6e934da6-3fd0-4a98-bf26-288b4a72363d",
       "91ee05b6-dc8b-47a3-86ff-4ca760d404f4",
       "b25a211c-92b9-4838-8a48-bd2868523f83",
+      "838c6ff6-8b22-47e6-a0f2-f2d235db573b",
       "59b29227-c7d5-4048-bd54-be22a56d0cc3",
       "a52645d1-445d-4a8a-869b-b7adb39f9b9a",
       "61434fa3-efc5-4864-989b-2611de00c6df",
-      "d985d6ba-a738-4948-a3f0-2b50ddc5986f",
-      "838c6ff6-8b22-47e6-a0f2-f2d235db573b",
-      "4fd6dcbf-00dd-4309-8a5a-7ce932985eb0",
-      "7b626a75-146b-44cd-8e06-259ccf58ba61",
-      "f2a31975-23d8-4e7f-9098-2bbbdf713c63",
-      "c92e941b-157c-4d8d-8c82-7c9ef8aa6fb0",
-      "8395c08d-c9a9-4c06-ba1b-45184666e28e",
       "f4abb3b3-5c35-4ba5-911e-8dcbbeb18da6",
       "cb1ea4d0-731b-4d83-92d1-3f5785e2482f",
+      "7b626a75-146b-44cd-8e86-259ccf58ba61",
+      "f2a31975-23d8-4e7f-9098-2bbbdf713c63",
+      "8395c08d-c9a9-4c06-ba1b-45184666e28e",
+      "9c9123d1-69fe-481d-82a7-ea658b992995",
+      "ce47315a-e866-4602-b3d8-a288aab46ed9",
+      "f3774c81-a6b3-4e2c-9088-2dcf09d48df9",
       "60d523f4-32ef-41a2-bda8-805477d79660",
       "6e700c78-30fe-4351-b4ac-93eef12e51c8",
       "8790a8e8-3c08-4d1d-8e42-588552aff699"
      ]
     },
-    "c4b6cea6-b6f8-4db0-b85f-3a9e6a30ca9f": {
-     "title": "Tilslutninger og funktioner",
-     "id": "c4b6cea6-b6f8-4db0-b85f-3a9e6a30ca9f",
+    "943dd25f-3b5b-4523-b157-8f30a4cd9898": {
+     "title": "Tilslutninger og alsidighed",
+     "id": "943dd25f-3b5b-4523-b157-8f30a4cd9898",
      "references": [
       "29cd1db9-06df-4536-a35d-d1db28226dd4",
-      "6536cd77-9c80-452b-b2d8-615841c5bfff",
       "57172068-c0c2-4d19-8274-f575cc55bc62",
       "a686a877-204f-4082-8f17-a0a8092f4e7c",
       "91ee05b6-dc8b-47a3-86ff-4ca760d404f4",
+      "f8e582bb-57be-4387-86af-cb9f3e6ef744",
       "59b29227-c7d5-4048-bd54-be22a56d0cc3",
       "c28e539c-8ac2-4a05-a28a-abfa40157f3a",
       "61434fa3-efc5-4864-989b-2611de00c6df",
       "125648ed-9568-4742-b622-a80e0850bbe7",
       "ad9f0761-aa97-489c-bcb6-8bb4073c324d",
-      "d536d8df-42a4-4700-8187-87ba91bd2852",
       "c1050c52-9fbd-418d-94ea-85432405e8b4",
-      "696d15b5-1838-4247-b50e-3517d78b8564",
-      "fddc44a6-aea0-4e35-b543-dc06f8e0cdf9",
-      "d985d6ba-a738-4948-a3f0-2b50ddc5986f",
-      "af731151-ca6b-4135-af86-8f67d8241c96",
-      "60d523f4-32ef-41a2-bda8-805477d79660",
       "4958b961-39b5-4cbb-9f77-d03621e50890",
-      "51f2e17e-dafd-40c0-b926-680e20d737b6"
+      "60d523f4-32ef-41a2-bda8-805477d79660",
+      "8b135b08-68ea-4713-b500-e6336e5c5661",
+      "f3774c81-a6b3-4e2c-9088-2dcf09d48df9"
      ]
     },
-    "a83b43b8-2f80-458e-b0f4-7655aff5f546": {
+    "4a2c92d8-19be-4d5b-abb0-47e0f3701b2c": {
      "title": "Display",
-     "id": "a83b43b8-2f80-458e-b0f4-7655aff5f546",
+     "id": "4a2c92d8-19be-4d5b-abb0-47e0f3701b2c",
      "references": [
       "a686a877-204f-4082-8f17-a0a8092f4e7c",
+      "91ee05b6-dc8b-47a3-86ff-4ca760d404f4",
       "125648ed-9568-4742-b622-a80e0850bbe7",
       "f59fe49e-ce97-464a-9064-5f3a75c8162c",
       "f15269d6-0b24-4f45-b834-19bb842ccab2",
       "c1050c52-9fbd-418d-94ea-85432405e8b4",
-      "606649f0-39dc-4fbe-a387-874bd48b6f10",
+      "298794a3-9a08-48c7-8dbf-495d63c9f7f3",
+      "696d15b5-1838-4247-b50e-3517d78b8564",
       "90e42dce-7269-4855-99dc-ebe9d9e1712d",
       "11c8c51d-8b80-4eb8-b1b8-3bb534db7004",
-      "f3774c81-a6b3-4e2c-9088-2dcf09d48df9",
-      "f6d6fda5-e5d6-4dd4-a2e9-556204409a44",
       "accad50f-9e71-4f54-967e-d01d2b043c44",
+      "f3774c81-a6b3-4e2c-9088-2dcf09d48df9",
       "60d523f4-32ef-41a2-bda8-805477d79660"
      ]
     }

@@ -8,6 +8,28 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "c19cb310-c948-4b28-b6e2-f760a98900b9",
+   "91744a9d-bf7c-42a4-a58b-03b9550161b6",
+   "bf4b963b-e7cf-42c2-bb84-ad642d3d5bad",
+   "7b6c3d12-6e44-4046-8dfe-d6ce7d1a8eed",
+   "e30aeeef-dab7-4d6b-a65c-57bb1486f592",
+   "8bfe7917-c0f6-4672-bdd5-3f44ec6b7097",
+   "9dc0d9a1-ae25-4880-a40c-b318aba5891c",
+   "e793da22-24d7-457c-98ef-443eb894cea2",
+   "12cd4811-b4a4-4cda-b4ba-901997b0d4e4",
+   "78e8ac2a-85ef-44b4-871b-58866de0c2a8",
+   "bf354051-9531-4423-b54f-c30c87bf8491",
+   "f132a5eb-c84d-495c-8c3a-d38bcddc9fdb",
+   "d7fbfb53-13cc-4177-aa7b-19f063a90b58",
+   "819c03ed-ab85-4ed0-a4f7-8165c81bae50"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 259743,
   "skuCode": "VESTPROT2",
@@ -183,7 +205,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 92,
+     "availableQuantity": 90,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -280,48 +302,60 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTPROT2 får stor ros som en robust og stilfuld pladespiller med varm, dynamisk og omsluttende lyd. Den solide konstruktion, hurtige opstart og indbyggede RIAA-forstærker gør vinylafspilning ekstra bekvem. Den største begrænsning er manglen på automatisk løft eller slukning, mens værdi og musikalsk ydelse fortsat er meget overbevisende.",
+   "summary": "VESTPROT2 roses bredt som en robust, attraktiv og fornøjelig pladespiller med varm, slagkraftig lyd og en god medfølgende pickup. Den indbyggede RIAA-forstærker giver ekstra bekvemmelighed, mens hurtig opstart, stabil drift og modstandsdygtighed over for resonans forbedrer lytteoplevelsen. De største ulemper er følsomhed over for akustisk feedback og manglen på automatiske funktioner, hvilket gør pladespilleren bedre egnet til hjemmebrug end krævende klubbrug.",
    "headlines": {
-    "solid construction and premium styling": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent den robuste konstruktion, den gode finish og det attraktive, eksklusive udseende.",
-     "simpleTitle": "Solid konstruktion og eksklusivt design",
-     "bias": "positive",
-     "key": "build",
-     "groupId": "33bf0055-77df-4164-861c-112c70b4b1f2"
-    },
-    "warm, detailed and powerful sound": {
-     "sentimentAnalysis": "Lyden roses som meget god, engagerende og kraftfuld og håndterer høj lydstyrke uden resonans.",
-     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
+    "warm, powerful sound from the included cartridge": {
+     "sentimentAnalysis": "Pladespilleren leverer detaljeret, fornøjelig og slagkraftig gengivelse, hvor den medfølgende pickup bidrager markant til den gode lyd.",
+     "simpleTitle": "Varm og kraftfuld lyd fra den medfølgende pickup",
      "bias": "positive",
      "key": "sound",
-     "groupId": "27c82636-213c-46c9-b0bc-fb189fc41da6"
+     "groupId": "fc368960-fc67-4245-a8e5-f24bcdc5642f"
     },
-    "convenient built-in RIAA amplification": {
-     "sentimentAnalysis": "Den indbyggede RIAA-forstærker værdsættes som en nyttig funktion, der gør opsætningen enklere.",
-     "simpleTitle": "Praktisk indbygget RIAA-forstærkning",
+    "solid construction and attractive styling": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent den robuste konstruktion, den pålidelige stabilitet og det eksklusive udseende.",
+     "simpleTitle": "Solid konstruktion og flot design",
+     "bias": "positive",
+     "key": "build",
+     "groupId": "11884933-59a2-4869-aac4-865d18d754c3"
+    },
+    "built-in RIAA stage adds convenience": {
+     "sentimentAnalysis": "Den integrerede RIAA-forstærker ses som en nyttig funktion, der gør opsætningen enklere.",
+     "simpleTitle": "Indbygget RIAA-forstærker giver ekstra bekvemmelighed",
      "bias": "positive",
      "key": "riaa",
-     "groupId": "06087377-a8c1-4701-9c93-40a8f047b8ad"
+     "groupId": "6df3c755-c49b-4e38-88a8-2fad362ca277"
     },
-    "simple, stable playback and quick start": {
-     "sentimentAnalysis": "Stabil drift, nem betjening og hurtig opstart fremhæves som praktiske styrker.",
-     "simpleTitle": "Enkel, stabil afspilning og hurtig opstart",
-     "bias": "positive",
-     "key": "operation",
-     "groupId": "ab881e33-d25c-4954-b68a-2bbe52a2990d"
-    },
-    "no automatic lift or shutoff": {
-     "sentimentAnalysis": "Manglen på automatisk løft af pickup eller slukning er den tydeligste gentagne kritik, selv om én anmeldelse beskriver det som let at vænne sig til.",
-     "simpleTitle": "Ingen automatisk løftning eller slukning",
+    "no automatic stop or pickup operation": {
+     "sentimentAnalysis": "Manglen på automatisk stop ved pladens slutning er den tydeligste kritik af betjeningen, selv om en anmeldelse bemærker, at det er let at vænne sig til.",
+     "simpleTitle": "Ingen automatisk afbrydelse eller pickup-betjening",
      "bias": "negative",
      "key": "operation",
-     "groupId": "ab881e33-d25c-4954-b68a-2bbe52a2990d"
+     "groupId": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3"
+    },
+    "fast, stable and resonance-resistant operation": {
+     "sentimentAnalysis": "Hurtig opstart, stabil sporing og god modstandsdygtighed over for resonans giver sikker afspilning i hverdagen.",
+     "simpleTitle": "Hurtig, stabil og resonansfri drift",
+     "bias": "positive",
+     "key": "operation",
+     "groupId": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3"
     }
    },
    "grouping": {
-    "33bf0055-77df-4164-861c-112c70b4b1f2": {
+    "fc368960-fc67-4245-a8e5-f24bcdc5642f": {
+     "title": "Lydkvalitet",
+     "id": "fc368960-fc67-4245-a8e5-f24bcdc5642f",
+     "references": [
+      "86840c78-d6e3-4f59-86cf-fb973061ced0",
+      "155fb82b-c49b-4ae8-b8d0-00e6f6330ba7",
+      "cc575164-f959-4e35-b780-a7c638f6e8fc",
+      "a45105df-b30d-47f0-90c2-1c5871b83dd3",
+      "34595062-5468-4ab6-8c4c-292729f7c565",
+      "4813c28b-74a4-4140-a77e-051bc5e766bd"
+     ]
+    },
+    "11884933-59a2-4869-aac4-865d18d754c3": {
      "title": "Byggekvalitet og design",
-     "id": "33bf0055-77df-4164-861c-112c70b4b1f2",
+     "id": "11884933-59a2-4869-aac4-865d18d754c3",
      "references": [
       "e9fdba4c-ccd2-41cc-a8e9-cc59cc751a3c",
       "b33b283d-241f-4faf-b7f9-f2481077ab0d",
@@ -330,19 +364,9 @@
       "4813c28b-74a4-4140-a77e-051bc5e766bd"
      ]
     },
-    "27c82636-213c-46c9-b0bc-fb189fc41da6": {
-     "title": "Lydkvalitet",
-     "id": "27c82636-213c-46c9-b0bc-fb189fc41da6",
-     "references": [
-      "cc575164-f959-4e35-b780-a7c638f6e8fc",
-      "a45105df-b30d-47f0-90c2-1c5871b83dd3",
-      "34595062-5468-4ab6-8c4c-292729f7c565",
-      "4813c28b-74a4-4140-a77e-051bc5e766bd"
-     ]
-    },
-    "ab881e33-d25c-4954-b68a-2bbe52a2990d": {
-     "title": "Betjening og automatik",
-     "id": "ab881e33-d25c-4954-b68a-2bbe52a2990d",
+    "8ab6bb20-0a86-4593-8d79-d9299c82bbd3": {
+     "title": "Betjening og funktioner",
+     "id": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3",
      "references": [
       "fb16834f-c06f-4311-b9b5-c3a47738b966",
       "34595062-5468-4ab6-8c4c-292729f7c565",
@@ -350,24 +374,24 @@
       "4813c28b-74a4-4140-a77e-051bc5e766bd"
      ]
     },
-    "06087377-a8c1-4701-9c93-40a8f047b8ad": {
-     "title": "Indbygget RIAA-forforstærker",
-     "id": "06087377-a8c1-4701-9c93-40a8f047b8ad",
+    "6df3c755-c49b-4e38-88a8-2fad362ca277": {
+     "title": "Indbygget RIAA-forstærker",
+     "id": "6df3c755-c49b-4e38-88a8-2fad362ca277",
      "references": [
       "e9fdba4c-ccd2-41cc-a8e9-cc59cc751a3c",
       "72c92e89-a1d5-4630-929c-3596bad76489"
      ]
     }
    },
-   "rating": 4.94444444444444,
-   "count": 36,
-   "reviewCount": 19,
+   "rating": 4.92105263157895,
+   "count": 38,
+   "reviewCount": 21,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
-    "4": 2,
-    "5": 34
+    "4": 3,
+    "5": 35
    }
   },
   "brandName": "Vestlyd",

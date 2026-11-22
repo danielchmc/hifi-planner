@@ -13,6 +13,25 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Minijack/AUX",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
+   "Bluetooth type": "5.3",
+   "Højtaler type": "Trådløs højtaler"
+  },
+  "gallery": [
+   "1d86134d-f462-4d4e-b4ff-35e71151dfc6",
+   "0e9d30db-1793-4b0a-b85a-1856814d22bd",
+   "6cfbb9b7-36ef-424f-bce5-867804eaa564",
+   "e5eb1d26-00a3-40ae-bbd2-55067d5e3e83",
+   "31c117dd-aa79-4a96-91fd-d2f54e7525d8",
+   "00d1f0bf-3ea3-485e-ad39-69cbd11f15aa",
+   "9da54775-73bb-4306-9cee-78c965c1f656",
+   "e5f35a48-1c90-4b7e-9024-544fa53a4609"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 258877,
   "skuCode": "MARKILBURN3",
@@ -209,7 +228,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 235,
+     "availableQuantity": 230,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -331,7 +350,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 33,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -475,69 +494,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARKILBURN3 leverer en varm, slagkraftig og medrivende lyd med overraskende dyb bas for en transportabel højttaler, mens bas og diskant kan finjusteres. Den lange batteritid, nemme Bluetooth-parring og taktile betjening gør brugen ubesværet både hjemme og udendørs. Klassisk design, solid byggekvalitet og opmærksom service fuldender en særdeles attraktiv pakke.",
+   "summary": "MARKILBURN3 får bred ros for varm, fyldig og kraftfuld lyd, overraskende dyb bas og stærk ydelse for en transportabel højttaler. Lang batteritid, attraktivt Marshall-design og enkel betjening øger appellen, mens Bluetooth-parringen generelt er hurtig og stabil. Enkelte anmeldelser nævner manglende detaljer eller behov for justering med equalizeren, og ét produkt så ud til at være brugt ved levering.",
    "headlines": {
     "long-lasting battery": {
-     "sentimentAnalysis": "Batteritiden beskrives gentagne gange som meget god, langvarig eller nærmest endeløs; en anmeldelse nævner op til 50 timer.",
+     "sentimentAnalysis": "Batteritiden får gentagne gange ros; én anmeldelse nævner specifikt op til 50 timers musikafspilning.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
-     "key": "batteryDuration",
-     "groupId": "d3bcd29b-81c2-437f-9ff2-8b38c40eca5b"
+     "key": "long_battery",
+     "groupId": "0dcf2446-28f3-41ae-846e-7094408f24c7"
     },
-    "distinctive, well-built design": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent det klassiske og attraktive udseende, den eksklusive fornemmelse og den solide konstruktion.",
-     "simpleTitle": "Karakteristisk design og solid kvalitet",
+    "attractive design and solid construction": {
+     "sentimentAnalysis": "Det klassiske design, det attraktive udseende, de taktile knapper og den oplevede byggekvalitet får stor ros.",
+     "simpleTitle": "Attraktivt design og solid konstruktion",
      "bias": "positive",
-     "key": "designAppearance",
-     "groupId": "09706190-3be1-4127-acc7-fa4df6540de1"
+     "key": "attractive_design",
+     "groupId": "4ecc73de-3346-4282-af43-0903b195a1fb"
     },
-    "warm, powerful sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver en varm, fyldig og slagkraftig gengivelse med dyb og kraftig bas, som er imponerende for en transportabel højttaler.",
-     "simpleTitle": "Varm og kraftfuld lyd med dyb bas",
+    "warm, full and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en varm, fyldig og kraftfuld gengivelse med tilfredsstillende bas, hvilket er særligt imponerende for en transportabel højttaler.",
+     "simpleTitle": "Varm, fyldig og kraftfuld lyd",
      "bias": "positive",
-     "key": "soundWarmBass",
-     "groupId": "2a2f12de-149b-46ca-8e9c-9ed738c1f445"
+     "key": "warm_full_sound",
+     "groupId": "45e60034-a406-4ec1-81d8-fc62c46e7f3e"
     },
-    "excellent sound for the size and price": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver højttaleren som særdeles god værdi for pengene med fyldig eller meget detaljeret lyd, der overgår forventningerne til den kompakte størrelse.",
-     "simpleTitle": "Fremragende lyd for størrelse og pris",
+    "simple controls and reliable Bluetooth pairing": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver hurtig enhedsregistrering, enkel tilslutning og praktiske fysiske bas-, diskant- og volumenkontroller.",
+     "simpleTitle": "Enkel betjening og stabil Bluetooth-parring",
      "bias": "positive",
-     "key": "soundValue",
-     "groupId": "2a2f12de-149b-46ca-8e9c-9ed738c1f445"
+     "key": "easy_connection",
+     "groupId": "2dde8d69-7e21-4b1d-b286-91e953ec19c1"
     },
-    "sound can be refined with equalizer controls": {
-     "sentimentAnalysis": "Fysiske eller app-baserede bas- og diskantkontroller gør det let at tilpasse lyden og kan også forbedre et lidt indelukket mellem- og diskantområde.",
-     "simpleTitle": "Lyden kan finjusteres med equalizer",
+    "clear improvement over previous speakers": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver højttaleren som en markant opgradering i forhold til tidligere eller konkurrerende trådløse højttalere.",
+     "simpleTitle": "Tydelig forbedring i forhold til tidligere højttalere",
      "bias": "positive",
-     "key": "soundAdjustability",
-     "groupId": "2a2f12de-149b-46ca-8e9c-9ed738c1f445"
+     "key": "sound_upgrade",
+     "groupId": "45e60034-a406-4ec1-81d8-fc62c46e7f3e"
     },
-    "easy pairing and intuitive controls": {
-     "sentimentAnalysis": "Bluetooth-parringen beskrives som hurtig og pålidelig, mens de traditionelle fysiske knapper gør betjeningen enkel.",
-     "simpleTitle": "Nem parring og intuitiv betjening",
-     "bias": "positive",
-     "key": "easyOperation",
-     "groupId": "fe73f6e3-9e32-43fe-a680-587f2134e48d"
-    },
-    "store service is friendly and competent": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver ud over produktet også den hjælpsomme, venlige og kompetente service i butikken.",
-     "simpleTitle": "Venlig og kompetent service",
-     "bias": "positive",
-     "key": "friendlyService",
-     "groupId": "1356c6b7-6f8f-49e9-9470-6bea032aaa81"
-    },
-    "some competitors offer more detailed sound": {
-     "sentimentAnalysis": "To anmeldelser bemærker, at lyden ganske vist er god til prisen, men kunne byde på flere detaljer eller et større løft i forhold til alternativer.",
-     "simpleTitle": "Nogle konkurrenter leverer mere detaljeret lyd",
+    "some sound detail requires equalizer adjustment": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne finder lyden mindre detaljeret eller lidt skuffende, selv om equalizeren kan forbedre balancen.",
+     "simpleTitle": "Nogle lyddetaljer kræver justering med equalizer",
      "bias": "negative",
-     "key": "soundDetailLimitation",
-     "groupId": "2a2f12de-149b-46ca-8e9c-9ed738c1f445"
+     "key": "sound_detail_limits",
+     "groupId": "45e60034-a406-4ec1-81d8-fc62c46e7f3e"
     }
    },
    "grouping": {
-    "2a2f12de-149b-46ca-8e9c-9ed738c1f445": {
+    "45e60034-a406-4ec1-81d8-fc62c46e7f3e": {
      "title": "Lydkvalitet",
-     "id": "2a2f12de-149b-46ca-8e9c-9ed738c1f445",
+     "id": "45e60034-a406-4ec1-81d8-fc62c46e7f3e",
      "references": [
       "4a88b97c-891a-4cab-99dd-bedf1018c6cc",
       "b7c8aaae-1b6c-4dc8-b905-cf06b7f85bb7",
@@ -560,7 +565,6 @@
       "008b4668-0d36-4ef4-87b4-c1c9673d9f9f",
       "27138067-4032-4280-b25a-fe8503af1de6",
       "7140fe38-ef80-47db-a02f-69beeae29c5a",
-      "be48114f-77ca-4a07-b69f-5e37f120ba7b",
       "b7fa4bf6-429d-4b29-b6ab-4624462dc3e9",
       "6bee1f00-3c06-4b50-a734-1d3d0fda15ae",
       "b88a5d09-1f67-4638-855e-333dae598c87",
@@ -575,32 +579,32 @@
       "9a41025c-e027-40de-843b-f609021c8cbb",
       "f5290865-1ec8-473b-841f-e6f94ba69c5a",
       "d9336ef7-cc8f-4e0a-9abc-782bacf922c6",
-      "aff1b4a5-aeee-4ace-8662-190b0289e813",
       "46e847ec-00e8-47aa-b5ea-734f8eed55e8",
       "525ee9f8-be04-458a-a2b0-eb436942e321"
      ]
     },
-    "09706190-3be1-4127-acc7-fa4df6540de1": {
-     "title": "Design og byggekvalitet",
-     "id": "09706190-3be1-4127-acc7-fa4df6540de1",
+    "4ecc73de-3346-4282-af43-0903b195a1fb": {
+     "title": "Design og konstruktion",
+     "id": "4ecc73de-3346-4282-af43-0903b195a1fb",
      "references": [
       "9a8f8903-ac1c-432d-ac42-4da3900e8351",
-      "94d580c1-a943-4773-8ad0-4f3bf83117d7",
       "361d1857-0436-4f57-b878-55c82d98a42e",
+      "97a3e0d9-6d0d-4615-bbb4-31a4f158c929",
       "4b7f6c16-1c23-41c9-983b-a2b10b871e79",
       "008b4668-0d36-4ef4-87b4-c1c9673d9f9f",
       "7140fe38-ef80-47db-a02f-69beeae29c5a",
       "6bee1f00-3c06-4b50-a734-1d3d0fda15ae",
       "b88a5d09-1f67-4638-855e-333dae598c87",
       "b1a46659-9cf3-446d-8f60-3bcfdfbd0db5",
+      "f30472b2-45f1-41f0-bbea-dcee68317bd3",
       "3ce766ec-e222-4c38-af0b-e89c677c1db0",
       "46e847ec-00e8-47aa-b5ea-734f8eed55e8",
       "e377f770-f05a-4e44-855c-e5a08e331922"
      ]
     },
-    "d3bcd29b-81c2-437f-9ff2-8b38c40eca5b": {
+    "0dcf2446-28f3-41ae-846e-7094408f24c7": {
      "title": "Batteritid",
-     "id": "d3bcd29b-81c2-437f-9ff2-8b38c40eca5b",
+     "id": "0dcf2446-28f3-41ae-846e-7094408f24c7",
      "references": [
       "6052c0df-7682-4f76-a5b8-4ab72cc47a7a",
       "9750c111-7859-4fec-b6c9-4b4f3227aedb",
@@ -615,29 +619,17 @@
       "6bee1f00-3c06-4b50-a734-1d3d0fda15ae"
      ]
     },
-    "fe73f6e3-9e32-43fe-a680-587f2134e48d": {
-     "title": "Brugervenlighed og forbindelse",
-     "id": "fe73f6e3-9e32-43fe-a680-587f2134e48d",
+    "2dde8d69-7e21-4b1d-b286-91e953ec19c1": {
+     "title": "Brugervenlighed og tilslutning",
+     "id": "2dde8d69-7e21-4b1d-b286-91e953ec19c1",
      "references": [
       "9a8f8903-ac1c-432d-ac42-4da3900e8351",
       "97a3e0d9-6d0d-4615-bbb4-31a4f158c929",
       "ac56f137-678e-45d2-9369-6c9734885a2e",
       "008b4668-0d36-4ef4-87b4-c1c9673d9f9f",
       "38d79709-7724-4761-820c-a63787ccb1ed",
-      "525ee9f8-be04-458a-a2b0-eb436942e321",
-      "361d1857-0436-4f57-b878-55c82d98a42e",
-      "ec24b752-33f0-4b6f-a4de-2b3bc36f9b6c"
-     ]
-    },
-    "1356c6b7-6f8f-49e9-9470-6bea032aaa81": {
-     "title": "Butiksservice",
-     "id": "1356c6b7-6f8f-49e9-9470-6bea032aaa81",
-     "references": [
-      "4a88b97c-891a-4cab-99dd-bedf1018c6cc",
-      "b7c8aaae-1b6c-4dc8-b905-cf06b7f85bb7",
-      "6bee1f00-3c06-4b50-a734-1d3d0fda15ae",
-      "aff1b4a5-aeee-4ace-8662-190b0289e813",
-      "008b4668-0d36-4ef4-87b4-c1c9673d9f9f"
+      "ec24b752-33f0-4b6f-a4de-2b3bc36f9b6c",
+      "525ee9f8-be04-458a-a2b0-eb436942e321"
      ]
     }
    },

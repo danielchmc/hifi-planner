@@ -13,6 +13,25 @@
    "url": "/tv/tv/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.3",
+   "Total HDMI Inputs": "3x",
+   "HDMI 2.1 funktioner": "Auto Game Mode (ALLM)",
+   "HDMI ARC/eARC": "eARC (Port 1)",
+   "Wi-Fi version": "Wi-Fi 5 (802.11ac)"
+  },
+  "gallery": [
+   "6c274ec7-350f-4f39-a2f3-e49b79e429ea",
+   "34f989e5-0353-457d-b741-ed46a341a069",
+   "df461e35-40fe-4b92-9425-a75fd458f488",
+   "6bcc38e6-cacd-422f-a22f-364341b254d2",
+   "aa5892bd-1161-45dc-a303-79d3f81557d8",
+   "82876ee4-dfcc-4f5e-9949-c7de663ef7fd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 285213,
   "skuCode": "SAMTUM72H",
@@ -334,7 +353,6 @@
     },
     "url": "/samsung-m72h-mini-led-tv/samtu43m72h/",
     "canonicalUrl": "/samsung-m72h-mini-led-tv/samtu43m72h/",
-    "lowestShippingPriceRaw": 99,
     "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
@@ -585,7 +603,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 86,
+     "availableQuantity": 85,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1208,7 +1226,6 @@
     },
     "url": "/samsung-m72h-mini-led-tv/samtu65m72h/",
     "canonicalUrl": "/samsung-m72h-mini-led-tv/samtu65m72h/",
-    "lowestShippingPriceRaw": 499,
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -1487,7 +1504,6 @@
     },
     "url": "/samsung-m72h-mini-led-tv/samtu75m72h/",
     "canonicalUrl": "/samsung-m72h-mini-led-tv/samtu75m72h/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -1776,7 +1792,6 @@
     },
     "url": "/samsung-m72h-mini-led-tv/samtu85m72h/",
     "canonicalUrl": "/samsung-m72h-mini-led-tv/samtu85m72h/",
-    "lowestShippingPriceRaw": 399,
     "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
@@ -1817,13 +1832,13 @@
   "displayBookDemo": true,
   "reviews": {
    "rating": 4,
-   "count": 3,
+   "count": 4,
    "reviewCount": 2,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
-    "4": 3,
+    "4": 4,
     "5": 0
    }
   },

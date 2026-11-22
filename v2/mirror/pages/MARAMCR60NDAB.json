@@ -13,6 +13,32 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "1",
+   "HDMI udgange": "0",
+   "HDMI version": "2.1",
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.4",
+   "Lydudgang": "Pre-out, Subwoofer-out, Minijack/AUX",
+   "Lydindgang": "HDMI, Optisk, Analog RCA",
+   "Indgang (andet)": "Ethernet, USB A",
+   "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang, Wi-Fi",
+   "Udgangseffekt 4 ohm": "2 x 65 watt",
+   "Streaming": "Wi-Fi, Airplay 2",
+   "Fra beskrivelsen": "Dedikeret indgang til pladespiller (MM) · Subwoofer-udgang med Bass Management · USB-indgang på bagside til afspilning fra USB-lagermedier · Udgang til subwoofer med variabel delefrekvens 30-250 Hz (Bass Management)"
+  },
+  "gallery": [
+   "11694836-9f29-47b5-8aa8-68c7888cbe05",
+   "131f72ba-0b6e-4c63-930d-56204922e3a0",
+   "c243741d-d23f-46d8-a111-d8a19777d0a5",
+   "7426a8de-f9ce-47e2-b082-2cddfb8d9d8e",
+   "f3dbc1d9-dbe3-4b77-b595-e5cf0e964ae3",
+   "d2621d10-d02d-4e63-8f18-dd2262532766"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 294026,
   "skuCode": "MARAMCR60NDAB",
@@ -272,12 +298,11 @@
      "productCode": "MARAMCR60NDABBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 22. december",
+     "deliveryDate": "2026-12-22T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 15,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -382,7 +407,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 43,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -454,52 +479,74 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette kompakte system leverer en varm, fyldig og punchy lyd med overraskende meget kraft og giver en medrivende musikoplevelse i forskellige opsætninger. Streaming, vinylafspilning, CD-understøttelse og alsidige tilslutningsmuligheder gør systemet til en meget fleksibel allrounder til både moderne og klassiske kilder. De største forbehold gælder den manglende hovedtelefonudgang og den til tider besværlige betjening.",
+   "summary": "Dette kompakte system leverer varm, fyldig og kraftfuld lyd med imponerende effekt i forhold til størrelsen. Alsidig streaming samt muligheder for pladespiller, CD og multiroom gør enheden til en fremragende allrounder i forskellige opsætninger. Tilslutningsmulighederne er brede, og designet passer godt ind i eksisterende underholdningssystemer, selv om betjeningen er mindre bekvem, og der mangler en hovedtelefonudgang.",
    "headlines": {
     "rich, powerful sound from a compact system": {
-     "sentimentAnalysis": "Systemet roses gentagne gange for den fremragende, fyldige lyd og den overraskende høje effekt trods den kompakte størrelse.",
+     "sentimentAnalysis": "Systemet roses gentagne gange for klar, fyldig og kraftfuld lyd samt overraskende høj effekt fra den kompakte forstærker.",
      "simpleTitle": "Fyldig og kraftfuld lyd fra et kompakt system",
      "bias": "positive",
      "key": "sound",
-     "groupId": "482c77e9-beae-4d73-a79c-0e20e53e8efd"
+     "groupId": "7d6531ef-00d7-42a3-bf90-9c0d44828ccc"
     },
-    "flexible support for streaming, vinyl, CD and multiple connections": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver bred kildekompatibilitet, stabil streaming og et stort udvalg af tilslutninger til forskellige hjemmeopsætninger.",
-     "simpleTitle": "Fleksibel understøttelse af streaming, vinyl, CD og mange tilslutninger",
+    "versatile support for streaming, physical media and multi-room audio": {
+     "sentimentAnalysis": "Streaming, pladespiller, CD-afspilning og muligheden for at drive højttalere i forskellige rum fremhæves som værdifulde og fleksible funktioner.",
+     "simpleTitle": "Alsidig understøttelse af streaming, fysiske medier og multiroom-lyd",
      "bias": "positive",
-     "key": "connectivity",
-     "groupId": "dc7ed7c5-838d-4f4d-87e2-dcc96356a557"
+     "key": "features",
+     "groupId": "01d0fa92-e041-4e72-99e0-e08158b64a38"
+    },
+    "broad connectivity and easy integration with existing setups": {
+     "sentimentAnalysis": "Det brede udvalg af tilslutninger og den visuelle kompatibilitet med eksisterende TV- og Apple TV-enheder vurderes positivt.",
+     "simpleTitle": "Mange tilslutninger og nem integration i eksisterende opsætninger",
+     "bias": "positive",
+     "key": "features",
+     "groupId": "01d0fa92-e041-4e72-99e0-e08158b64a38"
+    },
+    "control can feel cumbersome": {
+     "sentimentAnalysis": "Den infrarøde fjernbetjening kræver fri sigtelinje, og den generelle betjening beskrives som besværlig.",
+     "simpleTitle": "Betjeningen kan føles besværlig",
+     "bias": "negative",
+     "key": "control",
+     "groupId": "0854da2b-ee9a-451b-adc4-5c3b25f67bf7"
     }
    },
    "grouping": {
-    "482c77e9-beae-4d73-a79c-0e20e53e8efd": {
+    "7d6531ef-00d7-42a3-bf90-9c0d44828ccc": {
      "title": "Lydkvalitet",
-     "id": "482c77e9-beae-4d73-a79c-0e20e53e8efd",
+     "id": "7d6531ef-00d7-42a3-bf90-9c0d44828ccc",
      "references": [
       "12997ada-6eb5-4f57-8d93-2dcc2af855f5",
       "db6573d7-92c5-4100-affe-45e7d1881430",
       "c8e4e33e-1f95-468f-b8ae-2dba1565569e"
      ]
     },
-    "dc7ed7c5-838d-4f4d-87e2-dcc96356a557": {
-     "title": "Tilslutninger og afspilning",
-     "id": "dc7ed7c5-838d-4f4d-87e2-dcc96356a557",
+    "01d0fa92-e041-4e72-99e0-e08158b64a38": {
+     "title": "Funktioner og tilslutninger",
+     "id": "01d0fa92-e041-4e72-99e0-e08158b64a38",
      "references": [
       "12997ada-6eb5-4f57-8d93-2dcc2af855f5",
       "c8e4e33e-1f95-468f-b8ae-2dba1565569e",
       "53005f80-40dc-4632-b106-ae50754fd348"
      ]
+    },
+    "0854da2b-ee9a-451b-adc4-5c3b25f67bf7": {
+     "title": "Brugervenlighed",
+     "id": "0854da2b-ee9a-451b-adc4-5c3b25f67bf7",
+     "references": [
+      "2b8524b9-d775-4183-b7d5-f73fe1b06e55",
+      "54fd5b9c-8f1a-4d20-8ea5-5c5855980ea5"
+     ]
     }
    },
-   "rating": 4.91666666666667,
-   "count": 12,
-   "reviewCount": 7,
+   "rating": 4.92307692307692,
+   "count": 13,
+   "reviewCount": 8,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 1,
-    "5": 11
+    "5": 12
    }
   },
   "boxContent": [

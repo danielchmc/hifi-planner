@@ -13,6 +13,26 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "1",
+   "HDMI udgange": "0",
+   "Lydudgang": "Analog RCA, Analog XLR",
+   "Lydindgang": "Coaxial, Analog XLR, USB A",
+   "Udgang (andet)": "12V trigger",
+   "Indgang (andet)": "12V trigger, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang",
+   "Tilslutninger (kablet)": "HDMI, Subwoofer, Analog RCA, Høretelefon, Ethernet",
+   "Fra beskrivelsen": "HDMI/CEC med eARC til TV-lyd · Gigabit Ethernet RJ45 · 4 uafhængige subwoofer-udgange med valgfri delefrekvens op til 200 Hz"
+  },
+  "gallery": [
+   "973fed0e-ba0e-42f1-b675-5839a813a192",
+   "62503998-9fca-4354-bbd8-424d5eeb6944",
+   "1d0db2b4-6d65-43e7-80e0-b55bc913c6a1"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 225489,
   "skuCode": "NADM66",
@@ -257,7 +277,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 12,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -323,48 +343,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD M66 leverer en usædvanligt klar, varm og medrivende lyd med strammere bas, flere detaljer og et mere overbevisende tredimensionelt lydbillede. Dirac Live og baskontrol kan give den største forbedring og skabe imponerende præcision og dybde ved korrekt opsætning. Den raffinerede konstruktion, alsidige tilslutning og problemfri BluOS-streaming opvejes dog af frustrerende mangler i software, betjening og opsætning.",
+   "summary": "NAD M66 leverer varm, kraftfuld og meget detaljeret lyd med strammere bas, større dybde i lydbilledet og en medrivende stereogengivelse. Dirac Live og baskorrektion kan give særligt imponerende klarhed, præcision og dybde, mens streaming og BluOS tilbyder omfattende funktioner, når alt fungerer problemfrit. Det raffinerede design, den solide byggekvalitet og de fleksible funktioner gør M66 til en spændende high-end-forforstærker, selv om softwareproblemer, begrænsninger i betjeningen og utilstrækkelig hjælp til opsætning er tydelige svagheder.",
    "headlines": {
-    "clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Lyden roses for usædvanlig klarhed, flere detaljer, blødere diskant og et mere komplet stereobillede.",
-     "simpleTitle": "Klar, detaljeret og medrivende lyd",
+    "detailed, spacious and controlled sound": {
+     "sentimentAnalysis": "Lyden roses for klarhed, detaljer, dybde, stram bas og et mere komplet stereobillede.",
+     "simpleTitle": "Detaljeret, rummelig og kontrolleret lyd",
      "bias": "positive",
-     "key": "sound_detail",
-     "groupId": "b4b6f8ee-068c-4239-8ab9-534830439701"
+     "key": "sound",
+     "groupId": "c11e9e4e-73bf-4fcb-9deb-36b230be0758"
     },
-    "tighter, more precise bass": {
-     "sentimentAnalysis": "Anmeldelserne beskriver bassen som strammere, blødere og mere kontrolleret, især i de dybeste frekvenser.",
-     "simpleTitle": "Strammere og mere præcis bas",
+    "elegant, premium construction": {
+     "sentimentAnalysis": "Produktet beskrives gentagne gange som attraktivt, æstetisk tiltalende og meget solidt bygget.",
+     "simpleTitle": "Elegant konstruktion i høj kvalitet",
      "bias": "positive",
-     "key": "sound_bass",
-     "groupId": "b4b6f8ee-068c-4239-8ab9-534830439701"
+     "key": "design",
+     "groupId": "fe17fac7-b3a1-4226-b31b-59c0664e1ce4"
     },
-    "dirac adds clarity and depth": {
-     "sentimentAnalysis": "Rumkorrektion beskrives gentagne gange som en stor opgradering, der forbedrer baspræcision, klarhed og dybde i lydbilledet.",
-     "simpleTitle": "Dirac giver klarhed og dybde",
+    "dirac Live makes a major difference": {
+     "sentimentAnalysis": "Rumkorrektion giver klarere og dybere lyd samt strammere bas og beskrives som den mest mærkbare opgradering.",
+     "simpleTitle": "Dirac Live gør en stor forskel",
      "bias": "positive",
-     "key": "dirac_impact",
-     "groupId": "a997233a-9b9e-4460-babb-78784d47a969"
+     "key": "roomcorrection",
+     "groupId": "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f"
     },
-    "high-quality, attractive construction": {
-     "sentimentAnalysis": "Produktet roses for sit elegante udseende, pæne finish og høje byggekvalitet.",
-     "simpleTitle": "Høj kvalitet og attraktiv konstruktion",
-     "bias": "positive",
-     "key": "design_quality",
-     "groupId": "c1a3b571-187a-494b-ba7a-389e6b203658"
-    },
-    "bluOS and control software feel underdeveloped": {
-     "sentimentAnalysis": "BluOS og netværksstyring kritiseres for svag implementering, manglende funktioner, besværlig app-adfærd og upålidelig integration.",
-     "simpleTitle": "BluOS og styringssoftwaren virker ufærdige",
+    "bluOS and control software can be awkward": {
+     "sentimentAnalysis": "Softwaren kritiseres for svag implementering, uintuitiv betjening og manglende netværksstyring.",
+     "simpleTitle": "BluOS og kontrolsoftwaren kan være besværlig",
      "bias": "negative",
-     "key": "software_shortcomings",
-     "groupId": "4a194d6d-325b-4eec-96e2-cb227408e88a"
+     "key": "streaming",
+     "groupId": "ffae404a-2989-4248-841f-6662dcd41099"
     }
    },
    "grouping": {
-    "b4b6f8ee-068c-4239-8ab9-534830439701": {
+    "c11e9e4e-73bf-4fcb-9deb-36b230be0758": {
      "title": "Lydkvalitet",
-     "id": "b4b6f8ee-068c-4239-8ab9-534830439701",
+     "id": "c11e9e4e-73bf-4fcb-9deb-36b230be0758",
      "references": [
       "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
       "40884d67-56b1-487a-b5b3-9028e9dee7c0",
@@ -381,11 +394,22 @@
       "476f1458-374f-4960-9324-9dcc533b8618"
      ]
     },
-    "a997233a-9b9e-4460-babb-78784d47a969": {
-     "title": "Rumkorrektion",
-     "id": "a997233a-9b9e-4460-babb-78784d47a969",
+    "fe17fac7-b3a1-4226-b31b-59c0664e1ce4": {
+     "title": "Design og byggekvalitet",
+     "id": "fe17fac7-b3a1-4226-b31b-59c0664e1ce4",
      "references": [
+      "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
+      "40884d67-56b1-487a-b5b3-9028e9dee7c0",
+      "65e15e23-7b53-4e57-b39a-3672947357fe",
       "2e1c1905-2835-4a43-b5b3-21d552cbf54d",
+      "8c31c00f-1693-4339-8bde-16b36fd7b1bb",
+      "2d84c2c3-dc33-4275-b320-777ce93f2669"
+     ]
+    },
+    "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f": {
+     "title": "Rumkorrektion",
+     "id": "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f",
+     "references": [
       "1c3be274-e611-49c8-8852-b171f0e06cde",
       "fd499432-63d3-4752-a6cf-5367b5362c05",
       "2d84c2c3-dc33-4275-b320-777ce93f2669",
@@ -393,24 +417,14 @@
       "8c31c00f-1693-4339-8bde-16b36fd7b1bb"
      ]
     },
-    "4a194d6d-325b-4eec-96e2-cb227408e88a": {
-     "title": "Software og streaming",
-     "id": "4a194d6d-325b-4eec-96e2-cb227408e88a",
+    "ffae404a-2989-4248-841f-6662dcd41099": {
+     "title": "Streaming og software",
+     "id": "ffae404a-2989-4248-841f-6662dcd41099",
      "references": [
       "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
       "fd499432-63d3-4752-a6cf-5367b5362c05",
       "2d84c2c3-dc33-4275-b320-777ce93f2669",
       "476f1458-374f-4960-9324-9dcc533b8618"
-     ]
-    },
-    "c1a3b571-187a-494b-ba7a-389e6b203658": {
-     "title": "Design og byggekvalitet",
-     "id": "c1a3b571-187a-494b-ba7a-389e6b203658",
-     "references": [
-      "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
-      "65e15e23-7b53-4e57-b39a-3672947357fe",
-      "2d84c2c3-dc33-4275-b320-777ce93f2669",
-      "8c31c00f-1693-4339-8bde-16b36fd7b1bb"
      ]
     }
    },

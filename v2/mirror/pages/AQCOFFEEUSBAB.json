@@ -13,6 +13,11 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [],
+  "avail": ""
+ },
  "product": {
   "id": 88396,
   "skuCode": "AQCOFFEEUSBAB",
@@ -80,11 +85,11 @@
      "productCode": "AQCOFFEEUSBAB0,75"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 13. december",
+     "deliveryDate": "2026-12-13T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [],
     "lifestyleImages": [],

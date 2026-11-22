@@ -13,6 +13,16 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "086c9b7f-d919-48ba-a2f8-03685fa89e85",
+   "53b70194-43a1-4317-b92f-a48079743d20",
+   "a801c173-0931-43a7-a650-84ab6cd2ff65",
+   "0d59e682-e108-4b26-ae5d-3552ad5ae3a9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 224889,
   "skuCode": "KEFKC92",
@@ -314,34 +324,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF KC92 leverer dyb, tør, punchy og yderst kontrolleret bas, som tilfører hjemmebiografen kraftig, biograflignende intensitet uden at miste præcision ved hverken lav eller høj lydstyrke. Det kompakte design og den DSP-forbedrede dynamik gør subwooferen til en imponerende opgradering til både musik og hjemmebio. Den eneste væsentlige bekymring er den meget hurtige standby-tilstand under stille passager, men den samlede vurdering er stadig særdeles begejstret.",
+   "summary": "KEF KC92 leverer varm, dyb og slagkraftig bas med imponerende præcision, dynamik og biograflignende effekt. Det kompakte design er nemt at integrere i stuen, mens kompetent rådgivning fra forhandleren skaber ekstra tryghed ved købet. Standby-funktionen kan aktiveres for hurtigt under stille passager, men den samlede lydpræstation begejstrer.",
    "headlines": {
     "deep, punchy bass with cinematic impact": {
-     "sentimentAnalysis": "Anmeldelserne roser KC92 for den ekstremt dybe, kraftfulde og punchy bas, især i hjemmebiografen.",
-     "simpleTitle": "Dyb, punchy bas med biograflignende effekt",
+     "sentimentAnalysis": "KC92 leverer usædvanligt dyb, kraftfuld og slagkraftig bas, som giver musik og hjemmebio større fysisk gennemslagskraft.",
+     "simpleTitle": "Dyb og slagkraftig bas med biografeffekt",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "1ecaa72d-e048-48a7-ba69-5f762ee18e88"
+     "key": "deep-punchy-bass",
+     "groupId": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0"
     },
-    "precise performance across volume levels": {
-     "sentimentAnalysis": "KC92 beskrives som dyb og præcis og leverer overbevisende basgengivelse ved både lav og høj lydstyrke.",
-     "simpleTitle": "Præcis gengivelse ved alle lydstyrker",
+    "helpful retailer guidance": {
+     "sentimentAnalysis": "Venlig og kompetent hjælp fra forhandleren gør valget tryggere og bidrager til en positiv ejeroplevelse.",
+     "simpleTitle": "Hjælpsom vejledning fra forhandleren",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "1ecaa72d-e048-48a7-ba69-5f762ee18e88"
+     "key": "retailer-guidance",
+     "groupId": "a459e48c-d319-4118-b6f0-7e53f7987387"
     },
-    "compact design with strong dynamics": {
-     "sentimentAnalysis": "Det kompakte format passer flot ind i stuen, mens design og DSP bidrager til en imponerende dynamisk gengivelse.",
-     "simpleTitle": "Kompakt design med kraftig dynamik",
+    "clear precision and lively dynamics": {
+     "sentimentAnalysis": "Den præcise basgengivelse og stærke dynamik overbeviser både ved lav og høj lydstyrke.",
+     "simpleTitle": "Præcision og levende dynamik",
      "bias": "positive",
-     "key": "design",
-     "groupId": "458d4fa5-74bd-4c08-bf58-3a2ff0bdd403"
+     "key": "precision-dynamics",
+     "groupId": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0"
+    },
+    "compact design fits the living room": {
+     "sentimentAnalysis": "Det kompakte kabinet kombinerer høj ydelse med et attraktivt udseende, der passer godt ind i stuen.",
+     "simpleTitle": "Kompakt design passer ind i stuen",
+     "bias": "positive",
+     "key": "compact-design",
+     "groupId": "06b250fa-6530-4299-a65f-89ab98bd7581"
     }
    },
    "grouping": {
-    "1ecaa72d-e048-48a7-ba69-5f762ee18e88": {
+    "4072fc1b-6477-4498-b4ab-a647bb8d8bd0": {
      "title": "Lydkvalitet",
-     "id": "1ecaa72d-e048-48a7-ba69-5f762ee18e88",
+     "id": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0",
      "references": [
       "8a6a8f76-144c-4f7f-b262-914c8992e56e",
       "558d72d6-bcaf-43e3-9290-84ee40587c7a",
@@ -351,9 +368,18 @@
       "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"
      ]
     },
-    "458d4fa5-74bd-4c08-bf58-3a2ff0bdd403": {
-     "title": "Design og størrelse",
-     "id": "458d4fa5-74bd-4c08-bf58-3a2ff0bdd403",
+    "a459e48c-d319-4118-b6f0-7e53f7987387": {
+     "title": "Kundeservice",
+     "id": "a459e48c-d319-4118-b6f0-7e53f7987387",
+     "references": [
+      "83bbad48-a348-416d-b33d-ca6b1578709b",
+      "2e972250-bc18-4f9b-84cf-44f3b677fe14",
+      "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"
+     ]
+    },
+    "06b250fa-6530-4299-a65f-89ab98bd7581": {
+     "title": "Design",
+     "id": "06b250fa-6530-4299-a65f-89ab98bd7581",
      "references": [
       "8a6a8f76-144c-4f7f-b262-914c8992e56e",
       "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"

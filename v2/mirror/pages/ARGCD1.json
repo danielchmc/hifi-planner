@@ -13,6 +13,21 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Coaxial, Optisk",
+   "Indgang (andet)": "USB A"
+  },
+  "gallery": [
+   "269fed15-9442-4e1f-974e-dfd975c3e694",
+   "74ec7617-d446-41a5-9d84-9619c31956bd",
+   "b326eed1-af86-4c6c-aa4b-a452299d9673",
+   "fce2969d-8733-4374-8225-8d62ccd1543e",
+   "14e82b39-9336-4313-9672-52257a6026eb",
+   "c9f38626-0f99-4bd8-a549-33f7fbb8777b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 292165,
   "skuCode": "ARGCD1",
@@ -198,7 +213,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 75,
+     "availableQuantity": 62,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -295,7 +310,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 117,
+     "availableQuantity": 113,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -340,34 +355,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGCD1 roses bredt som en velbygget, kompakt og letbetjent cd-afspiller med varm, detaljeret og åben lyd. Afspilleren fungerer især godt sammen med Argon- og Bluesound-systemer og får cd-samlinger til at føles friske og engagerende igen. Små forbehold er manglende genoptagelse ved det sidst afspillede nummer og lejlighedsvis hørbar summen, men den samlede tilfredshed er meget høj.",
+   "summary": "ARGCD1 er en kompakt og brugervenlig cd-afspiller, der leverer varm, detaljeret og åben lyd. Byggekvalitet, design og systemkompatibilitet bliver i høj grad værdsat, med dynamisk og medrivende afspilning sammen med Argon og andet lydudstyr. En mindre ulempe er lejlighedsvis mekanisk støj og manglende genoptagelse af afspilningen efter slukning.",
    "headlines": {
     "detailed, open and enjoyable sound": {
-     "sentimentAnalysis": "Lyden beskrives som detaljeret, åben og af høj kvalitet og er især fornøjelig sammen med passende højttalere og forstærkning.",
+     "sentimentAnalysis": "Lyden roses som detaljeret, åben, af høj kvalitet og behagelig i tilsluttede systemer.",
      "simpleTitle": "Detaljeret, åben og behagelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "9f771a5b-c040-491d-ba4a-0a161277a06d"
+     "key": "detailed_open_sound",
+     "groupId": "a45a3915-bfa5-42d7-bf97-04f614cff720"
     },
-    "strong compatibility with matching systems": {
-     "sentimentAnalysis": "Cd-afspilleren beskrives gentagne gange som et harmonisk supplement til Argon-, Bluesound- og andre relaterede lydkomponenter.",
-     "simpleTitle": "God kompatibilitet med matchende systemer",
+    "works well with other audio systems": {
+     "sentimentAnalysis": "Afspilleren ses som et stærkt supplement til Bluesound, Argon-højttalere og Argon-forstærkere.",
+     "simpleTitle": "Fungerer godt med andre lydsystemer",
      "bias": "positive",
-     "key": "system",
-     "groupId": "84cfd105-019b-4bc2-a02d-240659464af9"
+     "key": "system_pairing",
+     "groupId": "f50aef4e-a5bc-4876-b667-e645fddc3149"
     },
-    "compact, attractive design": {
-     "sentimentAnalysis": "Afspilleren værdsættes for sin kompakte størrelse, flotte udseende og nemme integration i et større lydsystem.",
-     "simpleTitle": "Kompakt og flot design",
+    "compact and well made": {
+     "sentimentAnalysis": "Det kompakte format, det flotte design og den solide udførelse bliver værdsat.",
+     "simpleTitle": "Kompakt og velbygget",
      "bias": "positive",
-     "key": "design",
-     "groupId": "d24ca902-b1ac-44dc-977c-c480278879c0"
+     "key": "compact_build",
+     "groupId": "b0ba1314-c039-4777-857f-68ba69d83aac"
+    },
+    "easy to operate": {
+     "sentimentAnalysis": "Afspilleren opfattes som enkel og nem at betjene.",
+     "simpleTitle": "Nem at betjene",
+     "bias": "positive",
+     "key": "easy_operation",
+     "groupId": "3fa74607-2dc3-4bed-8ace-7b37508af71e"
     }
    },
    "grouping": {
-    "9f771a5b-c040-491d-ba4a-0a161277a06d": {
+    "a45a3915-bfa5-42d7-bf97-04f614cff720": {
      "title": "Lydkvalitet",
-     "id": "9f771a5b-c040-491d-ba4a-0a161277a06d",
+     "id": "a45a3915-bfa5-42d7-bf97-04f614cff720",
      "references": [
       "6b9dbd68-c56f-4dfa-8ce4-6a45a790dbb0",
       "5b07e365-1ac7-4342-9792-70dc5aba38b2",
@@ -375,9 +397,9 @@
       "ea98de18-2634-4706-8aa9-3795dc5c7f12"
      ]
     },
-    "84cfd105-019b-4bc2-a02d-240659464af9": {
+    "f50aef4e-a5bc-4876-b667-e645fddc3149": {
      "title": "Systemkompatibilitet",
-     "id": "84cfd105-019b-4bc2-a02d-240659464af9",
+     "id": "f50aef4e-a5bc-4876-b667-e645fddc3149",
      "references": [
       "bc33c4e7-991c-4744-968d-9e8ae24205a0",
       "5c7075ec-8355-4cba-9b64-e314854d1666",
@@ -385,12 +407,21 @@
       "ea98de18-2634-4706-8aa9-3795dc5c7f12"
      ]
     },
-    "d24ca902-b1ac-44dc-977c-c480278879c0": {
-     "title": "Design og størrelse",
-     "id": "d24ca902-b1ac-44dc-977c-c480278879c0",
+    "b0ba1314-c039-4777-857f-68ba69d83aac": {
+     "title": "Design og byggekvalitet",
+     "id": "b0ba1314-c039-4777-857f-68ba69d83aac",
      "references": [
       "1d85501e-33ca-49a3-9a57-a82551ea5f72",
-      "5c7075ec-8355-4cba-9b64-e314854d1666"
+      "5c7075ec-8355-4cba-9b64-e314854d1666",
+      "e08286fd-6b6f-4ff3-b8a2-cdd6784771b1"
+     ]
+    },
+    "3fa74607-2dc3-4bed-8ace-7b37508af71e": {
+     "title": "Brugervenlighed",
+     "id": "3fa74607-2dc3-4bed-8ace-7b37508af71e",
+     "references": [
+      "0b55c502-db59-4cf0-8492-47ec17fdebc7",
+      "1d85501e-33ca-49a3-9a57-a82551ea5f72"
      ]
     }
    },

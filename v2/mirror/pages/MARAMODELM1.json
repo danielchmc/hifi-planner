@@ -13,6 +13,31 @@
    "url": "/stereo/mini-anlag/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "1",
+   "Lydindgang": "HDMI, Analog RCA, USB A",
+   "Indgang (andet)": "Ethernet, IR",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang, Airplay 2, Spotify Connect",
+   "Tilslutninger (kablet)": "HDMI",
+   "Udgangseffekt 4 ohm": "125 watt",
+   "Udgangseffekt 8 ohm": "100 watt",
+   "Fra beskrivelsen": "Subwoofer-udgang med High Pass Filter"
+  },
+  "gallery": [
+   "5116660b-4043-4f8e-ad0f-a10518ef3015",
+   "bb38d793-fc11-40f3-8797-fdbe8a84829a",
+   "8955d747-d898-4f61-b99c-8a0f00c20dcf",
+   "b8ca7862-0689-4e1e-8b2b-448662737914",
+   "330fa6d1-f354-4550-b1ff-73272f0dcb5e",
+   "640b7bc1-8152-4253-b152-2ddb8b8d7c2d",
+   "4ab7cab9-10db-49c1-be7b-c7835cc34fd2",
+   "06073aea-3b83-480e-b64e-deb778b93874",
+   "bc02dea8-a0c2-4cb0-9721-54b85447ebcf"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 230673,
   "skuCode": "MARAMODELM1",
@@ -250,7 +275,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 35,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -472,110 +497,115 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARAMODELM1 er en kompakt kraftkarl med varm, klar og detaljeret lyd, masser af effekt og fremragende ydeevne til både musik og TV. Streaming, HDMI-funktioner, subwooferintegration og rumkorrektion giver imponerende fleksibilitet, mens det kompakte design passer nemt ind i moderne opsætninger. HEOS-brugervenlighed og netværksstabilitet får blandede vurderinger, og manglen på en fysisk fjernbetjening eller et display giver gentagen frustration.",
+   "summary": "Marantz M1 leverer varm, klar og meget detaljeret lyd med masser af kraft fra et imponerende kompakt kabinet. Streaming, tv-lyd og samspillet med forskellige højttalere får megen ros, mens Dirac giver særligt effektiv kontrol over bas og rumkorrektion. HEOS-appen fungerer for mange, men kan føles besværlig eller ustabil, og manglen på en fysisk fjernbetjening er den tydeligste betjeningsulempe.",
    "headlines": {
-    "heos is convenient but inconsistent": {
-     "sentimentAnalysis": "Flere anmeldelser oplever HEOS som nem og effektiv, mens andre beskriver appen som middelmådig, besværlig eller lejlighedsvis fejlbehæftet.",
-     "simpleTitle": "HEOS er praktisk, men ustabil",
-     "bias": "meh",
-     "key": "app",
-     "groupId": "4d818a10-997c-4412-9af0-9da86249f402"
-    },
-    "warm, clear and powerful sound": {
-     "sentimentAnalysis": "Forstærkeren roses gentagne gange for varm, klar, detaljeret og musikalsk lyd samt masser af effekt til krævende højttalere og høje lydniveauer.",
-     "simpleTitle": "Varm, klar og kraftfuld lyd",
+    "warm, clear and detailed sound": {
+     "sentimentAnalysis": "M1 roses gentagne gange for varm, åben, klar, musikalsk og meget detaljeret gengivelse med flere forskellige højttalersystemer.",
+     "simpleTitle": "Varm, klar og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "157523f2-c330-4049-8f96-a9fca8af03e6"
+     "groupId": "289bfe7f-3d9d-41b0-8bfb-03fd5fe1b171"
     },
-    "network and ARC issues can undermine reliability": {
-     "sentimentAnalysis": "Nogle ejere rapporterer Wi-Fi-forstyrrelser, dårlig forbindelse, ustabil ARC-lydstyring eller netværksrelaterede fejl, selv om en kabelforbindelse kan løse problemerne.",
-     "simpleTitle": "Netværks- og ARC-problemer kan svække stabiliteten",
-     "bias": "negative",
-     "key": "connectivity_issues",
-     "groupId": "57ed5c11-839c-4ed8-b585-cb6348d2f75d"
-    },
-    "no physical remote or display": {
-     "sentimentAnalysis": "Den smartphonebaserede betjening kritiseres gentagne gange, og der efterlyses en enkel fjernbetjening samt grundlæggende information på fronten.",
-     "simpleTitle": "Ingen fysisk fjernbetjening eller display",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "4d818a10-997c-4412-9af0-9da86249f402"
-    },
-    "dirac improves bass and TV control": {
-     "sentimentAnalysis": "Dirac tilskrives bedre basjustering og nyttig rumkalibrering, mens de relaterede TV-lydfunktioner giver ekstra fleksibilitet.",
-     "simpleTitle": "Dirac forbedrer bas og TV-styring",
+    "powerful performance in a compact format": {
+     "sentimentAnalysis": "Ejere beskriver ubesværet drift af både kompakte og store gulvhøjttalere, høje lydniveauer, kraftig bas og usædvanligt meget effekt fra det lille kabinet.",
+     "simpleTitle": "Kraftfuld ydelse i kompakt format",
      "bias": "positive",
-     "key": "dirac",
-     "groupId": "ee36274e-5ffd-4ff2-bf65-8dfef6722b8a"
+     "key": "power",
+     "groupId": "408963ee-d00e-417b-b822-8f3463d28eb2"
+    },
+    "heos works, but feels inconsistent": {
+     "sentimentAnalysis": "HEOS anses for brugbar og til tider god, men flere ejere finder brugerfladen middelmådig, besværlig, netværksfølsom eller mangelfuld med hensyn til computer- og hardwarebetjening.",
+     "simpleTitle": "HEOS fungerer, men føles ustabil",
+     "bias": "meh",
+     "key": "app",
+     "groupId": "2a5c5e1d-619b-4164-9e28-99d4a3799858"
+    },
+    "strong TV and streaming integration": {
+     "sentimentAnalysis": "TV-afspilning, tabsfri streaming, Tidal Connect, AirPlay, Spotify Connect, dialogforbedring og fleksible subwooferindstillinger fremhæves som vigtige styrker.",
+     "simpleTitle": "Stærk TV- og streamingintegration",
+     "bias": "positive",
+     "key": "tvstream",
+     "groupId": "dffa411a-4afc-487b-83ec-82b85079f835"
     }
    },
    "grouping": {
-    "157523f2-c330-4049-8f96-a9fca8af03e6": {
+    "289bfe7f-3d9d-41b0-8bfb-03fd5fe1b171": {
      "title": "Lydkvalitet",
-     "id": "157523f2-c330-4049-8f96-a9fca8af03e6",
+     "id": "289bfe7f-3d9d-41b0-8bfb-03fd5fe1b171",
      "references": [
       "48b45ea8-b0f4-4de5-b11d-4d8ea6ac398a",
       "d3ff33fe-ecee-4fc2-a01b-8cdeb2aa1908",
       "b089b3f8-8fb4-46b1-821f-263dd7719401",
       "4d8cc9ed-cedd-4830-8161-d5e5aa6363b1",
+      "ad74c544-88a3-4067-b082-4397d3580254",
       "d86fb055-4904-4afb-843d-faedf5930624",
       "27fbd572-d7ba-49b3-b813-c5eb8808d556",
+      "30d0efc7-6178-4ec1-9b1b-bbd8ddf1eb1d",
       "624fa1af-6ff4-41b4-a39d-82b636cb5266",
       "c04b80b6-70f5-4287-8d95-674a93c86d92",
+      "92f7d025-c7cd-440b-8aa6-053c6031aae1",
       "708664a6-bbaf-4a8f-ba43-d4873d69fb01",
       "f542ac12-c75d-4c64-8f56-4c7994a4f55f",
+      "7e14d67d-b1f1-4764-841e-6898d231c8ca",
+      "52062e7f-e51d-4f78-bc4c-3dd8fa91d0e8",
       "6ef12cb4-770f-456c-8a48-19cf555ab6fb",
+      "0ef22825-99c1-4172-af70-1b33312e693d",
       "19622d97-027c-4ef9-97c9-3052d6a0c901",
       "e0373d09-dba6-4271-8ca0-ecc880ea091f",
       "a48f468b-b284-432b-8684-1cae3a0c5c4f",
       "c3c5cf34-0883-4783-9e99-1d6151431cf9",
       "03d40b72-ae16-451f-a89e-8db0ef29086b",
       "5ac8527a-3a6b-435f-9a3d-fff2fe1e1ccf",
-      "e164a8f2-15f4-4689-a5b4-14f9be1b488e",
-      "286ca771-90ad-458b-a936-c6161d664d6f",
-      "7e14d67d-b1f1-4764-841e-6898d231c8ca"
+      "e164a8f2-15f4-4689-a5b4-14f9be1b488e"
      ]
     },
-    "4d818a10-997c-4412-9af0-9da86249f402": {
+    "2a5c5e1d-619b-4164-9e28-99d4a3799858": {
      "title": "App og betjening",
-     "id": "4d818a10-997c-4412-9af0-9da86249f402",
+     "id": "2a5c5e1d-619b-4164-9e28-99d4a3799858",
      "references": [
       "4d39979b-a326-4c62-9c78-15090c91aafe",
-      "9b97025b-e813-465e-bc51-4a6ab86d406d",
+      "d3ff33fe-ecee-4fc2-a01b-8cdeb2aa1908",
       "a2e712f5-8670-4590-8305-dcf21372f519",
+      "9b97025b-e813-465e-bc51-4a6ab86d406d",
       "ad74c544-88a3-4067-b082-4397d3580254",
-      "d86fb055-4904-4afb-843d-faedf5930624",
       "624fa1af-6ff4-41b4-a39d-82b636cb5266",
       "92f7d025-c7cd-440b-8aa6-053c6031aae1",
       "0a7b9fd6-538b-447d-9499-496f7263f295",
       "52062e7f-e51d-4f78-bc4c-3dd8fa91d0e8",
+      "6ef12cb4-770f-456c-8a48-19cf555ab6fb",
       "19622d97-027c-4ef9-97c9-3052d6a0c901",
       "a48f468b-b284-432b-8684-1cae3a0c5c4f",
       "03d40b72-ae16-451f-a89e-8db0ef29086b"
      ]
     },
-    "57ed5c11-839c-4ed8-b585-cb6348d2f75d": {
-     "title": "Tilslutningsmuligheder",
-     "id": "57ed5c11-839c-4ed8-b585-cb6348d2f75d",
+    "408963ee-d00e-417b-b822-8f3463d28eb2": {
+     "title": "Effekt og højttalerdrift",
+     "id": "408963ee-d00e-417b-b822-8f3463d28eb2",
      "references": [
-      "d3ff33fe-ecee-4fc2-a01b-8cdeb2aa1908",
-      "9d30853b-34ef-4aab-aa3f-06fafe20544e",
-      "30d0efc7-6178-4ec1-9b1b-bbd8ddf1eb1d",
-      "92f7d025-c7cd-440b-8aa6-053c6031aae1",
+      "48b45ea8-b0f4-4de5-b11d-4d8ea6ac398a",
+      "b089b3f8-8fb4-46b1-821f-263dd7719401",
+      "4d8cc9ed-cedd-4830-8161-d5e5aa6363b1",
+      "624fa1af-6ff4-41b4-a39d-82b636cb5266",
       "c04b80b6-70f5-4287-8d95-674a93c86d92",
+      "27fbd572-d7ba-49b3-b813-c5eb8808d556",
+      "6ef12cb4-770f-456c-8a48-19cf555ab6fb",
+      "a48f468b-b284-432b-8684-1cae3a0c5c4f",
       "c3c5cf34-0883-4783-9e99-1d6151431cf9",
-      "03d40b72-ae16-451f-a89e-8db0ef29086b",
-      "0ef22825-99c1-4172-af70-1b33312e693d"
+      "5ac8527a-3a6b-435f-9a3d-fff2fe1e1ccf",
+      "e164a8f2-15f4-4689-a5b4-14f9be1b488e"
      ]
     },
-    "ee36274e-5ffd-4ff2-bf65-8dfef6722b8a": {
-     "title": "Rumkorrektion og bas",
-     "id": "ee36274e-5ffd-4ff2-bf65-8dfef6722b8a",
+    "dffa411a-4afc-487b-83ec-82b85079f835": {
+     "title": "TV- og streamingfunktioner",
+     "id": "dffa411a-4afc-487b-83ec-82b85079f835",
      "references": [
+      "d3ff33fe-ecee-4fc2-a01b-8cdeb2aa1908",
       "4d8cc9ed-cedd-4830-8161-d5e5aa6363b1",
-      "27fbd572-d7ba-49b3-b813-c5eb8808d556",
-      "03d40b72-ae16-451f-a89e-8db0ef29086b"
+      "c04b80b6-70f5-4287-8d95-674a93c86d92",
+      "30d0efc7-6178-4ec1-9b1b-bbd8ddf1eb1d",
+      "c3c5cf34-0883-4783-9e99-1d6151431cf9",
+      "03d40b72-ae16-451f-a89e-8db0ef29086b",
+      "52062e7f-e51d-4f78-bc4c-3dd8fa91d0e8"
      ]
     }
    },

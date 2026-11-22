@@ -13,6 +13,13 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "91ca8cc5-4055-4f4c-8ddd-6698b496f06a"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 242229,
   "skuCode": "SENAMBEOSOUNDBAR1-SENAMBEOSUB",
@@ -23,8 +30,8 @@
     "AQCARBONOPT",
     "AQCINNRJE",
     "ESSBA1HDMIX",
-    "ESSBA1OPTX",
-    "SENAMBEOSBMINI"
+    "SENAMBEOSBMINI",
+    "ESSBA1OPTX"
    ],
    "isOutlet": "false"
   },
@@ -141,7 +148,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 48,
+        "availableQuantity": 44,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "14.990,-",
@@ -173,7 +180,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 48,
+        "availableQuantity": 42,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.490,-",
@@ -183,7 +190,90 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "SENAMBEOSUB"
+     "parentProductCode": "SENAMBEOSUB",
+     "reviews": {
+      "summary": "SENAMBEOSUB leverer varm, kraftfuld og omsluttende bas, som løfter AMBEO-soundbaroplevelsen markant. Opsætning og integration er generelt nem på kompatible AMBEO-modeller, og effekten gør film og musik langt mere medrivende. Kablet drift kan dog give alvorlige problemer med opdateringer, kalibrering og aktivering, mens trådløs kompatibilitet og standbyadfærd heller ikke er fejlfri.",
+      "headlines": {
+       "powerful, deep bass": {
+        "sentimentAnalysis": "Subwooferen roses gentagne gange for sin dybe, kraftfulde og rumfyldende bas.",
+        "simpleTitle": "Kraftfuld, dyb bas",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
+       },
+       "easy pairing with compatible AMBEO soundbars": {
+        "sentimentAnalysis": "Flere anmeldelser beskriver, at subwooferen passer til eller nemt forbindes med AMBEO-soundbars.",
+        "simpleTitle": "Nem tilslutning til kompatible AMBEO-soundbars",
+        "bias": "positive",
+        "key": "compatibility",
+        "groupId": "471da204-3fc2-4ac2-8d6f-2de72aed55bb"
+       },
+       "a major upgrade to the AMBEO system": {
+        "sentimentAnalysis": "Subwooferen forbedrer den samlede lyd tydeligt, ikke kun bassen.",
+        "simpleTitle": "En markant opgradering af AMBEO-systemet",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
+       },
+       "wired connection has major technical problems": {
+        "sentimentAnalysis": "De fælles forbindelsesproblemer omfatter begrænset trådløs kompatibilitet og ustabil kablet drift.",
+        "simpleTitle": "Kablet forbindelse har store tekniske problemer",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "1fa0401a-deab-45e8-8a29-3b9495f0048a"
+       }
+      },
+      "grouping": {
+       "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802": {
+        "title": "Lydkvalitet",
+        "id": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802",
+        "references": [
+         "cad0bc27-aecc-475e-96da-254e9c9121b7",
+         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
+         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
+         "b035644b-45cc-4873-8c0c-d231fd846b18",
+         "b127c05e-4d48-4173-b224-f10c820bd1fb",
+         "946b650c-6d16-47fd-a655-43531efd1e89",
+         "5585073b-7a79-4c4d-8921-dc89f9c230e0",
+         "538053da-43c7-419e-852b-442d5299fdd3",
+         "8e39db97-d632-4360-9e37-c94c4e20fcb2"
+        ]
+       },
+       "471da204-3fc2-4ac2-8d6f-2de72aed55bb": {
+        "title": "Kompatibilitet og opsætning",
+        "id": "471da204-3fc2-4ac2-8d6f-2de72aed55bb",
+        "references": [
+         "4dff2e90-0aab-4b4f-8be5-34b2ffbe74c0",
+         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
+         "1795f296-9af8-4d1e-9126-ce8793b2538b",
+         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
+         "946b650c-6d16-47fd-a655-43531efd1e89",
+         "72037b3f-be1c-412d-b33e-bd81e6a3c331",
+         "0aa8ae45-e59e-41b8-a4ee-da1e7032b762",
+         "74cf1b88-5c0c-4b85-bc9e-2be41db584b0",
+         "f8f91aa5-d816-4750-ae4f-6cedb686b9ff"
+        ]
+       },
+       "1fa0401a-deab-45e8-8a29-3b9495f0048a": {
+        "title": "Forbindelse",
+        "id": "1fa0401a-deab-45e8-8a29-3b9495f0048a",
+        "references": [
+         "ab634f66-7e4c-4c6e-bc0d-946736a29c10",
+         "1795f296-9af8-4d1e-9126-ce8793b2538b"
+        ]
+       }
+      },
+      "rating": 4.86486486486486,
+      "count": 37,
+      "reviewCount": 18,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 2,
+       "4": 1,
+       "5": 34
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

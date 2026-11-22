@@ -13,6 +13,21 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "490be9c8-627a-4abc-8374-89d1ad696527",
+   "fd094469-d0e4-4934-90bf-dc7c2d69969e",
+   "8952d3f4-6213-46c9-968f-0faf6a467b24",
+   "3e32e8ea-edcf-4c4b-9fd2-ec8e5cd0873c",
+   "27b69685-18e1-4ad3-8f8e-e3eda8c850c7",
+   "e91e12a3-e4c9-4d71-b252-969dfc72e572",
+   "02a80868-3bc8-4ccf-8da3-2c17b102f26a"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 210743,
   "skuCode": "BW606S3",
@@ -424,7 +439,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 59,
+     "availableQuantity": 51,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -553,48 +568,55 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "B&W 606 S3 leverer en usædvanligt klar, detaljeret og rummelig lyd fra et kompakt kabinet med imponerende dybde og kraft i bassen. Klangbalancen beskrives oftest som fyldig, varm og medrivende, selv om nogle lyttere oplever diskanten som lys eller gengivelsen som lidt analytisk; omhyggeligt valg af forstærker og placering er derfor vigtigt. Elegant finish, stærk værdi for pengene og fremragende gengivelse af både musik og film gør 606 S3 til en varm anbefaling.",
+   "summary": "B&W 606 S3 leverer en imponerende klar, detaljeret og rummelig lyd fra et kompakt kabinet med slagkraftig, kontrolleret bas og en engagerende, omsluttende gengivelse. De fleste lyttere fremhæver den afbalancerede, musikalske lyd, den præcise placering og den stærke værdi, mens nogle oplever diskanten eller mellemtonen som for analytisk og understreger betydningen af omhyggelig forstærkermatching og placering. Højttalerne fungerer fremragende til musik, tv og film, og det elegante design samt den fyldige bas er tilstrækkelig i mange rum uden subwoofer, selv om basglade lyttere stadig kan ønske en subwoofer.",
    "headlines": {
-    "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent klarhed, detaljer, præcis placering og et bredt, medrivende lydbillede.",
-     "simpleTitle": "Klar, detaljeret og rummelig lyd",
+    "clear, detailed and balanced sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ofte en ren, klar, transparent og meget detaljeret gengivelse med stor musikalitet og overbevisende ydelse til prisen.",
+     "simpleTitle": "Klar, detaljeret og afbalanceret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "bac09137-92c7-4b61-99ab-d01dd5e92e09"
+     "key": "sound",
+     "groupId": "ef459436-b61a-4ab5-b33f-76ecdbdf7192"
     },
-    "impressive bass for a compact speaker": {
-     "sentimentAnalysis": "Mange lyttere oplever bassen som dyb, kontrolleret og overraskende kraftig i forhold til størrelsen, ofte uden behov for en subwoofer.",
-     "simpleTitle": "Imponerende bas for en kompakt højttaler",
+    "surprisingly deep and controlled bass": {
+     "sentimentAnalysis": "Mange lyttere imponeres af den fyldige, slagkraftige og dybe bas fra så kompakt en højttaler og finder ofte ingen subwoofer nødvendig.",
+     "simpleTitle": "Overraskende dyb og kontrolleret bas",
      "bias": "positive",
      "key": "bass",
-     "groupId": "96cd9119-9d1f-4c0b-8f77-b946572c2d81"
+     "groupId": "051577db-2deb-4f1c-99a3-c09bb43ff630"
     },
-    "strong performance in films and TV": {
-     "sentimentAnalysis": "Anmeldelserne roser tydelige dialoger, overbevisende stereobredde og en medrivende filmoplevelse, især med en matchende centerhøjttaler.",
-     "simpleTitle": "Stærk gengivelse af film og TV",
+    "wide, precise and immersive soundstage": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for et bredt stereoperspektiv, tydelig placering af instrumenter og en omsluttende gengivelse, der også løfter tv og film.",
+     "simpleTitle": "Bredt, præcist og omsluttende lydbillede",
      "bias": "positive",
-     "key": "home-cinema",
-     "groupId": "61113f6b-57ab-4435-b502-ae28f7e298ce"
+     "key": "soundstage",
+     "groupId": "2b7fb296-f612-4e3b-9bb9-c777b22daa0b"
     },
-    "treble can sound bright or fatiguing": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne beskriver den livlige, analytiske diskant som skarp, unaturlig eller trættende med visse indspilninger og stemmer.",
-     "simpleTitle": "Diskanten kan lyde lys eller trættende",
+    "amplifier matching and positioning matter": {
+     "sentimentAnalysis": "Anmeldelserne viser, at forstærkereffekt, systemmatching og omhyggelig placering kan påvirke klarhed, balance og den samlede ydelse markant.",
+     "simpleTitle": "Forstærkermatching og placering betyder noget",
+     "bias": "meh",
+     "key": "sound",
+     "groupId": "ef459436-b61a-4ab5-b33f-76ecdbdf7192"
+    },
+    "treble can sound bright or analytical": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne oplever diskanten eller den øvre mellemtone som fremtrædende, skarp eller trættende, især med bestemte vokaler, genrer eller dårlige optagelser.",
+     "simpleTitle": "Diskanten kan lyde lys eller analytisk",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "bac09137-92c7-4b61-99ab-d01dd5e92e09"
+     "key": "sound",
+     "groupId": "ef459436-b61a-4ab5-b33f-76ecdbdf7192"
     },
-    "a subwoofer may be needed for heavier bass": {
-     "sentimentAnalysis": "Nogle lyttere ønsker mere tyngde og fylde i de dybeste frekvenser, især i større rum eller med krævende musik, og anbefaler en subwoofer.",
-     "simpleTitle": "En subwoofer kan være nødvendig til kraftigere bas",
+    "a subwoofer can add extra weight": {
+     "sentimentAnalysis": "Nogle opsætninger får glæde af en subwoofer til tungere og dybere bas, selv om mange lyttere finder den indbyggede bas tilstrækkelig.",
+     "simpleTitle": "En subwoofer kan tilføre ekstra tyngde",
      "bias": "negative",
      "key": "bass",
-     "groupId": "96cd9119-9d1f-4c0b-8f77-b946572c2d81"
+     "groupId": "051577db-2deb-4f1c-99a3-c09bb43ff630"
     }
    },
    "grouping": {
-    "bac09137-92c7-4b61-99ab-d01dd5e92e09": {
+    "ef459436-b61a-4ab5-b33f-76ecdbdf7192": {
      "title": "Lydkvalitet",
-     "id": "bac09137-92c7-4b61-99ab-d01dd5e92e09",
+     "id": "ef459436-b61a-4ab5-b33f-76ecdbdf7192",
      "references": [
       "f4c5b49f-873b-410c-8ca7-3c54fa7659b0",
       "ca0d9066-2df5-4a98-9c53-cc947a985ce6",
@@ -602,6 +624,7 @@
       "fa6badb3-7a77-427e-b4dc-1a4b07d505db",
       "8c9aeeb7-7af5-4edf-8f74-9f1fa0c89227",
       "062d125c-9fb6-4fca-bbf7-a3cacdaf4999",
+      "47ad251a-df56-41f0-95a2-64d62388dafe",
       "3feaa0f4-bbc7-4e13-b2f0-bd9d46188f22",
       "74b9f3c2-9611-420d-b868-699b9c43cb27",
       "4e43bd8e-6117-4b67-9d8e-819c03e1ddd2",
@@ -609,6 +632,7 @@
       "8be468ea-6615-4051-9b91-bd3e0957345e",
       "54ea777f-1b9c-4045-af4c-2ee423c31341",
       "00cf72c8-7595-4c6b-a370-3f06c5b75fac",
+      "bdc5adb0-21c8-4ae4-881a-5a474db2ab49",
       "1796a4af-7dde-4f08-adb8-ffbb24977fea",
       "d0be0d41-1b8c-44cc-beec-06c7d5945f40",
       "9d281970-7058-40c3-a019-6b77b0284963",
@@ -617,10 +641,15 @@
       "70aff9cc-edfc-4758-b032-9b6397811c5d",
       "7a17b46c-72d0-4049-a09f-00f22770c74c",
       "698029b9-2eba-4975-bf3d-c0ba9400de81",
+      "f3467a58-e1ec-4367-a04c-36742d3aa073",
       "667bced8-7ecd-4923-b849-0df4e30639bc",
       "540f424a-6ae4-4173-9da9-fb59a07bda57",
+      "42e187db-8bb3-44e0-94fa-8d11d7e0d0e9",
+      "51ef92a8-7cd0-4a52-94d1-8088703f2d63",
       "408ff2fb-014d-4fee-a37f-bdccb7b749fa",
       "ec5ae678-6e64-4898-aec6-fbf4e0a06a4f",
+      "16ed26b5-08c8-49fd-a520-f396ff2c6633",
+      "56fa8287-1299-4419-9bef-7a6952951add",
       "863625a6-fd37-4eba-ab58-f80dcec0674a",
       "23618eed-3f57-46e9-82fa-d14afe384cd2",
       "2b706c54-0931-42a8-9cf6-4e989c341da5",
@@ -628,17 +657,23 @@
       "b1350dda-b33a-450f-a6bf-1ca3fdb6cb64",
       "fa451a57-27d8-4492-991a-b34ad4910923",
       "fc61d463-204b-4f9d-8e1f-1809d5f57623",
+      "cc2fbfb4-e3e1-41fd-a4e8-af85c66a9797",
       "0a9cbc52-69d1-4aec-932e-8263ec57d272",
+      "080419a1-e28a-439e-bdf4-15b635f7759a",
       "14182693-d27f-4fdd-856e-2b1ea582e63b",
       "542bf8e3-35e6-4605-b1a8-1703a2e78383",
       "808620a2-4dbf-46bf-a42c-44da343868d9",
       "258b1c66-f1e4-46fa-98d5-b4365b256b63",
       "806861a0-745e-40fa-9f70-63a7dda84470",
+      "efc7c886-3cf1-421a-9bd1-c9f10cd0389e",
       "362492ad-b147-4563-b38d-3fc2f549d73f",
       "55392701-2bfd-4091-bd6c-d0fe32664db5",
+      "5d89862b-7cf-4f2f-980b-59eaa1551a4b",
       "1f7ad966-b15b-4aec-81fd-837eff7bac2f",
       "853bc544-3a9b-4bb1-bf03-51c93bfd031c",
       "37bff211-52d6-418e-b218-72cf79030241",
+      "369aaf3d-570e-48dc-90b3-2467b79aa190",
+      "ce94bead-64a2-4537-8fe4-a93033efa1cc",
       "a7e8c581-6237-4402-a25f-c1befde184f9",
       "875ee4be-2a96-42e1-9264-962999a6f85d",
       "d24b124d-624a-4ed5-935d-7723d0aa9dfd",
@@ -646,6 +681,7 @@
       "6872735e-747f-4117-bcdb-94ab1e312e31",
       "e19a7ac5-6735-434f-85d0-5b7c797dc342",
       "fb175c4c-44a9-4754-89c1-25c0c272cf68",
+      "91df7e10-1946-4d2b-9c52-95145c50cad3",
       "681f0dea-9405-4c33-add2-e60c24421da6",
       "d083e989-8289-4781-8b3f-33e2e207ed20",
       "75f42e17-12f7-442f-b3b1-f46a20a49e9c",
@@ -659,6 +695,7 @@
       "2960b1c8-f980-47bf-9107-5a81e62e6531",
       "faa7dbab-be42-4200-a5fc-d05b8831112c",
       "0077b812-0312-4be9-9e45-b8bf9cff95ed",
+      "d41b9318-d6c8-46ed-99ed-3d61a02ae9e9",
       "34cbe2a0-635f-487e-9ca6-53afef4d237f",
       "45c48872-cdaa-4a47-8d24-3f8ba4c3e742",
       "b1ac2363-6e89-4f22-845d-54f596c5f837",
@@ -676,48 +713,56 @@
       "231b53be-bd78-4aa3-b07b-e9b90d4bcd33"
      ]
     },
-    "96cd9119-9d1f-4c0b-8f77-b946572c2d81": {
+    "051577db-2deb-4f1c-99a3-c09bb43ff630": {
      "title": "Basgengivelse",
-     "id": "96cd9119-9d1f-4c0b-8f77-b946572c2d81",
+     "id": "051577db-2deb-4f1c-99a3-c09bb43ff630",
      "references": [
       "ca0d9066-2df5-4a98-9c53-cc947a985ce6",
       "fa6badb3-7a77-427e-b4dc-1a4b07d505db",
       "47ad251a-df56-41f0-95a2-64d62388dafe",
       "74b9f3c2-9611-420d-b868-699b9c43cb27",
-      "9b3f41f5-1491-4199-807b-93c92bba97bb",
+      "5882884f-1e69-4aac-8598-472d0c3583d7",
       "667bced8-7ecd-4923-b849-0df4e30639bc",
       "ec5ae678-6e64-4898-aec6-fbf4e0a06a4f",
       "863625a6-fd37-4eba-ab58-f80dcec0674a",
       "2b706c54-0931-42a8-9cf6-4e989c341da5",
       "b1350dda-b33a-450f-a6bf-1ca3fdb6cb64",
+      "080419a1-e28a-439e-bdf4-15b635f7759a",
       "14182693-d27f-4fdd-856e-2b1ea582e63b",
+      "806861a0-745e-40fa-9f70-63a7dda84470",
       "362492ad-b147-4563-b38d-3fc2f549d73f",
+      "55392701-2bfd-4091-bd6c-d0fe32664db5",
       "1f7ad966-b15b-4aec-81fd-837eff7bac2f",
       "853bc544-3a9b-4bb1-bf03-51c93bfd031c",
       "2a64d9f3-a71f-4769-a686-b2c09ac846fa",
       "e19a7ac5-6735-434f-85d0-5b7c797dc342",
+      "d083e989-8289-4781-8b3f-33e2e207ed20",
       "3a9be9ef-0b77-4b4b-ac2f-588fc67fd335",
       "125f9dce-ee6e-4389-b278-0aa626638f0e",
       "2960b1c8-f980-47bf-9107-5a81e62e6531",
       "3a1a7208-e023-4c2b-89a1-9206199a0fc7",
-      "e63e6e95-d833-4d1a-aca7-6da161e20845",
+      "c425c5e5-8513-4e2f-b139-ad7e85ff5b7b",
       "fc685359-0004-4dfd-87c0-c52fe71c7aaa",
-      "5d89862b-7cf7-4f2f-980b-59eaa1551a4b",
-      "c425c5e5-8513-4e2f-b139-ad7e85ff5b7b"
+      "b1ac2363-6e89-4f22-845d-54f596c5f837",
+      "e63e6e95-d833-4d1a-aca7-6da161e20845",
+      "d24b124d-624a-4ed5-935d-7723d0aa9dfd",
+      "9b3f41f5-1491-4199-807b-93c92bba97bb"
      ]
     },
-    "61113f6b-57ab-4435-b502-ae28f7e298ce": {
-     "title": "Hjemmebiograf",
-     "id": "61113f6b-57ab-4435-b502-ae28f7e298ce",
+    "2b7fb296-f612-4e3b-9bb9-c777b22daa0b": {
+     "title": "Lydbillede og stereoperspektiv",
+     "id": "2b7fb296-f612-4e3b-9bb9-c777b22daa0b",
      "references": [
       "fa6badb3-7a77-427e-b4dc-1a4b07d505db",
-      "47ad251a-df56-41f0-95a2-64d62388dafe",
+      "4e43bd8e-6117-4b67-9d8e-819c03e1ddd2",
       "00cf72c8-7595-4c6b-a370-3f06c5b75fac",
-      "16f666d8-a436-4f5c-aba7-93be1d3780de",
-      "080419a1-e28a-439e-bdf4-15b635f7759a",
+      "fc61d463-204b-4f9d-8e1f-1809d5f57623",
+      "863625a6-fd37-4eba-ab58-f80dcec0674a",
+      "b1350dda-b33a-450f-a6bf-1ca3fdb6cb64",
       "853bc544-3a9b-4bb1-bf03-51c93bfd031c",
+      "125f9dce-ee6e-4389-b278-0aa626638f0e",
       "75f42e17-12f7-442f-b3b1-f46a20a49e9c",
-      "c425c5e5-8513-4e2f-b139-ad7e85ff5b7b"
+      "231b53be-bd78-4aa3-b07b-e9b90d4bcd33"
      ]
     }
    },

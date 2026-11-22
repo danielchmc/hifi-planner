@@ -13,6 +13,20 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Fra beskrivelsen": "Udskifteligt kabel (ODU-tilslutninger på ørekopper)"
+  },
+  "gallery": [
+   "e96b1e76-c235-4df2-97e6-bbfb5c8d6468",
+   "2101cb34-934b-42d7-993f-fb3cb8fb70d4",
+   "2cd261f7-77cb-4836-bc78-cd7e526756b9",
+   "88a41fe2-dfcb-43ff-a311-4011b5bbd73f",
+   "0e8a7a5c-70c8-4e1d-9b2b-7352b8a6a849"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 252628,
   "skuCode": "SENHD550",
@@ -41,8 +55,8 @@
     "SENHD660S2",
     "DENAHD7200",
     "DENAHD5200",
-    "AUDLCD2CLASSIC",
     "AUDMM100",
+    "AUDLCD2CLASSIC",
     "BEYT1V3",
     "BEYT5V3"
    ],
@@ -183,7 +197,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 110,
+     "availableQuantity": 109,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -342,35 +356,43 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHD550 leverer en varm, transparent og afbalanceret lyd med punchy bas, samtidig med at hovedtelefonerne er utroligt lette og behagelige til lange lyttesessioner. Det fremragende forhold mellem pris og ydelse gør de åbne hovedtelefoner til et stærkt valg til hi-fi, optagelser og gaming derhjemme. Høj komfort, medrivende detaljer og raffineret lyd gør SENHD550 til en begejstret anbefaling.",
+   "summary": "SENHD550 leverer en varm, transparent og meget velafbalanceret lyd med imponerende dyb og slagkraftig bas for en åben hovedtelefon. Den lette konstruktion og høje komfort gør lange lyttesessioner ubesværede. Den stærke værdi, fine tuning og rummelige gengivelse gør hovedtelefonen til et begejstrende valg til både hi-fi og optagelser.",
    "headlines": {
     "lightweight and comfortable for long sessions": {
-     "sentimentAnalysis": "Hovedtelefonerne beskrives gentagne gange som lette, velsiddende og behagelige selv ved længere tids brug.",
-     "simpleTitle": "Let og behagelig til lange lyttesessioner",
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en let og behagelig pasform, som forbliver komfortabel under lang tids lytning.",
+     "simpleTitle": "Let og behagelig til lange sessioner",
      "bias": "positive",
-     "key": "comfort-fit",
-     "groupId": "6f1819cb-b7fd-4eda-ada8-68a9635683df"
+     "key": "long-session-comfort",
+     "groupId": "13d20a68-702e-4f8f-9f20-11ce72ba8863"
     },
-    "transparent, balanced sound with punchy bass": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, transparente og afbalancerede gengivelse med en særligt tilfredsstillende bas.",
-     "simpleTitle": "Transparent og afbalanceret lyd med punchy bas",
+    "balanced, transparent sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den neutrale, balancerede, transparente og åbne lyd, som kvalitetsmæssigt sammenlignes positivt med dyrere Sennheiser-modeller.",
+     "simpleTitle": "Balanceret, transparent lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "a5c8b9a8-277a-4d95-88af-d9afbf2bb898"
+     "key": "balanced-transparent-sound",
+     "groupId": "f3a2fcbf-1a5f-4f4b-a8ea-fc9080971a47"
     },
-    "excellent price-to-performance": {
-     "sentimentAnalysis": "Produktet betragtes som et særligt stærkt køb i forhold til prisen.",
-     "simpleTitle": "Fremragende forhold mellem pris og ydelse",
+    "deep, prominent bass": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den overraskende dybe bas for en åben hovedtelefon samt et lidt mere markant basområde end normalt fra Sennheiser.",
+     "simpleTitle": "Dyb, fremtrædende bas",
      "bias": "positive",
-     "key": "value",
-     "groupId": "d58e210c-2523-442a-8226-f70548a91716"
+     "key": "deep-prominent-bass",
+     "groupId": "f3a2fcbf-1a5f-4f4b-a8ea-fc9080971a47"
+    },
+    "strong value for the price": {
+     "sentimentAnalysis": "Anmeldelserne fremstiller hovedtelefonen som et fremragende og usædvanligt stærkt køb i prisklassen.",
+     "simpleTitle": "Stærk værdi for pengene",
+     "bias": "positive",
+     "key": "strong-value",
+     "groupId": "3753b516-d09e-42e3-8a93-5e31c70bf63b"
     }
    },
    "grouping": {
-    "a5c8b9a8-277a-4d95-88af-d9afbf2bb898": {
+    "f3a2fcbf-1a5f-4f4b-a8ea-fc9080971a47": {
      "title": "Lydkvalitet",
-     "id": "a5c8b9a8-277a-4d95-88af-d9afbf2bb898",
+     "id": "f3a2fcbf-1a5f-4f4b-a8ea-fc9080971a47",
      "references": [
+      "c7f4eaa0-2c58-4a16-b1ba-b6422f7188ed",
       "d9f8240f-20f7-416a-9fcc-9c68900d163d",
       "fcefafd9-3b87-4e60-9c14-556fc0ea767a",
       "46e99e05-c486-448c-bc24-84ade286ff3d",
@@ -379,10 +401,11 @@
       "b521ec67-0478-4d70-b1b8-a237e05d2335"
      ]
     },
-    "6f1819cb-b7fd-4eda-ada8-68a9635683df": {
-     "title": "Komfort og pasform",
-     "id": "6f1819cb-b7fd-4eda-ada8-68a9635683df",
+    "13d20a68-702e-4f8f-9f20-11ce72ba8863": {
+     "title": "Komfort",
+     "id": "13d20a68-702e-4f8f-9f20-11ce72ba8863",
      "references": [
+      "c7f4eaa0-2c58-4a16-b1ba-b6422f7188ed",
       "75a05fb0-cd5e-436c-9eac-fce106089a39",
       "fcefafd9-3b87-4e60-9c14-556fc0ea767a",
       "46e99e05-c486-448c-bc24-84ade286ff3d",
@@ -391,9 +414,9 @@
       "b521ec67-0478-4d70-b1b8-a237e05d2335"
      ]
     },
-    "d58e210c-2523-442a-8226-f70548a91716": {
-     "title": "Pris og værdi",
-     "id": "d58e210c-2523-442a-8226-f70548a91716",
+    "3753b516-d09e-42e3-8a93-5e31c70bf63b": {
+     "title": "Pris for kvalitet",
+     "id": "3753b516-d09e-42e3-8a93-5e31c70bf63b",
      "references": [
       "5e0ef42f-7ee7-4abe-8d56-cc8ed2f237b9",
       "baa74585-de9b-499c-ab5e-deef527d9733",
@@ -401,15 +424,15 @@
      ]
     }
    },
-   "rating": 4.67741935483871,
-   "count": 31,
-   "reviewCount": 12,
+   "rating": 4.6969696969697,
+   "count": 33,
+   "reviewCount": 13,
    "distribution": {
     "1": 1,
     "2": 1,
     "3": 0,
     "4": 3,
-    "5": 26
+    "5": 28
    }
   },
   "brandName": "Sennheiser",

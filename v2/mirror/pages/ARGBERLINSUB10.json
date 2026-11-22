@@ -13,6 +13,20 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Analog RCA, Analog XLR",
+   "Fra beskrivelsen": "Kan seriekobles med flere subwoofere via line-out"
+  },
+  "gallery": [
+   "504ffd32-71ed-4cf1-9b8c-93ce9a084e23",
+   "b3aa0224-2ab6-478a-84b9-b53d418c7273",
+   "8cc6bd72-72d1-4766-ade3-ed7e2e6c329b",
+   "c9b9d708-4783-4777-be10-890eae5d38c0",
+   "b3c7b306-6394-49b5-8854-e7d2972c6f2f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 287862,
   "skuCode": "ARGBERLINSUB10",
@@ -217,7 +231,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 541,
+     "availableQuantity": 537,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -312,7 +326,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 252,
+     "availableQuantity": 246,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -407,7 +421,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 25,
+     "availableQuantity": 133,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -490,34 +504,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGBERLINSUB10 tilføjer varm, punchy og præcis dybbas, så allerede gode anlæg lyder mere immersive og komplette. Den dybe bas er hurtig, kraftig når det er nødvendigt og særligt effektiv til musik og i mindre rum, samtidig med at integrationen er fleksibel og betjeningen enkel. Lejlighedsvis brummen eller “blob”-lyde er den primære kritik, men byggekvalitet og værdi vurderes samlet set meget positivt.",
+   "summary": "ARGBERLINSUB10 leverer et varmt, punchy og præcist basfundament, der tilfører dybde uden at overdøve et eksisterende hi-fi-anlæg. Den dybe gengivelse, hurtige respons og gode integration gør musik og film mere medrivende, mens det kompakte design passer godt til mindre rum. De fleksible indstillingsmuligheder og den høje byggekvalitet roses, selv om lejlighedsvis brummen eller “blob”-lyde påvirker en ellers fremragende oplevelse.",
    "headlines": {
-    "deep, powerful and precise bass": {
-     "sentimentAnalysis": "Anmeldelserne roser subwooferen for at tilføre dyb, kraftig, præcis og hurtig bas, der løfter eksisterende anlæg.",
-     "simpleTitle": "Dyb, kraftig og præcis bas",
+    "deep, precise and powerful bass": {
+     "sentimentAnalysis": "Subwooferen roses for at tilføre dyb, præcis, hurtig og kraftfuld bas, der forbedrer eksisterende anlæg markant.",
+     "simpleTitle": "Dybbas med præcision og kraft",
      "bias": "positive",
-     "key": "deep-powerful-precise-bass",
-     "groupId": "1e6b8008-3d56-48d7-ad2e-6aaa5b119bdb"
+     "key": "deep_precise_bass",
+     "groupId": "b6c04a95-434e-4836-82f4-e12976ee4d2b"
     },
-    "simple and flexible integration": {
-     "sentimentAnalysis": "Anmeldelserne beskriver enkel betjening og nyttige justeringsmuligheder til integration i et anlæg.",
-     "simpleTitle": "Enkel og fleksibel integration",
+    "easy and flexible setup": {
+     "sentimentAnalysis": "Anmelderne fremhæver den enkle betjening og de nyttige justeringsmuligheder til tilpasning til hovedhøjttalerne.",
+     "simpleTitle": "Nem og fleksibel opsætning",
      "bias": "positive",
-     "key": "simple-flexible-integration",
-     "groupId": "ad6e54e2-684c-4b2a-bc08-069c361ce93c"
+     "key": "easy_flexible_setup",
+     "groupId": "c72ffca7-333c-47cd-b9df-c35f4339b0d0"
     },
-    "occasional unwanted noises": {
-     "sentimentAnalysis": "To anmeldelser nævner lejlighedsvis brummen eller blob-agtige lyde, som ikke er blevet løst.",
-     "simpleTitle": "Lejlighedsvise uønskede lyde",
+    "occasional humming or “blob” noises": {
+     "sentimentAnalysis": "To anmeldelser nævner lejlighedsvise uønskede lyde, herunder brummen og blob-agtige lyde, hvor ét problem stadig er uløst.",
+     "simpleTitle": "Lejlighedsvis brummen eller “blob”-lyde",
      "bias": "negative",
-     "key": "occasional-unwanted-noises",
-     "groupId": "fe9a614c-d519-457f-ba60-2a433299aaaa"
+     "key": "occasional_noise",
+     "groupId": "6f436000-ea13-4780-b00f-51bf37da43ae"
     }
    },
    "grouping": {
-    "1e6b8008-3d56-48d7-ad2e-6aaa5b119bdb": {
-     "title": "Lydkvalitet",
-     "id": "1e6b8008-3d56-48d7-ad2e-6aaa5b119bdb",
+    "b6c04a95-434e-4836-82f4-e12976ee4d2b": {
+     "title": "Bas og lydkvalitet",
+     "id": "b6c04a95-434e-4836-82f4-e12976ee4d2b",
      "references": [
       "5a5dbe0a-d03d-4d63-93b0-ce8b92f39249",
       "eb865c4d-c09a-427c-8524-b640864b0b28",
@@ -527,17 +541,17 @@
       "938d5ba7-c88c-48aa-8e1d-18e9e55f89e2"
      ]
     },
-    "ad6e54e2-684c-4b2a-bc08-069c361ce93c": {
+    "c72ffca7-333c-47cd-b9df-c35f4339b0d0": {
      "title": "Opsætning og betjening",
-     "id": "ad6e54e2-684c-4b2a-bc08-069c361ce93c",
+     "id": "c72ffca7-333c-47cd-b9df-c35f4339b0d0",
      "references": [
       "eb865c4d-c09a-427c-8524-b640864b0b28",
       "86a157bb-5e0e-4d0b-8e34-30a3e475b375"
      ]
     },
-    "fe9a614c-d519-457f-ba60-2a433299aaaa": {
-     "title": "Brummen og uønskede lyde",
-     "id": "fe9a614c-d519-457f-ba60-2a433299aaaa",
+    "6f436000-ea13-4780-b00f-51bf37da43ae": {
+     "title": "Støj og driftsproblemer",
+     "id": "6f436000-ea13-4780-b00f-51bf37da43ae",
      "references": [
       "5a5dbe0a-d03d-4d63-93b0-ce8b92f39249",
       "938d5ba7-c88c-48aa-8e1d-18e9e55f89e2"

@@ -8,6 +8,18 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b32e4efd-7399-4ead-8e1b-f0cbfb537e96",
+   "34f4bb41-44b5-414f-9df1-594ff60d6c94",
+   "1455d0a0-392d-479e-ba51-d83327a3d260",
+   "4091d2e1-371f-4786-970e-a095ded3b702",
+   "200f61bf-6d2c-4515-89ac-524d587c84d8",
+   "b6889e3c-3748-4099-a7f2-722766584bc3"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 68612,
   "skuCode": "BLSWM200",
@@ -107,7 +119,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 35,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -192,7 +204,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 140,
+     "availableQuantity": 134,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -228,21 +240,29 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSWM200 er et robust og diskret vægbeslag, der giver højttaleren et rent, svævende udtryk og generelt er enkelt at montere. Installationen kan dog blive besværlig på grund af den begrænsede afstand til væggen, udfordringer med kabelføring og stikkompatibilitet. Når beslaget er monteret korrekt, leveres en varm, fyldig og omsluttende lyd med god punch, som kan overgå sammenlignelige fritstående Bluetooth-højttalere.",
+   "summary": "BLSWM200 er en robust og diskret vægmontering, der er nem at bruge og får Bluesound-højttalere til at se elegant svævende ud på væggen. Det kompakte design giver en ren installation, men visse Pulse 2i-opsætninger kræver ekstra opmærksomhed på kabelplads, stik eller gevind. Efter korrekt montering kan højttaleren levere en varm, fyldig og omsluttende lyd, der fylder rummet.",
    "headlines": {
-    "sturdy and secure mounting": {
-     "sentimentAnalysis": "Beslaget opleves som robust og giver en god og pålidelig måde at fastgøre højttaleren på.",
-     "simpleTitle": "Robust og sikker montering",
+    "easy to mount": {
+     "sentimentAnalysis": "Monteringsprocessen beskrives som nem og ligetil.",
+     "simpleTitle": "Nem at montere",
      "bias": "positive",
-     "key": "wall_mounting",
-     "groupId": "b9fc85f7-2d03-432c-8b17-15902e9757c3"
+     "key": "easy-mounting",
+     "groupId": "050c3043-0bb7-4b78-a05c-ac7b2b2f0059"
+    },
+    "sturdy, reliable attachment": {
+     "sentimentAnalysis": "Beslaget roses som robust og som en god fastgørelsesmetode.",
+     "simpleTitle": "Robust og sikker fastgørelse",
+     "bias": "positive",
+     "key": "sturdy-attachment",
+     "groupId": "050c3043-0bb7-4b78-a05c-ac7b2b2f0059"
     }
    },
    "grouping": {
-    "b9fc85f7-2d03-432c-8b17-15902e9757c3": {
-     "title": "Vægmontering",
-     "id": "b9fc85f7-2d03-432c-8b17-15902e9757c3",
+    "050c3043-0bb7-4b78-a05c-ac7b2b2f0059": {
+     "title": "Montering og installation",
+     "id": "050c3043-0bb7-4b78-a05c-ac7b2b2f0059",
      "references": [
+      "aaa6048c-734a-4d93-9dbc-e33b213c466b",
       "436257bb-7096-4cb9-8a4a-d960f9487c1b",
       "6878d3e3-3544-4528-87fb-aeb4054ee7f4",
       "52f57244-be34-4952-8dba-f1c819267f30",

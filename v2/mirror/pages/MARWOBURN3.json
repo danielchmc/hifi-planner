@@ -13,6 +13,25 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "HDMI, Analog RCA, Minijack/AUX",
+   "Trådløs overførsel": "Bluetooth-indgang",
+   "Højtaler type": "Trådløs højtaler",
+   "Bluetooth type": "5.2",
+   "Bluetooth technologi": "aptX",
+   "Fra beskrivelsen": "HDMI-tilslutning til TV-lyd · Analoge indgange: 1 x 3,5mm line-in, L/R RCA · Night Mode ved HDMI-tilslutning (valgfri)"
+  },
+  "gallery": [
+   "1b101c03-4a8f-47e9-8b37-33491d0175bc",
+   "b6881eff-71f2-4a81-8889-daf54c7c74ec",
+   "89fefe1f-cc31-4485-a639-53406e4b4eb5",
+   "bf4e8936-62b5-4308-8a6f-6a638941f88f",
+   "ced7cf88-21ab-4ab4-82db-67923c7cfa0a",
+   "166d0da9-a34c-4c83-9801-6de5ba0ef761"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214920,
   "skuCode": "MARWOBURN3",
@@ -243,7 +262,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 98,
+     "availableQuantity": 90,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -313,48 +332,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marshall Woburn III leverer varm, kraftfuld og medrivende lyd med dyb bas, klare detaljer og rigelig effekt til store rum. Det markante vintage-design, den solide konstruktion og de enkle betjeningsmuligheder giver et eksklusivt indtryk og gør højttaleren velegnet til tv, Bluetooth-kilder og pladespillere. Den basrige tuning vil ikke passe til alle, og enkelte anmeldelser nævner en begrænset app, monogengivelse, et forbindelsesproblem og en fejl; samlet set roses pris-kvalitet og musikalske oplevelse dog bredt.",
+   "summary": "Marshall Woburn III roses bredt for sin kraftfulde, varme og detaljerede lyd med dyb, fyldig bas, klare diskanttoner og tilstrækkelig lydstyrke til store rum. Det stilfulde vintage-design, den solide konstruktion og den enkle betjening øger attraktiviteten, mens Bluetooth, TV- og pladespillerbrug gør højttaleren alsidig. Enkelte anmeldelser nævner for dominerende bas, lejlighedsvis forvrængning, lavere lydstyrke end Woburn II, en begrænset app samt enkelte problemer med forbindelse eller driftssikkerhed.",
    "headlines": {
-    "easy connections and useful sound adjustment": {
-     "sentimentAnalysis": "Højttaleren anses for nem at betjene, parre og tilslutte til tv, Bluetooth-enheder og pladespillere, og den nyttige lydjustering fremhæves.",
-     "simpleTitle": "Nem tilslutning og nyttig lydjustering",
+    "easy controls and versatile source connections": {
+     "sentimentAnalysis": "Enkel betjening, Bluetooth og nem tilslutning til TV og pladespillere gør højttaleren meget fleksibel.",
+     "simpleTitle": "Nem betjening og alsidige tilslutninger",
      "bias": "positive",
-     "key": "connectivity",
-     "groupId": "9259c229-ee40-4343-90b7-a42663a60bb0"
+     "key": "usability_connectivity",
+     "groupId": "3b04edb0-bfae-4789-a789-4ec16050a2cc"
     },
-    "powerful, clear sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne roser Woburn III for rumfyldende effekt, dyb bas, klarhed og velafbalanceret gengivelse på tværs af musikgenrer.",
-     "simpleTitle": "Kraftfuld, klar lyd med dyb bas",
+    "powerful, immersive sound with deep bass": {
+     "sentimentAnalysis": "Dyb, fyldig bas og høj effekt skaber en medrivende lyd, der fylder rummet og passer til energisk musik og fester.",
+     "simpleTitle": "Kraftfuld, medrivende lyd med dyb bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "897bd327-dd7a-4332-82db-c2996e00d32a"
+     "key": "sound_quality",
+     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
     },
-    "striking vintage design and solid construction": {
-     "sentimentAnalysis": "Anmeldelserne beundrer gennemgående retrodesignet, den eksklusive finish, de taktile betjeningsknapper og det markante udtryk.",
-     "simpleTitle": "Markant vintage-design og solid konstruktion",
+    "clear, detailed and well-balanced across genres": {
+     "sentimentAnalysis": "Anmeldelserne beskriver klar diskant, fyldige mellemtoner, dyb bas og god sammenhæng i jazz, rock, pop, metal og guitarmusik.",
+     "simpleTitle": "Klar, detaljeret og velafbalanceret på tværs af genrer",
      "bias": "positive",
-     "key": "design",
-     "groupId": "ba4f7a9a-12aa-4f4f-9a89-6d88a3dcb278"
+     "key": "sound_quality",
+     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
+    },
+    "stylish vintage design and solid construction": {
+     "sentimentAnalysis": "Retrodesignet, den flotte finish og den solide fornemmelse gør højttaleren til et attraktivt indretningselement.",
+     "simpleTitle": "Stilfuldt vintage-design og solid konstruktion",
+     "bias": "positive",
+     "key": "design_build",
+     "groupId": "533515b2-2972-4623-ae37-7bccb2b73060"
+    },
+    "app functionality and some connections disappoint": {
+     "sentimentAnalysis": "Den begrænsede app, manglende stereoparring og et rapporteret problem med phono-tilslutning svækker den ellers gode alsidighed.",
+     "simpleTitle": "App-funktioner og enkelte tilslutninger skuffer",
+     "bias": "negative",
+     "key": "usability_connectivity",
+     "groupId": "3b04edb0-bfae-4789-a789-4ec16050a2cc"
     },
     "bass can be too dominant for some listeners": {
-     "sentimentAnalysis": "Flere anmeldelser værdsætter den kraftige bas, mens andre oplever bassen som overdreven selv ved lavere indstillinger.",
-     "simpleTitle": "Bassen kan være for dominerende for nogle lyttere",
+     "sentimentAnalysis": "Bassen kan justeres, men nogle lyttere oplever stadig de dybe frekvenser som for dominerende.",
+     "simpleTitle": "Bassen kan være for dominerende for nogle",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "897bd327-dd7a-4332-82db-c2996e00d32a"
-    },
-    "app and input limitations remain": {
-     "sentimentAnalysis": "Kritikken gælder en begrænset Marshall-app, manglende mulighed for at stereoparre to Woburn III-højttalere via Bluetooth samt en rapporteret fejl ved tilslutning af pladespiller.",
-     "simpleTitle": "Begrænsninger i app og indgange",
-     "bias": "negative",
-     "key": "connectivity",
-     "groupId": "9259c229-ee40-4343-90b7-a42663a60bb0"
+     "key": "sound_quality",
+     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
     }
    },
    "grouping": {
-    "897bd327-dd7a-4332-82db-c2996e00d32a": {
+    "ce5b7f24-b948-4a71-9943-4002c4d21be6": {
      "title": "Lydkvalitet",
-     "id": "897bd327-dd7a-4332-82db-c2996e00d32a",
+     "id": "ce5b7f24-b948-4a71-9943-4002c4d21be6",
      "references": [
       "b355f323-44c1-4b7b-a084-fe60bac77974",
       "4e5b32a4-71fa-4e0a-b589-1f53b7e92b06",
@@ -378,59 +404,65 @@
       "369aea3a-4c18-479d-bb9c-2257bdf31ce1",
       "b6873b26-0fca-49ff-89dc-dcabf224279c",
       "55fedd91-e384-4194-b841-5722935da37c",
+      "5fb21c7b-3fb3-4499-9852-1d4db37ee84b",
       "95f1dbd8-4bc8-4f3e-af5f-9b2c0efac660",
       "d1a1e581-a7be-4929-8b03-1f4bb938629b",
+      "4f10ec85-db5b-45fd-b4ef-1143b38dedec",
       "0a91a1e8-3aab-438b-9889-f3d364c4a05a",
       "cd91df66-bb6f-4406-b2a0-5012b79a065d",
       "56d7d0de-1ac8-4710-bda9-e54e6bb28dbb",
       "47d8c77c-1b48-4ab0-9e91-1815599afcf8",
       "ab73e3bf-4ce9-4b0e-90a8-fce9f6742ab5",
       "018e4a3e-250f-4471-b781-9dd251003159",
+      "4cdc0cdf-5d0e-4583-9ce4-fd4fa28af0c1",
+      "0d93cae5-69c1-4a31-8ff3-6ccc4430deb7",
       "312a80b4-0799-4d34-b9e7-4617a2d5fdc3",
       "8a1fd94f-526f-4e4a-a41b-8a58a2d517e1",
+      "e012f88e-0e05-4c8f-8dbb-17c6f84a4858",
       "cc9bcb33-27ac-474b-951e-3a98feb83086",
-      "b127f8a8-d2b7-40db-8563-a5070e422727",
+      "27eda539-8346-4493-b22a-ce24efea4777",
       "511271ef-9486-4c2f-9f8b-0dec6b048bbf",
       "a88b319e-2412-4272-b54b-7296832c30ec",
       "48d5136f-518d-4e3b-b193-da3787bf4848",
       "0e662300-9e2d-4588-8821-d38add6ac35e"
      ]
     },
-    "9259c229-ee40-4343-90b7-a42663a60bb0": {
-     "title": "Tilslutning og betjening",
-     "id": "9259c229-ee40-4343-90b7-a42663a60bb0",
+    "3b04edb0-bfae-4789-a789-4ec16050a2cc": {
+     "title": "Betjening og tilslutning",
+     "id": "3b04edb0-bfae-4789-a789-4ec16050a2cc",
      "references": [
       "be727f1d-44ed-45f8-a856-d6eb474dd877",
       "cde02412-ac30-497a-9c77-080112080546",
       "d4276734-f425-4ffe-bcdd-7b4df7ad13ea",
       "2f76f0a9-ac46-402c-b012-580d1847ceb6",
       "edd7dd99-80b6-423c-bc20-eba2c1d2efd3",
-      "f657de5c-8d90-4292-b851-962cc8e59d7c",
+      "10870349-cfbd-4df8-8c75-7ab919d618ab",
       "ab73e3bf-4ce9-4b0e-90a8-fce9f6742ab5",
       "018e4a3e-250f-4471-b781-9dd251003159",
       "4cdc0cdf-5d0e-4583-9ce4-fd4fa28af0c1",
       "312a80b4-0799-4d34-b9e7-4617a2d5fdc3",
       "8a1fd94f-526f-4e4a-a41b-8a58a2d517e1",
-      "c871b82d-0408-48fe-99a0-e7f64dc92c21",
-      "25af9ad7-d618-4ba5-be31-506198484d14"
+      "f657de5c-8d90-4292-b851-962cc8e59d7c",
+      "25af9ad7-d618-4ba5-be31-506198484d14",
+      "c871b82d-0408-48fe-99a0-e7f64dc92c21"
      ]
     },
-    "ba4f7a9a-12aa-4f4f-9a89-6d88a3dcb278": {
-     "title": "Design og konstruktion",
-     "id": "ba4f7a9a-12aa-4f4f-9a89-6d88a3dcb278",
+    "533515b2-2972-4623-ae37-7bccb2b73060": {
+     "title": "Design og byggekvalitet",
+     "id": "533515b2-2972-4623-ae37-7bccb2b73060",
      "references": [
       "d32ce886-412c-497e-a48a-c6b575b95bf0",
       "be727f1d-44ed-45f8-a856-d6eb474dd877",
       "cde02412-ac30-497a-9c77-080112080546",
       "3de0a200-18a6-4b6d-9842-f0ae6f1c9d93",
+      "369aea3a-4c18-479d-bb9c-2257bdf31ce1",
+      "55fedd91-e384-4194-b841-5722935da37c",
       "5fb21c7b-3fb3-4499-9852-1d4db37ee84b",
       "d1a1e581-a7be-4929-8b03-1f4bb938629b",
       "10870349-cfbd-4df8-8c75-7ab919d618ab",
       "018e4a3e-250f-4471-b781-9dd251003159",
       "4f13c76a-00d9-45f9-b511-fa9ca109fc96",
-      "48d5136f-518d-4e3b-b193-da3787bf4848",
-      "c871b82d-0408-48fe-99a0-e7f64dc92c21",
-      "0e662300-9e2d-4588-8821-d38add6ac35e"
+      "48d5136f-518d-4e3b-b193-da3787bf4848"
      ]
     }
    },

@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "1a7920b2-970c-49c9-add6-a611a44b326f",
+   "e807f655-743c-4fea-abd7-079be2441dcb",
+   "b926c2b8-69f8-4ac4-8cd5-d6209e8e735d"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 269290,
   "skuCode": "AQBHEART",
@@ -464,10 +473,11 @@
      "productCode": "AQBHEART300A"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

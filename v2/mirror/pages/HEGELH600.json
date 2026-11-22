@@ -13,6 +13,24 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Analog RCA, BNC",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC",
+   "Indgang (andet)": "Ethernet, USB B",
+   "Udgangseffekt 8 ohm": "303 watt",
+   "Fra beskrivelsen": "USB-B indgang til afspilning fra PC/Mac (24/384) · Mulighed for DAC-Loop (BNC-ud/XLR-ind) · Ethernet-tilslutning / UPnP · Valgfri variabel/fixed indstilling på alle indgange (undtagen USB)"
+  },
+  "gallery": [
+   "ff992933-a284-4560-8eba-40a31dc05e33",
+   "0a88c0af-33a0-4996-abb0-5da495008106",
+   "4f4c8830-f28b-463b-9315-4ba3af5b46d7",
+   "b455872a-4a55-432f-9fc7-ced78279c1de",
+   "d58ee8ca-1fc3-463f-8f45-2e3b190151f1",
+   "8f91ffce-06c0-4ff2-ad3a-98b6fad03c9a"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 210989,
   "skuCode": "HEGELH600",
@@ -25,7 +43,6 @@
     "BW804D5",
     "BLSN530",
     "HEGELV10",
-    "HEGELVIKING",
     "DALIRUBIKORE8",
     "DALIEPIKORE7",
     "MOFISOURCEPOINT888",
@@ -36,7 +53,8 @@
     "BW802D5",
     "BW801D4",
     "DALIEPIKORE11",
-    "BW801D5"
+    "BW801D5",
+    "HEGELVIKING"
    ],
    "isOutlet": "false"
   },
@@ -279,46 +297,53 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELH600 bliver bredt rost som en spektakulær high-end-integreret forstærker, der leverer varm, men samtidig krystalklar, detaljeret og medrivende lyd med dyb bas, sort baggrund og stor bredde. Den kraftfulde forstærkning og enestående højttalerkontrol gør det let at drive selv krævende højttalere. Det markante spring frem fra tidligere Hegel-modeller og den komplette udstyrspakke gør HEGELH600 til en overbevisende opgradering for seriøse lyttere.",
+   "summary": "HEGELH600 roses bredt som en spektakulær high-end integreret forstærker, der leverer varm, kraftfuld og særdeles kontrolleret lyd med enestående klarhed, detaljering, dybde og åbenhed. Flere ejere beskriver markante forbedringer i forhold til H190, H200, H360 og H590, hvilket gør forstærkeren til en komplet og overbevisende opgradering. Kombinationen af slagkraftig bas, et omsluttende lydbillede og ubesværet højttalerkontrol gør HEGELH600 til en stærk anbefaling til krævende anlæg.",
    "headlines": {
-    "a major improvement over earlier Hegel amplifiers": {
-     "sentimentAnalysis": "Ejere beskriver HEGELH600 som et markant spring frem fra flere tidligere Hegel-modeller, herunder H200, H360, H590 og H190.",
-     "simpleTitle": "En markant forbedring i forhold til tidligere Hegel-forstærkere",
+    "major improvement over earlier Hegel amplifiers": {
+     "sentimentAnalysis": "Ejere beskriver konsekvent skiftet fra ældre Hegel-modeller som en markant, til tider dramatisk, forbedring fra en ny generation.",
+     "simpleTitle": "Markant forbedring i forhold til tidligere Hegel-forstærkere",
      "bias": "positive",
-     "key": "major-upgrade",
-     "groupId": "d2a0948c-14d0-425a-8658-131437fb38ef"
+     "key": "major_upgrade",
+     "groupId": "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969"
     },
     "clear, detailed and open sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den krystalklare, højtopløste og åbne gengivelse.",
+     "sentimentAnalysis": "Forstærkeren roses gentagne gange for glasklar gengivelse, høj opløsning, åbenhed og ubesværet musikalsk detaljering.",
      "simpleTitle": "Klar, detaljeret og åben lyd",
      "bias": "positive",
-     "key": "sound-open",
-     "groupId": "d2984a76-3965-4385-bb81-7ed993ca087c"
+     "key": "clear_detailed_open_sound",
+     "groupId": "a52e4434-6af1-4466-b595-b0cb5af33ab5"
     },
-    "powerful control and expansive presentation": {
-     "sentimentAnalysis": "Forstærkeren værdsættes for kraftfuld gengivelse, præcis bas, stærk højttalerkontrol og et bredt, dybt lydbillede.",
-     "simpleTitle": "Kraftfuld kontrol og stor lydscene",
+    "effortless power and speaker control": {
+     "sentimentAnalysis": "Forstærkeren beskrives som et kraftværk med enestående kontrol, der ubesværet kan drive krævende højttalere.",
+     "simpleTitle": "Ubesværet kraft og højttalerkontrol",
      "bias": "positive",
-     "key": "powerful-control",
-     "groupId": "3d79233f-5a34-4889-a20b-5f9af91b4566"
+     "key": "effortless_power_control",
+     "groupId": "3d466cce-6cde-4d53-b957-3ff1a4207a05"
+    },
+    "deep, wide and punchy presentation": {
+     "sentimentAnalysis": "Beskrivelserne fremhæver kraftfuld dynamik, præcis bas, dybde, bredde, en sort baggrund og et omsluttende high-end-lydbillede.",
+     "simpleTitle": "Dyb, bred og slagkraftig gengivelse",
+     "bias": "positive",
+     "key": "deep_wide_punchy_sound",
+     "groupId": "a52e4434-6af1-4466-b595-b0cb5af33ab5"
     }
    },
    "grouping": {
-    "d2984a76-3965-4385-bb81-7ed993ca087c": {
+    "a52e4434-6af1-4466-b595-b0cb5af33ab5": {
      "title": "Lydkvalitet",
-     "id": "d2984a76-3965-4385-bb81-7ed993ca087c",
+     "id": "a52e4434-6af1-4466-b595-b0cb5af33ab5",
      "references": [
       "5ebcb6b6-547f-4319-84e7-35ccacc89278",
       "77fa79fc-109c-4ca5-bb7d-6c25f0d63273",
       "af82e960-4fe1-4425-b105-908a3655f84f",
-      "4cfd7f81-506b-4d5f-8bb3-b2a277a9504a",
       "722cb1f5-e9be-4a4a-b2f7-4d69ec2fa604",
+      "4cfd7f81-506b-4d5f-8bb3-b2a277a9504a",
       "32e70afd-c86d-471e-aa07-929b7f57682d"
      ]
     },
-    "d2a0948c-14d0-425a-8658-131437fb38ef": {
-     "title": "Opgradering fra tidligere modeller",
-     "id": "d2a0948c-14d0-425a-8658-131437fb38ef",
+    "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969": {
+     "title": "Opgraderingssammenligning",
+     "id": "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969",
      "references": [
       "e51a9615-052c-4792-85cb-f7721ec6b1dc",
       "c4ccfae4-1bed-4b49-81c0-f0a032e53a17",
@@ -327,9 +352,9 @@
       "2a3106cb-bbec-4d26-90de-8f7d859beedd"
      ]
     },
-    "3d79233f-5a34-4889-a20b-5f9af91b4566": {
+    "3d466cce-6cde-4d53-b957-3ff1a4207a05": {
      "title": "Kraft og højttalerkontrol",
-     "id": "3d79233f-5a34-4889-a20b-5f9af91b4566",
+     "id": "3d466cce-6cde-4d53-b957-3ff1a4207a05",
      "references": [
       "5ebcb6b6-547f-4319-84e7-35ccacc89278",
       "77fa79fc-109c-4ca5-bb7d-6c25f0d63273",

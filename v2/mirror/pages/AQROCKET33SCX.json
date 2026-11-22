@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Koldsvejsede forsølvede bananstik"
+  },
+  "gallery": [
+   "343399c5-8c9b-4d8b-8adc-7f4a80458be2"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 32414,
   "skuCode": "AQROCKET33SCX",
@@ -159,27 +168,34 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET33SCX leverer en varm, klar og dynamisk lyd med hørbare forbedringer i diskant og mellemtone samt en medrivende musikgengivelse. Kablet fungerer pålideligt, også efter forlængelse og ved bi-wiring, uden rapporterede forstyrrelser. Den største indvending er den relativt høje pris, selv om den samlede værdi og systemkompatibilitet stadig overbeviser.",
+   "summary": "AQROCKET33SCX leverer en varm, klar og punchy lyd med særligt tydelige forbedringer i diskant og mellemtone. Kablet fungerer pålideligt, også ved forlængelse og bi-wiring, uden rapporterede forstyrrelser. Den høje pris er den største ulempe, men den musikalske værdi og medrivende gengivelse gør kablet til en overbevisende opgradering.",
    "headlines": {
-    "clearer treble and midrange": {
-     "sentimentAnalysis": "Kablet forbindes med god samlet lyd og en tydeligt hørbar forbedring i diskant og mellemtone.",
-     "simpleTitle": "Klarere diskant og mellemtone",
+    "clear, improved sound": {
+     "sentimentAnalysis": "Kablet roses for god lyd og hørbare forbedringer, især større klarhed i diskant og mellemtone.",
+     "simpleTitle": "Klar og forbedret lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d3bbe8f9-642a-4e70-9a4b-26d88c2ab203"
+     "key": "clear-improved-sound",
+     "groupId": "8f77b3c8-e54c-4f4c-b305-332773afdec7"
+    },
+    "reliable cable performance": {
+     "sentimentAnalysis": "Kablet vurderes som vellavet og egnet til forlængede eller bi-wire-installationer uden tab af ydeevne.",
+     "simpleTitle": "Pålidelig kabelydelse",
+     "bias": "positive",
+     "key": "reliable-cable-performance",
+     "groupId": "9bf50598-e242-4728-b69e-a56892bc6579"
     },
     "high price": {
-     "sentimentAnalysis": "Produktet betragtes som dyrt, men vurderes trods prisen som værdifuldt og nyttigt til musiklytning.",
+     "sentimentAnalysis": "Købsprisen opleves som høj, selv om produktet stadig vurderes som pengene værd til musiklytning.",
      "simpleTitle": "Høj pris",
      "bias": "negative",
-     "key": "price",
-     "groupId": "fba3ecb5-ca87-4384-a3ea-af86b70f399e"
+     "key": "high-price",
+     "groupId": "0f6e45aa-67d2-4496-888f-af3fada96db0"
     }
    },
    "grouping": {
-    "d3bbe8f9-642a-4e70-9a4b-26d88c2ab203": {
+    "8f77b3c8-e54c-4f4c-b305-332773afdec7": {
      "title": "Lydkvalitet",
-     "id": "d3bbe8f9-642a-4e70-9a4b-26d88c2ab203",
+     "id": "8f77b3c8-e54c-4f4c-b305-332773afdec7",
      "references": [
       "490f1466-9d37-49f5-b4d5-3e86d470025d",
       "b5e3ba17-9ce3-4516-8627-c0bee2b3985f",
@@ -187,11 +203,19 @@
       "dda91082-f286-44ff-9057-e91ed0c64b35"
      ]
     },
-    "fba3ecb5-ca87-4384-a3ea-af86b70f399e": {
+    "0f6e45aa-67d2-4496-888f-af3fada96db0": {
      "title": "Pris og værdi",
-     "id": "fba3ecb5-ca87-4384-a3ea-af86b70f399e",
+     "id": "0f6e45aa-67d2-4496-888f-af3fada96db0",
      "references": [
       "b5e3ba17-9ce3-4516-8627-c0bee2b3985f",
+      "5479c191-9e1e-491f-9c19-c07538902e08"
+     ]
+    },
+    "9bf50598-e242-4728-b69e-a56892bc6579": {
+     "title": "Kabelkvalitet",
+     "id": "9bf50598-e242-4728-b69e-a56892bc6579",
+     "references": [
+      "609e2441-68ab-4247-a47e-76bfa8940bf4",
       "5479c191-9e1e-491f-9c19-c07538902e08"
      ]
     }

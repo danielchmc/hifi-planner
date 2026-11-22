@@ -13,6 +13,15 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Toslink · Type : Optisk digitalkabel · Eksklusiv optisk fiber med 217 enkeltledere"
+  },
+  "gallery": [
+   "794115be-d101-49b4-b607-ba30b405ade4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 31500,
   "skuCode": "AQVODKAOPT",
@@ -126,11 +135,12 @@
      "productCode": "AQVODKAOPT0,75"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 2,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -383,36 +393,28 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQVODKAOPT leverer en imponerende varm, detaljeret og musikalsk lyd. Kablet giver dybere bas, større klarhed og et mere medrivende tredimensionelt lydbillede og overgår ofte almindelige coaxialkabler. Premiumprisen anses som rimelig på grund af den markante forbedring af lytteoplevelsen.",
+   "summary": "AQVODKAOPT leverer en imponerende varm, detaljeret, dynamisk og musikalsk lyd med et dybere, klarere og mere medrivende lydbillede. Flere anmeldelser beskriver markante forbedringer sammenlignet med almindelige optiske kabler eller coaxialkabler, herunder et stærkere tredimensionelt perspektiv og større musikalsk engagement. Den høje pris nævnes, men den fremragende lydkvalitet anses generelt for at være investeringen værd.",
    "headlines": {
-    "a major upgrade in detail and musicality": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en rigere, mere detaljeret, klarere og mere musikalsk gengivelse med en markant forbedring i forhold til tidligere kabler.",
-     "simpleTitle": "En markant forbedring af detaljer og musikalitet",
+    "detailed, rich, and musical sound": {
+     "sentimentAnalysis": "Anmeldelserne roser kablet for en usædvanligt detaljeret, klar, fyldig og musikalsk lyd, hvor den dybe bas også fremhæves.",
+     "simpleTitle": "Detaljeret, fyldig og musikalsk lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "63237d04-57ca-4a55-ba45-b0ab4cbf21d0"
+     "key": "sound-detail",
+     "groupId": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49"
     },
-    "a spacious three-dimensional soundstage": {
-     "sentimentAnalysis": "Kablet roses for at tilføre musikken dybde, lagdeling og en overbevisende tredimensionel rumfornemmelse.",
-     "simpleTitle": "Et rummeligt tredimensionelt lydbillede",
+    "major improvement in soundstage and immersion": {
+     "sentimentAnalysis": "Anmeldelserne beskriver et markant løft af hele lydbilledet med mere tredimensional rumfornemmelse, større indlevelse og flere hørbare musikalske detaljer.",
+     "simpleTitle": "Markant forbedring af lydbillede og rumfornemmelse",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "63237d04-57ca-4a55-ba45-b0ab4cbf21d0"
-    },
-    "optical performance can surpass coaxial cables": {
-     "sentimentAnalysis": "Anmeldelserne udfordrer forventningerne til optiske forbindelser og beskriver en ydelse, der matcher eller overgår kendte coaxialalternativer.",
-     "simpleTitle": "Optisk ydelse kan overgå coaxialkabler",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "63237d04-57ca-4a55-ba45-b0ab4cbf21d0"
+     "key": "soundstage-improvement",
+     "groupId": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49"
     }
    },
    "grouping": {
-    "63237d04-57ca-4a55-ba45-b0ab4cbf21d0": {
+    "ad5e6cd3-9051-431e-b8b3-2f9de8291d49": {
      "title": "Lydkvalitet",
-     "id": "63237d04-57ca-4a55-ba45-b0ab4cbf21d0",
+     "id": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49",
      "references": [
-      "828d4aba-3056-4a31-a0ab-19daf8656f5d",
       "1a9db6c4-83a1-4c3e-84c0-63e737118955",
       "160532e6-400f-4f03-8cf2-2f3f4aff5f52",
       "0ea633cd-8d41-4fc7-ab2b-20e5a18df862",

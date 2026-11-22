@@ -13,6 +13,22 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej"
+  },
+  "gallery": [
+   "4b2debaa-186e-4fdc-8353-84869b98e2c9",
+   "704f74dc-fafc-4058-9caa-06e8157d7dce",
+   "1d5af30a-8fce-447c-b092-d9e355b4ab65",
+   "af712475-9bb6-4311-923f-d41cdf85bb3a",
+   "e1365262-14d9-480a-8d2a-5624c023eaa2",
+   "007c4683-e40f-42e5-8570-e9a54622f1b6",
+   "fa51b4ae-68e4-441e-9fb0-26d2ec4f636d",
+   "fd19ad76-d1a6-4c08-b8d6-2c9043f2af7e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 175534,
   "skuCode": "SENIE600",
@@ -147,6 +163,12 @@
    "url": "/horetelefoner/head-fi/",
    "id": 79062
   },
+  "stockItemAlternative": {
+   "save": "600,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SENIE600",
+   "availableQuantity": 1,
+   "lowestPrice": "4.999,-"
+  },
   "variants": [
    {
     "id": 175535,
@@ -197,8 +219,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 2,
-     "availableQuantity": 36,
+     "numberOfStoresExperience": 3,
+     "availableQuantity": 34,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -303,71 +325,68 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENIE600 leverer en fremragende, meget detaljeret og medrivende lyd med stram bas, klare mellemtoner og diskant samt en engagerende gengivelse, der får velkendt musik til at føles ny. Komforten er generelt fremragende ved lang tids lytning, men den rigtige forsegling kan kræve eksperimenter med ørepropper, og nogle oplever, at ørebøjlerne ikke sidder stabilt. Byggekvaliteten er overordnet stærk, men det medfølgende kabel og ørepropperne er de svageste dele, hvor kabelstøj og et billigt indtryk trækker ned i et ellers fremragende IEM.",
+   "summary": "SENIE600 leverer en fænomenal, meget detaljeret og medrivende lyd med en klar og levende gengivelse, stram bas og imponerende musikalsk nærvær. Komforten er generelt fremragende og gør lange, træthedsfrie lytteoplevelser mulige med de rigtige ørepropper. Byggekvalitet og æstetik virker eksklusive, men det medfølgende kabel og ørepropperne kritiseres for mikrofonisk støj, beskeden kvalitet og ustabil pasform.",
    "headlines": {
-    "exceptional, detailed and immersive sound": {
-     "sentimentAnalysis": "Lyden roses gentagne gange som fremragende, detaljeret, klar og medrivende og får musik til at føles ny.",
-     "simpleTitle": "Fremragende, detaljeret og medrivende lyd",
+    "phenomenally detailed and immersive sound": {
+     "sentimentAnalysis": "IE600 roses gentagne gange for en fænomenal gengivelse på referenceniveau, der får musikken til at føles ny og dybt medrivende.",
+     "simpleTitle": "Fænomenalt detaljeret og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "b20ac6c5-d852-435a-b454-4fabb717fa67"
+     "groupId": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0"
     },
-    "comfortable for extended listening": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver IEM'et som komfortabelt, diskret og uden lyttetræthed.",
-     "simpleTitle": "Komfortabel ved lang tids lytning",
+    "comfortable for long, fatigue-free listening": {
+     "sentimentAnalysis": "Komforten roses konsekvent, og øretelefonerne føles næsten usynlige i øret uden nævneværdig lyttetræthed ved længere tids brug.",
+     "simpleTitle": "Behagelig ved langvarig lytning uden træthed",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "7ad640a6-aa4f-44b7-b135-ff0b35b0e79e"
+     "groupId": "9f743217-8cba-4933-9dc1-017113e6e19c"
     },
-    "bright, clear tuning with controlled bass": {
-     "sentimentAnalysis": "Toningen beskrives som lys, klar og detaljefokuseret med stram eller moderat bas frem for en overdrevet bas.",
-     "simpleTitle": "Lys og klar tuning med kontrolleret bas",
+    "clear, lively tuning with tight bass": {
+     "sentimentAnalysis": "Lydsignaturen beskrives som klar og lys med stærke detaljer i mellemtoner og diskant, mens bassen forbliver kontrolleret, stram og fyldig uden at virke overdrevet.",
+     "simpleTitle": "Klar og levende lyd med stram bas",
      "bias": "positive",
      "key": "sound",
-     "groupId": "b20ac6c5-d852-435a-b454-4fabb717fa67"
+     "groupId": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0"
     },
-    "the included cable is noisy and underwhelming": {
-     "sentimentAnalysis": "Kablet kritiseres for et billigt indtryk, påtrængende kabelstøj og utilstrækkelig kvalitet i denne prisklasse.",
-     "simpleTitle": "Det medfølgende kabel er støjende og skuffende",
+    "the included cable and ear tips need improvement": {
+     "sentimentAnalysis": "Den hårdeste kritik retter sig mod standardtilbehøret: Ørepropperne kan have svært ved at slutte tæt, mens kablet overfører berøringsstøj og virker under niveau for prisen.",
+     "simpleTitle": "Det medfølgende kabel og ørepropperne kan forbedres",
      "bias": "negative",
-     "key": "cable",
-     "groupId": "97bc9f7b-f00c-4407-91ca-5a1497b62ea5"
+     "key": "cable-build",
+     "groupId": "cfa1bab4-fb54-4c67-ac54-1f26765d5540"
     },
-    "the fit and ear-tip seal need experimentation": {
-     "sentimentAnalysis": "En sikker tætning og stabil pasform er ikke automatisk for alle, så ørepropper og ørebøjler kræver justering.",
-     "simpleTitle": "Pasform og tætning kræver tilpasning",
-     "bias": "negative",
-     "key": "comfort",
-     "groupId": "7ad640a6-aa4f-44b7-b135-ff0b35b0e79e"
+    "cable construction is sturdy and has improved": {
+     "sentimentAnalysis": "Nogle indtryk af kablet er positive og fremhæver den solide konstruktion samt et senere, blødere og mere fleksibelt design.",
+     "simpleTitle": "Kablet er solidt og er blevet forbedret",
+     "bias": "positive",
+     "key": "cable-build",
+     "groupId": "cfa1bab4-fb54-4c67-ac54-1f26765d5540"
     }
    },
    "grouping": {
-    "b20ac6c5-d852-435a-b454-4fabb717fa67": {
+    "0dd5485e-52fc-4e4a-81c6-ca9d078646d0": {
      "title": "Lydkvalitet",
-     "id": "b20ac6c5-d852-435a-b454-4fabb717fa67",
+     "id": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0",
      "references": [
       "e5230c1d-e001-49b4-a428-e365972a8400",
-      "3212118a-4b45-4d96-ba23-7e97d01db956",
+      "3212118a-4b45-4d26-ba23-7e97d01db956",
       "495d8b87-671a-4f4d-8898-650b04a390bf",
       "2f5c406c-50ee-463a-85b8-3cc5284f100b",
       "16a3a01f-5452-4938-86b0-fdaec27be6fc",
       "1771a3cf-b79e-480d-a72c-a09e2f4718e3",
       "69779970-20f7-49cb-ba69-147c410a9b9f",
       "d48d84a4-0d13-4c48-ac7a-3e1830dc1a1a",
-      "f9ce3eab-4863-4257-b049-bce7ea0d18f2",
       "34923d8d-99ef-4b61-b496-3fa3b521c3cd",
       "ae998607-82f8-439a-b06d-f8931f725cdd",
       "10a79560-28bc-420f-ab6f-70f625d3d4bc"
      ]
     },
-    "7ad640a6-aa4f-44b7-b135-ff0b35b0e79e": {
+    "9f743217-8cba-4933-9dc1-017113e6e19c": {
      "title": "Komfort og pasform",
-     "id": "7ad640a6-aa4f-44b7-b135-ff0b35b0e79e",
+     "id": "9f743217-8cba-4933-9dc1-017113e6e19c",
      "references": [
-      "43e78a72-32b5-4385-a171-96cc4d09cad2",
       "495d8b87-671a-4f4d-8898-650b04a390bf",
       "24837787-e27f-4740-aadd-52268aac81af",
-      "16a3a01f-5452-4938-86b0-fdaec27be6fc",
       "1771a3cf-b79e-480d-a72c-a09e2f4718e3",
       "69779970-20f7-49cb-ba69-147c410a9b9f",
       "d48d84a4-0d13-4c48-ac7a-3e1830dc1a1a",
@@ -376,11 +395,12 @@
       "b29223c5-537d-4d96-819d-12b83a0f8f07"
      ]
     },
-    "97bc9f7b-f00c-4407-91ca-5a1497b62ea5": {
-     "title": "Kabel",
-     "id": "97bc9f7b-f00c-4407-91ca-5a1497b62ea5",
+    "cfa1bab4-fb54-4c67-ac54-1f26765d5540": {
+     "title": "Kabel og byggekvalitet",
+     "id": "cfa1bab4-fb54-4c67-ac54-1f26765d5540",
      "references": [
-      "3212118a-4b45-4d96-ba23-7e97d01db956",
+      "43e78a72-32b5-4385-a171-96cc4d09cad2",
+      "3212118a-4b45-4d26-ba23-7e97d01db956",
       "495d8b87-671a-4f4d-8898-650b04a390bf",
       "69779970-20f7-49cb-ba69-147c410a9b9f",
       "d48d84a4-0d13-4c48-ac7a-3e1830dc1a1a",

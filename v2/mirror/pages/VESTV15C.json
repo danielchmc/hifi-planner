@@ -13,6 +13,23 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere",
+   "Fra beskrivelsen": "2-vejs coaxial basrefleks konstruktion med 2 x basport (front)"
+  },
+  "gallery": [
+   "690a5e72-f63b-49de-819d-c01b53eccfd3",
+   "93cd00d0-b534-4dda-9dbe-461cf59a2d4a",
+   "f6f5a717-72ef-4088-9bc4-bcf0918ec2c5",
+   "ccd201bb-d976-47ca-8109-dec5ec0c9ed0",
+   "4d07a255-c944-4f08-94b6-72c0f6d22912",
+   "ced2adad-4718-4e77-8aa8-b4fd9f59f033",
+   "9d4343b5-6d3e-4fe1-a2ae-6a15f5dbd80a",
+   "0e8b6462-d2ba-41c8-a6bf-adb254c7ecc6"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190205,
   "skuCode": "VESTV15C",
@@ -203,7 +220,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 177,
+     "availableQuantity": 173,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -511,59 +528,91 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTV15C leverer en varm, slagkraftig og meget dynamisk lyd med en medrivende livekoncert-karakter. Kraftfuld bas, klare detaljer og ubesværet lydtryk gør højttalerne særligt spændende til rock, elektronisk musik og fester, mens mange også roser lyden ved lav volumen. De store kabinetter, omhyggelig placering og til tider kraftig forstærkning skal tages i betragtning, og enkelte lyttere finder gengivelsen mindre raffineret eller mindre egnet til akustisk musik.",
+   "summary": "VESTV15C leverer en energisk, varm og meget dynamisk lyd med kraftig bas, høj lydstyrke og en overbevisende livekoncertfølelse. Musikken er fornøjelig ved både lav og meget høj lydstyrke, mens det store retrodesign og den festlige karakter især gør højttalerne attraktive til rock, elektronisk musik og intens musiklytning derhjemme. De vigtigste forbehold handler om størrelsen, placeringen, enkelte klanglige begrænsninger for meget analytiske lyttere samt behovet for passende forstærkerkraft i krævende opsætninger.",
    "headlines": {
-    "powerful, punchy sound with a live-concert feel": {
-     "sentimentAnalysis": "Anmeldelserne roser den dynamiske, engagerende og liveagtige lyd med kraftig fysisk gennemslagskraft.",
-     "simpleTitle": "Kraftfuld, slagkraftig lyd med livekoncertfølelse",
+    "deep, punchy bass and very high volume": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for kraftfuld bas, ren gengivelse ved høje niveauer og lydtryk til festbrug.",
+     "simpleTitle": "Dyb og punchy bas samt meget høj lydstyrke",
      "bias": "positive",
-     "key": "sound_power",
-     "groupId": "6633b32e-c7e8-4964-a5a2-00320714b1f7"
+     "key": "power",
+     "groupId": "e635e248-ee6f-4f6b-b636-7936272bf9c7"
     },
-    "clear, detailed and controlled presentation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver klare vokaler og diskant, detaljeret gengivelse, afbalanceret bas og forvrængningsfri afspilning ved høj lydstyrke.",
-     "simpleTitle": "Klar, detaljeret og kontrolleret gengivelse",
+    "warm, powerful sound with a live-concert feel": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en fyldig, klar og levende gengivelse med en overbevisende koncertatmosfære.",
+     "simpleTitle": "Varm og kraftfuld lyd med livekoncertfølelse",
      "bias": "positive",
-     "key": "sound_clarity",
-     "groupId": "6633b32e-c7e8-4964-a5a2-00320714b1f7"
+     "key": "sound",
+     "groupId": "4a75a25a-6f90-455b-a2e1-2623b1414004"
     },
-    "full, satisfying sound at low volume": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en fyldig, varm og behagelig lyd selv ved stille lytning.",
-     "simpleTitle": "Fyldig og tilfredsstillende lyd ved lav volumen",
+    "enjoyable and full sound even at low volume": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver, at de store højttalere bevarer fylde, varme og musikalitet ved stille aftenlytning.",
+     "simpleTitle": "Fyldig og fornøjelig lyd selv ved lav lydstyrke",
      "bias": "positive",
-     "key": "lowvolume_full",
-     "groupId": "c157a252-3be0-4b4f-aad9-67905533a617"
+     "key": "lowvolume",
+     "groupId": "f0444b78-c83f-4783-82a7-06eb9f894780"
     },
-    "exceptional value for the money": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange, at ydelse og musikglæde overstiger forventningerne til prisen.",
-     "simpleTitle": "Usædvanlig god værdi for pengene",
-     "bias": "positive",
-     "key": "value_exceptional",
-     "groupId": "be15d612-6c9c-42bb-9f42-e7d84d9e6292"
-    },
-    "less refined for some acoustic and critical listening": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne bemærker, at den livlige klang kan være mindre raffineret, mindre lineær eller mindre overbevisende med bestemte musikgenrer.",
-     "simpleTitle": "Mindre raffineret til noget akustisk og kritisk lytning",
+    "not ideal for analytical or highly refined listening": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne finder gengivelsen mindre egnet til klassisk musik, jazz, lineær eller meget analytisk lytning og bemærker en vis klangfarvning.",
+     "simpleTitle": "Ikke ideelle til analytisk eller meget finopløst lytning",
      "bias": "negative",
-     "key": "sound_limits",
-     "groupId": "6633b32e-c7e8-4964-a5a2-00320714b1f7"
+     "key": "sound",
+     "groupId": "4a75a25a-6f90-455b-a2e1-2623b1414004"
+    },
+    "large cabinets require space and careful placement": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det imponerende retrolook, men advarer om det store pladsbehov samt betydningen af korrekt højde og omhyggelig placering.",
+     "simpleTitle": "Store kabinetter kræver plads og omhyggelig placering",
+     "bias": "negative",
+     "key": "design",
+     "groupId": "eb90619b-585e-40b3-b4ac-dc3a44cc3582"
     }
    },
    "grouping": {
-    "6633b32e-c7e8-4964-a5a2-00320714b1f7": {
+    "e635e248-ee6f-4f6b-b636-7936272bf9c7": {
+     "title": "Bas og lydstyrke",
+     "id": "e635e248-ee6f-4f6b-b636-7936272bf9c7",
+     "references": [
+      "93f5b3de-f261-4894-99c1-151b597804c8",
+      "b56c89f6-47ac-4080-9781-d5fc56832ae8",
+      "9480ef04-7db6-4201-bc91-e84933f029ee",
+      "5fe75ce7-859d-44fc-a7f3-b1dcd8236f84",
+      "332bf3b8-ba0b-41e3-85fb-e4884492034f",
+      "19b6fa56-fd94-4144-aa8a-cda46d20c45e",
+      "4bbe64a3-cc96-46d1-b27d-6dd9f0624b71",
+      "73963aa3-f5ee-43ef-92e0-b8a438de2500",
+      "a668d813-1426-44ca-b44a-acdb61ee75b5",
+      "2474d265-436e-48b8-90a9-97cc5c680399",
+      "ad25c2b3-7597-404f-afb0-657212145a42",
+      "2f929410-3ba9-4db7-838f-53af66c726c3",
+      "68d043ce-cbeb-48ad-b2ba-820bc46cad9f",
+      "a8299949-1765-4c32-a065-dfe16087448f",
+      "f91a0cf2-eb6a-4fe8-968e-6b8a438f90fe",
+      "d7ecea62-e5e4-47fe-91f7-b58c5d32f2cf",
+      "11ecfaa9-e1f7-474c-81ca-07aca9b3b2c6",
+      "9fdc4703-be04-495a-af3a-be704ee98cf9",
+      "f9575d26-ac7f-4819-a23d-86b5529a3fd4",
+      "67bc68da-4fdb-468a-b6e2-ae10cf457aac",
+      "54982be9-7404-4bfd-8b53-1e570a7d4162",
+      "4f512706-0141-4afa-8728-1488ad837359",
+      "dbb2b832-d07b-4355-87e5-ba797f8d01fd",
+      "663c9209-d4a3-46ac-b36b-d128526e6a70",
+      "21d4c274-6be8-4cf7-9318-aa26dd0991d5",
+      "69076385-58de-4365-a054-5cdc0a0c09ca",
+      "d3302b2a-7be2-4a4f-b2d2-cedccf6d1a19",
+      "e49e07bb-11b1-4fc9-9575-32c220818772",
+      "b7e65566-57fc-4640-a62c-14feb7e0e39c",
+      "25fce40a-44a2-4a0f-98a6-46e7796943f4"
+     ]
+    },
+    "4a75a25a-6f90-455b-a2e1-2623b1414004": {
      "title": "Lydkvalitet",
-     "id": "6633b32e-c7e8-4964-a5a2-00320714b1f7",
+     "id": "4a75a25a-6f90-455b-a2e1-2623b1414004",
      "references": [
       "018c2278-a98e-48e3-b82b-844ad5fb8426",
       "983ba571-58b6-49f2-9757-3b884245c0e9",
       "5b5d5de7-7709-464f-bf62-b02f7533c24c",
-      "332bf3b8-ba0b-41e3-85fb-e4884492034f",
       "4bbe64a3-cc96-46d1-b27d-6dd9f0624b71",
       "d327cd7d-ff1d-4227-8ed8-edb972dffdce",
-      "f41bc6a0-2709-4c7e-abb6-2cd34c3adc87",
       "73963aa3-f5ee-43ef-92e0-b8a438de2500",
-      "2474d265-436e-48b8-90a9-97cc5c680399",
-      "ad25c2b3-7597-404f-afb0-657212145a42",
       "2f929410-3ba9-4db7-838f-53af66c726c3",
       "136e8c7e-f86f-4ddc-8aad-954624733367",
       "68d043ce-cbeb-48ad-b2ba-820bc46cad9f",
@@ -573,53 +622,47 @@
       "d7ecea62-e5e4-47fe-91f7-b58c5d32f2cf",
       "11ecfaa9-e1f7-474c-81ca-07aca9b3b2c6",
       "9fdc4703-be04-495a-af3a-be704ee98cf9",
-      "30ae5aee-72c4-4fc4-86be-468bb9f563e4",
       "d6b95e88-96aa-4a66-ae0d-f8d3b72e80ee",
-      "4f512706-0141-4afa-8728-1488ad837359",
-      "dbb2b832-d07b-4355-87e5-ba797f8d01fd",
       "663c9209-d4a3-46ac-b36b-d128526e6a70",
-      "21d4c274-6be8-4cf7-9318-aa26dd0991d5",
       "c4c33f16-d74d-4c55-a494-9668a6bcb80b",
       "69076385-58de-4365-a054-5cdc0a0c09ca",
       "d3302b2a-7be2-4a4f-b2d2-cedccf6d1a19",
       "e49e07bb-11b1-4fc9-9575-32c220818772",
       "8569c02d-b606-4f06-a5f0-9bb7d8b19aa9",
-      "052d189a-104c-4879-8ea2-8ce5a2f3581e",
       "14390a7f-a485-4f45-8ee2-6b96bf87bc14",
       "c12cad9d-87e5-4b72-93ed-0f9f003407f8",
-      "75979482-7239-44b8-b571-3f5d9a52af82",
       "9571b6da-d18f-45d0-bdc2-65ef2375597a",
       "b7e65566-57fc-4640-a62c-14feb7e0e39c",
-      "65335897-5396-4a67-a3dd-7466437d96b2",
-      "14c94808-9ef3-4b85-a816-f9629ed201d0",
       "25fce40a-44a2-4a0f-98a6-46e7796943f4"
      ]
     },
-    "c157a252-3be0-4b4f-aad9-67905533a617": {
-     "title": "Musik ved lav volumen",
-     "id": "c157a252-3be0-4b4f-aad9-67905533a617",
+    "f0444b78-c83f-4783-82a7-06eb9f894780": {
+     "title": "Musik ved lav lydstyrke",
+     "id": "f0444b78-c83f-4783-82a7-06eb9f894780",
      "references": [
       "9480ef04-7db6-4201-bc91-e84933f029ee",
       "73963aa3-f5ee-43ef-92e0-b8a438de2500",
       "2474d265-436e-48b8-90a9-97cc5c680399",
       "d7ecea62-e5e4-47fe-91f7-b58c5d32f2cf",
-      "54982be9-7404-4bfd-8b53-1e570a7d4162",
       "dbb2b832-d07b-4355-87e5-ba797f8d01fd",
+      "54982be9-7404-4bfd-8b53-1e570a7d4162",
       "69076385-58de-4365-a054-5cdc0a0c09ca",
-      "14390a7f-a485-4f45-8ee2-6b96bf87bc14"
+      "14390a7f-a485-4f45-8ee2-6b96bf87bc14",
+      "c12cad9d-87e5-4b72-93ed-0f9f003407f8"
      ]
     },
-    "be15d612-6c9c-42bb-9f42-e7d84d9e6292": {
-     "title": "Værdi for pengene",
-     "id": "be15d612-6c9c-42bb-9f42-e7d84d9e6292",
+    "eb90619b-585e-40b3-b4ac-dc3a44cc3582": {
+     "title": "Design og størrelse",
+     "id": "eb90619b-585e-40b3-b4ac-dc3a44cc3582",
      "references": [
-      "4d673f7d-8d60-4025-b31e-7d25aad521e0",
-      "a8299949-1765-4c32-a065-dfe16087448f",
+      "018c2278-a98e-48e3-b82b-844ad5fb8426",
+      "136e8c7e-f86f-4ddc-8aad-954624733367",
+      "68d043ce-cbeb-48ad-b2ba-820bc46cad9f",
+      "b0f698b3-cefe-451c-bdb8-3c57983618fc",
       "607b3c1e-6aed-47af-980c-b5b26646c379",
-      "b88542f4-c4fd-4a1b-8895-fcfa604739c6",
+      "30ae5aee-72c4-4fc4-86be-468bb9f563e4",
       "6f4708ea-5003-49f8-ab39-2322caf0f7a8",
-      "d6b95e88-96aa-4a66-ae0d-f8d3b72e80ee",
-      "4f512706-0141-4afa-8728-1488ad837359"
+      "329181a9-9616-449c-9ea4-06a874980b53"
      ]
     }
    },

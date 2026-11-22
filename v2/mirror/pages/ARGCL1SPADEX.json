@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "819839e6-04e7-4260-b2fd-cb8bcce0e707"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 165257,
   "skuCode": "ARGCL1SPADEX",
@@ -122,80 +129,74 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGCL1SPADEX-spadestikkene roses generelt for solid konstruktion, elegant udseende og pålidelige forbindelser. Montering og tilslutning af kabler er som regel nemt, med god isolering og en ren, sikker pasform, der understøtter et klart og punchy signal. Den største bekymring er, at de små skruer kan knække ved for hård tilspænding, mens nogle brugere synes, at spaderne er større end forventet.",
+   "summary": "Disse spadestik kombinerer et stilfuldt, solidt design med nem kabeltilslutning og et sikkert greb. De store, veludførte kontakter passer især godt til højttalerkabinetter og understøtter en ren og stabil signalvej. Den største svaghed er de skrøbelige skruer, som kan knække ved for hård tilspænding, så omhyggelig montering er vigtig.",
    "headlines": {
-    "sturdy, attractive construction": {
-     "sentimentAnalysis": "Stikkene beskrives gentagne gange som vellavede, stabile, attraktive og gode til prisen.",
-     "simpleTitle": "Solid og attraktiv konstruktion",
+    "solid, stylish construction": {
+     "sentimentAnalysis": "Stikkene roses gentagne gange for deres flotte udseende, solide konstruktion og eksklusive kvalitet.",
+     "simpleTitle": "Solid og stilfuld konstruktion",
      "bias": "positive",
-     "key": "build",
-     "groupId": "379e0926-5151-4226-a03a-c03b667077c1"
+     "key": "build-quality",
+     "groupId": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7"
+    },
+    "screws can break when overtightened": {
+     "sentimentAnalysis": "Flere anmeldelser peger på svage skruer som det største problem med pålideligheden, især ved lidt for hård tilspænding.",
+     "simpleTitle": "Skruer kan knække ved for hård tilspænding",
+     "bias": "negative",
+     "key": "build-quality",
+     "groupId": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7"
     },
     "easy cable connection": {
-     "sentimentAnalysis": "Stikkene anses for nemme at montere og tilslutte med et sikkert greb og god isolering.",
+     "sentimentAnalysis": "Stikkene opleves som nemme at montere og praktiske til kabeltilslutning.",
      "simpleTitle": "Nem kabeltilslutning",
      "bias": "positive",
      "key": "installation",
-     "groupId": "8a7d8a12-0611-4ed4-a92d-e2b9babf459a"
+     "groupId": "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c"
     },
-    "small screws can break": {
-     "sentimentAnalysis": "Flere anmeldelser advarer om, at de små skruer er lavet af svagt metal og kan knække under tilspænding, selv uden overdreven kraft.",
-     "simpleTitle": "Små skruer kan knække",
-     "bias": "negative",
-     "key": "screw-durability",
-     "groupId": "c4115917-fb3c-456e-9739-7e2c1fe1efeb"
-    },
-    "spades can be too large": {
-     "sentimentAnalysis": "Spaderne fungerer godt, men kan være større end ideelt til noget udstyr eller visse anvendelser.",
-     "simpleTitle": "Spaderne kan være for store",
+    "may be too large for some equipment": {
+     "sentimentAnalysis": "Begge anmeldelser om størrelsen finder spadestikkene lidt store, selv om ydeevnen er acceptabel eller god.",
+     "simpleTitle": "Kan være for store til visse enheder",
      "bias": "negative",
      "key": "size-fit",
-     "groupId": "58a92490-8a4b-4ca3-96dc-f73cdf4c2efa"
+     "groupId": "e45caaa9-094c-486f-8156-6bb2c1e47352"
     }
    },
    "grouping": {
-    "379e0926-5151-4226-a03a-c03b667077c1": {
-     "title": "Byggekvalitet og udseende",
-     "id": "379e0926-5151-4226-a03a-c03b667077c1",
+    "6b0c4529-a61f-4716-8d4e-1fc21ce542a7": {
+     "title": "Byggekvalitet",
+     "id": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7",
      "references": [
       "a040f9da-107a-4152-a6a6-c7c6a7d0cdcb",
+      "9e6a9525-bdd5-4569-b4f8-6ee22d909a27",
       "a2a68573-0089-41da-b02c-f94b3cafe2ae",
       "7ebc84a4-067b-415b-986c-32e5861cb8c3",
       "3b9c14da-bbb0-4c4f-99f1-0a0580b96617",
       "a82771af-86d5-4eaa-a5ab-8b6688fea581",
       "90b66a86-d0b5-49a9-9aed-58a14deb902c",
+      "a36eaa00-2e24-4b25-8c2f-610ad0031943",
+      "b09062e4-82eb-44e6-bc96-2bec93986419",
+      "5bdac6b6-4f9f-402d-8b37-7fa8c783b94d",
+      "f222feec-05c4-43db-92dc-2915e12eeb46",
       "7c840f65-8f63-4c08-890b-d2b4951db524",
+      "923f6169-0f31-410c-a5d6-63f107a3ec5b",
+      "8578ced1-e35b-4421-b949-722d10224340",
       "c504c2f8-a2de-4791-9853-4f17c38b1065",
       "f960aa93-f0a5-48e5-8604-60c548d9c301"
      ]
     },
-    "c4115917-fb3c-456e-9739-7e2c1fe1efeb": {
-     "title": "Skruernes holdbarhed",
-     "id": "c4115917-fb3c-456e-9739-7e2c1fe1efeb",
-     "references": [
-      "1f60ec4a-958a-4526-bb95-0cb2cc0cec2c",
-      "a2a68573-0089-41da-b02c-f94b3cafe2ae",
-      "a36eaa00-2e24-4b25-8c2f-610ad0031943",
-      "5bdac6b6-4f9f-402d-8b37-7fa8c783b94d",
-      "923f6169-0f31-410c-a5d6-63f107a3ec5b"
-     ]
-    },
-    "8a7d8a12-0611-4ed4-a92d-e2b9babf459a": {
-     "title": "Montering og tilslutning",
-     "id": "8a7d8a12-0611-4ed4-a92d-e2b9babf459a",
-     "references": [
-      "b73a31c8-e212-4c55-aaec-f67b3d567c73",
-      "a82771af-86d5-4eaa-a5ab-8b6688fea581",
-      "5bdac6b6-4f9f-402d-8b37-7fa8c783b94d",
-      "f960aa93-f0a5-48e5-8604-60c548d9c301"
-     ]
-    },
-    "58a92490-8a4b-4ca3-96dc-f73cdf4c2efa": {
+    "e45caaa9-094c-486f-8156-6bb2c1e47352": {
      "title": "Størrelse og pasform",
-     "id": "58a92490-8a4b-4ca3-96dc-f73cdf4c2efa",
+     "id": "e45caaa9-094c-486f-8156-6bb2c1e47352",
      "references": [
       "16b1906a-10c2-41e6-b94b-824f4edfdec9",
       "7adaa468-0c5e-4977-8b42-5a4b98a1acda"
+     ]
+    },
+    "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c": {
+     "title": "Montering",
+     "id": "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c",
+     "references": [
+      "b73a31c8-e212-4c55-aaec-f67b3d567c73",
+      "f960aa93-f0a5-48e5-8604-60c548d9c301"
      ]
     }
    },

@@ -8,6 +8,25 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Analog RCA",
+   "RIAA-forstærker": "Ja"
+  },
+  "gallery": [
+   "ab6dad98-bc39-43fb-9a48-230a9e708527",
+   "d7ec38e2-3a56-4457-82c3-ed66cb5caff7",
+   "eaf5cc02-d982-4cfe-adf3-3a0155e896c6",
+   "9bba5740-4916-46a9-9424-aed317bfdde1",
+   "f28920e1-4ba2-4d40-a1e5-7f688c716dfe",
+   "bc7de1a7-67f0-4214-896e-cc56e21aa527",
+   "bef60565-5c5c-449a-a895-7ad0ac125c07",
+   "2e6de263-f7d1-42e4-8cf5-83c14f4f852f",
+   "884da883-f849-4e45-837d-6869beeced59",
+   "3b4ae2ec-8baf-4760-ac24-cfae473700a4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 242085,
   "skuCode": "ARGTT4MK2",
@@ -211,7 +230,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1033,
+     "availableQuantity": 1026,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -348,7 +367,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 352,
+     "availableQuantity": 351,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -494,7 +513,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1046,
+     "availableQuantity": 1042,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -619,7 +638,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 488,
+     "availableQuantity": 487,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -751,48 +770,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon TT-4 MK2 roses bredt for sin varme, detaljerede og medrivende lyd, solide byggekvalitet, attraktive minimalistiske design og gode værdi for pengene. Ortofon 2M Blue-pickuppen og den indbyggede RIAA-forforstærker fremhæves ofte og gør afspilleren nem at integrere i forskellige anlæg. Den mest gennemgående kritik er manglen på automatisk start/stop eller løft af tonearmen, mens opsætningen kræver lidt omhu. Den varme, slagkraftige og detaljerige gengivelse giver gamle plader nyt liv.",
+   "summary": "Argon TT-4 MK2 roses bredt for sin varme, detaljerede og medrivende lyd, især sammen med Ortofon 2M Blue-pickuppen. Den solide konstruktion, det elegante minimalistiske design og den gode værdi for pengene gør den til en meget tilfredsstillende opgradering for både nye og erfarne vinyllyttere. Opsætningen er som regel overkommelig, men manglen på automatisk løft eller stop ved pladens slutning kritiseres ofte, og enkelte nævner mindre mangler ved opsætning eller tilbehør.",
    "headlines": {
-    "stylish, solid construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver ofte pladespilleren som attraktiv, minimalistisk, velbygget, stabil og så flot, at den pynter i rummet.",
-     "simpleTitle": "Stilfuld og solid konstruktion",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "50881957-8c21-4602-87af-a7c6ab4229b2"
-    },
-    "missing automatic end-of-record stop": {
-     "sentimentAnalysis": "Mange ejere ser manglen på automatisk stop eller løft af tonearmen som den tydeligste brugsmæssige ulempe, fordi pladen fortsætter med at dreje og kræver opsyn.",
-     "simpleTitle": "Manglende automatisk stop ved pladeslut",
-     "bias": "negative",
-     "key": "autostop",
-     "groupId": "b155b962-6d1c-4eda-b289-3ed6a892eee7"
-    },
     "warm, detailed and immersive sound": {
-     "sentimentAnalysis": "Pladespilleren roses gentagne gange for varm, klar, dyb, dynamisk og meget detaljeret gengivelse, der afslører nye nuancer i velkendte plader.",
+     "sentimentAnalysis": "Anmelderne beskriver gennemgående gengivelsen som varm, klar, rummelig, dynamisk og meget detaljeret. Ortofon 2M Blue får ofte æren for at hente flere informationer frem fra velkendte plader.",
      "simpleTitle": "Varm, detaljeret og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "22252b26-ce17-4492-b374-8bbe97c66ff6"
+     "groupId": "bd602e09-e46d-4023-9247-ef41211f1eb1"
     },
-    "excellent Ortofon 2M Blue cartridge": {
-     "sentimentAnalysis": "Den medfølgende Ortofon 2M Blue-pickup ses som en vigtig årsag til den præcise, detaljerede og levende lyd, og muligheden for opgradering værdsættes også.",
-     "simpleTitle": "Fremragende Ortofon 2M Blue-pickup",
+    "no automatic stop at the end of a record": {
+     "sentimentAnalysis": "En tilbagevendende ulempe er den fuldt manuelle funktion ved pladens slutning: Tonearmen løfter sig ikke, og pladetallerkenen bliver ved med at dreje. Derfor forventer flere brugere automatisk stop i denne prisklasse.",
+     "simpleTitle": "Ingen automatisk stop ved pladens slutning",
+     "bias": "negative",
+     "key": "auto-stop",
+     "groupId": "616e0dea-307a-45fe-825d-c512b9db9c73"
+    },
+    "premium construction and stylish design": {
+     "sentimentAnalysis": "Pladespilleren beskrives gentagne gange som solid, velbygget, flot og minimalistisk, og materialer og finish gør den velegnet til at stå fremme i hjemmet.",
+     "simpleTitle": "Eksklusiv konstruktion og stilfuldt design",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "22252b26-ce17-4492-b374-8bbe97c66ff6"
+     "key": "design",
+     "groupId": "3e39f2f9-7aac-4964-b812-daa64b8c95f3"
     },
     "setup is straightforward with guidance": {
-     "sentimentAnalysis": "Tydelige vejledninger, videoer og hjælp i butikken gør opsætning og daglig betjening overskuelig for både begyndere og erfarne brugere.",
+     "sentimentAnalysis": "De fleste kommentarer beskriver samling og daglig betjening som nem, især når manualen, opsætningsvideoen eller hjælp fra butikken følges.",
      "simpleTitle": "Enkel opsætning med vejledning",
      "bias": "positive",
      "key": "setup",
-     "groupId": "c082e142-7c6b-4e20-a9f4-89302da7817b"
+     "groupId": "1f38de88-202e-451a-a6cb-0af70a3d466a"
     }
    },
    "grouping": {
-    "22252b26-ce17-4492-b374-8bbe97c66ff6": {
+    "bd602e09-e46d-4023-9247-ef41211f1eb1": {
      "title": "Lydkvalitet",
-     "id": "22252b26-ce17-4492-b374-8bbe97c66ff6",
+     "id": "bd602e09-e46d-4023-9247-ef41211f1eb1",
      "references": [
       "7033765f-180b-4386-b7e1-2df11cd46431",
       "cc1a85ca-3cb6-45a1-9d6a-ae78b36e93f4",
@@ -809,11 +821,15 @@
       "6fa438c4-e459-404c-9012-8d0638a7861b",
       "a9916392-2361-45a5-a8b4-e1db7599780b",
       "c3a4ef4a-0e73-46c9-942b-a9d4eeaa50e8",
+      "e0414f16-bfb7-4f37-9138-a3bdf8578144",
       "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
+      "abd632dd-735c-4767-90a3-779d5d0437f0",
       "f75ffa31-1bd2-4e8c-908a-c342dbadf531",
       "75a5d0be-e1e3-46ec-8fc0-dc5f0b0e02ec",
+      "b28f9267-4a9b-4f90-8027-df0997654b5a",
       "b1abdb2c-68cb-4f1c-9b50-1dfe097a28b6",
       "bd25ef92-4782-4b64-b988-897bd157eee4",
+      "10b67826-8fb8-4052-9026-9b6083f8c9d8",
       "edcb4950-df1d-44f1-8d89-eb6b0154ef67",
       "20af6f6b-c1ca-45a0-ae55-e2196649f448",
       "08b50ffd-a183-4d6e-bcd0-6b7ce9d15787",
@@ -822,21 +838,27 @@
       "4deaa2b6-8d55-482f-8947-abbf699d56b3",
       "a37ad14d-ad57-4789-8330-91c7734fef74",
       "8f6139c9-a5ac-45a9-a55c-6862eb71e721",
+      "0faea194-ba5f-48d4-91ca-a7917bc6fac5",
       "04db8b0d-b3b8-4490-bab0-bf956a0c8d53",
       "df599e3b-00d6-4ba7-b2af-b33fffab6675",
       "574d73f2-9eb1-4b01-acdb-4f0fd91227df",
+      "eb0418a4-a51c-481f-8359-9308d13057b8",
       "4342c046-acab-4d3e-a5f7-736b2d5a2d2a",
       "6264d262-1bc7-41f7-84e8-0b2d21fe2dbb",
+      "3dfb5d80-f094-4d50-8941-992d5eb6fabb",
       "84934be6-20fd-45e6-9473-123e45fc60ff",
       "6551bf05-0f9c-4fd8-9918-653f42c2315a",
       "cbbd57d7-9e4f-4097-8fcb-109665cff8a5",
       "da417329-bcd3-4b17-b9b7-925b81824aae",
+      "1fdcc1f9-fc99-4678-ab60-f22cd6f9b9ec",
       "13d9379d-319c-4c5d-831e-c9e98c12c690",
       "89958df1-a84e-4f6d-83ac-71c8f1eb4a5c",
-      "810c4914-6417-4ff5-b52b-d3dae74a455f",
+      "810c491c-6417-4ff5-b52b-d3dae74a455f",
       "1516b5cf-2cea-46f9-b46e-b2507af48ce7",
+      "47323d38-af4e-4cdb-9e02-42e969f7018b",
       "a8a31f96-bdea-4895-a2c4-065a0551f834",
       "8ac3e92e-79c4-4ddd-a12d-a460da741e45",
+      "20aded77-be25-4921-a9b8-75d313ee3c54",
       "f30d3905-7193-4368-9311-20efdf75f582",
       "4680e70c-9abf-45dc-9a82-43c342fd5e96",
       "b20934e3-cb99-412f-a8f0-0b5834345ef0",
@@ -847,15 +869,12 @@
       "ae5ef9f3-bc5e-4f50-b4a6-fd1022874967",
       "4bf08a23-d927-4e2c-aa57-beb586e94c50",
       "0dcd9a14-f730-4bb0-9045-4e245f0320fe",
-      "dd832411-ecb2-4efb-9d02-42bcc9985212",
-      "595c9937-0f06-48b4-8423-a09061135c1b",
-      "8d843bd9-4144-4d28-a574-db261ed5f5b7",
-      "6fe895a5-cd07-47c4-9682-341a3fb34268"
+      "dd832411-ecb2-4efb-9d02-42bcc9985212"
      ]
     },
-    "50881957-8c21-4602-87af-a7c6ab4229b2": {
+    "3e39f2f9-7aac-4964-b812-daa64b8c95f3": {
      "title": "Design og byggekvalitet",
-     "id": "50881957-8c21-4602-87af-a7c6ab4229b2",
+     "id": "3e39f2f9-7aac-4964-b812-daa64b8c95f3",
      "references": [
       "7033765f-180b-4386-b7e1-2df11cd46431",
       "c67a49cc-e540-4afe-88f4-362c474ca78e",
@@ -864,54 +883,66 @@
       "6857eb68-ee33-4964-92fd-70bc2e1deda0",
       "bdb9d836-d47e-4610-b260-98668ea6cc15",
       "6fa438c4-e459-404c-9012-8d0638a7861b",
+      "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
+      "abd632dd-735c-4767-90a3-779d5d0437f0",
       "c9f6023c-1e25-4677-a024-ff1b21ac15e0",
       "7dd886a2-9c12-4954-9939-d648f20c6fd2",
       "bf24f027-a27d-4dd5-be45-af0d7f0fb0fc",
       "33ffd30d-1b9e-4b7a-b8cf-93f16159f9f0",
+      "bd25ef92-4782-4b64-b988-897bd157eee4",
       "10b67826-8fb8-4052-9026-9b6083f8c9d8",
       "f893aca3-fd95-450d-9ae3-877b3648840e",
       "edcb4950-df1d-44f1-8d89-eb6b0154ef67",
       "a3cb0a40-dfd8-4375-a90e-cbb96b5e6d23",
+      "8f6139c9-a5ac-45a9-a55c-6862eb71e721",
+      "04db8b0d-b3b8-4490-bab0-bf956a0c8d53",
       "4342c046-acab-4d3e-a5f7-736b2d5a2d2a",
       "3dfb5d80-f094-4d50-8941-992d5eb6fabb",
+      "810c491c-6417-4ff5-b52b-d3dae74a455f",
       "a8a31f96-bdea-4895-a2c4-065a0551f834",
       "8ac3e92e-79c4-4ddd-a12d-a460da741e45",
       "20aded77-be25-4921-a9b8-75d313ee3c54",
       "50f8787e-a440-401a-9195-b66d832bf975",
-      "b20934e3-cb99-412f-a8f0-0b5834345ef0",
+      "f30d3905-7193-4368-9311-20efdf75f582",
+      "448283fc-b45b-4282-9315-dc4cab3f6950",
+      "155a9d91-a09f-4799-8673-969473327108",
       "586d53b8-64ec-4350-96bf-3fd4c7b94f22",
       "998fa0b6-d874-4a0e-92c4-45dac17fde9f",
-      "4bf08a23-d927-4e2c-aa57-beb586e94c50"
+      "4bf08a23-d927-4e2c-aa57-beb586e94c50",
+      "0dcd9a14-f730-4bb0-9045-4e245f0320fe",
+      "1f1f1404-98ac-4b01-98e5-cd3d2c04a256",
+      "b20934e3-cb99-412f-a8f0-0b5834345ef0"
      ]
     },
-    "c082e142-7c6b-4e20-a9f4-89302da7817b": {
+    "1f38de88-202e-451a-a6cb-0af70a3d466a": {
      "title": "Opsætning og brugervenlighed",
-     "id": "c082e142-7c6b-4e20-a9f4-89302da7817b",
+     "id": "1f38de88-202e-451a-a6cb-0af70a3d466a",
      "references": [
       "c67a49cc-e540-4afe-88f4-362c474ca78e",
       "7e2d367b-ae36-4476-b9e4-c58ebb9ac059",
+      "39eb5ea7-c46d-4628-a541-c7d91a076889",
       "e0414f16-bfb7-4f37-9138-a3bdf8578144",
       "89a772a9-8b97-46aa-8b1f-bda97d9037eb",
+      "c9f6023c-1e25-4677-a024-ff1b21ac15e0",
       "df2ddaf8-5a79-4f63-a8bc-9418b85ba9d6",
-      "bdf677aa-31b2-406c-90e8-6d83f48ae4eb",
-      "20af6f6b-c1ca-45a0-ae55-e2196649f448",
+      "73792d4b-7c91-4b71-86b2-f3a34e268f34",
       "60990910-1e89-456a-84df-4653c6b32e6b",
+      "574d73f2-9eb1-4b01-acdb-4f0fd91227df",
       "41543028-0e10-4a3f-96d7-504c5a6e1753",
       "df599e3b-00d6-4ba7-b2af-b33fffab6675",
-      "574d73f2-9eb1-4b01-acdb-4f0fd91227df",
-      "e0414f16-bfb7-4f37-9138-a3bdf8578144",
       "6551bf05-0f9c-4fd8-9918-653f42c2315a",
-      "810c4914-6417-4ff5-b52b-d3dae74a455f",
-      "20aded77-be25-4921-a9b8-75d313ee3c54",
+      "7b74832d-b723-4e25-898f-f4dc0d38d23a",
+      "47323d38-af4e-4cdb-9e02-42e969f7018b",
+      "229b7571-d60c-44a9-bef7-6582bada48e0",
       "77dede7a-1770-4534-b51d-247bad40898d",
+      "20aded77-be25-4921-a9b8-75d313ee3c54",
       "f30d3905-7193-4368-9311-20efdf75f582",
-      "dd832411-ecb2-4efb-9d02-42bcc9985212",
-      "6fe895a5-cd07-47c4-9682-341a3fb34268"
+      "dd832411-ecb2-4efb-9d02-42bcc9985212"
      ]
     },
-    "b155b962-6d1c-4eda-b289-3ed6a892eee7": {
-     "title": "Automatisk start/stop",
-     "id": "b155b962-6d1c-4eda-b289-3ed6a892eee7",
+    "616e0dea-307a-45fe-825d-c512b9db9c73": {
+     "title": "Automatisk stop ved pladens slutning",
+     "id": "616e0dea-307a-45fe-825d-c512b9db9c73",
      "references": [
       "41a63134-1331-4232-85d2-b455f57317d5",
       "74be34da-22d1-4e67-a8b7-922b71e7d1f1",
@@ -921,11 +952,11 @@
       "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
       "e09b9f31-da6f-4ad7-8a63-8fd40987ac01",
       "215fff36-c4ce-47f7-8824-1608a3283455",
-      "eb0418a4-a51c-481f-8359-9308d13057b8",
       "8cf3e8b0-e314-4a23-ba48-5bf95300be83",
       "47323d38-af4e-4cdb-9e02-42e969f7018b",
-      "76e5817c-2e49-4a52-b26f-4b9ac4ad44bb",
+      "eb0418a4-a51c-481f-8359-9308d13057b8",
       "448283fc-b45b-4282-9315-dc4cab3f6950",
+      "76e5817c-2e49-4a52-b26f-4b9ac4ad44bb",
       "6fe895a5-cd07-47c4-9682-341a3fb34268"
      ]
     }

@@ -13,6 +13,18 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "3af0a962-f220-4f64-a3c2-f8c4738fd4b2",
+   "a12f59cf-11a8-44d5-a3a0-3354f7061e37",
+   "3e0b4768-4b3b-4716-9477-8edff943698c",
+   "cf86a6f9-b16b-40d4-a7b9-bfa8b9a6329a",
+   "ce46372f-576f-486a-8aba-29186ce90de9",
+   "f2013ea2-5429-43ea-8b11-ff5fff77016c"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 283900,
   "skuCode": "KEFXIO-KW2-KUBE10MIE",
@@ -186,7 +198,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 6,
+        "availableQuantity": 3,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.495,-",
@@ -198,63 +210,49 @@
      ],
      "parentProductCode": "KEFKUBE10MIE",
      "reviews": {
-      "summary": "KEF Kube 10 MIE leverer varm, dyb og stramt kontrolleret bas, som giver musik, film og gaming mere punch og en medrivende dimension uden at blive buldrende. Den problemfri kombination med KEF-højttalere, den solide premium-konstruktion og de nyttige justeringsmuligheder gør subwooferen til en alsidig opgradering, mens den betydelige størrelse kræver gennemtænkt placering. Samlet set er Kube 10 MIE et meget tilfredsstillende og prisvenligt valg til en kraftfuld, men raffineret basoplevelse.",
+      "summary": "KEF Kube 10 MIE leverer varm, dyb og punchy bas, som giver både musik og film et medrivende fundament uden at lyde buldrende. Subwooferen integrerer særligt godt med KEF-systemer og giver en eksklusiv oplevelse til en attraktiv pris. Fleksible indstillingsmuligheder og stabil trådløs forbindelse gør brugen nemmere, mens kabinettets størrelse kræver lidt plads ved placering.",
       "headlines": {
-       "deep, tight and powerful bass": {
-        "sentimentAnalysis": "Subwooferen roses for dyb, kontrolleret og slagkraftig bas, der supplerer hovedhøjttalerne uden at blive buldrende.",
-        "simpleTitle": "Dyb, stram og kraftfuld bas",
+       "a strong match for KEF speakers": {
+        "sentimentAnalysis": "Subwooferen roses for at integrere naturligt med flere KEF-højttalersystemer og fuldende deres lyd.",
+        "simpleTitle": "Passer fremragende til KEF-højttalere",
         "bias": "positive",
-        "key": "deep-tight-powerful-bass",
-        "groupId": "eecdc0be-5e33-4ffb-a162-bb21ba1cf53a"
+        "key": "kef-integration",
+        "groupId": "54a7c333-18fd-4716-b51f-c5ea517f328a"
        },
-       "immersive for music, films and gaming": {
-        "sentimentAnalysis": "Den ekstra bas fungerer meget effektivt til film, musik og gaming og skaber en mere komplet og medrivende gengivelse.",
-        "simpleTitle": "Medrivende til musik, film og gaming",
+       "deep, tight bass": {
+        "sentimentAnalysis": "Bassen beskrives som kraftfuld, dyb og kontrolleret og tilfører tyngde uden at blive dominerende eller buldrende.",
+        "simpleTitle": "Dyb og stram bas",
         "bias": "positive",
-        "key": "immersive-use",
-        "groupId": "eecdc0be-5e33-4ffb-a162-bb21ba1cf53a"
+        "key": "deep-tight-bass",
+        "groupId": "5dbd2fb5-cff0-41f9-933a-3119322b866f"
        },
-       "seamless match with KEF speakers": {
-        "sentimentAnalysis": "Kube 10 MIE opfattes som et naturligt og effektivt supplement til flere KEF-højttalersystemer.",
-        "simpleTitle": "Perfekt match med KEF-højttalere",
+       "immersive performance for music and films": {
+        "sentimentAnalysis": "Subwooferen værdsættes som en alsidig tilføjelse, der forbedrer både musikoplevelsen og den filmiske indlevelse.",
+        "simpleTitle": "Medrivende gengivelse til musik og film",
         "bias": "positive",
-        "key": "kef-match",
-        "groupId": "33aa18f2-c596-48d4-968a-3eaa7c29c54b"
-       },
-       "flexible adjustment and room adaptation": {
-        "sentimentAnalysis": "Justeringsmulighederne og den automatiske DSP-baserede rumtilpasning værdsættes, fordi de hjælper med at optimere lyden i forskellige opsætninger.",
-        "simpleTitle": "Fleksibel justering og rumstilpasning",
-        "bias": "positive",
-        "key": "flexible-adjustment",
-        "groupId": "846193d9-e9e2-4dba-b90a-2fc680dd300b"
+        "key": "music-film-performance",
+        "groupId": "5dbd2fb5-cff0-41f9-933a-3119322b866f"
        }
       },
       "grouping": {
-       "eecdc0be-5e33-4ffb-a162-bb21ba1cf53a": {
+       "5dbd2fb5-cff0-41f9-933a-3119322b866f": {
         "title": "Lydkvalitet",
-        "id": "eecdc0be-5e33-4ffb-a162-bb21ba1cf53a",
+        "id": "5dbd2fb5-cff0-41f9-933a-3119322b866f",
         "references": [
+         "f065283d-6391-4b7b-ba26-0f061d784c26",
          "9fd73972-f0ef-4c1f-9536-c52b92662d1c",
          "6f4cf9f5-2d56-4194-9556-afa1d9e69abe",
          "0d73cfde-697d-4c48-a307-447b0a72618f",
          "5b74e8c0-ebf2-43b3-8c1a-890f2712f288"
         ]
        },
-       "33aa18f2-c596-48d4-968a-3eaa7c29c54b": {
-        "title": "Integration i KEF-systemer",
-        "id": "33aa18f2-c596-48d4-968a-3eaa7c29c54b",
+       "54a7c333-18fd-4716-b51f-c5ea517f328a": {
+        "title": "Systemintegration",
+        "id": "54a7c333-18fd-4716-b51f-c5ea517f328a",
         "references": [
          "9fd73972-f0ef-4c1f-9536-c52b92662d1c",
          "0d73cfde-697d-4c48-a307-447b0a72618f",
          "5b74e8c0-ebf2-43b3-8c1a-890f2712f288"
-        ]
-       },
-       "846193d9-e9e2-4dba-b90a-2fc680dd300b": {
-        "title": "Justeringsmuligheder",
-        "id": "846193d9-e9e2-4dba-b90a-2fc680dd300b",
-        "references": [
-         "f065283d-6391-4b7b-ba26-0f061d784c26",
-         "0d73cfde-697d-4c48-a307-447b0a72618f"
         ]
        }
       },

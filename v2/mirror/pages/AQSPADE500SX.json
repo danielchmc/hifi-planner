@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5332e678-48a1-4cdc-bb06-61f2b8b4b75a"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 178713,
   "skuCode": "AQSPADE500SX",
@@ -107,12 +114,11 @@
      "productCode": "AQSPADE500S"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

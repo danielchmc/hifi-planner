@@ -13,6 +13,15 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "OBS: Hi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "0f6f310a-e10a-4419-b007-5d9e80451c6c"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 90,
   "skuCode": "ORTSTYLUS10X",
@@ -140,8 +149,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 50,
+     "numberOfStoresExperience": 13,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -185,66 +194,61 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS10X leverer en varm, detaljeret og punchy lyd med en tydeligt hørbar forbedring i forhold til enkle eller originale nåle. Opgraderingen giver kompatible pladespillere nyt liv og en medrivende lytteoplevelse, mens den enkle montering og den gode værdi gør produktet endnu mere attraktivt. Pålidelig levering og hjælpsom service fuldender det meget positive indtryk.",
+   "summary": "ORTSTYLUS10X leverer en varm, detaljeret og slagkraftig lyd og giver pladespillere en tydeligt hørbar opgradering i forhold til simple eller slidte nåle. Den nemme montering, gode kompatibilitet og fornuftige pris gør nålen til en overbevisende erstatning til kompatible systemer. Hurtig levering og venlig service styrker det allerede meget positive indtryk.",
    "headlines": {
-    "a worthwhile turntable upgrade": {
-     "sentimentAnalysis": "Produktet opfattes konsekvent som en værdifuld opgradering af kompatible pladespillere med god værdi for pengene.",
-     "simpleTitle": "En værdifuld opgradering af pladespilleren",
+    "clear, impressive sound improvement": {
+     "sentimentAnalysis": "Nålen roses for at levere en tydeligt bedre, fremragende og meget behagelig lyd end tidligere eller simple alternativer.",
+     "simpleTitle": "Klar og imponerende lydforbedring",
      "bias": "positive",
-     "key": "upgrade-value",
-     "groupId": "ac465036-6e6e-4257-b348-38566e552b3b"
+     "key": "sound_quality",
+     "groupId": "ea41b9ce-2383-4fad-b232-1a7f556c93d6"
     },
-    "helpful service and dependable delivery": {
-     "sentimentAnalysis": "Kundeservicen værdsættes, mens leveringen beskrives som hurtig og købsoplevelsen som problemfri.",
-     "simpleTitle": "Hjælpsom service og pålidelig levering",
+    "worthwhile turntable upgrade": {
+     "sentimentAnalysis": "Produktet ses som en effektiv erstatning og meningsfuld opgradering til kompatible pladespillere, herunder Argon-modeller og ældre udstyr, der tages i brug igen.",
+     "simpleTitle": "Værdifuld opgradering af pladespiller",
      "bias": "positive",
-     "key": "service-delivery",
-     "groupId": "71b0a6af-c94f-4e07-87db-bd40ba2095f9"
+     "key": "upgrade_compatibility",
+     "groupId": "cf4010d0-730e-47ae-a654-270d6428dd94"
     },
-    "clear, detailed sound improvement": {
-     "sentimentAnalysis": "Nålen roses for tydeligt at forbedre detaljer og lyd sammenlignet med no-name-, originale eller ældre alternativer.",
-     "simpleTitle": "Tydelig og detaljeret lydforbedring",
+    "friendly, reliable service": {
+     "sentimentAnalysis": "Kundeservicen beskrives konsekvent som god, hjælpsom og som en grund til at vende tilbage.",
+     "simpleTitle": "Venlig og pålidelig service",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "019ea9bd-2761-45cd-b951-7dc11f23fa79"
+     "key": "service_delivery",
+     "groupId": "b1c74740-179b-4ae8-9f30-b0698f4c3abc"
     },
-    "easy fitting and replacement": {
-     "sentimentAnalysis": "Monteringen beskrives som nem, med sikker klikfastgørelse og kun behov for en grundlæggende justering af nåletrykket.",
-     "simpleTitle": "Nem montering og udskiftning",
+    "easy installation": {
+     "sentimentAnalysis": "Monteringen beskrives som nem med sikker klikmontering og kun behov for en enkel justering.",
+     "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "installation",
-     "groupId": "cd573421-22b7-402a-b4df-57be2366abee"
+     "groupId": "d3e1c34a-0bfd-4fa0-9495-968d3de5c246"
+    },
+    "fast delivery": {
+     "sentimentAnalysis": "Leveringen roses som hurtig og effektiv, og bestillingerne fungerer perfekt og ankommer hurtigt.",
+     "simpleTitle": "Hurtig levering",
+     "bias": "positive",
+     "key": "service_delivery",
+     "groupId": "b1c74740-179b-4ae8-9f30-b0698f4c3abc"
     }
    },
    "grouping": {
-    "019ea9bd-2761-45cd-b951-7dc11f23fa79": {
+    "ea41b9ce-2383-4fad-b232-1a7f556c93d6": {
      "title": "Lydkvalitet",
-     "id": "019ea9bd-2761-45cd-b951-7dc11f23fa79",
+     "id": "ea41b9ce-2383-4fad-b232-1a7f556c93d6",
      "references": [
       "a8f5e59e-a891-414e-94da-50ec15eea2c9",
       "aceab68e-8b7a-4bf7-8c36-856ad4073ff5",
-      "ba9d4b99-c7bc-415f-8cfc-bfa47d965ecf",
       "6dcf7e8b-0529-4345-81a9-be7772a83763",
       "a15257fc-ae67-4a8c-90a9-67684b590a2f",
+      "ba9d4b99-c7bc-415f-8cfc-bfa47d965ecf",
       "95c5383f-6b07-49e4-ba3c-4769dfd09087",
       "4a65df76-90fd-4e68-8a31-fa68e5a2c9dd"
      ]
     },
-    "ac465036-6e6e-4257-b348-38566e552b3b": {
-     "title": "Værdi som opgradering",
-     "id": "ac465036-6e6e-4257-b348-38566e552b3b",
-     "references": [
-      "aceab68e-8b7a-4bf7-8c36-856ad4073ff5",
-      "129fcec5-ddc8-4028-9d8e-7ad3ace1c3ac",
-      "6dcf7e8b-0529-4345-81a9-be7772a83763",
-      "a15257fc-ae67-4a8c-90a9-67684b590a2f",
-      "307274fa-e7f0-4248-9f51-dba5c7677d0c",
-      "95c5383f-6b07-49e4-ba3c-4769dfd09087"
-     ]
-    },
-    "71b0a6af-c94f-4e07-87db-bd40ba2095f9": {
+    "b1c74740-179b-4ae8-9f30-b0698f4c3abc": {
      "title": "Service og levering",
-     "id": "71b0a6af-c94f-4e07-87db-bd40ba2095f9",
+     "id": "b1c74740-179b-4ae8-9f30-b0698f4c3abc",
      "references": [
       "0851954c-9484-4655-b045-b3011fd0f739",
       "e676e3e4-401b-4f7f-b278-f10bd2e30430",
@@ -253,9 +257,18 @@
       "0cc368de-d530-4231-b6b2-bfeec5c197bf"
      ]
     },
-    "cd573421-22b7-402a-b4df-57be2366abee": {
+    "cf4010d0-730e-47ae-a654-270d6428dd94": {
+     "title": "Opgradering og kompatibilitet",
+     "id": "cf4010d0-730e-47ae-a654-270d6428dd94",
+     "references": [
+      "129fcec5-ddc8-4028-9d8e-7ad3ace1c3ac",
+      "307274fa-e7f0-4248-9f51-dba5c7677d0c",
+      "a15257fc-ae67-4a8c-90a9-67684b590a2f"
+     ]
+    },
+    "d3e1c34a-0bfd-4fa0-9495-968d3de5c246": {
      "title": "Montering",
-     "id": "cd573421-22b7-402a-b4df-57be2366abee",
+     "id": "d3e1c34a-0bfd-4fa0-9495-968d3de5c246",
      "references": [
       "95c5383f-6b07-49e4-ba3c-4769dfd09087",
       "613b2bd7-3085-4b69-9bde-aa770794158a"

@@ -8,6 +8,16 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "1 x R/L ind, 2 x R/L ud"
+  },
+  "gallery": [
+   "4f9b7b6e-6e35-4f79-81df-25a5fd708a0b",
+   "3c81bfc9-df35-48ef-8a6d-407cfc887eaa"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 177342,
   "skuCode": "MCGEN270",
@@ -97,7 +107,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 19,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -121,34 +131,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MCGEN270 er en meget praktisk og alsidig højttaleromskifter, der fungerer pålideligt og giver værdifuld separat volumenkontrol til et ekstra højttalerpar. Den varme og afbalancerede lytteoplevelse bliver endnu bedre med nem justering mellem rum, mens de solide tilslutninger understøtter bananstik og afisolerede højttalerkabler. En mindre bekymring er, at terminalerne kan være svære at spænde, og at 4- og 8-ohm højttalere ikke kan skiftes samtidig.",
+   "summary": "MCGEN270 er en særdeles praktisk og vellidt højttaleromskifter, der fungerer pålideligt og gør det nemt at styre og balancere et ekstra højttalerpar. Den justerbare udgangslydstyrke er især nyttig til lyd i flere rum, mens de solide tilslutningsmuligheder giver ekstra fleksibilitet. Det kan være besværligt at spænde terminalerne, og 4- og 8-ohm højttalere kan ikke skiftes samtidig, men helhedsindtrykket er varmt, kraftfuldt og meget positivt.",
    "headlines": {
-    "independent volume adjustment balances speaker pairs": {
-     "sentimentAnalysis": "Separat kontrol af det andet højttalerpar gør det nemt at balancere lyden mellem rum eller lytteområder.",
-     "simpleTitle": "Separat volumenkontrol balancerer højttalerpar",
+    "easy volume balancing for a second speaker pair": {
+     "sentimentAnalysis": "Justerbar lydstyrke på den anden udgang gør det nemt at balancere højttalerpar og tilpasse niveauerne mellem rum.",
+     "simpleTitle": "Nem lydstyrkebalance for et ekstra højttalerpar",
      "bias": "positive",
      "key": "volume-control",
-     "groupId": "11ba29d5-149d-4112-ac84-2e55a2aa0048"
+     "groupId": "d1c35ea6-015a-404b-83f3-146748110875"
     },
-    "reliable, versatile switching": {
-     "sentimentAnalysis": "Omskifteren beskrives konsekvent som effektiv, pålidelig og velegnet til det tilsigtede brug.",
-     "simpleTitle": "Pålidelig og alsidig omskiftning",
+    "reliable and effective switching": {
+     "sentimentAnalysis": "Omskifteren fungerer ifølge anmeldelserne præcis som tilsigtet og giver en særdeles tilfredsstillende oplevelse.",
+     "simpleTitle": "Pålidelig og effektiv omskiftning",
      "bias": "positive",
-     "key": "switch-performance",
-     "groupId": "a7157ade-f1b7-4217-9a2e-8ef658a05522"
+     "key": "functionality",
+     "groupId": "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4"
     },
-    "supports banana plugs and bare speaker wire": {
-     "sentimentAnalysis": "Fleksible terminaler gør enheden kompatibel med både bananstik og afisolerede højttalerkabler.",
-     "simpleTitle": "Understøtter bananstik og afisolerede højttalerkabler",
+    "flexible speaker-terminal options": {
+     "sentimentAnalysis": "Tilslutningerne understøtter praktisk brug med højttalerkabler og bananstik, selv om terminalerne kan kræve ekstra kraft at spænde.",
+     "simpleTitle": "Fleksible højttalertilslutninger",
      "bias": "positive",
-     "key": "speaker-connections",
-     "groupId": "dcfd254d-daba-4845-91c4-dbabcaeb8c93"
+     "key": "connections",
+     "groupId": "d6901253-4c68-41fc-86af-b66b2897881e"
     }
    },
    "grouping": {
-    "11ba29d5-149d-4112-ac84-2e55a2aa0048": {
-     "title": "Volumenkontrol",
-     "id": "11ba29d5-149d-4112-ac84-2e55a2aa0048",
+    "d1c35ea6-015a-404b-83f3-146748110875": {
+     "title": "Lydstyrkeregulering",
+     "id": "d1c35ea6-015a-404b-83f3-146748110875",
      "references": [
       "162fb58d-6806-429c-9eb3-3006d2f17ca9",
       "90f702e1-ddd5-48f9-aae7-3cf8780d8f0d",
@@ -157,9 +167,9 @@
       "9e4f968f-0545-43dd-8d78-e666c5ab445c"
      ]
     },
-    "a7157ade-f1b7-4217-9a2e-8ef658a05522": {
-     "title": "Omskifterfunktion",
-     "id": "a7157ade-f1b7-4217-9a2e-8ef658a05522",
+    "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4": {
+     "title": "Funktionalitet",
+     "id": "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4",
      "references": [
       "162fb58d-6806-429c-9eb3-3006d2f17ca9",
       "e768d6e2-f21d-42a8-b360-69dfa3f822ef",
@@ -167,9 +177,9 @@
       "3bdd44f6-6168-46a0-a794-2c6f966057d6"
      ]
     },
-    "dcfd254d-daba-4845-91c4-dbabcaeb8c93": {
-     "title": "Højttalertilslutninger",
-     "id": "dcfd254d-daba-4845-91c4-dbabcaeb8c93",
+    "d6901253-4c68-41fc-86af-b66b2897881e": {
+     "title": "Tilslutninger",
+     "id": "d6901253-4c68-41fc-86af-b66b2897881e",
      "references": [
       "3864af04-10ac-402b-8c52-eadc3a43a385",
       "5e554506-5263-4c0c-aeab-adb6d87807de"

@@ -13,6 +13,15 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : RCA eller XLR"
+  },
+  "gallery": [
+   "6571f518-7c10-479f-9b75-637622f61560"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 31866,
   "skuCode": "AQMACKENZIEIN",
@@ -208,12 +217,11 @@
      "productCode": "AQMACKENZIEIN0,75"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -290,7 +298,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 1,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -518,11 +526,11 @@
      "productCode": "AQMACKENZIEIN3,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -683,46 +691,47 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQMACKENZIEIN roses bredt som et førsteklasses RCA-kabel med klar, præcis og medrivende lyd. Kablet giver stemmer og instrumenter mere krop, kontur og tredimensional stabilitet samt varm dybde, punchy bas og funklende diskantdetaljer. Den fremragende udførelse og den hørbare forbedring af anlægget gør premiumprisen værd at betale.",
+   "summary": "AQMACKENZIEIN roses bredt som et førsteklasses RCA-kabel med varm, kraftfuld og meget præcis lyd. Kablet tilfører dybde og fylde og skaber en medrivende, tredimensionel gengivelse, hvor stemmer og instrumenter står mere stabilt og livagtigt. Den flotte konstruktion og den tydeligt hørbare forbedring af anlægget gør den højere pris værd at betale.",
    "headlines": {
-    "more precise, spacious and detailed sound": {
-     "sentimentAnalysis": "Kablet beskrives konsekvent som en tydelig hørbar opgradering med mere præcision, stabil placering, krop og tredimensional rumfornemmelse.",
-     "simpleTitle": "Mere præcis, rummelig og detaljeret lyd",
+    "more precise, spacious and immersive sound": {
+     "sentimentAnalysis": "Kablet beskrives som en tydeligt hørbar opgradering, der forbedrer præcision, rumlig stabilitet og tredimensional realisme.",
+     "simpleTitle": "Mere præcis, rummelig og medrivende lyd",
      "bias": "positive",
-     "key": "sound-precision",
-     "groupId": "a77a74c2-d90c-4f84-b478-fd8b233eb76d"
+     "key": "sound-quality",
+     "groupId": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3"
     },
-    "strong overall sound and musical richness": {
-     "sentimentAnalysis": "Bred ros beskriver kablet som usædvanligt godt med en høj kvalitet og musikalsk tilfredsstillende gengivelse.",
-     "simpleTitle": "Stærk samlet lyd og musikalsk fylde",
+    "deep bass and a broad soundstage": {
+     "sentimentAnalysis": "Gengivelsen roses for at udvide lydbilledet og levere overbevisende dybde med kraftig basgengivelse.",
+     "simpleTitle": "Dyb bas og et bredt lydbillede",
      "bias": "positive",
-     "key": "sound-musicality",
-     "groupId": "a77a74c2-d90c-4f84-b478-fd8b233eb76d"
+     "key": "sound-quality",
+     "groupId": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3"
     },
-    "premium construction": {
-     "sentimentAnalysis": "Kablet får positive kommentarer for sit flotte udseende og sin førsteklasses udførelse.",
-     "simpleTitle": "Førsteklasses konstruktion",
+    "premium-looking, well-finished construction": {
+     "sentimentAnalysis": "Kablet får positive kommentarer for sit flotte udseende og sin høje forarbejdningskvalitet.",
+     "simpleTitle": "Eksklusivt udseende og flot forarbejdning",
      "bias": "positive",
-     "key": "solid-construction",
-     "groupId": "55beb943-0dce-4805-8316-19472cc749b6"
+     "key": "build-quality",
+     "groupId": "72b7b8e6-fe10-400c-a733-54bdcd69824c"
     }
    },
    "grouping": {
-    "a77a74c2-d90c-4f84-b478-fd8b233eb76d": {
+    "26c7256c-e48b-492e-8e0d-26cf5c34dcf3": {
      "title": "Lydkvalitet",
-     "id": "a77a74c2-d90c-4f84-b478-fd8b233eb76d",
+     "id": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3",
      "references": [
       "3a6ced73-7431-49fa-a2df-4cd306f07f2f",
       "8874cbd6-68ca-4575-b37d-034fbaa5730f",
       "032f2b16-162e-4a50-ac3f-29e436478956",
       "75f07582-a85f-4a08-bf68-51cdd6533fd2",
       "0425b082-08ed-4a94-80bb-b8babf10b968",
-      "5d5f53bc-98ae-4318-bdc6-3cf099fcdad3"
+      "5d5f53bc-98ae-4318-bdc6-3cf099fcdad3",
+      "e227fd76-7521-414a-9c74-a28df3216811"
      ]
     },
-    "55beb943-0dce-4805-8316-19472cc749b6": {
+    "72b7b8e6-fe10-400c-a733-54bdcd69824c": {
      "title": "Byggekvalitet",
-     "id": "55beb943-0dce-4805-8316-19472cc749b6",
+     "id": "72b7b8e6-fe10-400c-a733-54bdcd69824c",
      "references": [
       "8874cbd6-68ca-4575-b37d-034fbaa5730f",
       "43a1ae99-12bf-470b-8d81-9d101c825250"

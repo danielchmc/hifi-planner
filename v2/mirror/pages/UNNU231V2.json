@@ -13,6 +13,13 @@
    "url": "/tilbehor/mobler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "f676a423-4f64-4121-b03e-edbda29fa593"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 39099,
   "skuCode": "UNNU231V2",
@@ -29,9 +36,9 @@
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "UNNUDRAW45V2",
     "UNNUS11V2",
-    "UNNUD21V2"
+    "UNNUD21V2",
+    "UNNUDRAW45V2"
    ],
    "isOutlet": "false"
   },
@@ -184,7 +191,6 @@
     "energySpecifications": {},
     "url": "/unnu-231-v2-moebel/unnu231v2wh/",
     "canonicalUrl": "/unnu-231-v2-moebel/unnu231v2wh/",
-    "lowestShippingPriceRaw": 499,
     "addOns": []
    },
    {
@@ -256,7 +262,6 @@
     "energySpecifications": {},
     "url": "/unnu-231-v2-moebel/unnu231v2bk/",
     "canonicalUrl": "/unnu-231-v2-moebel/unnu231v2bk/",
-    "lowestShippingPriceRaw": 499,
     "addOns": []
    },
    {
@@ -317,7 +322,6 @@
     "energySpecifications": {},
     "url": "/unnu-231-v2-moebel/unnu231v2oa/",
     "canonicalUrl": "/unnu-231-v2-moebel/unnu231v2oa/",
-    "lowestShippingPriceRaw": 499,
     "addOns": []
    },
    {
@@ -378,7 +382,6 @@
     "energySpecifications": {},
     "url": "/unnu-231-v2-moebel/unnu231v2wa/",
     "canonicalUrl": "/unnu-231-v2-moebel/unnu231v2wa/",
-    "lowestShippingPriceRaw": 499,
     "addOns": []
    }
   ],
@@ -403,34 +406,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "UNNU231V2 er et stilfuldt møbel i høj kvalitet med en dyb valnøddefinish og gennemtænkt kabelstyring. Møblet leveres næsten færdigsamlet og leverer rigtig god lyd til en varm og behagelig medieoplevelse. Premiumprisen kan forsvares af kvaliteten, men overfladens holdbarhed og den vanskelige justering af lågerne giver anledning til bekymring.",
+   "summary": "Et smukt designet mediemøbel i høj kvalitet med gennemtænkt kabelstyring og en for det meste enkel opsætning. Det varme, elegante udseende og den solide konstruktion gør et stærkt indtryk, selv om den høje pris, den overflade der hurtigt får ridser, og den vanskelige justering af lågen dæmper begejstringen. Det raffinerede møbeldesign skaber en ren og omsluttende hjemmebiografoplevelse til punchy lydudstyr.",
    "headlines": {
-    "high-quality construction": {
-     "sentimentAnalysis": "Møblet roses for solid konstruktion i høj kvalitet og gennemtænkte detaljer.",
-     "simpleTitle": "Konstruktion i høj kvalitet",
+    "thoughtful design and solid quality": {
+     "sentimentAnalysis": "Gennemtænkte detaljer og generelt høj byggekvalitet bliver rost.",
+     "simpleTitle": "Gennemtænkt design og solid kvalitet",
      "bias": "positive",
      "key": "quality",
-     "groupId": "94d8089c-7658-4289-a38f-448ff348c8e1"
+     "groupId": "73bc97c6-4c47-46df-84ea-f1d7eb2c5c6a"
     },
-    "elegant walnut design": {
-     "sentimentAnalysis": "Udseendet beskrives konsekvent som flot og stilfuldt, forstærket af den dybe valnøddefinish.",
-     "simpleTitle": "Elegant valnøddesign",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "59adf9ad-ab65-4c7f-9e8b-70ec5f758590"
-    },
-    "premium price": {
-     "sentimentAnalysis": "Den høje pris er den tydeligste kritik, selv om kvaliteten vurderes som god nok til delvist at retfærdiggøre omkostningen.",
-     "simpleTitle": "Premiumpris",
+    "surface marks too easily": {
+     "sentimentAnalysis": "Premiumprisen skaber høje forventninger, mens overfladens holdbarhed kritiseres.",
+     "simpleTitle": "Overfladen får for let ridser",
      "bias": "negative",
-     "key": "price",
-     "groupId": "24c6f3bf-e7a0-4341-a24b-29b2208cac8b"
+     "key": "quality",
+     "groupId": "73bc97c6-4c47-46df-84ea-f1d7eb2c5c6a"
+    },
+    "elegant walnut appearance": {
+     "sentimentAnalysis": "Møblet opfattes gennemgående som flot, især på grund af den dybe valnøddefinish.",
+     "simpleTitle": "Elegant valnøddeudseende",
+     "bias": "positive",
+     "key": "appearance",
+     "groupId": "8ce4e4c3-62c0-4b2e-977a-bb88a0b01286"
+    },
+    "mostly straightforward setup": {
+     "sentimentAnalysis": "Den næsten færdigsamlede levering og klare vejledning gør monteringen overskuelig, selv om justering af lågen stadig er problematisk.",
+     "simpleTitle": "Overvejende enkel montering",
+     "bias": "positive",
+     "key": "assembly",
+     "groupId": "a357399d-0cfa-414e-a4fd-b8793571fa46"
     }
    },
    "grouping": {
-    "94d8089c-7658-4289-a38f-448ff348c8e1": {
+    "73bc97c6-4c47-46df-84ea-f1d7eb2c5c6a": {
      "title": "Byggekvalitet",
-     "id": "94d8089c-7658-4289-a38f-448ff348c8e1",
+     "id": "73bc97c6-4c47-46df-84ea-f1d7eb2c5c6a",
      "references": [
       "015c3688-a1aa-4b22-a383-f87aebbeee67",
       "64212b35-ad13-45b2-a045-692e8b232d2a",
@@ -438,18 +448,17 @@
       "3a684452-d570-4cbd-a5f5-5852d90a6014"
      ]
     },
-    "59adf9ad-ab65-4c7f-9e8b-70ec5f758590": {
-     "title": "Design og udseende",
-     "id": "59adf9ad-ab65-4c7f-9e8b-70ec5f758590",
+    "8ce4e4c3-62c0-4b2e-977a-bb88a0b01286": {
+     "title": "Udseende",
+     "id": "8ce4e4c3-62c0-4b2e-977a-bb88a0b01286",
      "references": [
       "64212b35-ad13-45b2-a045-692e8b232d2a",
-      "3150b19a-7a4d-42d2-8176-00c2d7c13187",
       "3b65c311-26cd-4cf0-9d35-55009c22e9fd"
      ]
     },
-    "24c6f3bf-e7a0-4341-a24b-29b2208cac8b": {
-     "title": "Pris",
-     "id": "24c6f3bf-e7a0-4341-a24b-29b2208cac8b",
+    "a357399d-0cfa-414e-a4fd-b8793571fa46": {
+     "title": "Montering og installation",
+     "id": "a357399d-0cfa-414e-a4fd-b8793571fa46",
      "references": [
       "015c3688-a1aa-4b22-a383-f87aebbeee67",
       "3a684452-d570-4cbd-a5f5-5852d90a6014"

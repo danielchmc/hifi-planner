@@ -13,6 +13,22 @@
    "url": "/horetelefoner/gaming-headset/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( Auracast, LE Audio, LC3plus, LC3, LDAC, AAC, SBC )"
+  },
+  "gallery": [
+   "5400088d-f372-46b4-8944-e8fc3bc9b568",
+   "a1bd416a-31fd-40d6-b320-ef9303a8254e",
+   "bf3ab213-88b1-41f3-a112-6cf5b854fc07",
+   "0fba72e7-7d01-491a-8b33-68c87cfbd697",
+   "40dc2ecc-7a74-4e6b-b9e2-4bf84aa7f09c",
+   "d43f1178-4fa9-4977-a9d7-8c83d872ae10",
+   "0fb60bd9-da95-4bcc-ba8d-af00e15b38f0",
+   "83931693-ffb4-4638-abc9-0798929826b2"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 278046,
   "skuCode": "AUDMAXWELL2",
@@ -175,7 +191,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 186,
+     "availableQuantity": 182,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -281,7 +297,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 77,
+     "availableQuantity": 75,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -343,56 +359,83 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AUDMAXWELL2 leverer en varm, klar og omsluttende lyd og præsterer især godt til musik, film og konsolspil. Fleksible EQ-muligheder og en kompetent mikrofon giver alsidighed til gaming, mens komforten generelt er god under lange sessioner. Surroundplacering, softwareopsætning, vægt og værdi for pengene får blandede vurderinger, da premiumprisen ikke er fuldt ud berettiget til alle formål.",
+   "summary": "AUDMAXWELL2 leverer varm, klar og omsluttende lyd til musik, film og konsolspil og giver især trådløst en stærk oplevelse. Komfort ved lange sessioner, nemt EQ-skift og bred platformunderstøttelse giver betydelig værdi. Den tunge konstruktion, besværlige opsætning, lejlighedsvise knitren uden lyd og mindre overbevisende surround- eller musikgengivelse gør den høje pris sværere at forsvare til visse formål.",
    "headlines": {
-    "strong gaming performance across consoles": {
-     "sentimentAnalysis": "Headsettet opfattes som et fremragende gamingvalg med god konsolunderstøttelse, forbedret lydbillede og bedre mikrofon.",
-     "simpleTitle": "Stærk gaming-ydeevne på konsoller",
+    "clear, powerful and immersive sound": {
+     "sentimentAnalysis": "Lyden roses bredt som klar, kraftfuld og en markant forbedring i forhold til tidligere headsets, især til musik og film.",
+     "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b"
+    },
+    "strong choice for console gaming": {
+     "sentimentAnalysis": "Konsolspil får begejstret ros, og headsettet vurderes som særligt velegnet til PlayStation og Xbox.",
+     "simpleTitle": "Stærkt valg til konsolspil",
      "bias": "positive",
      "key": "gaming",
-     "groupId": "282f975d-bf2c-4827-810f-e7af25bd96fe"
+     "groupId": "11ce498c-b20d-4637-b24f-3082d9271626"
     },
-    "clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Lyden roses som usædvanligt klar, kraftfuld og omsluttende til musik, film og spil.",
-     "simpleTitle": "Klar, detaljeret og omsluttende lyd",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "503fff6f-5551-45ab-92cf-27a1b1e4ab84"
-    },
-    "gaming surround is weaker than expected": {
-     "sentimentAnalysis": "Musik og generel lydkvalitet er stærk, men surroundspredning og musikgengivelse lever ikke konsekvent op til premiumforventningerne.",
-     "simpleTitle": "Gaming-surround er svagere end forventet",
+    "surround and music performance can disappoint": {
+     "sentimentAnalysis": "Surround mangler den ønskede lydspredning, mens musikgengivelsen beskrives som skuffende i forhold til prisen.",
+     "simpleTitle": "Surround- og musikgengivelsen kan skuffe",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "503fff6f-5551-45ab-92cf-27a1b1e4ab84"
+     "key": "sound",
+     "groupId": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b"
+    },
+    "comfortable for long sessions": {
+     "sentimentAnalysis": "Komforten er god nok til længere tids brug, selv om den betydelige vægt bemærkes.",
+     "simpleTitle": "Komfortabelt til lange sessioner",
+     "bias": "positive",
+     "key": "comfort",
+     "groupId": "2a7c42e2-6184-47de-a294-a98f83f28be6"
+    },
+    "setup takes effort but works well": {
+     "sentimentAnalysis": "Den indledende opsætning opleves som vanskelig, men det fungerende resultat og de fleksible EQ-funktioner gør besværet umagen værd.",
+     "simpleTitle": "Opsætningen kræver arbejde, men fungerer godt",
+     "bias": "meh",
+     "key": "setup",
+     "groupId": "43e5e402-2429-4b30-915d-1600ceb19981"
     }
    },
    "grouping": {
-    "503fff6f-5551-45ab-92cf-27a1b1e4ab84": {
+    "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b": {
      "title": "Lydkvalitet",
-     "id": "503fff6f-5551-45ab-92cf-27a1b1e4ab84",
+     "id": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b",
      "references": [
       "2e467ea6-b211-4289-afb7-a3d07b27842a",
       "2d1e284f-acd5-4a9c-b21e-a3c78b4719a7",
-      "f1e334c9-246e-48ea-9a99-ac1a8b9315f7",
       "0960e9e9-5558-4bae-99ab-af177df92614",
       "564e1ab7-c057-4038-81cc-b8c20ea12594",
+      "4d1d49a6-aff9-425e-a375-4da5943dd6da",
+      "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc"
+     ]
+    },
+    "11ce498c-b20d-4637-b24f-3082d9271626": {
+     "title": "Gaming",
+     "id": "11ce498c-b20d-4637-b24f-3082d9271626",
+     "references": [
+      "2e467ea6-b211-4289-afb7-a3d07b27842a",
+      "f1e334c9-246e-48ea-9a99-ac1a8b9315f7",
       "4d1d49a6-aff9-425e-a375-4da5943dd6da",
       "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc",
       "b41e1027-b66d-47ab-ad6d-24bdd06fe4f6",
       "6629b447-9f28-444f-a220-de7d86428256"
      ]
     },
-    "282f975d-bf2c-4827-810f-e7af25bd96fe": {
-     "title": "Gaming-ydeevne",
-     "id": "282f975d-bf2c-4827-810f-e7af25bd96fe",
+    "2a7c42e2-6184-47de-a294-a98f83f28be6": {
+     "title": "Komfort",
+     "id": "2a7c42e2-6184-47de-a294-a98f83f28be6",
      "references": [
-      "2e467ea6-b211-4289-afb7-a3d07b27842a",
-      "f1e334c9-246e-48ea-9a99-ac1a8b9315f7",
-      "4d1d49a6-aff9-425e-a375-4da5943dd6da",
-      "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc",
-      "b41e1027-b66d-47ab-ad6d-24bdd06fe4f6",
-      "6629b447-9f28-444f-a220-de7d86428256"
+      "2d1e284f-acd5-4a9c-b21e-a3c78b4719a7",
+      "0960e9e9-5558-4bae-99ab-af177df92614"
+     ]
+    },
+    "43e5e402-2429-4b30-915d-1600ceb19981": {
+     "title": "Opsætning og software",
+     "id": "43e5e402-2429-4b30-915d-1600ceb19981",
+     "references": [
+      "4b4116ee-73fc-4fc3-bd3f-c17a8c94c738",
+      "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc"
      ]
     }
    },

@@ -13,6 +13,23 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "USB C",
+   "Indgang (andet)": "Ethernet",
+   "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Chromecast, Spotify Connect",
+   "Højtaler type": "Trådløs højtaler",
+   "Bluetooth type": "5.3",
+   "Fra beskrivelsen": "Trådløs tilslutning: 802.11 a/b/g/n/ac/ax (2,4/5 GHz) · Ethernet-tilslutning (10/100 Mbit/s)"
+  },
+  "gallery": [
+   "fa0faa7f-14f4-49f9-90bf-8f2f413cdc6f",
+   "0e1e0363-0018-4275-9206-64fce786a49b",
+   "3cb41689-c63a-4513-aaa2-81e5df1f644d",
+   "314f977f-764b-4594-9284-76762cbdbb1f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 201789,
   "skuCode": "BOBEOS2",
@@ -478,34 +495,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BOBEOS2 kombinerer en varm, punchy og medrivende lyd med et raffineret, kompakt design, der imponerer ved første øjekast. Lydkvaliteten fremstår konsekvent som den største styrke, mens appen opleves som forholdsvis intuitiv, og direkte Spotify-afspilning giver ekstra bekvemmelighed. Et mindre problem med Bluetooth-stabiliteten nævnes, men helhedsindtrykket er fortsat meget positivt og værdigt for B&O-navnet.",
+   "summary": "BOBEOS2 leverer en varm, punchy og omsluttende lyd, der konsekvent imponerer, pakket ind i et stilfuldt og kompakt design. B&O-appen er forholdsvis intuitiv, med praktisk direkte Spotify-understøttelse og nem installation. Bluetooth-forbindelsen kan lejlighedsvis være ustabil, men den samlede kvalitet lever op til forventningerne til mærket.",
    "headlines": {
-    "rich, impressive sound": {
-     "sentimentAnalysis": "Lyden roses gentagne gange som fremragende, fantastisk og imponerende.",
-     "simpleTitle": "Fyldig og imponerende lyd",
+    "impressive, high-quality sound": {
+     "sentimentAnalysis": "Lyden beskrives gentagne gange som god, fantastisk og imponerende, hvilket gør lydkvaliteten til den tydeligste styrke.",
+     "simpleTitle": "Imponerende lyd i høj kvalitet",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "c705ba97-359c-4241-afaf-06fb087a5a27"
+     "groupId": "a87e770c-5f49-48a0-9430-e2a80ad6d9de"
     },
-    "refined, attractive design": {
-     "sentimentAnalysis": "Designet beskrives konsekvent som smukt, førsteklasses og imponerende.",
-     "simpleTitle": "Elegant og attraktivt design",
+    "stylish design": {
+     "sentimentAnalysis": "Flere anmeldelser roser det attraktive design i høj kvalitet, som imponerer både ejere og gæster.",
+     "simpleTitle": "Stilfuldt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "f21eb102-1591-4a6b-8e37-b98890b3b13e"
+     "groupId": "a6b283cf-d825-4db7-8a00-9d8129cf4bf0"
     },
-    "convenient, reasonably intuitive app": {
-     "sentimentAnalysis": "Appen opleves som forholdsvis intuitiv og funktionel, og direkte Spotify-understøttelse giver ekstra bekvemmelighed.",
-     "simpleTitle": "Praktisk og forholdsvis intuitiv app",
+    "intuitive app and Spotify support": {
+     "sentimentAnalysis": "Appen opfattes som forholdsvis intuitiv, mens direkte Spotify-afspilning og nem installation gør brugen mere bekvem.",
+     "simpleTitle": "Intuitiv app og Spotify-understøttelse",
      "bias": "positive",
-     "key": "app",
-     "groupId": "7886d612-db66-4fd4-a0e4-5e54204c965c"
+     "key": "app-and-connectivity",
+     "groupId": "f402cc26-e94f-4236-8987-9ea670384bd4"
     }
    },
    "grouping": {
-    "c705ba97-359c-4241-afaf-06fb087a5a27": {
+    "a87e770c-5f49-48a0-9430-e2a80ad6d9de": {
      "title": "Lydkvalitet",
-     "id": "c705ba97-359c-4241-afaf-06fb087a5a27",
+     "id": "a87e770c-5f49-48a0-9430-e2a80ad6d9de",
      "references": [
       "82669b65-9b56-4ae0-92d7-d510f1a0f5b9",
       "3718ff7b-323d-49ad-8447-fd9b003715b0",
@@ -515,9 +532,9 @@
       "33910c64-b990-4c95-af62-11515b77cdef"
      ]
     },
-    "f21eb102-1591-4a6b-8e37-b98890b3b13e": {
+    "a6b283cf-d825-4db7-8a00-9d8129cf4bf0": {
      "title": "Design",
-     "id": "f21eb102-1591-4a6b-8e37-b98890b3b13e",
+     "id": "a6b283cf-d825-4db7-8a00-9d8129cf4bf0",
      "references": [
       "82669b65-9b56-4ae0-92d7-d510f1a0f5b9",
       "3718ff7b-323d-49ad-8447-fd9b003715b0",
@@ -526,10 +543,11 @@
       "b836c1d3-b27f-47c7-a553-6cafeccdd7af"
      ]
     },
-    "7886d612-db66-4fd4-a0e4-5e54204c965c": {
-     "title": "App",
-     "id": "7886d612-db66-4fd4-a0e4-5e54204c965c",
+    "f402cc26-e94f-4236-8987-9ea670384bd4": {
+     "title": "App og forbindelse",
+     "id": "f402cc26-e94f-4236-8987-9ea670384bd4",
      "references": [
+      "3718ff7b-323d-49ad-8447-fd9b003715b0",
       "faaac4cd-5514-468f-9170-3d3cf6af9d2c",
       "12f3683b-ffa5-49c2-a8df-6e705a01c5e9"
      ]

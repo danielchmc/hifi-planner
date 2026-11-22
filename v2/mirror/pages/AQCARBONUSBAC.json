@@ -13,6 +13,15 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : USB-A/USB-C, stik i rent kobber med forsølvede kontaktflader (Direct-Silver)"
+  },
+  "gallery": [
+   "c4f8697e-fa77-4794-a5ab-3bebd02b6cd2"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 103489,
   "skuCode": "AQCARBONUSBAC",
@@ -104,10 +113,10 @@
      "productCode": "AQCARBONUSBAC0,75"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

@@ -13,6 +13,16 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej"
+  },
+  "gallery": [
+   "d1c82bef-0bf6-47ca-a3ef-21cabce05df0",
+   "5122fda4-61f0-4dd3-883b-2e8e9552c60f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 236125,
   "skuCode": "NOONEPC800X",
@@ -168,7 +178,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 297,
+     "availableQuantity": 3296,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -209,127 +219,96 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NOONEPC800X leverer varm, klar og til tider punchy lyd til en attraktiv pris, med særligt god taleforståelighed og mikrofonydelse. Lydkvaliteten er dog ujævn, da flere anmeldelser beskriver svag bas, et lukket eller dåseagtigt lydbillede og skuffende detaljer. Den enkle betjening og praktiske kablede brug værdsættes, mens pasform, kabelhåndtering og langtidsstabilitet giver anledning til kritik.",
+   "summary": "NOONEPC800X leverer en generelt klar, varm og praktisk lytteoplevelse til en lav pris med særligt god taleklarhed og mikrofonydeevne. Meningerne om lyden er blandede: Flere anmeldelser roser den behagelige og fyldige lyd til prisen, mens andre oplever bassen som for tynd, lydbilledet som lukket eller diskanten som for skarp. Holdbarhed og pasform giver gentagne problemer, blandt andet udfald i den ene side, løse forbindelser og generende kabelstøj.",
    "headlines": {
-    "weak bass and a closed, tinny sound": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer for lidt bas samt en lukket, dåseagtig eller skarp klangbalance.",
-     "simpleTitle": "Svag bas og et lukket, dåseagtigt lydbillede",
+    "pleasant sound and good value": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver lyden som god, behagelig eller acceptabel til prisen.",
+     "simpleTitle": "Behagelig lyd og god værdi",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "106b5900-c5c7-4529-8452-686bb6785a02"
+    },
+    "weak and thin bass": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer bassen som svag, mangelfuld eller for tynd.",
+     "simpleTitle": "Svag og tynd bas",
      "bias": "negative",
      "key": "sound",
-     "groupId": "3009a28e-bd0b-4389-8137-7bd9b7e5057f"
-    },
-    "strong value at the asking price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer produktet som acceptabelt, godt eller anbefalelsesværdigt til prisen.",
-     "simpleTitle": "God værdi til prisen",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "71e9262e-717c-4a44-960e-d0ca3fece727"
+     "groupId": "106b5900-c5c7-4529-8452-686bb6785a02"
     },
     "clear calls and capable microphone": {
-     "sentimentAnalysis": "Samtaleforståelighed og mikrofonkvalitet vurderes konsekvent positivt.",
-     "simpleTitle": "Tydelige samtaler og god mikrofon",
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent tydelig tale og mikrofonens ydeevne.",
+     "simpleTitle": "Tydelige opkald og god mikrofon",
      "bias": "positive",
      "key": "calls",
-     "groupId": "032f793a-c712-4023-8325-05178fe38786"
+     "groupId": "74291ede-7ab7-4f43-9211-e25b4efa9ae1"
     },
-    "early failures affect reliability": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer om en defekt øretelefon eller kontaktproblemer efter kort tids brug.",
-     "simpleTitle": "Tidlige fejl svækker pålideligheden",
+    "premature one-sided failures": {
+     "sentimentAnalysis": "Flere anmeldelser rapporterer, at den ene øretelefon stoppede med at virke efter kort tid.",
+     "simpleTitle": "For tidlige udfald i den ene side",
      "bias": "negative",
      "key": "reliability",
-     "groupId": "8a6f2748-8060-46fa-bb1d-a5abe096f4de"
+     "groupId": "9fa3059c-e150-4a7a-864c-04c9e63e170b"
     },
-    "good sound for the price": {
-     "sentimentAnalysis": "Flere anmeldelser finder lyden behagelig eller god nok i forhold til den lave pris.",
-     "simpleTitle": "God lyd til prisen",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "3009a28e-bd0b-4389-8137-7bd9b7e5057f"
-    },
-    "fit can be uncomfortable and movement transfers noise": {
-     "sentimentAnalysis": "Begge anmeldelser af pasformen beskriver dårlig komfort eller forstyrrende kabel- og bevægelsesstøj.",
-     "simpleTitle": "Pasformen kan være dårlig, og bevægelser overfører støj",
+    "inconsistent fit and cable noise": {
+     "sentimentAnalysis": "Begge anmeldelser rejser problemer med komfort eller pasform, og den ene nævner desuden kraftig kabelstøj.",
+     "simpleTitle": "Ujævn pasform og kabelstøj",
      "bias": "negative",
      "key": "fit",
-     "groupId": "45044acc-4ea9-4b3e-baf0-e1c66430faaf"
-    },
-    "simple and convenient operation": {
-     "sentimentAnalysis": "Produktet roses for enkel betjening og nem brug i hverdagen.",
-     "simpleTitle": "Enkel og praktisk betjening",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "f0513fc9-8028-4257-a649-4d549360ab90"
+     "groupId": "605aeab8-8a0f-46b0-ab7a-5ba850fdf577"
     }
    },
    "grouping": {
-    "3009a28e-bd0b-4389-8137-7bd9b7e5057f": {
+    "106b5900-c5c7-4529-8452-686bb6785a02": {
      "title": "Lydkvalitet",
-     "id": "3009a28e-bd0b-4389-8137-7bd9b7e5057f",
+     "id": "106b5900-c5c7-4529-8452-686bb6785a02",
      "references": [
       "007a8f83-ec1c-41e1-8250-a27dcc232f25",
       "2b3a4ec1-df0a-4e96-9b96-98230d543079",
       "c75f6d87-0076-4d63-9989-b7c91bc7c639",
+      "04ff079c-fe87-4cbd-a3f7-a2ac61f2f8c7",
+      "e97e34bc-047c-42d7-aeec-5983c7f670ca",
       "d683f7e7-7bba-4947-8659-706725d585ed",
       "82ebdc3e-8dce-4bf7-aac2-f323b6c36d1f",
       "43c20458-aec0-4101-92e2-03de80bc7bbe",
       "dc3e0872-6ba4-4d91-959d-67ee748aa8be",
       "b7e0d084-d39e-4921-93f3-3916df6e0d78",
       "f1117b62-4be2-4169-9264-f6033e0956cd",
+      "2deded41-c718-454a-a48b-0bed252280f2",
       "8fa29ea3-cd1f-4cd8-b002-96718c118026",
       "1ff06507-8ff7-4481-9f68-c8c352108e47",
       "cd8367fc-9682-44c2-9439-20a828d1e13d",
       "0552855d-38b2-4ba5-8395-b00b8d076e3a",
+      "6ee8abf4-c614-4233-bed6-99adca9dfe47",
+      "1b2f74ea-dd9f-415f-945d-075ebe1ed8e2",
       "de0d58fa-51ed-45e1-89a0-196e713a710e"
      ]
     },
-    "71e9262e-717c-4a44-960e-d0ca3fece727": {
-     "title": "Værdi for pengene",
-     "id": "71e9262e-717c-4a44-960e-d0ca3fece727",
-     "references": [
-      "c75f6d87-0076-4d63-9989-b7c91bc7c639",
-      "82ebdc3e-8dce-4bf7-aac2-f323b6c36d1f",
-      "f1117b62-4be2-4169-9264-f6033e0956cd",
-      "cd8367fc-9682-44c2-9439-20a828d1e13d",
-      "0552855d-38b2-4ba5-8395-b00b8d076e3a",
-      "1b2f74ea-dd9f-415f-945d-075ebe1ed8e2"
-     ]
-    },
-    "032f793a-c712-4023-8325-05178fe38786": {
+    "74291ede-7ab7-4f43-9211-e25b4efa9ae1": {
      "title": "Opkald og mikrofon",
-     "id": "032f793a-c712-4023-8325-05178fe38786",
+     "id": "74291ede-7ab7-4f43-9211-e25b4efa9ae1",
      "references": [
       "e97e34bc-047c-42d7-aeec-5983c7f670ca",
-      "f1117b62-4be2-4169-9264-f6033e0956cd",
-      "2deded41-c718-454a-a48b-0bed252280f2",
       "1ff06507-8ff7-4481-9f68-c8c352108e47",
+      "2deded41-c718-454a-a48b-0bed252280f2",
       "6ee8abf4-c614-4233-bed6-99adca9dfe47"
      ]
     },
-    "8a6f2748-8060-46fa-bb1d-a5abe096f4de": {
-     "title": "Pålidelighed",
-     "id": "8a6f2748-8060-46fa-bb1d-a5abe096f4de",
+    "9fa3059c-e150-4a7a-864c-04c9e63e170b": {
+     "title": "Driftsikkerhed",
+     "id": "9fa3059c-e150-4a7a-864c-04c9e63e170b",
      "references": [
       "747a09f3-2d69-4c84-bd63-497e70b720e3",
-      "d683f7e7-7bba-4947-8659-706725d585ed",
       "9116d4dc-e2c4-4074-b93e-671692e48fa8",
       "87d15338-536a-424a-87d1-7acbcfeb5c80",
       "56c1160d-1765-483a-be48-41970185390f"
      ]
     },
-    "45044acc-4ea9-4b3e-baf0-e1c66430faaf": {
+    "605aeab8-8a0f-46b0-ab7a-5ba850fdf577": {
      "title": "Pasform og komfort",
-     "id": "45044acc-4ea9-4b3e-baf0-e1c66430faaf",
+     "id": "605aeab8-8a0f-46b0-ab7a-5ba850fdf577",
      "references": [
       "f1e7f980-ddbf-4acb-a73d-2c361f7717f7",
       "e85b1591-0f45-491c-971b-77555bd020d1"
-     ]
-    },
-    "f0513fc9-8028-4257-a649-4d549360ab90": {
-     "title": "Brugervenlighed",
-     "id": "f0513fc9-8028-4257-a649-4d549360ab90",
-     "references": [
-      "e97e34bc-047c-42d7-aeec-5983c7f670ca",
-      "de0d58fa-51ed-45e1-89a0-196e713a710e"
      ]
     }
    },

@@ -13,6 +13,17 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Højtaler type": "HiFi højtalere"
+  },
+  "gallery": [
+   "47a76de2-b369-404f-8cff-c4c223db1086",
+   "01c5cf59-2f26-4327-afaa-6d57f351c577",
+   "cd982b65-eb2a-4d6f-8b93-0d4e96dbb2f7"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 190130,
   "skuCode": "BW704S3",
@@ -200,7 +211,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 18,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -505,55 +516,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "B&W 704 S3 leverer en varm, klar og meget detaljeret lyd med imponerende rumfornemmelse, dynamik og musikalitet. De slanke, elegante kabinetter passer godt i mindre og mellemstore rum, samtidig med at de leverer en overraskende kraftfuld gengivelse. Bassen får generelt ros, selv om nogle lyttere ønsker mere dybde og oplever diskanten som afslørende eller skarp på krævende indspilninger.",
+   "summary": "B&W 704 S3 leverer en varm, klar, meget detaljeret og medrivende lyd i et slankt og elegant kabinet. Et stærkt lydbillede, overbevisende dynamik og imponerende klarhed gør højttalerne velegnede til mange musikgenrer og rumstørrelser. Bassen er generelt ren og overraskende dyb for det kompakte format, selv om nogle anlæg og lyttere får glæde af en subwoofer eller omhyggelig matchning med forstærker og kabler.",
    "headlines": {
-    "clear, detailed and revealing sound": {
-     "sentimentAnalysis": "Anmeldelserne roser højttalerens klarhed, fine detaljer, separation og evne til at afsløre nuancer i velkendte indspilninger.",
-     "simpleTitle": "Klar, detaljeret og afslørende lyd",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent klarheden, detaljegraden, den afbalancerede klang, den rummelige gengivelse og den engagerende præsentation på tværs af musikgenrer.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "89a305f4-e252-4edd-9fdf-410e7c96088b"
+     "key": "clear-detailed-sound",
+     "groupId": "7e0ea550-b98f-4678-bd38-b12e6c65cb9e"
     },
-    "warm, balanced and musical presentation": {
-     "sentimentAnalysis": "Den tonale balance beskrives som varm, harmonisk og behagelig på tværs af klassisk musik, jazz, vokal og populærmusik.",
-     "simpleTitle": "Varm, afbalanceret og musikalsk gengivelse",
+    "slim, elegant design suits smaller rooms": {
+     "sentimentAnalysis": "Det kompakte gulvhøjttalerformat, den attraktive finish og det afdæmpede design værdsættes gentagne gange for at passe godt ind i mindre eller mellemstore rum.",
+     "simpleTitle": "Slankt, elegant design passer til mindre rum",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "89a305f4-e252-4edd-9fdf-410e7c96088b"
+     "key": "slim-elegant-design",
+     "groupId": "94a56515-1151-4697-98d9-545345623d6a"
     },
-    "slim design fits smaller rooms": {
-     "sentimentAnalysis": "Den kompakte, smalle gulvhøjttalerkonstruktion roses gentagne gange for at passe ind i mindre eller mellemstore stuer uden at virke dominerende.",
-     "simpleTitle": "Slankt design passer i mindre rum",
+    "bass is clean and surprisingly deep for the size": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver bassen som kontrolleret, slagkraftig og overraskende dyb for det slanke kabinet, med tilstrækkelig fylde uden at dominere resten af lydbilledet.",
+     "simpleTitle": "Ren og overraskende dyb bas i størrelsen",
      "bias": "positive",
-     "key": "design",
-     "groupId": "de6af876-1ef7-4bf2-935e-9531db46fe67"
+     "key": "strong-compact-bass",
+     "groupId": "3cb0cc4b-db25-4c29-911f-91fccfa23ec8"
     },
-    "surprisingly powerful bass and dynamics": {
-     "sentimentAnalysis": "Andre anmeldelser roser bassen som ren, kontant, overraskende dyb og velkontrolleret med stærk dynamik trods det kompakte kabinet.",
-     "simpleTitle": "Overraskende kraftfuld bas og dynamik",
-     "bias": "positive",
-     "key": "bass",
-     "groupId": "462170a7-35a9-42c3-94f6-7693ec64cc55"
-    },
-    "bass can lack deep-end weight": {
-     "sentimentAnalysis": "Flere anmeldelser oplever dybbassen som noget begrænset eller vanskelig at balancere og anbefaler en subwoofer for større dybde og fylde i rummet.",
-     "simpleTitle": "Bassen kan mangle dybde",
+    "some setups need more deep bass": {
+     "sentimentAnalysis": "En tilbagevendende kritik er begrænset dybbas eller basfylde i rummet; subwoofere og justeringer af anlægget foreslås som effektive løsninger.",
+     "simpleTitle": "Nogle anlæg mangler dybere bas",
      "bias": "negative",
-     "key": "bass",
-     "groupId": "462170a7-35a9-42c3-94f6-7693ec64cc55"
-    },
-    "treble can become sharp with rock": {
-     "sentimentAnalysis": "En anmeldelse oplever diskanten som for skarp og trættende med rock og heavy metal, mens en anden især værdsætter den klare, analytiske gengivelse.",
-     "simpleTitle": "Diskanten kan blive skarp med rock",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "89a305f4-e252-4edd-9fdf-410e7c96088b"
+     "key": "limited-deep-bass",
+     "groupId": "3cb0cc4b-db25-4c29-911f-91fccfa23ec8"
     }
    },
    "grouping": {
-    "89a305f4-e252-4edd-9fdf-410e7c96088b": {
+    "7e0ea550-b98f-4678-bd38-b12e6c65cb9e": {
      "title": "Lydkvalitet",
-     "id": "89a305f4-e252-4edd-9fdf-410e7c96088b",
+     "id": "7e0ea550-b98f-4678-bd38-b12e6c65cb9e",
      "references": [
       "be040df1-4778-4bfc-b29f-e54b8c3e15b7",
       "cf36f460-0e61-4870-b3ca-95e28daf6b63",
@@ -563,18 +560,32 @@
       "7e76081c-79aa-48db-b6b5-1eb6fe66b987",
       "4a1e2c69-c6b2-4e5f-bbe4-3867ec82baf4",
       "add448bc-f0a8-49ce-9644-91e2dde83f05",
+      "3c67e5c3-486e-4175-9792-5bf907c33ddd",
+      "b7194ba6-4b8e-4714-941a-8f2d8c06b0b9",
       "552f0131-5fc1-49ac-9404-baf3c221557c",
+      "257333bf-80c5-4d62-9d58-e1178315c16e",
       "a5819d99-3603-4e52-b545-c8456eb6e853",
       "374a2111-84ad-4705-a19a-8a49efe7391f",
+      "65b17acc-eaf4-48bb-b34d-395f5f49f33e",
+      "3d54f65b-0897-4ea4-b857-0651a5cd6e6a",
       "1d4dc9fb-fd4f-4e23-ae42-5866086236da",
       "69ec0c17-c5f4-42c8-adf6-c359be7c341f",
+      "e253c704-da45-4cf1-ae5b-2aed07bbaf52",
       "74ad4262-1fe8-41af-9231-21f3ed4353fa",
       "4a6d2a66-2483-4d66-9f41-cd28ad327193",
+      "666e76fd-649f-4e59-850e-8bcdd3838d3e",
       "8f385aca-70be-493a-ab1e-719bbb137a01",
+      "81e6fed0-393d-4ecd-97c0-251129ef3353",
       "aacf6d13-2f06-4031-83d0-43eb10927ecd",
+      "897d76b8-0edf-4891-bf82-a77bece5c46e",
+      "19b41c34-d7b9-4478-b56a-f23d331df261",
+      "abbb395f-5df9-4c66-80e8-84dc058cf045",
       "82c8ea24-3ea6-4938-95b9-80b8a020973b",
+      "ae3b4f15-caee-4e46-9e8f-51bb84037597",
       "b236f565-1c55-4527-b65e-5b277eeae0c1",
       "fb4977fa-b7f8-4039-9a2a-1f85bb267cdd",
+      "0838cc86-b87c-4ff8-8823-eed2c02b9bbe",
+      "acf89e7e-9210-48c7-896d-8bb266607d68",
       "72006b8e-7eed-4d61-9621-93988fafaa3a",
       "353b65f7-6bfb-45ba-ab92-849b38a56b77",
       "aca715d5-e23f-4aac-b418-f8359f2cfdbf",
@@ -589,12 +600,13 @@
       "45af2e0d-b81c-4f0e-a675-9271e37e7ba0"
      ]
     },
-    "de6af876-1ef7-4bf2-935e-9531db46fe67": {
+    "94a56515-1151-4697-98d9-545345623d6a": {
      "title": "Design og størrelse",
-     "id": "de6af876-1ef7-4bf2-935e-9531db46fe67",
+     "id": "94a56515-1151-4697-98d9-545345623d6a",
      "references": [
       "be040df1-4778-4bfc-b29f-e54b8c3e15b7",
       "4a1e2c69-c6b2-4e5f-bbe4-3867ec82baf4",
+      "add448bc-f0a8-49ce-9644-91e2dde83f05",
       "b7194ba6-4b8e-4714-941a-8f2d8c06b0b9",
       "257333bf-80c5-4d62-9d58-e1178315c16e",
       "65b17acc-eaf4-48bb-b34d-395f5f49f33e",
@@ -602,17 +614,17 @@
       "1d4dc9fb-fd4f-4e23-ae42-5866086236da",
       "69ec0c17-c5f4-42c8-adf6-c359be7c341f",
       "e253c704-da45-4cf1-ae5b-2aed07bbaf52",
+      "4a6d2a66-2483-4d66-9f41-cd28ad327193",
       "897d76b8-0edf-4891-bf82-a77bece5c46e",
       "fb4977fa-b7f8-4039-9a2a-1f85bb267cdd",
-      "72006b8e-7eed-4d61-9621-93988fafaa3a",
       "353b65f7-6bfb-45ba-ab92-849b38a56b77",
       "fbeeb058-5eb8-46bd-9598-af18775f551f",
       "62d86bdb-6fb6-457d-9dbc-cb0221ab8859"
      ]
     },
-    "462170a7-35a9-42c3-94f6-7693ec64cc55": {
+    "3cb0cc4b-db25-4c29-911f-91fccfa23ec8": {
      "title": "Basgengivelse",
-     "id": "462170a7-35a9-42c3-94f6-7693ec64cc55",
+     "id": "3cb0cc4b-db25-4c29-911f-91fccfa23ec8",
      "references": [
       "4a1e2c69-c6b2-4e5f-bbe4-3867ec82baf4",
       "add448bc-f0a8-49ce-9644-91e2dde83f05",

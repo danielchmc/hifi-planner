@@ -13,6 +13,27 @@
    "url": "/hojtalere/gulvhojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "LFE",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, Pladespiller",
+   "Trådløs overførsel": "Bluetooth-indgang",
+   "Højtaler type": "Aktive HiFi højtalere",
+   "Streaming": "Bluetooth",
+   "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX",
+   "Bluetooth type": "5",
+   "Bluetooth technologi": "aptX"
+  },
+  "gallery": [
+   "18608bf8-1a19-4547-9e8b-248340cecd78",
+   "9c7fbaa1-b69a-4e7d-8bf3-57d5da9504e5",
+   "38c94a42-37b0-4ee1-8d45-24116f5a3fca",
+   "083edd42-f6f2-4e89-b1de-ed59419cf73a",
+   "d948a0e4-a632-4a5e-9935-c1e8c018694a",
+   "d2b16769-4dbc-433e-8ed5-a123471dd5f4"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 189210,
   "skuCode": "ARGFORTEA55MK2",
@@ -564,141 +585,220 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon FORTE A55 MK2 roses bredt for varm, klar og detaljeret lyd, stærkt stereoperspektiv, dyb og kontant bas samt høj lydstyrke uden forvrængning. Det elegante design, den indbyggede forstærker og de enkle tilslutningsmuligheder gør højttalerne til et attraktivt alternativ til en soundbar eller et traditionelt hi-fi-anlæg. Nogle lyttere savner endnu dybere bas eller bedre mulighed for at justere mellemtonen, mens fjernbetjeningens reaktion, kildeskift og automatisk tv-tænding lejlighedsvis skuffer.",
+   "summary": "Argon FORTE A55 MK2 leverer varm, klar og medrivende lyd med god stereoseparation, punchy bas og imponerende detaljer i forhold til prisen. Det elegante kabinet, den indbyggede forstærker og den nemme opsætning gør højttalerne særligt attraktive til musik og tv. Basdybde, fjernbetjeningens reaktion, forbindelsesstabilitet og manglende tonekontrol kritiseres af nogle, mens en subwoofer af mange opfattes som et supplement snarere end en nødvendighed.",
    "headlines": {
-    "clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en ren, varm, velafbalanceret og meget detaljeret gengivelse med overbevisende stereodybde og ingen hørbar forvrængning ved høj lydstyrke.",
-     "simpleTitle": "Klar, detaljeret og omsluttende lyd",
+    "warm, clear and detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående den klare, afbalancerede, varme og detaljerede gengivelse samt den gode separation og rene lyd ved høj lydstyrke.",
+     "simpleTitle": "Varm, klar og detaljeret lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "042f232e-fcb6-475c-b1b4-2de9f0ff0174"
+     "key": "sound-quality",
+     "groupId": "666d46f3-b66d-4a8c-b351-34968886c143"
     },
-    "powerful bass, with some listeners adding a subwoofer": {
-     "sentimentAnalysis": "De fleste kommentarer roser bassens punch, dybde og fyldige virkning i rummet, mens flere bemærker, at en subwoofer giver ekstra dybbas uden at være nødvendig.",
-     "simpleTitle": "Kraftig bas, men nogle lyttere tilføjer en subwoofer",
+    "deep, punchy bass, with subwoofer support for extra depth": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver bassen som fyldig, kraftfuld og imponerende dyb; flere ejere tilføjer en subwoofer for endnu mere basdybde.",
+     "simpleTitle": "Dyb og punchy bas, med ekstra dybde fra subwoofer",
      "bias": "positive",
      "key": "bass",
-     "groupId": "c2aa1231-1a7f-4b44-8b4a-f0a3ec43861f"
+     "groupId": "20d6819c-1b14-4e0b-89f6-21c6055dc693"
     },
-    "some listeners want more bass or midrange adjustment": {
-     "sentimentAnalysis": "Et mindretal af anmeldelserne oplever, at bassen ikke går dybt nok, eller at mellemtonen ikke kan justeres tilstrækkeligt; problemet løses ofte med en subwoofer eller equalizer.",
-     "simpleTitle": "Nogle lyttere savner mere bas eller justering af mellemtonen",
+    "remote and connection behaviour can be inconsistent": {
+     "sentimentAnalysis": "Flere anmeldelser nævner langsom eller svag fjernbetjening, lejlighedsvise problemer med kildeparring og ustabil tv- eller forbindelsesfunktion.",
+     "simpleTitle": "Fjernbetjening og forbindelser kan være ustabile",
      "bias": "negative",
-     "key": "bass",
-     "groupId": "c2aa1231-1a7f-4b44-8b4a-f0a3ec43861f"
+     "key": "setup-usability",
+     "groupId": "8fcffff1-241b-41c4-908f-fb3b1e2d866a"
+    },
+    "exceptional value for the price": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gentagne gange lyd, funktioner og ydelse som usædvanligt stærke til prisen.",
+     "simpleTitle": "Fremragende værdi for pengene",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "54b34aa5-43ea-4081-9eab-511180a9793b"
     },
     "elegant furniture-like design": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent højttalerne som stilfulde, elegante og nemme at integrere i hjemmet.",
-     "simpleTitle": "Elegant, møbellignende design",
+     "sentimentAnalysis": "Anmeldelserne roser ofte det stilfulde og elegante design, der passer godt ind i stuen.",
+     "simpleTitle": "Elegant design som et møbel",
      "bias": "positive",
      "key": "design",
-     "groupId": "e26d70c8-0882-4e2a-aac7-bbe7e4ffad68"
+     "groupId": "79ecb7ae-705d-4382-947d-0a8e4a0b7931"
     },
     "simple active-speaker setup": {
-     "sentimentAnalysis": "Den indbyggede forstærker, de nyttige indgange og den enkle opsætning værdsættes gentagne gange som et praktisk alternativ til separate hi-fi-komponenter.",
-     "simpleTitle": "Enkel opsætning med aktive højttalere",
+     "sentimentAnalysis": "Ejerne sætter pris på den indbyggede forstærker, plug-and-play-betjeningen og det mindre behov for separate komponenter.",
+     "simpleTitle": "Nem opsætning som aktive højttalere",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "e759659a-0add-4284-8d0d-5c328a405c5f"
+     "key": "setup-usability",
+     "groupId": "8fcffff1-241b-41c4-908f-fb3b1e2d866a"
     },
-    "remote and TV-control behaviour can be unreliable": {
-     "sentimentAnalysis": "Flere anmeldelser nævner forsinket eller svag reaktion fra fjernbetjeningen, upålidelig parring eller kildeskift samt lejlighedsvise problemer med automatisk tv-tænding.",
-     "simpleTitle": "Fjernbetjening og tv-styring kan være ustabil",
+    "bass depth can fall short without a subwoofer": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne savner dybere bas eller mere fysisk tryk og anbefaler en god subwoofer.",
+     "simpleTitle": "Basdybden kan være utilstrækkelig uden subwoofer",
      "bias": "negative",
-     "key": "usability",
-     "groupId": "e759659a-0add-4284-8d0d-5c328a405c5f"
+     "key": "bass",
+     "groupId": "20d6819c-1b14-4e0b-89f6-21c6055dc693"
     }
    },
    "grouping": {
-    "042f232e-fcb6-475c-b1b4-2de9f0ff0174": {
+    "666d46f3-b66d-4a8c-b351-34968886c143": {
      "title": "Lydkvalitet",
-     "id": "042f232e-fcb6-475c-b1b4-2de9f0ff0174",
+     "id": "666d46f3-b66d-4a8c-b351-34968886c143",
      "references": [
       "57573aab-ff1b-4367-a770-16368b3d49f4",
       "aa9daaba-963d-4db2-80f5-29bb18a23cef",
       "a360715a-6970-4a51-a5c7-5604fb367752",
       "49a99b7f-82e0-41b0-b603-4196e7861b00",
+      "87d71e2a-d86d-4b28-a4e6-4246432074ee",
       "8d82a4ba-1b8d-4a63-bc04-552794daecad",
       "a35a2f6c-a8f9-4b5b-a858-cb78579202f0",
+      "e7ac519c-e8e6-4368-bab9-242a7224bea1",
       "d3804f72-7d02-41bf-ad6d-f8abb3c38f0e",
+      "822b2b3a-3bea-4dfe-87d9-bc77386bb033",
       "36a97764-4c88-4d39-a29a-98223d747ef0",
+      "0e8f96b3-e2bb-465a-babf-e1e05c52be70",
       "6b778a3b-4728-48de-8e4c-e7ef6f63b162",
+      "eabd24a9-4510-4a9d-b253-af7828d88748",
       "d538fef2-8cac-4d01-be9d-e36282a7ca94",
       "45f97b1b-be40-41a5-8166-972476bd09cf",
+      "54aa7b6e-546a-4df6-a589-1beb187bac13",
+      "0b7c310f-2cea-480d-bc40-675d88b17496",
       "584a2ac3-2270-451c-aacf-967da235a76a",
       "1c09d81c-b27b-4524-a7dc-8f50c2f044f5",
+      "e38ed2a8-7e84-48a3-adbe-01e0e1d12496",
+      "df426d13-dfd4-49ed-97d1-4e7fe23c3ea0",
       "bd1494d6-d4b2-4586-9186-5497c4fa2a61",
+      "bdff9775-11fa-4faa-b0d5-20690c3f0831",
+      "bae7d405-3814-4051-b335-9c81c70312e5",
+      "6c429659-7493-464a-81a5-fa20ac169c34",
+      "ffbabd22-373c-4802-bf40-ee778210eb8e",
+      "b9e7aaf7-42c6-4b16-aa25-030d90ad91ba",
+      "53ade8f3-f81e-474a-882d-d58868bd9883",
+      "54d704fd-16ad-4306-b3d5-3bf5e51aa3f5",
+      "3104b234-2de7-4635-b2b5-11b6759b3c77",
+      "1538107a-1005-4ae5-9d9b-c7ea1016178c",
+      "40dcfab7-32dc-469c-b870-437c7f04edc6",
       "485a26c7-b7a1-4c3e-8359-d42dd79b38dd",
+      "8dbc24cd-c707-44a2-8bcc-04bd1aa816c4",
+      "5120ba4c-641d-4692-a3d0-7b2004a16db1",
+      "c1fa264b-594b-4ee7-8dc4-078c178b4e4a",
+      "67c00f89-cace-4e12-9844-ce0f3511e62d",
       "f2a2d1d8-f368-4785-a4c7-c2f1270c6b61",
+      "379bc579-89f0-4212-8ad3-7e1e2c2dee33",
+      "cea2205d-c15c-43cb-8471-0279b27fc0b8",
+      "4e07ea4c-26ae-4b48-a4aa-c46940ff19a1",
+      "8e6e606c-abd5-4c7f-9079-026d36608827",
       "0dd1d983-4367-4df3-bd6d-969d39c27c6a",
+      "ef3a1eaf-5529-4191-8461-ab24b6560cd4",
+      "b9b31e3b-88ce-48a8-9d41-bce5b5279890",
+      "089d01c0-11c1-4073-8568-6a4b6fe360a1",
+      "2e2c654a-256b-4df9-bdb5-a35d7ba4c541",
+      "c08fc8fc-87ec-4e46-a34a-da451a165251",
+      "d68e2c50-45df-4ee8-a35c-8440e8a420cf",
+      "53d7298d-d358-4a8f-a149-6fdc3e033987",
+      "e26ccf33-aadf-4c0f-9913-cf077429f3f1",
+      "0bbbf679-875e-48cb-91e1-7b37ec5b4336",
+      "63b5662f-74e3-40f2-819e-2498e4a588c9",
+      "efd79477-cd82-4e46-9779-c3b906b30064",
+      "b596d534-79a0-45a5-a3ef-bb4e68e4b6ad",
+      "36c496a5-e25d-4bf9-bf7f-474afecdafbe",
       "7dd582ef-41f5-42ca-9914-86e16d069835",
+      "b84b2cb0-672e-4a5d-aaf3-108eeb8b4b94",
+      "fc5dbb1d-991f-41d1-af32-b0edba5a851a",
+      "5cc3b741-0b1f-4572-ac64-93a618a1117f",
+      "e7637d19-83c9-4af9-8047-9956800d727f",
+      "227f0c87-4144-4d18-ad29-96de9b5fc1b9",
+      "d893ee4d-f1ca-4c8e-9e34-9be871066305",
+      "9c27b54a-0017-4a75-bb18-b04397e88894",
+      "861cc881-e76a-4487-a24e-4162d7091dbd",
+      "324758b6-036b-4fcc-a8ec-df11bb587dee",
+      "aa546168-8246-4f1c-b4a4-83ce1969ded4",
+      "06066735-b78c-45c7-b0e7-1705fd67b4e6",
       "414bac91-ea0d-4ac5-a86d-3447920be5d8",
-      "861cc881-e76a-4487-a24e-4162d7091dbd"
+      "ace3bdf1-6a67-44db-b0fc-d2d49c091316",
+      "f39e038d-3cc0-42c8-b3db-2cb689fef7af",
+      "74a7481d-e082-4239-bc2b-3b2bd3ba7381"
      ]
     },
-    "e759659a-0add-4284-8d0d-5c328a405c5f": {
-     "title": "Betjening og tilslutning",
-     "id": "e759659a-0add-4284-8d0d-5c328a405c5f",
+    "8fcffff1-241b-41c4-908f-fb3b1e2d866a": {
+     "title": "Opsætning og betjening",
+     "id": "8fcffff1-241b-41c4-908f-fb3b1e2d866a",
      "references": [
       "a35a2f6c-a8f9-4b5b-a858-cb78579202f0",
       "9009050f-361f-4bce-af1a-f0d6407f7059",
       "e360ee97-2bcc-44c6-918d-8448efbefe30",
       "255b4f6c-ed03-4b86-8ca4-eac544832671",
       "63675eb8-db38-44e4-b55c-030b8f59d24a",
-      "45f97b1b-be40-41a5-8166-972476bd09cf",
       "8dbc24cd-c707-44a2-8bcc-04bd1aa816c4",
-      "b9e7aaf7-42c6-4b16-aa25-030d90ad91ba",
-      "54d704fd-16ad-4306-b3d5-3bf5e51aa3f5",
-      "3cefed34-37ce-43a5-bd48-deb190e1b82b",
       "f2a2d1d8-f368-4785-a4c7-c2f1270c6b61",
+      "b9e7aaf7-42c6-4b16-aa25-030d90ad91ba",
       "0dd1d983-4367-4df3-bd6d-969d39c27c6a",
       "ef3a1eaf-5529-4191-8461-ab24b6560cd4",
-      "53d7298d-d358-4a8f-a149-6fdc3e033987",
+      "2e2c654a-256b-4df9-bdb5-a35d7ba4c541",
       "0bbbf679-875e-48cb-91e1-7b37ec5b4336",
+      "b84b2cb0-672e-4a5d-aaf3-108eeb8b4b94",
       "fc5dbb1d-991f-41d1-af32-b0edba5a851a",
+      "227f0c87-4144-4d18-ad29-96de9b5fc1b9",
+      "861cc881-e76a-4487-a24e-4162d7091dbd",
       "aa546168-8246-4f1c-b4a4-83ce1969ded4",
-      "06066735-b78c-45c7-b0e7-1705fd67b4e6"
+      "06066735-b78c-45c7-b0e7-1705fd67b4e6",
+      "414bac91-ea0d-4ac5-a86d-3447920be5d8",
+      "53d7298d-d358-4a8f-a149-6fdc3e033987"
      ]
     },
-    "c2aa1231-1a7f-4b44-8b4a-f0a3ec43861f": {
-     "title": "Basgengivelse",
-     "id": "c2aa1231-1a7f-4b44-8b4a-f0a3ec43861f",
+    "20d6819c-1b14-4e0b-89f6-21c6055dc693": {
+     "title": "Bas",
+     "id": "20d6819c-1b14-4e0b-89f6-21c6055dc693",
      "references": [
       "87d71e2a-d86d-4b28-a4e6-4246432074ee",
       "8d82a4ba-1b8d-4a63-bc04-552794daecad",
       "e7ac519c-e8e6-4368-bab9-242a7224bea1",
       "d3804f72-7d02-41bf-ad6d-f8abb3c38f0e",
-      "d538fef2-8cac-4d01-be9d-e36282a7ca94",
       "584a2ac3-2270-451c-aacf-967da235a76a",
+      "d538fef2-8cac-4d01-be9d-e36282a7ca94",
       "df426d13-dfd4-49ed-97d1-4e7fe23c3ea0",
-      "e38ed2a8-7e84-48a3-adbe-01e0e1d12496",
       "bae7d405-3814-4051-b335-9c81c70312e5",
       "c1fa264b-594b-4ee7-8dc4-078c178b4e4a",
+      "485a26c7-b7a1-4c3e-8359-d42dd79b38dd",
       "5f66fd9e-365c-49b0-a389-54d51b6a8d51",
       "e26ccf33-aadf-4c0f-9913-cf077429f3f1",
-      "d893ee4d-f1ca-4c8e-9e34-9be871066305",
       "7dd582ef-41f5-42ca-9914-86e16d069835",
       "fc5dbb1d-991f-41d1-af32-b0edba5a851a",
+      "d893ee4d-f1ca-4c8e-9e34-9be871066305",
       "414bac91-ea0d-4ac5-a86d-3447920be5d8"
      ]
     },
-    "e26d70c8-0882-4e2a-aac7-bbe7e4ffad68": {
+    "79ecb7ae-705d-4382-947d-0a8e4a0b7931": {
      "title": "Design",
-     "id": "e26d70c8-0882-4e2a-aac7-bbe7e4ffad68",
+     "id": "79ecb7ae-705d-4382-947d-0a8e4a0b7931",
      "references": [
-      "57573aab-ff1b-4367-a770-16368b3d49f4",
       "a360715a-6970-4a51-a5c7-5604fb367752",
       "0e8f96b3-e2bb-465a-babf-e1e05c52be70",
-      "6b778a3b-4728-48de-8e4c-e7ef6f63b162",
       "3104b234-2de7-4635-b2b5-11b6759b3c77",
-      "8dbc24cd-c707-44a2-8bcc-04bd1aa816c4",
       "f2a2d1d8-f368-4785-a4c7-c2f1270c6b61",
       "379bc579-89f0-4212-8ad3-7e1e2c2dee33",
       "8e6e606c-abd5-4c7f-9079-026d36608827",
       "0dd1d983-4367-4df3-bd6d-969d39c27c6a",
+      "0bbbf679-875e-48cb-91e1-7b37ec5b4336",
+      "b84b2cb0-672e-4a5d-aaf3-108eeb8b4b94",
       "e7637d19-83c9-4af9-8047-9956800d727f",
       "9c27b54a-0017-4a75-bb18-b04397e88894",
-      "0bbbf679-875e-48cb-91e1-7b37ec5b4336"
+      "efd79477-cd82-4e46-9779-c3b906b30064"
+     ]
+    },
+    "54b34aa5-43ea-4081-9eab-511180a9793b": {
+     "title": "Pris og kvalitet",
+     "id": "54b34aa5-43ea-4081-9eab-511180a9793b",
+     "references": [
+      "0b7c310f-2cea-480d-bc40-675d88b17496",
+      "0e8f96b3-e2bb-465a-babf-e1e05c52be70",
+      "df426d13-dfd4-49ed-97d1-4e7fe23c3ea0",
+      "485a26c7-b7a1-4c3e-8359-d42dd79b38dd",
+      "8dbc24cd-c707-44a2-8bcc-04bd1aa816c4",
+      "5120ba4c-641d-4692-a3d0-7b2004a16db1",
+      "67c00f89-cace-4e12-9844-ce0f3511e62d",
+      "f2a2d1d8-f368-4785-a4c7-c2f1270c6b61",
+      "c4d0c941-7f83-4b57-afcd-95a1be2501a6",
+      "36c496a5-e25d-4bf9-bf7f-474afecdafbe",
+      "d893ee4d-f1ca-4c8e-9e34-9be871066305",
+      "74a7481d-e082-4239-bc2b-3b2bd3ba7381"
      ]
     }
    },

@@ -13,6 +13,15 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : RCA eller XLR"
+  },
+  "gallery": [
+   "8c6d85c8-0ade-4093-bfe7-97f9cdb48781"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 31834,
   "skuCode": "AQREDRIVERIN",
@@ -287,11 +296,12 @@
      "productCode": "AQREDRIVERIN2,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -441,11 +451,11 @@
      "productCode": "AQREDRIVERIN5,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -593,48 +603,34 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ Red River leverer en varm, klar og punchy lyd med imponerende detaljer og en stærkt medrivende gengivelse. Flere sammenligninger beskriver en markant forbedring i forhold til billigere eller ældre signalkabler, mens kablet forbliver transparent og diskret i signalvejen. Den førsteklasses konstruktion og den gennemgående høje tilfredshed gør AQ Red River til en stærk anbefaling trods en vis usikkerhed om værdien uden bredere sammenligninger i prisklassen.",
+   "summary": "AQREDRIVERIN leverer en klar, ren og meget detaljeret lyd og beskrives ofte som en markant opgradering i forhold til billigere eller ældre kabler. Kablet giver en mere dynamisk, detaljeret og omsluttende musikgengivelse uden selv at dominere signalvejen. Den høje kvalitet og stærke lydpræstation gør købet let at anbefale, selv om prisen og manglende direkte sammenligninger giver enkelte købere betænkeligheder.",
    "headlines": {
     "major upgrade over cheaper or older cables": {
-     "sentimentAnalysis": "Sammenligninger beskriver konsekvent en markant lydmæssig forbedring i forhold til billigere eller ældre signalkabler.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver en tydeligt hørbar forbedring i forhold til tidligere, billigere eller ringere kabler.",
      "simpleTitle": "Markant opgradering i forhold til billigere eller ældre kabler",
      "bias": "positive",
-     "key": "upgrade-over-cheaper-cables",
-     "groupId": "865f3c81-d61d-414d-8a69-dcc5a6bc4a54"
+     "key": "sound-quality",
+     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
     },
-    "clear, detailed and revealing sound": {
-     "sentimentAnalysis": "Kablet roses for ren, klar gengivelse, der afslører musikalske detaljer, som tidligere ikke blev hørt.",
-     "simpleTitle": "Klar, detaljeret og afslørende lyd",
+    "clearer sound with more detail": {
+     "sentimentAnalysis": "Anmeldelserne roser den rene, klare gengivelse og evnen til at afsløre hidtil uhørte musikalske detaljer.",
+     "simpleTitle": "Klarere lyd med flere detaljer",
      "bias": "positive",
-     "key": "clear-detailed-sound",
-     "groupId": "865f3c81-d61d-414d-8a69-dcc5a6bc4a54"
+     "key": "sound-quality",
+     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
     },
-    "high-quality construction": {
-     "sentimentAnalysis": "Både korte og detaljerede kommentarer beskriver kablet som vellavet og af høj kvalitet.",
-     "simpleTitle": "Høj kvalitet i konstruktionen",
-     "bias": "positive",
-     "key": "high-quality-construction",
-     "groupId": "573311d9-0eed-4a05-971b-2f12fdd91908"
-    },
-    "transparent and unobtrusive in the signal path": {
-     "sentimentAnalysis": "Kablet værdsættes for at overføre signalet troværdigt uden at tilføre en hørbar egenkarakter.",
-     "simpleTitle": "Transparent og diskret i signalvejen",
-     "bias": "positive",
-     "key": "transparent-signal-path",
-     "groupId": "865f3c81-d61d-414d-8a69-dcc5a6bc4a54"
-    },
-    "limited comparison with other cables": {
-     "sentimentAnalysis": "De positive lydindtryk nuanceres af manglende sammenligninger med et bredere udvalg af kabler i samme prisklasse.",
-     "simpleTitle": "Begrænsede sammenligninger med andre kabler",
+    "performance is not directly compared by everyone": {
+     "sentimentAnalysis": "Positive indtryk nuanceres af begrænsede sammenligninger med andre kabler i samme klasse.",
+     "simpleTitle": "Ydelsen sammenlignes ikke direkte af alle",
      "bias": "meh",
-     "key": "limited-comparison",
-     "groupId": "865f3c81-d61d-414d-8a69-dcc5a6bc4a54"
+     "key": "sound-quality",
+     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
     }
    },
    "grouping": {
-    "865f3c81-d61d-414d-8a69-dcc5a6bc4a54": {
+    "6d8e2424-6c47-4df9-8ed3-85404de67e44": {
      "title": "Lydkvalitet",
-     "id": "865f3c81-d61d-414d-8a69-dcc5a6bc4a54",
+     "id": "6d8e2424-6c47-4df9-8ed3-85404de67e44",
      "references": [
       "e338d8b7-307d-4498-b500-b48afb7ac344",
       "bc13e595-5759-4004-b6a2-c5556665d873",
@@ -646,17 +642,6 @@
       "b0cbb552-8090-4781-aed9-17596c37e221",
       "210f807a-65f6-41be-a39e-c63e0cb76e10",
       "c459de9d-1a7f-435b-8552-a31573e675b2"
-     ]
-    },
-    "573311d9-0eed-4a05-971b-2f12fdd91908": {
-     "title": "Byggekvalitet",
-     "id": "573311d9-0eed-4a05-971b-2f12fdd91908",
-     "references": [
-      "7820b831-1774-43ac-b780-dff49fd1795c",
-      "c23f7262-292b-483b-981c-881ae6a00daa",
-      "93abc861-0dad-4e88-937d-e2cf9610e892",
-      "a656bd42-c11d-44c4-ad51-73fd7e520866",
-      "210f807a-65f6-41be-a39e-c63e0cb76e10"
      ]
     }
    },

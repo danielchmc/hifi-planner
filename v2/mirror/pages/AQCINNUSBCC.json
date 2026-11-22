@@ -13,6 +13,13 @@
    "url": "/kabler/digital-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "a65053ee-7464-4266-b78c-294c0d7a20fc"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 161043,
   "skuCode": "AQCINNUSBCC",
@@ -126,10 +133,10 @@
      "productCode": "AQCINNUSBCC075"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 13. december",
+     "deliveryDate": "2026-12-13T00:00:00Z",
      "canBuyOnline": true,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

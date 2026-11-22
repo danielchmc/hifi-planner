@@ -13,6 +13,22 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "6"
+  },
+  "gallery": [
+   "d721ab54-04dd-4d0d-a863-f7de2baf8ed8",
+   "49091f79-3bf2-407c-a902-6a1313daea3d",
+   "630a1313-bfc3-48b4-96d7-5906f0f1f834",
+   "90788901-5331-48eb-ace3-935667e12860",
+   "12a523e8-2672-4058-b10a-2723f78d3c8f",
+   "2953411e-9e6f-40a9-b7d0-e89d7fe6d835",
+   "ef956a16-418a-455e-8d02-fce725123fa2",
+   "b2cda60e-2bdf-41d3-b780-8cdbffb44382"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 230970,
   "skuCode": "ORTCONCMBLU",
@@ -151,7 +167,7 @@
      "description": "Forventes på lager mandag den 21. december",
      "deliveryDate": "2026-12-21T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
@@ -233,32 +249,38 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Ortofon Concorde Music Blue leverer en varm, slagkraftig, dynamisk og meget detaljeret analog lyd med en imponerende rumfornemmelse. Det høje output og den kontrollerede gengivelse giver musikken kraft uden at gå på kompromis med klarhed og naturlighed. Pickuppen opfattes som en fremragende opgradering og en stærk anbefaling, især til velproducerede plader.",
+   "summary": "Ortofon Concorde Music Blue roses bredt som en fremragende analog pickup med varm, slagkraftig, dynamisk og meget detaljeret lyd. Gengivelsen er rummelig, luftig og kraftfuld, men stadig kontrolleret, hvilket gør velindspillede vinylplader særligt medrivende. Den stærke værdi for pengene og alsidige musikalske præstation gør pickupen let at anbefale, selv om svage presninger afsløres tydeligt, og der måske mangler lidt af dyrere alternativers charme.",
    "headlines": {
-    "detailed and dynamic sound": {
-     "sentimentAnalysis": "Pickuppen roses for at kombinere høj detaljeopløsning med en levende og dynamisk musikgengivelse.",
-     "simpleTitle": "Detaljeret og dynamisk lyd",
+    "detailed, dynamic and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent kombinationen af fine detaljer, stærk dynamik og en luftig, rummelig gengivelse.",
+     "simpleTitle": "Detaljeret, dynamisk og rummelig lyd",
      "bias": "positive",
-     "key": "detailed-dynamic-sound",
-     "groupId": "9f07fa9f-9acb-408b-8552-4fd05ee8ae06"
+     "key": "detailed-dynamic-spacious-sound",
+     "groupId": "8d265199-cd56-4af0-8863-9b44a5fb1438"
     },
-    "powerful and spacious presentation": {
-     "sentimentAnalysis": "Lyden beskrives som slagkraftig, kontrolleret, luftig og rummelig, med et output der giver musikken stor gennemslagskraft.",
-     "simpleTitle": "Kraftfuld og rummelig gengivelse",
+    "powerful and natural presentation": {
+     "sentimentAnalysis": "Pickupen beskrives som leverende en slagkraftig lyd med høj output, der forbliver naturlig og kontrolleret over hele frekvensområdet.",
+     "simpleTitle": "Kraftfuld og naturlig gengivelse",
      "bias": "positive",
-     "key": "powerful-spacious-presentation",
-     "groupId": "9f07fa9f-9acb-408b-8552-4fd05ee8ae06"
+     "key": "powerful-natural-presentation",
+     "groupId": "8d265199-cd56-4af0-8863-9b44a5fb1438"
+    },
+    "weak pressings are exposed": {
+     "sentimentAnalysis": "Den afslørende og transparente gengivelse skjuler ikke fejl ved dårligt producerede eller flade presninger.",
+     "simpleTitle": "Svage presninger afsløres",
+     "bias": "negative",
+     "key": "revealing-playback",
+     "groupId": "8d265199-cd56-4af0-8863-9b44a5fb1438"
     }
    },
    "grouping": {
-    "9f07fa9f-9acb-408b-8552-4fd05ee8ae06": {
+    "8d265199-cd56-4af0-8863-9b44a5fb1438": {
      "title": "Lydkvalitet",
-     "id": "9f07fa9f-9acb-408b-8552-4fd05ee8ae06",
+     "id": "8d265199-cd56-4af0-8863-9b44a5fb1438",
      "references": [
       "b7310e1d-2281-4f64-b5d1-596d636d8ece",
       "4e1a3414-8225-45cb-9b98-ad02b4553f66",
       "ca55408e-57e2-403e-9f35-f4d0f0eaadd0",
-      "68ceb768-0016-4347-86d6-bb5bd4068571",
       "da850661-196a-416f-9472-15593f2af443",
       "6752fc90-c3a3-4d88-9475-40ad667913dc"
      ]

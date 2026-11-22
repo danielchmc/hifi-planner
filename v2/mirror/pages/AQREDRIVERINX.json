@@ -13,6 +13,15 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : RCA eller XLR"
+  },
+  "gallery": [
+   "027166ac-2a68-49ab-b52c-0f79f6cc0066"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 129354,
   "skuCode": "AQREDRIVERINX",
@@ -128,7 +137,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 13,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,11 +366,11 @@
      "productCode": "AQREDRIVERIN3,0X"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -535,41 +544,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQREDRIVERINX leverer en imponerende klar, transparent og medrivende lyd med et bredt, kontrolleret lydbillede og en afslappet karakter. Konstruktionen føles solid og teknisk gennemarbejdet, mens prisen generelt vurderes som fremragende i forhold til ydelsen. En overbevisende opgradering til balancerede lydsystemer med slagkraftige detaljer og en åben, musikalsk gengivelse.",
+   "summary": "AQREDRIVERINX roses bredt som et velkonstrueret og teknisk imponerende kabel med fremragende værdi for pengene. Den balancerede forbindelse forbindes med en klarere, mere transparent og rummelig lyd med en varm og afslappet karakter sammenlignet med billigere alternativer. Samlet set giver kablet en slagkraftig og medrivende opgradering til en attraktiv pris.",
    "headlines": {
-    "solid, well-finished construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende kablet som pålideligt, teknisk solidt og veludført.",
-     "simpleTitle": "Solid og veludført konstruktion",
+    "clearer, more spacious sound": {
+     "sentimentAnalysis": "Det balancerede kabel roses for krystalklar, transparent lyd samt et bredere og mere kontrolleret lydbillede.",
+     "simpleTitle": "Klarere og mere rummelig lyd",
      "bias": "positive",
-     "key": "solid_construction",
-     "groupId": "d0199e33-e685-4562-a721-7bb8f8b8a93c"
+     "key": "clearer-more-spacious-sound",
+     "groupId": "0959c010-5f1d-4590-b0cd-98748ab794fb"
     },
-    "clearer and more transparent sound": {
-     "sentimentAnalysis": "Den balancerede forbindelse roses for at åbne lyden, øge transparensen og levere krystalklar gengivelse.",
-     "simpleTitle": "Klarere og mere transparent lyd",
+    "solid, well-made construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende kablet som robust, teknisk solidt og velbygget.",
+     "simpleTitle": "Solid og velbygget konstruktion",
      "bias": "positive",
-     "key": "sound_clarity",
-     "groupId": "799f3e4a-2e7f-41b8-8361-c56ab7a10107"
+     "key": "solid-construction",
+     "groupId": "8ce2cb63-b2f5-4054-aa60-9535c8c43c42"
     },
-    "major upgrade to the audio system": {
-     "sentimentAnalysis": "Skiftet til balancerede kabler beskrives som transformerende med en bredere, mere kontrolleret gengivelse og følelsen af et nyt anlæg.",
-     "simpleTitle": "Stor opgradering af lydanlægget",
+    "more relaxed than cheaper cables": {
+     "sentimentAnalysis": "Kablet ses som en god opgradering, der giver en mere afslappet og behagelig gengivelse end billige alternativer.",
+     "simpleTitle": "Mere afslappet end billigere kabler",
      "bias": "positive",
-     "key": "system_upgrade",
-     "groupId": "799f3e4a-2e7f-41b8-8361-c56ab7a10107"
+     "key": "relaxed-sound",
+     "groupId": "0959c010-5f1d-4590-b0cd-98748ab794fb"
     },
     "excellent value for the price": {
-     "sentimentAnalysis": "Kablet vurderes som overraskende godt i sin prisklasse og generelt attraktivt prissat.",
+     "sentimentAnalysis": "Kablet vurderes som overraskende godt til prisen, og både værdien og købsoplevelsen får ros.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "price_value",
-     "groupId": "f56e638e-4596-4f89-8818-1cd10ee8d10e"
+     "key": "excellent-value",
+     "groupId": "3202cd96-c75e-45ae-8d0a-f01fa8d34be8"
     }
    },
    "grouping": {
-    "799f3e4a-2e7f-41b8-8361-c56ab7a10107": {
+    "0959c010-5f1d-4590-b0cd-98748ab794fb": {
      "title": "Lydkvalitet",
-     "id": "799f3e4a-2e7f-41b8-8361-c56ab7a10107",
+     "id": "0959c010-5f1d-4590-b0cd-98748ab794fb",
      "references": [
       "8467b76d-b564-4cbb-9368-fd0c046836dc",
       "f5485b16-dfed-42d2-a858-9f21ad6ccd0d",
@@ -577,18 +586,19 @@
       "38670e21-d961-4ca9-b9eb-ac535d83ed34"
      ]
     },
-    "d0199e33-e685-4562-a721-7bb8f8b8a93c": {
+    "8ce2cb63-b2f5-4054-aa60-9535c8c43c42": {
      "title": "Byggekvalitet",
-     "id": "d0199e33-e685-4562-a721-7bb8f8b8a93c",
+     "id": "8ce2cb63-b2f5-4054-aa60-9535c8c43c42",
      "references": [
       "f36d1ca0-cce2-461e-8985-2248977e873d",
       "dde68325-5e72-42c8-a314-f12805d3a9a7",
+      "351b1c35-4a5f-47ce-90be-47557333f6c1",
       "76f438ab-078f-4fcd-9ab4-d6efc1967b90"
      ]
     },
-    "f56e638e-4596-4f89-8818-1cd10ee8d10e": {
+    "3202cd96-c75e-45ae-8d0a-f01fa8d34be8": {
      "title": "Værdi for pengene",
-     "id": "f56e638e-4596-4f89-8818-1cd10ee8d10e",
+     "id": "3202cd96-c75e-45ae-8d0a-f01fa8d34be8",
      "references": [
       "351b1c35-4a5f-47ce-90be-47557333f6c1",
       "c5512928-6137-42ea-a541-bddcba7bca06"

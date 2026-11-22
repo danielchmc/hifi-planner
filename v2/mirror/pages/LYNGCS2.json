@@ -13,6 +13,16 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "d1d9cd5b-e613-4190-8588-1640f79cce35",
+   "daa9223b-5d06-406c-81d6-c543b9ddb934",
+   "012209f3-5a4a-4e36-9813-82321847c6cc",
+   "8757ac43-c6d3-4180-bbe9-a9dcb2604e4e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214274,
   "skuCode": "LYNGCS2",
@@ -261,41 +271,25 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGCS2 leverer en varm, klar og engagerende lyd samt et solidt og attraktivt udtryk. Højttalerne passer særligt godt ind i omhyggeligt sammensatte anlæg og fungerer også fremragende ved diskret montering i et skab. Basdybden kan føles en smule begrænset for lyttere, der ønsker et kraftigere fundament i de dybe frekvenser.",
+   "summary": "LYNGCS2 leverer en varm, klar og omsluttende lyd med en solid og flot konstruktion og fungerer særligt godt sammen med kompetente forstærkere og komplette lydsystemer. Højttalerne kan integreres elegant i møbler og yder imponerende selv bag tilpassede skabslåger. Bassen kan virke en smule mindre dyb for lyttere, der ønsker et fyldigere fundament, men helhedsindtrykket er stadig meget tilfredsstillende.",
    "headlines": {
-    "clear, engaging sound": {
-     "sentimentAnalysis": "Lyden roses bredt som smuk, fremragende og meget tilfredsstillende.",
-     "simpleTitle": "Klar og engagerende lyd",
+    "clear, impressive sound": {
+     "sentimentAnalysis": "Højttalerne roses for en flot, fremragende og meget tilfredsstillende lyd både alene og i komplette systemer.",
+     "simpleTitle": "Klar og imponerende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "5c51bd2e-e0d8-44d0-9b07-cd324c6e2d94"
-    },
-    "easy integration into complete systems": {
-     "sentimentAnalysis": "Højttalerne passer godt sammen med tilhørende elektronik og kan med succes integreres i diskrete møbelbaserede opsætninger.",
-     "simpleTitle": "Nem integration i komplette systemer",
-     "bias": "positive",
-     "key": "system-integration",
-     "groupId": "b0ad81fa-ad8d-4ddd-8237-1b04058a2ef9"
+     "key": "clear-impressive-sound",
+     "groupId": "3db0da6b-6387-46bd-b2fe-5a0a7128afdf"
     }
    },
    "grouping": {
-    "5c51bd2e-e0d8-44d0-9b07-cd324c6e2d94": {
+    "3db0da6b-6387-46bd-b2fe-5a0a7128afdf": {
      "title": "Lydkvalitet",
-     "id": "5c51bd2e-e0d8-44d0-9b07-cd324c6e2d94",
+     "id": "3db0da6b-6387-46bd-b2fe-5a0a7128afdf",
      "references": [
       "ebe48188-7cfd-434b-9f2f-33a28fc36a78",
       "e4621a4f-a6ec-4659-acfe-80ec565f3c08",
       "eacd7828-2dd4-4fa4-9c18-c7ba49300d4c",
       "a81b55f5-9703-4c23-8123-9eef49dabd46",
-      "be28fa76-7bab-4039-a767-7582d6a6d874"
-     ]
-    },
-    "b0ad81fa-ad8d-4ddd-8237-1b04058a2ef9": {
-     "title": "Systemintegration",
-     "id": "b0ad81fa-ad8d-4ddd-8237-1b04058a2ef9",
-     "references": [
-      "e4621a4f-a6ec-4659-acfe-80ec565f3c08",
-      "eacd7828-2dd4-4fa4-9c18-c7ba49300d4c",
       "be28fa76-7bab-4039-a767-7582d6a6d874"
      ]
     }

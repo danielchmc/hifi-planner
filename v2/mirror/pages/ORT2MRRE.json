@@ -13,6 +13,16 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "04cb897b-2aea-482c-8062-58248b19fbe9",
+   "d23d5b2a-82d8-4bcf-b2d3-44c507229c87",
+   "e53ab7bc-53a3-4ccb-965d-004e3e58f955",
+   "7c1848fa-af20-4bae-bd10-c4909e3d5dfd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 217901,
   "skuCode": "ORT2MRRE",
@@ -108,8 +118,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 8,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -165,34 +175,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORT2MRRE giver en markant, varm og energisk lydopgradering med større klarhed og musikalsk lytteglæde ved afspilning af vinyl. Den engagerende gengivelse byder på overbevisende kvalitet til en attraktiv pris, med fyldigere dybe frekvenser og flere hørbare detaljer på egnede indspilninger. Den enkle installation og den fornyede glæde ved pladespil gør denne pickup til en særdeles overbevisende opgradering.",
+   "summary": "ORT2MRRE leverer en varm og dynamisk lyd med en tydelig hørbar forbedring i forhold til slidte eller enklere pickupper. Detaljeret instrumentadskillelse og dybere, mere præcis bas får velkendte plader til at føles nye og medrivende. Den stærke værdi for pengene og den pålidelige funktion i hverdagen gør denne pickup til en særdeles overbevisende opgradering.",
    "headlines": {
-    "clearly improved sound": {
-     "sentimentAnalysis": "Pickuppen roses gentagne gange for en tydeligt hørbar og markant forbedring i forhold til den tidligere lyd.",
-     "simpleTitle": "Mærkbart forbedret lyd",
+    "clear improvement in sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en tydeligt hørbar og markant lydforbedring efter opgradering til ORT2MRRE.",
+     "simpleTitle": "Tydelig forbedring af lyden",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "37e4b899-3cff-4c51-be8e-8097865a498d"
+     "key": "sound-upgrade",
+     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
     },
-    "pleasant, high-quality sound": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver lyden ved daglig lytning som behagelig, fremragende og af høj kvalitet.",
-     "simpleTitle": "Behagelig lyd i høj kvalitet",
+    "good overall sound": {
+     "sentimentAnalysis": "Flere anmeldelser roser pickupens behagelige lyd i god kvalitet uden forbehold.",
+     "simpleTitle": "God samlet lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "37e4b899-3cff-4c51-be8e-8097865a498d"
+     "key": "overall-sound",
+     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
     },
-    "strong value for money": {
-     "sentimentAnalysis": "Produktet vurderes som særdeles prisvenligt og kombinerer stærk ydeevne med en lav eller rimelig pris.",
-     "simpleTitle": "Meget for pengene",
+    "more detail and stronger bass": {
+     "sentimentAnalysis": "Pickuppen gør tidligere uhørte instrumenter hørbare og bringer de dybe frekvenser tydeligere frem.",
+     "simpleTitle": "Flere detaljer og kraftigere bas",
      "bias": "positive",
-     "key": "value",
-     "groupId": "70763722-4805-4a30-b3db-6a9d5cde9a7e"
+     "key": "detail-and-bass",
+     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
+    },
+    "low price for the performance": {
+     "sentimentAnalysis": "Anmeldelserne beskriver pickupen som en prisvenlig måde at genoprette eller forbedre et pladespillersystem på.",
+     "simpleTitle": "Lav pris i forhold til ydelsen",
+     "bias": "positive",
+     "key": "affordable-upgrade",
+     "groupId": "9aa3b041-c5a7-414e-9f5c-c604095b67a7"
     }
    },
    "grouping": {
-    "37e4b899-3cff-4c51-be8e-8097865a498d": {
+    "d5d21404-c3bd-479f-b7d2-aa15d05278cd": {
      "title": "Lydkvalitet",
-     "id": "37e4b899-3cff-4c51-be8e-8097865a498d",
+     "id": "d5d21404-c3bd-479f-b7d2-aa15d05278cd",
      "references": [
       "e6ba51f5-e18c-4613-8853-cd6ad570ff9a",
       "eda0acfa-2ae5-4ae7-a863-840455ae82e9",
@@ -206,9 +223,9 @@
       "d20c7f8d-e17e-4932-a0f9-b3e2d37ae887"
      ]
     },
-    "70763722-4805-4a30-b3db-6a9d5cde9a7e": {
+    "9aa3b041-c5a7-414e-9f5c-c604095b67a7": {
      "title": "Værdi for pengene",
-     "id": "70763722-4805-4a30-b3db-6a9d5cde9a7e",
+     "id": "9aa3b041-c5a7-414e-9f5c-c604095b67a7",
      "references": [
       "9d948991-5cd4-4dff-b3d1-ec64300f9019",
       "d20c7f8d-e17e-4932-a0f9-b3e2d37ae887"

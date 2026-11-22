@@ -13,6 +13,15 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : Valgfri"
+  },
+  "gallery": [
+   "aabaee45-9648-4db3-afed-03e6789d8384"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 140488,
   "skuCode": "AQSLIPDB14-4SCX",
@@ -125,7 +134,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 1695,
+     "availableQuantity": 1999,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -147,49 +156,69 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette højttalerkabel giver en varm, punchy og overbevisende opgradering med fyldigere bas, en glat top og en balanceret, medrivende lyd. Bi-wiring giver især hørbare forbedringer til minimale omkostninger, mens konstruktionen med fire lederpar er solid og praktisk at installere. Fremragende værdi kombinerer imponerende lyd med nem håndtering ved både korte og lange kabeltræk.",
+   "summary": "Dette højttalerkabel roses bredt for en klar, varm og slagkraftig lydforbedring, især i bi-wire-opsætninger, samtidig med at det giver imponerende værdi for pengene. Det robuste design med fire lederpar er praktisk til lange kabeltræk og enkel installation, men ved single-wire-tilslutning skal lederne samles korrekt. Samlet set leverer kablet en medrivende, afbalanceret gengivelse og en prisvenlig opgradering til egnede højttalere og forstærkere.",
    "headlines": {
-    "clear improvement in sound": {
-     "sentimentAnalysis": "Kablet roses for en tydeligt hørbar og overraskende stor forbedring i forhold til tidligere opsætninger.",
-     "simpleTitle": "Tydelig forbedring af lyden",
+    "clear improvement in sound quality": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som en tydeligt hørbar og meget tilfredsstillende forbedring med mere bas, behagelige høje toner og afbalanceret lyd.",
+     "simpleTitle": "Tydelig forbedring af lydkvaliteten",
      "bias": "positive",
      "key": "sound-improvement",
-     "groupId": "6c40099b-f7d5-454a-abf1-d44fe8ce97f9"
+     "groupId": "51a69c64-145c-48bb-bf5f-7cfb09b08312"
     },
-    "fuller bass and balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver mere tyngde i bunden samtidig med en behagelig top og en generelt balanceret klang.",
-     "simpleTitle": "Fyldigere bas og balanceret lyd",
+    "strong value for money": {
+     "sentimentAnalysis": "De oplevede lydforbedringer anses for usædvanligt store i forhold til prisen, hvilket gør kablet til en attraktiv opgradering også uden rabat.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "balanced-full-sound",
-     "groupId": "6c40099b-f7d5-454a-abf1-d44fe8ce97f9"
+     "key": "value",
+     "groupId": "51a69c64-145c-48bb-bf5f-7cfb09b08312"
     },
-    "easy to install and route": {
-     "sentimentAnalysis": "Den fleksible konstruktion med flere ledere er nem at bearbejde og trække gennem rør, også over lange afstande.",
-     "simpleTitle": "Nem at installere og føre",
+    "practical and sturdy cable design": {
+     "sentimentAnalysis": "Kablet opleves som solidt, let at trække gennem lange eller tomme rør og nemt at afslutte pænt med krympeflex.",
+     "simpleTitle": "Praktisk og robust kabeldesign",
      "bias": "positive",
-     "key": "easy-installation",
-     "groupId": "15afc5cb-189a-4ea3-9f85-3cd397e43d88"
+     "key": "practical-design",
+     "groupId": "e9793ae1-d0ff-4dca-90e1-060c7d6c389e"
+    },
+    "effective bi-wire upgrade": {
+     "sentimentAnalysis": "Bi-wire-brug forbindes med mere markant bas og en afbalanceret lydgengivelse af høj kvalitet til en lav pris.",
+     "simpleTitle": "Effektiv bi-wire-opgradering",
+     "bias": "positive",
+     "key": "bi-wire-upgrade",
+     "groupId": "79ac2523-56cc-4bca-b8d4-df7e13207cab"
     }
    },
    "grouping": {
-    "6c40099b-f7d5-454a-abf1-d44fe8ce97f9": {
+    "51a69c64-145c-48bb-bf5f-7cfb09b08312": {
      "title": "Lydkvalitet",
-     "id": "6c40099b-f7d5-454a-abf1-d44fe8ce97f9",
+     "id": "51a69c64-145c-48bb-bf5f-7cfb09b08312",
      "references": [
       "107997ee-c146-465c-8120-9c9fd1be0ab4",
       "7a6f9f76-e04c-40af-803b-cd6d77145755",
-      "b079e223-ab7f-4fa2-9498-2dee964dfd6a",
+      "f696e4c2-7356-45eb-afac-7ce96c59297a",
       "cd16ab84-0089-457e-a95f-cd68a8ff14c7",
+      "5e6332f0-c9b0-4f96-9f35-27d878e26665",
       "17ff6ef7-989d-4c04-8781-80962f72ac20",
-      "5e6332f0-c9b0-4f96-9f35-27d878e26665"
+      "b079e223-ab7f-4fa2-9498-2dee964dfd6a"
      ]
     },
-    "15afc5cb-189a-4ea3-9f85-3cd397e43d88": {
+    "79ac2523-56cc-4bca-b8d4-df7e13207cab": {
+     "title": "Bi-wiring",
+     "id": "79ac2523-56cc-4bca-b8d4-df7e13207cab",
+     "references": [
+      "7a6f9f76-e04c-40af-803b-cd6d77145755",
+      "f4fb3334-d1fe-4af4-8223-0ba6a57a2a32",
+      "5e6332f0-c9b0-4f96-9f35-27d878e26665",
+      "b079e223-ab7f-4fa2-9498-2dee964dfd6a"
+     ]
+    },
+    "e9793ae1-d0ff-4dca-90e1-060c7d6c389e": {
      "title": "Installation og håndtering",
-     "id": "15afc5cb-189a-4ea3-9f85-3cd397e43d88",
+     "id": "e9793ae1-d0ff-4dca-90e1-060c7d6c389e",
      "references": [
       "f4fb3334-d1fe-4af4-8223-0ba6a57a2a32",
-      "17ff6ef7-989d-4c04-8781-80962f72ac20"
+      "a93fa4cd-7596-44f9-9fd3-8430d4668d87",
+      "17ff6ef7-989d-4c04-8781-80962f72ac20",
+      "b079e223-ab7f-4fa2-9498-2dee964dfd6a"
      ]
     }
    },

@@ -13,6 +13,18 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5a8568a0-095a-471e-a8fd-92d3caee1063",
+   "868b457b-79bc-4d6e-844a-81ed4896e621",
+   "24957cde-5887-41c5-b8f1-c1123ca5ef28",
+   "eed047d2-0c83-4dbc-87fb-7ea82ed4f5f1",
+   "3974f7a9-afbe-406e-8745-0593e5567e51",
+   "e0bf61ec-2a8a-4802-bb3b-68dd409ab80e"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 232026,
   "skuCode": "SOUNDBACKPACK2",
@@ -114,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 94,
+     "availableQuantity": 93,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -238,25 +250,39 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SOUNDBACKPACK2 gør det enkelt, praktisk og behageligt at transportere højttaleren og tage musik med på farten. Rygsækken roses for sin enkle betjening og effektive transportløsning, som giver en varm følelse af frihed og bekvemmelighed. Højttalerens vægt og høje placering kan dog mindske komforten under gang, men helhedsindtrykket er stadig meget positivt og mobilt.",
+   "summary": "SOUNDBACKPACK2 gør transporten af højttaleren praktisk, nem og overraskende behagelig. Det robuste rygsækdesign gør det muligt at nyde fyldig, punchy og immersiv lyd undervejs. Højttalerens vægt kan gøre det besværligt at gå, og et regnslag ville være en god tilføjelse.",
    "headlines": {
     "easy and practical to carry": {
-     "sentimentAnalysis": "Rygsækken opleves som nem at bruge og velegnet til at bære højttaleren over længere afstande.",
+     "sentimentAnalysis": "Rygsækken anses for at være en effektiv og praktisk måde at transportere højttaleren på, også mens musikken spiller.",
      "simpleTitle": "Nem og praktisk at bære",
      "bias": "positive",
      "key": "transport",
-     "groupId": "790d6e71-1a3e-4708-a5c4-a1511393a229"
+     "groupId": "1623e561-e85a-4140-ae7c-dac40051d3a9"
+    },
+    "simple to use": {
+     "sentimentAnalysis": "Rygsækken roses for at være enkel og behagelig at bruge.",
+     "simpleTitle": "Nem at bruge",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "95ac2ab2-e8f4-4f75-be07-555b80039da4"
     }
    },
    "grouping": {
-    "790d6e71-1a3e-4708-a5c4-a1511393a229": {
-     "title": "Transport og brugervenlighed",
-     "id": "790d6e71-1a3e-4708-a5c4-a1511393a229",
+    "1623e561-e85a-4140-ae7c-dac40051d3a9": {
+     "title": "Transport",
+     "id": "1623e561-e85a-4140-ae7c-dac40051d3a9",
      "references": [
       "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
       "3e579c9b-ea8e-490c-8b27-86f1158031c5",
       "dcda85ff-058a-478b-95db-5bb8282b96a3",
-      "3103b24d-50cb-486c-98fc-5d2b71dcb92a",
+      "3103b24d-50cb-486c-98fc-5d2b71dcb92a"
+     ]
+    },
+    "95ac2ab2-e8f4-4f75-be07-555b80039da4": {
+     "title": "Brugervenlighed",
+     "id": "95ac2ab2-e8f4-4f75-be07-555b80039da4",
+     "references": [
+      "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
       "457e29c1-ffc0-410a-95d0-850fca255caa"
      ]
     }

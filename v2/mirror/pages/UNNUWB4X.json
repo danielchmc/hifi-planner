@@ -13,6 +13,13 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "352f7b1b-92df-4fcf-813f-8c1af90c00e7"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 255183,
   "skuCode": "UNNUWB4X",
@@ -96,6 +103,34 @@
   "testGroups": [],
   "bundleRelations": [
    {
+    "modelType": "Møbel med anlæg",
+    "price": {
+     "price": 53746,
+     "priceFormatted": "53.746,-",
+     "priceBefore": 56746,
+     "priceBeforeFormatted": "56.746,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 53746,
+     "unitPriceBefore": 56746
+    },
+    "ribbons": [
+     {
+      "text": "Spar 5%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Clic 240",
+    "url": "/240-furniture-system/"
+   },
+   {
     "modelType": "Møbelsystem",
     "price": {
      "price": 14294,
@@ -139,20 +174,6 @@
     "image": "https://images.hifiklubben.com/image/f71161e6-55c3-4ed0-87fc-9ec66bf55221",
     "title": "Unnu 241",
     "url": "/241-furniture/"
-   },
-   {
-    "modelType": "Møbel med anlæg",
-    "price": {
-     "price": 56746,
-     "priceFormatted": "56.746,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 56746,
-     "unitPriceBefore": 56746
-    },
-    "title": "Clic 240",
-    "url": "/240-furniture-system/"
    }
   ],
   "displayBookDemo": true,

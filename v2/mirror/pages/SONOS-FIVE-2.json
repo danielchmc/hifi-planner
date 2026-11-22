@@ -13,6 +13,13 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c451a6b3-0c95-4c53-b02b-f0a2b473f0ff"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 215997,
   "skuCode": "SONOS-FIVE-2",
@@ -174,7 +181,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 351,
+        "availableQuantity": 325,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "7.258,-",
@@ -197,7 +204,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 330,
+        "availableQuantity": 320,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "7.258,-",
@@ -209,55 +216,48 @@
      ],
      "parentProductCode": "SONFIVE",
      "reviews": {
-      "summary": "SONOS Five leverer en varm, fyldig og rummelig lyd med imponerende dybde og bas i forhold til den kompakte størrelse. Nem opsætning, fleksibel streaming og stereoparring gør højttaleren velegnet til både hverdagslytning og større rum. Nogle anmeldelser finder dog appen frustrerende, bassen utilstrækkelig til prisen eller lyden mindre raffineret end i traditionelle hi-fi-systemer.",
+      "summary": "SONOS Five leverer varm, rummelig og kraftfuld lyd med imponerende dybde, klarhed og bas i forhold til den kompakte størrelse. Nem opsætning, problemfri streaming og fleksibel stereokobling gør højttaleren meget velegnet til hverdagslytning, mens enkelte anmeldelser kritiserer appoplevelsen, den begrænsede kompatibilitet med ældre Sonos-produkter samt bas- og hi-fi-ydelsen. To højttalere giver generelt en markant mere omsluttende og overbevisende stereogengivelse.",
       "headlines": {
-       "rich, spacious sound with strong bass": {
-        "sentimentAnalysis": "Anmeldelserne roser den fyldige, dybe, klare og rummelige gengivelse med kraft nok til store rum og ofte uden behov for en subwoofer.",
-        "simpleTitle": "Fyldig og rummelig lyd med kraftig bas",
+       "warm, spacious and powerful sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den fyldige, varme, dybe, rummelige og dynamiske gengivelse med tilstrækkelig kraft til mellemstore og store rum.",
+        "simpleTitle": "Varm, rummelig og kraftfuld lyd",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "21f481b0-47ef-4ab1-9036-ed5e8256e26f"
+        "key": "sound",
+        "groupId": "2e2cb587-fdcf-4643-b6c1-b74211282f48"
        },
-       "easy setup and convenient streaming": {
-        "sentimentAnalysis": "Mange anmeldelser fremhæver den ukomplicerede opsætning, pålidelige drift og bekvemme styring eller streaming via Sonos, Spotify og Apple Music.",
+       "installation is easy and streaming is convenient": {
+        "sentimentAnalysis": "Anmeldelserne beskriver typisk opsætningen som hurtig og enkel med praktisk styring via Sonos-økosystemet og direkte streaming fra tjenester som Spotify og Apple Music.",
         "simpleTitle": "Nem opsætning og bekvem streaming",
         "bias": "positive",
-        "key": "setup-app",
-        "groupId": "00d4ae8c-673f-49e2-89fe-541191e19bfd"
+        "key": "setup",
+        "groupId": "ee78757b-a905-444e-9d09-94a88e6d98e5"
        },
-       "stereo pairs create a major improvement": {
-        "sentimentAnalysis": "Anmeldelserne beskriver samstemmende stereoparring som en markant bredere, fyldigere og mere imponerende lytteoplevelse.",
-        "simpleTitle": "Stereopar giver en markant forbedring",
+       "stereo pairs sound substantially better": {
+        "sentimentAnalysis": "Flere anmeldelser beskriver en markant forbedring af rummelighed, oplevelse og samlet lyd, når to Five bruges som stereopar.",
+        "simpleTitle": "Stereopar lyder markant bedre",
         "bias": "positive",
-        "key": "stereo-compatibility",
-        "groupId": "c375bce1-320c-4733-98a7-0374ef2c68fd"
+        "key": "stereo",
+        "groupId": "25b9457d-75cc-4cd7-a84a-64c4a3f5df79"
        },
-       "sound quality can fall short of hi-fi expectations": {
-        "sentimentAnalysis": "Et mindretal beskriver lyden som middelmådig, dump eller under ægte hi-fi-niveau, især sammenlignet med passive højttalere eller forventet bas.",
-        "simpleTitle": "Lydkvaliteten kan skuffe hi-fi-forventninger",
+       "bass and hi-fi detail may fall short for some listeners": {
+        "sentimentAnalysis": "Nogle anmeldelser oplever bassen som for afdæmpet, lyden som middelmådig eller relativt dump og produktet som mindre overbevisende end traditionelt hi-fi-udstyr.",
+        "simpleTitle": "Bas og hi-fi-detaljer kan skuffe nogle lyttere",
         "bias": "negative",
-        "key": "sound-quality",
-        "groupId": "21f481b0-47ef-4ab1-9036-ed5e8256e26f"
+        "key": "sound",
+        "groupId": "2e2cb587-fdcf-4643-b6c1-b74211282f48"
        },
-       "the app can be unstable or unintuitive": {
-        "sentimentAnalysis": "Flere anmeldelser nævner frustrerende opsætning, ustabilitet efter appopdateringer eller en brugerflade, der ikke er selvforklarende.",
-        "simpleTitle": "Appen kan være ustabil eller svær at bruge",
+       "app stability and usability can be frustrating": {
+        "sentimentAnalysis": "Et mindretal af anmeldelserne beskriver ustabil eller uintuitiv appfunktion, vanskelig opsætning og afhængighed af appen til den grundlæggende betjening.",
+        "simpleTitle": "Appens stabilitet og brugervenlighed kan frustrere",
         "bias": "negative",
-        "key": "setup-app",
-        "groupId": "00d4ae8c-673f-49e2-89fe-541191e19bfd"
-       },
-       "compatibility limitations can be disappointing": {
-        "sentimentAnalysis": "Anmeldelserne kritiserer, at Five ikke kan parres med visse ældre eller andre Sonos-højttalere, hvilket skaber skuffede forventninger til systemets fleksibilitet.",
-        "simpleTitle": "Kompatibilitetsbegrænsninger kan skuffe",
-        "bias": "negative",
-        "key": "stereo-compatibility",
-        "groupId": "c375bce1-320c-4733-98a7-0374ef2c68fd"
+        "key": "setup",
+        "groupId": "ee78757b-a905-444e-9d09-94a88e6d98e5"
        }
       },
       "grouping": {
-       "21f481b0-47ef-4ab1-9036-ed5e8256e26f": {
+       "2e2cb587-fdcf-4643-b6c1-b74211282f48": {
         "title": "Lydkvalitet",
-        "id": "21f481b0-47ef-4ab1-9036-ed5e8256e26f",
+        "id": "2e2cb587-fdcf-4643-b6c1-b74211282f48",
         "references": [
          "1b772132-8086-4670-8d0a-f6e9db70f151",
          "15d4a8c2-7e2e-46f4-88de-97778aa617b3",
@@ -266,9 +266,7 @@
          "9527e64b-ba61-49d3-bb29-cc871f43be71",
          "7243a166-21eb-4fa5-b32f-cb823642ce8e",
          "d670075a-9ec7-45f2-9bb0-3df64c45347b",
-         "4f2fd432-1d82-45b9-b7a5-a9de613d0740",
          "fd10fe14-4bcf-4cfc-bce6-dfc15be7796a",
-         "97fba45f-9363-4855-be51-0b0c0dc642ed",
          "2c3234a7-7b99-4078-9bbb-c8f9e2ac9639",
          "171aa07d-b749-4587-81e0-fdcf8ae6138f",
          "e830825e-a9cd-4086-a607-c2c7ebaf0c5b",
@@ -305,19 +303,18 @@
          "d82a28b9-6ab1-43c8-9ce1-98a2bcd3983b",
          "3a2ea397-b7b1-428f-9fb8-a9e70c246473",
          "784ca78d-ba00-493f-be6d-350e074cc904",
+         "7605ab96-ebe8-4571-899b-c15a67195e33",
          "e11e8f82-40fb-4367-ac01-d95e1437ef79",
          "3baf4bd0-7587-4ca0-b426-50fd11f121a4",
-         "a1a466f7-f328-46c6-b937-8976d6fea6c1",
-         "1b377616-67d4-4c30-887c-d33e32b676fb",
-         "ee82d9c9-ec6b-4fe9-81b9-3234af4942c9",
          "7250c910-8255-48a1-a3e8-1ca295528501",
          "8281f21a-3fbb-405e-8350-c8d93fbb9c12",
-         "a2d1b52b-a2d1-431c-b32d-d4ddc53ab659"
+         "a2d1b52b-a2d1-431c-b32d-d4ddc53ab659",
+         "23db6811-058f-4818-9fe5-af3d74acfd2f"
         ]
        },
-       "00d4ae8c-673f-49e2-89fe-541191e19bfd": {
+       "ee78757b-a905-444e-9d09-94a88e6d98e5": {
         "title": "Opsætning og app",
-        "id": "00d4ae8c-673f-49e2-89fe-541191e19bfd",
+        "id": "ee78757b-a905-444e-9d09-94a88e6d98e5",
         "references": [
          "15d4a8c2-7e2e-46f4-88de-97778aa617b3",
          "6ee60d45-9bdb-42ec-9a9a-05145d678869",
@@ -329,28 +326,26 @@
          "5e4db977-533e-4c51-a9fd-47247692356f",
          "2867d95e-2c43-4e51-beca-abe482f25475",
          "3a2ea397-b7b1-428f-9fb8-a9e70c246473",
-         "7605ab96-ebe8-4571-899b-c15a67195e33",
+         "1b377616-67d4-4c30-887c-d33e32b676fb",
          "23db6811-058f-4818-9fe5-af3d74acfd2f",
-         "a2d1b52b-a2d1-431c-b32d-d4ddc53ab659",
-         "d0506ae2-2a84-4376-ae61-03f5f4336daf",
-         "91cbb308-6ab4-43ad-854b-2daef60212b7"
+         "91cbb308-6ab4-43ad-854b-2daef60212b7",
+         "51046a2f-d6ef-435c-90ec-da19873fdec1",
+         "aa024ab5-0282-412e-9939-1008c245ef59"
         ]
        },
-       "c375bce1-320c-4733-98a7-0374ef2c68fd": {
-        "title": "Stereoparring og kompatibilitet",
-        "id": "c375bce1-320c-4733-98a7-0374ef2c68fd",
+       "25b9457d-75cc-4cd7-a84a-64c4a3f5df79": {
+        "title": "Stereokobling",
+        "id": "25b9457d-75cc-4cd7-a84a-64c4a3f5df79",
         "references": [
          "297cafce-ad1d-4c9d-a535-4cffaa0b6254",
+         "4f2fd432-1d82-45b9-b7a5-a9de613d0740",
          "b0808575-f9ae-4d39-9413-71e5311d61d2",
-         "7e0ac2a1-2e58-4a4f-93a2-60e9cdf6d95e",
-         "f62d9a1f-3acb-4f20-a747-d92cab609165",
          "ad7e3b22-0580-4874-827c-459802aba807",
          "bd273d85-615a-48c1-b282-c06ad79a402a",
          "a1a466f7-f328-46c6-b937-8976d6fea6c1",
          "3baf4bd0-7587-4ca0-b426-50fd11f121a4",
-         "ee82d9c9-ec6b-4fe9-81b9-3234af4942c9",
          "8281f21a-3fbb-405e-8350-c8d93fbb9c12",
-         "71f4b2ca-006f-40b0-abbc-404c6b0c7780"
+         "9b9ee7d1-87c5-43df-9384-338f707b66f2"
         ]
        }
       },
@@ -372,7 +367,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 22
+    "numberOfStoresExperience": 12
    }
   },
   "variantNavigationType": "dropDown",

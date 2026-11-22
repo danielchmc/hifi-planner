@@ -13,6 +13,18 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "7abf135a-774c-48df-a38c-dc79e31dcfc4",
+   "698e15ec-f45b-4335-8d52-0a36f5f93ab6",
+   "f9953809-8a00-4d13-bbc2-f1b618a37e0c",
+   "b312541a-5bda-424a-9afa-dce0ea258c47",
+   "1a03871d-9561-40be-953a-e92f5893accf",
+   "6da1acf2-5746-453a-880a-39dfc64cb388"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 217136,
   "skuCode": "LYNGFR1",
@@ -35,9 +47,9 @@
   "recommendedAccessories": {
    "productCodes": [
     "ESSPR1SCX",
-    "LYNGFR1GRILL",
     "ESSBA2SCX",
-    "ESSCL1SCX"
+    "ESSCL1SCX",
+    "LYNGFR1GRILL"
    ],
    "isOutlet": "false"
   },
@@ -346,27 +358,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGFR1 leverer en varm, ren og meget engagerende lyd med en imponerende fyldig gengivelse i forhold til den kompakte størrelse. Højttalerne fungerer godt sammen med forskellige forstærkere og streamere, mens en ekstra subwoofer giver dybere og mere slagkraftig bas. Samlet set byder LYNGFR1 på en medrivende og musikalsk gengivelse, især hvor gulvhøjttalere er upraktiske.",
+   "summary": "LYNGFR1 leverer en bemærkelsesværdig klar, ren og engagerende lyd med en varm og fyldig gengivelse, der overgår forventningerne til den kompakte størrelse. Højttalerne passer godt sammen med forskellige forstærkere og streamere, mens en subwoofer tilfører det sidste lag dyb og punchy bas. Den samlede lyd er meget behagelig og medrivende, selv om diskanten kan virke lidt fremtrædende for lyttere, der foretrækker en blødere balance.",
    "headlines": {
-    "clean, rich and highly enjoyable sound": {
-     "sentimentAnalysis": "Lyden roses konsekvent som klar, ren, fyldig og meget behagelig med en særligt imponerende gengivelse i forhold til højttalerens størrelse.",
-     "simpleTitle": "Ren, fyldig og meget behagelig lyd",
+    "clear, clean and highly enjoyable sound": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for en usædvanligt klar, ren, smuk og behagelig lyd.",
+     "simpleTitle": "Klar, ren og meget behagelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "acbacfed-d8c4-4c9a-a7a2-2c0c208e84a5"
+     "key": "clear-clean-sound",
+     "groupId": "63f58743-6d9b-403d-a1da-a0beab9ffd1c"
     },
-    "a subwoofer adds deeper bass": {
-     "sentimentAnalysis": "Højttalerne leverer en meget god lyd, men en subwoofer anbefales for at tilføre den sidste dybde og slagkraft i basområdet.",
-     "simpleTitle": "En subwoofer giver dybere bas",
+    "a full-bodied sound from a compact speaker": {
+     "sentimentAnalysis": "Det kompakte format forbindes med en overraskende rig og fyldig gengivelse og egner sig især, hvor gulvhøjttalere er upraktiske.",
+     "simpleTitle": "Fyldig lyd fra en kompakt højttaler",
      "bias": "positive",
-     "key": "bass-subwoofer",
-     "groupId": "7ea74e50-e2f6-4f9b-b20c-b01bc323b10b"
+     "key": "full-sound-size",
+     "groupId": "63f58743-6d9b-403d-a1da-a0beab9ffd1c"
+    },
+    "a subwoofer adds the missing low-end depth": {
+     "sentimentAnalysis": "En subwoofer anbefales som en effektiv måde at fuldende gengivelsen med dybere og kraftigere bas.",
+     "simpleTitle": "En subwoofer tilføjer den manglende dybde i bassen",
+     "bias": "positive",
+     "key": "subwoofer-depth",
+     "groupId": "47b13482-7711-4087-963e-c969ca618437"
     }
    },
    "grouping": {
-    "acbacfed-d8c4-4c9a-a7a2-2c0c208e84a5": {
+    "63f58743-6d9b-403d-a1da-a0beab9ffd1c": {
      "title": "Lydkvalitet",
-     "id": "acbacfed-d8c4-4c9a-a7a2-2c0c208e84a5",
+     "id": "63f58743-6d9b-403d-a1da-a0beab9ffd1c",
      "references": [
       "50882f4c-f8a3-4850-bf20-bd8d7e8d71f3",
       "f8c5c03a-e867-491d-8461-0c7d070c0de1",
@@ -379,9 +398,9 @@
       "75349670-1a48-453d-96b0-c31606515fa0"
      ]
     },
-    "7ea74e50-e2f6-4f9b-b20c-b01bc323b10b": {
+    "47b13482-7711-4087-963e-c969ca618437": {
      "title": "Bas og subwoofer",
-     "id": "7ea74e50-e2f6-4f9b-b20c-b01bc323b10b",
+     "id": "47b13482-7711-4087-963e-c969ca618437",
      "references": [
       "bb45db5e-6640-40ba-bbca-788e1545c1cd",
       "40261b45-c99f-4c75-a7b5-3f0a4e890ab9"

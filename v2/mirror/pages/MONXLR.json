@@ -13,6 +13,15 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "XLR-hun til XLR-han"
+  },
+  "gallery": [
+   "cdcf3cd9-b77f-42bd-9106-32c30ce82dc3"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 264556,
   "skuCode": "MONXLR",
@@ -186,12 +195,11 @@
      "productCode": "MONXLR600"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 26. november",
+     "deliveryDate": "2026-11-26T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

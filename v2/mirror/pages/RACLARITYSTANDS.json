@@ -13,6 +13,16 @@
    "url": "/tilbehor/hojtaler-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "c4811ab5-1948-456d-9842-aaf5c1403549",
+   "5675fbf5-10e2-4d18-8b12-cd1853bc3c16",
+   "2fe46d45-d523-4231-9b36-adcaa5c16c23",
+   "44c69125-b9d9-4db3-96a3-6b9a40476d6b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 238189,
   "skuCode": "RACLARITYSTANDS",
@@ -96,7 +106,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 56,
+     "availableQuantity": 157,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -125,41 +135,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "RACLARITYSTANDS leverer enestående stabilitet gennem en tung og solid konstruktion, der holder kompatible højttalere sikkert på plads. Det raffinerede, minimalistiske design, den førsteklasses byggekvalitet, den diskrete kabelføring og den enkle montering skaber en elegant og pladsbesparende løsning. Præcis fastgørelse og et fremragende pris-kvalitetsforhold gør standerne til et oplagt match til Radiant Clarity-højttalere, selv om den høje pris og begrænsningerne ved kabelmonteringen trækker lidt ned.",
+   "summary": "RACLARITYSTANDS leverer enestående stabilitet med en tung og solid konstruktion, mens det raffinerede, minimalistiske design passer smukt til Radiant-højttalerne. Skjult kabelføring samt sikker og præcis montering af højttalerne skaber en ren og gennemført opsætning med fremragende praktisk værdi. Nem montering og førsteklasses byggekvalitet gør højttalerstanderne til en særdeles overbevisende opgradering trods visse begrænsninger ved senere kabelskift.",
    "headlines": {
-    "elegant, minimalist design": {
-     "sentimentAnalysis": "Det diskrete udtryk vurderes som flot, moderne, pladsbesparende og velegnet til Radiant-højttalerne.",
-     "simpleTitle": "Elegant, minimalistisk design",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "2d2875eb-29d0-4d50-89a8-da293be1ddd8"
-    },
-    "exceptional stability and secure speaker mounting": {
-     "sentimentAnalysis": "Den tunge konstruktion og sikre fastgørelse roses gentagne gange for fremragende stabilitet og præcision.",
-     "simpleTitle": "Enestående stabilitet og sikker fastgørelse af højttalere",
+    "extremely stable and heavy construction": {
+     "sentimentAnalysis": "Den tunge, solide konstruktion giver fremragende stabilitet og et solidt fundament for højttalerne.",
+     "simpleTitle": "Ekstremt stabil og tung konstruktion",
      "bias": "positive",
      "key": "stability",
-     "groupId": "fdafa1a2-e380-4525-8eee-fb92463fed45"
+     "groupId": "3b031600-9d19-4b57-b476-2af9212e0792"
     },
-    "high-quality construction and easy assembly": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende standerne som vellavede, førsteklasses og nemme at samle.",
-     "simpleTitle": "Høj kvalitet og enkel montering",
+    "premium quality with a refined minimalist design": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent den førsteklasses finish, præcise forarbejdning, diskrete fremtoning og stærke værdi.",
+     "simpleTitle": "Førsteklasses kvalitet med raffineret minimalistisk design",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "c71c2076-e735-4496-87de-12b3a7af4a01"
+     "key": "design_quality",
+     "groupId": "6e85391d-803c-4d89-bbf2-05290aa2128d"
     },
-    "cable routing is discreet but installation must happen first": {
-     "sentimentAnalysis": "Den skjulte kabelføring værdsættes, men anmeldelserne advarer om, at kablerne skal monteres før højttaleren, og at de derefter ikke er nemme at udskifte.",
-     "simpleTitle": "Diskret kabelføring, men kablerne skal monteres først",
+    "clean hidden cable routing": {
+     "sentimentAnalysis": "Den integrerede kabelføring holder installationen pæn og visuelt ren.",
+     "simpleTitle": "Pæn, skjult kabelføring",
+     "bias": "positive",
+     "key": "cable_management",
+     "groupId": "72946e35-227d-473b-89f7-1a21ddde9af1"
+    },
+    "cable must be routed before speaker installation": {
+     "sentimentAnalysis": "Kabelføringen skal planlægges under monteringen, hvilket gør senere kabelskift mindre bekvemme.",
+     "simpleTitle": "Kablet skal føres gennem før montering af højttaleren",
      "bias": "negative",
-     "key": "cable-management",
-     "groupId": "a0911e45-2143-4015-8876-f95f0b5e4932"
+     "key": "cable_management",
+     "groupId": "72946e35-227d-473b-89f7-1a21ddde9af1"
+    },
+    "secure, precise speaker mounting with angle adjustment": {
+     "sentimentAnalysis": "De fastskruede højttalere sidder sikkert, mens præcis vinkeljustering forbedrer retningen mod lyttepositionen.",
+     "simpleTitle": "Sikker og præcis højttalermontering med vinkeljustering",
+     "bias": "positive",
+     "key": "speaker_mounting",
+     "groupId": "dad99aff-1250-4452-b8de-6ee947472562"
     }
    },
    "grouping": {
-    "fdafa1a2-e380-4525-8eee-fb92463fed45": {
-     "title": "Stabilitet",
-     "id": "fdafa1a2-e380-4525-8eee-fb92463fed45",
+    "3b031600-9d19-4b57-b476-2af9212e0792": {
+     "title": "Stabilitet og vægt",
+     "id": "3b031600-9d19-4b57-b476-2af9212e0792",
      "references": [
       "d19f22b6-f6ca-4bb1-a476-5c3b8f587608",
       "3b82f795-3700-4ca0-9956-2c595b9a0bb8",
@@ -167,16 +184,20 @@
       "97915061-2d7a-41ff-9920-3a37a903a9e0",
       "a6ea8f7e-1f0e-451c-9b30-a7e514b207a5",
       "8c21ef47-faed-4615-8ad8-80e5b03b67a8",
+      "38eefe02-d01b-4e17-827f-d661c0b4756a",
       "da0c79b3-c962-484e-8f55-5f05d072572b",
       "ce2b8b07-5f8c-4fb3-af39-db2290cad471",
       "6c52c93d-0d19-4e46-958b-f93d4c9c81a6"
      ]
     },
-    "2d2875eb-29d0-4d50-89a8-da293be1ddd8": {
-     "title": "Design",
-     "id": "2d2875eb-29d0-4d50-89a8-da293be1ddd8",
+    "6e85391d-803c-4d89-bbf2-05290aa2128d": {
+     "title": "Design og byggekvalitet",
+     "id": "6e85391d-803c-4d89-bbf2-05290aa2128d",
      "references": [
+      "3b82f795-3700-4ca0-9956-2c595b9a0bb8",
+      "1e30daa2-d68a-49b5-a86d-f0d6659dbc08",
       "84544cf3-3860-4400-a5df-4500fb169341",
+      "5f5a7b4a-aa9b-4012-ba41-9ef54685e8c5",
       "a6ea8f7e-1f0e-451c-9b30-a7e514b207a5",
       "664962d8-2ebf-486d-995d-ca1bdc079d51",
       "7bef876c-06e6-48da-b4bc-59b4c8c6f746",
@@ -184,25 +205,22 @@
       "6c52c93d-0d19-4e46-958b-f93d4c9c81a6"
      ]
     },
-    "c71c2076-e735-4496-87de-12b3a7af4a01": {
-     "title": "Byggekvalitet",
-     "id": "c71c2076-e735-4496-87de-12b3a7af4a01",
-     "references": [
-      "3b82f795-3700-4ca0-9956-2c595b9a0bb8",
-      "1e30daa2-d68a-49b5-a86d-f0d6659dbc08",
-      "5f5a7b4a-aa9b-4012-ba41-9ef54685e8c5",
-      "7bef876c-06e6-48da-b4bc-59b4c8c6f746",
-      "6c52c93d-0d19-4e46-958b-f93d4c9c81a6"
-     ]
-    },
-    "a0911e45-2143-4015-8876-f95f0b5e4932": {
-     "title": "Kabelstyring",
-     "id": "a0911e45-2143-4015-8876-f95f0b5e4932",
+    "72946e35-227d-473b-89f7-1a21ddde9af1": {
+     "title": "Kabelhåndtering",
+     "id": "72946e35-227d-473b-89f7-1a21ddde9af1",
      "references": [
       "3b82f795-3700-4ca0-9956-2c595b9a0bb8",
       "84544cf3-3860-4400-a5df-4500fb169341",
       "1e30daa2-d68a-49b5-a86d-f0d6659dbc08",
       "38eefe02-d01b-4e17-827f-d661c0b4756a"
+     ]
+    },
+    "dad99aff-1250-4452-b8de-6ee947472562": {
+     "title": "Montering af højttalere",
+     "id": "dad99aff-1250-4452-b8de-6ee947472562",
+     "references": [
+      "84544cf3-3860-4400-a5df-4500fb169341",
+      "6c52c93d-0d19-4e46-958b-f93d4c9c81a6"
      ]
     }
    },

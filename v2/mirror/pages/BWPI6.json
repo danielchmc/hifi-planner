@@ -13,6 +13,24 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.4 ( aptX, aptX Adaptive, AAC, SBC )",
+   "Trådløs opladning": "Nej"
+  },
+  "gallery": [
+   "d54a708f-b980-4d43-9825-4fcdd2cae7a3",
+   "c5319692-68f8-4007-9350-ffdae6339f03",
+   "dfb45976-ff15-421e-8200-812c2c608a73",
+   "fd43b595-8392-4af9-8d17-e5e05dc4df04",
+   "2946b7a5-2df0-4d39-a584-ab65ab06e02f",
+   "5145bc70-4dbd-4d9d-ab44-4616d258f08b",
+   "a5f3f5c4-2d6b-43e6-a3c7-d3e77ef135be",
+   "6d892925-47e4-44b8-9f60-4d177b4d8615",
+   "3e375f2f-405a-472c-a24d-31753fb966ec"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 235913,
   "skuCode": "BWPI6",
@@ -229,7 +247,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 231,
+     "availableQuantity": 223,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -354,7 +372,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
+     "numberOfStoresExperience": 25,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -482,7 +500,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
+     "numberOfStoresExperience": 25,
      "availableQuantity": 54,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -610,8 +628,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 28,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 27,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -752,51 +770,59 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Bowers & Wilkins Pi6 får især ros for varm, detaljeret og rummelig lyd, kraftig bas, god komfort og effektiv støjreduktion. Batteritiden er generelt tilfredsstillende, men flere oplever ustabil Bluetooth-forbindelse, lejlighedsvise udfald i den ene øreprop, begrænsede app-funktioner og problemer med opladning eller batteriforbrug. Samlet set er Pi6 et attraktivt valg med premiumlyd til prisen, hvis begrænsningerne ved forbindelse og software accepteres.",
+   "summary": "BWPI6 leverer en særdeles klar, detaljeret og medrivende lyd med fyldig bas, god komfort og generelt effektiv støjreduktion. Premiumlyden og den attraktive pris bliver ofte fremhævet, hvilket gør øretelefonerne til et stærkt valg i hverdagen. Forbindelse, batteritid, touch-betjening og den begrænsede app er tilbagevendende svagheder, og nogle oplever også opladningsproblemer eller udfald i den ene øretelefon.",
    "headlines": {
-    "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmelderne beskriver gennemgående lyden som klar, detaljeret, velafbalanceret, rummelig og omsluttende, ofte med fyldig eller kontrolleret bas.",
-     "simpleTitle": "Varm, detaljeret og rummelig lyd",
+    "the app and controls feel limited": {
+     "sentimentAnalysis": "Appen beskrives gentagne gange som sparsom, reklamepræget og begrænset med hensyn til equalizer, lokalisering og tilpasning af betjeningen; touch-styringen kan også være ustabil.",
+     "simpleTitle": "App og betjening føles begrænset",
+     "bias": "negative",
+     "key": "app_controls",
+     "groupId": "6066e9bf-ca80-4c22-938f-c654ceca201a"
+    },
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Lyden beskrives gentagne gange som klar, detaljeret, velafbalanceret, rummelig og fyldig med kraftig eller kontrolleret bas.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0631f183-0745-43b5-8d64-184f65b8b316"
+     "groupId": "6b4cd7cb-fa11-4f00-b6cf-f6bb00745243"
     },
-    "secure and comfortable fit": {
-     "sentimentAnalysis": "Mange anmeldere oplever, at ørepropperne sidder sikkert og er behagelige ved lang tids brug, motion og i mindre ører.",
-     "simpleTitle": "Sikker og behagelig pasform",
+    "comfortable, secure fit": {
+     "sentimentAnalysis": "De fleste kommentarer roser den komfortable og stabile pasform ved længere tids brug, sport og mindre ører.",
+     "simpleTitle": "Komfortabel og sikker pasform",
      "bias": "positive",
      "key": "fit",
-     "groupId": "72b6e90a-a611-4253-afd1-c8a5e574121b"
+     "groupId": "216a1aa1-16a1-44dd-8c1c-0263a27ec936"
     },
-    "effective noise cancellation": {
-     "sentimentAnalysis": "Støjreduktionen roses ofte som kraftig og nyttig i tog, fly, bymiljøer og ved almindelig brug.",
-     "simpleTitle": "Effektiv støjreduktion",
+    "effective everyday noise cancellation": {
+     "sentimentAnalysis": "Støjreduktionen roses ofte for at forbedre lytteoplevelsen på farten, i fly, udendørs og i støjende omgivelser.",
+     "simpleTitle": "Effektiv støjreduktion i hverdagen",
      "bias": "positive",
      "key": "anc",
-     "groupId": "67df7d1d-896d-4c49-a4c0-e68befbbd3ea"
+     "groupId": "9c331499-7cd3-4e61-9871-ef5d895d3acf"
     },
-    "bluetooth and pairing can be unreliable": {
-     "sentimentAnalysis": "Flere anmeldelser nævner besværlig parring, udfald, forbindelsesfejl i den ene side og forstyrrelser, især under bevægelse eller på afstand.",
-     "simpleTitle": "Bluetooth og parring kan være ustabil",
+    "connection can be unreliable": {
+     "sentimentAnalysis": "Flere ejere oplever problemer med parring, udfald, interferens, begrænset rækkevidde eller at kun den ene øretelefon forbinder.",
+     "simpleTitle": "Forbindelsen kan være ustabil",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "5ca852e7-7f1b-4086-8040-2131568bc9ab"
+     "groupId": "2e81427c-3798-4b3a-a35a-fdece5f345d9"
     },
-    "limited app and control options": {
-     "sentimentAnalysis": "Appen anses ofte for enkel, reklamepræget og begrænset med få equalizer-, tilpasnings- og finde-funktioner.",
-     "simpleTitle": "Begrænsede app- og betjeningsmuligheder",
+    "battery performance is inconsistent": {
+     "sentimentAnalysis": "Nogle ejere rapporterer kortere batteritid end angivet, afladning i etuiet eller opladningsfejl, selv om andre finder batteritiden tilstrækkelig.",
+     "simpleTitle": "Batteriydelsen er svingende",
      "bias": "negative",
-     "key": "app",
-     "groupId": "96815736-ed75-4dbb-8306-30cc16e669a1"
+     "key": "battery",
+     "groupId": "1fdc2da7-574b-4379-8664-ba51d9f5dac0"
     }
    },
    "grouping": {
-    "0631f183-0745-43b5-8d64-184f65b8b316": {
+    "6b4cd7cb-fa11-4f00-b6cf-f6bb00745243": {
      "title": "Lydkvalitet",
-     "id": "0631f183-0745-43b5-8d64-184f65b8b316",
+     "id": "6b4cd7cb-fa11-4f00-b6cf-f6bb00745243",
      "references": [
       "82d30dca-8ca6-43eb-be56-dabf0c7fe3c5",
       "afe186d1-5d26-4137-a65b-9af098d8d8b0",
+      "064a511f-761f-4a27-8c87-3c5b16acb4cb",
       "8b66b798-a1bf-4c7f-a7b2-713f070e47fe",
       "60f214ca-23be-40c3-86a3-50f4ab5db35d",
       "7e9e6710-e15d-4d1d-b354-2e69b8e6bd77",
@@ -807,6 +833,7 @@
       "b32a279f-733b-44ab-86c1-6c30d4525bad",
       "b67b6b11-73ea-4a69-81e2-bdb485a08972",
       "6adf0243-232b-435a-9d40-c037f5871c65",
+      "89243b8e-54a3-4ede-9ec8-b1ee24702974",
       "1f6cebd4-a33f-4b9a-b62f-32b03ab911ef",
       "3e515d4a-71b1-48a3-9360-7de265367962",
       "08d8d927-f442-4dd4-9ecb-706302552790",
@@ -856,6 +883,7 @@
       "3b7f27e0-9b65-43cd-b783-5c5909652c79",
       "f539c6cd-b39b-4428-955f-774db5a2bcee",
       "e5d3cfb3-4e05-41c4-9e84-ff58f5cd24cf",
+      "db9fbdea-da53-46d0-a2ed-f51386244639",
       "ad2e9fdb-4faf-49a8-aca8-a8ca05ee18fc",
       "9a10a34b-b275-4df2-a72c-2d71a4e52006",
       "bcf8a7e8-8ee9-43f5-adb1-e85022f533b7",
@@ -868,10 +896,8 @@
       "31579976-baf7-45c5-9272-775239107684",
       "05fd3cd2-941d-402f-b65a-78b6164d9659",
       "bef78191-8b0f-4c0f-9168-a98b8673aec2",
-      "1eba071b-5f7a-49bc-a655-6070191fc11d",
       "ac0d05f6-38a7-4050-95ef-7e49d7a610df",
       "04ddba1a-7341-4001-956b-6f85e0765115",
-      "fe1cec8f-229a-4f06-945f-2774b3167f4e",
       "220c4494-0b2e-4f6a-8d75-6bc9b82e804c",
       "45e423d4-ac0d-4239-b42d-2aa393c98eea",
       "f1f69f0e-9728-458b-9f3a-3fc664e45c7d",
@@ -918,9 +944,9 @@
       "ed76508e-82fb-403d-abf3-cb1153273257"
      ]
     },
-    "72b6e90a-a611-4253-afd1-c8a5e574121b": {
+    "216a1aa1-16a1-44dd-8c1c-0263a27ec936": {
      "title": "Pasform og komfort",
-     "id": "72b6e90a-a611-4253-afd1-c8a5e574121b",
+     "id": "216a1aa1-16a1-44dd-8c1c-0263a27ec936",
      "references": [
       "82d30dca-8ca6-43eb-be56-dabf0c7fe3c5",
       "8b66b798-a1bf-4c7f-a7b2-713f070e47fe",
@@ -942,23 +968,23 @@
       "3667f35e-b747-41ba-a55d-8eae9aa81355",
       "10a8eedc-0e05-41fe-897a-f2170448947c",
       "a8f0c3f2-19b9-48b4-aa2a-af6cb889eeff",
-      "d4d50f60-8a73-43a8-a565-58eeb47a3022",
       "f5c588cf-f2e3-43cc-b5fa-0036411b42bf",
-      "f539c6cd-b39b-4428-955f-774db5a2bcee",
       "e5d3cfb3-4e05-41c4-9e84-ff58f5cd24cf",
-      "ad2e9fdb-4faf-49a8-aca8-a8ca05ee18fc",
+      "9a10a34b-b275-4df2-a72c-2d71a4e52006",
       "bcf8a7e8-8ee9-43f5-adb1-e85022f533b7",
       "2364b980-b464-4e80-9b3e-eba2ffd60ed4",
-      "f1f69f0e-9728-458b-9f3a-3fc664e45c7d",
+      "d66e4026-838d-4e79-87ce-405594d29a92",
+      "d4d50f60-8a73-43a8-a565-58eeb47a3022",
+      "ac0d05f6-38a7-4050-95ef-7e49d7a610df",
       "220c4494-0b2e-4f6a-8d75-6bc9b82e804c",
-      "f300b478-30b3-4883-a8e0-78a3730d55f6",
-      "fc40d833-f43a-4282-9a8b-85c68b998c5d",
+      "45e423d4-ac0d-4239-b42d-2aa393c98eea",
       "8d9a72e1-2618-411c-98d7-5fc77187db21",
       "e2050a9c-62b9-4805-adc0-6058ff579fa7",
       "eb092fbc-1aa1-48a1-bfbf-fca66fe1dd74",
       "5c0391d4-3a52-444c-876f-2afba97f065d",
+      "d5f95877-6c9f-45a1-882c-58dbf8dff27c",
       "27b9fc8c-6091-42ce-b76f-e3db7a4d8d4c",
-      "90d7bf23-478c-421b-a6a9-43047bcf7c15",
+      "89e3d5a4-ee19-4fcc-896e-37262d54fa36",
       "9c07c786-52bf-4abb-8b76-fa49330fbde2",
       "791c2691-c587-495a-8eef-b1d01a7eeb8a",
       "520307b9-fd6a-46de-aa0e-8f5dcfee5564",
@@ -968,14 +994,13 @@
       "ae83dfb9-7901-4f14-b66f-177fd4355e7b",
       "fec95801-00ea-43de-a4d0-4292e315ce1c",
       "41fdf365-5204-4657-a124-9fcf1c363fd2",
-      "5aa71874-d6e6-4b7a-8044-e61a3ce0b96a",
       "445d6db1-b8db-4917-a2ff-09e15d2fd9fe",
       "ed76508e-82fb-403d-abf3-cb1153273257"
      ]
     },
-    "67df7d1d-896d-4c49-a4c0-e68befbbd3ea": {
+    "9c331499-7cd3-4e61-9871-ef5d895d3acf": {
      "title": "Støjreduktion",
-     "id": "67df7d1d-896d-4c49-a4c0-e68befbbd3ea",
+     "id": "9c331499-7cd3-4e61-9871-ef5d895d3acf",
      "references": [
       "7e9e6710-e15d-4d1d-b354-2e69b8e6bd77",
       "6adf0243-232b-435a-9d40-c037f5871c65",
@@ -990,74 +1015,89 @@
       "44713633-a84d-4b84-a653-560a812a1b6f",
       "9a10a34b-b275-4df2-a72c-2d71a4e52006",
       "bcf8a7e8-8ee9-43f5-adb1-e85022f533b7",
-      "2364b980-b464-4e80-9b3e-eba2ffd60ed4",
       "d66e4026-838d-4e79-87ce-405594d29a92",
       "f300b478-30b3-4883-a8e0-78a3730d55f6",
       "fc40d833-f43a-4282-9a8b-85c68b998c5d",
-      "8d9a72e1-2618-411c-98d7-5fc77187db21",
-      "791c2691-c587-495a-8eef-b1d01a7eeb8a",
-      "520307b9-fd6a-46de-aa0e-8f5dcfee5564",
-      "a76dee05-aa07-4245-b929-5be04e115ed7",
       "41fdf365-5204-4657-a124-9fcf1c363fd2",
       "ba15c624-9d09-4e97-8994-bf0591425cd9",
       "0852da70-1edd-4b0e-aa66-445754441004",
       "c7b5b85b-03b8-4904-9c95-f530dfbc35f5",
       "e3b52e0a-dbf0-445c-9e3d-897afd2076d0",
       "5aa71874-d6e6-4b7a-8044-e61a3ce0b96a",
-      "961af0a1-cbf2-4550-93b1-11d441c18c64",
-      "04ddba1a-7341-4001-956b-6f85e0765115"
+      "961af0a1-cbf2-4550-93b1-11d441c18c64"
      ]
     },
-    "5ca852e7-7f1b-4086-8040-2131568bc9ab": {
+    "2e81427c-3798-4b3a-a35a-fdece5f345d9": {
      "title": "Forbindelse",
-     "id": "5ca852e7-7f1b-4086-8040-2131568bc9ab",
+     "id": "2e81427c-3798-4b3a-a35a-fdece5f345d9",
      "references": [
       "82d30dca-8ca6-43eb-be56-dabf0c7fe3c5",
       "7757dc3b-a760-4673-b8f6-682871c93c58",
       "b32a279f-733b-44ab-86c1-6c30d4525bad",
       "9367fb1c-86de-4b3f-a794-6c5694b74045",
       "d6579497-c309-4ab5-8182-dbd403c95efb",
-      "ebcd101f-1cab-4525-91a0-e4e7af88dfa4",
-      "8bf2beaa-2eba-4c72-a301-406985b3996c",
-      "1aadf9af-6048-4472-be27-4acf65aedb3f",
       "76d3e45e-fa36-4645-b002-c052ec898cd3",
       "fdcf8c35-5a5c-4db8-bb72-d10048d7d4e5",
       "2364b980-b464-4e80-9b3e-eba2ffd60ed4",
+      "31579976-baf7-45c5-9272-775239107684",
+      "bef78191-8b0f-4c0f-9168-a98b8673aec2",
+      "f300b478-30b3-4883-a8e0-78a3730d55f6",
+      "631d80fe-9698-4464-b3c2-448b1415b302",
+      "8d9a72e1-2618-411c-98d7-5fc77187db21",
       "5870b404-a3a9-4f8f-8c8c-30fe3f2fdf1d",
       "39236d45-a877-45d9-97f2-7801fb3765c9",
       "89e3d5a4-ee19-4fcc-896e-37262d54fa36",
       "90d7bf23-478c-421b-a6a9-43047bcf7c15",
       "31f061aa-469a-4108-95bd-9adf0af87f5a",
-      "f300b478-30b3-4883-a8e0-78a3730d55f6",
-      "631d80fe-9698-4464-b3c2-448b1415b302",
-      "8d9a72e1-2618-411c-98d7-5fc77187db21",
-      "e2050a9c-62b9-4805-adc0-6058ff579fa7",
-      "bef78191-8b0f-4c0f-9168-a98b8673aec2",
-      "41fdf365-5204-4657-a124-9fcf1c363fd2",
       "961af0a1-cbf2-4550-93b1-11d441c18c64"
      ]
     },
-    "96815736-ed75-4dbb-8306-30cc16e669a1": {
+    "6066e9bf-ca80-4c22-938f-c654ceca201a": {
      "title": "App og betjening",
-     "id": "96815736-ed75-4dbb-8306-30cc16e669a1",
+     "id": "6066e9bf-ca80-4c22-938f-c654ceca201a",
      "references": [
       "669d15ab-c822-48bd-a3e6-cebb4bf39091",
+      "c1c0cf2c-8f22-4347-842a-76c0736aea33",
       "7757dc3b-a760-4673-b8f6-682871c93c58",
       "b32a279f-733b-44ab-86c1-6c30d4525bad",
       "9367fb1c-86de-4b3f-a794-6c5694b74045",
       "d6579497-c309-4ab5-8182-dbd403c95efb",
-      "05dde084-3d7d-432c-962a-f6ee7e71240e",
-      "a9e45cd0-d556-4610-b689-d0d25a798df8",
+      "85a897f8-c645-4118-8117-3bc06ce579de",
       "9a10a34b-b275-4df2-a72c-2d71a4e52006",
+      "2364b980-b464-4e80-9b3e-eba2ffd60ed4",
       "49365f0a-1690-4aa5-b4a1-9f902345b510",
-      "39236d45-a877-45d9-97f2-7801fb3765c9",
-      "de6e69b5-fd2f-45a3-9789-9411484a34c6",
+      "d66e4026-838d-4e79-87ce-405594d29a92",
+      "631d80fe-9698-4464-b3c2-448b1415b302",
+      "a9e45cd0-d556-4610-b689-d0d25a798df8",
       "41fdf365-5204-4657-a124-9fcf1c363fd2",
       "e3b52e0a-dbf0-445c-9e3d-897afd2076d0",
       "b2259319-84b6-4d0b-bb52-d7b8aef26fcd",
-      "631d80fe-9698-4464-b3c2-448b1415b302",
-      "c0d80e71-d6da-45f9-9173-b8895a6d5f0e",
-      "3667f35e-b747-41ba-a55d-8eae9aa81355"
+      "de6e69b5-fd2f-45a3-9789-9411484a34c6",
+      "39236d45-a877-45d9-97f2-7801fb3765c9"
+     ]
+    },
+    "1fdc2da7-574b-4379-8664-ba51d9f5dac0": {
+     "title": "Batteritid",
+     "id": "1fdc2da7-574b-4379-8664-ba51d9f5dac0",
+     "references": [
+      "63e4ead9-f47c-42e2-9197-c9823eab9464",
+      "32a80d4f-2764-489c-b4e8-89fac5e15060",
+      "d6579497-c309-4ab5-8182-dbd403c95efb",
+      "b47c4745-c73e-49f9-a715-fa162356e461",
+      "10a8eedc-0e05-41fe-897a-f2170448947c",
+      "1aadf9af-6048-4472-be27-4acf65aedb3f",
+      "f9db81ca-1b83-4954-b0f2-91d0d05f8cde",
+      "db9fbdea-da53-46d0-a2ed-f51386244639",
+      "ad2e9fdb-4faf-49a8-aca8-a8ca05ee18fc",
+      "f9db81ca-1b83-4954-b0f2-91d0d05f8cde",
+      "ac0d05f6-38a7-4050-95ef-7e49d7a610df",
+      "791c2691-c587-495a-8eef-b1d01a7eeb8a",
+      "8ecba1c5-a4a5-4b7a-9219-58dbe7c1abfb",
+      "f5c588cf-f2e3-43cc-b5fa-0036411b42bf",
+      "0852da70-1edd-4b0e-aa66-445754441004",
+      "e2050a9c-62b9-4805-adc0-6058ff579fa7",
+      "b2259319-84b6-4d0b-bb52-d7b8aef26fcd",
+      "c7b5b85b-03b8-4904-9c95-f530dfbc35f5"
      ]
     }
    },

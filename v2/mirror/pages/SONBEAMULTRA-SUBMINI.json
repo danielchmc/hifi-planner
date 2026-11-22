@@ -13,6 +13,16 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "5bee8251-e304-4518-b071-e434a9b00652",
+   "1a1683d4-2883-4345-8413-522917346d83",
+   "1d2bd896-61bc-4e4b-9652-b0d8f1967a87",
+   "11b93a8c-08dd-4819-8727-c2eef8f5702b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 297810,
   "skuCode": "SONBEAMULTRA-SUBMINI",
@@ -147,7 +157,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 261,
+        "availableQuantity": 249,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -170,7 +180,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 178,
+        "availableQuantity": 218,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -182,41 +192,55 @@
      ],
      "parentProductCode": "SONSUBMINI",
      "reviews": {
-      "summary": "SONOS SUBMINI roses bredt for sin varme, dybe og kontante bas, der gør musik, film og tv mere fyldig og medrivende. Det kompakte design, den nemme integration i Sonos-systemer og den stærke ydelse i små og mellemstore rum er store fordele. Enkelte synes, at prisen er høj, at bassen er mindre kraftig ved lav lydstyrke, eller at opsætningen i appen er unødigt besværlig.",
+      "summary": "SONOS Sub Mini roses bredt for sin varme, kontante og overraskende dybe bas, som gør musik og film fyldigere, bredere og mere medrivende. Det kompakte design passer godt i små og mellemstore rum, mens integrationen med Beam, Arc, Era og andre Sonos-højttalere som regel er problemfri. Opsætning og appstyring er ofte enkel, men lejlighedsvise Wi-Fi- eller appproblemer, den høje pris og mindre dybde i større rum nævnes som forbehold.",
       "headlines": {
-       "sonos integration and pairing are usually effortless": {
-        "sentimentAnalysis": "De fleste anmeldelser beskriver sammenkobling, appstyring og integration med eksisterende Sonos-højttalere eller soundbars som hurtig og enkel.",
-        "simpleTitle": "Sonos-integration og sammenkobling er som regel problemfri",
+       "warm, deep and powerful bass": {
+        "sentimentAnalysis": "Sub Mini tilfører konsekvent en fyldigere, dybere og kraftigere bas end de tilsluttede højttalere alene.",
+        "simpleTitle": "Varm, dyb og kraftfuld bas",
         "bias": "positive",
-        "key": "integration",
-        "groupId": "4df274eb-ff13-451d-af42-6a4d29a985d3"
+        "key": "sound_quality",
+        "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
        },
-       "warm, deep and powerful bass transforms music and films": {
-        "sentimentAnalysis": "SUBMINI tilfører varm, dyb og kontant bas samt en mærkbart fyldigere og mere medrivende lyd til musik, film og tv.",
-        "simpleTitle": "Varm, dyb og kraftfuld bas løfter musik og film",
+       "easy Sonos integration": {
+        "sentimentAnalysis": "De fleste beskriver hurtig tilslutning og problemfri integration med eksisterende Sonos-systemer og Sonos-appen.",
+        "simpleTitle": "Nem Sonos-integration",
         "bias": "positive",
-        "key": "sound",
-        "groupId": "426210d3-16f7-4e43-b760-a72a6f08cd1c"
+        "key": "setup_integration",
+        "groupId": "229af36b-bc69-42a0-b4c2-ff126e887bbe"
        },
-       "compact design delivers impressive performance in smaller rooms": {
-        "sentimentAnalysis": "Det lille, diskrete kabinet er nemt at placere og giver især i mindre rum større lyd og effekt, end størrelsen antyder.",
-        "simpleTitle": "Kompakt design leverer imponerende ydelse i mindre rum",
+       "a more immersive music and film experience": {
+        "sentimentAnalysis": "Den ekstra dybde forbedrer indlevelse, surroundeffekt og fyldig lyd ved film, tv og musik.",
+        "simpleTitle": "En mere medrivende musik- og filmoplevelse",
         "bias": "positive",
-        "key": "design",
-        "groupId": "3f9deda7-b82a-441a-9f40-88c17b0cd36e"
+        "key": "sound_quality",
+        "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
        },
-       "app setup and connectivity can be frustrating": {
-        "sentimentAnalysis": "Flere anmeldelser nævner vanskelig opsætning, app-fejl, forbindelsesproblemer eller tidskrævende Wi-Fi-konfiguration trods generelt god lydkvalitet.",
-        "simpleTitle": "Opsætning og forbindelse via appen kan være frustrerende",
+       "compact design with room-friendly output": {
+        "sentimentAnalysis": "De kompakte mål, det flotte design og den nemme placering gør Sub Mini særligt velegnet til små og mellemstore rum.",
+        "simpleTitle": "Kompakt design med passende ydelse til rummet",
+        "bias": "positive",
+        "key": "design_size",
+        "groupId": "30550f9b-f9de-4d58-aa0c-13dd6021f084"
+       },
+       "app and connectivity issues": {
+        "sentimentAnalysis": "En mindre gruppe oplever vanskelig opsætning, appnedbrud eller ustabile forbindelser, blandt andet efter skift af Wi-Fi.",
+        "simpleTitle": "Problemer med app og forbindelse",
         "bias": "negative",
-        "key": "integration",
-        "groupId": "4df274eb-ff13-451d-af42-6a4d29a985d3"
+        "key": "setup_integration",
+        "groupId": "229af36b-bc69-42a0-b4c2-ff126e887bbe"
+       },
+       "less depth than expected in larger rooms": {
+        "sentimentAnalysis": "Nogle ønsker mere effekt ved lav lydstyrke samt dybere og fyldigere bas, især i større rum eller sammenlignet med den store Sub.",
+        "simpleTitle": "Mindre dybde end forventet i større rum",
+        "bias": "negative",
+        "key": "sound_quality",
+        "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
        }
       },
       "grouping": {
-       "426210d3-16f7-4e43-b760-a72a6f08cd1c": {
+       "52c4b5f5-a731-4784-a987-a8e698de5fd3": {
         "title": "Lydkvalitet",
-        "id": "426210d3-16f7-4e43-b760-a72a6f08cd1c",
+        "id": "52c4b5f5-a731-4784-a987-a8e698de5fd3",
         "references": [
          "eab229f3-1968-445b-97c6-8c4f31f87540",
          "988231e5-c4d1-43ba-9ebf-efd9be28ba78",
@@ -233,115 +257,138 @@
          "34aed335-f60d-4292-b843-8b6b0dbc6fc1",
          "a8a61a4d-6a9b-4d79-827c-5f0d39b2f7f6",
          "dd7e0caf-c77c-44f0-af4f-72df94e29ad2",
+         "b7746b8f-fcd5-41a2-b6db-e82461b0a5d1",
          "1cc09fc5-1b1a-4700-86a4-6fda13a2efd5",
          "445b0e49-caf3-4f7e-ab64-80b1060ac5e8",
          "90a0ccdf-c1de-47d3-b4d4-08c9713d0fdc",
-         "b7746b8f-fcd5-41a2-b6db-e82461b0a5d1",
-         "b3fc4e66-8f85-43cb-90cf-b6401cb67fad",
          "2b15a3eb-a714-4748-a026-ab03e6548dfa",
-         "442b95a9-fcdf-4e13-bcf1-0c25d99754aa",
          "271f385b-4a4f-4034-becd-29c0ede6a955",
          "9ac46186-5b8a-491c-8125-3a77ddcfa7bc",
          "37b616d3-0e30-4034-84f6-89a6747e837b",
-         "d95c9a6e-6bfe-43c0-874e-57a1e5156b61",
-         "17eb2df9-1528-447f-b04a-e21102da3d1c",
+         "b39fb040-d6ad-4208-9e3b-7e233e4a1bb1",
          "0981a3bb-fcad-4a7a-abbb-196e1932980d",
          "5876352c-6345-454e-a647-0e16dc2e888d",
          "cc500e17-4fd5-4976-8737-778f1d8eff34",
          "340a7110-54da-4c0b-a62b-3573b3aa4ba4",
          "111e0c1a-27f9-4943-ab88-b41fadb5b5e1",
          "9062608b-929d-4381-97ff-408ff635d942",
-         "909c7497-80fc-4522-bd86-d77c76b032ba",
          "4e312312-cf94-44b6-adfe-912a66a3c55c",
+         "61528e50-ec2b-401c-97c1-84c200fc7e24",
          "d757744f-c9ec-4e7c-a619-69caad6e3255",
-         "1461012d-e919-4344-a75b-3b45493cb651",
-         "dc711213-5d51-4058-9543-817d99516b07",
          "78b883a9-1265-4c19-b2c1-e93e6c0e7713",
          "66327219-e8ae-4574-9fb5-77cf63cc1e23",
          "344b3206-100f-40af-85e4-e85ddc0319c5",
-         "5addd3d8-968c-4d5e-b3e8-8ba4a5c90c23",
          "ad90c427-3751-462f-8cba-72a1f9c8381a",
+         "28bcb2e8-c179-44d9-b063-beb0d626a9a7",
          "fc36dc8c-03fb-41b0-a153-a8d95e1dba40",
          "bee8e254-2614-419b-af3c-2a5afbb9bfd2",
          "2e640202-477b-446b-b4bc-de684660b9ae",
+         "f916cf20-46d1-45f0-8c90-60793abd5536",
+         "e6fd036d-fdca-461d-9f1e-5063b556d7cf",
+         "1461012d-e919-4344-a75b-3b45493cb651",
+         "dc711213-5d51-4058-9543-817d99516b07",
+         "3224841f-fb12-4c87-9644-e2cabadf56f1",
+         "65b0bd47-138a-467b-af80-2f1dee7a6159",
+         "cb86cce7-0c68-445d-b851-80dc99e6cefa",
+         "f0ca1895-7b05-4901-9339-02825e75e31d",
+         "e855a16e-096c-42f1-9d20-8e54d844ae99",
          "4829b011-a5f6-426d-b3ce-06fe26f81782",
-         "e9d9961d-a385-472c-a216-81a2983f02e9",
          "d20857e7-9859-486d-bc75-4c95cd84b1b6",
+         "6a9369fe-b37d-42cb-9f71-61a7dd0471c5",
+         "e9d9961d-a385-472c-a216-81a2983f02e9",
+         "7b0a6cf6-ecbb-4d5a-892a-b70e22b9bd98",
+         "e13401c8-429d-4899-acb3-1da1b6794386",
+         "8fdf511f-2464-43eb-85bf-da3b9be423fc",
+         "eec8df45-5162-4d94-8b10-a1bc1f3cf12d",
+         "710bee82-2033-44ff-b4d3-d18bb9dc7ebd",
+         "95c89d65-0cd1-4f61-b6ad-26f318143746",
+         "8e9cab10-19d8-40d7-8959-71710c409be4",
+         "d1b886c1-3b8f-4c93-bace-12f26fa36930",
+         "240518cf-fec8-4f7b-b45f-b2fd9a49a173",
+         "6a9369fe-b37d-42cb-9f71-61a7dd0471c5",
          "8617234c-e25d-4c0f-81a2-2511c80570ed"
         ]
        },
-       "4df274eb-ff13-451d-af42-6a4d29a985d3": {
+       "229af36b-bc69-42a0-b4c2-ff126e887bbe": {
         "title": "Opsætning og integration",
-        "id": "4df274eb-ff13-451d-af42-6a4d29a985d3",
+        "id": "229af36b-bc69-42a0-b4c2-ff126e887bbe",
         "references": [
          "8bb4d68f-2e10-4938-8ae8-9b594501d71f",
          "d9dc50d7-4ee2-40ac-b4c7-e18ec9a9058b",
          "27a151cb-e4d0-482b-87cf-40f266de1a1e",
+         "123da7b6-4797-4af1-ae70-dcf37844c037",
          "3eb6c8d5-fa9f-4c65-8d20-87a867c14d2b",
          "fa796878-61dc-49a3-a962-fa67e4aed6f2",
          "7f632d36-b047-48fa-ae7c-c57c897cd70d",
          "6f9ac95a-fc00-45f2-b310-73a379d0f981",
-         "3afbc09d-7e47-47fc-abd7-c1f2da838d4e",
-         "f2a81222-fe27-4f92-83ea-e033aef6d3ab",
+         "3f28ee5b-218c-48c9-bf2e-a666474a26c6",
+         "9a7c8412-606d-44db-a136-177b523b6dbe",
+         "651227de-b47a-4125-b84e-dce334efc204",
+         "f6150870-dce5-4229-a13b-32a1bbfd1bfe",
+         "5b2d1b1f-b42e-453e-9d96-6e1e639f7b0f",
+         "f5ddcc98-94a3-42a8-8f05-9dee3c3d69ea",
          "57087143-c3da-451d-93fe-1d0e6e1d7784",
+         "1b2b62a0-3c54-4db1-942a-f4a1f8efeb6d",
          "b28ce466-af40-4ee3-9c5e-01005c104042",
+         "9061fab9-e1ee-456d-a187-fa1fe28dd1da",
          "869e7f62-ebba-4914-bce0-a585364d9645",
-         "a0c28fb0-a6cb-4961-98d6-a397b83b63cf",
-         "57f6f595-c2ce-4088-be26-740e0a814219",
          "4e72ec76-108f-42df-adca-013ff3c9957e",
+         "a3274e6d-4d92-4071-bab6-35abae5a398b",
          "9ac46186-5b8a-491c-8125-3a77ddcfa7bc",
+         "6a4d9d2f-48b6-44fe-8cb5-a01614f7f927",
          "af845ecb-cb4b-4251-b564-09d7237f2213",
-         "3b75332d-4b8e-4487-9c00-68aae2f31ebe",
-         "eb2f6d45-9508-430f-a18f-4a5d392f3235",
          "3039af31-d34c-4ed2-a770-9e55ac53d637",
+         "3b75332d-4b8e-4487-9c00-68aae2f31ebe",
+         "99f13977-5326-4104-9d38-24ec2deaad59",
+         "eb2f6d45-9508-430f-a18f-4a5d392f3235",
+         "70c9b0e3-5957-4777-a13b-6a50780ff81c",
+         "cc500e17-4fd5-4976-8737-778f1d8eff34",
+         "111e0c1a-27f9-4943-ab88-b41fadb5b5e1",
+         "ab962578-bd1e-4a71-a267-a98c1418089f",
          "c28dd9f9-ff0b-48d3-9eeb-b9c4ee5f47cc",
          "5470219b-892f-4276-83c6-c4d4d2bfccb5",
+         "27617649-1a7e-4cdf-953b-e5c8615b14c7",
          "1cbcb4f5-ef7d-4ae7-b4cc-80ba9ec2576e",
-         "d1b886c1-3b8f-4c93-bace-12f26fa36930",
-         "27617649-1a7e-4cdf-953b-e5c8615b14c7"
+         "36698058-c98e-46d3-afa6-390128b6cfea",
+         "8617234c-e25d-4c0f-81a2-2511c80570ed"
         ]
        },
-       "3f9deda7-b82a-441a-9f40-88c17b0cd36e": {
-        "title": "Design og rumstørrelse",
-        "id": "3f9deda7-b82a-441a-9f40-88c17b0cd36e",
+       "30550f9b-f9de-4d58-aa0c-13dd6021f084": {
+        "title": "Design og størrelse",
+        "id": "30550f9b-f9de-4d58-aa0c-13dd6021f084",
         "references": [
          "e94e0dd8-5377-4a33-b8f9-1dbd95e5103d",
          "27a151cb-e4d0-482b-87cf-40f266de1a1e",
          "a786ebcc-cf38-4273-a8aa-2d6e9c2be43d",
-         "ddc719dc-abfa-4b79-b537-18d586dcb4a0",
          "70f127cd-8fd9-48da-99ee-4c05436c97fd",
+         "ddc719dc-abfa-4b79-b537-18d586dcb4a0",
          "62b1abb1-e9b6-4bc3-8fd2-4a71c3dd90b6",
-         "2abba369-0b76-40ef-b4f4-ce8e0dd8cf5d",
          "445b0e49-caf3-4f7e-ab64-80b1060ac5e8",
          "90a0ccdf-c1de-47d3-b4d4-08c9713d0fdc",
-         "4c434e55-dbba-42f0-815e-dd2ff25595d3",
+         "b3fc4e66-8f85-43cb-90cf-b6401cb67fad",
          "e0252055-9861-4dbb-bb7b-0fb2cc0be089",
+         "1cc09fc5-1b1a-4700-86a4-6fda13a2efd5",
          "3b75332d-4b8e-4487-9c00-68aae2f31ebe",
-         "17299062-b2e9-47e9-b35e-fbb864d68c58",
-         "0981a3bb-fcad-4a7a-abbb-196e1932980d",
-         "61528e50-ec2b-401c-97c1-84c200fc7e24",
-         "816d9922-8efa-4205-893d-b0b50dcf9290",
          "e6fd036d-fdca-461d-9f1e-5063b556d7cf",
-         "f0ca1895-7b05-4901-9339-02825e75e31d",
+         "816d9922-8efa-4205-893d-b0b50dcf9290",
+         "887874e2-c483-486a-80a6-53fa9da15464",
+         "e13401c8-429d-4899-acb3-1da1b6794386",
+         "8fdf511f-2464-43eb-85bf-da3b9be423fc",
          "84aeb69a-4e62-4188-9da2-c80b80768cd4",
          "95c89d65-0cd1-4f61-b6ad-26f318143746",
-         "e0614d48-0113-4171-a281-834c90fe8169",
-         "240518cf-fec8-4f7b-b45f-b2fd9a49a173",
-         "e05401f9-4e4d-4685-b2e7-1385d89c9746",
-         "2fae3386-6e06-456e-bb5f-0924602c220f",
-         "e13401c8-429d-4899-acb3-1da1b6794386"
+         "ffce1f58-7c6c-4556-a752-39c458ccb06c"
         ]
        }
       },
-      "rating": 4.77629063097514,
-      "count": 523,
+      "rating": 4.77671755725191,
+      "count": 524,
       "reviewCount": 219,
       "distribution": {
        "1": 2,
        "2": 3,
        "3": 12,
        "4": 76,
-       "5": 430
+       "5": 431
       }
      }
     },
@@ -365,7 +412,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 589,
+        "availableQuantity": 582,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.690,-",
@@ -388,7 +435,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 307,
+        "availableQuantity": 305,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.690,-",
@@ -400,15 +447,15 @@
      ],
      "parentProductCode": "SONBEAMULTRA",
      "reviews": {
-      "rating": 4.63636363636364,
-      "count": 11,
+      "rating": 4.6,
+      "count": 15,
       "reviewCount": 5,
       "distribution": {
        "1": 0,
        "2": 0,
-       "3": 1,
+       "3": 2,
        "4": 2,
-       "5": 8
+       "5": 11
       }
      }
     }
@@ -418,21 +465,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 22
+    "numberOfStoresExperience": 19
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.77340823970037,
-   "count": 534,
+   "rating": 4.77179962894249,
+   "count": 539,
    "reviewCount": 224,
    "distribution": {
     "1": 2,
     "2": 3,
-    "3": 13,
+    "3": 14,
     "4": 78,
-    "5": 438
+    "5": 442
    }
   },
   "boxContent": [

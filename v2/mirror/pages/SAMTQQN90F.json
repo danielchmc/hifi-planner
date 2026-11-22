@@ -13,6 +13,27 @@
    "url": "/tv/tv/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja (5.3)",
+   "HDMI": "2.1",
+   "Antal HDMI 2.1 Indgange": "4x",
+   "HDMI 2.1 funktioner": "Variable Refresh Rate, Auto Game Mode (ALLM)",
+   "HDMI ARC/eARC": "eARC",
+   "Wi-Fi version": "Wi-Fi 5 (802.11ac)",
+   "HDMI-kabel inkluderet": "Nej",
+   "Fra beskrivelsen": "HDMI 2.1 på alle indgange (VRR, ALLM, eARC, HFR) · HDMI-CEC (Anynet +)"
+  },
+  "gallery": [
+   "17d4b4a1-563d-4930-903d-b57c5a820af7",
+   "c225ebcb-9bce-4fe9-9189-70b59b2118dc",
+   "6f3d2ac3-a5ab-4f2e-bf3d-fdf11d29db3d",
+   "7e7a0043-d7dd-4154-a7a9-a19b3dd71784",
+   "2be74d5a-8cda-411a-b594-91f9d30a20bf",
+   "07e42191-76a7-4c1a-a143-e01a572d11ba"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 256811,
   "skuCode": "SAMTQQN90F",
@@ -409,7 +430,6 @@
     },
     "url": "/samsung-qn90f-neo-qled-tv/samtq115qn90f/",
     "canonicalUrl": "/samsung-qn90f-neo-qled-tv/samtq115qn90f/",
-    "lowestShippingPriceRaw": 399,
     "dropshippingBrand": "Samsung",
     "addOns": [],
     "pisLink": "https://images.hifiklubben.com/image/38e0d85b-99d6-4b26-a6cb-aba533c771fa"
@@ -450,48 +470,41 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SAMTQQN90F får stor ros for et skarpt og levende billede, dyb sort, flotte farver og fremragende ydeevne i lyse rum, mens den matte overflade reducerer refleksioner markant. Menuer og smartfunktioner er generelt velfungerende og hurtige, selv om det nye system og fjernbetjeningen kræver lidt tilvænning. Lydvurderingerne er blandede og spænder fra varm, fyldig lyd med kontant bas til tynd og kasseagtig lyd, men helhedsindtrykket er stadig meget begejstret.",
+   "summary": "SAMTQQN90F leverer en fremragende tv-oplevelse med skarpe 4K-detaljer, flotte farver, dyb sort og bemærkelsesværdigt få refleksioner. Den store, medrivende skærm fungerer især godt til sport og i lyse rum, mens smartfunktionerne og de hurtige menuer gør hverdagen nemmere. Lyden spænder fra varm, fyldig bas til en lidt dåseagtig gengivelse, så et eksternt lydsystem kan være attraktivt for krævende lyttere.",
    "headlines": {
-    "matte screen handles reflections exceptionally well": {
-     "sentimentAnalysis": "Den refleksionssvage matte overflade er særligt effektiv i solrige rum og ved vinduer.",
-     "simpleTitle": "Mat skærm håndterer refleksioner fremragende",
+    "sharp, colourful picture": {
+     "sentimentAnalysis": "Billedets skarphed, farvegengivelse og generelle kvalitet bliver konsekvent rost.",
+     "simpleTitle": "Skarpt billede med flotte farver",
      "bias": "positive",
      "key": "picture",
-     "groupId": "b6a9da32-464e-4e92-9c41-fa345894217d"
+     "groupId": "f0350d58-3244-41f7-9a36-bfbc9e8a30f3"
     },
-    "sharp, vivid picture with deep blacks": {
-     "sentimentAnalysis": "Anmeldelserne roser de skarpe 4K-detaljer, levende farver, stærk kontrast og dybe sorte nuancer.",
-     "simpleTitle": "Skarpt og levende billede med dyb sort",
+    "very low reflections": {
+     "sentimentAnalysis": "Den matte skærm roses gentagne gange for at reducere refleksioner, også i rum med stærkt sollys.",
+     "simpleTitle": "Meget få refleksioner",
      "bias": "positive",
-     "key": "picture",
-     "groupId": "b6a9da32-464e-4e92-9c41-fa345894217d"
+     "key": "reflection_handling",
+     "groupId": "c0bdde79-5d28-46a6-8aa4-90caf4ae5a0b"
     },
-    "menus and smart features are capable but take some getting used to": {
-     "sentimentAnalysis": "Brugerfladen har mange nyttige funktioner, men det nye styresystem og de mange muligheder er ikke straks intuitive.",
-     "simpleTitle": "Menuer og smartfunktioner er gode, men kræver tilvænning",
-     "bias": "meh",
-     "key": "usability",
-     "groupId": "2fd44901-b96f-47ae-aeaa-4810d931738d"
-    },
-    "sound can be warm and bass-rich": {
-     "sentimentAnalysis": "Den indbyggede lyd beskrives som overraskende fyldig med overbevisende bas og en varm, kontant karakter.",
-     "simpleTitle": "Lyden kan være varm og fyldig med god bas",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "6e1f4e5a-7335-4974-8e1d-a77780049718"
-    },
-    "audio can sound boxy without external amplification": {
-     "sentimentAnalysis": "En vurdering finder TV-lyden kasseagtig, mens en anden bruger en hjemmebiografreceiver i stedet for de indbyggede højttalere.",
-     "simpleTitle": "Lyden kan virke kasseagtig uden ekstern forstærkning",
+    "interface takes time to learn": {
+     "sentimentAnalysis": "Nogle anmeldelser finder fjernbetjeningen eller det nye styresystem forvirrende, mens betjeningen bliver lettere med tiden.",
+     "simpleTitle": "Brugerfladen kræver tilvænning",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "6e1f4e5a-7335-4974-8e1d-a77780049718"
+     "key": "smart_interface",
+     "groupId": "afff5d12-1cde-422a-b101-6f4082f72b81"
+    },
+    "menus are easy to use": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver menuerne som intuitive, overskuelige og hurtige at betjene.",
+     "simpleTitle": "Menuerne er nemme at bruge",
+     "bias": "positive",
+     "key": "smart_interface",
+     "groupId": "afff5d12-1cde-422a-b101-6f4082f72b81"
     }
    },
    "grouping": {
-    "b6a9da32-464e-4e92-9c41-fa345894217d": {
+    "f0350d58-3244-41f7-9a36-bfbc9e8a30f3": {
      "title": "Billedkvalitet",
-     "id": "b6a9da32-464e-4e92-9c41-fa345894217d",
+     "id": "f0350d58-3244-41f7-9a36-bfbc9e8a30f3",
      "references": [
       "fc98544a-436a-47e9-83b8-d74cba95c17d",
       "8722da30-38d3-4e6c-981d-c2ced609b85a",
@@ -508,25 +521,28 @@
       "9b57ff4f-59cd-4147-b780-afe52c641ffb"
      ]
     },
-    "2fd44901-b96f-47ae-aeaa-4810d931738d": {
-     "title": "Brugervenlighed",
-     "id": "2fd44901-b96f-47ae-aeaa-4810d931738d",
+    "afff5d12-1cde-422a-b101-6f4082f72b81": {
+     "title": "Smart-brugerflade",
+     "id": "afff5d12-1cde-422a-b101-6f4082f72b81",
      "references": [
       "fc98544a-436a-47e9-83b8-d74cba95c17d",
       "8722da30-38d3-4e6c-981d-c2ced609b85a",
       "c99d8e9a-e750-4fc3-b3e3-998e78877e1e",
       "13143017-7bd7-43c0-b4b4-992291cbaee2",
       "4f154f12-2b36-4b7a-ac2e-6fe183c7cbb6",
-      "b9ea481e-349a-4cea-abad-b1f9fefd4903",
-      "9b57ff4f-59cd-4147-b780-afe52c641ffb"
+      "fd2d1465-e8ab-4011-8ced-6b54cd91be3a",
+      "b9ea481e-349a-4cea-abad-b1f9fefd4903"
      ]
     },
-    "6e1f4e5a-7335-4974-8e1d-a77780049718": {
-     "title": "Lydkvalitet",
-     "id": "6e1f4e5a-7335-4974-8e1d-a77780049718",
+    "c0bdde79-5d28-46a6-8aa4-90caf4ae5a0b": {
+     "title": "Reflektionshåndtering",
+     "id": "c0bdde79-5d28-46a6-8aa4-90caf4ae5a0b",
      "references": [
-      "fc98544a-436a-47e9-83b8-d74cba95c17d",
-      "b9ea481e-349a-4cea-abad-b1f9fefd4903"
+      "13143017-7bd7-43c0-b4b4-992291cbaee2",
+      "fd46e140-e4ac-4695-b865-82e879c4ed4c",
+      "2b55e09a-187e-469f-a864-a6257de08dba",
+      "b27b97db-50ee-4dc9-9f29-37745d0aa348",
+      "9b57ff4f-59cd-4147-b780-afe52c641ffb"
      ]
     }
    },

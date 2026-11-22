@@ -13,6 +13,24 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 6.0 ( SBC, LDAC, LC3, LE Audio )"
+  },
+  "gallery": [
+   "32551d45-c428-4e3f-9cab-3bf75f53b5e5",
+   "10c0d624-a3c9-49bc-bd25-98fbd82abb04",
+   "c21184e1-26b6-4273-9a7d-a0e356c725d9",
+   "79cd7488-cfc3-49b8-b8b4-b6bf1a7f0c89",
+   "4989e9a6-b93e-40b6-a640-8d3409aea6ec",
+   "ee684544-3b45-4acd-ab99-c5e56ab694bd",
+   "7b385c19-228c-4d3b-a000-5da53b155193",
+   "8285816e-cb49-49c6-a3dd-804b786b2019",
+   "410cbcef-b3d6-4649-aa88-dea214840d63",
+   "a98b46f0-3a0b-4a62-9158-a7094c40dc5f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 284978,
   "skuCode": "SONYWH1000XX",
@@ -198,7 +216,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 18,
+     "availableQuantity": 37,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -425,6 +443,28 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
+   "summary": "Sony WH-1000XX leverer en varm, fyldig og omsluttende lyd med fremragende trådløs kvalitet. Høretelefonerne føles som en stærk opgradering i forhold til tidligere versioner og kombinerer forbedret ydeevne med en lettere og mere behagelig pasform. Den samlede kvalitet og funktionalitet gør modellen til et oplagt valg til hverdagslytning og rejser.",
+   "headlines": {
+    "rich, high-quality sound": {
+     "sentimentAnalysis": "Høretelefonerne beskrives konsekvent som meget gode med stærk lydkvalitet og fremragende trådløs ydeevne.",
+     "simpleTitle": "Fyldig lyd i høj kvalitet",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "e61f3a9c-65b2-4a41-bff0-167a099fd411"
+    }
+   },
+   "grouping": {
+    "e61f3a9c-65b2-4a41-bff0-167a099fd411": {
+     "title": "Lydkvalitet",
+     "id": "e61f3a9c-65b2-4a41-bff0-167a099fd411",
+     "references": [
+      "84627bb6-e956-4cd5-9d84-2abbccf7547a",
+      "ffc56a6f-c46c-4f24-b63d-f27bca0c50c4",
+      "f5ca9865-d0be-427b-8bca-ec6d577aa895",
+      "0c1abd58-92f8-4135-9d5a-ba44a7dcddc6"
+     ]
+    }
+   },
    "rating": 4.9,
    "count": 10,
    "reviewCount": 6,

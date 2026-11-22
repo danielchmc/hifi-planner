@@ -13,6 +13,28 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Minijack/AUX",
+   "Lydindgang": "Analog RCA, Analog XLR, Minijack/AUX",
+   "Indgang (andet)": "USB C",
+   "Højtaler type": "Trådløs højtaler",
+   "Bluetooth type": "5.2",
+   "Bluetooth technologi": "Auracast",
+   "Fra beskrivelsen": "Mulighed for seriekobling (2 styk trådløst eller op til 5 højtalere i alt via AUX-ud) · USB-C ladeudgang til telefon m.m. (5V/3A)"
+  },
+  "gallery": [
+   "d3090f50-45d5-4705-bb6e-990ad6866141",
+   "c6f55c63-6148-4c8e-80b4-58e3f6c81510",
+   "7443beac-0f4d-4711-8437-a412387660a0",
+   "c1e3f01e-673c-49bc-bf6e-bc27ae04d9a2",
+   "13ba9601-84c2-4196-b9ae-8111c001a457",
+   "27c11611-91f0-4641-a586-d6570a87ceb9",
+   "8540ab5c-d1e3-4b1a-9017-732fab2a1bef",
+   "9ca33f53-d024-4219-a24b-b6a792212334"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 278997,
   "skuCode": "MARBROMLEY450",
@@ -219,7 +241,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 75,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -280,60 +302,59 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARBROMLEY450 leverer en varm, slagkraftig og omsluttende lyd med dyb bas og masser af energi, der fylder rummet. Lang batteritid og sjove lyseffekter giver praktisk værdi og et flot visuelt udtryk. En alsidig højttaler i høj kvalitet, skabt til musikglæde frem for stram hi-fi-nøjagtighed.",
+   "summary": "MARBROMLEY450 leverer varm, kraftfuld og omsluttende lyd med dyb bas og en fornøjelig gengivelse ved forskellige lydstyrker. Den lange batteritid og de underholdende lyseffekter giver både praktisk værdi og visuel energi. Højttaleren er en funktionsrig kvalitets-allrounder, der prioriterer musikglæde frem for strikt hi-fi-nøjagtighed.",
    "headlines": {
-    "powerful sound with deep bass": {
-     "sentimentAnalysis": "Højttaleren roses for klar og kraftfuld gengivelse med tilfredsstillende basdybde og tryk.",
-     "simpleTitle": "Kraftfuld lyd med dyb bas",
+    "rich, enjoyable sound": {
+     "sentimentAnalysis": "Højttaleren fylder rummet med fornøjelig og levende lyd og fungerer godt ved både lav og høj lydstyrke.",
+     "simpleTitle": "Fyldig og fornøjelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f74e7f4f-0a60-498f-b844-0c9da1b0dbfc"
+     "key": "sound-quality",
+     "groupId": "a3f07f75-b92d-490d-a6d3-dedb391a8352"
     },
-    "enjoyable room-filling presentation": {
-     "sentimentAnalysis": "Lyden beskrives som livlig, energisk og overbevisende ved både lav og høj lydstyrke.",
-     "simpleTitle": "Behagelig, rumfyldende lyd",
+    "deep, powerful bass": {
+     "sentimentAnalysis": "Den fyldige bas tilfører kraft og dybde og gør musikken mere energisk og engagerende.",
+     "simpleTitle": "Dyb og kraftfuld bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f74e7f4f-0a60-498f-b844-0c9da1b0dbfc"
+     "key": "sound-quality",
+     "groupId": "a3f07f75-b92d-490d-a6d3-dedb391a8352"
     },
     "long-lasting battery": {
-     "sentimentAnalysis": "Den lange batteritid fremhæves som en nyttig styrke til langvarig lytning.",
+     "sentimentAnalysis": "Den lange batteritid understøtter lange lytteperioder og gør mobil brug mere bekvem.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
-     "key": "battery",
-     "groupId": "d9d85b5a-c86e-4e5d-8104-90751499e997"
+     "key": "battery-life",
+     "groupId": "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70"
     },
-    "fun lighting effects": {
-     "sentimentAnalysis": "De integrerede lyseffekter tilfører en sjov og indbydende visuel dimension.",
-     "simpleTitle": "Sjove lyseffekter",
+    "fun, colorful lighting": {
+     "sentimentAnalysis": "Lyseffekterne tilfører en legende visuel dimension og øger højttalerens underholdningsværdi.",
+     "simpleTitle": "Sjov og farverig belysning",
      "bias": "positive",
      "key": "lighting",
-     "groupId": "db63182e-e2b4-4475-b4f1-6a0b9ef29fa2"
+     "groupId": "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531"
     }
    },
    "grouping": {
-    "f74e7f4f-0a60-498f-b844-0c9da1b0dbfc": {
+    "a3f07f75-b92d-490d-a6d3-dedb391a8352": {
      "title": "Lydkvalitet",
-     "id": "f74e7f4f-0a60-498f-b844-0c9da1b0dbfc",
+     "id": "a3f07f75-b92d-490d-a6d3-dedb391a8352",
      "references": [
       "af43ac9c-b67a-492e-9c17-0d777b73d5dd",
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
       "35c32e6e-6413-46dc-a473-4b86b1576880",
-      "fb4e06b2-75aa-4d73-ae1d-0d5f9fafd96e",
-      "1e027c05-9850-4c96-ba59-5801864a1b2b"
+      "fb4e06b2-75aa-4d73-ae1d-0d5f9fafd96e"
      ]
     },
-    "d9d85b5a-c86e-4e5d-8104-90751499e997": {
+    "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70": {
      "title": "Batteritid",
-     "id": "d9d85b5a-c86e-4e5d-8104-90751499e997",
+     "id": "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70",
      "references": [
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
       "35c32e6e-6413-46dc-a473-4b86b1576880"
      ]
     },
-    "db63182e-e2b4-4475-b4f1-6a0b9ef29fa2": {
+    "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531": {
      "title": "Lyseffekter",
-     "id": "db63182e-e2b4-4475-b4f1-6a0b9ef29fa2",
+     "id": "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531",
      "references": [
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
       "35c32e6e-6413-46dc-a473-4b86b1576880"

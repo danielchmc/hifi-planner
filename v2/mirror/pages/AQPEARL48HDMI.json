@@ -13,6 +13,16 @@
    "url": "/kabler/hdmi-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI Speed": "Ultra High Speed",
+   "Fra beskrivelsen": "Ultra High Speed (HDMI 2.1, 8K/60, 4K/120, 48Gbps, eARC) · Understøtter Ethernet · OBS: HiFi Klubben kan levere hele sortimentet af AudioQuest HDMI-kabler. Hvis du har behov for meget lange kabeltræk, anbefaler vi dig at kontakte din butik for nærmere rådgivning."
+  },
+  "gallery": [
+   "92bf9028-c987-42e0-9f7f-3ce08f20c70f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 144559,
   "skuCode": "AQPEARL48HDMI",
@@ -159,7 +169,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 80,
+     "availableQuantity": 175,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -238,7 +248,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 148,
+     "availableQuantity": 244,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -316,8 +326,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
-     "availableQuantity": 237,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 429,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -396,7 +406,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 80,
+     "availableQuantity": 274,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -475,7 +485,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 67,
+     "availableQuantity": 165,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -574,165 +584,92 @@
   "bundleRelations": [],
   "variantNavigationType": "sizeSelector",
   "reviews": {
-   "summary": "AQPEARL48HDMI leverer en stabil, hurtig forbindelse i høj kvalitet med et klart billede og en varm, detaljeret lyd. Den solide konstruktion, pålidelige signaloverførsel og brede kompatibilitet gør kablet velegnet til TV, eARC, soundbarer, gaming og hi-fi-anlæg. Den høje pris og en vis stivhed er de største forbehold, men den samlede vurdering er meget positiv.",
+   "summary": "AQPEARL48HDMI bliver bredt betragtet som et pålideligt HDMI-kabel i høj kvalitet med stabil billed- og lydoverførsel, herunder stærk ARC/eARC-ydeevne og færre signaludfald. Mange anmeldelser roser den klare, detaljerede, varme og medrivende gengivelse, mens den solide konstruktion og gode stik skaber ekstra tillid. De vigtigste forbehold er den relativt høje pris og, for nogle brugere, en overdreven stivhed, men den samlede vurdering er fortsat meget begejstret.",
    "headlines": {
-    "reliable signal and connection": {
-     "sentimentAnalysis": "Stabil signaloverførsel, hurtig kommunikation og løsning af udfald eller lydforsinkelser nævnes gentagne gange som styrker.",
-     "simpleTitle": "Pålideligt signal og stabil forbindelse",
+    "good value for dependable performance": {
+     "sentimentAnalysis": "Mange købere vurderer kablet som rimeligt prissat eller god værdi på grund af den pålidelige drift, høje kvalitet og ydelse i krævende opsætninger.",
+     "simpleTitle": "God værdi for pålidelig ydelse",
      "bias": "positive",
-     "key": "reliable_signal",
-     "groupId": "e7d65b92-ad69-45be-b34e-bca02dc28f03"
+     "key": "value",
+     "groupId": "a3deee0c-c63e-4d3d-9a34-d24d5bc8748b"
     },
-    "clear picture and engaging sound": {
-     "sentimentAnalysis": "Billedkvaliteten beskrives ofte som skarp og levende, mens lyden roses for at være klar, varm, detaljeret og mærkbart forbedret i nogle anlæg.",
-     "simpleTitle": "Klart billede og engagerende lyd",
+    "clear, detailed picture and sound": {
+     "sentimentAnalysis": "Kablet forbindes gentagne gange med skarpe billeder i høj kvalitet samt forbedret, varm, detaljeret og medrivende lyd fra tv, forstærkere, konsoller og soundbars.",
+     "simpleTitle": "Klar, detaljeret lyd og billede",
      "bias": "positive",
-     "key": "av_quality",
-     "groupId": "8f85766d-7bbd-43cd-88bb-145809dcc977"
+     "key": "avquality",
+     "groupId": "d326fdf0-52df-4418-aaa8-a0d639af4a45"
     },
-    "premium quality comes at a premium price": {
-     "sentimentAnalysis": "Flere anmeldelser synes, at kablet er dyrt eller svært at retfærdiggøre frem for almindelige alternativer, selv om konstruktion og ydeevne anerkendes.",
-     "simpleTitle": "Premiumkvalitet koster ekstra",
-     "bias": "negative",
-     "key": "value_concern",
-     "groupId": "f81bc79f-4155-4904-a4ad-173bde732fee"
+    "stable, reliable signal transfer": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent pålidelig signaloverførsel, hurtig kommunikation mellem enheder og løsning af udfald, sorte skærme, forsinkelser og eARC-problemer.",
+     "simpleTitle": "Stabil og pålidelig signaloverførsel",
+     "bias": "positive",
+     "key": "signal",
+     "groupId": "e15e5338-3527-4750-82e6-e0ee60c2216d"
     },
-    "sturdy construction can make routing difficult": {
-     "sentimentAnalysis": "Kablet opleves gentagne gange som solidt og godt fremstillet, men stivheden kan gøre pæn kabelføring bag udstyr vanskelig.",
-     "simpleTitle": "Solid konstruktion kan gøre kabeltrækning vanskelig",
+    "solid construction inspires confidence": {
+     "sentimentAnalysis": "Anmeldelserne roser den flotte finish, stærke materialer, gode stik, fleksibilitet i nogle installationer og praktiske detaljer til kabelstyring.",
+     "simpleTitle": "Solid konstruktion skaber tillid",
+     "bias": "positive",
+     "key": "build",
+     "groupId": "91c700e1-65a6-4d39-8c73-a736798a2f14"
+    },
+    "premium pricing is not always justified": {
+     "sentimentAnalysis": "Et mindretal synes, at kablet er dyrt eller overkill, og oplever kun få synlige eller hørbare fordele i forhold til simple eller ældre budget-HDMI-kabler i enklere systemer.",
+     "simpleTitle": "Premiumprisen er ikke altid berettiget",
      "bias": "negative",
-     "key": "stiffness",
-     "groupId": "8ce4ccce-049f-4fbd-8d2f-aacf2f950a4d"
+     "key": "value",
+     "groupId": "a3deee0c-c63e-4d3d-9a34-d24d5bc8748b"
+    },
+    "stiffness can complicate installation": {
+     "sentimentAnalysis": "Flere anmeldelser oplever kablet som mærkbart stift, hvilket gør pæn føring gennem trange områder vanskeligere trods de oplevede fordele ved afskærmning og holdbarhed.",
+     "simpleTitle": "Stivhed kan gøre installationen vanskeligere",
+     "bias": "negative",
+     "key": "build",
+     "groupId": "91c700e1-65a6-4d39-8c73-a736798a2f14"
     }
    },
    "grouping": {
-    "e7d65b92-ad69-45be-b34e-bca02dc28f03": {
-     "title": "Ydeevne",
-     "id": "e7d65b92-ad69-45be-b34e-bca02dc28f03",
+    "e15e5338-3527-4750-82e6-e0ee60c2216d": {
+     "title": "Signaloverførsel",
+     "id": "e15e5338-3527-4750-82e6-e0ee60c2216d",
      "references": [
       "215af690-536e-4a9b-a0c7-5db88ad4d3d6",
-      "9f0320fc-412b-42ce-af3f-db1d2e425a3a",
       "f517bb1b-ac6f-4f33-910b-280f741c0439",
-      "024a5f68-7749-42cc-8f32-b0f738794da8",
       "123a5b25-8f57-4ca4-a0b9-c5ce22c1e05d",
       "b087c706-124b-4a82-8632-f226dacca021",
       "fb6a2583-42eb-4965-a3fb-458f8c605fdc",
       "d0758357-bb47-47b9-a299-763cd33f85fd",
       "aeb996f2-d75f-4188-b4ca-a370eee4c389",
-      "3baeead2-a7d1-43c0-9ffd-28bd6ccf8c90",
       "47e29b7b-96fc-4673-8307-9440a12d9a8d",
+      "3baeead2-a7d1-43c0-9ffd-28bd6ccf8c90",
       "6c781a35-1fc9-47d6-987e-69f71fdb8a9a",
-      "4ce2e7c4-315c-4106-91b7-40bdf02a6a51",
+      "b0cca655-334d-43cf-9690-dcb73abfaa57",
       "248e5546-05e8-4d93-9405-784b1c7c7310",
-      "c1d1a043-c0fd-4db4-8c63-324af865f116",
-      "3a3772fb-f586-4d16-b272-36ed69401bbf",
-      "af8cf2ed-8d50-4800-a882-6e31ad85c127",
-      "cc92fc84-6550-4662-b628-94c1be48ecab",
-      "9ae726cf-0da0-4fde-8083-9aff3f97abd9",
+      "cad2f808-d786-4cb3-b591-d87318dc67c7",
       "f749e748-85b5-45d1-b47d-724663ab6d30",
-      "ad300767-456d-434a-98d3-bc9f5d73e013",
+      "7d5ce4ff-2c6e-4198-94a9-f143acd90e75",
+      "a3cac99b-c26a-48e3-8373-9b28ea5f3c62",
+      "6a6f3cf6-08cb-44b6-93f6-47b816f35f56",
+      "1a8c9a95-ea87-46be-92be-b350c5bea488",
       "5f777b6b-07f1-4e97-ad0e-8739f6ca2462",
       "e90d60d4-e97a-4af2-9ced-d83a57da4921",
-      "4c00a283-9738-4a8c-b4c1-0ba212a7ba1b",
-      "cad2f808-d786-4cb3-b591-d87318dc67c7",
-      "81d02778-0a45-4eb4-a426-60dccec8d281",
-      "a55836be-401c-4d36-9650-a81b4ba0b96a",
-      "1a8c9a95-ea87-46be-92be-b350c5bea488",
       "74837188-3505-4125-84e2-689f95c3fbf8",
       "9aa0c349-fd00-43dc-b687-b59f06445ff8",
-      "7fc3247d-61d0-4e79-9e39-0553c7a3f55a",
-      "60f0b682-97c9-40f9-8b4e-6bcd40e90e71",
-      "7d5ce4ff-2c6e-4198-94a9-f143acd90e75",
-      "b41cbe88-f9b1-439a-b1fd-5d53c6bf7560",
-      "24419e07-2d29-4da7-956b-f32cb7994494",
-      "6a6f3cf6-08cb-44b6-93f6-47b816f35f56",
-      "4ee97353-c6a4-4948-9389-831df5598087",
-      "5ab0c13d-9a05-4767-aec5-8fe538c84b71",
-      "a3cac99b-c26a-48e3-8373-9b28ea5f3c62",
-      "98565a1e-6273-4e88-bd75-32a84eea4476",
-      "6b345010-fcaf-45cc-b509-2c53262fdcf8",
-      "21e45b3c-4311-465e-912e-0bd3e3de1939",
       "13337d8f-b89c-4c04-b97e-7d9360d04eb0",
       "78d40db1-8ed4-4d4a-9ed3-f4007ef4853d",
-      "6d349517-eac8-4cc2-81ca-4dfe5c0db3c8",
-      "9102b65d-a0b0-4c74-9879-5fc1b7acd8e7",
-      "d0b6b5d9-d092-445e-afde-e10a91b0133f",
-      "d8c79079-2946-4fa6-b6d6-255da03c4b80",
-      "0b1e99f6-1b0e-4211-869c-f5faf819ea61",
-      "31a8964a-0091-4a59-9505-b72a1574ca54",
-      "56e85889-5518-46ac-936b-cdb5ab989da8",
-      "3a22f9ba-e282-4502-9289-2db0d2be5fea",
-      "b57c02e5-2524-4be9-9bd0-e3a5eecdf844",
-      "ce55ff4b-7657-46d1-b839-8ffe206ad045",
-      "0613cd5f-f924-49a6-a905-fc409491e6bb",
-      "abd5a48c-2b3e-4718-9412-72af9d9495b1",
-      "c9c22771-cfa1-46fe-982e-bbb979cf6d29",
-      "612378cb-4edf-4bea-8c26-f2b0dd463b78",
-      "6125a41d-d3a7-4bf4-a571-c2a1a7f2d698",
-      "c75cb536-aef3-44c5-a26b-c68d9f1be742",
-      "b2114198-e461-4d5c-b409-942b4e3591a8",
-      "b9a80d17-46de-4484-86c9-53fbd7dce0e5",
-      "155dac72-b263-459f-964a-e962e9db0da6",
-      "fd2d4dae-a945-4863-97db-b8ffad6e2044",
+      "9f18c520-72b0-4259-a82c-951e74a99f26",
       "e0f152f3-c57c-4371-94b4-1667cfd5f4e9",
-      "795a867d-03bc-4d7f-a2b0-311cfc84e713",
-      "4a3403d5-5eed-4c92-8a35-6e7b21f997ef",
-      "5d855069-64f1-4940-99ba-eaa88146975d",
       "c7712415-df29-40cf-94be-91fd2072c4ea",
-      "99852b36-3831-46ec-8aca-9f37203683e3",
-      "2ca4bad8-6297-4b24-8cd3-623a7fd8ea51",
-      "34f5f8fd-68d8-483e-b19c-46b5f6283ca6",
-      "15fb25f8-54b5-4502-b157-0c34dbc2a79d",
-      "bcc7d998-b2f3-4942-bea8-aba3fc595e1c",
-      "ec4d7211-9e26-470d-a584-98d0f333fca7",
-      "b3ae1c66-91a4-45e4-8cf8-a23ddf2c7a84",
-      "bd452a7c-e27b-4c79-a8dd-ce1c972d2eea",
-      "e3f95a93-f3b4-4219-8617-f45d330a5ed7",
-      "73cbf609-781f-4978-8b5e-687e4b59ff9f",
-      "1cf110b3-e470-4475-98f6-4b2e1064051a",
-      "298230fd-58c9-4865-bf8f-8ee3dfc59d3d",
       "234a1530-d3cd-4cca-97aa-7a35b507a40b",
       "2d81efbd-7ab1-4071-80c8-4a1d9898d0c3",
       "0b2b4796-57b8-4352-bf86-7b0dc206aef0"
      ]
     },
-    "8ce4ccce-049f-4fbd-8d2f-aacf2f950a4d": {
-     "title": "Byggekvalitet",
-     "id": "8ce4ccce-049f-4fbd-8d2f-aacf2f950a4d",
-     "references": [
-      "675eae04-5ead-425e-8721-2a39b704a438",
-      "d0c8d07c-f952-4b9e-93f8-a219b28d68c7",
-      "47df02df-5203-4164-8b6a-c678adf9608c",
-      "82449375-3433-4b27-93e9-bc7db8f7d370",
-      "36531852-2ef1-4be1-aa84-f2f4eeb5405c",
-      "4af2554d-7b83-465a-a4a1-3701fc2419d4",
-      "d7281a39-f010-4b31-973f-b7adae3bda4f",
-      "bd205445-d4e7-46ef-a19a-e5d924c7a0c1",
-      "9102b65d-a0b0-4c74-9879-5fc1b7acd8e7",
-      "0613cd5f-f924-49a6-a905-fc409491e6bb",
-      "abd5a48c-2b3e-4718-9412-72af9d9495b1",
-      "171a3aac-423b-4f38-8be1-70fbb66f0995",
-      "c67c6d4c-29e6-4102-9bb2-1e44799d7f89",
-      "0e4f8751-5ba4-46c1-81c2-faa4192dd666",
-      "f6403217-cfc6-4f12-a793-9eabcd88227e",
-      "8aa5ca79-dbe7-4e25-9230-1d342dd78d92",
-      "4ac845c9-7344-452e-bd17-c2dcc5fc84a6",
-      "65f0e0fe-d56e-438f-8a65-933b965be61c",
-      "1bd2c5e8-fc20-42f5-a76f-1c1249f738b8",
-      "34ec6f20-7284-4090-bad2-275f6ec1ba88",
-      "1f02689b-f479-4ed6-af5d-ac6ddf5f5b91",
-      "94de71d8-c09b-4249-9127-707d3686a9b0",
-      "2a8f8657-95c8-48cd-a886-bbd10e17aae3",
-      "506e21a4-e963-467d-bf68-1ae61295a681",
-      "2083878d-94ef-423c-a6e5-1fb59da4d6fb",
-      "153df946-4e1d-49eb-a2ef-6d217acb8880"
-     ]
-    },
-    "8f85766d-7bbd-43cd-88bb-145809dcc977": {
+    "d326fdf0-52df-4418-aaa8-a0d639af4a45": {
      "title": "Billed- og lydkvalitet",
-     "id": "8f85766d-7bbd-43cd-88bb-145809dcc977",
+     "id": "d326fdf0-52df-4418-aaa8-a0d639af4a45",
      "references": [
-      "cf18e37c-e9f1-4593-a01f-80e5ea3bc343",
       "9f0320fc-412b-42ce-af3f-db1d2e425a3a",
       "195055c7-9ad6-4af4-818e-033c5f65e46f",
       "4c00a283-9738-4a8c-b4c1-0ba212a7ba1b",
@@ -742,26 +679,25 @@
       "24419e07-2d29-4da7-956b-f32cb7994494",
       "4ee97353-c6a4-4948-9389-831df5598087",
       "5ab0c13d-9a05-4767-aec5-8fe538c84b71",
-      "a2fbef9b-03cc-4b8d-bc7b-37b2ddd565d1",
-      "9776eec3-5066-47c6-8d5c-41031da10198",
       "8db1d093-dbd9-4f6f-94d8-5cf89a4d9a0b",
       "6b345010-fcaf-45cc-b509-2c53262fdcf8",
       "21e45b3c-4311-465e-912e-0bd3e3de1939",
       "d7281a39-f010-4b31-973f-b7adae3bda4f",
+      "612378cb-4edf-4bea-8c26-f2b0dd463b78",
       "0613cd5f-f924-49a6-a905-fc409491e6bb",
       "abd5a48c-2b3e-4718-9412-72af9d9495b1",
-      "612378cb-4edf-4bea-8c26-f2b0dd463b78",
+      "b3ae1c66-91a4-45e4-8cf8-a23ddf2c7a84",
+      "bd452a7c-e27b-4c79-a8dd-ce1c972d2eea",
       "e3f95a93-f3b4-4219-8617-f45d330a5ed7",
       "73cbf609-781f-4978-8b5e-687e4b59ff9f",
       "298230fd-58c9-4865-bf8f-8ee3dfc59d3d",
-      "b3ae1c66-91a4-45e4-8cf8-a23ddf2c7a84",
-      "bd452a7c-e27b-4c79-a8dd-ce1c972d2eea",
-      "1467d99f-d26b-4b78-b797-21efb333ad61"
+      "1467d99f-d26b-4b78-b797-21efb333ad61",
+      "40c094b1-f96c-41ba-a1b5-92acda2e7b20"
      ]
     },
-    "f81bc79f-4155-4904-a4ad-173bde732fee": {
+    "a3deee0c-c63e-4d3d-9a34-d24d5bc8748b": {
      "title": "Pris og værdi",
-     "id": "f81bc79f-4155-4904-a4ad-173bde732fee",
+     "id": "a3deee0c-c63e-4d3d-9a34-d24d5bc8748b",
      "references": [
       "b46b64c7-2964-4c93-9b90-3a8ea101fdb3",
       "4ce2e7c4-315c-4106-91b7-40bdf02a6a51",
@@ -769,37 +705,53 @@
       "9ae726cf-0da0-4fde-8083-9aff3f97abd9",
       "356f0832-a1d0-4554-a8cc-47f7b8082fad",
       "c1d1a043-c0fd-4db4-8c63-324af865f116",
-      "e90d60d4-e97a-4af2-9ced-d83a57da4921",
       "5efa4848-9ad1-40d9-9fa1-574a08527f0f",
+      "8d21d652-1338-4ffb-bd1c-59bb1bf7802c",
       "5a49b2ba-1ff9-4e12-8d89-98846f5d8dbe",
-      "74837188-3505-4125-84e2-689f95c3fbf8",
-      "d8c79079-2946-4fa6-b6d6-255da03c4b80",
+      "0e07fec2-b53c-440a-8683-c8a8a6f7e536",
+      "6d32e7a5-afb8-43a4-a70e-eb35aac74d9e",
       "235c1805-6228-4bb1-b3af-d930f29d45d2",
       "56e85889-5518-46ac-936b-cdb5ab989da8",
       "3a22f9ba-e282-4502-9289-2db0d2be5fea",
       "b2114198-e461-4d5c-b409-942b4e3591a8",
-      "171a3aac-423b-4f38-8be1-70fbb66f0995",
       "9a82fd14-f0ec-48c8-9e65-20d6c3cd2f04",
       "8d78440e-6c5f-4dd4-8a86-105b5208e769",
       "0ef28f42-954f-4885-8447-332bc237cdc3",
-      "15fb25f8-54b5-4502-b157-0c34dbc2a79d",
-      "ac2adf76-2a71-4cc6-864c-362527417f3d",
       "df5a3a18-c376-4cbf-8047-3bbfe99daa7e",
-      "2eb179d7-5d29-41cf-9274-8d9452ba7878",
-      "842d118b-728f-4505-8a73-c18e0448ddb2",
-      "79e9493b-1c85-463e-a904-2e515830c1d5"
+      "2eb179d7-5d29-41cf-9274-8d9452ba7878"
+     ]
+    },
+    "91c700e1-65a6-4d39-8c73-a736798a2f14": {
+     "title": "Byggekvalitet og håndtering",
+     "id": "91c700e1-65a6-4d39-8c73-a736798a2f14",
+     "references": [
+      "675eae04-5ead-425e-8721-2a39b704a438",
+      "74332b4c-3ff0-4c72-bc51-e24e75db6ca4",
+      "0f6a5060-22fd-4242-97bd-e80d4a7fadb1",
+      "4af2554d-7b83-465a-a4a1-3701fc2419d4",
+      "506e21a4-e963-467d-bf68-1ae61295a681",
+      "b158abbc-39b7-43c3-bdfb-4b445fbdbc85",
+      "9102b65d-a0b0-4c74-9879-5fc1b7acd8e7",
+      "0e4f8751-5ba4-46c1-81c2-faa4192dd666",
+      "f6403217-cfc6-4f12-a793-9eabcd88227e",
+      "8aa5ca79-dbe7-4e25-9230-1d342dd78d92",
+      "171a3aac-423b-4f38-8be1-70fbb66f0995",
+      "c67c6d4c-29e6-4102-9bb2-1e44799d7f89",
+      "0613cd5f-f924-49a6-a905-fc409491e6bb",
+      "abd5a48c-2b3e-4718-9412-72af9d9495b1",
+      "4ac845c9-7344-452e-bd17-c2dcc5fc84a6"
      ]
     }
    },
-   "rating": 4.73413897280967,
-   "count": 662,
-   "reviewCount": 209,
+   "rating": 4.73493975903614,
+   "count": 664,
+   "reviewCount": 211,
    "distribution": {
     "1": 7,
     "2": 3,
     "3": 21,
     "4": 97,
-    "5": 534
+    "5": 536
    }
   },
   "brandName": "AudioQuest",

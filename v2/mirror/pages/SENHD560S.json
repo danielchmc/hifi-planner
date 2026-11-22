@@ -13,6 +13,17 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej"
+  },
+  "gallery": [
+   "af24c2b8-7f9d-4f8c-a4b4-af844f30a0e8",
+   "68ff9456-000c-4aed-8fca-4265890bc0f4",
+   "7d752339-a25f-4d26-9c29-eb43bb9a3bac"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 140345,
   "skuCode": "SENHD560S",
@@ -114,6 +125,12 @@
    "url": "/horetelefoner/head-fi/",
    "id": 79062
   },
+  "stockItemAlternative": {
+   "save": "54,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SENHD560S",
+   "availableQuantity": 1,
+   "lowestPrice": "970,-"
+  },
   "variants": [
    {
     "id": 140346,
@@ -179,8 +196,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 368,
+     "numberOfStoresExperience": 13,
+     "availableQuantity": 356,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -267,57 +284,58 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHD560S leverer en usædvanligt klar, rummelig og naturlig lyd til prisen med stram bas, tydelige detaljer og præcis placering. Den lave vægt, de bløde puder og den gode komfort gør den velegnet til lange lytteperioder, gaming, musikproduktion og brug ved klaver eller derhjemme. Det åbne design giver en luftig og fri gengivelse, men lukker også lyd udefra ind; nogle oplever desuden et for kort kabel, et stramt greb i starten eller behov for forstærkning. Samlet set er HD 560S et fremragende køb med varm, slagkraftig og opslugende lyd samt imponerende neutralitet og detaljegrad.",
+   "summary": "SENHD560S leverer en usædvanligt klar, afbalanceret og detaljeret lyd med en rummelig, luftig gengivelse, stram bas og naturlige mellemtoner. Den lave vægt samt de bløde, komfortable ørepuder gør lange lytte-sessioner behagelige, mens det åbne design modvirker en indelukket fornemmelse, men lukker lyd udefra ind. Pris-kvalitetsforholdet er fremragende, selv om et kort kabel, lejlighedsvis pres og mulig forbedring med en forstærker nævnes.",
    "headlines": {
-    "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, neutrale, detaljerede og rummelige gengivelse med præcis bas og god placering.",
-     "simpleTitle": "Klar, detaljeret og rummelig lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "7fb12892-d031-47df-88da-7fefdd8fd542"
-    },
-    "comfortable for long listening": {
-     "sentimentAnalysis": "Bløde puder, lav vægt og en rummelig over-ear-pasform beskrives gentagne gange som behagelige i timevis.",
-     "simpleTitle": "Behagelig ved lang tids brug",
+    "excellent comfort for long sessions": {
+     "sentimentAnalysis": "Lav vægt, bløde puder og en behagelig pasform gør hovedtelefonerne komfortable til lange lytte-, gaming- og musiksessioner.",
+     "simpleTitle": "Fremragende komfort til lange sessioner",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "828922c2-b703-4b41-8c84-45cdace9d692"
+     "groupId": "9834955b-d52b-4665-b4eb-8eed6977dac1"
     },
-    "excellent value for the price": {
-     "sentimentAnalysis": "Produktet vurderes konsekvent som usædvanligt kompetent og konkurrencedygtigt i forhold til dyrere hovedtelefoner.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "outstanding value for money": {
+     "sentimentAnalysis": "Kombinationen af hi-fi-ydeevne, komfort og byggekvalitet vurderes gentagne gange som fremragende til denne pris.",
+     "simpleTitle": "Fremragende pris-kvalitetsforhold",
      "bias": "positive",
      "key": "value",
-     "groupId": "531f7900-4e9a-4a47-83a0-0bceb074e57f"
+     "groupId": "52ae7a72-2dfc-43c5-adf0-f45167cb9d3c"
     },
-    "cable is often too short": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver længden på det medfølgende kabel som en praktisk svaghed, især til gaming og skrivebordsbrug.",
-     "simpleTitle": "Kablet er ofte for kort",
+    "clear, balanced and highly detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver gennemgående den naturlige, neutrale, rummelige og detaljerede gengivelse med kontrolleret bas og klare højder.",
+     "simpleTitle": "Klar, afbalanceret og meget detaljeret lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "17fc28d4-54bf-450b-bba3-7e283e3f6417"
+    },
+    "open design improves spaciousness but leaks sound": {
+     "sentimentAnalysis": "Den åbne konstruktion roses for en luftig, ikke-indelukket gengivelse og bevidsthed om omgivelserne, men lydgennemgang gør hovedtelefonerne mindre egnede i støjende eller offentlige miljøer.",
+     "simpleTitle": "Åbent design giver rumfornemmelse, men lukker lyd ind",
+     "bias": "meh",
+     "key": "open",
+     "groupId": "1685ae8e-723e-4212-9b20-47fdb78a56e4"
+    },
+    "short cable limits convenience": {
+     "sentimentAnalysis": "Flere anmeldelser finder det medfølgende kabel for kort, især til gaming-, stereo- eller mikrofonopsætninger.",
+     "simpleTitle": "Kort kabel begrænser brugervenligheden",
      "bias": "negative",
      "key": "cable",
-     "groupId": "916c840b-2a53-47fe-baed-7daa7465a49a"
+     "groupId": "a954aaf3-9be4-4058-8658-769e18605e86"
     },
-    "some sources benefit from amplification": {
-     "sentimentAnalysis": "De fleste enheder kan drive høretelefonerne, men nogle oplever lav lydstyrke eller tyndere lyd uden DAC eller hovedtelefonforstærker.",
-     "simpleTitle": "Nogle kilder har gavn af forstærkning",
-     "bias": "meh",
-     "key": "amplification",
-     "groupId": "e316609c-b0fa-43e7-864c-20b2ad688c86"
-    },
-    "open design leaks outside noise": {
-     "sentimentAnalysis": "Den åbne konstruktion giver en luftig gengivelse, men ingen isolation, så høretelefonerne egner sig dårligere til støjende eller offentlige steder.",
-     "simpleTitle": "Åbent design lukker lyd udefra ind",
-     "bias": "negative",
-     "key": "open",
-     "groupId": "cc5ce1ac-3238-40b5-9292-9cd75db97d09"
+    "amplification can unlock fuller performance": {
+     "sentimentAnalysis": "En separat forstærker siges at forbedre lydstyrke, fylde og kontrol, selv om flere anmeldelser også finder hovedtelefonerne anvendelige med telefoner og andre hverdagskilder.",
+     "simpleTitle": "Forstærkning kan frigive større ydeevne",
+     "bias": "positive",
+     "key": "drive",
+     "groupId": "eb4024f7-d20e-43d7-bd8f-4bad740bd7c6"
     }
    },
    "grouping": {
-    "7fb12892-d031-47df-88da-7fefdd8fd542": {
+    "17fc28d4-54bf-450b-bba3-7e283e3f6417": {
      "title": "Lydkvalitet",
-     "id": "7fb12892-d031-47df-88da-7fefdd8fd542",
+     "id": "17fc28d4-54bf-450b-bba3-7e283e3f6417",
      "references": [
-      "612d7dc5-e517-49a5-9b67-f68a81b0e924",
+      "abbad33c-d463-445f-8256-7fc9c17a5570",
+      "612d7dc5-e517-49a5-9b67-f68a81e0b924",
       "5342d990-27a8-4d7d-b385-a6a3f31e5b68",
       "624c5e7b-471f-4159-8243-eb5fc780f61d",
       "cec489cb-5e1a-43f3-8feb-5f19965883e8",
@@ -336,17 +354,13 @@
       "f185171e-e46c-4f32-a987-52ddde18987d",
       "b7199e42-6423-4703-951e-21fae044f6cb",
       "e398f917-47ee-4ae3-9bf0-d91a177b1dce",
-      "81c91b1a-7b71-4358-a56f-2ed6e4cec2af",
-      "5c4947ac-0efe-46a5-89d5-7d4088d78a9d",
       "bc52eb71-b4f3-46b4-b20f-9c7f904aaea0",
       "8e9947cc-dca5-4e09-8316-89175a247650",
       "93c724a7-860b-4bf6-ba02-e133b85fdfe6",
       "e11adbf5-5cc3-4630-a5e0-33b4567b297f",
       "9697ac4c-50d4-4bba-a860-3250b1094400",
       "fd29b405-5976-4ae0-a456-2ba1917e2313",
-      "a4961e80-a843-4def-9fef-71b521849310",
       "1372cc7f-d32e-4c7f-9d4f-0f6c63f25d1e",
-      "293feb23-8bf7-4b15-ae06-8e8c0eb73f35",
       "b4878807-98b7-4e65-823f-5050f9786893",
       "be998992-a7a1-4c81-b646-e1202b8e73d3",
       "d65e6c53-172b-40ce-b997-db64269c2e2b",
@@ -359,7 +373,7 @@
       "843dac78-e45f-4221-8120-0794f7dee5fb",
       "e878183f-e124-4425-a2f2-a423e987d440",
       "b870b8db-5665-45e9-92cf-eb594ed5d338",
-      "27b33fe5-9c98-4c6e-ac81-1d7832e49271",
+      "27b33fe5-9c98-4c7f-9d4f-0f6c63f25d1e",
       "42b1f74f-e2e0-46f6-b471-0a4a899bd2f7",
       "9ad17a6c-0d6a-4d5a-bde0-1d13d43ba6d5",
       "c3dcabd0-fb83-4dc2-9ead-60c4dbc1321e",
@@ -372,12 +386,11 @@
       "a3217ae6-a8af-428e-90fa-5c8e767253ff",
       "ff30f039-5b7d-4d89-a421-1abe00c1aa3a",
       "0659e005-7a88-4cd4-88e7-61a9ae00b1d4",
-      "0dd00d23-b218-4b00-b683-2b90ffb17947",
+      "0dd00d23-b218-4b00-b683-2b0d90ff17947",
       "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
       "c5036c43-18e3-4592-b692-9e6e39aff31e",
       "b8772703-bd67-419f-85c1-0d1d95551f5f",
       "e71f7ff1-e7ca-4f29-bb84-fdde7bbc7293",
-      "4666d35a-e400-458c-8a38-6f26b71ffd8d",
       "82058764-b000-4859-8ee9-2111395392fc",
       "84feec76-ecd2-425b-8868-194928cf426b",
       "adf977d3-dbae-489c-ae40-225a22f252bb",
@@ -387,17 +400,68 @@
       "f980677b-a28a-4c88-9f2a-2c09d0fe2e47",
       "c27200d1-6f96-42e5-8fab-0d600bc76da0",
       "189f65aa-becc-402b-b121-33eab0984a3b",
+      "6c52c11b-4e3d-4c68-9e28-765cf31fc331",
+      "da85479f-4aea-473a-9ad8-ce1ed71b3ff8",
+      "0990103c-b3b4-40ba-85ee-0b6c1febd5de",
+      "ebe6cab5-b9b3-48f5-9b68-6f3949462cc1",
       "cd1ba03d-6591-4df6-8c4e-c079c30618b9",
       "5cb13365-b240-4be4-b577-7155c10d018a",
+      "7b97cada-5cb6-4c82-a160-265b972fe7ce",
       "77d2f9b6-7565-479f-a47c-ca983200fe88",
+      "cf3d097f-0805-4a6d-9d2b-557f0c97da7e",
+      "79344264-59f5-4820-82c4-5620849981f6",
       "1ab5da45-e539-44a7-ad12-78e298f92771",
       "7ad1ae26-904f-452c-ad9e-0d5582642d9f",
       "a1bba550-8324-4f7d-92f5-9478b8041358"
      ]
     },
-    "828922c2-b703-4b41-8c84-45cdace9d692": {
+    "52ae7a72-2dfc-43c5-adf0-f45167cb9d3c": {
+     "title": "Pris-kvalitetsforhold",
+     "id": "52ae7a72-2dfc-43c5-adf0-f45167cb9d3c",
+     "references": [
+      "abbad33c-d463-445f-8256-7fc9c17a5570",
+      "5342d990-27a8-4d7d-b385-a6a3f31e5b68",
+      "5ee4473d-4ae7-4709-bff5-4f32e654b09c",
+      "0ca9a5a1-6c75-4fd6-87ea-f07b66fe095e",
+      "440600e8-2aae-4eb0-aa2b-a9f191ddcc38",
+      "ca80f027-0cd5-4d96-9102-ab0540907345",
+      "11629e25-04d5-4519-8880-f446a0db4cad",
+      "e40075d6-0b0a-41bb-bd3b-d5db1d865b2d",
+      "fd29b405-5976-4ae0-a456-2ba1917e2313",
+      "a4961e80-a843-4def-9fef-71b521849310",
+      "be998992-a7a1-4c81-b646-e1202b8e73d3",
+      "a2f6f99a-a070-4d89-b29e-958ad4b892f9",
+      "02223f8f-f883-46be-9fed-6506c14e8848",
+      "d65e6c53-172b-40ce-b997-db64269c2e2b",
+      "b4878807-98b7-4e65-823f-5050f9786893",
+      "4609ba7a-e301-4611-b084-f0693aff5a23",
+      "05ce1ae7-959b-4271-b130-83e6e86c40c1",
+      "b870b8db-5665-45e9-92cf-eb594ed5d338",
+      "f9c39c90-9a55-4beb-a8ea-f2ce2fc1bc77",
+      "42b1f74f-e2e0-46f6-b471-0a4a899bd2f7",
+      "0dd00d23-b218-4b00-b683-2b0d90ff17947",
+      "0a5d0167-2008-436e-a19c-1c23861ccd6a",
+      "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
+      "b8772703-bd67-419f-85c1-0d1d95551f5f",
+      "e71f7ff1-e7ca-4f29-bb84-fdde7bbc7293",
+      "0f1fc7ad-3319-41a6-8b94-9c49ec5bd29a",
+      "82058764-b000-4859-8ee9-2111395392fc",
+      "84feec76-ecd2-425b-8868-194928cf426b",
+      "38a2cc15-cc9d-462d-9fb8-e26191ee02bb",
+      "d3f9e9b7-ac28-4af1-be6c-d482daba2049",
+      "31869b3d-0931-42d2-8bbb-0a4e2e31d85b",
+      "202ffd14-fe7c-4aee-bd3d-857ede8c1108",
+      "f50257b7-2084-4c29-9ac1-72ac207a0905",
+      "da85479f-4aea-473a-9ad8-ce1ed71b3ff8",
+      "0990103c-b3b4-40ba-85ee-0b6c1febd5de",
+      "ebe6cab5-b9b3-48f5-9b68-6f3949462cc1",
+      "d01d477f-98df-4cc6-b70c-bdd8b095eb0f",
+      "6c52c11b-4e3d-4c68-9e28-765cf31fc331"
+     ]
+    },
+    "9834955b-d52b-4665-b4eb-8eed6977dac1": {
      "title": "Komfort",
-     "id": "828922c2-b703-4b41-8c84-45cdace9d692",
+     "id": "9834955b-d52b-4665-b4eb-8eed6977dac1",
      "references": [
       "624c5e7b-471f-4159-8243-eb5fc780f61d",
       "e572bddb-69ca-477e-9b72-e914f5dcfb26",
@@ -412,19 +476,17 @@
       "b4878807-98b7-4e65-823f-5050f9786893",
       "d65e6c53-172b-40ce-b997-db64269c2e2b",
       "10407984-8794-41c9-99a9-de8e5947576e",
+      "05ce1ae7-959b-4271-b130-83e6e86c40c1",
       "697e804e-3bad-403a-b15b-e73937912b51",
       "e878183f-e124-4425-a2f2-a423e987d440",
-      "27b33fe5-9c98-4c6e-ac81-1d7832e49271",
+      "27b33fe5-9c98-4c7f-9d4f-0f6c63f25d1e",
       "9ad17a6c-0d6a-4d5a-bde0-1d13d43ba6d5",
-      "44cf79a0-a535-4e63-bf7d-e1950cfcaa50",
-      "30811ae7-e973-4fe9-981a-e7c86c525249",
       "a3217ae6-a8af-428e-90fa-5c8e767253ff",
-      "b49fcf9d-2aa7-44c6-9c23-c5b5d69ff9b6",
       "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
-      "b8772703-bd67-419f-85c1-0d1d95551f5f",
       "e71f7ff1-e7ca-4f29-bb84-fdde7bbc7293",
       "4666d35a-e400-458c-8a38-6f26b71ffd8d",
       "82058764-b000-4859-8ee9-2111395392fc",
+      "84feec76-ecd2-425b-8868-194928cf426b",
       "adf977d3-dbae-489c-ae40-225a22f252bb",
       "d3f9e9b7-ac28-4af1-be6c-d482daba2049",
       "202ffd14-fe7c-4aee-bd3d-857ede8c1108",
@@ -432,82 +494,57 @@
       "ab196f5f-8ce6-4bd8-bcf4-957e27266b60",
       "da85479f-4aea-473a-9ad8-ce1ed71b3ff8",
       "cd1ba03d-6591-4df6-8c4e-c079c30618b9",
-      "5cb13365-b240-4be4-b577-7155c10d018a",
       "7b97cada-5cb6-4c82-a160-265b972fe7ce",
+      "77d2f9b6-7565-479f-a47c-ca983200fe88",
       "cf3d097f-0805-4a6d-9d2b-557f0c97da7e",
       "79344264-59f5-4820-82c4-5620849981f6",
       "1ab5da45-e539-44a7-ad12-78e298f92771",
-      "7ad1ae26-904f-452c-ad9e-0d5582642d9f",
       "a1bba550-8324-4f7d-92f5-9478b8041358"
      ]
     },
-    "531f7900-4e9a-4a47-83a0-0bceb074e57f": {
-     "title": "Værdi for pengene",
-     "id": "531f7900-4e9a-4a47-83a0-0bceb074e57f",
-     "references": [
-      "5342d990-27a8-4d7d-b385-a6a3f31e5b68",
-      "5ee4473d-4ae7-4709-bff5-4f32e654b09c",
-      "0ca9a5a1-6c75-4fd6-87ea-f07b66fe095e",
-      "440600e8-2aae-4eb0-aa2b-a9f191ddcc38",
-      "ca80f027-0cd5-4d96-9102-ab0540907345",
-      "11629e25-04d5-4519-8880-f446a0db4cad",
-      "e40075d6-0b0a-41bb-bd3b-d5db1d865b2d",
-      "81c91b1a-7b71-4358-a56f-2ed6e4cec2af",
-      "8e9947cc-dca5-4e09-8316-89175a247650",
-      "93c724a7-860b-4bf6-ba02-e133b85fdfe6",
-      "fd29b405-5976-4ae0-a456-2ba1917e2313",
-      "b4878807-98b7-4e65-823f-5050f9786893",
-      "4609ba7a-e301-4611-b084-f0693aff5a23",
-      "a2f6f99a-a070-4d89-b29e-958ad4b892f9",
-      "02223f8f-f883-46be-9fed-6506c14e8848",
-      "d65e6c53-172b-40ce-b997-db64269c2e2b",
-      "05ce1ae7-959b-4271-b130-83e6e86c40c1",
-      "ad86cad2-0b08-492a-83bf-d7df39102b51",
-      "b870b8db-5665-45e9-92cf-eb594ed5d338",
-      "f9c39c90-9a55-4beb-a8ea-f2ce2fc1bc77",
-      "42b1f74f-e2e0-46f6-b471-0a4a899bd2f7",
-      "b8772703-bd67-419f-85c1-0d1d95551f5f",
-      "0f1fc7ad-3319-41a6-8b94-9c49ec5bd29a",
-      "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
-      "e71f7ff1-e7ca-4f29-bb84-fdde7bbc7293",
-      "82058764-b000-4859-8ee9-2111395392fc",
-      "84feec76-ecd2-425b-8868-194928cf426b",
-      "38a2cc15-cc9d-462d-9fb8-e26191ee02bb",
-      "d3f9e9b7-ac28-4af1-be6c-d482daba2049",
-      "31869b3d-0931-42d2-8bbb-0a4e2e31d85b",
-      "202ffd14-fe7c-4aee-bd3d-857ede8c1108",
-      "f50257b7-2084-4c29-9ac1-72ac207a0905",
-      "d01d477f-98df-4cc6-b70c-bdd8b095eb0f",
-      "da85479f-4aea-473a-9ad8-ce1ed71b3ff8"
-     ]
-    },
-    "cc5ce1ac-3238-40b5-9292-9cd75db97d09": {
+    "1685ae8e-723e-4212-9b20-47fdb78a56e4": {
      "title": "Åbent design",
-     "id": "cc5ce1ac-3238-40b5-9292-9cd75db97d09",
+     "id": "1685ae8e-723e-4212-9b20-47fdb78a56e4",
      "references": [
       "624c5e7b-471f-4159-8243-eb5fc780f61d",
-      "ff87059b-15ee-430a-9cb2-0b5c01164217",
       "e572bddb-69ca-477e-9b72-e914f5dcfb26",
-      "e98b2b69-1ce5-498f-a8b0-e4175c3dc372",
-      "697e804e-3bad-403a-b15b-e73937912b51",
+      "ff87059b-15ee-430a-9cb2-0b5c01164217",
       "ae29f874-e215-4edf-bc48-c4124919a849",
       "f44ed53b-98f3-40c8-897c-f6a7a50056af",
-      "c3dcabd0-fb83-4dc2-9ead-60c4dbc1321e",
+      "697e804e-3bad-403a-b15b-e73937912b51",
       "44cf79a0-a535-4e63-bf7d-e1950cfcaa50",
       "30811ae7-e973-4fe9-981a-e7c86c525249",
-      "63e31dc7-c1f3-4cb9-9cd6-7a5be54d094b",
-      "a3217ae6-a8af-428e-90fa-5c8e767253ff",
-      "4666d35a-e400-458c-8a38-6f26b71ffd8d",
       "ebe6cab5-b9b3-48f5-9b68-6f3949462cc1",
-      "7ad1ae26-904f-452c-ad9e-0d5582642d9f"
+      "7ad1ae26-904f-452c-ad9e-0d5582642d9f",
+      "b8772703-bd67-419f-85c1-0d1d95551f5f",
+      "4666d35a-e400-458c-8a38-6f26b71ffd8d",
+      "a3217ae6-a8af-428e-90fa-5c8e767253ff",
+      "82058764-b000-4859-8ee9-2111395392fc",
+      "c3dcabd0-fb83-4dc2-9ead-60c4dbc1321e",
+      "e98b2b69-1ce5-498f-a8b0-e4175c3dc372"
      ]
     },
-    "916c840b-2a53-47fe-baed-7daa7465a49a": {
+    "eb4024f7-d20e-43d7-bd8f-4bad740bd7c6": {
+     "title": "Forstærkning og lydstyrke",
+     "id": "eb4024f7-d20e-43d7-bd8f-4bad740bd7c6",
+     "references": [
+      "9697ac4c-50d4-4bba-a860-3250b1094400",
+      "293feb23-8bf7-4b15-ae06-8e8c0eb73f35",
+      "8e9947cc-dca5-4e09-8316-89175a247650",
+      "0990103c-b3b4-40ba-85ee-0b6c1febd5de",
+      "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
+      "b8772703-bd67-419f-85c1-0d1d95551f5f",
+      "1ab5da45-e539-44a7-ad12-78e298f92771",
+      "ebe6cab5-b9b3-48f5-9b68-6f3949462cc1",
+      "e356cbc8-2e1b-4046-936a-49e4783b7ee9",
+      "63e31dc7-c1f3-4cb9-9cd6-7a5be54d094b"
+     ]
+    },
+    "a954aaf3-9be4-4058-8658-769e18605e86": {
      "title": "Kabel",
-     "id": "916c840b-2a53-47fe-baed-7daa7465a49a",
+     "id": "a954aaf3-9be4-4058-8658-769e18605e86",
      "references": [
       "0ca9a5a1-6c75-4fd6-87ea-f07b66fe095e",
-      "ff87059b-15ee-430a-9cb2-0b5c01164217",
       "6890460b-bcfc-4da5-ad4d-d43aa29f53d0",
       "9576fb79-6000-447c-9ec3-c04c43930f0e",
       "e98b2b69-1ce5-498f-a8b0-e4175c3dc372",
@@ -516,34 +553,20 @@
       "c650c459-fd4b-482e-aaca-33acff72d200",
       "5cb13365-b240-4be4-b577-7155c10d018a",
       "7ad1ae26-904f-452c-ad9e-0d5582642d9f",
-      "c3dcabd0-fb83-4dc2-9ead-60c4dbc1321e"
-     ]
-    },
-    "e316609c-b0fa-43e7-864c-20b2ad688c86": {
-     "title": "Forstærkning",
-     "id": "e316609c-b0fa-43e7-864c-20b2ad688c86",
-     "references": [
-      "9697ac4c-50d4-4bba-a860-3250b1094400",
-      "293feb23-8bf7-4b15-ae06-8e8c0eb73f35",
-      "8e9947cc-dca5-4e09-8316-89175a247650",
-      "46e99bf3-3f7b-483c-9f77-5a76e0a4ff19",
-      "b8772703-bd67-419f-85c1-0d1d95551f5f",
-      "0990103c-b3b4-40ba-85ee-0b6c1febd5de",
-      "ebe6cab5-b9b3-48f5-9b68-6f3949462cc1",
-      "1ab5da45-e539-44a7-ad12-78e298f92771",
-      "e356cbc8-2e1b-4046-936a-49e4783b7ee9"
+      "c650c459-fd4b-482e-aaca-33acff72d200",
+      "5cb13365-b240-4be4-b577-7155c10d018a"
      ]
     }
    },
-   "rating": 4.67811158798283,
-   "count": 233,
-   "reviewCount": 119,
+   "rating": 4.67948717948718,
+   "count": 234,
+   "reviewCount": 120,
    "distribution": {
     "1": 2,
     "2": 3,
     "3": 6,
     "4": 46,
-    "5": 176
+    "5": 177
    }
   },
   "brandName": "Sennheiser",

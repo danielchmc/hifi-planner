@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "14102553-1dd0-49cf-85b1-dc2a674508bd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 45883,
   "skuCode": "AQBANANA100SX",
@@ -119,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 464,
+     "availableQuantity": 784,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -139,65 +146,63 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "Disse bananstik giver en varm og punchy fornemmelse af kvalitet med solid konstruktion, pålidelig kontakt og et sikkert greb i højttalerterminalerne. Monteringen er generelt enkel og skaber en ren, immersiv forbindelse, som gør tilslutning af højttalerkabler lettere. De meget små låseskruer, besværlig adgang til værktøj og stik, der stikker ud af visse terminaler, er de vigtigste forbehold, især ved meget tykke kabler.",
+   "summary": "Disse bananstik giver en sikker forbindelse med stor kontaktflade og gør montering af højttalerkabler nem, samtidig med at det solide og flotte design giver god værdi for pengene. BFA-pasformen sidder fast, og stikkene fungerer især godt med almindelige og bi-wirede højttalerkabler. Meget små skruer, lejlighedsvis fremspring fra terminalerne og begrænsninger ved meget tykke kabler er de væsentligste forbehold, men helhedsindtrykket er varmt, punchy og omsluttende.",
    "headlines": {
     "secure, high-contact connection": {
-     "sentimentAnalysis": "Stikkene roses for at gøre kabelmontering nem og samtidig give et fast greb og pålidelig kontakt i højttalerterminalerne.",
+     "sentimentAnalysis": "Stikkene roses for at gøre kabelmontering nem og give en fast, solid forbindelse til højttalerterminalen.",
      "simpleTitle": "Sikker forbindelse med stor kontaktflade",
      "bias": "positive",
-     "key": "secure_connection",
-     "groupId": "bb46c44d-6f44-4904-b641-cec8c35e089f"
+     "key": "secure_high_contact",
+     "groupId": "79d531c6-bd17-4c37-baa9-b72f9c608476"
     },
-    "small locking screws are difficult to handle": {
-     "sentimentAnalysis": "Flere anmeldelser finder de meget små låseskruer besværlige; de kan let falde ud, og der kan være brug for specialværktøj.",
-     "simpleTitle": "Små låseskruer er vanskelige at håndtere",
+    "tiny screws are difficult to handle": {
+     "sentimentAnalysis": "De små skruer med den usædvanlige kærv kræver præcisionsværktøj og kan løsne sig eller falde ud under monteringen.",
+     "simpleTitle": "Meget små skruer er svære at håndtere",
      "bias": "negative",
-     "key": "small_screws",
-     "groupId": "77ca1243-01e1-49bf-a5b3-191c03288809"
+     "key": "tiny_screws",
+     "groupId": "008aa953-4924-450b-8060-f648eb78dcca"
     },
-    "plugs can protrude from terminals": {
-     "sentimentAnalysis": "Stikkene opleves som for lange til visse receivere, hvor de stikker tydeligt ud af terminalerne og muligvis let kan bøjes.",
-     "simpleTitle": "Stik kan stikke ud af terminalerne",
+    "long plugs can protrude from terminals": {
+     "sentimentAnalysis": "Det lange design kan stikke tydeligt ud af nogle terminaler, og en anmeldelse bemærker, at de udstående dele let bøjer.",
+     "simpleTitle": "Lange stik kan stikke ud af terminalerne",
      "bias": "negative",
-     "key": "protruding_fit",
-     "groupId": "cd16ed8f-8206-4eb1-afe4-949da6aeb8c4"
+     "key": "terminal_protrusion",
+     "groupId": "9648add8-b5de-49ed-8a78-a533c5b2520b"
+    },
+    "good fit for standard and bi-wired cables": {
+     "sentimentAnalysis": "Stikkene kan håndtere forholdsvis kraftige kabeldimensioner og fungerer ifølge en anmeldelse godt med et bi-wiret Rocket 11-kabel.",
+     "simpleTitle": "God pasform til almindelige og bi-wirede kabler",
+     "bias": "positive",
+     "key": "cable_compatibility",
+     "groupId": "9648add8-b5de-49ed-8a78-a533c5b2520b"
     }
    },
    "grouping": {
-    "bb46c44d-6f44-4904-b641-cec8c35e089f": {
-     "title": "Forbindelseskvalitet",
-     "id": "bb46c44d-6f44-4904-b641-cec8c35e089f",
+    "79d531c6-bd17-4c37-baa9-b72f9c608476": {
+     "title": "Forbindelse og kontakt",
+     "id": "79d531c6-bd17-4c37-baa9-b72f9c608476",
      "references": [
-      "913f7931-9e11-40a7-a1a7-aff19cf9adba",
       "4839db3a-8c05-42e7-ab89-be3b9ee47d91",
-      "ba4b1444-bb81-4e35-b8fe-595d1188c524",
-      "491b2c43-cd8a-4d30-857f-fffa8e20b72e",
       "b430d794-983b-4495-8e2c-7938f7c01973",
       "89e9d0ce-0f4b-424c-886d-ca9fcea0bbce",
       "7c90b249-88f3-43ef-a3db-98732f6c94b4",
-      "936100e8-51b4-4e40-861b-af3ba7fb2b72",
-      "d26bbb10-a497-4c3f-971e-f33d5bb99b56",
-      "4e8d5245-49f9-4c77-93f1-661e8d2b4b16",
-      "2db6a0ef-fed0-45ca-9f4a-e7acbc083c48",
-      "c2ede12f-8265-40fa-bde0-f004fb408aba",
       "8d63864b-c7a5-49e1-be80-04b80b4bf1e0",
-      "7ebafd6f-2ad5-4036-af68-5abf4bf382f8",
-      "c55bdb4f-3586-47d2-8c22-372970a3017b"
+      "2db6a0ef-fed0-45ca-9f4a-e7acbc083c48"
      ]
     },
-    "77ca1243-01e1-49bf-a5b3-191c03288809": {
-     "title": "Montering",
-     "id": "77ca1243-01e1-49bf-a5b3-191c03288809",
+    "008aa953-4924-450b-8060-f648eb78dcca": {
+     "title": "Montering og skruer",
+     "id": "008aa953-4924-450b-8060-f648eb78dcca",
      "references": [
-      "a2a019a2-f321-46dd-9356-0bf516f4080f",
       "3a8af2f3-2dcf-4c18-95ca-de0f60fe46ec",
+      "a2a019a2-f321-46dd-9356-0bf516f4080f",
       "7c90b249-88f3-43ef-a3db-98732f6c94b4",
       "f170324b-723e-4f38-8f0a-4d1b5df7d90a"
      ]
     },
-    "cd16ed8f-8206-4eb1-afe4-949da6aeb8c4": {
-     "title": "Pasform og størrelse",
-     "id": "cd16ed8f-8206-4eb1-afe4-949da6aeb8c4",
+    "9648add8-b5de-49ed-8a78-a533c5b2520b": {
+     "title": "Størrelse og kabelpasform",
+     "id": "9648add8-b5de-49ed-8a78-a533c5b2520b",
      "references": [
       "a2a019a2-f321-46dd-9356-0bf516f4080f",
       "96eb45bb-97a7-4d84-b974-193c11dc4c6b",

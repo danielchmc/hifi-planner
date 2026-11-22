@@ -13,6 +13,25 @@
    "url": "/tv/tv/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.3",
+   "Total HDMI Inputs": "3x",
+   "HDMI": "2.1",
+   "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), Variable Refresh Rate, HFR (High Frame Rate (4K/120)",
+   "HDMI ARC/eARC": "eARC (Port 1)",
+   "Wi-Fi version": "Wi-Fi 5 (802.11ac)"
+  },
+  "gallery": [
+   "db78bc42-87cb-41bf-92ef-f3d3bf2683f3",
+   "5251943c-e8be-49fb-9b2c-fb946643cdf4",
+   "8969fa95-68ae-4c44-a483-8175a9f9af1c",
+   "e4c72515-3234-4fe9-851f-8a54152b30fb",
+   "7b1a9e66-d239-4010-b803-a8087dcfda58"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 285214,
   "skuCode": "SAMTUM80H",
@@ -77,22 +96,22 @@
     "productCode": "SAMTU55M80H",
     "ean": "8806099009410",
     "priceDetails": {
-     "priceValueId": 1216156,
-     "price": 4555,
-     "priceFormatted": "4.555,-",
+     "priceValueId": 1219494,
+     "price": 3999,
+     "priceFormatted": "3.999,-",
      "priceBefore": 7499,
      "priceBeforeFormatted": "7.499,-",
-     "priceSavingsFormatted": "2.944,-",
+     "priceSavingsFormatted": "3.500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
      "offerExpiryDate": "2026-11-30T22:59:00Z",
-     "unitPrice": 4555,
+     "unitPrice": 3999,
      "unitPriceBefore": 7499
     },
     "ribbons": [
      {
-      "text": "Spar 39%",
+      "text": "Spar 47%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -315,7 +334,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 6,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -388,22 +407,22 @@
     "productCode": "SAMTU65M80H",
     "ean": "8806099009427",
     "priceDetails": {
-     "priceValueId": 1216160,
-     "price": 5888,
-     "priceFormatted": "5.888,-",
+     "priceValueId": 1219490,
+     "price": 4999,
+     "priceFormatted": "4.999,-",
      "priceBefore": 8999,
      "priceBeforeFormatted": "8.999,-",
-     "priceSavingsFormatted": "3.111,-",
+     "priceSavingsFormatted": "4.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
      "offerExpiryDate": "2026-11-30T22:59:00Z",
-     "unitPrice": 5888,
+     "unitPrice": 4999,
      "unitPriceBefore": 8999
     },
     "ribbons": [
      {
-      "text": "Spar 35%",
+      "text": "Spar 44%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -471,7 +490,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "157,8 x 93 x 14,2 cm (bredde x højde x dybde)"
+        "value": "14,2 x 93 x 157,8 cm (bredde x højde x dybde)"
        }
       ]
      },
@@ -626,7 +645,7 @@
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 20,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -660,7 +679,18 @@
     },
     "url": "/samsung-m80h-mini-led-tv/samtu65m80h/",
     "canonicalUrl": "/samsung-m80h-mini-led-tv/samtu65m80h/",
-    "lowestShippingPriceRaw": 499,
+    "recommendedAccessories": {
+     "productCodes": [
+      "VOGTVM3215X",
+      "VOGTVM5705",
+      "ESSTVBMOTSMALL58X",
+      "ESSTVBMOTSLIM19X",
+      "BULOWBS15CO",
+      "ESSTVSONEX",
+      "ESSTVSFORMELOX"
+     ],
+     "isOutlet": "false"
+    },
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -927,7 +957,7 @@
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 11,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -961,7 +991,6 @@
     },
     "url": "/samsung-m80h-mini-led-tv/samtu75m80h/",
     "canonicalUrl": "/samsung-m80h-mini-led-tv/samtu75m80h/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",
@@ -1271,7 +1300,6 @@
     },
     "url": "/samsung-m80h-mini-led-tv/samtu85m80h/",
     "canonicalUrl": "/samsung-m80h-mini-led-tv/samtu85m80h/",
-    "lowestShippingPriceRaw": 499,
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",

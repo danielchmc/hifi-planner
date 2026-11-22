@@ -8,6 +8,15 @@
    "url": "/tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "0ce8fd29-9ea7-423a-9711-5d8f5c70deee",
+   "58a6a1da-8778-4b00-bb47-e28d258c531e",
+   "7a731b96-d097-48e3-bde8-d8b7e05b3ffc"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 44171,
   "skuCode": "BLSWM100",
@@ -38,10 +47,10 @@
    "id": 69665
   },
   "stockItemAlternative": {
-   "save": "100,-",
+   "save": "200,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=BLSWM100",
    "availableQuantity": 3,
-   "lowestPrice": "399,-"
+   "lowestPrice": "299,-"
   },
   "variants": [
    {
@@ -98,7 +107,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 17,
+     "availableQuantity": 15,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -125,70 +134,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSWM100 leverer en varm, kraftfuld og omsluttende lyd og er nem at montere og justere. Vægbeslagene roses generelt for at være stabile, diskrete, elegante og velegnede til højttalerne. Enkelte praktiske kritikpunkter gælder adgangen til ekstra tilspænding, dybden og prisen, men helhedsindtrykket er meget positivt.",
+   "summary": "BLSWM100 leverer en varm, fyldig og omsluttende lyd og er samtidig nem at montere og justere. Vægbeslagene føles solide og stabile med et diskret design, der passer elegant ind i rummet. Fleksibel placering og pålidelig konstruktion gør systemet til et fremragende valg til et gennemført hjemme-setup.",
    "headlines": {
-    "stable and solid construction": {
-     "sentimentAnalysis": "Beslagene roses konsekvent for at være solide og stabile uden uønsket vaklen.",
-     "simpleTitle": "Stabil og solid konstruktion",
-     "bias": "positive",
-     "key": "stability",
-     "groupId": "d3b78605-b9a0-4414-a543-6d2bf6f98076"
-    },
-    "easy to install": {
-     "sentimentAnalysis": "Monteringen beskrives gentagne gange som hurtig, enkel og nem.",
-     "simpleTitle": "Nem at montere",
+    "easy installation": {
+     "sentimentAnalysis": "Monteringen beskrives gentagne gange som hurtig, nem og praktisk.",
+     "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "installation",
-     "groupId": "87a355f4-95b9-4ce2-943a-e599e0f9ed13"
+     "groupId": "d44f9808-8fb7-489b-bc59-17508071b0e7"
+    },
+    "solid and stable construction": {
+     "sentimentAnalysis": "Beslagene opfattes konsekvent som solide, stabile og fri for uønsket slinger.",
+     "simpleTitle": "Solid og stabil konstruktion",
+     "bias": "positive",
+     "key": "stability",
+     "groupId": "342e434c-a8ea-4a60-a07b-95403e0e74a2"
     },
     "flexible positioning": {
-     "sentimentAnalysis": "Beslagene giver nyttig vinkeljustering og gør det nemt at placere højttalerne efter ønske.",
+     "sentimentAnalysis": "Beslagene giver gode og praktiske justeringsmuligheder, så højttalerne kan placeres efter behov.",
      "simpleTitle": "Fleksibel placering",
      "bias": "positive",
      "key": "adjustability",
-     "groupId": "cc09f2de-024f-49a4-9dc0-2d48b36c6920"
+     "groupId": "170c26a4-4bd4-4c86-84fe-83c30bd0fc90"
     },
-    "discreet, elegant appearance": {
-     "sentimentAnalysis": "Flere anmeldelser værdsætter det diskrete, vægnære design og det elegante udseende.",
-     "simpleTitle": "Diskret og elegant udseende",
+    "discreet appearance": {
+     "sentimentAnalysis": "Det diskrete og elegante design falder ind i væggen og virker visuelt ubemærket.",
+     "simpleTitle": "Diskret udseende",
      "bias": "positive",
      "key": "design",
-     "groupId": "e2cd50df-6969-4240-9aaa-b6f33768b149"
+     "groupId": "d38fcb34-901e-467f-8e19-bab67327d848"
     },
     "warm, powerful sound": {
-     "sentimentAnalysis": "Lyden beskrives som meget god og fantastisk og giver indtryk af en engagerende og tilfredsstillende lytteoplevelse.",
+     "sentimentAnalysis": "Lyden roses som meget god, fantastisk og særdeles behagelig.",
      "simpleTitle": "Varm og kraftfuld lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "74c6ec55-4e03-434b-b5d0-dda2c61c3ced"
+     "groupId": "fa2c4515-4e8c-45ca-88e2-4088479d313e"
     },
     "tightening can be awkward": {
-     "sentimentAnalysis": "Adgangen til sideskruen er besværlig, når højttaleren monteres vandret eller drejes mod væggen.",
+     "sentimentAnalysis": "Efterspænding fra siden er besværlig, når højttaleren vender mod væggen, og kræver adskillelse eller en lille skruetrækker.",
      "simpleTitle": "Efterspænding kan være besværlig",
      "bias": "negative",
      "key": "adjustability",
-     "groupId": "cc09f2de-024f-49a4-9dc0-2d48b36c6920"
+     "groupId": "170c26a4-4bd4-4c86-84fe-83c30bd0fc90"
     }
    },
    "grouping": {
-    "87a355f4-95b9-4ce2-943a-e599e0f9ed13": {
+    "d44f9808-8fb7-489b-bc59-17508071b0e7": {
      "title": "Montering",
-     "id": "87a355f4-95b9-4ce2-943a-e599e0f9ed13",
+     "id": "d44f9808-8fb7-489b-bc59-17508071b0e7",
      "references": [
-      "7e0a8856-87a8-4cdd-bf48-dd64eb189e8d",
       "2b8bad19-cba9-42cd-8b88-319e6e85ac30",
       "52ff680c-b51d-4831-ab60-60a455e8e09f",
       "6986bfc6-3098-4b28-809c-bb5d7324ba02",
       "c26bcc73-77d0-40b6-9752-99b189869953",
       "134e147c-2f8b-4860-bef5-ea34bf9d3fa4",
-      "2624af28-d15f-43a3-b140-10d79f9ea7b3"
+      "2624af28-d15f-43a3-b140-10d79f9ea7b3",
+      "52ff680c-b51d-4831-ab60-60a455e8e09f"
      ]
     },
-    "d3b78605-b9a0-4414-a543-6d2bf6f98076": {
+    "342e434c-a8ea-4a60-a07b-95403e0e74a2": {
      "title": "Stabilitet",
-     "id": "d3b78605-b9a0-4414-a543-6d2bf6f98076",
+     "id": "342e434c-a8ea-4a60-a07b-95403e0e74a2",
      "references": [
-      "ca91600f-ff89-4292-bbc8-6e9db7082d1a",
       "49fc3c8a-74a9-40f4-907b-1e9fe4396cad",
       "52ff680c-b51d-4831-ab60-60a455e8e09f",
       "c4338746-a387-43f9-ad80-fba323cd8088",
@@ -197,32 +205,31 @@
       "b384ede9-3cf1-4c70-b357-efca0675457a"
      ]
     },
-    "cc09f2de-024f-49a4-9dc0-2d48b36c6920": {
+    "170c26a4-4bd4-4c86-84fe-83c30bd0fc90": {
      "title": "Justerbarhed",
-     "id": "cc09f2de-024f-49a4-9dc0-2d48b36c6920",
+     "id": "170c26a4-4bd4-4c86-84fe-83c30bd0fc90",
      "references": [
       "49fc3c8a-74a9-40f4-907b-1e9fe4396cad",
       "169c3f53-0204-4983-9093-6230de0804ce",
       "134e147c-2f8b-4860-bef5-ea34bf9d3fa4",
       "6ee6124d-7f78-438a-b0c9-8ec7582ab7b3",
-      "964cea39-116f-4150-bc92-280e498e68ef",
-      "c1990e67-430c-45ab-9555-48b1318f158f"
+      "f975eb15-0e2b-4b91-8d02-dc460ae11ab2"
      ]
     },
-    "e2cd50df-6969-4240-9aaa-b6f33768b149": {
+    "d38fcb34-901e-467f-8e19-bab67327d848": {
      "title": "Design",
-     "id": "e2cd50df-6969-4240-9aaa-b6f33768b149",
+     "id": "d38fcb34-901e-467f-8e19-bab67327d848",
      "references": [
       "ca91600f-ff89-4292-bbc8-6e9db7082d1a",
       "49fc3c8a-74a9-40f4-907b-1e9fe4396cad",
       "28a535bf-b1eb-4e7f-a994-1f056492b206",
-      "c3c7e0bf-8e73-40fd-9314-28d8fe228a5b",
-      "2624af28-d15f-43a3-b140-10d79f9ea7b3"
+      "2624af28-d15f-43a3-b140-10d79f9ea7b3",
+      "c3c7e0bf-8e73-40fd-9314-28d8fe228a5b"
      ]
     },
-    "74c6ec55-4e03-434b-b5d0-dda2c61c3ced": {
+    "fa2c4515-4e8c-45ca-88e2-4088479d313e": {
      "title": "Lydkvalitet",
-     "id": "74c6ec55-4e03-434b-b5d0-dda2c61c3ced",
+     "id": "fa2c4515-4e8c-45ca-88e2-4088479d313e",
      "references": [
       "7e0a8856-87a8-4cdd-bf48-dd64eb189e8d",
       "55f31f90-0491-48c3-b8f5-9c1cb3c634e2"

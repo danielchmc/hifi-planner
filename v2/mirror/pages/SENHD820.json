@@ -13,6 +13,18 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Fra beskrivelsen": "Tilslutning : Forgyldt 6,35 mm jack / 4,4 mm stereo balanceret jack / XLR* · Højpræcisions ODU-tilslutninger på ørekopper · *Balanceret XLR-kabel fås som ekstratilbehør"
+  },
+  "gallery": [
+   "0534f5c1-528b-4645-b3a9-262435a6c72a",
+   "9a467fa8-a5a3-4e74-b868-4708efe7c89c",
+   "498c6efc-930c-408c-a764-fa12e8a081d9"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 106520,
   "skuCode": "SENHD820",
@@ -42,12 +54,12 @@
     "AUDMM500",
     "AUDLCDXC",
     "AUDLCD3X",
-    "AUDMM520",
     "SENHD660S2",
     "AUDLCD5",
     "AUDLCD2CLASSIC",
     "BEYT1V3",
-    "BEYT5V3"
+    "BEYT5V3",
+    "AUDMM520"
    ],
    "isOutlet": "false"
   },
@@ -273,66 +285,46 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHD820 roses bredt for sin kraftfulde, detaljerede og medrivende lyd, især den dybe bas, klare vokaler og rummelige gengivelse. Komfort og byggekvalitet vurderes ofte som fremragende, mens den gode isolering gør det lukkede design velegnet til koncentreret lytning. De største forbehold gælder den meget høje pris, pasformen til mindre hoveder og briller, lejlighedsvis ubalance i lyden samt nogen lydlækage; en kapabel hovedtelefonforstærker anbefales kraftigt.",
+   "summary": "SENHD820 leverer en kraftfuld, varm og immersiv lytteoplevelse med dyb, punchy bas, klare vokaler og et stort lydbillede. Den førsteklasses konstruktion, gode lukkede isolering og høje komfort ved lange lyttesessioner gør hovedtelefonerne særdeles overbevisende med en kompetent forstærker. Den høje pris, den følsomme pasform og lidt lydlækage forhindrer universel begejstring, men helhedsindtrykket er klart positivt for krævende lyttere.",
    "headlines": {
-    "powerful, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en meget fornøjelig, kraftfuld og rummelig gengivelse, der overgår forventningerne.",
-     "simpleTitle": "Kraftfuld, detaljeret og medrivende lyd",
+    "powerful, spacious and highly detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en stor, kraftfuld og særdeles fornøjelig gengivelse med dyb bas, klare vokaler og stærke detaljer.",
+     "simpleTitle": "Kraftfuld, rummelig og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "912960c2-9aa3-4f17-a394-133947d024be"
+     "groupId": "7dd1257f-c42b-4368-a133-4c9544885718"
     },
-    "deep, controlled bass and clear mids": {
-     "sentimentAnalysis": "Bassen roses for dybde, kraft og detaljer, mens vokaler og mellemtoner forbliver klare og åbne.",
-     "simpleTitle": "Dyb, kontrolleret bas og klare mellemtoner",
+    "analytical clarity and open midrange": {
+     "sentimentAnalysis": "Hovedtelefonerne roses for ren diskant, åben mellemtone og en analytisk gengivelse, der holder vokaler og instrumenter adskilt.",
+     "simpleTitle": "Analytisk klarhed og åben mellemtone",
      "bias": "positive",
      "key": "sound",
-     "groupId": "912960c2-9aa3-4f17-a394-133947d024be"
+     "groupId": "7dd1257f-c42b-4368-a133-4c9544885718"
     },
-    "sound can be overly bass-heavy or uneven": {
-     "sentimentAnalysis": "Nogle lyttere finder gengivelsen blot tilfredsstillende eller for bastung og har brug for EQ for at skabe balance.",
-     "simpleTitle": "Lyden kan være for bastung eller ujævn",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "912960c2-9aa3-4f17-a394-133947d024be"
-    },
-    "comfortable for long listening": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer fremragende komfort, også ved brug i mange timer.",
+    "comfortable for extended listening": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den fremragende bærekomfort, også ved mange timers lytning.",
      "simpleTitle": "Komfortable ved lang tids lytning",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "9033bccf-bb60-4019-8860-0e51084cecbb"
+     "groupId": "53d1bb7e-49e8-4b8c-a48a-c54c42392d87"
     },
-    "fit can be difficult for smaller heads and glasses": {
-     "sentimentAnalysis": "Pasformen afhænger i høj grad af hovedstørrelsen; mindre hoveder og briller kan forringe komfort og tætning.",
-     "simpleTitle": "Pasformen kan være vanskelig for mindre hoveder og briller",
+    "fit and seal can be problematic": {
+     "sentimentAnalysis": "Pasformen afhænger i høj grad af hovedstørrelse og briller, og for lavt tryk eller utilstrækkelig tætning reducerer komforten for nogle brugere.",
+     "simpleTitle": "Pasform og tætning kan være problematisk",
      "bias": "negative",
      "key": "comfort",
-     "groupId": "9033bccf-bb60-4019-8860-0e51084cecbb"
-    },
-    "effective isolation for focused listening": {
-     "sentimentAnalysis": "Det lukkede design kan effektivt dæmpe omgivende støj, selv om tætningen påvirker resultatet.",
-     "simpleTitle": "Effektiv isolering til koncentreret lytning",
-     "bias": "positive",
-     "key": "isolation",
-     "groupId": "a2ff7c2a-05b9-4056-887b-16952468c96a"
-    },
-    "premium pricing feels difficult to justify": {
-     "sentimentAnalysis": "Den høje pris skaber utilfredshed hos nogle ejere, især efter et prisfald eller sammenligning med konkurrerende hovedtelefoner.",
-     "simpleTitle": "Premiumprisen er svær at retfærdiggøre",
-     "bias": "negative",
-     "key": "price",
-     "groupId": "ed96fa9f-2a84-421e-94e2-56a121fa3de6"
+     "groupId": "53d1bb7e-49e8-4b8c-a48a-c54c42392d87"
     }
    },
    "grouping": {
-    "912960c2-9aa3-4f17-a394-133947d024be": {
+    "7dd1257f-c42b-4368-a133-4c9544885718": {
      "title": "Lydkvalitet",
-     "id": "912960c2-9aa3-4f17-a394-133947d024be",
+     "id": "7dd1257f-c42b-4368-a133-4c9544885718",
      "references": [
       "583bfd92-b16e-4018-a927-bc0dec56f431",
       "0357c77a-536b-4520-b2dd-ff3c0c58ce9f",
       "5f56b40f-7423-414a-b530-96892d5e1e38",
+      "175e1836-3698-40a4-aaca-7691cd5f113f",
       "af6f1a6f-80e5-4d36-8281-d0b9fdafddea",
       "69b1e387-fe90-4a47-8d97-6c532ecef290",
       "b181c6ea-017f-48da-ae57-cbb9168f7a62",
@@ -344,31 +336,14 @@
       "2a11b05c-2ab4-412e-b2d6-9fbbcf2cdd31"
      ]
     },
-    "9033bccf-bb60-4019-8860-0e51084cecbb": {
+    "53d1bb7e-49e8-4b8c-a48a-c54c42392d87": {
      "title": "Komfort",
-     "id": "9033bccf-bb60-4019-8860-0e51084cecbb",
+     "id": "53d1bb7e-49e8-4b8c-a48a-c54c42392d87",
      "references": [
       "af6f1a6f-80e5-4d36-8281-d0b9fdafddea",
       "b181c6ea-017f-48da-ae57-cbb9168f7a62",
       "9912e9f6-9396-47ac-b2d3-9c415979f9f1",
       "1a6069d7-3def-4198-bbc7-87f87c92c6e5"
-     ]
-    },
-    "ed96fa9f-2a84-421e-94e2-56a121fa3de6": {
-     "title": "Pris og værdi",
-     "id": "ed96fa9f-2a84-421e-94e2-56a121fa3de6",
-     "references": [
-      "af6f1a6f-80e5-4d36-8281-d0b9fdafddea",
-      "4a787d79-7f36-4b16-a6fb-4db5911b20ac",
-      "20a47d88-7e44-4813-a435-5234be227330"
-     ]
-    },
-    "a2ff7c2a-05b9-4056-887b-16952468c96a": {
-     "title": "Isolering",
-     "id": "a2ff7c2a-05b9-4056-887b-16952468c96a",
-     "references": [
-      "af6f1a6f-80e5-4d36-8281-d0b9fdafddea",
-      "9912e9f6-9396-47ac-b2d3-9c415979f9f1"
      ]
     }
    },

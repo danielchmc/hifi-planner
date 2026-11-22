@@ -13,6 +13,22 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydindgang": "Minijack/AUX",
+   "Højtaler type": "Trådløs højtaler",
+   "Bluetooth type": "5.2",
+   "Fra beskrivelsen": "Analoge indgange: 1 x 3,5mm line-in"
+  },
+  "gallery": [
+   "6f327c9b-b17e-4b2a-ada1-4751e68b6965",
+   "5aa99d76-15eb-4f8f-a33c-d469a09bbf4c",
+   "7e7f536c-0608-40b7-aafd-6904be7997a5",
+   "c519003d-3c80-4516-b7d6-20767f94025e",
+   "dbaac621-afb8-4dc8-83b0-3d746465d14a"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 214915,
   "skuCode": "MARACTON3",
@@ -207,8 +223,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 19,
-     "availableQuantity": 239,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 170,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -314,7 +330,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 526,
+     "availableQuantity": 508,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -422,7 +438,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 41,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -467,48 +483,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARACTON3 leverer varm, fyldig og overraskende rummelig lyd fra et kompakt kabinet med tilfredsstillende bas og rigelig kraft til små og mellemstore rum. Retrodesignet, den solide konstruktion og den enkle Bluetooth-betjening gør højttaleren særdeles attraktiv til hverdagsbrug. Den gode værdi for pengene, tonekontrollerne og den nemme opsætning vækker stor begejstring, selv om netdrift, energisparefunktion og lejlighedsvis tomgangsstøj er begrænsninger.",
+   "summary": "MARACTON3 leverer varm, fyldig og overraskende kraftfuld lyd fra en kompakt højttaler med tilfredsstillende bas til rum, skriveborde og hverdagslytning. Det karakteristiske retrodesign, den solide konstruktion og den enkle Bluetooth-betjening gør højttaleren særdeles behagelig i daglig brug. Enkelte anmeldelser nævner begrænset mobilitet, automatisk strømbesparelse, hørbar susen eller ændret klangbalance ved højere lydstyrke, men helhedsindtrykket er meget begejstret og prisbevidst.",
    "headlines": {
-    "strong value for the money": {
-     "sentimentAnalysis": "Den kompakte højttaler opfattes gentagne gange som et godt køb med høj kvalitet, god ydelse og mange funktioner til prisen.",
-     "simpleTitle": "God værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "94ab43e0-286a-48ec-92f8-02174ce0b8ea"
-    },
     "warm, full and powerful sound": {
-     "sentimentAnalysis": "Højttaleren roses bredt for varm, fyldig og detaljeret lyd, kraftig bas og imponerende lydstyrke i forhold til størrelsen.",
+     "sentimentAnalysis": "Anmeldelserne roser den varme, fyldige, detaljerede og kraftfulde lyd samt den overraskende stærke bas og lydstyrke i forhold til den kompakte størrelse.",
      "simpleTitle": "Varm, fyldig og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "46b21454-0291-40d9-b6c9-e04748ee0710"
+     "key": "sound_warm_full",
+     "groupId": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0"
     },
-    "distinctive retro design": {
-     "sentimentAnalysis": "Det klassiske retrolook beskrives gentagne gange som stilfuldt, attraktivt og særpræget, hvilket gør højttaleren til et flot indretningselement.",
-     "simpleTitle": "Markant retrodesign",
+    "simple operation and reliable connections": {
+     "sentimentAnalysis": "Bluetooth-parring, betjening og daglig brug opleves generelt som hurtig, intuitiv og pålidelig.",
+     "simpleTitle": "Enkel betjening og stabile forbindelser",
      "bias": "positive",
-     "key": "design",
-     "groupId": "2dde6074-8155-43bc-87f9-ffa9914512a9"
+     "key": "usability_simple",
+     "groupId": "1707a87d-73e1-43f7-9c33-cb622437392c"
     },
-    "easy setup and reliable connections": {
-     "sentimentAnalysis": "Bluetooth-parring, skift mellem enheder og daglig betjening opleves konsekvent som hurtig, intuitiv og pålidelig.",
-     "simpleTitle": "Nem opsætning og stabile forbindelser",
+    "distinctive retro design and solid build": {
+     "sentimentAnalysis": "Det klassiske Marshall-inspirerede udseende beskrives gentagne gange som stilfuldt, attraktivt, karakteristisk og vellavet.",
+     "simpleTitle": "Karakteristisk retrodesign og solid konstruktion",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "327331b1-41b5-47f1-96a3-21bb11223575"
+     "key": "design_retro",
+     "groupId": "ed7fc1f0-5677-4d1e-94ce-899e91f29120"
     },
-    "sound can be limited in some situations": {
-     "sentimentAnalysis": "En mindre gruppe nævner for lidt bas og lydstyrke, ubalanceret klang ved højere niveauer, begrænset spredning i rummet og svag susen i stilhed.",
-     "simpleTitle": "Lyden kan være begrænset i visse situationer",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "46b21454-0291-40d9-b6c9-e04748ee0710"
+    "excellent value for the price": {
+     "sentimentAnalysis": "Højttaleren opfattes ofte som fair prissat eller som særdeles god værdi, især i betragtning af lyd, design og kompakte størrelse.",
+     "simpleTitle": "Fremragende værdi for pengene",
+     "bias": "positive",
+     "key": "value_price",
+     "groupId": "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4"
+    },
+    "strong sound for compact rooms and desks": {
+     "sentimentAnalysis": "Det kompakte kabinet fungerer især godt i mindre lejligheder, soveværelser, køkkener, kontorer og ved skrivebordet, mens større rum kan afsløre begrænsninger.",
+     "simpleTitle": "Kraftfuld lyd til mindre rum og skriveborde",
+     "bias": "positive",
+     "key": "sound_compact_spaces",
+     "groupId": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0"
     }
    },
    "grouping": {
-    "46b21454-0291-40d9-b6c9-e04748ee0710": {
+    "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0": {
      "title": "Lydkvalitet",
-     "id": "46b21454-0291-40d9-b6c9-e04748ee0710",
+     "id": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0",
      "references": [
       "13973bd1-bc84-489d-bbee-069457df6917",
       "15f22573-8c65-4706-a05b-477fe6bd3824",
@@ -558,6 +574,7 @@
       "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
       "7fa20846-73da-4761-8287-91b82c049129",
       "a45cc1e5-024c-4e80-8bd8-43fbe31421f2",
+      "790a4fa8-78bc-408d-a5c4-234066c68669",
       "e48cfb67-1eaa-412a-a516-4823f8610ee3",
       "0b799727-2b68-4c6e-8006-b44b0feb7c46",
       "7479d1c2-9f45-45ae-b7d0-5a78fd0348b0",
@@ -581,9 +598,9 @@
       "3176e9ed-cf12-43b8-8209-99abf5b5b998"
      ]
     },
-    "2dde6074-8155-43bc-87f9-ffa9914512a9": {
+    "ed7fc1f0-5677-4d1e-94ce-899e91f29120": {
      "title": "Design",
-     "id": "2dde6074-8155-43bc-87f9-ffa9914512a9",
+     "id": "ed7fc1f0-5677-4d1e-94ce-899e91f29120",
      "references": [
       "15f22573-8c65-4706-a05b-477fe6bd3824",
       "fdd19e6a-5a36-4837-8311-fa81c3d4cc9d",
@@ -603,25 +620,22 @@
       "f8c4aa3c-3b2b-4fd1-84dd-967f0351c27b",
       "c8b671ab-b733-446b-ac88-ab9fba4ac12d",
       "773711e1-3deb-4063-88bf-ab93cc648683",
-      "883cee80-0769-4cba-bab2-5f3328df7818",
       "6ac33eb3-c7b7-4aef-bfc5-050107de1fff",
-      "d4651682-eb3f-48ef-a2aa-caee6c04ddd8",
       "3de39324-33cf-4fe5-aae0-6ef6f2a6f575",
       "7fa20846-73da-4761-8287-91b82c049129",
+      "a45cc1e5-024c-4e80-8bd8-43fbe31421f2",
       "e48cfb67-1eaa-412a-a516-4823f8610ee3",
       "0b799727-2b68-4c6e-8006-b44b0feb7c46",
-      "a45cc1e5-024c-4e80-8bd8-43fbe31421f2",
       "9d9c5621-0795-4396-8bcd-b1b29bf7ae26",
       "dc95ce50-33af-4bdf-93d1-dff9925d66bc",
       "b74486fd-414d-4081-9696-e9be6ebb1f14",
       "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42",
-      "31ed3b18-ea73-4f08-93b9-f39946659db9",
-      "3eb9d49f-1016-4ff8-9bac-6bdd02313cf0"
+      "31ed3b18-ea73-4f08-93b9-f39946659db9"
      ]
     },
-    "327331b1-41b5-47f1-96a3-21bb11223575": {
-     "title": "Betjening og forbindelse",
-     "id": "327331b1-41b5-47f1-96a3-21bb11223575",
+    "1707a87d-73e1-43f7-9c33-cb622437392c": {
+     "title": "Betjening og tilslutning",
+     "id": "1707a87d-73e1-43f7-9c33-cb622437392c",
      "references": [
       "5ddea5e1-eea2-4301-b90d-41706beba813",
       "f4bc55d5-6732-49b7-90df-854dab5381b6",
@@ -629,20 +643,19 @@
       "f69a63f9-c58d-43d5-bd2d-2f105efa6e96",
       "aeed7840-d90a-4ce3-bb5a-30b4d7467d73",
       "d4651682-eb3f-48ef-a2aa-caee6c04ddd8",
+      "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
+      "51be3c54-a07f-4438-8e42-713af404c36c",
       "fc03d167-56e7-4b5d-a4e9-877b38252daa",
       "c8b671ab-b733-446b-ac88-ab9fba4ac12d",
       "773711e1-3deb-4063-88bf-ab93cc648683",
-      "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
-      "51be3c54-a07f-4438-8e42-713af404c36c",
       "5418f765-1902-4ec0-823b-5621e9d1c0ab",
       "95181afa-aa14-4883-81da-b206d3717f6a",
-      "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42",
-      "3eb9d49f-1016-4ff8-9bac-6bdd02313cf0"
+      "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42"
      ]
     },
-    "94ab43e0-286a-48ec-92f8-02174ce0b8ea": {
-     "title": "Pris og værdi",
-     "id": "94ab43e0-286a-48ec-92f8-02174ce0b8ea",
+    "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4": {
+     "title": "Værdi for pengene",
+     "id": "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4",
      "references": [
       "ca179afd-f362-4672-854c-a247f05d40ef",
       "b670773f-a50c-442f-8fcf-bc2a0a81faa0",
@@ -652,9 +665,7 @@
       "97cb595b-23b9-48e5-af2d-a9f4edfec0db",
       "98ebd82b-262d-44b7-bf77-e80621242cbb",
       "444aaa29-418c-4992-bbc0-ab08b3841a7f",
-      "790a4fa8-78bc-408d-a5c4-234066c68669",
-      "31ed3b18-ea73-4f08-93b9-f39946659db9",
-      "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42"
+      "31ed3b18-ea73-4f08-93b9-f39946659db9"
      ]
     }
    },

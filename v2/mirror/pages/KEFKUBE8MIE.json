@@ -13,6 +13,14 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "4d27cff1-8b02-4b4b-bf89-58bb262bd6d6",
+   "bedf8121-ca69-4ea4-931e-9d6e5d9f9438"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 225142,
   "skuCode": "KEFKUBE8MIE",
@@ -276,20 +284,27 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF Kube 8 tilfører kompakte KEF-systemer et varmt og slagkraftigt løft med fyldigere bas og større dybde uden at dominere rummet. De kompakte mål passer godt til små rum, mens de fleksible indstillingsmuligheder gør integrationen enkel. Resultatet er en mere medrivende og tilfredsstillende musikoplevelse, især med KEF LSX II-højttalere.",
+   "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
    "headlines": {
-    "fuller, deeper bass transforms the listening experience": {
-     "sentimentAnalysis": "Subwooferen tilfører KEF LSX-systemer markant mere basvægt, fylde og dybde og skaber en tydeligt rigere og mere medrivende gengivelse.",
-     "simpleTitle": "Fyldigere og dybere bas forandrer lytteoplevelsen",
+    "adds fuller, deeper and more immersive bass": {
+     "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
+     "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "a2851675-dd42-4223-8db3-a72b93a8f70d"
+     "key": "bass_sound",
+     "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
+    },
+    "compact design works well in small rooms": {
+     "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
+     "simpleTitle": "Det kompakte design fungerer godt i små rum",
+     "bias": "positive",
+     "key": "compact_rooms",
+     "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
     }
    },
    "grouping": {
-    "a2851675-dd42-4223-8db3-a72b93a8f70d": {
-     "title": "Lydkvalitet",
-     "id": "a2851675-dd42-4223-8db3-a72b93a8f70d",
+    "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
+     "title": "Bas og lydkvalitet",
+     "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
      "references": [
       "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
       "9748edd8-6686-4c7e-a086-8d0b11a8de84",
@@ -298,6 +313,15 @@
       "37700f85-5cd6-40a3-99c1-9da4745fcd02",
       "d55951fc-53aa-4545-b0ec-bcf0e3401796",
       "713d2299-5b00-46fd-87ee-839a9e232118"
+     ]
+    },
+    "2cd3e345-8629-407a-9d89-b25591820d17": {
+     "title": "Kompakt størrelse og egnethed til rum",
+     "id": "2cd3e345-8629-407a-9d89-b25591820d17",
+     "references": [
+      "9748edd8-6686-4c7e-a086-8d0b11a8de84",
+      "fe224355-6f96-4104-904f-404bbf41bab4",
+      "6c7c3b50-1368-41b8-b349-ab8165768a20"
      ]
     }
    },

@@ -13,6 +13,25 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( AAC, SBC )",
+   "Trådløs opladning": "Ja"
+  },
+  "gallery": [
+   "5588ac34-c617-47fc-970e-b0aa04da2c15",
+   "661cb70b-6276-4e02-aeff-0a3434e69321",
+   "295a89f9-c917-457b-ac0d-b7412a109457",
+   "7d4a5b85-668b-4002-aa0e-8b7007d39e87",
+   "e366c490-3d7e-42c2-9e84-933bdebadb2f",
+   "44131456-9d96-4bf3-bb17-264e83ec7262",
+   "e3c383d6-ec98-4301-9c97-e85add279a0e",
+   "7ed0d2aa-ee27-4305-a300-e638305d379d",
+   "9cd22bcf-5680-4f97-b61f-5ff4a5b829ae",
+   "6397fba7-c7fe-42b2-b72b-42b50998b16b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 266263,
   "skuCode": "JBLLIVEFLEX3",
@@ -173,7 +192,7 @@
     "productCode": "JBLLIVEFLEX3BK",
     "ean": "1200130012266",
     "priceDetails": {
-     "priceValueId": 1217501,
+     "priceValueId": 1221039,
      "price": 999,
      "priceFormatted": "999,-",
      "salesUnit": "stk",
@@ -288,7 +307,7 @@
     "productCode": "JBLLIVEFLEX3BL",
     "ean": "1200130012280",
     "priceDetails": {
-     "priceValueId": 1208544,
+     "priceValueId": 1221045,
      "price": 999,
      "priceFormatted": "999,-",
      "salesUnit": "stk",
@@ -403,7 +422,7 @@
     "productCode": "JBLLIVEFLEX3PUR",
     "ean": "1200130012297",
     "priceDetails": {
-     "priceValueId": 1208550,
+     "priceValueId": 1221051,
      "price": 999,
      "priceFormatted": "999,-",
      "salesUnit": "stk",
@@ -518,7 +537,7 @@
     "productCode": "JBLLIVEFLEX3SI",
     "ean": "1200130012273",
     "priceDetails": {
-     "priceValueId": 1210349,
+     "priceValueId": 1221057,
      "price": 807,
      "priceFormatted": "807,-",
      "salesUnit": "stk",
@@ -636,41 +655,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBLLIVEFLEX3 leverer en varm og fyldig lyd samt nyttige funktioner, der giver en behagelig lytteoplevelse. Komfort og pasform varierer, da nogle ører oplever øretelefonerne som løse eller dårligt placerede. Batteritid og lydkvalitet kan skuffe i enkelte tilfælde, men helhedsindtrykket er stadig begejstret og fyldt med funktioner.",
+   "summary": "JBLLIVEFLEX3 leverer en varm, fyldig og generelt behagelig lyd med nyttige funktioner. Komfort og pasform i øret varierer, mens lydkvaliteten spænder fra omsluttende og klar til skuffende. Batteriydelsen virker også uensartet, men helhedsindtrykket er meget positivt for lyttere, der får en god pasform.",
    "headlines": {
-    "enjoyable, high-quality sound": {
-     "sentimentAnalysis": "Lyden roses i flere anmeldelser som behagelig, god og tilfredsstillende.",
-     "simpleTitle": "Behagelig lyd i høj kvalitet",
+    "warm and enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses som god, behagelig og tilfredsstillende.",
+     "simpleTitle": "Varm og behagelig lyd",
      "bias": "positive",
-     "key": "sound_quality_positive",
-     "groupId": "0cac0db5-2835-4811-9f88-eae16d1179c5"
+     "key": "sound",
+     "groupId": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94"
     },
-    "sound quality can be mediocre": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver middelmådig eller meget dårlig lyd, herunder svag lyd fra den ene øretelefon.",
-     "simpleTitle": "Lydkvaliteten kan være middelmådig",
+    "sound quality can be disappointing": {
+     "sentimentAnalysis": "Nogle anmeldelser beskriver lyden som middelmådig eller meget dårlig.",
+     "simpleTitle": "Lydkvaliteten kan skuffe",
      "bias": "negative",
-     "key": "sound_quality_negative",
-     "groupId": "0cac0db5-2835-4811-9f88-eae16d1179c5"
+     "key": "sound",
+     "groupId": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94"
     },
-    "poor fit in some ears": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer øretelefonernes dårlige eller usikre pasform.",
-     "simpleTitle": "Dårlig pasform i nogle ører",
+    "poor in-ear fit": {
+     "sentimentAnalysis": "Øretelefonerne kritiseres for at sidde dårligt eller ukomfortabelt i ørerne.",
+     "simpleTitle": "Dårlig pasform i øret",
      "bias": "negative",
-     "key": "fit_negative",
-     "groupId": "1ca5bf0c-a442-40e3-8328-20ed55ec53de"
+     "key": "fit",
+     "groupId": "1158bcb8-1863-4a1e-94d7-e0588d9bb532"
     },
-    "useful features and functionality": {
-     "sentimentAnalysis": "Flere anmeldelser roser produktets funktionalitet og funktionssæt.",
-     "simpleTitle": "Nyttige funktioner og god funktionalitet",
+    "useful functionality and features": {
+     "sentimentAnalysis": "Produktet får positive kommentarer for funktionalitet og funktioner.",
+     "simpleTitle": "Nyttige funktioner og egenskaber",
      "bias": "positive",
-     "key": "features_positive",
-     "groupId": "bf0a45df-6fd4-43e3-a58c-1ce1cbc35470"
+     "key": "features",
+     "groupId": "993a71c0-74ce-4ea4-a43a-6644e741af62"
     }
    },
    "grouping": {
-    "0cac0db5-2835-4811-9f88-eae16d1179c5": {
+    "8429a4b2-3c12-4f9d-97e8-08ecf0667e94": {
      "title": "Lydkvalitet",
-     "id": "0cac0db5-2835-4811-9f88-eae16d1179c5",
+     "id": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94",
      "references": [
       "6d035dc1-9bd7-4a38-b31d-15932fc7f520",
       "ec074925-c363-4b60-a976-aaf21ab12c42",
@@ -680,17 +699,17 @@
       "4ddfef49-7f29-47dc-bc14-b126ccffff9c"
      ]
     },
-    "1ca5bf0c-a442-40e3-8328-20ed55ec53de": {
+    "1158bcb8-1863-4a1e-94d7-e0588d9bb532": {
      "title": "Pasform og komfort",
-     "id": "1ca5bf0c-a442-40e3-8328-20ed55ec53de",
+     "id": "1158bcb8-1863-4a1e-94d7-e0588d9bb532",
      "references": [
       "3b47355e-32f7-4cab-9461-b79e1bc5059a",
       "81b2df71-efb1-4017-a934-9a20c4b4631e"
      ]
     },
-    "bf0a45df-6fd4-43e3-a58c-1ce1cbc35470": {
+    "993a71c0-74ce-4ea4-a43a-6644e741af62": {
      "title": "Funktioner og funktionalitet",
-     "id": "bf0a45df-6fd4-43e3-a58c-1ce1cbc35470",
+     "id": "993a71c0-74ce-4ea4-a43a-6644e741af62",
      "references": [
       "6d035dc1-9bd7-4a38-b31d-15932fc7f520",
       "e03966cb-1853-4e3b-8e3f-7319d9f53907"

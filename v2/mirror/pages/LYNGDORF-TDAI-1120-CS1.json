@@ -13,6 +13,16 @@
    "url": "/stereo/mini-anlag/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "d35d1ee9-3c46-461b-9879-87ed4858dd05",
+   "0941dfa2-8201-421e-b9fa-428ee33c1c0e",
+   "1185a3af-99fd-4851-ba66-4cd381a98f0d",
+   "74e62384-925b-4056-a003-689c28c7e4d1"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 227331,
   "skuCode": "LYNGDORF-TDAI-1120-CS1",
@@ -110,6 +120,17 @@
   "bundle": {
    "name": "Lyngdorf TDAI-1120 + CS-1 Kompaktanlæg",
    "code": "LYNGDORF-TDAI-1120-CS1",
+   "ribbons": [
+    {
+     "text": "Spar 10%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/d35d1ee9-3c46-461b-9879-87ed4858dd05"
@@ -130,12 +151,15 @@
     }
    ],
    "priceDetails": {
-    "price": 28997,
-    "priceFormatted": "28.997,-",
+    "price": 25997,
+    "priceFormatted": "25.997,-",
+    "priceBefore": 28997,
+    "priceBeforeFormatted": "28.997,-",
+    "priceSavingsFormatted": "3.000,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 28997,
+    "unitPrice": 25997,
     "unitPriceBefore": 28997
    },
    "bundleProducts": [
@@ -159,11 +183,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 84,
+        "availableQuantity": 80,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "17.999,-",
-       "priceRaw": 17999,
+       "priceFormatted": "14.999,-",
+       "priceRaw": 14999,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -191,7 +215,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 11,
+        "availableQuantity": 7,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "10.998,-",
@@ -209,7 +233,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 17
+    "numberOfStoresExperiencePartly": 18
    }
   },
   "variantNavigationType": "dropDown",

@@ -13,6 +13,19 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "XLR-tilslutninger"
+  },
+  "gallery": [
+   "cf4b5de5-17cf-4b43-a6ab-c87711551fb0",
+   "c5d8d83d-25ca-4bb3-8393-93187ab18c8b",
+   "6211ab35-29b1-4a93-bb10-6425ba3e056a",
+   "04b2669e-b1b0-4b8a-b772-377ded77e79f",
+   "5d971cd5-d0d9-468a-97ba-973be52c988e"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 227019,
   "skuCode": "AQBLACKBEAUTYINX",
@@ -20,8 +33,8 @@
   "brandPage": "/marker/audioquest/",
   "recommendedAlternatives": {
    "productCodes": [
-    "AQPEGASUSINX",
-    "AQYUKONINX"
+    "AQYUKONINX",
+    "AQPEGASUSINX"
    ],
    "isOutlet": "false"
   },
@@ -158,11 +171,11 @@
      "productCode": "AQBLACKBEAUTYIN060X"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -252,11 +265,12 @@
      "productCode": "AQBLACKBEAUTYIN100X"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -345,8 +359,8 @@
      "productCode": "AQBLACKBEAUTYIN150X"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 21. marts",
+     "deliveryDate": "2027-03-21T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
      "inventoryStatusType": "notInStockAtpDate"
@@ -438,11 +452,12 @@
      "productCode": "AQBLACKBEAUTYIN200X"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

@@ -13,6 +13,24 @@
    "url": "/horetelefoner/in-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 6.0 ( Auracast, LE Audio, LC3, AAC, aptX Lossless, aptX, aptX Adaptive, SBC )"
+  },
+  "gallery": [
+   "22ea1cba-a9ff-4152-8a9a-b1733ec55fdf",
+   "6aeb6c5b-8716-4424-98b2-9cd197a4fd75",
+   "30ecc10a-9c3f-437d-a632-46dd49a7f817",
+   "8ad9ce35-c3b8-4e5c-bf96-be8ba2674172",
+   "4a4377e0-e607-484c-a239-96c23ea41d0c",
+   "e6fe4575-fa97-41d4-9db8-4ef8a1cebba4",
+   "01e87302-14f0-4f58-92c7-3be8ba7da32c",
+   "9f7906b2-4d54-4f62-b494-f18b85d95074",
+   "eada494e-47e2-449e-8835-79ef48cff56e",
+   "2ec8c35b-d8ec-4a4d-a537-7a74079bbc2f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 291246,
   "skuCode": "SENMOMENTUMTW5",
@@ -162,7 +180,7 @@
   "stockItemAlternative": {
    "save": "191,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SENMOMENTUMTW5",
-   "availableQuantity": 2,
+   "availableQuantity": 1,
    "lowestPrice": "2.099,-"
   },
   "variants": [
@@ -217,7 +235,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 291,
+     "availableQuantity": 290,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -329,7 +347,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 70,
+     "availableQuantity": 69,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -448,7 +466,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 196,
+     "availableQuantity": 189,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -575,7 +593,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 175,
+     "availableQuantity": 169,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -649,56 +667,57 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENMOMENTUMTW5 leverer en varm, kraftfuld og omsluttende lyd med imponerende klarhed og en detaljeret gengivelse. Effektiv ANC, en gennemtænkt app og udskiftelige batterier giver ekstra praktisk værdi, mens komfort og byggekvalitet bliver rost bredt. Mindre kritikpunkter er pasformen, som ikke er perfekt for alle, samt lejlighedsvis svag støj eller knas.",
+   "summary": "SENMOMENTUMTW5 leverer en varm, kraftfuld og medrivende lyd med fremragende klarhed og tilfredsstillende bas. Den komfortable konstruktion, stærke ANC, gennemtænkte app og udskiftelige batterier gør ørepropperne alsidige og praktiske. Nogle lyttere synes, at pasformen er mindre sikker end forventet, men helhedsindtrykket er meget begejstret, og ørepropperne anses generelt for at være pengene værd.",
    "headlines": {
-    "clear, powerful and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent lyden som usædvanligt klar, kraftfuld, fyldig og behagelig.",
-     "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+    "rich, clear sound with powerful bass": {
+     "sentimentAnalysis": "Anmeldelserne roser en usædvanligt klar, fyldig og kraftfuld gengivelse med punchy bas og et større lydbillede.",
+     "simpleTitle": "Fyldig, klar lyd med kraftig bas",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "53529aa6-cd0f-49c9-97c9-f918aa3041f1"
+     "key": "sound_richness",
+     "groupId": "f0eb08bd-9797-48c2-b5c5-66d99c47e846"
     },
-    "replaceable batteries and long battery life": {
-     "sentimentAnalysis": "Den lange batteritid og muligheden for at udskifte batterierne bliver betragtet som store praktiske fordele.",
-     "simpleTitle": "Udskiftelige batterier og lang batteritid",
+    "replaceable batteries add practical value": {
+     "sentimentAnalysis": "Designet med udskiftelige batterier fremhæves gentagne gange som en stor fordel sammen med den gode eller lange batteritid.",
+     "simpleTitle": "Udskiftelige batterier giver praktisk værdi",
      "bias": "positive",
-     "key": "battery",
-     "groupId": "28a03356-cdc8-4df6-b42f-40ca8a63201e"
+     "key": "replaceable_batteries",
+     "groupId": "799bc7c4-2f48-4ec7-ab57-174acc6b90bf"
     },
-    "clear and thoughtfully designed app": {
-     "sentimentAnalysis": "Appen bliver gentagne gange beskrevet som brugervenlig, overskuelig og gennemtænkt.",
+    "clear and well-designed app": {
+     "sentimentAnalysis": "Appen beskrives konsekvent som brugervenlig, overskuelig og gennemtænkt.",
      "simpleTitle": "Overskuelig og gennemtænkt app",
      "bias": "positive",
-     "key": "app",
-     "groupId": "79dc61ed-3ddf-4125-8135-5bb237fe31f2"
+     "key": "app_usability",
+     "groupId": "5b8ac05b-f1cc-4082-92ce-e2e78baac0ca"
     },
-    "strong ANC performance": {
-     "sentimentAnalysis": "Den aktive støjreduktion bliver udtrykkeligt rost som effektiv og behagelig.",
-     "simpleTitle": "Effektiv ANC",
+    "strong noise cancellation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ANC som meget effektiv og fremhæver også den gode omgivelseslyd.",
+     "simpleTitle": "Effektiv støjreduktion",
      "bias": "positive",
-     "key": "noise-cancellation",
-     "groupId": "f0404432-98ed-4f81-8fa5-176d91980798"
+     "key": "anc_effectiveness",
+     "groupId": "fe83b565-6e9f-4f55-9539-f1c1d409a451"
     },
-    "comfortable and lightweight design": {
-     "sentimentAnalysis": "Flere anmeldelser roser ørepropperne som komfortable, lette og bedre siddende end forgængeren.",
+    "comfortable, lightweight design": {
+     "sentimentAnalysis": "Anmeldelserne roser ørepropperne for at være komfortable, lette og bedre tilpasset end forgængermodellen.",
      "simpleTitle": "Komfortabelt og let design",
      "bias": "positive",
-     "key": "comfort-fit",
-     "groupId": "f52147ea-b928-44bc-aca1-1f9eab90db97"
+     "key": "comfort",
+     "groupId": "70d9ac4c-a476-4ed0-97f9-9728c49feea3"
     },
-    "fit is not fully secure for everyone": {
-     "sentimentAnalysis": "Nogle anmeldelser bemærker, at ørepropperne kan kræve genplacering eller sidde mindre sikkert end en tidligere model.",
-     "simpleTitle": "Pasformen sidder ikke helt sikkert for alle",
+    "fit can feel insufficiently secure": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at ørepropperne ikke sidder helt fast, og en sammenligning vurderer pasformen som dårligere end på TW3.",
+     "simpleTitle": "Pasformen kan føles utilstrækkeligt sikker",
      "bias": "negative",
-     "key": "comfort-fit",
-     "groupId": "f52147ea-b928-44bc-aca1-1f9eab90db97"
+     "key": "fit_security",
+     "groupId": "70d9ac4c-a476-4ed0-97f9-9728c49feea3"
     }
    },
    "grouping": {
-    "53529aa6-cd0f-49c9-97c9-f918aa3041f1": {
+    "f0eb08bd-9797-48c2-b5c5-66d99c47e846": {
      "title": "Lydkvalitet",
-     "id": "53529aa6-cd0f-49c9-97c9-f918aa3041f1",
+     "id": "f0eb08bd-9797-48c2-b5c5-66d99c47e846",
      "references": [
+      "fe35021e-6e9e-43f5-bbe8-8ed41092883e",
       "f5f60a98-5be9-42fa-93a4-87eda920d4e1",
       "fa336a90-0ab7-4d55-8170-7bfe61c3445d",
       "9a2f5a8c-bf4f-4f67-9ce6-910a8d50fb76",
@@ -706,25 +725,16 @@
       "972aa6c2-ef66-4b06-9f15-3fbe438d4dee",
       "4359ee24-895c-4b01-b9d5-7800908f480a",
       "b13ce4e6-227b-45a0-b108-4df67e1564d7",
+      "769721c2-c194-4fad-aa4d-c8ade5cfc77c",
       "02e70223-e959-4bae-8fa1-52435e61a106",
       "42760ddd-5820-46ba-8217-d1fdf47fba7f",
       "7feefa37-c59d-4050-b383-008e7ce8bce7",
       "5cc5f2f9-7724-4d6c-b073-906647555ca5"
      ]
     },
-    "28a03356-cdc8-4df6-b42f-40ca8a63201e": {
-     "title": "Batteritid",
-     "id": "28a03356-cdc8-4df6-b42f-40ca8a63201e",
-     "references": [
-      "9a2f5a8c-bf4f-4f67-9ce6-910a8d50fb76",
-      "972aa6c2-ef66-4b06-9f15-3fbe438d4dee",
-      "42760ddd-5820-46ba-8217-d1fdf47fba7f",
-      "5cc5f2f9-7724-4d6c-b073-906647555ca5"
-     ]
-    },
-    "f52147ea-b928-44bc-aca1-1f9eab90db97": {
+    "70d9ac4c-a476-4ed0-97f9-9728c49feea3": {
      "title": "Komfort og pasform",
-     "id": "f52147ea-b928-44bc-aca1-1f9eab90db97",
+     "id": "70d9ac4c-a476-4ed0-97f9-9728c49feea3",
      "references": [
       "d2af8c2e-b313-4bbc-8bd9-ebc00b2f862b",
       "972aa6c2-ef66-4b06-9f15-3fbe438d4dee",
@@ -732,20 +742,30 @@
       "5cc5f2f9-7724-4d6c-b073-906647555ca5"
      ]
     },
-    "79dc61ed-3ddf-4125-8135-5bb237fe31f2": {
+    "5b8ac05b-f1cc-4082-92ce-e2e78baac0ca": {
      "title": "App",
-     "id": "79dc61ed-3ddf-4125-8135-5bb237fe31f2",
+     "id": "5b8ac05b-f1cc-4082-92ce-e2e78baac0ca",
      "references": [
       "9a2f5a8c-bf4f-4f67-9ce6-910a8d50fb76",
       "7feefa37-c59d-4050-b383-008e7ce8bce7",
       "50371078-018e-41df-88c5-f5e21205e3ce"
      ]
     },
-    "f0404432-98ed-4f81-8fa5-176d91980798": {
+    "799bc7c4-2f48-4ec7-ab57-174acc6b90bf": {
+     "title": "Batteritid og udskiftelighed",
+     "id": "799bc7c4-2f48-4ec7-ab57-174acc6b90bf",
+     "references": [
+      "9a2f5a8c-bf4f-4f67-9ce6-910a8d50fb76",
+      "972aa6c2-ef66-4b06-9f15-3fbe438d4dee",
+      "42760ddd-5820-46ba-8217-d1fdf47fba7f"
+     ]
+    },
+    "fe83b565-6e9f-4f55-9539-f1c1d409a451": {
      "title": "Støjreduktion",
-     "id": "f0404432-98ed-4f81-8fa5-176d91980798",
+     "id": "fe83b565-6e9f-4f55-9539-f1c1d409a451",
      "references": [
       "f5f60a98-5be9-42fa-93a4-87eda920d4e1",
+      "29361a78-2acd-44cc-bf84-820f3515b7f3",
       "5cc5f2f9-7724-4d6c-b073-906647555ca5"
      ]
     }

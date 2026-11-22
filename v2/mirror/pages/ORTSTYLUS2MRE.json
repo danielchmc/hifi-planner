@@ -13,6 +13,16 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "5,5",
+   "Fra beskrivelsen": "OBS: HiFi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "f8f0119d-4beb-4d67-865a-ff711577997d"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 194,
   "skuCode": "ORTSTYLUS2MRE",
@@ -149,8 +159,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 15,
-     "availableQuantity": 37,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 32,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -193,52 +203,51 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS2MRE roses bredt som en stylus af høj kvalitet med en varm lyd, der giver en pladespiller en ny, punchy og omsluttende lyd. Stylussen giver fremragende værdi som en prisvenlig erstatning og er nem at installere. God service og enkel udskiftning gør produktet til et særligt attraktivt alternativ til at skifte hele pickup'en.",
+   "summary": "ORTSTYLUS2MRE leverer en varm, fyldig og medrivende lyd med fremragende ydeevne i hverdagen. Erstatningsnålen giver rigtig god værdi for pengene, leveres hurtigt og er imponerende nem at montere. Venlig service og praktisk hjælp ved udskiftning gør opgraderingen ekstra tilfredsstillende.",
    "headlines": {
-    "easy installation and replacement": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den hurtige, enkle udskiftning og nemme installation derhjemme.",
-     "simpleTitle": "Nem installation og udskiftning",
+    "excellent value for money": {
+     "sentimentAnalysis": "Erstatningsnålen anses konsekvent for billig eller rimeligt prissat, samtidig med at den leverer den forventede ydeevne og kvalitet.",
+     "simpleTitle": "Fremragende værdi for pengene",
+     "bias": "positive",
+     "key": "value-price",
+     "groupId": "03c71c40-8af0-419f-b4ac-3ad0b2944ca7"
+    },
+    "easy to install and replace": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver hurtig udskiftning, enkel montering ved at skubbe nålen på plads og muligheden for nemt at gøre det hjemme.",
+     "simpleTitle": "Nem at montere og udskifte",
      "bias": "positive",
      "key": "installation-replacement",
-     "groupId": "c7bf7697-ab98-436d-95e7-fcdea244e592"
-    },
-    "excellent value replacement": {
-     "sentimentAnalysis": "Erstatningsstylussen anses for at have høj kvalitet og en rimelig pris.",
-     "simpleTitle": "Fremragende værdi som erstatning",
-     "bias": "positive",
-     "key": "value-quality",
-     "groupId": "6795b6e9-9427-4bf9-8975-4674fc924c54"
-    },
-    "helpful service": {
-     "sentimentAnalysis": "Servicen får gennemgående begejstret ros.",
-     "simpleTitle": "God service",
-     "bias": "positive",
-     "key": "service",
-     "groupId": "cba2fa12-6605-490e-91cb-e61f2293bb52"
+     "groupId": "47a6cd1e-603e-4e31-836b-84ce913372ff"
     },
     "warm, high-quality sound": {
-     "sentimentAnalysis": "Stylussen roses for at levere en meget god og varm lyd.",
+     "sentimentAnalysis": "Nålen roses for klar, meget god og især varm lyd; en anmeldelse beskriver endda forbedringen som sammenlignelig med et nyt anlæg.",
      "simpleTitle": "Varm lyd i høj kvalitet",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "e6143759-d8a3-4d0a-97b0-d19017f78d49"
+     "groupId": "87dd357e-41f3-4310-9b08-40dbe3b2263c"
+    },
+    "excellent, friendly service": {
+     "sentimentAnalysis": "Kundeservicen får entydigt positiv feedback og roses gentagne gange for fremragende service og praktisk hjælp.",
+     "simpleTitle": "Fremragende og venlig service",
+     "bias": "positive",
+     "key": "customer-service",
+     "groupId": "dc3c27c9-031b-4046-8c08-42e7e65edbfd"
     }
    },
    "grouping": {
-    "6795b6e9-9427-4bf9-8975-4674fc924c54": {
-     "title": "Værdi og kvalitet",
-     "id": "6795b6e9-9427-4bf9-8975-4674fc924c54",
+    "03c71c40-8af0-419f-b4ac-3ad0b2944ca7": {
+     "title": "Pris og værdi",
+     "id": "03c71c40-8af0-419f-b4ac-3ad0b2944ca7",
      "references": [
-      "b5e06745-66ae-4d18-8c27-e6de45499dc9",
       "89694975-8b46-4d07-ac97-e18fea8164d6",
-      "fb5d9d33-5f02-4b74-8deb-85228501b5ef",
       "2779d753-2c31-466e-87bb-b2bb771eb322",
-      "1add179c-1578-4e00-b44f-84f16adbe30a"
+      "1add179c-1578-4e00-b44f-84f16adbe30a",
+      "df207326-e796-42ae-974e-98d60f7756b5"
      ]
     },
-    "c7bf7697-ab98-436d-95e7-fcdea244e592": {
-     "title": "Installation og udskiftning",
-     "id": "c7bf7697-ab98-436d-95e7-fcdea244e592",
+    "47a6cd1e-603e-4e31-836b-84ce913372ff": {
+     "title": "Montering og udskiftning",
+     "id": "47a6cd1e-603e-4e31-836b-84ce913372ff",
      "references": [
       "6bd5b58e-30df-4f6d-aeac-10354632be5c",
       "88da7815-548a-4115-94c3-6d2ad05e33d0",
@@ -246,18 +255,18 @@
       "c4e0bf53-2718-45d8-aeac-30ea9a5d14a0"
      ]
     },
-    "e6143759-d8a3-4d0a-97b0-d19017f78d49": {
+    "87dd357e-41f3-4310-9b08-40dbe3b2263c": {
      "title": "Lydkvalitet",
-     "id": "e6143759-d8a3-4d0a-97b0-d19017f78d49",
+     "id": "87dd357e-41f3-4310-9b08-40dbe3b2263c",
      "references": [
       "e76edcdc-c839-48e1-a876-65b72de17ee5",
       "324b3634-b27c-4375-8726-48b40a207b23",
       "a0c98e60-86e1-4928-9013-b4cb6ad0e82e"
      ]
     },
-    "cba2fa12-6605-490e-91cb-e61f2293bb52": {
-     "title": "Service",
-     "id": "cba2fa12-6605-490e-91cb-e61f2293bb52",
+    "dc3c27c9-031b-4046-8c08-42e7e65edbfd": {
+     "title": "Kundeservice",
+     "id": "dc3c27c9-031b-4046-8c08-42e7e65edbfd",
      "references": [
       "e81ef4a4-06fd-467d-b9cc-86e83c05fc54",
       "f889b62a-2e64-4388-b868-0baca76c10e0",
@@ -265,15 +274,15 @@
      ]
     }
    },
-   "rating": 4.86666666666667,
-   "count": 45,
+   "rating": 4.8695652173913,
+   "count": 46,
    "reviewCount": 19,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 0,
     "4": 3,
-    "5": 41
+    "5": 42
    }
   },
   "brandName": "Ortofon",

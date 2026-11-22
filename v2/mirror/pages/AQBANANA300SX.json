@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "2c37735c-10df-4305-9030-ea1985ad10dd"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 54423,
   "skuCode": "AQBANANA300SX",
@@ -119,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 224,
+     "availableQuantity": 384,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -139,41 +146,48 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "AQ Banana 300 Series-stikkene får stor ros for solid byggekvalitet, pålidelige forbindelser og enkel montering. Sølvbelægningen fremhæves for god ledeevne samt en varm, livlig og mere omsluttende gengivelse med opgraderede kabler. Den rimelige pris og den hjælpsomme udskiftningsservice øger den praktiske værdi, mens den medfølgende L-formede unbrakonøgle er det eneste nævneværdige irritationsmoment.",
+   "summary": "AQBANANA300SX-stik giver en varm, kontant og medrivende opgradering gennem solid konstruktion og pålidelige forbindelser. Sølvbelagte kontakter sikrer en klar og energisk signaloverførsel, mens monteringen generelt er enkel og brugervenlig. Den fremragende værdi for pengene og det praktiske design gør disse bananstik til et stærkt anbefalet valg til højttalersystemer.",
    "headlines": {
     "solid, high-quality construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent stikkene som meget gode, solide, stabile og velbyggede.",
+     "sentimentAnalysis": "Stikkene beskrives gentagne gange som stabile, solide, vellavede og af høj kvalitet.",
      "simpleTitle": "Solid konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "build-quality",
-     "groupId": "e679b73f-b118-49a0-ac23-da519c4b4c80"
+     "groupId": "ff3a9d18-5935-4e57-bf63-b96ff6002b99"
     },
-    "reliable, conductive connections": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver god ledeevne, sikkert greb og en pålidelig forbindelse til anlægget.",
-     "simpleTitle": "Pålidelige forbindelser med god ledeevne",
+    "easy, user-friendly installation": {
+     "sentimentAnalysis": "Flere anmeldelser roser den ligetil, enkle og brugervenlige monteringsproces.",
+     "simpleTitle": "Enkel og brugervenlig montering",
      "bias": "positive",
-     "key": "connection",
-     "groupId": "dbbdc2d9-8eab-4d02-a2f5-50d077412995"
+     "key": "easy-installation",
+     "groupId": "794cdbe0-0904-43ce-b658-a33ff163c3f9"
     },
-    "easy to install": {
-     "sentimentAnalysis": "Flere anmeldelser roser den ligetil montering og enkle håndtering.",
-     "simpleTitle": "Nem at montere",
+    "reliable, effective connections": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver god ledningsevne, at stikkene fungerer som tiltænkt, og en fast forbindelse til lydudstyr.",
+     "simpleTitle": "Pålidelige og effektive forbindelser",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "b6f76041-dc22-49dd-aea3-50ca62aaa3eb"
+     "key": "reliable-connections",
+     "groupId": "19f58958-82ef-4b77-b79b-173b08fb00c5"
     },
-    "more lively and immersive sound": {
-     "sentimentAnalysis": "To anmeldelser forbinder stikkene og de opgraderede kabler med en tydeligt forbedret og mere livlig stereogengivelse.",
-     "simpleTitle": "Mere livlig og omsluttende lyd",
+    "silver plating improves sound and conductivity": {
+     "sentimentAnalysis": "Sølvbelagte stik får æren for at give et mere levende stereobillede, bedre ledningsevne end guld og mindre lydforringelse end andre stiktyper.",
+     "simpleTitle": "Sølvbelægning forbedrer lyd og ledningsevne",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "5bde519c-7fa4-4c16-9284-6a396319308c"
+     "key": "silver-performance",
+     "groupId": "19f58958-82ef-4b77-b79b-173b08fb00c5"
+    },
+    "the L-shaped Allen key limits handling comfort": {
+     "sentimentAnalysis": "En anmeldelse kritiserer det L-formede værktøj, mens en anden rapporterer om en defekt skrueforbindelse, der måtte udskiftes. Den generelt enkle montering har derfor enkelte mindre svagheder.",
+     "simpleTitle": "Den L-formede unbrakonøgle gør håndteringen vanskeligere",
+     "bias": "negative",
+     "key": "tool-design",
+     "groupId": "794cdbe0-0904-43ce-b658-a33ff163c3f9"
     }
    },
    "grouping": {
-    "e679b73f-b118-49a0-ac23-da519c4b4c80": {
+    "ff3a9d18-5935-4e57-bf63-b96ff6002b99": {
      "title": "Byggekvalitet",
-     "id": "e679b73f-b118-49a0-ac23-da519c4b4c80",
+     "id": "ff3a9d18-5935-4e57-bf63-b96ff6002b99",
      "references": [
       "fdab5fd5-dae0-4451-b375-119f56b50c5c",
       "22c53652-48d5-4765-9f8f-88efa1ffc74c",
@@ -182,33 +196,27 @@
       "abd44ea5-8a59-4116-b287-7cb582400cfd",
       "d1c0f9e2-e64b-4ca7-88bb-4f87cdca7a6a",
       "e5e16702-5525-423e-8afb-a970e4140ec1",
-      "85d5fa5c-8f1b-41eb-88b1-738914c9483a"
-     ]
-    },
-    "b6f76041-dc22-49dd-aea3-50ca62aaa3eb": {
-     "title": "Montering",
-     "id": "b6f76041-dc22-49dd-aea3-50ca62aaa3eb",
-     "references": [
-      "59b0334c-9ee0-4371-a4d3-1ed176d8b1b0",
-      "d1c0f9e2-e64b-4ca7-88bb-4f87cdca7a6a",
+      "85d5fa5c-8f1b-41eb-88b1-738914c9483a",
       "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
      ]
     },
-    "dbbdc2d9-8eab-4d02-a2f5-50d077412995": {
-     "title": "Forbindelseskvalitet",
-     "id": "dbbdc2d9-8eab-4d02-a2f5-50d077412995",
+    "19f58958-82ef-4b77-b79b-173b08fb00c5": {
+     "title": "Forbindelsesydelse",
+     "id": "19f58958-82ef-4b77-b79b-173b08fb00c5",
      "references": [
       "fdab5fd5-dae0-4451-b375-119f56b50c5c",
+      "583696ed-2c52-4b8d-8f93-223f77f1aadf",
       "28870c2a-a8a4-4d40-8f6d-0c2f6af2be56",
       "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
      ]
     },
-    "5bde519c-7fa4-4c16-9284-6a396319308c": {
-     "title": "Lydkvalitet",
-     "id": "5bde519c-7fa4-4c16-9284-6a396319308c",
+    "794cdbe0-0904-43ce-b658-a33ff163c3f9": {
+     "title": "Montering",
+     "id": "794cdbe0-0904-43ce-b658-a33ff163c3f9",
      "references": [
-      "583696ed-2c52-4b8d-8f93-223f77f1aadf",
-      "28870c2a-a8a4-4d40-8f6d-0c2f6af2be56"
+      "59b0334c-9ee0-4371-a4d3-1ed176d8b1b0",
+      "d1c0f9e2-e64b-4ca7-88bb-4f87cdca7a6a",
+      "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
      ]
     }
    },

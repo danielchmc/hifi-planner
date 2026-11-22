@@ -13,6 +13,30 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Ja",
+   "HDMI indgange": "1",
+   "HDMI udgange": "0",
+   "Bluetooth": "Ja",
+   "Bluetooth version": "5.4",
+   "Lydudgang": "Subwoofer-out, Hovedtelefon",
+   "Lydindgang": "HDMI, Optisk, Analog RCA",
+   "Udgang (andet)": "12V trigger",
+   "Indgang (andet)": "Ethernet, IR, USB A",
+   "Trådløs overførsel": "Bluetooth-indgang",
+   "Udgangseffekt 4 ohm": "2 x 50 watt",
+   "Udgangseffekt 8 ohm": "2 x 50 watt",
+   "Fra beskrivelsen": "Understøtter op til 24-bit/192kHz via optisk indgang"
+  },
+  "gallery": [
+   "2dca60c8-42ca-45b7-833f-e9ca9f4bb1e6",
+   "55c41f7f-95de-40b4-860b-886d5938046b",
+   "08aeff01-7bd1-4441-ba28-dd1e87f207aa",
+   "1051b3e9-adcf-455a-8ac5-08ea3db58996"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 275088,
   "skuCode": "NADC3030",
@@ -267,7 +291,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 128,
+     "availableQuantity": 122,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -323,41 +347,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD C 3030 roses bredt for sin varme, klare, detaljerede og velkontrollerede lyd samt en overraskende kraftfuld ydelse i forhold til den opgivne effekt. Retrodesignet, VU-metrene og den pålidelige HDMI-integration til TV bidrager til den store appel, mens det begrænsede antal indgange er den primære kritik. Samlet set leverer forstærkeren en usædvanligt musikalsk og afbalanceret oplevelse til en attraktiv pris.",
+   "summary": "NAD C3030 leverer en varm, klar, detaljeret og velkontrolleret lyd med imponerende kræfter, som gør musik, tv og fysiske medier meget engagerende. Retrodesignet, VU-metrene samt de praktiske HDMI-, Bluetooth- og optiske tilslutninger er stærke fordele, mens det begrænsede antal indgange kan genere brugere med større anlæg. Det fremragende forhold mellem pris og kvalitet samt den alsidige funktionalitet gør forstærkeren særdeles anbefalelsesværdig.",
    "headlines": {
-    "warm, clear and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, varm, åben og detaljeret gengivelse med kontrolleret bas og stærk musikalitet.",
-     "simpleTitle": "Varm, klar og detaljeret lyd",
+    "warm, clear and highly detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, varme, åbne, kontrollerede og detaljerede gengivelse til musik og tv.",
+     "simpleTitle": "Varm, klar og meget detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "ebea8764-cf2b-4790-adfd-244d0351d0ee"
+     "groupId": "a9e2f8cd-2913-4d70-a444-4b80724d0df2"
     },
-    "surprisingly powerful performance": {
-     "sentimentAnalysis": "Flere anmeldelser oplever forstærkeren som kraftigere end specifikationerne antyder, samtidig med at gengivelsen forbliver ren og blød.",
-     "simpleTitle": "Overraskende kraftfuld ydelse",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "ebea8764-cf2b-4790-adfd-244d0351d0ee"
-    },
-    "retro design and appealing VU meters": {
-     "sentimentAnalysis": "Retrolooket vurderes gentagne gange som attraktivt, og VU-metrene tilfører et særligt nostalgisk og karakteristisk præg.",
-     "simpleTitle": "Retrodesign og flotte VU-metre",
+    "retro styling and VU meters stand out": {
+     "sentimentAnalysis": "Retrolooket og de nostalgiske VU-metre beskrives gentagne gange som flotte og markante.",
+     "simpleTitle": "Retrodesign og VU-metre skiller sig ud",
      "bias": "positive",
      "key": "design",
-     "groupId": "5d81985b-8b42-4e1c-a3bd-e8d14510474d"
+     "groupId": "9d6a8ac6-f35a-46c2-ae30-3547dcb4785d"
     },
-    "limited number of inputs": {
-     "sentimentAnalysis": "De enkle tilslutningsmuligheder passer til basale systemer, men to anmeldelser fremhæver specifikt det begrænsede antal indgange som en ulempe.",
-     "simpleTitle": "Begrænset antal indgange",
+    "useful HDMI, optical and Bluetooth connections": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver nem integration med tv samt praktisk understøttelse af optiske, HDMI-, Bluetooth- og fysiske kilder.",
+     "simpleTitle": "Praktiske HDMI-, optiske og Bluetooth-tilslutninger",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "51234e9a-c9bc-4bea-a40a-4fc294d5fcc7"
+    },
+    "more powerful than the rating suggests": {
+     "sentimentAnalysis": "Forstærkeren opleves gentagne gange som kraftfuld, ren og stærkere end den angivne effekt antyder.",
+     "simpleTitle": "Kraftigere end specifikationerne antyder",
+     "bias": "positive",
+     "key": "power",
+     "groupId": "49466236-9361-4755-a917-1af83232c9fe"
+    },
+    "bluetooth streaming can sound compressed": {
+     "sentimentAnalysis": "Bluetooth er praktisk, men streamingkvaliteten kan lejlighedsvis lyde klemt eller komprimeret.",
+     "simpleTitle": "Bluetooth-streaming kan lyde klemt",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "a9e2f8cd-2913-4d70-a444-4b80724d0df2"
+    },
+    "input selection is limited": {
+     "sentimentAnalysis": "To anmeldelser peger på det begrænsede antal analoge og digitale indgange som en ulempe i større anlæg.",
+     "simpleTitle": "Begrænset udvalg af indgange",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "da9dc570-e0aa-4d25-b713-b8405b718ee0"
+     "groupId": "51234e9a-c9bc-4bea-a40a-4fc294d5fcc7"
     }
    },
    "grouping": {
-    "ebea8764-cf2b-4790-adfd-244d0351d0ee": {
+    "a9e2f8cd-2913-4d70-a444-4b80724d0df2": {
      "title": "Lydkvalitet",
-     "id": "ebea8764-cf2b-4790-adfd-244d0351d0ee",
+     "id": "a9e2f8cd-2913-4d70-a444-4b80724d0df2",
      "references": [
       "ec87ac26-670b-4efb-b1f0-f8cacd5ef2f4",
       "130bccb3-beae-4840-b256-57f2b2907a3a",
@@ -372,27 +410,36 @@
       "ac7488ec-b212-43b7-992d-6770a3b7df74"
      ]
     },
-    "5d81985b-8b42-4e1c-a3bd-e8d14510474d": {
+    "9d6a8ac6-f35a-46c2-ae30-3547dcb4785d": {
      "title": "Design",
-     "id": "5d81985b-8b42-4e1c-a3bd-e8d14510474d",
+     "id": "9d6a8ac6-f35a-46c2-ae30-3547dcb4785d",
      "references": [
       "6dbfb762-1e1d-4489-93f8-4f9a5cc5027b",
       "5356aa11-8421-4ef0-a636-2793cb54f957",
-      "be0eace8-97a7-4f88-ac14-3be3cf9de34c",
-      "0bd0ca95-aae8-411b-835a-136048ac507b",
       "c2961337-3290-4b87-95d1-e70f0e719c09",
+      "0bd0ca95-aae8-411b-835a-136048ac507b",
       "f24862fa-3759-45b6-aa87-4d0a00448b52",
       "ac7488ec-b212-43b7-992d-6770a3b7df74"
      ]
     },
-    "da9dc570-e0aa-4d25-b713-b8405b718ee0": {
-     "title": "Tilslutningsmuligheder",
-     "id": "da9dc570-e0aa-4d25-b713-b8405b718ee0",
+    "51234e9a-c9bc-4bea-a40a-4fc294d5fcc7": {
+     "title": "Tilslutninger",
+     "id": "51234e9a-c9bc-4bea-a40a-4fc294d5fcc7",
      "references": [
       "130bccb3-beae-4840-b256-57f2b2907a3a",
       "be0eace8-97a7-4f88-ac14-3be3cf9de34c",
       "c2961337-3290-4b87-95d1-e70f0e719c09",
       "9c540271-436d-4f2e-9078-6cfd75526724",
+      "f24862fa-3759-45b6-aa87-4d0a00448b52",
+      "ac7488ec-b212-43b7-992d-6770a3b7df74"
+     ]
+    },
+    "49466236-9361-4755-a917-1af83232c9fe": {
+     "title": "Effekt",
+     "id": "49466236-9361-4755-a917-1af83232c9fe",
+     "references": [
+      "130bccb3-beae-4840-b256-57f2b2907a3a",
+      "f2bad74b-ff6a-4775-9a18-e39c5d2bf465",
       "f24862fa-3759-45b6-aa87-4d0a00448b52",
       "ac7488ec-b212-43b7-992d-6770a3b7df74"
      ]

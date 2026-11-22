@@ -13,6 +13,16 @@
    "url": "/kabler/hdmi-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI Speed": "Ultra High Speed",
+   "Fra beskrivelsen": "Ultra High Speed (HDMI 2.1, 8K/60, 4K/120, 48Gbps, eARC) · Understøtter Ethernet · OBS: HiFi Klubben kan levere hele sortimentet af AudioQuest HDMI-kabler. Hvis du har behov for meget lange kabeltræk, anbefaler vi dig at kontakte din butik for nærmere rådgivning."
+  },
+  "gallery": [
+   "68b38437-e21c-4eec-ba83-49ee3b9a7f14"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 144560,
   "skuCode": "AQFOREST48HDMI",
@@ -323,7 +333,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 33,
+     "availableQuantity": 93,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -578,41 +588,55 @@
   "bundleRelations": [],
   "variantNavigationType": "sizeSelector",
   "reviews": {
-   "summary": "AQFOREST48HDMI betragtes generelt som et vellavet og pålideligt HDMI-kabel, der giver stabil plug-and-play-forbindelse og i mange opsætninger skarpere billede samt mere detaljeret og kontant lyd. Flere anmeldelser fremhæver den varme, omsluttende lydforbedring og den fremragende signaloverførsel, mens en mindre, men tydelig gruppe ikke hører nogen væsentlig forskel fra billigere kabler. De største forbehold er den høje pris og den stive konstruktion, som kan gøre kabelføring vanskelig.",
+   "summary": "AQFOREST48HDMI får stor ros som et velbygget og pålideligt kabel, der leverer et rent, skarpt billede og en varm, detaljeret lyd samt god understøttelse af moderne TV-, gaming- og surroundopsætninger. Plug-and-play-funktionen, den stabile signaloverførsel og den førsteklasses konstruktion gør installationen nem og ydelsen overbevisende. De største forbehold er den høje pris, stivheden og at de oplevede forbedringer afhænger af udstyret og forventningerne.",
    "headlines": {
     "sharper picture and richer sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver synligt skarpere billeder, renere farver, flere detaljer og forbedret lyd, især tydeligere tale, sammenlignet med standardkabler.",
+     "sentimentAnalysis": "Mange anmeldelser beskriver synligt skarpere og renere billeder samt mere detaljeret, fyldig eller tydelig lyd end med standardkabler.",
      "simpleTitle": "Skarpere billede og fyldigere lyd",
      "bias": "positive",
      "key": "picture_sound",
-     "groupId": "ade18555-3626-432e-b645-c80badaa5a54"
+     "groupId": "320e84e0-05bd-431f-8739-797bdaf3705a"
     },
-    "stable plug-and-play signal": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som nemt at installere, pålideligt, kompatibelt med ARC/eARC og i stand til at overføre billede og lyd uden udfald.",
-     "simpleTitle": "Stabilt plug-and-play-signal",
-     "bias": "positive",
-     "key": "connectivity",
-     "groupId": "e6af4f96-4fc2-40ca-93c6-1476767b1d22"
-    },
-    "premium construction feels expensive": {
-     "sentimentAnalysis": "Kablet virker robust og eksklusivt, men flere anmeldelser finder prisen for høj, især når der ikke opleves en hørbar eller synlig fordel i forhold til billigere kabler.",
-     "simpleTitle": "Solid konstruktion til høj pris",
+    "expensive for the benefit delivered": {
+     "sentimentAnalysis": "Flere anmeldelser mener, at kablet er overpriset, især når der ikke opleves nogen synlig eller hørbar forbedring i forhold til billigere alternativer.",
+     "simpleTitle": "Dyr i forhold til udbyttet",
      "bias": "negative",
-     "key": "build_value",
-     "groupId": "f091ff72-3d01-452a-99db-61e1abe0f574"
+     "key": "price_value",
+     "groupId": "a499ddc1-078b-4d20-a9d8-e9037daec77f"
     },
-    "no noticeable improvement over cheaper cables": {
-     "sentimentAnalysis": "Nogle anmeldere hører eller ser ingen væsentlig forbedring i forhold til eksisterende eller billigere HDMI-kabler og mener, at digital signalkvalitet primært afhænger af fejlfri overførsel og båndbredde.",
-     "simpleTitle": "Ingen mærkbar forbedring i forhold til billigere kabler",
+    "reliable plug-and-play performance": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som nemt at tilslutte og pålideligt i TV- og surroundsystemer med stabil overførsel af billede og lyd.",
+     "simpleTitle": "Pålidelig plug-and-play-funktion",
+     "bias": "positive",
+     "key": "compatibility",
+     "groupId": "b07b05de-5812-40d5-a4b5-0c9d402f50a9"
+    },
+    "no audible or visible improvement for everyone": {
+     "sentimentAnalysis": "Flere anmeldelser rapporterer ingen mærkbar forskel, især ved sammenligning med et godt kabel eller udstyr, der begrænser effekten.",
+     "simpleTitle": "Ikke en hørbar eller synlig forbedring for alle",
      "bias": "negative",
      "key": "picture_sound",
-     "groupId": "ade18555-3626-432e-b645-c80badaa5a54"
+     "groupId": "320e84e0-05bd-431f-8739-797bdaf3705a"
+    },
+    "premium, attractive construction": {
+     "sentimentAnalysis": "Anmeldelserne roser gentagne gange det flotte udseende, de robuste materialer og den gennemførte finish.",
+     "simpleTitle": "Førsteklasses og flot konstruktion",
+     "bias": "positive",
+     "key": "build_design",
+     "groupId": "2a761cc3-8720-4fbe-83a2-e2397719de63"
+    },
+    "stiff and difficult to route": {
+     "sentimentAnalysis": "Den kraftige konstruktion kritiseres i flere anmeldelser for at gøre kablet stift og svært at skjule eller føre.",
+     "simpleTitle": "Stift og svært at føre",
+     "bias": "negative",
+     "key": "build_design",
+     "groupId": "2a761cc3-8720-4fbe-83a2-e2397719de63"
     }
    },
    "grouping": {
-    "ade18555-3626-432e-b645-c80badaa5a54": {
+    "320e84e0-05bd-431f-8739-797bdaf3705a": {
      "title": "Billed- og lydkvalitet",
-     "id": "ade18555-3626-432e-b645-c80badaa5a54",
+     "id": "320e84e0-05bd-431f-8739-797bdaf3705a",
      "references": [
       "aadd90ca-1b29-47a2-8842-34410593acef",
       "43494857-6203-4c15-a5ac-227864f97a40",
@@ -631,69 +655,75 @@
       "186d6c21-67fd-482b-8d04-b42524d6e1a4",
       "12b5aadd-991e-4fe5-84e4-a2cfda2fc760",
       "4543bd1b-c86e-49e3-8dd7-b63cb0bbaf60",
-      "ac1a5dfd-33db-42e9-bbc1-a82117375389",
       "af57255e-c8fd-4564-a67a-e86f7d07fbb3",
+      "ac1a5dfd-33db-42e9-bbc1-a82117375389",
       "c0cd553f-5352-47a1-bb23-69f01a86a248",
       "41a2044c-f1d5-4fcd-8a79-788d972022c1",
-      "39276a35-410e-4656-826d-37fde9071874",
       "3d7f7e7f-bfda-4454-8ecd-50b1ac17fa04",
-      "8f996e59-f43a-4567-a080-1b361ca61e7c",
       "1cd0d56b-403e-47ae-b402-a8396173d83d",
       "61165af8-fd61-4157-9851-d54372da3294",
       "986c7378-83f6-4217-99b3-98b48a2320e8",
       "1b9b09dc-de73-4c93-b35a-44f416bb8ef8"
      ]
     },
-    "e6af4f96-4fc2-40ca-93c6-1476767b1d22": {
-     "title": "Forbindelse og kompatibilitet",
-     "id": "e6af4f96-4fc2-40ca-93c6-1476767b1d22",
+    "b07b05de-5812-40d5-a4b5-0c9d402f50a9": {
+     "title": "Kompatibilitet og signaloverførsel",
+     "id": "b07b05de-5812-40d5-a4b5-0c9d402f50a9",
      "references": [
       "eddd4d88-f8c7-4d01-9811-a5c45b1749d2",
       "d7d20b22-7cb5-4852-9fab-437a6627f1db",
       "8b9fbf8a-054e-49bf-8fe2-1c732a8abac0",
-      "7d64792c-f2e6-4b34-8a74-3c8604ced059",
-      "73fe60bc-471d-4bb4-aae5-0aba63d22d73",
       "d09da4c2-4846-4e61-96dd-7da4a829f808",
       "c84e7702-1d69-41a4-bc6f-689fca2c7fc6",
       "12b5aadd-991e-4fe5-84e4-a2cfda2fc760",
+      "44bceeab-6736-4c69-81c3-b62fcee5a034",
       "c0cd553f-5352-47a1-bb23-69f01a86a248",
-      "a48dba53-3a12-41ad-be87-64c25643e7c1",
-      "8f996e59-f43a-4567-a080-1b361ca61e7c",
+      "41a2044c-f1d5-4fcd-8a79-788d972022c1",
+      "3d7f7e7f-bfda-4454-8ecd-50b1ac17fa04",
       "ce3273dd-b485-4053-9fde-8b53f15b4254",
       "ab4a9972-4386-47ca-b96d-1233eaf71e9f",
-      "1b9b09dc-de73-4c93-b35a-44f416bb8ef8",
-      "a5f94034-f10f-4aec-895d-da4d48cce539",
-      "727e43f4-016d-46d3-948b-68af8a7485c5"
+      "1b9b09dc-de73-4c93-b35a-44f416bb8ef8"
      ]
     },
-    "f091ff72-3d01-452a-99db-61e1abe0f574": {
-     "title": "Byggekvalitet og værdi",
-     "id": "f091ff72-3d01-452a-99db-61e1abe0f574",
+    "a499ddc1-078b-4d20-a9d8-e9037daec77f": {
+     "title": "Pris og værdi",
+     "id": "a499ddc1-078b-4d20-a9d8-e9037daec77f",
+     "references": [
+      "7b448be4-aaeb-4117-a066-1518fd547849",
+      "976bbd87-f0e5-4543-81fd-d18d932620da",
+      "2bc33a52-9e3e-4a53-9064-53dbeea12eb4",
+      "c84e7702-1d69-41a4-bc6f-689fca2c7fc6",
+      "35b7560d-b040-4e1d-a9cb-53e4ca1006c5",
+      "ac1a5dfd-33db-42e9-bbc1-a82117375389",
+      "fde3c0ad-2da0-4881-b577-f1b78e6b908a",
+      "986c7378-83f6-4217-99b3-98b48a2320e8",
+      "1b9b09dc-de73-4c93-b35a-44f416bb8ef8"
+     ]
+    },
+    "2a761cc3-8720-4fbe-83a2-e2397719de63": {
+     "title": "Byggekvalitet og design",
+     "id": "2a761cc3-8720-4fbe-83a2-e2397719de63",
      "references": [
       "aadd90ca-1b29-47a2-8842-34410593acef",
       "70ab3002-6719-4eb1-b375-6abb8f60d5cf",
       "2bc33a52-9e3e-4a53-9064-53dbeea12eb4",
       "c84e7702-1d69-41a4-bc6f-689fca2c7fc6",
       "b04dcadd-501e-481c-ae0c-4aa14f0a0206",
-      "b44926d8-fa99-4f30-9ad8-72d9635ad045",
-      "35b7560d-b040-4e1d-a9cb-53e4ca1006c5",
-      "ac1a5dfd-33db-42e9-bbc1-a82117375389",
-      "fde3c0ad-2da0-4881-b577-f1b78e6b908a",
+      "b44906d8-fa99-4f30-9ad8-72d9635ad045",
       "bf22747c-5c91-4e90-8a6b-bba2da40f516",
-      "986c7378-83f6-4217-99b3-98b48a2320e8",
       "1b9b09dc-de73-4c93-b35a-44f416bb8ef8"
      ]
     }
    },
-   "rating": 4.75242718446602,
-   "count": 206,
-   "reviewCount": 79,
+   "rating": 4.7536231884058,
+   "count": 207,
+   "reviewCount": 80,
    "distribution": {
     "1": 0,
     "2": 2,
     "3": 5,
     "4": 35,
-    "5": 164
+    "5": 165
    }
   },
   "brandName": "AudioQuest",

@@ -13,6 +13,21 @@
    "url": "/stereo/cd-afspiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Analog RCA, Analog XLR",
+   "Fra beskrivelsen": "Audio-out: L/R XLR, L/R RCA, BNC (true 75 ohm)"
+  },
+  "gallery": [
+   "2f0af29d-bf8d-4caa-a2f9-a1f18ca1e6e3",
+   "d49eb6ea-29f0-4f95-a4ae-9eec7fd3db12",
+   "a83550f1-1b45-46bb-8c31-b62dc3a35908",
+   "e7f374c1-eb66-46ee-b02f-f67816488b28",
+   "90b7d8cd-60ce-4da1-9af9-5662123d6813",
+   "1eb70f4c-5ae2-4c80-9f81-8c84819d4542"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 207037,
   "skuCode": "HEGELVIKING",
@@ -44,10 +59,10 @@
   "recommendedAlternatives": {
    "productCodes": [
     "LYNGCD2",
-    "MARASACD10",
     "DENDCD3000NE",
-    "MARASACD30N",
-    "MARACD50N"
+    "MARACD50N",
+    "MARASACD10",
+    "MARASACD30N"
    ],
    "isOutlet": "false"
   },
@@ -257,34 +272,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELVIKING roses bredt som en fremragende cd-afspiller med varm, detaljeret og meget musikalsk lyd. Gengivelsen er rummelig og transparent med god separation, artikuleret bas og en engagerende analoglignende klang. HEGELVIKING kan også give et markant løft til et eksisterende anlæg og betragtes af flere lyttere som deres bedste cd-afspiller hidtil.",
+   "summary": "HEGELVIKING roses bredt som en fremragende cd-afspiller med varm, detaljeret og meget musikalsk lyd. Et stort lydbillede, en artikuleret bas, høj transparens og en organisk, vinylagtig karakter gør gengivelsen medrivende og engagerende. Afspilleren fungerer overbevisende i forskellige anlæg og med forskellige forstærkere og giver markante forbedringer i detaljer, balance og samlet raffinement.",
    "headlines": {
-    "warm, detailed and analogue-like sound": {
-     "sentimentAnalysis": "Lytterne roser den varme, organiske og analoglignende karakter kombineret med et højt detaljeringsniveau.",
-     "simpleTitle": "Varm, detaljeret og analoglignende lyd",
+    "warm, organic and vinyl-like sound": {
+     "sentimentAnalysis": "Gengivelsen roses for at kombinere varme og musikalitet med en organisk, analogagtig karakter.",
+     "simpleTitle": "Varm, organisk og vinylagtig lyd",
      "bias": "positive",
-     "key": "warm-detailed-analogue-sound",
-     "groupId": "1631bb88-f99a-4a96-98e2-abe1ae7944e4"
+     "key": "warm-organic-sound",
+     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
     },
-    "spacious, transparent presentation": {
-     "sentimentAnalysis": "Lydscenen beskrives som bred, dyb og transparent med tydelig separation mellem musikere og instrumenter.",
-     "simpleTitle": "Rummelig, transparent gengivelse",
+    "wide, deep and highly detailed soundstage": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den rummelige gengivelse, den klare instrumentadskillelse, transparensen og de ekstra musikalske detaljer.",
+     "simpleTitle": "Bredt, dybt og meget detaljeret lydbillede",
      "bias": "positive",
-     "key": "spacious-transparent-presentation",
-     "groupId": "1631bb88-f99a-4a96-98e2-abe1ae7944e4"
+     "key": "soundstage-detail",
+     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
     },
-    "articulate bass and stronger overall definition": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver en letfølgbar basgang og en strammere gengivelse, der viser flere detaljer i hele frekvensområdet.",
-     "simpleTitle": "Artikuleret bas og bedre samlet definition",
+    "articulate and improved bass": {
+     "sentimentAnalysis": "Bassen beskrives som let at følge og mærkbart strammere og mere udviklet end med tidligere udstyr.",
+     "simpleTitle": "Artikuleret og forbedret bas",
      "bias": "positive",
-     "key": "articulate-bass-definition",
-     "groupId": "1631bb88-f99a-4a96-98e2-abe1ae7944e4"
+     "key": "bass-performance",
+     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
+    },
+    "excellent across different amplifiers and systems": {
+     "sentimentAnalysis": "Afspilleren beskrives som fremragende i mere end ét anlæg, selv om ét system muligvis vil have gavn af en bedre forstærker.",
+     "simpleTitle": "Fremragende med forskellige forstærkere og anlæg",
+     "bias": "positive",
+     "key": "amplifier-flexibility",
+     "groupId": "83a49fe0-d747-4717-adb3-3502b2bbdd55"
     }
    },
    "grouping": {
-    "1631bb88-f99a-4a96-98e2-abe1ae7944e4": {
+    "4989ee52-18db-45af-912f-edf1524e6fb5": {
      "title": "Lydkvalitet",
-     "id": "1631bb88-f99a-4a96-98e2-abe1ae7944e4",
+     "id": "4989ee52-18db-45af-912f-edf1524e6fb5",
      "references": [
       "5cda3a93-6673-4d53-9dc1-ff20a5841ba2",
       "0795047b-a3a9-4260-8d81-3b5fe885626f",
@@ -294,6 +316,15 @@
       "f71982be-b146-4f6d-b29a-c2fd92de16f9",
       "dcfa55e5-62f4-4ce9-8a4a-fb45b86cce7c",
       "4ecc3f15-1614-4ca2-aac4-89d57aa1c55c"
+     ]
+    },
+    "83a49fe0-d747-4717-adb3-3502b2bbdd55": {
+     "title": "Systemkompatibilitet",
+     "id": "83a49fe0-d747-4717-adb3-3502b2bbdd55",
+     "references": [
+      "0795047b-a3a9-4260-8d81-3b5fe885626f",
+      "f71982be-b146-4f6d-b29a-c2fd92de16f9",
+      "dcfa55e5-62f4-4ce9-8a4a-fb45b86cce7c"
      ]
     }
    },

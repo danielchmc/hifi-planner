@@ -8,6 +8,19 @@
    "url": "/pladespiller/"
   }
  ],
+ "hp": {
+  "spec": {
+   "RIAA-forstærker": "Nej"
+  },
+  "gallery": [
+   "f9639de1-efdd-45a5-8445-42b141ead534",
+   "7966373f-6607-4da6-bcc6-ace4deefb43d",
+   "e3efceac-c45f-4071-8510-f1d3854290cc",
+   "67f42314-87a8-4610-bb5d-d6b2020cc66a",
+   "f4a8ec7b-b1b7-434b-96d1-7a3d9ec40fb7"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 229345,
   "skuCode": "MARATT15S1",
@@ -36,13 +49,13 @@
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "MOFIFENSTRATPLUSM",
     "ARGTTAURORA",
     "ARGTTS",
     "DENDP3000NE",
     "MOFIMASTERDECK",
     "ARGTT4SE",
-    "ARGTT4MK2"
+    "ARGTT4MK2",
+    "MOFIFENSTRATPLUSM"
    ],
    "isOutlet": "false"
   },
@@ -107,7 +120,7 @@
     "productCode": "MARATT15S1WH",
     "ean": "4951035904848",
     "priceDetails": {
-     "priceValueId": 1207937,
+     "priceValueId": 1003115,
      "price": 19000,
      "priceFormatted": "19.000,-",
      "salesUnit": "stk",

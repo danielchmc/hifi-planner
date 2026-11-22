@@ -13,6 +13,25 @@
    "url": "/stereo/forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "HDMI ARC/CEC": "Nej",
+   "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR",
+   "Udgang (andet)": "12V trigger",
+   "Indgang (andet)": "12V trigger",
+   "Tilslutninger (kablet)": "Analog RCA, Analog XLR",
+   "Udgangseffekt 4 ohm": "400 watt",
+   "Udgangseffekt 8 ohm": "200 watt",
+   "Fra beskrivelsen": "Hovedtelefonudgang : Nej · Linjeindgange : Analog L/R (XLR/RCA), digital optisk/coaxial · Pladespillerindgang : Nej · Max. output ±40A · Auto-tænd/sluk (alle indgange) · 12V-trigger in/out · Dobbelte højttalertilslutninger"
+  },
+  "gallery": [
+   "429a84bc-b1ac-4e26-91fa-a183fc460a52",
+   "ad1ba1de-d10b-4c85-a6c5-458402f91637",
+   "11931397-330e-424f-bddd-0e707a532aca",
+   "2468bdd7-b315-4c29-b3c4-f1be39a662fe"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 34661,
   "skuCode": "LYNGSDA2400",
@@ -154,14 +173,30 @@
     "productCode": "LYNGSDA2400BK",
     "ean": "5704505104021",
     "priceDetails": {
-     "priceValueId": 1088293,
-     "price": 23999,
-     "priceFormatted": "23.999,-",
+     "priceValueId": 1206286,
+     "price": 17999,
+     "priceFormatted": "17.999,-",
+     "priceBefore": 23999,
+     "priceBeforeFormatted": "23.999,-",
+     "priceSavingsFormatted": "6.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 23999
+     "offerExpiryDate": "2026-12-20T22:59:00Z",
+     "unitPrice": 17999,
+     "unitPriceBefore": 23999
     },
+    "ribbons": [
+     {
+      "text": "Spar 25%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -203,7 +238,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 2,
+     "numberOfStoresExperience": 1,
      "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -233,45 +268,62 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGSDA2400 roses bredt som en kraftfuld, ren og meget musikalsk forstærker med varm kontrol, solid bas og dynamisk punch. Forstærkeren tilfører større detaljegrad, ro og rumfornemmelse, mens det slanke design og den gode systemkompatibilitet giver ekstra praktisk værdi. En tænd/sluk-knap på bagsiden og mulig brummen via triggeren er mindre ulemper, men helhedsindtrykket er meget positivt og klart anbefalelsesværdigt.",
+   "summary": "LYNGSDA2400 er en kraftfuld, ren og neutral forstærker, der tilfører musikken flere detaljer, bedre dynamik, mere punch og velkontrolleret bas. Lydkvalitet og byggekvalitet bliver værdsat højt, og ydelsen giver meget for pengene. Den bagmonterede tænd/sluk-knap og lejlighedsvis brum fra triggerkablet er praktiske ulemper, men den samlede vurdering er meget begejstret.",
    "headlines": {
     "detailed, dynamic and punchy sound": {
-     "sentimentAnalysis": "Forstærkeren roses for ren og neutral gengivelse med flere detaljer, stærkere dynamik og masser af kraft.",
+     "sentimentAnalysis": "Forstærkeren roses for en ren, neutral og meget afslørende gengivelse med flere detaljer, bedre dynamik, mere ro og punch.",
      "simpleTitle": "Detaljeret, dynamisk og punchy lyd",
      "bias": "positive",
-     "key": "detailed-dynamic-punchy-sound",
-     "groupId": "bce46d50-b34f-41c9-8384-d724fbf090a1"
+     "key": "sound-quality",
+     "groupId": "57bce033-67ef-4630-b7c2-033fbad7c356"
     },
-    "accurate, controlled bass and natural vocals": {
-     "sentimentAnalysis": "Lyden beskrives som troværdig og rolig, med naturligt gengivne instrumenter og vokaler samt stram og velkontrolleret bas.",
-     "simpleTitle": "Præcis, kontrolleret bas og naturlige vokaler",
+    "controlled and faithful bass": {
+     "sentimentAnalysis": "Basgengivelsen beskrives som kraftfuld, velkontrolleret og tro mod optagelsen.",
+     "simpleTitle": "Kontrolleret og naturtro bas",
      "bias": "positive",
-     "key": "accurate-controlled-bass-vocals",
-     "groupId": "bce46d50-b34f-41c9-8384-d724fbf090a1"
+     "key": "sound-quality",
+     "groupId": "57bce033-67ef-4630-b7c2-033fbad7c356"
     },
-    "slim, high-quality design": {
-     "sentimentAnalysis": "Forstærkeren får positive kommentarer for den flotte kvalitet og det særligt slanke format.",
+    "slim, high-quality construction": {
+     "sentimentAnalysis": "Produktet roses for attraktivt design, oplevet kvalitet og slank form.",
      "simpleTitle": "Slankt design i høj kvalitet",
      "bias": "positive",
-     "key": "slim-quality-design",
-     "groupId": "0b43a7cd-c18d-4968-b46f-2c0be75be5d7"
+     "key": "design-build",
+     "groupId": "2ede27c5-a907-48ac-8248-628bee24f9b0"
+    },
+    "rear-mounted power switch is inconvenient": {
+     "sentimentAnalysis": "Placeringen af tænd/sluk-knappen på bagsiden opleves som upraktisk og er en mindre betjeningsmæssig ulempe.",
+     "simpleTitle": "Bagmonteret tænd/sluk-knap er upraktisk",
+     "bias": "negative",
+     "key": "features-connectivity",
+     "groupId": "138f3208-39e0-41fd-ae65-6970b9de5408"
     }
    },
    "grouping": {
-    "bce46d50-b34f-41c9-8384-d724fbf090a1": {
+    "57bce033-67ef-4630-b7c2-033fbad7c356": {
      "title": "Lydkvalitet",
-     "id": "bce46d50-b34f-41c9-8384-d724fbf090a1",
+     "id": "57bce033-67ef-4630-b7c2-033fbad7c356",
      "references": [
       "b4760988-9484-47fe-a10c-102927b4e467",
       "85220474-c3d4-40b1-aeea-b5a6b4b3ea2b",
       "1880d955-06ce-4184-8adf-d05ad13efad5",
       "925f609e-6e38-4868-81bd-a2bff086f552",
+      "a9160db4-6011-4987-8af8-beed76543e4b",
       "ff0ac66e-a92d-426f-a2a9-5655578cea8d"
      ]
     },
-    "0b43a7cd-c18d-4968-b46f-2c0be75be5d7": {
-     "title": "Design",
-     "id": "0b43a7cd-c18d-4968-b46f-2c0be75be5d7",
+    "138f3208-39e0-41fd-ae65-6970b9de5408": {
+     "title": "Funktioner og tilslutninger",
+     "id": "138f3208-39e0-41fd-ae65-6970b9de5408",
+     "references": [
+      "238b5d2a-3ec4-4660-9373-30fc9e46ba17",
+      "1880d955-06ce-4184-8adf-d05ad13efad5",
+      "ff0ac66e-a92d-426f-a2a9-5655578cea8d"
+     ]
+    },
+    "2ede27c5-a907-48ac-8248-628bee24f9b0": {
+     "title": "Design og byggekvalitet",
+     "id": "2ede27c5-a907-48ac-8248-628bee24f9b0",
      "references": [
       "1880d955-06ce-4184-8adf-d05ad13efad5",
       "ff0ac66e-a92d-426f-a2a9-5655578cea8d"

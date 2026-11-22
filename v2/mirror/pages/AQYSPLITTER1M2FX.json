@@ -13,6 +13,13 @@
    "url": "/kabler/diverse-kabel-stik-adapter/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "fcfa261d-570b-41e3-8a79-cfbfc1d3f078"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 33278,
   "skuCode": "AQYSPLITTER1M2FX",
@@ -108,8 +115,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 33,
+     "numberOfStoresExperience": 13,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -131,46 +138,47 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette er en lydmæssigt stærk og solid Y-splitter, som giver en praktisk mulighed for at føre ét output til to lydenheder. Lyden beskrives generelt som ren, detaljeret, varm og kontant, med fyldigere bas ved brug til subwoofer, selv om svage phono-signaler kan give tab. Solide stik, fleksibel konstruktion og alsidig systemintegration gør splitteren særligt velegnet til kraftigere linjesignaler.",
+   "summary": "AQYSPLITTER1M2FX betragtes generelt som en førsteklasses, solid og fleksibel splitter, der gør det praktisk at sende ét lydudgangssignal til to enheder. Anmeldelserne beskriver oftest en ren, fyldig og dynamisk lyd, især med kraftigere linjesignaler eller sammen med subwoofere. En phono-opsætning med lavt signal oplevede signaltab sammenlignet med en direkte forbindelse, men byggekvalitet og alsidighed roses samlet set højt.",
    "headlines": {
-    "sturdy, premium construction": {
-     "sentimentAnalysis": "Splitteren roses gentagne gange for høj kvalitet, solide stik og robust konstruktion.",
+    "solid, premium construction": {
+     "sentimentAnalysis": "Splitteren roses gentagne gange for solide stik, robust kabelkonstruktion og høj samlet kvalitet.",
      "simpleTitle": "Solid konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "build-quality",
-     "groupId": "9a3914c8-ab24-4bb5-82a5-68edb398a54b"
+     "groupId": "938555d8-6667-4adc-917f-50983755fc69"
     },
-    "clean, detailed and fuller sound": {
-     "sentimentAnalysis": "Anmeldelserne forbinder splitteren med god lydkvalitet, ren signaltransmission, behagelig musikalitet og fyldigere subwooferbas.",
-     "simpleTitle": "Ren, detaljeret og fyldigere lyd",
+    "convenient two-way signal routing": {
+     "sentimentAnalysis": "Y-splitteren giver en praktisk og fleksibel løsning til at forbinde én forstærkerudgang med to komponenter som effektforstærkere, subwoofere eller streamere.",
+     "simpleTitle": "Praktisk signalfordeling til to enheder",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "b1fbb84d-d3ff-4f2b-ba9e-c45f3cb6f169"
+    },
+    "clean, fuller and more immersive sound": {
+     "sentimentAnalysis": "Flere anmeldelser forbinder splitteren med ren lyd, en særligt musikalsk gengivelse og fyldigere bas fra en subwoofer.",
+     "simpleTitle": "Renere, fyldigere og mere omsluttende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "e8c4cb60-6059-42fd-b9a7-d022492c0e72"
-    },
-    "useful for splitting one output to two devices": {
-     "sentimentAnalysis": "Splitteren betragtes som en effektiv og alsidig løsning til at forbinde to enheder fra én forstærkerindgang eller ét output.",
-     "simpleTitle": "Praktisk til at dele ét output til to enheder",
-     "bias": "positive",
-     "key": "compatibility",
-     "groupId": "d2db37a2-a990-48e0-a960-dbdfd434c7b2"
+     "groupId": "94ba5f54-5f60-4a67-a209-fe68d2a81f71"
     }
    },
    "grouping": {
-    "9a3914c8-ab24-4bb5-82a5-68edb398a54b": {
+    "938555d8-6667-4adc-917f-50983755fc69": {
      "title": "Byggekvalitet",
-     "id": "9a3914c8-ab24-4bb5-82a5-68edb398a54b",
+     "id": "938555d8-6667-4adc-917f-50983755fc69",
      "references": [
+      "b856d20a-51c5-4ff6-b15f-222384c5ddc6",
       "3554f083-e4c7-486e-9002-59c3921542f8",
       "9f84bd19-cb64-47db-9569-c7fbdb76c903",
       "e85ba242-7dac-4379-b80c-aab7c96489e1",
+      "35704fa1-8bf7-4efa-a2a7-338049735063",
       "def45c78-6dda-45b0-9c17-ee9043b31aa7",
-      "15858f33-9859-4eeb-9386-4d4709c7534e",
-      "35704fa1-8bf7-4efa-a2a7-338049735063"
+      "15858f33-9859-4eeb-9386-4d4709c7534e"
      ]
     },
-    "e8c4cb60-6059-42fd-b9a7-d022492c0e72": {
+    "94ba5f54-5f60-4a67-a209-fe68d2a81f71": {
      "title": "Lydkvalitet",
-     "id": "e8c4cb60-6059-42fd-b9a7-d022492c0e72",
+     "id": "94ba5f54-5f60-4a67-a209-fe68d2a81f71",
      "references": [
       "9f84bd19-cb64-47db-9569-c7fbdb76c903",
       "d7b3572a-cf0d-493d-95d8-52fa00357a92",
@@ -179,9 +187,9 @@
       "ad3ea7dd-4e20-45da-b03c-32263a111575"
      ]
     },
-    "d2db37a2-a990-48e0-a960-dbdfd434c7b2": {
-     "title": "Kompatibilitet og anvendelse",
-     "id": "d2db37a2-a990-48e0-a960-dbdfd434c7b2",
+    "b1fbb84d-d3ff-4f2b-ba9e-c45f3cb6f169": {
+     "title": "Tilslutningsmuligheder og fleksibilitet",
+     "id": "b1fbb84d-d3ff-4f2b-ba9e-c45f3cb6f169",
      "references": [
       "9e747f64-3646-418c-9e2a-a4f10f9135c3",
       "d7b3572a-cf0d-493d-95d8-52fa00357a92",

@@ -13,6 +13,16 @@
    "url": "/pladespiller/vedligeholdelse/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "ae458156-c8d5-4af6-8c12-c17d282d6e53",
+   "fed034af-7e33-4e55-a0e1-90e46e4a539f",
+   "ac673586-afe3-4225-9981-de383993e79f",
+   "11504aef-1e3a-46a5-8948-3275f982bb80"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 116189,
   "skuCode": "AQASRECORDBRUSHX",
@@ -111,7 +121,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 99,
+     "availableQuantity": 115,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -141,88 +151,99 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQASRECORDBRUSHX holder vinylplader rene med effektiv støvfjernelse og mærkbart mindre statisk elektricitet, hvilket understøtter en mere stille og omsluttende gengivelse. Det vellavede, ergonomiske design ligger behageligt i hånden, mens kraftige børstehår og kompakt opbevaring øger den praktiske værdi. Det løse håndtag og den besværlige lukning er tydelige skønhedsfejl ved et ellers fremragende tilbehør til pladepleje.",
+   "summary": "AQASRECORDBRUSHX er en meget effektiv og kompakt pladebørste, der fjerner støv og holder vinyl ren, så afspilningen kan forblive varm og uforstyrret. Kulfiberbørsterne reducerer også statisk elektricitet, mens det ergonomiske design ligger behageligt i hånden og passer pænt ved siden af tonearmen. Byggekvaliteten roses generelt, men det aftagelige håndtag kan falde for let af, og børsten kan være besværlig at lukke uden at røre børstehårene.",
    "headlines": {
     "effective dust removal": {
-     "sentimentAnalysis": "Børsten roses gentagne gange for at fjerne støv og holde plader rene uden besvær.",
+     "sentimentAnalysis": "Børsten fjerner pålideligt løst støv og uønskede partikler fra plader.",
      "simpleTitle": "Effektiv støvfjernelse",
      "bias": "positive",
      "key": "dust-removal",
-     "groupId": "c7fc7922-b0e5-4404-acf2-57120c11c262"
+     "groupId": "4e1998a2-186e-4e34-b38d-b76f94aa75ab"
     },
-    "noticeably reduces static": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer effektiv reduktion af statisk elektricitet, herunder bedre ydeevne end konkurrerende kulfiberbørster.",
-     "simpleTitle": "Reducerer statisk elektricitet mærkbart",
+    "reduced static electricity": {
+     "sentimentAnalysis": "Kulfiberbørsten reducerer ifølge anmeldelserne statisk elektricitet, endda mere effektivt end flere konkurrerende børster.",
+     "simpleTitle": "Mindre statisk elektricitet",
      "bias": "positive",
      "key": "static-reduction",
-     "groupId": "914e292f-cd62-46f2-b5cc-464a9f3c11e1"
+     "groupId": "f7cb2ff6-848a-4b19-90cc-6dca9e87ef96"
     },
-    "comfortable and sturdy design": {
-     "sentimentAnalysis": "Den ergonomiske form, behagelige håndtering og kraftigere børstehår giver et kvalitetsindtryk.",
-     "simpleTitle": "Behageligt og robust design",
+    "comfortable, thoughtful design": {
+     "sentimentAnalysis": "Designet opleves som ergonomisk, behageligt at holde på og gennemtænkt.",
+     "simpleTitle": "Behageligt og gennemtænkt design",
      "bias": "positive",
      "key": "comfortable-design",
-     "groupId": "61a58e04-c50d-4898-8965-2ea0b8f3c022"
+     "groupId": "7115a622-d0f7-4744-af69-11f188aa9fc6"
     },
-    "handle detaches too easily": {
-     "sentimentAnalysis": "Det lille håndtag falder ifølge anmeldelserne meget let af og skaber trods nem genmontering et tilbagevendende brugsproblem.",
+    "handle comes loose too easily": {
+     "sentimentAnalysis": "Begge anmeldelser påpeger, at det aftagelige håndtag ikke sidder sikkert nok, selv om det er let at sætte på igen.",
      "simpleTitle": "Håndtaget falder for let af",
      "bias": "negative",
      "key": "loose-handle",
-     "groupId": "61a58e04-c50d-4898-8965-2ea0b8f3c022"
+     "groupId": "4efece40-dd3a-421a-92d9-5f3a42b8fe5f"
     }
    },
    "grouping": {
-    "c7fc7922-b0e5-4404-acf2-57120c11c262": {
-     "title": "Støvfjernelse",
-     "id": "c7fc7922-b0e5-4404-acf2-57120c11c262",
+    "4e1998a2-186e-4e34-b38d-b76f94aa75ab": {
+     "title": "Støvrengøring",
+     "id": "4e1998a2-186e-4e34-b38d-b76f94aa75ab",
      "references": [
       "81430713-2fdb-4053-951c-5327d4b0b8cd",
       "d61ad9d6-98d2-4eee-ba81-c01d44a9090e",
+      "28f9f306-0beb-4ea7-b09f-073f680d930f",
       "20317351-7805-4c26-a3de-888f7a703810",
+      "248752ed-f591-459e-b06e-13a5cfcbd60a",
       "994be67f-87f4-406e-9756-031d8d2904fd",
       "73a91b48-dc55-45aa-8b18-510fad16b2bd",
       "92a99b46-88c4-42d9-82a9-676c57eacd9d",
       "e5f95e37-cd72-43a4-9338-63bfedcdfe98",
+      "0c3e2a47-3cb1-44e2-be0c-75fc0d247767",
       "d9bc9db2-ceb4-4f63-9dee-00838c744779",
+      "6310803f-6686-438e-a285-8bae5fcbf8be",
       "bfd84f69-58ce-4e06-8ec5-fb274ac578dd",
       "ebe4af9e-0e0c-4602-b9cd-152ce4a09b2a",
+      "fe5ad65b-582e-4a72-8c90-33f545697133",
+      "1edb9aa2-dde4-4551-836a-5536d6dad840",
       "40e97695-50bc-488d-b61b-d79435219492",
+      "4e65b753-aa51-44d1-bcf4-6a2180ce9b6a",
       "4061e66c-1723-4740-a2ae-a5e6f0db5ad7",
       "1efe9a8a-1eba-4a62-bc30-78bd3a91940b"
      ]
     },
-    "61a58e04-c50d-4898-8965-2ea0b8f3c022": {
-     "title": "Design og ergonomi",
-     "id": "61a58e04-c50d-4898-8965-2ea0b8f3c022",
-     "references": [
-      "6478f41b-478f-49f8-be48-48582e423d0b",
-      "0c3e2a47-3cb1-44e2-be0c-75fc0d247767",
-      "4eb65c86-5c17-45d1-ae7a-f76d29d65877",
-      "f9dd1a50-c891-4e77-bd9e-85100aca8080",
-      "d5acee00-7f21-4666-9d7d-8e07ea91b415",
-      "d9bc9db2-ceb4-4f63-9dee-00838c744779"
-     ]
-    },
-    "914e292f-cd62-46f2-b5cc-464a9f3c11e1": {
-     "title": "Reduktion af statisk elektricitet",
-     "id": "914e292f-cd62-46f2-b5cc-464a9f3c11e1",
+    "f7cb2ff6-848a-4b19-90cc-6dca9e87ef96": {
+     "title": "Antistatisk effekt",
+     "id": "f7cb2ff6-848a-4b19-90cc-6dca9e87ef96",
      "references": [
       "20317351-7805-4c26-a3de-888f7a703810",
       "994be67f-87f4-406e-9756-031d8d2904fd",
       "a8677939-2071-4d48-b3b1-1ec3a376b8a6"
      ]
+    },
+    "7115a622-d0f7-4744-af69-11f188aa9fc6": {
+     "title": "Ergonomi og håndtering",
+     "id": "7115a622-d0f7-4744-af69-11f188aa9fc6",
+     "references": [
+      "6478f41b-478f-49f8-be48-48582e423d0b",
+      "0c3e2a47-3cb1-44e2-be0c-75fc0d247767"
+     ]
+    },
+    "4efece40-dd3a-421a-92d9-5f3a42b8fe5f": {
+     "title": "Håndtagets holdbarhed",
+     "id": "4efece40-dd3a-421a-92d9-5f3a42b8fe5f",
+     "references": [
+      "d5acee00-7f21-4666-9d7d-8e07ea91b415",
+      "d9bc9db2-ceb4-4f63-9dee-00838c744779"
+     ]
     }
    },
-   "rating": 4.79518072289157,
-   "count": 83,
+   "rating": 4.79761904761905,
+   "count": 84,
    "reviewCount": 28,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 17,
-    "5": 66
+    "5": 67
    }
   },
   "brandName": "AudioQuest",

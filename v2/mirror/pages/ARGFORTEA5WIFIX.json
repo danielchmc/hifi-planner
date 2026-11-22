@@ -13,6 +13,24 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Subwoofer-out",
+   "Lydindgang": "HDMI, Optisk, Analog RCA, Pladespiller",
+   "Udgang (andet)": "USB A",
+   "Trådløs overførsel": "Bluetooth-indgang",
+   "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast, DTS Play-Fi",
+   "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX",
+   "Bluetooth type": "4.2",
+   "Fra beskrivelsen": "HDMI/ARC for nem digital TV-lyd · USB-til-Ethernet adapter fås som ekstraudstyr · *Ikke auto-tænd på pladespillerindgang"
+  },
+  "gallery": [
+   "e7ab2a25-3aa3-4151-8e5e-c222c907dc2c",
+   "42b81a74-c105-4248-a222-67fcf1c655bc",
+   "c4487d7c-32d3-4e07-92c8-ed45a21b4831"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 231571,
   "skuCode": "ARGFORTEA5WIFIX",
@@ -199,7 +217,7 @@
   "stockItemAlternative": {
    "save": "1.000,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=ARGFORTEA5WIFIX",
-   "availableQuantity": 4,
+   "availableQuantity": 5,
    "lowestPrice": "5.499,-"
   },
   "variants": [
@@ -257,11 +275,12 @@
      "productCode": "ARGFORTEA5WIFIBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 01. december",
-     "deliveryDate": "2026-12-01T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 190,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -595,7 +614,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 166,
+     "availableQuantity": 161,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -731,48 +750,62 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon Forte A5 WiFi leverer varm, punchy og imponerende fyldig lyd fra et kompakt kabinet med tydelige detaljer og masser af kræfter til musik og tv. Wi-fi-streaming, HDMI ARC og de mange tilslutninger gør systemet fleksibelt og nemt at bruge, mens det elegante design passer både i stuen og på skrivebordet. Basgengivelsen er imponerende størrelsen taget i betragtning, men en subwoofer giver ofte mere dybde og tyngde; tilbagevendende problemer med wi-fi, standby, fjernbetjening og software trækker ned i en ellers meget vellykket pakke.",
+   "summary": "ARGFORTEA5WIFIX leverer imponerende varm, klar og kraftfuld lyd fra et kompakt og flot kabinet med alsidige tilslutninger og fremragende værdi for pengene. Wi-fi-streaming, Spotify Connect, AirPlay og tv-integration er store styrker, selv om nogle brugere oplever ustabile forbindelser, langsom opvågning og generende automatisk standby. Bassen er overraskende fyldig størrelsen taget i betragtning, mens en subwoofer kan give endnu mere dybde og et mere omsluttende, slagkraftigt fundament.",
    "headlines": {
-    "wiFi and wireless connections can be unreliable": {
-     "sentimentAnalysis": "Flere anmeldelser nævner forbindelsesudfald, hakken, langsom opstart eller mangelfuld AirPlay- og Spotify-funktion, selv om netværk og eksterne enheder også kan spille ind.",
-     "simpleTitle": "Wi-fi og trådløse forbindelser kan være ustabile",
-     "bias": "negative",
-     "key": "connectivity",
-     "groupId": "c5309a30-178c-410d-9337-ee1a402f1555"
-    },
-    "compact, attractive and well built": {
-     "sentimentAnalysis": "Den kompakte størrelse, det flotte design og den gode finish roses gentagne gange for at passe godt ind i hjem og arbejdsområder.",
-     "simpleTitle": "Kompakt, flot og solidt udført",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "9c102bff-de2e-4337-a369-4c3eaedc2ee1"
-    },
-    "warm, detailed and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en varm, klar, detaljeret og kraftfuld lyd, der overgår forventningerne til den kompakte størrelse.",
-     "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
+    "warm, clear and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den varme, klare, detaljerede og kraftfulde lyd, som overgår forventningerne til størrelse og pris.",
+     "simpleTitle": "Varm, klar og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "fc216c1f-279d-4d6b-bda5-2b4a8754c6bd"
+     "groupId": "d99eccf6-2140-4af9-bca0-a18876e8250e"
     },
-    "standby and control behavior can be frustrating": {
-     "sentimentAnalysis": "Anmeldelser nævner uønsket slukning, langsomme reaktioner, grove lydstyrketrin og en upålidelig fjernbetjening, hvilket skaber irritation trods enkel opsætning.",
-     "simpleTitle": "Standby- og betjeningsproblemer kan frustrere",
-     "bias": "negative",
-     "key": "usability",
-     "groupId": "9b56d431-1237-47e0-bb30-d14d0b949a69"
-    },
-    "deep bass often benefits from a subwoofer": {
-     "sentimentAnalysis": "Mange anmeldelser roser bassen størrelsen taget i betragtning, mens kombinationer med subwoofer tilfører overbevisende dybde, tyngde og kraft.",
-     "simpleTitle": "Dyb bas får ofte hjælp af en subwoofer",
+    "bass is impressive for the size": {
+     "sentimentAnalysis": "Mange anmeldelser oplever den dybe bas som fyldig og overraskende kraftfuld for kompakte højttalere, og nogle har ikke brug for en subwoofer.",
+     "simpleTitle": "Imponerende bas i forhold til størrelsen",
      "bias": "positive",
      "key": "bass",
-     "groupId": "0de84c48-f24a-4723-8ac1-2f9e0d479dae"
+     "groupId": "f9a66a75-d44e-4af8-a543-c10dee2e427d"
+    },
+    "wi-Fi and source integration are versatile": {
+     "sentimentAnalysis": "Anmeldelserne roser det brede udvalg af indgange og den pålidelige understøttelse af wi-fi-streaming, Spotify Connect, AirPlay, HDMI ARC, pladespillere og andre kilder.",
+     "simpleTitle": "Alsidig wi-fi- og kildeintegration",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "9dc755c8-7f9d-419d-aaa3-6ec57ca71996"
+    },
+    "connectivity can be unreliable": {
+     "sentimentAnalysis": "Flere anmeldelser nævner periodiske udfald i wi-fi, Spotify, AirPlay eller Bluetooth, hakken, langsomme forbindelser og lejlighedsvise standby-afbrydelser.",
+     "simpleTitle": "Forbindelsen kan være ustabil",
+     "bias": "negative",
+     "key": "connectivity",
+     "groupId": "9dc755c8-7f9d-419d-aaa3-6ec57ca71996"
+    },
+    "compact design looks premium": {
+     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som flotte, diskrete, kompakte og veludførte med materialer og stil, der passer godt ind i hjemmet.",
+     "simpleTitle": "Kompakt design med premiumpræg",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "6f8f5977-68ae-418d-827a-bb1542bbf37f"
+    },
+    "a subwoofer adds satisfying depth": {
+     "sentimentAnalysis": "Ejere, der tilføjer en Malmö- eller anden subwoofer, oplever markant mere dybde, fylde og slagkraft uden en dominerende buldren.",
+     "simpleTitle": "En subwoofer giver tilfredsstillende dybde",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "f9a66a75-d44e-4af8-a543-c10dee2e427d"
+    },
+    "some listeners want more low-end control": {
+     "sentimentAnalysis": "En mindre gruppe oplever bassen som utilstrækkelig, ubehagelig eller svær at justere, især ved lav lydstyrke eller krævende musik, og anbefaler en subwoofer.",
+     "simpleTitle": "Nogle ønsker mere kontrol over bassen",
+     "bias": "negative",
+     "key": "bass",
+     "groupId": "f9a66a75-d44e-4af8-a543-c10dee2e427d"
     }
    },
    "grouping": {
-    "fc216c1f-279d-4d6b-bda5-2b4a8754c6bd": {
+    "d99eccf6-2140-4af9-bca0-a18876e8250e": {
      "title": "Lydkvalitet",
-     "id": "fc216c1f-279d-4d6b-bda5-2b4a8754c6bd",
+     "id": "d99eccf6-2140-4af9-bca0-a18876e8250e",
      "references": [
       "1a67dafd-e73f-40c9-b972-df39741480c7",
       "f846ce12-1420-4659-a1f1-d4a691e0cbf0",
@@ -785,6 +818,7 @@
       "56775819-2160-4384-82e3-a331800f2a0d",
       "818951db-9d2e-4d8a-89a9-63a47a259d30",
       "1323e16e-50f5-4762-849b-305162306f76",
+      "e20c14a3-3922-4aa6-bd16-c99e60b44f92",
       "fb1281c5-66bf-4996-8f4b-68cbfc288635",
       "87be2732-d12a-4d7e-b899-a1f42cca0ef6",
       "c33dcca6-09b1-4796-88ce-36db869c9579",
@@ -797,48 +831,84 @@
       "b6867860-ec2d-4ecf-994c-71be336629d3",
       "e364269f-4594-47ec-a162-00b7a5f1405a",
       "fb73e9b2-6022-4a31-9db7-3927411367fd",
+      "9d8469f5-0332-4ed1-b1d3-f1a63ca5daa1",
+      "d91c5a73-f878-49b5-b35d-e9a9bc8bc608",
       "581eba67-7606-4fb7-8ad7-15cbf9f5458f",
+      "6b71fcb5-eae6-4545-a775-8433b4b58e39",
       "1bad33c5-dbdd-4361-86fe-56ee70716289",
+      "3a56654d-31de-4eb3-bf5d-555b3b03b99e",
       "c27cd4bb-a9e8-447e-b9a4-9ac6e66c8463",
       "3ae41733-e2d5-4328-9e29-51025355fc7e",
       "769acd4f-8bf0-4d37-9722-20e2c05b12b6",
       "e6e01860-f464-4648-86c7-1e9915fa8c3e",
+      "814e2e55-b618-4fdd-a10c-44afe4637114",
       "bf40b37c-de1d-432d-ba4b-7a3b81890b26",
-      "eeb7360a-66b0-4303-91b5-ac732cbc0400",
       "c017c2b0-4b1c-4865-aa14-1c94787b1a3e",
       "7eb3e032-2b9e-41b8-8d67-065f461b0af5",
       "ffbc5510-af8c-4c0c-993b-2acf68656aaa",
+      "88eb90a7-64f2-4e4c-8169-c7c072bcbb20",
+      "9b4a3e9c-0067-451d-b4d8-57fe4e66afd5",
+      "f61bf829-e1e0-452d-b4f1-f6c317a542e0",
       "39617440-8dc8-4cf9-8b3c-92f9a3a62785",
+      "9aa2dc3c-8646-4ea9-9b02-8baee8535184",
       "571bab38-055b-4bcf-8934-4893d7eedcdb",
+      "2e6ea6e5-2ae5-4efd-b9ab-76c306286507",
       "3a623c89-c503-450d-9869-3812edfce87f",
       "adb20bd7-224e-40f1-b9bd-33f0620e107b",
+      "2b06a426-8b60-403b-a959-ffd8c0579452",
+      "43b2c411-c1c1-470f-b2cf-67b8c3b914c9",
       "495595ee-59c3-47e8-ac07-27159c40ed24",
       "459d9a3c-3b92-4420-9d65-bc31e2742a46",
       "049670af-27d1-47c4-bac0-492787ccbc41",
+      "ee8095fc-8d59-4e60-9313-c06b434a5648",
+      "c065540c-7a09-46f1-9acd-7bfa7a78eab5",
+      "5816f941-7ca4-4e8e-ad37-57fc599f9a6f",
+      "5095bd17-af74-433e-ac3a-701f5cfd2bd6",
+      "1f844837-3367-4fd1-b5eb-deb1208d8d6c",
+      "27376080-070f-4140-9289-513122b9f423",
+      "baf207ec-b065-44a5-9818-a8e5aeabe01f",
+      "28e024ec-6234-47d8-8df1-05d72bfd42ac",
+      "ad005435-5fc4-4152-94f1-ae4d970f5d56",
+      "2cb416b3-1e24-4926-8795-50fe7aae32f4",
+      "1615cadd-1222-4782-989f-1f243ea02a14",
+      "4485be7c-bb5d-4634-96e0-858f9312ffce",
+      "c54be233-5d8a-4cd6-9c36-70c6547c79e5",
+      "fd0d122e-f068-462e-ab51-2e19a13fd033",
+      "47be2c57-3591-4d0f-8406-f82781241b2f",
+      "4facb465-a6e5-475c-8514-5b781b25aa7f",
+      "21de7307-7a52-48a2-92a4-e620e800c109",
+      "359d1e41-9d41-456e-af34-4aae908910e1",
+      "c8c72dd0-0c62-4263-9f3c-07d2d64cc61c",
+      "9e7eb493-1c1b-4e17-bdf9-106b755f5cf9",
       "c9137d10-5a52-41ee-8286-6d1529d56c4b",
       "4890b3b2-c619-4d5c-abfe-7c520cf33bf3",
+      "d19556a8-22d2-40e8-b399-660d158562aa",
+      "8459ab06-bce8-4596-9a09-43fa24e49c6b",
       "5cf456b0-3374-4f7e-8ec2-2c4945390273",
       "19711a2d-ccd2-4eeb-b424-cc633560b72e"
      ]
     },
-    "c5309a30-178c-410d-9337-ee1a402f1555": {
-     "title": "Tilslutning og streaming",
-     "id": "c5309a30-178c-410d-9337-ee1a402f1555",
+    "9dc755c8-7f9d-419d-aaa3-6ec57ca71996": {
+     "title": "Tilslutning og betjening",
+     "id": "9dc755c8-7f9d-419d-aaa3-6ec57ca71996",
      "references": [
       "224083c8-1c3a-477f-bbd0-6c39933b4a17",
       "db921288-3e23-459b-a141-f2b87d105f21",
+      "565ac4de-d78b-498d-9b93-97fc7965809f",
       "1323e16e-50f5-4762-849b-305162306f76",
       "05d77fd3-cfb6-45c5-8f4c-e7d8ea3b791e",
       "6c146c16-4ec8-4371-b867-f87f70f125ca",
       "82e8fb56-17ec-47eb-ab96-b03e96b9353c",
-      "6d5a140c-a0f1-46ad-9ff6-a7f07c2f8907",
-      "fb73e9b2-6022-4a31-9db7-3927411367fd",
       "3a56654d-31de-4eb3-bf5d-555b3b03b99e",
       "e6e01860-f464-4648-86c7-1e9915fa8c3e",
+      "fb73e9b2-6022-4a31-9db7-3927411367fd",
+      "b6867860-ec2d-4ecf-994c-71be336629d3",
+      "1bad33c5-dbdd-4361-86fe-56ee70716289",
       "c27cd4bb-a9e8-447e-b9a4-9ac6e66c8463",
-      "bf40b37c-de1d-432d-ba4b-7a3b81890b26",
+      "769acd4f-8bf0-4d37-9722-20e2c05b12b6",
       "eeb7360a-66b0-4303-91b5-ac732cbc0400",
       "cb3dd501-0e34-4ffb-88e3-e3fb15d7e1cd",
+      "ffbc5510-af8c-4c0c-993b-2acf68656aaa",
       "88eb90a7-64f2-4e4c-8169-c7c072bcbb20",
       "f61bf829-e1e0-452d-b4f1-f6c317a542e0",
       "9aa2dc3c-8646-4ea9-9b02-8baee8535184",
@@ -847,46 +917,60 @@
       "2b06a426-8b60-403b-a959-ffd8c0579452",
       "ee8095fc-8d59-4e60-9313-c06b434a5648",
       "c065540c-7a09-46f1-9acd-7bfa7a78eab5",
+      "5816f941-7ca4-4e8e-ad37-57fc599f9a6f",
       "5095bd17-af74-433e-ac3a-701f5cfd2bd6",
       "1f844837-3367-4fd1-b5eb-deb1208d8d6c",
+      "baf207ec-b065-44a5-9818-a8e5aeabe01f",
       "ad005435-5fc4-4152-94f1-ae4d970f5d56",
       "1615cadd-1222-4782-989f-1f243ea02a14",
       "4485be7c-bb5d-4634-96e0-858f9312ffce",
       "fd0d122e-f068-462e-ab51-2e19a13fd033",
+      "21de7307-7a52-48a2-92a4-e620e800c109",
+      "359d1e41-9d41-456e-af34-4aae908910e1",
+      "c8c72dd0-0c62-4263-9f3c-07d2d64cc61c",
+      "e5a6747b-946a-4b7f-8a30-140dfd1c766b",
+      "c9137d10-5a52-41ee-8286-6d1529d56c4b",
       "8459ab06-bce8-4596-9a09-43fa24e49c6b",
       "5cf456b0-3374-4f7e-8ec2-2c4945390273",
-      "c9137d10-5a52-41ee-8286-6d1529d56c4b"
+      "19711a2d-ccd2-4eeb-b424-cc633560b72e"
      ]
     },
-    "0de84c48-f24a-4723-8ac1-2f9e0d479dae": {
+    "f9a66a75-d44e-4af8-a543-c10dee2e427d": {
      "title": "Basgengivelse",
-     "id": "0de84c48-f24a-4723-8ac1-2f9e0d479dae",
+     "id": "f9a66a75-d44e-4af8-a543-c10dee2e427d",
      "references": [
       "2141ad89-1933-4c60-9b06-979ec82939f6",
-      "6b217486-16db-447a-bbba-acf7b2578f04",
       "db921288-3e23-459b-a141-f2b87d105f21",
       "68ceefc0-0d15-4259-bcaf-be9491a27062",
       "e364269f-4594-47ec-a162-00b7a5f1405a",
       "fb73e9b2-6022-4a31-9db7-3927411367fd",
       "581eba67-7606-4fb7-8ad7-15cbf9f5458f",
+      "6b71fcb5-eae6-4545-a775-8433b4b58e39",
+      "c27cd4bb-a9e8-447e-b9a4-9ac6e66c8463",
       "3ae41733-e2d5-4328-9e29-51025355fc7e",
       "769acd4f-8bf0-4d37-9722-20e2c05b12b6",
       "bf40b37c-de1d-432d-ba4b-7a3b81890b26",
       "eeb7360a-66b0-4303-91b5-ac732cbc0400",
       "c017c2b0-4b1c-4865-aa14-1c94787b1a3e",
+      "7eb3e032-2b9e-41b8-8d67-065f461b0af5",
       "3a623c89-c503-450d-9869-3812edfce87f",
       "adb20bd7-224e-40f1-b9bd-33f0620e107b",
-      "c54be233-5d8a-4cd6-9c36-70c6547c79e5",
-      "c8c72dd0-0c62-4263-9f3c-07d2d64cc61c",
+      "495595ee-59c3-47e8-ac07-27159c40ed24",
       "5816f941-7ca4-4e8e-ad37-57fc599f9a6f",
       "1f844837-3367-4fd1-b5eb-deb1208d8d6c",
+      "27376080-070f-4140-9289-513122b9f423",
       "baf207ec-b065-44a5-9818-a8e5aeabe01f",
-      "47be2c57-3591-4d0f-8406-f82781241b2f"
+      "c54be233-5d8a-4cd6-9c36-70c6547c79e5",
+      "47be2c57-3591-4d0f-8406-f82781241b2f",
+      "21de7307-7a52-48a2-92a4-e620e800c109",
+      "c8c72dd0-0c62-4263-9f3c-07d2d64cc61c",
+      "9e7eb493-1c1b-4e17-bdf9-106b755f5cf9",
+      "19711a2d-ccd2-4eeb-b424-cc633560b72e"
      ]
     },
-    "9c102bff-de2e-4337-a369-4c3eaedc2ee1": {
+    "6f8f5977-68ae-418d-827a-bb1542bbf37f": {
      "title": "Design og finish",
-     "id": "9c102bff-de2e-4337-a369-4c3eaedc2ee1",
+     "id": "6f8f5977-68ae-418d-827a-bb1542bbf37f",
      "references": [
       "1a67dafd-e73f-40c9-b972-df39741480c7",
       "56775819-2160-4384-82e3-a331800f2a0d",
@@ -894,52 +978,31 @@
       "82e8fb56-17ec-47eb-ab96-b03e96b9353c",
       "6d5a140c-a0f1-46ad-9ff6-a7f07c2f8907",
       "fb73e9b2-6022-4a31-9db7-3927411367fd",
+      "bc40aa2e-d4d9-4747-a74f-599a045eaa15",
       "581eba67-7606-4fb7-8ad7-15cbf9f5458f",
-      "bc40aa2e-d4d9-4747-a74f-599a045eaa15",
-      "e6e01860-f464-4648-86c7-1e9915fa8c3e",
       "9d8469f5-0332-4ed1-b1d3-f1a63ca5daa1",
-      "118bd54d-85b3-45cb-9368-a05636208537",
-      "bf40b37c-de1d-432d-ba4b-7a3b81890b26",
-      "eeb7360a-66b0-4303-91b5-ac732cbc0400",
+      "769acd4f-8bf0-4d37-9722-20e2c05b12b6",
+      "e6e01860-f464-4648-86c7-1e9915fa8c3e",
       "c017c2b0-4b1c-4865-aa14-1c94787b1a3e",
+      "7eb3e032-2b9e-41b8-8d67-065f461b0af5",
       "ffbc5510-af8c-4c0c-993b-2acf68656aaa",
-      "adb20bd7-224e-40f1-b9bd-33f0620e107b",
+      "bf40b37c-de1d-432d-ba4b-7a3b81890b26",
+      "28e024ec-6234-47d8-8df1-05d72bfd42ac",
+      "4890b3b2-c619-4d5c-abfe-7c520cf33bf3",
+      "8459ab06-bce8-4596-9a09-43fa24e49c6b",
       "c8c72dd0-0c62-4263-9f3c-07d2d64cc61c",
-      "9e7eb493-1c1b-4e17-bdf9-106b755f5cf9",
-      "4890b3b2-c619-4d5c-abfe-7c520cf33bf3"
-     ]
-    },
-    "9b56d431-1237-47e0-bb30-d14d0b949a69": {
-     "title": "Brugervenlighed",
-     "id": "9b56d431-1237-47e0-bb30-d14d0b949a69",
-     "references": [
-      "46551ebd-5163-4c4d-8b22-42a46b6e372f",
-      "db921288-3e23-459b-a141-f2b87d105f21",
-      "c33dcca6-09b1-4796-88ce-36db869c9579",
-      "bc40aa2e-d4d9-4747-a74f-599a045eaa15",
-      "b6867860-ec2d-4ecf-994c-71be336629d3",
-      "1bad33c5-dbdd-4361-86fe-56ee70716289",
-      "c065540c-7a09-46f1-9acd-7bfa7a78eab5",
-      "eeb7360a-66b0-4303-91b5-ac732cbc0400",
-      "5095bd17-af74-433e-ac3a-701f5cfd2bd6",
-      "1f844837-3367-4fd1-b5eb-deb1208d8d6c",
-      "4485be7c-bb5d-4634-96e0-858f9312ffce",
-      "fd0d122e-f068-462e-ab51-2e19a13fd033",
-      "c9137d10-5a52-41ee-8286-6d1529d56c4b",
-      "9aa2dc3c-8646-4ea9-9b02-8baee8535184",
-      "571bab38-055b-4bcf-8934-4893d7eedcdb",
-      "2cb416b3-1e24-4926-8795-50fe7aae32f4"
+      "9e7eb493-1c1b-4e17-bdf9-106b755f5cf9"
      ]
     }
    },
-   "rating": 4.61578947368421,
-   "count": 190,
+   "rating": 4.61256544502618,
+   "count": 191,
    "reviewCount": 92,
    "distribution": {
     "1": 1,
     "2": 2,
     "3": 15,
-    "4": 33,
+    "4": 34,
     "5": 139
    }
   },

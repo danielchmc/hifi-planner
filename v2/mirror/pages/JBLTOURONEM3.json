@@ -13,6 +13,26 @@
    "url": "/horetelefoner/on-ear-over-ear/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth version": "Ja - 5.3 ( Auracast, LC3, LDAC, AAC, SBC )"
+  },
+  "gallery": [
+   "3cdd53a8-b841-46d8-a11b-60c5759cd7a8",
+   "f8ac43ef-985a-4793-9281-15f418d0d26c",
+   "1ef4aea7-0d46-4cca-898c-55a910f82117",
+   "f82435d0-ed97-4132-ba98-531225f7ee91",
+   "b126347e-55c7-4243-8578-8b35e717f77f",
+   "40239933-4a93-4f84-893c-5eaaf45b40c9",
+   "52bf9341-8730-438b-a020-c7441fa71ca4",
+   "fbc1742f-f811-4da6-865b-d3a9f7a53e83",
+   "b24427eb-2567-4c7c-bb26-132ce37fe31f",
+   "871ea4f3-0ce3-4f84-8c76-6582ce21499d",
+   "8ec9c366-bd3c-4613-bf2b-cf4f1585b6be",
+   "ec86d257-2834-4703-8a00-92af7cd56327"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 264723,
   "skuCode": "JBLTOURONEM3",
@@ -159,7 +179,7 @@
     "productCode": "JBLTOURONEM3BK",
     "ean": "1200130020919",
     "priceDetails": {
-     "priceValueId": 1217808,
+     "priceValueId": 1221335,
      "price": 1390,
      "priceFormatted": "1.390,-",
      "priceBefore": 2699,
@@ -216,8 +236,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 174,
+     "numberOfStoresExperience": 21,
+     "availableQuantity": 148,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -295,7 +315,7 @@
     "productCode": "JBLTOURONEM3BL",
     "ean": "1200130025082",
     "priceDetails": {
-     "priceValueId": 1213066,
+     "priceValueId": 1221341,
      "price": 1399,
      "priceFormatted": "1.399,-",
      "priceBefore": 2699,
@@ -304,6 +324,7 @@
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
+     "offerExpiryDate": "2026-11-29T22:59:00Z",
      "unitPrice": 1399,
      "unitPriceBefore": 2699
     },
@@ -352,7 +373,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 19,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -427,7 +448,7 @@
     "productCode": "JBLTOURONEM3MOCHA",
     "ean": "1200130020933",
     "priceDetails": {
-     "priceValueId": 1217537,
+     "priceValueId": 1221353,
      "price": 1390,
      "priceFormatted": "1.390,-",
      "priceBefore": 2699,
@@ -489,7 +510,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 47,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -568,7 +589,7 @@
     "productCode": "JBLTOURONEM3GR",
     "ean": "1200130035883",
     "priceDetails": {
-     "priceValueId": 1213072,
+     "priceValueId": 1221347,
      "price": 1399,
      "priceFormatted": "1.399,-",
      "priceBefore": 2699,
@@ -626,7 +647,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 64,
+     "availableQuantity": 28,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -715,27 +736,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBL TOUR ONE M3 leverer en varm, kraftfuld og omsluttende lyd med imponerende samlet kvalitet. Støjreduktionen er meget effektiv, mens betjening og funktioner generelt er tilfredsstillende. Komforten er mindre ensartet, da en dårlig pasform og en rapporteret kontaktallergi fra kunstlæderet påvirker oplevelsen.",
+   "summary": "JBL TOUR ONE M3 leverer en varm, kraftfuld og omsluttende lyd med imponerende samlet kvalitet, mens støjreduktionen også fungerer rigtig godt. Håndtering og funktioner er tilfredsstillende, og det eksklusive over-ear-design gør et stærkt indtryk. Komforten er dog mere blandet, da der rapporteres om dårlig pasform og mulig allergi over for kunstlæder.",
    "headlines": {
-    "clear, powerful sound": {
-     "sentimentAnalysis": "Lyden roses konsekvent som god, fremragende eller supergod med stærk samlet lydkvalitet.",
-     "simpleTitle": "Klar og kraftfuld lyd",
+    "clear, high-quality sound": {
+     "sentimentAnalysis": "Lyden roses konsekvent som god, fremragende eller fantastisk og har en stærk samlet kvalitet.",
+     "simpleTitle": "Klar lyd i høj kvalitet",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "fe10e4c4-8ae8-4efa-a0d2-ed0e89b364f2"
+     "key": "sound-quality",
+     "groupId": "c691a511-bdb6-4371-98b2-630ddb93397a"
     },
-    "fit and artificial leather can cause discomfort": {
-     "sentimentAnalysis": "Komfortproblemerne omfatter en løs eller dårlig pasform samt kontaktallergi forbundet med kunstlæderet.",
-     "simpleTitle": "Pasform og kunstlæder kan give ubehag",
+    "uncomfortable fit and artificial-leather allergy": {
+     "sentimentAnalysis": "Komfortproblemerne omfatter dårlig pasform og hudirritation forårsaget af kunstlædermaterialet.",
+     "simpleTitle": "Ukomfortabel pasform og allergi over for kunstlæder",
      "bias": "negative",
-     "key": "comfort_fit",
-     "groupId": "6083ee88-37cd-4921-85a7-bb960fe47c44"
+     "key": "comfort-fit",
+     "groupId": "927a994a-c8a4-4fce-932d-b80da94c2588"
     }
    },
    "grouping": {
-    "fe10e4c4-8ae8-4efa-a0d2-ed0e89b364f2": {
+    "c691a511-bdb6-4371-98b2-630ddb93397a": {
      "title": "Lydkvalitet",
-     "id": "fe10e4c4-8ae8-4efa-a0d2-ed0e89b364f2",
+     "id": "c691a511-bdb6-4371-98b2-630ddb93397a",
      "references": [
       "047ff6e1-bc16-406e-8388-6ce1523da696",
       "d084d23a-0a61-4932-bee0-f0fbc4a6c526",
@@ -744,9 +765,9 @@
       "1acb683d-8ac8-4dd3-83ea-826c4c15cf3e"
      ]
     },
-    "6083ee88-37cd-4921-85a7-bb960fe47c44": {
+    "927a994a-c8a4-4fce-932d-b80da94c2588": {
      "title": "Komfort og pasform",
-     "id": "6083ee88-37cd-4921-85a7-bb960fe47c44",
+     "id": "927a994a-c8a4-4fce-932d-b80da94c2588",
      "references": [
       "047ff6e1-bc16-406e-8388-6ce1523da696",
       "46d382bb-81da-4e4e-b872-4382d4702d4e"

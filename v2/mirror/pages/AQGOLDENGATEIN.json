@@ -13,6 +13,15 @@
    "url": "/kabler/signal-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : RCA"
+  },
+  "gallery": [
+   "320b6772-be1e-450a-a552-ced1868232ff"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 31865,
   "skuCode": "AQGOLDENGATEIN",
@@ -129,7 +138,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 25,
+     "availableQuantity": 65,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -208,7 +217,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 23,
+     "availableQuantity": 63,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -286,7 +295,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 10,
+     "availableQuantity": 30,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -690,69 +699,55 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQGOLDENGATEIN roses bredt som et velbygget og flot signalkabel, der leverer ren, detaljeret og ofte mærkbart bedre lyd end almindelige medfølgende kabler. Kablet giver god værdi som en opgradering i indstigningsklassen, selv om nogle lyttere hører lille forskel og synes, at prisen er høj sammenlignet med billigere alternativer. Den solide konstruktion, pålidelige stik og fleksible installation gør det til et sikkert valg til hi-fi-anlæg.",
+   "summary": "AQGOLDENGATEIN roses bredt som et velbygget og flot signalkabel, der leverer ren, fyldig og ofte mærkbart bedre lyd end almindelige medfølgende kabler. Kablet giver god værdi som en opgradering på begynderniveau, selv om flere anmeldelser synes, at prisen er høj, og enkelte lyttere ikke hører nogen væsentlig forskel. Den solide konstruktion, pålidelige stik og enkle installation gør kablet til et sikkert valg til stereo- og pladespilleranlæg.",
    "headlines": {
-    "good value at the entry level": {
-     "sentimentAnalysis": "Mange anmeldelser betragter kablet som et godt køb, især som en overkommelig opgradering fra simple medfølgende kabler.",
-     "simpleTitle": "God værdi i indstigningsklassen",
+    "excellent overall sound": {
+     "sentimentAnalysis": "Korte, men meget positive anmeldelser beskriver konsekvent lyden som fremragende eller rigtig god.",
+     "simpleTitle": "Fremragende lyd",
      "bias": "positive",
-     "key": "price-value",
-     "groupId": "947aa6dc-67f7-4b2f-9010-75c5678dedc8"
+     "key": "excellent-overall-sound",
+     "groupId": "4aa3d585-87ed-49d0-8265-5e6917277656"
     },
-    "excellent, quiet and immersive playback": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gengivelsen som fremragende og musikalsk med lav støj og en meget behagelig lytteoplevelse.",
-     "simpleTitle": "Fremragende, støjfri og medrivende gengivelse",
+    "good value for an entry-level upgrade": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer kablet som rimeligt prissat og især værdifuldt som opgradering fra billige medfølgende alternativer.",
+     "simpleTitle": "God værdi som opgradering i indstegsklassen",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "f7217313-28f6-41de-a002-33a06a080ff9"
+     "key": "good-entry-level-value",
+     "groupId": "e96f5555-f113-463b-9b74-547a64513c44"
     },
     "cleaner, more detailed sound than standard cables": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som renere, mere velopløst og mærkbart bedre end billige medfølgende kabler.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver en klart renere, bedre eller mere behagelig gengivelse end med almindelige medfølgende kabler.",
      "simpleTitle": "Renere og mere detaljeret lyd end med standardkabler",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "f7217313-28f6-41de-a002-33a06a080ff9"
+     "key": "cleaner-more-detailed-sound",
+     "groupId": "4aa3d585-87ed-49d0-8265-5e6917277656"
     },
     "strong construction and attractive finish": {
-     "sentimentAnalysis": "Kablet roses konsekvent for sin robuste konstruktion, førsteklasses kappe, flotte udseende og omhyggelige finish.",
+     "sentimentAnalysis": "Anmeldelserne roser den funktionelle konstruktion, det robuste yderlag, det eksklusive udseende og den fine finish.",
      "simpleTitle": "Solid konstruktion og flot finish",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "bc0cca2f-84a7-49e3-90a7-578df99f7219"
+     "key": "strong-attractive-build",
+     "groupId": "f9262ec0-c04d-4fbe-8872-e822ca42e5e6"
     },
-    "limited audible difference for some listeners": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever en neutral gengivelse eller ingen større hørbar forbedring, især sammenlignet med allerede gode kabler eller begrænset udstyr.",
-     "simpleTitle": "Begrænset hørbar forskel for nogle lyttere",
+    "some listeners hear little difference": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne oplever ingen større hørbar forbedring eller er usikre på, om kablet ændrer lyden.",
+     "simpleTitle": "Nogle lyttere hører kun ringe forskel",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "f7217313-28f6-41de-a002-33a06a080ff9"
+     "key": "limited-audible-difference",
+     "groupId": "4aa3d585-87ed-49d0-8265-5e6917277656"
     },
-    "flexible fit and easy connection": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver et sikkert fit, praktiske længder og et praktisk stikdesign, der undgår besværlige forbindelser med blanke ledninger.",
-     "simpleTitle": "Fleksibel pasform og nem tilslutning",
-     "bias": "positive",
-     "key": "installation",
-     "groupId": "93d86e37-9ed7-44ec-b182-583894fac877"
-    },
-    "some fit and layout limitations": {
-     "sentimentAnalysis": "Nogle anmeldelser nævner uhensigtsmæssig længde, en Y-splitter for tæt på stikkene eller manglende kompatibilitet med en bestemt phono-forforstærker.",
-     "simpleTitle": "Visse begrænsninger ved pasform og placering",
+    "expensive compared with equivalent alternatives": {
+     "sentimentAnalysis": "Kritiske anmeldelser finder kablet dyrt i forhold til funktionen og peger på billigere alternativer med tilsvarende resultater.",
+     "simpleTitle": "Dyr sammenlignet med tilsvarende alternativer",
      "bias": "negative",
-     "key": "installation",
-     "groupId": "93d86e37-9ed7-44ec-b182-583894fac877"
-    },
-    "premium pricing questioned": {
-     "sentimentAnalysis": "Nogle teknisk kyndige anmeldere synes, at kablet er dyrt og mener, at billigere studieforbindelser kan levere tilsvarende resultater.",
-     "simpleTitle": "Premiumprisen betvivles",
-     "bias": "negative",
-     "key": "price-value",
-     "groupId": "947aa6dc-67f7-4b2f-9010-75c5678dedc8"
+     "key": "expensive-alternatives",
+     "groupId": "e96f5555-f113-463b-9b74-547a64513c44"
     }
    },
    "grouping": {
-    "f7217313-28f6-41de-a002-33a06a080ff9": {
+    "4aa3d585-87ed-49d0-8265-5e6917277656": {
      "title": "Lydkvalitet",
-     "id": "f7217313-28f6-41de-a002-33a06a080ff9",
+     "id": "4aa3d585-87ed-49d0-8265-5e6917277656",
      "references": [
       "7c7fff8b-d08a-4c77-875c-1e9171e04c6b",
       "aa732d68-67d2-4410-ad7f-1ac4a1d8e48c",
@@ -761,7 +756,10 @@
       "5134daaf-e6cb-4e5c-a059-03486bd8e741",
       "30b4ed4a-0d28-41ab-b585-e8bb4279de95",
       "a5caf50d-8445-4b37-b927-4ebc375c0b2a",
+      "f0148b86-692d-408c-a42c-d037562d2770",
       "c20bcaa5-dcc3-429e-bb81-1d269b8e2c21",
+      "558070d0-4011-4691-bec0-7d317863b17d",
+      "23408b94-a5f7-4e07-88a9-ed33846be16a",
       "0d96a4d9-5e4c-404d-a95f-5f048d4c010f",
       "c83a86ad-0ce4-4ea5-916a-d8dae8146a51",
       "68c521aa-c6d8-40d8-8ed7-9e0dc371638f",
@@ -772,12 +770,12 @@
       "60d731cf-7d0d-461f-a787-864a0f6963d1",
       "4fcab3e8-2687-4c19-a2ff-01f060ccd056",
       "d7157bfa-12a6-43a2-94e2-6354305d0ec5",
-      "802493f5-5689-43aa-8283-337f7d62aa3e"
+      "b8cf6864-34be-48c7-abc8-370e0e951ca1"
      ]
     },
-    "947aa6dc-67f7-4b2f-9010-75c5678dedc8": {
+    "e96f5555-f113-463b-9b74-547a64513c44": {
      "title": "Pris og værdi",
-     "id": "947aa6dc-67f7-4b2f-9010-75c5678dedc8",
+     "id": "e96f5555-f113-463b-9b74-547a64513c44",
      "references": [
       "fbc8a508-dc0a-49cf-827f-532e1623dd11",
       "6e7e1e3b-549d-4f86-877e-f223ebbdbdfd",
@@ -791,32 +789,18 @@
       "b8cf6864-34be-48c7-abc8-370e0e951ca1"
      ]
     },
-    "bc0cca2f-84a7-49e3-90a7-578df99f7219": {
-     "title": "Byggekvalitet og design",
-     "id": "bc0cca2f-84a7-49e3-90a7-578df99f7219",
+    "f9262ec0-c04d-4fbe-8872-e822ca42e5e6": {
+     "title": "Byggekvalitet",
+     "id": "f9262ec0-c04d-4fbe-8872-e822ca42e5e6",
      "references": [
       "221d62dd-3b40-4986-bc41-bb2377f14568",
       "1ec8fe12-8a82-476a-8422-83ab18a6e226",
       "85995d05-bbf9-4151-ba1c-5a6778ef0f71",
       "f0148b86-692d-408c-a42c-d037562d2770",
       "12d942b4-963b-4e5c-b8d6-2a51524f11ac",
-      "30735139-29e7-403f-b14e-5c21332a32c6",
-      "6e38ff9f-601b-4f66-b5a7-ceadbe6f07f2",
       "58596aff-3103-4a8d-9d95-c8e77363a849",
-      "802493f5-5689-43aa-8283-337f7d62aa3e"
-     ]
-    },
-    "93d86e37-9ed7-44ec-b182-583894fac877": {
-     "title": "Installation og pasform",
-     "id": "93d86e37-9ed7-44ec-b182-583894fac877",
-     "references": [
-      "1ec8fe12-8a82-476a-8422-83ab18a6e226",
-      "ef643451-f183-41ea-afde-c652109b9c1f",
-      "7b9d7e56-0b8d-4597-9de9-9a9e239683ac",
-      "558070d0-4011-4691-bec0-7d317863b17d",
-      "c4c227ed-a7da-4dd2-976e-42f7c35456cf",
-      "ed60985d-446f-4283-aca6-4bfb6005c593",
-      "5cdb7b54-b35a-4446-aa0b-e2c6f917f1d6"
+      "802493f5-5689-43aa-8283-337f7d62aa3e",
+      "6e38ff9f-601b-4f66-b5a7-ceadbe6f07f2"
      ]
     }
    },

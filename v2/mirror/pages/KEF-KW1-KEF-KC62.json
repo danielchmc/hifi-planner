@@ -13,6 +13,15 @@
    "url": "/hojtalere/subwoofer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "be7dd9ae-e6b9-4719-85b3-86c826b16fe1",
+   "066d18d2-e882-4bc6-8ce6-e0b2037164bf",
+   "59759988-d79f-4bcb-87ce-ed0f05294d69"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 228445,
   "skuCode": "KEF-KW1-KEF-KC62",
@@ -86,7 +95,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 57,
+        "availableQuantity": 56,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.970,-",
@@ -110,7 +119,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 15,
+        "availableQuantity": 14,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.970,-",
@@ -143,7 +152,133 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFKC62"
+     "parentProductCode": "KEFKC62",
+     "reviews": {
+      "summary": "KEFKC62 roses bredt som en kompakt high-end-subwoofer, der leverer dyb, ren, slagkraftig og musikalsk bas, som beriger musik, film og aktive højttalersystemer markant. Integrationen beskrives generelt som problemfri og velafbalanceret med stærke kombinationer med blandt andre KEF, Lyngdorf, Dynaudio og Magnepan. Det elegante, pladsbesparende design og den enkle opsætning er store styrker, men flere anmeldelser nævner forstyrrende dvaletilstand ved lav lydstyrke samt lejlighedsvis overdreven eller rungende bas ved forkert justering.",
+      "headlines": {
+       "compact and attractive design": {
+        "sentimentAnalysis": "De kompakte mål, det flotte design og den høje ydelse roses ofte samlet.",
+        "simpleTitle": "Kompakt og attraktivt design",
+        "bias": "positive",
+        "key": "design",
+        "groupId": "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6"
+       },
+       "deep, clean and musical bass": {
+        "sentimentAnalysis": "Anmeldelserne roser den dybe, rene, præcise og musikalske lyd.",
+        "simpleTitle": "Dyb, ren og musikalsk bas",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "0ae608e2-6564-4622-81c5-f299b3c8570e"
+       },
+       "a powerful boost for music and films": {
+        "sentimentAnalysis": "Mere bund, slagkraft og rumfornemmelse forbedrer lytteoplevelsen markant.",
+        "simpleTitle": "Et kraftfuldt løft til musik og film",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "0ae608e2-6564-4622-81c5-f299b3c8570e"
+       },
+       "seamless system matching": {
+        "sentimentAnalysis": "Subwooferen integreres ifølge flere anmeldelser naturligt med højttalerne og forbedrer balancen.",
+        "simpleTitle": "Problemfri systemintegration",
+        "bias": "positive",
+        "key": "integration",
+        "groupId": "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a"
+       },
+       "sleep mode interrupts quiet listening": {
+        "sentimentAnalysis": "Flere anmeldelser melder om for tidlig aktivering af dvaletilstand eller kliklyde ved stille musik og tv.",
+        "simpleTitle": "Dvaletilstand forstyrrer stille lytning",
+        "bias": "negative",
+        "key": "sleep-mode",
+        "groupId": "13abdb13-af6e-4134-b596-4b5b808d2762"
+       }
+      },
+      "grouping": {
+       "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a": {
+        "title": "Systemintegration",
+        "id": "d38eaed1-e40a-4b90-9d7c-8c379e2a3f9a",
+        "references": [
+         "58b3f90b-9e1e-47b9-b11c-bc1ac04a5c24",
+         "9054a313-2501-4764-bd5f-34d944e029d8",
+         "7e0308c4-b344-49cd-93fa-5df6499399a8",
+         "296ecb28-5df0-47e6-ad0c-bf80d37b3e3a",
+         "2824c9ce-f1c1-4752-8e11-33d2257f656f",
+         "a606ce56-0934-4949-98e1-cd786219fa02",
+         "a89a6d10-d8fb-456d-9ffc-f0fd1c5c0c33",
+         "27244dd3-d4de-4bed-8639-72c17d60fc36",
+         "e82cee89-ab03-4f61-9380-f0fd0c1038d9",
+         "9b30f9ab-ab84-4832-844c-376381c30cc4",
+         "17fbfc2d-b955-46cc-9608-34b715cfa4d7",
+         "e02d90e2-0cbf-4ff9-8e3c-8e9661d4ad20",
+         "7ba29448-57d9-4a84-b630-92ddb1b565ed",
+         "4a6951f9-f5fd-40a3-aef0-cee7341f7a4d",
+         "4383dd2c-63a7-488f-9c6f-d43b90e62b8a",
+         "3ff04016-9e93-41d9-b534-fcda18138feb",
+         "9382e65e-ab99-422c-b68c-b69e70cf113b",
+         "f358c620-3d26-4454-ab1f-6dd58c711a87",
+         "be5f709b-f4b3-48d6-8af5-2ccfb30e71ba",
+         "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
+         "e680cf73-4831-4cee-852d-7d77030cea88"
+        ]
+       },
+       "0ae608e2-6564-4622-81c5-f299b3c8570e": {
+        "title": "Lydkvalitet",
+        "id": "0ae608e2-6564-4622-81c5-f299b3c8570e",
+        "references": [
+         "58b3f90b-9e1e-47b9-b11c-bc1ac04a5c24",
+         "81b224e0-2ef4-4f09-aaa4-f61fc2bfd336",
+         "9054a313-2501-4764-bd5f-34d944e029d8",
+         "a606ce56-0934-4949-98e1-cd786219fa02",
+         "e166d88f-96b1-4469-bd2f-61a114702380",
+         "a89a6d10-d8fb-456d-9ffc-f0fd1c5c0c33",
+         "27244dd3-d4de-4bed-8639-72c17d60fc36",
+         "e82cee89-ab03-4f61-9380-f0fd0c1038d9",
+         "c973ec80-3923-41ca-b26d-009340d42342",
+         "6dcc11ff-93c1-4589-8512-d8f7c56182c0",
+         "7f05af2e-4762-4ab0-8e28-e7d70ab0dee9",
+         "f9dddfcc-bfe7-4ca6-9689-72e616d2de14",
+         "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c",
+         "92ba40c9-737d-4a8e-b293-aa9e86bd8774",
+         "e680cf73-4831-4cee-852d-7d77030cea88",
+         "fe9c2080-dbe2-47ee-92d2-63f946ef3c4e"
+        ]
+       },
+       "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6": {
+        "title": "Design og størrelse",
+        "id": "9a3f0ed3-2d17-46fd-bf3f-f79c879d26f6",
+        "references": [
+         "81b224e0-2ef4-4f09-aaa4-f61fc2bfd336",
+         "7e0308c4-b344-49cd-93fa-5df6499399a8",
+         "2ce0ce7c-611a-441b-81ed-be23149b184c",
+         "e166d88f-96b1-4469-bd2f-61a114702380",
+         "cd5da773-3bf1-4960-b336-985504b25276",
+         "4383dd2c-63a7-488f-9c6f-d43b90e62b8a",
+         "c973ec80-3923-41ca-b26d-009340d42342",
+         "7f05af2e-4762-4ab0-8e28-e7d70ab0dee9",
+         "f9dddfcc-bfe7-4ca6-9689-72e616d2de14",
+         "bbbd55fd-43cd-47cb-ad22-b1d145a4ad5c"
+        ]
+       },
+       "13abdb13-af6e-4134-b596-4b5b808d2762": {
+        "title": "Dvaletilstand",
+        "id": "13abdb13-af6e-4134-b596-4b5b808d2762",
+        "references": [
+         "2ce0ce7c-611a-441b-81ed-be23149b184c",
+         "cd5da773-3bf1-4960-b336-985504b25276",
+         "fe9c2080-dbe2-47ee-92d2-63f946ef3c4e"
+        ]
+       }
+      },
+      "rating": 4.85507246376812,
+      "count": 69,
+      "reviewCount": 38,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 3,
+       "4": 4,
+       "5": 62
+      }
+     }
     },
     {
      "brand": "KEF",
@@ -176,34 +311,34 @@
      ],
      "parentProductCode": "KEFKW1KIT",
      "reviews": {
-      "summary": "KEF KW1KIT giver en varm følelse af bekvemmelighed med enkel installation, stabil trådløs forbindelse og fleksibel placering af subwooferen uden kabel. Kompatibiliteten med KEF-subwoofere er overbevisende, og flere opsætninger fungerer problemfrit. Den høje pris og én usædvanligt lang leveringstid dæmper en ellers begejstret vurdering en smule.",
+      "summary": "KEF KW1KIT imponerer med hurtig, enkel installation og en stabil trådløs forbindelse. Adapteren gør det muligt at placere subwooferen pænt uden kabler og integreres problemfrit med kompatible KEF-systemer. Bekvemmeligheden føles pengene værd trods den lidt høje pris og bidrager til et ryddeligt, punchy og immersivt bas-setup.",
       "headlines": {
-       "simple, fast installation": {
-        "sentimentAnalysis": "Installationen beskrives gentagne gange som enkel, hurtig og problemfri.",
-        "simpleTitle": "Enkel og hurtig installation",
+       "quick and easy installation": {
+        "sentimentAnalysis": "Installationen beskrives konsekvent som enkel, hurtig og problemfri.",
+        "simpleTitle": "Hurtig og enkel installation",
         "bias": "positive",
-        "key": "simple-installation",
-        "groupId": "90176c21-5b15-4ca8-b016-a77af128e6af"
+        "key": "installation",
+        "groupId": "e18f0849-7640-4af3-8f69-16e3d0e49c93"
        },
        "reliable wireless performance": {
-        "sentimentAnalysis": "Den trådløse forbindelse beskrives som god, stabil og fuldt funktionsdygtig i flere kompatible opsætninger.",
+        "sentimentAnalysis": "Den trådløse forbindelse beskrives som god, stabil og fungerende som forventet.",
         "simpleTitle": "Stabil trådløs ydeevne",
         "bias": "positive",
-        "key": "reliable-wireless-performance",
-        "groupId": "012b41f2-79f9-4dde-a1e3-9f6d0d42f996"
+        "key": "wireless",
+        "groupId": "239efa8c-17c7-4e9b-9745-303ff10609ff"
        },
-       "flexible subwoofer placement without cables": {
-        "sentimentAnalysis": "Kabelfri drift giver en mere ryddelig og fleksibel placering af subwooferen.",
-        "simpleTitle": "Fleksibel placering af subwoofer uden kabler",
+       "freedom from unnecessary cables": {
+        "sentimentAnalysis": "Kabelfri placering af subwooferen værdsættes for større fleksibilitet og mindre visuelt rod.",
+        "simpleTitle": "Frihed fra unødvendige kabler",
         "bias": "positive",
-        "key": "flexible-cable-free-placement",
-        "groupId": "edc68bd7-37b5-4182-8d36-20f9abca6e55"
+        "key": "cable-free-placement",
+        "groupId": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347"
        }
       },
       "grouping": {
-       "90176c21-5b15-4ca8-b016-a77af128e6af": {
+       "e18f0849-7640-4af3-8f69-16e3d0e49c93": {
         "title": "Installation",
-        "id": "90176c21-5b15-4ca8-b016-a77af128e6af",
+        "id": "e18f0849-7640-4af3-8f69-16e3d0e49c93",
         "references": [
          "2ee1ab35-dea9-47e5-ae22-6b1fa530c385",
          "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
@@ -213,9 +348,9 @@
          "6c0d518f-d1d2-4150-b949-ccdc90430d9d"
         ]
        },
-       "012b41f2-79f9-4dde-a1e3-9f6d0d42f996": {
+       "239efa8c-17c7-4e9b-9745-303ff10609ff": {
         "title": "Trådløs forbindelse",
-        "id": "012b41f2-79f9-4dde-a1e3-9f6d0d42f996",
+        "id": "239efa8c-17c7-4e9b-9745-303ff10609ff",
         "references": [
          "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
          "325378e8-cba6-42dc-b04c-710984eab3e0",
@@ -224,9 +359,9 @@
          "2e5868c2-5071-4703-8449-68a4193ec25f"
         ]
        },
-       "edc68bd7-37b5-4182-8d36-20f9abca6e55": {
-        "title": "Placering uden kabler",
-        "id": "edc68bd7-37b5-4182-8d36-20f9abca6e55",
+       "4b19d2e9-946b-4dbb-a63f-e23da7c4d347": {
+        "title": "Kabelfri placering",
+        "id": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347",
         "references": [
          "325378e8-cba6-42dc-b04c-710984eab3e0",
          "a270a5f7-a641-4f02-942b-ba709fb29fac",

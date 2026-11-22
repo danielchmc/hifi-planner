@@ -13,6 +13,17 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "b15a1161-2ac6-4344-a21a-bf09888c9445",
+   "4e9bf7cd-2db7-4ae6-8336-9997d210c0a3",
+   "0daeecab-0c15-4f4d-871d-fe35e747c74f",
+   "159748c7-c770-4a36-bb6a-af18f35ab0e2",
+   "87edab20-f31c-41ef-9aa9-8658d10dca38"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 299822,
   "skuCode": "SOUNDBOKS4-BATTERYBOKS-SOUNDBACKPACK2",
@@ -119,7 +130,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 395,
+        "availableQuantity": 382,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.199,-",
@@ -131,80 +142,89 @@
      ],
      "parentProductCode": "SOUNDBATTERYBOKSUSBC",
      "reviews": {
-      "summary": "SOUNDBATTERYBOKSUSBC roses bredt for lang batteritid, høj effekt, praktisk USB-C-opladning og muligheden for at holde en Soundboks klar til længere arrangementer. Ekstra batterier gør kontinuerlig, punchy og omsluttende lyd nemt, mens opladning under brug ses som en værdifuld forbedring. Enkelte forbehold består: Nogle opladere leverer ikke nok strøm, ét batteri gik i stykker efter længere tids brug, og prisen opleves som høj.",
+      "summary": "SOUNDBOKS-batterier leverer lang og pålidelig batteritid og gør det nemt at holde gang i en langvarig, punchy og medrivende afspilning. Ekstra batterier holder festen kørende, mens USB-C-opladning og opladning under brug giver stor fleksibilitet. Batterisystemet er kompakt og kraftfuldt, men nogle opladningsopsætninger kræver en tilstrækkeligt kraftig oplader, og enkelte langtidsfejl er blevet rapporteret.",
       "headlines": {
-       "long-lasting battery": {
-        "sentimentAnalysis": "Batteriet giver imponerende udholdenhed til lange arrangementer og langvarig afspilning.",
+       "long battery life": {
+        "sentimentAnalysis": "Anmeldelserne roser batteriets lange driftstid ved længere tids brug af højttaleren.",
         "simpleTitle": "Lang batteritid",
         "bias": "positive",
-        "key": "battery_runtime",
-        "groupId": "d7fb2dea-75b0-4dd8-972a-8dbcce55c17d"
+        "key": "long-battery-life",
+        "groupId": "557fa7b5-5f99-426e-bc61-70bd8c2059af"
        },
-       "extra batteries keep playback going": {
-        "sentimentAnalysis": "Udskiftning af opladede batterier værdsættes for uafbrudt afspilning under arrangementer.",
-        "simpleTitle": "Ekstra batterier holder musikken kørende",
+       "extra batteries extend uninterrupted playback": {
+        "sentimentAnalysis": "Udskiftelige ekstra batterier værdsættes, fordi de holder højttaleren klar og forhindrer unødvendige afbrydelser.",
+        "simpleTitle": "Ekstra batterier forlænger uafbrudt afspilning",
         "bias": "positive",
-        "key": "extra_battery",
-        "groupId": "c1a5120e-7213-4e10-98c1-e5c6e99f0956"
+        "key": "uninterrupted-playback",
+        "groupId": "3185ce26-fcc3-4b3f-b873-2f31833da654"
        },
        "convenient USB-C charging": {
-        "sentimentAnalysis": "USB-C-opladning opleves som enkel og markant bedre end den tidligere opladningsmetode, og opladning under brug er en ekstra fordel.",
+        "sentimentAnalysis": "USB-C-opladning opfattes som enkel, moderne og en klar forbedring i forhold til den tidligere opladningsmetode.",
         "simpleTitle": "Praktisk USB-C-opladning",
         "bias": "positive",
-        "key": "charging",
-        "groupId": "39367727-05bb-4584-83ca-c0710f82997c"
+        "key": "usb-c-charging",
+        "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
        },
-       "a powerful charger is required": {
-        "sentimentAnalysis": "Opladningskomforten begrænses, når en almindelig USB-C-oplader med lav effekt ikke leverer nok strøm.",
-        "simpleTitle": "En kraftig oplader er nødvendig",
+       "some chargers lack sufficient power": {
+        "sentimentAnalysis": "Opladning kan kræve en tilstrækkeligt kraftig USB-C-oplader, og standardalternativer virker ikke altid.",
+        "simpleTitle": "Nogle opladere leverer ikke nok strøm",
         "bias": "negative",
-        "key": "charging",
-        "groupId": "39367727-05bb-4584-83ca-c0710f82997c"
+        "key": "charger-power-requirement",
+        "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
        },
-       "reliable over long-term use": {
-        "sentimentAnalysis": "Lang levetid understøttes af flere års daglig brug og effektiv hjælp med udskiftning efter et batterisvigt.",
-        "simpleTitle": "Pålidelig ved langvarig brug",
+       "charging while playing": {
+        "sentimentAnalysis": "Muligheden for at have batteriet tilsluttet under afspilning roses som en praktisk forbedring.",
+        "simpleTitle": "Opladning under afspilning",
         "bias": "positive",
-        "key": "reliability",
-        "groupId": "7523cc87-0b77-47e6-987e-3514fd1c40d9"
+        "key": "charging-while-playing",
+        "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
+       },
+       "mixed long-term reliability": {
+        "sentimentAnalysis": "Langtidserfaringerne er blandede: Daglig brug over lang tid kan fungere problemfrit, men enkelte batterier er gået i stykker og har krævet udskiftning.",
+        "simpleTitle": "Blandet langsigtet driftssikkerhed",
+        "bias": "meh",
+        "key": "long-term-reliability",
+        "groupId": "c037f797-bdb7-42d2-89d8-d71fb783b202"
        }
       },
       "grouping": {
-       "d7fb2dea-75b0-4dd8-972a-8dbcce55c17d": {
-        "title": "Batteritid",
-        "id": "d7fb2dea-75b0-4dd8-972a-8dbcce55c17d",
-        "references": [
-         "a802a422-cc1a-4221-a43d-9a516ed7509f",
-         "34b52919-c2bf-477c-ad94-6cbe734dc647",
-         "28dff4f5-4abc-4a5c-abba-a2cc8abf0b81",
-         "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
-         "ce31fba4-4eed-44fe-a3f9-b9d23874d47a"
-        ]
-       },
-       "39367727-05bb-4584-83ca-c0710f82997c": {
+       "384f0a67-a1dd-40bb-881f-73228052baf8": {
         "title": "Opladning",
-        "id": "39367727-05bb-4584-83ca-c0710f82997c",
+        "id": "384f0a67-a1dd-40bb-881f-73228052baf8",
         "references": [
          "88f8d04b-da30-4800-b72c-6e9d9b91b7c8",
          "50129367-95d1-46ad-8f47-80a225ebc133",
+         "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
          "25e2a57c-c156-4f85-8762-4ec46627f1b5",
          "db79896a-23de-4f43-bc09-9fa6c1d7e24c",
+         "3479473a-deda-4148-9488-49f9f92d2ef0"
+        ]
+       },
+       "557fa7b5-5f99-426e-bc61-70bd8c2059af": {
+        "title": "Batteritid",
+        "id": "557fa7b5-5f99-426e-bc61-70bd8c2059af",
+        "references": [
+         "a802a422-cc1a-4221-a43d-9a516ed7509f",
+         "2ae700b7-bd2e-4751-97cc-1b841898d662",
+         "28dff4f5-4abc-4a5c-abba-a2cc8abf0b81",
+         "34b52919-c2bf-477c-ad94-6cbe734dc647",
          "35a284c9-0edc-400e-a2af-1b8ea7e631cf"
         ]
        },
-       "c1a5120e-7213-4e10-98c1-e5c6e99f0956": {
-        "title": "Ekstra batteri",
-        "id": "c1a5120e-7213-4e10-98c1-e5c6e99f0956",
+       "3185ce26-fcc3-4b3f-b873-2f31833da654": {
+        "title": "Ekstra batterier",
+        "id": "3185ce26-fcc3-4b3f-b873-2f31833da654",
         "references": [
+         "a802a422-cc1a-4221-a43d-9a516ed7509f",
          "8712ac3a-2b70-4e71-89b5-723f3c7244cb",
          "ce31fba4-4eed-44fe-a3f9-b9d23874d47a",
-         "33596b7c-25a9-4190-8f54-bd5025b59448",
-         "35a284c9-0edc-400e-a2af-1b8ea7e631cf"
+         "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
+         "33596b7c-25a9-4190-8f54-bd5025b59448"
         ]
        },
-       "7523cc87-0b77-47e6-987e-3514fd1c40d9": {
-        "title": "Pålidelighed",
-        "id": "7523cc87-0b77-47e6-987e-3514fd1c40d9",
+       "c037f797-bdb7-42d2-89d8-d71fb783b202": {
+        "title": "Driftsikkerhed",
+        "id": "c037f797-bdb7-42d2-89d8-d71fb783b202",
         "references": [
          "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
          "51e3735c-03b2-4b4e-964d-81c16e2b3b6f"
@@ -243,7 +263,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 96,
+        "availableQuantity": 93,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "799,-",
@@ -255,25 +275,39 @@
      ],
      "parentProductCode": "SOUNDBACKPACK2",
      "reviews": {
-      "summary": "SOUNDBACKPACK2 gør det enkelt, praktisk og behageligt at transportere højttaleren og tage musik med på farten. Rygsækken roses for sin enkle betjening og effektive transportløsning, som giver en varm følelse af frihed og bekvemmelighed. Højttalerens vægt og høje placering kan dog mindske komforten under gang, men helhedsindtrykket er stadig meget positivt og mobilt.",
+      "summary": "SOUNDBACKPACK2 gør transporten af højttaleren praktisk, nem og overraskende behagelig. Det robuste rygsækdesign gør det muligt at nyde fyldig, punchy og immersiv lyd undervejs. Højttalerens vægt kan gøre det besværligt at gå, og et regnslag ville være en god tilføjelse.",
       "headlines": {
        "easy and practical to carry": {
-        "sentimentAnalysis": "Rygsækken opleves som nem at bruge og velegnet til at bære højttaleren over længere afstande.",
+        "sentimentAnalysis": "Rygsækken anses for at være en effektiv og praktisk måde at transportere højttaleren på, også mens musikken spiller.",
         "simpleTitle": "Nem og praktisk at bære",
         "bias": "positive",
         "key": "transport",
-        "groupId": "790d6e71-1a3e-4708-a5c4-a1511393a229"
+        "groupId": "1623e561-e85a-4140-ae7c-dac40051d3a9"
+       },
+       "simple to use": {
+        "sentimentAnalysis": "Rygsækken roses for at være enkel og behagelig at bruge.",
+        "simpleTitle": "Nem at bruge",
+        "bias": "positive",
+        "key": "usability",
+        "groupId": "95ac2ab2-e8f4-4f75-be07-555b80039da4"
        }
       },
       "grouping": {
-       "790d6e71-1a3e-4708-a5c4-a1511393a229": {
-        "title": "Transport og brugervenlighed",
-        "id": "790d6e71-1a3e-4708-a5c4-a1511393a229",
+       "1623e561-e85a-4140-ae7c-dac40051d3a9": {
+        "title": "Transport",
+        "id": "1623e561-e85a-4140-ae7c-dac40051d3a9",
         "references": [
          "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
          "3e579c9b-ea8e-490c-8b27-86f1158031c5",
          "dcda85ff-058a-478b-95db-5bb8282b96a3",
-         "3103b24d-50cb-486c-98fc-5d2b71dcb92a",
+         "3103b24d-50cb-486c-98fc-5d2b71dcb92a"
+        ]
+       },
+       "95ac2ab2-e8f4-4f75-be07-555b80039da4": {
+        "title": "Brugervenlighed",
+        "id": "95ac2ab2-e8f4-4f75-be07-555b80039da4",
+        "references": [
+         "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
          "457e29c1-ffc0-410a-95d0-850fca255caa"
         ]
        }
@@ -310,7 +344,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 206,
+        "availableQuantity": 174,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.999,-",
@@ -333,7 +367,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 40,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.999,-",
@@ -345,70 +379,60 @@
      ],
      "parentProductCode": "SOUNDBOKS4BB4",
      "reviews": {
-      "summary": "SOUNDBOKS4BB4 leverer en kraftfuld, punchy og overraskende klar lyd med imponerende bas, dynamik og volumen til fester, festivaler og udendørs brug. Den lange batteritid, robuste konstruktion og enkle appstyring gør højttaleren praktisk og pålidelig, mens muligheden for at forbinde flere enheder giver ekstra fleksibilitet. Enkelte anmeldelser nævner skuffende bas, langsom Bluetooth-parring, manglende opladningstilbehør og en høj pris, men det samlede indtryk er meget begejstret.",
+      "summary": "SOUNDBOKS4BB4 leverer en varm, slagkraftig og medrivende lyd med imponerende volumen, tydelig dynamik og stærk ydeevne udendørs. Den lange batteritid, robuste konstruktion og bærbarhed gør højttaleren særligt velegnet til fester, festivaler og arrangementer. Opsætning og app-styring er generelt enkel, men basbalancen, Bluetooth-rækkevidden samt enkelte hardware- og tilbehørsproblemer kritiseres.",
       "headlines": {
-       "powerful, clear sound with strong bass and dynamics": {
-        "sentimentAnalysis": "Anmeldelserne roser den høje, klare, varme og dynamiske gengivelse med især meget tryk og bas.",
-        "simpleTitle": "Kraftfuld, klar lyd med stærk bas og høj dynamik",
+       "powerful, clear and dynamic sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den høje volumen, klare gengivelse, markante bas og overraskende stærke dynamik.",
+        "simpleTitle": "Kraftfuld, klar og dynamisk lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "8bd248e2-89de-4a39-9f43-75e5aad237b6"
+        "groupId": "3c08a25d-1ff7-4978-99e0-608deebde8e9"
        },
-       "long-lasting battery supports all-day use": {
-        "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt batteriet som kraftfuldt, pålideligt og i stand til at holde gennem lange arrangementer eller hele weekender.",
-        "simpleTitle": "Lang batteritid til brug hele dagen",
+       "long-lasting batteries support full-day events": {
+        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som fremragende, også til weekender og festivaler.",
+        "simpleTitle": "Lang batteritid til hele dage",
         "bias": "positive",
         "key": "battery",
-        "groupId": "69b1620d-8907-4175-83be-7aacdc43cc60"
+        "groupId": "61a93e48-54ce-40db-ad9d-fee84ae61918"
        },
-       "simple setup and app control": {
-        "sentimentAnalysis": "Flere anmeldelser fremhæver nem opsætning, appstyring og praktisk sammenkobling af flere højttalere.",
+       "rugged and highly portable for outdoor use": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter den robuste konstruktion, bærbarheden og egnetheden til udendørs fester, festivaler og aktiv brug.",
+        "simpleTitle": "Robust og meget bærbar til udendørs brug",
+        "bias": "positive",
+        "key": "portability",
+        "groupId": "416f036b-0261-4791-9915-7da1de26fce4"
+       },
+       "easy setup and app control": {
+        "sentimentAnalysis": "Flere anmeldelser fremhæver enkel opsætning, appstyring og nem sammenkobling af flere højttalere.",
         "simpleTitle": "Nem opsætning og appstyring",
         "bias": "positive",
-        "key": "connectivity",
-        "groupId": "7f37132d-02ee-4f3a-8f8c-bf684e6e4ce6"
+        "key": "setup",
+        "groupId": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406"
        },
-       "rugged construction suits outdoor use": {
-        "sentimentAnalysis": "Anmeldelserne roser kvaliteten, robustheden og egnetheden til krævende udendørsaktiviteter.",
-        "simpleTitle": "Robust konstruktion til udendørs brug",
-        "bias": "positive",
-        "key": "durability",
-        "groupId": "44c59eec-5be4-42e4-a59a-1588f13e1c69"
-       },
-       "charging accessories are not included": {
-        "sentimentAnalysis": "Anmeldelserne kritiserer, at opladningstilbehør skal købes eller skaffes separat, hvilket giver ekstra omkostninger eller forhindrer øjeblikkelig brug.",
-        "simpleTitle": "Opladningstilbehør medfølger ikke",
-        "bias": "negative",
-        "key": "accessories",
-        "groupId": "a1e895f0-6cfb-48d3-956f-bece7f4b6a34"
-       },
-       "bass balance can fall short of expectations": {
-        "sentimentAnalysis": "To anmeldelser oplever, at bassen er for tilbageholdende i forhold til prisen eller mangler noget.",
-        "simpleTitle": "Basgengivelsen kan skuffe",
+       "bass can feel underpowered": {
+        "sentimentAnalysis": "Nogle anmeldelser finder bassen skuffende i forhold til prisen og den ellers stærke lyd.",
+        "simpleTitle": "Bassen kan virke for svag",
         "bias": "negative",
         "key": "sound",
-        "groupId": "8bd248e2-89de-4a39-9f43-75e5aad237b6"
+        "groupId": "3c08a25d-1ff7-4978-99e0-608deebde8e9"
        },
-       "bluetooth pairing and range can be frustrating": {
-        "sentimentAnalysis": "To anmeldelser rapporterer om langsom parring eller begrænset Bluetooth-rækkevidde; i den ene virkede en trådløs mikrofon heller ikke.",
-        "simpleTitle": "Bluetooth-parring og rækkevidde kan være frustrerende",
+       "bluetooth pairing and range need improvement": {
+        "sentimentAnalysis": "Nogle brugere rapporterer langsom Bluetooth-parring og begrænset rækkevidde, og én kunne heller ikke bruge en trådløs mikrofon.",
+        "simpleTitle": "Bluetooth-parring og rækkevidde kan forbedres",
         "bias": "negative",
-        "key": "connectivity",
-        "groupId": "7f37132d-02ee-4f3a-8f8c-bf684e6e4ce6"
+        "key": "setup",
+        "groupId": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406"
        }
       },
       "grouping": {
-       "8bd248e2-89de-4a39-9f43-75e5aad237b6": {
+       "3c08a25d-1ff7-4978-99e0-608deebde8e9": {
         "title": "Lydkvalitet",
-        "id": "8bd248e2-89de-4a39-9f43-75e5aad237b6",
+        "id": "3c08a25d-1ff7-4978-99e0-608deebde8e9",
         "references": [
-         "696d00ba-9b26-418d-8e55-41d04f65ab50",
          "97c9e110-fd79-4822-929e-d836a6f347d3",
-         "c5cb843f-5db7-4992-8030-fe0677d8ec73",
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "6a4967e5-fdd0-4640-ae10-4e7b0107e262",
          "39cd76db-6552-48f0-9010-ffbb158837a4",
-         "94d78438-9d6d-4595-bd5f-aadf00579afa",
          "c1e26889-ce5f-4715-8d2f-9d9fa5ce9447",
          "0429b95c-59c5-403f-a705-30fb7742663c",
          "788744b0-068d-468e-b039-68bb9c4f7717",
@@ -416,7 +440,6 @@
          "4fb6f3a0-0202-477b-b0e9-98f15c90fb32",
          "1bccab0c-ca53-46e9-99c2-77fcb32ee109",
          "7b3fee1c-1862-4809-bdfe-f0fa09abf673",
-         "ea3d2240-97e7-4150-9873-c7736b3ced04",
          "0bf5d731-967f-4e38-bc52-573973d36341",
          "a71adf28-3a04-4379-9a2f-a167b6e8235d",
          "4c536d0b-b1bd-4481-8ae0-e5d5419d6bcd",
@@ -430,7 +453,6 @@
          "52a9f76d-e9dd-4668-b01a-6c7ce77c81c7",
          "e458ed7f-ee15-410d-92f5-2d3698b7536d",
          "f2bce601-d16d-4c5a-89f2-b30aacfbfed8",
-         "29b1f241-2836-49e4-be2e-10c1eb5ee12e",
          "1af16a3d-b501-4fc2-9dd2-d42ed0de4713",
          "100ebc06-2bb3-424c-86a0-aa083173dc80",
          "b9a1d935-2b7c-40ab-9fa6-954fbb5efa41",
@@ -442,13 +464,12 @@
          "f351aca2-1653-4113-b614-089c5b05a1ab",
          "419ebf3f-1c20-4f0c-90bd-7d339e60672e",
          "ea9ba595-e84d-44c0-9588-25f4adf622b8",
-         "bf62d835-3838-4f71-b7aa-cad9a9bdda52",
          "0014da28-aab7-4628-b069-23041abd10a6"
         ]
        },
-       "69b1620d-8907-4175-83be-7aacdc43cc60": {
+       "61a93e48-54ce-40db-ad9d-fee84ae61918": {
         "title": "Batteritid",
-        "id": "69b1620d-8907-4175-83be-7aacdc43cc60",
+        "id": "61a93e48-54ce-40db-ad9d-fee84ae61918",
         "references": [
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "6a4967e5-fdd0-4640-ae10-4e7b0107e262",
@@ -456,48 +477,36 @@
          "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
          "cfac94ef-285b-4453-9ed8-6cc5632fc29d",
          "15d96995-b232-401e-a137-48808d8ba5c6",
-         "52a9f76d-e9dd-4668-b01a-6c7ce77c81c7",
          "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
-         "12f09704-3bcb-4525-9e65-ce50bb2da8b9",
          "f351aca2-1653-4113-b614-089c5b05a1ab",
          "46d32b1f-595c-4d44-b0be-a4b7061ee55b",
          "419ebf3f-1c20-4f0c-90bd-7d339e60672e",
          "bf62d835-3838-4f71-b7aa-cad9a9bdda52"
         ]
        },
-       "7f37132d-02ee-4f3a-8f8c-bf684e6e4ce6": {
+       "416f036b-0261-4791-9915-7da1de26fce4": {
+        "title": "Bærbarhed og holdbarhed",
+        "id": "416f036b-0261-4791-9915-7da1de26fce4",
+        "references": [
+         "c1e26889-ce5f-4715-8d2f-9d9fa5ce9447",
+         "9cf418c8-5e58-4300-987a-5cf4e4b8a01d",
+         "b9a1d935-2b7c-40ab-9fa6-954fbb5efa41",
+         "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
+         "9c7aafd2-a905-4568-8b25-6c9cda090d24",
+         "c340f3b2-1c0f-48ff-a5c3-c5b35a5a48ad",
+         "bf62d835-3838-4f71-b7aa-cad9a9bdda52",
+         "f351aca2-1653-4113-b614-089c5b05a1ab"
+        ]
+       },
+       "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406": {
         "title": "Opsætning og forbindelse",
-        "id": "7f37132d-02ee-4f3a-8f8c-bf684e6e4ce6",
+        "id": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406",
         "references": [
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "7b3fee1c-1862-4809-bdfe-f0fa09abf673",
          "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
          "b1793cbb-0dbc-4770-a986-f55dc6d5ccbf",
-         "23cd557d-0007-425d-ad1c-307411dd5e91",
-         "15d96995-b232-401e-a137-48808d8ba5c6",
-         "bf62d835-3838-4f71-b7aa-cad9a9bdda52"
-        ]
-       },
-       "44c59eec-5be4-42e4-a59a-1588f13e1c69": {
-        "title": "Konstruktion og mobilitet",
-        "id": "44c59eec-5be4-42e4-a59a-1588f13e1c69",
-        "references": [
-         "c1e26889-ce5f-4715-8d2f-9d9fa5ce9447",
-         "0429b95c-59c5-403f-a705-30fb7742663c",
-         "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
-         "9c7aafd2-a905-4568-8b25-6c9cda090d24",
-         "b9a1d935-2b7c-40ab-9fa6-954fbb5efa41",
-         "bf62d835-3838-4f71-b7aa-cad9a9bdda52"
-        ]
-       },
-       "a1e895f0-6cfb-48d3-956f-bece7f4b6a34": {
-        "title": "Tilbehør og opladning",
-        "id": "a1e895f0-6cfb-48d3-956f-bece7f4b6a34",
-        "references": [
-         "fedf6f59-5dcd-4262-a59b-734c2076ff53",
-         "e074fe6a-eaba-4650-9a0f-bcfa5d1435f8",
-         "12f09704-3bcb-4525-9e65-ce50bb2da8b9",
-         "419ebf3f-1c20-4f0c-90bd-7d339e60672e"
+         "23cd557d-0007-425d-ad1c-307411dd5e91"
         ]
        }
       },
@@ -519,7 +528,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 16
+    "numberOfStoresExperience": 15
    }
   },
   "variantNavigationType": "dropDown",

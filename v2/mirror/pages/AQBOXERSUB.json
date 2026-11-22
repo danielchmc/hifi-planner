@@ -13,6 +13,15 @@
    "url": "/kabler/subwoofer-kabel/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Tilslutning : RCA"
+  },
+  "gallery": [
+   "51ba9204-6ae9-4c0b-9c0d-40c3b6bda4fb"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 31529,
   "skuCode": "AQBOXERSUB",
@@ -203,11 +212,12 @@
      "productCode": "AQBOXERSUB3,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 10,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -435,11 +445,11 @@
      "productCode": "AQBOXERSUB12,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 06. december",
-     "deliveryDate": "2026-12-06T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -613,40 +623,32 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQBOXERSUB får stor ros for ren signaloverførsel i høj kvalitet til subwoofere med en kontant bas, stærk dynamik og tydelige forbedringer sammenlignet med standardkabler. Kablet kan også fjerne brum fra subwooferen, selv om den høje pris bliver bemærket. Samlet set giver AQBOXERSUB en omsluttende og kraftfuld opgradering af subwoofersystemer.",
+   "summary": "AQBOXERSUB leverer et varmt, dynamisk og meget detaljeret subwoofersignal med kraftigere dynamik og en mere medrivende basgengivelse. Kablet kan give en tydeligt hørbar forbedring i forhold til simple alternativer og kan fjerne generende brum. Den høje pris er den største ulempe, men det samlede indtryk er meget positivt.",
    "headlines": {
-    "cleaner, deeper and louder bass": {
-     "sentimentAnalysis": "Kablet roses for at levere renere, dybere og kraftigere bas samt stærkere dynamik fra subwooferen.",
-     "simpleTitle": "Renere, dybere og højere bas",
+    "clear signal with detailed, dynamic sound": {
+     "sentimentAnalysis": "Kablet roses for renere, dybere og kraftigere bas, detaljer i høj kvalitet, stærk dynamik og meget god signaloverførsel.",
+     "simpleTitle": "Klar signaloverførsel med detaljeret, dynamisk lyd",
      "bias": "positive",
-     "key": "bass-impact",
-     "groupId": "7db4760b-70f9-442d-b000-666357e8df26"
+     "key": "signal-quality",
+     "groupId": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb"
     },
-    "clear improvement over basic cables": {
-     "sentimentAnalysis": "Kablet siges at gøre en mærkbar forskel sammenlignet med standard- eller introduktionskabler.",
-     "simpleTitle": "Tydelig forbedring i forhold til standardkabler",
+    "noticeable upgrade over basic cables": {
+     "sentimentAnalysis": "Kablet beskrives som en løsning, der gør en reel forskel og giver en mærkbar forbedring i forhold til et standardkabel af samme type.",
+     "simpleTitle": "Mærkbar forbedring i forhold til standardkabler",
      "bias": "positive",
-     "key": "audible-upgrade",
-     "groupId": "7db4760b-70f9-442d-b000-666357e8df26"
-    },
-    "high-quality signal transmission": {
-     "sentimentAnalysis": "Kablet værdsættes for at overføre forstærkersignalet til subwooferne med høj kvalitet, mange detaljer og dynamisk kraft.",
-     "simpleTitle": "Signaler i høj kvalitet",
-     "bias": "positive",
-     "key": "transmission",
-     "groupId": "7db4760b-70f9-442d-b000-666357e8df26"
+     "key": "signal-quality",
+     "groupId": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb"
     }
    },
    "grouping": {
-    "7db4760b-70f9-442d-b000-666357e8df26": {
+    "71eaf6f8-b66c-4e01-8d39-807e01fe07bb": {
      "title": "Signalkvalitet",
-     "id": "7db4760b-70f9-442d-b000-666357e8df26",
+     "id": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb",
      "references": [
       "43680c1d-b06c-4182-b7f8-14735eff895e",
       "222bd407-f725-46cc-803f-467eff4d9f6b",
       "53e8fc6b-9ccd-4c8e-902c-f3ab76c8eda0",
       "272fd993-dab6-4ec9-baa5-013f84d1a1cb",
-      "539c807a-1273-4884-bc3c-b61055b3d000",
       "ca984c2a-29b2-4f0b-b1da-27b37fafe1ca",
       "7ce067a4-63af-46c4-ba4b-f0af2806bd00"
      ]

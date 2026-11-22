@@ -13,6 +13,15 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "OBS: Hi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "5ea8a868-d900-4fd4-934d-902c92f70e4e"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 91,
   "skuCode": "ORTSTYLUS20X",
@@ -179,34 +188,40 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS20X leverer en varm, slagkraftig og mærkbart mere detaljeret lyd end OM-pickupper i indgangsklassen. Klarere bas, sprød diskant og medrivende musikalitet gør opgraderingen særligt attraktiv for TT3-ejere. Stærk værdi for pengene og en bred anbefaling præger den samlede vurdering, selv om en dyrere OM40-model leverer endnu bedre ydeevne.",
+   "summary": "ORTSTYLUS20X leverer en varm, slagkraftig og mærkbart mere detaljeret lyd med klare diskanttoner og kraftigere bas. Pickup'en roses bredt som en markant opgradering i forhold til OM5E og OM10 og giver kompatible pladespillere fornyet energi og mere rummelig lyd. Den nemme kompatibilitet og den gode værdi gør den til en særligt overbevisende forbedring af ældre Ortofon-systemer.",
    "headlines": {
-    "strong upgrade over entry-level styli": {
-     "sentimentAnalysis": "Nålen beskrives konsekvent som en klar forbedring i forhold til OM5E og OM10, især med stærkere bas og diskant.",
-     "simpleTitle": "Stor opgradering fra indgangsmodeller",
+    "more detail and a crisper, fuller sound": {
+     "sentimentAnalysis": "Pickup'en roses for at gengive flere detaljer samt klare diskanttoner og en kraftigere, mere tilfredsstillende bas.",
+     "simpleTitle": "Flere detaljer og en klarere, fyldigere lyd",
      "bias": "positive",
-     "key": "upgrade-over-entry-level",
-     "groupId": "36113f8a-6cf9-4000-a32a-a30bf6243c08"
+     "key": "sound-detail",
+     "groupId": "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb"
     },
-    "detailed and crisp sound": {
-     "sentimentAnalysis": "Lyden roses for at afsløre flere detaljer og levere en klar og sprød gengivelse.",
-     "simpleTitle": "Detaljeret og sprød lyd",
+    "a clear upgrade over entry-level styli": {
+     "sentimentAnalysis": "Pickup'en beskrives konsekvent som en markant forbedring i forhold til OM5E og OM10, især med en tydelig gevinst i musikalitet.",
+     "simpleTitle": "En klar opgradering fra entry-level-pickupper",
      "bias": "positive",
-     "key": "detailed-crisp-sound",
-     "groupId": "36113f8a-6cf9-4000-a32a-a30bf6243c08"
+     "key": "upgrade-performance",
+     "groupId": "550623a9-ca39-4079-a14c-59e486853821"
     }
    },
    "grouping": {
-    "36113f8a-6cf9-4000-a32a-a30bf6243c08": {
+    "550623a9-ca39-4079-a14c-59e486853821": {
+     "title": "Opgradering",
+     "id": "550623a9-ca39-4079-a14c-59e486853821",
+     "references": [
+      "34249148-4fa8-4922-a680-03b331a2e3a5",
+      "0680100a-f170-4348-8442-065c2e744078",
+      "6d62966c-9075-4cea-b615-6798b07acbae",
+      "6c5ded5d-76b9-4897-bcf2-3de78578601e"
+     ]
+    },
+    "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb": {
      "title": "Lydkvalitet",
-     "id": "36113f8a-6cf9-4000-a32a-a30bf6243c08",
+     "id": "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb",
      "references": [
       "34249148-4fa8-4922-a680-03b331a2e3a5",
       "1024a826-5b01-45bf-84a0-171ab2f6d73b",
-      "7da07ad5-71b5-4df4-812c-1295df1a54d7",
-      "6068ca39-675f-46dd-9013-cea3000c9382",
-      "0680100a-f170-4348-8442-065c2e744078",
-      "6d62966c-9075-4cea-b615-6798b07acbae",
       "6c5ded5d-76b9-4897-bcf2-3de78578601e"
      ]
     }

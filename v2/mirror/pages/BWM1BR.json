@@ -13,6 +13,17 @@
    "url": "/hojtalere/kompakt-hojtaler/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "93f77ce2-7fc5-4535-a6d8-4dd70b3974f2",
+   "ace22ecf-df98-4bbb-9a1d-d3841fc6860e",
+   "9faa2f2b-e8df-4a21-ba44-cb3d32d40a4d",
+   "13eab392-8be9-4df5-9b6d-1de12db11a5a",
+   "7f1a70e7-5dc5-48e4-8ea0-3bee2e3ee13b"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 497,
   "skuCode": "BWM1BR",
@@ -159,7 +170,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 29,
+     "availableQuantity": 27,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -262,7 +273,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 62,
+     "availableQuantity": 59,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -311,48 +322,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BWM1BR-højttalerne roses bredt for en klar, detaljeret, kraftfuld og varm lyd fra et kompakt og stilfuldt kabinet. Højttalerne fungerer især godt i stereo-, surround- og hjemmebiografopsætninger og passer flot ind i rummet og indretningen. På grund af det lille kabinet anbefaler flere anmeldelser en subwoofer for dybere, fyldigere og kraftigere bas.",
+   "summary": "B&W M-1 roses bredt som en kompakt og stilfuld højttaler med klar, detaljeret, kraftfuld og overraskende rummelig lyd. Højttalerne fungerer især godt i stereo- og surroundanlæg, inklusive TV- og Dolby Atmos-opstillinger. Flere anmeldelser bemærker, at en subwoofer forbedrer basdybde og balance markant, mens én anmeldelse oplevede lyden som tynd uden en subwoofer; design, kompakthed og diskret integration i rummet værdsættes konsekvent. Den varme, slagkraftige og omsluttende gengivelse gør M-1 til et overbevisende valg til kompakte lydsystemer.",
    "headlines": {
     "clear, detailed and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, ren, detaljeret, kraftfuld og overraskende fyldig i forhold til størrelsen.",
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som ren, klar, kraftfuld, detaljeret og meget tilfredsstillende.",
      "simpleTitle": "Klar, detaljeret og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "060ca123-f04f-4d11-bce0-34242492b434"
+     "key": "clear-detailed-sound",
+     "groupId": "1d640c0b-9145-422b-9293-882dd17d5238"
     },
-    "compact and stylish design": {
-     "sentimentAnalysis": "Anmeldelserne roser det lille format, det attraktive design og det diskrete udseende, som gør højttalerne nemme at integrere i hjemmet.",
-     "simpleTitle": "Kompakt og stilfuldt design",
+    "compact format with stylish design": {
+     "sentimentAnalysis": "Den lille størrelse og det attraktive udseende roses gentagne gange for at være nemme at integrere i hjemmet.",
+     "simpleTitle": "Kompakt format med stilfuldt design",
      "bias": "positive",
-     "key": "compact-design",
-     "groupId": "4a26a13f-8330-49c2-a9ed-3f3e41a1f5bf"
+     "key": "compact-stylish",
+     "groupId": "f94f4210-ac73-46c6-bf0b-89f14a9ac203"
     },
-    "effective surround and home-cinema speakers": {
-     "sentimentAnalysis": "Anmeldelserne vurderer højttalerne som effektive bag-, satellit- og surroundkanaler, der forbedrer tv-dialoger og fuldender flerkanalssystemer.",
-     "simpleTitle": "Velegnede surround- og hjemmebiografhøjttalere",
+    "subwoofer adds essential bass depth": {
+     "sentimentAnalysis": "Anmeldelserne siger, at en subwoofer giver fyldigere, dybere bas og bedre balance.",
+     "simpleTitle": "Subwoofer giver vigtig basdybde",
      "bias": "positive",
-     "key": "surround-use",
-     "groupId": "33eeb99a-508f-445a-987a-e66e3a8e9891"
+     "key": "subwoofer-enhances-bass",
+     "groupId": "c2e5983e-4bb0-4c84-a7fc-d0ef16356c29"
     },
-    "a subwoofer adds essential low-end depth": {
-     "sentimentAnalysis": "De kompakte kabinetter beskrives gentagne gange som afhængige af en subwoofer for dybere bas, mere kraft og bedre balance; én anmeldelse oplever lyden uden subwoofer som tynd og dåseagtig.",
-     "simpleTitle": "En subwoofer giver vigtig dybde i bassen",
+    "strong choice for surround setups": {
+     "sentimentAnalysis": "Højttalerne roses som effektive bag-, satellit- og systemhøjttalere til omsluttende surroundlyd.",
+     "simpleTitle": "Et stærkt valg til surroundanlæg",
+     "bias": "positive",
+     "key": "surround-integration",
+     "groupId": "1d640c0b-9145-422b-9293-882dd17d5238"
+    },
+    "thin sound without a subwoofer": {
+     "sentimentAnalysis": "Uden subwoofer kan bassen virke svag eller tynd og mangle kraft.",
+     "simpleTitle": "Tynd lyd uden subwoofer",
      "bias": "negative",
-     "key": "subwoofer-bass",
-     "groupId": "2720526b-e56f-4c98-970e-d24b0db3fe77"
-    },
-    "warm and full sound": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver en varm, robust og velafbalanceret gengivelse, der fylder rummet til både musik og film.",
-     "simpleTitle": "Varm og fyldig lyd",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "060ca123-f04f-4d11-bce0-34242492b434"
+     "key": "thin-without-subwoofer",
+     "groupId": "c2e5983e-4bb0-4c84-a7fc-d0ef16356c29"
     }
    },
    "grouping": {
-    "060ca123-f04f-4d11-bce0-34242492b434": {
+    "1d640c0b-9145-422b-9293-882dd17d5238": {
      "title": "Lydkvalitet",
-     "id": "060ca123-f04f-4d11-bce0-34242492b434",
+     "id": "1d640c0b-9145-422b-9293-882dd17d5238",
      "references": [
       "b4e6001d-8a3f-4f27-b541-1e524aed9315",
       "37e944d4-3910-49b2-a74e-eb35d2eceea2",
@@ -371,7 +382,8 @@
       "80ed775e-32df-431e-afa1-0f8c846d2221",
       "6a256c51-cc64-4168-81b9-365a074a4be5",
       "49efc281-da18-4a96-b21e-e5082755d24f",
-      "43aaacea-8641-45f1-983a-c11fcd42f264",
+      "888f7ca4-c5fd-4ef5-b807-d8b54f26370c",
+      "f31390c3-885c-4079-89ff-d3afa1a0531a",
       "9162eb0c-e089-4c2e-9682-f331ca830c9c",
       "c0981e77-216e-4bdc-9622-66b3bf824ec7",
       "bd022f54-3657-4e1f-bbf4-31dff56ed5b5",
@@ -379,7 +391,6 @@
       "35c52d97-b09d-4925-8134-893dfaa44398",
       "b2dbf623-af5f-43a3-99b6-4dc1240107bb",
       "e85a1c50-0748-40bf-8837-9f663c454f93",
-      "2532998d-a985-44d2-a3b7-b18701f8034f",
       "ed47e66b-fac5-49be-a0d8-74c5dd74e2c2",
       "2f887dff-ef7e-4200-884b-8a092ba18302",
       "e037bc61-7308-4afd-bc23-0211dc81351d",
@@ -388,17 +399,15 @@
       "a9a4b7da-f28f-4cd9-99ee-a0f730664ee1",
       "02d38eee-6a3c-4439-8dfe-32f99003f5bc",
       "78869383-10c5-408d-8a03-33f646fdc432",
-      "3d6f7e94-81ed-4ea6-a075-1e1b4619b1ad",
       "d29f2cbf-23aa-42a0-8704-124dba88c1b7",
       "df4011ed-26db-4bbe-8fe4-004f600ecca8",
       "1872826d-7809-4399-9f64-69ca546a6d65",
-      "07c2133d-4c16-4f2a-a67e-4092902fd1c3",
-      "5da658d2-3ebc-448c-bc05-af0f835ce63e"
+      "07c2133d-4c16-4f2a-a67e-4092902fd1c3"
      ]
     },
-    "4a26a13f-8330-49c2-a9ed-3f3e41a1f5bf": {
+    "f94f4210-ac73-46c6-bf0b-89f14a9ac203": {
      "title": "Kompakt design",
-     "id": "4a26a13f-8330-49c2-a9ed-3f3e41a1f5bf",
+     "id": "f94f4210-ac73-46c6-bf0b-89f14a9ac203",
      "references": [
       "fbb59783-61a3-4d75-8847-7fa8101c6fc4",
       "bd95944f-90bb-4c5b-8250-57b3f180db78",
@@ -408,38 +417,21 @@
       "3722ed4d-a2a9-46ad-a67d-4e9e11ac9351",
       "5537e082-e6ce-4a69-abb6-22145434ca59",
       "a7e38fbf-167b-468a-b662-dd42f69a758a",
-      "43aaacea-8641-45f1-983a-c11fcd42f264",
       "888f7ca4-c5fd-4ef5-b807-d8b54f26370c",
       "c0981e77-216e-4bdc-9622-66b3bf824ec7",
       "bd022f54-3657-4e1f-bbf4-31dff56ed5b5",
       "eee90095-7041-4625-b905-612b5a03db08",
       "b2dbf623-af5f-43a3-99b6-4dc1240107bb",
-      "98b2a919-0c47-4e54-9012-02eebfdeb485",
       "c8601fa1-59c9-4454-945a-762919e49f35",
       "a9a4b7da-f28f-4cd9-99ee-a0f730664ee1",
       "02d38eee-6a3c-4439-8dfe-32f99003f5bc",
-      "78869383-10c5-408d-8a03-33f646fdc432",
       "d29f2cbf-23aa-42a0-8704-124dba88c1b7",
       "07c2133d-4c16-4f2a-a67e-4092902fd1c3"
      ]
     },
-    "33eeb99a-508f-445a-987a-e66e3a8e9891": {
-     "title": "Surroundbrug",
-     "id": "33eeb99a-508f-445a-987a-e66e3a8e9891",
-     "references": [
-      "d68c46bd-861e-4b56-82af-f55383aecc78",
-      "1dc04405-3f00-46f7-bb2d-c9f4d68fb860",
-      "d16a0ebb-9327-440a-a53d-f1a52fd09ef5",
-      "a27e1a1d-b5f9-46b3-ac65-8ef1b944e464",
-      "888f7ca4-c5fd-4ef5-b807-d8b54f26370c",
-      "5e323eb1-7d81-413c-a3ef-f47466a408d8",
-      "e85a1c50-0748-40bf-8837-9f663c454f93",
-      "02d38eee-6a3c-4439-8dfe-32f99003f5bc"
-     ]
-    },
-    "2720526b-e56f-4c98-970e-d24b0db3fe77": {
+    "c2e5983e-4bb0-4c84-a7fc-d0ef16356c29": {
      "title": "Subwoofer og bas",
-     "id": "2720526b-e56f-4c98-970e-d24b0db3fe77",
+     "id": "c2e5983e-4bb0-4c84-a7fc-d0ef16356c29",
      "references": [
       "90ae75d6-80ad-4a78-b0a9-a0e26188170e",
       "3722ed4d-a2a9-46ad-a67d-4e9e11ac9351",

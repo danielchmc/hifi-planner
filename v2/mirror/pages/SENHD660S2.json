@@ -13,6 +13,20 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Fra beskrivelsen": "Udskifteligt kabel (ODU-tilslutninger på ørekopper)"
+  },
+  "gallery": [
+   "d5ffcc5d-99d5-4487-8f36-81dfb82f35fb",
+   "d4cdff65-c8bd-4ee3-ba29-f713c1cf43c6",
+   "1f63e4e7-406b-43f2-981e-eab50a5c59de",
+   "e13c26cd-56db-49ea-bd35-8dd59fe33524",
+   "efd6245c-48db-481d-8014-318e6fc8f3e0",
+   "48f29b77-8bfa-4f85-8091-95ba0c089950"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 197789,
   "skuCode": "SENHD660S2",
@@ -217,7 +231,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 91,
+     "availableQuantity": 83,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -344,68 +358,58 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sennheiser HD 660S2 roses bredt for sin varme, detaljerede og rummelige lyd med klare mellemtoner, kontrolleret men tilstedeværende bas og en medrivende åben gengivelse. Den lette og komfortable pasform egner sig til lange lyttepas, gaming og musik og fungerer godt sammen med dedikerede forstærkere og DAC'er. Samlet set vurderes værdien som stærk, selv om nogle synes, at pasformen er lidt stram, kablet for kort til sofaen eller prisen noget høj.",
+   "summary": "SENHD660S2 leverer en varm, detaljeret og medrivende hi-fi-lyd med klare mellemtoner, kontrolleret og slagkraftig bas samt en luftig, naturlig gengivelse. Den fremragende komfort gør lange lyttesessioner, gaming og musiknydelse behagelige, mens det åbne design skaber et stort, højttalerlignende lydbillede. Den stærke værdi for pengene og brede forstærkerkompatibilitet gør hovedtelefonen meget anbefalelsesværdig, selv om nogle oplever pasformen som lidt stram, kablet som for kort og byggekvaliteten som mindre eksklusiv end forventet.",
    "headlines": {
-    "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Lyden beskrives gentagne gange som klar, naturlig, meget detaljeret, varm og rummelig med et stærkt musikalsk engagement.",
-     "simpleTitle": "Varm, detaljeret og rummelig lyd",
+    "detailed, spacious and natural sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den luftige, neutrale, detaljerede og rummelige gengivelse som naturlig, medrivende og på referenceniveau.",
+     "simpleTitle": "Detaljeret, rummelig og naturlig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "977e4010-7dd0-4138-befd-0f207460e526"
+     "groupId": "6163f4ae-72c9-461a-9928-258c7af4dcc2"
     },
-    "comfortable for extended listening": {
-     "sentimentAnalysis": "Det lave vægt og den behagelige pasform roses gentagne gange for at være komfortable under lange lyttepas, også med briller.",
+    "punchy, controlled bass with clear mids": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver fyldig eller forbedret subbas, kraftfuld bas, klare mellemtoner og en behagelig balance uden overdreven bas.",
+     "simpleTitle": "Slagkraftig, kontrolleret bas med klare mellemtoner",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "6163f4ae-72c9-461a-9928-258c7af4dcc2"
+    },
+    "comfortable for long listening": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent de lette hovedtelefoner som komfortable ved lange lyttepassager, også med briller.",
      "simpleTitle": "Komfortabel ved lang tids lytning",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "cee9bdc1-0ad1-4d38-85fb-d9e9f2ab96c6"
+     "groupId": "e16b19a1-0187-4728-8d55-2e4376e49329"
     },
-    "present, controlled bass and clear mids": {
-     "sentimentAnalysis": "Bassen roses som kraftig eller veltilstedeværende uden at blive overdreven, mens mellemtoner og diskant forbliver klare og afslørende.",
-     "simpleTitle": "Tilstedeværende, kontrolleret bas og klare mellemtoner",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "977e4010-7dd0-4138-befd-0f207460e526"
-    },
-    "strong price-to-performance ratio": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver hovedtelefonerne som et fremragende køb, også sammenlignet med dyrere alternativer.",
-     "simpleTitle": "Stærkt forhold mellem pris og kvalitet",
+    "excellent value for the sound quality": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange hovedtelefonen som et fremragende eller førsteklasses køb, hvor ydelsen overgår dyrere alternativer.",
+     "simpleTitle": "Fremragende værdi for lydkvaliteten",
      "bias": "positive",
      "key": "value",
-     "groupId": "a55cd25a-b5fa-4eb2-8d9c-16f398d8b19a"
+     "groupId": "85600e3b-b977-4cb4-8969-dcae6d854eb9"
     },
-    "open design creates an airy, natural stage": {
-     "sentimentAnalysis": "Den åbne gengivelse forbindes med en luftig, rummelig og naturlig lyd, der undgår en indelukket fornemmelse.",
-     "simpleTitle": "Det åbne design skaber et luftigt, naturligt lydbillede",
-     "bias": "positive",
-     "key": "open",
-     "groupId": "90badeea-0bd5-437d-bd81-d88e7ece6882"
-    },
-    "bass depth can feel limited": {
-     "sentimentAnalysis": "Et lille mindretal oplever bassen som mindre dyb eller den samlede lyd som lignende HD650's, trods den bredere ros af den afbalancerede gengivelse.",
-     "simpleTitle": "Bassen kan virke mindre dyb",
+    "short cable limits couch use": {
+     "sentimentAnalysis": "To anmeldelser beskriver det medfølgende kabel som for kort til afslappet lytning i sofaen; en bruger har tilføjet et andet kabel.",
+     "simpleTitle": "Det korte kabel begrænser brug i sofaen",
      "bias": "negative",
      "key": "sound",
-     "groupId": "977e4010-7dd0-4138-befd-0f207460e526"
+     "groupId": "6163f4ae-72c9-461a-9928-258c7af4dcc2"
     }
    },
    "grouping": {
-    "977e4010-7dd0-4138-befd-0f207460e526": {
+    "6163f4ae-72c9-461a-9928-258c7af4dcc2": {
      "title": "Lydkvalitet",
-     "id": "977e4010-7dd0-4138-befd-0f207460e526",
+     "id": "6163f4ae-72c9-461a-9928-258c7af4dcc2",
      "references": [
       "aecc2d61-acc4-4cab-88fb-b89de5283f02",
       "193a7932-d0af-4155-b777-d449a6b1c499",
       "7b257c69-82c2-4b01-9d8d-a6d73a088c9e",
       "244f914e-7c5e-4dce-99bd-4d0d083d84c5",
-      "54ac1860-959f-4d60-a0a1-23dff117f1d4",
       "a75e87da-dec1-449e-a273-d99c5b005ab8",
       "291e466d-02fe-4369-8e14-d1682111828d",
-      "439db2a6-0904-4a3a-ab9e-76b60c73e86d",
       "ae250881-073f-4fb9-8416-30c5b1f6ece3",
       "ca82aea1-e5f6-4470-ac11-66193990fa26",
       "d8f99f04-cb4c-403f-a9ef-c2bf8fdef148",
-      "844e8286-1c09-4888-a1be-21eb700c9538",
       "70d9a87a-ad8a-49d5-b43b-41b51c4c5c61",
       "a0030fb9-4a5d-4e29-9579-30ff70562543",
       "a907ca7b-153f-4188-b401-8007eca589d8",
@@ -419,13 +423,12 @@
       "05761f9e-d796-46d3-884d-05d090e2ff13",
       "df9fd893-d79e-46b6-a264-0353c8e4fda1",
       "41534c1f-6756-481c-b1b6-8ef9371ccbc7",
-      "4d765523-37c0-40b5-8ac8-72cf00b9975e",
-      "b1927a25-be88-48c2-b50a-a5d42910775f"
+      "4d765523-37c0-40b5-8ac8-72cf00b9975e"
      ]
     },
-    "cee9bdc1-0ad1-4d38-85fb-d9e9f2ab96c6": {
+    "e16b19a1-0187-4728-8d55-2e4376e49329": {
      "title": "Komfort",
-     "id": "cee9bdc1-0ad1-4d38-85fb-d9e9f2ab96c6",
+     "id": "e16b19a1-0187-4728-8d55-2e4376e49329",
      "references": [
       "5915b523-85f4-42c0-b693-cc953548cc49",
       "193a7932-d0af-4155-b777-d449a6b1c499",
@@ -434,37 +437,29 @@
       "a75e87da-dec1-449e-a273-d99c5b005ab8",
       "291e466d-02fe-4369-8e14-d1682111828d",
       "ae250881-073f-4fb9-8416-30c5b1f6ece3",
-      "54ac1860-959f-4d60-a0a1-23dff117f1d4",
       "c68bbbf7-6af8-4333-a997-8209cb8e383f",
       "844e8286-1c09-4888-a1be-21eb700c9538",
+      "778aafa9-3662-494d-9a31-3bf5c642e932",
+      "ec412f95-34d8-4971-b401-c570ab0918fd",
       "21ecb9b6-bd44-45da-bda8-748cd3ef8073",
       "9f32ab9c-fe13-40f2-84a3-dff620ff3622",
-      "e0bd425c-a388-401f-9a49-515d979e1f5c",
       "7ac03495-b35f-45ed-8005-dd5dd555400b",
+      "e0bd425c-a388-401f-9a49-515d979e1f5c",
       "4d765523-37c0-40b5-8ac8-72cf00b9975e"
      ]
     },
-    "a55cd25a-b5fa-4eb2-8d9c-16f398d8b19a": {
-     "title": "Pris og kvalitet",
-     "id": "a55cd25a-b5fa-4eb2-8d9c-16f398d8b19a",
+    "85600e3b-b977-4cb4-8969-dcae6d854eb9": {
+     "title": "Værdi for pengene",
+     "id": "85600e3b-b977-4cb4-8969-dcae6d854eb9",
      "references": [
       "244f914e-7c5e-4dce-99bd-4d0d083d84c5",
       "d8f99f04-cb4c-403f-a9ef-c2bf8fdef148",
       "16727a9d-2d10-440a-bb3f-4afd8405f189",
       "c68bbbf7-6af8-4333-a997-8209cb8e383f",
-      "35aa6056-3b0b-40b7-8cfb-62636017fbc4",
-      "e0bd425c-a388-401f-9a49-515d979e1f5c",
-      "9f32ab9c-fe13-40f2-84a3-dff620ff3622"
-     ]
-    },
-    "90badeea-0bd5-437d-bd81-d88e7ece6882": {
-     "title": "Åbent design",
-     "id": "90badeea-0bd5-437d-bd81-d88e7ece6882",
-     "references": [
-      "439db2a6-0904-4a3a-ab9e-76b60c73e86d",
-      "ae250881-073f-4fb9-8416-30c5b1f6ece3",
       "70d9a87a-ad8a-49d5-b43b-41b51c4c5c61",
-      "a0030fb9-4a5d-4e29-9579-30ff70562543"
+      "35aa6056-3b0b-40b7-8cfb-62636017fbc4",
+      "9f32ab9c-fe13-40f2-84a3-dff620ff3622",
+      "e0bd425c-a388-401f-9a49-515d979e1f5c"
      ]
     }
    },

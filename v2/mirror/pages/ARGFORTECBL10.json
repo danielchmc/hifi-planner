@@ -13,6 +13,13 @@
    "url": "/kabler/hojtaler-kabel/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "01a272cb-c710-451f-baa4-6b64e03f851f"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 156924,
   "skuCode": "ARGFORTECBL10",
@@ -186,7 +193,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 156,
+     "availableQuantity": 155,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -208,35 +215,42 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Produktet får stor ros for ren, detaljeret og fyldig lyd med imponerende lydstyrke i forhold til den kompakte størrelse. Lydoplevelsen virker varm, præcis og omsluttende i mindre rum, mens den dybe bas kan være begrænset i en stor stue. Vurderingen af pris og kvalitet er blandet, da nogle roser ydeevnen, mens andre kritiserer prisen og det proprietære stik.",
+   "summary": "En varm, ren og detaljeret lyd leverer imponerende lydstyrke for kompakte højttalere og skaber en engagerende lytteoplevelse. Ydeevnen virker pålidelig og meget tilfredsstillende, mens den punchy klarhed især imponerer i forhold til størrelsen. Det proprietære stik og de oplevede produktionsomkostninger får prisen til at virke for høj for nogle købere.",
    "headlines": {
-    "clear, detailed sound with impressive volume": {
-     "sentimentAnalysis": "Lyden roses som ren og meget detaljeret med høj lydstyrke i forhold til højttalerens størrelse.",
-     "simpleTitle": "Ren og detaljeret lyd med imponerende lydstyrke",
+    "clean and detailed sound": {
+     "sentimentAnalysis": "Lyden roses for at være meget detaljeret og ren med stærk tonal klarhed.",
+     "simpleTitle": "Ren og detaljeret lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "d71ee96c-98f6-4bcf-afaa-4c6df23e61e7"
+     "key": "sound-quality",
+     "groupId": "b90f5a9f-b583-4b96-b714-002cf7febc30"
+    },
+    "impressive volume for the size": {
+     "sentimentAnalysis": "De kompakte højttalere vurderes til at kunne levere overraskende fyldig og kraftfuld lyd.",
+     "simpleTitle": "Imponerende lydstyrke i forhold til størrelsen",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "b90f5a9f-b583-4b96-b714-002cf7febc30"
     },
     "pricing feels excessive": {
-     "sentimentAnalysis": "Produktet kritiseres for at være dyrt, især set i forhold til fremstillingsomkostningerne og det proprietære stik.",
-     "simpleTitle": "Prisen virker overdreven",
+     "sentimentAnalysis": "Prisen kritiseres som for høj, især på grund af det proprietære stik og de oplevede produktionsomkostninger.",
+     "simpleTitle": "Prisen virker for høj",
      "bias": "negative",
-     "key": "price_value",
-     "groupId": "86e83698-e14b-45d2-85e6-3dba0959b3de"
+     "key": "price-value",
+     "groupId": "776ae2ff-5acc-45bf-b200-db6c4160abb9"
     }
    },
    "grouping": {
-    "d71ee96c-98f6-4bcf-afaa-4c6df23e61e7": {
+    "b90f5a9f-b583-4b96-b714-002cf7febc30": {
      "title": "Lydkvalitet",
-     "id": "d71ee96c-98f6-4bcf-afaa-4c6df23e61e7",
+     "id": "b90f5a9f-b583-4b96-b714-002cf7febc30",
      "references": [
       "1cba522a-4715-4656-830e-c6c8ceebcb3f",
       "f514a7f1-b549-4d70-abb6-5e79e62be879"
      ]
     },
-    "86e83698-e14b-45d2-85e6-3dba0959b3de": {
+    "776ae2ff-5acc-45bf-b200-db6c4160abb9": {
      "title": "Pris og værdi",
-     "id": "86e83698-e14b-45d2-85e6-3dba0959b3de",
+     "id": "776ae2ff-5acc-45bf-b200-db6c4160abb9",
      "references": [
       "677d69ff-1b4e-4ce8-9c0f-5d621484bc93",
       "02eccc9f-c899-4dd8-9806-539ac7dffc6a"

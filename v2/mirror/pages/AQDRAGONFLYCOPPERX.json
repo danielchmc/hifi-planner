@@ -13,6 +13,20 @@
    "url": "/horetelefoner/horetelefon-forstarker/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Lydudgang": "Minijack/AUX",
+   "Udgang (andet)": "USB A, USB C",
+   "Fra beskrivelsen": "Maks. udgangspænding: 2,1 volt · Analog audio-ud: L/R (stereo minijack)"
+  },
+  "gallery": [
+   "9a4ebeab-646f-4634-b3cf-e8d6d51232e0",
+   "236f6892-558f-4a3e-a55c-e28fec71d134",
+   "1d17d4cf-f470-4d6c-be9a-c3f1bbbc34fb",
+   "d9ba6aad-d5d5-4bb2-9d0c-8d8ecc564b69"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 287961,
   "skuCode": "AQDRAGONFLYCOPPERX",
@@ -33,19 +47,19 @@
     "DALIIO12",
     "AUDMM100",
     "AUDLCD2CLASSIC",
+    "AUDLCD2CLASSICCB",
     "AUDLCDX",
     "AUDLCDXC",
-    "AUDMM500",
-    "AUDLCD2CLASSICCB"
+    "AUDMM500"
    ],
    "isOutlet": "false"
   },
   "recommendedAccessories": {
    "productCodes": [
+    "AQJITTERBUGFMJ",
     "AQEVERGREENMJIN",
     "AQGOLDENGATEMJIN",
-    "ESSCL1MJINX",
-    "AQJITTERBUGFMJ"
+    "ESSCL1MJINX"
    ],
    "isOutlet": "false"
   },
@@ -166,7 +180,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 99,
+     "availableQuantity": 198,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -208,53 +222,45 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQDragonFly Copper leverer en varm, slagkraftig og meget detaljeret opgradering i forhold til Cobalt med klar, afbalanceret og medrivende lyd til høretelefoner, telefoner, computere og højttalersystemer. Den kompakte DAC/hovedtelefonforstærker har imponerende kræfter, raffinerede diskanttoner, dyb bas og bemærkelsesværdigt ren gengivelse ved høj lydstyrke, samtidig med at den er nem at bruge og tage med. Den stærke værdi, brede enhedskompatibilitet og fremragende musikalitet gør Copper til en varm anbefaling til både mobil lytning og mere ambitiøse hi-fi-anlæg.",
+   "summary": "AQDragonFlyCopperX leverer en varm, klar og meget detaljeret opgradering i forhold til tidligere DragonFly-modeller med fyldig bas, bløde diskanttoner og en afbalanceret, medrivende gengivelse. Den kompakte DAC og hovedtelefonforstærker fungerer særligt godt med telefoner, computere samt gode hovedtelefoner eller højttalere og leverer høj lydstyrke med næsten ingen hørbar forvrængning. Den gode mobilitet, enkle betjening og stærke værdi gør CopperX til en begejstrende anbefaling til både hverdagslytning og mere ambitiøse lydanlæg.",
    "headlines": {
-    "a clear improvement over the Cobalt and Red": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver Copper som et klart og værdifuldt skridt op fra tidligere DragonFly-modeller.",
-     "simpleTitle": "En klar forbedring i forhold til Cobalt og Red",
+    "a clear improvement over DragonFly Cobalt": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver CopperX som en klar og værdifuld opgradering fra Cobalt.",
+     "simpleTitle": "En klar forbedring i forhold til DragonFly Cobalt",
      "bias": "positive",
-     "key": "upgrade",
-     "groupId": "b69484d7-4249-4064-96d1-5cee4893d055"
+     "key": "cobalt-upgrade",
+     "groupId": "025e07de-590f-49d0-8252-c64ff416042c"
     },
-    "more detailed, spacious and musical sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en levende, rummelig, detaljeret, klar og afbalanceret gengivelse med stærk musikalitet.",
-     "simpleTitle": "Mere detaljeret, rummelig og musikalsk lyd",
+    "detailed, clear and balanced sound": {
+     "sentimentAnalysis": "Anmeldelserne roser mere detalje, klarhed, nuancer og balance i musikken.",
+     "simpleTitle": "Detaljeret, klar og afbalanceret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "598d2544-d12a-42c7-88aa-20c0a71311ee"
+     "key": "detailed-clear-balanced",
+     "groupId": "d1952a49-e805-420d-932b-566bcf5cdbfe"
     },
-    "refined treble, deep bass and clean high-volume playback": {
-     "sentimentAnalysis": "Copper roses for rolige høje toner, dyb bas, høj effekt og næsten uhørlig forvrængning ved fuld lydstyrke.",
-     "simpleTitle": "Raffineret diskant, dyb bas og ren gengivelse ved høj lydstyrke",
+    "small and easy to carry": {
+     "sentimentAnalysis": "Det kompakte design og den praktiske mobilitet bliver gentagne gange rost.",
+     "simpleTitle": "Lille og nem at tage med",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "598d2544-d12a-42c7-88aa-20c0a71311ee"
+     "key": "compact-portable",
+     "groupId": "55afa129-ca19-4aa9-ac9b-0375f7407b75"
     },
-    "premium performance for the price": {
-     "sentimentAnalysis": "Produktet anses for pengene værd og konkurrencedygtigt med langt dyrere udstyr.",
-     "simpleTitle": "Premiumydelse til prisen",
+    "rich bass and smooth treble": {
+     "sentimentAnalysis": "Klangbalancen beskrives som blød og røragtig med dyb bas og rolige høje toner.",
+     "simpleTitle": "Fyldig bas og blød diskant",
      "bias": "positive",
-     "key": "value",
-     "groupId": "2a2d6d9b-023d-4b69-8328-d40edcc0b95f"
-    },
-    "compact and easy to use across mobile and computer setups": {
-     "sentimentAnalysis": "Det lille, praktiske design og den enkle betjening passer til både mobil lytning og computersystemer.",
-     "simpleTitle": "Kompakt og nem at bruge med mobile og stationære systemer",
-     "bias": "positive",
-     "key": "portability",
-     "groupId": "d4892685-ac3c-444b-b2e5-91a039b4eab3"
+     "key": "rich-tonality",
+     "groupId": "d1952a49-e805-420d-932b-566bcf5cdbfe"
     }
    },
    "grouping": {
-    "598d2544-d12a-42c7-88aa-20c0a71311ee": {
+    "d1952a49-e805-420d-932b-566bcf5cdbfe": {
      "title": "Lydkvalitet",
-     "id": "598d2544-d12a-42c7-88aa-20c0a71311ee",
+     "id": "d1952a49-e805-420d-932b-566bcf5cdbfe",
      "references": [
       "2a6ecb3f-eedf-457f-86b6-b84a143eb04d",
       "8f02b872-4f86-489b-9412-ccac7f17d71e",
       "e678b472-eb27-4ba2-ba67-79f1735a9d29",
-      "d2266b6c-d07a-499a-bd4b-af419664687d",
       "b1206b52-73f3-4cff-9015-0880194e1390",
       "43ea0db0-d3ac-4d95-beec-c3f95196497e",
       "396ad92b-5ac4-44f3-bb9b-ad74e18b4216",
@@ -264,34 +270,25 @@
       "aa7cadaa-eecf-4b5b-809a-d0a63b24b488"
      ]
     },
-    "b69484d7-4249-4064-96d1-5cee4893d055": {
-     "title": "Opgradering i forhold til tidligere modeller",
-     "id": "b69484d7-4249-4064-96d1-5cee4893d055",
+    "025e07de-590f-49d0-8252-c64ff416042c": {
+     "title": "Forbedring i forhold til tidligere modeller",
+     "id": "025e07de-590f-49d0-8252-c64ff416042c",
      "references": [
       "2a6ecb3f-eedf-457f-86b6-b84a143eb04d",
       "8f02b872-4f86-489b-9412-ccac7f17d71e",
       "61a65f50-d577-4ca0-bc04-4c477ea79867",
       "b1206b52-73f3-4cff-9015-0880194e1390",
       "bde9d569-a58e-4640-a7e0-0f48b6bc5869",
-      "1d487edb-ef25-44b6-9bf3-6ef71ea3eeb2"
+      "1d487edb-ef25-44b6-9bf3-6ef71aa3eeb2"
      ]
     },
-    "d4892685-ac3c-444b-b2e5-91a039b4eab3": {
-     "title": "Mobilitet og brugervenlighed",
-     "id": "d4892685-ac3c-444b-b2e5-91a039b4eab3",
+    "55afa129-ca19-4aa9-ac9b-0375f7407b75": {
+     "title": "Mobilitet og størrelse",
+     "id": "55afa129-ca19-4aa9-ac9b-0375f7407b75",
      "references": [
       "d2266b6c-d07a-499a-bd4b-af419664687d",
       "73f39282-96f9-4678-a6d7-6f229fc876ef",
       "aa7cadaa-eecf-4b5b-809a-d0a63b24b488"
-     ]
-    },
-    "2a2d6d9b-023d-4b69-8328-d40edcc0b95f": {
-     "title": "Værdi for pengene",
-     "id": "2a2d6d9b-023d-4b69-8328-d40edcc0b95f",
-     "references": [
-      "8f02b872-4f86-489b-9412-ccac7f17d71e",
-      "73f39282-96f9-4678-a6d7-6f229fc876ef",
-      "937f9aa6-f611-4d73-a327-635a0e6a0da4"
      ]
     }
    },

@@ -13,6 +13,22 @@
    "url": "/pladespiller/pickupper-erstatningsnale/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "0,4"
+  },
+  "gallery": [
+   "4d40c729-0b37-4c21-b794-11630af43552",
+   "857cd0eb-6934-4e7a-b13e-6729762eb885",
+   "f5cc9cf6-831f-40fe-a074-174353744ce1",
+   "e14491a7-7aca-49db-b4c5-ddb530e2e3ab",
+   "adf04f8d-83ff-46eb-856c-ea1664d7c970",
+   "7638c326-b0b0-48d6-93fa-cacd62574bbd",
+   "2ae1d99e-dc93-4fe4-8996-fc6810e70e3b",
+   "d16b8173-ac4a-43d6-926b-9350ba87fe41"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 258250,
   "skuCode": "ORTMCX",
@@ -468,7 +484,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 3,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -881,41 +897,48 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTMCX leverer en varm, afbalanceret og meget detaljeret lyd med slagkraftig dynamik, åbne mellemtoner og en luftig, ikke-aggressiv diskant. En omsluttende lyddybde, veldefineret bas og afslørende mikrodeta­lj­er får velkendte plader til at føles nye. Omhyggelig justering, passende transformerunderstøttelse og tålmodig tilspilning hjælper med at frigive den imponerende ydeevne.",
+   "summary": "ORTMCX leverer en varm, slagkraftig og meget detaljeret lyd med fremragende dynamik, rummelig placering og en medrivende lydscene. Velafbalancerede mellemtoner, kraftig bas og luftige, ikke-aggressive diskanttoner gør musikken engagerende og bevarer selv fine mikrodetaljer. Den stærke værdi for pengene og tydelige forbedringer i forhold til flere tidligere pickupper gør ORTMCX til en begejstret anbefaling, hvor præcis justering og grundig tilspilning betaler sig.",
    "headlines": {
-    "balanced, spacious and musical sound": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en klar, afbalanceret og afslappet klang med kraftig bas, luftig diskant samt en bred og lagdelt scene.",
-     "simpleTitle": "Afbalanceret, rummelig og musikalsk lyd",
+    "detailed, dynamic and clear sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den fine detaljeopløsning, stærke dynamik, klarhed og åbne gengivelse.",
+     "simpleTitle": "Detaljeret, dynamisk og klar lyd",
      "bias": "positive",
-     "key": "balanced_soundstage",
-     "groupId": "c8701e64-421c-494a-a26b-e0e40f2a005a"
+     "key": "detailed-dynamic-sound",
+     "groupId": "8a1bd339-a5d8-431f-8085-43ca916f574c"
     },
-    "detailed, dynamic and revealing presentation": {
-     "sentimentAnalysis": "Anmeldelserne roser den høje detaljeopløsning, dynamik, mikrodeta­lj­er og klare gengivelse.",
-     "simpleTitle": "Detaljeret, dynamisk og afslørende gengivelse",
+    "balanced, warm and non-fatiguing presentation": {
+     "sentimentAnalysis": "Lyden beskrives gentagne gange som balanceret, varm, afslappet og behagelig med stærk bas, gode mellemtoner og luftig diskant.",
+     "simpleTitle": "Balanceret, varm og afslappet gengivelse",
      "bias": "positive",
-     "key": "detail_and_dynamics",
-     "groupId": "c8701e64-421c-494a-a26b-e0e40f2a005a"
+     "key": "balanced-warm-sound",
+     "groupId": "8a1bd339-a5d8-431f-8085-43ca916f574c"
     },
-    "a clear upgrade over earlier cartridges": {
-     "sentimentAnalysis": "Sammenligninger fremstiller produktet som en markant forbedring i forhold til tidligere eller konkurrerende pickupper, især hvad angår samlet kvalitet og rumfornemmelse.",
-     "simpleTitle": "En klar opgradering i forhold til tidligere pickupper",
+    "clear upgrade over previous cartridges": {
+     "sentimentAnalysis": "Sammenligninger med tidligere pickupper beskriver en markant forbedring af den samlede lydkvalitet og lytteoplevelsen.",
+     "simpleTitle": "Tydelig opgradering i forhold til tidligere pickupper",
      "bias": "positive",
-     "key": "upgrade_over_previous",
-     "groupId": "c8701e64-421c-494a-a26b-e0e40f2a005a"
+     "key": "upgrade-over-predecessors",
+     "groupId": "8a1bd339-a5d8-431f-8085-43ca916f574c"
     },
-    "excellent value at the price": {
-     "sentimentAnalysis": "Produktet vurderes som usædvanligt prisvenligt, og en anmeldelse antyder, at præstationen til prisen egentlig fortjener en højere vurdering.",
-     "simpleTitle": "Fremragende værdi til prisen",
+    "wide soundstage and improved imaging": {
+     "sentimentAnalysis": "Pickuppen roses for en bred lydscene, tydeligt lagdelte instrumenter og overbevisende rumlige detaljer.",
+     "simpleTitle": "Bred lydscene og bedre perspektiv",
      "bias": "positive",
-     "key": "excellent_value",
-     "groupId": "857e3dfb-702f-4791-9b97-fc3f7fe51182"
+     "key": "soundstage-imaging",
+     "groupId": "8a1bd339-a5d8-431f-8085-43ca916f574c"
+    },
+    "excellent value for the price": {
+     "sentimentAnalysis": "Prisen vurderes som særligt attraktiv, og ydelsen anses som stærk, selv om dyrere alternativer kunne være endnu bedre.",
+     "simpleTitle": "Fremragende værdi for pengene",
+     "bias": "positive",
+     "key": "excellent-value",
+     "groupId": "5c2c5687-8fe7-458a-b71b-64450ad1fc25"
     }
    },
    "grouping": {
-    "c8701e64-421c-494a-a26b-e0e40f2a005a": {
+    "8a1bd339-a5d8-431f-8085-43ca916f574c": {
      "title": "Lydkvalitet",
-     "id": "c8701e64-421c-494a-a26b-e0e40f2a005a",
+     "id": "8a1bd339-a5d8-431f-8085-43ca916f574c",
      "references": [
       "c4fe2ef4-46ab-4494-9936-610b5a129fa1",
       "a88426db-da1b-4d05-8a55-2bb348ab884d",
@@ -931,9 +954,9 @@
       "35818c06-7978-48c8-bb53-14879326e64b"
      ]
     },
-    "857e3dfb-702f-4791-9b97-fc3f7fe51182": {
+    "5c2c5687-8fe7-458a-b71b-64450ad1fc25": {
      "title": "Værdi for pengene",
-     "id": "857e3dfb-702f-4791-9b97-fc3f7fe51182",
+     "id": "5c2c5687-8fe7-458a-b71b-64450ad1fc25",
      "references": [
       "c7a0ff5e-1b58-40f3-88f6-d6cb59c5d859",
       "45f6cd02-7919-4a4f-a5d8-fa7c78366642"

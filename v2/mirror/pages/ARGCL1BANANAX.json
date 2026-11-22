@@ -13,6 +13,14 @@
    "url": "/kabler/hojtaler-stik/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "a2f7d5e2-1c97-4dd4-90bb-f3f41b37309a",
+   "376cda03-0e46-4e3c-96cf-71b3f99835e7"
+  ],
+  "avail": "OutOfStock"
+ },
  "product": {
   "id": 95526,
   "skuCode": "ARGCL1BANANAX",
@@ -178,48 +186,62 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "ARGCL1BANANAX-bananstikkene leverer varm, ren og pålidelig forbindelse med imponerende nem montering og en pæn, praktisk finish. Den solide metalkonstruktion, gode klemning og kompatibilitet med forskellige kabeltykkelser gør opsætningen af højttalere enkel og elegant. Fremragende værdi og stabil ydeevne opvejes kun lidt af enkelte bekymringer om skrøbelige skruehoveder og en højere pris.",
+   "summary": "ARGCL1BANANAX-bananstikkene roses bredt som praktiske og nemme at montere, samtidig med at de giver sikre og ryddelige højttalerkabelforbindelser uden lodning. Den solide metalkonstruktion, den pæne finish, kompatibiliteten med forskellige kabeltykkelser og den pålidelige funktion giver en varm kvalitetsfornemmelse, mens enkelte anmeldelser nævner den relativt høje pris og advarer mod at stramme skruerne for hårdt. Højttalerforbindelserne bliver rene, stabile og ubesværede, og flere anlæg beskriver en slagkraftig og medrivende lyd.",
    "headlines": {
-    "simple, tool-free installation": {
-     "sentimentAnalysis": "Monteringen beskrives gentagne gange som nem, hurtig og praktisk, også uden lodning.",
-     "simpleTitle": "Enkel montering uden lodning",
+    "easy to install and use": {
+     "sentimentAnalysis": "Anmeldelserne beskriver hurtig og enkel montering samt praktisk plug-and-play-brug.",
+     "simpleTitle": "Nem at montere og bruge",
      "bias": "positive",
-     "key": "easy installation",
-     "groupId": "39ad2455-083e-449a-8a96-ff8696904077"
+     "key": "installation",
+     "groupId": "fb0ca381-bbed-4e5f-b44d-df20f8c23fe4"
     },
-    "solid, attractive construction": {
-     "sentimentAnalysis": "Anmeldelserne roser stikkene for at være solide, flot udført, attraktive og af høj kvalitet.",
+    "secure, tidy connections": {
+     "sentimentAnalysis": "Anmeldelserne roser det sikre greb, den pæne kabelhåndtering og den pålidelige forbindelse i forstærkere og højttalere.",
+     "simpleTitle": "Sikre og ryddelige forbindelser",
+     "bias": "positive",
+     "key": "connection",
+     "groupId": "4b9e04ed-3216-4142-b5fa-4d544869a9b6"
+    },
+    "solid and attractive construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent stikkene som vellavede, holdbare og pæne.",
      "simpleTitle": "Solid og flot konstruktion",
      "bias": "positive",
-     "key": "solid build",
-     "groupId": "52c68539-412a-4611-a32b-a93d4c23de37"
+     "key": "quality",
+     "groupId": "ea6281a9-3f4d-4e84-a741-1fad58c81402"
     },
-    "secure, clean connections": {
-     "sentimentAnalysis": "Forbindelserne opleves som sikre, pæne, nemme at sætte i og fri for knas.",
-     "simpleTitle": "Sikre og rene forbindelser",
+    "good value for money": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer produktets pris som fair eller rimelig i forhold til funktion og kvalitet.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "secure connection",
-     "groupId": "a46fc927-6600-480e-8e39-9f45e677f6d1"
+     "key": "price",
+     "groupId": "37a99437-7a8a-41b6-8908-8f6625d891b1"
     },
-    "clearer, more immersive sound": {
-     "sentimentAnalysis": "Stikkene forbindes med god, flot lyd og en oplevet forbedring af receiverens lyd.",
-     "simpleTitle": "Klarere og mere omsluttende lyd",
+    "sound becomes clear and engaging": {
+     "sentimentAnalysis": "Anmeldelserne forbinder stikkene med god, flot og tilsyneladende forbedret lyd fra de tilsluttede anlæg.",
+     "simpleTitle": "Klar og engagerende lyd",
      "bias": "positive",
-     "key": "improved sound",
-     "groupId": "df3945f0-8bda-4bb8-a08d-70c4a4ae4354"
+     "key": "sound",
+     "groupId": "3fc0a44b-26bf-4d32-aa03-3aba8103583a"
     },
-    "screw heads can be fragile": {
-     "sentimentAnalysis": "Forsigtighed anbefales ved tilspænding, da skruehoveder kan knække eller mangle ved levering.",
-     "simpleTitle": "Skruehovederne kan være skrøbelige",
+    "screws need careful handling": {
+     "sentimentAnalysis": "Anmeldelserne advarer om, at for hård tilspænding kan beskadige eller knække skruehovederne.",
+     "simpleTitle": "Skruerne skal håndteres forsigtigt",
      "bias": "negative",
-     "key": "fragile screws",
-     "groupId": "52c68539-412a-4611-a32b-a93d4c23de37"
+     "key": "quality",
+     "groupId": "ea6281a9-3f4d-4e84-a741-1fad58c81402"
+    },
+    "price feels high to some": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne synes, at stikkene er dyre, især uden mere omfattende emballage.",
+     "simpleTitle": "Prisen føles høj for nogle",
+     "bias": "negative",
+     "key": "price",
+     "groupId": "37a99437-7a8a-41b6-8908-8f6625d891b1"
     }
    },
    "grouping": {
-    "39ad2455-083e-449a-8a96-ff8696904077": {
-     "title": "Montering og brugervenlighed",
-     "id": "39ad2455-083e-449a-8a96-ff8696904077",
+    "fb0ca381-bbed-4e5f-b44d-df20f8c23fe4": {
+     "title": "Montering",
+     "id": "fb0ca381-bbed-4e5f-b44d-df20f8c23fe4",
      "references": [
       "fda6a7e2-c802-40fe-a530-713f68d41a21",
       "b8af3808-cb6a-429d-b58e-3103fdfb57dc",
@@ -227,21 +249,44 @@
       "6330bfd2-197e-4f88-9642-16f96b049e93",
       "f0931f19-3e83-410b-9854-76058be7a1c3",
       "12010c2b-ee3d-4dc0-9fc8-17c6ef6707ba",
+      "0b337496-69b5-4dd4-ac82-e1bf669f441a",
+      "148f000f-b0c6-44e0-8ff2-7717ec069ed8",
       "19a4829b-2f95-48a2-87d5-243525881a82",
       "2a61e61b-e4f4-4910-8fc6-d5d17cc4d6d3",
       "f9d8b050-306c-4dd1-be46-92487d24a922",
       "a14bae70-e81d-4cfa-a768-6f35b143b915",
-      "233b1799-cc23-4919-9ea3-7f82cc436328",
-      "148f000f-b0c6-44e0-8ff2-7717ec069ed8"
+      "233b1799-cc23-4919-9ea3-7f82cc436328"
      ]
     },
-    "52c68539-412a-4611-a32b-a93d4c23de37": {
-     "title": "Byggekvalitet og holdbarhed",
-     "id": "52c68539-412a-4611-a32b-a93d4c23de37",
+    "4b9e04ed-3216-4142-b5fa-4d544869a9b6": {
+     "title": "Tilslutning og pasform",
+     "id": "4b9e04ed-3216-4142-b5fa-4d544869a9b6",
      "references": [
+      "92aacd5e-e769-4cc1-b11d-7441e569a221",
+      "fda6a7e2-c802-40fe-a530-713f68d41a21",
+      "0d9ef61c-bef1-454a-ba80-da03755c15a5",
+      "596cd315-5dfc-46b8-90a0-547f70cb70c8",
+      "e54ee66d-d1da-4725-ada6-7809a1416c3f",
+      "90d04fd4-1151-4684-8d21-ca632f0da527",
+      "66d5f152-1fc8-4e8b-b732-c44d5bae8be3",
+      "6330bfd2-197e-4f88-9642-16f96b049e93",
+      "4aaea0a5-471a-4e4a-9a1d-b711175d2527",
+      "0ababee6-d762-46fc-bc5f-0c2a362be560",
+      "148f000f-b0c6-44e0-8ff2-7717ec069ed8",
+      "d4538912-0faf-4ca5-83ab-b9a458ad17d1",
+      "f9d8b050-306c-4dd1-be46-92487d24a922"
+     ]
+    },
+    "ea6281a9-3f4d-4e84-a741-1fad58c81402": {
+     "title": "Byggekvalitet og design",
+     "id": "ea6281a9-3f4d-4e84-a741-1fad58c81402",
+     "references": [
+      "009e7de8-0bfa-4f73-ac74-e8404b76f67b",
       "c938ecb0-9486-401d-bd57-d6507c8f2347",
       "d3b8c0c9-f250-4d41-b2d2-2372f650a30a",
+      "f3cc44d5-f648-4d3d-af6c-b2a53526303d",
       "e3ca160e-1b51-4447-93d5-9e62ee73d2f5",
+      "7f413db6-611a-4a2e-a4e2-8833c886a612",
       "4aaea0a5-471a-4e4a-9a1d-b711175d2527",
       "4209eca0-0afa-419c-8b3c-836f9075de01",
       "f1c3f6fd-a675-4474-ba27-92b909ac60dd",
@@ -250,22 +295,21 @@
       "128e160d-d2ad-4681-bea9-5a3fc59aa49e"
      ]
     },
-    "a46fc927-6600-480e-8e39-9f45e677f6d1": {
-     "title": "Forbindelse og pasform",
-     "id": "a46fc927-6600-480e-8e39-9f45e677f6d1",
+    "37a99437-7a8a-41b6-8908-8f6625d891b1": {
+     "title": "Pris",
+     "id": "37a99437-7a8a-41b6-8908-8f6625d891b1",
      "references": [
-      "92aacd5e-e769-4cc1-b11d-7441e569a221",
-      "0d9ef61c-bef1-454a-ba80-da03755c15a5",
-      "596cd315-5dfc-46b8-90a0-547f70cb70c8",
-      "90d04fd4-1151-4684-8d21-ca632f0da527",
-      "66d5f152-1fc8-4e8b-b732-c44d5bae8be3",
-      "d4538912-0faf-4ca5-83ab-b9a458ad17d1",
-      "e54ee66d-d1da-4725-ada6-7809a1416c3f"
+      "0f71044f-ce8d-4d36-8be6-cded13cc79ca",
+      "f3cc44d5-f648-4d3d-af6c-b2a53526303d",
+      "55d5c007-fb67-4f1d-bbb0-500b1e707b61",
+      "0ef1bbac-7058-45d3-a875-7b87e12583f7",
+      "83d2438b-5f5f-4622-bfb0-fc83fd54a193",
+      "148f000f-b0c6-44e0-8ff2-7717ec069ed8"
      ]
     },
-    "df3945f0-8bda-4bb8-a08d-70c4a4ae4354": {
+    "3fc0a44b-26bf-4d32-aa03-3aba8103583a": {
      "title": "Lydkvalitet",
-     "id": "df3945f0-8bda-4bb8-a08d-70c4a4ae4354",
+     "id": "3fc0a44b-26bf-4d32-aa03-3aba8103583a",
      "references": [
       "fda6a7e2-c802-40fe-a530-713f68d41a21",
       "7212a149-7799-4e6e-bfbd-0ba609ef6aac",

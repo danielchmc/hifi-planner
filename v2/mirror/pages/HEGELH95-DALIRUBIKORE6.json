@@ -13,6 +13,16 @@
    "url": "/stereo/systemer/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "dba45059-9753-436c-abd3-5d95fbab51e7",
+   "b867cd90-d33f-4cda-b0ba-3b77dd712453",
+   "f33d4822-d497-42ac-92df-2327c320f969",
+   "f3cac274-1fb1-4256-892d-03c6b8b43e02"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 270494,
   "skuCode": "HEGELH95-DALIRUBIKORE6",
@@ -284,10 +294,11 @@
         "productCode": "DALIRUBIKORE6HGMA"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager fredag den 11. december",
-        "deliveryDate": "2026-12-11T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 8,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
        "priceRaw": 19999,
@@ -309,7 +320,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 26,
+        "availableQuantity": 24,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -332,7 +343,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 14,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -370,8 +381,8 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager fredag den 11. december",
-    "deliveryDate": "2026-12-11T00:00:00Z",
+    "inStock": true,
+    "description": "På lager. Leveringstid 2-4 hverdage",
     "canBuyOnline": true,
     "numberOfStoresExperiencePartly": 2
    }

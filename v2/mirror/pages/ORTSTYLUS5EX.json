@@ -13,6 +13,16 @@
    "url": "/pladespiller/tilbehoer/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Udgangsspænding (mV)": "4",
+   "Fra beskrivelsen": "OBS: Hi-Fi Klubben kan også levere en række andre produkter fra Ortofon ud over de viste på hjemmesiden. Kontakt din butik for nærmere information."
+  },
+  "gallery": [
+   "e988203d-6a3e-4e1d-adff-ca432e40b8b7"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 94,
   "skuCode": "ORTSTYLUS5EX",
@@ -154,7 +164,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 52,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -197,41 +207,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS5EX leverer en varm, klar og fyldig lyd med en markant forbedring i forhold til en slidt nål og en fremragende værdi for pengene. Den nemme udskiftning og den sikre emballage gør installationen enkel, mens servicen roses som fremragende. Den skrøbelige konstruktion og den lange leveringstid er bemærkelsesværdige ulemper, men den samlede tilfredshed er stadig høj.",
+   "summary": "ORTSTYLUS5EX leverer en varm, klar og slagkraftig opgradering, der bringer pladerne til live igen og især imponerer i forhold til prisen. Pickupnålen passer godt, er nem at udskifte og giver en medrivende lytteoplevelse tilbage. Den samlede tilfredshed er høj, understøttet af god service, selv om leveringen kan være langsom, og konstruktionen virker lidt skrøbelig.",
    "headlines": {
+    "clear, powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring, krystalklar gengivelse og fantastisk ydeevne.",
+     "simpleTitle": "Klar og kraftfuld lyd",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "8ce221b3-5ae2-4f2c-ae27-22b745f01076"
+    },
     "easy replacement and reliable fit": {
-     "sentimentAnalysis": "Udskiftningen beskrives som nem med perfekt pasform, god emballage og en vellykket tilbagevenden til fungerende tilstand.",
-     "simpleTitle": "Nem udskiftning og præcis pasform",
+     "sentimentAnalysis": "Pickupnålen passer korrekt, er nem at udskifte og får pladespilleren til at fungere igen.",
+     "simpleTitle": "Nem udskiftning og sikker pasform",
      "bias": "positive",
-     "key": "easy-replacement",
-     "groupId": "e09179ff-3ffc-4a9f-be02-c8d5a67d52d2"
+     "key": "installation-fit",
+     "groupId": "840e41f3-bceb-49af-bc0c-a8bfaf292c9e"
     },
-    "clear, noticeably improved sound": {
-     "sentimentAnalysis": "Nålen roses for klar lyd og den forventede forbedring i forhold til den slidte originale nål.",
-     "simpleTitle": "Klar og mærkbart forbedret lyd",
+    "good value sound": {
+     "sentimentAnalysis": "Lyden vurderes som mere end god nok og især imponerende i denne prisklasse.",
+     "simpleTitle": "God lyd til prisen",
      "bias": "positive",
-     "key": "clear-improved-sound",
-     "groupId": "4a9e72fd-da27-4278-ba07-10ac154caad8"
+     "key": "sound-quality",
+     "groupId": "8ce221b3-5ae2-4f2c-ae27-22b745f01076"
     },
-    "excellent sound for the price": {
-     "sentimentAnalysis": "Lyden vurderes som meget god eller fantastisk i forhold til prisen, selv om en anmeldelse beskriver den som solid snarere end enestående.",
-     "simpleTitle": "Fremragende lyd til prisen",
+    "highly praised service": {
+     "sentimentAnalysis": "Begge anmeldelser udtrykker tydelig tilfredshed med serviceoplevelsen.",
+     "simpleTitle": "Meget rost service",
      "bias": "positive",
-     "key": "sound-value",
-     "groupId": "4a9e72fd-da27-4278-ba07-10ac154caad8"
-    },
-    "excellent customer service": {
-     "sentimentAnalysis": "Begge serviceanmeldelser udtrykker stor tilfredshed og beskriver servicen meget positivt.",
-     "simpleTitle": "Fremragende kundeservice",
-     "bias": "positive",
-     "key": "service-quality",
-     "groupId": "a058ff16-af8f-43e3-b31a-89a29b1090b4"
+     "key": "service",
+     "groupId": "2840efa6-f3e5-4359-a0a9-49fe91bb642b"
     }
    },
    "grouping": {
-    "4a9e72fd-da27-4278-ba07-10ac154caad8": {
+    "8ce221b3-5ae2-4f2c-ae27-22b745f01076": {
      "title": "Lydkvalitet",
-     "id": "4a9e72fd-da27-4278-ba07-10ac154caad8",
+     "id": "8ce221b3-5ae2-4f2c-ae27-22b745f01076",
      "references": [
       "3a4cf03f-d881-4bf9-a549-ab3e90b82fc8",
       "76603d40-cf1b-42cd-b65c-c7873bbf019f",
@@ -239,18 +249,18 @@
       "6c726cca-a80c-4fb3-b23f-f4d189fcb10d"
      ]
     },
-    "e09179ff-3ffc-4a9f-be02-c8d5a67d52d2": {
-     "title": "Udskiftning og installation",
-     "id": "e09179ff-3ffc-4a9f-be02-c8d5a67d52d2",
+    "840e41f3-bceb-49af-bc0c-a8bfaf292c9e": {
+     "title": "Montering og pasform",
+     "id": "840e41f3-bceb-49af-bc0c-a8bfaf292c9e",
      "references": [
       "2ac7ce16-0dd6-4dd1-af2b-ce573510d09e",
       "ffce40c3-0af7-4431-8dfe-93a51658ac92",
       "1dbb9ed0-207a-4338-9c64-c2f16f111a52"
      ]
     },
-    "a058ff16-af8f-43e3-b31a-89a29b1090b4": {
-     "title": "Kundeservice",
-     "id": "a058ff16-af8f-43e3-b31a-89a29b1090b4",
+    "2840efa6-f3e5-4359-a0a9-49fe91bb642b": {
+     "title": "Service",
+     "id": "2840efa6-f3e5-4359-a0a9-49fe91bb642b",
      "references": [
       "c163bbb9-a554-447f-a792-406ae743b261",
       "f2383fef-b52e-44bf-b35c-e1f03a236408"

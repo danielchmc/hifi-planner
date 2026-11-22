@@ -13,6 +13,17 @@
    "url": "/horetelefoner/head-fi/"
   }
  ],
+ "hp": {
+  "spec": {
+   "Bluetooth": "Nej",
+   "Fra beskrivelsen": "Højpræcisions mini-XLR tilslutninger på ørekopper · Medfølgende tilbehør: USB-nøgle med manual, 4-pin mini-XLR kabel"
+  },
+  "gallery": [
+   "473ffa96-3901-46ec-8f17-a55535d5bc21",
+   "51a1035e-568c-48bd-aba5-7bea0bc0fb28"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 135816,
   "skuCode": "AUDLCDX",
@@ -343,48 +354,41 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Audeze LCD-X leverer en usædvanligt klar, detaljeret og omsluttende lyd med dyb, kontrolleret bas, naturlige mellemtoner og præcis placering. Den åbne gengivelse fungerer især godt med højopløselige indspilninger, klassisk musik og mixning, mens EQ kan finjustere den allerede stærke tuning. Fremragende komfort, byggekvalitet og tilbehør opvejer den betydelige vægt, og den samlede ydelse anses generelt for at være prisen værd.",
+   "summary": "AUDLCDX leverer en usædvanligt klar, detaljeret og naturlig lyd med dyb, kontrolleret og slagkraftig bas, en luftig gengivelse og imponerende dynamik. Det åbne design skaber et medrivende og præcist lydbillede, der egner sig både til kritisk studiearbejde og afslappet lytning, især med optagelser i høj kvalitet. Den førsteklasses konstruktion og komfort understøtter lange sessioner, selv om den høje vægt, lejlighedsvise skarphed i diskanten eller behovet for EQ ikke passer til alle.",
    "headlines": {
-    "clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne roser samstemmigt LCD-X for en usædvanligt klar, detaljeret, naturlig og omsluttende gengivelse med præcis placering og studiokvalitet.",
-     "simpleTitle": "Klar, detaljeret og omsluttende lyd",
+    "clear, natural and highly detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmigt den usædvanligt klare, naturlige, detaljerede og medrivende gengivelse med præcis placering og stærk dynamik.",
+     "simpleTitle": "Klar, naturlig og meget detaljeret lyd",
      "bias": "positive",
-     "key": "sound_clarity",
-     "groupId": "2f1e284f-1dae-46ab-b957-df81814c04b7"
+     "key": "sound",
+     "groupId": "00fe1c16-9ebe-4e10-a86e-af082b36eec4"
     },
-    "deep, controlled and punchy bass": {
-     "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, fyldig og meget detaljeret uden at blive overdrevet eller påtrængende.",
-     "simpleTitle": "Dyb, kontrolleret og fyldig bas",
+    "deep, controlled and powerful bass": {
+     "sentimentAnalysis": "Bassen beskrives gentagne gange som dyb, fyldig og slagkraftig, samtidig med at den forbliver kontrolleret og uden overdrivelse.",
+     "simpleTitle": "Dyb, kontrolleret og kraftfuld bas",
      "bias": "positive",
-     "key": "sound_bass",
-     "groupId": "2f1e284f-1dae-46ab-b957-df81814c04b7"
+     "key": "sound",
+     "groupId": "00fe1c16-9ebe-4e10-a86e-af082b36eec4"
     },
-    "eq can refine the presentation": {
-     "sentimentAnalysis": "Flere anmeldelser oplever LCD-X som usædvanligt velegnet til EQ, der kan frigøre hovedtelefonens fulde potentiale eller dæmpe lejlighedsvis skarphed i diskanten.",
-     "simpleTitle": "EQ kan finjustere gengivelsen",
+    "comfortable for long listening despite the weight": {
+     "sentimentAnalysis": "Hovedtelefonerne beskrives gentagne gange som komfortable og velegnede til lange sessioner med rummelige puder, selv om vægten stadig kan mærkes.",
+     "simpleTitle": "Komfortabel til lange lytte-sessioner trods vægten",
      "bias": "positive",
-     "key": "eq_refinement",
-     "groupId": "692b9b70-386b-4ad9-a488-c35d795cf497"
+     "key": "comfort",
+     "groupId": "eabf5c8d-6b23-437d-a6e6-507ea3fd3d75"
     },
-    "heavy but comfortable for long sessions": {
-     "sentimentAnalysis": "Den betydelige vægt nævnes, men store puder, god plads til ørerne og en sikker pasform gør lange lytte-sessioner komfortable for mange brugere.",
-     "simpleTitle": "Tung, men komfortabel til lange sessioner",
-     "bias": "positive",
-     "key": "comfort_tradeoff",
-     "groupId": "168bdac2-60f9-4b2b-a745-14a6df7f8b29"
-    },
-    "premium construction and useful accessories": {
-     "sentimentAnalysis": "Hovedtelefonerne roses for meget god forarbejdning, matchede enheder, et kabel i høj kvalitet og praktisk premium-tilbehør inklusive et etui.",
-     "simpleTitle": "Førsteklasses konstruktion og praktisk tilbehør",
-     "bias": "positive",
-     "key": "build_accessories",
-     "groupId": "733a128e-76ed-472e-bf7e-ec918b4a99a2"
+    "some recordings benefit from EQ": {
+     "sentimentAnalysis": "Nogle lyttere finder EQ nyttig, især til finjustering af diskanten eller enkelte vokaler, men den anses generelt ikke for nødvendig.",
+     "simpleTitle": "Nogle optagelser har gavn af EQ",
+     "bias": "meh",
+     "key": "equalization",
+     "groupId": "960ef46e-f941-48cb-8d73-ed1473bbb93e"
     }
    },
    "grouping": {
-    "2f1e284f-1dae-46ab-b957-df81814c04b7": {
+    "00fe1c16-9ebe-4e10-a86e-af082b36eec4": {
      "title": "Lydkvalitet",
-     "id": "2f1e284f-1dae-46ab-b957-df81814c04b7",
+     "id": "00fe1c16-9ebe-4e10-a86e-af082b36eec4",
      "references": [
       "e5aa22cc-00d9-402f-bf9a-30d19a546926",
       "9d47b213-cb11-4978-a8b1-ab7c98a7df7f",
@@ -399,39 +403,28 @@
       "3ccdeb71-cecf-438c-84b7-3f962e05a656",
       "d0f2ad8d-fa10-40c6-98c5-fa3fdb652fd6",
       "3eb46f06-67cd-4eb3-b17e-8bb186646808",
+      "a5d88f97-946a-426a-ac0d-59ec2383412a",
       "6281df1b-6c04-49bc-934c-fc44d53011b6",
       "cf5f260f-8022-4d1a-98b1-1373244a52f3",
       "ce9d621a-a39d-4333-b30b-de7ea6278a3c"
      ]
     },
-    "692b9b70-386b-4ad9-a488-c35d795cf497": {
-     "title": "Equalizer",
-     "id": "692b9b70-386b-4ad9-a488-c35d795cf497",
-     "references": [
-      "e5aa22cc-00d9-402f-bf9a-30d19a546926",
-      "9d47b213-cb11-4978-a8b1-ab7c98a7df7f",
-      "3d7a2f20-dbaa-48d0-8962-094c2fb2367f",
-      "a5d88f97-946a-426a-ac0d-59ec2383412a",
-      "ce9d621a-a39d-4333-b30b-de7ea6278a3c"
-     ]
-    },
-    "168bdac2-60f9-4b2b-a745-14a6df7f8b29": {
+    "eabf5c8d-6b23-437d-a6e6-507ea3fd3d75": {
      "title": "Komfort og vægt",
-     "id": "168bdac2-60f9-4b2b-a745-14a6df7f8b29",
+     "id": "eabf5c8d-6b23-437d-a6e6-507ea3fd3d75",
      "references": [
       "7075145c-66e9-4edf-ac15-5040bcaf1126",
       "3ccdeb71-cecf-438c-84b7-3f962e05a656",
-      "d0f2ad8d-fa10-40c6-98c5-fa3fdb652fd6",
-      "cf5f260f-8022-4d1a-98b1-1373244a52f3"
+      "d0f2ad8d-fa10-40c6-98c5-fa3fdb652fd6"
      ]
     },
-    "733a128e-76ed-472e-bf7e-ec918b4a99a2": {
-     "title": "Byggekvalitet og tilbehør",
-     "id": "733a128e-76ed-472e-bf7e-ec918b4a99a2",
+    "960ef46e-f941-48cb-8d73-ed1473bbb93e": {
+     "title": "Equalizer",
+     "id": "960ef46e-f941-48cb-8d73-ed1473bbb93e",
      "references": [
-      "9d47b213-cb11-4978-a8b1-ab7c98a7df7f",
-      "7075145c-66e9-4edf-ac15-5040bcaf1126",
-      "1ebc7963-3c02-4467-bc22-311860dd071d"
+      "e5aa22cc-00d9-402f-bf9a-30d19a546926",
+      "3d7a2f20-dbaa-48d0-8962-094c2fb2367f",
+      "ce9d621a-a39d-4333-b30b-de7ea6278a3c"
      ]
     }
    },
