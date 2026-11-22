@@ -21,7 +21,7 @@
       h('.cv-title', null, h('h1', null, d.name || t('Your proposal', 'Dit tilbud')), cv.c ? h('p', null, t('For ', 'Til ') + cv.c) : null),
       h('table.cv-lines', null, list.map((r) => h('tr', null,
         h('td.q', null, r.qty + (r.cableM ? ' m' : '×')),
-        h('td', null, h('span.nm', null, r.name), r.sys ? h('small', null, r.parts) : null, r.was ? h('em', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
+        h('td', null, r.url ? h('a.nm', { href: r.url, target: '_blank', rel: 'noopener' }, r.name, h('span.cv-go', null, ' ↗')) : h('span.nm', null, r.name), r.sys ? h('small', null, r.parts) : null, r.was ? h('em', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
         h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.price * r.qty)))))),
       h('.cv-total', null, h('span', null, 'Total'), h('b', null, HP.money(total))),
       saving > 0 ? h('.cv-saving', null, h('span', null, t('You save', 'Du sparer')), h('b', null, HP.money(saving))) : null,
@@ -35,9 +35,9 @@
   }
 
   // what the cover needs to know, kept in the proposal (and in its links)
-  function stamp(customer) {
+  function stamp(customer, related) {
     const sp = HP.shopProfile ? HP.shopProfile() : {}, seller = HP.seller ? HP.seller() : null;
-    store.doc.cv = { c: customer || '', s: (seller && seller.name) || '', sh: [sp.name || '', sp.phone || '', sp.email || ''], d: HP.today() };
+    store.doc.cv = { c: customer || '', s: (seller && seller.name) || '', sh: [sp.name || '', sp.phone || '', sp.email || ''], d: HP.today(), r: related === false ? 0 : 1 };
     store.commit();
   }
   async function qrFor() {
@@ -52,16 +52,19 @@
     const name = h('input', { placeholder: t('e.g. Mette and Lars Jensen', 'f.eks. Mette og Lars Jensen'), value: (d.cv && d.cv.c) || '', autofocus: true,
       onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); go(); } } });
     const withCover = h('input', { type: 'checkbox', checked: LS.get('cover', true) });
+    const withRel = h('input', { type: 'checkbox', checked: LS.get('coverRel', true) });
+    const st = () => { LS.set('coverRel', withRel.checked); stamp(name.value.trim(), withRel.checked); };
     const go = async () => {
-      LS.set('cover', withCover.checked); stamp(name.value.trim()); close();
+      LS.set('cover', withCover.checked); st(); close();
       if (!withCover.checked) return C().print();
       C().print({ cover: build(await qrFor()) });
     };
     const close = HP.modal({ title: t('Print proposal', 'Print tilbud'), size: 'sm', body: h('.form', null,
       h('label', null, t('Customer', 'Kunde'), name),
       h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
+      h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
       h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.'))),
-      foot: [h('button.btn', { onclick: () => { stamp(name.value.trim()); csv(); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
+      foot: [h('button.btn', { onclick: () => { st(); csv(); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
         h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), h('button.btn.primary', { onclick: go }, icon('print', 14), t('Print', 'Print'))] });
   }
 
@@ -108,11 +111,30 @@
     if (document.fonts && document.fonts.ready) await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
     await new Promise((r) => setTimeout(r, 60));
     draw(); window.addEventListener('resize', fit);
+    if (cv.r !== 0) { const rel = related(); if (rel) page.append(rel); }
     let again = 0;
     const later = () => { clearTimeout(again); again = setTimeout(draw, 250); };
     if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', later);
     window.addEventListener('load', later);
     document.title = (doc.name || t('Proposal', 'Tilbud')) + ' · HiFi Klubben';
+  }
+
+  /* "Relaterede produkter" for the customer: what hifiklubben.dk sells with the products in the proposal (the same list as the
+     planner's dialog, without what is already in it), to look at and buy on the website. Nothing is saved or sent. */
+  function related() {
+    const list = HP.complete ? HP.complete.related() : [];
+    if (!list.length) return null;
+    const tile = (x) => {
+      const p = x.p, pr = HP.priceOf(p), url = HP.productUrl(p);
+      return h('a.rel-tile', { href: url || undefined, target: '_blank', rel: 'noopener' },
+        h('.rel-pic', null, p.img && p.img[0] ? HP.imgEl(p.img[0], 'thumb', { loading: 'lazy' }) : null),
+        h('small', null, p.brand), h('b', null, p.name),
+        h('span.rel-for', null, t('For ', 'Til ') + x.for.name),
+        h('span.rel-pr', null, pr.was ? h('s', null, HP.money(pr.was)) : null, h('span', null, HP.money(pr.price))));
+    };
+    return h('section.view-rel', null, h('h2.view-h', null, t('Related products', 'Relaterede produkter')),
+      h('p.view-sub', null, t('Accessories hifiklubben.dk sells with the products in your proposal. Tap one to see it on the website, or ask your adviser.', 'Tilbehør, som hifiklubben.dk sælger til produkterne i dit tilbud. Tryk på et for at se det på hjemmesiden, eller spørg din rådgiver.')),
+      h('.rel-grid', null, list.slice(0, 24).map(tile)));
   }
 
   /* A long price list does not fit one A4 page (above all a landscape one, ~12 lines): the lines then continue on further

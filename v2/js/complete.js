@@ -42,7 +42,18 @@
   const defaultOpt = (G) => G.metre ? null : (G.opts.find((o) => o.m >= 1) || G.opts[0]);
 
   // the connections that still have no cable (and could have one)
-  const missing = () => (store.doc.conns || []).filter((c) => !c.cable && store.item(c.a.item) && store.item(c.b.item));
+  // Speaker wires between the same two cards (an amplifier's SPEAKER OUT L and R to one speaker-pair card) need one cable choice,
+  // not one each: some speaker cables are sold as a pair, some as one, so the seller picks once. When one of them has a cable,
+  // or is already asked about, the others are left out.
+  const missing = () => {
+    const ok = (c) => store.item(c.a.item) && store.item(c.b.item);
+    const conns = (store.doc.conns || []).filter(ok), done = new Set(), out = [];
+    const spk = (c) => { const i = C().connInfo(c); return !!(i.a && i.a.sig === 'speaker'); };
+    const pair = (c) => [c.a.item, c.b.item].sort().join('|');
+    conns.forEach((c) => { if (c.cable && spk(c)) done.add(pair(c)); });
+    conns.forEach((c) => { if (c.cable) return; if (spk(c)) { const k = pair(c); if (done.has(k)) return; done.add(k); } out.push(c); });
+    return out;
+  };
   // a cable is suggested per connection, not as an accessory; adapters are both (Essentials Wireless Connect, Sonos Line-In Adapter),
   // and so is anything tools/overrides.js marks with facets { accessory: true }. Y-splitters stay cables.
   const isAdapter = (a) => { const s = (a.ty || '') + ' ' + a.name; return /adapter|wireless connect/i.test(s) && !/y-split/i.test(s); };
@@ -131,5 +142,7 @@
     }
   }
 
-  HP.complete = { open, missing: () => missing().length };
+  // for the customer view: the accessories of the products in the proposal
+  const related = () => accFor([...new Set(store.doc.items.filter((i) => i.kind === 'product').map((i) => i.pid))]);
+  HP.complete = { open, missing: () => missing().length, related };
 })();
