@@ -340,16 +340,24 @@
     const el = els.get(it.id);
     if (!g && el) {
       const s = it.kind === 'product' ? cardScale() : 1;
-      g = { w: el.offsetWidth * s, h: el.offsetHeight * s, p: {} };
-      el.querySelectorAll('.port').forEach((pe) => { g.p[pe.dataset.side + ':' + pe.dataset.key] = (pe.offsetTop + pe.offsetHeight / 2) * s; });
+      g = { w: el.offsetWidth * s, h: el.offsetHeight * s, p: {}, x: {} };
+      // each port: the centre of its dot, measured on screen relative to the card and divided by the zoom, so borders, fractions of a
+      // pixel and the card scale are all included (offsetTop counted from inside the card's border and rounded: wires sat about 1 unit
+      // too high). Relative to the card, so an animation moving the whole card does not matter.
+      const er = el.getBoundingClientRect(), z = view.z || 1, onScreen = er.width > 0;
+      el.querySelectorAll('.port').forEach((pe) => {
+        const k = pe.dataset.side + ':' + pe.dataset.key, d = pe.querySelector('.dot');
+        if (onScreen && d) { const r = d.getBoundingClientRect(); g.p[k] = (r.top + r.height / 2 - er.top) / z; g.x[k] = (r.left + r.width / 2 - er.left) / z; }
+        else g.p[k] = (pe.offsetTop + pe.offsetHeight / 2) * s;
+      });
       geom.set(it.id, g);
     }
     return g || { w: 0, h: 0, p: {} };
   }
   function portPos(itemId, side, key) {
     const it = store.item(itemId); if (!it) return null;
-    const g = measure(it), y = g.p[side + ':' + key];
-    return y == null ? null : { x: it.x + (side === 'in' ? 0 : g.w), y: it.y + y };
+    const g = measure(it), k = side + ':' + key, y = g.p[k];
+    return y == null ? null : { x: it.x + (g.x && g.x[k] != null ? g.x[k] : side === 'in' ? 0 : g.w), y: it.y + y };
   }
   const portDef = (itemId, side, key) => { const it = store.item(itemId), p = it && cat.get(it.pid); return p && (p[side] || []).find((x) => x.key === key); };
   function connInfo(c) {
@@ -1324,6 +1332,10 @@
     window.addEventListener('keydown', (e) => { if (e.code === 'Space' && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && !e.target.isContentEditable) { spaceDown = true; vp.classList.add('space'); e.preventDefault(); } if (e.key === 'Escape') { cancelWire(); C.stopStamp(); C.stopTool(); } if (e.key === 'Enter' && tool && tool.type === 'run' && tool.pts.length > 1) { e.preventDefault(); finishRun(); } });
     window.addEventListener('keyup', (e) => { if (e.code === 'Space') { spaceDown = false; vp.classList.remove('space'); } });
     HP.on('doc', render); HP.on('catalog', render);
+    // card headings change height when a web font arrives: measure the ports again and redraw the wires (the cards themselves are not
+    // rebuilt, so a text being typed keeps its focus)
+    const remeasure = () => { geom.clear(); renderWires(); placeBar(); };
+    if (document.fonts) { document.fonts.ready.then(remeasure); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', remeasure); }
     const saved = HP.LS.get('view', null);
     render();
     if (saved && isFinite(saved.z)) { Object.assign(view, saved); applyView(); } else C.fit();
