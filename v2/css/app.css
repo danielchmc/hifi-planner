@@ -729,8 +729,17 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 }
 
 /* v4.6: "Gør tilbuddet færdigt": cables for connections without one, and the website's accessories */
-#tb-complete { position: relative; }
-#tb-complete .badge { min-width: 16px; height: 16px; padding: 0 4px; margin-left: 4px; background: var(--accent); color: var(--accent-fg); font: 600 10px/16px var(--mono); text-align: center; }
+#tb-complete { position: relative; font-weight: 600; }
+#tb-complete .badge { min-width: 16px; height: 16px; padding: 0 4px; margin-left: 4px; background: var(--accent-fg); color: var(--accent); font: 600 10px/16px var(--mono); text-align: center; }
+#tb-complete:hover .badge { background: var(--panel); color: var(--fg); }
+@media (max-width: 1320px) { #tb-complete span:not([hidden]) { display: inline; } }   /* the one top-bar label that stays */
+/* v4.8: item number (SKU) on the selection bar and in the right-click menu */
+#selbar button.sku { font: 600 11px var(--mono); letter-spacing: .02em; text-transform: none; }
+#selbar button.sku .ic { opacity: .6; }
+#ctxmenu .mn { margin-left: 18px; font: 11px var(--mono); color: var(--muted); }
+#ctxmenu .mi:hover .mn, #ctxmenu .mi:focus .mn { color: inherit; }
+#ctxmenu .mi.accent { color: var(--accent); font-weight: 600; }
+#ctxmenu .mi.accent:hover, #ctxmenu .mi.accent:focus { background: var(--accent); color: var(--accent-fg); }
 .pl-nudge { display: flex; align-items: center; gap: 6px; width: 100%; margin-top: 8px; padding: 6px 8px; border: 1px dashed var(--accent); background: transparent; color: var(--fg); font: 11px var(--ui); text-align: left; }
 .pl-nudge b { margin-left: auto; color: var(--accent); font-weight: 600; }
 .pl-nudge:hover { background: var(--accent); color: var(--accent-fg); border-style: solid; } .pl-nudge:hover b { color: inherit; }

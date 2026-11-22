@@ -256,7 +256,7 @@
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()),
         // on screen only: connections still without a cable, and the way to complete the proposal
         nMissing() ? h('button.pl-nudge.no-print', { onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.complete.open() }, icon('cable', 13),
-          nMissing() + ' ' + t(nMissing() === 1 ? 'connection without a cable' : 'connections without a cable', nMissing() === 1 ? 'forbindelse uden kabel' : 'forbindelser uden kabel'), h('b', null, t('Complete →', 'Gør færdig →'))) : null);
+          nMissing() + ' ' + t(nMissing() === 1 ? 'connection without a cable' : 'connections without a cable', nMissing() === 1 ? 'forbindelse uden kabel' : 'forbindelser uden kabel'), h('b', null, t('Related products →', 'Relaterede produkter →'))) : null);
     }
     if (it.kind === 'zone') {
       const col = ZONE_COLORS[d.items.filter((i) => i.kind === 'zone').indexOf(it) % ZONE_COLORS.length];
@@ -468,6 +468,8 @@
   const centerWorld = () => { const r = vp.getBoundingClientRect(); return toWorld(r.left + r.width / 2, r.top + r.height / 2); };
 
   /* ================= selection bar ================= */
+  // the item number of a card: the chosen colour's own SKU, else the product's
+  C.skuOf = (it) => { const p = it && it.kind === 'product' && cat.get(it.pid); return p ? ((HP.variantOf(p, it) || {}).sku || p.sku || '') : ''; };
   function placeBar() {
     if (!selbar) return;
     const d = store.doc, ids = [...store.sel].filter((id) => store.item(id));
@@ -484,8 +486,9 @@
       anchor = { x: (x0 + x1) / 2, y: y0 };
       const one = ids.length === 1 && store.item(ids[0]);
       if (one && one.kind === 'product') {
+        const p = cat.get(one.pid), sku = C.skuOf(one);
+        if (sku) selbar.append(h('button.sku', { title: t('Copy item number', 'Kopiér varenummer'), onclick: () => HP.copyText(sku, t('Item number copied: ', 'Varenr. kopieret: ') + sku) }, h('span', null, sku), icon('copy')));
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
-        const p = cat.get(one.pid);
         if (p && HP.imagesOf(p, one).length > 1) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
         if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Colour', 'Farve'), (e) => C.colourMenu(one.id, e.currentTarget)));
       }
@@ -1063,8 +1066,14 @@
     if (wireEl) { store.sel.clear(); store.selConn = wireEl.dataset.id; refreshSel(); }
     else if (itemEl && !store.sel.has(itemEl.dataset.id)) { store.sel = new Set([itemEl.dataset.id]); store.selConn = null; refreshSel(); }
     else if (!itemEl && !e.target.closest('.overlay')) { if (store.sel.size || store.selConn) { store.sel.clear(); store.selConn = null; refreshSel(); } }
+    menuAt(e.clientX, e.clientY, false);
+  }
+  // compact = what the selection needs; "Flere…" (or right-clicking empty canvas) shows everything
+  function menuAt(x, y, full) {
+    const d = store.doc, admin = HP.isAdmin();
     const ids = [...store.sel], one = ids.length === 1 && store.item(ids[0]), p = one && one.kind === 'product' && cat.get(one.pid);
-    const M = [], x = e.clientX, y = e.clientY;
+    const M = [], sku = p ? C.skuOf(one) : '';
+    full = full || !(ids.length || store.selConn);
     const add = (label, key, ic, fn, opts) => M.push(Object.assign({ label, key, icon: ic, fn }, opts));
     if (store.selConn) {
       const c = d.conns.find((q) => q.id === store.selConn);
@@ -1078,11 +1087,12 @@
       M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : one.kind === 'mark' ? markTitle(one.k) : one.kind === 'legend' ? t('Legend', 'Signaturforklaring') : one.kind === 'zone' ? t('Room', 'Rum') + (one.name ? ': ' + one.name : '') : one.kind === 'run' ? t('Cable run', 'Kabeltræk') + (d.sc ? ' · ' + fmtM(runPx(one) / d.sc) : '') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
       if (p) {
         add(t('Replace…', 'Udskift…'), 'Alt+R', 'swap', () => HP.panels.replacePicker(one.id));
-        if (HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'Alt+B', 'flip', () => C.flip(one.id));
-        if (HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
         if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'Alt+C', 'layers', () => C.colourMenu(one.id, null, x, y));
-        if ((p.acc || []).length || store.doc.conns.some((c) => !c.cable && (c.a.item === one.id || c.b.item === one.id))) add(t('Accessories and cables…', 'Tilbehør og kabler…'), '', 'plus', () => HP.complete.open({ pid: p.id }));
-        if (admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
+        if (full && HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'Alt+B', 'flip', () => C.flip(one.id));
+        if (full && HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
+        add(t('Related products…', 'Relaterede produkter…'), '', 'plus', () => HP.complete.open({ pid: p.id }), { accent: true });
+        if (sku) add(t('Copy item no.', 'Kopiér varenr.'), '', 'copy', () => HP.copyText(sku, t('Item number copied: ', 'Varenr. kopieret: ') + sku), { note: sku });
+        if (full && admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
       if (one && one.kind === 'mark' && one.k[0] !== '@') {
         add(t('Replace all ', 'Udskift alle ') + letter(markIndex(one.k)) + '…', 'R', 'swap', () => HP.panels.replacePicker(one.id));
@@ -1098,17 +1108,19 @@
         add(one.lock ? t('Unlock to move/resize', 'Lås op for at flytte/skalere') : t('Lock', 'Lås'), 'L', one.lock ? 'move' : 'lock', () => { one.lock = !one.lock; store.commit(); });
         add(t('Remove floor plan', 'Fjern plantegning'), '', 'trash', C.removePlan, { danger: true });
       } else {
-        add(t('Copy', 'Kopiér'), 'Ctrl+C', 'copy', C.copy);
+        M.push('sep');
+        if (full) add(t('Copy', 'Kopiér'), 'Ctrl+C', 'copy', C.copy);
         { const pr = [...store.sel].map((id) => store.item(id)).filter((x) => x && priceable(x));
-          if (pr.length) add(t('Count in price list', 'Tæl med i prislisten'), '', 'tag', C.togglePriced, { on: !pr[0].np }); }
+          if (full && pr.length) add(t('Count in price list', 'Tæl med i prislisten'), '', 'tag', C.togglePriced, { on: !pr[0].np }); }
         add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && (one.kind === 'prices' || one.kind === 'legend') });
-        add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
-        add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
-        if (admin && ids.some((id) => store.item(id).kind === 'product')) add(t('Save as Shortcut…', 'Gem som genvej…'), '', 'bolt', () => HP.editor.saveShortcut());
+        if (full) add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
+        if (full) add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
+        if (full && admin && ids.some((id) => store.item(id).kind === 'product')) add(t('Save as Shortcut…', 'Gem som genvej…'), '', 'bolt', () => HP.editor.saveShortcut());
         add(t('Delete', 'Slet'), 'Del', 'trash', C.deleteSelection, { danger: true });
       }
       M.push('sep');
     }
+    if (!full) { add(t('More…', 'Flere…'), '', 'more', () => menuAt(x, y, true)); return HP.menu(x, y, M); }
     add(t('Undo', 'Fortryd'), 'Ctrl+Z', 'undo', store.undo, { disabled: !store.canUndo() });
     add(t('Redo', 'Annuller fortryd'), 'Ctrl+Y', 'redo', store.redo, { disabled: !store.canRedo() });
     add(t('Paste', 'Indsæt'), 'Ctrl+V', 'page', () => C.paste(x, y), { disabled: !C.canPaste() });
@@ -1116,7 +1128,7 @@
     add(t('Add text here', 'Tilføj tekst her'), 'Alt+T', 'text', () => C.addText(x, y));
     add(C.hasPrices() ? t('Hide price list', 'Skjul prisliste') : t('Show price list', 'Vis prisliste'), 'F3', 'tag', C.togglePrices);
     if (C.hasPlan()) add(t('Remove floor plan', 'Fjern plantegning'), '', 'plan', C.removePlan);
-    if (store.doc.items.some((x) => x.kind === 'product')) add(t('Complete the proposal…', 'Gør tilbuddet færdigt…'), '', 'check', () => HP.complete.open());
+    if (!p && store.doc.items.some((x) => x.kind === 'product')) add(t('Related products…', 'Relaterede produkter…'), '', 'plus', () => HP.complete.open(), { accent: true });
     add(t('Select all', 'Markér alt'), 'Ctrl+A', 'layers', C.selectAll);
     add(t('Fit to window', 'Tilpas til vindue'), 'Shift+1', 'fit', C.fit);
     M.push({ el: HP.panels.scaleStepper() });

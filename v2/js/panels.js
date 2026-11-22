@@ -284,10 +284,10 @@
     const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1 });
     const ci = tb('tb-ci', 'plan', t('CI mode', 'CI-tilstand'), () => C().setCI(!store.doc.ci), { text: 1 });
-    // "Gør færdig": the cables and accessories still missing; the badge counts the connections without a cable
-    const done = tb('tb-complete', 'check', t('Complete', 'Gør færdig'), () => HP.complete.open(), { text: 1 }), doneN = h('span.badge');
+    // "Relaterede produkter": cables for the connections without one and the website's accessories; the badge counts the connections without a cable
+    const done = tb('tb-complete', 'plus', t('Related products', 'Relaterede produkter'), () => HP.complete.open(), { text: 1, cls: '.primary' }), doneN = h('span.badge');
     done.append(doneN);
-    const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: complete the proposal', ' forbindelser uden kabel: gør tilbuddet færdigt') : t('Complete the proposal: cables and accessories', 'Gør tilbuddet færdigt: kabler og tilbehør'); };
+    const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
     const orient = h('button.tbtn#tb-orient', { title: t('Switch A4 portrait / landscape', 'Skift A4 stående / liggende'), onclick: () => { store.doc.orient = store.doc.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } }, icon('rotate'), h('span'));
     const publish = h('button.tbtn.publish#tb-publish', { onclick: () => HP.editor.publish() }, icon('cloud'), h('span'));

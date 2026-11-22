@@ -5,7 +5,7 @@
    Each entry may set
      kind, scope   as in tools/taxonomy.js (e.g. keep a product the website files as a package)
      facets        merged into the product's facts, e.g. { perMetre: true } for a cable the website sells by the metre but
-                   marks as colours
+                   marks as colours; { accessory: true } for a cable "Gør tilbuddet færdigt" offers as an accessory too
      cat           a category id, e.g. '/hojtalere/vaeghojtaler/'
      note          why (shown in the report) */
 module.exports = {

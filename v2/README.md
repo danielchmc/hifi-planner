@@ -183,12 +183,12 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
 - **Price list:** every complete set of a system's cards is one line, *System* + the bundle's name and link, at the bundle price, with its parts listed underneath and "Spar X%" against the parts one by one (or the website's own before-price, if higher); the saving counts in "Du sparer". Each card shows a small SYSTEM tag (not printed). If a part is deleted, the remaining cards are priced one by one; duplicating a whole system prices it twice. Cards carry the bundle's SKU as `sy`, which Shortcuts, copy/paste and share links keep.
 - **Data:** `build/bundles.js` (`HP_DATA.bundles`), written every hour by `tools/catalog-build.js`: the website's bundles whose parts are all in the app catalogue (220 of 253 on 2026-11-21), each with its parts as app product ids and quantities, the colour when the bundle comes in one, the bundle price and before-price. The report lists the bundles left out and why. Of the 194 with two or more drawn parts, 121 wire completely, 5 partly (a wireless part) and 68 not at all (wireless systems and speaker-only sets).
 
-## Completing the proposal: cables and accessories
+## Related products: cables and accessories
 
-**Gør færdig** in the top bar (the number counts connections without a cable), the notice under the price list ("3 forbindelser uden kabel · Gør færdig →", on screen only), the canvas's right-click menu, or "Tilbehør og kabler…" on a card opens one dialog (`js/complete.js`):
+**Relaterede produkter** in the top bar (an accent button whose label stays visible on narrow screens; the number counts connections without a cable), the notice under the price list ("3 forbindelser uden kabel · Relaterede produkter →", on screen only), or "Relaterede produkter…" in the right-click menu (of a card: for that product only) opens one dialog (`js/complete.js`):
 
 - **Connections without a cable**, each with a suggested cable that fits both plugs and a length: a cable hifiklubben.dk lists as an accessory of one of the two products (★) first, then the cable last used for the same pair of plugs (remembered per browser), then the cheapest. Speaker cable sold by the metre gets 3 m, other cables the shortest length of at least 1 m. Cable and length can be changed per row; all rows are ticked.
-- **Accessories**: hifiklubben.dk's own accessories for the products on the canvas, grouped per product, without cables and without what is already on the canvas. Not ticked: they are chosen with the customer.
+- **Accessories**: hifiklubben.dk's own accessories for the products on the canvas, grouped per product, without what is already on the canvas and without plain cables (those are chosen per connection). Adapters are offered as accessories as well as on connections (Essentials Wireless Connect, Wireless Audio Adapter, Sonos Line-In Adapter; not Y-splitters); `facets: { accessory: true }` in `tools/overrides.js` does the same for any other product. Not ticked: they are chosen with the customer.
 - **Tilføj til tilbuddet** puts the cables on their connections and the accessories on the canvas, one step for Undo.
 - **Data:** `acc` on each product in `build/app-products.js` (at most 20 app product ids), written by `tools/catalog-build.js` from the website's links in both directions: the product page's recommended accessories, and every accessory's "Tilbehør til" list (`recommendedProducts` on the page of a product in Tilbehør, Kabler or Pladespiller tilbehør, e.g. ESSTTVINYLKIT100 → TT MK2, TT-3). Accessory types the website sells with products (Pladespiller vedligeholdelse, Høretelefon tilbehør, Skumpropper) have the `pricelist` scope in `tools/taxonomy.js` so they are in the catalogue and can be offered. 2026-11-22: 807 products have accessories.
 
@@ -232,3 +232,8 @@ Wiring two ports whose connectors do not normally go together (e.g. HDMI to RCA)
 - Tested in Chrome only. Printing uses the browser print dialog (choose "Save as PDF").
 - Projects are stored per browser; use Export/Import to move them.
 - Bluetooth/WiFi badges were inferred from categories and names during migration and should be reviewed in the Editor.
+
+## Item number (SKU) and the right-click menu
+
+- **Item number:** selecting one product card shows its SKU first on the selection bar; clicking it copies it. The right-click menu has "Kopiér varenr." with the SKU beside it. A card with a colour chosen gives that colour's own SKU (`C.skuOf`).
+- **Right-click menu:** on a selection it is short — for a product: Udskift, Farve / finish, Relaterede produkter (accent), Kopiér varenr., Dublér, Slet — and **Flere…** reopens it at the same spot with everything (Vend, Se billedet nærmere, Kopiér, Tæl med i prislisten, Placér forrest/bagerst, Redigér produkt, Gem som genvej, and the canvas items). Right-clicking empty canvas shows the canvas items as before.

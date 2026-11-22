@@ -1,4 +1,4 @@
-/* HiFi Planner v2 — "Complete the proposal" (Gør tilbuddet færdigt): the cables and accessories a proposal is still missing.
+/* HiFi Planner v2 — "Related products" (Relaterede produkter): the cables and accessories a proposal is still missing.
    1. Every connection without a cable gets a suggested cable that fits both plugs, with a length: a cable the website lists as an
       accessory of one of the two products first, then the cable last used for the same pair of plugs, then the cheapest. The seller
       can pick another cable or length per row. Ticked by default.
@@ -43,9 +43,13 @@
 
   // the connections that still have no cable (and could have one)
   const missing = () => (store.doc.conns || []).filter((c) => !c.cable && store.item(c.a.item) && store.item(c.b.item));
+  // a cable is suggested per connection, not as an accessory; adapters are both (Essentials Wireless Connect, Sonos Line-In Adapter),
+  // and so is anything tools/overrides.js marks with facets { accessory: true }. Y-splitters stay cables.
+  const isAdapter = (a) => { const s = (a.ty || '') + ' ' + a.name; return /adapter|wireless connect/i.test(s) && !/y-split/i.test(s); };
+  const offerable = (a) => !(a.cable || []).length || isAdapter(a) || !!(a.fx && a.fx.accessory);
   const accFor = (onCanvas) => {
     const seen = new Set(onCanvas), out = [];
-    onCanvas.forEach((pid) => { const p = cat.get(pid); ((p && p.acc) || []).forEach((id) => { const a = cat.get(id); if (!a || a.gone || (a.cable || []).length || seen.has(id)) return; seen.add(id); out.push({ for: p, p: a }); }); });
+    onCanvas.forEach((pid) => { const p = cat.get(pid); ((p && p.acc) || []).forEach((id) => { const a = cat.get(id); if (!a || a.gone || !offerable(a) || seen.has(id)) return; seen.add(id); out.push({ for: p, p: a }); }); });
     return out;
   };
 
@@ -108,7 +112,7 @@
     }
     if (!rows.length && !accs.length) body.append(h('.empty', null, only ? t('Nothing to add for this product.', 'Intet at tilføje til dette produkt.') : t('Every connection has a cable, and there are no accessories to suggest.', 'Alle forbindelser har kabel, og der er intet tilbehør at foreslå.')));
     sum();
-    const close = HP.modal({ title: only ? t('Accessories for ', 'Tilbehør til ') + cat.get(only).name : t('Complete the proposal', 'Gør tilbuddet færdigt'), size: 'lg', body, foot: [total, h('.spacer'), h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), addBtn] });
+    const close = HP.modal({ title: only ? t('Related products · ', 'Relaterede produkter · ') + cat.get(only).name : t('Related products', 'Relaterede produkter'), size: 'lg', body, foot: [total, h('.spacer'), h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), addBtn] });
 
     function apply() {
       const memo = LS.get('cableFor', {}) || {};

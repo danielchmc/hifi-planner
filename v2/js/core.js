@@ -120,6 +120,16 @@
   HP.klubbenSvg = () => '<svg class="klubben" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.6 32.6"><path fill="currentColor" d="' + HP.KLUBBEN_PATH + '"/></svg>';
 
   /* ---------- toasts ---------- */
+  // copy text to the clipboard (with the old fallback for file:// and older browsers) and say so
+  HP.copyText = async (text, msg) => {
+    let ok = false;
+    try { await navigator.clipboard.writeText(text); ok = true; } catch (e) {
+      const ta = document.createElement('textarea'); ta.value = text; ta.style.cssText = 'position:fixed;opacity:0'; document.body.append(ta); ta.select();
+      try { ok = document.execCommand('copy'); } catch (e2) { /* ignore */ } ta.remove();
+    }
+    HP.toast(ok ? (msg || HP.t('Copied', 'Kopieret')) : HP.t('Could not copy', 'Kunne ikke kopiere'));
+    return ok;
+  };
   HP.toast = (msg, opts) => {
     opts = opts || {};
     let box = document.getElementById('toasts');
@@ -147,8 +157,8 @@
       if (e === 'sep') return h('.msep');
       if (e.head) return h('.mhead', null, e.head);
       if (e.el) return h('.mcustom', null, e.el);
-      return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
-        e.swatch ? h('span.sw', { style: { background: e.swatch } }) : e.icon ? HP.icon(e.icon, 15) : h('span.ic'), h('span.ml', null, e.label), e.key ? h('span.mk', null, e.key.split('+').map((k) => h('kbd', null, k))) : null);
+      return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : '') + (e.accent ? '.accent' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
+        e.swatch ? h('span.sw', { style: { background: e.swatch } }) : e.icon ? HP.icon(e.icon, 15) : h('span.ic'), h('span.ml', null, e.label), e.note ? h('span.mn', null, e.note) : e.key ? h('span.mk', null, e.key.split('+').map((k) => h('kbd', null, k))) : null);
     }));
     document.body.append(m);
     const r = m.getBoundingClientRect();
