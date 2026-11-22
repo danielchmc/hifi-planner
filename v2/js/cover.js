@@ -104,5 +104,47 @@
     document.title = (doc.name || t('Proposal', 'Tilbud')) + ' · HiFi Klubben';
   }
 
-  HP.cover = { build, dialog, csv, viewer, stamp };
+  /* A long price list does not fit one A4 page (above all a landscape one, ~12 lines): the lines then continue on further
+     cover sheets, and the total, the adviser and the QR code go on the last one, never cut off. Called by C.print once
+     the sheets are in the page; measures them with #print-root briefly laid out off-screen. */
+  function paginate(root) {
+    const first = root.querySelector('.cover-sheet');
+    if (!first) return;
+    const prev = root.getAttribute('style') || '';
+    root.style.cssText = 'display:block;position:absolute;left:-10000px;top:0;visibility:hidden';
+    try {
+      const fits = (cv) => cv.scrollHeight <= cv.clientHeight + 1;
+      const cv0 = first.querySelector('.cover');
+      if (fits(cv0)) return;
+      const table = cv0.querySelector('.cv-lines'), rows = [...table.rows];
+      const tail = [...cv0.children].filter((el) => el.matches('.cv-total, .cv-saving, .cv-foot, .cv-note'));
+      tail.forEach((el) => el.remove());
+      const sheets = [first];
+      const newSheet = () => {
+        const sh = first.cloneNode(false), cv = h('.cover.cv-cont', null, cv0.querySelector('.cv-head').cloneNode(true), h('table.cv-lines'));
+        sh.append(cv); sheets[sheets.length - 1].after(sh); sheets.push(sh); return cv;
+      };
+      // the lines: as many per sheet as fit (at least one, so a sheet always moves on)
+      table.textContent = '';
+      let cv = cv0, tb = table;
+      rows.forEach((r) => {
+        tb.append(r);
+        if (!fits(cv) && tb.rows.length > 1) { r.remove(); cv = newSheet(); tb = cv.querySelector('.cv-lines'); tb.append(r); }
+      });
+      // the total and the foot: under the last lines if there is room, else on a sheet of their own
+      tail.forEach((el) => cv.append(el));
+      if (!fits(cv)) {
+        // a total alone on a page reads oddly: the last two lines go along with it (one stays behind at least)
+        tail.forEach((el) => el.remove());
+        const carry = [...tb.rows].slice(Math.max(1, tb.rows.length - 2));
+        cv = newSheet(); const t2 = cv.querySelector('.cv-lines');
+        if (carry.length) carry.forEach((r) => t2.append(r)); else t2.remove();
+        tail.forEach((el) => cv.append(el));
+      }
+      // "Side 1 af 3" under the date in the header
+      sheets.forEach((sh, i) => sh.querySelector('.cv-meta').append(h('span.cv-page', null, t('Page ', 'Side ') + (i + 1) + t(' of ', ' af ') + sheets.length)));
+    } finally { root.setAttribute('style', prev); if (!prev) root.removeAttribute('style'); }
+  }
+
+  HP.cover = { build, dialog, csv, viewer, stamp, paginate };
 })();

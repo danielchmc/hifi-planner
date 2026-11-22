@@ -804,6 +804,8 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 .cv-qr svg.qr { width: 38mm; height: 38mm; display: block; flex: none; }
 .cv-qrtext { display: flex; flex-direction: column; gap: 1mm; } .cv-qrtext b { font: 600 11.5pt var(--display); } .cv-qrtext small { color: var(--cv-mut); font-size: 9pt; }
 .cv-qr.none small { color: var(--cv-mut); }
+.cv-cont .cv-head { margin-bottom: 6mm; }   /* a continued cover sheet: the header, then the lines */
+.cv-page { font-size: 8.5pt; }
 .cv-note { margin-top: 5mm; font-size: 8pt; color: var(--cv-mut); }
 /* the customer view */
 body.viewing { overflow: auto; background: #efefec; height: auto; }

@@ -1291,6 +1291,7 @@
     sheets.forEach((sh) => root.append(sh));
     const st = h('style', { textContent: '@page{size:A4 ' + (d.orient === 'portrait' ? 'portrait' : 'landscape') + ';margin:0}' });
     document.head.append(st); document.body.append(root); document.body.classList.add('printing');
+    if (opts && opts.cover && HP.cover) HP.cover.paginate(root); // a long price list continues on more cover sheets
     const done = () => { root.remove(); st.remove(); document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };
     window.addEventListener('afterprint', done);
     if (C.printHook) return C.printHook(done);
