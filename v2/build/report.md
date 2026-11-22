@@ -249,7 +249,7 @@ Read by the next mirror runs.
 `data/own.js` is the master for what HiFi Planner adds; `build/app-products.js` is rebuilt from it and the mirror every hour.
 
 - 722 follow the website through their link, 124 are frozen (not on the website)
-- Prices held by the plausibility check (as the sync does): 15
+- Prices held by the plausibility check (as the sync does): 14
 - Link no longer on the website: NAD C328 [NADC328], Sony Bravia 9 [SONYKXR9B], Sony Bravia 5 [SONYKXR5B]
 
 
@@ -268,7 +268,7 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 - AudioQuest Coffee: usba ↔ usbb
 - AudioQuest Coffee: usba ↔ usbb
 
-**Accessories**: 807 products list accessories from the website (`acc`), offered by "Complete the proposal".
+**Accessories**: 793 products list accessories from the website (`acc`), offered by "Relaterede produkter". From accessory pages' recommended products: 358 links kept, 327 left out (the accessory does not belong to that kind of product, or both are accessories).
 
 **Systems**: 222 of the website's bundles are in the sidebar's Systems section (`build/bundles.js`); 23 are not, because a part is not in the catalogue: unnu 1540 Furniture, Clic 220 Furniture, Clic 23 Furniture, unnu 240 Furniture, unnu 241 Furniture, Clic 242 Furniture, Bowers & Wilkins ISW-8 + BB ISW 8, CANVAS HiFi 55", CANVAS HiFi 65", CANVAS HiFi 75", CANVAS HiFi 77", HITH 231 + DALI Sonik 3 + BLS N331, HITH 231 + Fenris A4, HITH 231 + Forte A5 WIFI, DALI OBERON C SURROUND, DALI Oberon Vokal C + HDMI Module, DALI RUBICON 2 C + SOUNDHUB, DALI RUBICON 6 C + SOUNDHUB, Steinway Lyngdorf Model A, Steinway Lyngdorf Model B, Steinway Lyngdorf Model D, Steinway Lyngdorf Model O, Steinway Lyngdorf Model S.
 
@@ -283,11 +283,26 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
 
-Since the previous build: 0 price changes, 0 products added, 1 removed.
+Since the previous build: 16 price changes, 0 products added, 0 removed.
 
-**Removed**
+**Price changes**
 
-- Bülow Stand BS15 Bracket Soundbar Long
+- Argon Audio TT-4 MK2: 5999 → 4799
+- Argon Audio TT-3: 2999 → 2399
+- Argon Audio TT-4 Special Edition: 7499 → 5999
+- Argon Audio Aurora: 9999 → 7999
+- Denon CEOL RCD-N12: 5299 → 4299
+- Denon CEOL RCD-N12DAB: 5299 → 4299
+- Denon DP-29F: 1499 → 1299
+- NAD M66: 46999 → 36999
+- NAD M10 V3: 19999 → 16998
+- NAD C 700 V2: 12999 → 9999
+- Vestlyd PRO T2: 4499 → 2999
+- Vestlyd PRO T1: 2999 → 1999
+- Denon Home 200: 2799 → 2299
+- Denon Home 400: 3999 → 3499
+- Denon Home 600: 5499 → 4999
+- Argon Audio TT-4: 3799 → 5999
 
 **Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
 
@@ -304,6 +319,5 @@ Since the previous build: 0 price changes, 0 products added, 1 removed.
 - Samsung M90H: 21999 kept, website 12666 (large change (over -35% / +60%))
 - Samsung QN80H: 34999 kept, website 17999 (large change (over -35% / +60%))
 - Samsung DU9005: 29999 kept, website 11111 (large change (over -35% / +60%))
-- Argon Audio TT-4: 3799 kept, website 7499 (large change (over -35% / +60%))
 - AudioQuest Coffee: 5399 kept, website 3499 (large change (over -35% / +60%))
 

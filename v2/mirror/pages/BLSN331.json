@@ -281,7 +281,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 724,
+     "availableQuantity": 722,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -517,6 +517,35 @@
     "url": "/blsn331-opticon1mk2/"
    },
    {
+    "modelType": "Pladespiller system",
+    "price": {
+     "price": 18494,
+     "priceFormatted": "18.494,-",
+     "priceBefore": 20694,
+     "priceBeforeFormatted": "20.694,-",
+     "priceSavingsFormatted": "2.200,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 18494,
+     "unitPriceBefore": 20694
+    },
+    "image": "https://images.hifiklubben.com/image/4d7adb69-a9e2-40f8-b678-971f605cccbd",
+    "ribbons": [
+     {
+      "text": "Spar 11%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "ARGTT4MK2 + BLSN331 + DALISONIK3",
+    "url": "/argtt4mk2-blsn331-dalisonik3/"
+   },
+   {
     "modelType": "Højtalersystem",
     "price": {
      "price": 19994,
@@ -631,35 +660,6 @@
     ],
     "title": "HITH + DALISONIK 3 + BLS N331",
     "url": "/hith-dalisonik3-blsn331/"
-   },
-   {
-    "modelType": "Pladespiller system",
-    "price": {
-     "price": 19694,
-     "priceFormatted": "19.694,-",
-     "priceBefore": 20694,
-     "priceBeforeFormatted": "20.694,-",
-     "priceSavingsFormatted": "1.000,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 19694,
-     "unitPriceBefore": 20694
-    },
-    "image": "https://images.hifiklubben.com/image/4d7adb69-a9e2-40f8-b678-971f605cccbd",
-    "ribbons": [
-     {
-      "text": "Spar 1.000,-",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "ARGTT4MK2 + BLSN331 + DALISONIK3",
-    "url": "/argtt4mk2-blsn331-dalisonik3/"
    },
    {
     "modelType": "Stereosystem til TV",
@@ -995,15 +995,15 @@
      ]
     }
    },
-   "rating": 4.7123745819398,
-   "count": 299,
-   "reviewCount": 149,
+   "rating": 4.71428571428571,
+   "count": 301,
+   "reviewCount": 151,
    "distribution": {
     "1": 1,
     "2": 3,
     "3": 17,
     "4": 39,
-    "5": 239
+    "5": 241
    }
   },
   "brandName": "Bluesound",

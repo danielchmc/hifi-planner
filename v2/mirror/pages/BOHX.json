@@ -275,12 +275,11 @@
      "productCode": "BOHXTIMBER"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 26. november",
+     "deliveryDate": "2026-11-26T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -420,7 +419,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 100,
+     "availableQuantity": 99,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

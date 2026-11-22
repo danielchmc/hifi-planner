@@ -399,7 +399,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1455,
+     "availableQuantity": 1451,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -525,7 +525,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 2042,
+     "availableQuantity": 2039,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -630,6 +630,35 @@
   ],
   "testGroups": [],
   "bundleRelations": [
+   {
+    "modelType": "Kompaktanlæg med Streaming",
+    "price": {
+     "price": 11998,
+     "priceFormatted": "11.998,-",
+     "priceBefore": 15498,
+     "priceBeforeFormatted": "15.498,-",
+     "priceSavingsFormatted": "3.500,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 11998,
+     "unitPriceBefore": 15498
+    },
+    "image": "https://images.hifiklubben.com/image/9ba533e0-b904-40a7-b092-5025ff4e1d32",
+    "ribbons": [
+     {
+      "text": "Spar 23%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "NAD C 700 V2 + BLUESOUND PULSE FLEX (P130)",
+    "url": "/nadc700v2-blsp130/"
+   },
    {
     "modelType": "Musikstreamer",
     "price": {
@@ -832,35 +861,6 @@
     ],
     "title": "DALI SONIK + Bluesound Surround",
     "url": "/dalisonik-bluesound-surround/"
-   },
-   {
-    "modelType": "Kompaktanlæg med Streaming",
-    "price": {
-     "price": 14998,
-     "priceFormatted": "14.998,-",
-     "priceBefore": 15498,
-     "priceBeforeFormatted": "15.498,-",
-     "priceSavingsFormatted": "500,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 14998,
-     "unitPriceBefore": 15498
-    },
-    "image": "https://images.hifiklubben.com/image/9ba533e0-b904-40a7-b092-5025ff4e1d32",
-    "ribbons": [
-     {
-      "text": "Spar 500,-",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "NAD C 700 V2 + BLUESOUND PULSE FLEX (P130)",
-    "url": "/nadc700v2-blsp130/"
    }
   ],
   "displayBookDemo": true,
