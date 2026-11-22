@@ -22,7 +22,7 @@
    "473ffa96-3901-46ec-8f17-a55535d5bc21",
    "51a1035e-568c-48bd-aba5-7bea0bc0fb28"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 135816,
@@ -177,12 +177,11 @@
      "productCode": "AUDLCDXBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 29. november",
+     "deliveryDate": "2026-11-29T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

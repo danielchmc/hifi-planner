@@ -25,7 +25,7 @@
    "58df2040-5dc9-4e48-86f6-0c9804c58928",
    "ab8b452b-6767-4665-862c-8db65327962a"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 292298,
@@ -187,12 +187,11 @@
      "productCode": "AUDLCDS20BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

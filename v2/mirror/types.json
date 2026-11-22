@@ -1442,25 +1442,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Gulvstander",
-   "keys": {
-    "FloorStand": 5
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 5
-   },
-   "count": 6,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 5,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 6
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Monteringsramme",
    "keys": {
     "InstallationFramePreMountKit": 6
@@ -1540,12 +1521,12 @@
    "hifiPlanner": []
   },
   {
-   "type": "Andet",
+   "type": "Gulvstander",
    "keys": {
-    "Other": 5
+    "FloorStand": 5
    },
    "cats": {
-    "Tilbehør > Andet tilbehør": 5
+    "Tilbehør > TV tilbehør": 5
    },
    "count": 5,
    "bundles": 0,
@@ -1821,6 +1802,25 @@
    "hifiPlanner": [
     "Wireless Adapters"
    ]
+  },
+  {
+   "type": "Andet",
+   "keys": {
+    "Other": 4
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 4
+   },
+   "mapped": null,
+   "hifiPlanner": []
   },
   {
    "type": "Blu-ray afspiller",
