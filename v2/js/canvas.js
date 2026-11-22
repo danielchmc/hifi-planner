@@ -475,7 +475,8 @@
     const d = store.doc, ids = [...store.sel].filter((id) => store.item(id));
     selbar.textContent = '';
     let anchor = null;
-    const btn = (ic, label, fn, cls) => h('button' + (cls || ''), { title: label, onclick: fn }, icon(ic), h('span', null, label));
+    // icons only (the name is the tooltip); the SKU is the one button with text
+    const btn = (ic, label, fn, cls) => h('button' + (cls || ''), { title: label, 'aria-label': label, onclick: fn }, icon(ic));
     if (store.selConn && routes.get(store.selConn)) {
       const r = routes.get(store.selConn);
       anchor = { x: r.mid[0], y: Math.min(...r.pts.map((p) => p[1])) };

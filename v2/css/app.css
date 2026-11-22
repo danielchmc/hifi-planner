@@ -734,6 +734,8 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 #tb-complete:hover .badge { background: var(--panel); color: var(--fg); }
 @media (max-width: 1320px) { #tb-complete span:not([hidden]) { display: inline; } }   /* the one top-bar label that stays */
 /* v4.8: item number (SKU) on the selection bar and in the right-click menu */
+#selbar button:not(.sku) { width: 34px; padding: 0; justify-content: center; }
+@media (pointer: coarse) { #selbar button:not(.sku) { width: 44px; } }
 #selbar button.sku { font: 600 11px var(--mono); letter-spacing: .02em; text-transform: none; }
 #selbar button.sku .ic { opacity: .6; }
 #ctxmenu .mn { margin-left: 18px; font: 11px var(--mono); color: var(--muted); }
