@@ -142,7 +142,31 @@
     }
   }
 
-  // for the customer view: the accessories of the products in the proposal
-  const related = () => accFor([...new Set(store.doc.items.filter((i) => i.kind === 'product').map((i) => i.pid))]);
+  // for the customer view: the accessories of the products in the proposal, without the clutter of near-identical choices.
+  //  - one of each website type per product (one stand for the M6C, one wall bracket for the Pulse Flex, one stylus…);
+  //  - generic types (plugs, feet, mains filters…) once for the whole proposal, and not at all if the proposal already has one;
+  //  - types whose products do different jobs (adapters, "other") keep them all.
+  // Of several, the one most products on the website list as an accessory (the usual choice) wins, then the cheapest.
+  const KEEP_ALL = /^(adapter|andet|licens|møbeltilbehør|pladespillertilbehør|højtalertilbehør|trådløs adapter)$/i;
+  const GENERIC = /^(bananstik|spadestik|dæmpningsfødder|strømfilter|kabel|kabelskjuler|rengøring.*|pladerens.*)$/i;
+  let pop = null;
+  const popularity = (id) => {
+    if (!pop) { pop = new Map(); cat.list.forEach((p) => (p.acc || []).forEach((a) => pop.set(a, (pop.get(a) || 0) + 1))); }
+    return pop.get(id) || 0;
+  };
+  const related = () => {
+    const pids = [...new Set(store.doc.items.filter((i) => i.kind === 'product').map((i) => i.pid))];
+    const have = new Set(pids.map((id) => (cat.get(id) || {}).ty).filter((ty) => ty && GENERIC.test(ty)));
+    const best = new Map(), out = [];
+    const better = (x, cur) => popularity(x.p.id) > popularity(cur.p.id) || (popularity(x.p.id) === popularity(cur.p.id) && (x.p.price || 0) < (cur.p.price || 0));
+    accFor(pids).forEach((x) => {
+      const ty = x.p.ty;
+      if (!ty || KEEP_ALL.test(ty)) return out.push(x);
+      if (have.has(ty)) return;
+      const key = GENERIC.test(ty) ? ty : x.for.id + '|' + ty, cur = best.get(key);
+      if (!cur) { out.push(x); best.set(key, x); } else if (better(x, cur)) { out[out.indexOf(cur)] = x; best.set(key, x); }
+    });
+    return out;
+  };
   HP.complete = { open, missing: () => missing().length, related };
 })();
