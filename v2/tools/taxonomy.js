@@ -135,7 +135,9 @@ const TYPES = {
   CableCovering: T('accessory', {}, { cat: '/tilbehor/andet-tilbehor/' }), // website: on Tilbehør itself
   MCpickup: T('accessory', { role: 'cartridge' }), MMpickup: T('accessory', { role: 'cartridge' }), DJpickup: T('accessory', { role: 'cartridge' }),
   ReplacementStylus: T('accessory', { role: 'stylus' }), TurntableAccessories: T('accessory'),
-  TurntableMaintenance: T('accessory', {}, { scope: 'skip' }), HeadphoneAccessories: T('accessory', {}, { scope: 'skip' }), FoamBungs: T('accessory', {}, { scope: 'skip' }),
+  // accessories the website sells with products (vinyl care with turntables, cases with headphones, port plugs with speakers): on the
+  // price list, so "Gør tilbuddet færdigt" can offer them (they were 'skip' until 2026-11-22)
+  TurntableMaintenance: T('accessory', {}, { scope: 'pricelist' }), HeadphoneAccessories: T('accessory', {}, { scope: 'pricelist' }), FoamBungs: T('accessory', {}, { scope: 'pricelist' }),
   // furniture
   Furniture: T('furniture'), FurnitureAccessories: T('furniture'), Fabricdoor: T('furniture'), Woodendoor: T('furniture'), Drawer: T('furniture'),
   Foot: T('furniture'), Shelf: T('furniture'), TopCover: T('furniture'),

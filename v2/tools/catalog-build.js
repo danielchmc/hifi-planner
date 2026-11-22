@@ -297,7 +297,7 @@ if (fs.existsSync(ownFile)) {
   });
   // accessories ("Tilbehør"), from the website's own links in both directions: a product page's recommended accessories, and an
   // accessory's "Tilbehør til" list (recommendedProducts on the page of a product in Tilbehør, Kabler or Pladespiller tilbehør).
-  // Stored as acc: [app product ids], the product's own first, at most 12; the app's "Complete the proposal" offers them.
+  // Stored as acc: [app product ids], the product's own first, at most 20; the app's "Complete the proposal" offers them.
   {
     const appBy = new Map();
     next.forEach((p) => [p.site, p.sku, ...(p.vars || []).map((v) => v.sku)].filter(Boolean).forEach((k) => { const K = U(k), cur = appBy.get(K); if (!cur || (cur.web && !p.web)) appBy.set(K, p); }));
@@ -308,7 +308,7 @@ if (fs.existsSync(ownFile)) {
     next.forEach((p) => {
       const w = p.site && webBySku.get(U(p.site));
       const ids = [...((w && w.rel && w.rel.acc) || []).map((c) => appBy.get(c)).filter(Boolean).map((a) => a.id), ...(rev.get(p.id) || [])];
-      const acc = [...new Set(ids)].filter((id) => { const a = next.find((x) => x.id === id); return id !== p.id && a && !a.gone; }).slice(0, 12);
+      const acc = [...new Set(ids)].filter((id) => { const a = next.find((x) => x.id === id); return id !== p.id && a && !a.gone; }).slice(0, 20);
       if (acc.length) { p.acc = acc; nAcc++; }
     });
     RT.acc = nAcc;
