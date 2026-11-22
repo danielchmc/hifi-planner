@@ -13,6 +13,16 @@
    "url": "/tilbehor/mobel-tilbehor/"
   }
  ],
+ "hp": {
+  "spec": {},
+  "gallery": [
+   "d052f663-cf19-4bfc-bf19-ffc1313bf956",
+   "74ace90a-c829-49d9-bacb-da61d3026842",
+   "a3c1481d-3bc2-4df4-a7a5-9d2deaf51968",
+   "b42c2b7e-d524-4e48-9c75-9672fef55db5"
+  ],
+  "avail": "InStock"
+ },
  "product": {
   "id": 293174,
   "skuCode": "PEDMOONTRAYSHELF",
@@ -127,7 +137,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 12,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -212,12 +222,11 @@
      "productCode": "PEDMOONTRAYSHELFCHR"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager onsdag den 02. december",
+     "deliveryDate": "2026-12-02T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
