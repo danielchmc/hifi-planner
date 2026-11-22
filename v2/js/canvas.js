@@ -344,7 +344,10 @@
       // each port: the centre of its dot, measured on screen relative to the card and divided by the zoom, so borders, fractions of a
       // pixel and the card scale are all included (offsetTop counted from inside the card's border and rounded: wires sat about 1 unit
       // too high). Relative to the card, so an animation moving the whole card does not matter.
-      const er = el.getBoundingClientRect(), z = view.z || 1, onScreen = er.width > 0;
+      const er = el.getBoundingClientRect(), onScreen = er.width > 0 && el.offsetWidth > 0;
+      // the zoom actually on screen, read off the card itself (its laid-out width against its width on screen) rather than taken
+      // from view.z: the two can differ on a phone (the customer view's wires were drawn several times too long)
+      const z = onScreen ? er.width / (el.offsetWidth * s) : 1;
       el.querySelectorAll('.port').forEach((pe) => {
         const k = pe.dataset.side + ':' + pe.dataset.key, d = pe.querySelector('.dot');
         if (onScreen && d) { const r = d.getBoundingClientRect(); g.p[k] = (r.top + r.height / 2 - er.top) / z; g.x[k] = (r.left + r.width / 2 - er.left) / z; }
@@ -446,8 +449,10 @@
     const hd = view.z * cardScale() >= 1.3;
     if (hd !== C.hd) { C.hd = hd; renderItems(); }
     placeBar();
-    HP.LS.set('view', view);
+    if (!store.view) HP.LS.set('view', view); // a customer link never touches the planner's own view
   }
+  // the customer view: the canvas unzoomed, every card rebuilt and measured afresh
+  C.resetView = () => { view.x = 0; view.y = 0; view.z = 1; applyView(); };
   function zoomAt(cx, cy, z) {
     z = clamp(z, 0.15, 8);
     const r = vp.getBoundingClientRect(), px = cx - r.left, py = cy - r.top;

@@ -95,12 +95,23 @@
       h('h2.view-h', null, t('The drawing', 'Tegningen')));
     const pages = h('.view-pages'); page.append(pages);
     document.body.append(page);
-    // the A4 sheets, scaled to the width of the screen
-    await new Promise((r) => setTimeout(r, 60));
-    const { sheets } = C().sheets();
+    // the A4 sheets, scaled to the width of the screen. The wires are worked out from the cards' layout at zoom 1, after the fonts
+    // have arrived (a phone on a slow line gets them late), and drawn again if a font or picture arrives later still
     const fit = () => pages.querySelectorAll('.view-sheet').forEach((w) => { const sh = w.firstChild, k = Math.min(1, w.clientWidth / sh.offsetWidth); sh.style.transform = 'scale(' + k + ')'; w.style.height = sh.offsetHeight * k + 'px'; });
-    sheets.forEach((sh) => pages.append(h('.view-sheet', null, sh)));
-    fit(); window.addEventListener('resize', fit);
+    const draw = () => {
+      C().resetView(); C().invalidate();
+      const { sheets } = C().sheets();
+      pages.textContent = '';
+      sheets.forEach((sh) => pages.append(h('.view-sheet', null, sh)));
+      fit();
+    };
+    if (document.fonts && document.fonts.ready) await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
+    await new Promise((r) => setTimeout(r, 60));
+    draw(); window.addEventListener('resize', fit);
+    let again = 0;
+    const later = () => { clearTimeout(again); again = setTimeout(draw, 250); };
+    if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', later);
+    window.addEventListener('load', later);
     document.title = (doc.name || t('Proposal', 'Tilbud')) + ' · HiFi Klubben';
   }
 
