@@ -168,7 +168,7 @@
     const add = (p, cable, it, perM) => {
       if (!p) return;
       const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || ''), vv = HP.variantOf(p, it);
-      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
+      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), img: (HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
       if (perM) { r.cableM = true; r.name = p.brand + ' ' + (stripLen(p.name) || p.name); } // sold by the metre: qty is metres
       r.qty++; rows.set(key, r);
     };

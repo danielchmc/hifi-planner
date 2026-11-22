@@ -12,14 +12,20 @@
   const C = () => HP.canvas, icon = (n, s) => HP.icon(n, s);
   const MAX_QR_VERSION = 25; // denser codes are hard to scan from paper: then the cover says to ask for the link instead
 
-  // the cover itself: also used, without the QR code, at the top of the customer view
+  // "23/11/2026" → "23. november 2026"
+  const MONTHS = ['januar', 'februar', 'marts', 'april', 'maj', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'december'];
+  const longDate = (d) => { const m = /^(\d+)\/(\d+)\/(\d+)$/.exec(d || HP.today()); return m ? +m[1] + '. ' + MONTHS[+m[2] - 1] + ' ' + m[3] : d; };
+  const firstName = (s) => String(s || '').trim().split(/\s+/)[0] || '';
+
+  // the cover itself: also used, without the QR code, at the top of the customer view ({ view: true })
   function build(o) {
     const d = store.doc, cv = d.cv || {}, sh = cv.sh || [], { list, total, saving } = C().priceRows();
     const pct = (r) => Math.round((1 - r.price / r.was) * 100);
     return h('.cover', null,
-      h('.cv-head', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('.cv-meta', null, h('b', null, t('Proposal', 'Tilbud')), h('span', null, cv.d || HP.today()))),
+      h('.cv-head', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('.cv-meta', null, h('b', null, t('Proposal', 'Tilbud')), h('span', null, o && o.view ? longDate(cv.d) : cv.d || HP.today()))),
       h('.cv-title', null, h('h1', null, d.name || t('Your proposal', 'Dit tilbud')), cv.c ? h('p', null, t('For ', 'Til ') + cv.c) : null),
       h('table.cv-lines', null, list.map((r) => h('tr', null,
+        o && o.view ? h('td.th', null, r.img ? HP.imgEl(r.img, 'thumb', { loading: 'lazy' }) : null) : null,
         h('td.q', null, r.qty + (r.cableM ? ' m' : '×')),
         h('td', null, r.url ? h('a.nm', { href: r.url, target: '_blank', rel: 'noopener' }, r.name, h('span.cv-go', null, ' ↗')) : h('span.nm', null, r.name), r.sys ? h('small', null, r.parts) : null, r.was ? h('em', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
         h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.price * r.qty)))))),
@@ -86,16 +92,28 @@
   /* ---------- customer view (#t=) ---------- */
   async function viewer(payload) {
     document.body.classList.add('viewing');
+    HP.useLang('da'); // the customer's page is in Danish, whatever language the phone or the planner on it uses
     const host = h('#viewhost'); document.body.append(host); // the canvas is drawn off screen, only its pages are shown
     C().init(host);
     let doc;
     try { doc = await HP.share.unpack(payload); } catch (e) { document.body.append(h('.view-err', null, t('This link could not be opened.', 'Linket kunne ikke åbnes.'))); return; }
     store.show(doc); C().render();
-    const cv = doc.cv || {};
+    const cv = doc.cv || {}, sh = cv.sh || [], shop = sh[0] || 'HiFi Klubben', who = firstName(cv.s);
+    // ways to reach the adviser: tap to call or write
+    const tel = (sh[1] || '').replace(/[^\d+]/g, ''), subj = 'Mit tilbud' + (doc.name ? ': ' + doc.name : '');
+    const reach = () => h('.view-reach', null,
+      tel ? h('a.view-btn', { href: 'tel:' + tel }, HP.icon('phone', 16), 'Ring til ' + (who || 'os')) : null,
+      sh[2] ? h('a.view-btn', { href: 'mailto:' + sh[2] + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent('Hej' + (who ? ' ' + who : '') + ',\n\n') }, HP.icon('mail', 16), 'Skriv en mail') : null);
     const page = h('#view', null,
-      h('header.view-bar', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('span', null, (cv.sh && cv.sh[0]) || 'HiFi Klubben')),
-      h('.view-cover', null, build(null)),
-      h('h2.view-h', null, t('The drawing', 'Tegningen')));
+      h('header.view-bar', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('span', null, shop)),
+      h('section.view-hello', null,
+        h('h1', null, 'Hej' + (cv.c ? ' ' + cv.c : '') + '!'),
+        h('p', null, 'Tak for besøget i ' + shop + '. Her er tilbuddet, vi talte om, med tegningen af, hvordan det hele hænger sammen. Har du spørgsmål, er du altid velkommen til at ringe eller skrive.'),
+        who ? h('p.view-sign', null, 'Venlig hilsen ', h('b', null, cv.s)) : null,
+        reach()),
+      h('.view-cover', null, build({ view: true })),
+      h('h2.view-h', null, 'Sådan hænger det sammen'),
+      h('p.view-sub', null, 'Knib med to fingre for at zoome ind. Tryk på et produktnavn for at se det på hifiklubben.dk.'));
     const pages = h('.view-pages'); page.append(pages);
     document.body.append(page);
     // the A4 sheets, scaled to the width of the screen. The wires are worked out from the cards' layout at zoom 1, after the fonts
@@ -111,17 +129,21 @@
     if (document.fonts && document.fonts.ready) await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
     await new Promise((r) => setTimeout(r, 60));
     draw(); window.addEventListener('resize', fit);
-    if (cv.r !== 0) { const rel = related(); if (rel) page.append(rel); }
+    if (cv.r !== 0) { const rel = related(who); if (rel) page.append(rel); }
+    page.append(h('footer.view-foot', null,
+      h('small', null, 'Din rådgiver'), h('b', null, cv.s || shop), h('span', null, shop),
+      sh[1] ? h('span', null, 'Tlf. ' + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null, reach(),
+      h('p', null, 'Priserne gælder d. ' + longDate(cv.d) + '. Med forbehold for trykfejl og udsolgte varer.')));
     let again = 0;
     const later = () => { clearTimeout(again); again = setTimeout(draw, 250); };
     if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', later);
     window.addEventListener('load', later);
-    document.title = (doc.name || t('Proposal', 'Tilbud')) + ' · HiFi Klubben';
+    document.title = 'Dit tilbud' + (doc.name ? ' · ' + doc.name : '') + ' · HiFi Klubben';
   }
 
   /* "Relaterede produkter" for the customer: what hifiklubben.dk sells with the products in the proposal (the same list as the
      planner's dialog, without what is already in it), to look at and buy on the website. Nothing is saved or sent. */
-  function related() {
+  function related(who) {
     const list = HP.complete ? HP.complete.related() : [];
     if (!list.length) return null;
     const tile = (x) => {
@@ -129,11 +151,11 @@
       return h('a.rel-tile', { href: url || undefined, target: '_blank', rel: 'noopener' },
         h('.rel-pic', null, p.img && p.img[0] ? HP.imgEl(p.img[0], 'thumb', { loading: 'lazy' }) : null),
         h('small', null, p.brand), h('b', null, p.name),
-        h('span.rel-for', null, t('For ', 'Til ') + x.for.name),
+        h('span.rel-for', null, 'Passer til ' + x.for.name),
         h('span.rel-pr', null, pr.was ? h('s', null, HP.money(pr.was)) : null, h('span', null, HP.money(pr.price))));
     };
-    return h('section.view-rel', null, h('h2.view-h', null, t('Related products', 'Relaterede produkter')),
-      h('p.view-sub', null, t('Accessories hifiklubben.dk sells with the products in your proposal. Tap one to see it on the website, or ask your adviser.', 'Tilbehør, som hifiklubben.dk sælger til produkterne i dit tilbud. Tryk på et for at se det på hjemmesiden, eller spørg din rådgiver.')),
+    return h('section.view-rel', null, h('h2.view-h', null, 'Måske har du også brug for'),
+      h('p.view-sub', null, 'Udvalgt til produkterne i dit tilbud. Tryk på et for at se mere på hifiklubben.dk – eller spørg ' + (who || 'os') + ', næste gang du kommer forbi.'),
       h('.rel-grid', null, list.slice(0, 24).map(tile)));
   }
 

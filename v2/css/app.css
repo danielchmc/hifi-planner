@@ -843,3 +843,22 @@ body.viewing > #app { display: none; }
 .rel-tile b { font: 600 14px/1.2 var(--display); }
 .rel-for { font-size: 11px; color: #6a6e75; }
 .rel-pr { margin-top: auto; padding-top: 6px; font: 600 15px var(--display); } .rel-pr s { font: 11px var(--ui); color: #6a6e75; margin-right: 6px; }
+
+/* v4.10: the customer's page — a greeting, tap to call or write, pictures on the lines, a contact footer */
+.view-hello { padding: 6px 4px 18px; }
+.view-hello h1 { margin: 0 0 8px; font: 600 26px/1.15 var(--display); color: #141518; }
+.view-hello p { margin: 0 0 8px; font-size: 16px; line-height: 1.45; color: #2a2c30; }
+.view-sign { color: #6a6e75 !important; }
+.view-reach { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.view-btn { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border: 1px solid #141518; background: #fff; color: #141518; text-decoration: none; font: 600 15px var(--ui); }
+.view-btn:first-child { background: #141518; color: #fff; }
+.view-btn:active { transform: translateY(1px); }
+.view-cover .cv-contact, .view-cover .cv-note, .view-cover .cv-go, .view-cover .cv-title p { display: none; }   /* said in the greeting and the footer instead */
+.view-cover .cv-foot { padding-top: 0; }
+.view-cover .cv-lines td.th { width: 52px; padding-right: 10px; }
+.view-cover .cv-lines td.th img { width: 52px; height: 40px; object-fit: contain; mix-blend-mode: multiply; display: block; }
+.view-cover .cv-lines td.q { width: 34px; }
+.view-foot { margin-top: 30px; padding: 20px 4px 0; border-top: 1px solid #d0d0cb; display: flex; flex-direction: column; gap: 2px; font-size: 15px; color: #2a2c30; }
+.view-foot small { font: 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #6a6e75; }
+.view-foot b { font: 600 18px var(--display); color: #141518; }
+.view-foot p { margin: 16px 0 0; font-size: 12px; color: #6a6e75; }
