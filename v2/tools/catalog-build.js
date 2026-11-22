@@ -295,15 +295,32 @@ if (fs.existsSync(ownFile)) {
       .filter((l) => l.m > 0 && l.price > 0).sort((a, b) => a.m - b.m);
     if (new Set(lens.map((l) => l.m)).size >= 2) { p.lens = lens; RT.lens++; }
   });
-  // accessories ("Tilbehør"), from the website's own links in both directions: a product page's recommended accessories, and an
-  // accessory's "Tilbehør til" list (recommendedProducts on the page of a product in Tilbehør, Kabler or Pladespiller tilbehør).
+  // accessories ("Tilbehør"), from the website's own links: a product page's recommended accessories, and, where the accessory
+  // belongs to that kind of product (see fits), an accessory's recommended products (the page of a product in Tilbehør, Kabler or
+  // Pladespiller tilbehør).
   // Stored as acc: [app product ids], the product's own first, at most 20; the app's "Complete the proposal" offers them.
   {
     const appBy = new Map();
     next.forEach((p) => [p.site, p.sku, ...(p.vars || []).map((v) => v.sku)].filter(Boolean).forEach((k) => { const K = U(k), cur = appBy.get(K); if (!cur || (cur.web && !p.web)) appBy.set(K, p); }));
     const accSec = (w) => /^\/(tilbehor|kabler)\//.test(w.cat || '') || /^\/pladespiller\/(pickupper|pladespiller-tilbehor)/.test(w.cat || '');
+    // The reverse direction only where the accessory physically belongs to the product: an accessory page's recommended products
+    // also include system suggestions (the Ghostbox backbox recommends Powernode and Sonos Amp, "you will need an amplifier"),
+    // which must not make a backbox an accessory of an amplifier. So: speaker accessories only onto speakers, TV accessories only
+    // onto TVs, turntable accessories and styli only onto turntables, everything else (cables, remotes, mounts…) onto any device,
+    // and never onto another accessory. The product page's own accessory list (forward) is taken as it is.
+    const appCats = (p) => (p.cats || []).join(' ');
+    const fits = (w, tg) => {
+      const tc = appCats(tg);
+      if (/\/(tilbehor|kabler)\/|\/pladespiller\/(pickupper|pladespiller-tilbehor)/.test(tc)) return false; // accessory → accessory
+      if (/^\/tilbehor\/hojtaler-tilbehor\//.test(w.cat || '')) return /\/hojtalere\//.test(tc);
+      if (/^\/tilbehor\/tv-tilbehor\//.test(w.cat || '')) return /\/tv\//.test(tc);
+      if (/^\/pladespiller\//.test(w.cat || '')) return /\/pladespiller\/pladespillere\//.test(tc);
+      return true;
+    };
     const rev = new Map();
-    products.forEach((w) => { if (!accSec(w)) return; const a = appBy.get(U(w.sku)); if (!a) return; ((w.rel || {}).rec || []).forEach((c) => { const tg = appBy.get(c); if (tg && tg !== a) (rev.get(tg.id) || rev.set(tg.id, []).get(tg.id)).push(a.id); }); });
+    let revKept = 0, revDropped = 0;
+    products.forEach((w) => { if (!accSec(w)) return; const a = appBy.get(U(w.sku)); if (!a) return; ((w.rel || {}).rec || []).forEach((c) => { const tg = appBy.get(c); if (!tg || tg === a) return; if (!fits(w, tg)) { revDropped++; return; } revKept++; (rev.get(tg.id) || rev.set(tg.id, []).get(tg.id)).push(a.id); }); });
+    RT.accRev = [revKept, revDropped];
     let nAcc = 0;
     next.forEach((p) => {
       const w = p.site && webBySku.get(U(p.site));
@@ -381,7 +398,7 @@ if (fs.existsSync(ownFile)) {
   P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
   P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
   if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
-  if (RT.acc) P('**Accessories**: ' + RT.acc + ' products list accessories from the website (`acc`), offered by "Complete the proposal".', '');
+  if (RT.acc) P('**Accessories**: ' + RT.acc + ' products list accessories from the website (`acc`), offered by "Relaterede produkter".' + (RT.accRev ? ' From accessory pages\' recommended products: ' + RT.accRev[0] + ' links kept, ' + RT.accRev[1] + ' left out (the accessory does not belong to that kind of product, or both are accessories).' : ''), '');
   if (RT.systems) P('**Systems**: ' + RT.systems.n + ' of the website\'s bundles are in the sidebar\'s Systems section (`build/bundles.js`)' + (RT.systems.miss.length ? '; ' + RT.systems.miss.length + ' are not, because a part is not in the catalogue: ' + RT.systems.miss.slice(0, 30).join(', ') + (RT.systems.miss.length > 30 ? ', …' : '') : '') + '.', '');
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
   if (RT.lenGone.length) P('**Length no longer sold, cable still sold** (' + RT.lenGone.length + '): the card follows the cable and offers its current lengths instead of being discontinued.', '', ...RT.lenGone.map((x) => '- ' + x), '');
