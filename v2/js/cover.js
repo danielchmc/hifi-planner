@@ -50,7 +50,9 @@
     store.commit();
   }
   async function qrFor() {
-    const url = await HP.share.customerUrl(null, true), link = await HP.share.customerUrl(); // QR: #q=; the clickable link: #t=
+    // QR: #q=. The clickable link in the PDF: #t=, with ?pdf before it. Without it, the link is the page being printed plus a
+    // different #…, which Chrome/Edge treat as a jump inside the document and leave out of the PDF.
+    const url = await HP.share.customerUrl(null, true), link = (await HP.share.customerUrl()).replace(/(\?[^#]*)?#/, '?pdf#');
     try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url, link }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url, link }; }
     catch (e) { return { qrTooBig: true, url, link }; }
   }
@@ -142,7 +144,7 @@
     // one event per kind of click, so Umami's Events view counts them apart; the product's name and SKU go with it
     // where the customer came from (the QR code on paper, or a link sent to them) and which proposal it is: a short fingerprint of
     // the link, so opening the same proposal again counts on the same one (nothing in it identifies the customer)
-    const kilde = /^#q=/.test(location.hash) ? 'QR-kode' : 'Link';
+    const kilde = /^#q=/.test(location.hash) ? 'QR-kode' : /(^|[?&])pdf\b/.test(location.search.slice(1)) ? 'PDF-link' : 'Link';
     const tilbud = (() => { let x = 5381; for (const ch of String(payload || '')) x = ((x * 33) ^ ch.charCodeAt(0)) >>> 0; return x.toString(36).slice(0, 6); })();
     HP.stat('Kundeside åbnet', { butik: shop, kilde, tilbud, relaterede: page.querySelectorAll('.rel-tile').length });
     page.addEventListener('click', (e) => {
