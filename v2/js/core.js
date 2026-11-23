@@ -219,7 +219,11 @@
     cat.templates = tb;
     cat.version++;
   };
-  cat.get = (id) => cat.byId[id];
+  // products merged into another one (old id → the product it became), so older drawings, links and Shortcuts still find them
+  const MOVED = HP.MOVED = {
+    'sonos-combo-adapter-usb-c-eth-minijack': 'w-soncomboadapt', // 2026-11-23: our own card was a duplicate of the website's Combo Adapter
+  };
+  cat.get = (id) => cat.byId[id] || (MOVED[id] && cat.byId[MOVED[id]]) || undefined;
   cat.products = () => cat.list.filter((p) => !p.cable);
   cat.cables = () => cat.list.filter((p) => p.cable);
   /* A cable's lengths are separate cards in the catalogue (Black Lab - Sub 2m, 3m … 20m). cat.family(p) gives all lengths of p's
@@ -383,6 +387,10 @@
   // v2 -> v3: CI mode used to shrink every product to a thumbnail; it now places lettered marks. Old CI drawings become marks.
   const migrate = (doc) => {
     if ((doc.v || 2) < 3) migrate3(doc);
+    { const mv = (id) => (id && HP.MOVED && HP.MOVED[id]) || id; // merged products (HP.MOVED): the drawing points at the product they became
+      (doc.items || []).forEach((i) => { if (i.pid) i.pid = mv(i.pid); if (i.kind === 'mark' && i.k) i.k = mv(i.k); if (i.cable) i.cable = mv(i.cable); });
+      (doc.conns || []).forEach((c) => { if (c.cable) c.cable = mv(c.cable); if (c.ad) c.ad = mv(c.ad); });
+      if (Array.isArray(doc.mk)) doc.mk = doc.mk.map(mv); }
     if (doc.v < 4) { // v4: A4 became 1400 wide (was 1414) and pages 100 apart (was 60): items on page 2+ move with their page
       const port = doc.orient === 'portrait', oldPitch = (port ? 1000 : 1414) + 60, step = (port ? 1000 : 1400) + 100 - oldPitch;
       doc.items.forEach((i) => { const n = Math.max(0, Math.floor((i.x + 30) / oldPitch)); if (n) i.x += n * step; });

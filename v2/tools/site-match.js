@@ -50,7 +50,10 @@ function matcher(site) {
 // the website facts the sync writes for a matched product (price-sync.js step 2), for a card that is (or is not) one of a pair
 function webFacts(m, { single, cable, hk }) {
   const half = single && m.v.unit === 'pair' ? 0.5 : 1; // the card is one speaker, the website sells pairs
-  const colours = !cable && !m.exactVariant && m.s.variants.length > 1 && new Set(m.s.variants.map((v) => v.label)).size > 1;
+  // colours/finishes as variants; a cable's variants are usually lengths (lens, by the build), but a cable whose variants all have
+  // names without digits (Sonos Combo/Line-In Adapter: Sort, Hvid; ThunderBird jumpers: plug types) gets them as variants too
+  const named = m.s.variants.every((v) => v.label && !/\d/.test(String(v.label)));
+  const colours = (!cable || named) && !m.exactVariant && m.s.variants.length > 1 && new Set(m.s.variants.map((v) => v.label)).size > 1;
   const vars = colours ? m.s.variants.map((v) => { const o = { sku: v.sku, label: v.label || v.sku, price: Math.round(v.price * half) }; if (v.key) o.key = v.key; if (v.hex) o.hex = v.hex; if (v.before > v.price) o.was = Math.round(v.before * half); if (v.url) o.url = v.url; const u = uuidOf(v.image); if (u) o.img = hk(u); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label)) : null;
   const price = Math.round(m.v.price * half), was = m.v.before > m.v.price ? Math.round(m.v.before * half) : 0;
   return { site: m.s.sku, url: m.v.url || m.s.url, price, was, vars, half: half !== 1 };
