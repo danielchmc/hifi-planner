@@ -165,7 +165,7 @@
       hl = -1;
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
       // every product, cables included: a cable dropped on a wire (or added with a connection selected) goes on that connection
-      const base = cat.list.filter((p) => words.every((w) => cat.matchWord(p, w)) && (!bv || p.brand === bv));
+      const base = cat.list.filter((p) => cat.findable(p, words) && words.every((w) => cat.matchWord(p, w)) && (!bv || p.brand === bv));
       const sysAll = cat.systems();
       const sysBase = sysAll.length ? sysAll.filter((b) => words.every((w) => hayOf(b).includes(w)) && (!bv || b.brand === bv || b.parts.some((x) => cat.get(x.id).brand === bv))) : null;
       if (group === SYS && !sysBase) group = '';
@@ -425,7 +425,7 @@
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       list.textContent = '';
-      const rows = cat.cables().filter((p) => perMetre(p) && words.every((w) => p._hay.includes(w))).sort((a, b) => a.price - b.price);
+      const rows = cat.cables().filter((p) => !p.gone && perMetre(p) && words.every((w) => p._hay.includes(w))).sort((a, b) => a.price - b.price);
       if (it.cable) { const none = h('button.link.pad', { onclick: () => { C().setRunCable(runId, null); close(); } }, t('No cable (length only)', 'Intet kabel (kun længde)')); list.append(none); }
       rows.forEach((p) => { const r = productRow(p, h('span.tagline', null, t('per metre', 'pr. meter'))); if (it.cable === p.id) r.classList.add('on'); r.onclick = () => { C().setRunCable(runId, p.id); close(); }; list.append(r); });
       if (!rows.length) list.append(h('.empty', null, t('No cable sold by the metre found.', 'Ingen kabler i metermål fundet.')));
@@ -505,13 +505,11 @@
       let choose;
       if (G.metre) {
         const last = +LS.get('cableLen', 0);
-        const metres = () => Math.max(1, Math.round(+inp.value || 0)); // whole metres, as cable is cut in the shop
-        choose = () => { const m = metres(); select({ group: gk, key: 'm', id: rep.id, o: { m, len: m }, name: base + ' ' + fmtM(m), price: Math.ceil(m) * rep.price }); };
-        const inp = h('input', { type: 'number', min: 1, step: 1, value: Math.max(1, Math.round(mine && c.m ? c.m : last || 2)), onclick: (ev) => { ev.stopPropagation(); choose(); },
-          oninput: () => { tot.textContent = '= ' + HP.money(metres() * rep.price); choose(); } });
-        const tot = h('span.muted', null, '= ' + HP.money(metres() * rep.price));
-        inp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); choose(); commit(); } });
-        box.append(h('span.lab', null, t('Metres', 'Meter')), inp, tot);
+        const mm = { m: Math.max(1, Math.round(mine && c.m ? c.m : last || 2)) }; // whole metres, as cable is cut in the shop
+        choose = () => { const m = mm.m; select({ group: gk, key: 'm', id: rep.id, o: { m, len: m }, name: base + ' ' + fmtM(m), price: Math.ceil(m) * rep.price }); };
+        const tot = h('span.muted', null, '= ' + HP.money(mm.m * rep.price));
+        const stepper = C().metreStepper(mm, (m, enter) => { tot.textContent = '= ' + HP.money(m * rep.price); choose(); if (enter) commit(); });
+        box.append(h('span.lab', null, t('Metres', 'Meter')), stepper, tot);
       } else {
         const last = +LS.get('cableLen', 0);
         const cur = mine ? G.opts.find((o) => o.id === c.cable && (o.lv || null) === (c.lv || null)) : null;
@@ -531,7 +529,7 @@
     }
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
-      const hits = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w))));
+      const hits = cat.cables().filter((p) => (cat.findable(p, words) || p.id === c.cable) && words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w))));
       const tb = target(); // the in port, or the adapter's socket
       const all = groupsOf(hits.filter((p) => !P.isAdapter(p) || !ad)).map((G) => { const fit = P.cableFit(G.rep, a, tb); return Object.assign(G, { fit, issues: fit ? P.plugIssues(G.rep, a, tb) : [] }); }); // by the cable's two ends, then its plugs
       list.textContent = '';
@@ -574,7 +572,7 @@
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       list.textContent = '';
       const sameAs = (p) => isCable ? plugs(p) === plugs(old) : (p.cats || []).some((x) => (old.cats || []).includes(x));
-      let rows = (isCable ? cat.list.filter((p) => p.cable && !p.gone && !oldFam.includes(p)) : cat.products()).filter((p) => p.id !== old.id && words.every((w) => cat.matchWord(p, w)) && (!same.checked || sameAs(p))).map((p) => {
+      let rows = (isCable ? cat.list.filter((p) => p.cable && !p.gone && !oldFam.includes(p)) : cat.products().filter((p) => cat.findable(p, words))).filter((p) => p.id !== old.id && words.every((w) => cat.matchWord(p, w)) && (!same.checked || sameAs(p))).map((p) => {
         const kept = total ? used.out.filter((k) => P.mapPorts(old.out || [], p.out || [], used.out)[k]).length + used.in.filter((k) => P.mapPorts(old.in || [], p.in || [], used.in)[k]).length : 0;
         return { p, kept };
       }).sort((x, y) => y.kept - x.kept);

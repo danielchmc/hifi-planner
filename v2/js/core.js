@@ -284,6 +284,10 @@
     }
     return grp.get(p) || null;
   };
+  // a product that is no longer sold (gone: left the website, or only an outlet unit is left) is only found by its exact SKU
+  // (product, colour or length SKU), so older drawings and a seller looking for that one item still find it
+  cat.skuWord = (p, w) => { const W = String(w).toUpperCase(); return [p.sku, p.site].concat((p.vars || []).map((v) => v.sku), (p.lens || []).map((l) => l.sku)).some((x) => x && String(x).toUpperCase() === W); };
+  cat.findable = (p, words) => !p.gone || (words || []).some((w) => cat.skuWord(p, w));
   // a search word: in the product's text, or a length the cable is sold in ("cl1 hdmi 5m" finds CL1 HDMI 8K, sold in 1–10 m)
   cat.matchWord = (p, w) => {
     if (p._hay.includes(w)) return true;

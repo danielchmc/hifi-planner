@@ -908,3 +908,16 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .conn-head .adline { flex-basis: 100%; display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 12px; }
 .conn-head .adline select { max-width: 320px; }
 .wire.drop-cable .line { stroke-width: 6; stroke: var(--accent); }
+
+/* v4.16: metres for cable sold by the metre: − N m + on the card (where other cables have the length pill) and in the cable picker */
+.mstep { display: inline-flex; align-items: stretch; height: 22px; border: 1px solid #141518; background: #fff; color: #141518; font: 600 11px/1 var(--mono); }
+.card-img .mstep { position: absolute; left: 4px; top: 4px; z-index: 2; }
+.mstep .mbtn { width: 20px; border: 0; background: none; color: inherit; font: 600 13px/1 var(--mono); padding: 0; cursor: pointer; display: grid; place-items: center; }
+.mstep .mbtn:hover:not(:disabled) { background: #141518; color: #fff; }
+.mstep .mbtn:disabled { color: #b8b8b4; cursor: default; }
+.mstep .mval { width: 24px; border: 0; border-left: 1px solid #d0d0cb; padding: 0 0 0 2px; background: none; color: inherit; font: inherit; text-align: right; outline: none; }
+.mstep .mval:focus { background: #fff6c8; }
+.mstep .munit { display: grid; place-items: center; padding: 0 4px 0 2px; border-right: 1px solid #d0d0cb; font-weight: 400; color: #6a6e75; }
+.card:not(:hover):not(.sel) .mstep { opacity: .85; }
+.lens .mstep { height: 28px; font-size: 12.5px; } .lens .mstep .mbtn { width: 28px; } .lens .mstep .mval { width: 30px; }
+@media (pointer: coarse) { .mstep { height: 30px; font-size: 13px; } .mstep .mbtn { width: 30px; } .mstep .mval { width: 30px; } }

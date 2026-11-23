@@ -212,6 +212,19 @@ if (fs.existsSync(ownFile)) {
   products.forEach((w) => (w.variants || []).forEach((v) => { if (!/\d+,\d+/.test(v.sku || '')) return; const k = fam(v.sku); famSite.set(k, famSite.has(k) && famSite.get(k) !== w.sku ? null : w.sku); }));
   const stripLen = (s) => String(s || '').replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '').trim();
   RT.lenGone = [];
+  // Discontinued: a product is gone when the website no longer sells it new. An outlet unit (a demo/exhibition piece at a reduced
+  // price, "Kun Outlet") does not count as selling it: outlet units are never matched (SM.sellable), so a product whose website
+  // product is only an outlet unit is gone too (goneWhy 'outlet'). It clears itself when the website sells it new again.
+  const outletSku = new Set();
+  listing.forEach((r) => { const s = r.brandName ? SM.fromApi(r) : r; if (s.outlet) { if (s.sku) outletSku.add(U(s.sku)); (s.variants || []).forEach((v) => v.sku && outletSku.add(U(v.sku))); } else (s.variants || []).forEach((v) => v.outlet && v.sku && outletSku.add(U(v.sku))); });
+  const sellsNew = (sku) => !!(sku && match.byLink({ site: sku }));
+  RT.outletGone = []; RT.siteGone = []; RT.frozenBack = [];
+  const markGone = (p, o, key) => {
+    const prev = prevById.get(o.id) || {};
+    p.gone = prev.gone || p.gone || TODAY; // the date it was first seen gone, kept from build to build
+    if (key && outletSku.has(U(key))) { p.goneWhy = 'outlet'; RT.outletGone.push(o.brand + ' ' + o.name + ' [' + key + ']'); }
+    else RT.siteGone.push(o.brand + ' ' + o.name + ' [' + (key || '-') + ']');
+  };
   const generated = own.map((o) => {
     const p = {};
     for (const k of ['id', 'brand', 'name', 'sku']) if (o[k] !== undefined) p[k] = o[k];
@@ -230,8 +243,16 @@ if (fs.existsSync(ownFile)) {
         : prev.price > 0 && (w.price < prev.price * 0.65 || w.price > prev.price * 1.6) ? 'large change (over -35% / +60%)' : '';
       if (why) { p.price = prev.price; if (prev.was) p.was = prev.was; if (w.price !== prev.price) RT.held.push(o.brand + ' ' + o.name + ': ' + prev.price + ' kept, website ' + w.price + ' (' + why + ')'); }
       else { p.price = w.price; if (w.was) p.was = w.was; }
-    } else if (o.frozen) { Object.assign(p, o.frozen); RT.frozen++; }
-    else if (o.link) { p.gone = TODAY; } // the website product left since the last split: price etc. kept from the last build at the switch (stage 4)
+    } else if (o.frozen) {
+      Object.assign(p, o.frozen); RT.frozen++;
+      // a frozen product (not linked to the website) with a SKU the website does not sell new is gone; our stand-ins and products
+      // without a SKU are HiFi Planner's own and never gone. A gone one the website sells again needs linking in the Editor.
+      const key = o.sku || o.frozen.site, standIn = (o.cats || []).includes('Stand-in Products');
+      if (key && !standIn) {
+        if (sellsNew(o.sku) || sellsNew(o.frozen.site)) RT.frozenBack.push(o.brand + ' ' + o.name + ' [' + key + ']' + (p.gone ? ' (marked gone)' : '')); // left as it is
+        else markGone(p, o, outletSku.has(U(o.sku || '')) ? o.sku : key);
+      }
+    } else if (o.link) markGone(p, o, o.link.site); // the website product left (or only an outlet unit is left)
     for (const k of ['cats', 'img', 'in', 'out', 'cable', 'auto', 'review', 'manualWireless']) if (o[k] !== undefined) p[k] = o[k];
     // Bluetooth/WiFi: the website can add them, never remove them, unless set by hand (as the sync does)
     const f = m ? facetsBySku.get(U(m.s.sku)) : null;
@@ -432,6 +453,8 @@ if (fs.existsSync(ownFile)) {
   if (RT.acc) P('**Accessories**: ' + RT.acc + ' products list accessories from the website (`acc`), offered by "Relaterede produkter".' + (RT.accRev ? ' From accessory pages\' recommended products: ' + RT.accRev[0] + ' links kept, ' + RT.accRev[1] + ' left out (the accessory does not belong to that kind of product, or both are accessories).' : ''), '');
   if (RT.systems) P('**Systems**: ' + RT.systems.n + ' of the website\'s bundles are in the sidebar\'s Systems section (`build/bundles.js`)' + (RT.systems.miss.length ? '; ' + RT.systems.miss.length + ' are not, because a part is not in the catalogue: ' + RT.systems.miss.slice(0, 30).join(', ') + (RT.systems.miss.length > 30 ? ', …' : '') : '') + '.', '');
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
+  if (RT.outletGone.length) P('**Only outlet units on the website** (' + RT.outletGone.length + '): marked discontinued (`gone`, `goneWhy: outlet`) until the website sells them new again.', '', ...RT.outletGone.map((x) => '- ' + x), '');
+  if (RT.frozenBack.length) P('**Not linked, but the website sells them** (' + RT.frozenBack.length + '): left as they are (no price updates); link them to the website product in the Editor.', '', ...RT.frozenBack.map((x) => '- ' + x), '');
   if (RT.lenGone.length) P('**Length no longer sold, cable still sold** (' + RT.lenGone.length + '): the card follows the cable and offers its current lengths instead of being discontinued.', '', ...RT.lenGone.map((x) => '- ' + x), '');
   if (RT.stock && RT.stock.length) P('Stock pictures replaced by the website\'s photo (' + RT.stock.length + '): ' + RT.stock.join(', ') + '.', '');
   if (RT.changes) {

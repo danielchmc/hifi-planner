@@ -133,14 +133,15 @@
       MK.includes(p.id) && h('span.card-mark', { title: t('Marked on the floor plan as ', 'Markeret på plantegningen som ') + letter(MK.indexOf(p.id)), html: markHtml(p.id) }),
       (p.bt || p.wifi) && h('.fabs', null, p.bt && h('span.fab', { title: 'Bluetooth' }, icon('bt')), p.wifi && h('span.fab', { title: 'WiFi' }, icon('wifi'))),
       h('.card-head', null, h('span.brand', null, p.brand, v && !item.len && h('span.vlabel', null, ' · ' + v.label),
-          p.gone && h('span.gone-tag.no-print', { title: t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
+          p.gone && h('span.gone-tag.no-print', { title: p.goneWhy === 'outlet' ? t('No longer sold new: hifiklubben.dk only has outlet units', 'Sælges ikke længere som ny: hifiklubben.dk har kun outlet-eksemplarer') : t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
           p.review && h('span.gone-tag.auto.no-print', { title: t('Added automatically from hifiklubben.dk. Inputs/outputs are suggested from the website and not checked yet.', 'Tilføjet automatisk fra hifiklubben.dk. Ind-/udgange er foreslået ud fra hjemmesiden og ikke kontrolleret endnu.') }, 'AUTO')),
         plink(HP.productUrl(p, item), 'name', [C.cardName(p, item), h('span.plink-ic.print-only', null, ' ↗')])),
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
         imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (Alt+I)', 'Se billedet nærmere (Alt+I)'), data: { inspect: '1' } }, icon('search', 13)),
-        cat.hasLengths(p) && (() => { // a cable's length (or metres), like a variant: a click lists the lengths
+        cat.hasLengths(p) && (() => { // a cable's length, like a variant: a click lists the lengths. By the metre: − 3 m +
           const G = cat.cableGroup(p), o = cat.cableOpt(G, p.id, item.len);
+          if (G.metre) return C.metreStepper(item);
           return h('button.vpill.no-print', { data: { lmenu: '1' }, title: G.metre ? t('Sold by the metre', 'Sælges i metermål') : t('Length: ', 'Længde: ') + G.opts.map((x) => x.label).join(', ') },
             h('span.vl', null, G.metre ? lenM(item.m || 1) : o ? o.label : t('Length', 'Længde')), G.metre ? null : h('span.vn', null, G.opts.length), icon('chevron-down', 10));
         })(),
@@ -181,12 +182,42 @@
     const G = cat.cableGroup(p), o = cat.cableOpt(G, p.id, it && it.len), base = stripLen(p.name) || p.name;
     return G.metre ? base + ' ' + lenM((it && it.m) || 1) : o ? base + ' ' + o.label : p.name;
   };
+  /* Metres for cable sold by the metre: − N m + (like the Kort − % + stepper). The number can be typed (digits only; Enter or
+     leaving the field saves, Esc cancels, ↑/↓ step by 1). Whole metres 1–99, as cable is cut in the shop. One step for Undo each. */
+  const M_MIN = 1, M_MAX = 99;
+  C.setMetres = (id, m) => {
+    const it = store.item(id); if (!it) return;
+    m = Math.max(M_MIN, Math.min(M_MAX, Math.round(+m || 0))); if (!m || m === (it.m || 1)) return render();
+    it.m = m; HP.LS.set('cableLen', m); store.commit();
+  };
+  // item: a card ({ id, m }) or, with onSet, any { m } (the cable picker: onSet(m) on every change, nothing is saved here)
+  C.metreStepper = (item, onSet) => {
+    const clampM = (m) => Math.max(M_MIN, Math.min(M_MAX, Math.round(+m || 0) || M_MIN)), cur = () => item.m || 1;
+    const set = onSet ? (m) => { item.m = clampM(m); inp.value = String(item.m); sync(); onSet(item.m); } : (m) => C.setMetres(item.id, m);
+    const inp = h('input.mval', { type: 'text', inputMode: 'numeric', pattern: '[0-9]*', maxLength: 2, value: String(cur()), title: t('Metres: type a number, or use − / +', 'Meter: skriv et tal, eller brug − / +'),
+      oninput: (e) => { const v = e.target.value.replace(/\D/g, '').slice(0, 2); if (v !== e.target.value) e.target.value = v; if (onSet && +v >= M_MIN) { item.m = clampM(v); sync(); onSet(item.m); } },
+      onkeydown: (e) => {
+        e.stopPropagation();
+        if (e.key === 'Enter') { e.preventDefault(); if (onSet) { set(e.target.value || cur()); onSet(item.m, true); } else e.target.blur(); }
+        else if (e.key === 'Escape') { if (!onSet) { e.preventDefault(); e.target.value = String(cur()); e.target.blur(); } }
+        else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') { e.preventDefault(); const m = clampM((+e.target.value || cur()) + (e.key === 'ArrowUp' ? 1 : -1)); e.target.value = String(m); if (onSet) set(m); }
+      },
+      onfocus: (e) => e.target.select(),
+      onblur: (e) => { if (e.target.value !== String(cur()) || !e.target.value) set(e.target.value || cur()); } });
+    const step = (d) => h('button.mbtn', { type: 'button', data: onSet ? {} : { mstep: String(d) }, title: d < 0 ? t('1 m less', '1 m mindre') : t('1 m more', '1 m mere'),
+      onclick: onSet ? (e) => { e.stopPropagation(); set(cur() + d); } : null }, d < 0 ? '−' : '+');
+    const minus = step(-1), plus = step(1);
+    const sync = () => { minus.disabled = cur() <= M_MIN; plus.disabled = cur() >= M_MAX; };
+    sync();
+    return h('.mstep' + (onSet ? '' : '.no-print'), { title: t('Sold by the metre', 'Sælges i metermål'), onclick: onSet ? (e) => e.stopPropagation() : null }, minus, inp, h('span.munit', null, 'm'), plus);
+  };
   // a cable card's lengths (or metres): picking one changes the card's product and/or its website length
   const METRES = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20, 25, 30];
   C.lengthMenu = (id, anchor, x, y) => {
     const it = store.item(id), p = it && cat.get(it.pid), G = cat.cableGroup(p); if (!G || !cat.hasLengths(p)) return;
     const r = anchor ? anchor.getBoundingClientRect() : null, at = [r ? r.left : x, r ? r.bottom + 4 : y];
-    if (G.metre) {
+    if (G.metre) { // the card's own − N m + field
+      const f = document.querySelector('.item[data-id="' + id + '"] .mval'); if (f) return f.focus();
       const ms = [...new Set(METRES.concat(it.m ? [it.m] : []))].sort((a, b) => a - b);
       return HP.menu(at[0], at[1], [{ head: t('Metres', 'Meter') + ' · ' + HP.money(p.price) + ' / m' }].concat(ms.map((m) => ({ label: lenM(m) + '  ·  ' + HP.money(m * (p.price || 0)), on: (it.m || 1) === m,
         fn: () => { it.m = m; HP.LS.set('cableLen', m); store.commit(); } }))));
@@ -764,6 +795,8 @@
     if (mouse && e.ctrlKey && /Mac/.test(navigator.platform)) return; // Ctrl-click on a Mac is a right-click: the contextmenu event opens the menu
     const portEl = e.target.closest('.port');
     if (wiring && wiring.sticky) { e.preventDefault(); return portEl ? finishWire(portEl) : cancelWire(); }
+    const ms = e.target.closest('[data-mstep]');
+    if (ms) { e.preventDefault(); e.stopPropagation(); if (ms.disabled) return; const id = ms.closest('.item').dataset.id, it = store.item(id); return C.setMetres(id, ((it && it.m) || 1) + +ms.dataset.mstep); }
     const lm = e.target.closest('[data-lmenu]');
     if (lm) { e.preventDefault(); e.stopPropagation(); return C.lengthMenu(lm.closest('.item').dataset.id, lm); }
     const vm = e.target.closest('[data-vmenu]');
