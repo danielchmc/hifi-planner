@@ -236,7 +236,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 194,
+     "availableQuantity": 182,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,7 +357,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 64,
+     "availableQuantity": 58,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -474,7 +474,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 52,
+     "availableQuantity": 42,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -522,6 +522,35 @@
   "testGroups": [],
   "bundleRelations": [
    {
+    "modelType": "Stereosystem",
+    "price": {
+     "price": 24296,
+     "priceFormatted": "24.296,-",
+     "priceBefore": 29397,
+     "priceBeforeFormatted": "29.397,-",
+     "priceSavingsFormatted": "5.101,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 24296,
+     "unitPriceBefore": 29397
+    },
+    "image": "https://images.hifiklubben.com/image/1eca32b7-6f26-4c1a-8943-a1d035a8b179",
+    "ribbons": [
+     {
+      "text": "Spar 17%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "NAD M10 V3 + DALIOPTICON 2 MK2",
+    "url": "/nadm10v3-opticon2mk2/"
+   },
+   {
     "modelType": "Stereosystem til TV",
     "price": {
      "price": 10097,
@@ -549,35 +578,6 @@
     ],
     "title": "SA1 MK2 + Dali Opticon 2 Mk2",
     "url": "/argsa1mk2-daliopticon2mk2/"
-   },
-   {
-    "modelType": "Stereosystem",
-    "price": {
-     "price": 27297,
-     "priceFormatted": "27.297,-",
-     "priceBefore": 29397,
-     "priceBeforeFormatted": "29.397,-",
-     "priceSavingsFormatted": "2.100,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 27297,
-     "unitPriceBefore": 29397
-    },
-    "image": "https://images.hifiklubben.com/image/1eca32b7-6f26-4c1a-8943-a1d035a8b179",
-    "ribbons": [
-     {
-      "text": "Spar 7%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "NAD M10 V3 + DALIOPTICON 2 MK2",
-    "url": "/nadm10v3-opticon2mk2/"
    }
   ],
   "displayBookDemo": true,

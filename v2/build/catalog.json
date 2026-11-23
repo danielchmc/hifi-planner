@@ -44,7 +44,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 69,
+   "all": 68,
    "bundles": 0
   },
   {
@@ -484,8 +484,8 @@
    "title": "Projektor",
    "parent": "/tv/",
    "website": true,
-   "products": 19,
-   "all": 19,
+   "products": 18,
+   "all": 18,
    "bundles": 0
   },
   {
@@ -10054,7 +10054,7 @@
     "da": "Subwoofer"
    },
    "cat": "/hojtalere/subwoofer/",
-   "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10wh/",
+   "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10bk/",
    "kind": "subwoofer",
    "scope": "diagram",
    "facets": {
@@ -10062,23 +10062,6 @@
     "axis": "colour"
    },
    "variants": [
-    {
-     "sku": "ARGBERLINSUB10WH",
-     "label": "Hvid",
-     "price": 5399,
-     "was": 6699,
-     "colorKey": "White",
-     "ean": "5706957021444",
-     "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10wh/",
-     "img": "hk:504ffd32-71ed-4cf1-9b8c-93ce9a084e23",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "13",
-      "Vægt emballage (kg)": "14,1",
-      "Mål (emballage)": "39,2 x 44,4 x 43 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "30 x 34,2 x 30 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "ARGBERLINSUB10BK",
      "label": "Sort",
@@ -10088,6 +10071,23 @@
      "ean": "5706957021420",
      "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10bk/",
      "img": "hk:c06e6343-e727-4210-8129-50cbc307d92e",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "13",
+      "Vægt emballage (kg)": "14,1",
+      "Mål (emballage)": "39,2 x 44,4 x 43 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "30 x 34,2 x 30 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGBERLINSUB10WH",
+     "label": "Hvid",
+     "price": 5399,
+     "was": 6699,
+     "colorKey": "White",
+     "ean": "5706957021444",
+     "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10wh/",
+     "img": "hk:504ffd32-71ed-4cf1-9b8c-93ce9a084e23",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "13",
@@ -20426,7 +20426,7 @@
     "da": "Gulvstander"
    },
    "cat": "/tilbehor/tv-tilbehor/",
-   "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19sobk/",
+   "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19laobk/",
    "kind": "mounting",
    "scope": "pricelist",
    "facets": {
@@ -20434,22 +20434,6 @@
     "axis": "colour"
    },
    "variants": [
-    {
-     "sku": "BULOWBS19SOBK",
-     "label": "Smoked Oak",
-     "price": 2995,
-     "colorKey": "Wood",
-     "ean": "5713003001916",
-     "url": "/bulow-stand-bs19-black-gulvstander/bulowbs19sobk/",
-     "img": "hk:aa8eb662-f61a-4c7d-8379-5b3bcde69c89",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "8,6",
-      "Vægt emballage (kg)": "8,6",
-      "Mål (emballage)": "59,5 x 15,5 x 71 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "76,5 x 71,5 x 58 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "BULOWBS19LAOBK",
      "label": "Lacquered Oak",
@@ -32732,7 +32716,7 @@
      "BURPLAYMATE2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIKATCHG2",
@@ -32846,7 +32830,7 @@
      "BOLEVEL"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIKORE",
@@ -33026,7 +33010,7 @@
      "NADM23V2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIKUPID",
@@ -33186,7 +33170,7 @@
      "NADC3030"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALILPLETTHEHARDTIMX",
@@ -33223,11 +33207,11 @@
    "specs": {},
    "rel": {
     "alt": [
-     "DALITHEVELVETBLUE",
-     "DALILPREFLECTORX"
+     "DALILPREFLECTORX",
+     "DALITHEVELVETBLUE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALILPREFLECTORX",
@@ -33253,7 +33237,7 @@
      "ean": "5703120112824",
      "url": "/dali-lp-vestbo-trio-reflector-lp-plade/dalilprefelctor/",
      "img": "hk:8ef71746-c267-4856-bc16-4a04cd7b0b99",
-     "stock": "warehouseInStock",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "0,49",
       "Vægt emballage (kg)": "0,49",
@@ -33268,7 +33252,7 @@
      "DALILPLETTHEHARDTIMX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIMENUETSE",
@@ -33382,7 +33366,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERON1",
@@ -33508,7 +33492,7 @@
      "DALIOBERONONWALL"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERON1C",
@@ -33557,12 +33541,12 @@
    },
    "rel": {
     "acc": [
-     "DALISOUNDHUB",
-     "DALISOUNDHUBCOMP",
-     "DALIWSR",
      "ESSSTATIVS62X",
      "ESSSTATIVWX",
-     "ESSSTELS57X"
+     "ESSSTELS57X",
+     "DALISOUNDHUB",
+     "DALISOUNDHUBCOMP",
+     "DALIWSR"
     ],
     "alt": [
      "KEFLSX2LT",
@@ -33575,11 +33559,11 @@
      "DALISUBE12F",
      "DALISUBC8D",
      "ARGMALMOSUB10X",
-     "DALIOBERONVOKALC",
-     "DALIBASUBC8D"
+     "DALIBASUBC8D",
+     "DALIOBERONVOKALC"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERON3",
@@ -33670,7 +33654,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERONGRANDVOK",
@@ -33749,7 +33733,7 @@
      "DALISONIK3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERONONWALL",
@@ -33831,7 +33815,7 @@
      "ARGMALMOSUB10X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOBERONONWALLC",
@@ -33915,7 +33899,7 @@
      "DALIBASUBC8D"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICON1MK2",
@@ -34048,7 +34032,7 @@
      "NADC316V2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICON2MK2",
@@ -34181,7 +34165,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICON6MK2",
@@ -34319,7 +34303,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICON8MK2",
@@ -34436,7 +34420,7 @@
      "NADC389"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICONLCRMK2",
@@ -34545,7 +34529,7 @@
      "BLSN230"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIOPTICONVOKMK2",
@@ -34663,7 +34647,7 @@
      "DENAVCX3900H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIP10DSS",
@@ -34757,7 +34741,7 @@
      "BW805D4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMAMP2500",
@@ -34818,11 +34802,11 @@
      "ESSCL1SCPROX"
     ],
     "alt": [
+     "NADCI8-120DSP",
+     "NADCI8-150DSP",
      "DALIPHANTOMAMP4750",
      "BWCDA2HD",
-     "BWCDA4D",
-     "NADCI8-120DSP",
-     "NADCI8-150DSP"
+     "BWCDA4D"
     ],
     "rec": [
      "DALIPHANTOMS180",
@@ -34835,7 +34819,7 @@
      "DALIPHANTOMICM80A"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMAMP4125",
@@ -34873,7 +34857,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMAMP4750",
@@ -34933,11 +34917,11 @@
      "AQIRISHREDSUB"
     ],
     "alt": [
-     "DALIPHANTOMAMP2500",
      "BWCDA2HD",
      "BWCDA4D",
      "NADCI8-120DSP",
-     "NADCI8-150DSP"
+     "NADCI8-150DSP",
+     "DALIPHANTOMAMP2500"
     ],
     "rec": [
      "DALIPHANTOMS80",
@@ -34949,7 +34933,7 @@
      "DALIPHANTOMICM80A"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMBB25L",
@@ -35003,15 +34987,10 @@
     ],
     "rec": [
      "DALIPHANTOME50",
-     "BWCCM662",
      "DALIPHANTOME60",
      "BWCCM663",
      "DALIPHANTOME80",
-     "BWCCM663SR",
-     "DALIPHANTOME60S",
      "BWCCM664",
-     "DALIPHANTOME60WR",
-     "BWCCM664SR",
      "DALIPHANTOME80WR",
      "BWCCM665",
      "DALIPHANTOMK60",
@@ -35031,10 +35010,15 @@
      "SONINCEILING2",
      "DALIPHANTOMICM80A",
      "BWCCM382",
-     "BWMARINE8"
+     "BWMARINE8",
+     "BWCCM662",
+     "BWCCM663SR",
+     "DALIPHANTOME60S",
+     "DALIPHANTOME60WR",
+     "BWCCM664SR"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME50",
@@ -35111,7 +35095,7 @@
      "NADCI980"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME60",
@@ -35181,9 +35165,9 @@
      "DALIPHANTOMH50",
      "DALIPHANTOMH60",
      "DALIPHANTOMH80",
-     "DALIPHANTOMH120",
      "BWCCM664",
-     "BWCCM665"
+     "BWCCM665",
+     "DALIPHANTOMH120"
     ],
     "rec": [
      "DALISUBC8D",
@@ -35195,7 +35179,7 @@
      "DALIBASUBC8D"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME60S",
@@ -35269,7 +35253,7 @@
      "DALIBASUBC8D"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME60WR",
@@ -35341,7 +35325,7 @@
      "DENHOMEAMP"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME80",
@@ -35421,7 +35405,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOME80WR",
@@ -35493,7 +35477,7 @@
      "DENHOMEAMP"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMH50",
@@ -35571,7 +35555,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMH60",
@@ -35650,7 +35634,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMH60R",
@@ -35729,7 +35713,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMH80",
@@ -35807,7 +35791,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMH80R",
@@ -35888,7 +35872,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMICM80A",
@@ -35969,7 +35953,7 @@
      "MARACINEMA50S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMK60",
@@ -36081,7 +36065,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMK60BBX",
@@ -36126,7 +36110,7 @@
      "DALIPHANTOMBB25L"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMK60LP",
@@ -36210,7 +36194,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMK80",
@@ -36307,7 +36291,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMK80BBX",
@@ -36352,7 +36336,7 @@
      "DALIPHANTOMBB25L"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMM250",
@@ -36435,7 +36419,7 @@
      "DALISUBK14"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMM375",
@@ -36519,7 +36503,7 @@
      "BWDB4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMM675",
@@ -36571,13 +36555,13 @@
    },
    "rel": {
     "acc": [
-     "DALIFRAMEM675",
      "ESSCL1SCPROX",
      "ESSPR1SCX",
      "AQSLIPDB14-2SCX",
      "AQSLIPDB14-4SCX",
      "AQSLIPXTREM14-2SCX",
-     "AQSLIPXTREM14-4SCX"
+     "AQSLIPXTREM14-4SCX",
+     "DALIFRAMEM675"
     ],
     "alt": [
      "DALIPHANTOMM375",
@@ -36609,7 +36593,7 @@
      "BWDB3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMS180",
@@ -36660,12 +36644,12 @@
    },
    "rel": {
     "acc": [
-     "DALIFRAMES180",
      "ESSCL1SCPROX",
      "ESSPR1SCX",
      "ESSPR2SCX",
      "AQSLIPDB14-2SCX",
-     "AQSLIPXTREM14-2SCX"
+     "AQSLIPXTREM14-2SCX",
+     "DALIFRAMES180"
     ],
     "alt": [
      "DALIPHANTOMS280",
@@ -36692,7 +36676,7 @@
      "BWDB3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMS280",
@@ -36743,12 +36727,12 @@
    },
    "rel": {
     "acc": [
-     "DALIFRAMES280",
      "ESSCL1SCPROX",
      "ESSPR1SCX",
      "ESSPR2SCX",
      "AQSLIPDB14-2SCX",
-     "AQSLIPXTREM14-4SCX"
+     "AQSLIPXTREM14-4SCX",
+     "DALIFRAMES280"
     ],
     "alt": [
      "DALIPHANTOMS180",
@@ -36771,7 +36755,7 @@
      "MARAAMP10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHANTOMS80",
@@ -36822,12 +36806,12 @@
    },
    "rel": {
     "acc": [
-     "DALIFRAMES80",
      "ESSCL1SCPROX",
      "ESSPR1SCX",
      "ESSPR2SCX",
      "AQSLIPDB14-2SCX",
-     "AQSLIPXTREM14-2SCX"
+     "AQSLIPXTREM14-2SCX",
+     "DALIFRAMES80"
     ],
     "alt": [
      "DALIPHANTOMS180",
@@ -36853,7 +36837,7 @@
      "KEFKC92"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHE50SQGRILL",
@@ -36893,7 +36877,7 @@
      "DALIPHANTOME50"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHE60SQGRILL",
@@ -36933,7 +36917,7 @@
      "DALIPHANTOME60"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIPHE80SQGRILL",
@@ -54302,6 +54286,22 @@
      }
     },
     {
+     "sku": "JBLLIVE680BL",
+     "label": "Blå",
+     "price": 799,
+     "was": 1199,
+     "colorKey": "Blue",
+     "ean": "1200130033193",
+     "url": "/jbl-live-680nc-traadloest-headset/jbllive680bl/",
+     "img": "hk:a79c1635-2e10-4f0c-b6a1-5d6ddec31d71",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,24",
+      "Vægt emballage (kg)": "0,45",
+      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
      "sku": "JBLLIVE680OR",
      "label": "Orange",
      "price": 799,
@@ -54326,22 +54326,6 @@
      "ean": "1200130039805",
      "url": "/jbl-live-680nc-traadloest-headset/jbllive680gr/",
      "img": "hk:1ca1c3aa-fad8-4481-b7cb-f9d51b9fc016",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,24",
-      "Vægt emballage (kg)": "0,45",
-      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "JBLLIVE680BL",
-     "label": "Blå",
-     "price": 799,
-     "was": 1199,
-     "colorKey": "Blue",
-     "ean": "1200130033193",
-     "url": "/jbl-live-680nc-traadloest-headset/jbllive680bl/",
-     "img": "hk:a79c1635-2e10-4f0c-b6a1-5d6ddec31d71",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,24",
@@ -55358,22 +55342,6 @@
      }
     },
     {
-     "sku": "JBLTOURONEM3BL",
-     "label": "Blå",
-     "price": 1399,
-     "was": 2699,
-     "colorKey": "Blue",
-     "ean": "1200130025082",
-     "url": "/jbl-tour-one-m3-traadloest-headset/jbltouronem3bl/",
-     "img": "hk:e85024d5-4da8-4bc2-ae44-994a38413afc",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,8",
-      "Vægt emballage (kg)": "0,95",
-      "Mål (emballage)": "21,1 x 7,8 x 24,9 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLTOURONEM3MOCHA",
      "label": "Mocha",
      "price": 1390,
@@ -55382,6 +55350,22 @@
      "ean": "1200130020933",
      "url": "/jbl-tour-one-m3-traadloest-headset/jbltouronem3mocha/",
      "img": "hk:8668c156-4990-4cc1-ad03-db516db2cb4b",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,8",
+      "Vægt emballage (kg)": "0,95",
+      "Mål (emballage)": "21,1 x 7,8 x 24,9 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLTOURONEM3BL",
+     "label": "Blå",
+     "price": 1399,
+     "was": 2699,
+     "colorKey": "Blue",
+     "ean": "1200130025082",
+     "url": "/jbl-tour-one-m3-traadloest-headset/jbltouronem3bl/",
+     "img": "hk:e85024d5-4da8-4bc2-ae44-994a38413afc",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,8",
@@ -76898,81 +76882,6 @@
    "read": "2026-11-21"
   },
   {
-   "sku": "SAMLPU9",
-   "brand": "Samsung",
-   "model": "The Premiere 9 (LPU9D)",
-   "type": {
-    "key": "VideoProjector",
-    "da": "Videoprojektor"
-   },
-   "cat": "/tv/projektor/",
-   "url": "/samsung-the-premiere-9-lpu9d-videoprojektor/samlpu9d/",
-   "kind": "projector",
-   "scope": "diagram",
-   "facets": {
-    "axis": "colour",
-    "bt": true,
-    "wifi": true
-   },
-   "variants": [
-    {
-     "sku": "SAMLPU9D",
-     "label": "Hvid",
-     "price": 26666,
-     "was": 44999,
-     "colorKey": "White",
-     "ean": "8806095545615",
-     "url": "/samsung-the-premiere-9-lpu9d-videoprojektor/samlpu9d/",
-     "img": "hk:162bfda4-c9c6-452f-8aaa-4ae0d29216c7",
-     "stock": "dropshippingInStock",
-     "specs": {
-      "Vægt (kg)": "11,6",
-      "Vægt emballage (kg)": "15,1",
-      "Mål (emballage)": "50,7 x 31,4 x 67 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "HDMI version": "2.1",
-    "HDCP Version": "2.3",
-    "Udgang (andet)": "USB A",
-    "Indgang (andet)": "HDMI, RS-232, IR",
-    "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
-    "Opløsning - Projektor": "4K Ultra HD",
-    "ISF certificeret": "Nej",
-    "Lampe garanti": "20000",
-    "Teknologi": "Laser",
-    "Kontrast": "2.000.000:1",
-    "Maks. opløsning": "3840 x 2160p",
-    "Lens Shift": "Nej",
-    "Skærmstørrelse": "100-130",
-    "Standby strømforbrug": "0,5 watt",
-    "Typisk energiforbrug, normal brug": "410 watt",
-    "Lampe levetid": "20000",
-    "Fjernbetjening": "Ja",
-    "Indbyggede højtalere": "Ja",
-    "Video formater": "2160p"
-   },
-   "rel": {
-    "acc": [
-     "AQFOREST48HDMI",
-     "AQCINN48HDMI",
-     "AQCARBON48HDMI"
-    ],
-    "alt": [
-     "SAMLPU7",
-     "SONYVPLXW5100ES",
-     "SONYVPLXW5000ESX",
-     "HISPX3PROUSTX",
-     "HISPX4PROX",
-     "HISC3ULTRAX",
-     "HISPT1USTX",
-     "HISXR10X"
-    ]
-   },
-   "read": "2026-11-21"
-  },
-  {
    "sku": "SAMTM1240AX",
    "brand": "Samsung",
    "model": "TM1240A",
@@ -81281,22 +81190,6 @@
      }
     },
     {
-     "sku": "SAMVGSCFH65WTB",
-     "label": "65\" White",
-     "price": 699,
-     "colorKey": "White",
-     "ean": "8806099050221",
-     "url": "/samsung-the-frame-2026---frame-tv-ramme/samvgscfh65wtb/",
-     "img": "hk:b7f02afb-934b-4604-bc9e-9f96bec499c2",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Vægt (kg)": "1,22",
-      "Vægt emballage (kg)": "2",
-      "Mål (emballage)": "155,4 x 9,7 x 9,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "SAMVGSCFH55WTB",
      "label": "55\" White",
      "price": 799,
@@ -81310,6 +81203,22 @@
       "Vægt emballage (kg)": "1,8",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
       "Mål (produkt)": "124,1 x 71,4 x 1,8 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "SAMVGSCFH65WTB",
+     "label": "65\" White",
+     "price": 699,
+     "colorKey": "White",
+     "ean": "8806099050221",
+     "url": "/samsung-the-frame-2026---frame-tv-ramme/samvgscfh65wtb/",
+     "img": "hk:b7f02afb-934b-4604-bc9e-9f96bec499c2",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "1,22",
+      "Vægt emballage (kg)": "2",
+      "Mål (emballage)": "155,4 x 9,7 x 9,8 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -96823,7 +96732,7 @@
    "cat": "/stereo/systemer/",
    "url": "/dalikupid-blsn230/",
    "price": 7697,
-   "was": 8397,
+   "was": 0,
    "img": "hk:fae108de-f828-4256-b582-71eac2a3373f",
    "parts": [
     {
@@ -96895,7 +96804,7 @@
    },
    "cat": "/stereo/systemer/",
    "url": "/dalioberon1-denrcdn12dab/",
-   "price": 7797,
+   "price": 6797,
    "was": 8897,
    "img": "hk:dd02758d-af0b-4910-84f9-e62a0c859ccb",
    "parts": [
@@ -99588,6 +99497,21 @@
      ]
     }
    ]
+  },
+  {
+   "sku": "N230-OBERON3",
+   "brand": "Bluesound",
+   "model": "POWERNODE EDGE (N230) + OBERON 3",
+   "type": {
+    "key": "",
+    "da": "Stereosystem til TV"
+   },
+   "cat": "",
+   "url": "/n230-oberon3/",
+   "price": 0,
+   "was": 0,
+   "img": "",
+   "parts": []
   },
   {
    "sku": "N230-OPTICON1MK2",

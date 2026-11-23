@@ -134,7 +134,7 @@
    "code": "DALIOBERON1-DENRCDN12DAB",
    "ribbons": [
     {
-     "text": "Spar 12%",
+     "text": "Spar 24%",
      "ribbonType": "discount",
      "link": {
       "title": "",
@@ -187,15 +187,15 @@
     }
    ],
    "priceDetails": {
-    "price": 7797,
-    "priceFormatted": "7.797,-",
+    "price": 6797,
+    "priceFormatted": "6.797,-",
     "priceBefore": 8897,
     "priceBeforeFormatted": "8.897,-",
-    "priceSavingsFormatted": "1.100,-",
+    "priceSavingsFormatted": "2.100,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 7797,
+    "unitPrice": 6797,
     "unitPriceBefore": 8897
    },
    "bundleProducts": [
@@ -240,7 +240,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 969,
+        "availableQuantity": 931,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.498,-",
@@ -418,11 +418,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 330,
+        "availableQuantity": 328,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.299,-",
-       "priceRaw": 5299,
+       "priceFormatted": "4.299,-",
+       "priceRaw": 4299,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -441,11 +441,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 440,
+        "availableQuantity": 435,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.299,-",
-       "priceRaw": 5299,
+       "priceFormatted": "4.299,-",
+       "priceRaw": 4299,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -622,15 +622,15 @@
         ]
        }
       },
-      "rating": 4.67439165701043,
-      "count": 863,
-      "reviewCount": 466,
+      "rating": 4.67358708189158,
+      "count": 867,
+      "reviewCount": 468,
       "distribution": {
        "1": 4,
        "2": 6,
-       "3": 29,
+       "3": 30,
        "4": 189,
-       "5": 635
+       "5": 638
       }
      }
     }
@@ -638,21 +638,21 @@
    "sellableOnWeb": true,
    "inventoryStatus": {
     "description": "Ukendt leveringstid",
-    "numberOfStoresExperience": 7
+    "numberOfStoresExperience": 6
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.7126185266229,
-   "count": 1371,
-   "reviewCount": 699,
+   "rating": 4.712,
+   "count": 1375,
+   "reviewCount": 701,
    "distribution": {
     "1": 6,
     "2": 7,
-    "3": 39,
+    "3": 40,
     "4": 271,
-    "5": 1048
+    "5": 1051
    }
   },
   "boxContent": [],

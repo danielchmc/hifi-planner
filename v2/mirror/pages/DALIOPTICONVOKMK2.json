@@ -325,7 +325,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 41,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -428,7 +428,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 13,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -491,6 +491,35 @@
     "url": "/opticon-speakers-5-1/"
    },
    {
+    "modelType": "Hjemmebio-system",
+    "price": {
+     "price": 19646,
+     "priceFormatted": "19.646,-",
+     "priceBefore": 24096,
+     "priceBeforeFormatted": "24.096,-",
+     "priceSavingsFormatted": "4.450,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 19646,
+     "unitPriceBefore": 24096
+    },
+    "image": "https://images.hifiklubben.com/image/40111e48-aaff-492f-8036-ad21bc84e303",
+    "ribbons": [
+     {
+      "text": "Spar 18%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Denon AVR-X2900H DAB + DALI OPTICON 1 MK2 + OPTICON VOKAL MK2 + BERLIN SUB 10",
+    "url": "/denavrx2900h-daliopticon1mk2-3.1/"
+   },
+   {
     "modelType": "Højtalersystem",
     "price": {
      "price": 21194,
@@ -518,35 +547,6 @@
     ],
     "title": "DALI OPTICON 1 MK2 5.1",
     "url": "/dali-opticon-1-mk2-5-1/"
-   },
-   {
-    "modelType": "Hjemmebio-system",
-    "price": {
-     "price": 20946,
-     "priceFormatted": "20.946,-",
-     "priceBefore": 24096,
-     "priceBeforeFormatted": "24.096,-",
-     "priceSavingsFormatted": "3.150,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 20946,
-     "unitPriceBefore": 24096
-    },
-    "image": "https://images.hifiklubben.com/image/40111e48-aaff-492f-8036-ad21bc84e303",
-    "ribbons": [
-     {
-      "text": "Spar 13%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Denon AVR-X2900H DAB + DALI OPTICON 1 MK2 + OPTICON VOKAL MK2 + BERLIN SUB 10",
-    "url": "/denavrx2900h-daliopticon1mk2-3.1/"
    }
   ],
   "displayBookDemo": true,

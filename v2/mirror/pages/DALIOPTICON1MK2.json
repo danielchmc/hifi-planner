@@ -236,7 +236,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 76,
+     "availableQuantity": 68,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -474,7 +474,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 52,
+     "availableQuantity": 64,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -521,6 +521,35 @@
   "featureLogos": [],
   "testGroups": [],
   "bundleRelations": [
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 15497,
+     "priceFormatted": "15.497,-",
+     "priceBefore": 20197,
+     "priceBeforeFormatted": "20.197,-",
+     "priceSavingsFormatted": "4.700,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 15497,
+     "unitPriceBefore": 20197
+    },
+    "image": "https://images.hifiklubben.com/image/2748fcd9-2626-4c49-8335-10fead718651",
+    "ribbons": [
+     {
+      "text": "Spar 23%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "NAD C700 V2 + Dali Opticon 1 Mk2",
+    "url": "/nad-c700-opticon1/"
+   },
    {
     "modelType": "Stereosystem til TV",
     "price": {
@@ -580,23 +609,23 @@
     "url": "/opticon-speakers-5-1/"
    },
    {
-    "modelType": "Stereosystem til TV",
+    "modelType": "Hjemmebio-system",
     "price": {
-     "price": 10497,
-     "priceFormatted": "10.497,-",
-     "priceBefore": 12897,
-     "priceBeforeFormatted": "12.897,-",
-     "priceSavingsFormatted": "2.400,-",
+     "price": 19646,
+     "priceFormatted": "19.646,-",
+     "priceBefore": 24096,
+     "priceBeforeFormatted": "24.096,-",
+     "priceSavingsFormatted": "4.450,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 10497,
-     "unitPriceBefore": 12897
+     "unitPrice": 19646,
+     "unitPriceBefore": 24096
     },
-    "image": "https://images.hifiklubben.com/image/57d88505-21c2-4c1b-834c-102c871ef1ca",
+    "image": "https://images.hifiklubben.com/image/40111e48-aaff-492f-8036-ad21bc84e303",
     "ribbons": [
      {
-      "text": "Spar 19%",
+      "text": "Spar 18%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -605,8 +634,8 @@
       }
      }
     ],
-    "title": "N230-OPTICON1MK2",
-    "url": "/n230-opticon1mk2/"
+    "title": "Denon AVR-X2900H DAB + DALI OPTICON 1 MK2 + OPTICON VOKAL MK2 + BERLIN SUB 10",
+    "url": "/denavrx2900h-daliopticon1mk2-3.1/"
    },
    {
     "modelType": "Højtalersystem",
@@ -667,52 +696,23 @@
     "url": "/blsn331-opticon1mk2/"
    },
    {
-    "modelType": "Hjemmebio-system",
-    "price": {
-     "price": 20946,
-     "priceFormatted": "20.946,-",
-     "priceBefore": 24096,
-     "priceBeforeFormatted": "24.096,-",
-     "priceSavingsFormatted": "3.150,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 20946,
-     "unitPriceBefore": 24096
-    },
-    "image": "https://images.hifiklubben.com/image/40111e48-aaff-492f-8036-ad21bc84e303",
-    "ribbons": [
-     {
-      "text": "Spar 13%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Denon AVR-X2900H DAB + DALI OPTICON 1 MK2 + OPTICON VOKAL MK2 + BERLIN SUB 10",
-    "url": "/denavrx2900h-daliopticon1mk2-3.1/"
-   },
-   {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 18497,
-     "priceFormatted": "18.497,-",
-     "priceBefore": 20197,
-     "priceBeforeFormatted": "20.197,-",
+     "price": 10497,
+     "priceFormatted": "10.497,-",
+     "priceBefore": 12197,
+     "priceBeforeFormatted": "12.197,-",
      "priceSavingsFormatted": "1.700,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 18497,
-     "unitPriceBefore": 20197
+     "unitPrice": 10497,
+     "unitPriceBefore": 12197
     },
-    "image": "https://images.hifiklubben.com/image/2748fcd9-2626-4c49-8335-10fead718651",
+    "image": "https://images.hifiklubben.com/image/57d88505-21c2-4c1b-834c-102c871ef1ca",
     "ribbons": [
      {
-      "text": "Spar 8%",
+      "text": "Spar 14%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -721,8 +721,8 @@
       }
      }
     ],
-    "title": "NAD C700 V2 + Dali Opticon 1 Mk2",
-    "url": "/nad-c700-opticon1/"
+    "title": "N230-OPTICON1MK2",
+    "url": "/n230-opticon1mk2/"
    },
    {
     "modelType": "Møbel med anlæg",

@@ -8,13 +8,13 @@
    "cats": {
     "HiFi > Stereo systemer": 50
    },
-   "count": 51,
-   "bundles": 51,
+   "count": 52,
+   "bundles": 52,
    "outlet": 0,
    "products": 0,
    "inCatalogue": 0,
    "variantAxes": {
-    "none": 51
+    "none": 52
    },
    "mapped": null,
    "hifiPlanner": []
@@ -469,28 +469,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Videoprojektor",
-   "keys": {
-    "VideoProjector": 19
-   },
-   "cats": {
-    "TV > Projektor": 19
-   },
-   "count": 19,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 19,
-   "inCatalogue": 19,
-   "variantAxes": {
-    "colorOptions": 18,
-    "dropDown": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
-  },
-  {
    "type": "USB-kabel",
    "keys": {
     "USBCabel": 16
@@ -510,6 +488,28 @@
    "mapped": "cable",
    "hifiPlanner": [
     "Cable: usb"
+   ]
+  },
+  {
+   "type": "Videoprojektor",
+   "keys": {
+    "VideoProjector": 18
+   },
+   "cats": {
+    "TV > Projektor": 18
+   },
+   "count": 18,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 18,
+   "inCatalogue": 18,
+   "variantAxes": {
+    "colorOptions": 17,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
    ]
   },
   {

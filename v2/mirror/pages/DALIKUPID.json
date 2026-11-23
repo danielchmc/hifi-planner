@@ -232,7 +232,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 196,
+     "availableQuantity": 198,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -339,7 +339,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 142,
+     "availableQuantity": 140,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -440,7 +440,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 112,
+     "availableQuantity": 110,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -551,7 +551,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 140,
+     "availableQuantity": 138,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -828,35 +828,6 @@
     "url": "/dalikupid-sonamp/"
    },
    {
-    "modelType": "Stereosystem til TV",
-    "price": {
-     "price": 7697,
-     "priceFormatted": "7.697,-",
-     "priceBefore": 8397,
-     "priceBeforeFormatted": "8.397,-",
-     "priceSavingsFormatted": "700,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 7697,
-     "unitPriceBefore": 8397
-    },
-    "image": "https://images.hifiklubben.com/image/fae108de-f828-4256-b582-71eac2a3373f",
-    "ribbons": [
-     {
-      "text": "Spar 8%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Kupid + Bluesound N230",
-    "url": "/dalikupid-blsn230/"
-   },
-   {
     "modelType": "Pladespiller system",
     "price": {
      "price": 7096,
@@ -913,6 +884,21 @@
     ],
     "title": "ARGTTMK2 + DALIKUPID + ARGSA2",
     "url": "/argttmk2-dalikupid-argsa2/"
+   },
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 7697,
+     "priceFormatted": "7.697,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 7697,
+     "unitPriceBefore": 7697
+    },
+    "image": "https://images.hifiklubben.com/image/fae108de-f828-4256-b582-71eac2a3373f",
+    "title": "Kupid + Bluesound N230",
+    "url": "/dalikupid-blsn230/"
    },
    {
     "modelType": "Stereosystem til TV",
