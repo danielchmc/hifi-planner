@@ -35,8 +35,11 @@
         h('.cv-contact', null, h('small', null, t('Your adviser', 'Din rådgiver')), h('b', null, cv.s || ''), h('span', null, sh[0] || ''),
           sh[1] ? h('span', null, t('Tel. ', 'Tlf. ') + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null),
         o && o.qr ? h('.cv-qr', null, h('span', { html: o.qr }), h('span.cv-qrtext', null, h('b', null, t('Scan to see your proposal on your phone', 'Scan og se dit tilbud på mobilen')),
-          h('small', null, t('Drawing, products and prices, with links to hifiklubben.dk', 'Tegning, produkter og priser, med links til hifiklubben.dk'))))
-          : o && o.qrTooBig ? h('.cv-qr.none', null, h('small', null, t('Ask your adviser for a link to this proposal.', 'Bed din rådgiver om et link til tilbuddet.'))) : null),
+          h('small', null, t('Drawing, products and prices, with links to hifiklubben.dk', 'Tegning, produkter og priser, med links til hifiklubben.dk')),
+          // the same page as a link, for a customer reading the PDF on a screen (clickable in the PDF)
+          o.link ? h('a.cv-link', { href: o.link, target: '_blank', rel: 'noopener' }, t('Or open it here: see the proposal online ↗', 'Eller åbn det her: se tilbuddet online ↗')) : null))
+          : o && o.qrTooBig ? h('.cv-qr.none', null, h('small', null, t('Ask your adviser for a link to this proposal.', 'Bed din rådgiver om et link til tilbuddet.')),
+            o.link ? h('a.cv-link', { href: o.link, target: '_blank', rel: 'noopener' }, t('In the PDF: see the proposal online ↗', 'I PDF\'en: se tilbuddet online ↗')) : null) : null),
       h('.cv-note', null, t('Prices valid on ', 'Priser gælder d. ') + (cv.d || HP.today()) + t('. Subject to misprints and stock.', '. Med forbehold for trykfejl og udsolgte varer.')));
   }
 
@@ -47,9 +50,9 @@
     store.commit();
   }
   async function qrFor() {
-    const url = await HP.share.customerUrl(null, true);
-    try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url }; }
-    catch (e) { return { qrTooBig: true, url }; }
+    const url = await HP.share.customerUrl(null, true), link = await HP.share.customerUrl(); // QR: #q=; the clickable link: #t=
+    try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url, link }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url, link }; }
+    catch (e) { return { qrTooBig: true, url, link }; }
   }
 
   /* ---------- print dialog ---------- */

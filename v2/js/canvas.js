@@ -500,7 +500,7 @@
         if (sku) selbar.append(h('button.sku', { title: t('Copy item number', 'Kopiér varenummer'), onclick: () => HP.copyText(sku, t('Item number copied: ', 'Varenr. kopieret: ') + sku) }, h('span', null, sku), icon('copy')));
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
         if (p && HP.imagesOf(p, one).length > 1) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
-        if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Colour', 'Farve'), (e) => C.colourMenu(one.id, e.currentTarget)));
+        if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Variant', 'Variant'), (e) => C.colourMenu(one.id, e.currentTarget)));
       }
       if (one && one.kind === 'text') selbar.append(
         btn('text', t('Title', 'Titel'), () => C.toggleNotePart(one.id, 'title'), (one.noTitle ? '' : '.on') + (one.noBody ? '.locked' : '')),
@@ -752,11 +752,20 @@
   }
 
   /* ================= operations ================= */
+  // a product sold in several variants (colours, finishes) never goes on the canvas as the bare product: it gets the variant
+  // asked for (a colour's SKU searched for, the colour picked in the Katalog, a bundle's colour), else the one whose SKU is the
+  // product's own (the website's default), else the first
+  const variantFor = (p, want) => {
+    const vs = (p && p.vars) || [];
+    if (!vs.length) return null;
+    return (want && vs.find((x) => x.sku === want)) || vs.find((x) => x.sku === p.sku) || vs[0];
+  };
+  C.variantFor = variantFor;
   C.addProduct = (pid, wx, wy, vsku) => {
     const p = cat.get(pid), d = store.doc; if (!p) return null;
     const s = cardScale(), w = cardW(p) * s, hh = (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
-    if (vsku && (p.vars || []).some((x) => x.sku === vsku)) it.v = vsku; // added from a search for a colour's own SKU
+    const v = variantFor(p, vsku); if (v) it.v = v.sku; // the colour searched for, else the default variant
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
@@ -769,7 +778,7 @@
     const rw = rows.map((r) => r.reduce((a, x) => a + W(x), 0) + G * (r.length - 1)), rh = rows.map((r) => Math.max(...r.map(H)));
     const c = centerWorld(), totH = rh.reduce((a, b) => a + b, 0) + G * (rows.length - 1);
     let y = c.y - totH / 2; const ids = [];
-    rows.forEach((r, ri) => { let x = c.x - rw[ri] / 2; r.forEach((e) => { const it = { id: HP.uid(), kind: 'product', pid: e.p.id, x: snap(x), y: snap(y), face: 0 }; if (e.v && (e.p.vars || []).some((q) => q.sku === e.v)) it.v = e.v; d.items.push(it); ids.push(it.id); x += W(e) + G; }); y += rh[ri] + G; });
+    rows.forEach((r, ri) => { let x = c.x - rw[ri] / 2; r.forEach((e) => { const it = { id: HP.uid(), kind: 'product', pid: e.p.id, x: snap(x), y: snap(y), face: 0 }; { const v = variantFor(e.p, e.v); if (v) it.v = v.sku; } d.items.push(it); ids.push(it.id); x += W(e) + G; }); y += rh[ri] + G; });
     store.sel = new Set(ids); store.selConn = null; store.commit();
     return ids;
   };
@@ -827,7 +836,7 @@
     const ids = new Map();
     devs.forEach((x) => {
       const pl = place.get(x.uid), it = { id: HP.uid(), kind: 'product', pid: x.p.id, x: snap(ox + pl.x), y: snap(oy + pl.y), face: 0, sy: b.sku };
-      if (x.v && (x.p.vars || []).some((y) => y.sku === x.v)) it.v = x.v;
+      { const v = variantFor(x.p, x.v); if (v) it.v = v.sku; }
       ids.set(x.uid, it.id); d.items.push(it);
     });
     wires.forEach((w) => d.conns.push({ id: HP.uid(), a: { item: ids.get(w.a.uid), key: w.a.key }, b: { item: ids.get(w.b.uid), key: w.b.key }, cable: null, shift: 0 }));
@@ -889,7 +898,7 @@
       return true;
     });
     it.x = snap(it.x + (measure(it).w - cardW(newP) * cardScale()) / 2);
-    it.pid = pid; it.face = 0; delete it.v; store.sel = new Set([id]); store.selConn = null; store.commit();
+    it.pid = pid; it.face = 0; delete it.v; { const v = variantFor(cat.get(pid)); if (v) it.v = v.sku; } store.sel = new Set([id]); store.selConn = null; store.commit();
     const msg = (oldP.name || '?') + ' → ' + newP.name + '. ' + (kept + lost === 0 ? '' : lost
       ? t(kept + ' connection(s) kept, ' + lost + ' removed (no matching port).', kept + ' forbindelse(r) bevaret, ' + lost + ' fjernet (ingen matchende port).')
       : t('All ' + kept + ' connection(s) kept.', 'Alle ' + kept + ' forbindelse(r) bevaret.'));
@@ -1061,7 +1070,7 @@
   C.colourMenu = (id, anchor, x, y) => {
     const it = store.item(id), p = it && cat.get(it.pid); if (!p || !(p.vars || []).length) return;
     const r = anchor ? anchor.getBoundingClientRect() : null;
-    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Colour / finish', 'Farve / finish') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
+    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Variant', 'Variant') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
   };
   C.inspect = (id) => { const it = store.item(id); if (it && it.kind === 'product') HP.panels.viewer(it.pid, it.face || 0, (face) => { if ((it.face || 0) !== face) { it.face = face; store.commit(); } }, it); };
 
@@ -1098,7 +1107,7 @@
       M.push({ head: one ? (p ? p.brand + ' ' + p.name : one.kind === 'plan' ? t('Floor plan', 'Plantegning') : one.kind === 'prices' ? t('Price list', 'Prisliste') : one.kind === 'mark' ? markTitle(one.k) : one.kind === 'legend' ? t('Legend', 'Signaturforklaring') : one.kind === 'zone' ? t('Room', 'Rum') + (one.name ? ': ' + one.name : '') : one.kind === 'run' ? t('Cable run', 'Kabeltræk') + (d.sc ? ' · ' + fmtM(runPx(one) / d.sc) : '') : t('Text', 'Tekst')) : ids.length + ' ' + t('items selected', 'elementer markeret') });
       if (p) {
         add(t('Replace…', 'Udskift…'), 'Alt+R', 'swap', () => HP.panels.replacePicker(one.id));
-        if ((p.vars || []).length > 1) add(t('Colour / finish…', 'Farve / finish…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'Alt+C', 'layers', () => C.colourMenu(one.id, null, x, y));
+        if ((p.vars || []).length > 1) add(t('Variant…', 'Variant…') + (HP.variantOf(p, one) ? ' (' + HP.variantOf(p, one).label + ')' : ''), 'Alt+C', 'layers', () => C.colourMenu(one.id, null, x, y));
         if (full && HP.imagesOf(p, one).length > 1) add(t('Flip front/back', 'Vend for/bag'), 'Alt+B', 'flip', () => C.flip(one.id));
         if (full && HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
         add(t('Related products…', 'Relaterede produkter…'), '', 'plus', () => HP.complete.open({ pid: p.id }), { accent: true });
