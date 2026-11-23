@@ -235,6 +235,23 @@
     return best.filter((x, i) => best.findIndex((y) => y.code === x.code) === i);
   }
 
+  /* ---- adapters in a chain: a cable, then an adapter (a Y-splitter, an extender) between the cable and the port ----
+     An adapter is a cable product with a female end and a male end (eg ['f','m'] etc.): the cable's plug goes into its female
+     end, its male end into the port. Example: SUB OUT (1 RCA F) → sub cable (1 RCA M–M) → Y-Split 1F/2M → LINE IN L+R (2 RCA F).
+     The chain is checked as two links, the cable to the adapter's socket and the adapter to the port. */
+  const isAdapter = (p) => !!(p && p.cable && Array.isArray(p.eg) && p.eg.includes('f') && p.eg.includes('m'));
+  // the adapter's socket as a port: what the cable plugs into (as a socket) and what the adapter's male end sees (as a plug)
+  function adapterSocket(ad, side) {
+    const pl = cablePlugs(ad); if (!pl) return null;
+    const i = pl.findIndex((x) => x.g === 'f'); if (i < 0) return null;
+    return { label: ad.name, sig: '', conn: pl[i].conn, g: side === 'plug' ? 'm' : 'f', ch: pl[i].ch, i };
+  }
+  // does the adapter's male end fit the in port b, with its socket fed by a plug from out port a? 2 = fits, 0 = not
+  const adapterFit = (ad, a, b) => { const x = adapterSocket(ad, 'plug'); if (!x) return 0; x.sig = (a && a.sig) || ''; return cableFit(ad, x, b) === 2 && !plugIssues(ad, x, b).length ? 2 : 0; };
+  // the cable's far end goes into the adapter's socket: the port the cable is checked against
+  const adapterTarget = (ad, b) => { const x = adapterSocket(ad, 'socket'); if (x) x.sig = (b && b.sig) || ''; return x; };
+  const chainIssues = (cable, ad, a, b) => (ad ? (cable ? plugIssues(cable, a, adapterTarget(ad, b)) : []).concat(adapterFit(ad, a, b) ? [] : [{ code: 'adapter', en: 'The adapter does not fit this port', da: 'Adapteren passer ikke til porten' }]) : plugIssues(cable, a, b));
+
   /* ---- replacing a card: map each used port of the old product to the new one ---- */
   function mapPorts(oldPorts, newPorts, usedKeys) {
     const map = {}, taken = new Set();
@@ -322,5 +339,5 @@
     return out;
   }
 
-  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire, AUDIO, plug, cablePlugs, plugText, plugCore, plugIssues };
+  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire, AUDIO, plug, cablePlugs, plugText, plugCore, plugIssues, isAdapter, adapterFit, adapterTarget, chainIssues };
 })();

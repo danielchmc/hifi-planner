@@ -903,3 +903,8 @@ body.viewing > #app { display: none; }
 .nvar-txt { font: 600 10.5px var(--mono); color: var(--muted); white-space: nowrap; max-width: 96px; overflow: hidden; text-overflow: ellipsis; }
 .kat-sw .sw:has(.swt) { width: auto; min-width: 30px; padding: 0 6px; } .kat-sw .swt { font: 600 10.5px var(--mono); white-space: nowrap; max-width: 90px; overflow: hidden; text-overflow: ellipsis; color: var(--fg); }
 html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
+
+/* v4.15: adapters in the cable picker; dropping a cable on a wire */
+.conn-head .adline { flex-basis: 100%; display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 12px; }
+.conn-head .adline select { max-width: 320px; }
+.wire.drop-cable .line { stroke-width: 6; stroke: var(--accent); }

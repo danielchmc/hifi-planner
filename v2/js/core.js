@@ -352,7 +352,7 @@
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
       items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
-      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key]; if (c.cable || c.shift || c.lv || c.m) r.push(c.cable || 0); if (c.shift || c.lv || c.m) r.push(Math.round((c.shift || 0) / 5)); if (c.lv || c.m) r.push(c.lv || 0, c.m || 0); return r; }), // [.., cable, shift, length SKU, metres]
+      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [c.cable || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, c.ad || 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
       doc.cv ? [doc.cv.c || '', doc.cv.s || '', doc.cv.sh || [], doc.cv.d || ''].concat(doc.cv.r === 0 ? [0] : []) : 0]; // cover: customer, adviser, shop [name, phone, email], date
   }
@@ -364,7 +364,7 @@
       : r[0] === 5 ? { id: ids[n], kind: 'zone', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, name: r[5] }
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
-    const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}) }));
+    const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}), ...(r[8] ? { ad: r[8] } : {}) }));
     const cv = a[10] ? { c: a[10][0], s: a[10][1], sh: a[10][2], d: a[10][3], r: a[10][4] === 0 ? 0 : 1 } : null;
     return Object.assign(cv ? { cv } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }

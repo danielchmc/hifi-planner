@@ -112,7 +112,7 @@
     function fillSelects() {
       const keepBrand = brandSel.value;
       brandSel.textContent = ''; brandSel.append(h('option', { value: '' }, t('All brands', 'Alle brands')));
-      [...new Set(cat.products().map((p) => p.brand))].sort((a, b) => a.localeCompare(b)).forEach((b) => brandSel.append(h('option', { value: b }, b)));
+      [...new Set(cat.list.map((p) => p.brand))].sort((a, b) => a.localeCompare(b)).forEach((b) => brandSel.append(h('option', { value: b }, b)));
       brandSel.value = keepBrand;
     }
     const groupOf = (g) => (HP.CAT_TREE.find((x) => x[0] === g) || [0, []])[1];
@@ -156,7 +156,8 @@
     function filter() {
       hl = -1;
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
-      const base = cat.products().filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
+      // every product, cables included: a cable dropped on a wire (or added with a connection selected) goes on that connection
+      const base = cat.list.filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
       const sysAll = cat.systems();
       const sysBase = sysAll.length ? sysAll.filter((b) => words.every((w) => hayOf(b).includes(w)) && (!bv || b.brand === bv || b.parts.some((x) => cat.get(x.id).brand === bv))) : null;
       if (group === SYS && !sysBase) group = '';
@@ -198,8 +199,10 @@
         const r = productRow(p, null, v); anim(r);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
-        r._add = () => { C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };
-        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y)));
+        // a cable with a connection selected goes on that connection; anything else is added as a card
+        const onConn = () => p.cable && store.selConn && store.doc.conns.some((c) => c.id === store.selConn);
+        r._add = () => { if (onConn()) return C().setConnCable(store.selConn, p.id); C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };
+        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { if (onConn()) return C().setConnCable(store.selConn, p.id); C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y, p.id)));
         list.append(r);
         rows.push({ p, r });
       });
@@ -429,7 +432,18 @@
     let showAll = false;
     // the chosen cable, with its length: lv = the website length (a cable without its own card for that length), m = metres for
     // cable sold by the metre. The last length used is remembered and pre-selected next time.
-    const pick = (id, o) => { c.cable = id; delete c.lv; delete c.m; if (o && o.lv) c.lv = o.lv; if (o && o.m) c.m = o.m; if (o && o.len) LS.set('cableLen', o.len); store.commit(); close(); };
+    const pick = (id, o) => { c.cable = id; delete c.lv; delete c.m; if (o && o.lv) c.lv = o.lv; if (o && o.m) c.m = o.m; if (o && o.len) LS.set('cableLen', o.len);
+      if (id && ad) c.ad = ad.id; else delete c.ad; store.commit(); close(); };
+    // an adapter in the chain (a Y-splitter, an extender): offered when one fits the in port; the cables are then matched to the
+    // adapter's socket instead of the port. E.g. SUB OUT → sub cable → Y-Split 1F/2M → the subwoofer's LINE IN L and R.
+    // only adapters that some cable can reach cleanly from the out port (a DIN socket is no use after an RCA output)
+    const plainCables = cat.cables().filter((p) => !p.gone && !P.isAdapter(p));
+    const reachable = (ad) => { const x = P.adapterTarget(ad, b); return plainCables.some((p) => P.cableFit(p, a, x) === 2 && !P.plugIssues(p, a, x).length); };
+    const adapters = cat.cables().filter((p) => !p.gone && P.isAdapter(p) && P.adapterFit(p, a, b) && reachable(p)).sort((x, y) => (x.price || 0) - (y.price || 0));
+    let ad = c.ad ? adapters.find((p) => p.id === c.ad) || null : null;
+    const target = () => (ad ? P.adapterTarget(ad, b) : b);
+    const adSel = adapters.length ? h('select.adsel', { onchange: (e) => { ad = adapters.find((p) => p.id === e.target.value) || null; sel = null; useBtn.disabled = true; summary.textContent = t('Choose a cable and a length', 'Vælg et kabel og en længde'); summary.classList.add('muted'); draw(); } },
+      h('option', { value: '' }, t('No adapter', 'Intet adapter')), adapters.map((p) => h('option', { value: p.id, selected: ad && ad.id === p.id }, p.brand + ' ' + p.name + ' · ' + HP.money(HP.priceOf(p).price)))) : null;
     // a click only selects: sel = { key, id, o, name, price }. The summary in the footer shows it, and "Use cable" (or Enter,
     // or a double-click) commits it, so a length can be compared with the others before it goes on the connection.
     let sel = null;
@@ -440,7 +454,7 @@
       sel = s;
       list.querySelectorAll('.cablegroup').forEach((g) => { const on = g.dataset.key === s.group; g.classList.toggle('picked', on); g.querySelectorAll('button.len').forEach((b) => b.classList.toggle('on', on && b.dataset.k === s.key)); });
       summary.textContent = ''; summary.classList.remove('muted');
-      summary.append(h('b', null, s.name), ' · ' + HP.money(s.price));
+      summary.append(h('b', null, s.name), ad ? ' + ' + ad.name : '', ' · ' + HP.money(s.price + (ad ? HP.priceOf(ad).price : 0)));
       useBtn.disabled = false;
     };
     const isPerMetre = (p) => (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()));
@@ -499,7 +513,8 @@
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       const hits = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w))));
-      const all = groupsOf(hits).map((G) => { const fit = P.cableFit(G.rep, a, b); return Object.assign(G, { fit, issues: fit ? P.plugIssues(G.rep, a, b) : [] }); }); // by the cable's two ends, then its plugs
+      const tb = target(); // the in port, or the adapter's socket
+      const all = groupsOf(hits.filter((p) => !P.isAdapter(p) || !ad)).map((G) => { const fit = P.cableFit(G.rep, a, tb); return Object.assign(G, { fit, issues: fit ? P.plugIssues(G.rep, a, tb) : [] }); }); // by the cable's two ends, then its plugs
       list.textContent = '';
       const sec = (title, items) => { if (!items.length) return; list.append(h('.sec', null, title + ' (' + items.length + ')'));
         items.sort((x, y) => (x.issues.length - y.issues.length) || x.min - y.min).forEach((G) => list.append(groupRow(G))); }; // plugs that fit first
@@ -514,10 +529,11 @@
       body: [h('.conn-head', null, h('span.pill.c-' + P.colorOf(a), null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + P.colorOf(b), null, b.label),
         h('span.muted', null, P.plug(a, 'out') || P.plug(b, 'in') ? [Pn.plugChip(P.plug(a, 'out') || { conn: P.conn(a.conn, a) }), h('span.pc-arrow', null, '→'), Pn.plugChip(P.plug(b, 'in') || { conn: P.conn(b.conn, b) })]
           : P.CONNECTORS[P.conn(a.conn, a)] + (P.conn(a.conn, a) !== P.conn(b.conn, b) ? ' → ' + P.CONNECTORS[P.conn(b.conn, b)] : '')),
-        info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.'))),
+        info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.')),
+        adSel && h('label.adline', null, h('span.muted', null, t('With adapter', 'Med adapter')), adSel, h('small.muted', null, t('e.g. a Y-splitter to feed both inputs', 'fx et Y-stik til begge indgange')))),
         h('.searchbox.pad', null, icon('search', 15), q), list],
       foot: [h('button.btn.danger', { onclick: () => { store.selConn = c.id; C().deleteSelection(); close(); } }, icon('trash', 14), t('Delete connection', 'Slet forbindelse')), h('.spacer'),
-        c.cable && h('button.btn', { onclick: () => pick(null) }, t('Remove cable', 'Fjern kabel')), h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), useBtn] });
+        (c.cable || c.ad) && h('button.btn', { onclick: () => { ad = null; pick(null); } }, t('Remove cable', 'Fjern kabel')), h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), useBtn] });
     // the choice is shown in a bar above the buttons
     useBtn.closest('.modal-foot').before(h('.selbar', null, summary));
     q.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' && sel) commit(); });

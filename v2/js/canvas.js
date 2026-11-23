@@ -205,7 +205,10 @@
       for (let i = have; i < mc[pid]; i++) add(p, false, null);
     }
     // a wire's cable: in the chosen length (lv), or by the metre (m metres, counted per started metre like cable runs)
-    d.conns.forEach((c) => { const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true, null, true); } else add(p, true, c.lv ? { len: c.lv } : null); });
+    d.conns.forEach((c) => {
+      const ad = c.ad && cat.get(c.ad); if (ad) add(ad, true); // the adapter in the chain (a Y-splitter…)
+      const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true, null, true); } else add(p, true, c.lv ? { len: c.lv } : null);
+    });
     cableRows().forEach((r) => { if (r.k && d.sc) for (let i = 0; i < r.qty; i++) add(cat.get(r.k), true); });
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
     return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
@@ -371,9 +374,9 @@
   const portDef = (itemId, side, key) => { const it = store.item(itemId), p = it && cat.get(it.pid); return p && (p[side] || []).find((x) => x.key === key); };
   function connInfo(c) {
     const a = portDef(c.a.item, 'out', c.a.key), b = portDef(c.b.item, 'in', c.b.key);
-    const cable = c.cable ? cat.get(c.cable) : null;
-    return { a, b, conn: a ? P.conn(a.conn, a) : 'other', color: a ? P.colorOf(a) : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn)), cable,
-      plugs: cable && a && b ? P.plugIssues(cable, a, b) : [] }; // male/female or mono/stereo that does not fit
+    const cable = c.cable ? cat.get(c.cable) : null, ad = c.ad ? cat.get(c.ad) : null;
+    return { a, b, conn: a ? P.conn(a.conn, a) : 'other', color: a ? P.colorOf(a) : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn) && !ad), cable, ad,
+      plugs: (cable || ad) && a && b ? P.chainIssues(cable, ad, a, b) : [] }; // male/female or mono/stereo that does not fit (through the adapter, if any)
   }
   C.connInfo = connInfo;
 
@@ -421,12 +424,14 @@
       g.append(svg('path', { class: 'hit', d: dd }), svg('path', { class: 'line', d: dd }));
       wiresSvg.append(g);
       [[c.a, 'out'], [c.b, 'in']].forEach(([e, side]) => { const el = els.get(e.item), pe = el && el.querySelector('.port.' + side + '[data-key="' + e.key + '"]'); if (pe) pe.classList.add('on'); });
-      if (info.cable || info.warn) {
+      if (info.cable || info.ad || info.warn) {
         const pw = info.plugs.length, bad = info.warn || pw;
+        const adTxt = info.ad ? ' + ' + C.stripLen(info.ad.name).replace(/\s+-\s+/g, ' ') : '';
         chipsEl.append(h('.chip.c-' + info.color + (bad ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
-          title: (info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : t('Connector types do not match', 'Stiktyperne passer ikke sammen'))
+          title: (info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : info.ad ? '' : t('Connector types do not match', 'Stiktyperne passer ikke sammen'))
+            + (info.ad ? (info.cable ? '\n+ ' : '') + info.ad.brand + ' ' + info.ad.name + ' · ' + HP.money(HP.priceOf(info.ad).price) : '')
             + (pw ? '\n⚠ ' + info.plugs.map((x) => t(x.en, x.da)).join('\n⚠ ') : '') },
-          bad ? h('span.no-print', null, icon('warn', 11)) : null, info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
+          bad ? h('span.no-print', null, icon('warn', 11)) : null, (info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : info.ad ? '' : t('Mismatch', 'Passer ikke')) + (info.cable ? adTxt : adTxt.slice(3))));
       }
     });
   }
@@ -797,10 +802,32 @@
     const r = el.getBoundingClientRect(), ix = r.width * 0.2, iy = r.height * 0.2;
     return cx > r.left + ix && cx < r.right - ix && cy > r.top + iy && cy < r.bottom - iy ? el : null;
   };
-  C.dragHover = (cx, cy) => { const el = cx == null || store.doc.ci ? null : cardAt(cx, cy); world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace'); };
+  // a cable dragged from the product list onto a wire goes on that connection (an adapter such as a Y-splitter goes in its chain)
+  const wireAt = (cx, cy) => { if (cx == null) return null; const hit = document.elementFromPoint(cx, cy); const w = hit && (hit.closest('.wire') || hit.closest('.chip[data-id]')); return w ? store.doc.conns.find((c) => c.id === (w.dataset.id || w.getAttribute('data-id'))) : null; };
+  C.dragHover = (cx, cy, pid) => {
+    const p = pid && cat.get(pid), conn = p && p.cable && !store.doc.ci ? wireAt(cx, cy) : null;
+    const el = cx == null || store.doc.ci || conn ? null : cardAt(cx, cy);
+    world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace');
+    wiresSvg && wiresSvg.querySelectorAll('.wire.drop-cable').forEach((x) => x.classList.remove('drop-cable'));
+    if (conn) { const g = wiresSvg.querySelector('.wire[data-id="' + conn.id + '"]'); if (g) g.classList.add('drop-cable'); }
+  };
+  C.setConnCable = (connId, pid) => {
+    const c = store.doc.conns.find((x) => x.id === connId), p = cat.get(pid); if (!c || !p) return;
+    if (P.isAdapter(p)) c.ad = pid;
+    else {
+      c.cable = pid; delete c.lv; delete c.m;
+      const perM = (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()));
+      if (perM) c.m = Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3));
+    }
+    store.selConn = c.id; store.sel = new Set(); store.commit();
+    const is = P.chainIssues(c.cable ? cat.get(c.cable) : null, c.ad ? cat.get(c.ad) : null, connInfo(c).a, connInfo(c).b);
+    HP.toast((P.isAdapter(p) ? t('Adapter added to the connection', 'Adapter sat på forbindelsen') : t('Cable put on the connection', 'Kablet er sat på forbindelsen')) + (is.length ? ' · ⚠ ' + t(is[0].en, is[0].da) : ''),
+      { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
   C.dropProduct = (pid, cx, cy, vsku) => {
-    const r = vp.getBoundingClientRect(), el = cardAt(cx, cy);
+    const r = vp.getBoundingClientRect(), conn = (cat.get(pid) || {}).cable && !store.doc.ci ? wireAt(cx, cy) : null, el = conn ? null : cardAt(cx, cy);
     C.dragHover(null);
+    if (conn) return C.setConnCable(conn.id, pid);
     if (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) return;
     if (store.doc.ci) { const w = toWorld(cx, cy); return C.placeMark(pid, w.x, w.y); }
     if (el) return C.replaceItem(el.dataset.id, pid);
@@ -1114,7 +1141,7 @@
       const c = d.conns.find((q) => q.id === store.selConn);
       M.push({ head: t('Connection', 'Forbindelse') });
       add(t('Choose cable…', 'Vælg kabel…'), 'Enter', 'cable', () => HP.panels.cablePicker(store.selConn));
-      if (c && c.cable) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; delete c.lv; delete c.m; store.commit(); });
+      if (c && (c.cable || c.ad)) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; delete c.lv; delete c.m; delete c.ad; store.commit(); });
       add(t('Straighten wire', 'Ret ledningen ud'), '', 'fit', () => { c.shift = 0; store.commit(); }, { disabled: !c || !c.shift });
       add(t('Delete connection', 'Slet forbindelse'), 'Del', 'trash', C.deleteSelection, { danger: true });
       M.push('sep');
@@ -1215,7 +1242,7 @@
       if (n.kind === 'run' && n.cable && !cat.get(n.cable)) n.cable = null;
       d.items.push(n);
     });
-    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0, ...(c.cable && c.lv ? { lv: c.lv } : {}), ...(c.cable && c.m ? { m: c.m } : {}) }); });
+    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0, ...(c.cable && c.lv ? { lv: c.lv } : {}), ...(c.cable && c.m ? { m: c.m } : {}), ...(c.ad && cat.get(c.ad) ? { ad: c.ad } : {}) }); });
     d.mk = (d.mk || []).concat((S.mk || []).filter((k) => !(d.mk || []).includes(k))); // keep the Shortcut's letters (A, B, C…) where possible
     normMarks(); store.sel = new Set(Object.values(map).filter((id) => store.item(id))); store.selConn = null; store.commit();
     if (exact) C.fit();
