@@ -185,6 +185,7 @@
       // a cable's lengths are one row (like a product's variants): the length searched for, else the length used last
       { const seen = new Map(), out = [];
         hits.forEach((x) => {
+          if (cat.lenGoneHidden(x.p)) return;
           const f = cat.family(x.p); if (f.length < 2) return out.push(x);
           const k = cat.familyKey(x.p), have = seen.get(k);
           const typed = words.some((w) => /\d/.test(w)) && words.every((w) => x.p._hay.includes(w)); // "black lab 3m": that length
@@ -564,21 +565,29 @@
     store.doc.conns.forEach((c) => { if (c.a.item === itemId) used.out.push(c.a.key); if (c.b.item === itemId) used.in.push(c.b.key); });
     const total = used.in.length + used.out.length;
     const q = h('input', { type: 'search', placeholder: t('Search products…', 'Søg produkter…'), oninput: draw, autofocus: true });
-    const same = h('input', { type: 'checkbox', checked: (old.cats || []).length > 0, onchange: draw });
+    // a cable is replaced by another cable (the same plugs at both ends when ticked), anything else by a product (the same category)
+    const isCable = !!old.cable, plugs = (p) => (p.ends || []).map((e) => P.conn(e)).sort().join('|'), oldFam = isCable ? cat.family(old) : [];
+    const same = h('input', { type: 'checkbox', checked: isCable ? (old.ends || []).length > 0 : (old.cats || []).length > 0, onchange: draw });
     const list = h('.plist.tall');
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       list.textContent = '';
-      const rows = cat.products().filter((p) => p.id !== old.id && words.every((w) => p._hay.includes(w)) && (!same.checked || (p.cats || []).some((x) => (old.cats || []).includes(x)))).map((p) => {
+      const sameAs = (p) => isCable ? plugs(p) === plugs(old) : (p.cats || []).some((x) => (old.cats || []).includes(x));
+      let rows = (isCable ? cat.list.filter((p) => p.cable && !p.gone && !oldFam.includes(p) && !cat.lenGoneHidden(p)) : cat.products()).filter((p) => p.id !== old.id && words.every((w) => p._hay.includes(w)) && (!same.checked || sameAs(p))).map((p) => {
         const kept = total ? used.out.filter((k) => P.mapPorts(old.out || [], p.out || [], used.out)[k]).length + used.in.filter((k) => P.mapPorts(old.in || [], p.in || [], used.in)[k]).length : 0;
         return { p, kept };
       }).sort((x, y) => y.kept - x.kept);
-      rows.slice(0, 200).forEach(({ p, kept }) => { const r = productRow(p, total ? h('span.keep' + (kept === total ? '.all' : kept ? '' : '.none'), null, kept + '/' + total) : null); r.onclick = () => { close(); C().replaceItem(itemId, p.id); }; list.append(r); });
+      if (isCable) { // one row per cable, at the card's length when that cable has it
+        const seen = new Set(), len = cat.lenOf(old);
+        rows = rows.filter(({ p }) => { const k = cat.familyKey(p); if (seen.has(k)) return false; seen.add(k); return true; })
+          .map((x) => { const f = cat.family(x.p); return f.length > 1 ? Object.assign({}, x, { p: f.find((y) => cat.lenOf(y) === len) || cat.familyPick(f), fam: f }) : x; });
+      }
+      rows.slice(0, 200).forEach(({ p, kept, fam }) => { const r = productRow(p, total ? h('span.keep' + (kept === total ? '.all' : kept ? '' : '.none'), null, kept + '/' + total) : null, null, fam); r.onclick = () => { close(); C().replaceItem(itemId, p.id); }; list.append(r); });
       if (!rows.length) list.append(h('.empty', null, t('No products match.', 'Ingen produkter matcher.')));
     }
     const close = HP.modal({ title: t('Replace ', 'Udskift ') + old.name, size: 'md', flush: true,
       body: [h('.conn-head', null, h('span.muted', null, total ? t('Connections are carried over by matching port names. The badge shows how many of the ' + total + ' survive.', 'Forbindelser føres med via matchende portnavne. Mærket viser, hvor mange af de ' + total + ' der bevares.') : t('This card has no connections yet.', 'Dette kort har ingen forbindelser endnu.'))),
-        h('.searchbox.pad', null, icon('search', 15), q, h('label.check', null, same, t('Same category', 'Samme kategori'))), list] });
+        h('.searchbox.pad', null, icon('search', 15), q, h('label.check', null, same, isCable ? t('Same plugs', 'Samme stik') : t('Same category', 'Samme kategori'))), list] });
     draw();
   };
 

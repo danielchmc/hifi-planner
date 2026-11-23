@@ -16,15 +16,20 @@
     if (size === 'hd' && /^img\/[^/]+$/.test(u || '')) return 'img/hd/' + u.slice(4);
     return u || '';
   };
+  // what to try when the local copy is missing, in order, separated by spaces: the website's picture in that size, then its
+  // small one (the one the product list shows, usually already in the browser's cache)
   S.fallback = (u, size) => {
     const m = HK.exec(u || '');
-    if (m) return 'https://images.hifiklubben.com/image/' + m[1] + '/' + (PRESET[size] || 'pdp_d') + '/x.jpg';
+    if (m) { const at = (p) => 'https://images.hifiklubben.com/image/' + m[1] + '/' + p + '/x.jpg', own = PRESET[size] || 'pdp_d'; return own === 'pcs' ? at('pcs') : at(own) + ' ' + at('pcs'); }
     return size === 'hd' ? u : '';
   };
-  // onerror handler for <img>: try the fallback once, then hide
+  // onerror handler for <img>: try the next fallback, then hide. images.hifiklubben.com sometimes neither sends a large size
+  // nor fails (the request hangs); a picture that has not come in 4 s moves on to the next fallback too.
   S.onerr = function () {
-    const fb = this.dataset.fb;
-    if (fb && this.src !== fb) { this.dataset.fb = ''; this.src = fb; } else this.classList.add('broken');
+    const rest = (this.dataset.fb || '').split(' ').filter((x) => x && x !== this.src);
+    if (!rest.length) { this.dataset.fb = ''; return this.classList.add('broken'); }
+    const next = rest.shift(); this.dataset.fb = rest.join(' '); this.src = next;
+    if (rest.length) setTimeout(() => { if (this.src === next && !(this.complete && this.naturalWidth)) S.onerr.call(this); }, 4000);
   };
 
   /* ---------- website product types (modelType, Danish) -> HiFi Planner ---------- */

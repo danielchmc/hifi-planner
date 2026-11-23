@@ -245,6 +245,9 @@
     }
     return fam.get(p) || [p];
   };
+  // a card for a length the website no longer sells (lenGone; kept so older drawings open) is left out of the lists when its
+  // cable's other lengths are a family there
+  cat.lenGoneHidden = (p) => !!(p && p.lenGone && p.site && cat.list.some((x) => x !== p && x.site === p.site && cat.family(x).length > 1));
   cat.familyKey = (p) => { const f = cat.family(p); return f.length > 1 ? f[0].id : p.id; };
   // the length to show or add first: the length used last (remembered in the cable picker), else the shortest of at least 1 m
   cat.familyPick = (f) => { const last = +HP.LS.get('cableLen', 0); return (last && f.find((x) => cat.lenOf(x) >= last)) || f.find((x) => cat.lenOf(x) >= 1) || f[0]; };
