@@ -10065,7 +10065,8 @@
     {
      "sku": "ARGBERLINSUB10WH",
      "label": "Hvid",
-     "price": 6699,
+     "price": 5399,
+     "was": 6699,
      "colorKey": "White",
      "ean": "5706957021444",
      "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10wh/",
@@ -10081,7 +10082,8 @@
     {
      "sku": "ARGBERLINSUB10BK",
      "label": "Sort",
-     "price": 6699,
+     "price": 5399,
+     "was": 6699,
      "colorKey": "Black",
      "ean": "5706957021420",
      "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10bk/",
@@ -10097,7 +10099,8 @@
     {
      "sku": "ARGBERLINSUB10WA",
      "label": "Træfarvet",
-     "price": 6699,
+     "price": 5399,
+     "was": 6699,
      "colorKey": "Wood",
      "ean": "5706957021437",
      "url": "/argon-audio-berlin-sub-10-subwoofer/argberlinsub10wa/",
@@ -10186,7 +10189,8 @@
     {
      "sku": "ARGBERLINSUB12BK",
      "label": "Sort",
-     "price": 7999,
+     "price": 6399,
+     "was": 7999,
      "colorKey": "Black",
      "ean": "5706957021451",
      "url": "/argon-audio-berlin-sub-12-subwoofer/argberlinsub12bk/",
@@ -10202,7 +10206,8 @@
     {
      "sku": "ARGBERLINSUB12WA",
      "label": "Træfarvet",
-     "price": 7999,
+     "price": 6399,
+     "was": 7999,
      "colorKey": "Wood",
      "ean": "5706957021468",
      "url": "/argon-audio-berlin-sub-12-subwoofer/argberlinsub12wa/",
@@ -10218,7 +10223,8 @@
     {
      "sku": "ARGBERLINSUB12WH",
      "label": "Hvid",
-     "price": 7999,
+     "price": 6399,
+     "was": 7999,
      "colorKey": "White",
      "ean": "5706957021475",
      "url": "/argon-audio-berlin-sub-12-subwoofer/argberlinsub12wh/",
@@ -11781,22 +11787,6 @@
      }
     },
     {
-     "sku": "ARGFORTEA5WIFIBK",
-     "label": "Sort",
-     "price": 6499,
-     "colorKey": "Black",
-     "ean": "5706957014798",
-     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifibk/",
-     "img": "hk:d588f8c2-0971-4bce-b52d-920753e6b911",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "10",
-      "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "ARGFORTEA5WIFIWA",
      "label": "Valnød",
      "price": 6499,
@@ -11809,6 +11799,22 @@
       "Vægt (kg)": "9",
       "Vægt emballage (kg)": "10",
       "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGFORTEA5WIFIBK",
+     "label": "Sort",
+     "price": 6499,
+     "colorKey": "Black",
+     "ean": "5706957014798",
+     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifibk/",
+     "img": "hk:d588f8c2-0971-4bce-b52d-920753e6b911",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "9",
+      "Vægt emballage (kg)": "10",
+      "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
       "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
      }
     },
@@ -14712,13 +14718,13 @@
      }
     },
     {
-     "sku": "ARGTTMK2BTBL",
-     "label": "Blå",
+     "sku": "ARGTTMK2BTELAM",
+     "label": "Gul",
      "price": 2299,
-     "colorKey": "Blue",
-     "ean": "5706957022809",
-     "url": "/argon-audio-tt-mk2-bt-pladespiller/argttmk2btbl/",
-     "img": "hk:eaeb5ef1-9a96-44a0-a66d-f97496ef1acb",
+     "colorKey": "Yellow",
+     "ean": "5706957022816",
+     "url": "/argon-audio-tt-mk2-bt-pladespiller/argttmk2btelam/",
+     "img": "hk:1dfdbca1-7a74-4ca5-9975-bf307e171b4e",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,9",
@@ -14727,13 +14733,13 @@
      }
     },
     {
-     "sku": "ARGTTMK2BTELAM",
-     "label": "Gul",
+     "sku": "ARGTTMK2BTBL",
+     "label": "Blå",
      "price": 2299,
-     "colorKey": "Yellow",
-     "ean": "5706957022816",
-     "url": "/argon-audio-tt-mk2-bt-pladespiller/argttmk2btelam/",
-     "img": "hk:1dfdbca1-7a74-4ca5-9975-bf307e171b4e",
+     "colorKey": "Blue",
+     "ean": "5706957022809",
+     "url": "/argon-audio-tt-mk2-bt-pladespiller/argttmk2btbl/",
+     "img": "hk:eaeb5ef1-9a96-44a0-a66d-f97496ef1acb",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,9",
@@ -19543,10 +19549,12 @@
     },
     {
      "sku": "BOH100BL",
-     "label": "",
+     "label": "Blå",
      "price": 12490,
+     "colorKey": "Blue",
      "ean": "5705260134315",
      "url": "/bang--olufsen-beoplay-h100-traadloest-headset/boh100bl/",
+     "img": "hk:0bb91727-a0a1-449c-b4bb-e545460db0f5",
      "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
      "specs": {
       "Vægt (kg)": "0,37",
@@ -28971,7 +28979,7 @@
     {
      "sku": "BWPX8BK",
      "label": "Sort",
-     "price": 3999,
+     "price": 3499,
      "colorKey": "Black",
      "ean": "0714346337859",
      "url": "/bowers--wilkins-px8-traadloest-headset/bwpx8bk/",
@@ -28986,7 +28994,7 @@
     {
      "sku": "BWPX8TAN",
      "label": "Beige",
-     "price": 3999,
+     "price": 3499,
      "colorKey": "Beige",
      "ean": "0714346337880",
      "url": "/bowers--wilkins-px8-traadloest-headset/bwpx8tan/",
@@ -29001,7 +29009,7 @@
     {
      "sku": "BWPX8BUR",
      "label": "Royal Burgundy",
-     "price": 3999,
+     "price": 3499,
      "colorKey": "Red",
      "hex": "#69494e",
      "ean": "0714346342648",
@@ -29017,7 +29025,7 @@
     {
      "sku": "BWPX8DARKFOREST",
      "label": "Grøn",
-     "price": 3999,
+     "price": 3499,
      "colorKey": "Green",
      "ean": "0714346348923",
      "url": "/bowers--wilkins-px8-traadloest-headset/bwpx8darkforest/",
@@ -29266,7 +29274,7 @@
      "SONYWH1000XX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWZEPPELING4WBX",
@@ -29307,11 +29315,11 @@
    },
    "rel": {
     "acc": [
-     "BWZEPPELING4",
-     "BWZEPPELING5"
+     "BWZEPPELING5",
+     "BWZEPPELING4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWZEPPELING5",
@@ -29399,13 +29407,13 @@
      "BLSP230",
      "BLSPULSEMINI2I",
      "JBLCOVEX1",
+     "SONERA100PRO",
      "BOEMERGE",
      "BOA5",
-     "BOLEVEL",
-     "SONERA100PRO"
+     "BOLEVEL"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CANVASUNIT",
@@ -29465,7 +29473,7 @@
     "Standby strømforbrug": "<2 watt"
    },
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CANVASZENMIC",
@@ -29501,7 +29509,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC05AX",
@@ -29540,7 +29548,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC05BX",
@@ -29570,7 +29578,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC05CX",
@@ -29673,7 +29681,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC220-2",
@@ -29752,15 +29760,15 @@
    "specs": {},
    "rel": {
     "acc": [
+     "CLICCM15",
      "CLIC05AX",
+     "CLICD21",
      "CLICC21",
      "CLICWALLBRACKET",
-     "CLICCM15",
-     "CLICD21",
      "CLICD22"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC240",
@@ -29844,7 +29852,7 @@
      "CLICWALLBRACKET"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLIC242",
@@ -29922,7 +29930,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICC21",
@@ -30008,8 +30016,8 @@
    "specs": {},
    "rel": {
     "acc": [
-     "CLIC211",
      "CLIC221-2",
+     "CLIC211",
      "CLIC231",
      "CLIC212",
      "CLIC222-2",
@@ -30020,7 +30028,7 @@
      "CLIC410"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICC23",
@@ -30067,7 +30075,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICD21",
@@ -30158,7 +30166,7 @@
      "CLIC410"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICDRAWER37,5",
@@ -30235,7 +30243,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICDRAWER4555",
@@ -30310,7 +30318,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICSTAND1",
@@ -30370,7 +30378,7 @@
      "CLIC230S"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICSTAND2",
@@ -30431,7 +30439,7 @@
      "CLIC111"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICSTAND3",
@@ -30487,7 +30495,7 @@
      "CLIC232"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "CLICWALLBRACKET",
@@ -30544,7 +30552,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMCSTZ200",
@@ -30617,7 +30625,7 @@
      "SENIE900"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTW170A",
@@ -30683,7 +30691,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTW180B",
@@ -30754,7 +30762,7 @@
      "BWPI8MCLAREN"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTW200C",
@@ -30820,7 +30828,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTW300B",
@@ -30856,7 +30864,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTW400CMX",
@@ -30922,7 +30930,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "COMTGTWO220C",
@@ -30988,7 +30996,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIALTECOC1",
@@ -31090,7 +31098,7 @@
      "DENAVRX1800HDAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIBASUBC8D",
@@ -31221,9 +31229,9 @@
      "DALISUBE12F",
      "ARGMALMOSUB6X",
      "BWASW610M",
-     "SONYSASW9",
      "BWASW608M",
-     "KEFKUBE8MIE"
+     "KEFKUBE8MIE",
+     "SONYSASW9"
     ],
     "rec": [
      "DALISONIK1",
@@ -31238,7 +31246,7 @@
      "ARGFORUS5X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIBLUOSNPM2IX",
@@ -31281,7 +31289,7 @@
      "DALIHDMIAUDIOX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALICDLETTHEHARDTIMX",
@@ -31318,12 +31326,12 @@
    "specs": {},
    "rel": {
     "alt": [
-     "DALICDVOLUME6X",
      "BRODALIDEMOCDX5",
-     "DALIREFELCTORCD"
+     "DALIREFELCTORCD",
+     "DALICDVOLUME6X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALICDVOLUME6X",
@@ -31365,7 +31373,7 @@
      "DALIREFELCTORCD"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALICONE",
@@ -31401,7 +31409,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPICONSTD",
@@ -31443,7 +31451,7 @@
      "DALIEPICONVOK"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPIKORE11",
@@ -31566,7 +31574,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPIKORE3",
@@ -31706,7 +31714,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPIKORE3STD",
@@ -31746,7 +31754,7 @@
      "DALIEPIKORE3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPIKORE7",
@@ -31886,7 +31894,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIEPIKORE9",
@@ -32024,7 +32032,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFAZONSAT",
@@ -32114,7 +32122,7 @@
      "DENAVRX2800H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFRAMEM675",
@@ -32156,7 +32164,7 @@
      "DALIPHANTOMM675"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFRAMES180",
@@ -32197,7 +32205,7 @@
      "DALIPHANTOMS180"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFRAMES280",
@@ -32238,7 +32246,7 @@
      "DALIPHANTOMS280"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFRAMES80",
@@ -32279,7 +32287,7 @@
      "DALIPHANTOMS80"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIFRAMM250375",
@@ -32321,7 +32329,7 @@
      "DALIPHANTOMM375"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIGARDIANOW6",
@@ -32401,7 +32409,7 @@
      "MARAMODELM1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIHDMIAUDIOX",
@@ -32427,7 +32435,7 @@
      "ean": "5703120112145",
      "url": "/dali-hdmi-audio-module-opgradering/dalihdmiaudio/",
      "img": "hk:a5685d36-dff5-44de-a438-0168216d2bb2",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,45",
       "Vægt emballage (kg)": "1",
@@ -32449,7 +32457,7 @@
      "DALIBLUOSNPM2IX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIIO12",
@@ -32546,7 +32554,7 @@
      "LUXX8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIIO6",
@@ -32627,7 +32635,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "DALIIO8",
@@ -38866,13 +38874,13 @@
      }
     },
     {
-     "sku": "DALISONIKONWALLWA",
-     "label": "Walnut",
+     "sku": "DALISONIKONWALLNOA",
+     "label": "Natural Oak",
      "price": 5198,
      "colorKey": "Wood",
-     "ean": "5703120116280",
-     "url": "/dali-sonik-on-wall-vaeghoejtaler/dalisonikonwallwa/",
-     "img": "hk:ad35e205-b9c9-485f-85a5-aa1ed5f276c2",
+     "ean": "5703120116273",
+     "url": "/dali-sonik-on-wall-vaeghoejtaler/dalisonikonwallnoa/",
+     "img": "hk:e9c41f74-7982-48bf-8d8a-2a21ce8a9ed2",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "4,8",
@@ -38882,13 +38890,13 @@
      }
     },
     {
-     "sku": "DALISONIKONWALLNOA",
-     "label": "Natural Oak",
+     "sku": "DALISONIKONWALLWA",
+     "label": "Walnut",
      "price": 5198,
      "colorKey": "Wood",
-     "ean": "5703120116273",
-     "url": "/dali-sonik-on-wall-vaeghoejtaler/dalisonikonwallnoa/",
-     "img": "hk:e9c41f74-7982-48bf-8d8a-2a21ce8a9ed2",
+     "ean": "5703120116280",
+     "url": "/dali-sonik-on-wall-vaeghoejtaler/dalisonikonwallwa/",
+     "img": "hk:ad35e205-b9c9-485f-85a5-aa1ed5f276c2",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "4,8",
@@ -44132,7 +44140,8 @@
     {
      "sku": "DIRACART",
      "label": "Licens",
-     "price": 1999,
+     "price": 1599,
+     "was": 1999,
      "colorKey": "Blue",
      "ean": "7350182130020",
      "url": "/dirac-live-active-room-treatment-licens/diracart/",
@@ -44192,7 +44201,8 @@
     {
      "sku": "DIRACBASSCONTROL",
      "label": "Licens",
-     "price": 1999,
+     "price": 1599,
+     "was": 1999,
      "colorKey": "Blue",
      "ean": "7350182130013",
      "url": "/dirac-live-bass-control-licens/diracbasscontrol/",
@@ -44252,7 +44262,8 @@
     {
      "sku": "DIRACLIMUPGRADE",
      "label": "Licens",
-     "price": 699,
+     "price": 559,
+     "was": 699,
      "colorKey": "Blue",
      "ean": "7350182130044",
      "url": "/dirac-room-correction-limited-to-full-licens/diraclimupgrade/",
@@ -44308,7 +44319,8 @@
     {
      "sku": "DIRACMULTIFULL",
      "label": "Licens",
-     "price": 2299,
+     "price": 1839,
+     "was": 2299,
      "colorKey": "Blue",
      "ean": "7350182130037",
      "url": "/dirac-live-room-correction-multichannel-devices-licens/diracmultifull/",
@@ -44367,7 +44379,8 @@
     {
      "sku": "DIRACSTEREOFULL",
      "label": "Licens",
-     "price": 1699,
+     "price": 1359,
+     "was": 1699,
      "colorKey": "Blue",
      "ean": "7350182130006",
      "url": "/dirac-live-room-correction-stereo-devices-licens/diracstereofull/",
@@ -57103,7 +57116,7 @@
     "da": "Kompakt højtaler – Aktive"
    },
    "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/kef-lsx-ii-lt-kompakt-hoejtaler--aktive/keflsx2ltstwh/",
+   "url": "/kef-lsx-ii-lt-kompakt-hoejtaler--aktive/keflsx2ltgrgrey/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -57114,23 +57127,6 @@
     "wifi": true
    },
    "variants": [
-    {
-     "sku": "KEFLSX2LTSTWH",
-     "label": "Hvid",
-     "price": 6333,
-     "was": 7690,
-     "colorKey": "White",
-     "ean": "637203050473",
-     "url": "/kef-lsx-ii-lt-kompakt-hoejtaler--aktive/keflsx2ltstwh/",
-     "img": "hk:9699c242-d553-4964-a200-f7935ae358f0",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "6,8",
-      "Vægt emballage (kg)": "9",
-      "Mål (emballage)": "47,5 x 25,5 x 32 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "15,5 x 24 x 18 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "KEFLSX2LTGRGREY",
      "label": "Grå",
@@ -57146,6 +57142,23 @@
       "Vægt (kg)": "6,8",
       "Vægt emballage (kg)": "8,95",
       "Mål (emballage)": "30 x 25,3 x 47,5 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "15,5 x 24 x 18 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "KEFLSX2LTSTWH",
+     "label": "Hvid",
+     "price": 6333,
+     "was": 7690,
+     "colorKey": "White",
+     "ean": "637203050473",
+     "url": "/kef-lsx-ii-lt-kompakt-hoejtaler--aktive/keflsx2ltstwh/",
+     "img": "hk:9699c242-d553-4964-a200-f7935ae358f0",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "6,8",
+      "Vægt emballage (kg)": "9",
+      "Mål (emballage)": "47,5 x 25,5 x 32 cm (bredde x højde x dybde)",
       "Mål (produkt)": "15,5 x 24 x 18 cm (bredde x højde x dybde)"
      }
     },
@@ -61296,7 +61309,7 @@
     {
      "sku": "MARAAV20BK",
      "label": "Sort",
-     "price": 43000,
+     "price": 42995,
      "colorKey": "Black",
      "ean": "0747192145590",
      "url": "/marantz-av-20-surround-processor/maraav20bk/",
@@ -62549,7 +62562,7 @@
     {
      "sku": "MARACTON3BLUE",
      "label": "Midnight Blue",
-     "price": 1499,
+     "price": 1399,
      "was": 2290,
      "colorKey": "Blue",
      "ean": "7340055408196",
@@ -62620,7 +62633,7 @@
     {
      "sku": "MARACTON4BK",
      "label": "Sort",
-     "price": 2139,
+     "price": 2182,
      "colorKey": "Black",
      "ean": "7340055416931",
      "url": "/marshall-acton-iv-traadloes-hoejtaler/maracton4bk/",
@@ -63726,7 +63739,7 @@
     {
      "sku": "MARASTEREO70SBK",
      "label": "Sort",
-     "price": 6995,
+     "price": 6990,
      "colorKey": "Black",
      "ean": "0747192140274",
      "url": "/marantz-stereo-70s-receiver/marastereo70sbk/",
@@ -65053,7 +65066,8 @@
     {
      "sku": "MARMONITOR3ANCCREAM",
      "label": "Cream",
-     "price": 2499,
+     "price": 1499,
+     "was": 2499,
      "colorKey": "Beige",
      "ean": "7340055411479",
      "url": "/marshall-monitor-iii-a.n.c.-traadloest-headset/marmonitor3anccream/",
@@ -65223,7 +65237,7 @@
     {
      "sku": "MARSTANMORE4BK",
      "label": "Sort",
-     "price": 2499,
+     "price": 2542,
      "colorKey": "Black",
      "ean": "7340055416900",
      "url": "/marshall-stanmore-iv-traadloes-hoejtaler/marstanmore4bk/",
@@ -77003,7 +77017,7 @@
     "da": "Micro RGB TV"
    },
    "cat": "/tv/tv/",
-   "url": "/samsung-r85h-micro-rgb-tv/samtmr55r85h/",
+   "url": "/samsung-r85h-micro-rgb-tv/samtmr65r85h/",
    "kind": "display",
    "scope": "diagram",
    "facets": {
@@ -79333,6 +79347,7 @@
      "sku": "SAMTQ77S90H",
      "label": "77\"",
      "price": 14999,
+     "was": 24999,
      "colorKey": "Black",
      "ean": "8806099008093",
      "url": "/samsung-s90h-oled-tv/samtq77s90h/",
@@ -92913,7 +92928,7 @@
     {
      "sku": "WAV4PROBK",
      "label": "Sort",
-     "price": 649,
+     "price": 599,
      "was": 999,
      "colorKey": "Black",
      "ean": "5745000424559",

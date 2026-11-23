@@ -47,13 +47,13 @@
    "cats": {
     "Højtaler > Trådløs / Bluetooth højtaler": 38
    },
-   "count": 38,
+   "count": 39,
    "bundles": 11,
-   "outlet": 0,
+   "outlet": 1,
    "products": 27,
    "inCatalogue": 27,
    "variantAxes": {
-    "colorOptions": 26,
+    "colorOptions": 27,
     "none": 11,
     "dropDown": 1
    },
@@ -1521,6 +1521,25 @@
    "hifiPlanner": []
   },
   {
+   "type": "Andet",
+   "keys": {
+    "Other": 5
+   },
+   "cats": {
+    "Tilbehør > Andet tilbehør": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 5
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
    "type": "Gulvstander",
    "keys": {
     "FloorStand": 5
@@ -1636,27 +1655,6 @@
    },
    "mapped": null,
    "hifiPlanner": []
-  },
-  {
-   "type": "Mini-LED TV",
-   "keys": {
-    "MiniLED": 5
-   },
-   "cats": {
-    "TV > TV": 5
-   },
-   "count": 5,
-   "bundles": 0,
-   "outlet": 2,
-   "products": 3,
-   "inCatalogue": 3,
-   "variantAxes": {
-    "sizeSelector": 5
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
   },
   {
    "type": "Opgradering",
@@ -1804,25 +1802,6 @@
    ]
   },
   {
-   "type": "Andet",
-   "keys": {
-    "Other": 4
-   },
-   "cats": {
-    "Tilbehør > Andet tilbehør": 4
-   },
-   "count": 4,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 4,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 4
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Blu-ray afspiller",
    "keys": {
     "BluRayPlayer": 4
@@ -1923,6 +1902,27 @@
    },
    "mapped": null,
    "hifiPlanner": []
+  },
+  {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 4
+   },
+   "cats": {
+    "TV > TV": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "sizeSelector": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
   },
   {
    "type": "Multirumsforstærker",

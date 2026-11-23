@@ -17,7 +17,7 @@
    "70255a12-4412-46ff-aa81-785b2dbcab9d",
    "402d5d7f-fed2-435a-8aa9-daf59937c9f4"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 162062,
@@ -109,12 +109,11 @@
      "productCode": "DALIHDMIAUDIO"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 28. november",
+     "deliveryDate": "2026-11-28T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
