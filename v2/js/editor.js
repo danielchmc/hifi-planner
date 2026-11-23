@@ -241,6 +241,10 @@
     function save() {
       cur.brand = cur.brand.trim(); cur.name = cur.name.trim();
       if (!cur.brand || !cur.name) return HP.toast(t('Brand and model name are required.', 'Brand og modelnavn skal udfyldes.'), { kind: 'err' });
+      // every product needs a SKU (it ties the planner to HiFi Klubben's other systems); only stand-ins (generic devices) have none
+      cur.sku = String(cur.sku || '').trim().toUpperCase();
+      const standIn = (cur.cats || []).some((c) => /stand-in/i.test(c) || c === '/tilbehor/pladsholdere/');
+      if (!cur.sku && !standIn) return HP.toast(t('A SKU is required: the item number on hifiklubben.dk. Products without one are discontinued.', 'SKU skal udfyldes: varenummeret på hifiklubben.dk. Produkter uden SKU er udgået.'), { kind: 'err' });
       if (isNew) { const base = P.slug(cur.brand + ' ' + cur.name); let id = base, i = 1; while (cat.get(id)) id = base + '-' + ++i; cur.id = id; }
       const out = Object.assign({}, cur, { img: cur.img.filter(Boolean), price: +cur.price || 0 });
       if (out._url && !out.url) out.url = out._url.replace(/^https?:\/\/www\.hifiklubben\.dk/, '');

@@ -218,7 +218,7 @@ if (fs.existsSync(ownFile)) {
   const outletSku = new Set();
   listing.forEach((r) => { const s = r.brandName ? SM.fromApi(r) : r; if (s.outlet) { if (s.sku) outletSku.add(U(s.sku)); (s.variants || []).forEach((v) => v.sku && outletSku.add(U(v.sku))); } else (s.variants || []).forEach((v) => v.outlet && v.sku && outletSku.add(U(v.sku))); });
   const sellsNew = (sku) => !!(sku && match.byLink({ site: sku }));
-  RT.outletGone = []; RT.siteGone = []; RT.frozenBack = [];
+  RT.outletGone = []; RT.siteGone = []; RT.frozenBack = []; RT.skuFilled = []; RT.noSku = [];
   const markGone = (p, o, key) => {
     const prev = prevById.get(o.id) || {};
     p.gone = prev.gone || p.gone || TODAY; // the date it was first seen gone, kept from build to build
@@ -260,6 +260,17 @@ if (fs.existsSync(ownFile)) {
     if (bt) p.bt = true; if (wifi) p.wifi = true;
     if (m) Object.defineProperty(p, '_web', { value: m.v.image || '', enumerable: false });
     if (o.cable) setEnds(p, o.ends, o.name, m ? wBySku.get(U(m.s.sku)) : null, o.cable, o);
+    // Every product has a SKU: it is what ties HiFi Planner to HiFi Klubben's other systems (order lines, stock, Business Central).
+    // A product linked to the website without one (it came from the old planner without a SKU, and was matched by name) gets the
+    // website's: the variant SKU when the card is one variant (a cable length), else the product SKU. A product that still has no
+    // SKU is discontinued (goneWhy 'nosku'); only our stand-ins (generic TV, amplifier…, not products for sale) have none.
+    if (!p.sku && m) { p.sku = (o.link && o.link.v) || m.s.sku; RT.skuFilled.push(o.brand + ' ' + o.name + ' → ' + p.sku); }
+    const standIn = (o.cats || []).some((c) => /stand-in/i.test(c) || c === '/tilbehor/pladsholdere/');
+    if (!p.sku && !standIn) {
+      const prev = prevById.get(o.id) || {};
+      p.gone = prev.gone || p.gone || TODAY; if (!p.goneWhy) p.goneWhy = 'nosku';
+      RT.noSku.push(o.brand + ' ' + o.name + ' (' + o.id + ')');
+    }
     return p;
   });
   // stock pictures: one local image file used by cards of 3 or more different website products (e.g. a generic RCA plug photo on
@@ -453,6 +464,8 @@ if (fs.existsSync(ownFile)) {
   if (RT.acc) P('**Accessories**: ' + RT.acc + ' products list accessories from the website (`acc`), offered by "Relaterede produkter".' + (RT.accRev ? ' From accessory pages\' recommended products: ' + RT.accRev[0] + ' links kept, ' + RT.accRev[1] + ' left out (the accessory does not belong to that kind of product, or both are accessories).' : ''), '');
   if (RT.systems) P('**Systems**: ' + RT.systems.n + ' of the website\'s bundles are in the sidebar\'s Systems section (`build/bundles.js`)' + (RT.systems.miss.length ? '; ' + RT.systems.miss.length + ' are not, because a part is not in the catalogue: ' + RT.systems.miss.slice(0, 30).join(', ') + (RT.systems.miss.length > 30 ? ', …' : '') : '') + '.', '');
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');
+  if (RT.skuFilled.length) P('**SKU taken from the website** (' + RT.skuFilled.length + '): linked products without a SKU of their own get the website\'s. Save them in the Editor to keep it in data/own.js.', '', ...RT.skuFilled.map((x) => '- ' + x), '');
+  if (RT.noSku.length) P('**No SKU: discontinued** (' + RT.noSku.length + '): every product needs a SKU (our stand-ins excepted). Give it one in the Editor, or leave it discontinued.', '', ...RT.noSku.map((x) => '- ' + x), '');
   if (RT.outletGone.length) P('**Only outlet units on the website** (' + RT.outletGone.length + '): marked discontinued (`gone`, `goneWhy: outlet`) until the website sells them new again.', '', ...RT.outletGone.map((x) => '- ' + x), '');
   if (RT.frozenBack.length) P('**Not linked, but the website sells them** (' + RT.frozenBack.length + '): left as they are (no price updates); link them to the website product in the Editor.', '', ...RT.frozenBack.map((x) => '- ' + x), '');
   if (RT.lenGone.length) P('**Length no longer sold, cable still sold** (' + RT.lenGone.length + '): the card follows the cable and offers its current lengths instead of being discontinued.', '', ...RT.lenGone.map((x) => '- ' + x), '');
