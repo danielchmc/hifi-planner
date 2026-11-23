@@ -47,7 +47,7 @@ The admin code only hides the admin tools; it is visible in the page source like
 
 ## Shop accounts and sellers
 
-Login is two steps: the shop number (from `data/config.js`), then the seller's own number (5–7 digits). The first time a shop is used on a PC, staff enter the shop's name, email and phone; the first time a seller number is used, its owner enters their name. Both are stored in that browser only. The A4 footer prints the shop's details and "Your adviser: <seller name>". The top bar shows the signed-in seller; click it to switch. Sellers already used on the PC are listed for one-click login and can be removed there.
+Login is two steps: the shop number, then the seller's own number (5–7 digits). Shop numbers on the list in `data/config.js` are known; a valid shop number that is not on the list can be created on the spot (*Butik … er ikke på listen endnu* → *Opret butik*, then the shop's details), and is then known on that PC. Anything else gets "Ukendt butiksnummer", as before. A created shop sends the event *Ny butik oprettet* (number and name) to the statistics, so a real one can be added to the list in `data/config.js`. The first time a shop is used on a PC, staff enter the shop's name, email and phone; the first time a seller number is used, its owner enters their name. Both are stored in that browser only. The A4 footer prints the shop's details and "Your adviser: <seller name>". The top bar shows the signed-in seller; click it to switch. Sellers already used on the PC are listed for one-click login and can be removed there.
 
 ## Shortcuts
 

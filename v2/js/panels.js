@@ -749,15 +749,21 @@
 
   /* ---------- login: shop number -> (shop account) -> seller number -> (name) ---------- */
   Pn.login = (then) => {
-    const known = (no) => HP.config.shops.includes(no), hasAccount = (no) => !!HP.shopProfile(no).name;
+    // a shop is known if it is on the list in data/config.js, or was created on this PC (it then has a profile)
+    const hasAccount = (no) => !!(no && HP.shopProfile(no).name), known = (no) => HP.config.shops.includes(no) || hasAccount(no);
     if (known(HP.shop()) && hasAccount(HP.shop()) && HP.seller()) return then();
     const card = h('.login-card', null, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' }));
     const ov = h('#login', null, card);
     const done = () => { ov.remove(); then(); };
-    const step2 = (no) => {
-      card.replaceChildren(card.firstChild, h('h2', null, t('Create shop account', 'Opret butikskonto')),
+    const step2 = (no, isNew) => {
+      card.replaceChildren(card.firstChild, h('h2', null, isNew ? t('New shop', 'Ny butik') : t('Create shop account', 'Opret butikskonto')),
         h('p.muted', null, t('First time on this PC for shop ' + no + '. Add the shop details shown on proposals.', 'Første gang på denne PC for butik ' + no + '. Tilføj butikkens oplysninger, som vises på tilbud.')),
-        Pn.shopForm(no, () => { LS.set('shop', no); step3(); }, t('Create account', 'Opret konto')),
+        Pn.shopForm(no, () => {
+          LS.set('shop', no);
+          // a shop not on the list: reported, so a real one can be added to data/config.js
+          if (isNew && HP.stat) HP.stat('Ny butik oprettet', { nummer: no, navn: HP.shopProfile(no).name || '' });
+          step3();
+        }, t('Create account', 'Opret konto')),
         h('button.link', { onclick: step1 }, t('Back', 'Tilbage')));
     };
     const step3 = () => {
@@ -787,7 +793,16 @@
     function step1() {
       const err = h('.err');
       const input = h('input', { placeholder: t('Shop number', 'Butiksnummer'), inputMode: 'numeric', autofocus: true, onkeydown: (e) => e.key === 'Enter' && go() });
-      const go = () => { const v = input.value.trim(); if (!known(v)) { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); return input.select(); } if (hasAccount(v)) { LS.set('shop', v); step3(); } else step2(v); };
+      // a number not on the list may be created, if it has the shape of a shop number; anything else gets the same plain
+      // "unknown" as before, without saying what a shop number looks like
+      const go = () => {
+        const v = input.value.trim();
+        if (known(v)) { if (hasAccount(v)) { LS.set('shop', v); step3(); } else step2(v); return; }
+        if (!/^\d{3}$/.test(v)) { err.textContent = t('Unknown shop number.', 'Ukendt butiksnummer.'); return input.select(); }
+        card.replaceChildren(card.firstChild, h('h2', null, t('Shop ', 'Butik ') + v),
+          h('p.muted', null, t('This shop is not on the list yet. Check that ' + v + ' is your shop number, then create the shop.', 'Butikken er ikke på listen endnu. Tjek, at ' + v + ' er dit butiksnummer, og opret så butikken.')),
+          h('.row', null, h('button.btn.primary', { onclick: () => step2(v, true) }, t('Create shop', 'Opret butik')), h('button.btn', { onclick: step1 }, t('Fix the number', 'Ret nummeret'))));
+      };
       card.replaceChildren(card.firstChild, h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Enter', 'Log ind'))), err);
       setTimeout(() => input.focus(), 50);
     }
