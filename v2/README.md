@@ -232,6 +232,15 @@ Every port is `{ key, label, sig, conn }`:
 
 Wiring two ports whose connectors do not normally go together (e.g. HDMI to RCA) shows a warning; common pairs joined by one cable (Minijack–RCA, Jack–RCA, DIN–RCA, USB-A–USB-B, Toslink–Mini-Toslink, RCA–XLR…) do not. When a card is replaced, connections are carried over by: same key → same signal and number → same signal → same connector type. `tools/io-migration-report.md` lists how each of the 409 old labels was renamed.
 
+## Usage statistics
+
+`js/stats.js` sends usage statistics to **Umami** (cloud.umami.is, free Hobby plan, cookieless, no consent banner needed) once a website id is set in `data/config.js` (`analytics: { umami: "<id>" }`; empty = off). Only from the live site (danielchmc.github.io / hifiplanner.dk over https), never from a local copy, and not from browsers that ask not to be tracked.
+
+- **Pages:** the planner counts as `/planner`, the customer view as `/kunde`. The drawing in a link (after `#`) is never sent. Umami's *Realtime* view shows who is on each right now.
+- **Events,** each with the shop number (planner) or the shop's name (customer view), never a seller's name or anything about the customer: *Login*, *Print* (with or without cover, related products on or off), *Ordrelinjer (CSV)*, *Kundelink kopieret*, *Katalog åbnet*, *System tilføjet*, *Relaterede produkter åbnet* / *tilføjet* (how many cables and accessories), *Kundeside åbnet*, *Kundeside: klik* (a product in the proposal, a related product, Ring, Mail).
+- Add an event elsewhere with `HP.stat('Name', { extra: 'value' })`; it is queued until Umami has loaded and never throws.
+- `index.html` also still loads Google Analytics (G-BW00S9FNRZ, the old planner's property), which sets cookies.
+
 ## Roadmap
 
 Ideas for what to build next are in `ROADMAP.md`.

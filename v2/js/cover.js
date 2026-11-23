@@ -62,6 +62,7 @@
     const st = () => { LS.set('coverRel', withRel.checked); stamp(name.value.trim(), withRel.checked); };
     const go = async () => {
       LS.set('cover', withCover.checked); st(); close();
+      HP.stat('Print', { forside: withCover.checked ? 'ja' : 'nej', relaterede: withRel.checked ? 'ja' : 'nej' });
       if (!withCover.checked) return C().print();
       C().print({ cover: build(await qrFor()) });
     };
@@ -70,7 +71,7 @@
       h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
       h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
       h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.'))),
-      foot: [h('button.btn', { onclick: () => { st(); csv(); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
+      foot: [h('button.btn', { onclick: () => { st(); csv(); HP.stat('Ordrelinjer (CSV)'); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
         h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), h('button.btn.primary', { onclick: go }, icon('print', 14), t('Print', 'Print'))] });
   }
 
@@ -130,6 +131,13 @@
     await new Promise((r) => setTimeout(r, 60));
     draw(); window.addEventListener('resize', fit);
     if (cv.r !== 0) { const rel = related(who); if (rel) page.append(rel); }
+    // statistics: the customer opened the page, and which links they follow (to hifiklubben.dk, to call or write the adviser)
+    HP.stat('Kundeside åbnet', { butik: shop });
+    page.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href]'); if (!a) return;
+      const kind = a.closest('.rel-tile') ? 'Relateret produkt' : /^tel:/.test(a.href) ? 'Ring' : /^mailto:/.test(a.href) ? 'Mail' : 'Produkt i tilbuddet';
+      HP.stat('Kundeside: klik', { hvad: kind, butik: shop });
+    });
     page.append(h('footer.view-foot', null,
       h('small', null, 'Din rådgiver'), h('b', null, cv.s || shop), h('span', null, shop),
       sh[1] ? h('span', null, 'Tlf. ' + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null, reach(),

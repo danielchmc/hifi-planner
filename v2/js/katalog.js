@@ -76,6 +76,7 @@
 
   /* ---------- building the page ---------- */
   function open(q) {
+    HP.stat('Katalog åbnet');
     // a search from the sidebar searches everything, like the website's search page; reopening without one keeps the filters
     if (q != null && q.trim() && q !== st.q) { st.sec = ''; st.cat = ''; st.types.clear(); }
     if (q != null) st.q = q;

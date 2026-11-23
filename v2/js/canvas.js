@@ -793,6 +793,7 @@
      P.autoWire (no cables: the seller picks them). Every card carries sy = the bundle's SKU, so the price list can price it as
      the bundle. Parts that are not drawn and wired (stands, a backbox) go in a row underneath. */
   C.addSystem = (sku, cx, cy) => {
+    HP.stat('System tilføjet');
     const b = cat.system(sku), d = store.doc; if (!b) return null;
     const r = vp.getBoundingClientRect();
     if (cx != null && (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom)) return null;

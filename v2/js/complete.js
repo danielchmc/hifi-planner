@@ -66,6 +66,7 @@
   };
 
   function open(opt) {
+    HP.stat('Relaterede produkter åbnet', { fra: opt && opt.pid ? 'kort' : 'tilbud' });
     const only = opt && opt.pid;
     const pids = [...new Set(store.doc.items.filter((i) => i.kind === 'product').map((i) => i.pid))];
     const conns = only ? missing().filter((c) => [c.a.item, c.b.item].some((id) => (store.item(id) || {}).pid === only)) : missing();
@@ -138,6 +139,7 @@
       });
       LS.set('cableFor', memo);
       const add = accs.filter((x) => x.on).map((x) => ({ id: x.p.id }));
+      HP.stat('Relaterede produkter tilføjet', { kabler: nc, tilbehor: add.length });
       if (add.length) C().addProducts(add); else store.commit();
       close();
       HP.toast([nc ? nc + ' ' + t(nc === 1 ? 'cable' : 'cables', nc === 1 ? 'kabel' : 'kabler') : '', add.length ? add.length + ' ' + t('accessories', 'tilbehør') : ''].filter(Boolean).join(' + ') + t(' added', ' tilføjet'), { kind: 'ok' });
