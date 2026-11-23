@@ -420,7 +420,7 @@
         chipsEl.append(h('.chip.c-' + info.color + (bad ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
           title: (info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : t('Connector types do not match', 'Stiktyperne passer ikke sammen'))
             + (pw ? '\n⚠ ' + info.plugs.map((x) => t(x.en, x.da)).join('\n⚠ ') : '') },
-          bad && h('span.no-print', null, icon('warn', 11)), info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
+          bad ? h('span.no-print', null, icon('warn', 11)) : null, info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
       }
     });
   }

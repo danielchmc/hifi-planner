@@ -568,6 +568,7 @@ a.plink { color: inherit; text-decoration: none; pointer-events: none; }
 /* v4.0: product list scrolls on (sentinel), cable picker selects before it commits */
 #sb-list .more { height: 1px; flex: none; }
 .cablegroup.picked { box-shadow: inset 3px 0 0 var(--fg); background: var(--hover, rgba(0,0,0,.035)); }
+.cablegroup.picked > .prow, .cablegroup.picked > .prow:hover { box-shadow: inset 3px 0 0 var(--fg); } /* the bar stays when the row is hovered */
 .selbar { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: 13px; min-height: 36px; }
 .selbar b { font-weight: 600; }
 
