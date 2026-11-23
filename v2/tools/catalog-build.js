@@ -420,7 +420,7 @@ if (fs.existsSync(ownFile)) {
       }));
     });
     const how = { hand: 'set by hand', name: 'from the name', type: 'from the website\'s cable type', guess: 'guessed (stereo, male–male)' };
-    const md = ['# Plugs: male/female and mono/stereo', '', 'Written by `tools/catalog-build.js`. Rules in `js/ports.js` (`plug`, `cablePlugs`, `plugIssues`) and `tools/cable-ends.js` (`derivePlugs`). Set anything wrong by hand in the Editor: a cable\'s ends (♂/♀, mono/stereo) or a port\'s plug.', '',
+    const md = ['# Plugs: male/female and mono/stereo', '', 'Written by `tools/catalog-build.js`. Rules in `js/ports.js` (`plug`, `cablePlugs`, `plugIssues`) and `tools/cable-ends.js` (`derivePlugs`). Set anything wrong by hand in the Editor: a cable\'s ends (M/F, mono/stereo) or a port\'s plug.', '',
       '## Cables', '', Object.entries(RT.plugs).map(([k, n]) => n + ' ' + (how[k] || k)).join(', ') || 'none', '',
       '### Cables that could not be decided (' + RT.plugsGuess.length + ')', '', ...(RT.plugsGuess.length ? RT.plugsGuess : ['None.']), '',
       '## Device ports', '', 'Sockets on devices are female (XLR outputs male); a port is stereo unless it carries a mono signal (sub, coaxial, digital, video, trigger, AES, mic) or its label names one channel (L, R, LFE, MONO).', '',

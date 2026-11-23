@@ -206,8 +206,10 @@
     const monoGuess = /\bsub(woofer)?\b|coax|digital|mono|\blfe\b/i.test(name) ? 1 : 2;
     return E.map((c, i) => ({ conn: c, g: (cable.eg && cable.eg[i]) || 'm', ch: (cable.ech && cable.ech[i]) || monoGuess }));
   }
-  const PLUG_TXT = { m: '♂', f: '♀' };
-  const plugText = (x) => (!x ? '' : !AUDIO.has(x.conn) ? CONNECTORS[x.conn] || x.conn : (x.conn === 'rca' || x.conn === 'xlr' ? (x.ch === 2 ? '2× ' : '1× ') + (CONNECTORS[x.conn] || x.conn) : (CONNECTORS[x.conn] || x.conn) + (x.ch === 2 ? ' stereo' : ' mono')) + ' ' + PLUG_TXT[x.g]);
+  // as text: "RCA ×2 M", "Minijack 3.5 mm stereo F" (M = male, a plug; F = female, a socket). The app shows it as a chip
+  // (Pn.plugChip in panels.js); the text is for tooltips and build/plugs.md.
+  const plugCore = (x) => (x.conn === 'rca' || x.conn === 'xlr' ? (CONNECTORS[x.conn] || x.conn) + ' ×' + (x.ch === 2 ? 2 : 1) : (CONNECTORS[x.conn] || x.conn) + (x.ch === 2 ? ' stereo' : ' mono'));
+  const plugText = (x) => (!x ? '' : !AUDIO.has(x.conn) ? CONNECTORS[x.conn] || x.conn : plugCore(x) + ' ' + x.g.toUpperCase());
   // what does not fit when this cable joins these two ports (out port a, in port b): [{ code, en, da }], empty when all is well.
   // The cable is turned the way its connectors fit; if both ways fit, the way with fewer problems.
   function plugIssues(cable, a, b) {
@@ -222,8 +224,8 @@
       const out = [];
       if (!p || !e) return out;
       const ech = e.ch === p.ch || e.ch === eff ? p.ch : e.ch; // the end fits this port, or the connection as a whole
-      if (p.g === e.g) out.push(p.g === 'f' ? { code: 'ff', en: 'Both female: a cable with male plugs (or an adapter) is needed', da: 'Begge hunstik: der skal bruges et kabel med hanstik (eller en adapter)' }
-        : { code: 'mm', en: 'Both male: a female socket (or an adapter) is needed', da: 'Begge hanstik: der skal bruges et hunstik (eller en adapter)' });
+      if (p.g === e.g) out.push(p.g === 'f' ? { code: 'ff', en: 'F to F: a cable with male plugs (or an adapter) is needed', da: 'F mod F: der skal bruges et kabel med hanstik (eller en adapter)' }
+        : { code: 'mm', en: 'M to M: a female socket (or an adapter) is needed', da: 'M mod M: der skal bruges et hunstik (eller en adapter)' });
       if (p.ch === 2 && ech === 1) out.push({ code: 'mono', en: 'Mono cable on a stereo connection: only one channel gets through', da: 'Monokabel på en stereoforbindelse: kun den ene kanal kommer igennem' });
       if (p.ch === 1 && ech === 2) out.push({ code: 'stereo', en: 'Stereo cable on a mono connection: one plug is left over', da: 'Stereokabel på en monoforbindelse: et stik er i overskud' });
       return out;
@@ -320,5 +322,5 @@
     return out;
   }
 
-  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire, AUDIO, plug, cablePlugs, plugText, plugIssues };
+  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire, AUDIO, plug, cablePlugs, plugText, plugCore, plugIssues };
 })();

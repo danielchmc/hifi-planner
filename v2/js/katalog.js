@@ -3,7 +3,7 @@
    SYSTEMER, KABLER, TILBEHØR) and TILBUD in red. Under a section: its categories as round pictures. Left: TYPE (the website's
    product types) with counts, price, Vis kun (Tilbud, Bluetooth, WiFi), Tilslutninger (from the ports) and brands. Right:
    product tiles as on the website. Click a tile to select it, double-click to add it straight away; "Tilføj til lærredet"
-   (or Enter) adds the selection. Opened with Enter on the canvas, the Katalog button or Enter in the sidebar search; Esc
+   (or Enter) adds the selection. Opened with Alt+K, the Katalog button or Shift+Enter in the sidebar search; Esc
    closes. The filters are kept while the page is open, so the seller can go back and forth with a customer. */
 (function () {
   const HP = window.HP, { h, t, catalog: cat } = HP;

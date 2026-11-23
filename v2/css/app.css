@@ -882,3 +882,12 @@ body.viewing > #app { display: none; }
 .stats-frame { display: block; width: 100%; height: min(72vh, 820px); border: 1px solid var(--line); background: #fff; }
 .stats-body .row input { flex: 1; }
 .stats-note { margin: 12px 0 4px; font-size: 12px; line-height: 1.45; color: var(--muted); }
+
+/* v4.13: plug chips — [RCA ×2 | M]: M (plug) solid, F (socket) outlined */
+.pchip { display: inline-flex; align-items: stretch; border: 1px solid var(--line-strong, var(--fg)); font: 500 10.5px/1 var(--mono); letter-spacing: .02em; text-transform: none; vertical-align: middle; white-space: nowrap; }
+.pchip .pc-c { padding: 3px 5px; color: var(--fg); }
+.pchip .pc-g { padding: 3px 5px; font-weight: 700; border-left: 1px solid var(--line-strong, var(--fg)); }
+.pchip .pc-g.m { background: var(--fg); color: var(--panel); }
+.pchip .pc-g.f { background: transparent; color: var(--fg); }
+.pc-arrow { margin: 0 6px; color: var(--muted); font: 11px var(--mono); }
+.tagline .pchip, .conn-head .pchip { margin: 1px 0; }

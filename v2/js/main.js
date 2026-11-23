@@ -27,6 +27,7 @@
     // plain letters and numbers are for searching
     if (e.altKey && !mod) {
       const c = e.code, act = {
+        KeyK: () => HP.katalog.open(), // the Katalog (K in both languages)
         KeyT: () => C.addText(),
         KeyB: () => one && C.flip(one.id),
         KeyC: () => { if (one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); C.colourMenu(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); } },
@@ -44,8 +45,7 @@
     // typing on the canvas types into the product search: a fresh search, without reaching for the mouse
     if (e.key.length === 1 && e.key !== ' ' && /[\p{L}\p{N}]/u.test(e.key)) { e.preventDefault(); return HP.panels.typeSearch(e.key); }
     if (e.key === 'Enter' && store.selConn) return HP.panels.cablePicker(store.selConn);
-    // Enter anywhere else opens the Katalog (a cable run being drawn is finished by Enter in canvas.js instead)
-    if (e.key === 'Enter' && !(C.tool && C.tool())) { e.preventDefault(); return HP.katalog.open(); }
+    // (Enter used to open the Katalog; that is Alt+K since 2026-11-23. A cable run being drawn is finished by Enter in canvas.js.)
     const step = e.shiftKey ? 50 : 10, mv = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] }[e.key];
     if (mv && store.sel.size) { e.preventDefault(); C.nudge(mv[0], mv[1]); }
   }

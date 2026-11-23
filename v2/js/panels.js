@@ -84,7 +84,7 @@
         else HP.katalog.open(search.value);
       }
     }
-    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Shift+Enter in the search, Enter on the canvas)', 'Åbn Katalog (Shift+Enter i søgningen, Enter på lærredet)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
+    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Alt+K, or Shift+Enter in the search)', 'Åbn Katalog (Alt+K, eller Shift+Enter i søgningen)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
     const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
     const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
       [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
@@ -411,6 +411,13 @@
     draw();
   };
 
+  /* a plug as a chip: [RCA ×2 | M] — M (a plug) solid, F (a socket) outlined; connectors without a gender just their name */
+  Pn.plugChip = (x) => {
+    if (!x) return null;
+    if (!P.AUDIO.has(x.conn)) return h('span.pchip', null, h('span.pc-c', null, P.CONNECTORS[x.conn] || x.conn));
+    return h('span.pchip', { title: P.plugText(x) + ' — ' + (x.g === 'm' ? t('male (plug)', 'han (stik)') : t('female (socket)', 'hun (bøsning)')) },
+      h('span.pc-c', null, P.plugCore(x)), h('span.pc-g.' + x.g, null, x.g.toUpperCase()));
+  };
   Pn.cablePicker = (connId) => {
     const c = store.doc.conns.find((x) => x.id === connId); if (!c) return;
     const info = C().connInfo(c), a = info.a || { label: '?', conn: 'other' }, b = info.b || { label: '?', conn: 'other' };
@@ -453,7 +460,7 @@
     function groupRow(G) {
       const rep = G.rep, e = P.cableEnds(rep) || [], mine = G.members.some((p) => p.id === c.cable), gk = String(rep.site || rep.id);
       const pl = P.cablePlugs(rep);
-      const r = productRow(rep, h('span.tagline', null, pl ? P.plugText(pl[0]) + ' ↔ ' + P.plugText(pl[1]) : e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
+      const r = productRow(rep, h('span.tagline', null, pl ? [Pn.plugChip(pl[0]), h('span.pc-arrow', null, '↔'), Pn.plugChip(pl[1])] : e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
       const base = C().stripLen(rep.name) || rep.name;
       const nm = r.querySelector('.pname'); if (nm) nm.textContent = base;
       const sub = r.querySelector('.psub'); if (sub) sub.textContent = rep.brand + ' · ' + (G.metre ? HP.money(rep.price) + ' / m' : (G.opts.length > 1 ? t('from ', 'fra ') : '') + HP.money(G.min));
@@ -502,7 +509,7 @@
     }
     const close = HP.modal({ title: t('Cable for this connection', 'Kabel til denne forbindelse'), size: 'md', flush: true,
       body: [h('.conn-head', null, h('span.pill.c-' + P.colorOf(a), null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + P.colorOf(b), null, b.label),
-        h('span.muted', null, P.plug(a, 'out') || P.plug(b, 'in') ? P.plugText(P.plug(a, 'out') || { conn: P.conn(a.conn, a) }) + ' → ' + P.plugText(P.plug(b, 'in') || { conn: P.conn(b.conn, b) })
+        h('span.muted', null, P.plug(a, 'out') || P.plug(b, 'in') ? [Pn.plugChip(P.plug(a, 'out') || { conn: P.conn(a.conn, a) }), h('span.pc-arrow', null, '→'), Pn.plugChip(P.plug(b, 'in') || { conn: P.conn(b.conn, b) })]
           : P.CONNECTORS[P.conn(a.conn, a)] + (P.conn(a.conn, a) !== P.conn(b.conn, b) ? ' → ' + P.CONNECTORS[P.conn(b.conn, b)] : '')),
         info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.'))),
         h('.searchbox.pad', null, icon('search', 15), q), list],
@@ -638,7 +645,7 @@
         h('h3', null, t('Keyboard', 'Tastatur')),
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
         h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
-          [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Enter'], t('On the canvas: open the Katalog', 'På lærredet: åbn Katalog')],
+          [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Alt', 'K'], t('Open the Katalog', 'Åbn Katalog')],
           [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
