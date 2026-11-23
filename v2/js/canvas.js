@@ -139,6 +139,8 @@
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
         imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (Alt+I)', 'Se billedet nærmere (Alt+I)'), data: { inspect: '1' } }, icon('search', 13)),
+        cat.family(p).length > 1 && h('button.vpill.no-print', { data: { lmenu: '1' }, title: t('Length: ', 'Længde: ') + cat.family(p).map((x) => C.lenLabel(x)).join(', ') },
+          h('span.vl', null, C.lenLabel(p)), h('span.vn', null, cat.family(p).length), icon('chevron-down', 10)),
         (p.vars || []).length > 1 && (C.varStyle(p) === 'dots'
           // variants that are distinct colours: a dot each, one click to switch
           ? h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
@@ -168,6 +170,13 @@
   };
   C.cablePrice = (c, p) => (c && c.m ? Math.ceil(c.m) * (p.price || 0) : HP.priceOf(p, c && c.lv ? { len: c.lv } : null).price);
   C.stripLen = stripLen;
+  C.lenLabel = (p) => { const m = cat.lenOf(p); return m ? String(m).replace('.', ',') + ' m' : ''; };
+  // a cable card's other lengths (cat.family): picking one replaces the card's product, its connections stay
+  C.lengthMenu = (id, anchor, x, y) => {
+    const it = store.item(id), p = it && cat.get(it.pid), f = cat.family(p); if (f.length < 2) return;
+    const r = anchor ? anchor.getBoundingClientRect() : null;
+    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Length', 'Længde') }].concat(f.map((q) => ({ label: C.lenLabel(q) + '  ·  ' + HP.money(q.price) + (q.was ? '  (' + t('was ', 'før ') + HP.money(q.was) + ')' : ''), on: q.id === p.id, fn: () => { if (q.id !== p.id) C.replaceItem(id, q.id); } }))));
+  };
 
   function priceRows() {
     const d = store.doc, rows = new Map();
@@ -512,6 +521,7 @@
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
         if (p && HP.imagesOf(p, one).length > 1) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
         if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Variant', 'Variant'), (e) => C.colourMenu(one.id, e.currentTarget)));
+        else if (p && cat.family(p).length > 1) selbar.append(btn('layers', t('Length', 'Længde'), (e) => C.lengthMenu(one.id, e.currentTarget)));
       }
       if (one && one.kind === 'text') selbar.append(
         btn('text', t('Title', 'Titel'), () => C.toggleNotePart(one.id, 'title'), (one.noTitle ? '' : '.on') + (one.noBody ? '.locked' : '')),
@@ -712,6 +722,8 @@
     if (mouse && e.ctrlKey && /Mac/.test(navigator.platform)) return; // Ctrl-click on a Mac is a right-click: the contextmenu event opens the menu
     const portEl = e.target.closest('.port');
     if (wiring && wiring.sticky) { e.preventDefault(); return portEl ? finishWire(portEl) : cancelWire(); }
+    const lm = e.target.closest('[data-lmenu]');
+    if (lm) { e.preventDefault(); e.stopPropagation(); return C.lengthMenu(lm.closest('.item').dataset.id, lm); }
     const vm = e.target.closest('[data-vmenu]');
     if (vm) { e.preventDefault(); e.stopPropagation(); return C.colourMenu(vm.closest('.item').dataset.id, vm); }
     const sw = e.target.closest('[data-var]');

@@ -6,8 +6,15 @@
 
   /* ---------- shared: product row + drag from a list onto the canvas ---------- */
   // v: a colour variant to show (picture, colour name and price of that colour)
-  function productRow(p, extra, v) {
+  function productRow(p, extra, v, fam) {
     const price = v ? v.price : p.price, was = v ? v.was || 0 : p.was || 0;
+    if (fam && fam.length > 1) { // a cable's lengths: the cable's name, "fra" its cheapest length, the length that is added as a label
+      const r = h('.prow', { data: { id: p.id } },
+        h('.thumb', null, HP.imgEl((p.img || [])[0] || '', 'thumb', { loading: 'lazy' })),
+        h('.pinfo', null, h('.pname', null, C().stripLen(p.name) || p.name), h('.psub', null, p.brand + ' · ' + t('from ', 'fra ') + HP.money(Math.min(...fam.map((x) => x.price || Infinity))))),
+        h('.pmeta', null, h('span.nvar-txt', { title: fam.map((x) => x.name.replace(/^.*?(\d+(?:[.,]\d+)?\s?m)$/i, '$1') + ' · ' + HP.money(x.price)).join('\n') }, (C().lenLabel ? C().lenLabel(p) : '') + ' +' + (fam.length - 1)), p.gone && icon('warn', 13), extra));
+      return r;
+    }
     return h('.prow' + (v ? '.isvar' : ''), { data: { id: p.id } },
       h('.thumb', null, HP.imgEl((v && v.img) || (p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
       h('.pinfo', null, h('.pname', null, p.name, v && h('span.vlabel', null, ' · ' + v.label)), h('.psub', null, v ? v.sku : p.brand, price ? ' · ' : '', !v && (p.vars || []).length > 1 && new Set(p.vars.map((x) => x.price)).size > 1 ? t('from ', 'fra ') : '', was > price ? h('s', null, HP.money(was)) : null, was > price ? ' ' : '', price ? h('span' + (was > price ? '.sale' : ''), null, HP.money(price)) : null)),
@@ -175,6 +182,16 @@
       }
       hits = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)) && Object.keys(flags).every((f) => !flags[f] || flagFn[f](p)))
         .map((p, i) => { const v = HP.matchVariant(p, words); return { p, v, i, s: score(p, words, v), price: (v ? v.price : p.price) || 0 }; });
+      // a cable's lengths are one row (like a product's variants): the length searched for, else the length used last
+      { const seen = new Map(), out = [];
+        hits.forEach((x) => {
+          const f = cat.family(x.p); if (f.length < 2) return out.push(x);
+          const k = cat.familyKey(x.p), have = seen.get(k);
+          const typed = words.some((w) => /\d/.test(w)) && words.every((w) => x.p._hay.includes(w)); // "black lab 3m": that length
+          if (!have) { const p = typed ? x.p : cat.familyPick(f); const y = Object.assign({}, x, { p, fam: f, price: p.price || 0 }); seen.set(k, y); out.push(y); }
+          else if (typed && !have.typed) Object.assign(have, { p: x.p, price: x.p.price || 0, typed: true });
+        });
+        hits = out; }
       const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
       hits.sort(so === 'pa' ? (a, b) => !!a.p.gone - !!b.p.gone || a.price - b.price : so === 'pd' ? (a, b) => !!a.p.gone - !!b.p.gone || b.price - a.price
         : so === 'name' ? (a, b) => loc(a.p.name, b.p.name) : so === 'brand' ? (a, b) => loc(a.p.brand, b.p.brand) || loc(a.p.name, b.p.name) : (a, b) => a.s - b.s || a.i - b.i);
@@ -187,7 +204,7 @@
     function addRows() {
       more.remove();
       const first = !shown;
-      hits.slice(shown, shown + PER).forEach(({ p, v, sys }, i) => {
+      hits.slice(shown, shown + PER).forEach(({ p, v, sys, fam }, i) => {
         const anim = (r) => { if (first && i < 12) { r.classList.add('in'); r.style.animationDelay = i * 12 + 'ms'; } };
         if (sys) {
           const r = systemRow(sys);
@@ -196,7 +213,7 @@
           list.append(r);
           return;
         }
-        const r = productRow(p, null, v); anim(r);
+        const r = productRow(p, null, v, fam); anim(r);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
         const vsku = v && v.sku;
         // a cable with a connection selected goes on that connection; anything else is added as a card

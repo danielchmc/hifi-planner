@@ -199,6 +199,7 @@
   HP.DRAFT_KEY = window.HP_NEXT ? 'draft-next' : 'draft';
   const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get(HP.DRAFT_KEY, {})), version: 0 });
   cat.rebuild = () => {
+    fam = null; // cable families (cat.family) are worked out again
     const d = cat.draft, base = DATA.products || [];
     const seen = new Set();
     cat.list = [];
@@ -221,6 +222,32 @@
   cat.get = (id) => cat.byId[id];
   cat.products = () => cat.list.filter((p) => !p.cable);
   cat.cables = () => cat.list.filter((p) => p.cable);
+  /* A cable's lengths are separate cards in the catalogue (Black Lab - Sub 2m, 3m … 20m). cat.family(p) gives all lengths of p's
+     cable (the same website product `site`, else brand + name without the length), shortest first; cat.lenOf(p) its length in metres from the name. The product list
+     shows a family as one row and a cable card offers the other lengths as variants. */
+  let fam = null;
+  cat.lenOf = (p) => { const m = /(\d+(?:[.,]\d+)?)\s?m$/i.exec(String((p && p.name) || '').trim()); return m ? parseFloat(m[1].replace(',', '.')) : 0; };
+  // a cable's lengths: the cards with the same website product, else (own SKU per length, or none) the same brand + name without the length
+  const baseName = (x) => (x.brand + ' ' + String(x.name).replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '')).toLowerCase().trim();
+  cat.family = (p) => {
+    if (!p || !p.cable || !cat.lenOf(p)) return p ? [p] : [];
+    if (!fam) {
+      fam = new Map(); const bySite = new Map(), byName = new Map(), put = (m, k, x) => (m.get(k) || m.set(k, []).get(k)).push(x);
+      const ok = (x) => x.cable && !x.gone && cat.lenOf(x);
+      cat.list.forEach((x) => { if (!ok(x)) return; if (x.site) put(bySite, String(x.site).toUpperCase(), x); put(byName, baseName(x), x); });
+      cat.list.forEach((x) => {
+        if (!ok(x)) return;
+        let f = x.site && bySite.get(String(x.site).toUpperCase());
+        if (!f || f.length < 2) f = byName.get(baseName(x));
+        if (f.length > 1 && new Set(f.map(cat.lenOf)).size === f.length) fam.set(x, f); // two cards of one length: not a length choice
+      });
+      new Set(fam.values()).forEach((v) => v.sort((a, b) => cat.lenOf(a) - cat.lenOf(b)));
+    }
+    return fam.get(p) || [p];
+  };
+  cat.familyKey = (p) => { const f = cat.family(p); return f.length > 1 ? f[0].id : p.id; };
+  // the length to show or add first: the length used last (remembered in the cable picker), else the shortest of at least 1 m
+  cat.familyPick = (f) => { const last = +HP.LS.get('cableLen', 0); return (last && f.find((x) => cat.lenOf(x) >= last)) || f.find((x) => cat.lenOf(x) >= 1) || f[0]; };
   cat.dirtyCount = () => { const d = cat.draft; return Object.keys(d.products).length + d.delProducts.length + Object.keys(d.templates).length + d.delTemplates.length + (d.ignore || []).length; };
   cat.saveDraft = () => {
     if (!LS.set(HP.DRAFT_KEY, cat.draft)) HP.toast(HP.t('Browser storage is full. Publish or use smaller images.', 'Browserens lager er fuldt. Udgiv eller brug mindre billeder.'), { kind: 'err' });
