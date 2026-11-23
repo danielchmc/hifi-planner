@@ -616,12 +616,23 @@
       d.items = d.items.filter((i) => !up.includes(i)).concat(d.items.filter((i) => up.includes(i)));
       up.forEach((i) => { const el = els.get(i.id); if (el) itemsEl.append(el); });
     };
+    // one cable card dragged onto a wire goes on that connection (and the card goes away), as from the product list
+    const cablePid = group.length === 1 && it.kind === 'product' && (cat.get(it.pid) || {}).cable ? it.pid : null;
+    const lit = () => wiresSvg && wiresSvg.querySelectorAll('.wire.drop-cable').forEach((x) => x.classList.remove('drop-cable'));
     drag(e, (ev, dx, dy) => {
       if (!raised) raise();
       group.forEach((i, k) => { i.x = start[k][0] + dx / view.z; i.y = start[k][1] + dy / view.z; place(i); const el = els.get(i.id); if (el) el.classList.add('lifting'); });
       renderWires(); placeBar();
+      if (cablePid) { lit(); const c = wireAt(ev.clientX, ev.clientY), g = c && wiresSvg.querySelector('.wire[data-id="' + c.id + '"]'); if (g) g.classList.add('drop-cable'); }
     }, (ev, moved, aborted) => {
+      const onWire = cablePid && moved && !aborted ? wireAt(ev.clientX, ev.clientY) : null;
+      if (cablePid) lit();
       group.forEach((i) => { const el = els.get(i.id); if (el) el.classList.remove('lifting'); });
+      if (onWire) {
+        if (before) store.doc.items = before; // the order before raising, so Undo gives the card back where it was
+        store.doc.items = store.doc.items.filter((i) => i.id !== it.id); store.sel = new Set();
+        return C.setConnCable(onWire.id, cablePid);
+      }
       if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); if (before) store.doc.items = before; return render(); } // second finger: put things back, pinch instead
       if (moved) {
         const from = group.map((i) => [i.x, i.y]), to = group.map((i) => [snapOf(i)(i.x), snapOf(i)(i.y)]);
@@ -815,9 +826,26 @@
     return cx > r.left + ix && cx < r.right - ix && cy > r.top + iy && cy < r.bottom - iy ? el : null;
   };
   // a cable dragged from the product list onto a wire goes on that connection (an adapter such as a Y-splitter goes in its chain)
-  const wireAt = (cx, cy) => { if (cx == null) return null; const hit = document.elementFromPoint(cx, cy); const w = hit && (hit.closest('.wire') || hit.closest('.chip[data-id]')); return w ? store.doc.conns.find((c) => c.id === (w.dataset.id || w.getAttribute('data-id'))) : null; };
+  // the wire under the pointer, or within about 10 px of it (a wire is thin when zoomed out); a card on top of the wire hides it,
+  // except the card being dragged
+  const wireAt = (cx, cy) => {
+    if (cx == null) return null;
+    const look = (x, y) => {
+      for (const el of document.elementsFromPoint(x, y)) {
+        if (el.closest('.lifting, .drag-ghost')) continue;
+        const w = el.closest('.wire') || el.closest('.chip[data-id]');
+        if (w) return store.doc.conns.find((c) => c.id === (w.dataset.id || w.getAttribute('data-id'))) || null;
+        if (el.closest('.item')) return null;
+        if (el === vp || el.closest('#viewport') !== vp) return null;
+      }
+      return null;
+    };
+    const R = [[0, 0]]; [5, 10].forEach((d) => [[d, 0], [-d, 0], [0, d], [0, -d], [d, d], [-d, -d], [d, -d], [-d, d]].forEach((o) => R.push(o)));
+    for (const [dx, dy] of R) { const c = look(cx + dx, cy + dy); if (c) return c; }
+    return null;
+  };
   C.dragHover = (cx, cy, pid) => {
-    const p = pid && cat.get(pid), conn = p && p.cable && !store.doc.ci ? wireAt(cx, cy) : null;
+    const p = pid && cat.get(pid), conn = p && p.cable ? wireAt(cx, cy) : null;
     const el = cx == null || store.doc.ci || conn ? null : cardAt(cx, cy);
     world.querySelectorAll('.drop-replace').forEach((x) => x !== el && x.classList.remove('drop-replace')); if (el) el.classList.add('drop-replace');
     wiresSvg && wiresSvg.querySelectorAll('.wire.drop-cable').forEach((x) => x.classList.remove('drop-cable'));
@@ -837,7 +865,7 @@
       { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
   };
   C.dropProduct = (pid, cx, cy, vsku) => {
-    const r = vp.getBoundingClientRect(), conn = (cat.get(pid) || {}).cable && !store.doc.ci ? wireAt(cx, cy) : null, el = conn ? null : cardAt(cx, cy);
+    const r = vp.getBoundingClientRect(), conn = (cat.get(pid) || {}).cable ? wireAt(cx, cy) : null, el = conn ? null : cardAt(cx, cy);
     C.dragHover(null);
     if (conn) return C.setConnCable(conn.id, pid);
     if (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) return;
