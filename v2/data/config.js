@@ -2,7 +2,7 @@
 window.HP_DATA = window.HP_DATA || {};
 window.HP_DATA.config = {
   // Shop numbers that may open the planner (same list as the old version).
-  shops: ["442", "422", "415", "421", "418", "411", "424", "428", "438", "426", "412", "409", "433", "401", "434", "410", "404"],
+  shops: ["401", "404", "407", "408", "409", "410", "411", "412", "415", "418", "421", "422", "424", "426", "428", "429", "433", "434", "438", "440", "442"],
   // Code that unlocks Admin mode under Settings. This only hides the admin tools from staff;
   // the real protection is the GitHub token, which is needed to publish anything.
   adminCode: "44240",
