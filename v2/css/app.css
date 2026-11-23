@@ -891,3 +891,15 @@ body.viewing > #app { display: none; }
 .pchip .pc-g.f { background: transparent; color: var(--fg); }
 .pc-arrow { margin: 0 6px; color: var(--muted); font: 11px var(--mono); }
 .tagline .pchip, .conn-head .pchip { margin: 1px 0; }
+
+/* v4.14: variants that are not distinct colours (TV sizes, models, lengths): a pill with the chosen one; a click lists them all */
+.vpill { position: absolute; left: 4px; top: 4px; z-index: 2; display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0 5px 0 6px; border: 1px solid #141518; background: #fff; color: #141518; font: 600 10.5px/1 var(--mono); cursor: pointer; max-width: calc(100% - 8px); }
+.vpill .vl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vpill .vn { font-weight: 400; color: #6a6e75; padding-left: 4px; border-left: 1px solid #d0d0cb; }
+.vpill .vsw { width: 9px; height: 9px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, .35); flex: none; }
+.vpill:hover { background: #141518; color: #fff; } .vpill:hover .vn { color: #c8c8c4; border-color: #555; }
+.card:not(:hover):not(.sel) .vpill { opacity: .8; }
+@media (pointer: coarse) { .vpill { height: 26px; font-size: 12px; } }
+.nvar-txt { font: 600 10.5px var(--mono); color: var(--muted); white-space: nowrap; max-width: 96px; overflow: hidden; text-overflow: ellipsis; }
+.kat-sw .sw:has(.swt) { width: auto; min-width: 30px; padding: 0 6px; } .kat-sw .swt { font: 600 10.5px var(--mono); white-space: nowrap; max-width: 90px; overflow: hidden; text-overflow: ellipsis; color: var(--fg); }
+html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }

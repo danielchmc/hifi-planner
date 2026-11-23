@@ -268,7 +268,8 @@
     const shown = cur || vs[0];
     const sw = vs.length > 1 ? h('.kat-sw', null, vs.slice(0, 5).map((x) => h('button.sw' + (shown && shown.sku === x.sku ? '.on' : ''), { title: x.label,
       onclick: (e) => { e.stopPropagation(); st.colour.set(p.id, x.sku); if (st.sel.has(k)) st.sel.get(k).v = x.sku; e.target.closest('.kat-tile').replaceWith(prodTile(p)); drawBar(); } },
-      x.img ? HP.imgEl(x.img, 'thumb', { loading: 'lazy' }) : h('i', { style: { background: x.hex || 'var(--line)' } }))), vs.length > 5 ? h('span.more', null, '+' + (vs.length - 5)) : null) : null;
+      // colours: the variant's picture; sizes, models, lengths: its name (the pictures would all look alike)
+      HP.canvas.varStyle(p) === 'pill' ? h('span.swt', null, x.label) : x.img ? HP.imgEl(x.img, 'thumb', { loading: 'lazy' }) : h('i', { style: { background: x.hex || 'var(--line)' } }))), vs.length > 5 ? h('span.more', null, '+' + (vs.length - 5)) : null) : null;
     const el = tileShell(k, [pic, sw,
       h('.kat-brand', null, p.brand), h('.kat-name', null, p.name), h('.kat-type', null, typeOf(p) + (cur && vs.length > 1 ? ' · ' + cur.label : '')),
       priceBlock(pr.price, pr.was > pr.price ? pr.was : 0),

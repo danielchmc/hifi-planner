@@ -139,8 +139,14 @@
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
         imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (Alt+I)', 'Se billedet nærmere (Alt+I)'), data: { inspect: '1' } }, icon('search', 13)),
-        (p.vars || []).length > 1 && h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
-          p.vars.length > 8 && h('span.more', null, '+' + (p.vars.length - 8)))),
+        (p.vars || []).length > 1 && (C.varStyle(p) === 'dots'
+          // variants that are distinct colours: a dot each, one click to switch
+          ? h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
+            p.vars.length > 8 && h('span.more', null, '+' + (p.vars.length - 8)))
+          // anything else (TV sizes, models, lengths, colours that look alike): the chosen one by name; a click lists them all
+          : h('button.vpill.no-print', { data: { vmenu: '1' }, title: t('Variant: ', 'Variant: ') + p.vars.map((x) => x.label).join(', ') },
+            C.varStyle(p) === 'pill-colour' && v ? h('i.vsw', { style: { background: HP.site.swatch(v) } }) : null,
+            h('span.vl', null, v ? v.label : t('Choose', 'Vælg')), h('span.vn', null, p.vars.length), icon('chevron-down', 10)))),
       hasIO ? h('.card-io', null, h('.col.in', null, (p.in || []).map((x) => port(x, 'in'))), h('.col.out', null, (p.out || []).map((x) => port(x, 'out')))) : null);
   }
   C.buildCard = buildCard; C.cardW = cardW;
@@ -701,6 +707,8 @@
     if (mouse && e.ctrlKey && /Mac/.test(navigator.platform)) return; // Ctrl-click on a Mac is a right-click: the contextmenu event opens the menu
     const portEl = e.target.closest('.port');
     if (wiring && wiring.sticky) { e.preventDefault(); return portEl ? finishWire(portEl) : cancelWire(); }
+    const vm = e.target.closest('[data-vmenu]');
+    if (vm) { e.preventDefault(); e.stopPropagation(); return C.colourMenu(vm.closest('.item').dataset.id, vm); }
     const sw = e.target.closest('[data-var]');
     if (sw) { e.preventDefault(); e.stopPropagation(); return C.setVariant(sw.closest('.item').dataset.id, sw.dataset.var); }
     const insp = e.target.closest('[data-inspect]');
@@ -1067,10 +1075,17 @@
   C.setCardScale = (s, commit) => { store.doc.cardScale = Math.round(clamp(s, 0.4, 1.6) * 100) / 100; geom.clear(); if (commit) store.commit(); else render(); };
   C.flip = (id) => { const it = store.item(id), p = it && cat.get(it.pid), n = HP.imagesOf(p, it).length; if (p && n > 1) { it.face = ((it.face || 0) + 1) % n; store.commit(); } };
   C.setVariant = (id, sku) => { const it = store.item(id); if (!it) return; if (sku) it.v = sku; else delete it.v; it.face = 0; store.commit(); };
+  // how a card shows its variants: 'dots' when every variant is its own colour; 'pill-colour' when they are colours but some look
+  // alike (Ask and Valnød are both wood); 'pill' when they are not colours at all (TV sizes, amplifier models, cable lengths)
+  C.varStyle = (p) => {
+    const vs = (p && p.vars) || [], cols = new Set(vs.map((x) => HP.site.swatch(x)));
+    if (cols.size <= 1 || vs.some((x) => /\d/.test(x.label))) return 'pill';
+    return cols.size === vs.length ? 'dots' : 'pill-colour';
+  };
   C.colourMenu = (id, anchor, x, y) => {
     const it = store.item(id), p = it && cat.get(it.pid); if (!p || !(p.vars || []).length) return;
     const r = anchor ? anchor.getBoundingClientRect() : null;
-    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Variant', 'Variant') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
+    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Variant', 'Variant') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: C.varStyle(p) === 'pill' ? null : HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
   };
   C.inspect = (id) => { const it = store.item(id); if (it && it.kind === 'product') HP.panels.viewer(it.pid, it.face || 0, (face) => { if ((it.face || 0) !== face) { it.face = face; store.commit(); } }, it); };
 
