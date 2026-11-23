@@ -199,7 +199,7 @@
   HP.DRAFT_KEY = window.HP_NEXT ? 'draft-next' : 'draft';
   const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get(HP.DRAFT_KEY, {})), version: 0 });
   cat.rebuild = () => {
-    fam = null; // cable families (cat.family) are worked out again
+    fam = null; grp = null; // cable families and length groups (cat.family, cat.cableGroup) are worked out again
     const d = cat.draft, base = DATA.products || [];
     const seen = new Set();
     cat.list = [];
@@ -250,6 +250,57 @@
   cat.lenGoneHidden = (p) => !!(p && p.lenGone && p.site && cat.list.some((x) => x !== p && x.site === p.site && cat.family(x).length > 1));
   cat.familyKey = (p) => { const f = cat.family(p); return f.length > 1 ? f[0].id : p.id; };
   // the length to show or add first: the length used last (remembered in the cable picker), else the shortest of at least 1 m
+  /* A cable's lengths, one list for the search, the card and the price list (the cable picker builds the same list for a wire).
+     cat.cableGroup(p) = { key, rep, members, metre, opts, min }: the cards of one cable (one website product, or one family of
+     length cards) with the lengths it is sold in. opts: { m, label, price, was, id, lv } — id = the card to use, lv = the website
+     length's SKU when that length has no card of its own (stored on a card as item.len, on a wire as lv). metre: speaker cable
+     sold by the metre (no opts; the metres are item.m / conn.m). */
+  let grp = null;
+  cat.isPerMetre = (p) => !!p && (p.cable || []).includes('speaker') && !!((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(String(p.name).trim()));
+  const fmtM = (m) => String(m).replace('.', ',') + ' m';
+  cat.cableGroup = (p) => {
+    if (!p || !p.cable) return null;
+    if (!grp) {
+      grp = new Map();
+      const live = cat.list.filter((x) => x.cable && !x.gone), siteKey = new Map(), by = new Map();
+      live.forEach((x) => { const f = cat.family(x); if (f.length > 1) f.forEach((y) => y.site && siteKey.set(String(y.site).toUpperCase(), 'F' + f[0].id)); });
+      live.forEach((x) => {
+        const f = cat.family(x), site = x.site && String(x.site).toUpperCase();
+        const k = f.length > 1 ? 'F' + f[0].id : (site && (siteKey.get(site) || 'S' + site)) || 'I' + x.id;
+        (by.get(k) || by.set(k, []).get(k)).push(x);
+      });
+      by.forEach((members, key) => {
+        const rep = members.find((x) => !x.web && !x.lenGone) || members.find((x) => !x.web) || members[0];
+        const G = { key, rep, members, metre: cat.isPerMetre(rep), opts: [] };
+        if (!G.metre) {
+          const owner = members.find((x) => (x.lens || []).length && !x.lenGone) || members.find((x) => (x.lens || []).length);
+          let opts = owner ? owner.lens.map((l) => ({ m: l.m, label: l.label, price: l.price, was: l.was || 0, id: l.id || owner.id, lv: l.id ? null : l.sku })) : [];
+          members.forEach((x) => { const m = cat.lenOf(x); if ((m || !opts.length) && !x.lenGone && !opts.some((o) => o.id === x.id && !o.lv) && !(m && opts.some((o) => o.m === m))) opts.push({ m, label: m ? fmtM(m) : '', price: x.price || 0, was: x.was || 0, id: x.id, lv: null }); });
+          G.opts = opts.filter((o) => cat.get(o.id)).sort((a, b) => a.m - b.m || a.price - b.price);
+        }
+        G.min = G.metre ? rep.price || 0 : Math.min(...G.opts.map((o) => o.price || Infinity));
+        members.forEach((x) => grp.set(x, G));
+      });
+    }
+    return grp.get(p) || null;
+  };
+  // a search word: in the product's text, or a length the cable is sold in ("cl1 hdmi 5m" finds CL1 HDMI 8K, sold in 1–10 m)
+  cat.matchWord = (p, w) => {
+    if (p._hay.includes(w)) return true;
+    const m = p.cable && /^(\d+(?:[.,]\d+)?)m$/.exec(w); if (!m) return false;
+    const G = cat.cableGroup(p), n = parseFloat(m[1].replace(',', '.'));
+    return !!G && (G.metre || G.opts.some((o) => o.m === n));
+  };
+  // a cable that comes in more than one length (or by the metre): the card gets a length pill, the search one row
+  cat.hasLengths = (p) => { const G = cat.cableGroup(p); return !!G && (G.metre || G.opts.length > 1); };
+  // the length a card (or a search row) has: its card and website length
+  cat.cableOpt = (G, pid, len) => (G && (G.opts.find((o) => o.id === pid && (o.lv || null) === (len || null)) || (!len && G.opts.find((o) => o.id === pid && !o.lv)))) || null;
+  // the length to add: the one searched for ("black lab sub 5m"), else the length used last, else the shortest of at least 1 m
+  cat.pickOpt = (G, words) => {
+    const want = (words || []).map((w) => /^(\d+(?:[.,]\d+)?)m?$/.exec(w)).filter(Boolean).map((m) => parseFloat(m[1].replace(',', '.')));
+    const last = +HP.LS.get('cableLen', 0);
+    return (want.length && G.opts.find((o) => want.includes(o.m))) || (last && G.opts.find((o) => o.m >= last)) || G.opts.find((o) => o.m >= 1) || G.opts[0];
+  };
   cat.familyPick = (f) => { const last = +HP.LS.get('cableLen', 0); return (last && f.find((x) => cat.lenOf(x) >= last)) || f.find((x) => cat.lenOf(x) >= 1) || f[0]; };
   cat.dirtyCount = () => { const d = cat.draft; return Object.keys(d.products).length + d.delProducts.length + Object.keys(d.templates).length + d.delTemplates.length + (d.ignore || []).length; };
   cat.saveDraft = () => {
@@ -380,7 +431,7 @@
   function compact(doc) {
     const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
-      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
+      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0, i.len || 0, i.m || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [c.cable || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, c.ad || 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
@@ -389,7 +440,7 @@
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
     const ids = a[7].map(() => HP.uid());
-    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] ? { np: 1 } : {}, r[6] ? { sy: r[6] } : {})
+    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] ? { np: 1 } : {}, r[6] ? { sy: r[6] } : {}, r[7] ? { len: r[7] } : {}, r[8] ? { m: r[8] } : {})
       : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6], ...(r[7] & 1 ? { noTitle: true } : {}), ...(r[7] & 2 ? { noBody: true } : {}) } : r[0] === 3 ? Object.assign({ id: ids[n], kind: 'mark', k: r[3], x: r[1] * 5, y: r[2] * 5 }, r[4] ? { np: 1 } : {}) : r[0] === 4 ? { id: ids[n], kind: 'legend', x: r[1] * 10, y: r[2] * 10 }
       : r[0] === 5 ? { id: ids[n], kind: 'zone', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, name: r[5] }
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }

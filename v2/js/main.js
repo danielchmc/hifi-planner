@@ -30,7 +30,7 @@
         KeyK: () => HP.katalog.open(), // the Katalog (K in both languages)
         KeyT: () => C.addText(),
         KeyB: () => one && C.flip(one.id),
-        KeyC: () => { if (one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); const p = HP.catalog.get(store.item(one.id).pid), fn = p && !(p.vars || []).length && HP.catalog.family(p).length > 1 ? C.lengthMenu : C.colourMenu; fn(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); } },
+        KeyC: () => { if (one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); const p = HP.catalog.get(store.item(one.id).pid), fn = p && !(p.vars || []).length && HP.catalog.hasLengths(p) ? C.lengthMenu : C.colourMenu; fn(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); } },
         KeyI: () => one && C.inspect(one.id),
         KeyL: () => { if (one && one.kind === 'plan') { one.lock = !one.lock; store.commit(); } },
         KeyR: () => { const it = store.sel.size === 1 && store.item([...store.sel][0]); if (it && (it.kind === 'product' || (it.kind === 'mark' && it.k[0] !== '@'))) HP.panels.replacePicker(it.id); } }[c];

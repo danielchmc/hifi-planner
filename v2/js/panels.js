@@ -6,14 +6,15 @@
 
   /* ---------- shared: product row + drag from a list onto the canvas ---------- */
   // v: a colour variant to show (picture, colour name and price of that colour)
-  function productRow(p, extra, v, fam) {
+  function productRow(p, extra, v, grp, opt) {
     const price = v ? v.price : p.price, was = v ? v.was || 0 : p.was || 0;
-    if (fam && fam.length > 1) { // a cable's lengths: the cable's name, "fra" its cheapest length, the length that is added as a label
-      const r = h('.prow', { data: { id: p.id } },
+    if (grp) { // a cable's lengths: the cable's name, its price "fra" the cheapest length (or per metre), the length added as a label
+      const base = C().stripLen(p.name) || p.name;
+      return h('.prow', { data: { id: p.id } },
         h('.thumb', null, HP.imgEl((p.img || [])[0] || '', 'thumb', { loading: 'lazy' })),
-        h('.pinfo', null, h('.pname', null, C().stripLen(p.name) || p.name), h('.psub', null, p.brand + ' · ' + t('from ', 'fra ') + HP.money(Math.min(...fam.map((x) => x.price || Infinity))))),
-        h('.pmeta', null, h('span.nvar-txt', { title: fam.map((x) => x.name.replace(/^.*?(\d+(?:[.,]\d+)?\s?m)$/i, '$1') + ' · ' + HP.money(x.price)).join('\n') }, (C().lenLabel ? C().lenLabel(p) : '') + ' +' + (fam.length - 1)), p.gone && icon('warn', 13), extra));
-      return r;
+        h('.pinfo', null, h('.pname', null, base), h('.psub', null, p.brand + ' · ' + (grp.metre ? HP.money(p.price) + ' / m' : t('from ', 'fra ') + HP.money(grp.min)))),
+        h('.pmeta', null, grp.metre ? h('span.nvar-txt', null, t('per metre', 'pr. meter'))
+          : h('span.nvar-txt', { title: grp.opts.map((o) => o.label + ' · ' + HP.money(o.price)).join('\n') }, (opt ? opt.label : '') + ' +' + (grp.opts.length - 1)), p.gone && icon('warn', 13), extra));
     }
     return h('.prow' + (v ? '.isvar' : ''), { data: { id: p.id } },
       h('.thumb', null, HP.imgEl((v && v.img) || (p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
@@ -164,7 +165,7 @@
       hl = -1;
       const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean), bv = brandSel.value;
       // every product, cables included: a cable dropped on a wire (or added with a connection selected) goes on that connection
-      const base = cat.list.filter((p) => words.every((w) => p._hay.includes(w)) && (!bv || p.brand === bv));
+      const base = cat.list.filter((p) => words.every((w) => cat.matchWord(p, w)) && (!bv || p.brand === bv));
       const sysAll = cat.systems();
       const sysBase = sysAll.length ? sysAll.filter((b) => words.every((w) => hayOf(b).includes(w)) && (!bv || b.brand === bv || b.parts.some((x) => cat.get(x.id).brand === bv))) : null;
       if (group === SYS && !sysBase) group = '';
@@ -182,15 +183,14 @@
       }
       hits = base.filter((p) => inGroup(p, group) && (!sub || (p.cats || []).includes(sub)) && Object.keys(flags).every((f) => !flags[f] || flagFn[f](p)))
         .map((p, i) => { const v = HP.matchVariant(p, words); return { p, v, i, s: score(p, words, v), price: (v ? v.price : p.price) || 0 }; });
-      // a cable's lengths are one row (like a product's variants): the length searched for, else the length used last
-      { const seen = new Map(), out = [];
+      // a cable's lengths are one row (like a product's variants), at the length searched for, else the length used last
+      { const seen = new Set(), out = [];
         hits.forEach((x) => {
-          if (cat.lenGoneHidden(x.p)) return;
-          const f = cat.family(x.p); if (f.length < 2) return out.push(x);
-          const k = cat.familyKey(x.p), have = seen.get(k);
-          const typed = words.some((w) => /\d/.test(w)) && words.every((w) => x.p._hay.includes(w)); // "black lab 3m": that length
-          if (!have) { const p = typed ? x.p : cat.familyPick(f); const y = Object.assign({}, x, { p, fam: f, price: p.price || 0 }); seen.set(k, y); out.push(y); }
-          else if (typed && !have.typed) Object.assign(have, { p: x.p, price: x.p.price || 0, typed: true });
+          const G = cat.hasLengths(x.p) && cat.cableGroup(x.p); if (!G) return x.p.lenGone && cat.cableGroup(x.p) && cat.cableGroup(x.p).rep !== x.p ? null : out.push(x);
+          if (seen.has(G.key)) return; seen.add(G.key);
+          if (G.metre) return out.push(Object.assign({}, x, { p: G.rep, grp: G, price: G.rep.price || 0 }));
+          const o = cat.pickOpt(G, words), p = cat.get(o.id);
+          out.push(Object.assign({}, x, { p, grp: G, opt: o, price: o.price || 0 }));
         });
         hits = out; }
       const so = sortSel.value, loc = (a, b) => a.localeCompare(b, 'da');
@@ -205,7 +205,7 @@
     function addRows() {
       more.remove();
       const first = !shown;
-      hits.slice(shown, shown + PER).forEach(({ p, v, sys, fam }, i) => {
+      hits.slice(shown, shown + PER).forEach(({ p, v, sys, grp, opt }, i) => {
         const anim = (r) => { if (first && i < 12) { r.classList.add('in'); r.style.animationDelay = i * 12 + 'ms'; } };
         if (sys) {
           const r = systemRow(sys);
@@ -214,13 +214,14 @@
           list.append(r);
           return;
         }
-        const r = productRow(p, null, v, fam); anim(r);
+        const r = productRow(p, null, v, grp, opt); anim(r);
         // a search that points at one colour (part of its SKU, or its colour name) shows and adds that colour
-        const vsku = v && v.sku;
+        const vsku = (v && v.sku) || (opt && opt.lv) || undefined; // a colour, or a cable length without a card of its own
         // a cable with a connection selected goes on that connection; anything else is added as a card
         const onConn = () => p.cable && store.selConn && store.doc.conns.some((c) => c.id === store.selConn);
-        r._add = () => { if (onConn()) return C().setConnCable(store.selConn, p.id); C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };
-        r.addEventListener('pointerdown', (e) => listDrag(e, p.name, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { if (onConn()) return C().setConnCable(store.selConn, p.id); C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y, p.id)));
+        const nm = grp && opt ? (C().stripLen(p.name) || p.name) + ' ' + opt.label : grp ? C().stripLen(p.name) || p.name : p.name;
+        r._add = () => { if (onConn()) return C().setConnCable(store.selConn, p.id, vsku); C().addProductCenter(p.id, vsku); HP.toast(p.brand + ' ' + nm + t(' added', ' tilføjet'), { kind: 'ok', ms: 1800 }); };
+        r.addEventListener('pointerdown', (e) => listDrag(e, nm, (x, y) => C().dropProduct(p.id, x, y, vsku), () => { if (onConn()) return C().setConnCable(store.selConn, p.id, vsku); C().addProductCenter(p.id, vsku); if (narrow()) Pn.drawer(false); }, (x, y) => C().dragHover(x, y, p.id)));
         list.append(r);
         rows.push({ p, r });
       });
@@ -566,23 +567,25 @@
     const total = used.in.length + used.out.length;
     const q = h('input', { type: 'search', placeholder: t('Search products…', 'Søg produkter…'), oninput: draw, autofocus: true });
     // a cable is replaced by another cable (the same plugs at both ends when ticked), anything else by a product (the same category)
-    const isCable = !!old.cable, plugs = (p) => (p.ends || []).map((e) => P.conn(e)).sort().join('|'), oldFam = isCable ? cat.family(old) : [];
+    const isCable = !!old.cable, plugs = (p) => (p.ends || []).map((e) => P.conn(e)).sort().join('|'), oldG = isCable ? cat.cableGroup(old) : null, oldFam = oldG ? oldG.members : [];
     const same = h('input', { type: 'checkbox', checked: isCable ? (old.ends || []).length > 0 : (old.cats || []).length > 0, onchange: draw });
     const list = h('.plist.tall');
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       list.textContent = '';
       const sameAs = (p) => isCable ? plugs(p) === plugs(old) : (p.cats || []).some((x) => (old.cats || []).includes(x));
-      let rows = (isCable ? cat.list.filter((p) => p.cable && !p.gone && !oldFam.includes(p) && !cat.lenGoneHidden(p)) : cat.products()).filter((p) => p.id !== old.id && words.every((w) => p._hay.includes(w)) && (!same.checked || sameAs(p))).map((p) => {
+      let rows = (isCable ? cat.list.filter((p) => p.cable && !p.gone && !oldFam.includes(p)) : cat.products()).filter((p) => p.id !== old.id && words.every((w) => cat.matchWord(p, w)) && (!same.checked || sameAs(p))).map((p) => {
         const kept = total ? used.out.filter((k) => P.mapPorts(old.out || [], p.out || [], used.out)[k]).length + used.in.filter((k) => P.mapPorts(old.in || [], p.in || [], used.in)[k]).length : 0;
         return { p, kept };
       }).sort((x, y) => y.kept - x.kept);
       if (isCable) { // one row per cable, at the card's length when that cable has it
-        const seen = new Set(), len = cat.lenOf(old);
-        rows = rows.filter(({ p }) => { const k = cat.familyKey(p); if (seen.has(k)) return false; seen.add(k); return true; })
-          .map((x) => { const f = cat.family(x.p); return f.length > 1 ? Object.assign({}, x, { p: f.find((y) => cat.lenOf(y) === len) || cat.familyPick(f), fam: f }) : x; });
+        const seen = new Set(), cur = cat.cableOpt(cat.cableGroup(old), old.id, it.len), len = cur ? cur.m : cat.lenOf(old);
+        rows = rows.filter(({ p }) => { const G = cat.cableGroup(p), k = G ? G.key : p.id; if (seen.has(k)) return false; seen.add(k); return true; })
+          .map((x) => { const G = cat.hasLengths(x.p) && cat.cableGroup(x.p); if (!G) return x; if (G.metre) return Object.assign({}, x, { p: G.rep, grp: G });
+            const o = G.opts.find((y) => y.m === len) || cat.pickOpt(G); return Object.assign({}, x, { p: cat.get(o.id), grp: G, opt: o }); });
       }
-      rows.slice(0, 200).forEach(({ p, kept, fam }) => { const r = productRow(p, total ? h('span.keep' + (kept === total ? '.all' : kept ? '' : '.none'), null, kept + '/' + total) : null, null, fam); r.onclick = () => { close(); C().replaceItem(itemId, p.id); }; list.append(r); });
+      rows.slice(0, 200).forEach(({ p, kept, grp, opt }) => { const r = productRow(p, total ? h('span.keep' + (kept === total ? '.all' : kept ? '' : '.none'), null, kept + '/' + total) : null, null, grp, opt);
+        r.onclick = () => { close(); C().replaceItem(itemId, p.id); const n = store.item(itemId); if (n && grp) { if (opt && opt.lv) n.len = opt.lv; else delete n.len; if (grp.metre) n.m = n.m || it.m || 3; else delete n.m; store.commit(); } }; list.append(r); });
       if (!rows.length) list.append(h('.empty', null, t('No products match.', 'Ingen produkter matcher.')));
     }
     const close = HP.modal({ title: t('Replace ', 'Udskift ') + old.name, size: 'md', flush: true,

@@ -132,15 +132,18 @@
     return h('.card', { style: { width: cardW(p) + 'px' } },
       MK.includes(p.id) && h('span.card-mark', { title: t('Marked on the floor plan as ', 'Markeret på plantegningen som ') + letter(MK.indexOf(p.id)), html: markHtml(p.id) }),
       (p.bt || p.wifi) && h('.fabs', null, p.bt && h('span.fab', { title: 'Bluetooth' }, icon('bt')), p.wifi && h('span.fab', { title: 'WiFi' }, icon('wifi'))),
-      h('.card-head', null, h('span.brand', null, p.brand, v && h('span.vlabel', null, ' · ' + v.label),
+      h('.card-head', null, h('span.brand', null, p.brand, v && !item.len && h('span.vlabel', null, ' · ' + v.label),
           p.gone && h('span.gone-tag.no-print', { title: t('No longer on hifiklubben.dk', 'Ikke længere på hifiklubben.dk') }, t('DISCONTINUED', 'UDGÅET')),
           p.review && h('span.gone-tag.auto.no-print', { title: t('Added automatically from hifiklubben.dk. Inputs/outputs are suggested from the website and not checked yet.', 'Tilføjet automatisk fra hifiklubben.dk. Ind-/udgange er foreslået ud fra hjemmesiden og ikke kontrolleret endnu.') }, 'AUTO')),
-        plink(HP.productUrl(p, item), 'name', [p.name, h('span.plink-ic.print-only', null, ' ↗')])),
+        plink(HP.productUrl(p, item), 'name', [C.cardName(p, item), h('span.plink-ic.print-only', null, ' ↗')])),
       h('.card-img', { title: imgs.length > 1 ? t('Click to flip front/back. Double-click to inspect.', 'Klik for at vende for/bag. Dobbeltklik for at se nærmere.') : t('Double-click to inspect', 'Dobbeltklik for at se nærmere') }, img,
         imgs.length > 1 && h('span.face', null, face ? t('BACK', 'BAG') : t('FRONT', 'FRONT')),
         imgs.length > 0 && h('button.inspect.no-print', { title: t('Inspect image (Alt+I)', 'Se billedet nærmere (Alt+I)'), data: { inspect: '1' } }, icon('search', 13)),
-        cat.family(p).length > 1 && h('button.vpill.no-print', { data: { lmenu: '1' }, title: t('Length: ', 'Længde: ') + cat.family(p).map((x) => C.lenLabel(x)).join(', ') },
-          h('span.vl', null, C.lenLabel(p)), h('span.vn', null, cat.family(p).length), icon('chevron-down', 10)),
+        cat.hasLengths(p) && (() => { // a cable's length (or metres), like a variant: a click lists the lengths
+          const G = cat.cableGroup(p), o = cat.cableOpt(G, p.id, item.len);
+          return h('button.vpill.no-print', { data: { lmenu: '1' }, title: G.metre ? t('Sold by the metre', 'Sælges i metermål') : t('Length: ', 'Længde: ') + G.opts.map((x) => x.label).join(', ') },
+            h('span.vl', null, G.metre ? lenM(item.m || 1) : o ? o.label : t('Length', 'Længde')), G.metre ? null : h('span.vn', null, G.opts.length), icon('chevron-down', 10));
+        })(),
         (p.vars || []).length > 1 && (C.varStyle(p) === 'dots'
           // variants that are distinct colours: a dot each, one click to switch
           ? h('.swatches.no-print', null, p.vars.slice(0, 8).map((x) => h('button.sw' + ((v ? v.sku : '') === x.sku ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price), data: { var: x.sku }, style: { background: HP.site.swatch(x) } })),
@@ -157,6 +160,7 @@
 
   // a wire's cable as shown on the wire and in its tooltip: the name with the chosen length or metres
   const stripLen = (s) => String(s || '').replace(/[\s,-]*\d+(?:[.,]\d+)?\s?m$/i, '').trim();
+  const lenM = (m) => String(m).replace('.', ',') + ' m';
   const nMissing = () => (HP.complete ? HP.complete.missing() : 0);
   C.cableName = (c, p) => {
     if (!p) return '';
@@ -170,12 +174,34 @@
   };
   C.cablePrice = (c, p) => (c && c.m ? Math.ceil(c.m) * (p.price || 0) : HP.priceOf(p, c && c.lv ? { len: c.lv } : null).price);
   C.stripLen = stripLen;
-  C.lenLabel = (p) => { const m = cat.lenOf(p); return m ? String(m).replace('.', ',') + ' m' : ''; };
-  // a cable card's other lengths (cat.family): picking one replaces the card's product, its connections stay
+  C.lenLabel = (p) => { const m = cat.lenOf(p); return m ? lenM(m) : ''; };
+  // a card's name: a cable that comes in several lengths is named with the card's length (Black Lab - Sub 3 m, Rocket 33 4 m)
+  C.cardName = (p, it) => {
+    if (!cat.hasLengths(p)) return p.name;
+    const G = cat.cableGroup(p), o = cat.cableOpt(G, p.id, it && it.len), base = stripLen(p.name) || p.name;
+    return G.metre ? base + ' ' + lenM((it && it.m) || 1) : o ? base + ' ' + o.label : p.name;
+  };
+  // a cable card's lengths (or metres): picking one changes the card's product and/or its website length
+  const METRES = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20, 25, 30];
   C.lengthMenu = (id, anchor, x, y) => {
-    const it = store.item(id), p = it && cat.get(it.pid), f = cat.family(p); if (f.length < 2) return;
-    const r = anchor ? anchor.getBoundingClientRect() : null;
-    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Length', 'Længde') }].concat(f.map((q) => ({ label: C.lenLabel(q) + '  ·  ' + HP.money(q.price) + (q.was ? '  (' + t('was ', 'før ') + HP.money(q.was) + ')' : ''), on: q.id === p.id, fn: () => { if (q.id !== p.id) C.replaceItem(id, q.id); } }))));
+    const it = store.item(id), p = it && cat.get(it.pid), G = cat.cableGroup(p); if (!G || !cat.hasLengths(p)) return;
+    const r = anchor ? anchor.getBoundingClientRect() : null, at = [r ? r.left : x, r ? r.bottom + 4 : y];
+    if (G.metre) {
+      const ms = [...new Set(METRES.concat(it.m ? [it.m] : []))].sort((a, b) => a - b);
+      return HP.menu(at[0], at[1], [{ head: t('Metres', 'Meter') + ' · ' + HP.money(p.price) + ' / m' }].concat(ms.map((m) => ({ label: lenM(m) + '  ·  ' + HP.money(m * (p.price || 0)), on: (it.m || 1) === m,
+        fn: () => { it.m = m; HP.LS.set('cableLen', m); store.commit(); } }))));
+    }
+    const cur = cat.cableOpt(G, it.pid, it.len);
+    HP.menu(at[0], at[1], [{ head: t('Length', 'Længde') }].concat(G.opts.map((o) => ({ label: o.label + '  ·  ' + HP.money(o.price) + (o.was > o.price ? '  (' + t('was ', 'før ') + HP.money(o.was) + ')' : ''), on: o === cur,
+      fn: () => {
+        if (o === cur) return;
+        HP.LS.set('cableLen', o.m);
+        if (o.id !== it.pid && store.doc.conns.some((c) => c.a.item === id || c.b.item === id)) { C.replaceItem(id, o.id); } // ports to carry over
+        else if (o.id !== it.pid) { it.pid = o.id; it.face = 0; delete it.v; }
+        const now = store.item(id); if (!now) return;
+        if (o.lv) now.len = o.lv; else delete now.len;
+        store.commit();
+      } }))));
   };
 
   function priceRows() {
@@ -204,7 +230,12 @@
         parts: b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · ') });
     });
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
-    d.items.forEach((it) => it.kind === 'product' && !it.np && !used.has(it.id) && add(cat.get(it.pid), false, it));
+    d.items.forEach((it) => {
+      if (it.kind !== 'product' || it.np || used.has(it.id)) return;
+      const p = cat.get(it.pid);
+      if (it.m && cat.isPerMetre(p)) { for (let i = 0; i < Math.ceil(it.m); i++) add(p, true, null, true); return; } // a cable card by the metre: per started metre
+      add(p, false, it);
+    });
     const mc = {};
     d.items.forEach((it) => { if (it.kind === 'mark' && !it.np && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
     for (const pid in mc) { // a product placed as marks and also drawn as cards is the same hardware: count the larger number once
@@ -317,7 +348,7 @@
   }
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
-    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, it.np, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
+    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, it.len, it.m, it.np, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
     if (it.kind === 'mark') return ['m', it.k, it.np, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
     if (it.kind === 'zone') return ['z', it.w, it.h, it.name, d.items.filter((i) => i.kind === 'zone').indexOf(it), L].join('|');
     if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
@@ -521,7 +552,7 @@
         selbar.append(btn('swap', t('Replace', 'Udskift'), () => HP.panels.replacePicker(one.id)));
         if (p && HP.imagesOf(p, one).length > 1) selbar.append(btn('flip', t('Flip', 'Vend'), () => C.flip(one.id)));
         if (p && (p.vars || []).length > 1) selbar.append(btn('layers', t('Variant', 'Variant'), (e) => C.colourMenu(one.id, e.currentTarget)));
-        else if (p && cat.family(p).length > 1) selbar.append(btn('layers', t('Length', 'Længde'), (e) => C.lengthMenu(one.id, e.currentTarget)));
+        else if (p && cat.hasLengths(p)) selbar.append(btn('layers', t('Length', 'Længde'), (e) => C.lengthMenu(one.id, e.currentTarget)));
       }
       if (one && one.kind === 'text') selbar.append(
         btn('text', t('Title', 'Titel'), () => C.toggleNotePart(one.id, 'title'), (one.noTitle ? '' : '.on') + (one.noBody ? '.locked' : '')),
@@ -631,7 +662,7 @@
       if (onWire) {
         if (before) store.doc.items = before; // the order before raising, so Undo gives the card back where it was
         store.doc.items = store.doc.items.filter((i) => i.id !== it.id); store.sel = new Set();
-        return C.setConnCable(onWire.id, cablePid);
+        return C.setConnCable(onWire.id, cablePid, it.len, it.m);
       }
       if (aborted) { group.forEach((i, k) => { i.x = start[k][0]; i.y = start[k][1]; }); if (before) store.doc.items = before; return render(); } // second finger: put things back, pinch instead
       if (moved) {
@@ -801,7 +832,9 @@
     const p = cat.get(pid), d = store.doc; if (!p) return null;
     const s = cardScale(), w = cardW(p) * s, hh = (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
-    const v = variantFor(p, vsku); if (v) it.v = v.sku; // the colour searched for, else the default variant
+    if (vsku && (p.lens || []).some((l) => l.sku === vsku)) it.len = vsku; // a cable length without a card of its own
+    else { const v = variantFor(p, vsku); if (v) it.v = v.sku; } // the colour searched for, else the default variant
+    if (cat.isPerMetre(p)) it.m = Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3)); // cable sold by the metre: the metres last used, else 3
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
@@ -851,13 +884,14 @@
     wiresSvg && wiresSvg.querySelectorAll('.wire.drop-cable').forEach((x) => x.classList.remove('drop-cable'));
     if (conn) { const g = wiresSvg.querySelector('.wire[data-id="' + conn.id + '"]'); if (g) g.classList.add('drop-cable'); }
   };
-  C.setConnCable = (connId, pid) => {
+  // lv: a website length without a card of its own; m: metres (cable sold by the metre; else the metres last used, else 3)
+  C.setConnCable = (connId, pid, lv, m) => {
     const c = store.doc.conns.find((x) => x.id === connId), p = cat.get(pid); if (!c || !p) return;
     if (P.isAdapter(p)) c.ad = pid;
     else {
       c.cable = pid; delete c.lv; delete c.m;
-      const perM = (p.cable || []).includes('speaker') && ((p.fx || {}).perMetre || /(^|[^0-9.,])1 ?m$|slip/i.test(p.name.trim()));
-      if (perM) c.m = Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3));
+      if (lv && (p.lens || []).some((l) => l.sku === lv)) c.lv = lv;
+      if (cat.isPerMetre(p)) c.m = m || Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3));
     }
     store.selConn = c.id; store.sel = new Set(); store.commit();
     const is = P.chainIssues(c.cable ? cat.get(c.cable) : null, c.ad ? cat.get(c.ad) : null, connInfo(c).a, connInfo(c).b);
@@ -867,7 +901,7 @@
   C.dropProduct = (pid, cx, cy, vsku) => {
     const r = vp.getBoundingClientRect(), conn = (cat.get(pid) || {}).cable ? wireAt(cx, cy) : null, el = conn ? null : cardAt(cx, cy);
     C.dragHover(null);
-    if (conn) return C.setConnCable(conn.id, pid);
+    if (conn) return C.setConnCable(conn.id, pid, vsku);
     if (cx < r.left || cx > r.right || cy < r.top || cy > r.bottom) return;
     if (store.doc.ci) { const w = toWorld(cx, cy); return C.placeMark(pid, w.x, w.y); }
     if (el) return C.replaceItem(el.dataset.id, pid);
@@ -973,7 +1007,8 @@
       return true;
     });
     it.x = snap(it.x + (measure(it).w - cardW(newP) * cardScale()) / 2);
-    it.pid = pid; it.face = 0; delete it.v; { const v = variantFor(cat.get(pid)); if (v) it.v = v.sku; } store.sel = new Set([id]); store.selConn = null; store.commit();
+    it.pid = pid; it.face = 0; delete it.v; delete it.len; { const v = variantFor(cat.get(pid)); if (v) it.v = v.sku; }
+    if (cat.isPerMetre(newP)) it.m = it.m || Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3)); else delete it.m; store.sel = new Set([id]); store.selConn = null; store.commit();
     const msg = (oldP.name || '?') + ' → ' + newP.name + '. ' + (kept + lost === 0 ? '' : lost
       ? t(kept + ' connection(s) kept, ' + lost + ' removed (no matching port).', kept + ' forbindelse(r) bevaret, ' + lost + ' fjernet (ingen matchende port).')
       : t('All ' + kept + ' connection(s) kept.', 'Alle ' + kept + ' forbindelse(r) bevaret.'));
