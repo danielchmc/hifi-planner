@@ -342,7 +342,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 66,
+     "availableQuantity": 64,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -535,6 +535,64 @@
   ],
   "bundleRelations": [
    {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 16397,
+     "priceFormatted": "16.397,-",
+     "priceBefore": 19397,
+     "priceBeforeFormatted": "19.397,-",
+     "priceSavingsFormatted": "3.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 16397,
+     "unitPriceBefore": 19397
+    },
+    "image": "https://images.hifiklubben.com/image/9033b6c1-8376-45c6-9aef-acc455be9fa6",
+    "ribbons": [
+     {
+      "text": "Spar 15%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "NAD C700 V2 + B&W 607 S3",
+    "url": "/nadc700v2-bw607s3/"
+   },
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 10697,
+     "priceFormatted": "10.697,-",
+     "priceBefore": 11697,
+     "priceBeforeFormatted": "11.697,-",
+     "priceSavingsFormatted": "1.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 10697,
+     "unitPriceBefore": 11697
+    },
+    "image": "https://images.hifiklubben.com/image/384bf6c1-41cf-43fc-875f-8ba446288f8d",
+    "ribbons": [
+     {
+      "text": "Spar 9%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "RCD-N12DAB + Bowers & Wilkins 607 S3",
+    "url": "/rcdn12dab-bw607s3/"
+   },
+   {
     "modelType": "Hjemmebio-system",
     "price": {
      "price": 31284,
@@ -593,36 +651,6 @@
     "image": "https://images.hifiklubben.com/image/a64fd012-bb94-4060-b40b-5670c1cf696d",
     "title": "DRA-900H + Bowers & Wilkins 607 S3",
     "url": "/dra-900h-bw607s3/"
-   },
-   {
-    "modelType": "Stereosystem til TV",
-    "price": {
-     "price": 11697,
-     "priceFormatted": "11.697,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 11697,
-     "unitPriceBefore": 11697
-    },
-    "image": "https://images.hifiklubben.com/image/384bf6c1-41cf-43fc-875f-8ba446288f8d",
-    "title": "RCD-N12DAB + Bowers & Wilkins 607 S3",
-    "url": "/rcdn12dab-bw607s3/"
-   },
-   {
-    "modelType": "Stereosystem til TV",
-    "price": {
-     "price": 19397,
-     "priceFormatted": "19.397,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 19397,
-     "unitPriceBefore": 19397
-    },
-    "image": "https://images.hifiklubben.com/image/9033b6c1-8376-45c6-9aef-acc455be9fa6",
-    "title": "NAD C700 V2 + B&W 607 S3",
-    "url": "/nadc700v2-bw607s3/"
    }
   ],
   "displayBookDemo": true,
