@@ -737,7 +737,9 @@
     const save = () => {
       const v = { no, name: name.value.trim().replace(/\s+/g, ' '), shop: HP.shop() };
       if (v.name.length < 2) { err.textContent = t('Enter your name.', 'Skriv dit navn.'); return name.focus(); }
-      err.textContent = ''; HP.saveSeller(v); onSave && onSave(v);
+      err.textContent = ''; HP.saveSeller(v);
+      if (!cur.name && HP.stat) HP.stat('Ny sælger oprettet', { navn: v.name }); // the login screen has told them their name is recorded
+      onSave && onSave(v);
     };
     setTimeout(() => name.focus(), 60);
     return h('.shopform', { onkeydown: (e) => e.key === 'Enter' && save() },

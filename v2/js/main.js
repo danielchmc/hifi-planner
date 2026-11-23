@@ -52,7 +52,7 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     // a customer's link (#t=…, from the QR code on a printed proposal): the proposal read only, without logging in
-    const tv = /^#t=(.+)$/.exec(location.hash); if (tv) return HP.cover.viewer(tv[1]);
+    const tv = /^#[tq]=(.+)$/.exec(location.hash); if (tv) return HP.cover.viewer(tv[1]); // #q= is the same link from the QR code
     HP.panels.login(() => {
       HP.panels.build(document.getElementById('app'));
       HP.share.openFromHash();

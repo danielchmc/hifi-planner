@@ -383,7 +383,9 @@
     },
     async url() { return location.href.split('#')[0] + '#p=' + (await HP.share.pack(store.doc)); },
     // the customer's link (#t=): the read-only proposal view, no login; on the public site even when printed from a local copy
-    async customerUrl(doc) { const base = /^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/'); return base + '#t=' + (await HP.share.pack(doc || store.doc)); },
+    // the customer's link: #t= when copied and sent, #q= in the QR code on the printed cover (the same page; the letter only tells
+    // the statistics how the customer got there)
+    async customerUrl(doc, qr) { const base = /^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/'); return base + (qr ? '#q=' : '#t=') + (await HP.share.pack(doc || store.doc)); },
     async openFromHash() {
       const m = /^#p=(.+)$/.exec(location.hash); if (!m) return false;
       history.replaceState(null, '', location.href.split('#')[0]);

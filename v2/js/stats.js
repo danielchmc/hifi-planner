@@ -33,7 +33,7 @@
     if (!on || !x || viewing() || !(window.umami && window.umami.identify)) return;
     try { window.umami.identify(x.name, { navn: x.name, butik: shop() }); } catch (e) { /* ignore */ } // the name only, never the seller number
   }
-  const viewing = () => /^#t=/.test(location.hash);
+  const viewing = () => /^#[tq]=/.test(location.hash);
   const page = () => (viewing() ? '/kunde' : '/planner');
 
   // send now if Umami is there, else keep it for when it is
@@ -61,6 +61,29 @@
   document.head.append(s);
 
   // the planner: a login or a change of seller counts (shop number only)
+  /* Activity: every 5 minutes, an "Aktiv" event, but only while the planner is the visible tab and the seller has used the mouse
+     or keyboard in those 5 minutes. Gives Umami a true visit length per shop and seller (the planner is a single page, so
+     otherwise a 40-minute session without tracked clicks looks short) and keeps Realtime current. Planner only. */
+  if (!viewing()) {
+    let last = Date.now(), sent = 0;
+    ['pointerdown', 'keydown', 'wheel', 'touchstart'].forEach((ev) => document.addEventListener(ev, () => { last = Date.now(); }, { passive: true, capture: true }));
+    setInterval(() => {
+      if (document.visibilityState !== 'visible' || Date.now() - last > 5 * 60e3 || !(HP.seller && HP.seller())) return;
+      sent++; HP.stat('Aktiv', { minutter: 5 });
+    }, 5 * 60e3);
+  }
+
+  /* Errors: anything that goes wrong in the planner or on the customer page, at most 5 different ones per visit, so bugs nobody
+     reports still show up (Events → "Fejl", with the message and where). */
+  const seen = new Set();
+  const fejl = (msg, where) => {
+    const k = String(msg).slice(0, 120) + '|' + where;
+    if (seen.has(k) || seen.size >= 5) return;
+    seen.add(k); HP.stat('Fejl', { besked: String(msg).slice(0, 120), hvor: String(where || '').replace(/^.*\/(?=[^/]+$)/, '').slice(0, 60) });
+  };
+  window.addEventListener('error', (e) => { if (e && e.message) fejl(e.message, (e.filename || '') + ':' + (e.lineno || '')); });
+  window.addEventListener('unhandledrejection', (e) => { const r = e && e.reason; fejl((r && (r.message || r)) || 'Promise rejected', (r && r.stack && (/\(?([^()\s]+:\d+):\d+\)?/.exec(r.stack.split('\n')[1] || '') || [])[1]) || ''); });
+
   // the planner: a login or a change of seller counts. Logging in from the login screen, which shows the notice, counts as seen.
   if (window.HP && HP.on) HP.on('seller', () => { const x = HP.seller && HP.seller(); if (x && HP.loginNoticeShown) HP.statsAck(x.no); identify(); HP.stat('Login'); });
 })();

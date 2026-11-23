@@ -47,7 +47,7 @@
     store.commit();
   }
   async function qrFor() {
-    const url = await HP.share.customerUrl();
+    const url = await HP.share.customerUrl(null, true);
     try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url }; }
     catch (e) { return { qrTooBig: true, url }; }
   }
@@ -62,7 +62,11 @@
     const st = () => { LS.set('coverRel', withRel.checked); stamp(name.value.trim(), withRel.checked); };
     const go = async () => {
       LS.set('cover', withCover.checked); st(); close();
-      HP.stat('Print', { forside: withCover.checked ? 'ja' : 'nej', relaterede: withRel.checked ? 'ja' : 'nej' });
+      { // what the proposal is worth: its total, how many products, and whether it has a system or a floor plan
+        const pr = C().priceRows(), d = store.doc, prods = d.items.filter((i) => i.kind === 'product');
+        HP.stat('Print', { forside: withCover.checked ? 'ja' : 'nej', relaterede: withRel.checked ? 'ja' : 'nej',
+          vaerdi: Math.round(pr.total), produkter: prods.length, system: prods.some((i) => i.sy) ? 'ja' : 'nej', plantegning: d.items.some((i) => i.kind === 'plan') || d.ci ? 'ja' : 'nej' });
+      }
       if (!withCover.checked) return C().print();
       C().print({ cover: build(await qrFor()) });
     };
@@ -133,7 +137,11 @@
     if (cv.r !== 0) { const rel = related(who); if (rel) page.append(rel); }
     // statistics: the customer opened the page, and which links they follow (to hifiklubben.dk, to call or write the adviser)
     // one event per kind of click, so Umami's Events view counts them apart; the product's name and SKU go with it
-    HP.stat('Kundeside åbnet', { butik: shop, relaterede: page.querySelectorAll('.rel-tile').length });
+    // where the customer came from (the QR code on paper, or a link sent to them) and which proposal it is: a short fingerprint of
+    // the link, so opening the same proposal again counts on the same one (nothing in it identifies the customer)
+    const kilde = /^#q=/.test(location.hash) ? 'QR-kode' : 'Link';
+    const tilbud = (() => { let x = 5381; for (const ch of String(payload || '')) x = ((x * 33) ^ ch.charCodeAt(0)) >>> 0; return x.toString(36).slice(0, 6); })();
+    HP.stat('Kundeside åbnet', { butik: shop, kilde, tilbud, relaterede: page.querySelectorAll('.rel-tile').length });
     page.addEventListener('click', (e) => {
       const a = e.target.closest('a[href]'); if (!a) return;
       const prod = () => { const el = a.closest('.rel-tile, tr, .item'); const n = el && el.querySelector('b, .nm, .pname'); return ((a.dataset.name || (n && n.textContent) || a.textContent || '').replace(/\s*↗\s*$/, '').trim()).slice(0, 80); };
