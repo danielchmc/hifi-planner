@@ -291,7 +291,7 @@
     HP.on('doc', doneUpd); setTimeout(doneUpd);
     const orient = h('button.tbtn#tb-orient', { title: t('Switch A4 portrait / landscape', 'Skift A4 stående / liggende'), onclick: () => { store.doc.orient = store.doc.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } }, icon('rotate'), h('span'));
     const publish = h('button.tbtn.publish#tb-publish', { onclick: () => HP.editor.publish() }, icon('cloud'), h('span'));
-    const adminBox = h('.tgroup.admin', null, tb('tb-editor', 'edit', t('Product Editor', 'Produkt-editor'), () => HP.editor.open(), { text: 1 }), publish);
+    const adminBox = h('.tgroup.admin', null, tb('tb-editor', 'edit', t('Product Editor', 'Produkt-editor'), () => HP.editor.open(), { text: 1 }), tb('tb-stats', 'chart', t('Statistics', 'Statistik'), () => Pn.stats()), publish);
     const bar = h('header#topbar', null,
       h('button.tbtn#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus'), h('span', null, t('Products', 'Produkter'))),
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
@@ -645,6 +645,29 @@
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
         h('h3', null, t('Categories', 'Kategorier')),
         h('.cattree', null, HP.CAT_TREE.map(([g, subs]) => h('details', null, h('summary', null, HP.catLabel(g)), h('ul', null, subs.map((s) => h('li', null, HP.catLabel(s)))))))) });
+  };
+
+  /* ---------- statistics (admin): Umami's read-only share page, embedded ----------
+     Umami Cloud's free plan has no API, so the modal shows the website's share URL (Umami → the website → Edit → Share URL, with
+     Realtime and Events ticked). The link is kept in this browser only (anyone with it can read the statistics). If Umami does
+     not allow being shown inside another page, the frame stays empty: "Åbn i ny fane" opens the same page. */
+  Pn.stats = () => {
+    const url = () => LS.get('umamiShare', '');
+    const body = h('.stats-body'), input = h('input', { type: 'url', placeholder: 'https://cloud.umami.is/share/…', value: url() });
+    const draw = () => {
+      body.textContent = '';
+      const u = url();
+      if (!/^https:\/\/[^/]+\/share\//.test(u)) {
+        body.append(h('p.muted', null, t('Paste the share link of the HiFi Planner website in Umami (Websites → Edit → Share URL; tick Realtime and Events). It is kept in this browser only.', 'Indsæt delingslinket til HiFi Planner-sitet i Umami (Websites → Edit → Share URL; sæt flueben ved Realtime og Events). Det gemmes kun i denne browser.')),
+          h('.row', null, input, h('button.btn.primary', { onclick: () => { LS.set('umamiShare', input.value.trim()); draw(); } }, t('Save', 'Gem'))));
+        return;
+      }
+      body.append(h('iframe.stats-frame', { src: u, title: 'Umami', referrerpolicy: 'no-referrer' }));
+    };
+    draw();
+    HP.modal({ title: t('Statistics', 'Statistik'), size: 'xl', body,
+      foot: [h('button.btn', { onclick: () => { LS.set('umamiShare', ''); input.value = ''; draw(); } }, t('Change link', 'Skift link')), h('.spacer'),
+        h('button.btn', { onclick: () => { if (url()) window.open(url(), '_blank', 'noopener'); } }, icon('link', 14), t('Open in a new tab', 'Åbn i ny fane'))] });
   };
 
   /* ---------- settings (shop, admin, GitHub) ---------- */

@@ -132,11 +132,15 @@
     draw(); window.addEventListener('resize', fit);
     if (cv.r !== 0) { const rel = related(who); if (rel) page.append(rel); }
     // statistics: the customer opened the page, and which links they follow (to hifiklubben.dk, to call or write the adviser)
-    HP.stat('Kundeside åbnet', { butik: shop });
+    // one event per kind of click, so Umami's Events view counts them apart; the product's name and SKU go with it
+    HP.stat('Kundeside åbnet', { butik: shop, relaterede: page.querySelectorAll('.rel-tile').length });
     page.addEventListener('click', (e) => {
       const a = e.target.closest('a[href]'); if (!a) return;
-      const kind = a.closest('.rel-tile') ? 'Relateret produkt' : /^tel:/.test(a.href) ? 'Ring' : /^mailto:/.test(a.href) ? 'Mail' : 'Produkt i tilbuddet';
-      HP.stat('Kundeside: klik', { hvad: kind, butik: shop });
+      const prod = () => { const el = a.closest('.rel-tile, tr, .item'); const n = el && el.querySelector('b, .nm, .pname'); return ((a.dataset.name || (n && n.textContent) || a.textContent || '').replace(/\s*↗\s*$/, '').trim()).slice(0, 80); };
+      if (a.closest('.rel-tile')) HP.stat('Kunde: relateret produkt', { produkt: prod(), sku: a.dataset.sku || '', butik: shop });
+      else if (/^tel:/.test(a.href)) HP.stat('Kunde: ring', { butik: shop });
+      else if (/^mailto:/.test(a.href)) HP.stat('Kunde: mail', { butik: shop });
+      else HP.stat('Kunde: produkt i tilbuddet', { produkt: prod(), butik: shop });
     });
     page.append(h('footer.view-foot', null,
       h('small', null, 'Din rådgiver'), h('b', null, cv.s || shop), h('span', null, shop),
@@ -156,7 +160,7 @@
     if (!list.length) return null;
     const tile = (x) => {
       const p = x.p, pr = HP.priceOf(p), url = HP.productUrl(p);
-      return h('a.rel-tile', { href: url || undefined, target: '_blank', rel: 'noopener' },
+      return h('a.rel-tile', { href: url || undefined, target: '_blank', rel: 'noopener', data: { sku: p.sku || '', name: (p.brand ? p.brand + ' ' : '') + p.name } },
         h('.rel-pic', null, p.img && p.img[0] ? HP.imgEl(p.img[0], 'thumb', { loading: 'lazy' }) : null),
         h('small', null, p.brand), h('b', null, p.name),
         h('span.rel-for', null, 'Passer til ' + x.for.name),

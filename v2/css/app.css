@@ -874,3 +874,8 @@ body.viewing > #app { display: none; }
 .portrow select.plug { min-width: 0; }
 .portrow select.plug.na { visibility: hidden; } /* keeps its column when the connector has no plug to choose */
 .cable-ends select.plug { margin-top: 4px; }
+
+/* v4.12: statistics (admin) — Umami's share page in a frame */
+.stats-body { min-height: 120px; }
+.stats-frame { display: block; width: 100%; height: min(72vh, 820px); border: 1px solid var(--line); background: #fff; }
+.stats-body .row input { flex: 1; }
