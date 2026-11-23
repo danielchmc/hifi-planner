@@ -31,7 +31,7 @@
   const CONNFN = Object.fromEntries(CONNS.map(([k, , f]) => [k, f]));
 
   // what stays between openings
-  const st = { sec: '', cat: '', types: new Set(), brands: new Set(), conns: new Set(), sale: false, bt: false, wifi: false, min: '', max: '', sort: 'rel', q: '', allBrands: false, sel: new Map(), colour: new Map() };
+  const st = { sec: '', cat: '', types: new Set(), brands: new Set(), conns: new Set(), sale: false, bt: false, wifi: false, min: '', max: '', sort: 'rel', q: '', allBrands: false, sel: new Map(), colour: new Map(), len: new Map() };
   let root = null, shown = 0, hits = [], io = null;
 
   const isSys = () => st.sec === '@systems';
@@ -50,8 +50,24 @@
   function pool() {
     const w = words();
     if (isSys()) return cat.systems().filter((b) => w.every((x) => sysText(b).includes(x)));
-    return cat.products().filter((p) => !p.gone && w.every((x) => p._hay.includes(x)));
+    return items().filter((p) => (cat.findable(p, w) || cableIn(p, w)) && w.every((x) => cat.matchWord(p, x) || cableIn(p, [x])));
   }
+  // products, and each cable once (a cable's length cards and website lengths are one tile with a length choice, as in the sidebar)
+  let itemsCache = null, itemsVer = -1;
+  function items() {
+    if (itemsCache && itemsVer === cat.version) return itemsCache;
+    const seen = new Set();
+    itemsCache = cat.list.filter((p) => {
+      if (!p.cable) return true;
+      const G = cat.cableGroup(p); if (!G) return !p.gone;
+      if (seen.has(G.key) || p !== G.rep) return false; seen.add(G.key); return !G.rep.gone;
+    });
+    itemsVer = cat.version; return itemsCache;
+  }
+  // a search word that fits one of the cable's other cards (a length's own name or SKU)
+  const cableIn = (p, w) => { const G = p.cable && cat.cableGroup(p); return !!G && w.length > 0 && w.every((x) => G.members.some((m) => !m.gone && cat.matchWord(m, x))); };
+  const groupOf = (p) => (p.cable && cat.hasLengths(p) ? cat.cableGroup(p) : null);
+  const priceOf = (p) => { const G = groupOf(p); return G ? G.min : p.price; };
   function pass(p, skip) {
     if (isSys()) {
       const b = p;
@@ -69,7 +85,7 @@
     if (skip !== 'bt' && st.bt && !p.bt) return false;
     if (skip !== 'wifi' && st.wifi && !p.wifi) return false;
     if (skip !== 'conn' && [...st.conns].some((k) => !CONNFN[k](p))) return false;
-    if (skip !== 'price' && ((st.min !== '' && p.price < +st.min) || (st.max !== '' && p.price > +st.max))) return false;
+    if (skip !== 'price' && ((st.min !== '' && priceOf(p) < +st.min) || (st.max !== '' && priceOf(p) > +st.max))) return false;
     return true;
   }
   const count = (list, by) => { const m = new Map(); list.forEach((x) => { const k = by(x); if (k) m.set(k, (m.get(k) || 0) + 1); }); return m; };
@@ -144,14 +160,14 @@
     const w = words().join(' '), loc = (a, b) => a.localeCompare(b, 'da');
     const name = (x) => isSys() ? cat.systemName(x) : x.brand + ' ' + x.name;
     const rel = (x) => { if (!w) return 0; const n = name(x).toLowerCase(), sku = String(x.sku || '').toLowerCase(); return sku === w ? 0 : sku.startsWith(w) ? 1 : n.includes(w) ? 2 : 3; };
-    const by = { pa: (a, b) => a.price - b.price, pd: (a, b) => b.price - a.price, name: (a, b) => loc(isSys() ? name(a) : a.name, isSys() ? name(b) : b.name), brand: (a, b) => loc(a.brand, b.brand) || loc(name(a), name(b)) }[st.sort];
+    const by = { pa: (a, b) => (isSys() ? a.price - b.price : priceOf(a) - priceOf(b)), pd: (a, b) => (isSys() ? b.price - a.price : priceOf(b) - priceOf(a)), name: (a, b) => loc(isSys() ? name(a) : a.name, isSys() ? name(b) : b.name), brand: (a, b) => loc(a.brand, b.brand) || loc(name(a), name(b)) }[st.sort];
     const idx = new Map(hits.map((x, i) => [x, i]));
     hits.sort(by || ((a, b) => rel(a) - rel(b) || idx.get(a) - idx.get(b)));
   }
 
   function drawMenu(all) {
     const nav = root.querySelector('.kat-menu'); nav.textContent = '';
-    const prods = isSys() ? cat.products().filter((p) => !p.gone && words().every((x) => p._hay.includes(x))) : all;
+    const prods = isSys() ? items().filter((p) => cat.findable(p, words()) && words().every((x) => cat.matchWord(p, x))) : all;
     const nSys = isSys() ? all.length : cat.systems().filter((b) => words().every((x) => sysText(b).includes(x))).length;
     MENU.forEach(([id, label]) => {
       const n = id === '@systems' ? nSys : prods.filter((p) => section(p) === id).length;
@@ -168,8 +184,8 @@
     box.hidden = !st.sec || isSys();
     if (box.hidden) return;
     const n = count(all.filter((p) => pass(p, 'cat')), catOf);
-    HP.CAT_TREE.find((x) => x[0] === st.sec)?.[1].filter((c) => cat.products().some((p) => catOf(p) === c)).forEach((c) => {
-      if (!catPic.has(c)) { const p = cat.products().find((x) => catOf(x) === c && !x.web && !x.gone && (x.img || [])[0]) || cat.products().find((x) => catOf(x) === c && (x.img || [])[0]); catPic.set(c, p ? p.img[0] : ''); }
+    HP.CAT_TREE.find((x) => x[0] === st.sec)?.[1].filter((c) => items().some((p) => catOf(p) === c)).forEach((c) => {
+      if (!catPic.has(c)) { const p = items().find((x) => catOf(x) === c && !x.web && !x.gone && (x.img || [])[0]) || items().find((x) => catOf(x) === c && (x.img || [])[0]); catPic.set(c, p ? p.img[0] : ''); }
       box.append(h('button.kat-cat' + (st.cat === c ? '.on' : ''), { disabled: !n.get(c) && st.cat !== c, onclick: () => { st.cat = st.cat === c ? '' : c; st.types.clear(); render(); } },
         h('span.pic', null, catPic.get(c) ? HP.imgEl(catPic.get(c), 'thumb', { loading: 'lazy' }) : null),
         h('span.klbl', null, HP.catLabel(c)), h('span.n', null, n.get(c) || 0)));
@@ -250,7 +266,7 @@
     return el;
   }
   function toggle(k, el) {
-    if (st.sel.has(k)) st.sel.delete(k); else st.sel.set(k, { k, v: el.dataset.v || undefined });
+    if (st.sel.has(k)) st.sel.delete(k); else st.sel.set(k, { k, v: el.dataset.v || undefined, id: el.dataset.pid || undefined });
     el.classList.add('pop'); setTimeout(() => el.classList.remove('pop'), 180);
     el.classList.toggle('sel', st.sel.has(k)); const c = el.querySelector('.kat-pick input'); if (c) c.checked = st.sel.has(k);
     drawBar();
@@ -258,7 +274,41 @@
   function priceBlock(price, was) {
     return h('.kat-price-l', null, h('b' + (was ? '.red' : ''), null, HP.money(price)), was ? h('s', null, t('Before ', 'Før ') + HP.money(was)) : null);
   }
+  // price with a colour (v) or a cable length without a card of its own (v = its SKU)
+  const priceWith = (p, v) => {
+    const l = v && (p.lens || []).find((x) => x.sku === v); if (l) return l.price;
+    if (cat.isPerMetre(p)) return (p.price || 0) * Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3)); // the metres it is added with
+    return HP.priceOf(p, v ? { v } : null).price;
+  };
+  // "No ports yet" is a to-do for admins: a website product that is drawn and wired (scope diagram) but has no ports yet; not
+  // for accessories, cables or wireless headphones, which have none and need none
+  const needsPorts = (p) => HP.isAdmin() && p.web && p.scope === 'diagram' && !p.cable && !((p.in || []).length || (p.out || []).length) && !(/høretelefon|headset|in-ear/i.test(p.ty || '') && (p.bt || p.wifi));
+  // a cable: one tile, its lengths as named buttons (the one searched for, else the one used last); by the metre: the price per metre
+  function cableTile(p, G) {
+    const k = key(p);
+    const o = G.metre ? null : (G.opts[st.len.get(G.key)] || cat.pickOpt(G, words()));
+    const card = o ? cat.get(o.id) : G.rep, img = (card.img || [])[0] || (p.img || [])[0] || '';
+    const pic = h('.kat-pic', null, img ? HP.imgEl(img, 'card', { loading: 'lazy' }) : h('span.noimg', null, icon('page', 28)), o && o.was > o.price ? h('span.kat-save', null, t('Save ', 'Spar ') + pct(o.was, o.price) + '%') : null);
+    // four lengths around the chosen one, and "+N": a list of all of them
+    const pickLen = (i, tile) => { const x = G.opts[i]; st.len.set(G.key, i); if (st.sel.has(k)) Object.assign(st.sel.get(k), { id: x.id, v: x.lv || undefined }); tile.replaceWith(cableTile(p, G)); drawBar(); };
+    const ci = o ? G.opts.indexOf(o) : 0, from = Math.max(0, Math.min(ci - 1, G.opts.length - 4)), win = G.opts.slice(from, from + 4);
+    const sw = o ? h('.kat-sw.lens', null, win.map((x) => h('button.sw' + (x === o ? '.on' : ''), { title: x.label + ' · ' + HP.money(x.price),
+      onclick: (e) => { e.stopPropagation(); pickLen(G.opts.indexOf(x), e.target.closest('.kat-tile')); } }, h('span.swt', null, x.label))),
+      G.opts.length > 4 ? h('button.sw.more', { title: t('All lengths', 'Alle længder'), onclick: (e) => {
+        e.stopPropagation(); const tile = e.target.closest('.kat-tile'), r = e.currentTarget.getBoundingClientRect();
+        HP.menu(r.left, r.bottom + 4, [{ head: t('Length', 'Længde') }].concat(G.opts.map((x, i) => ({ label: x.label + '  ·  ' + HP.money(x.price), on: x === o, fn: () => pickLen(i, tile) }))));
+      } }, h('span.swt', null, '+' + (G.opts.length - 4))) : null) : null;
+    const base = C().stripLen(p.name) || p.name;
+    const el = tileShell(k, [pic, sw,
+      h('.kat-brand', null, p.brand), h('.kat-name', null, base), h('.kat-type', null, typeOf(p) + (o ? ' · ' + o.label : ' · ' + t('sold by the metre', 'sælges i metermål'))),
+      G.metre ? h('.kat-price-l', null, h('b', null, HP.money(p.price)), h('span.muted', null, ' / m')) : priceBlock(o.price, o.was > o.price ? o.was : 0),
+      h('.kat-tags', null)],
+      () => { C().addProductCenter(card.id, el.dataset.v || undefined); HP.toast(p.brand + ' ' + base + (o ? ' ' + o.label : '') + t(' added', ' tilføjet'), { kind: 'ok' }); });
+    el.dataset.pid = card.id; if (o && o.lv) el.dataset.v = o.lv;
+    return el;
+  }
   function prodTile(p) {
+    const G = groupOf(p); if (G) return cableTile(p, G);
     // colour: the one picked on this tile, else the one the search points at, else the first
     const k = key(p), vs = p.vars || [];
     const cur = vs.find((x) => x.sku === st.colour.get(p.id)) || HP.matchVariant(p, words()) || null;
@@ -273,7 +323,7 @@
     const el = tileShell(k, [pic, sw,
       h('.kat-brand', null, p.brand), h('.kat-name', null, p.name), h('.kat-type', null, typeOf(p) + (cur && vs.length > 1 ? ' · ' + cur.label : '')),
       priceBlock(pr.price, pr.was > pr.price ? pr.was : 0),
-      h('.kat-tags', null, p.bt ? h('span', null, 'BT') : null, p.wifi ? h('span', null, 'WiFi') : null, p.web ? h('span.warn', null, t('No ports yet', 'Ingen porte endnu')) : null)],
+      h('.kat-tags', null, p.bt ? h('span', null, 'BT') : null, p.wifi ? h('span', null, 'WiFi') : null, needsPorts(p) ? h('span.warn', { title: t('Add its inputs/outputs in the Editor (Review)', 'Tilføj ind-/udgange i Editoren (Gennemse)') }, t('No ports yet', 'Ingen porte endnu')) : null)],
       () => { C().addProductCenter(p.id, el.dataset.v || undefined); HP.toast(p.brand + ' ' + p.name + t(' added', ' tilføjet'), { kind: 'ok' }); });
     if (cur) el.dataset.v = cur.sku;
     return el;
@@ -292,7 +342,7 @@
     bar.hidden = !st.sel.size;
     if (!st.sel.size) return;
     let sum = 0;
-    st.sel.forEach(({ k, v }) => { if (k[0] === 's') { const b = cat.system(k.slice(2)); sum += b ? b.price : 0; } else { const p = cat.get(k.slice(2)); if (p) sum += HP.priceOf(p, v ? { v } : null).price; } });
+    st.sel.forEach(({ k, v, id }) => { if (k[0] === 's') { const b = cat.system(k.slice(2)); sum += b ? b.price : 0; } else { const p = cat.get(id || k.slice(2)); if (p) sum += priceWith(p, v); } });
     bar.append(h('span.kat-sel', null, st.sel.size + ' ' + t('selected', 'valgt') + ' · ' + HP.money(sum)),
       h('span.kat-hint', null, t('Click selects · double-click adds at once', 'Klik vælger · dobbeltklik tilføjer med det samme')),
       h('button.btn.kat-clear', { onclick: () => { st.sel.clear(); render(true); } }, t('Clear selection', 'Fravælg')),
@@ -300,7 +350,7 @@
   }
   function addSelection() {
     const prods = [], syss = [];
-    st.sel.forEach(({ k, v }) => (k[0] === 's' ? syss.push(k.slice(2)) : prods.push({ id: k.slice(2), v })));
+    st.sel.forEach(({ k, v, id }) => (k[0] === 's' ? syss.push(k.slice(2)) : prods.push({ id: id || k.slice(2), v })));
     if (!prods.length && !syss.length) return;
     st.sel.clear(); close();
     if (prods.length === 1 && !syss.length) C().addProductCenter(prods[0].id, prods[0].v);

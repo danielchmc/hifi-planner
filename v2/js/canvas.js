@@ -861,13 +861,18 @@
     return (want && vs.find((x) => x.sku === want)) || vs.find((x) => x.sku === p.sku) || vs[0];
   };
   C.variantFor = variantFor;
+  // a new card's variant: a cable length without a card of its own (item.len), else the colour searched for or picked, else the
+  // default variant; cable sold by the metre gets the metres last used, else 3
+  function choose(it, p, vsku) {
+    if (vsku && (p.lens || []).some((l) => l.sku === vsku)) it.len = vsku;
+    else { const v = variantFor(p, vsku); if (v) it.v = v.sku; }
+    if (cat.isPerMetre(p)) it.m = Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3));
+  }
   C.addProduct = (pid, wx, wy, vsku) => {
     const p = cat.get(pid), d = store.doc; if (!p) return null;
     const s = cardScale(), w = cardW(p) * s, hh = (170 + Math.max((p.in || []).length, (p.out || []).length) * 17) * s;
     const it = { id: HP.uid(), kind: 'product', pid, x: snap(wx - w / 2), y: snap(wy - hh / 2), face: 0 };
-    if (vsku && (p.lens || []).some((l) => l.sku === vsku)) it.len = vsku; // a cable length without a card of its own
-    else { const v = variantFor(p, vsku); if (v) it.v = v.sku; } // the colour searched for, else the default variant
-    if (cat.isPerMetre(p)) it.m = Math.max(1, Math.round(+HP.LS.get('cableLen', 0) || 3)); // cable sold by the metre: the metres last used, else 3
+    choose(it, p, vsku);
     d.items.push(it); store.sel = new Set([it.id]); store.selConn = null; store.commit();
     return it;
   };
@@ -880,7 +885,7 @@
     const rw = rows.map((r) => r.reduce((a, x) => a + W(x), 0) + G * (r.length - 1)), rh = rows.map((r) => Math.max(...r.map(H)));
     const c = centerWorld(), totH = rh.reduce((a, b) => a + b, 0) + G * (rows.length - 1);
     let y = c.y - totH / 2; const ids = [];
-    rows.forEach((r, ri) => { let x = c.x - rw[ri] / 2; r.forEach((e) => { const it = { id: HP.uid(), kind: 'product', pid: e.p.id, x: snap(x), y: snap(y), face: 0 }; { const v = variantFor(e.p, e.v); if (v) it.v = v.sku; } d.items.push(it); ids.push(it.id); x += W(e) + G; }); y += rh[ri] + G; });
+    rows.forEach((r, ri) => { let x = c.x - rw[ri] / 2; r.forEach((e) => { const it = { id: HP.uid(), kind: 'product', pid: e.p.id, x: snap(x), y: snap(y), face: 0 }; choose(it, e.p, e.v); d.items.push(it); ids.push(it.id); x += W(e) + G; }); y += rh[ri] + G; });
     store.sel = new Set(ids); store.selConn = null; store.commit();
     return ids;
   };
