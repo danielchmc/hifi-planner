@@ -879,3 +879,4 @@ body.viewing > #app { display: none; }
 .stats-body { min-height: 120px; }
 .stats-frame { display: block; width: 100%; height: min(72vh, 820px); border: 1px solid var(--line); background: #fff; }
 .stats-body .row input { flex: 1; }
+.stats-note { margin: 12px 0 4px; font-size: 12px; line-height: 1.45; color: var(--muted); }

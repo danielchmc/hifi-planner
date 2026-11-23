@@ -58,6 +58,7 @@
       HP.share.openFromHash();
       window.addEventListener('hashchange', () => HP.share.openFromHash());
       document.addEventListener('keydown', keys);
+      if (HP.statsNoticeOnce) HP.statsNoticeOnce(); // tells a seller once that their activity is recorded with their name
       if (!LS.get('toured', false)) {
         LS.set('toured', true);
         HP.toast(t('New here? Take the one-minute guided tour.', 'Ny her? Tag den guidede rundvisning på et minut.'), { ms: 12000, action: { label: t('Start tour', 'Start rundvisning'), fn: HP.tour.start } });

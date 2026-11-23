@@ -702,6 +702,7 @@
         h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { LS.del('shop'); LS.del('seller'); location.reload(); } }, t('Switch shop', 'Skift butik'))),
         h('h3', null, t('Seller', 'Sælger')), HP.seller() ? Pn.sellerForm(HP.seller().no, () => HP.toast(t('Seller saved', 'Sælger gemt'), { kind: 'ok' })) : '',
         h('.row', null, h('button.link', { onclick: () => { closeSettings(); Pn.switchSeller(); } }, t('Switch seller', 'Skift sælger'))),
+        HP.statsNotice && HP.config.analytics && HP.config.analytics.umami ? h('p.muted.stats-note', null, HP.statsNotice()) : null,
         h('h3', null, 'Admin'), adminPane] });
   };
 
@@ -778,7 +779,9 @@
       card.replaceChildren(card.firstChild, h('h2', null, shop.name), h('p.muted', null, t('Shop ', 'Butik ') + shop.no + ' · ' + t('Who is using HiFi Planner?', 'Hvem bruger HiFi Planner?')),
         list.length ? h('.seller-list', null, list) : '',
         h('.row', null, input, h('button.btn.primary', { onclick: go }, t('Log in', 'Log ind'))), err,
+        HP.statsNotice && HP.config.analytics && HP.config.analytics.umami ? h('p.stats-note', null, HP.statsNotice()) : null,
         h('button.link', { onclick: () => { LS.del('shop'); step1(); } }, t('Another shop', 'Anden butik')));
+      HP.loginNoticeShown = !!(HP.config.analytics && HP.config.analytics.umami);
       setTimeout(() => input.focus(), 50);
     };
     function step1() {

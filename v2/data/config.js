@@ -10,7 +10,7 @@ window.HP_DATA.config = {
   github: { owner: "danielchmc", repo: "hifi-planner", branch: "main", path: "v2" },
   // The address of the live planner: the QR code on a printed proposal links here, also when printed from a local copy.
   publicUrl: "https://hifiplanner.dk/v2/",
-  // Usage statistics (Umami, cookieless): the website id from cloud.umami.is. Empty = off. Counted per shop number only.
+  // Usage statistics (Umami, cookieless): the website id from cloud.umami.is. Empty = off. Per shop, and per seller once told (js/stats.js).
   analytics: { umami: "717c1877-66cd-4ee1-bc50-c35c302b5995" },
   supportPhone: "30686303",
   feedbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc84cmZgNr_lxXG7VqGd6xRD4UWbcvBiuaOobcauY2_yj3aMA/viewform?usp=dialog"
