@@ -365,7 +365,9 @@
   const portDef = (itemId, side, key) => { const it = store.item(itemId), p = it && cat.get(it.pid); return p && (p[side] || []).find((x) => x.key === key); };
   function connInfo(c) {
     const a = portDef(c.a.item, 'out', c.a.key), b = portDef(c.b.item, 'in', c.b.key);
-    return { a, b, conn: a ? P.conn(a.conn, a) : 'other', color: a ? P.colorOf(a) : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn)), cable: c.cable ? cat.get(c.cable) : null };
+    const cable = c.cable ? cat.get(c.cable) : null;
+    return { a, b, conn: a ? P.conn(a.conn, a) : 'other', color: a ? P.colorOf(a) : 'other', warn: !!(a && b && !P.compatible(a.conn, b.conn)), cable,
+      plugs: cable && a && b ? P.plugIssues(cable, a, b) : [] }; // male/female or mono/stereo that does not fit
   }
   C.connInfo = connInfo;
 
@@ -414,9 +416,11 @@
       wiresSvg.append(g);
       [[c.a, 'out'], [c.b, 'in']].forEach(([e, side]) => { const el = els.get(e.item), pe = el && el.querySelector('.port.' + side + '[data-key="' + e.key + '"]'); if (pe) pe.classList.add('on'); });
       if (info.cable || info.warn) {
-        chipsEl.append(h('.chip.c-' + info.color + (info.warn ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
-          title: info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : t('Connector types do not match', 'Stiktyperne passer ikke sammen') },
-          info.warn && icon('warn', 11), info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
+        const pw = info.plugs.length, bad = info.warn || pw;
+        chipsEl.append(h('.chip.c-' + info.color + (bad ? '.warn' : '') + (sel ? '.sel' : ''), { data: { id: c.id }, style: { left: r.mid[0] + 'px', top: r.mid[1] + 'px' },
+          title: (info.cable ? info.cable.brand + ' ' + C.cableName(c, info.cable) + ' · ' + HP.money(C.cablePrice(c, info.cable)) : t('Connector types do not match', 'Stiktyperne passer ikke sammen'))
+            + (pw ? '\n⚠ ' + info.plugs.map((x) => t(x.en, x.da)).join('\n⚠ ') : '') },
+          bad && h('span.no-print', null, icon('warn', 11)), info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : t('Mismatch', 'Passer ikke')));
       }
     });
   }

@@ -63,4 +63,33 @@ function deriveEnds({ name, model, typeKey, stik, set }) {
   return { ends: ['other', 'other'], how: 'guess' };
 }
 
-module.exports = { deriveEnds, tokens };
+/* A cable's plugs at each end: male/female (eg) and how many channels (ech: 1 = mono, a single RCA or a TS jack; 2 = stereo, an
+   RCA pair or a TRS jack). Only for cables with an RCA, jack or XLR end. Evidence, strongest first:
+     name   genders written in the name, as on Y-splitters: "(1F/2M)" = one female plug ↔ two male plugs; "mono"/"stereo"
+     type   the website's cable type: a subwoofer, coaxial, digital or AES/EBU cable is mono, a signal or minijack cable stereo;
+            cables are male at both ends unless the name says otherwise
+     guess  nothing above settles it: stereo, male at both ends, listed in build/plugs.md for checking in the Editor */
+const AUDIO_END = new Set(['rca', 'minijack', 'jack', 'jack25', 'jack44', 'xlr']);
+const MONO_TYPE = new Set(['SubwooferCable', 'CoaxialCabel', 'DigitalCable', 'AesEbuCabel']);
+const STEREO_TYPE = new Set(['SignalCable', 'MiniJackCable']);
+function derivePlugs({ name, model, typeKey, ends }) {
+  if (!ends || !ends.some((c) => AUDIO_END.has(c))) return null;
+  const text = String(name || '') + ' ' + String(model || '');
+  const g = /(\d)?\s*([MF])\s*\/\s*(\d)?\s*([MF])\b/.exec(text) || /\b(\d)\s*([MF])\s+(\d)\s*([MF])\b/.exec(text); // "(1F/2M)", "M/F", "2M 1F"
+  if (g) return { eg: [g[2].toLowerCase(), g[4].toLowerCase()], ech: [+(g[1] || 1) > 1 ? 2 : 1, +(g[3] || 1) > 1 ? 2 : 1], how: 'name' };
+  // "DIN Female - 4xRCA": the gender written next to one end's connector
+  if (/\b(female|male|hun|han)\b/i.test(text)) {
+    const segs = String(name || '').split(/\s+-\s+/), eg = ['m', 'm'];
+    ends.forEach((c, i) => { const seg = segs.find((x) => tokens(x).includes(c)); if (seg && /\b(female|hun)\b/i.test(seg)) eg[i] = 'f'; });
+    const ech = ends.map((c, i) => { const seg = segs.find((x) => tokens(x).includes(c)) || ''; return /\bmono\b|\b1\s*x\s*rca/i.test(seg) ? 1 : 2; });
+    return { eg, ech, how: 'name' };
+  }
+  if (/\bmono\b/i.test(text)) return { eg: ['m', 'm'], ech: [1, 1], how: 'name' };
+  if (/\bstereo\b/i.test(text)) return { eg: ['m', 'm'], ech: [2, 2], how: 'name' };
+  if (/\bsub(woofer)?\b|\bcoax(ial)?\b|\blfe\b/i.test(text)) return { eg: ['m', 'm'], ech: [1, 1], how: 'name' };
+  if (MONO_TYPE.has(typeKey)) return { eg: ['m', 'm'], ech: [1, 1], how: 'type' };
+  if (STEREO_TYPE.has(typeKey)) return { eg: ['m', 'm'], ech: [2, 2], how: 'type' };
+  return { eg: ['m', 'm'], ech: [2, 2], how: 'guess' };
+}
+
+module.exports = { deriveEnds, derivePlugs, tokens };

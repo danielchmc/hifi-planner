@@ -183,6 +183,56 @@
     return 0;
   }
 
+  /* ---- plugs: male/female and mono/stereo (RCA, minijack, jack, XLR) ----
+     Worked out by rules, never stored unless set by hand: a device's sockets are female (XLR outputs male); a port carries two
+     channels (a stereo RCA pair, a TRS jack) unless what it carries is mono by nature (sub, coaxial, digital, video, trigger, AES,
+     mic) or its label names one channel (…L, …R, LFE, MONO). A port can override with g ('m'/'f') and ch (1/2), e.g. a product
+     with a fixed cable ending in plugs. A cable's ends: eg (genders) and ech (channels) from the catalogue build or the Editor;
+     without them a cable is male at both ends, mono if it is a sub or coaxial cable, else stereo. */
+  const AUDIO = new Set(['rca', 'minijack', 'jack', 'jack25', 'jack44', 'xlr']);
+  const MONO_SIG = new Set(['sub', 'coax', 'digital', 'video', 'trigger', 'aes', 'mic', 'bnc']);
+  const ONE_CH = (label) => !!LR(label) || (/\b(LFE|MONO)\b/i.test(String(label || '')) && !/STEREO/i.test(String(label || '')));
+  function plug(port, side) {
+    if (!port) return null;
+    const c = conn(port.conn, port, side);
+    if (!AUDIO.has(c)) return null;
+    const g = port.g === 'm' || port.g === 'f' ? port.g : c === 'xlr' && side === 'out' ? 'm' : 'f';
+    const ch = port.ch === 1 || port.ch === 2 ? port.ch : MONO_SIG.has(port.sig) || ONE_CH(port.label) ? 1 : 2;
+    return { conn: c, g, ch, auto: !(port.g || port.ch) };
+  }
+  function cablePlugs(cable) {
+    const E = cableEnds(cable); if (!E) return null;
+    const name = String((cable && cable.name) || '') + ' ' + String((cable && cable.ty) || '');
+    const monoGuess = /\bsub(woofer)?\b|coax|digital|mono|\blfe\b/i.test(name) ? 1 : 2;
+    return E.map((c, i) => ({ conn: c, g: (cable.eg && cable.eg[i]) || 'm', ch: (cable.ech && cable.ech[i]) || monoGuess }));
+  }
+  const PLUG_TXT = { m: '♂', f: '♀' };
+  const plugText = (x) => (!x ? '' : !AUDIO.has(x.conn) ? CONNECTORS[x.conn] || x.conn : (x.conn === 'rca' || x.conn === 'xlr' ? (x.ch === 2 ? '2× ' : '1× ') + (CONNECTORS[x.conn] || x.conn) : (CONNECTORS[x.conn] || x.conn) + (x.ch === 2 ? ' stereo' : ' mono')) + ' ' + PLUG_TXT[x.g]);
+  // what does not fit when this cable joins these two ports (out port a, in port b): [{ code, en, da }], empty when all is well.
+  // The cable is turned the way its connectors fit; if both ways fit, the way with fewer problems.
+  function plugIssues(cable, a, b) {
+    const E = cablePlugs(cable), pa = plug(a, 'out'), pb = plug(b, 'in');
+    if (!E || (!pa && !pb)) return [];
+    const A = conn(a && a.conn, a, 'out'), B = conn(b && b.conn, b, 'in');
+    const ways = [[E[0], E[1]], [E[1], E[0]]].filter(([x, y]) => (!pa || x.conn === A) && (!pb || y.conn === B));
+    if (!ways.length) return []; // the connectors themselves do not fit: cableFit and the connector warning cover that
+    // a connection is as mono as its mono side: a SUB OUT (one RCA) into a subwoofer's stereo LINE IN takes a mono cable (into L/LFE)
+    const eff = pa && pb ? Math.min(pa.ch, pb.ch) : (pa || pb).ch;
+    const check = (p, e) => {
+      const out = [];
+      if (!p || !e) return out;
+      const ech = e.ch === p.ch || e.ch === eff ? p.ch : e.ch; // the end fits this port, or the connection as a whole
+      if (p.g === e.g) out.push(p.g === 'f' ? { code: 'ff', en: 'Both female: a cable with male plugs (or an adapter) is needed', da: 'Begge hunstik: der skal bruges et kabel med hanstik (eller en adapter)' }
+        : { code: 'mm', en: 'Both male: a female socket (or an adapter) is needed', da: 'Begge hanstik: der skal bruges et hunstik (eller en adapter)' });
+      if (p.ch === 2 && ech === 1) out.push({ code: 'mono', en: 'Mono cable on a stereo connection: only one channel gets through', da: 'Monokabel på en stereoforbindelse: kun den ene kanal kommer igennem' });
+      if (p.ch === 1 && ech === 2) out.push({ code: 'stereo', en: 'Stereo cable on a mono connection: one plug is left over', da: 'Stereokabel på en monoforbindelse: et stik er i overskud' });
+      return out;
+    };
+    const res = ways.map(([x, y]) => check(pa, x).concat(check(pb, y)));
+    const best = res.sort((u, v) => u.length - v.length)[0];
+    return best.filter((x, i) => best.findIndex((y) => y.code === x.code) === i);
+  }
+
   /* ---- replacing a card: map each used port of the old product to the new one ---- */
   function mapPorts(oldPorts, newPorts, usedKeys) {
     const map = {}, taken = new Set();
@@ -270,5 +320,5 @@
     return out;
   }
 
-  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire };
+  HP.ports = { CONNECTORS, SIGNALS, SIG, slug, makePort, parseLegacy, uniqueKeys, compatible, cableFit, cableEnds, mapPorts, family, conn, colorOf, autoWire, AUDIO, plug, cablePlugs, plugText, plugIssues };
 })();

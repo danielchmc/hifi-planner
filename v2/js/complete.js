@@ -35,7 +35,8 @@
     const ia = store.item(c.a.item), ib = store.item(c.b.item), pa = ia && cat.get(ia.pid), pb = ib && cat.get(ib.pid);
     const rec = new Set([...((pa && pa.acc) || []), ...((pb && pb.acc) || [])]);
     const info = C().connInfo(c), last = (LS.get('cableFor', {}) || {})[plugKey(info.a, info.b)];
-    const rank = (G) => (G.members.some((p) => rec.has(p.id)) ? 0 : 2) - (G.key === last ? 1 : 0);
+    const iss = (G) => (P.plugIssues(G.rep, info.a, info.b).length ? 10 : 0); // plugs that fit (male/female, mono/stereo) come first
+    const rank = (G) => iss(G) + (G.members.some((p) => rec.has(p.id)) ? 0 : 2) - (G.key === last ? 1 : 0);
     return gs.slice().sort((x, y) => rank(x) - rank(y) || x.min - y.min)[0] || null;
   }
   // default length: speaker cable by the metre 3 m; otherwise the shortest of at least 1 m
@@ -89,7 +90,8 @@
       rows.forEach((r) => {
         const info = C().connInfo(r.c), ia = store.item(r.c.a.item), ib = store.item(r.c.b.item), pa = cat.get(ia.pid), pb = cat.get(ib.pid);
         const what = h('.cmp-conn', null, h('span', null, pa.name + ' ', h('em', null, info.a.label)), h('span.arr', null, '→'), h('span', null, pb.name + ' ', h('em', null, info.b.label)));
-        const price = h('span.cmp-price');
+        const price = h('span.cmp-price'), warn = h('.cmp-warn');
+        const drawWarn = () => { warn.textContent = ''; const is = r.G ? P.plugIssues(r.G.rep, info.a, info.b) : []; if (is.length) warn.append(icon('warn', 12), is.map((x) => t(x.en, x.da)).join(' · ')); };
         const lenBox = h('span.cmp-len');
         const drawLen = () => {
           lenBox.textContent = '';
@@ -101,11 +103,11 @@
           price.textContent = HP.money(priceOf(r));
         };
         const rec = (G) => { const ia2 = cat.get(ia.pid), ib2 = cat.get(ib.pid); return G.members.some((p) => ((ia2.acc || []).concat(ib2.acc || [])).includes(p.id)); };
-        const cableSel = r.gs.length ? h('select.cmp-cable', { onchange: (e) => { r.G = r.gs.find((G) => G.key === e.target.value); r.o = defaultOpt(r.G); drawLen(); sum(); } },
+        const cableSel = r.gs.length ? h('select.cmp-cable', { onchange: (e) => { r.G = r.gs.find((G) => G.key === e.target.value); r.o = defaultOpt(r.G); drawLen(); drawWarn(); sum(); } },
           r.gs.slice().sort((x, y) => (rec(y) - rec(x)) || x.min - y.min).map((G) => h('option', { value: G.key, selected: G === r.G }, G.rep.brand + ' ' + G.name + (rec(G) ? ' ★' : '') + ' · ' + (G.metre ? HP.money(G.rep.price) + '/m' : t('from ', 'fra ') + HP.money(G.min)))))
           : h('span.muted', null, t('No cable in the catalogue fits these plugs', 'Intet kabel i kataloget passer til disse stik'));
-        drawLen();
-        body.append(h('.cmp-row' + (r.G ? '' : '.none'), null, r.G ? tick(r.on, (v) => { r.on = v; }) : h('span.cmp-tick'), what, cableSel, lenBox, price));
+        drawLen(); drawWarn();
+        body.append(h('.cmp-row' + (r.G ? '' : '.none'), null, r.G ? tick(r.on, (v) => { r.on = v; }) : h('span.cmp-tick'), what, cableSel, lenBox, price, warn));
       });
     }
     // 2. accessories, per product

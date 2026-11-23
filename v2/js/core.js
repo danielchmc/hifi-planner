@@ -279,7 +279,7 @@
      the hourly build. Products without a link keep them in "frozen". Same format as tools/own-split.js writes. */
   HP.toOwn = (p, prev) => {
     const o = {};
-    ['id', 'brand', 'name', 'sku', 'img', 'in', 'out', 'cable', 'ends', 'bt', 'wifi', 'manualWireless', 'review', 'auto'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) o[k] = p[k]; });
+    ['id', 'brand', 'name', 'sku', 'img', 'in', 'out', 'cable', 'ends', 'eg', 'ech', 'bt', 'wifi', 'manualWireless', 'review', 'auto'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) o[k] = p[k]; });
     o.cats = (prev && prev.cats) || p.lcats || (DATA.categories ? [] : p.cats) || []; // today's (legacy) categories: the build's fallback
     const deep = DATA.categories ? HP.catDeepest(p.cats) : '';
     if (deep && deep !== p.wc) o.cat = deep; // a category chosen by hand (differs from the website's)
@@ -287,6 +287,7 @@
     if (prev && prev.link && (!p.site || up(prev.link.site) === up(p.site))) o.link = prev.link;
     else if (p.site && !p.gone && !(prev && prev.frozen && up(prev.frozen.site) === up(p.site))) o.link = { site: p.site }; // a new link (a frozen product stays frozen)
     if (o.ends && p.endsAuto) delete o.ends; // worked out by the build, not chosen by hand: not stored
+    if (p.plugsAuto) { delete o.eg; delete o.ech; } // male/female and mono/stereo at the ends: the same
     if (!o.link) { const f = {}; ['price', 'was', 'vars', 'url', 'site', 'gone'].forEach((k) => { if (p[k] !== undefined && p[k] !== null) f[k] = p[k]; }); o.frozen = f; }
     return o;
   };

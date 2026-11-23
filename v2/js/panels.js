@@ -452,7 +452,8 @@
     };
     function groupRow(G) {
       const rep = G.rep, e = P.cableEnds(rep) || [], mine = G.members.some((p) => p.id === c.cable), gk = String(rep.site || rep.id);
-      const r = productRow(rep, h('span.tagline', null, e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
+      const pl = P.cablePlugs(rep);
+      const r = productRow(rep, h('span.tagline', null, pl ? P.plugText(pl[0]) + ' ↔ ' + P.plugText(pl[1]) : e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
       const base = C().stripLen(rep.name) || rep.name;
       const nm = r.querySelector('.pname'); if (nm) nm.textContent = base;
       const sub = r.querySelector('.psub'); if (sub) sub.textContent = rep.brand + ' · ' + (G.metre ? HP.money(rep.price) + ' / m' : (G.opts.length > 1 ? t('from ', 'fra ') : '') + HP.money(G.min));
@@ -482,15 +483,16 @@
       }
       r.onclick = () => choose();
       r.ondblclick = () => { choose(); commit(); };
-      return h('.cablegroup', { data: { key: gk } }, r, box.childNodes.length ? box : null);
+      const warn = G.issues && G.issues.length ? h('.plugwarn', null, icon('warn', 12), G.issues.map((x) => t(x.en, x.da)).join(' · ')) : null;
+      return h('.cablegroup' + (warn ? '.issues' : ''), { data: { key: gk } }, r, warn, box.childNodes.length ? box : null);
     }
     function draw() {
       const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
       const hits = cat.cables().filter((p) => words.every((w) => p._hay.includes(w) || (p.cable || []).some((x) => x.includes(w))));
-      const all = groupsOf(hits).map((G) => Object.assign(G, { fit: P.cableFit(G.rep, a, b) })); // by the cable's two ends
+      const all = groupsOf(hits).map((G) => { const fit = P.cableFit(G.rep, a, b); return Object.assign(G, { fit, issues: fit ? P.plugIssues(G.rep, a, b) : [] }); }); // by the cable's two ends, then its plugs
       list.textContent = '';
       const sec = (title, items) => { if (!items.length) return; list.append(h('.sec', null, title + ' (' + items.length + ')'));
-        items.sort((x, y) => x.min - y.min).forEach((G) => list.append(groupRow(G))); };
+        items.sort((x, y) => (x.issues.length - y.issues.length) || x.min - y.min).forEach((G) => list.append(groupRow(G))); }; // plugs that fit first
       const good = all.filter((x) => x.fit === 2), maybe = all.filter((x) => x.fit === 1), other = all.filter((x) => x.fit === 0);
       sec(t('Matching cables', 'Passende kabler'), good); sec(t('May fit', 'Passer muligvis'), maybe);
       if (showAll || words.length || !(good.length + maybe.length)) sec(t('Other cables', 'Andre kabler'), other);
@@ -500,7 +502,8 @@
     }
     const close = HP.modal({ title: t('Cable for this connection', 'Kabel til denne forbindelse'), size: 'md', flush: true,
       body: [h('.conn-head', null, h('span.pill.c-' + P.colorOf(a), null, a.label), h('span.arrow', null, '→'), h('span.pill.c-' + P.colorOf(b), null, b.label),
-        h('span.muted', null, P.CONNECTORS[P.conn(a.conn, a)] + (P.conn(a.conn, a) !== P.conn(b.conn, b) ? ' → ' + P.CONNECTORS[P.conn(b.conn, b)] : '')),
+        h('span.muted', null, P.plug(a, 'out') || P.plug(b, 'in') ? P.plugText(P.plug(a, 'out') || { conn: P.conn(a.conn, a) }) + ' → ' + P.plugText(P.plug(b, 'in') || { conn: P.conn(b.conn, b) })
+          : P.CONNECTORS[P.conn(a.conn, a)] + (P.conn(a.conn, a) !== P.conn(b.conn, b) ? ' → ' + P.CONNECTORS[P.conn(b.conn, b)] : '')),
         info.warn && h('.warnline', null, icon('warn', 14), t('These connector types do not normally fit together.', 'Disse stiktyper passer normalt ikke sammen.'))),
         h('.searchbox.pad', null, icon('search', 15), q), list],
       foot: [h('button.btn.danger', { onclick: () => { store.selConn = c.id; C().deleteSelection(); close(); } }, icon('trash', 14), t('Delete connection', 'Slet forbindelse')), h('.spacer'),

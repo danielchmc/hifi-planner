@@ -113,6 +113,8 @@
           const upd = () => {
             const np = P.makePort(sig.value, side, '', { label: label.value || P.SIG[sig.value].label, conn: conn.value });
             if (fresh.has(p)) fresh.add(np); else if (p.key) np.key = p.key; // an existing port keeps its key, so wires in saved drawings stay connected
+            if (plugSel.value && P.AUDIO.has(np.conn)) { np.ch = +plugSel.value[0]; np.g = plugSel.value[1]; } // male/female, mono/stereo set by hand
+            plugSel.classList.toggle('na', !P.AUDIO.has(np.conn)); plugSel.options[0].textContent = autoTxt(np);
             if (autoSig.has(p)) autoSig.add(np); if (autoConn.has(p)) autoConn.add(np);
             cur[side][i] = np; p = np; preview();
           };
@@ -126,8 +128,14 @@
             P.SIGNALS.map((s) => h('option', { value: s.id, selected: s.id === p.sig }, s.label)));
           const conn = h('select.conn', { title: t('Connector', 'Stik'), onchange: () => { autoConn.delete(p); upd(); } },
             Object.entries(P.CONNECTORS).map(([k, v]) => h('option', { value: k, selected: k === P.conn(p.conn, p, side) }, v)));
+          // the plug: Auto (the rules in js/ports.js) or set by hand, for a product with a fixed cable ending in plugs, say
+          const short = (x) => (x ? x.ch + '×' + (x.g === 'm' ? '♂' : '♀') : '');
+          const autoTxt = (q) => short(P.plug(Object.assign({}, q, { g: null, ch: null }), side)) + ' auto';
+          const plugSel = h('select.plug', { title: t('Plug: 2× = stereo (an RCA pair, a TRS jack), 1× = mono; ♀ socket, ♂ plug. Auto = worked out from the signal and label.', 'Stik: 2× = stereo (et RCA-par, et TRS-jackstik), 1× = mono; ♀ hunstik, ♂ hanstik. Auto = udledt af signal og navn.'), onchange: () => upd() },
+            [['', autoTxt(p)], ['2f', '2×♀ stereo'], ['1f', '1×♀ mono'], ['2m', '2×♂ stereo'], ['1m', '1×♂ mono']].map(([v, l]) => h('option', { value: v, selected: v ? (p.g && p.ch && v === p.ch + p.g) : !(p.g && p.ch) }, l)));
+          plugSel.classList.toggle('na', !P.AUDIO.has(P.conn(p.conn, p, side)));
           const mv = (d) => () => { const j = i + d; if (j < 0 || j >= cur[side].length) return; [cur[side][i], cur[side][j]] = [cur[side][j], cur[side][i]]; draw(); preview(); };
-          box.append(h('.portrow', null, label, sig, conn, h('button.icon-btn', { onclick: mv(-1), title: t('Up', 'Op') }, icon('up', 13)), h('button.icon-btn', { onclick: mv(1), title: t('Down', 'Ned') }, icon('down', 13)),
+          box.append(h('.portrow', null, label, sig, conn, plugSel, h('button.icon-btn', { onclick: mv(-1), title: t('Up', 'Op') }, icon('up', 13)), h('button.icon-btn', { onclick: mv(1), title: t('Down', 'Ned') }, icon('down', 13)),
             h('button.icon-btn', { onclick: () => { cur[side].splice(i, 1); draw(); preview(); }, title: t('Remove', 'Fjern') }, icon('x', 13))));
         });
         box.append(h('button.btn.sm', { onclick: () => {
@@ -180,10 +188,17 @@
         const ends = (cur.ends && cur.ends.length === 2 ? cur.ends : P.cableEnds(cur) || ['rca', 'rca']).slice();
         const setEnds = () => { cur.ends = ends.slice(); cur.cable = [...new Set(ends)]; delete cur.endsAuto; };
         if (!P.cableEnds(cur)) setEnds(); // a new cable starts as RCA ↔ RCA
-        const endSel = (i) => h('select.conn', { onchange(ev) { ends[i] = ev.target.value; setEnds(); } }, Object.entries(P.CONNECTORS).filter(([k]) => k !== 'wireless').map(([k, v]) => h('option', { value: k, selected: k === ends[i] }, v)));
+        // male/female and mono/stereo at each end (RCA, jack, XLR): worked out by the build until set here
+        const pl = (P.cablePlugs(cur) || [{ g: 'm', ch: 2 }, { g: 'm', ch: 2 }]).map((x) => ({ g: x.g, ch: x.ch }));
+        const plugSels = [];
+        const setPlugs = () => { cur.eg = pl.map((x) => x.g); cur.ech = pl.map((x) => x.ch); delete cur.plugsAuto; };
+        const plugSel = (i) => { const el = h('select.plug', { title: t('Male/female, mono/stereo', 'Han/hun, mono/stereo'), onchange(ev) { pl[i] = { ch: +ev.target.value[0], g: ev.target.value[1] }; setPlugs(); } },
+          [['2m', t('Stereo ♂', 'Stereo ♂')], ['1m', t('Mono ♂', 'Mono ♂')], ['2f', t('Stereo ♀', 'Stereo ♀')], ['1f', t('Mono ♀', 'Mono ♀')]].map(([v, l]) => h('option', { value: v, selected: v === pl[i].ch + pl[i].g }, l)));
+          plugSels[i] = el; el.hidden = !P.AUDIO.has(ends[i]); return el; };
+        const endSel = (i) => h('select.conn', { onchange(ev) { ends[i] = ev.target.value; setEnds(); if (plugSels[i]) plugSels[i].hidden = !P.AUDIO.has(ends[i]); } }, Object.entries(P.CONNECTORS).filter(([k]) => k !== 'wireless').map(([k, v]) => h('option', { value: k, selected: k === ends[i] }, v)));
         form.append(h('.lab', null, t('Connectors at each end (used to suggest this cable for matching ports)', 'Stik i hver ende (bruges til at foreslå kablet til matchende porte)')),
-          h('.cable-ends', null, h('label.field', null, h('span', null, t('End A', 'Ende A')), endSel(0)), h('span.arrow', null, '↔'), h('label.field', null, h('span', null, t('End B', 'Ende B')), endSel(1))),
-          cur.endsAuto ? h('small.muted', null, t('Worked out from the website (type, name, connector list). Change it here if it is wrong.', 'Udledt fra hjemmesiden (type, navn, stikliste). Ret det her, hvis det er forkert.')) : '');
+          h('.cable-ends', null, h('label.field', null, h('span', null, t('End A', 'Ende A')), endSel(0), plugSel(0)), h('span.arrow', null, '↔'), h('label.field', null, h('span', null, t('End B', 'Ende B')), endSel(1), plugSel(1))),
+          cur.endsAuto || cur.plugsAuto ? h('small.muted', null, t('Worked out from the website (type, name, connector list). Change it here if it is wrong.', 'Udledt fra hjemmesiden (type, navn, stikliste). Ret det her, hvis det er forkert.')) : '');
       } else {
         drawCats();
         form.append(h('.lab', null, t('Categories', 'Kategorier')), catBox,

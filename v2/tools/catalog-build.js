@@ -184,14 +184,22 @@ if (fs.existsSync(ownFile)) {
   const match = SM.matcher(SM.sellable(listing));
   const facetsBySku = new Map(products.map((p) => [p.sku, p.facets]));
   const hk = (u) => S.hk(u);
-  const RT = { lost: [], frozen: 0, held: [], ends: {}, endsGuess: [] };
+  const RT = { lost: [], frozen: 0, held: [], ends: {}, endsGuess: [], plugs: {}, plugsGuess: [] };
   const wBySku = new Map(products.map((w) => [w.sku, w]));
   // a cable's two ends: chosen by hand (data/own.js) or worked out (tools/cable-ends.js), marked endsAuto
-  const setEnds = (p, handEnds, name, w, set) => {
-    if (handEnds && handEnds.length === 2) { p.ends = handEnds; RT.ends.hand = (RT.ends.hand || 0) + 1; return; }
-    const r = CE.deriveEnds({ name, model: w && w.model, typeKey: w && w.type.key, stik: w && w.specs && w.specs.Stik, set });
-    p.ends = r.ends; p.endsAuto = 1; RT.ends[r.how] = (RT.ends[r.how] || 0) + 1;
-    if (r.how === 'guess') RT.endsGuess.push((p.brand || '') + ' ' + p.name + ': ' + r.ends.join(' ↔ '));
+  const setEnds = (p, handEnds, name, w, set, o) => {
+    if (handEnds && handEnds.length === 2) { p.ends = handEnds; RT.ends.hand = (RT.ends.hand || 0) + 1; }
+    else {
+      const r = CE.deriveEnds({ name, model: w && w.model, typeKey: w && w.type.key, stik: w && w.specs && w.specs.Stik, set });
+      p.ends = r.ends; p.endsAuto = 1; RT.ends[r.how] = (RT.ends[r.how] || 0) + 1;
+      if (r.how === 'guess') RT.endsGuess.push((p.brand || '') + ' ' + p.name + ': ' + r.ends.join(' ↔ '));
+    }
+    // male/female and mono/stereo at each end: set by hand in the Editor (eg/ech in data/own.js) or worked out (plugsAuto)
+    if (o && Array.isArray(o.eg) && Array.isArray(o.ech)) { p.eg = o.eg; p.ech = o.ech; RT.plugs.hand = (RT.plugs.hand || 0) + 1; return; }
+    const r = CE.derivePlugs({ name, model: w && w.model, typeKey: w && w.type.key, ends: p.ends });
+    if (!r) return;
+    p.eg = r.eg; p.ech = r.ech; p.plugsAuto = 1; RT.plugs[r.how] = (RT.plugs[r.how] || 0) + 1;
+    if (r.how === 'guess') RT.plugsGuess.push('- ' + (p.brand || '') + ' ' + p.name + ' (' + (p.sku || p.id) + '): ' + p.ends.map((c, i) => window.HP.ports.plugText({ conn: c, g: r.eg[i], ch: r.ech[i] })).join(' ↔ ') + ' — website type: ' + ((w && w.type && w.type.da) || 'none'));
   };
   // the previous catalogue, for the sync's plausibility check (today's data/products.js until the switch, then the previous build)
   const prevById = new Map((SWITCHED && prevBuild ? prevBuild : catalogue).map((c) => [c.id, c]));
@@ -230,7 +238,7 @@ if (fs.existsSync(ownFile)) {
     const bt = o.bt || (!o.manualWireless && !o.cable && f && f.bt), wifi = o.wifi || (!o.manualWireless && !o.cable && f && f.wifi);
     if (bt) p.bt = true; if (wifi) p.wifi = true;
     if (m) Object.defineProperty(p, '_web', { value: m.v.image || '', enumerable: false });
-    if (o.cable) setEnds(p, o.ends, o.name, m ? wBySku.get(U(m.s.sku)) : null, o.cable);
+    if (o.cable) setEnds(p, o.ends, o.name, m ? wBySku.get(U(m.s.sku)) : null, o.cable, o);
     return p;
   });
   // stock pictures: one local image file used by cards of 3 or more different website products (e.g. a generic RCA plug photo on
@@ -398,6 +406,29 @@ if (fs.existsSync(ownFile)) {
   P('', '**App catalogue** (`build/app-products.js`' + (SWITCHED ? ', used by the app' : ', not used by the app yet') + '): ' + RT.next.products + ' products (' + RT.next.added + ' from the website that HiFi Planner does not have yet, without ports), ' + (RT.next.uncategorised.length ? RT.next.uncategorised.length + ' without a category: ' + RT.next.uncategorised.slice(0, 20).join(', ') : 'every product has a category') + '.', '');
   P('**Cable ends**: ' + Object.entries(RT.ends).map(([k, n]) => n + ' ' + ({ hand: 'set by hand', name: 'from the name', 'name+spec': 'from the name and the website\'s connector list', spec: 'from the website\'s connector list', type: 'from the cable type', set: 'from the old connector list', guess: 'guessed' }[k] || k)).join(', ') + '.', '');
   if (RT.endsGuess.length) { P('Guessed cable ends (check in the Editor: open the cable and set End A / End B):', ''); RT.endsGuess.slice(0, 60).forEach((x) => P('- ' + x)); if (RT.endsGuess.length > 60) P('- … ' + (RT.endsGuess.length - 60) + ' more'); P(''); }
+  // male/female and mono/stereo: cables decided by name or type, guesses listed; device ports by rules (js/ports.js), the
+  // ports the rules decide on weak grounds listed for checking. The full list goes in build/plugs.md.
+  {
+    const PL = window.HP.ports, weak = [], adapters = [];
+    next.forEach((p) => {
+      if (p.gone || p.cable) return;
+      const isAd = /adapter|wireless connect|bluetooth (sender|modtager|receiver|transmitter)/i.test((p.ty || '') + ' ' + p.name);
+      ['in', 'out'].forEach((side) => (p[side] || []).forEach((q) => {
+        const x = PL.plug(q, side); if (!x || !x.auto) return;
+        if (['other', 'control', 'minijack', 'jack'].includes(q.sig)) weak.push('- ' + p.brand + ' ' + p.name + ' (' + p.id + '): ' + side.toUpperCase() + ' ' + q.label + ' → ' + PL.plugText(x) + ' (signal "' + q.sig + '")');
+        if (isAd) adapters.push('- ' + p.brand + ' ' + p.name + ' (' + p.id + '): ' + side.toUpperCase() + ' ' + q.label + ' → ' + PL.plugText(x));
+      }));
+    });
+    const how = { hand: 'set by hand', name: 'from the name', type: 'from the website\'s cable type', guess: 'guessed (stereo, male–male)' };
+    const md = ['# Plugs: male/female and mono/stereo', '', 'Written by `tools/catalog-build.js`. Rules in `js/ports.js` (`plug`, `cablePlugs`, `plugIssues`) and `tools/cable-ends.js` (`derivePlugs`). Set anything wrong by hand in the Editor: a cable\'s ends (♂/♀, mono/stereo) or a port\'s plug.', '',
+      '## Cables', '', Object.entries(RT.plugs).map(([k, n]) => n + ' ' + (how[k] || k)).join(', ') || 'none', '',
+      '### Cables that could not be decided (' + RT.plugsGuess.length + ')', '', ...(RT.plugsGuess.length ? RT.plugsGuess : ['None.']), '',
+      '## Device ports', '', 'Sockets on devices are female (XLR outputs male); a port is stereo unless it carries a mono signal (sub, coaxial, digital, video, trigger, AES, mic) or its label names one channel (L, R, LFE, MONO).', '',
+      '### Ports decided on weak grounds (' + weak.length + ')', '', 'Their signal does not say whether they are mono or stereo (a minijack that could be a headphone output or a trigger, a port marked "other").', '', ...(weak.length ? weak : ['None.']), '',
+      '### Adapters and wireless boxes (' + adapters.length + ' ports)', '', 'These often have a fixed cable ending in plugs (male) rather than sockets. The rules cannot see that: check them.', '', ...(adapters.length ? adapters : ['None.']), ''];
+    fs.writeFileSync(path.join(OUT, 'plugs.md'), md.join('\n'));
+    P('**Plugs (male/female, mono/stereo)**: cables ' + (Object.entries(RT.plugs).map(([k, n]) => n + ' ' + (how[k] || k)).join(', ') || 'none') + '; ' + RT.plugsGuess.length + ' cables, ' + weak.length + ' device ports and ' + adapters.length + ' adapter ports to check, listed in `build/plugs.md`.', '');
+  }
   if (RT.acc) P('**Accessories**: ' + RT.acc + ' products list accessories from the website (`acc`), offered by "Relaterede produkter".' + (RT.accRev ? ' From accessory pages\' recommended products: ' + RT.accRev[0] + ' links kept, ' + RT.accRev[1] + ' left out (the accessory does not belong to that kind of product, or both are accessories).' : ''), '');
   if (RT.systems) P('**Systems**: ' + RT.systems.n + ' of the website\'s bundles are in the sidebar\'s Systems section (`build/bundles.js`)' + (RT.systems.miss.length ? '; ' + RT.systems.miss.length + ' are not, because a part is not in the catalogue: ' + RT.systems.miss.slice(0, 30).join(', ') + (RT.systems.miss.length > 30 ? ', …' : '') : '') + '.', '');
   P('**Cable lengths**: ' + RT.lens + ' cables offer their website lengths in the cable picker.', '');

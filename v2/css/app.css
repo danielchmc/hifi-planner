@@ -862,3 +862,14 @@ body.viewing > #app { display: none; }
 .view-foot small { font: 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #6a6e75; }
 .view-foot b { font: 600 18px var(--display); color: #141518; }
 .view-foot p { margin: 16px 0 0; font-size: 12px; color: #6a6e75; }
+
+/* v4.11: plugs (male/female, mono/stereo) — warnings in the cable picker and Relaterede produkter; the Editor's plug fields */
+.plugwarn { display: flex; align-items: center; gap: 6px; padding: 0 10px 8px 62px; font-size: 12px; color: var(--warn, #b4531f); }
+.cablegroup.issues .prow .pname { opacity: .8; }
+.cmp-warn { grid-column: 2 / -1; display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--warn, #b4531f); margin-top: -4px; }
+.cmp-warn:empty { display: none; }
+.portrow { grid-template-columns: minmax(90px, 1fr) 84px 96px 80px 22px 22px 22px; }
+@media (max-width: 700px) { .portrow { grid-template-columns: minmax(80px, 1fr) 76px 86px 68px 26px 26px 26px; } }
+.portrow select.plug { min-width: 0; }
+.portrow select.plug.na { visibility: hidden; } /* keeps its column when the connector has no plug to choose */
+.cable-ends select.plug { margin-top: 4px; }
