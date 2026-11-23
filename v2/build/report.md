@@ -248,27 +248,25 @@ Read by the next mirror runs.
 
 `data/own.js` is the master for what HiFi Planner adds; `build/app-products.js` is rebuilt from it and the mirror every hour.
 
-- 721 follow the website through their link, 124 are frozen (not on the website)
+- 720 follow the website through their link, 124 are frozen (not on the website)
 - Prices held by the plausibility check (as the sync does): 13
 - Link no longer on the website: NAD C328 [NADC328], Sony Bravia 9 [SONYKXR9B], Sony Bravia 5 [SONYKXR5B]
 
 
-**App catalogue** (`build/app-products.js`, used by the app): 1311 products (466 from the website that HiFi Planner does not have yet, without ports), every product has a category.
+**App catalogue** (`build/app-products.js`, used by the app): 1310 products (466 from the website that HiFi Planner does not have yet, without ports), every product has a category.
 
-**Cable ends**: 19 set by hand, 57 from the cable type, 36 from the website's connector list, 105 from the name, 3 from the old connector list, 6 guessed.
+**Cable ends**: 27 set by hand, 52 from the cable type, 36 from the website's connector list, 105 from the name, 2 from the old connector list, 4 guessed.
 
 Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 - AudioQuest Y-Splitter (1F/2M): rca ↔ rca
-- KEF C-Link Interspeaker Cable: rca ↔ rca
 - AudioQuest Y-Splitter (1M/2F): rca ↔ rca
 - AudioQuest Pearl: usba ↔ usbb
-- Sinox Sinox SXI4900: usba ↔ usbb
 - AudioQuest Coffee: usba ↔ usbb
 
-**Plugs (male/female, mono/stereo)**: cables 67 from the website's cable type, 29 from the name, 7 guessed (stereo, male–male); 7 cables, 23 device ports and 8 adapter ports to check, listed in `build/plugs.md`.
+**Plugs (male/female, mono/stereo)**: cables 65 from the website's cable type, 29 from the name, 7 guessed (stereo, male–male), 1 set by hand; 7 cables, 22 device ports and 8 adapter ports to check, listed in `build/plugs.md`.
 
-**Accessories**: 793 products list accessories from the website (`acc`), offered by "Relaterede produkter". From accessory pages' recommended products: 358 links kept, 327 left out (the accessory does not belong to that kind of product, or both are accessories).
+**Accessories**: 792 products list accessories from the website (`acc`), offered by "Relaterede produkter". From accessory pages' recommended products: 358 links kept, 327 left out (the accessory does not belong to that kind of product, or both are accessories).
 
 **Systems**: 222 of the website's bundles are in the sidebar's Systems section (`build/bundles.js`); 23 are not, because a part is not in the catalogue: unnu 1540 Furniture, Clic 220 Furniture, Clic 23 Furniture, unnu 240 Furniture, unnu 241 Furniture, Clic 242 Furniture, Bowers & Wilkins ISW-8 + BB ISW 8, CANVAS HiFi 55", CANVAS HiFi 65", CANVAS HiFi 75", CANVAS HiFi 77", HITH 231 + DALI Sonik 3 + BLS N331, HITH 231 + Fenris A4, HITH 231 + Forte A5 WIFI, DALI OBERON C SURROUND, DALI Oberon Vokal C + HDMI Module, DALI RUBICON 2 C + SOUNDHUB, DALI RUBICON 6 C + SOUNDHUB, Steinway Lyngdorf Model A, Steinway Lyngdorf Model B, Steinway Lyngdorf Model D, Steinway Lyngdorf Model O, Steinway Lyngdorf Model S.
 
@@ -283,7 +281,11 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
 
-Since the previous build: 0 price changes, 0 products added, 0 removed.
+Since the previous build: 1 price changes, 0 products added, 0 removed.
+
+**Price changes**
+
+- Sony Bravia 9: 0 → undefined
 
 **Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
 

@@ -24842,7 +24842,7 @@
      "NADCI8-120DSP"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCCM8.5D",
@@ -24907,7 +24907,7 @@
      "BWISW8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCCMX6SQUAREGRILL",
@@ -24953,7 +24953,7 @@
      "BWCCM664SR"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCCMX8SQUAREGRILL",
@@ -24996,7 +24996,7 @@
      "BWCCM684"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCDA16",
@@ -25062,9 +25062,9 @@
     "alt": [
      "NADCI16-60DSP",
      "NADCI8-120DSP",
-     "NADCI8-150DSP",
      "NADCI980",
-     "BWCDA4D"
+     "BWCDA4D",
+     "NADCI8-150DSP"
     ],
     "rec": [
      "BWCCM662",
@@ -25089,7 +25089,7 @@
      "DALIPHANTOMK80"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCDA2HD",
@@ -25155,8 +25155,6 @@
      "BWCTSW10",
      "BWCTSW12",
      "BWCTSW15",
-     "BWCT7.3",
-     "BWCT7.4",
      "BWCT7.5",
      "BWCWM8.3D",
      "BWCWM8.5D",
@@ -25165,10 +25163,12 @@
      "BWCCM7.3S2",
      "BWISW6",
      "BWISW4",
-     "BWISW3"
+     "BWISW3",
+     "BWCT7.3",
+     "BWCT7.4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCDA4D",
@@ -25244,7 +25244,7 @@
      "BWCWM7.5S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCT7.3",
@@ -25320,7 +25320,7 @@
      "LYNGMXA8400"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCT7.4",
@@ -25398,7 +25398,7 @@
      "MARACINEMA50S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCT7.5",
@@ -25474,7 +25474,7 @@
      "MARACINEMA50S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCT8SW",
@@ -25538,7 +25538,7 @@
      "BWCWM7.5S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCTSW10",
@@ -25593,10 +25593,10 @@
      "AQSLIPDB14-2SCX"
     ],
     "alt": [
-     "BWCT8SW",
      "BWCTSW12",
      "BWCTSW15",
-     "DALIPHANTOMSUB100"
+     "DALIPHANTOMSUB100",
+     "BWCT8SW"
     ],
     "rec": [
      "BWCT7.3",
@@ -25610,7 +25610,7 @@
      "BWCWM7.5S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCTSW12",
@@ -25681,7 +25681,7 @@
      "BWCWM7.5S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCTSW15",
@@ -25737,23 +25737,23 @@
     ],
     "alt": [
      "BWCTSW12",
-     "DALIPHANTOMSUB100",
      "BWCTSW10",
-     "BWCT8SW"
+     "BWCT8SW",
+     "DALIPHANTOMSUB100"
     ],
     "rec": [
+     "BWCT7.3",
+     "BWCT7.4",
      "BWCT7.5",
      "BWCWM8.3D",
      "BWCWM8.5D",
      "BWCCM8.5D",
      "BWCWM7.5S2",
      "BWCWM7.4S2",
-     "BWCWM7.3S2",
-     "BWCT7.3",
-     "BWCT7.4"
+     "BWCWM7.3S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM362",
@@ -25826,7 +25826,7 @@
      "DENAVRX1800H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM652",
@@ -25899,7 +25899,7 @@
      "BWASW610M"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM663",
@@ -25973,7 +25973,7 @@
      "NADC379"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM664",
@@ -26047,7 +26047,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM7.3S2",
@@ -26122,7 +26122,7 @@
      "NADT778"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM7.4S2",
@@ -26196,7 +26196,7 @@
      "MARACINEMA40"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM7.5S2",
@@ -26275,7 +26275,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWCWM8.5D",
@@ -26317,9 +26317,9 @@
    },
    "rel": {
     "acc": [
+     "BWBBCWM8.5X",
      "AQSLIPXTREM14-2SCX",
-     "AQSLIPXTREM14-4SCX",
-     "BWBBCWM8.5X"
+     "AQSLIPXTREM14-4SCX"
     ],
     "alt": [
      "BWCWM8.3D",
@@ -26344,7 +26344,7 @@
      "BWISW8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWDB1D",
@@ -26428,7 +26428,7 @@
      "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWDB2",
@@ -26519,7 +26519,7 @@
      "DALIEPIKORE7"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWDB3",
@@ -26596,7 +26596,7 @@
      "DALIOPTICON8MK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWDB4",
@@ -26691,7 +26691,7 @@
      "DALIOPTICON6MK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWFS600S3",
@@ -26752,7 +26752,7 @@
      "BW706S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWFS700S3",
@@ -26813,7 +26813,7 @@
      "BW707S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWFS805D5",
@@ -26869,7 +26869,7 @@
      "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWFSHTMD4",
@@ -26928,7 +26928,7 @@
      "BWHTM81"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWFSHTMD5",
@@ -26983,7 +26983,7 @@
      "BWHTM82D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWGRILLISW6",
@@ -27022,7 +27022,7 @@
      "BWISW6"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM6S3",
@@ -27135,7 +27135,7 @@
      "DENAVRX2900HDAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM71S3",
@@ -27268,7 +27268,7 @@
      "BWDB1D"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM71S3SIGNATURE",
@@ -27377,7 +27377,7 @@
      "BWDB2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM72S3",
@@ -27500,7 +27500,7 @@
      "BWDB3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM81",
@@ -27582,7 +27582,7 @@
      "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM81D5",
@@ -27666,7 +27666,7 @@
      "BWDB3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWHTM82D5",
@@ -27751,7 +27751,7 @@
      "BWDB3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWISW3",
@@ -27806,7 +27806,7 @@
      "BWCDA2HD"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWISW4",
@@ -27846,23 +27846,23 @@
    },
    "rel": {
     "acc": [
+     "BWBBISW4X",
      "ESSCL1SCX",
      "ESSCL1SCPROX",
-     "AQSLIPDB14-2SCX",
-     "BWBBISW4X"
+     "AQSLIPDB14-2SCX"
     ],
     "alt": [
+     "BWISW3",
      "BWISW6",
      "BWISW8",
-     "DALIPHANTOMSUB100",
-     "BWISW3"
+     "DALIPHANTOMSUB100"
     ],
     "rec": [
      "BWCDA4D",
      "BWCDA2HD"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWISW6",
@@ -27921,7 +27921,7 @@
      "BWCDA2HD"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWISW8",
@@ -27975,7 +27975,7 @@
      "BWCDA2HD"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWM1BR",
@@ -28036,10 +28036,10 @@
    "rel": {
     "acc": [
      "ESSBA2SCX",
-     "BWM1FSTBR",
      "ESSCL1SCX",
      "ESSCL1SCPROX",
-     "ESSPR1SCX"
+     "ESSPR1SCX",
+     "BWM1FSTBR"
     ],
     "alt": [
      "DALISONIKONWALL",
@@ -28068,7 +28068,7 @@
      "KEFKUBE8MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWM1FSTBR",
@@ -28109,7 +28109,7 @@
      "BWM1BR"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWMARINE6",
@@ -28200,7 +28200,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWMARINE8",
@@ -28293,7 +28293,7 @@
      "BLSN331"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPI6",
@@ -28429,7 +28429,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPI8",
@@ -28587,7 +28587,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPI8MCLAREN",
@@ -28660,7 +28660,7 @@
      "BEOGRACE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPX7S2E",
@@ -28810,7 +28810,7 @@
      "AQDRAGONFLYCOPPERX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPX7S3",
@@ -28947,7 +28947,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPX8",
@@ -29075,7 +29075,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPX8S2",
@@ -29195,7 +29195,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-23"
   },
   {
    "sku": "BWPX8S2GROR",
@@ -79327,6 +79327,51 @@
       "FreeSync": "FreeSync Premium Pro",
       "Skærmopdatering (Hz)": "165Hz",
       "Energy Efficiency": "G"
+     }
+    },
+    {
+     "sku": "SAMTQ77S90H",
+     "label": "77\"",
+     "price": 14999,
+     "colorKey": "Black",
+     "ean": "8806099008093",
+     "url": "/samsung-s90h-oled-tv/samtq77s90h/",
+     "img": "hk:4c6c124b-2ed2-4ac1-ad66-11ba68f73e58",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Bluetooth ": "Ja",
+      "Bluetooth version": "5.3",
+      "Vægt (kg)": "44,1",
+      "Vægt emballage (kg)": "45,9",
+      "Skærmstørrelse": "77\"",
+      "VESA": "400x300",
+      "Vægt inkl. bordstativ, kg": "36,6",
+      "Mål inkl. stander, cm (BxHxD)": "171,9 x 105,9 x 35,9",
+      "Vægt ekskl. bordstativ, kg": "34,8",
+      "Mål ekskl. stander, cm (BxHxD)": "171,9 x 98,8 x 4,5",
+      "Mål (emballage)": "18 x 115,4 x 188,5 cm (bredde x højde x dybde)",
+      "Total HDMI Inputs": "4x",
+      "HDMI": "2.1",
+      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+      "HDMI ARC/eARC": "eARC (Port 1)",
+      "Antal USB-porte": "2x",
+      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2)",
+      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+      "Styresystem": "Tizen",
+      "Mikrofon": "Ja",
+      "USB Recording": "Ja",
+      "Stemmestyring": "Indbygget",
+      "Stemmeassistenter": "Samsung Bixby",
+      "Elektronisk Programguide (EPG)": "Ja",
+      "EPREL Code": "2571609",
+      "Opløsning": "4K Ultra HD",
+      "Skærmteknologi": "OLED",
+      "HDR-formater": "HDR10",
+      "Billedprocessor": "NQ4 AI Gen3 Processor",
+      "Game mode": "Ja",
+      "FreeSync": "FreeSync Premium Pro",
+      "Skærmopdatering (Hz)": "165Hz",
+      "Energy Efficiency": "E"
      }
     },
     {

@@ -4,7 +4,7 @@ Written by `tools/catalog-build.js`. Rules in `js/ports.js` (`plug`, `cablePlugs
 
 ## Cables
 
-67 from the website's cable type, 29 from the name, 7 guessed (stereo, male–male)
+65 from the website's cable type, 29 from the name, 7 guessed (stereo, male–male), 1 set by hand
 
 ### Cables that could not be decided (7)
 
@@ -20,7 +20,7 @@ Written by `tools/catalog-build.js`. Rules in `js/ports.js` (`plug`, `cablePlugs
 
 Sockets on devices are female (XLR outputs male); a port is stereo unless it carries a mono signal (sub, coaxial, digital, video, trigger, AES, mic) or its label names one channel (L, R, LFE, MONO).
 
-### Ports decided on weak grounds (23)
+### Ports decided on weak grounds (22)
 
 Their signal does not say whether they are mono or stereo (a minijack that could be a headphone output or a trigger, a port marked "other").
 
@@ -39,7 +39,6 @@ Their signal does not say whether they are mono or stereo (a minijack that could
 - Marshall Bromley 450 (marshall-bromley-450): OUT AUX OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
 - Hisense PT1 (hisense-pt1): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
 - AudioQuest DragonFly Copper (audioquest-dragonfly-copper): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
-- Hisense PX3-PRO (hisense-px3-pro): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
 - Hisense C3 (hisense-c3): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
 - Marshall Bromley 150 (marshall-bromley-150): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
 - Hisense C2 Ultra (hisense-c2-ultra): OUT MINIJACK OUT → Minijack 3.5 mm stereo ♀ (signal "minijack")
