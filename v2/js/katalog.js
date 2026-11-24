@@ -261,14 +261,46 @@
     const el = h('article.kat-tile' + (on ? '.sel' : ''), { data: { k }, tabIndex: 0,
       onclick: (e) => { if (e.target.closest('.sw')) return; toggle(k, el); },
       ondblclick: (e) => { if (e.target.closest('.sw')) return; st.sel.delete(k); add(); close(); },
-      onkeydown: (e) => { if (e.key === ' ') { e.preventDefault(); toggle(k, el); } } }, kids,
-      h('label.kat-pick', { onclick: (e) => e.stopPropagation() }, h('input', { type: 'checkbox', checked: on, onchange: () => toggle(k, el) }), h('span.box'), t('Select', 'Vælg')));
+      onkeydown: (e) => {
+        if (e.key === ' ') { e.preventDefault(); toggle(k, el); }
+        else if (e.key === '+' || e.key === '-') { e.preventDefault(); setQty(k, el, (st.sel.has(k) ? st.sel.get(k).q || 1 : 0) + (e.key === '+' ? 1 : -1)); } // + / − on a focused tile
+      } }, kids,
+      h('.kat-pickrow', null,
+        h('label.kat-pick', { onclick: (e) => e.stopPropagation() }, h('input', { type: 'checkbox', checked: on, onchange: () => toggle(k, el) }), h('span.box'), t('Select', 'Vælg'))));
+    el.querySelector('.kat-pickrow').append(qtyEl(k, el));
     return el;
   }
+  /* How many of a selected tile to add: − N + (like the metres stepper on cable cards), digits can be typed, 1–99; − at 1
+     deselects. Each piece becomes its own card (a system: its own set of cards). */
+  const Q_MAX = 99;
+  function qtyEl(k, el) {
+    const q = () => (st.sel.has(k) ? st.sel.get(k).q || 1 : 1);
+    const stop = (e) => e.stopPropagation();
+    const inp = h('input.mval', { type: 'text', inputMode: 'numeric', pattern: '[0-9]*', maxLength: 2, value: String(q()), title: t('Quantity', 'Antal'), onclick: stop, ondblclick: stop,
+      onfocus: (e) => e.target.select(),
+      oninput: (e) => { const v = e.target.value.replace(/\D/g, '').slice(0, 2); if (v !== e.target.value) e.target.value = v; },
+      onkeydown: (e) => { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); e.target.blur(); } else if (e.key === 'Escape') { e.target.value = String(q()); e.target.blur(); }
+        else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') { e.preventDefault(); setQty(k, el, q() + (e.key === 'ArrowUp' ? 1 : -1)); } },
+      onblur: (e) => { if (+e.target.value !== q()) setQty(k, el, Math.max(1, +e.target.value || 1)); } });
+    const b = (d) => h('button.mbtn', { type: 'button', title: d < 0 ? t('One less', 'Én mindre') : t('One more', 'Én mere'), onclick: (e) => { stop(e); setQty(k, el, q() + d); }, ondblclick: stop }, d < 0 ? '−' : '+');
+    return h('.mstep.kat-qty', { onclick: stop, ondblclick: stop }, b(-1), inp, h('span.munit', null, t('pcs', 'stk.')), b(1));
+  }
+  function setQty(k, el, n) {
+    n = Math.min(Q_MAX, Math.round(n));
+    if (n < 1) { if (st.sel.has(k)) toggle(k, el); return; }
+    if (!st.sel.has(k)) st.sel.set(k, { k, v: el.dataset.v || undefined, id: el.dataset.pid || undefined });
+    st.sel.get(k).q = n; syncTile(k, el); drawBar();
+  }
+  function syncTile(k, el) {
+    const on = st.sel.has(k), q = on ? st.sel.get(k).q || 1 : 1;
+    el.classList.toggle('sel', on); const c = el.querySelector('.kat-pick input'); if (c) c.checked = on;
+    const f = el.querySelector('.kat-qty .mval'); if (f && document.activeElement !== f) f.value = String(q);
+    const m = el.querySelectorAll('.kat-qty .mbtn'); if (m[1]) m[1].disabled = q >= Q_MAX;
+  }
   function toggle(k, el) {
-    if (st.sel.has(k)) st.sel.delete(k); else st.sel.set(k, { k, v: el.dataset.v || undefined, id: el.dataset.pid || undefined });
+    if (st.sel.has(k)) st.sel.delete(k); else st.sel.set(k, { k, v: el.dataset.v || undefined, id: el.dataset.pid || undefined, q: 1 });
     el.classList.add('pop'); setTimeout(() => el.classList.remove('pop'), 180);
-    el.classList.toggle('sel', st.sel.has(k)); const c = el.querySelector('.kat-pick input'); if (c) c.checked = st.sel.has(k);
+    syncTile(k, el);
     drawBar();
   }
   function priceBlock(price, was) {
@@ -341,16 +373,16 @@
     const bar = root.querySelector('.kat-bar'); bar.textContent = '';
     bar.hidden = !st.sel.size;
     if (!st.sel.size) return;
-    let sum = 0;
-    st.sel.forEach(({ k, v, id }) => { if (k[0] === 's') { const b = cat.system(k.slice(2)); sum += b ? b.price : 0; } else { const p = cat.get(id || k.slice(2)); if (p) sum += priceWith(p, v); } });
-    bar.append(h('span.kat-sel', null, st.sel.size + ' ' + t('selected', 'valgt') + ' · ' + HP.money(sum)),
+    let sum = 0, n = 0;
+    st.sel.forEach(({ k, v, id, q }) => { q = q || 1; n += q; if (k[0] === 's') { const b = cat.system(k.slice(2)); sum += (b ? b.price : 0) * q; } else { const p = cat.get(id || k.slice(2)); if (p) sum += priceWith(p, v) * q; } });
+    bar.append(h('span.kat-sel', null, (n === st.sel.size ? n + ' ' + t('selected', 'valgt') : n + t(' pcs of ', ' stk. af ') + st.sel.size + ' ' + (st.sel.size === 1 ? t('product', 'produkt') : t('products', 'produkter'))) + ' · ' + HP.money(sum)),
       h('span.kat-hint', null, t('Click selects · double-click adds at once', 'Klik vælger · dobbeltklik tilføjer med det samme')),
       h('button.btn.kat-clear', { onclick: () => { st.sel.clear(); render(true); } }, t('Clear selection', 'Fravælg')),
-      h('button.btn.primary.kat-add', { onclick: addSelection }, icon('plus', 14), t('Add ', 'Tilføj ') + st.sel.size + t(' to the canvas', ' til lærredet'), h('kbd', null, '⏎')));
+      h('button.btn.primary.kat-add', { onclick: addSelection }, icon('plus', 14), t('Add ', 'Tilføj ') + n + t(' to the canvas', ' til lærredet'), h('kbd', null, '⏎')));
   }
   function addSelection() {
     const prods = [], syss = [];
-    st.sel.forEach(({ k, v, id }) => (k[0] === 's' ? syss.push(k.slice(2)) : prods.push({ id: id || k.slice(2), v })));
+    st.sel.forEach(({ k, v, id, q }) => { for (let i = 0; i < (q || 1); i++) (k[0] === 's' ? syss.push(k.slice(2)) : prods.push({ id: id || k.slice(2), v })); }); // q pieces: q cards side by side
     if (!prods.length && !syss.length) return;
     st.sel.clear(); close();
     if (prods.length === 1 && !syss.length) C().addProductCenter(prods[0].id, prods[0].v);

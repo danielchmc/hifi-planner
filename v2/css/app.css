@@ -924,3 +924,8 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 /* Katalog: a cable's lengths on its tile (four around the chosen one, +N lists all) */
 .kat-sw.lens { overflow: hidden; } .kat-sw.lens .sw { flex: 0 1 auto; min-width: 0; height: 26px; padding: 0 5px; } .kat-sw.lens .swt { font-size: 10px; letter-spacing: -.02em; }
 .kat-sw.lens .sw.more .swt { color: var(--muted); font-weight: 400; }
+/* Katalog: quantity of a selected tile (− N stk. +), shown once the tile is selected */
+.kat-pickrow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.kat-qty { margin-top: 5px; visibility: hidden; }
+.kat-tile.sel .kat-qty { visibility: visible; }
+.kat-qty .mval { width: 22px; }
