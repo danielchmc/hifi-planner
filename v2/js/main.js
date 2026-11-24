@@ -29,7 +29,7 @@
       const c = e.code, act = {
         KeyK: () => HP.katalog.open(), // the Katalog (K in both languages)
         KeyT: () => C.addText(),
-        Digit1: () => HP.panels.layers(), // Lag: the products on the canvas
+        Digit1: () => HP.panels.layers(), // Oversigt: everything on the canvas
         KeyB: () => one && C.flip(one.id),
         KeyC: () => { if (one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); const p = HP.catalog.get(store.item(one.id).pid), fn = p && !(p.vars || []).length && HP.catalog.hasLengths(p) ? C.lengthMenu : C.colourMenu; fn(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); } },
         KeyI: () => one && C.inspect(one.id),

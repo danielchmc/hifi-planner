@@ -85,6 +85,8 @@
     undo: '<path d="M9 7L4 12l5 5"/><path d="M4 12h10a5 5 0 0 1 5 5v1"/>',
     redo: '<path d="M15 7l5 5-5 5"/><path d="M20 12H10a5 5 0 0 0-5 5v1"/>',
     text: '<path d="M5 7V5h14v2M12 5v14M9 19h6"/>', tag: '<path d="M3 12V4h8l10 10-8 8z"/><path d="M7.5 8.5h.01"/>',
+    eye: '<path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/>',
+    eyeoff: '<path d="M2 12s3.6-6.5 10-6.5c2 0 3.7.6 5.1 1.5M22 12s-3.6 6.5-10 6.5c-2 0-3.7-.6-5.1-1.5"/><path d="M4 20L20 4"/>',
     print: '<path d="M7 8V3h10v5M7 17H4V9h16v8h-3"/><path d="M7 14h10v7H7z"/>',
     help: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/>',
     sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
@@ -443,7 +445,7 @@
   function compact(doc) {
     const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
-      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, i.np ? 1 : 0, i.sy || 0, i.len || 0, i.m || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np ? [1] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
+      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, (i.np ? 1 : 0) | (i.hid ? 2 : 0), i.sy || 0, i.len || 0, i.m || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody || i.hid ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0) + (i.hid ? 4 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np || i.hid ? [(i.np ? 1 : 0) | (i.hid ? 2 : 0)] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
         : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [c.cable || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, c.ad || 0, c.lp != null ? Math.round(c.lp * 1000) + 1 : 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
@@ -453,8 +455,8 @@
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
     const ids = a[7].map(() => HP.uid());
-    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] ? { np: 1 } : {}, r[6] ? { sy: r[6] } : {}, r[7] ? { len: r[7] } : {}, r[8] ? { m: r[8] } : {})
-      : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6], ...(r[7] & 1 ? { noTitle: true } : {}), ...(r[7] & 2 ? { noBody: true } : {}) } : r[0] === 3 ? Object.assign({ id: ids[n], kind: 'mark', k: r[3], x: r[1] * 5, y: r[2] * 5 }, r[4] ? { np: 1 } : {}) : r[0] === 4 ? { id: ids[n], kind: 'legend', x: r[1] * 10, y: r[2] * 10 }
+    const items = a[7].map((r, n) => typeof r[0] === 'string' ? Object.assign({ id: ids[n], kind: 'product', pid: r[0], x: r[1] * 10, y: r[2] * 10, face: r[3] || 0 }, r[4] ? { v: r[4] } : {}, r[5] & 1 ? { np: 1 } : {}, r[5] & 2 ? { hid: 1 } : {}, r[6] ? { sy: r[6] } : {}, r[7] ? { len: r[7] } : {}, r[8] ? { m: r[8] } : {})
+      : r[0] === 1 ? { id: ids[n], kind: 'text', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, title: r[5], body: r[6], ...(r[7] & 1 ? { noTitle: true } : {}), ...(r[7] & 2 ? { noBody: true } : {}), ...(r[7] & 4 ? { hid: 1 } : {}) } : r[0] === 3 ? Object.assign({ id: ids[n], kind: 'mark', k: r[3], x: r[1] * 5, y: r[2] * 5 }, r[4] & 1 ? { np: 1 } : {}, r[4] & 2 ? { hid: 1 } : {}) : r[0] === 4 ? { id: ids[n], kind: 'legend', x: r[1] * 10, y: r[2] * 10 }
       : r[0] === 5 ? { id: ids[n], kind: 'zone', x: r[1] * 10, y: r[2] * 10, w: r[3] * 10, h: r[4] * 10, name: r[5] }
       : r[0] === 6 ? { id: ids[n], kind: 'run', x: r[1] * 5, y: r[2] * 5, cable: r[3] || null, pts: r[4].reduce((a, v, i) => { if (i % 2) a[a.length - 1].push(v * 5); else a.push([v * 5]); return a; }, []) }
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });

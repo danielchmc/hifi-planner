@@ -47,7 +47,7 @@
   // not one each: some speaker cables are sold as a pair, some as one, so the seller picks once. When one of them has a cable,
   // or is already asked about, the others are left out.
   const missing = () => {
-    const ok = (c) => store.item(c.a.item) && store.item(c.b.item);
+    const ok = (c) => store.item(c.a.item) && store.item(c.b.item) && !store.item(c.a.item).hid && !store.item(c.b.item).hid; // hidden cards (Oversigt) left out
     const conns = (store.doc.conns || []).filter(ok), done = new Set(), out = [];
     const spk = (c) => { const i = C().connInfo(c); return !!(i.a && i.a.sig === 'speaker'); };
     const pair = (c) => [c.a.item, c.b.item].sort().join('|');

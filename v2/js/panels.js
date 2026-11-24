@@ -293,7 +293,7 @@
       { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: t('now ', 'nu ') + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
       'sep',
       { label: t('Project prices…', 'Projektpriser…'), icon: 'tag', note: Pn.priceSummary ? Pn.priceSummary() : '', fn: () => Pn.projectPrices() },
-      { label: t('Layers', 'Lag'), icon: 'layers', on: Pn.layersOpen && Pn.layersOpen(), key: 'Alt+1', fn: () => Pn.layers() },
+      { label: t('Overview', 'Oversigt'), icon: 'layers', on: Pn.layersOpen && Pn.layersOpen(), key: 'Alt+1', fn: () => Pn.layers() },
     ];
   };
   const adminItems = () => {
@@ -343,6 +343,10 @@
       opts && opts.icon ? icon(opts.icon) : null, h('span.ml', null, label), icon('down', 12));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'),
       onchange: () => { store.doc.name = name.value.trim(); store.commit(); } });
+    // the proposal's name is always readable: the field is as wide as its text (120–320 px; ellipsis beyond that)
+    const ruler = document.createElement('canvas').getContext('2d');
+    const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 26; name.style.width = Math.round(Math.max(120, Math.min(320, w))) + 'px'; };
+    name.addEventListener('input', fitName);
     const scale = Pn.scaleStepper();
     const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1, key: 'F3' });
@@ -352,10 +356,10 @@
     done.append(doneN);
     const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
-    const layers = tb('tb-layers', 'layers', t('Layers', 'Lag'), () => Pn.layers(), { text: 1, key: 'Alt+1', tip: t('Layers: what is on the canvas', 'Lag: det, der er på lærredet') });
+    const layers = tb('tb-layers', 'layers', t('Overview', 'Oversigt'), () => Pn.layers(), { text: 1, key: 'Alt+1', tip: t('Overview: everything on the canvas', 'Oversigt: alt på lærredet') });
     const admin = menuBtn('tb-admin', 'Admin', adminItems, { right: 1, icon: 'gear', tip: t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv') }), adminN = h('span.badge');
     admin.insertBefore(adminN, admin.lastChild);
-    const file = menuBtn('tb-file', t('File', 'Fil'), fileItems, { tip: t('The proposal: new, projects, share, print, project prices', 'Tilbuddet: nyt, projekter, del, print, projektpriser') });
+    const file = menuBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, project prices', 'Tilbuddet: nyt, projekter, del, print, projektpriser') });
     const bar = h('header#topbar', null,
       h('button.tbtn#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus'), h('span', null, t('Products', 'Produkter'))),
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
@@ -377,6 +381,7 @@
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
       layers.classList.toggle('on', !!(Pn.layersOpen && Pn.layersOpen()));
       if (document.activeElement !== name) name.value = store.doc.name || '';
+      fitName();
       bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
       const n = cat.dirtyCount(); adminN.textContent = n || ''; adminN.hidden = !n;
       admin.title = n ? t(n + ' unpublished change(s). Admin menu: publish to all shops.', n + ' ikke-udgivne ændring(er). Admin-menuen: udgiv til alle butikker.') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
@@ -450,7 +455,7 @@
     root.append(buildTopbar(), h('#body', null, buildSidebar(), main));
     HP.canvas.init(main);
     main.prepend(buildCIBar()); // docked above the canvas
-    if (LS.get('layers', false) && !matchMedia('(max-width: 1024px)').matches) setTimeout(() => Pn.layers(true)); // Lag open last time
+    if (LS.get('layersShown', true) && !matchMedia('(max-width: 1024px)').matches) setTimeout(() => Pn.layers(true)); // Oversigt: open unless closed last time
   };
 
   /* ---------- cable picker ---------- */
@@ -730,7 +735,7 @@
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
         h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
           [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Alt', 'K'], t('Open the Katalog', 'Åbn Katalog')],
-          [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', '1'], t('Layers: what is on the canvas', 'Lag: det, der er på lærredet')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
+          [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', '1'], t('Overview: everything on the canvas', 'Oversigt: alt på lærredet')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
@@ -742,16 +747,18 @@
      Umami Cloud's free plan has no API, so the modal shows the website's share URL (Umami → the website → Edit → Share URL, with
      Realtime and Events ticked). The link is kept in this browser only (anyone with it can read the statistics). If Umami does
      not allow being shown inside another page, the frame stays empty: "Åbn i ny fane" opens the same page. */
-  /* ---------- Lag: what is on the canvas, like layers in Photoshop ----------
+  /* ---------- Oversigt: what is on the canvas, like layers in Photoshop ----------
      Topmost first. Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas,
      right-click opens its menu, dragging a row up or down changes what lies on top. A CI mark letter is one row (all its marks).
-     Each product row has its price (click: Projektpriser), "in the price list" and delete. Alt+1 or Lag in the top bar. */
+     Each row: its price (click: Projektpriser), hide (not drawn, printed or priced while hidden), "in the price list", delete.
+     Right-click a row that is part of the selection: the menu for the whole selection, as on the canvas. Alt+1 or Oversigt in the
+     top bar; open by default. */
   let layersEl = null;
   Pn.layersOpen = () => !!(layersEl && !layersEl.hidden);
   Pn.layers = (on) => {
     if (!layersEl) buildLayers();
     layersEl.hidden = on == null ? !layersEl.hidden : !on;
-    LS.set('layers', !layersEl.hidden);
+    LS.set('layersShown', !layersEl.hidden);
     if (!layersEl.hidden) drawLayers();
     HP.emit('layers');
   };
@@ -760,7 +767,7 @@
     const list = h('.ly-list'), count = h('span.ly-n');
     const onlyProducts = h('input', { type: 'checkbox', checked: LS.get('layersProducts', false), onchange: () => { LS.set('layersProducts', onlyProducts.checked); drawLayers(); } });
     layersEl = h('aside#layers', { hidden: true },
-      h('.ly-head', null, icon('layers', 15), h('b', null, t('Layers', 'Lag')), count, h('label.check.ly-only', { title: t('Show products only', 'Vis kun produkter') }, onlyProducts, h('span', null, t('Products', 'Produkter'))),
+      h('.ly-head', null, icon('layers', 15), h('b', null, t('Overview', 'Oversigt')), count, h('label.check.ly-only', { title: t('Show products only', 'Vis kun produkter') }, onlyProducts, h('span', null, t('Products', 'Produkter'))),
         h('button.icon-btn.sm', { title: t('Close (Alt+1)', 'Luk (Alt+1)'), onclick: () => Pn.layers(false) }, icon('x', 14))),
       list);
     document.getElementById('main').append(layersEl);
@@ -792,12 +799,14 @@
         const v = p && !r.mark && HP.variantOf(p, it), key = p && !r.mark ? C().rowKeyOf(it) : p ? p.id + '|' : '', pr = key && priceOfKey.get(key);
         const thumb = r.html ? h('span.ly-mk', { html: r.html }) : p ? HP.imgEl((HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', 'thumb') : icon(r.ic, 15);
         const priced = p && !it.np;
-        const row = h('.ly-row' + (sel ? '.sel' : '') + (r.other ? '.other' : '') + (p && p.gone ? '.gone' : '') + (it.np ? '.np' : ''), { data: { i: String(i) }, draggable: false },
+        const row = h('.ly-row' + (sel ? '.sel' : '') + (r.other ? '.other' : '') + (p && p.gone ? '.gone' : '') + (it.np ? '.np' : '') + (r.ids.every((id) => store.item(id).hid) ? '.hid' : ''), { data: { i: String(i) }, draggable: false },
           h('span.ly-grip', { title: t('Drag to change what lies on top', 'Træk for at ændre, hvad der ligger øverst') }, '⋮⋮'),
           h('span.ly-th', null, thumb),
           h('span.ly-name', { title: r.label + (p && (p.sku || C().skuOf(it)) ? ' · ' + (C().skuOf(it) || p.sku) : '') },
-            h('b', null, r.label), h('small', null, [r.mark ? r.qty + ' ' + t('marks', 'mærker') : null, v ? v.label : null, it.sy ? 'system' : null, p && p.gone ? t('discontinued', 'udgået') : null, it.np ? t('not priced', 'ikke i pris') : null].filter(Boolean).join(' · '))),
-          p && !r.mark ? h('button.ly-price' + (pr && pr.custom ? '.custom' : ''), { title: t('Project prices for this line', 'Projektpriser for denne linje'), onclick: (e) => { e.stopPropagation(); Pn.projectPrices(key); } }, priced && pr ? HP.money(pr.price) : '–') : h('span'),
+            h('b', null, r.label), h('small', null, [r.mark ? r.qty + ' ' + t('marks', 'mærker') : null, v ? v.label : null, it.sy ? 'system' : null, p && p.gone ? t('discontinued', 'udgået') : null, it.hid ? t('hidden', 'skjult') : it.np ? t('not priced', 'ikke i pris') : null].filter(Boolean).join(' · '))),
+          p && !r.mark ? h('button.ly-price' + (pr && pr.custom ? '.custom' : ''), { title: t('Edit prices for this line', 'Rediger priser for denne linje'), onclick: (e) => { e.stopPropagation(); Pn.projectPrices(key); } }, priced && pr ? HP.money(pr.price) : '–') : h('span'),
+          !['plan', 'prices', 'legend'].includes(it.kind) ? h('button.icon-btn.sm.ly-hide' + (r.ids.every((id) => store.item(id).hid) ? '.off' : ''), { title: r.ids.every((id) => store.item(id).hid) ? t('Hidden (not drawn, printed or priced): click to show', 'Skjult (tegnes, printes og prissættes ikke): klik for at vise') : t('Hide: not drawn, printed or priced while hidden', 'Skjul: tegnes, printes og prissættes ikke, mens den er skjult'),
+            onclick: (e) => { e.stopPropagation(); C().setHidden(r.ids, !r.ids.every((id) => store.item(id).hid)); } }, icon(r.ids.every((id) => store.item(id).hid) ? 'eyeoff' : 'eye', 13)) : h('span'),
           p ? h('button.icon-btn.sm.ly-np' + (it.np ? '' : '.on'), { title: it.np ? t('Not in the price list: click to count it', 'Ikke i prislisten: klik for at tælle den med') : t('In the price list: click to leave it out', 'I prislisten: klik for at udelade den'),
             onclick: (e) => { e.stopPropagation(); const on = !r.ids.every((id) => store.item(id).np); r.ids.forEach((id) => { const x = store.item(id); if (on) x.np = 1; else delete x.np; }); store.commit(); } }, icon('tag', 13)) : h('span'),
           it.kind !== 'plan' ? h('button.icon-btn.sm.ly-del', { title: t('Delete', 'Slet'), onclick: (e) => { e.stopPropagation(); C().select(r.ids); C().deleteSelection(); } }, icon('trash', 13)) : h('span'));
@@ -810,7 +819,8 @@
           C().select(ids);
         });
         row.addEventListener('dblclick', (e) => { if (!e.target.closest('button')) C().zoomTo(r.ids); });
-        row.addEventListener('contextmenu', (e) => { e.preventDefault(); C().itemMenu(r.ids, e.clientX, e.clientY); });
+        // right-click: the canvas menu for the selection when this row is part of it (several products: what they share), else for this row
+        row.addEventListener('contextmenu', (e) => { e.preventDefault(); const inSel = r.ids.every((id) => store.sel.has(id)); C().itemMenu(inSel ? [...store.sel] : r.ids, e.clientX, e.clientY); });
         row.addEventListener('pointerenter', () => { hover = r.ids; C().highlight(r.ids, true); });
         row.addEventListener('pointerleave', () => { C().highlight(r.ids, false); hover = null; });
         // drag a row up or down: what lies on top changes (the floor plan stays at the bottom)
@@ -860,19 +870,19 @@
     const commit = () => { tidy(); store.commit(); draw(); };
     let selKey = focusKey || null, refocus = null;
     const table = h('.pp-lines'), sum = h('.pp-sum');
-    const tile = (label, sub, fn, cls) => h('button.pp-act' + (cls || ''), { onclick: fn }, h('b', null, label), h('span', null, sub));
+    const tile = (label, sub, fn, cls, ic) => h('button.pp-act' + (cls || ''), { onclick: fn }, icon(ic || 'tag', 15), h('b', null, label), h('span', null, sub));
     const focusIn = (sel) => { const el = body.querySelector(sel); if (el) { el.focus(); el.select && el.select(); } };
     const needLine = (what) => { if (!selKey) { HP.toast(t('Click a line first', 'Klik først på en linje'), { kind: 'warn' }); return false; } focusIn('.pp-row[data-key="' + CSS.escape(selKey) + '"] input.' + what); return true; };
     const acts = h('.pp-acts', null,
-      tile(t('Line Discount Amount', 'Linjerabatbeløb'), t('kr off the selected line', 'kr. af den valgte linje'), () => needLine('ld')),
-      tile(t('Total Disc Amount', 'Total rabatbeløb'), t('kr off the whole proposal', 'kr. af hele tilbuddet'), () => focusIn('input.ta')),
-      tile(t('Total Discount %', 'Total rabat %'), t('% off the whole proposal', '% af hele tilbuddet'), () => focusIn('input.tp')),
+      tile(t('Line Discount Amount', 'Linjerabatbeløb'), t('kr off the selected line', 'kr. af den valgte linje'), () => needLine('ld'), '', 'minus'),
+      tile(t('Total Disc Amount', 'Total rabatbeløb'), t('kr off the whole proposal', 'kr. af hele tilbuddet'), () => focusIn('input.ta'), '', 'minus'),
+      tile(t('Total Discount %', 'Total rabat %'), t('% off the whole proposal', '% af hele tilbuddet'), () => focusIn('input.tp'), '', 'minus'),
       tile(t('Reset Discounts', 'Nulstil rabatter'), t('back to the website prices', 'tilbage til hjemmesidens priser'), () => {
         if (!Pn.hasProjectPrices()) return;
         if (!confirm(t('Remove all project prices and discounts from this proposal?', 'Fjern alle projektpriser og rabatter fra tilbuddet?'))) return;
         delete d.pr; commit(); HP.toast(t('Back to the website prices', 'Tilbage til hjemmesidens priser'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: () => { store.undo(); draw(); } } });
-      }, '.reset'),
-      tile(t('Change Price', 'Ændr pris'), t('unit price of the selected line', 'enhedspris på den valgte linje'), () => needLine('up')));
+      }, '.reset', 'undo'),
+      tile(t('Change Price', 'Ændr pris'), t('unit price of the selected line', 'enhedspris på den valgte linje'), () => needLine('up'), '', 'edit'));
     const field = (cls, value, ph, onset, opts) => {
       const inp = h('input.' + cls, { type: 'text', inputMode: 'decimal', value: value == null ? '' : fmt(value), placeholder: ph, title: (opts && opts.title) || '',
         onfocus: (e) => { e.target.select(); if (opts && opts.key) selectRow(opts.key); },

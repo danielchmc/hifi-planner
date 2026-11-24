@@ -64,7 +64,7 @@ input:focus, select:focus { border-color: var(--fg); }
 .brandmark { height: 48px; width: 300px; display: flex; align-items: center; padding: 0 14px; border-right: 1px solid var(--line); flex: none; }
 .brandmark img { height: 26px; display: block; }
 html[data-theme="dark"] .brandmark img, html[data-theme="dark"] .login-card img { filter: invert(1); }
-.docname { flex: 1 1 160px; min-width: 150px; max-width: 280px; border-color: transparent !important; font-weight: 600; background: transparent !important; }
+.docname { flex: 0 1 auto; min-width: 120px; max-width: 320px; text-overflow: ellipsis; border-color: transparent !important; font-weight: 600; background: transparent !important; }
 .docname:hover, .docname:focus { border-color: var(--line) !important; }
 .tgroup { display: flex; border: 1px solid var(--line); height: 32px; }
 .tbtn { display: inline-flex; align-items: center; gap: 6px; border: 0; border-right: 1px solid var(--line); background: none; padding: 0 9px; height: 100%; white-space: nowrap; }
@@ -75,8 +75,8 @@ html[data-theme="dark"] .brandmark img, html[data-theme="dark"] .login-card img 
 .tbtn.publish { color: var(--accent); font-weight: 600; } .tbtn.lang { font: 600 11px var(--mono); }
 /* the top bar fits from 1100 px up: text labels go first (Lag, CI, Prisliste, Tekst, Print), then the card-size label, then the
    brand column narrows; the menus (Fil, Admin, the seller) and Relaterede produkter keep theirs */
-@media (max-width: 1640px) { #tb-layers span, #tb-ci span { display: none; } }
-@media (max-width: 1480px) { #tb-prices span, #tb-text span, #tb-print span { display: none; } }
+@media (max-width: 1760px) { #tb-layers span, #tb-ci span { display: none; } }
+@media (max-width: 1600px) { #tb-prices span, #tb-text span, #tb-print span { display: none; } }
 @media (max-width: 1340px) { #tb-scale .slab { display: none; } }
 @media (max-width: 1100px) { .brandmark { width: 150px; } #sidebar { width: 250px; } }
 
@@ -459,7 +459,8 @@ html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 }
 
 @media (max-width: 700px) {
-  .docname, #tb-insert, .spacer { display: none !important; }
+  #tb-insert, .spacer { display: none !important; }
+  .docname { flex: 1 1 auto; min-width: 70px; font-size: 13px; padding: 0 4px; }
   #topbar { justify-content: space-between; }
   #tb-drawer span { display: inline !important; }
   #tb-print span { display: none; }
@@ -736,7 +737,8 @@ html[data-theme="dark"] .kat-pic, html[data-theme="dark"] .kat-cat .pic, html[da
 #tb-complete { position: relative; font-weight: 600; }
 #tb-complete .badge { min-width: 16px; height: 16px; padding: 0 4px; margin-left: 4px; background: var(--accent-fg); color: var(--accent); font: 600 10px/16px var(--mono); text-align: center; }
 #tb-complete:hover .badge { background: var(--panel); color: var(--fg); }
-@media (max-width: 1340px) { #tb-complete > span:not(.badge) { display: none; } }
+@media (max-width: 1460px) { #tb-complete > span:not(.badge) { display: none; } }
+@media (max-width: 1300px) { #tb-admin .ml, #tb-seller .ml { display: none; } }
 /* v4.8: item number (SKU) on the selection bar and in the right-click menu */
 #selbar button:not(.sku) { width: 34px; padding: 0; justify-content: center; }
 @media (pointer: coarse) { #selbar button:not(.sku) { width: 44px; } }
@@ -955,14 +957,15 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 /* v4.17 Projektpriser: Business Central's POS discount actions as tiles, the lines with their price and discount, the totals */
 .pp-intro { margin: 0 0 12px; font-size: 12.5px; }
 .pp-acts { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 14px; }
-.pp-act { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-height: 62px; padding: 9px 10px; border: 0; background: #00807f; color: #fff; text-align: left; cursor: pointer; }
-.pp-act b { font: 600 13px var(--ui); } .pp-act span { font-size: 11px; opacity: .8; line-height: 1.25; }
-.pp-act:hover { background: #006a69; } .pp-act.reset { background: var(--panel2); color: var(--fg); border: 1px solid var(--line); } .pp-act.reset:hover { border-color: var(--fg); }
+.pp-act { display: grid; grid-template-columns: 16px 1fr; column-gap: 7px; row-gap: 2px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); text-align: left; cursor: pointer; }
+.pp-act .ic { grid-row: span 2; align-self: start; margin-top: 1px; } .pp-act b { font: 600 12.5px var(--ui); } .pp-act span { font-size: 11px; color: var(--muted); line-height: 1.25; }
+.pp-act:hover { border-color: var(--fg); background: var(--panel2); } .pp-act:active { background: var(--fg); color: var(--panel); } .pp-act:active span { color: inherit; }
+.pp-act.reset:hover { border-color: var(--err); color: var(--err); }
 .pp-lines { border-top: 1px solid var(--fg); max-height: 46vh; overflow: auto; }
 .pp-row { display: grid; grid-template-columns: 36px minmax(0, 1fr) 46px 96px 104px 104px 110px 28px; gap: 8px; align-items: center; padding: 5px 4px; border-bottom: 1px solid var(--line); cursor: default; }
 .pp-row.head { position: sticky; top: 0; background: var(--panel); z-index: 1; font: 600 10.5px var(--mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); padding: 6px 4px; }
-.pp-row.sel { background: var(--panel2); box-shadow: inset 3px 0 0 #00807f; }
-.pp-row.custom .pp-name b::after { content: ' •'; color: #00807f; }
+.pp-row.sel { background: var(--panel2); box-shadow: inset 3px 0 0 var(--accent); }
+.pp-row.custom .pp-name b::after { content: ' •'; color: var(--accent); }
 .pp-row .n { text-align: right; font-family: var(--mono); font-size: 12px; white-space: nowrap; } .pp-row .n s { display: block; font-size: 10.5px; color: var(--muted); }
 .pp-row .amt { font-weight: 600; }
 .pp-img { width: 36px; height: 36px; display: grid; place-items: center; background: #fff; } .pp-img img { max-width: 34px; max-height: 34px; }
@@ -980,14 +983,14 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .pl-pp:hover { opacity: 1; background: var(--paper); color: var(--fg); }
 
 /* v4.17 Lag: the canvas items, topmost first, docked on the right of the canvas */
-#layers { position: absolute; right: 10px; top: 10px; bottom: 62px; width: 300px; z-index: 30; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--fg); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+#layers { position: absolute; right: 10px; top: 10px; bottom: 62px; width: 320px; z-index: 30; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--fg); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
 #layers[hidden] { display: none; }
 #main.ci-on #layers { top: 50px; }
 .ly-head { display: flex; align-items: center; gap: 7px; padding: 0 6px 0 10px; height: 36px; border-bottom: 1px solid var(--fg); flex: none; }
 .ly-head b { font: 600 13px var(--display); } .ly-n { font: 10.5px var(--mono); color: var(--muted); margin-right: auto; }
 .ly-only { font-size: 11px; gap: 4px; } .ly-only input { width: 13px; height: 13px; }
 .ly-list { overflow: auto; flex: 1; position: relative; }
-.ly-row { display: grid; grid-template-columns: 12px 30px minmax(0, 1fr) auto 24px 24px; gap: 6px; align-items: center; height: 40px; padding: 0 4px 0 2px; border-bottom: 1px solid var(--line); cursor: default; user-select: none; }
+.ly-row { display: grid; grid-template-columns: 10px 30px minmax(0, 1fr) auto 22px 22px 22px; gap: 4px; align-items: center; height: 40px; padding: 0 4px 0 2px; border-bottom: 1px solid var(--line); cursor: default; user-select: none; }
 .ly-row:hover { background: var(--panel2); }
 .ly-row.sel { background: color-mix(in srgb, var(--accent) 12%, var(--panel)); box-shadow: inset 3px 0 0 var(--accent); }
 .ly-row.other { height: 30px; color: var(--muted); } .ly-row.other .ly-th { justify-content: center; }
@@ -999,9 +1002,13 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .ly-mk { display: grid; place-items: center; width: 30px; height: 30px; } .ly-mk svg { width: 22px; height: 22px; }
 .ly-name { min-width: 0; line-height: 1.2; } .ly-name b { display: block; font-size: 12px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ly-row.other .ly-name b { font-weight: 400; } .ly-name small { display: block; font: 10px var(--mono); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.ly-price { border: 0; background: none; font: 11px var(--mono); padding: 2px 3px; color: var(--fg); cursor: pointer; white-space: nowrap; } .ly-price:hover { text-decoration: underline; } .ly-price.custom { color: #00807f; font-weight: 600; }
-.ly-np { opacity: .35; } .ly-np.on { opacity: .9; } .ly-del { opacity: 0; } .ly-row:hover .ly-del { opacity: .7; } .ly-del:hover { color: var(--err); opacity: 1; }
+.ly-price { border: 0; background: none; font: 11px var(--mono); padding: 2px 3px; color: var(--fg); cursor: pointer; white-space: nowrap; } .ly-price:hover { text-decoration: underline; } .ly-price.custom { color: var(--accent); font-weight: 600; }
+.ly-np { opacity: .35; } .ly-np.on { opacity: .9; } .ly-hide { opacity: .9; } .ly-hide.off { opacity: .45; color: var(--accent); }
+.ly-row.hid .ly-th, .ly-row.hid .ly-name b, .ly-row.hid .ly-price { opacity: .4; } .ly-row.hid .ly-name small { color: var(--accent); }
+.item.hid { display: none !important; } .ly-del { opacity: 0; } .ly-row:hover .ly-del { opacity: .7; } .ly-del:hover { color: var(--err); opacity: 1; }
 .ly-drop { position: absolute; left: 0; right: 0; height: 2px; background: var(--accent); pointer-events: none; }
 .ly-empty { padding: 16px 12px; font-size: 12.5px; }
 .item.hl { outline: 2px dashed var(--accent); outline-offset: 3px; }
 @media (max-width: 1024px) { #layers { width: min(300px, calc(100% - 20px)); } }
+#layers .ly-row .icon-btn.sm { width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
+@media (max-width: 1024px) { #layers { width: min(320px, calc(100% - 20px)); } }

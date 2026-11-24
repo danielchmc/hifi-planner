@@ -89,7 +89,7 @@
   }
   function legendRows() {
     const d = store.doc, n = {}, S = (d.ms || 34) / 2;
-    d.items.forEach((i) => { if (i.kind === 'mark') n[i.k] = (n[i.k] || 0) + 1; });
+    d.items.forEach((i) => { if (i.kind === 'mark' && !i.hid) n[i.k] = (n[i.k] || 0) + 1; });
     const products = MK.map((k) => { const p = cat.get(k); return { k, p, qty: n[k] || 0, price: p ? p.price || 0 : 0, was: p && p.was > p.price ? p.was : 0 }; });
     // a mark, or a product card, belongs to the first room (zone) that contains its centre. Marks outside every room are listed as
     // "Outside the rooms"; cards outside are not (they are usually a wiring diagram on another page). Within a room a product that is
@@ -97,7 +97,7 @@
     const zs = d.items.filter((i) => i.kind === 'zone'), zr = zs.map((z) => ({ name: z.name || '', m: {}, c: {} })), other = { name: null, m: {}, c: {} };
     const zoneAt = (cx, cy) => zs.findIndex((z) => cx >= z.x && cx <= z.x + z.w && cy >= z.y && cy <= z.y + z.h);
     if (zs.length) d.items.forEach((i) => {
-      if (i.np) return;
+      if (i.np || i.hid) return;
       if (i.kind === 'mark' && i.k[0] !== '@') { const zi = zoneAt(i.x + S, i.y + S), r = zi < 0 ? other : zr[zi]; (r.m[i.k] = r.m[i.k] || []).push(null); }
       else if (i.kind === 'product' && cat.get(i.pid)) { const g = measure(i) || { w: 0, h: 0 }, zi = zoneAt(i.x + g.w / 2, i.y + g.h / 2); if (zi >= 0) (zr[zi].c[i.pid] = zr[zi].c[i.pid] || []).push(i); }
     });
@@ -248,7 +248,7 @@
     // "was" is what the parts cost one by one (or the website's own before-price, if higher). Cards left over (a part deleted, an
     // extra card) are priced on their own below.
     const used = new Set(), sysHave = {};
-    const bySy = {}; d.items.forEach((it) => { if (it.kind === 'product' && !it.np && it.sy && cat.get(it.pid)) (bySy[it.sy] = bySy[it.sy] || []).push(it); });
+    const bySy = {}; d.items.forEach((it) => { if (it.kind === 'product' && !it.np && !it.hid && it.sy && cat.get(it.pid)) (bySy[it.sy] = bySy[it.sy] || []).push(it); });
     Object.keys(bySy).forEach((sku) => {
       const b = cat.system(sku); if (!b) return;
       const pool = bySy[sku];
@@ -262,13 +262,13 @@
     });
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
     d.items.forEach((it) => {
-      if (it.kind !== 'product' || it.np || used.has(it.id)) return;
+      if (it.kind !== 'product' || it.np || it.hid || used.has(it.id)) return; // hidden (Oversigt) or "not priced": not counted
       const p = cat.get(it.pid);
       if (it.m && cat.isPerMetre(p)) { for (let i = 0; i < Math.ceil(it.m); i++) add(p, true, null, true); return; } // a cable card by the metre: per started metre
       add(p, false, it);
     });
     const mc = {};
-    d.items.forEach((it) => { if (it.kind === 'mark' && !it.np && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
+    d.items.forEach((it) => { if (it.kind === 'mark' && !it.np && !it.hid && it.k[0] !== '@') mc[it.k] = (mc[it.k] || 0) + 1; });
     for (const pid in mc) { // a product placed as marks and also drawn as cards is the same hardware: count the larger number once
       const p = cat.get(pid); let have = 0;
       rows.forEach((r, key) => { if (key.startsWith(pid + '|')) have += r.qty; });
@@ -277,6 +277,7 @@
     }
     // a wire's cable: in the chosen length (lv), or by the metre (m metres, counted per started metre like cable runs)
     d.conns.forEach((c) => {
+      if (C.isHidden(c.a.item) || C.isHidden(c.b.item)) return;
       const ad = c.ad && cat.get(c.ad); if (ad) add(ad, true); // the adapter in the chain (a Y-splitter…)
       const p = c.cable && cat.get(c.cable); if (!p) return; if (c.m) { for (let i = 0; i < Math.ceil(c.m); i++) add(p, true, null, true); } else add(p, true, c.lv ? { len: c.lv } : null);
     });
@@ -447,6 +448,7 @@
       el.style.left = it.x + 'px'; el.style.top = it.y + 'px';
       if (it.kind === 'product') { const s = cardScale(); el.style.transform = s !== 1 ? 'scale(' + s + ')' : ''; }
       el.classList.toggle('sel', store.sel.has(it.id));
+      el.classList.toggle('hid', !!it.hid); // hidden in Oversigt: not drawn, not printed, not priced
     });
     for (const [id, el] of els) if (!seen.has(id)) { el.remove(); els.delete(id); geom.delete(id); }
     // cards that are new on the canvas fade in: a few at a time (added, pasted, a system), not a whole drawing being opened
@@ -589,6 +591,7 @@
     Object.values(bySrc).forEach((list) => list.map((c) => [c, (portPos(c.a.item, 'out', c.a.key) || { y: 0 }).y]).sort((p, q) => p[1] - q[1])
       .forEach(([c], i, arr) => lanes.set(c.id, (i - (arr.length - 1) / 2) * 8)));
     d.conns.forEach((c) => {
+      if (C.isHidden(c.a.item) || C.isHidden(c.b.item)) return; // a wire to a hidden card is hidden with it (and its cable is not priced)
       const r = route(c, lanes.get(c.id) || 0); if (!r) return;
       routes.set(c.id, r);
       const info = connInfo(c), dd = pathD(r.pts, 7), sel = store.selConn === c.id;
@@ -654,7 +657,7 @@
   C.fit = () => {
     const d = store.doc, s = pageSize(), r = vp.getBoundingClientRect();
     let x0 = 0, y0 = 0, x1 = d.pages * (s.w + GAP) - GAP, y1 = s.h;
-    d.items.forEach((it) => { const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + g.w); y1 = Math.max(y1, it.y + g.h); });
+    d.items.forEach((it) => { if (it.hid) return; const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + g.w); y1 = Math.max(y1, it.y + g.h); });
     const pad = 48, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0)), 0.15, 1.5);
     view.z = z; view.x = (r.width - (x1 - x0) * z) / 2 - x0 * z; view.y = (r.height - (y1 - y0) * z) / 2 - y0 * z;
     applyView();
@@ -1293,6 +1296,13 @@
   C.stopStamp = (quiet) => { if (!stamp) return; stamp = null; ghost.remove(); ghost = null; vp.classList.remove('stamping'); if (!quiet) HP.emit('stamp'); };
 
   // leave products or marks out of the price list (they stay on the drawing); acts on the whole selection
+  // hidden in Oversigt (it.hid): kept in the drawing but not drawn, printed or priced, nor its wires; shown again from Oversigt
+  C.isHidden = (id) => { const it = store.item(id); return !!(it && it.hid); };
+  C.setHidden = (ids, on) => {
+    ids.forEach((id) => { const it = store.item(id); if (!it || it.kind === 'plan') return; if (on) { it.hid = 1; store.sel.delete(id); } else delete it.hid; });
+    if (on && store.selConn && store.doc.conns.some((c) => c.id === store.selConn && (C.isHidden(c.a.item) || C.isHidden(c.b.item)))) store.selConn = null;
+    store.commit();
+  };
   const priceable = (i) => i.kind === 'product' || (i.kind === 'mark' && i.k[0] !== '@');
   C.togglePriced = () => {
     const its = [...store.sel].map((id) => store.item(id)).filter((i) => i && priceable(i));
@@ -1302,7 +1312,7 @@
     store.commit();
     HP.toast(leaveOut ? t('Left out of the price list', 'Udeladt af prislisten') + (its.length > 1 ? ' (' + its.length + ')' : '') : t('Counted in the price list again', 'Tælles med i prislisten igen'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
   };
-  C.selectAll = () => C.select(store.doc.items.filter((i) => i.kind !== 'plan').map((i) => i.id));
+  C.selectAll = () => C.select(store.doc.items.filter((i) => i.kind !== 'plan' && !i.hid).map((i) => i.id));
   C.nudge = (dx, dy) => { const g = [...store.sel].map(store.item).filter(Boolean); if (!g.length) return; g.forEach((i) => { i.x += dx; i.y += dy; }); store.commit(); };
 
   /* ---- clipboard, layers, reset, floor plan ---- */
@@ -1404,6 +1414,7 @@
         add(t('Place more of these', 'Placér flere af disse'), '', 'plus', () => C.startStamp(one.k));
       }
       if (one && one.kind === 'run') add(t('Choose cable…', 'Vælg kabel…'), '', 'cable', () => HP.panels.runCablePicker(one.id));
+      if (one && one.kind === 'prices') add(t('Edit prices…', 'Rediger priser…'), '', 'tag', () => HP.panels.projectPrices(), { note: HP.panels.priceSummary() });
       if (one && one.kind === 'text') {
         add(t('Show title', 'Vis titel'), '', 'text', () => C.toggleNotePart(one.id, 'title'), { on: !one.noTitle, disabled: !!one.noBody });
         add(t('Show paragraph', 'Vis afsnit'), '', 'text', () => C.toggleNotePart(one.id, 'body'), { on: !one.noBody, disabled: !!one.noTitle });
@@ -1417,6 +1428,8 @@
         { const pr = [...store.sel].map((id) => store.item(id)).filter((x) => x && priceable(x));
           if (full && pr.length) add(t('Count in price list', 'Tæl med i prislisten'), '', 'tag', C.togglePriced, { on: !pr[0].np }); }
         add(t('Duplicate', 'Dublér'), 'Ctrl+D', 'copy', C.duplicateSelection, { disabled: one && (one.kind === 'prices' || one.kind === 'legend') });
+        if (!(one && (one.kind === 'prices' || one.kind === 'legend'))) { const allHid = ids.every((id) => store.item(id).hid);
+          add(allHid ? t('Show', 'Vis') : t('Hide', 'Skjul'), '', allHid ? 'eye' : 'eyeoff', () => C.setHidden(ids, !allHid), { note: allHid ? '' : t('show again in Overview', 'vis igen i Oversigt') }); }
         if (full) add(t('Bring to front', 'Placér forrest'), ']', 'up', () => C.order(true));
         if (full) add(t('Send to back', 'Placér bagerst'), '[', 'down', () => C.order(false));
         if (full && admin && ids.some((id) => store.item(id).kind === 'product')) add(t('Save as Shortcut…', 'Gem som genvej…'), '', 'bolt', () => HP.editor.saveShortcut());

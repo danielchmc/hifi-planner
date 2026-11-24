@@ -215,7 +215,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-1900`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-1950`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -232,25 +232,26 @@ A wire's cable label sits on the wire where it takes the least room (`placeChip`
 
 ## Top bar (since 2026-11-24)
 
-**Fil ▾** · the proposal's name · undo/redo · Tekst, Prisliste, **Relaterede produkter**, CI-tilstand · Kort (card size) · **Lag** · **Print / PDF**, and on the right **Admin ▾** (admins only; a badge counts unpublished changes) and **the seller's name ▾**.
+**Filer ▾** · the proposal's name · undo/redo · Tekst, Prisliste, **Relaterede produkter**, CI-tilstand · Kort (card size) · **Oversigt** · **Print / PDF**, and on the right **Admin ▾** (admins only; a badge counts unpublished changes) and **the seller's name ▾**.
 
-- **Fil:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Projektpriser…, Lag. A dot on Fil means the proposal has project prices.
+- **Filer:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Projektpriser…, Oversigt. A dot on Filer means the proposal has project prices.
 - **Admin:** Produkt-editor, Statistik, Udgiv (n).
 - **The seller:** Hjælp, English/Dansk, Lyst/Mørkt tema (F1), Indstillinger, Skift sælger.
-- It fits from 1100 px: text labels go first (Lag, CI, then Prisliste, Tekst and Print, then Relaterede produkter), the menus keep theirs. Up to 1024 px (iPad portrait, phones) everything is in ⋯ as before. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`.
+- **The proposal's name is always shown**, the field as wide as its text (120–320 px, then "…"). To make room, text labels go first as the window narrows (Oversigt and CI from 1760 px, Prisliste, Tekst and Print from 1600, Relaterede produkter from 1460, the names on Admin and the seller from 1300). Up to 1024 px (iPad portrait, phones) the rest is in ⋯; the name stays. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`.
 
-## Lag (layers)
+## Oversigt (layers)
 
-**Lag** in the top bar, Fil → Lag or **Alt+1** opens a panel on the right of the canvas with everything on it, topmost first, like layers in Photoshop (remembered per browser). Product rows show the picture, name, variant and price; other items (text, price list, legend, rooms, cable runs, the floor plan) are greyed rows, or hidden with **Produkter** ticked; a CI mark letter is one row for all its marks.
+**Oversigt** in the top bar, Filer → Oversigt or **Alt+1** shows a panel on the right of the canvas with everything on it, topmost first, like layers in Photoshop. It is open by default (from 1025 px wide); closing it is remembered per browser. Product rows show the picture, name, variant and price; other items (text, price list, legend, rooms, cable runs, the floor plan) are greyed rows, or hidden with **Produkter** ticked; a CI mark letter is one row for all its marks.
 
-- Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas, right-click opens its menu.
+- Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas. Right-click opens the same menu as on the canvas: for the whole selection when the row is part of it (several products: Dublér, Skjul, Slet…), else for that row.
 - Drag a row by its grip (⋮⋮) to change what lies on top (the floor plan stays at the bottom); one step for Undo.
-- Per product row: its price (click: Projektpriser on that line), in/out of the price list, delete.
-- `Pn.layers` in `js/panels.js`; `C.zoomTo`, `C.highlight`, `C.itemMenu` in `js/canvas.js`.
+- Per row: its price (click: Projektpriser on that line), **hide** (the eye), in/out of the price list, delete.
+- **Hidden** (`hid` on the item; the eye, or right-click → Skjul / Vis on the canvas or in Oversigt): the card is kept in the drawing but not drawn, printed or priced, and nor are its wires and their cables (and a wire to it does not count as missing a cable). It stays in Oversigt, greyed, *skjult*, to show again. Share links and Shortcuts keep it.
+- `Pn.layers` in `js/panels.js`; `C.zoomTo`, `C.highlight`, `C.itemMenu`, `C.setHidden` in `js/canvas.js`.
 
 ## Project prices (custom price proposals)
 
-Prices and discounts for one proposal, without touching the catalogue: **Fil → Projektpriser…**, **Priser** in the price list's header, right-click a card → **Ændr pris…**, or a price in Lag. The dialog has Business Central's POS discount actions as buttons, over the price list's lines:
+Prices and discounts for one proposal, without touching the catalogue: **Filer → Projektpriser…**, **Priser** in the price list's header, right-click the price list → **Rediger priser…**, right-click a card → **Ændr pris…**, or a price in Oversigt. The dialog has Business Central's POS discount actions (in HiFi Planner's own button style) over the price list's lines:
 
 - **Ændr pris** (Change Price): the selected line's unit price.
 - **Linjerabatbeløb** (Line Discount Amount): kroner off the selected line.
