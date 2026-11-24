@@ -458,7 +458,7 @@
     const tools = [
       tb('', 'page', t('Room', 'Rum'), t('Draw a room: marks inside are grouped in the legend', 'Tegn et rum: mærker indeni grupperes i signaturforklaringen'), () => C().startTool('zone'), { tool: 'zone' }),
       tb('', 'cable', t('Cable', 'Kabel'), t('Draw a cable run and get its length', 'Tegn et kabeltræk og få længden'), () => C().startTool('run'), { tool: 'run' }),
-      tb('', 'scale', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'), () => C().startTool('scale'), { tool: 'scale' })];
+      tb('', 'ruler', t('Scale', 'Målestok'), t('Tell HiFi Planner the real size of the plan', 'Fortæl HiFi Planner planens rigtige størrelse'), () => C().startTool('scale'), { tool: 'scale' })];
     const HINTS = { zone: ['Drag a rectangle around the room', 'Træk et rektangel rundt om rummet'], run: ['Click along the cable route · double-click or Enter to finish · Esc to stop', 'Klik langs kabelvejen · dobbeltklik eller Enter afslutter · Esc stopper'],
       scale: ['Click the two ends of a wall or door you know the length of', 'Klik på de to ender af en væg eller dør, du kender længden på'] };
     const finish = h('button.btn.sm.primary', { hidden: true, onclick: () => C().finishRun() }, icon('check', 14), t('Finish run', 'Afslut træk'));
