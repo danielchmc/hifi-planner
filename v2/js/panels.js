@@ -380,7 +380,7 @@
     // card size, like Figma's zoom menu: the percentage, and a menu with − / + and common sizes
     const scaleTxt = h('span.ml'), STEPS = [0.6, 0.8, 1, 1.25];
     const scaleBtn = h('button.tb-i.tb-menu#tb-scale', { title: t('Card size relative to the A4 page', 'Kortstørrelse i forhold til A4-siden'), onclick: (e) => dropAt(e.currentTarget, [
-      { head: t('Card size', 'Kortstørrelse') }, { el: Pn.scaleStepper() }, 'sep',
+      { el: Pn.scaleStepper() }, 'sep',
       ...STEPS.map((v) => ({ label: Math.round(v * 100) + '%', on: Math.abs((store.doc.cardScale || 1) - v) < 0.001, fn: () => C().setCardScale(v, true) })),
       'sep', { label: t('Fit to window', 'Tilpas til vindue'), icon: 'fit', key: 'Shift+1', fn: () => C().fit() }], true) }, icon('scale', 16), scaleTxt, icon('down', 11));
     // "Relaterede produkter": cables for the connections without one and the website's accessories; the badge counts the connections without a cable
@@ -440,7 +440,7 @@
     const cur = () => store.doc.cardScale || 1;
     const step = (d) => { const i = STEPS.findIndex((s) => s >= cur() - 0.001), j = HP.clamp((STEPS[i] > cur() + 0.001 && d < 0 ? i : i + d), 0, STEPS.length - 1); C().setCardScale(STEPS[j], true); };
     const val = h('button.sval', { title: t('Card size relative to the A4 page. Click to reset to 100%.', 'Kortstørrelse i forhold til A4-siden. Klik for at nulstille til 100%.'), onclick: () => C().setCardScale(1, true) });
-    const el = h('.stepper', { title: t('Card size', 'Kortstørrelse') }, icon('scale', 15), h('span.slab', null, t('Cards', 'Kort')),
+    const el = h('.stepper', { title: t('Card size', 'Kortstørrelse') }, icon('scale', 15), h('span.slab', null, t('Card size', 'Kortstørrelse')),
       h('button', { title: t('Smaller cards', 'Mindre kort'), onclick: () => step(-1) }, icon('minus', 14)), val, h('button', { title: t('Larger cards', 'Større kort'), onclick: () => step(1) }, icon('plus', 14)));
     const sync = () => { val.textContent = Math.round(cur() * 100) + '%'; };
     sync(); HP.on('doc', sync);
