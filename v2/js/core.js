@@ -465,7 +465,7 @@
     return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   // project prices: does the proposal have any (a line's price or discount, or a total discount)?
-  HP.hasPr = (pr) => !!pr && (!!(pr.ta || pr.tp) || Object.values(pr.l || {}).some((x) => x && (x.p != null || x.d)));
+  HP.hasPr = (pr) => !!pr && (!!(pr.ta || pr.tp) || Object.values(pr.l || {}).some((x) => x && (x.p != null || x.d || x.r)));
   HP.share = {
     async pack(doc) {
       const bytes = new TextEncoder().encode(JSON.stringify(compact(doc)));

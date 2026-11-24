@@ -1018,3 +1018,5 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 @media (max-width: 1024px) { #layers { width: min(300px, calc(100% - 20px)); } }
 #layers .ly-row .icon-btn.sm { width: 22px; height: 22px; padding: 0; display: grid; place-items: center; }
 @media (max-width: 1024px) { #layers { width: min(320px, calc(100% - 20px)); } }
+.pp-away { padding: 8px 4px 4px; border-bottom: 1px solid var(--line); } .pp-away-h { font: 600 10.5px var(--mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); margin-bottom: 4px; }
+.pp-away-r { display: grid; grid-template-columns: minmax(0, 1fr) auto 24px; gap: 10px; align-items: center; font-size: 12px; padding: 2px 0; } .pp-away-r .muted { font: 11px var(--mono); }

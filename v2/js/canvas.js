@@ -298,7 +298,10 @@
       const o = L[r.key] || {};
       r.list = r.price; r.base = Math.max(r.was || 0, r.price);
       if (o.p != null && o.p >= 0) { r.price = o.p; r.custom = true; }
-      r.ldisc = Math.max(0, Math.min(o.d || 0, r.price * r.qty)); if (r.ldisc) r.custom = true;
+      // the line discount is kept as a percentage (r), as Business Central keeps Line Discount %: the amount follows the quantity and
+      // the unit price, so a discount survives a card being added, removed or deleted and added back (d: kroner, before 2026-11-24)
+      const g = r.price * r.qty, dk = o.r != null ? Math.round(g * o.r) / 100 : o.d || 0;
+      r.ldisc = Math.max(0, Math.min(dk, g)); if (r.ldisc) r.custom = true;
       r.amount = r.price * r.qty - r.ldisc;
       r.was = r.amount < r.base * r.qty ? r.base : 0;
     });

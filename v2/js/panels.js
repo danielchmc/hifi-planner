@@ -880,25 +880,27 @@
     const pr = () => (d.pr = d.pr || { l: {} }, d.pr.l = d.pr.l || {}, d.pr);
     const num = (v) => { const s = String(v).trim().replace(/\s|kr\.?|,-|%/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.'); return s === '' ? null : +s; };
     const fmt = (n, dec) => (n == null ? '' : String(Math.round(n * (dec ? 10 : 100)) / (dec ? 10 : 100)).replace('.', ','));
-    const tidy = () => { const p = d.pr; if (!p) return; Object.keys(p.l || {}).forEach((k) => { const o = p.l[k]; if (!o || (o.p == null && !o.d)) delete p.l[k]; }); if (!p.ta) delete p.ta; if (!p.tp) delete p.tp; if (!HP.hasPr(p)) delete d.pr; };
+    const tidy = () => { const p = d.pr; if (!p) return; Object.keys(p.l || {}).forEach((k) => { const o = p.l[k]; if (!o || (o.p == null && !o.d && !o.r)) delete p.l[k]; }); if (!p.ta) delete p.ta; if (!p.tp) delete p.tp; if (!HP.hasPr(p)) delete d.pr; };
     const commit = () => { tidy(); store.commit(); draw(); };
     const stackOn = () => LS.get('ppStack', true); // a total discount is spread over campaign lines too
     const gross = (r) => r.price * r.qty, isCamp = (r) => r.base > r.list;
-    const setLine = (key, patch) => { const l = pr().l; l[key] = Object.assign({}, l[key], patch); ['p', 'd'].forEach((k) => { if (l[key][k] == null || (k === 'd' && !l[key][k])) delete l[key][k]; }); };
+    // a line's discount is stored as a percentage (r) of its amount before discount, so it follows quantity and price (as in BC)
+    const setLine = (key, patch) => { const l = pr().l; l[key] = Object.assign({}, l[key], patch); ['p', 'r', 'd'].forEach((k) => { if (l[key][k] == null || (k !== 'p' && !l[key][k])) delete l[key][k]; }); };
+    const discKr = (key, kr, g) => setLine(key, { d: undefined, r: kr && g ? Math.round(kr / g * 1e8) / 1e6 : undefined }); // 6 decimals: the same kroner back, short links
     // a total discount (kr) → line discounts; the rows are read without any old-style total (ta/tp) so their amounts are the lines' own
     const spreadTotal = (kr, pct) => {
       const p = pr(); delete p.ta; delete p.tp;
       const R = C().priceRows().list, w = R.map((r) => (stackOn() || !isCamp(r) ? gross(r) : 0));
-      if (pct != null) { R.forEach((r, i) => setLine(r.key, { d: w[i] ? Math.round(w[i] * Math.min(pct, 100) / 100) || undefined : undefined })); return w.some(Boolean) || !pct; } // a percentage: each line's own share, rounded per line
+      if (pct != null) { R.forEach((r, i) => setLine(r.key, { d: undefined, r: w[i] && pct ? Math.min(pct, 100) : undefined })); return w.some(Boolean) || !pct; } // a percentage: each line's own share, rounded per line
       if (kr > 0 && !w.some(Boolean)) { HP.toast(t('Every line is on campaign: tick "also campaign items" to spread it over them', 'Alle linjer har kampagnepris: sæt flueben i "også kampagnevarer" for at fordele rabatten på dem'), { kind: 'warn' }); return false; }
       const sum = w.reduce((a, b) => a + b, 0);
       if (kr > sum) HP.toast(t('The discount is limited to the amount of the lines', 'Rabatten er begrænset til linjernes beløb'), { kind: 'warn' });
-      spread(kr, w).forEach((v, i) => setLine(R[i].key, { d: v || undefined }));
+      spread(kr, w).forEach((v, i) => discKr(R[i].key, v, w[i]));
       return true;
     };
     // an old-style total discount (set before 2026-11-24) is turned into line discounts once
     if (d.pr && (d.pr.ta || d.pr.tp)) { const R0 = C().priceRows(); const kr = R0.tdisc; delete d.pr.ta; delete d.pr.tp; const sum0 = R0.list.reduce((a, r) => a + r.amount, 0);
-      spread(kr, R0.list.map((r) => r.amount)).forEach((v, i) => { const r = R0.list[i]; setLine(r.key, { d: (r.ldisc || 0) + v || undefined }); }); if (sum0) { tidy(); store.commit(); } }
+      spread(kr, R0.list.map((r) => r.amount)).forEach((v, i) => { const r = R0.list[i]; discKr(r.key, (r.ldisc || 0) + v, gross(r)); }); if (sum0) { tidy(); store.commit(); } }
     let selKey = focusKey || null, refocus = null, lastTotal = null; // the total typed last ({ kr } or { pct }): kept when "også kampagnevarer" changes
     const table = h('.pp-lines'), sum = h('.pp-sum');
     const tile = (label, sub, fn, cls, ic) => h('button.pp-act' + (cls || ''), { onclick: fn }, icon(ic || 'tag', 15), h('b', null, label), h('span', null, sub));
@@ -950,16 +952,24 @@
           h('span.pp-name', null, h('b', null, r.name), h('small', null, (r.sku || '') + (r.sys ? ' · system' : ''))),
           h('span.n', null, r.cableM ? r.qty + ' m' : r.qty),
           h('span.n.muted', null, HP.money(r.base) + unit, camp ? h('em.pp-camp', { title: t('The website\'s campaign price: ', 'Hjemmesidens kampagnepris: ') + HP.money(r.list) }, t('campaign ', 'kampagne ') + '−' + fmt(pctOff(r.base - r.list, r.base), 1) + ' %') : null),
-          h('span.n', null, field('up', o.p != null ? o.p : null, fmt(r.list), (v) => { setLine(r.key, { p: v == null || v === r.list ? undefined : v }); commit(); },
+          h('span.n', null, field('up', o.p != null ? o.p : null, fmt(r.list), (v) => { if (o.d && !o.r && g) setLine(r.key, { d: undefined, r: r.ldisc / g * 100 }); setLine(r.key, { p: v == null || v === r.list ? undefined : v }); commit(); },
             { key: r.key, next: nextOf(r.key, 'up'), title: t('Unit price for this proposal (empty: the website price, ', 'Enhedspris i dette tilbud (tom: hjemmesidens pris, ') + HP.money(r.list) + ')' })),
-          h('span.n', null, field('ld', r.ldisc, '0', (v) => { if (v > g) { v = g; HP.toast(t('The discount is limited to the line amount', 'Rabatten er begrænset til linjens beløb'), { kind: 'warn' }); } setLine(r.key, { d: v ? Math.round(v * 100) / 100 : undefined }); commit(); },
+          h('span.n', null, field('ld', r.ldisc, '0', (v) => { if (v > g) { v = g; HP.toast(t('The discount is limited to the line amount', 'Rabatten er begrænset til linjens beløb'), { kind: 'warn' }); } discKr(r.key, v ? Math.round(v * 100) / 100 : 0, g); commit(); },
             { key: r.key, next: nextOf(r.key, 'ld'), blank0: true, title: t('Kroner off this line', 'Kroner af denne linje') })),
-          h('span.n', null, field('lp', g ? r.ldisc / g * 100 : 0, '0', (v) => { setLine(r.key, { d: v ? Math.round(g * Math.min(v, 100) / 100) : undefined }); commit(); },
+          h('span.n', null, field('lp', o.r != null ? o.r : g ? r.ldisc / g * 100 : 0, '0', (v) => { setLine(r.key, { d: undefined, r: v ? Math.min(v, 100) : undefined }); commit(); },
             { key: r.key, next: nextOf(r.key, 'lp'), blank0: true, pct: true, title: t('Percent off this line (of its unit price)', 'Procent af denne linje (af enhedsprisen)') })),
           h('span.n.amt', null, r.was ? h('s', null, HP.money(r.base * r.qty)) : null, HP.money(r.amount), off > 0 ? h('em.pp-off', { title: t('Off the normal price, all in', 'Af normalprisen i alt') }, '−' + fmt(off, 1) + ' %') : null),
           h('span', null, r.custom ? h('button.icon-btn.sm', { title: t('Back to the website price for this line', 'Tilbage til hjemmesidens pris for linjen'), onclick: () => { delete pr().l[r.key]; commit(); } }, icon('undo', 13)) : null));
         table.append(row);
       });
+      // prices saved on the proposal for products that are not in the price list now (deleted, hidden, another variant): they come
+      // back when the product does
+      const away = Object.keys(L).filter((k) => !keys.includes(k));
+      if (away.length) table.append(h('.pp-away', null, h('.pp-away-h', null, t('Saved for products not in the price list now (used again if they come back)', 'Gemt for varer, der ikke er i prislisten nu (bruges igen, hvis de kommer tilbage)')),
+        away.map((k) => { const o = L[k], [id, lab] = k.split('|'), b = id === 'sys' && cat.system(lab), q = !b && cat.get(id);
+          const nm = b ? cat.systemName(b) : q ? q.brand + ' ' + q.name + (lab ? ' (' + lab + ')' : '') : k;
+          return h('.pp-away-r', null, h('span', null, nm), h('span.muted', null, [o.p != null ? t('price ', 'pris ') + HP.money(o.p) : null, o.r ? t('discount ', 'rabat ') + fmt(o.r, 1) + ' %' : o.d ? t('discount ', 'rabat ') + HP.money(o.d) : null].filter(Boolean).join(' · ')),
+            h('button.icon-btn.sm', { title: t('Forget', 'Glem'), onclick: () => { delete pr().l[k]; commit(); } }, icon('x', 13))); })));
       // totals, all worked out from the lines
       const normal = R.list.reduce((a, r) => a + r.base * r.qty, 0), web = R.list.reduce((a, r) => a + r.list * r.qty, 0), grossAll = R.list.reduce((a, r) => a + gross(r), 0);
       const campKr = normal - web, changeKr = web - grossAll, extra = R.list.reduce((a, r) => a + r.ldisc, 0) + (R.tdisc || 0);
