@@ -138,7 +138,7 @@
    "code": "EDGE-OBERON1",
    "ribbons": [
     {
-     "text": "Spar 19%",
+     "text": "Spar 13%",
      "ribbonType": "discount",
      "link": {
       "title": "",
@@ -178,14 +178,14 @@
    "priceDetails": {
     "price": 7497,
     "priceFormatted": "7.497,-",
-    "priceBefore": 9297,
-    "priceBeforeFormatted": "9.297,-",
-    "priceSavingsFormatted": "1.800,-",
+    "priceBefore": 8597,
+    "priceBeforeFormatted": "8.597,-",
+    "priceSavingsFormatted": "1.100,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
     "unitPrice": 7497,
-    "unitPriceBefore": 9297
+    "unitPriceBefore": 8597
    },
    "bundleProducts": [
     {
@@ -249,7 +249,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 969,
+        "availableQuantity": 898,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.498,-",
@@ -375,15 +375,15 @@
         ]
        }
       },
-      "rating": 4.77755905511811,
-      "count": 508,
-      "reviewCount": 233,
+      "rating": 4.77799607072692,
+      "count": 509,
+      "reviewCount": 234,
       "distribution": {
        "1": 2,
        "2": 1,
        "3": 10,
        "4": 82,
-       "5": 413
+       "5": 414
       }
      }
     },
@@ -407,7 +407,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 468,
+        "availableQuantity": 435,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -430,7 +430,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 202,
+        "availableQuantity": 186,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -648,21 +648,21 @@
    "sellableOnWeb": true,
    "inventoryStatus": {
     "description": "Ukendt leveringstid",
-    "numberOfStoresExperience": 6
+    "numberOfStoresExperience": 4
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.7431421446384,
-   "count": 802,
-   "reviewCount": 364,
+   "rating": 4.74346201743462,
+   "count": 803,
+   "reviewCount": 365,
    "distribution": {
     "1": 5,
     "2": 4,
     "3": 20,
     "4": 134,
-    "5": 639
+    "5": 640
    }
   },
   "boxContent": [],

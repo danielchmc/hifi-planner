@@ -190,12 +190,6 @@
    "url": "/stereo/mini-anlag/",
    "id": 69670
   },
-  "stockItemAlternative": {
-   "save": "500,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DENRCDN12DAB",
-   "availableQuantity": 2,
-   "lowestPrice": "4.799,-"
-  },
   "variants": [
    {
     "id": 212345,
@@ -205,14 +199,29 @@
     "productCode": "DENRCDN12DABBK",
     "ean": "0747192139414",
     "priceDetails": {
-     "priceValueId": 1079234,
-     "price": 5299,
-     "priceFormatted": "5.299,-",
+     "priceValueId": 1210901,
+     "price": 4299,
+     "priceFormatted": "4.299,-",
+     "priceBefore": 5299,
+     "priceBeforeFormatted": "5.299,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5299
+     "unitPrice": 4299,
+     "unitPriceBefore": 5299
     },
+    "ribbons": [
+     {
+      "text": "Spar 19%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -251,7 +260,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 438,
+     "availableQuantity": 367,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -324,14 +333,29 @@
     "productCode": "DENRCDN12DABWH",
     "ean": "0747192139421",
     "priceDetails": {
-     "priceValueId": 1126918,
-     "price": 5299,
-     "priceFormatted": "5.299,-",
+     "priceValueId": 1210907,
+     "price": 4299,
+     "priceFormatted": "4.299,-",
+     "priceBefore": 5299,
+     "priceBeforeFormatted": "5.299,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5299
+     "unitPrice": 4299,
+     "unitPriceBefore": 5299
     },
+    "ribbons": [
+     {
+      "text": "Spar 19%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -370,7 +394,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 330,
+     "availableQuantity": 313,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -472,21 +496,21 @@
    {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 7797,
-     "priceFormatted": "7.797,-",
+     "price": 6797,
+     "priceFormatted": "6.797,-",
      "priceBefore": 8897,
      "priceBeforeFormatted": "8.897,-",
-     "priceSavingsFormatted": "1.100,-",
+     "priceSavingsFormatted": "2.100,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 7797,
+     "unitPrice": 6797,
      "unitPriceBefore": 8897
     },
     "image": "https://images.hifiklubben.com/image/dd02758d-af0b-4910-84f9-e62a0c859ccb",
     "ribbons": [
      {
-      "text": "Spar 12%",
+      "text": "Spar 24%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -499,34 +523,62 @@
     "url": "/dalioberon1-denrcdn12dab/"
    },
    {
-    "modelType": "Stereosystem til TV",
-    "price": {
-     "price": 11697,
-     "priceFormatted": "11.697,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 11697,
-     "unitPriceBefore": 11697
-    },
-    "image": "https://images.hifiklubben.com/image/384bf6c1-41cf-43fc-875f-8ba446288f8d",
-    "title": "RCD-N12DAB + Bowers & Wilkins 607 S3",
-    "url": "/rcdn12dab-bw607s3/"
-   },
-   {
     "modelType": "Kompaktanlæg med Streaming",
     "price": {
-     "price": 6898,
-     "priceFormatted": "6.898,-",
+     "price": 5898,
+     "priceFormatted": "5.898,-",
+     "priceBefore": 6898,
+     "priceBeforeFormatted": "6.898,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 6898,
+     "unitPrice": 5898,
      "unitPriceBefore": 6898
     },
     "image": "https://images.hifiklubben.com/image/c19a4c7c-6911-48cb-b9ed-09a1877d6aba",
+    "ribbons": [
+     {
+      "text": "Spar 14%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Denon CEOL RCD-N12DAB + Home 150",
     "url": "/denrcdn12dab-denhome150/"
+   },
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 10697,
+     "priceFormatted": "10.697,-",
+     "priceBefore": 11697,
+     "priceBeforeFormatted": "11.697,-",
+     "priceSavingsFormatted": "1.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 10697,
+     "unitPriceBefore": 11697
+    },
+    "image": "https://images.hifiklubben.com/image/384bf6c1-41cf-43fc-875f-8ba446288f8d",
+    "ribbons": [
+     {
+      "text": "Spar 9%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "RCD-N12DAB + Bowers & Wilkins 607 S3",
+    "url": "/rcdn12dab-bw607s3/"
    }
   ],
   "displayBookDemo": true,
@@ -700,15 +752,15 @@
      ]
     }
    },
-   "rating": 4.67439165701043,
-   "count": 863,
-   "reviewCount": 466,
+   "rating": 4.67358708189158,
+   "count": 867,
+   "reviewCount": 468,
    "distribution": {
     "1": 4,
     "2": 6,
-    "3": 29,
+    "3": 30,
     "4": 189,
-    "5": 635
+    "5": 638
    }
   },
   "brandName": "Denon",

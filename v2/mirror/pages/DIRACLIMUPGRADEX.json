@@ -74,14 +74,30 @@
     "productCode": "DIRACLIMUPGRADE",
     "ean": "7350182130044",
     "priceDetails": {
-     "priceValueId": 1045742,
-     "price": 699,
-     "priceFormatted": "699,-",
+     "priceValueId": 1221963,
+     "price": 559,
+     "priceFormatted": "559,-",
+     "priceBefore": 699,
+     "priceBeforeFormatted": "699,-",
+     "priceSavingsFormatted": "140,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 699
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 559,
+     "unitPriceBefore": 699
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -120,7 +136,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 73,
+     "availableQuantity": 69,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

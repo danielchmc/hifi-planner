@@ -196,12 +196,6 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/",
    "id": 69679
   },
-  "stockItemAlternative": {
-   "save": "400,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DENHOME400",
-   "availableQuantity": 2,
-   "lowestPrice": "3.599,-"
-  },
   "variants": [
    {
     "id": 277906,
@@ -211,14 +205,30 @@
     "productCode": "DENHOME400BK",
     "ean": "747192145903",
     "priceDetails": {
-     "priceValueId": 1088061,
-     "price": 3999,
-     "priceFormatted": "3.999,-",
+     "priceValueId": 1210877,
+     "price": 3499,
+     "priceFormatted": "3.499,-",
+     "priceBefore": 3999,
+     "priceBeforeFormatted": "3.999,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 3999
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 3499,
+     "unitPriceBefore": 3999
     },
+    "ribbons": [
+     {
+      "text": "Spar 13%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -257,7 +267,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 160,
+     "availableQuantity": 143,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -304,14 +314,30 @@
     "productCode": "DENHOME400SI",
     "ean": "747192145910",
     "priceDetails": {
-     "priceValueId": 1088063,
-     "price": 3999,
-     "priceFormatted": "3.999,-",
+     "priceValueId": 1210883,
+     "price": 3499,
+     "priceFormatted": "3.499,-",
+     "priceBefore": 3999,
+     "priceBeforeFormatted": "3.999,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 3999
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 3499,
+     "unitPriceBefore": 3999
     },
+    "ribbons": [
+     {
+      "text": "Spar 13%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -350,7 +376,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 126,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -499,15 +525,29 @@
    {
     "modelType": "Trådløs højtaler",
     "price": {
-     "price": 7998,
-     "priceFormatted": "7.998,-",
+     "price": 6998,
+     "priceFormatted": "6.998,-",
+     "priceBefore": 7998,
+     "priceBeforeFormatted": "7.998,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 7998,
+     "unitPrice": 6998,
      "unitPriceBefore": 7998
     },
     "image": "https://images.hifiklubben.com/image/4a4878b4-82e3-4e5f-b800-902dd64e04a4",
+    "ribbons": [
+     {
+      "text": "Spar 13%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Denon Home 400 X2",
     "url": "/x2-denon-home-400/"
    }
@@ -578,14 +618,14 @@
      ]
     }
    },
-   "rating": 4.77777777777778,
-   "count": 27,
-   "reviewCount": 14,
+   "rating": 4.75,
+   "count": 28,
+   "reviewCount": 15,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
-    "4": 6,
+    "4": 7,
     "5": 21
    }
   },

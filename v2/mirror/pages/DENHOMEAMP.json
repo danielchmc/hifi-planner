@@ -280,7 +280,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 38,
+     "availableQuantity": 37,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -333,12 +333,17 @@
      {
       "sku": "DIRACSTEREOFULL",
       "priceDetails": {
-       "price": 1699,
-       "priceFormatted": "1.699,-",
+       "price": 1359,
+       "priceFormatted": "1.359,-",
+       "priceBefore": 1699,
+       "priceBeforeFormatted": "1.699,-",
+       "priceSavingsFormatted": "340,-",
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "salesQuantity": 1,
-       "unitPrice": 1699
+       "offerExpiryDate": "2026-11-30T22:59:00Z",
+       "unitPrice": 1359,
+       "unitPriceBefore": 1699
       },
       "url": "/dirac-live-license-opgradering/diracstereofull/",
       "imageUrl": "https://images.hifiklubben.com/image/a35c9aa7-6636-4634-89fd-500b36dbbf7b",

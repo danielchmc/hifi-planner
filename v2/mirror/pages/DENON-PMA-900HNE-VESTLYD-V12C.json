@@ -231,7 +231,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 182,
+        "availableQuantity": 171,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.790,-",
@@ -254,7 +254,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 46,
+        "availableQuantity": 43,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.790,-",
@@ -286,7 +286,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 224,
+        "availableQuantity": 220,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "9.998,-",
@@ -309,7 +309,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 92,
+        "availableQuantity": 78,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "9.998,-",
@@ -319,190 +319,7 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "VESTV12C",
-     "reviews": {
-      "summary": "VESTV12C leverer en varm, slagkraftig og meget dynamisk lyd med dyb bas, tydelige detaljer og en medrivende livekoncert-karakter. Musik med stort format forbliver ren og spændende ved høj lydstyrke, mens mange også nyder en fyldig og velafbalanceret gengivelse ved lavere niveauer. Retrodesignet, den stærke værdi og den festklare energi er store styrker, selv om nogle lyttere synes, at kabinetterne er store, lyden lidt mørk eller bastung, og højttalerne kræver den rette forstærker.",
-      "headlines": {
-       "warm, full and highly enjoyable sound": {
-        "sentimentAnalysis": "Anmeldelserne beskriver en varm, fyldig, velafbalanceret og medrivende gengivelse, der gør musik særligt fornøjelig.",
-        "simpleTitle": "Varm, fyldig og meget fornøjelig lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "93c5d2fa-5904-434e-b105-ffb2a2c89c5a"
-       },
-       "concert-like volume and lively dynamics": {
-        "sentimentAnalysis": "Højttalerne roses gentagne gange for ubesværet højt output, ren gengivelse og en overbevisende live- eller festivalstemning.",
-        "simpleTitle": "Koncertagtige lydniveauer og livlig dynamik",
-        "bias": "positive",
-        "key": "dynamics",
-        "groupId": "c8170f59-efdd-4eee-9351-d1af35e2bba7"
-       },
-       "clear detail and wide musical presentation": {
-        "sentimentAnalysis": "Flere anmeldelser roser detaljering, separation, opløsning, lydbillede og en musikalsk gengivelse, der fylder rummet.",
-        "simpleTitle": "Tydelige detaljer og stor musikalsk gengivelse",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "93c5d2fa-5904-434e-b105-ffb2a2c89c5a"
-       },
-       "deep, punchy bass with strong impact": {
-        "sentimentAnalysis": "Anmeldelserne roser 12-tommer basenhederne for dyb, stram og fysisk mærkbar bas, som ofte gør en subwoofer overflødig.",
-        "simpleTitle": "Dyb og slagkraftig bas med stort tryk",
-        "bias": "positive",
-        "key": "bass",
-        "groupId": "3b4a4d13-60fa-4177-b05c-3b1a8e8169a0"
-       },
-       "excellent performance even at lower volume": {
-        "sentimentAnalysis": "Flere anmeldelser fremhæver, at gengivelsen forbliver velafbalanceret, dyb og fornøjelig ved lav eller normal lydstyrke.",
-        "simpleTitle": "Fremragende gengivelse selv ved lav lydstyrke",
-        "bias": "positive",
-        "key": "dynamics",
-        "groupId": "c8170f59-efdd-4eee-9351-d1af35e2bba7"
-       },
-       "retro styling is attractive but the cabinets are large": {
-        "sentimentAnalysis": "Anmeldelserne beundrer generelt det markante retrolook, men erkender, at de store kabinetter kræver plads.",
-        "simpleTitle": "Retrodesignet er attraktivt, men kabinetterne er store",
-        "bias": "positive",
-        "key": "design",
-        "groupId": "5d260696-078b-49ac-8af0-08b2be504ee3"
-       },
-       "some listeners find the sound dark or lacking detail": {
-        "sentimentAnalysis": "Et mindretal kritiserer færre detaljer samt tilbagetrukne øvre mellemtoner og diskant, især ved normal lydstyrke.",
-        "simpleTitle": "Nogle lyttere oplever lyden som mørk eller mindre detaljeret",
-        "bias": "negative",
-        "key": "sound",
-        "groupId": "93c5d2fa-5904-434e-b105-ffb2a2c89c5a"
-       },
-       "bass can become dominant in some rooms": {
-        "sentimentAnalysis": "Nogle lyttere oplever en for dominerende bas eller en klangbalance, der bliver mindre tilfredsstillende ved lav lydstyrke.",
-        "simpleTitle": "Bassen kan blive dominerende i nogle rum",
-        "bias": "negative",
-        "key": "bass",
-        "groupId": "3b4a4d13-60fa-4177-b05c-3b1a8e8169a0"
-       },
-       "a powerful amplifier is recommended": {
-        "sentimentAnalysis": "Nogle ejere anbefaler kraftig forstærkning for at opnå maksimal lydstyrke og kontrol, især ved krævende gengivelse.",
-        "simpleTitle": "En kraftig forstærker anbefales",
-        "bias": "meh",
-        "key": "amplification",
-        "groupId": "bebea372-c459-44a2-a90e-3f6245d78af1"
-       }
-      },
-      "grouping": {
-       "93c5d2fa-5904-434e-b105-ffb2a2c89c5a": {
-        "title": "Lydkvalitet",
-        "id": "93c5d2fa-5904-434e-b105-ffb2a2c89c5a",
-        "references": [
-         "ec9c65ee-9361-4564-9970-2d1a35bf43d1",
-         "51c790bd-0f10-4aea-a7a5-228b94656b40",
-         "e1ff4287-caae-43d3-8759-316fb2ea2239",
-         "16783ca1-857e-4d41-b0c1-93885094ff00",
-         "37a1ceb0-9e33-433f-81cf-97a7126ce9d4",
-         "c55a42a1-5a4a-4b9e-ab73-7afc5b471ed2",
-         "2b7babbc-192c-4e09-a748-0b4c28778bd9",
-         "57543120-922c-4b67-9460-b4bcea23485b",
-         "4380b65d-7357-4bc3-8bcf-dcb5eab851d4",
-         "745124c0-8ed2-4ef9-b58e-01f4d7054fb0",
-         "aad54a9f-a0ea-4028-9479-0d4a9611b9d9",
-         "7d39c604-bb59-463a-bbcf-510e5a015167",
-         "d9a0b7bb-02af-4988-bd35-bf64befa92aa",
-         "33f8a1c2-9a51-42e4-9b7b-3c0f786ef048",
-         "a0053720-5872-4723-9bf8-067ce39568da",
-         "cb5b08e5-b92e-4544-bd06-48633fd774c8",
-         "5490e875-854f-48ba-a5f2-d99fbb2f2eba",
-         "94fee200-3657-4ef6-846d-ba5cc0362488",
-         "062ca6f2-4437-439a-8bc9-4d283d5ff0c2",
-         "347af3f1-f306-47a2-90e1-9ccc6f4f4719",
-         "903b8ac9-4154-4294-94f2-b332e81c9e53",
-         "4e04c555-9281-4b8d-bbdb-d7cf151ec71d",
-         "fb7c12fe-dd46-48e9-82b6-44e695cad0c9",
-         "9a7bec9d-28df-42bf-9074-4b05c405a5c2",
-         "cd87769c-439b-44f4-b806-1b604403980f",
-         "a10dc551-c799-4c63-b2a6-bbf02a5a4605",
-         "a4fabf13-bee9-47df-8bfc-be5dae3fc983",
-         "dee1b43c-67f7-459f-adc5-c3234ff085af"
-        ]
-       },
-       "5d260696-078b-49ac-8af0-08b2be504ee3": {
-        "title": "Design og størrelse",
-        "id": "5d260696-078b-49ac-8af0-08b2be504ee3",
-        "references": [
-         "51c790bd-0f10-4aea-a7a5-228b94656b40",
-         "c55a42a1-5a4a-4b9e-ab73-7afc5b471ed2",
-         "497ed821-f853-4701-b269-be8eb1138162",
-         "63c9263c-e6cf-4b5c-af2a-da900a4296e9",
-         "19df2282-d10d-491a-bdef-f925791a152a",
-         "328735a8-aafa-4253-bb6d-f36cbb3a0563",
-         "5269b9ed-9e25-4b79-8806-d01e29ce6088",
-         "3dab5ba7-a2f3-4923-b687-63dd58547536",
-         "2ad0f11b-d8f2-4969-bdca-6c7f1053f779",
-         "347af3f1-f306-47a2-90e1-9ccc6f4f4719",
-         "903b8ac9-4154-4294-94f2-b332e81c9e53",
-         "4e04c555-9281-4b8d-bbdb-d7cf151ec71d"
-        ]
-       },
-       "3b4a4d13-60fa-4177-b05c-3b1a8e8169a0": {
-        "title": "Basgengivelse",
-        "id": "3b4a4d13-60fa-4177-b05c-3b1a8e8169a0",
-        "references": [
-         "16783ca1-857e-4d41-b0c1-93885094ff00",
-         "c55a42a1-5a4a-4b9e-ab73-7afc5b471ed2",
-         "dacd8cc0-27a7-4006-a7ce-dd4c7628d31e",
-         "4d2a6458-6315-41a5-b73b-d19cc674535c",
-         "2c51d73c-136c-441e-b11b-7b1da23048d5",
-         "57543120-922c-4b67-9460-b4bcea23485b",
-         "e1ec9a61-9752-431c-ba63-97b1bc061ecf",
-         "5490e875-854f-48ba-a5f2-d99fbb2f2eba",
-         "062ca6f2-4437-439a-8bc9-4d283d5ff0c2",
-         "fb7c12fe-dd46-48e9-82b6-44e695cad0c9",
-         "a10dc551-c799-4c63-b2a6-bbf02a5a4605"
-        ]
-       },
-       "c8170f59-efdd-4eee-9351-d1af35e2bba7": {
-        "title": "Lydstyrke og dynamik",
-        "id": "c8170f59-efdd-4eee-9351-d1af35e2bba7",
-        "references": [
-         "22c720fd-3ed9-413b-9948-7b0aab7327bb",
-         "b7794c01-1c20-4296-83f5-f2ab0f393def",
-         "2c51d73c-136c-441e-b11b-7b1da23048d5",
-         "506c534e-0ad9-4e9c-a73f-35e189cec803",
-         "d2493a15-d726-4d38-82e8-97b6069b93ad",
-         "7291e588-75b4-4ece-a4c2-66a0900c4c4d",
-         "32ac3ac3-306c-4c7c-9deb-524b6eb7f63f",
-         "745124c0-8ed2-4ef9-b58e-01f4d7054fb0",
-         "cb5b08e5-b92e-4544-bd06-48633fd774c8",
-         "dfaecfde-1602-4518-a8d2-40648ef78f63",
-         "61b482fa-69f5-4134-99f6-8631fee46317"
-        ]
-       },
-       "bebea372-c459-44a2-a90e-3f6245d78af1": {
-        "title": "Forstærkermatch",
-        "id": "bebea372-c459-44a2-a90e-3f6245d78af1",
-        "references": [
-         "b7794c01-1c20-4296-83f5-f2ab0f393def",
-         "22c720fd-3ed9-413b-9948-7b0aab7327bb",
-         "16783ca1-857e-4d41-b0c1-93885094ff00",
-         "506c534e-0ad9-4e9c-a73f-35e189cec803",
-         "4d2a6458-6315-41a5-b73b-d19cc674535c",
-         "2c51d73c-136c-441e-b11b-7b1da23048d5",
-         "474212b9-fd62-4392-a247-06fcbfb90022",
-         "dfaecfde-1602-4518-a8d2-40648ef78f63",
-         "9a7bec9d-28df-42bf-9074-4b05c405a5c2",
-         "328735a8-aafa-4253-bb6d-f36cbb3a0563",
-         "61b482fa-69f5-4134-99f6-8631fee46317"
-        ]
-       }
-      },
-      "rating": 4.83108108108108,
-      "count": 148,
-      "reviewCount": 76,
-      "distribution": {
-       "1": 2,
-       "2": 0,
-       "3": 5,
-       "4": 7,
-       "5": 134
-      }
-     }
+     "parentProductCode": "VESTV12C"
     }
    ],
    "sellableOnWeb": true,
@@ -510,21 +327,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 22
+    "numberOfStoresExperiencePartly": 23
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.77859778597786,
-   "count": 542,
-   "reviewCount": 277,
+   "rating": 4.77757352941176,
+   "count": 544,
+   "reviewCount": 279,
    "distribution": {
     "1": 5,
     "2": 2,
     "3": 16,
-    "4": 62,
-    "5": 457
+    "4": 63,
+    "5": 458
    }
   },
   "boxContent": [],

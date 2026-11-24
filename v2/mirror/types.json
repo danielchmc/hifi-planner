@@ -469,6 +469,28 @@
    "hifiPlanner": []
   },
   {
+   "type": "Videoprojektor",
+   "keys": {
+    "VideoProjector": 19
+   },
+   "cats": {
+    "TV > Projektor": 19
+   },
+   "count": 19,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 19,
+   "inCatalogue": 19,
+   "variantAxes": {
+    "colorOptions": 18,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
    "type": "USB-kabel",
    "keys": {
     "USBCabel": 16
@@ -488,28 +510,6 @@
    "mapped": "cable",
    "hifiPlanner": [
     "Cable: usb"
-   ]
-  },
-  {
-   "type": "Videoprojektor",
-   "keys": {
-    "VideoProjector": 18
-   },
-   "cats": {
-    "TV > Projektor": 18
-   },
-   "count": 18,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 18,
-   "inCatalogue": 18,
-   "variantAxes": {
-    "colorOptions": 17,
-    "dropDown": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
    ]
   },
   {
@@ -796,25 +796,6 @@
    ]
   },
   {
-   "type": "Hjemmebio-system",
-   "keys": {
-    "HomeCinemaSystem": 11
-   },
-   "cats": {
-    "Surround > Hjemmebio-system": 11
-   },
-   "count": 13,
-   "bundles": 13,
-   "outlet": 0,
-   "products": 0,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "none": 13
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Højtalersystem",
    "keys": {
     "LoudSpeakerSystem": 12
@@ -867,6 +848,25 @@
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Hjemmebio-system",
+   "keys": {
+    "HomeCinemaSystem": 11
+   },
+   "cats": {
+    "Surround > Hjemmebio-system": 11
+   },
+   "count": 12,
+   "bundles": 12,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 12
    },
    "mapped": null,
    "hifiPlanner": []
@@ -1358,27 +1358,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Trådløs subwoofer",
-   "keys": {
-    "WirelessSubwoofer": 6
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 6
-   },
-   "count": 7,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 6,
-   "inCatalogue": 6,
-   "variantAxes": {
-    "colorOptions": 7
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Subwoofers"
-   ]
-  },
-  {
    "type": "Udendørshøjtaler",
    "keys": {
     "OutdoorLoudspeaker": 7
@@ -1498,6 +1477,27 @@
    "mapped": "cable",
    "hifiPlanner": [
     "Cable: sub"
+   ]
+  },
+  {
+   "type": "Trådløs subwoofer",
+   "keys": {
+    "WirelessSubwoofer": 6
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
    ]
   },
   {

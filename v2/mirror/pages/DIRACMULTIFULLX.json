@@ -80,14 +80,30 @@
     "productCode": "DIRACMULTIFULL",
     "ean": "7350182130037",
     "priceDetails": {
-     "priceValueId": 1045747,
-     "price": 2299,
-     "priceFormatted": "2.299,-",
+     "priceValueId": 1221969,
+     "price": 1839,
+     "priceFormatted": "1.839,-",
+     "priceBefore": 2299,
+     "priceBeforeFormatted": "2.299,-",
+     "priceSavingsFormatted": "460,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2299
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 1839,
+     "unitPriceBefore": 2299
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -126,7 +142,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 44,
+     "availableQuantity": 39,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

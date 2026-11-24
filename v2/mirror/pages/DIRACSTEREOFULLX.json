@@ -74,14 +74,30 @@
     "productCode": "DIRACSTEREOFULL",
     "ean": "7350182130006",
     "priceDetails": {
-     "priceValueId": 1045752,
-     "price": 1699,
-     "priceFormatted": "1.699,-",
+     "priceValueId": 1221975,
+     "price": 1359,
+     "priceFormatted": "1.359,-",
+     "priceBefore": 1699,
+     "priceBeforeFormatted": "1.699,-",
+     "priceSavingsFormatted": "340,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1699
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 1359,
+     "unitPriceBefore": 1699
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -120,7 +136,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 55,
+     "availableQuantity": 52,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -151,21 +167,21 @@
    {
     "modelType": "Musikstreamer",
     "price": {
-     "price": 9097,
-     "priceFormatted": "9.097,-",
+     "price": 8757,
+     "priceFormatted": "8.757,-",
      "priceBefore": 11097,
      "priceBeforeFormatted": "11.097,-",
-     "priceSavingsFormatted": "2.000,-",
+     "priceSavingsFormatted": "2.340,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 9097,
+     "unitPrice": 8757,
      "unitPriceBefore": 11097
     },
     "image": "https://images.hifiklubben.com/image/57c80949-37e1-4582-b9ca-59db092b2db6",
     "ribbons": [
      {
-      "text": "Spar 18%",
+      "text": "Spar 21%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -180,21 +196,21 @@
    {
     "modelType": "Musikstreamer",
     "price": {
-     "price": 6097,
-     "priceFormatted": "6.097,-",
+     "price": 5757,
+     "priceFormatted": "5.757,-",
      "priceBefore": 7097,
      "priceBeforeFormatted": "7.097,-",
-     "priceSavingsFormatted": "1.000,-",
+     "priceSavingsFormatted": "1.340,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 6097,
+     "unitPrice": 5757,
      "unitPriceBefore": 7097
     },
     "image": "https://images.hifiklubben.com/image/2b5b0c1e-2364-4004-8f16-048aeea65e22",
     "ribbons": [
      {
-      "text": "Spar 14%",
+      "text": "Spar 19%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -209,14 +225,14 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.25,
-   "count": 4,
-   "reviewCount": 1,
+   "rating": 4.16666666666667,
+   "count": 6,
+   "reviewCount": 2,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 0,
-    "4": 0,
+    "4": 2,
     "5": 3
    }
   },

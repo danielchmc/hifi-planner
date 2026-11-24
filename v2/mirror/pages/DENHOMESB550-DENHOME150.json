@@ -217,7 +217,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 307,
+        "availableQuantity": 306,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.198,-",
@@ -240,7 +240,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 269,
+        "availableQuantity": 217,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.798,-",
@@ -263,7 +263,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 172,
+        "availableQuantity": 167,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.198,-",
@@ -286,7 +286,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 201,
+        "availableQuantity": 157,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.798,-",
@@ -579,7 +579,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 33,
+        "availableQuantity": 26,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.299,-",
@@ -589,7 +589,78 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DENHOMESOUNDBAR550"
+     "parentProductCode": "DENHOMESOUNDBAR550",
+     "reviews": {
+      "summary": "DENHOMESOUNDBAR550 giver en varm, kraftfuld og omsluttende forbedring i forhold til tv-lyden, med tydelige stemmer og imponerende lyd for den kompakte størrelse. Nem opsætning, alsidige tilslutningsmuligheder og god integration med andre Denon-højttalere gør soundbaren særligt attraktiv. Den samlede tilfredshed er meget høj, med kun mindre bekymringer om lejlighedsvis softwareadfærd og manglende information på selve enheden.",
+      "headlines": {
+       "clear, high-quality TV sound": {
+        "sentimentAnalysis": "Soundbaren roses bredt for at forbedre svag tv-lyd tydeligt og levere forståelige stemmer samt en stærk samlet lydkvalitet.",
+        "simpleTitle": "Klar tv-lyd i høj kvalitet",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "9b26ceb5-1ab7-45e3-bac4-8fe248729364"
+       },
+       "full sound for its compact size": {
+        "sentimentAnalysis": "Soundbaren leverer et fyldigere og mere overbevisende lydbillede end forventet ud fra størrelsen, med gode resultater i et flerhøjttaler-setup og understøttelse af omsluttende formater.",
+        "simpleTitle": "Fyldig lyd trods kompakt størrelse",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "9b26ceb5-1ab7-45e3-bac4-8fe248729364"
+       },
+       "broad connection options": {
+        "sentimentAnalysis": "Soundbaren understøtter praktisk streaming fra telefon, vinylafspilning og direkte HDMI-brug med computere samt Dolby Atmos og 5.1-afspilning.",
+        "simpleTitle": "Mange tilslutningsmuligheder",
+        "bias": "positive",
+        "key": "connectivity",
+        "groupId": "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec"
+       },
+       "simple setup and operation": {
+        "sentimentAnalysis": "Opsætning og daglig betjening beskrives som enkel og ukompliceret.",
+        "simpleTitle": "Nem opsætning og betjening",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "a341242d-9983-496e-8b2f-f02bad941a40"
+       }
+      },
+      "grouping": {
+       "9b26ceb5-1ab7-45e3-bac4-8fe248729364": {
+        "title": "Lydkvalitet",
+        "id": "9b26ceb5-1ab7-45e3-bac4-8fe248729364",
+        "references": [
+         "eb57936f-6acd-47ef-b3ea-f7d1529f8c1b",
+         "863619ab-b1bf-438c-a95f-e4482f3784ee",
+         "e6c35cd9-3d59-45be-9f05-261c548a4091",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       },
+       "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec": {
+        "title": "Tilslutning og funktioner",
+        "id": "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec",
+        "references": [
+         "e6c35cd9-3d59-45be-9f05-261c548a4091",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       },
+       "a341242d-9983-496e-8b2f-f02bad941a40": {
+        "title": "Opsætning og brugervenlighed",
+        "id": "a341242d-9983-496e-8b2f-f02bad941a40",
+        "references": [
+         "50c8c09d-bf8d-4a5b-a23c-5b7d8d5e6ca5",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       }
+      },
+      "rating": 4.72727272727273,
+      "count": 11,
+      "reviewCount": 8,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 3,
+       "5": 8
+      }
+     }
     }
    ],
    "sellableOnWeb": true,
@@ -597,7 +668,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 7
+    "numberOfStoresExperience": 6
    }
   },
   "variantNavigationType": "dropDown",

@@ -193,12 +193,6 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/",
    "id": 69679
   },
-  "stockItemAlternative": {
-   "save": "412,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DENHOME600",
-   "availableQuantity": 2,
-   "lowestPrice": "5.087,-"
-  },
   "variants": [
    {
     "id": 277908,
@@ -208,14 +202,30 @@
     "productCode": "DENHOME600BK",
     "ean": "747192145811",
     "priceDetails": {
-     "priceValueId": 1088065,
-     "price": 5499,
-     "priceFormatted": "5.499,-",
+     "priceValueId": 1210889,
+     "price": 4999,
+     "priceFormatted": "4.999,-",
+     "priceBefore": 5499,
+     "priceBeforeFormatted": "5.499,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5499
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 4999,
+     "unitPriceBefore": 5499
     },
+    "ribbons": [
+     {
+      "text": "Spar 9%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -254,7 +264,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 75,
+     "availableQuantity": 72,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -291,14 +301,30 @@
     "productCode": "DENHOME600SI",
     "ean": "747192145835",
     "priceDetails": {
-     "priceValueId": 1088067,
-     "price": 5499,
-     "priceFormatted": "5.499,-",
+     "priceValueId": 1210895,
+     "price": 4999,
+     "priceFormatted": "4.999,-",
+     "priceBefore": 5499,
+     "priceBeforeFormatted": "5.499,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5499
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 4999,
+     "unitPriceBefore": 5499
     },
+    "ribbons": [
+     {
+      "text": "Spar 9%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -333,8 +359,8 @@
      "productCode": "DENHOME600SI"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "description": "Forventes på lager søndag den 29. november",
+     "deliveryDate": "2026-11-29T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
      "inventoryStatusType": "notInStockAtpDate"
@@ -485,15 +511,29 @@
    {
     "modelType": "Trådløs højtaler",
     "price": {
-     "price": 10998,
-     "priceFormatted": "10.998,-",
+     "price": 9998,
+     "priceFormatted": "9.998,-",
+     "priceBefore": 10998,
+     "priceBeforeFormatted": "10.998,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 10998,
+     "unitPrice": 9998,
      "unitPriceBefore": 10998
     },
     "image": "https://images.hifiklubben.com/image/a731898e-32eb-4c19-8266-1150239526a5",
+    "ribbons": [
+     {
+      "text": "Spar 9%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Denon Home 600 X2",
     "url": "/x2-denon-home-600/"
    }

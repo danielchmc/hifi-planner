@@ -186,7 +186,7 @@
     "productCode": "DENHOME150NVBK",
     "ean": "0747192143541",
     "priceDetails": {
-     "priceValueId": 1214612,
+     "priceValueId": 1222225,
      "price": 1599,
      "priceFormatted": "1.599,-",
      "salesUnit": "stk",
@@ -232,7 +232,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 307,
+     "availableQuantity": 306,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -301,7 +301,7 @@
     "productCode": "DENHOME150NVWH",
     "ean": "0747192143558",
     "priceDetails": {
-     "priceValueId": 1214529,
+     "priceValueId": 1222236,
      "price": 1599,
      "priceFormatted": "1.599,-",
      "salesUnit": "stk",
@@ -347,7 +347,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 169,
+     "availableQuantity": 167,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -475,8 +475,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
-     "availableQuantity": 263,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 217,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -626,7 +626,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 193,
+     "availableQuantity": 157,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -769,6 +769,35 @@
    {
     "modelType": "Kompaktanlæg med Streaming",
     "price": {
+     "price": 5898,
+     "priceFormatted": "5.898,-",
+     "priceBefore": 6898,
+     "priceBeforeFormatted": "6.898,-",
+     "priceSavingsFormatted": "1.000,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 5898,
+     "unitPriceBefore": 6898
+    },
+    "image": "https://images.hifiklubben.com/image/c19a4c7c-6911-48cb-b9ed-09a1877d6aba",
+    "ribbons": [
+     {
+      "text": "Spar 14%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Denon CEOL RCD-N12DAB + Home 150",
+    "url": "/denrcdn12dab-denhome150/"
+   },
+   {
+    "modelType": "Kompaktanlæg med Streaming",
+    "price": {
      "price": 8098,
      "priceFormatted": "8.098,-",
      "priceBefore": 9098,
@@ -839,21 +868,6 @@
     "image": "https://images.hifiklubben.com/image/e398bed1-6d56-4a28-8e7c-3f3288535a87",
     "title": "Denon Home Soundbar 550 + Denon Home 150",
     "url": "/denhomesb550-denhome150/"
-   },
-   {
-    "modelType": "Kompaktanlæg med Streaming",
-    "price": {
-     "price": 6898,
-     "priceFormatted": "6.898,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 6898,
-     "unitPriceBefore": 6898
-    },
-    "image": "https://images.hifiklubben.com/image/c19a4c7c-6911-48cb-b9ed-09a1877d6aba",
-    "title": "Denon CEOL RCD-N12DAB + Home 150",
-    "url": "/denrcdn12dab-denhome150/"
    },
    {
     "modelType": "Højtalersystem",

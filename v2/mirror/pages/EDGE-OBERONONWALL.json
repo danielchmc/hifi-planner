@@ -112,17 +112,6 @@
   "bundle": {
    "name": "Bluesound POWERNODE EDGE N230 + DALI OBERON ON-WALL Stereosystem til TV",
    "code": "EDGE-OBERONONWALL",
-   "ribbons": [
-    {
-     "text": "Spar 7%",
-     "ribbonType": "discount",
-     "link": {
-      "title": "",
-      "target": "_blank",
-      "kind": "LinkInfo"
-     }
-    }
-   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/49e59197-f352-44e3-a0fc-82617ada8b63"
@@ -154,14 +143,11 @@
    "priceDetails": {
     "price": 9998,
     "priceFormatted": "9.998,-",
-    "priceBefore": 10698,
-    "priceBeforeFormatted": "10.698,-",
-    "priceSavingsFormatted": "700,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
     "unitPrice": 9998,
-    "unitPriceBefore": 10698
+    "unitPriceBefore": 9998
    },
    "bundleProducts": [
     {
@@ -184,7 +170,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 112,
+        "availableQuantity": 99,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -207,7 +193,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 74,
+        "availableQuantity": 48,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -333,7 +319,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 468,
+        "availableQuantity": 435,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -356,7 +342,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 202,
+        "availableQuantity": 186,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.999,-",
@@ -576,7 +562,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 19
+    "numberOfStoresExperiencePartly": 21
    }
   },
   "variantNavigationType": "dropDown",

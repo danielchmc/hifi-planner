@@ -81,14 +81,30 @@
     "productCode": "DIRACBASSCONTROL",
     "ean": "7350182130013",
     "priceDetails": {
-     "priceValueId": 1045737,
-     "price": 1999,
-     "priceFormatted": "1.999,-",
+     "priceValueId": 1221957,
+     "price": 1599,
+     "priceFormatted": "1.599,-",
+     "priceBefore": 1999,
+     "priceBeforeFormatted": "1.999,-",
+     "priceSavingsFormatted": "400,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 1599,
+     "unitPriceBefore": 1999
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -127,7 +143,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 40,
+     "availableQuantity": 35,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

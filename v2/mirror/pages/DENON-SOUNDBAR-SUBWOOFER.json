@@ -150,7 +150,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 45,
+        "availableQuantity": 42,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.899,-",
@@ -160,7 +160,140 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DENHOMESUB"
+     "parentProductCode": "DENHOMESUB",
+     "reviews": {
+      "summary": "DENHOMESUB tilføjer dyb, varm og kraftfuld bas, som tydeligt løfter musik, tv og film i HEOS-systemer. Den trådløse integration er som regel hurtig og enkel, og HEOS-appen giver nyttige muligheder for sammenkobling og basjustering. Det store, stilfulde kabinet leverer en omsluttende lydoplevelse, selv om bassen til tider bliver for dominerende, enkelte opsætninger har forbindelses- eller tidsforskydningsproblemer, og én anmeldelse oplever effekten som for svag.",
+      "headlines": {
+       "deep, powerful bass fills out the system": {
+        "sentimentAnalysis": "Anmeldelserne roser subwooferen for stærk, dyb og rumfyldende bas, der tydeligt forbedrer sammenkoblede højttalere, musik, tv og film.",
+        "simpleTitle": "Dyb og kraftfuld bas fylder systemet ud",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "44d3ee18-9b47-44d1-90cb-8b4329f7b90d"
+       },
+       "wireless setup is quick and convenient": {
+        "sentimentAnalysis": "Anmeldelserne beskriver generelt HEOS-sammenkobling og opsætning som enkel, hurtig og kabelfri.",
+        "simpleTitle": "Trådløs opsætning er hurtig og enkel",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "d2e0d0b0-f88f-4b78-97f1-1993f1f1d372"
+       },
+       "stylish design comes with a large cabinet": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter den attraktive, robuste finish og diskrete fremtoning, men bemærker gentagne gange, at subwooferen er større end forventet eller ønsket.",
+        "simpleTitle": "Stilfuldt design med stort kabinet",
+        "bias": "meh",
+        "key": "design",
+        "groupId": "c9977233-4032-4099-88ba-e85294d0e3f0"
+       },
+       "bass can become too dominant": {
+        "sentimentAnalysis": "Flere anmeldelser oplever bassen som meget kraftig eller lejlighedsvis overdreven, så justering via appen eller equalizeren er nødvendig for balance.",
+        "simpleTitle": "Bassen kan blive for dominerende",
+        "bias": "negative",
+        "key": "sound",
+        "groupId": "44d3ee18-9b47-44d1-90cb-8b4329f7b90d"
+       },
+       "connectivity and timing can be unreliable": {
+        "sentimentAnalysis": "En anmeldelse nævner hyppige udfald og vanskelig genforbindelse, mens en anden bemærker en mindre lydforsinkelse.",
+        "simpleTitle": "Forbindelse og timing kan være ustabil",
+        "bias": "negative",
+        "key": "setup",
+        "groupId": "d2e0d0b0-f88f-4b78-97f1-1993f1f1d372"
+       }
+      },
+      "grouping": {
+       "44d3ee18-9b47-44d1-90cb-8b4329f7b90d": {
+        "title": "Lydkvalitet",
+        "id": "44d3ee18-9b47-44d1-90cb-8b4329f7b90d",
+        "references": [
+         "2627723a-eb0a-42a6-a40a-6e05dab8c9fe",
+         "8cd67357-1904-4a9e-9e4e-2cb036429551",
+         "0a8ec559-8033-4b76-b074-6a87c5d9ffa3",
+         "0d026186-6009-4feb-a828-c5ea5cc0b2cd",
+         "f0d6b784-70ab-4b8c-914c-e044456a407f",
+         "a2768966-3c29-45fc-82db-6d67299c65d6",
+         "b786dbc4-bd0e-48e5-abff-351ccc1080e2",
+         "abc7249d-45f7-41c8-a61e-4814bf6a8088",
+         "776d7a2d-cd7d-4259-bffc-6495d72f65a9",
+         "1b61271f-a70e-4d3e-a56b-8c30f7d5a7e3",
+         "2b22682d-e8a0-4f51-ad8e-cfa4587c94e7",
+         "78039140-25fa-4e12-be57-0bba7c021408",
+         "3e7a73e6-bbc8-4254-b4a8-ba39af5dcddc",
+         "d76db91c-79a5-4a1d-82ae-2c727cf425bf",
+         "7fd4f370-09ca-48b7-bef0-acf23a510f5c",
+         "59108740-bf18-411c-baba-2ad5628e14e9",
+         "9200f8eb-a358-4cf3-9069-9f1612dc007f",
+         "08a5b4b2-6e48-4342-8c40-e63b66e6c397",
+         "71a6f422-3fb3-4b84-9744-152053c5f8f8",
+         "c4fe9df8-e68c-4aec-8afc-675d64069ab1",
+         "7742f567-1e70-4a8c-9aae-29baaf1a913f",
+         "0cf4256f-1b4b-4e40-897c-3d6710b3f606",
+         "3144ed18-b9bf-4fbb-8881-ea85e05d355e",
+         "90147213-0166-4272-9366-f1127cfae1b7",
+         "e5a9c571-2ef7-4078-aaed-90b907d10d0d",
+         "7d270a3d-3fd4-436c-9554-b5b951319fd5",
+         "fedf2dfd-2126-478a-95e1-fa6b6f9fef67",
+         "9dd32156-0f9a-48f2-99df-7511be754b26",
+         "4d1a573a-224f-4618-a41d-eff1895079ef",
+         "199c5f22-7a7d-4000-b430-0133e5804aa6",
+         "668cf87d-426d-4df5-ada1-f5bf929d1b47",
+         "dc893d85-930f-4796-accb-7bb79d28230c",
+         "7894ee48-7882-407f-8740-fbfbb6c457f4",
+         "8f1a1218-2466-4fc0-a331-0c7ffaa2978c",
+         "7ec33776-6553-4e2b-8397-85ab6f3a2139",
+         "88a0c7a1-bc77-4e91-a7fe-d65d18cd44f0",
+         "e3d79684-3c0c-46e3-8403-e82d1ed684f8",
+         "8a0a2f31-93f4-4592-a569-afd61e41009d",
+         "6ee4fc17-5d69-4458-b087-e25c196b472a",
+         "187ed92a-0be6-4b07-b1fa-4d2af4c7a486"
+        ]
+       },
+       "d2e0d0b0-f88f-4b78-97f1-1993f1f1d372": {
+        "title": "Opsætning og forbindelse",
+        "id": "d2e0d0b0-f88f-4b78-97f1-1993f1f1d372",
+        "references": [
+         "f0d6b784-70ab-4b8c-914c-e044456a407f",
+         "abc7249d-45f7-41c8-a61e-4814bf6a8088",
+         "1b61271f-a70e-4d3e-a56b-8c30f7d5a7e3",
+         "7742f567-1e70-4a8c-9aae-29baaf1a913f",
+         "90147213-0166-4272-9366-f1127cfae1b7",
+         "e5a9c571-2ef7-4078-aaed-90b907d10d0d",
+         "7d270a3d-3fd4-436c-9554-b5b951319fd5",
+         "fedf2dfd-2126-478a-95e1-fa6b6f9fef67",
+         "e7157bf0-f33e-49f6-8ed2-743aa36d5fd9",
+         "18dfef25-7eab-48ca-8bfe-e8cbb548f6d1",
+         "668cf87d-426d-4df5-ada1-f5bf929d1b47",
+         "9aa0b0e3-3826-43a6-a3d7-0d5e184a558b",
+         "5ee66309-2447-4336-9e04-9c4ac59592c1",
+         "88a0c7a1-bc77-4e91-a7fe-d65d18cd44f0",
+         "5dc94e3d-e47a-445a-9c75-23675aa82586"
+        ]
+       },
+       "c9977233-4032-4099-88ba-e85294d0e3f0": {
+        "title": "Design og størrelse",
+        "id": "c9977233-4032-4099-88ba-e85294d0e3f0",
+        "references": [
+         "2627723a-eb0a-42a6-a40a-6e05dab8c9fe",
+         "2b22682d-e8a0-4f51-ad8e-cfa4587c94e7",
+         "71a6f422-3fb3-4b84-9744-152053c5f8f8",
+         "59108740-bf18-411c-baba-2ad5628e14e9",
+         "e5a9c571-2ef7-4078-aaed-90b907d10d0d",
+         "88a0c7a1-bc77-4e91-a7fe-d65d18cd44f0",
+         "9aa0b0e3-3826-43a6-a3d7-0d5e184a558b",
+         "187ed92a-0be6-4b07-b1fa-4d2af4c7a486"
+        ]
+       }
+      },
+      "rating": 4.66037735849057,
+      "count": 106,
+      "reviewCount": 51,
+      "distribution": {
+       "1": 0,
+       "2": 2,
+       "3": 4,
+       "4": 22,
+       "5": 78
+      }
+     }
     },
     {
      "brand": "Denon",
@@ -182,7 +315,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 33,
+        "availableQuantity": 26,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.299,-",
@@ -192,7 +325,78 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DENHOMESOUNDBAR550"
+     "parentProductCode": "DENHOMESOUNDBAR550",
+     "reviews": {
+      "summary": "DENHOMESOUNDBAR550 giver en varm, kraftfuld og omsluttende forbedring i forhold til tv-lyden, med tydelige stemmer og imponerende lyd for den kompakte størrelse. Nem opsætning, alsidige tilslutningsmuligheder og god integration med andre Denon-højttalere gør soundbaren særligt attraktiv. Den samlede tilfredshed er meget høj, med kun mindre bekymringer om lejlighedsvis softwareadfærd og manglende information på selve enheden.",
+      "headlines": {
+       "clear, high-quality TV sound": {
+        "sentimentAnalysis": "Soundbaren roses bredt for at forbedre svag tv-lyd tydeligt og levere forståelige stemmer samt en stærk samlet lydkvalitet.",
+        "simpleTitle": "Klar tv-lyd i høj kvalitet",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "9b26ceb5-1ab7-45e3-bac4-8fe248729364"
+       },
+       "full sound for its compact size": {
+        "sentimentAnalysis": "Soundbaren leverer et fyldigere og mere overbevisende lydbillede end forventet ud fra størrelsen, med gode resultater i et flerhøjttaler-setup og understøttelse af omsluttende formater.",
+        "simpleTitle": "Fyldig lyd trods kompakt størrelse",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "9b26ceb5-1ab7-45e3-bac4-8fe248729364"
+       },
+       "broad connection options": {
+        "sentimentAnalysis": "Soundbaren understøtter praktisk streaming fra telefon, vinylafspilning og direkte HDMI-brug med computere samt Dolby Atmos og 5.1-afspilning.",
+        "simpleTitle": "Mange tilslutningsmuligheder",
+        "bias": "positive",
+        "key": "connectivity",
+        "groupId": "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec"
+       },
+       "simple setup and operation": {
+        "sentimentAnalysis": "Opsætning og daglig betjening beskrives som enkel og ukompliceret.",
+        "simpleTitle": "Nem opsætning og betjening",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "a341242d-9983-496e-8b2f-f02bad941a40"
+       }
+      },
+      "grouping": {
+       "9b26ceb5-1ab7-45e3-bac4-8fe248729364": {
+        "title": "Lydkvalitet",
+        "id": "9b26ceb5-1ab7-45e3-bac4-8fe248729364",
+        "references": [
+         "eb57936f-6acd-47ef-b3ea-f7d1529f8c1b",
+         "863619ab-b1bf-438c-a95f-e4482f3784ee",
+         "e6c35cd9-3d59-45be-9f05-261c548a4091",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       },
+       "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec": {
+        "title": "Tilslutning og funktioner",
+        "id": "a2c8d1fa-d3ec-4414-a7bc-8b3b1710feec",
+        "references": [
+         "e6c35cd9-3d59-45be-9f05-261c548a4091",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       },
+       "a341242d-9983-496e-8b2f-f02bad941a40": {
+        "title": "Opsætning og brugervenlighed",
+        "id": "a341242d-9983-496e-8b2f-f02bad941a40",
+        "references": [
+         "50c8c09d-bf8d-4a5b-a23c-5b7d8d5e6ca5",
+         "f4a25fbe-7b50-4d9a-a3dd-feb5444d7fda"
+        ]
+       }
+      },
+      "rating": 4.72727272727273,
+      "count": 11,
+      "reviewCount": 8,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 3,
+       "5": 8
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

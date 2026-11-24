@@ -121,14 +121,30 @@
     "productCode": "DP29F",
     "ean": "4988001514985",
     "priceDetails": {
-     "priceValueId": 1029430,
-     "price": 1499,
-     "priceFormatted": "1.499,-",
+     "priceValueId": 1210912,
+     "price": 1299,
+     "priceFormatted": "1.299,-",
+     "priceBefore": 1499,
+     "priceBeforeFormatted": "1.499,-",
+     "priceSavingsFormatted": "200,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1499
+     "offerExpiryDate": "2026-12-20T22:59:00Z",
+     "unitPrice": 1299,
+     "unitPriceBefore": 1499
     },
+    "ribbons": [
+     {
+      "text": "Spar 13%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -171,7 +187,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 88,
+     "availableQuantity": 74,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

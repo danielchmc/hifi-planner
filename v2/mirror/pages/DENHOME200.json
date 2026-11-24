@@ -205,12 +205,6 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/",
    "id": 69679
   },
-  "stockItemAlternative": {
-   "save": "300,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DENHOME200",
-   "availableQuantity": 1,
-   "lowestPrice": "2.499,-"
-  },
   "variants": [
    {
     "id": 277904,
@@ -220,14 +214,30 @@
     "productCode": "DENHOME200BK",
     "ean": "747192145965",
     "priceDetails": {
-     "priceValueId": 1088057,
-     "price": 2799,
-     "priceFormatted": "2.799,-",
+     "priceValueId": 1210865,
+     "price": 2299,
+     "priceFormatted": "2.299,-",
+     "priceBefore": 2799,
+     "priceBeforeFormatted": "2.799,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2799
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 2299,
+     "unitPriceBefore": 2799
     },
+    "ribbons": [
+     {
+      "text": "Spar 18%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -262,12 +272,11 @@
      "productCode": "DENHOME200BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 29. november",
+     "deliveryDate": "2026-11-29T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 9,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -310,14 +319,30 @@
     "productCode": "DENHOME200SI",
     "ean": "747192145972",
     "priceDetails": {
-     "priceValueId": 1088059,
-     "price": 2799,
-     "priceFormatted": "2.799,-",
+     "priceValueId": 1210871,
+     "price": 2299,
+     "priceFormatted": "2.299,-",
+     "priceBefore": 2799,
+     "priceBeforeFormatted": "2.799,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2799
+     "offerExpiryDate": "2026-12-06T22:59:00Z",
+     "unitPrice": 2299,
+     "unitPriceBefore": 2799
     },
+    "ribbons": [
+     {
+      "text": "Spar 18%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -356,7 +381,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 102,
+     "availableQuantity": 82,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -562,15 +587,29 @@
    {
     "modelType": "Trådløs højtaler",
     "price": {
-     "price": 5598,
-     "priceFormatted": "5.598,-",
+     "price": 4598,
+     "priceFormatted": "4.598,-",
+     "priceBefore": 5598,
+     "priceBeforeFormatted": "5.598,-",
+     "priceSavingsFormatted": "1.000,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 5598,
+     "unitPrice": 4598,
      "unitPriceBefore": 5598
     },
     "image": "https://images.hifiklubben.com/image/dff1e717-fb2f-4bfd-b8b4-ccfd2be3fe0f",
+    "ribbons": [
+     {
+      "text": "Spar 18%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Denon Home 200 X2",
     "url": "/x2-denon-home-200/"
    }

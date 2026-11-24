@@ -168,6 +168,17 @@
   "bundle": {
    "name": "Denon CEOL RCD-N12DAB + Home 150 Kompaktanlæg med Streaming",
    "code": "DENRCDN12DAB-DENHOME150",
+   "ribbons": [
+    {
+     "text": "Spar 14%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/c19a4c7c-6911-48cb-b9ed-09a1877d6aba"
@@ -194,12 +205,15 @@
     }
    ],
    "priceDetails": {
-    "price": 6898,
-    "priceFormatted": "6.898,-",
+    "price": 5898,
+    "priceFormatted": "5.898,-",
+    "priceBefore": 6898,
+    "priceBeforeFormatted": "6.898,-",
+    "priceSavingsFormatted": "1.000,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 6898,
+    "unitPrice": 5898,
     "unitPriceBefore": 6898
    },
    "bundleProducts": [
@@ -223,7 +237,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 307,
+        "availableQuantity": 306,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -246,7 +260,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 269,
+        "availableQuantity": 217,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.399,-",
@@ -269,7 +283,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 172,
+        "availableQuantity": 167,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -292,7 +306,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 201,
+        "availableQuantity": 157,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.399,-",
@@ -585,11 +599,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 330,
+        "availableQuantity": 313,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.299,-",
-       "priceRaw": 5299,
+       "priceFormatted": "4.299,-",
+       "priceRaw": 4299,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -608,11 +622,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 440,
+        "availableQuantity": 367,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.299,-",
-       "priceRaw": 5299,
+       "priceFormatted": "4.299,-",
+       "priceRaw": 4299,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -789,15 +803,15 @@
         ]
        }
       },
-      "rating": 4.67439165701043,
-      "count": 863,
-      "reviewCount": 466,
+      "rating": 4.67358708189158,
+      "count": 867,
+      "reviewCount": 468,
       "distribution": {
        "1": 4,
        "2": 6,
-       "3": 29,
+       "3": 30,
        "4": 189,
-       "5": 635
+       "5": 638
       }
      }
     }
@@ -807,21 +821,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 23
+    "numberOfStoresExperience": 21
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.6589709762533,
-   "count": 1516,
-   "reviewCount": 796,
+   "rating": 4.65855263157895,
+   "count": 1520,
+   "reviewCount": 798,
    "distribution": {
     "1": 11,
     "2": 8,
-    "3": 64,
+    "3": 65,
     "4": 321,
-    "5": 1112
+    "5": 1115
    }
   },
   "boxContent": [],
