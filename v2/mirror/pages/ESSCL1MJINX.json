@@ -130,8 +130,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 747,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 720,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -209,8 +209,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 2109,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 2037,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -289,7 +289,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 700,
+     "availableQuantity": 669,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -367,8 +367,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 192,
+     "numberOfStoresExperience": 21,
+     "availableQuantity": 173,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -446,8 +446,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 110,
+     "numberOfStoresExperience": 18,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -498,6 +498,35 @@
    {
     "modelType": "Pladespiller system",
     "price": {
+     "price": 13667,
+     "priceFormatted": "13.667,-",
+     "priceBefore": 17218,
+     "priceBeforeFormatted": "17.218,-",
+     "priceSavingsFormatted": "3.551,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 13667,
+     "unitPriceBefore": 17218
+    },
+    "image": "https://images.hifiklubben.com/image/8f8020e3-8ead-46b5-96a0-37e510f0eca2",
+    "ribbons": [
+     {
+      "text": "Spar 21%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Argon Audio TT4 MK2 + KEF LSX II",
+    "url": "/argtt4mk2-keflsx2/"
+   },
+   {
+    "modelType": "Pladespiller system",
+    "price": {
      "price": 10467,
      "priceFormatted": "10.467,-",
      "priceBefore": 12218,
@@ -523,35 +552,6 @@
     ],
     "title": "ARGTTMK2 + KEFLSX2",
     "url": "/argttmk2-keflsx2/"
-   },
-   {
-    "modelType": "Pladespiller system",
-    "price": {
-     "price": 14867,
-     "priceFormatted": "14.867,-",
-     "priceBefore": 17218,
-     "priceBeforeFormatted": "17.218,-",
-     "priceSavingsFormatted": "2.351,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 14867,
-     "unitPriceBefore": 17218
-    },
-    "image": "https://images.hifiklubben.com/image/8f8020e3-8ead-46b5-96a0-37e510f0eca2",
-    "ribbons": [
-     {
-      "text": "Spar 14%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Argon Audio TT4 MK2 + KEF LSX II",
-    "url": "/argtt4mk2-keflsx2/"
    }
   ],
   "variantNavigationType": "sizeSelector",

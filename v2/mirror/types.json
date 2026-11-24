@@ -386,29 +386,6 @@
    ]
   },
   {
-   "type": "Kompakt højtaler – Aktive",
-   "keys": {
-    "CompactSpeakerActive": 22
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 22
-   },
-   "count": 22,
-   "bundles": 6,
-   "outlet": 0,
-   "products": 16,
-   "inCatalogue": 15,
-   "variantAxes": {
-    "colorOptions": 16,
-    "none": 6
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Active Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "MM-pickup",
    "keys": {
     "MMpickup": 21
@@ -426,6 +403,29 @@
    },
    "mapped": null,
    "hifiPlanner": []
+  },
+  {
+   "type": "Kompakt højtaler – Aktive",
+   "keys": {
+    "CompactSpeakerActive": 21
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 21
+   },
+   "count": 21,
+   "bundles": 6,
+   "outlet": 0,
+   "products": 15,
+   "inCatalogue": 15,
+   "variantAxes": {
+    "colorOptions": 15,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Active Speakers",
+    "Compact Speakers"
+   ]
   },
   {
    "type": "Pladespiller",
@@ -872,25 +872,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Vægbeslag",
-   "keys": {
-    "WallBracket": 10
-   },
-   "cats": {
-    "Tilbehør": 10
-   },
-   "count": 11,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 10,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 11
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Væghøjtaler",
    "keys": {
     "Onwallloudspeaker": 10
@@ -947,25 +928,6 @@
    "variantAxes": {
     "colorOptions": 9,
     "sizeSelector": 1
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "Møbel",
-   "keys": {
-    "Furniture": 10
-   },
-   "cats": {
-    "Tilbehør > Møbler": 10
-   },
-   "count": 10,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 10,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 10
    },
    "mapped": null,
    "hifiPlanner": []
@@ -1046,6 +1008,25 @@
    "bundles": 0,
    "outlet": 0,
    "products": 10,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 10
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Vægbeslag",
+   "keys": {
+    "WallBracket": 9
+   },
+   "cats": {
+    "Tilbehør": 9
+   },
+   "count": 10,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 9,
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 10
@@ -1259,25 +1240,6 @@
    ]
   },
   {
-   "type": "Stofdør",
-   "keys": {
-    "Fabricdoor": 8
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 8
-   },
-   "count": 8,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 8,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 8
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "DJ-pickup",
    "keys": {
     "DJpickup": 7
@@ -1427,6 +1389,25 @@
    },
    "cats": {
     "Højtaler > Indbygning & udendørs højtaler": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Stofdør",
+   "keys": {
+    "Fabricdoor": 6
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 6
    },
    "count": 6,
    "bundles": 0,
@@ -1925,6 +1906,25 @@
    ]
   },
   {
+   "type": "Møbel",
+   "keys": {
+    "Furniture": 4
+   },
+   "cats": {
+    "Tilbehør > Møbler": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 4,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 4
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
    "type": "Multirumsforstærker",
    "keys": {
     "MultiRoomAmplifier": 4
@@ -2107,25 +2107,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Kabelskjuler",
-   "keys": {
-    "CableCovering": 3
-   },
-   "cats": {
-    "Tilbehør": 3
-   },
-   "count": 3,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 3,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 3
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Kompaktanlæg",
    "keys": {
     "Musicsystem": 3
@@ -2195,25 +2176,6 @@
    },
    "cats": {
     "Tilbehør > Højtaler tilbehør": 3
-   },
-   "count": 3,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 3,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 3
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "Skuffe",
-   "keys": {
-    "Drawer": 3
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 3
    },
    "count": 3,
    "bundles": 0,
@@ -2363,6 +2325,25 @@
    "hifiPlanner": []
   },
   {
+   "type": "Kabelskjuler",
+   "keys": {
+    "CableCovering": 2
+   },
+   "cats": {
+    "Tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
    "type": "Micro RGB TV",
    "keys": {
     "MicroRGB": 2
@@ -2424,6 +2405,25 @@
    "hifiPlanner": [
     "Receivers"
    ]
+  },
+  {
+   "type": "Skuffe",
+   "keys": {
+    "Drawer": 2
+   },
+   "cats": {
+    "Tilbehør > Møbel tilbehør": 2
+   },
+   "count": 2,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
   },
   {
    "type": "Trædør",

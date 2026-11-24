@@ -236,7 +236,7 @@
    "brand": "AudioQuest",
    "model": "Big Sur",
    "type": "Minijack-kabel",
-   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin800/",
+   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin1,0/",
    "last": "2026-11-24",
    "page": "2026-11-22",
    "typeKey": "MiniJackCable",
@@ -1902,7 +1902,7 @@
    "brand": "Argon Audio",
    "model": "STUDIE3 CABLE",
    "type": "Højtalerkabel",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
@@ -4255,7 +4255,8 @@
    "last": "2026-11-24",
    "typeKey": "PassiveSubwoofer",
    "cat": "Højtaler > Subwoofer",
-   "page": "2026-11-23"
+   "page": "2026-11-23",
+   "gone": "2026-11-24"
   },
   "BWISW6": {
    "first": "2026-11-19",
@@ -4898,7 +4899,7 @@
    "brand": "DALI",
    "model": "EPIKORE 11",
    "type": "Gulvhøjtaler",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
    "last": "2026-11-24",
    "typeKey": "FloorStandingLoudspeaker",
    "cat": "Højtaler > Gulvhøjtaler",
@@ -5259,7 +5260,8 @@
    "last": "2026-11-24",
    "page": "2026-11-23",
    "typeKey": "CompactSpeakerActive",
-   "cat": "Højtaler > Kompakt højtaler"
+   "cat": "Højtaler > Kompakt højtaler",
+   "gone": "2026-11-24"
   },
   "DALIOPTICON1MK2": {
    "first": "2026-11-19",
@@ -5643,6 +5645,17 @@
    "typeKey": "InWallLoudspeakers",
    "cat": "Højtaler > Indbygning & udendørs højtaler",
    "page": "2026-11-23"
+  },
+  "DALIPHANTOMSUB100": {
+   "first": "2026-11-24",
+   "brand": "DALI",
+   "model": "PHANTOM SUB S-100",
+   "type": "Passiv subwoofer",
+   "url": "/dali-phantom-sub-s-100-passiv-subwoofer/daliphantomsub100wh/",
+   "last": "2026-11-24",
+   "page": "2026-11-24",
+   "typeKey": "PassiveSubwoofer",
+   "cat": "Højtaler > Subwoofer"
   },
   "DALIPHE50SQGRILL": {
    "first": "2026-11-19",
@@ -6941,7 +6954,7 @@
    "last": "2026-11-24",
    "typeKey": "DampingFeet",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1BANBFASIX": {
    "first": "2026-11-19",
@@ -6952,7 +6965,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1HDMIPROX": {
    "first": "2026-11-19",
@@ -6963,7 +6976,7 @@
    "last": "2026-11-24",
    "typeKey": "HDMIcable",
    "cat": "Kabler > HDMI kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1HDMIX": {
    "first": "2026-11-19",
@@ -6974,7 +6987,7 @@
    "last": "2026-11-24",
    "typeKey": "HDMIcable",
    "cat": "Kabler > HDMI kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1OPTX": {
    "first": "2026-11-19",
@@ -6985,7 +6998,7 @@
    "last": "2026-11-24",
    "typeKey": "Opticalcabel",
    "cat": "Kabler > Digital kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1PLUGMJJX": {
    "first": "2026-11-19",
@@ -6996,7 +7009,7 @@
    "last": "2026-11-24",
    "typeKey": "Adapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1PLUGRCAFFX": {
    "first": "2026-11-19",
@@ -7007,7 +7020,7 @@
    "last": "2026-11-24",
    "typeKey": "Adapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1SCX": {
    "first": "2026-11-19",
@@ -7018,7 +7031,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA1SUBX": {
    "first": "2026-11-19",
@@ -7029,7 +7042,7 @@
    "last": "2026-11-24",
    "typeKey": "SubwooferCable",
    "cat": "Kabler > Subwoofer kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA2BANGOX": {
    "first": "2026-11-19",
@@ -7040,7 +7053,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBA2SCX": {
    "first": "2026-11-19",
@@ -7051,7 +7064,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBASICWMSFLATX": {
    "first": "2026-11-19",
@@ -7062,7 +7075,7 @@
    "last": "2026-11-24",
    "typeKey": "TvBracket",
    "cat": "Tilbehør > TV tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBBGHOSTBOX24X": {
    "first": "2026-11-19",
@@ -7073,7 +7086,7 @@
    "last": "2026-11-24",
    "typeKey": "Backbox",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBBGHOSTBOX27X": {
    "first": "2026-11-19",
@@ -7084,7 +7097,7 @@
    "last": "2026-11-24",
    "typeKey": "Backbox",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBT1CONNECTX": {
    "first": "2026-11-19",
@@ -7095,7 +7108,7 @@
    "last": "2026-11-24",
    "typeKey": "BluetoothReceiver",
    "cat": "HiFi > Musikstreamer",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBT2CONNECTX": {
    "first": "2026-11-19",
@@ -7106,7 +7119,7 @@
    "last": "2026-11-24",
    "typeKey": "BluetoothReceiver",
    "cat": "HiFi > Musikstreamer",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSBT3CONNECTX": {
    "first": "2026-11-19",
@@ -7117,7 +7130,7 @@
    "last": "2026-11-24",
    "typeKey": "BluetoothReceiver",
    "cat": "HiFi > Musikstreamer",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1BANANAX": {
    "first": "2026-11-19",
@@ -7128,7 +7141,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1BANBFASIX": {
    "first": "2026-11-19",
@@ -7139,7 +7152,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1HDMI8KX": {
    "first": "2026-11-19",
@@ -7150,7 +7163,7 @@
    "last": "2026-11-24",
    "typeKey": "HDMIcable",
    "cat": "Kabler > HDMI kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1HDMIX": {
    "first": "2026-11-19",
@@ -7170,7 +7183,7 @@
    "last": "2026-11-24",
    "typeKey": "SignalCable",
    "cat": "Kabler > Signalkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1MJINX": {
    "first": "2026-11-19",
@@ -7181,7 +7194,7 @@
    "last": "2026-11-24",
    "typeKey": "MiniJackCable",
    "cat": "Kabler > Minijack kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1MJX": {
    "first": "2026-11-19",
@@ -7192,7 +7205,7 @@
    "last": "2026-11-24",
    "typeKey": "MiniJackCable",
    "cat": "Kabler > Minijack kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1OPTX": {
    "first": "2026-11-19",
@@ -7203,7 +7216,7 @@
    "last": "2026-11-24",
    "typeKey": "Opticalcabel",
    "cat": "Kabler > Digital kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1SCPROX": {
    "first": "2026-11-19",
@@ -7214,7 +7227,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1SCX": {
    "first": "2026-11-19",
@@ -7225,7 +7238,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1SPADEX": {
    "first": "2026-11-19",
@@ -7236,7 +7249,7 @@
    "last": "2026-11-24",
    "typeKey": "Spade",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1SUBX": {
    "first": "2026-11-19",
@@ -7247,7 +7260,7 @@
    "last": "2026-11-24",
    "typeKey": "SubwooferCable",
    "cat": "Kabler > Subwoofer kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1USBCCX": {
    "first": "2026-11-19",
@@ -7258,7 +7271,7 @@
    "last": "2026-11-24",
    "typeKey": "USBCabel",
    "cat": "Kabler > Digital kabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1YSPLIT2F1MX": {
    "first": "2026-11-19",
@@ -7269,7 +7282,7 @@
    "last": "2026-11-24",
    "typeKey": "YSplitYAdapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL1YSPLIT2M1FX": {
    "first": "2026-11-19",
@@ -7280,7 +7293,7 @@
    "last": "2026-11-24",
    "typeKey": "YSplitYAdapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL2BANGOX": {
    "first": "2026-11-19",
@@ -7291,7 +7304,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCL2SCX": {
    "first": "2026-11-19",
@@ -7302,7 +7315,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSCLEANKITINEARX": {
    "first": "2026-11-19",
@@ -7313,7 +7326,7 @@
    "last": "2026-11-24",
    "typeKey": "HeadphoneAccessories",
    "cat": "Høretelefoner > Høretelefon tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSDABCONNECTX": {
    "first": "2026-11-20",
@@ -7322,7 +7335,7 @@
    "type": "DAB-tuner",
    "url": "/essentials-dab-connect-dab-tuner/essdabconnectbk/",
    "last": "2026-11-24",
-   "page": "2026-11-21",
+   "page": "2026-11-24",
    "typeKey": "DabTuner",
    "cat": "HiFi > DAB radio / FM / internet"
   },
@@ -7335,7 +7348,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSEX1SCCOMSX": {
    "first": "2026-11-19",
@@ -7346,7 +7359,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSEX1SCCOMX": {
    "first": "2026-11-19",
@@ -7357,7 +7370,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSEX2BANAIRGOX": {
    "first": "2026-11-19",
@@ -7368,7 +7381,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSFSKONTUR60": {
    "first": "2026-11-19",
@@ -7379,7 +7392,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudspeakerStand",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSFSMONNO60": {
    "first": "2026-11-19",
@@ -7390,7 +7403,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudspeakerStand",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSNANODACX": {
    "first": "2026-11-19",
@@ -7401,7 +7414,7 @@
    "last": "2026-11-24",
    "typeKey": "DAConverter",
    "cat": "HiFi > D/A konverter",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPR1BANANAANGLEX": {
    "first": "2026-11-19",
@@ -7412,7 +7425,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPR1BANANAX": {
    "first": "2026-11-19",
@@ -7423,7 +7436,7 @@
    "last": "2026-11-24",
    "typeKey": "BananaPlug",
    "cat": "Kabler > Højtalerstik",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPR1INX": {
    "first": "2026-11-19",
@@ -7434,7 +7447,7 @@
    "last": "2026-11-24",
    "typeKey": "SignalCable",
    "cat": "Kabler > Signalkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPR1SCX": {
    "first": "2026-11-19",
@@ -7445,7 +7458,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPR2SCX": {
    "first": "2026-11-19",
@@ -7456,7 +7469,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudSpeakerCable",
    "cat": "Kabler > Højtalerkabel",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPSUSBAC65WX": {
    "first": "2026-11-19",
@@ -7467,7 +7480,7 @@
    "last": "2026-11-24",
    "typeKey": "Adapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSPSUSBACX": {
    "first": "2026-11-19",
@@ -7478,7 +7491,7 @@
    "last": "2026-11-24",
    "typeKey": "Adapter",
    "cat": "Kabler > Diverse kabler, stik & adaptere",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSRADIO1X": {
    "first": "2026-11-19",
@@ -7489,7 +7502,7 @@
    "last": "2026-11-24",
    "typeKey": "Radio",
    "cat": "HiFi > DAB radio / FM / internet",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSRADIO3X": {
    "first": "2026-11-19",
@@ -7500,7 +7513,7 @@
    "last": "2026-11-24",
    "typeKey": "Radio",
    "cat": "HiFi > DAB radio / FM / internet",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSSHFORMELVX": {
    "first": "2026-11-19",
@@ -7511,7 +7524,7 @@
    "last": "2026-11-24",
    "typeKey": "TurntableAccessories",
    "cat": "Pladespiller > Pladespiller tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSSPEAKERWEDGEX": {
    "first": "2026-11-19",
@@ -7522,7 +7535,7 @@
    "last": "2026-11-24",
    "typeKey": "TableStand",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSSTATIVS62X": {
    "first": "2026-11-19",
@@ -7542,7 +7555,7 @@
    "last": "2026-11-24",
    "typeKey": "LoudspeakerStand",
    "cat": "Tilbehør > Højtaler tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-24"
   },
   "ESSSTELSHELFLX": {
    "first": "2026-11-19",
@@ -14961,7 +14974,8 @@
    "last": "2026-11-24",
    "typeKey": "CableCovering",
    "cat": "Tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU12SV2": {
    "first": "2026-11-19",
@@ -14972,7 +14986,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU13SV2": {
    "first": "2026-11-19",
@@ -14983,7 +14998,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU210LPV2-C21V2": {
    "first": "2026-11-19",
@@ -15006,7 +15022,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU211V2LP": {
    "first": "2026-11-19",
@@ -15017,7 +15034,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU221V2": {
    "first": "2026-11-19",
@@ -15028,7 +15046,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNU230V2": {
    "first": "2026-11-19",
@@ -15050,7 +15069,8 @@
    "last": "2026-11-24",
    "typeKey": "Furniture",
    "cat": "Tilbehør > Møbler",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNUBASE2": {
    "first": "2026-11-19",
@@ -15083,7 +15103,8 @@
    "last": "2026-11-24",
    "typeKey": "Fabricdoor",
    "cat": "Tilbehør > Møbel tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNUC21V2": {
    "first": "2026-11-19",
@@ -15094,7 +15115,8 @@
    "last": "2026-11-24",
    "typeKey": "Fabricdoor",
    "cat": "Tilbehør > Møbel tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNUC21V2LG": {
    "first": "2026-11-19",
@@ -15127,7 +15149,8 @@
    "last": "2026-11-24",
    "typeKey": "Drawer",
    "cat": "Tilbehør > Møbel tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNUWB": {
    "first": "2026-11-19",
@@ -15138,7 +15161,8 @@
    "last": "2026-11-24",
    "typeKey": "WallBracket",
    "cat": "Tilbehør",
-   "page": "2026-11-21"
+   "page": "2026-11-21",
+   "gone": "2026-11-24"
   },
   "UNNUWB1X": {
    "first": "2026-11-19",
@@ -15633,9 +15657,9 @@
  },
  "updated": "2026-11-24",
  "listing": {
-  "products": 1404,
+  "products": 1392,
   "bundles": 250,
   "outlet": 64
  },
- "listingAt": "2026-11-24T13:58:56.527Z"
+ "listingAt": "2026-11-24T23:33:08.586Z"
 }
