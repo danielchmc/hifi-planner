@@ -95,6 +95,8 @@ The app's controls and windows follow the top bar's style, like Figma and Canva:
 
 The shared settings are CSS variables in the "v5 design language" sections at the end of `css/app.css`: `--r` (6 px), `--r-sm`, `--r-lg`, `--r-xl`, `--ctl` (control height, 32 px; 38 px on touch screens), `--tint` (the "on" state), `--ring` (focus), `--line2` (hover border) and `--pop` (the floating shadow, darker in the dark theme).
 
+**Icons** are [Lucide](https://lucide.dev) (ISC licence: free for commercial use, the notice is in `assets/LICENSE-lucide.txt` and must stay with them). They are copied into `ICONS` in `js/core.js` (no download at run time), each with its Lucide name after `//`; to add one, find it on lucide.dev and paste the inside of its `<svg>`. Drawn at 1.75 stroke with round ends (`.ic` in `css/app.css`). The HiFi Klubben logo, the CI mark symbols and the port dots are our own, not icons.
+
 **Scrollbars** are thin, rounded and float on a clear track (12 px, the thumb 4 px wide; darker and wider on hover, orange while dragged), in Chrome, Edge and Safari; Firefox gets its own thin scrollbar in the same colours. Colours: `--sb` and `--sb-hover`. Strips that hide their scrollbar (category chips, the selection bar and CI bar on small screens) still do.
 
 ## Motion
@@ -223,7 +225,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-2350`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261125-0030`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -244,7 +246,7 @@ One 48 px bar in the style of Figma or Canva: icon buttons without borders, grou
 
 - **Left:** the HiFi Planner mark · **Filer ▾** · undo/redo · Tekst, Prisliste (tag icon), CI-tilstand (icons; an active tool is tinted orange).
 - **Middle:** the shop as a crumb (*Amagerbrogade /*) and the proposal's name (click to rename), then the **Prisjusteringer chip** while the proposal has price adjustments: *Prisjusteringer −3.000,-* (kroner off the website's prices; *+* when prices were raised); greyed *1 gemt* when they are only saved for products not in the price list now. Click to edit, × to remove them all (Undo in the message).
-- **Right:** Oversigt (layers icon) · **Kort ▾** showing the card size (*100%*; a stepper, 60/80/100/125 %, Tilpas til vindue) · **Admin ⚙ ▾** (admins only; an orange dot when there are unpublished changes) · **the seller's initials** in a round avatar ▾ · **Relaterede produkter** (outlined, with the count) · **Print / PDF** (orange).
+- **Right:** Oversigt (layers icon) · **Kort ▾** showing the card size (*100%*; a stepper, 60/80/100/125 %, Tilpas til vindue) · **Admin ▾** with a shield (Lucide shield-check) (admins only; an orange dot when there are unpublished changes; the word Admin goes below 1300 px) · **the seller's initials** in a round avatar ▾ · **Relaterede produkter** (outlined, with the count) · **Print / PDF** (orange).
 - **Filer:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Prisjusteringer…, Oversigt.
 - **Admin:** Produkt-editor, Statistik, Udgiv (n).
 - **The seller:** Hjælp, English/Dansk, Lyst/Mørkt tema (F1), Indstillinger, Skift sælger.

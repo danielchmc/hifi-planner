@@ -369,8 +369,8 @@
     const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
     const print = h('button.tb-btn.primary#tb-print', { title: t('Print / PDF (Ctrl+P)', 'Print / PDF (Ctrl+P)'), onclick: () => HP.cover.dialog() }, icon('print', 15), h('span.tl', null, t('Print / PDF', 'Print / PDF')));
-    const adminN = h('i.tb-dot'), admin = h('button.tb-i.tb-menu#tb-admin', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, adminItems(), true) }, icon('gear', 17), adminN, icon('down', 11));
-    const avatar = h('span.tb-av'), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, avatar, icon('down', 11));
+    const adminN = h('i.tb-dot'), admin = h('button.tb-i.tb-menu#tb-admin', { 'aria-haspopup': 'menu', title: t('Admin: product editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv'), onclick: (e) => dropAt(e.currentTarget, adminItems(), true) }, icon('shield', 17), h('span.tl', null, 'Admin'), adminN, icon('down', 11));
+    const avIni = h('b'), avatar = h('span.tb-av', null, avIni), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, avatar, icon('down', 11));
     const file = dropBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, price adjustments', 'Tilbuddet: nyt, projekter, del, print, prisjusteringer') });
     // the Prisjusteringer chip: shown while the proposal has price adjustments; click edits them, × clears them (Undo in the toast)
     const ppTxt = h('span.ppc-t'), ppChip = h('.tb-pp#tb-pp', { hidden: true },
@@ -392,7 +392,7 @@
         h('button.tb-i#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more', 17))));
     const drawSeller = () => {
       const s = HP.seller(), nm = s ? s.name : '', ini = nm ? nm.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase() : '?';
-      avatar.textContent = ini; seller.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger');
+      avIni.textContent = ini; seller.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger');
       const sp = HP.shopProfile(); shopCrumb.textContent = sp.name ? sp.name : HP.shop() ? t('Shop ', 'Butik ') + HP.shop() : ''; shopCrumb.hidden = !shopCrumb.textContent;
     };
     drawSeller(); HP.on('seller', drawSeller);

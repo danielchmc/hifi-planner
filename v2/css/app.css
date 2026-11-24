@@ -1299,3 +1299,14 @@ h2 { font-size: 15px; }
 .kat-cats { scrollbar-width: auto; }
 @supports (-moz-appearance: none) { * { scrollbar-width: thin; scrollbar-color: var(--sb) transparent; } }
 .viewer, .vstage { --sb: rgba(255, 255, 255, .25); --sb-hover: rgba(255, 255, 255, .45); }
+/* Admin ▾: a shield and its name (the gear read as "settings", which is in the seller's menu); the name goes below 1300 px */
+#tb-admin { padding: 0 7px 0 6px; } #tb-admin .tb-dot { left: 18px; top: 5px; }
+@media (max-width: 1300px) { #tb-admin .tl { display: none; } }
+
+/* Lucide icons (js/core.js): drawn with round caps and joins, a little lighter than Lucide's default 2 so they sit well at 14–17 px */
+.ic { stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.fab .ic { stroke-width: 2.25; } #tb-drawer .ic { stroke-width: 2.25; }
+.tb-menu > .ic:last-child { stroke-width: 2; }
+/* the seller's initials: centred on the capitals, not on the font's line box (and no letter-spacing pushing them left) */
+.tb-av { letter-spacing: 0; font: 600 11px/1 var(--ui); }
+.tb-av b { display: block; font: inherit; text-box: trim-both cap alphabetic; }
