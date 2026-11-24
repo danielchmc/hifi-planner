@@ -1330,3 +1330,7 @@ h2 { font-size: 15px; }
 /* the seller's initials: a size smaller, so they sit inside the circle with air around them at any screen scaling */
 .tb-av { font-size: 10px; letter-spacing: .01em; }
 #ctxmenu .mav { font-size: 8px; }
+/* a button whose menu is open looks pressed, and pressing it again closes the menu */
+.tb-i[aria-expanded="true"], .tb-btn[aria-expanded="true"] { background: var(--panel2); }
+.tb-i.tb-menu[aria-expanded="true"] > .ic:last-child { opacity: 1; transform: rotate(180deg); }
+.tb-menu > .ic:last-child { transition: transform .15s var(--ease-out); }

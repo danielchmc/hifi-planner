@@ -336,7 +336,7 @@
     HP.loginNoticeShown = shown;
     HP.toast(t('Signed in as ', 'Logget ind som ') + x.name, { kind: 'ok' });
   };
-  const dropAt = (btn, items, right) => { const r = btn.getBoundingClientRect(); HP.menu(right ? r.right - 250 : r.left, r.bottom + 4, items); };
+  const dropAt = (btn, items, right) => { const r = btn.getBoundingClientRect(); HP.menu(right ? r.right - 250 : r.left, r.bottom + 4, items, btn); };
 
   /* everything in the top bar, as one menu, for phones */
   function moreMenu(btn) {
@@ -352,7 +352,7 @@
       { el: Pn.scaleStepper() },
       admin ? 'sep' : null, ...(admin ? adminItems() : []),
       'sep', ...sellerItems(), ...userItems().filter((x) => !x.head),
-    ].filter(Boolean));
+    ].filter(Boolean), btn);
   }
 
   /* The top bar, laid out like Figma's or Canva's: flat icon buttons, no boxes.

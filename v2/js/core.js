@@ -170,10 +170,13 @@
   };
 
   /* ---------- context menu ---------- */
-  HP.menu = (x, y, entries) => {
-    const old = document.getElementById('ctxmenu'); if (old) old.remove();
-    const close = () => { m.remove(); window.removeEventListener('pointerdown', outside, true); window.removeEventListener('keydown', key, true); window.removeEventListener('blur', close); window.removeEventListener('resize', close); };
-    const outside = (e) => { if (!m.contains(e.target)) close(); };
+  // anchor: the button that opened the menu. Pressing it again closes the menu (like any app's menus), and it shows as
+  // pressed (aria-expanded) while the menu is open.
+  HP.menu = (x, y, entries, anchor) => {
+    const old = document.getElementById('ctxmenu');
+    if (old) { const same = anchor && old._anchor === anchor; old._close ? old._close() : old.remove(); if (same) return; }
+    const close = () => { m.remove(); if (anchor) anchor.removeAttribute('aria-expanded'); window.removeEventListener('pointerdown', outside, true); window.removeEventListener('keydown', key, true); window.removeEventListener('blur', close); window.removeEventListener('resize', close); };
+    const outside = (e) => { if (!m.contains(e.target) && !(anchor && anchor.contains(e.target))) close(); };   // a press on the anchor is left to its click, which toggles
     const key = (e) => {
       const rows = [...m.querySelectorAll('button.mi:not(:disabled)')], i = rows.indexOf(document.activeElement);
       if (e.key === 'Escape') close();
@@ -188,6 +191,7 @@
       return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : '') + (e.accent ? '.accent' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
         e.swatch ? h('span.sw', { style: { background: e.swatch } }) : e.av ? h('span.mav', null, h('b', null, e.av)) : e.icon ? HP.icon(e.icon, 15) : h('span.ic'), h('span.ml', null, e.label), e.note ? h('span.mn', null, e.note) : e.key ? h('span.mk', null, e.key.split('+').map((k) => h('kbd', null, k))) : null);
     }));
+    m._anchor = anchor || null; m._close = close; if (anchor) anchor.setAttribute('aria-expanded', 'true');
     document.body.append(m);
     const r = m.getBoundingClientRect();
     m.style.left = Math.min(x, innerWidth - r.width - 6) + 'px';

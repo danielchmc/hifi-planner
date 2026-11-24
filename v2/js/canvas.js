@@ -220,7 +220,7 @@
       const f = document.querySelector('.item[data-id="' + id + '"] .mval'); if (f) return f.focus();
       const ms = [...new Set(METRES.concat(it.m ? [it.m] : []))].sort((a, b) => a - b);
       return HP.menu(at[0], at[1], [{ head: t('Metres', 'Meter') + ' · ' + HP.money(p.price) + ' / m' }].concat(ms.map((m) => ({ label: lenM(m) + '  ·  ' + HP.money(m * (p.price || 0)), on: (it.m || 1) === m,
-        fn: () => { it.m = m; HP.LS.set('cableLen', m); store.commit(); } }))));
+        fn: () => { it.m = m; HP.LS.set('cableLen', m); store.commit(); } }))), anchor);
     }
     const cur = cat.cableOpt(G, it.pid, it.len);
     HP.menu(at[0], at[1], [{ head: t('Length', 'Længde') }].concat(G.opts.map((o) => ({ label: o.label + '  ·  ' + HP.money(o.price) + (o.was > o.price ? '  (' + t('was ', 'før ') + HP.money(o.was) + ')' : ''), on: o === cur,
@@ -232,7 +232,7 @@
         const now = store.item(id); if (!now) return;
         if (o.lv) now.len = o.lv; else delete now.len;
         store.commit();
-      } }))));
+      } }))), anchor);
   };
 
   function priceRows() {
@@ -1383,7 +1383,7 @@
   C.colourMenu = (id, anchor, x, y) => {
     const it = store.item(id), p = it && cat.get(it.pid); if (!p || !(p.vars || []).length) return;
     const r = anchor ? anchor.getBoundingClientRect() : null;
-    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Variant', 'Variant') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: C.varStyle(p) === 'pill' ? null : HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))));
+    HP.menu(r ? r.left : x, r ? r.bottom + 4 : y, [{ head: t('Variant', 'Variant') }].concat(p.vars.map((v) => ({ label: v.label + '  ·  ' + HP.money(v.price) + (v.was ? '  (' + t('was ', 'før ') + HP.money(v.was) + ')' : ''), swatch: C.varStyle(p) === 'pill' ? null : HP.site.swatch(v), on: it.v === v.sku, fn: () => C.setVariant(id, v.sku) }))), anchor);
   };
   C.inspect = (id) => { const it = store.item(id); if (it && it.kind === 'product') HP.panels.viewer(it.pid, it.face || 0, (face) => { if ((it.face || 0) !== face) { it.face = face; store.commit(); } }, it); };
 

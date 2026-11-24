@@ -328,7 +328,7 @@
       onclick: (e) => { e.stopPropagation(); pickLen(G.opts.indexOf(x), e.target.closest('.kat-tile')); } }, h('span.swt', null, x.label))),
       G.opts.length > 4 ? h('button.sw.more', { title: t('All lengths', 'Alle længder'), onclick: (e) => {
         e.stopPropagation(); const tile = e.target.closest('.kat-tile'), r = e.currentTarget.getBoundingClientRect();
-        HP.menu(r.left, r.bottom + 4, [{ head: t('Length', 'Længde') }].concat(G.opts.map((x, i) => ({ label: x.label + '  ·  ' + HP.money(x.price), on: x === o, fn: () => pickLen(i, tile) }))));
+        HP.menu(r.left, r.bottom + 4, [{ head: t('Length', 'Længde') }].concat(G.opts.map((x, i) => ({ label: x.label + '  ·  ' + HP.money(x.price), on: x === o, fn: () => pickLen(i, tile) }))), e.currentTarget);
       } }, h('span.swt', null, '+' + (G.opts.length - 4))) : null) : null;
     const base = C().stripLen(p.name) || p.name;
     const el = tileShell(k, [pic, sw,
