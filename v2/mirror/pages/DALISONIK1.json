@@ -215,7 +215,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 156,
+     "availableQuantity": 146,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -381,7 +381,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 114,
+     "availableQuantity": 112,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -586,35 +586,6 @@
    {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 8997,
-     "priceFormatted": "8.997,-",
-     "priceBefore": 9697,
-     "priceBeforeFormatted": "9.697,-",
-     "priceSavingsFormatted": "700,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8997,
-     "unitPriceBefore": 9697
-    },
-    "image": "https://images.hifiklubben.com/image/dfc00708-ab13-4838-9f70-f90e5448bdb1",
-    "ribbons": [
-     {
-      "text": "Spar 7%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "DALI SONIK 1 + Bluesound POWERNODE EDGE (N230)",
-    "url": "/dalisonik1-blsn230/"
-   },
-   {
-    "modelType": "Stereosystem til TV",
-    "price": {
      "price": 6797,
      "priceFormatted": "6.797,-",
      "salesUnit": "System",
@@ -626,6 +597,21 @@
     "image": "https://images.hifiklubben.com/image/d4ed70f0-e4ff-4588-b599-7e2460e32eda",
     "title": "DALI SONIK 1 + Argon Audio SA1 MK2",
     "url": "/dalisonik1-argsa1mk2/"
+   },
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 8997,
+     "priceFormatted": "8.997,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8997,
+     "unitPriceBefore": 8997
+    },
+    "image": "https://images.hifiklubben.com/image/dfc00708-ab13-4838-9f70-f90e5448bdb1",
+    "title": "DALI SONIK 1 + Bluesound POWERNODE EDGE (N230)",
+    "url": "/dalisonik1-blsn230/"
    }
   ],
   "displayBookDemo": true,
@@ -734,15 +720,15 @@
      ]
     }
    },
-   "rating": 4.84158415841584,
-   "count": 101,
-   "reviewCount": 43,
+   "rating": 4.85046728971963,
+   "count": 107,
+   "reviewCount": 46,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 14,
-    "5": 86
+    "5": 92
    }
   },
   "displayDecadeWarranty": true,

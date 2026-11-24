@@ -81,9 +81,9 @@
     "DALIOBERON1",
     "DALIOPTICON2MK2",
     "DALIOPTICON1MK2",
-    "LYNGCS2",
     "DALIRUBIKORE2",
-    "BW706S3"
+    "BW706S3",
+    "LYNGCS2"
    ],
    "isOutlet": "false"
   },
@@ -153,12 +153,6 @@
    "url": "/hojtalere/kompakt-hojtaler/",
    "id": 69678
   },
-  "stockItemAlternative": {
-   "save": "1.698,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=DALISONIK3",
-   "availableQuantity": 1,
-   "lowestPrice": "3.998,-"
-  },
   "variants": [
    {
     "id": 270691,
@@ -218,7 +212,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 134,
+     "availableQuantity": 120,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -299,7 +293,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 40,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -389,7 +383,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 88,
+     "availableQuantity": 80,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -480,7 +474,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 50,
+     "availableQuantity": 48,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -525,23 +519,23 @@
   ],
   "bundleRelations": [
    {
-    "modelType": "Stereosystem til TV",
+    "modelType": "Pladespiller system",
     "price": {
-     "price": 10695,
-     "priceFormatted": "10.695,-",
-     "priceBefore": 11395,
-     "priceBeforeFormatted": "11.395,-",
-     "priceSavingsFormatted": "700,-",
+     "price": 18494,
+     "priceFormatted": "18.494,-",
+     "priceBefore": 20694,
+     "priceBeforeFormatted": "20.694,-",
+     "priceSavingsFormatted": "2.200,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 10695,
-     "unitPriceBefore": 11395
+     "unitPrice": 18494,
+     "unitPriceBefore": 20694
     },
-    "image": "https://images.hifiklubben.com/image/5b689830-a5f2-4364-a9f7-d45a9a29f7cf",
+    "image": "https://images.hifiklubben.com/image/4d7adb69-a9e2-40f8-b678-971f605cccbd",
     "ribbons": [
      {
-      "text": "Spar 6%",
+      "text": "Spar 11%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -550,8 +544,8 @@
       }
      }
     ],
-    "title": "DALI SONIK 3 + Bluesound POWERNODE EDGE (N230)",
-    "url": "/dalisonik3-blsn230/"
+    "title": "ARGTT4MK2 + BLSN331 + DALISONIK3",
+    "url": "/argtt4mk2-blsn331-dalisonik3/"
    },
    {
     "modelType": "Møbel med anlæg",
@@ -583,35 +577,6 @@
     "url": "/hith-dalisonik3-blsn331/"
    },
    {
-    "modelType": "Pladespiller system",
-    "price": {
-     "price": 19694,
-     "priceFormatted": "19.694,-",
-     "priceBefore": 20694,
-     "priceBeforeFormatted": "20.694,-",
-     "priceSavingsFormatted": "1.000,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 19694,
-     "unitPriceBefore": 20694
-    },
-    "image": "https://images.hifiklubben.com/image/4d7adb69-a9e2-40f8-b678-971f605cccbd",
-    "ribbons": [
-     {
-      "text": "Spar 1.000,-",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "ARGTT4MK2 + BLSN331 + DALISONIK3",
-    "url": "/argtt4mk2-blsn331-dalisonik3/"
-   },
-   {
     "modelType": "Stereosystem til TV",
     "price": {
      "price": 8495,
@@ -625,6 +590,21 @@
     "image": "https://images.hifiklubben.com/image/01b2ec85-e7fe-43b3-8759-fa4b86b8e6c7",
     "title": "DALI SONIK 3 + ARGON AUDIO SA1 MK2",
     "url": "/dalisonik3-argsa1mk2/"
+   },
+   {
+    "modelType": "Stereosystem til TV",
+    "price": {
+     "price": 10695,
+     "priceFormatted": "10.695,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 10695,
+     "unitPriceBefore": 10695
+    },
+    "image": "https://images.hifiklubben.com/image/5b689830-a5f2-4364-a9f7-d45a9a29f7cf",
+    "title": "DALI SONIK 3 + Bluesound POWERNODE EDGE (N230)",
+    "url": "/dalisonik3-blsn230/"
    }
   ],
   "displayBookDemo": true,
@@ -736,15 +716,15 @@
      ]
     }
    },
-   "rating": 4.88695652173913,
-   "count": 115,
-   "reviewCount": 50,
+   "rating": 4.88888888888889,
+   "count": 117,
+   "reviewCount": 51,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 13,
-    "5": 102
+    "5": 104
    }
   },
   "displayDecadeWarranty": true,
