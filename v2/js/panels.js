@@ -271,81 +271,118 @@
     if (on && !matchMedia('(pointer: coarse)').matches) setTimeout(() => { const s = document.getElementById('sb-search'); if (s) s.focus(); }, 200);
   };
 
-  /* everything in the top bar, as one menu, for screens where it does not fit */
+  /* ---------- top bar ----------
+     Fil ▾ (the proposal: new, rename, projects, share, page, print, project prices) · name · undo/redo · Tekst, Prisliste, Relaterede
+     produkter, CI · card size · Lag · Print | Admin ▾ (admins) · the seller ▾ (help, language, theme, settings, switch seller).
+     On phones everything is in ⋯ (moreMenu). */
+  Pn.toggleTheme = () => {
+    const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = d; LS.set('theme', d); HP.emit('theme');
+  };
+  const rename = () => { const d = store.doc, v = prompt(t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'), d.name || ''); if (v !== null) { d.name = v.trim(); store.commit(); } };
+  const flipPage = () => { const d = store.doc; d.orient = d.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); };
+  const fileItems = () => {
+    const d = store.doc;
+    return [
+      { label: t('New proposal (clear canvas)', 'Nyt tilbud (ryd lærredet)'), icon: 'eraser', fn: () => C().clearCanvas() },
+      { label: t('Rename…', 'Omdøb…'), icon: 'edit', fn: rename },
+      { label: t('Projects…', 'Projekter…'), icon: 'folder', note: t('save, open, export', 'gem, åbn, eksportér'), fn: Pn.projects },
+      'sep',
+      { label: t('Share link', 'Del link'), icon: 'link', key: 'Ctrl+Shift+S', fn: Pn.share },
+      { label: t('Print / PDF…', 'Print / PDF…'), icon: 'print', key: 'Ctrl+P', fn: () => HP.cover.dialog() },
+      { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: t('now ', 'nu ') + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
+      'sep',
+      { label: t('Project prices…', 'Projektpriser…'), icon: 'tag', note: Pn.priceSummary ? Pn.priceSummary() : '', fn: () => Pn.projectPrices() },
+      { label: t('Layers', 'Lag'), icon: 'layers', on: Pn.layersOpen && Pn.layersOpen(), key: 'Alt+1', fn: () => Pn.layers() },
+    ];
+  };
+  const adminItems = () => {
+    const n = cat.dirtyCount();
+    return [
+      { label: t('Product Editor', 'Produkt-editor'), icon: 'edit', fn: () => HP.editor.open() },
+      { label: t('Statistics', 'Statistik'), icon: 'chart', fn: () => Pn.stats() },
+      n ? 'sep' : null,
+      n ? { label: t('Publish', 'Udgiv') + ' (' + n + ')', icon: 'cloud', accent: true, note: t('to all shops', 'til alle butikker'), fn: () => HP.editor.publish() } : null,
+    ].filter(Boolean);
+  };
+  const userItems = () => {
+    const s = HP.seller(), dark = document.documentElement.dataset.theme === 'dark';
+    return [
+      s ? { head: s.name } : null,
+      { label: t('Help', 'Hjælp'), icon: 'help', fn: Pn.help },
+      { label: HP.lang() === 'da' ? 'English' : 'Dansk', icon: 'globe', fn: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } },
+      { label: dark ? t('Light theme', 'Lyst tema') : t('Dark theme', 'Mørkt tema'), icon: dark ? 'sun' : 'moon', key: 'F1', fn: Pn.toggleTheme },
+      { label: t('Settings', 'Indstillinger'), icon: 'gear', fn: Pn.settings },
+      'sep',
+      { label: t('Switch seller', 'Skift sælger'), icon: 'user', fn: () => Pn.switchSeller() },
+    ].filter(Boolean);
+  };
+  const dropAt = (btn, items, right) => { const r = btn.getBoundingClientRect(); HP.menu(right ? r.right - 250 : r.left, r.bottom + 4, items); };
+
+  /* everything in the top bar, as one menu, for phones */
   function moreMenu(btn) {
-    const r = btn.getBoundingClientRect(), d = store.doc, admin = HP.isAdmin(), s = HP.seller();
-    const rename = () => { const v = prompt(t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'), d.name || ''); if (v !== null) { d.name = v.trim(); store.commit(); } };
+    const d = store.doc, admin = HP.isAdmin();
+    const r = btn.getBoundingClientRect();
     HP.menu(r.right - 260, r.bottom + 4, [
       { head: d.name || t('Untitled proposal', 'Unavngivet tilbud') },
-      { label: t('Rename proposal…', 'Omdøb tilbud…'), icon: 'edit', fn: rename },
-      { label: t('Clear canvas', 'Ryd lærredet'), icon: 'eraser', fn: () => C().clearCanvas() },
+      ...fileItems(),
       'sep',
       { label: t('Text', 'Tekst'), icon: 'text', fn: () => C().addText() },
       { label: t('Price list', 'Prisliste'), icon: 'tag', on: C().hasPrices(), fn: () => C().togglePrices() },
       { label: t('CI mode', 'CI-tilstand'), icon: 'plan', on: !!d.ci, fn: () => C().setCI(!d.ci) },
       { el: Pn.scaleStepper() },
-      { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', fn: () => { d.orient = d.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } },
-      'sep',
-      { label: t('Share link', 'Del link'), icon: 'link', fn: Pn.share },
-      { label: t('Projects', 'Projekter'), icon: 'folder', fn: Pn.projects },
-      { label: t('Help', 'Hjælp'), icon: 'help', fn: Pn.help },
-      'sep',
-      admin && { label: t('Product Editor', 'Produkt-editor'), icon: 'edit', fn: () => HP.editor.open() },
-      admin && cat.dirtyCount() && { label: t('Publish', 'Udgiv') + ' (' + cat.dirtyCount() + ')', icon: 'cloud', fn: () => HP.editor.publish() },
-      admin && 'sep',
-      { label: HP.lang() === 'da' ? 'English' : 'Dansk', icon: 'globe', fn: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } },
-      { label: t('Light / dark', 'Lys / mørk'), icon: document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', fn: () => document.getElementById('tb-theme').click() },
-      { label: t('Settings', 'Indstillinger'), icon: 'gear', fn: Pn.settings },
-      { label: (s ? s.name + ' · ' : '') + t('switch seller', 'skift sælger'), icon: 'user', fn: () => Pn.switchSeller() },
+      admin ? 'sep' : null, ...(admin ? adminItems() : []),
+      'sep', ...userItems().filter((x) => !x.head),
     ].filter(Boolean));
   }
 
   function buildTopbar() {
     let sellerBtn;
-    const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: label + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
+    const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: ((opts && opts.tip) || label) + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
+    const menuBtn = (id, label, items, opts) => h('button.tbtn.menu' + ((opts && opts.cls) || ''), { id, title: (opts && opts.tip) || label, 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, items(), opts && opts.right) },
+      opts && opts.icon ? icon(opts.icon) : null, h('span.ml', null, label), icon('down', 12));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'),
       onchange: () => { store.doc.name = name.value.trim(); store.commit(); } });
     const scale = Pn.scaleStepper();
     const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
-    const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1 });
+    const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1, key: 'F3' });
     const ci = tb('tb-ci', 'plan', t('CI mode', 'CI-tilstand'), () => C().setCI(!store.doc.ci), { text: 1 });
     // "Relaterede produkter": cables for the connections without one and the website's accessories; the badge counts the connections without a cable
     const done = tb('tb-complete', 'plus', t('Related products', 'Relaterede produkter'), () => HP.complete.open(), { text: 1, cls: '.primary' }), doneN = h('span.badge');
     done.append(doneN);
     const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
-    const orient = h('button.tbtn#tb-orient', { title: t('Switch A4 portrait / landscape', 'Skift A4 stående / liggende'), onclick: () => { store.doc.orient = store.doc.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); } }, icon('rotate'), h('span'));
-    const publish = h('button.tbtn.publish#tb-publish', { onclick: () => HP.editor.publish() }, icon('cloud'), h('span'));
-    const adminBox = h('.tgroup.admin', null, tb('tb-editor', 'edit', t('Product Editor', 'Produkt-editor'), () => HP.editor.open(), { text: 1 }), tb('tb-stats', 'chart', t('Statistics', 'Statistik'), () => Pn.stats()), publish);
+    const layers = tb('tb-layers', 'layers', t('Layers', 'Lag'), () => Pn.layers(), { text: 1, key: 'Alt+1', tip: t('Layers: what is on the canvas', 'Lag: det, der er på lærredet') });
+    const admin = menuBtn('tb-admin', 'Admin', adminItems, { right: 1, icon: 'gear', tip: t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv') }), adminN = h('span.badge');
+    admin.insertBefore(adminN, admin.lastChild);
+    const file = menuBtn('tb-file', t('File', 'Fil'), fileItems, { tip: t('The proposal: new, projects, share, print, project prices', 'Tilbuddet: nyt, projekter, del, print, projektpriser') });
     const bar = h('header#topbar', null,
       h('button.tbtn#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus'), h('span', null, t('Products', 'Produkter'))),
       h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
+      h('.tgroup#tb-filegrp', null, file),
       name,
-      h('.tgroup#tb-edit', null, tb('tb-new', 'eraser', t('Clear canvas', 'Ryd lærredet'), () => C().clearCanvas()), undo, redo),
+      h('.tgroup#tb-edit', null, undo, redo),
       h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, done, ci),
       h('.tgroup#tb-scale', null, scale),
-      h('.tgroup#tb-printgrp', null, orient, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => HP.cover.dialog(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
+      h('.tgroup#tb-view', null, layers),
+      h('.tgroup#tb-printgrp', null, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => HP.cover.dialog(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
       h('.spacer'),
-      adminBox,
-      h('.tgroup#tb-sharegrp', null, tb('tb-share', 'link', t('Share link', 'Del link'), Pn.share, { text: 1, key: 'Ctrl+Shift+S' }), tb('tb-projects', 'folder', t('Projects', 'Projekter'), Pn.projects, { text: 1 }), tb('tb-help', 'help', t('Help', 'Hjælp'), Pn.help, { text: 1 })),
-      h('.tgroup#tb-prefs', null,
-        h('button.tbtn.lang', { title: t('Language', 'Sprog'), onclick: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } }, HP.lang() === 'da' ? 'DA' : 'EN'),
-        tb('tb-theme', document.documentElement.dataset.theme === 'dark' ? 'sun' : 'moon', t('Light / dark', 'Lys / mørk'), () => { const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = d; LS.set('theme', d); const b = document.getElementById('tb-theme'); b.replaceChild(icon(d === 'dark' ? 'sun' : 'moon'), b.firstChild); }),
-        tb('tb-settings', 'gear', t('Settings', 'Indstillinger'), Pn.settings)),
+      h('.tgroup.admin#tb-admingrp', null, admin),
       h('button.tbtn#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more')),
-      h('.tgroup#tb-sellergrp', null, (sellerBtn = h('button.tbtn#tb-seller', { title: t('Signed-in seller. Click to switch seller', 'Logget ind som sælger. Klik for at skifte sælger'), onclick: () => Pn.switchSeller() }, icon('user'), h('span')))));
-    const drawSeller = () => { const s = HP.seller(); sellerBtn.lastChild.textContent = s ? s.name.split(' ')[0] : t('Seller', 'Sælger'); sellerBtn.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Click to switch seller', 'Klik for at skifte sælger'); };
+      h('.tgroup#tb-sellergrp', null, (sellerBtn = h('button.tbtn.menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, icon('user'), h('span.ml'), icon('down', 12)))));
+    const drawSeller = () => { const s = HP.seller(); sellerBtn.querySelector('.ml').textContent = s ? s.name.split(' ')[0] : t('Seller', 'Sælger'); sellerBtn.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger'); };
     drawSeller(); HP.on('seller', drawSeller);
     const sync = () => {
       undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
+      layers.classList.toggle('on', !!(Pn.layersOpen && Pn.layersOpen()));
       if (document.activeElement !== name) name.value = store.doc.name || '';
-      orient.lastChild.textContent = 'A4 ' + (store.doc.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende'));
-      adminBox.hidden = !HP.isAdmin();
-      const n = cat.dirtyCount(); publish.hidden = !n; publish.lastChild.textContent = t('Publish', 'Udgiv') + ' (' + n + ')';
-      publish.title = t(n + ' unpublished change(s). Click to publish to all shops.', n + ' ikke-udgivne ændring(er). Klik for at udgive til alle butikker.');
+      bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
+      const n = cat.dirtyCount(); adminN.textContent = n || ''; adminN.hidden = !n;
+      admin.title = n ? t(n + ' unpublished change(s). Admin menu: publish to all shops.', n + ' ikke-udgivne ændring(er). Admin-menuen: udgiv til alle butikker.') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
+      file.classList.toggle('dot', !!(store.doc.pr && Pn.hasProjectPrices && Pn.hasProjectPrices()));
     };
-    HP.on('doc', sync); HP.on('catalog', sync); HP.on('admin', sync);
+    HP.on('doc', sync); HP.on('catalog', sync); HP.on('admin', sync); HP.on('layers', sync);
     setTimeout(sync);
     return bar;
   }
@@ -413,6 +450,7 @@
     root.append(buildTopbar(), h('#body', null, buildSidebar(), main));
     HP.canvas.init(main);
     main.prepend(buildCIBar()); // docked above the canvas
+    if (LS.get('layers', false) && !matchMedia('(max-width: 1024px)').matches) setTimeout(() => Pn.layers(true)); // Lag open last time
   };
 
   /* ---------- cable picker ---------- */
@@ -692,7 +730,7 @@
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
         h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
           [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Alt', 'K'], t('Open the Katalog', 'Åbn Katalog')],
-          [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
+          [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', '1'], t('Layers: what is on the canvas', 'Lag: det, der er på lærredet')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
           [['←↑↓→'], t('Nudge selection', 'Flyt markering')], [[t('Scroll', 'Scroll')], 'Zoom'], [[t('Middle button', 'Midterknap'), t('drag', 'træk')], t('Pan', 'Panorér')], [['Space', t('drag', 'træk')], t('Pan', 'Panorér')], [['Ctrl', 'S'], t('Projects', 'Projekter')], [['Ctrl', 'Shift', 'S'], t('Share link', 'Del link')], [['Ctrl', 'P'], 'Print / PDF'], [['Esc'], t('Cancel', 'Annullér')]]
           .map(([keys, label]) => h('.key', null, h('span', null, keys.map(k)), label))),
@@ -704,6 +742,192 @@
      Umami Cloud's free plan has no API, so the modal shows the website's share URL (Umami → the website → Edit → Share URL, with
      Realtime and Events ticked). The link is kept in this browser only (anyone with it can read the statistics). If Umami does
      not allow being shown inside another page, the frame stays empty: "Åbn i ny fane" opens the same page. */
+  /* ---------- Lag: what is on the canvas, like layers in Photoshop ----------
+     Topmost first. Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas,
+     right-click opens its menu, dragging a row up or down changes what lies on top. A CI mark letter is one row (all its marks).
+     Each product row has its price (click: Projektpriser), "in the price list" and delete. Alt+1 or Lag in the top bar. */
+  let layersEl = null;
+  Pn.layersOpen = () => !!(layersEl && !layersEl.hidden);
+  Pn.layers = (on) => {
+    if (!layersEl) buildLayers();
+    layersEl.hidden = on == null ? !layersEl.hidden : !on;
+    LS.set('layers', !layersEl.hidden);
+    if (!layersEl.hidden) drawLayers();
+    HP.emit('layers');
+  };
+  let drawLayers = () => {};
+  function buildLayers() {
+    const list = h('.ly-list'), count = h('span.ly-n');
+    const onlyProducts = h('input', { type: 'checkbox', checked: LS.get('layersProducts', false), onchange: () => { LS.set('layersProducts', onlyProducts.checked); drawLayers(); } });
+    layersEl = h('aside#layers', { hidden: true },
+      h('.ly-head', null, icon('layers', 15), h('b', null, t('Layers', 'Lag')), count, h('label.check.ly-only', { title: t('Show products only', 'Vis kun produkter') }, onlyProducts, h('span', null, t('Products', 'Produkter'))),
+        h('button.icon-btn.sm', { title: t('Close (Alt+1)', 'Luk (Alt+1)'), onclick: () => Pn.layers(false) }, icon('x', 14))),
+      list);
+    document.getElementById('main').append(layersEl);
+    let anchorRow = null, hover = null;
+    const KIND = { text: ['Text', 'Tekst', 'text'], prices: ['Price list', 'Prisliste', 'tag'], legend: ['Legend', 'Signaturforklaring', 'tag'], plan: ['Floor plan', 'Plantegning', 'plan'], zone: ['Room', 'Rum', 'page'], run: ['Cable run', 'Kabeltræk', 'cable'] };
+    drawLayers = () => {
+      if (!layersEl || layersEl.hidden) return;
+      const d = store.doc, rows = [], seenMk = new Set(), prices = C().priceRows();
+      const priceOfKey = new Map(prices.list.map((r) => [r.key, r]));
+      d.items.slice().reverse().forEach((it) => {
+        if (it.kind === 'mark') {
+          if (seenMk.has(it.k)) return; seenMk.add(it.k);
+          const all = d.items.filter((x) => x.kind === 'mark' && x.k === it.k), p = it.k[0] !== '@' && cat.get(it.k);
+          if (onlyProducts.checked && !p) return;
+          return rows.push({ ids: all.map((x) => x.id), it, mark: true, p, label: C().markTitle(it.k), qty: all.length, html: C().markHtml(it.k) });
+        }
+        if (it.kind === 'product') { const p = cat.get(it.pid); return rows.push({ ids: [it.id], it, p, label: p ? p.brand + ' ' + C().cardName(p, it) : it.pid }); }
+        if (onlyProducts.checked) return;
+        const k = KIND[it.kind] || ['Item', 'Element', 'page'];
+        const sub = it.kind === 'text' ? (it.title || it.body || '').split('\n')[0] : it.kind === 'zone' ? it.name || '' : '';
+        rows.push({ ids: [it.id], it, other: true, label: t(k[0], k[1]) + (sub ? ': ' + sub : ''), ic: k[2] });
+      });
+      const nProd = rows.filter((r) => r.p).reduce((n, r) => n + (r.mark ? r.qty : 1), 0);
+      count.textContent = nProd ? nProd + ' ' + t(nProd === 1 ? 'product' : 'products', nProd === 1 ? 'produkt' : 'produkter') : '';
+      list.textContent = '';
+      if (!rows.length) list.append(h('.ly-empty.muted', null, t('Nothing on the canvas yet.', 'Intet på lærredet endnu.')));
+      rows.forEach((r, i) => {
+        const it = r.it, p = r.p, sel = r.ids.every((id) => store.sel.has(id));
+        const v = p && !r.mark && HP.variantOf(p, it), key = p && !r.mark ? C().rowKeyOf(it) : p ? p.id + '|' : '', pr = key && priceOfKey.get(key);
+        const thumb = r.html ? h('span.ly-mk', { html: r.html }) : p ? HP.imgEl((HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', 'thumb') : icon(r.ic, 15);
+        const priced = p && !it.np;
+        const row = h('.ly-row' + (sel ? '.sel' : '') + (r.other ? '.other' : '') + (p && p.gone ? '.gone' : '') + (it.np ? '.np' : ''), { data: { i: String(i) }, draggable: false },
+          h('span.ly-grip', { title: t('Drag to change what lies on top', 'Træk for at ændre, hvad der ligger øverst') }, '⋮⋮'),
+          h('span.ly-th', null, thumb),
+          h('span.ly-name', { title: r.label + (p && (p.sku || C().skuOf(it)) ? ' · ' + (C().skuOf(it) || p.sku) : '') },
+            h('b', null, r.label), h('small', null, [r.mark ? r.qty + ' ' + t('marks', 'mærker') : null, v ? v.label : null, it.sy ? 'system' : null, p && p.gone ? t('discontinued', 'udgået') : null, it.np ? t('not priced', 'ikke i pris') : null].filter(Boolean).join(' · '))),
+          p && !r.mark ? h('button.ly-price' + (pr && pr.custom ? '.custom' : ''), { title: t('Project prices for this line', 'Projektpriser for denne linje'), onclick: (e) => { e.stopPropagation(); Pn.projectPrices(key); } }, priced && pr ? HP.money(pr.price) : '–') : h('span'),
+          p ? h('button.icon-btn.sm.ly-np' + (it.np ? '' : '.on'), { title: it.np ? t('Not in the price list: click to count it', 'Ikke i prislisten: klik for at tælle den med') : t('In the price list: click to leave it out', 'I prislisten: klik for at udelade den'),
+            onclick: (e) => { e.stopPropagation(); const on = !r.ids.every((id) => store.item(id).np); r.ids.forEach((id) => { const x = store.item(id); if (on) x.np = 1; else delete x.np; }); store.commit(); } }, icon('tag', 13)) : h('span'),
+          it.kind !== 'plan' ? h('button.icon-btn.sm.ly-del', { title: t('Delete', 'Slet'), onclick: (e) => { e.stopPropagation(); C().select(r.ids); C().deleteSelection(); } }, icon('trash', 13)) : h('span'));
+        row.addEventListener('click', (e) => {
+          if (e.target.closest('button')) return;
+          let ids = r.ids;
+          if (e.shiftKey && anchorRow != null) { const [a, b] = [Math.min(anchorRow, i), Math.max(anchorRow, i)]; ids = rows.slice(a, b + 1).flatMap((x) => x.ids); }
+          else if (e.ctrlKey || e.metaKey) { const cur = new Set(store.sel); const all = r.ids.every((id) => cur.has(id)); r.ids.forEach((id) => (all ? cur.delete(id) : cur.add(id))); ids = [...cur]; anchorRow = i; }
+          else anchorRow = i;
+          C().select(ids);
+        });
+        row.addEventListener('dblclick', (e) => { if (!e.target.closest('button')) C().zoomTo(r.ids); });
+        row.addEventListener('contextmenu', (e) => { e.preventDefault(); C().itemMenu(r.ids, e.clientX, e.clientY); });
+        row.addEventListener('pointerenter', () => { hover = r.ids; C().highlight(r.ids, true); });
+        row.addEventListener('pointerleave', () => { C().highlight(r.ids, false); hover = null; });
+        // drag a row up or down: what lies on top changes (the floor plan stays at the bottom)
+        row.querySelector('.ly-grip').addEventListener('pointerdown', (e) => {
+          if (it.kind === 'plan') return;
+          e.preventDefault(); const sy = e.clientY, rowsEl = [...list.querySelectorAll('.ly-row')], line = h('.ly-drop'); let to = null;
+          row.classList.add('dragging'); list.append(line);
+          const mv = (ev) => {
+            const y = ev.clientY; to = rowsEl.length; for (let k = 0; k < rowsEl.length; k++) { const b = rowsEl[k].getBoundingClientRect(); if (y < b.top + b.height / 2) { to = k; break; } }
+            const ref = rowsEl[Math.min(to, rowsEl.length - 1)].getBoundingClientRect(), lb = list.getBoundingClientRect();
+            line.style.top = (to < rowsEl.length ? ref.top : ref.bottom) - lb.top + list.scrollTop - 1 + 'px'; line.hidden = Math.abs(y - sy) < 4;
+          };
+          const up = () => {
+            window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); row.classList.remove('dragging'); line.remove();
+            if (to == null || to === i || to === i + 1) return;
+            // the list is topmost first: moving row i to position "to" (before row "to") = above rows[to] in the stack
+            const movers = r.ids.map((id) => store.item(id)), items = store.doc.items.filter((x) => !movers.includes(x));
+            const above = rows[to] && rows[to].ids[0] && store.item(rows[to].ids[0]); // goes just above this one (later in d.items)
+            let at = above ? items.indexOf(above) + 1 : 0;
+            const plan = items.findIndex((x) => x.kind === 'plan'); if (plan >= 0 && at <= plan) at = plan + 1;
+            if (!above) at = Math.max(at, plan + 1);
+            items.splice(at, 0, ...movers); store.doc.items = items; store.commit();
+          };
+          window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up);
+        });
+        list.append(row);
+      });
+      if (hover) C().highlight(hover, true);
+      const s = list.querySelector('.ly-row.sel'); if (s && !layersEl.contains(document.activeElement)) s.scrollIntoView({ block: 'nearest' });
+    };
+    HP.on('doc', drawLayers); HP.on('sel', drawLayers); HP.on('catalog', drawLayers);
+  }
+
+  /* ---------- project prices ----------
+     Prices and discounts for this proposal only (d.pr; the catalogue is not touched), with Business Central's POS actions:
+     Ændr pris (the line's unit price), Linjerabatbeløb (kr off the line), Total rabatbeløb / Total rabat % (off the whole proposal,
+     one or the other), Nulstil rabatter (back to the website's prices). Every change is applied at once and is one Undo step.
+     The price list, the cover, the customer's page and the order lines (CSV) follow (C.applyPr in js/canvas.js). */
+  Pn.hasProjectPrices = () => HP.hasPr(store.doc.pr);
+  Pn.priceSummary = () => { if (!Pn.hasProjectPrices()) return ''; const r = C().priceRows(), off = r.list.reduce((s, x) => s + x.list * x.qty, 0) - r.total; return off > 0 ? '−' + HP.money(off) : t('changed', 'ændret'); };
+  Pn.projectPrices = (focusKey) => {
+    const d = store.doc;
+    const pr = () => (d.pr = d.pr || { l: {} }, d.pr.l = d.pr.l || {}, d.pr);
+    const num = (v) => { const s = String(v).trim().replace(/\s|kr\.?|,-/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.'); return s === '' ? null : +s; };
+    const fmt = (n) => (n == null ? '' : String(Math.round(n * 100) / 100).replace('.', ','));
+    const tidy = () => { const p = d.pr; if (!p) return; Object.keys(p.l || {}).forEach((k) => { const o = p.l[k]; if (!o || (o.p == null && !o.d)) delete p.l[k]; }); if (!HP.hasPr(p)) delete d.pr; };
+    const commit = () => { tidy(); store.commit(); draw(); };
+    let selKey = focusKey || null, refocus = null;
+    const table = h('.pp-lines'), sum = h('.pp-sum');
+    const tile = (label, sub, fn, cls) => h('button.pp-act' + (cls || ''), { onclick: fn }, h('b', null, label), h('span', null, sub));
+    const focusIn = (sel) => { const el = body.querySelector(sel); if (el) { el.focus(); el.select && el.select(); } };
+    const needLine = (what) => { if (!selKey) { HP.toast(t('Click a line first', 'Klik først på en linje'), { kind: 'warn' }); return false; } focusIn('.pp-row[data-key="' + CSS.escape(selKey) + '"] input.' + what); return true; };
+    const acts = h('.pp-acts', null,
+      tile(t('Line Discount Amount', 'Linjerabatbeløb'), t('kr off the selected line', 'kr. af den valgte linje'), () => needLine('ld')),
+      tile(t('Total Disc Amount', 'Total rabatbeløb'), t('kr off the whole proposal', 'kr. af hele tilbuddet'), () => focusIn('input.ta')),
+      tile(t('Total Discount %', 'Total rabat %'), t('% off the whole proposal', '% af hele tilbuddet'), () => focusIn('input.tp')),
+      tile(t('Reset Discounts', 'Nulstil rabatter'), t('back to the website prices', 'tilbage til hjemmesidens priser'), () => {
+        if (!Pn.hasProjectPrices()) return;
+        if (!confirm(t('Remove all project prices and discounts from this proposal?', 'Fjern alle projektpriser og rabatter fra tilbuddet?'))) return;
+        delete d.pr; commit(); HP.toast(t('Back to the website prices', 'Tilbage til hjemmesidens priser'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: () => { store.undo(); draw(); } } });
+      }, '.reset'),
+      tile(t('Change Price', 'Ændr pris'), t('unit price of the selected line', 'enhedspris på den valgte linje'), () => needLine('up')));
+    const field = (cls, value, ph, onset, opts) => {
+      const inp = h('input.' + cls, { type: 'text', inputMode: 'decimal', value: value == null ? '' : fmt(value), placeholder: ph, title: (opts && opts.title) || '',
+        onfocus: (e) => { e.target.select(); if (opts && opts.key) selectRow(opts.key); },
+        onkeydown: (e) => {
+          if (e.key === 'Enter') { e.preventDefault(); refocus = opts && opts.next ? opts.next(e.shiftKey ? -1 : 1) : null; e.target.blur(); }
+          else if (e.key === 'Escape') { e.stopPropagation(); e.target.value = value == null ? '' : fmt(value); e.target.blur(); }
+        },
+        onblur: (e) => { const v = num(e.target.value); if ((v == null ? null : v) === (value == null ? null : value)) { if (refocus) { const r = refocus; refocus = null; focusIn(r); } return; } if (v != null && (isNaN(v) || v < 0)) { e.target.value = value == null ? '' : fmt(value); return HP.toast(t('Not a valid amount', 'Ikke et gyldigt beløb'), { kind: 'err' }); } onset(v); } });
+      return inp;
+    };
+    const selectRow = (k) => { selKey = k; table.querySelectorAll('.pp-row').forEach((r) => r.classList.toggle('sel', r.dataset.key === k)); };
+    function draw() {
+      const R = C().priceRows(), L = (d.pr && d.pr.l) || {}, keys = R.list.map((r) => r.key);
+      if (selKey && !keys.includes(selKey)) selKey = null;
+      const nextOf = (k, cls) => (dir) => { const i = keys.indexOf(k) + dir; return i >= 0 && i < keys.length ? '.pp-row[data-key="' + CSS.escape(keys[i]) + '"] input.' + cls : null; };
+      const active = document.activeElement && body.contains(document.activeElement) ? document.activeElement : null;
+      const keep = active && active.closest('.pp-row') ? '.pp-row[data-key="' + CSS.escape(active.closest('.pp-row').dataset.key) + '"] input.' + active.className : active && active.classList.contains('ta') ? 'input.ta' : active && active.classList.contains('tp') ? 'input.tp' : null;
+      table.textContent = '';
+      table.append(h('.pp-row.head', null, h('span'), h('span', null, t('Product', 'Produkt')), h('span.n', null, t('Qty', 'Antal')), h('span.n', null, t('Website', 'Hjemmeside')),
+        h('span.n', null, t('Unit price', 'Enhedspris')), h('span.n', null, t('Line discount', 'Linjerabat')), h('span.n', null, t('Amount', 'Beløb')), h('span')));
+      if (!R.list.length) table.append(h('.muted.pp-empty', null, t('No products in the price list yet.', 'Ingen produkter i prislisten endnu.')));
+      R.list.forEach((r) => {
+        const o = L[r.key] || {}, unit = r.cableM ? ' / m' : '';
+        const row = h('.pp-row' + (r.custom ? '.custom' : '') + (r.key === selKey ? '.sel' : ''), { data: { key: r.key }, onclick: (e) => { if (!e.target.closest('input, button')) selectRow(r.key); } },
+          h('span.pp-img', null, r.img ? HP.imgEl(r.img, 'thumb') : null),
+          h('span.pp-name', null, h('b', null, r.name), h('small', null, (r.sku || '') + (r.sys ? ' · system' : ''))),
+          h('span.n', null, r.cableM ? r.qty + ' m' : r.qty),
+          h('span.n.muted', { title: r.base > r.list ? t('Before price ', 'Førpris ') + HP.money(r.base) : '' }, r.base > r.list ? h('s', null, HP.money(r.base)) : null, HP.money(r.list) + unit),
+          h('span.n', null, field('up', o.p != null ? o.p : null, fmt(r.list), (v) => { const l = pr().l; l[r.key] = Object.assign({}, l[r.key], { p: v == null || v === r.list ? undefined : v }); if (l[r.key].p === undefined) delete l[r.key].p; commit(); },
+            { key: r.key, next: nextOf(r.key, 'up'), title: t('Unit price for this proposal (empty: the website price)', 'Enhedspris i dette tilbud (tom: hjemmesidens pris)') })),
+          h('span.n', null, field('ld', o.d || null, '0', (v) => { const l = pr().l, gross = (o.p != null ? o.p : r.list) * r.qty; if (v > gross) { v = gross; HP.toast(t('The discount is limited to the line amount', 'Rabatten er begrænset til linjens beløb'), { kind: 'warn' }); } l[r.key] = Object.assign({}, l[r.key], { d: v || undefined }); if (!l[r.key].d) delete l[r.key].d; commit(); },
+            { key: r.key, next: nextOf(r.key, 'ld'), title: t('Kroner off this line', 'Kroner af denne linje') })),
+          h('span.n.amt', null, r.was ? h('s', null, HP.money(r.base * r.qty)) : null, HP.money(r.amount)),
+          h('span', null, r.custom ? h('button.icon-btn.sm', { title: t('Back to the website price for this line', 'Tilbage til hjemmesidens pris for linjen'), onclick: () => { delete pr().l[r.key]; commit(); } }, icon('undo', 13)) : null));
+        table.append(row);
+      });
+      const p = d.pr || {};
+      sum.textContent = '';
+      sum.append(
+        h('.pp-srow', null, h('span', null, t('Subtotal', 'Subtotal')), h('b', null, HP.money(R.sub))),
+        h('.pp-srow.pp-tot', null, h('span', null, t('Total discount', 'Total rabat')),
+          h('label', null, field('ta', p.ta || null, '0', (v) => { const q = pr(); if (v > R.sub) { v = R.sub; HP.toast(t('The discount is limited to the subtotal', 'Rabatten er begrænset til subtotalen'), { kind: 'warn' }); } q.ta = v || undefined; if (q.ta) delete q.tp; else delete q.ta; commit(); }, { title: t('Kroner off the whole proposal', 'Kroner af hele tilbuddet') }), ' kr.'),
+          h('span.muted', null, t('or', 'eller')),
+          h('label', null, field('tp', p.tp && !p.ta ? p.tp : null, '0', (v) => { const q = pr(); if (v > 100) v = 100; q.tp = v || undefined; if (q.tp) delete q.ta; else delete q.tp; commit(); }, { title: t('Percent off the whole proposal', 'Procent af hele tilbuddet') }), ' %'),
+          h('b', null, R.tdisc ? '−' + HP.money(R.tdisc) : '')),
+        h('.pp-srow.big', null, h('span', null, 'Total'), h('b', null, HP.money(R.total))),
+        R.saving > 0 ? h('.pp-srow.pp-save', null, h('span', null, t('The customer saves', 'Kunden sparer')), h('b', null, HP.money(R.saving))) : null);
+      if (keep) setTimeout(() => focusIn(keep));
+    }
+    const body = h('.pp', null, h('p.muted.pp-intro', null, t('For this proposal only: the catalogue prices are not changed. The price list, the cover, the customer\'s page and the order lines follow.', 'Kun for dette tilbud: katalogets priser ændres ikke. Prislisten, forsiden, kundens side og ordrelinjerne følger med.')), acts, table, sum);
+    draw();
+    const close = HP.modal({ title: t('Project prices', 'Projektpriser'), size: 'lg', body, foot: [h('button.btn.primary', { onclick: () => close() }, t('Done', 'Færdig'))] });
+    if (focusKey) setTimeout(() => focusIn('.pp-row[data-key="' + CSS.escape(focusKey) + '"] input.up'), 60);
+  };
+
   Pn.stats = () => {
     const url = () => LS.get('umamiShare', '');
     const body = h('.stats-body'), input = h('input', { type: 'url', placeholder: 'https://cloud.umami.is/share/…', value: url() });

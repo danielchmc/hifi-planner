@@ -10,7 +10,7 @@
     const C = HP.canvas, mod = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
     if (mod && k === 'z' && !typing) { e.preventDefault(); return e.shiftKey ? store.redo() : store.undo(); }
     if (mod && k === 'y' && !typing) { e.preventDefault(); return store.redo(); }
-    if (e.key === 'F1') { e.preventDefault(); return document.getElementById('tb-theme').click(); } // same hotkeys as the old planner
+    if (e.key === 'F1') { e.preventDefault(); return HP.panels.toggleTheme(); } // same hotkeys as the old planner
     if (e.key === 'F3') { e.preventDefault(); return C.togglePrices(); }
     if (e.key === 'F4') { e.preventDefault(); return HP.cover.dialog(); }
     if (mod && e.shiftKey && k === 's') { e.preventDefault(); return HP.panels.share(); }
@@ -29,6 +29,7 @@
       const c = e.code, act = {
         KeyK: () => HP.katalog.open(), // the Katalog (K in both languages)
         KeyT: () => C.addText(),
+        Digit1: () => HP.panels.layers(), // Lag: the products on the canvas
         KeyB: () => one && C.flip(one.id),
         KeyC: () => { if (one && one.kind === 'product') { const el = document.querySelector('.item[data-id="' + one.id + '"]'), r = el && el.getBoundingClientRect(); const p = HP.catalog.get(store.item(one.id).pid), fn = p && !(p.vars || []).length && HP.catalog.hasLengths(p) ? C.lengthMenu : C.colourMenu; fn(one.id, null, r ? r.left : 200, r ? r.top + 40 : 200); } },
         KeyI: () => one && C.inspect(one.id),

@@ -240,7 +240,7 @@
     const add = (p, cable, it, perM) => {
       if (!p) return;
       const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || ''), vv = HP.variantOf(p, it);
-      const r = rows.get(key) || { name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), img: (HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
+      const r = rows.get(key) || { key, name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), img: (HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
       if (perM) { r.cableM = true; r.name = p.brand + ' ' + (stripLen(p.name) || p.name); } // sold by the metre: qty is metres
       r.qty++; rows.set(key, r);
     };
@@ -257,7 +257,7 @@
       let parts = 0;
       b.parts.forEach((x) => { const its = pool.filter((it) => it.pid === x.id && !used.has(it.id)).slice(0, x.qty * n); its.forEach((it) => { used.add(it.id); parts += HP.priceOf(cat.get(it.pid), it).price; }); sysHave[x.id] = (sysHave[x.id] || 0) + its.length; });
       const each = parts / n, was = Math.max(each, b.was || 0);
-      rows.set('sys|' + sku, { name: cat.systemName(b), url: b.url ? 'https://www.hifiklubben.dk' + b.url : '', sku, price: b.price, was: was > b.price ? Math.round(was) : 0, qty: n, cable: false, sys: true,
+      rows.set('sys|' + sku, { key: 'sys|' + sku, name: cat.systemName(b), url: b.url ? 'https://www.hifiklubben.dk' + b.url : '', sku, price: b.price, was: was > b.price ? Math.round(was) : 0, qty: n, cable: false, sys: true,
         parts: b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · ') });
     });
     // items with np ("not priced") are left out, e.g. a diagram card that only explains the wiring
@@ -282,8 +282,45 @@
     });
     cableRows().forEach((r) => { if (r.k && d.sc) for (let i = 0; i < r.qty; i++) add(cat.get(r.k), true); });
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
-    return { list, total: list.reduce((s, r) => s + r.price * r.qty, 0), saving: list.reduce((s, r) => s + (r.was ? (r.was - r.price) * r.qty : 0), 0) };
+    return applyPr(list, d.pr);
   }
+  /* Project prices (d.pr, set in Projektpriser; for this proposal only, the catalogue is not touched), as in Business Central:
+       l[key].p  Change Price: the line's unit price          l[key].d  Line Discount Amount: kr off the line
+       ta        Total Disc Amount: kr off the whole proposal tp        Total Discount %: % off the whole proposal (one or the other)
+     Every line gets: list (the website's unit price), base (its before-price: the website's FØR price, else the list price),
+     amount (the line's amount after its own price and discount), and tshare (its share of a total discount, spread over the lines
+     by amount, rounded to whole kroner, the remainder on the largest line: what an order line in Business Central gets).
+     price stays the unit price shown; was is set when the customer pays less than the before-price (so "Spar x %" shows). */
+  function applyPr(list, pr) {
+    const L = (pr && pr.l) || {};
+    list.forEach((r) => {
+      const o = L[r.key] || {};
+      r.list = r.price; r.base = Math.max(r.was || 0, r.price);
+      if (o.p != null && o.p >= 0) { r.price = o.p; r.custom = true; }
+      r.ldisc = Math.max(0, Math.min(o.d || 0, r.price * r.qty)); if (r.ldisc) r.custom = true;
+      r.amount = r.price * r.qty - r.ldisc;
+      r.was = r.amount < r.base * r.qty ? r.base : 0;
+    });
+    const sub = list.reduce((s, r) => s + r.amount, 0);
+    let tdisc = pr ? (pr.ta ? pr.ta : pr.tp ? Math.round(sub * pr.tp / 100) : 0) : 0;
+    tdisc = Math.max(0, Math.min(tdisc, sub));
+    list.forEach((r) => { r.tshare = 0; });
+    if (tdisc && sub) {
+      let left = tdisc;
+      list.forEach((r) => { r.tshare = Math.floor(tdisc * r.amount / sub); left -= r.tshare; });
+      const big = list.reduce((a, b) => (b.amount > a.amount ? b : a), list[0]); big.tshare += left;
+    }
+    const total = sub - tdisc, before = list.reduce((s, r) => s + r.base * r.qty, 0);
+    return { list, sub, tdisc, tpct: pr && pr.tp && !pr.ta ? pr.tp : 0, total, saving: Math.max(0, before - total), custom: !!tdisc || list.some((r) => r.custom) };
+  }
+  C.applyPr = applyPr;
+  // the price-list line a card is counted on (its key in d.pr.l)
+  C.rowKeyOf = (it) => {
+    const p = it && cat.get(it.pid); if (!p) return '';
+    if (it.sy && C.priceRows().list.some((r) => r.key === 'sys|' + it.sy)) return 'sys|' + it.sy;
+    if (it.m && cat.isPerMetre(p)) return p.id + '|';
+    return p.id + '|' + (HP.priceOf(p, it).label || '');
+  };
   C.priceRows = priceRows;
 
   function buildItem(it) {
@@ -321,16 +358,19 @@
         !it.noBody && edit('.note-body', 'body', t('Write something…', 'Skriv noget…')), h('i.resize.no-print'));
     }
     if (it.kind === 'prices') {
-      const { list, total, saving } = priceRows();
-      const pct = (r) => Math.round((1 - r.price / r.was) * 100);
+      const { list, total, saving, sub, tdisc, tpct } = priceRows();
+      const pct = (r) => Math.round((1 - r.amount / (r.was * r.qty)) * 100);
       // rooms drawn in CI mode: what each room gets (marks and product cards inside it), with a subtotal (cables are not tied to a room)
       const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
-      return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser')),
+      return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser'),
+          h('button.pl-pp.no-print', { title: t('Project prices: change prices and give discounts for this proposal', 'Projektpriser: ændr priser og giv rabat i dette tilbud'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.panels.projectPrices() }, icon('tag', 12), t('Prices', 'Priser'))),
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.cableM ? r.qty + ' m' : r.qty > 1 ? r.qty + '×' : ''),
           h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null, r.sys ? h('.sysparts', null, r.parts) : null),
-          h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.price * r.qty))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
+          h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.amount))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
+        tdisc ? h('.prices-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('span', null, HP.money(sub))) : null,
+        tdisc ? h('.prices-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('span', null, '−' + HP.money(tdisc))) : null,
         h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()),
@@ -673,6 +713,17 @@
     renderWires(); placeBar(); HP.emit('sel');
   }
   C.select = (ids) => { store.sel = new Set(ids); store.selConn = null; refreshSel(); };
+  // for the Lag panel: bring items into view (zoomed in to at least 60 %, or out so they fit), outline one, open an item's menu
+  C.zoomTo = (ids) => {
+    const its = [].concat(ids).map((id) => store.item(id)).filter(Boolean); if (!its.length) return;
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    its.forEach((it) => { const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + (g.w || 40)); y1 = Math.max(y1, it.y + (g.h || 40)); });
+    const r = vp.getBoundingClientRect(), pad = 80, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0), Math.max(view.z, 0.6)), 0.15, 1.5);
+    view.z = z; view.x = r.width / 2 - ((x0 + x1) / 2) * z; view.y = r.height / 2 - ((y0 + y1) / 2) * z;
+    applyView();
+  };
+  C.highlight = (ids, on) => { [].concat(ids || []).forEach((id) => { const el = els.get(id); if (el) el.classList.toggle('hl', !!on); }); };
+  C.itemMenu = (ids, x, y) => { store.sel = new Set([].concat(ids)); store.selConn = null; refreshSel(); menuAt(x, y, false); };
 
   /* ================= pointer interactions ================= */
   /* One pointer drag. Touch: a larger dead zone, an optional long-press (onLong, fired after ~0.5 s without moving),
@@ -1344,6 +1395,7 @@
         if (full && HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
         add(t('Related products…', 'Relaterede produkter…'), '', 'plus', () => HP.complete.open({ pid: p.id }), { accent: true });
         if (sku) add(t('Copy item no.', 'Kopiér varenr.'), '', 'copy', () => HP.copyText(sku, t('Item number copied: ', 'Varenr. kopieret: ') + sku), { note: sku });
+        if (!one.np) { const k = C.rowKeyOf(one), r = C.priceRows().list.find((q) => q.key === k); add(t('Change price…', 'Ændr pris…'), '', 'tag', () => HP.panels.projectPrices(k), { note: r ? HP.money(r.price) + (r.custom ? ' •' : '') : '' }); }
         if (full && admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
       if (one && one.kind === 'mark' && one.k[0] !== '@') {

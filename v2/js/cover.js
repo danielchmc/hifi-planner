@@ -19,8 +19,8 @@
 
   // the cover itself: also used, without the QR code, at the top of the customer view ({ view: true })
   function build(o) {
-    const d = store.doc, cv = d.cv || {}, sh = cv.sh || [], { list, total, saving } = C().priceRows();
-    const pct = (r) => Math.round((1 - r.price / r.was) * 100);
+    const d = store.doc, cv = d.cv || {}, sh = cv.sh || [], { list, total, saving, sub, tdisc, tpct } = C().priceRows();
+    const pct = (r) => Math.round((1 - r.amount / (r.was * r.qty)) * 100);
     return h('.cover', null,
       h('.cv-head', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('.cv-meta', null, h('b', null, t('Proposal', 'Tilbud')), h('span', null, o && o.view ? longDate(cv.d) : cv.d || HP.today()))),
       h('.cv-title', null, h('h1', null, d.name || t('Your proposal', 'Dit tilbud')), cv.c ? h('p', null, t('For ', 'Til ') + cv.c) : null),
@@ -28,7 +28,9 @@
         o && o.view ? h('td.th', null, r.img ? HP.imgEl(r.img, 'thumb', { loading: 'lazy' }) : null) : null,
         h('td.q', null, r.qty + (r.cableM ? ' m' : '×')),
         h('td', null, r.url ? h('a.nm', { href: r.url, target: '_blank', rel: 'noopener' }, r.name, h('span.cv-go', null, ' ↗')) : h('span.nm', null, r.name), r.sys ? h('small', null, r.parts) : null, r.was ? h('em', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
-        h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.price * r.qty)))))),
+        h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.amount)))))),
+      tdisc ? h('.cv-total.cv-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('b', null, HP.money(sub))) : null,
+      tdisc ? h('.cv-total.cv-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('b', null, '−' + HP.money(tdisc))) : null,
       h('.cv-total', null, h('span', null, 'Total'), h('b', null, HP.money(total))),
       saving > 0 ? h('.cv-saving', null, h('span', null, t('You save', 'Du sparer')), h('b', null, HP.money(saving))) : null,
       h('.cv-foot', null,
@@ -86,12 +88,16 @@
 
   /* ---------- order lines ---------- */
   function csv() {
-    const { list, total } = C().priceRows(), d = store.doc, cv = d.cv || {};
+    const { list, total, tdisc } = C().priceRows(), d = store.doc, cv = d.cv || {};
     const num = (n) => (Math.round(n * 100) / 100).toFixed(2).replace('.', ',');
     const cell = (v) => { const s = String(v == null ? '' : v); return /[;"\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-    const rows = [['Varenr', 'Beskrivelse', 'Antal', 'Enhed', 'Enhedspris', 'Førpris', 'Rabat %', 'Beløb']];
-    list.forEach((r) => rows.push([r.sku || '', r.name, r.qty, r.cableM ? 'm' : (r.sys ? 'system' : 'stk'), num(r.price), r.was ? num(r.was) : '', r.was ? Math.round((1 - r.price / r.was) * 100) : '', num(r.price * r.qty)]));
-    rows.push(['', 'Total', '', '', '', '', '', num(total)]);
+    // as a Business Central sales line: unit price (the website's, or the one set in Projektpriser) and a line discount amount, which
+    // includes the line's share of a total discount, so the lines add up to the total
+    const rows = [['Varenr', 'Beskrivelse', 'Antal', 'Enhed', 'Førpris', 'Enhedspris', 'Linjerabat beløb', 'Linjerabat %', 'Beløb']];
+    list.forEach((r) => { const ld = r.ldisc + r.tshare, gross = r.price * r.qty;
+      rows.push([r.sku || '', r.name, r.qty, r.cableM ? 'm' : (r.sys ? 'system' : 'stk'), r.was ? num(r.was) : '', num(r.price), ld ? num(ld) : '', ld && gross ? num(ld / gross * 100) : '', num(gross - ld)]); });
+    rows.push(['', 'Total', '', '', '', '', '', '', num(total)]);
+    if (tdisc) rows.push(['', '# Heraf totalrabat ' + num(tdisc) + ' kr., fordelt på linjerne efter beløb', '', '', '', '', '', '', '']);
     const head = ['# ' + (d.name || 'Tilbud') + (cv.c ? ' · ' + cv.c : '') + ' · ' + (cv.s || '') + ' · ' + (cv.d || HP.today())];
     const text = '﻿' + head.concat(rows.map((r) => r.map(cell).join(';'))).join('\r\n') + '\r\n';
     const a = h('a', { href: URL.createObjectURL(new Blob([text], { type: 'text/csv;charset=utf-8' })), download: ((d.name || 'tilbud') + ' ' + HP.today()).replace(/[^\wæøåÆØÅ .-]+/g, '').trim() + '.csv' });

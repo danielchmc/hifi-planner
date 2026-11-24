@@ -215,7 +215,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-0930`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-1900`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -229,6 +229,40 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
 A wire's cable label sits on the wire where it takes the least room (`placeChip` in `js/canvas.js`, since 2026-11-24): on the longest horizontal stretch of the wire it fits on (8 units clear of the bends), else turned 90° on a vertical stretch, reading upwards (`.chip.vert`), else across the middle of the wire as before. A label slides along its stretch to stay clear of labels already placed. It is the same on screen, in the PDF and in the customer view.
 
 **Moving a label by hand:** drag the label along its wire, anywhere from one end to the other (its edge stops 4 units from the ports, so it never covers the port names); on a vertical stretch it turns, on a horizontal one it lies flat. It is kept as a point along the wire (`lp`, 0–1 of the wire's length), so it follows the wire when cards move; Undo, share links (10th field of a connection) and Shortcuts keep it. A click without moving still opens the cable picker. Right-click → *Placér kabelnavn automatisk* puts it back. Automatic labels keep clear of labels placed by hand.
+
+## Top bar (since 2026-11-24)
+
+**Fil ▾** · the proposal's name · undo/redo · Tekst, Prisliste, **Relaterede produkter**, CI-tilstand · Kort (card size) · **Lag** · **Print / PDF**, and on the right **Admin ▾** (admins only; a badge counts unpublished changes) and **the seller's name ▾**.
+
+- **Fil:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Projektpriser…, Lag. A dot on Fil means the proposal has project prices.
+- **Admin:** Produkt-editor, Statistik, Udgiv (n).
+- **The seller:** Hjælp, English/Dansk, Lyst/Mørkt tema (F1), Indstillinger, Skift sælger.
+- It fits from 1100 px: text labels go first (Lag, CI, then Prisliste, Tekst and Print, then Relaterede produkter), the menus keep theirs. Up to 1024 px (iPad portrait, phones) everything is in ⋯ as before. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`.
+
+## Lag (layers)
+
+**Lag** in the top bar, Fil → Lag or **Alt+1** opens a panel on the right of the canvas with everything on it, topmost first, like layers in Photoshop (remembered per browser). Product rows show the picture, name, variant and price; other items (text, price list, legend, rooms, cable runs, the floor plan) are greyed rows, or hidden with **Produkter** ticked; a CI mark letter is one row for all its marks.
+
+- Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas, right-click opens its menu.
+- Drag a row by its grip (⋮⋮) to change what lies on top (the floor plan stays at the bottom); one step for Undo.
+- Per product row: its price (click: Projektpriser on that line), in/out of the price list, delete.
+- `Pn.layers` in `js/panels.js`; `C.zoomTo`, `C.highlight`, `C.itemMenu` in `js/canvas.js`.
+
+## Project prices (custom price proposals)
+
+Prices and discounts for one proposal, without touching the catalogue: **Fil → Projektpriser…**, **Priser** in the price list's header, right-click a card → **Ændr pris…**, or a price in Lag. The dialog has Business Central's POS discount actions as buttons, over the price list's lines:
+
+- **Ændr pris** (Change Price): the selected line's unit price.
+- **Linjerabatbeløb** (Line Discount Amount): kroner off the selected line.
+- **Total rabatbeløb** (Total Disc Amount) / **Total rabat %** (Total Discount %): off the whole proposal, one or the other.
+- **Nulstil rabatter** (Reset Discounts): everything back to the website's prices (asks first; Undo brings it back). ↺ on a line resets that line.
+
+Click a line, then an action, or type straight into a line's *Enhedspris* / *Linjerabat* (Enter moves to the next line). Every change applies at once and is one step for Undo.
+
+- **Stored** on the drawing as `pr`: `{ l: { <line key>: { p: unit price, d: line discount kr } }, ta: total discount kr, tp: total discount % }`; the line key is the price list's (`<product id>|<variant or length>`, `sys|<bundle SKU>` for a system). Share links, the customer's link and the QR code carry it (12th field of the link format); Shortcuts do not.
+- **Price list, cover and customer page:** each line shows its amount, with the before-price struck through when the customer pays less (the website's FØR price, else its price); a total discount adds *Subtotal* and *Rabat (5 %)* above *Total*; *Du sparer* = everything at the before-prices minus the total. A price raised above the website's shows as it is.
+- **Order lines (CSV)** are written as Business Central sales lines: *Førpris; Enhedspris; Linjerabat beløb; Linjerabat %; Beløb*. A total discount is spread over the lines by amount (whole kroner, the remainder on the largest line) and included in their line discount, so the lines add up to the total (a note line says how much of it is the total discount).
+- `C.applyPr` (the rules) and `C.rowKeyOf` in `js/canvas.js`, `Pn.projectPrices` in `js/panels.js`.
 
 ## Share links
 
