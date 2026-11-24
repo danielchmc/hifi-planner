@@ -482,13 +482,43 @@
      90° on a vertical stretch (reading upwards), else (no stretch long enough) across the middle as before. A label slides along its
      stretch to stay clear of labels already placed. Sizes are measured once per text (world units, so the zoom does not matter). */
   const chipSize = new Map();
-  function placeChip(el, pts, taken) {
-    const k = el.className + '|' + el.textContent;
+  // a wire's bends without the points that lie on a straight line (the router can give a zero-length or a straight-through bend)
+  const simplify = (pts) => pts.filter((q, i) => i === 0 || i === pts.length - 1 || !((Math.abs(pts[i - 1][0] - q[0]) < 0.5 && Math.abs(pts[i + 1][0] - q[0]) < 0.5) || (Math.abs(pts[i - 1][1] - q[1]) < 0.5 && Math.abs(pts[i + 1][1] - q[1]) < 0.5)));
+  // the point at fraction f (0–1) of a wire's length, and whether it is on a horizontal stretch
+  function pathAt(pts, f) {
+    const P = simplify(pts), L = P.slice(1).map((q, i) => Math.hypot(q[0] - P[i][0], q[1] - P[i][1])), tot = L.reduce((a, b) => a + b, 0) || 1;
+    let d = Math.max(0, Math.min(1, f)) * tot;
+    for (let i = 0; i < L.length; i++) {
+      if (d <= L[i] || i === L.length - 1) { const u = L[i] ? Math.min(1, d / L[i]) : 0, a = P[i], b = P[i + 1]; return { x: a[0] + (b[0] - a[0]) * u, y: a[1] + (b[1] - a[1]) * u, horiz: Math.abs(b[1] - a[1]) < 0.5 }; }
+      d -= L[i];
+    }
+    return { x: P[0][0], y: P[0][1], horiz: true };
+  }
+  // the fraction of a wire's length nearest to a point
+  function pathFrac(pts, x, y) {
+    const P = simplify(pts); let best = Infinity, at = 0, run = 0, tot = 0;
+    for (let i = 0; i < P.length - 1; i++) {
+      const [ax, ay] = P[i], [bx, by] = P[i + 1], l = Math.hypot(bx - ax, by - ay), u = l ? Math.max(0, Math.min(1, ((x - ax) * (bx - ax) + (y - ay) * (by - ay)) / (l * l))) : 0;
+      const dd = Math.hypot(ax + (bx - ax) * u - x, ay + (by - ay) * u - y); if (dd < best) { best = dd; at = run + u * l; }
+      run += l;
+    }
+    tot = run || 1; return at / tot;
+  }
+  const pathLen = (pts) => { const P = simplify(pts); let t = 0; for (let i = 1; i < P.length; i++) t += Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]); return t || 1; };
+  // a hand-placed label stops with its edge 4 units from the port at either end, so it never covers the cards' port names
+  const clampLp = (pts, lp, w) => { const m = Math.min(0.5, (w / 2 + 4) / pathLen(pts)); return Math.max(m, Math.min(1 - m, lp)); };
+  function placeChip(el, pts, taken, lp) {
+    const k = el.className.replace(/\s*\bvert\b/, '') + '|' + el.textContent;
     let wh = chipSize.get(k);
     if (!wh) { wh = [el.offsetWidth, el.offsetHeight]; if (wh[0]) chipSize.set(k, wh); }
-    const [w, hh] = wh, PAD = 8, hit = (r) => taken.some((q) => r.x < q.x + q.w + 2 && q.x < r.x + r.w + 2 && r.y < q.y + q.h + 2 && q.y < r.y + r.h + 2);
+    const [w, hh] = wh, PAD = 8;
+    if (lp != null) { // placed by hand (dragged along the wire): there, along the stretch it is on
+      const q = pathAt(pts, clampLp(pts, lp, w)); el.style.left = q.x + 'px'; el.style.top = q.y + 'px'; el.classList.toggle('vert', !q.horiz); el.classList.add('moved');
+      taken.push(q.horiz ? { x: q.x - w / 2, y: q.y - hh / 2, w, h: hh } : { x: q.x - hh / 2, y: q.y - w / 2, w: hh, h: w }); return;
+    }
+    const hit = (r) => taken.some((q) => r.x < q.x + q.w + 2 && q.x < r.x + r.w + 2 && r.y < q.y + q.h + 2 && q.y < r.y + r.h + 2);
     if (w) {
-      const P = pts.filter((q, i) => i === 0 || i === pts.length - 1 || !((Math.abs(pts[i - 1][0] - q[0]) < 0.5 && Math.abs(pts[i + 1][0] - q[0]) < 0.5) || (Math.abs(pts[i - 1][1] - q[1]) < 0.5 && Math.abs(pts[i + 1][1] - q[1]) < 0.5)));
+      const P = simplify(pts);
       const segs = [];
       for (let i = 0; i < P.length - 1; i++) {
         const [x0, y0] = P[i], [x1, y1] = P[i + 1], horiz = Math.abs(y1 - y0) < 0.5, len = horiz ? Math.abs(x1 - x0) : Math.abs(y1 - y0);
@@ -510,7 +540,7 @@
     taken.push({ x: l - w / 2, y: tp - hh / 2, w, h: hh });
   }
   function renderWires() {
-    const d = store.doc, taken = [];
+    const d = store.doc, taken = [], later = []; // labels placed by hand first, the automatic ones then keep clear of them
     wiresSvg.textContent = ''; chipsEl.textContent = ''; routes.clear();
     world.querySelectorAll('.port.on').forEach((e) => e.classList.remove('on'));
     const bySrc = {};
@@ -534,9 +564,10 @@
             + (info.ad ? (info.cable ? '\n+ ' : '') + info.ad.brand + ' ' + info.ad.name + ' · ' + HP.money(HP.priceOf(info.ad).price) : '')
             + (pw ? '\n⚠ ' + info.plugs.map((x) => t(x.en, x.da)).join('\n⚠ ') : '') },
           bad ? h('span.no-print', null, icon('warn', 11)) : null, (info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : info.ad ? '' : t('Mismatch', 'Passer ikke')) + (info.cable ? adTxt : adTxt.slice(3))));
-        placeChip(chipsEl.lastChild, r.pts, taken);
+        (c.lp != null ? placeChip(chipsEl.lastChild, r.pts, taken, c.lp) : later.push([chipsEl.lastChild, r.pts]));
       }
     });
+    later.forEach(([el, pts]) => placeChip(el, pts, taken));
   }
 
   /* ================= pages ================= */
@@ -759,6 +790,18 @@
       el.style.width = it.w + 'px'; el.style[it.kind === 'plan' || it.kind === 'zone' ? 'height' : 'minHeight'] = it.h + 'px';
     }, (ev, moved, aborted) => { if (aborted) { it.w = w0; it.h = h0; return render(); } if (moved) { geom.delete(it.id); store.commit(); } });
   }
+  // dragging a wire's cable label moves it along the wire (stored as c.lp, 0–1 of the wire's length, so it follows the wire when
+  // cards move); a click without moving opens the cable picker, as a click on the wire does
+  function startChipDrag(e, id) {
+    const c = store.doc.conns.find((x) => x.id === id); if (!c) return;
+    const lp0 = c.lp;
+    drag(e, (ev) => { const r = routes.get(id); if (!r) return; const p = toWorld(ev.clientX, ev.clientY); const ch = chipsEl.querySelector('.chip[data-id="' + id + '"]');
+      c.lp = Math.round(clampLp(r.pts, pathFrac(r.pts, p.x, p.y), ch ? ch.offsetWidth : 0) * 1000) / 1000; renderWires(); },
+      (ev, moved, aborted) => {
+        if (aborted) { if (lp0 == null) delete c.lp; else c.lp = lp0; return renderWires(); }
+        store.sel.clear(); store.selConn = id; if (moved) store.commit(); else { refreshSel(); HP.panels.cablePicker(id); }
+      }, longMenu);
+  }
   function startWireDrag(e, id) {
     const c = store.doc.conns.find((x) => x.id === id); if (!c) return;
     const r = routes.get(id), s0 = c.shift || 0;
@@ -865,7 +908,8 @@
       return drag(e, (ev, dx, dy) => { view.x = x0 + dx; view.y = y0 + dy; applyView(); moveGhost(); }, (ev, moved) => { if (!moved && stamp) { const w = toWorld(ev.clientX, ev.clientY); C.placeMark(stamp.key, w.x, w.y); } });
     }
     if (portEl && portEl.closest('.item')) return startWire(e, portEl);
-    const w = e.target.closest('.wire, .chip'); if (w) return startWireDrag(e, w.dataset.id);
+    const ch = e.target.closest('.chip[data-id]'); if (ch) return startChipDrag(e, ch.dataset.id);
+    const w = e.target.closest('.wire'); if (w) return startWireDrag(e, w.dataset.id);
     const itemEl = e.target.closest('.item');
     if (itemEl) {
       const it = store.item(itemEl.dataset.id);
@@ -1286,6 +1330,7 @@
       const c = d.conns.find((q) => q.id === store.selConn);
       M.push({ head: t('Connection', 'Forbindelse') });
       add(t('Choose cable…', 'Vælg kabel…'), 'Enter', 'cable', () => HP.panels.cablePicker(store.selConn));
+      if (c && c.lp != null) add(t('Place cable label automatically', 'Placér kabelnavn automatisk'), '', 'fit', () => { delete c.lp; store.commit(); });
       if (c && (c.cable || c.ad)) add(t('Remove cable', 'Fjern kabel'), '', 'x', () => { c.cable = null; delete c.lv; delete c.m; delete c.ad; store.commit(); });
       add(t('Straighten wire', 'Ret ledningen ud'), '', 'fit', () => { c.shift = 0; store.commit(); }, { disabled: !c || !c.shift });
       add(t('Delete connection', 'Slet forbindelse'), 'Del', 'trash', C.deleteSelection, { danger: true });
@@ -1387,7 +1432,7 @@
       if (n.kind === 'run' && n.cable && !cat.get(n.cable)) n.cable = null;
       d.items.push(n);
     });
-    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0, ...(c.cable && c.lv ? { lv: c.lv } : {}), ...(c.cable && c.m ? { m: c.m } : {}), ...(c.ad && cat.get(c.ad) ? { ad: c.ad } : {}) }); });
+    (tpl.conns || []).forEach((c) => { if (map[c.a.item] && map[c.b.item]) d.conns.push({ id: HP.uid(), a: { item: map[c.a.item], key: c.a.key }, b: { item: map[c.b.item], key: c.b.key }, cable: c.cable && cat.get(c.cable) ? c.cable : null, shift: c.shift || 0, ...(c.cable && c.lv ? { lv: c.lv } : {}), ...(c.cable && c.m ? { m: c.m } : {}), ...(c.ad && cat.get(c.ad) ? { ad: c.ad } : {}), ...(c.lp != null ? { lp: c.lp } : {}) }); });
     d.mk = (d.mk || []).concat((S.mk || []).filter((k) => !(d.mk || []).includes(k))); // keep the Shortcut's letters (A, B, C…) where possible
     normMarks(); store.sel = new Set(Object.values(map).filter((id) => store.item(id))); store.selConn = null; store.commit();
     if (exact) C.fit();

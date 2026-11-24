@@ -215,7 +215,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-0910`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-0930`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -227,6 +227,8 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
 ## Cable labels on wires
 
 A wire's cable label sits on the wire where it takes the least room (`placeChip` in `js/canvas.js`, since 2026-11-24): on the longest horizontal stretch of the wire it fits on (8 units clear of the bends), else turned 90° on a vertical stretch, reading upwards (`.chip.vert`), else across the middle of the wire as before. A label slides along its stretch to stay clear of labels already placed. It is the same on screen, in the PDF and in the customer view.
+
+**Moving a label by hand:** drag the label along its wire, anywhere from one end to the other (its edge stops 4 units from the ports, so it never covers the port names); on a vertical stretch it turns, on a horizontal one it lies flat. It is kept as a point along the wire (`lp`, 0–1 of the wire's length), so it follows the wire when cards move; Undo, share links (10th field of a connection) and Shortcuts keep it. A click without moving still opens the cable picker. Right-click → *Placér kabelnavn automatisk* puts it back. Automatic labels keep clear of labels placed by hand.
 
 ## Share links
 
