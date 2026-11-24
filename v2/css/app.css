@@ -962,7 +962,8 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .pp-act:hover { border-color: var(--fg); background: var(--panel2); } .pp-act:active { background: var(--fg); color: var(--panel); } .pp-act:active span { color: inherit; }
 .pp-act.reset:hover { border-color: var(--err); color: var(--err); }
 .pp-lines { border-top: 1px solid var(--fg); max-height: 46vh; overflow: auto; }
-.pp-row { display: grid; grid-template-columns: 36px minmax(0, 1fr) 46px 96px 104px 104px 110px 28px; gap: 8px; align-items: center; padding: 5px 4px; border-bottom: 1px solid var(--line); cursor: default; }
+.modal.ppw { width: 1000px; max-width: calc(100vw - 24px); }
+.pp-row { display: grid; grid-template-columns: 36px minmax(0, 1fr) 40px 116px 96px 84px 64px 116px 26px; gap: 8px; align-items: center; padding: 5px 4px; border-bottom: 1px solid var(--line); cursor: default; }
 .pp-row.head { position: sticky; top: 0; background: var(--panel); z-index: 1; font: 600 10.5px var(--mono); text-transform: uppercase; letter-spacing: .03em; color: var(--muted); padding: 6px 4px; }
 .pp-row.sel { background: var(--panel2); box-shadow: inset 3px 0 0 var(--accent); }
 .pp-row.custom .pp-name b::after { content: ' •'; color: var(--accent); }
@@ -977,7 +978,12 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .pp-srow b { font-family: var(--mono); min-width: 110px; text-align: right; } .pp-srow label { display: inline-flex; align-items: center; gap: 4px; font: 12px var(--mono); }
 .pp-srow.big { border-top: 1px solid var(--fg); padding-top: 8px; font: 600 16px var(--display); } .pp-srow.pp-save { color: var(--accent); font-weight: 600; }
 .pp-empty { padding: 18px 4px; }
-@media (max-width: 900px) { .pp-acts { grid-template-columns: repeat(3, 1fr); } .pp-row { grid-template-columns: 0 minmax(0, 1fr) 34px 0 88px 88px 92px 26px; } .pp-row > :nth-child(4), .pp-img { visibility: hidden; } }
+@media (max-width: 900px) { .pp-acts { grid-template-columns: repeat(3, 1fr); } .pp-row { grid-template-columns: 0 minmax(0, 1fr) 30px 0 80px 70px 52px 92px 24px; } .pp-row > :nth-child(4), .pp-img { visibility: hidden; } }
+.pp input.lp { width: 100%; height: 28px; text-align: right; font: 12px var(--mono); padding: 0 6px; }
+.pp-camp, .pp-off { display: block; font: normal 10px var(--mono); } .pp-camp { color: var(--accent); } .pp-off { color: var(--accent); font-weight: 600; }
+.pp-srow.pp-campr { color: var(--accent); } .pp-srow .muted { font: 11px var(--mono); }
+.pp-stack { font-size: 11.5px; gap: 5px; margin-right: 6px; } .pp-stack input { width: 13px; height: 13px; }
+.pp input.tp { width: 64px; }
 .prices-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .pl-pp { display: inline-flex; align-items: center; gap: 4px; border: 1px solid currentColor; background: none; color: inherit; font: 600 10px var(--mono); padding: 1px 6px; letter-spacing: 0; opacity: .75; cursor: pointer; }
 .pl-pp:hover { opacity: 1; background: var(--paper); color: var(--fg); }

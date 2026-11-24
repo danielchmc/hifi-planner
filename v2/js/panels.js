@@ -855,28 +855,59 @@
   }
 
   /* ---------- project prices ----------
-     Prices and discounts for this proposal only (d.pr; the catalogue is not touched), with Business Central's POS actions:
-     Ændr pris (the line's unit price), Linjerabatbeløb (kr off the line), Total rabatbeløb / Total rabat % (off the whole proposal,
-     one or the other), Nulstil rabatter (back to the website's prices). Every change is applied at once and is one Undo step.
-     The price list, the cover, the customer's page and the order lines (CSV) follow (C.applyPr in js/canvas.js). */
+     Prices and discounts for this proposal only (d.pr; the catalogue is not touched), the way Business Central's POS works: the
+     line discounts are the truth (d.pr.l[key].d, kr), everything else follows from them and responds at once:
+       - a line: its unit price (Ændr pris; empty = the website's), its discount in kr or in %;
+       - Ekstra rabat (kr or %) = the sum of the line discounts; typing a total spreads it over the lines in proportion to their
+         amounts (whole kroner, the remainder on the largest line) and replaces their discounts;
+       - the website's own discount (its FØR price) is a campaign discount: shown per line and in the totals, and the customer's
+         saving is counted from the normal price. "Også på kampagnevarer" decides whether a total is spread over campaign lines too.
+     Every change is one Undo step. The price list, the cover, the customer's page and the order lines follow (C.applyPr). */
   Pn.hasProjectPrices = () => HP.hasPr(store.doc.pr);
   Pn.priceSummary = () => { if (!Pn.hasProjectPrices()) return ''; const r = C().priceRows(), off = r.list.reduce((s, x) => s + x.list * x.qty, 0) - r.total; return off > 0 ? '−' + HP.money(off) : t('changed', 'ændret'); };
+  // spread an amount over lines in proportion to their weight: whole kroner, the remainder on the largest, never more than a line's weight
+  const spread = (total, weights) => {
+    const W = weights.reduce((a, b) => a + b, 0); if (!W || total <= 0) return weights.map(() => 0);
+    total = Math.min(Math.round(total), Math.floor(W));
+    const out = weights.map((w) => Math.min(w, Math.floor(total * w / W)));
+    let left = total - out.reduce((a, b) => a + b, 0);
+    const order = weights.map((w, i) => i).sort((i, j) => weights[j] - weights[i]);
+    for (let k = 0; left > 0 && k < order.length * 2; k++) { const i = order[k % order.length], room = Math.floor(weights[i] - out[i]); if (room > 0) { const add = Math.min(room, left); out[i] += add; left -= add; } }
+    return out;
+  };
   Pn.projectPrices = (focusKey) => {
     const d = store.doc;
     const pr = () => (d.pr = d.pr || { l: {} }, d.pr.l = d.pr.l || {}, d.pr);
-    const num = (v) => { const s = String(v).trim().replace(/\s|kr\.?|,-/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.'); return s === '' ? null : +s; };
-    const fmt = (n) => (n == null ? '' : String(Math.round(n * 100) / 100).replace('.', ','));
-    const tidy = () => { const p = d.pr; if (!p) return; Object.keys(p.l || {}).forEach((k) => { const o = p.l[k]; if (!o || (o.p == null && !o.d)) delete p.l[k]; }); if (!HP.hasPr(p)) delete d.pr; };
+    const num = (v) => { const s = String(v).trim().replace(/\s|kr\.?|,-|%/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.'); return s === '' ? null : +s; };
+    const fmt = (n, dec) => (n == null ? '' : String(Math.round(n * (dec ? 10 : 100)) / (dec ? 10 : 100)).replace('.', ','));
+    const tidy = () => { const p = d.pr; if (!p) return; Object.keys(p.l || {}).forEach((k) => { const o = p.l[k]; if (!o || (o.p == null && !o.d)) delete p.l[k]; }); if (!p.ta) delete p.ta; if (!p.tp) delete p.tp; if (!HP.hasPr(p)) delete d.pr; };
     const commit = () => { tidy(); store.commit(); draw(); };
-    let selKey = focusKey || null, refocus = null;
+    const stackOn = () => LS.get('ppStack', true); // a total discount is spread over campaign lines too
+    const gross = (r) => r.price * r.qty, isCamp = (r) => r.base > r.list;
+    const setLine = (key, patch) => { const l = pr().l; l[key] = Object.assign({}, l[key], patch); ['p', 'd'].forEach((k) => { if (l[key][k] == null || (k === 'd' && !l[key][k])) delete l[key][k]; }); };
+    // a total discount (kr) → line discounts; the rows are read without any old-style total (ta/tp) so their amounts are the lines' own
+    const spreadTotal = (kr, pct) => {
+      const p = pr(); delete p.ta; delete p.tp;
+      const R = C().priceRows().list, w = R.map((r) => (stackOn() || !isCamp(r) ? gross(r) : 0));
+      if (pct != null) { R.forEach((r, i) => setLine(r.key, { d: w[i] ? Math.round(w[i] * Math.min(pct, 100) / 100) || undefined : undefined })); return w.some(Boolean) || !pct; } // a percentage: each line's own share, rounded per line
+      if (kr > 0 && !w.some(Boolean)) { HP.toast(t('Every line is on campaign: tick "also campaign items" to spread it over them', 'Alle linjer har kampagnepris: sæt flueben i "også kampagnevarer" for at fordele rabatten på dem'), { kind: 'warn' }); return false; }
+      const sum = w.reduce((a, b) => a + b, 0);
+      if (kr > sum) HP.toast(t('The discount is limited to the amount of the lines', 'Rabatten er begrænset til linjernes beløb'), { kind: 'warn' });
+      spread(kr, w).forEach((v, i) => setLine(R[i].key, { d: v || undefined }));
+      return true;
+    };
+    // an old-style total discount (set before 2026-11-24) is turned into line discounts once
+    if (d.pr && (d.pr.ta || d.pr.tp)) { const R0 = C().priceRows(); const kr = R0.tdisc; delete d.pr.ta; delete d.pr.tp; const sum0 = R0.list.reduce((a, r) => a + r.amount, 0);
+      spread(kr, R0.list.map((r) => r.amount)).forEach((v, i) => { const r = R0.list[i]; setLine(r.key, { d: (r.ldisc || 0) + v || undefined }); }); if (sum0) { tidy(); store.commit(); } }
+    let selKey = focusKey || null, refocus = null, lastTotal = null; // the total typed last ({ kr } or { pct }): kept when "også kampagnevarer" changes
     const table = h('.pp-lines'), sum = h('.pp-sum');
     const tile = (label, sub, fn, cls, ic) => h('button.pp-act' + (cls || ''), { onclick: fn }, icon(ic || 'tag', 15), h('b', null, label), h('span', null, sub));
     const focusIn = (sel) => { const el = body.querySelector(sel); if (el) { el.focus(); el.select && el.select(); } };
     const needLine = (what) => { if (!selKey) { HP.toast(t('Click a line first', 'Klik først på en linje'), { kind: 'warn' }); return false; } focusIn('.pp-row[data-key="' + CSS.escape(selKey) + '"] input.' + what); return true; };
     const acts = h('.pp-acts', null,
-      tile(t('Line Discount Amount', 'Linjerabatbeløb'), t('kr off the selected line', 'kr. af den valgte linje'), () => needLine('ld'), '', 'minus'),
-      tile(t('Total Disc Amount', 'Total rabatbeløb'), t('kr off the whole proposal', 'kr. af hele tilbuddet'), () => focusIn('input.ta'), '', 'minus'),
-      tile(t('Total Discount %', 'Total rabat %'), t('% off the whole proposal', '% af hele tilbuddet'), () => focusIn('input.tp'), '', 'minus'),
+      tile(t('Line Discount Amount', 'Linjerabatbeløb'), t('kr or % off the selected line', 'kr. eller % af den valgte linje'), () => needLine('ld'), '', 'minus'),
+      tile(t('Total Disc Amount', 'Total rabatbeløb'), t('kr, spread over the lines', 'kr., fordelt på linjerne'), () => focusIn('input.ta'), '', 'minus'),
+      tile(t('Total Discount %', 'Total rabat %'), t('%, spread over the lines', '%, fordelt på linjerne'), () => focusIn('input.tp'), '', 'minus'),
       tile(t('Reset Discounts', 'Nulstil rabatter'), t('back to the website prices', 'tilbage til hjemmesidens priser'), () => {
         if (!Pn.hasProjectPrices()) return;
         if (!confirm(t('Remove all project prices and discounts from this proposal?', 'Fjern alle projektpriser og rabatter fra tilbuddet?'))) return;
@@ -884,57 +915,72 @@
       }, '.reset', 'undo'),
       tile(t('Change Price', 'Ændr pris'), t('unit price of the selected line', 'enhedspris på den valgte linje'), () => needLine('up'), '', 'edit'));
     const field = (cls, value, ph, onset, opts) => {
-      const inp = h('input.' + cls, { type: 'text', inputMode: 'decimal', value: value == null ? '' : fmt(value), placeholder: ph, title: (opts && opts.title) || '',
+      const show = (v) => (v == null || v === 0 && opts && opts.blank0 ? '' : fmt(v, opts && opts.pct));
+      const inp = h('input.' + cls, { type: 'text', inputMode: 'decimal', value: show(value), placeholder: ph, title: (opts && opts.title) || '',
         onfocus: (e) => { e.target.select(); if (opts && opts.key) selectRow(opts.key); },
         onkeydown: (e) => {
           if (e.key === 'Enter') { e.preventDefault(); refocus = opts && opts.next ? opts.next(e.shiftKey ? -1 : 1) : null; e.target.blur(); }
-          else if (e.key === 'Escape') { e.stopPropagation(); e.target.value = value == null ? '' : fmt(value); e.target.blur(); }
+          else if (e.key === 'Escape') { e.stopPropagation(); e.target.value = show(value); e.target.blur(); }
         },
-        onblur: (e) => { const v = num(e.target.value); if ((v == null ? null : v) === (value == null ? null : value)) { if (refocus) { const r = refocus; refocus = null; focusIn(r); } return; } if (v != null && (isNaN(v) || v < 0)) { e.target.value = value == null ? '' : fmt(value); return HP.toast(t('Not a valid amount', 'Ikke et gyldigt beløb'), { kind: 'err' }); } onset(v); } });
+        onblur: (e) => {
+          const v = num(e.target.value), same = (v == null ? (opts && opts.blank0 ? 0 : null) : v) === (value == null ? (opts && opts.blank0 ? 0 : null) : value) || (v != null && value != null && Math.abs(v - value) < (opts && opts.pct ? 0.05 : 0.005));
+          if (same) { e.target.value = show(value); if (refocus) { const r = refocus; refocus = null; focusIn(r); } return; }
+          if (v != null && (isNaN(v) || v < 0)) { e.target.value = show(value); return HP.toast(t('Not a valid number', 'Ikke et gyldigt tal'), { kind: 'err' }); }
+          onset(v);
+          if (refocus) { const r = refocus; refocus = null; setTimeout(() => focusIn(r)); }
+        } });
       return inp;
     };
     const selectRow = (k) => { selKey = k; table.querySelectorAll('.pp-row').forEach((r) => r.classList.toggle('sel', r.dataset.key === k)); };
+    const pctOff = (part, whole) => (whole > 0 ? Math.round(part / whole * 1000) / 10 : 0);
     function draw() {
       const R = C().priceRows(), L = (d.pr && d.pr.l) || {}, keys = R.list.map((r) => r.key);
       if (selKey && !keys.includes(selKey)) selKey = null;
       const nextOf = (k, cls) => (dir) => { const i = keys.indexOf(k) + dir; return i >= 0 && i < keys.length ? '.pp-row[data-key="' + CSS.escape(keys[i]) + '"] input.' + cls : null; };
       const active = document.activeElement && body.contains(document.activeElement) ? document.activeElement : null;
-      const keep = active && active.closest('.pp-row') ? '.pp-row[data-key="' + CSS.escape(active.closest('.pp-row').dataset.key) + '"] input.' + active.className : active && active.classList.contains('ta') ? 'input.ta' : active && active.classList.contains('tp') ? 'input.tp' : null;
+      const keep = active && active.closest('.pp-row') ? '.pp-row[data-key="' + CSS.escape(active.closest('.pp-row').dataset.key) + '"] input.' + active.className : active && active.matches('input.ta, input.tp') ? 'input.' + active.className : null;
       table.textContent = '';
-      table.append(h('.pp-row.head', null, h('span'), h('span', null, t('Product', 'Produkt')), h('span.n', null, t('Qty', 'Antal')), h('span.n', null, t('Website', 'Hjemmeside')),
-        h('span.n', null, t('Unit price', 'Enhedspris')), h('span.n', null, t('Line discount', 'Linjerabat')), h('span.n', null, t('Amount', 'Beløb')), h('span')));
+      table.append(h('.pp-row.head', null, h('span'), h('span', null, t('Product', 'Produkt')), h('span.n', null, t('Qty', 'Antal')), h('span.n', null, t('Normal price', 'Normalpris')),
+        h('span.n', null, t('Unit price', 'Enhedspris')), h('span.n', null, t('Discount kr', 'Rabat kr.')), h('span.n', null, t('Discount %', 'Rabat %')), h('span.n', null, t('Amount', 'Beløb')), h('span')));
       if (!R.list.length) table.append(h('.muted.pp-empty', null, t('No products in the price list yet.', 'Ingen produkter i prislisten endnu.')));
       R.list.forEach((r) => {
-        const o = L[r.key] || {}, unit = r.cableM ? ' / m' : '';
+        const o = L[r.key] || {}, unit = r.cableM ? ' / m' : '', g = gross(r), camp = isCamp(r), off = pctOff(r.base * r.qty - r.amount, r.base * r.qty);
         const row = h('.pp-row' + (r.custom ? '.custom' : '') + (r.key === selKey ? '.sel' : ''), { data: { key: r.key }, onclick: (e) => { if (!e.target.closest('input, button')) selectRow(r.key); } },
           h('span.pp-img', null, r.img ? HP.imgEl(r.img, 'thumb') : null),
           h('span.pp-name', null, h('b', null, r.name), h('small', null, (r.sku || '') + (r.sys ? ' · system' : ''))),
           h('span.n', null, r.cableM ? r.qty + ' m' : r.qty),
-          h('span.n.muted', { title: r.base > r.list ? t('Before price ', 'Førpris ') + HP.money(r.base) : '' }, r.base > r.list ? h('s', null, HP.money(r.base)) : null, HP.money(r.list) + unit),
-          h('span.n', null, field('up', o.p != null ? o.p : null, fmt(r.list), (v) => { const l = pr().l; l[r.key] = Object.assign({}, l[r.key], { p: v == null || v === r.list ? undefined : v }); if (l[r.key].p === undefined) delete l[r.key].p; commit(); },
-            { key: r.key, next: nextOf(r.key, 'up'), title: t('Unit price for this proposal (empty: the website price)', 'Enhedspris i dette tilbud (tom: hjemmesidens pris)') })),
-          h('span.n', null, field('ld', o.d || null, '0', (v) => { const l = pr().l, gross = (o.p != null ? o.p : r.list) * r.qty; if (v > gross) { v = gross; HP.toast(t('The discount is limited to the line amount', 'Rabatten er begrænset til linjens beløb'), { kind: 'warn' }); } l[r.key] = Object.assign({}, l[r.key], { d: v || undefined }); if (!l[r.key].d) delete l[r.key].d; commit(); },
-            { key: r.key, next: nextOf(r.key, 'ld'), title: t('Kroner off this line', 'Kroner af denne linje') })),
-          h('span.n.amt', null, r.was ? h('s', null, HP.money(r.base * r.qty)) : null, HP.money(r.amount)),
+          h('span.n.muted', null, HP.money(r.base) + unit, camp ? h('em.pp-camp', { title: t('The website\'s campaign price: ', 'Hjemmesidens kampagnepris: ') + HP.money(r.list) }, t('campaign ', 'kampagne ') + '−' + fmt(pctOff(r.base - r.list, r.base), 1) + ' %') : null),
+          h('span.n', null, field('up', o.p != null ? o.p : null, fmt(r.list), (v) => { setLine(r.key, { p: v == null || v === r.list ? undefined : v }); commit(); },
+            { key: r.key, next: nextOf(r.key, 'up'), title: t('Unit price for this proposal (empty: the website price, ', 'Enhedspris i dette tilbud (tom: hjemmesidens pris, ') + HP.money(r.list) + ')' })),
+          h('span.n', null, field('ld', r.ldisc, '0', (v) => { if (v > g) { v = g; HP.toast(t('The discount is limited to the line amount', 'Rabatten er begrænset til linjens beløb'), { kind: 'warn' }); } setLine(r.key, { d: v ? Math.round(v * 100) / 100 : undefined }); commit(); },
+            { key: r.key, next: nextOf(r.key, 'ld'), blank0: true, title: t('Kroner off this line', 'Kroner af denne linje') })),
+          h('span.n', null, field('lp', g ? r.ldisc / g * 100 : 0, '0', (v) => { setLine(r.key, { d: v ? Math.round(g * Math.min(v, 100) / 100) : undefined }); commit(); },
+            { key: r.key, next: nextOf(r.key, 'lp'), blank0: true, pct: true, title: t('Percent off this line (of its unit price)', 'Procent af denne linje (af enhedsprisen)') })),
+          h('span.n.amt', null, r.was ? h('s', null, HP.money(r.base * r.qty)) : null, HP.money(r.amount), off > 0 ? h('em.pp-off', { title: t('Off the normal price, all in', 'Af normalprisen i alt') }, '−' + fmt(off, 1) + ' %') : null),
           h('span', null, r.custom ? h('button.icon-btn.sm', { title: t('Back to the website price for this line', 'Tilbage til hjemmesidens pris for linjen'), onclick: () => { delete pr().l[r.key]; commit(); } }, icon('undo', 13)) : null));
         table.append(row);
       });
-      const p = d.pr || {};
+      // totals, all worked out from the lines
+      const normal = R.list.reduce((a, r) => a + r.base * r.qty, 0), web = R.list.reduce((a, r) => a + r.list * r.qty, 0), grossAll = R.list.reduce((a, r) => a + gross(r), 0);
+      const campKr = normal - web, changeKr = web - grossAll, extra = R.list.reduce((a, r) => a + r.ldisc, 0) + (R.tdisc || 0);
+      const stack = h('input', { type: 'checkbox', checked: stackOn(), onchange: () => { LS.set('ppStack', stack.checked); if (extra > 0) { if (lastTotal && lastTotal.pct != null) spreadTotal(null, lastTotal.pct); else spreadTotal(extra); commit(); } } });
       sum.textContent = '';
-      sum.append(
-        h('.pp-srow', null, h('span', null, t('Subtotal', 'Subtotal')), h('b', null, HP.money(R.sub))),
-        h('.pp-srow.pp-tot', null, h('span', null, t('Total discount', 'Total rabat')),
-          h('label', null, field('ta', p.ta || null, '0', (v) => { const q = pr(); if (v > R.sub) { v = R.sub; HP.toast(t('The discount is limited to the subtotal', 'Rabatten er begrænset til subtotalen'), { kind: 'warn' }); } q.ta = v || undefined; if (q.ta) delete q.tp; else delete q.ta; commit(); }, { title: t('Kroner off the whole proposal', 'Kroner af hele tilbuddet') }), ' kr.'),
-          h('span.muted', null, t('or', 'eller')),
-          h('label', null, field('tp', p.tp && !p.ta ? p.tp : null, '0', (v) => { const q = pr(); if (v > 100) v = 100; q.tp = v || undefined; if (q.tp) delete q.ta; else delete q.tp; commit(); }, { title: t('Percent off the whole proposal', 'Procent af hele tilbuddet') }), ' %'),
-          h('b', null, R.tdisc ? '−' + HP.money(R.tdisc) : '')),
+      sum.append(...[
+        h('.pp-srow', null, h('span', null, t('Normal price', 'Normalpris i alt')), h('b', null, HP.money(normal))),
+        campKr > 0 ? h('.pp-srow.pp-campr', null, h('span', null, t('Campaign discount (hifiklubben.dk)', 'Kampagnerabat (hifiklubben.dk)')), h('span.muted', null, fmt(pctOff(campKr, normal), 1) + ' %'), h('b', null, '−' + HP.money(campKr))) : null,
+        changeKr ? h('.pp-srow', null, h('span', null, changeKr > 0 ? t('Price changes', 'Prisændringer') : t('Price changes (added)', 'Prisændringer (tillæg)')), h('b', null, (changeKr > 0 ? '−' : '+') + HP.money(Math.abs(changeKr)))) : null,
+        h('.pp-srow.pp-tot', null, h('span', null, t('Extra discount', 'Ekstra rabat')),
+          h('label.check.pp-stack', { title: t('Spread a total discount over lines already on campaign too', 'Fordel også en total rabat på linjer, der allerede har kampagnepris') }, stack, h('span', null, t('also campaign items', 'også kampagnevarer'))),
+          h('label', null, field('ta', extra, '0', (v) => { lastTotal = { kr: v || 0 }; if (spreadTotal(v || 0)) commit(); else draw(); }, { blank0: true, title: t('Kroner off, spread over the lines', 'Kroner, fordelt på linjerne') }), ' kr.'),
+          h('label', null, field('tp', grossAll ? extra / grossAll * 100 : 0, '0', (v) => { lastTotal = { pct: v || 0 }; if (spreadTotal(null, v || 0)) commit(); else draw(); }, { blank0: true, pct: true, title: t('Percent off (of the unit prices), spread over the lines', 'Procent (af enhedspriserne), fordelt på linjerne') }), ' %'),
+          h('b', null, extra ? '−' + HP.money(extra) : '')),
         h('.pp-srow.big', null, h('span', null, 'Total'), h('b', null, HP.money(R.total))),
-        R.saving > 0 ? h('.pp-srow.pp-save', null, h('span', null, t('The customer saves', 'Kunden sparer')), h('b', null, HP.money(R.saving))) : null);
+        R.saving > 0 ? h('.pp-srow.pp-save', null, h('span', null, t('The customer saves (of the normal price)', 'Kunden sparer (af normalprisen)')), h('span', null, fmt(pctOff(R.saving, normal), 1) + ' %'), h('b', null, HP.money(R.saving))) : null].filter(Boolean));
       if (keep) setTimeout(() => focusIn(keep));
     }
-    const body = h('.pp', null, h('p.muted.pp-intro', null, t('For this proposal only: the catalogue prices are not changed. The price list, the cover, the customer\'s page and the order lines follow.', 'Kun for dette tilbud: katalogets priser ændres ikke. Prislisten, forsiden, kundens side og ordrelinjerne følger med.')), acts, table, sum);
+    const body = h('.pp', null, h('p.muted.pp-intro', null, t('For this proposal only: the catalogue prices are not changed. Change one field and the rest follows. The price list, the cover, the customer\'s page and the order lines follow too.', 'Kun for dette tilbud: katalogets priser ændres ikke. Ændr ét felt, så følger resten med. Prislisten, forsiden, kundens side og ordrelinjerne følger også med.')), acts, table, sum);
     draw();
-    const close = HP.modal({ title: t('Project prices', 'Projektpriser'), size: 'lg', body, foot: [h('button.btn.primary', { onclick: () => close() }, t('Done', 'Færdig'))] });
+    const close = HP.modal({ title: t('Project prices', 'Projektpriser'), size: 'lg.ppw', body, foot: [h('button.btn.primary', { onclick: () => close() }, t('Done', 'Færdig'))] });
     if (focusKey) setTimeout(() => focusIn('.pp-row[data-key="' + CSS.escape(focusKey) + '"] input.up'), 60);
   };
 
