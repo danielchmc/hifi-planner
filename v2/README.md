@@ -89,6 +89,14 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - **Shortcuts for the selection are Alt + a letter** (read by key position, so Option+letter works on a Mac): Alt+T text, Alt+B flip front/back, Alt+C variant, Alt+K Katalog, Alt+I inspect image, Alt+L lock the floor plan, Alt+R replace. Until 2026-11-21 they were plain letters, which now type into the search.
 - **Shift+1** fits the drawing to the window (as in Figma and Miro). Unchanged: Delete, arrows (nudge), [ and ] (order), Enter (cable picker on a selected wire), **Alt+K** the Katalog (Enter on the canvas until 2026-11-23), Esc, Ctrl+Z/Y/C/V/D/A/S/P, F3, F4, /.
 
+## Design language (since 2026-11-24)
+
+The app's controls and windows follow the top bar's style, like Figma and Canva: 6 px rounded corners on controls (10–12 px on dialogs, menus and panels), light grey borders, a soft grey hover, an orange-tinted "on" state, an orange focus ring on fields, and dialogs, menus, the Oversigt panel and the Katalog floating on soft shadows instead of black frames. Labels and headings are in sentence case in the UI font (Segoe UI). Monospace is kept for SKUs, keyboard keys, counts and figures, and Sharp Grotesk for product names. **Not changed on purpose:** the cards, wires and price list on the canvas, the A4 pages, the cover and the customer's page keep the sharp HiFi Klubben look, because they are what the customer sees and prints.
+
+The shared settings are CSS variables in the "v5 design language" sections at the end of `css/app.css`: `--r` (6 px), `--r-sm`, `--r-lg`, `--r-xl`, `--ctl` (control height, 32 px; 38 px on touch screens), `--tint` (the "on" state), `--ring` (focus), `--line2` (hover border) and `--pop` (the floating shadow, darker in the dark theme).
+
+**Scrollbars** are thin, rounded and float on a clear track (12 px, the thumb 4 px wide; darker and wider on hover, orange while dragged), in Chrome, Edge and Safari; Firefox gets its own thin scrollbar in the same colours. Colours: `--sb` and `--sb-hover`. Strips that hide their scrollbar (category chips, the selection bar and CI bar on small screens) still do.
+
 ## Motion
 
 Short and snappy (100–180 ms), in the "v4.5" CSS section; all of it is switched off when the system asks for reduced motion (`HP.reducedMotion()`).
@@ -102,7 +110,7 @@ Short and snappy (100–180 ms), in the "v4.5" CSS section; all of it is switche
 
 The app works on phones and iPads with touch.
 
-- **Layout.** Up to 1024 px wide (iPad portrait, phones) the product list is a drawer opened with the orange **Products** button, and a **⋯** button holds everything that does not fit in the top bar. Up to 700 px (phones) the top bar only keeps Products, undo/redo, Print and ⋯; windows open full screen.
+- **Layout.** Up to 1024 px wide (iPad portrait, phones) the product list is a drawer opened with the orange **Products** button, and a **⋯** button holds everything that does not fit in the top bar. Up to 700 px (phones) the top bar only keeps Products, undo, the proposal's name, Print and ⋯; windows open full screen.
 - **Canvas gestures.** One finger on empty canvas pans; two fingers pinch-zoom and pan. Long-press (about half a second) opens the context menu on a product, cable or empty spot; long-press on empty canvas and then drag selects an area. Dragging items, wiring (tap an output dot, then an input dot) and the CI tools work with a finger; drawing a cable run has a **Finish run** button.
 - **Product list.** Scrolls with a finger. Tap adds the product (in CI mode: arms it for placing marks); long-press picks it up for dragging onto the canvas, and the drawer slides away while dragging.
 - **Touch details.** Larger hit areas for port dots and resize handles; form fields use 16 px text so iOS does not zoom when typing; the full-screen image viewer supports pinch and double-tap. Code: `drag()` and the pinch handler in `js/canvas.js`, `listDrag()`, `Pn.drawer` and `moreMenu()` in `js/panels.js`, the "v3.0" section of `css/app.css`.
@@ -215,7 +223,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-2050`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-2350`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -230,14 +238,17 @@ A wire's cable label sits on the wire where it takes the least room (`placeChip`
 
 **Moving a label by hand:** drag the label along its wire, anywhere from one end to the other (its edge stops 4 units from the ports, so it never covers the port names); on a vertical stretch it turns, on a horizontal one it lies flat. It is kept as a point along the wire (`lp`, 0–1 of the wire's length), so it follows the wire when cards move; Undo, share links (10th field of a connection) and Shortcuts keep it. A click without moving still opens the cable picker. Right-click → *Placér kabelnavn automatisk* puts it back. Automatic labels keep clear of labels placed by hand.
 
-## Top bar (since 2026-11-24)
+## Top bar (since 2026-11-24, redesigned the same day)
 
-**Filer ▾** · the proposal's name · undo/redo · Tekst, Prisliste, **Relaterede produkter**, CI-tilstand · Kort (card size) · **Oversigt** · **Print / PDF**, and on the right **Admin ▾** (admins only; a badge counts unpublished changes) and **the seller's name ▾**.
+One 48 px bar in the style of Figma or Canva: icon buttons without borders, grouped and split by thin lines, with the proposal's name in the middle.
 
-- **Filer:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Projektpriser…, Oversigt. A dot on Filer means the proposal has project prices.
+- **Left:** the HiFi Planner mark · **Filer ▾** · undo/redo · Tekst, Prisliste (tag icon), CI-tilstand (icons; an active tool is tinted orange).
+- **Middle:** the shop as a crumb (*Amagerbrogade /*) and the proposal's name (click to rename), then the **Prisjusteringer chip** while the proposal has price adjustments: *Prisjusteringer −3.000,-* (kroner off the website's prices; *+* when prices were raised); greyed *1 gemt* when they are only saved for products not in the price list now. Click to edit, × to remove them all (Undo in the message).
+- **Right:** Oversigt (layers icon) · **Kort ▾** showing the card size (*100%*; a stepper, 60/80/100/125 %, Tilpas til vindue) · **Admin ⚙ ▾** (admins only; an orange dot when there are unpublished changes) · **the seller's initials** in a round avatar ▾ · **Relaterede produkter** (outlined, with the count) · **Print / PDF** (orange).
+- **Filer:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Prisjusteringer…, Oversigt.
 - **Admin:** Produkt-editor, Statistik, Udgiv (n).
 - **The seller:** Hjælp, English/Dansk, Lyst/Mørkt tema (F1), Indstillinger, Skift sælger.
-- **The proposal's name is always shown**, the field as wide as its text (120–320 px, then "…"). To make room, text labels go first as the window narrows (Oversigt and CI from 1760 px, Prisliste, Tekst and Print from 1600, Relaterede produkter from 1460, the names on Admin and the seller from 1300). Up to 1024 px (iPad portrait, phones) the rest is in ⋯; the name stays. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`.
+- **Narrow windows.** The name always stays. Below 1700 px the chip shows only its amount; below 1560 the shop crumb and the label on Relaterede produkter go; below 1300 the label on Print. Up to 1024 px (iPad portrait, phones) the orange **Produkter** button opens the product list and **⋯** holds Filer, view, Admin and the seller; up to 700 px (phones) only Produkter, undo, the name, Print and ⋯ remain. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`; the "v5 top bar" block at the end of `css/app.css`.
 
 ## Oversigt (layers)
 
@@ -245,13 +256,13 @@ A wire's cable label sits on the wire where it takes the least room (`placeChip`
 
 - Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas. Right-click opens the same menu as on the canvas: for the whole selection when the row is part of it (several products: Dublér, Skjul, Slet…), else for that row.
 - Drag a row by its grip (⋮⋮) to change what lies on top (the floor plan stays at the bottom); one step for Undo.
-- Per row: its price (click: Projektpriser on that line), **hide** (the eye), in/out of the price list, delete.
+- Per row: its price (click: Prisjusteringer on that line), **hide** (the eye), in/out of the price list, delete.
 - **Hidden** (`hid` on the item; the eye, or right-click → Skjul / Vis on the canvas or in Oversigt): the card is kept in the drawing but not drawn, printed or priced, and nor are its wires and their cables (and a wire to it does not count as missing a cable). It stays in Oversigt, greyed, *skjult*, to show again. Share links and Shortcuts keep it.
 - `Pn.layers` in `js/panels.js`; `C.zoomTo`, `C.highlight`, `C.itemMenu`, `C.setHidden` in `js/canvas.js`.
 
-## Project prices (custom price proposals)
+## Price adjustments (custom price proposals)
 
-Prices and discounts for one proposal, without touching the catalogue: **Filer → Projektpriser…**, **Priser** in the price list's header, right-click the price list → **Rediger priser…**, right-click a card → **Ændr pris…**, or a price in Oversigt. The dialog has Business Central's POS discount actions (in HiFi Planner's own button style) over the price list's lines:
+Prices and discounts for one proposal, without touching the catalogue: **Filer → Prisjusteringer…**, **Priser** in the price list's header, right-click the price list → **Rediger priser…**, right-click a card → **Ændr pris…**, or a price in Oversigt. The dialog has Business Central's POS discount actions (in HiFi Planner's own button style) over the price list's lines:
 
 - **Ændr pris** (Change Price): the selected line's unit price (empty: the website's).
 - **Linjerabatbeløb** (Line Discount Amount): the selected line's discount, in kr or in % (of its unit price).
@@ -262,11 +273,13 @@ Prices and discounts for one proposal, without touching the catalogue: **Filer �
 
 **The website's discounts** count as a campaign discount on top of the normal price (its FØR price): each line shows its normal price with *kampagne −38 %*, and its amount with the customer's discount all in (*−44,3 %*); the totals read *Normalpris i alt → Kampagnerabat (hifiklubben.dk) → Prisændringer → Ekstra rabat → Total*, and *Kunden sparer* in kr and % of the normal price. **også kampagnevarer** (remembered per browser, on by default) decides whether a total discount is spread over lines already on campaign too, or only over full-price lines; switching it spreads the last total again (kr stays kr, % stays %). Totals set before 2026-11-24 (`ta`/`tp`) are turned into line discounts when the dialog is opened.
 
+- **Always visible to the seller, never to the customer** (since 2026-11-24): the chip in the top bar; a band under the price list's header (*Prisjusteringer · −3.000,- · Rediger · Ryd*) and a *TILPASSET* tag on each line with a price adjustment; a *PRIS ÆNDRET* tag on the cards counted on such a line (tooltip: the price and discount); a note in the print dialog (*Tilbuddet har prisjusteringer: −3.000,- i alt · Rediger*). None of them is printed, and the cover and the customer's page show the prices without a word about price adjustments. **Clearing:** × on the chip or *Ryd* on the price list (all, with Undo), right-click a card → *Fjern prisjustering* (that line), *Nulstil rabatter* in the dialog, ↺ on a line.
 - **Saved on the proposal, per product:** a line's price and discount stay with the proposal when the product leaves the price list (deleted, hidden, another variant, *not priced*) and come back when it does; the dialog lists them under *Gemt for varer, der ikke er i prislisten nu* (× forgets one, Nulstil rabatter forgets all). The discount is kept as a **percentage**, as Business Central keeps Line Discount %: a discount typed in kroner becomes its percentage, so it follows the quantity and the unit price (1.000,- off 2 FORUS is 500,- off 1, 1.500,- off 3).
 - **Stored** on the drawing as `pr`: `{ l: { <line key>: { p: unit price, r: line discount % } } }` (proposals from 2026-11-24 before this may have `d`, a discount in kroner, and `ta`/`tp`, a total discount; both are still priced, and become percentages when the line is edited or the dialog is opened); the line key is the price list's (`<product id>|<variant or length>`, `sys|<bundle SKU>` for a system). Share links, the customer's link and the QR code carry it (12th field of the link format); Shortcuts do not.
 - **Price list, cover and customer page:** each line shows its amount, with the before-price struck through when the customer pays less (the website's FØR price, else its price); a total discount adds *Subtotal* and *Rabat (5 %)* above *Total*; *Du sparer* = everything at the before-prices minus the total. A price raised above the website's shows as it is.
 - **Order lines (CSV)** are written as Business Central sales lines: *Førpris; Enhedspris; Linjerabat beløb; Linjerabat %; Beløb*. A total discount is spread over the lines by amount (whole kroner, the remainder on the largest line) and included in their line discount, so the lines add up to the total (a note line says how much of it is the total discount).
-- `C.applyPr` (the rules) and `C.rowKeyOf` in `js/canvas.js`, `Pn.projectPrices` in `js/panels.js`.
+- `C.applyPr` (the rules) and `C.rowKeyOf` in `js/canvas.js`, `Pn.projectPrices`, `Pn.priceState`, `Pn.clearProjectPrices` in `js/panels.js`.
+- Fit to window and zooming from Oversigt leave room for the Oversigt panel, so nothing ends up under it.
 
 ## Share links
 

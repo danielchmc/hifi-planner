@@ -450,7 +450,7 @@
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [c.cable || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, c.ad || 0, c.lp != null ? Math.round(c.lp * 1000) + 1 : 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
       [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
       doc.cv ? [doc.cv.c || '', doc.cv.s || '', doc.cv.sh || [], doc.cv.d || ''].concat(doc.cv.r === 0 ? [0] : []) : 0, // cover: customer, adviser, shop [name, phone, email], date
-      doc.pr && HP.hasPr(doc.pr) ? doc.pr : 0]; // project prices (prices and discounts for this proposal only)
+      doc.pr && HP.hasPr(doc.pr) ? doc.pr : 0]; // price adjustments (prices and discounts for this proposal only)
   }
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
@@ -464,7 +464,7 @@
     const cv = a[10] ? { c: a[10][0], s: a[10][1], sh: a[10][2], d: a[10][3], r: a[10][4] === 0 ? 0 : 1 } : null;
     return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
-  // project prices: does the proposal have any (a line's price or discount, or a total discount)?
+  // price adjustments: does the proposal have any (a line's price or discount, or a total discount)?
   HP.hasPr = (pr) => !!pr && (!!(pr.ta || pr.tp) || Object.values(pr.l || {}).some((x) => x && (x.p != null || x.d || x.r)));
   HP.share = {
     async pack(doc) {

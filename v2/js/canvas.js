@@ -285,7 +285,7 @@
     const list = [...rows.values()].sort((a, b) => a.cable - b.cable);
     return applyPr(list, d.pr);
   }
-  /* Project prices (d.pr, set in Projektpriser; for this proposal only, the catalogue is not touched), as in Business Central:
+  /* Price adjustments (d.pr, set in Prisjusteringer; for this proposal only, the catalogue is not touched), as in Business Central:
        l[key].p  Change Price: the line's unit price          l[key].d  Line Discount Amount: kr off the line
        ta        Total Disc Amount: kr off the whole proposal tp        Total Discount %: % off the whole proposal (one or the other)
      Every line gets: list (the website's unit price), base (its before-price: the website's FØR price, else the list price),
@@ -335,6 +335,7 @@
       const card = buildCard(p, it);
       const sb = it.sy && cat.system(it.sy);
       if (sb) card.querySelector('.card-head').append(h('span.sys-tag.no-print', { title: t('Part of the system ', 'Del af systemet ') + cat.systemName(sb) + t(' (priced as the system while all its parts are on the canvas)', ' (prissat som systemet, så længe alle dele er på lærredet)') }, 'System'));
+      { const c = cardPr(it); if (c) card.querySelector('.card-head').append(h('span.pp-ctag.no-print', { title: t('Price adjustment for this proposal: ', 'Prisjustering i dette tilbud: ') + HP.money(c.price) + (c.ldisc ? t(' less ', ' minus ') + HP.money(c.ldisc) + t(' discount', ' i rabat') : '') + (c.qty > 1 ? t(' (the line, ', ' (linjen, ') + c.qty + t(' pcs)', ' stk.)') : '') }, t('Price changed', 'Pris ændret'))); }
       if (it.np) card.querySelector('.card-head').append(h('span.np-tag.no-print', { title: t('Not counted in the price list', 'Tælles ikke med i prislisten') }, t('Not priced', 'Ikke i pris')));
       return card;
     }
@@ -367,10 +368,16 @@
       // rooms drawn in CI mode: what each room gets (marks and product cards inside it), with a subtotal (cables are not tied to a room)
       const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
+      const ps = HP.panels.priceState && HP.panels.priceState();
+      const band = ps ? h('.pp-band.no-print', { onpointerdown: (e) => e.stopPropagation() }, icon('tag', 12),
+        h('span', null, ps.active ? t('Price adjustments · ', 'Prisjusteringer · ') + ps.text : t('Price adjustments saved · ', 'Prisjusteringer gemt · ') + ps.text),
+        h('button', { onclick: () => HP.panels.projectPrices() }, t('Edit', 'Rediger')), h('button', { onclick: () => HP.panels.clearProjectPrices() }, t('Clear', 'Ryd'))) : null;
       return h('.prices', null, h('.prices-head', null, t('Items & prices', 'Varer & priser'),
-          h('button.pl-pp.no-print', { title: t('Project prices: change prices and give discounts for this proposal', 'Projektpriser: ændr priser og giv rabat i dette tilbud'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.panels.projectPrices() }, icon('tag', 12), t('Prices', 'Priser'))),
+          h('button.pl-pp.no-print', { title: t('Price adjustments: change prices and give discounts for this proposal', 'Prisjusteringer: ændr priser og giv rabat i dette tilbud'), onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.panels.projectPrices() }, icon('tag', 12), t('Prices', 'Priser'))),
+        band,
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.cableM ? r.qty + ' m' : r.qty > 1 ? r.qty + '×' : ''),
-          h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null, r.sys ? h('.sysparts', null, r.parts) : null),
+          h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null,
+            r.custom ? h('span.pp-tag.no-print', { title: t('Price adjustment: ', 'Prisjustering: ') + HP.money(r.price) + (r.ldisc ? t(', discount ', ', rabat ') + HP.money(r.ldisc) : '') }, t('custom', 'tilpasset')) : null, r.sys ? h('.sysparts', null, r.parts) : null),
           h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.amount))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
         tdisc ? h('.prices-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('span', null, HP.money(sub))) : null,
@@ -423,7 +430,7 @@
   }
   function itemSig(it) {
     const d = store.doc, L = HP.lang();
-    if (it.kind === 'product') return ['p', it.pid, it.face, it.v, it.len, it.m, it.np, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L].join('|');
+    if (it.kind === 'product') { const c = cardPr(it); return ['p', it.pid, it.face, it.v, it.len, it.m, it.np, MK.indexOf(it.pid), cardScale(), C.hd, cat.version, L, c ? c.price + '/' + c.ldisc : ''].join('|'); }
     if (it.kind === 'mark') return ['m', it.k, it.np, MK.indexOf(it.k), d.ms, cat.version, L].join('|');
     if (it.kind === 'zone') return ['z', it.w, it.h, it.name, d.items.filter((i) => i.kind === 'zone').indexOf(it), L].join('|');
     if (it.kind === 'run') return ['c', JSON.stringify(it.pts), it.cable, d.sc, cat.version, L].join('|');
@@ -435,8 +442,17 @@
   }
 
   let rendered = false; // after the first drawing is on screen, new cards animate in
+  // the price-list lines with a price adjustment, worked out once per render: a card on one gets a "Pris ændret" tag (screen only)
+  let prCustom = new Map();
+  const cardPr = (it) => {
+    if (it.kind !== 'product' || it.np || it.hid || !prCustom.size) return null;
+    const p = cat.get(it.pid); if (!p) return null;
+    if (it.sy && prCustom.has('sys|' + it.sy)) return prCustom.get('sys|' + it.sy);
+    return prCustom.get(it.m && cat.isPerMetre(p) ? p.id + '|' : p.id + '|' + (HP.priceOf(p, it).label || '')) || null;
+  };
   function renderItems() {
     const seen = new Set(), fresh = [];
+    prCustom = new Map(store.doc.pr ? priceRows().list.filter((r) => r.custom).map((r) => [r.key, r]) : []);
     MK = markKeys();
     store.doc.items.forEach((it) => {
       seen.add(it.id);
@@ -657,8 +673,10 @@
   const toWorld = (cx, cy) => { const r = vp.getBoundingClientRect(); return { x: (cx - r.left - view.x) / view.z, y: (cy - r.top - view.y) / view.z }; };
   C.toWorld = toWorld;
   C.zoomBy = (f) => { const r = vp.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, view.z * f); };
+  // the part of the canvas not covered by the Oversigt panel (docked on the right)
+  const openArea = () => { const r = vp.getBoundingClientRect(), ly = document.getElementById('layers'); const cut = ly && !ly.hidden && ly.offsetWidth && innerWidth > 1024 ? ly.offsetWidth + 20 : 0; return { left: r.left, top: r.top, width: Math.max(200, r.width - cut), height: r.height }; };
   C.fit = () => {
-    const d = store.doc, s = pageSize(), r = vp.getBoundingClientRect();
+    const d = store.doc, s = pageSize(), r = openArea();
     let x0 = 0, y0 = 0, x1 = d.pages * (s.w + GAP) - GAP, y1 = s.h;
     d.items.forEach((it) => { if (it.hid) return; const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + g.w); y1 = Math.max(y1, it.y + g.h); });
     const pad = 48, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0)), 0.15, 1.5);
@@ -724,7 +742,7 @@
     const its = [].concat(ids).map((id) => store.item(id)).filter(Boolean); if (!its.length) return;
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     its.forEach((it) => { const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + (g.w || 40)); y1 = Math.max(y1, it.y + (g.h || 40)); });
-    const r = vp.getBoundingClientRect(), pad = 80, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0), Math.max(view.z, 0.6)), 0.15, 1.5);
+    const r = openArea(), pad = 80, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0), Math.max(view.z, 0.6)), 0.15, 1.5);
     view.z = z; view.x = r.width / 2 - ((x0 + x1) / 2) * z; view.y = r.height / 2 - ((y0 + y1) / 2) * z;
     applyView();
   };
@@ -1408,7 +1426,8 @@
         if (full && HP.imagesOf(p, one).length) add(t('Inspect image', 'Se billedet nærmere'), 'Alt+I', 'search', () => C.inspect(one.id));
         add(t('Related products…', 'Relaterede produkter…'), '', 'plus', () => HP.complete.open({ pid: p.id }), { accent: true });
         if (sku) add(t('Copy item no.', 'Kopiér varenr.'), '', 'copy', () => HP.copyText(sku, t('Item number copied: ', 'Varenr. kopieret: ') + sku), { note: sku });
-        if (!one.np) { const k = C.rowKeyOf(one), r = C.priceRows().list.find((q) => q.key === k); add(t('Change price…', 'Ændr pris…'), '', 'tag', () => HP.panels.projectPrices(k), { note: r ? HP.money(r.price) + (r.custom ? ' •' : '') : '' }); }
+        if (!one.np) { const k = C.rowKeyOf(one), r = C.priceRows().list.find((q) => q.key === k); add(t('Change price…', 'Ændr pris…'), '', 'tag', () => HP.panels.projectPrices(k), { note: r ? HP.money(r.price) + (r.custom ? ' •' : '') : '' });
+          if (r && r.custom) add(t('Remove price adjustment', 'Fjern prisjustering'), '', 'undo', () => { const d = store.doc; delete d.pr.l[k]; if (!HP.hasPr(d.pr)) delete d.pr; store.commit(); HP.toast(t('Back to the website price', 'Tilbage til hjemmesidens pris'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); }); }
         if (full && admin) add(t('Edit product…', 'Redigér produkt…'), '', 'edit', () => HP.editor.open(p.id));
       }
       if (one && one.kind === 'mark' && one.k[0] !== '@') {

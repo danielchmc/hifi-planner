@@ -272,7 +272,7 @@
   };
 
   /* ---------- top bar ----------
-     Fil ▾ (the proposal: new, rename, projects, share, page, print, project prices) · name · undo/redo · Tekst, Prisliste, Relaterede
+     Fil ▾ (the proposal: new, rename, projects, share, page, print, price adjustments) · name · undo/redo · Tekst, Prisliste, Relaterede
      produkter, CI · card size · Lag · Print | Admin ▾ (admins) · the seller ▾ (help, language, theme, settings, switch seller).
      On phones everything is in ⋯ (moreMenu). */
   Pn.toggleTheme = () => {
@@ -292,7 +292,7 @@
       { label: t('Print / PDF…', 'Print / PDF…'), icon: 'print', key: 'Ctrl+P', fn: () => HP.cover.dialog() },
       { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: t('now ', 'nu ') + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
       'sep',
-      { label: t('Project prices…', 'Projektpriser…'), icon: 'tag', note: Pn.priceSummary ? Pn.priceSummary() : '', fn: () => Pn.projectPrices() },
+      { label: t('Price adjustments…', 'Prisjusteringer…'), icon: 'tag', note: Pn.priceSummary ? Pn.priceSummary() : '', fn: () => Pn.projectPrices() },
       { label: t('Overview', 'Oversigt'), icon: 'layers', on: Pn.layersOpen && Pn.layersOpen(), key: 'Alt+1', fn: () => Pn.layers() },
     ];
   };
@@ -336,56 +336,79 @@
     ].filter(Boolean));
   }
 
+  /* The top bar, laid out like Figma's or Canva's: flat icon buttons, no boxes.
+     left:   logo · Filer ▾ | undo redo | Tekst Prisliste CI-tilstand (tools, icons with tooltips)
+     centre: the shop / the proposal's name (edit in place) · the Prisjusteringer chip
+     right:  Oversigt · Kort 100% ▾ · Admin ⚙ (admins) · the seller's avatar ▾ | Relaterede produkter · Print / PDF
+     Up to 1024 px (iPad portrait, phones) the rest is in ⋯ (moreMenu). */
   function buildTopbar() {
-    let sellerBtn;
-    const tb = (id, ic, label, fn, opts) => h('button.tbtn' + ((opts && opts.cls) || ''), { id, title: ((opts && opts.tip) || label) + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), onclick: fn }, icon(ic), opts && opts.text && h('span', null, label));
-    const menuBtn = (id, label, items, opts) => h('button.tbtn.menu' + ((opts && opts.cls) || ''), { id, title: (opts && opts.tip) || label, 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, items(), opts && opts.right) },
-      opts && opts.icon ? icon(opts.icon) : null, h('span.ml', null, label), icon('down', 12));
-    const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'),
-      onchange: () => { store.doc.name = name.value.trim(); store.commit(); } });
-    // the proposal's name is always readable: the field is as wide as its text (120–320 px; ellipsis beyond that)
+    const ib = (id, ic, tip, fn, opts) => h('button.tb-i' + ((opts && opts.cls) || ''), { id, title: tip + ((opts && opts.key) ? ' (' + opts.key + ')' : ''), 'aria-label': tip, onclick: fn }, icon(ic, 17), opts && opts.text ? h('span', null, opts.text) : null);
+    const sep = () => h('i.tb-sep');
+    const dropBtn = (id, label, items, opts) => h('button.tb-i.tb-menu', { id, title: (opts && opts.tip) || label, 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, items(), opts && opts.right) },
+      opts && opts.icon ? icon(opts.icon, 16) : null, label ? h('span.ml', null, label) : null, icon('down', 11));
+    const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout). Click to rename.', 'Tilbuddets navn (vises på printet). Klik for at omdøbe.'),
+      onchange: () => { store.doc.name = name.value.trim(); store.commit(); }, onkeydown: (e) => { if (e.key === 'Enter' || e.key === 'Escape') { if (e.key === 'Escape') name.value = store.doc.name || ''; name.blur(); } } });
+    // the proposal's name is always readable: the field is as wide as its text (120–340 px; ellipsis beyond that)
     const ruler = document.createElement('canvas').getContext('2d');
-    const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 26; name.style.width = Math.round(Math.max(120, Math.min(320, w))) + 'px'; };
+    const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(120, Math.min(340, w))) + 'px'; };
     name.addEventListener('input', fitName);
-    const scale = Pn.scaleStepper();
-    const undo = tb('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = tb('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
-    const prices = tb('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { text: 1, key: 'F3' });
-    const ci = tb('tb-ci', 'plan', t('CI mode', 'CI-tilstand'), () => C().setCI(!store.doc.ci), { text: 1 });
+    const shopCrumb = h('span.tb-crumb');
+    const undo = ib('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = ib('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
+    const text = ib('tb-text', 'text', t('Add text', 'Tilføj tekst'), () => C().addText(), { key: 'Alt+T' });
+    const prices = ib('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { key: 'F3' });
+    const ci = ib('tb-ci', 'plan', t('CI mode: marks on a floor plan', 'CI-tilstand: mærker på en plantegning'), () => C().setCI(!store.doc.ci));
+    const layers = ib('tb-layers', 'layers', t('Overview: everything on the canvas', 'Oversigt: alt på lærredet'), () => Pn.layers(), { key: 'Alt+1' });
+    // card size, like Figma's zoom menu: the percentage, and a menu with − / + and common sizes
+    const scaleTxt = h('span.ml'), STEPS = [0.6, 0.8, 1, 1.25];
+    const scaleBtn = h('button.tb-i.tb-menu#tb-scale', { title: t('Card size relative to the A4 page', 'Kortstørrelse i forhold til A4-siden'), onclick: (e) => dropAt(e.currentTarget, [
+      { head: t('Card size', 'Kortstørrelse') }, { el: Pn.scaleStepper() }, 'sep',
+      ...STEPS.map((v) => ({ label: Math.round(v * 100) + '%', on: Math.abs((store.doc.cardScale || 1) - v) < 0.001, fn: () => C().setCardScale(v, true) })),
+      'sep', { label: t('Fit to window', 'Tilpas til vindue'), icon: 'fit', key: 'Shift+1', fn: () => C().fit() }], true) }, icon('scale', 16), scaleTxt, icon('down', 11));
     // "Relaterede produkter": cables for the connections without one and the website's accessories; the badge counts the connections without a cable
-    const done = tb('tb-complete', 'plus', t('Related products', 'Relaterede produkter'), () => HP.complete.open(), { text: 1, cls: '.primary' }), doneN = h('span.badge');
-    done.append(doneN);
+    const doneN = h('span.badge'), done = h('button.tb-btn#tb-complete', { onclick: () => HP.complete.open() }, icon('plus', 15), h('span.tl', null, t('Related products', 'Relaterede produkter')), doneN);
     const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
-    const layers = tb('tb-layers', 'layers', t('Overview', 'Oversigt'), () => Pn.layers(), { text: 1, key: 'Alt+1', tip: t('Overview: everything on the canvas', 'Oversigt: alt på lærredet') });
-    const admin = menuBtn('tb-admin', 'Admin', adminItems, { right: 1, icon: 'gear', tip: t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv') }), adminN = h('span.badge');
-    admin.insertBefore(adminN, admin.lastChild);
-    const file = menuBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, project prices', 'Tilbuddet: nyt, projekter, del, print, projektpriser') });
+    const print = h('button.tb-btn.primary#tb-print', { title: t('Print / PDF (Ctrl+P)', 'Print / PDF (Ctrl+P)'), onclick: () => HP.cover.dialog() }, icon('print', 15), h('span.tl', null, t('Print / PDF', 'Print / PDF')));
+    const adminN = h('i.tb-dot'), admin = h('button.tb-i.tb-menu#tb-admin', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, adminItems(), true) }, icon('gear', 17), adminN, icon('down', 11));
+    const avatar = h('span.tb-av'), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, avatar, icon('down', 11));
+    const file = dropBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, price adjustments', 'Tilbuddet: nyt, projekter, del, print, prisjusteringer') });
+    // the Prisjusteringer chip: shown while the proposal has price adjustments; click edits them, × clears them (Undo in the toast)
+    const ppTxt = h('span.ppc-t'), ppChip = h('.tb-pp#tb-pp', { hidden: true },
+      h('button.ppc', { onclick: () => Pn.projectPrices() }, icon('tag', 13), h('span.ppc-l', null, t('Price adjustments', 'Prisjusteringer')), ppTxt),
+      h('button.ppc-x', { title: t('Remove all price adjustments (Undo in the message)', 'Fjern alle prisjusteringer (Fortryd i beskeden)'), onclick: () => Pn.clearProjectPrices() }, icon('x', 12)));
     const bar = h('header#topbar', null,
-      h('button.tbtn#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus'), h('span', null, t('Products', 'Produkter'))),
-      h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
-      h('.tgroup#tb-filegrp', null, file),
-      name,
-      h('.tgroup#tb-edit', null, undo, redo),
-      h('.tgroup#tb-insert', null, tb('tb-text', 'text', t('Text', 'Tekst'), () => C().addText(), { text: 1 }), prices, done, ci),
-      h('.tgroup#tb-scale', null, scale),
-      h('.tgroup#tb-view', null, layers),
-      h('.tgroup#tb-printgrp', null, tb('tb-print', 'print', t('Print / PDF', 'Print / PDF'), () => HP.cover.dialog(), { text: 1, key: 'Ctrl+P', cls: '.primary' })),
-      h('.spacer'),
-      h('.tgroup.admin#tb-admingrp', null, admin),
-      h('button.tbtn#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more')),
-      h('.tgroup#tb-sellergrp', null, (sellerBtn = h('button.tbtn.menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, icon('user'), h('span.ml'), icon('down', 12)))));
-    const drawSeller = () => { const s = HP.seller(); sellerBtn.querySelector('.ml').textContent = s ? s.name.split(' ')[0] : t('Seller', 'Sælger'); sellerBtn.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger'); };
+      h('.tb-left', null,
+        h('button.tb-btn.primary#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus', 15), h('span', null, t('Products', 'Produkter'))),
+        h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
+        h('.tb-grp#tb-filegrp', null, file), sep(),
+        h('.tb-grp#tb-edit', null, undo, redo), sep(),
+        h('.tb-grp#tb-insert', null, text, prices, ci)),
+      h('.tb-mid', null, shopCrumb, name, ppChip),
+      h('.tb-right', null,
+        h('.tb-grp#tb-view', null, layers, scaleBtn), sep(),
+        h('.tb-grp#tb-admingrp', null, admin),
+        h('.tb-grp#tb-sellergrp', null, seller),
+        h('.tb-grp#tb-actions', null, done, print),
+        h('button.tb-i#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more', 17))));
+    const drawSeller = () => {
+      const s = HP.seller(), nm = s ? s.name : '', ini = nm ? nm.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase() : '?';
+      avatar.textContent = ini; seller.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger');
+      const sp = HP.shopProfile(); shopCrumb.textContent = sp.name ? sp.name : HP.shop() ? t('Shop ', 'Butik ') + HP.shop() : ''; shopCrumb.hidden = !shopCrumb.textContent;
+    };
     drawSeller(); HP.on('seller', drawSeller);
     const sync = () => {
       undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
       layers.classList.toggle('on', !!(Pn.layersOpen && Pn.layersOpen()));
+      scaleTxt.textContent = Math.round((store.doc.cardScale || 1) * 100) + '%';
       if (document.activeElement !== name) name.value = store.doc.name || '';
       fitName();
       bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
-      const n = cat.dirtyCount(); adminN.textContent = n || ''; adminN.hidden = !n;
-      admin.title = n ? t(n + ' unpublished change(s). Admin menu: publish to all shops.', n + ' ikke-udgivne ændring(er). Admin-menuen: udgiv til alle butikker.') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
-      file.classList.toggle('dot', !!(store.doc.pr && Pn.hasProjectPrices && Pn.hasProjectPrices()));
+      const n = cat.dirtyCount(); adminN.hidden = !n;
+      admin.title = n ? t('Admin · ' + n + ' unpublished change(s)', 'Admin · ' + n + ' ikke-udgivne ændring(er)') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
+      { const ps = Pn.priceState(); ppChip.hidden = !ps; if (ps) { ppTxt.textContent = ps.text; ppChip.classList.toggle('away', !ps.active);
+        ppChip.firstChild.title = ps.active ? t('This proposal has price adjustments: ', 'Tilbuddet har prisjusteringer: ') + ps.text + t(' against the website prices. Click to edit.', ' i forhold til hjemmesidens priser. Klik for at redigere.') + (ps.away ? ' ' + ps.away + t(' saved for products not in the price list.', ' gemt for varer, der ikke er i prislisten.') : '')
+          : ps.away + t(' price adjustment(s) saved for products not in the price list now. Click to see them.', ' prisjustering(er) gemt for varer, der ikke er i prislisten nu. Klik for at se dem.'); } }
     };
     HP.on('doc', sync); HP.on('catalog', sync); HP.on('admin', sync); HP.on('layers', sync);
     setTimeout(sync);
@@ -750,7 +773,7 @@
   /* ---------- Oversigt: what is on the canvas, like layers in Photoshop ----------
      Topmost first. Click selects (Ctrl/⌘ adds, Shift selects a range), double-click zooms to it, hovering outlines it on the canvas,
      right-click opens its menu, dragging a row up or down changes what lies on top. A CI mark letter is one row (all its marks).
-     Each row: its price (click: Projektpriser), hide (not drawn, printed or priced while hidden), "in the price list", delete.
+     Each row: its price (click: Prisjusteringer), hide (not drawn, printed or priced while hidden), "in the price list", delete.
      Right-click a row that is part of the selection: the menu for the whole selection, as on the canvas. Alt+1 or Oversigt in the
      top bar; open by default. */
   let layersEl = null;
@@ -854,7 +877,7 @@
     HP.on('doc', drawLayers); HP.on('sel', drawLayers); HP.on('catalog', drawLayers);
   }
 
-  /* ---------- project prices ----------
+  /* ---------- price adjustments ----------
      Prices and discounts for this proposal only (d.pr; the catalogue is not touched), the way Business Central's POS works: the
      line discounts are the truth (d.pr.l[key].d, kr), everything else follows from them and responds at once:
        - a line: its unit price (Ændr pris; empty = the website's), its discount in kr or in %;
@@ -864,7 +887,21 @@
          saving is counted from the normal price. "Også på kampagnevarer" decides whether a total is spread over campaign lines too.
      Every change is one Undo step. The price list, the cover, the customer's page and the order lines follow (C.applyPr). */
   Pn.hasProjectPrices = () => HP.hasPr(store.doc.pr);
-  Pn.priceSummary = () => { if (!Pn.hasProjectPrices()) return ''; const r = C().priceRows(), off = r.list.reduce((s, x) => s + x.list * x.qty, 0) - r.total; return off > 0 ? '−' + HP.money(off) : t('changed', 'ændret'); };
+  // what the price adjustments come to: kroner off the website's prices (or "ændret" when prices were raised), else how many are only
+  // saved for products not in the price list now
+  Pn.priceState = () => {
+    const d = store.doc; if (!HP.hasPr(d.pr)) return null;
+    const R = C().priceRows(), keys = new Set(R.list.map((r) => r.key)), off = R.list.reduce((s, x) => s + x.list * x.qty, 0) - R.total;
+    const away = Object.keys((d.pr && d.pr.l) || {}).filter((k) => !keys.has(k)).length, active = R.custom;
+    return { active, off, away, text: active ? (off > 0 ? '−' + HP.money(off) : off < 0 ? '+' + HP.money(-off) : t('changed', 'ændret')) : away + ' ' + t('saved', 'gemt') };
+  };
+  Pn.priceSummary = () => { const s = Pn.priceState(); return s ? s.text : ''; };
+  // clear every price adjustment at once, with Undo in the toast (no question first)
+  Pn.clearProjectPrices = () => {
+    if (!HP.hasPr(store.doc.pr)) return;
+    delete store.doc.pr; store.commit();
+    HP.toast(t('Price adjustments removed', 'Prisjusteringer fjernet'), { kind: 'ok', ms: 7000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
   // spread an amount over lines in proportion to their weight: whole kroner, the remainder on the largest, never more than a line's weight
   const spread = (total, weights) => {
     const W = weights.reduce((a, b) => a + b, 0); if (!W || total <= 0) return weights.map(() => 0);
@@ -912,7 +949,7 @@
       tile(t('Total Discount %', 'Total rabat %'), t('%, spread over the lines', '%, fordelt på linjerne'), () => focusIn('input.tp'), '', 'minus'),
       tile(t('Reset Discounts', 'Nulstil rabatter'), t('back to the website prices', 'tilbage til hjemmesidens priser'), () => {
         if (!Pn.hasProjectPrices()) return;
-        if (!confirm(t('Remove all project prices and discounts from this proposal?', 'Fjern alle projektpriser og rabatter fra tilbuddet?'))) return;
+        if (!confirm(t('Remove all price adjustments and discounts from this proposal?', 'Fjern alle prisjusteringer og rabatter fra tilbuddet?'))) return;
         delete d.pr; commit(); HP.toast(t('Back to the website prices', 'Tilbage til hjemmesidens priser'), { kind: 'ok', action: { label: t('Undo', 'Fortryd'), fn: () => { store.undo(); draw(); } } });
       }, '.reset', 'undo'),
       tile(t('Change Price', 'Ændr pris'), t('unit price of the selected line', 'enhedspris på den valgte linje'), () => needLine('up'), '', 'edit'));
@@ -990,7 +1027,7 @@
     }
     const body = h('.pp', null, h('p.muted.pp-intro', null, t('For this proposal only: the catalogue prices are not changed. Change one field and the rest follows. The price list, the cover, the customer\'s page and the order lines follow too.', 'Kun for dette tilbud: katalogets priser ændres ikke. Ændr ét felt, så følger resten med. Prislisten, forsiden, kundens side og ordrelinjerne følger også med.')), acts, table, sum);
     draw();
-    const close = HP.modal({ title: t('Project prices', 'Projektpriser'), size: 'lg.ppw', body, foot: [h('button.btn.primary', { onclick: () => close() }, t('Done', 'Færdig'))] });
+    const close = HP.modal({ title: t('Price adjustments', 'Prisjusteringer'), size: 'lg.ppw', body, foot: [h('button.btn.primary', { onclick: () => close() }, t('Done', 'Færdig'))] });
     if (focusKey) setTimeout(() => focusIn('.pp-row[data-key="' + CSS.escape(focusKey) + '"] input.up'), 60);
   };
 

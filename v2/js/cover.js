@@ -81,7 +81,10 @@
       h('label', null, t('Customer', 'Kunde'), name),
       h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
       h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
-      h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.'))),
+      h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.')),
+      // a reminder before printing: the proposal has price adjustments (e.g. a colleague's link or an older proposal)
+      (() => { const ps = HP.panels.priceState(); return ps && ps.active ? h('.pp-note', null, icon('tag', 14), h('span', null, t('This proposal has price adjustments: ', 'Tilbuddet har prisjusteringer: '), h('b', null, ps.text), t(' in all', ' i alt')),
+        h('button.linkbtn', { onclick: () => { close(); HP.panels.projectPrices(); } }, t('Edit', 'Rediger'))) : null; })()),
       foot: [h('button.btn', { onclick: () => { st(); csv(); HP.stat('Ordrelinjer (CSV)'); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
         h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), h('button.btn.primary', { onclick: go }, icon('print', 14), t('Print', 'Print'))] });
   }
@@ -91,7 +94,7 @@
     const { list, total, tdisc } = C().priceRows(), d = store.doc, cv = d.cv || {};
     const num = (n) => (Math.round(n * 100) / 100).toFixed(2).replace('.', ',');
     const cell = (v) => { const s = String(v == null ? '' : v); return /[;"\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-    // as a Business Central sales line: unit price (the website's, or the one set in Projektpriser) and a line discount amount, which
+    // as a Business Central sales line: unit price (the website's, or the one set in Prisjusteringer) and a line discount amount, which
     // includes the line's share of a total discount, so the lines add up to the total
     const rows = [['Varenr', 'Beskrivelse', 'Antal', 'Enhed', 'Førpris', 'Enhedspris', 'Linjerabat beløb', 'Linjerabat %', 'Beløb']];
     list.forEach((r) => { const ld = r.ldisc + r.tshare, gross = r.price * r.qty;
