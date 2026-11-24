@@ -159,8 +159,12 @@ svg.wires { overflow: visible; width: 1px; height: 1px; pointer-events: none; }
 .card.missing { border-style: dashed; }
 .card.ci { border: 0; background: none; } .card.ci .card-img { border: 0; background: none; } .card.ci img { max-width: 100%; max-height: 100%; mix-blend-mode: multiply; }
 .ci-name { font: 8px/1.1 var(--mono); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--fg); }
-html[data-theme="dark"] .world.ci .page { background: #fff; --fg: #141518; }
-html[data-theme="dark"] .world.ci .ci-name { color: #141518; }
+/* dark theme, CI mode: the page stays dark like the rest of the canvas; the floor plan is shown inverted (light lines on the
+   dark page, colours kept by the hue turn) and product pictures sit on a light tile. Print and the customer's page always
+   use the light originals (#print-root and #view are outside #viewport). */
+html[data-theme="dark"] #viewport .world.ci .plan img { filter: invert(.89) hue-rotate(180deg); }   /* white paper → the dark page colour, black lines → light grey */
+html[data-theme="dark"] #viewport .card.ci .card-img { background: #e8e8e4; border-radius: 4px; }
+html[data-theme="dark"] #viewport .tool .ttext { stroke: var(--paper); }
 
 .note { background: var(--paper); border: 1px solid var(--fg); display: flex; flex-direction: column; }
 .note-grip { height: 12px; cursor: grab; background: repeating-linear-gradient(90deg, var(--line) 0 2px, transparent 2px 5px); border-bottom: 1px solid var(--line); }
