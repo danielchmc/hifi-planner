@@ -215,7 +215,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-0850`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261124-0910`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -223,6 +223,10 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
 - **A product HiFi Klubben does not sell** (our own card, no SKU) is marked discontinued rather than deleted (`frozen.gone` in `data/own.js`), so drawings that have it still open: *Sinox SXA 1800 - DIN Female - 4xRCA*, 2026-11-23.
 - These were applied by the one-off `tools/fix-2026-11-23-combo-sinox.js` (safe to run again).
 - **Cables with named variants:** a cable whose website variants have names without digits (colours, plug types) gets them as variants, like other products (`webFacts` in `tools/site-match.js`): Sonos Combo Adapter and Line-In Adapter (Sort, Hvid), pedestal Power Cable 7,5 m (four colours), ThunderBird BiWire Jumpers (banan/spade combinations). Variants with digits are lengths, as before.
+
+## Cable labels on wires
+
+A wire's cable label sits on the wire where it takes the least room (`placeChip` in `js/canvas.js`, since 2026-11-24): on the longest horizontal stretch of the wire it fits on (8 units clear of the bends), else turned 90° on a vertical stretch, reading upwards (`.chip.vert`), else across the middle of the wire as before. A label slides along its stretch to stay clear of labels already placed. It is the same on screen, in the PDF and in the customer view.
 
 ## Share links
 

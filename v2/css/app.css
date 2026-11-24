@@ -929,3 +929,5 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .kat-qty { margin-top: 5px; visibility: hidden; }
 .kat-tile.sel .kat-qty { visibility: visible; }
 .kat-qty .mval { width: 22px; }
+/* a wire's cable label turned to sit on a vertical stretch of the wire (no room for it across) */
+.chip.vert { transform: translate(-50%, -50%) rotate(-90deg); }

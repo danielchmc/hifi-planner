@@ -478,8 +478,39 @@
     const l = pts[pts.length - 1];
     return d + ' L' + l[0] + ',' + l[1];
   }
+  /* A wire's cable label sits on the wire where it takes the least room: on the longest horizontal stretch it fits on, else turned
+     90° on a vertical stretch (reading upwards), else (no stretch long enough) across the middle as before. A label slides along its
+     stretch to stay clear of labels already placed. Sizes are measured once per text (world units, so the zoom does not matter). */
+  const chipSize = new Map();
+  function placeChip(el, pts, taken) {
+    const k = el.className + '|' + el.textContent;
+    let wh = chipSize.get(k);
+    if (!wh) { wh = [el.offsetWidth, el.offsetHeight]; if (wh[0]) chipSize.set(k, wh); }
+    const [w, hh] = wh, PAD = 8, hit = (r) => taken.some((q) => r.x < q.x + q.w + 2 && q.x < r.x + r.w + 2 && r.y < q.y + q.h + 2 && q.y < r.y + r.h + 2);
+    if (w) {
+      const P = pts.filter((q, i) => i === 0 || i === pts.length - 1 || !((Math.abs(pts[i - 1][0] - q[0]) < 0.5 && Math.abs(pts[i + 1][0] - q[0]) < 0.5) || (Math.abs(pts[i - 1][1] - q[1]) < 0.5 && Math.abs(pts[i + 1][1] - q[1]) < 0.5)));
+      const segs = [];
+      for (let i = 0; i < P.length - 1; i++) {
+        const [x0, y0] = P[i], [x1, y1] = P[i + 1], horiz = Math.abs(y1 - y0) < 0.5, len = horiz ? Math.abs(x1 - x0) : Math.abs(y1 - y0);
+        if (len >= w + 2 * PAD) segs.push({ x0, y0, x1, y1, horiz, len });
+      }
+      segs.sort((a, b) => (b.horiz - a.horiz) || b.len - a.len);
+      for (const sg of segs) {
+        const free = (sg.len - w - 2 * PAD) / 2, cx0 = (sg.x0 + sg.x1) / 2, cy0 = (sg.y0 + sg.y1) / 2;
+        for (let n = 0; n < 21; n++) {
+          const off = (n % 2 ? 1 : -1) * Math.ceil(n / 2) * 12; if (Math.abs(off) > free) continue;
+          const cx = sg.horiz ? cx0 + off : cx0, cy = sg.horiz ? cy0 : cy0 + off;
+          const r = sg.horiz ? { x: cx - w / 2, y: cy - hh / 2, w, h: hh } : { x: cx - hh / 2, y: cy - w / 2, w: hh, h: w };
+          if (hit(r)) continue;
+          taken.push(r); el.style.left = cx + 'px'; el.style.top = cy + 'px'; el.classList.toggle('vert', !sg.horiz); return;
+        }
+      }
+    }
+    const l = parseFloat(el.style.left), tp = parseFloat(el.style.top); // as before: across the middle of the wire
+    taken.push({ x: l - w / 2, y: tp - hh / 2, w, h: hh });
+  }
   function renderWires() {
-    const d = store.doc;
+    const d = store.doc, taken = [];
     wiresSvg.textContent = ''; chipsEl.textContent = ''; routes.clear();
     world.querySelectorAll('.port.on').forEach((e) => e.classList.remove('on'));
     const bySrc = {};
@@ -503,6 +534,7 @@
             + (info.ad ? (info.cable ? '\n+ ' : '') + info.ad.brand + ' ' + info.ad.name + ' · ' + HP.money(HP.priceOf(info.ad).price) : '')
             + (pw ? '\n⚠ ' + info.plugs.map((x) => t(x.en, x.da)).join('\n⚠ ') : '') },
           bad ? h('span.no-print', null, icon('warn', 11)) : null, (info.cable ? C.cableName(c, info.cable).replace(/\s+-\s+/g, ' ') : info.ad ? '' : t('Mismatch', 'Passer ikke')) + (info.cable ? adTxt : adTxt.slice(3))));
+        placeChip(chipsEl.lastChild, r.pts, taken);
       }
     });
   }
