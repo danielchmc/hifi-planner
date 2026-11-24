@@ -313,9 +313,28 @@
       { label: HP.lang() === 'da' ? 'English' : 'Dansk', icon: 'globe', fn: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } },
       { label: dark ? t('Light theme', 'Lyst tema') : t('Dark theme', 'Mørkt tema'), icon: dark ? 'sun' : 'moon', key: 'F1', fn: Pn.toggleTheme },
       { label: t('Settings', 'Indstillinger'), icon: 'gear', fn: Pn.settings },
-      'sep',
-      { label: t('Switch seller', 'Skift sælger'), icon: 'user', fn: () => Pn.switchSeller() },
     ].filter(Boolean);
+  };
+  // the shop's sellers on this PC, for one-click switching from the avatar menu (and ⋯ on tablets)
+  const initials = (nm) => (nm || '').split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase() || '?';
+  const sellerItems = () => {
+    const cur = HP.seller(), sp = HP.shopProfile();
+    return [
+      { head: sp.name ? t('Sellers in ', 'Sælgere i ') + sp.name : t('Sellers', 'Sælgere') },
+      ...HP.sellers(HP.shop()).map((x) => cur && x.no === cur.no
+        ? { label: x.name, av: initials(x.name), on: true, fn: () => {} }
+        : { label: x.name, av: initials(x.name), fn: () => Pn.useSeller(x) }),
+      { label: t('Another seller…', 'Anden sælger…'), icon: 'user-plus', fn: () => Pn.switchSeller() },
+      'sep',
+    ];
+  };
+  // switch straight to a seller already on this PC. Their earlier consent to statistics stands; switching from the menu
+  // never counts as having seen the notice (that is only shown on the login screen).
+  Pn.useSeller = (x) => {
+    const shown = HP.loginNoticeShown; HP.loginNoticeShown = false;
+    LS.set('seller', x.no); HP.emit('seller'); HP.emit('doc');
+    HP.loginNoticeShown = shown;
+    HP.toast(t('Signed in as ', 'Logget ind som ') + x.name, { kind: 'ok' });
   };
   const dropAt = (btn, items, right) => { const r = btn.getBoundingClientRect(); HP.menu(right ? r.right - 250 : r.left, r.bottom + 4, items); };
 
@@ -332,7 +351,7 @@
       { label: t('CI mode', 'CI-tilstand'), icon: 'plan', on: !!d.ci, fn: () => C().setCI(!d.ci) },
       { el: Pn.scaleStepper() },
       admin ? 'sep' : null, ...(admin ? adminItems() : []),
-      'sep', ...userItems().filter((x) => !x.head),
+      'sep', ...sellerItems(), ...userItems().filter((x) => !x.head),
     ].filter(Boolean));
   }
 
@@ -370,7 +389,7 @@
     HP.on('doc', doneUpd); setTimeout(doneUpd);
     const print = h('button.tb-btn.primary#tb-print', { title: t('Print / PDF (Ctrl+P)', 'Print / PDF (Ctrl+P)'), onclick: () => HP.cover.dialog() }, icon('print', 15), h('span.tl', null, t('Print / PDF', 'Print / PDF')));
     const adminN = h('i.tb-dot'), admin = h('button.tb-i.tb-menu#tb-admin', { 'aria-haspopup': 'menu', title: t('Admin: product editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv'), onclick: (e) => dropAt(e.currentTarget, adminItems(), true) }, icon('shield', 17), h('span.tl', null, 'Admin'), adminN, icon('down', 11));
-    const avIni = h('b'), avatar = h('span.tb-av', null, avIni), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, userItems(), true) }, avatar, icon('down', 11));
+    const avIni = h('b'), avatar = h('span.tb-av', null, avIni), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, [...sellerItems(), ...userItems().filter((x) => !x.head)], true) }, avatar, icon('down', 11));
     const file = dropBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, price adjustments', 'Tilbuddet: nyt, projekter, del, print, prisjusteringer') });
     // the Prisjusteringer chip: shown while the proposal has price adjustments; click edits them, × clears them (Undo in the toast)
     const ppTxt = h('span.ppc-t'), ppChip = h('.tb-pp#tb-pp', { hidden: true },
@@ -391,8 +410,8 @@
         h('.tb-grp#tb-actions', null, done, print),
         h('button.tb-i#tb-more', { title: t('More', 'Mere'), onclick: (e) => moreMenu(e.currentTarget) }, icon('more', 17))));
     const drawSeller = () => {
-      const s = HP.seller(), nm = s ? s.name : '', ini = nm ? nm.split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase() : '?';
-      avIni.textContent = ini; seller.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Help, language, theme, settings, switch seller', 'Hjælp, sprog, tema, indstillinger, skift sælger');
+      const s = HP.seller(), ini = initials(s && s.name);
+      avIni.textContent = ini; seller.title = (s ? s.name + ' · ' + s.no + '. ' : '') + t('Switch seller, help, language, theme, settings', 'Skift sælger, hjælp, sprog, tema, indstillinger');
       const sp = HP.shopProfile(); shopCrumb.textContent = sp.name ? sp.name : HP.shop() ? t('Shop ', 'Butik ') + HP.shop() : ''; shopCrumb.hidden = !shopCrumb.textContent;
     };
     drawSeller(); HP.on('seller', drawSeller);

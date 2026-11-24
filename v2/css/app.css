@@ -1310,3 +1310,9 @@ h2 { font-size: 15px; }
 /* the seller's initials: centred on the capitals, not on the font's line box (and no letter-spacing pushing them left) */
 .tb-av { letter-spacing: 0; font: 600 11px/1 var(--ui); }
 .tb-av b { display: block; font: inherit; text-box: trim-both cap alphabetic; }
+/* a seller in the avatar menu: their initials in a small circle; the signed-in one is filled and ticked */
+#ctxmenu .mav { width: 20px; height: 20px; margin: 0 -2px; border-radius: 50%; display: grid; place-items: center; flex: none; background: var(--panel2); box-shadow: inset 0 0 0 1px var(--line); color: var(--fg); font: 600 9px/1 var(--ui); }
+#ctxmenu .mav b { display: block; font: inherit; text-box: trim-both cap alphabetic; }
+#ctxmenu .mi.on .mav { background: var(--fg); color: var(--panel); box-shadow: none; }
+#ctxmenu .mi.on { cursor: default; } #ctxmenu .mi.on:hover { background: none; }
+#ctxmenu { max-height: calc(100dvh - 12px); overflow-y: auto; }   /* long menus (⋯ on a tablet) scroll instead of running off the screen */
