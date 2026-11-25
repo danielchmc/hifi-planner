@@ -1,6 +1,7 @@
 /* HiFi Planner v2 — QR code generator (byte mode, versions 1–40, error correction L/M/Q/H, all eight masks scored).
    A compact port of the standard algorithm as in Project Nayuki's QR Code generator (MIT licence). No dependencies.
-   HP.qr.svg(text, { ecc: 'M', quiet: 4 }) returns an <svg> string; HP.qr.matrix(text, ecc) the module grid. */
+   HP.qr.svg(text, { ecc: 'M', quiet: 4 }) returns an <svg> string; HP.qr.matrix(text, ecc) the module grid. text may be a list of
+   segments, [{ text }, { text, alnum: true }], to put a part in alphanumeric mode (byte and alphanumeric modes are supported). */
 (function () {
   const HP = (window.HP = window.HP || {});
   const ECL = { L: [0, 1], M: [1, 0], Q: [2, 3], H: [3, 2] }; // [table row, format bits]
@@ -22,16 +23,24 @@
     for (let i = 0; i < deg; i++) { for (let j = 0; j < r.length; j++) { r[j] = mul(r[j], root); if (j + 1 < r.length) r[j] ^= r[j + 1]; } root = mul(root, 2); } return r; };
   const remainder = (data, div) => { const r = div.map(() => 0); for (const b of data) { const f = b ^ r.shift(); r.push(0); div.forEach((c, i) => { r[i] ^= mul(c, f); }); } return r; };
   const bit = (x, i) => ((x >>> i) & 1) !== 0;
+  const ALNUM = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:';
 
   function matrix(text, eccName) {
-    const bytes = Array.from(new TextEncoder().encode(String(text)));
+    // text, or segments [{ text }, { text, alnum: true }]: an alphanumeric segment (0-9 A-Z space $ % * + - . / :) takes 5.5 bits
+    // a character instead of 8, so a link whose payload is written in those characters fits in a much smaller code
+    const segs = (Array.isArray(text) ? text : [{ text }]).map((s) => s.alnum ? { alnum: true, chars: String(s.text) } : { bytes: Array.from(new TextEncoder().encode(String(s.text))) });
+    const cntBits = (s, v) => s.alnum ? (v < 10 ? 9 : v < 27 ? 11 : 13) : (v < 10 ? 8 : 16);
+    const segBits = (s, v) => 4 + cntBits(s, v) + (s.alnum ? Math.floor(s.chars.length / 2) * 11 + (s.chars.length % 2) * 6 : s.bytes.length * 8);
     let ecc = ECL[eccName || 'M'] || ECL.M, ver = 0;
-    for (let v = 1; v <= 40; v++) { const cap = dataCodewords(v, ecc[0]) * 8, need = 4 + (v < 10 ? 8 : 16) + bytes.length * 8; if (need <= cap) { ver = v; break; } }
+    for (let v = 1; v <= 40; v++) { const cap = dataCodewords(v, ecc[0]) * 8, need = segs.reduce((a, s) => a + segBits(s, v), 0); if (need <= cap) { ver = v; break; } }
     if (!ver) throw new Error('Text too long for a QR code');
     const e = ecc[0], size = ver * 4 + 17;
-    // data bits: byte mode, count, data, terminator, padding
+    // data bits: each segment's mode, count and data, then terminator and padding
     const bb = [], push = (val, len) => { for (let i = len - 1; i >= 0; i--) bb.push((val >>> i) & 1); };
-    push(4, 4); push(bytes.length, ver < 10 ? 8 : 16); bytes.forEach((b) => push(b, 8));
+    segs.forEach((s) => {
+      if (s.alnum) { push(2, 4); push(s.chars.length, cntBits(s, ver)); for (let i = 0; i < s.chars.length; i += 2) { const a = ALNUM.indexOf(s.chars[i]); if (i + 1 < s.chars.length) push(a * 45 + ALNUM.indexOf(s.chars[i + 1]), 11); else push(a, 6); } }
+      else { push(4, 4); push(s.bytes.length, cntBits(s, ver)); s.bytes.forEach((b) => push(b, 8)); }
+    });
     const capBits = dataCodewords(ver, e) * 8;
     push(0, Math.min(4, capBits - bb.length)); push(0, (8 - (bb.length % 8)) % 8);
     for (let p = 0xec; bb.length < capBits; p ^= 0xec ^ 0x11) push(p, 8);
@@ -94,7 +103,7 @@
   function svg(text, o) {
     o = o || {}; const q = o.quiet == null ? 4 : o.quiet, { size, mods } = matrix(text, o.ecc), n = size + q * 2;
     let d = ''; for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) if (mods[y][x]) d += 'M' + (x + q) + ',' + (y + q) + 'h1v1h-1z';
-    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + n + ' ' + n + '" shape-rendering="crispEdges"' + (o.cls ? ' class="' + o.cls + '"' : '') + '><rect width="' + n + '" height="' + n + '" fill="#fff"/><path d="' + d + '" fill="#000"/></svg>';
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + n + ' ' + n + '" shape-rendering="crispEdges"' + (o.cls ? ' class="' + o.cls + '"' : '') + (o.mm ? ' style="width:' + o.mm + 'mm;height:' + o.mm + 'mm"' : '') + '><rect width="' + n + '" height="' + n + '" fill="#fff"/><path d="' + d + '" fill="#000"/></svg>';
   }
   HP.qr = { matrix, svg };
 })();

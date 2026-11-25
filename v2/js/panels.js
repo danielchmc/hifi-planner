@@ -306,12 +306,13 @@
     const d = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = d; LS.set('theme', d); HP.emit('theme');
   };
-  const rename = () => { const d = store.doc, v = prompt(t('Proposal name (shown on the printout)', 'Tilbuddets navn (vises på printet)'), d.name || ''); if (v !== null) { d.name = v.trim(); store.commit(); } };
+  // Omdøb: the name field in the top bar gets the cursor with its text selected (Enter keeps, Esc cancels), no browser dialog
+  const rename = () => Pn.focusName && Pn.focusName();
   const flipPage = () => { const d = store.doc; d.orient = d.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); };
   const fileItems = () => {
     const d = store.doc;
     return [
-      { label: t('New proposal (clear canvas)', 'Nyt tilbud (ryd lærredet)'), icon: 'eraser', fn: () => C().clearCanvas() }, // asks to save first (Pn.guard in C.clearCanvas)
+      { label: t('New project…', 'Nyt projekt…'), icon: 'eraser', fn: () => C().clearCanvas() }, // asks to save first (Pn.guard in C.clearCanvas)
       { label: t('Open…', 'Åbn…'), icon: 'folder', key: 'Ctrl+O', fn: Pn.projects },
       ...(() => { const r = Pn.recent(4).filter((p) => p.id !== d.prj); return r.length ? [{ head: t('Recent', 'Seneste') }, ...r.map((p) => ({ label: p.name, icon: 'page', note: new Date(p.date).toLocaleDateString(HP.locale(), { day: 'numeric', month: 'short' }), fn: () => Pn.openProject(p) })), 'sep'] : []; })(),
       { label: t('Save', 'Gem'), icon: 'download', key: 'Ctrl+S', note: Pn.unsaved() ? t('changes', 'ændringer') : '', fn: Pn.save },
@@ -410,6 +411,7 @@
     const ruler = document.createElement('canvas').getContext('2d');
     const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(60, Math.min(340, w))) + 'px'; };
     name.addEventListener('input', fitName);
+    Pn.focusName = () => { setTimeout(() => { name.focus(); name.select(); }, 0); };
     const shopCrumb = h('span.tb-crumb');
     const undo = ib('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = ib('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     // the undo history as a list (like Photoshop's History panel): click a step to go back (or forward) to it
@@ -821,8 +823,10 @@
       foot: [h('button.btn.primary', { onclick: go }, t('Save', 'Gem'))] });
     setTimeout(() => { nameIn.focus(); nameIn.select(); }, 30);
   };
-  Pn.exportFile = () => download((store.doc.name || 'hifi-planner') + '.hifiplan.json', JSON.stringify({ app: 'hifi-planner', v: 2, doc: store.doc, plan: hasPlanSrc() ? store.planSrc : null }));
-  const importIn = h('input', { type: 'file', accept: '.json,application/json', hidden: true, onchange: () => {
+  // a HiFi Planner project file: <name>.hifi (JSON inside, as before; .hifiplan.json files from before 2026-11-25 still open)
+  const fileName = (n) => (String(n || 'HiFi Planner').replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim() || 'HiFi Planner') + '.hifi';
+  Pn.exportFile = () => download(fileName(store.doc.name), JSON.stringify({ app: 'hifi-planner', v: 2, doc: store.doc, plan: hasPlanSrc() ? store.planSrc : null }), 'application/octet-stream');
+  const importIn = h('input', { type: 'file', accept: matchMedia('(pointer: coarse)').matches ? '' : '.hifi,.json,application/json', hidden: true, onchange: () => {
     const f = importIn.files[0]; if (!f) return; const fr = new FileReader();
     fr.onload = () => { try { const j = JSON.parse(fr.result); if (!j.doc || !Array.isArray(j.doc.items)) throw 0; const d = Object.assign({}, j.doc); delete d.prj; store.load(d, j.plan || null); syncSaved(); HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', d.name || f.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } catch (e) { HP.toast(t('That file is not a HiFi Planner project.', 'Filen er ikke et HiFi Planner-projekt.'), { kind: 'error' }); } };
     fr.readAsText(f); importIn.value = '';

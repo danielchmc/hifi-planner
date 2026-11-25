@@ -39,7 +39,7 @@
         h('.cv-contact', null, h('small', null, t('Your adviser', 'Din rådgiver')), h('b', null, cv.s || ''), h('span', null, sh[0] || ''),
           sh[1] ? h('span', null, t('Tel. ', 'Tlf. ') + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null),
         o && o.qr ? h('.cv-qr', null, h('span', { html: o.qr }), h('span.cv-qrtext', null, h('b', null, t('Scan to see your proposal on your phone', 'Scan og se dit tilbud på mobilen')),
-          h('small', null, t('Drawing, products and prices, with links to hifiklubben.dk', 'Tegning, produkter og priser, med links til hifiklubben.dk')),
+          h('small', null, o.lite ? t('Products and prices, with links to hifiklubben.dk', 'Produkter og priser, med links til hifiklubben.dk') : t('Drawing, products and prices, with links to hifiklubben.dk', 'Tegning, produkter og priser, med links til hifiklubben.dk')),
           // the same page as a link, for a customer reading the PDF on a screen (clickable in the PDF)
           o.link ? h('a.cv-link', { href: o.link, target: '_blank', rel: 'noopener' }, t('Or open it here: see the proposal online ↗', 'Eller åbn det her: se tilbuddet online ↗')) : null))
           : o && o.qrTooBig ? h('.cv-qr.none', null, h('small', null, t('Ask your adviser for a link to this proposal.', 'Bed din rådgiver om et link til tilbuddet.')),
@@ -53,12 +53,28 @@
     store.doc.cv = { c: customer || '', s: (seller && seller.name) || '', sh: [sp.name || '', sp.phone || '', sp.email || ''], d: HP.today(), r: related === false ? 0 : 1 };
     store.commit();
   }
+  /* The cover always gets a QR code. The whole proposal travels inside the link, so a big one makes a dense code; tried in turn:
+       1. the whole proposal (drawing included), error correction M, up to version 25 (38 mm on paper)
+       2. the same with error correction L (7 % instead of 15 % repair: fine on a clean printout), up to version 30, printed larger
+       3. products and prices only (HP.share.lite: no drawing), M up to version 25, then L up to version 40, printed larger
+     The printed size keeps every module at least 0.3 mm, which phones read from paper. Only a proposal far beyond any real one
+     (some hundred different products) gets no code, and then the cover says to ask for the link. */
   async function qrFor() {
     // QR: #q=. The clickable link in the PDF: #t=, with ?pdf before it. Without it, the link is the page being printed plus a
     // different #…, which Chrome/Edge treat as a jump inside the document and leave out of the PDF.
-    const url = await HP.share.customerUrl(null, true), link = await HP.share.customerUrl(null, false, true);
-    try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url, link }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url, link }; }
-    catch (e) { return { qrTooBig: true, url, link }; }
+    const link = await HP.share.customerUrl(null, false, true), full = await HP.share.customerUrl(null, true);
+    const lite = await HP.share.customerUrl(HP.share.lite(store.doc), true);
+    const tries = [[full, 'M', MAX_QR_VERSION, false], [full, 'L', 30, false], [lite, 'M', MAX_QR_VERSION, true], [lite, 'L', 40, true]];
+    // the link's payload (after #q=) is written in QR alphanumeric characters (HP.share.pack with qr): encoded as its own segment
+    const segs = (url) => { const i = url.indexOf('#q=') + 3, tail = url.slice(i); return /^[0-9A-Z$*+\-./:]+$/.test(tail) ? [{ text: url.slice(0, i) }, { text: tail, alnum: true }] : url; };
+    for (const [url, ecc, max, isLite] of tries) {
+      try {
+        const m = HP.qr.matrix(segs(url), ecc); if (m.version > max) continue;
+        const mm = Math.max(38, Math.ceil((m.size + 8) * 0.31)); // at least 0.31 mm per module (with the quiet zone)
+        return { qr: HP.qr.svg(segs(url), { ecc, cls: 'qr', mm }), url, link, lite: isLite };
+      } catch (e) { /* too long for this setting: try the next */ }
+    }
+    return { qrTooBig: true, url: full, link };
   }
 
   /* ---------- print dialog ---------- */
@@ -137,8 +153,10 @@
         who ? h('p.view-sign', null, t('Kind regards ', 'Venlig hilsen '), h('b', null, cv.s)) : null,
         reach()),
       h('.view-cover', null, build({ view: true })),
-      h('h2.view-h', null, t('How it all fits together', 'Sådan hænger det sammen')),
-      h('p.view-sub', null, t('Pinch with two fingers to zoom in. Tap a product name to see it on hifiklubben.dk.', 'Knib med to fingre for at zoome ind. Tryk på et produktnavn for at se det på hifiklubben.dk.')));
+      // a QR code that could only hold the products and prices (a very big proposal): no drawing on this page
+      doc.lite ? h('p.view-sub', null, t('The drawing was too big for the QR code. Ask your adviser for the full proposal with the drawing.', 'Tegningen var for stor til QR-koden. Bed din rådgiver om hele tilbuddet med tegningen.')) : [
+        h('h2.view-h', null, t('How it all fits together', 'Sådan hænger det sammen')),
+        h('p.view-sub', null, t('Pinch with two fingers to zoom in. Tap a product name to see it on hifiklubben.dk.', 'Knib med to fingre for at zoome ind. Tryk på et produktnavn for at se det på hifiklubben.dk.'))]);
     const pages = h('.view-pages'); page.append(pages);
     document.body.append(page);
     // the A4 sheets, scaled to the width of the screen. The wires are worked out from the cards' layout at zoom 1, after the fonts
@@ -153,7 +171,7 @@
     };
     if (document.fonts && document.fonts.ready) await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
     await new Promise((r) => setTimeout(r, 60));
-    draw(); window.addEventListener('resize', fit);
+    if (!doc.lite) { draw(); window.addEventListener('resize', fit); }
     if (cv.r !== 0) { const rel = related(who); if (rel) page.append(rel); }
     // statistics: the customer opened the page, and which links they follow (to hifiklubben.dk, to call or write the adviser)
     // one event per kind of click, so Umami's Events view counts them apart; the product's name and SKU go with it
@@ -241,5 +259,5 @@
     } finally { root.setAttribute('style', prev); if (!prev) root.removeAttribute('style'); }
   }
 
-  HP.cover = { build, dialog, csv, viewer, stamp, paginate };
+  HP.cover = { build, dialog, csv, viewer, stamp, paginate, qrFor };
 })();

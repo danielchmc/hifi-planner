@@ -774,7 +774,7 @@
   "Select a card and press Replace, or drop another product on top of it. Cables stay connected to the matching ports.": "Eine Karte auswählen und Ersetzen drücken oder ein anderes Produkt darauf ziehen. Die Kabel bleiben an den passenden Anschlüssen.",
   "Right-click for everything": "Rechtsklick für alles",
   "Right-click a card, a wire or the empty canvas to see every action with its keyboard shortcut. Double-click a product image to show it full screen, for example the rear panel.": "Eine Karte, eine Leitung oder die leere Arbeitsfläche rechtsklicken, um jede Aktion mit Tastenkürzel zu sehen. Ein Produktbild doppelklicken, um es im Vollbild zu zeigen, z. B. die Rückseite.",
-  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New proposal clears the canvas (and can be undone).": "Nicht genug Platz auf einer A4-Seite? Hier alle Karten verkleinern, wie ein Zoom-Menü. Datei → Neues Angebot leert die Arbeitsfläche (rückgängig möglich).",
+  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New project… clears the canvas (and can be undone).": "Nicht genug Platz auf einer A4-Seite? Hier alle Karten verkleinern, wie ein Zoom-Menü. Datei → Neues Projekt… leert die Arbeitsfläche (rückgängig möglich).",
   "Ready-made systems. Click or drag one onto the canvas and adjust from there.": "Fertige Systeme. Eines anklicken oder auf die Arbeitsfläche ziehen und dort anpassen.",
   "The A4 page": "Die A4-Seite",
   "This frame is the printed page. Keep the system inside it. Add more pages with the + on the right, and switch portrait/landscape in the top bar.": "Dieser Rahmen ist die gedruckte Seite. Das System darin halten. Mit dem + rechts weitere Seiten hinzufügen und Hoch-/Querformat in der oberen Leiste wechseln.",
@@ -926,5 +926,8 @@
   "Prices updated from hifiklubben.dk (read ": "Preise von hifiklubben.dk aktualisiert (abgerufen ",
   " Campaign prices are not shown.": " Aktionspreise werden nicht angezeigt.",
   "Price on request": "Preis auf Anfrage im Geschäft",
-  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Die Preise sind {} alt (abgerufen {}), daher werden keine Aktionspreise angezeigt. Prüfen Sie die Preise an der Kasse, bevor Sie sie zusagen."
+  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Die Preise sind {} alt (abgerufen {}), daher werden keine Aktionspreise angezeigt. Prüfen Sie die Preise an der Kasse, bevor Sie sie zusagen.",
+  "New project…": "Neues Projekt…",
+  "Products and prices, with links to hifiklubben.dk": "Produkte und Preise, mit Links zu hifiklubben.dk",
+  "The drawing was too big for the QR code. Ask your adviser for the full proposal with the drawing.": "Die Zeichnung war zu groß für den QR-Code. Bitten Sie Ihren Berater um das vollständige Angebot mit Zeichnung."
 };

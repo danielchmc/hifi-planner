@@ -774,7 +774,7 @@
   "Select a card and press Replace, or drop another product on top of it. Cables stay connected to the matching ports.": "Valitse kortti ja paina Vaihda tai pudota toinen tuote sen päälle. Kaapelit pysyvät sopivissa liitännöissä.",
   "Right-click for everything": "Hiiren oikea kaikkeen",
   "Right-click a card, a wire or the empty canvas to see every action with its keyboard shortcut. Double-click a product image to show it full screen, for example the rear panel.": "Napsauta hiiren oikealla korttia, johtoa tai tyhjää työaluetta nähdäksesi kaikki toiminnot pikanäppäimineen. Kaksoisnapsauta tuotekuvaa näyttääksesi sen koko näytöllä, esim. takapaneelin.",
-  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New proposal clears the canvas (and can be undone).": "Eikö yhdelle A4-sivulle mahdu? Pienennä kaikkia kortteja tästä, kuin zoomausvalikolla. Tiedosto → Uusi tarjous tyhjentää työalueen (voidaan kumota).",
+  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New project… clears the canvas (and can be undone).": "Eikö yhdelle A4-sivulle mahdu? Pienennä kaikkia kortteja tästä, kuin zoomausvalikolla. Tiedosto → Uusi projekti… tyhjentää työalueen (voidaan kumota).",
   "Ready-made systems. Click or drag one onto the canvas and adjust from there.": "Valmiita järjestelmiä. Napsauta tai vedä yksi työalueelle ja muokkaa siitä.",
   "The A4 page": "A4-sivu",
   "This frame is the printed page. Keep the system inside it. Add more pages with the + on the right, and switch portrait/landscape in the top bar.": "Tämä kehys on tulostettava sivu. Pidä järjestelmä sen sisällä. Lisää sivuja oikealla olevalla +:lla ja vaihda pysty/vaaka yläpalkissa.",
@@ -926,5 +926,8 @@
   "Prices updated from hifiklubben.dk (read ": "Hinnat päivitetty hifiklubben.dk:sta (haettu ",
   " Campaign prices are not shown.": " Kampanjahintoja ei näytetä.",
   "Price on request": "Hinta kysyttäessä myymälästä",
-  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Hinnat ovat {} vanhoja (haettu {}), joten kampanjahintoja ei näytetä. Tarkista hinnat kassasta ennen kuin lupaat ne."
+  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Hinnat ovat {} vanhoja (haettu {}), joten kampanjahintoja ei näytetä. Tarkista hinnat kassasta ennen kuin lupaat ne.",
+  "New project…": "Uusi projekti…",
+  "Products and prices, with links to hifiklubben.dk": "Tuotteet ja hinnat, linkit hifiklubben.dk:hen",
+  "The drawing was too big for the QR code. Ask your adviser for the full proposal with the drawing.": "Piirros oli liian suuri QR-koodiin. Pyydä neuvojaltasi koko tarjous piirroksineen."
 };

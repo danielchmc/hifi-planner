@@ -313,6 +313,12 @@
   const MOVED = HP.MOVED = {
     'sonos-combo-adapter-usb-c-eth-minijack': 'w-soncomboadapt', // 2026-11-23: our own card was a duplicate of the website's Combo Adapter
   };
+  // short product ids for QR codes: '~' + 6 base-36 characters of an FNV-1a hash of the id, only when no other product has the same
+  let shortMap = null, shortVer = -1;
+  const fnv = (s) => { let h = 0x811c9dc5; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193); } return (h >>> 0).toString(36).padStart(7, '0').slice(-6); };
+  const shorts = () => { if (shortVer !== cat.version) { shortMap = new Map(); cat.list.forEach((p) => { const k = fnv(p.id); shortMap.set(k, shortMap.has(k) ? null : p.id); }); shortVer = cat.version; } return shortMap; };
+  cat.shortId = (id) => { if (!id || typeof id !== 'string') return id; const k = fnv(id); return shorts().get(k) === id ? '~' + k : id; };
+  cat.fromShort = (s) => shorts().get(s.slice(1)) || null;
   cat.get = (id) => cat.byId[id] || (MOVED[id] && cat.byId[MOVED[id]]) || undefined;
   cat.products = () => cat.list.filter((p) => !p.cable);
   cat.cables = () => cat.list.filter((p) => p.cable);
@@ -543,13 +549,14 @@
   const pipe = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
   // Compact link format ("c"): arrays instead of objects, item ids replaced by their position, coordinates in 10 px grid steps.
   const R = (v) => Math.round((v || 0) / 10);
-  function compact(doc) {
+  function compact(doc, S) {
+    S = S || ((x) => x); // S: product ids written short for a QR code (cat.shortId), else as they are
     const items = doc.items.filter((i) => i.kind !== 'plan'), idx = new Map(items.map((i, n) => [i.id, n]));
     return [3, doc.name || '', doc.pages, doc.orient === 'portrait' ? 1 : 0, doc.ci ? 1 : 0, doc.ciSize, Math.round((doc.cardScale || 1) * 100),
-      items.map((i) => i.kind === 'product' ? (() => { const r = [i.pid, R(i.x), R(i.y), i.face || 0, i.v || 0, (i.np ? 1 : 0) | (i.hid ? 2 : 0), i.sy || 0, i.len || 0, i.m || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody || i.hid ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0) + (i.hid ? 4 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), i.k].concat(i.np || i.hid ? [(i.np ? 1 : 0) | (i.hid ? 2 : 0)] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
-        : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), i.cable || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
-      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [c.cable || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, c.ad || 0, c.lp != null ? Math.round(c.lp * 1000) + 1 : 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
-      [doc.ms || 34, doc.mk || [], doc.sc || 0, 4],
+      items.map((i) => i.kind === 'product' ? (() => { const r = [S(i.pid), R(i.x), R(i.y), i.face || 0, i.v || 0, (i.np ? 1 : 0) | (i.hid ? 2 : 0), i.sy || 0, i.len || 0, i.m || 0]; while (r.length > 4 && !r[r.length - 1]) r.pop(); return r; })() : i.kind === 'text' ? [1, R(i.x), R(i.y), R(i.w), R(i.h), i.title || '', i.body || ''].concat(i.noTitle || i.noBody || i.hid ? [(i.noTitle ? 1 : 0) + (i.noBody ? 2 : 0) + (i.hid ? 4 : 0)] : []) : i.kind === 'mark' ? [3, Math.round(i.x / 5), Math.round(i.y / 5), S(i.k)].concat(i.np || i.hid ? [(i.np ? 1 : 0) | (i.hid ? 2 : 0)] : []) : i.kind === 'legend' ? [4, R(i.x), R(i.y)] : i.kind === 'zone' ? [5, R(i.x), R(i.y), R(i.w), R(i.h), i.name || '']
+        : i.kind === 'run' ? [6, Math.round(i.x / 5), Math.round(i.y / 5), S(i.cable) || 0, i.pts.flat().map((v) => Math.round(v / 5))] : [2, R(i.x), R(i.y)]),
+      doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [S(c.cable) || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, S(c.ad) || 0, c.lp != null ? Math.round(c.lp * 1000) + 1 : 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
+      [doc.ms || 34, (doc.mk || []).map(S), doc.sc || 0, 4].concat(doc.lite ? [1] : []), // 5th: a products-and-prices-only copy (HP.share.lite)
       doc.cv ? [doc.cv.c || '', doc.cv.s || '', doc.cv.sh || [], doc.cv.d || ''].concat(doc.cv.r === 0 ? [0] : []) : 0, // cover: customer, adviser, shop [name, phone, email], date
       doc.pr && HP.hasPr(doc.pr) ? doc.pr : 0]; // price adjustments (prices and discounts for this proposal only)
   }
@@ -563,24 +570,48 @@
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
     const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}), ...(r[8] ? { ad: r[8] } : {}), ...(r[9] ? { lp: (r[9] - 1) / 1000 } : {}) }));
     const cv = a[10] ? { c: a[10][0], s: a[10][1], sh: a[10][2], d: a[10][3], r: a[10][4] === 0 ? 0 : 1 } : null;
-    return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
+    return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, a[9] && a[9][4] ? { lite: 1 } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   // price adjustments: does the proposal have any (a line's price or discount, or a total discount)?
   HP.hasPr = (pr) => !!pr && (!!(pr.ta || pr.tp) || Object.values(pr.l || {}).some((x) => x && (x.p != null || x.d || x.r)));
+  /* QR format ("Q", 2026-11-25): the compact proposal with short product ids, deflated, written in base 43 (0-9 A-Z $ * + - . / :).
+     Those are QR alphanumeric characters (5.5 bits each against 8 for base64 in byte mode) and all allowed in a URL's #fragment, so
+     the same proposal makes a much smaller QR code. Short ids: '~' and 6 characters of a hash of the product id (cat.shortId), only
+     for ids whose hash is unique in the catalogue; the customer's page loads the catalogue anyway and turns them back. */
+  const B43 = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$*+-./:';
+  const b43 = (bytes) => { let s = ''; for (let i = 0; i < bytes.length; i += 2) { if (i + 1 < bytes.length) { const n = bytes[i] * 256 + bytes[i + 1]; s += B43[n % 43] + B43[Math.floor(n / 43) % 43] + B43[Math.floor(n / 1849)]; } else s += B43[bytes[i] % 43] + B43[Math.floor(bytes[i] / 43)]; } return s; };
+  const unb43 = (s) => { const out = []; for (let i = 0; i < s.length; i += 3) { const c = s.slice(i, i + 3), v = [...c].map((x) => B43.indexOf(x)); if (v.some((x) => x < 0)) throw new Error('bad link'); if (c.length === 3) { const n = v[0] + v[1] * 43 + v[2] * 1849; out.push(n >> 8, n & 255); } else out.push(v[0] + v[1] * 43); } return new Uint8Array(out); };
+  const unshort = (doc) => {
+    const L = (x) => (typeof x === 'string' && x[0] === '~' ? cat.fromShort(x) || x : x);
+    doc.items.forEach((i) => { if (i.pid) i.pid = L(i.pid); if (i.k) i.k = L(i.k); if (i.cable) i.cable = L(i.cable); });
+    doc.conns.forEach((c) => { if (c.cable) c.cable = L(c.cable); if (c.ad) c.ad = L(c.ad); });
+    if (Array.isArray(doc.mk)) doc.mk = doc.mk.map(L);
+    return doc;
+  };
   HP.share = {
-    async pack(doc) {
-      const bytes = new TextEncoder().encode(JSON.stringify(compact(doc)));
+    async pack(doc, qr) {
+      const bytes = new TextEncoder().encode(JSON.stringify(compact(doc, qr ? cat.shortId : null)));
+      if (qr && window.CompressionStream) return 'Q' + b43(await pipe(bytes, new CompressionStream('deflate-raw')));
       return window.CompressionStream ? 'c' + b64u(await pipe(bytes, new CompressionStream('deflate-raw'))) : 'k' + b64u(bytes);
     },
     async unpack(s) {
-      const bytes = unb64u(s.slice(1)), kind = s[0];
-      const raw = kind === 'z' || kind === 'c' ? await pipe(bytes, new DecompressionStream('deflate-raw')) : bytes;
+      const kind = s[0], bytes = kind === 'Q' ? unb43(decodeURIComponent(s.slice(1))) : unb64u(s.slice(1));
+      const raw = kind === 'z' || kind === 'c' || kind === 'Q' ? await pipe(bytes, new DecompressionStream('deflate-raw')) : bytes;
       const data = JSON.parse(new TextDecoder().decode(raw));
-      const doc = kind === 'c' || kind === 'k' ? expand(data) : data; // 'z' / 'j' = first version of links, still supported
+      const doc = kind === 'Q' ? unshort(expand(data)) : kind === 'c' || kind === 'k' ? expand(data) : data; // 'z' / 'j' = first version of links, still supported
       if (!doc || !Array.isArray(doc.items) || !Array.isArray(doc.conns)) throw new Error('bad link');
       return doc;
     },
     async url() { return location.href.split('#')[0] + '#p=' + (await HP.share.pack(store.doc)); },
+    // a much smaller copy for a QR code that cannot hold the whole drawing: only what the price list counts (product cards and
+    // marks with their variant, length and flags, the cables and adapters on connections, cable runs), without positions, text,
+    // rooms or the price-list box. The customer's page then shows the products and prices without the drawing.
+    lite(doc) {
+      const keep = new Set(['product', 'mark', 'run']), items = doc.items.filter((i) => keep.has(i.kind)).map((i) => i.kind === 'run' ? i : Object.assign({}, i, { x: 0, y: 0 }));
+      const ids = new Set(items.map((i) => i.id));
+      const conns = doc.conns.filter((c) => (c.cable || c.ad) && ids.has(c.a.item) && ids.has(c.b.item)).map((c) => Object.assign({}, c, { shift: 0, lp: null }));
+      return Object.assign({}, doc, { items, conns, lite: 1, name: doc.name });
+    },
     // the customer's link (#t=): the read-only proposal view, no login; on the public site even when printed from a local copy
     // the customer's link: #t= when copied and sent, #q= in the QR code on the printed cover (the same page; the letter only tells
     // the statistics how the customer got there)
@@ -589,7 +620,7 @@
     async customerUrl(doc, qr, pdf) {
       const base = (/^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/')).split('?')[0];
       const q = [pdf ? 'pdf' : '', lang !== 'da' ? 'l=' + lang : ''].filter(Boolean).join('&');
-      return base + (q ? '?' + q : '') + (qr ? '#q=' : '#t=') + (await HP.share.pack(doc || store.doc));
+      return base + (q ? '?' + q : '') + (qr ? '#q=' : '#t=') + (await HP.share.pack(doc || store.doc, qr));
     },
     async openFromHash() {
       const m = /^#p=(.+)$/.exec(location.hash); if (!m) return false;

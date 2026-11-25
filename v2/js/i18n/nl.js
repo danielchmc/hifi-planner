@@ -774,7 +774,7 @@
   "Select a card and press Replace, or drop another product on top of it. Cables stay connected to the matching ports.": "Selecteer een kaart en klik op Vervangen, of sleep er een ander product op. De kabels blijven op de passende poorten zitten.",
   "Right-click for everything": "Rechtsklikken voor alles",
   "Right-click a card, a wire or the empty canvas to see every action with its keyboard shortcut. Double-click a product image to show it full screen, for example the rear panel.": "Klik met de rechtermuisknop op een kaart, een draad of het lege canvas om elke actie met de sneltoets te zien. Dubbelklik op een productafbeelding om hem schermvullend te tonen, bijv. het achterpaneel.",
-  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New proposal clears the canvas (and can be undone).": "Niet genoeg ruimte op één A4-pagina? Maak hier alle kaarten kleiner, zoals een zoommenu. Bestand → Nieuwe offerte maakt het canvas leeg (en kan ongedaan worden gemaakt).",
+  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New project… clears the canvas (and can be undone).": "Niet genoeg ruimte op één A4-pagina? Maak hier alle kaarten kleiner, zoals een zoommenu. Bestand → Nieuw project… maakt het canvas leeg (en kan ongedaan worden gemaakt).",
   "Ready-made systems. Click or drag one onto the canvas and adjust from there.": "Kant-en-klare systemen. Klik erop of sleep er een naar het canvas en pas het daar aan.",
   "The A4 page": "De A4-pagina",
   "This frame is the printed page. Keep the system inside it. Add more pages with the + on the right, and switch portrait/landscape in the top bar.": "Dit kader is de afgedrukte pagina. Houd het systeem erbinnen. Voeg meer pagina's toe met de + rechts, en wissel staand/liggend in de bovenbalk.",
@@ -926,5 +926,8 @@
   "Prices updated from hifiklubben.dk (read ": "De prijzen zijn bijgewerkt van hifiklubben.dk (opgehaald ",
   " Campaign prices are not shown.": " Actieprijzen worden niet getoond.",
   "Price on request": "Prijs op aanvraag in de winkel",
-  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "De prijzen zijn {} oud (opgehaald {}), dus actieprijzen worden niet getoond. Controleer de prijzen in de kassa voordat u ze belooft."
+  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "De prijzen zijn {} oud (opgehaald {}), dus actieprijzen worden niet getoond. Controleer de prijzen in de kassa voordat u ze belooft.",
+  "New project…": "Nieuw project…",
+  "Products and prices, with links to hifiklubben.dk": "Producten en prijzen, met links naar hifiklubben.dk",
+  "The drawing was too big for the QR code. Ask your adviser for the full proposal with the drawing.": "De tekening was te groot voor de QR-code. Vraag uw adviseur om de volledige offerte met de tekening."
 };

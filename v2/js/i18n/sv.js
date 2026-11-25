@@ -774,7 +774,7 @@
   "Select a card and press Replace, or drop another product on top of it. Cables stay connected to the matching ports.": "Markera ett kort och tryck Byt ut, eller släpp en annan produkt ovanpå det. Kablarna sitter kvar på de matchande portarna.",
   "Right-click for everything": "Högerklicka för allt",
   "Right-click a card, a wire or the empty canvas to see every action with its keyboard shortcut. Double-click a product image to show it full screen, for example the rear panel.": "Högerklicka på ett kort, en kabel eller den tomma arbetsytan för att se alla åtgärder med kortkommandon. Dubbelklicka på en produktbild för att visa den i helskärm, t.ex. bakpanelen.",
-  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New proposal clears the canvas (and can be undone).": "Inte tillräckligt med plats på en A4-sida? Gör alla kort mindre här, som en zoommeny. Arkiv → Ny offert tömmer arbetsytan (och kan ångras).",
+  "Not enough room on one A4 page? Make all cards smaller here, like a zoom menu. Filer → New project… clears the canvas (and can be undone).": "Inte tillräckligt med plats på en A4-sida? Gör alla kort mindre här, som en zoommeny. Arkiv → Nytt projekt… tömmer arbetsytan (och kan ångras).",
   "Ready-made systems. Click or drag one onto the canvas and adjust from there.": "Färdiga system. Klicka eller dra ett in på arbetsytan och justera därifrån.",
   "The A4 page": "A4-sidan",
   "This frame is the printed page. Keep the system inside it. Add more pages with the + on the right, and switch portrait/landscape in the top bar.": "Den här ramen är den utskrivna sidan. Håll systemet innanför den. Lägg till fler sidor med + till höger och byt stående/liggande i toppfältet.",
@@ -926,5 +926,8 @@
   "Prices updated from hifiklubben.dk (read ": "Priserna är uppdaterade från hifiklubben.dk (hämtade ",
   " Campaign prices are not shown.": " Kampanjpriser visas inte.",
   "Price on request": "Pris lämnas i butiken",
-  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Priserna är {} gamla (hämtade {}), så kampanjpriser visas inte. Kontrollera priserna i kassan innan du lovar dem."
+  "The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.": "Priserna är {} gamla (hämtade {}), så kampanjpriser visas inte. Kontrollera priserna i kassan innan du lovar dem.",
+  "New project…": "Nytt projekt…",
+  "Products and prices, with links to hifiklubben.dk": "Produkter och priser, med länkar till hifiklubben.dk",
+  "The drawing was too big for the QR code. Ask your adviser for the full proposal with the drawing.": "Ritningen var för stor för QR-koden. Be din rådgivare om hela offerten med ritningen."
 };
