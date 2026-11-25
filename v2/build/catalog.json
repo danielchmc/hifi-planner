@@ -26,7 +26,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 271,
+   "all": 270,
    "bundles": 0
   },
   {
@@ -44,7 +44,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 69,
+   "all": 67,
    "bundles": 0
   },
   {
@@ -52,8 +52,8 @@
    "title": "Soundbar højtaler / TV-lyd",
    "parent": "/tv/",
    "website": true,
-   "products": 23,
-   "all": 23,
+   "products": 22,
+   "all": 22,
    "bundles": 43
   },
   {
@@ -250,8 +250,8 @@
    "title": "Kompakt højtaler",
    "parent": "/hojtalere/",
    "website": true,
-   "products": 46,
-   "all": 46,
+   "products": 45,
+   "all": 45,
    "bundles": 6
   },
   {
@@ -484,8 +484,8 @@
    "title": "Projektor",
    "parent": "/tv/",
    "website": true,
-   "products": 19,
-   "all": 19,
+   "products": 18,
+   "all": 18,
    "bundles": 0
   },
   {
@@ -513,7 +513,7 @@
    "website": true,
    "products": 17,
    "all": 27,
-   "bundles": 0
+   "bundles": 2
   },
   {
    "id": "/tv/tv/oled/",
@@ -31392,7 +31392,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33350,23 +33350,6 @@
      }
     },
     {
-     "sku": "DALIOBERON1WH",
-     "label": "Hvid mat",
-     "price": 2498,
-     "was": 3598,
-     "colorKey": "White",
-     "ean": "5703120109497",
-     "url": "/dali-oberon-1-kompakt-hoejtaler/dalioberon1wh/",
-     "img": "hk:ebe2c6fc-564b-4123-be79-f7dcfa223c90",
-     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
-     "specs": {
-      "Vægt (kg)": "4,83",
-      "Vægt emballage (kg)": "5,33",
-      "Mål (emballage)": "29,5 x 36 x 21,5 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,2 x 27,4 x 23,4 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "DALIOBERON1WA",
      "label": "Mørk valnød",
      "price": 2498,
@@ -33506,97 +33489,6 @@
      "ARGMALMOSUB10X",
      "DALIBASUBC8D",
      "DALIOBERONVOKALC"
-    ]
-   },
-   "read": "2026-11-23"
-  },
-  {
-   "sku": "DALIOBERON3",
-   "brand": "DALI",
-   "model": "OBERON 3",
-   "type": {
-    "key": "CompactLoudSpeaker",
-    "da": "Kompakt højtaler"
-   },
-   "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/dali-oberon-3-kompakt-hoejtaler/dalioberon3wa/",
-   "kind": "speaker",
-   "scope": "diagram",
-   "facets": {
-    "active": false,
-    "mount": "stand",
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "DALIOBERON3WA",
-     "label": "Mørk valnød",
-     "price": 3698,
-     "was": 4598,
-     "colorKey": "Wood",
-     "ean": "5703120109626",
-     "url": "/dali-oberon-3-kompakt-hoejtaler/dalioberon3wa/",
-     "img": "hk:83d9eca8-8d64-4988-8915-4598fd14e531",
-     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
-     "specs": {
-      "Vægt (kg)": "7,2",
-      "Vægt emballage (kg)": "7,7",
-      "Mål (emballage)": "38 x 44 x 25,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "20 x 35 x 31,5 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "Frekvensområde (-3dB)": "47 - 26000 Hz",
-    "Kabinet type": "Basrefleks",
-    "Bi-wire": "Nej",
-    "Følsomhed": "87 dB",
-    "Delefrekvens": "2400",
-    "Impedans (ohm)": "6",
-    "Diskant": "29mm Soft dome",
-    "Bas": "1x 7\" Low-loss med træfiber-membran (SMC)",
-    "Højtaler type": "HiFi højtalere",
-    "Spikes inkluderet": "Nej"
-   },
-   "rel": {
-    "acc": [
-     "ESSBA1BANBFASIX",
-     "ESSCL1SCX",
-     "ESSWBUNI20X",
-     "ESSACOFEETX",
-     "DALISTANDE601",
-     "ESSCL1BANANAX",
-     "ESSPR1SCX",
-     "ESSSTELS57X",
-     "ESSBA2BANGOX",
-     "ESSCL2SCX",
-     "ESSCL1BANBFASIX",
-     "ESSBA2SCX",
-     "AQROCKET11SC"
-    ],
-    "alt": [
-     "DALIOBERON1",
-     "DALISONIK3",
-     "BW606S3",
-     "DALISONIK1",
-     "DALIKUPID",
-     "DALIOPTICON1MK2",
-     "BW607S3",
-     "ARGFORUS5X",
-     "DALIOPTICON2MK2"
-    ],
-    "rec": [
-     "DENRCDN12DAB",
-     "DALISUBE9F",
-     "ARGSA2X",
-     "DALISUBE12F",
-     "BLSN230",
-     "NADC316V2",
-     "DALIOBERONVOKAL",
-     "DENRCDM41",
-     "DENPMA900HNE",
-     "ARGSA1MK2X",
-     "BLSN331"
     ]
    },
    "read": "2026-11-23"
@@ -50922,7 +50814,7 @@
      "DALISONIK5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELC53",
@@ -51002,17 +50894,17 @@
      "DALIPHANTOMS280",
      "DALIPHANTOMS180",
      "LYNGD500",
-     "LYNGD500C",
-     "LYNGD60",
-     "LYNGD5IC",
      "BOTHTR66",
      "BOLCR66",
      "BOC106",
      "DALIEPIKORE7",
-     "DALIEPIKORE9"
+     "DALIEPIKORE9",
+     "LYNGD500C",
+     "LYNGD60",
+     "LYNGD5IC"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELC54",
@@ -51100,7 +50992,7 @@
      "DALIEPIKORE9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELC55",
@@ -51190,7 +51082,7 @@
      "DALIEPIKORE9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELD50",
@@ -51233,14 +51125,14 @@
      "AQVODKAOPT",
      "AQCARBONCOX",
      "AQNRGTORNADO20A",
+     "AQBLACKBEAUTYIN",
      "AQCARBONOPT",
      "AQDIAMONDCOX",
      "AQYUKONINX",
-     "AQYUKONIN",
-     "AQBLACKBEAUTYIN"
+     "AQYUKONIN"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH150",
@@ -51267,7 +51159,7 @@
      "ean": "051497340261",
      "url": "/hegel-h150-the-prodigy-integreret-forstaerker/hegelh150bk/",
      "img": "hk:9d5c1387-783f-4c4a-8868-d524a19e27cc",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "9,5",
       "Vægt emballage (kg)": "12,4",
@@ -51283,7 +51175,7 @@
      "ean": "040232439759",
      "url": "/hegel-h150-the-prodigy-integreret-forstaerker/hegelh150wh/",
      "img": "hk:f07ed95e-d403-4180-9555-c9cf4151253c",
-     "stock": "warehouseInStock",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "9,5",
       "Vægt emballage (kg)": "12,4",
@@ -51293,16 +51185,16 @@
     }
    ],
    "specs": {
-    "Udgangseffekt 8 ohm": "2 x 75 watt",
-    "Forvrængning (THD)": "<0,01%",
-    "Signal/støjforhold": ">100 dB",
-    "Dæmpningsfaktor": ">2000",
-    "Forstærkerteknologi": "Analog",
     "Udvidelsesmoduler": "Nej",
     "HDMI ARC/CEC": "Nej",
     "Lydudgang": "Pre-out, Coaxial, Hovedtelefon",
     "Lydindgang": "Coaxial, Optisk, Analog XLR, USB A, USB B",
     "Indgang (andet)": "Ethernet",
+    "Udgangseffekt 8 ohm": "2 x 75 watt",
+    "Forvrængning (THD)": "<0,01%",
+    "Signal/støjforhold": ">100 dB",
+    "Dæmpningsfaktor": ">2000",
+    "Forstærkerteknologi": "Analog",
     "Lyd formater": "MP3, AAC, ALAC , FLAC, Ogg Vorbis, WAV",
     "Radio type": "Internet radio",
     "Bi-amping": "Nej",
@@ -51365,7 +51257,7 @@
      "BW805D4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH190V",
@@ -51472,7 +51364,7 @@
      "BLSN530"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH20",
@@ -51542,7 +51434,7 @@
      "DALIRUBIKORE6"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH200",
@@ -51569,7 +51461,7 @@
      "ean": "051497340254",
      "url": "/hegel-h200-integreret-forstaerker/hegelh200bk/",
      "img": "hk:1e9d9425-0e0c-45f9-a57a-02c65d858583",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "13,5",
       "Vægt emballage (kg)": "16,8",
@@ -51639,7 +51531,7 @@
      "BW607S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH30A",
@@ -51694,15 +51586,15 @@
    },
    "rel": {
     "acc": [
+     "AQPEGASUSINX",
      "AQPEGASUSIN",
      "AQBLACKBEAUTYINX",
      "AQBLACKBEAUTYIN",
      "AQRHOODZSCA",
-     "AQROCKET88SCBA",
-     "AQNRGTORNADO20A",
-     "AQPEGASUSINX",
      "AQWTELLZSCA",
-     "AQTBIRDZSCA"
+     "AQTBIRDZSCA",
+     "AQROCKET88SCBA",
+     "AQNRGTORNADO20A"
     ],
     "alt": [
      "HEGELH30",
@@ -51719,15 +51611,15 @@
      "BW801D4SIGNATURE",
      "BW802D4",
      "AQNIAGARA7000",
+     "AQNIAGARA5000",
      "BW801D5",
      "BW802D5",
      "BW803D5",
      "BW804D5",
-     "BW805D5",
-     "AQNIAGARA5000"
+     "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH400",
@@ -51756,7 +51648,7 @@
      "ean": "051497340322",
      "url": "/hegel-h400-integreret-forstaerker/hegelh400bk/",
      "img": "hk:1d4adb0a-3008-4d89-8ae8-d7ad897fb3e8",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "20",
       "Vægt emballage (kg)": "25",
@@ -51825,7 +51717,6 @@
      "BLSN132",
      "DALIEPIKORE3",
      "HEGELV10",
-     "HEGELVIKING",
      "BW805D5",
      "RACLARITY62",
      "BW705S3",
@@ -51834,10 +51725,11 @@
      "DALIEPIKORE7",
      "BW803D5",
      "BW802D5",
-     "BW801D5"
+     "BW801D5",
+     "HEGELVIKING"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH600",
@@ -51864,7 +51756,7 @@
      "ean": "040232439742",
      "url": "/hegel-h600-integreret-forstaerker/hegelh600bk/",
      "img": "hk:ff992933-a284-4560-8eba-40a31dc05e33",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "24,4",
       "Vægt emballage (kg)": "28,8",
@@ -51874,14 +51766,14 @@
     }
    ],
    "specs": {
+    "Lydudgang": "Analog RCA, BNC",
+    "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC",
+    "Indgang (andet)": "Ethernet, USB B",
     "Udgangseffekt 8 ohm": "303 watt",
     "Forvrængning (THD)": "0,005%",
     "Signal/støjforhold": ">100 dB",
     "Dæmpningsfaktor": ">4000",
     "Forstærkerteknologi": "Analog",
-    "Lydudgang": "Analog RCA, BNC",
-    "Lydindgang": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC",
-    "Indgang (andet)": "Ethernet, USB B",
     "Lyd formater": "MP3, Stereo, AAC, ALAC , FLAC, AIFF, Ogg Vorbis, WAV"
    },
    "rel": {
@@ -51918,6 +51810,7 @@
      "BW804D5",
      "BLSN530",
      "HEGELV10",
+     "HEGELVIKING",
      "DALIRUBIKORE8",
      "DALIEPIKORE7",
      "MOFISOURCEPOINT888",
@@ -51928,11 +51821,10 @@
      "BW802D5",
      "BW801D4",
      "DALIEPIKORE11",
-     "BW801D5",
-     "HEGELVIKING"
+     "BW801D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELH95",
@@ -51992,7 +51884,6 @@
      "ESSPR1SCX",
      "AQFORESTCOX",
      "AQNRGY3AC",
-     "HEGELRC8",
      "AQREDRIVERIN",
      "AQFORESTUSBAB",
      "AQFORESTRJE",
@@ -52012,7 +51903,8 @@
      "AQROCKET22SC",
      "AQBANANA300SX",
      "AQROCKET11SC",
-     "AQROCKET33SCX"
+     "AQROCKET33SCX",
+     "HEGELRC8"
     ],
     "alt": [
      "NADC399",
@@ -52044,7 +51936,7 @@
      "MOFISOURCEPOINT888"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELP30A",
@@ -52081,15 +51973,15 @@
     }
    ],
    "specs": {
-    "Forvrængning (THD)": "0,005%",
-    "Signal/støjforhold": "130 dB",
-    "Forstærkerteknologi": "Analog",
     "Udvidelsesmoduler": "Nej",
     "HDMI ARC/CEC": "Nej",
     "Lydudgang": "Analog RCA, Analog XLR",
     "Lydindgang": "Analog RCA, Analog XLR",
     "Udgang (andet)": "12V trigger",
     "Indgang (andet)": "IR",
+    "Forvrængning (THD)": "0,005%",
+    "Signal/støjforhold": "130 dB",
+    "Forstærkerteknologi": "Analog",
     "Bi-amping": "Nej",
     "Fjernbetjening": "Ja",
     "Stemmestyring": "Nej",
@@ -52116,15 +52008,15 @@
      "HEGELH20",
      "LYNGSDA2400",
      "NADM23",
+     "AQNIAGARA1200",
      "BW801D5",
      "BW802D5",
      "BW803D5",
      "BW804D5",
-     "BW805D5",
-     "AQNIAGARA1200"
+     "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELRC10",
@@ -52161,23 +52053,23 @@
    "specs": {},
    "rel": {
     "alt": [
-     "HEGELRC8",
-     "HEGELRC2"
+     "HEGELRC2",
+     "HEGELRC8"
     ],
     "rec": [
      "HEGELH95",
      "HEGELH120",
      "HEGELH190V",
-     "HEGELH400",
-     "HEGELH600",
-     "HEGELP30A",
      "HEGELH390",
+     "HEGELH400",
      "HEGELH590",
+     "HEGELH600",
      "HEGELD50",
-     "HEGELP30"
+     "HEGELP30",
+     "HEGELP30A"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELRC2",
@@ -52217,15 +52109,15 @@
      "HEGELH120",
      "HEGELH590",
      "HEGELH390",
-     "HEGELH95",
-     "HEGELH190"
+     "HEGELH190",
+     "HEGELH95"
     ],
     "rec": [
      "HEGELRC8",
      "HEGELRC10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELRC8",
@@ -52278,7 +52170,7 @@
      "HEGELP30A"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELV10",
@@ -52305,7 +52197,7 @@
      "ean": "040232439728",
      "url": "/hegel-v10-riaa-forstaerker/hegelv10bk/",
      "img": "hk:06b52b25-bdcc-4c4c-9ae7-448085dc0dc1",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "3,2",
       "Vægt emballage (kg)": "3,5",
@@ -52352,7 +52244,7 @@
      "MARATT15S1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEGELVIKING",
@@ -52379,7 +52271,7 @@
      "ean": "051497340315",
      "url": "/hegel-viking-cd-afspiller/hegelvikingbk/",
      "img": "hk:2f0af29d-bf8d-4caa-a2f9-a1f18ca1e6e3",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "6,5",
       "Vægt emballage (kg)": "10,1",
@@ -52412,10 +52304,10 @@
     ],
     "alt": [
      "LYNGCD2",
-     "DENDCD3000NE",
-     "MARACD50N",
      "MARASACD10",
-     "MARASACD30N"
+     "DENDCD3000NE",
+     "MARASACD30N",
+     "MARACD50N"
     ],
     "rec": [
      "HEGELP30A",
@@ -52423,7 +52315,7 @@
      "HEGELH600"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEOSDRIVEHS2",
@@ -52483,7 +52375,7 @@
      "BWCCM663SR"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HEOSLINKHS2",
@@ -52561,7 +52453,7 @@
      "MARAMODEL50"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC2PROX",
@@ -52648,12 +52540,12 @@
      "SAMLFF3",
      "SONYVPLXW5100ES",
      "SONYVPLXW6100ES",
+     "SONYVPLXW8100ES",
      "SAMLPU7",
-     "SAMLPU9",
-     "SONYVPLXW8100ES"
+     "SAMLPU9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC2ULTRAX",
@@ -52730,7 +52622,7 @@
      "HISC3ULTRAX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC3PROX",
@@ -52809,7 +52701,7 @@
      "HISPX3PROUSTX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC3ULTRAMAXX",
@@ -52891,7 +52783,7 @@
      "SONYVPLXW5000ESX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC3ULTRAX",
@@ -52973,7 +52865,7 @@
      "HISPX3PROUSTX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISC3X",
@@ -53037,7 +52929,7 @@
     "Lampe levetid": "25.000"
    },
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISM2",
@@ -53060,8 +52952,7 @@
     {
      "sku": "HISM2PRO",
      "label": "Sort",
-     "price": 6999,
-     "was": 10999,
+     "price": 10999,
      "colorKey": "Black",
      "ean": "6942351423036",
      "url": "/hisense-m2-videoprojektor/hism2pro/",
@@ -53120,7 +53011,7 @@
      "SONYVPLXW8100ES"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISPT1USTX",
@@ -53143,8 +53034,7 @@
     {
      "sku": "HISPT1UST",
      "label": "Sort",
-     "price": 13187,
-     "was": 22999,
+     "price": 22999,
      "colorKey": "Black",
      "ean": "6942351423012",
      "url": "/hisense-pt1-videoprojektor/hispt1ust/",
@@ -53209,90 +53099,7 @@
      "SAMLPU9"
     ]
    },
-   "read": "2026-11-21"
-  },
-  {
-   "sku": "HISPX3PROUSTX",
-   "brand": "Hisense",
-   "model": "PX3-PRO",
-   "type": {
-    "key": "VideoProjector",
-    "da": "Videoprojektor"
-   },
-   "cat": "/tv/projektor/",
-   "url": "/hisense-px3-pro-videoprojektor/hispx3proust/",
-   "kind": "projector",
-   "scope": "diagram",
-   "facets": {
-    "axis": "colour",
-    "bt": true,
-    "wifi": true
-   },
-   "variants": [
-    {
-     "sku": "HISPX3PROUST",
-     "label": "Sort",
-     "price": 14848,
-     "was": 25999,
-     "colorKey": "Black",
-     "ean": "6942351408262",
-     "url": "/hisense-px3-pro-videoprojektor/hispx3proust/",
-     "img": "hk:af746d3f-92f1-444d-84ab-e67ec6375dbb",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "11,6",
-      "Mål (emballage)": "29,8 x 66,3 x 40,3 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "HDMI version": "2.1",
-    "Lydudgang": "S/PDIF, Minijack/AUX",
-    "Lydindgang": "HDMI",
-    "Udgang (andet)": "USB A",
-    "Indgang (andet)": "HDMI",
-    "Trådløs overførsel": "Bluetooth-udgang, Wi-Fi",
-    "Lysstyrke (ANSI)": "3000",
-    "Image size": "16:9",
-    "Throw Ratio": "0,22:1",
-    "Projektionsafstand": "0,39 – 0,73m",
-    "Skærmstørrelse (\")": "80-150",
-    "Opløsning - Projektor": "4K Ultra HD",
-    "ISF certificeret": "Nej",
-    "DLP chip": "0,47” DMD",
-    "Teknologi": "DLP, Laser",
-    "Kontrast": "3000:1",
-    "Zoom": "No optical zoom",
-    "Maks. opløsning": "3840 x 2160p",
-    "Støjniveau eco mode dB": "≤32 dB",
-    "Standby strømforbrug": "<0,5 watt",
-    "Typisk energiforbrug, normal brug": "250 watt",
-    "Lampe levetid": "25.000",
-    "Fjernbetjening": "Ja",
-    "Indbyggede højtalere": "Ja",
-    "Video formater": "2160p"
-   },
-   "rel": {
-    "alt": [
-     "SONYVPLXW5000ESX",
-     "SONYVPLXW5100ES",
-     "HISC2PROX",
-     "HISC3X",
-     "HISC2ULTRAX",
-     "HISPX4PROX",
-     "HISC3ULTRAX",
-     "HISPT1USTX",
-     "HISM2",
-     "HISXR10X",
-     "HSL9QX",
-     "SAMLFF3",
-     "SONYVPLXW6100ES",
-     "SAMLPU7",
-     "SAMLPU9"
-    ]
-   },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISPX4PROX",
@@ -53319,7 +53126,7 @@
      "ean": "6942351440255",
      "url": "/hisense-px4-pro-videoprojektor/hispx4pro/",
      "img": "hk:e3f860f7-627d-45e3-afc5-80f84ad7e216",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "8,3",
       "Vægt emballage (kg)": "11,2",
@@ -53371,7 +53178,7 @@
      "HISPX3PROUSTX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HISXR10X",
@@ -53447,7 +53254,7 @@
      "SONYVPLXW5100ES"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "HSL9QX",
@@ -53554,7 +53361,7 @@
      "HISC3ULTRAMAXX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "IMGDM1100X",
@@ -53595,7 +53402,7 @@
      "IMGDM710S"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "IMGDM710S",
@@ -53639,7 +53446,7 @@
      "IMGDM1100X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "IMGPAST164SWX",
@@ -53680,7 +53487,7 @@
      "SOUNDBOKS4BB4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLBAR1000M2",
@@ -53750,7 +53557,7 @@
      "SENAMBEOSBPLUS"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLBAR1300M2",
@@ -53821,7 +53628,7 @@
      "SENAMBEOSOUNDBAR1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLBAR500M2",
@@ -53890,7 +53697,7 @@
      "SENAMBEOSBMINI"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLBAR800M2",
@@ -53960,7 +53767,7 @@
      "SENAMBEOSBMINI"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLCOVEM1",
@@ -54024,7 +53831,7 @@
      "SONERA100SL"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLCOVEP1",
@@ -54094,7 +53901,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLCOVEX1",
@@ -54158,7 +53965,7 @@
      "SONFIVE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLLIVE680",
@@ -54188,7 +53995,7 @@
      "ean": "1200130033186",
      "url": "/jbl-live-680nc-traadloest-headset/jbllive680bk/",
      "img": "hk:07c0764e-8beb-4c5b-b315-2e4b3f67ebe7",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,24",
       "Vægt emballage (kg)": "0,45",
@@ -54212,22 +54019,6 @@
      }
     },
     {
-     "sku": "JBLLIVE680BL",
-     "label": "Blå",
-     "price": 799,
-     "was": 1199,
-     "colorKey": "Blue",
-     "ean": "1200130033193",
-     "url": "/jbl-live-680nc-traadloest-headset/jbllive680bl/",
-     "img": "hk:a79c1635-2e10-4f0c-b6a1-5d6ddec31d71",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,24",
-      "Vægt emballage (kg)": "0,45",
-      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVE680OR",
      "label": "Orange",
      "price": 799,
@@ -54236,6 +54027,22 @@
      "ean": "1200130039829",
      "url": "/jbl-live-680nc-traadloest-headset/jbllive680or/",
      "img": "hk:d8c034c3-45da-4bed-9a5f-53676e746c55",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,24",
+      "Vægt emballage (kg)": "0,45",
+      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVE680BL",
+     "label": "Blå",
+     "price": 799,
+     "was": 1199,
+     "colorKey": "Blue",
+     "ean": "1200130033193",
+     "url": "/jbl-live-680nc-traadloest-headset/jbllive680bl/",
+     "img": "hk:a79c1635-2e10-4f0c-b6a1-5d6ddec31d71",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,24",
@@ -54329,7 +54136,7 @@
      "MARMONITOR3ANC"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-25"
   },
   {
    "sku": "JBLLIVE780",
@@ -55284,22 +55091,6 @@
      }
     },
     {
-     "sku": "JBLTOURONEM3BL",
-     "label": "Blå",
-     "price": 1399,
-     "was": 2699,
-     "colorKey": "Blue",
-     "ean": "1200130025082",
-     "url": "/jbl-tour-one-m3-traadloest-headset/jbltouronem3bl/",
-     "img": "hk:e85024d5-4da8-4bc2-ae44-994a38413afc",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,8",
-      "Vægt emballage (kg)": "0,95",
-      "Mål (emballage)": "21,1 x 7,8 x 24,9 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLTOURONEM3GR",
      "label": "Grøn",
      "price": 1399,
@@ -55313,6 +55104,22 @@
       "Vægt (kg)": "0,53",
       "Vægt emballage (kg)": "0,95",
       "Mål (emballage)": "7,5 x 21 x 24,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLTOURONEM3BL",
+     "label": "Blå",
+     "price": 1399,
+     "was": 2699,
+     "colorKey": "Blue",
+     "ean": "1200130025082",
+     "url": "/jbl-tour-one-m3-traadloest-headset/jbltouronem3bl/",
+     "img": "hk:e85024d5-4da8-4bc2-ae44-994a38413afc",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,8",
+      "Vægt emballage (kg)": "0,95",
+      "Mål (emballage)": "21,1 x 7,8 x 24,9 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -57075,7 +56882,7 @@
     {
      "sku": "KEFLSX2LTSAGREEN",
      "label": "Grøn",
-     "price": 6540,
+     "price": 6333,
      "was": 7690,
      "colorKey": "Green",
      "hex": "#485e51",
@@ -62543,7 +62350,7 @@
     {
      "sku": "MARACTON4BK",
      "label": "Sort",
-     "price": 2182,
+     "price": 2139,
      "colorKey": "Black",
      "ean": "7340055416931",
      "url": "/marshall-acton-iv-traadloes-hoejtaler/maracton4bk/",
@@ -63856,7 +63663,7 @@
     {
      "sku": "MARBROMLEY150BK",
      "label": "Sort",
-     "price": 3599,
+     "price": 3490,
      "colorKey": "Black",
      "ean": "7340055420563",
      "url": "/marshall-bromley-150-traadloes-hoejtaler-med-batteri/marbromley150bk/",
@@ -67297,6 +67104,7 @@
      "sku": "NADC538GR",
      "label": "Sort",
      "price": 1999,
+     "was": 3399,
      "colorKey": "Black",
      "ean": "5703120250649",
      "url": "/nad-c538-cd-afspiller/nadc538gr/",
@@ -78402,7 +78210,8 @@
     {
      "sku": "SAMTQ100QN80H",
      "label": "100\"",
-     "price": 17999,
+     "price": 15999,
+     "was": 34999,
      "colorKey": "Black",
      "ean": "8806097959731",
      "url": "/samsung-qn80h-neo-qled-tv/samtq100qn80h/",
@@ -79205,6 +79014,52 @@
      }
     },
     {
+     "sku": "SAMTQ77S90H",
+     "label": "77\"",
+     "price": 14999,
+     "was": 24999,
+     "colorKey": "Black",
+     "ean": "8806099008093",
+     "url": "/samsung-s90h-oled-tv/samtq77s90h/",
+     "img": "hk:4c6c124b-2ed2-4ac1-ad66-11ba68f73e58",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Bluetooth ": "Ja",
+      "Bluetooth version": "5.3",
+      "Vægt (kg)": "44,1",
+      "Vægt emballage (kg)": "45,9",
+      "Skærmstørrelse": "77\"",
+      "VESA": "400x300",
+      "Vægt inkl. bordstativ, kg": "36,6",
+      "Mål inkl. stander, cm (BxHxD)": "171,9 x 105,9 x 35,9",
+      "Vægt ekskl. bordstativ, kg": "34,8",
+      "Mål ekskl. stander, cm (BxHxD)": "171,9 x 98,8 x 4,5",
+      "Mål (emballage)": "18 x 115,4 x 188,5 cm (bredde x højde x dybde)",
+      "Total HDMI Inputs": "4x",
+      "HDMI": "2.1",
+      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+      "HDMI ARC/eARC": "eARC (Port 1)",
+      "Antal USB-porte": "2x",
+      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2)",
+      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+      "Styresystem": "Tizen",
+      "Mikrofon": "Ja",
+      "USB Recording": "Ja",
+      "Stemmestyring": "Indbygget",
+      "Stemmeassistenter": "Samsung Bixby",
+      "Elektronisk Programguide (EPG)": "Ja",
+      "EPREL Code": "2571609",
+      "Opløsning": "4K Ultra HD",
+      "Skærmteknologi": "OLED",
+      "HDR-formater": "HDR10",
+      "Billedprocessor": "NQ4 AI Gen3 Processor",
+      "Game mode": "Ja",
+      "FreeSync": "FreeSync Premium Pro",
+      "Skærmopdatering (Hz)": "165Hz",
+      "Energy Efficiency": "E"
+     }
+    },
+    {
      "sku": "SAMTQ48S90H",
      "label": "48\"",
      "price": 11999,
@@ -79251,52 +79106,6 @@
       "FreeSync": "FreeSync Premium Pro",
       "Skærmopdatering (Hz)": "165Hz",
       "Energy Efficiency": "G"
-     }
-    },
-    {
-     "sku": "SAMTQ77S90H",
-     "label": "77\"",
-     "price": 14999,
-     "was": 24999,
-     "colorKey": "Black",
-     "ean": "8806099008093",
-     "url": "/samsung-s90h-oled-tv/samtq77s90h/",
-     "img": "hk:4c6c124b-2ed2-4ac1-ad66-11ba68f73e58",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Bluetooth ": "Ja",
-      "Bluetooth version": "5.3",
-      "Vægt (kg)": "44,1",
-      "Vægt emballage (kg)": "45,9",
-      "Skærmstørrelse": "77\"",
-      "VESA": "400x300",
-      "Vægt inkl. bordstativ, kg": "36,6",
-      "Mål inkl. stander, cm (BxHxD)": "171,9 x 105,9 x 35,9",
-      "Vægt ekskl. bordstativ, kg": "34,8",
-      "Mål ekskl. stander, cm (BxHxD)": "171,9 x 98,8 x 4,5",
-      "Mål (emballage)": "18 x 115,4 x 188,5 cm (bredde x højde x dybde)",
-      "Total HDMI Inputs": "4x",
-      "HDMI": "2.1",
-      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
-      "HDMI ARC/eARC": "eARC (Port 1)",
-      "Antal USB-porte": "2x",
-      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2)",
-      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
-      "Styresystem": "Tizen",
-      "Mikrofon": "Ja",
-      "USB Recording": "Ja",
-      "Stemmestyring": "Indbygget",
-      "Stemmeassistenter": "Samsung Bixby",
-      "Elektronisk Programguide (EPG)": "Ja",
-      "EPREL Code": "2571609",
-      "Opløsning": "4K Ultra HD",
-      "Skærmteknologi": "OLED",
-      "HDR-formater": "HDR10",
-      "Billedprocessor": "NQ4 AI Gen3 Processor",
-      "Game mode": "Ja",
-      "FreeSync": "FreeSync Premium Pro",
-      "Skærmopdatering (Hz)": "165Hz",
-      "Energy Efficiency": "E"
      }
     },
     {
@@ -80751,7 +80560,7 @@
     {
      "sku": "SAMTU100M90H",
      "label": "100\"",
-     "price": 12666,
+     "price": 11999,
      "was": 21999,
      "colorKey": "Black",
      "ean": "8806099138943",
@@ -85717,78 +85526,6 @@
    "read": "2026-11-21"
   },
   {
-   "sku": "SONRAY",
-   "brand": "Sonos",
-   "model": "Ray",
-   "type": {
-    "key": "Soundbar",
-    "da": "Soundbar"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/sonos-ray-soundbar/sonraywh/",
-   "kind": "speaker",
-   "scope": "diagram",
-   "facets": {
-    "active": true,
-    "role": "soundbar",
-    "axis": "colour",
-    "bt": false,
-    "wifi": true
-   },
-   "variants": [
-    {
-     "sku": "SONRAYWH",
-     "label": "Hvid",
-     "price": 1329,
-     "colorKey": "White",
-     "ean": "8717755778505",
-     "url": "/sonos-ray-soundbar/sonraywh/",
-     "img": "hk:5fdff746-dae2-4de9-b505-f73ba53d303b",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "1,9",
-      "Vægt emballage (kg)": "3,15",
-      "Mål (emballage)": "16,1 x 15,6 x 70 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "55,7 x 7 x 9,3 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "Lydindgang": "Optisk",
-    "Indgang (andet)": "Ethernet",
-    "Trådløs overførsel": "Wi-Fi, NFC, SonosNet, Airplay 2, TIDAL Connect, Sonos Multiroom",
-    "Kabinet type": "Lukket",
-    "Fjernbetjening": "Nej",
-    "Integreret vægbeslag": "Nej",
-    "Stereo parring": "Nej",
-    "Multirum": "Ja",
-    "Aftageligt strømkabel": "Ja",
-    "Teknologier": "Alexa, SonosNet, Google Assistant, TruePlay",
-    "Streamingtjenester": "Spotify, Tidal, Soundcloud, Apple Music, Deezer, Tunein, Telmore Musik"
-   },
-   "rel": {
-    "acc": [
-     "SONRAYWM",
-     "ESSCL1OPTX"
-    ],
-    "alt": [
-     "SONBEAMG2",
-     "SONBEAMULTRA",
-     "SONARCULTRA"
-    ],
-    "rec": [
-     "SONERA100SL",
-     "SONSUBMINI",
-     "SONERA100",
-     "SONSUBG4",
-     "SONFIVE",
-     "SONAMP",
-     "SONPORT"
-    ]
-   },
-   "read": "2026-11-21"
-  },
-  {
    "sku": "SONRAYWM",
    "brand": "Sonos",
    "model": "Ray Wall Mount",
@@ -87277,7 +87014,7 @@
     {
      "sku": "SONYK65XR95M2",
      "label": "65\"",
-     "price": 29999,
+     "price": 22222,
      "colorKey": "Black",
      "ean": "4548736178137",
      "url": "/sony-bravia-9-ii-true-rgb-tv/sonyk65xr95m2/",
@@ -87330,7 +87067,7 @@
     {
      "sku": "SONYK75XR95M2",
      "label": "75\"",
-     "price": 34999,
+     "price": 25999,
      "colorKey": "Black",
      "ean": "4548736178090",
      "url": "/sony-bravia-9-ii-true-rgb-tv/sonyk75xr95m2/",
@@ -87383,7 +87120,7 @@
     {
      "sku": "SONYK85XR95M2",
      "label": "85\"",
-     "price": 44999,
+     "price": 33990,
      "colorKey": "Black",
      "ean": "4548736178052",
      "url": "/sony-bravia-9-ii-true-rgb-tv/sonyk85xr95m2/",
@@ -98433,21 +98170,6 @@
    ]
   },
   {
-   "sku": "N230-OBERON3",
-   "brand": "Bluesound",
-   "model": "POWERNODE EDGE (N230) + OBERON 3",
-   "type": {
-    "key": "",
-    "da": "Stereosystem til TV"
-   },
-   "cat": "",
-   "url": "/n230-oberon3/",
-   "price": 0,
-   "was": 0,
-   "img": "",
-   "parts": []
-  },
-  {
    "sku": "N230-OPTICON1MK2",
    "brand": "Bluesound",
    "model": "POWERNODE EDGE (N230) + DALI OPTICON 1 MK2",
@@ -99750,6 +99472,76 @@
       "DALIRUBIKORE6HGBK",
       "DALIRUBIKORE6HGMA",
       "DALIRUBIKORE6NAWA"
+     ]
+    }
+   ]
+  },
+  {
+   "sku": "SAMTMR65R95H-SAMHWQ995F",
+   "brand": "Samsung",
+   "model": "R95H + HWQ995F",
+   "type": {
+    "key": "MicroRGB",
+    "da": "Micro RGB TV"
+   },
+   "cat": "/tv/tv/",
+   "url": "/samtmr65r95h-samhwq995f/",
+   "price": 20999,
+   "was": 41498,
+   "img": "hk:372828da-abef-47d7-9871-27f18d82c16a",
+   "parts": [
+    {
+     "sku": "SAMHWQ995",
+     "name": "Samsung HW-Q995F Soundbar",
+     "qty": 1,
+     "variants": [
+      "SAMHWQ995F"
+     ]
+    },
+    {
+     "sku": "SAMTMRR95H",
+     "name": "Samsung R95H Micro RGB TV",
+     "qty": 1,
+     "variants": [
+      "SAMTMR65R95H",
+      "SAMTMR75R95H",
+      "SAMTMR85R95H"
+     ]
+    }
+   ]
+  },
+  {
+   "sku": "SAMTMRR85H-SAMHWQ995F",
+   "brand": "Samsung",
+   "model": "R85H + HWQ995F",
+   "type": {
+    "key": "MicroRGB",
+    "da": "Micro RGB TV"
+   },
+   "cat": "/tv/tv/",
+   "url": "/samtmrr85h-samhwq995f/",
+   "price": 12999,
+   "was": 24498,
+   "img": "hk:8b03c286-20e8-4e92-a1a4-1f2334c08576",
+   "parts": [
+    {
+     "sku": "SAMHWQ995",
+     "name": "Samsung HW-Q995F Soundbar",
+     "qty": 1,
+     "variants": [
+      "SAMHWQ995F"
+     ]
+    },
+    {
+     "sku": "SAMTMRR85H",
+     "name": "Samsung R85H Micro RGB TV",
+     "qty": 1,
+     "variants": [
+      "SAMTMR55R85H",
+      "SAMTMR65R85H",
+      "SAMTMR75R85H",
+      "SAMTMR85R85H",
+      "SAMTMR100R85H"
      ]
     }
    ]

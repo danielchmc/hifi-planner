@@ -8,13 +8,13 @@
    "cats": {
     "HiFi > Stereo systemer": 50
    },
-   "count": 52,
-   "bundles": 52,
+   "count": 51,
+   "bundles": 51,
    "outlet": 0,
    "products": 0,
    "inCatalogue": 0,
    "variantAxes": {
-    "none": 52
+    "none": 51
    },
    "mapped": null,
    "hifiPlanner": []
@@ -215,28 +215,6 @@
    ]
   },
   {
-   "type": "Kompakt højtaler",
-   "keys": {
-    "CompactLoudSpeaker": 31
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 31
-   },
-   "count": 32,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 31,
-   "inCatalogue": 31,
-   "variantAxes": {
-    "colorOptions": 32
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Passive Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "Trådløs højtaler med batteri",
    "keys": {
     "WirelessLoudspeakerWithBattery": 31
@@ -260,18 +238,40 @@
    ]
   },
   {
-   "type": "Soundbar",
+   "type": "Kompakt højtaler",
    "keys": {
-    "Soundbar": 27
+    "CompactLoudSpeaker": 30
    },
    "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 27
+    "Højtaler > Kompakt højtaler": 30
+   },
+   "count": 31,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 30,
+   "inCatalogue": 30,
+   "variantAxes": {
+    "colorOptions": 31
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "Compact Speakers"
+   ]
+  },
+  {
+   "type": "Soundbar",
+   "keys": {
+    "Soundbar": 26
+   },
+   "cats": {
+    "TV > Soundbar højtaler / TV-lyd": 26
    },
    "count": 28,
    "bundles": 4,
-   "outlet": 1,
-   "products": 23,
-   "inCatalogue": 23,
+   "outlet": 2,
+   "products": 22,
+   "inCatalogue": 22,
    "variantAxes": {
     "colorOptions": 22,
     "none": 4,
@@ -469,28 +469,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Videoprojektor",
-   "keys": {
-    "VideoProjector": 19
-   },
-   "cats": {
-    "TV > Projektor": 19
-   },
-   "count": 19,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 19,
-   "inCatalogue": 19,
-   "variantAxes": {
-    "colorOptions": 18,
-    "dropDown": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
-  },
-  {
    "type": "USB-kabel",
    "keys": {
     "USBCabel": 16
@@ -510,6 +488,28 @@
    "mapped": "cable",
    "hifiPlanner": [
     "Cable: usb"
+   ]
+  },
+  {
+   "type": "Videoprojektor",
+   "keys": {
+    "VideoProjector": 18
+   },
+   "cats": {
+    "TV > Projektor": 18
+   },
+   "count": 18,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 18,
+   "inCatalogue": 18,
+   "variantAxes": {
+    "colorOptions": 17,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
    ]
   },
   {
@@ -635,25 +635,6 @@
    ]
   },
   {
-   "type": "Vægbeslag for Sonos",
-   "keys": {
-    "WallBracketForSonos": 10
-   },
-   "cats": {
-    "Tilbehør > Sonos tilbehør": 10
-   },
-   "count": 15,
-   "bundles": 0,
-   "outlet": 5,
-   "products": 10,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 15
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Centerhøjtaler",
    "keys": {
     "Center": 14
@@ -729,6 +710,25 @@
    "bundles": 0,
    "outlet": 0,
    "products": 14,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 14
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Vægbeslag for Sonos",
+   "keys": {
+    "WallBracketForSonos": 10
+   },
+   "cats": {
+    "Tilbehør > Sonos tilbehør": 10
+   },
+   "count": 14,
+   "bundles": 0,
+   "outlet": 4,
+   "products": 10,
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 14
@@ -1885,6 +1885,28 @@
    "hifiPlanner": []
   },
   {
+   "type": "Micro RGB TV",
+   "keys": {
+    "MicroRGB": 4
+   },
+   "cats": {
+    "TV > TV": 4
+   },
+   "count": 4,
+   "bundles": 2,
+   "outlet": 0,
+   "products": 2,
+   "inCatalogue": 2,
+   "variantAxes": {
+    "none": 2,
+    "sizeSelector": 2
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
    "type": "Mini-LED TV",
    "keys": {
     "MiniLED": 4
@@ -2342,27 +2364,6 @@
    },
    "mapped": null,
    "hifiPlanner": []
-  },
-  {
-   "type": "Micro RGB TV",
-   "keys": {
-    "MicroRGB": 2
-   },
-   "cats": {
-    "TV > TV": 2
-   },
-   "count": 2,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 2,
-   "inCatalogue": 2,
-   "variantAxes": {
-    "sizeSelector": 2
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
   },
   {
    "type": "Radio",

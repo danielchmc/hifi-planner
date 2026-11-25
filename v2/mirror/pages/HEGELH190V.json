@@ -97,6 +97,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Front i aluminium med display \n100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nApple AirPlay 2, Spotify Connect, Roon ready\nMaksimal opløsning: 24-bit/192kHz (optisk/coaxial), 24-bit/96kHz (USB-B) \nUSB-B indgang til afspilning fra PC/Mac \nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nSystemfjernbetjening medfølger (RC8)\nIndbygget Control4 og 2-vejs IP-kontrol\nEnergiforbrug i standby <0,5 watt "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -149,15 +158,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Front i aluminium med display \n100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nApple AirPlay 2, Spotify Connect, Roon ready\nMaksimal opløsning: 24-bit/192kHz (optisk/coaxial), 24-bit/96kHz (USB-B) \nUSB-B indgang til afspilning fra PC/Mac \nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nSystemfjernbetjening medfølger (RC8)\nIndbygget Control4 og 2-vejs IP-kontrol\nEnergiforbrug i standby <0,5 watt "
      }
     ]
    },
@@ -321,70 +321,46 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Hegel H190V roses bredt for sin klare, detaljerede og meget musikalske lyd, der kombinerer en åben og rummelig gengivelse med en stram, punchy bas og stærk kontrol. Forstærkeren leverer masser af kraft, driver krævende højttalere overbevisende og afslører indspilningernes karakter med imponerende præcision. Fremragende ydelse og værdi præger vurderingen, selv om bassen kan kræve lidt volumen, og én anmelder synes, at prisen er høj.",
+   "summary": "Hegel H190V roses bredt for en varm, klar og meget detaljeret lyd, der kombinerer en åben og rummelig gengivelse med en stram, slagkraftig bas og rigelig effekt. Forstærkeren driver krævende højttalere med stor sikkerhed, fremhæver musikalske nuancer og giver indspilninger imponerende dybde og størrelse. Det stærke forhold mellem pris og ydelse fremhæves ofte, selv om bassen kan kræve lidt volumen, før den fulde effekt mærkes.",
    "headlines": {
-    "clear, detailed and spacious sound": {
-     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som klar, detaljeret, åben, luftig og rummelig med stærk adskillelse af instrumenter og sangstemmer.",
-     "simpleTitle": "Klar, detaljeret og rummelig lyd",
+    "open, detailed and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne roser tydelige detaljer, god instrumentseparation, klare vokaler og et åbent, luftigt lydbillede.",
+     "simpleTitle": "Åben, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "clear-detailed-sound",
-     "groupId": "d63f85c4-4a9c-4d84-92aa-39d618cb6ad5"
+     "key": "open-detailed-sound",
+     "groupId": "8e004a9b-55aa-4f84-9954-a887e6cb3f74"
     },
-    "tight, punchy and powerful bass": {
-     "sentimentAnalysis": "Bassen roses for at kombinere slagkraft, stramhed, præcision og rigelig kraft, også ved lavere lydstyrke.",
-     "simpleTitle": "Stram, punchy og kraftfuld bas",
+    "powerful, punchy and precise bass": {
+     "sentimentAnalysis": "Forstærkeren beskrives som kraftfuld og energisk med en stram, slagkraftig og præcis bas, der stadig overbeviser ved lavere lydstyrke.",
+     "simpleTitle": "Kraftfuld, slagkraftig og præcis bas",
      "bias": "positive",
-     "key": "punchy-bass",
-     "groupId": "d63f85c4-4a9c-4d84-92aa-39d618cb6ad5"
+     "key": "powerful-punchy-bass",
+     "groupId": "8e004a9b-55aa-4f84-9954-a887e6cb3f74"
     },
-    "bass needs some volume to emerge": {
-     "sentimentAnalysis": "Basgengivelsen roses generelt, men en anmeldelse bemærker, at der kræves lidt volumen for at få bassen i indspilningerne frem.",
-     "simpleTitle": "Bassen kræver lidt volumen",
-     "bias": "negative",
-     "key": "bass-volume",
-     "groupId": "d63f85c4-4a9c-4d84-92aa-39d618cb6ad5"
-    },
-    "confidently drives demanding speakers": {
-     "sentimentAnalysis": "Forstærkeren roses kraftigt for sin ydelse, sin evne til at drive højttalere og kontrollen over store højttalersystemer.",
-     "simpleTitle": "Driver krævende højttalere overbevisende",
+    "strong value for the performance": {
+     "sentimentAnalysis": "Trods den høje pris anses forstærkeren for pengene værd og særligt attraktiv i forhold til ydelsen.",
+     "simpleTitle": "Stærk værdi for ydelsen",
      "bias": "positive",
-     "key": "speaker-driving",
-     "groupId": "c05db12b-323b-4cdf-823f-96137667a80b"
-    },
-    "strong performance for the price": {
-     "sentimentAnalysis": "H190V opfattes som dyr af én anmelder, men vurderes stadig klart til at være pengene værd og muligvis blandt Hegels bedste valg med hensyn til pris og ydelse.",
-     "simpleTitle": "Stærk ydelse til prisen",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "0c1ba435-dfce-46a9-939e-3e5c010f7166"
+     "key": "strong-value",
+     "groupId": "d566980a-9180-4a98-9b91-7c6ddd155b48"
     }
    },
    "grouping": {
-    "d63f85c4-4a9c-4d84-92aa-39d618cb6ad5": {
+    "8e004a9b-55aa-4f84-9954-a887e6cb3f74": {
      "title": "Lydkvalitet",
-     "id": "d63f85c4-4a9c-4d84-92aa-39d618cb6ad5",
+     "id": "8e004a9b-55aa-4f84-9954-a887e6cb3f74",
      "references": [
       "4dbc6f9d-cba3-4874-82b7-3b24e95f8894",
       "c64dd4d9-95e4-4a95-9a81-01eb5cd4101c",
-      "18c4cb63-fd47-4209-acb4-4df1701a6471",
       "7106affe-d767-4d6b-ab17-15504655d95f",
       "6506f82f-9b02-417d-b451-918a50bcfcda",
       "0764d389-726f-488d-bd93-98e5eb53a958",
       "78d82cef-4d9e-4c90-8edd-929f9efdc92e"
      ]
     },
-    "c05db12b-323b-4cdf-823f-96137667a80b": {
-     "title": "Kraft og højttalerkontrol",
-     "id": "c05db12b-323b-4cdf-823f-96137667a80b",
-     "references": [
-      "c64dd4d9-95e4-4a95-9a81-01eb5cd4101c",
-      "6506f82f-9b02-417d-b451-918a50bcfcda",
-      "0764d389-726f-488d-bd93-98e5eb53a958"
-     ]
-    },
-    "0c1ba435-dfce-46a9-939e-3e5c010f7166": {
-     "title": "Pris og værdi",
-     "id": "0c1ba435-dfce-46a9-939e-3e5c010f7166",
+    "d566980a-9180-4a98-9b91-7c6ddd155b48": {
+     "title": "Pris og ydelse",
+     "id": "d566980a-9180-4a98-9b91-7c6ddd155b48",
      "references": [
       "7106affe-d767-4d6b-ab17-15504655d95f",
       "0764d389-726f-488d-bd93-98e5eb53a958"

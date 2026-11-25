@@ -33,7 +33,7 @@
    "0d0599a8-7551-46c7-b51a-f55119fb27e8",
    "6bc1b39d-bed3-431d-a743-386bfe4e0ca1"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 235669,
@@ -50,7 +50,6 @@
     "BLSN132",
     "DALIEPIKORE3",
     "HEGELV10",
-    "HEGELVIKING",
     "BW805D5",
     "RACLARITY62",
     "BW705S3",
@@ -59,7 +58,8 @@
     "DALIEPIKORE7",
     "BW803D5",
     "BW802D5",
-    "BW801D5"
+    "BW801D5",
+    "HEGELVIKING"
    ],
    "isOutlet": "false"
   },
@@ -101,6 +101,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Front i aluminium \n100% diskret analog effektdel \nDual Mono konstruktion\nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nDedikeret Hegel Control app\nGoogle Cast, AirPlay, Spotify Connect, TIDAL Connect, UPnP, Roon Ready \nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/DLNA), 24-bit/384kHz + DSD256(DoP) (USB-B) \nBit perfect DAC \nUSB-B indgang til afspilning fra PC/Mac (24/384)\nMulighed for DAC-Loop (BNC-ud/XLR-ind)\nEthernet-tilslutning / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange (undtagen USB)\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nSystemfjernbetjening i metal (RC8)\nFirmware kan opdateres via netværk (push-update)\nDigital input sense på alle digitale indgange undtagen USB\n* RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -166,15 +175,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Front i aluminium \n100% diskret analog effektdel \nDual Mono konstruktion\nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nDedikeret Hegel Control app\nGoogle Cast, AirPlay, Spotify Connect, TIDAL Connect, UPnP, Roon Ready \nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/DLNA), 24-bit/384kHz + DSD256(DoP) (USB-B) \nBit perfect DAC \nUSB-B indgang til afspilning fra PC/Mac (24/384)\nMulighed for DAC-Loop (BNC-ud/XLR-ind)\nEthernet-tilslutning / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange (undtagen USB)\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nSystemfjernbetjening i metal (RC8)\nFirmware kan opdateres via netværk (push-update)\nDigital input sense på alle digitale indgange undtagen USB\n* RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
      }
     ]
    },
@@ -281,11 +281,12 @@
      "productCode": "HEGELH400BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 6,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -373,27 +374,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELH400 er en kraftfuld og præcis alt-i-en-forstærker med varm, slagkraftig og krystalklar lyd samt sikker kontrol over krævende højttalere. Forstærkeren passer særligt godt sammen med avancerede højttalere og leverer medrivende, naturlige detaljer på tværs af musikgenrer. TV-integrationen kan være problematisk med lejlighedsvise lydudfald og langsom parring af fjernbetjeningen, selv om musikgengivelsen er fremragende.",
+   "summary": "HEGEL H400 er en smukt bygget og meget kompetent alt-i-én-forstærker med varm, kraftfuld og usædvanligt kontrolleret lyd. Forstærkeren leverer punchy dynamik, krystalklare detaljer og overbevisende realisme med mange forskellige højttalere og musikgenrer. TV-tilslutning kan give problemer i visse opsætninger, men den samlede ydelse og værdi er meget overbevisende.",
    "headlines": {
-    "confident control of demanding speakers": {
-     "sentimentAnalysis": "H400 værdsættes konsekvent for sin effekt, autoritet og evne til at drive og kontrollere store højttalersystemer.",
-     "simpleTitle": "Sikker kontrol over krævende højttalere",
+    "drives demanding speakers with complete control": {
+     "sentimentAnalysis": "Forstærkeren værdsættes konsekvent for sin autoritet, kontrol og evne til at fungere godt med krævende højttalere.",
+     "simpleTitle": "Driver krævende højttalere med fuld kontrol",
      "bias": "positive",
-     "key": "amplification",
-     "groupId": "c9343ee4-de3a-4e2b-b777-4acedc07cb28"
+     "key": "speaker-control",
+     "groupId": "e6b1631f-8322-4d66-8720-72d3bedb7e3f"
     },
-    "warm, clear and natural sound": {
-     "sentimentAnalysis": "Forstærkeren roses for krystalklar, præcis og naturlig lyd med stærk musikalsk gennemslagskraft.",
-     "simpleTitle": "Varm, klar og naturlig lyd",
+    "clear, detailed and natural sound": {
+     "sentimentAnalysis": "Forstærkeren roses for krystalklar, præcis, naturlig og meget realistisk gengivelse på tværs af forskellige musikgenrer.",
+     "simpleTitle": "Klar, detaljeret og naturlig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "2b01bdb4-5b67-4859-8273-d85f06493217"
+     "key": "clear-natural-sound",
+     "groupId": "96f8dbbc-5646-4b77-b0eb-7ae5c0df569a"
+    },
+    "powerful and immersive musical punch": {
+     "sentimentAnalysis": "H400 beskrives som en forstærker med et magisk punch, der gør mange forskellige musiktyper særdeles medrivende.",
+     "simpleTitle": "Kraftfuldt og medrivende musikalsk punch",
+     "bias": "positive",
+     "key": "musical-punch",
+     "groupId": "96f8dbbc-5646-4b77-b0eb-7ae5c0df569a"
     }
    },
    "grouping": {
-    "c9343ee4-de3a-4e2b-b777-4acedc07cb28": {
+    "e6b1631f-8322-4d66-8720-72d3bedb7e3f": {
      "title": "Forstærkereffekt og kontrol",
-     "id": "c9343ee4-de3a-4e2b-b777-4acedc07cb28",
+     "id": "e6b1631f-8322-4d66-8720-72d3bedb7e3f",
      "references": [
       "36f3ee2c-bd33-4e26-a2b9-9566758d21b5",
       "d129836d-f192-4c4b-ba80-82c400a8e706",
@@ -402,13 +410,12 @@
       "932aab41-74a4-4d51-8edb-071ae44e6a54"
      ]
     },
-    "2b01bdb4-5b67-4859-8273-d85f06493217": {
+    "96f8dbbc-5646-4b77-b0eb-7ae5c0df569a": {
      "title": "Lydkvalitet",
-     "id": "2b01bdb4-5b67-4859-8273-d85f06493217",
+     "id": "96f8dbbc-5646-4b77-b0eb-7ae5c0df569a",
      "references": [
       "d129836d-f192-4c4b-ba80-82c400a8e706",
       "62972013-aa25-4e28-a753-0c51e1e48163",
-      "078b264f-3400-473d-8d8b-333a5c5aead5",
       "932aab41-74a4-4d51-8edb-071ae44e6a54"
      ]
     }

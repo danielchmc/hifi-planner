@@ -32,7 +32,7 @@
    "8a8b23c5-e0a2-40f8-b5e7-47f9012205c8",
    "f1389410-05a3-4ea5-aed9-cbbe4466c879"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 291229,
@@ -78,6 +78,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Integreret stereoforstærker med streaming\nFront i aluminium med display \n100% diskret analog Klasse A/B-effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nStreaming: Spotify Connect Lossless, TIDAL Connect, Qobuz Connect, AirPlay, Google Cast, Roon Ready, Airable Internet Radio/Podcast \nDAC Loop\nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nSystemfjernbetjening medfølger (RC8)\nSmart Home integration: Control4, Crestron Home, Crestron SIMPL\nEnergiforbrug i standby <0,5 watt "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -108,15 +117,6 @@
      {
       "term": "Indgang (andet)",
       "value": "Ethernet"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Integreret stereoforstærker med streaming\nFront i aluminium med display \n100% diskret analog Klasse A/B-effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nStreaming: Spotify Connect Lossless, TIDAL Connect, Qobuz Connect, AirPlay, Google Cast, Roon Ready, Airable Internet Radio/Podcast \nDAC Loop\nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nSystemfjernbetjening medfølger (RC8)\nSmart Home integration: Control4, Crestron Home, Crestron SIMPL\nEnergiforbrug i standby <0,5 watt "
      }
     ]
    },
@@ -239,11 +239,12 @@
      "productCode": "HEGELH200BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 6,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

@@ -193,7 +193,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 27,
+     "numberOfStoresExperience": 1,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -245,41 +246,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEOS Link HS2 er en alsidig og solidt bygget bro, der bringer ældre forstærkere og pladespillere ind i et trådløst HEOS-multiroom-system. Opsætningen er generelt hurtig, afspilningen er stabil, og musik fra NAS samt Spotify fungerer problemfrit med varm, punchy og omsluttende lyd i de tilsluttede rum. Vejledningen til den første opsætning kunne være tydeligere, mens forsinket lyd og begrænset integration af lossless-streamingtjenester fortsat er mærkbare ulemper.",
+   "summary": "HEOS Link HS2 er en kompakt og solidt bygget bridge, der uden besvær integrerer ældre forstærkere og pladespillere i et trådløst HEOS-multiroom-system, hvor Spotify, NAS-afspilning, Chromecast Audio og multiroom-grupper fungerer problemfrit. Opsætningen er som regel hurtig og enkel, og den daglige brug beskrives som stabil og problemfri. De største forbehold gælder afhængigheden af HEOS-appen, den begrænsede integration af tabsfri streamingtjenester og lejlighedsvis utilstrækkelig opsætningsvejledning; enkelte kilder kan også give forsinket lyd.",
    "headlines": {
-    "seamless integration for older audio equipment": {
-     "sentimentAnalysis": "Broen moderniserer ældre forstærkere og udstyr effektivt og integrerer dem i HEOS-miljøet med lille indsats.",
-     "simpleTitle": "Problemfri integration af ældre lydudstyr",
+    "older equipment joins the HEOS system effortlessly": {
+     "sentimentAnalysis": "Produktet roses som en effektiv bro til ældre forstærkere, pladespillere og andet udstyr.",
+     "simpleTitle": "Ældre udstyr integreres nemt i HEOS-systemet",
      "bias": "positive",
-     "key": "legacy equipment",
-     "groupId": "45fa4054-9691-412e-a9dd-41e701e3cf74"
+     "key": "integration",
+     "groupId": "71579f40-bd0c-41f7-85c4-cdf50afd3fcf"
     },
-    "stable, uninterrupted playback": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver stabil drift, herunder uafbrudt NAS-afspilning og HEOS-systemer, der fungerer konsekvent.",
-     "simpleTitle": "Stabil afspilning uden afbrydelser",
+    "smooth multiroom control through HEOS": {
+     "sentimentAnalysis": "HEOS-økosystemet gør rumgruppering og styring enkel.",
+     "simpleTitle": "Problemfri multiroom-styring via HEOS",
      "bias": "positive",
-     "key": "reliable playback",
-     "groupId": "76dfb3de-8f26-4727-b720-78f4bcf5d19d"
+     "key": "multiroom",
+     "groupId": "613500f6-1ff0-4d0f-b771-c092b9d0041c"
     },
-    "great for connecting turntables to wireless HEOS speakers": {
-     "sentimentAnalysis": "Produktet gør pladespillerafspilning tilgængelig i hele det trådløse HEOS-system og roses som en effektiv løsning.",
-     "simpleTitle": "Fremragende forbindelse af pladespillere til trådløse HEOS-højttalere",
+    "turntable audio reaches wireless speakers": {
+     "sentimentAnalysis": "Vinylafspilning distribueres med succes gennem det trådløse HEOS-højttalersystem.",
+     "simpleTitle": "Pladespillerlyd når trådløse højttalere",
      "bias": "positive",
-     "key": "turntable integration",
-     "groupId": "45fa4054-9691-412e-a9dd-41e701e3cf74"
+     "key": "integration",
+     "groupId": "71579f40-bd0c-41f7-85c4-cdf50afd3fcf"
     },
-    "fast, easy installation": {
-     "sentimentAnalysis": "Installationen beskrives som enkel og gennemført på få minutter.",
-     "simpleTitle": "Hurtig og nem installation",
+    "quick, simple installation": {
+     "sentimentAnalysis": "Installationen beskrives som nem og tog i ét tilfælde kun få minutter.",
+     "simpleTitle": "Hurtig og enkel installation",
      "bias": "positive",
-     "key": "easy setup",
-     "groupId": "6375b808-81b6-4160-ad01-08912c4ee322"
+     "key": "setup",
+     "groupId": "138d4dab-c00a-497c-9347-9a1675613c71"
+    },
+    "setup instructions could be clearer": {
+     "sentimentAnalysis": "Installationsfeedbacket er overvejende positivt, men der ønskes tydeligere dokumentation.",
+     "simpleTitle": "Opsætningsvejledningen kunne være tydeligere",
+     "bias": "negative",
+     "key": "setup",
+     "groupId": "138d4dab-c00a-497c-9347-9a1675613c71"
+    },
+    "dependence on the HEOS app is a concern": {
+     "sentimentAnalysis": "Appstyringen er nyttig, men fortsat app-understøttelse anses for afgørende.",
+     "simpleTitle": "Afhængigheden af HEOS-appen er en bekymring",
+     "bias": "negative",
+     "key": "multiroom",
+     "groupId": "613500f6-1ff0-4d0f-b771-c092b9d0041c"
+    },
+    "spotify and NAS playback work reliably": {
+     "sentimentAnalysis": "Almindelige streamingfunktioner fungerer ifølge anmeldelserne problemfrit og uden afbrydelser.",
+     "simpleTitle": "Spotify- og NAS-afspilning fungerer pålideligt",
+     "bias": "positive",
+     "key": "streaming",
+     "groupId": "246669ef-8607-4bf6-83dc-e7798964b1a5"
+    },
+    "lossless streaming integration falls short": {
+     "sentimentAnalysis": "Spotify fungerer godt, men den bredere understøttelse af tabsfri tjenester opfattes som skuffende.",
+     "simpleTitle": "Integrationen af tabsfri streaming skuffer",
+     "bias": "negative",
+     "key": "streaming",
+     "groupId": "246669ef-8607-4bf6-83dc-e7798964b1a5"
     }
    },
    "grouping": {
-    "45fa4054-9691-412e-a9dd-41e701e3cf74": {
-     "title": "Integration af enheder",
-     "id": "45fa4054-9691-412e-a9dd-41e701e3cf74",
+    "71579f40-bd0c-41f7-85c4-cdf50afd3fcf": {
+     "title": "Integration af udstyr",
+     "id": "71579f40-bd0c-41f7-85c4-cdf50afd3fcf",
      "references": [
       "39e5f426-5e92-4208-b13b-3a7d629f9f11",
       "a8a060d6-86f4-433d-8430-7251da59e337",
@@ -287,23 +316,32 @@
       "64e45ac7-7066-4011-bcc1-78e86b9fcd59",
       "5a869548-7d08-4521-a239-1762aaaa9ece",
       "5acdef54-609c-4e6b-b024-f8139c50a576",
-      "25067362-d333-4269-a4c0-f69bde68e542",
+      "25067362-d333-4269-a4c0-f69bde68e542"
+     ]
+    },
+    "613500f6-1ff0-4d0f-b771-c092b9d0041c": {
+     "title": "Multiroom og appstyring",
+     "id": "613500f6-1ff0-4d0f-b771-c092b9d0041c",
+     "references": [
+      "e7db8189-e734-45e4-b5da-2e059b3a5422",
+      "64e45ac7-7066-4011-bcc1-78e86b9fcd59",
+      "5a869548-7d08-4521-a239-1762aaaa9ece",
       "e7391536-b1d3-4dd5-9979-f94bb1e93131"
      ]
     },
-    "76dfb3de-8f26-4727-b720-78f4bcf5d19d": {
-     "title": "Driftsikkerhed",
-     "id": "76dfb3de-8f26-4727-b720-78f4bcf5d19d",
+    "246669ef-8607-4bf6-83dc-e7798964b1a5": {
+     "title": "Streaming og afspilning",
+     "id": "246669ef-8607-4bf6-83dc-e7798964b1a5",
      "references": [
       "bae5312b-4451-4dac-8377-f9e4b27e07b8",
-      "8ee2906d-83ca-44e3-b494-06c666affd25",
-      "dcee5965-2077-481f-8c28-abc74ebc7463",
-      "e7391536-b1d3-4dd5-9979-f94bb1e93131"
+      "39e5f426-5e92-4208-b13b-3a7d629f9f11",
+      "64e45ac7-7066-4011-bcc1-78e86b9fcd59",
+      "c22b4bf5-fe75-40ab-86a4-8547483e6458"
      ]
     },
-    "6375b808-81b6-4160-ad01-08912c4ee322": {
-     "title": "Installation",
-     "id": "6375b808-81b6-4160-ad01-08912c4ee322",
+    "138d4dab-c00a-497c-9347-9a1675613c71": {
+     "title": "Installation og brugervenlighed",
+     "id": "138d4dab-c00a-497c-9347-9a1675613c71",
      "references": [
       "bae5312b-4451-4dac-8377-f9e4b27e07b8",
       "66655275-86b5-4a06-8076-9613fda3ba23",

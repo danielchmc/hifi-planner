@@ -26,7 +26,7 @@
    "36659214-a787-44de-861b-e4effafd2b4a",
    "3c10ed0d-d0b4-4cc2-8f96-593671eb2a8d"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 284591,
@@ -223,12 +223,11 @@
      "productCode": "JBLLIVE680BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 18. december",
+     "deliveryDate": "2026-12-18T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -358,7 +357,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 5,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -489,7 +488,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 18,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -620,7 +619,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 7,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -751,7 +750,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 4,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -881,7 +880,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 3,
+     "numberOfStoresExperience": 2,
      "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -1083,7 +1082,17 @@
   "testGroups": [],
   "bundleRelations": [],
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "boxContent": [
    {
     "productName": "JBL Live 680NC Trådløst headset",

@@ -29,7 +29,7 @@
    "d58ee8ca-1fc3-463f-8f45-2e3b190151f1",
    "8f91ffce-06c0-4ff2-ad3a-98b6fad03c9a"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 210989,
@@ -43,6 +43,7 @@
     "BW804D5",
     "BLSN530",
     "HEGELV10",
+    "HEGELVIKING",
     "DALIRUBIKORE8",
     "DALIEPIKORE7",
     "MOFISOURCEPOINT888",
@@ -53,8 +54,7 @@
     "BW802D5",
     "BW801D4",
     "DALIEPIKORE11",
-    "BW801D5",
-    "HEGELVIKING"
+    "BW801D5"
    ],
    "isOutlet": "false"
   },
@@ -93,6 +93,33 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Front og chassis i aluminium \n100% diskret analog effektdel med 6 ultra-highspeed high-power transistorer pr. kanal\nDual Mono konstruktion\nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nAirPlay 2, Spotify Connect, TIDAL Connect, UPnP, Roon Ready* \nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/DLNA), 24-bit/384kHz + DSD256(DoP) (USB-B) \nBit perfect DAC \nUSB-B indgang til afspilning fra PC/Mac (24/384)\nMulighed for DAC-Loop (BNC-ud/XLR-ind)\nEthernet-tilslutning / UPnP\nValgfri variabel/fixed indstilling på alle indgange (undtagen USB)\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nSystemfjernbetjening i metal (RC8)\nFirmware kan opdateres via netværk\n* Roon og Spotify Connect bliver integreret i H600 via kommende opdatering.\n** RIAA-forstærker fås separat eller indbygget i nogle pladespillere."
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "title": "Tilslutninger",
+    "content": [
+     {
+      "term": "Lydudgang",
+      "value": "Analog RCA, BNC"
+     },
+     {
+      "term": "Lydindgang",
+      "value": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC"
+     },
+     {
+      "term": "Indgang (andet)",
+      "value": "Ethernet, USB B"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -119,33 +146,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 9,
-    "title": "Tilslutninger",
-    "content": [
-     {
-      "term": "Lydudgang",
-      "value": "Analog RCA, BNC"
-     },
-     {
-      "term": "Lydindgang",
-      "value": "Coaxial, Optisk, Analog RCA, Analog XLR, BNC"
-     },
-     {
-      "term": "Indgang (andet)",
-      "value": "Ethernet, USB B"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Front og chassis i aluminium \n100% diskret analog effektdel med 6 ultra-highspeed high-power transistorer pr. kanal\nDual Mono konstruktion\nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nAirPlay 2, Spotify Connect, TIDAL Connect, UPnP, Roon Ready* \nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/DLNA), 24-bit/384kHz + DSD256(DoP) (USB-B) \nBit perfect DAC \nUSB-B indgang til afspilning fra PC/Mac (24/384)\nMulighed for DAC-Loop (BNC-ud/XLR-ind)\nEthernet-tilslutning / UPnP\nValgfri variabel/fixed indstilling på alle indgange (undtagen USB)\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nSystemfjernbetjening i metal (RC8)\nFirmware kan opdateres via netværk\n* Roon og Spotify Connect bliver integreret i H600 via kommende opdatering.\n** RIAA-forstærker fås separat eller indbygget i nogle pladespillere."
      }
     ]
    },
@@ -218,11 +218,12 @@
      "productCode": "HEGELH600BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 6,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -297,68 +298,52 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELH600 roses bredt som en spektakulær high-end integreret forstærker, der leverer varm, kraftfuld og særdeles kontrolleret lyd med enestående klarhed, detaljering, dybde og åbenhed. Flere ejere beskriver markante forbedringer i forhold til H190, H200, H360 og H590, hvilket gør forstærkeren til en komplet og overbevisende opgradering. Kombinationen af slagkraftig bas, et omsluttende lydbillede og ubesværet højttalerkontrol gør HEGELH600 til en stærk anbefaling til krævende anlæg.",
+   "summary": "HEGELH600 betragtes bredt som en fremragende high-end integreret forstærker, der leverer varm, kraftfuld og særdeles kontrolleret lyd med enestående klarhed, detaljer, dybde og åbenhed. Forstærkeren driver krævende højttalere ubesværet og er en markant opgradering i forhold til flere tidligere Hegel-modeller, herunder H190, H200, H360 og H590. Det raffinerede design, de omfattende forbedringer og den medrivende gengivelse gør HEGELH600 til et særdeles overbevisende valg til seriøs lytning.",
    "headlines": {
-    "major improvement over earlier Hegel amplifiers": {
-     "sentimentAnalysis": "Ejere beskriver konsekvent skiftet fra ældre Hegel-modeller som en markant, til tider dramatisk, forbedring fra en ny generation.",
-     "simpleTitle": "Markant forbedring i forhold til tidligere Hegel-forstærkere",
+    "a major leap over earlier Hegel amplifiers": {
+     "sentimentAnalysis": "Ejere, der skifter fra H190, H200, H360 eller H590, beskriver en overraskende stor forbedring og ser HEGELH600 som en markant mere kapabel efterfølger.",
+     "simpleTitle": "Et stort spring fremad fra tidligere Hegel-forstærkere",
      "bias": "positive",
-     "key": "major_upgrade",
-     "groupId": "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969"
+     "key": "major-upgrade",
+     "groupId": "4012d7a7-b6f1-4940-bcc6-01607aa26b0d"
     },
     "clear, detailed and open sound": {
-     "sentimentAnalysis": "Forstærkeren roses gentagne gange for glasklar gengivelse, høj opløsning, åbenhed og ubesværet musikalsk detaljering.",
+     "sentimentAnalysis": "Anmeldelserne roser den enestående klare, højtopløste og åbne gengivelse med dyb, bred lydbillede og sort baggrund.",
      "simpleTitle": "Klar, detaljeret og åben lyd",
      "bias": "positive",
-     "key": "clear_detailed_open_sound",
-     "groupId": "a52e4434-6af1-4466-b595-b0cb5af33ab5"
+     "key": "clear-detailed-open-sound",
+     "groupId": "8dec0afa-d56a-40e8-b73c-229885f866ed"
     },
-    "effortless power and speaker control": {
-     "sentimentAnalysis": "Forstærkeren beskrives som et kraftværk med enestående kontrol, der ubesværet kan drive krævende højttalere.",
-     "simpleTitle": "Ubesværet kraft og højttalerkontrol",
+    "powerful control over demanding speakers": {
+     "sentimentAnalysis": "Forstærkeren beskrives som et kraftværk med præcis bas, stor autoritet og ubesværet kontrol over højttalere.",
+     "simpleTitle": "Kraftfuld kontrol over krævende højttalere",
      "bias": "positive",
-     "key": "effortless_power_control",
-     "groupId": "3d466cce-6cde-4d53-b957-3ff1a4207a05"
-    },
-    "deep, wide and punchy presentation": {
-     "sentimentAnalysis": "Beskrivelserne fremhæver kraftfuld dynamik, præcis bas, dybde, bredde, en sort baggrund og et omsluttende high-end-lydbillede.",
-     "simpleTitle": "Dyb, bred og slagkraftig gengivelse",
-     "bias": "positive",
-     "key": "deep_wide_punchy_sound",
-     "groupId": "a52e4434-6af1-4466-b595-b0cb5af33ab5"
+     "key": "power-and-control",
+     "groupId": "8dec0afa-d56a-40e8-b73c-229885f866ed"
     }
    },
    "grouping": {
-    "a52e4434-6af1-4466-b595-b0cb5af33ab5": {
+    "8dec0afa-d56a-40e8-b73c-229885f866ed": {
      "title": "Lydkvalitet",
-     "id": "a52e4434-6af1-4466-b595-b0cb5af33ab5",
+     "id": "8dec0afa-d56a-40e8-b73c-229885f866ed",
      "references": [
       "5ebcb6b6-547f-4319-84e7-35ccacc89278",
       "77fa79fc-109c-4ca5-bb7d-6c25f0d63273",
-      "af82e960-4fe1-4425-b105-908a3655f84f",
       "722cb1f5-e9be-4a4a-b2f7-4d69ec2fa604",
       "4cfd7f81-506b-4d5f-8bb3-b2a277a9504a",
+      "af82e960-4fe1-4425-b105-908a3655f84f",
       "32e70afd-c86d-471e-aa07-929b7f57682d"
      ]
     },
-    "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969": {
-     "title": "Opgraderingssammenligning",
-     "id": "e7ff5d65-4ef5-4208-8dde-ba45ddc3e969",
+    "4012d7a7-b6f1-4940-bcc6-01607aa26b0d": {
+     "title": "Opgradering fra tidligere modeller",
+     "id": "4012d7a7-b6f1-4940-bcc6-01607aa26b0d",
      "references": [
       "e51a9615-052c-4792-85cb-f7721ec6b1dc",
       "c4ccfae4-1bed-4b49-81c0-f0a032e53a17",
       "3540594a-935f-42ed-841e-9e11ca7bbf95",
       "af82e960-4fe1-4425-b105-908a3655f84f",
       "2a3106cb-bbec-4d26-90de-8f7d859beedd"
-     ]
-    },
-    "3d466cce-6cde-4d53-b957-3ff1a4207a05": {
-     "title": "Kraft og højttalerkontrol",
-     "id": "3d466cce-6cde-4d53-b957-3ff1a4207a05",
-     "references": [
-      "5ebcb6b6-547f-4319-84e7-35ccacc89278",
-      "77fa79fc-109c-4ca5-bb7d-6c25f0d63273",
-      "722cb1f5-e9be-4a4a-b2f7-4d69ec2fa604"
      ]
     }
    },

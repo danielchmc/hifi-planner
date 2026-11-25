@@ -171,7 +171,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 72,
+        "availableQuantity": 60,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.398,-",
@@ -194,7 +194,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 40,
+        "availableQuantity": 34,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.398,-",
@@ -217,7 +217,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 70,
+        "availableQuantity": 66,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.398,-",
@@ -229,55 +229,48 @@
      ],
      "parentProductCode": "BW607S3",
      "reviews": {
-      "summary": "B&W 607 S3 leverer et usædvanligt klart, detaljeret og dynamisk lydbillede for en kompakt højttaler med levende rumfornemmelse, sprød diskant og overraskende kontant bas. Gengivelsen kan virke en smule lys eller trættende for nogle lyttere, mens den dybeste bas får glæde af en subwoofer samt omhyggelig placering eller forstærkervalg. Samlet set gør den musikalske raffinement, det kompakte design og den stærke værdi 607 S3 til et fremragende valg til stereoanlæg, kontorer og hjemmebiograf.",
+      "summary": "B&W 607 S3 leverer en usædvanligt klar, detaljeret og dynamisk lyd fra det kompakte kabinet med et engagerende lydbillede, livlig diskant og overraskende god bas. Gengivelsen kan lejlighedsvis virke lys eller trættende, og den dybe bas får hjælp af en subwoofer, korrekt placering og passende forstærkning. Samlet set opleves højttalerne som stilfulde, alsidige og særdeles gode til prisen.",
       "headlines": {
-       "a subwoofer adds depth": {
-        "sentimentAnalysis": "Højttalerne fungerer fint alene, men flere anmeldelser anbefaler en subwoofer, hvis der ønskes dybere eller mere fyldig bas.",
-        "simpleTitle": "En subwoofer giver mere dybde",
-        "bias": "meh",
-        "key": "bass",
-        "groupId": "0c348310-626f-40ee-8d28-d43c77dc5cba"
-       },
-       "clear, detailed and dynamic presentation": {
-        "sentimentAnalysis": "Anmelderne roser den rene, livlige og engagerende lyd med stærk dynamik, tydelig definition og et rummeligt lydbillede.",
-        "simpleTitle": "Klar, detaljeret og dynamisk gengivelse",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "ce887f58-f8ac-4a84-900d-3eab34bfa75d"
-       },
-       "compact and easy to place": {
-        "sentimentAnalysis": "Det kompakte kabinet passer nemt ind i reoler, kontorer og stuer og bevarer samtidig en imponerende ydelse.",
-        "simpleTitle": "Kompakt og nem at placere",
-        "bias": "positive",
-        "key": "compact",
-        "groupId": "c65626a8-201b-4b23-ac1a-e55f439dcdb5"
-       },
-       "surprisingly punchy bass for the size": {
-        "sentimentAnalysis": "Flere anmeldelser fremhæver den dybe, fyldige og kontante bas, som overgår forventningerne til så kompakt et kabinet.",
-        "simpleTitle": "Overraskende kontant bas i forhold til størrelsen",
-        "bias": "positive",
-        "key": "bass",
-        "groupId": "0c348310-626f-40ee-8d28-d43c77dc5cba"
-       },
-       "strong home cinema performance": {
-        "sentimentAnalysis": "Anmeldelserne beskriver 607 S3 som effektive surround- og baghøjttalere med tydelig gengivelse og god integration i hjemmebiografsystemer.",
-        "simpleTitle": "Stærk hjemmebiografydelse",
-        "bias": "positive",
-        "key": "homecinema",
-        "groupId": "e43abbc4-bcde-4168-9659-3321c41a5384"
-       },
-       "treble can sound bright or fatiguing": {
-        "sentimentAnalysis": "Nogle lyttere oplever diskanten som fremtrædende, overbetonet eller lejlighedsvis trættende, men equalizer og korrekt systemmatchning kan forbedre balancen.",
-        "simpleTitle": "Diskanten kan virke lys eller trættende",
+       "a subwoofer adds essential depth": {
+        "sentimentAnalysis": "Anmeldelser nævner ofte begrænset dybbas og beskriver en subwoofer som en klar forbedring, især ved højere lydstyrke.",
+        "simpleTitle": "En subwoofer giver ekstra dybde",
         "bias": "negative",
-        "key": "sound",
-        "groupId": "ce887f58-f8ac-4a84-900d-3eab34bfa75d"
+        "key": "bass-subwoofer",
+        "groupId": "1b5c6bc0-e5ee-496c-958a-50b123b3413a"
+       },
+       "compact and stylish placement-friendly design": {
+        "sentimentAnalysis": "Højttalerne værdsættes ofte for at passe i små rum, reoler og surroundsystemer, samtidig med at de ser flotte ud.",
+        "simpleTitle": "Kompakt og stilfuldt design, der er let at placere",
+        "bias": "positive",
+        "key": "compact-design",
+        "groupId": "7207d3b0-81f0-45a6-9a5f-10323d90f8a6"
+       },
+       "clear, detailed and dynamic sound": {
+        "sentimentAnalysis": "Højttalerne roses gentagne gange for klarhed, opløsning, dynamik, separation og et engagerende lydbillede.",
+        "simpleTitle": "Klar, detaljeret og dynamisk lyd",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "db1ec5ef-5f09-480f-91ba-ac5d19e38dc8"
+       },
+       "surprisingly deep bass for the size": {
+        "sentimentAnalysis": "De kompakte kabinetter leverer en fyldigere, dybere og mere punchy bas end forventet.",
+        "simpleTitle": "Overraskende dyb bas i størrelsen",
+        "bias": "positive",
+        "key": "bass-subwoofer",
+        "groupId": "1b5c6bc0-e5ee-496c-958a-50b123b3413a"
+       },
+       "bright treble can become tiring": {
+        "sentimentAnalysis": "Flere anmeldelser oplever diskanten som lidt fremtrædende, overbetonet eller lejlighedsvis trættende, men equalizer og korrekt matchning kan hjælpe.",
+        "simpleTitle": "Lys diskant kan virke trættende",
+        "bias": "negative",
+        "key": "sound-quality",
+        "groupId": "db1ec5ef-5f09-480f-91ba-ac5d19e38dc8"
        }
       },
       "grouping": {
-       "ce887f58-f8ac-4a84-900d-3eab34bfa75d": {
+       "db1ec5ef-5f09-480f-91ba-ac5d19e38dc8": {
         "title": "Lydkvalitet",
-        "id": "ce887f58-f8ac-4a84-900d-3eab34bfa75d",
+        "id": "db1ec5ef-5f09-480f-91ba-ac5d19e38dc8",
         "references": [
          "d968cc55-97c3-4ec6-a18c-b24c6ccb1ba4",
          "36197a41-e921-44ff-85fc-5b6682db2be9",
@@ -306,7 +299,6 @@
          "8bfd1eed-1769-4253-9fe7-5b3a09153f74",
          "05a00d5d-826f-48f0-b1ce-7b27dc9b62a7",
          "e842ac91-3fc3-4eb2-b6df-2f2156b4d872",
-         "074d6bb3-a7d1-4d63-a871-8595a2e55578",
          "bc501cd0-82dd-4b52-8c5c-9a012df851b8",
          "257f4d8d-ebd8-4295-8eda-477d9a76b99e",
          "88a3fcd8-27e3-443e-b3b2-37f9dc515f90",
@@ -321,16 +313,18 @@
          "1ef92f26-1548-4103-911c-7bac56135dec",
          "e183c2cf-3586-4425-89cc-e66ea0f24566",
          "c9bf04dd-3419-4c7e-9099-cedb1117d93d",
+         "745d93d9-bbda-442b-be41-295ff2bcf0fc",
          "3a47f17b-6459-424c-8101-077fb9c8bffb",
          "5ab98ad0-178d-4784-8602-4f782e9b2e89",
          "2cb2688e-0277-45c5-8633-f1b3943c9294",
          "6fd961e5-1fe9-46cb-ad56-35c19f1d6531",
+         "edb6f405-6d1e-445a-841d-a22b848599fc",
          "b46ddfaa-4b8c-4692-88f4-bc591e0f4d1f",
          "1446d85b-e72b-439a-b74f-8c1c5e9a65d8",
          "80c24693-daae-4405-b981-536ca31c3ccf",
          "9e7292cb-d357-488f-930f-9ec1524b7c19",
          "a05c1b21-1f2d-4233-a613-3d9d6afe16ec",
-         "f1ccfb5d-4adb-4f2b-8cc8-a64b334b432b",
+         "f1ccfb5d-4adb-4f2b-8cc8-a64b334b432d",
          "1502c82c-2510-479f-a1ff-7f6ab059fcfc",
          "bc02cd0b-3404-4f81-8bc7-81d0e20cfa0d",
          "7c5c64f1-80a9-4f22-a6c3-5bbbc3324822",
@@ -363,9 +357,37 @@
          "9f24b867-9b99-4a30-bae2-53451e543e13"
         ]
        },
-       "0c348310-626f-40ee-8d28-d43c77dc5cba": {
-        "title": "Bas",
-        "id": "0c348310-626f-40ee-8d28-d43c77dc5cba",
+       "7207d3b0-81f0-45a6-9a5f-10323d90f8a6": {
+        "title": "Kompakt design",
+        "id": "7207d3b0-81f0-45a6-9a5f-10323d90f8a6",
+        "references": [
+         "7b14a37b-c649-44d4-b19e-9d74bb830a4b",
+         "a0f31511-657a-411b-b7ab-db089dfd77c9",
+         "4baf7079-00ce-4ed8-aad6-a12b62bf91ba",
+         "213e89e7-bb94-439e-a1b1-4c5bf545f4d9",
+         "a7f85af7-b0af-4be7-b279-0f545b95e486",
+         "b62e2d1d-d39d-4467-a2f2-ddb87fa01a82",
+         "02288cb6-9f26-4e4b-9d17-7ed8aad2c31c",
+         "d1b60f20-4660-45dd-ad5f-2ec19263a5c0",
+         "845d7130-0eaf-4a56-8a94-553e923b128c",
+         "e183c2cf-3586-4425-89cc-e66ea0f24566",
+         "b46ddfaa-4b8c-4692-88f4-bc591e0f4d1f",
+         "9e7292cb-d357-488f-930f-9ec1524b7c19",
+         "f1ccfb5d-4adb-4f2b-8cc8-a64b334b432d",
+         "1502c82c-2510-479f-a1ff-7f6ab059fcfc",
+         "7c5c64f1-80a9-4f22-a6c3-5bbbc3324822",
+         "69ad3a29-cb0c-4262-95d7-54aab1191290",
+         "824cd10a-a7b4-4529-998f-90c1c44dde8a",
+         "9f24b867-9b99-4a30-bae2-53451e543e13",
+         "19fd679b-708a-4ee3-b9b6-a7961308a3b5",
+         "076e1afe-d043-4581-96bc-b630a58af764",
+         "6ada340f-6dd5-4634-90ad-099c1794abae",
+         "e243d2aa-1cce-4721-935b-9883e6b98288"
+        ]
+       },
+       "1b5c6bc0-e5ee-496c-958a-50b123b3413a": {
+        "title": "Bas og subwoofer",
+        "id": "1b5c6bc0-e5ee-496c-958a-50b123b3413a",
         "references": [
          "d968cc55-97c3-4ec6-a18c-b24c6ccb1ba4",
          "f0c82ba3-8bed-422b-9f02-692f32387590",
@@ -373,10 +395,8 @@
          "acc1cb72-946d-4efb-aa5d-c5e22bf018a2",
          "b7242497-aa12-40dd-9d75-6c2637262c77",
          "70bcc1e7-b54a-4f58-9f18-d35c558eccd5",
-         "a7f85af7-b0af-4be7-b279-0f545b95e486",
          "06f90ca1-1d65-4b06-a5ab-e97263b83796",
          "074d6bb3-a7d1-4d63-a871-8595a2e55578",
-         "02288cb6-9f26-4e4b-9d17-7ed8aad2c31c",
          "999863a4-316f-424f-8899-12cdaacb2523",
          "1ef92f26-1548-4103-911c-7bac56135dec",
          "6fd961e5-1fe9-46cb-ad56-35c19f1d6531",
@@ -385,64 +405,24 @@
          "bc02cd0b-3404-4f81-8bc7-81d0e20cfa0d",
          "5e20efea-8032-4946-8042-ed8aef4f4ffd",
          "3f8f1b08-814e-42c7-983d-47b45fc71b9e",
+         "b78a4eaf-75e7-454e-ab54-71212fafc39f",
          "e38b4c80-6f18-4e57-9837-3ad828789faf",
          "fafbedd9-739a-425a-baf0-be5003670377",
          "91c69cc6-bd04-4c8c-a28e-f5deebe4ad87",
          "8992f48d-f9b1-4c50-b406-ff801e71ee15",
-         "2512d9eb-e8f3-45d1-b6ae-fbe303f8bc3f",
-         "e698ef31-ec00-42a1-befb-1c0c0de6f50b"
-        ]
-       },
-       "c65626a8-201b-4b23-ac1a-e55f439dcdb5": {
-        "title": "Kompakt design",
-        "id": "c65626a8-201b-4b23-ac1a-e55f439dcdb5",
-        "references": [
-         "7b14a37b-c649-44d4-b19e-9d74bb830a4b",
-         "a0f31511-657a-411b-b7ab-db089dfd77c9",
-         "4baf7079-00ce-4ed8-aad6-a12b62bf91ba",
-         "a7f85af7-b0af-4be7-b279-0f545b95e486",
-         "b62e2d1d-d39d-4467-a2f2-ddb87fa01a82",
-         "213e89e7-bb94-439e-a1b1-4c5bf545f4d9",
-         "05a00d5d-826f-48f0-b1ce-7b27dc9b62a7",
-         "02288cb6-9f26-4e4b-9d17-7ed8aad2c31c",
-         "d1b60f20-4660-45dd-ad5f-2ec19263a5c0",
-         "845d7130-0eaf-4a56-8a94-553e923b128c",
-         "9e7292cb-d357-488f-930f-9ec1524b7c19",
-         "f1ccfb5d-4adb-4f2b-8cc8-a64b334b432b",
-         "1502c82c-2510-479f-a1ff-7f6ab059fcfc",
-         "bc02cd0b-3404-4f81-8bc7-81d0e20cfa0d",
-         "69ad3a29-cb0c-4262-95d7-54aab1191290",
-         "824cd10a-a7b4-4529-998f-90c1c44dde8a",
-         "19fd679b-708a-4ee3-b9b6-a7961308a3b5",
-         "6ada340f-6dd5-4634-90ad-099c1794abae",
-         "e243d2aa-1cce-4721-935b-9883e6b98288",
-         "9f24b867-9b99-4a30-bae2-53451e543e13"
-        ]
-       },
-       "e43abbc4-bcde-4168-9659-3321c41a5384": {
-        "title": "Hjemmebiograf",
-        "id": "e43abbc4-bcde-4168-9659-3321c41a5384",
-        "references": [
-         "e71475ce-61e6-4a72-b7fa-189b44443d24",
-         "8bfd1eed-1769-4253-9fe7-5b3a09153f74",
-         "e842ac91-3fc3-4eb2-b6df-2f2156b4d872",
-         "e290ae17-dc45-429a-962a-3c529ffe1b85",
-         "2cb2688e-0277-45c5-8633-f1b3943c9294",
-         "c9bf04dd-3419-4c7e-9099-cedb1117d93d",
-         "80c24693-daae-4405-b981-536ca31c3ccf",
-         "9f24b867-9b99-4a30-bae2-53451e543e13"
+         "2512d9eb-e8f3-45d1-b6ae-fbe303f8bc3f"
         ]
        }
       },
-      "rating": 4.83582089552239,
-      "count": 201,
+      "rating": 4.83663366336634,
+      "count": 202,
       "reviewCount": 91,
       "distribution": {
        "1": 2,
        "2": 0,
        "3": 3,
        "4": 19,
-       "5": 177
+       "5": 178
       }
      }
     },
@@ -466,7 +446,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 39,
+        "availableQuantity": 37,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.249,-",
@@ -490,15 +470,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.81545064377682,
-   "count": 233,
+   "rating": 4.81623931623932,
+   "count": 234,
    "reviewCount": 108,
    "distribution": {
     "1": 2,
     "2": 0,
     "3": 5,
     "4": 25,
-    "5": 201
+    "5": 202
    }
   },
   "boxContent": [],

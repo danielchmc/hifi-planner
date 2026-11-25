@@ -42,12 +42,12 @@
     "HEGELH20",
     "LYNGSDA2400",
     "NADM23",
+    "AQNIAGARA1200",
     "BW801D5",
     "BW802D5",
     "BW803D5",
     "BW804D5",
-    "BW805D5",
-    "AQNIAGARA1200"
+    "BW805D5"
    ],
    "isOutlet": "false"
   },
@@ -72,24 +72,11 @@
   },
   "techSpecs": [
    {
-    "index": 10,
-    "title": "Ydelse",
+    "index": 125,
+    "title": "Generelle egenskaber",
     "content": [
      {
-      "term": "Forvrængning (THD)",
-      "value": "0,005%"
-     },
-     {
-      "term": "Signal/støjforhold",
-      "value": "130 dB"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Analog"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Analog"
+      "value": "Stereo forforstærker \nFront i aluminium \nSoundEngine2 \nHåndmatchede FET-transistorer\nLine-in: 2 x balanceret analog (XLR), 4 x ubalanceret analog (RCA, 3 x variabel / 1 x fixed)\nLine-out: 1 x balanceret (XLR), 2 x ubalanceret (RCA) \nIR-ind / 12V trigger-ud\nForgyldte terminaler \nFjernbetjening i metal \n* RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
      }
     ]
    },
@@ -124,11 +111,24 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "Stereo forforstærker \nFront i aluminium \nSoundEngine2 \nHåndmatchede FET-transistorer\nLine-in: 2 x balanceret analog (XLR), 4 x ubalanceret analog (RCA, 3 x variabel / 1 x fixed)\nLine-out: 1 x balanceret (XLR), 2 x ubalanceret (RCA) \nIR-ind / 12V trigger-ud\nForgyldte terminaler \nFjernbetjening i metal \n* RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
+      "term": "Forvrængning (THD)",
+      "value": "0,005%"
+     },
+     {
+      "term": "Signal/støjforhold",
+      "value": "130 dB"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Analog"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Analog"
      }
     ]
    },

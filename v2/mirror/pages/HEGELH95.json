@@ -61,7 +61,6 @@
     "ESSPR1SCX",
     "AQFORESTCOX",
     "AQNRGY3AC",
-    "HEGELRC8",
     "AQREDRIVERIN",
     "AQFORESTUSBAB",
     "AQFORESTRJE",
@@ -81,7 +80,8 @@
     "AQROCKET22SC",
     "AQBANANA300SX",
     "AQROCKET11SC",
-    "AQROCKET33SCX"
+    "AQROCKET33SCX",
+    "HEGELRC8"
    ],
    "isOutlet": "false"
   },
@@ -104,6 +104,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nForvrængning < 0,01% (25 watt/8 ohm/1kHz)\nSignal/støj: >100 dB\nDæmpningsfaktor: >2000 \nUnderstøtter Apple AirPlay 2 og Spotify Connect\nMaksimal opløsning: 24-bit/192kHz (optisk/coaxial/DLNA), 24-bit/96kHz (USB-B) \nUSB-B indgang til afspilning fra PC/Mac \nEthernet-tilslutning / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nOpstartsvolumen og maksimal lydstyrkeværdi kan defineres af bruger via Hegel RC8 fjernbetjening (ekstratilbehør)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nEnergiforbrug i standby <0,5 watt \n** RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -161,15 +170,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nFrekvensområde: 5-100.000 Hz\nForvrængning < 0,01% (25 watt/8 ohm/1kHz)\nSignal/støj: >100 dB\nDæmpningsfaktor: >2000 \nUnderstøtter Apple AirPlay 2 og Spotify Connect\nMaksimal opløsning: 24-bit/192kHz (optisk/coaxial/DLNA), 24-bit/96kHz (USB-B) \nUSB-B indgang til afspilning fra PC/Mac \nEthernet-tilslutning / DLNA / UPnP\nValgfri variabel/fixed indstilling på alle indgange\nOpstartsvolumen og maksimal lydstyrkeværdi kan defineres af bruger via Hegel RC8 fjernbetjening (ekstratilbehør)\nForgyldte terminaler \nFirmware kan opdateres via netværk\nEnergiforbrug i standby <0,5 watt \n** RIAA-forstærkere fås separat eller indbygget i nogle pladespillere."
      }
     ]
    },
@@ -262,7 +262,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 3,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -460,47 +460,46 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGEL H95 leverer en varm, ren, detaljeret og meget musikalsk lyd med imponerende kontrol, dynamik og lav forvrængning. Forstærkeren har rigeligt med kræfter til krævende højttalere og forbliver balanceret og engagerende ved lav lydstyrke. Stor begejstring og stærk værdi for pengene præger anmeldelserne, selv om manualen og den automatiske slukning kritiseres.",
+   "summary": "Hegel H95 roses bredt for sin varme, rene, detaljerede og musikalske lyd med imponerende kontrol, dynamik og tilstrækkelig effekt til krævende højttalere. Betjeningen er generelt enkel, og forstærkeren præsterer særligt godt ved lave lydstyrker. En mindre del kritiserer tilslutningen og manualen, mens den automatiske slukning og det hørbare relæ kan være frustrerende, men samlet set anses H95 for stærkt anbefalelsesværdig og ofte pengene værd.",
    "headlines": {
     "clean, detailed and musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den kontrollerede, ufarvede, forvrængningsfattige, åbne, detaljerede og musikalske gengivelse.",
+     "sentimentAnalysis": "H95 beskrives gentagne gange som ren, kontrolleret, detaljeret, åben, neutral og musikalsk med en særligt naturlig og afslappet gengivelse.",
      "simpleTitle": "Ren, detaljeret og musikalsk lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0b253f3c-21d2-4616-ad66-cc77408f152e"
+     "groupId": "7f1bbb29-36c2-4946-b1fc-6c02a4f3b916"
     },
-    "ample power for demanding speakers": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver kraftigt drive, rigelig lydstyrke og stabil kontrol med krævende højttalerbelastninger.",
-     "simpleTitle": "Rigelig effekt til krævende højttalere",
+    "strong control and ample power": {
+     "sentimentAnalysis": "Forstærkeren vurderes i stand til at drive krævende højttalere og bevare balance og detaljer ved lav lydstyrke, samtidig med at den kan spille rigeligt højt.",
+     "simpleTitle": "Stærk kontrol og rigelig effekt",
      "bias": "positive",
      "key": "power",
-     "groupId": "36fcc9a6-d622-463f-a860-a5e9730e9400"
+     "groupId": "54738c54-7fc7-4aef-8b1c-bb600dc99e19"
     },
-    "balanced sound remains engaging at low volume": {
-     "sentimentAnalysis": "H95 roses for at bevare detaljer, balance og musikalsk engagement ved stille lytning.",
-     "simpleTitle": "Balanceret lyd forbliver engagerende ved lav lydstyrke",
+    "simple plug-and-play operation": {
+     "sentimentAnalysis": "Positive kommentarer beskriver betjeningen som enkel og intuitiv med ligetil håndtering og plug-and-play-komfort.",
+     "simpleTitle": "Enkel plug-and-play-betjening",
      "bias": "positive",
-     "key": "power",
-     "groupId": "36fcc9a6-d622-463f-a860-a5e9730e9400"
+     "key": "usability",
+     "groupId": "f7a7fa2e-dff5-431d-b4f3-d33f93dde5b8"
     },
-    "strong value for money": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver lyd og samlet pakke som særdeles god værdi for pengene.",
-     "simpleTitle": "Stærk værdi for pengene",
+    "good value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer den rene og raffinerede lyd som særligt god i forhold til prisen.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "46852775-8f11-4c2d-a3ce-0dbd0705e410"
+     "groupId": "d25b1ebf-9df7-4426-8e61-eb0d3c21cc1e"
     }
    },
    "grouping": {
-    "0b253f3c-21d2-4616-ad66-cc77408f152e": {
+    "7f1bbb29-36c2-4946-b1fc-6c02a4f3b916": {
      "title": "Lydkvalitet",
-     "id": "0b253f3c-21d2-4616-ad66-cc77408f152e",
+     "id": "7f1bbb29-36c2-4946-b1fc-6c02a4f3b916",
      "references": [
       "62499177-7a58-4520-86e9-3589641b0a9b",
       "6cb52442-c303-4794-b9c3-156a89e5e109",
       "e125c98c-09e7-4f66-913e-5d8b0459f761",
       "9dcc2d73-033b-4c57-96af-e79c7a534328",
-      "9fe8c8c3-77da-4ce3-aba8-822ee4863c4d",
       "de1065b9-2288-477e-868c-6e8c01d6b4aa",
       "d4102dcc-f21e-4d39-92db-ad657c4235e2",
       "fc9e70a6-5187-48fa-b1a1-cf19520137d3",
@@ -511,9 +510,9 @@
       "515dd922-1f34-4d76-b944-3d8d942a3e28"
      ]
     },
-    "36fcc9a6-d622-463f-a860-a5e9730e9400": {
-     "title": "Effekt og højttalerstyring",
-     "id": "36fcc9a6-d622-463f-a860-a5e9730e9400",
+    "54738c54-7fc7-4aef-8b1c-bb600dc99e19": {
+     "title": "Effekt og højttalerdrivning",
+     "id": "54738c54-7fc7-4aef-8b1c-bb600dc99e19",
      "references": [
       "e125c98c-09e7-4f66-913e-5d8b0459f761",
       "de1065b9-2288-477e-868c-6e8c01d6b4aa",
@@ -521,9 +520,18 @@
       "3424a06a-bdfb-4d24-bb5e-cacbe2b71f22"
      ]
     },
-    "46852775-8f11-4c2d-a3ce-0dbd0705e410": {
+    "f7a7fa2e-dff5-431d-b4f3-d33f93dde5b8": {
+     "title": "Opsætning og betjening",
+     "id": "f7a7fa2e-dff5-431d-b4f3-d33f93dde5b8",
+     "references": [
+      "6cb52442-c303-4794-b9c3-156a89e5e109",
+      "9dcc2d73-033b-4c57-96af-e79c7a534328",
+      "9fe8c8c3-77da-4ce3-aba8-822ee4863c4d"
+     ]
+    },
+    "d25b1ebf-9df7-4426-8e61-eb0d3c21cc1e": {
      "title": "Værdi for pengene",
-     "id": "46852775-8f11-4c2d-a3ce-0dbd0705e410",
+     "id": "d25b1ebf-9df7-4426-8e61-eb0d3c21cc1e",
      "references": [
       "9dcc2d73-033b-4c57-96af-e79c7a534328",
       "fc9e70a6-5187-48fa-b1a1-cf19520137d3",

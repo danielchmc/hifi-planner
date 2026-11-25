@@ -32,7 +32,7 @@
    "fa87da30-d530-483f-8119-1d7cf0f472ab",
    "afe77c0e-f6d5-46c9-bcef-9f58efb53298"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 263834,
@@ -103,28 +103,11 @@
   },
   "techSpecs": [
    {
-    "index": 10,
-    "title": "Ydelse",
+    "index": 125,
+    "title": "Generelle egenskaber",
     "content": [
      {
-      "term": "Udgangseffekt 8 ohm",
-      "value": "2 x 75 watt"
-     },
-     {
-      "term": "Forvrængning (THD)",
-      "value": "<0,01%"
-     },
-     {
-      "term": "Signal/støjforhold",
-      "value": ">100 dB"
-     },
-     {
-      "term": "Dæmpningsfaktor",
-      "value": ">2000"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Analog"
+      "value": "Front i aluminium med OLED-display \n100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nUltra-low-noise ringkerne-transformator\nDedikeret Hegel Control app\nFrekvensområde: 5-100.000 Hz\nApple AirPlay, Google Cast, Spotify Connect, TIDAL Connect, Qobuz Connect, internetradio og podcast via Hegel Control app\nMaksimal opløsning: 24-bit/192kHz (24-bit/96kHz via optisk) \nUSB-B indgang til afspilning fra PC/Mac \nUSB-A til afspilning fra bærbare USB-medier \nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på de fleste indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nAutomatisk firmware-opdatering via netværk\nSystemfjernbetjening medfølger (RC11)\nEnergiforbrug i standby/netværks-standby: <0,5 watt/<2 watt"
      }
     ]
    },
@@ -163,11 +146,28 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "Front i aluminium med OLED-display \n100% diskret analog effektdel \nHelt stabil i belastninger ned til 2 ohm \nSoundEngine 2\nUltra-low-noise ringkerne-transformator\nDedikeret Hegel Control app\nFrekvensområde: 5-100.000 Hz\nApple AirPlay, Google Cast, Spotify Connect, TIDAL Connect, Qobuz Connect, internetradio og podcast via Hegel Control app\nMaksimal opløsning: 24-bit/192kHz (24-bit/96kHz via optisk) \nUSB-B indgang til afspilning fra PC/Mac \nUSB-A til afspilning fra bærbare USB-medier \nEthernet / DLNA / UPnP\nValgfri variabel/fixed indstilling på de fleste indgange\nMaksimal lydstyrkeværdi kan defineres af bruger (f.eks. til børnesikring)\nForgyldte terminaler \nAutomatisk firmware-opdatering via netværk\nSystemfjernbetjening medfølger (RC11)\nEnergiforbrug i standby/netværks-standby: <0,5 watt/<2 watt"
+      "term": "Udgangseffekt 8 ohm",
+      "value": "2 x 75 watt"
+     },
+     {
+      "term": "Forvrængning (THD)",
+      "value": "<0,01%"
+     },
+     {
+      "term": "Signal/støjforhold",
+      "value": ">100 dB"
+     },
+     {
+      "term": "Dæmpningsfaktor",
+      "value": ">2000"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Analog"
      }
     ]
    },
@@ -272,11 +272,12 @@
      "productCode": "HEGELH150BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 6,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -361,12 +362,11 @@
      "productCode": "HEGELH150WH"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

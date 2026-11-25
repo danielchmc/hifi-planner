@@ -217,7 +217,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 32,
+     "availableQuantity": 65,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -291,34 +291,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBLBAR500M2 leverer varm, fyldig og omsluttende lyd med kraftfuld, men velkontrolleret bas. Soundbaren skaber en rumfyldende lydoplevelse og giver rigtig meget for pengene. Den enkle betjening og høje lydstyrke gør den særligt velegnet til TV-lyd, selv om en dedikeret natfunktion ville være en god tilføjelse.",
+   "summary": "JBL BAR 500 leverer varm, kraftfuld og omsluttende lyd, der tydeligt løfter TV-lyden. Dyb, diskret bas og en kraftig subwoofer skaber en rummelig biografoplevelse, som ligefrem kan give indtryk af flere højttalere i rummet. Den gode værdi for pengene, enkle betjening og rigelige effekt gør soundbaren til en stærk anbefaling til mindre boliger.",
    "headlines": {
-    "clear, powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent lyden som fremragende, kraftfuld og behagelig.",
-     "simpleTitle": "Klar og kraftfuld lyd",
+    "immersive room-filling sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en rummelig og kraftfuld lyd, der fylder rummet og skaber en omsluttende lytteoplevelse.",
+     "simpleTitle": "Omsluttende og fyldig lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "7ecca05c-14ef-4196-8186-965c30d4e9df"
+     "key": "immersive_sound",
+     "groupId": "c7869f7b-b79e-482d-af5e-85b3456f483e"
     },
-    "excellent value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver soundbaren som et særligt godt køb til prisen.",
+    "excellent value at the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer soundbaren som fremragende eller meget god til prisen.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "value_for_money",
-     "groupId": "a2fe6f1c-37ad-40eb-8eeb-d93924b09c5c"
+     "key": "excellent_value",
+     "groupId": "70c7c828-3df8-42f1-8c00-5e7ff7af7e49"
     },
-    "deep, subtle bass": {
-     "sentimentAnalysis": "Bassen roses for at tilføre dybde og effekt uden at overdøve den samlede lyd.",
-     "simpleTitle": "Dyb og diskret bas",
+    "clear improvement to TV audio": {
+     "sentimentAnalysis": "Soundbaren roses for at forbedre TV-lyden markant og levere god lyd til prisen.",
+     "simpleTitle": "Tydelig forbedring af TV-lyden",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "7ecca05c-14ef-4196-8186-965c30d4e9df"
+     "key": "tv_audio_upgrade",
+     "groupId": "c7869f7b-b79e-482d-af5e-85b3456f483e"
+    },
+    "deep, satisfying bass": {
+     "sentimentAnalysis": "Bas og subwoofer roses for at tilføre dybde og fuldende den samlede lydoplevelse.",
+     "simpleTitle": "Dyb og tilfredsstillende bas",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "c7869f7b-b79e-482d-af5e-85b3456f483e"
     }
    },
    "grouping": {
-    "7ecca05c-14ef-4196-8186-965c30d4e9df": {
+    "c7869f7b-b79e-482d-af5e-85b3456f483e": {
      "title": "Lydkvalitet",
-     "id": "7ecca05c-14ef-4196-8186-965c30d4e9df",
+     "id": "c7869f7b-b79e-482d-af5e-85b3456f483e",
      "references": [
       "fa6c4759-c4e2-4579-a09e-26183a0a7ab7",
       "78f4e070-1f57-4dcd-91c0-6a021dbab2d1",
@@ -329,9 +336,9 @@
       "ff03534b-0ea6-4f98-ad75-11945c3cace9"
      ]
     },
-    "a2fe6f1c-37ad-40eb-8eeb-d93924b09c5c": {
+    "70c7c828-3df8-42f1-8c00-5e7ff7af7e49": {
      "title": "Værdi for pengene",
-     "id": "a2fe6f1c-37ad-40eb-8eeb-d93924b09c5c",
+     "id": "70c7c828-3df8-42f1-8c00-5e7ff7af7e49",
      "references": [
       "77e3932d-692d-4dfb-b70b-585bec61b9a7",
       "431ca7c4-326d-4fd2-ae3f-ec2b90745146",

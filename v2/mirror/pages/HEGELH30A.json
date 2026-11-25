@@ -46,26 +46,26 @@
     "BW801D4SIGNATURE",
     "BW802D4",
     "AQNIAGARA7000",
+    "AQNIAGARA5000",
     "BW801D5",
     "BW802D5",
     "BW803D5",
     "BW804D5",
-    "BW805D5",
-    "AQNIAGARA5000"
+    "BW805D5"
    ],
    "isOutlet": "false"
   },
   "recommendedAccessories": {
    "productCodes": [
+    "AQPEGASUSINX",
     "AQPEGASUSIN",
     "AQBLACKBEAUTYINX",
     "AQBLACKBEAUTYIN",
     "AQRHOODZSCA",
-    "AQROCKET88SCBA",
-    "AQNRGTORNADO20A",
-    "AQPEGASUSINX",
     "AQWTELLZSCA",
-    "AQTBIRDZSCA"
+    "AQTBIRDZSCA",
+    "AQROCKET88SCBA",
+    "AQNRGTORNADO20A"
    ],
    "isOutlet": "false"
   },
@@ -79,6 +79,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Effektforstærker (mono / stereo)\nFront i aluminium \nFuldt balanceret dual mono konstruktion med dobbelte ringkerne-transformere\n100% diskret analog effektdel med 56 x 15A/200W high speed transistorer\nHåndmatchede FET-transistorer\nStrømforsyning: 2000 VA dual mono, 270.000 µF\nLinjeindgange: 1 x ubalanceret analog (RCA), 1 x balanceret analog (XLR) \nSeparate terminaler til mono og stereo tilslutning\nHelt stabil i belastninger ned til 1 ohm \nSoundEngine \nForgyldte terminaler "
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -132,15 +141,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Effektforstærker (mono / stereo)\nFront i aluminium \nFuldt balanceret dual mono konstruktion med dobbelte ringkerne-transformere\n100% diskret analog effektdel med 56 x 15A/200W high speed transistorer\nHåndmatchede FET-transistorer\nStrømforsyning: 2000 VA dual mono, 270.000 µF\nLinjeindgange: 1 x ubalanceret analog (RCA), 1 x balanceret analog (XLR) \nSeparate terminaler til mono og stereo tilslutning\nHelt stabil i belastninger ned til 1 ohm \nSoundEngine \nForgyldte terminaler "
      }
     ]
    },

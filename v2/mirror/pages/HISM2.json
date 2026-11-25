@@ -227,30 +227,14 @@
     "productCode": "HISM2PRO",
     "ean": "6942351423036",
     "priceDetails": {
-     "priceValueId": 1217857,
-     "price": 6999,
-     "priceFormatted": "6.999,-",
-     "priceBefore": 10999,
-     "priceBeforeFormatted": "10.999,-",
-     "priceSavingsFormatted": "4.000,-",
+     "priceValueId": 1160328,
+     "price": 10999,
+     "priceFormatted": "10.999,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "offerExpiryDate": "2026-11-29T22:59:00Z",
-     "unitPrice": 6999,
-     "unitPriceBefore": 10999
+     "unitPrice": 10999
     },
-    "ribbons": [
-     {
-      "text": "Spar 36%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
     "techSpecs": [
      {
       "index": 37,
@@ -281,8 +265,8 @@
      "productCode": "HISM2PRO"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 07. december",
-     "deliveryDate": "2026-12-07T00:00:00Z",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
      "inventoryStatusType": "notInStockAtpDate"

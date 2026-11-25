@@ -28,7 +28,7 @@
    "1cb10c4d-4bc2-4ee2-9c7f-51b6251f56bf",
    "e26f0a92-ad67-459d-98af-4f5215edeee3"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 147945,
@@ -65,6 +65,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "RIAA-forstærker til MM/MC-pickupper \nUltra støjsvagt diskret JFET transistor indgangstrin (MM/MC)\nTilpasning af gain og impedans via dipswitches (bag)\nGain XLR-ud: 40dB / 45dB / 50dB / 52dB (MM), 60dB / 65dB / 70dB / 72dB (MC)\nGain RCA-ud: 34dB /39dB / 44dB / 46dB (MM), 54dB / 59dB / 64dB / 66dB (MC)\nUdgangsimpedans: 200 ohm (RCA/XLR)\nIndgangskapacitans (MM): 100pF / 147pf / 200pF / 247pf / 320pf / 420pf / 467pf (47 kohm)\nMekanisk tænd/sluk knap på front\nFinish i metal \nEkstern strømforsyning\n"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -87,15 +96,6 @@
      {
       "term": "Lydudgang",
       "value": "Analog RCA, Analog XLR"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "RIAA-forstærker til MM/MC-pickupper \nUltra støjsvagt diskret JFET transistor indgangstrin (MM/MC)\nTilpasning af gain og impedans via dipswitches (bag)\nGain XLR-ud: 40dB / 45dB / 50dB / 52dB (MM), 60dB / 65dB / 70dB / 72dB (MC)\nGain RCA-ud: 34dB /39dB / 44dB / 46dB (MM), 54dB / 59dB / 64dB / 66dB (MC)\nUdgangsimpedans: 200 ohm (RCA/XLR)\nIndgangskapacitans (MM): 100pF / 147pf / 200pF / 247pf / 320pf / 420pf / 467pf (47 kohm)\nMekanisk tænd/sluk knap på front\nFinish i metal \nEkstern strømforsyning\n"
      }
     ]
    },
@@ -210,11 +210,12 @@
      "productCode": "HEGELV10BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 3,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -313,95 +314,83 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELV10 roses bredt for at levere en stor, musikalsk opgradering med varm, åben og meget detaljeret lyd, herunder en slagkraftig bas og et stort lydbillede. Den usædvanligt støjsvage drift samt de fleksible indstillinger for pickupper og forstærkning giver stor praktisk værdi, mens den balancerede XLR-udgang kan forbedre systemets ydelse yderligere. Enkelte kritikpunkter gælder en lidt lys klangbalance, uhensigtsmæssigt placerede kontakter og manglen på XLR-indgange, men den samlede vurdering er fortsat meget begejstret.",
+   "summary": "HEGELV10 betragtes bredt som en markant opgradering og leverer en varm, åben og meget detaljeret lyd med kontant bas, et stort lydbillede og høj musikalitet. Justerbare indstillinger til pickupper giver fremragende fleksibilitet til både MM- og MC-pickupper, mens det meget lave støjniveau holder gengivelsen ren og engagerende. De balancerede tilslutninger roses af nogle, men manglen på XLR-indgange og den uhensigtsmæssige placering af betjeningsknapperne skuffer andre.",
    "headlines": {
     "open, detailed and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en rummelig, åben, klar og dynamisk gengivelse med mange detaljer og stram bas.",
+     "sentimentAnalysis": "Anmeldelserne roser den store, detaljerede og kontante gengivelse og beskriver en tydelig forbedring i forhold til tidligere RIAA-trin.",
      "simpleTitle": "Åben, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0b59be50-78a3-4ed2-a9a3-2c2a626f9da7"
+     "groupId": "4cde8a8f-e164-464b-8ae5-8b4cafe28853"
     },
-    "a major audible upgrade": {
-     "sentimentAnalysis": "Enheden beskrives gentagne gange som en værdifuld og markant forbedring i forhold til tidligere riaa-trin eller eksisterende anlæg.",
-     "simpleTitle": "En tydelig hørbar opgradering",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "0b59be50-78a3-4ed2-a9a3-2c2a626f9da7"
-    },
-    "virtually silent operation": {
-     "sentimentAnalysis": "Anmeldelserne roser samstemmende det lave støjniveau og reduktionen eller fraværet af susen, knasen og statisk støj.",
-     "simpleTitle": "Næsten lydløs drift",
+    "clean, quiet and highly musical": {
+     "sentimentAnalysis": "RIAA-trinnet roses for at fjerne uønsket støj, knasen og statiske lyde, samtidig med at den bevarer en engagerende musikalsk karakter.",
+     "simpleTitle": "Ren, støjsvag og meget musikalsk",
      "bias": "positive",
      "key": "noise",
-     "groupId": "fa2bb42e-5515-4678-8521-009a835b357c"
+     "groupId": "4d5e6630-3b61-45e3-b0fe-868b5ed1f951"
     },
-    "flexible cartridge and gain configuration": {
-     "sentimentAnalysis": "Tilpasning til forskellige pickupper og valgfri forstærkning betragtes som en stor styrke og understøtter fremtidige opgraderinger.",
-     "simpleTitle": "Fleksibel konfiguration af pickup og forstærkning",
+    "flexible settings for different cartridges": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter den brede pickup-kompatibilitet og den valgbare forstærkning, inklusive den nyttige mulighed for en fremtidig MC-opgradering.",
+     "simpleTitle": "Fleksible indstillinger til forskellige pickupper",
      "bias": "positive",
-     "key": "settings",
-     "groupId": "cf9b8819-8588-4778-a8ed-5d3ef0f5d707"
+     "key": "adjustability",
+     "groupId": "4eebf01b-04df-4865-a993-531fab0eff1f"
     },
-    "some listeners find the treble slightly bright": {
-     "sentimentAnalysis": "En anmeldelse betegner udtrykkeligt lyden som lidt lys, mens en anden er utilfreds med den samlede gengivelse trods tilfredshed med riaa-trinnet.",
-     "simpleTitle": "Nogle lyttere oplever diskanten som lidt lys",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "0b59be50-78a3-4ed2-a9a3-2c2a626f9da7"
-    },
-    "balanced XLR output is highly useful": {
-     "sentimentAnalysis": "Den balancerede udgang roses for at bidrage til høj ydelse ved tilslutning til kompatibel Hegel-forstærkning.",
-     "simpleTitle": "Den balancerede XLR-udgang er meget nyttig",
+    "balanced output is a strong advantage": {
+     "sentimentAnalysis": "Den balancerede XLR-udgang fremhæves som fordelagtig sammen med kompatibel Hegel-forstærkning.",
+     "simpleTitle": "Den balancerede udgang er en stor fordel",
      "bias": "positive",
      "key": "connections",
-     "groupId": "d24acd44-746f-498f-8b3d-83b3c688be99"
+     "groupId": "d49dac71-242f-4109-a485-d7b6499e98cc"
     },
-    "no XLR inputs despite balanced positioning": {
-     "sentimentAnalysis": "Manglen på XLR-indgange kritiseres som værende i modstrid med produktets præsentation som en fuldt balanceret løsning.",
-     "simpleTitle": "Ingen XLR-indgange trods balanceret udformning",
+    "missing XLR inputs disappoint": {
+     "sentimentAnalysis": "En del af kritikken retter sig mod de manglende XLR-indgange og den uhensigtsmæssige placering af strømtilslutning og DIP-kontakter.",
+     "simpleTitle": "Manglende XLR-indgange skuffer",
      "bias": "negative",
      "key": "connections",
-     "groupId": "d24acd44-746f-498f-8b3d-83b3c688be99"
+     "groupId": "d49dac71-242f-4109-a485-d7b6499e98cc"
     }
    },
    "grouping": {
-    "0b59be50-78a3-4ed2-a9a3-2c2a626f9da7": {
+    "4cde8a8f-e164-464b-8ae5-8b4cafe28853": {
      "title": "Lydkvalitet",
-     "id": "0b59be50-78a3-4ed2-a9a3-2c2a626f9da7",
+     "id": "4cde8a8f-e164-464b-8ae5-8b4cafe28853",
      "references": [
       "f08f8d9f-7afb-4d27-9e81-019e801af179",
       "eb5391e4-95ab-40c6-96a4-c04708300cca",
+      "c79bf9a8-67b5-4236-b152-53e8c4803348",
       "022d278a-2e32-4e5b-bd60-dea5ebca59e3",
       "2a17840d-205e-4ea3-92d1-3df87448aee1",
       "656ae90c-874f-495a-9304-47cd4d1272e7",
       "928be5c7-7331-437b-99b4-e758ac4721aa",
       "e90eb4a9-5ae5-450e-b888-dc0ca2e20e45",
+      "89667a2a-4b64-4262-9c54-b0c0d83019e1",
       "418ed9ea-9b2d-4045-ba3b-12eb4c3b7c71",
       "f8333e81-d9f2-4ca6-aa24-dfbcafa1f225"
      ]
     },
-    "fa2bb42e-5515-4678-8521-009a835b357c": {
+    "4d5e6630-3b61-45e3-b0fe-868b5ed1f951": {
      "title": "Støjniveau",
-     "id": "fa2bb42e-5515-4678-8521-009a835b357c",
+     "id": "4d5e6630-3b61-45e3-b0fe-868b5ed1f951",
      "references": [
       "c79bf9a8-67b5-4236-b152-53e8c4803348",
       "418ed9ea-9b2d-4045-ba3b-12eb4c3b7c71",
       "f8333e81-d9f2-4ca6-aa24-dfbcafa1f225"
      ]
     },
-    "cf9b8819-8588-4778-a8ed-5d3ef0f5d707": {
-     "title": "Indstillinger for pickup og forstærkning",
-     "id": "cf9b8819-8588-4778-a8ed-5d3ef0f5d707",
+    "4eebf01b-04df-4865-a993-531fab0eff1f": {
+     "title": "Pickup-justering",
+     "id": "4eebf01b-04df-4865-a993-531fab0eff1f",
      "references": [
       "eb5391e4-95ab-40c6-96a4-c04708300cca",
       "022d278a-2e32-4e5b-bd60-dea5ebca59e3",
       "f8333e81-d9f2-4ca6-aa24-dfbcafa1f225"
      ]
     },
-    "d24acd44-746f-498f-8b3d-83b3c688be99": {
+    "d49dac71-242f-4109-a485-d7b6499e98cc": {
      "title": "Tilslutninger",
-     "id": "d24acd44-746f-498f-8b3d-83b3c688be99",
+     "id": "d49dac71-242f-4109-a485-d7b6499e98cc",
      "references": [
       "022d278a-2e32-4e5b-bd60-dea5ebca59e3",
       "89667a2a-4b64-4262-9c54-b0c0d83019e1",

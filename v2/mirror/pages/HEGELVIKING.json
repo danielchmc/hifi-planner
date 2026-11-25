@@ -26,7 +26,7 @@
    "90b7d8cd-60ce-4da1-9af9-5662123d6813",
    "1eb70f4c-5ae2-4c80-9f81-8c84819d4542"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 207037,
@@ -59,14 +59,23 @@
   "recommendedAlternatives": {
    "productCodes": [
     "LYNGCD2",
-    "DENDCD3000NE",
-    "MARACD50N",
     "MARASACD10",
-    "MARASACD30N"
+    "DENDCD3000NE",
+    "MARASACD30N",
+    "MARACD50N"
    ],
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Design i aluminium\nRent CD-løbeværk\nSoundEngine\nLinear Phase LineDriver\nMaster Clock \nSynchroDAC\nAudio-out: L/R XLR, L/R RCA, BNC (true 75 ohm)\nUdgangsimpedans ubalanceret / balanceret: 22 ohm / 44 ohm\nFjernbetjening i metal (RC8C)"
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -74,15 +83,6 @@
      {
       "term": "Lydudgang",
       "value": "Analog RCA, Analog XLR"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Design i aluminium\nRent CD-løbeværk\nSoundEngine\nLinear Phase LineDriver\nMaster Clock \nSynchroDAC\nAudio-out: L/R XLR, L/R RCA, BNC (true 75 ohm)\nUdgangsimpedans ubalanceret / balanceret: 22 ohm / 44 ohm\nFjernbetjening i metal (RC8C)"
      }
     ]
    },
@@ -193,11 +193,12 @@
      "productCode": "HEGELVIKINGBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 2,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -272,41 +273,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGELVIKING roses bredt som en fremragende cd-afspiller med varm, detaljeret og meget musikalsk lyd. Et stort lydbillede, en artikuleret bas, høj transparens og en organisk, vinylagtig karakter gør gengivelsen medrivende og engagerende. Afspilleren fungerer overbevisende i forskellige anlæg og med forskellige forstærkere og giver markante forbedringer i detaljer, balance og samlet raffinement.",
+   "summary": "HEGELVIKING betragtes som en fremragende CD-afspiller med varm, detaljeret og meget musikalsk lyd. Gengivelsen er rummelig og medrivende, med god separation, artikuleret bas og en organisk, analoglignende klang. HEGELVIKING løfter konsekvent komplette anlæg og anbefales begejstret som en kilde i topklasse.",
    "headlines": {
-    "warm, organic and vinyl-like sound": {
-     "sentimentAnalysis": "Gengivelsen roses for at kombinere varme og musikalitet med en organisk, analogagtig karakter.",
-     "simpleTitle": "Varm, organisk og vinylagtig lyd",
+    "warm, detailed and analogue-like sound": {
+     "sentimentAnalysis": "Lyden roses for sin varme, fine detaljering og organiske, analoglignende musikalitet.",
+     "simpleTitle": "Varm, detaljeret og analoglignende lyd",
      "bias": "positive",
-     "key": "warm-organic-sound",
-     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
+     "key": "warm-analogue-sound",
+     "groupId": "c93fedaf-ed32-4a21-923a-a13f5d0a0793"
     },
-    "wide, deep and highly detailed soundstage": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den rummelige gengivelse, den klare instrumentadskillelse, transparensen og de ekstra musikalske detaljer.",
-     "simpleTitle": "Bredt, dybt og meget detaljeret lydbillede",
+    "spacious, precise soundstage": {
+     "sentimentAnalysis": "Afspilleren skaber et bredt, dybt og velordnet lydbillede, hvor instrumenter og vokaler forbliver tydeligt adskilt.",
+     "simpleTitle": "Rummeligt, præcist lydbillede",
      "bias": "positive",
-     "key": "soundstage-detail",
-     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
+     "key": "soundstage-separation",
+     "groupId": "c93fedaf-ed32-4a21-923a-a13f5d0a0793"
     },
-    "articulate and improved bass": {
-     "sentimentAnalysis": "Bassen beskrives som let at følge og mærkbart strammere og mere udviklet end med tidligere udstyr.",
-     "simpleTitle": "Artikuleret og forbedret bas",
+    "articulate bass and system-wide improvement": {
+     "sentimentAnalysis": "Basgengivelsen beskrives som tydeligt artikuleret, mens afspilleren også strammer gengivelsen op og fremhæver flere detaljer i hele anlægget.",
+     "simpleTitle": "Artikuleret bas og løft af hele anlægget",
      "bias": "positive",
-     "key": "bass-performance",
-     "groupId": "4989ee52-18db-45af-912f-edf1524e6fb5"
+     "key": "bass-system-upgrade",
+     "groupId": "c93fedaf-ed32-4a21-923a-a13f5d0a0793"
     },
-    "excellent across different amplifiers and systems": {
-     "sentimentAnalysis": "Afspilleren beskrives som fremragende i mere end ét anlæg, selv om ét system muligvis vil have gavn af en bedre forstærker.",
-     "simpleTitle": "Fremragende med forskellige forstærkere og anlæg",
+    "highly regarded as a top CD player": {
+     "sentimentAnalysis": "Flere ejere placerer HEGELVIKING blandt de bedste CD-afspillere, de har ejet eller hørt.",
+     "simpleTitle": "Højt værdsat som CD-afspiller i topklasse",
      "bias": "positive",
-     "key": "amplifier-flexibility",
-     "groupId": "83a49fe0-d747-4717-adb3-3502b2bbdd55"
+     "key": "top-tier-player",
+     "groupId": "c93fedaf-ed32-4a21-923a-a13f5d0a0793"
     }
    },
    "grouping": {
-    "4989ee52-18db-45af-912f-edf1524e6fb5": {
+    "c93fedaf-ed32-4a21-923a-a13f5d0a0793": {
      "title": "Lydkvalitet",
-     "id": "4989ee52-18db-45af-912f-edf1524e6fb5",
+     "id": "c93fedaf-ed32-4a21-923a-a13f5d0a0793",
      "references": [
       "5cda3a93-6673-4d53-9dc1-ff20a5841ba2",
       "0795047b-a3a9-4260-8d81-3b5fe885626f",
@@ -316,15 +317,6 @@
       "f71982be-b146-4f6d-b29a-c2fd92de16f9",
       "dcfa55e5-62f4-4ce9-8a4a-fb45b86cce7c",
       "4ecc3f15-1614-4ca2-aac4-89d57aa1c55c"
-     ]
-    },
-    "83a49fe0-d747-4717-adb3-3502b2bbdd55": {
-     "title": "Systemkompatibilitet",
-     "id": "83a49fe0-d747-4717-adb3-3502b2bbdd55",
-     "references": [
-      "0795047b-a3a9-4260-8d81-3b5fe885626f",
-      "f71982be-b146-4f6d-b29a-c2fd92de16f9",
-      "dcfa55e5-62f4-4ce9-8a4a-fb45b86cce7c"
      ]
     }
    },

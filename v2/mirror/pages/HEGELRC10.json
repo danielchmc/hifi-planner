@@ -30,20 +30,20 @@
     "HEGELH95",
     "HEGELH120",
     "HEGELH190V",
-    "HEGELH400",
-    "HEGELH600",
-    "HEGELP30A",
     "HEGELH390",
+    "HEGELH400",
     "HEGELH590",
+    "HEGELH600",
     "HEGELD50",
-    "HEGELP30"
+    "HEGELP30",
+    "HEGELP30A"
    ],
    "isOutlet": "false"
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "HEGELRC8",
-    "HEGELRC2"
+    "HEGELRC2",
+    "HEGELRC8"
    ],
    "isOutlet": "false"
   },
@@ -115,7 +115,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 5,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -136,41 +136,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "HEGEL RC10 roses bredt som en enkel, let og meget brugervenlig fjernbetjening med god rækkevidde og velplacerede knapper. Plastikkonstruktionen føles mindre eksklusiv for nogle, men RC10 foretrækkes ofte frem for ældre fjernbetjeninger i metal eller plast fra Hegel, fordi betjeningen er tydeligere og mere behagelig. Den brede kompatibilitet, den praktiske streamer-styring og den overkommelige pris gør RC10 til en varm og slagkraftig opgradering til daglig lytning.",
+   "summary": "HEGEL RC10 roses bredt som en enkel, let og meget brugervenlig fjernbetjening, der gør den daglige betjening ubesværet. Tydeligere knapper og en fornuftig placering forbedrer brugervenligheden, mens det kompakte plastdesign giver god værdi og endda foretrækkes frem for flere originale fjernbetjeninger i metal. Helhedsindtrykket er varmt og meget positivt med pålidelig, kontant kontrol og en mere behagelig betjening, selv om den billige udførelse kan mærkes.",
    "headlines": {
-    "simple and comfortable daily operation": {
-     "sentimentAnalysis": "Fjernbetjeningen beskrives konsekvent som enkel, let og behagelig til daglig brug.",
-     "simpleTitle": "Enkel og behagelig daglig betjening",
+    "preferred over original and metal remotes": {
+     "sentimentAnalysis": "Flere anmeldelser ser RC10 som en klar forbedring i forhold til tidligere, originale eller fjernbetjeninger i metal fra Hegel.",
+     "simpleTitle": "Foretrækkes frem for originale fjernbetjeninger i metal",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "4d0dd0f6-e512-46f7-a64d-d6dc2c6049c8"
+     "key": "better_than_original",
+     "groupId": "faed991a-3c63-48ea-991f-689ebd3160e6"
     },
-    "better buttons and layout than older Hegel remotes": {
-     "sentimentAnalysis": "Tydeligere betjening og bedre knapper gør RC10 til en markant brugervenlighedsopgradering i forhold til tidligere Hegel-fjernbetjeninger.",
-     "simpleTitle": "Bedre knapper og layout end på ældre Hegel-fjernbetjeninger",
+    "easy and intuitive everyday control": {
+     "sentimentAnalysis": "Fjernbetjeningen beskrives konsekvent som enkel, praktisk og nem at bruge i hverdagen.",
+     "simpleTitle": "Nem og intuitiv daglig betjening",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "4d0dd0f6-e512-46f7-a64d-d6dc2c6049c8"
+     "key": "easy_control",
+     "groupId": "355e80e9-7dc0-4e65-9a19-c8d21fb2bae4"
     },
-    "useful compatibility and streamer control": {
-     "sentimentAnalysis": "RC10 fungerer med flere Hegel-produkter og kan tilbyde praktiske musikstyringsfunktioner til streamere.",
-     "simpleTitle": "Praktisk kompatibilitet og streamer-styring",
+    "compact, light and good-value design": {
+     "sentimentAnalysis": "Den lille, lette form og den overkommelige pris fremhæves gentagne gange som styrker.",
+     "simpleTitle": "Kompakt, let og prisvenligt design",
      "bias": "positive",
-     "key": "compatibility",
-     "groupId": "a09af412-eb0d-43af-9842-d2fc4f74649d"
+     "key": "compact_value",
+     "groupId": "faed991a-3c63-48ea-991f-689ebd3160e6"
     },
-    "affordable but noticeably plastic construction": {
-     "sentimentAnalysis": "Den lave pris værdsættes, men plastikhuset og knapcellebatteriet får fjernbetjeningen til at føles mindre eksklusiv.",
-     "simpleTitle": "Overkommelig, men tydeligt udført i plast",
+    "clearer buttons and sensible layout": {
+     "sentimentAnalysis": "Knappernes mærkning og placering opleves som tydeligere og mere praktisk end på konkurrerende eller originale fjernbetjeninger.",
+     "simpleTitle": "Tydeligere knapper og fornuftig placering",
+     "bias": "positive",
+     "key": "button_layout",
+     "groupId": "355e80e9-7dc0-4e65-9a19-c8d21fb2bae4"
+    },
+    "inexpensive plastic feel": {
+     "sentimentAnalysis": "Nogle kommentarer kritiserer fjernbetjeningen for at føles billigt udført, især på grund af plastkonstruktionen.",
+     "simpleTitle": "Billig plastfornemmelse",
      "bias": "negative",
-     "key": "build_value",
-     "groupId": "2136e45a-5f07-41d9-b323-a74d469e6122"
+     "key": "plastic_feel",
+     "groupId": "faed991a-3c63-48ea-991f-689ebd3160e6"
     }
    },
    "grouping": {
-    "4d0dd0f6-e512-46f7-a64d-d6dc2c6049c8": {
+    "355e80e9-7dc0-4e65-9a19-c8d21fb2bae4": {
      "title": "Brugervenlighed",
-     "id": "4d0dd0f6-e512-46f7-a64d-d6dc2c6049c8",
+     "id": "355e80e9-7dc0-4e65-9a19-c8d21fb2bae4",
      "references": [
       "0f969024-45c0-4598-ba18-ac55b566f565",
       "5bca4d4a-b4f9-4528-b4a9-44bf5f4d215f",
@@ -185,32 +192,21 @@
       "5dc0a633-67f7-4949-8e8a-4a74e5485d58",
       "492a91e5-ef29-4a66-ab8c-53695855c39b",
       "94b4d913-5554-4458-b678-be46c53e8fd6",
-      "c900c5a3-e654-4ed8-b7b7-bc390d39631c",
-      "4c6d692e-d394-47da-bbb3-40c2a1bebfc4"
+      "c900c5a3-e654-4ed8-b7b7-bc390d39631c"
      ]
     },
-    "2136e45a-5f07-41d9-b323-a74d469e6122": {
-     "title": "Konstruktion og værdi",
-     "id": "2136e45a-5f07-41d9-b323-a74d469e6122",
+    "faed991a-3c63-48ea-991f-689ebd3160e6": {
+     "title": "Design og udførelse",
+     "id": "faed991a-3c63-48ea-991f-689ebd3160e6",
      "references": [
       "d26bcb8e-9bae-4a26-95cd-ecebc8d7a48c",
       "7b15ff18-281e-4a3a-8c03-91092f7b0b30",
       "f0d9435a-ade8-4f32-988d-39e37122e392",
+      "885726dc-ba9a-4a9c-aad0-8dbb3c5932ec",
+      "5dc0a633-67f7-4949-8e8a-4a74e5485d58",
       "a0c1556d-ad35-49ad-8a2f-ef9e156bbbc3",
       "c900c5a3-e654-4ed8-b7b7-bc390d39631c",
-      "885726dc-ba9a-4a9c-aad0-8dbb3c5932ec"
-     ]
-    },
-    "a09af412-eb0d-43af-9842-d2fc4f74649d": {
-     "title": "Kompatibilitet og funktioner",
-     "id": "a09af412-eb0d-43af-9842-d2fc4f74649d",
-     "references": [
-      "11ebbb19-c083-4282-8beb-49268553a140",
-      "f0d9435a-ade8-4f32-988d-39e37122e392",
-      "4fb8e2f5-20af-41b9-b86f-580fea012593",
-      "c0d53974-2899-403d-9555-4926ee9ab833",
-      "492a91e5-ef29-4a66-ab8c-53695855c39b",
-      "c900c5a3-e654-4ed8-b7b7-bc390d39631c"
+      "4c6d692e-d394-47da-bbb3-40c2a1bebfc4"
      ]
     }
    },
