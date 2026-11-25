@@ -1039,7 +1039,7 @@ html[data-theme="dark"] .kat-sw .sw:has(.swt) { background: var(--panel2); }
 .tb-av { width: 26px; height: 26px; border-radius: 50%; background: var(--fg); color: var(--panel); display: grid; place-items: center; font: 600 11px var(--ui); letter-spacing: .02em; }
 #tb-seller { padding: 0 5px 0 3px; }
 .tb-crumb { color: var(--muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 180px; } .tb-crumb::after { content: ' /'; margin-left: 2px; } .tb-crumb[hidden] { display: none; }
-#topbar .docname { flex: 0 1 auto; min-width: 120px; max-width: 340px; height: 30px; padding: 0 8px; border: 1px solid transparent !important; border-radius: 6px; background: transparent !important; font: 600 13.5px var(--ui); text-overflow: ellipsis; }
+#topbar .docname { flex: 0 1 auto; min-width: 60px; max-width: 340px; height: 30px; padding: 0 8px; border: 1px solid transparent !important; border-radius: 6px; background: transparent !important; font: 600 13.5px var(--ui); text-overflow: ellipsis; }
 #topbar .docname:hover { background: var(--panel2) !important; } #topbar .docname:focus { border-color: var(--accent) !important; background: var(--panel) !important; }
 #tb-more, #tb-drawer { display: none; }
 @media (max-width: 1024px) { #tb-more, #tb-drawer { display: inline-flex; } #topbar { column-gap: 6px; } }
@@ -1416,3 +1416,9 @@ h2 { font-size: 15px; }
 .tb-unsaved:hover { background: var(--panel2); }
 .proj.cur { background: var(--tint); }
 .proj.cur .muted { font-size: 12px; padding: 0 6px; }
+/* "Gemt for 2 minutter siden" after the name (click: version history); redo steps in the History menu are greyed */
+.tb-saved { flex: none; border: 0; background: none; padding: 3px 6px; border-radius: var(--r-sm); font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.tb-saved:hover { background: var(--panel2); color: var(--fg); }
+@media (max-width: 1300px) { .tb-saved { display: none; } }
+#ctxmenu .mi.dim { opacity: .55; }
+.proj .ptag { margin-left: 8px; font-size: 11px; font-weight: 500; color: var(--muted); background: var(--panel2); padding: 1px 6px; border-radius: 999px; }

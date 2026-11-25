@@ -108,6 +108,7 @@
     plus: '<path d="M5 12h14"/><path d="M12 5v14"/>', // plus
     minus: '<path d="M5 12h14"/>', // minus
     x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>', // x
+    history: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>', // history
     undo: '<path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"/>', // undo2
     redo: '<path d="m15 14 5-5-5-5"/><path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"/>', // redo2
     text: '<polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/>', // type
@@ -218,7 +219,7 @@
       if (e === 'sep') return h('.msep');
       if (e.head) return h('.mhead', null, e.head);
       if (e.el) return h('.mcustom', null, e.el);
-      return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : '') + (e.accent ? '.accent' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
+      return h('button.mi' + (e.danger ? '.danger' : '') + (e.on ? '.on' : '') + (e.accent ? '.accent' : '') + (e.dim ? '.dim' : ''), { role: 'menuitem', disabled: !!e.disabled, onclick: () => { close(); e.fn(); } },
         e.swatch ? h('span.sw', { style: { background: e.swatch } }) : e.av ? h('span.mav', null, h('b', null, e.av)) : e.icon ? HP.icon(e.icon, 15) : h('span.ic'), h('span.ml', null, e.label), e.note ? h('span.mn', null, e.note) : e.key ? h('span.mk', null, e.key.split('+').map((k) => h('kbd', null, k))) : null);
     }));
     m._anchor = anchor || null; m._close = close; if (anchor) anchor.setAttribute('aria-expanded', 'true');
@@ -467,25 +468,36 @@
     doc.v = 3;
   };
   const store = (HP.store = { doc: migrate(Object.assign(blank(), LS.get('doc', {}))), planSrc: LS.get('plan', null), sel: new Set(), selConn: null });
-  let hist = [], fut = [], last = JSON.stringify(store.doc);
+  // Undo history: each state is the drawing as JSON, with the time it was made (shown in the history list, Pn.history)
+  let hist = [], fut = [], last = JSON.stringify(store.doc), lastT = Date.now();
+  const push = () => { hist.push({ s: last, t: lastT }); if (hist.length > 120) hist.shift(); };
   store.commit = () => {
     const s = JSON.stringify(store.doc);
     if (s === last) { HP.emit('doc'); return; }
-    hist.push(last); if (hist.length > 120) hist.shift();
-    fut = []; last = s; if (!store.view) LS.set('doc', store.doc); HP.emit('doc');
+    push(); fut = []; last = s; lastT = Date.now(); if (!store.view) LS.set('doc', store.doc); HP.emit('doc');
   };
-  const restore = (s) => {
-    last = s; store.doc = JSON.parse(s); LS.set('doc', store.doc);
+  const restore = (st) => {
+    last = st.s; lastT = st.t; store.doc = JSON.parse(st.s); LS.set('doc', store.doc);
     const ids = new Set(store.doc.items.map((i) => i.id));
     store.sel = new Set([...store.sel].filter((id) => ids.has(id))); store.selConn = null; HP.emit('doc');
   };
-  store.undo = () => { if (hist.length) { fut.push(last); restore(hist.pop()); } };
-  store.redo = () => { if (fut.length) { hist.push(last); restore(fut.pop()); } };
+  store.undo = () => { if (hist.length) { fut.push({ s: last, t: lastT }); restore(hist.pop()); } };
+  store.redo = () => { if (fut.length) { hist.push({ s: last, t: lastT }); restore(fut.pop()); } };
   store.canUndo = () => hist.length > 0; store.canRedo = () => fut.length > 0;
+  // all states oldest first (the undo steps, the current one, then the redo steps) and the index of the current one
+  store.timeline = () => ({ states: [...hist, { s: last, t: lastT }, ...fut.slice().reverse()], cur: hist.length });
+  // jump to a state of the timeline: several undos or redos in one go, emitting 'doc' once
+  store.goTo = (j) => {
+    let n = j - hist.length; if (!n) return;
+    while (n < 0 && hist.length) { fut.push({ s: last, t: lastT }); const st = hist.pop(); last = st.s; lastT = st.t; n++; }
+    while (n > 0 && fut.length) { hist.push({ s: last, t: lastT }); const st = fut.pop(); last = st.s; lastT = st.t; n--; }
+    restore({ s: last, t: lastT });
+  };
   store.load = (doc, planSrc) => {
-    hist.push(last); fut = [];
-    store.doc = migrate(Object.assign(blank(), doc)); if (planSrc !== undefined) store.planSrc = planSrc || null; // keep the image when none is given, so Undo can bring a plan back store.sel.clear(); store.selConn = null;
-    last = JSON.stringify(store.doc); LS.set('doc', store.doc); store.savePlan(); HP.emit('doc'); HP.emit('loaded');
+    push(); fut = [];
+    store.doc = migrate(Object.assign(blank(), doc)); if (planSrc !== undefined) store.planSrc = planSrc || null; // keep the image when none is given, so Undo can bring a plan back
+    store.sel.clear(); store.selConn = null;
+    last = JSON.stringify(store.doc); lastT = Date.now(); LS.set('doc', store.doc); store.savePlan(); HP.emit('doc'); HP.emit('loaded');
   };
   store.savePlan = () => { if (store.planSrc) { if (!LS.set('plan', store.planSrc)) HP.toast(HP.t('Floor plan is too large to autosave. Export the project to keep it.', 'Plantegningen er for stor til autosave. Eksportér projektet for at gemme den.'), { kind: 'warn' }); } else LS.del('plan'); };
   store.show = (doc) => { store.doc = migrate(Object.assign(blank(), doc)); store.view = true; HP.emit('doc'); }; // view only: never saved in this browser

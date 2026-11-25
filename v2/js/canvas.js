@@ -1358,12 +1358,12 @@
     d.items = front ? rest.concat(sel) : rest.filter((i) => i.kind === 'plan').concat(sel, rest.filter((i) => i.kind !== 'plan'));
     store.commit();
   };
-  C.clearCanvas = () => {
+  C.clearCanvas = () => HP.panels.guard(() => { // asks Gem / Gem ikke first when the open project has unsaved changes
     const d = store.doc;
     if (!d.items.length && !d.name) return;
     store.load(Object.assign(store.blank(), { orient: d.orient, cardScale: d.cardScale }));
     HP.toast(t('Canvas cleared.', 'Lærredet er ryddet.'), { ms: 8000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
-  };
+  });
   C.hasPlan = () => store.doc.items.some((i) => i.kind === 'plan');
   C.removePlan = () => {
     if (!C.hasPlan()) return;

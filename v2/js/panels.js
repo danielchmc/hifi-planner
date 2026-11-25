@@ -311,11 +311,12 @@
   const fileItems = () => {
     const d = store.doc;
     return [
-      { label: t('New proposal (clear canvas)', 'Nyt tilbud (ryd lærredet)'), icon: 'eraser', fn: () => C().clearCanvas() },
+      { label: t('New proposal (clear canvas)', 'Nyt tilbud (ryd lærredet)'), icon: 'eraser', fn: () => C().clearCanvas() }, // asks to save first (Pn.guard in C.clearCanvas)
       { label: t('Open…', 'Åbn…'), icon: 'folder', key: 'Ctrl+O', fn: Pn.projects },
       ...(() => { const r = Pn.recent(4).filter((p) => p.id !== d.prj); return r.length ? [{ head: t('Recent', 'Seneste') }, ...r.map((p) => ({ label: p.name, icon: 'page', note: new Date(p.date).toLocaleDateString(HP.locale(), { day: 'numeric', month: 'short' }), fn: () => Pn.openProject(p) })), 'sep'] : []; })(),
       { label: t('Save', 'Gem'), icon: 'download', key: 'Ctrl+S', note: Pn.unsaved() ? t('changes', 'ændringer') : '', fn: Pn.save },
       { label: t('Save as…', 'Gem som…'), icon: 'copy', key: 'Ctrl+Shift+S', fn: Pn.saveAs },
+      { label: t('Version history…', 'Versionshistorik…'), icon: 'history', note: d.prj && projOf(d.prj) ? String(((projOf(d.prj).versions) || []).length + 1) : '', disabled: !(d.prj && projOf(d.prj)), fn: () => Pn.versions() },
       { label: t('Rename…', 'Omdøb…'), icon: 'edit', fn: rename },
       { label: t('Export file…', 'Eksportér fil…'), icon: 'download', fn: Pn.exportFile },
       { label: t('Import file…', 'Importér fil…'), icon: 'upload', fn: Pn.importFile },
@@ -405,12 +406,14 @@
       opts && opts.icon ? icon(opts.icon, 16) : null, label ? h('span.ml', null, label) : null, icon('down', 11));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout). Click to rename.', 'Tilbuddets navn (vises på printet). Klik for at omdøbe.'),
       onchange: () => { store.doc.name = name.value.trim(); store.commit(); }, onkeydown: (e) => { if (e.key === 'Enter' || e.key === 'Escape') { if (e.key === 'Escape') name.value = store.doc.name || ''; name.blur(); } } });
-    // the proposal's name is always readable: the field is as wide as its text (120–340 px; ellipsis beyond that)
+    // the proposal's name is always readable: the field is as wide as its text (60–340 px; ellipsis beyond that), so the saved status sits right after it
     const ruler = document.createElement('canvas').getContext('2d');
-    const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(120, Math.min(340, w))) + 'px'; };
+    const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(60, Math.min(340, w))) + 'px'; };
     name.addEventListener('input', fitName);
     const shopCrumb = h('span.tb-crumb');
     const undo = ib('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = ib('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
+    // the undo history as a list (like Photoshop's History panel): click a step to go back (or forward) to it
+    const histBtn = h('button.tb-i#tb-hist', { 'aria-haspopup': 'menu', title: t('History: go back several steps', 'Historik: gå flere trin tilbage'), onclick: (e) => Pn.history(e.currentTarget) }, icon('history', 16));
     const text = ib('tb-text', 'text', t('Add text', 'Tilføj tekst'), () => C().addText(), { key: 'Alt+T' });
     const prices = ib('tb-prices', 'tag', t('Price list', 'Prisliste'), () => C().togglePrices(), { key: 'F3' });
     const ci = ib('tb-ci', 'plan', t('CI mode: marks on a floor plan', 'CI-tilstand: mærker på en plantegning'), () => C().setCI(!store.doc.ci));
@@ -435,14 +438,18 @@
       h('button.ppc-x', { title: t('Remove all price adjustments (Undo in the message)', 'Fjern alle prisjusteringer (Fortryd i beskeden)'), onclick: () => Pn.clearProjectPrices() }, icon('x', 12)));
     // a dot after the name while the open project has changes not saved in it (Ctrl+S saves); click it to save
     const unsavedDot = h('button.tb-unsaved', { type: 'button', hidden: true, title: t('Changes not saved in the project (Ctrl+S)', 'Ændringer ikke gemt i projektet (Ctrl+S)'), onclick: () => Pn.save() });
+    // "Gemt for 2 minutter siden" after the name of a saved project; click for its version history
+    const savedLbl = h('button.tb-saved', { type: 'button', hidden: true, title: t('Version history', 'Versionshistorik'), onclick: () => Pn.versions() });
+    const drawSaved = () => { const at = Pn.savedAt(); savedLbl.hidden = !at; if (at) savedLbl.textContent = t('Saved', 'Gemt') + ' ' + Pn.ago(at); };
+    setInterval(drawSaved, 30000);
     const bar = h('header#topbar', null,
       h('.tb-left', null,
         h('button.tb-btn.primary#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus', 15), h('span', null, t('Products', 'Produkter'))),
         h('.brandmark', { title: 'HiFi Planner' }, h('img', { src: 'assets/hifi-planner-logo.png', alt: 'HiFi Planner' })),
         h('.tb-grp#tb-filegrp', null, file), sep(),
-        h('.tb-grp#tb-edit', null, undo, redo), sep(),
+        h('.tb-grp#tb-edit', null, undo, redo, histBtn), sep(),
         h('.tb-grp#tb-insert', null, text, prices, ci)),
-      h('.tb-mid', null, shopCrumb, name, unsavedDot, ppChip),
+      h('.tb-mid', null, shopCrumb, name, unsavedDot, savedLbl, ppChip),
       h('.tb-right', null,
         h('.tb-grp#tb-view', null, layers, scaleBtn), sep(),
         h('.tb-grp#tb-admingrp', null, admin),
@@ -456,13 +463,13 @@
     };
     drawSeller(); HP.on('seller', drawSeller);
     const sync = () => {
-      undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo();
+      undo.disabled = !store.canUndo(); redo.disabled = !store.canRedo(); histBtn.disabled = undo.disabled && redo.disabled;
       prices.classList.toggle('on', C().hasPrices()); ci.classList.toggle('on', !!store.doc.ci);
       layers.classList.toggle('on', !!(Pn.layersOpen && Pn.layersOpen()));
       scaleTxt.textContent = Math.round((store.doc.cardScale || 1) * 100) + '%';
       if (document.activeElement !== name) name.value = store.doc.name || '';
       fitName();
-      unsavedDot.hidden = !Pn.unsaved();
+      unsavedDot.hidden = !Pn.unsaved(); drawSaved();
       bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
       const n = cat.dirtyCount(); adminN.hidden = !n;
       admin.title = n ? t('Admin · ' + n + ' unpublished change(s)', 'Admin · ' + n + ' ikke-udgivne ændring(er)') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
@@ -728,26 +735,70 @@
   const projAll = () => LS.get('projects', []);
   const projOf = (id) => id && projAll().find((x) => x.id === id);
   const hasPlanSrc = () => store.doc.items.some((i) => i.kind === 'plan') && store.planSrc;
-  let savedJSON = null; // the open project as last saved, to tell whether there are changes
-  const syncSaved = () => { const p = projOf(store.doc.prj); if (store.doc.prj && !p) delete store.doc.prj; savedJSON = p ? JSON.stringify(Object.assign({}, p.doc, { prj: p.id })) : null; };
-  Pn.unsaved = () => !!(store.doc.prj && savedJSON && JSON.stringify(store.doc) !== savedJSON);
+  let savedJSON = null, savedFor, savedAt = 0; // the open project as last saved (and when), to tell whether there are changes
+  const syncSaved = () => { const p = projOf(store.doc.prj); if (store.doc.prj && !p) delete store.doc.prj; savedFor = store.doc.prj; savedJSON = p ? JSON.stringify(Object.assign({}, p.doc, { prj: p.id })) : null; savedAt = p ? p.date : 0; };
+  // worked out again whenever the drawing belongs to another project than last time (after Undo past opening one, or a reload)
+  const fresh = () => { if (store.doc.prj !== savedFor) syncSaved(); };
+  Pn.unsaved = () => { fresh(); return !!(store.doc.prj && savedJSON && JSON.stringify(store.doc) !== savedJSON); };
+  Pn.savedAt = () => { fresh(); return store.doc.prj ? savedAt : 0; };
+  /* Before the drawing is replaced (Nyt tilbud, Åbn, Importér, a version) while the open project has changes not saved in it:
+     Gem / Gem ikke / Annuller, as in desktop programs. Nothing is asked otherwise (the work is autosaved, and those all have Undo). */
+  Pn.guard = (fn) => {
+    if (!Pn.unsaved()) return fn();
+    const name = store.doc.name || (projOf(store.doc.prj) || {}).name || '';
+    const close = HP.modal({ title: t('Save changes?', 'Gem ændringer?'), size: 'sm',
+      body: h('p', null, t('"{}" has changes that are not saved in the project.', '"{}" har ændringer, der ikke er gemt i projektet.').replace('{}', name)),
+      foot: [h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')),
+        h('button.btn', { onclick: () => { close(); fn(); } }, t("Don't save", 'Gem ikke')),
+        h('button.btn.primary', { autofocus: true, onclick: () => { close(); if (Pn.save()) fn(); } }, t('Save', 'Gem'))] });
+  };
+  // a time as "2 minutes ago" in the chosen language
+  Pn.ago = (ms) => {
+    const s = (Date.now() - ms) / 1000; if (s < 45) return t('just now', 'lige nu');
+    let rtf; try { rtf = new Intl.RelativeTimeFormat(HP.locale(), { numeric: 'auto' }); } catch (e) { return new Date(ms).toLocaleString(HP.locale()); }
+    return s < 3600 ? rtf.format(-Math.max(1, Math.round(s / 60)), 'minute') : s < 86400 ? rtf.format(-Math.round(s / 3600), 'hour') : rtf.format(-Math.round(s / 86400), 'day');
+  };
+  const when = (ms) => new Date(ms).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' });
+  const nProducts = (doc) => doc.items.filter((i) => i.kind === 'product').length + doc.items.filter((i) => i.kind === 'mark').length;
   function writeProject(name, id) {
     id = id || HP.uid();
+    savedFor = id; savedJSON = null; // so the commit below does not look the project up before it is stored
     store.doc.name = name; store.doc.prj = id; store.commit();
-    const doc = JSON.parse(JSON.stringify(store.doc)), ps = projAll().filter((x) => x.id !== id && x.name !== name);
-    const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null };
+    const all = projAll(), old = all.find((x) => x.id === id), doc = JSON.parse(JSON.stringify(store.doc)), ps = all.filter((x) => x.id !== id && x.name !== name);
+    // version history: the save before this one goes first in the list of the last 10 (drawings only; the floor plan image is the project's)
+    const versions = old ? [{ date: old.date, doc: old.doc }, ...(old.versions || [])].filter((v) => JSON.stringify(Object.assign({}, v.doc, { prj: id })) !== JSON.stringify(doc)).slice(0, Pn.VERSIONS) : [];
+    const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null, versions };
     ps.push(entry);
-    if (!LS.set('projects', ps)) {
+    let ok = LS.set('projects', ps);
+    while (!ok && entry.versions.length) { entry.versions.pop(); ok = LS.set('projects', ps); } // storage full: the oldest versions go first
+    if (!ok) {
       entry.plan = null;
       if (!LS.set('projects', ps)) { HP.toast(t('Browser storage is full. Export the project as a file instead.', 'Browserens lager er fuldt. Eksportér projektet som fil i stedet.'), { kind: 'error' }); return false; }
       HP.toast(t('Saved without the floor plan (too large). Export as a file to keep it.', 'Gemt uden plantegningen (for stor). Eksportér som fil for at beholde den.'), { kind: 'warn' });
     } else HP.toast(t('Saved: ', 'Gemt: ') + name, { kind: 'ok', ms: 2200 });
-    savedJSON = JSON.stringify(store.doc); HP.emit('doc');
+    savedJSON = JSON.stringify(store.doc); savedFor = id; savedAt = entry.date; HP.emit('doc');
     return true;
   }
-  Pn.openProject = (p) => {
+  Pn.VERSIONS = 10;
+  Pn.openProject = (p) => Pn.guard(() => {
     store.load(Object.assign({}, p.doc, { prj: p.id }), p.plan); syncSaved(); HP.emit('doc');
     HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', p.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  });
+  // an older save of a project opens as that project with changes, so Gem makes it the current one (and Gem som a copy)
+  const openVersion = (p, v) => Pn.guard(() => {
+    store.load(Object.assign({}, v.doc, { prj: p.id, name: p.name }), p.plan); syncSaved(); HP.emit('doc');
+    HP.toast(t('Opened the version from {}. Save to make it the current one.', 'Åbnede versionen fra {}. Gem for at gøre den til den aktuelle.').replace('{}', when(v.date)), { ms: 8000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  });
+  // Versionshistorik: the project's saves, newest first; the latest is the project itself
+  Pn.versions = (p) => {
+    p = p || projOf(store.doc.prj); if (!p) return HP.toast(t('Save the proposal as a project first.', 'Gem tilbuddet som projekt først.'), { kind: 'warn' });
+    const rows = [{ date: p.date, doc: p.doc, latest: true }, ...(p.versions || [])];
+    const close = HP.modal({ title: t('Version history', 'Versionshistorik') + ': ' + p.name, size: 'md',
+      body: [h('.projlist', null, rows.map((v) => h('.proj', null,
+        h('.pinfo', null, h('.pname', null, when(v.date), v.latest && h('span.ptag', null, t('latest save', 'seneste gemning'))),
+          h('.psub', null, Pn.ago(v.date) + ' · ' + nProducts(v.doc) + ' ' + t('products', 'produkter'))),
+        h('button.btn.sm', { onclick: () => { close(); v.latest ? Pn.openProject(p) : openVersion(p, v); } }, t('Open', 'Åbn'))))),
+      h('p.muted', null, t('The last {} saves are kept. Opening an older one does not change anything until you save.', 'De sidste {} gemninger gemmes. At åbne en ældre ændrer intet, før du gemmer.').replace('{}', Pn.VERSIONS + 1))] });
   };
   Pn.save = () => { const p = projOf(store.doc.prj); return p ? writeProject(store.doc.name || p.name, p.id) : Pn.saveAs(); };
   Pn.saveAs = () => {
@@ -772,7 +823,7 @@
     fr.onload = () => { try { const j = JSON.parse(fr.result); if (!j.doc || !Array.isArray(j.doc.items)) throw 0; const d = Object.assign({}, j.doc); delete d.prj; store.load(d, j.plan || null); syncSaved(); HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', d.name || f.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } catch (e) { HP.toast(t('That file is not a HiFi Planner project.', 'Filen er ikke et HiFi Planner-projekt.'), { kind: 'error' }); } };
     fr.readAsText(f); importIn.value = '';
   } });
-  Pn.importFile = () => { if (!importIn.isConnected) document.body.append(importIn); importIn.click(); };
+  Pn.importFile = () => Pn.guard(() => { if (!importIn.isConnected) document.body.append(importIn); importIn.click(); });
   Pn.recent = (n) => projAll().sort((a, b) => b.date - a.date).slice(0, n || 5);
   HP.on('loaded', () => syncSaved());
 
@@ -783,7 +834,8 @@
       const ps = projAll();
       if (!ps.length) list.append(h('.empty', null, t('No saved projects in this browser yet.', 'Ingen gemte projekter i denne browser endnu.')));
       ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj' + (p.id === store.doc.prj ? '.cur' : ''), null,
-        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, new Date(p.date).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' }) + ' · ' + p.doc.items.filter((i) => i.kind === 'product').length + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
+        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, when(p.date) + ' · ' + nProducts(p.doc) + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
+        (p.versions || []).length ? h('button.btn.sm', { title: t('Version history', 'Versionshistorik'), onclick: () => { close(); Pn.versions(p); } }, icon('history', 14), String(p.versions.length + 1)) : null,
         p.id === store.doc.prj ? h('span.muted', null, t('open now', 'åben nu')) : h('button.btn.sm', { onclick: () => { Pn.openProject(p); close(); } }, t('Open', 'Åbn')),
         h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => HP.confirm(t('Delete the project "{}"?', 'Slet projektet "{}"?').replace('{}', p.name), t('Delete', 'Slet'), () => { LS.set('projects', projAll().filter((x) => x.id !== p.id)); if (p.id === store.doc.prj) { delete store.doc.prj; syncSaved(); store.commit(); } draw(); }) }, icon('trash', 14)))));
     }
@@ -793,6 +845,65 @@
         h('button.btn', { onclick: () => { close(); Pn.importFile(); } }, icon('upload', 14), t('Import file', 'Importér fil')),
         h('button.btn', { onclick: Pn.exportFile }, icon('download', 14), t('Export file', 'Eksportér fil'))] });
     draw();
+  };
+
+  /* ---------- Historik: the undo steps as a list ----------
+     Each step is named by comparing the drawing before and after it (added, deleted, moved, connected, cable, price…). */
+  const KINDS = { text: ['text', 'tekst'], prices: ['price list', 'prisliste'], legend: ['legend', 'signaturforklaring'], plan: ['floor plan', 'plantegning'], zone: ['room', 'rum'], run: ['cable run', 'kabeltræk'], symbol: ['symbol', 'symbol'] };
+  const itemName = (it) => {
+    if (it.kind === 'product') { const p = cat.get(it.pid); return p ? C().cardName(p, it) : it.pid; }
+    if (it.kind === 'mark') { try { return C().markTitle(it.k); } catch (e) { return t('mark', 'mærke'); } }
+    const k = KINDS[it.kind]; return k ? t(k[0], k[1]) : t('item', 'element');
+  };
+  const namesOf = (xs) => xs.length === 1 ? itemName(xs[0]) : xs.length + ' ' + t('items', 'elementer');
+  const strip = (o, keys) => { const c = Object.assign({}, o); keys.forEach((k) => delete c[k]); return JSON.stringify(c); };
+  const POS = ['x', 'y'], SIZE = ['w', 'h'];
+  Pn.stepLabel = (a, b) => {
+    const A = new Map(a.items.map((i) => [i.id, i])), B = new Map(b.items.map((i) => [i.id, i]));
+    const added = b.items.filter((i) => !A.has(i.id)), removed = a.items.filter((i) => !B.has(i.id));
+    if (a.prj !== b.prj && b.prj) return [t('Opened "{}"', 'Åbnede "{}"').replace('{}', b.name || ''), 'folder'];
+    if (removed.length && !b.items.length && a.items.length > 1) return [t('Cleared the canvas', 'Ryddede lærredet'), 'eraser'];
+    if (added.length && removed.length && !b.items.some((i) => A.has(i.id))) return [t('Opened another proposal', 'Åbnede et andet tilbud'), 'folder'];
+    if (added.length && !removed.length) return [t('Added', 'Tilføjede') + ' ' + namesOf(added), 'plus'];
+    if (removed.length && !added.length) return [t('Deleted', 'Slettede') + ' ' + namesOf(removed), 'trash'];
+    if (added.length) return [t('Changed', 'Ændrede') + ' ' + namesOf(added), 'edit'];
+    const AC = new Map((a.conns || []).map((c) => [c.id, c])), BC = new Map((b.conns || []).map((c) => [c.id, c]));
+    const cAdd = (b.conns || []).filter((c) => !AC.has(c.id)), cDel = (a.conns || []).filter((c) => !BC.has(c.id));
+    const end = (doc, c) => { const i = doc.items.find((x) => x.id === c.a.item), j = doc.items.find((x) => x.id === c.b.item); return (i ? itemName(i) : '?') + ' → ' + (j ? itemName(j) : '?'); };
+    if (cAdd.length === 1 && !cDel.length) return [t('Connected', 'Forbandt') + ' ' + end(b, cAdd[0]), 'cable'];
+    if (cDel.length && !cAdd.length) return [cDel.length === 1 ? t('Removed the cable', 'Fjernede kablet') + ' ' + end(a, cDel[0]) : cDel.length + ' ' + t('connections removed', 'forbindelser fjernet'), 'cable'];
+    if (cAdd.length || cDel.length) return [t('Changed connections', 'Ændrede forbindelser'), 'cable'];
+    const changed = b.items.filter((i) => JSON.stringify(i) !== JSON.stringify(A.get(i.id)));
+    if (changed.length) {
+      const other = changed.filter((i) => strip(i, POS.concat(SIZE)) !== strip(A.get(i.id), POS.concat(SIZE)));
+      if (!other.length) return changed.every((i) => strip(i, SIZE) !== strip(A.get(i.id), SIZE)) ? [t('Moved', 'Flyttede') + ' ' + namesOf(changed), 'move'] : [t('Resized', 'Ændrede størrelse på') + ' ' + namesOf(changed), 'fit'];
+      if (other.length === 1 && other[0].kind === 'product' && other[0].pid !== A.get(other[0].id).pid) return [t('Replaced with', 'Udskiftede med') + ' ' + itemName(other[0]), 'swap'];
+      if (other.length === 1 && other[0].kind === 'text') return [t('Edited the text', 'Redigerede teksten'), 'text'];
+      return [t('Changed', 'Ændrede') + ' ' + namesOf(other), 'edit'];
+    }
+    const cc = (b.conns || []).filter((c) => JSON.stringify(c) !== JSON.stringify(AC.get(c.id)));
+    if (cc.length === 1 && (cc[0].cable !== AC.get(cc[0].id).cable || cc[0].lv !== AC.get(cc[0].id).lv || cc[0].m !== AC.get(cc[0].id).m)) { const p = cc[0].cable && cat.get(cc[0].cable); return [t('Cable', 'Kabel') + ': ' + (p ? p.name : t('none', 'intet')), 'cable']; }
+    if (cc.length) return [t('Moved a cable', 'Flyttede et kabel'), 'cable'];
+    if (a.name !== b.name) return [t('Renamed to "{}"', 'Omdøbte til "{}"').replace('{}', b.name || ''), 'edit'];
+    if (JSON.stringify(a.pr) !== JSON.stringify(b.pr)) return [t('Price adjustments', 'Prisjusteringer'), 'tag'];
+    if (a.orient !== b.orient) return ['A4 ' + (b.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), 'rotate'];
+    if (a.pages !== b.pages) return [t('Pages', 'Sider') + ': ' + b.pages, 'page'];
+    if (a.ci !== b.ci) return [t('CI mode', 'CI-tilstand') + (b.ci ? t(' on', ' til') : t(' off', ' fra')), 'plan'];
+    if (a.cardScale !== b.cardScale) return [t('Card size', 'Kortstørrelse') + ' ' + Math.round((b.cardScale || 1) * 100) + '%', 'scale'];
+    if (a.prj !== b.prj) return [t('Saved as a project', 'Gemt som projekt'), 'download'];
+    return [t('Change', 'Ændring'), 'edit'];
+  };
+  Pn.history = (anchor) => {
+    const tl = store.timeline(), N = 30, lo = Math.max(0, tl.cur - N + 1), hi = Math.min(tl.states.length - 1, tl.cur + 8), docs = [];
+    const doc = (j) => docs[j] || (docs[j] = JSON.parse(tl.states[j].s));
+    const time = (ms) => new Date(ms).toLocaleTimeString(HP.locale(), { hour: '2-digit', minute: '2-digit' });
+    const rows = [];
+    for (let j = hi; j >= lo; j--) {
+      const [label, ic] = j === 0 ? [t('Start', 'Start'), 'page'] : Pn.stepLabel(doc(j - 1), doc(j));
+      rows.push({ label, icon: ic, on: j === tl.cur, note: j === tl.cur ? t('now', 'nu') : time(tl.states[j].t), dim: j > tl.cur, fn: () => store.goTo(j) });
+    }
+    const r = anchor.getBoundingClientRect();
+    HP.menu(r.left, r.bottom + 6, [{ head: t('History', 'Historik') + (lo > 0 ? ' · ' + t('latest {}', 'seneste {}').replace('{}', N) : '') }, ...rows], anchor);
   };
 
   /* ---------- share link ---------- */
