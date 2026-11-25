@@ -413,7 +413,7 @@
     const dropBtn = (id, label, items, opts) => h('button.tb-i.tb-menu', { id, title: (opts && opts.tip) || label, 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, items(), opts && opts.right) },
       opts && opts.icon ? icon(opts.icon, 16) : null, label ? h('span.ml', null, label) : null, icon('down', 11));
     const name = h('input.docname', { placeholder: t('Untitled proposal', 'Unavngivet tilbud'), value: store.doc.name || '', title: t('Proposal name (shown on the printout). Click to rename.', 'Tilbuddets navn (vises på printet). Klik for at omdøbe.'),
-      onchange: () => { store.doc.name = name.value.trim(); store.commit(); }, onkeydown: (e) => { if (e.key === 'Enter' || e.key === 'Escape') { if (e.key === 'Escape') name.value = store.doc.name || ''; name.blur(); } } });
+      onchange: () => { store.doc.name = name.value.trim(); store.commit(); if (store.doc.name && !store.doc.prj) Pn.saveNamed(store.doc.name); }, onkeydown: (e) => { if (e.key === 'Enter' || e.key === 'Escape') { if (e.key === 'Escape') name.value = store.doc.name || ''; name.blur(); } } });
     // the proposal's name is always readable: the field is as wide as its text (60–340 px; ellipsis beyond that), so the saved status sits right after it
     const ruler = document.createElement('canvas').getContext('2d');
     const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(60, Math.min(340, w))) + 'px'; };
@@ -773,11 +773,11 @@
   };
   const when = (ms) => new Date(ms).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' });
   const nProducts = (doc) => doc.items.filter((i) => i.kind === 'product').length + doc.items.filter((i) => i.kind === 'mark').length;
-  function writeProject(name, id) {
+  function writeProject(name, id, keepSameName) {
     id = id || HP.uid();
     savedFor = id; savedJSON = null; // so the commit below does not look the project up before it is stored
     store.doc.name = name; store.doc.prj = id; store.commit();
-    const all = projAll(), old = all.find((x) => x.id === id), doc = JSON.parse(JSON.stringify(store.doc)), ps = all.filter((x) => x.id !== id && x.name !== name);
+    const all = projAll(), old = all.find((x) => x.id === id), doc = JSON.parse(JSON.stringify(store.doc)), ps = all.filter((x) => x.id !== id && (keepSameName || x.name !== name));
     // version history: the save before this one goes first in the list of the last 10 (drawings only; the floor plan image is the project's)
     const versions = old ? [{ date: old.date, doc: old.doc }, ...(old.versions || [])].filter((v) => JSON.stringify(Object.assign({}, v.doc, { prj: id })) !== JSON.stringify(doc)).slice(0, Pn.VERSIONS) : [];
     const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null, versions };
@@ -813,6 +813,8 @@
         h('button.btn.sm', { onclick: () => { close(); v.latest ? Pn.openProject(p) : openVersion(p, v); } }, t('Open', 'Åbn'))))),
       h('p.muted', null, t('The last {} saves are kept. Opening an older one does not change anything until you save.', 'De sidste {} gemninger gemmes. At åbne en ældre ændrer intet, før du gemmer.').replace('{}', Pn.VERSIONS + 1))] });
   };
+  // naming a proposal that is not a project yet saves it as one straight away (a new project; one of the same name is kept, not replaced)
+  Pn.saveNamed = (n) => writeProject(n, null, true);
   Pn.save = () => { const p = projOf(store.doc.prj); return p ? writeProject(store.doc.name || p.name, p.id) : Pn.saveAs(); };
   Pn.saveAs = () => {
     const nameIn = h('input', { placeholder: t('Project name', 'Projektnavn'), value: store.doc.name || '' });

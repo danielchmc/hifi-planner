@@ -691,8 +691,41 @@
     const hd = view.z * cardScale() >= 1.3;
     if (hd !== C.hd) { C.hd = hd; renderItems(); }
     placeBar();
-    if (!store.view) HP.LS.set('view', view); // a customer link never touches the planner's own view
+    if (!store.view) { clearTimeout(saveViewT); saveViewT = setTimeout(() => HP.LS.set('view', view), 250); } // a customer link never touches the planner's own view
   }
+  let saveViewT = 0;
+  /* Soft zoom (2026-11-25): the wheel, pinch on a trackpad and the zoom buttons ease to the new zoom in about a tenth of a second
+     (each frame covers 35 % of what is left, so it never lags behind the wheel), with the point under the pointer kept still;
+     Fit to window and zooming to an item glide there in 200 ms. Panning stays immediate; reduced motion turns it off. */
+  const soft = () => !HP.reducedMotion();
+  let zt = null, zraf = 0, vt = null;
+  function zoomStep() {
+    zraf = 0; if (!zt) return;
+    const done = Math.abs(zt.z / view.z - 1) < 0.002;
+    zoomAt(zt.cx, zt.cy, done ? zt.z : view.z + (zt.z - view.z) * 0.35);
+    if (done) zt = null; else zraf = requestAnimationFrame(zoomStep);
+  }
+  function zoomSoft(cx, cy, z) {
+    if (!soft()) return zoomAt(cx, cy, z);
+    vt = null; zt = { cx, cy, z: clamp(z, 0.15, 8) };
+    if (!zraf) zraf = requestAnimationFrame(zoomStep);
+  }
+  const zoomGoal = () => (zt ? zt.z : view.z); // where the zoom is heading (the next wheel step adds to that, not to the frame on screen)
+  // glide to a view; x and y move in step with the zoom, so a point that stays put on screen really stays put
+  function viewTo(x, y, z, instant) {
+    zt = null;
+    if (instant || !soft()) { vt = null; view.x = x; view.y = y; view.z = z; return applyView(); }
+    const from = { x: view.x, y: view.y, z: view.z }, t0 = performance.now(), me = (vt = { x, y, z });
+    const step = (now) => {
+      if (vt !== me) return;
+      const p = Math.min(1, (now - t0) / 200), e = 1 - Math.pow(1 - p, 3), zz = from.z * Math.pow(z / from.z, e);
+      const w = Math.abs(z - from.z) > 1e-6 ? (zz - from.z) / (z - from.z) : e;
+      view.z = zz; view.x = from.x + (x - from.x) * w; view.y = from.y + (y - from.y) * w;
+      applyView(); if (p < 1) requestAnimationFrame(step); else vt = null;
+    };
+    requestAnimationFrame(step);
+  }
+  C.stopGlide = () => { zt = null; vt = null; };
   // the customer view: the canvas unzoomed, every card rebuilt and measured afresh
   C.resetView = () => { view.x = 0; view.y = 0; view.z = 1; applyView(); };
   function zoomAt(cx, cy, z) {
@@ -703,16 +736,16 @@
   }
   const toWorld = (cx, cy) => { const r = vp.getBoundingClientRect(); return { x: (cx - r.left - view.x) / view.z, y: (cy - r.top - view.y) / view.z }; };
   C.toWorld = toWorld;
-  C.zoomBy = (f) => { const r = vp.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, view.z * f); };
+  C.zoomBy = (f) => { const r = vp.getBoundingClientRect(); zoomSoft(r.left + r.width / 2, r.top + r.height / 2, zoomGoal() * f); };
+  C.zoom100 = () => { const r = vp.getBoundingClientRect(); zoomSoft(r.left + r.width / 2, r.top + r.height / 2, 1); };
   // the part of the canvas not covered by the Oversigt panel (docked on the right)
   const openArea = () => { const r = vp.getBoundingClientRect(), ly = document.getElementById('layers'); const cut = ly && !ly.hidden && ly.offsetWidth && innerWidth > 1024 ? ly.offsetWidth + 20 : 0; return { left: r.left, top: r.top, width: Math.max(200, r.width - cut), height: r.height }; };
-  C.fit = () => {
+  C.fit = (instant) => {
     const d = store.doc, r = openArea();
     let x0 = 0, y0 = 0, x1 = pagesW(), y1 = pagesH();
     d.items.forEach((it) => { if (it.hid) return; const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + g.w); y1 = Math.max(y1, it.y + g.h); });
     const pad = 48, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0)), 0.15, 1.5);
-    view.z = z; view.x = (r.width - (x1 - x0) * z) / 2 - x0 * z; view.y = (r.height - (y1 - y0) * z) / 2 - y0 * z;
-    applyView();
+    viewTo((r.width - (x1 - x0) * z) / 2 - x0 * z, (r.height - (y1 - y0) * z) / 2 - y0 * z, z, instant === true);
   };
   const centerWorld = () => { const r = vp.getBoundingClientRect(); return toWorld(r.left + r.width / 2, r.top + r.height / 2); };
 
@@ -774,8 +807,7 @@
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     its.forEach((it) => { const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + (g.w || 40)); y1 = Math.max(y1, it.y + (g.h || 40)); });
     const r = openArea(), pad = 80, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0), Math.max(view.z, 0.6)), 0.15, 1.5);
-    view.z = z; view.x = r.width / 2 - ((x0 + x1) / 2) * z; view.y = r.height / 2 - ((y0 + y1) / 2) * z;
-    applyView();
+    viewTo(r.width / 2 - ((x0 + x1) / 2) * z, r.height / 2 - ((y0 + y1) / 2) * z, z);
   };
   C.highlight = (ids, on) => { [].concat(ids || []).forEach((id) => { const el = els.get(id); if (el) el.classList.toggle('hl', !!on); }); };
   C.itemMenu = (ids, x, y) => { store.sel = new Set([].concat(ids)); store.selConn = null; refreshSel(); menuAt(x, y, false); };
@@ -1680,9 +1712,9 @@
       (overlay = h('.overlay', null, (selbar = h('#selbar', { hidden: true })), (marqueeEl = h('.marquee')))),
       h('.zoomer', null,
         h('button', { title: t('Zoom out', 'Zoom ud'), onclick: () => C.zoomBy(1 / 1.25) }, icon('minus')),
-        (zoomLbl = h('button.zl', { title: t('Reset to 100%', 'Nulstil til 100%'), onclick: () => C.zoomBy(1 / view.z) }, '100%')),
+        (zoomLbl = h('button.zl', { title: t('Reset to 100%', 'Nulstil til 100%'), onclick: () => C.zoom100() }, '100%')),
         h('button', { title: t('Zoom in', 'Zoom ind'), onclick: () => C.zoomBy(1.25) }, icon('plus')),
-        h('button', { title: t('Fit to window (Shift+1)', 'Tilpas til vindue (Shift+1)'), onclick: C.fit }, icon('fit'))));
+        h('button', { title: t('Fit to window (Shift+1)', 'Tilpas til vindue (Shift+1)'), onclick: () => C.fit() }, icon('fit'))));
     mount.append(vp);
     // two fingers: pinch to zoom and pan together. Runs in the capture phase so a second finger never reaches onDown.
     const fingers = new Map(); let pinch = null;
@@ -1711,7 +1743,8 @@
     vp.addEventListener('pointerdown', onDown);
     vp.addEventListener('contextmenu', onContext);
     window.addEventListener('pointermove', (e) => { lastPtr = { x: e.clientX, y: e.clientY, touch: e.pointerType === 'touch' }; moveGhost(); if (tool && tool.pts.length) toolPreview(); }, { passive: true });
-    vp.addEventListener('wheel', (e) => { e.preventDefault(); zoomAt(e.clientX, e.clientY, view.z * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
+    vp.addEventListener('wheel', (e) => { e.preventDefault(); zoomSoft(e.clientX, e.clientY, zoomGoal() * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
+    vp.addEventListener('pointerdown', () => C.stopGlide(), true); // grabbing the canvas stops a glide: panning is always direct
     vp.addEventListener('dragover', (e) => e.preventDefault());
     vp.addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) C.loadPlan(f); });
     window.addEventListener('keydown', (e) => { if (e.code === 'Space' && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && !e.target.isContentEditable) { spaceDown = true; vp.classList.add('space'); e.preventDefault(); } if (e.key === 'Escape') { cancelWire(); C.stopStamp(); C.stopTool(); } if (e.key === 'Enter' && tool && tool.type === 'run' && tool.pts.length > 1) { e.preventDefault(); finishRun(); } });
@@ -1723,7 +1756,7 @@
     if (document.fonts) { document.fonts.ready.then(remeasure); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', remeasure); }
     const saved = HP.LS.get('view', null);
     render();
-    if (saved && isFinite(saved.z)) { Object.assign(view, saved); applyView(); } else C.fit();
-    HP.on('loaded', () => C.fit());
+    if (saved && isFinite(saved.z)) { Object.assign(view, saved); applyView(); } else C.fit(true);
+    HP.on('loaded', () => C.fit(true));
   };
 })();
