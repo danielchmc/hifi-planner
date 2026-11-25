@@ -963,5 +963,11 @@
   "Link for the customer": "Länk till kunden",
   "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Offerten på kundens mobil: ritningen, varorna och priserna, och hur du nås. Samma sida som QR-koden.",
   "See it": "Se den",
-  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Allt till kunden på ett ställe: skriv ut eller spara som PDF (med framsida och QR-kod), eller kopiera kundens länk till ett mejl eller ett sms."
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Allt till kunden på ett ställe: skriv ut eller spara som PDF (med framsida och QR-kod), eller kopiera kundens länk till ett mejl eller ett sms.",
+  "Older version from {}": "Äldre version från {}",
+  "An older version: save (Ctrl+S) to make it the current one": "En äldre version: spara (Ctrl+S) för att göra den till den aktuella",
+  "You have changed an older version of \"{}\". Save it as the current version?": "Du har ändrat en äldre version av \"{}\". Spara den som den aktuella versionen?",
+  "Cover with QR code": "Framsida med QR-kod",
+  "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Framsida först, med totalen och en QR-kod som öppnar offerten på kundens mobil",
+  "Include": "Ta med"
 };

@@ -963,5 +963,11 @@
   "Link for the customer": "Link für den Kunden",
   "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Das Angebot auf dem Handy des Kunden: Zeichnung, Produkte und Preise, und wie Sie erreichbar sind. Dieselbe Seite wie der QR-Code.",
   "See it": "Ansehen",
-  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles für den Kunden an einem Ort: drucken oder als PDF speichern (mit Deckblatt und QR-Code), oder den Kundenlink für eine E-Mail oder SMS kopieren."
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles für den Kunden an einem Ort: drucken oder als PDF speichern (mit Deckblatt und QR-Code), oder den Kundenlink für eine E-Mail oder SMS kopieren.",
+  "Older version from {}": "Ältere Version vom {}",
+  "An older version: save (Ctrl+S) to make it the current one": "Eine ältere Version: speichern (Strg+S), um sie zur aktuellen zu machen",
+  "You have changed an older version of \"{}\". Save it as the current version?": "Sie haben eine ältere Version von \"{}\" geändert. Als aktuelle Version speichern?",
+  "Cover with QR code": "Deckblatt mit QR-Code",
+  "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Zuerst ein Deckblatt mit der Summe und einem QR-Code, der das Angebot auf dem Handy des Kunden öffnet",
+  "Include": "Einschließen"
 };

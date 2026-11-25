@@ -446,7 +446,12 @@
     const unsavedDot = h('button.tb-unsaved', { type: 'button', hidden: true, title: t('Changes not saved in the project (Ctrl+S)', 'Ændringer ikke gemt i projektet (Ctrl+S)'), onclick: () => Pn.save() });
     // "Gemt for 2 minutter siden" after the name of a saved project; click for its version history
     const savedLbl = h('button.tb-saved', { type: 'button', hidden: true, title: t('Version history', 'Versionshistorik'), onclick: () => Pn.versions() });
-    const drawSaved = () => { const at = Pn.savedAt(); savedLbl.hidden = !at; if (at) savedLbl.textContent = t('Saved', 'Gemt') + ' ' + Pn.ago(at); };
+    const drawSaved = () => {
+      const at = Pn.savedAt(), vd = Pn.versionDate(); savedLbl.hidden = !at;
+      // an older version being looked at: say so, and that Gem makes it the current one
+      if (vd) { savedLbl.textContent = t('Older version from {}', 'Ældre version fra {}').replace('{}', new Date(vd).toLocaleString(HP.locale(), { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })); unsavedDot.title = t('An older version: save (Ctrl+S) to make it the current one', 'En ældre version: gem (Ctrl+S) for at gøre den til den aktuelle'); }
+      else { if (at) savedLbl.textContent = t('Saved', 'Gemt') + ' ' + Pn.ago(at); unsavedDot.title = t('Changes not saved in the project (Ctrl+S)', 'Ændringer ikke gemt i projektet (Ctrl+S)'); }
+    };
     setInterval(drawSaved, 30000);
     // old prices (more than HP.STALE_HOURS): a warning chip; campaign prices are off until a newer catalogue is loaded
     const staleTxt = h('span'), staleChip = h('button.tb-stale', { type: 'button', hidden: true, onclick: () => Pn.priceAge() }, icon('warn', 13), staleTxt);
@@ -754,10 +759,11 @@
   /* Before the drawing is replaced (Nyt tilbud, Åbn, Importér, a version) while the open project has changes not saved in it:
      Gem / Gem ikke / Annuller, as in desktop programs. Nothing is asked otherwise (the work is autosaved, and those all have Undo). */
   Pn.guard = (fn) => {
-    if (!Pn.unsaved()) return fn();
+    if (!Pn.unsaved() || Pn.viewingVersion()) return fn(); // an older version only looked at (not changed) is nothing to save
     const name = store.doc.name || (projOf(store.doc.prj) || {}).name || '';
     const close = HP.modal({ title: t('Save changes?', 'Gem ændringer?'), size: 'sm',
-      body: h('p', null, t('"{}" has changes that are not saved in the project.', '"{}" har ændringer, der ikke er gemt i projektet.').replace('{}', name)),
+      // an older version that was then changed: saving makes it the current one, so the question says that
+      body: h('p', null, (versionView && versionView.prj === store.doc.prj ? t('You have changed an older version of "{}". Save it as the current version?', 'Du har ændret en ældre version af "{}". Gem den som den aktuelle version?') : t('"{}" has changes that are not saved in the project.', '"{}" har ændringer, der ikke er gemt i projektet.')).replace('{}', name)),
       foot: [h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')),
         h('button.btn', { onclick: () => { close(); fn(); } }, t("Don't save", 'Gem ikke')),
         h('button.btn.primary', { autofocus: true, onclick: () => { close(); if (Pn.save()) fn(); } }, t('Save', 'Gem'))] });
@@ -786,17 +792,26 @@
       if (!LS.set('projects', ps)) { HP.toast(t('Browser storage is full. Export the project as a file instead.', 'Browserens lager er fuldt. Eksportér projektet som fil i stedet.'), { kind: 'error' }); return false; }
       HP.toast(t('Saved without the floor plan (too large). Export as a file to keep it.', 'Gemt uden plantegningen (for stor). Eksportér som fil for at beholde den.'), { kind: 'warn' });
     } else HP.toast(t('Saved: ', 'Gemt: ') + name, { kind: 'ok', ms: 2200 });
-    savedJSON = JSON.stringify(store.doc); savedFor = id; savedAt = entry.date; HP.emit('doc');
+    versionView = null; savedJSON = JSON.stringify(store.doc); savedFor = id; savedAt = entry.date; HP.emit('doc');
     return true;
   }
   Pn.VERSIONS = 10;
+  /* Looking through a project's versions: an older save that was opened and not changed since is a view, not a change. Moving on
+     (another version, the latest save, another project, Nyt projekt) does not ask to save it: saving would only make that older
+     version the current one, which is what Gem is for. The top bar says "Ældre version fra …" while one is shown. */
+  let versionView = null;
+  Pn.viewingVersion = () => !!(versionView && versionView.prj === store.doc.prj && versionView.json === JSON.stringify(store.doc));
+  Pn.versionDate = () => (Pn.viewingVersion() ? versionView.date : 0);
+  HP.on('loaded', () => { if (versionView && versionView.json !== JSON.stringify(store.doc)) versionView = null; });
   Pn.openProject = (p) => Pn.guard(() => {
+    versionView = null;
     store.load(Object.assign({}, p.doc, { prj: p.id }), p.plan); syncSaved(); HP.emit('doc');
     HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', p.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
   });
   // an older save of a project opens as that project with changes, so Gem makes it the current one (and Gem som a copy)
   const openVersion = (p, v) => Pn.guard(() => {
-    store.load(Object.assign({}, v.doc, { prj: p.id, name: p.name }), p.plan); syncSaved(); HP.emit('doc');
+    store.load(Object.assign({}, v.doc, { prj: p.id, name: p.name }), p.plan);
+    versionView = { prj: p.id, json: JSON.stringify(store.doc), date: v.date }; syncSaved(); HP.emit('doc');
     HP.toast(t('Opened the version from {}. Save to make it the current one.', 'Åbnede versionen fra {}. Gem for at gøre den til den aktuelle.').replace('{}', when(v.date)), { ms: 8000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
   });
   // Versionshistorik: the project's saves, newest first; the latest is the project itself

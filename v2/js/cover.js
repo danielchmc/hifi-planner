@@ -86,8 +86,14 @@
     if (!d.items.length) return HP.toast(t('The canvas is empty. Add something first.', 'Lærredet er tomt. Tilføj noget først.'), { kind: 'warn' });
     const name = h('input', { placeholder: t('e.g. Mette and Lars Jensen', 'f.eks. Mette og Lars Jensen'), value: (d.cv && d.cv.c) || '', autofocus: true,
       onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); go(); } } });
-    const withCover = h('input', { type: 'checkbox', checked: LS.get('cover', true) });
-    const withRel = h('input', { type: 'checkbox', checked: LS.get('coverRel', true) });
+    // on/off buttons side by side (instead of checkboxes): .checked like a checkbox, pressed when on
+    const tog = (on, ic, label, tip) => {
+      const b = h('button.btn.tog', { type: 'button', title: tip, onclick: () => set(!b.checked) }, h('span.tog-ic', null, icon(ic, 15)), h('span', null, label), h('span.tog-ok', null, icon('check', 11)));
+      const set = (v) => { b.checked = v; b.classList.toggle('on', v); b.setAttribute('aria-pressed', String(v)); };
+      set(on); return b;
+    };
+    const withCover = tog(LS.get('cover', true), 'qr', t('Cover with QR code', 'Forside med QR-kode'), t('Cover page first, with the total and a QR code that opens the proposal on the customer’s phone', 'Forside først, med totalen og en QR-kode, der åbner tilbuddet på kundens mobil'));
+    const withRel = tog(LS.get('coverRel', true), 'package', t('Related products', 'Relaterede produkter'), t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'));
     const st = () => { LS.set('coverRel', withRel.checked); stamp(name.value.trim(), withRel.checked); };
     const go = async () => {
       LS.set('cover', withCover.checked); close();
@@ -113,8 +119,7 @@
     const close = HP.modal({ title: t('Send to the customer', 'Send til kunden'), size: 'md', body: h('.form.send', null,
       h('.share-who.customer', null, icon('user', 15), h('b', null, t('For the customer', 'Til kunden')), h('span', null, t('read only, on any phone, no login', 'kun visning, på enhver mobil, uden login'))),
       h('label', null, t('Customer', 'Kunde'), name),
-      h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
-      h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
+      h('.togs', { role: 'group', 'aria-label': t('Include', 'Medtag') }, withCover, withRel),
       // old prices: campaign prices are off, and the seller should check the till
       HP.pricesGuarded() ? h('.note-box.warn', null, icon('warn', 15), h('span', null, t('The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.', 'Priserne er {} gamle (hentet {}), så kampagnepriser vises ikke. Tjek priserne i kassen, før du lover dem.').replace('{}', HP.pricesAgeText()).replace('{}', HP.pricesStamp()))) : null,
       // a reminder: the proposal has price adjustments (e.g. a colleague's link or an older proposal)

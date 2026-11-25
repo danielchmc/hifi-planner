@@ -1441,8 +1441,7 @@ html[data-theme="dark"] .pl-stale { background: #3a2a0c; color: #ffcf7a; }
 html[data-theme="dark"] .share-who.colleague { background: #1b2a44; color: #9cc0ff; }
 html[data-theme="dark"] .share-who.customer { background: #17321f; color: #8fd8a6; }
 /* Send til kunden: the two ways side by side (one column on phones) */
-.form.send .share-who { margin-bottom: 4px; }
-.send-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px; }
+.send-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .send-way { display: flex; flex-direction: column; gap: 8px; padding: 14px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--panel2); }
 .send-way > b { display: flex; align-items: center; gap: 7px; font-size: 14px; }
 .send-way p.muted { margin: 0; font-size: 12.5px; line-height: 1.45; flex: 1; }
@@ -1451,3 +1450,19 @@ html[data-theme="dark"] .share-who.customer { background: #17321f; color: #8fd8a
 @media (max-width: 640px) { .send-ways { grid-template-columns: 1fr; } }
 .form.send > label:not(.check) { display: grid; gap: 5px; font-size: 12.5px; color: var(--muted); }
 .form.send > label:not(.check) input { color: var(--fg); font-size: 14px; }
+/* Send til kunden: what to include, as on/off buttons in the style of the other buttons, two equal columns lined up with the
+   two cards below; a small box on the right shows the state (orange with a tick when on) */
+.togs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.btn.tog { width: 100%; justify-content: flex-start; gap: 8px; }
+.btn.tog .tog-ic { display: inline-flex; color: var(--muted); }
+.btn.tog .tog-ok { margin-left: auto; width: 16px; height: 16px; display: grid; place-items: center; border: 1.5px solid var(--line2); border-radius: 4px; color: transparent; }
+.btn.tog .tog-ok .ic { width: 11px; height: 11px; stroke-width: 3; }
+.btn.tog.on { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); }
+.btn.tog.on:hover { background: color-mix(in srgb, var(--accent) 13%, var(--panel)); border-color: var(--accent); }
+.btn.tog.on .tog-ic { color: var(--accent); }
+.btn.tog.on .tog-ok { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (max-width: 640px) { .togs { grid-template-columns: 1fr; } }
+/* Send til kunden: one vertical rhythm, 12 px between every block (banner, name, buttons, notes, the two cards), the same as the
+   gap between the buttons and between the cards */
+.form.send { display: flex; flex-direction: column; gap: 12px; }
+.form.send > * { margin: 0; }

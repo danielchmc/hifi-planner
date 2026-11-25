@@ -963,5 +963,11 @@
   "Link for the customer": "Lenke til kunden",
   "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Tilbudet på kundens mobil: tegningen, varene og prisene, og hvordan du kan kontaktes. Den samme siden som QR-koden.",
   "See it": "Se den",
-  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alt til kunden på ett sted: skriv ut eller lagre som PDF (med forside og QR-kode), eller kopier kundens lenke til en e-post eller en SMS."
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alt til kunden på ett sted: skriv ut eller lagre som PDF (med forside og QR-kode), eller kopier kundens lenke til en e-post eller en SMS.",
+  "Older version from {}": "Eldre versjon fra {}",
+  "An older version: save (Ctrl+S) to make it the current one": "En eldre versjon: lagre (Ctrl+S) for å gjøre den til den gjeldende",
+  "You have changed an older version of \"{}\". Save it as the current version?": "Du har endret en eldre versjon av \"{}\". Lagre den som den gjeldende versjonen?",
+  "Cover with QR code": "Forside med QR-kode",
+  "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Forside først, med totalen og en QR-kode som åpner tilbudet på kundens mobil",
+  "Include": "Ta med"
 };

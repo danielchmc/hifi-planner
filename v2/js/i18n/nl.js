@@ -963,5 +963,11 @@
   "Link for the customer": "Link voor de klant",
   "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "De offerte op de telefoon van de klant: de tekening, producten en prijzen, en hoe u bereikbaar bent. Dezelfde pagina als de QR-code.",
   "See it": "Bekijken",
-  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles voor de klant op één plek: afdrukken of opslaan als PDF (met voorblad en QR-code), of de link voor de klant kopiëren voor een e-mail of sms."
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles voor de klant op één plek: afdrukken of opslaan als PDF (met voorblad en QR-code), of de link voor de klant kopiëren voor een e-mail of sms.",
+  "Older version from {}": "Oudere versie van {}",
+  "An older version: save (Ctrl+S) to make it the current one": "Een oudere versie: opslaan (Ctrl+S) om er de huidige van te maken",
+  "You have changed an older version of \"{}\". Save it as the current version?": "U hebt een oudere versie van \"{}\" gewijzigd. Opslaan als de huidige versie?",
+  "Cover with QR code": "Voorblad met QR-code",
+  "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Eerst een voorblad, met het totaal en een QR-code die de offerte op de telefoon van de klant opent",
+  "Include": "Meenemen"
 };

@@ -963,5 +963,11 @@
   "Link for the customer": "Linkki asiakkaalle",
   "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Tarjous asiakkaan puhelimessa: piirros, tuotteet ja hinnat sekä yhteystietosi. Sama sivu kuin QR-koodi.",
   "See it": "Katso",
-  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Kaikki asiakkaalle yhdessä paikassa: tulosta tai tallenna PDF:ksi (kansilehdellä ja QR-koodilla), tai kopioi asiakkaan linkki sähköpostiin tai tekstiviestiin."
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Kaikki asiakkaalle yhdessä paikassa: tulosta tai tallenna PDF:ksi (kansilehdellä ja QR-koodilla), tai kopioi asiakkaan linkki sähköpostiin tai tekstiviestiin.",
+  "Older version from {}": "Vanhempi versio ajalta {}",
+  "An older version: save (Ctrl+S) to make it the current one": "Vanhempi versio: tallenna (Ctrl+S), niin siitä tulee nykyinen",
+  "You have changed an older version of \"{}\". Save it as the current version?": "Olet muuttanut projektin \"{}\" vanhempaa versiota. Tallennetaanko se nykyiseksi versioksi?",
+  "Cover with QR code": "Kansilehti QR-koodilla",
+  "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Ensin kansilehti, jossa summa ja QR-koodi, joka avaa tarjouksen asiakkaan puhelimessa",
+  "Include": "Sisällytä"
 };
