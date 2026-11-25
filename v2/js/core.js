@@ -49,6 +49,8 @@
     const m = /^([a-z0-9]+)?((?:[.#][\w-]+)*)$/i.exec(tag);
     const el = document.createElement(m[1] || 'div');
     (m[2].match(/[.#][\w-]+/g) || []).forEach((s) => (s[0] === '#' ? (el.id = s.slice(1)) : el.classList.add(s.slice(1))));
+    // no browser suggestions (earlier searches, autofill) under HiFi Planner's own fields; a field can still ask for them
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') { el.setAttribute('autocomplete', 'off'); if (props && props.type === 'search') { el.spellcheck = false; el.setAttribute('autocorrect', 'off'); el.setAttribute('autocapitalize', 'off'); } }
     for (const k in props || {}) {
       const v = props[k];
       if (v == null || v === false) continue;
