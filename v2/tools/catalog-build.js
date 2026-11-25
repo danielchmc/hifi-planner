@@ -237,11 +237,17 @@ if (fs.existsSync(ownFile)) {
     if (m) {
       const w = SM.webFacts(m, { single: !!(o.link && o.link.single), cable: !!o.cable, hk });
       if (w.vars) p.vars = w.vars; if (w.url) p.url = w.url; p.site = w.site;
-      // as the sync: a price is held (old price and discount kept, listed for a human to check) when it is implausible
+      if (w.sku) p.sku = w.sku; // one sellable item: the till's SKU (the variant's), the website product number stays in site
+      p.live = 1; // price, discount and variants come from the website every build (the Editor and Publish never set them)
+      // An implausible price is held for a human to check, but only ever upwards: HiFi Planner never shows a price below the
+      // website's. A price that rose (a campaign ended) is always taken at once; a price that fell a lot (often a wrong match)
+      // keeps the old, higher price without any discount until it is checked. A too-high price costs nothing at the till; a
+      // too-low one is a promise to the customer.
       const prev = prevById.get(o.id) || {};
       const why = o.sku && skuCount[U(o.sku)] > 1 && SM.norm(m.s.brand + m.s.model) !== SM.norm(o.brand + o.name) ? 'SKU is used by several catalogue products'
-        : prev.price > 0 && (w.price < prev.price * 0.65 || w.price > prev.price * 1.6) ? 'large change (over -35% / +60%)' : '';
-      if (why) { p.price = prev.price; if (prev.was) p.was = prev.was; if (w.price !== prev.price) RT.held.push(o.brand + ' ' + o.name + ': ' + prev.price + ' kept, website ' + w.price + ' (' + why + ')'); }
+        : prev.price > 0 && w.price < prev.price * 0.65 ? 'large drop (over -35%)' : '';
+      const hold = why && prev.price > w.price;
+      if (hold) { p.price = prev.price; RT.held.push(o.brand + ' ' + o.name + ': ' + prev.price + ' kept (no discount shown), website ' + w.price + ' (' + why + ')'); }
       else { p.price = w.price; if (w.was) p.was = w.was; }
     } else if (o.frozen) {
       Object.assign(p, o.frozen); RT.frozen++;
@@ -314,7 +320,7 @@ if (fs.existsSync(ownFile)) {
     const m = match.byLink({ site: w.sku }); if (!m) continue;
     const isCable = w.kind === 'cable' && w.facets.conn;
     const f = SM.webFacts(m, { single: false, cable: !!isCable, hk });
-    const p = { id: 'w-' + w.sku.toLowerCase(), brand: w.brand, name: w.model, sku: w.sku, price: f.price, site: w.sku, web: 1 };
+    const p = { id: 'w-' + w.sku.toLowerCase(), brand: w.brand, name: w.model, sku: f.sku || w.sku, price: f.price, site: w.sku, web: 1, live: 1 };
     p.cats = (S.TYPE_CABLE[w.type.da] ? ['Cable'] : S.TYPE_CATS[w.type.da]) || []; // the old categories (kept in lcats): the Editor's port suggestions use them
     if (f.was) p.was = f.was; if (f.vars) p.vars = f.vars; if (f.url) p.url = f.url;
     const im = (w.variants.find((v) => v.img) || {}).img; p.img = im ? [im] : [];
@@ -375,7 +381,12 @@ if (fs.existsSync(ownFile)) {
   const tree = [...cats.values()].filter((c) => used[c.id]).map((c) => ({ id: c.id, title: c.title, en: EN[c.id] || c.en || c.title, parent: c.parent && cats.has(c.parent) ? c.parent : null, n: used[c.id] }))
     .sort((a, b) => secRank(a.id) - secRank(b.id) || b.n - a.n || a.title.localeCompare(b.title, 'da'));
   // the app's catalogue: products (one per line; the Editor's Publish rewrites this file too) and the category tree
-  fs.writeFileSync(path.join(OUT, 'app-products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/ (and by Publish in the Editor until the next build). The app\'s catalogue. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  // pricesAt: when the website's prices were read (the mirror's listing). The app hides campaign prices when it is too old, and
+  // open tabs check build/stamp.json every few minutes and load a newer catalogue. It sits before the products in the file, so
+  // Publish in the Editor (which rewrites only the products) keeps it.
+  const pricesAt = (readJson(path.join(M, 'index.json'), {}) || {}).listingAt || '';
+  fs.writeFileSync(path.join(OUT, 'app-products.js'), '/* Written by tools/catalog-build.js from data/own.js and mirror/ (and by Publish in the Editor until the next build). The app\'s catalogue. */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.pricesAt = ' + JSON.stringify(pricesAt) + ';\nwindow.HP_DATA.products = [\n' + next.map((p) => JSON.stringify(p)).join(',\n') + '\n];\n');
+  fs.writeFileSync(path.join(OUT, 'stamp.json'), JSON.stringify({ pricesAt, built: new Date().toISOString() }) + '\n');
   fs.writeFileSync(path.join(OUT, 'categories.js'), '/* Written by tools/catalog-build.js: the category tree (the website\'s, plus HiFi Planner\'s own from tools/taxonomy.js). */\nwindow.HP_DATA = window.HP_DATA || {};\nwindow.HP_DATA.categories = ' + JSON.stringify(tree) + ';\n');
   try { fs.unlinkSync(path.join(OUT, 'next.js')); } catch (e) { /* gone already */ }
   // systems: the website's bundles whose parts are all in the app catalogue, as parts lists of app product ids. The sidebar's
@@ -474,7 +485,7 @@ if (fs.existsSync(ownFile)) {
     P('Since the previous build: ' + RT.changes.prices.length + ' price changes, ' + RT.changes.added.length + ' products added, ' + RT.changes.removed.length + ' removed.', '');
     [['Price changes', RT.changes.prices], ['Added', RT.changes.added], ['Removed', RT.changes.removed]].forEach(([k, l]) => { if (l.length) { P('**' + k + '**', ''); l.slice(0, 30).forEach((x) => P('- ' + x)); if (l.length > 30) P('- … ' + (l.length - 30) + ' more'); P(''); } });
   }
-  if (RT.held.length) { P('**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)', ''); RT.held.forEach((x) => P('- ' + x)); P(''); }
+  if (RT.held.length) { P('**Held prices** (a big price drop is not taken until checked: the old, higher price is shown without a discount; a price rise is always taken at once)', ''); RT.held.forEach((x) => P('- ' + x)); P(''); }
   if (Object.keys(fields).length) {
     P('| Field | Products that differ |', '|---|---:|', ...Object.entries(fields).sort((a, b) => b[1] - a[1]).map(([k, n]) => '| ' + k + ' | ' + n + ' |'), '');
     Object.entries(ex).forEach(([k, l]) => { P('**' + k + '**', ''); l.slice(0, 12).forEach((x) => P('- ' + x)); if (l.length > 12) P('- … ' + (l.length - 12) + ' more'); P(''); });

@@ -242,6 +242,7 @@
       const pr = HP.priceOf(p, it), key = p.id + '|' + (pr.label || ''), vv = HP.variantOf(p, it);
       const r = rows.get(key) || { key, name: p.brand + ' ' + (it && it.len && pr.label ? stripLen(p.name) + ' ' + pr.label : p.name + (pr.label ? ' (' + pr.label + ')' : '')), url: HP.productUrl(p, it), img: (HP.imagesOf(p, it) || [])[0] || (p.img || [])[0] || '', sku: (vv && vv.sku) || p.sku || '', price: pr.price, was: pr.was, qty: 0, cable };
       if (perM) { r.cableM = true; r.name = p.brand + ' ' + (stripLen(p.name) || p.name); } // sold by the metre: qty is metres
+      if (!(pr.price > 0)) r.noPrice = true; // no price from the website (gone, or not linked): shown as "Ingen pris", never as 0,-
       r.qty++; rows.set(key, r);
     };
     // systems: every complete set of cards placed from one bundle (sy) is one line at the bundle price, its parts listed under it;
@@ -297,7 +298,7 @@
     list.forEach((r) => {
       const o = L[r.key] || {};
       r.list = r.price; r.base = Math.max(r.was || 0, r.price);
-      if (o.p != null && o.p >= 0) { r.price = o.p; r.custom = true; }
+      if (o.p != null && o.p >= 0) { r.price = o.p; r.custom = true; r.noPrice = false; } // a price set by hand counts
       // the line discount is kept as a percentage (r), as Business Central keeps Line Discount %: the amount follows the quantity and
       // the unit price, so a discount survives a card being added, removed or deleted and added back (d: kroner, before 2026-11-24)
       const g = r.price * r.qty, dk = o.r != null ? Math.round(g * o.r) / 100 : o.d || 0;
@@ -364,7 +365,7 @@
     }
     if (it.kind === 'prices') {
       const { list, total, saving, sub, tdisc, tpct } = priceRows();
-      const pct = (r) => Math.round((1 - r.amount / (r.was * r.qty)) * 100);
+      const pct = (r) => Math.round((1 - r.amount / (r.was * r.qty)) * 100), noPrice = list.filter((r) => r.noPrice).length;
       // rooms drawn in CI mode: what each room gets (marks and product cards inside it), with a subtotal (cables are not tied to a room)
       const roomRows = () => { const z = legendRows().zones; return z.length ? [h('.lsec', null, t('Per room (floor plan)', 'Pr. rum (plantegning)')), h('table.rooms', null, z.map((r) => h('tr', null,
         h('td.zn', null, r.name === null ? t('Outside the rooms', 'Uden for rum') : r.name || t('Room', 'Rum')), h('td.zp', null, r.parts || '–'), h('td.p', null, r.total ? HP.money(r.total) : ''))))] : null; };
@@ -378,13 +379,16 @@
         list.length ? h('table', null, list.map((r) => h('tr', null, h('td.q', null, r.cableM ? r.qty + ' m' : r.qty > 1 ? r.qty + '×' : ''),
           h('td', null, r.sys ? h('span.systag', null, 'System') : null, plink(r.url, '', r.name), r.was ? h('span.save', null, t('Save ', 'Spar ') + pct(r) + '%') : null,
             r.custom ? h('span.pp-tag.no-print', { title: t('Price adjustment: ', 'Prisjustering: ') + HP.money(r.price) + (r.ldisc ? t(', discount ', ', rabat ') + HP.money(r.ldisc) : '') }, t('custom', 'tilpasset')) : null, r.sys ? h('.sysparts', null, r.parts) : null),
-          h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.amount))))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
+          h('td.p', null, r.noPrice ? h('span.noprice', null, t('No price', 'Ingen pris')) : [r.was ? h('s', null, HP.money(r.was * r.qty)) : null, HP.money(r.amount)])))) : h('.muted', null, t('No products yet', 'Ingen produkter endnu')),
         roomRows(),
         tdisc ? h('.prices-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('span', null, HP.money(sub))) : null,
         tdisc ? h('.prices-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('span', null, '−' + HP.money(tdisc))) : null,
         h('.prices-total', null, h('span', null, t('Total', 'Total')), h('span', null, HP.money(total))),
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
-        h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()),
+        h('.prices-note', null, t('Prices from hifiklubben.dk on ', 'Priser fra hifiklubben.dk pr. ') + HP.pricesStamp() + (HP.pricesGuarded() ? t('. Campaign prices are not shown.', '. Kampagnepriser er ikke vist.') : '')),
+        // on screen only: the prices are too old to trust a campaign price (HP.STALE_HOURS)
+        HP.pricesGuarded() ? h('.pl-stale.no-print', null, icon('warn', 13), h('span', null, t('Prices are {} old: campaign prices are not shown. Check the till.', 'Priserne er {} gamle: kampagnepriser vises ikke. Tjek kassen.').replace('{}', HP.pricesAgeText()))) : null,
+        noPrice ? h('.pl-stale.no-print', null, icon('warn', 13), h('span', null, noPrice + t(' item(s) without a price are not in the total. Check the till.', ' vare(r) uden pris er ikke med i totalen. Tjek kassen.'))) : null,
         // on screen only: connections still without a cable, and the way to complete the proposal
         nMissing() ? h('button.pl-nudge.no-print', { onpointerdown: (e) => e.stopPropagation(), onclick: () => HP.complete.open() }, icon('cable', 13),
           nMissing() + ' ' + t(nMissing() === 1 ? 'connection without a cable' : 'connections without a cable', nMissing() === 1 ? 'forbindelse uden kabel' : 'forbindelser uden kabel'), h('b', null, t('Related products →', 'Relaterede produkter →'))) : null);

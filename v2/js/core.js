@@ -256,13 +256,43 @@
   // the test page (next.html) keeps its own drafts, so trying it out never mixes with the real catalogue's drafts
   HP.NEXT = !!DATA.categories; // the generated catalogue (build/app-products.js + build/categories.js) is loaded
   HP.DRAFT_KEY = window.HP_NEXT ? 'draft-next' : 'draft';
+  /* ---------- how old the prices are ----------
+     pricesAt: when the website's prices were read (build/app-products.js, from the mirror's listing). When they are older than
+     STALE_HOURS, campaign prices are not shown anywhere: every price that has a before-price (was) shows the before-price instead,
+     with no discount. An ended campaign must never be promised to a customer from old data; a campaign that started since the last
+     read only shows up later, and the till gives the customer the lower price anyway. Open tabs load a newer catalogue by
+     themselves (HP.checkCatalogue, every 5 minutes). */
+  HP.STALE_HOURS = 3;
+  const WEB_KEYS = ['price', 'was', 'vars', 'lens', 'url', 'sku', 'gone', 'goneWhy', 'live'];
+  HP.pricesAt = () => { const s = DATA.pricesAt || (DATA.priceSync && DATA.priceSync.date); const d = s ? new Date(s) : null; return d && !isNaN(d) ? d : null; };
+  HP.pricesAgeH = () => { const d = HP.pricesAt(); return d ? (Date.now() - d) / 3600000 : Infinity; };
+  HP.pricesStale = () => !!DATA.products && HP.pricesAgeH() > HP.STALE_HOURS;
+  HP.pricesStamp = () => { const d = HP.pricesAt(); return d ? d.toLocaleString(HP.locale ? HP.locale() : 'da-DK', { day: 'numeric', month: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '?'; };
+  HP.pricesAgeText = () => { const a = HP.pricesAgeH(); return a === Infinity ? '?' : a < 48 ? Math.round(a) + ' ' + HP.t('hours', 'timer') : Math.round(a / 24) + ' ' + HP.t('days', 'dage'); };
+  // campaign prices off: the before-price becomes the price (the campaign price is kept aside, not enumerable, so never saved)
+  const unsale = (o) => { if (o && o.was > o.price && !o._sale) { Object.defineProperty(o, '_sale', { value: { price: o.price, was: o.was }, configurable: true }); o.price = o.was; delete o.was; } };
+  let guarded = false;
+  function guardPrices() {
+    guarded = HP.pricesStale();
+    if (!guarded) return;
+    cat.list.forEach((p) => { unsale(p); (p.vars || []).forEach(unsale); (p.lens || []).forEach(unsale); });
+    (DATA.bundles || []).forEach(unsale);
+  }
+  HP.pricesGuarded = () => guarded;
   const cat = (HP.catalog = { list: [], byId: {}, templates: [], draft: Object.assign(emptyDraft(), LS.get(HP.DRAFT_KEY, {})), version: 0 });
   cat.rebuild = () => {
     fam = null; grp = null; // cable families and length groups (cat.family, cat.cableGroup) are worked out again
     const d = cat.draft, base = DATA.products || [];
     const seen = new Set();
     cat.list = [];
-    base.forEach((p) => { if (d.delProducts.includes(p.id)) return; seen.add(p.id); cat.list.push(d.products[p.id] || p); });
+    base.forEach((p) => {
+      if (d.delProducts.includes(p.id)) return; seen.add(p.id);
+      const dp = d.products[p.id];
+      // an edited product (an admin's draft) still takes its price, discount and variants from the published catalogue when the
+      // website owns them (live): a draft is a copy from the day it was edited, and must never bring back an old price
+      if (dp && p.live && (!dp.site || String(dp.site).toUpperCase() === String(p.site || '').toUpperCase())) WEB_KEYS.forEach((k) => { if (p[k] !== undefined) dp[k] = p[k]; else delete dp[k]; });
+      cat.list.push(dp || p);
+    });
     Object.values(d.products).forEach((p) => { if (!seen.has(p.id)) cat.list.unshift(p); });
     cat.byId = {};
     cat.list.forEach((p) => {
@@ -270,12 +300,13 @@
       // connectors from the strict list (old values such as 'coax', 'sub' or plain 'usb' are mapped; see js/ports.js)
       if (HP.ports) ['in', 'out'].forEach((side) => (p[side] || []).forEach((x) => { x.conn = HP.ports.conn(x.conn, x, side); }));
       if (HP.ports && p.cable) { const e = HP.ports.cableEnds(p); if (e) p._ends = e; }
-      p._hay = [p.brand, p.name, p.sku, ...(p._ends || []).map((c) => (HP.ports.CONNECTORS[c] || c) + ' ' + c), ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
+      p._hay = [p.brand, p.name, p.sku, p.site || '', ...(p._ends || []).map((c) => (HP.ports.CONNECTORS[c] || c) + ' ' + c), ...(p.vars || []).map((v) => v.sku + ' ' + v.label + ' ' + (v.key || '')), ...(p.cats || []), ...(p.in || []).map((x) => x.label), ...(p.out || []).map((x) => x.label),
         p.bt ? 'bluetooth bt' : '', p.wifi ? 'wifi wi-fi' : '', p.ct || '', (p.cats || []).join(' ').replace(/Receivers/g, 'Recievers')].join(' ').toLowerCase();
     });
     const tb = (DATA.templates || []).filter((t) => !d.delTemplates.includes(t.id)).map((t) => d.templates[t.id] || t);
     Object.values(d.templates).forEach((t) => { if (!tb.some((x) => x.id === t.id)) tb.push(t); });
     cat.templates = tb;
+    guardPrices();
     cat.version++;
   };
   // products merged into another one (old id → the product it became), so older drawings, links and Shortcuts still find them
@@ -386,7 +417,9 @@
   cat.systemName = (b) => (b.model.toLowerCase().startsWith(b.brand.toLowerCase()) ? b.model : b.brand + ' ' + b.model);
   cat.removeTemplate = (id) => { delete cat.draft.templates[id]; if ((DATA.templates || []).some((t) => t.id === id)) cat.draft.delTemplates.push(id); cat.saveDraft(); };
   cat.clearDraft = () => { cat.draft = emptyDraft(); cat.saveDraft(); };
-  cat.clean = (p) => { const c = Object.assign({}, p); delete c._hay; delete c._ends; return c; };
+  // a product as stored: without the search text, and with its campaign prices back if old prices switched them off (guardPrices)
+  const unguard = (o) => (o && o._sale ? Object.assign({}, o, o._sale) : o);
+  cat.clean = (p) => { const c = Object.assign({}, p, p._sale || {}); delete c._hay; delete c._ends; if (c.vars) c.vars = c.vars.map(unguard); if (c.lens) c.lens = c.lens.map(unguard); return c; };
   cat.rebuild();
 
   HP.CAT_TREE = [
@@ -565,7 +598,28 @@
       catch (e) { HP.toast(HP.t('That link could not be opened.', 'Linket kunne ikke åbnes.'), { kind: 'err' }); return false; }
     },
   };
-  HP.priceSyncText = () => { const ps = DATA.priceSync; if (!ps || !ps.date) return ''; const d = new Date(ps.date); return HP.t('Prices synced with hifiklubben.dk ', 'Priser synkroniseret med hifiklubben.dk ') + d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
+  HP.priceSyncText = () => HP.pricesAt() ? HP.t('Prices read from hifiklubben.dk ', 'Priser hentet fra hifiklubben.dk ') + HP.pricesStamp() : '';
+  /* Open tabs stay up to date: every 5 minutes (and when the tab comes back into view) build/stamp.json says when the newest
+     catalogue's prices were read; when that is newer than the loaded one, the catalogue is loaded again in place (no reload, the
+     drawing stays) and everything is redrawn. Once a minute the age is checked, so campaign prices go off when they get too old. */
+  const loadScript = (src) => new Promise((ok, no) => { const el = document.createElement('script'); el.src = src + (src.includes('?') ? '&' : '?') + 't=' + Date.now(); el.onload = () => { el.remove(); ok(); }; el.onerror = () => { el.remove(); no(new Error(src)); }; document.head.append(el); });
+  let checking = false;
+  HP.checkCatalogue = async (quiet) => {
+    if (checking || !DATA.categories || location.protocol === 'file:') return false; // only the generated catalogue (build/) has a stamp
+    checking = true;
+    try {
+      const r = await fetch('build/stamp.json?t=' + Date.now(), { cache: 'no-store' }); if (!r.ok) return false;
+      const st = await r.json(), now = HP.pricesAt(), at = st.pricesAt ? new Date(st.pricesAt) : null;
+      if (!at || isNaN(at) || (now && at <= now)) return false;
+      await loadScript('build/app-products.js'); await loadScript('build/bundles.js').catch(() => {});
+      sysBy.clear(); cat.rebuild(); HP.emit('catalog'); HP.emit('prices');
+      if (!quiet) HP.toast(HP.t('Prices updated from hifiklubben.dk (read ', 'Priserne er opdateret fra hifiklubben.dk (hentet ') + HP.pricesStamp() + ').', { kind: 'ok', ms: 5000 });
+      return true;
+    } catch (e) { return false; } finally { checking = false; }
+  };
+  setInterval(() => HP.checkCatalogue(), 5 * 60000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) HP.checkCatalogue(); });
+  setInterval(() => { if (HP.pricesStale() !== guarded) { cat.rebuild(); HP.emit('catalog'); } HP.emit('prices'); }, 60000);
 
   /* ---------- roles ---------- */
   HP.isAdmin = () => !!LS.get('admin', false);

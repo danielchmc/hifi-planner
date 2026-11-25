@@ -65,7 +65,9 @@ function webFacts(m, { single, cable, hk }) {
   const colours = (!cable || named) && !m.exactVariant && m.s.variants.length > 1 && new Set(m.s.variants.map((v) => v.label)).size > 1;
   const vars = colours ? m.s.variants.map((v) => { const o = { sku: v.sku, label: v.label || v.sku, price: Math.round(v.price * half) }; if (v.key) o.key = v.key; if (v.hex) o.hex = v.hex; if (v.before > v.price) o.was = Math.round(v.before * half); if (v.url) o.url = v.url; const u = uuidOf(v.image); if (u) o.img = hk(u); return o; }).sort((a, b) => a.price - b.price || a.label.localeCompare(b.label)) : null;
   const price = Math.round(m.v.price * half), was = m.v.before > m.v.price ? Math.round(m.v.before * half) : 0;
-  return { site: m.s.sku, url: m.v.url || m.s.url, price, was, vars, half: half !== 1 };
+  // the SKU the till sells: the variant's (HISM2PRO), not the website product number (HISM2), when the card is one sellable item
+  const one = !vars && (m.exactVariant || m.s.variants.length === 1);
+  return { site: m.s.sku, url: m.v.url || m.s.url, price, was, vars, half: half !== 1, sku: one ? m.v.sku : '' };
 }
 
 module.exports = { norm, uuidOf, fromApi, sellable, matcher, webFacts };

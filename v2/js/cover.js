@@ -16,6 +16,9 @@
   const longDate = (d) => { const m = /^(\d+)\/(\d+)\/(\d+)$/.exec(d || HP.today()); return m ? new Date(+m[3], +m[2] - 1, +m[1]).toLocaleDateString(HP.locale(), { day: 'numeric', month: 'long', year: 'numeric' }) : d; };
   const firstName = (s) => String(s || '').trim().split(/\s+/)[0] || '';
 
+  // when the prices were read from the website (not today's date: the prices may be older than the printout)
+  const priceNote = () => t('Prices from hifiklubben.dk on ', 'Priser fra hifiklubben.dk pr. ') + HP.pricesStamp() + t('. Subject to misprints and stock.', '. Med forbehold for trykfejl og udsolgte varer.')
+    + (HP.pricesGuarded() ? t(' Campaign prices are not shown.', ' Kampagnepriser er ikke vist.') : '');
   // the cover itself: also used, without the QR code, at the top of the customer view ({ view: true })
   function build(o) {
     const d = store.doc, cv = d.cv || {}, sh = cv.sh || [], { list, total, saving, sub, tdisc, tpct } = C().priceRows();
@@ -27,7 +30,7 @@
         o && o.view ? h('td.th', null, r.img ? HP.imgEl(r.img, 'thumb', { loading: 'lazy' }) : null) : null,
         h('td.q', null, r.qty + (r.cableM ? ' m' : '×')),
         h('td', null, r.url ? h('a.nm', { href: r.url, target: '_blank', rel: 'noopener' }, r.name, h('span.cv-go', null, ' ↗')) : h('span.nm', null, r.name), r.sys ? h('small', null, r.parts) : null, r.was ? h('em', null, t('Save ', 'Spar ') + pct(r) + '%') : null),
-        h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.amount)))))),
+        h('td.p', null, r.noPrice ? h('span', null, t('Price on request', 'Pris oplyses i butikken')) : [r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.amount))])))),
       tdisc ? h('.cv-total.cv-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('b', null, HP.money(sub))) : null,
       tdisc ? h('.cv-total.cv-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('b', null, '−' + HP.money(tdisc))) : null,
       h('.cv-total', null, h('span', null, t('Total', 'Total')), h('b', null, HP.money(total))),
@@ -41,7 +44,7 @@
           o.link ? h('a.cv-link', { href: o.link, target: '_blank', rel: 'noopener' }, t('Or open it here: see the proposal online ↗', 'Eller åbn det her: se tilbuddet online ↗')) : null))
           : o && o.qrTooBig ? h('.cv-qr.none', null, h('small', null, t('Ask your adviser for a link to this proposal.', 'Bed din rådgiver om et link til tilbuddet.')),
             o.link ? h('a.cv-link', { href: o.link, target: '_blank', rel: 'noopener' }, t('In the PDF: see the proposal online ↗', 'I PDF\'en: se tilbuddet online ↗')) : null) : null),
-      h('.cv-note', null, t('Prices valid on ', 'Priser gælder d. ') + (cv.d || HP.today()) + t('. Subject to misprints and stock.', '. Med forbehold for trykfejl og udsolgte varer.')));
+      h('.cv-note', null, priceNote()));
   }
 
   // what the cover needs to know, kept in the proposal (and in its links)
@@ -67,7 +70,9 @@
     const withRel = h('input', { type: 'checkbox', checked: LS.get('coverRel', true) });
     const st = () => { LS.set('coverRel', withRel.checked); stamp(name.value.trim(), withRel.checked); };
     const go = async () => {
-      LS.set('cover', withCover.checked); st(); close();
+      LS.set('cover', withCover.checked); close();
+      await HP.checkCatalogue(true); // the newest prices, if a newer catalogue is out since the page was opened
+      st();
       { // what the proposal is worth: its total, how many products, and whether it has a system or a floor plan
         const pr = C().priceRows(), d = store.doc, prods = d.items.filter((i) => i.kind === 'product');
         HP.stat('Print', { forside: withCover.checked ? 'ja' : 'nej', relaterede: withRel.checked ? 'ja' : 'nej',
@@ -81,6 +86,8 @@
       h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
       h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
       h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.')),
+      // old prices: campaign prices are off, and the seller should check the till
+      HP.pricesGuarded() ? h('.note-box.warn', null, icon('warn', 15), h('span', null, t('The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.', 'Priserne er {} gamle (hentet {}), så kampagnepriser vises ikke. Tjek priserne i kassen, før du lover dem.').replace('{}', HP.pricesAgeText()).replace('{}', HP.pricesStamp()))) : null,
       // a reminder before printing: the proposal has price adjustments (e.g. a colleague's link or an older proposal)
       (() => { const ps = HP.panels.priceState(); return ps && ps.active ? h('.pp-note', null, icon('tag', 14), h('span', null, t('This proposal has price adjustments: ', 'Tilbuddet har prisjusteringer: '), h('b', null, ps.text), t(' in all', ' i alt')),
         h('button.linkbtn', { onclick: () => { close(); HP.panels.projectPrices(); } }, t('Edit', 'Rediger'))) : null; })()),
@@ -166,7 +173,7 @@
     page.append(h('footer.view-foot', null,
       h('small', null, t('Your adviser', 'Din rådgiver')), h('b', null, cv.s || shop), h('span', null, shop),
       sh[1] ? h('span', null, t('Tel. ', 'Tlf. ') + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null, reach(),
-      h('p', null, t('Prices valid on ', 'Priserne gælder d. ') + longDate(cv.d) + t('. Subject to misprints and stock.', '. Med forbehold for trykfejl og udsolgte varer.'))));
+      h('p', null, priceNote())));
     let again = 0;
     const later = () => { clearTimeout(again); again = setTimeout(draw, 250); };
     if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', later);

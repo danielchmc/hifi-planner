@@ -356,7 +356,16 @@
     const dels = new Set(d.delProducts), edits = Object.values(d.products).map(cat.clean);
     const ownOut = own.filter((o) => !dels.has(o.id)).map((o) => (d.products[o.id] ? HP.toOwn(cat.clean(d.products[o.id]), o) : o));
     edits.forEach((p) => { if (!byId.has(p.id)) ownOut.unshift(HP.toOwn(p, null)); });
-    const appOut = app.filter((p) => !dels.has(p.id)).map((p) => (d.products[p.id] ? Object.assign(cat.clean(d.products[p.id]), { wc: p.wc }) : p));
+    // an edited product takes the Editor's fields, but its price, discount, variants and SKU stay as in the newest catalogue on
+    // GitHub when the website owns them (live): a draft may be days old, and Publish must never bring an old price back
+    const WEB = ['price', 'was', 'vars', 'lens', 'url', 'sku', 'gone', 'goneWhy', 'live'];
+    const sameSite = (a, b) => !a.site || String(a.site).toUpperCase() === String(b.site || '').toUpperCase();
+    const appOut = app.filter((p) => !dels.has(p.id)).map((p) => {
+      if (!d.products[p.id]) return p;
+      const o = Object.assign(cat.clean(d.products[p.id]), { wc: p.wc });
+      if (p.live && sameSite(o, p)) WEB.forEach((k) => { if (p[k] !== undefined) o[k] = p[k]; else delete o[k]; });
+      return o;
+    });
     edits.forEach((p) => { if (!app.some((x) => x.id === p.id)) appOut.unshift(p); });
     const enc = (s) => b64(new TextEncoder().encode(s)), who = 'HiFi Planner (shop ' + HP.shop() + ')';
     const lines = (arr) => '[\n' + arr.map((x) => JSON.stringify(x)).join(',\n') + '\n]';

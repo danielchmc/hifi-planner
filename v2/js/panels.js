@@ -442,6 +442,10 @@
     const savedLbl = h('button.tb-saved', { type: 'button', hidden: true, title: t('Version history', 'Versionshistorik'), onclick: () => Pn.versions() });
     const drawSaved = () => { const at = Pn.savedAt(); savedLbl.hidden = !at; if (at) savedLbl.textContent = t('Saved', 'Gemt') + ' ' + Pn.ago(at); };
     setInterval(drawSaved, 30000);
+    // old prices (more than HP.STALE_HOURS): a warning chip; campaign prices are off until a newer catalogue is loaded
+    const staleTxt = h('span'), staleChip = h('button.tb-stale', { type: 'button', hidden: true, onclick: () => Pn.priceAge() }, icon('warn', 13), staleTxt);
+    const drawStale = () => { const on = HP.pricesGuarded(); staleChip.hidden = !on; if (on) { staleTxt.textContent = t('Prices {} old', 'Priser {} gamle').replace('{}', HP.pricesAgeText()); staleChip.title = t('Read from hifiklubben.dk {}. Campaign prices are not shown until newer prices are loaded. Click for more.', 'Hentet fra hifiklubben.dk {}. Kampagnepriser vises ikke, før nyere priser er hentet. Klik for mere.').replace('{}', HP.pricesStamp()); } };
+    HP.on('prices', drawStale);
     const bar = h('header#topbar', null,
       h('.tb-left', null,
         h('button.tb-btn.primary#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus', 15), h('span', null, t('Products', 'Produkter'))),
@@ -449,7 +453,7 @@
         h('.tb-grp#tb-filegrp', null, file), sep(),
         h('.tb-grp#tb-edit', null, undo, redo, histBtn), sep(),
         h('.tb-grp#tb-insert', null, text, prices, ci)),
-      h('.tb-mid', null, shopCrumb, name, unsavedDot, savedLbl, ppChip),
+      h('.tb-mid', null, shopCrumb, name, unsavedDot, savedLbl, ppChip, staleChip),
       h('.tb-right', null,
         h('.tb-grp#tb-view', null, layers, scaleBtn), sep(),
         h('.tb-grp#tb-admingrp', null, admin),
@@ -469,7 +473,7 @@
       scaleTxt.textContent = Math.round((store.doc.cardScale || 1) * 100) + '%';
       if (document.activeElement !== name) name.value = store.doc.name || '';
       fitName();
-      unsavedDot.hidden = !Pn.unsaved(); drawSaved();
+      unsavedDot.hidden = !Pn.unsaved(); drawSaved(); drawStale();
       bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
       const n = cat.dirtyCount(); adminN.hidden = !n;
       admin.title = n ? t('Admin · ' + n + ' unpublished change(s)', 'Admin · ' + n + ' ikke-udgivne ændring(er)') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
@@ -847,6 +851,18 @@
     draw();
   };
 
+  /* ---------- how old the prices are (the warning chip in the top bar) ---------- */
+  Pn.priceAge = () => {
+    const status = h('p.muted');
+    const close = HP.modal({ title: t('Prices are {} old', 'Priserne er {} gamle').replace('{}', HP.pricesAgeText()), size: 'sm',
+      body: [h('p', null, t('HiFi Planner read the prices from hifiklubben.dk {}. They are normally read every hour.', 'HiFi Planner hentede priserne fra hifiklubben.dk {}. De hentes normalt hver time.').replace('{}', HP.pricesStamp())),
+        h('p', null, t('Until newer prices are in, campaign prices are not shown: every product shows its normal price, so no ended campaign is promised to a customer. Always check the price in the till before you promise it.', 'Indtil nyere priser er hentet, vises kampagnepriser ikke: alle varer står til normalpris, så en udløbet kampagne aldrig bliver lovet til en kunde. Tjek altid prisen i kassen, før du lover den.')),
+        status],
+      foot: [HP.isAdmin() && HP.editor && HP.editor.runPriceSync ? h('button.btn', { onclick: async () => { status.textContent = '…'; status.textContent = await HP.editor.runPriceSync(); } }, icon('rotate', 14), t('Read the prices now', 'Hent priserne nu')) : null,
+        h('button.btn', { onclick: async () => { status.textContent = '…'; const got = await HP.checkCatalogue(); status.textContent = got ? '' : t('No newer prices yet.', 'Ingen nyere priser endnu.'); if (got) close(); } }, t('Check again', 'Tjek igen')),
+        h('button.btn.primary', { onclick: () => close() }, t('OK', 'OK'))] });
+  };
+
   /* ---------- Historik: the undo steps as a list ----------
      Each step is named by comparing the drawing before and after it (added, deleted, moved, connected, cable, price…). */
   const KINDS = { text: ['text', 'tekst'], prices: ['price list', 'prisliste'], legend: ['legend', 'signaturforklaring'], plan: ['floor plan', 'plantegning'], zone: ['room', 'rum'], run: ['cable run', 'kabeltræk'], symbol: ['symbol', 'symbol'] };
@@ -1038,7 +1054,7 @@
           h('span.ly-th', null, thumb),
           h('span.ly-name', { title: r.label + (p && (p.sku || C().skuOf(it)) ? ' · ' + (C().skuOf(it) || p.sku) : '') },
             h('b', null, r.label), h('small', null, [r.mark ? r.qty + ' ' + t('marks', 'mærker') : null, v ? v.label : null, it.sy ? 'system' : null, p && p.gone ? t('discontinued', 'udgået') : null, it.hid ? t('hidden', 'skjult') : it.np ? t('not priced', 'ikke i pris') : null].filter(Boolean).join(' · '))),
-          p && !r.mark ? h('button.ly-price' + (pr && pr.custom ? '.custom' : ''), { title: t('Edit prices for this line', 'Rediger priser for denne linje'), onclick: (e) => { e.stopPropagation(); Pn.projectPrices(key); } }, priced && pr ? HP.money(pr.price) : '–') : h('span'),
+          p && !r.mark ? h('button.ly-price' + (pr && pr.custom ? '.custom' : ''), { title: t('Edit prices for this line', 'Rediger priser for denne linje'), onclick: (e) => { e.stopPropagation(); Pn.projectPrices(key); } }, priced && pr && !pr.noPrice ? HP.money(pr.price) : '–') : h('span'),
           !['plan', 'prices', 'legend'].includes(it.kind) ? h('button.icon-btn.sm.ly-hide' + (r.ids.every((id) => store.item(id).hid) ? '.off' : ''), { title: r.ids.every((id) => store.item(id).hid) ? t('Hidden (not drawn, printed or priced): click to show', 'Skjult (tegnes, printes og prissættes ikke): klik for at vise') : t('Hide: not drawn, printed or priced while hidden', 'Skjul: tegnes, printes og prissættes ikke, mens den er skjult'),
             onclick: (e) => { e.stopPropagation(); C().setHidden(r.ids, !r.ids.every((id) => store.item(id).hid)); } }, icon(r.ids.every((id) => store.item(id).hid) ? 'eyeoff' : 'eye', 13)) : h('span'),
           p ? h('button.icon-btn.sm.ly-np' + (it.np ? '' : '.on'), { title: it.np ? t('Not in the price list: click to count it', 'Ikke i prislisten: klik for at tælle den med') : t('In the price list: click to leave it out', 'I prislisten: klik for at udelade den'),

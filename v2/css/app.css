@@ -1422,3 +1422,10 @@ h2 { font-size: 15px; }
 @media (max-width: 1300px) { .tb-saved { display: none; } }
 #ctxmenu .mi.dim { opacity: .55; }
 .proj .ptag { margin-left: 8px; font-size: 11px; font-weight: 500; color: var(--muted); background: var(--panel2); padding: 1px 6px; border-radius: 999px; }
+/* old prices: the chip in the top bar, the band in the price list (screen only), and items without a price */
+.tb-stale { flex: none; display: inline-flex; align-items: center; gap: 5px; height: 26px; padding: 0 10px; border: 1px solid #e0a43a; border-radius: 999px; background: #fff5e0; color: #8a5300; font: 600 12px var(--ui); cursor: pointer; white-space: nowrap; }
+.tb-stale:hover { background: #ffecc2; }
+html[data-theme="dark"] .tb-stale { background: #3a2a0c; border-color: #8a5f12; color: #ffcf7a; }
+.pl-stale { display: flex; align-items: center; gap: 6px; margin-top: 6px; padding: 5px 8px; border-radius: var(--r-sm); background: #fff5e0; color: #8a5300; font-size: 11px; line-height: 1.35; }
+html[data-theme="dark"] .pl-stale { background: #3a2a0c; color: #ffcf7a; }
+.prices .noprice { color: #b3261e; font-weight: 600; font-size: .92em; }

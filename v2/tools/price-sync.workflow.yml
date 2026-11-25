@@ -1,22 +1,33 @@
-# HiFi Planner catalogue sync, every hour. Only the first step reads hifiklubben.dk (the listing and 60 product pages,
-# tools/mirror.js); the other steps work from what it stored: prices, discounts, colour variants, cable lengths, new and
-# discontinued products, Bluetooth/WiFi, the app catalogue (build/) and images. Copy this file into the repository as
-# .github/workflows/price-sync.yml.
+# HiFi Planner catalogue sync: mirrors hifiklubben.dk every hour (prices, discounts, colour variants, new and
+# discontinued products, Bluetooth/WiFi, images) and keeps a raw mirror of the website's product data in mirror/. Copy this file into the repository as .github/workflows/price-sync.yml.
 # Run it by hand under the repository's Actions tab -> "Catalogue sync" -> "Run workflow".
+#
+# Why it starts itself (2026-11-25): GitHub runs scheduled workflows only when it has capacity. The hourly schedule below fired
+# 3 times in 20 hours (23:3x, 08:48, 19:24 UTC), so prices were up to 10 hours old and an ended campaign price stayed in HiFi
+# Planner. Each run now ends by waiting until about an hour has passed since it started and then starting the next run itself
+# (a workflow_dispatch, which GitHub always runs). The schedule stays as a backstop that restarts the chain if it ever breaks.
+# Only one chain runs: the newest run carries it on (an older one that finds a later run unfinished stops). Waiting costs nothing on a public
+# repository. The app (js/core.js) hides campaign prices when the prices are more than 3 hours old, whatever happens here.
 name: Catalogue sync
 on:
   schedule:
-    - cron: "17 * * * *"   # every hour at :17
+    - cron: "17 * * * *"   # every hour at :17 (best effort by GitHub; the chain below does the real work)
+    - cron: "47 * * * *"
   workflow_dispatch:
     inputs:
       mirror_pages:
         description: "Product pages the website mirror reads this run (60 an hour reads every page about once a day)"
         default: "60"
+      chain:
+        description: "Start the next run after about an hour (keep this on)"
+        type: boolean
+        default: true
 permissions:
   contents: write
-concurrency: catalogue-sync
+  actions: write   # to start the next run (gh workflow run)
 jobs:
   sync:
+    concurrency: catalogue-sync   # one sync at a time (the wait in "next" is outside it)
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
@@ -30,30 +41,34 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --quiet pillow
-      - name: Mirror hifiklubben.dk (the only step that reads the website; raw data, see mirror/README.md)
-        continue-on-error: true   # if it fails, the sync below reads the listing from the website itself
+      - name: Sync catalogue from hifiklubben.dk
+        continue-on-error: true   # only data/price-sync.js comes from here since the switch to build/: never stop the build for it
         run: |
           APP=$([ -d v2/data ] && echo v2 || echo .)
           echo "APP=$APP" >> "$GITHUB_ENV"
+          node "$APP/tools/price-sync.js" "$APP/data" --pages 60
+      - name: Mirror hifiklubben.dk (raw website data, see mirror/README.md)
+        continue-on-error: true   # the mirror must never stop prices and images from being committed
+        run: |
+          APP=$([ -d v2/data ] && echo v2 || echo .)
           if [ -f "$APP/tools/mirror.js" ]; then node "$APP/tools/mirror.js" "$APP/mirror" --pages "${{ inputs.mirror_pages || '60' }}"
           else echo "::warning::$APP/tools/mirror.js is missing, the website mirror is not updated this run"; fi
-      - name: Sync catalogue (reads the mirror, not the website)
-        run: |
-          APP=$([ -d v2/data ] && echo v2 || echo .)
-          echo "APP=$APP" >> "$GITHUB_ENV"
-          node "$APP/tools/price-sync.js" "$APP/data" --mirror "$APP/mirror"
       - name: Build the app catalogue from data/own.js and the mirror (build/)
         continue-on-error: true
         run: |
+          APP=$([ -d v2/data ] && echo v2 || echo .)
           if [ -f "$APP/tools/migrate-connectors.js" ]; then node "$APP/tools/migrate-connectors.js" "$APP"; fi
           if [ -f "$APP/tools/catalog-build.js" ]; then node "$APP/tools/catalog-build.js" "$APP" && cat "$APP/build/report.md" >> "$GITHUB_STEP_SUMMARY"
           else echo "::warning::$APP/tools/catalog-build.js is missing"; fi
       - name: Copy new website images
+        continue-on-error: true
         run: |
+          APP=$([ -d v2/data ] && echo v2 || echo .)
           if [ -f "$APP/tools/mirror_images.py" ]; then python "$APP/tools/mirror_images.py" "$APP" --budget 400
           else echo "::warning::$APP/tools/mirror_images.py is missing, images are not copied this run"; fi
       - name: Commit
         run: |
+          APP=$([ -d v2/data ] && echo v2 || echo .)
           git config user.name "HiFi Planner catalogue sync"
           git config user.email "actions@users.noreply.github.com"
           git add "$APP/data"
@@ -62,5 +77,30 @@ jobs:
           [ -d "$APP/img/hk" ] && git add "$APP/img/hk" "$APP/img/hd/hk" || true
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           git commit -m "Catalogue sync from hifiklubben.dk"
-          git pull --rebase -X theirs
-          git push
+          # someone may push in between (a Publish from the Editor, a code update): try a few times rather than lose the prices
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs && git push && exit 0
+            echo "Push failed (attempt $i), trying again"; sleep $((i * 10))
+          done
+          exit 1
+  # A job of its own, outside the concurrency group, so its wait never holds up a run started by hand (Editor → Start sync).
+  next:
+    needs: sync
+    if: ${{ always() && (github.event_name == 'schedule' || inputs.chain != false) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 70
+    steps:
+      - name: Start the next run about an hour after this one started
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STARTED=$(date -d "$(gh run view "$GITHUB_RUN_ID" --repo "$GITHUB_REPOSITORY" --json createdAt --jq .createdAt)" +%s)
+          LEFT=$(( STARTED + 55*60 - $(date +%s) ))
+          if [ "$LEFT" -gt 0 ]; then echo "Waiting ${LEFT}s"; sleep "$LEFT"; fi
+          # the newest run carries the chain: if a later run exists that has not finished (started by hand, or by the schedule),
+          # that one starts the next, so there is only ever one chain
+          LATER=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow price-sync.yml --limit 20 --json databaseId,status \
+            --jq "[.[] | select(.databaseId > ${GITHUB_RUN_ID} and .status != \"completed\")] | length")
+          if [ "$LATER" != "0" ]; then echo "A later run carries on ($LATER): not starting one"; exit 0; fi
+          gh workflow run price-sync.yml --repo "$GITHUB_REPOSITORY" --ref main
+          echo "Started the next run"
