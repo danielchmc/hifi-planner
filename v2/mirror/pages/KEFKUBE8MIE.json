@@ -189,8 +189,8 @@
      "productCode": "KEFKUBE8MIEHGBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
      "inventoryStatusType": "notInStockAtpDate"
@@ -240,21 +240,21 @@
    {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 10335,
-     "priceFormatted": "10.335,-",
+     "price": 10128,
+     "priceFormatted": "10.128,-",
      "priceBefore": 11485,
      "priceBeforeFormatted": "11.485,-",
-     "priceSavingsFormatted": "1.150,-",
+     "priceSavingsFormatted": "1.357,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 10335,
+     "unitPrice": 10128,
      "unitPriceBefore": 11485
     },
     "image": "https://images.hifiklubben.com/image/dfc54499-c409-456a-87ab-046b83a4be89",
     "ribbons": [
      {
-      "text": "Spar 10%",
+      "text": "Spar 12%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -284,27 +284,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
+   "summary": "KEF Kube 8 tilføjer varm, slagkraftig og mærkbart dybere bas til KEF LSX-systemer, så musikken bliver fyldigere og mere omsluttende. De kompakte mål, det stilrene design og den stærke ydelse i små rum gør subwooferen nem at integrere i hjemmet. Fleksible justeringsmuligheder og en kontrolleret basgengivelse løfter lytteoplevelsen yderligere.",
    "headlines": {
-    "adds fuller, deeper and more immersive bass": {
-     "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
-     "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
+    "fuller, deeper and more immersive bass": {
+     "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med mere tyngde i bunden, større dybde og en fyldigere musikoplevelse.",
+     "simpleTitle": "Fyldigere, dybere og mere omsluttende bas",
      "bias": "positive",
-     "key": "bass_sound",
-     "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
+     "key": "fuller-deeper-bass",
+     "groupId": "7ac97333-b4b4-46f3-9e20-ca00e7ddb8ed"
     },
-    "compact design works well in small rooms": {
-     "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
-     "simpleTitle": "Det kompakte design fungerer godt i små rum",
+    "compact, discreet and stylish design": {
+     "sentimentAnalysis": "Det lille kabinet virker diskret og har samtidig et attraktivt og gennemført udtryk.",
+     "simpleTitle": "Kompakt, diskret og stilfuldt design",
      "bias": "positive",
-     "key": "compact_rooms",
-     "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
+     "key": "compact-stylish-design",
+     "groupId": "14b36582-20c5-4f79-b054-ab380b623edc"
+    },
+    "clear bass even at low volume and in small rooms": {
+     "sentimentAnalysis": "Basgengivelsen forbliver tydelig og effektiv ved lav lydstyrke, og den kompakte subwoofer fungerer særligt godt i små rum.",
+     "simpleTitle": "Tydelig bas selv ved lav lydstyrke og i små rum",
+     "bias": "positive",
+     "key": "small-room-low-volume",
+     "groupId": "7ac97333-b4b4-46f3-9e20-ca00e7ddb8ed"
     }
    },
    "grouping": {
-    "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
-     "title": "Bas og lydkvalitet",
-     "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
+    "7ac97333-b4b4-46f3-9e20-ca00e7ddb8ed": {
+     "title": "Lydkvalitet",
+     "id": "7ac97333-b4b4-46f3-9e20-ca00e7ddb8ed",
      "references": [
       "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
       "9748edd8-6686-4c7e-a086-8d0b11a8de84",
@@ -312,28 +319,30 @@
       "fe224355-6f96-4104-904f-404bbf41bab4",
       "37700f85-5cd6-40a3-99c1-9da4745fcd02",
       "d55951fc-53aa-4545-b0ec-bcf0e3401796",
+      "c7fd0f3f-63bf-4dbc-901e-df056c78f3fa",
       "713d2299-5b00-46fd-87ee-839a9e232118"
      ]
     },
-    "2cd3e345-8629-407a-9d89-b25591820d17": {
-     "title": "Kompakt størrelse og egnethed til rum",
-     "id": "2cd3e345-8629-407a-9d89-b25591820d17",
+    "14b36582-20c5-4f79-b054-ab380b623edc": {
+     "title": "Størrelse og design",
+     "id": "14b36582-20c5-4f79-b054-ab380b623edc",
      "references": [
       "9748edd8-6686-4c7e-a086-8d0b11a8de84",
       "fe224355-6f96-4104-904f-404bbf41bab4",
-      "6c7c3b50-1368-41b8-b349-ab8165768a20"
+      "6c7c3b50-1368-41b8-b349-ab8165768a20",
+      "713d2299-5b00-46fd-87ee-839a9e232118"
      ]
     }
    },
-   "rating": 4.77777777777778,
-   "count": 18,
+   "rating": 4.8,
+   "count": 20,
    "reviewCount": 10,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 4,
-    "5": 14
+    "5": 16
    }
   },
   "brandName": "KEF",

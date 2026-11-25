@@ -34,11 +34,11 @@
    "productCodes": [
     "DALIPHANTOMK60LP",
     "BLSN331",
+    "LYNGBW3GRILL",
     "LYNGTDAI1120",
     "LYNGTDAI2210",
     "LYNGMH3",
-    "LYNGTDAI3400",
-    "LYNGBW3GRILL"
+    "LYNGTDAI3400"
    ],
    "isOutlet": "false"
   },
@@ -196,7 +196,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 8,
+     "numberOfStoresExperience": 9,
      "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -277,7 +277,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 8,
+     "numberOfStoresExperience": 9,
      "availableQuantity": 27,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -330,34 +330,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGDW3 leverer varm, slagkraftig og præcis bas med imponerende dybde og detaljering i så kompakt et kabinet. Den medrivende basgengivelse egner sig både til musik og film, mens den diskrete størrelse gør placeringen nem. Den gode integration i surroundsystemer og den stærke ydelse i forhold til kabinetstørrelsen gør subwooferen til et meget tilfredsstillende valg.",
+   "summary": "LYNGDORF BW-3 leverer varm, slagkraftig og imponerende dyb bas fra et kompakt kabinet. Den stramme og præcise detaljegrad fungerer lige godt til musik og medrivende filmlyd, mens den nemme placering gør subwooferen til en fleksibel tilføjelse til stereo- eller surroundanlæg. De kompakte mål og den stærke ydelse giver en særdeles overbevisende pakke, selv om den ubeskyttede enhed kræver omhyggelig placering.",
    "headlines": {
     "tight, deep and detailed bass": {
-     "sentimentAnalysis": "Anmeldelserne roser bassen som klar, solid, stram, dyb og meget detaljeret.",
+     "sentimentAnalysis": "Anmeldelserne roser bassen som solid, stram, præcis, dyb og meget detaljeret.",
      "simpleTitle": "Stram, dyb og detaljeret bas",
      "bias": "positive",
-     "key": "tight-deep-bass",
-     "groupId": "902e2282-88f7-4ba4-982c-6fd7b4d3eb00"
+     "key": "bass",
+     "groupId": "513cc7d1-ec17-4f0e-bb07-6125331fe5e0"
     },
-    "impressive output from a compact cabinet": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den usædvanligt fyldige og kraftfulde lyd i forhold til subwooferens lille størrelse.",
-     "simpleTitle": "Imponerende ydelse fra et kompakt kabinet",
+    "exceptional output for the compact size": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den usædvanligt kraftige lyd og bas fra et meget lille kabinet, der er nemt at gemme.",
+     "simpleTitle": "Imponerende ydelse i forhold til størrelsen",
      "bias": "positive",
-     "key": "compact-output",
-     "groupId": "10936bff-785c-4d9a-8c32-f78612708320"
+     "key": "size",
+     "groupId": "12386f30-fad1-4b1a-a6ad-fef86a581cf2"
     },
-    "easy to hide and place": {
-     "sentimentAnalysis": "Det kompakte kabinet opleves som diskret og velegnet til pladsbesparende placering.",
-     "simpleTitle": "Nem at skjule og placere",
+    "effective for music and film": {
+     "sentimentAnalysis": "Subwooferen vurderes som velegnet til både musiklytning og filmisk surroundlyd.",
+     "simpleTitle": "Overbevisende til musik og film",
      "bias": "positive",
-     "key": "discreet-placement",
-     "groupId": "10936bff-785c-4d9a-8c32-f78612708320"
+     "key": "bass",
+     "groupId": "513cc7d1-ec17-4f0e-bb07-6125331fe5e0"
     }
    },
    "grouping": {
-    "902e2282-88f7-4ba4-982c-6fd7b4d3eb00": {
-     "title": "Bas og lydkvalitet",
-     "id": "902e2282-88f7-4ba4-982c-6fd7b4d3eb00",
+    "513cc7d1-ec17-4f0e-bb07-6125331fe5e0": {
+     "title": "Basgengivelse",
+     "id": "513cc7d1-ec17-4f0e-bb07-6125331fe5e0",
      "references": [
       "e1224f07-7a65-446a-b021-c74e1d084532",
       "766905db-8f06-45e8-8041-353b67fe2e59",
@@ -367,9 +367,9 @@
       "73a786a0-60ff-463c-bdd7-324fe37d50c5"
      ]
     },
-    "10936bff-785c-4d9a-8c32-f78612708320": {
+    "12386f30-fad1-4b1a-a6ad-fef86a581cf2": {
      "title": "Størrelse og placering",
-     "id": "10936bff-785c-4d9a-8c32-f78612708320",
+     "id": "12386f30-fad1-4b1a-a6ad-fef86a581cf2",
      "references": [
       "997a9ddb-a3a0-4d3c-b76d-2aeb02ffa616",
       "3535d1fc-bfa2-427b-bccf-5e27c9deb3c8",

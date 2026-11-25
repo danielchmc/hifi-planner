@@ -271,25 +271,40 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGCS2 leverer en varm, klar og omsluttende lyd med en solid og flot konstruktion og fungerer særligt godt sammen med kompetente forstærkere og komplette lydsystemer. Højttalerne kan integreres elegant i møbler og yder imponerende selv bag tilpassede skabslåger. Bassen kan virke en smule mindre dyb for lyttere, der ønsker et fyldigere fundament, men helhedsindtrykket er stadig meget tilfredsstillende.",
+   "summary": "LYNGCS2 leverer en varm, klar og omsluttende lyd med en solid højttalerkonstruktion og et flot udtryk. Højttalerne indgår særligt godt i komplette hi-fi-systemer og fungerer med udstyr som NAD og TDAI 1120. Bassen kan mangle lidt dybde, men helhedsindtrykket er stadig meget tilfredsstillende og musikalsk engagerende.",
    "headlines": {
-    "clear, impressive sound": {
-     "sentimentAnalysis": "Højttalerne roses for en flot, fremragende og meget tilfredsstillende lyd både alene og i komplette systemer.",
-     "simpleTitle": "Klar og imponerende lyd",
+    "clear, immersive sound with a solid build": {
+     "sentimentAnalysis": "Højttalerne roses for en smuk, fremragende og meget tilfredsstillende lyd samt solid konstruktion og flot udtryk.",
+     "simpleTitle": "Klar og omsluttende lyd med solid konstruktion",
      "bias": "positive",
-     "key": "clear-impressive-sound",
-     "groupId": "3db0da6b-6387-46bd-b2fe-5a0a7128afdf"
+     "key": "sound-quality",
+     "groupId": "4b895fb1-6de8-4139-80f4-5f8589ee470e"
+    },
+    "works well in complete hi-fi systems": {
+     "sentimentAnalysis": "Højttalerne integreres ifølge anmeldelserne godt i flere lydopsætninger, blandt andet med NAD- og TDAI 1120-udstyr.",
+     "simpleTitle": "Fungerer godt i komplette hi-fi-systemer",
+     "bias": "positive",
+     "key": "system-compatibility",
+     "groupId": "6ae84b2f-9d24-40ef-b3bd-3fdf02b2fff6"
     }
    },
    "grouping": {
-    "3db0da6b-6387-46bd-b2fe-5a0a7128afdf": {
+    "4b895fb1-6de8-4139-80f4-5f8589ee470e": {
      "title": "Lydkvalitet",
-     "id": "3db0da6b-6387-46bd-b2fe-5a0a7128afdf",
+     "id": "4b895fb1-6de8-4139-80f4-5f8589ee470e",
      "references": [
       "ebe48188-7cfd-434b-9f2f-33a28fc36a78",
       "e4621a4f-a6ec-4659-acfe-80ec565f3c08",
       "eacd7828-2dd4-4fa4-9c18-c7ba49300d4c",
       "a81b55f5-9703-4c23-8123-9eef49dabd46",
+      "be28fa76-7bab-4039-a767-7582d6a6d874"
+     ]
+    },
+    "6ae84b2f-9d24-40ef-b3bd-3fdf02b2fff6": {
+     "title": "Systemkompatibilitet",
+     "id": "6ae84b2f-9d24-40ef-b3bd-3fdf02b2fff6",
+     "references": [
+      "eacd7828-2dd4-4fa4-9c18-c7ba49300d4c",
       "be28fa76-7bab-4039-a767-7582d6a6d874"
      ]
     }

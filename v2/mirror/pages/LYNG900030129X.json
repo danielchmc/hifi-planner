@@ -104,10 +104,10 @@
      "productCode": "LYNG900030129"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager mandag den 21. december",
+     "deliveryDate": "2026-12-21T00:00:00Z",
      "canBuyOnline": true,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

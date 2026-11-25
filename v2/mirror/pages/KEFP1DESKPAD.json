@@ -109,8 +109,8 @@
      "productCode": "KEFP1DESKPADBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
      "inventoryStatusType": "notInStockAtpDate"
@@ -183,12 +183,11 @@
      "productCode": "KEFP1DESKPADSI"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 12,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

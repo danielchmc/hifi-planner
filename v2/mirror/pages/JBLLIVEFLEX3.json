@@ -234,7 +234,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 4,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -655,41 +655,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBLLIVEFLEX3 leverer en varm, fyldig og generelt behagelig lyd med nyttige funktioner. Komfort og pasform i øret varierer, mens lydkvaliteten spænder fra omsluttende og klar til skuffende. Batteriydelsen virker også uensartet, men helhedsindtrykket er meget positivt for lyttere, der får en god pasform.",
+   "summary": "JBLLIVEFLEX3 leverer en varm, fyldig og generelt behagelig lyd med nyttig funktionalitet og gode funktioner. Komfort og pasform varierer, mens støjreduktion og batteriydelse kan skuffe. Samlet set føles produktet alsidigt og engagerende med en omsluttende lyd, der dog lejlighedsvis påvirkes af kvalitets- og udholdenhedsproblemer.",
    "headlines": {
     "warm and enjoyable sound": {
-     "sentimentAnalysis": "Lyden roses som god, behagelig og tilfredsstillende.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver lyden som god, behagelig og tilfredsstillende.",
      "simpleTitle": "Varm og behagelig lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94"
+     "key": "sound-quality",
+     "groupId": "fa7e5439-d20f-411a-9b54-bcb428609420"
     },
-    "sound quality can be disappointing": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver lyden som middelmådig eller meget dårlig.",
-     "simpleTitle": "Lydkvaliteten kan skuffe",
+    "sound quality and noise reduction can disappoint": {
+     "sentimentAnalysis": "Nogle anmeldelser rapporterer middelmådig lyd, svag støjreduktion eller meget dårlig lyd fra den ene øreprop.",
+     "simpleTitle": "Lydkvalitet og støjreduktion kan skuffe",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94"
+     "key": "sound-quality",
+     "groupId": "fa7e5439-d20f-411a-9b54-bcb428609420"
     },
-    "poor in-ear fit": {
-     "sentimentAnalysis": "Øretelefonerne kritiseres for at sidde dårligt eller ukomfortabelt i ørerne.",
-     "simpleTitle": "Dårlig pasform i øret",
+    "poor fit in the ears": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer øreproppernes dårlige pasform i ørerne.",
+     "simpleTitle": "Dårlig pasform i ørerne",
      "bias": "negative",
-     "key": "fit",
-     "groupId": "1158bcb8-1863-4a1e-94d7-e0588d9bb532"
+     "key": "fit-comfort",
+     "groupId": "ee1e95a4-f5bf-44b8-b57d-1329b5522d93"
     },
-    "useful functionality and features": {
-     "sentimentAnalysis": "Produktet får positive kommentarer for funktionalitet og funktioner.",
-     "simpleTitle": "Nyttige funktioner og egenskaber",
+    "useful features and functionality": {
+     "sentimentAnalysis": "Den tilgængelige funktionalitet og funktionerne omtales positivt.",
+     "simpleTitle": "Nyttige funktioner og funktionalitet",
      "bias": "positive",
-     "key": "features",
-     "groupId": "993a71c0-74ce-4ea4-a43a-6644e741af62"
+     "key": "features-functionality",
+     "groupId": "d8e9a5e5-1f57-4271-85fa-2ce89496f693"
     }
    },
    "grouping": {
-    "8429a4b2-3c12-4f9d-97e8-08ecf0667e94": {
+    "fa7e5439-d20f-411a-9b54-bcb428609420": {
      "title": "Lydkvalitet",
-     "id": "8429a4b2-3c12-4f9d-97e8-08ecf0667e94",
+     "id": "fa7e5439-d20f-411a-9b54-bcb428609420",
      "references": [
       "6d035dc1-9bd7-4a38-b31d-15932fc7f520",
       "ec074925-c363-4b60-a976-aaf21ab12c42",
@@ -699,17 +699,17 @@
       "4ddfef49-7f29-47dc-bc14-b126ccffff9c"
      ]
     },
-    "1158bcb8-1863-4a1e-94d7-e0588d9bb532": {
+    "ee1e95a4-f5bf-44b8-b57d-1329b5522d93": {
      "title": "Pasform og komfort",
-     "id": "1158bcb8-1863-4a1e-94d7-e0588d9bb532",
+     "id": "ee1e95a4-f5bf-44b8-b57d-1329b5522d93",
      "references": [
       "3b47355e-32f7-4cab-9461-b79e1bc5059a",
       "81b2df71-efb1-4017-a934-9a20c4b4631e"
      ]
     },
-    "993a71c0-74ce-4ea4-a43a-6644e741af62": {
+    "d8e9a5e5-1f57-4271-85fa-2ce89496f693": {
      "title": "Funktioner og funktionalitet",
-     "id": "993a71c0-74ce-4ea4-a43a-6644e741af62",
+     "id": "d8e9a5e5-1f57-4271-85fa-2ce89496f693",
      "references": [
       "6d035dc1-9bd7-4a38-b31d-15932fc7f520",
       "e03966cb-1853-4e3b-8e3f-7319d9f53907"

@@ -85,6 +85,37 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløst aktivt højtalersystem\n2-vejs basrefleks-konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/48kHz (trådløst), 24-bit/96kHz (kablet)\nIndbygget forstærker (pr. højtaler): 70 watt Klasse D (bas), 30 watt Klasse D (diskant), målemetode ikke angivet\nDiskant: 3/4” coaxial aluminiumsdome\nBas/mellemtone: 4,5” Uni-Q med membran i magnesium/aluminium \nIndbygget D/A-konverter\nMaksimal opløsning: 24-bit/384kHz (netværk), 24-bit/192kHz (HDMI/coaxial), 24-bit/96kHz (optisk)\nOBS: Ved trådløs forbindelse mellem højtalerne er maksimal opløsning på afspilningen 24-bit/48kHz. Ved kablet forbindelse mellem højtalerne øges dette til 24-bit/96kHz\nLydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis\nLydformater (netværk): DSD64/128/256)\nIndbygget dual-band trådløst netværk (802.11a/b/g/n/ac, 2,4/5GHz)\nAuto-tænd/sluk \nFjernbetjening og 3 meter Ethernetkabel til indbyrdes forbindelse (valgfrit) medfølger \nVægt (sæt): 7,2 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "title": "Tilslutninger",
+    "content": [
+     {
+      "term": "Lydudgang",
+      "value": "LFE"
+     },
+     {
+      "term": "Lydindgang",
+      "value": "HDMI, Optisk, Minijack/AUX, USB C"
+     },
+     {
+      "term": "Indgang (andet)",
+      "value": "Ethernet, USB A"
+     },
+     {
+      "term": "Trådløs overførsel",
+      "value": "Bluetooth-indgang, Wi-Fi"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -127,37 +158,6 @@
      {
       "term": "Brugsscenarier",
       "value": "TV, PC/Mac, Pladespiller, Subwoofer"
-     }
-    ]
-   },
-   {
-    "index": 9,
-    "title": "Tilslutninger",
-    "content": [
-     {
-      "term": "Lydudgang",
-      "value": "LFE"
-     },
-     {
-      "term": "Lydindgang",
-      "value": "HDMI, Optisk, Minijack/AUX, USB C"
-     },
-     {
-      "term": "Indgang (andet)",
-      "value": "Ethernet, USB A"
-     },
-     {
-      "term": "Trådløs overførsel",
-      "value": "Bluetooth-indgang, Wi-Fi"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløst aktivt højtalersystem\n2-vejs basrefleks-konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/48kHz (trådløst), 24-bit/96kHz (kablet)\nIndbygget forstærker (pr. højtaler): 70 watt Klasse D (bas), 30 watt Klasse D (diskant), målemetode ikke angivet\nDiskant: 3/4” coaxial aluminiumsdome\nBas/mellemtone: 4,5” Uni-Q med membran i magnesium/aluminium \nIndbygget D/A-konverter\nMaksimal opløsning: 24-bit/384kHz (netværk), 24-bit/192kHz (HDMI/coaxial), 24-bit/96kHz (optisk)\nOBS: Ved trådløs forbindelse mellem højtalerne er maksimal opløsning på afspilningen 24-bit/48kHz. Ved kablet forbindelse mellem højtalerne øges dette til 24-bit/96kHz\nLydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis\nLydformater (netværk): DSD64/128/256)\nIndbygget dual-band trådløst netværk (802.11a/b/g/n/ac, 2,4/5GHz)\nAuto-tænd/sluk \nFjernbetjening og 3 meter Ethernetkabel til indbyrdes forbindelse (valgfrit) medfølger \nVægt (sæt): 7,2 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
      }
     ]
    },
@@ -291,8 +291,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 9,
-     "availableQuantity": 22,
+     "numberOfStoresExperience": 8,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -425,7 +425,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 11,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -550,12 +550,11 @@
      "productCode": "KEFLSX2AMBERHAZE"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -682,10 +681,10 @@
      "productCode": "KEFLSX2COTTONWHITE"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
+     "numberOfStoresExperience": 9,
      "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
@@ -807,6 +806,35 @@
    {
     "modelType": "Pladespiller system",
     "price": {
+     "price": 13667,
+     "priceFormatted": "13.667,-",
+     "priceBefore": 17218,
+     "priceBeforeFormatted": "17.218,-",
+     "priceSavingsFormatted": "3.551,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 13667,
+     "unitPriceBefore": 17218
+    },
+    "image": "https://images.hifiklubben.com/image/8f8020e3-8ead-46b5-96a0-37e510f0eca2",
+    "ribbons": [
+     {
+      "text": "Spar 21%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Argon Audio TT4 MK2 + KEF LSX II",
+    "url": "/argtt4mk2-keflsx2/"
+   },
+   {
+    "modelType": "Pladespiller system",
+    "price": {
      "price": 10467,
      "priceFormatted": "10.467,-",
      "priceBefore": 12218,
@@ -832,81 +860,59 @@
     ],
     "title": "ARGTTMK2 + KEFLSX2",
     "url": "/argttmk2-keflsx2/"
-   },
-   {
-    "modelType": "Pladespiller system",
-    "price": {
-     "price": 14867,
-     "priceFormatted": "14.867,-",
-     "priceBefore": 17218,
-     "priceBeforeFormatted": "17.218,-",
-     "priceSavingsFormatted": "2.351,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 14867,
-     "unitPriceBefore": 17218
-    },
-    "image": "https://images.hifiklubben.com/image/8f8020e3-8ead-46b5-96a0-37e510f0eca2",
-    "ribbons": [
-     {
-      "text": "Spar 14%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Argon Audio TT4 MK2 + KEF LSX II",
-    "url": "/argtt4mk2-keflsx2/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF LSX II leverer en bemærkelsesværdigt stor, klar og naturlig lyd fra en kompakt og stilfuld højttaler med tydelige vokaler, detaljerede instrumenter og tilfredsstillende bas i forhold til størrelsen. Trådløs streaming, mange tilslutningsmuligheder og fleksibel placering gør systemet særligt attraktivt til skrivebord, kontor, tv og mindre stuer. Den dybe bas kan være begrænset uden en subwoofer, mens appopsætning, lejlighedsvise forbindelsesproblemer og registreringskrav trækker lidt ned i en ellers fremragende oplevelse.",
+   "summary": "KEF LSX II leverer bemærkelsesværdigt klar, naturlig og omsluttende lyd fra et kompakt kabinet med detaljerede vokaler, levende musikgengivelse og overraskende fyldig bas. Det elegante design, de mange tilslutningsmuligheder og den enkle trådløse streaming gør højttalerne alsidige til skrivebord, TV, kontor og stue. Den dybe bas kan være begrænset i større rum, så en subwoofer kan være attraktiv, mens appopsætning, lejlighedsvise forbindelsesproblemer og registreringskrav skaber irritation.",
    "headlines": {
-    "crisp, natural and detailed sound": {
-     "sentimentAnalysis": "Højttalerne roses bredt for klar, naturlig, detaljeret og musikalsk gengivelse med tydelige vokaler og et bredt lydbillede.",
-     "simpleTitle": "Klar, naturlig og detaljeret lyd",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, naturlige, detaljerede og rummelige gengivelse samt stærke vokaler og god musikalsk adskillelse.",
+     "simpleTitle": "Klar, detaljeret og omsluttende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "6311e0b8-463d-41b1-86da-ca8f31811085"
+     "groupId": "70987bf1-1343-4502-b397-c1c32bde52ce"
     },
-    "remarkably big sound from a compact design": {
-     "sentimentAnalysis": "De kompakte størrelse og flotte finish forbindes gentagne gange med en overraskende stor og rumfyldende gengivelse.",
-     "simpleTitle": "Bemærkelsesværdigt stor lyd fra et kompakt design",
+    "app setup and connections can be frustrating": {
+     "sentimentAnalysis": "Anmeldelserne nævner lejlighedsvise problemer med Wi-Fi, app og HDMI-genkendelse, mens en anmeldelse kraftigt kritiserer obligatorisk registrering med personlige data og afhængighed af smartphone.",
+     "simpleTitle": "Appopsætning og forbindelser kan være frustrerende",
+     "bias": "negative",
+     "key": "app-issues",
+     "groupId": "f1ae158d-19e5-4976-8fd7-799762b0ea60"
+    },
+    "surprisingly full bass for the size": {
+     "sentimentAnalysis": "Flere anmeldelser oplever bassen som dyb, kontrolleret og tilstrækkelig uden subwoofer, især set i forhold til de kompakte kabinetter.",
+     "simpleTitle": "Overraskende fyldig bas i størrelsen",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "70987bf1-1343-4502-b397-c1c32bde52ce"
+    },
+    "deep bass may need a subwoofer": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever begrænset dybbas og anbefaler en subwoofer for ægte fuldbåndsgengivelse eller større rum.",
+     "simpleTitle": "Dyb bas kan kræve en subwoofer",
+     "bias": "negative",
+     "key": "bass-limited",
+     "groupId": "70987bf1-1343-4502-b397-c1c32bde52ce"
+    },
+    "compact, elegant and versatile design": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det kompakte format, den fine finish og egnetheden til skrivebord, reol eller TV.",
+     "simpleTitle": "Kompakt, elegant og alsidigt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "48e6e087-db88-407e-8bd3-a760fd4f3320"
+     "groupId": "34134367-75c4-46f0-b7c0-21e3af68f2ee"
     },
-    "app setup and connections can be troublesome": {
-     "sentimentAnalysis": "Nogle ejere rapporterer om lejlighedsvise problemer med Wi-Fi, app, HDMI eller streaming, mens andre finder appregistrering og justering unødigt krævende.",
-     "simpleTitle": "Appopsætning og forbindelser kan give problemer",
-     "bias": "negative",
-     "key": "connectivity",
-     "groupId": "4ee3c157-46a4-4ecd-85a5-28a9a5739379"
-    },
-    "bass is satisfying but limited at the deepest frequencies": {
-     "sentimentAnalysis": "Flere anmeldelser finder bassen imponerende i forhold til kabinetstørrelsen, men anbefaler en subwoofer, hvis der ønskes ægte fuldtonegengivelse eller dybere bas.",
-     "simpleTitle": "Bassen er tilfredsstillende, men begrænset i de dybeste frekvenser",
-     "bias": "negative",
-     "key": "bass",
-     "groupId": "f10822c6-e2fd-43be-9435-25d028472f2c"
-    },
-    "versatile wireless and wired connectivity": {
-     "sentimentAnalysis": "Anmeldelser fremhæver de mange indgange, Wi-Fi-streaming, AirPlay og integration med tjenester som Spotify som store styrker.",
-     "simpleTitle": "Fleksible trådløse og kablede tilslutninger",
+    "wireless streaming and connections are strong": {
+     "sentimentAnalysis": "Anmeldelserne roser de mange indgange, den trådløse betjening, AirPlay og integrationen med streamingtjenester.",
+     "simpleTitle": "Trådløs streaming og tilslutninger fungerer godt",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "4ee3c157-46a4-4ecd-85a5-28a9a5739379"
+     "groupId": "f1ae158d-19e5-4976-8fd7-799762b0ea60"
     }
    },
    "grouping": {
-    "6311e0b8-463d-41b1-86da-ca8f31811085": {
+    "70987bf1-1343-4502-b397-c1c32bde52ce": {
      "title": "Lydkvalitet",
-     "id": "6311e0b8-463d-41b1-86da-ca8f31811085",
+     "id": "70987bf1-1343-4502-b397-c1c32bde52ce",
      "references": [
       "ac11290a-8d0a-41a3-b004-c09798a04ff9",
       "eba3d557-8b73-43e2-ab00-0525a48853e9",
@@ -917,13 +923,14 @@
       "999a0871-94bd-4d97-8341-96d874e7fcbb",
       "56210cfe-38ac-46e3-9f2c-4dc6515db8e0",
       "711f1848-9d43-416f-86bb-1af4e853fa41",
+      "231f3ab0-5e2f-49fb-90d2-4f6fa86a590d",
+      "cc00fec7-f541-411c-8f76-d97e26dec08a",
       "f61e1d23-c749-4485-9f70-ffe98cacf450",
       "6efc243c-47c6-4d38-bd25-748c4bb18eec",
       "849aff62-c39f-48c0-93bf-d30d72d284c4",
       "4ed86bcf-3bcd-47d7-a165-a85765ff42c4",
       "5fcb6d56-7d0c-400b-a762-19f557351a09",
       "a10c6b59-ab8d-4513-a4cc-8a3b32df0bca",
-      "63c4e815-259e-46ba-acfa-f1b2916489d5",
       "4df0dfb1-8c1a-42ce-a3e5-077ec503a23a",
       "f631e238-1d2c-4999-99cf-cea3b9046cde",
       "16356489-0387-4f9a-a221-dbc07b55ffe2",
@@ -932,41 +939,20 @@
       "75744aab-6fd5-4a63-85f4-17ba68884f44",
       "c6a15d86-851d-48bf-95b4-27c81d35635e",
       "7c1f750a-da40-4427-ba80-8ae94fcadaf2",
-      "9a8d81c0-38ef-4dd2-b088-3ed8c53fa002",
       "4990c5c2-ae73-4ee8-9866-3f197c11477f",
       "cef8f693-8fd5-4ea3-a59c-495a1fb8cee7"
      ]
     },
-    "f10822c6-e2fd-43be-9435-25d028472f2c": {
-     "title": "Bas og subwoofer",
-     "id": "f10822c6-e2fd-43be-9435-25d028472f2c",
-     "references": [
-      "6865539d-d744-4b7b-bd82-ad9b9b6a4d3e",
-      "5085b7a9-44f0-4eb1-932c-520b39bbad35",
-      "231f3ab0-5e2f-49fb-90d2-4f6fa86a590d",
-      "575ea12c-09f2-49db-9149-c73079bd30ef",
-      "849aff62-c39f-48c0-93bf-d30d72d284c4",
-      "5fcb6d56-7d0c-400b-a762-19f557351a09",
-      "a10c6b59-ab8d-4513-a4cc-8a3b32df0bca",
-      "2164e2bd-3f12-42b3-baa9-383966d66738",
-      "63c4e815-259e-46ba-acfa-f1b2916489d5",
-      "87219871-689f-4286-9b72-4a5c06a0a067",
-      "75744aab-6fd5-4a63-85f4-17ba68884f44",
-      "c6a15d86-851d-48bf-95b4-27c81d35635e",
-      "7c1f750a-da40-4427-ba80-8ae94fcadaf2",
-      "2b0a660d-3328-4448-b38f-415221c7521d"
-     ]
-    },
-    "4ee3c157-46a4-4ecd-85a5-28a9a5739379": {
-     "title": "Tilslutning og opsætning",
-     "id": "4ee3c157-46a4-4ecd-85a5-28a9a5739379",
+    "f1ae158d-19e5-4976-8fd7-799762b0ea60": {
+     "title": "Opsætning og tilslutning",
+     "id": "f1ae158d-19e5-4976-8fd7-799762b0ea60",
      "references": [
       "c435d524-5670-4937-81f7-da844dbb5b46",
+      "db5f53c5-646f-4f3f-a908-6a41217ac5af",
       "6865539d-d744-4b7b-bd82-ad9b9b6a4d3e",
       "b04fa3e4-651a-4847-b775-2167b1c90ad6",
       "575ea12c-09f2-49db-9149-c73079bd30ef",
       "71f3facb-30db-4e67-bb75-dca1f77b173f",
-      "f61e1d23-c749-4485-9f70-ffe98cacf450",
       "849aff62-c39f-48c0-93bf-d30d72d284c4",
       "5fcb6d56-7d0c-400b-a762-19f557351a09",
       "6c1897f0-aaab-4d8c-93b7-b1f2c481273d",
@@ -977,17 +963,19 @@
       "4990c5c2-ae73-4ee8-9866-3f197c11477f"
      ]
     },
-    "48e6e087-db88-407e-8bd3-a760fd4f3320": {
+    "34134367-75c4-46f0-b7c0-21e3af68f2ee": {
      "title": "Design og størrelse",
-     "id": "48e6e087-db88-407e-8bd3-a760fd4f3320",
+     "id": "34134367-75c4-46f0-b7c0-21e3af68f2ee",
      "references": [
       "db5f53c5-646f-4f3f-a908-6a41217ac5af",
       "863a3d7b-e3f2-487f-bd49-30bd52398dec",
       "999a0871-94bd-4d97-8341-96d874e7fcbb",
+      "711f1848-9d43-416f-86bb-1af4e853fa41",
       "849aff62-c39f-48c0-93bf-d30d72d284c4",
       "5fcb6d56-7d0c-400b-a762-19f557351a09",
+      "575ea12c-09f2-49db-9149-c73079bd30ef",
       "c6a15d86-851d-48bf-95b4-27c81d35635e",
-      "cef8f693-8fd5-4ea3-a59c-495a1fb8cee7"
+      "cad6a5b4-9949-414c-9ad2-664c0a1d4cfb"
      ]
     }
    },

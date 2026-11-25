@@ -21,7 +21,7 @@
    "c2ce72b5-88da-45fc-a133-8720d695c077",
    "182080ae-9408-4b8b-b701-be19fc149a05"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 225140,
@@ -195,12 +195,11 @@
      "productCode": "KEFKUBE10MIEHGBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -248,49 +247,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF Kube 10 MIE leverer varm, dyb og punchy bas, som giver både musik og film et medrivende fundament uden at lyde buldrende. Subwooferen integrerer særligt godt med KEF-systemer og giver en eksklusiv oplevelse til en attraktiv pris. Fleksible indstillingsmuligheder og stabil trådløs forbindelse gør brugen nemmere, mens kabinettets størrelse kræver lidt plads ved placering.",
+   "summary": "KEF Kube 10 MIE leverer varm, slagkraftig og dyb bas, der giver både musik og film en medrivende dimension uden at blive buldrende. Den gode integration med KEF-højttalere, fleksible opsætningsmuligheder og effektive rumtilpasning gør subwooferen til en alsidig opgradering af krævende lydsystemer. Den førsteklasses konstruktion og pålidelige trådløse forbindelse styrker yderligere den allerede meget tilfredsstillende helhed.",
    "headlines": {
-    "a strong match for KEF speakers": {
-     "sentimentAnalysis": "Subwooferen roses for at integrere naturligt med flere KEF-højttalersystemer og fuldende deres lyd.",
-     "simpleTitle": "Passer fremragende til KEF-højttalere",
+    "deep, powerful and controlled bass": {
+     "sentimentAnalysis": "Subwooferen roses for at tilføre kraftfuld, dyb og ren bas til både musik og film uden at virke overdreven.",
+     "simpleTitle": "Dyb, kraftfuld og kontrolleret bas",
      "bias": "positive",
-     "key": "kef-integration",
-     "groupId": "54a7c333-18fd-4716-b51f-c5ea517f328a"
+     "key": "bass",
+     "groupId": "7a6f4ea2-1365-4618-9abb-3b1c2d96b676"
     },
-    "deep, tight bass": {
-     "sentimentAnalysis": "Bassen beskrives som kraftfuld, dyb og kontrolleret og tilfører tyngde uden at blive dominerende eller buldrende.",
-     "simpleTitle": "Dyb og stram bas",
+    "complements KEF speakers exceptionally well": {
+     "sentimentAnalysis": "Det ekstra dybbasområde beskrives konsekvent som et naturligt og effektivt match til KEF-højttalersystemer.",
+     "simpleTitle": "Komplementerer KEF-højttalere fremragende",
      "bias": "positive",
-     "key": "deep-tight-bass",
-     "groupId": "5dbd2fb5-cff0-41f9-933a-3119322b866f"
+     "key": "bass",
+     "groupId": "7a6f4ea2-1365-4618-9abb-3b1c2d96b676"
     },
-    "immersive performance for music and films": {
-     "sentimentAnalysis": "Subwooferen værdsættes som en alsidig tilføjelse, der forbedrer både musikoplevelsen og den filmiske indlevelse.",
-     "simpleTitle": "Medrivende gengivelse til musik og film",
+    "flexible controls and connection options": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver enkel justering, nyttige tilslutningsmuligheder, rumtilpasset DSP og pålidelig Bluetooth-funktion.",
+     "simpleTitle": "Fleksible indstillinger og tilslutningsmuligheder",
      "bias": "positive",
-     "key": "music-film-performance",
-     "groupId": "5dbd2fb5-cff0-41f9-933a-3119322b866f"
+     "key": "setup",
+     "groupId": "6d571c86-fe55-42e1-8a75-42a8af67a438"
     }
    },
    "grouping": {
-    "5dbd2fb5-cff0-41f9-933a-3119322b866f": {
-     "title": "Lydkvalitet",
-     "id": "5dbd2fb5-cff0-41f9-933a-3119322b866f",
+    "7a6f4ea2-1365-4618-9abb-3b1c2d96b676": {
+     "title": "Bas og lydkvalitet",
+     "id": "7a6f4ea2-1365-4618-9abb-3b1c2d96b676",
      "references": [
-      "f065283d-6391-4b7b-ba26-0f061d784c26",
       "9fd73972-f0ef-4c1f-9536-c52b92662d1c",
       "6f4cf9f5-2d56-4194-9556-afa1d9e69abe",
       "0d73cfde-697d-4c48-a307-447b0a72618f",
       "5b74e8c0-ebf2-43b3-8c1a-890f2712f288"
      ]
     },
-    "54a7c333-18fd-4716-b51f-c5ea517f328a": {
-     "title": "Systemintegration",
-     "id": "54a7c333-18fd-4716-b51f-c5ea517f328a",
+    "6d571c86-fe55-42e1-8a75-42a8af67a438": {
+     "title": "Opsætning og tilslutning",
+     "id": "6d571c86-fe55-42e1-8a75-42a8af67a438",
      "references": [
-      "9fd73972-f0ef-4c1f-9536-c52b92662d1c",
-      "0d73cfde-697d-4c48-a307-447b0a72618f",
-      "5b74e8c0-ebf2-43b3-8c1a-890f2712f288"
+      "f065283d-6391-4b7b-ba26-0f061d784c26",
+      "6f4cf9f5-2d56-4194-9556-afa1d9e69abe",
+      "0d73cfde-697d-4c48-a307-447b0a72618f"
      ]
     }
    },

@@ -76,6 +76,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "TV-soundbar \nOp til 5.1.2 kanaler\nKan hænge lodret på væg eller placeres vandret på hylde/TV-møbel\nKabinet i aluminium \nTrykknapper til basale funktioner på ramme\nAuto-tænd/sluk\nDedikeret KEF Connect app (iOS/Android)\nIndbygget Google Cast, AirPlay2 og Bluetooth v5.3\nDual-Band wi-fi (802.11 a/b/g/n/ac/ax), 2,4 GHz / 5 GHz / 6 GHz\nLydformater surround: Dolby Atmos, DTS:X, Sony 360 Reality Audio\nLydformater stereo: MPEG-H, FLAC, WAV, AIFF, ALAC, AAC, WMA, MP3, M4A, LPCM, Ogg Vorbis\nUpmixing af mono/stereo til multikanal\nMaksimal opløsning: 24-bit/192kHz (HDMI/eARC), 24-bit/384kHz (netværk), 24-bit/96kHz (optisk) \n12 indbyggede effektforstærkere\nHøjtalere: 4 x P185 bas (2 x 7”), 6 x 2” mellemtone/diskant (Uni-Q MX), 2 x 2” mellemtone/diskant (fuldtone)\nIndbygget rumkalibrering (Intelligent Placement Technology/IPT)\nVelocity Control technology (VECO)\nMusic Integrity Engine (MIE) for Cinema\nMedfølgende tilbehør: Fjernbetjening (C2), vægbeslag\nStrømforbrug i netværks-standby: <2 watt "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -94,15 +103,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang, Bluetooth-udgang, Wi-Fi"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "TV-soundbar \nOp til 5.1.2 kanaler\nKan hænge lodret på væg eller placeres vandret på hylde/TV-møbel\nKabinet i aluminium \nTrykknapper til basale funktioner på ramme\nAuto-tænd/sluk\nDedikeret KEF Connect app (iOS/Android)\nIndbygget Google Cast, AirPlay2 og Bluetooth v5.3\nDual-Band wi-fi (802.11 a/b/g/n/ac/ax), 2,4 GHz / 5 GHz / 6 GHz\nLydformater surround: Dolby Atmos, DTS:X, Sony 360 Reality Audio\nLydformater stereo: MPEG-H, FLAC, WAV, AIFF, ALAC, AAC, WMA, MP3, M4A, LPCM, Ogg Vorbis\nUpmixing af mono/stereo til multikanal\nMaksimal opløsning: 24-bit/192kHz (HDMI/eARC), 24-bit/384kHz (netværk), 24-bit/96kHz (optisk) \n12 indbyggede effektforstærkere\nHøjtalere: 4 x P185 bas (2 x 7”), 6 x 2” mellemtone/diskant (Uni-Q MX), 2 x 2” mellemtone/diskant (fuldtone)\nIndbygget rumkalibrering (Intelligent Placement Technology/IPT)\nVelocity Control technology (VECO)\nMusic Integrity Engine (MIE) for Cinema\nMedfølgende tilbehør: Fjernbetjening (C2), vægbeslag\nStrømforbrug i netværks-standby: <2 watt "
      }
     ]
    },
@@ -253,7 +253,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 25,
+     "availableQuantity": 22,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -358,7 +358,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -579,47 +579,32 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF Xio får stor ros for varm, fyldig og omsluttende lyd, mens den kraftfulde bas ofte gør en separat subwoofer overflødig. Stereo- og Dolby Atmos-gengivelsen, det eksklusive design og den klare anbefaling fremhæves i anmeldelserne. Softwareintegrationen har stadig svagheder, og mellemtoner og diskant overgår muligvis ikke billigere soundbarer.",
+   "summary": "KEF XIO leverer en varm, kraftfuld og medrivende lyd med imponerende fylde, selv uden subwoofer. Byggekvalitet og udtryk virker eksklusive, mens stereo- og Dolby Atmos-gengivelsen får stor ros. Software og eARC-automatik kræver stadig forbedringer, og mellemtoner samt diskant virker mindre særprægede end produktets premium-positionering antyder.",
    "headlines": {
-    "warm, full and highly engaging sound": {
-     "sentimentAnalysis": "Anmeldelserne roser samstemmende lyden som fyldig, imponerende og af høj kvalitet.",
-     "simpleTitle": "Varm, fyldig og meget medrivende lyd",
+    "sound quality earns broad praise": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver den samlede lyd som fremragende, flot og af høj kvalitet.",
+     "simpleTitle": "Lydkvaliteten får bred ros",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "775fd45d-ff54-45d8-903e-000ad8d1bbed"
+     "groupId": "09461f48-3fba-44da-a212-09fa85b2adee"
     },
-    "powerful bass without needing a subwoofer": {
-     "sentimentAnalysis": "Basgengivelsen beskrives gentagne gange som så kraftig og tilfredsstillende, at en separat subwoofer kan undværes.",
-     "simpleTitle": "Kraftfuld bas uden behov for subwoofer",
+    "rich, full sound without a subwoofer": {
+     "sentimentAnalysis": "Lyden roses som usædvanligt fyldig og flot for en soundbar uden subwoofer.",
+     "simpleTitle": "Fyldig lyd uden subwoofer",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "775fd45d-ff54-45d8-903e-000ad8d1bbed"
-    },
-    "clean, premium-looking design": {
-     "sentimentAnalysis": "Soundbaren roses for finish og elegante udseende, også ved vægmontering.",
-     "simpleTitle": "Elegant design med eksklusivt udtryk",
-     "bias": "positive",
-     "key": "design-build",
-     "groupId": "8e7ee09f-8ce5-44e0-91b0-7055584aa732"
+     "groupId": "09461f48-3fba-44da-a212-09fa85b2adee"
     }
    },
    "grouping": {
-    "775fd45d-ff54-45d8-903e-000ad8d1bbed": {
+    "09461f48-3fba-44da-a212-09fa85b2adee": {
      "title": "Lydkvalitet",
-     "id": "775fd45d-ff54-45d8-903e-000ad8d1bbed",
+     "id": "09461f48-3fba-44da-a212-09fa85b2adee",
      "references": [
       "0f900196-da80-4d31-9101-a778127c788e",
-      "6db58646-4ca7-4412-a3cd-3a768a4048",
+      "6db58646-4ca7-4412-a3cd-3a76845a4048",
       "bb6a696e-7526-4f30-9f0c-def6fe5faf3b",
       "fe660a99-bf75-4815-a265-444b1adee1c5",
-      "2e1e5993-fdd3-483c-8ead-2d94bd1f7ab9"
-     ]
-    },
-    "8e7ee09f-8ce5-44e0-91b0-7055584aa732": {
-     "title": "Design og byggekvalitet",
-     "id": "8e7ee09f-8ce5-44e0-91b0-7055584aa732",
-     "references": [
-      "bb6a696e-7526-4f30-9f0c-def6fe5faf3b",
       "2e1e5993-fdd3-483c-8ead-2d94bd1f7ab9"
      ]
     }

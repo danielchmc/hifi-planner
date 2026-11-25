@@ -21,7 +21,7 @@
    "32d9b771-0695-48ac-a7d8-344bf829d665",
    "a97c8bfd-818c-4b01-8da4-aa3b330837b8"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 261947,
@@ -103,12 +103,10 @@
      "productCode": "KEFSQ1FSGR"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -180,8 +178,8 @@
      "productCode": "KEFSQ1FSMIWH"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "inventoryStatusType": "notInStockAtpDate"
     },

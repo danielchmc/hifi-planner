@@ -247,7 +247,7 @@ Read by the next mirror runs.
 `data/own.js` is the master for what HiFi Planner adds; `build/app-products.js` is rebuilt from it and the mirror every hour.
 
 - 721 follow the website through their link, 123 are frozen (not on the website)
-- Prices held by the plausibility check (as the sync does): 14
+- Prices held by the plausibility check (as the sync does): 11
 - Link no longer on the website: DALI Oberon 3 [DALIOBERON3], NAD C328 [NADC328], Sonos Ray [SONRAY], Hisense PX3-PRO [HISPX3PROUSTX], Sony Bravia 9 [SONYKXR9B], Bowers & Wilkins ISW-4 [BWISW4], Sony Bravia 5 [SONYKXR5B]
 
 
@@ -264,7 +264,7 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 **Plugs (male/female, mono/stereo)**: cables 59 from the website's cable type, 29 from the name, 5 guessed (stereo, male–male), 9 set by hand; 5 cables, 22 device ports and 8 adapter ports to check, listed in `build/plugs.md`.
 
-**Accessories**: 781 products list accessories from the website (`acc`), offered by "Relaterede produkter". From accessory pages' recommended products: 358 links kept, 327 left out (the accessory does not belong to that kind of product, or both are accessories).
+**Accessories**: 780 products list accessories from the website (`acc`), offered by "Relaterede produkter". From accessory pages' recommended products: 356 links kept, 327 left out (the accessory does not belong to that kind of product, or both are accessories).
 
 **Systems**: 214 of the website's bundles are in the sidebar's Systems section (`build/bundles.js`); 33 are not, because a part is not in the catalogue: unnu 13 S Furniture, unnu 1540 Furniture, Clic 220 Furniture, unnu 221 Furniture, Clic 23 Furniture, unnu 230 Furniture, unnu 231 Furniture, unnu 240 Furniture, unnu 241 Furniture, Clic 242 Furniture, Bowers & Wilkins ISW-8 + BB ISW 8, CANVAS HiFi 55", CANVAS HiFi 65", CANVAS HiFi 75", CANVAS HiFi 77", Bluesound POWERNODE EDGE N230 + DALI OBERON ON-WALL, HITH 231 + DALI Sonik 3 + BLS N331, HITH 231 + Fenris A4, HITH 231 + Forte A5 WIFI, DALI Oberon On-wall + Soundhub + BluOS, DALI OBERON 1 C + ON-WALL C + SOUNDHUB, DALI OBERON C SURROUND, DALI Oberon Vokal C + HDMI Module, DALI RUBICON 2 C + SOUNDHUB, DALI RUBICON 6 C + SOUNDHUB, Steinway Lyngdorf Model A, Steinway Lyngdorf Model B, Steinway Lyngdorf Model D, Steinway Lyngdorf Model O, Steinway Lyngdorf Model S, ….
 
@@ -319,32 +319,25 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
 
-Since the previous build: 7 price changes, 0 products added, 0 removed.
+Since the previous build: 3 price changes, 0 products added, 0 removed.
 
 **Price changes**
 
-- DALI Oberon 3: 3698 → undefined
-- Marshall Acton IV: 2182 → 2139
-- Sonos Ray: 1329 → undefined
-- Sony Bravia 9 II: 29999 → 22222
-- Hisense PX3-PRO: 14848 → undefined
-- Hisense M2: 6999 → 10999
-- Marshall Bromley 150: 3599 → 3490
+- AudioQuest Greyhound - Sub 16m: 999 → 1699
+- Samsung QN90F: 19999 → 44990
+- Hisense PT1: 13187 → 22999
 
-**Held prices** (check by hand; the website price is used once the old one is corrected in the Editor)
+**Held prices** (a big price drop is not taken until checked: the old, higher price is shown without a discount; a price rise is always taken at once)
 
-- AudioQuest Golden Gate 16m: 3399 kept, website 999 (large change (over -35% / +60%))
-- AudioQuest Evergreen - Minijack - RCA 20m: 3099 kept, website 699 (large change (over -35% / +60%))
-- AudioQuest Greyhound - Sub 16m: 999 kept, website 1699 (large change (over -35% / +60%))
-- Marshall Acton III: 2290 kept, website 1399 (large change (over -35% / +60%))
-- Marshall Stanmore III: 3090 kept, website 1799 (large change (over -35% / +60%))
-- Noon Audio Compose SB201: 2499 kept, website 1249 (large change (over -35% / +60%))
-- Samsung QN90F: 19999 kept, website 44990 (large change (over -35% / +60%))
-- Hisense PT1: 13187 kept, website 22999 (large change (over -35% / +60%))
-- Samsung R85H: 12999 kept, website 7999 (large change (over -35% / +60%))
-- Samsung R95H: 29999 kept, website 16999 (large change (over -35% / +60%))
-- Samsung M80H: 7499 kept, website 3999 (large change (over -35% / +60%))
-- Samsung M90H: 21999 kept, website 11999 (large change (over -35% / +60%))
-- Samsung QN80H: 34999 kept, website 15999 (large change (over -35% / +60%))
-- Samsung DU9005: 29999 kept, website 11111 (large change (over -35% / +60%))
+- AudioQuest Golden Gate 16m: 3399 kept (no discount shown), website 999 (large drop (over -35%))
+- AudioQuest Evergreen - Minijack - RCA 20m: 3099 kept (no discount shown), website 699 (large drop (over -35%))
+- Marshall Acton III: 2290 kept (no discount shown), website 1399 (large drop (over -35%))
+- Marshall Stanmore III: 3090 kept (no discount shown), website 1799 (large drop (over -35%))
+- Noon Audio Compose SB201: 2499 kept (no discount shown), website 1249 (large drop (over -35%))
+- Samsung R85H: 12999 kept (no discount shown), website 7999 (large drop (over -35%))
+- Samsung R95H: 29999 kept (no discount shown), website 16999 (large drop (over -35%))
+- Samsung M80H: 7499 kept (no discount shown), website 3999 (large drop (over -35%))
+- Samsung M90H: 21999 kept (no discount shown), website 11999 (large drop (over -35%))
+- Samsung QN80H: 34999 kept (no discount shown), website 15999 (large drop (over -35%))
+- Samsung DU9005: 29999 kept (no discount shown), website 11111 (large drop (over -35%))
 

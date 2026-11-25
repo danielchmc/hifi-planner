@@ -49,14 +49,14 @@
     "AQCARBONCOX",
     "ESSPR1INX",
     "AQCARBONOPT",
-    "AQDIAMONDCOX",
     "AQMACKENZIEIN",
     "AQVODKAOPT",
     "AQMACKENZIEINX",
     "AQYUKONINX",
     "AQYUKONIN",
     "AQBLACKBEAUTYIN",
-    "AQBLACKBEAUTYINX"
+    "AQBLACKBEAUTYINX",
+    "AQDIAMONDCOX"
    ],
    "isOutlet": "false"
   },
@@ -187,7 +187,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -233,41 +233,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGCD2 leverer en klar, detaljeret og særdeles dynamisk lyd med punchy bas, fremragende opløsning og imponerende dybde. Velkendte cd’er får fornyet energi, mens den afslørende gengivelse viser både styrker og svagheder i hver indspilning. Førsteklasses byggekvalitet, intuitiv betjening og problemfri integration med Lyngdorf-systemer fuldender en usædvanligt raffineret cd-afspiller.",
+   "summary": "LYNGCD2 leverer varm, klar og meget detaljeret lyd med punchy bas, fremragende dynamik og imponerende dybde. Afspilleren afslører nye musikalske detaljer på velkendte cd’er og passer særdeles godt sammen med Lyngdorf-forstærkere. Den solide konstruktion og intuitive betjening fuldender oplevelsen, selv om separate fjernbetjeninger til forbundne Lyngdorf-komponenter er en mindre ulempe.",
    "headlines": {
-    "clear, detailed and dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, præcise, detaljerede og dynamiske gengivelse med kraftfuld bas og fremragende instrumentseparation.",
-     "simpleTitle": "Klar, detaljeret og dynamisk lyd",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, kraftfulde og meget detaljerede gengivelse samt evnen til at fremhæve instrumenter og toner på hele cd’en.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "3946f561-cab1-49f5-bc2d-36b8cc764c11"
+     "key": "sound",
+     "groupId": "6ddc934f-59f6-4898-beb0-cd5bfb4d355f"
     },
-    "a strong match for Lyngdorf amplifiers": {
-     "sentimentAnalysis": "Cd-afspilleren roses gentagne gange som en fremragende lydmæssig og visuel partner til Lyngdorf-forstærkere, især TDAI-3400 og TDAI-2210.",
-     "simpleTitle": "Et stærkt match med Lyngdorf-forstærkere",
+    "excellent pairing with Lyngdorf amplification": {
+     "sentimentAnalysis": "Cd-afspilleren beskrives gentagne gange som et særligt stærkt match til Lyngdorf-integrerede forstærkere og digitale systemer.",
+     "simpleTitle": "Fremragende kombination med Lyngdorf-forstærkere",
      "bias": "positive",
-     "key": "system-compatibility",
-     "groupId": "fbc19b9a-a860-4b6e-a01a-f617d1c384fe"
+     "key": "system",
+     "groupId": "76369395-59f6-4dda-8a4d-d50cb85c1cf1"
     },
-    "familiar CDs sound fresh and revealing": {
-     "sentimentAnalysis": "Afspilleren giver velkendte cd’er nyt liv og afslører indspilningskvaliteten med usædvanligt transparent gengivelse.",
-     "simpleTitle": "Velkendte cd’er lyder nye og afslørende",
+    "familiar CDs sound new again": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en forvandlende gengivelse, der får ofte afspillede cd’er til at føles nye og indbyder til gentagen lytning.",
+     "simpleTitle": "Velkendte cd’er lyder nye igen",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "3946f561-cab1-49f5-bc2d-36b8cc764c11"
+     "key": "sound",
+     "groupId": "6ddc934f-59f6-4898-beb0-cd5bfb4d355f"
     },
-    "simple, intuitive operation": {
-     "sentimentAnalysis": "Betjening og funktioner opleves som gennemtænkte, enkle og næsten selvforklarende.",
-     "simpleTitle": "Enkel og intuitiv betjening",
+    "outstanding dynamics and depth": {
+     "sentimentAnalysis": "Afspilleren roses for fremragende dynamik, dyb rumlig placering og en fyldig, engagerende klangbalance med kraftig bas.",
+     "simpleTitle": "Fremragende dynamik og dybde",
      "bias": "positive",
-     "key": "ease-of-use",
-     "groupId": "131cbc1b-0d23-4ccc-84a0-9077f92be722"
+     "key": "sound",
+     "groupId": "6ddc934f-59f6-4898-beb0-cd5bfb4d355f"
+    },
+    "intuitive operation": {
+     "sentimentAnalysis": "Betjening og funktioner vurderes som gennemtænkte, enkle og næsten selvforklarende.",
+     "simpleTitle": "Intuitiv betjening",
+     "bias": "positive",
+     "key": "usability",
+     "groupId": "17cba682-eb6d-4144-a3e2-378b5bfbfed2"
     }
    },
    "grouping": {
-    "3946f561-cab1-49f5-bc2d-36b8cc764c11": {
+    "6ddc934f-59f6-4898-beb0-cd5bfb4d355f": {
      "title": "Lydkvalitet",
-     "id": "3946f561-cab1-49f5-bc2d-36b8cc764c11",
+     "id": "6ddc934f-59f6-4898-beb0-cd5bfb4d355f",
      "references": [
       "7c84483a-17b7-4ac8-9e2e-40d9596f6dcf",
       "92ae3bc9-b4c8-4d5e-aa8e-1872b5c48fce",
@@ -278,9 +285,9 @@
       "9b56913d-2ab0-4a44-9d46-c2a143edff34"
      ]
     },
-    "fbc19b9a-a860-4b6e-a01a-f617d1c384fe": {
-     "title": "Systemkompatibilitet",
-     "id": "fbc19b9a-a860-4b6e-a01a-f617d1c384fe",
+    "76369395-59f6-4dda-8a4d-d50cb85c1cf1": {
+     "title": "Systemintegration",
+     "id": "76369395-59f6-4dda-8a4d-d50cb85c1cf1",
      "references": [
       "7c84483a-17b7-4ac8-9e2e-40d9596f6dcf",
       "92ae3bc9-b4c8-4d5e-aa8e-1872b5c48fce",
@@ -288,9 +295,9 @@
       "68fb9835-a71b-4d75-89db-9a9bac4e32db"
      ]
     },
-    "131cbc1b-0d23-4ccc-84a0-9077f92be722": {
+    "17cba682-eb6d-4144-a3e2-378b5bfbfed2": {
      "title": "Brugervenlighed",
-     "id": "131cbc1b-0d23-4ccc-84a0-9077f92be722",
+     "id": "17cba682-eb6d-4144-a3e2-378b5bfbfed2",
      "references": [
       "48eb63ff-f967-46b7-9ec8-8ec0c27a2312",
       "68fb9835-a71b-4d75-89db-9a9bac4e32db"

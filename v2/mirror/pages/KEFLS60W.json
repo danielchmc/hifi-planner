@@ -81,6 +81,37 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløst aktivt højtalersystem\n3-vejs lukket konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/96kHz (trådløst), 24-bit/192kHz (kablet)\nIndbygget forstærker (pr. højtaler): 500 watt Klasse D (bas), 100 watt Klasse D (mellemtone), 100 watt Klasse AB (diskant), målemetode ikke angivet\nDiskant: 19 mm (3/4”) coaxial MAT aluminiumsdome (Metamaterial Absorption Technology)\nMellemtone: 4” Uni-Q coaxial med aluminiumsmembran \nBas: 4 x 5,25” Uni-Core med aluminiumsmembran og P-Flex kantophæng\nIndbygget D/A-konverter\nMaksimal opløsning: 24-bit/384kHz (netværk), 24-bit/192kHz (HDMI/coaxial), 24-bit/96kHz (optisk)\nOBS: Ved trådløs forbindelse mellem højtalerne er maksimal opløsning på afspilningen 24-bit/96kHz. Ved kablet forbindelse mellem højtalerne øges dette til 24-bit/192kHz\nLydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis\nLydformater (netværk): DSD64/128/256)\nIndbygget dual-band trådløst netværk (802.11a/b/g/n/ac, 2,4/5GHz)\nAuto-tænd/sluk \nFjernbetjening, spikes (valgfrit) og 8 meter Ethernetkabel til indbyrdes forbindelse (valgfrit) medfølger \nMål inkl. plint: 21,2 x 109,0 x 39,4 cm (BxHxD)\nVægt (sæt): 62,4 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "title": "Tilslutninger",
+    "content": [
+     {
+      "term": "Lydudgang",
+      "value": "LFE"
+     },
+     {
+      "term": "Lydindgang",
+      "value": "HDMI, Coaxial, Optisk, Minijack/AUX"
+     },
+     {
+      "term": "Indgang (andet)",
+      "value": "Ethernet, USB A"
+     },
+     {
+      "term": "Trådløs overførsel",
+      "value": "Bluetooth-indgang, Wi-Fi"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -131,37 +162,6 @@
      {
       "term": "Brugsscenarier",
       "value": "TV, PC/Mac, Pladespiller, Subwoofer"
-     }
-    ]
-   },
-   {
-    "index": 9,
-    "title": "Tilslutninger",
-    "content": [
-     {
-      "term": "Lydudgang",
-      "value": "LFE"
-     },
-     {
-      "term": "Lydindgang",
-      "value": "HDMI, Coaxial, Optisk, Minijack/AUX"
-     },
-     {
-      "term": "Indgang (andet)",
-      "value": "Ethernet, USB A"
-     },
-     {
-      "term": "Trådløs overførsel",
-      "value": "Bluetooth-indgang, Wi-Fi"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløst aktivt højtalersystem\n3-vejs lukket konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/96kHz (trådløst), 24-bit/192kHz (kablet)\nIndbygget forstærker (pr. højtaler): 500 watt Klasse D (bas), 100 watt Klasse D (mellemtone), 100 watt Klasse AB (diskant), målemetode ikke angivet\nDiskant: 19 mm (3/4”) coaxial MAT aluminiumsdome (Metamaterial Absorption Technology)\nMellemtone: 4” Uni-Q coaxial med aluminiumsmembran \nBas: 4 x 5,25” Uni-Core med aluminiumsmembran og P-Flex kantophæng\nIndbygget D/A-konverter\nMaksimal opløsning: 24-bit/384kHz (netværk), 24-bit/192kHz (HDMI/coaxial), 24-bit/96kHz (optisk)\nOBS: Ved trådløs forbindelse mellem højtalerne er maksimal opløsning på afspilningen 24-bit/96kHz. Ved kablet forbindelse mellem højtalerne øges dette til 24-bit/192kHz\nLydformater (alle indgange): MP3, M4A, AAC, FLAC, WAV, AIFF, ALAC, WMA, LPCM, Ogg Vorbis\nLydformater (netværk): DSD64/128/256)\nIndbygget dual-band trådløst netværk (802.11a/b/g/n/ac, 2,4/5GHz)\nAuto-tænd/sluk \nFjernbetjening, spikes (valgfrit) og 8 meter Ethernetkabel til indbyrdes forbindelse (valgfrit) medfølger \nMål inkl. plint: 21,2 x 109,0 x 39,4 cm (BxHxD)\nVægt (sæt): 62,4 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
      }
     ]
    },
@@ -276,7 +276,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 6,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -573,55 +573,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF LS60 Wireless roses bredt for varm, balanceret og meget detaljeret lyd, fremragende stereoseparation, dyb bas og imponerende dynamik. Det slanke, elegante design og det praktiske streaming-økosystem øger tiltrækningen, mens opsætningen normalt er enkel, men kan blive besværlig via Wi-Fi. En tilbagevendende kritik er den begrænsede equalizer og manglende rumkorrektion, og nogle lyttere oplever bassen som lidt tynd ved lav lydstyrke eller lyden som mindre imponerende end forventet.",
+   "summary": "KEF LS60 Wireless roses bredt for varm, balanceret og meget detaljeret lyd med stor stereoseparation, dyb bas og imponerende dynamik. Det slanke, elegante design og de mange tilslutningsmuligheder øger appellen, mens KEF-appen opleves som brugervenlig, men begrænset med hensyn til equalizer og rumkorrektion. Enkelte oplevelser nævner problemer med opsætning eller rumbetingede basproblemer, og nogle lyttere kunne ønske sig en subwoofer eller bedre lydjustering.",
    "headlines": {
-    "warm, balanced and highly detailed sound": {
-     "sentimentAnalysis": "Lytterne beskriver samstemmende gengivelsen som varm, balanceret, klar, detaljeret og meget behagelig.",
-     "simpleTitle": "Varm, balanceret og meget detaljeret lyd",
+    "warm, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmelderne beskriver en varm, balanceret, klar og meget detaljeret gengivelse med stærk dynamik og en medrivende musikalsk karakter.",
+     "simpleTitle": "Varm, detaljeret og medrivende lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
+     "groupId": "68862c02-6856-4522-9308-a42f276c67bb"
     },
-    "exceptional stereo separation and spacious dynamics": {
-     "sentimentAnalysis": "Bred stereobredde, præcis kanalstyring, dybde og dynamisk skala fremhæves gentagne gange som markante styrker.",
-     "simpleTitle": "Fremragende stereoseparation og stor dynamik",
-     "bias": "positive",
+    "bass can be room-dependent or thin at low volume": {
+     "sentimentAnalysis": "Flere anmeldelser bemærker, at basgengivelsen kan afhænge af rumplacering eller lydstyrke, og en subwoofer foreslås som en mulig løsning.",
+     "simpleTitle": "Bassen kan være rumafhængig eller tynd ved lav lydstyrke",
+     "bias": "negative",
      "key": "sound",
-     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
+     "groupId": "68862c02-6856-4522-9308-a42f276c67bb"
     },
-    "slim, elegant design with a small footprint": {
-     "sentimentAnalysis": "Det slanke udseende og den attraktive finish roses gentagne gange for at passe diskret ind i boligen.",
-     "simpleTitle": "Slankt, elegant design med lille pladsbehov",
+    "easy app use with broad streaming support": {
+     "sentimentAnalysis": "Appen og betjeningen generelt opleves som enkel og praktisk med understøttelse af streamingtjenester og andre musikkilder.",
+     "simpleTitle": "Nem appbetjening og bred streamingunderstøttelse",
+     "bias": "positive",
+     "key": "app",
+     "groupId": "8f041ca5-0293-490e-bc1c-bf757574c327"
+    },
+    "slim, elegant and unobtrusive design": {
+     "sentimentAnalysis": "Den slanke profil og attraktive udseende roses for at passe elegant ind i boligen og samtidig gøre et stærkt visuelt indtryk.",
+     "simpleTitle": "Slankt, elegant og diskret design",
      "bias": "positive",
      "key": "design",
-     "groupId": "db98b8bc-81f1-4ff7-bed2-e84ec05ba446"
+     "groupId": "c6bf568c-ce1e-4c6a-974c-261b13ecdb1b"
     },
-    "limited equalizer and room correction": {
-     "sentimentAnalysis": "Flere anmeldelser værdsætter appen, men kritiserer specifikt den enkle equalizer og manglen på automatisk rummåling eller -korrektion.",
-     "simpleTitle": "Begrænset equalizer og rumkorrektion",
+    "exceptional stereo separation and soundstage": {
+     "sentimentAnalysis": "Det brede, kontrollerede stereoperspektiv og de overbevisende rumlige detaljer fremhæves gentagne gange som klare styrker.",
+     "simpleTitle": "Enestående stereoseparation og lydbillede",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "68862c02-6856-4522-9308-a42f276c67bb"
+    },
+    "equalizer and room correction are limited": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer specifikt den begrænsede equalizer og manglen på mere avanceret automatisk rummåling og -korrektion.",
+     "simpleTitle": "Equalizer og rumkorrektion er begrænset",
      "bias": "negative",
      "key": "app",
-     "groupId": "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d"
-    },
-    "bass is powerful, but can sound lean at low volume": {
-     "sentimentAnalysis": "Bassen værdsættes generelt, men to lyttere ønsker mere energi i det dybe register eller overvejer en subwoofer.",
-     "simpleTitle": "Bassen er kraftfuld, men kan virke tynd ved lav lydstyrke",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b"
-    },
-    "setup is usually easy, but Wi-Fi can be troublesome": {
-     "sentimentAnalysis": "Erfaringerne med opsætningen varierer: Én installation var nem, mens en anden havde udfald, indtil netværk og højttalertilslutning blev ændret.",
-     "simpleTitle": "Opsætningen er normalt enkel, men Wi-Fi kan give problemer",
-     "bias": "meh",
-     "key": "setup",
-     "groupId": "a22cea34-ee1a-45a0-8b2f-bad125d5cb16"
+     "groupId": "8f041ca5-0293-490e-bc1c-bf757574c327"
     }
    },
    "grouping": {
-    "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b": {
+    "68862c02-6856-4522-9308-a42f276c67bb": {
      "title": "Lydkvalitet",
-     "id": "cc0a2cff-82ff-4ce5-a6ff-f49b8423e72b",
+     "id": "68862c02-6856-4522-9308-a42f276c67bb",
      "references": [
       "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
       "87234972-0cb1-48be-966c-9bde8edaf743",
@@ -630,43 +630,32 @@
       "2f9ef60e-c61e-4cbb-9826-7c1fd5586306",
       "3006f3ab-c886-42c5-a310-1119ee8baf79",
       "ce6d5772-6d35-4e53-8bda-fd5384873f37",
-      "bb72d09b-dbed-42db-a2fe-6ec1f212f6af",
       "a03896f3-6fc7-4b93-a316-c6e88609c755",
       "84944f8d-64a2-441e-a5f8-2b19c82300af",
       "1928a48e-772f-486e-9d16-05a9fcbf6aa3",
-      "9a8cb19b-aca8-4adb-9b79-8be443206ccb",
       "abf519ca-5591-4a72-bc3e-45a5d64c2c6b",
       "f148b7f0-4650-4f05-b160-583a3683cbc4",
       "9b2e6a9b-aa01-4a21-912f-633f588d1d6f"
      ]
     },
-    "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d": {
+    "8f041ca5-0293-490e-bc1c-bf757574c327": {
      "title": "App og tilslutning",
-     "id": "70f1c40f-d8e2-45c6-b6b8-5b2c4444689d",
+     "id": "8f041ca5-0293-490e-bc1c-bf757574c327",
      "references": [
       "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
       "89e0b4a6-069f-4e11-b6f4-5e326528a19a",
-      "3006f3ab-c886-42c5-a310-1119ee8baf79",
-      "a03896f3-6fc7-4b93-a316-c6e88609c755"
+      "a03896f3-6fc7-4b93-a316-c6e88609c755",
+      "9a8cb19b-aca8-4adb-9b79-8be443206ccb"
      ]
     },
-    "db98b8bc-81f1-4ff7-bed2-e84ec05ba446": {
+    "c6bf568c-ce1e-4c6a-974c-261b13ecdb1b": {
      "title": "Design",
-     "id": "db98b8bc-81f1-4ff7-bed2-e84ec05ba446",
+     "id": "c6bf568c-ce1e-4c6a-974c-261b13ecdb1b",
      "references": [
       "3006f3ab-c886-42c5-a310-1119ee8baf79",
       "b930cc93-6f47-4e1f-9ad2-5389ae1c2d7f",
       "f148b7f0-4650-4f05-b160-583a3683cbc4",
-      "9a8cb19b-aca8-4adb-9b79-8be443206ccb"
-     ]
-    },
-    "a22cea34-ee1a-45a0-8b2f-bad125d5cb16": {
-     "title": "Installation og opsætning",
-     "id": "a22cea34-ee1a-45a0-8b2f-bad125d5cb16",
-     "references": [
-      "1a86fd63-499f-4bd8-9bcb-4e0ed6937d8b",
-      "87234972-0cb1-48be-966c-9bde8edaf743",
-      "ce6d5772-6d35-4e53-8bda-fd5384873f37"
+      "9b2e6a9b-aa01-4a21-912f-633f588d1d6f"
      ]
     }
    },

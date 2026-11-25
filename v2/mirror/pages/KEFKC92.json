@@ -21,7 +21,7 @@
    "a801c173-0931-43a7-a650-84ab6cd2ff65",
    "0d59e682-e108-4b26-ae5d-3552ad5ae3a9"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 224889,
@@ -192,12 +192,11 @@
      "productCode": "KEFKC92BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -273,7 +272,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 6,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -324,41 +323,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF KC92 leverer varm, dyb og slagkraftig bas med imponerende præcision, dynamik og biograflignende effekt. Det kompakte design er nemt at integrere i stuen, mens kompetent rådgivning fra forhandleren skaber ekstra tryghed ved købet. Standby-funktionen kan aktiveres for hurtigt under stille passager, men den samlede lydpræstation begejstrer.",
+   "summary": "KEF KC92 får stor ros for dyb, tør, slagkraftig og meget kontrolleret bas samt imponerende kraft og dynamik fra et kompakt kabinet. Hjemmebiografsystemer får en mere medrivende, biograflignende oplevelse, mens den præcise gengivelse overbeviser ved både lav og høj lydstyrke. Det elegante design og den hjælpsomme forhandlervejledning styrker helhedsindtrykket, selv om én anmeldelse kritiserer, at den automatiske dvaletilstand aktiveres for hurtigt under stille passager.",
    "headlines": {
-    "deep, punchy bass with cinematic impact": {
-     "sentimentAnalysis": "KC92 leverer usædvanligt dyb, kraftfuld og slagkraftig bas, som giver musik og hjemmebio større fysisk gennemslagskraft.",
-     "simpleTitle": "Dyb og slagkraftig bas med biografeffekt",
+    "deep, punchy and cinematic bass": {
+     "sentimentAnalysis": "Anmeldelserne roser den ekstremt dybe, tørre og slagkraftige bas, som giver hjemmebiografen en mere realistisk og medrivende oplevelse.",
+     "simpleTitle": "Dyb, slagkraftig og biograflignende bas",
      "bias": "positive",
-     "key": "deep-punchy-bass",
-     "groupId": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0"
+     "key": "sound-quality",
+     "groupId": "5868f9e5-3193-4915-a508-7897e6b81b42"
+    },
+    "powerful dynamics from a compact design": {
+     "sentimentAnalysis": "Subwooferen beskrives som usædvanligt kraftfuld og dynamisk med stor effekt trods det kompakte format.",
+     "simpleTitle": "Kraftfuld dynamik i et kompakt design",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "5868f9e5-3193-4915-a508-7897e6b81b42"
     },
     "helpful retailer guidance": {
-     "sentimentAnalysis": "Venlig og kompetent hjælp fra forhandleren gør valget tryggere og bidrager til en positiv ejeroplevelse.",
-     "simpleTitle": "Hjælpsom vejledning fra forhandleren",
+     "sentimentAnalysis": "Forhandlerservice og købsvejledning vurderes begge positivt.",
+     "simpleTitle": "Hjælpsom vejledning hos forhandleren",
      "bias": "positive",
-     "key": "retailer-guidance",
-     "groupId": "a459e48c-d319-4118-b6f0-7e53f7987387"
-    },
-    "clear precision and lively dynamics": {
-     "sentimentAnalysis": "Den præcise basgengivelse og stærke dynamik overbeviser både ved lav og høj lydstyrke.",
-     "simpleTitle": "Præcision og levende dynamik",
-     "bias": "positive",
-     "key": "precision-dynamics",
-     "groupId": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0"
-    },
-    "compact design fits the living room": {
-     "sentimentAnalysis": "Det kompakte kabinet kombinerer høj ydelse med et attraktivt udseende, der passer godt ind i stuen.",
-     "simpleTitle": "Kompakt design passer ind i stuen",
-     "bias": "positive",
-     "key": "compact-design",
-     "groupId": "06b250fa-6530-4299-a65f-89ab98bd7581"
+     "key": "customer-service",
+     "groupId": "fb3d665b-3de1-45ab-a4ba-226ee8ffe062"
     }
    },
    "grouping": {
-    "4072fc1b-6477-4498-b4ab-a647bb8d8bd0": {
+    "5868f9e5-3193-4915-a508-7897e6b81b42": {
      "title": "Lydkvalitet",
-     "id": "4072fc1b-6477-4498-b4ab-a647bb8d8bd0",
+     "id": "5868f9e5-3193-4915-a508-7897e6b81b42",
      "references": [
       "8a6a8f76-144c-4f7f-b262-914c8992e56e",
       "558d72d6-bcaf-43e3-9290-84ee40587c7a",
@@ -368,21 +360,12 @@
       "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"
      ]
     },
-    "a459e48c-d319-4118-b6f0-7e53f7987387": {
+    "fb3d665b-3de1-45ab-a4ba-226ee8ffe062": {
      "title": "Kundeservice",
-     "id": "a459e48c-d319-4118-b6f0-7e53f7987387",
+     "id": "fb3d665b-3de1-45ab-a4ba-226ee8ffe062",
      "references": [
       "83bbad48-a348-416d-b33d-ca6b1578709b",
-      "2e972250-bc18-4f9b-84cf-44f3b677fe14",
-      "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"
-     ]
-    },
-    "06b250fa-6530-4299-a65f-89ab98bd7581": {
-     "title": "Design",
-     "id": "06b250fa-6530-4299-a65f-89ab98bd7581",
-     "references": [
-      "8a6a8f76-144c-4f7f-b262-914c8992e56e",
-      "b2fadf6d-9c87-484d-885c-b3a9f26c36c7"
+      "2e972250-bc18-4f9b-84cf-44f3b677fe14"
      ]
     }
    },

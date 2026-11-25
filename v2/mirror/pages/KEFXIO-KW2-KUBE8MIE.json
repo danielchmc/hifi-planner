@@ -196,8 +196,8 @@
         "productCode": "KEFKUBE8MIEHGBK"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager mandag den 30. november",
-        "deliveryDate": "2026-11-30T00:00:00Z",
+        "description": "Forventes på lager tirsdag den 01. december",
+        "deliveryDate": "2026-12-01T00:00:00Z",
         "canBuyOnline": true,
         "inventoryStatusType": "notInStockAtpDate"
        },
@@ -208,60 +208,7 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFKUBE8MIE",
-     "reviews": {
-      "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
-      "headlines": {
-       "adds fuller, deeper and more immersive bass": {
-        "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
-        "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
-        "bias": "positive",
-        "key": "bass_sound",
-        "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
-       },
-       "compact design works well in small rooms": {
-        "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
-        "simpleTitle": "Det kompakte design fungerer godt i små rum",
-        "bias": "positive",
-        "key": "compact_rooms",
-        "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
-       }
-      },
-      "grouping": {
-       "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
-        "title": "Bas og lydkvalitet",
-        "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
-        "references": [
-         "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
-         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
-         "82ea685e-eaaf-4a2e-be85-106c4d812aee",
-         "fe224355-6f96-4104-904f-404bbf41bab4",
-         "37700f85-5cd6-40a3-99c1-9da4745fcd02",
-         "d55951fc-53aa-4545-b0ec-bcf0e3401796",
-         "713d2299-5b00-46fd-87ee-839a9e232118"
-        ]
-       },
-       "2cd3e345-8629-407a-9d89-b25591820d17": {
-        "title": "Kompakt størrelse og egnethed til rum",
-        "id": "2cd3e345-8629-407a-9d89-b25591820d17",
-        "references": [
-         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
-         "fe224355-6f96-4104-904f-404bbf41bab4",
-         "6c7c3b50-1368-41b8-b349-ab8165768a20"
-        ]
-       }
-      },
-      "rating": 4.77777777777778,
-      "count": 18,
-      "reviewCount": 10,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 0,
-       "4": 4,
-       "5": 14
-      }
-     }
+     "parentProductCode": "KEFKUBE8MIE"
     },
     {
      "brand": "KEF",
@@ -283,7 +230,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 26,
+        "availableQuantity": 22,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "17.490,-",
@@ -306,7 +253,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 9,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "17.490,-",
@@ -335,8 +282,8 @@
         "productCode": "KEFKW2RXBOXBK"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager mandag den 30. november",
-        "deliveryDate": "2026-11-30T00:00:00Z",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
         "inventoryStatusType": "notInStockAtpDate"
        },
@@ -352,8 +299,8 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager mandag den 30. november",
-    "deliveryDate": "2026-11-30T00:00:00Z",
+    "description": "Forventes på lager lørdag den 05. december",
+    "deliveryDate": "2026-12-05T00:00:00Z",
     "canBuyOnline": true,
     "numberOfStoresExperiencePartly": 6
    }
@@ -361,15 +308,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.44444444444444,
-   "count": 36,
+   "rating": 4.47368421052632,
+   "count": 38,
    "reviewCount": 16,
    "distribution": {
     "1": 2,
     "2": 1,
     "3": 2,
     "4": 5,
-    "5": 26
+    "5": 28
    }
   },
   "boxContent": [],

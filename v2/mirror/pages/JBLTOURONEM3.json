@@ -236,8 +236,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 148,
+     "numberOfStoresExperience": 22,
+     "availableQuantity": 109,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -369,12 +369,11 @@
      "productCode": "JBLTOURONEM3BL"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 03. januar",
+     "deliveryDate": "2027-01-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 10,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -510,7 +509,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 33,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -643,12 +642,11 @@
      "productCode": "JBLTOURONEM3GR"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 18. december",
+     "deliveryDate": "2026-12-18T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 28,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -736,27 +734,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "JBL TOUR ONE M3 leverer en varm, kraftfuld og omsluttende lyd med imponerende samlet kvalitet, mens støjreduktionen også fungerer rigtig godt. Håndtering og funktioner er tilfredsstillende, og det eksklusive over-ear-design gør et stærkt indtryk. Komforten er dog mere blandet, da der rapporteres om dårlig pasform og mulig allergi over for kunstlæder.",
+   "summary": "JBL Tour One M3 leverer en varm, kraftfuld og immersiv lyd med imponerende overordnet kvalitet. Støjreduktionen virker meget effektiv, mens funktionerne og betjeningen føles gennemarbejdede. Komforten er stadig et problem, fordi pasformen kan føles ustabil, og kunstlæderet kan udløse hudirritation.",
    "headlines": {
-    "clear, high-quality sound": {
-     "sentimentAnalysis": "Lyden roses konsekvent som god, fremragende eller fantastisk og har en stærk samlet kvalitet.",
-     "simpleTitle": "Klar lyd i høj kvalitet",
+    "clear, impressive sound": {
+     "sentimentAnalysis": "Høretelefonerne roses konsekvent for god, fremragende eller imponerende lyd.",
+     "simpleTitle": "Klar og imponerende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "c691a511-bdb6-4371-98b2-630ddb93397a"
+     "groupId": "7445b998-0713-4065-8d21-17d12e764b01"
     },
-    "uncomfortable fit and artificial-leather allergy": {
-     "sentimentAnalysis": "Komfortproblemerne omfatter dårlig pasform og hudirritation forårsaget af kunstlædermaterialet.",
-     "simpleTitle": "Ukomfortabel pasform og allergi over for kunstlæder",
+    "uncomfortable fit and synthetic leather": {
+     "sentimentAnalysis": "Komforten kritiseres, fordi høretelefonerne sidder dårligt, og kunstlæderet kan give kontaktallergi.",
+     "simpleTitle": "Ubehagelig pasform og kunstlæder",
      "bias": "negative",
-     "key": "comfort-fit",
-     "groupId": "927a994a-c8a4-4fce-932d-b80da94c2588"
+     "key": "comfort",
+     "groupId": "6b9f6c96-b68e-414d-b9ed-802eda37f59f"
     }
    },
    "grouping": {
-    "c691a511-bdb6-4371-98b2-630ddb93397a": {
+    "7445b998-0713-4065-8d21-17d12e764b01": {
      "title": "Lydkvalitet",
-     "id": "c691a511-bdb6-4371-98b2-630ddb93397a",
+     "id": "7445b998-0713-4065-8d21-17d12e764b01",
      "references": [
       "047ff6e1-bc16-406e-8388-6ce1523da696",
       "d084d23a-0a61-4932-bee0-f0fbc4a6c526",
@@ -765,9 +763,9 @@
       "1acb683d-8ac8-4dd3-83ea-826c4c15cf3e"
      ]
     },
-    "927a994a-c8a4-4fce-932d-b80da94c2588": {
-     "title": "Komfort og pasform",
-     "id": "927a994a-c8a4-4fce-932d-b80da94c2588",
+    "6b9f6c96-b68e-414d-b9ed-802eda37f59f": {
+     "title": "Komfort",
+     "id": "6b9f6c96-b68e-414d-b9ed-802eda37f59f",
      "references": [
       "047ff6e1-bc16-406e-8388-6ce1523da696",
       "46d382bb-81da-4e4e-b872-4382d4702d4e"

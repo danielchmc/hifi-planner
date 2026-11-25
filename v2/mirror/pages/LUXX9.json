@@ -25,7 +25,7 @@
    "c57a65d7-c64c-4db8-be3e-2fd6aa19e519",
    "08496ccc-3dcd-4b33-8c0c-ef4ad948ab84"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 282425,
@@ -142,12 +142,11 @@
      "productCode": "LUXX9SI"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 28. november",
+     "deliveryDate": "2026-11-28T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 3,
-     "availableQuantity": 5,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 2,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

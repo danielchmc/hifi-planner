@@ -99,7 +99,7 @@
    "code": "KEFLSX2LT-KEFKUBE8MIE",
    "ribbons": [
     {
-     "text": "Spar 10%",
+     "text": "Spar 12%",
      "ribbonType": "discount",
      "link": {
       "title": "",
@@ -140,15 +140,15 @@
     }
    ],
    "priceDetails": {
-    "price": 10335,
-    "priceFormatted": "10.335,-",
+    "price": 10128,
+    "priceFormatted": "10.128,-",
     "priceBefore": 11485,
     "priceBeforeFormatted": "11.485,-",
-    "priceSavingsFormatted": "1.150,-",
+    "priceSavingsFormatted": "1.357,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 10335,
+    "unitPrice": 10128,
     "unitPriceBefore": 11485
    },
    "bundleProducts": [
@@ -173,11 +173,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 30,
+        "availableQuantity": 22,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "6.540,-",
-       "priceRaw": 6540,
+       "priceFormatted": "6.333,-",
+       "priceRaw": 6333,
        "salesUnit": "sæt",
        "rawSalesUnit": "set",
        "quantity": 1
@@ -197,7 +197,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 29,
+        "availableQuantity": 17,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.333,-",
@@ -217,11 +217,10 @@
         "productCode": "KEFLSX2LTSTWH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager tirsdag den 01. december",
+        "deliveryDate": "2026-12-01T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 4,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "6.333,-",
        "priceRaw": 6333,
@@ -232,48 +231,54 @@
      ],
      "parentProductCode": "KEFLSX2LT",
      "reviews": {
-      "summary": "KEF LSX II LT leverer en bemærkelsesværdig klar, detaljeret, varm og kraftfuld lyd fra det kompakte kabinet og fungerer imponerende til musik, tv og computerbrug. Nem opsætning, brede tilslutningsmuligheder, streaming og fleksibel rumtilpasning giver stor praktisk værdi, mens den solide konstruktion og det flotte design styrker helhedsindtrykket. De største forbehold gælder en lejlighedsvis ustabil app eller trådløs forbindelse, enkelte problemer med fjernbetjeningen samt ønsket om en subwoofer til dybere bas.",
+      "summary": "KEF LSX II LT leverer bemærkelsesværdigt klar, detaljeret og kraftfuld lyd fra et kompakt og stilfuldt kabinet og imponerer til musik, tv og skrivebordsbrug. Den varme, slagkraftige og omsluttende gengivelse får højttalerne til at lyde langt større, end størrelsen antyder, mens streamingmuligheder, tilslutninger og rumtilpasning giver stor alsidighed. Udfordringer med app, Wi-Fi og fjernbetjening kan dog være frustrerende, og lyttere, der ønsker dyb bas, kan få glæde af en subwoofer; samlet set roses lydkvaliteten og værdien højt.",
       "headlines": {
-       "remarkably clear and detailed sound from a compact speaker": {
-        "sentimentAnalysis": "Anmeldelserne roser konsekvent lydens klarhed, detaljering, varme og størrelse i forhold til den kompakte konstruktion.",
-        "simpleTitle": "Bemærkelsesværdig klar og detaljeret lyd fra en kompakt højttaler",
+       "clear, detailed and powerful sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den usædvanligt klare, detaljerede, varme og kraftfulde lyd, som overgår forventningerne til den kompakte størrelse.",
+        "simpleTitle": "Klar, detaljeret og kraftfuld lyd",
         "bias": "positive",
-        "key": "sound_quality",
-        "groupId": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf"
+        "key": "sound-quality",
+        "groupId": "1680773d-0a3a-4736-a7d7-5d244b6f9803"
        },
-       "a subwoofer adds deeper bass for a fuller experience": {
-        "sentimentAnalysis": "Flere anmeldelser finder den indbyggede bas kompetent, men anbefaler en subwoofer til dybere bas, især med bastung musik, tv og hjemmebiograf.",
-        "simpleTitle": "En subwoofer giver dybere bas og en mere komplet oplevelse",
+       "bass is good, but a subwoofer adds depth": {
+        "sentimentAnalysis": "Højttalerne leverer tilfredsstillende bas, mens flere anmeldelser beskriver en subwoofer som en effektiv opgradering til dybere og mere komplet basgengivelse.",
+        "simpleTitle": "God bas, men en subwoofer giver mere dybde",
         "bias": "positive",
-        "key": "bass",
-        "groupId": "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e"
+        "key": "bass-and-subwoofer"
        },
-       "the app and wireless connection can be unreliable": {
-        "sentimentAnalysis": "Streaming- og appfunktionerne værdsættes, men flere anmeldelser nævner forbindelsesudfald, vanskelig wi-fi-opsætning og komplicerede hi-res-forbindelser.",
-        "simpleTitle": "Appen og den trådløse forbindelse kan være ustabil",
+       "app and wireless reliability can be frustrating": {
+        "sentimentAnalysis": "Flere anmeldelser nævner en app, der kan være besværlig eller miste forbindelsen, samt ustabil trådløs ydelse og kompliceret opsætning af Hi-Res-lyd.",
+        "simpleTitle": "App- og Wi-Fi-stabilitet kan frustrere",
         "bias": "negative",
-        "key": "connectivity_app",
-        "groupId": "f777ebca-079f-4ea8-abea-15541f42bc3f"
+        "key": "app-control",
+        "groupId": "f54860b6-95ea-4a62-b678-4545a2f9779e"
        },
-       "compact design suits desks and living rooms": {
-        "sentimentAnalysis": "De kompakte højttalere roses gentagne gange som gode skrivebordshøjttalere og attraktive, kompetente løsninger til tv.",
-        "simpleTitle": "Det kompakte design passer til skrivebord og stue",
+       "flexible connections and streaming": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter det brede udvalg af digitale, analoge og trådløse tilslutninger samt nem adgang til flere streamingplatforme.",
+        "simpleTitle": "Fleksible tilslutninger og streaming",
         "bias": "positive",
-        "key": "desktop_tv_use",
-        "groupId": "62cc4d6f-a4e6-415f-a5e4-2a768885323e"
+        "key": "connectivity",
+        "groupId": "a6ee9743-5aa2-4baa-95b8-b74f147cb2e7"
        },
-       "high volume remains powerful and clean": {
-        "sentimentAnalysis": "Højttalerne fylder rum med overbevisende kraft, forbliver kontrollerede ved høj lydstyrke og bevarer kvaliteten ved lav volumen.",
-        "simpleTitle": "Kraftfuld og ren lyd ved høj lydstyrke",
+       "compact speakers fill large spaces": {
+        "sentimentAnalysis": "Anmeldelserne er imponerede over den brede, rumfyldende og overraskende kraftfulde lyd fra så små kabinetter.",
+        "simpleTitle": "Kompakte højttalere fylder store rum",
         "bias": "positive",
-        "key": "sound_quality",
-        "groupId": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf"
+        "key": "sound-quality",
+        "groupId": "1680773d-0a3a-4736-a7d7-5d244b6f9803"
+       },
+       "remote and volume controls have quirks": {
+        "sentimentAnalysis": "Nogle anmeldelser kritiserer den manglende volumenkontrol på højttaleren, utilsigtede kildeskift og en fjernbetjening, der skal rettes præcist mod højttaleren.",
+        "simpleTitle": "Fjernbetjening og volumenkontrol har svagheder",
+        "bias": "negative",
+        "key": "app-control",
+        "groupId": "f54860b6-95ea-4a62-b678-4545a2f9779e"
        }
       },
       "grouping": {
-       "9f46716a-06dc-4075-82e6-fd6c0e4c40bf": {
+       "1680773d-0a3a-4736-a7d7-5d244b6f9803": {
         "title": "Lydkvalitet",
-        "id": "9f46716a-06dc-4075-82e6-fd6c0e4c40bf",
+        "id": "1680773d-0a3a-4736-a7d7-5d244b6f9803",
         "references": [
          "78598f5c-7bae-4cfb-a114-65377b29d66a",
          "c1411965-33ff-4700-b7a0-c4deeffe8f2b",
@@ -310,7 +315,6 @@
          "2ec76039-6770-489e-b3a8-e31cf93974ff",
          "fdee9451-7983-45b3-aae9-88b79a14f98c",
          "c45d04d5-e196-437c-8726-396a94450db4",
-         "154101ee-1024-4bd2-b1d3-cf5e2dd54cb8",
          "49d8e20e-9fb5-490f-bf47-0547c451c8c9",
          "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
          "6b9fa542-db69-41b0-a8ce-bf5aed1551bb",
@@ -323,69 +327,49 @@
          "3619cfdf-6198-44c8-ba95-c4c862e5c27b"
         ]
        },
-       "f777ebca-079f-4ea8-abea-15541f42bc3f": {
-        "title": "Tilslutning og app",
-        "id": "f777ebca-079f-4ea8-abea-15541f42bc3f",
+       "f54860b6-95ea-4a62-b678-4545a2f9779e": {
+        "title": "App og betjening",
+        "id": "f54860b6-95ea-4a62-b678-4545a2f9779e",
         "references": [
          "78598f5c-7bae-4cfb-a114-65377b29d66a",
-         "e356f13a-a586-47ec-9825-40cbda843cfb",
          "837d2655-bfb4-474c-8afe-7fde62f81ee1",
          "fc26e554-0002-49ff-be41-f2058629b512",
-         "f9286671-9a69-4770-b5bf-896b8d4d1ee6",
-         "00ab3818-ef5e-4141-84ec-b881befcd1ad",
+         "75ee8e27-f0c9-482f-b54e-3d9f3eafa970",
          "87b055c8-45e6-4043-a6d1-2bef6796658c",
+         "6188fa9c-c776-4f36-b57b-8b5999437925",
+         "2ec76039-6770-489e-b3a8-e31cf93974ff",
          "c45d04d5-e196-437c-8726-396a94450db4",
-         "154101ee-1024-4bd2-b1d3-cf5e2dd54cb8",
          "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
-         "6b9fa542-db69-41b0-a8ce-bf5aed1551bb",
          "1b3d2b3a-19a0-45a3-b120-05fd78936072",
-         "3619cfdf-6198-44c8-ba95-c4c862e5c27b"
+         "1e959feb-9406-4eff-895f-37dfaed5ce7c",
+         "6b9fa542-db69-41b0-a8ce-bf5aed1551bb"
         ]
        },
-       "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e": {
-        "title": "Bas og subwoofer",
-        "id": "5388da15-f1ed-4b0c-8439-bfb1e3df9d6e",
+       "a6ee9743-5aa2-4baa-95b8-b74f147cb2e7": {
+        "title": "Tilslutning og streaming",
+        "id": "a6ee9743-5aa2-4baa-95b8-b74f147cb2e7",
         "references": [
          "e356f13a-a586-47ec-9825-40cbda843cfb",
-         "00ab3818-ef5e-4141-84ec-b881befcd1ad",
-         "75ee8e27-f0c9-482f-b54e-3d9f3eafa970",
-         "68faa21c-a2d3-43ac-b74c-e619722da40f",
-         "5caa28fe-06ee-48c6-834f-f331292eb690",
-         "a5c81973-2939-4dd1-8298-b9ae6ef6b294",
-         "83f92403-d7f9-4a8e-9d47-c02bc5cde057",
-         "321eb842-7a54-445b-966a-e3d4be3afe6a",
-         "8bd1e2a0-8013-48ee-b3c3-beef23749955",
-         "64f5bb0f-9440-4cf7-aa62-1bc8d84087c4",
-         "b5bf472b-aa86-4d6d-9efe-fd683b567a21",
-         "ef60b96b-3828-4954-a243-9a84ff9e21a8"
-        ]
-       },
-       "62cc4d6f-a4e6-415f-a5e4-2a768885323e": {
-        "title": "Brug ved computer og tv",
-        "id": "62cc4d6f-a4e6-415f-a5e4-2a768885323e",
-        "references": [
+         "f9286671-9a69-4770-b5bf-896b8d4d1ee6",
          "00004815-34d4-46a5-9fe1-8e8315fc4a4e",
-         "f6696e0a-5c8e-488f-9c2b-dd1ace1ecd1d",
-         "c3285563-70bf-4593-8cc3-bbe9fe7b2b97",
-         "ceabd886-d53d-45e0-ae6d-e785ccc9f76a",
-         "ef60b96b-3828-4954-a243-9a84ff9e21a8",
-         "92aecb45-8f87-4e98-b8c4-0d17fd160861",
-         "a5c81973-2939-4dd1-8298-b9ae6ef6b294",
-         "2ec76039-6770-489e-b3a8-e31cf93974ff",
+         "d687315c-508c-421f-a974-1996e6421726",
+         "c45d04d5-e196-437c-8726-396a94450db4",
          "154101ee-1024-4bd2-b1d3-cf5e2dd54cb8",
-         "d687315c-508c-421f-a974-1996e6421726"
+         "6b9fa542-db69-41b0-a8ce-bf5aed1551bb",
+         "3619cfdf-6198-44c8-ba95-c4c862e5c27b",
+         "78598f5c-7bae-4cfb-a114-65377b29d66a"
         ]
        }
       },
-      "rating": 4.70588235294118,
-      "count": 102,
+      "rating": 4.70873786407767,
+      "count": 103,
       "reviewCount": 54,
       "distribution": {
        "1": 0,
        "2": 0,
        "3": 7,
        "4": 16,
-       "5": 79
+       "5": 80
       }
      }
     },
@@ -406,8 +390,8 @@
         "productCode": "KEFKUBE8MIEHGBK"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager mandag den 30. november",
-        "deliveryDate": "2026-11-30T00:00:00Z",
+        "description": "Forventes på lager tirsdag den 01. december",
+        "deliveryDate": "2026-12-01T00:00:00Z",
         "canBuyOnline": true,
         "inventoryStatusType": "notInStockAtpDate"
        },
@@ -418,66 +402,13 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFKUBE8MIE",
-     "reviews": {
-      "summary": "KEF Kube 8 er en kompakt og stilfuld subwoofer, der tilfører varme, kontante og mærkbart dybere basgengivelse til KEF LSX-systemer. Den ekstra dybbas får musikken til at lyde fyldigere og mere medrivende, samtidig med at den forbliver velkontrolleret og effektiv ved lav lydstyrke. Egnetheden til små rum og de fleksible indstillinger gør Kube 8 til en fremragende opgradering for en mere komplet lydoplevelse.",
-      "headlines": {
-       "adds fuller, deeper and more immersive bass": {
-        "sentimentAnalysis": "Subwooferen forbedrer LSX-gengivelsen markant med fyldigere og dybere bas, større dybde og en rigere musikoplevelse.",
-        "simpleTitle": "Tilfører fyldigere, dybere og mere medrivende bas",
-        "bias": "positive",
-        "key": "bass_sound",
-        "groupId": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0"
-       },
-       "compact design works well in small rooms": {
-        "sentimentAnalysis": "Det kompakte kabinet fremhæves som et praktisk valg til små rum og begrænset plads.",
-        "simpleTitle": "Det kompakte design fungerer godt i små rum",
-        "bias": "positive",
-        "key": "compact_rooms",
-        "groupId": "2cd3e345-8629-407a-9d89-b25591820d17"
-       }
-      },
-      "grouping": {
-       "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0": {
-        "title": "Bas og lydkvalitet",
-        "id": "9ff23ff1-e36c-43ee-af84-5c578fc2b0d0",
-        "references": [
-         "f86a19ed-8131-48d0-a9f7-e18ead5fd1c8",
-         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
-         "82ea685e-eaaf-4a2e-be85-106c4d812aee",
-         "fe224355-6f96-4104-904f-404bbf41bab4",
-         "37700f85-5cd6-40a3-99c1-9da4745fcd02",
-         "d55951fc-53aa-4545-b0ec-bcf0e3401796",
-         "713d2299-5b00-46fd-87ee-839a9e232118"
-        ]
-       },
-       "2cd3e345-8629-407a-9d89-b25591820d17": {
-        "title": "Kompakt størrelse og egnethed til rum",
-        "id": "2cd3e345-8629-407a-9d89-b25591820d17",
-        "references": [
-         "9748edd8-6686-4c7e-a086-8d0b11a8de84",
-         "fe224355-6f96-4104-904f-404bbf41bab4",
-         "6c7c3b50-1368-41b8-b349-ab8165768a20"
-        ]
-       }
-      },
-      "rating": 4.77777777777778,
-      "count": 18,
-      "reviewCount": 10,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 0,
-       "4": 4,
-       "5": 14
-      }
-     }
+     "parentProductCode": "KEFKUBE8MIE"
     }
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "description": "Forventes på lager mandag den 30. november",
-    "deliveryDate": "2026-11-30T00:00:00Z",
+    "description": "Forventes på lager tirsdag den 01. december",
+    "deliveryDate": "2026-12-01T00:00:00Z",
     "canBuyOnline": true,
     "numberOfStoresExperiencePartly": 1
    }
@@ -485,15 +416,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.71666666666667,
-   "count": 120,
+   "rating": 4.72357723577236,
+   "count": 123,
    "reviewCount": 64,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 7,
     "4": 20,
-    "5": 93
+    "5": 96
    }
   },
   "boxContent": [],

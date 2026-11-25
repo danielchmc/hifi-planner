@@ -146,7 +146,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 68,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -404,7 +404,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 25,
+     "availableQuantity": 23,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -532,8 +532,8 @@
      "productCode": "KEFMUOMOSSGREEN"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
      "inventoryStatusType": "notInStockAtpDate"
@@ -663,8 +663,8 @@
      "productCode": "KEFMUOSILVERDUSK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
      "inventoryStatusType": "notInStockAtpDate"
@@ -734,41 +734,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFMUO leverer varm, detaljeret og medrivende lyd i en stilfuld og solidt bygget kompakt højttaler. Kontant, kontrolleret bas, klare mellemtoner og musikalske diskanttoner gør højttaleren særligt fornøjelig til hverdagslytning, med stærk trådløs lyd og USB-C-lydindgang. Samlet set er pakken meget tilfredsstillende, selv om den tilhørende app kan være upålidelig på visse Android-telefoner.",
+   "summary": "KEFMUO roses bredt som en stilfuld og solidt bygget kompakt højttaler med varm, klar og detaljeret lyd, der imponerer i forhold til størrelsen. Bluetooth, aptX Adaptive og USB-C-lyd giver stor alsidighed, og batteritiden får også ros. Den største indvending gælder Android-appen, mens en anmeldelse også oplever, at minimumslydstyrken er for høj på iPhone.",
    "headlines": {
-    "very good sound in a compact speaker": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver højttaleren som fremragende eller rigtig godt klingende, især i forhold til den kompakte størrelse.",
-     "simpleTitle": "Rigtig god lyd i en kompakt højttaler",
+    "impressive sound for the compact size": {
+     "sentimentAnalysis": "Flere anmeldelser roser højttalerens samlede lyd meget begejstret, især taget den kompakte størrelse i betragtning.",
+     "simpleTitle": "Imponerende lyd i den kompakte størrelse",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "b085ffc3-876e-4885-a317-f3ed3b579f82"
+     "key": "sound-quality",
+     "groupId": "a28caee5-8b9c-4b2c-845e-5da1a2e94020"
     },
     "stylish and solid construction": {
-     "sentimentAnalysis": "Designet opfattes konsekvent som attraktivt, særpræget og solidt bygget.",
+     "sentimentAnalysis": "Højttaleren får konsekvent ros for sit attraktive udseende, sin premium-fornemmelse og byggekvalitet.",
      "simpleTitle": "Stilfuldt og solidt design",
      "bias": "positive",
-     "key": "design",
-     "groupId": "85d7705d-23b8-4e39-8b13-fce5357a22cb"
+     "key": "design-build",
+     "groupId": "c7c1c39c-20d6-47ff-b79e-63df1c269673"
     },
-    "detailed, balanced and musical sound": {
-     "sentimentAnalysis": "Lyden roses for klare mellemtoner, detaljerede diskanttoner, en neutral gengivelse samt præcis og kontrolleret bas.",
-     "simpleTitle": "Detaljeret, balanceret og musikalsk lyd",
+    "clear, detailed and musical sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klar, detaljeret og kontrolleret gengivelse med behagelige mellemtoner, musikalsk diskant og præcis bas.",
+     "simpleTitle": "Klar, detaljeret og musikalsk lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "b085ffc3-876e-4885-a317-f3ed3b579f82"
+     "key": "sound-quality",
+     "groupId": "a28caee5-8b9c-4b2c-845e-5da1a2e94020"
     },
-    "strong Bluetooth and USB-C audio support": {
-     "sentimentAnalysis": "aptX Adaptive, Bluetooth 5.4 samt USB-C-lydindgang eller højopløst afspilning fremhæves som nyttige styrker.",
-     "simpleTitle": "Stærk Bluetooth- og USB-C-lydunderstøttelse",
+    "strong wireless and USB-C audio support": {
+     "sentimentAnalysis": "aptX Adaptive, Bluetooth 5.4 og USB-C-lydindgang eller højopløst afspilning fremhæves som værdifulde forbindelsesfunktioner.",
+     "simpleTitle": "Stærk trådløs og USB-C-lydunderstøttelse",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "a0a0c60b-d826-4e07-8e14-78ec43209ebc"
+     "groupId": "251f27ea-c6ec-4526-a50f-0594df171750"
     }
    },
    "grouping": {
-    "b085ffc3-876e-4885-a317-f3ed3b579f82": {
+    "a28caee5-8b9c-4b2c-845e-5da1a2e94020": {
      "title": "Lydkvalitet",
-     "id": "b085ffc3-876e-4885-a317-f3ed3b579f82",
+     "id": "a28caee5-8b9c-4b2c-845e-5da1a2e94020",
      "references": [
       "70b74a16-ac27-4915-be52-7eb4db923058",
       "1a450b61-2a8d-497b-8b78-01780739e9e5",
@@ -780,9 +780,9 @@
       "ad2ebd9c-23f7-4271-9d88-2cbd56c0edd6"
      ]
     },
-    "85d7705d-23b8-4e39-8b13-fce5357a22cb": {
+    "c7c1c39c-20d6-47ff-b79e-63df1c269673": {
      "title": "Design og byggekvalitet",
-     "id": "85d7705d-23b8-4e39-8b13-fce5357a22cb",
+     "id": "c7c1c39c-20d6-47ff-b79e-63df1c269673",
      "references": [
       "1a450b61-2a8d-497b-8b78-01780739e9e5",
       "637aaf14-1a20-4c75-a37f-a216d6706804",
@@ -790,9 +790,9 @@
       "ad2ebd9c-23f7-4271-9d88-2cbd56c0edd6"
      ]
     },
-    "a0a0c60b-d826-4e07-8e14-78ec43209ebc": {
-     "title": "Forbindelse og lydunderstøttelse",
-     "id": "a0a0c60b-d826-4e07-8e14-78ec43209ebc",
+    "251f27ea-c6ec-4526-a50f-0594df171750": {
+     "title": "Forbindelse og lydfunktioner",
+     "id": "251f27ea-c6ec-4526-a50f-0594df171750",
      "references": [
       "70b74a16-ac27-4915-be52-7eb4db923058",
       "7e68a9bb-6faa-4eae-ac81-be4bd9a0fac7"

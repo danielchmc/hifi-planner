@@ -54,6 +54,12 @@
    "url": "/tilbehor/hojtaler-tilbehor/",
    "id": 69666
   },
+  "stockItemAlternative": {
+   "save": "892,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=KEFS2FS",
+   "availableQuantity": 1,
+   "lowestPrice": "2.998,-"
+  },
   "variants": [
    {
     "id": 222341,
@@ -105,8 +111,8 @@
      "productCode": "KEFS2FSBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
      "inventoryStatusType": "notInStockAtpDate"
@@ -187,8 +193,8 @@
      "productCode": "KEFS2FSWH"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 30. november",
-     "deliveryDate": "2026-11-30T00:00:00Z",
+     "description": "Forventes på lager tirsdag den 01. december",
+     "deliveryDate": "2026-12-01T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
      "inventoryStatusType": "notInStockAtpDate"
@@ -228,41 +234,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFS2FS-stativerne roses bredt for solid, førsteklasses konstruktion, elegant design, sikker støtte til højttalerne og gennemtænkt kabelføring. Den hurtige montering, de matchende overflader og den pålidelige levering styrker det gennemførte helhedsindtryk, mens pris og kvalitet generelt vurderes positivt trods en enkelt bemærkning om en høj pris. Opsætningen skaber et stabilt og stilfuldt grundlag for en varm, punchy og omsluttende lytteoplevelse, selv om et enkelt problem med den trådløse forbindelse nævnes.",
+   "summary": "KEFS2FS-standerne er flot forarbejdet, solide og et særdeles elegant match til KEF LS50-højttalere. Den stabile konstruktion, den ideelle højttalerhøjde, den skjulte kabelføring og den enkle montering skaber en gennemført og immersiv lytteoplevelse. God værdi for pengene og hurtig levering øger attraktiviteten, selv om der rapporteres om lejlighedsvise problemer med den trådløse forbindelse i ét setup.",
    "headlines": {
-    "premium, elegant construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende stativerne som stilfulde, solide, veludførte og gennemtænkte med sikker støtte til højttalerne.",
-     "simpleTitle": "Førsteklasses, elegant konstruktion",
+    "elegant, premium design": {
+     "sentimentAnalysis": "Standene roses gentagne gange for deres elegante udseende, flotte finish og solide konstruktion.",
+     "simpleTitle": "Elegant design i høj kvalitet",
      "bias": "positive",
      "key": "design_build",
-     "groupId": "7fa9a947-ae17-4dd7-9228-45d778269849"
+     "groupId": "cea893b8-47b4-46d6-bd81-46a7cdfaa113"
     },
     "neat, concealed cable routing": {
-     "sentimentAnalysis": "Den integrerede kabelføring roses for at gøre kabler nemme at skjule og fuldende det rene udtryk.",
+     "sentimentAnalysis": "Den integrerede kabelføring ses som en gennemtænkt detalje, der holder installationen ren og ryddelig.",
      "simpleTitle": "Pæn, skjult kabelføring",
      "bias": "positive",
      "key": "cable_management",
-     "groupId": "fa567fdc-40a5-442b-8ec6-914fedd9c8e1"
+     "groupId": "221779b0-173e-405f-a402-c8d54f1d7b59"
     },
-    "quick, reliable setup and delivery": {
-     "sentimentAnalysis": "Stativerne er nemme at samle, og leveringen beskrives som hurtig eller tidligere end lovet.",
-     "simpleTitle": "Hurtig montering og pålidelig levering",
+    "quick and straightforward assembly": {
+     "sentimentAnalysis": "Monteringen beskrives konsekvent som hurtig, enkel og gennemtænkt.",
+     "simpleTitle": "Hurtig og enkel montering",
      "bias": "positive",
-     "key": "assembly_delivery",
-     "groupId": "f7b99f90-8489-4dc1-8f7e-82e852d416de"
+     "key": "setup",
+     "groupId": "5697e035-f773-4c7a-a798-63f98f268e5d"
     },
-    "good value, though not inexpensive": {
-     "sentimentAnalysis": "Pris og kvalitet vurderes samlet positivt, men den høje pris er stadig tydelig.",
-     "simpleTitle": "God værdi, men ikke billige",
-     "bias": "meh",
-     "key": "price_value",
-     "groupId": "e80b41ac-d281-4204-8b6f-0a8753ee173e"
+    "secure positioning at an ideal height": {
+     "sentimentAnalysis": "Standene giver en sikker, solid platform og en flot hævet placering.",
+     "simpleTitle": "Sikker placering i ideel højde",
+     "bias": "positive",
+     "key": "stability",
+     "groupId": "dac846c1-300a-433f-8ae0-26c26a456dd0"
+    },
+    "good value and prompt delivery": {
+     "sentimentAnalysis": "Positive kommentarer fremhæver den overbevisende værdi og effektive levering.",
+     "simpleTitle": "God værdi og hurtig levering",
+     "bias": "positive",
+     "key": "value_delivery",
+     "groupId": "d6a22cd2-8f5a-4a71-a51c-f32bf5938eef"
     }
    },
    "grouping": {
-    "7fa9a947-ae17-4dd7-9228-45d778269849": {
+    "cea893b8-47b4-46d6-bd81-46a7cdfaa113": {
      "title": "Design og byggekvalitet",
-     "id": "7fa9a947-ae17-4dd7-9228-45d778269849",
+     "id": "cea893b8-47b4-46d6-bd81-46a7cdfaa113",
      "references": [
       "615daf9b-f7cf-4c63-b8aa-a3da4e55948f",
       "290a65de-acbe-4d81-978f-871be6995fbf",
@@ -274,30 +287,35 @@
       "3c46b4a1-6501-4725-98d4-86dc0a583ad4"
      ]
     },
-    "f7b99f90-8489-4dc1-8f7e-82e852d416de": {
-     "title": "Montering og levering",
-     "id": "f7b99f90-8489-4dc1-8f7e-82e852d416de",
-     "references": [
-      "d1e964c7-b2c2-4e34-8c4c-336b5d905a44",
-      "9aea16df-88d8-4fae-ac30-29e0fd29af1b",
-      "b100f56b-c830-4d84-91ac-303f457a3b9c",
-      "aa714de6-d21b-4c03-bc8e-89386b67c50f"
-     ]
-    },
-    "fa567fdc-40a5-442b-8ec6-914fedd9c8e1": {
-     "title": "Kabelføring",
-     "id": "fa567fdc-40a5-442b-8ec6-914fedd9c8e1",
+    "221779b0-173e-405f-a402-c8d54f1d7b59": {
+     "title": "Kabelstyring",
+     "id": "221779b0-173e-405f-a402-c8d54f1d7b59",
      "references": [
       "9aea16df-88d8-4fae-ac30-29e0fd29af1b",
       "b100f56b-c830-4d84-91ac-303f457a3b9c",
       "08cd7ef3-2bd6-4660-b789-8c8d7252fa6a"
      ]
     },
-    "e80b41ac-d281-4204-8b6f-0a8753ee173e": {
-     "title": "Pris og værdi",
-     "id": "e80b41ac-d281-4204-8b6f-0a8753ee173e",
+    "5697e035-f773-4c7a-a798-63f98f268e5d": {
+     "title": "Montering",
+     "id": "5697e035-f773-4c7a-a798-63f98f268e5d",
      "references": [
-      "8069a083-9606-440f-9f0d-aa7a275efef7",
+      "9aea16df-88d8-4fae-ac30-29e0fd29af1b",
+      "b100f56b-c830-4d84-91ac-303f457a3b9c"
+     ]
+    },
+    "dac846c1-300a-433f-8ae0-26c26a456dd0": {
+     "title": "Stabilitet og højde",
+     "id": "dac846c1-300a-433f-8ae0-26c26a456dd0",
+     "references": [
+      "290a65de-acbe-4d81-978f-871be6995fbf",
+      "6484aad4-c8c1-4138-a7c5-13ded9eafa53"
+     ]
+    },
+    "d6a22cd2-8f5a-4a71-a51c-f32bf5938eef": {
+     "title": "Værdi og levering",
+     "id": "d6a22cd2-8f5a-4a71-a51c-f32bf5938eef",
+     "references": [
       "3bae7f30-bf6d-4ff2-ae28-9dfddf5ae1e4",
       "aa714de6-d21b-4c03-bc8e-89386b67c50f"
      ]

@@ -84,6 +84,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Aktivt stereo højtalersystem\n2-vejs basrefleks-konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/96kHz (kablet)\nIndbygget forstærker (pr. højtaler): 70 watt Klasse D (bas), 30 watt Klasse D (diskant), målemetode ikke angivet\nDiskant: 1” coaxial aluminiumsdome\nBas/mellemtone: 5,25” Uni-Q med membran i magnesium/aluminium \nMusic Integrity Engine (MIE)\nIndbygget D/A-konverter\nMaksimal opløsning: 16-bit/48kHz (HDMI), 24-bit/96kHz (optisk), 24-bit/192kHz (USB-C)\nAuto-tænd/sluk \nFjernbetjening og 3 meter USB-C kabel til indbyrdes forbindelse medfølger \nVægt (sæt): 11,3 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -152,15 +161,6 @@
      {
       "term": "Stemmestyring",
       "value": "Nej"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Aktivt stereo højtalersystem\n2-vejs basrefleks-konstruktion \nOpløsning på musiksignal mellem højtalere (resamplet): 24-bit/96kHz (kablet)\nIndbygget forstærker (pr. højtaler): 70 watt Klasse D (bas), 30 watt Klasse D (diskant), målemetode ikke angivet\nDiskant: 1” coaxial aluminiumsdome\nBas/mellemtone: 5,25” Uni-Q med membran i magnesium/aluminium \nMusic Integrity Engine (MIE)\nIndbygget D/A-konverter\nMaksimal opløsning: 16-bit/48kHz (HDMI), 24-bit/96kHz (optisk), 24-bit/192kHz (USB-C)\nAuto-tænd/sluk \nFjernbetjening og 3 meter USB-C kabel til indbyrdes forbindelse medfølger \nVægt (sæt): 11,3 kg\n* Afhænger af EQ-indstilling\n** De opgivne tal for energiforbrug er pr. højtaler"
      }
     ]
    },
@@ -392,7 +392,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 11,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -500,7 +500,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 14,
+     "availableQuantity": 13,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -620,7 +620,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 36,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -730,7 +730,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 3,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -816,49 +816,43 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEFCODAW leverer varm, klar og meget afbalanceret lyd fra et kompakt design med fyldig bas, der fungerer godt selv uden subwoofer. Bluetooth- og USB-C-afspilning imponerer især, mens de mange tilslutningsmuligheder og praktiske betjeningselementer gør hverdagen enkel. Eksklusive materialer og et flot udseende øger appellen, selv om appen, fjernbetjeningen og lejlighedsvise opdateringer kan være frustrerende.",
+   "summary": "KEFCODAW leverer en varm, klar og velafbalanceret lyd i et kompakt og attraktivt design, med særligt stærk ydeevne via Bluetooth og USB-C. Tilslutning og daglig betjening er generelt enkel, mens materialer og konstruktion føles eksklusive. Appens ustabilitet, problemer med firmwareopdateringer og den dårlige fjernbetjening er tydelige svagheder, men den medrivende og kraftfulde lyd er stadig den største fordel.",
    "headlines": {
-    "clear, balanced and immersive sound": {
-     "sentimentAnalysis": "Højttalerne roses gentagne gange for klar, rummelig, afbalanceret og fremragende lyd.",
-     "simpleTitle": "Klar, afbalanceret og omsluttende lyd",
+    "clear, balanced and spacious sound": {
+     "sentimentAnalysis": "Lyden roses gentagne gange for at være klar, balanceret, rummelig og meget behagelig.",
+     "simpleTitle": "Klar, balanceret og rummelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "48162a3e-2210-4796-85c4-54d6e9781e8d"
+     "groupId": "06cacad3-33d7-4659-8b61-51c6e878b21b"
     },
-    "easy connections and convenient controls": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver enkel tilslutning, praktiske fysiske betjeningselementer samt USB-C- og Bluetooth-muligheder.",
-     "simpleTitle": "Nem tilslutning og praktisk betjening",
+    "simple connection and everyday operation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver tilslutning og betjening som praktisk og enkel.",
+     "simpleTitle": "Enkel tilslutning og daglig betjening",
      "bias": "positive",
      "key": "usability",
-     "groupId": "f35171b6-0ab3-4580-be04-9dff841d144e"
-    },
-    "strong bass without a subwoofer": {
-     "sentimentAnalysis": "Lyden opleves som fyldig og basstærk nok til at fungere godt uden en ekstra subwoofer.",
-     "simpleTitle": "Kraftig bas uden subwoofer",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "48162a3e-2210-4796-85c4-54d6e9781e8d"
-    },
-    "app and update problems": {
-     "sentimentAnalysis": "Softwarens stabilitet er en tydelig svaghed, da en mislykket opdatering og en ustabil app begrænser adgang og equalizer-funktioner.",
-     "simpleTitle": "Problemer med app og opdateringer",
-     "bias": "negative",
-     "key": "usability",
-     "groupId": "f35171b6-0ab3-4580-be04-9dff841d144e"
+     "groupId": "b2655d6f-ffe0-42bb-ac03-270b922a2951"
     },
     "attractive, premium-looking design": {
-     "sentimentAnalysis": "Materialer, finish og farve vurderes som flotte nok til at have højttalerne stående fremme i hjemmet.",
-     "simpleTitle": "Flot design med eksklusivt udtryk",
+     "sentimentAnalysis": "Materialer, finish og udseende vurderes som eksklusive og velegnede til synlig placering.",
+     "simpleTitle": "Attraktivt design i høj kvalitet",
      "bias": "positive",
      "key": "design",
-     "groupId": "4a39aeb2-ba44-40e1-ac99-d18441a9e06f"
+     "groupId": "ebd5538e-1ada-4f48-bf3a-15e04fa82548"
+    },
+    "app and update reliability problems": {
+     "sentimentAnalysis": "Softwareproblemerne omfatter en mislykket opdatering, vanskelig gendannelse og en app, der hverken forbinder stabilt eller giver adgang til equalizer-funktioner.",
+     "simpleTitle": "Problemer med app og opdateringer",
+     "bias": "negative",
+     "key": "software",
+     "groupId": "2ff2857f-815c-44d6-8706-95952f318c55"
     }
    },
    "grouping": {
-    "48162a3e-2210-4796-85c4-54d6e9781e8d": {
+    "06cacad3-33d7-4659-8b61-51c6e878b21b": {
      "title": "Lydkvalitet",
-     "id": "48162a3e-2210-4796-85c4-54d6e9781e8d",
+     "id": "06cacad3-33d7-4659-8b61-51c6e878b21b",
      "references": [
+      "5be5fd34-7e16-4730-86c7-df99614d7591",
       "3bee90d3-d3cc-4a90-a01b-56f8d1333f93",
       "730a978a-b399-488c-aead-627dfbace7fc",
       "6337b637-9653-478f-883a-6bb45c54cd9a",
@@ -866,43 +860,49 @@
       "5bd08bb8-748f-434d-aabe-737d1054b7ee",
       "2fdf6062-e512-4e3d-8a78-69b09c51fb1f",
       "7c6ceee1-d70f-453f-bdec-7023c5321a22",
-      "e029a1ae-6421-442d-a563-2a558f47659d",
       "08030037-67c6-4ac3-ae49-7d0240f59ca2",
-      "9861be3f-cb56-4914-ae2e-3f7226abfc78",
       "249f4fa1-3e15-401c-8e42-3351b042d7c2",
-      "7f98726f-3a11-457d-9d7b-5f8535c9497e"
+      "7f98726f-3a11-457d-9d7b-5f8535c9497e",
+      "9861be3f-cb56-4914-ae2e-3f7226abfc78",
+      "e029a1ae-6421-442d-a563-2a558f47659d"
      ]
     },
-    "f35171b6-0ab3-4580-be04-9dff841d144e": {
-     "title": "Tilslutning og betjening",
-     "id": "f35171b6-0ab3-4580-be04-9dff841d144e",
+    "b2655d6f-ffe0-42bb-ac03-270b922a2951": {
+     "title": "Opsætning og brug",
+     "id": "b2655d6f-ffe0-42bb-ac03-270b922a2951",
      "references": [
       "a8d83b41-8100-406c-a7a1-05554ba6e786",
       "e029a1ae-6421-442d-a563-2a558f47659d",
       "9861be3f-cb56-4914-ae2e-3f7226abfc78",
+      "249f4fa1-3e15-401c-8e42-3351b042d7c2"
+     ]
+    },
+    "2ff2857f-815c-44d6-8706-95952f318c55": {
+     "title": "App og firmware",
+     "id": "2ff2857f-815c-44d6-8706-95952f318c55",
+     "references": [
       "b6be1465-3934-4676-990f-5ab228cabc99",
-      "249f4fa1-3e15-401c-8e42-3351b042d7c2",
       "4c0152f8-0f09-433d-9a4b-e3a2f3d08b2a"
      ]
     },
-    "4a39aeb2-ba44-40e1-ac99-d18441a9e06f": {
+    "ebd5538e-1ada-4f48-bf3a-15e04fa82548": {
      "title": "Design og byggekvalitet",
-     "id": "4a39aeb2-ba44-40e1-ac99-d18441a9e06f",
+     "id": "ebd5538e-1ada-4f48-bf3a-15e04fa82548",
      "references": [
       "a8d83b41-8100-406c-a7a1-05554ba6e786",
       "7f98726f-3a11-457d-9d7b-5f8535c9497e"
      ]
     }
    },
-   "rating": 4.8,
-   "count": 30,
-   "reviewCount": 14,
+   "rating": 4.8125,
+   "count": 32,
+   "reviewCount": 15,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 2,
-    "5": 26
+    "5": 28
    }
   },
   "boxContent": [

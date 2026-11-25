@@ -57,21 +57,21 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Sender og modtager til trådløs tilslutning af KEF subwoofer\nRækkevidde: op til 30 meter ved fri passage mellem sender og modtager\n24-bit/48kHz trådløs lydoverførsel\nLydindgang (sender): L/R RCA / LFA\nUdgangssignal: 2 V (RMS)\nSignal/støj: >80 dB\nFrekvensgang: 10-20.000 Hz\nLatency: <17 ms\nMål: 7,2 x 2,1 x 7,8 cm (sender), 3,7 x 2,7 x 7,2 cm (modtager) (BxHxD)\nFarve: Sort \nUSB-Micro til USB-A kabel medfølger\nStrømforsyning til sender sælges separat (5V/1A, USB-A)"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
      {
       "term": "Lydindgang",
       "value": "Analog RCA"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Sender og modtager til trådløs tilslutning af KEF subwoofer\nRækkevidde: op til 30 meter ved fri passage mellem sender og modtager\n24-bit/48kHz trådløs lydoverførsel\nLydindgang (sender): L/R RCA / LFA\nUdgangssignal: 2 V (RMS)\nSignal/støj: >80 dB\nFrekvensgang: 10-20.000 Hz\nLatency: <17 ms\nMål: 7,2 x 2,1 x 7,8 cm (sender), 3,7 x 2,7 x 7,2 cm (modtager) (BxHxD)\nFarve: Sort \nUSB-Micro til USB-A kabel medfølger\nStrømforsyning til sender sælges separat (5V/1A, USB-A)"
      }
     ]
    }
@@ -134,8 +134,8 @@
      "productCode": "KEFKW1KITBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 02. januar",
-     "deliveryDate": "2027-01-02T00:00:00Z",
+     "description": "Forventes på lager fredag den 18. december",
+     "deliveryDate": "2026-12-18T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
      "inventoryStatusType": "notInStockAtpDate"
@@ -201,34 +201,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "KEF KW1KIT imponerer med hurtig, enkel installation og en stabil trådløs forbindelse. Adapteren gør det muligt at placere subwooferen pænt uden kabler og integreres problemfrit med kompatible KEF-systemer. Bekvemmeligheden føles pengene værd trods den lidt høje pris og bidrager til et ryddeligt, punchy og immersivt bas-setup.",
+   "summary": "KEF KW1KIT roses for nem installation, stabil trådløs forbindelse og ren, kabelfri placering af subwooferen. Adapteren integreres problemfrit med kompatible KEF-systemer og giver en mere fleksibel og ryddelig opsætning med omsluttende bas. Den relativt høje pris og i ét tilfælde meget lange leveringstid er de væsentligste forbehold.",
    "headlines": {
-    "quick and easy installation": {
-     "sentimentAnalysis": "Installationen beskrives konsekvent som enkel, hurtig og problemfri.",
-     "simpleTitle": "Hurtig og enkel installation",
+    "simple installation": {
+     "sentimentAnalysis": "Installationen beskrives gentagne gange som hurtig, nem og problemfri.",
+     "simpleTitle": "Nem installation",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "e18f0849-7640-4af3-8f69-16e3d0e49c93"
+     "key": "simple-installation",
+     "groupId": "e0644540-5fab-466d-9c03-f2817c909501"
     },
     "reliable wireless performance": {
-     "sentimentAnalysis": "Den trådløse forbindelse beskrives som god, stabil og fungerende som forventet.",
+     "sentimentAnalysis": "Den trådløse forbindelse vurderes som god, stabil og fuldt funktionel i kompatible opsætninger.",
      "simpleTitle": "Stabil trådløs ydeevne",
      "bias": "positive",
-     "key": "wireless",
-     "groupId": "239efa8c-17c7-4e9b-9745-303ff10609ff"
+     "key": "reliable-wireless",
+     "groupId": "79a627e4-08c2-49ce-94f8-44821008dd1c"
     },
-    "freedom from unnecessary cables": {
-     "sentimentAnalysis": "Kabelfri placering af subwooferen værdsættes for større fleksibilitet og mindre visuelt rod.",
-     "simpleTitle": "Frihed fra unødvendige kabler",
+    "flexible cable-free subwoofer placement": {
+     "sentimentAnalysis": "Adapteren gør det lettere at placere en kompatibel subwoofer frit uden unødvendige højttalerkabler.",
+     "simpleTitle": "Fleksibel kabelfri subwooferplacering",
      "bias": "positive",
-     "key": "cable-free-placement",
-     "groupId": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347"
+     "key": "flexible-placement",
+     "groupId": "2695a4f2-03f9-40e7-b85c-818e64cfc631"
+    },
+    "an extra power cable may be needed": {
+     "sentimentAnalysis": "Det kabelfri koncept kan stadig kræve et ekstra kabel til strøm eller forbindelse i nogle opsætninger.",
+     "simpleTitle": "Et ekstra strømkabel kan være nødvendigt",
+     "bias": "negative",
+     "key": "extra-cable",
+     "groupId": "e0644540-5fab-466d-9c03-f2817c909501"
     }
    },
    "grouping": {
-    "e18f0849-7640-4af3-8f69-16e3d0e49c93": {
-     "title": "Installation",
-     "id": "e18f0849-7640-4af3-8f69-16e3d0e49c93",
+    "e0644540-5fab-466d-9c03-f2817c909501": {
+     "title": "Installation og brug",
+     "id": "e0644540-5fab-466d-9c03-f2817c909501",
      "references": [
       "2ee1ab35-dea9-47e5-ae22-6b1fa530c385",
       "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
@@ -238,9 +245,9 @@
       "6c0d518f-d1d2-4150-b949-ccdc90430d9d"
      ]
     },
-    "239efa8c-17c7-4e9b-9745-303ff10609ff": {
+    "79a627e4-08c2-49ce-94f8-44821008dd1c": {
      "title": "Trådløs forbindelse",
-     "id": "239efa8c-17c7-4e9b-9745-303ff10609ff",
+     "id": "79a627e4-08c2-49ce-94f8-44821008dd1c",
      "references": [
       "b58e3536-d248-45e0-95b6-00ea0b8c65b7",
       "325378e8-cba6-42dc-b04c-710984eab3e0",
@@ -249,9 +256,9 @@
       "2e5868c2-5071-4703-8449-68a4193ec25f"
      ]
     },
-    "4b19d2e9-946b-4dbb-a63f-e23da7c4d347": {
+    "2695a4f2-03f9-40e7-b85c-818e64cfc631": {
      "title": "Kabelfri placering",
-     "id": "4b19d2e9-946b-4dbb-a63f-e23da7c4d347",
+     "id": "2695a4f2-03f9-40e7-b85c-818e64cfc631",
      "references": [
       "325378e8-cba6-42dc-b04c-710984eab3e0",
       "a270a5f7-a641-4f02-942b-ba709fb29fac",
