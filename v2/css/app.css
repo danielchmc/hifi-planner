@@ -1429,3 +1429,14 @@ html[data-theme="dark"] .tb-stale { background: #3a2a0c; border-color: #8a5f12; 
 .pl-stale { display: flex; align-items: center; gap: 6px; margin-top: 6px; padding: 5px 8px; border-radius: var(--r-sm); background: #fff5e0; color: #8a5300; font-size: 11px; line-height: 1.35; }
 html[data-theme="dark"] .pl-stale { background: #3a2a0c; color: #ffcf7a; }
 .prices .noprice { color: #b3261e; font-weight: 600; font-size: .92em; }
+/* each page's turn button, beside its label above the page (landscape ↔ portrait) */
+.page-label { display: flex; align-items: center; gap: 8px; top: -26px; height: 22px; }
+.page-rot { display: inline-flex; align-items: center; gap: 4px; height: 22px; padding: 0 8px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--panel); color: var(--muted); font: 600 10.5px var(--ui); text-transform: none; letter-spacing: 0; cursor: pointer; }
+.page-rot:hover { color: var(--fg); border-color: var(--line2); background: var(--panel2); }
+/* sharing: who the link is for, in its own colour (colleagues: blue, the customer: green) */
+.share-who { display: flex; align-items: center; gap: 8px; padding: 8px 12px; margin-bottom: 12px; border-radius: var(--r); font-size: 13px; }
+.share-who span { color: inherit; opacity: .8; }
+.share-who.colleague { background: #e8f0fe; color: #1a4fa0; }
+.share-who.customer { background: #e6f4ea; color: #1e6b3a; }
+html[data-theme="dark"] .share-who.colleague { background: #1b2a44; color: #9cc0ff; }
+html[data-theme="dark"] .share-who.customer { background: #17321f; color: #8fd8a6; }

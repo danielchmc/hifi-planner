@@ -17,9 +17,33 @@
   let wiring = null, spaceDown = false, order = '', lastPtr = null, lastImgClick = { id: null, t: 0 };
   C.hd = false;
 
-  const pageSize = () => (store.doc.orient === 'portrait' ? { w: SHORT, h: LONG } : { w: LONG, h: SHORT });
-  const pageRect = (i) => { const s = pageSize(); return { x: i * (s.w + GAP), y: 0, w: s.w, h: s.h }; };
-  C.pageSize = pageSize; C.pageRect = pageRect;
+  /* Pages side by side, each landscape or portrait on its own (2026-11-25): doc.po holds one orientation per page when they differ,
+     else doc.orient is every page's. pageSize(i) / pageRect(i) are page i's; without i, page 1's. */
+  const ori = (i) => { const d = store.doc; return (d.po && d.po[i || 0]) || d.orient || 'landscape'; };
+  const pageSize = (i) => (ori(i) === 'portrait' ? { w: SHORT, h: LONG } : { w: LONG, h: SHORT });
+  const pageRect = (i) => { let x = 0; for (let j = 0; j < (i || 0); j++) x += pageSize(j).w + GAP; const s = pageSize(i); return { x, y: 0, w: s.w, h: s.h }; };
+  const pagesW = () => pageRect(store.doc.pages).x - GAP, pagesH = () => Math.max(...Array.from({ length: store.doc.pages }, (_, i) => pageSize(i).h));
+  C.pageSize = pageSize; C.pageRect = pageRect; C.pageOrient = ori;
+  // one orientation for all pages again → doc.orient, no doc.po
+  const tidyPo = (d) => { if (!d.po) return; d.po.length = d.pages; for (let i = 0; i < d.pages; i++) if (!d.po[i]) d.po[i] = d.orient || 'landscape'; if (d.po.every((o) => o === d.po[0])) { d.orient = d.po[0]; delete d.po; } };
+  const setOri = (d, i, o) => { d.po = Array.from({ length: d.pages }, (_, j) => ori(j)); d.po[i] = o; };
+  // turn page i (landscape ↔ portrait): what is on it stays where it is on the page, moved in where it would stick out; the pages
+  // after it, and what is on them, move along by the change in width
+  const rotate = (i, to) => {
+    const d = store.doc, old = pageRect(i), o = to || (ori(i) === 'portrait' ? 'landscape' : 'portrait'); if (o === ori(i)) return false;
+    const pageOf = (cx) => { for (let j = 0; j < d.pages; j++) { const r = pageRect(j); if (cx < r.x + r.w + GAP / 2) return j; } return d.pages; };
+    const where = d.items.map((it) => { const g = measure(it); return [it, g, pageOf(it.x + g.w / 2)]; });
+    setOri(d, i, o);
+    const nw = pageRect(i), dx = nw.w - old.w;
+    where.forEach(([it, g, p]) => {
+      if (p > i) it.x += dx;
+      else if (p === i) { it.x = nw.x + clamp(it.x - old.x, 0, Math.max(0, nw.w - g.w)); it.y = clamp(it.y, 0, Math.max(0, nw.h - g.h)); }
+    });
+    tidyPo(d); return true;
+  };
+  C.rotatePage = (i) => { if (rotate(i)) { store.commit(); HP.toast(t('Page {} is now ', 'Side {} er nu ').replace('{}', i + 1) + (ori(i) === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')) + '.', { ms: 5000, action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } };
+  // every page landscape or portrait (Filer → A4 …)
+  C.rotateAll = (o) => { const d = store.doc; let any = false; for (let i = 0; i < d.pages; i++) any = rotate(i, o) || any; d.orient = o; delete d.po; store.commit(); return any; };
 
   /* ================= CI marks =================
      A mark is a small lettered symbol on the floor plan. One letter per product (doc.mk keeps the order), the shape shows the
@@ -638,19 +662,22 @@
 
   /* ================= pages ================= */
   function renderPages() {
-    const d = store.doc, s = pageSize();
+    const d = store.doc;
     pagesEl.textContent = '';
     for (let i = 0; i < d.pages; i++) {
       const r = pageRect(i);
       pagesEl.append(h('.page', { style: { left: r.x + 'px', top: r.y + 'px', width: r.w + 'px', height: r.h + 'px' } },
-        h('.page-label.no-print', null, 'A4 · ' + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')) + ' · ' + (i + 1) + '/' + d.pages),
-        i === d.pages - 1 && d.pages > 1 && h('button.page-x.no-print', { title: t('Remove page', 'Fjern side'), onclick: () => { d.pages--; store.commit(); } }, icon('x', 14)),
+        h('.page-label.no-print', null, h('span', null, 'A4 · ' + (ori(i) === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')) + ' · ' + (i + 1) + '/' + d.pages),
+          // turn this page: landscape ↔ portrait
+          h('button.page-rot', { title: t('Turn this page (portrait / landscape)', 'Drej siden (stående / liggende)'), onpointerdown: (e) => e.stopPropagation(), onclick: () => C.rotatePage(i) }, icon('rotate', 12), h('span', null, ori(i) === 'portrait' ? t('Landscape', 'Liggende') : t('Portrait', 'Stående')))),
+        i === d.pages - 1 && d.pages > 1 && h('button.page-x.no-print', { title: t('Remove page', 'Fjern side'), onclick: () => { d.pages--; tidyPo(d); store.commit(); } }, icon('x', 14)),
         h('.page-foot', null, h('span', { html: HP.klubbenSvg() }),
           h('.page-meta', null, h('div.shopline', null, [HP.shopProfile().name, HP.shopProfile().phone && t('Tel. ', 'Tlf. ') + HP.shopProfile().phone, HP.shopProfile().email].filter(Boolean).join('  ·  ')),
             h('div', null, [HP.seller() && t('Your adviser: ', 'Din rådgiver: ') + HP.seller().name, d.name, HP.today(), d.pages > 1 && (i + 1) + '/' + d.pages].filter(Boolean).join('  ·  '))))));
     }
-    const r = pageRect(d.pages);
-    pagesEl.append(h('button.page-add.no-print', { style: { left: r.x + 'px', top: '0px', height: s.h + 'px' }, title: t('Add an A4 page', 'Tilføj en A4-side'), onclick: () => { d.pages++; store.commit(); } }, icon('plus'), h('span', null, t('Add page', 'Tilføj side'))));
+    const r = pageRect(d.pages), last = pageSize(d.pages - 1);
+    // a new page turns the way the last one does
+    pagesEl.append(h('button.page-add.no-print', { style: { left: r.x + 'px', top: '0px', height: last.h + 'px' }, title: t('Add an A4 page', 'Tilføj en A4-side'), onclick: () => { const o = ori(d.pages - 1); if (d.po || o !== (d.orient || 'landscape')) { d.po = Array.from({ length: d.pages }, (_, j) => ori(j)).concat([o]); } d.pages++; tidyPo(d); store.commit(); } }, icon('plus'), h('span', null, t('Add page', 'Tilføj side'))));
   }
 
   /* ================= view ================= */
@@ -680,8 +707,8 @@
   // the part of the canvas not covered by the Oversigt panel (docked on the right)
   const openArea = () => { const r = vp.getBoundingClientRect(), ly = document.getElementById('layers'); const cut = ly && !ly.hidden && ly.offsetWidth && innerWidth > 1024 ? ly.offsetWidth + 20 : 0; return { left: r.left, top: r.top, width: Math.max(200, r.width - cut), height: r.height }; };
   C.fit = () => {
-    const d = store.doc, s = pageSize(), r = openArea();
-    let x0 = 0, y0 = 0, x1 = d.pages * (s.w + GAP) - GAP, y1 = s.h;
+    const d = store.doc, r = openArea();
+    let x0 = 0, y0 = 0, x1 = pagesW(), y1 = pagesH();
     d.items.forEach((it) => { if (it.hid) return; const g = measure(it); x0 = Math.min(x0, it.x); y0 = Math.min(y0, it.y); x1 = Math.max(x1, it.x + g.w); y1 = Math.max(y1, it.y + g.h); });
     const pad = 48, z = clamp(Math.min((r.width - pad * 2) / (x1 - x0), (r.height - pad * 2) / (y1 - y0)), 0.15, 1.5);
     view.z = z; view.x = (r.width - (x1 - x0) * z) / 2 - x0 * z; view.y = (r.height - (y1 - y0) * z) / 2 - y0 * z;
@@ -1477,7 +1504,8 @@
     M.push({ el: HP.panels.scaleStepper() });
     M.push('sep');
     add(t('Save', 'Gem'), 'Ctrl+S', 'download', HP.panels.save);
-    add(t('Share link…', 'Del link…'), 'Ctrl+Shift+L', 'link', HP.panels.share);
+    add(t('Share with a colleague…', 'Del med kollega…'), 'Ctrl+Shift+L', 'users', HP.panels.shareColleague);
+    add(t('Send to the customer…', 'Send til kunden…'), '', 'send', HP.panels.shareCustomer);
     add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', () => HP.cover.dialog());
     add(t('Clear canvas', 'Ryd lærredet'), '', 'trash', C.clearCanvas, { danger: true, disabled: !d.items.length });
     HP.menu(x, y, M);
@@ -1607,31 +1635,32 @@
   /* ================= print ================= */
   // the A4 pages as sheets (clones of the canvas, fitted to A4), for printing and for the customer view (js/cover.js)
   C.sheets = () => {
-    const d = store.doc, s = pageSize(), mm = d.orient === 'portrait' ? [210, 297] : [297, 210], px = (m) => (m * 96) / 25.4;
-    const k = Math.min(px(mm[0]) / s.w, px(mm[1]) / s.h), ox = (px(mm[0]) - s.w * k) / 2, oy = (px(mm[1]) - s.h * k) / 2; // fit A4, centred
+    const d = store.doc, px = (m) => (m * 96) / 25.4;
     store.sel.clear(); store.selConn = null; refreshSel();
     const out = [];
     for (let i = 0; i < d.pages; i++) {
+      const s = pageSize(i), port = ori(i) === 'portrait', mm = port ? [210, 297] : [297, 210];
+      const k = Math.min(px(mm[0]) / s.w, px(mm[1]) / s.h), ox = (px(mm[0]) - s.w * k) / 2, oy = (px(mm[1]) - s.h * k) / 2; // fit A4, centred
       const r = pageRect(i), clone = world.cloneNode(true);
       clone.removeAttribute('id'); clone.classList.remove('wiring');
       clone.style.transform = 'translate(' + ox + 'px,' + oy + 'px) scale(' + k + ') translate(' + -r.x + 'px,' + -r.y + 'px)';
       // screen-only marks inside a card (SYSTEM, UDGÅET, AUTO, not priced) are hidden, not removed: the card keeps its exact size,
       // so its ports stay where the wires (drawn on screen) end. Everything else that is screen-only is removed.
       clone.querySelectorAll('.no-print').forEach((e) => { if (e.closest('.item.k-product, .item.k-mark')) e.style.visibility = 'hidden'; else e.remove(); });
-      out.push(h('.sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
+      out.push(h('.sheet.' + (port ? 'port' : 'land'), { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, clone));
     }
-    return { sheets: out, mm };
+    return { sheets: out, mm: [210, 297] }; // mm: the cover's size (always portrait)
   };
   C.print = (opts) => {
-    const d = store.doc, s = pageSize();
-    const total = d.pages * (s.w + GAP) - GAP;
-    const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; return cx < 0 || cx > total || cy < 0 || cy > s.h; }).length;
+    const d = store.doc, total = pagesW();
+    const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; if (cx < 0 || cx > total || cy < 0) return true; for (let i = 0; i < d.pages; i++) { const r = pageRect(i); if (cx <= r.x + r.w + GAP / 2) return cy > r.h; } return false; }).length;
     if (outside) HP.toast(t(outside + ' item(s) are outside the A4 pages and will not be printed.', outside + ' element(er) ligger uden for A4-siderne og bliver ikke printet.'), { kind: 'warn', ms: 7000 });
     const { sheets, mm } = C.sheets();
     const root = h('#print-root');
-    if (opts && opts.cover) root.append(h('.sheet.cover-sheet', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, opts.cover));
+    if (opts && opts.cover) root.append(h('.sheet.cover-sheet.port', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, opts.cover)); // the cover: always portrait
     sheets.forEach((sh) => root.append(sh));
-    const st = h('style', { textContent: '@page{size:A4 ' + (d.orient === 'portrait' ? 'portrait' : 'landscape') + ';margin:0}' });
+    // each sheet prints on its own page size: named pages (CSS page), so a document can mix portrait and landscape
+    const st = h('style', { textContent: '@page{size:A4 ' + (ori(0) === 'portrait' ? 'portrait' : 'landscape') + ';margin:0}@page port{size:A4 portrait;margin:0}@page land{size:A4 landscape;margin:0}#print-root .sheet.port{page:port}#print-root .sheet.land{page:land}' });
     document.head.append(st); document.body.append(root); document.body.classList.add('printing');
     if (opts && opts.cover && HP.cover) HP.cover.paginate(root); // a long price list continues on more cover sheets
     const done = () => { root.remove(); st.remove(); document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };

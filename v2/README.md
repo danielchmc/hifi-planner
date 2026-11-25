@@ -79,6 +79,7 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - The canvas grid is 20 units (100 when zoomed out). An A4 page is 1400 × 1000 units (portrait 1000 × 1400) and pages are 100 apart, so every page edge falls exactly on a grid dot. Printing scales the page uniformly to fit A4 and centres it (1.5 mm side margins, since 1400 : 1000 is 1 % narrower than A4).
 - A new floor plan is placed on the grid and its frame is sized in whole grid steps; the image keeps its proportions inside the frame, so a measured scale stays true. Moving and resizing the plan keeps it on the grid.
 - Drawings from before this change (document version 3, page width 1414, gap 60) are converted when opened: items on page 2 and later move with their page.
+- **Each page landscape or portrait (2026-11-25).** Above each page, beside *A4 · liggende · 1/2*, a **Stående / Liggende** button turns that page. What is on it stays where it is on the page (moved in where it would stick out), the pages after it move along with everything on them, and Undo puts it back. A new page turns the way the last one does. Filer → *Alle sider stående/liggende* turns them all. Stored as `doc.po` (one orientation per page) only while the pages differ, else `doc.orient`; share links and QR codes carry it. Printing gives each sheet its own page size (CSS named pages), so one PDF can mix portrait and landscape; the **cover is always portrait**. `C.rotatePage`, `C.rotateAll`, `pageSize(i)`, `pageRect(i)` in `js/canvas.js`.
 
 ## Mouse controls
 
@@ -256,7 +257,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261126-0010`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261126-0030`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -324,7 +325,12 @@ Prices and discounts for one proposal, without touching the catalogue: **Filer �
 
 ## Share links
 
-**Share link** in the top bar packs the whole canvas (products, cables, notes, page setup) into the URL after `#p=`, in a compact format (about half the length of a plain encoding). Nothing is uploaded. Opening the link loads a copy; the floor plan image is not included.
+Sharing with colleagues and with customers is kept apart (2026-11-25), in Filer and in the right-click menu, each with its own group, dialog and colour:
+
+- **Kolleger → Del med kollega…** (Ctrl+Shift+L; blue): a link that opens an editable copy of the canvas in HiFi Planner, to carry on with. The dialog says never to send it to a customer.
+- **Kunde → Send til kunden…** (green): the customer's link, read only on any phone without logging in, the same page as the QR code on the printed cover; with *Se kundens side* and *Print med QR-kode…*. **Kunde → Print / PDF…** sits in the same group.
+
+The whole proposal is inside the link, so nothing is uploaded and later changes need a new link. `Pn.shareColleague`, `Pn.shareCustomer` in `js/panels.js`.
 
 ## I/O standard: ports, connectors and cables
 

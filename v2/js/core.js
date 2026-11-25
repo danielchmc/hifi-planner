@@ -156,6 +156,8 @@
     down: '<path d="m6 9 6 6 6-6"/>', // chevron-down
     play: '<polygon points="6 3 20 12 6 21 6 3"/>', // play
     layers: '<path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>', // layers
+    users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>', // users
+    send: '<path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/>', // send
     'user-plus': '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/>', // user-plus
     ruler: '<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/>', // ruler
   };
@@ -558,7 +560,8 @@
       doc.conns.filter((c) => idx.has(c.a.item) && idx.has(c.b.item)).map((c) => { const r = [idx.get(c.a.item), c.a.key, idx.get(c.b.item), c.b.key], x = [S(c.cable) || 0, Math.round((c.shift || 0) / 5), c.lv || 0, c.m || 0, S(c.ad) || 0, c.lp != null ? Math.round(c.lp * 1000) + 1 : 0]; while (x.length && !x[x.length - 1]) x.pop(); return r.concat(x); }), // [.., cable, shift, length SKU, metres, adapter]
       [doc.ms || 34, (doc.mk || []).map(S), doc.sc || 0, 4].concat(doc.lite ? [1] : []), // 5th: a products-and-prices-only copy (HP.share.lite)
       doc.cv ? [doc.cv.c || '', doc.cv.s || '', doc.cv.sh || [], doc.cv.d || ''].concat(doc.cv.r === 0 ? [0] : []) : 0, // cover: customer, adviser, shop [name, phone, email], date
-      doc.pr && HP.hasPr(doc.pr) ? doc.pr : 0]; // price adjustments (prices and discounts for this proposal only)
+      doc.pr && HP.hasPr(doc.pr) ? doc.pr : 0, // price adjustments (prices and discounts for this proposal only)
+      doc.po ? doc.po.map((o) => (o === 'portrait' ? 'P' : 'L')).join('') : 0]; // each page's orientation, when they differ
   }
   function expand(a) {
     if (!Array.isArray(a) || a[0] !== 3) throw new Error('bad link');
@@ -570,7 +573,7 @@
       : { id: ids[n], kind: 'prices', x: r[1] * 10, y: r[2] * 10 });
     const conns = a[8].map((r) => ({ id: HP.uid(), a: { item: ids[r[0]], key: r[1] }, b: { item: ids[r[2]], key: r[3] }, cable: r[4] || null, shift: (r[5] || 0) * 5, ...(r[6] ? { lv: r[6] } : {}), ...(r[7] ? { m: r[7] } : {}), ...(r[8] ? { ad: r[8] } : {}), ...(r[9] ? { lp: (r[9] - 1) / 1000 } : {}) }));
     const cv = a[10] ? { c: a[10][0], s: a[10][1], sh: a[10][2], d: a[10][3], r: a[10][4] === 0 ? 0 : 1 } : null;
-    return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, a[9] && a[9][4] ? { lite: 1 } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
+    return Object.assign(cv ? { cv } : {}, a[11] ? { pr: a[11] } : {}, a[9] && a[9][4] ? { lite: 1 } : {}, a[12] ? { po: [...a[12]].map((c) => (c === 'P' ? 'portrait' : 'landscape')) } : {}, { v: a[9] ? a[9][3] || 3 : 2, name: a[1], pages: a[2], orient: a[3] ? 'portrait' : 'landscape', ci: !!a[4], ciSize: a[5], cardScale: a[6] / 100, items, conns, plan: null }, a[9] ? { ms: a[9][0], mk: a[9][1], sc: a[9][2] || 0 } : {});
   }
   // price adjustments: does the proposal have any (a line's price or discount, or a total discount)?
   HP.hasPr = (pr) => !!pr && (!!(pr.ta || pr.tp) || Object.values(pr.l || {}).some((x) => x && (x.p != null || x.d || x.r)));

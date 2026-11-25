@@ -308,7 +308,8 @@
   };
   // Omdøb: the name field in the top bar gets the cursor with its text selected (Enter keeps, Esc cancels), no browser dialog
   const rename = () => Pn.focusName && Pn.focusName();
-  const flipPage = () => { const d = store.doc; d.orient = d.orient === 'portrait' ? 'landscape' : 'portrait'; store.commit(); C().fit(); };
+  // every page the other way (each page also has its own turn button on the canvas)
+  const flipPage = () => { C().rotateAll(C().pageOrient(0) === 'portrait' ? 'landscape' : 'portrait'); C().fit(); };
   const fileItems = () => {
     const d = store.doc;
     return [
@@ -322,9 +323,15 @@
       { label: t('Export file…', 'Eksportér fil…'), icon: 'download', fn: Pn.exportFile },
       { label: t('Import file…', 'Importér fil…'), icon: 'upload', fn: Pn.importFile },
       'sep',
-      { label: t('Share link', 'Del link'), icon: 'link', key: 'Ctrl+Shift+L', fn: Pn.share },
+      // colleagues and customers in groups of their own (see Pn.shareColleague / Pn.shareCustomer)
+      { head: t('Colleagues', 'Kolleger') },
+      { label: t('Share with a colleague…', 'Del med kollega…'), icon: 'users', key: 'Ctrl+Shift+L', fn: Pn.shareColleague },
+      'sep',
+      { head: t('Customer', 'Kunde') },
+      { label: t('Send to the customer…', 'Send til kunden…'), icon: 'send', fn: Pn.shareCustomer },
       { label: t('Print / PDF…', 'Print / PDF…'), icon: 'print', key: 'Ctrl+P', fn: () => HP.cover.dialog() },
-      { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: t('now ', 'nu ') + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
+      'sep',
+      { label: t('All pages ', 'Alle sider ') + (C().pageOrient(0) === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: d.po ? t('now mixed', 'nu blandet') : t('now ', 'nu ') + (C().pageOrient(0) === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
       'sep',
       { label: t('Price adjustments…', 'Prisjusteringer…'), icon: 'tag', note: Pn.priceSummary ? Pn.priceSummary() : '', fn: () => Pn.projectPrices() },
       { label: t('Overview', 'Oversigt'), icon: 'layers', on: Pn.layersOpen && Pn.layersOpen(), key: 'Alt+1', fn: () => Pn.layers() },
@@ -906,6 +913,7 @@
     if (cc.length) return [t('Moved a cable', 'Flyttede et kabel'), 'cable'];
     if (a.name !== b.name) return [t('Renamed to "{}"', 'Omdøbte til "{}"').replace('{}', b.name || ''), 'edit'];
     if (JSON.stringify(a.pr) !== JSON.stringify(b.pr)) return [t('Price adjustments', 'Prisjusteringer'), 'tag'];
+    if (JSON.stringify(a.po || null) !== JSON.stringify(b.po || null)) return [t('Turned a page', 'Drejede en side'), 'rotate'];
     if (a.orient !== b.orient) return ['A4 ' + (b.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), 'rotate'];
     if (a.pages !== b.pages) return [t('Pages', 'Sider') + ': ' + b.pages, 'page'];
     if (a.ci !== b.ci) return [t('CI mode', 'CI-tilstand') + (b.ci ? t(' on', ' til') : t(' off', ' fra')), 'plan'];
@@ -927,22 +935,43 @@
   };
 
   /* ---------- share link ---------- */
-  Pn.share = async () => {
-    if (!store.doc.items.length) return HP.toast(t('The canvas is empty. Add something first.', 'Lærredet er tomt. Tilføj noget først.'), { kind: 'warn' });
-    const url = await HP.share.url();
-    const input = h('input', { value: url, readOnly: true, onfocus: () => input.select() });
-    const copy = async () => { try { await navigator.clipboard.writeText(url); } catch (e) { input.select(); document.execCommand('copy'); } HP.toast(t('Link copied', 'Link kopieret'), { kind: 'ok' }); };
+  /* ---------- sharing: colleagues and customers kept apart (2026-11-25) ----------
+     Del med kollega (Ctrl+Shift+L): a link that opens an editable copy of the canvas in HiFi Planner, for a colleague.
+     Send til kunden: the customer's link, read only on any phone without logging in (the same page as the QR code on the cover).
+     Two menu groups, two dialogs, each with its own colour and words, so a colleague's link never goes to a customer by mistake. */
+  const shareNotes = (forCustomer) => {
     const drafts = store.doc.items.some((i) => i.kind === 'product' && cat.draft.products[i.pid]);
-    HP.modal({ title: t('Share this proposal', 'Del dette tilbud'), size: 'md',
-      body: [h('.row', null, input, h('button.btn.primary', { onclick: copy }, icon('copy', 14), t('Copy link', 'Kopiér link'))),
-        // the customer's link: the same proposal read only on any phone, without logging in (also what the QR code on the cover opens)
-        h('.row.custlink', null, h('span.muted', null, t('For the customer (read only, no login):', 'Til kunden (kun visning, uden login):')),
-          h('button.btn', { onclick: async () => { HP.stat('Kundelink kopieret'); const u = await HP.share.customerUrl(); try { await navigator.clipboard.writeText(u); } catch (e) { /* ignore */ } HP.toast(t('Customer link copied', 'Kundelink kopieret'), { kind: 'ok' }); } }, icon('link', 14), t('Copy customer link', 'Kopiér kundelink'))),
-        h('p.muted', null, t('Anyone who opens the link in HiFi Planner gets a copy of this canvas: products, cables, notes and page setup. The whole proposal is inside the link itself, so nothing is uploaded, and later changes need a new link.', 'Alle, der åbner linket i HiFi Planner, får en kopi af lærredet: produkter, kabler, noter og sideopsætning. Hele tilbuddet ligger i selve linket, så intet uploades, og senere ændringer kræver et nyt link.')),
-        store.doc.items.some((i) => i.kind === 'plan') && h('.note-box', null, icon('warn', 15), t('The floor plan image is not included in links. Use Projects → Export file to send it.', 'Plantegningen er ikke med i links. Brug Projekter → Eksportér fil for at sende den.')),
-        drafts && h('.note-box', null, icon('warn', 15), t('This canvas uses products you have not published yet. They will show as unknown for others until you publish.', 'Lærredet bruger produkter, du ikke har udgivet endnu. De vises som ukendte for andre, indtil du udgiver.')),
-        location.protocol === 'file:' && h('.note-box', null, icon('warn', 15), t('You are running the planner from a local file, so this link only works on this PC. Links from the online version work everywhere.', 'Du kører planneren fra en lokal fil, så linket virker kun på denne PC. Links fra onlineversionen virker overalt.'))] });
+    return [!forCustomer && store.doc.items.some((i) => i.kind === 'plan') && h('.note-box', null, icon('warn', 15), t('The floor plan image is not included in links. Use Filer → Export file to send it.', 'Plantegningen er ikke med i links. Brug Filer → Eksportér fil for at sende den.')),
+      drafts && h('.note-box', null, icon('warn', 15), t('This canvas uses products you have not published yet. They will show as unknown for others until you publish.', 'Lærredet bruger produkter, du ikke har udgivet endnu. De vises som ukendte for andre, indtil du udgiver.')),
+      !forCustomer && location.protocol === 'file:' && h('.note-box', null, icon('warn', 15), t('You are running the planner from a local file, so this link only works on this PC. Links from the online version work everywhere.', 'Du kører planneren fra en lokal fil, så linket virker kun på denne PC. Links fra onlineversionen virker overalt.'))];
+  };
+  const linkRow = (url, label, onCopy) => {
+    const input = h('input', { value: url, readOnly: true, onfocus: () => input.select() });
+    const copy = async () => { try { await navigator.clipboard.writeText(url); } catch (e) { input.select(); document.execCommand('copy'); } onCopy(); };
     setTimeout(() => input.select(), 60);
+    return h('.row', null, input, h('button.btn.primary', { onclick: copy }, icon('copy', 14), label));
+  };
+  const emptyCanvas = () => { if (store.doc.items.length) return false; HP.toast(t('The canvas is empty. Add something first.', 'Lærredet er tomt. Tilføj noget først.'), { kind: 'warn' }); return true; };
+  Pn.shareColleague = async () => {
+    if (emptyCanvas()) return;
+    const url = await HP.share.url();
+    HP.modal({ title: t('Share with a colleague', 'Del med en kollega'), size: 'md',
+      body: [h('.share-who.colleague', null, icon('users', 15), h('b', null, t('For colleagues only', 'Kun til kolleger')), h('span', null, t('opens an editable copy in HiFi Planner', 'åbner en kopi, der kan redigeres, i HiFi Planner'))),
+        linkRow(url, t('Copy link', 'Kopiér link'), () => HP.toast(t('Colleague link copied', 'Kollegalink kopieret'), { kind: 'ok' })),
+        h('p.muted', null, t('A colleague who opens the link in HiFi Planner gets a copy of this canvas: products, cables, notes and page setup, to carry on with. The whole proposal is inside the link itself, so nothing is uploaded, and later changes need a new link. Never send this link to a customer: use Send to the customer.', 'En kollega, der åbner linket i HiFi Planner, får en kopi af lærredet: produkter, kabler, noter og sideopsætning, til at arbejde videre med. Hele tilbuddet ligger i selve linket, så intet uploades, og senere ændringer kræver et nyt link. Send aldrig dette link til en kunde: brug Send til kunden.')),
+        ...shareNotes(false)] });
+  };
+  Pn.share = Pn.shareColleague; // the old name (Ctrl+Shift+L, the canvas menu)
+  Pn.shareCustomer = async () => {
+    if (emptyCanvas()) return;
+    const url = await HP.share.customerUrl();
+    const close = HP.modal({ title: t('Send to the customer', 'Send til kunden'), size: 'md',
+      body: [h('.share-who.customer', null, icon('user', 15), h('b', null, t('For the customer', 'Til kunden')), h('span', null, t('read only, on any phone, no login', 'kun visning, på enhver mobil, uden login'))),
+        linkRow(url, t('Copy customer link', 'Kopiér kundelink'), () => { HP.stat('Kundelink kopieret'); HP.toast(t('Customer link copied', 'Kundelink kopieret'), { kind: 'ok' }); }),
+        h('p.muted', null, t('The customer sees the proposal with the drawing, the products and prices with links to hifiklubben.dk, and how to reach you. It is the same page as the QR code on the printed cover. Paste the link into an email or a text message.', 'Kunden ser tilbuddet med tegningen, produkterne og priserne med links til hifiklubben.dk, og hvordan du kan kontaktes. Det er den samme side som QR-koden på den printede forside. Sæt linket ind i en mail eller en sms.')),
+        h('.row', null, h('a.btn', { href: url, target: '_blank', rel: 'noopener' }, icon('eye', 14), t('See the customer\'s page', 'Se kundens side')),
+          h('button.btn', { onclick: () => { close(); HP.cover.dialog(); } }, icon('print', 14), t('Print with QR code…', 'Print med QR-kode…'))),
+        ...shareNotes(true)] });
   };
 
   /* ---------- help ---------- */
@@ -982,12 +1011,12 @@
             li(t('CI mode is for floor plans. Upload a plan (JPG, PNG or PDF), then click a product and click on the plan once per speaker: each product gets a lettered mark (A, B, C…). Esc or right-click stops placing. The legend lists every mark with its quantity.', 'CI-tilstand er til plantegninger. Upload en plan (JPG, PNG eller PDF), klik på et produkt, og klik på planen én gang pr. højtaler: hvert produkt får et mærke med bogstav (A, B, C…). Esc eller højreklik stopper placeringen. Signaturforklaringen viser alle mærker med antal.')),
             li(t('The bar in CI mode also has symbols for rack, router, TV, listening position, volume control and cable outlet. Switch CI mode off to add normal product cards, for example a wiring diagram on page 2; cards show the same letter as their marks. Room gives a subtotal per room in the price list; Scale and Cable give cable lengths in metres and add the cable to the prices.', 'Bjælken i CI-tilstand har også symboler for rack, router, TV, lytteposition, volumenkontrol og kabeludtag. Slå CI-tilstand fra for at tilføje almindelige produktkort, f.eks. et tilslutningsdiagram på side 2; kortene viser samme bogstav som deres mærker. Rum giver en subtotal pr. rum i prislisten; Målestok og Kabel giver kabellængder i meter og lægger kablet til priserne.')),
             li(t('Projects saves proposals in this browser and exports them as files.', 'Projekter gemmer tilbud i denne browser og eksporterer dem som filer.')),
-            li(t('Share link copies a link that opens this exact canvas on any PC, handy for sending a proposal to a colleague.', 'Del link kopierer et link, der åbner netop dette lærred på en hvilken som helst PC; praktisk til at sende et tilbud til en kollega.'))))),
+            li(t('Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Filer → Send to the customer gives the customer\'s read-only link, the same page as the QR code on the printed cover. Never send a colleague link to a customer.', 'Filer → Del med kollega kopierer et link, der åbner en kopi af lærredet, som kan redigeres, på enhver PC. Filer → Send til kunden giver kundens link, kun til visning, den samme side som QR-koden på den printede forside. Send aldrig et kollegalink til en kunde.'))))),
         h('h3', null, t('Search', 'Søgning')),
         h('p', null, t('Search by model, brand, SKU, category, port name (e.g. "HDMI eARC", "PHONO IN") or "bluetooth" / "wifi". Combine words with spaces. Use "Peripherals" or "Stand-in" for generic stand-in products.', 'Søg på model, brand, SKU, kategori, portnavn (fx "HDMI eARC", "PHONO IN") eller "bluetooth" / "wifi". Kombinér ord med mellemrum. Brug "Peripherals" eller "Stand-in" for generiske stand-in-produkter.')),
         h('h3', null, t('Keyboard', 'Tastatur')),
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
-        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'S'], t('Save', 'Gem')], [['Ctrl', 'Shift', 'S'], t('Save as', 'Gem som')], [['Ctrl', 'O'], t('Open project', 'Åbn projekt')], [['Ctrl', 'Shift', 'L'], t('Share link', 'Del link')], [['Ctrl', 'P'], t('Print / PDF', 'Print / PDF')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
+        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'S'], t('Save', 'Gem')], [['Ctrl', 'Shift', 'S'], t('Save as', 'Gem som')], [['Ctrl', 'O'], t('Open project', 'Åbn projekt')], [['Ctrl', 'Shift', 'L'], t('Share with a colleague', 'Del med en kollega')], [['Ctrl', 'P'], t('Print / PDF', 'Print / PDF')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
           [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Alt', 'K'], t('Open the Katalog', 'Åbn Katalog')],
           [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', '1'], t('Overview: everything on the canvas', 'Oversigt: alt på lærredet')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],
