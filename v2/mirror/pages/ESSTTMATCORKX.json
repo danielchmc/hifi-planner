@@ -124,7 +124,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
+     "numberOfStoresExperience": 9,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -177,55 +177,56 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTMATCORKX leverer en varm, punchy og mere omsluttende gengivelse end standardfiltmåtter med tydeligere musikalsk gennemslagskraft og bedre dæmpning. Den tykke korkkonstruktion føles eksklusiv og giver pladespillere et mere raffineret udtryk. Den antistatiske ydeevne roses af nogle lyttere, men er ikke helt ensartet, og det for store centerhul kan gøre håndteringen mindre sikker.",
+   "summary": "ESSTTMATCORKX giver en varm og punchy opgradering i forhold til standardfiltmåtter med renere afspilning og mere medrivende detaljer. Den solide korkkonstruktion ser eksklusiv ud, forbedrer dæmpningen og giver pladespillere et mere raffineret udtryk. Samlet set fremstår værdien stærk, selv om det for store centerhul og den mindre perfekte antistatiske effekt kan påvirke håndteringen og forventningerne.",
    "headlines": {
-    "more detailed and immersive sound than felt mats": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring i forhold til standardfiltmåtter med bedre lyd, større musikalsk gennemslagskraft og bedre dæmpning.",
-     "simpleTitle": "Mere detaljeret og omsluttende lyd end med filtmåtter",
+    "premium appearance and substantial construction": {
+     "sentimentAnalysis": "Materialekvalitet, korkens tykkelse, udseendet og pladespillerens mere eksklusive udtryk får gennemgående ros.",
+     "simpleTitle": "Eksklusivt udseende og solid konstruktion",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "c0307cb8-17b6-4f30-9355-a0ca084e4bea"
+     "key": "build",
+     "groupId": "6a52942f-0acb-4e99-b1cf-24e1dec40733"
     },
-    "thick, premium-feeling cork construction": {
-     "sentimentAnalysis": "Korkmaterialet og tykkelsen vurderes gentagne gange som bedre end filt og som tegn på solid kvalitet.",
-     "simpleTitle": "Tykt korkmateriale med eksklusiv fornemmelse",
+    "clearer, more immersive sound": {
+     "sentimentAnalysis": "Korkmåtten roses gentagne gange som en tydelig lydmæssig opgradering i forhold til standardfilt med forbedret gengivelse og dæmpning.",
+     "simpleTitle": "Klarere og mere medrivende lyd",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "9bed2806-a39e-4bbf-817f-6215a073ea77"
+     "key": "sound",
+     "groupId": "f2cf3d71-defb-4053-b129-27c067ac73de"
     },
-    "stylish upgrade for the turntable": {
-     "sentimentAnalysis": "Måtten roses for sit attraktive udseende og for at få pladespilleren til at virke mere eksklusiv.",
-     "simpleTitle": "Stilfuld opgradering af pladespilleren",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "0d6bec99-3110-4c8d-8b80-9ea5ca81e042"
+    "static reduction is not fully consistent": {
+     "sentimentAnalysis": "En anmeldelse rapporterer ingen statiske pops, mens en anden finder den antistatiske effekt svagere end håbet, hvilket peger på blandet ydeevne.",
+     "simpleTitle": "Reduktionen af statisk elektricitet er ikke helt konsekvent",
+     "bias": "meh",
+     "key": "antistatic",
+     "groupId": "c79c8779-db39-477b-b677-8f939e9dabd0"
     }
    },
    "grouping": {
-    "c0307cb8-17b6-4f30-9355-a0ca084e4bea": {
+    "6a52942f-0acb-4e99-b1cf-24e1dec40733": {
+     "title": "Byggekvalitet og design",
+     "id": "6a52942f-0acb-4e99-b1cf-24e1dec40733",
+     "references": [
+      "2c788914-bc07-4eb4-b74d-9d0483b9ada3",
+      "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
+      "c882e2f2-41e6-4cbf-ae0f-648882682bc1",
+      "23eaa0b9-0468-4fbd-bb3d-6d4913a983c7"
+     ]
+    },
+    "f2cf3d71-defb-4053-b129-27c067ac73de": {
      "title": "Lydkvalitet",
-     "id": "c0307cb8-17b6-4f30-9355-a0ca084e4bea",
+     "id": "f2cf3d71-defb-4053-b129-27c067ac73de",
      "references": [
       "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
       "dfaea29d-e944-40e6-9c07-36ea38bd5216",
       "c882e2f2-41e6-4cbf-ae0f-648882682bc1"
      ]
     },
-    "9bed2806-a39e-4bbf-817f-6215a073ea77": {
-     "title": "Byggekvalitet",
-     "id": "9bed2806-a39e-4bbf-817f-6215a073ea77",
-     "references": [
-      "2c788914-bc07-4eb4-b74d-9d0483b9ada3",
-      "c882e2f2-41e6-4cbf-ae0f-648882682bc1",
-      "23eaa0b9-0468-4fbd-bb3d-6d4913a983c7"
-     ]
-    },
-    "0d6bec99-3110-4c8d-8b80-9ea5ca81e042": {
-     "title": "Design og udseende",
-     "id": "0d6bec99-3110-4c8d-8b80-9ea5ca81e042",
+    "c79c8779-db39-477b-b677-8f939e9dabd0": {
+     "title": "Antistatisk ydeevne",
+     "id": "c79c8779-db39-477b-b677-8f939e9dabd0",
      "references": [
       "8e1ec328-afc7-47cb-9bdb-417c3dbc7bd8",
-      "c882e2f2-41e6-4cbf-ae0f-648882682bc1"
+      "e627adc7-8514-4f1f-a4ed-68ab556243b0"
      ]
     }
    },

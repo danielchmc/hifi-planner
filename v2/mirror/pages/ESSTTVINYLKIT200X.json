@@ -20,7 +20,7 @@
    "c06b0342-29b4-437c-ac91-84f8904bdf72",
    "9373e3c8-9a7f-4f3d-bc6d-a92c58663d92"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 294326,
@@ -124,12 +124,11 @@
      "productCode": "ESSTTVINYLKIT200"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 28. december",
+     "deliveryDate": "2026-12-28T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
-     "availableQuantity": 125,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 18,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

@@ -123,8 +123,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 609,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 559,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -165,29 +165,23 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTRECORDCLEANX roses bredt som et effektivt og pålideligt pladerenseprodukt, der efterlader vinylen synligt renere og klar til fornøjelig lytning. Rengøringen føles frisk, praktisk og tilfredsstillende og giver gamle plader nyt liv. En mindre bekymring gælder en tilsyneladende svagere antistatisk effekt i en nyere formulering, men helhedsindtrykket er klart positivt.",
+   "summary": "ESSTTRECORDCLEANX roses generelt som en effektiv løsning til pladerens, der efterlader gamle lp'er synligt rene og ofte reducerer statisk elektricitet; flere anmeldelser beskriver pålidelige resultater. Manuel rengøring fungerer problemfrit og giver en frisk, velplejet overflade samt en bedre vinyloplevelse. Prisen virker mindre overbevisende på grund af den lille mængde, og én anmeldelse oplever svagere antistatisk effekt end med tidligere flasker.",
    "headlines": {
-    "works reliably as intended": {
-     "sentimentAnalysis": "Den enkle og pålidelige ydeevne lever op til forventningerne og gør produktet tillidsvækkende.",
-     "simpleTitle": "Fungerer pålideligt som forventet",
+    "leaves records clean and refreshed": {
+     "sentimentAnalysis": "Anmeldelserne beskriver synligt renere plader, inklusive gamle lp'er, med resultater der lever op til eller overgår forventningerne.",
+     "simpleTitle": "Efterlader plader rene og velplejede",
      "bias": "positive",
-     "key": "cleaning",
-     "groupId": "813ae790-2845-412a-879c-74a69ac47546"
-    },
-    "cleans records effectively": {
-     "sentimentAnalysis": "Pladerne bliver synligt renere, og især ældre vinyl får en mærkbar opfriskning.",
-     "simpleTitle": "Renser plader effektivt",
-     "bias": "positive",
-     "key": "cleaning",
-     "groupId": "813ae790-2845-412a-879c-74a69ac47546"
+     "key": "cleaning-performance",
+     "groupId": "0dd391f6-a988-45db-8e2c-50d9f9583b01"
     }
    },
    "grouping": {
-    "813ae790-2845-412a-879c-74a69ac47546": {
-     "title": "Rengøringseffekt",
-     "id": "813ae790-2845-412a-879c-74a69ac47546",
+    "0dd391f6-a988-45db-8e2c-50d9f9583b01": {
+     "title": "Rengøringsevne",
+     "id": "0dd391f6-a988-45db-8e2c-50d9f9583b01",
      "references": [
       "89574c59-4181-4d69-833a-f47e2eb4b8de",
+      "375d7fa1-1e58-4684-a9a5-f488b7327e25",
       "524f5696-f47f-40b8-8ac6-940ffbc53f44",
       "05aa9df4-1197-40a7-84f7-c3e67dcdac62",
       "d8dafda3-3c5d-4198-af01-75be011c7de1",

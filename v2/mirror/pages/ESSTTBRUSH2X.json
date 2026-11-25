@@ -44,10 +44,10 @@
     "ESSTTBRUSHSTYLUS3X",
     "ESSTTBRUSHSTYLUS1X",
     "ESSTTMATLEATHERX",
-    "ESSTTMATCORKX",
     "ESSTTBRUSH3X",
     "AQASRECORDBRUSHX",
-    "ESSTTVINYLKIT200X"
+    "ESSTTVINYLKIT200X",
+    "ESSTTMATCORKX"
    ],
    "isOutlet": "false"
   },
@@ -119,8 +119,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 208,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 138,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -144,51 +144,51 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTBRUSH2X er en praktisk og effektiv pladebørste, der fjerner støv og hjælper med at holde vinylplader velplejede. Børsten giver en varm, punchy og immersiv oplevelse i plejen af værdifulde pladesamlinger og har stor værdi i hverdagen med enkel betjening. Enkelte brugere finder designet uhåndterligt, rengøringen vanskelig eller børsten muligvis for hård ved pladerne.",
+   "summary": "ESSTTBRUSH2X er en meget effektiv pladebørste, som hurtigt fjerner støv og er nem at bruge før afspilning. De fine børster og fløjlsstriben virker skånsomme mod pladerne, mens den samlede ydeevne giver en varm, ren og omsluttende lytteoplevelse. Mindre kritikpunkter er et lidt klodset design og i ét tilfælde for skarpe børster, som angiveligt lavede ridser.",
    "headlines": {
-    "effectively removes dust from records": {
-     "sentimentAnalysis": "Børsten roses gentagne gange for effektivt at fjerne støv og holde plader rene.",
-     "simpleTitle": "Fjerner effektivt støv fra plader",
+    "works well for regular vinyl care": {
+     "sentimentAnalysis": "Børsten anses for effektiv og sikker til hyppig pladevedligeholdelse.",
+     "simpleTitle": "Velegnet til regelmæssig pladepleje",
      "bias": "positive",
      "key": "cleaning",
-     "groupId": "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e"
+     "groupId": "4504695e-fb34-4ba6-aaf0-8ac7e5929ebd"
     },
-    "design can feel awkward": {
-     "sentimentAnalysis": "Flere anmeldelser peger på uhåndterlig betjening eller et mindre vellykket design.",
-     "simpleTitle": "Designet kan virke uhåndterligt",
-     "bias": "negative",
-     "key": "handling",
-     "groupId": "a9af9832-17ec-4038-8ddd-b2dafda9649d"
-    },
-    "simple and convenient to use": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en enkel og praktisk betjening.",
-     "simpleTitle": "Nem og praktisk at bruge",
+    "quickly removes dust from records": {
+     "sentimentAnalysis": "Børsten roses for effektivt og øjeblikkeligt at fjerne støv.",
+     "simpleTitle": "Fjerner hurtigt støv fra plader",
      "bias": "positive",
-     "key": "handling",
-     "groupId": "a9af9832-17ec-4038-8ddd-b2dafda9649d"
+     "key": "cleaning",
+     "groupId": "4504695e-fb34-4ba6-aaf0-8ac7e5929ebd"
+    },
+    "design feels awkward": {
+     "sentimentAnalysis": "Nogle brugere finder børstens design upraktisk trods acceptabel funktion.",
+     "simpleTitle": "Designet virker klodset",
+     "bias": "negative",
+     "key": "usability",
+     "groupId": "e0dfc0c6-da1e-4984-9feb-0473406c3a11"
     }
    },
    "grouping": {
-    "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e": {
+    "4504695e-fb34-4ba6-aaf0-8ac7e5929ebd": {
      "title": "Rengøringsevne",
-     "id": "4b2b04f3-cb89-4dd2-ab73-098dbc2b8a1e",
+     "id": "4504695e-fb34-4ba6-aaf0-8ac7e5929ebd",
      "references": [
       "f7fd5359-cbac-44bc-bf36-978da594c3bd",
       "bee6a9a0-aeab-4929-a1bf-6745dac5a3d0",
+      "6108745d-c44f-4f45-b3e4-01379ba7bc0c",
       "3e6cb399-db00-4ff5-976e-7c7d005d438b",
       "5f54f24c-5d1f-4b7a-b592-d1c4e738a448",
       "2d300419-d18d-42c1-9e6c-aeac1a604e14",
       "093f9726-d462-43da-8535-54172da5b42a",
+      "0db9f794-f5f3-46f6-8f7c-fe34d839d0a0",
       "eabec193-0600-41d5-9881-d1772cf28e62",
       "a753d7c3-7979-4c1c-93cc-d5168f82ce87"
      ]
     },
-    "a9af9832-17ec-4038-8ddd-b2dafda9649d": {
+    "e0dfc0c6-da1e-4984-9feb-0473406c3a11": {
      "title": "Brugervenlighed og design",
-     "id": "a9af9832-17ec-4038-8ddd-b2dafda9649d",
+     "id": "e0dfc0c6-da1e-4984-9feb-0473406c3a11",
      "references": [
-      "bee6a9a0-aeab-4929-a1bf-6745dac5a3d0",
-      "6108745d-c44f-4f45-b3e4-01379ba7bc0c",
       "0db9f794-f5f3-46f6-8f7c-fe34d839d0a0",
       "d512d611-f7bc-4e45-87b1-0a9a853121f6",
       "61dbe3fc-fba9-410d-9761-2226d8067ee3",

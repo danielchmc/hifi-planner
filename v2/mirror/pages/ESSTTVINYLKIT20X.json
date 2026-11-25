@@ -119,8 +119,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 325,
+     "numberOfStoresExperience": 22,
+     "availableQuantity": 320,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -150,50 +150,79 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTVINYLKIT20X opfattes generelt som et nyttigt og effektivt vedligeholdelsessæt til plader, pladespillere og pickupper. Børsterne fungerer godt og hjælper med at reducere støv og statisk elektricitet, mens nålebørsten især får ros. Værdi for pengene betvivles af nogle, og den sammenrullede slipmat kan tage lang tid at blive flad eller forblive ujævn; der er også meldt om for hårde pladebørstehår, som kan give fine ridser.",
+   "summary": "Et alsidigt vinylplejesæt med nyttige børster, effektiv reduktion af støv og statisk elektricitet samt en måtte, der føles eksklusiv. De fleste dele udfører deres tilsigtede vedligeholdelsesopgaver godt og gør sættet til en praktisk opgradering af plejen af plader og pladespillere. Nogle købere tvivler på pris-kvalitetsforholdet, mens den længe sammenrullede slipmat og de for hårde børstehår er tydelige ulemper.",
    "headlines": {
-    "comprehensive and effective maintenance kit": {
-     "sentimentAnalysis": "Sættet opfattes som komplet, nyttigt og effektivt til vedligeholdelse af plader, pladespillere og pickupper.",
-     "simpleTitle": "Omfattende og effektivt vedligeholdelsessæt",
+    "complete care set for records and turntables": {
+     "sentimentAnalysis": "Sættet opfattes som en omfattende løsning til vedligeholdelse af plader, nåle og pladespillere.",
+     "simpleTitle": "Komplet plejesæt til plader og pladespillere",
      "bias": "positive",
-     "key": "kit-care",
-     "groupId": "1edd1539-e8ac-4292-9d8a-d943456032d8"
+     "key": "complete_care_set",
+     "groupId": "adcad4a1-05be-46d0-aaf5-77c853382109"
     },
-    "price feels too high": {
-     "sentimentAnalysis": "Flere anmeldelser finder sættet dyrt i forhold til kvaliteten eller forventningerne.",
-     "simpleTitle": "Prisen føles for høj",
+    "the kit feels expensive": {
+     "sentimentAnalysis": "Flere anmeldelser oplever prisen som høj i forhold til den oplevede kvalitet eller forventningerne.",
+     "simpleTitle": "Sættet virker dyrt",
      "bias": "negative",
-     "key": "price-value",
-     "groupId": "c2ba0bac-8721-4908-a2eb-a3a2344f18a5"
+     "key": "expensive_kit",
+     "groupId": "f6e63604-eeac-4381-82e9-b4aa5df395a0"
     },
-    "slipmat is difficult to flatten": {
-     "sentimentAnalysis": "Den sammenrullede slipmat tager for lang tid at blive flad og kan forhindre plader i at ligge plant på pladespilleren.",
-     "simpleTitle": "Slipmatten er svær at gøre flad",
+    "the mat feels premium": {
+     "sentimentAnalysis": "Slipmatten beskrives som vellavet, selv om en anmeldelse nævner et problem ved opsætningen.",
+     "simpleTitle": "Måtten føles eksklusiv",
+     "bias": "positive",
+     "key": "premium_mat",
+     "groupId": "d2af37bd-f792-4d85-88fb-d471492d1cdb"
+    },
+    "the slipmat stays curled": {
+     "sentimentAnalysis": "Måtten kan tage meget lang tid om at blive flad og kan forhindre plader i at ligge plant på pladespilleren.",
+     "simpleTitle": "Slipmatten forbliver krøllet",
      "bias": "negative",
-     "key": "slipmat",
-     "groupId": "72ab350f-c55e-4481-9be1-b109bd80acbe"
+     "key": "curled_slipmat",
+     "groupId": "d2af37bd-f792-4d85-88fb-d471492d1cdb"
+    },
+    "brushes work well": {
+     "sentimentAnalysis": "Børsterne anses generelt for nyttige, og især nålebørsten roses.",
+     "simpleTitle": "Børsterne fungerer godt",
+     "bias": "positive",
+     "key": "effective_brushes",
+     "groupId": "48218739-67bc-49dc-bfdb-a3bd47b2e61e"
+    },
+    "record-brush bristles are too hard": {
+     "sentimentAnalysis": "En anmeldelse advarer om, at pladebørstens hår kan ridse vinyl, hvilket står i kontrast til den generelle opfattelse, at børsterne fungerer godt.",
+     "simpleTitle": "Pladebørstens hår er for hårde",
+     "bias": "negative",
+     "key": "hard_record_brush",
+     "groupId": "48218739-67bc-49dc-bfdb-a3bd47b2e61e"
     }
    },
    "grouping": {
-    "1edd1539-e8ac-4292-9d8a-d943456032d8": {
-     "title": "Sættets pleje og effektivitet",
-     "id": "1edd1539-e8ac-4292-9d8a-d943456032d8",
+    "adcad4a1-05be-46d0-aaf5-77c853382109": {
+     "title": "Vedligeholdelsessæt",
+     "id": "adcad4a1-05be-46d0-aaf5-77c853382109",
      "references": [
       "7730a1f1-4294-4c80-8230-79c31f7aacb0",
       "6fc4a774-0528-4c57-94b5-5a0d57a71f9f",
-      "19007947-675f-45f9-bab8-fb99d999960c",
       "d5cf1682-b204-427f-a204-9bf547ffad3d",
       "84a08460-d8be-41ca-b1e4-222cce2082ee",
-      "afe1b7f1-6fdd-4004-aca2-f803af2d686c",
-      "e417bdf2-7596-4417-acc7-6d83be7d46aa",
       "8965bd5b-dcaa-4719-ace7-f7277b66a942",
       "f6f748aa-4fbd-4ba7-a8f1-252381d2d70b",
-      "310ad9e9-fa98-4301-9a57-d7cee6df3eb6"
+      "310ad9e9-fa98-4301-9a57-d7cee6df3eb6",
+      "e417bdf2-7596-4417-acc7-6d83be7d46aa"
      ]
     },
-    "c2ba0bac-8721-4908-a2eb-a3a2344f18a5": {
-     "title": "Pris og værdi",
-     "id": "c2ba0bac-8721-4908-a2eb-a3a2344f18a5",
+    "d2af37bd-f792-4d85-88fb-d471492d1cdb": {
+     "title": "Slipmat",
+     "id": "d2af37bd-f792-4d85-88fb-d471492d1cdb",
+     "references": [
+      "d5cf1682-b204-427f-a204-9bf547ffad3d",
+      "0a96d8bc-fabc-4c70-937e-bbf03f881a30",
+      "f6f748aa-4fbd-4ba7-a8f1-252381d2d70b",
+      "56bb30bd-57de-4d05-888c-fbe892436177"
+     ]
+    },
+    "f6e63604-eeac-4381-82e9-b4aa5df395a0": {
+     "title": "Pris-kvalitetsforhold",
+     "id": "f6e63604-eeac-4381-82e9-b4aa5df395a0",
      "references": [
       "17f0d1cf-4e41-44d8-a08b-425d0aa14256",
       "82707e28-53f9-48f3-a5c2-e41480352067",
@@ -201,25 +230,24 @@
       "78c21c1a-b71f-41bb-9ecd-92cfc07e8db6"
      ]
     },
-    "72ab350f-c55e-4481-9be1-b109bd80acbe": {
-     "title": "Slipmat",
-     "id": "72ab350f-c55e-4481-9be1-b109bd80acbe",
+    "48218739-67bc-49dc-bfdb-a3bd47b2e61e": {
+     "title": "Børstekvalitet",
+     "id": "48218739-67bc-49dc-bfdb-a3bd47b2e61e",
      "references": [
-      "d5cf1682-b204-427f-a204-9bf547ffad3d",
-      "0a96d8bc-fabc-4c70-937e-bbf03f881a30",
+      "f6f748aa-4fbd-4ba7-a8f1-252381d2d70b",
       "56bb30bd-57de-4d05-888c-fbe892436177"
      ]
     }
    },
-   "rating": 4.46153846153846,
-   "count": 52,
+   "rating": 4.47272727272727,
+   "count": 55,
    "reviewCount": 16,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 9,
-    "4": 10,
-    "5": 33
+    "4": 11,
+    "5": 35
    }
   },
   "brandName": "Essentials",

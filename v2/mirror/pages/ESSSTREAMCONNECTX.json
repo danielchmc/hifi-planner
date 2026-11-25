@@ -142,8 +142,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 922,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 897,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -175,87 +175,86 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSSTREAMCONNECTX er en kompakt og alsidig streaming- og radioopgradering med nem opsætning, mange kilder og generelt god lyd. DAB, FM, internetradio, Spotify og Bluetooth gør enheden særligt velegnet til modernisering af ældre hi-fi-anlæg. Det lille display er svært at aflæse, og enkelte oplever netværks- eller modtagelsesbegrænsninger, men helhedsindtrykket er meget positivt.",
+   "summary": "ESSSTREAMCONNECTX er en alsidig lille boks med varm, klar lyd og et imponerende udvalg af DAB, FM, internetradio, Spotify og Bluetooth. Opsætning og daglig betjening er generelt nem, hvilket gør enheden til en markant opgradering af ældre hi-fi-anlæg og streamingopsætninger. Det lille og svage display er den største svaghed, mens netværksydelse og DAB-modtagelse kan afhænge af lokale forhold.",
    "headlines": {
-    "broad radio and streaming selection": {
-     "sentimentAnalysis": "Enheden roses for at samle DAB, FM, internetradio, Spotify, Bluetooth og et stort udvalg af stationer i en lille enhed.",
-     "simpleTitle": "Stort udvalg af radio- og streamingkilder",
-     "bias": "positive",
-     "key": "radio_features",
-     "groupId": "2c19cb9e-873c-4fad-a74a-9b6f1a81f56d"
-    },
-    "simple installation and operation": {
-     "sentimentAnalysis": "Anmeldelseerne beskriver konsekvent tilslutning, opsætning, stationssøgning og daglig betjening som enkel.",
-     "simpleTitle": "Nem opsætning og betjening",
+    "easy installation and operation": {
+     "sentimentAnalysis": "Installation, tilslutning, stationssøgning og daglig betjening beskrives generelt som enkel.",
+     "simpleTitle": "Nem installation og betjening",
      "bias": "positive",
      "key": "setup",
-     "groupId": "042d37bb-3b8e-490b-84c8-fa13b4a3da66"
+     "groupId": "42ce4ad9-0eb9-4a24-bf38-c2ceaf5363cb"
     },
-    "pleasant, capable audio output": {
-     "sentimentAnalysis": "Lyden vurderes generelt som god eller ganske fornuftig, og internetradio i høj kvalitet klarer sig især godt.",
-     "simpleTitle": "Behagelig og kompetent lyd",
+    "broad feature set in a compact box": {
+     "sentimentAnalysis": "Den kompakte enhed tilbyder et imponerende udvalg af radio- og streamingmuligheder, herunder DAB, FM, internetradio, Spotify og Bluetooth.",
+     "simpleTitle": "Mange funktioner i en kompakt boks",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "fd6f60ec-18b9-4646-ba92-f6aa805dc6de"
+     "key": "features",
+     "groupId": "6ae67ead-69f0-4bfc-8191-57e33b7f0716"
     },
-    "small display is difficult to read": {
-     "sentimentAnalysis": "Displayet kritiseres gentagne gange for svagt standbylys og dårlig læsbarhed på afstand.",
-     "simpleTitle": "Det lille display er svært at aflæse",
+    "display is too small and dim": {
+     "sentimentAnalysis": "Displayet kritiseres gentagne gange for lav lysstyrke i standby og dårlig læsbarhed på afstand.",
+     "simpleTitle": "Displayet er for lille og svagt",
      "bias": "negative",
      "key": "display",
-     "groupId": "97511711-7493-4c48-83a0-a97710c5eba7"
+     "groupId": "20013b09-8d9b-4318-9ffb-bfd14f0db5ae"
     },
-    "internet radio quality can trail DAB and FM": {
-     "sentimentAnalysis": "Selv om lyden generelt værdsættes, kan internetradio afhængigt af modtagelse og streamkvalitet lyde mindre raffineret end DAB eller FM.",
-     "simpleTitle": "Internetradio kan være svagere end DAB og FM",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "fd6f60ec-18b9-4646-ba92-f6aa805dc6de"
+    "clear, enjoyable sound": {
+     "sentimentAnalysis": "Lyden gennem en tilsluttet forstærker vurderes konsekvent som god eller meget rimelig, og internetradio i høj kvalitet får særlig ros.",
+     "simpleTitle": "Klar og behagelig lyd",
+     "bias": "positive",
+     "key": "audio",
+     "groupId": "68b242aa-5f12-433c-b506-876d5a4a08ea"
+    },
+    "dab reception works reliably in suitable conditions": {
+     "sentimentAnalysis": "DAB-radioen fungerer ifølge anmeldelserne godt i forskellige lytteopsætninger, også uden separat antenne.",
+     "simpleTitle": "DAB-modtagelsen fungerer stabilt under gode forhold",
+     "bias": "positive",
+     "key": "audio",
+     "groupId": "68b242aa-5f12-433c-b506-876d5a4a08ea"
     }
    },
    "grouping": {
-    "2c19cb9e-873c-4fad-a74a-9b6f1a81f56d": {
-     "title": "Radio- og streamingfunktioner",
-     "id": "2c19cb9e-873c-4fad-a74a-9b6f1a81f56d",
-     "references": [
-      "b8db61f8-1385-448e-a61d-5361fa96eb90",
-      "67c6bb99-c42f-4877-bee2-9cdb8bc76029",
-      "a409dd71-c80e-4cdc-a3ab-e0771c0381c2",
-      "5a1a9c91-da71-4611-b0df-e3bcb21519d4",
-      "e7afdc88-044f-43af-858c-6acdc8cf3b4e",
-      "7b6944b3-bf36-4e18-8353-59885769ed88",
-      "0f018e98-1b71-4ad2-bf3b-47665f5d8d2d",
-      "fa18f18f-ca42-422d-bca1-b00381f31a98"
-     ]
-    },
-    "042d37bb-3b8e-490b-84c8-fa13b4a3da66": {
-     "title": "Opsætning og brugervenlighed",
-     "id": "042d37bb-3b8e-490b-84c8-fa13b4a3da66",
+    "42ce4ad9-0eb9-4a24-bf38-c2ceaf5363cb": {
+     "title": "Installation og tilslutning",
+     "id": "42ce4ad9-0eb9-4a24-bf38-c2ceaf5363cb",
      "references": [
       "5a1a9c91-da71-4611-b0df-e3bcb21519d4",
       "e7afdc88-044f-43af-858c-6acdc8cf3b4e",
       "7b6944b3-bf36-4e18-8353-59885769ed88",
       "38581823-f443-4f29-a837-f7e1e4dc3ce2",
       "0f018e98-1b71-4ad2-bf3b-47665f5d8d2d",
-      "a409dd71-c80e-4cdc-a3ab-e0771c0381c2"
+      "6756331c-cea9-4269-aac2-f3b37c16c673"
      ]
     },
-    "97511711-7493-4c48-83a0-a97710c5eba7": {
-     "title": "Displayets læsbarhed",
-     "id": "97511711-7493-4c48-83a0-a97710c5eba7",
+    "6ae67ead-69f0-4bfc-8191-57e33b7f0716": {
+     "title": "Funktioner og streaming",
+     "id": "6ae67ead-69f0-4bfc-8191-57e33b7f0716",
+     "references": [
+      "b8db61f8-1385-448e-a61d-5361fa96eb90",
+      "e7afdc88-044f-43af-858c-6acdc8cf3b4e",
+      "7b6944b3-bf36-4e18-8353-59885769ed88",
+      "0f018e98-1b71-4ad2-bf3b-47665f5d8d2d",
+      "38581823-f443-4f29-a837-f7e1e4dc3ce2"
+     ]
+    },
+    "68b242aa-5f12-433c-b506-876d5a4a08ea": {
+     "title": "Lyd og modtagelse",
+     "id": "68b242aa-5f12-433c-b506-876d5a4a08ea",
+     "references": [
+      "67c6bb99-c42f-4877-bee2-9cdb8bc76029",
+      "a409dd71-c80e-4cdc-a3ab-e0771c0381c2",
+      "4928d0c5-38d3-4951-9af9-08cefd2c73f2",
+      "5a1a9c91-da71-4611-b0df-e3bcb21519d4",
+      "fa18f18f-ca42-422d-bca1-b00381f31a98"
+     ]
+    },
+    "20013b09-8d9b-4318-9ffb-bfd14f0db5ae": {
+     "title": "Display",
+     "id": "20013b09-8d9b-4318-9ffb-bfd14f0db5ae",
      "references": [
       "a106c65c-b8f6-41a6-a5d1-0d27cf9ca4cc",
       "4928d0c5-38d3-4951-9af9-08cefd2c73f2",
       "5a1a9c91-da71-4611-b0df-e3bcb21519d4"
-     ]
-    },
-    "fd6f60ec-18b9-4646-ba92-f6aa805dc6de": {
-     "title": "Lydkvalitet",
-     "id": "fd6f60ec-18b9-4646-ba92-f6aa805dc6de",
-     "references": [
-      "67c6bb99-c42f-4877-bee2-9cdb8bc76029",
-      "5a1a9c91-da71-4611-b0df-e3bcb21519d4",
-      "fa18f18f-ca42-422d-bca1-b00381f31a98"
      ]
     }
    },

@@ -66,7 +66,7 @@
   "stockItemAlternative": {
    "save": "100,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=ESSTTVINYLKIT10X",
-   "availableQuantity": 2,
+   "availableQuantity": 1,
    "lowestPrice": "199,-"
   },
   "variants": [
@@ -117,7 +117,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
+     "numberOfStoresExperience": 21,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -148,120 +148,124 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTVINYLKIT10X er et praktisk og effektivt plejesæt til vinyl, som rengør plader og nåle godt, fjerner støv og hjælper med at beskytte udstyret. Sættet er generelt nemt at bruge og giver en nyttig samlet startpakke til en rimelig pris, og mange betragter det som uundværligt til vinylafspilning. Der er dog enkelte mangler: Der følger ingen vejledning med, nogle børste- og kludekomponenter kunne være mere robuste, og den våde nålerens kræver forsigtighed med visse pickupper.",
+   "summary": "Et praktisk og effektivt vinylplejesæt, der holder plader og nåle rene, reducerer støv og bidrager til god lytteglæde. Børsterne og de grundlæggende rengøringsredskaber roses for at være nemme at bruge og fungere som forventet, hvilket gør sættet velegnet som startpakke. De største ulemper er manglende vejledning, enkelte svagheder ved børste eller klud samt bekymringer om den våde nålerens; prisen vurderes fra rimelig til lidt høj.",
    "headlines": {
-    "effective cleaning for records and styluses": {
-     "sentimentAnalysis": "Sættet rengør plader og nåle effektivt, fjerner støv og snavs og får pladerne til at lyde friske.",
-     "simpleTitle": "Effektiv rengøring af plader og nåle",
-     "bias": "positive",
-     "key": "cleaning",
-     "groupId": "fe6efbc8-b9bf-4f79-b727-417cb2998c1d"
-    },
-    "useful all-in-one starter kit": {
-     "sentimentAnalysis": "Sættet indeholder de vigtigste værktøjer til almindelig pleje af plader og nåle og fungerer godt som startpakke.",
-     "simpleTitle": "Nyttigt samlet startsæt",
-     "bias": "positive",
-     "key": "kit-value",
-     "groupId": "18641104-7c03-40e3-bcec-16784c299f5a"
-    },
-    "simple and practical to use": {
-     "sentimentAnalysis": "Vedligeholdelsesværktøjerne opleves som enkle, praktiske og nemme at håndtere.",
-     "simpleTitle": "Nem og praktisk at bruge",
+    "a useful, easy starter kit": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver produktet som en praktisk, komplet og enkel introduktion til pladevedligeholdelse.",
+     "simpleTitle": "Et nyttigt og nemt startsæt",
      "bias": "positive",
      "key": "usability",
-     "groupId": "d3e10f58-bb69-41c0-8e28-de164239a50d"
+     "groupId": "195a47b0-9181-4c03-b6d3-20b64320e938"
     },
-    "missing instructions make some tools unclear": {
-     "sentimentAnalysis": "Flere brugere efterlyser tydelige instruktioner, fordi brugen af alle dele ikke er selvforklarende.",
-     "simpleTitle": "Manglende vejledning gør nogle værktøjer uklare",
-     "bias": "negative",
-     "key": "instructions-safety",
-     "groupId": "10c697b8-68e6-4536-80a9-9bb51f19ec11"
+    "cleans records and styluses effectively": {
+     "sentimentAnalysis": "Sættet beskrives gentagne gange som effektivt til at fjerne støv og snavs fra plader og holde nåle rene.",
+     "simpleTitle": "Renser plader og nåle effektivt",
+     "bias": "positive",
+     "key": "cleaning",
+     "groupId": "141eb51b-2bc9-4fdc-9e82-4cb96431fcbd"
     },
-    "wet stylus cleaning raises cartridge-safety concerns": {
-     "sentimentAnalysis": "Advarsler anbefaler at undgå den våde nålerens på visse pickupper, fordi væsken kan beskadige limen, der holder nålen fast.",
-     "simpleTitle": "Våd nålerens giver bekymring for pickup-sikkerheden",
+    "some accessories have quality limitations": {
+     "sentimentAnalysis": "Nogle anmeldelser nævner en børste, der vælter eller slides, en skrøbelig beskyttelsesbøjle og en klud, der hurtigt bliver gennemvåd.",
+     "simpleTitle": "Nogle dele har kvalitetsbegrænsninger",
      "bias": "negative",
-     "key": "instructions-safety",
-     "groupId": "10c697b8-68e6-4536-80a9-9bb51f19ec11"
+     "key": "value",
+     "groupId": "57b596f2-e407-4ec5-bd1b-c0b20d4cd5df"
     }
    },
    "grouping": {
-    "fe6efbc8-b9bf-4f79-b727-417cb2998c1d": {
-     "title": "Rengøringsevne",
-     "id": "fe6efbc8-b9bf-4f79-b727-417cb2998c1d",
+    "195a47b0-9181-4c03-b6d3-20b64320e938": {
+     "title": "Brugervenlighed og indhold",
+     "id": "195a47b0-9181-4c03-b6d3-20b64320e938",
      "references": [
-      "466c26b6-1ac3-4293-ac7a-5c0bb65bcc4d",
+      "d9af73da-d7d7-492a-8c3d-f8e93d729f2c",
+      "a236b14f-8087-4bfd-8c36-7c7b89081697",
+      "5ebdd147-93dd-487a-9f9d-443218203ca5",
+      "01d2508b-3e03-48fe-941e-a96c5fb5bace",
+      "4a4579d7-76da-41a4-9321-098461edc096",
+      "2d521a12-cc0f-4dac-b761-23a347537d1f",
+      "c26be96a-df28-40ed-bbd0-5cd931908e9a",
+      "7f8d2445-d77c-44dd-9f21-4ab7e1171cde",
+      "8e0201db-b26c-44ba-aa16-e315d29148ae",
+      "b9231c04-f30b-4acd-b274-445f07e6ac2c",
+      "2ba74363-92f3-49a1-8f9f-ea49d28b2886",
+      "4ed0d6d6-e4f7-448c-9ae8-53aac035fd27",
+      "92ec0eed-6946-4c0e-93a3-579acda86c5a",
+      "66d15df5-a2ee-4b91-99c1-01ed60bc3b1c",
+      "8c6dbf97-4ea3-431f-9df2-ddd60bcbdee4",
+      "6eee716e-ac7c-496c-ba7c-c986e962264c",
+      "353ba5c1-6d4f-49f1-bb1f-06f757caaaf5",
+      "63d0c316-b099-450b-b13f-427859084769",
+      "b2d05ebd-4419-4d8e-aa58-837f8bc31b4b",
+      "a5b7dea8-ed08-48ee-a577-d654ba62b7bc",
+      "65f7d343-f84f-4208-812c-2f95e0271329",
+      "5bf3a05b-44ef-44c9-aa0f-e4f192e2d0a4",
+      "bff08558-e091-43c6-82b1-a27098766168",
+      "17299de0-37d1-478b-a776-cfb4c89cdf18",
+      "3d8f201c-da34-4e80-83e2-b59375586e56",
+      "ceb1a649-e002-430e-9b9a-822e651fd57f",
+      "45520f30-178c-4627-871f-511c594f8266",
+      "34032251-0080-4b22-b08e-1b77f5b4c908",
+      "71da31d1-ab8a-410c-ad13-4c5096a3dce5",
+      "de490ad4-0596-4933-91d1-2354a6a5b676",
+      "160af569-93e7-4fa6-8e24-a614de88d082",
+      "7ba439b6-35ab-45f6-9132-e7534bfecfb8",
+      "46ddf3b3-808a-4e18-83eb-1854c2ea1ed8",
+      "7ebe833c-acc7-4212-b2eb-75ec1a2f5dfc",
+      "cd3e6ee9-4df4-402f-b7f7-cbbf2160582c",
+      "7548b010-93d3-4caa-9c5f-862cf6f6dad2",
+      "c83fff7c-6011-48ae-b9af-aa7700571539",
+      "1c547e8e-b9e6-454d-bbef-c76385430ac7",
+      "4ef3f7ed-e933-4fbb-85d6-25b988ace870"
+     ]
+    },
+    "141eb51b-2bc9-4fdc-9e82-4cb96431fcbd": {
+     "title": "Rengøringseffekt",
+     "id": "141eb51b-2bc9-4fdc-9e82-4cb96431fcbd",
+     "references": [
       "837381bf-cab9-4a86-9a1d-b1e6650809ea",
+      "466c26b6-1ac3-4293-ac7a-5c0bb65bcc4d",
       "bec3dae4-bfe7-405d-a36f-093c8800a19e",
+      "948d27c0-6a4b-4fbf-ae0a-d3e9e4b068ed",
+      "0d5c8f56-861e-4a39-905b-8cadd2913160",
       "ed23daf5-9efc-4a62-9fae-51c5fcacd75f",
       "8902e344-c4f1-4b29-9f76-251c7b474f0a",
+      "3a15eb4a-8520-415d-b0af-e9f461b43c22",
       "e19e59e1-fc05-4478-ae6d-b1addee1e5a0",
       "ece2d413-8e85-49bf-8db9-874e634dd823",
       "44afcc5e-f1d2-4de5-b6ca-2548190f2afc",
       "6bacb2e1-622e-491c-8863-6f542b77313a",
-      "3b32b1ae-9191-4230-bcc3-e87937d55f27",
       "410172d9-8c16-4a95-a144-198b5d0089f8",
-      "dce3dbf0-6e25-460d-8015-cb3bbaf388f7",
+      "445d0d22-c662-4979-a3c8-ac6354f75459",
       "1c2c37b9-87e0-469e-a704-d3d821b79402",
       "4880657e-f4f4-4a9a-875f-eea8336498ed",
-      "445d0d22-c662-4979-a3c8-ac6354f75459",
-      "4e5bfec2-25a0-4ba1-8d49-a6db60e43803"
+      "61228207-b6c9-4677-95b2-3d4f21fe2f25",
+      "dce3dbf0-6e25-460d-8015-cb3bbaf388f7",
+      "42c46727-d845-4492-9690-d704c83a94ab"
      ]
     },
-    "18641104-7c03-40e3-bcec-16784c299f5a": {
-     "title": "Sættets indhold og værdi",
-     "id": "18641104-7c03-40e3-bcec-16784c299f5a",
+    "57b596f2-e407-4ec5-bd1b-c0b20d4cd5df": {
+     "title": "Værdi og kvalitet",
+     "id": "57b596f2-e407-4ec5-bd1b-c0b20d4cd5df",
      "references": [
-      "a236b14f-8087-4bfd-8c36-7c7b89081697",
       "62c2b9cd-17ca-4624-9c4e-616a7180ee8f",
+      "edd62df6-c388-41a8-ac80-9a4be95dde2c",
       "7899219c-4a8e-47f1-9e4a-eea81c252c39",
-      "2ba74363-92f3-49a1-8f9f-ea49d28b2886",
-      "63d0c316-b099-450b-b13f-427859084769",
-      "5bf3a05b-44ef-44c9-aa0f-e4f192e2d0a4",
-      "e1bb6ade-77cd-431e-a1ff-92ba91ae8f16",
-      "65f7d343-f84f-4208-812c-2f95e0271329",
-      "3d8f201c-da34-4e80-83e2-b59375586e56",
-      "46ddf3b3-808a-4e18-83eb-1854c2ea1ed8",
-      "61228207-b6c9-4677-95b2-3d4f21fe2f25"
-     ]
-    },
-    "d3e10f58-bb69-41c0-8e28-de164239a50d": {
-     "title": "Brugervenlighed",
-     "id": "d3e10f58-bb69-41c0-8e28-de164239a50d",
-     "references": [
-      "d9af73da-d7d7-492a-8c3d-f8e93d729f2c",
-      "5ebdd147-93dd-487a-9f9d-443218203ca5",
-      "01d2508b-3e03-48fe-941e-a96c5fb5bace",
-      "c26be96a-df28-40ed-bbd0-5cd931908e9a",
-      "17299de0-37d1-478b-a776-cfb4c89cdf18",
-      "f4?",
-      "34032251-0080-4b22-b08e-1b77f5b4c908",
-      "71da31d1-ab8a-410c-ad13-4c5096a3dce5",
-      "7548b010-93d3-4caa-9c5f-862cf6f6dad2"
-     ]
-    },
-    "10c697b8-68e6-4536-80a9-9bb51f19ec11": {
-     "title": "Vejledning og sikkerhed",
-     "id": "10c697b8-68e6-4536-80a9-9bb51f19ec11",
-     "references": [
-      "948d27c0-6a4b-4fbf-ae0a-d3e9e4b068ed",
-      "4850099f-7b7a-49c3-b3f5-70bcefd0fca2",
-      "e947a4cf-87aa-485b-8d6d-c8a58f85e176",
-      "44b145f3-4ed1-4a5f-a3ed-62d22571a9da",
-      "ece2d413-8e85-49bf-8db9-874e634dd823",
-      "7847e962-9a8b-4f04-a84f-47820e612228",
-      "66a9e175-8704-4889-9468-573a619ac3f0"
+      "de7bea86-352e-4a8f-9e87-0b617064ef53",
+      "68527638-f384-49fc-8a81-c1c50ba5541e",
+      "a86895fa-5185-4a34-8522-b58e76a6772d",
+      "5277f4f1-a4b2-4db3-8851-54e9d104d243",
+      "dcd338b1-f0f5-4124-8255-fc0a6b981fd1",
+      "5c95aa8f-ab46-4a72-ae34-5927c4ba076c"
      ]
     }
    },
-   "rating": 4.57669902912621,
-   "count": 515,
-   "reviewCount": 154,
+   "rating": 4.57364341085271,
+   "count": 516,
+   "reviewCount": 155,
    "distribution": {
     "1": 1,
     "2": 0,
-    "3": 54,
+    "3": 55,
     "4": 106,
     "5": 354
    }

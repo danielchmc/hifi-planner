@@ -133,8 +133,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 407,
+     "numberOfStoresExperience": 21,
+     "availableQuantity": 372,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -183,46 +183,53 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Denne slipmat er en værdifuld opgradering til pladespillere og giver effektiv dæmpning samt en varmere, fyldigere og mere medrivende lyd. Statisk støj reduceres under brug, selv om den antistatiske effekt ikke altid er fuldstændig, og den første afspilning nogle gange kan gøre vinylen mere statisk. Samlet set fungerer måtten pålideligt og giver vinylafspilningen en slagkraftig og raffineret karakter.",
+   "summary": "Denne slipmat fungerer godt som en praktisk opgradering til pladespilleren med effektiv dæmpning og en mere solid, punchy lyd. Måtten kan reducere statisk støj og give en varmere, mere omsluttende gengivelse. Den antistatiske effekt er dog ikke helt konsekvent, og vinylen kan blive statisk ved første afspilning, hvis den ikke rengøres grundigt.",
    "headlines": {
+    "works well in use": {
+     "sentimentAnalysis": "Slipmatten beskrives generelt som velfungerende, også med en bestemt pladespiller.",
+     "simpleTitle": "Fungerer godt i brug",
+     "bias": "positive",
+     "key": "functionality",
+     "groupId": "0899c064-f33b-4301-87ac-d7aa01d6c64d"
+    },
     "effective damping": {
-     "sentimentAnalysis": "Slipmatten roses for effektiv dæmpning af vibrationer og resonans.",
+     "sentimentAnalysis": "Begge anmeldelser roser måtten for effektivt at dæmpe vibrationer eller uønsket resonans.",
      "simpleTitle": "Effektiv dæmpning",
      "bias": "positive",
-     "key": "damping-sound",
-     "groupId": "a763b486-77fe-4fcb-8b0b-85a4cc99fe00"
-    },
-    "reduced static noise": {
-     "sentimentAnalysis": "Måtten forbindes med mindre statisk støj under vinylafspilning, selv om effekten kan afhænge af grundig rengøring af pladen.",
-     "simpleTitle": "Mindre statisk støj",
-     "bias": "positive",
-     "key": "anti-static",
-     "groupId": "3faa8202-eee1-471f-9b70-38da48fbe7e0"
+     "key": "damping",
+     "groupId": "66a9097f-2d32-4c66-9a8f-cb8712c55ada"
     },
     "antistatic performance is inconsistent": {
-     "sentimentAnalysis": "Den antistatiske effekt er begrænset: En anmeldelse bemærker, at måtten ikke er helt antistatisk, mens en anden rapporterer mere statisk elektricitet ved første afspilning.",
+     "sentimentAnalysis": "Måtten forhindrer ikke konsekvent statisk elektricitet; anmeldelserne nævner både resterende statisk elektricitet og opbygning ved første afspilning.",
      "simpleTitle": "Den antistatiske effekt er ujævn",
      "bias": "negative",
-     "key": "anti-static",
-     "groupId": "3faa8202-eee1-471f-9b70-38da48fbe7e0"
+     "key": "static-control",
+     "groupId": "824b89c8-391a-4e8c-946e-6005d898177e"
     }
    },
    "grouping": {
-    "3faa8202-eee1-471f-9b70-38da48fbe7e0": {
-     "title": "Antistatisk effekt",
-     "id": "3faa8202-eee1-471f-9b70-38da48fbe7e0",
+    "824b89c8-391a-4e8c-946e-6005d898177e": {
+     "title": "Statisk kontrol",
+     "id": "824b89c8-391a-4e8c-946e-6005d898177e",
      "references": [
       "0eeec714-cdbf-49ea-9344-762695673a6e",
       "400e7e21-7537-4861-ac5a-96bd081a5012",
       "e1a1d16c-5efd-4deb-8412-b527a8286c53"
      ]
     },
-    "a763b486-77fe-4fcb-8b0b-85a4cc99fe00": {
-     "title": "Dæmpning og lyd",
-     "id": "a763b486-77fe-4fcb-8b0b-85a4cc99fe00",
+    "0899c064-f33b-4301-87ac-d7aa01d6c64d": {
+     "title": "Funktionalitet",
+     "id": "0899c064-f33b-4301-87ac-d7aa01d6c64d",
+     "references": [
+      "936f9ae1-c7fa-429b-aaad-eb48482cf8ff",
+      "e80fb73b-3b58-4b68-839d-5c00c33cd1c4"
+     ]
+    },
+    "66a9097f-2d32-4c66-9a8f-cb8712c55ada": {
+     "title": "Dæmpning",
+     "id": "66a9097f-2d32-4c66-9a8f-cb8712c55ada",
      "references": [
       "c8b7f004-8281-4817-8b31-d5e30237526e",
-      "0eeec714-cdbf-49ea-9344-762695673a6e",
       "e1a1d16c-5efd-4deb-8412-b527a8286c53"
      ]
     }

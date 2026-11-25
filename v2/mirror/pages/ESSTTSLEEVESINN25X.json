@@ -115,7 +115,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 297,
+     "availableQuantity": 261,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -164,23 +164,32 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse inderlommer giver varm og punchy beskyttelse med en kvalitet, der næsten matcher MoFi-standard, men til en mere overkommelig pris. Lommerne vurderes generelt som fremragende og velegnede til formålet. Lidt tykkere materiale ville gøre håndteringen og indsættelsen af plader endnu lettere og mere sikker.",
+   "summary": "Disse pladeomslag opleves generelt som en varm, punchy og immersiv opgradering til vinylopbevaring med god kvalitet til en attraktiv pris. Omslagene vurderes som meget velegnede til formålet og kan varmt anbefales. Et lidt tykkere materiale ville gøre håndtering og ilægning af plader lettere, da omslagene ellers kan falde sammen.",
    "headlines": {
-    "high-quality sleeves": {
-     "sentimentAnalysis": "Lommerne roses som meget gode produkter med en kvalitet, der kan sammenlignes med MoFi-lommer, og med stor generel tilfredshed.",
-     "simpleTitle": "Lommer i høj kvalitet",
+    "good quality at an attractive price": {
+     "sentimentAnalysis": "Omslagene roses for kvalitet på niveau med premium-MoFi-omslag til en lavere pris, og produkterne beskrives som meget gode generelt.",
+     "simpleTitle": "God kvalitet til en attraktiv pris",
      "bias": "positive",
      "key": "quality",
-     "groupId": "469b1014-88ef-4444-b219-8f6de4be2fad"
+     "groupId": "be6718a0-81d6-4096-8661-972306399ad7"
+    },
+    "well suited to the intended use": {
+     "sentimentAnalysis": "Omslagene vurderes som velegnede til formålet og får klare anbefalinger.",
+     "simpleTitle": "Velegnet til det tilsigtede formål",
+     "bias": "positive",
+     "key": "quality",
+     "groupId": "be6718a0-81d6-4096-8661-972306399ad7"
     }
    },
    "grouping": {
-    "469b1014-88ef-4444-b219-8f6de4be2fad": {
-     "title": "Kvalitet",
-     "id": "469b1014-88ef-4444-b219-8f6de4be2fad",
+    "be6718a0-81d6-4096-8661-972306399ad7": {
+     "title": "Kvalitet og værdi",
+     "id": "be6718a0-81d6-4096-8661-972306399ad7",
      "references": [
+      "64ae8d4d-07c7-4468-97c1-9bfcf122c990",
       "c5315516-052f-4bac-960f-1ba4920f364e",
-      "52af5d40-308d-4cf8-86f7-cf95a5b54dfb"
+      "52af5d40-308d-4cf8-86f7-cf95a5b54dfb",
+      "ef9b5783-8731-4704-a924-65c1420294d5"
      ]
     }
    },

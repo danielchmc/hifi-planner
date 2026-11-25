@@ -140,7 +140,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 901,
+     "availableQuantity": 890,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -186,53 +186,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse højttalerstandere giver et stabilt fundament i flot kvalitet og passer fremragende til kompakte højttalere. Den velvalgte højde og lette vinkling skaber en mere direkte og omsluttende lytteposition på skriveborde, møbler, gulve eller ved siden af et fjernsyn. Den brede kompatibilitet, solide konstruktion og punchy, velrettede lyd gør standerne til en imponerende opgradering af små højttalersystemer.",
+   "summary": "ESSTSKONTUR10 leverer en stabil og flot udført højttalerstander med fremragende pasform til flere kompakte højttalere og forskellige møbelopstillinger. Den solide konstruktion, de skrivebordsvenlige mål og den praktiske opadgående vinkling skaber en varm, fokuseret og mere omsluttende lytteposition. Produktet føles gennemtænkt og giver en kraftfuld, velrettet lyd på skriveborde, møbler, gulve og ved TV-områder.",
    "headlines": {
-    "sturdy, well-made construction": {
-     "sentimentAnalysis": "Standene roses konsekvent for at være stabile, robuste, flot udført og omhyggeligt færdiggjorte.",
-     "simpleTitle": "Stabil konstruktion i høj kvalitet",
+    "sturdy and stable construction": {
+     "sentimentAnalysis": "Flere anmeldelser roser standerne for at være stabile, robuste og veludførte.",
+     "simpleTitle": "Robust og stabil konstruktion",
      "bias": "positive",
-     "key": "build_stability",
-     "groupId": "ce3c1296-35ca-473a-bde7-45f7eb1de243"
+     "key": "build",
+     "groupId": "91481e19-9582-458f-a68f-60e03c596661"
     },
-    "excellent fit for compact speakers": {
-     "sentimentAnalysis": "Flere anmeldelser fortæller, at standene passer rigtig godt til bestemte højttalermodeller.",
-     "simpleTitle": "Fremragende pasform til kompakte højttalere",
+    "fits several compact speaker setups": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en fremragende pasform til de nævnte højttalere og generelle højttaleropsætninger.",
+     "simpleTitle": "Passer til flere kompakte højttaleropsætninger",
      "bias": "positive",
-     "key": "fit_compatibility",
-     "groupId": "5e33ffa4-21a9-41e5-88d9-d6237766c597"
+     "key": "fit",
+     "groupId": "622df8f0-ddaa-45ef-bc2a-a8c59e340d67"
     },
-    "useful height and gentle angle": {
-     "sentimentAnalysis": "Højden og vinklingen værdsættes for at rette lyden opad og fungere godt på skrivebord, møbel og ved fjernsyn.",
-     "simpleTitle": "Praktisk højde og let vinkling",
+    "useful height and upward angle": {
+     "sentimentAnalysis": "Højde og vinkel vurderes som effektive til skriveborde, gulve, møbler og TV-lyttepositioner.",
+     "simpleTitle": "Praktisk højde og opadgående vinkling",
      "bias": "positive",
-     "key": "height_angle",
-     "groupId": "57eb0841-5ae1-4671-9f86-e8745eb4ee8b"
+     "key": "positioning",
+     "groupId": "5b593069-4c89-4621-99f2-8994c5cff373"
     }
    },
    "grouping": {
-    "ce3c1296-35ca-473a-bde7-45f7eb1de243": {
-     "title": "Byggekvalitet og stabilitet",
-     "id": "ce3c1296-35ca-473a-bde7-45f7eb1de243",
+    "91481e19-9582-458f-a68f-60e03c596661": {
+     "title": "Stabilitet og byggekvalitet",
+     "id": "91481e19-9582-458f-a68f-60e03c596661",
      "references": [
+      "cd48e739-eb75-408d-86c8-87bdcabea6f4",
       "14b000ae-068c-48ee-b9b8-93428a4154cd",
-      "1f1ef6aa-667a-486b-87b9-83ca1bdb9ec7",
       "702a0c1b-ebc7-4e25-b86e-ac43cc188691",
-      "1b9d5856-15e5-416b-9f54-0677be87b7b6"
+      "1b9d5856-15e5-416b-9f54-0677be87b7b6",
+      "1f1ef6aa-667a-486b-87b9-83ca1bdb9ec7"
      ]
     },
-    "5e33ffa4-21a9-41e5-88d9-d6237766c597": {
-     "title": "Pasform og kompatibilitet",
-     "id": "5e33ffa4-21a9-41e5-88d9-d6237766c597",
+    "622df8f0-ddaa-45ef-bc2a-a8c59e340d67": {
+     "title": "Højttalerpasform",
+     "id": "622df8f0-ddaa-45ef-bc2a-a8c59e340d67",
      "references": [
       "93eefafe-c0f5-4ada-87c4-0c5281ce423c",
       "4bb0265f-c889-45da-be38-dd342b397b62",
-      "1b9d5856-15e5-416b-9f54-0677be87b7b6"
+      "1b9d5856-15e5-416b-9f54-0677be87b7b6",
+      "702a0c1b-ebc7-4e25-b86e-ac43cc188691"
      ]
     },
-    "57eb0841-5ae1-4671-9f86-e8745eb4ee8b": {
+    "5b593069-4c89-4621-99f2-8994c5cff373": {
      "title": "Højde og vinkling",
-     "id": "57eb0841-5ae1-4671-9f86-e8745eb4ee8b",
+     "id": "5b593069-4c89-4621-99f2-8994c5cff373",
      "references": [
       "14b000ae-068c-48ee-b9b8-93428a4154cd",
       "702a0c1b-ebc7-4e25-b86e-ac43cc188691",
@@ -240,15 +242,15 @@
      ]
     }
    },
-   "rating": 4.46153846153846,
-   "count": 13,
-   "reviewCount": 6,
+   "rating": 4.5,
+   "count": 14,
+   "reviewCount": 7,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 0,
     "4": 3,
-    "5": 9
+    "5": 10
    }
   },
   "boxContent": [

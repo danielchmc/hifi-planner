@@ -124,7 +124,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 271,
+     "availableQuantity": 264,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -148,34 +148,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En varm og punchy lille nålebørste, der fungerer pålideligt og rengør nålen effektivt. De bløde, skånsomme børstehår gør den daglige vedligeholdelse sikker og nem. Et veludført og behageligt tilbehør med en næsten immersiv følelse af omhu, selv om prisen kan virke lidt høj.",
+   "summary": "Varm, punchy og omsluttende ydeevne møder en blød og skånsom børste, der holder nålen ren. Pålidelig udførelse og effektiv rengøring i hverdagen gør tilbehøret let at anbefale. Den kompakte børste føles raffineret og praktisk, mens kun prisen giver en mindre reservation.",
    "headlines": {
-    "reliable everyday cleaning": {
-     "sentimentAnalysis": "Børsten beskrives konsekvent som velfungerende, pålidelig og effektiv.",
-     "simpleTitle": "Pålidelig rengøring i hverdagen",
+    "effective everyday cleaning": {
+     "sentimentAnalysis": "Børsten beskrives konsekvent som pålidelig, effektiv og god til at rengøre nålen.",
+     "simpleTitle": "Effektiv rengøring i hverdagen",
      "bias": "positive",
-     "key": "reliable-cleaning",
-     "groupId": "6280a934-9847-472a-9e3a-2031b594b5aa"
+     "key": "performance_cleaning",
+     "groupId": "781981a2-c1df-40cd-a656-9d65267ff42f"
     },
     "soft and gentle bristles": {
-     "sentimentAnalysis": "Børstehårene roses gentagne gange som meget bløde, skånsomme og behagelige at bruge.",
-     "simpleTitle": "Bløde og skånsomme børstehår",
+     "sentimentAnalysis": "Flere anmeldelser roser børsten for at være ekstra blød, skånsom og behagelig at bruge.",
+     "simpleTitle": "Bløde og skånsomme børster",
      "bias": "positive",
-     "key": "soft-gentle-bristles",
-     "groupId": "9b61b059-e512-4300-af8c-b87e56ea5888"
-    },
-    "effective needle cleaning": {
-     "sentimentAnalysis": "Konkrete kommentarer roser børsten for at rengøre nålen godt og holde den ren.",
-     "simpleTitle": "Effektiv nålerengøring",
-     "bias": "positive",
-     "key": "needle-cleaning",
-     "groupId": "6280a934-9847-472a-9e3a-2031b594b5aa"
+     "key": "softness_gentleness",
+     "groupId": "3a89e70a-bbf8-432c-ab21-b349b555e5e2"
     }
    },
    "grouping": {
-    "6280a934-9847-472a-9e3a-2031b594b5aa": {
-     "title": "Rengøringseffektivitet",
-     "id": "6280a934-9847-472a-9e3a-2031b594b5aa",
+    "781981a2-c1df-40cd-a656-9d65267ff42f": {
+     "title": "Ydeevne og rengøring",
+     "id": "781981a2-c1df-40cd-a656-9d65267ff42f",
      "references": [
       "989a0c06-ad0f-44bb-ac56-7413dbc685fa",
       "887bc352-c43c-430c-a283-2949023fe8fa",
@@ -187,9 +180,9 @@
       "f123595d-7f64-4184-8556-996859ddef75"
      ]
     },
-    "9b61b059-e512-4300-af8c-b87e56ea5888": {
-     "title": "Børstehårenes blødhed og skånsomhed",
-     "id": "9b61b059-e512-4300-af8c-b87e56ea5888",
+    "3a89e70a-bbf8-432c-ab21-b349b555e5e2": {
+     "title": "Blødhed og skånsomhed",
+     "id": "3a89e70a-bbf8-432c-ab21-b349b555e5e2",
      "references": [
       "5eeea131-6583-4644-b862-e966a7aa0ec8",
       "43d9b887-2dd3-4936-934b-ccf5951944bd",

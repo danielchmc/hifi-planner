@@ -109,8 +109,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 15,
-     "availableQuantity": 434,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 415,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -134,79 +134,86 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSWIRCONNECTX er en nem, kabelbesparende trådløs lydløsning, der fungerer pålideligt i mange tv- og subwooferopsætninger. Lyden kan være klar og slagkraftig med acceptabel forsinkelse, selv om nogle opsætninger oplever kvalitetstab eller støj fra subwooferen. Rækkevidde og signal gennem vægge varierer, så placeringen er vigtig, mens de korte medfølgende kabler og den begrænsede manual trækker ned i et ellers vellykket indtryk.",
+   "summary": "ESSWIRCONNECTX leverer en praktisk plug-and-play trådløs lydforbindelse, som eliminerer lange signalkabler og fungerer særligt godt til tv, hjemmebio og subwoofere. Lyden er generelt ren og uden mærkbar forsinkelse, med en varm og slagkraftig gengivelse til hverdagslytning, selv om nogle brugere oplever udfald gennem vægge, begrænset rækkevidde og lejlighedsvis støj eller kvalitetstab. Længere medfølgende kabler og en tydeligere manual ville gøre det ellers meget praktiske design mere driftssikkert.",
    "headlines": {
-    "quick, simple plug-and-play setup": {
-     "sentimentAnalysis": "Sender og modtager beskrives som nemme at installere, hurtige til at forbinde og klar til brug med det samme.",
-     "simpleTitle": "Hurtig og enkel plug-and-play-opsætning",
+    "easy plug-and-play setup": {
+     "sentimentAnalysis": "Forbindelsen er hurtig og ukompliceret med overbevisende plug-and-play-brugervenlighed.",
+     "simpleTitle": "Nem plug-and-play-opsætning",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "1886b619-92e9-4918-a09b-104ca83e87a3"
+     "key": "setup_use",
+     "groupId": "a6dbff0e-3145-4760-99c8-3a1df3ae0fe6"
     },
-    "unreliable range through obstacles": {
-     "sentimentAnalysis": "Flere opsætninger mister stabilitet over korte afstande eller ved vægge og personer i signalvejen, så omhyggelig placering er nødvendig.",
-     "simpleTitle": "Ustabil rækkevidde gennem forhindringer",
+    "range drops through walls and over distance": {
+     "sentimentAnalysis": "Signalydelsen er ustabil med kort effektiv rækkevidde og udfald på grund af vægge eller ugunstig placering.",
+     "simpleTitle": "Rækkevidden falder gennem vægge og på længere afstand",
      "bias": "negative",
-     "key": "range",
-     "groupId": "548d3abf-5a33-454f-972a-3de0d59ef72b"
+     "key": "range_signal",
+     "groupId": "2f47f235-55c3-4111-80b0-b7a739c8a25d"
     },
-    "conveniently replaces long signal cables": {
-     "sentimentAnalysis": "Trådløs transmission gør lange kabler gennem stuen overflødige og gør placeringen af subwooferen nemmere.",
-     "simpleTitle": "Erstatter lange signalkabler på praktisk vis",
+    "wireless links eliminate long signal cables": {
+     "sentimentAnalysis": "Produktet giver en praktisk forbindelse mellem lydudstyr uden lange kabler gennem rummet.",
+     "simpleTitle": "Trådløse forbindelser fjerner lange signalkabler",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "1886b619-92e9-4918-a09b-104ca83e87a3"
+     "key": "cable_convenience",
+     "groupId": "e05152d2-fc62-43cd-a9b7-1b479683b93c"
     },
-    "clear audio with acceptable latency": {
-     "sentimentAnalysis": "Forbindelsen leverer fin og behagelig lyd, hvor forsinkelsen til tv og film vurderes som acceptabel, og ét setup havde ingen mærkbar forsinkelse.",
-     "simpleTitle": "Klar lyd med acceptabel forsinkelse",
+    "audio is largely clear and delay-free": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver pålidelig lydtransmission med acceptabel eller ingen forsinkelse og tilfredsstillende musikgengivelse.",
+     "simpleTitle": "Lyden er overvejende klar og uden forsinkelse",
      "bias": "positive",
-     "key": "audio",
-     "groupId": "5beef7a1-2123-47c0-a958-dfcf5ac61a44"
+     "key": "sound_audio",
+     "groupId": "0881fb72-75cd-4752-8461-e1dd948806f7"
     },
-    "audio quality can degrade or become noisy": {
-     "sentimentAnalysis": "Nogle brugere oplever betydeligt kvalitetstab, signalforstyrrelser eller støj fra subwooferen, især under mindre optimale forhold.",
-     "simpleTitle": "Lydkvaliteten kan forringes eller blive støjende",
+    "transmission can reduce quality or add noise": {
+     "sentimentAnalysis": "Nogle brugere oplever hørbart kvalitetstab, interferens eller subwooferstøj trods den ellers praktiske trådløse forbindelse.",
+     "simpleTitle": "Transmissionen kan reducere kvaliteten eller tilføre støj",
      "bias": "negative",
-     "key": "audio",
-     "groupId": "5beef7a1-2123-47c0-a958-dfcf5ac61a44"
+     "key": "sound_audio",
+     "groupId": "0881fb72-75cd-4752-8461-e1dd948806f7"
     }
    },
    "grouping": {
-    "1886b619-92e9-4918-a09b-104ca83e87a3": {
+    "a6dbff0e-3145-4760-99c8-3a1df3ae0fe6": {
      "title": "Opsætning og brugervenlighed",
-     "id": "1886b619-92e9-4918-a09b-104ca83e87a3",
+     "id": "a6dbff0e-3145-4760-99c8-3a1df3ae0fe6",
      "references": [
-      "1de685a0-a132-4e88-9635-18626408af3c",
       "90c26cfb-7f41-4755-b5e6-9d2f0703b20b",
       "1b6df261-876f-4f43-8e1b-a04fdaf00849",
       "315337b8-5a3b-43c5-a8c1-981f11aacf82",
-      "da7d0578-4fe0-4791-a2bb-e632f2f7be0f",
       "f39e2a22-45b1-4eae-8a5c-2175376d6186",
       "0760d09b-9fd6-4aaa-a9c9-544acf43307c",
-      "aba1d06d-55a0-41f0-811b-648d0ca923f6"
+      "8c44b41c-f001-4a2b-9415-2cbe47d6e70a"
      ]
     },
-    "5beef7a1-2123-47c0-a958-dfcf5ac61a44": {
+    "2f47f235-55c3-4111-80b0-b7a739c8a25d": {
+     "title": "Rækkevidde og signalstabilitet",
+     "id": "2f47f235-55c3-4111-80b0-b7a739c8a25d",
+     "references": [
+      "3d8ae1b0-f870-436d-bbc4-ac485f9558f9",
+      "389a997b-084c-4d30-9be2-ff3d0efe401f",
+      "45cd553e-b7d6-43e1-9bc8-9d94935c7665",
+      "11091be9-f71d-4340-ab93-ea5dd0a077ac",
+      "8c44b41c-f001-4a2b-9415-2cbe47d6e70a"
+     ]
+    },
+    "0881fb72-75cd-4752-8461-e1dd948806f7": {
      "title": "Lydkvalitet og forsinkelse",
-     "id": "5beef7a1-2123-47c0-a958-dfcf5ac61a44",
+     "id": "0881fb72-75cd-4752-8461-e1dd948806f7",
      "references": [
       "90c26cfb-7f41-4755-b5e6-9d2f0703b20b",
-      "389a997b-084c-4d30-9be2-ff3d0efe401f",
       "45cd553e-b7d6-43e1-9bc8-9d94935c7665",
       "9911e770-c226-4d89-8fe8-150ece2e2bee",
       "cbc24bef-650d-4dd9-a358-49690b0de881",
       "315337b8-5a3b-43c5-a8c1-981f11aacf82"
      ]
     },
-    "548d3abf-5a33-454f-972a-3de0d59ef72b": {
-     "title": "Signalrækkevidde og stabilitet",
-     "id": "548d3abf-5a33-454f-972a-3de0d59ef72b",
+    "e05152d2-fc62-43cd-a9b7-1b479683b93c": {
+     "title": "Kabelkomfort",
+     "id": "e05152d2-fc62-43cd-a9b7-1b479683b93c",
      "references": [
-      "3d8ae1b0-f870-436d-bbc4-ac485f9558f9",
-      "389a997b-084c-4d30-9be2-ff3d0efe401f",
-      "45cd553e-b7d6-43e1-9bc8-9d94935c7665",
-      "11091be9-f71d-4340-ab93-ea5dd0a077ac",
+      "1de685a0-a132-4e88-9635-18626408af3c",
+      "1b6df261-876f-4f43-8e1b-a04fdaf00849",
+      "da7d0578-4fe0-4791-a2bb-e632f2f7be0f",
       "8c44b41c-f001-4a2b-9415-2cbe47d6e70a"
      ]
     }

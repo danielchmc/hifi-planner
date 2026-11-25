@@ -182,7 +182,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
+     "numberOfStoresExperience": 9,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -222,21 +222,38 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTVBMOTSLIM19X giver en enkel og solid oplevelse med pålidelig støtte på væggen. Den nemme håndtering og robuste konstruktion skaber et sikkert grundlag for varm, fyldig og medrivende TV-lyd. Den begrænsede justering af synsvinklen er den største begrænsning, mens den samlede ydeevne lever op til forventningerne.",
+   "summary": "En varm, kraftfuld og omsluttende følelse af sikkerhed kommer fra den solide vægmontering og den enkle installation. Tydelige instruktioner og praktisk håndtering gør beslaget meget nemt at bruge. Den begrænsede justering og mulig synlighed af beslaget på mindre tv er kun mindre ulemper ved den ellers pålidelige ydeevne.",
    "headlines": {
-    "secure and solid wall mounting": {
-     "sentimentAnalysis": "Beslaget roses for at holde TV'et sikkert og føles solidt på væggen.",
-     "simpleTitle": "Sikker og solid vægmontering",
+    "solid and secure wall support": {
+     "sentimentAnalysis": "Beslaget roses konsekvent for sin solide konstruktion og for at holde tv'et sikkert på væggen.",
+     "simpleTitle": "Solid og sikker vægmontering",
      "bias": "positive",
-     "key": "mounting",
-     "groupId": "6a157fc6-18c4-4eea-91c0-732ec92056c2"
+     "key": "stability",
+     "groupId": "f6e55661-e03c-40af-9d2f-6be5e4eda1b2"
+    },
+    "easy and convenient installation": {
+     "sentimentAnalysis": "Beslaget beskrives som meget nemt og praktisk at montere eller håndtere, og tydelige instruktioner understøtter en problemfri opsætning.",
+     "simpleTitle": "Nem og praktisk montering",
+     "bias": "positive",
+     "key": "installation",
+     "groupId": "9ab619ae-2e20-4e89-982d-9454ef8f2c87"
     }
    },
    "grouping": {
-    "6a157fc6-18c4-4eea-91c0-732ec92056c2": {
-     "title": "Stabilitet ved montering",
-     "id": "6a157fc6-18c4-4eea-91c0-732ec92056c2",
+    "9ab619ae-2e20-4e89-982d-9454ef8f2c87": {
+     "title": "Montering og brugervenlighed",
+     "id": "9ab619ae-2e20-4e89-982d-9454ef8f2c87",
      "references": [
+      "13503628-94d6-4c93-861d-1f747468fe39",
+      "c89fc3b5-021a-4b9e-9cc5-61f869db6512",
+      "b773bf64-dfe7-4746-b6bb-cfae7d6c26ee"
+     ]
+    },
+    "f6e55661-e03c-40af-9d2f-6be5e4eda1b2": {
+     "title": "Stabilitet og byggekvalitet",
+     "id": "f6e55661-e03c-40af-9d2f-6be5e4eda1b2",
+     "references": [
+      "13503628-94d6-4c93-861d-1f747468fe39",
       "2f6ded95-fc97-44f6-a3e8-3d923000702e",
       "e8967db9-17d6-4039-b3ba-f4b13906f5ff"
      ]

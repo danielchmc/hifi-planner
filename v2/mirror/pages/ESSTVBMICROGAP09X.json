@@ -176,7 +176,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
+     "numberOfStoresExperience": 12,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -213,41 +213,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et meget rost TV-vægbeslag, der kombinerer nem installation, stabil støtte og et rent, lavprofileret design. Varme, punchy og immersive lydudtryk er ikke direkte relevante for dette vægbeslag, mens anmeldelserne konsekvent fremhæver sikker montering og praktisk design. Enkelte monteringsdetaljer kan være besværlige, især det sidste klik på plads og en manglende lang skrue, men kvalitet og brugervenlighed vurderes samlet meget positivt.",
+   "summary": "TV-vægbeslaget får stor ros for nem montering, stabil støtte og et rent, fladt design. TV-skærme hænger sikkert og tæt på væggen, hvilket giver en immersiv og elegant opsætning med varm kvalitetsfornemmelse. En førsteklasses og slagkraftig løsning til store skærme, selv om den sidste klikmontering blev oplevet som vanskelig i ét tilfælde.",
    "headlines": {
-    "easy to install and hang": {
+    "easy to install": {
      "sentimentAnalysis": "Anmeldelserne beskriver konsekvent montering og ophængning af TV'et som nemt og praktisk.",
-     "simpleTitle": "Nem at montere og hænge op",
+     "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "easy-installation",
-     "groupId": "22d7acff-33d0-4811-9841-5858494cbfe0"
+     "groupId": "13c14c17-630a-4433-a055-16734b906f6a"
     },
-    "secure and sturdy TV support": {
-     "sentimentAnalysis": "Beslaget roses gentagne gange for at holde TV'et sikkert og stabilt på væggen.",
-     "simpleTitle": "Sikker og stabil TV-støtte",
+    "secure and sturdy support": {
+     "sentimentAnalysis": "Beslaget roses gentagne gange for robust konstruktion og sikker fastholdelse af TV'et på væggen.",
+     "simpleTitle": "Sikker og stabil støtte",
      "bias": "positive",
      "key": "secure-support",
-     "groupId": "072f31d1-c982-4821-87db-270212a2fce5"
+     "groupId": "40f869d5-4c9b-436a-8e0d-330fe6eb700c"
     },
-    "slim, neat, quality design": {
-     "sentimentAnalysis": "Det flade udseende opfattes som pænt, attraktivt og tegn på kvalitet.",
-     "simpleTitle": "Flot, fladt kvalitetsdesign",
+    "slim and attractive profile": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den lave byggehøjde, flade pasform og stilfulde fremtoning på væggen.",
+     "simpleTitle": "Slank og elegant profil",
      "bias": "positive",
-     "key": "slim-design",
-     "groupId": "5ce9986d-e6d2-4b72-b4ed-2ef0bd47fdd0"
-    },
-    "some fitting details can be awkward": {
-     "sentimentAnalysis": "En anmeldelse nævner et problem med skruelængden, mens en anden finder det sidste klik på plads svært og krævende ekstra tryk.",
-     "simpleTitle": "Nogle monteringsdetaljer kan være besværlige",
-     "bias": "negative",
-     "key": "fitting-issues",
-     "groupId": "22d7acff-33d0-4811-9841-5858494cbfe0"
+     "key": "slim-profile",
+     "groupId": "c8d642e6-3f7d-449b-97ba-2073757feba6"
     }
    },
    "grouping": {
-    "22d7acff-33d0-4811-9841-5858494cbfe0": {
+    "13c14c17-630a-4433-a055-16734b906f6a": {
      "title": "Montering",
-     "id": "22d7acff-33d0-4811-9841-5858494cbfe0",
+     "id": "13c14c17-630a-4433-a055-16734b906f6a",
      "references": [
       "65f4fdd4-7880-415c-aa8b-2d510339512c",
       "d328b962-4364-4fdc-ad3b-5a017e2955a8",
@@ -257,25 +250,25 @@
       "804324b6-191d-4b9e-8386-4ddc4f64a612",
       "6fd508a8-5c9a-4f23-aa50-c6c9e9a79c53",
       "91e96b6d-f699-4a4f-ae24-0f547fee91cc",
+      "54eb4365-1c86-4598-9414-619ae0bbf83f",
       "c0288de9-24e3-4d6a-8224-9763c5aeb234",
       "6c665afa-55bd-4a23-8df2-99f692aaad97",
       "bd71d208-aea8-4988-a1c8-39511d443ab5"
      ]
     },
-    "072f31d1-c982-4821-87db-270212a2fce5": {
-     "title": "Stabilitet og støtte",
-     "id": "072f31d1-c982-4821-87db-270212a2fce5",
+    "40f869d5-4c9b-436a-8e0d-330fe6eb700c": {
+     "title": "Stabilitet",
+     "id": "40f869d5-4c9b-436a-8e0d-330fe6eb700c",
      "references": [
       "65f4fdd4-7880-415c-aa8b-2d510339512c",
       "7616f34e-ed5f-4a52-8c1e-73c0fcf94a8b",
       "134cd9a7-55c6-43f0-a7f0-496244c3446b",
-      "d5d55863-a0bb-4e5b-8d1b-7c21daedd263",
-      "a7d31911-aaa0-4283-acc6-dd073e90df39"
+      "d5d55863-a0bb-4e5b-8d1b-7c21daedd263"
      ]
     },
-    "5ce9986d-e6d2-4b72-b4ed-2ef0bd47fdd0": {
-     "title": "Design og profil",
-     "id": "5ce9986d-e6d2-4b72-b4ed-2ef0bd47fdd0",
+    "c8d642e6-3f7d-449b-97ba-2073757feba6": {
+     "title": "Slankt design",
+     "id": "c8d642e6-3f7d-449b-97ba-2073757feba6",
      "references": [
       "804324b6-191d-4b9e-8386-4ddc4f64a612",
       "54eb4365-1c86-4598-9414-619ae0bbf83f",

@@ -35,9 +35,9 @@
    "productCodes": [
     "ESSTVBMICROGAP09X",
     "VOGTVM5705",
-    "ESSBASICWMSFLATX",
     "VOGTVM3615X",
-    "VOGTVM3215X"
+    "VOGTVM3215X",
+    "ESSBASICWMSFLATX"
    ],
    "isOutlet": "false"
   },
@@ -157,8 +157,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 43,
+     "numberOfStoresExperience": 21,
+     "availableQuantity": 27,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -197,55 +197,56 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTVBSLIM18X er et slankt og prisvenligt TV-vægbeslag, som er særdeles nemt at montere og leveres med nyttigt monteringsudstyr. Det enkle, pladsbesparende design bliver værdsat, mens lyd og billede kan være fremragende afhængigt af det samlede setup. Nogle Samsung-modeller kan kræve længere M8-skruer, og den meget korte afstand til væggen er ikke ideel for alle.",
+   "summary": "Dette slanke TV-vægbeslag roses for nem montering, tydelig vejledning, medfølgende beslag og et flot slutresultat. Det kompakte design giver god værdi for pengene og placerer TV’et pænt på væggen, men nogle Samsung-modeller kræver længere skruer, og afstanden til væggen kan føles for lille. Med passende lydudstyr bliver lyden varm, fyldig og omsluttende, mens den samlede løsning virker gennemført og pladsbesparende.",
    "headlines": {
-    "very easy to install": {
-     "sentimentAnalysis": "Monteringen beskrives gentagne gange som hurtig, enkel og praktisk, mens tydelig vejledning og flere skruetyper gør den endnu nemmere.",
-     "simpleTitle": "Meget nem at montere",
+    "easy to install": {
+     "sentimentAnalysis": "Monteringen beskrives gentagne gange som meget nem med tydelig vejledning og nyttigt medfølgende tilbehør.",
+     "simpleTitle": "Nem at montere",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "dafe64db-869c-4b67-a193-0020cc02aaa1"
+     "key": "easy-installation",
+     "groupId": "ff726f27-3011-473c-9bcf-703d13d9e584"
     },
-    "good value for the price": {
-     "sentimentAnalysis": "Produktet opfattes både som prisvenligt og af god kvalitet, hvilket giver et positivt samlet indtryk af værdien.",
+    "warm, immersive sound with suitable equipment": {
+     "sentimentAnalysis": "Passende lydkomponenter forbindes med god, optimeret og meget tilfredsstillende lydkvalitet.",
+     "simpleTitle": "Varm og omsluttende lyd med passende udstyr",
+     "bias": "positive",
+     "key": "enhanced-sound",
+     "groupId": "ec079bea-e2d6-4235-8940-c2eca0166310"
+    },
+    "good value for money": {
+     "sentimentAnalysis": "Produktet vurderes som både prisvenligt og af god kvalitet.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "d275d822-aee3-48ab-a897-368c07cd348a"
-    },
-    "strong sound quality in the full setup": {
-     "sentimentAnalysis": "Det samlede lydsetup roses for en tilfredsstillende lyd i høj kvalitet, især sammen med ekstra udstyr.",
-     "simpleTitle": "God lydkvalitet i det samlede setup",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "396be3b9-9c73-4044-b8e2-d89394d6d2a9"
+     "key": "good-value",
+     "groupId": "b77e0d9f-e3d7-4d33-9e07-e67ccb6f63be"
     }
    },
    "grouping": {
-    "dafe64db-869c-4b67-a193-0020cc02aaa1": {
+    "ff726f27-3011-473c-9bcf-703d13d9e584": {
      "title": "Montering",
-     "id": "dafe64db-869c-4b67-a193-0020cc02aaa1",
+     "id": "ff726f27-3011-473c-9bcf-703d13d9e584",
      "references": [
       "a6ef18fb-56a1-4834-8c1a-da6ee0567602",
       "bef1720d-74bb-43f1-a01f-154433bd1a8b",
       "b73d8c46-530a-48be-b053-df96f5c0cebc",
       "f537594d-aff6-4004-ae78-367d5ccbef6f",
       "8bc36d83-85cc-4178-b5a8-c8970213dd3a",
-      "6f8f7055-2b2e-4e2e-8b28-2e792dd3f1b",
+      "6f8f7055-2b2e-4e2e-8b28-2e792dd3df1b",
       "6b7ede95-d6f6-4793-8168-04e9f62728ff"
      ]
     },
-    "396be3b9-9c73-4044-b8e2-d89394d6d2a9": {
+    "ec079bea-e2d6-4235-8940-c2eca0166310": {
      "title": "Lydkvalitet",
-     "id": "396be3b9-9c73-4044-b8e2-d89394d6d2a9",
+     "id": "ec079bea-e2d6-4235-8940-c2eca0166310",
      "references": [
+      "d3cb6d6c-45a8-4cbe-98d3-001e52586f3d",
       "5a70f344-e9fb-4e1e-abe1-1eaabde4c4ad",
       "55d59944-7d09-4d3b-97a5-461729fbb201"
      ]
     },
-    "d275d822-aee3-48ab-a897-368c07cd348a": {
-     "title": "Værdi for pengene",
-     "id": "d275d822-aee3-48ab-a897-368c07cd348a",
+    "b77e0d9f-e3d7-4d33-9e07-e67ccb6f63be": {
+     "title": "Værdi og kvalitet",
+     "id": "b77e0d9f-e3d7-4d33-9e07-e67ccb6f63be",
      "references": [
       "02e222dc-f3a7-43d6-9cef-3ba5a68bb010",
       "020e612a-37c2-451c-a502-f0fddf9f8385"

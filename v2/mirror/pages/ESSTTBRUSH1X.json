@@ -120,7 +120,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
+     "numberOfStoresExperience": 20,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -145,62 +145,45 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ESSTTBRUSH1X er en enkel og praktisk pladebørste, der effektivt fjerner støv og udfører sin vigtigste opgave pålideligt. Det kompakte og handy design gør vinylpleje nemt, mens den ukomplicerede konstruktion giver god værdi for pengene. Det pålidelige tilbehør, der holder plader rene uden unødig kompleksitet, vækker stor begejstring.",
+   "summary": "ESSTTBRUSH1X er en enkel og effektiv pladebørste, der fjerner støv og er praktisk at bruge. Det kompakte design passer til regelmæssig vinylpleje og understøtter en ren, varm og fordybende lytteoplevelse. Den ukomplicerede funktion, gode værdi og pålidelige ydeevne gør ESSTTBRUSH1X til et begejstrende valg for pladeejere.",
    "headlines": {
-    "reliable basic performance": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pålidelig funktion og tilfredshed med, at børsten udfører sin tilsigtede opgave.",
-     "simpleTitle": "Pålidelig grundfunktion",
-     "bias": "positive",
-     "key": "basic-functionality",
-     "groupId": "372085f5-1e36-447c-be25-f77062775732"
-    },
-    "compact and handy handling": {
-     "sentimentAnalysis": "Det lille, praktiske format og den enkle håndtering opfattes som klare fordele.",
-     "simpleTitle": "Kompakt og handy håndtering",
-     "bias": "positive",
-     "key": "ease-of-use",
-     "groupId": "8c52db31-b0f0-494c-9bcb-238b0d87b9e5"
-    },
-    "effective dust removal": {
-     "sentimentAnalysis": "Børsten roses for effektivt at fjerne støv fra vinylplader og hjælpe med at aflede statisk elektricitet.",
-     "simpleTitle": "Effektiv støvfjernelse",
+    "removes dust effectively": {
+     "sentimentAnalysis": "Børsten beskrives gentagne gange som effektiv og god til at fjerne støv fra plader.",
+     "simpleTitle": "Fjerner støv effektivt",
      "bias": "positive",
      "key": "cleaning-performance",
-     "groupId": "1a8b97fe-fc96-4256-aef1-9a7dc670e46b"
+     "groupId": "a768aeda-364e-483e-afad-e5a18c660387"
+    },
+    "compact and convenient to handle": {
+     "sentimentAnalysis": "Flere anmeldelser roser det praktiske, kompakte format og den enkle håndtering.",
+     "simpleTitle": "Kompakt og nem at håndtere",
+     "bias": "positive",
+     "key": "ease-of-use",
+     "groupId": "623f8013-ced5-4191-921c-2cced1c756a6"
     }
    },
    "grouping": {
-    "372085f5-1e36-447c-be25-f77062775732": {
-     "title": "Grundlæggende funktionalitet",
-     "id": "372085f5-1e36-447c-be25-f77062775732",
+    "a768aeda-364e-483e-afad-e5a18c660387": {
+     "title": "Rengøringsevne",
+     "id": "a768aeda-364e-483e-afad-e5a18c660387",
      "references": [
+      "f3983641-2c63-4a0b-8ba4-1341da4cda27",
+      "7521af39-d3e5-4faf-9208-46ee0f5984f2",
       "074ce040-62e7-46e1-a9a6-f34d2602065e",
       "5e956c65-6b7a-4767-bbb3-7617e934cbfa",
       "5500d8e3-f93f-4d85-893e-fa50d00aa2b9",
-      "83e6dfd6-1994-4bde-af21-23c5a9051f10",
-      "8c1bec4c-900c-4cf3-a71a-4ff8cab2639f",
-      "711fa5bd-433a-4d1b-8251-5ef1ec6aa081",
-      "c1393ff7-580f-4033-b765-b22445837347",
-      "5336fa38-e009-41de-8521-1c7d8d55c089",
-      "b539d602-68b1-4e43-99d5-084b36d394e3",
-      "bb6dfd3d-bd49-4d00-8210-94e81f29d0ee"
-     ]
-    },
-    "1a8b97fe-fc96-4256-aef1-9a7dc670e46b": {
-     "title": "Støvfjernelse",
-     "id": "1a8b97fe-fc96-4256-aef1-9a7dc670e46b",
-     "references": [
-      "f3983641-2c63-4a0b-8ba4-1341da4cda27",
-      "46b4ff88-0bb9-438b-96c0-0ac0915b9edd",
+      "63edafa5-71c7-4abb-9d23-87c41e8214ce",
       "01008835-f63b-4e41-a789-b8e05cc3d009",
+      "711fa5bd-433a-4d1b-8251-5ef1ec6aa081",
       "8305551b-aad0-4282-902e-bdd2d0d2f5f6",
       "30258252-0886-448a-9890-8fa44f9a0087",
+      "c1393ff7-580f-4033-b765-b22445837347",
       "6cb8cba7-adc8-487b-8e6f-31e462626bef"
      ]
     },
-    "8c52db31-b0f0-494c-9bcb-238b0d87b9e5": {
+    "623f8013-ced5-4191-921c-2cced1c756a6": {
      "title": "Brugervenlighed",
-     "id": "8c52db31-b0f0-494c-9bcb-238b0d87b9e5",
+     "id": "623f8013-ced5-4191-921c-2cced1c756a6",
      "references": [
       "1b454edb-ae55-4aa3-9382-f05c067bd69c",
       "7521af39-d3e5-4faf-9208-46ee0f5984f2",

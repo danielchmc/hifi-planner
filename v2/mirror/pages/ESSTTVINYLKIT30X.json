@@ -137,75 +137,93 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et stilfuldt, praktisk og overvejende vellavet vinylplejesæt, der gør opsætning og vedligeholdelse af pladespilleren lettere. Vægten, børsterne og justeringsskabelonen er særligt nyttige, mens trædesignet giver et varmt og eksklusivt udtryk. De største ulemper er upålidelige batterier, en børste der taber hår, og en for høj pladestabilisator, som kan forhindre støvlåget i at lukke.",
+   "summary": "Et stilfuldt og nyttigt vinylplejesæt, der gør opsætning og vedligeholdelse af pladespilleren lettere, især med de værdsatte børster, vægten og justeringsværktøjerne. Sættet føles solidt, attraktivt og praktisk og giver et varmt, slagkraftigt og medrivende lydgrundlag gennem bedre justering. De største ulemper er upålidelige eller manglende batterier til vægten, en børste der taber hår, og en pladestabilisator der kan forhindre støvlåget i at lukke.",
    "headlines": {
-    "premium wooden design and materials": {
-     "sentimentAnalysis": "Sættet roses gentagne gange for det attraktive trædesign, de gode materialer og den eksklusive helhedsoplevelse.",
-     "simpleTitle": "Eksklusivt trædesign og materialer",
+    "attractive, sturdy-looking design": {
+     "sentimentAnalysis": "Trædesignet, det attraktive udseende og den oplevede materialekvalitet får sættet til at virke eksklusivt og holdbart.",
+     "simpleTitle": "Attraktivt og solidt design",
      "bias": "positive",
-     "key": "design_quality",
-     "groupId": "40740652-67c8-489e-923e-4663cf2ab5a1"
+     "key": "design",
+     "groupId": "9668c127-2799-415f-877a-0221a3d34e92"
     },
-    "useful tools for easier setup and care": {
-     "sentimentAnalysis": "Sættet opfattes som funktionelt, let at bruge og effektivt til justering, opsætning og vedligeholdelse af en pladespiller.",
-     "simpleTitle": "Nyttige værktøjer til lettere opsætning og vedligeholdelse",
+    "easy and effective turntable setup": {
+     "sentimentAnalysis": "Sættet beskrives overordnet som funktionelt, nemt at bruge og effektivt til opsætning og vedligeholdelse.",
+     "simpleTitle": "Nem og effektiv opsætning af pladespilleren",
      "bias": "positive",
-     "key": "setup_maintenance",
-     "groupId": "d6aeab9b-e324-4a0f-8aba-894deb1153c2"
+     "key": "usability",
+     "groupId": "88fe7caf-8761-457e-9446-37bf95b8b705"
     },
-    "light, flexible brushes work well": {
-     "sentimentAnalysis": "Børsterne værdsættes som skånsomme, lette at håndtere og nyttige til løbende pleje af plader og nål.",
-     "simpleTitle": "Lette og fleksible børster fungerer godt",
+    "useful, responsive brushes": {
+     "sentimentAnalysis": "Børsterne opfattes som uundværlige, nemme at håndtere og effektive til pladespillervedligeholdelse.",
+     "simpleTitle": "Nyttige og smidige børster",
      "bias": "positive",
      "key": "brushes",
-     "groupId": "9c7b7f68-1baa-4ed9-ba62-2d91f728dce5"
+     "groupId": "36753233-0315-4fd0-8e7f-a006da635f6d"
     },
-    "accurate, useful stylus scale": {
-     "sentimentAnalysis": "Vægten betragtes som et vigtigt og enkelt værktøj til korrekt indstilling af nåletrykket.",
-     "simpleTitle": "Præcis og nyttig nåletryksvægt",
+    "helpful and easy-to-use scale": {
+     "sentimentAnalysis": "Nåletryksvægten værdsættes gentagne gange som et praktisk, enkelt og vigtigt justeringsværktøj.",
+     "simpleTitle": "Nyttig og nem vægt",
      "bias": "positive",
-     "key": "scale_battery",
-     "groupId": "ab273277-d60d-48f5-8291-ed603f92aca7"
+     "key": "scale",
+     "groupId": "da436141-ad69-4cb5-982d-dd683faa74b4"
     },
-    "battery and instructions issues": {
-     "sentimentAnalysis": "Flere anmeldelser nævner tomme eller lækkede medfølgende batterier, mens manglende vejledning kan føre til forkert brug i starten.",
-     "simpleTitle": "Problemer med batteri og vejledning",
+    "stabilizer can block the dust cover": {
+     "sentimentAnalysis": "Stabilisatoren er for høj til nogle pladespillere, så støvlåget ikke kan lukkes, og der tiltrækkes støv under afspilning.",
+     "simpleTitle": "Stabilisatoren kan blokere støvlåget",
      "bias": "negative",
-     "key": "scale_battery",
-     "groupId": "ab273277-d60d-48f5-8291-ed603f92aca7"
-    },
-    "the stabilizer can block the dust cover": {
-     "sentimentAnalysis": "Den attraktive og nyttige stabilisator vurderes som for høj til nogle pladespillere, så støvlåget må stå åbent.",
-     "simpleTitle": "Stabilisatoren kan forhindre støvlåget i at lukke",
-     "bias": "negative",
-     "key": "stabilizer_lid",
-     "groupId": "fd622f17-ce36-4f8e-8d8b-88bb1568395c"
+     "key": "stabilizer",
+     "groupId": "1cfafb67-0b9c-47f3-a1be-8359d0dcd76d"
     },
     "brushes can shed hairs": {
-     "sentimentAnalysis": "Nogle tilbagemeldinger advarer om, at statisk elektricitet og løse børstehår svækker tilliden til børsterne.",
+     "sentimentAnalysis": "Noget af feedbacket peger på statisk elektricitet og løse børstehår, hvilket svækker tilliden til børstekvaliteten.",
      "simpleTitle": "Børsterne kan tabe hår",
      "bias": "negative",
      "key": "brushes",
-     "groupId": "9c7b7f68-1baa-4ed9-ba62-2d91f728dce5"
+     "groupId": "36753233-0315-4fd0-8e7f-a006da635f6d"
+    },
+    "battery problems affect the scale": {
+     "sentimentAnalysis": "De medfølgende batterier blev beskrevet som afladede, gamle eller lækkede, hvilket skabte et øjeblikkeligt brugsproblem.",
+     "simpleTitle": "Batteriproblemer påvirker vægten",
+     "bias": "negative",
+     "key": "scale",
+     "groupId": "da436141-ad69-4cb5-982d-dd683faa74b4"
     }
    },
    "grouping": {
-    "d6aeab9b-e324-4a0f-8aba-894deb1153c2": {
-     "title": "Opsætning og vedligeholdelse",
-     "id": "d6aeab9b-e324-4a0f-8aba-894deb1153c2",
+    "9668c127-2799-415f-877a-0221a3d34e92": {
+     "title": "Design og materialer",
+     "id": "9668c127-2799-415f-877a-0221a3d34e92",
+     "references": [
+      "e1f64f2c-e9a0-4041-a974-c03f78b17200",
+      "74993b03-1463-47fb-b65d-c68aaa45fa4b",
+      "4ec2b46b-725f-488f-a4ac-82c1c6d5800d",
+      "bc4d834b-af36-42a7-983b-97dacf86aad1",
+      "2dcd7d3b-6a9f-440f-b62e-7bf6512de25a",
+      "38c77d64-a3d1-40b9-b978-298ccd5643e7",
+      "b0d52d15-1cab-4ac8-a3d1-254a71b77a91",
+      "d4f36492-a2f0-4946-b6dc-c5aa1729e578",
+      "23ffbbca-8953-4b59-be6d-eb3248e1274e",
+      "60eba85b-f93a-43e9-922f-c88f5f10183d"
+     ]
+    },
+    "88fe7caf-8761-457e-9446-37bf95b8b705": {
+     "title": "Brugervenlighed og funktionalitet",
+     "id": "88fe7caf-8761-457e-9446-37bf95b8b705",
      "references": [
       "463ec118-dc68-4b6e-8657-481be1cf8216",
       "86a20387-6609-485e-8c27-ab2e4d4fbbcd",
       "f62cc1b1-884d-46b2-a471-eed0ef0662b6",
+      "2dcd7d3b-6a9f-440f-b62e-7bf6512de25a",
       "b73bb17a-5ce1-4327-a44c-1e46b77b5da9",
       "b6f96893-cf72-4278-b792-df2cdc5e88ed",
       "23ffbbca-8953-4b59-be6d-eb3248e1274e",
-      "23cbaa0f-dbce-4071-9f4f-e97c067b2bf0"
+      "23cbaa0f-dbce-4071-9f4f-e97c067b2bf0",
+      "a59c1f0a-83a1-45e5-8381-588b8bd7ffe8"
      ]
     },
-    "9c7b7f68-1baa-4ed9-ba62-2d91f728dce5": {
-     "title": "Børster",
-     "id": "9c7b7f68-1baa-4ed9-ba62-2d91f728dce5",
+    "36753233-0315-4fd0-8e7f-a006da635f6d": {
+     "title": "Børstekvalitet",
+     "id": "36753233-0315-4fd0-8e7f-a006da635f6d",
      "references": [
       "dce54d24-d7c8-465d-a280-6aeb4f7f3f24",
       "463ec118-dc68-4b6e-8657-481be1cf8216",
@@ -216,34 +234,22 @@
       "60eba85b-f93a-43e9-922f-c88f5f10183d"
      ]
     },
-    "40740652-67c8-489e-923e-4663cf2ab5a1": {
-     "title": "Design og byggekvalitet",
-     "id": "40740652-67c8-489e-923e-4663cf2ab5a1",
-     "references": [
-      "e1f64f2c-e9a0-4041-a974-c03f78b17200",
-      "74993b03-1463-47fb-b65d-c68aaa45fa4b",
-      "bc4d834b-af36-42a7-983b-97dacf86aad1",
-      "2dcd7d3b-6a9f-440f-b62e-7bf6512de25a",
-      "b0d52d15-1cab-4ac8-a3d1-254a71b77a91",
-      "60eba85b-f93a-43e9-922f-c88f5f10183d"
-     ]
-    },
-    "ab273277-d60d-48f5-8291-ed603f92aca7": {
-     "title": "Nåletryk-vægt og batteri",
-     "id": "ab273277-d60d-48f5-8291-ed603f92aca7",
+    "da436141-ad69-4cb5-982d-dd683faa74b4": {
+     "title": "Vægt og justeringsværktøjer",
+     "id": "da436141-ad69-4cb5-982d-dd683faa74b4",
      "references": [
       "463ec118-dc68-4b6e-8657-481be1cf8216",
       "c1e1aaf3-d820-4260-9d67-ac9f844a24bc",
       "86a20387-6609-485e-8c27-ab2e4d4fbbcd",
+      "f4cbbe09-fabe-471c-9ab3-01d19b20a2c1",
       "2dcd7d3b-6a9f-440f-b62e-7bf6512de25a",
-      "4f4cbbe09-fabe-471c-9ab3-01d19b20a2c1",
       "b73bb17a-5ce1-4327-a44c-1e46b77b5da9",
       "60eba85b-f93a-43e9-922f-c88f5f10183d"
      ]
     },
-    "fd622f17-ce36-4f8e-8d8b-88bb1568395c": {
+    "1cfafb67-0b9c-47f3-a1be-8359d0dcd76d": {
      "title": "Pladestabilisator og støvlåg",
-     "id": "fd622f17-ce36-4f8e-8d8b-88bb1568395c",
+     "id": "1cfafb67-0b9c-47f3-a1be-8359d0dcd76d",
      "references": [
       "4ec2b46b-725f-488f-a4ac-82c1c6d5800d",
       "850130ff-8d6c-4139-b176-158e9ce1eb7b",

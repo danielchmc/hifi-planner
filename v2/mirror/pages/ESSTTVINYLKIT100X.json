@@ -141,7 +141,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 7459,
+     "availableQuantity": 6763,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -197,7 +197,18 @@
    }
   ],
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "reviewCount": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "boxContent": [
    {
     "productName": "Essentials TT Vinyl Kit 100 Pladespiller vedligeholdelse",
