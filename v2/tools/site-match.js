@@ -15,8 +15,17 @@ const fromApi = (p) => ({ brand: p.brandName, model: p.modelName, sku: p.skuCode
 const sellable = (listing) => listing.map((r) => (r.brandName ? fromApi(r) : r)).filter((s) => !s.outlet)
   .map((s) => (s.variants.some((v) => v.outlet) ? Object.assign({}, s, { variants: s.variants.filter((v) => !v.outlet) }) : s)).filter((s) => s.variants.length);
 
+// The website sometimes lists another product's variants under a model as well, without a name and at an old price: B&W HTM71 S3
+// and 705 S3 carry their Signature finishes (which have their own products, HTM71 S3 Signature, 705 S3 Signature). A variant SKU
+// that sits under several website products, named in one of them and unnamed here, belongs to the one that names it.
+function strayVariants(site) {
+  const named = new Map();
+  site.forEach((s) => s.variants.forEach((v) => { if (v.sku && v.label) named.set(v.sku.toUpperCase(), (named.get(v.sku.toUpperCase()) || new Set()).add(s)); }));
+  site.forEach((s) => { s.variants = s.variants.filter((v) => !(v.sku && !v.label && [...(named.get(v.sku.toUpperCase()) || [])].some((o) => o !== s))); });
+}
 function matcher(site) {
   const exact = new Map(), byName = new Map();
+  strayVariants(site);
   site.forEach((s) => {
     s.variants = s.variants.filter((v) => v.sku && v.price > 0);
     if (!s.variants.length) return;

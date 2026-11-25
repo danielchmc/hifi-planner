@@ -16,12 +16,31 @@
   HP.on = (evt, fn) => (listeners[evt] = listeners[evt] || []).push(fn);
   HP.emit = (evt, data) => (listeners[evt] || []).forEach((fn) => fn(data));
 
-  /* ---------- i18n: t('English', 'Dansk') ---------- */
-  let lang = LS.get('lang', /^da/i.test(navigator.language || '') ? 'da' : 'en');
-  HP.t = (en, da) => (lang === 'da' && da != null ? da : en);
+  /* ---------- i18n: t('English', 'Dansk') ----------
+     English and Danish are written in the code. Norwegian, Swedish, Dutch, German and Finnish are dictionaries keyed by the
+     English text (js/i18n/<code>.js, only the chosen one is loaded, by index.html). A key with {} is a template for text built
+     with +, e.g. 'Delete {} from the catalogue?'. Anything missing falls back to English. */
+  HP.LANGS = [['da', 'Dansk'], ['en', 'English'], ['nb', 'Norsk'], ['sv', 'Svenska'], ['nl', 'Nederlands'], ['de', 'Deutsch'], ['fi', 'Suomi']];
+  HP.LOCALE = { da: 'da-DK', en: 'en-GB', nb: 'nb-NO', sv: 'sv-SE', nl: 'nl-NL', de: 'de-DE', fi: 'fi-FI' };
+  const known = (l) => HP.LANGS.some((x) => x[0] === l);
+  const guess = () => { const n = (navigator.language || '').toLowerCase(); return /^(nb|nn|no)\b/.test(n) ? 'nb' : (HP.LANGS.find((x) => n.startsWith(x[0])) || ['en'])[0]; };
+  let lang = (() => { const l = LS.get('lang', null); return known(l) ? l : guess(); })();
+  const dicts = (window.HP_I18N = window.HP_I18N || {}), memo = {};
+  const lookup = (en) => {
+    const D = dicts[lang]; if (!D) return en;
+    if (D[en] != null) return D[en];
+    const M = memo[lang] || (memo[lang] = { hit: new Map(), tpl: Object.keys(D).filter((k) => k.includes('{}')).map((k) => [new RegExp('^' + k.split('{}').map((x) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('([\\s\\S]*?)') + '$'), D[k]]) });
+    if (M.hit.has(en)) return M.hit.get(en);
+    let out = en;
+    for (const [re, tr] of M.tpl) { const m = re.exec(en); if (m) { let i = 1; out = tr.replace(/\{\}/g, () => m[i++]); break; } }
+    M.hit.set(en, out); return out;
+  };
+  HP.t = (en, da) => (lang === 'da' ? (da != null ? da : en) : lang === 'en' ? en : lookup(en));
+  HP.tr = (en) => (lang === 'en' || lang === 'da' ? en : lookup(en)); // an English text in the chosen language (Danish callers pass their own)
   HP.lang = () => lang;
-  HP.useLang = (l) => { lang = l; document.documentElement.lang = l; }; // for this page only, not remembered (the customer view is always Danish)
-  HP.setLang = (l) => { lang = l; LS.set('lang', l); document.documentElement.lang = l; HP.emit('lang'); };
+  HP.locale = () => HP.LOCALE[lang] || 'da-DK';
+  HP.useLang = (l) => { if (known(l)) lang = l; document.documentElement.lang = lang; }; // for this page only, not remembered (the customer view)
+  HP.setLang = (l) => { if (!known(l)) return; lang = l; LS.set('lang', l); document.documentElement.lang = l; HP.emit('lang'); };
   HP.money = (n) => Math.round(n).toLocaleString('da-DK') + ',-';
   HP.today = () => { const d = new Date(); return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear(); };
 
@@ -139,6 +158,16 @@
     'user-plus': '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/>', // user-plus
     ruler: '<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/>', // ruler
   };
+  /* <select>: in browsers with the customizable select (css: appearance: base-select), each select gets
+     <button><selectedcontent></selectedcontent></button> as its first child, so the closed field can cut a long choice with …
+     Kept in place when a select's options are rebuilt (they are often cleared with textContent = ''). */
+  if (window.CSS && CSS.supports('appearance', 'base-select')) {
+    const fix = (sel) => { if (!(sel.firstElementChild && sel.firstElementChild.tagName === 'BUTTON')) sel.prepend(Object.assign(document.createElement('button'), { innerHTML: '<selectedcontent></selectedcontent>' })); };
+    const scan = (root) => { if (root.tagName === 'SELECT') fix(root); else if (root.querySelectorAll) root.querySelectorAll('select').forEach(fix); };
+    new MutationObserver((ms) => ms.forEach((m) => { if (m.target.tagName === 'SELECT') fix(m.target); m.addedNodes.forEach((n) => n.nodeType === 1 && scan(n)); }))
+      .observe(document.documentElement, { childList: true, subtree: true });
+    document.addEventListener('DOMContentLoaded', () => scan(document.body));
+  }
   HP.icon = (name, size) => {
     const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('class', 'ic'); if (size) { s.style.width = s.style.height = size + 'px'; }
@@ -378,7 +407,7 @@
     'Radios with FM': 'FM-radioer', 'Internet Radios': 'Internetradioer', OLED: 'OLED', QLED: 'QLED',
     'D/A Converters': 'DAC', 'A/D Converters': 'ADC', 'Headphone Amplifiers': 'Hovedtelefonforstærkere', 'Wireless Adapters': 'Trådløse adaptere', 'Bluetooth Receivers': 'Bluetooth-modtagere', Peripherals: 'Udstyr', 'Stand-in Products': 'Pladsholdere' };
   const CAT_EN = { 'Floorstanding Speakers': 'Floorstanding', 'Compact Speakers': 'Compact', 'On-Wall Speakers': 'On-wall', 'Center Speakers': 'Center', 'Active Speakers': 'Active', 'Passive Speakers': 'Passive', 'Wireless/Bluetooth Speakers': 'Wireless / Bluetooth', 'CI & Outdoor Speakers': 'CI & outdoor', Utilities: 'Accessories' };
-  HP.catLabel = (c) => (HP.lang() === 'da' ? CAT_DA[c] : CAT_EN[c]) || c;
+  HP.catLabel = (c) => (HP.lang() === 'da' ? CAT_DA[c] || c : HP.tr(CAT_EN[c] || c));
   // the generated catalogue (test page): the website's category tree replaces the list above. Products carry their category path
   // in cats (e.g. ['/tv/', '/tv/projektor/']), so everything that groups by category works unchanged.
   if (DATA.categories) {
@@ -386,7 +415,7 @@
     const top = (id) => { let x = C.get(id), g = 0; while (x && x.parent && g++ < 6) x = C.get(x.parent); return x ? x.id : id; };
     HP.CAT_TREE = DATA.categories.filter((x) => !x.parent).map((s) => [s.id, DATA.categories.filter((x) => x.parent && top(x.id) === s.id).map((x) => x.id)]);
     const legacy = HP.catLabel;
-    HP.catLabel = (id) => { const x = C.get(id); return x ? (HP.lang() === 'da' ? x.title : x.en || x.title) : legacy(id); };
+    HP.catLabel = (id) => { const x = C.get(id); return x ? (HP.lang() === 'da' ? x.title : x.en ? HP.tr(x.en) : x.title) : legacy(id); };
     // a category id → its path from the section down, e.g. '/tv/projektor/' → ['/tv/', '/tv/projektor/']
     HP.catChain = (id) => { const out = []; let x = C.get(id), g = 0; while (x && g++ < 6) { out.unshift(x.id); x = C.get(x.parent); } return out; };
     HP.catDeepest = (ids) => (ids || []).filter((id) => C.has(id)).sort((a, b) => HP.catChain(b).length - HP.catChain(a).length)[0] || '';
@@ -510,7 +539,13 @@
     // the customer's link (#t=): the read-only proposal view, no login; on the public site even when printed from a local copy
     // the customer's link: #t= when copied and sent, #q= in the QR code on the printed cover (the same page; the letter only tells
     // the statistics how the customer got there)
-    async customerUrl(doc, qr) { const base = /^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/'); return base + (qr ? '#q=' : '#t=') + (await HP.share.pack(doc || store.doc)); },
+    // ?l=<language> when the planner is not in Danish, so the customer's page opens in the seller's language; ?pdf for the
+    // clickable link in the printed PDF (see js/cover.js)
+    async customerUrl(doc, qr, pdf) {
+      const base = (/^https?:/.test(location.protocol) ? location.href.split('#')[0] : ((DATA.config || {}).publicUrl || 'https://hifiplanner.dk/v2/')).split('?')[0];
+      const q = [pdf ? 'pdf' : '', lang !== 'da' ? 'l=' + lang : ''].filter(Boolean).join('&');
+      return base + (q ? '?' + q : '') + (qr ? '#q=' : '#t=') + (await HP.share.pack(doc || store.doc));
+    },
     async openFromHash() {
       const m = /^#p=(.+)$/.exec(location.hash); if (!m) return false;
       history.replaceState(null, '', location.href.split('#')[0]);

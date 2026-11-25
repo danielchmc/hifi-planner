@@ -6,23 +6,43 @@
 
   /* ---------- shared: product row + drag from a list onto the canvas ---------- */
   // v: a colour variant to show (picture, colour name and price of that colour)
+  /* A product row in a list: the picture, then two lines.
+       name ……………………  price          (the price gets its own column, so it is never cut off; red when on sale)
+       brand · size +3 ⓑ ⓦ          −48%   (the discount; the old price on hover, or struck if under 10 %)
+     v: a colour variant to show (picture, colour name and price of that colour). grp/opt: a cable's lengths (see cableGroup). */
+  const pct = (was, now) => Math.round((1 - now / was) * 100);
+  function rowInfo(name, sub, meta, price, o) {
+    o = o || {};
+    const sale = o.was > price;
+    return h('.pinfo.pgrid', null,
+      h('.pname', null, name),
+      price ? h('.pprice' + (sale ? '.sale' : ''), null, o.from ? h('small', null, t('from ', 'fra ')) : null, HP.money(price), o.unit ? h('small', null, ' ' + o.unit) : null) : h('span'),
+      h('.psub', null, h('span.pbrand', null, sub), meta && meta.length ? h('span.pm', null, meta) : null),
+      // a real discount shows as −48% (the old price on hover, to leave the brand room); a small one as the old price, struck
+      sale ? h('.pwas', { title: t('Before ', 'Før ') + HP.money(o.was) }, pct(o.was, price) >= 10 ? h('span.poff', null, '−' + pct(o.was, price) + '%') : h('s', null, HP.money(o.was))) : h('span'));
+  }
   function productRow(p, extra, v, grp, opt) {
     const price = v ? v.price : p.price, was = v ? v.was || 0 : p.was || 0;
+    const icons = [p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13)].filter(Boolean);
     if (grp) { // a cable's lengths: the cable's name, its price "fra" the cheapest length (or per metre), the length added as a label
       const base = C().stripLen(p.name) || p.name;
+      const lab = grp.metre ? h('span.nvar-txt', null, t('per metre', 'pr. meter'))
+        : h('span.nvar-txt', { title: grp.opts.map((o) => o.label + ' · ' + HP.money(o.price)).join('\n') }, (opt ? opt.label : '') + ' +' + (grp.opts.length - 1));
       return h('.prow', { data: { id: p.id } },
         h('.thumb', null, HP.imgEl((p.img || [])[0] || '', 'thumb', { loading: 'lazy' })),
-        h('.pinfo', null, h('.pname', null, base), h('.psub', null, p.brand + ' · ' + (grp.metre ? HP.money(p.price) + ' / m' : t('from ', 'fra ') + HP.money(grp.min)))),
-        h('.pmeta', null, grp.metre ? h('span.nvar-txt', null, t('per metre', 'pr. meter'))
-          : h('span.nvar-txt', { title: grp.opts.map((o) => o.label + ' · ' + HP.money(o.price)).join('\n') }, (opt ? opt.label : '') + ' +' + (grp.opts.length - 1)), p.gone && icon('warn', 13), extra));
+        rowInfo(base, p.brand, [lab, ...icons], grp.metre ? p.price : grp.min, { from: !grp.metre && grp.opts.length > 1, unit: grp.metre ? '/ m' : '' }),
+        extra ? h('.pmeta', null, extra) : null);
     }
+    const vars = p.vars || [];
+    const varEl = vars.length > 1 && (HP.canvas.varStyle(p) === 'pill'
+      // not colours (TV sizes, models, lengths): the range as text instead of dots that all look alike
+      ? h('span.nvar-txt', { title: vars.map((x) => x.label).join(', ') }, (v ? v.label : vars[0].label) + ' +' + (vars.length - 1))
+      : h('span.nvar', { title: vars.map((x) => x.label).join(', ') }, vars.slice(0, 4).map((x) => h('i' + (v && x.sku === v.sku ? '.on' : ''), { style: { background: HP.site.swatch(x) } }))));
     return h('.prow' + (v ? '.isvar' : ''), { data: { id: p.id } },
-      h('.thumb', null, HP.imgEl((v && v.img) || (p.img || [])[0] || ((p.vars || [])[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
-      h('.pinfo', null, h('.pname', null, p.name, v && h('span.vlabel', null, ' · ' + v.label)), h('.psub', null, v ? v.sku : p.brand, price ? ' · ' : '', !v && (p.vars || []).length > 1 && new Set(p.vars.map((x) => x.price)).size > 1 ? t('from ', 'fra ') : '', was > price ? h('s', null, HP.money(was)) : null, was > price ? ' ' : '', price ? h('span' + (was > price ? '.sale' : ''), null, HP.money(price)) : null)),
-      h('.pmeta', null, (p.vars || []).length > 1 && (HP.canvas.varStyle(p) === 'pill'
-        // not colours (TV sizes, models, lengths): the range as text instead of dots that all look alike
-        ? h('span.nvar-txt', { title: p.vars.map((x) => x.label).join(', ') }, (v ? v.label : p.vars[0].label) + (p.vars.length > 1 ? ' +' + (p.vars.length - 1) : ''))
-        : h('span.nvar', { title: p.vars.map((x) => x.label).join(', ') }, p.vars.slice(0, 4).map((x) => h('i' + (v && x.sku === v.sku ? '.on' : ''), { style: { background: HP.site.swatch(x) } })))), p.gone && h('span.gone-ic', { title: t('Discontinued: no longer on hifiklubben.dk', 'Udgået: ikke længere på hifiklubben.dk') }, icon('warn', 13)), p.bt && icon('bt', 13), p.wifi && icon('wifi', 13), extra));
+      h('.thumb', null, HP.imgEl((v && v.img) || (p.img || [])[0] || (vars[0] || {}).img || '', 'thumb', { loading: 'lazy' })),
+      rowInfo([p.name, v && h('span.vlabel', null, ' · ' + v.label)], v ? v.sku : p.brand, [varEl, ...icons].filter(Boolean), price,
+        { was, from: !v && vars.length > 1 && new Set(vars.map((x) => x.price)).size > 1 }),
+      extra ? h('.pmeta', null, extra) : null);
   }
   // a system (website bundle): its picture, name, the parts, the bundle price and what it saves against the parts one by one
   const sysParts = (b) => b.parts.reduce((a, x) => a + (HP.priceOf(cat.get(x.id), x.v ? { v: x.v } : null).price || 0) * x.qty, 0);
@@ -30,8 +50,7 @@
     const parts = sysParts(b), was = Math.max(parts, b.was || 0);
     return h('.prow.sysrow', { data: { sku: b.sku } },
       h('.thumb', null, HP.imgEl(b.img || '', 'thumb', { loading: 'lazy' })),
-      h('.pinfo', null, h('.pname', null, cat.systemName(b)),
-        h('.psub', null, b.type, ' · ', was > b.price ? h('s', null, HP.money(was)) : null, HP.money(b.price), was > b.price ? h('span.sale', null, ' ' + t('save ', 'spar ') + HP.money(was - b.price)) : null),
+      h('.pcol', null, rowInfo(cat.systemName(b), b.type, null, b.price, { was }),
         h('.sysparts', null, b.parts.map((x) => (x.qty > 1 ? x.qty + '× ' : '') + cat.get(x.id).name).join(' · '))));
   }
   /* Drag a product or Shortcut from the sidebar onto the canvas.
@@ -95,7 +114,7 @@
         else HP.katalog.open(search.value);
       }
     }
-    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Alt+K, or Shift+Enter in the search)', 'Åbn Katalog (Alt+K, eller Shift+Enter i søgningen)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, 'Katalog'));
+    const katBtn = h('button.kat-open', { title: t('Open the Katalog (Alt+K, or Shift+Enter in the search)', 'Åbn Katalog (Alt+K, eller Shift+Enter i søgningen)'), onclick: () => HP.katalog.open(search.value) }, icon('grid', 14), h('span', null, t('Katalog', 'Katalog')));
     const brandSel = h('select', { onchange: () => { filter(); }, title: 'Brand' });
     const sortSel = h('select', { onchange: () => { filter(); }, title: t('Sort', 'Sortér') },
       [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Brand A–Å')]].map(([v, l]) => h('option', { value: v }, l)));
@@ -310,10 +329,16 @@
     return [
       s ? { head: s.name } : null,
       { label: t('Help', 'Hjælp'), icon: 'help', fn: Pn.help },
-      { label: HP.lang() === 'da' ? 'English' : 'Dansk', icon: 'globe', fn: () => { HP.setLang(HP.lang() === 'da' ? 'en' : 'da'); location.reload(); } },
+      { label: t('Language', 'Sprog'), icon: 'globe', note: (HP.LANGS.find((x) => x[0] === HP.lang()) || [])[1], fn: () => Pn.langMenu() },
       { label: dark ? t('Light theme', 'Lyst tema') : t('Dark theme', 'Mørkt tema'), icon: dark ? 'sun' : 'moon', key: 'F1', fn: Pn.toggleTheme },
       { label: t('Settings', 'Indstillinger'), icon: 'gear', fn: Pn.settings },
     ].filter(Boolean);
+  };
+  // the language list, opened from "Sprog" in the seller's menu (or ⋯ on tablets); each language in its own name. The page reloads
+  // so the chosen language's dictionary (js/i18n/) is loaded before anything is drawn
+  Pn.langMenu = () => {
+    const b = [...document.querySelectorAll('#tb-seller, #tb-more')].find((e) => e.offsetParent), r = b ? b.getBoundingClientRect() : { right: innerWidth - 10, bottom: 48 };
+    HP.menu(r.right - 250, r.bottom + 4, [{ head: t('Language', 'Sprog') }].concat(HP.LANGS.map(([code, name]) => ({ label: name, on: code === HP.lang(), fn: () => { if (code === HP.lang()) return; HP.setLang(code); location.reload(); } }))), b);
   };
   // the shop's sellers on this PC, for one-click switching from the avatar menu (and ⋯ on tablets)
   const initials = (nm) => (nm || '').split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join('').toUpperCase() || '?';
@@ -584,7 +609,7 @@
       const r = productRow(rep, h('span.tagline', null, pl ? [Pn.plugChip(pl[0]), h('span.pc-arrow', null, '↔'), Pn.plugChip(pl[1])] : e.length ? (P.CONNECTORS[e[0]] || e[0]) + ' ↔ ' + (P.CONNECTORS[e[1]] || e[1]) : ''));
       const base = C().stripLen(rep.name) || rep.name;
       const nm = r.querySelector('.pname'); if (nm) nm.textContent = base;
-      const sub = r.querySelector('.psub'); if (sub) sub.textContent = rep.brand + ' · ' + (G.metre ? HP.money(rep.price) + ' / m' : (G.opts.length > 1 ? t('from ', 'fra ') : '') + HP.money(G.min));
+      const pr = r.querySelector('.pprice'); if (pr) pr.replaceChildren(...[!G.metre && G.opts.length > 1 ? h('small', null, t('from ', 'fra ')) : null, HP.money(G.metre ? rep.price : G.min), G.metre ? h('small', null, ' / m') : null].filter(Boolean));
       if (mine) r.classList.add('on');
       const box = h('.lens');
       let choose;
@@ -690,7 +715,7 @@
       const ps = all();
       if (!ps.length) list.append(h('.empty', null, t('No saved projects in this browser yet.', 'Ingen gemte projekter i denne browser endnu.')));
       ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj', null,
-        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, new Date(p.date).toLocaleString(HP.lang() === 'da' ? 'da-DK' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' }) + ' · ' + p.doc.items.filter((i) => i.kind === 'product').length + ' ' + t('products', 'produkter'))),
+        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, new Date(p.date).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' }) + ' · ' + p.doc.items.filter((i) => i.kind === 'product').length + ' ' + t('products', 'produkter'))),
         h('button.btn.sm', { onclick: () => { store.load(p.doc, p.plan); close(); HP.toast(t('Opened "' + p.name + '"', 'Åbnede "' + p.name + '"'), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } }, t('Open', 'Åbn')),
         h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => { LS.set('projects', all().filter((x) => x.id !== p.id)); draw(); } }, icon('trash', 14)))));
     }
@@ -1040,7 +1065,7 @@
           h('label', null, field('ta', extra, '0', (v) => { lastTotal = { kr: v || 0 }; if (spreadTotal(v || 0)) commit(); else draw(); }, { blank0: true, title: t('Kroner off, spread over the lines', 'Kroner, fordelt på linjerne') }), ' kr.'),
           h('label', null, field('tp', grossAll ? extra / grossAll * 100 : 0, '0', (v) => { lastTotal = { pct: v || 0 }; if (spreadTotal(null, v || 0)) commit(); else draw(); }, { blank0: true, pct: true, title: t('Percent off (of the unit prices), spread over the lines', 'Procent (af enhedspriserne), fordelt på linjerne') }), ' %'),
           h('b', null, extra ? '−' + HP.money(extra) : '')),
-        h('.pp-srow.big', null, h('span', null, 'Total'), h('b', null, HP.money(R.total))),
+        h('.pp-srow.big', null, h('span', null, t('Total', 'Total')), h('b', null, HP.money(R.total))),
         R.saving > 0 ? h('.pp-srow.pp-save', null, h('span', null, t('The customer saves (of the normal price)', 'Kunden sparer (af normalprisen)')), h('span', null, fmt(pctOff(R.saving, normal), 1) + ' %'), h('b', null, HP.money(R.saving))) : null].filter(Boolean));
       if (keep) setTimeout(() => focusIn(keep));
     }

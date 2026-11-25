@@ -159,10 +159,10 @@ svg.wires { overflow: visible; width: 1px; height: 1px; pointer-events: none; }
 .card.missing { border-style: dashed; }
 .card.ci { border: 0; background: none; } .card.ci .card-img { border: 0; background: none; } .card.ci img { max-width: 100%; max-height: 100%; mix-blend-mode: multiply; }
 .ci-name { font: 8px/1.1 var(--mono); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--fg); }
-/* dark theme, CI mode: the page stays dark like the rest of the canvas; the floor plan is shown inverted (light lines on the
+/* dark theme: the page stays dark like the rest of the canvas; a floor plan is shown inverted, in or out of CI mode (light lines on the
    dark page, colours kept by the hue turn) and product pictures sit on a light tile. Print and the customer's page always
    use the light originals (#print-root and #view are outside #viewport). */
-html[data-theme="dark"] #viewport .world.ci .plan img { filter: invert(.89) hue-rotate(180deg); }   /* white paper → the dark page colour, black lines → light grey */
+html[data-theme="dark"] #viewport .plan img { filter: invert(.89) hue-rotate(180deg); }   /* white paper → the dark page colour, black lines → light grey */
 html[data-theme="dark"] #viewport .card.ci .card-img { background: #e8e8e4; border-radius: 4px; }
 html[data-theme="dark"] #viewport .tool .ttext { stroke: var(--paper); }
 
@@ -1338,3 +1338,67 @@ h2 { font-size: 15px; }
 .tb-i[aria-expanded="true"], .tb-btn[aria-expanded="true"] { background: var(--panel2); }
 .tb-i.tb-menu[aria-expanded="true"] > .ic:last-child { opacity: 1; transform: rotate(180deg); }
 .tb-menu > .ic:last-child { transition: transform .15s var(--ease-out); }
+
+/* v5 dropdowns (<select>): the open list drawn in our own style, like the ▾ menus (rounded, soft shadow, grey hover, a tick on
+   the chosen one), using the browser's customizable select (Chrome and Edge 135+). Other browsers keep their own list; the
+   closed field looks the same everywhere. Keyboard, type-to-find and touch work as with any <select>. */
+@supports (appearance: base-select) {
+  select, ::picker(select) { appearance: base-select; }
+  select { display: inline-flex; align-items: center; gap: 6px; padding: 0 8px 0 10px; cursor: pointer; }
+  select::picker-icon { content: ''; width: 14px; height: 14px; flex: none; margin-left: auto; background: currentColor; opacity: .55; transition: rotate .15s var(--ease-out);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center / contain no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center / contain no-repeat; }
+  select:open::picker-icon { rotate: 180deg; opacity: 1; }
+  select:open { border-color: var(--accent); box-shadow: var(--ring); }
+  ::picker(select) { border: 0; border-radius: var(--r-lg); background: var(--panel); color: var(--fg); box-shadow: var(--pop); padding: 5px; margin: 4px 0;
+    max-height: min(60vh, 440px); overflow-y: auto; min-width: anchor-size(self-inline); }
+  select option { display: flex; align-items: center; gap: 8px; min-height: 30px; padding: 0 8px; border-radius: var(--r); font: 400 13px var(--ui); color: var(--fg); background: none; white-space: nowrap; }
+  select option:hover, select option:focus-visible { background: var(--panel2); outline: 0; }
+  select option:checked { font-weight: 600; }
+  select option::checkmark { order: 1; margin-left: auto; padding-left: 14px; color: var(--accent); font-weight: 700; }
+  select option:disabled { opacity: .4; }
+  select optgroup { font: 600 12px var(--ui); color: var(--muted); padding: 6px 0 2px; }
+  select optgroup + optgroup { border-top: 1px solid var(--line); margin-top: 4px; }
+  select optgroup > option { padding-left: 14px; }
+  select hr { border: 0; border-top: 1px solid var(--line); margin: 4px 0; }
+  /* the closed field shows the choice in our own <button><selectedcontent> (added by js/core.js), so a long choice is cut with …
+     and the arrow keeps its place on the right */
+  select { min-width: 0; }
+  select > button { display: flex; align-items: center; flex: 1 1 auto; min-width: 0; height: 100%; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; }
+  select > button selectedcontent { display: block; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  select:focus:not(:focus-visible):not(:open) { box-shadow: none; border-color: var(--line); }
+  .listhead select:open, .listhead select:focus { box-shadow: none; background: var(--panel2); }
+  /* the small ones: the list header's sort, the Editor's port rows */
+  .listhead select { padding: 0 2px 0 6px; gap: 3px; } .listhead select::picker-icon { width: 12px; height: 12px; }
+  .portrow select, .catchips select { padding: 0 4px 0 6px; gap: 2px; } .portrow select::picker-icon { width: 11px; height: 11px; }
+  .portrow select option, .cmp-row select option { font-size: 12px; min-height: 26px; }
+  @media (pointer: coarse) { select option { min-height: 42px; font-size: 15px; } }
+}
+
+/* product rows in lists (v5): two lines, with the price in its own column so it is never cut off
+     name ……………… price
+     brand · size +3 ⓑ ⓦ   −48% 16.999,-                                                                                    */
+.pinfo.pgrid { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 10px; row-gap: 1px; align-items: baseline; }
+.pgrid .pname { min-width: 0; }
+.pprice { font: 600 13px var(--ui); font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; justify-self: end; }
+.pprice small { font-weight: 400; font-size: 11px; color: var(--muted); }
+.pprice.sale { color: var(--accent); }
+.pgrid .psub { display: flex; align-items: center; gap: 6px; min-width: 0; overflow: hidden; }
+.pgrid .pbrand { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pgrid .pm { display: inline-flex; align-items: center; gap: 4px; flex: none; color: var(--muted); }
+.pgrid .pm .ic { width: 13px; height: 13px; }
+.pgrid .pm .nvar-txt { font-size: 11px; }
+.pwas { display: flex; align-items: center; gap: 5px; justify-self: end; white-space: nowrap; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.poff { padding: 0 4px; border-radius: var(--r-sm); background: var(--tint); color: var(--accent); font: 700 10.5px/15px var(--ui); }
+.prow.sysrow .pcol { flex: 1; min-width: 0; }
+.prow.lifted .pprice, .prow.lifted .pwas, .prow.lifted .pm, .prow.lifted .pprice small { color: inherit; }
+.prow.lifted .poff { background: none; color: inherit; }
+/* the open dropdown list gets the same slim, rounded scrollbar as the rest of the app (kept clear of the list's rounded corners) */
+@supports (appearance: base-select) {
+  ::picker(select)::-webkit-scrollbar { width: 12px; }
+  ::picker(select)::-webkit-scrollbar-track { background: transparent; margin: 6px 0; }
+  ::picker(select)::-webkit-scrollbar-thumb { background: var(--sb); background-clip: padding-box; border: 4px solid transparent; border-radius: 999px; min-height: 36px; }
+  ::picker(select)::-webkit-scrollbar-thumb:hover { background-color: var(--sb-hover); border-width: 3px; }
+  ::picker(select)::-webkit-scrollbar-thumb:active { background-color: color-mix(in srgb, var(--accent) 70%, transparent); border-width: 3px; }
+  ::picker(select)::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+}

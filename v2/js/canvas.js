@@ -382,7 +382,7 @@
         roomRows(),
         tdisc ? h('.prices-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('span', null, HP.money(sub))) : null,
         tdisc ? h('.prices-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('span', null, '−' + HP.money(tdisc))) : null,
-        h('.prices-total', null, h('span', null, 'Total'), h('span', null, HP.money(total))),
+        h('.prices-total', null, h('span', null, t('Total', 'Total')), h('span', null, HP.money(total))),
         saving > 0 && h('.prices-saving', null, h('span', null, t('You save', 'Du sparer')), h('span', null, HP.money(saving))),
         h('.prices-note', null, t('Prices valid on ', 'Priser gælder d. ') + HP.today()),
         // on screen only: connections still without a cable, and the way to complete the proposal
@@ -1265,7 +1265,7 @@
     toolSvg.textContent = '';
     if (!tool || !tool.pts.length) return;
     const pts = tool.pts.slice(), r = vp.getBoundingClientRect();
-    if (lastPtr && lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom) { const w = toWorld(lastPtr.x, lastPtr.y); pts.push([w.x, w.y]); }
+    if (!tool.done && lastPtr && lastPtr.x > r.left && lastPtr.x < r.right && lastPtr.y > r.top && lastPtr.y < r.bottom) { const w = toWorld(lastPtr.x, lastPtr.y); pts.push([w.x, w.y]); }
     toolSvg.append(svg('path', { class: 'tline', d: 'M' + pts.map((p) => p.join(',')).join(' L') }));
     tool.pts.forEach((p) => toolSvg.append(svg('circle', { class: 'tdot', cx: p[0], cy: p[1], r: 4 })));
     if (tool.type === 'run' && store.doc.sc && pts.length > 1) {
@@ -1284,7 +1284,7 @@
   }
   function askScale() {
     const px = Math.hypot(tool.pts[1][0] - tool.pts[0][0], tool.pts[1][1] - tool.pts[0][1]);
-    toolPreview();
+    tool.done = true; toolPreview();   // the line stays where it was marked while the length is typed
     const inp = h('input', { type: 'text', inputMode: 'decimal', placeholder: t('e.g. 4,2', 'f.eks. 4,2'), autofocus: true, onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); ok(); } } });
     const ok = () => {
       const m = parseFloat(inp.value.replace(',', '.'));

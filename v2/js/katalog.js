@@ -113,9 +113,9 @@
       oninput: () => { st.q = search.value; render(); },
       onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); if (st.sel.size) addSelection(); else search.blur(); } } });
     // a dialog like the app's others: the canvas stays visible (dimmed) behind it; a click outside closes it
-    const win = h('.kat-win', { role: 'dialog', 'aria-label': 'Katalog' },
+    const win = h('.kat-win', { role: 'dialog', 'aria-label': t('Katalog', 'Katalog') },
       h('.kat-top', null,
-        h('h2.kat-title', null, icon('grid', 16), 'Katalog'),
+        h('h2.kat-title', null, icon('grid', 16), t('Katalog', 'Katalog')),
         h('label.kat-search', null, icon('search', 15), search),
         h('select.kat-sort', { title: t('Sort', 'Sortér'), onchange: (e) => { st.sort = e.target.value; render(); } },
           [['rel', t('Best match', 'Bedste match')], ['pa', t('Price, low to high', 'Pris, lav til høj')], ['pd', t('Price, high to low', 'Pris, høj til lav')], ['name', t('Name A–Z', 'Navn A–Å')], ['brand', t('Brand A–Z', 'Mærke A–Å')]].map(([v, l]) => h('option', { value: v }, l))),

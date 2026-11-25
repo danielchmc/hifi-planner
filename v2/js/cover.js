@@ -12,9 +12,8 @@
   const C = () => HP.canvas, icon = (n, s) => HP.icon(n, s);
   const MAX_QR_VERSION = 25; // denser codes are hard to scan from paper: then the cover says to ask for the link instead
 
-  // "23/11/2026" → "23. november 2026"
-  const MONTHS = ['januar', 'februar', 'marts', 'april', 'maj', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'december'];
-  const longDate = (d) => { const m = /^(\d+)\/(\d+)\/(\d+)$/.exec(d || HP.today()); return m ? +m[1] + '. ' + MONTHS[+m[2] - 1] + ' ' + m[3] : d; };
+  // "23/11/2026" → "23. november 2026" (in the page's language)
+  const longDate = (d) => { const m = /^(\d+)\/(\d+)\/(\d+)$/.exec(d || HP.today()); return m ? new Date(+m[3], +m[2] - 1, +m[1]).toLocaleDateString(HP.locale(), { day: 'numeric', month: 'long', year: 'numeric' }) : d; };
   const firstName = (s) => String(s || '').trim().split(/\s+/)[0] || '';
 
   // the cover itself: also used, without the QR code, at the top of the customer view ({ view: true })
@@ -31,7 +30,7 @@
         h('td.p', null, r.was ? h('s', null, HP.money(r.was * r.qty)) : null, h('span', null, HP.money(r.amount)))))),
       tdisc ? h('.cv-total.cv-sub', null, h('span', null, t('Subtotal', 'Subtotal')), h('b', null, HP.money(sub))) : null,
       tdisc ? h('.cv-total.cv-disc', null, h('span', null, t('Discount', 'Rabat') + (tpct ? ' ' + String(tpct).replace('.', ',') + ' %' : '')), h('b', null, '−' + HP.money(tdisc))) : null,
-      h('.cv-total', null, h('span', null, 'Total'), h('b', null, HP.money(total))),
+      h('.cv-total', null, h('span', null, t('Total', 'Total')), h('b', null, HP.money(total))),
       saving > 0 ? h('.cv-saving', null, h('span', null, t('You save', 'Du sparer')), h('b', null, HP.money(saving))) : null,
       h('.cv-foot', null,
         h('.cv-contact', null, h('small', null, t('Your adviser', 'Din rådgiver')), h('b', null, cv.s || ''), h('span', null, sh[0] || ''),
@@ -54,7 +53,7 @@
   async function qrFor() {
     // QR: #q=. The clickable link in the PDF: #t=, with ?pdf before it. Without it, the link is the page being printed plus a
     // different #…, which Chrome/Edge treat as a jump inside the document and leave out of the PDF.
-    const url = await HP.share.customerUrl(null, true), link = (await HP.share.customerUrl()).replace(/(\?[^#]*)?#/, '?pdf#');
+    const url = await HP.share.customerUrl(null, true), link = await HP.share.customerUrl(null, false, true);
     try { const m = HP.qr.matrix(url, 'M'); if (m.version > MAX_QR_VERSION) return { qrTooBig: true, url, link }; return { qr: HP.qr.svg(url, { ecc: 'M', cls: 'qr' }), url, link }; }
     catch (e) { return { qrTooBig: true, url, link }; }
   }
@@ -111,7 +110,7 @@
   /* ---------- customer view (#t=) ---------- */
   async function viewer(payload) {
     document.body.classList.add('viewing');
-    HP.useLang('da'); // the customer's page is in Danish, whatever language the phone or the planner on it uses
+    HP.useLang(new URLSearchParams(location.search).get('l') || 'da'); // the seller's language when the link was made (?l=), else Danish; never the phone's
     const host = h('#viewhost'); document.body.append(host); // the canvas is drawn off screen, only its pages are shown
     C().init(host);
     let doc;
@@ -119,20 +118,20 @@
     store.show(doc); C().render();
     const cv = doc.cv || {}, sh = cv.sh || [], shop = sh[0] || 'HiFi Klubben', who = firstName(cv.s);
     // ways to reach the adviser: tap to call or write
-    const tel = (sh[1] || '').replace(/[^\d+]/g, ''), subj = 'Mit tilbud' + (doc.name ? ': ' + doc.name : '');
+    const tel = (sh[1] || '').replace(/[^\d+]/g, ''), subj = t('My proposal', 'Mit tilbud') + (doc.name ? ': ' + doc.name : '');
     const reach = () => h('.view-reach', null,
-      tel ? h('a.view-btn', { href: 'tel:' + tel }, HP.icon('phone', 16), 'Ring til ' + (who || 'os')) : null,
-      sh[2] ? h('a.view-btn', { href: 'mailto:' + sh[2] + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent('Hej' + (who ? ' ' + who : '') + ',\n\n') }, HP.icon('mail', 16), 'Skriv en mail') : null);
+      tel ? h('a.view-btn', { href: 'tel:' + tel }, HP.icon('phone', 16), t('Call ', 'Ring til ') + (who || t('us', 'os'))) : null,
+      sh[2] ? h('a.view-btn', { href: 'mailto:' + sh[2] + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(t('Hi', 'Hej') + (who ? ' ' + who : '') + ',\n\n') }, HP.icon('mail', 16), t('Write an email', 'Skriv en mail')) : null);
     const page = h('#view', null,
       h('header.view-bar', null, h('span.cv-logo', { html: HP.klubbenSvg() }), h('span', null, shop)),
       h('section.view-hello', null,
-        h('h1', null, 'Hej' + (cv.c ? ' ' + cv.c : '') + '!'),
-        h('p', null, 'Tak for besøget i ' + shop + '. Her er tilbuddet, vi talte om, med tegningen af, hvordan det hele hænger sammen. Har du spørgsmål, er du altid velkommen til at ringe eller skrive.'),
-        who ? h('p.view-sign', null, 'Venlig hilsen ', h('b', null, cv.s)) : null,
+        h('h1', null, t('Hi', 'Hej') + (cv.c ? ' ' + cv.c : '') + '!'),
+        h('p', null, t('Thank you for visiting ', 'Tak for besøget i ') + shop + t('. Here is the proposal we talked about, with a drawing of how it all fits together. If you have any questions, you are always welcome to call or write.', '. Her er tilbuddet, vi talte om, med tegningen af, hvordan det hele hænger sammen. Har du spørgsmål, er du altid velkommen til at ringe eller skrive.')),
+        who ? h('p.view-sign', null, t('Kind regards ', 'Venlig hilsen '), h('b', null, cv.s)) : null,
         reach()),
       h('.view-cover', null, build({ view: true })),
-      h('h2.view-h', null, 'Sådan hænger det sammen'),
-      h('p.view-sub', null, 'Knib med to fingre for at zoome ind. Tryk på et produktnavn for at se det på hifiklubben.dk.'));
+      h('h2.view-h', null, t('How it all fits together', 'Sådan hænger det sammen')),
+      h('p.view-sub', null, t('Pinch with two fingers to zoom in. Tap a product name to see it on hifiklubben.dk.', 'Knib med to fingre for at zoome ind. Tryk på et produktnavn for at se det på hifiklubben.dk.')));
     const pages = h('.view-pages'); page.append(pages);
     document.body.append(page);
     // the A4 sheets, scaled to the width of the screen. The wires are worked out from the cards' layout at zoom 1, after the fonts
@@ -165,14 +164,14 @@
       else HP.stat('Kunde: produkt i tilbuddet', { produkt: prod(), butik: shop });
     });
     page.append(h('footer.view-foot', null,
-      h('small', null, 'Din rådgiver'), h('b', null, cv.s || shop), h('span', null, shop),
-      sh[1] ? h('span', null, 'Tlf. ' + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null, reach(),
-      h('p', null, 'Priserne gælder d. ' + longDate(cv.d) + '. Med forbehold for trykfejl og udsolgte varer.')));
+      h('small', null, t('Your adviser', 'Din rådgiver')), h('b', null, cv.s || shop), h('span', null, shop),
+      sh[1] ? h('span', null, t('Tel. ', 'Tlf. ') + sh[1]) : null, sh[2] ? h('span', null, sh[2]) : null, reach(),
+      h('p', null, t('Prices valid on ', 'Priserne gælder d. ') + longDate(cv.d) + t('. Subject to misprints and stock.', '. Med forbehold for trykfejl og udsolgte varer.'))));
     let again = 0;
     const later = () => { clearTimeout(again); again = setTimeout(draw, 250); };
     if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', later);
     window.addEventListener('load', later);
-    document.title = 'Dit tilbud' + (doc.name ? ' · ' + doc.name : '') + ' · HiFi Klubben';
+    document.title = t('Your proposal', 'Dit tilbud') + (doc.name ? ' · ' + doc.name : '') + ' · HiFi Klubben';
   }
 
   /* "Relaterede produkter" for the customer: what hifiklubben.dk sells with the products in the proposal (the same list as the
@@ -185,11 +184,11 @@
       return h('a.rel-tile', { href: url || undefined, target: '_blank', rel: 'noopener', data: { sku: p.sku || '', name: (p.brand ? p.brand + ' ' : '') + p.name } },
         h('.rel-pic', null, p.img && p.img[0] ? HP.imgEl(p.img[0], 'thumb', { loading: 'lazy' }) : null),
         h('small', null, p.brand), h('b', null, p.name),
-        h('span.rel-for', null, 'Passer til ' + x.for.name),
+        h('span.rel-for', null, t('Fits ', 'Passer til ') + x.for.name),
         h('span.rel-pr', null, pr.was ? h('s', null, HP.money(pr.was)) : null, h('span', null, HP.money(pr.price))));
     };
-    return h('section.view-rel', null, h('h2.view-h', null, 'Måske har du også brug for'),
-      h('p.view-sub', null, 'Udvalgt til produkterne i dit tilbud. Tryk på et for at se mere på hifiklubben.dk – eller spørg ' + (who || 'os') + ', næste gang du kommer forbi.'),
+    return h('section.view-rel', null, h('h2.view-h', null, t('You may also need', 'Måske har du også brug for')),
+      h('p.view-sub', null, t('Chosen for the products in your proposal. Tap one to see more on hifiklubben.dk, or ask ', 'Udvalgt til produkterne i dit tilbud. Tryk på et for at se mere på hifiklubben.dk – eller spørg ') + (who || t('us', 'os')) + t(' next time you come by.', ', næste gang du kommer forbi.')),
       h('.rel-grid', null, list.slice(0, 24).map(tile)));
   }
 

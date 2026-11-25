@@ -16,7 +16,8 @@ Rebuild of HiFi Planner as a static web app. No build step and no dependencies: 
 | `css/app.css` | All styling, light and dark theme, print rules |
 | `js/ports.js` | The I/O standard: signals, connector types, label rules, port matching, cable fit |
 | `js/site.js` | Everything about hifiklubben.dk: image URLs, product-page parser, type → category map, port suggestions, Bluetooth/WiFi, colour swatches (used by the app and the sync) |
-| `js/core.js` | Storage, DA/EN text helper, icons, modal/toast, catalogue with admin drafts, document store with undo/redo |
+| `js/i18n/*.js` | Norwegian, Swedish, Dutch, German and Finnish texts, keyed by the English text (see Languages) |
+| `js/core.js` | Storage, text helper (Danish and English in the code, other languages from `js/i18n/`), icons, modal/toast, catalogue with admin drafts, document store with undo/redo |
 | `js/canvas.js` | Canvas: pan/zoom, A4 pages, cards, wires, selection, replace, Shortcuts, CI mode, print |
 | `js/panels.js` | Top bar, sidebar, cable picker, replace picker, projects, help, settings, login |
 | `js/editor.js` | Product Editor, Shortcut saving, publishing to GitHub |
@@ -61,7 +62,7 @@ An admin saves the canvas (or the selection) as a Shortcut; Publish shares it wi
 
 CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, or drop the file on the canvas); on landscape pages it leaves a column free on the right for the legend. A PDF is drawn to an image with the bundled pdf.js (`vendor/pdfjs`, Mozilla, Apache-2.0), which is loaded only when a PDF is opened; a PDF with several pages shows the pages so the seller can pick the floor plan. PDFs work in the online version, not when the planner is opened as a local file (browsers block it there).
 
-**Dark theme:** the page stays dark in CI mode like the rest of the canvas, and the floor plan is shown inverted on screen (white paper becomes the page colour, black lines light grey; colours keep their hue). Printing, the PDF and the customer's page always use the original light plan.
+**Dark theme:** the page stays dark like the rest of the canvas, and a floor plan is shown inverted on screen, with CI mode on or off (white paper becomes the page colour, black lines light grey; colours keep their hue). Printing, the PDF and the customer's page always use the original light plan.
 
 - **Marks.** With CI mode on, clicking a product in the list arms it: every click on the canvas places one mark, Esc or right-click stops (dragging a product onto the plan places a single mark). Each product gets one letter (A, B, C…) and colour; the shape shows the kind of product: circle = ceiling speaker, square = wall speaker, triangle = subwoofer, hexagon = other/outdoor speaker, diamond = electronics. Marks have one size for the whole proposal (slider in the CI bar) and move on a 5 px grid.
 - **Symbols.** The CI bar has generic symbols that are not products: rack, router, TV, listening position, volume control, cable outlet.
@@ -91,6 +92,15 @@ CI mode is for custom-install proposals. Upload a floor plan (JPG, PNG or PDF, o
 - **Shortcuts for the selection are Alt + a letter** (read by key position, so Option+letter works on a Mac): Alt+T text, Alt+B flip front/back, Alt+C variant, Alt+K Katalog, Alt+I inspect image, Alt+L lock the floor plan, Alt+R replace. Until 2026-11-21 they were plain letters, which now type into the search.
 - **Shift+1** fits the drawing to the window (as in Figma and Miro). Unchanged: Delete, arrows (nudge), [ and ] (order), Enter (cable picker on a selected wire), **Alt+K** the Katalog (Enter on the canvas until 2026-11-23), Esc, Ctrl+Z/Y/C/V/D/A/S/P, F3, F4, /.
 
+## Languages (since 2026-11-25)
+
+Seven languages: **Dansk, English, Norsk (bokmål), Svenska, Nederlands, Deutsch, Suomi**. Choose under the seller's initials → *Sprog* (or ⋯ on a tablet); the page reloads in that language and the choice is remembered per browser. The first time, the browser's own language is used if it is one of these, else English.
+
+- **What is translated:** the whole interface (menus, dialogs, the sidebar, the Katalog, the cards' labels, the price list and the A4 footer, the cover page, the guided tour, Help, the Produkt-editor and settings) and the category names. **The customer's page** opens in the seller's language when the link was made (`?l=sv` in the link; Danish links have none, so old links are unchanged).
+- **What is not:** the catalogue itself (product names, the website's filter values such as product types) and prices come from hifiklubben.dk, so they stay Danish and in DKK; links go to hifiklubben.dk. The order-lines CSV for Business Central stays Danish. A shop in another country would need its own catalogue mirror (hifiklubben.no/.se/.nl/.de/.fi): not built.
+- **How it works:** the code has English and Danish side by side, `t('English', 'Dansk')`. The other languages are dictionaries keyed by the English text, one file each in `js/i18n/` (`nb.js`, `sv.js`, `nl.js`, `de.js`, `fi.js`); `index.html` loads only the chosen one before the app starts. A key with `{}` is a template for text built with `+` (for example `"Delete {} from the catalogue?"`). Category names go through the same dictionaries by their English name. `HP.locale()` gives the date format for the language.
+- **Adding or changing a text:** write it as `t('English', 'Dansk')` as always. Until it is added to the five dictionaries it shows in English in those languages (nothing breaks). Add it to each file with the English text as the key.
+
 ## Design language (since 2026-11-24)
 
 The app's controls and windows follow the top bar's style, like Figma and Canva: 6 px rounded corners on controls (10–12 px on dialogs, menus and panels), light grey borders, a soft grey hover, an orange-tinted "on" state, an orange focus ring on fields, and dialogs, menus, the Oversigt panel and the Katalog floating on soft shadows instead of black frames. Labels and headings are in sentence case in the UI font (Segoe UI). Monospace is kept for SKUs, keyboard keys, counts and figures, and Sharp Grotesk for product names. **Not changed on purpose:** the cards, wires and price list on the canvas, the A4 pages, the cover and the customer's page keep the sharp HiFi Klubben look, because they are what the customer sees and prints.
@@ -99,7 +109,11 @@ The shared settings are CSS variables in the "v5 design language" sections at th
 
 **Icons** are [Lucide](https://lucide.dev) (ISC licence: free for commercial use, the notice is in `assets/LICENSE-lucide.txt` and must stay with them). They are copied into `ICONS` in `js/core.js` (no download at run time), each with its Lucide name after `//`; to add one, find it on lucide.dev and paste the inside of its `<svg>`. Drawn at 1.75 stroke with round ends (`.ic` in `css/app.css`). The HiFi Klubben logo, the CI mark symbols and the port dots are our own, not icons.
 
-**Scrollbars** are thin, rounded and float on a clear track (12 px, the thumb 4 px wide; darker and wider on hover, orange while dragged), in Chrome, Edge and Safari; Firefox gets its own thin scrollbar in the same colours. Colours: `--sb` and `--sb-hover`. Strips that hide their scrollbar (category chips, the selection bar and CI bar on small screens) still do.
+**Product rows** in the sidebar, the cable picker and the systems list have two lines with the price in its own column on the right, so it is never cut off: *name …… price* (red on sale, *fra* when variants differ, */ m* per metre) above *brand · size +3 ⓑ ⓦ …… −48%*. A discount of 10 % or more shows as the −% tag (the old price on hover); a smaller one as the old price, struck. On a narrow sidebar the brand is cut with … before anything else (`rowInfo` in `js/panels.js`).
+
+**Dropdowns** (`<select>`: Alle sektioner, sorting, the Katalog's sort, the cable picker, the Editor's port fields) open a list in the same style as the ▾ menus: rounded, soft shadow, grey hover, the chosen one bold with an orange ✓, the arrow turning up while open, and a long choice cut with … in the closed field. This uses the browser's customizable select (`appearance: base-select`, Chrome and Edge 135+); `js/core.js` adds the `<button><selectedcontent>` each select needs, also after its options are rebuilt. Other browsers (Safari, Firefox) show their own list; the closed field looks the same. Keyboard, type-to-find and touch work as with any select.
+
+**Scrollbars** are thin, rounded and float on a clear track (12 px, the thumb 4 px wide; darker and wider on hover, orange while dragged), in Chrome, Edge and Safari; Firefox gets its own thin scrollbar in the same colours. Colours: `--sb` and `--sb-hover`. Open dropdown lists get the same scrollbar (`::picker(select)::-webkit-scrollbar`). Strips that hide their scrollbar (category chips, the selection bar and CI bar on small screens) still do.
 
 ## Motion
 
@@ -227,13 +241,14 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261125-0155`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261125-0945`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
 - **A product merged into another** keeps working in older drawings, links and Shortcuts: `HP.MOVED` in `js/core.js` maps the old id to the product it became; opening a drawing rewrites the old id (cards, marks, wire cables, adapters), and the catalogue lookup follows the map. 2026-11-23: our own *Sonos Combo Adapter - USB C - Eth./Minijack* (generic RCA photo, no SKU) → the website's *Combo Adapter* (`w-soncomboadapt`, SONCOMBOADAPT), now linked in `data/own.js` with its plugs (USB-C plug ↔ minijack socket, so it can sit in a cable chain like a Y-splitter) and its colours.
 - **A product HiFi Klubben does not sell** (our own card, no SKU) is marked discontinued rather than deleted (`frozen.gone` in `data/own.js`), so drawings that have it still open: *Sinox SXA 1800 - DIN Female - 4xRCA*, 2026-11-23.
 - These were applied by the one-off `tools/fix-2026-11-23-combo-sinox.js` (safe to run again).
+- **Stray variants on the website:** hifiklubben.dk sometimes lists another product's variants under a model too, unnamed and at an old price (B&W HTM71 S3 and 705 S3 carried their Signature finishes, which have their own products). A variant SKU that sits under several website products, named in one and unnamed in another, is kept only where it is named (`strayVariants` in `tools/site-match.js` and `tools/price-sync.js`, applied before matching). Variants named in both (KEF KW1, Marantz CD60) are left alone.
 - **Cables with named variants:** a cable whose website variants have names without digits (colours, plug types) gets them as variants, like other products (`webFacts` in `tools/site-match.js`): Sonos Combo Adapter and Line-In Adapter (Sort, Hvid), pedestal Power Cable 7,5 m (four colours), ThunderBird BiWire Jumpers (banan/spade combinations). Variants with digits are lengths, as before.
 
 ## Cable labels on wires
@@ -252,7 +267,7 @@ One 48 px bar in the style of Figma or Canva: icon buttons without borders, grou
 - **Menus toggle:** pressing a ▾ button (or ⋯, a card's variant or length pill, a Katalog tile's +N lengths) again closes its menu; while open, the button looks pressed and its ▾ turns up. Pressing another menu button switches straight to that menu; Esc or a click elsewhere also closes it (`HP.menu(x, y, entries, anchor)` in `js/core.js`).
 - **Filer:** Nyt tilbud (ryd lærredet), Omdøb…, Projekter… (save, open, export), Del link, Print / PDF…, A4 stående/liggende, Prisjusteringer…, Oversigt.
 - **Admin:** Produkt-editor, Statistik, Udgiv (n).
-- **The seller:** the shop's sellers on this PC (click one to switch), Anden sælger…, then Hjælp, English/Dansk, Lyst/Mørkt tema (F1), Indstillinger.
+- **The seller:** the shop's sellers on this PC (click one to switch), Anden sælger…, then Hjælp, Sprog (Dansk, English, Norsk, Svenska, Nederlands, Deutsch, Suomi), Lyst/Mørkt tema (F1), Indstillinger.
 - **Narrow windows.** The name always stays. Below 1700 px the chip shows only its amount; below 1560 the shop crumb and the label on Relaterede produkter go; below 1300 the label on Print. Up to 1024 px (iPad portrait, phones) the orange **Produkter** button opens the product list and **⋯** holds Filer, view, Admin and the seller; up to 700 px (phones) only Produkter, undo, the name, Print and ⋯ remain. `buildTopbar`, `fileItems`, `adminItems`, `userItems` in `js/panels.js`; the "v5 top bar" block at the end of `css/app.css`.
 
 ## Oversigt (layers)
