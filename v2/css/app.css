@@ -1402,3 +1402,17 @@ h2 { font-size: 15px; }
   ::picker(select)::-webkit-scrollbar-thumb:active { background-color: color-mix(in srgb, var(--accent) 70%, transparent); border-width: 3px; }
   ::picker(select)::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
 }
+/* × after the section and category dropdowns: back to all sections, shown while a section is chosen */
+.selrow.slim { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; }
+.selrow.slim select.grp:has(+ select.sub[hidden]) { grid-column: 1 / -1; }
+.sel-x { width: 30px; height: 30px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--panel); color: var(--muted); cursor: pointer; transition: background .12s, border-color .12s, color .12s; }
+.sel-x:hover { background: var(--panel2); border-color: var(--line2); color: var(--fg); }
+.sel-x:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--ring); }
+@media (pointer: coarse) { .sel-x { width: 38px; height: 38px; } }
+.empty .empty-all { display: flex; margin: 10px auto 0; }
+/* the unsaved-changes dot after the proposal's name (click to save), and the open project in the list */
+.tb-unsaved { flex: none; width: 18px; height: 18px; margin-left: -4px; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; display: grid; place-items: center; }
+.tb-unsaved::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.tb-unsaved:hover { background: var(--panel2); }
+.proj.cur { background: var(--tint); }
+.proj.cur .muted { font-size: 12px; padding: 0 6px; }

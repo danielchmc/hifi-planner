@@ -122,6 +122,9 @@
     // which has room for them; the sidebar is for finding a product quickly and dragging it onto the canvas.
     const grpSel = h('select.grp', { title: t('Section', 'Sektion'), onchange: () => { group = grpSel.value; sub = ''; filter(); } });
     const subSel = h('select.sub', { title: t('Type', 'Type'), onchange: () => { sub = subSel.value; filter(); } });
+    // × next to the section and category: back to all sections in one press, keeping the search (and the focus in it)
+    const resetGroup = () => { group = ''; sub = ''; filter(); search.focus(); };
+    const selX = h('button.sel-x', { type: 'button', title: t('Show all sections', 'Vis alle sektioner'), 'aria-label': t('Show all sections', 'Vis alle sektioner'), onclick: resetGroup }, icon('x', 14));
     const count = h('span.count');
     const list = h('.plist#sb-list');
     const more = h('.more'); // sentinel at the end of the list: when it scrolls into view the next rows are added
@@ -129,7 +132,7 @@
     const tabs = h('.tabs', null,
       h('button', { data: { tab: 'products' }, onclick: () => setTab('products') }, t('Products', 'Produkter')),
       h('button#tab-shortcuts', { data: { tab: 'shortcuts' }, onclick: () => setTab('shortcuts') }, icon('bolt', 14), t('Shortcuts', 'Genveje')));
-    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search, katBtn), h('.selrow.slim', null, grpSel, subSel)),
+    const prodPane = h('.pane', null, h('.filters', null, h('.searchbox', null, icon('search', 15), search, katBtn), h('.selrow.slim', null, grpSel, subSel, selX)),
       h('.listhead', null, count, sortSel), list);
     list.title = matchMedia('(pointer: coarse)').matches ? t('Tap to add · hold to drag', 'Tryk for at tilføje · hold for at trække') : t('Drag onto canvas, or click', 'Træk ind på lærredet, eller klik');
     const scPane = h('.pane', null, scList);
@@ -165,6 +168,7 @@
       }
       subSel.value = sub;
       subSel.hidden = !group;
+      selX.hidden = !group;
     }
     const flagFn = { sale: onSale, bt: (p) => p.bt, wifi: (p) => p.wifi };
     const arm = () => { const s = C().stamp && C().stamp(); rows.forEach(({ p, r }) => r.classList.toggle('armed', !!s && s.key === p.id)); };
@@ -217,7 +221,11 @@
         : so === 'name' ? (a, b) => loc(a.p.name, b.p.name) : so === 'brand' ? (a, b) => loc(a.p.brand, b.p.brand) || loc(a.p.name, b.p.name) : (a, b) => a.s - b.s || a.i - b.i);
       shown = 0; rows = [];
       list.textContent = ''; list.scrollTop = 0;
-      if (!hits.length) list.append(h('.empty', null, t('No products match.', 'Ingen produkter passer.')));
+      if (!hits.length) {
+        const elsewhere = group && words.length && base.length; // the search finds something outside the chosen section
+        list.append(h('.empty', null, t('No products match.', 'Ingen produkter passer.'),
+          elsewhere ? h('button.btn.sm.empty-all', { type: 'button', onclick: resetGroup }, t('Search all sections', 'Søg i alle sektioner')) : null));
+      }
       addRows();
     }
     // append the next PER rows; the sentinel goes after them, and the observer adds more when it comes into view
@@ -304,10 +312,15 @@
     const d = store.doc;
     return [
       { label: t('New proposal (clear canvas)', 'Nyt tilbud (ryd lærredet)'), icon: 'eraser', fn: () => C().clearCanvas() },
+      { label: t('Open…', 'Åbn…'), icon: 'folder', key: 'Ctrl+O', fn: Pn.projects },
+      ...(() => { const r = Pn.recent(4).filter((p) => p.id !== d.prj); return r.length ? [{ head: t('Recent', 'Seneste') }, ...r.map((p) => ({ label: p.name, icon: 'page', note: new Date(p.date).toLocaleDateString(HP.locale(), { day: 'numeric', month: 'short' }), fn: () => Pn.openProject(p) })), 'sep'] : []; })(),
+      { label: t('Save', 'Gem'), icon: 'download', key: 'Ctrl+S', note: Pn.unsaved() ? t('changes', 'ændringer') : '', fn: Pn.save },
+      { label: t('Save as…', 'Gem som…'), icon: 'copy', key: 'Ctrl+Shift+S', fn: Pn.saveAs },
       { label: t('Rename…', 'Omdøb…'), icon: 'edit', fn: rename },
-      { label: t('Projects…', 'Projekter…'), icon: 'folder', note: t('save, open, export', 'gem, åbn, eksportér'), fn: Pn.projects },
+      { label: t('Export file…', 'Eksportér fil…'), icon: 'download', fn: Pn.exportFile },
+      { label: t('Import file…', 'Importér fil…'), icon: 'upload', fn: Pn.importFile },
       'sep',
-      { label: t('Share link', 'Del link'), icon: 'link', key: 'Ctrl+Shift+S', fn: Pn.share },
+      { label: t('Share link', 'Del link'), icon: 'link', key: 'Ctrl+Shift+L', fn: Pn.share },
       { label: t('Print / PDF…', 'Print / PDF…'), icon: 'print', key: 'Ctrl+P', fn: () => HP.cover.dialog() },
       { label: 'A4 ' + (d.orient === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: t('now ', 'nu ') + (d.orient === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
       'sep',
@@ -420,6 +433,8 @@
     const ppTxt = h('span.ppc-t'), ppChip = h('.tb-pp#tb-pp', { hidden: true },
       h('button.ppc', { onclick: () => Pn.projectPrices() }, icon('tag', 13), h('span.ppc-l', null, t('Price adjustments', 'Prisjusteringer')), ppTxt),
       h('button.ppc-x', { title: t('Remove all price adjustments (Undo in the message)', 'Fjern alle prisjusteringer (Fortryd i beskeden)'), onclick: () => Pn.clearProjectPrices() }, icon('x', 12)));
+    // a dot after the name while the open project has changes not saved in it (Ctrl+S saves); click it to save
+    const unsavedDot = h('button.tb-unsaved', { type: 'button', hidden: true, title: t('Changes not saved in the project (Ctrl+S)', 'Ændringer ikke gemt i projektet (Ctrl+S)'), onclick: () => Pn.save() });
     const bar = h('header#topbar', null,
       h('.tb-left', null,
         h('button.tb-btn.primary#tb-drawer', { title: t('Products and Shortcuts', 'Produkter og genveje'), onclick: () => Pn.drawer() }, icon('plus', 15), h('span', null, t('Products', 'Produkter'))),
@@ -427,7 +442,7 @@
         h('.tb-grp#tb-filegrp', null, file), sep(),
         h('.tb-grp#tb-edit', null, undo, redo), sep(),
         h('.tb-grp#tb-insert', null, text, prices, ci)),
-      h('.tb-mid', null, shopCrumb, name, ppChip),
+      h('.tb-mid', null, shopCrumb, name, unsavedDot, ppChip),
       h('.tb-right', null,
         h('.tb-grp#tb-view', null, layers, scaleBtn), sep(),
         h('.tb-grp#tb-admingrp', null, admin),
@@ -447,6 +462,7 @@
       scaleTxt.textContent = Math.round((store.doc.cardScale || 1) * 100) + '%';
       if (document.activeElement !== name) name.value = store.doc.name || '';
       fitName();
+      unsavedDot.hidden = !Pn.unsaved();
       bar.querySelector('#tb-admingrp').hidden = !HP.isAdmin();
       const n = cat.dirtyCount(); adminN.hidden = !n;
       admin.title = n ? t('Admin · ' + n + ' unpublished change(s)', 'Admin · ' + n + ' ikke-udgivne ændring(er)') : t('Admin: Product Editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv');
@@ -705,37 +721,77 @@
   /* ---------- projects ---------- */
   const download = (name, text, type) => { const a = h('a', { href: URL.createObjectURL(new Blob([text], { type: type || 'application/json' })), download: name }); document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); };
   HP.download = download;
+  /* ---------- projects: Gem (Ctrl+S), Gem som… (Ctrl+Shift+S), Åbn… (Ctrl+O), Seneste ----------
+     Projects live in this browser (LS 'projects'). A proposal opened from or saved as a project remembers it (doc.prj), so Gem
+     saves over it without asking; until then Gem asks for a name, like Gem som. The work is autosaved all the time anyway;
+     a project is a named copy to come back to. The top bar shows a dot while the open project has changes not saved in it. */
+  const projAll = () => LS.get('projects', []);
+  const projOf = (id) => id && projAll().find((x) => x.id === id);
+  const hasPlanSrc = () => store.doc.items.some((i) => i.kind === 'plan') && store.planSrc;
+  let savedJSON = null; // the open project as last saved, to tell whether there are changes
+  const syncSaved = () => { const p = projOf(store.doc.prj); if (store.doc.prj && !p) delete store.doc.prj; savedJSON = p ? JSON.stringify(Object.assign({}, p.doc, { prj: p.id })) : null; };
+  Pn.unsaved = () => !!(store.doc.prj && savedJSON && JSON.stringify(store.doc) !== savedJSON);
+  function writeProject(name, id) {
+    id = id || HP.uid();
+    store.doc.name = name; store.doc.prj = id; store.commit();
+    const doc = JSON.parse(JSON.stringify(store.doc)), ps = projAll().filter((x) => x.id !== id && x.name !== name);
+    const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null };
+    ps.push(entry);
+    if (!LS.set('projects', ps)) {
+      entry.plan = null;
+      if (!LS.set('projects', ps)) { HP.toast(t('Browser storage is full. Export the project as a file instead.', 'Browserens lager er fuldt. Eksportér projektet som fil i stedet.'), { kind: 'error' }); return false; }
+      HP.toast(t('Saved without the floor plan (too large). Export as a file to keep it.', 'Gemt uden plantegningen (for stor). Eksportér som fil for at beholde den.'), { kind: 'warn' });
+    } else HP.toast(t('Saved: ', 'Gemt: ') + name, { kind: 'ok', ms: 2200 });
+    savedJSON = JSON.stringify(store.doc); HP.emit('doc');
+    return true;
+  }
+  Pn.openProject = (p) => {
+    store.load(Object.assign({}, p.doc, { prj: p.id }), p.plan); syncSaved(); HP.emit('doc');
+    HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', p.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } });
+  };
+  Pn.save = () => { const p = projOf(store.doc.prj); return p ? writeProject(store.doc.name || p.name, p.id) : Pn.saveAs(); };
+  Pn.saveAs = () => {
+    const nameIn = h('input', { placeholder: t('Project name', 'Projektnavn'), value: store.doc.name || '' });
+    const go = () => {
+      const name = nameIn.value.trim(); if (!name) return nameIn.focus();
+      const same = projAll().find((x) => x.name === name);
+      const done = () => { if (writeProject(name, same ? same.id : null)) close(); };
+      if (same && same.id !== store.doc.prj) HP.confirm(t('A project called "{}" already exists. Replace it?', 'Der findes allerede et projekt med navnet "{}". Erstat det?').replace('{}', name), t('Replace', 'Erstat'), done);
+      else done();
+    };
+    nameIn.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+    const close = HP.modal({ title: store.doc.prj ? t('Save as', 'Gem som') : t('Save proposal', 'Gem tilbud'), size: 'sm',
+      body: [h('label.field', null, h('span', null, t('Project name', 'Projektnavn')), nameIn),
+        h('p.muted', null, t('Saved in this browser on this PC, under Filer → Open. Your work is also autosaved continuously.', 'Gemmes i denne browser på denne PC, under Filer → Åbn. Dit arbejde gemmes også løbende af sig selv.'))],
+      foot: [h('button.btn.primary', { onclick: go }, t('Save', 'Gem'))] });
+    setTimeout(() => { nameIn.focus(); nameIn.select(); }, 30);
+  };
+  Pn.exportFile = () => download((store.doc.name || 'hifi-planner') + '.hifiplan.json', JSON.stringify({ app: 'hifi-planner', v: 2, doc: store.doc, plan: hasPlanSrc() ? store.planSrc : null }));
+  const importIn = h('input', { type: 'file', accept: '.json,application/json', hidden: true, onchange: () => {
+    const f = importIn.files[0]; if (!f) return; const fr = new FileReader();
+    fr.onload = () => { try { const j = JSON.parse(fr.result); if (!j.doc || !Array.isArray(j.doc.items)) throw 0; const d = Object.assign({}, j.doc); delete d.prj; store.load(d, j.plan || null); syncSaved(); HP.toast(t('Opened "{}"', 'Åbnede "{}"').replace('{}', d.name || f.name), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } catch (e) { HP.toast(t('That file is not a HiFi Planner project.', 'Filen er ikke et HiFi Planner-projekt.'), { kind: 'error' }); } };
+    fr.readAsText(f); importIn.value = '';
+  } });
+  Pn.importFile = () => { if (!importIn.isConnected) document.body.append(importIn); importIn.click(); };
+  Pn.recent = (n) => projAll().sort((a, b) => b.date - a.date).slice(0, n || 5);
+  HP.on('loaded', () => syncSaved());
+
   Pn.projects = () => {
     const list = h('.projlist');
-    const nameIn = h('input', { placeholder: t('Project name', 'Projektnavn'), value: store.doc.name || '' });
-    const all = () => LS.get('projects', []);
-    const hasPlan = () => store.doc.items.some((i) => i.kind === 'plan') && store.planSrc;
     function draw() {
       list.textContent = '';
-      const ps = all();
+      const ps = projAll();
       if (!ps.length) list.append(h('.empty', null, t('No saved projects in this browser yet.', 'Ingen gemte projekter i denne browser endnu.')));
-      ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj', null,
-        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, new Date(p.date).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' }) + ' · ' + p.doc.items.filter((i) => i.kind === 'product').length + ' ' + t('products', 'produkter'))),
-        h('button.btn.sm', { onclick: () => { store.load(p.doc, p.plan); close(); HP.toast(t('Opened "' + p.name + '"', 'Åbnede "' + p.name + '"'), { action: { label: t('Undo', 'Fortryd'), fn: store.undo } }); } }, t('Open', 'Åbn')),
-        h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => { LS.set('projects', all().filter((x) => x.id !== p.id)); draw(); } }, icon('trash', 14)))));
+      ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj' + (p.id === store.doc.prj ? '.cur' : ''), null,
+        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, new Date(p.date).toLocaleString(HP.locale(), { dateStyle: 'medium', timeStyle: 'short' }) + ' · ' + p.doc.items.filter((i) => i.kind === 'product').length + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
+        p.id === store.doc.prj ? h('span.muted', null, t('open now', 'åben nu')) : h('button.btn.sm', { onclick: () => { Pn.openProject(p); close(); } }, t('Open', 'Åbn')),
+        h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => HP.confirm(t('Delete the project "{}"?', 'Slet projektet "{}"?').replace('{}', p.name), t('Delete', 'Slet'), () => { LS.set('projects', projAll().filter((x) => x.id !== p.id)); if (p.id === store.doc.prj) { delete store.doc.prj; syncSaved(); store.commit(); } draw(); }) }, icon('trash', 14)))));
     }
-    const save = () => {
-      const name = nameIn.value.trim(); if (!name) return nameIn.focus();
-      store.doc.name = name; store.commit();
-      const ps = all().filter((x) => x.name !== name), entry = { id: HP.uid(), name, date: Date.now(), doc: store.doc, plan: hasPlan() ? store.planSrc : null };
-      ps.push(entry);
-      if (!LS.set('projects', ps)) { entry.plan = null; if (!LS.set('projects', ps)) return HP.toast(t('Browser storage is full. Export the project as a file instead.', 'Browserens lager er fuldt. Eksportér projektet som fil i stedet.'), { kind: 'err' }); HP.toast(t('Saved without the floor plan image (too large). Export as file to keep it.', 'Gemt uden plantegning (for stor). Eksportér som fil for at beholde den.'), { kind: 'warn' }); }
-      else HP.toast(t('Project saved', 'Projekt gemt'), { kind: 'ok' });
-      draw();
-    };
-    const file = h('input', { type: 'file', accept: '.json,application/json', hidden: true, onchange: () => { const fr = new FileReader(); fr.onload = () => { try { const j = JSON.parse(fr.result); if (!j.doc || !Array.isArray(j.doc.items)) throw 0; store.load(j.doc, j.plan); close(); } catch (e) { HP.toast(t('That file is not a HiFi Planner project.', 'Filen er ikke et HiFi Planner-projekt.'), { kind: 'err' }); } }; fr.readAsText(file.files[0]); } });
-    const close = HP.modal({ title: t('Projects', 'Projekter'), size: 'md',
-      body: [h('.row', null, nameIn, h('button.btn.primary', { onclick: save }, t('Save current', 'Gem nuværende'))),
-        h('p.muted', null, t('Projects are stored in this browser on this PC. Use Export to move a proposal to another PC or keep a backup. Your work is also autosaved continuously.', 'Projekter gemmes i denne browser på denne PC. Brug Eksportér for at flytte et tilbud til en anden PC eller tage backup. Dit arbejde autosaves også løbende.')),
-        list, file],
-      foot: [h('button.btn', { onclick: () => HP.confirm(t('Clear the canvas and start a new proposal? (You can undo.)', 'Ryd lærredet og start et nyt tilbud? (Kan fortrydes.)'), t('New', 'Nyt'), () => { store.load(store.blank()); close(); }) }, icon('page', 14), t('New empty canvas', 'Nyt tomt lærred')), h('.spacer'),
-        h('button.btn', { onclick: () => file.click() }, icon('upload', 14), t('Import file', 'Importér fil')),
-        h('button.btn', { onclick: () => download((store.doc.name || 'hifi-planner') + '.hifiplan.json', JSON.stringify({ app: 'hifi-planner', v: 2, doc: store.doc, plan: hasPlan() ? store.planSrc : null })) }, icon('download', 14), t('Export file', 'Eksportér fil'))] });
+    const close = HP.modal({ title: t('Open project', 'Åbn projekt'), size: 'md',
+      body: [list, h('p.muted', null, t('Projects are stored in this browser on this PC. Use Export to move a proposal to another PC or keep a backup. Your work is also autosaved continuously.', 'Projekter gemmes i denne browser på denne PC. Brug Eksportér for at flytte et tilbud til en anden PC eller tage en sikkerhedskopi. Dit arbejde gemmes også løbende af sig selv.'))],
+      foot: [h('button.btn', { onclick: () => { close(); Pn.saveAs(); } }, icon('download', 14), store.doc.prj ? t('Save as…', 'Gem som…') : t('Save current…', 'Gem nuværende…')),
+        h('button.btn', { onclick: () => { close(); Pn.importFile(); } }, icon('upload', 14), t('Import file', 'Importér fil')),
+        h('button.btn', { onclick: Pn.exportFile }, icon('download', 14), t('Export file', 'Eksportér fil'))] });
     draw();
   };
 
@@ -800,7 +856,7 @@
         h('p', null, t('Search by model, brand, SKU, category, port name (e.g. "HDMI eARC", "PHONO IN") or "bluetooth" / "wifi". Combine words with spaces. Use "Peripherals" or "Stand-in" for generic stand-in products.', 'Søg på model, brand, SKU, kategori, portnavn (fx "HDMI eARC", "PHONO IN") eller "bluetooth" / "wifi". Kombinér ord med mellemrum. Brug "Peripherals" eller "Stand-in" for generiske stand-in-produkter.')),
         h('h3', null, t('Keyboard', 'Tastatur')),
         h('p.muted', null, t('Right-click anywhere on the canvas for a menu with all actions and their shortcuts.', 'Højreklik hvor som helst på lærredet for en menu med alle handlinger og deres genveje.')),
-        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
+        h('.keys', null, [[['Del'], t('Delete selection', 'Slet markering')], [['Ctrl', 'Z'], t('Undo', 'Fortryd')], [['Ctrl', 'Y'], t('Redo', 'Annuller fortryd')], [['Ctrl', 'C'], t('Copy', 'Kopiér')], [['Ctrl', 'V'], t('Paste', 'Indsæt')], [['Ctrl', 'D'], t('Duplicate', 'Dublér')], [['Ctrl', 'S'], t('Save', 'Gem')], [['Ctrl', 'Shift', 'S'], t('Save as', 'Gem som')], [['Ctrl', 'O'], t('Open project', 'Åbn projekt')], [['Ctrl', 'Shift', 'L'], t('Share link', 'Del link')], [['Ctrl', 'P'], t('Print / PDF', 'Print / PDF')], [['Ctrl', 'A'], t('Select all', 'Markér alt')],
           [[t('Type', 'Skriv')], t('Search products (anywhere on the canvas)', 'Søg produkter (hvor som helst på lærredet)')], [['Enter'], t('In the search: add the highlighted result (the first one, or pick with ↓/↑)', 'I søgningen: tilføj det markerede resultat (det første, eller vælg med ↓/↑)')], [['Shift', 'Enter'], t('In the search: open the Katalog with it', 'I søgningen: åbn Katalog med den')], [['Alt', 'K'], t('Open the Katalog', 'Åbn Katalog')],
           [['Alt', 'T'], t('Add text', 'Tilføj tekst')], [['Alt', '1'], t('Overview: everything on the canvas', 'Oversigt: alt på lærredet')], [['Alt', 'R'], t('Replace selected card', 'Udskift markeret kort')], [['Alt', 'B'], t('Flip front/back', 'Vend for/bag')], [['Alt', 'C'], t('Variant', 'Variant')], [['Alt', 'I'], t('Inspect image', 'Se billedet nærmere')], [['Alt', 'L'], t('Lock floor plan', 'Lås plantegning')], [[']'], t('Bring to front', 'Placér forrest')], [['['], t('Send to back', 'Placér bagerst')],
           [['Shift', '1'], t('Fit to window', 'Tilpas til vindue')], [['F3'], t('Price list', 'Prisliste')], [['/'], t('Search products', 'Søg produkter')], [[t('Drag', 'Træk')], t('Box select (Shift adds)', 'Markér med boks (Shift tilføjer)')], [[t('Right-drag', 'Højretræk')], t('Pan', 'Panorér')],

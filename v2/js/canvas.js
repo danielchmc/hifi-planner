@@ -1472,8 +1472,8 @@
     add(t('Fit to window', 'Tilpas til vindue'), 'Shift+1', 'fit', C.fit);
     M.push({ el: HP.panels.scaleStepper() });
     M.push('sep');
-    add(t('Save project…', 'Gem projekt…'), 'Ctrl+S', 'folder', HP.panels.projects);
-    add(t('Share link…', 'Del link…'), 'Ctrl+Shift+S', 'link', HP.panels.share);
+    add(t('Save', 'Gem'), 'Ctrl+S', 'download', HP.panels.save);
+    add(t('Share link…', 'Del link…'), 'Ctrl+Shift+L', 'link', HP.panels.share);
     add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', () => HP.cover.dialog());
     add(t('Clear canvas', 'Ryd lærredet'), '', 'trash', C.clearCanvas, { danger: true, disabled: !d.items.length });
     HP.menu(x, y, M);

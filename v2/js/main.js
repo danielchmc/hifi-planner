@@ -13,8 +13,11 @@
     if (e.key === 'F1') { e.preventDefault(); return HP.panels.toggleTheme(); } // same hotkeys as the old planner
     if (e.key === 'F3') { e.preventDefault(); return C.togglePrices(); }
     if (e.key === 'F4') { e.preventDefault(); return HP.cover.dialog(); }
-    if (mod && e.shiftKey && k === 's') { e.preventDefault(); return HP.panels.share(); }
-    if (mod && k === 's') { e.preventDefault(); return HP.panels.projects(); }
+    // file shortcuts as in any program: Ctrl+S save, Ctrl+Shift+S save as, Ctrl+O open (Ctrl+N is the browser's, so New is in Filer only)
+    if (mod && e.shiftKey && k === 's') { e.preventDefault(); return HP.panels.saveAs(); }
+    if (mod && k === 's') { e.preventDefault(); return HP.panels.save(); }
+    if (mod && k === 'o') { e.preventDefault(); return HP.panels.projects(); }
+    if (mod && e.shiftKey && k === 'l') { e.preventDefault(); return HP.panels.share(); }
     if (mod && k === 'p') { e.preventDefault(); return HP.cover.dialog(); }
     if (typing) { if (e.key === 'Escape') e.target.blur(); return; }
     if (mod && k === 'd') { e.preventDefault(); return C.duplicateSelection(); }
