@@ -259,7 +259,7 @@ hifiklubben.dk sells ready-made systems (bundles): a turntable with an amplifier
   - **Card:** a length pill like the variant pill (*5 m · 5 ▾*) lists the lengths with prices; also **Længde** on the selection bar and Alt+C. Cable **sold by the metre** has a metres stepper instead, like the Kort − % + control: **− 3 m +**, and the number can be typed (digits only, whole metres 1–99; Enter or leaving the field saves, Esc cancels, ↑/↓ step by 1; Alt+C and Længde put the cursor in it). Each change is one Undo step and remembered as the next default. The cable picker uses the same stepper for a wire's metres (Enter puts the cable on the wire). `C.metreStepper`, `C.setMetres` in `js/canvas.js`. The card's name carries the length (*CL1 HDMI 8K 10 m*), as does the price list, with the length's own SKU. A length with its own card swaps the card's product; a website length without one is stored on the card as `len` (its SKU, as `lv` on a wire); metres as `m`, priced per started metre. Share links and Shortcuts keep `len` and `m`.
   - A card for a length the website no longer sells (`lenGone`, kept so older drawings open) is not listed on its own.
 - **Replacing a cable card** (Udskift) lists cables, one row per cable at the card's length where that cable has it, and with **Samme stik** ticked only cables with the same plugs at both ends (other products: Samme kategori, as before; until 2026-11-23 a cable card was offered the accessories of its category).
-- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261126-0045`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
+- **New files after a push:** `index.html` loads the CSS and scripts with a version tag (`?v=20261126-0100`). Change it with every update of `js/` or `css/`, or browsers may keep the old files for up to 10 minutes.
 
 ## Merged and removed products
 
@@ -281,7 +281,7 @@ One 48 px bar in the style of Figma or Canva: icon buttons without borders, grou
 
 - **Left:** the HiFi Planner mark · **Filer ▾** · undo/redo/Historik · Tekst, Prisliste (tag icon), CI-tilstand (icons; an active tool is tinted orange).
 - **Middle:** the shop as a crumb (*Amagerbrogade /*) and the proposal's name (click to rename), then the **Prisjusteringer chip** while the proposal has price adjustments: *Prisjusteringer −3.000,-* (kroner off the website's prices; *+* when prices were raised); greyed *1 gemt* when they are only saved for products not in the price list now. Click to edit, × to remove them all (Undo in the message).
-- **Right:** Oversigt (layers icon) · **Kort ▾** showing the card size (*100%*; a stepper, 60/80/100/125 %, Tilpas til vindue) · **Admin ▾** with a shield (Lucide shield-check) (admins only; an orange dot when there are unpublished changes; the word Admin goes below 1300 px) · **the seller's initials** in a round avatar ▾ · **Relaterede produkter** (outlined, with the count) · **Print / PDF** (orange).
+- **Right:** Oversigt (layers icon) · **Kort ▾** showing the card size (*100%*; a stepper, 60/80/100/125 %, Tilpas til vindue) · **Admin ▾** with a shield (Lucide shield-check) (admins only; an orange dot when there are unpublished changes; the word Admin goes below 1300 px) · **the seller's initials** in a round avatar ▾ · **Relaterede produkter** (outlined, with the count) · **Send til kunden** (orange; see below).
 - **Menus toggle:** pressing a ▾ button (or ⋯, a card's variant or length pill, a Katalog tile's +N lengths) again closes its menu; while open, the button looks pressed and its ▾ turns up. Pressing another menu button switches straight to that menu; Esc or a click elsewhere also closes it (`HP.menu(x, y, entries, anchor)` in `js/core.js`).
 - **Filer:** **Nyt projekt…** (clears the canvas; asks to save first when the open project has changes), **Åbn…** (Ctrl+O), **Seneste** (the last 4 projects, newest first), **Gem** (Ctrl+S), **Gem som…** (Ctrl+Shift+S), Versionshistorik…, **Omdøb…** (puts the cursor in the name field in the top bar, text selected; Enter keeps, Esc cancels), Eksportér fil…, Importér fil…, Del link (Ctrl+Shift+L), Print / PDF… (Ctrl+P), A4 stående/liggende, Prisjusteringer…, Oversigt.
 - **Naming saves (2026-11-25):** typing a name for a proposal that is not a project yet saves it as a new project at once (*Gemt: Hansen*); a project of the same name is kept, not replaced. Renaming a project that is open only marks it as changed (the dot).
@@ -328,12 +328,13 @@ Prices and discounts for one proposal, without touching the catalogue: **Filer �
 
 ## Share links
 
-Sharing with colleagues and with customers is kept apart (2026-11-25), in Filer and in the right-click menu, each with its own group, dialog and colour:
+Sharing with colleagues and with customers is kept apart (2026-11-25):
 
-- **Kolleger → Del med kollega…** (Ctrl+Shift+L; blue): a link that opens an editable copy of the canvas in HiFi Planner, to carry on with. The dialog says never to send it to a customer.
-- **Kunde → Send til kunden…** (green): the customer's link, read only on any phone without logging in, the same page as the QR code on the printed cover; with *Se kundens side* and *Print med QR-kode…*. **Kunde → Print / PDF…** sits in the same group.
+- **Colleagues: Filer → Kolleger → Del med kollega…** (Ctrl+Shift+L, also in the right-click menu; blue): a link that opens an editable copy of the canvas in HiFi Planner, to carry on with. The dialog says never to send it to a customer.
+- **The customer: the orange Send til kunden button** in the top bar (also Ctrl+P and F4), and **only there**: one dialog with a green *Til kunden* banner, the customer's name, *Forside med total og QR-kode* and *Vis relaterede produkter*, the price warnings, and two ways side by side: **Print eller PDF** (prints the A4 pages with the cover first; *Gem som PDF* to email it) and **Link til kunden** (*Kopiér kundelink* for an email or a text message, *Se den* to look at it first; the same page as the QR code). *Ordrelinjer (CSV)* for the till is in the foot. Filer and the right-click menu no longer have print or customer links.
+- **Always light:** the customer's page and every printout / PDF are in the light theme, also when the planner is in dark mode.
 
-The whole proposal is inside the link, so nothing is uploaded and later changes need a new link. `Pn.shareColleague`, `Pn.shareCustomer` in `js/panels.js`.
+The whole proposal is inside the link, so nothing is uploaded and later changes need a new link. `Pn.shareColleague` in `js/panels.js`, `dialog` in `js/cover.js`.
 
 ## I/O standard: ports, connectors and cables
 

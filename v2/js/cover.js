@@ -77,9 +77,13 @@
     return { qrTooBig: true, url: full, link };
   }
 
-  /* ---------- print dialog ---------- */
+  /* ---------- Send til kunden (2026-11-25) ----------
+     The one place for everything that goes to the customer: the top bar's orange "Send til kunden" button (also Ctrl+P and F4).
+     The customer's name and what to include, then print / save as PDF (with the cover and its QR code), or the customer's link to
+     copy into an email or a text message, or to look at first. Order lines (CSV) for the till sit in the foot. */
   function dialog() {
     const d = store.doc;
+    if (!d.items.length) return HP.toast(t('The canvas is empty. Add something first.', 'Lærredet er tomt. Tilføj noget først.'), { kind: 'warn' });
     const name = h('input', { placeholder: t('e.g. Mette and Lars Jensen', 'f.eks. Mette og Lars Jensen'), value: (d.cv && d.cv.c) || '', autofocus: true,
       onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); go(); } } });
     const withCover = h('input', { type: 'checkbox', checked: LS.get('cover', true) });
@@ -97,18 +101,36 @@
       if (!withCover.checked) return C().print();
       C().print({ cover: build(await qrFor()) });
     };
-    const close = HP.modal({ title: t('Print proposal', 'Print tilbud'), size: 'sm', body: h('.form', null,
+    // the customer's link: with the name and choices above in it
+    const copyLink = async () => {
+      st(); await HP.checkCatalogue(true);
+      const url = await HP.share.customerUrl();
+      try { await navigator.clipboard.writeText(url); } catch (e) { prompt(t('Copy the link:', 'Kopiér linket:'), url); }
+      HP.stat('Kundelink kopieret'); HP.toast(t('Customer link copied: paste it into an email or a text message', 'Kundelink kopieret: sæt det ind i en mail eller en sms'), { kind: 'ok' });
+    };
+    const preview = async () => { const w = window.open('', '_blank'); st(); const url = await HP.share.customerUrl(); if (w) w.location.href = url; else location.href = url; };
+    const drafts = d.items.some((i) => i.kind === 'product' && HP.catalog.draft.products[i.pid]);
+    const close = HP.modal({ title: t('Send to the customer', 'Send til kunden'), size: 'md', body: h('.form.send', null,
+      h('.share-who.customer', null, icon('user', 15), h('b', null, t('For the customer', 'Til kunden')), h('span', null, t('read only, on any phone, no login', 'kun visning, på enhver mobil, uden login'))),
       h('label', null, t('Customer', 'Kunde'), name),
       h('label.check', null, withCover, h('span', null, t('Cover page with the total and a QR code for the customer', 'Forside med total og QR-kode til kunden'))),
       h('label.check', null, withRel, h('span', null, t('Show related products on the customer’s page', 'Vis relaterede produkter på kundens side'))),
-      h('p.muted', null, t('The QR code opens the proposal on the customer’s phone: read only, no login.', 'QR-koden åbner tilbuddet på kundens mobil: kun til visning, uden login.')),
       // old prices: campaign prices are off, and the seller should check the till
       HP.pricesGuarded() ? h('.note-box.warn', null, icon('warn', 15), h('span', null, t('The prices are {} old (read {}), so campaign prices are not shown. Check the prices in the till before you promise them.', 'Priserne er {} gamle (hentet {}), så kampagnepriser vises ikke. Tjek priserne i kassen, før du lover dem.').replace('{}', HP.pricesAgeText()).replace('{}', HP.pricesStamp()))) : null,
-      // a reminder before printing: the proposal has price adjustments (e.g. a colleague's link or an older proposal)
+      // a reminder: the proposal has price adjustments (e.g. a colleague's link or an older proposal)
       (() => { const ps = HP.panels.priceState(); return ps && ps.active ? h('.pp-note', null, icon('tag', 14), h('span', null, t('This proposal has price adjustments: ', 'Tilbuddet har prisjusteringer: '), h('b', null, ps.text), t(' in all', ' i alt')),
-        h('button.linkbtn', { onclick: () => { close(); HP.panels.projectPrices(); } }, t('Edit', 'Rediger'))) : null; })()),
+        h('button.linkbtn', { onclick: () => { close(); HP.panels.projectPrices(); } }, t('Edit', 'Rediger'))) : null; })(),
+      drafts ? h('.note-box', null, icon('warn', 15), t('This canvas uses products you have not published yet. They will show as unknown for others until you publish.', 'Lærredet bruger produkter, du ikke har udgivet endnu. De vises som ukendte for andre, indtil du udgiver.')) : null,
+      h('.send-ways', null,
+        h('.send-way', null, h('b', null, icon('print', 15), t('Print or PDF', 'Print eller PDF')),
+          h('p.muted', null, t('Prints what is inside the A4 frames, with the cover first. Choose "Save as PDF" in the print dialog to email it.', 'Printer det, der ligger inden for A4-rammerne, med forsiden først. Vælg "Gem som PDF" i printdialogen for at maile den.')),
+          h('button.btn.primary', { onclick: go }, icon('print', 14), t('Print / PDF', 'Print / PDF'))),
+        h('.send-way', null, h('b', null, icon('link', 15), t('Link for the customer', 'Link til kunden')),
+          h('p.muted', null, t('The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.', 'Tilbuddet på kundens mobil: tegningen, varerne og priserne, og hvordan du kontaktes. Den samme side som QR-koden.')),
+          h('.row', null, h('button.btn.primary', { onclick: copyLink }, icon('copy', 14), t('Copy customer link', 'Kopiér kundelink')),
+            h('button.btn', { onclick: preview }, icon('eye', 14), t('See it', 'Se den')))))),
       foot: [h('button.btn', { onclick: () => { st(); csv(); HP.stat('Ordrelinjer (CSV)'); } }, icon('download', 14), t('Order lines (CSV)', 'Ordrelinjer (CSV)')), h('.spacer'),
-        h('button.btn', { onclick: () => close() }, t('Cancel', 'Annuller')), h('button.btn.primary', { onclick: go }, icon('print', 14), t('Print', 'Print'))] });
+        h('button.btn', { onclick: () => close() }, t('Close', 'Luk'))] });
   }
 
   /* ---------- order lines ---------- */
@@ -132,6 +154,7 @@
 
   /* ---------- customer view (#t=) ---------- */
   async function viewer(payload) {
+    document.documentElement.dataset.theme = 'light'; // the customer always sees the light version, whatever the browser last used (not saved)
     document.body.classList.add('viewing');
     HP.useLang(new URLSearchParams(location.search).get('l') || 'da'); // the seller's language when the link was made (?l=), else Danish; never the phone's
     const host = h('#viewhost'); document.body.append(host); // the canvas is drawn off screen, only its pages are shown

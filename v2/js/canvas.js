@@ -1537,8 +1537,6 @@
     M.push('sep');
     add(t('Save', 'Gem'), 'Ctrl+S', 'download', HP.panels.save);
     add(t('Share with a colleague…', 'Del med kollega…'), 'Ctrl+Shift+L', 'users', HP.panels.shareColleague);
-    add(t('Send to the customer…', 'Send til kunden…'), '', 'send', HP.panels.shareCustomer);
-    add(t('Print / PDF', 'Print / PDF'), 'Ctrl+P', 'print', () => HP.cover.dialog());
     add(t('Clear canvas', 'Ryd lærredet'), '', 'trash', C.clearCanvas, { danger: true, disabled: !d.items.length });
     HP.menu(x, y, M);
   }
@@ -1687,6 +1685,8 @@
     const d = store.doc, total = pagesW();
     const outside = d.items.filter((it) => { const g = measure(it), cx = it.x + g.w / 2, cy = it.y + g.h / 2; if (cx < 0 || cx > total || cy < 0) return true; for (let i = 0; i < d.pages; i++) { const r = pageRect(i); if (cx <= r.x + r.w + GAP / 2) return cy > r.h; } return false; }).length;
     if (outside) HP.toast(t(outside + ' item(s) are outside the A4 pages and will not be printed.', outside + ' element(er) ligger uden for A4-siderne og bliver ikke printet.'), { kind: 'warn', ms: 7000 });
+    // printed and saved as PDF always in the light theme, also when the planner is in dark mode (back afterwards)
+    const theme = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
     const { sheets, mm } = C.sheets();
     const root = h('#print-root');
     if (opts && opts.cover) root.append(h('.sheet.cover-sheet.port', { style: { width: mm[0] + 'mm', height: mm[1] + 'mm' } }, opts.cover)); // the cover: always portrait
@@ -1695,7 +1695,7 @@
     const st = h('style', { textContent: '@page{size:A4 ' + (ori(0) === 'portrait' ? 'portrait' : 'landscape') + ';margin:0}@page port{size:A4 portrait;margin:0}@page land{size:A4 landscape;margin:0}#print-root .sheet.port{page:port}#print-root .sheet.land{page:land}' });
     document.head.append(st); document.body.append(root); document.body.classList.add('printing');
     if (opts && opts.cover && HP.cover) HP.cover.paginate(root); // a long price list continues on more cover sheets
-    const done = () => { root.remove(); st.remove(); document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };
+    const done = () => { root.remove(); st.remove(); document.body.classList.remove('printing'); document.documentElement.dataset.theme = theme; window.removeEventListener('afterprint', done); };
     window.addEventListener('afterprint', done);
     if (C.printHook) return C.printHook(done);
     setTimeout(() => window.print(), 150);

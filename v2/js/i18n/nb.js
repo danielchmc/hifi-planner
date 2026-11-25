@@ -952,5 +952,16 @@
   "Landscape": "Liggende",
   "Portrait": "Stående",
   "Page {} is now ": "Side {} er nå ",
-  "All pages ": "Alle sider "
+  "All pages ": "Alle sider ",
+  "Send to the customer: print / PDF or the customer's link (Ctrl+P)": "Send til kunden: utskrift / PDF eller kundens lenke (Ctrl+P)",
+  "Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer's link. Choose \"Save as PDF\" in the print dialog to email the proposal.": "Send til kunden (den oransje knappen, Ctrl+P) har alt til kunden: skriv ut eller lagre som PDF med forside og QR-kode, og kundens lenke. Velg \"Lagre som PDF\" i utskriftsdialogen for å sende tilbudet på e-post.",
+  "Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.": "Fil → Del med kollega kopierer en lenke som åpner en redigerbar kopi av lerretet på enhver PC. Send aldri en kollegalenke til en kunde: alt til kunden går gjennom Send til kunden.",
+  "Copy the link:": "Kopier lenken:",
+  "Customer link copied: paste it into an email or a text message": "Kundelenke kopiert: lim den inn i en e-post eller en SMS",
+  "Print or PDF": "Utskrift eller PDF",
+  "Prints what is inside the A4 frames, with the cover first. Choose \"Save as PDF\" in the print dialog to email it.": "Skriver ut det som ligger innenfor A4-rammene, med forsiden først. Velg \"Lagre som PDF\" i utskriftsdialogen for å sende den på e-post.",
+  "Link for the customer": "Lenke til kunden",
+  "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Tilbudet på kundens mobil: tegningen, varene og prisene, og hvordan du kan kontaktes. Den samme siden som QR-koden.",
+  "See it": "Se den",
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alt til kunden på ett sted: skriv ut eller lagre som PDF (med forside og QR-kode), eller kopier kundens lenke til en e-post eller en SMS."
 };

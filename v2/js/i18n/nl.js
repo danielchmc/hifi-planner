@@ -952,5 +952,16 @@
   "Landscape": "Liggend",
   "Portrait": "Staand",
   "Page {} is now ": "Pagina {} is nu ",
-  "All pages ": "Alle pagina's "
+  "All pages ": "Alle pagina's ",
+  "Send to the customer: print / PDF or the customer's link (Ctrl+P)": "Naar de klant sturen: afdrukken / PDF of de link voor de klant (Ctrl+P)",
+  "Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer's link. Choose \"Save as PDF\" in the print dialog to email the proposal.": "Naar de klant sturen (de oranje knop, Ctrl+P) heeft alles voor de klant: afdrukken of opslaan als PDF met voorblad en QR-code, en de link voor de klant. Kies \"Opslaan als PDF\" in het afdrukvenster om de offerte te mailen.",
+  "Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.": "Bestand → Delen met collega kopieert een link die een bewerkbare kopie van dit canvas opent op elke pc. Stuur nooit een collegalink naar een klant: alles voor de klant gaat via Naar de klant sturen.",
+  "Copy the link:": "Kopieer de link:",
+  "Customer link copied: paste it into an email or a text message": "Klantlink gekopieerd: plak hem in een e-mail of sms",
+  "Print or PDF": "Afdrukken of PDF",
+  "Prints what is inside the A4 frames, with the cover first. Choose \"Save as PDF\" in the print dialog to email it.": "Drukt af wat binnen de A4-kaders staat, met het voorblad eerst. Kies \"Opslaan als PDF\" in het afdrukvenster om het te mailen.",
+  "Link for the customer": "Link voor de klant",
+  "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "De offerte op de telefoon van de klant: de tekening, producten en prijzen, en hoe u bereikbaar bent. Dezelfde pagina als de QR-code.",
+  "See it": "Bekijken",
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles voor de klant op één plek: afdrukken of opslaan als PDF (met voorblad en QR-code), of de link voor de klant kopiëren voor een e-mail of sms."
 };

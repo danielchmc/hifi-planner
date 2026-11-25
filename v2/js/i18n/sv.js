@@ -952,5 +952,16 @@
   "Landscape": "Liggande",
   "Portrait": "Stående",
   "Page {} is now ": "Sida {} är nu ",
-  "All pages ": "Alla sidor "
+  "All pages ": "Alla sidor ",
+  "Send to the customer: print / PDF or the customer's link (Ctrl+P)": "Skicka till kunden: utskrift / PDF eller kundens länk (Ctrl+P)",
+  "Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer's link. Choose \"Save as PDF\" in the print dialog to email the proposal.": "Skicka till kunden (den orange knappen, Ctrl+P) har allt till kunden: skriv ut eller spara som PDF med framsida och QR-kod, och kundens länk. Välj \"Spara som PDF\" i utskriftsdialogen för att mejla offerten.",
+  "Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.": "Arkiv → Dela med kollega kopierar en länk som öppnar en redigerbar kopia av arbetsytan på vilken dator som helst. Skicka aldrig en kollegalänk till en kund: allt till kunden går via Skicka till kunden.",
+  "Copy the link:": "Kopiera länken:",
+  "Customer link copied: paste it into an email or a text message": "Kundlänk kopierad: klistra in den i ett mejl eller ett sms",
+  "Print or PDF": "Utskrift eller PDF",
+  "Prints what is inside the A4 frames, with the cover first. Choose \"Save as PDF\" in the print dialog to email it.": "Skriver ut det som ligger inom A4-ramarna, med framsidan först. Välj \"Spara som PDF\" i utskriftsdialogen för att mejla den.",
+  "Link for the customer": "Länk till kunden",
+  "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Offerten på kundens mobil: ritningen, varorna och priserna, och hur du nås. Samma sida som QR-koden.",
+  "See it": "Se den",
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Allt till kunden på ett ställe: skriv ut eller spara som PDF (med framsida och QR-kod), eller kopiera kundens länk till ett mejl eller ett sms."
 };

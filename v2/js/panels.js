@@ -326,10 +326,7 @@
       // colleagues and customers in groups of their own (see Pn.shareColleague / Pn.shareCustomer)
       { head: t('Colleagues', 'Kolleger') },
       { label: t('Share with a colleague…', 'Del med kollega…'), icon: 'users', key: 'Ctrl+Shift+L', fn: Pn.shareColleague },
-      'sep',
-      { head: t('Customer', 'Kunde') },
-      { label: t('Send to the customer…', 'Send til kunden…'), icon: 'send', fn: Pn.shareCustomer },
-      { label: t('Print / PDF…', 'Print / PDF…'), icon: 'print', key: 'Ctrl+P', fn: () => HP.cover.dialog() },
+      // everything for the customer (print / PDF, the customer's link) is in one place only: the orange Send til kunden button
       'sep',
       { label: t('All pages ', 'Alle sider ') + (C().pageOrient(0) === 'portrait' ? t('landscape', 'liggende') : t('portrait', 'stående')), icon: 'rotate', note: d.po ? t('now mixed', 'nu blandet') : t('now ', 'nu ') + (C().pageOrient(0) === 'portrait' ? t('portrait', 'stående') : t('landscape', 'liggende')), fn: flipPage },
       'sep',
@@ -437,7 +434,7 @@
     const doneN = h('span.badge'), done = h('button.tb-btn#tb-complete', { onclick: () => HP.complete.open() }, icon('plus', 15), h('span.tl', null, t('Related products', 'Relaterede produkter')), doneN);
     const doneUpd = () => { const n = HP.complete.missing(); doneN.textContent = n || ''; doneN.hidden = !n; done.title = n ? n + t(' connections without a cable: related products', ' forbindelser uden kabel: relaterede produkter') : t('Related products: cables and accessories', 'Relaterede produkter: kabler og tilbehør'); };
     HP.on('doc', doneUpd); setTimeout(doneUpd);
-    const print = h('button.tb-btn.primary#tb-print', { title: t('Print / PDF (Ctrl+P)', 'Print / PDF (Ctrl+P)'), onclick: () => HP.cover.dialog() }, icon('print', 15), h('span.tl', null, t('Print / PDF', 'Print / PDF')));
+    const print = h('button.tb-btn.primary#tb-print', { title: t('Send to the customer: print / PDF or the customer\'s link (Ctrl+P)', 'Send til kunden: print / PDF eller kundens link (Ctrl+P)'), onclick: () => HP.cover.dialog() }, icon('send', 15), h('span.tl', null, t('Send to the customer', 'Send til kunden')));
     const adminN = h('i.tb-dot'), admin = h('button.tb-i.tb-menu#tb-admin', { 'aria-haspopup': 'menu', title: t('Admin: product editor, statistics, publish', 'Admin: produkt-editor, statistik, udgiv'), onclick: (e) => dropAt(e.currentTarget, adminItems(), true) }, icon('shield', 17), h('span.tl', null, 'Admin'), adminN, icon('down', 11));
     const avIni = h('b'), avatar = h('span.tb-av', null, avIni), seller = h('button.tb-i.tb-menu#tb-seller', { 'aria-haspopup': 'menu', onclick: (e) => dropAt(e.currentTarget, [...sellerItems(), ...userItems().filter((x) => !x.head)], true) }, avatar, icon('down', 11));
     const file = dropBtn('tb-file', t('File', 'Filer'), fileItems, { tip: t('The proposal: new, projects, share, print, price adjustments', 'Tilbuddet: nyt, projekter, del, print, prisjusteringer') });
@@ -964,17 +961,7 @@
         ...shareNotes(false)] });
   };
   Pn.share = Pn.shareColleague; // the old name (Ctrl+Shift+L, the canvas menu)
-  Pn.shareCustomer = async () => {
-    if (emptyCanvas()) return;
-    const url = await HP.share.customerUrl();
-    const close = HP.modal({ title: t('Send to the customer', 'Send til kunden'), size: 'md',
-      body: [h('.share-who.customer', null, icon('user', 15), h('b', null, t('For the customer', 'Til kunden')), h('span', null, t('read only, on any phone, no login', 'kun visning, på enhver mobil, uden login'))),
-        linkRow(url, t('Copy customer link', 'Kopiér kundelink'), () => { HP.stat('Kundelink kopieret'); HP.toast(t('Customer link copied', 'Kundelink kopieret'), { kind: 'ok' }); }),
-        h('p.muted', null, t('The customer sees the proposal with the drawing, the products and prices with links to hifiklubben.dk, and how to reach you. It is the same page as the QR code on the printed cover. Paste the link into an email or a text message.', 'Kunden ser tilbuddet med tegningen, produkterne og priserne med links til hifiklubben.dk, og hvordan du kan kontaktes. Det er den samme side som QR-koden på den printede forside. Sæt linket ind i en mail eller en sms.')),
-        h('.row', null, h('a.btn', { href: url, target: '_blank', rel: 'noopener' }, icon('eye', 14), t('See the customer\'s page', 'Se kundens side')),
-          h('button.btn', { onclick: () => { close(); HP.cover.dialog(); } }, icon('print', 14), t('Print with QR code…', 'Print med QR-kode…'))),
-        ...shareNotes(true)] });
-  };
+  Pn.shareCustomer = () => HP.cover.dialog(); // everything for the customer is in the Send til kunden dialog (js/cover.js)
 
   /* ---------- help ---------- */
   Pn.help = () => {
@@ -1003,7 +990,7 @@
             li(t('The round badges on a card show Bluetooth and WiFi. Variants: colours are dots on the image (one click to switch); sizes, models and lengths are a label on the image that lists them all (also Alt+C). The price list follows the chosen variant.', 'De runde mærker på et kort viser Bluetooth og WiFi. Varianter: farver er prikker på billedet (ét klik for at skifte); størrelser, modeller og længder er en etiket på billedet, der viser dem alle (også Alt+C). Prislisten følger den valgte variant.')))),
           h('div', null, h('h3', null, t('Proposal & print', 'Tilbud & print')), h('ul', null,
             li(t('The frame on the canvas is an A4 page. What is inside the frame is what gets printed. Add pages with the + on the right.', 'Rammen på lærredet er en A4-side. Det, der ligger inden for rammen, bliver printet. Tilføj sider med + til højre.')),
-            li(t('Print / PDF opens the print dialog. Choose "Save as PDF" to email the proposal.', 'Print / PDF åbner printdialogen. Vælg "Gem som PDF" for at maile tilbuddet.')),
+            li(t('Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer\'s link. Choose "Save as PDF" in the print dialog to email the proposal.', 'Send til kunden (den orange knap, Ctrl+P) har alt til kunden: print eller gem som PDF med forside og QR-kode, og kundens link. Vælg "Gem som PDF" i printdialogen for at maile tilbuddet.')),
             li(t('Price list adds a movable list with all products, cables and the total.', 'Prisliste tilføjer en flytbar liste med alle produkter, kabler og total.')),
             li(t('Text adds a note. Drag the top edge to move it, the corner to resize.', 'Tekst tilføjer en note. Træk i den øverste kant for at flytte, hjørnet for at ændre størrelse.')),
             li(t('Cards − / + makes all product cards smaller or larger relative to the A4 page, so bigger systems fit on one page.', 'Kort − / + gør alle produktkort mindre eller større i forhold til A4-siden, så større systemer kan være på én side.')),
@@ -1013,7 +1000,7 @@
             li(t('CI mode is for floor plans. Upload a plan (JPG, PNG or PDF), then click a product and click on the plan once per speaker: each product gets a lettered mark (A, B, C…). Esc or right-click stops placing. The legend lists every mark with its quantity.', 'CI-tilstand er til plantegninger. Upload en plan (JPG, PNG eller PDF), klik på et produkt, og klik på planen én gang pr. højtaler: hvert produkt får et mærke med bogstav (A, B, C…). Esc eller højreklik stopper placeringen. Signaturforklaringen viser alle mærker med antal.')),
             li(t('The bar in CI mode also has symbols for rack, router, TV, listening position, volume control and cable outlet. Switch CI mode off to add normal product cards, for example a wiring diagram on page 2; cards show the same letter as their marks. Room gives a subtotal per room in the price list; Scale and Cable give cable lengths in metres and add the cable to the prices.', 'Bjælken i CI-tilstand har også symboler for rack, router, TV, lytteposition, volumenkontrol og kabeludtag. Slå CI-tilstand fra for at tilføje almindelige produktkort, f.eks. et tilslutningsdiagram på side 2; kortene viser samme bogstav som deres mærker. Rum giver en subtotal pr. rum i prislisten; Målestok og Kabel giver kabellængder i meter og lægger kablet til priserne.')),
             li(t('Projects saves proposals in this browser and exports them as files.', 'Projekter gemmer tilbud i denne browser og eksporterer dem som filer.')),
-            li(t('Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Filer → Send to the customer gives the customer\'s read-only link, the same page as the QR code on the printed cover. Never send a colleague link to a customer.', 'Filer → Del med kollega kopierer et link, der åbner en kopi af lærredet, som kan redigeres, på enhver PC. Filer → Send til kunden giver kundens link, kun til visning, den samme side som QR-koden på den printede forside. Send aldrig et kollegalink til en kunde.'))))),
+            li(t('Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.', 'Filer → Del med kollega kopierer et link, der åbner en kopi af lærredet, som kan redigeres, på enhver PC. Send aldrig et kollegalink til en kunde: alt til kunden går gennem Send til kunden.'))))),
         h('h3', null, t('Search', 'Søgning')),
         h('p', null, t('Search by model, brand, SKU, category, port name (e.g. "HDMI eARC", "PHONO IN") or "bluetooth" / "wifi". Combine words with spaces. Use "Peripherals" or "Stand-in" for generic stand-in products.', 'Søg på model, brand, SKU, kategori, portnavn (fx "HDMI eARC", "PHONO IN") eller "bluetooth" / "wifi". Kombinér ord med mellemrum. Brug "Peripherals" eller "Stand-in" for generiske stand-in-produkter.')),
         h('h3', null, t('Keyboard', 'Tastatur')),

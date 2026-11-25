@@ -952,5 +952,16 @@
   "Landscape": "Vaaka",
   "Portrait": "Pysty",
   "Page {} is now ": "Sivu {} on nyt ",
-  "All pages ": "Kaikki sivut "
+  "All pages ": "Kaikki sivut ",
+  "Send to the customer: print / PDF or the customer's link (Ctrl+P)": "Lähetä asiakkaalle: tulostus / PDF tai asiakkaan linkki (Ctrl+P)",
+  "Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer's link. Choose \"Save as PDF\" in the print dialog to email the proposal.": "Lähetä asiakkaalle (oranssi painike, Ctrl+P) sisältää kaiken asiakkaalle: tulosta tai tallenna PDF:ksi kansilehden ja QR-koodin kanssa, sekä asiakkaan linkki. Valitse tulostusikkunasta \"Tallenna PDF-muodossa\" lähettääksesi tarjouksen sähköpostilla.",
+  "Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.": "Tiedosto → Jaa kollegalle kopioi linkin, joka avaa muokattavan kopion piirtoalueesta millä tahansa tietokoneella. Älä koskaan lähetä kollegalinkkiä asiakkaalle: kaikki asiakkaalle menee kohdan Lähetä asiakkaalle kautta.",
+  "Copy the link:": "Kopioi linkki:",
+  "Customer link copied: paste it into an email or a text message": "Asiakaslinkki kopioitu: liitä se sähköpostiin tai tekstiviestiin",
+  "Print or PDF": "Tulostus tai PDF",
+  "Prints what is inside the A4 frames, with the cover first. Choose \"Save as PDF\" in the print dialog to email it.": "Tulostaa A4-kehysten sisällön, kansilehti ensin. Valitse tulostusikkunasta \"Tallenna PDF-muodossa\" lähettääksesi sen sähköpostilla.",
+  "Link for the customer": "Linkki asiakkaalle",
+  "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Tarjous asiakkaan puhelimessa: piirros, tuotteet ja hinnat sekä yhteystietosi. Sama sivu kuin QR-koodi.",
+  "See it": "Katso",
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Kaikki asiakkaalle yhdessä paikassa: tulosta tai tallenna PDF:ksi (kansilehdellä ja QR-koodilla), tai kopioi asiakkaan linkki sähköpostiin tai tekstiviestiin."
 };

@@ -952,5 +952,16 @@
   "Landscape": "Quer",
   "Portrait": "Hoch",
   "Page {} is now ": "Seite {} ist jetzt ",
-  "All pages ": "Alle Seiten "
+  "All pages ": "Alle Seiten ",
+  "Send to the customer: print / PDF or the customer's link (Ctrl+P)": "An den Kunden senden: Drucken / PDF oder Kundenlink (Strg+P)",
+  "Send to the customer (the orange button, Ctrl+P) has everything for the customer: print or save as PDF with the cover and QR code, and the customer's link. Choose \"Save as PDF\" in the print dialog to email the proposal.": "An den Kunden senden (der orange Knopf, Strg+P) hat alles für den Kunden: drucken oder als PDF speichern mit Deckblatt und QR-Code, und den Kundenlink. Wählen Sie „Als PDF speichern\" im Druckdialog, um das Angebot zu mailen.",
+  "Filer → Share with a colleague copies a link that opens an editable copy of this canvas on any PC. Never send a colleague link to a customer: anything for the customer goes through Send to the customer.": "Datei → Mit Kollegen teilen kopiert einen Link, der eine bearbeitbare Kopie dieser Arbeitsfläche auf jedem PC öffnet. Senden Sie nie einen Kollegenlink an einen Kunden: Alles für den Kunden geht über An den Kunden senden.",
+  "Copy the link:": "Link kopieren:",
+  "Customer link copied: paste it into an email or a text message": "Kundenlink kopiert: in eine E-Mail oder SMS einfügen",
+  "Print or PDF": "Drucken oder PDF",
+  "Prints what is inside the A4 frames, with the cover first. Choose \"Save as PDF\" in the print dialog to email it.": "Druckt, was in den A4-Rahmen liegt, mit dem Deckblatt zuerst. Wählen Sie „Als PDF speichern\" im Druckdialog, um es zu mailen.",
+  "Link for the customer": "Link für den Kunden",
+  "The proposal on the customer’s phone: the drawing, products and prices, and how to reach you. The same page as the QR code.": "Das Angebot auf dem Handy des Kunden: Zeichnung, Produkte und Preise, und wie Sie erreichbar sind. Dieselbe Seite wie der QR-Code.",
+  "See it": "Ansehen",
+  "Everything for the customer in one place: print or save as PDF (with a cover and a QR code), or copy the customer's link for an email or a text message.": "Alles für den Kunden an einem Ort: drucken oder als PDF speichern (mit Deckblatt und QR-Code), oder den Kundenlink für eine E-Mail oder SMS kopieren."
 };
