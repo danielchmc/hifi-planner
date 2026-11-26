@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25",
+ "built": "2026-11-26",
  "source": "mirror/ (hifiklubben.dk) + tools/taxonomy.js",
  "categories": [
   {
@@ -8,7 +8,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 215,
+   "all": 226,
    "bundles": 0
   },
   {
@@ -16,8 +16,8 @@
    "title": "Møbler",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 4,
-   "all": 4,
+   "products": 10,
+   "all": 10,
    "bundles": 18
   },
   {
@@ -26,7 +26,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 270,
+   "all": 271,
    "bundles": 0
   },
   {
@@ -250,8 +250,8 @@
    "title": "Kompakt højtaler",
    "parent": "/hojtalere/",
    "website": true,
-   "products": 45,
-   "all": 45,
+   "products": 46,
+   "all": 46,
    "bundles": 6
   },
   {
@@ -412,8 +412,8 @@
    "title": "Møbel tilbehør",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 31,
-   "all": 31,
+   "products": 34,
+   "all": 34,
    "bundles": 0
   },
   {
@@ -421,8 +421,8 @@
    "title": "Andet tilbehør",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 26,
-   "all": 26,
+   "products": 28,
+   "all": 28,
    "bundles": 0
   },
   {
@@ -10719,6 +10719,22 @@
      }
     },
     {
+     "sku": "ARGFENRISA5WA",
+     "label": "Valnød",
+     "price": 2699,
+     "was": 3299,
+     "colorKey": "Wood",
+     "ean": "5706957019021",
+     "url": "/argon-audio-fenris-a5-kompakt-hoejtaler--aktive/argfenrisa5wa/",
+     "img": "hk:4de90c8e-00aa-49c2-8656-02d0effe0dfb",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "7,2",
+      "Vægt emballage (kg)": "8,4",
+      "Mål (emballage)": "29 x 36 x 46 cm (bredde x højde x dybde)"
+     }
+    },
+    {
      "sku": "ARGFENRISA5ASH",
      "label": "Ask",
      "price": 2699,
@@ -10733,22 +10749,6 @@
       "Vægt emballage (kg)": "8,4",
       "Mål (emballage)": "29 x 36 x 46 cm (bredde x højde x dybde)",
       "Mål (produkt)": "17 x 28 x 22 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "ARGFENRISA5WA",
-     "label": "Valnød",
-     "price": 2699,
-     "was": 3299,
-     "colorKey": "Wood",
-     "ean": "5706957019021",
-     "url": "/argon-audio-fenris-a5-kompakt-hoejtaler--aktive/argfenrisa5wa/",
-     "img": "hk:4de90c8e-00aa-49c2-8656-02d0effe0dfb",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "7,2",
-      "Vægt emballage (kg)": "8,4",
-      "Mål (emballage)": "29 x 36 x 46 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -11789,22 +11789,6 @@
      }
     },
     {
-     "sku": "ARGFORTEA5WIFIWA",
-     "label": "Valnød",
-     "price": 6499,
-     "colorKey": "Wood",
-     "ean": "5706957014811",
-     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifiwa/",
-     "img": "hk:2a8536d2-98b5-456d-b229-93d384da0d10",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "10",
-      "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "ARGFORTEA5WIFIBK",
      "label": "Sort",
      "price": 6499,
@@ -11817,6 +11801,22 @@
       "Vægt (kg)": "9",
       "Vægt emballage (kg)": "10",
       "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGFORTEA5WIFIWA",
+     "label": "Valnød",
+     "price": 6499,
+     "colorKey": "Wood",
+     "ean": "5706957014811",
+     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifiwa/",
+     "img": "hk:2a8536d2-98b5-456d-b229-93d384da0d10",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "9",
+      "Vægt emballage (kg)": "10",
+      "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
       "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
      }
     },
@@ -13587,7 +13587,7 @@
     "da": "Højtalerkabel"
    },
    "cat": "/kabler/hojtaler-kabel/",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -15189,7 +15189,6 @@
      "sku": "AUDLCD5S",
      "label": "Sort",
      "price": 37990,
-     "was": 39995,
      "colorKey": "Black",
      "ean": "819343015783",
      "url": "/audeze-lcd-5s-head-fi-hoeretelefoner/audlcd5s/",
@@ -27803,6 +27802,62 @@
    "read": "2026-11-23"
   },
   {
+   "sku": "BWISW4",
+   "brand": "Bowers & Wilkins",
+   "model": "ISW-4",
+   "type": {
+    "key": "PassiveSubwoofer",
+    "da": "Passiv subwoofer"
+   },
+   "cat": "/hojtalere/subwoofer/",
+   "url": "/bowers--wilkins-isw-4-passiv-subwoofer/bwisw4wh/",
+   "kind": "subwoofer",
+   "scope": "diagram",
+   "facets": {
+    "active": false,
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "BWISW4WH",
+     "label": "Hvid",
+     "price": 9499,
+     "colorKey": "White",
+     "ean": "0714346308989",
+     "url": "/bowers--wilkins-isw-4-passiv-subwoofer/bwisw4wh/",
+     "img": "hk:618c46bb-f810-41df-a347-df1f9a0005a9",
+     "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "8",
+      "Vægt emballage (kg)": "9",
+      "Mål (emballage)": "64 x 30 x 42 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Bas størrelse": "8\""
+   },
+   "rel": {
+    "acc": [
+     "BWBBISW4X",
+     "ESSCL1SCX",
+     "ESSCL1SCPROX",
+     "AQSLIPDB14-2SCX"
+    ],
+    "alt": [
+     "BWISW3",
+     "BWISW6",
+     "BWISW8",
+     "DALIPHANTOMSUB100"
+    ],
+    "rec": [
+     "BWCDA4D",
+     "BWCDA2HD"
+    ]
+   },
+   "read": "2026-11-23"
+  },
+  {
    "sku": "BWISW6",
    "brand": "Bowers & Wilkins",
    "model": "ISW6",
@@ -31392,7 +31447,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33348,23 +33403,6 @@
       "Mål (emballage)": "29,5 x 36 x 21,5 cm (bredde x højde x dybde)",
       "Mål (produkt)": "16,2 x 27,4 x 23,4 cm (bredde x højde x dybde)"
      }
-    },
-    {
-     "sku": "DALIOBERON1WA",
-     "label": "Mørk valnød",
-     "price": 2498,
-     "colorKey": "Wood",
-     "hex": "#6b463c",
-     "ean": "5703120109602",
-     "url": "/dali-oberon-1-kompakt-hoejtaler/dalioberon1wa/",
-     "img": "hk:39869761-f551-435b-b7bc-f59b298dddf6",
-     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
-     "specs": {
-      "Vægt (kg)": "4,83",
-      "Vægt emballage (kg)": "5,33",
-      "Mål (emballage)": "29,5 x 36 x 21,5 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,2 x 27,4 x 23,4 cm (bredde x højde x dybde)"
-     }
     }
    ],
    "specs": {
@@ -33650,6 +33688,90 @@
      "DALISUBE9F",
      "DALISUBE12F",
      "ARGMALMOSUB10X"
+    ]
+   },
+   "read": "2026-11-23"
+  },
+  {
+   "sku": "DALIOBERONONWALLC",
+   "brand": "DALI",
+   "model": "OBERON ON-WALL C",
+   "type": {
+    "key": "CompactSpeakerActive",
+    "da": "Kompakt højtaler – Aktive"
+   },
+   "cat": "/hojtalere/kompakt-hojtaler/",
+   "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
+   "kind": "speaker",
+   "scope": "diagram",
+   "facets": {
+    "active": true,
+    "mount": "stand",
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "DALIOBERONONWALLCWH",
+     "label": "Hvid mat",
+     "price": 4999,
+     "colorKey": "White",
+     "ean": "5703120110868",
+     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
+     "img": "hk:044e57ff-1fc1-4515-a023-d05fb98a07e0",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "5",
+      "Vægt emballage (kg)": "6,1",
+      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "DALIOBERONONWALLCOA",
+     "label": "Lys eg",
+     "price": 4999,
+     "colorKey": "Wood",
+     "ean": "5703120110899",
+     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcoa/",
+     "img": "hk:a2156b47-c0c3-47f5-9dce-afaa4121b951",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "5",
+      "Vægt emballage (kg)": "6,1",
+      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Frekvensområde (-3dB)": "51 - 26000 Hz",
+    "Kabinet type": "Basrefleks",
+    "Delefrekvens": "2700",
+    "Diskant": "29mm Diamond Dome",
+    "Bas": "1x 5.25\" Low-loss med træfiber-membran (SMC)",
+    "Højtaler type": "Aktive HiFi højtalere",
+    "Spikes inkluderet": "Ja (også gummifødder)"
+   },
+   "rel": {
+    "acc": [
+     "DALISOUNDHUBCOMP",
+     "DALISOUNDHUB",
+     "DALIWSR"
+    ],
+    "alt": [
+     "DALIOBERON1C",
+     "DALIOBERON7C",
+     "ARGFORTEA5MK2",
+     "ARGFORTEA4MK2",
+     "KEFLSX2LT",
+     "KEFLSX2",
+     "KEFLS50W2"
+    ],
+    "rec": [
+     "DALISUBE9F",
+     "DALISUBE12F",
+     "DALISUBC8D",
+     "ARGMALMOSUB10X",
+     "DALIOBERONVOKALC",
+     "DALIBASUBC8D"
     ]
    },
    "read": "2026-11-23"
@@ -36591,71 +36713,6 @@
     ]
    },
    "read": "2026-11-23"
-  },
-  {
-   "sku": "DALIPHANTOMSUB100",
-   "brand": "DALI",
-   "model": "PHANTOM SUB S-100",
-   "type": {
-    "key": "PassiveSubwoofer",
-    "da": "Passiv subwoofer"
-   },
-   "cat": "/hojtalere/subwoofer/",
-   "url": "/dali-phantom-sub-s-100-passiv-subwoofer/daliphantomsub100wh/",
-   "kind": "subwoofer",
-   "scope": "diagram",
-   "facets": {
-    "active": false,
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "DALIPHANTOMSUB100WH",
-     "label": "Sort",
-     "price": 11899,
-     "colorKey": "Black",
-     "ean": "5703120114040",
-     "url": "/dali-phantom-sub-s-100-passiv-subwoofer/daliphantomsub100wh/",
-     "img": "hk:da7640fb-b829-450d-bb48-43b081b63055",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "17,25",
-      "Vægt emballage (kg)": "21",
-      "Mål (emballage)": "57 x 20 x 81 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {},
-   "rel": {
-    "acc": [
-     "DALIPHANTOMAMP2500",
-     "DALIFRAMES80",
-     "ESSCL1SCX",
-     "AQSLIPDB14-2SCX",
-     "AQSLIPDB14-4SCX",
-     "ESSCL1SCPROX"
-    ],
-    "alt": [
-     "BWISW3",
-     "BWISW6",
-     "BWISW8",
-     "BWCTSW10",
-     "BWCTSW12",
-     "BWCTSW15",
-     "LYNGBW20",
-     "LYNGBW2"
-    ],
-    "rec": [
-     "DALIPHANTOMS180",
-     "DALIPHANTOMS280",
-     "DALIPHANTOMS80",
-     "DALIPHANTOMM250",
-     "DALIPHANTOMM375",
-     "DALIPHANTOMM675",
-     "DALIPHANTOMK80"
-    ]
-   },
-   "read": "2026-11-24"
   },
   {
    "sku": "DALIPHE50SQGRILL",
@@ -58856,7 +58913,7 @@
      "DENAVCA1H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGD5IC",
@@ -58929,7 +58986,7 @@
      "DENAVCX6800"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGD60",
@@ -59000,7 +59057,7 @@
      "DENAVCA1H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR1",
@@ -59091,7 +59148,7 @@
      "LYNGTDAI3400"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR1GRILL",
@@ -59131,7 +59188,7 @@
      "LYNGFR1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR2",
@@ -59271,12 +59328,12 @@
      "ESSEX2BANAIRGOX",
      "ESSPR2SCX",
      "LYNGFR2WM",
+     "LYNGFR2GRILL",
+     "LYNGFR2COVER",
      "ESSEX1SCCOMSX",
      "ESSCL1BANANAX",
      "ESSBA1BANBFASIX",
-     "ESSCL2SCX",
-     "LYNGFR2GRILL",
-     "LYNGFR2COVER"
+     "ESSCL2SCX"
     ],
     "alt": [
      "DALIRUBIKORE8",
@@ -59304,7 +59361,7 @@
      "LYNGBW20"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR2COVER",
@@ -59374,7 +59431,7 @@
      "LYNGFR2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR2GRILL",
@@ -59430,7 +59487,7 @@
      "LYNGFR2WM"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGFR2WM",
@@ -59471,7 +59528,7 @@
      "LYNGFR2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGLS1000C",
@@ -59512,7 +59569,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGLS1000LX",
@@ -59551,12 +59608,12 @@
    "specs": {},
    "rel": {
     "acc": [
+     "LYNGLS1000RX",
+     "LYNGLS1000MOUNTKITLX",
      "LYNGBW20",
      "AQSLIPXTREM14-2SCX",
      "AQSLIPXTREM14-4SCX",
-     "AQROCKET22SC",
-     "LYNGLS1000RX",
-     "LYNGLS1000MOUNTKITLX"
+     "AQROCKET22SC"
     ],
     "rec": [
      "LYNGMXA8400",
@@ -59564,7 +59621,7 @@
      "LYNGMP40H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGLS1000MOUNTKITCX",
@@ -59602,14 +59659,14 @@
    "specs": {},
    "rel": {
     "acc": [
-     "LYNGLS1000RX",
-     "LYNGLS1000C"
+     "LYNGLS1000C",
+     "LYNGLS1000RX"
     ],
     "alt": [
      "LYNGLS1000MOUNTKITLX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGLS1000MOUNTKITLX",
@@ -59653,7 +59710,7 @@
      "LYNGLS1000MOUNTKITCX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGLS1000RX",
@@ -59705,7 +59762,7 @@
      "LYNGMP40H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGMH2GRILL",
@@ -59806,7 +59863,7 @@
      "LYNGMH2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGMH3",
@@ -59857,10 +59914,10 @@
    "rel": {
     "acc": [
      "ESSPR1SCX",
-     "LYNG900030129X",
      "ESSCL1SCX",
      "ESSBA2SCX",
-     "ESSCL2SCX"
+     "ESSCL2SCX",
+     "LYNG900030129X"
     ],
     "alt": [
      "DALISONIKONWALL",
@@ -59885,7 +59942,7 @@
      "LYNGBW2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGMP40H21",
@@ -59967,7 +60024,7 @@
      "LYNGBW2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGMP60H21",
@@ -60007,6 +60064,13 @@
     }
    ],
    "specs": {
+    "Fjernbetjening": "Ja",
+    "Timer": "Nej",
+    "Radio type": "Internet radio",
+    "Bi-amping": "Nej",
+    "Zoner": "2",
+    "Automatisk tænd/sluk": "Ja",
+    "Teknologier": "Room Perfect",
     "Udvidelsesmoduler": "Ja",
     "HDMI indgange": "5",
     "HDMI udgange": "2",
@@ -60018,13 +60082,6 @@
     "Udgang (andet)": "RS-232, IR, 12V trigger",
     "Indgang (andet)": "Ethernet, 12V trigger, IR, USB B",
     "Trådløs overførsel": "Airplay 2, Spotify Connect",
-    "Fjernbetjening": "Ja",
-    "Timer": "Nej",
-    "Radio type": "Internet radio",
-    "Bi-amping": "Nej",
-    "Zoner": "2",
-    "Automatisk tænd/sluk": "Ja",
-    "Teknologier": "Room Perfect",
     "Video D/A konverter": "Nej",
     "Video skalering": "Nej",
     "ISF certificeret": "Nej",
@@ -60047,7 +60104,7 @@
      "LYNGMXA8400"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGMXA8400",
@@ -60118,7 +60175,7 @@
      "LYNGMP60H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGSDA2400",
@@ -60189,7 +60246,7 @@
      "NADM66"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGTDAI1120",
@@ -60277,14 +60334,14 @@
      "NADM10V3",
      "NADC700V2",
      "BLSN331",
+     "SONAMPMULTI",
      "LYNGTDAI3400",
      "LYNGTDAI2210",
      "NADC399",
      "HEGELH190V",
      "DENPMA1700NE",
      "MARAMODEL40NX",
-     "MARAMODEL30",
-     "SONAMPMULTI"
+     "MARAMODEL30"
     ],
     "rec": [
      "MOFISOURCEPOINT8",
@@ -60308,7 +60365,7 @@
      "LYNGMH3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGTDAI2210",
@@ -60385,16 +60442,16 @@
     "Indgang (andet)": "Ethernet, 12V trigger, USB A, USB C",
     "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Roon Ready, Airplay 2, Spotify Connect, TIDAL Connect",
     "Tilslutninger (kablet)": "Pladespiller/Phono, Subwoofer, Pre-out, Analog XLR, Ethernet",
-    "Udgangseffekt 4 ohm": "2 x 210 watt",
-    "Udgangseffekt 8 ohm": "2 x 105 watt",
-    "Forvrængning (THD)": "0,05%",
-    "Forstærkerteknologi": "Klasse D - fuld digital",
-    "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect",
     "Radio type": "Internet radio",
     "Bi-amping": "Nej",
     "Fjernbetjening": "Ja",
     "Stemmestyring": "Nej",
-    "Teknologier": "AAC"
+    "Teknologier": "AAC",
+    "Udgangseffekt 4 ohm": "2 x 210 watt",
+    "Udgangseffekt 8 ohm": "2 x 105 watt",
+    "Forvrængning (THD)": "0,05%",
+    "Forstærkerteknologi": "Klasse D - fuld digital",
+    "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect"
    },
    "rel": {
     "acc": [
@@ -60462,7 +60519,7 @@
      "LYNGMH3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "LYNGTDAI3400",
@@ -60628,7 +60685,7 @@
      "BW801D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAMP10",
@@ -60718,7 +60775,7 @@
      "BWHTM82"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAMP20",
@@ -60808,7 +60865,7 @@
      "BWHTM82"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAMP30",
@@ -60900,7 +60957,7 @@
      "BW707S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAV10",
@@ -61003,7 +61060,7 @@
      "MARAAMP10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAV20",
@@ -61031,7 +61088,7 @@
      "ean": "0747192145590",
      "url": "/marantz-av-20-surround-processor/maraav20bk/",
      "img": "hk:4ce0014e-586e-43f9-81cf-91de1949f848",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "17,3",
       "Vægt emballage (kg)": "18,3",
@@ -61102,7 +61159,7 @@
      "MARAAMP10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAAV30",
@@ -61205,7 +61262,7 @@
      "MARAAMP10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACD50N",
@@ -61310,7 +61367,7 @@
      "HEGELH150"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACD60",
@@ -61348,7 +61405,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACD60X",
@@ -61402,7 +61459,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACD70",
@@ -61455,6 +61512,10 @@
     }
    ],
    "specs": {
+    "Bi-amping": "Nej",
+    "Fjernbetjening": "Ja",
+    "Stemmestyring": "Nej",
+    "Teknologier": "aptX, aptX Adaptive, aptX HD, AAC",
     "Udvidelsesmoduler": "Nej",
     "HDMI ARC/CEC": "Ja",
     "HDMI indgange": "1",
@@ -61464,10 +61525,6 @@
     "Udgang (andet)": "IR",
     "Indgang (andet)": "IR",
     "Trådløs overførsel": "Bluetooth-indgang",
-    "Bi-amping": "Nej",
-    "Fjernbetjening": "Ja",
-    "Stemmestyring": "Nej",
-    "Teknologier": "aptX, aptX Adaptive, aptX HD, AAC",
     "Udgangseffekt 4 ohm": "2 x 65 (RMS) watt",
     "Udgangseffekt 8 ohm": "2 x 50 (RMS) watt",
     "Forvrængning (THD)": "0,08%",
@@ -61508,7 +61565,7 @@
      "MARAMODEL70"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACINEMA30",
@@ -61650,7 +61707,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACINEMA40",
@@ -61798,7 +61855,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACINEMA50S2",
@@ -61828,7 +61885,7 @@
      "ean": "747192148171",
      "url": "/marantz-cinema-50-series-2-hjemmebio-receiver/maracinema50s2bk/",
      "img": "hk:6f52bfef-9f8d-4c56-aac4-0ebed44340fc",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "11,2",
       "Vægt emballage (kg)": "17",
@@ -61843,7 +61900,7 @@
      "ean": "0747192148188",
      "url": "/marantz-cinema-50-series-2-hjemmebio-receiver/maracinema50s2si/",
      "img": "hk:2e001ed2-577c-4049-ab59-29edf541cc5d",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "11,2",
       "Vægt emballage (kg)": "17",
@@ -61941,7 +61998,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACINEMA60DABS2",
@@ -62081,7 +62138,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACINEMA70SS2",
@@ -62219,7 +62276,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACTON3",
@@ -62268,7 +62325,7 @@
      "ean": "7340055387101",
      "url": "/marshall-acton-iii-traadloes-hoejtaler/maracton3brown/",
      "img": "hk:2976e01e-c81a-4cc5-935c-bd52a9801ba8",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "2,8",
       "Vægt emballage (kg)": "3,57",
@@ -62280,7 +62337,6 @@
      "sku": "MARACTON3BLUE",
      "label": "Midnight Blue",
      "price": 1399,
-     "was": 2290,
      "colorKey": "Blue",
      "ean": "7340055408196",
      "url": "/marshall-acton-iii-traadloes-hoejtaler/maracton3blue/",
@@ -62325,7 +62381,7 @@
      "BLSPULSEMINI2I"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARACTON4",
@@ -62399,7 +62455,7 @@
      "MARWOBURN3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMCR60NDAB",
@@ -62428,7 +62484,7 @@
      "ean": "747192149451",
      "url": "/marantz-mcr-60n-dab-integreret-forstaerker/maramcr60ndabbk/",
      "img": "hk:11694836-9f29-47b5-8aa8-68c7888cbe05",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,2",
       "Vægt emballage (kg)": "5,2",
@@ -62521,7 +62577,7 @@
      "BWASW610M"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODEL30",
@@ -62648,7 +62704,7 @@
      "MARATT15S1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODEL40NX",
@@ -62713,18 +62769,18 @@
     "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, HEOS Multiroom",
     "Tilslutninger (kablet)": "HDMI",
     "Funktioner": "Dedikeret app",
-    "Udgangseffekt 4 ohm": "100 watt",
-    "Udgangseffekt 8 ohm": "70 watt",
-    "Forvrængning (THD)": "0,02%",
-    "Signal/støjforhold": "113 dB",
-    "Dæmpningsfaktor": ">100",
-    "Forstærkerteknologi": "Analog",
     "Radio type": "Internet radio",
     "Bi-amping": "Nej",
     "Fjernbetjening": "Ja",
     "Stemmestyring": "Nej",
     "Teknologier": "Alexa, Google Assistant, HEOS, Hi-Res",
     "Streamingtjenester": "Spotify, Tidal, Soundcloud, Juke, Deezer, Napster, Tunein",
+    "Udgangseffekt 4 ohm": "100 watt",
+    "Udgangseffekt 8 ohm": "70 watt",
+    "Forvrængning (THD)": "0,02%",
+    "Signal/støjforhold": "113 dB",
+    "Dæmpningsfaktor": ">100",
+    "Forstærkerteknologi": "Analog",
     "Standby strømforbrug": "0,3 watt"
    },
    "rel": {
@@ -62775,7 +62831,7 @@
      "MARACD70"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODEL50",
@@ -62888,7 +62944,7 @@
      "DENHOME350"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODEL60N",
@@ -62934,7 +62990,7 @@
      "ean": "0747192143688",
      "url": "/marantz-model-60n-stereoforstaerker-med-streaming/maramodel60nsi/",
      "img": "hk:2bfc3453-d57c-4d8b-a356-49f4ff00cb3a",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "14",
       "Vægt emballage (kg)": "15,5",
@@ -63022,7 +63078,7 @@
      "DALIOPTICONLCRMK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODEL70",
@@ -63051,7 +63107,7 @@
      "ean": "747192148638",
      "url": "/marantz-model-70-integreret-forstaerker/maramodel70si/",
      "img": "hk:ff574829-70ef-4ab0-9885-3e7638d0bd1d",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "9",
       "Vægt emballage (kg)": "9,8",
@@ -63144,7 +63200,7 @@
      "DALIOPTICONLCRMK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODELM1",
@@ -63250,7 +63306,7 @@
      "KEFKC62"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARAMODELM4",
@@ -63332,7 +63388,7 @@
      "BOC82"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARASACD30N",
@@ -63377,7 +63433,7 @@
      "ean": "4951035072448",
      "url": "/marantz-sacd-30n-cd-afspiller/marasacd30nsi/",
      "img": "hk:13133492-1e36-4045-a6cd-c5831c6cc4d6",
-     "stock": "warehouseInStock",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "15",
       "Vægt emballage (kg)": "16,9",
@@ -63387,16 +63443,16 @@
     }
    ],
    "specs": {
-    "Lydudgang": "Coaxial, Optisk, Analog RCA, Hovedtelefon",
-    "Lydindgang": "Coaxial, Optisk, USB A, USB B",
-    "Udgang (andet)": "RS-232, Ethernet, IR, USB A",
-    "Indgang (andet)": "RS-232, Ethernet, IR, USB A, USB B",
-    "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, DLNA",
     "Fjernbetjening": "Ja",
     "Timer": "Nej",
     "D/A konvertering audio": "MMM",
     "Teknologier": "Alexa, Google Assistant, HEOS, Hi-Res",
     "Streamingtjenester": "Spotify, Tidal, Soundcloud, Qobuz, Deezer, Tunein",
+    "Lydudgang": "Coaxial, Optisk, Analog RCA, Hovedtelefon",
+    "Lydindgang": "Coaxial, Optisk, USB A, USB B",
+    "Udgang (andet)": "RS-232, Ethernet, IR, USB A",
+    "Indgang (andet)": "RS-232, Ethernet, IR, USB A, USB B",
+    "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, DLNA",
     "Standby strømforbrug": "0,5 watt",
     "Typisk energiforbrug, normal brug": "48 watt",
     "Audio formater": "MP3, ALAC , FLAC, SACD, CD, DSD, WAV"
@@ -63415,13 +63471,13 @@
      "AQYUKONIN"
     ],
     "alt": [
-     "HEGELVIKING",
      "DENDCD3000NE",
      "NADC589",
      "DENDCD1700NE",
      "MARACD50N",
      "LYNGCD2",
-     "MARASACD10"
+     "MARASACD10",
+     "HEGELVIKING"
     ],
     "rec": [
      "MARAMODEL30",
@@ -63432,7 +63488,7 @@
      "HEGELH190V"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARASTEREO70S",
@@ -63496,14 +63552,14 @@
     "Indgang (andet)": "Ethernet, IR",
     "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Bluetooth-udgang",
     "Tilslutninger (kablet)": "HDMI",
-    "Udgangseffekt 8 ohm": "75 watt",
-    "Forvrængning (THD)": "0,08%",
-    "Signal/støjforhold": "98 dB",
-    "Forstærkerteknologi": "Analog",
     "Radio type": "DAB +, FM, Internet radio",
     "Fjernbetjening": "Ja",
     "Stemmestyring": "Nej",
     "Teknologier": "HEOS",
+    "Udgangseffekt 8 ohm": "75 watt",
+    "Forvrængning (THD)": "0,08%",
+    "Signal/støjforhold": "98 dB",
+    "Forstærkerteknologi": "Analog",
     "Lyd formater": "MP3, WMA, AAC, ALAC , FLAC HD, DSD, WAV",
     "Standby strømforbrug": "0,5 watt"
    },
@@ -63527,7 +63583,6 @@
     ],
     "alt": [
      "NADC3030S",
-     "NADCISA2-120",
      "NADC328",
      "ARGSA2X",
      "NADC3050",
@@ -63541,7 +63596,8 @@
      "MARAMODEL30",
      "MARAMODEL50",
      "MARAMODEL60N",
-     "BLSN331"
+     "BLSN331",
+     "NADCISA2-120"
     ],
     "rec": [
      "BW607S3",
@@ -63567,7 +63623,7 @@
      "ARGTTMK2BT"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARATT15S1",
@@ -63594,7 +63650,7 @@
      "ean": "4951035904848",
      "url": "/marantz-tt-15s1-pladespiller/maratt15s1wh/",
      "img": "hk:f9639de1-efdd-45a5-8445-42b141ead534",
-     "stock": "notInStockAtpDate",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "9,1",
       "Vægt emballage (kg)": "10,5",
@@ -63625,19 +63681,19 @@
      "ESSTTBRUSHSTYLUS3X"
     ],
     "alt": [
+     "MOFIFENSTRATPLUSM",
      "ARGTTAURORA",
      "ARGTTS",
      "DENDP3000NE",
      "MOFIMASTERDECK",
      "ARGTT4SE",
-     "ARGTT4MK2",
-     "MOFIFENSTRATPLUSM"
+     "ARGTT4MK2"
     ],
     "rec": [
      "HEGELV10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARBROMLEY150",
@@ -73449,7 +73505,7 @@
    "scope": "diagram",
    "facets": {
     "role": "bluray",
-    "axis": "colour"
+    "axis": "option"
    },
    "variants": [
     {
@@ -76093,7 +76149,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/radiant-acoustics-clarity-66-gulvhoejtaler/raclarity66oak/",
+   "url": "/radiant-acoustics-clarity-66-gulvhoejtaler/raclarity66bk/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -76103,22 +76159,6 @@
    },
    "variants": [
     {
-     "sku": "RACLARITY66OAK",
-     "label": "Eg",
-     "price": 59998,
-     "colorKey": "Wood",
-     "ean": "5706957022045",
-     "url": "/radiant-acoustics-clarity-66-gulvhoejtaler/raclarity66oak/",
-     "img": "hk:dfa7deb1-4a66-4b5f-9982-e25e166edabe",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "40",
-      "Vægt emballage (kg)": "46",
-      "Mål (emballage)": "48,7 x 37,5 x 116 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "26,8 x 104,8 x 40,1 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "RACLARITY66BK",
      "label": "Sort",
      "price": 59998,
@@ -76127,6 +76167,22 @@
      "url": "/radiant-acoustics-clarity-66-gulvhoejtaler/raclarity66bk/",
      "img": "hk:ac973ece-9040-435f-93df-9fe56dd87c3a",
      "stock": "notInStockAtpDate",
+     "specs": {
+      "Vægt (kg)": "40",
+      "Vægt emballage (kg)": "46",
+      "Mål (emballage)": "48,7 x 37,5 x 116 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "26,8 x 104,8 x 40,1 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "RACLARITY66OAK",
+     "label": "Eg",
+     "price": 59998,
+     "colorKey": "Wood",
+     "ean": "5706957022045",
+     "url": "/radiant-acoustics-clarity-66-gulvhoejtaler/raclarity66oak/",
+     "img": "hk:dfa7deb1-4a66-4b5f-9982-e25e166edabe",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "40",
       "Vægt emballage (kg)": "46",
@@ -81647,7 +81703,7 @@
     "da": "USB-kabel"
    },
    "cat": "/kabler/digital-kabel/",
-   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
+   "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -82229,7 +82285,6 @@
      "sku": "SENHD560SBK",
      "label": "Sort",
      "price": 1024,
-     "was": 1090,
      "colorKey": "Black",
      "ean": "4044155257267",
      "url": "/sennheiser-hd-560s-head-fi-hoeretelefoner/senhd560sbk/",
@@ -83021,7 +83076,6 @@
      "sku": "SENMOMENTUM5BL",
      "label": "Blå",
      "price": 2785,
-     "was": 2990,
      "colorKey": "Blue",
      "ean": "4260752334013",
      "url": "/sennheiser-momentum-5-wireless-traadloest-headset/senmomentum5bl/",
@@ -83369,7 +83423,6 @@
      "sku": "SONACEBK",
      "label": "Sort",
      "price": 1499,
-     "was": 2890,
      "colorKey": "Black",
      "ean": "8720862502642",
      "url": "/sonos-ace-traadloest-headset/sonacebk/",
@@ -83386,7 +83439,6 @@
      "sku": "SONACEWH",
      "label": "Hvid",
      "price": 1499,
-     "was": 2890,
      "colorKey": "White",
      "ean": "8720862502635",
      "url": "/sonos-ace-traadloest-headset/sonacewh/",
@@ -83791,7 +83843,6 @@
      "sku": "SONARCULTRABK",
      "label": "Sort",
      "price": 6379,
-     "was": 8249,
      "colorKey": "Black",
      "ean": "8720862502857",
      "url": "/sonos-arc-ultra-soundbar/sonarcultrabk/",
@@ -83808,7 +83859,6 @@
      "sku": "SONARCULTRAWH",
      "label": "Hvid",
      "price": 6379,
-     "was": 8249,
      "colorKey": "White",
      "ean": "8720862502840",
      "url": "/sonos-arc-ultra-soundbar/sonarcultrawh/",
@@ -83937,7 +83987,6 @@
      "sku": "SONBEAMG2BK",
      "label": "Sort",
      "price": 2579,
-     "was": 3690,
      "colorKey": "Black",
      "ean": "8717755778130",
      "url": "/sonos-beam-gen-2-soundbar/sonbeamg2bk/",
@@ -83954,7 +84003,6 @@
      "sku": "SONBEAMG2WH",
      "label": "Hvid",
      "price": 2579,
-     "was": 3690,
      "colorKey": "White",
      "ean": "8717755778123",
      "url": "/sonos-beam-gen-2-soundbar/sonbeamg2wh/",
@@ -84524,7 +84572,6 @@
      "sku": "SONERA100SLWH",
      "label": "Hvid",
      "price": 1199,
-     "was": 1499,
      "colorKey": "White",
      "ean": "8717755779724",
      "url": "/sonos-era-100-sl-traadloes-hoejtaler/sonera100slwh/",
@@ -84541,7 +84588,6 @@
      "sku": "SONERA100SLBK",
      "label": "Sort",
      "price": 1199,
-     "was": 1499,
      "colorKey": "Black",
      "ean": "8717755779731",
      "url": "/sonos-era-100-sl-traadloes-hoejtaler/sonera100slbk/",
@@ -84628,7 +84674,6 @@
      "sku": "SONERA300BK",
      "label": "Sort",
      "price": 3279,
-     "was": 4099,
      "colorKey": "Black",
      "ean": "8717755779519",
      "url": "/sonos-era-300-traadloes-hoejtaler/sonera300bk/",
@@ -84645,7 +84690,6 @@
      "sku": "SONERA300WH",
      "label": "Hvid",
      "price": 3279,
-     "was": 4099,
      "colorKey": "White",
      "ean": "8717755779502",
      "url": "/sonos-era-300-traadloes-hoejtaler/sonera300wh/",
@@ -84729,7 +84773,6 @@
      "sku": "SONFIVEWH",
      "label": "Hvid",
      "price": 3629,
-     "was": 4890,
      "colorKey": "White",
      "ean": "8717755777119",
      "url": "/sonos-five-traadloes-hoejtaler/sonfivewh/",
@@ -84746,7 +84789,6 @@
      "sku": "SONFIVEBK",
      "label": "Sort",
      "price": 3629,
-     "was": 4890,
      "colorKey": "Black",
      "ean": "8717755777126",
      "url": "/sonos-five-traadloes-hoejtaler/sonfivebk/",
@@ -85377,7 +85419,6 @@
      "sku": "SONPLAYSAND",
      "label": "Sand",
      "price": 2079,
-     "was": 2599,
      "colorKey": "Beige",
      "ean": "8720862503793",
      "url": "/sonos-play-traadloes-hoejtaler-med-batteri/sonplaysand/",
@@ -85393,7 +85434,6 @@
      "sku": "SONPLAYWH",
      "label": "Hvid",
      "price": 2079,
-     "was": 2599,
      "colorKey": "White",
      "ean": "8720862503779",
      "url": "/sonos-play-traadloes-hoejtaler-med-batteri/sonplaywh/",
@@ -85410,7 +85450,6 @@
      "sku": "SONPLAYBK",
      "label": "Sort",
      "price": 2079,
-     "was": 2599,
      "colorKey": "Black",
      "ean": "8720862503786",
      "url": "/sonos-play-traadloes-hoejtaler-med-batteri/sonplaybk/",
@@ -85699,7 +85738,6 @@
      "sku": "SONSUBG4SAWH",
      "label": "Hvid",
      "price": 5949,
-     "was": 7449,
      "colorKey": "White",
      "ean": "8720862503700",
      "url": "/sonos-sub-4-traadloes-subwoofer/sonsubg4sawh/",
@@ -85716,7 +85754,6 @@
      "sku": "SONSUBG4SABK",
      "label": "Sort",
      "price": 5949,
-     "was": 7449,
      "colorKey": "Black",
      "ean": "8720862503717",
      "url": "/sonos-sub-4-traadloes-subwoofer/sonsubg4sabk/",
@@ -85780,7 +85817,6 @@
      "sku": "SONSUBMINIBK",
      "label": "Sort",
      "price": 2999,
-     "was": 3749,
      "colorKey": "Black",
      "ean": "8717755779090",
      "url": "/sonos-sub-mini-traadloes-subwoofer/sonsubminibk/",
@@ -85798,7 +85834,6 @@
      "sku": "SONSUBMINIWH",
      "label": "Hvid",
      "price": 2999,
-     "was": 3749,
      "colorKey": "White",
      "ean": "8717755779083",
      "url": "/sonos-sub-mini-traadloes-subwoofer/sonsubminiwh/",
@@ -86323,6 +86358,60 @@
      }
     },
     {
+     "sku": "SONYK100XR35M2",
+     "label": "100\"",
+     "price": 14999,
+     "was": 29999,
+     "colorKey": "Black",
+     "ean": "4548736177864",
+     "url": "/sony-bravia-3-ii-led-tv/sonyk100xr35m2/",
+     "img": "hk:0ef3b0b5-af1d-4c7b-92b5-d08994027e6a",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Total HDMI Inputs": "4x",
+      "HDMI": "2.1",
+      "Antal HDMI 2.1 Indgange": "4x",
+      "HDMI 2.1 porte": "1, 2, 3, 4",
+      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+      "HDMI ARC/eARC": "eARC (Port 1)",
+      "Antal USB-porte": "2x",
+      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2), DVB-T, DVB-C, DVB-S",
+      "HDCP": "2.3",
+      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+      "Vægt (kg)": "54,6",
+      "Vægt emballage (kg)": "78",
+      "Skærmstørrelse": "100\"",
+      "Design": "Metalfinish",
+      "VESA": "600x400",
+      "Vægt inkl. bordstativ, kg": "54,6",
+      "Mål inkl. stander, cm (BxHxD)": "223,0 x 134,7 x 49,4 cm",
+      "Vægt ekskl. bordstativ, kg": "53",
+      "Mål ekskl. stander, cm (BxHxD)": "223,0 x 128,4 x 7,5 cm",
+      "Slim Fit Wallmount kompatibel": "Nej",
+      "Full-motion Slim Wallmount kompatibel": "Nej",
+      "Auto Rotating Wallmount kompatibel": "Nej",
+      "Mål (emballage)": "26,9 x 160,8 x 244,4 cm (bredde x højde x dybde)",
+      "Bluetooth ": "Ja",
+      "Bluetooth version": "5.3",
+      "Understøttede lydformater": "DTS, Dolby Digital, Dolby Atmos",
+      "Styresystem": "Google TV",
+      "Mikrofon": "Ja",
+      "USB Recording": "Ja",
+      "Stemmestyring": "Indbygget",
+      "Elektronisk Programguide (EPG)": "Ja",
+      "EPREL Code": "2602450",
+      "Opløsning": "4K Ultra HD",
+      "Skærmteknologi": "LED",
+      "HDR-formater": "Dolby Vision, HDR10, HLG",
+      "Billedprocessor": "XR Processor",
+      "Game mode": "Ja",
+      "Full / edge backlight": "Direct LED",
+      "Skærmopdatering (Hz)": "100Hz",
+      "Energy Efficiency": "E",
+      "Standby strømforbrug (watt)": "0,5"
+     }
+    },
+    {
      "sku": "SONYK75XR35M2",
      "label": "75\"",
      "price": 8999,
@@ -86405,60 +86494,6 @@
       "Game mode": "Ja",
       "Full / edge backlight": "Direct LED",
       "Skærmopdatering (Hz)": "120",
-      "Energy Efficiency": "E",
-      "Standby strømforbrug (watt)": "0,5"
-     }
-    },
-    {
-     "sku": "SONYK100XR35M2",
-     "label": "100\"",
-     "price": 14999,
-     "was": 29999,
-     "colorKey": "Black",
-     "ean": "4548736177864",
-     "url": "/sony-bravia-3-ii-led-tv/sonyk100xr35m2/",
-     "img": "hk:0ef3b0b5-af1d-4c7b-92b5-d08994027e6a",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Total HDMI Inputs": "4x",
-      "HDMI": "2.1",
-      "Antal HDMI 2.1 Indgange": "4x",
-      "HDMI 2.1 porte": "1, 2, 3, 4",
-      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
-      "HDMI ARC/eARC": "eARC (Port 1)",
-      "Antal USB-porte": "2x",
-      "DVB-tuners": "DVB-T (x2), DVB-C (x2), DVB-S (x2), DVB-T, DVB-C, DVB-S",
-      "HDCP": "2.3",
-      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
-      "Vægt (kg)": "54,6",
-      "Vægt emballage (kg)": "78",
-      "Skærmstørrelse": "100\"",
-      "Design": "Metalfinish",
-      "VESA": "600x400",
-      "Vægt inkl. bordstativ, kg": "54,6",
-      "Mål inkl. stander, cm (BxHxD)": "223,0 x 134,7 x 49,4 cm",
-      "Vægt ekskl. bordstativ, kg": "53",
-      "Mål ekskl. stander, cm (BxHxD)": "223,0 x 128,4 x 7,5 cm",
-      "Slim Fit Wallmount kompatibel": "Nej",
-      "Full-motion Slim Wallmount kompatibel": "Nej",
-      "Auto Rotating Wallmount kompatibel": "Nej",
-      "Mål (emballage)": "26,9 x 160,8 x 244,4 cm (bredde x højde x dybde)",
-      "Bluetooth ": "Ja",
-      "Bluetooth version": "5.3",
-      "Understøttede lydformater": "DTS, Dolby Digital, Dolby Atmos",
-      "Styresystem": "Google TV",
-      "Mikrofon": "Ja",
-      "USB Recording": "Ja",
-      "Stemmestyring": "Indbygget",
-      "Elektronisk Programguide (EPG)": "Ja",
-      "EPREL Code": "2602450",
-      "Opløsning": "4K Ultra HD",
-      "Skærmteknologi": "LED",
-      "HDR-formater": "Dolby Vision, HDR10, HLG",
-      "Billedprocessor": "XR Processor",
-      "Game mode": "Ja",
-      "Full / edge backlight": "Direct LED",
-      "Skærmopdatering (Hz)": "100Hz",
       "Energy Efficiency": "E",
       "Standby strømforbrug (watt)": "0,5"
      }
@@ -89173,6 +89208,531 @@
    "read": "2026-11-21"
   },
   {
+   "sku": "UNNU05BX",
+   "brand": "unnu",
+   "model": "05",
+   "type": {
+    "key": "CableCovering",
+    "da": "Kabelskjuler"
+   },
+   "cat": "/tilbehor/andet-tilbehor/",
+   "url": "/unnu-05-kabelskjuler/unnu05b/",
+   "kind": "accessory",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU05B",
+     "label": "05B - lukket",
+     "price": 299,
+     "colorKey": "Grey",
+     "ean": "5706957007059",
+     "url": "/unnu-05-kabelskjuler/unnu05b/",
+     "img": "hk:45991f28-ed41-4bbb-a5ed-4e1771fa577c",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Mål (emballage)": "4 x 22 x 3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU05BBK",
+     "label": "Sort",
+     "price": 299,
+     "colorKey": "Black",
+     "ean": "5744003690947",
+     "url": "/unnu-05-kabelskjuler/unnu05bbk/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "0,5",
+      "Vægt emballage (kg)": "0,5",
+      "Mål (emballage)": "10 x 1 x 12 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {},
+   "rel": {},
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU12SV2",
+   "brand": "unnu",
+   "model": "12S v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-12s-v2-moebel/unnu12sv2wh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU12SV2WH",
+     "label": "Hvid",
+     "price": 3849,
+     "colorKey": "White",
+     "ean": "5700002104656",
+     "url": "/unnu-12s-v2-moebel/unnu12sv2wh/",
+     "img": "hk:5e90db20-96f1-4948-8528-f0204b1c992a",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7,9",
+      "Vægt emballage (kg)": "9,3",
+      "Mål (emballage)": "36 x 32 x 114 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "103,4 x 19,4 x 25,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU12SV2BK",
+     "label": "Sort",
+     "price": 3849,
+     "colorKey": "Black",
+     "ean": "5700002104649",
+     "url": "/unnu-12s-v2-moebel/unnu12sv2bk/",
+     "img": "hk:7bfcc69c-573f-47a9-9798-3a8e62ac8838",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7,9",
+      "Vægt emballage (kg)": "9,3",
+      "Mål (emballage)": "31 x 130 x 36 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "103,4 x 19,4 x 25,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU12SV2WA",
+     "label": "Brun",
+     "price": 5249,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690190",
+     "url": "/unnu-12s-v2-moebel/unnu12sv2wa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt emballage (kg)": "10,1",
+      "Mål (emballage)": "30 x 25 x 113 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU12SV2OA",
+     "label": "Træfarvet",
+     "price": 5249,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690183",
+     "url": "/unnu-12s-v2-moebel/unnu12sv2oa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "9,5",
+      "Vægt emballage (kg)": "10,5",
+      "Mål (emballage)": "3,7 x 30 x 113 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Sektioner": "2",
+    "Indvendig højde (cm)": "16,2 cm",
+    "Indvendig bredde (cm)": "99,9 cm",
+    "Indvendig dybde med bagplade (cm)": "15 cm",
+    "Indvendig dybde uden bagplade (cm)": "23,7 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNU05BX",
+     "UNNUWB",
+     "UNNUC12V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU13SV2",
+   "brand": "unnu",
+   "model": "13S v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-13s-v2-moebel/unnu13sv2wh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU13SV2WH",
+     "label": "Hvid",
+     "price": 4999,
+     "colorKey": "White",
+     "ean": "5700002104670",
+     "url": "/unnu-13s-v2-moebel/unnu13sv2wh/",
+     "img": "hk:2bb83edf-6210-4bdd-9213-2f5b41801d14",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "11,9",
+      "Vægt emballage (kg)": "12,9",
+      "Mål (emballage)": "36 x 31 x 165 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "155,1 x 19,4 x 25,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU13SV2BK",
+     "label": "Sort",
+     "price": 4999,
+     "colorKey": "Black",
+     "ean": "5700002104663",
+     "url": "/unnu-13s-v2-moebel/unnu13sv2bk/",
+     "img": "hk:4aa834a6-421c-4902-b28d-0b29ad576fcb",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "17,4",
+      "Vægt emballage (kg)": "18,4",
+      "Mål (emballage)": "36 x 30 x 165 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "155,1 x 19,4 x 25,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU13SV2OA",
+     "label": "Træfarvet",
+     "price": 6999,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690206",
+     "url": "/unnu-13s-v2-moebel/unnu13sv2oa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "12,8",
+      "Vægt emballage (kg)": "14,4",
+      "Mål (emballage)": "30 x 36 x 165 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU13SV2WA",
+     "label": "Brun",
+     "price": 6999,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690213",
+     "url": "/unnu-13s-v2-moebel/unnu13sv2wa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt emballage (kg)": "14,3",
+      "Mål (emballage)": "36 x 30 x 164 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Sektioner": "3",
+    "Indvendig højde (cm)": "16,2 cm",
+    "Indvendig bredde (cm)": "151,6 cm",
+    "Indvendig dybde med bagplade (cm)": "15 cm",
+    "Indvendig dybde uden bagplade (cm)": "23,5 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNU05BX",
+     "UNNUWB",
+     "UNNUC13V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU210V2LP",
+   "brand": "unnu",
+   "model": "210 LP v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-210-lp-v2-moebel/unnu210v2lpwh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU210V2LPWH",
+     "label": "Hvid",
+     "price": 4499,
+     "colorKey": "White",
+     "ean": "5706957011452",
+     "url": "/unnu-210-lp-v2-moebel/unnu210v2lpwh/",
+     "img": "hk:fcaa2897-da65-46a5-ab36-0817d321639f",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7",
+      "Vægt emballage (kg)": "8",
+      "Mål (emballage)": "47 x 46 x 61,5 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "51,7 x 35,4 x 36,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU210V2LPBK",
+     "label": "Sort",
+     "price": 4499,
+     "colorKey": "Black",
+     "ean": "5706957011445",
+     "url": "/unnu-210-lp-v2-moebel/unnu210v2lpbk/",
+     "img": "hk:9b4065fc-c733-486e-9f07-5a16c26fef9d",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7",
+      "Vægt emballage (kg)": "8",
+      "Mål (emballage)": "47 x 45 x 61 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "51,7 x 35,4 x 36,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU210V2LPOA",
+     "label": "Træfarvet",
+     "price": 6349,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690282",
+     "url": "/unnu-210-lp-v2-moebel/unnu210v2lpoa/",
+     "stock": "notInStockNonStockedItem"
+    },
+    {
+     "sku": "UNNU210V2LPWA",
+     "label": "Brun",
+     "price": 6349,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690299",
+     "url": "/unnu-210-lp-v2-moebel/unnu210v2lpwa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "10",
+      "Vægt emballage (kg)": "11,3",
+      "Mål (emballage)": "37 x 46 x 61 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Sektioner": "1",
+    "Hylder inkluderet": "1",
+    "Indvendig højde (cm)": "32,2 cm",
+    "Indvendig bredde (cm)": "48,2 cm",
+    "Indvendig dybde med bagplade (cm)": "29,5 cm",
+    "Indvendig dybde uden bagplade (cm)": "34,7 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNUWB",
+     "UNNUSTAND4",
+     "UNNU05BX",
+     "UNNUC21V2"
+    ],
+    "alt": [
+     "UNNUD21V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU211V2LP",
+   "brand": "unnu",
+   "model": "211 LP v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-211-lp-v2-moebel/unnu211v2lpwh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU211V2LPWH",
+     "label": "Hvid",
+     "price": 4949,
+     "colorKey": "White",
+     "ean": "5706957011476",
+     "url": "/unnu-211-lp-v2-moebel/unnu211v2lpwh/",
+     "img": "hk:3522ef3f-b772-4b15-b534-4cb87325dc66",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7",
+      "Vægt emballage (kg)": "8",
+      "Mål (emballage)": "56 x 48 x 62 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "51,7 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU211V2LPBK",
+     "label": "Sort",
+     "price": 4949,
+     "colorKey": "Black",
+     "ean": "5706957011469",
+     "url": "/unnu-211-lp-v2-moebel/unnu211v2lpbk/",
+     "img": "hk:8e378d1d-94e0-4ea7-a14c-486918560a30",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "7",
+      "Vægt emballage (kg)": "8",
+      "Mål (emballage)": "56 x 47 x 61 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "51,7 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU211V2LPWA",
+     "label": "Brun",
+     "price": 6849,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690350",
+     "url": "/unnu-211-lp-v2-moebel/unnu211v2lpwa/",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt emballage (kg)": "13,5",
+      "Mål (emballage)": "56 x 46 x 62 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU211V2LPOA",
+     "label": "Træfarvet",
+     "price": 6849,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690343",
+     "url": "/unnu-211-lp-v2-moebel/unnu211v2lpoa/",
+     "stock": "notInStockNonStockedItem"
+    }
+   ],
+   "specs": {
+    "Sektioner": "1",
+    "Hylder inkluderet": "1",
+    "Indvendig højde (cm)": "32,2 cm",
+    "Indvendig bredde (cm)": "48,2 cm",
+    "Indvendig dybde med bagplade (cm)": "37,8 cm",
+    "Indvendig dybde uden bagplade (cm)": "43 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNU05BX",
+     "UNNUWB",
+     "UNNUSTAND4",
+     "UNNUC21V2",
+     "UNNUD21V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU221V2",
+   "brand": "unnu",
+   "model": "221 v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-221-v2-moebel/unnu221v2wh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU221V2WH",
+     "label": "Hvid",
+     "price": 5799,
+     "colorKey": "White",
+     "ean": "5706957010660",
+     "url": "/unnu-221-v2-moebel/unnu221v2wh/",
+     "img": "hk:2b78e921-5c91-430a-b895-fa9a40ec9387",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "26,6",
+      "Vægt emballage (kg)": "27,6",
+      "Mål (emballage)": "56 x 47 x 114 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "103,1 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU221V2BK",
+     "label": "Sort",
+     "price": 5799,
+     "colorKey": "Black",
+     "ean": "5706957010653",
+     "url": "/unnu-221-v2-moebel/unnu221v2bk/",
+     "img": "hk:5c8f69da-1a95-4034-bbf2-c290c163d0f4",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "25",
+      "Vægt emballage (kg)": "26",
+      "Mål (emballage)": "55 x 46 x 113 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "103,1 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU221V2WA",
+     "label": "Brun",
+     "price": 7999,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690398",
+     "url": "/unnu-221-v2-moebel/unnu221v2wa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "25",
+      "Vægt emballage (kg)": "26,4",
+      "Mål (emballage)": "55 x 45 x 111,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU221V2OA",
+     "label": "Træfarvet",
+     "price": 7999,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690381",
+     "url": "/unnu-221-v2-moebel/unnu221v2oa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "25",
+      "Vægt emballage (kg)": "26,6",
+      "Mål (emballage)": "46 x 55 x 111,5 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Sektioner": "2",
+    "Hylder inkluderet": "2",
+    "Indvendig højde (cm)": "32,2 cm",
+    "Indvendig bredde (cm)": "48,2 cm",
+    "Indvendig dybde med bagplade (cm)": "37,8 cm",
+    "Indvendig dybde uden bagplade (cm)": "43 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNUWB",
+     "UNNU05BX",
+     "UNNUSTAND4",
+     "UNNUC21V2"
+    ],
+    "alt": [
+     "UNNUS11V2",
+     "UNNUDRAW45V2",
+     "UNNUD21V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
    "sku": "UNNU230V2",
    "brand": "unnu",
    "model": "230 v2",
@@ -89270,6 +89830,108 @@
      "UNNUC21V2",
      "UNNUDRAW36V2",
      "UNNUD21V2"
+    ]
+   },
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNU231V2",
+   "brand": "unnu",
+   "model": "231 v2",
+   "type": {
+    "key": "Furniture",
+    "da": "Møbel"
+   },
+   "cat": "/tilbehor/mobler/",
+   "url": "/unnu-231-v2-moebel/unnu231v2wh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNU231V2WH",
+     "label": "Hvid",
+     "price": 7299,
+     "colorKey": "White",
+     "ean": "5706957010707",
+     "url": "/unnu-231-v2-moebel/unnu231v2wh/",
+     "img": "hk:f676a423-4f64-4121-b03e-edbda29fa593",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "46",
+      "Vægt emballage (kg)": "47",
+      "Mål (emballage)": "56 x 47 x 165 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "155,1 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU231V2BK",
+     "label": "Sort",
+     "price": 7299,
+     "colorKey": "Black",
+     "ean": "5706957010691",
+     "url": "/unnu-231-v2-moebel/unnu231v2bk/",
+     "img": "hk:f4b07d24-c9de-48b0-b951-d0ff830ea065",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "47",
+      "Vægt emballage (kg)": "48",
+      "Mål (emballage)": "56 x 47 x 165 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "155,1 x 35,4 x 45 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU231V2OA",
+     "label": "Træfarvet",
+     "price": 9999,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690428",
+     "url": "/unnu-231-v2-moebel/unnu231v2oa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "39",
+      "Vægt emballage (kg)": "40",
+      "Mål (emballage)": "46 x 55,5 x 166,4 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNU231V2WA",
+     "label": "Brun",
+     "price": 9999,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690435",
+     "url": "/unnu-231-v2-moebel/unnu231v2wa/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "39",
+      "Vægt emballage (kg)": "40,1",
+      "Mål (emballage)": "56 x 36 x 165 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {
+    "Sektioner": "3",
+    "Hylder inkluderet": "3",
+    "Indvendig højde (cm)": "32,2 cm",
+    "Indvendig bredde (cm)": "155,1 cm",
+    "Indvendig dybde med bagplade (cm)": "37,8 cm",
+    "Indvendig dybde uden bagplade (cm)": "43 cm"
+   },
+   "rel": {
+    "acc": [
+     "UNNUWB",
+     "UNNUSTAND4",
+     "UNNU05BX",
+     "UNNUC21V2"
+    ],
+    "alt": [
+     "UNNUS11V2",
+     "UNNUD21V2",
+     "UNNUDRAW45V2"
     ]
    },
    "read": "2026-11-21"
@@ -89460,6 +90122,316 @@
       "Vægt (kg)": "0,2",
       "Vægt emballage (kg)": "1,2",
       "Mål (emballage)": "23 x 5 x 104 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {},
+   "rel": {},
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNUC13V2",
+   "brand": "unnu",
+   "model": "C13 v2",
+   "type": {
+    "key": "Fabricdoor",
+    "da": "Stofdør"
+   },
+   "cat": "/tilbehor/mobel-tilbehor/",
+   "url": "/unnu-c13-v2-stofdoer/unnuc13v2bk/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNUC13V2BK",
+     "label": "Sort",
+     "price": 1799,
+     "colorKey": "Black",
+     "ean": "5706957011070",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2bk/",
+     "img": "hk:342f5854-e3dc-4ab1-87d6-2974d5278104",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,2",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "23,5 x 4,5 x 157 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2WH",
+     "label": "Hvid",
+     "price": 1799,
+     "colorKey": "White",
+     "ean": "5706957011094",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2wh/",
+     "img": "hk:ee4baace-54c7-4b82-b76d-4fb81ade5207",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,2",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "25 x 5 x 160 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2GR",
+     "label": "Grå",
+     "price": 1799,
+     "colorKey": "Grey",
+     "hex": "#666666",
+     "ean": "5706957011704",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2gr/",
+     "img": "hk:50a93c25-8245-4c15-81b8-2c60c40d07ed",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "2,24",
+      "Vægt emballage (kg)": "2,24",
+      "Mål (emballage)": "24 x 5 x 157 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2COFEE",
+     "label": "Brun",
+     "price": 1799,
+     "colorKey": "Brown",
+     "hex": "#634832",
+     "ean": "5744003690794",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2cofee/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,4",
+      "Vægt emballage (kg)": "1,5",
+      "Mål (emballage)": "24 x 5 x 156 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2COAL",
+     "label": "Grå",
+     "price": 1799,
+     "colorKey": "Grey",
+     "hex": "#534F4C",
+     "ean": "5744003690763",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2coal/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "24 x 4,8 x 156 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2LATTE",
+     "label": "Grå",
+     "price": 1799,
+     "colorKey": "Grey",
+     "hex": "#817569",
+     "ean": "5744003690800",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2latte/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "2",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "24 x 5 x 157 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2SI",
+     "label": "Sølv",
+     "price": 1799,
+     "colorKey": "Silver",
+     "ean": "5706957011087",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2si/",
+     "img": "hk:261aa155-946c-4645-b300-10865468c980",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,2",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "24 x 4,5 x 157 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2FROST",
+     "label": "Frost",
+     "price": 1799,
+     "colorKey": "Blue",
+     "ean": "5744003690787",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2frost/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "2,1",
+      "Vægt emballage (kg)": "2,2",
+      "Mål (emballage)": "24 x 4,8 x 156 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC13V2CONCRETE",
+     "label": "Grå",
+     "price": 1799,
+     "colorKey": "Grey",
+     "hex": "#786F6A",
+     "ean": "5744003690770",
+     "url": "/unnu-c13-v2-stofdoer/unnuc13v2concrete/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,4",
+      "Vægt emballage (kg)": "1,5",
+      "Mål (emballage)": "24 x 5 x 156 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {},
+   "rel": {},
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNUC21V2",
+   "brand": "unnu",
+   "model": "C21 v2",
+   "type": {
+    "key": "Fabricdoor",
+    "da": "Stofdør"
+   },
+   "cat": "/tilbehor/mobel-tilbehor/",
+   "url": "/unnu-c21-v2-stofdoer/unnuc21v2gr/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNUC21V2BK",
+     "label": "Sort",
+     "price": 1199,
+     "colorKey": "Black",
+     "ean": "5706957011100",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2bk/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "0,18",
+      "Vægt emballage (kg)": "1,18",
+      "Mål (emballage)": "35 x 5,1 x 59 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2GR",
+     "label": "Grå",
+     "price": 1199,
+     "colorKey": "Grey",
+     "hex": "#666666",
+     "ean": "5706957011711",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2gr/",
+     "img": "hk:25d8f1bf-17c1-4326-b327-b3c0d11d226b",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,16",
+      "Vægt emballage (kg)": "1,16",
+      "Mål (emballage)": "35 x 5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2WH",
+     "label": "Hvid",
+     "price": 1199,
+     "colorKey": "White",
+     "ean": "5706957011155",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2wh/",
+     "img": "hk:f0e5a246-aedd-4b43-ad5a-a9cd6be161a5",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "0,18",
+      "Vægt emballage (kg)": "1,18",
+      "Mål (emballage)": "34 x 4,5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2COFEE",
+     "label": "Brun",
+     "price": 1199,
+     "colorKey": "Brown",
+     "hex": "#634832",
+     "ean": "7440036908933",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2cofee/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "1,15",
+      "Mål (emballage)": "34 x 5,5 x 50 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2COAL",
+     "label": "Grå",
+     "price": 1199,
+     "colorKey": "Grey",
+     "hex": "#534F4C",
+     "ean": "5744003690862",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2coal/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "1,2",
+      "Mål (emballage)": "34 x 5 x 68 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2CONCRETE",
+     "label": "Grå",
+     "price": 1199,
+     "colorKey": "Grey",
+     "hex": "#786F6A",
+     "ean": "5744003690879",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2concrete/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "1,2",
+      "Mål (emballage)": "34 x 5,5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2LATTE",
+     "label": "Grå",
+     "price": 1199,
+     "colorKey": "Grey",
+     "hex": "#817569",
+     "ean": "7440036909091",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2latte/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1,1",
+      "Vægt emballage (kg)": "1,15",
+      "Mål (emballage)": "34 x 5,5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2FROST",
+     "label": "Frost",
+     "price": 1199,
+     "colorKey": "Blue",
+     "ean": "5744003690886",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2frost/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "1",
+      "Vægt emballage (kg)": "1,5",
+      "Mål (emballage)": "34 x 5 x 58 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUC21V2SI",
+     "label": "Sølv",
+     "price": 1199,
+     "colorKey": "Silver",
+     "ean": "5706957011148",
+     "url": "/unnu-c21-v2-stofdoer/unnuc21v2si/",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "0,18",
+      "Vægt emballage (kg)": "1,18",
+      "Mål (emballage)": "35 x 5 x 58 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -89680,6 +90652,121 @@
       "Vægt (kg)": "1,6",
       "Vægt emballage (kg)": "2,6",
       "Mål (emballage)": "34 x 5 x 58 cm (bredde x højde x dybde)"
+     }
+    }
+   ],
+   "specs": {},
+   "rel": {},
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNUDRAW45V2",
+   "brand": "unnu",
+   "model": "Drawer 45 v2",
+   "type": {
+    "key": "Drawer",
+    "da": "Skuffe"
+   },
+   "cat": "/tilbehor/mobel-tilbehor/",
+   "url": "/unnu-drawer-45-v2-skuffe/unnudraw45v2wh/",
+   "kind": "furniture",
+   "scope": "pricelist",
+   "facets": {
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNUDRAW45V2WH",
+     "label": "Hvid",
+     "price": 1999,
+     "colorKey": "White",
+     "ean": "5706957010868",
+     "url": "/unnu-drawer-45-v2-skuffe/unnudraw45v2wh/",
+     "img": "hk:c47e6bf6-2fa6-4020-9ef3-2fc31e80c585",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "4,8",
+      "Vægt emballage (kg)": "5,8",
+      "Mål (emballage)": "45 x 17 x 53 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUDRAW45V2BK",
+     "label": "Sort",
+     "price": 1999,
+     "colorKey": "Black",
+     "ean": "5706957010851",
+     "url": "/unnu-drawer-45-v2-skuffe/unnudraw45v2bk/",
+     "img": "hk:435c7b22-130a-44ce-af8d-49dbdf23b79a",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "4,8",
+      "Vægt emballage (kg)": "5,8",
+      "Mål (emballage)": "39 x 18 x 53 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUDRAW45V2OA",
+     "label": "Træfarvet",
+     "price": 2499,
+     "colorKey": "Wood",
+     "hex": "#C6A27E",
+     "ean": "5744003690541",
+     "url": "/unnu-drawer-45-v2-skuffe/unnudraw45v2oa/",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "2",
+      "Vægt emballage (kg)": "2,5",
+      "Mål (emballage)": "39 x 18 x 53 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "UNNUDRAW45V2WA",
+     "label": "Brun",
+     "price": 2499,
+     "colorKey": "Brown",
+     "hex": "#773F1A",
+     "ean": "5744003690558",
+     "url": "/unnu-drawer-45-v2-skuffe/unnudraw45v2wa/",
+     "stock": "notInStockNonStockedItem"
+    }
+   ],
+   "specs": {
+    "Plads bag skuffer": "8 cm"
+   },
+   "rel": {},
+   "read": "2026-11-21"
+  },
+  {
+   "sku": "UNNUWB",
+   "brand": "unnu",
+   "model": "Wallbracket",
+   "type": {
+    "key": "WallBracket",
+    "da": "Vægbeslag"
+   },
+   "cat": "/tilbehor/andet-tilbehor/",
+   "url": "/unnu-wallbracket-vaegbeslag/unnuwb3/",
+   "kind": "mounting",
+   "scope": "pricelist",
+   "facets": {
+    "mount": "wall",
+    "axis": "colour"
+   },
+   "variants": [
+    {
+     "sku": "UNNUWB3",
+     "label": "WB3",
+     "price": 549,
+     "colorKey": "Silver",
+     "ean": "5706957011025",
+     "url": "/unnu-wallbracket-vaegbeslag/unnuwb3/",
+     "img": "hk:08a4ccd5-9b12-4440-b7d9-1b66f4aa03d1",
+     "stock": "externalPurchaseNotInStock",
+     "specs": {
+      "Vægt (kg)": "0,79",
+      "Vægt emballage (kg)": "0,79",
+      "Mål (emballage)": "13 x 4,5 x 17,5 cm (bredde x højde x dybde)"
      }
     }
    ],

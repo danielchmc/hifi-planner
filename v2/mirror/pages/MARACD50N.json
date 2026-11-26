@@ -189,12 +189,6 @@
    "url": "/stereo/cd-afspiller/",
    "id": 56169
   },
-  "stockItemAlternative": {
-   "save": "4.000,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=MARACD50N",
-   "availableQuantity": 1,
-   "lowestPrice": "9.500,-"
-  },
   "variants": [
    {
     "id": 229900,
@@ -249,8 +243,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
-     "availableQuantity": 7,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -348,7 +341,6 @@
      "description": "Forventes på lager lørdag den 30. januar",
      "deliveryDate": "2027-01-30T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
      "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
@@ -488,60 +480,82 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARACD50N leverer en varm, rummelig, slagkraftig og meget musikalsk lyd med et detaljeret stereoperspektiv og overbevisende cd-afspilning. Cd-lytning er en klar styrke, mens netværks- og streamingfunktionerne giver ekstra fleksibilitet, når de fungerer problemfrit. De største svagheder er det gammeldags display og en lejlighedsvis besværlig og upålidelig brugeroplevelse med HEOS og internetradio.",
+   "summary": "MARANTZ CD50N leverer en varm, rummelig, kraftfuld og meget musikalsk lyd med et detaljeret og balanceret stereoperspektiv. CD-afspilningen føles moden og engagerende, mens netværksfunktionerne giver nyttig alsidighed til streaming og internet-radio. Netværksopsætning, HEOS-betjening, menuer og det enkle display virker dog forældede, selv om helheden stadig er en begejstret anbefaling til lydorienterede lyttere.",
    "headlines": {
-    "warm, spacious and highly musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den detaljerede, balancerede, rummelige, kraftfulde og musikalske gengivelse, især i et komplet anlæg.",
-     "simpleTitle": "Varm, rummelig og meget musikalsk lyd",
+    "warm, spacious and musical sound": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmigt afspilleren for detaljeret, balanceret, rummelig og kraftfuld lyd med stor musikalitet.",
+     "simpleTitle": "Varm, rummelig og musikalsk lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "d0b70da8-2a8d-465e-88be-dd2bfb47535a"
+     "groupId": "cad7bc2e-4b3d-458a-b957-e4ae73b91244"
     },
-    "the interface feels dated and difficult": {
-     "sentimentAnalysis": "Anmeldelserne kritiserer det simple display, kryptiske menuer, vanskelig HEOS-betjening og besværlig opsætning af internetradio.",
-     "simpleTitle": "Brugerfladen virker gammeldags og besværlig",
+    "menus and display feel dated": {
+     "sentimentAnalysis": "Det lille, enkle display, kryptiske menuer, vanskelig betjening og en mangelfuld app får brugeroplevelsen til at virke mindre moderne end det eksklusive udtryk.",
+     "simpleTitle": "Menuer og display virker forældede",
      "bias": "negative",
-     "key": "user-interface",
-     "groupId": "99ad0bec-3164-4238-b492-79931a16edd8"
+     "key": "usability-display",
+     "groupId": "7d38f4ce-329c-4e7e-bb19-c4357a2f9d25"
     },
-    "a strong choice for CD listening": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver cd-afspilningen som moden, fornøjelig og pålidelig; cd-lytning er en central styrke.",
-     "simpleTitle": "Et stærkt valg til cd-lytning",
+    "cd playback is enjoyable and capable": {
+     "sentimentAnalysis": "CD-afspilning beskrives som god og fornøjelig, selv om en sammenligning kun finder begrænset forbedring i forhold til en ældre afspiller.",
+     "simpleTitle": "CD-afspilningen er god og kompetent",
      "bias": "positive",
      "key": "cd-playback",
-     "groupId": "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4"
+     "groupId": "0e2f5cdf-da5b-4cb3-8c3d-766091057930"
+    },
+    "network setup can be slow or difficult": {
+     "sentimentAnalysis": "Adgang til netværk og internet-radio kan tage lang tid at starte og kræve gentagne opsætningsforsøg.",
+     "simpleTitle": "Netværksopsætningen kan være langsom eller vanskelig",
+     "bias": "negative",
+     "key": "network-streaming",
+     "groupId": "9141c275-1812-427b-8b8c-558e325cb943"
+    },
+    "streaming services can be unreliable": {
+     "sentimentAnalysis": "Spotify Connect, Qobuz og den generelle app-oplevelse beskrives som præget af fastlåsninger, afbrydelser eller vanskelig betjening.",
+     "simpleTitle": "Streaming-tjenester kan være ustabile",
+     "bias": "negative",
+     "key": "network-streaming",
+     "groupId": "9141c275-1812-427b-8b8c-558e325cb943"
     }
    },
    "grouping": {
-    "d0b70da8-2a8d-465e-88be-dd2bfb47535a": {
+    "9141c275-1812-427b-8b8c-558e325cb943": {
+     "title": "Netværk og streaming",
+     "id": "9141c275-1812-427b-8b8c-558e325cb943",
+     "references": [
+      "38279a47-8590-4893-8c42-02e3afe147ec",
+      "965a1648-8170-49f3-b0ba-ec39e80744ea",
+      "d6af41df-5baa-4b71-9995-6947edd778f5",
+      "abfc22bf-428d-4d7a-9a00-67fb22a32ecc",
+      "1bdbbf69-f142-471b-90f4-2db041302843"
+     ]
+    },
+    "cad7bc2e-4b3d-458a-b957-e4ae73b91244": {
      "title": "Lydkvalitet",
-     "id": "d0b70da8-2a8d-465e-88be-dd2bfb47535a",
+     "id": "cad7bc2e-4b3d-458a-b957-e4ae73b91244",
      "references": [
       "38279a47-8590-4893-8c42-02e3afe147ec",
       "2cec66c8-9b51-49a4-b90a-432580307700",
-      "1bdbbf69-f142-471b-90f4-2db041302843",
       "69633139-3796-49c9-9a80-5d3a3615e045",
       "272a5238-01af-4bb0-89d6-f0ed95b37869"
      ]
     },
-    "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4": {
-     "title": "Cd-afspilning",
-     "id": "a8366cd6-dd9f-4dbf-880a-0c46f9f03eb4",
-     "references": [
-      "38279a47-8590-4893-8c42-02e3afe147ec",
-      "1bdbbf69-f142-471b-90f4-2db041302843",
-      "69633139-3796-49c9-9a80-5d3a3615e045",
-      "272a5238-01af-4bb0-89d6-f0ed95b37869"
-     ]
-    },
-    "99ad0bec-3164-4238-b492-79931a16edd8": {
-     "title": "Brugerflade",
-     "id": "99ad0bec-3164-4238-b492-79931a16edd8",
+    "7d38f4ce-329c-4e7e-bb19-c4357a2f9d25": {
+     "title": "Betjening og display",
+     "id": "7d38f4ce-329c-4e7e-bb19-c4357a2f9d25",
      "references": [
       "38279a47-8590-4893-8c42-02e3afe147ec",
       "965a1648-8170-49f3-b0ba-ec39e80744ea",
       "d6af41df-5baa-4b71-9995-6947edd778f5",
       "abfc22bf-428d-4d7a-9a00-67fb22a32ecc"
+     ]
+    },
+    "0e2f5cdf-da5b-4cb3-8c3d-766091057930": {
+     "title": "CD-afspilning",
+     "id": "0e2f5cdf-da5b-4cb3-8c3d-766091057930",
+     "references": [
+      "1bdbbf69-f142-471b-90f4-2db041302843",
+      "69633139-3796-49c9-9a80-5d3a3615e045"
      ]
     }
    },

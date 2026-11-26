@@ -143,6 +143,15 @@
     ]
    },
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Front i aluminium med ikonisk rundt display \n100% diskret opbygget forforstærker med separat ringkernetrafo\nAnalog Klasse D effektdel 2 x Hypex nCore NC500 OEM\nHDAM-SA3 kredsløb i forforstærker \nDedikeret MM/MC pladespillerindgang med HDAM-SA2 og Premium Phono EQ\nElektronisk volumenkontrol\nJustering af indgangsimpedans til pickup via drejeknap på front\nHøretelefon-udgang på front (6,3 mm)\nTredobbelt bundplade\nIndvendig afskærmning i kobber\nForgyldte terminaler\nIR-ind/ud\nPremium systemfjernbetjening i aluminium medfølger (RC002PMND)"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -169,15 +178,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Klasse D"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Front i aluminium med ikonisk rundt display \n100% diskret opbygget forforstærker med separat ringkernetrafo\nAnalog Klasse D effektdel 2 x Hypex nCore NC500 OEM\nHDAM-SA3 kredsløb i forforstærker \nDedikeret MM/MC pladespillerindgang med HDAM-SA2 og Premium Phono EQ\nElektronisk volumenkontrol\nJustering af indgangsimpedans til pickup via drejeknap på front\nHøretelefon-udgang på front (6,3 mm)\nTredobbelt bundplade\nIndvendig afskærmning i kobber\nForgyldte terminaler\nIR-ind/ud\nPremium systemfjernbetjening i aluminium medfølger (RC002PMND)"
      }
     ]
    },
@@ -272,7 +272,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -386,7 +386,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 4,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -475,32 +475,23 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARAMODEL30 leverer en usædvanligt musikalsk og medrivende gengivelse med varm, fyldig detalje, stram bas, tydelig imaging samt et bredt og dybt lydbillede. Stereooplevelsen føles som en markant opgradering, især sammen med gode højttalere og kilder, samtidig med at både kvaliteten og svaghederne i indspilninger bliver afsløret. Samlet set giver forstærkeren en engagerende, punchy og raffineret lytteoplevelse med særligt stærk værdi for krævende musikelskere.",
+   "summary": "MARAMODEL30 roses bredt som en meget musikalsk forstærker med varm, fyldig og engagerende lyd. Gengivelsen er rummelig og omsluttende med god baskontrol, tydelige detaljer og overbevisende stereoydelse. Den fremragende værdi for pengene og den ubesværede musikglæde skiller sig ud, selv om plastkonstruktionen og manglen på balancerede indgange nævnes som ulemper.",
    "headlines": {
-    "rich, detailed and enjoyable musical presentation": {
-     "sentimentAnalysis": "Lyden beskrives som detaljeret, fyldig, behagelig og meget fornøjelig til musiklytning.",
-     "simpleTitle": "Fyldig, detaljeret og behagelig musikgengivelse",
+    "warm, detailed and spacious sound": {
+     "sentimentAnalysis": "Forstærkeren roses for behagelig, fyldig og omsluttende gengivelse med kontrolleret bas samt et bredt og dybt lydbillede.",
+     "simpleTitle": "Varm, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "musicality",
-     "groupId": "09a7a99b-3bc0-418b-ae49-e2661c8dd2d8"
-    },
-    "clearer imaging and a wider, deeper soundstage": {
-     "sentimentAnalysis": "Forstærkeren roses for bedre rumlig klarhed og en bred, dyb gengivelse.",
-     "simpleTitle": "Tydeligere imaging samt et bredere og dybere lydbillede",
-     "bias": "positive",
-     "key": "soundstage",
-     "groupId": "09a7a99b-3bc0-418b-ae49-e2661c8dd2d8"
+     "key": "warm-detailed-spacious-sound",
+     "groupId": "ae20aec5-f66f-452d-afc9-d81bb1a9e6f1"
     }
    },
    "grouping": {
-    "09a7a99b-3bc0-418b-ae49-e2661c8dd2d8": {
+    "ae20aec5-f66f-452d-afc9-d81bb1a9e6f1": {
      "title": "Lydkvalitet",
-     "id": "09a7a99b-3bc0-418b-ae49-e2661c8dd2d8",
+     "id": "ae20aec5-f66f-452d-afc9-d81bb1a9e6f1",
      "references": [
       "784e7e9a-e42c-46da-99d5-0c22a850cc17",
       "0836af2e-8778-4080-ba00-7cea71d22e61",
-      "70bb2c6e-990d-4e3d-833b-d1db3e3c52e6",
-      "efb27c9f-ba00-43b1-86bf-a21d57e73272",
       "f12cf047-e9bb-4821-885e-41d1c056628d",
       "4dc36be7-07c8-4e10-9c2b-6ec030ed1065"
      ]

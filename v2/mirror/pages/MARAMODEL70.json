@@ -36,7 +36,7 @@
    "050f31ae-941f-4a0b-9844-125a7dda80ee",
    "f278e5e9-466d-4d20-b9d0-3f4c3bd2e6a8"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 290564,
@@ -101,6 +101,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "2-kanals integreret stereoforstærker\nAnalog Klasse AB-forstærker med Current Feedback Topology\nRingkernetrafo \nHDAM-SA3 kredsløb i effektdel\nDedikeret MM-pladespillerindgang \nLineær elektronisk volumenkontrol\n2-vejs Bluetooth med volumenkontrol til trådløse høretelefoner\nHøretelefon-udgang på front (6,3 mm)\nForgyldte terminaler\nSystemfjernbetjening medfølger (RC006PMCD)"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -161,15 +170,6 @@
      {
       "term": "Teknologier",
       "value": "aptX, aptX Adaptive, aptX HD, AAC"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "2-kanals integreret stereoforstærker\nAnalog Klasse AB-forstærker med Current Feedback Topology\nRingkernetrafo \nHDAM-SA3 kredsløb i effektdel\nDedikeret MM-pladespillerindgang \nLineær elektronisk volumenkontrol\n2-vejs Bluetooth med volumenkontrol til trådløse høretelefoner\nHøretelefon-udgang på front (6,3 mm)\nForgyldte terminaler\nSystemfjernbetjening medfølger (RC006PMCD)"
      }
     ]
    },
@@ -386,11 +386,12 @@
      "productCode": "MARAMODEL70SI"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 22. december",
-     "deliveryDate": "2026-12-22T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
-     "inventoryStatusType": "notInStockAtpDate"
+     "numberOfStoresExperience": 4,
+     "availableQuantity": 20,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

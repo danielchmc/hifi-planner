@@ -49,13 +49,13 @@
   },
   "recommendedAlternatives": {
    "productCodes": [
+    "MOFIFENSTRATPLUSM",
     "ARGTTAURORA",
     "ARGTTS",
     "DENDP3000NE",
     "MOFIMASTERDECK",
     "ARGTT4SE",
-    "ARGTT4MK2",
-    "MOFIFENSTRATPLUSM"
+    "ARGTT4MK2"
    ],
    "isOutlet": "false"
   },
@@ -158,10 +158,11 @@
      "productCode": "MARATT15S1WH"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "numberOfStoresExperience": 1,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

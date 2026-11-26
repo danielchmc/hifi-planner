@@ -364,7 +364,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 10,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -587,55 +587,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARACINEMA40 roses bredt for sin varme, detaljerede og kraftfulde lyd, der giver en medrivende oplevelse til både stereomusik og hjemmebiograf. Den stærke forstærkning, brede formatunderstøttelse og effektive rumkorrektion gør receiveren til en markant opgradering for mange anlæg. Installation og menuer er som regel overskuelige, men avancerede indstillinger, navigation og enkelte software- eller fjernbetjeningsfunktioner kan være unødigt komplicerede.",
+   "summary": "MARACINEMA40 leverer varm, kraftfuld og detaljeret lyd til både stereomusik og opslugende hjemmebiograf med rigelig kontrol over krævende højttalere. Nem opsætning, solid konstruktion og omfattende funktioner skaber en førsteklasses receiveroplevelse, selv om menuer, lydformatnavigation og visse softwareintegrationer kan føles unødigt komplicerede. High-end-ydelse, fleksible tilslutninger og tydelige forbedringer i forhold til ældre receivere gør produktet til en stærk anbefaling.",
    "headlines": {
-    "powerful, detailed sound for music and films": {
-     "sentimentAnalysis": "Receiveren beskrives gentagne gange som kraftfuld, klar og medrivende og er fremragende til både stereolytning og hjemmebiograf.",
-     "simpleTitle": "Kraftfuld, detaljeret lyd til musik og film",
+    "rich, powerful sound for music and cinema": {
+     "sentimentAnalysis": "Receiveren roses for kraftfuld, omsluttende hjemmebiograflyd og fremragende stereogengivelse.",
+     "simpleTitle": "Fyldig og kraftfuld lyd til musik og film",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0c3f0b4a-29cc-4b6d-9d6e-0c57d608b06d"
+     "groupId": "85d3771b-4bfe-4116-b5b4-c29cffac7409"
     },
-    "easy initial setup": {
-     "sentimentAnalysis": "Flere anmeldelser fortæller, at opsætningsassistenten, menuerne eller dokumentationen gør den første installation enkel.",
-     "simpleTitle": "Nem førstegangsopsætning",
+    "setup is often straightforward": {
+     "sentimentAnalysis": "Flere anmeldelser oplever opsætningen som enkel, veldokumenteret eller godt understøttet af en opsætningsassistent.",
+     "simpleTitle": "Opsætningen er ofte enkel",
      "bias": "positive",
      "key": "setup",
-     "groupId": "4c874f1e-7908-4588-b877-d5c22f07e58f"
+     "groupId": "ed1d9260-3248-4e77-b0e6-64ddb1cea5ee"
     },
-    "premium design and solid construction": {
-     "sentimentAnalysis": "Receiveren betragtes ofte som flot, gedigen og usædvanligt godt bygget.",
-     "simpleTitle": "Eksklusivt design og solid konstruktion",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "ebf930f8-6428-402c-8886-3b1c964dfa25"
-    },
-    "warm, full and musical presentation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver mere fylde, blødere diskant, bedre detaljer og en mere musikalsk gengivelse end tidligere udstyr.",
-     "simpleTitle": "Varm, fyldig og musikalsk gengivelse",
+    "clear detail and convincing upgrades": {
+     "sentimentAnalysis": "Anmeldelserne beskriver hørbare forbedringer i fylde, detaljer, billedkvalitet og rumkorrektion sammenlignet med tidligere udstyr.",
+     "simpleTitle": "Tydelige detaljer og overbevisende opgraderinger",
      "bias": "positive",
      "key": "sound",
-     "groupId": "0c3f0b4a-29cc-4b6d-9d6e-0c57d608b06d"
+     "groupId": "85d3771b-4bfe-4116-b5b4-c29cffac7409"
     },
-    "advanced menus and controls can be difficult": {
-     "sentimentAnalysis": "Nogle anmeldere synes, at navigation, valg af lydformat, Dirac-kalibrering eller skift mellem kilder og højttaleropsætninger er for kompliceret.",
-     "simpleTitle": "Avancerede menuer og betjening kan være vanskelige",
+    "menus and format navigation can be confusing": {
+     "sentimentAnalysis": "Nogle ejere kritiserer den uintuitive navigation, komplekse konfiguration og vanskelige adgang til bestemte funktioner.",
+     "simpleTitle": "Menuer og formatnavigation kan være forvirrende",
      "bias": "negative",
      "key": "setup",
-     "groupId": "4c874f1e-7908-4588-b877-d5c22f07e58f"
+     "groupId": "ed1d9260-3248-4e77-b0e6-64ddb1cea5ee"
     },
-    "streaming works well for multi-room music": {
-     "sentimentAnalysis": "Streamingkvaliteten roses, især til synkroniseret musik i flere rum, men funktionen er primært beregnet til musik og ikke distribueret filmlyd.",
-     "simpleTitle": "Streaming fungerer godt til multiroom-musik",
+    "premium construction and attractive design": {
+     "sentimentAnalysis": "Receiveren roses for sit elegante udseende, solide konstruktion og førsteklasses haptik.",
+     "simpleTitle": "Førsteklasses konstruktion og flot design",
      "bias": "positive",
+     "key": "design",
+     "groupId": "1ef4dd39-4cc0-4293-a91b-25248870a04f"
+    },
+    "streaming sounds good but has limitations": {
+     "sentimentAnalysis": "Streamingkvaliteten roses, mens multiroom-brug har begrænsninger som manglende synkroniseret filmlyd og Bluetooth-udfald.",
+     "simpleTitle": "Streaming lyder godt, men har begrænsninger",
+     "bias": "meh",
      "key": "streaming",
-     "groupId": "6300fef4-2163-4829-9239-458d4824a82e"
+     "groupId": "fe0e9dad-9d3c-4aa6-bbbc-caf9ef21fcce"
     }
    },
    "grouping": {
-    "0c3f0b4a-29cc-4b6d-9d6e-0c57d608b06d": {
+    "85d3771b-4bfe-4116-b5b4-c29cffac7409": {
      "title": "Lydkvalitet",
-     "id": "0c3f0b4a-29cc-4b6d-9d6e-0c57d608b06d",
+     "id": "85d3771b-4bfe-4116-b5b4-c29cffac7409",
      "references": [
       "c8a31b16-50c3-408c-84e4-362e337408a2",
       "5019e6b9-168a-4e25-98ad-7840906ce9db",
@@ -647,7 +647,6 @@
       "f96d1cd3-3ad7-4536-a8f7-30e198dfd6c9",
       "1f7c8643-5c9f-468e-af20-5336785d29f4",
       "6ab821f5-e23c-4617-b724-441839a286d4",
-      "da9cef08-bc0b-42ac-abc6-848d5a96359d",
       "8bb8b035-c038-4c65-8bc0-6d1471d18cad",
       "abde6226-fe3d-47a7-8d21-fcfce0ff02a4",
       "f8b65cec-6c01-4787-842c-c47376b0aa2f",
@@ -663,42 +662,38 @@
       "e9f35763-aaa3-49f0-bfd6-3cca10c7a22a"
      ]
     },
-    "4c874f1e-7908-4588-b877-d5c22f07e58f": {
-     "title": "Installation og betjening",
-     "id": "4c874f1e-7908-4588-b877-d5c22f07e58f",
+    "ed1d9260-3248-4e77-b0e6-64ddb1cea5ee": {
+     "title": "Opsætning og betjening",
+     "id": "ed1d9260-3248-4e77-b0e6-64ddb1cea5ee",
      "references": [
-      "93100269-247e-428d-9700-0cce1bb4cbfb",
       "88ebe8fb-b693-4479-a4ef-1c79da3920f5",
       "2dd905b1-7f33-4828-a4b7-19f921b7c051",
       "7c5733c3-f522-4fd2-a967-d83ba912b2fd",
       "da9cef08-bc0b-42ac-abc6-848d5a96359d",
       "abde6226-fe3d-47a7-8d21-fcfce0ff02a4",
       "2295de48-bfb7-4d03-99cc-4f9a2a0efbb2",
-      "65d8f1ba-555e-4789-b5a2-09e56579f378",
       "45895124-1eb9-4c83-8d59-9716c88e1e5e",
+      "1a95ace1-5be9-48c4-9f28-a27c9e80ce18",
       "5bb8346d-eaef-4aed-9183-724c96a2056f",
       "ca348462-5e4f-4746-aeab-df7648f454e9",
       "e9f35763-aaa3-49f0-bfd6-3cca10c7a22a"
      ]
     },
-    "ebf930f8-6428-402c-8886-3b1c964dfa25": {
+    "1ef4dd39-4cc0-4293-a91b-25248870a04f": {
      "title": "Design og byggekvalitet",
-     "id": "ebf930f8-6428-402c-8886-3b1c964dfa25",
+     "id": "1ef4dd39-4cc0-4293-a91b-25248870a04f",
      "references": [
-      "c8a31b16-50c3-408c-84e4-362e337408a2",
       "5019e6b9-168a-4e25-98ad-7840906ce9db",
       "dd9acb9d-bac9-4707-a388-ef9fef8cda70",
       "1f7c8643-5c9f-468e-af20-5336785d29f4",
-      "644e0c7a-f50b-49e0-b18a-997f59463158",
       "6ab821f5-e23c-4617-b724-441839a286d4",
-      "45895124-1eb9-4c83-8d59-9716c88e1e5e",
       "05b9964a-57e2-48a1-a13e-b2f48166730b",
       "e9f35763-aaa3-49f0-bfd6-3cca10c7a22a"
      ]
     },
-    "6300fef4-2163-4829-9239-458d4824a82e": {
-     "title": "Streaming og tilslutning",
-     "id": "6300fef4-2163-4829-9239-458d4824a82e",
+    "fe0e9dad-9d3c-4aa6-bbbc-caf9ef21fcce": {
+     "title": "Streaming og multiroom",
+     "id": "fe0e9dad-9d3c-4aa6-bbbc-caf9ef21fcce",
      "references": [
       "ac3836d5-7855-4ca2-bff3-d40837beb7a6",
       "8bb8b035-c038-4c65-8bc0-6d1471d18cad"

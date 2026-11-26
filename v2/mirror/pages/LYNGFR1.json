@@ -302,7 +302,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 20,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -358,34 +358,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGFR1 leverer en bemærkelsesværdig klar, ren og engagerende lyd med en varm og fyldig gengivelse, der overgår forventningerne til den kompakte størrelse. Højttalerne passer godt sammen med forskellige forstærkere og streamere, mens en subwoofer tilfører det sidste lag dyb og punchy bas. Den samlede lyd er meget behagelig og medrivende, selv om diskanten kan virke lidt fremtrædende for lyttere, der foretrækker en blødere balance.",
+   "summary": "LYNGFR1 leverer en ren, varm og meget medrivende lyd med en imponerende fyldig og punchy gengivelse i forhold til den kompakte størrelse. Lydscenen er raffineret og omsluttende, hvilket gør højttaleren til et fremragende valg, når gulvhøjttalere ikke er praktiske. En subwoofer tilfører det sidste lag dybbas og fuldender gengivelsen for lyttere, der ønsker et fyldigere basfundament.",
    "headlines": {
-    "clear, clean and highly enjoyable sound": {
-     "sentimentAnalysis": "Højttalerne roses gentagne gange for en usædvanligt klar, ren, smuk og behagelig lyd.",
-     "simpleTitle": "Klar, ren og meget behagelig lyd",
+    "clean, rich and engaging sound": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående den rene, fremragende og attraktive lyd, og en anmeldelse fremhæver især den fyldige lyd i forhold til den kompakte størrelse.",
+     "simpleTitle": "Ren, fyldig og medrivende lyd",
      "bias": "positive",
-     "key": "clear-clean-sound",
-     "groupId": "63f58743-6d9b-403d-a1da-a0beab9ffd1c"
+     "key": "sound-quality",
+     "groupId": "1dee451d-7d4a-470a-8e9c-66d70e2d8033"
     },
-    "a full-bodied sound from a compact speaker": {
-     "sentimentAnalysis": "Det kompakte format forbindes med en overraskende rig og fyldig gengivelse og egner sig især, hvor gulvhøjttalere er upraktiske.",
-     "simpleTitle": "Fyldig lyd fra en kompakt højttaler",
-     "bias": "positive",
-     "key": "full-sound-size",
-     "groupId": "63f58743-6d9b-403d-a1da-a0beab9ffd1c"
-    },
-    "a subwoofer adds the missing low-end depth": {
-     "sentimentAnalysis": "En subwoofer anbefales som en effektiv måde at fuldende gengivelsen med dybere og kraftigere bas.",
-     "simpleTitle": "En subwoofer tilføjer den manglende dybde i bassen",
-     "bias": "positive",
-     "key": "subwoofer-depth",
-     "groupId": "47b13482-7711-4087-963e-c969ca618437"
+    "subwoofer deepens the bass": {
+     "sentimentAnalysis": "Højttaleren leverer overbevisende bas, men begge kommentarer peger på, at en subwoofer er nødvendig eller meget fordelagtig for den dybeste og fyldigste basgengivelse.",
+     "simpleTitle": "Subwoofer udvider bassen",
+     "bias": "negative",
+     "key": "bass",
+     "groupId": "48c369f6-4895-4b46-8fd5-16b66ad3d8e1"
     }
    },
    "grouping": {
-    "63f58743-6d9b-403d-a1da-a0beab9ffd1c": {
+    "1dee451d-7d4a-470a-8e9c-66d70e2d8033": {
      "title": "Lydkvalitet",
-     "id": "63f58743-6d9b-403d-a1da-a0beab9ffd1c",
+     "id": "1dee451d-7d4a-470a-8e9c-66d70e2d8033",
      "references": [
       "50882f4c-f8a3-4850-bf20-bd8d7e8d71f3",
       "f8c5c03a-e867-491d-8461-0c7d070c0de1",
@@ -398,9 +391,9 @@
       "75349670-1a48-453d-96b0-c31606515fa0"
      ]
     },
-    "47b13482-7711-4087-963e-c969ca618437": {
-     "title": "Bas og subwoofer",
-     "id": "47b13482-7711-4087-963e-c969ca618437",
+    "48c369f6-4895-4b46-8fd5-16b66ad3d8e1": {
+     "title": "Bas",
+     "id": "48c369f6-4895-4b46-8fd5-16b66ad3d8e1",
      "references": [
       "bb45db5e-6640-40ba-bbca-788e1545c1cd",
       "40261b45-c99f-4c75-a7b5-3f0a4e890ab9"

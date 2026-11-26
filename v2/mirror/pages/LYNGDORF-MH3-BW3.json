@@ -177,7 +177,8 @@
    "inventoryStatus": {
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
-    "canBuyOnline": true
+    "canBuyOnline": true,
+    "numberOfStoresExperiencePartly": 1
    }
   },
   "variantNavigationType": "dropDown",

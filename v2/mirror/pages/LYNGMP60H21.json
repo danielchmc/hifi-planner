@@ -65,6 +65,49 @@
   },
   "techSpecs": [
    {
+    "index": 10,
+    "title": "Produktdata",
+    "content": [
+     {
+      "term": "Fjernbetjening",
+      "value": "Ja"
+     },
+     {
+      "term": "Timer",
+      "value": "Nej"
+     },
+     {
+      "term": "Radio type",
+      "value": "Internet radio"
+     },
+     {
+      "term": "Bi-amping",
+      "value": "Nej"
+     },
+     {
+      "term": "Zoner",
+      "value": "2"
+     },
+     {
+      "term": "Automatisk tænd/sluk",
+      "value": "Ja"
+     },
+     {
+      "term": "Teknologier",
+      "value": "Room Perfect"
+     }
+    ]
+   },
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "16-kanals surround-processor \nFinish i aluminium og glas \nAnalog Devices dekodere  \n8 x 400 MIPS DSP / D/A-konvertere\nRoomPerfect / Advanced Bass Management \nPost-processing audioformater: Dolby Surround, DTS Neural:X, AURO-MATIC\n32 justerbare voicings, hver med op til 8 filtre (via browser-interface, PC/Mac)\nHDMI 2.1 med 8K 50/60Hz, 40Gbps, 4K 100/120Hz, HDCP 2.3, eARC, Dynamic Lip Sync, ALLM, QMS, TMDS, Dynamic HDR/HDR10+, HLG, Dolby Vision m.m.\nSamtidigt output med individuelt kildevalg på HDMI-udgange \nStereo kan opmixes til surround-format \nAsynkront design på alle digitale indgange \nKan software-opgraderes via netværk eller USB \nBackup af alle indstillinger og kalibrering via USB eller SD-kort \nIP-interface\nKan rackmonteres \nElektronisk beskyttet mod overbelastning \nMedfølgende tilbehør: RoomPerfect-mikrofon, mikrofonstativ/-kabel, IR/RF-fjernbetjening, rack-håndtag \n\nOptional modules (installed at HiFi Klubben’s service center): \n16 channel DCI-compliant digital AES/EBU input for movie servers (≤192kHz/32bit) / DB25), \n16 channel digital AES/EBU speaker output channels (Fix 97,565kHz/24bit / DB25), \n16 channel AES67 digital AES/EBU speaker output channels (Fix 48kHz/24bit / RJ45)\n"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -111,49 +154,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Airplay 2, Spotify Connect"
-     }
-    ]
-   },
-   {
-    "index": 10,
-    "title": "Produktdata",
-    "content": [
-     {
-      "term": "Fjernbetjening",
-      "value": "Ja"
-     },
-     {
-      "term": "Timer",
-      "value": "Nej"
-     },
-     {
-      "term": "Radio type",
-      "value": "Internet radio"
-     },
-     {
-      "term": "Bi-amping",
-      "value": "Nej"
-     },
-     {
-      "term": "Zoner",
-      "value": "2"
-     },
-     {
-      "term": "Automatisk tænd/sluk",
-      "value": "Ja"
-     },
-     {
-      "term": "Teknologier",
-      "value": "Room Perfect"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "16-kanals surround-processor \nFinish i aluminium og glas \nAnalog Devices dekodere  \n8 x 400 MIPS DSP / D/A-konvertere\nRoomPerfect / Advanced Bass Management \nPost-processing audioformater: Dolby Surround, DTS Neural:X, AURO-MATIC\n32 justerbare voicings, hver med op til 8 filtre (via browser-interface, PC/Mac)\nHDMI 2.1 med 8K 50/60Hz, 40Gbps, 4K 100/120Hz, HDCP 2.3, eARC, Dynamic Lip Sync, ALLM, QMS, TMDS, Dynamic HDR/HDR10+, HLG, Dolby Vision m.m.\nSamtidigt output med individuelt kildevalg på HDMI-udgange \nStereo kan opmixes til surround-format \nAsynkront design på alle digitale indgange \nKan software-opgraderes via netværk eller USB \nBackup af alle indstillinger og kalibrering via USB eller SD-kort \nIP-interface\nKan rackmonteres \nElektronisk beskyttet mod overbelastning \nMedfølgende tilbehør: RoomPerfect-mikrofon, mikrofonstativ/-kabel, IR/RF-fjernbetjening, rack-håndtag \n\nOptional modules (installed at HiFi Klubben’s service center): \n16 channel DCI-compliant digital AES/EBU input for movie servers (≤192kHz/32bit) / DB25), \n16 channel digital AES/EBU speaker output channels (Fix 97,565kHz/24bit / DB25), \n16 channel AES67 digital AES/EBU speaker output channels (Fix 48kHz/24bit / RJ45)\n"
      }
     ]
    },

@@ -253,7 +253,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 8,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -468,48 +468,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARAMODEL50 leverer en varm, detaljeret og medrivende stereogengivelse med et bredt lydbillede, punchy bas og overbevisende dynamik. Rigelig effekt, en stærk phono-forforstærker, solid forarbejdning og enkel betjening gør forstærkeren til et særdeles tilfredsstillende valg til både musik og hjemmebio. Samlet set opleves MARAMODEL50 som en førsteklasses, musikalsk og særdeles engagerende forstærker.",
+   "summary": "Marantz Model 50 leverer en varm, slagkraftig og meget detaljeret lyd med et bredt og medrivende lydbillede, kraftfuld bas og overbevisende musikalitet. Effekten virker tilstrækkelig til en lang række højttalere, mens især phono-forforstærkeren, byggekvaliteten og den behagelige betjening får ros. Med raffineret lyd til lang tids lytning, engagerende dynamik og elegant konstruktion betragtes Model 50 som en særdeles tilfredsstillende stereoforstærker.",
    "headlines": {
-    "warm, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den varme, afbalancerede og meget detaljerede gengivelse med bred, medrivende scene samt tydelig adskillelse af vokaler og instrumenter.",
-     "simpleTitle": "Varm, detaljeret og rummelig lyd",
+    "warm, spacious and immersive sound": {
+     "sentimentAnalysis": "Forstærkeren roses gentagne gange for en varm, rummelig og medrivende gengivelse, der placerer stemmer og instrumenter levende i rummet.",
+     "simpleTitle": "Varm, rummelig og medrivende lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "e2e13024-cffe-4c91-8477-f184b450dc2c"
+     "key": "warm_spacious_sound",
+     "groupId": "9f45ce4c-3e3c-49a8-a273-fd08badc438a"
     },
-    "punchy bass and strong dynamics": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver fyldigere bas, stram basgengivelse og livlig dynamik som vigtige styrker ved forstærkeren.",
-     "simpleTitle": "Punchy bas og stærk dynamik",
+    "detailed and nuanced presentation": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den klare detaljegengivelse, afbalancerede klang og fine musikalske nuancer.",
+     "simpleTitle": "Detaljeret og nuanceret gengivelse",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "e2e13024-cffe-4c91-8477-f184b450dc2c"
+     "key": "detailed_nuanced_sound",
+     "groupId": "9f45ce4c-3e3c-49a8-a273-fd08badc438a"
     },
-    "solid, premium construction": {
-     "sentimentAnalysis": "Anmeldelserne forbinder forstærkeren med høj kvalitet, solid forarbejdning og Marantz' velkendte kvalitetsniveau.",
-     "simpleTitle": "Solid konstruktion i høj kvalitet",
+    "premium construction and quality": {
+     "sentimentAnalysis": "Anmeldelserne forbinder samstemmende forstærkeren med høj kvalitet, solid konstruktion og den velkendte Marantz-standard.",
+     "simpleTitle": "Førsteklasses konstruktion og kvalitet",
      "bias": "positive",
-     "key": "build",
-     "groupId": "1a750595-d592-41df-928b-5dd54579cfb8"
+     "key": "premium_construction",
+     "groupId": "c690edae-f9fd-42ec-a9d9-29f828e17ab2"
     },
-    "ample power for speakers": {
-     "sentimentAnalysis": "Anmeldelserne beskriver forstærkeren som tilstrækkeligt kraftig til lytterummet og markant slagkraftig i gengivelsen.",
-     "simpleTitle": "Rigelig effekt til højttalere",
+    "strong, ample power": {
+     "sentimentAnalysis": "Effekten beskrives som mere end tilstrækkelig til at drive højttalere og som tydeligt kraftfuld i daglig lytning.",
+     "simpleTitle": "Kraftig og tilstrækkelig effekt",
      "bias": "positive",
-     "key": "power",
-     "groupId": "05809ba3-870c-4df1-9fea-183466d10fff"
+     "key": "strong_power",
+     "groupId": "5efb1164-e424-4784-a681-5dd1874bcc0f"
     },
-    "capable phono stage": {
-     "sentimentAnalysis": "Anmeldelserne roser specifikt den indbyggede phonoforstærker som en værdifuld og velfungerende funktion.",
-     "simpleTitle": "Godt phonotrin",
+    "high-quality phono stage": {
+     "sentimentAnalysis": "Den integrerede phono-forforstærker roses specifikt for sin kvalitet og sit bidrag til forstærkerens samlede appel.",
+     "simpleTitle": "Phono-forforstærker i høj kvalitet",
      "bias": "positive",
-     "key": "phono",
-     "groupId": "07c4841c-2035-4035-83c0-f54e69d876f0"
+     "key": "phono_quality",
+     "groupId": "92560cdc-779f-4d37-b734-33fa286a2acf"
     }
    },
    "grouping": {
-    "e2e13024-cffe-4c91-8477-f184b450dc2c": {
+    "9f45ce4c-3e3c-49a8-a273-fd08badc438a": {
      "title": "Lydkvalitet",
-     "id": "e2e13024-cffe-4c91-8477-f184b450dc2c",
+     "id": "9f45ce4c-3e3c-49a8-a273-fd08badc438a",
      "references": [
       "61348eb8-5549-4b75-984e-4baab4b1970d",
       "b11ddc0c-d522-4c59-b75a-ab95c969093e",
@@ -524,26 +524,26 @@
       "1ef7fee7-af5f-409e-89d3-c227bb94bcb2"
      ]
     },
-    "1a750595-d592-41df-928b-5dd54579cfb8": {
-     "title": "Byggekvalitet og design",
-     "id": "1a750595-d592-41df-928b-5dd54579cfb8",
+    "c690edae-f9fd-42ec-a9d9-29f828e17ab2": {
+     "title": "Byggekvalitet",
+     "id": "c690edae-f9fd-42ec-a9d9-29f828e17ab2",
      "references": [
       "285fe79e-e425-46d6-93e4-7fe82b593811",
       "891f2f6b-c4e3-49af-bdcb-b1d2eabae2bf",
       "5f67de2c-f030-4e02-bff4-fe4e061a60f7"
      ]
     },
-    "05809ba3-870c-4df1-9fea-183466d10fff": {
+    "5efb1164-e424-4784-a681-5dd1874bcc0f": {
      "title": "Effekt",
-     "id": "05809ba3-870c-4df1-9fea-183466d10fff",
+     "id": "5efb1164-e424-4784-a681-5dd1874bcc0f",
      "references": [
       "e19d1ffe-7b85-4c18-a3cc-98e004ea0636",
       "ff44dab5-e9c2-42be-9023-8d85e1d51cfa"
      ]
     },
-    "07c4841c-2035-4035-83c0-f54e69d876f0": {
-     "title": "Phonotrin",
-     "id": "07c4841c-2035-4035-83c0-f54e69d876f0",
+    "92560cdc-779f-4d37-b734-33fa286a2acf": {
+     "title": "Phono-forforstærker",
+     "id": "92560cdc-779f-4d37-b734-33fa286a2acf",
      "references": [
       "13c70e06-62f6-4148-9fe7-82961f84004c",
       "a1c7a751-b0af-4849-950c-15bf87ffbba5"

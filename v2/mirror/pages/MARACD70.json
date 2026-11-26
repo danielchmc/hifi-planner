@@ -86,6 +86,37 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "CD-afspiller \nMarantz HDAM SA-2 teknologi \nPræcisions CD-mekanisme\nVFD-display med dimmer/off\nAudiofil diskret opbygget høretelefon-forstærker med egen volumenkontrol (HDAM-SA2, Low/Mid/High gain, 6,3mm jack)\nDiskformater: CD, CD-R/RW \nUSB-A indgang på front (Mass Storage, 5V/1A) (192/24), ALAC (96/24), WAV/AIFF (192/24), MP3, WMA, AAC \nLydformater via USB: DSD (<5,6MHz), FLAC/FLAC HD \nIR-ud til kontrol af kompatible Marantz-forstærkere m.m.\nForgyldte terminaler\nSystemfjernbetjening medfølger (RC006PMCD)"
+     }
+    ]
+   },
+   {
+    "index": 10,
+    "title": "Produktdata",
+    "content": [
+     {
+      "term": "Bi-amping",
+      "value": "Nej"
+     },
+     {
+      "term": "Fjernbetjening",
+      "value": "Ja"
+     },
+     {
+      "term": "Stemmestyring",
+      "value": "Nej"
+     },
+     {
+      "term": "Teknologier",
+      "value": "aptX, aptX Adaptive, aptX HD, AAC"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -128,37 +159,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang"
-     }
-    ]
-   },
-   {
-    "index": 10,
-    "title": "Produktdata",
-    "content": [
-     {
-      "term": "Bi-amping",
-      "value": "Nej"
-     },
-     {
-      "term": "Fjernbetjening",
-      "value": "Ja"
-     },
-     {
-      "term": "Stemmestyring",
-      "value": "Nej"
-     },
-     {
-      "term": "Teknologier",
-      "value": "aptX, aptX Adaptive, aptX HD, AAC"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "CD-afspiller \nMarantz HDAM SA-2 teknologi \nPræcisions CD-mekanisme\nVFD-display med dimmer/off\nAudiofil diskret opbygget høretelefon-forstærker med egen volumenkontrol (HDAM-SA2, Low/Mid/High gain, 6,3mm jack)\nDiskformater: CD, CD-R/RW \nUSB-A indgang på front (Mass Storage, 5V/1A) (192/24), ALAC (96/24), WAV/AIFF (192/24), MP3, WMA, AAC \nLydformater via USB: DSD (<5,6MHz), FLAC/FLAC HD \nIR-ud til kontrol af kompatible Marantz-forstærkere m.m.\nForgyldte terminaler\nSystemfjernbetjening medfølger (RC006PMCD)"
      }
     ]
    },
@@ -263,7 +263,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 51,
+     "availableQuantity": 43,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -361,7 +361,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 29,
+     "availableQuantity": 42,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -417,61 +417,65 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARACD70 får bred ros for varm, detaljeret og meget behagelig CD-lyd til en attraktiv pris samt gode funktioner og et flot design. Den kompetente hovedtelefonforstærker og den problemfri kombination med Marantz Stereo 70-systemer giver ekstra alsidighed, mens byggekvaliteten virker lidt prisorienteret, og CD-skuffen kunne være mere solid. Samlet set leverer afspilleren en omsluttende, slagkraftig lytteoplevelse og fremragende værdi.",
+   "summary": "MARACD70 roses bredt for varm, detaljeret og behagelig CD-gengivelse med en dynamisk og musikalsk lyd, der føles som en klar opgradering i forhold til mere enkle kilder. Det elegante design, de gode funktioner og den stærke værdi gør afspilleren til et særligt attraktivt match til Marantz Stereo 70-systemer. Byggekvaliteten er generelt god, selv om CD-skuffen og den overordnede konstruktion virker lidt mindre solide end på dyrere Marantz-komponenter.",
    "headlines": {
     "rich, enjoyable sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent lyden som meget god, behagelig og en klar forbedring i forhold til mindre specialiseret afspilningsudstyr.",
-     "simpleTitle": "Fyldig, behagelig lyd",
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, musikalsk og behagelig samt tydeligt bedre end fra enklere enheder.",
+     "simpleTitle": "Fyldig og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "a764a755-8367-446c-b01e-05c9f19a094e"
+     "groupId": "7eaabe0b-d8a6-49b1-b90a-0a3dc32aec59"
     },
-    "excellent price-to-performance": {
-     "sentimentAnalysis": "Afspilleren vurderes gentagne gange som særdeles attraktiv til prisen, hvor ydeevnen opvejer kompromiser i byggekvaliteten.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "strong value at the price": {
+     "sentimentAnalysis": "Afspilleren anses for særligt overbevisende i forhold til pris og klasse, selv sammenlignet med bedre alternativer.",
+     "simpleTitle": "Stærk værdi til prisen",
      "bias": "positive",
      "key": "value",
-     "groupId": "1736853b-313e-4062-bd46-61c777826c67"
+     "groupId": "133107f7-937c-40e2-8fe5-0e8fbffe9d7c"
     },
-    "versatile functionality": {
-     "sentimentAnalysis": "Funktionaliteten vurderes som stærk, blandt andet med en særdeles kompetent hovedtelefonforstærker og nyttige afspilningsmuligheder.",
-     "simpleTitle": "Alsidige funktioner",
+    "elegant appearance": {
+     "sentimentAnalysis": "Designet roses gentagne gange som attraktivt og stilfuldt og understøtter produktets lydpræstation.",
+     "simpleTitle": "Elegant udseende",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "a764a755-8367-446c-b01e-05c9f19a094e"
+     "key": "design",
+     "groupId": "c2259f7d-acc4-4d17-9296-eeca2339f6fb"
     },
-    "attractive design": {
-     "sentimentAnalysis": "Produktet beskrives gentagne gange som flot, og designet bidrager til helhedsindtrykket.",
-     "simpleTitle": "Flot design",
+    "ideal match with Stereo 70": {
+     "sentimentAnalysis": "Kombinationen med Marantz Stereo 70 beskrives som problemfri og musikalsk tilfredsstillende, især med et passende højttalersystem.",
+     "simpleTitle": "Ideelt match til Stereo 70",
      "bias": "positive",
-     "key": "design_build",
-     "groupId": "99c258b9-ae4a-4a37-9213-e0d1ddfbef67"
+     "key": "system",
+     "groupId": "4fd2d51d-4ac6-4b35-9445-bfb0ee42eafd"
     },
-    "budget-feeling construction": {
-     "sentimentAnalysis": "Nogle anmeldelser finder byggekvaliteten mindre eksklusiv end forventet og har især forbehold over for CD-skuffen.",
-     "simpleTitle": "Enkel byggekvalitet",
+    "construction feels slightly budget-oriented": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at konstruktionen virker mindre solid end på dyrere Marantz-udstyr, især omkring CD-skuffen.",
+     "simpleTitle": "Konstruktionen virker lidt enkel",
      "bias": "negative",
-     "key": "design_build",
-     "groupId": "99c258b9-ae4a-4a37-9213-e0d1ddfbef67"
+     "key": "design",
+     "groupId": "c2259f7d-acc4-4d17-9296-eeca2339f6fb"
     }
    },
    "grouping": {
-    "a764a755-8367-446c-b01e-05c9f19a094e": {
+    "7eaabe0b-d8a6-49b1-b90a-0a3dc32aec59": {
      "title": "Lydkvalitet",
-     "id": "a764a755-8367-446c-b01e-05c9f19a094e",
+     "id": "7eaabe0b-d8a6-49b1-b90a-0a3dc32aec59",
      "references": [
+      "db0d23b9-2586-4e14-967f-5de47f79f93d",
+      "5dafbacb-870d-4742-8297-1d517c5068d0",
       "7e225265-3880-4cd5-8f0d-6b869d54a0f4",
       "48561060-f9d5-46a9-a48d-2ef66cc8169e",
       "2c106cc6-291f-4b0d-8b33-0e91b224c46a",
       "5ba0fe4a-1b3d-47a4-a940-85edac835ccc",
       "d3631b2f-a9f8-4709-b1b7-866f5abb8d1d",
       "a4589e6c-344f-43bd-a41b-893411c216c7",
+      "cd492a76-b6a5-4cef-9fe6-4b3ba40f30de",
+      "b69a2d4d-f608-4872-9eb9-fc16d018171e",
       "7f216b47-5bea-48b2-b328-4243e567a11c"
      ]
     },
-    "1736853b-313e-4062-bd46-61c777826c67": {
+    "133107f7-937c-40e2-8fe5-0e8fbffe9d7c": {
      "title": "Værdi for pengene",
-     "id": "1736853b-313e-4062-bd46-61c777826c67",
+     "id": "133107f7-937c-40e2-8fe5-0e8fbffe9d7c",
      "references": [
       "48561060-f9d5-46a9-a48d-2ef66cc8169e",
       "d3631b2f-a9f8-4709-b1b7-866f5abb8d1d",
@@ -479,25 +483,33 @@
       "b69a2d4d-f608-4872-9eb9-fc16d018171e"
      ]
     },
-    "99c258b9-ae4a-4a37-9213-e0d1ddfbef67": {
+    "c2259f7d-acc4-4d17-9296-eeca2339f6fb": {
      "title": "Design og byggekvalitet",
-     "id": "99c258b9-ae4a-4a37-9213-e0d1ddfbef67",
+     "id": "c2259f7d-acc4-4d17-9296-eeca2339f6fb",
      "references": [
       "7e225265-3880-4cd5-8f0d-6b869d54a0f4",
       "48561060-f9d5-46a9-a48d-2ef66cc8169e",
       "2c106cc6-291f-4b0d-8b33-0e91b224c46a"
      ]
+    },
+    "4fd2d51d-4ac6-4b35-9445-bfb0ee42eafd": {
+     "title": "Systemkompatibilitet",
+     "id": "4fd2d51d-4ac6-4b35-9445-bfb0ee42eafd",
+     "references": [
+      "5dafbacb-870d-4742-8297-1d517c5068d0",
+      "2c106cc6-291f-4b0d-8b33-0e91b224c46a"
+     ]
     }
    },
-   "rating": 4.78947368421053,
-   "count": 19,
-   "reviewCount": 11,
+   "rating": 4.80952380952381,
+   "count": 21,
+   "reviewCount": 12,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 4,
-    "5": 15
+    "5": 17
    }
   },
   "boxContent": [

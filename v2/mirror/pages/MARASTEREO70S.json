@@ -94,7 +94,6 @@
   "recommendedAlternatives": {
    "productCodes": [
     "NADC3030S",
-    "NADCISA2-120",
     "NADC328",
     "ARGSA2X",
     "NADC3050",
@@ -108,11 +107,21 @@
     "MARAMODEL30",
     "MARAMODEL50",
     "MARAMODEL60N",
-    "BLSN331"
+    "BLSN331",
+    "NADCISA2-120"
    ],
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Ikonisk rundt display på front\nOn-screen menusystem\n100% diskret opbygget forstærkerdel med HDAM-teknologi\nAnalogt Klasse AB effekttrin\nDedikeret MM-pladespillerindgang \nTovejs Bluetooth-funktion til trådløse høretelefoner\nIndbygget D/A-konverter (PCM1690)\nUSB-A indgang på front (musikafspilning og 5V/1A ladefunktion)\nLydformater via USB: DSD2.8/5.6 / WAV / FLAC / ALAC\nMaksimal opløsning via digitale indgange: 24-bit/192 kHz\nHøretelefon-udgang på front (6,3 mm)\nForgyldte terminaler\nBagbelyst systemfjernbetjening medfølger (RC-052SR)\nEnergiforbrug off / CEC / network standby: 0,2 watt / 0,5 watt / <2 watt\n* Understøttelse af stemmestyring på dit lokale sprog afhænger af, hvad den enkelte tjeneste tilbyder. Stemmestyring kræver, at du har en separat stemmestyrings-enhed koblet på dit netværk sammen med STEREO 70s, for eksempel din smartphone eller en separat smarthøjtaler, som kan fås for små penge."
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -157,28 +166,6 @@
    },
    {
     "index": 10,
-    "title": "Ydelse",
-    "content": [
-     {
-      "term": "Udgangseffekt 8 ohm",
-      "value": "75 watt"
-     },
-     {
-      "term": "Forvrængning (THD)",
-      "value": "0,08%"
-     },
-     {
-      "term": "Signal/støjforhold",
-      "value": "98 dB"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 10,
     "title": "Produktdata",
     "content": [
      {
@@ -200,11 +187,24 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "Ikonisk rundt display på front\nOn-screen menusystem\n100% diskret opbygget forstærkerdel med HDAM-teknologi\nAnalogt Klasse AB effekttrin\nDedikeret MM-pladespillerindgang \nTovejs Bluetooth-funktion til trådløse høretelefoner\nIndbygget D/A-konverter (PCM1690)\nUSB-A indgang på front (musikafspilning og 5V/1A ladefunktion)\nLydformater via USB: DSD2.8/5.6 / WAV / FLAC / ALAC\nMaksimal opløsning via digitale indgange: 24-bit/192 kHz\nHøretelefon-udgang på front (6,3 mm)\nForgyldte terminaler\nBagbelyst systemfjernbetjening medfølger (RC-052SR)\nEnergiforbrug off / CEC / network standby: 0,2 watt / 0,5 watt / <2 watt\n* Understøttelse af stemmestyring på dit lokale sprog afhænger af, hvad den enkelte tjeneste tilbyder. Stemmestyring kræver, at du har en separat stemmestyrings-enhed koblet på dit netværk sammen med STEREO 70s, for eksempel din smartphone eller en separat smarthøjtaler, som kan fås for små penge."
+      "term": "Udgangseffekt 8 ohm",
+      "value": "75 watt"
+     },
+     {
+      "term": "Forvrængning (THD)",
+      "value": "0,08%"
+     },
+     {
+      "term": "Signal/støjforhold",
+      "value": "98 dB"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Analog"
      }
     ]
    },
@@ -245,13 +245,14 @@
     "productCode": "MARASTEREO70SBK",
     "ean": "0747192140274",
     "priceDetails": {
-     "priceValueId": 1194270,
-     "price": 6995,
-     "priceFormatted": "6.995,-",
+     "priceValueId": 1221705,
+     "price": 6990,
+     "priceFormatted": "6.990,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 6995
+     "unitPrice": 6990,
+     "unitPriceBefore": 6990
     },
     "techSpecs": [
      {
@@ -290,8 +291,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 172,
+     "numberOfStoresExperience": 20,
+     "availableQuantity": 153,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -399,7 +400,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 20,
-     "availableQuantity": 62,
+     "availableQuantity": 58,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -529,13 +530,13 @@
    {
     "modelType": "Stereosystem til TV",
     "price": {
-     "price": 14993,
-     "priceFormatted": "14.993,-",
+     "price": 14988,
+     "priceFormatted": "14.988,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 14993,
-     "unitPriceBefore": 14993
+     "unitPrice": 14988,
+     "unitPriceBefore": 14988
     },
     "image": "https://images.hifiklubben.com/image/fb2505d8-f340-48d1-9337-125fba4317ca",
     "title": "DALI SONIK 5 + Marantz STEREO 70s",
@@ -544,41 +545,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARANTZ Stereo 70s er en yderst alsidig stereoreceiver med varm, klar og kraftfuld lyd, stærke tilslutningsmuligheder og et attraktivt slankt design. Musikgengivelsen via højttalere, TV, pladespiller og traditionelle digitale kilder roses bredt for et medrivende, punchy og velafbalanceret lydbillede. Streaming og HEOS er mindre stabilt, med gentagen kritik af appens brugervenlighed, forbindelsen og lejlighedsvise afspilningsproblemer, mens opsætning og daglig betjening generelt er enkel efter konfiguration.",
+   "summary": "MARANTZ STEREO70S leverer en varm, klar og dynamisk stereolyd med rigeligt overskud og skaber en medrivende oplevelse med musik, TV-lyd, vinyl og streaming. De mange tilslutninger, HDMI ARC/eARC, phono, radio og netværksfunktioner gør receiveren meget alsidig, mens det kompakte design og den gode pris gør den endnu mere attraktiv. Streaming, HEOS og opsætning kan dog lejlighedsvis være langsom, ustabil eller besværlig, men helhedsindtrykket er stadig meget positivt.",
    "headlines": {
-    "heos and streaming can be unreliable": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer udfald, forvrængning, forbindelsesproblemer eller ustabil app-adfærd ved HEOS-, Tidal-, Spotify-, Qobuz- eller netværksstreaming, selv om alternative tjenester nogle gange fungerer godt.",
-     "simpleTitle": "HEOS og streaming kan være ustabilt",
+    "streaming and HEOS can be unreliable": {
+     "sentimentAnalysis": "Flere anmeldelser nævner udfald, forvrængning, forbindelsesfejl eller svag app-understøttelse ved streaming, især med HEOS, Tidal og netværksafspilning.",
+     "simpleTitle": "Streaming og HEOS kan være ustabilt",
      "bias": "negative",
      "key": "streaming",
-     "groupId": "29b71678-3aa2-40ac-a95c-4d5433945b00"
+     "groupId": "8fdfa787-6267-4518-af6d-b2a2d28f1444"
+    },
+    "many useful connections and features": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent de mange tilslutninger, herunder HDMI, ARC/eARC, phono, Bluetooth, Wi-Fi, radio, subwooferudgange og flere digitale kilder.",
+     "simpleTitle": "Mange nyttige tilslutninger og funktioner",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "4b3a2513-15b3-4281-862d-4678c1d0674c"
     },
     "warm, clear and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en varm, detaljeret, velafbalanceret og dynamisk gengivelse med overbevisende bas, klarhed og kræfter nok til mange højttalere.",
+     "sentimentAnalysis": "Anmelderne roser ofte den varme, afbalancerede, klare og dynamiske lyd samt den tilstrækkelige effekt til mange forskellige højttalere og rum.",
      "simpleTitle": "Varm, klar og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "d443bc70-3793-43a6-85a2-bd3d1619ee24"
+     "groupId": "e9e76c8d-ad06-4041-84af-58de3b376a2c"
     },
-    "extensive connections and useful TV integration": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter det brede udvalg af HDMI-, phono-, Bluetooth-, Wi-Fi-, DAB+-, subwoofer- og streamingtilslutninger, især den praktiske ARC/eARC-integration med TV.",
-     "simpleTitle": "Mange tilslutninger og praktisk TV-integration",
+    "setup and controls are generally easy": {
+     "sentimentAnalysis": "Mange anmeldere synes, at receiveren er nem at installere og betjene, og roser den skærmbaserede opsætning, fjernbetjeningen, de fysiske knapper og den daglige brugervenlighed.",
+     "simpleTitle": "Opsætning og betjening er normalt enkel",
      "bias": "positive",
-     "key": "features",
-     "groupId": "57a7fffe-5f67-4f07-8fd4-c29c90ee3243"
+     "key": "usability",
+     "groupId": "3184a016-eba3-44ed-ba26-bb060379fd99"
     },
-    "straightforward operation after setup": {
-     "sentimentAnalysis": "Mange anmeldelser finder installation, menuer, fjernbetjening og daglig betjening intuitiv eller overskuelig, mens enkelte beskriver opsætning, manualer eller avancerede funktioner som komplicerede.",
-     "simpleTitle": "Enkel betjening efter opsætning",
+    "compact and attractive design": {
+     "sentimentAnalysis": "Receiveren opleves bredt som stilfuld, kompakt og solidt bygget med et eksklusivt udtryk, der passer i mindre møbler og forskellige hjem.",
+     "simpleTitle": "Kompakt og attraktivt design",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "7b52e220-8cc1-4e6b-ac2c-0c26e5f24562"
+     "key": "design",
+     "groupId": "1d6b2413-3294-4700-81cb-6edf4d6e7c14"
     }
    },
    "grouping": {
-    "d443bc70-3793-43a6-85a2-bd3d1619ee24": {
+    "e9e76c8d-ad06-4041-84af-58de3b376a2c": {
      "title": "Lydkvalitet",
-     "id": "d443bc70-3793-43a6-85a2-bd3d1619ee24",
+     "id": "e9e76c8d-ad06-4041-84af-58de3b376a2c",
      "references": [
       "af741d88-ea50-4748-b368-84f6eb5be3d2",
       "501768eb-72e5-407d-bd0b-83cc157a07d6",
@@ -586,108 +594,109 @@
       "e95a3203-51c5-4ff9-8669-5e29a9635920",
       "4eaf4675-7e59-4847-9603-56632893862e",
       "1e8bc8f3-cd9d-4b6f-b14a-43fc3ce5c62d",
-      "b1a0d7ac-82c7-4bdf-a048-d15281cb84f9",
       "d5a98e39-f81c-4817-8d77-af512eba00fc",
       "3d1f20f6-c473-43e9-ba51-32b3338fda52",
-      "719aacaa-d6d9-40a3-b083-cba6cfea30b3",
-      "3b3cf3a9-20a4-42bb-9f84-18d8c19eb907",
       "2645d64a-95d0-488f-b22b-c14b1221d09d",
       "a41b7cc6-108f-4dcc-84f4-ecc69bef5202",
       "567ec8f2-eb51-406d-a208-dfead9efd003",
       "16ce99f2-62c9-4240-8bcc-b82fb7c7a803",
-      "27d34c2f-b3cb-410d-a07b-0f38e0697c9f",
       "3079d5bc-6e27-49b2-aaf2-55c9aacb0dd1",
-      "04d9abf7-6418-4ea9-9228-0a10d800a9de",
       "b09b17da-8bfb-4479-a784-6ef8e41c9d83",
       "82bf780c-03bd-4309-b51b-eb758de8f918",
       "a930e4c9-ee98-4c6d-a54f-48159836ab20",
       "90489f21-a9d3-48bb-8f22-8ca491ab1170",
-      "c3b721d6-c41a-4486-8c20-5528a3f5f91e",
+      "bb07ea45-79be-46ea-8cc1-c8fbfe7015d6",
       "46a33755-5f00-4c26-8063-c1caf364cb2e",
+      "c3b721d6-c41a-4486-8c20-5528a3f5f91e",
+      "87c935bd-4c71-4e70-9db6-2c819645ae31",
       "7d516a8a-661d-42a3-9b9b-37cd698db996",
-      "c641ec15-fe8d-4105-8dfd-494d59eaf1c6",
-      "374cf0aa-28b6-46aa-a6e0-43db663e4838",
-      "21d89aed-7d4a-492f-a558-a2714f3753ae",
-      "4ee0b52f-9309-46b4-9fc6-c7b0f0a5c4c2",
-      "77e2b300-8eb7-4a90-880a-e0723afd1b4f",
+      "19ee6261-e8c4-41bb-82fa-57ef12c26342",
       "5d425a48-7adf-4409-85d6-d3b601142a06",
       "c9c675c5-985a-4b87-919f-519bcd96fc7a",
+      "7503f67f-3603-4916-a315-35f59cc4305c",
       "f017f267-5430-4e8b-9ee9-0ee51c9006e2",
       "98d2b64b-81f4-4518-8c24-8e06157d4c6d",
       "19413aae-ea84-48ff-931a-1e40c248ed5a",
+      "c641ec15-fe8d-4105-8dfd-494d59eaf1c6",
+      "374cf0aa-28b6-46aa-a6e0-43db663e4838",
+      "21d89aed-7d4a-492f-a558-a2714f3753ae",
+      "7242f5c7-94c3-4a9a-9a12-9d83658ed8b3",
+      "4ee0b52f-9309-46b4-9fc6-c7b0f0a5c4c2",
+      "77e2b300-8eb7-4a90-880a-e0723afd1b4f",
+      "1f2b7df6-7a88-4d75-91d6-84fac4b1ada89",
+      "5e832079-b59b-4c1f-9220-6147ae87f6a5",
       "c0164d60-28bd-4c92-b721-871e9c84d713",
       "7fb6a805-d786-450a-9dae-4a7c3626d9e0",
       "9ee4467f-45b8-4c8e-8a6d-143671cfbb3b",
       "91d1787d-4d8e-4de8-a305-dc5523db7e72",
       "cf07cb26-66a4-4589-b1b2-b8b98af54dce",
-      "353ca7b9-9c07-4f76-bfef-ebeda65d4c41",
-      "5e832079-b59b-4c1f-9220-6147ae87f6a5",
-      "330ae88b-7994-487a-a47e-df4e1451d352",
-      "b1bdd2a3-25ed-485a-80e0-3d592409b91a",
-      "1585ac1a-9575-48c8-a058-0b4fd392d59b",
-      "1e3ea241-43b3-4e9d-bb33-6b7a11722c04",
       "90b5f99a-2276-46fe-b6c1-3b2670f20b37",
       "47da7d81-70c6-4879-beff-0f413d7bdd7c",
-      "ae8ecf5b-313c-4195-aebd-f2769a806f04",
-      "dc0ef6af-474a-46b7-8623-1057fcd4c6ed",
-      "2ced226b-9bd4-4cae-a0f7-dbd56fc32f0a",
-      "a8e20e98-8c6b-4cc0-b7ae-d974b1a3acfc",
-      "105c238b-8e59-488a-b60e-9d544f3574c6",
-      "616e2a0c-cfc0-4848-872e-ce0d94b69267",
-      "e34f0cfd-47da-4833-9ee7-1f863e812ca6",
-      "4c30e00f-0156-42dc-8c1f-cbe543351554",
-      "44536a94-727c-4fb5-a38d-c3c9ed39e8df",
-      "039dce4a-9f9e-4293-a801-195ce3e980cb"
+      "353ca7b9-9c07-4f76-bfef-ebeda65d4c41",
+      "330ae88b-7994-487a-a47e-df4e1451d352",
+      "039dce4a-9f9e-4293-a801-195ce3e980cb",
+      "b1bdd2a3-25ed-485a-80e0-3d592409b91a",
+      "1585ac1a-9575-48c8-a058-0b4fd392d59b",
+      "1e3ea241-43b3-4e9d-bb33-6b7a11722c04"
      ]
     },
-    "57a7fffe-5f67-4f07-8fd4-c29c90ee3243": {
-     "title": "Tilslutninger og funktioner",
-     "id": "57a7fffe-5f67-4f07-8fd4-c29c90ee3243",
+    "4b3a2513-15b3-4281-862d-4678c1d0674c": {
+     "title": "Tilslutninger og forbindelser",
+     "id": "4b3a2513-15b3-4281-862d-4678c1d0674c",
      "references": [
+      "465cb49d-1386-4bb8-a1a1-0b23ffd3a3a1",
       "c4a8be29-a428-40cb-a553-adf695035482",
       "69c0c47a-b171-4cb1-bbbb-43b0d2f16415",
       "b1a0d7ac-82c7-4bdf-a048-d15281cb84f9",
       "3d1f20f6-c473-43e9-ba51-32b3338fda52",
+      "370abff5-1d63-4cf1-8342-de246d8fe854",
       "719aacaa-d6d9-40a3-b083-cba6cfea30b3",
       "9c809421-c005-4751-9fac-bddac76843e2",
       "21ce9d95-42bc-48ee-b33c-afd24d1a147c",
       "80a2020d-e2fb-4ff9-b763-f66bdd8d8bf8",
-      "8d1fa18b-e2f0-4ace-854f-c93e2cbbca4a",
       "3079d5bc-6e27-49b2-aaf2-55c9aacb0dd1",
+      "89d0cb7f-5c4b-43ed-84d7-83e8025363d7",
+      "0107a680-8b81-449f-b160-14da65cd8fe3",
+      "82bf780c-03bd-4309-b51b-eb758de8f918",
+      "367b4118-c8f9-4596-89a5-715f93d1df6f",
+      "21d89aed-7d4a-492f-a558-a2714f3753ae",
       "c0164d60-28bd-4c92-b721-871e9c84d713",
       "7eeade7d-87f3-4d62-aeb4-3624965376dc",
-      "1585ac1a-9575-48c8-a058-0b4fd392d59b",
-      "685eab70-31f2-432a-9c42-726944f92cb8",
-      "1e3ea241-43b3-4e9d-bb33-6b7a11722c04",
-      "48a04c54-4b4c-431b-bc26-41df76b2c14a",
-      "57365c11-05b1-44c9-8cd2-1cc4108c5c06",
-      "330ae88b-7994-487a-a47e-df4e1451d352",
-      "f6a92cdd-405d-4b3e-a4de-e59e93fc587a",
-      "a50416c6-e717-426a-955f-e328433def08",
       "dc0ef6af-474a-46b7-8623-1057fcd4c6ed",
       "2ced226b-9bd4-4cae-a0f7-dbd56fc32f0a",
+      "a8e20e98-8c6b-4cc0-b7ae-d974b1a3acfc",
+      "ae8ecf5b-313c-4195-aebd-f2769a806f04",
+      "2a1c8325-df90-4092-a7d7-bb17772541aa",
+      "92eb3cd5-547a-46e7-ba0f-c9b62399d673",
+      "48a04c54-4b4c-431b-bc26-41df76b2c14a",
+      "57365c11-05b1-44c9-8cd2-1cc4108c5c06",
       "9da98bce-622f-4c24-a619-0b9113efac84",
       "7193fc6c-f8c3-4a19-8624-c763c5897bf3",
-      "ae8ecf5b-313c-4195-aebd-f2769a806f04",
-      "308eadf6-11af-4487-b5f2-d7cf96261cde",
-      "c584a064-4728-45e8-8093-0f02adac95cb"
+      "47da7d81-70c6-4879-beff-0f413d7bdd7c",
+      "685eab70-31f2-432a-9c42-726944f92cb8",
+      "1585ac1a-9575-48c8-a058-0b4fd392d59b",
+      "1e3ea241-43b3-4e9d-bb33-6b7a11722c04"
      ]
     },
-    "29b71678-3aa2-40ac-a95c-4d5433945b00": {
+    "8fdfa787-6267-4518-af6d-b2a2d28f1444": {
      "title": "Streaming og HEOS",
-     "id": "29b71678-3aa2-40ac-a95c-4d5433945b00",
+     "id": "8fdfa787-6267-4518-af6d-b2a2d28f1444",
      "references": [
-      "501768eb-72e5-407d-bd0b-83cc157a07d6",
       "af741d88-ea50-4748-b368-84f6eb5be3d2",
+      "501768eb-72e5-407d-bd0b-83cc157a07d6",
       "4eaf4675-7e59-4847-9603-56632893862e",
-      "0d2fcbe2-92cc-4d88-ac14-2bdb4ab227f6",
+      "c4a8be29-a428-40cb-a553-adf695035482",
+      "69c0c47a-b171-4cb1-bbbb-43b0d2f16415",
+      "719aacaa-d6d9-40a3-b083-cba6cfea30b3",
       "200a8a3a-ebd2-4e68-aa95-e95303c9c284",
+      "11b1760e-f0a8-43cd-a537-309fc0f2d673",
       "e2c7a880-53af-4eaf-8c29-76bca834c325",
       "5a6c461b-7007-4522-ac52-9af052484254",
       "a36c1cef-8761-4ad0-806a-048478d202db",
+      "3079d5bc-6e27-49b2-aaf2-55c9aacb0dd1",
       "89d0cb7f-5c4b-43ed-84d7-83e8025363d7",
       "0107a680-8b81-449f-b160-14da65cd8fe3",
-      "8d1fa18b-e2f0-4ace-854f-c93e2cbbca4a",
+      "5bb90ac2-67f6-459c-a1dc-2e8284aa32f2",
       "87c935bd-4c71-4e70-9db6-2c819645ae31",
       "98d2b64b-81f4-4518-8c24-8e06157d4c6d",
       "1a611f76-c2c7-4db4-85bb-1bf3475f8ad8",
@@ -695,55 +704,82 @@
       "3f9083c4-f121-47fd-8c9a-f8b4e8b8a890",
       "5e832079-b59b-4c1f-9220-6147ae87f6a5",
       "ad50007d-4e22-462a-b52e-db04da17ef4e",
-      "e0dc66a1-ea06-4e92-bdea-4e1f627208e0",
-      "105c238b-8e59-488a-b60e-9d544f3574c6",
+      "b2cb1f8f-3d98-43a6-a675-7898c986d060",
       "330ae88b-7994-487a-a47e-df4e1451d352",
+      "e0dc66a1-ea06-4e92-bdea-4e1f627208e0",
       "f6a92cdd-405d-4b3e-a4de-e59e93fc587a",
       "685eab70-31f2-432a-9c42-726944f92cb8",
-      "9827e49f-ab2a-4ae5-87e6-741966aa3c08",
       "9da98bce-622f-4c24-a619-0b9113efac84",
-      "7193fc6c-f8c3-4a19-8624-c763c5897bf3",
-      "b2cb1f8f-3d98-43a6-a675-7898c986d060"
+      "cf07cb26-66a4-4589-b1b2-b8b98af54dce",
+      "039dce4a-9f9e-4293-a801-195ce3e980cb"
      ]
     },
-    "7b52e220-8cc1-4e6b-ac2c-0c26e5f24562": {
-     "title": "Opsætning og brugervenlighed",
-     "id": "7b52e220-8cc1-4e6b-ac2c-0c26e5f24562",
+    "3184a016-eba3-44ed-ba26-bb060379fd99": {
+     "title": "Opsætning og betjening",
+     "id": "3184a016-eba3-44ed-ba26-bb060379fd99",
      "references": [
       "af741d88-ea50-4748-b368-84f6eb5be3d2",
       "c4a8be29-a428-40cb-a553-adf695035482",
       "69c0c47a-b171-4cb1-bbbb-43b0d2f16415",
+      "b1a0d7ac-82c7-4bdf-a048-d15281cb84f9",
       "3d1f20f6-c473-43e9-ba51-32b3338fda52",
-      "9c809421-c005-4751-9fac-bddac76843e2",
       "21ce9d95-42bc-48ee-b33c-afd24d1a147c",
       "04d9abf7-6418-4ea9-9228-0a10d800a9de",
       "42b0d8aa-4e86-43aa-b169-9ce556d8de44",
+      "82bf780c-03bd-4309-b51b-eb758de8f918",
+      "367b4118-c8f9-4596-89a5-715f93d1df6f",
       "3079d5bc-6e27-49b2-aaf2-55c9aacb0dd1",
+      "c243d09e-04e8-4759-9336-9ada0e78ea36",
       "374cf0aa-28b6-46aa-a6e0-43db663e4838",
+      "7242f5c7-94c3-4a9a-9a12-9d83658ed8b3",
       "5416c938-0458-466d-b363-836e42ce0174",
-      "77e2b300-8eb7-4a90-880a-e0723afd1b4f",
-      "17312aaa-c55c-4934-bb0b-98ac6a23de02",
       "48a04c54-4b4c-431b-bc26-41df76b2c14a",
-      "9da98bce-622f-4c24-a619-0b9113efac84",
+      "98241e8f-f545-42ed-81fd-781ce166913f",
       "f3c613f3-6ba4-4719-9371-1017b5f76d66",
+      "11df750b-5a09-4d66-898f-7938a901186b",
       "48cf606a-52fc-4f44-9b78-7e2724c7b869",
       "039dce4a-9f9e-4293-a801-195ce3e980cb",
       "7e03750d-fff4-415a-a772-65e131388e5d",
-      "2a1c8325-df90-4092-a7d7-bb17772541aa",
-      "335cd578-1579-4483-97ff-db87fc5a833c",
-      "c243d09e-04e8-4759-9336-9ada0e78ea36"
+      "17312aaa-c55c-4934-bb0b-98ac6a23de02",
+      "9da98bce-622f-4c24-a619-0b9113efac84"
+     ]
+    },
+    "1d6b2413-3294-4700-81cb-6edf4d6e7c14": {
+     "title": "Design og byggekvalitet",
+     "id": "1d6b2413-3294-4700-81cb-6edf4d6e7c14",
+     "references": [
+      "465cb49d-1386-4bb8-a1a1-0b23ffd3a3a1",
+      "5e7980ff-68d5-471a-b299-dc4e396f6a1c",
+      "69c0c47a-b171-4cb1-bbbb-43b0d2f16415",
+      "57a390c6-4a50-4745-88b3-64c4791df05b",
+      "3b3cf3a9-20a4-42bb-9f84-18d8c19eb907",
+      "16ce99f2-62c9-4240-8bcc-b82fb7c7a803",
+      "9c809421-c005-4751-9fac-bddac76843e2",
+      "c243d09e-04e8-4759-9336-9ada0e78ea36",
+      "19ee6261-e8c4-41bb-82fa-57ef12c26342",
+      "68c675c7-e997-4534-b72e-607ad765cfb5",
+      "77e2b300-8eb7-4a90-880a-e0723afd1b4f",
+      "f7ac5f73-c810-40f2-b2e0-8b8c33f16a08",
+      "74fe6847-c2ab-470b-b491-f6359d5b67a7",
+      "97c3da3b-4927-47c3-b63a-4e49fbd8e265",
+      "6f3cfd1c-519c-457a-b73a-d6c66eacade3",
+      "c584a064-4728-45e8-8093-0f02adac95cb",
+      "6ffc6232-2d79-4cc8-be21-fa9eac44b3cb",
+      "a50416c6-e717-426a-955f-e328433def08",
+      "330ae88b-7994-487a-a47e-df4e1451d352",
+      "1585ac1a-9575-48c8-a058-0b4fd392d59b"
      ]
     }
    },
-   "rating": 4.72794117647059,
-   "count": 272,
-   "reviewCount": 157,
+   "rating": 4.72363636363636,
+   "count": 275,
+   "reviewCount": 159,
    "distribution": {
     "1": 2,
     "2": 0,
     "3": 9,
-    "4": 48,
-    "5": 213
+    "4": 50,
+    "5": 214
    }
   },
   "brandName": "Marantz",

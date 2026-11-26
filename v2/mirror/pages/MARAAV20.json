@@ -41,7 +41,7 @@
    "87c2161b-a595-4f9b-bdc1-12f732c31854",
    "67aeb150-df64-4cba-ae00-c86b2f611365"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 255596,
@@ -266,13 +266,14 @@
     "productCode": "MARAAV20BK",
     "ean": "0747192145590",
     "priceDetails": {
-     "priceValueId": 1003139,
-     "price": 43000,
-     "priceFormatted": "43.000,-",
+     "priceValueId": 1221706,
+     "price": 42995,
+     "priceFormatted": "42.995,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 43000
+     "unitPrice": 42995,
+     "unitPriceBefore": 42995
     },
     "techSpecs": [
      {
@@ -304,10 +305,11 @@
      "productCode": "MARAAV20BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 22. december",
-     "deliveryDate": "2026-12-22T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -371,12 +373,17 @@
      {
       "sku": "DIRACMULTIFULL",
       "priceDetails": {
-       "price": 2299,
-       "priceFormatted": "2.299,-",
+       "price": 1839,
+       "priceFormatted": "1.839,-",
+       "priceBefore": 2299,
+       "priceBeforeFormatted": "2.299,-",
+       "priceSavingsFormatted": "460,-",
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "salesQuantity": 1,
-       "unitPrice": 2299
+       "offerExpiryDate": "2026-11-30T22:59:00Z",
+       "unitPrice": 1839,
+       "unitPriceBefore": 2299
       },
       "url": "/dirac-live-multichannel-full-license-opgradering/diracmultifull/",
       "imageUrl": "https://images.hifiklubben.com/image/3b614285-81bf-41e3-9fb7-8a57279ca0f0",

@@ -44,7 +44,7 @@
    "1a32ca18-3f2a-4346-a691-e353fd304b85",
    "115c8f44-bad2-40d4-9ad0-10b0049c5234"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 294025,
@@ -366,12 +366,11 @@
      "productCode": "MARACINEMA50S2BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager tirsdag den 22. december",
+     "deliveryDate": "2026-12-22T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -485,11 +484,12 @@
      "productCode": "MARACINEMA50S2SI"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 22. december",
-     "deliveryDate": "2026-12-22T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
-     "inventoryStatusType": "notInStockAtpDate"
+     "numberOfStoresExperience": 5,
+     "availableQuantity": 13,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

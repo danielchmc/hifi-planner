@@ -37,7 +37,7 @@
    "f3dbc1d9-dbe3-4b77-b595-e5cf0e964ae3",
    "d2621d10-d02d-4e63-8f18-dd2262532766"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 294026,
@@ -97,6 +97,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Kompakt hi-fi-musikanlæg med indbygget CD-afspiller og DAB+/FM-radio \nHEOS multirums-musikstreaming med fuld app-kontrol (iOS/Android) \nUnderstøtter Apple AirPlay 2, Spotify Connect, TIDAL, Deezer, Amazon Music, Roon Ready m.fl.\nDedikeret indgang til pladespiller (MM)\nKlar til Dirac Live Room Correction (licens købes separat)\nKlar til stemmestyring (Google Assistant/Amazon Alexa, Apple Siri via iOS-enheder)*\nDedikeret indgang til pladespiller (MM)\nSubwoofer-udgang med Bass Management\nFuldt digital Klasse D-forstærkerteknologi \nUdgangseffekt: 2 x 65 watt (4 ohm / 1 kHz, 0,7% THD)**\nIndbygget trådløs netværksfunktion (wi-fi, DLNA 1.5, 802.11a/b/g/n, 2,4/5GHz) \nIndbygget Bluetooth v5.4 med tovejs-funktion til trådløse høretelefoner\nTrådløs musikstreaming fra PC/Mac (via DLNA) og netværksharddisk (NAS) \nDekodning af Dolby Digital / Dolby Digital+ (konverteres til stereo PCM)\nLydformater: MP3, WMA, AAC, FLAC 192/24, WAV 192/24, ALAC 24 inkl. gapless  (FLAC, WAV, DSD) \nOLED-display i fuld størrelse\nSmart Select med op til 4 favoritopsætninger\nDedikeret hovedtelefonforstærker med HDAM-SA2 teknologi\nUSB-indgang på bagside til afspilning fra USB-lagermedier \nUdgang til subwoofer med variabel delefrekvens 30-250 Hz (Bass Management)\nForgyldte RCA-terminaler\n2 sæt højkvalitets højtalerterminaler (skrue/banan)\nEnergiforbrug i stand-by/on/max : 0,3 watt / 3 watt / 55 watt\nFjernbetjening medfølger (model RC016CR) \n* Understøttelse af stemmestyring på dit lokale sprog afhænger af, hvad den enkelte tjeneste tilbyder. Stemmestyring kræver, at du har en separat stemmestyrings-enhed koblet på dit netværk sammen med MCR 60n, for eksempel din smartphone eller en separat smarthøjtaler, som kan fås for små penge.\n** Udgangseffekten på 2 x 65 watt er opgivet ved lav forvrængning (0,7%). Nogle konkurrenter opgiver watt-tallet ved hele 10% forvrængning. Vær opmærksom på dette, når du sammenligner."
+     }
+    ]
+   },
    {
     "index": 10,
     "title": "Ydelse",
@@ -196,15 +205,6 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Kompakt hi-fi-musikanlæg med indbygget CD-afspiller og DAB+/FM-radio \nHEOS multirums-musikstreaming med fuld app-kontrol (iOS/Android) \nUnderstøtter Apple AirPlay 2, Spotify Connect, TIDAL, Deezer, Amazon Music, Roon Ready m.fl.\nDedikeret indgang til pladespiller (MM)\nKlar til Dirac Live Room Correction (licens købes separat)\nKlar til stemmestyring (Google Assistant/Amazon Alexa, Apple Siri via iOS-enheder)*\nDedikeret indgang til pladespiller (MM)\nSubwoofer-udgang med Bass Management\nFuldt digital Klasse D-forstærkerteknologi \nUdgangseffekt: 2 x 65 watt (4 ohm / 1 kHz, 0,7% THD)**\nIndbygget trådløs netværksfunktion (wi-fi, DLNA 1.5, 802.11a/b/g/n, 2,4/5GHz) \nIndbygget Bluetooth v5.4 med tovejs-funktion til trådløse høretelefoner\nTrådløs musikstreaming fra PC/Mac (via DLNA) og netværksharddisk (NAS) \nDekodning af Dolby Digital / Dolby Digital+ (konverteres til stereo PCM)\nLydformater: MP3, WMA, AAC, FLAC 192/24, WAV 192/24, ALAC 24 inkl. gapless  (FLAC, WAV, DSD) \nOLED-display i fuld størrelse\nSmart Select med op til 4 favoritopsætninger\nDedikeret hovedtelefonforstærker med HDAM-SA2 teknologi\nUSB-indgang på bagside til afspilning fra USB-lagermedier \nUdgang til subwoofer med variabel delefrekvens 30-250 Hz (Bass Management)\nForgyldte RCA-terminaler\n2 sæt højkvalitets højtalerterminaler (skrue/banan)\nEnergiforbrug i stand-by/on/max : 0,3 watt / 3 watt / 55 watt\nFjernbetjening medfølger (model RC016CR) \n* Understøttelse af stemmestyring på dit lokale sprog afhænger af, hvad den enkelte tjeneste tilbyder. Stemmestyring kræver, at du har en separat stemmestyrings-enhed koblet på dit netværk sammen med MCR 60n, for eksempel din smartphone eller en separat smarthøjtaler, som kan fås for små penge.\n** Udgangseffekten på 2 x 65 watt er opgivet ved lav forvrængning (0,7%). Nogle konkurrenter opgiver watt-tallet ved hele 10% forvrængning. Vær opmærksom på dette, når du sammenligner."
-     }
-    ]
-   },
-   {
     "index": 98,
     "title": "Formater",
     "content": [
@@ -298,11 +298,12 @@
      "productCode": "MARAMCR60NDABBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 22. december",
-     "deliveryDate": "2026-12-22T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -407,7 +408,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 33,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -479,59 +480,52 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette kompakte system leverer varm, fyldig og kraftfuld lyd med imponerende effekt i forhold til størrelsen. Alsidig streaming samt muligheder for pladespiller, CD og multiroom gør enheden til en fremragende allrounder i forskellige opsætninger. Tilslutningsmulighederne er brede, og designet passer godt ind i eksisterende underholdningssystemer, selv om betjeningen er mindre bekvem, og der mangler en hovedtelefonudgang.",
+   "summary": "Dette kompakte system leverer varm, fyldig og overraskende kraftfuld lyd med en medrivende gengivelse til både musik og TV. Alsidig streaming samt tilslutninger til pladespiller, CD og andre enheder gør forstærkeren til en særdeles kompetent allrounder i denne størrelse. Begrænsninger ved fjernbetjeningen og lidt besværlig betjening er de største ulemper, mens manglen på en hovedtelefonudgang også bemærkes.",
    "headlines": {
-    "rich, powerful sound from a compact system": {
-     "sentimentAnalysis": "Systemet roses gentagne gange for klar, fyldig og kraftfuld lyd samt overraskende høj effekt fra den kompakte forstærker.",
+    "full, powerful sound from a compact system": {
+     "sentimentAnalysis": "Systemet roses for en klar, fyldig og kraftfuld lyd, der overgår forventningerne til den kompakte størrelse.",
      "simpleTitle": "Fyldig og kraftfuld lyd fra et kompakt system",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "7d6531ef-00d7-42a3-bf90-9c0d44828ccc"
+     "key": "sound-quality",
+     "groupId": "0e2fb1eb-2f1f-4cda-8554-8d0e8c984bff"
     },
-    "versatile support for streaming, physical media and multi-room audio": {
-     "sentimentAnalysis": "Streaming, pladespiller, CD-afspilning og muligheden for at drive højttalere i forskellige rum fremhæves som værdifulde og fleksible funktioner.",
-     "simpleTitle": "Alsidig understøttelse af streaming, fysiske medier og multiroom-lyd",
+    "versatile playback and connections": {
+     "sentimentAnalysis": "Streaming, understøttelse af pladespiller og CD, styring af højttalere i flere rum samt mange tilslutninger gør systemet velegnet til forskellige opsætninger.",
+     "simpleTitle": "Alsidig afspilning og mange tilslutninger",
      "bias": "positive",
-     "key": "features",
-     "groupId": "01d0fa92-e041-4e72-99e0-e08158b64a38"
+     "key": "connectivity-features",
+     "groupId": "bf278f67-497b-4519-9e1f-fb008fa3b151"
     },
-    "broad connectivity and easy integration with existing setups": {
-     "sentimentAnalysis": "Det brede udvalg af tilslutninger og den visuelle kompatibilitet med eksisterende TV- og Apple TV-enheder vurderes positivt.",
-     "simpleTitle": "Mange tilslutninger og nem integration i eksisterende opsætninger",
-     "bias": "positive",
-     "key": "features",
-     "groupId": "01d0fa92-e041-4e72-99e0-e08158b64a38"
-    },
-    "control can feel cumbersome": {
-     "sentimentAnalysis": "Den infrarøde fjernbetjening kræver fri sigtelinje, og den generelle betjening beskrives som besværlig.",
-     "simpleTitle": "Betjeningen kan føles besværlig",
+    "operation and remote control can be inconvenient": {
+     "sentimentAnalysis": "Den infrarøde fjernbetjening kræver fri sigtelinje, og betjeningen beskrives generelt som besværlig.",
+     "simpleTitle": "Betjening og fjernbetjening kan være besværlig",
      "bias": "negative",
-     "key": "control",
-     "groupId": "0854da2b-ee9a-451b-adc4-5c3b25f67bf7"
+     "key": "controls",
+     "groupId": "b33a9999-9e53-4f2b-9e15-571cff1c33e7"
     }
    },
    "grouping": {
-    "7d6531ef-00d7-42a3-bf90-9c0d44828ccc": {
+    "0e2fb1eb-2f1f-4cda-8554-8d0e8c984bff": {
      "title": "Lydkvalitet",
-     "id": "7d6531ef-00d7-42a3-bf90-9c0d44828ccc",
+     "id": "0e2fb1eb-2f1f-4cda-8554-8d0e8c984bff",
      "references": [
       "12997ada-6eb5-4f57-8d93-2dcc2af855f5",
       "db6573d7-92c5-4100-affe-45e7d1881430",
       "c8e4e33e-1f95-468f-b8ae-2dba1565569e"
      ]
     },
-    "01d0fa92-e041-4e72-99e0-e08158b64a38": {
-     "title": "Funktioner og tilslutninger",
-     "id": "01d0fa92-e041-4e72-99e0-e08158b64a38",
+    "bf278f67-497b-4519-9e1f-fb008fa3b151": {
+     "title": "Tilslutninger og funktioner",
+     "id": "bf278f67-497b-4519-9e1f-fb008fa3b151",
      "references": [
       "12997ada-6eb5-4f57-8d93-2dcc2af855f5",
       "c8e4e33e-1f95-468f-b8ae-2dba1565569e",
       "53005f80-40dc-4632-b106-ae50754fd348"
      ]
     },
-    "0854da2b-ee9a-451b-adc4-5c3b25f67bf7": {
-     "title": "Brugervenlighed",
-     "id": "0854da2b-ee9a-451b-adc4-5c3b25f67bf7",
+    "b33a9999-9e53-4f2b-9e15-571cff1c33e7": {
+     "title": "Betjening og fjernbetjening",
+     "id": "b33a9999-9e53-4f2b-9e15-571cff1c33e7",
      "references": [
       "2b8524b9-d775-4183-b7d5-f73fe1b06e55",
       "54fd5b9c-8f1a-4d20-8ea5-5c5855980ea5"

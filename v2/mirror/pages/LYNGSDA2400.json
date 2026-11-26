@@ -94,6 +94,15 @@
     ]
    },
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Pre out : Nej\r\nFjernbetjening : Nej\r\nKategori : Stereo-effektforstærker\r\nVægt : 6,5 kg\r\nFarve : Sort\r\nStørrelse : 45,0 x 7,2 x 36,0 cm (BxHxD, inkl. fødder)\r\nHovedtelefonudgang : Nej\r\nLinjeindgange : Analog L/R (XLR/RCA), digital optisk/coaxial\r\nPladespillerindgang : Nej\r\nUdgangseffekt 4 ohm : 2 x 400 watt (1 kHz, 0,05% THD)\r\nUdgangseffekt 8 ohm : 2 x 200 watt (1 kHz, 0,05% THD)\r\nSemi-digital/hybrid Klasse D forstærker \r\nMax. output ±40A \r\nAuto-tænd/sluk (alle indgange) \r\n12V-trigger in/out \r\nDobbelte højttalertilslutninger \r\nForberedt til standard 19\" rackmontering \r\nEnergiforbrug tændt/standby: 36 watt / <0,4 watt \r\n"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -116,15 +125,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Klasse D"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Pre out : Nej\r\nFjernbetjening : Nej\r\nKategori : Stereo-effektforstærker\r\nVægt : 6,5 kg\r\nFarve : Sort\r\nStørrelse : 45,0 x 7,2 x 36,0 cm (BxHxD, inkl. fødder)\r\nHovedtelefonudgang : Nej\r\nLinjeindgange : Analog L/R (XLR/RCA), digital optisk/coaxial\r\nPladespillerindgang : Nej\r\nUdgangseffekt 4 ohm : 2 x 400 watt (1 kHz, 0,05% THD)\r\nUdgangseffekt 8 ohm : 2 x 200 watt (1 kHz, 0,05% THD)\r\nSemi-digital/hybrid Klasse D forstærker \r\nMax. output ±40A \r\nAuto-tænd/sluk (alle indgange) \r\n12V-trigger in/out \r\nDobbelte højttalertilslutninger \r\nForberedt til standard 19\" rackmontering \r\nEnergiforbrug tændt/standby: 36 watt / <0,4 watt \r\n"
      }
     ]
    },
@@ -239,7 +239,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 4,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -268,62 +268,51 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGSDA2400 er en kraftfuld, ren og neutral forstærker, der tilfører musikken flere detaljer, bedre dynamik, mere punch og velkontrolleret bas. Lydkvalitet og byggekvalitet bliver værdsat højt, og ydelsen giver meget for pengene. Den bagmonterede tænd/sluk-knap og lejlighedsvis brum fra triggerkablet er praktiske ulemper, men den samlede vurdering er meget begejstret.",
+   "summary": "En meget kompetent og stilfuld forstærker med ren, neutral og kraftfuld lyd, stærk baskontrol og imponerende detaljegengivelse. Forstærkeren passer især godt sammen med Lyngdorf-komponenter og giver en markant opgradering i dynamik, punch og klarhed. Fremragende værdi for pengene og høj byggekvalitet gør den til en stærk anbefaling, selv om betjening på bagsiden og mulig brummen fra et triggerkabel kan være upraktisk.",
    "headlines": {
-    "detailed, dynamic and punchy sound": {
-     "sentimentAnalysis": "Forstærkeren roses for en ren, neutral og meget afslørende gengivelse med flere detaljer, bedre dynamik, mere ro og punch.",
-     "simpleTitle": "Detaljeret, dynamisk og punchy lyd",
+    "clean, detailed and accurate sound": {
+     "sentimentAnalysis": "Forstærkeren afslører flere detaljer og gengiver instrumenter og vokaler klart og naturligt.",
+     "simpleTitle": "Ren, detaljeret og præcis lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "57bce033-67ef-4630-b7c2-033fbad7c356"
+     "groupId": "a03e50eb-da9e-4bff-b6e8-f5563376f7fd"
     },
-    "controlled and faithful bass": {
-     "sentimentAnalysis": "Basgengivelsen beskrives som kraftfuld, velkontrolleret og tro mod optagelsen.",
-     "simpleTitle": "Kontrolleret og naturtro bas",
+    "powerful sound with strong bass control": {
+     "sentimentAnalysis": "Forstærkeren kombinerer stor effekt med kontrollerede og veldefinerede basfrekvenser.",
+     "simpleTitle": "Kraftfuld lyd med stærk baskontrol",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "57bce033-67ef-4630-b7c2-033fbad7c356"
+     "groupId": "a03e50eb-da9e-4bff-b6e8-f5563376f7fd"
+    },
+    "major gains in dynamics and punch": {
+     "sentimentAnalysis": "Forstærkeren roses for at gøre gengivelsen mere dynamisk, kraftfuld og slagkraftig.",
+     "simpleTitle": "Markant forbedring af dynamik og punch",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "a03e50eb-da9e-4bff-b6e8-f5563376f7fd"
     },
     "slim, high-quality construction": {
-     "sentimentAnalysis": "Produktet roses for attraktivt design, oplevet kvalitet og slank form.",
+     "sentimentAnalysis": "Forstærkeren vurderes som veldesignet, velbygget og praktisk slank.",
      "simpleTitle": "Slankt design i høj kvalitet",
      "bias": "positive",
      "key": "design-build",
-     "groupId": "2ede27c5-a907-48ac-8248-628bee24f9b0"
-    },
-    "rear-mounted power switch is inconvenient": {
-     "sentimentAnalysis": "Placeringen af tænd/sluk-knappen på bagsiden opleves som upraktisk og er en mindre betjeningsmæssig ulempe.",
-     "simpleTitle": "Bagmonteret tænd/sluk-knap er upraktisk",
-     "bias": "negative",
-     "key": "features-connectivity",
-     "groupId": "138f3208-39e0-41fd-ae65-6970b9de5408"
+     "groupId": "b091e512-1eeb-4a8c-a928-847f17e5c8be"
     }
    },
    "grouping": {
-    "57bce033-67ef-4630-b7c2-033fbad7c356": {
+    "a03e50eb-da9e-4bff-b6e8-f5563376f7fd": {
      "title": "Lydkvalitet",
-     "id": "57bce033-67ef-4630-b7c2-033fbad7c356",
+     "id": "a03e50eb-da9e-4bff-b6e8-f5563376f7fd",
      "references": [
       "b4760988-9484-47fe-a10c-102927b4e467",
       "85220474-c3d4-40b1-aeea-b5a6b4b3ea2b",
-      "1880d955-06ce-4184-8adf-d05ad13efad5",
       "925f609e-6e38-4868-81bd-a2bff086f552",
-      "a9160db4-6011-4987-8af8-beed76543e4b",
       "ff0ac66e-a92d-426f-a2a9-5655578cea8d"
      ]
     },
-    "138f3208-39e0-41fd-ae65-6970b9de5408": {
-     "title": "Funktioner og tilslutninger",
-     "id": "138f3208-39e0-41fd-ae65-6970b9de5408",
-     "references": [
-      "238b5d2a-3ec4-4660-9373-30fc9e46ba17",
-      "1880d955-06ce-4184-8adf-d05ad13efad5",
-      "ff0ac66e-a92d-426f-a2a9-5655578cea8d"
-     ]
-    },
-    "2ede27c5-a907-48ac-8248-628bee24f9b0": {
+    "b091e512-1eeb-4a8c-a928-847f17e5c8be": {
      "title": "Design og byggekvalitet",
-     "id": "2ede27c5-a907-48ac-8248-628bee24f9b0",
+     "id": "b091e512-1eeb-4a8c-a928-847f17e5c8be",
      "references": [
       "1880d955-06ce-4184-8adf-d05ad13efad5",
       "ff0ac66e-a92d-426f-a2a9-5655578cea8d"

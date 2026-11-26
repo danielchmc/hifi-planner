@@ -220,12 +220,11 @@
      "productCode": "MARACTON3BROWN"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager lørdag den 05. december",
+     "deliveryDate": "2026-12-05T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
-     "availableQuantity": 170,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 18,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -330,7 +329,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 508,
+     "availableQuantity": 451,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -377,29 +376,14 @@
     "productCode": "MARACTON3BLUE",
     "ean": "7340055408196",
     "priceDetails": {
-     "priceValueId": 1217673,
-     "price": 1499,
-     "priceFormatted": "1.499,-",
-     "priceBefore": 2290,
-     "priceBeforeFormatted": "2.290,-",
-     "priceSavingsFormatted": "791,-",
+     "priceValueId": 1221717,
+     "price": 1399,
+     "priceFormatted": "1.399,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1499,
-     "unitPriceBefore": 2290
+     "unitPrice": 1399
     },
-    "ribbons": [
-     {
-      "text": "Spar 35%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
     "techSpecs": [
      {
       "index": 37,
@@ -437,8 +421,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 15,
-     "availableQuantity": 38,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 34,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -483,49 +467,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARACTON3 leverer varm, fyldig og overraskende kraftfuld lyd fra en kompakt højttaler med tilfredsstillende bas til rum, skriveborde og hverdagslytning. Det karakteristiske retrodesign, den solide konstruktion og den enkle Bluetooth-betjening gør højttaleren særdeles behagelig i daglig brug. Enkelte anmeldelser nævner begrænset mobilitet, automatisk strømbesparelse, hørbar susen eller ændret klangbalance ved højere lydstyrke, men helhedsindtrykket er meget begejstret og prisbevidst.",
+   "summary": "MARACTON3 leverer varm, fyldig og overraskende kraftfuld lyd fra et kompakt kabinet med tilstrækkelig dybde og volumen til skrivebord, køkken samt små og mellemstore rum. Det markante retrodesign, den solide kvalitet og den enkle Bluetooth-betjening gør højttaleren særligt attraktiv, mens tonekontrollerne giver ekstra fleksibilitet. Manglende batteri, automatisk strømsparefunktion og lejlighedsvis susen begrænser alsidigheden, og enkelte lyttere savner mere bas eller volumen.",
    "headlines": {
-    "warm, full and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den varme, fyldige, detaljerede og kraftfulde lyd samt den overraskende stærke bas og lydstyrke i forhold til den kompakte størrelse.",
-     "simpleTitle": "Varm, fyldig og kraftfuld lyd",
-     "bias": "positive",
-     "key": "sound_warm_full",
-     "groupId": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0"
-    },
     "simple operation and reliable connections": {
-     "sentimentAnalysis": "Bluetooth-parring, betjening og daglig brug opleves generelt som hurtig, intuitiv og pålidelig.",
+     "sentimentAnalysis": "Bluetooth-parring og daglig betjening beskrives som hurtig, intuitiv og stabil med telefoner, computere og andre kilder.",
      "simpleTitle": "Enkel betjening og stabile forbindelser",
      "bias": "positive",
-     "key": "usability_simple",
-     "groupId": "1707a87d-73e1-43f7-9c33-cb622437392c"
+     "key": "usability",
+     "groupId": "60076137-84d7-4029-b20e-37a182ad7594"
     },
-    "distinctive retro design and solid build": {
-     "sentimentAnalysis": "Det klassiske Marshall-inspirerede udseende beskrives gentagne gange som stilfuldt, attraktivt, karakteristisk og vellavet.",
-     "simpleTitle": "Karakteristisk retrodesign og solid konstruktion",
+    "warm, full and powerful sound": {
+     "sentimentAnalysis": "Anmelderne beskriver en varm, fyldig og kraftfuld gengivelse med imponerende bas og evne til at fylde rummet for en kompakt højttaler.",
+     "simpleTitle": "Varm, fyldig og kraftfuld lyd",
      "bias": "positive",
-     "key": "design_retro",
-     "groupId": "ed7fc1f0-5677-4d1e-94ce-899e91f29120"
+     "key": "sound",
+     "groupId": "3962d49f-8b90-454d-9cf8-56b413e5b6b3"
     },
-    "excellent value for the price": {
-     "sentimentAnalysis": "Højttaleren opfattes ofte som fair prissat eller som særdeles god værdi, især i betragtning af lyd, design og kompakte størrelse.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "distinctive retro design": {
+     "sentimentAnalysis": "Højttaleren roses gentagne gange for et stilfuldt, markant og attraktivt retrolook, der fungerer som et visuelt højdepunkt.",
+     "simpleTitle": "Markant retrodesign",
      "bias": "positive",
-     "key": "value_price",
-     "groupId": "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4"
+     "key": "design",
+     "groupId": "a4d95ac0-c2fd-4632-856c-8ce1da0b0613"
     },
-    "strong sound for compact rooms and desks": {
-     "sentimentAnalysis": "Det kompakte kabinet fungerer især godt i mindre lejligheder, soveværelser, køkkener, kontorer og ved skrivebordet, mens større rum kan afsløre begrænsninger.",
-     "simpleTitle": "Kraftfuld lyd til mindre rum og skriveborde",
-     "bias": "positive",
-     "key": "sound_compact_spaces",
-     "groupId": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0"
+    "sound can lack bass or volume": {
+     "sentimentAnalysis": "Nogle anmeldelser peger på begrænset bas, lav volumen eller en fokuseret gengivelse, der egner sig mindre til at fylde større rum.",
+     "simpleTitle": "Lyden kan mangle bas eller volumen",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "3962d49f-8b90-454d-9cf8-56b413e5b6b3"
+    },
+    "power and idle-behaviour limitations": {
+     "sentimentAnalysis": "Automatisk strømsparefunktion kan forstyrre ved periodisk brug, og netdrift alene begrænser fleksibiliteten væk fra en stikkontakt.",
+     "simpleTitle": "Begrænsninger ved strøm og inaktivitet",
+     "bias": "negative",
+     "key": "usability",
+     "groupId": "60076137-84d7-4029-b20e-37a182ad7594"
     }
    },
    "grouping": {
-    "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0": {
+    "3962d49f-8b90-454d-9cf8-56b413e5b6b3": {
      "title": "Lydkvalitet",
-     "id": "3a0cd4cd-6f9d-470b-bfc7-7f0780daced0",
+     "id": "3962d49f-8b90-454d-9cf8-56b413e5b6b3",
      "references": [
+      "e2ff5034-37e0-46a3-83c9-47aa666fca8f",
       "13973bd1-bc84-489d-bbee-069457df6917",
       "15f22573-8c65-4706-a05b-477fe6bd3824",
       "5ddea5e1-eea2-4301-b90d-41706beba813",
@@ -543,6 +528,7 @@
       "c5bcb5c6-c472-4aab-b9a0-4f5d75db22f5",
       "cf4ffecf-cedc-4f56-9d58-de96d0f39d17",
       "06620a59-7379-422a-b22c-d6dbe6fe97b0",
+      "6ccbad2b-3a93-4b26-a646-b0ed0165fa83",
       "ab9de12f-7a55-40b4-9065-585fea97a82c",
       "aeed7840-d90a-4ce3-bb5a-30b4d7467d73",
       "40322301-f5e5-4111-9ffd-c51adf05e621",
@@ -573,6 +559,7 @@
       "3de39324-33cf-4fe5-aae0-6ef6f2a6f575",
       "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
       "7fa20846-73da-4761-8287-91b82c049129",
+      "51be3c54-a07f-4438-8e42-713af404c36c",
       "a45cc1e5-024c-4e80-8bd8-43fbe31421f2",
       "790a4fa8-78bc-408d-a5c4-234066c68669",
       "e48cfb67-1eaa-412a-a516-4823f8610ee3",
@@ -595,12 +582,13 @@
       "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42",
       "3eb9d49f-1016-4ff8-9bac-6bdd02313cf0",
       "b47731f3-b44d-4ea6-a747-a44716ebc21d",
-      "3176e9ed-cf12-43b8-8209-99abf5b5b998"
+      "3176e9ed-cf12-43b8-8209-99abf5b5b998",
+      "43817369-fa9c-47b6-82df-23750a10d1c7"
      ]
     },
-    "ed7fc1f0-5677-4d1e-94ce-899e91f29120": {
+    "a4d95ac0-c2fd-4632-856c-8ce1da0b0613": {
      "title": "Design",
-     "id": "ed7fc1f0-5677-4d1e-94ce-899e91f29120",
+     "id": "a4d95ac0-c2fd-4632-856c-8ce1da0b0613",
      "references": [
       "15f22573-8c65-4706-a05b-477fe6bd3824",
       "fdd19e6a-5a36-4837-8311-fa81c3d4cc9d",
@@ -608,6 +596,7 @@
       "d2c6b309-5d25-44f1-a818-9561bc13a0e4",
       "0305495a-1d6d-47f4-9dab-247ee6be3acc",
       "06620a59-7379-422a-b22c-d6dbe6fe97b0",
+      "40322301-f5e5-4111-9ffd-c51adf05e621",
       "3fc0bdf6-fd85-486e-a415-7caf937051ca",
       "0bb25a50-b3e2-45bb-aa2b-821c3f35a70d",
       "85754a80-8e2f-4406-8e09-4467a31b8de3",
@@ -620,8 +609,11 @@
       "f8c4aa3c-3b2b-4fd1-84dd-967f0351c27b",
       "c8b671ab-b733-446b-ac88-ab9fba4ac12d",
       "773711e1-3deb-4063-88bf-ab93cc648683",
+      "883cee80-0769-4cba-bab2-5f3328df7818",
       "6ac33eb3-c7b7-4aef-bfc5-050107de1fff",
+      "d4651682-eb3f-48ef-a2aa-caee6c04ddd8",
       "3de39324-33cf-4fe5-aae0-6ef6f2a6f575",
+      "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
       "7fa20846-73da-4761-8287-91b82c049129",
       "a45cc1e5-024c-4e80-8bd8-43fbe31421f2",
       "e48cfb67-1eaa-412a-a516-4823f8610ee3",
@@ -629,13 +621,16 @@
       "9d9c5621-0795-4396-8bcd-b1b29bf7ae26",
       "dc95ce50-33af-4bdf-93d1-dff9925d66bc",
       "b74486fd-414d-4081-9696-e9be6ebb1f14",
+      "31ed3b18-ea73-4f08-93b9-f39946659db9",
       "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42",
-      "31ed3b18-ea73-4f08-93b9-f39946659db9"
+      "d25a2544-a4d1-445c-abe6-d2c230153c2a",
+      "3eb9d49f-1016-4ff8-9bac-6bdd02313cf0",
+      "88784004-c4ed-45ea-aefb-4481155d0b34"
      ]
     },
-    "1707a87d-73e1-43f7-9c33-cb622437392c": {
-     "title": "Betjening og tilslutning",
-     "id": "1707a87d-73e1-43f7-9c33-cb622437392c",
+    "60076137-84d7-4029-b20e-37a182ad7594": {
+     "title": "Betjening og forbindelse",
+     "id": "60076137-84d7-4029-b20e-37a182ad7594",
      "references": [
       "5ddea5e1-eea2-4301-b90d-41706beba813",
       "f4bc55d5-6732-49b7-90df-854dab5381b6",
@@ -643,41 +638,28 @@
       "f69a63f9-c58d-43d5-bd2d-2f105efa6e96",
       "aeed7840-d90a-4ce3-bb5a-30b4d7467d73",
       "d4651682-eb3f-48ef-a2aa-caee6c04ddd8",
-      "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
-      "51be3c54-a07f-4438-8e42-713af404c36c",
+      "f8c4aa3c-3b2b-4fd1-84dd-967f0351c27b",
       "fc03d167-56e7-4b5d-a4e9-877b38252daa",
       "c8b671ab-b733-446b-ac88-ab9fba4ac12d",
-      "773711e1-3deb-4063-88bf-ab93cc648683",
+      "d1aa8e41-5ac6-422e-bf49-07f22eb9575d",
+      "51be3c54-a07f-4438-8e42-713af404c36c",
       "5418f765-1902-4ec0-823b-5621e9d1c0ab",
       "95181afa-aa14-4883-81da-b206d3717f6a",
-      "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42"
-     ]
-    },
-    "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4": {
-     "title": "Værdi for pengene",
-     "id": "aa6a0fe9-1326-4d72-b592-cd9d7cb4e1a4",
-     "references": [
-      "ca179afd-f362-4672-854c-a247f05d40ef",
-      "b670773f-a50c-442f-8fcf-bc2a0a81faa0",
-      "f72e0630-d212-43a8-a2ab-1855f6a0630d",
-      "cf4ffecf-cedc-4f56-9d58-de96d0f39d17",
-      "06620a59-7379-422a-b22c-d6dbe6fe97b0",
-      "97cb595b-23b9-48e5-af2d-a9f4edfec0db",
-      "98ebd82b-262d-44b7-bf77-e80621242cbb",
-      "444aaa29-418c-4992-bbc0-ab08b3841a7f",
-      "31ed3b18-ea73-4f08-93b9-f39946659db9"
+      "a6d59bbf-dcf8-4bd1-ab6c-4c04042b4d42",
+      "3eb9d49f-1016-4ff8-9bac-6bdd02313cf0",
+      "88784004-c4ed-45ea-aefb-4481155d0b34"
      ]
     }
    },
-   "rating": 4.78109452736318,
-   "count": 201,
-   "reviewCount": 104,
+   "rating": 4.78217821782178,
+   "count": 202,
+   "reviewCount": 105,
    "distribution": {
     "1": 4,
     "2": 1,
     "3": 4,
     "4": 17,
-    "5": 175
+    "5": 176
    }
   },
   "brandName": "Marshall",

@@ -119,6 +119,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "100% digital forstærkerteknologi (TDAI)\nRoomPerfect digital rumkorrektion med voicings og bas/diskant kontrol\nTabsfri digital volumenkontrol\nTilslutning for høretelefoner på front (3,5mm)\nIndbygget medieafspiller med Spotify Connect, TIDAL Connect, HiRes FLAC (24-bit/96kHz), Google Chromecast, AirPlay 2 (Kommer senere), Roon Ready, internetradio (airable, 10 favoritforvalg), DLNA (uPnP), USB\nKontrol både via touchpanel, My Lyngdorf app og web-interface \nIndbygget dual-band wi-fi (802.11 n/ac) \nAsynkront design på alle digitale indgange \nHDMI-CEC/eARC m/auto-lipsync\nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/HDMI) \nL/R analog pre-out/subwoofer-out med elektronisk delefilter og Bass Management\nInd- og udgange samt internetradio-forvalg kan konfigureres individuelt \n1 x USB-C (computer), 1 x USB-A (local medi)\nBackup af opsætning via USB, inkl. alle filtre og indstillinger \n12V Trigger ind/ud\nFuld IP-kontrol \nSkrueterminaler til 1 sæt højtalere\nElektronisk beskyttet mod overbelastning\nKan software-opdateres via USB \nHigh-end analogmodul (inkl. RIAA) og HDMI 2.1 modul (2 x ind, 1 x ud) fås som ekstratilbehør eller indbygget fra start (mod merpris)\nMedfølgende tilbehør: målemikrofon til RoomPerfect inkl. XLR-kabel og stativ, IR-fjernbetjening"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -150,32 +159,6 @@
    },
    {
     "index": 10,
-    "title": "Ydelse",
-    "content": [
-     {
-      "term": "Udgangseffekt 4 ohm",
-      "value": "2 x 210 watt"
-     },
-     {
-      "term": "Udgangseffekt 8 ohm",
-      "value": "2 x 105 watt"
-     },
-     {
-      "term": "Forvrængning (THD)",
-      "value": "0,05%"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Klasse D - fuld digital"
-     },
-     {
-      "term": "Streaming",
-      "value": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect"
-     }
-    ]
-   },
-   {
-    "index": 10,
     "title": "Produktdata",
     "content": [
      {
@@ -201,11 +184,28 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "100% digital forstærkerteknologi (TDAI)\nRoomPerfect digital rumkorrektion med voicings og bas/diskant kontrol\nTabsfri digital volumenkontrol\nTilslutning for høretelefoner på front (3,5mm)\nIndbygget medieafspiller med Spotify Connect, TIDAL Connect, HiRes FLAC (24-bit/96kHz), Google Chromecast, AirPlay 2 (Kommer senere), Roon Ready, internetradio (airable, 10 favoritforvalg), DLNA (uPnP), USB\nKontrol både via touchpanel, My Lyngdorf app og web-interface \nIndbygget dual-band wi-fi (802.11 n/ac) \nAsynkront design på alle digitale indgange \nHDMI-CEC/eARC m/auto-lipsync\nMaksimal opløsning: 24-bit/96kHz (optisk), 24-bit/192kHz (coaxial/HDMI) \nL/R analog pre-out/subwoofer-out med elektronisk delefilter og Bass Management\nInd- og udgange samt internetradio-forvalg kan konfigureres individuelt \n1 x USB-C (computer), 1 x USB-A (local medi)\nBackup af opsætning via USB, inkl. alle filtre og indstillinger \n12V Trigger ind/ud\nFuld IP-kontrol \nSkrueterminaler til 1 sæt højtalere\nElektronisk beskyttet mod overbelastning\nKan software-opdateres via USB \nHigh-end analogmodul (inkl. RIAA) og HDMI 2.1 modul (2 x ind, 1 x ud) fås som ekstratilbehør eller indbygget fra start (mod merpris)\nMedfølgende tilbehør: målemikrofon til RoomPerfect inkl. XLR-kabel og stativ, IR-fjernbetjening"
+      "term": "Udgangseffekt 4 ohm",
+      "value": "2 x 210 watt"
+     },
+     {
+      "term": "Udgangseffekt 8 ohm",
+      "value": "2 x 105 watt"
+     },
+     {
+      "term": "Forvrængning (THD)",
+      "value": "0,05%"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Klasse D - fuld digital"
+     },
+     {
+      "term": "Streaming",
+      "value": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect"
      }
     ]
    }
@@ -282,7 +282,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 33,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -391,7 +391,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 5,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -603,41 +603,55 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LYNGDORF TDAI-2210 roses bredt som en kraftfuld og kompakt streamingforstærker med varm, detaljeret og særdeles kontrolleret lyd. RoomPerfect, fleksible justeringsmuligheder og stærke tilslutninger gør musik i høj kvalitet bemærkelsesværdigt nemt at opnå, mens forstærkeren leverer slagkraft, lavt støjgulv og en medrivende rumfornemmelse. Softwarefejl, lejlighedsvise forbindelsesproblemer og enkelte begrænsninger i betjeningen forhindrer fuldkommen perfektion, men den samlede vurdering er stadig meget begejstret.",
+   "summary": "Lyngdorf TDAI-2210 roses bredt som en kraftfuld og kompakt streamingforstærker med varm, detaljeret og meget kontrolleret lyd. RoomPerfect beskrives ofte som nem at bruge og forvandlende for lyden, fordi systemet forbedrer baskontrol, transparens og højttalernes ydeevne og samtidig giver mange justeringsmuligheder. Software- og forbindelsesproblemer, herunder appudfald, CEC-problemer og afbrydelser ved streaming, er de største forbehold, men den samlede vurdering er fortsat meget begejstret.",
    "headlines": {
     "detailed, powerful and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, detaljeret, kraftfuld og rummelig gengivelse med god baskontrol, lav støj og overbevisende musikalitet.",
-     "simpleTitle": "Detaljeret, kraftfuld og medrivende lyd",
+     "sentimentAnalysis": "Anmeldelserne beskriver en usædvanligt klar, detaljeret og autoritativ gengivelse med stærk dynamik, dyb kontrolleret bas og en omsluttende præsentation.",
+     "simpleTitle": "Detaljeret, kraftfuld og omsluttende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "e19ffae8-4887-4fcf-a48b-f2eae9b64a69"
+     "key": "sound",
+     "groupId": "558e0308-9d48-4638-b02d-8275c15fa389"
     },
-    "roomPerfect makes setup easy and improves bass control": {
-     "sentimentAnalysis": "RoomPerfect roses gentagne gange for den guidede, nemme betjening og den store effekt på en renere, strammere og mere balanceret lyd i vanskelige rum.",
-     "simpleTitle": "RoomPerfect gør opsætningen nem og forbedrer baskontrollen",
+    "roomPerfect is easy and highly effective": {
+     "sentimentAnalysis": "RoomPerfect roses gentagne gange for den guidede opsætning og store forbedringer i baskontrol, klarhed, transparens og samlet sammenhæng.",
+     "simpleTitle": "RoomPerfect er nemt og meget effektivt",
      "bias": "positive",
-     "key": "room-correction",
-     "groupId": "5a6ad176-07b9-4880-afeb-cb4e3d58340e"
+     "key": "roomperfect",
+     "groupId": "af1837ea-0dff-44b4-ba9c-62a8b5045a56"
     },
-    "flexible features and easy control": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter de mange indgange, streamingtjenester, profiler, voicings, filtre og det kompakte design, og mange beskriver systemet som nemt at betjene.",
-     "simpleTitle": "Fleksible funktioner og nem betjening",
+    "extensive adjustment and streaming options": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det brede udvalg af ind- og udgange, profiler, filtre, EQ, phono-understøttelse og pålidelige hi-res-streamingtjenester.",
+     "simpleTitle": "Omfattende justerings- og streamingmuligheder",
      "bias": "positive",
-     "key": "features-and-usability",
-     "groupId": "8e765dfa-f98c-474e-9b17-0788881d13a3"
+     "key": "features",
+     "groupId": "d44cac61-5131-4aef-8a40-a77fe741c5ac"
     },
-    "firmware and connection stability remains inconsistent": {
-     "sentimentAnalysis": "Flere anmeldelser nævner app-fejl, bugs, standby- eller HDMI-CEC-problemer samt ustabile streaming- og netværksforbindelser, hvilket gør produktet mindre plug-and-play end forventet.",
-     "simpleTitle": "Firmware og forbindelsesstabilitet er stadig ustabil",
+    "software and connection stability need improvement": {
+     "sentimentAnalysis": "Flere anmeldelser nævner appudfald, fejl, standbyproblemer, afbrydelser ved streaming og ustabil CEC, hvilket gør produktet mindre plug-and-play end forventet.",
+     "simpleTitle": "Software- og forbindelsesstabiliteten bør forbedres",
      "bias": "negative",
-     "key": "software-connectivity",
-     "groupId": "9830575c-3b96-44e9-86f0-51891364531f"
+     "key": "usability",
+     "groupId": "dba418de-2c58-4989-a8b1-b9ba5774213a"
+    },
+    "slightly bright or flat tonal balance": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever gengivelsen som lidt analytisk, lys, flad eller mindre farverig end på et high-end referenceanlæg.",
+     "simpleTitle": "Lidt lys eller flad klangbalance",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "558e0308-9d48-4638-b02d-8275c15fa389"
+    },
+    "roomPerfect can alter tonal colour": {
+     "sentimentAnalysis": "To anmeldelser fortæller, at RoomPerfect ikke gav nogen fordel i lytterummet eller gjorde klangfarverne mindre overbevisende.",
+     "simpleTitle": "RoomPerfect kan ændre klangfarven",
+     "bias": "negative",
+     "key": "roomperfect",
+     "groupId": "af1837ea-0dff-44b4-ba9c-62a8b5045a56"
     }
    },
    "grouping": {
-    "e19ffae8-4887-4fcf-a48b-f2eae9b64a69": {
+    "558e0308-9d48-4638-b02d-8275c15fa389": {
      "title": "Lydkvalitet",
-     "id": "e19ffae8-4887-4fcf-a48b-f2eae9b64a69",
+     "id": "558e0308-9d48-4638-b02d-8275c15fa389",
      "references": [
       "3cbb3b86-8814-42df-935c-662215d3a6a9",
       "de140b21-b0e1-4f25-bffc-a4b43a951f66",
@@ -648,8 +662,6 @@
       "a71ed555-4e17-4f65-9add-73dd9ab22ca4",
       "971ad60b-879c-4dd5-83a8-99535c601a74",
       "0a817de2-a64e-4311-b78c-ee4f7ff8cce1",
-      "a18cef96-ce71-43f6-8657-ac200140195e",
-      "256218d3-aaf8-45c4-98c3-63a2a7019a5e",
       "58c6eb5f-a6ba-49f1-8930-52f248d828f4",
       "ab4025c0-7bdd-49b1-a291-2287b637c767",
       "774f006e-b864-4ddf-861a-8876096c9c7a",
@@ -662,41 +674,20 @@
       "78b3142c-263c-44b7-9403-09e29ae8e6e6",
       "b76a7891-1372-4722-9426-e525b832ca3f",
       "e1a81fe8-be71-49c4-be48-0259a583890f",
-      "0964d713-9a1e-4429-8bea-8644735a6c25",
       "72f38f77-995c-4950-aad0-4b2ce19e47fa",
       "d58e91ec-74b1-48bd-bba4-fb13c3eb2c57",
-      "15d8830f-9b1f-40a1-9b47-811b36838169",
       "ceccad40-2f67-48f1-a2be-d0e04ba419c5",
       "cf89020d-1b84-406e-9a2b-6af76d7fd788",
       "6d9f93cc-b6e5-4c19-ab64-90306ce80aac",
       "7b3d88c8-95ab-4b26-8782-4cd049684d94",
       "c19e9902-c9e7-428d-9af2-4cd8cfac3a71",
-      "820cf916-d1a1-43c7-8a0a-7ef2e5b87503",
-      "e2ea72ad-40b8-4faf-9303-dd551d633d52"
-     ]
-    },
-    "8e765dfa-f98c-474e-9b17-0788881d13a3": {
-     "title": "Funktioner og betjening",
-     "id": "8e765dfa-f98c-474e-9b17-0788881d13a3",
-     "references": [
-      "0eff270b-05fc-44e7-a32c-49d15544d68e",
-      "3edf8af5-c9b5-4b1a-a3e4-d3563d8af3e8",
-      "fc10a00b-69a7-4e7f-b44b-06a5496c82fb",
-      "a71ed555-4e17-4f65-9add-73dd9ab22ca4",
-      "ab4025c0-7bdd-49b1-a291-2287b637c767",
-      "d3f24b1f-e518-4e3a-b003-dcc46db2ae3a",
-      "47b850d1-1e2a-4681-b2d4-69456c8ad71a",
-      "b76a7891-1372-4722-9426-e525b832ca3f",
       "e2ea72ad-40b8-4faf-9303-dd551d633d52",
-      "15d8830f-9b1f-40a1-9b47-811b36838169",
-      "bc17c38e-1af8-45fc-9982-5a6bbe832be6",
-      "7b3d88c8-95ab-4b26-8782-4cd049684d94",
-      "d58e91ec-74b1-48bd-bba4-fb13c3eb2c57"
+      "0964d713-9a1e-4429-8bea-8644735a6c25"
      ]
     },
-    "5a6ad176-07b9-4880-afeb-cb4e3d58340e": {
-     "title": "Rumkorrektion",
-     "id": "5a6ad176-07b9-4880-afeb-cb4e3d58340e",
+    "af1837ea-0dff-44b4-ba9c-62a8b5045a56": {
+     "title": "RoomPerfect-rumkorrektion",
+     "id": "af1837ea-0dff-44b4-ba9c-62a8b5045a56",
      "references": [
       "0eff270b-05fc-44e7-a32c-49d15544d68e",
       "de140b21-b0e1-4f25-bffc-a4b43a951f66",
@@ -712,18 +703,35 @@
       "d58e91ec-74b1-48bd-bba4-fb13c3eb2c57"
      ]
     },
-    "9830575c-3b96-44e9-86f0-51891364531f": {
-     "title": "Software og tilslutning",
-     "id": "9830575c-3b96-44e9-86f0-51891364531f",
+    "d44cac61-5131-4aef-8a40-a77fe741c5ac": {
+     "title": "Funktioner og tilslutninger",
+     "id": "d44cac61-5131-4aef-8a40-a77fe741c5ac",
+     "references": [
+      "0eff270b-05fc-44e7-a32c-49d15544d68e",
+      "3edf8af5-c9b5-4b1a-a3e4-d3563d8af3e8",
+      "a71ed555-4e17-4f65-9add-73dd9ab22ca4",
+      "ab4025c0-7bdd-49b1-a291-2287b637c767",
+      "0ec1ff34-b15d-4d4e-af02-7e876dc31a70",
+      "d3f24b1f-e518-4e3a-b003-dcc46db2ae3a",
+      "47b850d1-1e2a-4681-b2d4-69456c8ad71a",
+      "78b3142c-263c-44b7-9403-09e29ae8e6e6",
+      "e1a81fe8-be71-49c4-be48-0259a583890f",
+      "e2ea72ad-40b8-4faf-9303-dd551d633d52",
+      "ceccad40-2f67-48f1-a2be-d0e04ba419c5"
+     ]
+    },
+    "dba418de-2c58-4989-a8b1-b9ba5774213a": {
+     "title": "Brugervenlighed og app",
+     "id": "dba418de-2c58-4989-a8b1-b9ba5774213a",
      "references": [
       "cb7b34b1-c86e-4c9f-a09b-dcaab6ee6881",
-      "ab4025c0-7bdd-49b1-a291-2287b637c767",
-      "6fda67e7-8a46-4130-900e-6e43964a2325",
-      "0ec1ff34-b15d-4d4e-af02-7e876dc31a70",
-      "4ffe11a4-b71c-4309-9093-7de5081288e4",
+      "3edf8af5-c9b5-4b1a-a3e4-d3563d8af3e8",
+      "c5ea11c6-d378-42c0-b3d7-d75c91b73b37",
       "7b85f9f9-3021-4b2a-bd6e-7651e8d9bca5",
-      "72f38f77-995c-4950-aad0-4b2ce19e47fa",
+      "b76a7891-1372-4722-9426-e525b832ca3f",
+      "7b3d88c8-95ab-4b26-8782-4cd049684d94",
       "13d1adb1-b22f-4156-9e72-54ab8c7b669a",
+      "bc17c38e-1af8-45fc-9982-5a6bbe832be6",
       "c67d7299-8642-491e-abe9-e58ad86d0d1a"
      ]
     }
