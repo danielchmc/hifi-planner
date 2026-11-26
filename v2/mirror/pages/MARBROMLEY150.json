@@ -63,6 +63,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Transportabel, batteridrevet Bluetooth-højtaler\nIndbygget batteri med op til 40 timers spilletid ved medium volumen\nLadetid 3 timer, 20 min hurtigladning giver 5 timers spilletid\nIndbygget lysshow (reaktivt eller via app)\nDedikeret Marshall Bluetooth app\nStøv- og vandafvisende (IP55)\nIntegreret bærehåndtag, som kan trykkes ned i kabinettet\nBluetooth 5.3 inkl. AAC/LC3/SBC/Auracast\n360° True Stereophonic lyd\nMaksimalt lydtryk: 97 dB (målebetingelser ikke oplyst)\nMulighed for seriekobling (2 styk trådløst eller op til 5 højtalere i alt via AUX-ud)\nIndbyggede Klasse D forstærkere: 1 x 90 watt (bas), 2 x 55 watt (fuldtone) (målemetode ikke angivet) \nKan forbinde til 2 Bluetooth-enheder samtidig (multipoint)\nKan huske op til 10 parrede enheder\nAvancerede Bluetooth-muligheder med Auracast-kompatible enheder\nUdskiftelig frontgrill i metal\nMulighed for montering af højtalerstander Ø 3,5 cm\nMedfølgende tilbehør: genopladeligt USB-C batteri\n70% genbrugsplast i plastikdele \nKan spille/oplades direkte fra stikkontakt, batteri kan oplades separat via USB-C lader (købes separat)\nKan oplades samtidig med afspilning \nUSB-C ladeudgang til telefon m.m. (5V/3A)\nEkstra USB-C batteri fås som ekstratilbehør (vægt 526 gram)"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -81,15 +90,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-udgang"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Transportabel, batteridrevet Bluetooth-højtaler\nIndbygget batteri med op til 40 timers spilletid ved medium volumen\nLadetid 3 timer, 20 min hurtigladning giver 5 timers spilletid\nIndbygget lysshow (reaktivt eller via app)\nDedikeret Marshall Bluetooth app\nStøv- og vandafvisende (IP55)\nIntegreret bærehåndtag, som kan trykkes ned i kabinettet\nBluetooth 5.3 inkl. AAC/LC3/SBC/Auracast\n360° True Stereophonic lyd\nMaksimalt lydtryk: 97 dB (målebetingelser ikke oplyst)\nMulighed for seriekobling (2 styk trådløst eller op til 5 højtalere i alt via AUX-ud)\nIndbyggede Klasse D forstærkere: 1 x 90 watt (bas), 2 x 55 watt (fuldtone) (målemetode ikke angivet) \nKan forbinde til 2 Bluetooth-enheder samtidig (multipoint)\nKan huske op til 10 parrede enheder\nAvancerede Bluetooth-muligheder med Auracast-kompatible enheder\nUdskiftelig frontgrill i metal\nMulighed for montering af højtalerstander Ø 3,5 cm\nMedfølgende tilbehør: genopladeligt USB-C batteri\n70% genbrugsplast i plastikdele \nKan spille/oplades direkte fra stikkontakt, batteri kan oplades separat via USB-C lader (købes separat)\nKan oplades samtidig med afspilning \nUSB-C ladeudgang til telefon m.m. (5V/3A)\nEkstra USB-C batteri fås som ekstratilbehør (vægt 526 gram)"
      }
     ]
    },
@@ -204,13 +204,14 @@
     "productCode": "MARBROMLEY150BK",
     "ean": "7340055420563",
     "priceDetails": {
-     "priceValueId": 1197765,
-     "price": 3599,
-     "priceFormatted": "3.599,-",
+     "priceValueId": 1222971,
+     "price": 3490,
+     "priceFormatted": "3.490,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 3599
+     "unitPrice": 3490,
+     "unitPriceBefore": 3599
     },
     "ribbons": [
      {
@@ -257,7 +258,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 116,
+     "availableQuantity": 114,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -298,7 +299,18 @@
   "testGroups": [],
   "bundleRelations": [],
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "reviewCount": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "boxContent": [
    {
     "productName": "Marshall Bromley 150 Trådløs højtaler med batteri",

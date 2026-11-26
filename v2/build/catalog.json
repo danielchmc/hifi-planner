@@ -14473,7 +14473,7 @@
     "da": "Pladespiller"
    },
    "cat": "/pladespiller/pladespillere/",
-   "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
+   "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
    "kind": "source",
    "scope": "diagram",
    "facets": {
@@ -14482,15 +14482,14 @@
    },
    "variants": [
     {
-     "sku": "ARGTTMK2GR",
-     "label": "Pine Green",
+     "sku": "ARGTTMK2WA",
+     "label": "Valnød",
      "price": 1599,
      "was": 1999,
-     "colorKey": "Green",
-     "hex": "#305544",
-     "ean": "5706957016891",
-     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
-     "img": "hk:bcd25129-2e59-4fa0-b065-03a2549217d5",
+     "colorKey": "Wood",
+     "ean": "5706957016914",
+     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
+     "img": "hk:2aa2b430-fd10-4c79-9106-36ecbda631c5",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "6,2",
@@ -14517,14 +14516,15 @@
      }
     },
     {
-     "sku": "ARGTTMK2WA",
-     "label": "Valnød",
+     "sku": "ARGTTMK2GR",
+     "label": "Pine Green",
      "price": 1599,
      "was": 1999,
-     "colorKey": "Wood",
-     "ean": "5706957016914",
-     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2wa/",
-     "img": "hk:2aa2b430-fd10-4c79-9106-36ecbda631c5",
+     "colorKey": "Green",
+     "hex": "#305544",
+     "ean": "5706957016891",
+     "url": "/argon-audio-tt-mk2-pladespiller/argttmk2gr/",
+     "img": "hk:bcd25129-2e59-4fa0-b065-03a2549217d5",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "6,2",
@@ -54850,22 +54850,6 @@
      }
     },
     {
-     "sku": "JBLLIVEFLEX4OR",
-     "label": "Orange",
-     "price": 799,
-     "was": 1499,
-     "colorKey": "Orange",
-     "ean": "1200130040573",
-     "url": "/jbl-live-flex-4-traadloese-in-ear-hoeretelefoner/jblliveflex4or/",
-     "img": "hk:65ce5bce-df72-440e-ac27-55044c9f96c9",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,09",
-      "Vægt emballage (kg)": "0,24",
-      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVEFLEX4SI",
      "label": "Sølv",
      "price": 799,
@@ -54874,6 +54858,22 @@
      "ean": "1200130035524",
      "url": "/jbl-live-flex-4-traadloese-in-ear-hoeretelefoner/jblliveflex4si/",
      "img": "hk:659b06b7-171c-4652-a028-75ca9e07f5f4",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,09",
+      "Vægt emballage (kg)": "0,24",
+      "Mål (emballage)": "4 x 10 x 16 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVEFLEX4OR",
+     "label": "Orange",
+     "price": 799,
+     "was": 1499,
+     "colorKey": "Orange",
+     "ean": "1200130040573",
+     "url": "/jbl-live-flex-4-traadloese-in-ear-hoeretelefoner/jblliveflex4or/",
+     "img": "hk:65ce5bce-df72-440e-ac27-55044c9f96c9",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,09",
@@ -63777,7 +63777,7 @@
      "SOUNDBOKSRIDER"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARBROMLEY450",
@@ -63853,7 +63853,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARBROMLEY750",
@@ -63937,7 +63937,7 @@
      "SOUNDBOKSRIDER"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MAREMBERTON3",
@@ -64048,7 +64048,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARHESTON120",
@@ -64115,9 +64115,9 @@
    },
    "rel": {
     "acc": [
+     "MARHESTON120WM",
      "AQPEARL48HDMI",
-     "ESSCL1HDMI8KX",
-     "MARHESTON120WM"
+     "ESSCL1HDMI8KX"
     ],
     "alt": [
      "MARHESTON60",
@@ -64141,7 +64141,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARHESTON120WM",
@@ -64182,7 +64182,7 @@
      "MARHESTON120"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARHESTON60",
@@ -64260,15 +64260,15 @@
      "SENAMBEOSBMINI"
     ],
     "rec": [
+     "MARHESTONSUB200",
      "ARGBERLINSUB10",
      "DALISUBE9F",
      "KEFKUBE8MIE",
      "ARGBERLINSUB12",
-     "KEFKUBE10MIE",
-     "MARHESTONSUB200"
+     "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARHESTONSUB200",
@@ -64323,7 +64323,7 @@
      "MARHESTON60"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARKILBURN3",
@@ -64416,7 +64416,7 @@
      "BOBEOLIT20"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARMAJOR5",
@@ -64543,7 +64543,7 @@
      "KEFMU7"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARMIDDLETON2",
@@ -64627,7 +64627,7 @@
      "BOEXPLORE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARMILTON",
@@ -64703,7 +64703,7 @@
      "BWPX7S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARMINOR4",
@@ -64751,7 +64751,7 @@
      "ean": "7340055405249",
      "url": "/marshall-minor-iv-traadloese-in-ear-hoeretelefoner/marminor4cream/",
      "img": "hk:2a1657c0-73c2-4eeb-97a0-e56fb98d50aa",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,05",
       "Vægt emballage (kg)": "0,2",
@@ -64799,7 +64799,7 @@
      "KEFMU3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARMONITOR3ANC",
@@ -64845,7 +64845,7 @@
      "ean": "7340055411479",
      "url": "/marshall-monitor-iii-a.n.c.-traadloest-headset/marmonitor3anccream/",
      "img": "hk:a1cf5ac7-8d21-427f-b318-ce31d75b3e15",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,25",
       "Vægt emballage (kg)": "0,85",
@@ -64892,7 +64892,7 @@
      "KEFMU7"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARSTANMORE3",
@@ -64985,7 +64985,7 @@
      "BLSPULSE2I"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARSTANMORE4",
@@ -65063,7 +65063,7 @@
      "MARWOBURN3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARSTOCKWELL3",
@@ -65140,7 +65140,7 @@
      "MARMIDDLETON2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MARWOBURN3",
@@ -65221,7 +65221,7 @@
      "DENHOME600"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MCGEN270",
@@ -65269,7 +65269,7 @@
      "ESSCL1BANBFASIX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MNTSONERAWM",
@@ -65313,11 +65313,11 @@
     "alt": [
      "ESSWBSONERA100X",
      "MNTSONERAFS",
-     "SONERA100FS",
-     "SONERA100WM"
+     "SONERA100WM",
+     "SONERA100FS"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFILOWSTANDSP10",
@@ -65359,7 +65359,7 @@
      "MOFISOURCEPOINT10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFIMASTERDECK",
@@ -65432,7 +65432,7 @@
      "MOFISTUDIOSILVER"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFISOURCEPOINT10M",
@@ -65529,7 +65529,7 @@
      "DENRCDN12DAB"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFISOURCEPOINT8",
@@ -65626,7 +65626,7 @@
      "LYNGTDAI2210"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFISTANDSRCPNT10",
@@ -65668,7 +65668,7 @@
      "MOFISOURCEPOINT10M"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFISTUDIOSILVER",
@@ -65729,7 +65729,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFIULTRALNF",
@@ -65801,7 +65801,7 @@
      "MOFIMASTERDECK"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFIULTRATRACKER",
@@ -65861,7 +65861,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MOFLOWISTANDSRCPNT10",
@@ -65899,11 +65899,11 @@
    "specs": {},
    "rel": {
     "acc": [
-     "MOFISOURCEPOINT10",
-     "MOFISOURCEPOINT10M"
+     "MOFISOURCEPOINT10M",
+     "MOFISOURCEPOINT10"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "MONXLR",
@@ -65930,7 +65930,7 @@
      "ean": "4007754265392",
      "url": "/monacor-xlr-cable-signalkabel/monxlr600/",
      "img": "hk:cdcf3cd9-b77f-42bd-9106-32c30ce82dc3",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,29",
       "Vægt emballage (kg)": "0,32",
@@ -65965,7 +65965,7 @@
      "IMGDM710S"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NACOMPOSESB201X",
@@ -66050,7 +66050,7 @@
      "SENAMBEOSBMINI"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADBLUOSUPGRADEKITX",
@@ -66086,7 +66086,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC268",
@@ -66160,7 +66160,7 @@
      "BW606S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC298",
@@ -66238,7 +66238,7 @@
      "BW705S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC3030",
@@ -66350,7 +66350,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC3030S",
@@ -66468,7 +66468,7 @@
      "KEFKUBE10MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC3050",
@@ -66517,15 +66517,15 @@
     "Indgang (andet)": "Ethernet, IR, USB A",
     "Trådløs overførsel": "Bluetooth-indgang",
     "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Analog XLR, Høretelefon, Højtaler A/B",
+    "Fjernbetjening": "Ja",
+    "Stemmestyring": "Nej",
+    "Teknologier": "aptX, aptX HD",
     "Udgangseffekt 4 ohm": "2 x 100 watt",
     "Udgangseffekt 8 ohm": "2 x 100 watt",
     "Forvrængning (THD)": "0,03%",
     "Signal/støjforhold": "95 dB",
     "Dynamisk effekt": "250 watt",
     "Forstærkerteknologi": "Klasse D",
-    "Fjernbetjening": "Ja",
-    "Stemmestyring": "Nej",
-    "Teknologier": "aptX, aptX HD",
     "Standby strømforbrug": "0,5 watt"
    },
    "rel": {
@@ -66588,7 +66588,7 @@
      "KEFKC62"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC316V2",
@@ -66673,11 +66673,11 @@
      "DALIOBERONONWALL",
      "BW606S3",
      "ARGFORUS4X",
-     "ARGTT4MK2",
-     "DALIMENUET"
+     "DALIMENUET",
+     "ARGTT4MK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC359S",
@@ -66778,7 +66778,7 @@
      "NADC569"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC379",
@@ -66818,12 +66818,6 @@
     }
    ],
    "specs": {
-    "Udgangseffekt 4 ohm": "80 watt",
-    "Udgangseffekt 8 ohm": "80 watt",
-    "Forvrængning (THD)": "0,03%",
-    "Dæmpningsfaktor": "150",
-    "Dynamisk effekt": "120-250 watt",
-    "Forstærkerteknologi": "Klasse D",
     "Udvidelsesmoduler": "Ja",
     "HDMI ARC/CEC": "Ja",
     "HDMI indgange": "1",
@@ -66838,6 +66832,12 @@
     "Fjernbetjening": "Ja",
     "Stemmestyring": "Nej",
     "Teknologier": "aptX, aptX HD",
+    "Udgangseffekt 4 ohm": "80 watt",
+    "Udgangseffekt 8 ohm": "80 watt",
+    "Forvrængning (THD)": "0,03%",
+    "Dæmpningsfaktor": "150",
+    "Dynamisk effekt": "120-250 watt",
+    "Forstærkerteknologi": "Klasse D",
     "Standby strømforbrug": "0,5 watt"
    },
    "rel": {
@@ -66889,7 +66889,7 @@
      "DENDP400"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC389",
@@ -88247,13 +88247,13 @@
      }
     },
     {
-     "sku": "SONYWH1000XM5S",
-     "label": "Sølv",
+     "sku": "SONYWH1000XM5BL",
+     "label": "Blå",
      "price": 2499,
-     "colorKey": "Silver",
-     "ean": "4548736132597",
-     "url": "/sony-wh-1000xm5-traadloest-headset/sonywh1000xm5s/",
-     "img": "hk:33c43332-9cdf-4b0d-a07f-80b82ca97508",
+     "colorKey": "Blue",
+     "ean": "4548736134294",
+     "url": "/sony-wh-1000xm5-traadloest-headset/sonywh1000xm5bl/",
+     "img": "hk:bac7fbcc-6a9a-41b2-a43b-fd456497d1fa",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,27",
@@ -88262,13 +88262,13 @@
      }
     },
     {
-     "sku": "SONYWH1000XM5BL",
-     "label": "Blå",
+     "sku": "SONYWH1000XM5S",
+     "label": "Sølv",
      "price": 2499,
-     "colorKey": "Blue",
-     "ean": "4548736134294",
-     "url": "/sony-wh-1000xm5-traadloest-headset/sonywh1000xm5bl/",
-     "img": "hk:bac7fbcc-6a9a-41b2-a43b-fd456497d1fa",
+     "colorKey": "Silver",
+     "ean": "4548736132597",
+     "url": "/sony-wh-1000xm5-traadloest-headset/sonywh1000xm5s/",
+     "img": "hk:33c43332-9cdf-4b0d-a07f-80b82ca97508",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,27",
@@ -99232,7 +99232,7 @@
    "cat": "/stereo/systemer/",
    "url": "/n230-forus4/",
    "price": 6597,
-   "was": 7297,
+   "was": 0,
    "img": "hk:22cc033a-8bcb-488c-a06a-ae21960689c6",
    "parts": [
     {
@@ -99267,7 +99267,7 @@
    "cat": "/stereo/systemer/",
    "url": "/n230-opticon1mk2/",
    "price": 10497,
-   "was": 12897,
+   "was": 12197,
    "img": "hk:57d88505-21c2-4c1b-834c-102c871ef1ca",
    "parts": [
     {
@@ -99401,7 +99401,7 @@
    },
    "cat": "/stereo/systemer/",
    "url": "/nad-c700-opticon1/",
-   "price": 18497,
+   "price": 15497,
    "was": 20197,
    "img": "hk:2748fcd9-2626-4c49-8335-10fead718651",
    "parts": [

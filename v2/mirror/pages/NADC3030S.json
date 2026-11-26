@@ -109,6 +109,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Apple AirPlay og Bluetooth 5.4, inkl. aptX HD og AAC\nIndbygget Bluesound musikstreaming med multirum\nLydformater (max 24-bit/192kHz): FLAC, MQA, WAV, AIFF, MP3, AAC, WMA, OGG, WMA-L, ALAC, OPUS\nHypex HybridDigital UcD effekttrin \nUnderstøtter op til 24-bit/192kHz via optisk indgang \nGuldbelagte terminaler \nFjernbetjening medfølger\nMekanisk tænd/sluk på bagside"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -185,15 +194,6 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Apple AirPlay og Bluetooth 5.4, inkl. aptX HD og AAC\nIndbygget Bluesound musikstreaming med multirum\nLydformater (max 24-bit/192kHz): FLAC, MQA, WAV, AIFF, MP3, AAC, WMA, OGG, WMA-L, ALAC, OPUS\nHypex HybridDigital UcD effekttrin \nUnderstøtter op til 24-bit/192kHz via optisk indgang \nGuldbelagte terminaler \nFjernbetjening medfølger\nMekanisk tænd/sluk på bagside"
-     }
-    ]
-   },
-   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -252,10 +252,10 @@
    "id": 69671
   },
   "stockItemAlternative": {
-   "save": "1.000,-",
+   "save": "2.000,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=NADC3030S",
    "availableQuantity": 1,
-   "lowestPrice": "8.999,-"
+   "lowestPrice": "7.999,-"
   },
   "variants": [
    {
@@ -312,7 +312,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 97,
+     "availableQuantity": 92,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -368,34 +368,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD leverer en overbevisende opgradering med varm, klar, punchy og medrivende lyd og samler streaming, pladespiller og tv-kilder med imponerende lethed. Installation og daglig betjening er enkel, appen fungerer problemfrit, og flere styringsmuligheder er tilgængelige. Det klassiske design og de alsidige tilslutninger gør NADC3030S til et særdeles tilfredsstillende centrum i et moderne musiksystem.",
+   "summary": "NADC3030S roses bredt som en alsidig og let installerbar forstærker, der leverer en varm, klar og engagerende lyd. Streamingintegrationen er særligt stærk, fordi Tidal og andre tjenester kan kombineres med traditionelle kilder som pladespillere og cd-afspillere. Den samlede løsning føles gennemført og eksklusiv, selv om Bluetooth-funktionen kan være lidt besværlig, og der stadig er plads til forbedringer.",
    "headlines": {
     "warm, clear and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser forstærkeren for at forbedre eksisterende anlæg med varm, klar, kraftfuld og studielignende lyd.",
+     "sentimentAnalysis": "Forstærkeren roses for sin varme, klare, behagelige og højkvalitets lyd.",
      "simpleTitle": "Varm, klar og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "1d499c45-ada0-4785-b95d-e05fe0fcdffc"
+     "key": "sound-quality",
+     "groupId": "3d6678e1-84ba-4992-82c2-ef71999ae8c4"
     },
-    "easy installation and flexible control": {
-     "sentimentAnalysis": "Anmeldelserne beskriver enkel opsætning og bekvem betjening via app, fjernbetjening eller knapper på fronten.",
-     "simpleTitle": "Nem opsætning og fleksibel betjening",
+    "a clear upgrade to existing systems": {
+     "sentimentAnalysis": "Forstærkeren beskrives som en forbedring af lyden i et eksisterende anlæg, også med de samme højttalere.",
+     "simpleTitle": "En tydelig opgradering af eksisterende anlæg",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "9befe5c5-d20e-449b-badc-31eb73bb0611"
+     "key": "sound-quality",
+     "groupId": "3d6678e1-84ba-4992-82c2-ef71999ae8c4"
     },
-    "streaming works well with multiple sources": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter muligheden for at kombinere streaming med en pladespiller og få adgang til flere musiktjenester.",
-     "simpleTitle": "Streaming fungerer godt med flere kilder",
+    "easy to install and connect": {
+     "sentimentAnalysis": "Installation og tilslutning opleves som enkel og problemfri.",
+     "simpleTitle": "Nem at installere og tilslutte",
      "bias": "positive",
-     "key": "connectivity",
-     "groupId": "bc3c670c-c249-4986-80f8-d882928a0ad7"
+     "key": "installation",
+     "groupId": "2a7d32c2-b979-44ee-b7dd-2712d12f1f17"
+    },
+    "flexible streaming alongside traditional sources": {
+     "sentimentAnalysis": "Streamingtjenester integreres problemfrit med pladespillere, cd-afspillere og andre traditionelle lydkilder.",
+     "simpleTitle": "Fleksibel streaming sammen med traditionelle kilder",
+     "bias": "positive",
+     "key": "streaming",
+     "groupId": "15fa409f-f88f-412b-8eb9-0565acd87966"
     }
    },
    "grouping": {
-    "1d499c45-ada0-4785-b95d-e05fe0fcdffc": {
+    "3d6678e1-84ba-4992-82c2-ef71999ae8c4": {
      "title": "Lydkvalitet",
-     "id": "1d499c45-ada0-4785-b95d-e05fe0fcdffc",
+     "id": "3d6678e1-84ba-4992-82c2-ef71999ae8c4",
      "references": [
       "478fccab-ca38-4831-9629-3fab78d55bf3",
       "94a5a2c4-b70c-46db-a997-7021ef6bd001",
@@ -404,22 +411,19 @@
       "bd7d47ab-9cb9-47d1-929e-e7a1e170702c"
      ]
     },
-    "bc3c670c-c249-4986-80f8-d882928a0ad7": {
-     "title": "Tilslutninger og streaming",
-     "id": "bc3c670c-c249-4986-80f8-d882928a0ad7",
+    "2a7d32c2-b979-44ee-b7dd-2712d12f1f17": {
+     "title": "Installation",
+     "id": "2a7d32c2-b979-44ee-b7dd-2712d12f1f17",
      "references": [
       "478fccab-ca38-4831-9629-3fab78d55bf3",
-      "94a5a2c4-b70c-46db-a997-7021ef6bd001",
-      "69ec0fd1-8a15-49af-a1ac-24837193354b",
-      "bd7d47ab-9cb9-47d1-929e-e7a1e170702c"
+      "dde876b9-ea5b-4ae1-848e-e390c1351398"
      ]
     },
-    "9befe5c5-d20e-449b-badc-31eb73bb0611": {
-     "title": "Opsætning og betjening",
-     "id": "9befe5c5-d20e-449b-badc-31eb73bb0611",
+    "15fa409f-f88f-412b-8eb9-0565acd87966": {
+     "title": "Streaming og tilslutning",
+     "id": "15fa409f-f88f-412b-8eb9-0565acd87966",
      "references": [
-      "478fccab-ca38-4831-9629-3fab78d55bf3",
-      "dde876b9-ea5b-4ae1-848e-e390c1351398",
+      "94a5a2c4-b70c-46db-a997-7021ef6bd001",
       "bd7d47ab-9cb9-47d1-929e-e7a1e170702c"
      ]
     }

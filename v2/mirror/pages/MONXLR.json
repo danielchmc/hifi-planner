@@ -20,7 +20,7 @@
   "gallery": [
    "cdcf3cd9-b77f-42bd-9106-32c30ce82dc3"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 264556,
@@ -130,7 +130,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 18,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -195,11 +195,12 @@
      "productCode": "MONXLR600"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager torsdag den 26. november",
-     "deliveryDate": "2026-11-26T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 9,
-     "inventoryStatusType": "notInStockAtpDate"
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 43,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

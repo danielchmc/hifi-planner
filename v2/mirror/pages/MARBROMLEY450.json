@@ -62,6 +62,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Indbygget batteri med op til 40 timers spilletid ved medium volumen\nLadetid 3,5 time, 20 min hurtigladning giver 6 timers spilletid\nIndbygget lysshow (reaktivt eller via app)\nDedikeret Marshall Bluetooth app\nStøv- og vandafvisende (IP55)\nIndbygget sidehåndtag \nBluetooth 5.3 inkl. AAC/LC3/SBC/Auracast\n360° True Stereophonic lyd\nMulighed for seriekobling (2 styk trådløst eller op til 5 højtalere i alt via AUX-ud)\nIndbyggede Klasse D forstærkere: 2 x 90 watt (bas), 4 x 55 watt (fuldtone) (målemetode ikke angivet) \nBas: 2 x 6,5” \nMellemtone/diskant: 4 x 2” fuldtone\n2 x 8” Passive Radiator\nKan forbinde til 2 Bluetooth-enheder samtidig (multipoint)\nKan huske op til 10 parrede enheder\nAvancerede Bluetooth-muligheder med Auracast-kompatible enheder\nUdskiftelig frontgrill i metal\nMulighed for montering af højtalerstander Ø 3,5 cm\nMedfølgende tilbehør: genopladeligt USB-C batteri\n60% genbrugsplast i plastikdele \nKan spille/oplades direkte fra stikkontakt, batteri kan oplades separat via USB-C lader (købes separat)\nKan oplades samtidig med afspilning \nUSB-C ladeudgang til telefon m.m. (5V/3A)\nEkstra USB-C batteri fås som ekstratilbehør (vægt 915 gram)"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -76,15 +85,6 @@
      {
       "term": "Indgang (andet)",
       "value": "USB C"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Indbygget batteri med op til 40 timers spilletid ved medium volumen\nLadetid 3,5 time, 20 min hurtigladning giver 6 timers spilletid\nIndbygget lysshow (reaktivt eller via app)\nDedikeret Marshall Bluetooth app\nStøv- og vandafvisende (IP55)\nIndbygget sidehåndtag \nBluetooth 5.3 inkl. AAC/LC3/SBC/Auracast\n360° True Stereophonic lyd\nMulighed for seriekobling (2 styk trådløst eller op til 5 højtalere i alt via AUX-ud)\nIndbyggede Klasse D forstærkere: 2 x 90 watt (bas), 4 x 55 watt (fuldtone) (målemetode ikke angivet) \nBas: 2 x 6,5” \nMellemtone/diskant: 4 x 2” fuldtone\n2 x 8” Passive Radiator\nKan forbinde til 2 Bluetooth-enheder samtidig (multipoint)\nKan huske op til 10 parrede enheder\nAvancerede Bluetooth-muligheder med Auracast-kompatible enheder\nUdskiftelig frontgrill i metal\nMulighed for montering af højtalerstander Ø 3,5 cm\nMedfølgende tilbehør: genopladeligt USB-C batteri\n60% genbrugsplast i plastikdele \nKan spille/oplades direkte fra stikkontakt, batteri kan oplades separat via USB-C lader (købes separat)\nKan oplades samtidig med afspilning \nUSB-C ladeudgang til telefon m.m. (5V/3A)\nEkstra USB-C batteri fås som ekstratilbehør (vægt 915 gram)"
      }
     ]
    },
@@ -241,7 +241,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 66,
+     "availableQuantity": 62,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -302,41 +302,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARBROMLEY450 leverer varm, kraftfuld og omsluttende lyd med dyb bas og en fornøjelig gengivelse ved forskellige lydstyrker. Den lange batteritid og de underholdende lyseffekter giver både praktisk værdi og visuel energi. Højttaleren er en funktionsrig kvalitets-allrounder, der prioriterer musikglæde frem for strikt hi-fi-nøjagtighed.",
+   "summary": "En varm og slagkraftig højttaler, der fylder rummet med engagerende, omsluttende lyd og dyb bas ved mange forskellige lydstyrker. Lang batteritid og sjove lyseffekter giver alsidighed og glæde og gør højttaleren til en alsidig kvalitetsløsning. Audiografisk neutralitet er ikke fokuspunktet; musikglæde, stærk kvalitet og bred anvendelighed er vigtigere.",
    "headlines": {
-    "rich, enjoyable sound": {
-     "sentimentAnalysis": "Højttaleren fylder rummet med fornøjelig og levende lyd og fungerer godt ved både lav og høj lydstyrke.",
-     "simpleTitle": "Fyldig og fornøjelig lyd",
+    "room-filling, enjoyable sound": {
+     "sentimentAnalysis": "Højttaleren leverer behagelig og kraftfuld lyd med god gennemslagskraft ved forskellige lydstyrker.",
+     "simpleTitle": "Rumdækkende, fornøjelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "a3f07f75-b92d-490d-a6d3-dedb391a8352"
+     "key": "sound",
+     "groupId": "93117a66-535b-431a-a2c8-98536333210d"
     },
-    "deep, powerful bass": {
-     "sentimentAnalysis": "Den fyldige bas tilfører kraft og dybde og gør musikken mere energisk og engagerende.",
-     "simpleTitle": "Dyb og kraftfuld bas",
+    "deep, punchy bass": {
+     "sentimentAnalysis": "Dyb bas og markant tryk giver lyden en energisk og underholdende karakter.",
+     "simpleTitle": "Dyb og slagkraftig bas",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "a3f07f75-b92d-490d-a6d3-dedb391a8352"
+     "key": "sound",
+     "groupId": "93117a66-535b-431a-a2c8-98536333210d"
     },
     "long-lasting battery": {
-     "sentimentAnalysis": "Den lange batteritid understøtter lange lytteperioder og gør mobil brug mere bekvem.",
+     "sentimentAnalysis": "Den lange batteritid understøtter lange lytteoplevelser og styrker højttalerens alsidighed.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
-     "key": "battery-life",
-     "groupId": "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70"
+     "key": "battery",
+     "groupId": "53dfa80c-9a13-42f6-8c42-b6740ba574b0"
     },
-    "fun, colorful lighting": {
-     "sentimentAnalysis": "Lyseffekterne tilfører en legende visuel dimension og øger højttalerens underholdningsværdi.",
-     "simpleTitle": "Sjov og farverig belysning",
+    "fun lighting effects": {
+     "sentimentAnalysis": "Farverig belysning tilfører en legende visuel dimension og gør lytteoplevelsen sjovere.",
+     "simpleTitle": "Sjove lyseffekter",
      "bias": "positive",
      "key": "lighting",
-     "groupId": "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531"
+     "groupId": "543c8aab-db27-4fb1-bc82-3f535bca68a2"
     }
    },
    "grouping": {
-    "a3f07f75-b92d-490d-a6d3-dedb391a8352": {
+    "93117a66-535b-431a-a2c8-98536333210d": {
      "title": "Lydkvalitet",
-     "id": "a3f07f75-b92d-490d-a6d3-dedb391a8352",
+     "id": "93117a66-535b-431a-a2c8-98536333210d",
      "references": [
       "af43ac9c-b67a-492e-9c17-0d777b73d5dd",
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
@@ -344,17 +344,17 @@
       "fb4e06b2-75aa-4d73-ae1d-0d5f9fafd96e"
      ]
     },
-    "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70": {
+    "53dfa80c-9a13-42f6-8c42-b6740ba574b0": {
      "title": "Batteritid",
-     "id": "5a1c7dd5-4e44-4143-a4b2-1d5f5ee41e70",
+     "id": "53dfa80c-9a13-42f6-8c42-b6740ba574b0",
      "references": [
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
       "35c32e6e-6413-46dc-a473-4b86b1576880"
      ]
     },
-    "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531": {
+    "543c8aab-db27-4fb1-bc82-3f535bca68a2": {
      "title": "Lyseffekter",
-     "id": "27d3bd38-0ebf-47e0-93b6-3c28ecb6b531",
+     "id": "543c8aab-db27-4fb1-bc82-3f535bca68a2",
      "references": [
       "6d54859b-f902-4b85-bc28-e6dff4dfd59b",
       "35c32e6e-6413-46dc-a473-4b86b1576880"

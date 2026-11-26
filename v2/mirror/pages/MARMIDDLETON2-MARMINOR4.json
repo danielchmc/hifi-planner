@@ -156,7 +156,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 200,
+        "availableQuantity": 96,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "549,-",
@@ -177,11 +177,10 @@
         "productCode": "MARMINOR4CREAM"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager mandag den 18. januar",
+        "deliveryDate": "2027-01-18T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 12,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "599,-",
        "priceRaw": 599,
@@ -192,53 +191,66 @@
      ],
      "parentProductCode": "MARMINOR4",
      "reviews": {
-      "summary": "MARMINOR4 leverer en varm, fyldig og ofte medrivende lyd i et stilfuldt og solidt design med nyttige app-indstillinger og god værdi for pengene. Komfort og stabilitet er de største svagheder: De åbne, relativt store øretelefoner sidder fremragende i nogle ører, men falder ud eller giver ubehag i andre. Samlet set er produktet et overbevisende valg for lyttere, der opnår en sikker pasform, selv om lydkvalitet og samtaleydelse får enkelte skarpe kritikker.",
+      "summary": "MARMINOR4 leverer en varm, fyldig og ofte medrivende lyd samt et stilfuldt, solidt design og nyttig app-styring. Batteritiden roses, og samtalekvaliteten er god i de tilgængelige anmeldelser. Pasformen er den største svaghed: De store earbuds sidder perfekt i nogle ører, men falder ud eller bliver ukomfortable hos andre, især under bevægelse.",
       "headlines": {
-       "rich, enjoyable sound": {
-        "sentimentAnalysis": "Lyden roses gentagne gange som klar, kraftfuld, behagelig og medrivende.",
-        "simpleTitle": "Fyldig og behagelig lyd",
+       "warm, powerful sound": {
+        "sentimentAnalysis": "Lyden beskrives gentagne gange som fremragende, klar, kraftfuld og behagelig, trods enkelte markant negative vurderinger.",
+        "simpleTitle": "Varm, kraftfuld lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "15f3ef0e-6ab8-49a4-be16-096a69d01120"
+        "groupId": "193a92d4-90d2-45c8-89ea-7b72a03ca19f"
        },
-       "earbuds fall out or cause discomfort": {
-        "sentimentAnalysis": "En betydelig del af anmeldelserne nævner for store øretelefoner, dårlig stabilitet, ubehag eller hyppige udfald.",
-        "simpleTitle": "Øretelefonerne falder ud eller giver ubehag",
+       "large earbuds fall out or cause discomfort": {
+        "sentimentAnalysis": "Pasformen varierer meget: Flere brugere oplever store earbuds, øresmerter eller hyppigt udfald, også under træning og selv når de sidder stille.",
+        "simpleTitle": "Store earbuds falder ud eller giver ubehag",
         "bias": "negative",
         "key": "fit",
-        "groupId": "70d9c7a8-244f-480c-8915-8699d3506b76"
+        "groupId": "8963842f-410f-4092-8f89-f522fcb7aa6f"
        },
        "stylish, solid design": {
-        "sentimentAnalysis": "Design, udseende, materialer og etui opfattes ofte som flotte og solide.",
-        "simpleTitle": "Stilfuldt og solidt design",
+        "sentimentAnalysis": "Designet opfattes bredt som attraktivt og eksklusivt, og etuiet samt den imponerende holdbarhed i en krævende oplevelse får ros.",
+        "simpleTitle": "Stilfuldt, solidt design",
         "bias": "positive",
         "key": "design",
-        "groupId": "2165663c-c70a-4f7f-9958-9d516b31234c"
+        "groupId": "01fef25a-5ac3-40ec-bd40-79f98becd683"
        },
-       "secure fit for some ears": {
-        "sentimentAnalysis": "Flere anmeldelser beskriver øretelefonerne som komfortable, sikre og velsiddende.",
-        "simpleTitle": "Sikker pasform til nogle ører",
+       "comfortable fit for some ears": {
+        "sentimentAnalysis": "Flere anmeldelser roser den sikre, komfortable pasform og behagelige brug.",
+        "simpleTitle": "Komfortabel pasform til nogle ører",
         "bias": "positive",
         "key": "fit",
-        "groupId": "70d9c7a8-244f-480c-8915-8699d3506b76"
+        "groupId": "8963842f-410f-4092-8f89-f522fcb7aa6f"
        },
-       "sound quality is inconsistent": {
-        "sentimentAnalysis": "Nogle lytte- og samtaleoplevelser vurderes som middelmådige med svag bas eller meget dårlig lyd i det hele taget.",
-        "simpleTitle": "Ujævn lydkvalitet",
+       "sound can lack bass or detail": {
+        "sentimentAnalysis": "Nogle lytteoplevelser vurderes som skuffende med for meget diskant, for lidt bas eller generelt dårlig lydkvalitet.",
+        "simpleTitle": "Lyden kan mangle bas eller detaljer",
         "bias": "negative",
         "key": "sound",
-        "groupId": "15f3ef0e-6ab8-49a4-be16-096a69d01120"
+        "groupId": "193a92d4-90d2-45c8-89ea-7b72a03ca19f"
+       },
+       "useful app and touch controls": {
+        "sentimentAnalysis": "App-tilpasning og enkel touch- eller knapbetjening giver nyttig fleksibilitet, selv om tilpasningsmulighederne ikke er førende.",
+        "simpleTitle": "Nyttig app og touch-betjening",
+        "bias": "positive",
+        "key": "controls",
+        "groupId": "073e9be4-52c3-46a7-ace2-5549ece3959f"
+       },
+       "long-lasting battery": {
+        "sentimentAnalysis": "Batteriydelsen roses konsekvent som meget god eller langvarig.",
+        "simpleTitle": "Lang batteritid",
+        "bias": "positive",
+        "key": "battery",
+        "groupId": "343d41b0-335e-47d8-8596-b6d426012c74"
        }
       },
       "grouping": {
-       "15f3ef0e-6ab8-49a4-be16-096a69d01120": {
+       "193a92d4-90d2-45c8-89ea-7b72a03ca19f": {
         "title": "Lydkvalitet",
-        "id": "15f3ef0e-6ab8-49a4-be16-096a69d01120",
+        "id": "193a92d4-90d2-45c8-89ea-7b72a03ca19f",
         "references": [
          "27361363-113e-4cfc-b738-dc860111c4f7",
          "7cf9b986-304d-479e-bd97-ca845068f47b",
          "4f8ad6ed-3a3d-4540-86f8-7df22c1ab669",
-         "fe8cff3f-b43b-4943-ac28-144dd68c0f0b",
          "b8742313-02dc-48f0-b8b4-35eceba29d8d",
          "172888c1-2c0f-41ee-a98e-6983f37f6dcb",
          "0530104a-925e-4e10-af4d-f5a9519bb8b4",
@@ -262,9 +274,9 @@
          "f76773f0-eddc-4918-bc5b-d0d3269d3aee"
         ]
        },
-       "70d9c7a8-244f-480c-8915-8699d3506b76": {
+       "8963842f-410f-4092-8f89-f522fcb7aa6f": {
         "title": "Pasform og komfort",
-        "id": "70d9c7a8-244f-480c-8915-8699d3506b76",
+        "id": "8963842f-410f-4092-8f89-f522fcb7aa6f",
         "references": [
          "4f8ad6ed-3a3d-4540-86f8-7df22c1ab669",
          "fe8cff3f-b43b-4943-ac28-144dd68c0f0b",
@@ -273,6 +285,7 @@
          "cd989342-513b-4991-bb7a-2c607e5760c9",
          "840ba9f3-6d82-4bb6-a9c5-5156120c1ce3",
          "ea55516a-a10e-441c-9ca0-8f6193eaa5b8",
+         "f480b4b0-c713-412d-9f02-6cccfb96fe41",
          "d2a76d7c-9828-477d-90ac-9ee113d9a829",
          "506fb4d3-39c9-4589-8a2f-04ed9b5cdca8",
          "5391880e-658f-4fab-803a-9157a6d9a4cd",
@@ -283,19 +296,40 @@
          "de8ba144-c957-4f08-9c09-c49db33aba6e"
         ]
        },
-       "2165663c-c70a-4f7f-9958-9d516b31234c": {
+       "01fef25a-5ac3-40ec-bd40-79f98becd683": {
         "title": "Design og konstruktion",
-        "id": "2165663c-c70a-4f7f-9958-9d516b31234c",
+        "id": "01fef25a-5ac3-40ec-bd40-79f98becd683",
         "references": [
          "fe8cff3f-b43b-4943-ac28-144dd68c0f0b",
          "172888c1-2c0f-41ee-a98e-6983f37f6dcb",
          "4df3fce0-bc8c-47d2-84be-fa8bd2239066",
          "eafb17c6-0066-43fc-b484-7a0d6dfa96b9",
          "0530104a-925e-4e10-af4d-f5a9519bb8b4",
-         "b8742313-02dc-48f0-b8b4-35eceba29d8d",
          "339a0f83-19f1-4635-9c93-13183705ae70",
-         "2bc9544e-3854-487f-a79b-077cec7ed19b",
-         "2783a289-c004-4aa1-add7-2f70d4a81568"
+         "c1c5ebc8-d02d-41bf-893a-a7a320ef2420",
+         "2783a289-c004-4aa1-add7-2f70d4a81568",
+         "2bc9544e-3854-487f-a79b-077cec7ed19b"
+        ]
+       },
+       "073e9be4-52c3-46a7-ace2-5549ece3959f": {
+        "title": "Betjening og app",
+        "id": "073e9be4-52c3-46a7-ace2-5549ece3959f",
+        "references": [
+         "4f8ad6ed-3a3d-4540-86f8-7df22c1ab669",
+         "172888c1-2c0f-41ee-a98e-6983f37f6dcb",
+         "34410a8f-52e7-478c-b014-7dc2f9375955",
+         "f480b4b0-c713-412d-9f02-6cccfb96fe41",
+         "a634baad-2d0d-4674-bad9-eafe35d30008",
+         "c1c5ebc8-d02d-41bf-893a-a7a320ef2420"
+        ]
+       },
+       "343d41b0-335e-47d8-8596-b6d426012c74": {
+        "title": "Batteritid",
+        "id": "343d41b0-335e-47d8-8596-b6d426012c74",
+        "references": [
+         "f480b4b0-c713-412d-9f02-6cccfb96fe41",
+         "de8ba144-c957-4f08-9c09-c49db33aba6e",
+         "2bc9544e-3854-487f-a79b-077cec7ed19b"
         ]
        }
       },
@@ -331,7 +365,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 35,
+        "availableQuantity": 21,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.699,-",
@@ -349,7 +383,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 9
+    "numberOfStoresExperience": 5
    }
   },
   "variantNavigationType": "dropDown",

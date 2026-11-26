@@ -264,7 +264,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 65,
+     "availableQuantity": 62,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -354,27 +354,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARBROMLEY750 leverer varm, slagkraftig og omsluttende lyd med kraftig bas, klare mellemtoner og sprøde diskanttoner. Det stilfulde design og festbelysningen giver et stærkt visuelt udtryk, mens produktet fungerer godt som en alsidig lydkilde. Ved høj lydstyrke kan fylden i bassen forsvinde for nogle lyttere, og batteritid samt trækgreb får mindre ros.",
+   "summary": "MARBROMLEY750 leverer varm, slagkraftig og omsluttende lyd med særligt kraftig bas og stor alsidighed. Det stilfulde design, den solide konstruktion og festbelysningen giver ekstra appel, mens produktet fungerer fremragende som en kraftfuld lydkilde. Basfylden kan forsvinde ved højere lydstyrke, og batteritid samt trækhåndtaget er svagere punkter, men helhedsindtrykket er stadig meget positivt.",
    "headlines": {
-    "powerful, clear and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den fyldige og kraftige lyd, den stærke bas, de klare mellemtoner og diskanttoner samt den samlede musikoplevelse.",
-     "simpleTitle": "Kraftig, klar og omsluttende lyd",
+    "warm and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den fyldige, kraftfulde og behagelige lyd med særligt tilfredsstillende bas.",
+     "simpleTitle": "Varm og kraftfuld lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "3f21080a-692b-4c52-bca8-ea3a165ff769"
+     "key": "warm-powerful-sound",
+     "groupId": "c993fe1c-b718-42f6-93a9-45076eede186"
     },
-    "stylish design with appealing party lighting": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter det attraktive udseende, den solide fremtoning og den underholdende belysning til fester.",
-     "simpleTitle": "Stilfuldt design med attraktiv festbelysning",
+    "stylish look and party lighting": {
+     "sentimentAnalysis": "Højttaleren værdsættes for sit attraktive udseende, mens festbelysningen giver ekstra visuel appel.",
+     "simpleTitle": "Stilfuldt udseende og festbelysning",
      "bias": "positive",
-     "key": "design",
-     "groupId": "73f57ed0-9ab4-4592-af43-3f282d9fc7c6"
+     "key": "stylish-party-design",
+     "groupId": "b8a7acc2-5b22-4eaf-ab48-ad38135ffc43"
+    },
+    "bass loses fullness at high volume": {
+     "sentimentAnalysis": "Nogle anmeldelser beskriver overvældende bas ved moderat lydstyrke, mens andre bemærker, at bas og fylde aftager, når der skrues op.",
+     "simpleTitle": "Bassen mister fylde ved høj lydstyrke",
+     "bias": "negative",
+     "key": "bass-at-high-volume",
+     "groupId": "c993fe1c-b718-42f6-93a9-45076eede186"
     }
    },
    "grouping": {
-    "3f21080a-692b-4c52-bca8-ea3a165ff769": {
+    "c993fe1c-b718-42f6-93a9-45076eede186": {
      "title": "Lydkvalitet",
-     "id": "3f21080a-692b-4c52-bca8-ea3a165ff769",
+     "id": "c993fe1c-b718-42f6-93a9-45076eede186",
      "references": [
       "f4a8a373-571b-40de-8d17-df6e5e49676a",
       "a9ec6555-7465-4aff-9369-de134525b9c6",
@@ -384,9 +391,9 @@
       "24d7fa65-a6a9-4ac4-8452-68fe2bf1d832"
      ]
     },
-    "73f57ed0-9ab4-4592-af43-3f282d9fc7c6": {
-     "title": "Design",
-     "id": "73f57ed0-9ab4-4592-af43-3f282d9fc7c6",
+    "b8a7acc2-5b22-4eaf-ab48-ad38135ffc43": {
+     "title": "Design og konstruktion",
+     "id": "b8a7acc2-5b22-4eaf-ab48-ad38135ffc43",
      "references": [
       "277b4661-b276-48e0-aee6-0343f7cb658d",
       "5820d416-68b7-433e-a0ee-663e63d9321f",

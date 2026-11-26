@@ -40,8 +40,8 @@
    "productCodes": [
     "ESSWBSONERA100X",
     "MNTSONERAFS",
-    "SONERA100FS",
-    "SONERA100WM"
+    "SONERA100WM",
+    "SONERA100FS"
    ],
    "isOutlet": "false"
   },
@@ -120,7 +120,7 @@
     },
     "inventoryStatus": {
      "description": "Ukendt leveringstid",
-     "numberOfStoresExperience": 7,
+     "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
     },
     "images": [
@@ -157,22 +157,21 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MNTSONERAWM er et elegant og diskret højttalerbeslag, der føles stabilt og fungerer pålideligt. Den eksisterende vægplade gør opgraderinger nemme, mens den justerbare placering understøtter en ren og medrivende lytteoplevelse med varm og fyldig lyd. Et lidt pænere udtryk, når højttalerne drejes, ville gøre en allerede fremragende løsning endnu bedre.",
+   "summary": "MNTSONERAWM er et elegant, diskret og praktisk vægbeslag med et rent og næsten usynligt udseende. Den justerbare placering og det stabile indtryk gør beslaget alsidigt til Sonos-højttalere. Designet er især praktisk som opgradering fra SL One-beslaget, fordi den eksisterende vægplade kan genbruges, selvom drejede højttalere kan se lidt skæve ud.",
    "headlines": {
-    "discreet and attractive appearance": {
-     "sentimentAnalysis": "Beslaget roses for at være næsten usynligt og give et rent og flot udtryk.",
-     "simpleTitle": "Diskret og flot udseende",
+    "nearly invisible wall-mounted design": {
+     "sentimentAnalysis": "Det diskrete vægbeslag falder naturligt ind i rummet og bemærkes næsten ikke.",
+     "simpleTitle": "Næsten usynligt vægmonteret design",
      "bias": "positive",
-     "key": "design_mounting",
-     "groupId": "c8516af4-3fb1-4713-af84-d8c4d4319a6b"
+     "key": "invisible_design",
+     "groupId": "8f5a6935-0bf3-42e9-b8bc-64d2618a9828"
     }
    },
    "grouping": {
-    "c8516af4-3fb1-4713-af84-d8c4d4319a6b": {
-     "title": "Design og montering",
-     "id": "c8516af4-3fb1-4713-af84-d8c4d4319a6b",
+    "8f5a6935-0bf3-42e9-b8bc-64d2618a9828": {
+     "title": "Design og udseende",
+     "id": "8f5a6935-0bf3-42e9-b8bc-64d2618a9828",
      "references": [
-      "d3802bb6-b5d8-4dfb-8da7-4daf5ea4b846",
       "dfdc6ec2-1fc1-45eb-b2ea-860817d50142",
       "a168e255-e5c1-4f5a-8bc9-7c3f711830e6",
       "73902021-693f-4b9e-8895-8fa6d42e64aa"

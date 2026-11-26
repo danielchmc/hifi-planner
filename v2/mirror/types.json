@@ -215,6 +215,28 @@
    ]
   },
   {
+   "type": "Kompakt højtaler",
+   "keys": {
+    "CompactLoudSpeaker": 31
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 31
+   },
+   "count": 32,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 30,
+   "inCatalogue": 30,
+   "variantAxes": {
+    "colorOptions": 32
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Passive Speakers",
+    "Compact Speakers"
+   ]
+  },
+  {
    "type": "Trådløs højtaler med batteri",
    "keys": {
     "WirelessLoudspeakerWithBattery": 31
@@ -238,42 +260,20 @@
    ]
   },
   {
-   "type": "Kompakt højtaler",
-   "keys": {
-    "CompactLoudSpeaker": 30
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 30
-   },
-   "count": 31,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 30,
-   "inCatalogue": 30,
-   "variantAxes": {
-    "colorOptions": 31
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Passive Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "Soundbar",
    "keys": {
-    "Soundbar": 26
+    "Soundbar": 27
    },
    "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 26
+    "TV > Soundbar højtaler / TV-lyd": 27
    },
-   "count": 28,
+   "count": 29,
    "bundles": 4,
-   "outlet": 2,
+   "outlet": 3,
    "products": 22,
    "inCatalogue": 22,
    "variantAxes": {
-    "colorOptions": 22,
+    "colorOptions": 23,
     "none": 4,
     "sizeSelector": 1,
     "dropDown": 1

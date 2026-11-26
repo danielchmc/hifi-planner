@@ -59,6 +59,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "2 x 15 watt digital Klasse D-forstærker (diskant)*\n2 x 15 watt digital Klasse D-forstærker (mellemtone)*\n1 x 90 watt digital Klasse D-forstærker (bas)*\nHDMI-tilslutning til TV-lyd\nAnaloge indgange: 1 x 3,5mm line-in, L/R RCA \nPlacerings-kompensation via app (Placement Compensation) \nDynamic Loudness\nNight Mode ved HDMI-tilslutning (valgfri)\nDedikeret Marshall Bluetooth app inkl. tænd/sluk, EQ, Placement Correction og Over-the-Air opdateringer (OTA)\nBluetooth multi-host funktion\nStrømkabel medfølger\n* Målemetode ikke angivet"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -69,15 +78,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "2 x 15 watt digital Klasse D-forstærker (diskant)*\n2 x 15 watt digital Klasse D-forstærker (mellemtone)*\n1 x 90 watt digital Klasse D-forstærker (bas)*\nHDMI-tilslutning til TV-lyd\nAnaloge indgange: 1 x 3,5mm line-in, L/R RCA \nPlacerings-kompensation via app (Placement Compensation) \nDynamic Loudness\nNight Mode ved HDMI-tilslutning (valgfri)\nDedikeret Marshall Bluetooth app inkl. tænd/sluk, EQ, Placement Correction og Over-the-Air opdateringer (OTA)\nBluetooth multi-host funktion\nStrømkabel medfølger\n* Målemetode ikke angivet"
      }
     ]
    },
@@ -261,8 +261,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 90,
+     "numberOfStoresExperience": 12,
+     "availableQuantity": 76,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -332,55 +332,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marshall Woburn III roses bredt for sin kraftfulde, varme og detaljerede lyd med dyb, fyldig bas, klare diskanttoner og tilstrækkelig lydstyrke til store rum. Det stilfulde vintage-design, den solide konstruktion og den enkle betjening øger attraktiviteten, mens Bluetooth, TV- og pladespillerbrug gør højttaleren alsidig. Enkelte anmeldelser nævner for dominerende bas, lejlighedsvis forvrængning, lavere lydstyrke end Woburn II, en begrænset app samt enkelte problemer med forbindelse eller driftssikkerhed.",
+   "summary": "MARSHALL Woburn III leverer en varm, kraftfuld og medrivende lyd med imponerende klarhed, dyb bas og nok effekt til at fylde store rum. Det stilfulde vintage-design, den solide konstruktion og den enkle betjening gør højttaleren til en flot og fornøjelig del af enhver opsætning. Fremragende Bluetooth-ydeevne og alsidige tilslutninger giver ekstra bekvemmelighed, selv om bassen kan virke dominerende for lyttere, der foretrækker en mere neutral balance.",
    "headlines": {
-    "easy controls and versatile source connections": {
-     "sentimentAnalysis": "Enkel betjening, Bluetooth og nem tilslutning til TV og pladespillere gør højttaleren meget fleksibel.",
-     "simpleTitle": "Nem betjening og alsidige tilslutninger",
+    "easy controls and flexible connections": {
+     "sentimentAnalysis": "Den enkle betjening, den nyttige tonejustering og den lette Bluetooth- eller pladespillerintegration gør højttaleren alsidig i hjemmet.",
+     "simpleTitle": "Nem betjening og fleksible tilslutninger",
      "bias": "positive",
-     "key": "usability_connectivity",
-     "groupId": "3b04edb0-bfae-4789-a789-4ec16050a2cc"
+     "key": "controls",
+     "groupId": "da2cf6f7-0b0e-4d07-bcff-1308b5c96300"
     },
-    "powerful, immersive sound with deep bass": {
-     "sentimentAnalysis": "Dyb, fyldig bas og høj effekt skaber en medrivende lyd, der fylder rummet og passer til energisk musik og fester.",
-     "simpleTitle": "Kraftfuld, medrivende lyd med dyb bas",
+    "powerful, clear sound with deep bass": {
+     "sentimentAnalysis": "Højttaleren leverer kraftfuld, rumfyldende lyd med tydelige detaljer, stort tryk og dyb, medrivende bas.",
+     "simpleTitle": "Kraftfuld, klar lyd med dyb bas",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
+     "key": "sound",
+     "groupId": "b915025f-38a0-4014-b2fb-fadb1a9d4d3e"
     },
-    "clear, detailed and well-balanced across genres": {
-     "sentimentAnalysis": "Anmeldelserne beskriver klar diskant, fyldige mellemtoner, dyb bas og god sammenhæng i jazz, rock, pop, metal og guitarmusik.",
-     "simpleTitle": "Klar, detaljeret og velafbalanceret på tværs af genrer",
+    "clear and well-balanced across genres": {
+     "sentimentAnalysis": "Anmeldelserne roser den detaljerede, fyldige og afbalancerede gengivelse med klarhed i jazz, rock, pop, metal og guitarmusik.",
+     "simpleTitle": "Klar og velafbalanceret på tværs af genrer",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
+     "key": "sound",
+     "groupId": "b915025f-38a0-4014-b2fb-fadb1a9d4d3e"
     },
-    "stylish vintage design and solid construction": {
-     "sentimentAnalysis": "Retrodesignet, den flotte finish og den solide fornemmelse gør højttaleren til et attraktivt indretningselement.",
-     "simpleTitle": "Stilfuldt vintage-design og solid konstruktion",
+    "striking vintage design and premium finish": {
+     "sentimentAnalysis": "Det retroinspirerede udseende, de førsteklasses materialer og den flotte finish gør højttaleren til et dekorativt midtpunkt.",
+     "simpleTitle": "Markant vintage-design og førsteklasses finish",
      "bias": "positive",
-     "key": "design_build",
-     "groupId": "533515b2-2972-4623-ae37-7bccb2b73060"
+     "key": "design",
+     "groupId": "1eed70f5-cd4b-4abc-b660-dd35345666e6"
     },
-    "app functionality and some connections disappoint": {
-     "sentimentAnalysis": "Den begrænsede app, manglende stereoparring og et rapporteret problem med phono-tilslutning svækker den ellers gode alsidighed.",
-     "simpleTitle": "App-funktioner og enkelte tilslutninger skuffer",
+    "bass can be too dominant": {
+     "sentimentAnalysis": "Den kraftige bas værdsættes af mange, men kan forblive markant selv ved lav indstilling og overvælde lyttere, der søger en mere neutral lyd.",
+     "simpleTitle": "Bassen kan være for dominerende",
      "bias": "negative",
-     "key": "usability_connectivity",
-     "groupId": "3b04edb0-bfae-4789-a789-4ec16050a2cc"
-    },
-    "bass can be too dominant for some listeners": {
-     "sentimentAnalysis": "Bassen kan justeres, men nogle lyttere oplever stadig de dybe frekvenser som for dominerende.",
-     "simpleTitle": "Bassen kan være for dominerende for nogle",
-     "bias": "negative",
-     "key": "sound_quality",
-     "groupId": "ce5b7f24-b948-4a71-9943-4002c4d21be6"
+     "key": "sound",
+     "groupId": "b915025f-38a0-4014-b2fb-fadb1a9d4d3e"
     }
    },
    "grouping": {
-    "ce5b7f24-b948-4a71-9943-4002c4d21be6": {
+    "b915025f-38a0-4014-b2fb-fadb1a9d4d3e": {
      "title": "Lydkvalitet",
-     "id": "ce5b7f24-b948-4a71-9943-4002c4d21be6",
+     "id": "b915025f-38a0-4014-b2fb-fadb1a9d4d3e",
      "references": [
       "b355f323-44c1-4b7b-a084-fe60bac77974",
       "4e5b32a4-71fa-4e0a-b589-1f53b7e92b06",
@@ -400,6 +393,7 @@
       "25fa7087-e740-429d-8384-4b09fcedb8a3",
       "b574039e-6416-4fed-9ea3-64e09f14af8a",
       "edd7dd99-80b6-423c-bc20-eba2c1d2efd3",
+      "71364915-abc8-4087-82b8-fc669f719815",
       "d3f2a8f5-a2ba-4ddc-a076-e6bad69fa03e",
       "369aea3a-4c18-479d-bb9c-2257bdf31ce1",
       "b6873b26-0fca-49ff-89dc-dcabf224279c",
@@ -409,12 +403,14 @@
       "d1a1e581-a7be-4929-8b03-1f4bb938629b",
       "4f10ec85-db5b-45fd-b4ef-1143b38dedec",
       "0a91a1e8-3aab-438b-9889-f3d364c4a05a",
+      "10870349-cfbd-4df8-8c75-7ab919d618ab",
       "cd91df66-bb6f-4406-b2a0-5012b79a065d",
       "56d7d0de-1ac8-4710-bda9-e54e6bb28dbb",
       "47d8c77c-1b48-4ab0-9e91-1815599afcf8",
       "ab73e3bf-4ce9-4b0e-90a8-fce9f6742ab5",
       "018e4a3e-250f-4471-b781-9dd251003159",
       "4cdc0cdf-5d0e-4583-9ce4-fd4fa28af0c1",
+      "4f13c76a-00d9-45f9-b511-fa9ca109fc96",
       "0d93cae5-69c1-4a31-8ff3-6ccc4430deb7",
       "312a80b4-0799-4d34-b9e7-4617a2d5fdc3",
       "8a1fd94f-526f-4e4a-a41b-8a58a2d517e1",
@@ -424,45 +420,45 @@
       "511271ef-9486-4c2f-9f8b-0dec6b048bbf",
       "a88b319e-2412-4272-b54b-7296832c30ec",
       "48d5136f-518d-4e3b-b193-da3787bf4848",
+      "c871b82d-0408-48fe-99a0-e7f64dc92c21",
       "0e662300-9e2d-4588-8821-d38add6ac35e"
      ]
     },
-    "3b04edb0-bfae-4789-a789-4ec16050a2cc": {
-     "title": "Betjening og tilslutning",
-     "id": "3b04edb0-bfae-4789-a789-4ec16050a2cc",
+    "1eed70f5-cd4b-4abc-b660-dd35345666e6": {
+     "title": "Design og konstruktion",
+     "id": "1eed70f5-cd4b-4abc-b660-dd35345666e6",
      "references": [
+      "d32ce886-412c-497e-a48a-c6b575b95bf0",
       "be727f1d-44ed-45f8-a856-d6eb474dd877",
       "cde02412-ac30-497a-9c77-080112080546",
-      "d4276734-f425-4ffe-bcdd-7b4df7ad13ea",
+      "3de0a200-18a6-4b6d-9842-f0ae6f1c9d93",
+      "33a7d6c6-7cce-4ae2-bfe3-ef60a1f18dca",
+      "5fb21c7b-3fb3-4499-9852-1d4db37ee84b",
+      "d1a1e581-a7be-4929-8b03-1f4bb938629b",
+      "10870349-cfbd-4df8-8c75-7ab919d618ab",
+      "018e4a3e-250f-4471-b781-9dd251003159",
+      "4f13c76a-00d9-45f9-b511-fa9ca109fc96",
+      "48d5136f-518d-4e3b-b193-da3787bf4848",
+      "c871b82d-0408-48fe-99a0-e7f64dc92c21",
+      "0e662300-9e2d-4588-8821-d38add6ac35e"
+     ]
+    },
+    "da2cf6f7-0b0e-4d07-bcff-1308b5c96300": {
+     "title": "Betjening og tilslutning",
+     "id": "da2cf6f7-0b0e-4d07-bcff-1308b5c96300",
+     "references": [
+      "d32ce886-412c-497e-a48a-c6b575b95bf0",
+      "cde02412-ac30-497a-9c77-080112080546",
       "2f76f0a9-ac46-402c-b012-580d1847ceb6",
       "edd7dd99-80b6-423c-bc20-eba2c1d2efd3",
+      "d4276734-f425-4ffe-bcdd-7b4df7ad13ea",
       "10870349-cfbd-4df8-8c75-7ab919d618ab",
       "ab73e3bf-4ce9-4b0e-90a8-fce9f6742ab5",
       "018e4a3e-250f-4471-b781-9dd251003159",
       "4cdc0cdf-5d0e-4583-9ce4-fd4fa28af0c1",
       "312a80b4-0799-4d34-b9e7-4617a2d5fdc3",
       "8a1fd94f-526f-4e4a-a41b-8a58a2d517e1",
-      "f657de5c-8d90-4292-b851-962cc8e59d7c",
-      "25af9ad7-d618-4ba5-be31-506198484d14",
       "c871b82d-0408-48fe-99a0-e7f64dc92c21"
-     ]
-    },
-    "533515b2-2972-4623-ae37-7bccb2b73060": {
-     "title": "Design og byggekvalitet",
-     "id": "533515b2-2972-4623-ae37-7bccb2b73060",
-     "references": [
-      "d32ce886-412c-497e-a48a-c6b575b95bf0",
-      "be727f1d-44ed-45f8-a856-d6eb474dd877",
-      "cde02412-ac30-497a-9c77-080112080546",
-      "3de0a200-18a6-4b6d-9842-f0ae6f1c9d93",
-      "369aea3a-4c18-479d-bb9c-2257bdf31ce1",
-      "55fedd91-e384-4194-b841-5722935da37c",
-      "5fb21c7b-3fb3-4499-9852-1d4db37ee84b",
-      "d1a1e581-a7be-4929-8b03-1f4bb938629b",
-      "10870349-cfbd-4df8-8c75-7ab919d618ab",
-      "018e4a3e-250f-4471-b781-9dd251003159",
-      "4f13c76a-00d9-45f9-b511-fa9ca109fc96",
-      "48d5136f-518d-4e3b-b193-da3787bf4848"
      ]
     }
    },

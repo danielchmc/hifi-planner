@@ -307,8 +307,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 639,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 585,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -353,69 +353,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NACOMPOSESB201X leverer varm, kraftfuld og overraskende omsluttende tv-lyd til en fremragende pris, med tydelige dialoger og tilfredsstillende bas ved højere lydstyrke. Installationen er som regel hurtig og enkel, mens den trådløse subwoofer holder opsætningen ryddelig. Lejlighedsvise udfald, knaldlyde og tekniske særheder forhindrer en fejlfri oplevelse, men lydkvalitet og pris er stadig stærke sider.",
+   "summary": "Denne soundbar leverer varm, fyldig og overraskende omsluttende tv-lyd til en attraktiv pris, med tydelige dialoger og tilfredsstillende bas ved moderat til høj lydstyrke. Nem installation, trådløs subwoofer og nyttige funktioner giver en stærk hverdagsoplevelse. Forbindelsesudfald, lyde fra subwooferen, lejlighedsvise synkroniseringsproblemer samt en lidt flad eller farvet lyd ved lav volumen forhindrer en helt gennemført oplevelse.",
    "headlines": {
-    "clear, powerful and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den flotte, kraftfulde og dybe lyd med god separation.",
-     "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+    "clear, powerful sound with satisfying bass": {
+     "sentimentAnalysis": "Anmeldelserne roser lyden som klar, kraftfuld og fyldig med god bas og bedre taleforståelse.",
+     "simpleTitle": "Klar og kraftfuld lyd med tilfredsstillende bas",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "d6737c0c-e8ea-4d83-a5ba-e4cd36765b52"
+     "key": "sound",
+     "groupId": "c3f51d21-f1f9-4f24-bb8e-d6d3e09a13c3"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver produktet som billigt, meget attraktivt og bedre end prisen antyder.",
+    "excellent value for the price": {
+     "sentimentAnalysis": "Produktet vurderes gentagne gange som meget prisvenligt og bedre end forventet til prisen.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "367e6079-49b4-42c8-8523-823894d8bbcb"
+     "key": "value-positive",
+     "groupId": "b7258eab-4422-4388-bbab-30d1fd4cce1b"
     },
-    "a strong improvement for TV audio and dialogue": {
-     "sentimentAnalysis": "Systemet gør tv-lyden tydeligere og talen lettere at følge end de indbyggede højttalere.",
-     "simpleTitle": "En klar forbedring af tv-lyd og dialog",
-     "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "d6737c0c-e8ea-4d83-a5ba-e4cd36765b52"
-    },
-    "simple, convenient installation": {
-     "sentimentAnalysis": "Opsætningen beskrives ofte som enkel, hurtig og næsten plug-and-play takket være den trådløse subwoofer.",
-     "simpleTitle": "Enkel og bekvem opsætning",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "9ee1622a-8906-4f74-ad18-eb659648cdcc"
-    },
-    "sound becomes flatter or less refined at lower quality levels": {
-     "sentimentAnalysis": "Nogle anmeldelser bemærker et fladere lydbillede ved lav lydstyrke eller for meget klang, selv om lyden er acceptabel til prisen.",
-     "simpleTitle": "Lyden bliver fladere eller mindre raffineret ved lavere niveauer",
+    "sound can be flat or colored at lower quality levels": {
+     "sentimentAnalysis": "Nogle anmeldelser beskriver lyden som udmærket snarere end hi-fi, med flad lyd ved lav volumen eller for meget klang.",
+     "simpleTitle": "Lyden kan virke flad eller farvet ved lavere niveauer",
      "bias": "negative",
-     "key": "sound_quality",
-     "groupId": "d6737c0c-e8ea-4d83-a5ba-e4cd36765b52"
+     "key": "sound-limitations",
+     "groupId": "c3f51d21-f1f9-4f24-bb8e-d6d3e09a13c3"
     },
-    "the subwoofer adds satisfying bass": {
-     "sentimentAnalysis": "Anmeldelserne roser subwooferen for kraftfuld, dyb og behagelig bas.",
-     "simpleTitle": "Subwooferen giver tilfredsstillende bas",
+    "simple installation and convenient operation": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver nem opsætning, enkel betjening og bekvemmeligheden ved en trådløs subwoofer.",
+     "simpleTitle": "Nem opsætning og praktisk betjening",
      "bias": "positive",
-     "key": "subwoofer",
-     "groupId": "09cc98a0-c6e7-453d-b34d-47b15bacca6c"
+     "key": "setup-positive",
+     "groupId": "7587e9ff-b7cd-40a2-9735-bf52ced91e14"
     },
-    "popping noises affect the subwoofer experience": {
-     "sentimentAnalysis": "To anmeldelser rapporterer om tilbagevendende knald- eller dak-lyde fra subwooferen, som kun delvist blev løst med firmwareopdateringer.",
-     "simpleTitle": "Knaldlyde forringer subwooferoplevelsen",
+    "wireless subwoofer connection can drop out": {
+     "sentimentAnalysis": "Flere anmeldelser rapporterer om lejlighedsvise udfald i lyd eller subwooferforbindelse, som nogle gange kræver genforbindelse eller genstart.",
+     "simpleTitle": "Forbindelsen til den trådløse subwoofer kan falde ud",
      "bias": "negative",
-     "key": "subwoofer",
-     "groupId": "09cc98a0-c6e7-453d-b34d-47b15bacca6c"
+     "key": "connection-dropouts",
+     "groupId": "d55501de-1d87-411c-8834-563db0b774fd"
     },
-    "wireless connections can drop out": {
-     "sentimentAnalysis": "Flere anmeldelser nævner lejlighedsvise udfald af lyd eller subwooferforbindelse, som nogle gange kræver genforbindelse eller genstart.",
-     "simpleTitle": "Trådløse forbindelser kan falde ud",
+    "subwoofer can produce unwanted popping noises": {
+     "sentimentAnalysis": "To anmeldelser nævner tilbagevendende knald- eller bankelyde fra subwooferen, som ikke straks blev løst med firmware eller udskiftning.",
+     "simpleTitle": "Subwooferen kan give uønskede knaldlyde",
      "bias": "negative",
-     "key": "connectivity",
-     "groupId": "a3ac790a-40ee-4eb0-8cd1-f99aca0233c2"
+     "key": "subwoofer-noise",
+     "groupId": "d55501de-1d87-411c-8834-563db0b774fd"
     }
    },
    "grouping": {
-    "d6737c0c-e8ea-4d83-a5ba-e4cd36765b52": {
+    "c3f51d21-f1f9-4f24-bb8e-d6d3e09a13c3": {
      "title": "Lydkvalitet",
-     "id": "d6737c0c-e8ea-4d83-a5ba-e4cd36765b52",
+     "id": "c3f51d21-f1f9-4f24-bb8e-d6d3e09a13c3",
      "references": [
       "95fccb8a-9977-4430-9376-7d8d38ea9995",
       "862ca230-e1c1-4056-a905-af6209e5019e",
@@ -427,50 +413,42 @@
       "5934c4d7-d565-492f-a1f8-8ade3cc11721",
       "d3d42b45-9523-4382-bcdb-f3eb49d930c7",
       "297054b0-71da-4497-9cad-429a4d7a31d9",
-      "a30458f7-f447-433c-a0d9-2b15e3fcc0c2",
+      "4eab67ad-7b25-4efa-ab9a-9a94f9049e88",
       "fd36559b-eb3f-467c-b28f-257f03aeda82"
      ]
     },
-    "367e6079-49b4-42c8-8523-823894d8bbcb": {
-     "title": "Pris og kvalitet",
-     "id": "367e6079-49b4-42c8-8523-823894d8bbcb",
+    "b7258eab-4422-4388-bbab-30d1fd4cce1b": {
+     "title": "Værdi for pengene",
+     "id": "b7258eab-4422-4388-bbab-30d1fd4cce1b",
      "references": [
       "95fccb8a-9977-4430-9376-7d8d38ea9995",
       "98d0d6b2-500f-4f93-bf49-a399d55e0a48",
       "30cfae92-5792-4791-b6c0-61cd8b37dbba",
       "5934c4d7-d565-492f-a1f8-8ade3cc11721",
-      "d3d42b45-9523-4382-bcdb-f3eb49d930c7",
       "a18d8ce0-ea1e-472a-abb5-4e10081caeaa",
       "ec5209c8-82aa-4642-a49a-0e8e109f465a"
      ]
     },
-    "9ee1622a-8906-4f74-ad18-eb659648cdcc": {
-     "title": "Opsætning og brugervenlighed",
-     "id": "9ee1622a-8906-4f74-ad18-eb659648cdcc",
+    "d55501de-1d87-411c-8834-563db0b774fd": {
+     "title": "Forbindelse og driftssikkerhed",
+     "id": "d55501de-1d87-411c-8834-563db0b774fd",
      "references": [
+      "8414aad7-feb0-44ec-a53a-0ed55c5877a4",
+      "ba500669-b904-405f-a38f-02a5373f3d41",
+      "f26590e6-64bd-4a01-86bd-3f5105605072",
+      "297054b0-71da-4497-9cad-429a4d7a31d9",
+      "2572a2eb-b343-4f46-97bc-6bef8afe67aa",
+      "4eab67ad-7b25-4efa-ab9a-9a94f9049e88"
+     ]
+    },
+    "7587e9ff-b7cd-40a2-9735-bf52ced91e14": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "7587e9ff-b7cd-40a2-9735-bf52ced91e14",
+     "references": [
+      "8414aad7-feb0-44ec-a53a-0ed55c5877a4",
       "5934c4d7-d565-492f-a1f8-8ade3cc11721",
       "297054b0-71da-4497-9cad-429a4d7a31d9",
-      "00b3c3de-be0b-4ca1-b82b-ac01c5c54905",
-      "2572a2eb-b343-4f46-97bc-6bef8afe67aa"
-     ]
-    },
-    "09cc98a0-c6e7-453d-b34d-47b15bacca6c": {
-     "title": "Subwooferens ydeevne",
-     "id": "09cc98a0-c6e7-453d-b34d-47b15bacca6c",
-     "references": [
-      "8414aad7-feb0-44ec-a53a-0ed55c5877a4",
-      "b53a4b32-8333-443c-af07-58f4bdf7611f",
-      "ba500669-b904-405f-a38f-02a5373f3d41",
-      "2572a2eb-b343-4f46-97bc-6bef8afe67aa"
-     ]
-    },
-    "a3ac790a-40ee-4eb0-8cd1-f99aca0233c2": {
-     "title": "Forbindelsesstabilitet",
-     "id": "a3ac790a-40ee-4eb0-8cd1-f99aca0233c2",
-     "references": [
-      "8414aad7-feb0-44ec-a53a-0ed55c5877a4",
-      "297054b0-71da-4497-9cad-429a4d7a31d9",
-      "f26590e6-64bd-4a01-86bd-3f5105605072"
+      "00b3c3de-be0b-4ca1-b82b-ac01c5c54905"
      ]
     }
    },

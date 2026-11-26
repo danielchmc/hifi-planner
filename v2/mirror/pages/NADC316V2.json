@@ -47,8 +47,8 @@
     "DALIOBERONONWALL",
     "BW606S3",
     "ARGFORUS4X",
-    "ARGTT4MK2",
-    "DALIMENUET"
+    "DALIMENUET",
+    "ARGTT4MK2"
    ],
    "isOutlet": "false"
   },
@@ -108,6 +108,15 @@
     ]
    },
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Pre out : \r\nFjernbetjening : Ja\r\nKategori : Stereoforstærker\r\nVægt : 5,5 kg\r\nFarve : Grafit\r\nStørrelse : 43,5 x 8,0 x 28,6 cm (BxHxD)\r\nHovedtelefonudgang : Ja\r\nLinjeindgange : 5\r\nPladespillerindgang : Ja (MM)\r\nUdgangseffekt 4 ohm : \r\nUdgangseffekt 8 ohm : 2 x 40 watt (kontin. effekt, begge kanaler samtidigt, 20-20.000Hz, 0,01% THD)\r\nDynamisk effekt (IHF) i 8 ohm: 90 watt \r\nDynamisk effekt (IHF) i 4 ohm: 120 watt \r\nPowerDrive-teknologi \r\nSoft Clipping \r\nEnergiforbrug i standby: <0,5 watt  \r\n"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -130,15 +139,6 @@
      {
       "term": "Forstærkerteknologi",
       "value": "Analog"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Pre out : \r\nFjernbetjening : Ja\r\nKategori : Stereoforstærker\r\nVægt : 5,5 kg\r\nFarve : Grafit\r\nStørrelse : 43,5 x 8,0 x 28,6 cm (BxHxD)\r\nHovedtelefonudgang : Ja\r\nLinjeindgange : 5\r\nPladespillerindgang : Ja (MM)\r\nUdgangseffekt 4 ohm : \r\nUdgangseffekt 8 ohm : 2 x 40 watt (kontin. effekt, begge kanaler samtidigt, 20-20.000Hz, 0,01% THD)\r\nDynamisk effekt (IHF) i 8 ohm: 90 watt \r\nDynamisk effekt (IHF) i 4 ohm: 120 watt \r\nPowerDrive-teknologi \r\nSoft Clipping \r\nEnergiforbrug i standby: <0,5 watt  \r\n"
      }
     ]
    },
@@ -264,48 +264,62 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD C316V2 roses bredt for sin varme, naturlige og musikalske lyd med klar, slagkraftig og detaljeret gengivelse. Stærk dynamik, rigelig effekt og overbevisende stereoperspektiv gør det kompakte klasse A/B-design til et fremragende match med mange højttalere, vinylanlæg og ældre udstyr. Enkel betjening, fornuftige tilslutninger og fremragende værdi gør denne traditionelle forstærker særligt attraktiv trods enkelte forbehold om fjernbetjeningen, de begrænsede funktioner og lejlighedsvise lyd- eller brumproblemer.",
+   "summary": "NAD C 316BEE V2 roses bredt for sin varme, klare, dynamiske og musikalske lyd samt et fremragende pris-kvalitetsforhold. Det enkle, traditionelle design, de praktiske analoge tilslutninger og den nemme betjening tiltaler lyttere, der ønsker fokuseret stereogengivelse uden digital overflod. Enkelte anmeldelser kritiserer den lille fjernbetjening, den begrænsede effekt i større rum, lejlighedsvis brummen fra transformeren og en lyd, der kan halte efter ældre eller dyrere forstærkere, men den samlede vurdering er meget positiv.",
    "headlines": {
     "excellent value for money": {
-     "sentimentAnalysis": "Forstærkeren opfattes konsekvent som et usædvanligt kapabelt og overkommeligt køb, der ofte overgår forventningerne og dyrere alternativer.",
-     "simpleTitle": "Fremragende værdi for pengene",
+     "sentimentAnalysis": "Forstærkeren betragtes konsekvent som prisvenlig, meget kompetent til prisen og et stærkt alternativ til dyrere udstyr.",
+     "simpleTitle": "Fremragende pris-kvalitetsforhold",
      "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "2aba406f-4aed-4278-aae0-e060a12dce5c"
+     "key": "value",
+     "groupId": "8b2b47a8-6040-42a4-9a31-5578ad59c940"
     },
-    "powerful, dynamic and detailed presentation": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver godt punch, tør og differentieret bas, fin dynamik, et klart frekvensområde, rigelig lydstyrke og et bredt stereoperspektiv i prisklassen.",
-     "simpleTitle": "Kraftfuld, dynamisk og detaljeret gengivelse",
+    "warm, clear and musical sound": {
+     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som varm, naturlig, klar, afbalanceret og musikalsk, især overbevisende med vokaler, klassisk musik og vinyl.",
+     "simpleTitle": "Varm, klar og musikalsk lyd",
      "bias": "positive",
-     "key": "power-dynamics",
-     "groupId": "f24c9b87-2635-47b2-b863-ba68e896d79a"
+     "key": "sound-quality",
+     "groupId": "d05b4723-9fed-4952-aa1c-bf0e5e4e8bc6"
     },
-    "warm, natural and musical sound": {
-     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som varm, naturlig, afbalanceret og musikalsk med særlig appel til vinyl, vokaler samt akustisk og klassisk musik.",
-     "simpleTitle": "Varm, naturlig og musikalsk lyd",
+    "useful analogue inputs for traditional systems": {
+     "sentimentAnalysis": "Flere anmeldelser værdsætter phono-indgangen, hovedtelefontilslutningen og de mange analoge tilslutninger til pladespillere, CD-afspillere, streamere og kassettebåndoptagere.",
+     "simpleTitle": "Praktiske analoge tilslutninger til traditionelle anlæg",
      "bias": "positive",
-     "key": "warm-sound",
-     "groupId": "f24c9b87-2635-47b2-b863-ba68e896d79a"
+     "key": "connectivity",
+     "groupId": "0a1073ca-4d35-4ab2-b069-9ca88f9f1ca8"
+    },
+    "punchy dynamics and convincing power": {
+     "sentimentAnalysis": "Anmeldelser fremhæver livlig dynamik, kraftfuld bas, gode effektreserver og et stort, detaljeret stereoperspektiv i forhold til prisen.",
+     "simpleTitle": "Dynamisk lyd og overbevisende kraft",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "d05b4723-9fed-4952-aa1c-bf0e5e4e8bc6"
     },
     "simple, traditional operation": {
-     "sentimentAnalysis": "Det ukomplicerede analoge design, de fysiske betjeningsknapper og den enkle opsætning værdsættes af lyttere, der ønsker de vigtigste funktioner uden menuer eller digitalt rod.",
+     "sentimentAnalysis": "Det overskuelige analoge layout, de fysiske betjeningsknapper og den enkle installation værdsættes af lyttere, der ønsker en intuitiv traditionel forstærker.",
      "simpleTitle": "Enkel, traditionel betjening",
      "bias": "positive",
-     "key": "simple-operation",
-     "groupId": "e6cf085e-31ef-4b22-bd5b-156f4ba5bb5a"
+     "key": "design-usability",
+     "groupId": "088a54b6-1d04-4006-b973-db3d4fb0e1a2"
     },
-    "some sound and quality reservations": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne nævner skuffende lyd, mindre bas og tryk end fra en ældre NAD, lejlighedsvis overstyring eller generende brum fra transformeren.",
-     "simpleTitle": "Visse forbehold om lyd og kvalitet",
+    "some limitations in power and sound refinement": {
+     "sentimentAnalysis": "Et mindretal finder forstærkeren mindre overbevisende i større rum, mindre raffineret end dyrere konkurrenter eller dårligere end ældre NAD-modeller; enkelte nævner overstyring.",
+     "simpleTitle": "Visse begrænsninger i effekt og lydraffinement",
      "bias": "negative",
-     "key": "sound-reservations",
-     "groupId": "f24c9b87-2635-47b2-b863-ba68e896d79a"
+     "key": "sound-quality",
+     "groupId": "d05b4723-9fed-4952-aa1c-bf0e5e4e8bc6"
+    },
+    "remote and control details could be better": {
+     "sentimentAnalysis": "Fjernbetjeningen kritiseres for meget små knapper og manglende balancekontrol, mens nogle frontknapper opleves som uhensigtsmæssige eller ukomfortable.",
+     "simpleTitle": "Fjernbetjening og knapper kan forbedres",
+     "bias": "negative",
+     "key": "design-usability",
+     "groupId": "088a54b6-1d04-4006-b973-db3d4fb0e1a2"
     }
    },
    "grouping": {
-    "f24c9b87-2635-47b2-b863-ba68e896d79a": {
+    "d05b4723-9fed-4952-aa1c-bf0e5e4e8bc6": {
      "title": "Lydkvalitet",
-     "id": "f24c9b87-2635-47b2-b863-ba68e896d79a",
+     "id": "d05b4723-9fed-4952-aa1c-bf0e5e4e8bc6",
      "references": [
       "f684314a-2689-444f-b9f4-00f6274717bd",
       "2359012a-a5ee-4c81-b675-ac5f2a860e55",
@@ -318,6 +332,8 @@
       "f6e019cc-1a3d-438c-96dc-3cb3813fd734",
       "763980fe-6d89-4051-9995-6c3ed6da4852",
       "1a6ca3db-7556-4761-b678-af92228f656c",
+      "418b7e5a-279d-4dff-a64f-a3def9d48645",
+      "721f1452-249e-454c-96e3-9235252a6f89",
       "8471e524-8617-4c94-852a-74b30749b010",
       "35c9b5c1-9f12-4f8e-9bb9-a9e41a8b5c04",
       "7523b0fe-c188-4977-8a01-9da3f4a555f6",
@@ -326,6 +342,7 @@
       "d1cd3778-9512-44fb-b904-477211e145d8",
       "0bcde9f5-5da3-45dc-a24e-03710102640b",
       "91dbc2d9-afc5-46d0-aa85-7349c46e9903",
+      "b293730b-5407-477f-9b5d-ec07029d8bbd",
       "4bee6ca9-4227-4d29-8143-4cff6950301f",
       "f2eb4615-8257-48ba-93b9-d95a01c89054",
       "31236d58-1ca0-4156-bd60-83ccdbf71122",
@@ -336,10 +353,9 @@
       "ad987d04-83f2-4af8-8409-de3308ca84c7",
       "b759e983-9fa1-4552-81e7-f7ba2d7d1031",
       "7a62b2da-2e7e-4e8c-b323-bb181f4fae3e",
-      "1e21d070-c7f3-4c87-850a-0d14b0126f68",
       "1e77164c-8a1d-47fe-991c-50f73dc803cc",
-      "142ebcfc-8acd-4a1e-850f-0fcd79800bd9",
       "612fe647-802e-4367-bed9-9aa1762de334",
+      "6f19c952-5291-4529-a4fe-a3f5fca4be49",
       "419ce555-1096-4c8c-82c8-d4a001b5099f",
       "84947925-5d91-41c7-8aaa-5acc023f90fc",
       "87b307d7-d6eb-4891-8348-87297845f4d7",
@@ -349,13 +365,12 @@
       "98082971-eba9-485e-8cde-87915d712588",
       "f94c69e4-5d69-40ef-9194-6d3d94c335d6",
       "502fa2ab-4362-41f0-b732-43733cb7c178",
-      "3a935d3c-c8f4-40a4-a00b-e45620a70b17",
       "c309b09d-b789-4aab-b221-d0c5d4129914"
      ]
     },
-    "2aba406f-4aed-4278-aae0-e060a12dce5c": {
-     "title": "Værdi for pengene",
-     "id": "2aba406f-4aed-4278-aae0-e060a12dce5c",
+    "8b2b47a8-6040-42a4-9a31-5578ad59c940": {
+     "title": "Pris-kvalitet",
+     "id": "8b2b47a8-6040-42a4-9a31-5578ad59c940",
      "references": [
       "1b459ad2-b8df-43d1-ac0b-0f47dcde7232",
       "6f27025c-b0af-44db-bc33-482bcf6b8c1c",
@@ -366,39 +381,59 @@
       "418b7e5a-279d-4dff-a64f-a3def9d48645",
       "e39cff03-e034-4af1-b605-6a9fc5906559",
       "7523b0fe-c188-4977-8a01-9da3f4a555f6",
-      "2fdda93a-9e87-4d46-9442-cb186d95a2d6",
-      "91dbc2d9-afc5-46d0-aa85-7349c46e9903",
       "1e21d070-c7f3-4c87-850a-0d14b0126f68",
       "80d40afd-3bce-4fd7-8255-0ba1040f76ee",
       "10ece2d7-baa2-4c6d-8b8c-19222c793561",
       "51a28834-a978-413b-ad64-0ae0f2c9fa03",
       "b354de8d-851f-4ebb-bcac-a4efe488807e",
-      "ad987d04-83f2-4af8-8409-de3308ca84c7",
       "b759e983-9fa1-4552-81e7-f7ba2d7d1031",
       "7a62b2da-2e7e-4e8c-b323-bb181f4fae3e",
-      "419ce555-1096-4c8c-82c8-d4a001b5099f",
       "3d74cbcf-93ad-425c-83d3-67cb940b880e",
       "b909a122-79c9-4f1b-ad70-3753d8040d75",
+      "98082971-eba9-485e-8cde-87915d712588",
       "f94c69e4-5d69-40ef-9194-6d3d94c335d6"
      ]
     },
-    "e6cf085e-31ef-4b22-bd5b-156f4ba5bb5a": {
-     "title": "Enkelhed og funktioner",
-     "id": "e6cf085e-31ef-4b22-bd5b-156f4ba5bb5a",
+    "088a54b6-1d04-4006-b973-db3d4fb0e1a2": {
+     "title": "Design og betjening",
+     "id": "088a54b6-1d04-4006-b973-db3d4fb0e1a2",
      "references": [
-      "f45140a9-775f-4ae4-ad6c-11a3bdb1f3e4",
+      "2359012a-a5ee-4c81-b675-ac5f2a860e55",
+      "6c4e2311-978a-488f-aaec-8d87918175f8",
+      "f6e019cc-1a3d-438c-96dc-3cb3813fd734",
       "6b750553-8f45-453d-bec4-61db8a36519b",
       "35bccaab-2e50-42c5-945e-4f8daa5a8c29",
-      "fb8fdc5d-c945-43c2-99e8-182994cd5d17",
+      "42ce3dff-00ca-4079-bc59-d6d7613f7212",
+      "1e21d070-c7f3-4c87-850a-0d14b0126f68",
+      "35c9b5c1-9f12-4f8e-9bb9-a9e41a8b5c04",
       "51a28834-a978-413b-ad64-0ae0f2c9fa03",
-      "b759e983-9fa1-4552-81e7-f7ba2d7d1031",
       "e1b72a4d-d6b7-49bb-a664-a317bdbaa7d8",
-      "142ebcfc-8acd-4a1e-850f-0fcd79800bd9",
+      "b759e983-9fa1-4552-81e7-f7ba2d7d1031",
       "612fe647-802e-4367-bed9-9aa1762de334",
       "6f19c952-5291-4529-a4fe-a3f5fca4be49",
-      "a9dc565b-2137-4ae4-a28a-c7a6aca173d3",
+      "419ce555-1096-4c8c-82c8-d4a001b5099f",
+      "98082971-eba9-485e-8cde-87915d712588"
+     ]
+    },
+    "0a1073ca-4d35-4ab2-b069-9ca88f9f1ca8": {
+     "title": "Tilslutninger og funktioner",
+     "id": "0a1073ca-4d35-4ab2-b069-9ca88f9f1ca8",
+     "references": [
+      "8bdddc1b-6579-4b3c-a594-6d4c6f6b7804",
+      "6c4e2311-978a-488f-aaec-8d87918175f8",
+      "35bccaab-2e50-42c5-945e-4f8daa5a8c29",
+      "4bee6ca9-4227-4d29-8143-4cff6950301f",
+      "fb8fdc5d-c945-43c2-99e8-182994cd5d17",
+      "c62dcb4f-082e-40d0-bbea-1d39d42b1d06",
+      "71b623ee-1dc6-4d28-9b2a-dcf04809346a",
+      "b759e983-9fa1-4552-81e7-f7ba2d7d1031",
+      "31236d58-1ca0-4156-bd60-83ccdbf71122",
       "0e4e5fce-d736-46b0-a1ba-1ec681a05816",
-      "b354de8d-851f-4ebb-bcac-a4efe488807e"
+      "1e77164c-8a1d-47fe-991c-50f73dc803cc",
+      "142ebcfc-8acd-4a1e-850f-0fcd79800bd9",
+      "612fe647-802e-4367-bed9-9aa1762de334",
+      "a9dc565b-2137-4ae4-a28a-c7a6aca173d3",
+      "46aa11ae-1126-424b-aa3c-376d03b5a379"
      ]
     }
    },

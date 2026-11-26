@@ -107,7 +107,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 18,
+     "availableQuantity": 14,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -131,34 +131,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MCGEN270 er en særdeles praktisk og vellidt højttaleromskifter, der fungerer pålideligt og gør det nemt at styre og balancere et ekstra højttalerpar. Den justerbare udgangslydstyrke er især nyttig til lyd i flere rum, mens de solide tilslutningsmuligheder giver ekstra fleksibilitet. Det kan være besværligt at spænde terminalerne, og 4- og 8-ohm højttalere kan ikke skiftes samtidig, men helhedsindtrykket er varmt, kraftfuldt og meget positivt.",
+   "summary": "MCGEN270 er en meget praktisk og alsidig højttaleromskifter med stabil funktion og især nyttig separat lydstyrkeregulering til et ekstra højttalerpar. Varm og balanceret lyd i flere rum bliver nemt, med kontant omskiftning og fleksible højttalertilslutninger. En mindre ulempe er, at terminalerne kan være svære at spænde, og at 4- og 8-ohm højttalere ikke kan skiftes samtidig.",
    "headlines": {
-    "easy volume balancing for a second speaker pair": {
-     "sentimentAnalysis": "Justerbar lydstyrke på den anden udgang gør det nemt at balancere højttalerpar og tilpasse niveauerne mellem rum.",
-     "simpleTitle": "Nem lydstyrkebalance for et ekstra højttalerpar",
+    "convenient independent volume adjustment": {
+     "sentimentAnalysis": "Den separate regulering af det andet højttalerpar roses for bedre balance og større bekvemmelighed.",
+     "simpleTitle": "Praktisk separat lydstyrkeregulering",
      "bias": "positive",
-     "key": "volume-control",
-     "groupId": "d1c35ea6-015a-404b-83f3-146748110875"
+     "key": "independent-volume",
+     "groupId": "ae769e4e-6358-49c8-baa1-c4009fb71fa3"
     },
-    "reliable and effective switching": {
-     "sentimentAnalysis": "Omskifteren fungerer ifølge anmeldelserne præcis som tilsigtet og giver en særdeles tilfredsstillende oplevelse.",
-     "simpleTitle": "Pålidelig og effektiv omskiftning",
+    "reliable, easy-to-use switching": {
+     "sentimentAnalysis": "Omskifteren beskrives gentagne gange som velfungerende og velegnet til forskellige behov.",
+     "simpleTitle": "Pålidelig og nem omskiftning",
      "bias": "positive",
-     "key": "functionality",
-     "groupId": "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4"
-    },
-    "flexible speaker-terminal options": {
-     "sentimentAnalysis": "Tilslutningerne understøtter praktisk brug med højttalerkabler og bananstik, selv om terminalerne kan kræve ekstra kraft at spænde.",
-     "simpleTitle": "Fleksible højttalertilslutninger",
-     "bias": "positive",
-     "key": "connections",
-     "groupId": "d6901253-4c68-41fc-86af-b66b2897881e"
+     "key": "reliable-switching",
+     "groupId": "2b482a6f-3f67-47d9-892b-c77cbcc60f9a"
     }
    },
    "grouping": {
-    "d1c35ea6-015a-404b-83f3-146748110875": {
+    "ae769e4e-6358-49c8-baa1-c4009fb71fa3": {
      "title": "Lydstyrkeregulering",
-     "id": "d1c35ea6-015a-404b-83f3-146748110875",
+     "id": "ae769e4e-6358-49c8-baa1-c4009fb71fa3",
      "references": [
       "162fb58d-6806-429c-9eb3-3006d2f17ca9",
       "90f702e1-ddd5-48f9-aae7-3cf8780d8f0d",
@@ -167,22 +160,14 @@
       "9e4f968f-0545-43dd-8d78-e666c5ab445c"
      ]
     },
-    "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4": {
+    "2b482a6f-3f67-47d9-892b-c77cbcc60f9a": {
      "title": "Funktionalitet",
-     "id": "1a7391d4-5e99-4cc1-ac74-5bc8fafe58e4",
+     "id": "2b482a6f-3f67-47d9-892b-c77cbcc60f9a",
      "references": [
       "162fb58d-6806-429c-9eb3-3006d2f17ca9",
       "e768d6e2-f21d-42a8-b360-69dfa3f822ef",
       "1551ae85-982d-400c-b29e-734901f9c70c",
       "3bdd44f6-6168-46a0-a794-2c6f966057d6"
-     ]
-    },
-    "d6901253-4c68-41fc-86af-b66b2897881e": {
-     "title": "Tilslutninger",
-     "id": "d6901253-4c68-41fc-86af-b66b2897881e",
-     "references": [
-      "3864af04-10ac-402b-8c52-eadc3a43a385",
-      "5e554506-5263-4c0c-aeab-adb6d87807de"
      ]
     }
    },

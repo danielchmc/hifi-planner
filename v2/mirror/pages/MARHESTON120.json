@@ -55,9 +55,9 @@
   },
   "recommendedAccessories": {
    "productCodes": [
+    "MARHESTON120WM",
     "AQPEARL48HDMI",
-    "ESSCL1HDMI8KX",
-    "MARHESTON120WM"
+    "ESSCL1HDMI8KX"
    ],
    "isOutlet": "false"
   },
@@ -287,7 +287,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 88,
+     "availableQuantity": 62,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -443,48 +443,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARSHALL120 leverer et varmt, kraftfuldt og medrivende lydbillede med tydelige stemmer, stærk bas samt god musik- og filmgengivelse. Styringen er alsidig via app, betjening på enheden og rumtilpasning, mens installationen generelt er hurtig og enkel. Det eksklusive design og den solide udførelse øger appellen, selv om det brede kabinet og et lejlighedsvist ønske om en subwoofer er mindre ulemper.",
+   "summary": "MARHESTON120 leverer en varm, slagkraftig og medrivende lyd til musik, film og stemmer med klare detaljer og imponerende bas. Soundbaren er nem at installere og giver fremragende kontrol via appen og betjeningen på selve enheden. Det eksklusive design, den solide byggekvalitet og den stærke ydeevne sammen med Sub 200 gør helheden meget overbevisende.",
    "headlines": {
-    "warm, clear and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver kraftfuld, klar og behagelig lyd til musik, film og stemmer samt en medrivende gengivelse, der er en tydelig forbedring i forhold til tidligere soundbarer.",
-     "simpleTitle": "Varm, klar og medrivende lyd",
+    "clear, immersive sound for music and films": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående lyden som fyldig, klar, kraftfuld og god til både musik og film.",
+     "simpleTitle": "Klar og medrivende lyd til musik og film",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "da6f4303-46c1-4f83-926f-728a830b74c1"
+     "key": "sound-quality",
+     "groupId": "af4bf3ae-3911-4755-a3bc-24bf3b1a1da2"
     },
-    "powerful bass, with optional subwoofer depth": {
-     "sentimentAnalysis": "Soundbaren leverer allerede alene en tilfredsstillende, kraftig bas, mens den matchende subwoofer tilfører endnu mere dybde og slagkraft.",
-     "simpleTitle": "Kraftig bas med ekstra dybde fra valgfri subwoofer",
+    "impressive bass with or without the subwoofer": {
+     "sentimentAnalysis": "Soundbaren leverer tilfredsstillende dyb bas alene, mens den matchende subwoofer giver endnu mere dybde og kraft.",
+     "simpleTitle": "Imponerende bas med eller uden subwoofer",
      "bias": "positive",
-     "key": "bass",
-     "groupId": "30cefac4-e641-4933-8be3-02e6d4fb8d53"
+     "key": "bass-subwoofer",
+     "groupId": "cc2a4716-42d3-4d5d-84ac-48ccf60fe390"
     },
-    "flexible, capable controls": {
-     "sentimentAnalysis": "Rumtilpasning, appstyring og fysiske betjeningselementer roses for at gøre soundbaren nem at tilpasse og bruge.",
-     "simpleTitle": "Fleksibel og effektiv betjening",
-     "bias": "positive",
-     "key": "controls",
-     "groupId": "89fbcdbf-eb3f-42b0-8ed4-502e683c8004"
-    },
-    "quick, easy installation": {
-     "sentimentAnalysis": "Installationen beskrives gentagne gange som hurtig, problemfri og enkel.",
-     "simpleTitle": "Hurtig og enkel installation",
+    "quick and easy installation": {
+     "sentimentAnalysis": "Flere anmeldelser roser den enkle og hurtige installation.",
+     "simpleTitle": "Hurtig og nem installation",
      "bias": "positive",
      "key": "installation",
-     "groupId": "edb718bb-fad8-41ff-9454-bc233df99478"
+     "groupId": "6b1010a1-528c-4982-9bf6-cfe29caeb413"
     },
-    "premium styling and build": {
-     "sentimentAnalysis": "Udseendet opfattes som attraktivt og eksklusivt, og en anmeldelse fremhæver desuden den fremragende udførelse.",
-     "simpleTitle": "Eksklusivt design og solid udførelse",
+    "excellent app and on-device controls": {
+     "sentimentAnalysis": "Appen, de fysiske betjeningsmuligheder og justeringerne roses som praktiske og effektive.",
+     "simpleTitle": "Fremragende app- og enhedsbetjening",
      "bias": "positive",
-     "key": "design",
-     "groupId": "aac78129-9dc1-4563-acb4-5a505c151c54"
+     "key": "controls",
+     "groupId": "e7e6a89a-7b57-4a44-9ee5-78cd291eadbd"
+    },
+    "premium design and solid construction": {
+     "sentimentAnalysis": "Udseendet og finishen beskrives gentagne gange som attraktiv, eksklusiv og vellavet.",
+     "simpleTitle": "Eksklusivt design og solid konstruktion",
+     "bias": "positive",
+     "key": "design-build",
+     "groupId": "b811d21b-a0d8-4300-a5a2-6ea7024a172a"
     }
    },
    "grouping": {
-    "da6f4303-46c1-4f83-926f-728a830b74c1": {
+    "af4bf3ae-3911-4755-a3bc-24bf3b1a1da2": {
      "title": "Lydkvalitet",
-     "id": "da6f4303-46c1-4f83-926f-728a830b74c1",
+     "id": "af4bf3ae-3911-4755-a3bc-24bf3b1a1da2",
      "references": [
       "da92fd98-b437-4230-8321-389fb385e5f7",
       "1e749bea-3071-4417-aebb-71f0b73a7dec",
@@ -493,30 +493,29 @@
       "5d93a551-72bd-46a2-a9d0-6282ac52a0e0",
       "ca0e7509-51c7-4ab2-94eb-d22fa34b0611",
       "21eb9e72-6785-4215-ba60-7fa24c5d8d09",
-      "3d84d86b-434e-4a81-8aed-0a2cba99532b",
       "728bab08-7ea5-429b-b06c-9291092c301a",
-      "019ac497-6a60-4f54-9173-63cd7c6b48d7",
       "eece162a-30a6-41a8-b0fb-3ea1d602cc16",
       "faa6875a-b9a7-4534-b78e-dad2f9874cc7",
       "58a0a7d4-e33e-4e13-8122-6365c25563f3"
      ]
     },
-    "30cefac4-e641-4933-8be3-02e6d4fb8d53": {
+    "cc2a4716-42d3-4d5d-84ac-48ccf60fe390": {
      "title": "Bas og subwoofer",
-     "id": "30cefac4-e641-4933-8be3-02e6d4fb8d53",
+     "id": "cc2a4716-42d3-4d5d-84ac-48ccf60fe390",
      "references": [
       "da92fd98-b437-4230-8321-389fb385e5f7",
-      "ca0e7509-51c7-4ab2-94eb-d22fa34b0611",
       "21eb9e72-6785-4215-ba60-7fa24c5d8d09",
       "eb9b67e5-22f0-4556-b005-8cf1970aa254",
       "ad6fabba-5dd4-46bb-ae05-1cecca1de1bf",
       "019ac497-6a60-4f54-9173-63cd7c6b48d7",
-      "58a0a7d4-e33e-4e13-8122-6365c25563f3"
+      "eece162a-30a6-41a8-b0fb-3ea1d602cc16",
+      "58a0a7d4-e33e-4e13-8122-6365c25563f3",
+      "ca0e7509-51c7-4ab2-94eb-d22fa34b0611"
      ]
     },
-    "89fbcdbf-eb3f-42b0-8ed4-502e683c8004": {
-     "title": "Betjening og app",
-     "id": "89fbcdbf-eb3f-42b0-8ed4-502e683c8004",
+    "e7e6a89a-7b57-4a44-9ee5-78cd291eadbd": {
+     "title": "Betjening",
+     "id": "e7e6a89a-7b57-4a44-9ee5-78cd291eadbd",
      "references": [
       "81ff86f1-cdc5-43e3-9528-73e690c3c8c3",
       "ca0e7509-51c7-4ab2-94eb-d22fa34b0611",
@@ -524,18 +523,18 @@
       "019ac497-6a60-4f54-9173-63cd7c6b48d7"
      ]
     },
-    "edb718bb-fad8-41ff-9454-bc233df99478": {
+    "6b1010a1-528c-4982-9bf6-cfe29caeb413": {
      "title": "Installation",
-     "id": "edb718bb-fad8-41ff-9454-bc233df99478",
+     "id": "6b1010a1-528c-4982-9bf6-cfe29caeb413",
      "references": [
       "1e749bea-3071-4417-aebb-71f0b73a7dec",
       "505e9ce1-47d2-48ee-b38e-4804b6b46300",
       "58a0a7d4-e33e-4e13-8122-6365c25563f3"
      ]
     },
-    "aac78129-9dc1-4563-acb4-5a505c151c54": {
+    "b811d21b-a0d8-4300-a5a2-6ea7024a172a": {
      "title": "Design og byggekvalitet",
-     "id": "aac78129-9dc1-4563-acb4-5a505c151c54",
+     "id": "b811d21b-a0d8-4300-a5a2-6ea7024a172a",
      "references": [
       "1e749bea-3071-4417-aebb-71f0b73a7dec",
       "5d93a551-72bd-46a2-a9d0-6282ac52a0e0",

@@ -39,12 +39,12 @@
   "brandPage": "/marker/marshall/",
   "recommendedProducts": {
    "productCodes": [
+    "MARHESTONSUB200",
     "ARGBERLINSUB10",
     "DALISUBE9F",
     "KEFKUBE8MIE",
     "ARGBERLINSUB12",
-    "KEFKUBE10MIE",
-    "MARHESTONSUB200"
+    "KEFKUBE10MIE"
    ],
    "isOutlet": "false"
   },
@@ -74,6 +74,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "TV-soundbar med Dolby Atmos / DTS:X\nAuto-tænd/sluk\nMulighed for trådløse surround-baghøjtalere (kommende opdatering)\nDedikeret Marshall Bluetooth-app (EQ, rumkorrektion m.m.) \nKnapper til 3 personlige forvalg til playliste eller radiostation på nettet\n7 indbyggede højtalerenheder med 7 Klasse D-forstærkere\nSamlet forstærkereffekt: 56 watt (max, målemetode ikke angivet)\n2 indbyggede højpræcisions mikrofoner til rumkorrektion via app\nLydformater surround: Dolby Atmos/TrueHD/Digital Plus/Digital, DTS:X/HD/ES/DTS, 360 Reality Audio \nLydformater stereo: SBC, LC3, AAC, MPEG4, ALAC, FLAC, LPCM, Ogg, Vorbis, WMA, WMA9 m.fl.\nMovie / Music / Voice / Night Mode \nHøjtalere: 2 x bas (3”), 5 x fuldtone (1,25”)\nUSB-C (kun service/ladefunktion 5V/0,5A) \nHDMI 2.1 eARC / HDCP 1.4\nEnergiforbrug (network standby/standby): 2 watt / 0,5 watt\nMedfølgende tilbehør: HDMI-kabel, øjer til vægmontering\nTrådløs subwoofer fås som ekstratilbehør"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -88,15 +97,6 @@
      {
       "term": "Udgang (andet)",
       "value": "USB C"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "TV-soundbar med Dolby Atmos / DTS:X\nAuto-tænd/sluk\nMulighed for trådløse surround-baghøjtalere (kommende opdatering)\nDedikeret Marshall Bluetooth-app (EQ, rumkorrektion m.m.) \nKnapper til 3 personlige forvalg til playliste eller radiostation på nettet\n7 indbyggede højtalerenheder med 7 Klasse D-forstærkere\nSamlet forstærkereffekt: 56 watt (max, målemetode ikke angivet)\n2 indbyggede højpræcisions mikrofoner til rumkorrektion via app\nLydformater surround: Dolby Atmos/TrueHD/Digital Plus/Digital, DTS:X/HD/ES/DTS, 360 Reality Audio \nLydformater stereo: SBC, LC3, AAC, MPEG4, ALAC, FLAC, LPCM, Ogg, Vorbis, WMA, WMA9 m.fl.\nMovie / Music / Voice / Night Mode \nHøjtalere: 2 x bas (3”), 5 x fuldtone (1,25”)\nUSB-C (kun service/ladefunktion 5V/0,5A) \nHDMI 2.1 eARC / HDCP 1.4\nEnergiforbrug (network standby/standby): 2 watt / 0,5 watt\nMedfølgende tilbehør: HDMI-kabel, øjer til vægmontering\nTrådløs subwoofer fås som ekstratilbehør"
      }
     ]
    },
@@ -249,7 +249,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 33,
+     "availableQuantity": 26,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -333,52 +333,44 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "MARHESTON60 leverer en varm, fyldig og kraftfuld lyd, som især fungerer godt til film og almindeligt tv, mens Dolby Atmos giver en omsluttende rumfornemmelse. Musik lyder behagelig og rig, men komplekse numre mangler adskillelsen og dynamikken fra et dedikeret stereoanlæg. Appen er et svagt punkt, fordi parring kan være vanskelig, og ydeevnen kan være langsom, men samlet set gør brugervenlighed og lydkvalitet soundbaren let at anbefale.",
+   "summary": "MARHESTON60 leverer en varm, kraftfuld og medrivende lyd til tv og film med overbevisende Dolby Atmos og en fyldig gengivelse selv uden subwoofer. Musik lyder behagelig og detaljerig, især ved rolige optagelser, men komplekse passager mangler dynamikken og adskillelsen fra dedikerede højttalere. Designet er flot, og betjeningen er som regel enkel, men appen kan være langsom eller svær at forbinde, og lejlighedsvise HDMI-udfald mindsker brugervenligheden.",
    "headlines": {
-    "full, powerful sound without a subwoofer": {
-     "sentimentAnalysis": "Soundbaren leverer et tilfredsstillende og fyldigt lydbillede med tilstrækkelig bas til mange brugere uden behov for en ekstra subwoofer.",
-     "simpleTitle": "Fyldig og kraftfuld lyd uden subwoofer",
+    "full, powerful sound for films and TV": {
+     "sentimentAnalysis": "Soundbaren leverer en fyldig og behagelig gengivelse til tv og film, hvor Dolby Atmos giver en medrivende effekt uden et umiddelbart behov for en subwoofer.",
+     "simpleTitle": "Fyldig og kraftfuld lyd til film og tv",
      "bias": "positive",
-     "key": "full-sound",
-     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
+     "key": "sound",
+     "groupId": "3104c0c5-7e7e-4f1e-a9f7-ca3d9bdc4eb3"
     },
-    "excellent for films and Dolby surround": {
-     "sentimentAnalysis": "Filmafspilning vurderes som mere end tilstrækkelig, og Dolby-behandlingen skaber en omsluttende og engagerende gengivelse.",
-     "simpleTitle": "Fremragende til film og Dolby Surround",
-     "bias": "positive",
-     "key": "film-sound",
-     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
-    },
-    "music lacks the dynamics of separate speakers": {
-     "sentimentAnalysis": "Musik forbliver behagelig, men komplekse arrangementer lyder mindre kontrollerede og mindre dynamiske end gennem en dedikeret forstærker og separate højttalere.",
+    "music lacks the dynamics of dedicated speakers": {
+     "sentimentAnalysis": "Rolig musik lyder behageligt, men komplekse arrangementer er mindre tydeligt adskilt og når ikke dynamikken fra en god forstærker med separate højttalere.",
      "simpleTitle": "Musik mangler dynamikken fra separate højttalere",
      "bias": "negative",
-     "key": "music-limitations",
-     "groupId": "1793b286-0dec-42d7-9f7c-0a5b16c245ea"
+     "key": "sound",
+     "groupId": "3104c0c5-7e7e-4f1e-a9f7-ca3d9bdc4eb3"
     },
-    "the app is slow and difficult to pair": {
-     "sentimentAnalysis": "Opsætning og ydeevne i appen giver gentagne frustrationer, herunder vanskelig parring med forskellige telefoner og mærkbart langsom drift.",
-     "simpleTitle": "Appen er langsom og svær at parre",
+    "app is slow and difficult to connect": {
+     "sentimentAnalysis": "Appoplevelsen kritiseres gentagne gange for vanskelig parring og langsom ydeevne, især på nyere telefoner.",
+     "simpleTitle": "Appen er langsom og svær at forbinde",
      "bias": "negative",
-     "key": "app-pairing",
-     "groupId": "d0689c5d-5c51-421c-9062-3d43a4c2d540"
+     "key": "app",
+     "groupId": "bf4a3b2c-2f5f-4239-ba03-672c7461a7be"
     }
    },
    "grouping": {
-    "1793b286-0dec-42d7-9f7c-0a5b16c245ea": {
+    "3104c0c5-7e7e-4f1e-a9f7-ca3d9bdc4eb3": {
      "title": "Lydkvalitet",
-     "id": "1793b286-0dec-42d7-9f7c-0a5b16c245ea",
+     "id": "3104c0c5-7e7e-4f1e-a9f7-ca3d9bdc4eb3",
      "references": [
       "c1a72dd9-8130-4cc9-ba55-7b9c1a13c743",
       "96d8d7b3-579e-4eac-bced-6699216037f2",
       "6859e56c-6aab-4768-bd9f-7309073c304f",
-      "07dd4650-6585-4f5e-b825-ed0d3a7237f0",
       "ffc819dd-d025-44ca-bca3-886bdcdb1aef"
      ]
     },
-    "d0689c5d-5c51-421c-9062-3d43a4c2d540": {
+    "bf4a3b2c-2f5f-4239-ba03-672c7461a7be": {
      "title": "App",
-     "id": "d0689c5d-5c51-421c-9062-3d43a4c2d540",
+     "id": "bf4a3b2c-2f5f-4239-ba03-672c7461a7be",
      "references": [
       "96d8d7b3-579e-4eac-bced-6699216037f2",
       "07dd4650-6585-4f5e-b825-ed0d3a7237f0"

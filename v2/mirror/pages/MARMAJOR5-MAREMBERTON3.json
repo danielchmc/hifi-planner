@@ -23,7 +23,7 @@
    "3741692c-f0cd-418e-9028-0f486a8470c4",
    "268d9b09-e9fa-4b1d-b769-17cdd4e6489e"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 283720,
@@ -179,11 +179,10 @@
         "productCode": "MARMAJOR5BK"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager fredag den 11. december",
+        "deliveryDate": "2026-12-11T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 106,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "549,-",
        "priceRaw": 549,
@@ -202,11 +201,10 @@
         "productCode": "MARMAJOR5BROWN"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 68,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "599,-",
        "priceRaw": 599,
@@ -228,7 +226,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 27,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "599,-",
@@ -251,7 +249,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 9,
+        "availableQuantity": 1,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "599,-",
@@ -263,72 +261,78 @@
      ],
      "parentProductCode": "MARMAJOR5",
      "reviews": {
-      "summary": "MARMAJOR5 leverer en varm, slagkraftig og imponerende klar lyd med tilfredsstillende bas og en medrivende musikoplevelse. Den lange batteritid, den lette komfort og det markante retrodesign gør hovedtelefonerne til fremragende ledsagere i hverdagen og på farten. Den gode værdi for pengene, den solide konstruktion og de praktiske betjeningsknapper fuldender en begejstrende pakke, selv om pasformen kan føles lidt løs, og manglen på vandtæthed eller ANC kan begrænse nogle anvendelser.",
+      "summary": "MARMAJOR5 leverer en varm, kraftfuld og klar lyd med tilfredsstillende bas, som gør mange musikgenrer medrivende. Den lange batteritid, den behagelige pasform og det stilfulde retrodesign gør hovedtelefonerne særligt praktiske på farten og i hverdagen. Den gode værdi for pengene, den nyttige EQ samt funktioner som trådløs opladning og Spotify-knap fuldender en særdeles attraktiv pakke, selv om løs pasform, manglende ANC og manglende vandtæthed giver enkelte forbehold.",
       "headlines": {
-       "rich, clear and powerful sound": {
-        "sentimentAnalysis": "Anmeldelserne roser konsekvent en fyldig, klar og basrig gengivelse, især til energisk musik.",
-        "simpleTitle": "Fyldig, klar og kraftfuld lyd",
+       "warm, clear and powerful sound": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den fyldige og klare gengivelse, den kraftige bas og den medrivende musikalitet.",
+        "simpleTitle": "Varm, klar og kraftfuld lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "5a7e4741-bfb7-4e12-83a1-414aa8af20d4"
+        "groupId": "c952ce16-7d5c-4a76-b67d-a9c31354c181"
        },
-       "comfortable for extended wear": {
-        "sentimentAnalysis": "Flere anmeldelser beskriver blød kontakt med ørerne, lavt tryk og god komfort ved lang tids brug.",
-        "simpleTitle": "Behagelige ved længere tids brug",
+       "comfortable for long listening": {
+        "sentimentAnalysis": "Bløde puder og en lav vægt gør hovedtelefonerne behagelige selv ved længere tids brug.",
+        "simpleTitle": "Behagelige ved lang tids brug",
         "bias": "positive",
         "key": "comfort",
-        "groupId": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37"
+        "groupId": "888fa754-cf57-4988-9f0a-586dee335773"
        },
        "exceptional battery endurance": {
-        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som ekstremt lang med angivelser på 100 timer og meget lidt behov for opladning.",
-        "simpleTitle": "Enestående batteritid",
+        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som ekstremt lang, og omkring 100 timer nævnes specifikt.",
+        "simpleTitle": "Ekstrem batteritid",
         "bias": "positive",
         "key": "battery",
-        "groupId": "3ec7c7bf-b855-4610-af56-0e89e3acd0e7"
+        "groupId": "a7f5eecb-3d14-4709-b016-a63af1669470"
        },
-       "distinctive retro styling": {
-        "sentimentAnalysis": "Det klassiske Marshall-design roses gentagne gange som attraktivt, cool og markant.",
-        "simpleTitle": "Markant retrodesign",
+       "stylish retro design": {
+        "sentimentAnalysis": "Det klassiske Marshall-design og de attraktive farvemuligheder får ofte ros.",
+        "simpleTitle": "Stilfuldt retrodesign",
         "bias": "positive",
         "key": "design",
-        "groupId": "dc855bde-37bf-4929-a9dd-9eadfbcb7505"
+        "groupId": "30dafacc-f55d-47ff-8fb9-d2409c9dc600"
        },
-       "a strong value proposition": {
-        "sentimentAnalysis": "Anmeldelserne beskriver hovedtelefonerne som et overkommeligt køb med stærk ydeevne og nyttige funktioner.",
-        "simpleTitle": "Stærk værdi for pengene",
+       "strong value at the price": {
+        "sentimentAnalysis": "Kombinationen af lyd, batteritid og funktioner vurderes som fremragende værdi for pengene.",
+        "simpleTitle": "God værdi til prisen",
         "bias": "positive",
         "key": "value",
-        "groupId": "33dbc456-405c-425b-be73-67e32187b673"
+        "groupId": "4fbb9ecf-fdc5-4d1e-a122-90d86662a868"
        },
-       "fit can be slightly loose": {
-        "sentimentAnalysis": "To anmeldelser bemærker, at hovedtelefonerne kan flytte sig eller sidde mindre sikkert end tidligere modeller under bevægelse.",
-        "simpleTitle": "Pasformen kan være lidt løs",
+       "bass can be modest for some listeners": {
+        "sentimentAnalysis": "En mindre del af anmeldelserne oplever lyden som mindre bastung eller mindre balanceret end på tidligere Major-modeller.",
+        "simpleTitle": "Bassen kan være for beskeden for nogle",
+        "bias": "negative",
+        "key": "sound",
+        "groupId": "c952ce16-7d5c-4a76-b67d-a9c31354c181"
+       },
+       "fit can be loose during movement": {
+        "sentimentAnalysis": "Nogle ejere oplever, at hovedtelefonerne glider, eller ønsker en strammere pasform, især når de bøjer sig frem.",
+        "simpleTitle": "Pasformen kan være løs under bevægelse",
         "bias": "negative",
         "key": "comfort",
-        "groupId": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37"
+        "groupId": "888fa754-cf57-4988-9f0a-586dee335773"
        }
       },
       "grouping": {
-       "5a7e4741-bfb7-4e12-83a1-414aa8af20d4": {
+       "c952ce16-7d5c-4a76-b67d-a9c31354c181": {
         "title": "Lydkvalitet",
-        "id": "5a7e4741-bfb7-4e12-83a1-414aa8af20d4",
+        "id": "c952ce16-7d5c-4a76-b67d-a9c31354c181",
         "references": [
          "3958b069-0698-41e7-a63c-aac6575a2dad",
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "fe3013d6-9137-4c55-81c6-332f8a374aef",
          "69453459-9e66-46f0-8b51-50575decdbe0",
          "4f8af80d-4e1a-42d8-a990-1c7513aa0396",
-         "b03e742f-b881-4c06-9b49-9cbdd86047c0",
          "f24f64f9-0e24-437f-82a7-7dfc7341adeb",
          "7e736043-f78c-4395-bdf2-7041fc4b240e",
          "e3fb2ccd-f986-4358-b3a3-fe1046185ee3",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
-         "8a5a2dca-cde0-4de0-a4bd-a4d83f7d1b81",
+         "b03e742f-b881-4c06-9b49-9cbdd86047c0",
+         "5eeffc83-2c2a-4f8e-8908-40694dc562b3",
          "3c97bd73-05aa-41a0-ad97-d51b4ac5c2f9",
          "8f14d782-6ecf-418c-98e1-d34c5ca45e75",
          "76c6eceb-5cdd-4fbd-a983-bebf60607a14",
          "ba9dfd69-bcdc-4b7c-82a6-b3e5945603de",
-         "5eeffc83-2c2a-4f8e-8908-40694dc562b3",
          "440306b2-681f-4530-a77a-7622723f9252",
          "056515c3-9139-4757-acef-337d68a57ec6",
          "c2655de5-7324-491e-9577-efe44ddcb78e",
@@ -337,24 +341,23 @@
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37": {
+       "888fa754-cf57-4988-9f0a-586dee335773": {
         "title": "Komfort og pasform",
-        "id": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37",
+        "id": "888fa754-cf57-4988-9f0a-586dee335773",
         "references": [
-         "3958b069-0698-41e7-a63c-aac6575a2dad",
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
-         "276106b0-97e5-4e74-9768-46bf44936803",
          "e3fb2ccd-f986-4358-b3a3-fe1046185ee3",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
          "8a5a2dca-cde0-4de0-a4bd-a4d83f7d1b81",
+         "276106b0-97e5-4e74-9768-46bf44936803",
          "440306b2-681f-4530-a77a-7622723f9252",
          "c2655de5-7324-491e-9577-efe44ddcb78e",
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "3ec7c7bf-b855-4610-af56-0e89e3acd0e7": {
+       "a7f5eecb-3d14-4709-b016-a63af1669470": {
         "title": "Batteritid",
-        "id": "3ec7c7bf-b855-4610-af56-0e89e3acd0e7",
+        "id": "a7f5eecb-3d14-4709-b016-a63af1669470",
         "references": [
          "4f8af80d-4e1a-42d8-a990-1c7513aa0396",
          "f24f64f9-0e24-437f-82a7-7dfc7341adeb",
@@ -366,22 +369,22 @@
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "dc855bde-37bf-4929-a9dd-9eadfbcb7505": {
+       "30dafacc-f55d-47ff-8fb9-d2409c9dc600": {
         "title": "Design",
-        "id": "dc855bde-37bf-4929-a9dd-9eadfbcb7505",
+        "id": "30dafacc-f55d-47ff-8fb9-d2409c9dc600",
         "references": [
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "69453459-9e66-46f0-8b51-50575decdbe0",
          "7e736043-f78c-4395-bdf2-7041fc4b240e",
          "eaf6621a-d74c-4e1b-8564-3683acc46401",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
-         "98719a69-27ce-4284-94bd-bb2ed8b9b107",
-         "587724bf-a773-4689-ab53-0d4679add696"
+         "d55a7888-1318-4ce4-9c7e-e6ab4404a33d",
+         "98719a69-27ce-4284-94bd-bb2ed8b9b107"
         ]
        },
-       "33dbc456-405c-425b-be73-67e32187b673": {
-        "title": "Værdi for pengene",
-        "id": "33dbc456-405c-425b-be73-67e32187b673",
+       "4fbb9ecf-fdc5-4d1e-a122-90d86662a868": {
+        "title": "Pris og kvalitet",
+        "id": "4fbb9ecf-fdc5-4d1e-a122-90d86662a868",
         "references": [
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "ff0ba8b6-f43a-46e3-9de2-8abbb0d6df15",
@@ -423,7 +426,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 131,
+        "availableQuantity": 98,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "899,-",
@@ -444,8 +447,8 @@
         "productCode": "MAREMBERTON3SAGE"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager lørdag den 28. november",
-        "deliveryDate": "2026-11-28T00:00:00Z",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
         "inventoryStatusType": "notInStockAtpDate"
        },
@@ -469,7 +472,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 125,
+        "availableQuantity": 116,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "999,-",
@@ -479,184 +482,28 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "MAREMBERTON3",
-     "reviews": {
-      "summary": "MAREMBERTON3 leverer imponerende varm, slagkraftig og rummelig lyd fra en kompakt højttaler med klare detaljer, tilfredsstillende bas og rigelig lydstyrke til hverdagsbrug. Lang batteritid, hurtig opladning, transportabelt design og robust konstruktion til udendørs brug gør højttaleren særdeles alsidig til rejser, hjemmet og haven. Nogle anmeldelser nævner dog en højere pris end forventet, begrænset equalizer i appen, lejlighedsvise problemer med betjening eller app samt en lyd, der afhængigt af forventninger kan virke mindre ren eller mindre dyb.",
-      "headlines": {
-       "long battery life and quick charging": {
-        "sentimentAnalysis": "Batteriets holdbarhed er en klar styrke med mange timers afspilning og hurtig opladning, som er praktisk på rejser og i hverdagen.",
-        "simpleTitle": "Lang batteritid og hurtig opladning",
-        "bias": "positive",
-        "key": "battery",
-        "groupId": "3de5dd76-efdd-4b92-a90e-95988b5eb1d4"
-       },
-       "compact, stylish and easy to carry": {
-        "sentimentAnalysis": "Det lille, attraktive format er praktisk til kontoret, tasken, weekender og udendørs lytning.",
-        "simpleTitle": "Kompakt, stilfuld og nem at tage med",
-        "bias": "positive",
-        "key": "portability",
-        "groupId": "0f54a868-9db4-4772-94d1-a2326f9b8cfd"
-       },
-       "rich, balanced sound with strong detail and bass": {
-        "sentimentAnalysis": "Højttaleren leverer overraskende fyldig, afbalanceret og detaljeret lyd i forhold til størrelsen med overbevisende bas og klare mellemtoner.",
-        "simpleTitle": "Fyldig, afbalanceret lyd med gode detaljer og bas",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
-       },
-       "sound can be less clean or deep than expected": {
-        "sentimentAnalysis": "Nogle lytteoplevelser lever ikke helt op til forventningerne med hensyn til renhed, dybde eller bas, især sammenlignet med større anlæg eller tidligere højttalere.",
-        "simpleTitle": "Lyden kan være mindre ren eller dyb end forventet",
-        "bias": "negative",
-        "key": "sound",
-        "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
-       },
-       "plenty of volume and room-filling projection": {
-        "sentimentAnalysis": "Den kompakte højttaler leverer imponerende tryk, høj lydstyrke og tilstrækkelig spredning til at fylde et større rum.",
-        "simpleTitle": "Høj lydstyrke og fyldig lyd i rummet",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "5294fa0c-1cc6-4aec-9747-a75617af0ef1"
-       },
-       "app and control limitations reduce convenience": {
-        "sentimentAnalysis": "De begrænsede muligheder for basjustering, den ustabile app og betjeningselementer, der let aktiveres eller er svære at se, forringer en ellers enkel brugeroplevelse.",
-        "simpleTitle": "Begrænsninger i app og betjening mindsker komforten",
-        "bias": "negative",
-        "key": "controls",
-        "groupId": "66cc2f3d-0876-48d0-85d2-1be3ac257c6e"
-       },
-       "good value for sound and use cases": {
-        "sentimentAnalysis": "Flere anmeldelser vurderer højttaleren som et godt køb, fordi lyd og anvendelighed klarer sig godt sammenlignet med dyrere alternativer.",
-        "simpleTitle": "God værdi for lyd og anvendelse",
-        "bias": "positive",
-        "key": "value",
-        "groupId": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41"
-       },
-       "price feels high for the package": {
-        "sentimentAnalysis": "Vurderingen af prisen varierer: En anmeldelse synes, højttaleren er dyr, mens en anden roser ydelsen sammenlignet med dyrere modeller.",
-        "simpleTitle": "Prisen føles høj i forhold til indholdet",
-        "bias": "negative",
-        "key": "value",
-        "groupId": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41"
-       }
-      },
-      "grouping": {
-       "5294fa0c-1cc6-4aec-9747-a75617af0ef1": {
-        "title": "Lydkvalitet",
-        "id": "5294fa0c-1cc6-4aec-9747-a75617af0ef1",
-        "references": [
-         "a120d126-361f-44d3-b739-56545423cde1",
-         "8d70d499-e3a1-4b01-8798-7520bd311dd2",
-         "edeb5857-2274-49d7-a0c5-4c9003e54a8f",
-         "b9392ec0-de46-499d-9972-724c0c2834d1",
-         "3689df7d-3d1d-4332-b753-5316f068a344",
-         "755d615f-0579-4d13-a35c-c5aadd93ec0b",
-         "c570048c-7b9d-4f58-aca8-463ab7d03c39",
-         "a41f05cb-46c7-4d45-90be-9381bebe7e8a",
-         "12b6cf3e-8b73-4914-84d3-341b851d37cc",
-         "d0adf869-e8e5-4b46-87a4-41b39ed281df",
-         "ec2cb1ae-ed0c-42f0-a350-e365db20b1fb",
-         "4487df02-7fa8-473a-a1fd-34544ef97d6c",
-         "9725f08b-eafd-4209-884d-c108fd02b342",
-         "8ba19765-37fd-4754-aa0d-20a587cced55",
-         "3375bcf4-af08-4faf-8abc-608ef83eea09",
-         "b2e34eac-bcc0-43e7-9b16-45557367c9b6",
-         "66d89ba3-cd9f-4aad-994e-ffac7f53f883",
-         "5bed6137-4b26-4728-a3c2-a7bd572adc1b",
-         "153e8024-6aa3-4288-a21c-ab0bc6b67b8a",
-         "fecde744-2d46-4f98-a430-839f71159a27",
-         "23ddf733-41f1-4980-af27-3132d44e8857",
-         "509fca64-a08e-498e-9681-85aa5e0d45b0",
-         "a782063f-b86e-412d-b042-b1b80ad91347",
-         "407ebfc7-df2c-4ec7-bc16-c3c74c3c90ef",
-         "ba75d785-474d-42f2-9b35-6af1bb996ebb",
-         "dd592873-dea6-46ed-a29d-273ef3a2146d",
-         "e25e8f4d-d3ad-4e12-806d-d9f1aee06f88",
-         "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
-        ]
-       },
-       "3de5dd76-efdd-4b92-a90e-95988b5eb1d4": {
-        "title": "Batteritid",
-        "id": "3de5dd76-efdd-4b92-a90e-95988b5eb1d4",
-        "references": [
-         "edeb5857-2274-49d7-a0c5-4c9003e54a8f",
-         "12b6cf3e-8b73-4914-84d3-341b851d37cc",
-         "4487df02-7fa8-473a-a1fd-34544ef97d6c",
-         "9725f08b-eafd-4209-884d-c108fd02b342",
-         "3375bcf4-af08-4faf-8abc-608ef83eea09",
-         "66d89ba3-cd9f-4aad-994e-ffac7f53f883",
-         "5bed6137-4b26-4728-a3c2-a7bd572adc1b",
-         "509fca64-a08e-498e-9681-85aa5e0d45b0",
-         "ba75d785-474d-42f2-9b35-6af1bb996ebb",
-         "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
-        ]
-       },
-       "0f54a868-9db4-4772-94d1-a2326f9b8cfd": {
-        "title": "Bærbarhed og design",
-        "id": "0f54a868-9db4-4772-94d1-a2326f9b8cfd",
-        "references": [
-         "b9392ec0-de46-499d-9972-724c0c2834d1",
-         "a41f05cb-46c7-4d45-90be-9381bebe7e8a",
-         "4487df02-7fa8-473a-a1fd-34544ef97d6c",
-         "3375bcf4-af08-4faf-8abc-608ef83eea09",
-         "b2e34eac-bcc0-43e7-9b16-45557367c9b6",
-         "e25e8f4d-d3ad-4e12-806d-d9f1aee06f88",
-         "8ed8a39f-19d5-4fa4-824b-7e739e0b414b"
-        ]
-       },
-       "66cc2f3d-0876-48d0-85d2-1be3ac257c6e": {
-        "title": "Betjening og app",
-        "id": "66cc2f3d-0876-48d0-85d2-1be3ac257c6e",
-        "references": [
-         "4487df02-7fa8-473a-a1fd-34544ef97d6c",
-         "b2e34eac-bcc0-43e7-9b16-45557367c9b6",
-         "66d89ba3-cd9f-4aad-994e-ffac7f53f883",
-         "accb0f28-b766-40d0-9acd-0f991bbd2267",
-         "407ebfc7-df2c-4ec7-bc16-c3c74c3c90ef"
-        ]
-       },
-       "59aba22a-7bbe-473b-bc8d-981ab0e9ff41": {
-        "title": "Værdi for pengene",
-        "id": "59aba22a-7bbe-473b-bc8d-981ab0e9ff41",
-        "references": [
-         "3689df7d-3d1d-4332-b753-5316f068a344",
-         "c570048c-7b9d-4f58-aca8-463ab7d03c39",
-         "a782063f-b86e-412d-b042-b1b80ad91347"
-        ]
-       }
-      },
-      "rating": 4.73239436619718,
-      "count": 71,
-      "reviewCount": 35,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 4,
-       "4": 11,
-       "5": 56
-      }
-     }
+     "parentProductCode": "MAREMBERTON3"
     }
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "inStock": true,
-    "description": "På lager. Leveringstid 1-2 hverdage",
+    "description": "Forventes på lager fredag den 11. december",
+    "deliveryDate": "2026-12-11T00:00:00Z",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 9
+    "numberOfStoresExperience": 3
    }
   },
   "variantNavigationType": "dropDown",
   "reviews": {
-   "rating": 4.77586206896552,
-   "count": 174,
-   "reviewCount": 72,
+   "rating": 4.77714285714286,
+   "count": 175,
+   "reviewCount": 73,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 6,
     "4": 24,
-    "5": 143
+    "5": 144
    }
   },
   "boxContent": [],

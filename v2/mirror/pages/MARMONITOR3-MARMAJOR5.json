@@ -22,7 +22,7 @@
    "cc490e25-088d-423b-a70e-aa9ed98457dc",
    "a7d002f9-39de-4b6f-9fdd-89f4107075cd"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 283786,
@@ -199,11 +199,10 @@
         "productCode": "MARMAJOR5BK"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager fredag den 11. december",
+        "deliveryDate": "2026-12-11T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 106,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "549,-",
        "priceRaw": 549,
@@ -222,11 +221,10 @@
         "productCode": "MARMAJOR5BROWN"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 68,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "599,-",
        "priceRaw": 599,
@@ -248,7 +246,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 27,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "599,-",
@@ -271,7 +269,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 9,
+        "availableQuantity": 1,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "599,-",
@@ -283,72 +281,78 @@
      ],
      "parentProductCode": "MARMAJOR5",
      "reviews": {
-      "summary": "MARMAJOR5 leverer en varm, slagkraftig og imponerende klar lyd med tilfredsstillende bas og en medrivende musikoplevelse. Den lange batteritid, den lette komfort og det markante retrodesign gør hovedtelefonerne til fremragende ledsagere i hverdagen og på farten. Den gode værdi for pengene, den solide konstruktion og de praktiske betjeningsknapper fuldender en begejstrende pakke, selv om pasformen kan føles lidt løs, og manglen på vandtæthed eller ANC kan begrænse nogle anvendelser.",
+      "summary": "MARMAJOR5 leverer en varm, kraftfuld og klar lyd med tilfredsstillende bas, som gør mange musikgenrer medrivende. Den lange batteritid, den behagelige pasform og det stilfulde retrodesign gør hovedtelefonerne særligt praktiske på farten og i hverdagen. Den gode værdi for pengene, den nyttige EQ samt funktioner som trådløs opladning og Spotify-knap fuldender en særdeles attraktiv pakke, selv om løs pasform, manglende ANC og manglende vandtæthed giver enkelte forbehold.",
       "headlines": {
-       "rich, clear and powerful sound": {
-        "sentimentAnalysis": "Anmeldelserne roser konsekvent en fyldig, klar og basrig gengivelse, især til energisk musik.",
-        "simpleTitle": "Fyldig, klar og kraftfuld lyd",
+       "warm, clear and powerful sound": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den fyldige og klare gengivelse, den kraftige bas og den medrivende musikalitet.",
+        "simpleTitle": "Varm, klar og kraftfuld lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "5a7e4741-bfb7-4e12-83a1-414aa8af20d4"
+        "groupId": "c952ce16-7d5c-4a76-b67d-a9c31354c181"
        },
-       "comfortable for extended wear": {
-        "sentimentAnalysis": "Flere anmeldelser beskriver blød kontakt med ørerne, lavt tryk og god komfort ved lang tids brug.",
-        "simpleTitle": "Behagelige ved længere tids brug",
+       "comfortable for long listening": {
+        "sentimentAnalysis": "Bløde puder og en lav vægt gør hovedtelefonerne behagelige selv ved længere tids brug.",
+        "simpleTitle": "Behagelige ved lang tids brug",
         "bias": "positive",
         "key": "comfort",
-        "groupId": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37"
+        "groupId": "888fa754-cf57-4988-9f0a-586dee335773"
        },
        "exceptional battery endurance": {
-        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som ekstremt lang med angivelser på 100 timer og meget lidt behov for opladning.",
-        "simpleTitle": "Enestående batteritid",
+        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som ekstremt lang, og omkring 100 timer nævnes specifikt.",
+        "simpleTitle": "Ekstrem batteritid",
         "bias": "positive",
         "key": "battery",
-        "groupId": "3ec7c7bf-b855-4610-af56-0e89e3acd0e7"
+        "groupId": "a7f5eecb-3d14-4709-b016-a63af1669470"
        },
-       "distinctive retro styling": {
-        "sentimentAnalysis": "Det klassiske Marshall-design roses gentagne gange som attraktivt, cool og markant.",
-        "simpleTitle": "Markant retrodesign",
+       "stylish retro design": {
+        "sentimentAnalysis": "Det klassiske Marshall-design og de attraktive farvemuligheder får ofte ros.",
+        "simpleTitle": "Stilfuldt retrodesign",
         "bias": "positive",
         "key": "design",
-        "groupId": "dc855bde-37bf-4929-a9dd-9eadfbcb7505"
+        "groupId": "30dafacc-f55d-47ff-8fb9-d2409c9dc600"
        },
-       "a strong value proposition": {
-        "sentimentAnalysis": "Anmeldelserne beskriver hovedtelefonerne som et overkommeligt køb med stærk ydeevne og nyttige funktioner.",
-        "simpleTitle": "Stærk værdi for pengene",
+       "strong value at the price": {
+        "sentimentAnalysis": "Kombinationen af lyd, batteritid og funktioner vurderes som fremragende værdi for pengene.",
+        "simpleTitle": "God værdi til prisen",
         "bias": "positive",
         "key": "value",
-        "groupId": "33dbc456-405c-425b-be73-67e32187b673"
+        "groupId": "4fbb9ecf-fdc5-4d1e-a122-90d86662a868"
        },
-       "fit can be slightly loose": {
-        "sentimentAnalysis": "To anmeldelser bemærker, at hovedtelefonerne kan flytte sig eller sidde mindre sikkert end tidligere modeller under bevægelse.",
-        "simpleTitle": "Pasformen kan være lidt løs",
+       "bass can be modest for some listeners": {
+        "sentimentAnalysis": "En mindre del af anmeldelserne oplever lyden som mindre bastung eller mindre balanceret end på tidligere Major-modeller.",
+        "simpleTitle": "Bassen kan være for beskeden for nogle",
+        "bias": "negative",
+        "key": "sound",
+        "groupId": "c952ce16-7d5c-4a76-b67d-a9c31354c181"
+       },
+       "fit can be loose during movement": {
+        "sentimentAnalysis": "Nogle ejere oplever, at hovedtelefonerne glider, eller ønsker en strammere pasform, især når de bøjer sig frem.",
+        "simpleTitle": "Pasformen kan være løs under bevægelse",
         "bias": "negative",
         "key": "comfort",
-        "groupId": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37"
+        "groupId": "888fa754-cf57-4988-9f0a-586dee335773"
        }
       },
       "grouping": {
-       "5a7e4741-bfb7-4e12-83a1-414aa8af20d4": {
+       "c952ce16-7d5c-4a76-b67d-a9c31354c181": {
         "title": "Lydkvalitet",
-        "id": "5a7e4741-bfb7-4e12-83a1-414aa8af20d4",
+        "id": "c952ce16-7d5c-4a76-b67d-a9c31354c181",
         "references": [
          "3958b069-0698-41e7-a63c-aac6575a2dad",
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "fe3013d6-9137-4c55-81c6-332f8a374aef",
          "69453459-9e66-46f0-8b51-50575decdbe0",
          "4f8af80d-4e1a-42d8-a990-1c7513aa0396",
-         "b03e742f-b881-4c06-9b49-9cbdd86047c0",
          "f24f64f9-0e24-437f-82a7-7dfc7341adeb",
          "7e736043-f78c-4395-bdf2-7041fc4b240e",
          "e3fb2ccd-f986-4358-b3a3-fe1046185ee3",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
-         "8a5a2dca-cde0-4de0-a4bd-a4d83f7d1b81",
+         "b03e742f-b881-4c06-9b49-9cbdd86047c0",
+         "5eeffc83-2c2a-4f8e-8908-40694dc562b3",
          "3c97bd73-05aa-41a0-ad97-d51b4ac5c2f9",
          "8f14d782-6ecf-418c-98e1-d34c5ca45e75",
          "76c6eceb-5cdd-4fbd-a983-bebf60607a14",
          "ba9dfd69-bcdc-4b7c-82a6-b3e5945603de",
-         "5eeffc83-2c2a-4f8e-8908-40694dc562b3",
          "440306b2-681f-4530-a77a-7622723f9252",
          "056515c3-9139-4757-acef-337d68a57ec6",
          "c2655de5-7324-491e-9577-efe44ddcb78e",
@@ -357,24 +361,23 @@
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37": {
+       "888fa754-cf57-4988-9f0a-586dee335773": {
         "title": "Komfort og pasform",
-        "id": "5e0e42f2-6ba9-4d82-8081-0d43da5b9d37",
+        "id": "888fa754-cf57-4988-9f0a-586dee335773",
         "references": [
-         "3958b069-0698-41e7-a63c-aac6575a2dad",
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
-         "276106b0-97e5-4e74-9768-46bf44936803",
          "e3fb2ccd-f986-4358-b3a3-fe1046185ee3",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
          "8a5a2dca-cde0-4de0-a4bd-a4d83f7d1b81",
+         "276106b0-97e5-4e74-9768-46bf44936803",
          "440306b2-681f-4530-a77a-7622723f9252",
          "c2655de5-7324-491e-9577-efe44ddcb78e",
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "3ec7c7bf-b855-4610-af56-0e89e3acd0e7": {
+       "a7f5eecb-3d14-4709-b016-a63af1669470": {
         "title": "Batteritid",
-        "id": "3ec7c7bf-b855-4610-af56-0e89e3acd0e7",
+        "id": "a7f5eecb-3d14-4709-b016-a63af1669470",
         "references": [
          "4f8af80d-4e1a-42d8-a990-1c7513aa0396",
          "f24f64f9-0e24-437f-82a7-7dfc7341adeb",
@@ -386,22 +389,22 @@
          "76fb1b48-2bc1-401e-9243-335381ea6364"
         ]
        },
-       "dc855bde-37bf-4929-a9dd-9eadfbcb7505": {
+       "30dafacc-f55d-47ff-8fb9-d2409c9dc600": {
         "title": "Design",
-        "id": "dc855bde-37bf-4929-a9dd-9eadfbcb7505",
+        "id": "30dafacc-f55d-47ff-8fb9-d2409c9dc600",
         "references": [
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "69453459-9e66-46f0-8b51-50575decdbe0",
          "7e736043-f78c-4395-bdf2-7041fc4b240e",
          "eaf6621a-d74c-4e1b-8564-3683acc46401",
          "4f15bd51-0510-4c59-8333-2e74233ef1ee",
-         "98719a69-27ce-4284-94bd-bb2ed8b9b107",
-         "587724bf-a773-4689-ab53-0d4679add696"
+         "d55a7888-1318-4ce4-9c7e-e6ab4404a33d",
+         "98719a69-27ce-4284-94bd-bb2ed8b9b107"
         ]
        },
-       "33dbc456-405c-425b-be73-67e32187b673": {
-        "title": "Værdi for pengene",
-        "id": "33dbc456-405c-425b-be73-67e32187b673",
+       "4fbb9ecf-fdc5-4d1e-a122-90d86662a868": {
+        "title": "Pris og kvalitet",
+        "id": "4fbb9ecf-fdc5-4d1e-a122-90d86662a868",
         "references": [
          "6c6b07af-0363-4bb6-9a41-13acb91c87fa",
          "ff0ba8b6-f43a-46e3-9de2-8abbb0d6df15",
@@ -443,7 +446,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 85,
+        "availableQuantity": 35,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.499,-",
@@ -463,209 +466,27 @@
         "productCode": "MARMONITOR3ANCCREAM"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager fredag den 11. december",
+        "deliveryDate": "2026-12-11T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 4,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
-       "priceFormatted": "2.499,-",
-       "priceRaw": 2499,
+       "priceFormatted": "1.499,-",
+       "priceRaw": 1499,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
       }
      ],
-     "parentProductCode": "MARMONITOR3ANC",
-     "reviews": {
-      "summary": "MARMONITOR3ANC roses bredt for varm, klar og medrivende lyd, behagelige ørepuder, pålidelig batteritid og et stilfuldt, sammenklappeligt design. Støjreduktionen er generelt effektiv og nyttig i støjende omgivelser, men flere anmeldelser vurderer den som mindre kraftfuld eller mindre stabil end hos Bose og Sony. Samlet set giver hovedtelefonerne en fremragende balance mellem lyd, komfort og funktioner til prisen, med enkelte bekymringer om detaljer i konstruktionen og pasformens stabilitet.",
-      "headlines": {
-       "clear, balanced and immersive sound": {
-        "sentimentAnalysis": "Lyden beskrives gentagne gange som klar, balanceret, naturlig og meget behagelig med gode musikalske detaljer og en bred gengivelse.",
-        "simpleTitle": "Klar, balanceret og medrivende lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "9e0fdece-a9d0-48fb-a279-afc8e9b02855"
-       },
-       "soft, comfortable fit for long listening": {
-        "sentimentAnalysis": "Blød polstring, lav vægt og en behagelig pasform gør hovedtelefonerne velegnede til lang tids lytning og daglig brug.",
-        "simpleTitle": "Blød og behagelig pasform til lang tids lytning",
-        "bias": "positive",
-        "key": "comfort",
-        "groupId": "ccdf9a08-3ff1-455b-8c22-a85c18c942a6"
-       },
-       "effective noise cancellation in noisy environments": {
-        "sentimentAnalysis": "Støjreduktionen vurderes som effektiv til hverdagsbrug, især mod maskin- og andre baggrundslyde, og softwareopdateringer kan forbedre ydeevnen.",
-        "simpleTitle": "Effektiv støjreduktion i støjende omgivelser",
-        "bias": "positive",
-        "key": "anc",
-        "groupId": "b0699ec8-bcbb-4665-bdee-645dd9d41b8c"
-       },
-       "long battery life": {
-        "sentimentAnalysis": "Batteritiden fremhæves gentagne gange som lang og pålidelig og understøtter hyppig daglig brug.",
-        "simpleTitle": "Lang batteritid",
-        "bias": "positive",
-        "key": "battery",
-        "groupId": "f614c615-eb75-42f6-bc5b-0ab3fde31e71"
-       },
-       "stylish design and compact folding": {
-        "sentimentAnalysis": "Det klassiske Marshall-udseende og den meget kompakte foldemekanisme er klare praktiske og æstetiske fordele.",
-        "simpleTitle": "Stilfuldt design og kompakt sammenfoldning",
-        "bias": "positive",
-        "key": "design",
-        "groupId": "e05aa875-878c-46f3-9e72-733c82e2d803"
-       },
-       "anc is below the best Bose and Sony models": {
-        "sentimentAnalysis": "Sammenligninger beskriver ANC som solid eller god nok, men ikke konsekvent på niveau med de bedste Bose- og Sony-alternativer.",
-        "simpleTitle": "ANC er svagere end hos de bedste Bose- og Sony-modeller",
-        "bias": "negative",
-        "key": "anc",
-        "groupId": "b0699ec8-bcbb-4665-bdee-645dd9d41b8c"
-       },
-       "less bass than some competing models": {
-        "sentimentAnalysis": "Nogle sammenligninger bemærker en slankere bas end hos Bose og antyder, at lyttere, der ønsker en meget varm lyd eller fokus på klassisk musik, kan foretrække alternativer.",
-        "simpleTitle": "Mindre bas end hos nogle konkurrerende modeller",
-        "bias": "negative",
-        "key": "sound",
-        "groupId": "9e0fdece-a9d0-48fb-a279-afc8e9b02855"
-       },
-       "fit can feel loose or lose tension": {
-        "sentimentAnalysis": "Enkelte kommentarer nævner en løs pasform eller mindre spændstighed i hovedbøjlen over tid.",
-        "simpleTitle": "Pasformen kan føles løs eller miste spændstighed",
-        "bias": "negative",
-        "key": "comfort",
-        "groupId": "ccdf9a08-3ff1-455b-8c22-a85c18c942a6"
-       },
-       "some concerns about construction durability": {
-        "sentimentAnalysis": "Enkelte anmeldelser sætter spørgsmålstegn ved holdbarheden af forbindelsen ved ørekopperne og rapporterer knirke- eller kliklyde ved bevægelse.",
-        "simpleTitle": "Nogle bekymringer om konstruktionens holdbarhed",
-        "bias": "negative",
-        "key": "design",
-        "groupId": "e05aa875-878c-46f3-9e72-733c82e2d803"
-       }
-      },
-      "grouping": {
-       "9e0fdece-a9d0-48fb-a279-afc8e9b02855": {
-        "title": "Lydkvalitet",
-        "id": "9e0fdece-a9d0-48fb-a279-afc8e9b02855",
-        "references": [
-         "03891034-f86d-44d4-b37b-b00374e4c2af",
-         "62b2e58f-9eaa-4c3a-9667-d2cb83dbca7f",
-         "2cd14133-324f-4e79-9033-9e6a977a2c3a",
-         "7490a8e0-fbf6-4410-9671-c4ac6d221608",
-         "684b9071-3205-4f85-8461-8c9792f85170",
-         "501b1b3a-5854-4ee9-a2e1-a8b552d9a5aa",
-         "6be86363-3241-473d-b44d-27985040b330",
-         "53482903-2622-4bfe-9957-f33efa03a6cd",
-         "e09b64e5-6c41-495b-96a1-c8c0c04778fa",
-         "6399b1b3-a11e-4ff3-92c4-7e4ea898ac61",
-         "c2536fc7-37d2-437b-ba76-ca442903c038",
-         "939b983f-4eb8-4a2d-a66c-e867868b62a7",
-         "3ef2a259-a149-4240-a228-759a7144f889",
-         "b342e86f-01f2-499a-8686-f7735f009d7a",
-         "d3289ff2-b11f-44be-8118-a9582cfa444a",
-         "7222c6b8-d967-4817-abd8-84aa2241c76a",
-         "390bac93-d365-440f-b934-a2e60271288f",
-         "30a40560-0287-428a-ad73-755aed121fe7",
-         "30d6c7bf-7fc3-4a9b-9ae6-0fdc451f64e3",
-         "47f5a3fa-0ad6-4284-817d-fdfa359e98aa",
-         "d2f00278-91a6-47f0-b23e-79c585f08cd1",
-         "f83ddf6c-41f2-42a3-b965-2faf9cb23f06",
-         "626ac89d-6bc8-42ef-b53f-a5d5fc25242e",
-         "04167f12-4046-40e7-863e-b35efd24e8fb"
-        ]
-       },
-       "b0699ec8-bcbb-4665-bdee-645dd9d41b8c": {
-        "title": "Støjreduktion",
-        "id": "b0699ec8-bcbb-4665-bdee-645dd9d41b8c",
-        "references": [
-         "2cd14133-324f-4e79-9033-9e6a977a2c3a",
-         "7490a8e0-fbf6-4410-9671-c4ac6d221608",
-         "6be86363-3241-473d-b44d-27985040b330",
-         "c3a5ed9d-f869-40c6-8bee-2e824e5dcfbe",
-         "e09b64e5-6c41-495b-96a1-c8c0c04778fa",
-         "6399b1b3-a11e-4ff3-92c4-7e4ea898ac61",
-         "c2536fc7-37d2-437b-ba76-ca442903c038",
-         "b342e86f-01f2-499a-8686-f7735f009d7a",
-         "d3289ff2-b11f-44be-8118-a9582cfa444a",
-         "390bac93-d365-440f-b934-a2e60271288f",
-         "5ddd081b-fc76-427f-8642-02aefa721bc5",
-         "30a40560-0287-428a-ad73-755aed121fe7",
-         "ebd31434-10f8-4141-8f8c-e67c11b0ac73",
-         "47f5a3fa-0ad6-4284-817d-fdfa359e98aa",
-         "30d6c7bf-7fc3-4a9b-9ae6-0fdc451f64e3",
-         "dfe3f606-2879-4f18-87c2-431a17cf477f",
-         "1f3a27a6-3268-4859-8fcd-8b961b6d376a",
-         "782ac2d2-4eac-462a-a304-6eb34ed9756e"
-        ]
-       },
-       "ccdf9a08-3ff1-455b-8c22-a85c18c942a6": {
-        "title": "Komfort og pasform",
-        "id": "ccdf9a08-3ff1-455b-8c22-a85c18c942a6",
-        "references": [
-         "6be86363-3241-473d-b44d-27985040b330",
-         "684b9071-3205-4f85-8461-8c9792f85170",
-         "69280f1d-c004-4cf3-9b02-306af923cbb9",
-         "501b1b3a-5854-4ee9-a2e1-a8b552d9a5aa",
-         "e09b64e5-6c41-495b-96a1-c8c0c04778fa",
-         "6399b1b3-a11e-4ff3-92c4-7e4ea898ac61",
-         "939b983f-4eb8-4a2d-a66c-e867868b62a7",
-         "c893cfca-00d9-4762-b293-4970d8f6bf9d",
-         "d3289ff2-b11f-44be-8118-a9582cfa444a",
-         "7222c6b8-d967-4817-abd8-84aa2241c76a",
-         "626ac89d-6bc8-42ef-b53f-a5d5fc25242e",
-         "72b390cb-335e-4148-86cc-7b44576f7d47",
-         "dfe3f606-2879-4f18-87c2-431a17cf477f"
-        ]
-       },
-       "e05aa875-878c-46f3-9e72-733c82e2d803": {
-        "title": "Design og transport",
-        "id": "e05aa875-878c-46f3-9e72-733c82e2d803",
-        "references": [
-         "6be86363-3241-473d-b44d-27985040b330",
-         "ab870350-d63d-42a3-99b0-601d70d2c2cc",
-         "4a927f16-3b9c-4cf9-aa69-6474e47b6c86",
-         "c2536fc7-37d2-437b-ba76-ca442903c038",
-         "7222c6b8-d967-4817-abd8-84aa2241c76a",
-         "5ddd081b-fc76-427f-8642-02aefa721bc5",
-         "30a40560-0287-428a-ad73-755aed121fe7",
-         "78d9ae26-517f-425f-8bad-7f7481aed5e8",
-         "835c5ee5-d81b-42bd-826e-1367ce33a6da",
-         "c893cfca-00d9-4762-b293-4970d8f6bf9d"
-        ]
-       },
-       "f614c615-eb75-42f6-bc5b-0ab3fde31e71": {
-        "title": "Batteritid",
-        "id": "f614c615-eb75-42f6-bc5b-0ab3fde31e71",
-        "references": [
-         "2cd14133-324f-4e79-9033-9e6a977a2c3a",
-         "6be86363-3241-473d-b44d-27985040b330",
-         "e09b64e5-6c41-495b-96a1-c8c0c04778fa",
-         "fb68f193-7625-438c-b4a7-52bc094c94a6",
-         "7222c6b8-d967-4817-abd8-84aa2241c76a",
-         "30a40560-0287-428a-ad73-755aed121fe7"
-        ]
-       }
-      },
-      "rating": 4.83157894736842,
-      "count": 95,
-      "reviewCount": 49,
-      "distribution": {
-       "1": 0,
-       "2": 1,
-       "3": 3,
-       "4": 7,
-       "5": 84
-      }
-     }
+     "parentProductCode": "MARMONITOR3ANC"
     }
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "inStock": true,
-    "description": "På lager. Leveringstid 1-2 hverdage",
+    "description": "Forventes på lager fredag den 11. december",
+    "deliveryDate": "2026-12-11T00:00:00Z",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 12
+    "numberOfStoresExperience": 5
    }
   },
   "variantNavigationType": "dropDown",

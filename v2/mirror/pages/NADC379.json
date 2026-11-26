@@ -101,32 +101,11 @@
   },
   "techSpecs": [
    {
-    "index": 10,
-    "title": "Ydelse",
+    "index": 125,
+    "title": "Generelle egenskaber",
     "content": [
      {
-      "term": "Udgangseffekt 4 ohm",
-      "value": "80 watt"
-     },
-     {
-      "term": "Udgangseffekt 8 ohm",
-      "value": "80 watt"
-     },
-     {
-      "term": "Forvrængning (THD)",
-      "value": "0,03%"
-     },
-     {
-      "term": "Dæmpningsfaktor",
-      "value": "150"
-     },
-     {
-      "term": "Dynamisk effekt",
-      "value": "120-250 watt"
-     },
-     {
-      "term": "Forstærkerteknologi",
-      "value": "Klasse D"
+      "value": "Bluetooth 4.2, inkl. aptX HD\n2 x plads til MDC2 udvidelsesmodul (f.eks. BluOS/Dirac modul)*\nHypex HybridDigital UcD effekttrin \nUnderstøtter op til 32-bit/384kHz \n32-bit/384kHz ESS Sabre Pro ES9028 DAC  \nKan brokobles til 300 watt i mono (målemetode ikke angivet)\nTilslutning for to par højtalere (individuelt eller parallelt) \nGuldbelagte terminaler \nMekanisk tænd/sluk på bagside\nStrømforbrug (auto-standby): 0,5 watt \n*C 379 kan kun udvides med MDC2 indbygningsmoduler. Ældre MDC-moduler er ikke kompatible. "
      }
     ]
    },
@@ -199,11 +178,32 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "Bluetooth 4.2, inkl. aptX HD\n2 x plads til MDC2 udvidelsesmodul (f.eks. BluOS/Dirac modul)*\nHypex HybridDigital UcD effekttrin \nUnderstøtter op til 32-bit/384kHz \n32-bit/384kHz ESS Sabre Pro ES9028 DAC  \nKan brokobles til 300 watt i mono (målemetode ikke angivet)\nTilslutning for to par højtalere (individuelt eller parallelt) \nGuldbelagte terminaler \nMekanisk tænd/sluk på bagside\nStrømforbrug (auto-standby): 0,5 watt \n*C 379 kan kun udvides med MDC2 indbygningsmoduler. Ældre MDC-moduler er ikke kompatible. "
+      "term": "Udgangseffekt 4 ohm",
+      "value": "80 watt"
+     },
+     {
+      "term": "Udgangseffekt 8 ohm",
+      "value": "80 watt"
+     },
+     {
+      "term": "Forvrængning (THD)",
+      "value": "0,03%"
+     },
+     {
+      "term": "Dæmpningsfaktor",
+      "value": "150"
+     },
+     {
+      "term": "Dynamisk effekt",
+      "value": "120-250 watt"
+     },
+     {
+      "term": "Forstærkerteknologi",
+      "value": "Klasse D"
      }
     ]
    },
@@ -228,7 +228,7 @@
   "stockItemAlternative": {
    "save": "600,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=NADC379",
-   "availableQuantity": 2,
+   "availableQuantity": 1,
    "lowestPrice": "8.399,-"
   },
   "variants": [
@@ -305,7 +305,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 184,
+     "availableQuantity": 165,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -545,55 +545,62 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD C 379 roses bredt som en kraftfuld og alsidig forstærker med varm, klar, detaljeret og dynamisk lyd. De mange tilslutninger, herunder HDMI ARC, Bluetooth, streamingmuligheder og phono, gør den nem at integrere i både moderne og analoge anlæg. En mindre gruppe nævner udfordringer med opsætning og menuer, softwarefejl, mangelfuld dokumentation, lejlighedsvis støj eller brum samt lidt mindre diskant og opløsning end hos dyrere forstærkere.",
+   "summary": "NAD C 379 roses bredt for sin varme, klare, detaljerede og dynamiske lyd, rigelige effekt og tydelige musikalske opgradering. De mange tilslutninger, herunder HDMI ARC, Bluetooth, streamingmuligheder og phono-understøttelse, gør forstærkeren alsidig, mens valgfrie MDC2-moduler giver ekstra fleksibilitet. Enkelte brugere oplever kompliceret opsætning, softwareproblemer, manglende trykt dokumentation og lejlighedsvise TV- eller skifteproblemer, men den samlede tilfredshed er særdeles høj.",
    "headlines": {
-    "warm, clear and detailed sound": {
-     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som varm, klar, fyldig, detaljeret og meget behagelig.",
-     "simpleTitle": "Varm, klar og detaljeret lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
-    },
-    "broad connections for digital and analogue sources": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter gennemgående det store udvalg af tilslutninger, herunder HDMI ARC, Bluetooth, streaming og phono.",
-     "simpleTitle": "Mange tilslutninger til digitale og analoge kilder",
+    "versatile connections for TV, streaming and vinyl": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver det brede udvalg af indgange, problemfri TV- og Bluetooth-integration, streamingunderstøttelse og praktisk phono-tilslutning.",
+     "simpleTitle": "Alsidige tilslutninger til TV, streaming og vinyl",
      "bias": "positive",
      "key": "connectivity",
-     "groupId": "254d791e-d0e8-4b76-8cbd-106eb5b105cc"
+     "groupId": "147e8e8e-a3a1-49d9-9a01-3448fd20b840"
     },
-    "strong, dynamic and revealing presentation": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver kraftfuld drift, dynamisk energi og en afslørende gengivelse, der viser hidtil uhørte musikdetaljer.",
-     "simpleTitle": "Kraftfuld, dynamisk og afslørende gengivelse",
+    "warm, clear and highly detailed sound": {
+     "sentimentAnalysis": "Forstærkeren roses gentagne gange for varm, naturlig, klar og afslørende gengivelse, der gør tidligere uhørte musikalske detaljer hørbare.",
+     "simpleTitle": "Varm, klar og meget detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
+     "groupId": "19bd72cf-2b04-43e0-9663-229e308e0f7e"
     },
-    "setup and documentation can be frustrating": {
-     "sentimentAnalysis": "Flere ejere fandt vejledningen svær at finde eller utilgængelig på tryk, mens opsætning og menunavigation til tider krævede ekstra arbejde.",
-     "simpleTitle": "Opsætning og dokumentation kan være frustrerende",
-     "bias": "negative",
-     "key": "usability",
-     "groupId": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5"
+    "powerful and dynamic presentation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver fyldigere lyd, stærk højttalerdrivning, energisk dynamik og rigelig ydelse med flere højttalersystemer.",
+     "simpleTitle": "Kraftfuld og dynamisk gengivelse",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "19bd72cf-2b04-43e0-9663-229e308e0f7e"
     },
-    "simple operation after setup": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver den daglige betjening og justering som enkel efter opsætningen.",
-     "simpleTitle": "Enkel betjening efter opsætning",
+    "solid, understated construction": {
+     "sentimentAnalysis": "Forstærkeren opfattes som velbygget, visuelt diskret og gedigen i hånden med god værdi i konstruktionen.",
+     "simpleTitle": "Solid og diskret konstruktion",
+     "bias": "positive",
+     "key": "build",
+     "groupId": "45de4c19-2d0d-40fc-8355-890fe37912ed"
+    },
+    "simple operation once configured": {
+     "sentimentAnalysis": "Andre anmeldelser beskriver enkel betjening i hverdagen, især efter den første opsætning.",
+     "simpleTitle": "Nem betjening efter opsætning",
      "bias": "positive",
      "key": "usability",
-     "groupId": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5"
+     "groupId": "416d9e38-739a-4499-abb0-911b8aa34075"
     },
-    "treble can sound recessed or less refined": {
-     "sentimentAnalysis": "To sammenligninger peger på mindre diskantenergi eller opløsning end hos andre forstærkere og anlæg.",
-     "simpleTitle": "Diskanten kan virke tilbagetrukket eller mindre raffineret",
+    "setup and menu operation can be cumbersome": {
+     "sentimentAnalysis": "Nogle brugere oplever opsætning, optimering og navigation på frontpanelet som mere kompliceret eller digital end ønsket, og én TV-installation krævede yderligere hjælp.",
+     "simpleTitle": "Opsætning og menubetjening kan være besværlig",
+     "bias": "negative",
+     "key": "usability",
+     "groupId": "416d9e38-739a-4499-abb0-911b8aa34075"
+    },
+    "treble can sound muted or less refined": {
+     "sentimentAnalysis": "To sammenligninger peger på mindre diskant, detaljering og stramhed end forventet eller sammenlignet med en tidligere forstærker.",
+     "simpleTitle": "Diskanten kan virke dæmpet eller mindre raffineret",
      "bias": "negative",
      "key": "sound",
-     "groupId": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee"
+     "groupId": "19bd72cf-2b04-43e0-9663-229e308e0f7e"
     }
    },
    "grouping": {
-    "adcbdb4f-8c58-46a6-a225-ebc1105dfdee": {
+    "19bd72cf-2b04-43e0-9663-229e308e0f7e": {
      "title": "Lydkvalitet",
-     "id": "adcbdb4f-8c58-46a6-a225-ebc1105dfdee",
+     "id": "19bd72cf-2b04-43e0-9663-229e308e0f7e",
      "references": [
       "926805c6-9cfe-4539-a39d-db9a6be58850",
       "dcffd5ee-6f44-4519-a9c9-ca905863317c",
@@ -622,8 +629,9 @@
       "ee211623-6899-4533-9df5-d35d4c488f53",
       "5eeda713-fd91-4203-85e7-8b7fa21f3e06",
       "f5d43617-3879-4026-a1b1-de9c8209b39e",
-      "9d0b5871-fd3d-4088-92a4-59a841ae7121",
+      "224923b3-cc2f-4696-9f04-b7f2af8ff03a",
       "aee0d6e8-9195-492e-9684-f74aec065e49",
+      "9d0b5871-fd3d-4088-92a4-59a841ae7121",
       "8e16eb7e-83c2-4c53-a227-9fda712c87d8",
       "28e36fc9-c04a-4d74-945a-50fe56d1bbef",
       "87bc9bf8-7311-4a8a-a376-88ac8b24be93",
@@ -635,20 +643,18 @@
       "6e097438-cd66-4b54-9044-f64fbe303149",
       "f2637de6-0942-4dac-b88d-84d41140bf0b",
       "dab5fff1-f084-4079-b2c4-ad75e7a689a5",
-      "32e2583e-da91-4315-a6dd-9e5705fd28a8",
-      "30c94b9c-1a4b-45aa-aeeb-a0f86239d12f"
+      "32e2583e-da91-4315-a6dd-9e5705fd28a8"
      ]
     },
-    "254d791e-d0e8-4b76-8cbd-106eb5b105cc": {
+    "147e8e8e-a3a1-49d9-9a01-3448fd20b840": {
      "title": "Tilslutninger og funktioner",
-     "id": "254d791e-d0e8-4b76-8cbd-106eb5b105cc",
+     "id": "147e8e8e-a3a1-49d9-9a01-3448fd20b840",
      "references": [
       "1943ef95-514b-4ace-96f4-ef73c197156c",
       "357fbb56-d246-4c8d-aebd-25e48ea20bf1",
       "91126463-202d-4a9c-9948-3ccfbf3f6300",
       "f065e749-074f-494c-85ef-ed7daa28fc74",
       "4c81e6d2-cd2f-4905-90d1-afad3a07d509",
-      "5109e791-597f-4b29-bfdb-e7fcde65247f",
       "5ba33cbd-0424-489b-9542-ee67440e234b",
       "70887c19-f1f7-45eb-a18a-cd16ec4dd4a5",
       "a7f1783f-3fb8-46c7-8895-94387c5e91fe",
@@ -659,25 +665,48 @@
       "d8b62ef5-f211-42ae-acca-b267e9bdecd8",
       "6e097438-cd66-4b54-9044-f64fbe303149",
       "53e8bdb9-e927-4229-aeda-ccf7fe4ddcab",
-      "30c94b9c-1a4b-45aa-aeeb-a0f86239d12f"
+      "30c94b9c-1a4b-45aa-aeeb-a0f86239d12f",
+      "37350612-36e6-476b-80b8-c95b7977a268",
+      "224923b3-cc2f-4696-9f04-b7f2af8ff03a",
+      "6e8225da-cacc-43d4-8643-dad76b3f61a1"
      ]
     },
-    "1ae6b72a-5bd5-4004-ac40-b6b8821500c5": {
-     "title": "Opsætning og betjening",
-     "id": "1ae6b72a-5bd5-4004-ac40-b6b8821500c5",
+    "45de4c19-2d0d-40fc-8355-890fe37912ed": {
+     "title": "Byggekvalitet og design",
+     "id": "45de4c19-2d0d-40fc-8355-890fe37912ed",
      "references": [
-      "fcaf6422-5a2d-4e2b-aeb5-0fb063325e9a",
-      "53d0bba6-f508-44cb-8558-eda445b73482",
+      "dcffd5ee-6f44-4519-a9c9-ca905863317c",
+      "36937d8c-4e66-4a79-a13b-7188f77101ac",
+      "a0fefab1-c2bf-403a-a758-9c6b5dac521c",
+      "06413c99-dec8-4b78-a494-0f4c5d668d14",
+      "f065e749-074f-494c-85ef-ed7daa28fc74",
+      "c69a69d5-8edc-479d-bb6c-8726cb08c497",
+      "b3f0b655-0b54-4c70-a339-e7378493238b",
+      "509ba3dd-2610-4690-80e9-9013a8a89be1",
+      "e2772375-fb6b-4249-be7c-2acdc0b8bd6c",
+      "53e8bdb9-e927-4229-aeda-ccf7fe4ddcab",
+      "aee0d6e8-9195-492e-9684-f74aec065e49",
+      "87bc9bf8-7311-4a8a-a376-88ac8b24be93",
+      "11623368-ed22-4e0f-aee5-086979fa3fc1",
+      "41a924f5-a13a-47a7-9053-6f7457c0a466",
+      "28e36fc9-c04a-4d74-945a-50fe56d1bbef"
+     ]
+    },
+    "416d9e38-739a-4499-abb0-911b8aa34075": {
+     "title": "Brugervenlighed",
+     "id": "416d9e38-739a-4499-abb0-911b8aa34075",
+     "references": [
+      "3f6ea180-6067-4c5b-8524-7bfdb64a1b7a",
       "03898e77-af94-47da-935f-78bec6edb1f0",
       "5ef7a35e-d03e-4b4d-8383-971020c5067d",
+      "4c81e6d2-cd2f-4905-90d1-afad3a07d509",
+      "7227ed63-6583-4dcc-94e0-f5e271b10b79",
       "71a25eb9-24b7-42bb-8adc-1146031350ee",
       "d7c5bb15-629c-4252-984e-9c5c2ad9f291",
       "e0efcf04-9b1c-421e-b219-e9b2fe86aad0",
-      "5eeda713-fd91-4203-85e7-8b7fa21f3e06",
-      "224923b3-cc2f-4696-9f04-b7f2af8ff03a",
-      "aee0d6e8-9195-492e-9684-f74aec065e49",
       "11623368-ed22-4e0f-aee5-086979fa3fc1",
-      "32e2583e-da91-4315-a6dd-9e5705fd28a8"
+      "32e2583e-da91-4315-a6dd-9e5705fd28a8",
+      "6e8225da-cacc-43d4-8643-dad76b3f61a1"
      ]
     }
    },

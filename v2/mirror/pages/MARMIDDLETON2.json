@@ -61,6 +61,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Lydkontrol via multiknap på top\nBatterimåler på top\nBluetooth rækkevidde op til 60 meter\nDedikeret Marshall Bluetooth app (inkl. EQ og over-the-air opdateringer)\n360 grader lyd (spiller både fremad og bagud)\nIndbyggede Klasse D forstærkere (målemetode ikke angivet): 1 x 30 watt (bas) + 2 x 10 watt (mellemtone/diskant)\n2 x passive radiator\nPowerbank-funktion til opladning af telefon m.m.\n3 timers ladetid for fuld opladning, 20 minutters opladning giver 3 timers spilletid (med 5V/3A lader)\nAftagelig bærerem og USB-C til USB-C ladekabel medfølger"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -125,15 +134,6 @@
      {
       "term": "Teknologier",
       "value": "AAC"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Lydkontrol via multiknap på top\nBatterimåler på top\nBluetooth rækkevidde op til 60 meter\nDedikeret Marshall Bluetooth app (inkl. EQ og over-the-air opdateringer)\n360 grader lyd (spiller både fremad og bagud)\nIndbyggede Klasse D forstærkere (målemetode ikke angivet): 1 x 30 watt (bas) + 2 x 10 watt (mellemtone/diskant)\n2 x passive radiator\nPowerbank-funktion til opladning af telefon m.m.\n3 timers ladetid for fuld opladning, 20 minutters opladning giver 3 timers spilletid (med 5V/3A lader)\nAftagelig bærerem og USB-C til USB-C ladekabel medfølger"
      }
     ]
    },
@@ -254,7 +254,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 32,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -450,48 +450,55 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Marshall Middleton II leverer varm, slagkraftig og imponerende detaljeret lyd fra en kompakt Bluetooth-højttaler med særligt tilfredsstillende bas og klar gengivelse ved høj lydstyrke. Robust konstruktion, stilfuldt retrodesign, praktiske betjeningselementer og lang batteritid gør højttaleren meget attraktiv til hverdagslytning og sociale lejligheder. Placering indendørs giver fyldigere bas, mens begrænset dybbas udendørs, et smalt lydbillede for nogle lyttere og lejlighedsvise problemer med opladning eller opkaldsrouting nuancerer den ellers begejstrede vurdering.",
+   "summary": "Marshall Middleton II roses bredt for sin varme, punchy og bemærkelsesværdigt klare lyd med dyb bas og medrivende 360°-gengivelse. Det robuste retrodesign, den enkle betjening og den gode batteritid gør højttaleren særligt velegnet til daglig lytning og hyggelige sammenkomster. Bas og lydbillede kan virke mindre omfattende udendørs, og batteritiden i praksis kan være kortere end producentens angivelse.",
    "headlines": {
-    "rich, clear and powerful sound": {
-     "sentimentAnalysis": "Højttaleren roses gentagne gange for detaljeret, klar og kraftfuld lyd, der overgår forventningerne.",
-     "simpleTitle": "Fyldig, klar og kraftfuld lyd",
+    "warm, clear and powerful sound": {
+     "sentimentAnalysis": "Højttaleren leverer fyldig, klar og kraftfuld lyd, der overgår forventningerne.",
+     "simpleTitle": "Varm, klar og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
+     "groupId": "8e4c57aa-9f7c-41e0-aee6-2da788659879"
     },
-    "deep, satisfying bass": {
-     "sentimentAnalysis": "Den kraftige bas er et fremtrædende kendetegn, og de dybe frekvenser forbliver klare selv ved høj lydstyrke.",
-     "simpleTitle": "Dyb og tilfredsstillende bas",
+    "deep, punchy bass and immersive 360° sound": {
+     "sentimentAnalysis": "Bassen har imponerende dybde og kraft, mens 360°-afspilning holder lyden klar rundt om højttaleren.",
+     "simpleTitle": "Dyb, punchy bas og omsluttende 360°-lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
-    },
-    "bass and soundstage vary by setting": {
-     "sentimentAnalysis": "Nogle lyttesituationer afslører tilbageholden bas udendørs, begrænset dybde eller et smallere lydbillede end ønsket.",
-     "simpleTitle": "Bas og lydbillede varierer efter placering",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "1179e515-0dce-4adc-a112-dfac91b93a68"
+     "groupId": "8e4c57aa-9f7c-41e0-aee6-2da788659879"
     },
     "useful controls and connections": {
-     "sentimentAnalysis": "Bluetooth, kabeltilslutning, EQ-justering samt direkte bas- og diskantkontroller værdsættes for fleksibel betjening.",
-     "simpleTitle": "Praktiske betjeningselementer og tilslutninger",
+     "sentimentAnalysis": "Bluetooth, kablet tilslutning samt direkte bas- og diskantkontroller gør betjeningen fleksibel.",
+     "simpleTitle": "Praktisk betjening og tilslutning",
      "bias": "positive",
      "key": "controls",
-     "groupId": "a273403c-09a9-43b2-9b57-41d6e842dadd"
+     "groupId": "4abeed3a-5929-4944-8970-03ace2f04fd2"
+    },
+    "limited soundstage and bass outdoors": {
+     "sentimentAnalysis": "Nogle lyttesituationer afslører mindre dyb bas eller et smallere lydbillede, end krævende lyttere måske ønsker.",
+     "simpleTitle": "Begrænset lydbillede og bas udendørs",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "8e4c57aa-9f7c-41e0-aee6-2da788659879"
     },
     "long-lasting battery": {
-     "sentimentAnalysis": "Batteritiden vurderes som rigelig til lang tids lytning og beskrives delvist som fler­dages eller en hel uges brug.",
+     "sentimentAnalysis": "Batteritiden er lang nok til længere tids lytning og kan holde i flere dage ved normal brug.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
      "key": "battery",
-     "groupId": "1225aa8c-d23d-46a6-89c0-cde930178ea4"
+     "groupId": "0fd47377-4134-4bb4-a94b-d1d442f4d22a"
+    },
+    "stylish retro design": {
+     "sentimentAnalysis": "Højttaleren kombinerer et attraktivt retrolook med et design, der passer i moderne hjem.",
+     "simpleTitle": "Stilfuldt retrodesign",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "1c1540cf-da84-414e-80db-6d222436dfef"
     }
    },
    "grouping": {
-    "1179e515-0dce-4adc-a112-dfac91b93a68": {
+    "8e4c57aa-9f7c-41e0-aee6-2da788659879": {
      "title": "Lydkvalitet",
-     "id": "1179e515-0dce-4adc-a112-dfac91b93a68",
+     "id": "8e4c57aa-9f7c-41e0-aee6-2da788659879",
      "references": [
       "66be59b3-242e-40ea-b93c-368693a82428",
       "12d7d672-6d15-4c0c-980a-199a26ad63a3",
@@ -507,18 +514,27 @@
       "1720b15a-7b36-43e0-9ab6-27e637d744be"
      ]
     },
-    "1225aa8c-d23d-46a6-89c0-cde930178ea4": {
+    "0fd47377-4134-4bb4-a94b-d1d442f4d22a": {
      "title": "Batteritid",
-     "id": "1225aa8c-d23d-46a6-89c0-cde930178ea4",
+     "id": "0fd47377-4134-4bb4-a94b-d1d442f4d22a",
      "references": [
       "efddc7e2-9ee6-4815-9c4f-1d2ab187c675",
       "db0b5321-9a8f-4dc9-9329-8eb5893d2c72",
       "1720b15a-7b36-43e0-9ab6-27e637d744be"
      ]
     },
-    "a273403c-09a9-43b2-9b57-41d6e842dadd": {
+    "1c1540cf-da84-414e-80db-6d222436dfef": {
+     "title": "Design",
+     "id": "1c1540cf-da84-414e-80db-6d222436dfef",
+     "references": [
+      "0dcbc517-4bdb-4031-a3dd-2dbb0c2cae72",
+      "ff05e85e-fe58-4ddd-b35e-547ffcbcdc83",
+      "db0b5321-9a8f-4dc9-9329-8eb5893d2c72"
+     ]
+    },
+    "4abeed3a-5929-4944-8970-03ace2f04fd2": {
      "title": "Betjening og tilslutning",
-     "id": "a273403c-09a9-43b2-9b57-41d6e842dadd",
+     "id": "4abeed3a-5929-4944-8970-03ace2f04fd2",
      "references": [
       "5819f025-a403-44b2-97e6-0c7683fa937f",
       "0dcbc517-4bdb-4031-a3dd-2dbb0c2cae72",
