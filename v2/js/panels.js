@@ -416,7 +416,8 @@
     const fitName = () => { const cs = getComputedStyle(name); ruler.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily; const w = ruler.measureText(name.value || name.placeholder).width + 22; name.style.width = Math.round(Math.max(60, Math.min(340, w))) + 'px'; };
     name.addEventListener('input', fitName);
     Pn.focusName = () => { setTimeout(() => { name.focus(); name.select(); }, 0); };
-    const shopCrumb = h('span.tb-crumb');
+    // the shop's name: click for the shop's projects (and Skift butik)
+    const shopCrumb = h('button.tb-crumb', { type: 'button', title: t('The shop\'s projects', 'Butikkens projekter'), onclick: () => Pn.projects() });
     const undo = ib('tb-undo', 'undo', t('Undo', 'Fortryd'), store.undo, { key: 'Ctrl+Z' }), redo = ib('tb-redo', 'redo', t('Redo', 'Annuller fortryd'), store.redo, { key: 'Ctrl+Y' });
     // the undo history as a list (like Photoshop's History panel): click a step to go back (or forward) to it
     const histBtn = h('button.tb-i#tb-hist', { 'aria-haspopup': 'menu', title: t('History: go back several steps', 'Historik: gå flere trin tilbage'), onclick: (e) => Pn.history(e.currentTarget) }, icon('history', 16));
@@ -747,7 +748,15 @@
      Projects live in this browser (LS 'projects'). A proposal opened from or saved as a project remembers it (doc.prj), so Gem
      saves over it without asking; until then Gem asks for a name, like Gem som. The work is autosaved all the time anyway;
      a project is a named copy to come back to. The top bar shows a dot while the open project has changes not saved in it. */
-  const projAll = () => LS.get('projects', []);
+  /* Projects belong to a shop (2026-11-26): each saved project has the shop it was saved in (shop) and the seller who saved it last
+     (by, the name only). Åbn, Seneste and the shop name in the top bar list the signed-in shop's projects; projects from other
+     shops on this PC are one click away. Projects from before have no shop: they are given the shop signed in when first listed. */
+  const projAll = () => {
+    const ps = LS.get('projects', []), shop = HP.shop();
+    if (shop && ps.some((p) => !p.shop)) { ps.forEach((p) => { if (!p.shop) p.shop = shop; }); LS.set('projects', ps); }
+    return ps;
+  };
+  const projShop = () => projAll().filter((p) => !HP.shop() || p.shop === HP.shop());
   const projOf = (id) => id && projAll().find((x) => x.id === id);
   const hasPlanSrc = () => store.doc.items.some((i) => i.kind === 'plan') && store.planSrc;
   let savedJSON = null, savedFor, savedAt = 0; // the open project as last saved (and when), to tell whether there are changes
@@ -783,7 +792,7 @@
     const all = projAll(), old = all.find((x) => x.id === id), doc = JSON.parse(JSON.stringify(store.doc)), ps = all.filter((x) => x.id !== id && (keepSameName || x.name !== name));
     // version history: the save before this one goes first in the list of the last 10 (drawings only; the floor plan image is the project's)
     const versions = old ? [{ date: old.date, doc: old.doc }, ...(old.versions || [])].filter((v) => JSON.stringify(Object.assign({}, v.doc, { prj: id })) !== JSON.stringify(doc)).slice(0, Pn.VERSIONS) : [];
-    const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null, versions };
+    const entry = { id, name, date: Date.now(), doc, plan: hasPlanSrc() ? store.planSrc : null, versions, shop: (old && old.shop) || HP.shop(), by: (HP.seller() && HP.seller().name) || (old && old.by) || '' };
     ps.push(entry);
     let ok = LS.set('projects', ps);
     while (!ok && entry.versions.length) { entry.versions.pop(); ok = LS.set('projects', ps); } // storage full: the oldest versions go first
@@ -853,23 +862,36 @@
     fr.readAsText(f); importIn.value = '';
   } });
   Pn.importFile = () => Pn.guard(() => { if (!importIn.isConnected) document.body.append(importIn); importIn.click(); });
-  Pn.recent = (n) => projAll().sort((a, b) => b.date - a.date).slice(0, n || 5);
+  // another shop: asks to save first when the open project has changes, then the sign-in starts again (the drawing stays)
+  Pn.switchShop = () => Pn.guard(() => { LS.del('shop'); LS.del('seller'); location.reload(); });
+  Pn.recent = (n) => projShop().sort((a, b) => b.date - a.date).slice(0, n || 5);
   HP.on('loaded', () => syncSaved());
 
+  // the projects of the signed-in shop, with the shop at the top and Skift butik; other shops' projects on this PC behind a toggle
   Pn.projects = () => {
-    const list = h('.projlist');
+    const list = h('.projlist'), sp = HP.shopProfile();
+    let others = false;
+    const otherCount = () => projAll().filter((p) => HP.shop() && p.shop !== HP.shop()).length;
+    const shopName = (no) => HP.shopProfile(no).name || t('Shop ', 'Butik ') + no;
+    const head = h('.proj-shop', null, h('span.proj-shop-ic', null, icon('store', 16)),
+      h('.pinfo', null, h('b', null, sp.name || (HP.shop() ? t('Shop ', 'Butik ') + HP.shop() : t('No shop', 'Ingen butik'))), h('.psub', null, (HP.shop() ? t('Shop ', 'Butik ') + HP.shop() + ' · ' : '') + (HP.seller() ? HP.seller().name : ''))),
+      h('button.btn.sm', { onclick: () => { close(); Pn.switchShop(); } }, icon('rotate', 13), t('Change shop', 'Skift butik')));
+    const otherBtn = h('button.linkbtn');
     function draw() {
       list.textContent = '';
-      const ps = projAll();
-      if (!ps.length) list.append(h('.empty', null, t('No saved projects in this browser yet.', 'Ingen gemte projekter i denne browser endnu.')));
+      const ps = others ? projAll() : projShop(), n = otherCount();
+      otherBtn.hidden = !n; otherBtn.textContent = others ? t('Show only this shop', 'Vis kun denne butik') : t('Projects from other shops on this PC ({})', 'Projekter fra andre butikker på denne PC ({})').replace('{}', n);
+      if (!ps.length) list.append(h('.empty', null, t('No saved projects for this shop in this browser yet.', 'Ingen gemte projekter for denne butik i denne browser endnu.')));
       ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj' + (p.id === store.doc.prj ? '.cur' : ''), null,
-        h('.pinfo', null, h('.pname', null, p.name), h('.psub', null, when(p.date) + ' · ' + nProducts(p.doc) + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
+        h('.pinfo', null, h('.pname', null, p.name, others && p.shop !== HP.shop() ? h('span.ptag', null, shopName(p.shop)) : null),
+          h('.psub', null, when(p.date) + (p.by ? ' · ' + p.by : '') + ' · ' + nProducts(p.doc) + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
         (p.versions || []).length ? h('button.btn.sm', { title: t('Version history', 'Versionshistorik'), onclick: () => { close(); Pn.versions(p); } }, icon('history', 14), String(p.versions.length + 1)) : null,
         p.id === store.doc.prj ? h('span.muted', null, t('open now', 'åben nu')) : h('button.btn.sm', { onclick: () => { Pn.openProject(p); close(); } }, t('Open', 'Åbn')),
         h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => HP.confirm(t('Delete the project "{}"?', 'Slet projektet "{}"?').replace('{}', p.name), t('Delete', 'Slet'), () => { LS.set('projects', projAll().filter((x) => x.id !== p.id)); if (p.id === store.doc.prj) { delete store.doc.prj; syncSaved(); store.commit(); } draw(); }) }, icon('trash', 14)))));
     }
+    otherBtn.onclick = () => { others = !others; draw(); };
     const close = HP.modal({ title: t('Open project', 'Åbn projekt'), size: 'md',
-      body: [list, h('p.muted', null, t('Projects are stored in this browser on this PC. Use Export to move a proposal to another PC or keep a backup. Your work is also autosaved continuously.', 'Projekter gemmes i denne browser på denne PC. Brug Eksportér for at flytte et tilbud til en anden PC eller tage en sikkerhedskopi. Dit arbejde gemmes også løbende af sig selv.'))],
+      body: [head, list, otherBtn, h('p.muted', null, t('Projects are stored in this browser on this PC. Use Export to move a proposal to another PC or keep a backup. Your work is also autosaved continuously.', 'Projekter gemmes i denne browser på denne PC. Brug Eksportér for at flytte et tilbud til en anden PC eller tage en sikkerhedskopi. Dit arbejde gemmes også løbende af sig selv.'))],
       foot: [h('button.btn', { onclick: () => { close(); Pn.saveAs(); } }, icon('download', 14), store.doc.prj ? t('Save as…', 'Gem som…') : t('Save current…', 'Gem nuværende…')),
         h('button.btn', { onclick: () => { close(); Pn.importFile(); } }, icon('upload', 14), t('Import file', 'Importér fil')),
         h('button.btn', { onclick: Pn.exportFile }, icon('download', 14), t('Export file', 'Eksportér fil'))] });
@@ -1343,7 +1365,7 @@
     drawAdmin();
     const closeSettings = HP.modal({ title: t('Settings', 'Indstillinger'), size: 'md', onClose: () => { if (HP.isAdmin()) saveGh(); },
       body: [h('h3', null, t('Shop account', 'Butikskonto')), Pn.shopForm(HP.shop(), () => HP.toast(t('Shop details saved', 'Butiksoplysninger gemt'), { kind: 'ok' })),
-        h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { LS.del('shop'); LS.del('seller'); location.reload(); } }, t('Switch shop', 'Skift butik'))),
+        h('.row', null, h('span.muted', null, t('Signed in as shop ', 'Logget ind som butik ') + HP.shop() + '.'), h('button.link', { onclick: () => { closeSettings(); Pn.switchShop(); } }, t('Switch shop', 'Skift butik'))),
         h('h3', null, t('Seller', 'Sælger')), HP.seller() ? Pn.sellerForm(HP.seller().no, () => HP.toast(t('Seller saved', 'Sælger gemt'), { kind: 'ok' })) : '',
         h('.row', null, h('button.link', { onclick: () => { closeSettings(); Pn.switchSeller(); } }, t('Switch seller', 'Skift sælger'))),
         HP.statsNotice && HP.config.analytics && HP.config.analytics.umami ? h('p.muted.stats-note', null, HP.statsNotice()) : null,

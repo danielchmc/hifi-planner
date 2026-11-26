@@ -969,5 +969,11 @@
   "You have changed an older version of \"{}\". Save it as the current version?": "Sie haben eine ältere Version von \"{}\" geändert. Als aktuelle Version speichern?",
   "Cover with QR code": "Deckblatt mit QR-Code",
   "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Zuerst ein Deckblatt mit der Summe und einem QR-Code, der das Angebot auf dem Handy des Kunden öffnet",
-  "Include": "Einschließen"
+  "Include": "Einschließen",
+  "The shop's projects": "Projekte des Geschäfts",
+  "No shop": "Kein Geschäft",
+  "Change shop": "Geschäft wechseln",
+  "Show only this shop": "Nur dieses Geschäft zeigen",
+  "Projects from other shops on this PC ({})": "Projekte anderer Geschäfte auf diesem PC ({})",
+  "No saved projects for this shop in this browser yet.": "Noch keine gespeicherten Projekte für dieses Geschäft in diesem Browser."
 };

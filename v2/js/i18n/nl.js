@@ -969,5 +969,11 @@
   "You have changed an older version of \"{}\". Save it as the current version?": "U hebt een oudere versie van \"{}\" gewijzigd. Opslaan als de huidige versie?",
   "Cover with QR code": "Voorblad met QR-code",
   "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Eerst een voorblad, met het totaal en een QR-code die de offerte op de telefoon van de klant opent",
-  "Include": "Meenemen"
+  "Include": "Meenemen",
+  "The shop's projects": "Projecten van de winkel",
+  "No shop": "Geen winkel",
+  "Change shop": "Winkel wisselen",
+  "Show only this shop": "Alleen deze winkel tonen",
+  "Projects from other shops on this PC ({})": "Projecten van andere winkels op deze pc ({})",
+  "No saved projects for this shop in this browser yet.": "Nog geen opgeslagen projecten voor deze winkel in deze browser."
 };

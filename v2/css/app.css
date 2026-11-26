@@ -1466,3 +1466,13 @@ html[data-theme="dark"] .share-who.customer { background: #17321f; color: #8fd8a
    gap between the buttons and between the cards */
 .form.send { display: flex; flex-direction: column; gap: 12px; }
 .form.send > * { margin: 0; }
+/* the shop's name in the top bar is a button (the shop's projects) */
+button.tb-crumb { border: 0; background: none; padding: 3px 6px; margin-right: -2px; border-radius: var(--r-sm); font: inherit; font-size: 13px; color: var(--muted); cursor: pointer; }
+button.tb-crumb:hover { background: var(--panel2); color: var(--fg); }
+button.tb-crumb::after { color: var(--muted); }
+/* Åbn projekt: the shop at the top, with Skift butik */
+.proj-shop { display: flex; align-items: center; gap: 12px; padding: 10px 12px; margin-bottom: 12px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--panel2); }
+.proj-shop-ic { display: grid; place-items: center; width: 34px; height: 34px; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); color: var(--accent); flex: none; }
+.proj-shop .pinfo { flex: 1; min-width: 0; }
+.proj-shop .pinfo b { display: block; font-size: 14px; }
+.proj-shop + .projlist + .linkbtn { margin-top: 10px; font-size: 12.5px; }

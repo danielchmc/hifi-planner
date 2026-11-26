@@ -969,5 +969,11 @@
   "You have changed an older version of \"{}\". Save it as the current version?": "Olet muuttanut projektin \"{}\" vanhempaa versiota. Tallennetaanko se nykyiseksi versioksi?",
   "Cover with QR code": "Kansilehti QR-koodilla",
   "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Ensin kansilehti, jossa summa ja QR-koodi, joka avaa tarjouksen asiakkaan puhelimessa",
-  "Include": "Sisällytä"
+  "Include": "Sisällytä",
+  "The shop's projects": "Myymälän projektit",
+  "No shop": "Ei myymälää",
+  "Change shop": "Vaihda myymälää",
+  "Show only this shop": "Näytä vain tämä myymälä",
+  "Projects from other shops on this PC ({})": "Muiden myymälöiden projektit tällä koneella ({})",
+  "No saved projects for this shop in this browser yet.": "Tälle myymälälle ei ole vielä tallennettuja projekteja tässä selaimessa."
 };

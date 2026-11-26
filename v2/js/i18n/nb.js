@@ -969,5 +969,11 @@
   "You have changed an older version of \"{}\". Save it as the current version?": "Du har endret en eldre versjon av \"{}\". Lagre den som den gjeldende versjonen?",
   "Cover with QR code": "Forside med QR-kode",
   "Cover page first, with the total and a QR code that opens the proposal on the customer’s phone": "Forside først, med totalen og en QR-kode som åpner tilbudet på kundens mobil",
-  "Include": "Ta med"
+  "Include": "Ta med",
+  "The shop's projects": "Butikkens prosjekter",
+  "No shop": "Ingen butikk",
+  "Change shop": "Bytt butikk",
+  "Show only this shop": "Vis bare denne butikken",
+  "Projects from other shops on this PC ({})": "Prosjekter fra andre butikker på denne PC-en ({})",
+  "No saved projects for this shop in this browser yet.": "Ingen lagrede prosjekter for denne butikken i denne nettleseren ennå."
 };
