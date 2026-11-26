@@ -122,57 +122,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENSB01WMX får stor ros for den stabile og pålidelige vægmontering samt den præcise pasform. Emballage, medfølgende tilbehør og levering vurderes også positivt, mens soundbaren beskrives som varm, kraftfuld, punchy og imponerende omsluttende. Det gennemførte design og den solide konstruktion gør produktet til en klar anbefaling.",
+   "summary": "SENSB01WMX får stor ros for stabil og pålidelig montering, præcis pasform, enkel håndtering og hurtig levering. Det komplette tilbehør og den gode stand bidrager yderligere til den positive oplevelse. En begejstret vurdering af soundbaren beskriver også en varm, kraftfuld og omsluttende lyd, mens den øvrige feedback fokuserer på vægbeslaget.",
    "headlines": {
-    "stable and reliable wall mounting": {
-     "sentimentAnalysis": "Vægbeslaget roses for den faste montering, pålidelige funktion og solide konstruktion.",
+    "sturdy and reliable wall mounting": {
+     "sentimentAnalysis": "Beslaget roses for sin fremragende stabilitet og pålidelige funktion.",
      "simpleTitle": "Stabil og pålidelig vægmontering",
      "bias": "positive",
-     "key": "stable_mounting",
-     "groupId": "7423f9ca-61db-458f-9377-4ec5b78d7aed"
+     "key": "mounting",
+     "groupId": "85c9b9a6-53d1-40be-b75d-80837ca221d7"
     },
-    "fast delivery": {
-     "sentimentAnalysis": "Leveringen beskrives som hurtig og pålidelig.",
-     "simpleTitle": "Hurtig levering",
+    "accurate fit and complete accessories": {
+     "sentimentAnalysis": "Produktet værdsættes for den perfekte pasform og det komplette tilbehør.",
+     "simpleTitle": "Præcis pasform og komplet tilbehør",
      "bias": "positive",
-     "key": "fast_delivery",
-     "groupId": "43f8eecd-c896-4903-a010-802a020b11e4"
+     "key": "mounting",
+     "groupId": "85c9b9a6-53d1-40be-b75d-80837ca221d7"
     },
-    "complete packaging and accessories": {
-     "sentimentAnalysis": "Emballage, instruktioner og medfølgende tilbehør vurderes som komplet og godt præsenteret.",
-     "simpleTitle": "Komplet emballage og tilbehør",
+    "fast and dependable delivery": {
+     "sentimentAnalysis": "Leveringen beskrives konsekvent som hurtig og pålidelig.",
+     "simpleTitle": "Hurtig og pålidelig levering",
      "bias": "positive",
-     "key": "complete_package",
-     "groupId": "23c5fda5-c56b-4f31-9030-cf54f307a860"
+     "key": "delivery",
+     "groupId": "ce6e4469-93d4-480c-b8b6-4e1631bb6be0"
     }
    },
    "grouping": {
-    "7423f9ca-61db-458f-9377-4ec5b78d7aed": {
-     "title": "Vægmontering",
-     "id": "7423f9ca-61db-458f-9377-4ec5b78d7aed",
+    "85c9b9a6-53d1-40be-b75d-80837ca221d7": {
+     "title": "Montering og pasform",
+     "id": "85c9b9a6-53d1-40be-b75d-80837ca221d7",
      "references": [
       "70fac847-8bfe-47f6-865c-1b4e6f4e783c",
       "09373b3d-5b53-4e8f-b305-ba4e3a0b5063",
-      "fbab87ac-8bfc-4972-967a-6cc68d5b4e99",
       "9cbb05a6-c6e9-4f59-b67f-2fc12b401016",
       "0f089bd5-1e00-4775-87b2-2bc7dc1ddf61",
       "c1d571c8-1db4-40f8-83b0-acf8ba800e0b"
      ]
     },
-    "43f8eecd-c896-4903-a010-802a020b11e4": {
+    "ce6e4469-93d4-480c-b8b6-4e1631bb6be0": {
      "title": "Levering",
-     "id": "43f8eecd-c896-4903-a010-802a020b11e4",
+     "id": "ce6e4469-93d4-480c-b8b6-4e1631bb6be0",
      "references": [
       "685cc665-2a91-4a6b-91a5-9ef117808288",
       "fbab87ac-8bfc-4972-967a-6cc68d5b4e99"
-     ]
-    },
-    "23c5fda5-c56b-4f31-9030-cf54f307a860": {
-     "title": "Emballage og tilbehør",
-     "id": "23c5fda5-c56b-4f31-9030-cf54f307a860",
-     "references": [
-      "09373b3d-5b53-4e8f-b305-ba4e3a0b5063",
-      "0f089bd5-1e00-4775-87b2-2bc7dc1ddf61"
      ]
     }
    },

@@ -237,7 +237,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "21,5 x 22,2 x 7,5 cm (bredde x højde x dybde)"
+        "value": "21,5 x 22,15 x 7,5 cm (bredde x højde x dybde)"
        },
        {
         "term": "Mål (produkt)",
@@ -255,8 +255,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 643,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 554,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -405,7 +405,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 326,
+     "availableQuantity": 308,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -612,69 +612,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHDB630 får bred ros for en usædvanligt klar, neutral, detaljeret og meget justerbar lyd med en varm, rummelig og audiofil karakter efter behov. Den medfølgende USB-dongle, den omfattende EQ og den lange batteritid gør hovedtelefonerne alsidige til mobil, computer og kablet lytning. Komfort og ANC er generelt gode, men ørekopperne kan føles små eller varme, touchbetjeningen og firmwaren frustrerer nogle, og ANC’en når ikke altid de bedste Sony- eller Bose-modeller.",
+   "summary": "SENHDB630 leverer en usædvanligt klar, neutral og detaljeret lyd med et varmt og slagkraftigt fundament, stor rumfornemmelse og fremragende EQ-muligheder. Den medfølgende USB-C-dongle og de kablede muligheder giver en særligt fordybende lytteoplevelse i høj opløsning, mens batteritid og hverdagskomfort generelt er stærke. ANC er nyttig og ofte rost, men ikke konsekvent i særklasse, og touchbetjening, softwareproblemer og til tider små ørepuder forhindrer fuldkommenhed.",
    "headlines": {
-    "exceptional battery life and flexible connections": {
-     "sentimentAnalysis": "Anmeldelserne roser den meget lange batteritid og valget mellem Bluetooth, USB, dongle og analog tilslutning.",
-     "simpleTitle": "Fremragende batteritid og fleksible forbindelser",
-     "bias": "positive",
-     "key": "battery_connectivity",
-     "groupId": "05de14ed-5614-41c1-b87a-1fc73125de21"
-    },
-    "comfortable for long listening": {
-     "sentimentAnalysis": "Mange ejere beskriver en komfortabel og sikker pasform, der egner sig til lang tids lytning trods vægten.",
-     "simpleTitle": "Komfortable ved lang tids lytning",
-     "bias": "positive",
-     "key": "comfort",
-     "groupId": "57d2c11a-0cdc-4d69-b4b4-bfbd11a676cd"
-    },
-    "neutral, detailed and spacious sound": {
-     "sentimentAnalysis": "Anmeldelserne roser en balanceret, transparent og meget opløst gengivelse med god stereoperspektiv, rumfornemmelse og instrumentadskillelse.",
-     "simpleTitle": "Neutral, detaljeret og rummelig lyd",
+    "excellent EQ and high-resolution dongle connectivity": {
+     "sentimentAnalysis": "Appens parametriske EQ og den medfølgende BTD 700-dongle beskrives gentagne gange som usædvanligt kapable, fleksible og værdifulde til trådløs eller kablet lyd i høj kvalitet.",
+     "simpleTitle": "Fremragende EQ og højopløst dongle-forbindelse",
      "bias": "positive",
      "key": "sound",
-     "groupId": "5104f93d-2825-44f5-9f2b-a0de9afce2a3"
+     "groupId": "3002e45b-d7d4-451f-8890-7de6f76be2e4"
     },
-    "anc is solid but not class-leading": {
-     "sentimentAnalysis": "ANC’en anses generelt for effektiv og tilstrækkelig til pendling eller indendørs støj, men er svagere end hos førende Sony- og Bose-modeller.",
-     "simpleTitle": "ANC er solid, men ikke førende",
+    "comfortable for long listening, but earcups can feel tight or warm": {
+     "sentimentAnalysis": "De fleste kommentarer beskriver et behageligt design, der også kan bruges længe, mens store hoveder eller ører kan give problemer med begrænset plads, tryk og varme.",
+     "simpleTitle": "Komfortable ved lang tids brug, men ørepuderne kan føles trange eller varme",
      "bias": "meh",
-     "key": "noise_cancellation",
-     "groupId": "fd967ddf-a2c4-4857-b34a-5fb831e2d6a8"
+     "key": "comfort",
+     "groupId": "26c78862-e587-4aa8-ae46-b75ecec13b4a"
+    },
+    "neutral, detailed sound with impressive spatial clarity": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent en balanceret, transparent og meget detaljeret gengivelse med præcis placering og overbevisende rumfornemmelse.",
+     "simpleTitle": "Neutral og detaljeret lyd med imponerende rumfornemmelse",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "3002e45b-d7d4-451f-8890-7de6f76be2e4"
+    },
+    "long battery life supports everyday use": {
+     "sentimentAnalysis": "Batteriets udholdenhed fremhæves gentagne gange som en stor styrke, især ved lange sessioner og lang tid mellem opladninger.",
+     "simpleTitle": "Lang batteritid understøtter hverdagsbrug",
+     "bias": "positive",
+     "key": "battery",
+     "groupId": "1bc3baa1-c2bb-4b2c-96f2-826419532c66"
+    },
+    "anc is effective but not consistently class-leading": {
+     "sentimentAnalysis": "ANC håndterer konstant baggrundsstøj og pendling godt for mange, men flere sammenligninger placerer Sony eller Bose foran, og nogle oplever ustabil håndtering af vind eller pludselige lyde.",
+     "simpleTitle": "ANC er effektiv, men ikke konsekvent i særklasse",
+     "bias": "meh",
+     "key": "anc",
+     "groupId": "1155f9ed-da6b-4c5b-bc78-3ca3f897d95d"
     },
     "touch controls and software can be frustrating": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer følsomme touchbevægelser, upålidelig registrering, forbindelse eller firmware samt for komplekse kontroller.",
-     "simpleTitle": "Touchbetjening og software kan frustrere",
+     "sentimentAnalysis": "Flere anmeldelser kritiserer følsomme touchbevægelser, upraktisk betjeningslogik, ustabile forbindelser eller hovedregistrering samt appbegrænsninger trods stærke EQ-funktioner.",
+     "simpleTitle": "Touchbetjening og software kan være frustrerende",
      "bias": "negative",
-     "key": "app_eq",
-     "groupId": "2ee29201-94d7-4d39-8931-48d27d696bc2"
-    },
-    "parametric EQ and USB dongle add major versatility": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver nem adgang til højkvalitetscodecs og usædvanligt stærke EQ-muligheder til personlig tilpasning.",
-     "simpleTitle": "Parametrisk EQ og USB-dongle giver stor alsidighed",
-     "bias": "positive",
-     "key": "app_eq",
-     "groupId": "2ee29201-94d7-4d39-8931-48d27d696bc2"
-    },
-    "small or warm earcups limit comfort for some": {
-     "sentimentAnalysis": "Nogle anmeldelser nævner klæbrige eller varme puder samt for lidt plads til større ører eller hoveder.",
-     "simpleTitle": "Små eller varme ørekopper begrænser komforten for nogle",
-     "bias": "negative",
-     "key": "comfort",
-     "groupId": "57d2c11a-0cdc-4d69-b4b4-bfbd11a676cd"
-    },
-    "bass is controlled rather than boosted": {
-     "sentimentAnalysis": "Flere anmeldelser værdsætter den naturlige, ikke-dominerende tuning og bemærker, at ægte bas stadig er kraftfuld, når den findes i optagelsen.",
-     "simpleTitle": "Bassen er kontrolleret frem for fremhævet",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "5104f93d-2825-44f5-9f2b-a0de9afce2a3"
+     "key": "app_controls",
+     "groupId": "f4108694-1937-49dd-8153-4f2ccfed3787"
     }
    },
    "grouping": {
-    "5104f93d-2825-44f5-9f2b-a0de9afce2a3": {
+    "3002e45b-d7d4-451f-8890-7de6f76be2e4": {
      "title": "Lydkvalitet",
-     "id": "5104f93d-2825-44f5-9f2b-a0de9afce2a3",
+     "id": "3002e45b-d7d4-451f-8890-7de6f76be2e4",
      "references": [
       "1991288a-c774-46e4-9a3b-e5763ee53ea7",
       "d1706f43-c97f-41b2-9d0c-2fdfa2d02906",
@@ -703,8 +689,11 @@
       "39e8c785-7ba1-418c-b680-eb44e1865139",
       "f4d5b7d0-195a-4065-99fb-e66b65474cc4",
       "9eeaa616-0e5d-42eb-8f60-914a47f19f11",
-      "e1201fd2-84d1-430a-9153-4969e3b68c4c",
       "f5ba417d-0eb7-4d0b-bcf5-b5aed40551ff",
+      "d3c580de-4cff-486c-98b1-987b33d16e4e",
+      "e5591cfc-576c-401e-b1ae-4c73791222b0",
+      "3a8fd583-1483-45c5-bd72-569658653e28",
+      "e005e847-d278-4822-8d70-626de512cae5",
       "d6dcf1fe-3a2d-4291-9a47-e9efd95f667f",
       "da990a0f-02fe-401e-bc76-f457f77d53f3",
       "adad84cb-d628-4906-ae10-ec5c49e35cf6",
@@ -717,7 +706,6 @@
       "4a7e3e85-61ec-47bd-9cfc-754b729f14e3",
       "e77fce83-58ee-4013-9d67-2d79e4008cdc",
       "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
-      "ee5118f8-cc93-4d47-bbdb-a7fbd84985fa",
       "0f320e8e-9cd9-41d5-b09b-27c0d4f8312e",
       "6de8e597-d931-4fc5-ae59-91d59088a1fc",
       "df1649b1-6504-43cf-a0f9-9854ca498170",
@@ -725,91 +713,39 @@
       "b3e5fa5e-78da-4ce1-b29a-c7118f40dde5"
      ]
     },
-    "2ee29201-94d7-4d39-8931-48d27d696bc2": {
-     "title": "App og equalizer",
-     "id": "2ee29201-94d7-4d39-8931-48d27d696bc2",
+    "f4108694-1937-49dd-8153-4f2ccfed3787": {
+     "title": "App og betjening",
+     "id": "f4108694-1937-49dd-8153-4f2ccfed3787",
      "references": [
       "d1706f43-c97f-41b2-9d0c-2fdfa2d02906",
       "746f7b9d-9fb8-49b4-adb3-4144107a9899",
-      "90ff6bce-6be1-4fee-806b-a69b68e5a933",
       "3960e3bc-a8f1-4387-aea3-7316dbdf324b",
+      "90ff6bce-6be1-4fee-806b-a69b68e5a933",
       "98510b8e-a756-4d1f-b2fc-3bded7b4869b",
       "c3c7ca7f-33fa-41bf-9dd4-249550f400d9",
       "9244549a-eacd-486e-8679-df4cd554ddc9",
-      "8bd2590c-f230-4b17-8315-1ec23aa0cd56",
+      "b0a9a2b7-53b5-4df2-b329-ace4e866434c",
       "4d10b873-0dbc-4b72-9104-f93da73bc951",
-      "39e8c785-7ba1-418c-b680-eb44e1865139",
-      "f4d5b7d0-195a-4065-99fb-e66b65474cc4",
-      "da990a0f-02fe-401e-bc76-f457f77d53f3",
-      "5a901319-060d-4ef5-bccd-4fa5606aa601",
-      "99158ca0-69a5-4fdd-9a10-ba80183bb7af",
-      "eb88293f-172d-4ecf-bc58-b502b2f9b2a7",
-      "4a7e3e85-61ec-47bd-9cfc-754b729f14e3",
-      "e77fce83-58ee-4013-9d67-2d79e4008cdc",
-      "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
-      "4ade6e0c-b546-42cc-9553-659201cb05d0",
-      "b3e5fa5e-78da-4ce1-b29a-c7118f40dde5"
-     ]
-    },
-    "57d2c11a-0cdc-4d69-b4b4-bfbd11a676cd": {
-     "title": "Komfort og pasform",
-     "id": "57d2c11a-0cdc-4d69-b4b4-bfbd11a676cd",
-     "references": [
-      "d1706f43-c97f-41b2-9d0c-2fdfa2d02906",
-      "faaa6bb3-1d0b-4435-aa9d-48d574e4357d",
-      "f3425ee9-9b61-4bca-9036-abb341d3263d",
-      "90ff6bce-6be1-4fee-806b-a69b68e5a933",
-      "4cb5410f-348d-4323-84f9-4cea7fb53704",
-      "3960e3bc-a8f1-4387-aea3-7316dbdf324b",
-      "326f7f05-372f-400b-8054-993f9cb6aaf2",
-      "c90ca32e-0ac8-4ec6-b8f0-911460869875",
-      "8bd2590c-f230-4b17-8315-1ec23aa0cd56",
-      "f7514c0b-8c0d-4e5f-859c-9f6964d00430",
-      "cbfc1c7f-ddeb-4d7e-9f22-fe1062b3f3d0",
-      "4d10b873-0dbc-4b72-9104-f93da73bc951",
-      "f4d5b7d0-195a-4065-99fb-e66b65474cc4",
-      "da990a0f-02fe-401e-bc76-f457f77d53f3",
-      "adad84cb-d628-4906-ae10-ec5c49e35cf6",
-      "32518426-1d57-438b-9083-617cacbd4142",
-      "15074787-01b9-44c9-a4aa-a3db95aa09f3",
-      "abe795cc-b02f-41b0-b663-3126505835f7",
-      "f15db1a8-ecff-405c-a1a6-ee992f6179e0"
-     ]
-    },
-    "05de14ed-5614-41c1-b87a-1fc73125de21": {
-     "title": "Batteri og tilslutning",
-     "id": "05de14ed-5614-41c1-b87a-1fc73125de21",
-     "references": [
-      "1991288a-c774-46e4-9a3b-e5763ee53ea7",
-      "746f7b9d-9fb8-49b4-adb3-4144107a9899",
-      "f7333644-46da-4d0c-80d6-3c64c20c1088",
-      "222ae603-5a0c-4e4b-ab7e-f4b2511b5f0e",
-      "21588534-c7c2-4e37-99d5-56cd66e68546",
-      "9244549a-eacd-486e-8679-df4cd554ddc9",
-      "c90ca32e-0ac8-4ec6-b8f0-911460869875",
-      "e1201fd2-84d1-430a-9153-4969e3b68c4c",
       "39e8c785-7ba1-418c-b680-eb44e1865139",
       "a0436215-2aa8-4575-96da-29db0cd9f149",
       "e5591cfc-576c-401e-b1ae-4c73791222b0",
       "e005e847-d278-4822-8d70-626de512cae5",
+      "97a4bee7-c272-42cd-b656-aff8506834b8",
       "4996555a-1fa7-46cc-8b56-41fbd18afc1c",
-      "d6dcf1fe-3a2d-4291-9a47-e9efd95f667f",
-      "5a901319-060d-4ef5-bccd-4fa5606aa601",
-      "642a5fb2-4543-43d1-b5d5-f33c2fcd63f0",
-      "eb88293f-172d-4ecf-bc58-b502b2f9b2a7",
-      "abe795cc-b02f-41b0-b663-3126505835f7",
-      "b3e5fa5e-78da-4ce1-b29a-c7118f40dde5"
+      "4a7e3e85-61ec-47bd-9cfc-754b729f14e3",
+      "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
+      "4ade6e0c-b546-42cc-9553-659201cb05d0",
+      "abe795cc-b02f-41b0-b663-3126505835f7"
      ]
     },
-    "fd967ddf-a2c4-4857-b34a-5fb831e2d6a8": {
+    "1155f9ed-da6b-4c5b-bc78-3ca3f897d95d": {
      "title": "Støjreduktion",
-     "id": "fd967ddf-a2c4-4857-b34a-5fb831e2d6a8",
+     "id": "1155f9ed-da6b-4c5b-bc78-3ca3f897d95d",
      "references": [
       "d1706f43-c97f-41b2-9d0c-2fdfa2d02906",
       "faaa6bb3-1d0b-4435-aa9d-48d574e4357d",
       "f7333644-46da-4d0c-80d6-3c64c20c1088",
       "326f7f05-372f-400b-8054-993f9cb6aaf2",
-      "a2910eee-969d-4ee3-b1ce-f0c53bc10677",
       "2599b662-b451-4638-a7f8-ac031e7a20d0",
       "c3c7ca7f-33fa-41bf-9dd4-249550f400d9",
       "c90ca32e-0ac8-4ec6-b8f0-911460869875",
@@ -818,10 +754,47 @@
       "8bd2590c-f230-4b17-8315-1ec23aa0cd56",
       "e005e847-d278-4822-8d70-626de512cae5",
       "e1201fd2-84d1-430a-9153-4969e3b68c4c",
-      "da990a0f-02fe-401e-bc76-f457f77d53f3",
       "eb88293f-172d-4ecf-bc58-b502b2f9b2a7",
-      "ee5118f8-cc93-4d47-bbdb-a7fbd84985fa",
+      "da990a0f-02fe-401e-bc76-f457f77d53f3",
+      "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
       "4ade6e0c-b546-42cc-9553-659201cb05d0"
+     ]
+    },
+    "26c78862-e587-4aa8-ae46-b75ecec13b4a": {
+     "title": "Komfort og pasform",
+     "id": "26c78862-e587-4aa8-ae46-b75ecec13b4a",
+     "references": [
+      "d1706f43-c97f-41b2-9d0c-2fdfa2d02906",
+      "f3425ee9-9b61-4bca-9036-abb341d3263d",
+      "90ff6bce-6be1-4fee-806b-a69b68e5a933",
+      "4cb5410f-348d-4323-84f9-4cea7fb53704",
+      "326f7f05-372f-400b-8054-993f9cb6aaf2",
+      "a2910eee-969d-4ee3-b1ce-f0c53bc10677",
+      "c90ca32e-0ac8-4ec6-b8f0-911460869875",
+      "8bd2590c-f230-4b17-8315-1ec23aa0cd56",
+      "cbfc1c7f-ddeb-4d7e-9f22-fe1062b3f3d0",
+      "f7514c0b-8c0d-4e5f-859c-9f6964d00430",
+      "32518426-1d57-438b-9083-617cacbd4142",
+      "da990a0f-02fe-401e-bc76-f457f77d53f3",
+      "adad84cb-d628-4906-ae10-ec5c49e35cf6",
+      "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
+      "15074787-01b9-44c9-a4aa-a3db95aa09f3",
+      "abe795cc-b02f-41b0-b663-3126505835f7"
+     ]
+    },
+    "1bc3baa1-c2bb-4b2c-96f2-826419532c66": {
+     "title": "Batteritid",
+     "id": "1bc3baa1-c2bb-4b2c-96f2-826419532c66",
+     "references": [
+      "c90ca32e-0ac8-4ec6-b8f0-911460869875",
+      "9244549a-eacd-486e-8679-df4cd554ddc9",
+      "4d10b873-0dbc-4b72-9104-f93da73bc951",
+      "e1201fd2-84d1-430a-9153-4969e3b68c4c",
+      "e005e847-d278-4822-8d70-626de512cae5",
+      "da990a0f-02fe-401e-bc76-f457f77d53f3",
+      "f15db1a8-ecff-405c-a1a6-ee992f6179e0",
+      "abe795cc-b02f-41b0-b663-3126505835f7",
+      "b3e5fa5e-78da-4ce1-b29a-c7118f40dde5"
      ]
     }
    },

@@ -211,8 +211,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 7,
-     "availableQuantity": 278,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 229,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -289,48 +289,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENIE200 leverer en begejstrende hi-fi-oplevelse med varm, punchy og meget detaljeret lyd, især sammen med en egnet DAC eller hovedtelefonforstærker. Komfort og stabilitet er fremragende for mange lyttere, også under træning og lang tids brug, mens den passive isolering virker naturligt. De største ulemper er en til tider lidt basfattig gengivelse, besværlig tilpasning og valg af ørepropper samt et mikrofonisk og upraktisk kabel.",
+   "summary": "SENIE200 leverer en usædvanligt klar, detaljeret og medrivende lyd til prisen og kan ofte måle sig med langt dyrere trådløse hovedtelefoner og store hovedtelefoner. Komfort og stabilitet er generelt fremragende ved lange lytteperioder og aktiv brug, selv om den rette tætning kan kræve tålmodighed og passende ørepropper. En god DAC eller hovedtelefonforstærker får den bedste ydelse frem, mens det medfølgende kabel og enkelte pasformsvanskeligheder er de hyppigste kritikpunkter.",
    "headlines": {
-    "detailed, balanced and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, afbalanceret, rummelig og meget detaljeret gengivelse på tværs af genrer, ofte sammenlignet positivt med trådløse og dyrere hovedtelefoner.",
-     "simpleTitle": "Detaljeret, afbalanceret og omsluttende lyd",
+    "stable and comfortable for long use": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver et sikkert og ubemærket komfortniveau under sport, søvn og lang tids lytning, også når man ligger på en pude.",
+     "simpleTitle": "Stabile og komfortable ved lang tids brug",
      "bias": "positive",
-     "key": "detailed-balanced-sound",
-     "groupId": "946baad7-d2c3-4278-97ae-f228ba93d5e5"
+     "key": "fit",
+     "groupId": "8455fcae-6218-48cc-9e4b-48c6d61c592f"
     },
-    "comfortable and secure once fitted": {
-     "sentimentAnalysis": "Når den rigtige placering og de rette ørepropper er fundet, rapporterer anmeldelserne godt hold, lav træthed og komfort under træning, søvn og lang tids lytning.",
-     "simpleTitle": "Komfortabel og sikker efter tilpasning",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser ofte den klare, afbalancerede, detaljerede og dynamiske gengivelse, som kan måle sig med langt dyrere hovedtelefoner.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "comfortable-secure-fit",
-     "groupId": "8d853952-82b9-44bf-b691-1ea2e0df80e0"
+     "key": "sound",
+     "groupId": "86f523fe-559a-4df3-9b79-57dfde5a7524"
     },
-    "fit and tip selection can be frustrating": {
-     "sentimentAnalysis": "Flere anmeldelser nævner en tilvænningsperiode eller problemer med at finde en pålidelig tætning; de medfølgende ørepropper og ørebøjler fungerer ikke lige godt for alle lyttere.",
-     "simpleTitle": "Pasform og valg af ørepropper kan være frustrerende",
+    "bass can sound light without the right seal": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en tilbageholdende eller manglende bas, som oftest hænger sammen med valg af øreprop, pasform eller utilstrækkelig tætning; equalizer eller modifikationer kan hjælpe.",
+     "simpleTitle": "Bassen kan virke tynd uden den rette tætning",
      "bias": "negative",
-     "key": "difficult-fit",
-     "groupId": "8d853952-82b9-44bf-b691-1ea2e0df80e0"
+     "key": "sound",
+     "groupId": "86f523fe-559a-4df3-9b79-57dfde5a7524"
     },
-    "bass can sound too light": {
-     "sentimentAnalysis": "Flere anmeldelser oplever basområdet som lettere eller tyndere end forventet; tætning, equalizer eller en modifikation kan forbedre bassen for nogle lyttere, mens én anmeldelse fandt den samlede tuning uacceptabel.",
-     "simpleTitle": "Bassen kan lyde for tynd",
+    "finding the right fit can take effort": {
+     "sentimentAnalysis": "Nogle anmeldelser oplever, at isætning, udtagning og valg af ørepropper er besværligt; ørebøjlerne og det begrænsede udvalg af medfølgende propper gør en pålidelig tætning vanskelig for visse ører.",
+     "simpleTitle": "Det kan kræve arbejde at finde den rette pasform",
      "bias": "negative",
-     "key": "light-bass",
-     "groupId": "946baad7-d2c3-4278-97ae-f228ba93d5e5"
+     "key": "fit",
+     "groupId": "8455fcae-6218-48cc-9e4b-48c6d61c592f"
     },
-    "cable noise and handling are weak points": {
-     "sentimentAnalysis": "Det medfølgende kabel kritiseres gentagne gange for at overføre bevægelsesstøj, filtre let eller være upraktisk, selv om én anmeldelse ikke oplever kabelproblemer.",
-     "simpleTitle": "Kabelstøj og håndtering er svage punkter",
+    "a DAC or amplifier improves the experience": {
+     "sentimentAnalysis": "Flere anmeldelser anbefaler at kombinere IEM'erne med en god DAC eller hovedtelefonforstærker for at opnå den bedste lydstyrke, bas, detaljegengivelse og helhedsoplevelse.",
+     "simpleTitle": "En DAC eller forstærker forbedrer oplevelsen",
+     "bias": "positive",
+     "key": "amplification",
+     "groupId": "2d840c13-adae-471c-945f-aa5df42d8dcf"
+    },
+    "the cable transmits noticeable handling noise": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer standardkablet for at overføre friktions- og bevægelsesstøj, og nogle overvejer et andet kabel.",
+     "simpleTitle": "Kablet overfører tydelig håndteringsstøj",
      "bias": "negative",
-     "key": "cable-issues",
-     "groupId": "bfb45a35-155a-4778-9d0b-1d638f7428b3"
+     "key": "cable",
+     "groupId": "728f746a-b1ec-4910-8947-b1b1e3a91788"
     }
    },
    "grouping": {
-    "946baad7-d2c3-4278-97ae-f228ba93d5e5": {
+    "86f523fe-559a-4df3-9b79-57dfde5a7524": {
      "title": "Lydkvalitet",
-     "id": "946baad7-d2c3-4278-97ae-f228ba93d5e5",
+     "id": "86f523fe-559a-4df3-9b79-57dfde5a7524",
      "references": [
       "d17a5d2d-2f06-4296-9b5d-9819c2d9d91a",
       "88be756f-cb43-4858-bc08-f5a371202262",
@@ -338,7 +345,6 @@
       "a2bb29f5-c3e8-4190-b21c-0c9ec146e4f5",
       "4d3dad62-4b79-4616-8fad-6dec1a8673ee",
       "4948bff0-0145-47be-be42-28b6637396f1",
-      "ad50a2af-086c-40bb-922c-cc2ffe81f23b",
       "b775dddb-fd96-4c86-978f-da04723fe838",
       "77ef3d38-0131-4b58-8210-02890db2c5da",
       "61dd868f-9ea9-4a59-b857-4412b3785ce7",
@@ -346,6 +352,7 @@
       "f72fba8a-9586-4272-bf32-02509a6125d4",
       "45509a82-08b4-4f4e-b71a-ded754132744",
       "a73ea72f-19b4-48af-a693-889a26c91a88",
+      "26bd9c47-833b-46c6-a2dc-29e0c6c63ac9",
       "0962059f-73ee-4c04-b4e7-444d7439ae0e",
       "eae98c0e-e360-4007-940a-cf917e8fdee2",
       "455e5b47-334a-4954-9f39-f8ed74380caf",
@@ -357,15 +364,15 @@
       "115caab2-4935-44c6-9372-c78276b484ff",
       "98ecfd40-f05b-44c1-8723-d1d030a89882",
       "5deafd3a-ae11-44fd-9782-e65bad87a581",
-      "d6b05d9d-5de7-4791-8c87-5fa3e480a47f",
       "1498f29d-b0cd-4600-bba0-e7f41cf12d7e",
+      "d6b05d9d-5de7-4791-8c87-5fa3e480a47f",
       "00d7327c-6fde-4c6e-857a-3bc78470d6be",
       "adb47ab6-0180-471d-af92-076305f165b1"
      ]
     },
-    "8d853952-82b9-44bf-b691-1ea2e0df80e0": {
+    "8455fcae-6218-48cc-9e4b-48c6d61c592f": {
      "title": "Pasform og komfort",
-     "id": "8d853952-82b9-44bf-b691-1ea2e0df80e0",
+     "id": "8455fcae-6218-48cc-9e4b-48c6d61c592f",
      "references": [
       "2349a90f-a65a-41e2-8a64-4b2c1a08d8ee",
       "96b3d1d1-5f37-4b9f-b945-a4669dcfa77a",
@@ -381,18 +388,16 @@
       "a73ea72f-19b4-48af-a693-889a26c91a88",
       "26bd9c47-833b-46c6-a2dc-29e0c6c63ac9",
       "73f31efa-d6f9-426a-b703-dacd432183ab",
-      "2e6ec04b-2807-4d9e-85f7-0a67a7b042ba",
-      "115caab2-4935-44c6-9372-c78276b484ff",
-      "98ecfd40-f05b-44c1-8723-d1d030a89882",
-      "d60f6016-e977-4bdf-a77e-4fb45136d334",
-      "cae7ef03-424a-41cf-aa92-588d50e9fb70",
+      "c8fe7e91-929f-4171-b4f2-6dddfdf6436d",
+      "d6b05d9d-5de7-4791-8c87-5fa3e480a47f",
       "00d7327c-6fde-4c6e-857a-3bc78470d6be",
-      "adb47ab6-0180-471d-af92-076305f165b1"
+      "adb47ab6-0180-471d-af92-076305f165b1",
+      "2e6ec04b-2807-4d9e-85f7-0a67a7b042ba"
      ]
     },
-    "bfb45a35-155a-4778-9d0b-1d638f7428b3": {
+    "728f746a-b1ec-4910-8947-b1b1e3a91788": {
      "title": "Kabel",
-     "id": "bfb45a35-155a-4778-9d0b-1d638f7428b3",
+     "id": "728f746a-b1ec-4910-8947-b1b1e3a91788",
      "references": [
       "ad50a2af-086c-40bb-922c-cc2ffe81f23b",
       "c525fe6b-7e74-4bd5-b793-b4a4f301bab1",
@@ -402,16 +407,29 @@
       "00d7327c-6fde-4c6e-857a-3bc78470d6be",
       "aa573b34-6962-4e80-bbf8-67688bd8f757"
      ]
+    },
+    "2d840c13-adae-471c-945f-aa5df42d8dcf": {
+     "title": "DAC og forstærkning",
+     "id": "2d840c13-adae-471c-945f-aa5df42d8dcf",
+     "references": [
+      "d17a5d2d-2f06-4296-9b5d-9819c2d9d91a",
+      "77ef3d38-0131-4b58-8210-02890db2c5da",
+      "37b6be33-0fa5-404e-aedc-ff896eb23732",
+      "a73ea72f-19b4-48af-a693-889a26c91a88",
+      "2e6ec04b-2807-4d9e-85f7-0a67a7b042ba",
+      "98ecfd40-f05b-44c1-8723-d1d030a89882",
+      "1498f29d-b0cd-4600-bba0-e7f41cf12d7e"
+     ]
     }
    },
-   "rating": 4.33734939759036,
-   "count": 83,
+   "rating": 4.33333333333333,
+   "count": 84,
    "reviewCount": 41,
    "distribution": {
     "1": 3,
     "2": 2,
     "3": 7,
-    "4": 23,
+    "4": 24,
     "5": 48
    }
   },

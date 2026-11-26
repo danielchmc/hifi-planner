@@ -517,48 +517,48 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette er et imponerende TV med varm, naturlig og særdeles detaljeret billedkvalitet, som giver en kraftfuld og medrivende seeroplevelse selv i lyse rum. Den matte skærm håndterer refleksioner fremragende, mens det bemærkelsesværdigt tynde og velbyggede design understreger det eksklusive indtryk. Smart-funktioner og menuer er mindre gennemarbejdede, men det fremragende billede og den gode værdi gør helheden meget overbevisende.",
+   "summary": "Dette TV får stor ros for et imponerende og kraftfuldt billede med levende, men naturlige farver og en medrivende biograffornemmelse. Den matte skærm håndterer lyse rum og refleksioner fremragende, mens det bemærkelsesværdigt tynde og velbyggede design giver ekstra appel. Smart-funktioner og menuer er mindre gennemarbejdede, men samlet set leverer TV'et en fremragende billedoplevelse og rigtig god værdi.",
    "headlines": {
-    "outstanding picture quality": {
-     "sentimentAnalysis": "TV'et leverer særdeles skarpe, imponerende og tilfredsstillende billeder, og naturlige farver kan opnås efter justering.",
-     "simpleTitle": "Fremragende billedkvalitet",
+    "stunning, high-quality picture": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent billedet som fremragende, fantastisk, skarpt og overlegent, og naturlige farver kan opnås gennem justeringer.",
+     "simpleTitle": "Imponerende billedkvalitet",
      "bias": "positive",
-     "key": "picture-quality",
-     "groupId": "26660ab2-7e04-4515-9b01-88d7277a543a"
+     "key": "picture_quality",
+     "groupId": "75b38139-7649-4bfa-87f0-4b03720dd167"
     },
-    "excellent reflection control": {
-     "sentimentAnalysis": "Den matte skærm dæmper refleksioner bemærkelsesværdigt godt, så TV kan ses behageligt i dagslys selv med stærkt sollys eller mange vinduer.",
-     "simpleTitle": "Fremragende reflektionshåndtering",
+    "excellent reflection control in bright rooms": {
+     "sentimentAnalysis": "Den matte skærm roses for at filtrere eller fjerne refleksioner og bevare et synligt billede i kraftigt dagslys.",
+     "simpleTitle": "Fremragende refleksionskontrol i lyse rum",
      "bias": "positive",
-     "key": "anti-reflection",
-     "groupId": "e0d8585f-4e84-4055-a042-1bbb2649fbdb"
+     "key": "matte_screen",
+     "groupId": "e2a60f6e-e7e7-4e0e-96ab-b2b11eab04ab"
     },
-    "smart software feels less polished": {
-     "sentimentAnalysis": "Menuer, stemmefunktioner, låste indstillinger og afspilningskompatibilitet skaber lidt besvær trods den ellers stærke TV-oplevelse.",
-     "simpleTitle": "Smart-softwaren virker mindre gennemarbejdet",
+    "smart software and menus need refinement": {
+     "sentimentAnalysis": "Kritikken fokuserer på klodsede menuer, påtrængende eller ineffektiv AI, afspilningsforsinkelser samt låste eller besværlige indstillinger.",
+     "simpleTitle": "Smart-software og menuer trænger til forbedring",
      "bias": "negative",
-     "key": "smart-interface",
-     "groupId": "bcca689d-1117-4ddb-919a-d7f683105925"
+     "key": "smart_tv",
+     "groupId": "53760da2-6eb9-4046-a884-5d2773bd22f7"
     },
-    "strong value at the price": {
-     "sentimentAnalysis": "Produktet vurderes at levere fremragende funktioner og billedkvalitet i forhold til prisklassen.",
-     "simpleTitle": "God værdi til prisen",
+    "good value for the price": {
+     "sentimentAnalysis": "Anmeldelserne vurderer, at TV'et lever op til forventningerne og tilbyder fremragende ydelse i prisklassen.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "08fddd58-c54a-4b15-ae6c-fda0757c5876"
+     "groupId": "52197c4d-6290-4670-9eaf-4302488d84fd"
     },
-    "remarkably thin and well built": {
-     "sentimentAnalysis": "Det slanke og velbyggede kabinet giver et eksklusivt indtryk.",
-     "simpleTitle": "Bemærkelsesværdigt tyndt og velbygget",
+    "a thin, well-built design": {
+     "sentimentAnalysis": "TV'et roses specifikt for sin bemærkelsesværdigt tynde profil og solide konstruktion.",
+     "simpleTitle": "Tyndt og velbygget design",
      "bias": "positive",
-     "key": "design-build",
-     "groupId": "eb387a67-39d3-4816-97da-a56df07a25e2"
+     "key": "design",
+     "groupId": "19fe5ce4-a6ee-4bbe-ae5d-cc852fd10662"
     }
    },
    "grouping": {
-    "26660ab2-7e04-4515-9b01-88d7277a543a": {
+    "75b38139-7649-4bfa-87f0-4b03720dd167": {
      "title": "Billedkvalitet",
-     "id": "26660ab2-7e04-4515-9b01-88d7277a543a",
+     "id": "75b38139-7649-4bfa-87f0-4b03720dd167",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "aabf472f-bfa6-4192-8f65-b80a5a33f37c",
@@ -566,20 +566,16 @@
       "570763a9-ad38-4f6e-8b1b-a26c19f3d150",
       "06aa3722-12c2-4fca-b1e0-0cdd9e2e705e",
       "3853f912-ce18-4066-8893-e4c8fc6baf8e",
-      "d42f9ce9-1c36-4b4c-a58e-198deb9252c8",
       "86215f8e-bd38-4c54-9a89-676f2cd439c8",
       "b7f1831e-5645-4a73-876f-ca77d638d284",
       "6ff3fb5b-938f-4b76-a7b3-28fc973a05dd",
-      "4a6c4e2e-d89d-4aa6-895a-12cfe0ed476f",
-      "f249ba5f-bfe4-4a2f-a989-73a5631bc4bf",
       "e7eb81e9-1568-420a-a143-79f26fba79e7",
-      "b08bce03-2bd8-453f-a674-1ea1fb371232",
-      "0126c629-02ec-4708-89c9-de26ecc82ec9"
+      "b08bce03-2bd8-453f-a674-1ea1fb371232"
      ]
     },
-    "e0d8585f-4e84-4055-a042-1bbb2649fbdb": {
-     "title": "Refleksionshåndtering",
-     "id": "e0d8585f-4e84-4055-a042-1bbb2649fbdb",
+    "e2a60f6e-e7e7-4e0e-96ab-b2b11eab04ab": {
+     "title": "Mat skærm og refleksioner",
+     "id": "e2a60f6e-e7e7-4e0e-96ab-b2b11eab04ab",
      "references": [
       "3853f912-ce18-4066-8893-e4c8fc6baf8e",
       "c73f7c66-403c-46df-87af-f9e8605da573",
@@ -588,9 +584,9 @@
       "e21782d5-facd-4d46-82a0-eafd7a376d06"
      ]
     },
-    "bcca689d-1117-4ddb-919a-d7f683105925": {
-     "title": "Smart-grænseflade",
-     "id": "bcca689d-1117-4ddb-919a-d7f683105925",
+    "53760da2-6eb9-4046-a884-5d2773bd22f7": {
+     "title": "Smart-TV-software",
+     "id": "53760da2-6eb9-4046-a884-5d2773bd22f7",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "570763a9-ad38-4f6e-8b1b-a26c19f3d150",
@@ -598,18 +594,18 @@
       "795a8550-3662-4244-b4ce-6738e3483c1c"
      ]
     },
-    "08fddd58-c54a-4b15-ae6c-fda0757c5876": {
+    "52197c4d-6290-4670-9eaf-4302488d84fd": {
      "title": "Værdi for pengene",
-     "id": "08fddd58-c54a-4b15-ae6c-fda0757c5876",
+     "id": "52197c4d-6290-4670-9eaf-4302488d84fd",
      "references": [
       "82926deb-c392-4ade-a39f-4bbdcc00c8b1",
       "86215f8e-bd38-4c54-9a89-676f2cd439c8",
       "6ff3fb5b-938f-4b76-a7b3-28fc973a05dd"
      ]
     },
-    "eb387a67-39d3-4816-97da-a56df07a25e2": {
+    "19fe5ce4-a6ee-4bbe-ae5d-cc852fd10662": {
      "title": "Design og konstruktion",
-     "id": "eb387a67-39d3-4816-97da-a56df07a25e2",
+     "id": "19fe5ce4-a6ee-4bbe-ae5d-cc852fd10662",
      "references": [
       "fea571af-1909-4c09-9fc9-ea8ff1722cf4",
       "795a8550-3662-4244-b4ce-6738e3483c1c"

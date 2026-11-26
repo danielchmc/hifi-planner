@@ -13587,7 +13587,7 @@
     "da": "Højtalerkabel"
    },
    "cat": "/kabler/hojtaler-kabel/",
-   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl10bk/",
+   "url": "/argon-audio-studie3-cable-hoejtalerkabel/argspastudie3cbl2bk/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -28238,7 +28238,7 @@
     "da": "Trådløse in-ear høretelefoner"
    },
    "cat": "/horetelefoner/in-ear/",
-   "url": "/bowers--wilkins-pi6-traadloese-in-ear-hoeretelefoner/bwpi6clgr/",
+   "url": "/bowers--wilkins-pi6-traadloese-in-ear-hoeretelefoner/bwpi6stgr/",
    "kind": "headphones",
    "scope": "diagram",
    "facets": {
@@ -28250,23 +28250,6 @@
    },
    "variants": [
     {
-     "sku": "BWPI6CLGR",
-     "label": "Grå",
-     "price": 1199,
-     "was": 1999,
-     "colorKey": "Grey",
-     "hex": "#dad9d5",
-     "ean": "0714346345823",
-     "url": "/bowers--wilkins-pi6-traadloese-in-ear-hoeretelefoner/bwpi6clgr/",
-     "img": "hk:d54a708f-b980-4d43-9825-4fcdd2cae7a3",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Vægt (kg)": "0,25",
-      "Vægt emballage (kg)": "0,29",
-      "Mål (emballage)": "9,5 x 5,5 x 13 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "BWPI6STGR",
      "label": "Grå",
      "price": 1199,
@@ -28277,6 +28260,23 @@
      "url": "/bowers--wilkins-pi6-traadloese-in-ear-hoeretelefoner/bwpi6stgr/",
      "img": "hk:3faf47a6-1dcd-4d6c-885e-38952babe18f",
      "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,25",
+      "Vægt emballage (kg)": "0,29",
+      "Mål (emballage)": "9,5 x 5,5 x 13 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "BWPI6CLGR",
+     "label": "Grå",
+     "price": 1199,
+     "was": 1999,
+     "colorKey": "Grey",
+     "hex": "#dad9d5",
+     "ean": "0714346345823",
+     "url": "/bowers--wilkins-pi6-traadloese-in-ear-hoeretelefoner/bwpi6clgr/",
+     "img": "hk:d54a708f-b980-4d43-9825-4fcdd2cae7a3",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "0,25",
       "Vægt emballage (kg)": "0,29",
@@ -31067,7 +31067,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -49084,7 +49084,7 @@
     "da": "TV-beslag"
    },
    "cat": "/tilbehor/tv-tilbehor/",
-   "url": "/essentials-tvb-micro-gap-09-tv-beslag/esstvbmicrogap09bk/",
+   "url": "",
    "kind": "mounting",
    "scope": "pricelist",
    "facets": {
@@ -49099,7 +49099,6 @@
      "was": 499,
      "colorKey": "Black",
      "ean": "5706957016921",
-     "url": "/essentials-tvb-micro-gap-09-tv-beslag/esstvbmicrogap09bk/",
      "img": "hk:1f38ce0b-cc9c-4a2f-ae91-594fbdec1840",
      "stock": "notInStockNonStockedItem",
      "specs": {
@@ -78223,7 +78222,7 @@
      "ean": "8806097212324",
      "url": "/samsung-qn90f-neo-qled-tv/samtq115qn90f/",
      "img": "hk:17d4b4a1-563d-4930-903d-b57c5a820af7",
-     "stock": "dropshippingInStock",
+     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
      "specs": {
       "HDMI": "2.1",
       "Antal HDMI 2.1 Indgange": "4x",
@@ -78311,7 +78310,7 @@
      "DALIRUBIKORE6"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQS90F",
@@ -78423,7 +78422,7 @@
      "BW703S3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQS90H",
@@ -78691,7 +78690,7 @@
      "ean": "8806099008116",
      "url": "/samsung-s90h-oled-tv/samtq83s90h/",
      "img": "hk:d4db5c4a-5c55-4ce9-a21d-2e727e9c2195",
-     "stock": "warehouseInStock",
+     "stock": "dropshippingInStock",
      "specs": {
       "Bluetooth ": "Ja",
       "Bluetooth version": "5.3",
@@ -78765,7 +78764,7 @@
      "BLSP431"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQS95F",
@@ -78881,7 +78880,7 @@
      "RACLARITY62"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQS95H",
@@ -79134,7 +79133,7 @@
      "BLSP530"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQS99H",
@@ -79391,7 +79390,7 @@
      "BLSPULSESUBPLUS"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTQXQ5F",
@@ -79477,7 +79476,7 @@
      "ARGFENRISA5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTUM72H",
@@ -79813,7 +79812,7 @@
      "DENHOMESOUNDBAR550"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTUM80H",
@@ -79841,7 +79840,7 @@
      "ean": "8806099009410",
      "url": "/samsung-m80h-mini-led-tv/samtu55m80h/",
      "img": "hk:db78bc42-87cb-41bf-92ef-f3d3bf2683f3",
-     "stock": "warehouseInStock",
+     "stock": "dropshippingInStock",
      "specs": {
       "Vægt (kg)": "14,2",
       "Vægt emballage (kg)": "14,5",
@@ -80063,7 +80062,7 @@
      "BLSP431"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMTUM90H",
@@ -80168,7 +80167,7 @@
      "DALISUBK14"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFA43X",
@@ -80235,7 +80234,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFA50X",
@@ -80261,7 +80260,7 @@
      "ean": "8806092123311",
      "url": "/samsung-the-frame---frame-50-2023-2024-tv-ramme/samvgscfa50tkb/",
      "img": "hk:3eac6ba1-771c-41a7-a0ec-90f49cf4e75e",
-     "stock": "warehouseInStock",
+     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
      "specs": {
       "Vægt (kg)": "0,37",
       "Vægt emballage (kg)": "0,91",
@@ -80302,7 +80301,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFF75X",
@@ -80372,7 +80371,7 @@
      "SAMTQLS03FW"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFF85X",
@@ -80413,7 +80412,7 @@
      "ean": "8806097238126",
      "url": "/samsung-the-frame-2025---frame-85-tv-ramme/samvgscff85bwb/",
      "img": "hk:3c763628-e66f-4207-b434-cddf70bac731",
-     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
+     "stock": "dropshippingInStock",
      "specs": {
       "Vægt (kg)": "0,73",
       "Vægt emballage (kg)": "1,51",
@@ -80442,7 +80441,7 @@
      "SAMTQLS03FW"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFH",
@@ -80473,7 +80472,7 @@
       "Vægt (kg)": "0,43",
       "Vægt emballage (kg)": "1,8",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "124,1 x 71,4 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "124,11 x 71,42 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80489,7 +80488,7 @@
       "Vægt (kg)": "1,22",
       "Vægt emballage (kg)": "2",
       "Mål (emballage)": "9,8 x 9,7 x 155,4 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "146 x 83,74 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80505,7 +80504,7 @@
       "Vægt (kg)": "0,43",
       "Vægt emballage (kg)": "1,8",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "124,1 x 71,4 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "124,11 x 71,42 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80521,7 +80520,7 @@
       "Vægt (kg)": "0,43",
       "Vægt emballage (kg)": "1,8",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "124,1 x 71,4 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "124,11 x 71,42 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80537,7 +80536,7 @@
       "Vægt (kg)": "0,43",
       "Vægt emballage (kg)": "1,8",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "124,1 x 71,4 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "124,11 x 71,42 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80553,7 +80552,7 @@
       "Vægt (kg)": "1,22",
       "Vægt emballage (kg)": "2",
       "Mål (emballage)": "155,4 x 9,7 x 9,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "146 x 83,74 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80569,7 +80568,7 @@
       "Vægt (kg)": "0,37",
       "Vægt emballage (kg)": "1,6",
       "Mål (emballage)": "9,4 x 9 x 105,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "97,5 x 56,3 x 2,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "97,46 x 56,28 x 2,8 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80585,7 +80584,7 @@
       "Vægt (kg)": "1,42",
       "Vægt emballage (kg)": "2,4",
       "Mål (emballage)": "90 x 9,4 x 177,2 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "168,7 x 96,5 x 2 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "168,74 x 96,54 x 1,96 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80601,7 +80600,7 @@
       "Vægt (kg)": "1,22",
       "Vægt emballage (kg)": "2",
       "Mål (emballage)": "155,4 x 9,7 x 9,8 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "146 x 83,74 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80617,7 +80616,7 @@
       "Vægt (kg)": "1,22",
       "Vægt emballage (kg)": "2",
       "Mål (emballage)": "9,8 x 9,7 x 155,4 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "146 x 83,7 x 1,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "146 x 83,74 x 1,77 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80633,7 +80632,7 @@
       "Vægt (kg)": "1,67",
       "Vægt emballage (kg)": "2,8",
       "Mål (emballage)": "90 x 9,4 x 200,9 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "191 x 109,1 x 2 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "191,02 x 109,12 x 2,01 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -80649,7 +80648,7 @@
       "Vægt (kg)": "0,32",
       "Vægt emballage (kg)": "1,4",
       "Mål (emballage)": "9 x 81,6 x 9,4 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "73,2 x 42,7 x 2,8 cm (bredde x højde x dybde)"
+      "Mål (produkt)": "73,24 x 42,68 x 2,8 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -80659,7 +80658,7 @@
      "SAMTQLS03H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSCFM43",
@@ -80697,7 +80696,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSOCA5X",
@@ -80738,7 +80737,7 @@
      "SAMVGSOCR15X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMVGSOCR15X",
@@ -80778,7 +80777,7 @@
      "SAMTQLS03H"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMWMNBX30FBX",
@@ -80837,7 +80836,7 @@
      "SAMWMNBX16FBX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMWMND90",
@@ -80864,7 +80863,7 @@
      "ean": "8806097238140",
      "url": "/samsung-slim-fit-wallmount-d90eb-tv-beslag/samwmnd90e/",
      "img": "hk:47347c5d-61c8-4426-aee3-2623e0036d5c",
-     "stock": "notInStockStockedItemOrDropshippingOrLeftOver",
+     "stock": "dropshippingInStock",
      "specs": {
       "Vægt (kg)": "1,7",
       "Vægt emballage (kg)": "2,3",
@@ -80883,7 +80882,7 @@
      "VOGTVM5705"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SAMWMNH50",
@@ -80931,7 +80930,7 @@
      "SAMWMND90"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELCTV1522X",
@@ -80967,7 +80966,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELCTV4800X",
@@ -81010,7 +81009,7 @@
      "SELCTV1522X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSOA3008BX",
@@ -81046,7 +81045,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSOC4016X",
@@ -81088,7 +81087,7 @@
      "ESSCL1HDMI8KX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSOC4026X",
@@ -81125,7 +81124,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSOC4100X",
@@ -81161,7 +81160,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSXI2503MFIBX",
@@ -81201,8 +81200,16 @@
      "label": "0,5 meter, hvid",
      "price": 139,
      "colorKey": "White",
+     "ean": "5706808014960",
      "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
-     "img": "hk:2ccdac7b-9d6a-4749-a986-894db18a1e14"
+     "img": "hk:2ccdac7b-9d6a-4749-a986-894db18a1e14",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Kabellængde (m)": "0,5",
+      "Vægt (kg)": "0,05",
+      "Vægt emballage (kg)": "0,05",
+      "Mål (emballage)": "8 x 3 x 22 cm (bredde x højde x dybde)"
+     }
     },
     {
      "sku": "SELSXI2503MFIB",
@@ -81227,7 +81234,7 @@
      "AQCARBONUSBLT"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SELSXI4900X",
@@ -81265,7 +81272,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENAMBEOSBMINI",
@@ -81296,7 +81303,7 @@
      "ean": "4260752330145",
      "url": "/sennheiser-ambeo-soundbar-mini-soundbar/senambeosbminibk/",
      "img": "hk:c71398ba-044a-4ddb-a838-120ff662fe16",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "5",
       "Vægt emballage (kg)": "6",
@@ -81327,7 +81334,7 @@
      "DENHOMESOUNDBAR550"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENAMBEOSBPLUS",
@@ -81400,7 +81407,7 @@
      "DENHOMESOUNDBAR550"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENAMBEOSBPLUSWM",
@@ -81427,7 +81434,7 @@
      "ean": "4260752330107",
      "url": "/sennheiser-ambeo-soundbar-wall-mount-vaegbeslag-for-hoejtalere/senambeosbpluswmbk/",
      "img": "hk:e4f63a8e-cd2d-4c48-8cf4-cbe9e33ff2da",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "1",
       "Vægt emballage (kg)": "1,3",
@@ -81442,7 +81449,7 @@
      "SENAMBEOSBMINI"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENAMBEOSOUNDBAR1",
@@ -81518,7 +81525,7 @@
      "BWASW610M"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENAMBEOSUB",
@@ -81572,7 +81579,7 @@
      "SENAMBEOSBMINI"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENBTA1",
@@ -81602,13 +81609,13 @@
      "specs": {
       "Vægt (kg)": "0,1",
       "Vægt emballage (kg)": "0,26",
-      "Mål (emballage)": "9,5 x 4,4 x 16,5 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "9,5 x 4,35 x 16,5 cm (bredde x højde x dybde)"
      }
     }
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENBTD700",
@@ -81655,7 +81662,7 @@
      "SENMOMENTUMTW4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD550",
@@ -81688,7 +81695,7 @@
      "specs": {
       "Vægt (kg)": "0,28",
       "Vægt emballage (kg)": "0,61",
-      "Mål (emballage)": "1,9 x 9,6 x 23,7 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "1,91 x 9,6 x 23,7 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -81717,8 +81724,8 @@
      "SENHD660S2",
      "DENAHD7200",
      "DENAHD5200",
-     "AUDMM100",
      "AUDLCD2CLASSIC",
+     "AUDMM100",
      "BEYT1V3",
      "BEYT5V3"
     ],
@@ -81729,7 +81736,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD560S",
@@ -81800,7 +81807,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD620S",
@@ -81829,7 +81836,7 @@
      "ean": "4260752332750",
      "url": "/sennheiser-hd-620s-head-fi-hoeretelefoner/senhd620sbk/",
      "img": "hk:a80c011d-3c1e-4ba4-a9ef-2b3752f68543",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,33",
       "Vægt emballage (kg)": "0,7",
@@ -81873,7 +81880,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD660S2",
@@ -81952,7 +81959,7 @@
      "LUXX8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD800S",
@@ -82014,19 +82021,19 @@
      "AUDLCDX",
      "AUDLCD2CLASSIC",
      "AUDMM500",
+     "AUDLCD3X",
      "SENHD660S2",
      "AUDLCD5",
      "BEYT1V3",
-     "BEYT5V3",
-     "AUDLCD3X"
+     "BEYT5V3"
     ],
     "rec": [
+     "SENHDV820",
      "LUXX8",
-     "LUXX9",
-     "SENHDV820"
+     "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHD820",
@@ -82088,12 +82095,12 @@
      "AUDMM500",
      "AUDLCDXC",
      "AUDLCD3X",
+     "AUDMM520",
      "SENHD660S2",
      "AUDLCD5",
      "AUDLCD2CLASSIC",
      "BEYT1V3",
-     "BEYT5V3",
-     "AUDMM520"
+     "BEYT5V3"
     ],
     "rec": [
      "SENHDV820",
@@ -82103,7 +82110,7 @@
      "TTTI3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHDB630",
@@ -82137,7 +82144,7 @@
      "specs": {
       "Vægt (kg)": "0,31",
       "Vægt emballage (kg)": "1,05",
-      "Mål (emballage)": "21,5 x 22,2 x 7,5 cm (bredde x højde x dybde)",
+      "Mål (emballage)": "21,5 x 22,15 x 7,5 cm (bredde x højde x dybde)",
       "Mål (produkt)": "18 x 19,5 x 5,1 cm (bredde x højde x dybde)"
      }
     },
@@ -82203,7 +82210,7 @@
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENHDV820",
@@ -82285,7 +82292,7 @@
      "AUDLCD5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENIE200",
@@ -82359,7 +82366,7 @@
      "AQDRAGONFLYC"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENIE600",
@@ -82427,8 +82434,8 @@
      "DENAHD5200",
      "BEYT5V3",
      "AUDLCD2CLASSIC",
-     "AUDLCDS20X",
-     "SENHD660S2"
+     "SENHD660S2",
+     "AUDLCDS20X"
     ],
     "rec": [
      "AQDRAGONFLYCOPPERX",
@@ -82437,7 +82444,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENIE900",
@@ -82504,7 +82511,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENMOMENTUM5",
@@ -82584,7 +82591,7 @@
      "specs": {
       "Vægt (kg)": "0,29",
       "Vægt emballage (kg)": "0,85",
-      "Mål (emballage)": "5,6000000000000005 x 21,8 x 20,3 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "5,6 x 21,8 x 20,3 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -82620,17 +82627,17 @@
      "DALIIO8",
      "SENRS275",
      "ARGHPQUIETSTORM",
+     "DALIIO6",
      "BWPX7S2E",
      "BOHX",
-     "SONYWH1000XX",
-     "DALIIO6"
+     "SONYWH1000XX"
     ],
     "rec": [
      "SENBTD700",
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENMOMENTUMTW5",
@@ -82752,7 +82759,7 @@
      "KEFMU3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENRS275",
@@ -82826,7 +82833,7 @@
      "SONYWH1000XM6"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SENSB01WMX",
@@ -82867,7 +82874,7 @@
      "SENAMBEOSOUNDBAR1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "SONACE",

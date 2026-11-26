@@ -1,6 +1,6 @@
 {
  "sku": "SELSXI2503MFIBX",
- "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
+ "url": "/sinox-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
  "breadcrumb": [
   {
    "title": "Kabler",
@@ -16,10 +16,10 @@
  "hp": {
   "spec": {},
   "gallery": [
-   "c308d3c4-9713-44c2-a823-a672daaf170e",
-   "c7aff29c-abf5-4796-ba09-5144fad31e99"
+   "a5e3d8bc-c5f1-47b7-a7cc-79062f8d21c5",
+   "2b7db89a-6272-4216-b951-909817183623"
   ],
-  "avail": "InStock"
+  "avail": "Discontinued"
  },
  "product": {
   "id": 117446,
@@ -127,6 +127,87 @@
     "energySpecifications": {},
     "url": "/bandridge-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
     "canonicalUrl": "/bandridge-sinox-sxi2500mfi-usb-kabel/selsxi2520mfi/",
+    "lowestShippingPriceRaw": 29,
+    "addOns": []
+   },
+   {
+    "id": 114890,
+    "discontinued": true,
+    "displayName": "0,5 meter, hvid",
+    "condition": "NewNeverUsedAndNotOpened",
+    "disableCollectAtStore": true,
+    "productCode": "SELSXI2550MFI",
+    "ean": "5706808014960",
+    "priceDetails": {
+     "priceValueId": 834840,
+     "price": 139,
+     "priceFormatted": "139,-",
+     "salesUnit": "stk",
+     "rawSalesUnit": "piece",
+     "salesQuantity": 1,
+     "unitPrice": 139
+    },
+    "techSpecs": [
+     {
+      "index": 10,
+      "title": "Produktdata",
+      "content": [
+       {
+        "term": "Kabellængde (m)",
+        "value": "0,5"
+       }
+      ]
+     },
+     {
+      "index": 37,
+      "title": "Dimensioner og design",
+      "content": [
+       {
+        "term": "Farve",
+        "value": "Hvid"
+       },
+       {
+        "term": "Model / Variant",
+        "value": "0,5 meter, hvid"
+       },
+       {
+        "term": "Vægt (kg)",
+        "value": "0,05"
+       },
+       {
+        "term": "Vægt emballage (kg)",
+        "value": "0,05"
+       },
+       {
+        "term": "Mål (emballage)",
+        "value": "8 x 3 x 22 cm (bredde x højde x dybde)"
+       }
+      ]
+     }
+    ],
+    "color": {
+     "inRiverKey": "White",
+     "text": "0,5 meter, hvid",
+     "productCode": "SELSXI2550MFI"
+    },
+    "inventoryStatus": {
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "canBuyOnline": true,
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
+    },
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/a5e3d8bc-c5f1-47b7-a7cc-79062f8d21c5"
+     },
+     {
+      "url": "https://images.hifiklubben.com/image/2b7db89a-6272-4216-b951-909817183623"
+     }
+    ],
+    "lifestyleImages": [],
+    "energySpecifications": {},
+    "url": "/bandridge-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
+    "canonicalUrl": "/bandridge-sinox-sxi2500mfi-usb-kabel/selsxi2550mfi/",
     "lowestShippingPriceRaw": 29,
     "addOns": []
    },

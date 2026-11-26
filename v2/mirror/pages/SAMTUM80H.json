@@ -96,7 +96,7 @@
     "productCode": "SAMTU55M80H",
     "ean": "8806099009410",
     "priceDetails": {
-     "priceValueId": 1219494,
+     "priceValueId": 1223006,
      "price": 3999,
      "priceFormatted": "3.999,-",
      "priceBefore": 7499,
@@ -331,11 +331,11 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "På lager. Levering om 1–2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "availableQuantity": 71,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {
@@ -368,6 +368,7 @@
     },
     "url": "/samsung-m80h-mini-led-tv/samtu55m80h/",
     "canonicalUrl": "/samsung-m80h-mini-led-tv/samtu55m80h/",
+    "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
       "VOGTVM3215X",
@@ -645,7 +646,7 @@
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 19,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -957,7 +958,7 @@
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 10,
+     "availableQuantity": 9,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

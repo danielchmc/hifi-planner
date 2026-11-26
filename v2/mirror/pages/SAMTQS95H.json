@@ -348,8 +348,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 16,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 13,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -648,7 +648,7 @@
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 86,
+     "availableQuantity": 90,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -959,8 +959,8 @@
      "inStock": true,
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 43,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 93,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -1256,8 +1256,8 @@
      "inStock": true,
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 67,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 54,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -1335,44 +1335,38 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SAMTQS95H leverer en imponerende, knivskarp billedkvalitet med fyldige naturlige farver, dyb sort, høj lysstyrke og brede betragtningsvinkler. Det slanke, moderne design ser fremragende ud på væggen og understreger premium-indtrykket. Lydkvaliteten og TV-systemet er tydelige svagheder, mens omhyggelig kalibrering anbefales for det bedste resultat.",
+   "summary": "SAMTQS95H leverer et fremragende, skarpt og medrivende billede med naturlige farver, dyb sort og høj lysstyrke. Det slanke, moderne design ser fremragende ud på væggen og understøtter den førsteklasses seeroplevelse. Lydkvaliteten og det uoverskuelige system er mærkbare svagheder, men den omhyggeligt kalibrerede streamingoplevelse er stadig imponerende.",
    "headlines": {
-    "exceptional, sharp picture quality": {
-     "sentimentAnalysis": "Anmelderne roser konsekvent billedet for at være fremragende skarpt og imponerende.",
-     "simpleTitle": "Fremragende, skarp billedkvalitet",
+    "outstanding picture quality": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent billedet som exceptionelt skarpt, imponerende og af høj kvalitet med naturlige farver og en medrivende gengivelse.",
+     "simpleTitle": "Fremragende billedkvalitet",
      "bias": "positive",
      "key": "picture-quality",
-     "groupId": "d79c2383-6daa-41da-b647-b2f82ca419a2"
-    },
-    "rich colours and wide viewing angles": {
-     "sentimentAnalysis": "Billedet roses for naturlige, levende farver og gode betragtningsvinkler.",
-     "simpleTitle": "Fyldige farver og brede betragtningsvinkler",
-     "bias": "positive",
-     "key": "picture-colour-viewing",
-     "groupId": "d79c2383-6daa-41da-b647-b2f82ca419a2"
+     "groupId": "54d276f5-e36b-4799-86d1-1417870ce789"
     },
     "slim, modern wall-friendly design": {
-     "sentimentAnalysis": "Det slanke, moderne udseende vurderes som særligt attraktivt ved vægmontering.",
+     "sentimentAnalysis": "Det slanke, moderne udseende roses som attraktivt og særligt velegnet til vægmontering.",
      "simpleTitle": "Slankt, moderne design til vægmontering",
      "bias": "positive",
      "key": "design",
-     "groupId": "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed"
+     "groupId": "2e295d8a-3c7d-4980-b4a0-ca39995c8adc"
     }
    },
    "grouping": {
-    "d79c2383-6daa-41da-b647-b2f82ca419a2": {
+    "54d276f5-e36b-4799-86d1-1417870ce789": {
      "title": "Billedkvalitet",
-     "id": "d79c2383-6daa-41da-b647-b2f82ca419a2",
+     "id": "54d276f5-e36b-4799-86d1-1417870ce789",
      "references": [
       "707b3eee-1640-4cd7-82b1-b4ac03f9d986",
       "ae65764e-9ead-4ef3-b6a3-ad570640d803",
       "77b39d8c-1318-4584-812f-c00422e0502d",
+      "d11e53ac-bd06-45ac-b9bb-1402fb73c2fa",
       "9683035c-c5e8-46c5-a1bc-95bbcc83b71f"
      ]
     },
-    "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed": {
+    "2e295d8a-3c7d-4980-b4a0-ca39995c8adc": {
      "title": "Design",
-     "id": "a49aef7f-aaee-49a1-8437-a1aecdf5f7ed",
+     "id": "2e295d8a-3c7d-4980-b4a0-ca39995c8adc",
      "references": [
       "707b3eee-1640-4cd7-82b1-b4ac03f9d986",
       "ae65764e-9ead-4ef3-b6a3-ad570640d803"

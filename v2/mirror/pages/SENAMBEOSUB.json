@@ -43,6 +43,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløs subwoofer designet til brug sammen med Sennheiser AMBEO soundbarer*\n350 watt (max) Klasse D forstærker med DSP\nAvanceret selvkalibrering og rumkorrektion med indbygget mikrofon\nVolumen, delefrekvens og fase kan justeres manuelt via Sennheiser Smart Control App\nKan via kabel også bruges sammen med afspillere, forstærkere og receivere fra andre producenter\nEnergiforbrug standby: <0,4 watt (kabel) / < 1,9 watt (wi-fi)\n* Den originale AMBEO soundbar skal forbindes via kabel."
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -53,15 +62,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Wi-Fi"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløs subwoofer designet til brug sammen med Sennheiser AMBEO soundbarer*\n350 watt (max) Klasse D forstærker med DSP\nAvanceret selvkalibrering og rumkorrektion med indbygget mikrofon\nVolumen, delefrekvens og fase kan justeres manuelt via Sennheiser Smart Control App\nKan via kabel også bruges sammen med afspillere, forstærkere og receivere fra andre producenter\nEnergiforbrug standby: <0,4 watt (kabel) / < 1,9 watt (wi-fi)\n* Den originale AMBEO soundbar skal forbindes via kabel."
      }
     ]
    },
@@ -171,8 +171,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
-     "availableQuantity": 42,
+     "numberOfStoresExperience": 2,
+     "availableQuantity": 39,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -336,41 +336,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENAMBEOSUB leverer varm, kraftfuld og omsluttende bas, som løfter AMBEO-soundbaroplevelsen markant. Opsætning og integration er generelt nem på kompatible AMBEO-modeller, og effekten gør film og musik langt mere medrivende. Kablet drift kan dog give alvorlige problemer med opdateringer, kalibrering og aktivering, mens trådløs kompatibilitet og standbyadfærd heller ikke er fejlfri.",
+   "summary": "SENAMBEOSUB leverer varm, dyb og slagkraftig bas, som giver AMBEO-soundbars markant mere kraft og indlevelse og gør film og musik mere spændende. Opsætningen er generelt enkel, og den gode kompatibilitet med flere AMBEO-modeller giver en tydelig lydforbedring. Trådløs drift er praktisk, men kablede forbindelser, modelbegrænsninger og standby-adfærd kan give frustrerende tekniske problemer, så lydkvaliteten imponerer mere end plug-and-play-pålideligheden.",
    "headlines": {
-    "powerful, deep bass": {
-     "sentimentAnalysis": "Subwooferen roses gentagne gange for sin dybe, kraftfulde og rumfyldende bas.",
-     "simpleTitle": "Kraftfuld, dyb bas",
+    "a clear upgrade to the AMBEO experience": {
+     "sentimentAnalysis": "Anmeldelserne beskriver subwooferen som et stærkt supplement til AMBEO-soundbars, der forbedrer helhedsoplevelsen ud over selve bassen.",
+     "simpleTitle": "En tydelig opgradering af AMBEO-oplevelsen",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
+     "key": "sound-quality",
+     "groupId": "444acfa9-3d03-4f67-ae70-6c3a3d06d7d2"
     },
-    "easy pairing with compatible AMBEO soundbars": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver, at subwooferen passer til eller nemt forbindes med AMBEO-soundbars.",
-     "simpleTitle": "Nem tilslutning til kompatible AMBEO-soundbars",
+    "deep, powerful bass adds major impact": {
+     "sentimentAnalysis": "Subwooferen roses gentagne gange for dyb og kraftfuld bas med nok overskud til at gøre film og musik mere medrivende.",
+     "simpleTitle": "Dyb og kraftfuld bas giver markant mere effekt",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "444acfa9-3d03-4f67-ae70-6c3a3d06d7d2"
+    },
+    "easy pairing with several AMBEO models": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en enkel forbindelse til AMBEO Plus, Mini og andre AMBEO-soundbars.",
+     "simpleTitle": "Nem tilslutning til flere AMBEO-modeller",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "471da204-3fc2-4ac2-8d6f-2de72aed55bb"
-    },
-    "a major upgrade to the AMBEO system": {
-     "sentimentAnalysis": "Subwooferen forbedrer den samlede lyd tydeligt, ikke kun bassen.",
-     "simpleTitle": "En markant opgradering af AMBEO-systemet",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
-    },
-    "wired connection has major technical problems": {
-     "sentimentAnalysis": "De fælles forbindelsesproblemer omfatter begrænset trådløs kompatibilitet og ustabil kablet drift.",
-     "simpleTitle": "Kablet forbindelse har store tekniske problemer",
-     "bias": "negative",
-     "key": "connectivity",
-     "groupId": "1fa0401a-deab-45e8-8a29-3b9495f0048a"
+     "groupId": "3981e8aa-d229-45cc-bad7-45473199e58d"
     }
    },
    "grouping": {
-    "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802": {
+    "444acfa9-3d03-4f67-ae70-6c3a3d06d7d2": {
      "title": "Lydkvalitet",
-     "id": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802",
+     "id": "444acfa9-3d03-4f67-ae70-6c3a3d06d7d2",
      "references": [
       "cad0bc27-aecc-475e-96da-254e9c9121b7",
       "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
@@ -380,30 +373,23 @@
       "946b650c-6d16-47fd-a655-43531efd1e89",
       "5585073b-7a79-4c4d-8921-dc89f9c230e0",
       "538053da-43c7-419e-852b-442d5299fdd3",
-      "8e39db97-d632-4360-9e37-c94c4e20fcb2"
+      "74cf1b88-5c0c-4b85-bc9e-2be41db584b0",
+      "f8f91aa5-d816-4750-ae4f-6cedb686b9ff"
      ]
     },
-    "471da204-3fc2-4ac2-8d6f-2de72aed55bb": {
+    "3981e8aa-d229-45cc-bad7-45473199e58d": {
      "title": "Kompatibilitet og opsætning",
-     "id": "471da204-3fc2-4ac2-8d6f-2de72aed55bb",
+     "id": "3981e8aa-d229-45cc-bad7-45473199e58d",
      "references": [
       "4dff2e90-0aab-4b4f-8be5-34b2ffbe74c0",
-      "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
       "1795f296-9af8-4d1e-9126-ce8793b2538b",
       "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
       "946b650c-6d16-47fd-a655-43531efd1e89",
       "72037b3f-be1c-412d-b33e-bd81e6a3c331",
       "0aa8ae45-e59e-41b8-a4ee-da1e7032b762",
       "74cf1b88-5c0c-4b85-bc9e-2be41db584b0",
-      "f8f91aa5-d816-4750-ae4f-6cedb686b9ff"
-     ]
-    },
-    "1fa0401a-deab-45e8-8a29-3b9495f0048a": {
-     "title": "Forbindelse",
-     "id": "1fa0401a-deab-45e8-8a29-3b9495f0048a",
-     "references": [
-      "ab634f66-7e4c-4c6e-bc0d-946736a29c10",
-      "1795f296-9af8-4d1e-9126-ce8793b2538b"
+      "f8f91aa5-d816-4750-ae4f-6cedb686b9ff",
+      "ab634f66-7e4c-4c6e-bc0d-946736a29c10"
      ]
     }
    },

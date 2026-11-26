@@ -26,7 +26,7 @@
    "6d4c5b56-f3da-4f25-a92c-0cbfb3d674c7",
    "ea9e4105-bdd1-47c9-b01a-956eddce2ba8"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 232084,
@@ -193,12 +193,11 @@
      "productCode": "SENHD620SBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 07. december",
+     "deliveryDate": "2026-12-07T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 86,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 13,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -348,63 +347,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENHD620S får stor ros for en varm, detaljeret og naturlig lyd med punchy bas, bløde diskanttoner og et usædvanligt stort lydbillede for en lukket hovedtelefon. Den lette og komfortable konstruktion samt de tætsluttende ørekopper gør lang tids lytning behagelig, selv om nogle brugere synes, at pasformen er for stram, eller oplever tryk oven på hovedet. Hovedtelefonen giver fremragende værdi for pengene og fungerer især godt med egnede lydkilder, mens en hovedtelefonforstærker kan være en fordel ved mobil brug.",
+   "summary": "SENHD620S roses bredt for sin varme, detaljerede og naturlige lyd med punchy bas, afbalancerede mellemtoner, bløde diskanttoner og et usædvanligt stort lydbillede for en lukket hovedtelefon. Komfort og lav vægt vurderes generelt positivt, selv om enkelte lyttere synes, at pasformen er for stram eller mærker tryk på toppen af hovedet. Hovedtelefonen giver fremragende værdi for pengene og fungerer godt med passende kilder, mens mobil lytning kan have gavn af en hovedtelefonforstærker, og kablet kunne være længere.",
    "headlines": {
     "warm, detailed and natural sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den meget detaljerede, afbalancerede og naturlige gengivelse med bløde diskanttoner og god separation.",
+     "sentimentAnalysis": "Lyden roses for at være detaljeret, naturlig, afbalanceret og blød med en varm karakter.",
      "simpleTitle": "Varm, detaljeret og naturlig lyd",
      "bias": "positive",
-     "key": "warm-detailed-sound",
-     "groupId": "08567c75-d6ba-49b0-a0de-66de2f6e76f8"
+     "key": "sound",
+     "groupId": "e287d055-dfd2-4285-a760-a6840ebde745"
     },
-    "punchy, deep bass": {
-     "sentimentAnalysis": "Bassglade lyttere beskriver bunden som dyb, ren og punchy uden at gå ud over balancen.",
-     "simpleTitle": "Punchy og dyb bas",
+    "lightweight and comfortable for long listening": {
+     "sentimentAnalysis": "Hovedtelefonen beskrives generelt som let, stabil og behagelig, også ved længere tids lytning.",
+     "simpleTitle": "Let og komfortabel ved lang tids lytning",
      "bias": "positive",
-     "key": "punchy-bass",
-     "groupId": "08567c75-d6ba-49b0-a0de-66de2f6e76f8"
+     "key": "comfort",
+     "groupId": "1d95e90f-5e74-4513-9773-996fff012462"
     },
-    "spacious presentation for a closed-back headphone": {
-     "sentimentAnalysis": "Den lukkede konstruktion roses for stadig at levere en rummelig, naturlig og engagerende gengivelse.",
-     "simpleTitle": "Stort lydbillede for en lukket hovedtelefon",
+    "punchy bass and wide soundstage": {
+     "sentimentAnalysis": "Lyttere fremhæver den dybe, rene og punchy bas samt den imponerende rummelighed for en lukket hovedtelefon.",
+     "simpleTitle": "Punchy bas og stort lydbillede",
      "bias": "positive",
-     "key": "spacious-closed-sound",
-     "groupId": "08567c75-d6ba-49b0-a0de-66de2f6e76f8"
+     "key": "sound",
+     "groupId": "e287d055-dfd2-4285-a760-a6840ebde745"
     },
-    "lightweight and comfortable for extended listening": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den lave vægt, den sikre øreindeslutning og komforten ved lang tids lytning.",
-     "simpleTitle": "Let og komfortabel til lang tids lytning",
-     "bias": "positive",
-     "key": "comfortable-lightweight",
-     "groupId": "401024a9-9555-4234-b2aa-a51c0ac6863a"
-    },
-    "fit can feel too tight": {
-     "sentimentAnalysis": "Nogle brugere oplever for kraftigt klemmetryk eller ubehageligt tryk oven på hovedet.",
-     "simpleTitle": "Pasformen kan føles for stram",
+    "some users find the fit too tight or uncomfortable": {
+     "sentimentAnalysis": "Et mindretal oplever for meget spænding eller smertefuldt tryk på toppen af hovedet.",
+     "simpleTitle": "Nogle brugere synes, at pasformen er for stram eller ukomfortabel",
      "bias": "negative",
-     "key": "tight-fit",
-     "groupId": "401024a9-9555-4234-b2aa-a51c0ac6863a"
+     "key": "comfort",
+     "groupId": "1d95e90f-5e74-4513-9773-996fff012462"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Produktet betragtes som et særligt godt køb i forhold til pris og anvendelse.",
-     "simpleTitle": "Fremragende værdi for pengene",
-     "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "6afd668f-be1f-450d-bf09-6e2767c6baa7"
-    },
-    "mobile sources may benefit from amplification": {
-     "sentimentAnalysis": "Mobil lytning er mulig, men anmeldelserne anbefaler en dedikeret forstærker eller dongle for bedst mulig gengivelse.",
-     "simpleTitle": "Mobile kilder kan have gavn af forstærkning",
+    "may need amplification from mobile sources": {
+     "sentimentAnalysis": "Hovedtelefonen fungerer godt fra laptops og passende anlæg, men mobile enheder kan have gavn af en hovedtelefonforstærker eller dongle.",
+     "simpleTitle": "Kan kræve forstærkning fra mobile kilder",
      "bias": "meh",
-     "key": "amplification-needed",
-     "groupId": "9b091d97-ad4c-43f3-b769-02065245cd67"
+     "key": "source",
+     "groupId": "277c1717-e041-47ef-bab1-ac6a8237ad71"
     }
    },
    "grouping": {
-    "08567c75-d6ba-49b0-a0de-66de2f6e76f8": {
+    "e287d055-dfd2-4285-a760-a6840ebde745": {
      "title": "Lydkvalitet",
-     "id": "08567c75-d6ba-49b0-a0de-66de2f6e76f8",
+     "id": "e287d055-dfd2-4285-a760-a6840ebde745",
      "references": [
+      "78f6df51-48fe-4118-96b9-37e7ec800d43",
       "6b5373ac-b23e-4df6-a8b5-5dd3da7d8183",
       "031874df-2ba2-4fd2-8207-eabb91f24391",
       "da3703ad-37bc-4f27-b862-600cf4797ba8",
@@ -417,6 +403,7 @@
       "442bb3fd-3fb4-4293-97e6-37a1c1b41482",
       "6bf9e43a-28ae-4f74-a179-3e712b191031",
       "a203b1ee-9c79-4538-b668-e9ee20f8656e",
+      "18a970d8-3ecd-457b-9843-c18754cfd207",
       "e2cfaead-c30a-4f95-a9cd-1b38280f1681",
       "7fa23bc4-5d4a-4a0c-9f55-5f2e243a324d",
       "dac1b8bf-267f-4e62-b0cc-eaf011c00240",
@@ -424,45 +411,37 @@
       "1b236440-5609-4b22-a076-de0789dc693e"
      ]
     },
-    "401024a9-9555-4234-b2aa-a51c0ac6863a": {
+    "1d95e90f-5e74-4513-9773-996fff012462": {
      "title": "Komfort og pasform",
-     "id": "401024a9-9555-4234-b2aa-a51c0ac6863a",
+     "id": "1d95e90f-5e74-4513-9773-996fff012462",
      "references": [
       "6b5373ac-b23e-4df6-a8b5-5dd3da7d8183",
-      "442bb3fd-3fb4-4293-97e6-37a1c1b41482",
       "01350a5f-881f-4e1b-abbf-f51b945089c8",
+      "442bb3fd-3fb4-4293-97e6-37a1c1b41482",
+      "6bf9e43a-28ae-4f74-a179-3e712b191031",
       "5da34d24-70ec-4024-ad17-93f1c8fd366a",
       "cf75a0a9-7bc1-498f-9261-c35e7781ff86",
-      "7fa23bc4-5d4a-4a0c-9f55-5f2e243a324d",
-      "6bf9e43a-28ae-4f74-a179-3e712b191031"
+      "7fa23bc4-5d4a-4a0c-9f55-5f2e243a324d"
      ]
     },
-    "9b091d97-ad4c-43f3-b769-02065245cd67": {
-     "title": "Kilde og forstærkning",
-     "id": "9b091d97-ad4c-43f3-b769-02065245cd67",
+    "277c1717-e041-47ef-bab1-ac6a8237ad71": {
+     "title": "Kompatibilitet med lydkilder",
+     "id": "277c1717-e041-47ef-bab1-ac6a8237ad71",
      "references": [
       "240cc410-b5f8-4cf8-94b2-91dfa5034708",
       "3d978ed8-8e00-4120-89b6-b9868d8bbc1c",
       "c177cd3a-bd32-48fd-83b0-42e15da97009"
      ]
-    },
-    "6afd668f-be1f-450d-bf09-6e2767c6baa7": {
-     "title": "Pris/kvalitet",
-     "id": "6afd668f-be1f-450d-bf09-6e2767c6baa7",
-     "references": [
-      "7121e03a-d8eb-4409-80d0-83d244f54c90",
-      "34becd91-353c-427a-a589-ca0579a0d727"
-     ]
     }
    },
-   "rating": 4.75,
-   "count": 60,
-   "reviewCount": 28,
+   "rating": 4.73770491803279,
+   "count": 61,
+   "reviewCount": 29,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 1,
-    "4": 9,
+    "4": 10,
     "5": 49
    }
   },

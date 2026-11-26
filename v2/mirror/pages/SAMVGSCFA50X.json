@@ -25,7 +25,7 @@
    "c3e6cd87-8280-4865-9707-3dab2a35e509",
    "7c0d784b-67b3-4f24-9fcb-3bb3b5070e12"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 153816,
@@ -230,13 +230,14 @@
     "productCode": "SAMVGSCFA50TKB",
     "ean": "8806092123311",
     "priceDetails": {
-     "priceValueId": 917686,
+     "priceValueId": 1223188,
      "price": 799,
      "priceFormatted": "799,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 799
+     "unitPrice": 799,
+     "unitPriceBefore": 799
     },
     "techSpecs": [
      {
@@ -268,11 +269,9 @@
      "productCode": "SAMVGSCFA50TKB"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
-     "canBuyOnline": true,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "description": "Ukendt leveringstid",
+     "soldOut": true,
+     "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
     },
     "images": [
      {
@@ -305,6 +304,7 @@
     "url": "/samsung-vgscfa-50-monteringsramme/samvgscfa50tkb/",
     "canonicalUrl": "/samsung-vgscfa-50-monteringsramme/samvgscfa50tkb/",
     "lowestShippingPriceRaw": 29,
+    "dropshippingBrand": "Samsung",
     "addOns": []
    }
   ],

@@ -106,7 +106,7 @@
      "inStock": true,
      "description": "På lager. Levering om 2–5 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 11,
+     "availableQuantity": 6,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -190,7 +190,7 @@
      "inStock": true,
      "description": "På lager. Levering om 2–5 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 16,
+     "availableQuantity": 22,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -271,9 +271,11 @@
      "productCode": "SAMVGSCFF85BWB"
     },
     "inventoryStatus": {
-     "description": "Ukendt leveringstid",
-     "soldOut": true,
-     "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
+     "inStock": true,
+     "description": "På lager. Levering om 2–5 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 7,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {

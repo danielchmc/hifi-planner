@@ -20,7 +20,7 @@
    "53401a24-998a-44ca-b70b-e38c3da07c7a",
    "5b719e07-e1ee-4bb2-95f6-f17ee193e6d2"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 297898,
@@ -134,9 +134,11 @@
      "productCode": "SAMWMND90E"
     },
     "inventoryStatus": {
-     "description": "Ukendt leveringstid",
-     "soldOut": true,
-     "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
+     "inStock": true,
+     "description": "På lager. Levering om 2–5 hverdage",
+     "canBuyOnline": true,
+     "availableQuantity": 80,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {

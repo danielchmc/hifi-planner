@@ -30,8 +30,8 @@
     "AQCARBONOPT",
     "AQCINNRJE",
     "ESSBA1HDMIX",
-    "SENAMBEOSBMINI",
-    "ESSBA1OPTX"
+    "ESSBA1OPTX",
+    "SENAMBEOSBMINI"
    ],
    "isOutlet": "false"
   },
@@ -148,7 +148,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 40,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "14.990,-",
@@ -158,7 +158,153 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "SENAMBEOSOUNDBAR1"
+     "parentProductCode": "SENAMBEOSOUNDBAR1",
+     "reviews": {
+      "summary": "Sennheiser Ambeo Max leverer en usædvanligt kraftfuld, varm og omsluttende lyd til både film og musik og kan ofte erstatte et komplet surroundsystem. Ambeo-behandlingen skaber et bemærkelsesværdigt rummeligt og overbevisende lydbillede, mens Dolby Atmos og tydelige dialoger får stor ros. Bassen er imponerende for mange, men kan føles begrænset uden en subwoofer; tilbagevendende problemer med opstart, forbindelse og HDMI er de største ulemper.",
+      "headlines": {
+       "powerful, immersive sound for films and music": {
+        "sentimentAnalysis": "Anmeldelserne beskriver en usædvanligt klar, kraftfuld og rummelig lyd, der fungerer særligt godt til film og musik.",
+        "simpleTitle": "Kraftfuld, omsluttende lyd til film og musik",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "4de77548-4816-44a9-8e35-0d94a84536e9"
+       },
+       "convincing virtual surround and Atmos effects": {
+        "sentimentAnalysis": "Ambeo og Dolby Atmos roses gentagne gange for at sprede lyden i rummet og skabe en overbevisende biografoplevelse uden baghøjttalere.",
+        "simpleTitle": "Overbevisende virtuel surround og Atmos",
+        "bias": "positive",
+        "key": "surround-atmos",
+        "groupId": "681e72d8-0e9f-41e2-8e35-ee89a8f88817"
+       },
+       "bass can be insufficient without a subwoofer": {
+        "sentimentAnalysis": "Flere lyttere oplever bunden som for tilbageholdende til krævende film- og musikafspilning og tilføjer en subwoofer for dybere og mere fysisk bas.",
+        "simpleTitle": "Bassen kan være utilstrækkelig uden subwoofer",
+        "bias": "negative",
+        "key": "bass",
+        "groupId": "5fc2aa97-65f3-444f-a177-1d32dede9e61"
+       },
+       "recurring startup and connection problems": {
+        "sentimentAnalysis": "Nogle ejere oplever ustabil opstart samt Wi-Fi- eller tv-forbindelse, hvor strømmen lejlighedsvis skal afbrydes for at få systemet til at virke igen.",
+        "simpleTitle": "Gentagne problemer med opstart og forbindelse",
+        "bias": "negative",
+        "key": "connectivity",
+        "groupId": "dd47e143-1637-455e-8521-18d0a323d214"
+       }
+      },
+      "grouping": {
+       "4de77548-4816-44a9-8e35-0d94a84536e9": {
+        "title": "Lydkvalitet",
+        "id": "4de77548-4816-44a9-8e35-0d94a84536e9",
+        "references": [
+         "5e1487db-4c6a-455d-a7eb-e1af5e334c1a",
+         "61abac46-d493-49f2-be3e-ed0a6ee95a1e",
+         "5dd0dc2c-7ba7-4be5-a43f-6442e4b58f55",
+         "315245d8-1069-4ebe-b9ec-91cbe05daf8e",
+         "5c4ec1c4-c852-4a38-9c85-6f835596fb08",
+         "114cb387-242c-4791-9c7d-a6aedd5769ca",
+         "de4f233f-5e52-4a62-b683-91410192adcc",
+         "2651a9e0-9cc7-40da-83f8-619eacf81478",
+         "3035f5aa-328c-4bac-bc5d-f726333df9ee",
+         "f807b160-7ff2-4ddf-b0e4-886ec82e9dc1",
+         "e1389f87-2bd8-47d6-be88-64347c4f753a",
+         "31ce5e2e-fa25-4159-aeed-29bee4f4f0f8",
+         "b2294996-21f7-468e-ae18-11ca5bb1432a",
+         "16ef3d37-0531-47ce-947b-81523bb1a82",
+         "3bf5a51c-0b6d-42fe-b40d-2077b8ff3ac5",
+         "218b5b5e-6064-46df-8872-279943b6680a",
+         "6dc7622b-56bf-48f0-b303-b7c222ff72da",
+         "d337cdd0-a072-41f2-8d17-71347f8f8baf",
+         "427ad54c-26e2-4fd0-941d-54bd1f269e30",
+         "0f3c73f5-6436-42e0-b136-b8deba9ffe8d",
+         "58fd92fc-196e-4ccb-abee-ac4cfad66d44",
+         "83007ba7-f254-4fff-9cf2-37fa87bf3099",
+         "c2bfb1f2-f83c-49ad-8765-3e314aab768f",
+         "e05e77cf-0f07-436d-942d-4fb4a20d6d03",
+         "0735f392-24f0-44d3-a083-edce7e98c608",
+         "f0dd4f64-68de-493b-8a0f-7a48928aab90",
+         "27ded3ca-3914-4a92-aa2d-6ed6647a02c9",
+         "bba1c05a-d34e-4a67-b56d-751a8f84dd82",
+         "c325d35f-7f59-4021-9fbf-bcfa38e7bbab",
+         "9f46b521-1154-485f-b6ed-9914237329b0",
+         "ddc8c015-91ba-4208-87d4-89eb5dc2b4b2",
+         "3e420fc3-6e1a-44a9-a196-128209be0530",
+         "89428d0c-fa33-4850-b41a-7175b1886068",
+         "f153b8a8-c08d-414c-a5f2-9641e55380f7",
+         "5cf737ad-c7e6-4dd9-89cd-eaf912c93d7d",
+         "1d325a27-5aa1-416b-a0fe-a76cbbd94bc3",
+         "e979ad1e-1df0-43cf-8af8-7522e1064c95",
+         "dd0f49a8-9a10-4bb6-8056-a16d1ba3565a",
+         "cd4c70b9-14ee-4af2-b78c-2db3e4b6c68d"
+        ]
+       },
+       "681e72d8-0e9f-41e2-8e35-ee89a8f88817": {
+        "title": "Surround og Atmos",
+        "id": "681e72d8-0e9f-41e2-8e35-ee89a8f88817",
+        "references": [
+         "3035f5aa-328c-4bac-bc5d-f726333df9ee",
+         "f807b160-7ff2-4ddf-b0e4-886ec82e9dc1",
+         "1e87a9a1-0af1-4122-ab4e-f5724d7abe85",
+         "ff320a66-9f6d-44ff-9bcd-a15d650e7a6a",
+         "bdc1c49f-340b-499c-9bd8-94116ebac56e",
+         "16ef3d37-0531-47ce-947b-81523bb1a82",
+         "218b5b5e-6064-46df-8872-279943b6680a",
+         "d337cdd0-a072-41f2-8d17-71347f8f8baf",
+         "0f3c73f5-6436-42e0-b136-b8deba9ffe8d",
+         "58fd92fc-196e-4ccb-abee-ac4cfad66d44",
+         "89428d0c-fa33-4850-b41a-7175b1886068",
+         "c774acd2-0eaf-4bc9-a85a-6de916461297",
+         "6ac889e3-7903-41a6-9065-fd52e12dc984",
+         "0735f392-24f0-44d3-a083-edce7e98c608"
+        ]
+       },
+       "5fc2aa97-65f3-444f-a177-1d32dede9e61": {
+        "title": "Bas",
+        "id": "5fc2aa97-65f3-444f-a177-1d32dede9e61",
+        "references": [
+         "b3f15453-821c-4852-9450-dd0f948f68df",
+         "9952bc9d-8f43-476b-9dc0-d243c973d4fe",
+         "e1389f87-2bd8-47d6-be88-64347c4f753a",
+         "1e87a9a1-0af1-4122-ab4e-f5724d7abe85",
+         "ff320a66-9f6d-44ff-9bcd-a15d650e7a6a",
+         "36070bad-2d6a-417f-af39-6a6c2db05aa0",
+         "b2294996-21f7-468e-ae18-11ca5bb1432a",
+         "83007ba7-f254-4fff-9cf2-37fa87bf3099",
+         "3e420fc3-6e1a-44a9-a196-128209be0530",
+         "89428d0c-fa33-4850-b41a-7175b1886068",
+         "29ea686e-ab08-4627-b918-76ea533318d0",
+         "e979ad1e-1df0-43cf-8af8-7522e1064c95"
+        ]
+       },
+       "dd47e143-1637-455e-8521-18d0a323d214": {
+        "title": "Forbindelse og opsætning",
+        "id": "dd47e143-1637-455e-8521-18d0a323d214",
+        "references": [
+         "5e1487db-4c6a-455d-a7eb-e1af5e334c1a",
+         "e1389f87-2bd8-47d6-be88-64347c4f753a",
+         "1e87a9a1-0af1-4122-ab4e-f5724d7abe85",
+         "36070bad-2d6a-417f-af39-6a6c2db05aa0",
+         "b2294996-21f7-468e-ae18-11ca5bb1432a",
+         "3bf5a51c-0b6d-42fe-b40d-2077b8ff3ac5",
+         "58fd92fc-196e-4ccb-abee-ac4cfad66d44",
+         "e9475bfa-c5bb-406b-b463-c4c02c4f4f65",
+         "6ac889e3-7903-41a6-9065-fd52e12dc984",
+         "703477d0-db48-4a03-b879-9a7001c29e6b",
+         "f8ae61f6-3eeb-4a02-afb4-39dfaa5ec463",
+         "e979ad1e-1df0-43cf-8af8-7522e1064c95"
+        ]
+       }
+      },
+      "rating": 4.7,
+      "count": 100,
+      "reviewCount": 61,
+      "distribution": {
+       "1": 2,
+       "2": 1,
+       "3": 3,
+       "4": 13,
+       "5": 81
+      }
+     }
     },
     {
      "brand": "Sennheiser",
@@ -180,7 +326,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 42,
+        "availableQuantity": 39,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.490,-",
@@ -190,90 +336,7 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "SENAMBEOSUB",
-     "reviews": {
-      "summary": "SENAMBEOSUB leverer varm, kraftfuld og omsluttende bas, som løfter AMBEO-soundbaroplevelsen markant. Opsætning og integration er generelt nem på kompatible AMBEO-modeller, og effekten gør film og musik langt mere medrivende. Kablet drift kan dog give alvorlige problemer med opdateringer, kalibrering og aktivering, mens trådløs kompatibilitet og standbyadfærd heller ikke er fejlfri.",
-      "headlines": {
-       "powerful, deep bass": {
-        "sentimentAnalysis": "Subwooferen roses gentagne gange for sin dybe, kraftfulde og rumfyldende bas.",
-        "simpleTitle": "Kraftfuld, dyb bas",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
-       },
-       "easy pairing with compatible AMBEO soundbars": {
-        "sentimentAnalysis": "Flere anmeldelser beskriver, at subwooferen passer til eller nemt forbindes med AMBEO-soundbars.",
-        "simpleTitle": "Nem tilslutning til kompatible AMBEO-soundbars",
-        "bias": "positive",
-        "key": "compatibility",
-        "groupId": "471da204-3fc2-4ac2-8d6f-2de72aed55bb"
-       },
-       "a major upgrade to the AMBEO system": {
-        "sentimentAnalysis": "Subwooferen forbedrer den samlede lyd tydeligt, ikke kun bassen.",
-        "simpleTitle": "En markant opgradering af AMBEO-systemet",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
-       },
-       "wired connection has major technical problems": {
-        "sentimentAnalysis": "De fælles forbindelsesproblemer omfatter begrænset trådløs kompatibilitet og ustabil kablet drift.",
-        "simpleTitle": "Kablet forbindelse har store tekniske problemer",
-        "bias": "negative",
-        "key": "connectivity",
-        "groupId": "1fa0401a-deab-45e8-8a29-3b9495f0048a"
-       }
-      },
-      "grouping": {
-       "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802": {
-        "title": "Lydkvalitet",
-        "id": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802",
-        "references": [
-         "cad0bc27-aecc-475e-96da-254e9c9121b7",
-         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
-         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
-         "b035644b-45cc-4873-8c0c-d231fd846b18",
-         "b127c05e-4d48-4173-b224-f10c820bd1fb",
-         "946b650c-6d16-47fd-a655-43531efd1e89",
-         "5585073b-7a79-4c4d-8921-dc89f9c230e0",
-         "538053da-43c7-419e-852b-442d5299fdd3",
-         "8e39db97-d632-4360-9e37-c94c4e20fcb2"
-        ]
-       },
-       "471da204-3fc2-4ac2-8d6f-2de72aed55bb": {
-        "title": "Kompatibilitet og opsætning",
-        "id": "471da204-3fc2-4ac2-8d6f-2de72aed55bb",
-        "references": [
-         "4dff2e90-0aab-4b4f-8be5-34b2ffbe74c0",
-         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
-         "1795f296-9af8-4d1e-9126-ce8793b2538b",
-         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
-         "946b650c-6d16-47fd-a655-43531efd1e89",
-         "72037b3f-be1c-412d-b33e-bd81e6a3c331",
-         "0aa8ae45-e59e-41b8-a4ee-da1e7032b762",
-         "74cf1b88-5c0c-4b85-bc9e-2be41db584b0",
-         "f8f91aa5-d816-4750-ae4f-6cedb686b9ff"
-        ]
-       },
-       "1fa0401a-deab-45e8-8a29-3b9495f0048a": {
-        "title": "Forbindelse",
-        "id": "1fa0401a-deab-45e8-8a29-3b9495f0048a",
-        "references": [
-         "ab634f66-7e4c-4c6e-bc0d-946736a29c10",
-         "1795f296-9af8-4d1e-9126-ce8793b2538b"
-        ]
-       }
-      },
-      "rating": 4.86486486486486,
-      "count": 37,
-      "reviewCount": 18,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 2,
-       "4": 1,
-       "5": 34
-      }
-     }
+     "parentProductCode": "SENAMBEOSUB"
     }
    ],
    "sellableOnWeb": true,
@@ -281,21 +344,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 1
+    "numberOfStoresExperiencePartly": 2
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.74264705882353,
-   "count": 136,
+   "rating": 4.74452554744526,
+   "count": 137,
    "reviewCount": 79,
    "distribution": {
     "1": 2,
     "2": 1,
     "3": 5,
     "4": 14,
-    "5": 114
+    "5": 115
    }
   },
   "boxContent": [],

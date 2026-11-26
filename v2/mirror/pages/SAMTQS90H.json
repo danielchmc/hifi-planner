@@ -332,8 +332,8 @@
      "inStock": true,
      "description": "På lager. Levering om 2–5 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 12,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 9,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -634,8 +634,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 15,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 14,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -942,7 +942,7 @@
      "inStock": true,
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
+     "numberOfStoresExperience": 23,
      "availableQuantity": 99,
      "inventoryStatusType": "dropshippingInStock"
     },
@@ -1027,7 +1027,7 @@
     "productCode": "SAMTQ65S90H",
     "ean": "8806097962564",
     "priceDetails": {
-     "priceValueId": 1219262,
+     "priceValueId": 1222700,
      "price": 11999,
      "priceFormatted": "11.999,-",
      "priceBefore": 18999,
@@ -1244,8 +1244,8 @@
      "inStock": true,
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 61,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 96,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -1544,10 +1544,10 @@
      "productCode": "SAMTQ77S90H"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 22. november",
-     "deliveryDate": "2026-11-22T01:00:00Z",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T13:42:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
+     "numberOfStoresExperience": 23,
      "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
@@ -1632,7 +1632,7 @@
     "productCode": "SAMTQ83S90H",
     "ean": "8806099008116",
     "priceDetails": {
-     "priceValueId": 1218181,
+     "priceValueId": 1223014,
      "price": 19990,
      "priceFormatted": "19.990,-",
      "priceBefore": 36999,
@@ -1847,11 +1847,11 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 2-3 hverdage",
+     "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 20,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {
@@ -1896,6 +1896,7 @@
     },
     "url": "/samsung-s90h-oled-tv/samtq83s90h/",
     "canonicalUrl": "/samsung-s90h-oled-tv/samtq83s90h/",
+    "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
       "ESSTVBMICROGAP09X",

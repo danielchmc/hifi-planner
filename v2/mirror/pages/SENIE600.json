@@ -58,8 +58,8 @@
     "DENAHD5200",
     "BEYT5V3",
     "AUDLCD2CLASSIC",
-    "AUDLCDS20X",
-    "SENHD660S2"
+    "SENHD660S2",
+    "AUDLCDS20X"
    ],
    "isOutlet": "false"
   },
@@ -219,8 +219,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 3,
-     "availableQuantity": 34,
+     "numberOfStoresExperience": 4,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -325,48 +325,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENIE600 leverer en fænomenal, meget detaljeret og medrivende lyd med en klar og levende gengivelse, stram bas og imponerende musikalsk nærvær. Komforten er generelt fremragende og gør lange, træthedsfrie lytteoplevelser mulige med de rigtige ørepropper. Byggekvalitet og æstetik virker eksklusive, men det medfølgende kabel og ørepropperne kritiseres for mikrofonisk støj, beskeden kvalitet og ustabil pasform.",
+   "summary": "SENIE600 leverer en enestående, detaljeret og medrivende lyd med stram bas, klare mellemtoner og livlige diskantområder. Komforten er generelt fremragende, men den rigtige forsegling kan kræve, at man prøver forskellige ørepropper, og nogle brugere oplever problemer med pasform eller ørebøjler. Kablet og de medfølgende ørepropper er de største svagheder, men den fremragende musikgengivelse gør produktet særdeles anbefalelsesværdigt.",
    "headlines": {
-    "phenomenally detailed and immersive sound": {
-     "sentimentAnalysis": "IE600 roses gentagne gange for en fænomenal gengivelse på referenceniveau, der får musikken til at føles ny og dybt medrivende.",
-     "simpleTitle": "Fænomenalt detaljeret og medrivende lyd",
+    "exceptional detail and musical immersion": {
+     "sentimentAnalysis": "Lyden beskrives gentagne gange som fænomenal, meget detaljeret, klar og dybt medrivende på tværs af genrer.",
+     "simpleTitle": "Enestående detaljer og musikalsk indlevelse",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0"
+     "key": "exceptional_detail",
+     "groupId": "d4a78076-9faa-4195-bcd5-a4b20b227cb4"
     },
-    "comfortable for long, fatigue-free listening": {
-     "sentimentAnalysis": "Komforten roses konsekvent, og øretelefonerne føles næsten usynlige i øret uden nævneværdig lyttetræthed ved længere tids brug.",
-     "simpleTitle": "Behagelig ved langvarig lytning uden træthed",
+    "comfortable for extended listening": {
+     "sentimentAnalysis": "Komforten beskrives som fremragende, træthedsfri og næsten umærkelig ved gentagen eller længere tids lytning.",
+     "simpleTitle": "Komfortabel ved længere tids lytning",
      "bias": "positive",
-     "key": "comfort",
-     "groupId": "9f743217-8cba-4933-9dc1-017113e6e19c"
+     "key": "long_listening_comfort",
+     "groupId": "6730e735-aa93-4919-b069-ed8c5efa05a6"
     },
-    "clear, lively tuning with tight bass": {
-     "sentimentAnalysis": "Lydsignaturen beskrives som klar og lys med stærke detaljer i mellemtoner og diskant, mens bassen forbliver kontrolleret, stram og fyldig uden at virke overdrevet.",
-     "simpleTitle": "Klar og levende lyd med stram bas",
+    "bright, clear presentation with strong bass": {
+     "sentimentAnalysis": "Klangbalancen roses for klare mellemtoner og diskant, kontrolleret eller stram bas samt høj detaljeopløsning.",
+     "simpleTitle": "Lys og klar gengivelse med kraftig bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0"
+     "key": "bright_clear_sound",
+     "groupId": "d4a78076-9faa-4195-bcd5-a4b20b227cb4"
     },
-    "the included cable and ear tips need improvement": {
-     "sentimentAnalysis": "Den hårdeste kritik retter sig mod standardtilbehøret: Ørepropperne kan have svært ved at slutte tæt, mens kablet overfører berøringsstøj og virker under niveau for prisen.",
-     "simpleTitle": "Det medfølgende kabel og ørepropperne kan forbedres",
+    "cable quality and microphonics disappoint": {
+     "sentimentAnalysis": "Det medfølgende kabel kritiseres som skuffende til prisen, især på grund af kraftig berøringsstøj og et uattraktivt stik.",
+     "simpleTitle": "Kabelkvalitet og mikrofonie skuffer",
      "bias": "negative",
-     "key": "cable-build",
-     "groupId": "cfa1bab4-fb54-4c67-ac54-1f26765d5540"
-    },
-    "cable construction is sturdy and has improved": {
-     "sentimentAnalysis": "Nogle indtryk af kablet er positive og fremhæver den solide konstruktion samt et senere, blødere og mere fleksibelt design.",
-     "simpleTitle": "Kablet er solidt og er blevet forbedret",
-     "bias": "positive",
-     "key": "cable-build",
-     "groupId": "cfa1bab4-fb54-4c67-ac54-1f26765d5540"
+     "key": "cable_issues",
+     "groupId": "cffd6b95-bc46-478b-a352-b8612c2bcb50"
     }
    },
    "grouping": {
-    "0dd5485e-52fc-4e4a-81c6-ca9d078646d0": {
+    "d4a78076-9faa-4195-bcd5-a4b20b227cb4": {
      "title": "Lydkvalitet",
-     "id": "0dd5485e-52fc-4e4a-81c6-ca9d078646d0",
+     "id": "d4a78076-9faa-4195-bcd5-a4b20b227cb4",
      "references": [
       "e5230c1d-e001-49b4-a428-e365972a8400",
       "3212118a-4b45-4d26-ba23-7e97d01db956",
@@ -381,9 +374,9 @@
       "10a79560-28bc-420f-ab6f-70f625d3d4bc"
      ]
     },
-    "9f743217-8cba-4933-9dc1-017113e6e19c": {
+    "6730e735-aa93-4919-b069-ed8c5efa05a6": {
      "title": "Komfort og pasform",
-     "id": "9f743217-8cba-4933-9dc1-017113e6e19c",
+     "id": "6730e735-aa93-4919-b069-ed8c5efa05a6",
      "references": [
       "495d8b87-671a-4f4d-8898-650b04a390bf",
       "24837787-e27f-4740-aadd-52268aac81af",
@@ -395,11 +388,10 @@
       "b29223c5-537d-4d96-819d-12b83a0f8f07"
      ]
     },
-    "cfa1bab4-fb54-4c67-ac54-1f26765d5540": {
-     "title": "Kabel og byggekvalitet",
-     "id": "cfa1bab4-fb54-4c67-ac54-1f26765d5540",
+    "cffd6b95-bc46-478b-a352-b8612c2bcb50": {
+     "title": "Kabel og tilbehør",
+     "id": "cffd6b95-bc46-478b-a352-b8612c2bcb50",
      "references": [
-      "43e78a72-32b5-4385-a171-96cc4d09cad2",
       "3212118a-4b45-4d26-ba23-7e97d01db956",
       "495d8b87-671a-4f4d-8898-650b04a390bf",
       "69779970-20f7-49cb-ba69-147c410a9b9f",

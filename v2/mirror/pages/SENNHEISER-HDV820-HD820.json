@@ -31,10 +31,10 @@
    "productCodes": [
     "BLSN132",
     "BLSN530",
-    "MARACD60X",
-    "DENDNP2000NE",
     "DENDCD1700NE",
-    "MARACD50N"
+    "MARACD60X",
+    "MARACD50N",
+    "DENDNP2000NE"
    ],
    "isOutlet": "false"
   },
@@ -95,7 +95,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 11,
+        "availableQuantity": 6,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "14.999,-",
@@ -156,7 +156,8 @@
    "inventoryStatus": {
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
-    "canBuyOnline": true
+    "canBuyOnline": true,
+    "numberOfStoresExperiencePartly": 1
    }
   },
   "variantNavigationType": "dropDown",

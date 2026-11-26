@@ -223,7 +223,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 73,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -355,48 +355,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENAMBEOSBPLUS leverer enestående klar, fyldig og kraftfuld lyd til tv, film og musik med dyb bas og en imponerende rumlig gengivelse, selv uden subwoofer. Dialoger er særligt tydelige, mens AMBEO-behandlingen skaber en medrivende biograflignende lyd, selv om surroundeffekter bagfra er mindre overbevisende end lydbilledet forfra og fra siderne. Opsætning og appstyring fungerer generelt godt, men tilbagevendende forbindelses-, opstarts-, app- og firmwareproblemer gør, at oplevelsen ikke altid er helt problemfri.",
+   "summary": "SENNHEISER AMBEO Plus leverer en varm, detaljeret og kraftfuld lyd, der løfter tv, film og musik markant, med imponerende bas selv uden subwoofer. Immersiv lyd fra fronten, overbevisende 3D-effekter og særdeles tydelig dialog skaber biografstemning i et kompakt og elegant design. Opsætning og stabilitet i daglig brug kan dog være ujævn, da appnedbrud, forbindelsesproblemer og lejlighedsvise opstartsforsinkelser forhindrer en helt fejlfri oplevelse.",
    "headlines": {
-    "rich, powerful sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent lyden som klar, fyldig, balanceret og kraftfuld med overraskende stærk bas selv uden subwoofer.",
-     "simpleTitle": "Fyldig og kraftfuld lyd med dyb bas",
+    "rich, powerful sound with strong bass": {
+     "sentimentAnalysis": "Anmelderne roser den fyldige, klare og kraftfulde gengivelse, især den dybe bas selv uden ekstra subwoofer.",
+     "simpleTitle": "Fyldig og kraftfuld lyd med stærk bas",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "99c1d57a-7a73-4141-bfeb-0efe9cccafec"
+     "key": "sound",
+     "groupId": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541"
     },
-    "setup is easy, but reliability is inconsistent": {
-     "sentimentAnalysis": "Selv om opsætningen er enkel for mange ejere, skaber gentagne appnedbrud, forbindelsesfejl, opstartsproblemer, fastlåsninger og nulstillinger betydelig frustration.",
-     "simpleTitle": "Nem opsætning, men ustabil drift",
+    "clear dialogue and balanced detail": {
+     "sentimentAnalysis": "Tydelig tale, taleforstærkning og en naturlig, afbalanceret klang gør dialoger nemme at følge i film, tv og spil.",
+     "simpleTitle": "Tydelig dialog og afbalancerede detaljer",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541"
+    },
+    "app and startup reliability issues": {
+     "sentimentAnalysis": "Flere anmeldelser nævner appnedbrud, fastfrysninger, opdateringsproblemer, manglende lyd ved opstart samt langsom eller ustabil opstart, der kræver nulstilling eller genstart.",
+     "simpleTitle": "Problemer med app og opstart",
      "bias": "negative",
      "key": "reliability",
-     "groupId": "31655bb9-0aa6-4e45-81df-73b97c9a0893"
+     "groupId": "56b0d454-d48f-4dc5-9469-d350d0085a26"
     },
-    "dialogue is exceptionally clear": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange tydelig tale og nyttig taleforstærkning til film, serier og tv.",
-     "simpleTitle": "Ekstremt tydelig dialog",
+    "convincing 3D sound, but limited rear surround": {
+     "sentimentAnalysis": "Lydscenen og 3D-behandlingen roses bredt, mens effekter bagfra er mindre overbevisende end den brede gengivelse forfra og fra siderne.",
+     "simpleTitle": "Overbevisende 3D-lyd, men begrænset surround bagfra",
+     "bias": "meh",
+     "key": "surround",
+     "groupId": "21e69dad-39b2-4818-84c9-d1544f7ed51c"
+    },
+    "easy app-based setup and adjustment": {
+     "sentimentAnalysis": "App, manual og indstillingsmuligheder gør opsætning og lydtilpasning enkel for mange brugere.",
+     "simpleTitle": "Nem opsætning og justering via app",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "99c1d57a-7a73-4141-bfeb-0efe9cccafec"
-    },
-    "immersive front and side soundstage": {
-     "sentimentAnalysis": "AMBEO skaber en stor, biograflignende lydboble med overbevisende 3D- og sideeffekter, så film føles medrivende selv uden baghøjttalere.",
-     "simpleTitle": "Medrivende lydbillede forfra og fra siderne",
-     "bias": "positive",
-     "key": "surround-soundstage",
-     "groupId": "701ddec0-109c-4b28-a67d-cc8c12367176"
-    },
-    "rear surround effects are limited": {
-     "sentimentAnalysis": "Flere anmeldelser bemærker, at soundbaren ikke kan gengive fuld surroundlyd bagfra, og at der mangler fysiske trådløse baghøjttalere.",
-     "simpleTitle": "Begrænsede surroundeffekter bagfra",
-     "bias": "negative",
-     "key": "surround-soundstage",
-     "groupId": "701ddec0-109c-4b28-a67d-cc8c12367176"
+     "key": "setup",
+     "groupId": "29411992-2c82-4147-b2aa-d91028124f2a"
     }
    },
    "grouping": {
-    "99c1d57a-7a73-4141-bfeb-0efe9cccafec": {
+    "9b70ee5d-c5e0-4253-b671-4f5f9b85b541": {
      "title": "Lydkvalitet",
-     "id": "99c1d57a-7a73-4141-bfeb-0efe9cccafec",
+     "id": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541",
      "references": [
       "7612093c-da71-410f-8dab-e92d523f7923",
       "8e43d287-7b5c-488a-aaff-c81c208451d2",
@@ -437,9 +437,9 @@
       "ff43c54b-2f74-4782-bc1c-3e861bd47188"
      ]
     },
-    "31655bb9-0aa6-4e45-81df-73b97c9a0893": {
-     "title": "Driftssikkerhed og forbindelse",
-     "id": "31655bb9-0aa6-4e45-81df-73b97c9a0893",
+    "56b0d454-d48f-4dc5-9469-d350d0085a26": {
+     "title": "Stabilitet og forbindelser",
+     "id": "56b0d454-d48f-4dc5-9469-d350d0085a26",
      "references": [
       "57066ff1-3c93-4444-974b-ced4f72d84a3",
       "a15a746d-4fad-4904-81d2-c94ef1c38fa9",
@@ -452,16 +452,32 @@
       "ff43c54b-2f74-4782-bc1c-3e861bd47188"
      ]
     },
-    "701ddec0-109c-4b28-a67d-cc8c12367176": {
-     "title": "Surroundlyd",
-     "id": "701ddec0-109c-4b28-a67d-cc8c12367176",
+    "29411992-2c82-4147-b2aa-d91028124f2a": {
+     "title": "Opsætning og betjening",
+     "id": "29411992-2c82-4147-b2aa-d91028124f2a",
+     "references": [
+      "8e43d287-7b5c-488a-aaff-c81c208451d2",
+      "26f66d38-7bbf-424d-96bc-659c48eefa63",
+      "8c3466bc-a0c2-48fa-a4a2-a8f610dcf449",
+      "8da9c15d-775d-4436-9f5e-0e81c4f63b5e",
+      "44b35fc8-e397-4417-9979-0c462204df8f",
+      "957bd61a-f83f-40ae-bc51-8c2295cfe951",
+      "546c3c65-85f4-4a83-abe4-df692f6197ae",
+      "e0273fa4-2703-43a3-9768-60b5b80a139a"
+     ]
+    },
+    "21e69dad-39b2-4818-84c9-d1544f7ed51c": {
+     "title": "Surround og rumlig lyd",
+     "id": "21e69dad-39b2-4818-84c9-d1544f7ed51c",
      "references": [
       "8cf2cff0-e013-46be-90bb-b8fe86dea816",
-      "6daffb82-06a4-4599-bd45-c2a9e6e28ccb",
       "668ce6a6-3114-489c-9b27-8abcf5413f66",
+      "6daffb82-06a4-4599-bd45-c2a9e6e28ccb",
       "1d92363f-3b29-4d2b-9fc2-7b0af4ade418",
+      "452db3bf-d2c0-4936-9684-4bd856810b67",
       "5fe0b60e-a083-4446-8d03-484222a1e1f0",
-      "452db3bf-d2c0-4936-9684-4bd856810b67"
+      "8d7a89bf-86c9-490f-80cc-9150bb313b7a",
+      "957bd61a-f83f-40ae-bc51-8c2295cfe951"
      ]
     }
    },

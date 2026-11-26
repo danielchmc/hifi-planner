@@ -57,10 +57,10 @@
     "DALIIO8",
     "SENRS275",
     "ARGHPQUIETSTORM",
+    "DALIIO6",
     "BWPX7S2E",
     "BOHX",
-    "SONYWH1000XX",
-    "DALIIO6"
+    "SONYWH1000XX"
    ],
    "isOutlet": "false"
   },
@@ -223,7 +223,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 402,
+     "availableQuantity": 366,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -293,26 +293,11 @@
      "priceValueId": 1217676,
      "price": 2785,
      "priceFormatted": "2.785,-",
-     "priceBefore": 2990,
-     "priceBeforeFormatted": "2.990,-",
-     "priceSavingsFormatted": "205,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2785,
-     "unitPriceBefore": 2990
+     "unitPrice": 2785
     },
-    "ribbons": [
-     {
-      "text": "Spar 7%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
     "techSpecs": [
      {
       "index": 37,
@@ -351,7 +336,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 273,
+     "availableQuantity": 265,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -452,7 +437,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 78,
+     "availableQuantity": 76,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -547,7 +532,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "5,6000000000000005 x 21,8 x 20,3 cm (bredde x højde x dybde)"
+        "value": "5,6 x 21,8 x 20,3 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -560,7 +545,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 194,
+     "availableQuantity": 190,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -651,55 +636,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SENMOMENTUM5 leverer en varm, musikalsk og slagkraftig lyd med klare mellemtoner, kraftig bas og en omsluttende gengivelse. Komfort, ANC, batteritid og brugervenlighed bliver bredt rost, hvilket gør hovedtelefonerne attraktive til lang tids lytning, pendling og arbejde. Mindre forbehold gælder ustabil betjening eller sensorer, begrænsede EQ-funktioner, lejlighedsvis tryk på hovedet, byggekvaliteten og ANC-ydelsen sammenlignet med de bedste konkurrenter.",
+   "summary": "SENMOMENTUM5 leverer en varm, slagkraftig og meget musikalsk lyd med klare mellemtoner, kraftig bas og en omsluttende gengivelse. Komfort, batteritid og støjkontrol er stærke sider, som gør hovedtelefonerne velegnede til lang tids lytning, pendling og hverdagsbrug. De største ulemper er ANC, der ikke er bedst i klassen, lidt følsomme betjeningselementer eller sensorer, begrænsede equalizer-muligheder og visse bekymringer om byggekvaliteten.",
    "headlines": {
     "warm, powerful and musical sound": {
-     "sentimentAnalysis": "Hovedtelefonerne roses gentagne gange for klar, musikalsk og meget engagerende lyd med varm bas og stærk dynamik.",
+     "sentimentAnalysis": "Hovedtelefonerne roses gentagne gange for en klar, varm, kraftfuld og meget musikalsk lyd, især den engagerende bas.",
      "simpleTitle": "Varm, kraftfuld og musikalsk lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "a8bac4fb-394a-48dd-af47-5f9d53ef7025"
+     "groupId": "31cc966a-8209-49dd-b84e-05ee66670430"
     },
-    "comfortable for extended wear": {
-     "sentimentAnalysis": "Komforten værdsættes især ved lange lytte-sessioner, arbejdsmøder og brug sammen med briller.",
-     "simpleTitle": "Komfortable ved længere tids brug",
+    "effective noise cancellation and transparency mode": {
+     "sentimentAnalysis": "Støjreduktionen vurderes generelt som stærk, og transparenstilstanden får også særlig ros.",
+     "simpleTitle": "Effektiv støjreduktion og transparenstilstand",
+     "bias": "positive",
+     "key": "anc",
+     "groupId": "9b0696c7-c8ce-4f4f-8ae8-49f687cca7ab"
+    },
+    "comfortable for long listening and glasses": {
+     "sentimentAnalysis": "Pasformen beskrives gentagne gange som komfortabel, også ved lang tids lytning og brug af briller.",
+     "simpleTitle": "Komfortable ved lang tids lytning og med briller",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "069486a4-3a5c-40b9-85e3-d401eb6946ef"
+     "groupId": "43dc7297-b70f-43c9-810d-937be50288b6"
     },
-    "anc effectively blocks surrounding noise": {
-     "sentimentAnalysis": "ANC betragtes som stærk og nyttig til pendling og daglig støjisolering og kan måle sig med en anerkendt ældre Sony-model.",
-     "simpleTitle": "ANC lukker effektivt omgivende støj ude",
+    "sound is better than the Sony XM4, but EQ options are limited": {
+     "sentimentAnalysis": "Lyden opleves som en klar forbedring i forhold til Sony XM4, mens manglende parametrisk EQ begrænser avanceret tilpasning.",
+     "simpleTitle": "Bedre lyd end Sony XM4, men begrænsede EQ-muligheder",
      "bias": "positive",
-     "key": "anc",
-     "groupId": "083aff42-51cd-4268-a039-3a9f803b07d1"
+     "key": "sound",
+     "groupId": "31cc966a-8209-49dd-b84e-05ee66670430"
     },
-    "controls and sensors can be inconsistent": {
-     "sentimentAnalysis": "Automatisk pause samt afspilnings- og pausebetjening udløses eller reagerer ifølge anmeldelser ustabilt, mens berøringsbevægelser kan føles besværlige.",
-     "simpleTitle": "Betjening og sensorer er ikke altid pålidelige",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "bb5a4f5b-2d3b-4498-ab12-2dec737f71f6"
-    },
-    "anc is weaker than the best Sony alternative": {
-     "sentimentAnalysis": "ANC roses samlet set, men når ikke de stærkeste rejsefokuserede konkurrenter i absolut ydeevne.",
-     "simpleTitle": "ANC er svagere end hos det bedste Sony-alternativ",
+    "anc is good but weaker than the Sony XM4": {
+     "sentimentAnalysis": "ANC fungerer godt generelt, men når ikke niveauet fra de stærkeste konkurrenter eller tidligere modeller til rejsebrug.",
+     "simpleTitle": "ANC er god, men svagere end på Sony XM4",
      "bias": "negative",
      "key": "anc",
-     "groupId": "083aff42-51cd-4268-a039-3a9f803b07d1"
+     "groupId": "9b0696c7-c8ce-4f4f-8ae8-49f687cca7ab"
     },
-    "limited EQ options": {
-     "sentimentAnalysis": "Appen giver nyttige lydjusteringer, men avanceret parametrisk EQ mangler for brugere, der ønsker dybere tilpasning.",
-     "simpleTitle": "Begrænsede EQ-muligheder",
+    "long-lasting battery": {
+     "sentimentAnalysis": "Batteritiden vurderes som fremragende og forbliver imponerende høj selv ved daglig intensiv brug med batteribeskyttelse aktiveret.",
+     "simpleTitle": "Lang batteritid",
+     "bias": "positive",
+     "key": "battery",
+     "groupId": "721d545e-5f5d-4266-b1bb-fe2c6e0ad0c9"
+    },
+    "controls and sensors can be unreliable": {
+     "sentimentAnalysis": "Automatisk pause og afspilnings-/pausebetjening kan udløses forkert eller registreres ustabilt, især med computere.",
+     "simpleTitle": "Betjening og sensorer kan være upålidelige",
      "bias": "negative",
      "key": "controls",
-     "groupId": "bb5a4f5b-2d3b-4498-ab12-2dec737f71f6"
+     "groupId": "a8ba8242-b543-424b-b524-f95fe263a013"
+    },
+    "build quality remains a concern": {
+     "sentimentAnalysis": "Design og den generelle konstruktion vurderes positivt af nogle, men holdbarhed og oplevet byggekvalitet kritiseres stadig.",
+     "simpleTitle": "Byggekvaliteten er stadig et kritikpunkt",
+     "bias": "negative",
+     "key": "build",
+     "groupId": "dded608b-1b8e-4b5b-ad43-9b73e223b25e"
     }
    },
    "grouping": {
-    "a8bac4fb-394a-48dd-af47-5f9d53ef7025": {
+    "31cc966a-8209-49dd-b84e-05ee66670430": {
      "title": "Lydkvalitet",
-     "id": "a8bac4fb-394a-48dd-af47-5f9d53ef7025",
+     "id": "31cc966a-8209-49dd-b84e-05ee66670430",
      "references": [
       "95aad61a-5bce-42e9-94b1-93458ef3e2de",
       "26d8ca33-7b50-4ce0-8276-575edfdcf18c",
@@ -708,23 +707,22 @@
       "3a4ad588-2cb2-4496-88de-71e966ecae70",
       "1af292c4-0ca8-412b-a444-532ebb29f89b",
       "3bbcfa06-3d8c-437e-aba8-2f386c7c5732",
+      "dad46083-a009-4c01-bacd-79fce9703b05",
       "c4a03d9e-c326-461e-9a78-b0d9053c0e29",
-      "78bb9c8d-872c-4e52-94ee-e8f190c50bf8",
-      "8e2fc9e2-a41c-4aa6-b103-220abed1fae0",
-      "eaefe5cd-8a3d-4d59-892c-4e041e1b2ce5",
-      "052ffec7-d557-4a72-843a-185a00d6025e",
       "2e22f8f3-7f2c-4742-a547-5b66211e4502",
       "fbccb43b-e6b0-467a-b4f7-9a66c443c203",
       "d81a2886-92a1-4715-96d3-75b577479e9f",
       "77e0a505-a6ba-41b6-9aba-b084c797ccc7",
       "48d26591-a1bb-45e8-bdbf-19aee4c55ded",
       "57acc8f8-8fb4-449a-bbf6-4beed18277b7",
+      "eaefe5cd-8a3d-4d59-892c-4e041e1b2ce5",
+      "052ffec7-d557-4a72-843a-185a00d6025e",
       "c0b9043d-08ac-41d4-9eb7-a81c567cfdbb"
      ]
     },
-    "069486a4-3a5c-40b9-85e3-d401eb6946ef": {
+    "43dc7297-b70f-43c9-810d-937be50288b6": {
      "title": "Komfort",
-     "id": "069486a4-3a5c-40b9-85e3-d401eb6946ef",
+     "id": "43dc7297-b70f-43c9-810d-937be50288b6",
      "references": [
       "41d8800a-cdfc-43e3-b427-5375de4a6e27",
       "d2a03914-789f-4a67-9d4f-6a931dccf6fb",
@@ -736,9 +734,9 @@
       "48d26591-a1bb-45e8-bdbf-19aee4c55ded"
      ]
     },
-    "083aff42-51cd-4268-a039-3a9f803b07d1": {
+    "9b0696c7-c8ce-4f4f-8ae8-49f687cca7ab": {
      "title": "Støjreduktion",
-     "id": "083aff42-51cd-4268-a039-3a9f803b07d1",
+     "id": "9b0696c7-c8ce-4f4f-8ae8-49f687cca7ab",
      "references": [
       "41d8800a-cdfc-43e3-b427-5375de4a6e27",
       "3a4ad588-2cb2-4496-88de-71e966ecae70",
@@ -749,27 +747,43 @@
       "48d26591-a1bb-45e8-bdbf-19aee4c55ded"
      ]
     },
-    "bb5a4f5b-2d3b-4498-ab12-2dec737f71f6": {
-     "title": "Betjening og app",
-     "id": "bb5a4f5b-2d3b-4498-ab12-2dec737f71f6",
+    "dded608b-1b8e-4b5b-ad43-9b73e223b25e": {
+     "title": "Byggekvalitet og design",
+     "id": "dded608b-1b8e-4b5b-ad43-9b73e223b25e",
      "references": [
-      "41d8800a-cdfc-43e3-b427-5375de4a6e27",
+      "3a4ad588-2cb2-4496-88de-71e966ecae70",
+      "c4a03d9e-c326-461e-9a78-b0d9053c0e29",
+      "fbccb43b-e6b0-467a-b4f7-9a66c443c203",
+      "48d26591-a1bb-45e8-bdbf-19aee4c55ded"
+     ]
+    },
+    "a8ba8242-b543-424b-b524-f95fe263a013": {
+     "title": "Betjening",
+     "id": "a8ba8242-b543-424b-b524-f95fe263a013",
+     "references": [
       "d2a03914-789f-4a67-9d4f-6a931dccf6fb",
       "dad46083-a009-4c01-bacd-79fce9703b05",
-      "48d26591-a1bb-45e8-bdbf-19aee4c55ded",
-      "c0b9043d-08ac-41d4-9eb7-a81c567cfdbb"
+      "48d26591-a1bb-45e8-bdbf-19aee4c55ded"
+     ]
+    },
+    "721d545e-5f5d-4266-b1bb-fe2c6e0ad0c9": {
+     "title": "Batteritid",
+     "id": "721d545e-5f5d-4266-b1bb-fe2c6e0ad0c9",
+     "references": [
+      "1af292c4-0ca8-412b-a444-532ebb29f89b",
+      "48d26591-a1bb-45e8-bdbf-19aee4c55ded"
      ]
     }
    },
-   "rating": 4.83050847457627,
-   "count": 59,
-   "reviewCount": 28,
+   "rating": 4.84126984126984,
+   "count": 63,
+   "reviewCount": 29,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 8,
-    "5": 50
+    "5": 54
    }
   },
   "boxContent": [

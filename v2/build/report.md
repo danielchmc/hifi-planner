@@ -319,22 +319,7 @@ Guessed cable ends (check in the Editor: open the cable and set End A / End B):
 
 Stock pictures replaced by the website's photo (21): AudioQuest Rocket 33 Single-Wire - 1.5m, AudioQuest Rocket 33 Bi-Wire - 1.5m, AudioQuest Rocket 44 Bi-Wire - 1.5m, AudioQuest Rocket 44 - 1m, AudioQuest Rocket 33 - 1m, AudioQuest Slip XTRM 14/4 - 1m, AudioQuest Rocket 22 - 1m, AudioQuest Rocket 11 - 1m, AudioQuest Q2 - 1m, AudioQuest Slip 14/4 dB - 1m, AudioQuest Slip 14/2 dB - 1m, Essentials Excellence 1 Complete - 3.5m, Essentials Excellence 1 Complete - 2.5m, Essentials Wireless Audio Adapter, Essentials Prime Speaker Cable 2 - 1m, Essentials Prime Speaker Cable - 1m, Essentials Classic Speaker Cable 2 - 1m, Essentials CL1 SC Pro - 1m, Hegel C55, Hegel C54, Hegel C53.
 
-Since the previous build: 2 price changes, 0 products added, 7 removed.
-
-**Price changes**
-
-- Bowers & Wilkins ISW-6: 12599 → undefined
-- CANVAS HiFi CANVAS: 23499 → undefined
-
-**Removed**
-
-- Clic Alu Stands 1
-- Clic Alu Stands 2
-- Clic Alu stands 3
-- unnu 12S v2
-- unnu 13S v2
-- unnu 210 LP v2
-- unnu 230 v2
+Since the previous build: 0 price changes, 0 products added, 0 removed.
 
 **Held prices** (a big price drop is not taken until checked: the old, higher price is shown without a discount; a price rise is always taken at once)
 
