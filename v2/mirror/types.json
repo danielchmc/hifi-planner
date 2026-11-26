@@ -27,13 +27,13 @@
    "cats": {
     "Højtaler > Trådløs / Bluetooth højtaler": 38
    },
-   "count": 39,
+   "count": 38,
    "bundles": 11,
-   "outlet": 1,
+   "outlet": 0,
    "products": 27,
    "inCatalogue": 27,
    "variantAxes": {
-    "colorOptions": 27,
+    "colorOptions": 26,
     "none": 11,
     "dropDown": 1
    },
@@ -262,18 +262,18 @@
   {
    "type": "Soundbar",
    "keys": {
-    "Soundbar": 26
+    "Soundbar": 25
    },
    "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 26
+    "TV > Soundbar højtaler / TV-lyd": 25
    },
-   "count": 28,
+   "count": 27,
    "bundles": 4,
    "outlet": 2,
-   "products": 22,
-   "inCatalogue": 22,
+   "products": 21,
+   "inCatalogue": 21,
    "variantAxes": {
-    "colorOptions": 22,
+    "colorOptions": 21,
     "none": 4,
     "sizeSelector": 1,
     "dropDown": 1
@@ -994,28 +994,6 @@
    ]
   },
   {
-   "type": "Passiv subwoofer",
-   "keys": {
-    "PassiveSubwoofer": 10
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 10
-   },
-   "count": 10,
-   "bundles": 1,
-   "outlet": 0,
-   "products": 9,
-   "inCatalogue": 9,
-   "variantAxes": {
-    "colorOptions": 9,
-    "none": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Subwoofers"
-   ]
-  },
-  {
    "type": "Pladespillertilbehør",
    "keys": {
     "TurntableAccessories": 10
@@ -1117,25 +1095,6 @@
    ]
   },
   {
-   "type": "Møbel",
-   "keys": {
-    "Furniture": 9
-   },
-   "cats": {
-    "Tilbehør > Møbler": 9
-   },
-   "count": 9,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 9,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 9
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "OLED TV",
    "keys": {
     "OLEDTV": 7
@@ -1155,6 +1114,28 @@
    "hifiPlanner": [
     "TV",
     "OLED"
+   ]
+  },
+  {
+   "type": "Passiv subwoofer",
+   "keys": {
+    "PassiveSubwoofer": 9
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 9
+   },
+   "count": 9,
+   "bundles": 1,
+   "outlet": 0,
+   "products": 8,
+   "inCatalogue": 8,
+   "variantAxes": {
+    "colorOptions": 8,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
    ]
   },
   {
@@ -1657,25 +1638,23 @@
    "hifiPlanner": []
   },
   {
-   "type": "Mini-LED TV",
+   "type": "Møbel",
    "keys": {
-    "MiniLED": 5
+    "Furniture": 5
    },
    "cats": {
-    "TV > TV": 5
+    "Tilbehør > Møbler": 5
    },
    "count": 5,
    "bundles": 0,
-   "outlet": 2,
-   "products": 3,
-   "inCatalogue": 3,
+   "outlet": 0,
+   "products": 5,
+   "inCatalogue": 0,
    "variantAxes": {
-    "sizeSelector": 5
+    "colorOptions": 5
    },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
+   "mapped": null,
+   "hifiPlanner": []
   },
   {
    "type": "Opgradering",
@@ -1948,6 +1927,27 @@
    ]
   },
   {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 4
+   },
+   "cats": {
+    "TV > TV": 4
+   },
+   "count": 4,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "sizeSelector": 4
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
    "type": "Multirumsforstærker",
    "keys": {
     "MultiRoomAmplifier": 4
@@ -2039,25 +2039,6 @@
    },
    "cats": {
     "Tilbehør > Højtaler tilbehør": 3
-   },
-   "count": 3,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 3,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 3
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "Fødder",
-   "keys": {
-    "Foot": 3
-   },
-   "cats": {
-    "Tilbehør > Møbel tilbehør": 3
    },
    "count": 3,
    "bundles": 0,

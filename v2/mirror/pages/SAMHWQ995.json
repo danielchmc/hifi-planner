@@ -65,6 +65,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløs TV-soundbar med trådløs subwoofer og trådløse baghøjtalere\nTrådløs Dolby Atmos afspilning (med kompatible Samsung TV fra 2022 og fremefter)*\nIndbygget Bluetooth (SBC), AirPlay, Chromecast, Spotify Connect, TIDAL Connect, Roon Ready\nKontrol via Samsung SmartThings App\nDual-band trådløst wi-fi 802.11 a/b/g/n (2,4GHz / 5GHz)\nHDMI 2.1 (eARC, 4K/120, HDR10+, HDCP 2.2)\nVideo Pass Through med 4K/120Hz\nAuto-tænd/sluk inkl. Bluetooth\n23 indbyggede højtalere\nLydformater: Dolby Atmos (11.1.4), Dolby True HD/Dolby Digital/Dolby Digital Plus/ DTS:X/DTS-HD Master Audio/DTS, MP3, AAC, ALAC, WAV, FLAC, OGG, AIFF, Atmos Music m.fl.\nActive Voice Amplifier Pro\nQ-symphony 3.0 / SpaceFit Sound Pro (med kompatible Samsung TV)*\nMaksimal opløsning: 24-bit/192 kHz \nAutomatisk Game Mode\nNight Mode / Voice Enhance / Private Rear Sound / Sound Grouping\nStandby strømforbrug (soundbar/subwoofer/baghøjtaler): 0,5 watt / 0,5 watt / 0,5 watt   \nMedfølgende tilbehør: HDMI-kabel, One Remote fjernbetjening, monteringsskabelon, vægbeslag \nMål: 123,2 x 7,0 x 13,8 cm (soundbar), 24,9 x 25,2 x 24,9 cm (subwoofer), 13,0 x 20,1 x 14,0 cm (baghøjtaler) (BxHxD)\nVægt: 7,3 kg (soundbar), 8,3 kg (subwoofer), 3,4 kg (baghøjtaler)\n* På ikke-matchende TV skal HW-Q995F tilsluttes med HDMI-kabel for optimal betjening, fuld lydkvalitet og afspilning af Dolby Atmos."
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -83,15 +92,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang, Wi-Fi"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløs TV-soundbar med trådløs subwoofer og trådløse baghøjtalere\nTrådløs Dolby Atmos afspilning (med kompatible Samsung TV fra 2022 og fremefter)*\nIndbygget Bluetooth (SBC), AirPlay, Chromecast, Spotify Connect, TIDAL Connect, Roon Ready\nKontrol via Samsung SmartThings App\nDual-band trådløst wi-fi 802.11 a/b/g/n (2,4GHz / 5GHz)\nHDMI 2.1 (eARC, 4K/120, HDR10+, HDCP 2.2)\nVideo Pass Through med 4K/120Hz\nAuto-tænd/sluk inkl. Bluetooth\n23 indbyggede højtalere\nLydformater: Dolby Atmos (11.1.4), Dolby True HD/Dolby Digital/Dolby Digital Plus/ DTS:X/DTS-HD Master Audio/DTS, MP3, AAC, ALAC, WAV, FLAC, OGG, AIFF, Atmos Music m.fl.\nActive Voice Amplifier Pro\nQ-symphony 3.0 / SpaceFit Sound Pro (med kompatible Samsung TV)*\nMaksimal opløsning: 24-bit/192 kHz \nAutomatisk Game Mode\nNight Mode / Voice Enhance / Private Rear Sound / Sound Grouping\nStandby strømforbrug (soundbar/subwoofer/baghøjtaler): 0,5 watt / 0,5 watt / 0,5 watt   \nMedfølgende tilbehør: HDMI-kabel, One Remote fjernbetjening, monteringsskabelon, vægbeslag \nMål: 123,2 x 7,0 x 13,8 cm (soundbar), 24,9 x 25,2 x 24,9 cm (subwoofer), 13,0 x 20,1 x 14,0 cm (baghøjtaler) (BxHxD)\nVægt: 7,3 kg (soundbar), 8,3 kg (subwoofer), 3,4 kg (baghøjtaler)\n* På ikke-matchende TV skal HW-Q995F tilsluttes med HDMI-kabel for optimal betjening, fuld lydkvalitet og afspilning af Dolby Atmos."
      }
     ]
    },
@@ -201,7 +201,7 @@
        },
        {
         "term": "Mål (produkt)",
-        "value": "123,2 x 7 x 13,1 cm (bredde x højde x dybde)"
+        "value": "123,2 x 7 x 13,08 cm (bredde x højde x dybde)"
        }
       ]
      },
@@ -253,7 +253,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 103,
+     "availableQuantity": 99,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -328,45 +328,104 @@
     ]
    }
   ],
-  "bundleRelations": [],
+  "bundleRelations": [
+   {
+    "modelType": "Micro RGB TV",
+    "price": {
+     "price": 20999,
+     "priceFormatted": "20.999,-",
+     "priceBefore": 41498,
+     "priceBeforeFormatted": "41.498,-",
+     "priceSavingsFormatted": "20.499,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 20999,
+     "unitPriceBefore": 41498
+    },
+    "image": "https://images.hifiklubben.com/image/372828da-abef-47d7-9871-27f18d82c16a",
+    "ribbons": [
+     {
+      "text": "Spar 49%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "R95H + HWQ995F",
+    "url": "/samtmr65r95h-samhwq995f/"
+   },
+   {
+    "modelType": "Micro RGB TV",
+    "price": {
+     "price": 12999,
+     "priceFormatted": "12.999,-",
+     "priceBefore": 24498,
+     "priceBeforeFormatted": "24.498,-",
+     "priceSavingsFormatted": "11.499,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 12999,
+     "unitPriceBefore": 24498
+    },
+    "image": "https://images.hifiklubben.com/image/8b03c286-20e8-4e92-a1a4-1f2334c08576",
+    "ribbons": [
+     {
+      "text": "Spar 47%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "R85H + HWQ995F",
+    "url": "/samtmrr85h-samhwq995f/"
+   }
+  ],
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SAMHWQ995 leverer en varm, kraftfuld og omsluttende lyd, der gør film og musik imponerende medrivende, med fyldig bas og overbevisende hjemmebiografstemning. Opsætning og daglig betjening er dejligt enkel, mens integrationen med Samsung-tv og den tilhørende app giver ekstra praktisk værdi. Den fremragende værdi for pengene og den markante opgradering fra ældre hjemmebiografsystemer gør denne soundbar særdeles attraktiv.",
+   "summary": "SAMHWQ995 leverer varm, kraftfuld og meget omsluttende lyd til både film og musik med en stærk basgengivelse, der kan forvandle stuen til en hjemmebiograf. Opsætning og daglig betjening er bemærkelsesværdigt enkel med praktisk app-styring og problemfri integration med Samsung-tv. Kombinationen af imponerende lydkvalitet, fleksibilitet og en rimelig pris gør denne soundbar til en særdeles overbevisende opgradering.",
    "headlines": {
-    "consistently excellent sound": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver den samlede lyd som overraskende god, fremragende eller næsten uovertruffen.",
-     "simpleTitle": "Konsekvent fremragende lyd",
+    "excellent sound for films and music": {
+     "sentimentAnalysis": "Lyden roses bredt som overraskende god, imponerende og velegnet til både film og musik.",
+     "simpleTitle": "Fremragende lyd til film og musik",
      "bias": "positive",
-     "key": "sound_excellent",
-     "groupId": "a05c3157-ec8d-47d8-bf6c-0e3a7f6b0019"
+     "key": "sound-quality",
+     "groupId": "3b2a3327-087a-40f4-87a9-b5a4bf7833da"
     },
-    "powerful, immersive sound": {
-     "sentimentAnalysis": "Lyden roses for kraftig bas, biografisk gennemslagskraft og en omsluttende hjemmebiografoplevelse.",
-     "simpleTitle": "Kraftfuld, omsluttende lyd",
+    "powerful bass and cinematic impact": {
+     "sentimentAnalysis": "Kraftig bas, Atmos-understøttelse og en omsluttende gengivelse skaber en overbevisende hjemmebiografoplevelse.",
+     "simpleTitle": "Kraftig bas og biografisk effekt",
      "bias": "positive",
-     "key": "sound_immersive",
-     "groupId": "a05c3157-ec8d-47d8-bf6c-0e3a7f6b0019"
+     "key": "sound-quality",
+     "groupId": "3b2a3327-087a-40f4-87a9-b5a4bf7833da"
     },
     "simple setup and operation": {
-     "sentimentAnalysis": "Produktet opleves som nemt at betjene med enkel opsætning og nyttige kontrolfunktioner.",
-     "simpleTitle": "Enkel opsætning og betjening",
+     "sentimentAnalysis": "Enkel betjening, nem opsætning og en nyttig app fremhæves som store styrker.",
+     "simpleTitle": "Nem opsætning og betjening",
      "bias": "positive",
-     "key": "usability_simple",
-     "groupId": "7b8de37f-76cc-4ffa-9029-8125d47fcb84"
+     "key": "ease-of-use",
+     "groupId": "d422b190-9fa5-410d-a027-56ba900537b0"
     },
-    "excellent value": {
-     "sentimentAnalysis": "Soundbaren roses for at levere meget god lyd til en rimelig pris.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "strong value for the price": {
+     "sentimentAnalysis": "Produktet betragtes som et vellydende og rimeligt prissat alternativ.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "value_excellent",
-     "groupId": "63602af2-78c6-4e51-84db-467d59de6bfb"
+     "key": "value-for-money",
+     "groupId": "878c5aed-bbeb-44bd-a196-a5982a224f3b"
     }
    },
    "grouping": {
-    "a05c3157-ec8d-47d8-bf6c-0e3a7f6b0019": {
+    "3b2a3327-087a-40f4-87a9-b5a4bf7833da": {
      "title": "Lydkvalitet",
-     "id": "a05c3157-ec8d-47d8-bf6c-0e3a7f6b0019",
+     "id": "3b2a3327-087a-40f4-87a9-b5a4bf7833da",
      "references": [
       "7b314b21-4945-40aa-bebb-da44c1e8f066",
       "02f21d22-af18-4170-94c3-4a5a3220dbd1",
@@ -379,17 +438,18 @@
       "56b0b7cb-609b-4808-a7bc-5e683fe25676"
      ]
     },
-    "7b8de37f-76cc-4ffa-9029-8125d47fcb84": {
+    "d422b190-9fa5-410d-a027-56ba900537b0": {
      "title": "Brugervenlighed",
-     "id": "7b8de37f-76cc-4ffa-9029-8125d47fcb84",
+     "id": "d422b190-9fa5-410d-a027-56ba900537b0",
      "references": [
       "f82bf9a6-79f3-41d2-94eb-921ae58903c0",
+      "6eedc495-9777-46e5-9660-9fa099c9aff1",
       "56b0b7cb-609b-4808-a7bc-5e683fe25676"
      ]
     },
-    "63602af2-78c6-4e51-84db-467d59de6bfb": {
+    "878c5aed-bbeb-44bd-a196-a5982a224f3b": {
      "title": "Værdi for pengene",
-     "id": "63602af2-78c6-4e51-84db-467d59de6bfb",
+     "id": "878c5aed-bbeb-44bd-a196-a5982a224f3b",
      "references": [
       "773dc747-01ab-4fa1-8742-777d638d669d",
       "f82bf9a6-79f3-41d2-94eb-921ae58903c0"

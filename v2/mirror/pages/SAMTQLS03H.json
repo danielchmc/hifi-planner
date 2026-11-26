@@ -114,14 +114,29 @@
     "productCode": "SAMTQ43LS03H",
     "ean": "8806099033620",
     "priceDetails": {
-     "priceValueId": 1150347,
-     "price": 7999,
-     "priceFormatted": "7.999,-",
+     "priceValueId": 1223324,
+     "price": 5555,
+     "priceFormatted": "5.555,-",
+     "priceBefore": 7999,
+     "priceBeforeFormatted": "7.999,-",
+     "priceSavingsFormatted": "2.444,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 7999
+     "unitPrice": 5555,
+     "unitPriceBefore": 7999
     },
+    "ribbons": [
+     {
+      "text": "Spar 31%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 5,
@@ -385,14 +400,29 @@
     "productCode": "SAMTQ55LS03H",
     "ean": "8806099033415",
     "priceDetails": {
-     "priceValueId": 1150370,
-     "price": 9999,
-     "priceFormatted": "9.999,-",
+     "priceValueId": 1223308,
+     "price": 6999,
+     "priceFormatted": "6.999,-",
+     "priceBefore": 9999,
+     "priceBeforeFormatted": "9.999,-",
+     "priceSavingsFormatted": "3.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 9999
+     "unitPrice": 6999,
+     "unitPriceBefore": 9999
     },
+    "ribbons": [
+     {
+      "text": "Spar 30%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 5,
@@ -676,14 +706,29 @@
     "productCode": "SAMTQ65LS03H",
     "ean": "8806099033422",
     "priceDetails": {
-     "priceValueId": 1150401,
-     "price": 14999,
-     "priceFormatted": "14.999,-",
+     "priceValueId": 1223313,
+     "price": 8333,
+     "priceFormatted": "8.333,-",
+     "priceBefore": 14999,
+     "priceBeforeFormatted": "14.999,-",
+     "priceSavingsFormatted": "6.666,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 14999
+     "unitPrice": 8333,
+     "unitPriceBefore": 14999
     },
+    "ribbons": [
+     {
+      "text": "Spar 44%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,

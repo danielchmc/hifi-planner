@@ -106,10 +106,11 @@
     "displayName": "65\"",
     "condition": "NewNeverUsedAndNotOpened",
     "sellableOnWeb": true,
+    "variantTextHeader": "Køb sammen med Samsung Soundbar, og spar stort!",
     "productCode": "SAMTMR65R95H",
     "ean": "8806097981664",
     "priceDetails": {
-     "priceValueId": 1216119,
+     "priceValueId": 1222372,
      "price": 16999,
      "priceFormatted": "16.999,-",
      "priceBefore": 29999,
@@ -342,8 +343,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 9,
-     "availableQuantity": 46,
+     "numberOfStoresExperience": 10,
+     "availableQuantity": 41,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -383,6 +384,14 @@
     },
     "url": "/samsung-r95h-micro-rgb/samtmr65r95h/",
     "canonicalUrl": "/samsung-r95h-micro-rgb/samtmr65r95h/",
+    "recommendedAccessories": {
+     "productCodes": [
+      "ESSTVBMICROGAP09X",
+      "ESSTVBSLIM18X",
+      "ESSTVBMOTSLIM19X"
+     ],
+     "isOutlet": "false"
+    },
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -408,6 +417,7 @@
     "displayName": "75\"",
     "condition": "NewNeverUsedAndNotOpened",
     "sellableOnWeb": true,
+    "variantTextHeader": "Køb sammen med Samsung Soundbar, og spar stort!",
     "productCode": "SAMTMR75R95H",
     "ean": "8806097981671",
     "priceDetails": {
@@ -636,8 +646,8 @@
      "inStock": true,
      "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 99,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 35,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -711,10 +721,11 @@
     "displayName": "85\"",
     "condition": "NewNeverUsedAndNotOpened",
     "sellableOnWeb": true,
+    "variantTextHeader": "Køb sammen med Samsung Soundbar, og spar stort!",
     "productCode": "SAMTMR85R95H",
     "ean": "8806097981688",
     "priceDetails": {
-     "priceValueId": 1218190,
+     "priceValueId": 1222376,
      "price": 27999,
      "priceFormatted": "27.999,-",
      "priceBefore": 49999,
@@ -947,8 +958,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 6,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1057,7 +1068,37 @@
     ]
    }
   ],
-  "bundleRelations": [],
+  "bundleRelations": [
+   {
+    "modelType": "Micro RGB TV",
+    "price": {
+     "price": 20999,
+     "priceFormatted": "20.999,-",
+     "priceBefore": 41498,
+     "priceBeforeFormatted": "41.498,-",
+     "priceSavingsFormatted": "20.499,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 20999,
+     "unitPriceBefore": 41498
+    },
+    "image": "https://images.hifiklubben.com/image/372828da-abef-47d7-9871-27f18d82c16a",
+    "ribbons": [
+     {
+      "text": "Spar 49%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "R95H + HWQ995F",
+    "url": "/samtmr65r95h-samhwq995f/"
+   }
+  ],
   "variantNavigationType": "sizeSelector",
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,

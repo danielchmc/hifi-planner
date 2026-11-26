@@ -29,7 +29,7 @@
    "b669fbfb-4a28-45d8-98a8-1d76568d4a9e",
    "c1577ce0-92d3-4233-a953-ad63e961fa24"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 242600,
@@ -190,7 +190,7 @@
     "productCode": "SAMLPU9D",
     "ean": "8806095545615",
     "priceDetails": {
-     "priceValueId": 1214880,
+     "priceValueId": 1221574,
      "price": 26666,
      "priceFormatted": "26.666,-",
      "priceBefore": 44999,
@@ -244,11 +244,10 @@
      "productCode": "SAMLPU9D"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Levering om 5–6 hverdage",
+     "description": "Forventes på lager søndag den 13. december",
+     "deliveryDate": "2026-12-13T01:00:00Z",
      "canBuyOnline": true,
-     "availableQuantity": 5,
-     "inventoryStatusType": "dropshippingInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -316,7 +315,7 @@
   ],
   "featureLogos": [
    {
-    "url": "https://static.hifiklubben.com/contentassets/9cba5c2685584e72a75640b668c53071/630x448_dalioberon7loa_l_6.jpg?width=150",
+    "url": "https://static.hifiklubben.com/globalassets/product-images/featurelogos/bluetooth.png?width=150",
     "altText": ""
    }
   ],

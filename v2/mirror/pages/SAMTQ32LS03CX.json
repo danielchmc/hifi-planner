@@ -78,14 +78,29 @@
     "productCode": "SAMTQ32LS03C",
     "ean": "8806094915822",
     "priceDetails": {
-     "priceValueId": 1181601,
-     "price": 5499,
-     "priceFormatted": "5.499,-",
+     "priceValueId": 1223325,
+     "price": 3333,
+     "priceFormatted": "3.333,-",
+     "priceBefore": 5499,
+     "priceBeforeFormatted": "5.499,-",
+     "priceSavingsFormatted": "2.166,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5499
+     "unitPrice": 3333,
+     "unitPriceBefore": 5499
     },
+    "ribbons": [
+     {
+      "text": "Spar 39%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -300,7 +315,7 @@
      "description": "På lager. Levering om 2–5 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 55,
+     "availableQuantity": 52,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [

@@ -51,6 +51,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Indbygget netværksfunktion (Ethernet)\nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nBD-Live 15\nScreen Mirroring \nUSB-A ind (2.0, front)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -77,15 +86,6 @@
      {
       "term": "Indgang (andet)",
       "value": "Ethernet, USB A"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Indbygget netværksfunktion (Ethernet)\nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nBD-Live 15\nScreen Mirroring \nUSB-A ind (2.0, front)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
      }
     ]
    },
@@ -170,13 +170,14 @@
     "productCode": "PANDPUB450BK",
     "ean": "5025232889129",
     "priceDetails": {
-     "priceValueId": 1215679,
+     "priceValueId": 1223469,
      "price": 2999,
      "priceFormatted": "2.999,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2999
+     "unitPrice": 2999,
+     "unitPriceBefore": 2199
     },
     "techSpecs": [
      {
@@ -212,8 +213,8 @@
      "productCode": "PANDPUB450BK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
      "inventoryStatusType": "notInStockAtpDate"
@@ -268,55 +269,53 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "PANDPUB450 leverer skarp 4K-billedkvalitet og varm, detaljeret og omsluttende lyd til en attraktiv pris. Hurtig indlæsning og enkel betjening gør den daglige Blu-ray- og UHD-afspilning særligt behagelig. Det enkle, gammeldags design og det manglende frontdisplay er tydelige kompromiser, men den samlede ydelse er stadig meget tilfredsstillende.",
+   "summary": "PANDPUB450 leverer varm, detaljeret lyd og et skarpt, opslugende 4K-billede til en attraktiv pris. Hurtig indlæsning, pålidelig afspilning og enkel betjening gør afspilleren til et stærkt valg til Blu-ray- og UHD-samlinger. Enkle menuer, begrænsede displayoplysninger og en lidt let konstruktion dæmper en ellers meget begejstret vurdering.",
    "headlines": {
     "excellent picture and sound": {
-     "sentimentAnalysis": "Anmelderne roser konsekvent den fremragende billed- og lydkvalitet, herunder den stærke 4K-ydelse samt den imponerende lyddybde og farvegengivelse.",
+     "sentimentAnalysis": "Anmelderne roser den fyldige lyd og fremragende billedkvalitet, herunder den stærke 4K-ydeevne.",
      "simpleTitle": "Fremragende billede og lyd",
      "bias": "positive",
      "key": "picture_sound",
-     "groupId": "05b06870-1067-4784-a724-b8468ce6a628"
+     "groupId": "da39bba4-3f8f-400c-bcbf-b3706872dc31"
     },
-    "simple to install and operate": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver installation, tilslutning og daglig betjening som enkel, intuitiv og problemfri.",
-     "simpleTitle": "Nem at installere og betjene",
+    "simple installation and operation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver opsætning, tilslutning og daglig betjening som enkel og bekvem.",
+     "simpleTitle": "Enkel opsætning og betjening",
      "bias": "positive",
-     "key": "usability",
-     "groupId": "7613a5c8-72f9-4aae-978c-f2becc12cc07"
+     "key": "ease_of_use",
+     "groupId": "0efa8e5a-c288-4bf5-a091-4a8b27ab45b4"
     },
-    "good value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer afspilleren som et godt eller fremragende køb på grund af kombinationen af ydelse og en rimelig pris.",
-     "simpleTitle": "God værdi til prisen",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "001c6033-0dd3-492e-b1d6-8661a401630d"
+    "basic, old-fashioned controls and construction": {
+     "sentimentAnalysis": "Flere anmeldelser peger på basale knapper, en gammeldags brugerflade eller en plastikagtig konstruktion, og én anmeldelse stiller også spørgsmålstegn ved prisen.",
+     "simpleTitle": "Basal, gammeldags betjening og konstruktion",
+     "bias": "negative",
+     "key": "design_build",
+     "groupId": "a25afef5-ef0b-4481-9210-cb660908123d"
     },
     "fast loading for Blu-ray and UHD discs": {
-     "sentimentAnalysis": "Begge anmeldelser, der nævner indlæsningshastigheden, fortæller, at Blu-ray- og 4K-UHD-diske indlæses meget hurtigt.",
+     "sentimentAnalysis": "Begge anmeldelser fremhæver den bemærkelsesværdigt hurtige indlæsning af Blu-ray- og 4K-UHD-diske.",
      "simpleTitle": "Hurtig indlæsning af Blu-ray- og UHD-diske",
      "bias": "positive",
-     "key": "loading",
-     "groupId": "de1180fb-2034-4c81-9945-ee4472949430"
+     "key": "loading_speed",
+     "groupId": "d53da20a-ab32-4786-a362-2f1b54ce804d"
     },
-    "missing front display is inconvenient": {
-     "sentimentAnalysis": "Begge anmeldelser kritiserer det manglende frontdisplay, fordi tv'et skal være tændt for at se afspilningsoplysninger.",
-     "simpleTitle": "Det manglende frontdisplay er upraktisk",
+    "no front display requires the TV for information": {
+     "sentimentAnalysis": "Begge kritiske anmeldelser er utilfredse med det manglende frontdisplay og den deraf følgende afhængighed af TV’et.",
+     "simpleTitle": "Manglende frontdisplay kræver TV’et til information",
      "bias": "negative",
      "key": "display",
-     "groupId": "fdee7ce1-9b79-4325-a25f-103b897b3b99"
+     "groupId": "1643336b-b854-46ff-b93c-4955365e721a"
     }
    },
    "grouping": {
-    "05b06870-1067-4784-a724-b8468ce6a628": {
+    "da39bba4-3f8f-400c-bcbf-b3706872dc31": {
      "title": "Billed- og lydkvalitet",
-     "id": "05b06870-1067-4784-a724-b8468ce6a628",
+     "id": "da39bba4-3f8f-400c-bcbf-b3706872dc31",
      "references": [
       "a3da1a28-abad-46a4-875d-eac6a73a583b",
       "e89a0f3c-2985-4d98-8b60-be48bb12ba39",
       "df10c835-9b19-44d6-b6c8-a686238682c5",
-      "742baf78-a8d3-424d-a0cf-c99d22dffd14",
       "06801ff7-8aab-42ba-a8b7-90ec8bb2e0d0",
-      "5545457a-667f-458b-bf3f-1a6360727bfd",
       "6e95cb6d-668f-47ea-9caf-7e09539a9ef5",
       "6a1e4cba-62b3-497e-b229-2945ec53cbd0",
       "3403a86e-d155-4dfe-b183-00635284772d",
@@ -327,9 +326,9 @@
       "5eb16b79-5e73-4386-8b2f-cabd78a81938"
      ]
     },
-    "7613a5c8-72f9-4aae-978c-f2becc12cc07": {
-     "title": "Brugervenlighed og opsætning",
-     "id": "7613a5c8-72f9-4aae-978c-f2becc12cc07",
+    "0efa8e5a-c288-4bf5-a091-4a8b27ab45b4": {
+     "title": "Betjening og opsætning",
+     "id": "0efa8e5a-c288-4bf5-a091-4a8b27ab45b4",
      "references": [
       "a3da1a28-abad-46a4-875d-eac6a73a583b",
       "10c0c683-96b1-4c41-8c12-ef721a79a44f",
@@ -341,27 +340,26 @@
       "b40a85ef-57d6-4be1-8d53-96182aa8b4d0"
      ]
     },
-    "001c6033-0dd3-492e-b1d6-8661a401630d": {
-     "title": "Værdi for pengene",
-     "id": "001c6033-0dd3-492e-b1d6-8661a401630d",
+    "a25afef5-ef0b-4481-9210-cb660908123d": {
+     "title": "Design og byggekvalitet",
+     "id": "a25afef5-ef0b-4481-9210-cb660908123d",
      "references": [
-      "a3da1a28-abad-46a4-875d-eac6a73a583b",
-      "df10c835-9b19-44d6-b6c8-a686238682c5",
       "6e95cb6d-668f-47ea-9caf-7e09539a9ef5",
-      "cc68c09d-ba1c-4d57-b3ea-f12ce1bcf116"
+      "3403a86e-d155-4dfe-b183-00635284772d",
+      "b40a85ef-57d6-4be1-8d53-96182aa8b4d0"
      ]
     },
-    "de1180fb-2034-4c81-9945-ee4472949430": {
-     "title": "Indlæsningshastighed for diske",
-     "id": "de1180fb-2034-4c81-9945-ee4472949430",
+    "d53da20a-ab32-4786-a362-2f1b54ce804d": {
+     "title": "Indlæsningshastighed",
+     "id": "d53da20a-ab32-4786-a362-2f1b54ce804d",
      "references": [
       "06801ff7-8aab-42ba-a8b7-90ec8bb2e0d0",
       "06e6f979-2e70-4227-82e5-74a012295bf5"
      ]
     },
-    "fdee7ce1-9b79-4325-a25f-103b897b3b99": {
+    "1643336b-b854-46ff-b93c-4955365e721a": {
      "title": "Frontdisplay",
-     "id": "fdee7ce1-9b79-4325-a25f-103b897b3b99",
+     "id": "1643336b-b854-46ff-b93c-4955365e721a",
      "references": [
       "61729628-0489-4031-9095-7415ad169472",
       "7ade914d-7006-48a9-97a3-97c36687e007"

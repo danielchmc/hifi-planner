@@ -63,6 +63,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Front og sidepaneler i aluminium\nIndbygget netværksfunktion (wi-fi, 802.11 a/b/g/n/ac) / Ethernet \nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nHCX Processor (Hollywood Cinema Experience)\n4K Direct Chroma Up-scaling\nTHX certificeret\nBD-Live 15\nScreen Mirroring \n2 x USB-A ind (front 2.0 / bag 3.0)\nEnergiforbrug i standby: 0,4 watt / 2 watt (netværk standby)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -89,15 +98,6 @@
      {
       "term": "Indgang (andet)",
       "value": "Ethernet, USB A"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Front og sidepaneler i aluminium\nIndbygget netværksfunktion (wi-fi, 802.11 a/b/g/n/ac) / Ethernet \nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nHCX Processor (Hollywood Cinema Experience)\n4K Direct Chroma Up-scaling\nTHX certificeret\nBD-Live 15\nScreen Mirroring \n2 x USB-A ind (front 2.0 / bag 3.0)\nEnergiforbrug i standby: 0,4 watt / 2 watt (netværk standby)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
      }
     ]
    },
@@ -243,7 +243,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 24,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -302,94 +302,76 @@
   "featureLogos": [],
   "testGroups": [],
   "bundleRelations": [],
+  "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "PANDPUB9000 er en usædvanligt solid afspiller med skarpt, detaljeret billede samt varm, kraftfuld og omsluttende lyd ved Blu-ray-, 4K- og cd-afspilning. Den førsteklasses konstruktion, det flotte design, den støjsvage drift og den enkle betjening får afspilleren til at føles som en ægte high-end-komponent. Mindre kritikpunkter er langsom opstart, lejlighedsvise firmware-relaterede frysninger og manglende MP3-understøttelse, mens mangelfuld forsendelsesemballage kritiseres separat.",
+   "summary": "PANDPUB9000 er en førsteklasses Blu-ray-afspiller med varm, kraftfuld og meget detaljeret lyd og billedkvalitet. Den solide konstruktion, det flotte design, den støjsvage drift og den nemme betjening giver en ægte high-end-oplevelse, også som CD-afspiller. Enkelte anmeldelser nævner langsom opstart eller lejlighedsvise firmwareproblemer, men den samlede vurdering er stadig meget begejstret.",
    "headlines": {
-    "powerful, high-quality sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som fremragende, kraftfuld og særligt imponerende ved cd-afspilning.",
-     "simpleTitle": "Kraftfuld lyd i høj kvalitet",
+    "excellent picture and sound quality": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent det skarpe billede i høj kvalitet og den kraftfulde, fremragende lyd, også ved almindelige DVD'er og CD-afspilning.",
+     "simpleTitle": "Fremragende billed- og lydkvalitet",
      "bias": "positive",
-     "key": "powerful-sound",
-     "groupId": "2f5f03e5-a36f-4a31-b6ad-18072d3656ab"
+     "key": "picture-sound",
+     "groupId": "c40b68d7-b46d-4d40-9d5a-9fbce071b28b"
     },
-    "sharp, high-quality picture": {
-     "sentimentAnalysis": "Anmeldelserne roser gennemgående det skarpe billede i høj kvalitet.",
-     "simpleTitle": "Skarpt billede i høj kvalitet",
+    "solid and attractive construction": {
+     "sentimentAnalysis": "Afspilleren roses for sit eksklusive udseende, gode taktile kvalitet og særligt solide, veludførte chassis og kabinet.",
+     "simpleTitle": "Solid og attraktiv konstruktion",
      "bias": "positive",
-     "key": "picture-sharpness",
-     "groupId": "4cbb00f1-01db-4128-be95-29b22ce90e05"
+     "key": "design-build",
+     "groupId": "1adeb7c0-617c-4e1b-aebd-d23f866c1d93"
     },
-    "premium, attractive construction": {
-     "sentimentAnalysis": "Anmeldelserne roser det solide chassis, det flotte udseende og den særdeles gode finish.",
-     "simpleTitle": "Førsteklasses og flot konstruktion",
+    "simple everyday operation": {
+     "sentimentAnalysis": "Opsætning og betjening beskrives som ligetil, og brugerne kan installere og håndtere afspilleren uden problemer.",
+     "simpleTitle": "Nem betjening i hverdagen",
      "bias": "positive",
-     "key": "premium-construction",
-     "groupId": "85a6fc79-790d-4e7b-bb42-e8ab5e9db987"
-    },
-    "simple operation and installation": {
-     "sentimentAnalysis": "Anmeldelserne oplever installation og daglig betjening som enkel og overskuelig.",
-     "simpleTitle": "Enkel betjening og installation",
-     "bias": "positive",
-     "key": "easy-operation",
-     "groupId": "b4f3844e-06ba-43d4-a498-cac052fb97b8"
+     "key": "ease-of-use",
+     "groupId": "8f716211-8c54-47ca-9da9-d01516d52c7a"
     },
     "very quiet operation": {
-     "sentimentAnalysis": "Begge anmeldelser roser specifikt den meget støjsvage drift med minimal uønsket støj.",
+     "sentimentAnalysis": "Afspilleren beskrives gentagne gange som meget støjsvag med kun få forstyrrende mekaniske lyde under brug.",
      "simpleTitle": "Meget støjsvag drift",
      "bias": "positive",
-     "key": "quiet-operation",
-     "groupId": "9cebbe23-bd08-42d2-ae5d-68cf975ff3ef"
+     "key": "noise",
+     "groupId": "0563cbec-f30c-426d-86cf-010948184f7c"
     }
    },
    "grouping": {
-    "2f5f03e5-a36f-4a31-b6ad-18072d3656ab": {
-     "title": "Lydkvalitet",
-     "id": "2f5f03e5-a36f-4a31-b6ad-18072d3656ab",
-     "references": [
-      "65c26cad-faf8-455c-b01d-de04bf4efa46",
-      "21a5551b-b098-4aec-8b9f-b8b693c6b415",
-      "8ae50eac-3ef6-49d4-b37f-7f9348f6fc9d",
-      "368e3bfe-0d20-499d-99b8-e6dc93b6ea6d",
-      "b01075b7-9db1-4332-a1bf-42d3b89a4279",
-      "f1a87054-4953-4ccf-8ece-ae54ac716675",
-      "1398a365-df7a-484b-b478-ca19a30796ea"
-     ]
-    },
-    "4cbb00f1-01db-4128-be95-29b22ce90e05": {
-     "title": "Billedkvalitet",
-     "id": "4cbb00f1-01db-4128-be95-29b22ce90e05",
-     "references": [
-      "65c26cad-faf8-455c-b01d-de04bf4efa46",
-      "21a5551b-b098-4aec-8b9f-b8b693c6b415",
-      "368e3bfe-0d20-499d-99b8-e6dc93b6ea6d",
-      "b01075b7-9db1-4332-a1bf-42d3b89a4279",
-      "f1a87054-4953-4ccf-8ece-ae54ac716675",
-      "1398a365-df7a-484b-b478-ca19a30796ea"
-     ]
-    },
-    "85a6fc79-790d-4e7b-bb42-e8ab5e9db987": {
-     "title": "Design og byggekvalitet",
-     "id": "85a6fc79-790d-4e7b-bb42-e8ab5e9db987",
+    "c40b68d7-b46d-4d40-9d5a-9fbce071b28b": {
+     "title": "Billed- og lydkvalitet",
+     "id": "c40b68d7-b46d-4d40-9d5a-9fbce071b28b",
      "references": [
       "65c26cad-faf8-455c-b01d-de04bf4efa46",
       "21a5551b-b098-4aec-8b9f-b8b693c6b415",
       "26d9d2b5-c8c5-4a8a-a185-8ad17a8d2ef6",
+      "54379ac7-04ac-4c4f-953a-eca1ada8810e",
+      "368e3bfe-0d20-499d-99b8-e6dc93b6ea6d",
+      "b01075b7-9db1-4332-a1bf-42d3b89a4279",
+      "f1a87054-4953-4ccf-8ece-ae54ac716675",
+      "1398a365-df7a-484b-b478-ca19a30796ea"
+     ]
+    },
+    "1adeb7c0-617c-4e1b-aebd-d23f866c1d93": {
+     "title": "Design og byggekvalitet",
+     "id": "1adeb7c0-617c-4e1b-aebd-d23f866c1d93",
+     "references": [
+      "65c26cad-faf8-455c-b01d-de04bf4efa46",
+      "21a5551b-b098-4aec-8b9f-b8b693c6b415",
       "f1a87054-4953-4ccf-8ece-ae54ac716675"
      ]
     },
-    "b4f3844e-06ba-43d4-a498-cac052fb97b8": {
+    "8f716211-8c54-47ca-9da9-d01516d52c7a": {
      "title": "Brugervenlighed",
-     "id": "b4f3844e-06ba-43d4-a498-cac052fb97b8",
+     "id": "8f716211-8c54-47ca-9da9-d01516d52c7a",
      "references": [
       "65c26cad-faf8-455c-b01d-de04bf4efa46",
       "21a5551b-b098-4aec-8b9f-b8b693c6b415",
       "26d9d2b5-c8c5-4a8a-a185-8ad17a8d2ef6"
      ]
     },
-    "9cebbe23-bd08-42d2-ae5d-68cf975ff3ef": {
-     "title": "Støjniveau",
-     "id": "9cebbe23-bd08-42d2-ae5d-68cf975ff3ef",
+    "0563cbec-f30c-426d-86cf-010948184f7c": {
+     "title": "Driftsstøj",
+     "id": "0563cbec-f30c-426d-86cf-010948184f7c",
      "references": [
       "65c26cad-faf8-455c-b01d-de04bf4efa46",
       "3c8161d4-e20f-423c-85db-07d08d002cf9"

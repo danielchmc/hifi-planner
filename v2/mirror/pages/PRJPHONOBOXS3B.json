@@ -29,7 +29,7 @@
    "3fdeb240-b1e7-4a24-b128-dae2d63447e9",
    "4fcb9ac0-ff61-4db4-a7af-8ed2bc5553b8"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 196012,
@@ -51,6 +51,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "RIAA/pickup-forstærker til MM/MC-pickupper \nBalanceret dual mono-design\nIndgangskapacitans: 50, 150, 300, 400pF \nMekanisk tænd/sluk-knap på front \nMeget kraftigt bygget i stål/aluminium \nEkstern strømforsyning"
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -78,15 +87,6 @@
      {
       "term": "Lydindgang",
       "value": "Analog RCA, Analog XLR, Mini XLR"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "RIAA/pickup-forstærker til MM/MC-pickupper \nBalanceret dual mono-design\nIndgangskapacitans: 50, 150, 300, 400pF \nMekanisk tænd/sluk-knap på front \nMeget kraftigt bygget i stål/aluminium \nEkstern strømforsyning"
      }
     ]
    },
@@ -212,10 +212,11 @@
      "productCode": "PRJPHONOBOXS3BSI"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 26,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -307,10 +308,11 @@
      "productCode": "PRJPHONOBOXS3BBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 21,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

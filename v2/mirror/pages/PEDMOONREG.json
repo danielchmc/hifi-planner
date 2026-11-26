@@ -127,7 +127,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "37 x 111,00000000000001 x 5,5 cm (bredde x højde x dybde)"
+        "value": "37 x 111 x 5,5 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -141,8 +141,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 9,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -238,7 +238,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "36,5 x 111,00000000000001 x 5,5 cm (bredde x højde x dybde)"
+        "value": "36,5 x 111 x 5,5 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -249,12 +249,11 @@
      "productCode": "PEDMOONREGMGR"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -342,7 +341,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "36,5 x 111,00000000000001 x 5,5 cm (bredde x højde x dybde)"
+        "value": "36,5 x 111 x 5,5 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -357,7 +356,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 14,
+     "availableQuantity": 13,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -450,7 +449,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "36,5 x 111,00000000000001 x 5,5 cm (bredde x højde x dybde)"
+        "value": "36,5 x 111 x 5,5 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -465,7 +464,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 18,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -558,7 +557,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "36,5 x 111,00000000000001 x 5,5 cm (bredde x højde x dybde)"
+        "value": "36,5 x 111 x 5,5 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -573,7 +572,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 27,
+     "availableQuantity": 25,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -629,13 +628,14 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "rating": 5,
-   "count": 1,
+   "rating": 4.5,
+   "count": 2,
+   "reviewCount": 1,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
-    "4": 0,
+    "4": 1,
     "5": 1
    }
   },

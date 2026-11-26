@@ -173,7 +173,127 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "DALISUBK14"
+     "parentProductCode": "DALISUBK14",
+     "reviews": {
+      "summary": "DALISUBK14 leverer varm, slagkraftig og imponerende dyb bas med god kontrol og en fyldig lyd i rummet. Musik får et kraftigere og mere medrivende fundament, mens film får fysisk mærkbare dybbaser og overbevisende slagkraft. Det store kabinet, de begrænsede finishmuligheder og de enkle betjeninger på bagsiden er kun mindre ulemper sammenlignet med den stærke ydelse og gode integration i anlægget.",
+      "headlines": {
+       "deep, powerful and controlled bass": {
+        "sentimentAnalysis": "Anmeldelserne roser gennemgående den dybe og kraftfulde bas, som samtidig forbliver stram, ren og kontrolleret.",
+        "simpleTitle": "Dyb, kraftfuld og kontrolleret bas",
+        "bias": "positive",
+        "key": "deep-powerful-bass",
+        "groupId": "8109fe12-ba0d-44de-9275-a236e6b861c9"
+       },
+       "strong impact for both music and films": {
+        "sentimentAnalysis": "Subwooferen beskrives som lige velegnet til musikalsk bas og fysiske hjemmebiografeffekter.",
+        "simpleTitle": "Stærk effekt til både musik og film",
+        "bias": "positive",
+        "key": "music-film-impact",
+        "groupId": "1dd19f75-518a-4a0b-83be-297cdc0b89ca"
+       },
+       "blends well with main speakers": {
+        "sentimentAnalysis": "Anmeldelserne beskriver problemfri integration med flere DALI-højttalersystemer, som giver et fyldigere frekvensområde og aflaster hovedhøjttalerne.",
+        "simpleTitle": "God integration med hovedhøjttalerne",
+        "bias": "positive",
+        "key": "speaker-integration",
+        "groupId": "cff1debe-7827-452d-b373-5ce574bcce61"
+       },
+       "missing speaker grille and uneven finish": {
+        "sentimentAnalysis": "Nogle anmeldelser kritiserer kosmetiske detaljer, især den manglende frontgrill, blanke eller billigt udseende overflader og en generende blå lysdiode.",
+        "simpleTitle": "Manglende frontgrill og ujævn finish",
+        "bias": "negative",
+        "key": "finish-grille",
+        "groupId": "7296b40b-b2bc-45b6-94b1-83bce8f8d716"
+       },
+       "delivery issue resolved well": {
+        "sentimentAnalysis": "Selv om der opstod problemer med levering og produktets stand, håndterede kundeservicen situationen hurtigt og tilfredsstillende.",
+        "simpleTitle": "Leveringsproblem løst på god vis",
+        "bias": "positive",
+        "key": "service-resolution",
+        "groupId": "0204fdab-5c01-4d31-a6e9-33cb76b5051a"
+       }
+      },
+      "grouping": {
+       "8109fe12-ba0d-44de-9275-a236e6b861c9": {
+        "title": "Lydkvalitet",
+        "id": "8109fe12-ba0d-44de-9275-a236e6b861c9",
+        "references": [
+         "dfd09809-1db5-4245-afb9-6a6fa60d16ed",
+         "4d0f7dfa-b30c-45b0-a744-d8e78e2d68ac",
+         "93d5f49a-a5b0-46b6-8afc-5d0682322e79",
+         "5df38323-222e-4fb9-9601-60ef744a106c",
+         "7fbc3efa-df01-4854-aa31-adc43edf0b60",
+         "523e29d1-d13a-46ce-9fa6-2815d2721e7d",
+         "475f3026-cde2-4de0-b4ed-78b0e2b64b2e",
+         "e8036427-fe12-4cc9-8f47-75d4498bc7d0",
+         "e43de5d4-06d1-48d4-8cee-c878cfe0477b",
+         "ec8953a2-e1ff-4eec-985d-7fef445a4c62",
+         "cb11cc3e-fbcb-4052-94e3-ecc8c511e20c",
+         "896b086f-7e8d-4a2d-a4d9-5aaea98678aa",
+         "dc1baedc-5b65-4a9c-b45d-d6f44a37aa42",
+         "442fc2f7-6d5e-40f3-a2ef-ef4c6edb5ae9",
+         "e7e18f3e-2fa9-4124-a723-67184d6baf6a",
+         "6aff0c61-e1b7-4037-942d-0ae423954510",
+         "a216081c-3812-4d77-9228-fbd6fabbbafe",
+         "25a879ad-4ab1-44f6-a528-eaab97a4edd4"
+        ]
+       },
+       "1dd19f75-518a-4a0b-83be-297cdc0b89ca": {
+        "title": "Musik- og filmbrug",
+        "id": "1dd19f75-518a-4a0b-83be-297cdc0b89ca",
+        "references": [
+         "dfd09809-1db5-4245-afb9-6a6fa60d16ed",
+         "93d5f49a-a5b0-46b6-8afc-5d0682322e79",
+         "5df38323-222e-4fb9-9601-60ef744a106c",
+         "e8036427-fe12-4cc9-8f47-75d4498bc7d0",
+         "7fbc3efa-df01-4854-aa31-adc43edf0b60",
+         "ec8953a2-e1ff-4eec-985d-7fef445a4c62",
+         "6aff0c61-e1b7-4037-942d-0ae423954510"
+        ]
+       },
+       "cff1debe-7827-452d-b373-5ce574bcce61": {
+        "title": "Systemintegration",
+        "id": "cff1debe-7827-452d-b373-5ce574bcce61",
+        "references": [
+         "dfd09809-1db5-4245-afb9-6a6fa60d16ed",
+         "93d5f49a-a5b0-46b6-8afc-5d0682322e79",
+         "4d0f7dfa-b30c-45b0-a744-d8e78e2d68ac",
+         "6aff0c61-e1b7-4037-942d-0ae423954510",
+         "a216081c-3812-4d77-9228-fbd6fabbbafe",
+         "599a40ac-32a0-4166-9f92-323d6035ac3c"
+        ]
+       },
+       "7296b40b-b2bc-45b6-94b1-83bce8f8d716": {
+        "title": "Design og konstruktion",
+        "id": "7296b40b-b2bc-45b6-94b1-83bce8f8d716",
+        "references": [
+         "dfd09809-1db5-4245-afb9-6a6fa60d16ed",
+         "aaf6dfd1-4a0b-4269-9204-532f54409f54",
+         "dc1baedc-5b65-4a9c-b45d-d6f44a37aa42",
+         "e7e18f3e-2fa9-4124-a723-67184d6baf6a",
+         "a216081c-3812-4d77-9228-fbd6fabbbafe"
+        ]
+       },
+       "0204fdab-5c01-4d31-a6e9-33cb76b5051a": {
+        "title": "Levering og service",
+        "id": "0204fdab-5c01-4d31-a6e9-33cb76b5051a",
+        "references": [
+         "aaf6dfd1-4a0b-4269-9204-532f54409f54",
+         "1df40ec4-60c2-4a76-b507-e110929b13ab"
+        ]
+       }
+      },
+      "rating": 4.6734693877551,
+      "count": 49,
+      "reviewCount": 27,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 4,
+       "4": 8,
+       "5": 37
+      }
+     }
     },
     {
      "brand": "DALI",
@@ -218,7 +338,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 5,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -241,7 +361,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "24.998,-",
@@ -351,7 +471,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 10,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -374,7 +494,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 14,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -398,7 +518,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 8,
+        "availableQuantity": 10,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -421,7 +541,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24,
+        "availableQuantity": 20,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "39.998,-",
@@ -439,7 +559,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 4
+    "numberOfStoresExperiencePartly": 3
    }
   },
   "variantNavigationType": "dropDown",

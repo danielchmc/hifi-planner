@@ -235,7 +235,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 19,
-     "availableQuantity": 8,
+     "availableQuantity": 24,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -371,7 +371,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 72,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -497,7 +497,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 10,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -808,41 +808,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "RACLARITY42 leverer en bemærkelsesværdigt fyldig, klar og omsluttende lyd fra et kompakt reolhøjttalerdesign med punchy bas, tydelige mellemtoner og sprøde diskanttoner. Højttalerne kan skabe en fornemmelse af størrelse som fra gulvhøjttalere, mens større rum kan have gavn af en subwoofer eller en større model. En kraftig forstærker får den varme, transparente og dynamiske gengivelse til fuldt at udfolde sig, så den høje pris føles berettiget.",
+   "summary": "RACLARITY42 leverer en imponerende fyldig, klar og omsluttende lyd fra et kompakt reolhøjttalerdesign med kraftfuld bas, tydelige mellemtoner og sprøde diskanttoner. Højttalerne kan lyde bemærkelsesværdigt tæt på gulvhøjttalere og fungerer især godt i små til mellemstore rum, mens større rum kan have glæde af en subwoofer eller en større model. En kraftig forstærker er vigtig for at frigøre højttalernes imponerende ydelse, så den høje pris føles berettiget.",
    "headlines": {
-    "rich, clear and full-range sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den klare, transparente og detaljerede gengivelse af vokaler, mellemtoner, bas og diskant.",
-     "simpleTitle": "Fyldig, klar lyd over hele spektret",
+    "remarkably full, clear and detailed sound": {
+     "sentimentAnalysis": "Anmelderne roser den klare, transparente og bredbåndede gengivelse med god separation og en omsluttende fornemmelse af musikkens lag.",
+     "simpleTitle": "Bemærkelsesværdig fyldig, klar og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "6817de0d-54b7-4442-b35b-f2434e690e0d"
+     "groupId": "cfbfc14e-479c-4451-9a20-bdb8f884d4f3"
     },
-    "unexpectedly deep and powerful bass": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver basdybde, fylde og gulvhøjttaleragtig virkning, som overgår forventningerne til størrelsen.",
-     "simpleTitle": "Overraskende dyb og kraftfuld bas",
+    "powerful bass beyond the cabinet size": {
+     "sentimentAnalysis": "De kompakte højttalere leverer overraskende dyb og kraftfuld bas, der minder om gulvhøjttalere og overgår forventningerne til størrelsen.",
+     "simpleTitle": "Kraftfuld bas trods den kompakte størrelse",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "6817de0d-54b7-4442-b35b-f2434e690e0d"
+     "key": "bass",
+     "groupId": "d839faf1-5da3-4838-ad18-516e09f5b0de"
     },
-    "powerful amplification is recommended": {
-     "sentimentAnalysis": "Flere anmeldelser fastslår, at højttalerne kræver en kompetent og kraftig forstærker for at yde bedst.",
-     "simpleTitle": "Kraftig forstærkning anbefales",
+    "a powerful amplifier is essential": {
+     "sentimentAnalysis": "Flere anmeldelser understreger, at tilstrækkelig forstærkereffekt er nødvendig for optimal ydelse, mens passende forstærkere giver fremragende resultater.",
+     "simpleTitle": "En kraftig forstærker er afgørende",
      "bias": "negative",
      "key": "amplification",
-     "groupId": "74c37ad3-43a3-4db0-af35-b589d05e026f"
+     "groupId": "813f0efb-f770-4769-851d-afbaccd52735"
     },
-    "a subwoofer can help in large rooms or for extreme bass": {
-     "sentimentAnalysis": "De kompakte kabinetter spiller bredt og dybt, men ekstra bas kan være en fordel i store rum eller ved meget høje basbehov.",
-     "simpleTitle": "En subwoofer kan hjælpe i store rum eller ved ekstrem bas",
+    "compact design suits smaller spaces": {
+     "sentimentAnalysis": "Det lille format og diskrete udtryk betragtes som ideelt til mindre rum, samtidig med at lyden er usædvanligt fyldig.",
+     "simpleTitle": "Kompakt design til mindre rum",
+     "bias": "positive",
+     "key": "size-space",
+     "groupId": "5c620532-8508-4797-93b1-9cf2f7710632"
+    },
+    "a subwoofer helps in larger rooms": {
+     "sentimentAnalysis": "Højttalerne leverer imponerende bas, men lyttere, der ønsker meget dyb eller rumfyldende bas, kan få brug for en subwoofer, især i store rum.",
+     "simpleTitle": "En subwoofer hjælper i større rum",
      "bias": "negative",
-     "key": "compactness",
-     "groupId": "324f2eea-cc09-446b-9708-74c885b74ce6"
+     "key": "bass",
+     "groupId": "d839faf1-5da3-4838-ad18-516e09f5b0de"
     }
    },
    "grouping": {
-    "6817de0d-54b7-4442-b35b-f2434e690e0d": {
+    "cfbfc14e-479c-4451-9a20-bdb8f884d4f3": {
      "title": "Lydkvalitet",
-     "id": "6817de0d-54b7-4442-b35b-f2434e690e0d",
+     "id": "cfbfc14e-479c-4451-9a20-bdb8f884d4f3",
      "references": [
       "e8154ef4-6cc3-4cd1-a541-e6765fbe8acf",
       "06bea669-2f52-42e9-98ea-2bc40a01a8b2",
@@ -866,26 +873,33 @@
       "3506ee61-3a46-4e82-b010-6c776c352545"
      ]
     },
-    "324f2eea-cc09-446b-9708-74c885b74ce6": {
-     "title": "Størrelse og rumegnethed",
-     "id": "324f2eea-cc09-446b-9708-74c885b74ce6",
+    "d839faf1-5da3-4838-ad18-516e09f5b0de": {
+     "title": "Basgengivelse",
+     "id": "d839faf1-5da3-4838-ad18-516e09f5b0de",
      "references": [
-      "0e8d0662-e301-47f9-b97a-b855862f8f6a",
-      "06d1d11d-3235-490f-b8ec-c11d1b9082b4",
       "d85a3a03-7d5b-49f6-b15c-9cc845315dfc",
       "e25ca0c5-8d5b-4943-bf96-332b036f659d",
       "46f655b1-d4f9-403e-8d00-d123688e10c2",
-      "9b3f387b-d879-4c54-9ec5-572fcaf3ad27",
       "bf44f8dd-f4b5-4859-8274-130ae76c2a7a",
-      "dcec08ea-e998-4c98-8f11-181116093a46",
-      "29829bc4-60e1-425e-beb4-52235d8e5c4c",
-      "264f6a5c-efa1-4b50-b84e-b1229096d125",
-      "3506ee61-3a46-4e82-b010-6c776c352545"
+      "968e73ce-357b-4018-8cbf-6798b6343c16",
+      "29829bc4-60e1-425e-beb4-52235d8e5c4c"
      ]
     },
-    "74c37ad3-43a3-4db0-af35-b589d05e026f": {
-     "title": "Krav til forstærker",
-     "id": "74c37ad3-43a3-4db0-af35-b589d05e026f",
+    "5c620532-8508-4797-93b1-9cf2f7710632": {
+     "title": "Størrelse og rumstørrelse",
+     "id": "5c620532-8508-4797-93b1-9cf2f7710632",
+     "references": [
+      "0e8d0662-e301-47f9-b97a-b855862f8f6a",
+      "06d1d11d-3235-490f-b8ec-c11d1b9082b4",
+      "e25ca0c5-8d5b-4943-bf96-332b036f659d",
+      "bf44f8dd-f4b5-4859-8274-130ae76c2a7a",
+      "9b3f387b-d879-4c54-9ec5-572fcaf3ad27",
+      "29829bc4-60e1-425e-beb4-52235d8e5c4c"
+     ]
+    },
+    "813f0efb-f770-4769-851d-afbaccd52735": {
+     "title": "Forstærkning",
+     "id": "813f0efb-f770-4769-851d-afbaccd52735",
      "references": [
       "e8154ef4-6cc3-4cd1-a541-e6765fbe8acf",
       "968e73ce-357b-4018-8cbf-6798b6343c16",

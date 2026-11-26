@@ -124,8 +124,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 8,
-     "availableQuantity": 48,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 47,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -381,7 +381,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 45,
+     "availableQuantity": 41,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -411,7 +411,17 @@
   "testGroups": [],
   "bundleRelations": [],
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "brandName": "pedestal",
   "modelName": "Power Cable 7,5m",
   "modelType": "Strømkabel",

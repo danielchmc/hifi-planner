@@ -32,7 +32,7 @@
    "f33daa1d-3b4a-434b-abc8-a06f70f32b95",
    "33c1df95-6f6e-4c56-89c3-adbeacbffbe1"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 230776,
@@ -58,6 +58,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Indbygget netværksfunktion (wi-fi, 802.11 a/b/g/n/ac) / Ethernet \nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nHCX Processor (Hollywood Cinema Experience)\n4K Direct Chroma Up-scaling\nBD-Live 15\nScreen Mirroring \n2 x USB-A ind (front 2.0 / bag 3.0)\nEnergiforbrug i standby: 0,3 watt / 1 watt (netværk standby)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -85,15 +94,6 @@
      {
       "term": "Indgang (andet)",
       "value": "Ethernet, USB A"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Indbygget netværksfunktion (wi-fi, 802.11 a/b/g/n/ac) / Ethernet \nHDR10+ / Dolby vision / HLG / HDR Optimiser / 60 fps\nHCX Processor (Hollywood Cinema Experience)\n4K Direct Chroma Up-scaling\nBD-Live 15\nScreen Mirroring \n2 x USB-A ind (front 2.0 / bag 3.0)\nEnergiforbrug i standby: 0,3 watt / 1 watt (netværk standby)\n* Nogle audio- og videoformater understøttes ikke altid fra visse medier (diske/ USB/netværk). Se producentens hjemmeside eller spørg i HiFi Klubben, hvis du er i tvivl. \n** Se producentens hjemmeside for komplet liste over understøttede disk- og filformater."
      }
     ]
    },
@@ -173,12 +173,6 @@
    "url": "/surround/blu-ray-afspiller/",
    "id": 69784
   },
-  "stockItemAlternative": {
-   "save": "400,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=PANDPUB820",
-   "availableQuantity": 1,
-   "lowestPrice": "4.899,-"
-  },
   "variants": [
    {
     "id": 290006,
@@ -226,11 +220,12 @@
      "productCode": "PANDPUB820ABK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 23. november",
-     "deliveryDate": "2026-11-23T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 4-5 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 22,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -287,46 +282,45 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "PANDPUB820 leverer en imponerende hjemmebiografoplevelse med skarpe, detaljerede 4K-billeder og varm, kraftfuld, omsluttende lyd, der tydeligt overgår streaming. Opskalering giver ældre Blu-ray-film fornyet klarhed, mens hurtig installation, støjsvag drift og nem betjening fuldender oplevelsen. Den stærke værdi, det kompakte design og de alsidige afspilningsfunktioner gør PANDPUB820 til et fremragende valg for filmelskere.",
+   "summary": "PANDPUB820 leverer en imponerende hjemmebiografoplevelse med varm, kraftfuld lyd og et detaljeret, medrivende 4K-billede. Den nemme opsætning, problemfri betjening og stærke Blu-ray-ydeevne gør afspilleren særdeles tilfredsstillende. Streaming og visse diskformater er mindre overbevisende, mens fjernbetjening og cd-afspilning får lejlighedsvis kritik.",
    "headlines": {
-    "detailed, powerful picture and sound": {
-     "sentimentAnalysis": "Anmeldelserne roser det klare, detaljerede billede og den kraftfulde, behagelige lyd.",
-     "simpleTitle": "Detaljeret, kraftfuldt billede og lyd",
+    "excellent picture and sound quality": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående det detaljerede, fremragende billede og den stærke, tilfredsstillende lyd.",
+     "simpleTitle": "Fremragende billed- og lydkvalitet",
      "bias": "positive",
      "key": "av-quality",
-     "groupId": "087fa924-022d-41ea-85b5-209b205c0dd9"
+     "groupId": "d288aa42-457e-414d-9dcb-6bb4dd5bc917"
     },
-    "easy to install and operate": {
-     "sentimentAnalysis": "Anmeldelserne beskriver enkel opsætning, hurtig indlæsning og nem betjening.",
-     "simpleTitle": "Nem at installere og betjene",
+    "better than streaming for sound and picture": {
+     "sentimentAnalysis": "Fysisk Blu-ray- og 4K-afspilning beskrives som en klar audiovisuel forbedring i forhold til streaming.",
+     "simpleTitle": "Bedre end streaming til lyd og billede",
      "bias": "positive",
-     "key": "setup-use",
-     "groupId": "04da9e43-94ad-428e-b198-dacc564a403c"
+     "key": "streaming",
+     "groupId": "3e978775-23b1-4e70-aadb-40cea7aabfb0"
     },
-    "upscaling improves older Blu-ray films": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver effektiv opskalering og stærk HDR-billedbehandling.",
-     "simpleTitle": "Opskalering forbedrer ældre Blu-ray-film",
-     "bias": "positive",
-     "key": "av-quality",
-     "groupId": "087fa924-022d-41ea-85b5-209b205c0dd9"
+    "streaming features are useful but internet functions can be slow": {
+     "sentimentAnalysis": "Onlinefunktionerne får blandede vurderinger: YouTube og lignende tjenester er velkomne, men internethastigheden opleves som langsom.",
+     "simpleTitle": "Streamingfunktioner er nyttige, men internetfunktioner kan være langsomme",
+     "bias": "meh",
+     "key": "streaming",
+     "groupId": "3e978775-23b1-4e70-aadb-40cea7aabfb0"
     },
-    "quiet during playback": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter det lave driftsstøjniveau, som ikke forstyrrer under film.",
-     "simpleTitle": "Støjsvag under afspilning",
-     "bias": "positive",
-     "key": "noise",
-     "groupId": "4dfaaa3f-67a9-4d6c-bb53-119c342b60a5"
+    "the remote control feels inconvenient and cheap": {
+     "sentimentAnalysis": "Fjernbetjeningen kritiseres for en uhensigtsmæssigt placeret Netflix-knap og en billig følelse.",
+     "simpleTitle": "Fjernbetjeningen virker upraktisk og billig",
+     "bias": "negative",
+     "key": "remote",
+     "groupId": "9fa8bb0a-6f70-4b49-be9b-82bd549a6c7b"
     }
    },
    "grouping": {
-    "087fa924-022d-41ea-85b5-209b205c0dd9": {
+    "d288aa42-457e-414d-9dcb-6bb4dd5bc917": {
      "title": "Billed- og lydkvalitet",
-     "id": "087fa924-022d-41ea-85b5-209b205c0dd9",
+     "id": "d288aa42-457e-414d-9dcb-6bb4dd5bc917",
      "references": [
       "0784caf1-976f-4108-b5fe-a75528281104",
       "3ac00205-0de3-4f7a-89b7-f07400974419",
       "e8fe0a76-1f9f-4d4a-8a88-ea387bc57f83",
-      "2f795f08-60c4-4e7e-924a-844e235c360a",
       "5ae0d7dc-49c0-45d2-9835-0e4a846bde76",
       "b143869b-1b2a-4721-9928-e27c3a0cfd8b",
       "4aa988c8-6910-4cf0-b5bd-49cd5cbfe34c",
@@ -341,32 +335,32 @@
       "8e54500a-6d58-4d0a-943d-3da9ac1e6cbb"
      ]
     },
-    "04da9e43-94ad-428e-b198-dacc564a403c": {
-     "title": "Installation og betjening",
-     "id": "04da9e43-94ad-428e-b198-dacc564a403c",
-     "references": [
-      "0784caf1-976f-4108-b5fe-a75528281104",
-      "654b4fa0-af88-4b93-b1f7-42945014dc8f",
-      "e8aefb5e-3cdc-42ec-a360-708b4f79d78b"
-     ]
-    },
-    "4dfaaa3f-67a9-4d6c-bb53-119c342b60a5": {
-     "title": "Driftsstøj",
-     "id": "4dfaaa3f-67a9-4d6c-bb53-119c342b60a5",
+    "3e978775-23b1-4e70-aadb-40cea7aabfb0": {
+     "title": "Streaming- og internetfunktioner",
+     "id": "3e978775-23b1-4e70-aadb-40cea7aabfb0",
      "references": [
       "4aa988c8-6910-4cf0-b5bd-49cd5cbfe34c",
-      "daa8c5d6-2209-464e-bdd5-d5d91e8deb4a"
+      "cc1a7996-0775-44b9-8a76-9d2f628d06a4",
+      "ac270873-e5e9-44ac-8e24-ec2adae76f3c"
+     ]
+    },
+    "9fa8bb0a-6f70-4b49-be9b-82bd549a6c7b": {
+     "title": "Fjernbetjening",
+     "id": "9fa8bb0a-6f70-4b49-be9b-82bd549a6c7b",
+     "references": [
+      "4aa988c8-6910-4cf0-b5bd-49cd5cbfe34c",
+      "ac270873-e5e9-44ac-8e24-ec2adae76f3c"
      ]
     }
    },
-   "rating": 4.79245283018868,
-   "count": 53,
+   "rating": 4.77777777777778,
+   "count": 54,
    "reviewCount": 29,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
-    "4": 9,
+    "4": 10,
     "5": 43
    }
   },

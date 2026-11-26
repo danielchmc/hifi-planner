@@ -29,7 +29,7 @@
    "994c92f0-9d2b-4eff-86f9-ae1259cc22f6",
    "e19a656b-2f44-44a7-893f-b190ef593c89"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 242599,
@@ -190,7 +190,7 @@
     "productCode": "SAMLPU7D",
     "ean": "8806095545608",
     "priceDetails": {
-     "priceValueId": 1214210,
+     "priceValueId": 1222905,
      "price": 17777,
      "priceFormatted": "17.777,-",
      "priceBefore": 29999,
@@ -244,11 +244,9 @@
      "productCode": "SAMLPU7D"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
-     "canBuyOnline": true,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "description": "Ukendt leveringstid",
+     "soldOut": true,
+     "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
     },
     "images": [
      {
@@ -293,6 +291,7 @@
     "energySpecifications": {},
     "url": "/samsung-the-premiere-7-lpu7d-videoprojektor/samlpu7d/",
     "canonicalUrl": "/samsung-the-premiere-7-lpu7d-videoprojektor/samlpu7d/",
+    "dropshippingBrand": "Samsung",
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",

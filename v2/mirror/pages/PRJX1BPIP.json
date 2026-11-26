@@ -15,7 +15,7 @@
    "61056244-e9d5-4e3d-999a-80b778c8ed05",
    "5e6ae507-c3bf-496a-b022-15763b41cb36"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 300858,
@@ -87,10 +87,11 @@
      "productCode": "PRJX1BEUCAPIP"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 6,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -173,10 +174,11 @@
      "productCode": "PRJX1BHGWHPIP"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 7,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -253,10 +255,11 @@
      "productCode": "PRJX1BMABKPIP"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 27. november",
-     "deliveryDate": "2026-11-27T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 68,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

@@ -234,7 +234,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 18,
-     "availableQuantity": 11,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -364,7 +364,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 18,
+     "availableQuantity": 16,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -806,55 +806,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "RACLARITY62 får bred ros som en kompakt højttaler med et usædvanligt stort og medrivende lydbillede, krystalklare detaljer, naturlige mellemtoner, luftige højder og dyb, slagkraftig bas. Byggekvalitet, attraktivt design og stærk værdi for pengene er gennemgående styrker, og rumkorrektion samt passende forstærkning kan løfte ydelsen yderligere. Et mindretal oplever diskanten som lidt tilbageholdende eller lyden som en anelse kølig, mens højttalerne kan kræve en kraftig forstærker, og basbalancen kan afhænge af rum og musikstil.",
+   "summary": "Radiant Clarity 6.2 leverer en usædvanligt klar, detaljeret og medrivende lyd fra et kompakt kabinet med dyb, punchy bas og naturlige stemmer. Højttalerne overgår ofte forventningerne til størrelse og pris og gør ofte en subwoofer overflødig, mens rumkorrektion kan forfine gengivelsen yderligere. Den eksklusive konstruktion og det flotte design øger tiltrækningen, men nogle anlæg kræver en kraftig forstærker, og enkelte lyttere oplever diskanten som afdæmpet eller klangbalancen som lidt kølig.",
    "headlines": {
-    "crystal-clear, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en usædvanligt klar, neutral til varm gengivelse med mange detaljer, overbevisende rumfornemmelse, naturlige stemmer og et medrivende lydbillede.",
-     "simpleTitle": "Krystalklar, detaljeret og medrivende lyd",
+    "deep, powerful bass without a subwoofer": {
+     "sentimentAnalysis": "Bassen beskrives gentagne gange som usædvanligt dyb, ren og rumfyldende for en kompakt højttaler, med tilstrækkeligt punch og dybgang til at gøre en subwoofer overflødig.",
+     "simpleTitle": "Dyb og kraftfuld bas uden subwoofer",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "d56d3862-0d8a-46d3-8ea2-d6a981563725"
+     "key": "deep_bass",
+     "groupId": "eaddf3bf-55e3-43f8-b32d-b638a685751f"
     },
-    "deep, punchy bass from a compact cabinet": {
-     "sentimentAnalysis": "Det kompakte kabinet leverer gentagne gange usædvanligt dyb, rumfyldende og slagkraftig bas, som ofte gør en subwoofer overflødig.",
-     "simpleTitle": "Dyb og slagkraftig bas fra et kompakt kabinet",
+    "clear, detailed and natural sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den transparente og højopløste gengivelse med klare stemmer, mange detaljer og en overbevisende rumlig præsentation.",
+     "simpleTitle": "Klar, detaljeret og naturlig lyd",
      "bias": "positive",
-     "key": "bass",
-     "groupId": "cb75b996-1586-4ec5-b138-3a46ff0af212"
+     "key": "clear_detail",
+     "groupId": "a4ddbcb9-675f-4c5c-a8a1-ddd5daa71257"
     },
-    "refined design and high-quality construction": {
-     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som visuelt attraktive, kompakte og særdeles velbyggede med førsteklasses finish og komponentkvalitet.",
-     "simpleTitle": "Elegant design og høj byggekvalitet",
+    "compact size delivers large-speaker scale": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent det store og fyldige lydbillede fra det relativt lille kabinet og sammenligner resultatet positivt med større eller dyrere gulvhøjttalere.",
+     "simpleTitle": "Kompakt størrelse med lyd på gulvhøjttalerniveau",
      "bias": "positive",
-     "key": "design",
-     "groupId": "d2c27286-d316-4b64-ab77-a2c4ddd0be01"
+     "key": "compact_scale",
+     "groupId": "073c147b-2479-4268-8056-1e9b3cec0172"
     },
-    "powerful amplification and room correction improve results": {
-     "sentimentAnalysis": "Dirac eller RoomPerfect samt en kapabel forstærker forbindes gentagne gange med fremragende integration, tonal balance og en meget tilfredsstillende lytteoplevelse.",
-     "simpleTitle": "Kraftig forstærkning og rumkorrektion forbedrer resultatet",
+    "refined construction and attractive styling": {
+     "sentimentAnalysis": "Anmeldelserne roser den høje byggekvalitet, det flotte udseende og det kompakte design, der passer godt ind i hjemmet.",
+     "simpleTitle": "Eksklusiv konstruktion og flot design",
      "bias": "positive",
-     "key": "amplification",
-     "groupId": "19323699-dcc2-4af2-9e8c-8b34e4fc0ca4"
+     "key": "premium_build",
+     "groupId": "08d1d3da-e1af-4d1c-8f1c-e2e907206110"
     },
-    "bass can dominate in some rooms or recordings": {
-     "sentimentAnalysis": "Bassen roses overordnet, men bestemte rum eller musikgenrer kan få den til at virke for dominerende eller mindre fyldig end forventet.",
-     "simpleTitle": "Bassen kan dominere i visse rum eller optagelser",
+    "bass can become prominent in some rooms or music": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at den kraftige basbalance kan blive fremtrædende i bestemte rum eller variere tydeligt mellem elektronisk og akustisk musik.",
+     "simpleTitle": "Bassen kan blive fremtrædende i nogle rum eller med bestemt musik",
      "bias": "negative",
-     "key": "bass",
-     "groupId": "cb75b996-1586-4ec5-b138-3a46ff0af212"
+     "key": "bass_balance",
+     "groupId": "eaddf3bf-55e3-43f8-b32d-b638a685751f"
     },
-    "treble can sound restrained or slightly cool": {
-     "sentimentAnalysis": "To anmeldelser oplever sammenlignet med andre AMT- eller velkendte højttalere en mindre sprudlende, lidt kølig balance og mere tilbageholden øverste diskant.",
-     "simpleTitle": "Diskanten kan virke tilbageholdende eller en anelse kølig",
+    "restrained treble and cool presentation in one system": {
+     "sentimentAnalysis": "To anmeldelser beskriver en mindre sprød og lidt kølig gengivelse, hvor de øverste toner opleves mere afdæmpede end i konkurrerende AMT-konstruktioner.",
+     "simpleTitle": "Afdæmpet diskant og kølig gengivelse i ét system",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "d56d3862-0d8a-46d3-8ea2-d6a981563725"
+     "key": "treble_balance",
+     "groupId": "a4ddbcb9-675f-4c5c-a8a1-ddd5daa71257"
     }
    },
    "grouping": {
-    "d56d3862-0d8a-46d3-8ea2-d6a981563725": {
+    "a4ddbcb9-675f-4c5c-a8a1-ddd5daa71257": {
      "title": "Lydkvalitet",
-     "id": "d56d3862-0d8a-46d3-8ea2-d6a981563725",
+     "id": "a4ddbcb9-675f-4c5c-a8a1-ddd5daa71257",
      "references": [
       "f3a5056e-58aa-4fcb-ba5f-0e131737959f",
       "2957d13b-6d5d-4672-8599-623201bf4bb7",
@@ -866,7 +866,6 @@
       "1987e2a6-1cb3-403b-8163-673728b6942a",
       "9ae25f4a-43b0-4fb8-9860-0cf88df8e781",
       "795c6782-bd96-41c0-a147-adcb8a55ee10",
-      "c8c31919-afcd-4a01-acd9-d362e44e2f19",
       "1376580a-26a7-4d71-acc3-766525ae0e90",
       "110ce182-97d0-4ada-95e3-bd35791ec753",
       "1b3ada37-4423-4a39-821e-3f3bbdabed56",
@@ -890,56 +889,59 @@
       "8bc9949e-87e3-410d-a477-901bbdb1f744"
      ]
     },
-    "cb75b996-1586-4ec5-b138-3a46ff0af212": {
+    "eaddf3bf-55e3-43f8-b32d-b638a685751f": {
      "title": "Basgengivelse",
-     "id": "cb75b996-1586-4ec5-b138-3a46ff0af212",
+     "id": "eaddf3bf-55e3-43f8-b32d-b638a685751f",
      "references": [
       "2957d13b-6d5d-4672-8599-623201bf4bb7",
       "bb26dc0f-0946-410c-9485-9ca962e5b1d0",
       "8d851eaf-e900-495a-8d59-7040092203df",
       "00f26e8a-e998-4765-99a5-3455a16c03d5",
-      "795c6782-bd96-41c0-a147-adcb8a55ee10",
       "9ae25f4a-43b0-4fb8-9860-0cf88df8e781",
+      "795c6782-bd96-41c0-a147-adcb8a55ee10",
       "a5c3b5fb-8967-454e-857b-a5b55d4e7731",
       "3bd22772-0b09-4ab5-9d99-2a5387d72fc4",
       "d87f45f3-2feb-4f22-bf8b-4ac0d0bd4cdc",
+      "d4300f72-f8e5-4e55-9b9a-1678753399c9",
       "e9ce8474-71a0-4b9a-8057-69a7773fd8cc",
       "1cef8de2-32cb-4cbb-a617-ce970d34e811",
       "b437e268-c0aa-48b9-806f-5c250208ab1a",
-      "051f81e7-2ce1-48ee-8e24-e4c625b80451",
-      "d4300f72-f8e5-4e55-9b9a-1678753399c9"
+      "051f81e7-2ce1-48ee-8e24-e4c625b80451"
      ]
     },
-    "d2c27286-d316-4b64-ab77-a2c4ddd0be01": {
+    "073c147b-2479-4268-8056-1e9b3cec0172": {
+     "title": "Størrelse og værdi",
+     "id": "073c147b-2479-4268-8056-1e9b3cec0172",
+     "references": [
+      "f3a5056e-58aa-4fcb-ba5f-0e131737959f",
+      "00f26e8a-e998-4765-99a5-3455a16c03d5",
+      "c8c31919-afcd-4a01-acd9-d362e44e2f19",
+      "cf50b822-4752-4785-bc68-87e1c062eb5c",
+      "110ce182-97d0-4ada-95e3-bd35791ec753",
+      "1b3ada37-4423-4a39-821e-3f3bbdabed56",
+      "f3c6eba0-77f1-4c97-87b4-8369ef54e4d1",
+      "d4300f72-f8e5-4e55-9b9a-1678753399c9",
+      "cd5b82b4-66f5-4e5d-9a7b-1a29022ffb74",
+      "e9ce8474-71a0-4b9a-8057-69a7773fd8cc",
+      "d81098ee-a68f-4e28-9599-65cc8cc991ad",
+      "b437e268-c0aa-48b9-806f-5c250208ab1a",
+      "051f81e7-2ce1-48ee-8e24-e4c625b80451",
+      "8bc9949e-87e3-410d-a477-901bbdb1f744"
+     ]
+    },
+    "08d1d3da-e1af-4d1c-8f1c-e2e907206110": {
      "title": "Design og byggekvalitet",
-     "id": "d2c27286-d316-4b64-ab77-a2c4ddd0be01",
+     "id": "08d1d3da-e1af-4d1c-8f1c-e2e907206110",
      "references": [
       "bb26dc0f-0946-410c-9485-9ca962e5b1d0",
       "1376580a-26a7-4d71-acc3-766525ae0e90",
-      "cf50b822-4752-4785-bc68-87e1c062eb5c",
-      "d4300f72-f8e5-4e55-9b9a-1678753399c9",
-      "cd5b82b4-66f5-4e5d-9a7b-1a29022ffb74",
       "d87f45f3-2feb-4f22-bf8b-4ac0d0bd4cdc",
+      "d4300f72-f8e5-4e55-9b9a-1678753399c9",
       "d81098ee-a68f-4e28-9599-65cc8cc991ad",
       "9cdd9f9f-60c5-4f6a-86d4-6444c207680f",
       "1cef8de2-32cb-4cbb-a617-ce970d34e811",
       "8d0a2d41-4024-4896-98ed-161d57457c1b",
       "8bc9949e-87e3-410d-a477-901bbdb1f744"
-     ]
-    },
-    "19323699-dcc2-4af2-9e8c-8b34e4fc0ca4": {
-     "title": "Forstærker- og rumtilpasning",
-     "id": "19323699-dcc2-4af2-9e8c-8b34e4fc0ca4",
-     "references": [
-      "bb26dc0f-0946-410c-9485-9ca962e5b1d0",
-      "00f26e8a-e998-4765-99a5-3455a16c03d5",
-      "d1bb29db-fc50-4703-a117-98ee382b43c0",
-      "1987e2a6-1cb3-403b-8163-673728b6942a",
-      "a5c3b5fb-8967-454e-857b-a5b55d4e7731",
-      "d87f45f3-2feb-4f22-bf8b-4ac0d0bd4cdc",
-      "d4300f72-f8e5-4e55-9b9a-1678753399c9",
-      "cd5b82b4-66f5-4e5d-9a7b-1a29022ffb74",
-      "d81098ee-a68f-4e28-9599-65cc8cc991ad"
      ]
     }
    },

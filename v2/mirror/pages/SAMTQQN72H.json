@@ -30,7 +30,7 @@
    "e9d178e8-a0b1-4800-9d95-eb4f4e8f1532",
    "172b0b59-f430-4a37-a468-3883191bb882"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 285175,
@@ -316,11 +316,12 @@
      "productCode": "SAMTQ43QN72H"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 29. november",
-     "deliveryDate": "2026-11-29T01:00:00Z",
+     "inStock": true,
+     "description": "På lager. Levering om 2–5 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 72,
+     "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
      {
@@ -392,7 +393,7 @@
     "productCode": "SAMTQ50QN72H",
     "ean": "8806099124397",
     "priceDetails": {
-     "priceValueId": 1150364,
+     "priceValueId": 1223092,
      "price": 7499,
      "priceFormatted": "7.499,-",
      "salesUnit": "stk",
@@ -603,10 +604,10 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Levering om 2–5 hverdage",
+     "description": "På lager. Levering om 5–6 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 37,
+     "availableQuantity": 67,
      "inventoryStatusType": "dropshippingInStock"
     },
     "images": [
@@ -893,7 +894,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 8,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1180,7 +1181,7 @@
      "description": "På lager. Leveringstid 2-3 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 23,
+     "availableQuantity": 22,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [

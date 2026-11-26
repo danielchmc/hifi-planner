@@ -31,7 +31,7 @@
    "8203088a-fc7d-4f33-a12b-b5d39824e4e9",
    "1059a7ba-62d9-4b05-9553-2285f83f199e"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 285197,
@@ -362,6 +362,7 @@
     },
     "url": "/samsung-qn82h-neo-qled-tv/samtq50qn82h/",
     "canonicalUrl": "/samsung-qn82h-neo-qled-tv/samtq50qn82h/",
+    "lowestShippingPriceRaw": 399,
     "dropshippingBrand": "Samsung",
     "recommendedAccessories": {
      "productCodes": [
@@ -619,8 +620,8 @@
      "productCode": "SAMTQ55QN82H"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 29. november",
-     "deliveryDate": "2026-11-29T01:00:00Z",
+     "description": "Forventes på lager mandag den 14. december",
+     "deliveryDate": "2026-12-14T13:30:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
      "inventoryStatusType": "notInStockAtpDate"
@@ -913,12 +914,11 @@
      "productCode": "SAMTQ65QN82H"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Levering om 5–6 hverdage",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T08:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 48,
-     "inventoryStatusType": "dropshippingInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -990,7 +990,7 @@
     "productCode": "SAMTQ75QN82H",
     "ean": "8806099127770",
     "priceDetails": {
-     "priceValueId": 1217597,
+     "priceValueId": 1221792,
      "price": 8666,
      "priceFormatted": "8.666,-",
      "priceBefore": 14999,
@@ -1208,8 +1208,8 @@
      "productCode": "SAMTQ75QN82H"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 05. december",
-     "deliveryDate": "2026-12-05T22:00:00Z",
+     "description": "Forventes på lager lørdag den 12. december",
+     "deliveryDate": "2026-12-12T22:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
      "inventoryStatusType": "notInStockAtpDate"
@@ -1522,11 +1522,10 @@
      "productCode": "SAMTQ85QN82H"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T01:00:00Z",
-     "canBuyOnline": true,
+     "description": "Ukendt leveringstid",
      "numberOfStoresExperience": 9,
-     "inventoryStatusType": "notInStockAtpDate"
+     "soldOut": true,
+     "inventoryStatusType": "notInStockStockedItemOrDropshippingOrLeftOver"
     },
     "images": [
      {
