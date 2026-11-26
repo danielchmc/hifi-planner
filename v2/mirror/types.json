@@ -386,29 +386,6 @@
    ]
   },
   {
-   "type": "Kompakt højtaler – Aktive",
-   "keys": {
-    "CompactSpeakerActive": 22
-   },
-   "cats": {
-    "Højtaler > Kompakt højtaler": 22
-   },
-   "count": 22,
-   "bundles": 6,
-   "outlet": 0,
-   "products": 16,
-   "inCatalogue": 15,
-   "variantAxes": {
-    "colorOptions": 16,
-    "none": 6
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Active Speakers",
-    "Compact Speakers"
-   ]
-  },
-  {
    "type": "MM-pickup",
    "keys": {
     "MMpickup": 21
@@ -426,6 +403,29 @@
    },
    "mapped": null,
    "hifiPlanner": []
+  },
+  {
+   "type": "Kompakt højtaler – Aktive",
+   "keys": {
+    "CompactSpeakerActive": 20
+   },
+   "cats": {
+    "Højtaler > Kompakt højtaler": 20
+   },
+   "count": 20,
+   "bundles": 6,
+   "outlet": 0,
+   "products": 14,
+   "inCatalogue": 14,
+   "variantAxes": {
+    "colorOptions": 14,
+    "none": 6
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Active Speakers",
+    "Compact Speakers"
+   ]
   },
   {
    "type": "Pladespiller",

@@ -119,7 +119,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 5,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -175,41 +175,27 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORT2MRRE leverer en varm og dynamisk lyd med en tydelig hørbar forbedring i forhold til slidte eller enklere pickupper. Detaljeret instrumentadskillelse og dybere, mere præcis bas får velkendte plader til at føles nye og medrivende. Den stærke værdi for pengene og den pålidelige funktion i hverdagen gør denne pickup til en særdeles overbevisende opgradering.",
+   "summary": "ORT2MRRE giver vinylafspilningen et varmt, kraftfuldt og medrivende løft med en tydeligt klarere og mere engagerende lyd. Pickup'en afslører flere musikalske detaljer og giver de dybe frekvenser større nærvær, så velkendte plader føles levende på ny. Den stærke værdi for pengene og den pålidelige ydelse gør opgraderingen særligt overbevisende.",
    "headlines": {
-    "clear improvement in sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en tydeligt hørbar og markant lydforbedring efter opgradering til ORT2MRRE.",
-     "simpleTitle": "Tydelig forbedring af lyden",
+    "a clearly improved, engaging sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en markant forbedring af den samlede lyd med klarere, mere behagelig og kraftfuld gengivelse.",
+     "simpleTitle": "En tydeligt forbedret og engagerende lyd",
      "bias": "positive",
-     "key": "sound-upgrade",
-     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
+     "key": "sound_upgrade",
+     "groupId": "cc693bc5-63e7-496d-ad0a-88546f56e723"
     },
-    "good overall sound": {
-     "sentimentAnalysis": "Flere anmeldelser roser pickupens behagelige lyd i god kvalitet uden forbehold.",
-     "simpleTitle": "God samlet lyd",
+    "strong value at a low price": {
+     "sentimentAnalysis": "Pickup'en opfattes som en overkommelig opgradering, der leverer stærk ydelse og kvalitet til prisen.",
+     "simpleTitle": "God værdi til en lav pris",
      "bias": "positive",
-     "key": "overall-sound",
-     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
-    },
-    "more detail and stronger bass": {
-     "sentimentAnalysis": "Pickuppen gør tidligere uhørte instrumenter hørbare og bringer de dybe frekvenser tydeligere frem.",
-     "simpleTitle": "Flere detaljer og kraftigere bas",
-     "bias": "positive",
-     "key": "detail-and-bass",
-     "groupId": "d5d21404-c3bd-479f-b7d2-aa15d05278cd"
-    },
-    "low price for the performance": {
-     "sentimentAnalysis": "Anmeldelserne beskriver pickupen som en prisvenlig måde at genoprette eller forbedre et pladespillersystem på.",
-     "simpleTitle": "Lav pris i forhold til ydelsen",
-     "bias": "positive",
-     "key": "affordable-upgrade",
-     "groupId": "9aa3b041-c5a7-414e-9f5c-c604095b67a7"
+     "key": "good_value",
+     "groupId": "b6f4a76e-838e-44bb-b294-00358918a2d1"
     }
    },
    "grouping": {
-    "d5d21404-c3bd-479f-b7d2-aa15d05278cd": {
+    "cc693bc5-63e7-496d-ad0a-88546f56e723": {
      "title": "Lydkvalitet",
-     "id": "d5d21404-c3bd-479f-b7d2-aa15d05278cd",
+     "id": "cc693bc5-63e7-496d-ad0a-88546f56e723",
      "references": [
       "e6ba51f5-e18c-4613-8853-cd6ad570ff9a",
       "eda0acfa-2ae5-4ae7-a863-840455ae82e9",
@@ -223,9 +209,9 @@
       "d20c7f8d-e17e-4932-a0f9-b3e2d37ae887"
      ]
     },
-    "9aa3b041-c5a7-414e-9f5c-c604095b67a7": {
+    "b6f4a76e-838e-44bb-b294-00358918a2d1": {
      "title": "Værdi for pengene",
-     "id": "9aa3b041-c5a7-414e-9f5c-c604095b67a7",
+     "id": "b6f4a76e-838e-44bb-b294-00358918a2d1",
      "references": [
       "9d948991-5cd4-4dff-b3d1-ec64300f9019",
       "d20c7f8d-e17e-4932-a0f9-b3e2d37ae887"

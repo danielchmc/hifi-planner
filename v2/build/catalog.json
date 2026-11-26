@@ -26,7 +26,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 271,
+   "all": 269,
    "bundles": 0
   },
   {
@@ -250,8 +250,8 @@
    "title": "Kompakt højtaler",
    "parent": "/hojtalere/",
    "website": true,
-   "products": 46,
-   "all": 46,
+   "products": 44,
+   "all": 44,
    "bundles": 6
   },
   {
@@ -952,7 +952,7 @@
     "da": "Minijack-kabel"
    },
    "cat": "/kabler/minijack-kabel/",
-   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin1,0/",
+   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin800/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -31363,7 +31363,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgwa/",
+   "url": "/dali-epikore-11-gulvhoejtaler/daliepikore11hgma/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33377,77 +33377,6 @@
    "read": "2026-11-23"
   },
   {
-   "sku": "DALIOBERON1C",
-   "brand": "DALI",
-   "model": "OBERON 1 C",
-   "type": {
-    "key": "CompactSpeakerActive",
-    "da": "Kompakt højtaler – Aktive"
-   },
-   "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/dali-oberon-1-c-kompakt-hoejtaler--aktive/dalioberon1cbk/",
-   "kind": "speaker",
-   "scope": "diagram",
-   "facets": {
-    "active": true,
-    "mount": "stand",
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "DALIOBERON1CBK",
-     "label": "Sort ask",
-     "price": 7998,
-     "colorKey": "Black",
-     "ean": "5703120110790",
-     "url": "/dali-oberon-1-c-kompakt-hoejtaler--aktive/dalioberon1cbk/",
-     "img": "hk:916d705f-b485-46a8-b0e6-9630965c2bd4",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "4,33",
-      "Vægt emballage (kg)": "5,33",
-      "Mål (emballage)": "15 x 44,5 x 43 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "Frekvensområde (-3dB)": "39-26.000 Hz",
-    "Delefrekvens": "2350 Hz",
-    "Diskant størrelse": "29mm",
-    "Antal diskantenheder": "1x",
-    "Tweeter type": "Soft dome",
-    "Bas størrelse": "5.25\"",
-    "Antal basenheder": "1x",
-    "Bas - type": "Low-loss med træfiber-membran (SMC)",
-    "Kabinet type": "Basrefleks"
-   },
-   "rel": {
-    "acc": [
-     "ESSSTATIVS62X",
-     "ESSSTATIVWX",
-     "ESSSTELS57X",
-     "DALISOUNDHUB",
-     "DALISOUNDHUBCOMP",
-     "DALIWSR"
-    ],
-    "alt": [
-     "KEFLSX2LT",
-     "KEFLSX2",
-     "ARGFORTEA5MK2",
-     "KEFLS50W2"
-    ],
-    "rec": [
-     "DALISUBE9F",
-     "DALISUBE12F",
-     "DALISUBC8D",
-     "ARGMALMOSUB10X",
-     "DALIBASUBC8D",
-     "DALIOBERONVOKALC"
-    ]
-   },
-   "read": "2026-11-23"
-  },
-  {
    "sku": "DALIOBERONGRANDVOK",
    "brand": "DALI",
    "model": "OBERON GRAND VOKAL",
@@ -33604,90 +33533,6 @@
      "DALISUBE9F",
      "DALISUBE12F",
      "ARGMALMOSUB10X"
-    ]
-   },
-   "read": "2026-11-23"
-  },
-  {
-   "sku": "DALIOBERONONWALLC",
-   "brand": "DALI",
-   "model": "OBERON ON-WALL C",
-   "type": {
-    "key": "CompactSpeakerActive",
-    "da": "Kompakt højtaler – Aktive"
-   },
-   "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
-   "kind": "speaker",
-   "scope": "diagram",
-   "facets": {
-    "active": true,
-    "mount": "stand",
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "DALIOBERONONWALLCWH",
-     "label": "Hvid mat",
-     "price": 4999,
-     "colorKey": "White",
-     "ean": "5703120110868",
-     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcwh/",
-     "img": "hk:044e57ff-1fc1-4515-a023-d05fb98a07e0",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "5",
-      "Vægt emballage (kg)": "6,1",
-      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "DALIOBERONONWALLCOA",
-     "label": "Lys eg",
-     "price": 4999,
-     "colorKey": "Wood",
-     "ean": "5703120110899",
-     "url": "/dali-oberon-on-wall-c-kompakt-hoejtaler--aktive/dalioberononwallcoa/",
-     "img": "hk:a2156b47-c0c3-47f5-9dce-afaa4121b951",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "5",
-      "Vægt emballage (kg)": "6,1",
-      "Mål (emballage)": "32,5 x 20,5 x 52 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "Frekvensområde (-3dB)": "51 - 26000 Hz",
-    "Kabinet type": "Basrefleks",
-    "Delefrekvens": "2700",
-    "Diskant": "29mm Diamond Dome",
-    "Bas": "1x 5.25\" Low-loss med træfiber-membran (SMC)",
-    "Højtaler type": "Aktive HiFi højtalere",
-    "Spikes inkluderet": "Ja (også gummifødder)"
-   },
-   "rel": {
-    "acc": [
-     "DALISOUNDHUBCOMP",
-     "DALISOUNDHUB",
-     "DALIWSR"
-    ],
-    "alt": [
-     "DALIOBERON1C",
-     "DALIOBERON7C",
-     "ARGFORTEA5MK2",
-     "ARGFORTEA4MK2",
-     "KEFLSX2LT",
-     "KEFLSX2",
-     "KEFLS50W2"
-    ],
-    "rec": [
-     "DALISUBE9F",
-     "DALISUBE12F",
-     "DALISUBC8D",
-     "ARGMALMOSUB10X",
-     "DALIOBERONVOKALC",
-     "DALIBASUBC8D"
     ]
    },
    "read": "2026-11-23"
@@ -69900,7 +69745,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MBLACKLVB250X",
@@ -69927,7 +69772,7 @@
      "ean": "5705796080308",
      "url": "/ortofon-2m-black-lvb-250-mm-pickup/ort2mblacklvb250/",
      "img": "hk:fbaee668-6d55-4866-81f5-3608f937dfd4",
-     "stock": "notInStockAtpDate",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "0,01",
       "Vægt emballage (kg)": "0,1",
@@ -69963,7 +69808,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MBR",
@@ -70012,9 +69857,9 @@
    },
    "rel": {
     "acc": [
-     "ORTSTYLUS2MBR",
      "ESSTTSTYLUSGAUGEX",
-     "ORTSTYLUS2MBK"
+     "ORTSTYLUS2MBK",
+     "ORTSTYLUS2MBR"
     ],
     "alt": [
      "ORT2MBK",
@@ -70030,7 +69875,7 @@
      "DENDP3000NE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MR7",
@@ -70076,8 +69921,8 @@
    },
    "rel": {
     "acc": [
-     "ORTSTYLUS2M78X",
-     "ESSTTSTYLUSGAUGEX"
+     "ESSTTSTYLUSGAUGEX",
+     "ORTSTYLUS2M78X"
     ],
     "alt": [
      "ORT2M78X"
@@ -70087,7 +69932,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRBLAC",
@@ -70141,7 +69986,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRBLACKLVB25",
@@ -70192,7 +70037,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRBLU",
@@ -70247,7 +70092,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRBRONZ",
@@ -70301,7 +70146,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRE",
@@ -70369,7 +70214,7 @@
      "DENDP300F"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MRRE",
@@ -70425,7 +70270,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCADENZABC",
@@ -70485,7 +70330,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCADENZABK",
@@ -70543,7 +70388,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCADENZABR",
@@ -70591,7 +70436,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCADENZARE",
@@ -70651,7 +70496,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBKLVBSTYLUS",
@@ -70699,7 +70544,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBLAC",
@@ -70760,7 +70605,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBLACKLVB",
@@ -70819,7 +70664,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBLACKSTYLUS",
@@ -70868,7 +70713,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBLU",
@@ -70930,7 +70775,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBLUESTYLUS",
@@ -70978,7 +70823,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBRONZ",
@@ -71039,7 +70884,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMBRONZESTYLUS",
@@ -71066,7 +70911,7 @@
      "ean": "5705796180190",
      "url": "/ortofon-concorde-music-bronze-stylus-erstatnings-pickup-naal/ortstylusconcmbronze/",
      "img": "hk:209dac72-463c-4288-b311-3118abff0800",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt emballage (kg)": "0,01",
       "Mål (emballage)": "3,6 x 3,6 x 3,6 cm (bredde x højde x dybde)"
@@ -71088,7 +70933,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMRE",
@@ -71152,7 +70997,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCMREDSTYLUS",
@@ -71200,7 +71045,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCOM5EX",
@@ -71266,7 +71111,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCOM5SX",
@@ -71332,7 +71177,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2CLUBX",
@@ -71398,7 +71243,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2DIGIX",
@@ -71463,7 +71308,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2DJX",
@@ -71526,7 +71371,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2MIXX",
@@ -71592,7 +71437,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2SCRATX",
@@ -71657,7 +71502,7 @@
      "ESSTTBRUSHSTYLUS1X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTCONCORDEMK2TW",
@@ -71783,7 +71628,7 @@
      "ORTCONCORDEMK2DIGIX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTLH2000",
@@ -71809,7 +71654,7 @@
      "ean": "4571106660949",
      "url": "/ortofon-lh-2000-headshell-pladespillertilbehoer/ortlh2000bk/",
      "img": "hk:0fb514cb-32d2-4c10-8295-2917562b0529",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,03",
       "Vægt emballage (kg)": "0,1",
@@ -71839,7 +71684,7 @@
      "DENDP450"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTMCVERTEXX",
@@ -71882,7 +71727,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTMCX",
@@ -71909,7 +71754,7 @@
      "ean": "5705796271317",
      "url": "/ortofon-mc-x-series-mc-pickup/ortmcx40/",
      "img": "hk:4d40c729-0b37-4c21-b794-11630af43552",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,01",
       "Vægt emballage (kg)": "0,06",
@@ -72035,7 +71880,7 @@
      "DENDP3000NE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTOM5EX",
@@ -72084,9 +71929,9 @@
    "rel": {
     "acc": [
      "ESSTTSTYLUSGAUGEX",
-     "ORTSTYLUS78X",
      "ORTSTYLUS5EX",
-     "ORTSTYLUS10X"
+     "ORTSTYLUS10X",
+     "ORTSTYLUS78X"
     ],
     "alt": [
      "ORT2MRE",
@@ -72098,7 +71943,7 @@
      "ARGPHONO1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS10X",
@@ -72154,7 +71999,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS20X",
@@ -72207,7 +72052,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2M78X",
@@ -72253,7 +72098,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2MBK",
@@ -72314,7 +72159,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2MBKLVB",
@@ -72360,7 +72205,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2MBL",
@@ -72418,7 +72263,7 @@
      "ARGTT3PLUSX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2MBR",
@@ -72445,7 +72290,7 @@
      "ean": "5705796180039",
      "url": "/ortofon-stylus-2m-bronze-erstatnings-pickup-naal/ortstylus2mbron/",
      "img": "hk:2d2a719d-27f5-4c32-98ba-97ac7c3f464b",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,01",
       "Vægt emballage (kg)": "0,01",
@@ -72473,7 +72318,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS2MRE",
@@ -72532,7 +72377,7 @@
      "ORT2MRE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS30X",
@@ -72585,7 +72430,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS40X",
@@ -72637,7 +72482,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS5EX",
@@ -72697,7 +72542,7 @@
      "ORTOM5EX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUS78X",
@@ -72741,7 +72586,7 @@
      "ORTOM5EX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSCONMK2CLUBX",
@@ -72768,7 +72613,7 @@
      "ean": "5705796141047",
      "url": "/ortofon-stylus-concorde-mkii-club-erstatnings-pickup-naal/ortstylusconmk2club/",
      "img": "hk:171e42a6-d08a-4967-85fa-b81fe0be78cb",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,03",
       "Vægt emballage (kg)": "0,03",
@@ -72793,7 +72638,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSCONMK2DIGIX",
@@ -72845,7 +72690,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSCONMK2DJX",
@@ -72897,7 +72742,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSCONMK2MIXX",
@@ -72949,7 +72794,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSCONMK2SCRAX",
@@ -72976,7 +72821,7 @@
      "ean": "5705796141030",
      "url": "/ortofon-stylus-concorde-mkii-scratch-erstatnings-pickup-naal/ortstylusconmk2scra/",
      "img": "hk:639c5bb8-0654-4a92-b924-bd521e9fc608",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,03",
       "Vægt emballage (kg)": "0,03",
@@ -73001,7 +72846,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSPROSX",
@@ -73028,7 +72873,7 @@
      "ean": "5705796140088",
      "url": "/ortofon-stylus-pro-s-erstatnings-pickup-naal/ortstyluspros/",
      "img": "hk:65d4f35d-2fb6-4b27-988d-906bd8c515a7",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt emballage (kg)": "0,03",
       "Mål (emballage)": "4 x 4 x 4 cm (bredde x højde x dybde)"
@@ -73052,7 +72897,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSVNL1X",
@@ -73102,7 +72947,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORTSTYLUSVNL2X",

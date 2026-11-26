@@ -160,7 +160,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 32,
+     "availableQuantity": 20,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -203,51 +203,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS2MRE leverer en varm, fyldig og medrivende lyd med fremragende ydeevne i hverdagen. Erstatningsnålen giver rigtig god værdi for pengene, leveres hurtigt og er imponerende nem at montere. Venlig service og praktisk hjælp ved udskiftning gør opgraderingen ekstra tilfredsstillende.",
+   "summary": "ORTSTYLUS2MRE leverer en varm, klar og omsluttende lyd og fungerer samtidig som en prisvenlig stylus i høj kvalitet. Den nemme montering og hurtige udskiftning gør opgraderingen særligt bekvem. Pålidelig service, hurtig levering og god værdi for pengene fuldender en fremragende pakke.",
    "headlines": {
-    "excellent value for money": {
-     "sentimentAnalysis": "Erstatningsnålen anses konsekvent for billig eller rimeligt prissat, samtidig med at den leverer den forventede ydeevne og kvalitet.",
-     "simpleTitle": "Fremragende værdi for pengene",
-     "bias": "positive",
-     "key": "value-price",
-     "groupId": "03c71c40-8af0-419f-b4ac-3ad0b2944ca7"
-    },
     "easy to install and replace": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver hurtig udskiftning, enkel montering ved at skubbe nålen på plads og muligheden for nemt at gøre det hjemme.",
+     "sentimentAnalysis": "Erstatningsnålen beskrives gentagne gange som hurtig og nem at montere, også derhjemme.",
      "simpleTitle": "Nem at montere og udskifte",
      "bias": "positive",
-     "key": "installation-replacement",
-     "groupId": "47a6cd1e-603e-4e31-836b-84ce913372ff"
+     "key": "installation",
+     "groupId": "c14187af-05a2-4223-a3a4-f464e040ffbf"
+    },
+    "affordable and good value": {
+     "sentimentAnalysis": "Nålen opfattes som en prisvenlig erstatning med høj kvalitet og god værdi for pengene.",
+     "simpleTitle": "Prisvenlig og god værdi",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "17053114-2b19-4b7e-be46-327fa643891b"
+    },
+    "helpful, excellent service": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent servicen som god, fremragende og pålidelig.",
+     "simpleTitle": "God og fremragende service",
+     "bias": "positive",
+     "key": "service",
+     "groupId": "4d1e0b10-1ad8-4dad-b9c2-c13e318f3467"
     },
     "warm, high-quality sound": {
-     "sentimentAnalysis": "Nålen roses for klar, meget god og især varm lyd; en anmeldelse beskriver endda forbedringen som sammenlignelig med et nyt anlæg.",
+     "sentimentAnalysis": "Nålen roses for en klar, meget god og behageligt varm lyd.",
      "simpleTitle": "Varm lyd i høj kvalitet",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "87dd357e-41f3-4310-9b08-40dbe3b2263c"
-    },
-    "excellent, friendly service": {
-     "sentimentAnalysis": "Kundeservicen får entydigt positiv feedback og roses gentagne gange for fremragende service og praktisk hjælp.",
-     "simpleTitle": "Fremragende og venlig service",
-     "bias": "positive",
-     "key": "customer-service",
-     "groupId": "dc3c27c9-031b-4046-8c08-42e7e65edbfd"
+     "key": "sound",
+     "groupId": "73a2438f-0aca-44b4-a019-879b786aaef6"
     }
    },
    "grouping": {
-    "03c71c40-8af0-419f-b4ac-3ad0b2944ca7": {
-     "title": "Pris og værdi",
-     "id": "03c71c40-8af0-419f-b4ac-3ad0b2944ca7",
-     "references": [
-      "89694975-8b46-4d07-ac97-e18fea8164d6",
-      "2779d753-2c31-466e-87bb-b2bb771eb322",
-      "1add179c-1578-4e00-b44f-84f16adbe30a",
-      "df207326-e796-42ae-974e-98d60f7756b5"
-     ]
-    },
-    "47a6cd1e-603e-4e31-836b-84ce913372ff": {
+    "c14187af-05a2-4223-a3a4-f464e040ffbf": {
      "title": "Montering og udskiftning",
-     "id": "47a6cd1e-603e-4e31-836b-84ce913372ff",
+     "id": "c14187af-05a2-4223-a3a4-f464e040ffbf",
      "references": [
       "6bd5b58e-30df-4f6d-aeac-10354632be5c",
       "88da7815-548a-4115-94c3-6d2ad05e33d0",
@@ -255,18 +245,28 @@
       "c4e0bf53-2718-45d8-aeac-30ea9a5d14a0"
      ]
     },
-    "87dd357e-41f3-4310-9b08-40dbe3b2263c": {
+    "17053114-2b19-4b7e-be46-327fa643891b": {
+     "title": "Pris og værdi",
+     "id": "17053114-2b19-4b7e-be46-327fa643891b",
+     "references": [
+      "89694975-8b46-4d07-ac97-e18fea8164d6",
+      "2779d753-2c31-466e-87bb-b2bb771eb322",
+      "1add179c-1578-4e00-b44f-84f16adbe30a",
+      "df207326-e796-42ae-974e-98d60f7756b5"
+     ]
+    },
+    "73a2438f-0aca-44b4-a019-879b786aaef6": {
      "title": "Lydkvalitet",
-     "id": "87dd357e-41f3-4310-9b08-40dbe3b2263c",
+     "id": "73a2438f-0aca-44b4-a019-879b786aaef6",
      "references": [
       "e76edcdc-c839-48e1-a876-65b72de17ee5",
       "324b3634-b27c-4375-8726-48b40a207b23",
       "a0c98e60-86e1-4928-9013-b4cb6ad0e82e"
      ]
     },
-    "dc3c27c9-031b-4046-8c08-42e7e65edbfd": {
-     "title": "Kundeservice",
-     "id": "dc3c27c9-031b-4046-8c08-42e7e65edbfd",
+    "4d1e0b10-1ad8-4dad-b9c2-c13e318f3467": {
+     "title": "Service",
+     "id": "4d1e0b10-1ad8-4dad-b9c2-c13e318f3467",
      "references": [
       "e81ef4a4-06fd-467d-b9cc-86e83c05fc54",
       "f889b62a-2e64-4388-b868-0baca76c10e0",

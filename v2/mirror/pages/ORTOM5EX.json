@@ -39,9 +39,9 @@
   "recommendedAccessories": {
    "productCodes": [
     "ESSTTSTYLUSGAUGEX",
-    "ORTSTYLUS78X",
     "ORTSTYLUS5EX",
-    "ORTSTYLUS10X"
+    "ORTSTYLUS10X",
+    "ORTSTYLUS78X"
    ],
    "isOutlet": "false"
   },
@@ -173,7 +173,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 13,
-     "availableQuantity": 28,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -216,48 +216,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTOM5EX leverer varm, detaljeret og medrivende vinylgengivelse og er en markant forbedring i forhold til mange standardpickupper, især til prisen. Hjælp til installation og kundeservice roses konsekvent, mens pickuppen generelt er nem at integrere og har tydeligt markerede tilslutninger. Klangpræferencerne varierer: Nogle lyttere oplever lyden som lidt steril eller mindre tilgivende, og én anmeldelse nævner en lidt løs bas, men den samlede vurdering er meget positiv.",
+   "summary": "ORTOM5EX roses bredt som en pickup med fremragende værdi for pengene, der giver pladespillere en varm, detaljeret, slagkraftig og medrivende lyd og ofte er en markant forbedring i forhold til enkle eller ældre pickupper. Hjælp til installation og kundeservice beskrives gentagne gange som fremragende, selv om monteringen kan være lidt besværlig, og gengivelsen for nogle lyttere kan virke en smule steril eller mindre tilgivende. Samlet set leverer ORTOM5EX en energisk, transparent og musikalsk opgradering til en attraktiv pris.",
    "headlines": {
-    "consistently excellent customer service": {
-     "sentimentAnalysis": "Hurtig levering, kompetent rådgivning, hjælpsomt personale og pålidelig service roses i de serviceorienterede anmeldelser.",
-     "simpleTitle": "Konsekvent fremragende kundeservice",
+    "excellent value for money": {
+     "sentimentAnalysis": "Pickup'en betragtes gentagne gange som prisvenlig, af høj kvalitet og med særligt god værdi for pengene.",
+     "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "customer-service",
-     "groupId": "c295b5b4-52b2-450e-a4fb-4b51d114f7fd"
+     "key": "value_excellent",
+     "groupId": "221fe392-cca8-4383-b6c5-a9681bcf8aed"
     },
-    "good value for the price": {
-     "sentimentAnalysis": "Pickuppen beskrives gentagne gange som prisbillig, vellavet og som en fremragende opgradering til pengene.",
-     "simpleTitle": "God værdi for pengene",
+    "helpful installation and customer service": {
+     "sentimentAnalysis": "Personalet roses for kompetent rådgivning, venlig service og praktisk hjælp med installationen.",
+     "simpleTitle": "God installationshjælp og kundeservice",
      "bias": "positive",
-     "key": "price-value",
-     "groupId": "9d7b977d-58bc-46a8-9b6a-b2e7199a723f"
+     "key": "service_helpful",
+     "groupId": "0582c732-ef87-4bc2-a00f-9bb654ee679a"
     },
-    "warm, detailed and improved sound": {
-     "sentimentAnalysis": "Anmeldelserne roser større detaljering, præcision, åbenhed og en tydeligt forbedret gengivelse sammenlignet med tidligere pickupper.",
-     "simpleTitle": "Varm, detaljeret og forbedret lyd",
+    "warm, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som varm, fyldig, klar og detaljeret samt markant bedre end fra den oprindelige pickup.",
+     "simpleTitle": "Varm, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "867c12dd-c47b-4f68-9874-07ac761c1f33"
+     "key": "sound_warm_detailed",
+     "groupId": "05f23308-219a-409b-a88b-d0867c4bd778"
     },
-    "excellent installation assistance": {
-     "sentimentAnalysis": "Installation i butikken og personlig hjælp gør opsætningen nem og bekvem for flere kunder.",
-     "simpleTitle": "Fremragende hjælp til installation",
+    "a clear upgrade over basic cartridges": {
+     "sentimentAnalysis": "Pickup'en siges at gøre flere detaljer hørbare og lyde markant bedre end tidligere eller medfølgende pickupper.",
+     "simpleTitle": "En tydelig opgradering i forhold til enkle pickupper",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "590bff60-6b14-4201-9c7c-80024ca6b071"
+     "key": "sound_upgrade",
+     "groupId": "05f23308-219a-409b-a88b-d0867c4bd778"
     },
-    "installation can be tricky": {
-     "sentimentAnalysis": "To anmeldelser bemærker, at egen montering ikke er helt enkel, selv om resultatet er godt.",
-     "simpleTitle": "Installationen kan være vanskelig",
+    "some listeners find the presentation sterile or less forgiving": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne nævner en mindre tilgivende, noget steril lyd eller en ustram bas.",
+     "simpleTitle": "Nogle lyttere oplever gengivelsen som steril eller mindre tilgivende",
      "bias": "negative",
-     "key": "installation",
-     "groupId": "590bff60-6b14-4201-9c7c-80024ca6b071"
+     "key": "sound_limitations",
+     "groupId": "05f23308-219a-409b-a88b-d0867c4bd778"
+    },
+    "installation can be fiddly": {
+     "sentimentAnalysis": "To anmeldelser bemærker, at det ikke er særligt nemt selv at montere pickup'en.",
+     "simpleTitle": "Installationen kan være besværlig",
+     "bias": "negative",
+     "key": "installation_fiddly",
+     "groupId": "542667b4-5b1c-4073-ae2b-1b7f7845b8c9"
     }
    },
    "grouping": {
-    "867c12dd-c47b-4f68-9874-07ac761c1f33": {
+    "05f23308-219a-409b-a88b-d0867c4bd778": {
      "title": "Lydkvalitet",
-     "id": "867c12dd-c47b-4f68-9874-07ac761c1f33",
+     "id": "05f23308-219a-409b-a88b-d0867c4bd778",
      "references": [
       "8d415ca6-019a-4298-add9-10bc0210b4b6",
       "9ba74906-2372-463a-9bb0-d104297e1e05",
@@ -271,23 +278,25 @@
       "efd6e1f5-c782-495a-82aa-7e55f17afefb"
      ]
     },
-    "c295b5b4-52b2-450e-a4fb-4b51d114f7fd": {
+    "0582c732-ef87-4bc2-a00f-9bb654ee679a": {
      "title": "Kundeservice",
-     "id": "c295b5b4-52b2-450e-a4fb-4b51d114f7fd",
+     "id": "0582c732-ef87-4bc2-a00f-9bb654ee679a",
      "references": [
       "6e2bc219-c745-4bf4-8fe5-39d90799232c",
       "9159b8e5-1a51-4342-b51a-95186165c120",
       "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
       "27ea6bd2-c8ce-4d34-b1c4-b3ba7198cd9f",
+      "31f1c416-34d0-46b0-a6e6-ef8fbe115887",
       "70ad0ed3-e88e-4f67-ad80-e295bda8aec1",
       "f843c8ab-b06c-4f35-b982-44b807c92169",
       "4edb9b2e-ed8d-4830-8cc2-50b0d76e9c37"
      ]
     },
-    "9d7b977d-58bc-46a8-9b6a-b2e7199a723f": {
+    "221fe392-cca8-4383-b6c5-a9681bcf8aed": {
      "title": "Pris og værdi",
-     "id": "9d7b977d-58bc-46a8-9b6a-b2e7199a723f",
+     "id": "221fe392-cca8-4383-b6c5-a9681bcf8aed",
      "references": [
+      "e8f4f537-c9c5-4288-b4b5-bcb48f605877",
       "8d415ca6-019a-4298-add9-10bc0210b4b6",
       "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
       "9ba74906-2372-463a-9bb0-d104297e1e05",
@@ -296,11 +305,10 @@
       "837775e9-80d1-415c-a304-1ac25f9fe6bf"
      ]
     },
-    "590bff60-6b14-4201-9c7c-80024ca6b071": {
+    "542667b4-5b1c-4073-ae2b-1b7f7845b8c9": {
      "title": "Installation",
-     "id": "590bff60-6b14-4201-9c7c-80024ca6b071",
+     "id": "542667b4-5b1c-4073-ae2b-1b7f7845b8c9",
      "references": [
-      "e8f4f537-c9c5-4288-b4b5-bcb48f605877",
       "f6a0bd4d-671f-468f-b7ff-3e9a72ecee26",
       "27ea6bd2-c8ce-4d34-b1c4-b3ba7198cd9f",
       "31f1c416-34d0-46b0-a6e6-ef8fbe115887",

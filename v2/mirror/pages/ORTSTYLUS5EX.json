@@ -164,7 +164,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 44,
+     "availableQuantity": 19,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -207,41 +207,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS5EX leverer en varm, klar og slagkraftig opgradering, der bringer pladerne til live igen og især imponerer i forhold til prisen. Pickupnålen passer godt, er nem at udskifte og giver en medrivende lytteoplevelse tilbage. Den samlede tilfredshed er høj, understøttet af god service, selv om leveringen kan være langsom, og konstruktionen virker lidt skrøbelig.",
+   "summary": "ORTSTYLUS5EX leverer en varm, klar og fyldig lydforbedring med særligt god værdi for pengene. Nålen passer godt, genskaber en medrivende og glasklar afspilning og er nem at udskifte. Servicen får stor ros, selv om en anmeldelse nævner en lidt skrøbelig konstruktion, og en anden klager over meget lang leveringstid.",
    "headlines": {
-    "clear, powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig forbedring, krystalklar gengivelse og fantastisk ydeevne.",
-     "simpleTitle": "Klar og kraftfuld lyd",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "8ce221b3-5ae2-4f2c-ae27-22b745f01076"
-    },
     "easy replacement and reliable fit": {
-     "sentimentAnalysis": "Pickupnålen passer korrekt, er nem at udskifte og får pladespilleren til at fungere igen.",
-     "simpleTitle": "Nem udskiftning og sikker pasform",
+     "sentimentAnalysis": "Anmeldelserne fremhæver perfekt pasform, nem udskiftning og genoprettet funktion.",
+     "simpleTitle": "Nem udskiftning og god pasform",
      "bias": "positive",
      "key": "installation-fit",
-     "groupId": "840e41f3-bceb-49af-bc0c-a8bfaf292c9e"
+     "groupId": "2c5ef19d-c8f3-426d-95b0-8da47dbe8768"
     },
-    "good value sound": {
-     "sentimentAnalysis": "Lyden vurderes som mere end god nok og især imponerende i denne prisklasse.",
+    "clear, immersive sound restoration": {
+     "sentimentAnalysis": "Nålen forbedrer afspilningen mærkbart og genskaber glasklar lyd.",
+     "simpleTitle": "Klar og medrivende lydgengivelse",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "770ae6d2-f2fa-4c8a-8d1f-236a99ca71c1"
+    },
+    "strong sound value for the price": {
+     "sentimentAnalysis": "Lyden vurderes som mere end godkendt og som et fremragende køb, især i denne prisklasse.",
      "simpleTitle": "God lyd til prisen",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "8ce221b3-5ae2-4f2c-ae27-22b745f01076"
+     "groupId": "770ae6d2-f2fa-4c8a-8d1f-236a99ca71c1"
     },
     "highly praised service": {
-     "sentimentAnalysis": "Begge anmeldelser udtrykker tydelig tilfredshed med serviceoplevelsen.",
-     "simpleTitle": "Meget rost service",
+     "sentimentAnalysis": "Kundeservicen får stor ros og beskrives som fremragende og magisk.",
+     "simpleTitle": "Service får stor ros",
      "bias": "positive",
      "key": "service",
-     "groupId": "2840efa6-f3e5-4359-a0a9-49fe91bb642b"
+     "groupId": "92bc7df2-f1e8-4772-b652-0cb9c36b64f3"
     }
    },
    "grouping": {
-    "8ce221b3-5ae2-4f2c-ae27-22b745f01076": {
+    "770ae6d2-f2fa-4c8a-8d1f-236a99ca71c1": {
      "title": "Lydkvalitet",
-     "id": "8ce221b3-5ae2-4f2c-ae27-22b745f01076",
+     "id": "770ae6d2-f2fa-4c8a-8d1f-236a99ca71c1",
      "references": [
       "3a4cf03f-d881-4bf9-a549-ab3e90b82fc8",
       "76603d40-cf1b-42cd-b65c-c7873bbf019f",
@@ -249,18 +249,18 @@
       "6c726cca-a80c-4fb3-b23f-f4d189fcb10d"
      ]
     },
-    "840e41f3-bceb-49af-bc0c-a8bfaf292c9e": {
+    "2c5ef19d-c8f3-426d-95b0-8da47dbe8768": {
      "title": "Montering og pasform",
-     "id": "840e41f3-bceb-49af-bc0c-a8bfaf292c9e",
+     "id": "2c5ef19d-c8f3-426d-95b0-8da47dbe8768",
      "references": [
       "2ac7ce16-0dd6-4dd1-af2b-ce573510d09e",
       "ffce40c3-0af7-4431-8dfe-93a51658ac92",
       "1dbb9ed0-207a-4338-9c64-c2f16f111a52"
      ]
     },
-    "2840efa6-f3e5-4359-a0a9-49fe91bb642b": {
+    "92bc7df2-f1e8-4772-b652-0cb9c36b64f3": {
      "title": "Service",
-     "id": "2840efa6-f3e5-4359-a0a9-49fe91bb642b",
+     "id": "92bc7df2-f1e8-4772-b652-0cb9c36b64f3",
      "references": [
       "c163bbb9-a554-447f-a792-406ae743b261",
       "f2383fef-b52e-44bf-b35c-e1f03a236408"

@@ -21,7 +21,7 @@
   "gallery": [
    "2d2a719d-27f5-4c32-98ba-97ac7c3f464b"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 209,
@@ -155,11 +155,12 @@
      "productCode": "ORTSTYLUS2MBRON"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager torsdag den 26. november",
-     "deliveryDate": "2026-11-26T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 5,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -200,47 +201,31 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS2MBR leverer en varm, slagkraftig og meget detaljeret lytteoplevelse med markante forbedringer i forhold til enklere nåle. Lyden er medrivende og rummelig med stram bas og tydelig kanalseparation. Hurtig og venlig service styrker det allerede fremragende helhedsindtryk.",
+   "summary": "ORTSTYLUS2MBR leverer en varm, slagkraftig og omsluttende lytteoplevelse med en markant opgradering i forhold til enklere pickupper. Detaljeret lyd, stram bas og medrivende musikalitet gør nålen til et særdeles tilfredsstillende valg til kompatible pladespillere. Hurtig og hjælpsom service samt nem udskiftning styrker det fremragende helhedsindtryk.",
    "headlines": {
-    "clear improvement over competing styli": {
-     "sentimentAnalysis": "Nålen beskrives som markant bedre klingende end tidligere eller konkurrerende modeller.",
-     "simpleTitle": "Tydelig forbedring i forhold til andre nåle",
+    "rich, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmigt den meget musikalske gengivelse med fremragende klarhed, kraftig bas og en omsluttende lytteoplevelse.",
+     "simpleTitle": "Fyldig, detaljeret og omsluttende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "48b5d3f7-5e3b-478a-879c-e037e3372e28"
+     "groupId": "05402e91-5548-4a30-92d3-23916f15c224"
     },
-    "detailed, powerful and spacious presentation": {
-     "sentimentAnalysis": "Anmeldelserne roser en medrivende lyd med kraftig bas, imponerende detaljer og en fremragende musikalsk gengivelse.",
-     "simpleTitle": "Detaljeret, kraftfuld og rummelig gengivelse",
+    "a dramatic improvement over previous styli": {
+     "sentimentAnalysis": "Nålen beskrives som en markant lydmæssig opgradering i forhold til en Blue-nål og Ortofon Red.",
+     "simpleTitle": "En markant forbedring i forhold til tidligere nåle",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "48b5d3f7-5e3b-478a-879c-e037e3372e28"
-    },
-    "fast and helpful service": {
-     "sentimentAnalysis": "Servicen roses konsekvent som hurtig, hjælpsom og professionel.",
-     "simpleTitle": "Hurtig og hjælpsom service",
-     "bias": "positive",
-     "key": "service",
-     "groupId": "56e7fe39-b992-41fe-bba8-5bd0052785a4"
+     "groupId": "05402e91-5548-4a30-92d3-23916f15c224"
     }
    },
    "grouping": {
-    "48b5d3f7-5e3b-478a-879c-e037e3372e28": {
+    "05402e91-5548-4a30-92d3-23916f15c224": {
      "title": "Lydkvalitet",
-     "id": "48b5d3f7-5e3b-478a-879c-e037e3372e28",
+     "id": "05402e91-5548-4a30-92d3-23916f15c224",
      "references": [
       "c1bf8f2d-f85a-439d-9a38-2ed7bb3c3627",
       "5579c0b4-64be-459c-a7fa-b6bcd1315ebc",
       "6a872fb2-b5ca-43f7-8b13-6f7ae2da103d",
-      "21bb277c-18e0-4de5-b053-1ccd656e776e"
-     ]
-    },
-    "56e7fe39-b992-41fe-bba8-5bd0052785a4": {
-     "title": "Service",
-     "id": "56e7fe39-b992-41fe-bba8-5bd0052785a4",
-     "references": [
-      "f3e21c67-7d94-4161-b764-3b9e01bf33fb",
-      "930976aa-5399-47fc-b547-8bed35eab47c",
       "21bb277c-18e0-4de5-b053-1ccd656e776e"
      ]
     }

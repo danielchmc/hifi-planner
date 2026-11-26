@@ -18,7 +18,7 @@
   "gallery": [
    "639c5bb8-0654-4a92-b924-bd521e9fc608"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 154220,
@@ -108,11 +108,10 @@
      "productCode": "ORTSTYLUSCONMK2SCRA"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 14. december",
+     "deliveryDate": "2026-12-14T00:00:00Z",
      "canBuyOnline": true,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

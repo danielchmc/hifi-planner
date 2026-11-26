@@ -168,11 +168,11 @@
      "productCode": "ORT2MBLACKLVB250"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager torsdag den 26. november",
-     "deliveryDate": "2026-11-26T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

@@ -180,8 +180,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 87,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 69,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -243,67 +243,66 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORT2MRE leverer en levende, varm og detaljeret vinyllyd med tydelige vokaler, kontant bas og en engagerende, omsluttende gengivelse. Pickup’en roses bredt som en markant opgradering i forhold til ældre eller fabriksmonterede pickupper og får ofte ældre pladespillere til at lyde levende igen. Den stærke værdi for pengene, nemme montering og konsekvent hjælpsomme service fuldender en særdeles positiv oplevelse.",
+   "summary": "ORT2MRE roses bredt som en markant opgradering til pladespillere og leverer en klar, varm, detaljeret og mere kraftfuld lyd til en attraktiv pris. Musikken får fyldigere bas, større klarhed, bedre dynamik og en mere medrivende gengivelse. Professionel og venlig montering samt rådgivning hos HiFi Klubben giver købsoplevelsen ekstra værdi.",
    "headlines": {
-    "helpful, professional installation service": {
-     "sentimentAnalysis": "Butikspersonalet roses for venlig vejledning, professionel montering og praktisk installation, mens kunden venter.",
-     "simpleTitle": "Hjælpsom og professionel monteringsservice",
+    "professional and friendly installation": {
+     "sentimentAnalysis": "Butikkerne roses for kyndig montering, god vejledning, hurtig service og venlig betjening, ofte mens kunden venter.",
+     "simpleTitle": "Professionel og venlig montering",
      "bias": "positive",
-     "key": "service",
-     "groupId": "d07b9161-380c-468a-b9af-4dc1391e6e6d"
+     "key": "professional-installation",
+     "groupId": "08c80f08-7c6a-4194-93b1-069273084980"
     },
-    "a major improvement over older cartridges": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt pickup’en som en markant opgradering fra standard-, original- eller ældre pickupper.",
-     "simpleTitle": "Markant forbedring i forhold til ældre pickupper",
+    "strong value for the price": {
+     "sentimentAnalysis": "Pickup'en opfattes gentagne gange som en prisvenlig måde at få en markant lydforbedring og pålidelig kvalitet på.",
+     "simpleTitle": "Stærk værdi for pengene",
      "bias": "positive",
-     "key": "upgrade",
-     "groupId": "fabbaa99-eaca-40c3-a0cb-0dd40b67410b"
+     "key": "strong-value",
+     "groupId": "aa42c984-65b0-4ae6-be97-ba9928813811"
     },
-    "excellent value for the price": {
-     "sentimentAnalysis": "Pickup’en vurderes gentagne gange som prisvenlig, samtidig med at lydkvalitet og ydelse ligger over prisklassen.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "clearer, warmer and more detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klarere, varmere, renere og mere detaljeret gengivelse, hvor instrumenter og vokaler er lettere at skelne.",
+     "simpleTitle": "Klarere, varmere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "value",
-     "groupId": "fbe6a3a5-7898-44ca-8455-d9025b2fa91a"
+     "key": "clearer-warmer-detailed",
+     "groupId": "c16a9809-d678-4ee0-a481-dc854e307fcb"
     },
-    "warm, clear and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser en varm, ren og meget detaljeret gengivelse med tydelig instrumentseparation og realistisk klang.",
-     "simpleTitle": "Varm, klar og detaljeret lyd",
+    "fuller bass and stronger musical impact": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver mere fyldig og kontant bas, større musikalsk energi og en mere realistisk, medrivende oplevelse.",
+     "simpleTitle": "Fyldigere bas og større musikalsk gennemslagskraft",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "79e64b46-d8f2-4260-8550-09a5574e52a2"
-    },
-    "punchy bass and fuller presentation": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver mere bastryk, en fyldigere klangbalance og mere musikalsk energi ved lavere lydstyrke.",
-     "simpleTitle": "Kontant bas og fyldigere lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "79e64b46-d8f2-4260-8550-09a5574e52a2"
+     "key": "fuller-bass-impact",
+     "groupId": "c16a9809-d678-4ee0-a481-dc854e307fcb"
     }
    },
    "grouping": {
-    "79e64b46-d8f2-4260-8550-09a5574e52a2": {
+    "c16a9809-d678-4ee0-a481-dc854e307fcb": {
      "title": "Lydkvalitet",
-     "id": "79e64b46-d8f2-4260-8550-09a5574e52a2",
+     "id": "c16a9809-d678-4ee0-a481-dc854e307fcb",
      "references": [
       "1cfe9f52-1e31-4f8e-8b42-109214a36709",
       "bb83265c-9c54-4213-8906-cd9227d2131b",
       "3d9730dc-c3e8-486f-9c84-15fc6e9b8b82",
       "9c122efc-10e3-47ea-b6fc-21fd189a6093",
       "10f45e04-8ad7-4f71-bfca-1686feb945a3",
-      "9a7bc568-85b6-42a3-a0d6-e57b3b10a308",
       "6ec17631-c60a-45b9-99a4-50cc415dcede",
       "c37419a4-e549-4483-9646-3dc6c3b76f1a",
       "b1c86a18-6429-410c-83cc-6933cf5937aa",
       "4f02861e-09b3-4d99-aec7-22214e6b65e3",
+      "479b9c5a-ab5b-4ce6-b4a2-3dbaeabbe0ba",
       "bcbab14e-7805-4494-a7ca-91b1cc77db2f",
       "4b32846e-6b9e-4c81-b60b-6f82fdfa6de9",
       "d4d44b1b-6869-49f6-9952-ff644d74e82b",
-      "479b9c5a-ab5b-4ce6-b4a2-3dbaeabbe0ba",
-      "eed43189-f771-4ab5-b984-80c04c95390d",
-      "3421e669-5b37-4bdc-bf01-e0a6c9be8b88",
-      "fcaea873-b938-47e3-ba9a-81283c1131be",
+      "a0270e60-21a1-42b1-9298-d73ebd282b96",
+      "7fe127c4-3ebd-45ff-b9f7-f763cbc30502",
+      "733bbeed-76cd-4498-9404-47d326f251c8",
+      "62dd1057-261c-4b6b-88e3-c1557f6bc2b6",
       "1a0ed592-ac95-4440-be46-d596591efae3",
+      "eed43189-f771-4ab5-b984-80c04c95390d",
+      "8d359717-e016-4f35-97ec-8128e21947b3",
+      "fcaea873-b938-47e3-ba9a-81283c1131be",
+      "4fafa650-f80b-4b4a-8e18-2e2fe2eb3615",
+      "dbe93b75-a3e4-4351-bc5a-405b24c1f2f4",
+      "ab6a34de-a397-4b3d-a902-78db7c18da50",
       "5bf5b9e7-8a09-4570-9562-bf02ec28ff8b",
       "a2083de8-a645-4f86-bac0-07dbb4e7c920",
       "4a3fbc1f-8a24-426c-b2e5-ec04b79bdbda",
@@ -313,79 +312,24 @@
       "77f69984-d1b5-4fb5-8d8c-6f24220a5be5",
       "dd3ab65f-095e-4d83-a330-528b4d8f3a74",
       "840810ce-178c-4f1a-a531-34698a9ddb19",
+      "909a4e38-7666-4fce-bd29-37622ced26b0",
       "022b91c0-750f-454e-9a23-de0c17cf93ed",
       "6cf49c9c-13f3-41d5-82c2-6a54ec35eb53",
       "ba5082d3-d41a-401f-9c9e-0becd95e96ec",
-      "e82cbb96-e86d-46b5-933f-847b76924f07",
-      "3222f9fc-f1db-45d6-9326-6208916ee5e2",
-      "b2db8fd4-c5cf-46a7-8baf-b41d7cde1849",
+      "3a3443e2-62d6-4fa3-ab31-b6fe90f91ff3",
       "bae1829f-ff92-4ebc-819e-5dd2a1b56342",
       "2e053a16-7938-473e-a538-9ee97955a22e",
-      "8d359717-e016-4f35-97ec-8128e21947b3",
-      "dbe93b75-a3e4-4351-bc5a-405b24c1f2f4",
-      "ab6a34de-a397-4b3d-a902-78db7c18da50",
-      "0d443472-6545-49b2-bfe3-0d4af5077c19",
-      "3a3443e2-62d6-4fa3-ab31-b6fe90f91ff3",
+      "3222f9fc-f1db-45d6-9326-6208916ee5e2",
       "1b9eb1a6-4142-4b2e-a930-f52603d219ac",
-      "7fe127c4-3ebd-45ff-b9f7-f763cbc30502",
-      "8be17b24-9c8e-4a3f-ba6c-b62e518c0319",
-      "9c51aa3b-495d-487e-8119-5398c3f3a1aa",
-      "909a4e38-7666-4fce-bd29-37622ced26b0",
-      "d979f0f2-ecd2-44b3-be71-530c117afa01",
       "eb973f33-3839-4ea2-8fe4-c723d3297941",
-      "4dbe415d-af62-4367-bf77-5c785c9600f3",
-      "f873c98a-1334-4afe-b83b-d03d3a4922f3",
-      "32a94bd8-e58c-43f1-bc51-355c18ca684c",
-      "d42903c8-e383-46fc-b844-213da60cc879",
-      "6814d32f-01c3-42df-aec6-2366f8a0783c",
-      "d5acfc6a-3519-4614-b759-a7b5270ede85",
-      "5ea1f28d-22af-44d6-905a-470aa6b924fe",
-      "7ce9071f-f663-482c-936d-1bcf32f38781",
-      "74b4b342-6bf2-4316-8b3a-dc020512e9e4",
-      "d1bc1a0e-e971-4224-8886-5e19f76a2cdd",
-      "d4d44b1b-6869-49f6-9952-ff644d74e82b"
-     ]
-    },
-    "fabbaa99-eaca-40c3-a0cb-0dd40b67410b": {
-     "title": "Opgradering",
-     "id": "fabbaa99-eaca-40c3-a0cb-0dd40b67410b",
-     "references": [
-      "2d274846-f3e3-4d9a-aeca-6382b0752147",
-      "3d9730dc-c3e8-486f-9c84-15fc6e9b8b82",
-      "db69820e-425d-4af3-9e0c-22f761f57dbb",
-      "c37419a4-e549-4483-9646-3dc6c3b76f1a",
-      "b1c86a18-6429-410c-83cc-6933cf5937aa",
-      "479b9c5a-ab5b-4ce6-b4a2-3dbaeabbe0ba",
-      "bcbab14e-7805-4494-a7ca-91b1cc77db2f",
-      "7fe127c4-3ebd-45ff-b9f7-f763cbc30502",
-      "62dd1057-261c-4b6b-88e3-c1557f6bc2b6",
-      "1a0ed592-ac95-4440-be46-d596591efae3",
-      "8d359717-e016-4f35-97ec-8128e21947b3",
-      "fcaea873-b938-47e3-ba9a-81283c1131be",
-      "4fafa650-f80b-4b4a-8e18-2e2fe2eb3615",
-      "dbe93b75-a3e4-4351-bc5a-405b24c1f2f4",
-      "ab6a34de-a397-4b3d-a902-78db7c18da50",
-      "a2083de8-a645-4f86-bac0-07dbb4e7c920",
-      "4a3fbc1f-8a24-426c-b2e5-ec04b79bdbda",
-      "69b3ca3c-6e80-466d-abcb-dadf11213017",
-      "909a4e38-7666-4fce-bd29-37622ced26b0",
-      "7b782dcb-52ef-4e53-8692-688ddb6053b6",
-      "022b91c0-750f-454e-9a23-de0c17cf93ed",
-      "6cf49c9c-13f3-41d5-82c2-6a54ec35eb53",
-      "3a3443e2-62d6-4fa3-ab31-b6fe90f91ff3",
-      "1b9eb1a6-4142-4b2e-a930-f52603d219ac",
       "0d443472-6545-49b2-bfe3-0d4af5077c19",
       "b2db8fd4-c5cf-46a7-8baf-b41d7cde1849",
-      "80a669b7-5b9b-4106-90ea-17c14f43418f",
-      "9c51aa3b-495d-487e-8119-5398c3f3a1aa",
-      "840810ce-178c-4f1a-a531-34698a9ddb19",
-      "dd3ab65f-095e-4d83-a330-528b4d8f3a74",
-      "3222f9fc-f1db-45d6-9326-6208916ee5e2"
+      "80a669b7-5b9b-4106-90ea-17c14f43418f"
      ]
     },
-    "d07b9161-380c-468a-b9af-4dc1391e6e6d": {
+    "08c80f08-7c6a-4194-93b1-069273084980": {
      "title": "Service og montering",
-     "id": "d07b9161-380c-468a-b9af-4dc1391e6e6d",
+     "id": "08c80f08-7c6a-4194-93b1-069273084980",
      "references": [
       "1cfe9f52-1e31-4f8e-8b42-109214a36709",
       "ff47db6c-bad1-4d53-8d8b-55c1ea9cb139",
@@ -393,6 +337,7 @@
       "10f45e04-8ad7-4f71-bfca-1686feb945a3",
       "36dacdca-2bef-4922-ba71-6df724867e60",
       "fb5c643e-cfcf-41b7-8c05-230954fc96ed",
+      "b1c86a18-6429-410c-83cc-6933cf5937aa",
       "b987b5cf-2687-4ec2-9638-e3dc2d45a2c2",
       "7849ec7b-370f-47ab-958c-dbbf62601e93",
       "d0d4541c-e401-4b04-8046-2e4c9a22ad2d",
@@ -406,46 +351,39 @@
       "bbb06e34-a68c-4785-ad5b-5ec3578b3570",
       "d979f0f2-ecd2-44b3-be71-530c117afa01",
       "9bf870a3-fff3-4a87-b79a-f62bbe1ff636",
-      "2e053a16-7938-473e-a538-9ee97955a22e",
+      "547fc9f4-53d1-4d0b-aa44-90e20a26c2ff",
       "0ca707a1-c973-4365-a8bd-f88d89f0fd07",
-      "0415a2af-b04a-41de-834e-0b9b7a7d4224",
-      "42b19c1a-1373-4708-bd36-5b42f03c2b85",
-      "7dca5c6c-f244-455d-9b62-715710be4181",
-      "d4d44b1b-6869-49f6-9952-ff644d74e82b",
-      "d42903c8-e383-46fc-b844-213da60cc879",
-      "05ef7586-b46b-4d21-af87-f7475be53ba5",
-      "547fc9f4-53d1-4d0b-aa44-90e20a26c2ff"
+      "0415a2af-b04a-41de-834e-0b9b7a7d4224"
      ]
     },
-    "fbe6a3a5-7898-44ca-8455-d9025b2fa91a": {
+    "aa42c984-65b0-4ae6-be97-ba9928813811": {
      "title": "Værdi for pengene",
-     "id": "fbe6a3a5-7898-44ca-8455-d9025b2fa91a",
+     "id": "aa42c984-65b0-4ae6-be97-ba9928813811",
      "references": [
       "aa905b7a-0e0f-4288-b3b9-65daf4fb7394",
       "479b9c5a-ab5b-4ce6-b4a2-3dbaeabbe0ba",
       "f0bb105b-7724-42b4-bdf3-f213155aeaef",
       "eed43189-f771-4ab5-b984-80c04c95390d",
       "879aa4f5-ae5e-4fd6-aaa4-8d3a8be3f022",
-      "4fafa650-f80b-4b4a-8e18-2e2fe2eb3615",
-      "7dca5c6c-f244-455d-9b62-715710be4181",
-      "d77bda19-f7c1-49ff-9994-cd6a4af621fe",
-      "a5ae15ff-910b-4d98-b029-197bf755778f",
-      "7b782dcb-52ef-4e53-8692-688ddb6053b6",
-      "dbe93b75-a3e4-4351-bc5a-405b24c1f2f4",
       "eb973f33-3839-4ea2-8fe4-c723d3297941",
       "4dbe415d-af62-4367-bf77-5c785c9600f3",
-      "b2db8fd4-c5cf-46a7-8baf-b41d7cde1849"
+      "d77bda19-f7c1-49ff-9994-cd6a4af621fe",
+      "7dca5c6c-f244-455d-9b62-715710be4181",
+      "a5ae15ff-910b-4d98-b029-197bf755778f",
+      "7b782dcb-52ef-4e53-8692-688ddb6053b6",
+      "4fafa650-f80b-4b4a-8e18-2e2fe2eb3615",
+      "d4d44b1b-6869-49f6-9952-ff644d74e82b"
      ]
     }
    },
-   "rating": 4.82513661202186,
-   "count": 183,
+   "rating": 4.82065217391304,
+   "count": 184,
    "reviewCount": 97,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 0,
-    "4": 28,
+    "4": 29,
     "5": 154
    }
   },

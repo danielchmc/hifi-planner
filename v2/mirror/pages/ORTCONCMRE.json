@@ -170,7 +170,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 5,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -249,53 +249,35 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTCONCMRE får en begejstret vurdering som en raffineret pickup med varm lyd og detaljeret, musikalsk gengivelse. Den stærke værdi for pengene, pålidelige ydeevne og brede anvendelighed gør opgraderingen særligt attraktiv. Fremragende service og en meget tilfredsstillende lytteoplevelse fuldender helhedsindtrykket.",
+   "summary": "ORTCONCMRE leverer en yderst tilfredsstillende opgradering med en klar, detaljeret og medrivende lyd. Pickup'en roses for stærk ydeevne, driftssikker funktion og fremragende værdi for pengene. Den gode service og den tydelige forbedring i forhold til ældre DJ-systemer gør produktet til en varm anbefaling.",
    "headlines": {
     "a very good pickup": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pickup’en som meget god, fin eller fremragende.",
-     "simpleTitle": "En meget god pickup",
+     "sentimentAnalysis": "Pickup'en beskrives konsekvent som fantastisk og meget god.",
+     "simpleTitle": "En fantastisk pickup",
      "bias": "positive",
-     "key": "cartridge-quality",
-     "groupId": "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63"
+     "key": "pickup-quality",
+     "groupId": "c7579dea-7be1-4d6d-8377-57d6095dedfe"
     },
-    "detailed sound and strong performance": {
-     "sentimentAnalysis": "Pickup’en roses for detaljeret lyd og meget god samlet ydeevne.",
-     "simpleTitle": "Detaljeret lyd og stærk ydeevne",
-     "bias": "positive",
-     "key": "sound-performance",
-     "groupId": "668c6865-5e68-486a-8d07-15280bb7dbbd"
-    },
-    "excellent value for money": {
-     "sentimentAnalysis": "Produktet anses for prisvenligt og leverer samtidig meget god ydeevne.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "excellent value and performance": {
+     "sentimentAnalysis": "Produktet anses som prisvenligt og leverer samtidig detaljeret lyd og meget god ydeevne.",
+     "simpleTitle": "Fremragende værdi og ydeevne",
      "bias": "positive",
      "key": "value",
-     "groupId": "f0dd186e-901b-46bd-bdfc-caa45de3e324"
+     "groupId": "02fd5782-a6e8-46f3-b144-d2cc3bcb536a"
     }
    },
    "grouping": {
-    "668c6865-5e68-486a-8d07-15280bb7dbbd": {
-     "title": "Lyd og ydeevne",
-     "id": "668c6865-5e68-486a-8d07-15280bb7dbbd",
-     "references": [
-      "37952b18-6dc6-41f4-a88c-9b4adb4e05d0",
-      "bb3cd688-cfc2-4ad8-bc8e-216abfa16502",
-      "dde65a19-3861-45b6-97a5-c19cf2a5bc7d",
-      "8e29d5eb-88e0-4803-a9b1-db315bfd013c"
-     ]
-    },
-    "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63": {
+    "c7579dea-7be1-4d6d-8377-57d6095dedfe": {
      "title": "Pickup-kvalitet",
-     "id": "e358b36b-2c3e-4d6a-96d6-9a2cfffcbf63",
+     "id": "c7579dea-7be1-4d6d-8377-57d6095dedfe",
      "references": [
-      "6e0af9b4-fb29-4afd-89d6-a829b7dce8c3",
       "c882a35a-b5e5-49c2-ac3b-04edef434a1f",
       "3149173e-e690-46de-b507-616f64b5d57f"
      ]
     },
-    "f0dd186e-901b-46bd-bdfc-caa45de3e324": {
+    "02fd5782-a6e8-46f3-b144-d2cc3bcb536a": {
      "title": "Værdi for pengene",
-     "id": "f0dd186e-901b-46bd-bdfc-caa45de3e324",
+     "id": "02fd5782-a6e8-46f3-b144-d2cc3bcb536a",
      "references": [
       "bb3cd688-cfc2-4ad8-bc8e-216abfa16502",
       "dde65a19-3861-45b6-97a5-c19cf2a5bc7d"

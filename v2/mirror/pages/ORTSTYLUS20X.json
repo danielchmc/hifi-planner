@@ -188,40 +188,44 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS20X leverer en varm, slagkraftig og mærkbart mere detaljeret lyd med klare diskanttoner og kraftigere bas. Pickup'en roses bredt som en markant opgradering i forhold til OM5E og OM10 og giver kompatible pladespillere fornyet energi og mere rummelig lyd. Den nemme kompatibilitet og den gode værdi gør den til en særligt overbevisende forbedring af ældre Ortofon-systemer.",
+   "summary": "ORT STYLUS 20 leverer en varm, slagkraftig og mærkbart mere detaljeret lyd med en klar forbedring i forhold til OM5E og OM10. Opgraderingen giver kraftigere bas, tydeligere diskant og en mere engagerende, omsluttende gengivelse til en god pris. Dyrere alternativer som OM40 kan yde bedre, men STYLUS 20 er stadig en stærkt anbefalelsesværdig opgradering.",
    "headlines": {
-    "more detail and a crisper, fuller sound": {
-     "sentimentAnalysis": "Pickup'en roses for at gengive flere detaljer samt klare diskanttoner og en kraftigere, mere tilfredsstillende bas.",
-     "simpleTitle": "Flere detaljer og en klarere, fyldigere lyd",
+    "clear improvement over entry-level styli": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver STYLUS 20 som en markant opgradering fra OM5E, OM10 eller et grundlæggende pladespiller-setup.",
+     "simpleTitle": "Klar forbedring i forhold til enklere pickupper",
+     "bias": "positive",
+     "key": "sound-improvement",
+     "groupId": "784d7106-c76a-4b95-bc19-68e2a8539013"
+    },
+    "more detailed and crisp sound": {
+     "sentimentAnalysis": "Stylussen roses for at gengive flere detaljer og levere en sprød, livlig lyd.",
+     "simpleTitle": "Mere detaljeret og sprød lyd",
      "bias": "positive",
      "key": "sound-detail",
-     "groupId": "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb"
-    },
-    "a clear upgrade over entry-level styli": {
-     "sentimentAnalysis": "Pickup'en beskrives konsekvent som en markant forbedring i forhold til OM5E og OM10, især med en tydelig gevinst i musikalitet.",
-     "simpleTitle": "En klar opgradering fra entry-level-pickupper",
-     "bias": "positive",
-     "key": "upgrade-performance",
-     "groupId": "550623a9-ca39-4079-a14c-59e486853821"
+     "groupId": "599cc74b-02d0-4942-87b2-d2d5fb7cfffe"
     }
    },
    "grouping": {
-    "550623a9-ca39-4079-a14c-59e486853821": {
-     "title": "Opgradering",
-     "id": "550623a9-ca39-4079-a14c-59e486853821",
+    "599cc74b-02d0-4942-87b2-d2d5fb7cfffe": {
+     "title": "Lydkvalitet",
+     "id": "599cc74b-02d0-4942-87b2-d2d5fb7cfffe",
      "references": [
       "34249148-4fa8-4922-a680-03b331a2e3a5",
+      "1024a826-5b01-45bf-84a0-171ab2f6d73b",
+      "7da07ad5-71b5-4df4-812c-1295df1a54d7",
+      "6068ca39-675f-46dd-9013-cea3000c9382",
       "0680100a-f170-4348-8442-065c2e744078",
       "6d62966c-9075-4cea-b615-6798b07acbae",
       "6c5ded5d-76b9-4897-bcf2-3de78578601e"
      ]
     },
-    "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb": {
-     "title": "Lydkvalitet",
-     "id": "f485b9fe-12db-4a1f-babd-c6cb02d4a1eb",
+    "784d7106-c76a-4b95-bc19-68e2a8539013": {
+     "title": "Opgradering",
+     "id": "784d7106-c76a-4b95-bc19-68e2a8539013",
      "references": [
-      "34249148-4fa8-4922-a680-03b331a2e3a5",
-      "1024a826-5b01-45bf-84a0-171ab2f6d73b",
+      "6068ca39-675f-46dd-9013-cea3000c9382",
+      "0680100a-f170-4348-8442-065c2e744078",
+      "6d62966c-9075-4cea-b615-6798b07acbae",
       "6c5ded5d-76b9-4897-bcf2-3de78578601e"
      ]
     }

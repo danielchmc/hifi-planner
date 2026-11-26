@@ -112,11 +112,11 @@
      "productCode": "ORTSTYLUSCONCMBRONZE"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager mandag den 14. december",
+     "deliveryDate": "2026-12-14T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

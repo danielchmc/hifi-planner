@@ -18,7 +18,7 @@
   "gallery": [
    "65d4f35d-2fb6-4b27-988d-906bd8c515a7"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 272828,
@@ -99,11 +99,10 @@
      "productCode": "ORTSTYLUSPROS"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 14. december",
+     "deliveryDate": "2026-12-14T00:00:00Z",
      "canBuyOnline": true,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -144,7 +143,17 @@
   "testGroups": [],
   "bundleRelations": [],
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "brandName": "Ortofon",
   "modelName": "Stylus PRO S",
   "modelType": "Erstatnings pickup-nål",

@@ -149,8 +149,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 44,
+     "numberOfStoresExperience": 12,
+     "availableQuantity": 37,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -194,61 +194,60 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORTSTYLUS10X leverer en varm, detaljeret og slagkraftig lyd og giver pladespillere en tydeligt hørbar opgradering i forhold til simple eller slidte nåle. Den nemme montering, gode kompatibilitet og fornuftige pris gør nålen til en overbevisende erstatning til kompatible systemer. Hurtig levering og venlig service styrker det allerede meget positive indtryk.",
+   "summary": "ORTSTYLUS10X leverer en varm, klar og kraftfuld lyd, der giver ældre pladespillere nyt liv. Nålen giver en overbevisende opgradering i forhold til simple eller originale nåle, er nem at montere og har et stærkt pris-kvalitetsforhold. Hurtig levering og god service styrker det allerede meget positive indtryk.",
    "headlines": {
-    "clear, impressive sound improvement": {
-     "sentimentAnalysis": "Nålen roses for at levere en tydeligt bedre, fremragende og meget behagelig lyd end tidligere eller simple alternativer.",
-     "simpleTitle": "Klar og imponerende lydforbedring",
+    "clear, improved sound": {
+     "sentimentAnalysis": "Nålen roses for tydeligt forbedret og fremragende lyd sammenlignet med simple eller tidligere nåle.",
+     "simpleTitle": "Klar og forbedret lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "ea41b9ce-2383-4fad-b232-1a7f556c93d6"
+     "key": "sound-quality",
+     "groupId": "73cb2847-1e44-41f7-9d33-bfe8d96aa4a0"
     },
-    "worthwhile turntable upgrade": {
-     "sentimentAnalysis": "Produktet ses som en effektiv erstatning og meningsfuld opgradering til kompatible pladespillere, herunder Argon-modeller og ældre udstyr, der tages i brug igen.",
-     "simpleTitle": "Værdifuld opgradering af pladespiller",
+    "strong turntable upgrade": {
+     "sentimentAnalysis": "Produktet opfattes konsekvent som en effektiv opgradering til Argon- og ældre pladespillere.",
+     "simpleTitle": "Markant opgradering af pladespiller",
      "bias": "positive",
-     "key": "upgrade_compatibility",
-     "groupId": "cf4010d0-730e-47ae-a654-270d6428dd94"
+     "key": "turntable-upgrade",
+     "groupId": "6e7633fb-b0b0-47cf-ab30-5ac1ab28305e"
     },
-    "friendly, reliable service": {
-     "sentimentAnalysis": "Kundeservicen beskrives konsekvent som god, hjælpsom og som en grund til at vende tilbage.",
-     "simpleTitle": "Venlig og pålidelig service",
+    "helpful service": {
+     "sentimentAnalysis": "Kundeservicen beskrives gentagne gange som god og hjælpsom.",
+     "simpleTitle": "God service",
      "bias": "positive",
-     "key": "service_delivery",
-     "groupId": "b1c74740-179b-4ae8-9f30-b0698f4c3abc"
+     "key": "service-delivery",
+     "groupId": "ec50f43b-de7b-429e-887f-5dbf9495351c"
     },
-    "easy installation": {
-     "sentimentAnalysis": "Monteringen beskrives som nem med sikker klikmontering og kun behov for en enkel justering.",
+    "easy to install": {
+     "sentimentAnalysis": "Monteringen beskrives som nem, sikker og problemfri.",
      "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "installation",
-     "groupId": "d3e1c34a-0bfd-4fa0-9495-968d3de5c246"
+     "groupId": "4054f5eb-f4cf-424d-82d4-f4ad71e5bcf2"
     },
     "fast delivery": {
-     "sentimentAnalysis": "Leveringen roses som hurtig og effektiv, og bestillingerne fungerer perfekt og ankommer hurtigt.",
+     "sentimentAnalysis": "Leveringen roses specifikt for at være hurtig.",
      "simpleTitle": "Hurtig levering",
      "bias": "positive",
-     "key": "service_delivery",
-     "groupId": "b1c74740-179b-4ae8-9f30-b0698f4c3abc"
+     "key": "service-delivery",
+     "groupId": "ec50f43b-de7b-429e-887f-5dbf9495351c"
     }
    },
    "grouping": {
-    "ea41b9ce-2383-4fad-b232-1a7f556c93d6": {
+    "73cb2847-1e44-41f7-9d33-bfe8d96aa4a0": {
      "title": "Lydkvalitet",
-     "id": "ea41b9ce-2383-4fad-b232-1a7f556c93d6",
+     "id": "73cb2847-1e44-41f7-9d33-bfe8d96aa4a0",
      "references": [
       "a8f5e59e-a891-414e-94da-50ec15eea2c9",
       "aceab68e-8b7a-4bf7-8c36-856ad4073ff5",
+      "ba9d4b99-c7bc-415f-8cfc-bfa47d965ecf",
       "6dcf7e8b-0529-4345-81a9-be7772a83763",
       "a15257fc-ae67-4a8c-90a9-67684b590a2f",
-      "ba9d4b99-c7bc-415f-8cfc-bfa47d965ecf",
-      "95c5383f-6b07-49e4-ba3c-4769dfd09087",
-      "4a65df76-90fd-4e68-8a31-fa68e5a2c9dd"
+      "95c5383f-6b07-49e4-ba3c-4769dfd09087"
      ]
     },
-    "b1c74740-179b-4ae8-9f30-b0698f4c3abc": {
+    "ec50f43b-de7b-429e-887f-5dbf9495351c": {
      "title": "Service og levering",
-     "id": "b1c74740-179b-4ae8-9f30-b0698f4c3abc",
+     "id": "ec50f43b-de7b-429e-887f-5dbf9495351c",
      "references": [
       "0851954c-9484-4655-b045-b3011fd0f739",
       "e676e3e4-401b-4f7f-b278-f10bd2e30430",
@@ -257,18 +256,18 @@
       "0cc368de-d530-4231-b6b2-bfeec5c197bf"
      ]
     },
-    "cf4010d0-730e-47ae-a654-270d6428dd94": {
-     "title": "Opgradering og kompatibilitet",
-     "id": "cf4010d0-730e-47ae-a654-270d6428dd94",
+    "6e7633fb-b0b0-47cf-ab30-5ac1ab28305e": {
+     "title": "Opgradering af pladespiller",
+     "id": "6e7633fb-b0b0-47cf-ab30-5ac1ab28305e",
      "references": [
       "129fcec5-ddc8-4028-9d8e-7ad3ace1c3ac",
       "307274fa-e7f0-4248-9f51-dba5c7677d0c",
       "a15257fc-ae67-4a8c-90a9-67684b590a2f"
      ]
     },
-    "d3e1c34a-0bfd-4fa0-9495-968d3de5c246": {
+    "4054f5eb-f4cf-424d-82d4-f4ad71e5bcf2": {
      "title": "Montering",
-     "id": "d3e1c34a-0bfd-4fa0-9495-968d3de5c246",
+     "id": "4054f5eb-f4cf-424d-82d4-f4ad71e5bcf2",
      "references": [
       "95c5383f-6b07-49e4-ba3c-4769dfd09087",
       "613b2bd7-3085-4b69-9bde-aa770794158a"

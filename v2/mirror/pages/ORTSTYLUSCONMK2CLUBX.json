@@ -18,7 +18,7 @@
   "gallery": [
    "171e42a6-d08a-4967-85fa-b81fe0be78cb"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 154165,
@@ -108,10 +108,11 @@
      "productCode": "ORTSTYLUSCONMK2CLUB"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager torsdag den 26. november",
-     "deliveryDate": "2026-11-26T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -122,7 +123,7 @@
     "energySpecifications": {},
     "url": "/ortofon-stylus-concorde-mkii-club-erstatnings-pickup-naal/ortstylusconmk2club/",
     "canonicalUrl": "/ortofon-stylus-concorde-mkii-club-erstatnings-pickup-naal/ortstylusconmk2club/",
-    "lowestShippingPriceRaw": 299,
+    "lowestShippingPriceRaw": 29,
     "addOns": [
      {
       "sku": "ESSTTVINYLKIT100",

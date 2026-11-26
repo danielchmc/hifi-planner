@@ -18,7 +18,7 @@
   "gallery": [
    "0fb514cb-32d2-4c10-8295-2917562b0529"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 147204,
@@ -104,12 +104,11 @@
      "productCode": "ORTLH2000BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager mandag den 14. december",
+     "deliveryDate": "2026-12-14T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
