@@ -21,7 +21,7 @@
   "gallery": [
    "2a39e4de-a29c-468d-aabe-9200323e9e9a"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 147203,
@@ -37,8 +37,8 @@
   },
   "recommendedAccessories": {
    "productCodes": [
-    "ORTSTYLUS2M78X",
-    "ESSTTSTYLUSGAUGEX"
+    "ESSTTSTYLUSGAUGEX",
+    "ORTSTYLUS2M78X"
    ],
    "isOutlet": "false"
   },
@@ -157,11 +157,10 @@
      "productCode": "ORT2M78"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

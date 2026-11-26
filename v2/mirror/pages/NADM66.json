@@ -73,18 +73,18 @@
     "AQCINNCOX",
     "AQCINNUSBAB",
     "AQNRGMONSOON20A",
-    "AQHUSKYSUBX",
     "AQREDRIVERIN",
-    "AQGGBKHOLE"
+    "AQGGBKHOLE",
+    "AQHUSKYSUBX"
    ],
    "isOutlet": "false"
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "NADM17V2I",
     "HEGELP30A",
     "NADC658",
-    "NADM33"
+    "NADM33",
+    "NADM17V2I"
    ],
    "isOutlet": "false"
   },
@@ -216,12 +216,6 @@
    "url": "/stereo/forstarker/",
    "id": 69671
   },
-  "stockItemAlternative": {
-   "save": "13.000,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=NADM66",
-   "availableQuantity": 1,
-   "lowestPrice": "33.999,-"
-  },
   "variants": [
    {
     "id": 225504,
@@ -231,14 +225,30 @@
     "productCode": "NADM66SI",
     "ean": "786357001807",
     "priceDetails": {
-     "priceValueId": 1142983,
-     "price": 46999,
-     "priceFormatted": "46.999,-",
+     "priceValueId": 1214870,
+     "price": 36999,
+     "priceFormatted": "36.999,-",
+     "priceBefore": 46999,
+     "priceBeforeFormatted": "46.999,-",
+     "priceSavingsFormatted": "10.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 46999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 36999,
+     "unitPriceBefore": 46999
     },
+    "ribbons": [
+     {
+      "text": "Spar 21%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -277,7 +287,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 10,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -343,48 +353,47 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD M66 leverer varm, kraftfuld og meget detaljeret lyd med strammere bas, større dybde i lydbilledet og en medrivende stereogengivelse. Dirac Live og baskorrektion kan give særligt imponerende klarhed, præcision og dybde, mens streaming og BluOS tilbyder omfattende funktioner, når alt fungerer problemfrit. Det raffinerede design, den solide byggekvalitet og de fleksible funktioner gør M66 til en spændende high-end-forforstærker, selv om softwareproblemer, begrænsninger i betjeningen og utilstrækkelig hjælp til opsætning er tydelige svagheder.",
+   "summary": "NAD M66 leverer en varm, detaljeret og immersiv lyd med stram, slagkraftig bas, et rummeligt stereoperspektiv og en særdeles effektiv Dirac-rumkorrektion. Den førsteklasses konstruktion, det elegante design og de fleksible streamingmuligheder gør enheden til et imponerende centrum i et seriøst stereoanlæg. Software og styringsfunktioner er fortsat den største svaghed, da begrænsninger i BluOS, besværlig opsætning og manglende eller ustabile integrationsfunktioner forhindrer en helt gennemarbejdet oplevelse.",
    "headlines": {
-    "detailed, spacious and controlled sound": {
-     "sentimentAnalysis": "Lyden roses for klarhed, detaljer, dybde, stram bas og et mere komplet stereobillede.",
-     "simpleTitle": "Detaljeret, rummelig og kontrolleret lyd",
+    "detailed, spacious and powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en markant forbedring af detaljer, dybde, klarhed, baskontrol og stereoperspektiv.",
+     "simpleTitle": "Detaljeret, rummelig og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "c11e9e4e-73bf-4fcb-9deb-36b230be0758"
+     "groupId": "04f0abef-2532-4d20-be09-80266567bf70"
     },
     "elegant, premium construction": {
-     "sentimentAnalysis": "Produktet beskrives gentagne gange som attraktivt, æstetisk tiltalende og meget solidt bygget.",
+     "sentimentAnalysis": "Produktet roses gentagne gange for det attraktive udseende, den høje byggekvalitet og den eksklusive fremtoning.",
      "simpleTitle": "Elegant konstruktion i høj kvalitet",
      "bias": "positive",
      "key": "design",
-     "groupId": "fe17fac7-b3a1-4226-b31b-59c0664e1ce4"
+     "groupId": "ed585225-a940-483b-8407-c0cc2a48c880"
     },
-    "dirac Live makes a major difference": {
-     "sentimentAnalysis": "Rumkorrektion giver klarere og dybere lyd samt strammere bas og beskrives som den mest mærkbare opgradering.",
-     "simpleTitle": "Dirac Live gør en stor forskel",
+    "dirac makes bass and room response more precise": {
+     "sentimentAnalysis": "Dirac Live, især baskontrollen, tilskrives mere klarhed, dybde og strammere dybbas.",
+     "simpleTitle": "Dirac gør bas og rumgengivelse mere præcis",
      "bias": "positive",
-     "key": "roomcorrection",
-     "groupId": "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f"
+     "key": "dirac",
+     "groupId": "9857d18e-4336-4e7a-87fd-f9c5c7a298e9"
     },
-    "bluOS and control software can be awkward": {
-     "sentimentAnalysis": "Softwaren kritiseres for svag implementering, uintuitiv betjening og manglende netværksstyring.",
-     "simpleTitle": "BluOS og kontrolsoftwaren kan være besværlig",
+    "bluOS and control features feel underdeveloped": {
+     "sentimentAnalysis": "BluOS, netværksstyring og opsætningssupport kritiseres for svag implementering, manglende funktioner og frustrerende brugervenlighed.",
+     "simpleTitle": "BluOS og styringsfunktioner virker underudviklede",
      "bias": "negative",
-     "key": "streaming",
-     "groupId": "ffae404a-2989-4248-841f-6662dcd41099"
+     "key": "software",
+     "groupId": "2d42e24c-c13a-4a04-ad24-d2f99e5e4150"
     }
    },
    "grouping": {
-    "c11e9e4e-73bf-4fcb-9deb-36b230be0758": {
+    "04f0abef-2532-4d20-be09-80266567bf70": {
      "title": "Lydkvalitet",
-     "id": "c11e9e4e-73bf-4fcb-9deb-36b230be0758",
+     "id": "04f0abef-2532-4d20-be09-80266567bf70",
      "references": [
       "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
       "40884d67-56b1-487a-b5b3-9028e9dee7c0",
       "65e15e23-7b53-4e57-b39a-3672947357fe",
       "2e1c1905-2835-4a43-b5b3-21d552cbf54d",
       "1c3be274-e611-49c8-8852-b171f0e06cde",
-      "6168f2e6-ba9e-4b23-b00a-3b91e2696c05",
       "ac648575-f923-40a1-9e6e-c42303d3d735",
       "06b561bf-da3e-43c1-9f87-5082cfcda03d",
       "fd499432-63d3-4752-a6cf-5367b5362c05",
@@ -394,37 +403,38 @@
       "476f1458-374f-4960-9324-9dcc533b8618"
      ]
     },
-    "fe17fac7-b3a1-4226-b31b-59c0664e1ce4": {
+    "2d42e24c-c13a-4a04-ad24-d2f99e5e4150": {
+     "title": "Software og brugervenlighed",
+     "id": "2d42e24c-c13a-4a04-ad24-d2f99e5e4150",
+     "references": [
+      "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
+      "65e15e23-7b53-4e57-b39a-3672947357fe",
+      "fd499432-63d3-4752-a6cf-5367b5362c05",
+      "2d84c2c3-dc33-4275-b320-777ce93f2669",
+      "8c31c00f-1693-4339-8bde-16b36fd7b1bb",
+      "476f1458-374f-4960-9324-9dcc533b8618"
+     ]
+    },
+    "ed585225-a940-483b-8407-c0cc2a48c880": {
      "title": "Design og byggekvalitet",
-     "id": "fe17fac7-b3a1-4226-b31b-59c0664e1ce4",
+     "id": "ed585225-a940-483b-8407-c0cc2a48c880",
      "references": [
       "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
       "40884d67-56b1-487a-b5b3-9028e9dee7c0",
       "65e15e23-7b53-4e57-b39a-3672947357fe",
-      "2e1c1905-2835-4a43-b5b3-21d552cbf54d",
-      "8c31c00f-1693-4339-8bde-16b36fd7b1bb",
-      "2d84c2c3-dc33-4275-b320-777ce93f2669"
+      "2d84c2c3-dc33-4275-b320-777ce93f2669",
+      "8c31c00f-1693-4339-8bde-16b36fd7b1bb"
      ]
     },
-    "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f": {
-     "title": "Rumkorrektion",
-     "id": "345a2ff6-5fe2-4d3b-a5a7-e1e82cbd7b4f",
+    "9857d18e-4336-4e7a-87fd-f9c5c7a298e9": {
+     "title": "Dirac-rumkorrektion",
+     "id": "9857d18e-4336-4e7a-87fd-f9c5c7a298e9",
      "references": [
       "1c3be274-e611-49c8-8852-b171f0e06cde",
       "fd499432-63d3-4752-a6cf-5367b5362c05",
       "2d84c2c3-dc33-4275-b320-777ce93f2669",
       "432fc28f-a960-483f-b5a3-50f0e1e05943",
       "8c31c00f-1693-4339-8bde-16b36fd7b1bb"
-     ]
-    },
-    "ffae404a-2989-4248-841f-6662dcd41099": {
-     "title": "Streaming og software",
-     "id": "ffae404a-2989-4248-841f-6662dcd41099",
-     "references": [
-      "9d322b5b-cbb3-4bbe-9a6e-cf83c09f8e7a",
-      "fd499432-63d3-4752-a6cf-5367b5362c05",
-      "2d84c2c3-dc33-4275-b320-777ce93f2669",
-      "476f1458-374f-4960-9324-9dcc533b8618"
      ]
     }
    },

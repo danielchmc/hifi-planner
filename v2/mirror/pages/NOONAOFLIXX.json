@@ -53,6 +53,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trykknapper til basale funktioner på top\nBluetooth rækkevidde op til 10 meter\nEnheder: 2 x 2” fuldtone (52mm) + slavebas på bagside (passive bass radiator)\nLadetid: 2 timer (fuld), 10 min opladning giver 4,5 timers spilletid (bass mode)\nUSB-ladekabel medfølger"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -63,15 +72,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang, Bluetooth-udgang"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trykknapper til basale funktioner på top\nBluetooth rækkevidde op til 10 meter\nEnheder: 2 x 2” fuldtone (52mm) + slavebas på bagside (passive bass radiator)\nLadetid: 2 timer (fuld), 10 min opladning giver 4,5 timers spilletid (bass mode)\nUSB-ladekabel medfølger"
      }
     ]
    },
@@ -224,7 +224,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 38,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -339,7 +339,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 491,
+     "availableQuantity": 490,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -416,62 +416,62 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NOONAOFLIXX roses bredt for varm, klar og overraskende kraftfuld lyd fra en kompakt, bærbar højttaler til en fremragende pris. Batteritiden er generelt god, og det kompakte design, den enkle betjening og den rejsevenlige størrelse passer godt til badeværelser, kontorer, campingvogne og ferier. Enkelte anmeldelser nævner dog begrænset Bluetooth-rækkevidde, lejlighedsvise forbindelsesproblemer, en lidt ujævn klangbalance og et batteri, der ikke kan udskiftes.",
+   "summary": "NOONAOFLIXX leverer overraskende fyldig, varm og punchy lyd fra en kompakt og prisvenlig højttaler. Den kraftige bas, klare detaljering og praktiske mobilitet gør den populær til rejser, badeværelser, arbejdspladser og mindre rum, og batteritiden får generelt ros. Bluetooth-rækkevidde og stereoparring kan være ustabil, mens nogle lyttere savner diskant eller oplever lyden som lidt dump eller tynd.",
    "headlines": {
-    "excellent value for the price": {
-     "sentimentAnalysis": "Anmeldelserne kalder gentagne gange højttaleren overkommelig, prisvenlig og svær at slå i denne størrelse.",
+    "excellent value for money": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent højttaleren som usædvanligt kompetent og prisvenlig i forhold til størrelse og pris.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "68610815-0513-4759-ae7c-812fdad8fff8"
+     "groupId": "e5a9ad48-6265-47fa-8133-d0c94186efd3"
     },
-    "compact and convenient for travel": {
-     "sentimentAnalysis": "Det lille og lette format roses ofte til rejser, udendørs brug og begrænset plads.",
-     "simpleTitle": "Kompakt og praktisk på farten",
-     "bias": "positive",
-     "key": "portability",
-     "groupId": "3c59893c-e509-4207-aec0-5050c3dab271"
-    },
-    "surprisingly rich, clear sound from a compact speaker": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent højttaleren som varm, klar, fyldig og kraftfuld i forhold til størrelsen.",
-     "simpleTitle": "Overraskende fyldig og klar lyd fra en kompakt højttaler",
+    "surprisingly rich, powerful sound": {
+     "sentimentAnalysis": "Varm, fyldig og detaljeret lyd får gentagne gange ros for at være usædvanligt god fra så lille en højttaler.",
+     "simpleTitle": "Overraskende fyldig og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "bdd0ac59-ed63-4ec1-aa5c-b83734f0df98"
+     "groupId": "00dfb464-24ef-4722-b4a8-8a2939fe626f"
     },
-    "battery life is generally long": {
-     "sentimentAnalysis": "De fleste batterianmeldelser beskriver lang driftstid, også gennem en arbejdsdag eller længere ture.",
-     "simpleTitle": "Batteritiden er generelt lang",
+    "compact and easy to take anywhere": {
+     "sentimentAnalysis": "De kompakte mål, lave vægt og rejsevenlige udformning værdsættes gentagne gange til ferier, hotelværelser, både og udendørs brug.",
+     "simpleTitle": "Kompakt og nem at tage med",
+     "bias": "positive",
+     "key": "portability",
+     "groupId": "2dbd9004-4d31-4da3-9b9b-5a105844d8a3"
+    },
+    "bass adds welcome punch": {
+     "sentimentAnalysis": "Den valgbare basfunktion og den kraftige basgengivelse giver den kompakte højttaler en mere punchy og varm lyd.",
+     "simpleTitle": "Bas giver ekstra punch",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "00dfb464-24ef-4722-b4a8-8a2939fe626f"
+    },
+    "long battery life is a strong point": {
+     "sentimentAnalysis": "Mange anmeldelser roser batteriet for at holde til lang tids brug, inklusive en hel arbejdsdag.",
+     "simpleTitle": "Den lange batteritid er en stor fordel",
      "bias": "positive",
      "key": "battery",
-     "groupId": "13c0b5a7-1273-4f88-8e62-d71df9b59e13"
+     "groupId": "d7726fef-ec98-4670-8af8-4fe2fb36c02f"
     },
     "bluetooth range and pairing can be unreliable": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer kort Bluetooth-rækkevidde, afbrudte stereoforbindelser eller manglende automatisk genforbindelse.",
+     "sentimentAnalysis": "Flere brugere oplever kort Bluetooth-rækkevidde, udfald i stereoforbindelsen eller ustabil automatisk genforbindelse.",
      "simpleTitle": "Bluetooth-rækkevidde og parring kan være ustabil",
      "bias": "negative",
      "key": "connectivity",
-     "groupId": "cdce4e30-5a25-4f56-95ea-27132e0f1d71"
+     "groupId": "ddf62d05-f941-4426-83ba-9cb7a96679b9"
     },
-    "bass boost adds punch and depth": {
-     "sentimentAnalysis": "Flere anmeldelser roser den justerbare bas for ekstra tryk, dybde og en fyldigere gengivelse.",
-     "simpleTitle": "Basboost giver mere tryk og dybde",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "bdd0ac59-ed63-4ec1-aa5c-b83734f0df98"
-    },
-    "tonal balance can sound bass-heavy or subdued": {
-     "sentimentAnalysis": "En minoritet oplever trods det generelt positive lydindtryk gengivelsen som bastung, tynd eller med for lidt diskant.",
-     "simpleTitle": "Klangbalancen kan virke bastung eller dæmpet",
+    "some listeners find the sound too dark or thin": {
+     "sentimentAnalysis": "Et mindretal kritiserer for meget bas, afdæmpet diskant eller en generelt tynd gengivelse.",
+     "simpleTitle": "Nogle lyttere synes, lyden er for dump eller tynd",
      "bias": "negative",
      "key": "sound",
-     "groupId": "bdd0ac59-ed63-4ec1-aa5c-b83734f0df98"
+     "groupId": "00dfb464-24ef-4722-b4a8-8a2939fe626f"
     }
    },
    "grouping": {
-    "bdd0ac59-ed63-4ec1-aa5c-b83734f0df98": {
+    "00dfb464-24ef-4722-b4a8-8a2939fe626f": {
      "title": "Lydkvalitet",
-     "id": "bdd0ac59-ed63-4ec1-aa5c-b83734f0df98",
+     "id": "00dfb464-24ef-4722-b4a8-8a2939fe626f",
      "references": [
       "f8b22889-4232-44e7-99d2-6aa37b065530",
       "d530e1b4-5463-4995-b8d7-5ff667ee790b",
@@ -501,7 +501,6 @@
       "e16a2f72-44bb-462a-9c81-415e6dfd8c7d",
       "7b053ba4-a8c4-4335-b65a-b2e7ef8aeefa",
       "696f56a2-d8d1-422a-94a1-9b5916e4952b",
-      "bffd5cfb-b7eb-42a4-86bf-35f86cae26e0",
       "e347f1cb-94bb-40ec-bde6-5a5db001c29b",
       "f32c12f0-ce7c-4487-993f-497db2bc2fe1",
       "64f191b5-8731-4461-a7c4-7f1e9bd310b2",
@@ -549,9 +548,9 @@
       "a4fd5cde-65af-4a32-9b09-c9704ea49bec"
      ]
     },
-    "68610815-0513-4759-ae7c-812fdad8fff8": {
-     "title": "Pris og værdi",
-     "id": "68610815-0513-4759-ae7c-812fdad8fff8",
+    "e5a9ad48-6265-47fa-8133-d0c94186efd3": {
+     "title": "Værdi for pengene",
+     "id": "e5a9ad48-6265-47fa-8133-d0c94186efd3",
      "references": [
       "f8b22889-4232-44e7-99d2-6aa37b065530",
       "f37788b9-e2f0-432a-8b5c-ff34d00edcea",
@@ -562,85 +561,72 @@
       "9db92640-6a73-4741-88e8-94f760147469",
       "d9feaf01-cc83-4f1e-9152-8eff5092a4ee",
       "e3ddb6b7-d9f9-4c1c-bde3-d8380ff3bb99",
-      "7b053ba4-a8c4-4335-b65a-b2e7ef8aeefa",
       "696f56a2-d8d1-422a-94a1-9b5916e4952b",
       "60ea07ac-4adb-42c6-bcc2-abda2aa863fa",
-      "d34a9346-b7b3-4e57-a2e1-895b197fd025",
+      "cceb060e-a524-4c2f-a7d8-dd13dfd30ee2",
       "b165a8b4-83f7-47c9-8171-59b2dcdebbb5",
-      "605e0051-a91d-4e7f-8199-dbcf4a5ec6cc",
       "22baf9d8-ab9d-4cdf-bc27-45c9c0ed7373",
       "e99fb6bf-5fb4-4da7-afb8-7afe53c3e307",
       "81f1d4ca-47f3-43ed-842f-8c168e8dcf01",
       "74f401f5-63b3-4697-9dd5-8b0b114be035",
       "b545de68-78e1-4d2f-94ff-bb3a2789fd90",
-      "6e73bf8d-cf1c-498c-824f-d9ca37cd070b",
       "680b0963-f802-42a3-8f8d-8513f9b52835",
       "fe2c1fb6-f2a2-4543-803a-9dde6dd93155",
       "8b35607f-9e01-4738-aa6a-b0f944587780",
+      "7cefdc0d-b03b-4f53-9e47-48f162381c9a",
       "c3af35e0-8040-4bf8-af3c-fa7bf9963ee8",
-      "aaa59b29-cb8a-453d-a4ae-feb80c852744",
-      "2bf57289-f67b-4fbd-84bd-a1e2b00709dc",
-      "d9d98ee8-9770-4fd0-9c46-f6ab6d569465",
       "0c5d419e-9c8c-4764-bc99-70ad2c5e8724",
-      "5dfa90f5-2ca3-449e-b619-699f3b5c9f39"
+      "4d91bd10-f16a-4f95-9b60-1bd0be0acbee",
+      "5dfa90f5-2ca3-449e-b619-699f3b5c9f39",
+      "a4fd5cde-65af-4a32-9b09-c9704ea49bec"
      ]
     },
-    "3c59893c-e509-4207-aec0-5050c3dab271": {
-     "title": "Størrelse og bærbarhed",
-     "id": "3c59893c-e509-4207-aec0-5050c3dab271",
+    "ddf62d05-f941-4426-83ba-9cb7a96679b9": {
+     "title": "Bluetooth og forbindelser",
+     "id": "ddf62d05-f941-4426-83ba-9cb7a96679b9",
+     "references": [
+      "d94885ff-b55f-4895-aa37-cfe469c4be87",
+      "e284c271-eaeb-4e64-8e42-4f5a99fa7ef2",
+      "a3b390f6-d46c-45ba-8148-655006a21c30",
+      "6b7d70b7-f49e-4c9a-b0a4-8357ce8e2c06",
+      "d9feaf01-cc83-4f1e-9152-8eff5092a4ee",
+      "64f191b5-8731-4461-a7c4-7f1e9bd310b2",
+      "bffd5cfb-b7eb-42a4-86bf-35f86cae26e0",
+      "37f6d978-1c5e-4f3f-b800-5368e13135cc",
+      "8ecff6c5-dc06-4718-ada3-38fa2e475e1c",
+      "5304bf25-4b17-4f7b-bf26-3febcd3fb65f",
+      "05f11f84-b021-4a9c-9aeb-471989fb6c84",
+      "323f9fae-d4be-4591-87b8-e13443534248",
+      "c3af35e0-8040-4bf8-af3c-fa7bf9963ee8",
+      "f79b5d45-9408-40be-a093-1cddefd8219b",
+      "d9d98ee8-9770-4fd0-9c46-f6ab6d569465",
+      "b785e7c4-d16d-4485-91ae-bde309e9c26c"
+     ]
+    },
+    "2dbd9004-4d31-4da3-9b9b-5a105844d8a3": {
+     "title": "Størrelse og mobilitet",
+     "id": "2dbd9004-4d31-4da3-9b9b-5a105844d8a3",
      "references": [
       "d530e1b4-5463-4995-b8d7-5ff667ee790b",
       "e0f58cef-20e5-4cd9-8ed2-b8fffa861e92",
       "7cbe6ea4-1842-48f2-855a-d6a109f65c0a",
       "507f8e21-3952-400c-ab62-436dc6a3eb45",
       "d5d0d9a9-9c54-4eef-bde9-52d81591ba5f",
-      "9db92640-6a73-4741-88e8-94f760147469",
-      "879944af-fe2c-466c-b53f-d13a21d5dbdc",
-      "b25fe30f-2d34-486f-853a-5c9c7b83ec04",
       "57fe1587-7162-47c2-bc86-16238a1798b8",
       "f32c12f0-ce7c-4487-993f-497db2bc2fe1",
       "777cc8e9-7191-4acb-9ff1-30b7e3c95c61",
       "b6e0a45a-37fd-4a10-a8b0-3e8883cad17d",
       "c6b14c6e-bcc0-4e8a-b94d-eea41421af0d",
       "b545de68-78e1-4d2f-94ff-bb3a2789fd90",
-      "fe2c1fb6-f2a2-4543-803a-9dde6dd93155",
-      "7cea5491-c85f-452c-831e-2ae43c28bb3e",
       "2bf57289-f67b-4fbd-84bd-a1e2b00709dc",
-      "d9d98ee8-9770-4fd0-9c46-f6ab6d569465",
+      "7cea5491-c85f-452c-831e-2ae43c28bb3e",
       "7efcbeac-6884-4aab-9d87-75751e77d12d",
-      "b785e7c4-d16d-4485-91ae-bde309e9c26c",
-      "c3af35e0-8040-4bf8-af3c-fa7bf9963ee8",
-      "aaa59b29-cb8a-453d-a4ae-feb80c852744",
       "a4fd5cde-65af-4a32-9b09-c9704ea49bec"
      ]
     },
-    "cdce4e30-5a25-4f56-95ea-27132e0f1d71": {
-     "title": "Forbindelse og betjening",
-     "id": "cdce4e30-5a25-4f56-95ea-27132e0f1d71",
-     "references": [
-      "d530e1b4-5463-4995-b8d7-5ff667ee790b",
-      "e284c271-eaeb-4e64-8e42-4f5a99fa7ef2",
-      "a3b390f6-d46c-45ba-8148-655006a21c30",
-      "d94885ff-b55f-4895-aa37-cfe469c4be87",
-      "6b7d70b7-f49e-4c9a-b0a4-8357ce8e2c06",
-      "d9feaf01-cc83-4f1e-9152-8eff5092a4ee",
-      "455c2f19-64de-4b4c-b437-da3bd808c046",
-      "64f191b5-8731-4461-a7c4-7f1e9bd310b2",
-      "e3ddb6b7-d9f9-4c1c-bde3-d8380ff3bb99",
-      "37f6d978-1c5e-4f3f-b800-5368e13135cc",
-      "8ecff6c5-dc06-4718-ada3-38fa2e475e1c",
-      "b785e7c4-d16d-4485-91ae-bde309e9c26c",
-      "05f11f84-b021-4a9c-9aeb-471989fb6c84",
-      "323f9fae-d4be-4591-87b8-e13443534248",
-      "16b016ce-95fa-495c-8c2c-668da1597e1f",
-      "f79b5d45-9408-40be-a093-1cddefd8219b",
-      "d9d98ee8-9770-4fd0-9c46-f6ab6d569465",
-      "7efcbeac-6884-4aab-9d87-75751e77d12d"
-     ]
-    },
-    "13c0b5a7-1273-4f88-8e62-d71df9b59e13": {
+    "d7726fef-ec98-4670-8af8-4fe2fb36c02f": {
      "title": "Batteritid",
-     "id": "13c0b5a7-1273-4f88-8e62-d71df9b59e13",
+     "id": "d7726fef-ec98-4670-8af8-4fe2fb36c02f",
      "references": [
       "f8b22889-4232-44e7-99d2-6aa37b065530",
       "e284c271-eaeb-4e64-8e42-4f5a99fa7ef2",
@@ -652,9 +638,9 @@
       "323f9fae-d4be-4591-87b8-e13443534248",
       "7cefdc0d-b03b-4f53-9e47-48f162381c9a",
       "16b016ce-95fa-495c-8c2c-668da1597e1f",
+      "a4fd5cde-65af-4a32-9b09-c9704ea49bec",
       "7b053ba4-a8c4-4335-b65a-b2e7ef8aeefa",
-      "f79b5d45-9408-40be-a093-1cddefd8219b",
-      "a4fd5cde-65af-4a32-9b09-c9704ea49bec"
+      "f79b5d45-9408-40be-a093-1cddefd8219b"
      ]
     }
    },

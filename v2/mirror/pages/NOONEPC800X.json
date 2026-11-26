@@ -177,8 +177,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 25,
-     "availableQuantity": 3296,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 3286,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -219,48 +219,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NOONEPC800X leverer en generelt klar, varm og praktisk lytteoplevelse til en lav pris med særligt god taleklarhed og mikrofonydeevne. Meningerne om lyden er blandede: Flere anmeldelser roser den behagelige og fyldige lyd til prisen, mens andre oplever bassen som for tynd, lydbilledet som lukket eller diskanten som for skarp. Holdbarhed og pasform giver gentagne problemer, blandt andet udfald i den ene side, løse forbindelser og generende kabelstøj.",
+   "summary": "NOONEPC800X leverer varm, klar og ofte fyldig lyd til en attraktiv pris, især med god taleklarhed og mikrofonydeevne. Lydkvaliteten er dog ujævn, da flere anmeldelser kritiserer svag bas, et lukket eller dåseagtigt lydbillede og manglende detaljer. Holdbarhed, pasform og kabelhåndtering kan skuffe, men enkel betjening og god værdi gør øretelefonerne til et praktisk valg.",
    "headlines": {
-    "pleasant sound and good value": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver lyden som god, behagelig eller acceptabel til prisen.",
-     "simpleTitle": "Behagelig lyd og god værdi",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "106b5900-c5c7-4529-8452-686bb6785a02"
-    },
-    "weak and thin bass": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer bassen som svag, mangelfuld eller for tynd.",
-     "simpleTitle": "Svag og tynd bas",
+    "weak bass and a thin, closed or tinny sound": {
+     "sentimentAnalysis": "Kritikken fokuserer på for lidt bas, en tynd gengivelse og et lukket, skarpt eller dåseagtigt lydbillede.",
+     "simpleTitle": "Svag bas og en tynd, lukket eller dåseagtig lyd",
      "bias": "negative",
      "key": "sound",
-     "groupId": "106b5900-c5c7-4529-8452-686bb6785a02"
+     "groupId": "282b4ca6-85b1-4dd7-b672-7956f1cf2080"
     },
-    "clear calls and capable microphone": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent tydelig tale og mikrofonens ydeevne.",
-     "simpleTitle": "Tydelige opkald og god mikrofon",
+    "good sound and value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver lyden som god eller acceptabel til prisen og behagelig at lytte til.",
+     "simpleTitle": "God lyd og god værdi for pengene",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "282b4ca6-85b1-4dd7-b672-7956f1cf2080"
+    },
+    "clear calls and a strong microphone": {
+     "sentimentAnalysis": "Samtaleforståelse og mikrofonydeevne roses gentagne gange, især ved telefonsamtaler.",
+     "simpleTitle": "Klar tale og en god mikrofon",
      "bias": "positive",
      "key": "calls",
-     "groupId": "74291ede-7ab7-4f43-9211-e25b4efa9ae1"
+     "groupId": "77202cf2-3ee1-4be5-bf1f-dc396a91a8f0"
     },
     "premature one-sided failures": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer, at den ene øretelefon stoppede med at virke efter kort tid.",
-     "simpleTitle": "For tidlige udfald i den ene side",
+     "sentimentAnalysis": "Flere anmeldelser fortæller, at den ene øretelefon holdt op med at virke efter kort tid, hvilket giver anledning til bekymring om holdbarheden.",
+     "simpleTitle": "For tidlige fejl i den ene side",
      "bias": "negative",
      "key": "reliability",
-     "groupId": "9fa3059c-e150-4a7a-864c-04c9e63e170b"
+     "groupId": "d058178d-38e7-41fe-a398-999c0d604151"
     },
-    "inconsistent fit and cable noise": {
-     "sentimentAnalysis": "Begge anmeldelser rejser problemer med komfort eller pasform, og den ene nævner desuden kraftig kabelstøj.",
-     "simpleTitle": "Ujævn pasform og kabelstøj",
+    "fit and cable handling can be troublesome": {
+     "sentimentAnalysis": "Anmeldelser nævner en mangelfuld pasform, bevægelseslyde gennem kablet og et kabel, der er svært at rede ud.",
+     "simpleTitle": "Pasform og kabelhåndtering kan være besværlig",
      "bias": "negative",
-     "key": "fit",
-     "groupId": "605aeab8-8a0f-46b0-ab7a-5ba850fdf577"
+     "key": "comfort",
+     "groupId": "4bf14f90-7e47-421e-9baa-43f1b5d1cef3"
     }
    },
    "grouping": {
-    "106b5900-c5c7-4529-8452-686bb6785a02": {
+    "282b4ca6-85b1-4dd7-b672-7956f1cf2080": {
      "title": "Lydkvalitet",
-     "id": "106b5900-c5c7-4529-8452-686bb6785a02",
+     "id": "282b4ca6-85b1-4dd7-b672-7956f1cf2080",
      "references": [
       "007a8f83-ec1c-41e1-8250-a27dcc232f25",
       "2b3a4ec1-df0a-4e96-9b96-98230d543079",
@@ -273,39 +273,39 @@
       "dc3e0872-6ba4-4d91-959d-67ee748aa8be",
       "b7e0d084-d39e-4921-93f3-3916df6e0d78",
       "f1117b62-4be2-4169-9264-f6033e0956cd",
-      "2deded41-c718-454a-a48b-0bed252280f2",
-      "8fa29ea3-cd1f-4cd8-b002-96718c118026",
-      "1ff06507-8ff7-4481-9f68-c8c352108e47",
       "cd8367fc-9682-44c2-9439-20a828d1e13d",
       "0552855d-38b2-4ba5-8395-b00b8d076e3a",
-      "6ee8abf4-c614-4233-bed6-99adca9dfe47",
-      "1b2f74ea-dd9f-415f-945d-075ebe1ed8e2",
-      "de0d58fa-51ed-45e1-89a0-196e713a710e"
-     ]
-    },
-    "74291ede-7ab7-4f43-9211-e25b4efa9ae1": {
-     "title": "Opkald og mikrofon",
-     "id": "74291ede-7ab7-4f43-9211-e25b4efa9ae1",
-     "references": [
-      "e97e34bc-047c-42d7-aeec-5983c7f670ca",
+      "de0d58fa-51ed-45e1-89a0-196e713a710e",
+      "8fa29ea3-cd1f-4cd8-b002-96718c118026",
       "1ff06507-8ff7-4481-9f68-c8c352108e47",
-      "2deded41-c718-454a-a48b-0bed252280f2",
-      "6ee8abf4-c614-4233-bed6-99adca9dfe47"
+      "1b2f74ea-dd9f-415f-945d-075ebe1ed8e2",
+      "e85b1591-0f45-491c-971b-77555bd020d1"
      ]
     },
-    "9fa3059c-e150-4a7a-864c-04c9e63e170b": {
-     "title": "Driftsikkerhed",
-     "id": "9fa3059c-e150-4a7a-864c-04c9e63e170b",
+    "d058178d-38e7-41fe-a398-999c0d604151": {
+     "title": "Holdbarhed",
+     "id": "d058178d-38e7-41fe-a398-999c0d604151",
      "references": [
       "747a09f3-2d69-4c84-bd63-497e70b720e3",
+      "d683f7e7-7bba-4947-8659-706725d585ed",
       "9116d4dc-e2c4-4074-b93e-671692e48fa8",
       "87d15338-536a-424a-87d1-7acbcfeb5c80",
       "56c1160d-1765-483a-be48-41970185390f"
      ]
     },
-    "605aeab8-8a0f-46b0-ab7a-5ba850fdf577": {
+    "77202cf2-3ee1-4be5-bf1f-dc396a91a8f0": {
+     "title": "Samtalekvalitet",
+     "id": "77202cf2-3ee1-4be5-bf1f-dc396a91a8f0",
+     "references": [
+      "e97e34bc-047c-42d7-aeec-5983c7f670ca",
+      "2deded41-c718-454a-a48b-0bed252280f2",
+      "1ff06507-8ff7-4481-9f68-c8c352108e47",
+      "6ee8abf4-c614-4233-bed6-99adca9dfe47"
+     ]
+    },
+    "4bf14f90-7e47-421e-9baa-43f1b5d1cef3": {
      "title": "Pasform og komfort",
-     "id": "605aeab8-8a0f-46b0-ab7a-5ba850fdf577",
+     "id": "4bf14f90-7e47-421e-9baa-43f1b5d1cef3",
      "references": [
       "f1e7f980-ddbf-4acb-a73d-2c361f7717f7",
       "e85b1591-0f45-491c-971b-77555bd020d1"

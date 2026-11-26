@@ -20,26 +20,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Soundbar system/pakke",
-   "keys": {
-    "SoundbarSystem": 39
-   },
-   "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 39
-   },
-   "count": 40,
-   "bundles": 39,
-   "outlet": 0,
-   "products": 1,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "none": 39,
-    "colorOptions": 1
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Trådløs højtaler",
    "keys": {
     "WirelessLoudspeaker": 38
@@ -84,6 +64,26 @@
    "hifiPlanner": [
     "CI & Outdoor Speakers"
    ]
+  },
+  {
+   "type": "Soundbar system/pakke",
+   "keys": {
+    "SoundbarSystem": 34
+   },
+   "cats": {
+    "TV > Soundbar højtaler / TV-lyd": 34
+   },
+   "count": 36,
+   "bundles": 35,
+   "outlet": 0,
+   "products": 1,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 35,
+    "colorOptions": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
   },
   {
    "type": "Trådløst headset",
@@ -262,18 +262,18 @@
   {
    "type": "Soundbar",
    "keys": {
-    "Soundbar": 27
+    "Soundbar": 26
    },
    "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 27
+    "TV > Soundbar højtaler / TV-lyd": 26
    },
-   "count": 29,
+   "count": 28,
    "bundles": 4,
-   "outlet": 3,
+   "outlet": 2,
    "products": 22,
    "inCatalogue": 22,
    "variantAxes": {
-    "colorOptions": 23,
+    "colorOptions": 22,
     "none": 4,
     "sizeSelector": 1,
     "dropDown": 1
@@ -952,25 +952,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Møbel",
-   "keys": {
-    "Furniture": 10
-   },
-   "cats": {
-    "Tilbehør > Møbler": 10
-   },
-   "count": 10,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 10,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 10
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Møbelsystem",
    "keys": {
     "FurnitureSystem": 10
@@ -1134,6 +1115,25 @@
    "hifiPlanner": [
     "Cable: minijack"
    ]
+  },
+  {
+   "type": "Møbel",
+   "keys": {
+    "Furniture": 9
+   },
+   "cats": {
+    "Tilbehør > Møbler": 9
+   },
+   "count": 9,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 9,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 9
+   },
+   "mapped": null,
+   "hifiPlanner": []
   },
   {
    "type": "OLED TV",
@@ -1657,6 +1657,27 @@
    "hifiPlanner": []
   },
   {
+   "type": "Mini-LED TV",
+   "keys": {
+    "MiniLED": 5
+   },
+   "cats": {
+    "TV > TV": 5
+   },
+   "count": 5,
+   "bundles": 0,
+   "outlet": 2,
+   "products": 3,
+   "inCatalogue": 3,
+   "variantAxes": {
+    "sizeSelector": 5
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "TV"
+   ]
+  },
+  {
    "type": "Opgradering",
    "keys": {
     "Upgrade": 4
@@ -1920,27 +1941,6 @@
    "variantAxes": {
     "none": 2,
     "sizeSelector": 2
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "TV"
-   ]
-  },
-  {
-   "type": "Mini-LED TV",
-   "keys": {
-    "MiniLED": 4
-   },
-   "cats": {
-    "TV > TV": 4
-   },
-   "count": 4,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 3,
-   "inCatalogue": 3,
-   "variantAxes": {
-    "sizeSelector": 4
    },
    "mapped": "cats",
    "hifiPlanner": [

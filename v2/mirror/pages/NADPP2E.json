@@ -191,7 +191,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 49,
+     "availableQuantity": 45,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -231,48 +231,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NAD PP2e er en effektiv og brugervenlig phono-forforstærker, som giver varm, klar, dynamisk og medrivende lyd i vinylanlæg. Den enkle plug-and-play-opsætning, den brede MM/MC-kompatibilitet og den gode værdi gør den til en klar anbefaling for de fleste pladespillerejere. Enkelte anmeldelser nævner lidt baggrundsstøj og frustration over den faste automatiske standby-funktion, men helhedsindtrykket er meget positivt.",
+   "summary": "NAD PP2e roses bredt som en prisvenlig og brugervenlig RIAA-forforstærker, der leverer klar, varm og dynamisk lyd fra vinyl. MM/MC-fleksibiliteten og den enkle opsætning gør den kompatibel med mange pladespillere og anlæg. Enkelte anmeldelser nævner baggrundsstøj og irritation over den automatiske standby, som ikke kan slås fra, men helhedsindtrykket er meget positivt og musikalsk.",
    "headlines": {
-    "warm, clear and dynamic vinyl sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den åbne, klare, varme og dynamiske gengivelse samt den forbedrede lyd fra vinylplader.",
-     "simpleTitle": "Varm, klar og dynamisk vinyllyd",
+    "clear, warm and musical vinyl sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, varm, åben, dynamisk og behagelig ved lang tids lytning.",
+     "simpleTitle": "Klar, varm og musikalsk vinyllyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "5f24721f-e449-4976-a8d6-13fae5e8d047"
+     "groupId": "d8f05f71-0ad3-4ba8-965a-650456face5c"
     },
-    "some audible background noise": {
-     "sentimentAnalysis": "Flere anmeldelser nævner svag baggrundsstøj, især ved højere lydstyrke eller i stille passager.",
-     "simpleTitle": "Nogen hørbar baggrundsstøj",
-     "bias": "negative",
-     "key": "noise",
-     "groupId": "aea88e64-a4d3-448a-827b-53a4612f1ca9"
-    },
-    "automatic standby cannot be disabled": {
-     "sentimentAnalysis": "Anmeldelserne kritiserer den faste automatiske standby-funktion, herunder langsom aktivering og et hørbart plop ved tænding.",
-     "simpleTitle": "Automatisk standby kan ikke deaktiveres",
-     "bias": "negative",
-     "key": "standby",
-     "groupId": "3df27ac0-ea3c-4981-acca-34278875f2fb"
-    },
-    "supports both MM and MC cartridges": {
-     "sentimentAnalysis": "Anmeldelserne værdsætter muligheden for at skifte mellem almindelige MM- og dyrere MC-pickupper.",
-     "simpleTitle": "Understøtter både MM- og MC-pickupper",
-     "bias": "positive",
-     "key": "compatibility",
-     "groupId": "e1e3e75c-6d29-48ee-b82b-958a23f58cf5"
-    },
-    "simple plug-and-play installation": {
-     "sentimentAnalysis": "Anmeldelserne beskriver opsætningen som enkel og begrænset til at tilslutte kabler og strøm.",
-     "simpleTitle": "Enkel plug-and-play-opsætning",
+    "simple setup and broad MM/MC support": {
+     "sentimentAnalysis": "Enheden anses for nem at tilslutte og nyttig med både almindelige MM- og mere avancerede MC-pickupper.",
+     "simpleTitle": "Enkel opsætning og bred MM/MC-understøttelse",
      "bias": "positive",
      "key": "setup",
-     "groupId": "9f0b3e7d-60ac-425f-a574-a3f391b0796c"
+     "groupId": "14070680-42e4-4229-bef3-95d357036ce4"
+    },
+    "useful improvement over built-in or older phono stages": {
+     "sentimentAnalysis": "RIAA-trinnet tilfører angiveligt bedre kvalitet, klarhed og dynamik end tidligere eller indbyggede løsninger.",
+     "simpleTitle": "Mærkbar forbedring i forhold til indbyggede eller ældre RIAA-trin",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "d8f05f71-0ad3-4ba8-965a-650456face5c"
+    },
+    "automatic standby cannot be disabled": {
+     "sentimentAnalysis": "Anmeldelserne kritiserer den faste automatiske standby, herunder langsom aktivering og et højt knald ved tænding.",
+     "simpleTitle": "Automatisk standby kan ikke slås fra",
+     "bias": "negative",
+     "key": "standby",
+     "groupId": "d4b40c9c-6a22-438a-8f56-27238568458a"
+    },
+    "background noise can be audible": {
+     "sentimentAnalysis": "Nogle anmeldelser rapporterer lav baggrunds- eller tomgangsstøj, især ved høj lydstyrke.",
+     "simpleTitle": "Baggrundsstøj kan være hørbar",
+     "bias": "negative",
+     "key": "noise",
+     "groupId": "f6709be4-b2b9-44b9-80e3-132dfe7e2dd5"
     }
    },
    "grouping": {
-    "5f24721f-e449-4976-a8d6-13fae5e8d047": {
+    "d8f05f71-0ad3-4ba8-965a-650456face5c": {
      "title": "Lydkvalitet",
-     "id": "5f24721f-e449-4976-a8d6-13fae5e8d047",
+     "id": "d8f05f71-0ad3-4ba8-965a-650456face5c",
      "references": [
       "2ea1c23d-a611-46d6-af23-4d67f8c87cdf",
       "4cb2cf05-1b98-462a-a443-769484436e8b",
@@ -285,7 +285,7 @@
       "af71f798-6615-4c70-9295-eb0b53c1e3a7",
       "0fa2755b-841b-409c-99ac-31fcc00571b9",
       "721fc112-53c9-4cd6-a307-b8b62d30a7de",
-      "d8ee99d0-36ef-41fe-bd71-fec646012ad1",
+      "656a148a-f365-42a0-bce1-39a907ab8fbc",
       "18d8b208-6227-47c1-a4bb-94786dcab01a",
       "b0e82093-4b38-443c-899d-84dacbf86a3d",
       "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
@@ -293,9 +293,21 @@
       "35193bd0-c513-4e69-88b7-1878738d9007"
      ]
     },
-    "3df27ac0-ea3c-4981-acca-34278875f2fb": {
-     "title": "Standby og strøm",
-     "id": "3df27ac0-ea3c-4981-acca-34278875f2fb",
+    "14070680-42e4-4229-bef3-95d357036ce4": {
+     "title": "Kompatibilitet og opsætning",
+     "id": "14070680-42e4-4229-bef3-95d357036ce4",
+     "references": [
+      "fd28cb32-2e25-4497-84d9-0c2acf8824ff",
+      "546a8973-866c-4497-817a-f609d2c77d5a",
+      "721fc112-53c9-4cd6-a307-b8b62d30a7de",
+      "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
+      "35193bd0-c513-4e69-88b7-1878738d9007",
+      "5ec5c8aa-71f8-4ff6-9533-86b43b4d8524"
+     ]
+    },
+    "d4b40c9c-6a22-438a-8f56-27238568458a": {
+     "title": "Strøm og standby",
+     "id": "d4b40c9c-6a22-438a-8f56-27238568458a",
      "references": [
       "c9604bcb-c154-45ae-85bc-e2a2d2597029",
       "d8ee99d0-36ef-41fe-bd71-fec646012ad1",
@@ -303,31 +315,13 @@
       "01704ffc-5bbc-45cb-a9fb-56d2df7b5e90"
      ]
     },
-    "e1e3e75c-6d29-48ee-b82b-958a23f58cf5": {
-     "title": "MM/MC-kompatibilitet",
-     "id": "e1e3e75c-6d29-48ee-b82b-958a23f58cf5",
-     "references": [
-      "721fc112-53c9-4cd6-a307-b8b62d30a7de",
-      "511fbf6b-ebd8-495a-b8bd-98cd99870b8d",
-      "5ec5c8aa-71f8-4ff6-9533-86b43b4d8524"
-     ]
-    },
-    "aea88e64-a4d3-448a-827b-53a4612f1ca9": {
+    "f6709be4-b2b9-44b9-80e3-132dfe7e2dd5": {
      "title": "Baggrundsstøj",
-     "id": "aea88e64-a4d3-448a-827b-53a4612f1ca9",
+     "id": "f6709be4-b2b9-44b9-80e3-132dfe7e2dd5",
      "references": [
       "467df7f4-95fe-4a10-ace3-bc6b6b0b9fd4",
       "547783e9-c510-4075-93ca-882cd3203d9d",
       "b0e82093-4b38-443c-899d-84dacbf86a3d"
-     ]
-    },
-    "9f0b3e7d-60ac-425f-a574-a3f391b0796c": {
-     "title": "Opsætning og brugervenlighed",
-     "id": "9f0b3e7d-60ac-425f-a574-a3f391b0796c",
-     "references": [
-      "546a8973-866c-4497-817a-f609d2c77d5a",
-      "c64418cd-428e-4d85-84bb-607f711eaec5",
-      "35193bd0-c513-4e69-88b7-1878738d9007"
      ]
     }
    },

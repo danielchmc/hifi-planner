@@ -8,7 +8,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 226,
+   "all": 225,
    "bundles": 0
   },
   {
@@ -16,8 +16,8 @@
    "title": "Møbler",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 10,
-   "all": 10,
+   "products": 9,
+   "all": 9,
    "bundles": 18
   },
   {
@@ -54,7 +54,7 @@
    "website": true,
    "products": 22,
    "all": 22,
-   "bundles": 43
+   "bundles": 38
   },
   {
    "id": "/stereo/",
@@ -28311,7 +28311,7 @@
     {
      "sku": "BWPI6CLGR",
      "label": "Grå",
-     "price": 1399,
+     "price": 1199,
      "was": 1999,
      "colorKey": "Grey",
      "hex": "#dad9d5",
@@ -28328,7 +28328,7 @@
     {
      "sku": "BWPI6STGR",
      "label": "Grå",
-     "price": 1399,
+     "price": 1199,
      "was": 1999,
      "colorKey": "Grey",
      "hex": "#47474b",
@@ -28345,7 +28345,7 @@
     {
      "sku": "BWPI6FOGREEN",
      "label": "Grøn",
-     "price": 1399,
+     "price": 1199,
      "was": 1999,
      "colorKey": "Green",
      "hex": "#acbbb8",
@@ -28362,7 +28362,7 @@
     {
      "sku": "BWPI6GLBL",
      "label": "Blå",
-     "price": 1399,
+     "price": 1199,
      "was": 1999,
      "colorKey": "Blue",
      "hex": "#bcccd9",
@@ -29751,90 +29751,6 @@
      "CLICC21",
      "CLICWALLBRACKET",
      "CLICD22"
-    ]
-   },
-   "read": "2026-11-23"
-  },
-  {
-   "sku": "CLIC240",
-   "brand": "Clic",
-   "model": "240",
-   "type": {
-    "key": "Furniture",
-    "da": "Møbel"
-   },
-   "cat": "/tilbehor/mobler/",
-   "url": "/clic-240-moebel/clic240oa/",
-   "kind": "furniture",
-   "scope": "pricelist",
-   "facets": {
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "CLIC240OA",
-     "label": "Lys eg",
-     "price": 21900,
-     "colorKey": "Wood",
-     "url": "/clic-240-moebel/clic240oa/",
-     "img": "hk:8cf7014e-0b6d-4b60-92d3-bb14596da2a8",
-     "stock": "externalPurchaseNotInStock"
-    },
-    {
-     "sku": "CLIC240WH",
-     "label": "Hvid",
-     "price": 16900,
-     "colorKey": "White",
-     "url": "/clic-240-moebel/clic240wh/",
-     "img": "hk:0771bb03-fd0d-4065-8962-62ca801a0d91",
-     "stock": "externalPurchaseNotInStock"
-    },
-    {
-     "sku": "CLIC240BK",
-     "label": "Sort",
-     "price": 16900,
-     "colorKey": "Black",
-     "url": "/clic-240-moebel/clic240bk/",
-     "img": "hk:8c2ce642-5623-4712-a89f-58c733b944a8",
-     "stock": "externalPurchaseNotInStock"
-    },
-    {
-     "sku": "CLIC240WA",
-     "label": "Valnød",
-     "price": 21900,
-     "colorKey": "Wood",
-     "hex": "#773f1a",
-     "url": "/clic-240-moebel/clic240wa/",
-     "img": "hk:3e633815-579f-447d-9951-f3ed8977f1c7",
-     "stock": "externalPurchaseNotInStock"
-    },
-    {
-     "sku": "CLIC240LGR",
-     "label": "Lysegrå",
-     "price": 16900,
-     "colorKey": "Grey",
-     "hex": "#999999",
-     "url": "/clic-240-moebel/clic240lgr/",
-     "img": "hk:3e8dd184-c4c8-4ec8-8673-28b5c0e3a10a",
-     "stock": "externalPurchaseNotInStock"
-    },
-    {
-     "sku": "CLIC240GR",
-     "label": "Grå",
-     "price": 16900,
-     "colorKey": "Grey",
-     "hex": "#666666",
-     "url": "/clic-240-moebel/clic240gr/",
-     "img": "hk:91ea0e29-ab8a-4158-acc7-aac9c17ce5c6",
-     "stock": "externalPurchaseNotInStock"
-    }
-   ],
-   "specs": {},
-   "rel": {
-    "acc": [
-     "CLICC21",
-     "CLICD21",
-     "CLICWALLBRACKET"
     ]
    },
    "read": "2026-11-23"
@@ -66937,16 +66853,16 @@
     "Indgang (andet)": "RS-232, 12V trigger, IR, USB A",
     "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
     "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Høretelefon, Højtaler A/B",
+    "Fjernbetjening": "Ja",
+    "Stemmestyring": "Nej",
+    "Teknologier": "aptX, aptX HD, BluOS Ready, NAD/MDC",
     "Udgangseffekt 4 ohm": "130 watt",
     "Udgangseffekt 8 ohm": "130 watt",
     "Forvrængning (THD)": "0,02%",
     "Signal/støjforhold": ">95 dB",
     "Dæmpningsfaktor": ">150",
     "Dynamisk effekt": "210 watt/8 ohm, 300 watt/4 ohm, 400 watt/2 ohm (IHF) watt",
-    "Forstærkerteknologi": "Klasse D",
-    "Fjernbetjening": "Ja",
-    "Stemmestyring": "Nej",
-    "Teknologier": "aptX, aptX HD, BluOS Ready, NAD/MDC"
+    "Forstærkerteknologi": "Klasse D"
    },
    "rel": {
     "acc": [
@@ -67012,7 +66928,7 @@
      "KEFKUBE12MIE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC399",
@@ -67137,7 +67053,7 @@
      "KEFKC92"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC538",
@@ -67213,7 +67129,7 @@
      "NADC3030"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC569",
@@ -67290,7 +67206,7 @@
      "MARAMODEL50"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC589",
@@ -67377,7 +67293,7 @@
      "MARAMODEL40NX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADC700V2",
@@ -67487,7 +67403,7 @@
      "DALISONIK3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCI16-60DSPV2",
@@ -67574,7 +67490,7 @@
      "BOC82"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCI580V2",
@@ -67643,7 +67559,7 @@
      "NADCI8-150DSPV2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCI8-120DSPV2",
@@ -67718,16 +67634,16 @@
      "DALIPHANTOMS80",
      "BWCCM682",
      "BWCCM7.5S2",
-     "BWCCM7.3S2",
      "BWCWM7.4S2",
      "BWCWM7.3S2",
      "BWCWM7.5S2",
      "BOC82DT",
      "BOC82",
-     "BOC86"
+     "BOC86",
+     "BWCCM7.3S2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCI8-150DSPV2",
@@ -67803,22 +67719,22 @@
      "DALIPHANTOMS180",
      "BWCCM7.3S2",
      "BWCCM7.5S2",
-     "BWCCM8.5D",
      "BWCWM7.4S2",
      "BWCWM7.5S2",
      "BWCWM7.3S2",
      "BWCWM8.5D",
      "BOC86",
-     "BOC106",
      "BOLCR66",
      "BOTHTR66",
      "LYNGD500",
+     "LYNGD5IC",
+     "BWCCM8.5D",
+     "BOC106",
      "LYNGD500C",
-     "LYNGD5",
-     "LYNGD5IC"
+     "LYNGD5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCIPA4-60",
@@ -67881,17 +67797,17 @@
      "DALIPHANTOME80WR",
      "DALIPHANTOMH60",
      "DALIPHANTOMH80",
-     "BWCCM632",
      "BWCCM663",
      "BWCCM663SR",
      "BWCCM664",
      "BWCCM664SR",
      "BWCCM665",
      "BWCCM683",
-     "BWCCM682"
+     "BWCCM682",
+     "BWCCM632"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADCISA2-120",
@@ -67982,7 +67898,7 @@
      "BWCCM684"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADHTR10",
@@ -68018,7 +67934,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADM10V3",
@@ -68125,7 +68041,7 @@
      "DALIRUBIKORE6"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADM23V2",
@@ -68225,7 +68141,7 @@
      "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADM28",
@@ -68295,9 +68211,7 @@
      "MARACINEMA40",
      "MARACINEMA50",
      "BW804D4",
-     "BWHTM81",
      "BW805D4",
-     "BWHTM82",
      "DALIRUBIKORE8",
      "DALIRUBIKORE6",
      "DALIRUBIKORECINEMA",
@@ -68307,10 +68221,12 @@
      "DALIOPTICON6MK2",
      "DALIOPTICONVOKMK2",
      "DALIOPTICONLCRMK2",
-     "MARACINEMA50S2"
+     "MARACINEMA50S2",
+     "BWHTM81",
+     "BWHTM82"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADM33V2",
@@ -68349,6 +68265,13 @@
     }
    ],
    "specs": {
+    "Udgangseffekt 4 ohm": "200 watt",
+    "Udgangseffekt 8 ohm": "200 watt",
+    "Forvrængning (THD)": "0,003%",
+    "Signal/støjforhold": "98 dB",
+    "Dæmpningsfaktor": ">800 (8 ohms, 20 Hz to 6.5 kHz)",
+    "Dynamisk effekt": "280 watt/8 ohm, 560 watt/4 ohm watt",
+    "Forstærkerteknologi": "Klasse D",
     "Udvidelsesmoduler": "Ja",
     "HDMI ARC/CEC": "Ja",
     "HDMI indgange": "1",
@@ -68361,13 +68284,6 @@
     "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi",
     "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Høretelefon, Ethernet",
     "Funktioner": "MQA, Rumkorrektion, Dedikeret app",
-    "Udgangseffekt 4 ohm": "200 watt",
-    "Udgangseffekt 8 ohm": "200 watt",
-    "Forvrængning (THD)": "0,003%",
-    "Signal/støjforhold": "98 dB",
-    "Dæmpningsfaktor": ">800 (8 ohms, 20 Hz to 6.5 kHz)",
-    "Dynamisk effekt": "280 watt/8 ohm, 560 watt/4 ohm watt",
-    "Forstærkerteknologi": "Klasse D",
     "Radio type": "Internet radio",
     "Bi-amping": "Nej",
     "Fjernbetjening": "Ja",
@@ -68444,7 +68360,7 @@
      "BW801D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADM66",
@@ -68515,15 +68431,15 @@
      "AQCINNCOX",
      "AQCINNUSBAB",
      "AQNRGMONSOON20A",
-     "AQHUSKYSUBX",
      "AQREDRIVERIN",
-     "AQGGBKHOLE"
+     "AQGGBKHOLE",
+     "AQHUSKYSUBX"
     ],
     "alt": [
-     "NADM17V2I",
      "HEGELP30A",
      "NADC658",
-     "NADM33"
+     "NADM33",
+     "NADM17V2I"
     ],
     "rec": [
      "DALIKORE",
@@ -68547,7 +68463,7 @@
      "BW805D5"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADMDC2BLUOSX",
@@ -68590,7 +68506,7 @@
      "NADC389"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADMDCAM230X",
@@ -68626,7 +68542,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADMDCDDHDMIX2",
@@ -68662,7 +68578,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADMDCMV15X",
@@ -68696,7 +68612,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADMDCVM130X",
@@ -68732,7 +68648,7 @@
    ],
    "specs": {},
    "rel": {},
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADPP2E",
@@ -68801,7 +68717,7 @@
      "NADC558"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADPP4",
@@ -68870,7 +68786,7 @@
      "NADC558"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADT758V3I",
@@ -68989,7 +68905,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NADT778",
@@ -69029,6 +68945,10 @@
     }
    ],
    "specs": {
+    "Stemmestyring": "Via ekstern smarthøjtaler",
+    "Fjernbetjening": "Ja",
+    "Teknologier": "Dirac Live, Dolby Atmos, DTS x, Roon Ready",
+    "Streamingtjenester": "Tidal, Qobuz, Deezer, Napster, Tunein",
     "HDMI indgange": "5",
     "HDMI udgange": "2",
     "HDCP version": "2.2",
@@ -69038,10 +68958,6 @@
     "Indgang (andet)": "RS-232, Ethernet, IR",
     "Trådløs overførsel": "Bluetooth-indgang, Airplay, Spotify Connect",
     "Billedeindgang": "HDMI",
-    "Stemmestyring": "Via ekstern smarthøjtaler",
-    "Fjernbetjening": "Ja",
-    "Teknologier": "Dirac Live, Dolby Atmos, DTS x, Roon Ready",
-    "Streamingtjenester": "Tidal, Qobuz, Deezer, Napster, Tunein",
     "Standby forbrug": "0,5 watt",
     "Power output (all channels driven)": "9 x 85 watt",
     "Forstærker kanaler": "9",
@@ -69101,7 +69017,7 @@
      "DALIALTECOC1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONADEPT5",
@@ -69170,7 +69086,7 @@
      "DENAHC10PL"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONADEPT7",
@@ -69242,7 +69158,7 @@
      "WAV4PLUS"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONADVENTURE",
@@ -69272,7 +69188,7 @@
      "ean": "5706957022502",
      "url": "/noon-audio-adventure-traadloes-hoejtaler-med-batteri/noonadventurebk/",
      "img": "hk:44c0ea29-b186-48e7-8990-c5835e2e20a0",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,43",
       "Vægt emballage (kg)": "0,5",
@@ -69312,7 +69228,7 @@
      "MAREMBERTON3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONAOFLIXX",
@@ -69402,7 +69318,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONEPC800X",
@@ -69464,7 +69380,7 @@
      "SENIE200"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONGLOBAL",
@@ -69540,7 +69456,7 @@
      "MARMIDDLETON2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONWHNX5X",
@@ -69629,7 +69545,7 @@
      "KEFMU7"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "NOONWISPORT3X",
@@ -69707,7 +69623,7 @@
      "DENAHC840NCW"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "OFAVM2111X",
@@ -69750,7 +69666,7 @@
      "LYNGFR1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "OFAVM2121X",
@@ -69793,7 +69709,7 @@
      "LYNGFR1"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2M78X",
@@ -69820,7 +69736,7 @@
      "ean": "5705796080063",
      "url": "/ortofon-2m-78-mm-pickup/ort2m78/",
      "img": "hk:2a39e4de-a29c-468d-aabe-9200323e9e9a",
-     "stock": "warehouseInStock",
+     "stock": "notInStockNonStockedItem",
      "specs": {
       "Vægt (kg)": "0,03",
       "Vægt emballage (kg)": "0,03",
@@ -69840,8 +69756,8 @@
    },
    "rel": {
     "acc": [
-     "ORTSTYLUS2M78X",
-     "ESSTTSTYLUSGAUGEX"
+     "ESSTTSTYLUSGAUGEX",
+     "ORTSTYLUS2M78X"
     ],
     "alt": [
      "ORT2MR7"
@@ -69851,7 +69767,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MBK",
@@ -69918,7 +69834,7 @@
      "ESSTTBRUSHSTYLUS3X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-26"
   },
   {
    "sku": "ORT2MBL",
@@ -77267,7 +77183,8 @@
     {
      "sku": "SAMTQ32LS03C",
      "label": "Sort",
-     "price": 5499,
+     "price": 3333,
+     "was": 5499,
      "colorKey": "Black",
      "ean": "8806094915822",
      "url": "/samsung-the-frame-2023-32-qled-tv/samtq32ls03c/",
@@ -77460,7 +77377,8 @@
     {
      "sku": "SAMTQ43LS03H",
      "label": "43\"",
-     "price": 7999,
+     "price": 5555,
+     "was": 7999,
      "colorKey": "Black",
      "ean": "8806099033620",
      "url": "/samsung-the-frame-2026-qled-tv/samtq43ls03h/",
@@ -77506,7 +77424,8 @@
     {
      "sku": "SAMTQ55LS03H",
      "label": "55\"",
-     "price": 9999,
+     "price": 6999,
+     "was": 9999,
      "colorKey": "Black",
      "ean": "8806099033415",
      "url": "/samsung-the-frame-2026-qled-tv/samtq55ls03h/",
@@ -77553,7 +77472,8 @@
     {
      "sku": "SAMTQ65LS03H",
      "label": "65\"",
-     "price": 14999,
+     "price": 8333,
+     "was": 14999,
      "colorKey": "Black",
      "ean": "8806099033422",
      "url": "/samsung-the-frame-2026-qled-tv/samtq65ls03h/",
@@ -95689,6 +95609,21 @@
    ]
   },
   {
+   "sku": "BLSP431-P130-PULSESUBPLUS",
+   "brand": "Bluesound",
+   "model": "Cinema Mini + Pulse Flex + Pulse Sub Plus",
+   "type": {
+    "key": "",
+    "da": "Soundbar system/pakke"
+   },
+   "cat": "",
+   "url": "/blsp431-p130-pulsesubplus/",
+   "price": 0,
+   "was": 0,
+   "img": "",
+   "parts": []
+  },
+  {
    "sku": "BLSP530-BLSP130-X2",
    "brand": "Bluesound",
    "model": "PULSE CINEMA (P530) + PULSE FLEX (P130)",
@@ -99663,7 +99598,7 @@
    },
    "cat": "/stereo/mini-anlag/",
    "url": "/nadc700v2-blsp130/",
-   "price": 14998,
+   "price": 11998,
    "was": 15498,
    "img": "hk:9ba533e0-b904-40a7-b092-5025ff4e1d32",
    "parts": [
@@ -99697,8 +99632,8 @@
    },
    "cat": "/stereo/systemer/",
    "url": "/nadc700v2-bw607s3/",
-   "price": 19397,
-   "was": 0,
+   "price": 16397,
+   "was": 19397,
    "img": "hk:9033b6c1-8376-45c6-9aef-acc455be9fa6",
    "parts": [
     {
@@ -99731,8 +99666,8 @@
    },
    "cat": "/stereo/systemer/",
    "url": "/nadc700v2-bw707s3/",
-   "price": 25597,
-   "was": 0,
+   "price": 22597,
+   "was": 25597,
    "img": "hk:682d7797-5b3c-4f4d-8b6e-2d67f4aae0ae",
    "parts": [
     {
@@ -99765,7 +99700,7 @@
    },
    "cat": "/stereo/systemer/",
    "url": "/nadm10v3-opticon2mk2/",
-   "price": 27297,
+   "price": 24296,
    "was": 29397,
    "img": "hk:1eca32b7-6f26-4c1a-8943-a1d035a8b179",
    "parts": [
@@ -100169,189 +100104,6 @@
       "ARGFORUS5BK",
       "ARGFORUS5WA",
       "ARGFORUS5WH"
-     ]
-    }
-   ]
-  },
-  {
-   "sku": "RAY_SUBMINI_1",
-   "brand": "Sonos",
-   "model": "Ray + Sub Mini",
-   "type": {
-    "key": "SoundbarSystem",
-    "da": "Soundbar system/pakke"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/ray_submini_1/",
-   "price": 4328,
-   "was": 5078,
-   "img": "hk:33db37d2-4da5-426c-a704-643b87f34ff6",
-   "parts": [
-    {
-     "sku": "SONRAY",
-     "name": "Sonos Ray Soundbar",
-     "qty": 1,
-     "variants": [
-      "SONRAYWH"
-     ]
-    },
-    {
-     "sku": "SONSUBMINI",
-     "name": "Sonos Sub Mini Trådløs subwoofer",
-     "qty": 1,
-     "variants": [
-      "SONSUBMINIBK",
-      "SONSUBMINIWH"
-     ]
-    }
-   ]
-  },
-  {
-   "sku": "RAY-ERA100",
-   "brand": "Sonos",
-   "model": "Ray + Era 100",
-   "type": {
-    "key": "SoundbarSystem",
-    "da": "Soundbar system/pakke"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/ray-era100/",
-   "price": 4709,
-   "was": 0,
-   "img": "hk:3c29045b-75e2-4d7f-b5c0-25f68178f11d",
-   "parts": [
-    {
-     "sku": "SONRAY",
-     "name": "Sonos Ray Soundbar",
-     "qty": 1,
-     "variants": [
-      "SONRAYWH"
-     ]
-    },
-    {
-     "sku": "SONERA100",
-     "name": "Sonos Era 100 Trådløs højtaler",
-     "qty": 2,
-     "variants": [
-      "SONERA100BK",
-      "SONERA100WH"
-     ]
-    }
-   ]
-  },
-  {
-   "sku": "RAY-ERA100-MINI",
-   "brand": "Sonos",
-   "model": "Ray + Era 100 + Sub Mini",
-   "type": {
-    "key": "SoundbarSystem",
-    "da": "Soundbar system/pakke"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/ray-era100-mini/",
-   "price": 7708,
-   "was": 8458,
-   "img": "hk:9ac4a085-8c49-4676-b980-06bd0c5054ce",
-   "parts": [
-    {
-     "sku": "SONRAY",
-     "name": "Sonos Ray Soundbar",
-     "qty": 1,
-     "variants": [
-      "SONRAYWH"
-     ]
-    },
-    {
-     "sku": "SONSUBMINI",
-     "name": "Sonos Sub Mini Trådløs subwoofer",
-     "qty": 1,
-     "variants": [
-      "SONSUBMINIWH",
-      "SONSUBMINIBK"
-     ]
-    },
-    {
-     "sku": "SONERA100",
-     "name": "Sonos Era 100 Trådløs højtaler",
-     "qty": 2,
-     "variants": [
-      "SONERA100WH",
-      "SONERA100BK"
-     ]
-    }
-   ]
-  },
-  {
-   "sku": "RAY-ERA100SL",
-   "brand": "Sonos",
-   "model": "Ray + Era 100 SL",
-   "type": {
-    "key": "SoundbarSystem",
-    "da": "Soundbar system/pakke"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/ray-era100sl/",
-   "price": 3578,
-   "was": 4327,
-   "img": "hk:3c29045b-75e2-4d7f-b5c0-25f68178f11d",
-   "parts": [
-    {
-     "sku": "SONRAY",
-     "name": "Sonos Ray Soundbar",
-     "qty": 1,
-     "variants": [
-      "SONRAYWH"
-     ]
-    },
-    {
-     "sku": "SONERA100SL",
-     "name": "Sonos Era 100 SL Trådløs højtaler",
-     "qty": 2,
-     "variants": [
-      "SONERA100SLWH",
-      "SONERA100SLBK"
-     ]
-    }
-   ]
-  },
-  {
-   "sku": "RAY-ERA100SL-MINI",
-   "brand": "Sonos",
-   "model": "Ray + Era 100 SL + Sub Mini",
-   "type": {
-    "key": "SoundbarSystem",
-    "da": "Soundbar system/pakke"
-   },
-   "cat": "/tv/soundbar-hojtaler-tv-lyd/",
-   "url": "/ray-era100sl-mini/",
-   "price": 6577,
-   "was": 8076,
-   "img": "hk:9ac4a085-8c49-4676-b980-06bd0c5054ce",
-   "parts": [
-    {
-     "sku": "SONRAY",
-     "name": "Sonos Ray Soundbar",
-     "qty": 1,
-     "variants": [
-      "SONRAYWH"
-     ]
-    },
-    {
-     "sku": "SONSUBMINI",
-     "name": "Sonos Sub Mini Trådløs subwoofer",
-     "qty": 1,
-     "variants": [
-      "SONSUBMINIWH",
-      "SONSUBMINIBK"
-     ]
-    },
-    {
-     "sku": "SONERA100SL",
-     "name": "Sonos Era 100 SL Trådløs højtaler",
-     "qty": 2,
-     "variants": [
-      "SONERA100SLWH",
-      "SONERA100SLBK"
      ]
     }
    ]
@@ -102480,7 +102232,7 @@
   {
    "sku": "TT-VINYLKIT",
    "brand": "Argon Audio",
-   "model": "TT MK2 + Vinylkit 10",
+   "model": "TT MK2 + Vinylkit 100",
    "type": {
     "key": "TurntableSystem",
     "da": "Pladespiller system"

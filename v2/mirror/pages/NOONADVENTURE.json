@@ -26,7 +26,7 @@
    "9b3f9a64-876d-40b1-b035-2d57bd76b7a5",
    "23c2a13c-7948-4d56-9a78-c9d3d2fc7786"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 294653,
@@ -54,6 +54,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trykknapper til basale funktioner (lydstyrke, start/stop m.m.)\nIndbygget forstærkereffekt: 16 watt (målemetode ikke angivet)\nEnheder: 2 x 45 mm fuldtone + 2 x 55 mm passive basenheder\nIndbygget mikrofon til håndfri telefonopkald\n2 styk Adventure kan parres i L/R stereo (TWS)\nLadetid: 3 timer (fuld)\nUSB-C ladekabel medfølger"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -64,15 +73,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "Bluetooth-indgang"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trykknapper til basale funktioner (lydstyrke, start/stop m.m.)\nIndbygget forstærkereffekt: 16 watt (målemetode ikke angivet)\nEnheder: 2 x 45 mm fuldtone + 2 x 55 mm passive basenheder\nIndbygget mikrofon til håndfri telefonopkald\n2 styk Adventure kan parres i L/R stereo (TWS)\nLadetid: 3 timer (fuld)\nUSB-C ladekabel medfølger"
      }
     ]
    },
@@ -200,11 +200,12 @@
      "productCode": "NOONADVENTUREBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager tirsdag den 24. november",
-     "deliveryDate": "2026-11-24T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 1800,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

@@ -191,7 +191,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 10,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -231,48 +231,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NADPP4 leverer klar, varm, fyldig og medrivende lyd til en attraktiv pris, er nem at betjene og fungerer overbevisende med forskellige pladespilleropsætninger. Digitalisering af LP’er og singler er praktisk, mens USB-tilslutningen også gør kassetteoverførsel mulig. Den medfølgende VinylStudio-software er den største svaghed, da tilgængelighed, begrænsninger og optagestabilitet kritiseres.",
+   "summary": "NADPP4 leverer klar, varm og detaljeret lyd til en attraktiv pris, og vinylgengivelsen beskrives ofte som en markant forbedring i forhold til ældre phono-forforstærkere. Enheden fungerer godt til digitalisering af plader og andre analoge kilder, men den medfølgende VinylStudio-software er upålidelig, begrænset og dårligt understøttet. Den enkle betjening og den hjælpsomme tekniske support roses, mens den manglende manual kan gøre installationen sværere for begyndere.",
    "headlines": {
-    "clear, warm sound": {
-     "sentimentAnalysis": "RIAA-trinnet roses gentagne gange for klar, varm og konsekvent ren lyd og for at forbedre eksisterende receiver- eller NAD-RIAA-trin.",
-     "simpleTitle": "Klar, varm lyd",
+    "clear, warm and detailed sound": {
+     "sentimentAnalysis": "Lyden roses konsekvent som klar, varm og meget god og kan måle sig med cd og streaming i høj opløsning.",
+     "simpleTitle": "Klar, varm og detaljeret lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b"
+     "groupId": "687b27b2-cf67-4291-b0f9-44074d717ae2"
     },
-    "attractive price": {
-     "sentimentAnalysis": "Enheden vurderes gentagne gange som prisvenlig og tilbyder meget god lyd og nyttige funktioner til prisen.",
-     "simpleTitle": "Attraktiv pris",
+    "good value for the price": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver enheden som billig eller rimeligt prissat og fremhæver samtidig den forventede funktionalitet og gode lydkvalitet.",
+     "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "2870717e-4b2f-4ef8-8570-d53e105d8a23"
+     "key": "price-value",
+     "groupId": "21f29b0d-f535-4c2e-8080-afc4a87abcc1"
     },
-    "strong turntable performance": {
-     "sentimentAnalysis": "Kompatibilitet med Rega- og Thorens-pladespillere kombineres med meget god lyd, hvor vinyl kan måle sig med cd’er og streaming i høj opløsning.",
-     "simpleTitle": "Stærk pladespillerydelse",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b"
-    },
-    "practical vinyl digitisation": {
-     "sentimentAnalysis": "USB-optagelse anses for nyttig til digitalisering af LP’er og singler, og kassetteoverførsel nævnes også som en praktisk anvendelse.",
-     "simpleTitle": "Praktisk vinyldigitalisering",
+    "effective vinyl digitisation": {
+     "sentimentAnalysis": "Hardwaren vurderes egnet til digitalisering af lp'er og singler og kan også gøre digitalisering af kassetteoptagelser enklere.",
+     "simpleTitle": "Effektiv digitalisering af vinyl",
      "bias": "positive",
      "key": "digitisation",
-     "groupId": "10f00935-cf00-48a9-b9b1-358fe9c5813a"
+     "groupId": "6f173206-4c22-4143-b695-bb22a020995e"
     },
-    "vinylStudio software is limited and unreliable": {
-     "sentimentAnalysis": "Den anbefalede VinylStudio-software kritiseres for manglende downloads, stramme begrænsninger i gratisversionen og gentagne optagelsesafbrydelser, så alternativer bliver brugt.",
-     "simpleTitle": "VinylStudio er begrænset og ustabilt",
+    "vinylStudio software is unreliable and restricted": {
+     "sentimentAnalysis": "Den anbefalede software kritiseres for afbrudte optagelser, manglende downloads og kraftige begrænsninger i den angiveligt gratis version; alternativ software foretrækkes.",
+     "simpleTitle": "VinylStudio-software er upålidelig og begrænset",
      "bias": "negative",
-     "key": "digitisation",
-     "groupId": "10f00935-cf00-48a9-b9b1-358fe9c5813a"
+     "key": "software",
+     "groupId": "a7b01f20-2b54-4ee4-9ce6-e9941dfdc6ba"
     }
    },
    "grouping": {
-    "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b": {
+    "687b27b2-cf67-4291-b0f9-44074d717ae2": {
      "title": "Lydkvalitet",
-     "id": "5e777ee3-54f1-4330-a4bf-aca3ab04fc2b",
+     "id": "687b27b2-cf67-4291-b0f9-44074d717ae2",
      "references": [
       "cad2995e-5e96-41ed-89bd-a97317368638",
       "65361059-b556-4639-9808-ef379696ed6d",
@@ -282,22 +275,30 @@
       "7d58d07b-9970-483a-ac3c-48140ebd95c8"
      ]
     },
-    "10f00935-cf00-48a9-b9b1-358fe9c5813a": {
-     "title": "Digitalisering",
-     "id": "10f00935-cf00-48a9-b9b1-358fe9c5813a",
-     "references": [
-      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
-      "e53fe8db-5b77-49c4-9c4f-40f2b5225d97",
-      "467b99c4-ab2a-4d81-9a07-0c57b5df3b35"
-     ]
-    },
-    "2870717e-4b2f-4ef8-8570-d53e105d8a23": {
-     "title": "Værdi for pengene",
-     "id": "2870717e-4b2f-4ef8-8570-d53e105d8a23",
+    "21f29b0d-f535-4c2e-8080-afc4a87abcc1": {
+     "title": "Pris og værdi",
+     "id": "21f29b0d-f535-4c2e-8080-afc4a87abcc1",
      "references": [
       "cad2995e-5e96-41ed-89bd-a97317368638",
       "e53fe8db-5b77-49c4-9c4f-40f2b5225d97",
+      "467b99c4-ab2a-4d81-9a07-0c57b5df3b35",
       "ef812334-823c-4862-b481-f3179c0e5c5e"
+     ]
+    },
+    "6f173206-4c22-4143-b695-bb22a020995e": {
+     "title": "Digitalisering",
+     "id": "6f173206-4c22-4143-b695-bb22a020995e",
+     "references": [
+      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
+      "e53fe8db-5b77-49c4-9c4f-40f2b5225d97"
+     ]
+    },
+    "a7b01f20-2b54-4ee4-9ce6-e9941dfdc6ba": {
+     "title": "Software",
+     "id": "a7b01f20-2b54-4ee4-9ce6-e9941dfdc6ba",
+     "references": [
+      "102eed01-24d3-44e5-bffd-884c4fc6fd5e",
+      "467b99c4-ab2a-4d81-9a07-0c57b5df3b35"
      ]
     }
    },

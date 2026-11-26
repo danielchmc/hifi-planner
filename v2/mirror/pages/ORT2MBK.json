@@ -180,7 +180,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 4,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -222,57 +222,64 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ORT2MBK leverer en imponerende detaljeret, varm og omsluttende opgradering i forhold til enklere pickupper og gengiver instrumenter og vokal med enestående klarhed. Lyden er ren, dynamisk og rummelig med fyldigere bas, tydeligere diskant og et overbevisende stereoperspektiv. Den høje pris anerkendes, men den samlede ydelse og værdi vurderes som meget overbevisende.",
+   "summary": "ORT2MBK giver en markant opgradering af detaljering, klarhed, varme, dynamik og rumfornemmelse. Lyden beskrives som ren, fyldig, realistisk og meget medrivende, hvor vokaler, instrumenter, bas og diskant træder mere overbevisende frem fra pladerillen. Den høje pris opleves som rimelig, fordi pickuppen henter en usædvanligt rig og opslugende gengivelse frem fra vinylen.",
    "headlines": {
     "exceptional detail retrieval": {
-     "sentimentAnalysis": "Anmeldelserne roser pickup'en for at hente flere musikalske informationer frem og gøre de enkelte instrumenter tydeligt adskillelige.",
+     "sentimentAnalysis": "Pickuppen gengiver væsentligt flere musikalske detaljer, så individuelle instrumenter og fine informationer bliver lettere at høre.",
      "simpleTitle": "Enestående detaljegengivelse",
      "bias": "positive",
-     "key": "detail",
-     "groupId": "2a4c90fc-6438-4ba8-9591-c1a4f2c41c05"
+     "key": "detail-retrieval",
+     "groupId": "58aac90d-445b-4032-8338-8cecbbdd174d"
     },
-    "clear upgrade over previous cartridges": {
-     "sentimentAnalysis": "Flere sammenligninger beskriver en markant forbedring i forhold til ældre eller enklere pickupper, især hvad angår klarhed, detaljer og musikalsk realisme.",
-     "simpleTitle": "Tydelig opgradering i forhold til tidligere pickupper",
+    "warmer, fuller and more realistic sound": {
+     "sentimentAnalysis": "Gengivelsen får mere varme, fylde, realisme i vokaler og instrumenter samt en renere helhed end med tidligere pickupper.",
+     "simpleTitle": "Varmere, fyldigere og mere realistisk lyd",
+     "bias": "positive",
+     "key": "warm-full-realistic",
+     "groupId": "58aac90d-445b-4032-8338-8cecbbdd174d"
+    },
+    "a significant upgrade over previous cartridges": {
+     "sentimentAnalysis": "Sammenligninger med ældre eller billigere pickupper beskriver gennemgående en markant forbedring af den samlede musikalske ydelse.",
+     "simpleTitle": "En markant opgradering fra tidligere pickupper",
      "bias": "positive",
      "key": "upgrade",
-     "groupId": "2a4c90fc-6438-4ba8-9591-c1a4f2c41c05"
+     "groupId": "58aac90d-445b-4032-8338-8cecbbdd174d"
     },
-    "warmer, fuller and cleaner presentation": {
-     "sentimentAnalysis": "Pickup'en beskrives som varmere og fyldigere, samtidig med at støjen reduceres og den samlede gengivelse bliver renere.",
-     "simpleTitle": "Varmere, fyldigere og renere gengivelse",
+    "expansive stereo image and soundstage": {
+     "sentimentAnalysis": "Pickuppen skaber en særdeles imponerende lydbillede og et bedre defineret stereoperspektiv.",
+     "simpleTitle": "Stor stereoperspektiv og lydbillede",
      "bias": "positive",
-     "key": "warm-full-clean",
-     "groupId": "2a4c90fc-6438-4ba8-9591-c1a4f2c41c05"
+     "key": "soundstage-stereo",
+     "groupId": "58aac90d-445b-4032-8338-8cecbbdd174d"
     },
-    "premium price, strong value": {
-     "sentimentAnalysis": "Pickup'en anerkendes som dyr, men lydkvaliteten vurderes at retfærdiggøre investeringen.",
-     "simpleTitle": "Høj pris, men god værdi",
-     "bias": "meh",
-     "key": "value",
-     "groupId": "1b3074cc-4fc2-464c-bdc9-393736801404"
+    "premium pricing, but strong value": {
+     "sentimentAnalysis": "Pickuppen er dyr, men den fremragende ydelse opleves som en god investering.",
+     "simpleTitle": "Høj pris, men stærk værdi",
+     "bias": "positive",
+     "key": "premium-value",
+     "groupId": "2c4eee6a-d617-4409-91ba-3b88838a7123"
     }
    },
    "grouping": {
-    "2a4c90fc-6438-4ba8-9591-c1a4f2c41c05": {
+    "58aac90d-445b-4032-8338-8cecbbdd174d": {
      "title": "Lydkvalitet",
-     "id": "2a4c90fc-6438-4ba8-9591-c1a4f2c41c05",
+     "id": "58aac90d-445b-4032-8338-8cecbbdd174d",
      "references": [
       "fc32bada-b0f4-47b7-8433-3dd05c2cc69d",
       "e5b83171-f485-43b2-9901-5955bf270554",
-      "94f36e52-754d-45b0-8ea5-a08055b896d4",
       "d7c3747a-d2d5-4dc4-8239-7e4a7440b3d6",
       "f6840882-c579-435e-8aa3-18c36e6a6efa",
       "5a23b74f-e242-4969-80e0-da292b096011",
       "abf40d06-eac8-4715-bdd4-25907f13cdcf",
       "3691fd7c-e409-49c8-8483-18caaa5dfdcb",
       "211292d5-0a7d-46af-a26b-2227bd90893d",
-      "f220722d-d301-42cb-a50f-3e2dc9991f26"
+      "f220722d-d301-42cb-a50f-3e2dc9991f26",
+      "179097ab-62cc-460d-a6ed-e8b79f9f0796"
      ]
     },
-    "1b3074cc-4fc2-464c-bdc9-393736801404": {
-     "title": "Pris og værdi",
-     "id": "1b3074cc-4fc2-464c-bdc9-393736801404",
+    "2c4eee6a-d617-4409-91ba-3b88838a7123": {
+     "title": "Værdi for pengene",
+     "id": "2c4eee6a-d617-4409-91ba-3b88838a7123",
      "references": [
       "8deadd46-404f-44a9-9213-f0df04c8131f",
       "e3b85ff1-5600-417f-a587-73a39eebc3c7"

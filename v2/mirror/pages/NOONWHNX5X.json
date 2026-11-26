@@ -204,7 +204,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 839,
+     "availableQuantity": 830,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -304,7 +304,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 665,
+     "availableQuantity": 663,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -377,90 +377,62 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NOONWHNX5X leverer en varm, slagkraftig og detaljeret lyd med en særligt tilfredsstillende bas, som gør musik og film medrivende. Den komfortable og lette konstruktion samt den lange batteritid passer godt til daglig lytning, mens støjreduktionen ofte roses til rejser og fordybelse. De væsentligste forbehold gælder varierende ANC-ydeevne, begrænsede muligheder for lydjustering uden en app samt enkelte praktiske detaljer ved betjening og komfort.",
+   "summary": "Disse hovedtelefoner leverer en varm, dynamisk og detaljeret lyd med især vellykket bas samt generelt god komfort og et stærkt forhold mellem pris og kvalitet. Støjreduktionen roses af mange til rejser og hverdagsbrug, selv om flere synes, at den er svagere end hos dyrere alternativer. Nem betjening, sammenklappeligt design og lang batteritid gør dem attraktive, mens begrænsede justeringsmuligheder, manglende batteriindikator og enkelte fysiske eller basrelaterede ulemper trækker ned.",
    "headlines": {
-    "lightweight and comfortable for extended wear": {
-     "sentimentAnalysis": "Høretelefonerne beskrives gentagne gange som lette, velsiddende og behagelige til transport, arbejde og længere lyttesessioner.",
-     "simpleTitle": "Let og behagelig ved længere tids brug",
+    "comfortable and light for extended wear": {
+     "sentimentAnalysis": "Den lave vægt og gode pasform gør hovedtelefonerne komfortable til pendling, arbejde og længere lytteperioder.",
+     "simpleTitle": "Komfortable og lette ved længere tids brug",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "7cd454fc-c91f-4e3f-ab2d-93f94262360b"
+     "groupId": "0c59b69d-1d84-4f8e-9927-600578ba1db9"
     },
-    "anc is effective for travel and focus": {
-     "sentimentAnalysis": "ANC roses ofte for at reducere fly-, husholdnings- og omgivelsesstøj og skabe et fredeligt lytterum.",
-     "simpleTitle": "ANC er effektiv til rejser og fordybelse",
+    "noise cancellation works well for travel and daily use": {
+     "sentimentAnalysis": "Den aktive støjreduktion beskrives ofte som effektiv mod flystøj, stemmer og omgivende lyde.",
+     "simpleTitle": "Støjreduktionen fungerer godt på rejser og i hverdagen",
      "bias": "positive",
      "key": "anc",
-     "groupId": "27f997db-98ae-4982-bc30-49befb6a1b4a"
+     "groupId": "378f72ec-3de0-4b19-b059-4e274884409e"
     },
     "warm, punchy sound with strong bass": {
-     "sentimentAnalysis": "Den fyldige, varme og energiske gengivelse roses, især den dybe og markante bas.",
-     "simpleTitle": "Varm, slagkraftig lyd med kraftig bas",
+     "sentimentAnalysis": "Lyden roses bredt som klar, musikalsk og fyldig med særligt engagerende bas og en stærk mellemtone.",
+     "simpleTitle": "Varm og dynamisk lyd med kraftig bas",
      "bias": "positive",
      "key": "sound",
-     "groupId": "35d2895f-ff19-4147-ad01-39c1a9c57635"
+     "groupId": "bad0951d-5a7c-405b-b6a7-2841f93fd9d6"
     },
-    "clear and versatile sound": {
-     "sentimentAnalysis": "Lyden beskrives som klar, bred og velafbalanceret på tværs af musik, tale og film.",
-     "simpleTitle": "Klar og alsidig lyd",
+    "easy controls and practical foldable design": {
+     "sentimentAnalysis": "Overskuelig betjening, nem parring og et sammenklappeligt format gør den daglige håndtering enkel.",
+     "simpleTitle": "Nem betjening og praktisk sammenklappeligt design",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "35d2895f-ff19-4147-ad01-39c1a9c57635"
+     "key": "usability",
+     "groupId": "d0759eba-6082-4afc-99d3-2a1bb4cd3c21"
     },
-    "noise cancellation falls short for some listeners": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne vurderer ANC som svagere end forventet eller under niveauet hos dyrere konkurrenter, selv om den stadig kan bruges.",
-     "simpleTitle": "Støjreduktionen lever ikke op til alles forventninger",
+    "noise cancellation falls short of premium rivals": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer støjreduktionen som acceptabel til prisen, men tydeligt svagere end hos førende mærker.",
+     "simpleTitle": "Støjreduktionen er svagere end hos premiumkonkurrenter",
      "bias": "negative",
      "key": "anc",
-     "groupId": "27f997db-98ae-4982-bc30-49befb6a1b4a"
+     "groupId": "378f72ec-3de0-4b19-b059-4e274884409e"
     },
-    "easy pairing and straightforward operation": {
-     "sentimentAnalysis": "Parring og daglig betjening opleves ofte som enkel, og en app er ikke nødvendig til grundlæggende brug.",
-     "simpleTitle": "Nem parring og enkel betjening",
-     "bias": "positive",
-     "key": "controls",
-     "groupId": "fb1fc5ca-ca97-4bbd-bd20-ef216e9095c4"
-    },
-    "bass can become excessive or distort at maximum": {
-     "sentimentAnalysis": "Flere anmeldelser kan lide den kraftige bas, men bemærker, at klangen kan blive for dominerende, og at der kan opstå forvrængning ved høj bas og ANC.",
-     "simpleTitle": "Bassen kan blive for kraftig eller forvrænge ved maksimum",
+    "bass can become excessive or distort at high levels": {
+     "sentimentAnalysis": "Den livlige bas er tiltalende, men i visse situationer bliver den for kraftig eller forvrænget, og muligheden for tonejustering savnes.",
+     "simpleTitle": "Bassen kan blive for kraftig eller forvrænget ved højt niveau",
      "bias": "negative",
      "key": "sound",
-     "groupId": "35d2895f-ff19-4147-ad01-39c1a9c57635"
+     "groupId": "bad0951d-5a7c-405b-b6a7-2841f93fd9d6"
     },
-    "ear cups and fit can become warm or tiring": {
-     "sentimentAnalysis": "Nogle brugere oplever varme, sved eller stivhed i starten ved længere tids brug, hvilket viser, at komforten ikke er lige ensartet for alle.",
-     "simpleTitle": "Ørepuder og pasform kan blive varme eller trættende",
+    "small controls and limited adjustability frustrate": {
+     "sentimentAnalysis": "Små knapper, manglen på en app og begrænset lydjustering reducerer fleksibiliteten.",
+     "simpleTitle": "Små knapper og begrænsede justeringsmuligheder frustrerer",
      "bias": "negative",
-     "key": "comfort",
-     "groupId": "7cd454fc-c91f-4e3f-ab2d-93f94262360b"
-    },
-    "long battery life": {
-     "sentimentAnalysis": "Batteritiden roses for at holde til længere tids daglig brug og rejser.",
-     "simpleTitle": "Lang batteritid",
-     "bias": "positive",
-     "key": "battery",
-     "groupId": "5f8b21d0-1d76-4ae0-8215-03e01eca2c6e"
-    },
-    "small controls and no app limit adjustment": {
-     "sentimentAnalysis": "De fysiske knapper kan føles for små, mens manglen på en app forhindrer equalizerjusteringer og gør USB-lyd mere besværlig.",
-     "simpleTitle": "Små knapper og manglende app begrænser justeringen",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "fb1fc5ca-ca97-4bbd-bd20-ef216e9095c4"
-    },
-    "battery status is not clearly indicated": {
-     "sentimentAnalysis": "Manglen på en batteriindikator nævnes som en praktisk ulempe.",
-     "simpleTitle": "Batteriniveauet vises ikke tydeligt",
-     "bias": "negative",
-     "key": "battery",
-     "groupId": "5f8b21d0-1d76-4ae0-8215-03e01eca2c6e"
+     "key": "usability",
+     "groupId": "d0759eba-6082-4afc-99d3-2a1bb4cd3c21"
     }
    },
    "grouping": {
-    "35d2895f-ff19-4147-ad01-39c1a9c57635": {
+    "bad0951d-5a7c-405b-b6a7-2841f93fd9d6": {
      "title": "Lydkvalitet",
-     "id": "35d2895f-ff19-4147-ad01-39c1a9c57635",
+     "id": "bad0951d-5a7c-405b-b6a7-2841f93fd9d6",
      "references": [
       "cdae5b8b-b5e8-48fa-b581-1fff9b9f931d",
       "64082899-9be3-486e-8acf-514ab92e638b",
@@ -471,6 +443,8 @@
       "d631f6b5-2037-4bb0-aafa-f9153102357a",
       "e8e308ff-8e10-46e9-bc7c-14ff46c6a849",
       "f2cff6c3-5f4d-49d0-86c3-1137557cedcc",
+      "2fcbb9d9-8563-43a4-ad20-deb709b49520",
+      "a3c26a32-b67d-4ae4-bc8b-60c40c72a4bd",
       "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
       "8e296c60-73c1-4a7b-8a39-83207832e72e",
       "ebf236c1-8f3e-41ab-bf28-59051baf60e5",
@@ -478,7 +452,6 @@
       "828944d3-99d9-4920-a87b-6aea74955c76",
       "d9a427f3-3e50-4f53-a7eb-aea06fbd79e3",
       "de342a58-fbb6-4aa2-b195-15c755f062e0",
-      "32ddb9e3-3f31-4613-8bd9-d632cd46f652",
       "4c069b1b-2c23-4ca5-b664-7b68a1fa70e0",
       "0ff03736-394b-4ff5-a798-1b61b998b4c7",
       "cbec9de6-91c2-468d-b6b6-11f4e6702650",
@@ -492,9 +465,9 @@
       "3673c5c5-921e-4e86-88a1-c5652d0b09cf"
      ]
     },
-    "7cd454fc-c91f-4e3f-ab2d-93f94262360b": {
+    "0c59b69d-1d84-4f8e-9927-600578ba1db9": {
      "title": "Komfort",
-     "id": "7cd454fc-c91f-4e3f-ab2d-93f94262360b",
+     "id": "0c59b69d-1d84-4f8e-9927-600578ba1db9",
      "references": [
       "dca44501-52ac-4a6e-8297-80317d9611ae",
       "618ae6b6-299b-4de6-9f33-6978a6c58e42",
@@ -502,11 +475,12 @@
       "9c17179c-1b35-4273-a974-2cf3b427b066",
       "d631f6b5-2037-4bb0-aafa-f9153102357a",
       "f2cff6c3-5f4d-49d0-86c3-1137557cedcc",
-      "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
-      "8e296c60-73c1-4a7b-8a39-83207832e72e",
-      "ebf236c1-8f3e-41ab-bf28-59051baf60e5",
+      "b5359627-98fa-4e1e-bd80-f924ba89538d",
+      "a961cc58-5eae-4cb7-889e-29d09db63288",
       "2fcbb9d9-8563-43a4-ad20-deb709b49520",
       "a3c26a32-b67d-4ae4-bc8b-60c40c72a4bd",
+      "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
+      "ebf236c1-8f3e-41ab-bf28-59051baf60e5",
       "d9a427f3-3e50-4f53-a7eb-aea06fbd79e3",
       "ed354d97-198e-414c-98b9-2fa92b5fbff1",
       "cbec9de6-91c2-468d-b6b6-11f4e6702650",
@@ -519,14 +493,17 @@
       "3673c5c5-921e-4e86-88a1-c5652d0b09cf"
      ]
     },
-    "27f997db-98ae-4982-bc30-49befb6a1b4a": {
+    "378f72ec-3de0-4b19-b059-4e274884409e": {
      "title": "Støjreduktion",
-     "id": "27f997db-98ae-4982-bc30-49befb6a1b4a",
+     "id": "378f72ec-3de0-4b19-b059-4e274884409e",
      "references": [
       "cdae5b8b-b5e8-48fa-b581-1fff9b9f931d",
+      "64082899-9be3-486e-8acf-514ab92e638b",
       "dca44501-52ac-4a6e-8297-80317d9611ae",
       "9c17179c-1b35-4273-a974-2cf3b427b066",
       "d73de741-6b59-4364-b04d-cfaa247f6caf",
+      "a961cc58-5eae-4cb7-889e-29d09db63288",
+      "a3c26a32-b67d-4ae4-bc8b-60c40c72a4bd",
       "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
       "8e296c60-73c1-4a7b-8a39-83207832e72e",
       "ebf236c1-8f3e-41ab-bf28-59051baf60e5",
@@ -542,29 +519,19 @@
       "3673c5c5-921e-4e86-88a1-c5652d0b09cf"
      ]
     },
-    "fb1fc5ca-ca97-4bbd-bd20-ef216e9095c4": {
-     "title": "Betjening og tilslutning",
-     "id": "fb1fc5ca-ca97-4bbd-bd20-ef216e9095c4",
+    "d0759eba-6082-4afc-99d3-2a1bb4cd3c21": {
+     "title": "Betjening og funktioner",
+     "id": "d0759eba-6082-4afc-99d3-2a1bb4cd3c21",
      "references": [
-      "a745108b-bd81-4873-9a47-a27ae54f9fe5",
       "618ae6b6-299b-4de6-9f33-6978a6c58e42",
+      "a745108b-bd81-4873-9a47-a27ae54f9fe5",
       "9c17179c-1b35-4273-a974-2cf3b427b066",
       "e8e308ff-8e10-46e9-bc7c-14ff46c6a849",
+      "a3c26a32-b67d-4ae4-bc8b-60c40c72a4bd",
+      "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
       "ebf236c1-8f3e-41ab-bf28-59051baf60e5",
-      "da27a0b2-19db-477e-a1cb-c001c5bdca2a",
       "4c069b1b-2c23-4ca5-b664-7b68a1fa70e0",
       "3673c5c5-921e-4e86-88a1-c5652d0b09cf"
-     ]
-    },
-    "5f8b21d0-1d76-4ae0-8215-03e01eca2c6e": {
-     "title": "Batteritid",
-     "id": "5f8b21d0-1d76-4ae0-8215-03e01eca2c6e",
-     "references": [
-      "64082899-9be3-486e-8acf-514ab92e638b",
-      "9c17179c-1b35-4273-a974-2cf3b427b066",
-      "1cd88b1d-fd74-40cb-8918-084d74c2d10f",
-      "32ddb9e3-3f31-4613-8bd9-d632cd46f652",
-      "4c069b1b-2c23-4ca5-b664-7b68a1fa70e0"
      ]
     }
    },

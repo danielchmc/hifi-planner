@@ -83,7 +83,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 23,
+     "availableQuantity": 32,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -103,34 +103,64 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "NADHTR10 er en alsidig originalfjernbetjening, der fungerer godt med NAD-udstyr og kan erstatte flere fjernbetjeninger. Programmering og betjening roses af nogle brugere, mens andre finder opsætningen vanskelig eller oplever begrænset kompatibilitet med DAC'er og CD-afspillere. En varm, punchy og medrivende betjeningsoplevelse opvejes dog af bekymringer om knappernes reaktion og den langsigtede holdbarhed.",
+   "summary": "NADHTR10 er en alsidig fjernbetjening med originalfølelse, bred enhedskompatibilitet og praktiske tændfunktioner til flere apparater, som reducerer fjernbetjeningsrod. Programmeringen er som regel nem, selv om nogle brugere synes, at opsætningen er vanskelig, og oplever begrænset funktion med visse NAD-komponenter som DAC'er og cd-afspillere. Gummiknapperne kræver et fast og længere tryk, og gentagne kontaktproblemer giver bekymring for holdbarheden, selv om brugeroplevelsen samlet set er praktisk og tilfredsstillende.",
    "headlines": {
-    "works well with NAD equipment": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver, at fjernbetjeningen fungerer korrekt med NAD-udstyr.",
-     "simpleTitle": "Virker godt med NAD-udstyr",
+    "simple to program": {
+     "sentimentAnalysis": "Programmeringen beskrives som nem og praktisk til at samle flere fjernbetjeninger.",
+     "simpleTitle": "Nem at programmere",
      "bias": "positive",
-     "key": "nad-compatibility",
-     "groupId": "e78fe941-6273-4229-b740-8dd79d514b53"
+     "key": "programming",
+     "groupId": "c2077d01-e1f6-414a-9069-a3037b1f2ed8"
     },
-    "limited compatibility with some components": {
-     "sentimentAnalysis": "To anmeldelser fortæller, at fjernbetjeningen ikke styrer de forventede DAC- eller CD-afspillerfunktioner og primært er begrænset til forstærkerens volumenkontrol.",
-     "simpleTitle": "Begrænset kompatibilitet med visse komponenter",
+    "useful multi-device control": {
+     "sentimentAnalysis": "Fjernbetjeningen virker med NAD-udstyr og kan samle betjeningen af flere apparater og tændfunktioner.",
+     "simpleTitle": "Praktisk styring af flere enheder",
+     "bias": "positive",
+     "key": "compatibility",
+     "groupId": "fb67b5af-6280-4c97-989a-b6a7152f762b"
+    },
+    "limited control with some NAD components": {
+     "sentimentAnalysis": "Kompatibiliteten er begrænset med visse komponenter; der rapporteres kun om volumenkontrol på forstærkeren og problemer med en cd-afspiller.",
+     "simpleTitle": "Begrænset betjening af visse NAD-komponenter",
      "bias": "negative",
-     "key": "limited-compatibility",
-     "groupId": "e78fe941-6273-4229-b740-8dd79d514b53"
+     "key": "compatibility",
+     "groupId": "fb67b5af-6280-4c97-989a-b6a7152f762b"
+    },
+    "firm, prolonged button presses": {
+     "sentimentAnalysis": "Knapdesignet kritiseres for at kræve mere tryk og længere tryk; der rapporteres også om gentagne kontaktfejl.",
+     "simpleTitle": "Kræver faste, lange tryk",
+     "bias": "negative",
+     "key": "buttons",
+     "groupId": "b95a1081-77f8-46b0-bea1-4a9894375d2b"
     }
    },
    "grouping": {
-    "e78fe941-6273-4229-b740-8dd79d514b53": {
-     "title": "Kompatibilitet og funktioner",
-     "id": "e78fe941-6273-4229-b740-8dd79d514b53",
+    "c2077d01-e1f6-414a-9069-a3037b1f2ed8": {
+     "title": "Programmering og opsætning",
+     "id": "c2077d01-e1f6-414a-9069-a3037b1f2ed8",
+     "references": [
+      "753c9e12-4f47-4f9e-9ba9-cc131588f87e",
+      "f78a0365-5ea1-4ba8-8e01-071e3f7864a2",
+      "d2c5e459-9b8a-47dd-80b1-fcd512098b95",
+      "34ee516b-3394-4aea-a712-0e507550fb8a"
+     ]
+    },
+    "fb67b5af-6280-4c97-989a-b6a7152f762b": {
+     "title": "Enhedskompatibilitet og betjening",
+     "id": "fb67b5af-6280-4c97-989a-b6a7152f762b",
      "references": [
       "8ce8ed47-90a6-4233-b2a1-a559b5c50aa4",
       "807e2167-fad5-470a-ae2d-baa860a9ed78",
-      "8c0f29da-ef7b-448d-9983-154ca4412b8a",
-      "3d9e9805-fe05-41e6-bd7a-596ec0ee4edc",
       "d2c5e459-9b8a-47dd-80b1-fcd512098b95",
       "34ee516b-3394-4aea-a712-0e507550fb8a"
+     ]
+    },
+    "b95a1081-77f8-46b0-bea1-4a9894375d2b": {
+     "title": "Knapper og holdbarhed",
+     "id": "b95a1081-77f8-46b0-bea1-4a9894375d2b",
+     "references": [
+      "c1a68c19-e362-41d8-9418-5b35cdb0b002",
+      "d2c5e459-9b8a-47dd-80b1-fcd512098b95"
      ]
     }
    },

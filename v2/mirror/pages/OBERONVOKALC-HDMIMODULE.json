@@ -150,7 +150,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24,
+        "availableQuantity": 23,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.499,-",
@@ -182,7 +182,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1,
+        "availableQuantity": 17,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.999,-",
@@ -194,43 +194,39 @@
      ],
      "parentProductCode": "DALIHDMIAUDIOX",
      "reviews": {
-      "summary": "DALIHDMIAUDIOX leverer en varm, slagkraftig og omsluttende hjemmebiografoplevelse med pålidelig kompatibilitet med tv og projektorer. Dolby TrueHD, DTS-HD Master Audio og 5.1-afspilning giver biograflignende detaljer og dynamik, mens betjening via tv-fjernbetjeningen er ubesværet. Lejlighedsvise udfald i den trådløse forbindelse mellem højttalerne og Sound Hub er den eneste nævneværdige bekymring, mens musikstreaming fungerer stabilt.",
+      "summary": "DALIHDMIAUDIOX leverer en varm, slagkraftig og omsluttende lyd til film, serier og musik med fremragende hjemmebiografintegration og bred kompatibilitet med tv- og projektoropsætninger. Dolby TrueHD, DTS-HD Master Audio og 5.1-afspilning giver gengivelsen en detaljeret, biograflignende karakter. Der kan forekomme lejlighedsvise forbindelsesudfald mellem højttalerne og Sound Hub, men den samlede ydeevne er stadig imponerende.",
       "headlines": {
-       "works smoothly with TVs and projectors": {
-        "sentimentAnalysis": "HDMI-modulet integreres problemfrit med hjemmebiografskærme og tv-styring, inklusive brug med projektorer.",
-        "simpleTitle": "Fungerer problemfrit med tv og projektorer",
-        "bias": "positive",
-        "key": "compatibility",
-        "groupId": "e561c59c-e9c2-48de-abc0-5a9bc3de66e2"
-       },
-       "rich, detailed home-cinema sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den kompromisløse og præcise lyd med højopløselige formater og en stærk 5.1-gengivelse.",
-        "simpleTitle": "Fyldig og detaljeret hjemmebiograflyd",
+       "rich, cinematic sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den fremragende og præcise lyd, den stærke hjemmebiografydelse og understøttelsen af højopløselige surroundformater.",
+        "simpleTitle": "Fyldig, biograflignende lyd",
         "bias": "positive",
         "key": "sound-quality",
-        "groupId": "312002a6-86ec-4556-9775-4e76a00781b3"
+        "groupId": "c4ec6ef3-ff16-4591-aa30-c033b68ffcfc"
+       },
+       "works well with TVs and projectors": {
+        "sentimentAnalysis": "HDMI-modulet integreres problemfrit med både en BenQ-projektor og et tv-setup, inklusive tv-fjernbetjening.",
+        "simpleTitle": "Fungerer godt med tv og projektorer",
+        "bias": "positive",
+        "key": "compatibility",
+        "groupId": "0dbceeee-937a-42c5-8b64-5ea0e847412c"
        }
       },
       "grouping": {
-       "e561c59c-e9c2-48de-abc0-5a9bc3de66e2": {
-        "title": "Kompatibilitet med tv og projektor",
-        "id": "e561c59c-e9c2-48de-abc0-5a9bc3de66e2",
-        "references": [
-         "b2361e86-3f3c-459b-8c7f-78c23a802ea2",
-         "c17cc554-cc84-4002-88d4-c601887c86a1",
-         "bdc2b701-c79e-4c26-9a17-ac22a300edda",
-         "de791f7e-72a7-4a27-99e4-a59f55c20aa0",
-         "bf0395d1-4431-4416-a2bd-870151264ab9",
-         "63a6e2b4-3262-4453-b206-314aac4ad523"
-        ]
-       },
-       "312002a6-86ec-4556-9775-4e76a00781b3": {
+       "c4ec6ef3-ff16-4591-aa30-c033b68ffcfc": {
         "title": "Lydkvalitet",
-        "id": "312002a6-86ec-4556-9775-4e76a00781b3",
+        "id": "c4ec6ef3-ff16-4591-aa30-c033b68ffcfc",
         "references": [
          "de791f7e-72a7-4a27-99e4-a59f55c20aa0",
          "bf0395d1-4431-4416-a2bd-870151264ab9",
          "7f9e3737-fb30-4f44-b20c-50c44c6ecf82"
+        ]
+       },
+       "0dbceeee-937a-42c5-8b64-5ea0e847412c": {
+        "title": "Kompatibilitet",
+        "id": "0dbceeee-937a-42c5-8b64-5ea0e847412c",
+        "references": [
+         "b2361e86-3f3c-459b-8c7f-78c23a802ea2",
+         "de791f7e-72a7-4a27-99e4-a59f55c20aa0"
         ]
        }
       },
