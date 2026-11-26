@@ -867,35 +867,107 @@
   Pn.recent = (n) => projShop().sort((a, b) => b.date - a.date).slice(0, n || 5);
   HP.on('loaded', () => syncSaved());
 
-  // the projects of the signed-in shop, with the shop at the top and Skift butik; other shops' projects on this PC behind a toggle
+  /* ---------- Åbn projekt: a file explorer (2026-11-26) ----------
+     Like a folder window in Windows or macOS: a folder tree on the left (Seneste, and Butikker with one folder per shop that has
+     projects on this PC), an address bar with back / forward / up and clickable folders (Butikker › HiFi Klubben Amager), a search
+     field that searches the open folder and the folders under it, and the projects as a list with sortable columns. Double-click or
+     Enter opens, Delete deletes, Backspace goes up a folder, Ctrl+F searches. Opens in the signed-in shop's folder. */
   Pn.projects = () => {
-    const list = h('.projlist'), sp = HP.shopProfile();
-    let others = false;
-    const otherCount = () => projAll().filter((p) => HP.shop() && p.shop !== HP.shop()).length;
-    const shopName = (no) => HP.shopProfile(no).name || t('Shop ', 'Butik ') + no;
-    const head = h('.proj-shop', null, h('span.proj-shop-ic', null, icon('store', 16)),
-      h('.pinfo', null, h('b', null, sp.name || (HP.shop() ? t('Shop ', 'Butik ') + HP.shop() : t('No shop', 'Ingen butik'))), h('.psub', null, (HP.shop() ? t('Shop ', 'Butik ') + HP.shop() + ' · ' : '') + (HP.seller() ? HP.seller().name : ''))),
-      h('button.btn.sm', { onclick: () => { close(); Pn.switchShop(); } }, icon('rotate', 13), t('Change shop', 'Skift butik')));
-    const otherBtn = h('button.linkbtn');
-    function draw() {
-      list.textContent = '';
-      const ps = others ? projAll() : projShop(), n = otherCount();
-      otherBtn.hidden = !n; otherBtn.textContent = others ? t('Show only this shop', 'Vis kun denne butik') : t('Projects from other shops on this PC ({})', 'Projekter fra andre butikker på denne PC ({})').replace('{}', n);
-      if (!ps.length) list.append(h('.empty', null, t('No saved projects for this shop in this browser yet.', 'Ingen gemte projekter for denne butik i denne browser endnu.')));
-      ps.sort((a, b) => b.date - a.date).forEach((p) => list.append(h('.proj' + (p.id === store.doc.prj ? '.cur' : ''), null,
-        h('.pinfo', null, h('.pname', null, p.name, others && p.shop !== HP.shop() ? h('span.ptag', null, shopName(p.shop)) : null),
-          h('.psub', null, when(p.date) + (p.by ? ' · ' + p.by : '') + ' · ' + nProducts(p.doc) + ' ' + t('products', 'produkter') + (p.plan ? ' · ' + t('floor plan', 'plantegning') : ''))),
-        (p.versions || []).length ? h('button.btn.sm', { title: t('Version history', 'Versionshistorik'), onclick: () => { close(); Pn.versions(p); } }, icon('history', 14), String(p.versions.length + 1)) : null,
-        p.id === store.doc.prj ? h('span.muted', null, t('open now', 'åben nu')) : h('button.btn.sm', { onclick: () => { Pn.openProject(p); close(); } }, t('Open', 'Åbn')),
-        h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: () => HP.confirm(t('Delete the project "{}"?', 'Slet projektet "{}"?').replace('{}', p.name), t('Delete', 'Slet'), () => { LS.set('projects', projAll().filter((x) => x.id !== p.id)); if (p.id === store.doc.prj) { delete store.doc.prj; syncSaved(); store.commit(); } draw(); }) }, icon('trash', 14)))));
+    const shopName = (no) => HP.shopProfile(no).name || (no ? t('Shop ', 'Butik ') + no : t('No shop', 'Ingen butik'));
+    const shopsOf = () => { const m = new Map(); if (HP.shop()) m.set(HP.shop(), 0); projAll().forEach((p) => m.set(p.shop || '', (m.get(p.shop || '') || 0) + 1)); return [...m].sort((a, b) => (a[0] === HP.shop() ? -1 : b[0] === HP.shop() ? 1 : shopName(a[0]).localeCompare(shopName(b[0])))); };
+    // a folder: { k: 'root' } (Butikker), { k: 'shop', no }, { k: 'recent' }
+    let cur = HP.shop() ? { k: 'shop', no: HP.shop() } : { k: 'root' }, back = [], fwd = [], q = '', sel = null, sort = { key: 'date', dir: -1 };
+    const same = (a, b) => a.k === b.k && a.no === b.no;
+    const label = (f) => (f.k === 'root' ? t('Shops', 'Butikker') : f.k === 'recent' ? t('Recent', 'Seneste') : shopName(f.no));
+    const go = (f, keep) => { if (same(f, cur)) return; if (!keep) { back.push(cur); fwd = []; } cur = f; q = ''; search.value = ''; sel = null; draw(); };
+    const up = () => { if (cur.k === 'shop') go({ k: 'root' }); };
+    // what the open folder holds: shop folders at the top level, projects in a shop folder; a search looks in the folders below too
+    const rows = () => {
+      const all = projAll(), needle = q.trim().toLowerCase();
+      const match = (p) => !needle || [p.name, p.by, shopName(p.shop)].some((x) => String(x || '').toLowerCase().includes(needle));
+      let projects = cur.k === 'recent' ? all.filter((p) => !HP.shop() || p.shop === HP.shop()).sort((a, b) => b.date - a.date).slice(0, 12)
+        : cur.k === 'shop' ? all.filter((p) => (p.shop || '') === cur.no) : needle ? all : [];
+      projects = projects.filter(match);
+      const k = sort.key, val = (p) => (k === 'name' ? p.name.toLowerCase() : k === 'by' ? String(p.by || '').toLowerCase() : k === 'n' ? nProducts(p.doc) : p.date);
+      if (cur.k !== 'recent') projects.sort((a, b) => (val(a) < val(b) ? -1 : val(a) > val(b) ? 1 : 0) * sort.dir);
+      const folders = cur.k === 'root' ? shopsOf().filter(([no]) => !needle || shopName(no).toLowerCase().includes(needle)).map(([no, n]) => ({ folder: { k: 'shop', no }, n })) : [];
+      return { folders, projects };
+    };
+    // the window's parts
+    const tree = h('.fx-tree'), crumbs = h('.fx-crumbs'), list = h('.fx-list', { tabIndex: 0 }), status = h('.fx-status');
+    const bBack = h('button.icon-btn', { title: t('Back', 'Tilbage'), onclick: () => { if (back.length) { fwd.push(cur); go(back.pop(), true); } } }, icon('chevron-left', 16));
+    const bFwd = h('button.icon-btn', { title: t('Forward', 'Frem'), onclick: () => { if (fwd.length) { back.push(cur); go(fwd.pop(), true); } } }, icon('chevron-right', 16));
+    const bUp = h('button.icon-btn', { title: t('Up one folder (Backspace)', 'Op en mappe (Backspace)'), onclick: up }, icon('arrow-up', 16));
+    const search = h('input.fx-search', { type: 'search', oninput: () => { q = search.value; sel = null; drawList(); } });
+    const treeRow = (f, ic, txt, n, depth) => h('button.fx-node' + (same(f, cur) ? '.on' : ''), { style: { paddingLeft: 10 + depth * 16 + 'px' }, onclick: () => go(f) },
+      icon(ic, 15), h('span.fx-node-t', null, txt), n != null ? h('span.fx-n', null, String(n)) : null);
+    function drawTree() {
+      tree.replaceChildren(treeRow({ k: 'recent' }, 'history', t('Recent', 'Seneste'), null, 0),
+        treeRow({ k: 'root' }, cur.k === 'root' || cur.k === 'shop' ? 'folder-open' : 'folder', t('Shops', 'Butikker'), null, 0),
+        ...shopsOf().map(([no, n]) => treeRow({ k: 'shop', no }, 'store', shopName(no), n, 1)));  // the signed-in shop first
     }
-    otherBtn.onclick = () => { others = !others; draw(); };
-    const close = HP.modal({ title: t('Open project', 'Åbn projekt'), size: 'md',
-      body: [head, list, otherBtn, h('p.muted', null, t('Projects are stored in this browser on this PC. Use Export to move a proposal to another PC or keep a backup. Your work is also autosaved continuously.', 'Projekter gemmes i denne browser på denne PC. Brug Eksportér for at flytte et tilbud til en anden PC eller tage en sikkerhedskopi. Dit arbejde gemmes også løbende af sig selv.'))],
-      foot: [h('button.btn', { onclick: () => { close(); Pn.saveAs(); } }, icon('download', 14), store.doc.prj ? t('Save as…', 'Gem som…') : t('Save current…', 'Gem nuværende…')),
+    function drawBar() {
+      bBack.disabled = !back.length; bFwd.disabled = !fwd.length; bUp.disabled = cur.k !== 'shop';
+      const path = cur.k === 'shop' ? [{ k: 'root' }, cur] : [cur];
+      crumbs.replaceChildren(icon(cur.k === 'recent' ? 'history' : 'folder', 15), ...path.flatMap((f, i) => [i ? h('span.fx-sep', null, icon('chevron-right', 13)) : null,
+        h('button.fx-crumb' + (i === path.length - 1 ? '.on' : ''), { onclick: () => go(f) }, label(f))]).filter(Boolean));
+      search.placeholder = t('Search in {}', 'Søg i {}').replace('{}', label(cur));
+    }
+    const col = (key, txt) => h('button.fx-col' + (sort.key === key ? '.on' : ''), { onclick: () => { sort = { key, dir: sort.key === key ? -sort.dir : key === 'date' ? -1 : 1 }; drawList(); } },
+      txt, sort.key === key ? icon(sort.dir > 0 ? 'chevron-up' : 'chevron-down', 12) : null);
+    let flat = [];
+    function drawList() {
+      const { folders, projects } = rows(), showShop = cur.k !== 'shop';
+      flat = [...folders.map((f) => ({ folder: f.folder })), ...projects.map((p) => ({ p }))];
+      list.replaceChildren(h('.fx-head', null, h('span'), col('name', t('Name', 'Navn')), col('date', t('Modified', 'Ændret')), col('by', t('Seller', 'Sælger')), col('n', t('Products', 'Produkter')), h('span')),
+        ...folders.map(({ folder, n }) => h('.fx-row.fx-dir' + (sel && sel.folder && same(sel.folder, folder) ? '.sel' : ''), { ondblclick: () => go(folder), onclick: () => { sel = { folder }; drawList(); } },
+          h('span.fx-ic', null, icon('folder', 17)), h('span.fx-name', null, label(folder), folder.no === HP.shop() ? h('span.ptag', null, t('your shop', 'din butik')) : null),
+          h('span.fx-mut'), h('span.fx-mut'), h('span.fx-mut', null, n + ' ' + t('projects', 'projekter')), h('span'))),
+        ...projects.map((p) => {
+          const open = p.id === store.doc.prj, isSel = sel && sel.p && sel.p.id === p.id;
+          return h('.fx-row' + (isSel ? '.sel' : '') + (open ? '.cur' : ''), { ondblclick: () => openIt(p), onclick: () => { sel = { p }; drawList(); } },
+            h('span.fx-ic.file', null, icon('file', 17)),
+            h('span.fx-name', null, h('span.fx-ellip', null, p.name), showShop ? h('span.ptag', null, shopName(p.shop)) : null, open ? h('span.ptag.open', null, t('open now', 'åben nu')) : null),
+            h('span.fx-mut', null, when(p.date)), h('span.fx-mut', null, p.by || '–'), h('span.fx-mut', null, String(nProducts(p.doc))),
+            h('span.fx-acts', null,
+              (p.versions || []).length ? h('button.icon-btn', { title: t('Version history', 'Versionshistorik') + ' (' + (p.versions.length + 1) + ')', onclick: (e) => { e.stopPropagation(); close(); Pn.versions(p); } }, icon('history', 14)) : null,
+              h('button.icon-btn', { title: t('Delete', 'Slet'), onclick: (e) => { e.stopPropagation(); del(p); } }, icon('trash', 14)),
+              open ? null : h('button.btn.sm', { onclick: (e) => { e.stopPropagation(); openIt(p); } }, t('Open', 'Åbn'))));
+        }));
+      if (!flat.length) list.append(h('.fx-empty', null, q ? t('Nothing matches "{}" here.', 'Intet matcher "{}" her.').replace('{}', q) : cur.k === 'root' ? t('No shops with projects yet.', 'Ingen butikker med projekter endnu.') : t('No projects in this folder yet. Save one with Filer → Save.', 'Ingen projekter i denne mappe endnu. Gem et med Filer → Gem.')));
+      status.textContent = (folders.length ? folders.length + ' ' + (folders.length === 1 ? t('folder', 'mappe') : t('folders', 'mapper')) + (projects.length ? ' · ' : '') : '') + (projects.length || !folders.length ? projects.length + ' ' + (projects.length === 1 ? t('project', 'projekt') : t('projects', 'projekter')) : '') + (q ? ' · ' + t('search', 'søgning') : '');
+      const s = list.querySelector('.fx-row.sel'); if (s) s.scrollIntoView({ block: 'nearest' });
+    }
+    function draw() { drawTree(); drawBar(); drawList(); }
+    const openIt = (p) => { close(); Pn.openProject(p); };
+    const del = (p) => HP.confirm(t('Delete the project "{}"?', 'Slet projektet "{}"?').replace('{}', p.name), t('Delete', 'Slet'), () => {
+      LS.set('projects', projAll().filter((x) => x.id !== p.id)); if (p.id === store.doc.prj) { delete store.doc.prj; syncSaved(); HP.emit('doc'); } sel = null; draw();
+    });
+    // keyboard, as in a folder window
+    const onKey = (e) => {
+      const inSearch = e.target === search;
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') { e.preventDefault(); search.focus(); search.select(); return; }
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault(); if (!flat.length) return;
+        const i = flat.findIndex((r) => (sel && sel.p && r.p && r.p.id === sel.p.id) || (sel && sel.folder && r.folder && same(r.folder, sel.folder)));
+        sel = flat[Math.max(0, Math.min(flat.length - 1, i < 0 ? 0 : i + (e.key === 'ArrowDown' ? 1 : -1)))]; drawList(); return;
+      }
+      if (e.key === 'Enter') { const s = sel || (inSearch && flat.length === 1 ? flat[0] : null); if (!s) return; e.preventDefault(); if (s.folder) go(s.folder); else openIt(s.p); return; }
+      if (inSearch) return;
+      if (e.key === 'Backspace') { e.preventDefault(); up(); }
+      else if (e.key === 'Delete' && sel && sel.p) { e.preventDefault(); del(sel.p); }
+    };
+    const body = h('.fx', { onkeydown: onKey },
+      h('.fx-bar', null, h('.fx-nav', null, bBack, bFwd, bUp), crumbs, h('label.fx-searchbox', null, icon('search', 14), search)),
+      h('.fx-main', null, tree, list));
+    const close = HP.modal({ title: t('Open project', 'Åbn projekt'), size: 'lg.fxw', flush: true, body,
+      foot: [status, h('.spacer'),
+        h('button.btn', { title: t('Signed in as {}', 'Logget ind som {}').replace('{}', shopName(HP.shop())), onclick: () => { close(); Pn.switchShop(); } }, icon('store', 14), t('Change shop', 'Skift butik')),
         h('button.btn', { onclick: () => { close(); Pn.importFile(); } }, icon('upload', 14), t('Import file', 'Importér fil')),
-        h('button.btn', { onclick: Pn.exportFile }, icon('download', 14), t('Export file', 'Eksportér fil'))] });
+        h('button.btn', { onclick: Pn.exportFile }, icon('download', 14), t('Export file', 'Eksportér fil')),
+        h('button.btn', { onclick: () => { close(); Pn.saveAs(); } }, icon('download', 14), store.doc.prj ? t('Save as…', 'Gem som…') : t('Save current…', 'Gem nuværende…'))] });
     draw();
+    setTimeout(() => list.focus(), 40); // arrows and Enter work at once; Ctrl+F for the search field
   };
 
   /* ---------- how old the prices are (the warning chip in the top bar) ---------- */

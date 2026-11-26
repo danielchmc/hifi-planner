@@ -975,5 +975,20 @@
   "Change shop": "Vaihda myymälää",
   "Show only this shop": "Näytä vain tämä myymälä",
   "Projects from other shops on this PC ({})": "Muiden myymälöiden projektit tällä koneella ({})",
-  "No saved projects for this shop in this browser yet.": "Tälle myymälälle ei ole vielä tallennettuja projekteja tässä selaimessa."
+  "No saved projects for this shop in this browser yet.": "Tälle myymälälle ei ole vielä tallennettuja projekteja tässä selaimessa.",
+  "Shops": "Myymälät",
+  "Forward": "Eteenpäin",
+  "Up one folder (Backspace)": "Yksi kansio ylös (Askelpalautin)",
+  "Search in {}": "Hae kohteesta {}",
+  "Modified": "Muokattu",
+  "your shop": "oma myymälä",
+  "projects": "projektia",
+  "project": "projekti",
+  "folder": "kansio",
+  "folders": "kansiota",
+  "search": "haku",
+  "Nothing matches \"{}\" here.": "Mikään ei vastaa hakua \"{}\" täällä.",
+  "No shops with projects yet.": "Ei vielä myymälöitä, joilla on projekteja.",
+  "No projects in this folder yet. Save one with Filer → Save.": "Tässä kansiossa ei ole vielä projekteja. Tallenna yksi kohdasta Tiedosto → Tallenna.",
+  "Signed in as {}": "Kirjautuneena: {}"
 };

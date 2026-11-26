@@ -975,5 +975,20 @@
   "Change shop": "Geschäft wechseln",
   "Show only this shop": "Nur dieses Geschäft zeigen",
   "Projects from other shops on this PC ({})": "Projekte anderer Geschäfte auf diesem PC ({})",
-  "No saved projects for this shop in this browser yet.": "Noch keine gespeicherten Projekte für dieses Geschäft in diesem Browser."
+  "No saved projects for this shop in this browser yet.": "Noch keine gespeicherten Projekte für dieses Geschäft in diesem Browser.",
+  "Shops": "Geschäfte",
+  "Forward": "Vorwärts",
+  "Up one folder (Backspace)": "Einen Ordner nach oben (Rücktaste)",
+  "Search in {}": "Suchen in {}",
+  "Modified": "Geändert",
+  "your shop": "Ihr Geschäft",
+  "projects": "Projekte",
+  "project": "Projekt",
+  "folder": "Ordner",
+  "folders": "Ordner",
+  "search": "Suche",
+  "Nothing matches \"{}\" here.": "Hier passt nichts zu „{}\".",
+  "No shops with projects yet.": "Noch keine Geschäfte mit Projekten.",
+  "No projects in this folder yet. Save one with Filer → Save.": "Noch keine Projekte in diesem Ordner. Speichern Sie eines mit Datei → Speichern.",
+  "Signed in as {}": "Angemeldet als {}"
 };

@@ -975,5 +975,20 @@
   "Change shop": "Winkel wisselen",
   "Show only this shop": "Alleen deze winkel tonen",
   "Projects from other shops on this PC ({})": "Projecten van andere winkels op deze pc ({})",
-  "No saved projects for this shop in this browser yet.": "Nog geen opgeslagen projecten voor deze winkel in deze browser."
+  "No saved projects for this shop in this browser yet.": "Nog geen opgeslagen projecten voor deze winkel in deze browser.",
+  "Shops": "Winkels",
+  "Forward": "Vooruit",
+  "Up one folder (Backspace)": "Eén map omhoog (Backspace)",
+  "Search in {}": "Zoeken in {}",
+  "Modified": "Gewijzigd",
+  "your shop": "uw winkel",
+  "projects": "projecten",
+  "project": "project",
+  "folder": "map",
+  "folders": "mappen",
+  "search": "zoekopdracht",
+  "Nothing matches \"{}\" here.": "Niets komt hier overeen met \"{}\".",
+  "No shops with projects yet.": "Nog geen winkels met projecten.",
+  "No projects in this folder yet. Save one with Filer → Save.": "Nog geen projecten in deze map. Sla er een op met Bestand → Opslaan.",
+  "Signed in as {}": "Ingelogd als {}"
 };

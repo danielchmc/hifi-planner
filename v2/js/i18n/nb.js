@@ -975,5 +975,20 @@
   "Change shop": "Bytt butikk",
   "Show only this shop": "Vis bare denne butikken",
   "Projects from other shops on this PC ({})": "Prosjekter fra andre butikker på denne PC-en ({})",
-  "No saved projects for this shop in this browser yet.": "Ingen lagrede prosjekter for denne butikken i denne nettleseren ennå."
+  "No saved projects for this shop in this browser yet.": "Ingen lagrede prosjekter for denne butikken i denne nettleseren ennå.",
+  "Shops": "Butikker",
+  "Forward": "Fremover",
+  "Up one folder (Backspace)": "Opp én mappe (Backspace)",
+  "Search in {}": "Søk i {}",
+  "Modified": "Endret",
+  "your shop": "din butikk",
+  "projects": "prosjekter",
+  "project": "prosjekt",
+  "folder": "mappe",
+  "folders": "mapper",
+  "search": "søk",
+  "Nothing matches \"{}\" here.": "Ingenting passer til \"{}\" her.",
+  "No shops with projects yet.": "Ingen butikker med prosjekter ennå.",
+  "No projects in this folder yet. Save one with Filer → Save.": "Ingen prosjekter i denne mappen ennå. Lagre et med Fil → Lagre.",
+  "Signed in as {}": "Logget inn som {}"
 };

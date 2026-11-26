@@ -975,5 +975,20 @@
   "Change shop": "Byt butik",
   "Show only this shop": "Visa bara den här butiken",
   "Projects from other shops on this PC ({})": "Projekt från andra butiker på den här datorn ({})",
-  "No saved projects for this shop in this browser yet.": "Inga sparade projekt för den här butiken i den här webbläsaren ännu."
+  "No saved projects for this shop in this browser yet.": "Inga sparade projekt för den här butiken i den här webbläsaren ännu.",
+  "Shops": "Butiker",
+  "Forward": "Framåt",
+  "Up one folder (Backspace)": "Upp en mapp (Backspace)",
+  "Search in {}": "Sök i {}",
+  "Modified": "Ändrad",
+  "your shop": "din butik",
+  "projects": "projekt",
+  "project": "projekt",
+  "folder": "mapp",
+  "folders": "mappar",
+  "search": "sökning",
+  "Nothing matches \"{}\" here.": "Inget matchar \"{}\" här.",
+  "No shops with projects yet.": "Inga butiker med projekt ännu.",
+  "No projects in this folder yet. Save one with Filer → Save.": "Inga projekt i den här mappen ännu. Spara ett med Arkiv → Spara.",
+  "Signed in as {}": "Inloggad som {}"
 };
