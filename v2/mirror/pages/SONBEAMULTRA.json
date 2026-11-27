@@ -187,6 +187,12 @@
    "url": "/tv/soundbar-hojtaler-tv-lyd/",
    "id": 69786
   },
+  "stockItemAlternative": {
+   "save": "500,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SONBEAMULTRA",
+   "availableQuantity": 1,
+   "lowestPrice": "5.190,-"
+  },
   "variants": [
    {
     "id": 293183,
@@ -249,7 +255,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 582,
+     "availableQuantity": 547,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,7 +363,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 305,
+     "availableQuantity": 292,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -445,51 +451,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 8689,
-     "priceFormatted": "8.689,-",
-     "priceBefore": 9439,
-     "priceBeforeFormatted": "9.439,-",
-     "priceSavingsFormatted": "750,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8689,
-     "unitPriceBefore": 9439
-    },
-    "image": "https://images.hifiklubben.com/image/5bee8251-e304-4518-b071-e434a9b00652",
-    "ribbons": [
-     {
-      "text": "Spar 8%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Beam Ultra + Sub Mini",
-    "url": "/sonbeamultra-submini/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
      "price": 12069,
      "priceFormatted": "12.069,-",
-     "priceBefore": 12819,
-     "priceBeforeFormatted": "12.819,-",
-     "priceSavingsFormatted": "750,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12069,
-     "unitPriceBefore": 12819
+     "unitPriceBefore": 12069
     },
     "image": "https://images.hifiklubben.com/image/2482252b-9ba2-40fd-96ec-48b35a8cb4b7",
     "ribbons": [
      {
-      "text": "Spar 6%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -514,6 +487,31 @@
     "image": "https://images.hifiklubben.com/image/d8950bff-41d0-4254-956d-966a7de08320",
     "title": "Beam Ultra + Era 100",
     "url": "/sonbeamultra-era100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 8689,
+     "priceFormatted": "8.689,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8689,
+     "unitPriceBefore": 8689
+    },
+    "image": "https://images.hifiklubben.com/image/5bee8251-e304-4518-b071-e434a9b00652",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Beam Ultra + Sub Mini",
+    "url": "/sonbeamultra-submini/"
    }
   ],
   "displayBookDemo": true,

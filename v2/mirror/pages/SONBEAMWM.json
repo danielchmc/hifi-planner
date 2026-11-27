@@ -113,7 +113,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 17,
-     "availableQuantity": 163,
+     "availableQuantity": 143,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -188,7 +188,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 113,
+     "availableQuantity": 103,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -215,37 +215,38 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONBEAMWM roses bredt som et elegant, solidt og pladsbesparende beslag, der passer perfekt til Sonos Beam. Monteringen er som regel hurtig og enkel, med et slankt, næsten usynligt design og praktisk kabelhåndtering. Et sjældent tilfælde med mislykket installation viser, at vejledningen eller kompatibiliteten ikke fungerer perfekt i alle tilfælde, men helhedsindtrykket er stadig meget positivt.",
+   "summary": "SONBEAMWM roses bredt som en slank og attraktiv hylde eller holder, der passer perfekt til Sonos Beam, også under et fjernsyn. Monteringen opleves generelt som hurtig og nem, mens konstruktionen føles solid og gennemtænkt med praktisk plads til kabelføring. Det kompakte design holder opsætningen diskret og stilfuld, selv om én monteringsoplevelse var markant mislykket.",
    "headlines": {
-    "sleek, discreet design that fits the Beam beautifully": {
-     "sentimentAnalysis": "Beslaget beskrives gentagne gange som flot, slankt og diskret og som et særligt godt visuelt match til Sonos Beam.",
-     "simpleTitle": "Elegant, diskret design, der passer perfekt til Beam",
+    "a sleek, discreet fit for the Sonos Beam": {
+     "sentimentAnalysis": "Det slanke, næsten usynlige design og den præcise pasform roses gentagne gange, især til placering under et fjernsyn og sammen med Sonos Beam.",
+     "simpleTitle": "Elegant og diskret pasform til Sonos Beam",
      "bias": "positive",
-     "key": "design-fit",
-     "groupId": "52195a54-e97a-4ca3-abdb-325d75e6b30a"
+     "key": "design_fit",
+     "groupId": "ba9dbeab-aed7-4df2-b36d-88e72d48a8b1"
     },
-    "usually quick and easy to install": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den problemfri og ukomplicerede montering.",
-     "simpleTitle": "Som regel hurtig og nem at montere",
+    "quick and easy to install": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver monteringen som nem og ukompliceret.",
+     "simpleTitle": "Hurtig og nem at montere",
      "bias": "positive",
      "key": "installation",
-     "groupId": "35d26579-5a77-49ff-8d18-6d28847882e5"
+     "groupId": "79f56041-95de-4c3a-b41d-82e67c276bd2"
     },
-    "solid construction with practical cable space": {
-     "sentimentAnalysis": "Anmeldelserne udtrykker tillid til den solide konstruktion og gode kvalitet, mens én især fremhæver pladsen til kabelføring.",
-     "simpleTitle": "Solid konstruktion med praktisk plads til kabler",
+    "solid, well-thought-out construction": {
+     "sentimentAnalysis": "Beslaget opfattes som solidt og gennemtænkt, og pladsen til kabler giver ekstra praktisk værdi.",
+     "simpleTitle": "Solid og gennemtænkt konstruktion",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "532f5ca8-8ed0-4a29-bf38-e2fa8220ed45"
+     "key": "build_quality",
+     "groupId": "642ebba9-9986-4dca-b5e0-de59ef6fd3d8"
     }
    },
    "grouping": {
-    "52195a54-e97a-4ca3-abdb-325d75e6b30a": {
+    "ba9dbeab-aed7-4df2-b36d-88e72d48a8b1": {
      "title": "Design og pasform",
-     "id": "52195a54-e97a-4ca3-abdb-325d75e6b30a",
+     "id": "ba9dbeab-aed7-4df2-b36d-88e72d48a8b1",
      "references": [
       "15acdf0b-4a6c-43bb-bba7-eca0f96e1321",
       "c883007c-e2f1-4c74-be67-c7c931053f90",
+      "2ffd7209-e519-4922-9f80-667a9dbc45e5",
       "5216c60f-459d-4ef4-a2e1-221c2babdb82",
       "bc2ce708-d927-40ca-bd7b-68b8cfbf7a83",
       "bb662566-65c3-40ff-9caf-dbdeb45788f1",
@@ -254,9 +255,9 @@
       "7ffb1b13-5389-4266-89ff-44429b9f4f7d"
      ]
     },
-    "35d26579-5a77-49ff-8d18-6d28847882e5": {
+    "79f56041-95de-4c3a-b41d-82e67c276bd2": {
      "title": "Montering",
-     "id": "35d26579-5a77-49ff-8d18-6d28847882e5",
+     "id": "79f56041-95de-4c3a-b41d-82e67c276bd2",
      "references": [
       "1f35d4cd-6d73-4dad-9d85-25d47e085164",
       "048669f2-614d-4342-bcb2-809ca4ef49a9",
@@ -265,9 +266,9 @@
       "f756b23f-2183-45c6-9cdb-f71959b30e68"
      ]
     },
-    "532f5ca8-8ed0-4a29-bf38-e2fa8220ed45": {
+    "642ebba9-9986-4dca-b5e0-de59ef6fd3d8": {
      "title": "Byggekvalitet",
-     "id": "532f5ca8-8ed0-4a29-bf38-e2fa8220ed45",
+     "id": "642ebba9-9986-4dca-b5e0-de59ef6fd3d8",
      "references": [
       "2ffd7209-e519-4922-9f80-667a9dbc45e5",
       "2b5a29d5-26f0-488a-b032-cd2340d452e4",

@@ -207,59 +207,61 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "SONLINEINADAPT gør det nemt og pålideligt at føre pladespillere og andre Line-In-kilder ind i et Sonos-system med varm, behagelig og omsluttende lyd. Kompatibilitet og daglig brug roses i mange anmeldelser, og afspilningen fungerer problemfrit på Era-, Move- og andre Sonos-højttalere. Det proprietære design og den forholdsvis høje pris kritiseres, mens lejlighedsvise signaludfald, den begrænsede kabellængde og mærkbar forsinkelse begrænser fleksibiliteten.",
+   "summary": "SONLINEINADAPT bringer pladespillere og andre analoge kilder effektivt ind i et Sonos-system og leverer varm, klar og omsluttende lyd. Tilslutning og opsætning er generelt problemfri, med bred kompatibilitet med Era-, Move- og andre Sonos-højttalere. Det proprietære design og den relativt høje pris er frustrerende, mens lejlighedsvise signaludfald og mærkbar forsinkelse begrænser visse live- og videoanvendelser.",
    "headlines": {
-    "reliable plug-and-play operation": {
-     "sentimentAnalysis": "Adapteren opfattes generelt som pålidelig og enkel og gør præcis det, den skal.",
-     "simpleTitle": "Pålidelig plug-and-play-brug",
+    "reliable connection for turntables and analogue sources": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en pålidelig plug-and-play-funktion til tilslutning af pladespillere og analogt udstyr til Sonos-højttalere.",
+     "simpleTitle": "Pålidelig forbindelse til pladespillere og analoge kilder",
      "bias": "positive",
-     "key": "reliable_operation",
-     "groupId": "975f163f-2038-4908-b3d6-22ba4aaef6b7"
+     "key": "reliable_connection",
+     "groupId": "ced727b0-8013-46de-ae4c-77b59704f461"
     },
-    "excellent turntable connectivity": {
-     "sentimentAnalysis": "Adapteren gør det nemt at tilslutte pladespillere, også modeller med forforstærker, til Sonos-højttalere og genoptage vinylafspilning.",
-     "simpleTitle": "Fremragende pladespillerforbindelse",
-     "bias": "positive",
-     "key": "turntable_connectivity",
-     "groupId": "975f163f-2038-4908-b3d6-22ba4aaef6b7"
-    },
-    "high price and forced proprietary purchase": {
-     "sentimentAnalysis": "Flere anmeldelser finder adapteren dyr og kritiserer, at Sonos kræver en proprietær dongle frem for billigere tredjepartsløsninger.",
-     "simpleTitle": "Høj pris og tvunget proprietært køb",
+    "expensive proprietary requirement": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer den høje pris og kravet om en Sonos-specifik adapter i stedet for billigere alternativer fra tredjeparter.",
+     "simpleTitle": "Dyr proprietær løsning",
      "bias": "negative",
-     "key": "high_proprietary_cost",
-     "groupId": "f614af4c-3d57-4356-a5ec-126f6d0f33e4"
+     "key": "expensive_proprietary",
+     "groupId": "e9ac1092-af51-46a2-b29f-cb1c85c36988"
     },
-    "warm, detailed and enjoyable sound": {
-     "sentimentAnalysis": "Lydkvaliteten roses som meget god med behagelig, omsluttende gengivelse, der bevarer vinylens charme.",
-     "simpleTitle": "Varm, detaljeret og behagelig lyd",
+    "warm, clear sound from vinyl playback": {
+     "sentimentAnalysis": "Adapteren giver en behagelig lytteoplevelse i høj kvalitet med nostalgisk præg, når vinyl afspilles via Sonos.",
+     "simpleTitle": "Varm og klar lyd fra vinylafspilning",
      "bias": "positive",
-     "key": "enjoyable_sound",
-     "groupId": "9a83eff7-7b9d-4914-a179-7581187235d7"
+     "key": "warm_clear_sound",
+     "groupId": "ba9ab04f-b62b-4196-8f49-5b9f9607a6a0"
+    },
+    "occasional signal dropouts": {
+     "sentimentAnalysis": "Lyden er generelt god, men rapporterede udfald og forsinket afspilning svækker tilliden ved krævende anvendelser.",
+     "simpleTitle": "Lejlighedsvise signaludfald",
+     "bias": "negative",
+     "key": "signal_dropouts",
+     "groupId": "ba9ab04f-b62b-4196-8f49-5b9f9607a6a0"
     }
    },
    "grouping": {
-    "975f163f-2038-4908-b3d6-22ba4aaef6b7": {
-     "title": "Kompatibilitet og brug",
-     "id": "975f163f-2038-4908-b3d6-22ba4aaef6b7",
+    "ced727b0-8013-46de-ae4c-77b59704f461": {
+     "title": "Funktionalitet og kompatibilitet",
+     "id": "ced727b0-8013-46de-ae4c-77b59704f461",
      "references": [
+      "d83a3b52-9fb1-472a-b840-e0a88bd2138c",
       "33df0b2c-7ec1-4ece-8101-5bcf12da7b54",
-      "27d400e9-ed75-43fb-a9f3-a6850df408ed",
+      "cda046e4-601f-4791-ba83-e802db5ad031",
       "bd2b931a-b8dd-4815-b1d9-4287415d12ca",
       "024a72ef-c5b4-45ec-afd7-6185243cbb33",
       "b3406a44-6f5e-46d1-85b4-0e35e0c7eee6",
       "120786c1-9e54-4b90-86eb-2fa9bef30c4e",
       "ce7b1006-a96b-4281-8d0a-c18a93873acb",
+      "9ac463f9-9cde-4601-90fd-45b863d135be",
       "17f37558-b206-47c5-9914-27ebecbb4510",
       "f14b6c0d-04d9-4320-b61a-fe5a7d578c7b",
       "031030fb-e908-46a5-ab4a-83e679dc5713",
       "b6250ff3-7f52-4ab0-a328-b6dc6fa0257a",
+      "e437ea1c-7a79-42ad-b109-940bf7cada80",
       "41faac91-9db3-4f06-9bef-f4091f037f19",
       "828ce074-0907-4dee-8cb4-6d074cceb12d",
       "0c9ec82b-5a90-479b-bef2-50dc57454512",
       "f2aef8e7-9613-45dd-8e75-358f395da5b0",
       "31b19dcd-e949-4dd0-a0a5-13e76f030c83",
-      "9a9f7b55-72df-4688-ab7c-5fa0439aee94",
       "009318f0-e9df-4d58-bd66-d257566afb4f",
       "72d0a988-f356-4368-a05c-a2d2217379d1",
       "a71f1e57-33ff-450d-9894-6c2fb8a8bc24",
@@ -268,23 +270,24 @@
       "0bb9fe38-4291-42b1-8f97-46ebb2568348",
       "12caf886-67ad-4425-9bcd-54056e653c26",
       "3dd689d6-7b1d-4249-9947-ea1ad3b9027a",
+      "2c98ffbd-f9b1-4f47-a946-02a6b2089607",
       "01f73341-9d75-400b-8641-07fbeb0f3e32"
      ]
     },
-    "f614af4c-3d57-4356-a5ec-126f6d0f33e4": {
+    "e9ac1092-af51-46a2-b29f-cb1c85c36988": {
      "title": "Pris og proprietært design",
-     "id": "f614af4c-3d57-4356-a5ec-126f6d0f33e4",
+     "id": "e9ac1092-af51-46a2-b29f-cb1c85c36988",
      "references": [
       "cb67a858-bd6c-44bd-8f4f-dd484aca8792",
       "9ac463f9-9cde-4601-90fd-45b863d135be",
-      "ff8b4d82-9594-4d69-98eb-10989c118e34",
+      "ff8b4d82-9598-4d69-98eb-10989c118e34",
       "f5f14295-8344-40b0-8d6c-3287559eaec3",
       "a2580426-bcfb-4ee5-97b8-d8daecabd5b1"
      ]
     },
-    "9a83eff7-7b9d-4914-a179-7581187235d7": {
+    "ba9ab04f-b62b-4196-8f49-5b9f9607a6a0": {
      "title": "Lydkvalitet",
-     "id": "9a83eff7-7b9d-4914-a179-7581187235d7",
+     "id": "ba9ab04f-b62b-4196-8f49-5b9f9607a6a0",
      "references": [
       "27d400e9-ed75-43fb-a9f3-a6850df408ed",
       "04ddf1ff-cd54-4b14-a2c5-e4bda64bc130",

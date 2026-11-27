@@ -74,6 +74,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Dolby Atmos \nTouch-knapper på topplade til basale funktioner\nNem opsætning via BT-LE og Sonos app\nKan overføre lyden til Sonos Ace høretelefoner via Sound Swap \nKan udbygges med trådløs Sonos subwoofer og trådløse Sonos surround baghøjtalere \n15 indbyggede digitale Klasse D-forstærkere \nSound Motion teknologi\nIndbyggede højtalere: Heart Motion basenhed med dobbeltmembran, 6 x bas/mellemtone, 7 x softdome diskant \nUnderstøtter Trueplay rumkorrektion via indbygget mikrofon og Sonos app (iOS/Android)\nApple AirPlay 2 (kræver iOS 11.4 eller højere)\nMax. opløsning for musik i stereo: 24-bit/48 kHz\nHDMI med eARC\nHjemmebio lydformater: Dolby Atmos, Dolby True HD, DTS, PCM m.fl.\nStemmestyring via 4 indbyggede mikrofoner (Amazon Alexa), Apple Siri via iOS/AirPlay. Mikrofon kan tændes og slukkes på højtaleren.\nNight Sound \nInfrarød modtager (IR) til brug sammen med ældre TV uden HDMI/ARC \nIndbygget wi-fi (WiFi 6, 802.11b/g/n/ac/ax, 2,4/5 GHz)\nEthernet-tilslutning, RJ-45, 10/100Mbps\nStrømforbrug i netværksstandby: 4,6 watt\nDedikeret vægbeslag og HDMI-til-optisk adapter fås som ekstraudstyr\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -150,15 +159,6 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Dolby Atmos \nTouch-knapper på topplade til basale funktioner\nNem opsætning via BT-LE og Sonos app\nKan overføre lyden til Sonos Ace høretelefoner via Sound Swap \nKan udbygges med trådløs Sonos subwoofer og trådløse Sonos surround baghøjtalere \n15 indbyggede digitale Klasse D-forstærkere \nSound Motion teknologi\nIndbyggede højtalere: Heart Motion basenhed med dobbeltmembran, 6 x bas/mellemtone, 7 x softdome diskant \nUnderstøtter Trueplay rumkorrektion via indbygget mikrofon og Sonos app (iOS/Android)\nApple AirPlay 2 (kræver iOS 11.4 eller højere)\nMax. opløsning for musik i stereo: 24-bit/48 kHz\nHDMI med eARC\nHjemmebio lydformater: Dolby Atmos, Dolby True HD, DTS, PCM m.fl.\nStemmestyring via 4 indbyggede mikrofoner (Amazon Alexa), Apple Siri via iOS/AirPlay. Mikrofon kan tændes og slukkes på højtaleren.\nNight Sound \nInfrarød modtager (IR) til brug sammen med ældre TV uden HDMI/ARC \nIndbygget wi-fi (WiFi 6, 802.11b/g/n/ac/ax, 2,4/5 GHz)\nEthernet-tilslutning, RJ-45, 10/100Mbps\nStrømforbrug i netværksstandby: 4,6 watt\nDedikeret vægbeslag og HDMI-til-optisk adapter fås som ekstraudstyr\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. "
-     }
-    ]
-   },
-   {
     "index": 12,
     "title": "Streaming",
     "content": [
@@ -188,19 +188,14 @@
      "priceValueId": 1219407,
      "price": 6379,
      "priceFormatted": "6.379,-",
-     "priceBefore": 8249,
-     "priceBeforeFormatted": "8.249,-",
-     "priceSavingsFormatted": "1.870,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 6379,
-     "unitPriceBefore": 8249
+     "unitPrice": 6379
     },
     "ribbons": [
      {
-      "text": "Spar 23%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -246,7 +241,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 1044,
+     "availableQuantity": 641,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -310,19 +305,14 @@
      "priceValueId": 1219412,
      "price": 6379,
      "priceFormatted": "6.379,-",
-     "priceBefore": 8249,
-     "priceBeforeFormatted": "8.249,-",
-     "priceSavingsFormatted": "1.870,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 6379,
-     "unitPriceBefore": 8249
+     "unitPrice": 6379
     },
     "ribbons": [
      {
-      "text": "Spar 23%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -368,7 +358,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 317,
+     "availableQuantity": 181,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -589,167 +579,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 7878,
-     "priceFormatted": "7.878,-",
-     "priceBefore": 11139,
-     "priceBeforeFormatted": "11.139,-",
-     "priceSavingsFormatted": "3.261,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 7878,
-     "unitPriceBefore": 11139
-    },
-    "image": "https://images.hifiklubben.com/image/67268113-66c3-4ac1-8bfa-5ff15047a445",
-    "ribbons": [
-     {
-      "text": "Spar 29%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "ACE + ARC Ultra",
-    "url": "/sonace-sonarcultra/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 8628,
-     "priceFormatted": "8.628,-",
-     "priceBefore": 11247,
-     "priceBeforeFormatted": "11.247,-",
-     "priceSavingsFormatted": "2.619,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8628,
-     "unitPriceBefore": 11247
-    },
-    "image": "https://images.hifiklubben.com/image/d30c0510-83c4-4621-9bb8-2f877d2e2ed9",
-    "ribbons": [
-     {
-      "text": "Spar 23%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Era 100 SL",
-    "url": "/sonarcultra-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 11627,
-     "priceFormatted": "11.627,-",
-     "priceBefore": 14996,
-     "priceBeforeFormatted": "14.996,-",
-     "priceSavingsFormatted": "3.369,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 11627,
-     "unitPriceBefore": 14996
-    },
-    "image": "https://images.hifiklubben.com/image/060bd159-9729-442e-b61c-f1d1da6539d6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub Mini + Era 100 SL",
-    "url": "/ultra-mini-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 14577,
-     "priceFormatted": "14.577,-",
-     "priceBefore": 18696,
-     "priceBeforeFormatted": "18.696,-",
-     "priceSavingsFormatted": "4.119,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 14577,
-     "unitPriceBefore": 18696
-    },
-    "image": "https://images.hifiklubben.com/image/305079cf-bfa6-4a19-acf6-777a0e5063b6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub G4 + Era 100 SL",
-    "url": "/ultra-subg4-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 9378,
-     "priceFormatted": "9.378,-",
-     "priceBefore": 11998,
-     "priceBeforeFormatted": "11.998,-",
-     "priceSavingsFormatted": "2.620,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 9378,
-     "unitPriceBefore": 11998
-    },
-    "image": "https://images.hifiklubben.com/image/bab7be79-4d41-4b8f-9bf4-f42cbcd8fe5e",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub Mini",
-    "url": "/sonarcultra-sonsubmini/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
      "price": 12328,
      "priceFormatted": "12.328,-",
-     "priceBefore": 15698,
-     "priceBeforeFormatted": "15.698,-",
-     "priceSavingsFormatted": "3.370,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12328,
-     "unitPriceBefore": 15698
+     "unitPriceBefore": 12328
     },
     "image": "https://images.hifiklubben.com/image/af94aed2-1951-474e-a4e5-eda357476a9a",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -763,22 +604,43 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
+     "price": 7878,
+     "priceFormatted": "7.878,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 7878,
+     "unitPriceBefore": 7878
+    },
+    "image": "https://images.hifiklubben.com/image/67268113-66c3-4ac1-8bfa-5ff15047a445",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "ACE + ARC Ultra",
+    "url": "/sonace-sonarcultra/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
      "price": 12937,
      "priceFormatted": "12.937,-",
-     "priceBefore": 16447,
-     "priceBeforeFormatted": "16.447,-",
-     "priceSavingsFormatted": "3.510,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12937,
-     "unitPriceBefore": 16447
+     "unitPriceBefore": 12937
     },
     "image": "https://images.hifiklubben.com/image/0bdf5ce5-bb9a-405d-b98e-600e83ddf62f",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -792,22 +654,43 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
+     "price": 9759,
+     "priceFormatted": "9.759,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 9759,
+     "unitPriceBefore": 9759
+    },
+    "image": "https://images.hifiklubben.com/image/b2671737-31b7-4752-8f02-fef65a3dc323",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Arc Ultra + Era 100",
+    "url": "/sonarcultra-era100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
      "price": 18886,
      "priceFormatted": "18.886,-",
-     "priceBefore": 23896,
-     "priceBeforeFormatted": "23.896,-",
-     "priceSavingsFormatted": "5.010,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 18886,
-     "unitPriceBefore": 23896
+     "unitPriceBefore": 18886
     },
     "image": "https://images.hifiklubben.com/image/5d12b0a9-f09f-4339-b381-f614159726ca",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -823,20 +706,16 @@
     "price": {
      "price": 15708,
      "priceFormatted": "15.708,-",
-     "priceBefore": 19078,
-     "priceBeforeFormatted": "19.078,-",
-     "priceSavingsFormatted": "3.370,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 15708,
-     "unitPriceBefore": 19078
+     "unitPriceBefore": 15708
     },
     "image": "https://images.hifiklubben.com/image/76e7d609-92d8-4b74-9652-8d621d8f63ad",
     "ribbons": [
      {
-      "text": "Spar 18%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -852,20 +731,16 @@
     "price": {
      "price": 12758,
      "priceFormatted": "12.758,-",
-     "priceBefore": 15378,
-     "priceBeforeFormatted": "15.378,-",
-     "priceSavingsFormatted": "2.620,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12758,
-     "unitPriceBefore": 15378
+     "unitPriceBefore": 12758
     },
     "image": "https://images.hifiklubben.com/image/6319c4d7-b6d3-40b7-8f70-eed20e4b463d",
     "ribbons": [
      {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -879,22 +754,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 9759,
-     "priceFormatted": "9.759,-",
-     "priceBefore": 11629,
-     "priceBeforeFormatted": "11.629,-",
-     "priceSavingsFormatted": "1.870,-",
+     "price": 9378,
+     "priceFormatted": "9.378,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 9759,
-     "unitPriceBefore": 11629
+     "unitPrice": 9378,
+     "unitPriceBefore": 9378
     },
-    "image": "https://images.hifiklubben.com/image/b2671737-31b7-4752-8f02-fef65a3dc323",
+    "image": "https://images.hifiklubben.com/image/bab7be79-4d41-4b8f-9bf4-f42cbcd8fe5e",
     "ribbons": [
      {
-      "text": "Spar 16%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -902,75 +773,122 @@
       }
      }
     ],
-    "title": "Arc Ultra + Era 100",
-    "url": "/sonarcultra-era100/"
+    "title": "Arc Ultra + Sub Mini",
+    "url": "/sonarcultra-sonsubmini/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 11627,
+     "priceFormatted": "11.627,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 11627,
+     "unitPriceBefore": 11776
+    },
+    "image": "https://images.hifiklubben.com/image/060bd159-9729-442e-b61c-f1d1da6539d6",
+    "title": "Arc Ultra + Sub Mini + Era 100 SL",
+    "url": "/ultra-mini-era100sl/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 8628,
+     "priceFormatted": "8.628,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8628,
+     "unitPriceBefore": 8777
+    },
+    "image": "https://images.hifiklubben.com/image/d30c0510-83c4-4621-9bb8-2f877d2e2ed9",
+    "title": "Arc Ultra + Era 100 SL",
+    "url": "/sonarcultra-era100sl/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 14577,
+     "priceFormatted": "14.577,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 14577,
+     "unitPriceBefore": 14726
+    },
+    "image": "https://images.hifiklubben.com/image/305079cf-bfa6-4a19-acf6-777a0e5063b6",
+    "title": "Arc Ultra + Sub G4 + Era 100 SL",
+    "url": "/ultra-subg4-era100sl/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONARCULTRA leverer et varmt, kraftfuldt og meget omsluttende lydbillede med tydelige dialoger, detaljeret musik og overraskende dyb bas fra én soundbar. Dolby Atmos og udvidede Sonos-systemer med Sub- og Era-højttalere kan skabe en overbevisende biografoplevelse, mens opsætningen generelt er hurtig og enkel. Enkelte oplever forbindelses-, app-, synkroniserings- eller lydstyrkeproblemer, og den høje pris samt et lejlighedsvist behov for Sub dæmper den ellers meget begejstrede vurdering.",
+   "summary": "SONARCULTRA leverer en kraftfuld, varm og omsluttende lydoplevelse med tydelig tale, dyb bas og imponerende biografstemning. Opsætningen er som regel enkel, og soundbaren fungerer særligt godt som centrum i et større Sonos-system med Sub og Era-højttalere. Enkelte nævner problemer med forbindelse, app, synkronisering eller kompatibilitet, mens den høje pris og et lejlighedsvist behov for en Sub dæmper den ellers meget positive modtagelse. SONARCULTRA er en elegant, slagkraftig og alsidig opgradering til TV, film, spil og musik med brede Atmos-effekter og overraskende fyldig bas fra én soundbar. Detaljeret lyd, klare stemmer og fyldig rumvirkning skaber ægte biografstemning. Nem opsætning og fleksibel udvidelse med Sub og Era-højttalere fuldender pakken.",
    "headlines": {
-    "warm, detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en klar, fyldig og biografisk lyd, der engagerer med stærk musikgengivelse.",
-     "simpleTitle": "Varm, detaljeret og omsluttende lyd",
+    "noticeable upgrade over older Sonos bars": {
+     "sentimentAnalysis": "Sammenlignet med ældre Arc- og Beam-modeller opleves Ultra generelt som klarere, mere rummelig og stærkere i bas og talegengivelse.",
+     "simpleTitle": "Mærkbar opgradering fra ældre Sonos-soundbars",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "0397f5e3-0018-4779-a1c2-f8381ececcaa"
+     "key": "upgrades",
+     "groupId": "75979f28-a9ce-4ac6-84c3-091ff82ecfee"
     },
-    "deep bass, often without a Sub": {
-     "sentimentAnalysis": "Mange anmeldelser roser soundbarens kraftfulde, kontrollerede og overraskende dybe bas, også uden en ekstern Sub.",
-     "simpleTitle": "Dyb bas, ofte uden Sub",
+    "rich, cinematic sound with clear dialogue": {
+     "sentimentAnalysis": "Varm, detaljeret og omsluttende gengivelse skaber en overbevisende biografoplevelse med særlig tydelig tale og klare effekter.",
+     "simpleTitle": "Fyldig biograflyd med tydelig tale",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "0f313c45-eaa4-43cc-88e3-c530353e3293"
+    },
+    "easy installation and expansion": {
+     "sentimentAnalysis": "Nem opsætning, kalibrering og kompatibilitet med ekstra Sonos-højttalere gør systemet let at bygge ud og bruge.",
+     "simpleTitle": "Nem opsætning og udvidelse",
+     "bias": "positive",
+     "key": "installation",
+     "groupId": "0b9c7eaa-c043-45b9-b466-23cb965423ed"
+    },
+    "powerful bass often works without a Sub": {
+     "sentimentAnalysis": "Dyb, slagkraftig og overraskende kompetent bas giver et fyldigt lydbillede selv uden en ekstra subwoofer.",
+     "simpleTitle": "Kraftig bas fungerer ofte uden Sub",
      "bias": "positive",
      "key": "bass",
-     "groupId": "8c60917d-6e36-4d5e-99c4-981d9af2eeff"
+     "groupId": "0e28dcae-100a-4a9d-a49b-8325802fe2dd"
     },
-    "easy installation and calibration": {
-     "sentimentAnalysis": "Opsætning, app-vejledning og rumkalibrering opleves generelt som hurtig, enkel og brugervenlig.",
-     "simpleTitle": "Nem opsætning og kalibrering",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1"
-    },
-    "immersive cinema with Atmos and rear speakers": {
-     "sentimentAnalysis": "Atmos og ekstra Era-højttalere fremhæves ofte for at skabe et bredt, realistisk og biograflignende surroundfelt.",
-     "simpleTitle": "Omsluttende biograflyd med Atmos og baghøjttalere",
-     "bias": "positive",
-     "key": "surround",
-     "groupId": "2cfe1060-73a5-45e5-848b-480f12b51178"
-    },
-    "intermittent connection and app issues": {
-     "sentimentAnalysis": "En mindre gruppe rapporterer om ustabile forbindelser, en besværlig app, problemer med læbesynkronisering eller inkompatible Atmos-opsætninger.",
-     "simpleTitle": "Periodiske forbindelses- og appproblemer",
+    "connectivity and compatibility can be frustrating": {
+     "sentimentAnalysis": "Nogle opsætninger oplever udfald, begrænsninger i appen, læbesynkroniseringsproblemer eller manglende Atmos-kompatibilitet, hvilket reducerer stabiliteten med bestemte TV og streamingkilder.",
+     "simpleTitle": "Forbindelses- og kompatibilitetsproblemer kan være frustrerende",
      "bias": "negative",
-     "key": "connectivity",
-     "groupId": "a6e17550-d76b-4be0-a87b-e98746a15354"
+     "key": "installation",
+     "groupId": "0b9c7eaa-c043-45b9-b466-23cb965423ed"
     }
    },
    "grouping": {
-    "0397f5e3-0018-4779-a1c2-f8381ececcaa": {
+    "0f313c45-eaa4-43cc-88e3-c530353e3293": {
      "title": "Lydkvalitet",
-     "id": "0397f5e3-0018-4779-a1c2-f8381ececcaa",
+     "id": "0f313c45-eaa4-43cc-88e3-c530353e3293",
      "references": [
+      "0de26d6e-27e6-4069-bf06-518254afb705",
+      "773f0ef7-c0e4-4dd2-b91f-8ee57c81b964",
+      "a9f71f29-85ee-4c1b-9c5a-fe06ea80612b",
       "5ce758ba-174b-4180-9251-8313f5a21ec7",
       "34b4e73f-d33d-4110-a643-40942ed7a683",
       "14374268-a3ea-49dc-945a-cb504a3c5a94",
       "fce1199c-6d51-4a0f-b8dc-03fd54643912",
       "317408f0-a4eb-4812-a16d-dd661ed70b7c",
       "8a9355d1-9458-4973-be59-65ba34014516",
-      "1a4be9f5-0b7b-4b3d-b3aa-f89c16583d17",
       "19500ba7-39da-4e3c-b461-73f70b4c2aa9",
       "02d9df74-464e-47b0-af0f-b2b8b5224941",
+      "ad3ab224-d17a-4770-845a-f41cba7f05a7",
       "8eba5837-561e-4073-871d-041ab1594572",
       "9e052f2d-beda-4908-a22f-2de996e96763",
-      "79a5e2b3-025d-4af0-bb17-c3d4bd2676a0",
-      "f12b4231-9d3e-42e2-a10a-b187f73bfdcd",
+      "7103cf15-58b9-49ad-aa77-02e875d4051c",
       "91c8d87b-90e2-49ea-869b-3a5263dd3e71",
       "658871e9-f74b-48a1-9877-bd25aab7644b",
       "5688a921-e4be-479d-a18c-3a6b5c799a18",
       "f1833fa0-058c-4de4-ae97-cf478eb3b608",
       "ac7e4d4a-0376-4bbe-b841-7d2f0d288ef4",
       "c8d61a6b-cc11-4558-a40d-7c8cc625d16b",
-      "5f83d083-682c-4bc8-83c4-121ffeed665d",
+      "e965bee5-a2f4-4487-a198-734eeaa865f8",
       "3080eb6f-c719-4555-b1cb-68db11f6814d",
       "ec300da6-6efb-4e00-b875-675096ab8772",
       "13b89a93-97d7-4ddf-964f-56eeb190d5c9",
@@ -984,19 +902,14 @@
       "1beb442c-0d92-4186-8eac-e3d3db2c3230",
       "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
       "f90813ec-e50a-472d-a0c2-f0efb631ee0c",
+      "8c4764e9-4fb0-4be0-8621-9b09adfeccb6",
       "d78cf216-5859-4f3e-8c48-6d55a157ef18",
-      "169eb1fb-a669-4e50-92b9-67eca7b3f0e0",
-      "8cb812ce-27bc-48d7-9e7e-d248f373e829",
       "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
-      "61d3bf43-81be-4abc-8be5-3efce6224e57",
       "adc75951-16f4-4416-9dc5-55b934ba8ec2",
       "386f6c15-fd26-4345-b988-bd6e8f238c07",
-      "53befd2e-d032-4207-ae10-428c5019dbf3",
       "755365ee-8328-486a-9c6b-1fd272bd4c27",
       "66589524-7e32-4614-b27c-9148b1cb0e17",
       "7fb98d43-53f1-494b-89b7-1ed17856e56e",
-      "44e1ea69-fcdc-4b6d-96fe-02112d075ec6",
-      "77a231b5-edeb-4b18-9c7a-9408c454cb1f",
       "a0e06395-c0f3-4e04-acdc-898b48a3b2ae",
       "c377e1b9-bb32-4bf1-98fc-997b32365ed8",
       "ab346b43-9e86-4ae6-9e46-1b3f6f1a0dcf",
@@ -1009,38 +922,26 @@
       "63b1649a-fb0b-45e0-8d3f-684dda8199e2",
       "c3ba28b4-d872-4af4-9fe2-cbf8e2762268",
       "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
-      "4e75e5c0-4eb1-4183-a38c-2cf2979b67de",
       "7ed6f962-9717-4943-8b40-70a1c5bee897",
       "dc6ad7a2-e656-458b-abba-79be35c366fe",
       "af46fe49-5667-4105-9f4f-893a0aa5f460",
       "5bda3f25-ca68-4cc7-95f6-18a7b720fee2",
       "f5468282-fac6-4184-8b64-d45c887ef2d5",
-      "85a1e4d1-1baa-4b6c-af1b-08015e90642d",
-      "f9b687d5-2e20-47ff-8c9e-37326ae515e2",
       "e3d84155-c639-4a64-8ab8-6e11f3241e4e",
-      "9890fef0-3f70-4ff0-a8b5-aa580e4fcb2b",
       "5414e5c9-c844-4563-8e09-45f2f53f0333",
-      "5a6eb94b-1e18-4732-b550-823864d72f5b",
-      "c1a25523-8c6b-458e-b372-2a0487c5d63a",
+      "4a58dfee-5257-4fea-9660-05f460ff6af5",
       "143d30fc-80f4-4ddf-8f45-5df62d0d0fc0",
       "e49b60a1-49ae-49c3-b680-cacddfc0e075",
-      "52e0071a-c9bd-43a5-b79d-daf02b1c41c3",
       "387e1899-1dea-4114-a2f2-62a4cdbb033a",
       "e01a2f2c-954d-481f-a54e-b15a274783dd",
       "43142782-6871-440a-b243-73d24902c5a5",
       "36709118-0286-40ce-82f3-31412f409b2e",
       "46789695-b0f6-4f63-a028-2e981fcb70f6",
-      "ec436bfa-a55e-4fb0-bbd9-246b4f051bc6",
       "2b25005b-dead-41a3-89ec-9a54fed3700f",
       "9f6179f6-1c58-4424-82ee-3c6d0042d438",
       "9a84adee-f9a8-4f6e-801f-b38c2c832b46",
-      "412b8de2-d166-4700-ba63-c735ccc21033",
-      "674ddb17-15e4-41ff-85fe-b64f89783e03",
-      "62e940e9-9f75-4d23-9091-f617689d64b5",
       "68f42110-6a23-4768-9a65-d04184e1931a",
       "3b256bc0-4ff2-43e2-980a-8c64308369a6",
-      "e3ab5ba2-f04a-4292-a354-1860c847edb3",
-      "391a4c70-b441-4d13-b7d8-34db3920cbf9",
       "53774021-cd5c-4978-bb74-55b6654ef68b",
       "c3a6cb8f-5742-4cd4-8179-401766a76c20",
       "880d8ed4-6747-4f85-b65a-30272ff88985",
@@ -1048,22 +949,18 @@
       "423581ea-4607-4414-b8fc-e6fbfa6d2eea",
       "38cffeb5-81d2-4398-8cd3-556263d53f8e",
       "fafa29d7-d2af-47f9-ae6f-5955bbbc5aec",
-      "3182127f-edd7-4e52-b12a-d1f1c885a916",
       "b1feb64f-2269-45ad-9541-5cbfa95e3b24",
-      "557b3921-0bc9-415c-9c46-6ae66e0c15ca",
       "1b88461c-aec8-42c5-9ae3-cef5b7abf0f0",
-      "8ee5f6bc-21f9-44e8-9c66-bab10d483d9f",
       "3af918ed-8ef9-4a39-a913-89a8641baf90",
       "dbc01ae2-0674-445a-9a4d-829fedf8e32a",
       "f1eb5fc3-68c8-47c2-848c-83358a1bb882",
       "1439ab8e-45a6-45ef-aeee-04718eba6c56",
       "4bd7f707-92ab-4cfd-9ad9-785033d98907",
       "cec04703-b6f3-4dc7-81c7-02510afc9180",
-      "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
       "6a3c6c70-e382-4dc9-8a18-061c26cec14c",
+      "6ebeb0f9-e200-4528-9383-45476f359288",
       "224bc494-9ffc-42bf-8a7f-0053db898b42",
       "18c0b0fe-1c3a-4e2c-9fbc-69faa729a4b1",
-      "6ebeb0f9-e200-4528-9383-45476f359288",
       "91880db8-f6ee-4541-8b83-a0f357f0374e",
       "62646f7f-e2fc-4d50-b1a0-355e4123a3e3",
       "055a2190-f459-4c03-bb1b-08813f131064",
@@ -1079,45 +976,49 @@
       "165ce05f-4e06-4bfe-9fb5-37d484a83f1c"
      ]
     },
-    "8c60917d-6e36-4d5e-99c4-981d9af2eeff": {
+    "0e28dcae-100a-4a9d-a49b-8325802fe2dd": {
      "title": "Bas",
-     "id": "8c60917d-6e36-4d5e-99c4-981d9af2eeff",
+     "id": "0e28dcae-100a-4a9d-a49b-8325802fe2dd",
      "references": [
-      "d0daffb3-b8d0-45ad-8e97-358da4be50b9",
       "317408f0-a4eb-4812-a16d-dd661ed70b7c",
-      "1a4be9f5-0b7b-4b3d-b3aa-f89c16583d17",
+      "d0daffb3-b8d0-45ad-8e97-358da4be50b9",
       "19500ba7-39da-4e3c-b461-73f70b4c2aa9",
       "7103cf15-58b9-49ad-aa77-02e875d4051c",
       "5688a921-e4be-479d-a18c-3a6b5c799a18",
       "eeca69fd-e1d3-47c1-910b-81d52d36821e",
+      "e8d5252f-7972-47b9-be50-cdb06c85aa2d",
+      "1beb442c-0d92-4186-8eac-e3d3db2c3230",
       "169eb1fb-a669-4e50-92b9-67eca7b3f0e0",
+      "8cb812ce-27bc-48d7-9e7e-d248f373e829",
       "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
-      "adc75951-16f4-4416-9dc5-55b934ba8ec2",
+      "c3ba28b4-d872-4af4-9fe2-cbf8e2762268",
+      "53befd2e-d032-4207-ae10-428c5019dbf3",
       "66589524-7e32-4614-b27c-9148b1cb0e17",
       "7fb98d43-53f1-494b-89b7-1ed17856e56e",
       "44e1ea69-fcdc-4b6d-96fe-02112d075ec6",
-      "c3ba28b4-d872-4af4-9fe2-cbf8e2762268",
       "af46fe49-5667-4105-9f4f-893a0aa5f460",
       "5bda3f25-ca68-4cc7-95f6-18a7b720fee2",
+      "5c0a3398-a0b6-49ef-a96b-f578ab29270e",
+      "5414e5c9-c844-4563-8e09-45f2f53f0333",
       "5a6eb94b-1e18-4732-b550-823864d72f5b",
       "e49b60a1-49ae-49c3-b680-cacddfc0e075",
       "480559f6-33ee-489b-860b-a84a0f069834",
       "46789695-b0f6-4f63-a028-2e981fcb70f6",
       "2b25005b-dead-41a3-89ec-9a54fed3700f",
       "9a84adee-f9a8-4f6e-801f-b38c2c832b46",
-      "68f42110-6a23-4768-9a65-d04184e1931a",
       "e3ab5ba2-f04a-4292-a354-1860c847edb3",
       "dbc01ae2-0674-445a-9a4d-829fedf8e32a",
-      "1b88461c-aec8-42c5-9ae3-cef5b7abf0f0",
       "1439ab8e-45a6-45ef-aeee-04718eba6c56",
+      "774438d7-0d2e-4542-96a8-66e4d4ed9599",
       "91880db8-f6ee-4541-8b83-a0f357f0374e",
-      "774438d7-0d2e-4542-96a8-66e4d4ed9599"
+      "1b88461c-aec8-42c5-9ae3-cef5b7abf0f0"
      ]
     },
-    "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1": {
-     "title": "Opsætning og installation",
-     "id": "8e20253a-2ce1-4c2e-b9aa-926f3ac808c1",
+    "0b9c7eaa-c043-45b9-b466-23cb965423ed": {
+     "title": "Installation og opsætning",
+     "id": "0b9c7eaa-c043-45b9-b466-23cb965423ed",
      "references": [
+      "34b4e73f-d33d-4110-a643-40942ed7a683",
       "8a9355d1-9458-4973-be59-65ba34014516",
       "19500ba7-39da-4e3c-b461-73f70b4c2aa9",
       "02d9df74-464e-47b0-af0f-b2b8b5224941",
@@ -1126,76 +1027,54 @@
       "5688a921-e4be-479d-a18c-3a6b5c799a18",
       "13b89a93-97d7-4ddf-964f-56eeb190d5c9",
       "977742d9-cc88-4c03-a365-7f38c74d3d66",
-      "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
-      "8c4764e9-4fb0-4be0-8621-9b09adfeccb6",
       "386f6c15-fd26-4345-b988-bd6e8f238c07",
-      "4e75e5c0-4eb1-4183-a38c-2cf2979b67de",
-      "143d30fc-80f4-4ddf-8f45-5df62d0d0fc0",
-      "f9b687d5-2e20-47ff-8c9e-37326ae515e2",
       "a0e06395-c0f3-4e04-acdc-898b48a3b2ae",
-      "64a8a6cd-07c7-4384-9b2f-1c53221b1fb6",
-      "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
-      "7ed6f962-9717-4943-8b40-70a1c5bee897",
-      "1a59d88d-7bd7-4494-be37-995c247bebd1",
-      "e7d8e952-8f1b-4034-add2-42d62be91958",
-      "3af918ed-8ef9-4a39-a913-89a8641baf90",
-      "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
-      "0d0e2533-b28b-4bd8-883e-0bc746de117d"
-     ]
-    },
-    "2cfe1060-73a5-45e5-848b-480f12b51178": {
-     "title": "Surround og Dolby Atmos",
-     "id": "2cfe1060-73a5-45e5-848b-480f12b51178",
-     "references": [
-      "fce1199c-6d51-4a0f-b8dc-03fd54643912",
-      "91c8d87b-90e2-49ea-869b-3a5263dd3e71",
-      "2283d6e9-bfba-47e0-adc8-e3d860d93fdb",
-      "203bd3b0-5545-4573-a199-8fe6fd9aa52b",
-      "8cb812ce-27bc-48d7-9e7e-d248f373e829",
-      "a85d7cac-5f0f-4b53-b1e3-ba2d8e70312f",
-      "755365ee-8328-486a-9c6b-1fd272bd4c27",
-      "3fb2ca49-c7aa-41fa-a91c-751c84ab1ad7",
-      "7ed6f962-9717-4943-8b40-70a1c5bee897",
-      "e7716532-dbb2-4f76-b6fd-d6a6465da587",
-      "f5468282-fac6-4184-8b64-d45c887ef2d5",
-      "33d933b7-f1e3-42c5-96e0-ff3ba767cb2c",
-      "fafa29d7-d2af-47f9-ae6f-5955bbbc5aec",
-      "557b3921-0bc9-415c-9c46-6ae66e0c15ca",
-      "80afa99a-6d5d-46ce-baec-c648d610efbf",
-      "38cffeb5-81d2-4398-8cd3-556263d53f8e",
-      "892ceb68-7705-4d9e-b717-cdbc38214794",
-      "4a58dfee-5257-4fea-9660-05f460ff6af5",
-      "55233fbd-b604-49c6-8435-aeb62c783d32",
-      "3d4192e4-6c05-47e0-a2f9-1330fb76ad4b",
-      "4ae2a27e-7890-49bd-b9f5-37ffc463b573"
-     ]
-    },
-    "a6e17550-d76b-4be0-a87b-e98746a15354": {
-     "title": "Forbindelse og app",
-     "id": "a6e17550-d76b-4be0-a87b-e98746a15354",
-     "references": [
-      "c750e545-b390-4b62-83b8-2e079314dabc",
-      "d4244230-118d-4b9c-a8b3-141d00530911",
       "7fb98d43-53f1-494b-89b7-1ed17856e56e",
-      "59e31d3c-d3f7-4abe-88f7-9d401fba2e7f",
-      "1a59d88d-7bd7-4494-be37-995c247bebd1",
-      "df748edb-7b7e-4b99-a3dc-4c47d92479a2",
-      "4ae2a27e-7890-49bd-b9f5-37ffc463b573",
-      "8ee5f6bc-21f9-44e8-9c66-bab10d483d9f",
-      "3d4192e4-6c05-47e0-a2f9-1330fb76ad4b",
-      "f1eb5fc3-68c8-47c2-848c-83358a1bb882"
+      "8c4764e9-4fb0-4be0-8621-9b09adfeccb6",
+      "5bda3f25-ca68-4cc7-95f6-18a7b720fee2",
+      "f9b687d5-2e20-47ff-8c9e-37326ae515e2",
+      "4a58dfee-5257-4fea-9660-05f460ff6af5",
+      "143d30fc-80f4-4ddf-8f45-5df62d0d0fc0",
+      "e7d8e952-8f1b-4034-add2-42d62be91958",
+      "53774021-cd5c-4978-bb74-55b6654ef68b",
+      "3af918ed-8ef9-4a39-a913-89a8641baf90",
+      "0d0517ad-4156-440d-af9c-0b8b7dd5a5ac",
+      "8b5f7d14-4e59-4f77-ab20-2cc08cfaef34"
+     ]
+    },
+    "75979f28-a9ce-4ac6-84c3-091ff82ecfee": {
+     "title": "Systemopgraderinger",
+     "id": "75979f28-a9ce-4ac6-84c3-091ff82ecfee",
+     "references": [
+      "773f0ef7-c0e4-4dd2-b91f-8ee57c81b964",
+      "fce1199c-6d51-4a0f-b8dc-03fd54643912",
+      "d78cf216-5859-4f3e-8c48-6d55a157ef18",
+      "61d3bf43-81be-4abc-8be5-3efce6224e57",
+      "adc75951-16f4-4416-9dc5-55b934ba8ec2",
+      "e70e8c8b-e579-4f50-a623-958ba529953d",
+      "3b5e28b3-2a71-4990-8631-5701b5340791",
+      "dc6ad7a2-e656-458b-abba-79be35c366fe",
+      "e49b60a1-49ae-49c3-b680-cacddfc0e075",
+      "c3a6cb8f-5742-4cd4-8179-401766a76c20",
+      "391a4c70-b441-4d13-b7d8-34db3920cbf9",
+      "dbc01ae2-0674-445a-9a4d-829fedf8e32a",
+      "1439ab8e-45a6-45ef-aeee-04718eba6c56",
+      "91880db8-f6ee-4541-8b83-a0f357f0374e",
+      "055a2190-f459-4c03-bb1b-08813f131064",
+      "774438d7-0d2e-4542-96a8-66e4d4ed9599",
+      "165ce05f-4e06-4bfe-9fb5-37d484a83f1c"
      ]
     }
    },
-   "rating": 4.76538461538462,
-   "count": 520,
-   "reviewCount": 189,
+   "rating": 4.76290630975143,
+   "count": 523,
+   "reviewCount": 192,
    "distribution": {
     "1": 6,
     "2": 2,
-    "3": 16,
+    "3": 17,
     "4": 60,
-    "5": 436
+    "5": 438
    }
   },
   "boxContent": [

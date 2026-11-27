@@ -194,19 +194,14 @@
      "priceValueId": 1211329,
      "price": 1199,
      "priceFormatted": "1.199,-",
-     "priceBefore": 1499,
-     "priceBeforeFormatted": "1.499,-",
-     "priceSavingsFormatted": "300,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1199,
-     "unitPriceBefore": 1499
+     "unitPrice": 1199
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -251,8 +246,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 2181,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 870,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -330,19 +325,14 @@
      "priceValueId": 1211335,
      "price": 1199,
      "priceFormatted": "1.199,-",
-     "priceBefore": 1499,
-     "priceBeforeFormatted": "1.499,-",
-     "priceSavingsFormatted": "300,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 1199,
-     "unitPriceBefore": 1499
+     "unitPrice": 1199
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -388,7 +378,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 2771,
+     "availableQuantity": 168,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -505,81 +495,23 @@
   "testGroups": [],
   "bundleRelations": [
    {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 4828,
-     "priceFormatted": "4.828,-",
-     "priceBefore": 6688,
-     "priceBeforeFormatted": "6.688,-",
-     "priceSavingsFormatted": "1.860,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 4828,
-     "unitPriceBefore": 6688
-    },
-    "image": "https://images.hifiklubben.com/image/6a22aeae-8442-4ea0-a7f6-0acbd5379033",
-    "ribbons": [
-     {
-      "text": "Spar 28%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Beam (Gen 2) + Era 100 SL",
-    "url": "/beam-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 7827,
-     "priceFormatted": "7.827,-",
-     "priceBefore": 10437,
-     "priceBeforeFormatted": "10.437,-",
-     "priceSavingsFormatted": "2.610,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 7827,
-     "unitPriceBefore": 10437
-    },
-    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
-    "ribbons": [
-     {
-      "text": "Spar 25%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Beam (Gen 2) + Era 100 SL + Sub Mini",
-    "url": "/beam-era100sl-sub/"
-   },
-   {
     "modelType": "Trådløs højtaler",
     "price": {
      "price": 2249,
      "priceFormatted": "2.249,-",
-     "priceBefore": 2998,
-     "priceBeforeFormatted": "2.998,-",
-     "priceSavingsFormatted": "749,-",
+     "priceBefore": 2398,
+     "priceBeforeFormatted": "2.398,-",
+     "priceSavingsFormatted": "149,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 2249,
-     "unitPriceBefore": 2998
+     "unitPriceBefore": 2398
     },
     "image": "https://images.hifiklubben.com/image/25eeaecf-b714-4b34-ba87-0094e46feaef",
     "ribbons": [
      {
-      "text": "Spar 25%",
+      "text": "Spar 6%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -596,19 +528,19 @@
     "price": {
      "price": 2249,
      "priceFormatted": "2.249,-",
-     "priceBefore": 2998,
-     "priceBeforeFormatted": "2.998,-",
-     "priceSavingsFormatted": "749,-",
+     "priceBefore": 2398,
+     "priceBeforeFormatted": "2.398,-",
+     "priceSavingsFormatted": "149,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 2249,
-     "unitPriceBefore": 2998
+     "unitPriceBefore": 2398
     },
     "image": "https://images.hifiklubben.com/image/f9ebf26b-b90e-4df3-9961-49f9415a9ab3",
     "ribbons": [
      {
-      "text": "Spar 25%",
+      "text": "Spar 6%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -623,202 +555,131 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 8628,
-     "priceFormatted": "8.628,-",
-     "priceBefore": 11247,
-     "priceBeforeFormatted": "11.247,-",
-     "priceSavingsFormatted": "2.619,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8628,
-     "unitPriceBefore": 11247
-    },
-    "image": "https://images.hifiklubben.com/image/d30c0510-83c4-4621-9bb8-2f877d2e2ed9",
-    "ribbons": [
-     {
-      "text": "Spar 23%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Era 100 SL",
-    "url": "/sonarcultra-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
      "price": 11627,
      "priceFormatted": "11.627,-",
-     "priceBefore": 14996,
-     "priceBeforeFormatted": "14.996,-",
-     "priceSavingsFormatted": "3.369,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 11627,
-     "unitPriceBefore": 14996
+     "unitPriceBefore": 11776
     },
     "image": "https://images.hifiklubben.com/image/060bd159-9729-442e-b61c-f1d1da6539d6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
     "title": "Arc Ultra + Sub Mini + Era 100 SL",
     "url": "/ultra-mini-era100sl/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
+     "price": 8628,
+     "priceFormatted": "8.628,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8628,
+     "unitPriceBefore": 8777
+    },
+    "image": "https://images.hifiklubben.com/image/d30c0510-83c4-4621-9bb8-2f877d2e2ed9",
+    "title": "Arc Ultra + Era 100 SL",
+    "url": "/sonarcultra-era100sl/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
      "price": 14577,
      "priceFormatted": "14.577,-",
-     "priceBefore": 18696,
-     "priceBeforeFormatted": "18.696,-",
-     "priceSavingsFormatted": "4.119,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 14577,
-     "unitPriceBefore": 18696
+     "unitPriceBefore": 14726
     },
     "image": "https://images.hifiklubben.com/image/305079cf-bfa6-4a19-acf6-777a0e5063b6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
     "title": "Arc Ultra + Sub G4 + Era 100 SL",
     "url": "/ultra-subg4-era100sl/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 6577,
-     "priceFormatted": "6.577,-",
-     "priceBefore": 8076,
-     "priceBeforeFormatted": "8.076,-",
-     "priceSavingsFormatted": "1.499,-",
+     "price": 4828,
+     "priceFormatted": "4.828,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 6577,
-     "unitPriceBefore": 8076
+     "unitPrice": 4828,
+     "unitPriceBefore": 4977
     },
-    "image": "https://images.hifiklubben.com/image/9ac4a085-8c49-4676-b980-06bd0c5054ce",
-    "ribbons": [
-     {
-      "text": "Spar 19%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos-Ray-Era-100-SL-Sub-Mini",
-    "url": "/ray-era100sl-mini/"
+    "image": "https://images.hifiklubben.com/image/6a22aeae-8442-4ea0-a7f6-0acbd5379033",
+    "title": "Sonos Beam (Gen 2) + Era 100 SL",
+    "url": "/beam-era100sl/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 3578,
-     "priceFormatted": "3.578,-",
-     "priceBefore": 4327,
-     "priceBeforeFormatted": "4.327,-",
-     "priceSavingsFormatted": "749,-",
+     "price": 7827,
+     "priceFormatted": "7.827,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 3578,
-     "unitPriceBefore": 4327
+     "unitPrice": 7827,
+     "unitPriceBefore": 7976
     },
-    "image": "https://images.hifiklubben.com/image/3c29045b-75e2-4d7f-b5c0-25f68178f11d",
-    "ribbons": [
-     {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Ray + Era 100 SL",
-    "url": "/ray-era100sl/"
+    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
+    "title": "Sonos Beam (Gen 2) + Era 100 SL + Sub Mini",
+    "url": "/beam-era100sl-sub/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sonos Era 100SL leverer bemærkelsesværdig varm, fyldig og rummelig lyd fra et kompakt kabinet med overraskende dyb bas og klar adskillelse. Enkel Wi-Fi-forbindelse, nem multiroom-integration og stærk ydelse i køkken, soveværelse, kontor og hjemmebiograf gør højttaleren meget alsidig. Enkelte ejere nævner installationsproblemer, TV-synkronisering eller radioafspilning, begrænsede monteringsmuligheder og manglende batteri, men den samlede værdi og tilfredshed er meget høj.",
+   "summary": "SONOS Era 100SL leverer varm, slagkraftig og overraskende rummelig lyd fra et kompakt kabinet med kraftig bas, tydelig separation og rigelig lydstyrke til mindre rum. Nem Wi-Fi-integration, enkel betjening og problemfri sammenkobling med Beam, Sub Mini og andre Sonos-produkter gør højttaleren alsidig i køkkener, soveværelser, kontorer og surroundsystemer. Det kompakte design og den kabelfri multiroom-komfort gør den samlede pakke endnu mere attraktiv, selv om installationen lejlighedsvis kan være besværlig, og nogle lyttere kunne ønske sig genopladelig drift eller fyldigere lyd.",
    "headlines": {
-    "clear, enjoyable sound across everyday spaces": {
-     "sentimentAnalysis": "Brug i køkken, soveværelse og kontor roses konsekvent for klar, behagelig baggrundslyd, der fylder rummet.",
-     "simpleTitle": "Klar og behagelig lyd i hverdagsrum",
+    "strong pairing for Sonos systems": {
+     "sentimentAnalysis": "Era 100SL roses gentagne gange som en effektiv stereo-, baghøjttaler- eller multiroom-udvidelse til Sonos-systemer.",
+     "simpleTitle": "Stærk kombination med Sonos-systemer",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5"
-    },
-    "easy installation and convenient control": {
-     "sentimentAnalysis": "De fleste kommentarer beskriver enkel installation, hurtig parring og ubesværet daglig betjening.",
-     "simpleTitle": "Nem installation og praktisk betjening",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "d2ee3870-a692-4d54-a30c-eac578614641"
-    },
-    "strong surround and stereo integration": {
-     "sentimentAnalysis": "Stereopar og baghøjttalerkonfigurationer roses for problemfri integration, overbevisende stereoperspektiv og fyldigere TV-lyd.",
-     "simpleTitle": "Stærk surround- og stereo-integration",
-     "bias": "positive",
-     "key": "integration",
-     "groupId": "6d8425ca-aca9-4344-b568-99335b98b143"
+     "key": "multiroom",
+     "groupId": "e8c5ca46-6148-45ed-9655-2fa8ba096eae"
     },
     "surprisingly powerful, detailed sound": {
-     "sentimentAnalysis": "De kompakte højttalere roses for høj lydstyrke, dyb bas, klar frekvensadskillelse og en medrivende gengivelse.",
-     "simpleTitle": "Overraskende kraftfuld og detaljeret lyd",
+     "sentimentAnalysis": "Højttaleren roses for sin fyldige, kraftige og tydeligt separerede lyd trods den kompakte størrelse.",
+     "simpleTitle": "Overraskende kraftig og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5"
+     "groupId": "6fc15467-d201-4d8e-9314-5a40d5800b60"
     },
-    "installation can occasionally be troublesome": {
-     "sentimentAnalysis": "En installationsoplevelse beskriver store softwareproblemer, som først blev løst efter en nulstilling, mens en anden rapporterer tilbagevendende fejl ved radioafspilning.",
-     "simpleTitle": "Installationen kan lejlighedsvis være besværlig",
+    "easy to install and use": {
+     "sentimentAnalysis": "Installation og daglig brug beskrives ofte som enkel og bekvem.",
+     "simpleTitle": "Nem at installere og bruge",
+     "bias": "positive",
+     "key": "setup",
+     "groupId": "bb0882dd-c505-4019-990f-8c60a896773f"
+    },
+    "excellent for compact spaces": {
+     "sentimentAnalysis": "Det kompakte kabinet og den nemme placering værdsættes især i køkkener, kontorer og andre mindre rum.",
+     "simpleTitle": "Fremragende til små rum",
+     "bias": "positive",
+     "key": "size",
+     "groupId": "8d4c0baf-4816-49cb-b97d-82a62918c58c"
+    },
+    "occasional installation and playback issues": {
+     "sentimentAnalysis": "En mindre del rapporterer om vanskelig softwareinstallation eller radioafspilning, der uventet springer tilbage og gentager sig.",
+     "simpleTitle": "Lejlighedsvise problemer med installation og afspilning",
      "bias": "negative",
      "key": "setup",
-     "groupId": "d2ee3870-a692-4d54-a30c-eac578614641"
+     "groupId": "bb0882dd-c505-4019-990f-8c60a896773f"
     }
    },
    "grouping": {
-    "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5": {
+    "6fc15467-d201-4d8e-9314-5a40d5800b60": {
      "title": "Lydkvalitet",
-     "id": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5",
+     "id": "6fc15467-d201-4d8e-9314-5a40d5800b60",
      "references": [
       "19defdce-8b27-4d91-8571-343a4c38742f",
       "ab626b4d-8527-4d29-9154-7e42fcf2dfec",
       "34bbd5d0-4d97-4a98-8aa1-d3d8cc11030f",
       "9012fc24-4de4-4b8a-b400-0ad69a932586",
       "778806f2-0e91-4a2f-b150-6149a8132116",
-      "f87c6fd2-3d02-4239-b358-b1a85916946a",
       "a801b575-7ae8-48e2-92e5-b996ac5686cf",
-      "6763a9da-8034-4d82-bcc6-f7e75a6dab75",
+      "d1d5ab8d-8aa5-4396-ab8f-1cee2e9925da",
       "79137ede-c8e6-4448-9021-9340cff6ed1e",
       "9aaa1dc4-a024-412a-8e0a-bcadb879aa50",
       "794001c4-c13d-442d-804e-cfdc499e6682",
@@ -845,33 +706,53 @@
       "c0a532fe-fda8-4894-8f8b-f07839b6870f"
      ]
     },
-    "d2ee3870-a692-4d54-a30c-eac578614641": {
-     "title": "Installation og brugervenlighed",
-     "id": "d2ee3870-a692-4d54-a30c-eac578614641",
+    "bb0882dd-c505-4019-990f-8c60a896773f": {
+     "title": "Installation og betjening",
+     "id": "bb0882dd-c505-4019-990f-8c60a896773f",
      "references": [
       "19defdce-8b27-4d91-8571-343a4c38742f",
       "6dab19bf-972e-4f43-8cb2-aa35168ebb98",
       "794001c4-c13d-442d-804e-cfdc499e6682",
       "71890e33-64b1-42b5-b2d2-ad7f4d9359c8",
+      "485b393f-26c8-4be7-8095-771562749b05",
       "455055f5-d3c7-4e1e-8df2-53b7486f2ee2",
       "860f8e00-6d22-4425-9bf1-04375bc7831d",
       "32fc68be-0760-41e0-b0e4-ec8bce9e2f35",
+      "d9266d5a-95e7-4527-a219-7d9a40ce3d66",
       "89d84aac-06ee-40f3-b233-614e1db42dfa",
       "926ee434-0d36-4359-809a-38a019a1e8e1",
       "7ed65896-45eb-43ea-926e-38d2482480ed",
       "de86d711-15ea-427e-b41b-674bcdb0a109"
      ]
     },
-    "6d8425ca-aca9-4344-b568-99335b98b143": {
-     "title": "Multiroom og hjemmebiograf",
-     "id": "6d8425ca-aca9-4344-b568-99335b98b143",
+    "8d4c0baf-4816-49cb-b97d-82a62918c58c": {
+     "title": "Størrelse og placering",
+     "id": "8d4c0baf-4816-49cb-b97d-82a62918c58c",
+     "references": [
+      "34bbd5d0-4d97-4a98-8aa1-d3d8cc11030f",
+      "43b1d852-40d4-4835-9a48-85c605a6ea15",
+      "d1d5ab8d-8aa5-4396-ab8f-1cee2e9925da",
+      "9aaa1dc4-a024-412a-8e0a-bcadb879aa50",
+      "4f1a25f9-3943-4d07-a8ed-3aebcf80fee4",
+      "c7f8e3fd-bddc-494f-981d-04f06ad99ec4",
+      "19996dc5-9e3d-478f-bc0c-bf5dd05cf9d6",
+      "6f3eaa9c-0cf6-4420-901d-8ded9bdb711d",
+      "353d7ac4-edca-4671-81d6-065b00b6fd5e",
+      "dc107379-8050-4535-956a-d679c716511b",
+      "8f302a72-211b-4234-b880-d6f70d5914f6",
+      "9ea2b2e2-b15e-4acf-aeda-fb23cb682009"
+     ]
+    },
+    "e8c5ca46-6148-45ed-9655-2fa8ba096eae": {
+     "title": "Multiroom og surround",
+     "id": "e8c5ca46-6148-45ed-9655-2fa8ba096eae",
      "references": [
       "0eb0b82c-1df5-47b9-8b0a-fcedd8a1bd1e",
       "d3ced33d-2025-4ba1-b6b6-d01d0103c354",
       "e87a0781-e43d-45c8-832b-a0f9d1785fcb",
       "f87c6fd2-3d02-4239-b358-b1a85916946a",
-      "794001c4-c13d-442d-804e-cfdc499e6682",
       "73f9d7ab-1111-48ec-a5e7-f876821979b9",
+      "485b393f-26c8-4be7-8095-771562749b05",
       "bdb136f1-cca6-46b2-b88c-01b62a82499a",
       "e612c960-2daf-460e-9e67-f16399e16bf0",
       "860f8e00-6d22-4425-9bf1-04375bc7831d",

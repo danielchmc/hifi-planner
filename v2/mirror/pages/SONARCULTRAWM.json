@@ -90,8 +90,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 435,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 367,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -131,35 +131,43 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONARCULTRAWM giver en ren, stabil og velintegreret montering af soundbaren med en slank profil, der holder opsætningen diskret. Monteringen er ofte enkel, men begrænset plads til kabler og monteringsdelene kan gøre installationen mindre bekvem. Det tilhørende Sonos-system leverer en rummelig, punchy og medrivende biograflyd, selv om prisen på beslaget virker høj.",
+   "summary": "SONOS ARCULTRAWM leverer et elegant og stabilt vægbeslag, der passer til soundbaren og understøtter en immersiv, varm og kraftfuld hjemmebiografoplevelse. Monteringen er ofte enkel, men nogle købere synes, at den er besværlig og ønsker mere plads til kabler. Den høje pris er den vigtigste tilbagevendende kritik, trods stor tilfredshed og tillid til Sonos-kvaliteten.",
    "headlines": {
-    "slim, discreet fit for the soundbar": {
-     "sentimentAnalysis": "Beslaget passer godt til soundbaren og ligger næsten plant mod væggen.",
-     "simpleTitle": "Slankt og diskret fit til soundbaren",
-     "bias": "positive",
-     "key": "slim-soundbar-fit",
-     "groupId": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454"
-    },
-    "installation is generally easy": {
-     "sentimentAnalysis": "Flere oplevelser beskriver monteringen som enkel og ukompliceret.",
-     "simpleTitle": "Installationen er generelt enkel",
+    "easy installation": {
+     "sentimentAnalysis": "Monteringen beskrives som enkel og ukompliceret.",
+     "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "easy-installation",
-     "groupId": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454"
+     "groupId": "0899dd89-07b7-4c63-a18d-0f7ad875c171"
     },
-    "the bracket is expensive": {
-     "sentimentAnalysis": "Prisen opfattes som for høj og skiller sig negativt ud sammenlignet med forventninger eller alternativer.",
-     "simpleTitle": "Beslaget er dyrt",
+    "mounting can be awkward": {
+     "sentimentAnalysis": "Nogle købere oplever begrænset kabelplads eller en besværlig montering.",
+     "simpleTitle": "Monteringen kan være besværlig",
+     "bias": "negative",
+     "key": "awkward-mounting",
+     "groupId": "0899dd89-07b7-4c63-a18d-0f7ad875c171"
+    },
+    "stable, high-quality construction": {
+     "sentimentAnalysis": "Produktet vurderes som stabilt og på niveau med Sonos' kvalitetsstandarder.",
+     "simpleTitle": "Stabil konstruktion i høj kvalitet",
+     "bias": "positive",
+     "key": "stable-quality",
+     "groupId": "8006d294-0c7f-4be6-8857-0b533664d6a4"
+    },
+    "price feels too high": {
+     "sentimentAnalysis": "Beslaget anses for overprissat, og et køb før et tilbud opleves som dårlig værdi for pengene.",
+     "simpleTitle": "Prisen føles for høj",
      "bias": "negative",
      "key": "high-price",
-     "groupId": "a6231fc1-dc2b-458a-a48f-9feda13efa91"
+     "groupId": "03f5f7d5-4e5c-4720-b0f4-436fc0efec0e"
     }
    },
    "grouping": {
-    "db7f8b9f-4c10-4198-8886-7f7cfa7ca454": {
-     "title": "Montering og installation",
-     "id": "db7f8b9f-4c10-4198-8886-7f7cfa7ca454",
+    "0899dd89-07b7-4c63-a18d-0f7ad875c171": {
+     "title": "Montering",
+     "id": "0899dd89-07b7-4c63-a18d-0f7ad875c171",
      "references": [
+      "3f29f79e-1e09-4bae-94a0-a7b2949135c0",
       "18ce309b-41a8-4d07-be83-f687412b6b0f",
       "980d459c-c77c-4678-95fe-85a4bcf54df6",
       "1ce20313-f17a-4535-9505-30b12a6fd9c8",
@@ -169,9 +177,17 @@
       "8308b1c4-adcd-4581-9380-b2e722418c97"
      ]
     },
-    "a6231fc1-dc2b-458a-a48f-9feda13efa91": {
+    "8006d294-0c7f-4be6-8857-0b533664d6a4": {
+     "title": "Byggekvalitet",
+     "id": "8006d294-0c7f-4be6-8857-0b533664d6a4",
+     "references": [
+      "aae95b40-974b-47ff-80e7-e135ab786665",
+      "aa928ed5-89ca-4308-9416-8e03f7c04414"
+     ]
+    },
+    "03f5f7d5-4e5c-4720-b0f4-436fc0efec0e": {
      "title": "Pris",
-     "id": "a6231fc1-dc2b-458a-a48f-9feda13efa91",
+     "id": "03f5f7d5-4e5c-4720-b0f4-436fc0efec0e",
      "references": [
       "731bbc99-a9eb-41d7-a122-a1e17cfeae9b",
       "e797784b-5734-4c68-8eb5-169230392cc3"

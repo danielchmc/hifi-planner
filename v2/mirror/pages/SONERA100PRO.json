@@ -36,6 +36,20 @@
   "brandPage": "/marker/sonos/",
   "techSpecs": [
    {
+    "index": 9,
+    "title": "Tilslutninger",
+    "content": [
+     {
+      "term": "Indgang (andet)",
+      "value": "Ethernet"
+     },
+     {
+      "term": "Trådløs overførsel",
+      "value": "SonosNet, Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -50,20 +64,6 @@
      {
       "term": "Tilslutninger (kablet)",
       "value": "Ethernet"
-     }
-    ]
-   },
-   {
-    "index": 9,
-    "title": "Tilslutninger",
-    "content": [
-     {
-      "term": "Indgang (andet)",
-      "value": "Ethernet"
-     },
-     {
-      "term": "Trådløs overførsel",
-      "value": "SonosNet, Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom"
      }
     ]
    },
@@ -118,21 +118,21 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Aktiv installationshøjtaler med Sonos-streaming og multirum\nLeveres og prissættes i par\nStrøm og netværk via samme RJ45 Ethernet-tilslutning (100Base-T)\nAnbefalet strømforsyning: PoE+ / IEEE 802.3at, maks. 30 W pr. højtaler\nKompatibel strømforsyning: PoE / IEEE 802.3af, maks. 15,4 W pr. højtaler (mulig ydelsesbegrænsning)\nNetværkskabel: CAT5 eller højere, op til 100 meter. CAT6 anbefales til faste installationer\nTrådløst netværk: Wi-Fi 6 (802.11a/b/g/n/ac/ax, 2,4/5 GHz), kræver stadig PoE-strøm\nOp til 16 kompatible produkter pr. zone, kablet netværk anbefales\nAutomatisk DSP-tilpasning til stående, liggende og nedadvendt montage\nTrueplay-tuning til enkeltstående højtalere og stereopar (ikke i zoner)\nApp-baseret EQ med bas, diskant og loudness\nMikrofonarray til stemmestyring og Trueplay med fysisk, elektrisk mikrofonafbryder\nTouchbetjening på højtaleren samt statuslys for PoE-type og netværksaktivitet\nDedikeret ophængsbeslag med indekseret kugleled, ±30° tilt/pan, 360° rotation, skjult/synlig kabelføring og tyverisikring fås som ekstratilbehør\nSamledåse adapter til Surface Mount fås som ekstratilbehør\nSekundært sikkerhedsfæste muligt via øjebolt (medfølger)\nKun beregnet til indendørs brug\nOBS: Produktet forhandles kun gennem udvalgte HiFi Klubben-butikker og kun inklusive installation"
-     }
-    ]
-   },
-   {
     "index": 12,
     "title": "Streaming",
     "content": [
      {
       "term": "Streaming services, musik",
       "value": "Spotify, Tidal, youSee musik, Apple Music, Soundcloud, Deezer"
+     }
+    ]
+   },
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Aktiv installationshøjtaler med Sonos-streaming og multirum\nLeveres og prissættes i par\nStrøm og netværk via samme RJ45 Ethernet-tilslutning (100Base-T)\nAnbefalet strømforsyning: PoE+ / IEEE 802.3at, maks. 30 W pr. højtaler\nKompatibel strømforsyning: PoE / IEEE 802.3af, maks. 15,4 W pr. højtaler (mulig ydelsesbegrænsning)\nNetværkskabel: CAT5 eller højere, op til 100 meter. CAT6 anbefales til faste installationer\nTrådløst netværk: Wi-Fi 6 (802.11a/b/g/n/ac/ax, 2,4/5 GHz), kræver stadig PoE-strøm\nOp til 16 kompatible produkter pr. zone, kablet netværk anbefales\nAutomatisk DSP-tilpasning til stående, liggende og nedadvendt montage\nTrueplay-tuning til enkeltstående højtalere og stereopar (ikke i zoner)\nApp-baseret EQ med bas, diskant og loudness\nMikrofonarray til stemmestyring og Trueplay med fysisk, elektrisk mikrofonafbryder\nTouchbetjening på højtaleren samt statuslys for PoE-type og netværksaktivitet\nDedikeret ophængsbeslag med indekseret kugleled, ±30° tilt/pan, 360° rotation, skjult/synlig kabelføring og tyverisikring fås som ekstratilbehør\nSamledåse adapter til Surface Mount fås som ekstratilbehør\nSekundært sikkerhedsfæste muligt via øjebolt (medfølger)\nKun beregnet til indendørs brug\nOBS: Produktet forhandles kun gennem udvalgte HiFi Klubben-butikker og kun inklusive installation"
      }
     ]
    }
@@ -192,7 +192,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "34 x 28,999999999999996 x 20 cm (bredde x højde x dybde)"
+        "value": "34 x 29 x 20 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -291,7 +291,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "34 x 28,999999999999996 x 20 cm (bredde x højde x dybde)"
+        "value": "34 x 29 x 20 cm (bredde x højde x dybde)"
        }
       ]
      }

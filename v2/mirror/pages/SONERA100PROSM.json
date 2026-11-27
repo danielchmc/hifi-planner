@@ -21,7 +21,7 @@
    "f83738a7-089c-4e99-a7bc-d1476eba21ab",
    "78762637-de50-45c1-b773-1e29b52350a7"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 298346,
@@ -189,11 +189,10 @@
      "productCode": "SONERA100PROSMWH"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

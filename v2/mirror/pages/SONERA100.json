@@ -63,15 +63,24 @@
     "SONERA100SL",
     "SONERA300",
     "SONFIVE",
-    "BLSP130",
-    "DENHOME150",
     "SONERA100SLBUNDLE",
+    "BLSP130",
     "DENHOME200",
+    "DENHOME150",
     "MARACTON3"
    ],
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløs højtaler med multirum \nTouchknapper til afspilning, lydstyrke og mikrofon på topplade\nTrådløs kontrol via Sonos S2 app (iOS/Android) eller PC/Mac\nTo styk kan konfigureres til at spille højre/venstre kanal i stereo eller fungere som trådløse baghøjtalere til surround\nEQ til bas, diskant og loudness via app \nTrueplay rumkorrektion (Apple iOS/Android)\nStemmestyring via indbygget mikrofon (Amazon Alexa). OBS: Sprog og understøttede funktioner i stemmestyringen afhænger af din nationale udbyder.\nLydformater**: MP3, WMA, AAC (MPEG4), Ogg Vorbis, Audible .AA (format 4), Apple Lossless, FLAC (lossless), WAV, AIFF \n3 x digitale klasse D-forstærkere \n2 x diskant \n1 x bas/mellemtone\nIndbygget dual-band wi-fi (WiFi 6, 802.11a/b/g/n/ac/ax, 2.4/5GHz)\n2 meter strømkabel og Quick startguide medfølger\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. \n** 24-bit afspilning på Sonos er teknisk muligt, hvis både streamingtjeneste og Sonos understøtter formatet. Denne funktion er under stadig udvikling, og vi anbefaler at kontakte Sonos direkte for aktuel status."
+     }
+    ]
+   },
    {
     "index": 9,
     "title": "Tilslutninger",
@@ -87,6 +96,16 @@
      {
       "term": "Trådløs overførsel",
       "value": "SonosNet, Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom"
+     }
+    ]
+   },
+   {
+    "index": 12,
+    "title": "Streaming",
+    "content": [
+     {
+      "term": "Streaming services, musik",
+      "value": "Spotify, Tidal, youSee musik, Apple Music, Soundcloud, Deezer"
      }
     ]
    },
@@ -141,25 +160,6 @@
      {
       "term": "Stemmestyring",
       "value": "Indbygget"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløs højtaler med multirum \nTouchknapper til afspilning, lydstyrke og mikrofon på topplade\nTrådløs kontrol via Sonos S2 app (iOS/Android) eller PC/Mac\nTo styk kan konfigureres til at spille højre/venstre kanal i stereo eller fungere som trådløse baghøjtalere til surround\nEQ til bas, diskant og loudness via app \nTrueplay rumkorrektion (Apple iOS/Android)\nStemmestyring via indbygget mikrofon (Amazon Alexa). OBS: Sprog og understøttede funktioner i stemmestyringen afhænger af din nationale udbyder.\nLydformater**: MP3, WMA, AAC (MPEG4), Ogg Vorbis, Audible .AA (format 4), Apple Lossless, FLAC (lossless), WAV, AIFF \n3 x digitale klasse D-forstærkere \n2 x diskant \n1 x bas/mellemtone\nIndbygget dual-band wi-fi (WiFi 6, 802.11a/b/g/n/ac/ax, 2.4/5GHz)\n2 meter strømkabel og Quick startguide medfølger\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. \n** 24-bit afspilning på Sonos er teknisk muligt, hvis både streamingtjeneste og Sonos understøtter formatet. Denne funktion er under stadig udvikling, og vi anbefaler at kontakte Sonos direkte for aktuel status."
-     }
-    ]
-   },
-   {
-    "index": 12,
-    "title": "Streaming",
-    "content": [
-     {
-      "term": "Streaming services, musik",
-      "value": "Spotify, Tidal, youSee musik, Apple Music, Soundcloud, Deezer"
      }
     ]
    },
@@ -242,7 +242,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 990,
+     "availableQuantity": 883,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,7 +357,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 2013,
+     "availableQuantity": 1937,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -485,209 +485,6 @@
   ],
   "bundleRelations": [
    {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 15708,
-     "priceFormatted": "15.708,-",
-     "priceBefore": 19078,
-     "priceBeforeFormatted": "19.078,-",
-     "priceSavingsFormatted": "3.370,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 15708,
-     "unitPriceBefore": 19078
-    },
-    "image": "https://images.hifiklubben.com/image/76e7d609-92d8-4b74-9652-8d621d8f63ad",
-    "ribbons": [
-     {
-      "text": "Spar 18%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub G4 + Era 100",
-    "url": "/sonarcultra-sonsubg4-sonera100/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 8958,
-     "priceFormatted": "8.958,-",
-     "priceBefore": 10819,
-     "priceBeforeFormatted": "10.819,-",
-     "priceSavingsFormatted": "1.861,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8958,
-     "unitPriceBefore": 10819
-    },
-    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
-    "ribbons": [
-     {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Beam (Gen 2) + Era 100 + Sub Mini",
-    "url": "/sonos-beam-era100-sub/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 12758,
-     "priceFormatted": "12.758,-",
-     "priceBefore": 15378,
-     "priceBeforeFormatted": "15.378,-",
-     "priceSavingsFormatted": "2.620,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 12758,
-     "unitPriceBefore": 15378
-    },
-    "image": "https://images.hifiklubben.com/image/6319c4d7-b6d3-40b7-8f70-eed20e4b463d",
-    "ribbons": [
-     {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub Mini + Era 100",
-    "url": "/sonarcultra-sonsubmini-sonera100/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 9759,
-     "priceFormatted": "9.759,-",
-     "priceBefore": 11629,
-     "priceBeforeFormatted": "11.629,-",
-     "priceSavingsFormatted": "1.870,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 9759,
-     "unitPriceBefore": 11629
-    },
-    "image": "https://images.hifiklubben.com/image/b2671737-31b7-4752-8f02-fef65a3dc323",
-    "ribbons": [
-     {
-      "text": "Spar 16%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Era 100",
-    "url": "/sonarcultra-era100/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 5959,
-     "priceFormatted": "5.959,-",
-     "priceBefore": 7070,
-     "priceBeforeFormatted": "7.070,-",
-     "priceSavingsFormatted": "1.111,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 5959,
-     "unitPriceBefore": 7070
-    },
-    "image": "https://images.hifiklubben.com/image/6a22aeae-8442-4ea0-a7f6-0acbd5379033",
-    "ribbons": [
-     {
-      "text": "Spar 16%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Beam (Gen 2) + Era 100",
-    "url": "/sonos-beam-era100/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 7708,
-     "priceFormatted": "7.708,-",
-     "priceBefore": 8458,
-     "priceBeforeFormatted": "8.458,-",
-     "priceSavingsFormatted": "750,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 7708,
-     "unitPriceBefore": 8458
-    },
-    "image": "https://images.hifiklubben.com/image/9ac4a085-8c49-4676-b980-06bd0c5054ce",
-    "ribbons": [
-     {
-      "text": "Spar 9%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos-Ray-Era-100-Sub-Mini",
-    "url": "/ray-era100-mini/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 12069,
-     "priceFormatted": "12.069,-",
-     "priceBefore": 12819,
-     "priceBeforeFormatted": "12.819,-",
-     "priceSavingsFormatted": "750,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 12069,
-     "unitPriceBefore": 12819
-    },
-    "image": "https://images.hifiklubben.com/image/2482252b-9ba2-40fd-96ec-48b35a8cb4b7",
-    "ribbons": [
-     {
-      "text": "Spar 6%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Beam Ultra + Era 100 + Sub Mini",
-    "url": "/sonbeamultra-era100-submini/"
-   },
-   {
     "modelType": "Trådløs højtaler",
     "price": {
      "price": 3380,
@@ -701,6 +498,56 @@
     "image": "https://images.hifiklubben.com/image/fb7c6915-d5fe-4932-be3a-602146b240fc",
     "title": "Sonos Era 100 x2",
     "url": "/sonos-era-100_1/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 5959,
+     "priceFormatted": "5.959,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 5959,
+     "unitPriceBefore": 5959
+    },
+    "image": "https://images.hifiklubben.com/image/6a22aeae-8442-4ea0-a7f6-0acbd5379033",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Sonos Beam (Gen 2) + Era 100",
+    "url": "/sonos-beam-era100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 8958,
+     "priceFormatted": "8.958,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8958,
+     "unitPriceBefore": 8958
+    },
+    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Sonos Beam (Gen 2) + Era 100 + Sub Mini",
+    "url": "/sonos-beam-era100-sub/"
    },
    {
     "modelType": "Højtaler med tilbehør",
@@ -720,17 +567,102 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 4709,
-     "priceFormatted": "4.709,-",
+     "price": 9759,
+     "priceFormatted": "9.759,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 4709,
-     "unitPriceBefore": 4709
+     "unitPrice": 9759,
+     "unitPriceBefore": 9759
     },
-    "image": "https://images.hifiklubben.com/image/3c29045b-75e2-4d7f-b5c0-25f68178f11d",
-    "title": "Sonos Ray + Era 100",
-    "url": "/ray-era100/"
+    "image": "https://images.hifiklubben.com/image/b2671737-31b7-4752-8f02-fef65a3dc323",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Arc Ultra + Era 100",
+    "url": "/sonarcultra-era100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 15708,
+     "priceFormatted": "15.708,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 15708,
+     "unitPriceBefore": 15708
+    },
+    "image": "https://images.hifiklubben.com/image/76e7d609-92d8-4b74-9652-8d621d8f63ad",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Arc Ultra + Sub G4 + Era 100",
+    "url": "/sonarcultra-sonsubg4-sonera100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 12758,
+     "priceFormatted": "12.758,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 12758,
+     "unitPriceBefore": 12758
+    },
+    "image": "https://images.hifiklubben.com/image/6319c4d7-b6d3-40b7-8f70-eed20e4b463d",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Arc Ultra + Sub Mini + Era 100",
+    "url": "/sonarcultra-sonsubmini-sonera100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 12069,
+     "priceFormatted": "12.069,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 12069,
+     "unitPriceBefore": 12069
+    },
+    "image": "https://images.hifiklubben.com/image/2482252b-9ba2-40fd-96ec-48b35a8cb4b7",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Beam Ultra + Era 100 + Sub Mini",
+    "url": "/sonbeamultra-era100-submini/"
    },
    {
     "modelType": "Soundbar system/pakke",
@@ -750,34 +682,41 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONOS Era 100 roses bredt for varm, klar, fyldig og overraskende rummelig lyd fra en kompakt højttaler. Den nemme integration med eksisterende Sonos-systemer, stereopar og surroundopsætninger er en stor styrke, ligesom Bluetooth, AirPlay og line-in. De største forbehold handler om lejlighedsvise problemer med opsætning og netværk, en til tider besværlig Sonos-app, begrænset understøttelse af stemmeassistenter og bas eller dynamik, der kan virke beskeden med én højttaler i større rum.",
+   "summary": "SONOS Era 100 leverer en imponerende varm, klar, punchy og omsluttende lyd fra et kompakt kabinet, især i mindre rum, som stereopar og i surround-anlæg. Opsætning og integration med eksisterende Sonos-udstyr er som regel nem, mens Bluetooth, line-in, AirPlay og multiroom-afspilning giver ekstra fleksibilitet. De største forbehold handler om lejlighedsvise problemer med netværk eller app, begrænset understøttelse af stemmeassistenter, forsinkelse via Bluetooth eller line-in samt begrænset bas eller rumfornemmelse fra én enkelt højttaler.",
    "headlines": {
-    "rich, room-filling sound from a compact speaker": {
-     "sentimentAnalysis": "Det kompakte format skjuler en varm, klar og fyldig gengivelse med imponerende bas.",
-     "simpleTitle": "Fyldig, rumfyldende lyd fra en kompakt højttaler",
+    "app, network and voice-control frustrations": {
+     "sentimentAnalysis": "Den tilbagevendende kritik gælder ustabile forbindelser, en til tider forvirrende app, svært tilgængelig support og stemmeassistenter med manglende sprogunderstøttelse eller ustabil funktion.",
+     "simpleTitle": "Problemer med app, netværk og stemmestyring",
+     "bias": "negative",
+     "key": "connectivity",
+     "groupId": "35db50c4-e04d-40fc-a278-bdc752c0103d"
+    },
+    "warm, clear and powerful sound from a compact speaker": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en fyldig, klar og rumfyldende gengivelse med imponerende punch og bas i forhold til størrelsen.",
+     "simpleTitle": "Varm, klar og kraftfuld lyd fra en kompakt højttaler",
      "bias": "positive",
      "key": "sound",
-     "groupId": "a627e2cc-f37b-439f-a90d-446c73a3b220"
+     "groupId": "fb56f429-d721-4259-bf58-d5df87c855e5"
     },
-    "easy to add to existing Sonos systems": {
-     "sentimentAnalysis": "Højttaleren beskrives ofte som en nem og fleksibel tilføjelse til stereo, multiroom og hjemmebiograf.",
-     "simpleTitle": "Nem at integrere i eksisterende Sonos-systemer",
+    "easy setup and strong Sonos integration": {
+     "sentimentAnalysis": "De fleste anmeldelser roser den hurtige opsætning og problemfri udvidelse af eksisterende Sonos-anlæg, men enkelte oplever frustrerende problemer med registrering, Wi-Fi eller appen.",
+     "simpleTitle": "Nem opsætning og stærk Sonos-integration",
      "bias": "positive",
-     "key": "ecosystem",
-     "groupId": "b1feaf75-7f1a-44e5-940b-73fa4faabb05"
-    },
-    "setup and app issues can be frustrating": {
-     "sentimentAnalysis": "Selvom mange opsætninger går hurtigt, nævner flere anmeldelser ustabil registrering, Wi-Fi-udfald, en kompliceret app og vanskelig support.",
-     "simpleTitle": "Problemer med opsætning og app kan være frustrerende",
-     "bias": "negative",
      "key": "setup",
-     "groupId": "a09c81d2-5953-4869-8310-10b6b84ae847"
+     "groupId": "db013c92-9575-4b3a-8424-d679a56f381c"
+    },
+    "single-speaker bass and spaciousness can be limited": {
+     "sentimentAnalysis": "Et mindretal oplever den enkelte højttaler som for tynd, utilstrækkelig dynamisk eller mindre rumlig end forventet; et stereopar eller en subwoofer løser ofte begrænsningen.",
+     "simpleTitle": "Bas og rumfornemmelse kan være begrænset med én højttaler",
+     "bias": "negative",
+     "key": "sound",
+     "groupId": "fb56f429-d721-4259-bf58-d5df87c855e5"
     }
    },
    "grouping": {
-    "a627e2cc-f37b-439f-a90d-446c73a3b220": {
+    "fb56f429-d721-4259-bf58-d5df87c855e5": {
      "title": "Lydkvalitet",
-     "id": "a627e2cc-f37b-439f-a90d-446c73a3b220",
+     "id": "fb56f429-d721-4259-bf58-d5df87c855e5",
      "references": [
       "e2c121f9-101b-4128-91d3-159ec1a8c544",
       "5a677127-1265-4d8c-a8ae-9a52b215a934",
@@ -786,250 +725,90 @@
       "ef353673-3bcd-4a35-a69b-7a8209e778d0",
       "9b448ef0-7969-4f45-806c-0dfa339e3452",
       "b2f4d397-8a31-43b5-9323-dc7a9ff4bbd9",
-      "c959eae7-090f-4c49-b600-e63e36f89758",
-      "6313a5d1-09dd-4bc2-8f6f-8665f71ee945",
       "16264582-ae07-4252-9ce1-eaf5f435eb52",
-      "04c1590c-993f-4456-aa27-ecfd594380a5",
-      "ef3da2f5-1165-4d60-8010-300fc9ab0171",
       "5a1a494f-2599-43db-a875-85afdba86012",
-      "1b1169c3-0ebd-49bd-a4a5-cd4d1c1b8098",
-      "3c375267-8dea-47ac-a035-5da230eddc43",
-      "f49c6fc2-863e-422e-87fe-6eb1e40b42ff",
-      "4f5c41a3-2734-451b-bf8d-d267d67ed6b9",
+      "d373a116-587b-409c-b466-d404c10a5964",
       "566f1225-1312-48a3-b2c1-0caec32bd06e",
       "168402d7-1452-4eb8-8b4b-7149d1f16a11",
-      "02c0c222-3857-4337-a53e-242f2e0dfe5c",
-      "c5f2d158-038c-4738-b4c6-4f8a5502a330",
-      "d373a116-587b-409c-b466-d404c10a5964",
-      "d45396ea-f4d8-40e3-84cf-400d14dcead3",
-      "6e59349d-af8c-44b7-9f50-ff0aba654073",
-      "6f1e5cbe-ca3f-4273-bd7a-1b6bad353a6b",
-      "a9c8fedf-848e-4d5e-a6b4-112b726d1fe4",
-      "26843b44-b6af-418d-9c07-75607058255a",
-      "55c094bf-56c7-4922-b15b-05af1e26b4de",
-      "a2204e29-09e3-4ffb-87f3-3a498c95b0df",
+      "efc5ebb0-885f-45d0-98a5-7caf298016f6",
+      "e66d2f9f-95be-4de4-9af8-a854132d4877",
       "07044912-ea9e-475f-b0ee-0647c75e2144",
       "d9879daa-cc08-48cf-ab33-76db3defd579",
       "bad79588-810a-4c88-99a3-3a7b1466f24a",
-      "e66d2f9f-95be-4de4-9af8-a854132d4877",
-      "91cc45ed-8dd4-4115-9256-43e23d144dbb",
+      "e34a1e77-59e7-41e9-9cd4-d48f933b29ec",
       "095055ea-bb39-4131-b020-1db160c9a698",
-      "38e6cedd-270d-4418-b27a-52fa2291e63a",
-      "83d53262-532e-4bab-a778-a01a7bdeb968",
-      "585d3aba-059f-4559-912b-99f796fc1124",
-      "923f505c-f56d-48c9-8d60-071e3f1f462d",
       "e69280b4-bf96-48ed-b033-1150d41b29de",
       "e5a24106-8284-4b02-b700-d6354bbab4b8",
-      "12187c5b-530a-4d20-9df0-3f03b10948ef",
       "d6fe6f03-41b4-4db2-af9a-a881b4389455",
-      "52038a81-9c63-4be6-b874-ab4f4ed86ef1",
-      "4fc26c0f-fa54-477b-9a16-09f08695f24a",
-      "5e225636-c3f1-4c09-ad9b-e71d15724e5a",
-      "f18139ef-061d-4688-9bf3-65f4bf8ce231",
-      "40de8a07-334f-42ad-ac95-28a38e0cead0",
-      "98bfab73-ac0c-48a4-8e8d-7421853e8046",
       "efc5ebb0-885f-45d0-98a5-7caf298016f6",
-      "83d53262-532e-4bab-a778-a01a7bdeb968",
-      "71a1406b-aea8-4714-816c-4144724b674d",
-      "2cf4d52c-4590-471b-b146-e872bfd26709",
-      "e34a1e77-59e7-41e9-9cd4-d48f933b29ec",
-      "8d90d5c1-d36b-4fe4-9d4e-4ab286741f34",
-      "e70bf402-6956-4c26-8dac-ad34a6d95ed7",
-      "c9252b8c-a903-4a79-9459-c697251a2d48",
-      "e66d2f9f-95be-4de4-9af8-a854132d4877",
-      "9c82021d-f867-4b27-af9b-da0914b4861b",
-      "47655318-3c67-43da-b5a8-b4dd62bc35a5",
-      "83c04a5a-2a8b-4f25-88d2-e27217a7ba09",
-      "d8f60109-c20f-467c-a3ae-5ae6e690c546",
-      "efc5ebb0-885f-45d0-98a5-7caf298016f6",
-      "2cf4d52c-4590-471b-b146-e872bfd26709",
-      "585d3aba-059f-4559-912b-99f796fc1124",
-      "e69280b4-bf96-48ed-b033-1150d41b29de",
-      "f18139ef-061d-4688-9bf3-65f4bf8ce231",
-      "40de8a07-334f-42ad-ac95-28a38e0cead0",
-      "e1b0c859-581e-402c-9365-baaace878bbd",
-      "56e9f3af-1ba5-4b65-8ab2-d012d759d61e",
-      "20c46216-95e9-43a7-b762-5ba114014467",
-      "efe831e3-bae7-479c-add4-caab49ec5afa",
-      "3c7bd4c8-ba11-4c34-88c1-5ca3978ed946",
-      "5939de96-31dd-4e4d-b816-16526f5f11b6",
-      "817e4eca-cf6e-4ce1-b030-9ecca0ba0da2",
-      "dde8ef87-217a-4235-86f3-035bce36d244",
-      "a2915b97-c268-4bc6-98ee-d43185c937ab",
-      "35344fa7-cfae-46d3-8b14-7faa92f552d9",
-      "5f01c968-5b42-4631-9f77-f165aef0f099",
-      "d68d3dcd-d5ef-4ac9-b4d1-6f7296a221bb",
-      "80c28e8c-14a5-47b5-9c7d-820d18161d4d",
-      "e0e527f6-cd3f-42a9-877e-4907d492daa1",
       "c853e49b-d3cf-49fc-875c-1a8d84361204",
-      "74241cde-a183-4784-a8ac-b583ca34bd1e",
-      "22fcf5bc-9fe4-49c7-9797-e90cd6f1a64e",
-      "8362c234-0c4f-4751-8440-a40c95216700",
-      "6e0f88a7-1d80-4fee-8af4-437d47ec4f33",
-      "91b42a2c-0371-477f-a566-470b4dff2d4d",
-      "99d6aa21-5d8c-40ea-a41e-ef9f95f06b49",
-      "d12a267c-c906-4a7e-aa38-e38ed4736b54",
-      "b2ed1701-98ab-4276-818a-bd8c5d8beb66",
-      "0543fd0b-7f95-483a-b6b4-6bc20fc3ade6",
-      "835a4c1b-bd99-486b-86df-733e19cb5442",
-      "9616e76b-b10f-4c73-8760-caedb1ab590f",
-      "a66f8924-9842-4fe7-8849-5c67ee728930",
-      "20b496cc-12a2-4302-ba4b-55674be6f992",
-      "877efd72-d977-457b-a17b-9107fd01ed8f",
-      "934ab597-5979-4992-8800-e77cf53fbc75",
-      "7a6258c1-b60a-4d8d-9661-9ca8e44219e9",
-      "d0ab0b1d-b623-478b-a640-d838a86b1ccf",
-      "fe075dd4-0bd6-4858-afd3-453226fc0326",
-      "5528d84f-aaff-470f-a64f-545469f40c6b",
-      "4827f5dd-d9ce-44c0-b0b8-4255e58d572b",
-      "e9ff90c1-66ce-4f38-9638-aecbf948fdcd",
-      "8bddf36b-e45b-46d9-ab7e-433d22d218cf",
-      "2a56c4bb-5501-414e-9a5e-78da5d85952e",
-      "9e003196-26e6-46d0-b813-dbceefc86b50",
-      "cf123b11-63e5-4da7-9bd7-bd58293c816f",
-      "3856a6c0-75e0-4d80-8bdc-61b3e602d9ee",
-      "3976b910-d641-48b3-aabe-02752c95af3c",
-      "0c7615a1-1c43-4f9d-b4ab-214a947cd578",
-      "906b41c3-58d3-4937-8394-704fb3dbb20f",
-      "76bd54ac-6c5d-4d5f-8a8c-81339e1415d5",
-      "9efb8ab0-95c0-42ec-bf4f-4205a674e0e5",
-      "b0c6e8a9-d2b5-45f3-8574-0c443bef9873",
-      "3beffdbe-5209-4f1e-b41b-3206aa69dcd8",
-      "952af5fa-6b67-45dd-9dd1-a117bca676d4",
-      "22d74b17-2dd2-429b-a1c7-e5d95d66c54f",
-      "1aa36e54-0acf-426f-8ec1-4ef9a0e8e661",
+      "a2915b97-c268-4bc6-98ee-d43185c937ab",
+      "e8cdeec6-19a8-4c3d-994d-59d02107c7f9",
       "024c5e27-b2a5-4d7f-8a24-446adde74685",
-      "4c6807ee-dc7d-4966-b565-4f19f7d60b44",
-      "cf123b11-63e5-4da7-9bd7-bd58293c816f",
+      "32909e16-679e-4038-ab2f-6aa3eb778f01",
+      "d0ab0b1d-b623-478b-a640-d838a86b1ccf",
       "a2bb9064-b0f0-4ac9-8201-a606aa73d156"
      ]
     },
-    "a09c81d2-5953-4869-8310-10b6b84ae847": {
-     "title": "Opsætning og forbindelse",
-     "id": "a09c81d2-5953-4869-8310-10b6b84ae847",
+    "db013c92-9575-4b3a-8424-d679a56f381c": {
+     "title": "Opsætning og installation",
+     "id": "db013c92-9575-4b3a-8424-d679a56f381c",
      "references": [
       "f286a8ca-d352-4ae8-9ea4-bff03e81b768",
-      "b2f4d397-8a31-43b5-9323-dc7a9ff4bbd9",
       "c959eae7-090f-4c49-b600-e63e36f89758",
       "6313a5d1-09dd-4bc2-8f6f-8665f71ee945",
       "ef3da2f5-1165-4d60-8010-300fc9ab0171",
       "3c375267-8dea-47ac-a035-5da230eddc43",
       "4f5c41a3-2734-451b-bf8d-d267d67ed6b9",
-      "015f9179-0a8d-4b38-a59e-941582f0cb92",
-      "876163b1-664f-49f1-b777-c22bf1bd3479",
       "6e59349d-af8c-44b7-9f50-ff0aba654073",
+      "6f1e5cbe-ca3f-4273-bd7a-1b6bad353a6b",
       "b4401393-f6de-42ee-a6ad-32f867a7a27f",
       "64da14e4-691e-4c23-abae-dbc925eb38be",
       "a2204e29-09e3-4ffb-87f3-3a498c95b0df",
-      "9e15e8d9-3079-4061-a305-3d796ce29940",
-      "e34a1e77-59e7-41e9-9cd4-d48f933b29ec",
-      "7f466b96-4ab3-4bf5-8504-17a91f49e047",
-      "4793f0a1-5ead-44d0-993e-442c339ebfec",
       "420b61bf-1a35-436c-b3e4-42c6af59adbd",
       "3e1d9e2a-8098-495f-8bbf-523654932e3d",
-      "fa40b9ee-0dd0-4cb4-9578-a2c6e21b484f",
-      "d7a78997-6e4a-486b-ad38-58971db6cd64",
-      "34aefd44-f4fd-4ce8-a779-4eaf76c0b6fb",
-      "9a7c089d-107f-4693-a370-7a8bd40484b2",
-      "52038a81-9c63-4be6-b874-ab4f4ed86ef1",
+      "e34a1e77-59e7-41e9-9cd4-d48f933b29ec",
+      "7f466b96-4ab3-4bf5-8504-17a91f49e047",
       "83c04a5a-2a8b-4f25-88d2-e27217a7ba09",
-      "9258db2f-2b17-4bb3-aa91-d1c480cb2c46",
-      "7f9fc15a-16a6-4497-a40f-d9fe79ebe3ec",
-      "3e1d9e2a-8098-495f-8bbf-523654932e3d",
-      "fa40b9ee-0dd0-4cb4-9578-a2c6e21b484f",
-      "71b58244-270f-45a2-bdca-f357eb3b4ce5",
+      "47655318-3c67-43da-b5a8-b4dd62bc35a5",
       "4793f0a1-5ead-44d0-993e-442c339ebfec",
+      "71b58244-270f-45a2-bdca-f357eb3b4ce5",
+      "fa40b9ee-0dd0-4cb4-9578-a2c6e21b484f",
+      "16b401da-4f12-4a1a-aac1-1f8b3f5859ab",
+      "3c7bd4c8-ba11-4c34-88c1-5ca3978ed946",
       "2a8aacab-c27a-4aa4-987d-411372857041",
-      "f513551d-4f60-4428-8a69-69855d0eb284",
-      "b05549f3-aa9f-4f8d-8234-be5b2f67b684",
-      "a399e28b-33dd-4466-a4bd-c75fd537fa47",
-      "59c7dd4a-2cf3-41ea-9726-b991350b7a11",
-      "bda997c5-c413-4f1a-9296-a88ee9ed4513",
-      "45fa607b-801b-4095-b158-3bf400fdaf0f",
-      "e0e527f6-cd3f-42a9-877e-4907d492daa1",
       "7089222f-36b6-401b-ad12-3bc503d48472",
-      "5e9a3af7-832b-44ee-a1d3-6e342dbceca6",
-      "70b942b0-c7af-4888-842b-12e4373ad978",
-      "31c2ca97-65ba-44c5-8f43-4e0ed3155d45",
-      "3d9c7afd-ac90-468a-aef7-8278c847b300",
-      "3735c145-4839-4b50-9b00-5983e13516cf",
-      "9a6620f0-407b-437e-bbdb-591a6e99358a",
-      "a63bbebe-b556-423e-b7db-746ce2e55a26",
-      "c446fb47-0f82-4db8-ae24-23aa776fc6ae",
-      "2fd66b66-0d06-4e88-9809-36ac8cda6e8a",
-      "f41406b9-7cfc-4a87-bb02-358535cf3a2e",
-      "8f7a2a93-148e-4b64-974a-24ccf2498125",
-      "df5c06af-206c-4a0a-9b19-7465f28c2fad",
-      "682baaaf-aca5-4157-804a-8373e84ea43b",
-      "81654846-3872-4c2c-8085-f76393c8fc9d",
-      "01bfc659-9413-49b8-b2f1-8d33a181d790",
-      "0eab5a45-f5cd-43d2-9e0e-5c858f70fdde",
-      "8f7dc75c-4031-43f9-82e5-dcf0822dcea8",
-      "a737b21e-ec4f-49f6-b8cf-06f67930b70d",
-      "87cb5dbf-c72e-4b38-a358-65666570f774",
-      "51809eec-daa1-4a05-b7dd-a625ab2d2c97",
-      "2b7daa9f-8773-443a-ab3a-ba8610319c03",
-      "c93ad902-82dc-4a59-8d59-21bfcdf26bd0",
-      "b50a0013-0687-4e64-a396-458214680b88",
-      "7c07e60e-a2bd-44ff-834c-f705bb94e119",
-      "a465447f-7b6d-4820-9fce-7f1aca92618e",
-      "d4f5c35e-67b5-4fb3-88dd-12fe1bc21b8d",
-      "339fa97a-cb29-49d7-827c-4646cd0a7bfb",
-      "d1432f9a-c0db-4873-a13f-8d0ef6914943",
-      "c164d8ab-4cfe-495d-89d7-c4ad57de32ca",
-      "ac73b1d6-2ff6-4cc1-92eb-98192d8fc1f2",
-      "4b26e47d-747a-4c76-b0be-a125b1d2382c",
-      "2a56c4bb-5501-414e-9a5e-78da5d85952e",
-      "673bdc6d-b287-4838-bd5f-41bcd9dd2107",
-      "f513551d-4f60-4428-8a69-69855d0eb284"
+      "31c2ca97-65ba-44c5-8f43-4e0ed3155d45"
      ]
     },
-    "b1feaf75-7f1a-44e5-940b-73fa4faabb05": {
-     "title": "Multiroom- og surroundintegration",
-     "id": "b1feaf75-7f1a-44e5-940b-73fa4faabb05",
+    "35db50c4-e04d-40fc-a278-bdc752c0103d": {
+     "title": "Tilslutning og betjening",
+     "id": "35db50c4-e04d-40fc-a278-bdc752c0103d",
      "references": [
-      "139b266b-3f4f-4eb3-8627-20d7aefd3b14",
-      "f0fc3f0f-2f7d-45d5-aa4c-5dfcfd6511af",
-      "02c0c222-3857-4337-a53e-242f2e0dfe5c",
-      "c5f2d158-038c-4738-b4c6-4f8a5502a330",
-      "015f9179-0a8d-4b38-a59e-941582f0cb92",
-      "6f1e5cbe-ca3f-4273-bd7a-1b6bad353a6b",
-      "b4401393-f6de-42ee-a6ad-32f867a7a27f",
-      "a9c8fedf-848e-4d5e-a6b4-112b726d1fe4",
-      "9c82021d-f867-4b27-af9b-da0914b4861b",
-      "26a6369b-15e8-45a7-96bf-416d13f60792",
-      "4793f0a1-5ead-44d0-993e-442c339ebfec",
-      "e34a1e77-59e7-41e9-9cd4-d48f933b29ec",
-      "8d90d5c1-d36b-4fe4-9d4e-4ab286741f34",
-      "cbd20377-6759-43e6-971e-4b47e92222fe",
-      "2cf4d52c-4590-471b-b146-e872bfd26709",
-      "1a636595-845a-4b70-8273-7cee37beadbf",
-      "75578ed3-78d3-4553-bbf2-8f8251aa8969",
-      "6cadaac9-75bf-45a7-8192-b617fdfd8fce",
-      "9a7c089d-107f-4693-a370-7a8bd40484b2",
-      "e0e527f6-cd3f-42a9-877e-4907d492daa1",
-      "5f01c968-5b42-4631-9f77-f165aef0f099",
-      "1a7e8084-3719-4a98-9a88-7a995a574577",
-      "d68d3dcd-d5ef-4ac9-b4d1-6f7296a221bb",
-      "59c7dd4a-2cf3-41ea-9726-b991350b7a11",
-      "bfc5257d-e2c9-4832-841b-faaa3c98cac4",
-      "35344fa7-cfae-46d3-8b14-7faa92f552d9",
-      "cc900c0e-85e5-453a-afa9-0a002ca01265",
-      "eb8e9aa3-c546-45fa-98d2-0bf122c2b565",
-      "9efb8ab0-95c0-42ec-bf4f-4205a674e0e5",
-      "b0c6e8a9-d2b5-45f3-8574-0c443bef9873",
-      "aa49288f-8b7b-4e02-bc3d-e2833041c82d",
-      "2bbf04cf-6bf7-440d-97b1-4134502ee99e",
-      "5fb15427-7ae3-467d-8e4e-e0335bad782f",
-      "13fe2940-c611-4ca5-9cd1-9f7824009419",
-      "deb38861-20a5-46fb-bddb-2eea8d458c13",
-      "64621871-c977-4203-9fbf-41ce0b5c7b5b",
-      "230caec0-d807-426a-8a78-3b4e23b529f4",
-      "b4259a62-f227-49d4-beca-79be6a0c730f",
-      "e3149509-d99f-4697-8bbe-5242511d64ba",
-      "0904e250-6b39-4bb8-bf7b-1ad22ec5e1ba",
-      "7e3e42c8-ceb0-4166-806f-fe5e79c3d280",
-      "9258db2f-2b17-4bb3-aa91-d1c480cb2c46"
+      "b2f4d397-8a31-43b5-9323-dc7a9ff4bbd9",
+      "ef3da2f5-1165-4d60-8010-300fc9ab0171",
+      "6c432072-554a-499a-b66c-e8b05931296d",
+      "4b7b6c68-3c0a-4cef-b14c-17cc34352c0c",
+      "70c80334-b012-4f75-954f-fe003cea287e",
+      "4224868c-e1d2-4dc9-9c5b-ea869c34b449",
+      "939d3d42-7449-438b-a11e-ff048d9bfb62",
+      "9cbdc374-23b4-407f-89e9-6dbd751c8d64",
+      "339d9428-f88d-40ea-8cb6-ef9b0857e20a",
+      "ac73b1d6-2ff6-4cc1-92eb-98192d8fc1f2",
+      "673bdc6d-b287-4838-bd5f-41bcd9dd2107",
+      "d1432f9a-c0db-4873-a13f-8d0ef6914943",
+      "fb34822f-7d87-47f1-8186-4d14bc9754bd",
+      "4b26e47d-747a-4c76-b0be-a125b1d2382c",
+      "8bddf36b-e45b-46d9-ab7e-433d22d218cf",
+      "d4f5c35e-67b5-4fb3-88dd-12fe1bc21b8d",
+      "c164d8ab-4cfe-495d-89d7-c4ad57de32ca",
+      "a737b21e-ec4f-49f6-b8cf-06f67930b70d",
+      "22fcf5bc-9fe4-49c7-9797-e90cd6f1a64e",
+      "87cb5dbf-c72e-4b38-a358-65666570f774",
+      "a465447f-7b6d-4820-9fce-7f1aca92618e",
+      "578b498a-6c39-4d58-b81c-79b636761660",
+      "b2547478-ec28-40ba-be9e-500c7969fd84",
+      "339fa97a-cb29-49d7-827c-4646cd0a7bfb"
      ]
     }
    },

@@ -53,9 +53,9 @@
   },
   "recommendedAccessories": {
    "productCodes": [
+    "ESSWBSONERA300",
     "SONLINEINADAPT",
-    "SONCOMBOADAPT",
-    "ESSWBSONERA300"
+    "SONCOMBOADAPT"
    ],
    "isOutlet": "false"
   },
@@ -74,6 +74,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløs højtaler med multirum \nTouch-knapper til afspilning, lydstyrke og mikrofon på topplade\nTrådløs kontrol via Sonos S2 app (iOS/Android) eller PC/Mac\nTo styk kan konfigureres til at spille højre/venstre kanal i stereo eller fungere som trådløse baghøjtalere til Atmos surround sammen med matchende Sonos soundbar.\nEQ til bas, diskant og loudness via app \nTrueplay rumkorrektion (Apple iOS/Android)\nStemmestyring via indbygget mikrofon (Amazon Alexa) OBS: Sprog og understøttede funktioner i stemmestyringen afhænger af din nationale udbyder.\nLydformater**: MP3, WMA, AAC (MPEG4), Ogg Vorbis, Audible .AA (format 4), Apple Lossless, FLAC (lossless), WAV, AIFF \n6 x digitale klasse D-forstærkere \n4 x diskant \n2 x bas/mellemtone\nIndbygget dual-band wi-fi (WiFi 6, 802.11a/b/g/n/ac/ax, 2.4/5GHz)\nStrømkabel (2 meter) og Quick startguide medfølger\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. \n** 24-bit afspilning på Sonos er teknisk muligt, hvis både streamingtjeneste og Sonos understøtter formatet. Denne funktion er under stadig udvikling, og vi anbefaler at kontakte Sonos direkte for aktuel status."
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -88,15 +97,6 @@
      {
       "term": "Trådløs overførsel",
       "value": "SonosNet, Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløs højtaler med multirum \nTouch-knapper til afspilning, lydstyrke og mikrofon på topplade\nTrådløs kontrol via Sonos S2 app (iOS/Android) eller PC/Mac\nTo styk kan konfigureres til at spille højre/venstre kanal i stereo eller fungere som trådløse baghøjtalere til Atmos surround sammen med matchende Sonos soundbar.\nEQ til bas, diskant og loudness via app \nTrueplay rumkorrektion (Apple iOS/Android)\nStemmestyring via indbygget mikrofon (Amazon Alexa) OBS: Sprog og understøttede funktioner i stemmestyringen afhænger af din nationale udbyder.\nLydformater**: MP3, WMA, AAC (MPEG4), Ogg Vorbis, Audible .AA (format 4), Apple Lossless, FLAC (lossless), WAV, AIFF \n6 x digitale klasse D-forstærkere \n4 x diskant \n2 x bas/mellemtone\nIndbygget dual-band wi-fi (WiFi 6, 802.11a/b/g/n/ac/ax, 2.4/5GHz)\nStrømkabel (2 meter) og Quick startguide medfølger\n* Understøttede streamingtjenester, musikafspillere, funktioner og systemkrav på Sonos er under konstant udvikling og opdatering. Besøg evt. Sonos’ egen hjemmeside, hvis du vil have seneste status. \n** 24-bit afspilning på Sonos er teknisk muligt, hvis både streamingtjeneste og Sonos understøtter formatet. Denne funktion er under stadig udvikling, og vi anbefaler at kontakte Sonos direkte for aktuel status."
      }
     ]
    },
@@ -169,10 +169,10 @@
    "id": 69679
   },
   "stockItemAlternative": {
-   "save": "430,-",
+   "save": "280,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SONERA300",
    "availableQuantity": 1,
-   "lowestPrice": "2.849,-"
+   "lowestPrice": "2.999,-"
   },
   "variants": [
    {
@@ -186,19 +186,14 @@
      "priceValueId": 1211321,
      "price": 3279,
      "priceFormatted": "3.279,-",
-     "priceBefore": 4099,
-     "priceBeforeFormatted": "4.099,-",
-     "priceSavingsFormatted": "820,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 3279,
-     "unitPriceBefore": 4099
+     "unitPrice": 3279
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -244,7 +239,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 346,
+     "availableQuantity": 91,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -331,19 +326,14 @@
      "priceValueId": 1211315,
      "price": 3279,
      "priceFormatted": "3.279,-",
-     "priceBefore": 4099,
-     "priceBeforeFormatted": "4.099,-",
-     "priceSavingsFormatted": "820,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 3279,
-     "unitPriceBefore": 4099
+     "unitPrice": 3279
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -389,7 +379,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 191,
+     "availableQuantity": 60,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -487,24 +477,45 @@
   "testGroups": [],
   "bundleRelations": [
    {
+    "modelType": "Trådløs højtaler",
+    "price": {
+     "price": 6558,
+     "priceFormatted": "6.558,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 6558,
+     "unitPriceBefore": 6558
+    },
+    "image": "https://images.hifiklubben.com/image/5dda8838-f357-42b6-a228-280f5b1c4918",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Sonos Era 300 x2",
+    "url": "/sonos-era-300_1/"
+   },
+   {
     "modelType": "Soundbar system/pakke",
     "price": {
      "price": 12937,
      "priceFormatted": "12.937,-",
-     "priceBefore": 16447,
-     "priceBeforeFormatted": "16.447,-",
-     "priceSavingsFormatted": "3.510,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12937,
-     "unitPriceBefore": 16447
+     "unitPriceBefore": 12937
     },
     "image": "https://images.hifiklubben.com/image/0bdf5ce5-bb9a-405d-b98e-600e83ddf62f",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -520,20 +531,16 @@
     "price": {
      "price": 18886,
      "priceFormatted": "18.886,-",
-     "priceBefore": 23896,
-     "priceBeforeFormatted": "23.896,-",
-     "priceSavingsFormatted": "5.010,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 18886,
-     "unitPriceBefore": 23896
+     "unitPriceBefore": 18886
     },
     "image": "https://images.hifiklubben.com/image/5d12b0a9-f09f-4339-b381-f614159726ca",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -543,91 +550,41 @@
     ],
     "title": "Arc Ultra + Sub G4 + Era 300",
     "url": "/sonarcultra-sonsubg4-sonera300/"
-   },
-   {
-    "modelType": "Trådløs højtaler",
-    "price": {
-     "price": 6558,
-     "priceFormatted": "6.558,-",
-     "priceBefore": 8198,
-     "priceBeforeFormatted": "8.198,-",
-     "priceSavingsFormatted": "1.640,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 6558,
-     "unitPriceBefore": 8198
-    },
-    "image": "https://images.hifiklubben.com/image/5dda8838-f357-42b6-a228-280f5b1c4918",
-    "ribbons": [
-     {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Era 300 x2",
-    "url": "/sonos-era-300_1/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONOS Era 300 leverer varm, kraftfuld og imponerende rummelig lyd med klare detaljer, dyb bas og en medrivende højde. Stereopar og surroundsystemer med Arc får især stor ros for biografagtig Dolby Atmos-effekt og et mere omsluttende lydbillede. Opsætning og Sonos-integration er som regel enkel, men problemer med app, Wi-Fi, synkronisering og streaming samt enkelte forbehold om pris og stereobredde trækker lidt ned.",
+   "summary": "SONERA300 leverer varm, kraftfuld og detaljeret lyd med imponerende klarhed, dyb bas og et bredt, omsluttende lydbillede. Stereopar og Dolby Atmos-hjemmebiografopsætninger giver især et slagkraftigt, filmisk løft i forhold til mindre Sonos-højttalere. Opsætningen er som regel enkel, men app-, Wi‑Fi-, Bluetooth- og lejlighedsvise afspilningsproblemer påvirker nogle oplevelser.",
    "headlines": {
-    "major upgrade for Dolby Atmos surround": {
-     "sentimentAnalysis": "Era 300 ses bredt som en markant forbedring i forhold til mindre baghøjttalere og tilfører Atmos-systemer overbevisende højde, kraft og indlevelse.",
-     "simpleTitle": "Markant løft til Dolby Atmos-surround",
+    "warm, detailed sound with deep bass": {
+     "sentimentAnalysis": "Anmeldelserne roser klarhed, fylde, detaljer, dybde og kraftig bas.",
+     "simpleTitle": "Varm, detaljeret lyd med dyb bas",
      "bias": "positive",
-     "key": "surround",
-     "groupId": "e016cc3d-adc9-42e1-9d40-935a104e477a"
+     "key": "warm-detailed-sound",
+     "groupId": "ee66c458-727c-473e-846a-1de2d42bbbb2"
     },
-    "rich, spacious sound with deep bass": {
-     "sentimentAnalysis": "Anmeldelserne roser gennemgående den fyldige, klare og rummelige gengivelse med kraftig bas og detaljerede diskanttoner.",
-     "simpleTitle": "Fyldig, rummelig lyd med dyb bas",
+    "a major upgrade for surround and Dolby Atmos": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en mere omsluttende og filmisk hjemmebiografoplevelse, især sammen med Arc og Dolby Atmos.",
+     "simpleTitle": "Markant løft til surround og Dolby Atmos",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "e099aff6-e188-4ca3-93c8-92cdf9eb9146"
+     "key": "surround-upgrade",
+     "groupId": "21ead174-079a-4233-bc6e-6d900323fd7c"
     },
-    "installation is generally simple": {
-     "sentimentAnalysis": "De fleste beskriver opsætningen som hurtig, enkel og godt understøttet af Sonos-appen og Trueplay.",
-     "simpleTitle": "Opsætningen er som regel enkel",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "cbed9d46-a1d6-4b4b-8a24-9ba9567ed884"
-    },
-    "software and connection reliability can be frustrating": {
-     "sentimentAnalysis": "Flere anmeldelser nævner Wi-Fi-udfald, synkroniseringsproblemer, en ustabil app, afbrydelser i afspilningen eller besværlige Bluetooth- og tv-forbindelser.",
-     "simpleTitle": "Problemer med software og forbindelse kan frustrere",
+    "some listeners expected stronger sound or stereo imaging": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne oplever et smalt stereobillede fra én højttaler eller mindre kraft end fra ældre eller større Sonos-modeller.",
+     "simpleTitle": "Nogle brugere forventede kraftigere lyd eller bredere stereobillede",
      "bias": "negative",
-     "key": "setup",
-     "groupId": "cbed9d46-a1d6-4b4b-8a24-9ba9567ed884"
-    },
-    "stereo pairs greatly widen the soundstage": {
-     "sentimentAnalysis": "Parrede Era 300-højttalere roses gentagne gange for et bredere, dybere og mere imponerende stereobillede.",
-     "simpleTitle": "Stereopar udvider lydbilledet markant",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "e099aff6-e188-4ca3-93c8-92cdf9eb9146"
-    },
-    "single-speaker stereo can feel narrow": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne oplever én Era 300 som mindre kraftfuld eller mindre bred i stereo end forventet, især sammenlignet med ældre Sonos-modeller.",
-     "simpleTitle": "Én højttaler kan give et smalt stereobillede",
-     "bias": "negative",
-     "key": "sound",
-     "groupId": "e099aff6-e188-4ca3-93c8-92cdf9eb9146"
+     "key": "sound-limitations",
+     "groupId": "ee66c458-727c-473e-846a-1de2d42bbbb2"
     }
    },
    "grouping": {
-    "e099aff6-e188-4ca3-93c8-92cdf9eb9146": {
+    "ee66c458-727c-473e-846a-1de2d42bbbb2": {
      "title": "Lydkvalitet",
-     "id": "e099aff6-e188-4ca3-93c8-92cdf9eb9146",
+     "id": "ee66c458-727c-473e-846a-1de2d42bbbb2",
      "references": [
+      "2ff85328-b34b-4e92-b4c6-3a3e70f34530",
       "3344031c-7f33-46a3-a584-d272e8a4f2bc",
-      "e817f91a-d522-4b69-b02a-2ca7633cbf47",
       "7d630b3d-6768-4270-a679-65e83274c371",
       "5e0b9147-ec3b-4ca4-88be-1a9012763fb1",
       "a76a329e-12c2-4187-8080-c74b4d8ae2f2",
@@ -639,56 +596,43 @@
       "635a02fa-3090-4076-8c81-7e0db8f29428",
       "63a881c4-88a1-4c9e-a505-34a2ae2e2153",
       "4fc27ef9-ea58-4db2-a66f-51e11d17fc31",
+      "d63812e9-77d1-4550-bd78-902911c1b566",
       "9f0c9c5a-b037-44f2-946b-33d78eb28e73",
-      "0011c412-66c3-4f59-ab9e-9aa3ebee0897",
       "eefed2cb-b760-442a-817e-346228f3170e",
+      "8fdd3beb-d31e-4f99-8aa6-004497e1644b",
       "5bfb7021-70cd-452e-bf29-48ee82c320ba",
-      "263656c3-6d9a-4183-881f-83de5ca47599",
       "c5f34fe4-50ac-483f-ac9d-94558a1d6136",
       "d929bfe2-9ad8-4d12-917d-9f9f2107b5b7",
-      "4164d982-3cb9-4245-809b-38aa34b2cfd1",
-      "7863d624-9df5-4c7f-b224-3a88e827774a",
       "81d98b18-122d-4252-b2b2-d42fb556b078",
-      "d60f8631-5697-4ec3-8552-d1504ff2bdc3",
       "31394434-8d74-4e6c-8acc-5165bf3844af",
       "20d0feb0-0192-40a8-84e7-c3feeb1efc89",
       "d597de47-db47-4a31-b18a-94c5238036c1",
-      "276acaa4-fac8-4a46-9fc5-9170b133a3a2",
-      "b173553e-f138-40e6-a540-ce58f09aeb60",
       "6226099d-763e-4b6c-88d1-649cd33d1165",
       "bbc98a79-38ab-4a9b-bfad-3526bd5d0627",
       "76fdd7e4-b632-41b6-8489-55ed1e34c416",
-      "d43f2c05-5bab-48e3-913a-36acea739d6c",
+      "09a544c6-af1c-4356-8c41-5fedfd62ac49",
       "d2c19cd9-33b2-45ac-a30e-abe488c9d362",
-      "718532b3-8e83-4bc8-8af3-851486e9b954",
       "ae3dbf03-bcfc-4eff-9d13-96110e6a5b7a",
       "c1ee7510-3c42-4b87-b7ab-df8ff9113266",
       "0075be58-b70f-4909-9a25-7af2ca15c5c1",
-      "549ffa7c-21cb-4c05-8a39-e1a4ac532168",
       "0b6d81a4-9c5c-4d05-b137-9e90627cbb95",
-      "e14f3ea8-6ecf-461d-8d4a-0acfd467d533",
       "4f0d7c48-27b2-464a-9b1a-f150a22503c0",
       "fe790c05-017c-4c88-ad21-dd01a0a35a14",
       "abb671ba-39ed-4455-9ea9-1806c813a852",
       "20bea248-12e1-4904-93a1-5edda2199f86",
       "4ea5c266-b30a-4dd4-a388-40fb509012a2",
       "a497af6a-e172-4a3e-834e-47351e95047a",
-      "e04deef6-b316-4bf3-a774-c45d7f0f0e20",
       "a5d8f7ce-9e44-42b5-a93f-b9905db8cb97",
-      "a67dd8f1-3375-4332-a9bb-16ee769fab08",
-      "bf893b63-9532-41bf-b630-59ce58033093",
       "1ce660b5-88a8-43db-b11e-f66b59391c0f",
       "6590a135-000b-4d0a-81eb-99f12cdc4de1",
       "aa5d5751-050a-436b-b009-7a381df0c41b",
       "681effaf-67e5-4770-bded-c2c9436d8708",
       "5f9a098e-265a-4fed-bf1a-c0b05964ed2b",
-      "e88c9d46-abce-4e83-9e8b-2f1f29dfc82f",
-      "be6e7208-4b63-4d2b-864f-7fe1cb84a70b",
-      "b3ce93eb-03ed-4ea4-a66a-1b6cabda9d07",
       "f9a1fb7d-235e-4a7a-ad6d-03525d30520f",
       "afa7f623-1920-4c8f-980f-1a035acf2309",
       "7d0e1a7c-2727-42a5-b2a0-92b3ef830e6f",
       "1ff24a1d-8d96-467a-adc8-1ced31c79580",
+      "20f5ea72-8d9c-4a58-92b6-1ab92edd4a9a",
       "ddcda7f2-2aec-47ba-ad45-23bbe3902a90",
       "c9fb80ae-cea3-4b80-a597-6c7a6cf094a1",
       "8cd481f5-7c00-4029-a570-1628954749eb",
@@ -696,12 +640,9 @@
       "a1d3ce11-4d02-4c4c-a3a7-088e04ea65f4",
       "ff7a32e8-8ca4-4a19-8432-12aa98e2b33b",
       "5779fa47-a8ee-428e-802e-be5b5dbaee80",
-      "7dfdfb39-7524-4fdb-96d3-c7e4e8afcd67",
       "1383f44d-8268-4e3d-a280-e458766fb2e4",
-      "c8c6e1a4-8b67-4d33-a9a5-689541e2947b",
       "255fe88f-0e45-43c5-a1eb-27e6dc99dd33",
       "6e6c3464-65ed-470e-84fa-2ddf01fafbb1",
-      "5628e2a2-8c50-4aa5-b8eb-ac155b24b0f2",
       "2ca10b89-40e9-4c20-9a7c-8003177a14cc",
       "e2ed986a-145c-4445-ba45-b3ed27b90975",
       "fe133c3a-2763-4e2b-8c2d-a467cad02c31",
@@ -711,14 +652,11 @@
       "f9bae2c1-1092-4c10-a65c-a3aa5be8d8e3",
       "ba79b030-e063-4633-bd39-bfb18411d83c",
       "a01c80b4-2689-4d31-802d-fb8bed1ebb1a",
-      "0dc270a7-6140-4b58-a548-3f38edb8bfef",
       "96f3d7a5-9dfb-4180-aaaf-dc8545dc8e17",
       "7bd652a2-f9eb-45c7-9446-df0645e64b72",
       "4ce5c912-4afc-4c86-a720-a96abc59765d",
-      "8f36ea0e-7fdb-4454-9130-b04f3824a939",
       "baccc3f0-206e-4644-aed6-5dfdde2d9d90",
       "fa498f59-1cea-499e-bf4c-e9eb01e2af44",
-      "99f7bd2f-9d5b-49cf-8251-1f05e77a79e7",
       "26894a2c-5d5f-4bdd-a245-5b70bcb41bde",
       "58086e7c-48f9-448c-89e0-3e16a5401a25",
       "f9861694-8748-4bb2-9b2c-464d1c9d1871",
@@ -729,12 +667,9 @@
       "0f729a77-4a04-4d9e-a533-a058316e80c5",
       "bcceeb2b-124a-459d-a7d5-f06d310da4ec",
       "ebb4b106-3410-4664-9bfd-68ab58d5c9fa",
-      "9dbaf72a-90ec-4979-afbc-7004a7e27f24",
       "f10fb5a1-5d35-4ba5-a7a3-1b94c1229eae",
-      "2e5d338e-8885-4770-b200-d2685402e998",
       "21c6cf53-65a9-4894-8c06-4071a718f5d0",
       "2345aaf5-bfcf-44b0-ae03-3e1240e5b945",
-      "35a65c31-40e7-4470-9e10-0f28e48ce546",
       "9fb21fb8-fe08-4dfa-8949-0eb1559fd027",
       "5027b8cb-5dc3-4247-af18-811e09106899",
       "7255334a-8e3d-4701-8fe5-6ea0799177c1",
@@ -747,18 +682,14 @@
       "9cc39568-491a-419d-995f-74a58df3c9ad",
       "a5116f89-28a6-4433-9b5c-95210ed450ae",
       "983ec7b4-935a-4363-a123-8201fa75b6da",
+      "c56cc89c-f6bf-4ff9-9893-21ecbcf81c36",
       "7f882da5-8819-4ef4-86b4-3dd311c1e5c5",
-      "93e72adc-7af6-485c-ae33-6bc0c55ab45e",
       "40b2452d-5908-4089-84c6-859d41536f6a",
       "fbb6eba0-7b5f-44b3-97d3-2d4306bce702",
       "4da7e1f2-cd2a-4405-a3d1-88e7916b8213",
-      "07ddf73f-a1dc-4ad5-b0f7-0a4491cb036c",
       "0d80be54-33d2-459a-9251-0c35e18a6a79",
       "5499565b-c572-4693-aa8a-dd03c6747df7",
-      "43e920d9-74e3-4d47-a121-c2cd75a22cfc",
-      "bde55502-57c7-4903-be5a-2e215d173ebd",
       "e06176e3-d26c-420a-94c1-94d3b67e0763",
-      "8b82688d-e133-493c-b406-420d92691abe",
       "dde0a734-c08e-420c-8969-9da4dea8a894",
       "35c8b894-8eb9-4372-b100-ed3e2894917b",
       "e5a87d76-a9cf-46fb-9df1-9e2018da68ae",
@@ -772,9 +703,9 @@
       "815c8f01-f5c1-4532-809a-815171ce9607"
      ]
     },
-    "e016cc3d-adc9-42e1-9d40-935a104e477a": {
+    "21ead174-079a-4233-bc6e-6d900323fd7c": {
      "title": "Surroundlyd",
-     "id": "e016cc3d-adc9-42e1-9d40-935a104e477a",
+     "id": "21ead174-079a-4233-bc6e-6d900323fd7c",
      "references": [
       "e817f91a-d522-4b69-b02a-2ca7633cbf47",
       "2df7881d-534a-44c0-8e2e-3d1313348fb0",
@@ -784,81 +715,41 @@
       "0011c412-66c3-4f59-ab9e-9aa3ebee0897",
       "3e6081c9-2bd1-4b95-9db6-1e188a075f99",
       "4a7fdd1e-5a1d-4649-87df-bc46238094e1",
-      "f8821a84-3b27-4f40-be9f-d5a01485c748",
       "6b64284b-0df9-4be3-8d9e-3b610b7f2f4b",
       "1d6e0341-11b1-4b20-8224-070d92bafe47",
       "bea769a9-872a-4203-af4d-2bc0f473be0e",
-      "bcd8fffc-cb1e-4797-a35b-823731ac1380",
-      "d929bfe2-9ad8-4d12-917d-9f9f2107b5b7",
       "d60f8631-5697-4ec3-8552-d1504ff2bdc3",
       "88ed1e93-c6fa-4703-b827-3717e246a7dd",
-      "bbc98a79-38ab-4a9b-bfad-3526bd5d0627",
+      "718532b3-8e83-4bc8-8af3-851486e9b954",
       "549ffa7c-21cb-4c05-8a39-e1a4ac532168",
-      "c96c5a61-9abf-400f-9b74-88be5afdd43a",
-      "20bea248-12e1-4904-93a1-5edda2199f86",
       "4ea5c266-b30a-4dd4-a388-40fb509012a2",
       "e04deef6-b316-4bf3-a774-c45d7f0f0e20",
       "e88c9d46-abce-4e83-9e8b-2f1f29dfc82f",
       "1ff24a1d-8d96-467a-adc8-1ced31c79580",
+      "b5be996e-d8db-4c90-b517-3064a4e83040",
       "7bd652a2-f9eb-45c7-9446-df0645e64b72",
-      "e5aa96a2-950e-4391-a5e6-0225be872dd6",
+      "72559993-8ec3-4d1e-84dd-30ca915ccfbf",
+      "8f36ea0e-7fdb-4454-9130-b04f3824a939",
+      "99f7bd2f-9d5b-49cf-8251-1f05e77a79e7",
+      "487167dc-16c0-45e9-9de0-76c6e45f65c3",
+      "a00e22d8-e29a-4c65-9945-8f0fd4857f0b",
       "0f729a77-4a04-4d9e-a533-a058316e80c5",
       "bcceeb2b-124a-459d-a7d5-f06d310da4ec",
       "ebb4b106-3410-4664-9bfd-68ab58d5c9fa",
-      "487167dc-16c0-45e9-9de0-76c6e45f65c3",
-      "a00e22d8-e29a-4c65-9945-8f0fd4857f0b",
-      "c8c6e1a4-8b67-4d33-a9a5-689541e2947b",
       "e06176e3-d26c-420a-94c1-94d3b67e0763",
-      "72559993-8ec3-4d1e-84dd-30ca915ccfbf",
-      "8f36ea0e-7fdb-4454-9130-b04f3824a939",
-      "ed47b7f8-31a6-45e7-949e-ad8ddd8a99fa",
-      "d3a48b3c-e5cf-4f7c-84c9-df1bd761e6a2",
-      "49ce3903-87db-4686-ad33-266b6d906f46",
-      "07ddf73f-a1dc-4ad5-b0f7-0a4491cb036c"
-     ]
-    },
-    "cbed9d46-a1d6-4b4b-8a24-9ba9567ed884": {
-     "title": "Opsætning og forbindelse",
-     "id": "cbed9d46-a1d6-4b4b-8a24-9ba9567ed884",
-     "references": [
-      "3344031c-7f33-46a3-a584-d272e8a4f2bc",
-      "e817f91a-d522-4b69-b02a-2ca7633cbf47",
-      "77341778-41d1-4698-9f4a-e3ef1eeaf721",
-      "3ef97511-4582-40f1-9cb3-4ac086e363c7",
-      "7d0da4a8-9b91-41b6-a8a0-4bfcbc191b70",
-      "d929bfe2-9ad8-4d12-917d-9f9f2107b5b7",
-      "09a544c6-af1c-4356-8c41-5fedfd62ac49",
-      "a67dd8f1-3375-4332-a9bb-16ee769fab08",
-      "aa5d5751-050a-436b-b009-7a381df0c41b",
-      "681effaf-67e5-4770-bded-c2c9436d8708",
-      "d8789d1c-9167-48ee-aa0c-9ee2c666fa6f",
-      "5f9a098e-265a-4fed-bf1a-c0b05964ed2b",
-      "6537e765a-f0d9-4d1c-9af4-c72095389bfa",
-      "70ef9dd0-8b96-472c-a49f-f3b556d0683d",
-      "ff7a32e8-8ca4-4a19-8432-12aa98e2b33b",
-      "4f70f81d-171f-4cf5-96cd-5c402e58f313",
-      "255fe88f-0e45-43c5-a1eb-27e6dc99dd33",
-      "776fe03c-98cd-49e7-9ed8-ad0cd8c2dc83",
-      "f9bae2c1-1092-4c10-a65c-a3aa5be8d8e3",
-      "9cc39568-491a-419d-995f-74a58df3c9ad",
-      "c56cc89c-f6bf-4ff9-9893-21ecbcf81c36",
-      "7f882da5-8819-4ef4-86b4-3dd311c1e5c5",
-      "fbb6eba0-7b5f-44b3-97d3-2d4306bce702",
-      "2d8b5212-4395-4dd8-aa62-0a68506ccbca",
-      "9fda47c5-a5c6-4a7f-9bbd-f9c6fbd615a8",
-      "815c8f01-f5c1-4532-809a-815171ce9607"
+      "ed47b7f8-31a6-45e7-949e-ad8ddd8a99fa"
      ]
     }
    },
-   "rating": 4.78799249530957,
-   "count": 533,
-   "reviewCount": 197,
+   "rating": 4.78838951310861,
+   "count": 534,
+   "reviewCount": 198,
    "distribution": {
     "1": 2,
     "2": 6,
     "3": 13,
     "4": 61,
-    "5": 451
+    "5": 452
    }
   },
   "boxContent": [

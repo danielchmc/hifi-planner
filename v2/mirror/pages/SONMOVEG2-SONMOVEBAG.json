@@ -158,7 +158,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24,
+        "availableQuantity": 22,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "649,-",
@@ -190,7 +190,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 86,
+        "availableQuantity": 9,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.949,-",
@@ -213,7 +213,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 113,
+        "availableQuantity": 19,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.949,-",
@@ -236,7 +236,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 224,
+        "availableQuantity": 184,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.949,-",
@@ -248,55 +248,55 @@
      ],
      "parentProductCode": "SONMOVEG2",
      "reviews": {
-      "summary": "SONOS Move 2 leverer en varm, slagkraftig og overraskende rumlig lyd for en transportabel højttaler med klare detaljer og tilfredsstillende bas. Lang batteritid, fleksibel afspilning via Wi-Fi og Bluetooth samt nem integration i eksisterende Sonos-systemer gør højttaleren særdeles alsidig både inde og ude. Vægten, lejlighedsvise problemer med app eller forbindelse og den høje pris er de største forbehold, men helhedsindtrykket er meget begejstret.",
+      "summary": "SONOS Move 2 får stor ros som en førsteklasses transportabel højttaler med varm, fyldig og overraskende rummelig lyd, kraftig bas, klare detaljer og høj lydstyrke i forhold til størrelsen. Den lange batteritid, nemme transport, fleksible brug via Wi-Fi og Bluetooth samt gode integration med eksisterende Sonos-systemer gør den alsidig både inde og ude. De største forbehold gælder vægten, en til tider frustrerende Sonos-app eller forbindelse, den høje pris og lejlighedsvis skuffelse over lydens detaljer eller manglende Google Assistant-understøttelse.",
       "headlines": {
-       "simple setup and strong Sonos integration": {
-        "sentimentAnalysis": "Mange anmeldelser roser den hurtige opsætning, pålidelig Wi-Fi og Bluetooth samt den problemfri integration i større Sonos-systemer.",
-        "simpleTitle": "Nem opsætning og stærk Sonos-integration",
+       "smooth Sonos integration and flexible connections": {
+        "sentimentAnalysis": "Mange anmeldelser værdsætter hurtig opsætning, stabile Wi-Fi- eller Bluetooth-forbindelser og enkel integration med andre Sonos-højttalere.",
+        "simpleTitle": "Nem Sonos-integration og fleksible forbindelser",
         "bias": "positive",
-        "key": "connectivity",
-        "groupId": "8968e16d-a177-4daa-84d2-8f495be42abd"
+        "key": "setup-positive-1",
+        "groupId": "f7ed9c80-f3a7-4ec1-9f76-bcc802b5645d"
        },
-       "long-lasting battery supports all-day listening": {
-        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som fremragende, og flere anmeldelser fremhæver den lange afspilningstid og stabile kapacitet.",
-        "simpleTitle": "Lang batteritid til musik hele dagen",
+       "warm, powerful sound with punchy bass": {
+        "sentimentAnalysis": "Anmeldelserne beskriver ofte lyden som fyldig, klar, kraftfuld og basrig med imponerende output for en transportabel højttaler.",
+        "simpleTitle": "Varm og kraftfuld lyd med fyldig bas",
         "bias": "positive",
-        "key": "battery",
-        "groupId": "e4a6840b-f02e-4e75-9aa1-5a7fbdb2398a"
+        "key": "sound-positive-1",
+        "groupId": "95bbea84-e0e5-422c-9ddf-4712ff0a77e6"
        },
-       "easy to move between rooms and outdoors": {
-        "sentimentAnalysis": "Mobiliteten er en stor styrke, og anmeldelserne værdsætter den nemme flytning rundt i hjemmet, haven og andre udendørs områder.",
-        "simpleTitle": "Nem at flytte mellem rum og tage med udenfor",
+       "long-lasting battery": {
+        "sentimentAnalysis": "Batteriets udholdenhed får gentagne gange ros, og flere anmeldelser nævner meget lang afspilningstid og stabil brug i hverdagen.",
+        "simpleTitle": "Lang batteritid",
         "bias": "positive",
-        "key": "portability",
-        "groupId": "40077b3d-9c4a-42c7-b73a-1a9afced8342"
+        "key": "battery-positive-1",
+        "groupId": "9e4ac80f-73d7-40f7-aae9-1f1f9b29bca6"
        },
-       "warm, punchy sound with deep bass": {
-        "sentimentAnalysis": "Anmeldelserne roser ofte den fyldige, klare og kraftfulde lyd, især den dybe bas og det høje output for en transportabel højttaler.",
-        "simpleTitle": "Varm og slagkraftig lyd med dyb bas",
+       "easy to move indoors and outdoors": {
+        "sentimentAnalysis": "Mobiliteten er en klar styrke og gør det nemt at bruge højttaleren i forskellige rum, haver, på terrasser og andre udendørs steder.",
+        "simpleTitle": "Nem at flytte inde og ude",
         "bias": "positive",
-        "key": "sound",
-        "groupId": "219798be-dc83-4635-b436-cb2d138788ac"
+        "key": "portability-positive-1",
+        "groupId": "08076351-f286-4004-9aed-a33c88f55aec"
        },
        "app and connection issues can frustrate": {
-        "sentimentAnalysis": "Nogle anmeldelser nævner en uoverskuelig app, ustabile forbindelser, langsom respons eller problemer med at oprette forbindelse til netværk og tjenester.",
-        "simpleTitle": "Problemer med app og forbindelse kan irritere",
+        "sentimentAnalysis": "En tilbagevendende kritik fra en mindre del af anmeldelserne gælder en uoverskuelig eller ustabil app, problemer med at finde og forbinde til højttaleren samt lejlighedsvis forsinkelse.",
+        "simpleTitle": "Problemer med app og forbindelse kan frustrere",
         "bias": "negative",
-        "key": "connectivity",
-        "groupId": "8968e16d-a177-4daa-84d2-8f495be42abd"
+        "key": "app-negative-1",
+        "groupId": "22c4ef76-c9f3-4c01-a079-6351298ecac1"
        },
-       "sound quality can fall short of expectations": {
-        "sentimentAnalysis": "En mindre del af anmeldelserne finder opløsningen eller den samlede kvalitet mindre imponerende end forventet til prisen, med yderligere kritik ved højere lydstyrke.",
-        "simpleTitle": "Lydkvaliteten kan skuffe i forhold til forventningerne",
+       "some listeners find the sound less refined than expected": {
+        "sentimentAnalysis": "En mindre gruppe synes, at klarhed, opløsning eller kraft ved højere lydstyrke ikke lever op til prisen eller sammenligningen med større Sonos-modeller.",
+        "simpleTitle": "Nogle synes, lyden er mindre raffineret end forventet",
         "bias": "negative",
-        "key": "sound",
-        "groupId": "219798be-dc83-4635-b436-cb2d138788ac"
+        "key": "sound-negative-1",
+        "groupId": "95bbea84-e0e5-422c-9ddf-4712ff0a77e6"
        }
       },
       "grouping": {
-       "219798be-dc83-4635-b436-cb2d138788ac": {
+       "95bbea84-e0e5-422c-9ddf-4712ff0a77e6": {
         "title": "Lydkvalitet",
-        "id": "219798be-dc83-4635-b436-cb2d138788ac",
+        "id": "95bbea84-e0e5-422c-9ddf-4712ff0a77e6",
         "references": [
          "41106cfe-043d-45dd-bbe3-1066d7a2427a",
          "3e3c53e5-f4c4-4b93-bbcf-e0ce31714618",
@@ -312,7 +312,6 @@
          "d36c9539-cefa-4534-a913-bc4a7b32cbc0",
          "ddac2b80-e30b-4d73-8fe5-9e1180cccb5c",
          "55203666-9bc4-4b37-a346-1b8d84917671",
-         "0e742cc1-57bd-4db1-b8f1-bb91d14167e2",
          "0ea3f92c-d46d-4c73-9293-02b3f800d216",
          "4d1156e4-711d-448d-bfe4-02092da0fc9e",
          "a9385bdd-d1a1-436e-bda9-14a9fe81b248",
@@ -321,23 +320,22 @@
          "11487fa3-36c0-45ae-824b-8a6c2c7d46df",
          "eb68e838-6bca-4522-85c2-5c61d5030fd0",
          "75ec4ce7-35ed-476e-ac36-c34e4c4ee9f7",
-         "83b51c82-f397-4bf5-94c4-f5fc1c21a05d",
          "0dba22dd-3c87-43ca-b340-a849c770e23b",
          "938da99a-4586-4978-8335-03b1995c8565",
          "79bd8962-a553-4cac-b7a2-06a21ac8458d",
+         "0e742cc1-57bd-4db1-b8f1-bb91d14167e2",
          "6f18d63a-e221-4ff3-b389-cb671cd854b7",
          "77dc8ec5-2c9e-4470-b6fe-a94f2c18d3e5",
+         "2c01e42b-c0ac-47c5-948a-cfff35e24c72",
          "3e2678b5-5ac9-4b8f-9eee-04d05411a57d",
-         "5e612ae1-b212-412d-992b-ef0df0a36f1e",
          "dbce1bec-1eeb-41b2-9947-9c0eb8c72890",
-         "b950b14e-79ac-4187-819a-90c2f0763262",
-         "01deecab-c9fc-4f91-baa8-1ce69697fcea",
          "80c0afa0-de49-4b20-98ae-20a0671fb132",
          "776261f7-a695-49c0-b108-79cd27f7288f",
          "ea3557e8-8139-40ad-b6b6-6625b11ac94d",
          "05dbbf84-718e-41ad-90fd-87ff80abe0ce",
          "9520ed17-f88c-4681-b572-cd35eec8b8ee",
          "90200323-997b-40c5-aaae-6fb1a22c6c27",
+         "c76cc2c3-3050-4abd-9f4d-5ebfe555fa9e",
          "0e2183d4-4ef8-474a-935e-c044ffa4685b",
          "12ce9193-0ae1-46de-b60b-d6c59312e1ad",
          "4ef846c6-dbf7-4c6b-800a-976df60de039",
@@ -348,7 +346,6 @@
          "2c29d7fb-3d17-4ae4-b153-77af3c674ee4",
          "55e968c4-2378-43f1-b2c5-c5bbd29554d5",
          "51be7365-c697-41c8-bba5-28bed2ad17b9",
-         "60894c00-9df6-4bbc-b920-f73c3d517c87",
          "59dd7392-0e4f-4a93-a30d-11c0f87ca716",
          "39828bdc-2997-4e87-b57a-55694bdf032a",
          "ef53cea9-1a90-4b5a-8d25-db5c7a8cf9c6",
@@ -378,6 +375,7 @@
          "b37adcbf-6aa8-4b2a-b1c3-4aefc2a85068",
          "50d6999c-7e91-4ccc-9074-c78a868a64d0",
          "112d0d1a-5aef-4f31-b8cd-b223428e846a",
+         "87cea381-687a-43de-a75e-c3ccf339a9da",
          "14736fc7-21ca-4642-9422-d7a1bf2e4ff4",
          "2ad3b00b-cbd0-4fa7-a9ab-c16e07d5c325",
          "37c056f4-923f-4fd6-b48b-d51f09628035",
@@ -388,10 +386,11 @@
          "5a1157a4-f062-49b8-b9d1-191bb3e5f3e2"
         ]
        },
-       "8968e16d-a177-4daa-84d2-8f495be42abd": {
-        "title": "Forbindelse og opsætning",
-        "id": "8968e16d-a177-4daa-84d2-8f495be42abd",
+       "f7ed9c80-f3a7-4ec1-9f76-bcc802b5645d": {
+        "title": "Opsætning og forbindelse",
+        "id": "f7ed9c80-f3a7-4ec1-9f76-bcc802b5645d",
         "references": [
+         "47b42ca5-2950-4cc0-98cd-755d825e141b",
          "489fd564-73d9-46e1-ba19-66678c383472",
          "713ac346-6b64-47ef-8b11-8826ad976b38",
          "2b4e2d63-dd3f-4a43-9acc-b0d5b36dea24",
@@ -407,10 +406,14 @@
          "dbce1bec-1eeb-41b2-9947-9c0eb8c72890",
          "c1458ff0-eb40-4932-a693-7b1640a1fada",
          "01deecab-c9fc-4f91-baa8-1ce69697fcea",
+         "ea3557e8-8139-40ad-b6b6-6625b11ac94d",
+         "6773b9f9-16d5-4e62-ac7c-9b73b63df9b5",
          "77afc599-1e92-44e1-bcbb-96a5fe5188f1",
          "a6b70d3b-b263-40b9-a6e7-444a8405dd3b",
          "0e2183d4-4ef8-474a-935e-c044ffa4685b",
          "927b2889-e2c1-4fe9-a6ab-9cfb03773cc3",
+         "b950b14e-79ac-4187-819a-90c2f0763262",
+         "87cea381-687a-43de-a75e-c3ccf339a9da",
          "3f4519c4-35ed-4035-ada4-72ecca936fd7",
          "7163202f-fbf8-470b-aaf6-7c5c36318cd6",
          "b30ceb2c-5423-476c-a3f7-abfb4189f2eb",
@@ -418,65 +421,80 @@
          "7479658b-f4f5-4aa7-a3f0-2a776e5e4cef",
          "ff564d2f-0a8d-4dea-a10c-70d6e6f4bd38",
          "4c25503e-268d-46cb-b8e4-a493322dc410",
-         "87cea381-687a-43de-a75e-c3ccf339a9da",
+         "80c16c40-fe5a-426c-9c05-e388c1bf1949",
+         "b37adcbf-6aa8-4b2a-b1c3-4aefc2a85068",
          "3c4eb639-6471-4d22-9211-b6d69b39b755",
          "112d0d1a-5aef-4f31-b8cd-b223428e846a",
-         "05080414-c57b-449e-8f36-5993b6ff49eb",
          "73166be4-ee20-471b-b378-c8846a1e7fbd",
-         "b37adcbf-6aa8-4b2a-b1c3-4aefc2a85068"
+         "05080414-c57b-449e-8f36-5993b6ff49eb",
+         "92583af5-bec1-4708-9ef5-6ae895f2d549",
+         "60447ff0-cb56-47fc-8474-f3c0f3f864e2"
         ]
        },
-       "e4a6840b-f02e-4e75-9aa1-5a7fbdb2398a": {
-        "title": "Batteritid",
-        "id": "e4a6840b-f02e-4e75-9aa1-5a7fbdb2398a",
-        "references": [
-         "3e3c53e5-f4c4-4b93-bbcf-e0ce31714618",
-         "ce0960a4-57eb-493c-9071-ef8739038aec",
-         "713ac346-6b64-47ef-8b11-8826ad976b38",
-         "c727d13c-b37c-4aec-afa8-c9dcef087750",
-         "c76cc2c3-3050-4abd-9f4d-5ebfe555fa9e",
-         "dbce1bec-1eeb-41b2-9947-9c0eb8c72890",
-         "b950b14e-79ac-4187-819a-90c2f0763262",
-         "2c29d7fb-3d17-4ae4-b153-77af3c674ee4",
-         "59dd7392-0e4f-4a93-a30d-11c0f87ca716",
-         "4af4ac22-cc91-414b-9cbc-bffdebe5c654",
-         "8e587285-02c0-4ffe-9800-c76ced23d05f",
-         "fa185ee0-486d-427f-bb30-6c372039c8ec",
-         "18699087-cf11-43d7-9788-d0170639bd0d",
-         "2fa93964-7a5f-4f5b-b163-020977e077aa",
-         "aa609dba-1f01-4069-8dcc-de3710b26baa",
-         "80c16c40-fe5a-426c-9c05-e388c1bf1949",
-         "7df5fc62-6b6f-47ab-913e-1040cdb57206",
-         "b37adcbf-6aa8-4b2a-b1c3-4aefc2a85068",
-         "efc32e73-94e3-46fa-8734-fe32eec869c5",
-         "2ad3b00b-cbd0-4fa7-a9ab-c16e07d5c325",
-         "37c056f4-923f-4fd6-b48b-d51f09628035"
-        ]
-       },
-       "40077b3d-9c4a-42c7-b73a-1a9afced8342": {
-        "title": "Mobilitet",
-        "id": "40077b3d-9c4a-42c7-b73a-1a9afced8342",
+       "08076351-f286-4004-9aed-a33c88f55aec": {
+        "title": "Transportabilitet",
+        "id": "08076351-f286-4004-9aed-a33c88f55aec",
         "references": [
          "47b42ca5-2950-4cc0-98cd-755d825e141b",
+         "489fd564-73d9-46e1-ba19-66678c383472",
          "45bfcf90-79ee-46ac-819b-8a1c3658f9fc",
          "c727d13c-b37c-4aec-afa8-c9dcef087750",
          "16a1bf3a-c3ff-48e9-a824-9acd77a7c9eb",
          "b6cbda27-f86e-4e35-acf1-79ee51ef2748",
          "0dba22dd-3c87-43ca-b340-a849c770e23b",
-         "5ed0bff3-2366-46d7-bce8-3b206b310ae6",
          "444f6dcf-3b88-4084-9692-654b07bd7f4a",
          "3025fd06-5d3f-419c-8ae5-7251deacbbbf",
+         "0e742cc1-57bd-4db1-b8f1-bb91d14167e2",
          "2c29d7fb-3d17-4ae4-b153-77af3c674ee4",
          "60894c00-9df6-4bbc-b920-f73c3d517c87",
          "39828bdc-2997-4e87-b57a-55694bdf032a",
          "4af4ac22-cc91-414b-9cbc-bffdebe5c654",
          "c38d80be-cbce-4837-9130-6c6d2de40464",
+         "035598bc-04f7-4ad0-ace0-e9b2dc04345b",
+         "2c6ce9a4-e3e1-4d67-a7f3-d274ec48f58e",
          "a798a44a-fe75-4361-a823-a73fda843c16",
-         "6270711f-d183-42c6-8bea-1839ec9f8d00",
-         "2555da81-cdab-4630-9afa-5c539def7ac5",
-         "92583af5-bec1-4708-9ef5-6ae895f2d549",
-         "aa609dba-1f01-4069-8dcc-de3710b26baa",
          "5a1157a4-f062-49b8-b9d1-191bb3e5f3e2"
+        ]
+       },
+       "9e4ac80f-73d7-40f7-aae9-1f1f9b29bca6": {
+        "title": "Batteritid",
+        "id": "9e4ac80f-73d7-40f7-aae9-1f1f9b29bca6",
+        "references": [
+         "3e3c53e5-f4c4-4b93-bbcf-e0ce31714618",
+         "ce0960a4-57eb-493c-9071-ef8739038aec",
+         "713ac346-6b64-47ef-8b11-8826ad976b38",
+         "dbce1bec-1eeb-41b2-9947-9c0eb8c72890",
+         "b950b14e-79ac-4187-819a-90c2f0763262",
+         "c76cc2c3-3050-4abd-9f4d-5ebfe555fa9e",
+         "2c29d7fb-3d17-4ae4-b153-77af3c674ee4",
+         "59dd7392-0e4f-4a93-a30d-11c0f87ca716",
+         "4af4ac22-cc91-414b-9cbc-bffdebe5c654",
+         "8e587285-02c0-4ffe-9800-c76ced23d05f",
+         "fa185ee0-486d-427f-bb30-6c372039c8ec",
+         "2fa93964-7a5f-4f5b-b163-020977e077aa",
+         "aa609dba-1f01-4069-8dcc-de3710b26baa",
+         "80c16c40-fe5a-426c-9c05-e388c1bf1949",
+         "7df5fc62-6b6f-47ab-913e-1040cdb57206",
+         "b37adcbf-6aa8-4b2a-b1c3-4aefc2a85068",
+         "37c056f4-923f-4fd6-b48b-d51f09628035",
+         "efc32e73-94e3-46fa-8734-fe32eec869c5"
+        ]
+       },
+       "22c4ef76-c9f3-4c01-a079-6351298ecac1": {
+        "title": "App-oplevelse",
+        "id": "22c4ef76-c9f3-4c01-a079-6351298ecac1",
+        "references": [
+         "4d1156e4-711d-448d-bfe4-02092da0fc9e",
+         "5e612ae1-b212-412d-992b-ef0df0a36f1e",
+         "6773b9f9-16d5-4e62-ac7c-9b73b63df9b5",
+         "0e2183d4-4ef8-474a-935e-c044ffa4685b",
+         "b30ceb2c-5423-476c-a3f7-abfb4189f2eb",
+         "56dac0eb-abc5-4ca8-a401-b6c31684a9f3",
+         "7479658b-f4f5-4aa7-a3f0-2a776e5e4cef",
+         "73166be4-ee20-471b-b378-c8846a1e7fbd",
+         "4c25503e-268d-46cb-b8e4-a493322dc410",
+         "ff564d2f-0a8d-4dea-a10c-70d6e6f4bd38",
+         "6773b9f9-16d5-4e62-ac7c-9b73b63df9b5"
         ]
        }
       },
