@@ -234,7 +234,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 18,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -332,7 +332,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 4,
+     "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -430,7 +430,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 4,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -524,8 +524,8 @@
      "productCode": "AQGGBKHOLE500"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "inventoryStatusType": "notInStockAtpDate"
     },
@@ -567,36 +567,36 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQGGBKHOLE giver stor tilfredshed samlet set, især takket være det førsteklasses, godt afskærmede jordkabel og den problemfri personlige service. Kablet understøtter en stille og ren lyd baggrund og betragtes trods den relativt høje pris som en værdifuld opgradering i forhold til almindelige uskærmede alternativer. Varm, detaljeret og medrivende lyd gør hele opsætningen meget fornøjelig.",
+   "summary": "AQGGBKHOLE får stor ros som et førsteklasses, godt afskærmet jordkabel, der hjælper med at holde pladespillersystemer støjsvage og raffinerede. Den solide konstruktion og pålidelige ydelse gør kablet til en stærk partner for detaljeret og omsluttende lyd. Også kundeservice og hjælp til opsætning i hjemmet får varm ros, mens den relativt høje pris er det største forbehold.",
    "headlines": {
-    "well-shielded and high quality": {
-     "sentimentAnalysis": "Jordkablet roses for førsteklasses konstruktion, effektiv afskærmning og ren, støjsvag ydelse.",
-     "simpleTitle": "Godt afskærmet og af høj kvalitet",
+    "well-made and well-shielded cable": {
+     "sentimentAnalysis": "Kablet roses konsekvent for høj kvalitet, solid udførelse og god afskærmning.",
+     "simpleTitle": "Velkonstrueret og godt afskærmet kabel",
      "bias": "positive",
-     "key": "grounding-cable",
-     "groupId": "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a"
+     "key": "cable-quality",
+     "groupId": "365e4ac2-caf6-4d43-8b51-241d59e77adb"
     },
-    "helpful service from purchase to setup": {
-     "sentimentAnalysis": "Kunderne beskriver hjælpen og supporten ved tilslutningen som fremragende og meget tilfredsstillende.",
-     "simpleTitle": "Hjælpsom service fra køb til opsætning",
+    "friendly, effective service": {
+     "sentimentAnalysis": "Kundeservicen beskrives som fantastisk med problemfri hjælp fra salg til tilslutning i hjemmet.",
+     "simpleTitle": "Venlig og effektiv service",
      "bias": "positive",
-     "key": "customer-service",
-     "groupId": "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439"
+     "key": "service-support",
+     "groupId": "bef94055-2743-4819-9537-549daa5bec92"
     }
    },
    "grouping": {
-    "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a": {
-     "title": "Jordkabel",
-     "id": "0be9ffcf-a193-40cf-a4e6-5ccec27b2f1a",
+    "365e4ac2-caf6-4d43-8b51-241d59e77adb": {
+     "title": "Kabelkvalitet",
+     "id": "365e4ac2-caf6-4d43-8b51-241d59e77adb",
      "references": [
       "b4d91df6-ca41-4e92-97c5-e2b930795f9c",
       "562789f7-be80-4d98-85c2-c36d14ed3e82",
       "e82f77b5-37f0-4c97-bdd5-24832561ecf2"
      ]
     },
-    "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439": {
-     "title": "Kundeservice",
-     "id": "bb05fdfd-7f13-4e76-8f27-3d7fee4f7439",
+    "bef94055-2743-4819-9537-549daa5bec92": {
+     "title": "Service og opsætning",
+     "id": "bef94055-2743-4819-9537-549daa5bec92",
      "references": [
       "9228d439-352b-4ca1-910c-d57bead6a6b6",
       "b61ade23-8265-4171-b00d-44b476c4ab64"

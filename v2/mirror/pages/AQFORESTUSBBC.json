@@ -208,7 +208,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 11,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -230,52 +230,36 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQFORESTUSBBC leverer ren, detaljeret og imponerende levende lyd med en varm og kraftfuld karakter, der kan løfte tilsluttet udstyr. Den solide konstruktion og pålidelige funktion gør kablet velegnet til hyppig brug og gentagen tilslutning. Den gode værdi for pengene og den førsteklasses udførelse fuldender den begejstrede samlede vurdering.",
+   "summary": "AQFORESTUSBBC leverer en varm, ren og kraftfuld lyd med fremragende ydeevne i lydopsætninger. Den solide konstruktion og pålidelige funktion i hverdagen giver tryghed, også ved hyppig brug. Samlet set føles kablet som en førsteklasses og prisvenlig opgradering til digitale lydforbindelser.",
    "headlines": {
     "clean, high-quality sound": {
-     "sentimentAnalysis": "Kablet roses for ren lyd i høj kvalitet og for at overgå et standard-USB-kabel i et lydsystem.",
+     "sentimentAnalysis": "Anmeldelserne beskriver en fremragende lyd, som især i dedikerede lydopsætninger opleves renere end med et standard-USB-kabel.",
      "simpleTitle": "Ren lyd i høj kvalitet",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "cc883bd3-3a9d-4603-ba5a-00b2461beca7"
+     "groupId": "969b2876-ef0c-44fe-aa3e-6aed96d7938a"
     },
-    "works reliably as intended": {
-     "sentimentAnalysis": "Kablet beskrives konsekvent som funktionelt, pålideligt og i stand til at udføre sin opgave godt.",
-     "simpleTitle": "Fungerer pålideligt som tilsigtet",
-     "bias": "positive",
-     "key": "functionality",
-     "groupId": "eb31e2da-a679-4226-ae5c-21ff2fc3ccc7"
-    },
-    "sturdy construction for frequent use": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver bedre forarbejdning end standardkabler, en solid fornemmelse og tillid til, at kablet tåler hyppige skift.",
-     "simpleTitle": "Solid konstruktion til hyppig brug",
+    "solid and durable construction": {
+     "sentimentAnalysis": "Kablet roses for den førsteklasses forarbejdning og robuste konstruktion, som bør kunne klare hyppige skift mellem kilder og modtagere.",
+     "simpleTitle": "Solid og holdbar konstruktion",
      "bias": "positive",
      "key": "build-quality",
-     "groupId": "7c5dbcc6-310f-4b18-b647-4c178d13b03f"
+     "groupId": "99386a3a-9466-4e4b-a3a7-6d2e62a076ef"
     }
    },
    "grouping": {
-    "cc883bd3-3a9d-4603-ba5a-00b2461beca7": {
+    "969b2876-ef0c-44fe-aa3e-6aed96d7938a": {
      "title": "Lydkvalitet",
-     "id": "cc883bd3-3a9d-4603-ba5a-00b2461beca7",
+     "id": "969b2876-ef0c-44fe-aa3e-6aed96d7938a",
      "references": [
       "8538d5f8-30eb-4e3e-9b61-d0c04d1e247c",
       "e078a949-74b8-48a7-8bee-edf5c814a605",
       "e023ee40-4960-40ea-b894-2fb8702b40cc"
      ]
     },
-    "eb31e2da-a679-4226-ae5c-21ff2fc3ccc7": {
-     "title": "Funktionalitet",
-     "id": "eb31e2da-a679-4226-ae5c-21ff2fc3ccc7",
-     "references": [
-      "ad938814-ac88-4277-9337-5d565c03b231",
-      "01bb35bf-15b1-4752-916c-430041a67cd4",
-      "77660b1d-2a56-4200-ad63-2dfa352d89b6"
-     ]
-    },
-    "7c5dbcc6-310f-4b18-b647-4c178d13b03f": {
+    "99386a3a-9466-4e4b-a3a7-6d2e62a076ef": {
      "title": "Byggekvalitet",
-     "id": "7c5dbcc6-310f-4b18-b647-4c178d13b03f",
+     "id": "99386a3a-9466-4e4b-a3a7-6d2e62a076ef",
      "references": [
       "e023ee40-4960-40ea-b894-2fb8702b40cc",
       "77660b1d-2a56-4200-ad63-2dfa352d89b6"

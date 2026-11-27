@@ -296,12 +296,11 @@
      "productCode": "AQREDRIVERIN2,0"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -510,7 +509,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "19,5 x 28,000000000000004 x 4 cm (bredde x højde x dybde)"
+        "value": "19,5 x 28 x 4 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -574,7 +573,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "19,5 x 28,000000000000004 x 4 cm (bredde x højde x dybde)"
+        "value": "19,5 x 28 x 4 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -603,34 +602,34 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQREDRIVERIN leverer en klar, ren og meget detaljeret lyd og beskrives ofte som en markant opgradering i forhold til billigere eller ældre kabler. Kablet giver en mere dynamisk, detaljeret og omsluttende musikgengivelse uden selv at dominere signalvejen. Den høje kvalitet og stærke lydpræstation gør købet let at anbefale, selv om prisen og manglende direkte sammenligninger giver enkelte købere betænkeligheder.",
+   "summary": "AQREDRIVERIN leverer en varm, klar og punchy lydopgradering i forhold til billigere eller ældre signalkabler. Musikken får flere detaljer og en mere omsluttende åbenhed med ren, præcis signaloverførsel og mærkbart bedre opløsning. Den førsteklasses konstruktion giver tillid, selv om pris og få direkte sammenligninger gør værdien subjektiv.",
    "headlines": {
-    "major upgrade over cheaper or older cables": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en tydeligt hørbar forbedring i forhold til tidligere, billigere eller ringere kabler.",
-     "simpleTitle": "Markant opgradering i forhold til billigere eller ældre kabler",
+    "a clear upgrade over cheaper and older cables": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som en markant lydmæssig forbedring i forhold til billigere, ældre eller ringere alternativer.",
+     "simpleTitle": "En tydelig opgradering i forhold til billigere og ældre kabler",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
+     "key": "sound_upgrade",
+     "groupId": "fbb3d8b9-8fe6-4fa7-a61d-5d5500cbd324"
     },
-    "clearer sound with more detail": {
-     "sentimentAnalysis": "Anmeldelserne roser den rene, klare gengivelse og evnen til at afsløre hidtil uhørte musikalske detaljer.",
-     "simpleTitle": "Klarere lyd med flere detaljer",
+    "clear, detailed and faithful sound": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver ren og klar gengivelse med mange detaljer og præcis signaloverførsel.",
+     "simpleTitle": "Klar, detaljeret og naturtro lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
+     "key": "clear_detailed_sound",
+     "groupId": "fbb3d8b9-8fe6-4fa7-a61d-5d5500cbd324"
     },
-    "performance is not directly compared by everyone": {
-     "sentimentAnalysis": "Positive indtryk nuanceres af begrænsede sammenligninger med andre kabler i samme klasse.",
-     "simpleTitle": "Ydelsen sammenlignes ikke direkte af alle",
-     "bias": "meh",
-     "key": "sound-quality",
-     "groupId": "6d8e2424-6c47-4df9-8ed3-85404de67e44"
+    "high-quality cable construction": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver kablet som velbygget, af høj kvalitet og førsteklasses konstrueret.",
+     "simpleTitle": "Kabelkonstruktion i høj kvalitet",
+     "bias": "positive",
+     "key": "premium_construction",
+     "groupId": "a7dac542-f17b-4a24-9711-7c98535340bd"
     }
    },
    "grouping": {
-    "6d8e2424-6c47-4df9-8ed3-85404de67e44": {
+    "fbb3d8b9-8fe6-4fa7-a61d-5d5500cbd324": {
      "title": "Lydkvalitet",
-     "id": "6d8e2424-6c47-4df9-8ed3-85404de67e44",
+     "id": "fbb3d8b9-8fe6-4fa7-a61d-5d5500cbd324",
      "references": [
       "e338d8b7-307d-4498-b500-b48afb7ac344",
       "bc13e595-5759-4004-b6a2-c5556665d873",
@@ -642,6 +641,16 @@
       "b0cbb552-8090-4781-aed9-17596c37e221",
       "210f807a-65f6-41be-a39e-c63e0cb76e10",
       "c459de9d-1a7f-435b-8552-a31573e675b2"
+     ]
+    },
+    "a7dac542-f17b-4a24-9711-7c98535340bd": {
+     "title": "Byggekvalitet",
+     "id": "a7dac542-f17b-4a24-9711-7c98535340bd",
+     "references": [
+      "7820b831-1774-43ac-b780-dff49fd1795c",
+      "c23f7262-292b-483b-981c-881ae6a00daa",
+      "93abc861-0dad-4e88-937d-e2cf9610e892",
+      "a656bd42-c11d-44c4-ad51-73fd7e520866"
      ]
     }
    },

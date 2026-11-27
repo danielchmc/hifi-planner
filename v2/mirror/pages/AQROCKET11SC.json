@@ -137,7 +137,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 1025,
+     "availableQuantity": 825,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -194,7 +194,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "19,5 x 28,000000000000004 x 6 cm (bredde x højde x dybde)"
+        "value": "19,5 x 28 x 6 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -203,8 +203,8 @@
      "productCode": "AQROCKET11SCBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 29. november",
-     "deliveryDate": "2026-11-29T00:00:00Z",
+     "description": "Forventes på lager søndag den 13. december",
+     "deliveryDate": "2026-12-13T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockAtpDate"
@@ -224,56 +224,64 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET11SC betragtes bredt som et kvalitetsrigt og robust højttalerkabel, der leverer en klar, afbalanceret og dynamisk lyd med fast bas, bløde diskanttoner og en rummelig, omsluttende gengivelse. Mange anmeldelser beskriver en tydeligt hørbar opgradering i forhold til enkle eller ældre kabler samt et stærkt forhold mellem pris og kvalitet og god egnethed til bi-wiring. Installationen er som regel enkel, især når kablerne er færdigmonterede, men det tykke kabel kan være vanskeligt at føre, og klargøring eller tilslutning kan føles lidt besværlig.",
+   "summary": "AQ Rocket 11 roses bredt som et velbygget, fleksibelt og prisvenligt højttalerkabel, der leverer en klar, afbalanceret og dynamisk lyd. Mange anmeldelser beskriver hørbare forbedringer i forhold til simple kabler, blandt andet strammere bas, blødere diskant, større klarhed, bredere lydbillede og flere musikalske detaljer. Installationen er som regel enkel, især med færdigmonterede bananstik, men det tykke kabel kan være svært at skjule, og forberedelse eller bi-wiring kan føles mindre intuitivt for nogle.",
    "headlines": {
-    "audible upgrade with punchier bass and smoother highs": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en tydelig forbedring i forhold til enkle eller ældre kabler, især med hensyn til baskontrol og klarhed.",
-     "simpleTitle": "Hørbar opgradering med fastere bas og blødere diskant",
+    "clear, balanced and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klar og afbalanceret gengivelse med præcis placering, mange detaljer og en rummelig lydbillede.",
+     "simpleTitle": "Klar, afbalanceret og rummelig lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d"
+     "groupId": "de702995-da59-4586-a322-9679026a29b4"
     },
-    "thick, solid and professionally finished": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som robust, veludført og professionelt i udseende og følelse.",
-     "simpleTitle": "Tykt, solidt og professionelt udført",
+    "audible upgrade with tighter bass and smoother highs": {
+     "sentimentAnalysis": "Flere anmeldelser oplever en tydelig forbedring i forhold til simple kabler, især med strammere bas, blødere diskant og større klarhed.",
+     "simpleTitle": "Hørbar opgradering med strammere bas og blødere diskant",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "ccdaa574-6706-4eea-8273-b9a7916743f8"
+     "key": "sound-quality",
+     "groupId": "de702995-da59-4586-a322-9679026a29b4"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den stærke ydelse og kvalitet i forhold til prisen.",
-     "simpleTitle": "Fremragende forhold mellem pris og kvalitet",
+    "strong value for the price": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ofte kablet som et kvalitetskøb, hvor lyd og udførelse står mål med prisen.",
+     "simpleTitle": "Meget for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "9a344cab-30bf-41f9-acf2-ce9aed176bb7"
+     "groupId": "7d687fbb-9e10-4f32-88ab-7ee9e9ccafb3"
     },
-    "clear, balanced and dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne roser den afbalancerede, klare og dynamiske gengivelse.",
-     "simpleTitle": "Klar, afbalanceret og dynamisk lyd",
+    "solid, neatly finished construction": {
+     "sentimentAnalysis": "Kablet værdsættes gentagne gange for robuste materialer, professionel finish og en holdbar fornemmelse.",
+     "simpleTitle": "Solid og flot udførelse",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d"
+     "key": "build-quality",
+     "groupId": "08db9442-1c93-44b2-9f2e-7b790e888781"
     },
-    "easy bi-wiring connection": {
-     "sentimentAnalysis": "Kablet anses for at være særligt praktisk til bi-wiring og understøtter både bi-wiring og single-wiring.",
-     "simpleTitle": "Nem bi-wiring-tilslutning",
+    "easy to install and use with banana plugs": {
+     "sentimentAnalysis": "Forberedte eller terminerede kabler gør tilslutningen hurtig og ukompliceret for mange brugere.",
+     "simpleTitle": "Nem installation med bananstik",
+     "bias": "positive",
+     "key": "installation",
+     "groupId": "3182a1fc-b62a-4610-b7bc-8f62c9a6810a"
+    },
+    "bi-wiring is convenient and effective": {
+     "sentimentAnalysis": "Kablet er nemt at dele og velegnet til bi-wiring, og flere anmeldelser forbinder opsætningen med bedre lyd.",
+     "simpleTitle": "Bi-wiring er praktisk og effektivt",
      "bias": "positive",
      "key": "bi-wiring",
-     "groupId": "a852362b-52dd-4604-a1c2-f4688644da08"
+     "groupId": "d70bd43f-d645-41a3-b326-a7972f9a190b"
     },
-    "the thick cable can be difficult to route": {
-     "sentimentAnalysis": "Nogle anmeldelser påpeger, at kablets tykkelse kan gøre føring eller visuel tilpasning vanskelig.",
-     "simpleTitle": "Det tykke kabel kan være svært at føre",
+    "the thick cable can be difficult to hide": {
+     "sentimentAnalysis": "Det kraftige kabel er robust, men kan se forkert ud i for store terminaler eller være svært at føre diskret.",
+     "simpleTitle": "Det tykke kabel kan være svært at skjule",
      "bias": "negative",
      "key": "installation",
-     "groupId": "02fa7748-d967-4817-b36f-cba927a74b6a"
+     "groupId": "3182a1fc-b62a-4610-b7bc-8f62c9a6810a"
     }
    },
    "grouping": {
-    "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d": {
+    "de702995-da59-4586-a322-9679026a29b4": {
      "title": "Lydkvalitet",
-     "id": "1fbfb3c8-ad7c-44f6-9e68-2878bb265d9d",
+     "id": "de702995-da59-4586-a322-9679026a29b4",
      "references": [
+      "fa57d6b7-f207-4e9f-98a2-c97c18ed137e",
       "3bdb01c7-9675-4f20-a908-88ff960da0ae",
       "6f2adce6-962b-4e2a-8fda-6c671b625ecb",
       "824067c9-135b-40cd-913e-9c2cbe1c77a0",
@@ -298,55 +306,63 @@
       "d1a12110-8362-45b4-86d6-215816dd37eb"
      ]
     },
-    "02fa7748-d967-4817-b36f-cba927a74b6a": {
+    "3182a1fc-b62a-4610-b7bc-8f62c9a6810a": {
      "title": "Installation og håndtering",
-     "id": "02fa7748-d967-4817-b36f-cba927a74b6a",
+     "id": "3182a1fc-b62a-4610-b7bc-8f62c9a6810a",
      "references": [
       "4c8eba81-669e-46bc-9d4a-f4e9893de9b9",
       "333883c8-7e98-47bf-b39d-a47ea79a9491",
       "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
       "7685b505-7c12-494c-8ce1-a15cabe465fa",
+      "02380ae4-65f3-46f9-aa33-71d775bb4212",
       "8ef4714c-9988-4671-b434-25a75c1e0b20",
       "85bbabed-7123-4553-b67c-3228b6148b7a",
+      "540d4e60-9448-4f24-bcce-5f38d184399e",
       "d0f13715-b6c5-4ad4-8a2e-bfe6806e17b1",
       "ea920f99-c6de-4a7c-95b5-c2b3c8f4d29c",
       "f8fa2a15-a064-44bd-b9c9-861ae0c2e818",
+      "96b2c28c-8ab3-4845-ac2b-29349cffba39",
       "03ac4219-9590-473d-b66a-be9da60ae487",
       "d1a12110-8362-45b4-86d6-215816dd37eb"
      ]
     },
-    "ccdaa574-6706-4eea-8273-b9a7916743f8": {
+    "08db9442-1c93-44b2-9f2e-7b790e888781": {
      "title": "Byggekvalitet",
-     "id": "ccdaa574-6706-4eea-8273-b9a7916743f8",
+     "id": "08db9442-1c93-44b2-9f2e-7b790e888781",
      "references": [
       "4c8eba81-669e-46bc-9d4a-f4e9893de9b9",
       "7685b505-7c12-494c-8ce1-a15cabe465fa",
       "9966094c-4cfe-4c5a-83fa-2547ff1bbecf",
       "99f2fd5f-00cf-4107-8358-783ed70868ed",
       "8ef4714c-9988-4671-b434-25a75c1e0b20",
+      "d33a5199-db3b-42fc-a91a-83416a219575",
       "238dca30-4c7c-446c-b19a-9719bec4405f",
+      "c9c45ab2-af39-403b-9161-8f6313c144ab",
       "d0f13715-b6c5-4ad4-8a2e-bfe6806e17b1",
-      "f0cab3d2-ff8e-457e-9ea3-db1ca05ba09e",
+      "f8fa2a15-a064-44bd-b9c9-861ae0c2e818",
       "133ce000-4504-4466-9d79-ba24f331923d",
       "d1a12110-8362-45b4-86d6-215816dd37eb"
      ]
     },
-    "9a344cab-30bf-41f9-acf2-ce9aed176bb7": {
-     "title": "Pris-kvalitet",
-     "id": "9a344cab-30bf-41f9-acf2-ce9aed176bb7",
+    "7d687fbb-9e10-4f32-88ab-7ee9e9ccafb3": {
+     "title": "Pris og kvalitet",
+     "id": "7d687fbb-9e10-4f32-88ab-7ee9e9ccafb3",
      "references": [
       "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
+      "9966094c-4cfe-4c5a-83fa-2547ff1bbecf",
       "d33a5199-db3b-42fc-a91a-83416a219575",
+      "238dca30-4c7c-446c-b19a-9719bec4405f",
       "911e5a44-86ed-4ba7-9866-1a04f3638915",
       "ec4a3ada-28f4-41f3-9788-67feba761466",
+      "04400b1e-b86b-46fe-b0c4-00c47e17965f",
       "96b2c28c-8ab3-4845-ac2b-29349cffba39",
       "3f16f201-117e-4c13-854e-95e5e226b79e",
       "c322501f-51a5-42e8-8ce3-246ce225b8a0"
      ]
     },
-    "a852362b-52dd-4604-a1c2-f4688644da08": {
+    "d70bd43f-d645-41a3-b326-a7972f9a190b": {
      "title": "Bi-wiring",
-     "id": "a852362b-52dd-4604-a1c2-f4688644da08",
+     "id": "d70bd43f-d645-41a3-b326-a7972f9a190b",
      "references": [
       "24ac58ff-cf7d-475c-b3f2-f2d525a1bf42",
       "f5948328-d792-4fd6-b4f4-d5a85a6466e0",
@@ -356,15 +372,15 @@
      ]
     }
    },
-   "rating": 4.75903614457831,
-   "count": 166,
-   "reviewCount": 64,
+   "rating": 4.76047904191617,
+   "count": 167,
+   "reviewCount": 65,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 8,
     "4": 21,
-    "5": 136
+    "5": 137
    }
   },
   "brandName": "AudioQuest",

@@ -121,7 +121,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 51,
+     "availableQuantity": 50,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -199,7 +199,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 34,
+     "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -273,11 +273,11 @@
      "productCode": "AQNRGZ3AC3,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "inventoryStatusType": "notInStockAtpDate"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {
@@ -297,48 +297,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQNRGZ3AC leverer en markant mere immersiv, rummelig og dynamisk gengivelse med sortere baggrund, strammere bas og flere musikalske detaljer. Den solide konstruktion og brede systemkompatibilitet gør kablet til en seriøs opgradering af krævende hi-fi-anlæg. Den høje pris er den primære indvending, men den samlede vurdering er stadig meget begejstret for varm, slagkraftig og præcis lyd.",
+   "summary": "Dette strømkabel roses bredt for at give en klarere, mere dynamisk og mere rummelig lyd, ofte med en sortere baggrund og strammere bas. Kvaliteten opleves som solid og eksklusiv, og flere anmeldelser mener, at lydforbedringen er pengene værd. Et mindretal synes, at merprisen er for høj, og det stive kabel kan kræve ekstra plads bag udstyret.",
    "headlines": {
-    "a broader, fuller and more dynamic presentation": {
-     "sentimentAnalysis": "Kablet forbindes gentagne gange med et større, fyldigere, mere rummeligt, dynamisk og kraftfuldt lydbillede.",
-     "simpleTitle": "En større, fyldigere og mere dynamisk gengivelse",
+    "clearer, more dynamic and spacious sound": {
+     "sentimentAnalysis": "Kablet får gentagne gange æren for at gøre gengivelsen fyldigere, mere dynamisk, mere rummelig og mere musikalsk.",
+     "simpleTitle": "Klarere, mere dynamisk og rummelig lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "25e25c17-0978-4fd8-b630-0d81d3b59620"
+     "key": "sound-dynamics",
+     "groupId": "9917177b-f767-4bbd-a6c8-44a462d09d58"
     },
-    "a darker background with cleaner, tighter detail": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver mindre støj, en sortere baggrund, bedre præcision og strammere bas.",
-     "simpleTitle": "En sortere baggrund med renere og strammere detaljer",
+    "solid, premium construction": {
+     "sentimentAnalysis": "Kablet opleves generelt som velbygget, robust og af høj kvalitet.",
+     "simpleTitle": "Solid, eksklusiv konstruktion",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "25e25c17-0978-4fd8-b630-0d81d3b59620"
+     "key": "solid-construction",
+     "groupId": "59455ca0-fda3-476f-8fdb-3bff9c1d4b9b"
     },
-    "solid, premium-feeling construction": {
-     "sentimentAnalysis": "Flere anmeldelser roser kablet som solidt, velbygget og generelt af høj kvalitet.",
-     "simpleTitle": "Solid konstruktion med premiumfornemmelse",
+    "blacker background and tighter bass": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en roligere, sortere baggrund, og der nævnes også strammere bas og mere præcis rumgengivelse.",
+     "simpleTitle": "Sortere baggrund og strammere bas",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "554e4604-f785-4b29-be78-5ca2670b0d23"
+     "key": "quiet-background",
+     "groupId": "9917177b-f767-4bbd-a6c8-44a462d09d58"
     },
-    "richer midrange and treble refinement": {
-     "sentimentAnalysis": "Kablet får æren for større musikalitet samt en mærkbart forbedret mellemton og diskant.",
-     "simpleTitle": "Fyldigere mellemtone og mere raffineret diskant",
+    "worth the investment": {
+     "sentimentAnalysis": "Trods premiumprisen mener flere anmeldelser, at den hørbare forbedring og ydelse er pengene værd.",
+     "simpleTitle": "Pengene værd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "25e25c17-0978-4fd8-b630-0d81d3b59620"
-    },
-    "premium pricing limits the value proposition": {
-     "sentimentAnalysis": "Den hørbare forbedring værdsættes, men den høje pris anses af nogle anmeldelser for svær at retfærdiggøre.",
-     "simpleTitle": "Den høje pris begrænser værdien for pengene",
-     "bias": "negative",
-     "key": "value_for_money",
-     "groupId": "cc847c03-3e46-4dee-b8a3-de9f528317af"
+     "key": "worth-price",
+     "groupId": "7df80b1c-ee93-4aa9-a667-07775e26e406"
     }
    },
    "grouping": {
-    "25e25c17-0978-4fd8-b630-0d81d3b59620": {
+    "9917177b-f767-4bbd-a6c8-44a462d09d58": {
      "title": "Lydkvalitet",
-     "id": "25e25c17-0978-4fd8-b630-0d81d3b59620",
+     "id": "9917177b-f767-4bbd-a6c8-44a462d09d58",
      "references": [
       "4ebfb548-af25-4d4e-8fa8-8effe4a16385",
       "0403cbd3-06b5-4fc9-90da-4362f831d2ca",
@@ -354,27 +347,32 @@
       "6c862bff-979d-4363-91a5-89a71db5c0d3"
      ]
     },
-    "cc847c03-3e46-4dee-b8a3-de9f528317af": {
+    "59455ca0-fda3-476f-8fdb-3bff9c1d4b9b": {
+     "title": "Byggekvalitet",
+     "id": "59455ca0-fda3-476f-8fdb-3bff9c1d4b9b",
+     "references": [
+      "8f453d9e-6195-4f4c-bb77-96775c2228ed",
+      "9fa60fb5-a25f-4081-b1b5-907eeb81839a",
+      "8aab270c-80a0-4e28-96cc-f0f1a77133bb",
+      "79caaf28-c333-4b3a-aeb3-2191d22ce41e",
+      "6a819955-3199-4f01-8653-4aef3b7598c8",
+      "6c8433f6-4956-47c5-8b9c-79f788d505af",
+      "bab94a8d-5514-4ff9-875f-f927a2f6f7c5",
+      "fe819f79-8edd-495f-9117-1634d7fc8694",
+      "77188567-336f-47cf-92fd-29c904299f5d",
+      "42c55c5f-4781-4c78-9491-2337e73c55af"
+     ]
+    },
+    "7df80b1c-ee93-4aa9-a667-07775e26e406": {
      "title": "Værdi for pengene",
-     "id": "cc847c03-3e46-4dee-b8a3-de9f528317af",
+     "id": "7df80b1c-ee93-4aa9-a667-07775e26e406",
      "references": [
       "5b912c23-f9b2-4f33-869c-f6248e4056c7",
-      "a5cd1ae4-d46d-4c48-b630-a26a44dec5b3",
       "b7b27d95-334d-4095-b0a2-8da217ebfcd9",
       "42c55c5f-4781-4c78-9491-2337e73c55af",
       "018f3bed-c26f-44f2-9ca2-97977dddbdce",
       "f0c58113-f2c0-4db8-8ac8-3ce3510a2c96",
       "77188567-336f-47cf-92fd-29c904299f5d"
-     ]
-    },
-    "554e4604-f785-4b29-be78-5ca2670b0d23": {
-     "title": "Byggekvalitet",
-     "id": "554e4604-f785-4b29-be78-5ca2670b0d23",
-     "references": [
-      "8f453d9e-6195-4f4c-bb77-96775c2228ed",
-      "6a819955-3199-4f01-8653-4aef3b7598c8",
-      "79caaf28-c333-4b3a-aeb3-2191d22ce41e",
-      "9fa60fb5-a25f-4081-b1b5-907eeb81839a"
      ]
     }
    },

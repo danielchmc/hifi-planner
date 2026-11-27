@@ -116,7 +116,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 13,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -138,68 +138,45 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQPREAMPJUMPERSX betragtes bredt som en kvalitetsopgradering, der giver en varm, kraftfuld og mere detaljeret lyd med især mærkbare forbedringer i dynamik og klarhed. Den robuste konstruktion og den tydelige forbedring i forhold til almindelige metalbøjler gør jumperne til en værdifuld og til tider nødvendig tilføjelse til kompatible forstærkere. Hurtig service og hjælpsom support styrker det allerede meget positive indtryk.",
+   "summary": "AQPREAMPJUMPERSX roses bredt som en opgradering i høj kvalitet, der giver kompatible forstærkere en varm, fyldig og mere detaljeret lyd. Jumperne giver en tydeligt hørbar forbedring i forhold til standardmetalbøjler med større dynamik og flere musikalske detaljer. Den solide konstruktion, den pålidelige kvalitet og den enkle installation gør AQPREAMPJUMPERSX til en begejstret anbefaling til finjustering af et eksisterende hi-fi-system.",
    "headlines": {
-    "clearly improved sound": {
-     "sentimentAnalysis": "Jumperne beskrives gentagne gange som en tydeligt hørbar og markant forbedring af anlæggets lyd.",
-     "simpleTitle": "Tydeligt forbedret lyd",
+    "high-quality construction": {
+     "sentimentAnalysis": "Produktet får konsekvent positive kommentarer om kvaliteten, og konstruktionen beskrives som robust og egnet til langvarig brug.",
+     "simpleTitle": "Konstruktion i høj kvalitet",
      "bias": "positive",
-     "key": "sound-improvement",
-     "groupId": "46cf0c38-9db2-4a7b-b9dc-efe51504c435"
+     "key": "build-quality",
+     "groupId": "8722fda8-4996-4d36-acc0-f92c24cac6ce"
     },
-    "durable, high-quality construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmigt produktet som velbygget, af høj kvalitet og modstandsdygtigt over for gentagne bøjninger.",
-     "simpleTitle": "Holdbar konstruktion i høj kvalitet",
+    "clear improvement in dynamics and detail": {
+     "sentimentAnalysis": "Jumperne beskrives som en tydeligt hørbar forbedring af lyd, dynamik og detaljer, især sammenlignet med metalbøjler.",
+     "simpleTitle": "Tydelig forbedring af dynamik og detaljer",
      "bias": "positive",
-     "key": "durable-construction",
-     "groupId": "3b4e2813-fe41-44e9-a469-ae44840df05d"
-    },
-    "more dynamics and detail": {
-     "sentimentAnalysis": "Opgraderingen forbindes med større dynamik, flere detaljer og et yderligere løft af velafprøvede forstærkeres ydeevne.",
-     "simpleTitle": "Mere dynamik og flere detaljer",
-     "bias": "positive",
-     "key": "dynamics-detail",
-     "groupId": "46cf0c38-9db2-4a7b-b9dc-efe51504c435"
-    },
-    "fast, helpful service": {
-     "sentimentAnalysis": "Sælgerens opmærksomhed roses, og afsendelsen af ordren beskrives som hurtig.",
-     "simpleTitle": "Hurtig og hjælpsom service",
-     "bias": "positive",
-     "key": "fast-service",
-     "groupId": "3e19ac85-c4ac-432d-861c-e63fb521d6b3"
+     "key": "sound-quality",
+     "groupId": "5ed4ac8b-335a-43e6-9202-1da94ed66475"
     }
    },
    "grouping": {
-    "3b4e2813-fe41-44e9-a469-ae44840df05d": {
+    "8722fda8-4996-4d36-acc0-f92c24cac6ce": {
      "title": "Byggekvalitet",
-     "id": "3b4e2813-fe41-44e9-a469-ae44840df05d",
+     "id": "8722fda8-4996-4d36-acc0-f92c24cac6ce",
      "references": [
       "76728b0a-ed08-4b8f-9131-f2e411e22f6b",
       "332e94b1-ed7f-475a-84da-a3c1a8ed07e0",
       "e1fa40b0-ff94-426a-89c3-0f9c7642e6af",
-      "b93bf915-95a2-46c7-9381-c5a86f860ffb",
+      "a85e99a0-5c2a-4120-acd6-db0348a75983",
       "c9331408-cb96-4a8e-b86e-92c7162605b0",
-      "58b5461b-55c0-4be6-8cac-604e4c847eec",
-      "a85e99a0-5c2a-4120-acd6-db0348a75983"
+      "58b5461b-55c0-4be6-8cac-604e4c847eec"
      ]
     },
-    "46cf0c38-9db2-4a7b-b9dc-efe51504c435": {
+    "5ed4ac8b-335a-43e6-9202-1da94ed66475": {
      "title": "Lydkvalitet",
-     "id": "46cf0c38-9db2-4a7b-b9dc-efe51504c435",
+     "id": "5ed4ac8b-335a-43e6-9202-1da94ed66475",
      "references": [
       "b93bf915-95a2-46c7-9381-c5a86f860ffb",
       "9ed8d051-b871-4e75-8bb6-0352a148a464",
       "d0216e74-2051-4e46-beee-f69af2d2a80a",
       "974b4106-2ff2-4837-a0f6-08835df5faaa",
       "d8931229-22f3-420f-bffa-17058b5f55b2"
-     ]
-    },
-    "3e19ac85-c4ac-432d-861c-e63fb521d6b3": {
-     "title": "Service og levering",
-     "id": "3e19ac85-c4ac-432d-861c-e63fb521d6b3",
-     "references": [
-      "9ed8d051-b871-4e75-8bb6-0352a148a464",
-      "247a1661-94e8-458b-adbf-77c29440a55d"
      ]
     }
    },

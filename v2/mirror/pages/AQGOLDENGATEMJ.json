@@ -113,11 +113,11 @@
      "productCode": "AQGOLDENGATEMJ0,6"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -349,8 +349,8 @@
      "productCode": "AQGOLDENGATEMJ5,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
      "inventoryStatusType": "notInStockAtpDate"

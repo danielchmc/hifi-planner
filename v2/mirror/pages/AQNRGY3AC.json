@@ -189,7 +189,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 10,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -287,77 +287,68 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ NRG-Y3-strømkabler roses bredt for en renere, roligere og mere detaljeret lyd med mere punch i bassen, større dynamik samt et bredere og dybere lydbillede. Den solide byggekvalitet, gode afskærmning og egnethed til avancerede lydanlæg øger attraktiviteten, mens værdi for pengene ofte vurderes positivt. Et mindretal hører kun lille eller ingen lydmæssig forskel, og kablet kan være mærkbart stift, men den samlede vurdering er meget begejstret.",
+   "summary": "AQNRGY3AC roses bredt for en renere, mere detaljeret og dynamisk lyd med et dybere, bredere og mere medrivende lydbillede. Strammere bas, en roligere baggrund og større musikalsk klarhed gør kablet til en markant opgradering i mange anlæg. Den solide konstruktion og gode afskærmning giver tillid, selv om kablet kan være stift, og enkelte lyttere ikke hørte nogen tydelig forskel.",
    "headlines": {
-    "cleaner, more dynamic sound": {
-     "sentimentAnalysis": "Kablet forbindes gentagne gange med renere, mere detaljeret, roligere og mere dynamisk lyd.",
-     "simpleTitle": "Renere og mere dynamisk lyd",
+    "cleaner, more detailed sound": {
+     "sentimentAnalysis": "Kablet forbindes gentagne gange med en klarere, renere og mere detaljeret lyd end standard- eller ældre strømkabler.",
+     "simpleTitle": "Renere, mere detaljeret lyd",
      "bias": "positive",
-     "key": "cleaner-more-dynamic-sound",
-     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
+     "key": "sound-quality",
+     "groupId": "47566d38-5dd2-447a-b3aa-3f19339cbe34"
     },
-    "solid, well-constructed cable": {
-     "sentimentAnalysis": "Byggekvaliteten vurderes konsekvent som robust, pålidelig og egnet til avanceret udstyr.",
-     "simpleTitle": "Solidt og velkonstrueret kabel",
+    "solid construction and shielding": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent kablets kvalitet, robuste konstruktion, egnethed til high-end-anlæg og afskærmning.",
+     "simpleTitle": "Solid konstruktion og afskærmning",
      "bias": "positive",
-     "key": "solid-construction",
-     "groupId": "b9ed8e55-89c6-4588-9af4-d518307550c9"
+     "key": "build-quality",
+     "groupId": "17eea9f3-ae5c-41cf-bca7-a0372317ed8d"
     },
-    "no clear audible improvement for some systems": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver usikkerhed eller ingen umiddelbart hørbar forbedring sammenlignet med eksisterende kabler.",
-     "simpleTitle": "Ingen tydelig hørbar forbedring i visse anlæg",
+    "wider, deeper and more dynamic presentation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver et bredere og dybere lydbillede, større dynamik, bedre baskontrol og en mere rummelig og medrivende gengivelse.",
+     "simpleTitle": "Bredere, dybere og mere dynamisk gengivelse",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "47566d38-5dd2-447a-b3aa-3f19339cbe34"
+    },
+    "audible improvement is not universal": {
+     "sentimentAnalysis": "Nogle lyttere kunne ikke tydeligt høre en forbedring i forhold til en eksisterende strømrenser, det originale kabel eller et ældre kabel.",
+     "simpleTitle": "Den hørbare forbedring er ikke entydig",
      "bias": "negative",
-     "key": "no-clear-audible-improvement",
-     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
-    },
-    "broader, deeper and more spacious presentation": {
-     "sentimentAnalysis": "Gengivelsen beskrives som bredere, dybere og mere rummelig med større indlevelse.",
-     "simpleTitle": "Bredere, dybere og mere rummelig gengivelse",
-     "bias": "positive",
-     "key": "broader-deeper-soundstage",
-     "groupId": "86383e23-53ca-4645-86d7-ebe41b403e87"
-    },
-    "good shielding reduces unwanted noise": {
-     "sentimentAnalysis": "Afskærmningen roses for at understøtte renere lyd og reducere støj.",
-     "simpleTitle": "God afskærmning reducerer uønsket støj",
-     "bias": "positive",
-     "key": "effective-shielding",
-     "groupId": "3b3bd583-4386-4513-bb64-addfd722c1fe"
+     "key": "sound-quality",
+     "groupId": "47566d38-5dd2-447a-b3aa-3f19339cbe34"
     }
    },
    "grouping": {
-    "86383e23-53ca-4645-86d7-ebe41b403e87": {
+    "47566d38-5dd2-447a-b3aa-3f19339cbe34": {
      "title": "Lydkvalitet",
-     "id": "86383e23-53ca-4645-86d7-ebe41b403e87",
+     "id": "47566d38-5dd2-447a-b3aa-3f19339cbe34",
      "references": [
       "9c77ae41-942f-4ce7-83af-cd9930a7e351",
       "bc8bf896-6f6e-4c4d-8d83-eeb26d2d45c9",
+      "b2f239a5-ea81-48bf-aa7c-1e485dd31ca0",
       "84f432b4-ae28-4801-9368-2a8eeb2b71fe",
       "ef4049a9-5c00-4d78-a110-222db33ed5f",
       "b1c06255-51ab-4d94-acf1-472a6ecfa33e",
       "1bd3fbc9-5dd0-42cb-bf38-c8da83d5e768",
       "836872fb-a580-4bfc-b87d-25a6f41e7508",
-      "e6311e68-bac2-4443-8aad-a081f25d2624",
-      "f4176a47-98f0-4e66-8adf-ca46c6764516",
       "26963e5e-caa4-41c9-89b1-2797173c9e9f",
+      "20139e10-3ae9-4524-a213-1e293a5d8b37",
       "7b91e5d7-36cb-4d80-a63c-d80cf428938d",
       "5837ef02-4033-4123-b1df-c180cfbdc2fa",
-      "3144e44c-b28b-4841-91d1-be9d911b9ec9",
       "fc78fde6-fe98-4992-92b3-92d78e770423",
       "e34a11cb-5441-420b-b287-f1211858c7b2",
       "8b0215ce-1aeb-4857-97c0-a79f81e72d9b",
       "6a6d84ec-55db-42ca-9c81-d01aafb0bb07",
       "bd30582e-9d3b-496f-8fe3-ea3a0fa5042c",
-      "0dcf554e-fb53-497a-8f73-8197778b7075",
-      "4eed19a4-d7ed-464a-af2c-06ab03dea14c"
+      "4eed19a4-d7ed-464a-af2c-06ab03dea14c",
+      "0dcf554e-fb53-497a-8f73-8197778b7075"
      ]
     },
-    "b9ed8e55-89c6-4588-9af4-d518307550c9": {
+    "17eea9f3-ae5c-41cf-bca7-a0372317ed8d": {
      "title": "Byggekvalitet",
-     "id": "b9ed8e55-89c6-4588-9af4-d518307550c9",
+     "id": "17eea9f3-ae5c-41cf-bca7-a0372317ed8d",
      "references": [
       "cd165a64-ae39-4394-9a1f-f85529620c11",
-      "4667ebbc-8714-4430-af85-ef3bcd24780d",
       "9d20e42c-e960-4f74-89c7-0749dae7c2e0",
       "ee2291e1-28a5-4fba-9354-a3137428029e",
       "52854fc2-f277-4f2f-aa7b-264c1950d003",
@@ -368,25 +359,17 @@
       "718f2a91-f712-4538-a79d-27492c0a618d",
       "0dcf554e-fb53-497a-8f73-8197778b7075"
      ]
-    },
-    "3b3bd583-4386-4513-bb64-addfd722c1fe": {
-     "title": "Afskærmning",
-     "id": "3b3bd583-4386-4513-bb64-addfd722c1fe",
-     "references": [
-      "b2f239a5-ea81-48bf-aa7c-1e485dd31ca0",
-      "20139e10-3ae9-4524-a213-1e293a5d8b37"
-     ]
     }
    },
-   "rating": 4.85507246376812,
-   "count": 69,
+   "rating": 4.85714285714286,
+   "count": 70,
    "reviewCount": 36,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 6,
-    "5": 61
+    "5": 62
    }
   },
   "brandName": "AudioQuest",

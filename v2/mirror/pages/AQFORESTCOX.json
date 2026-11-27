@@ -135,8 +135,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
-     "availableQuantity": 144,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 113,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -214,8 +214,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 11,
-     "availableQuantity": 55,
+     "numberOfStoresExperience": 12,
+     "availableQuantity": 40,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -294,7 +294,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 7,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -394,62 +394,48 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQFORESTCOX betragtes generelt som et vellavet og pålideligt coaxialkabel, der leverer klar, detaljeret og energisk digital lyd til en fremragende pris. Kablet er nemt at tilslutte, fleksibelt nok til diskret montering og præsterer langt over typiske budgetforventninger. Enkelte kommentarer nævner sjuskede stik eller begrænsede hørbare forskelle i forhold til andre digitale kabler, men den samlede vurdering er meget begejstret.",
+   "summary": "AQFORESTCOX leverer en varm, fyldig og detaljeret digital lyd med en rummelig og medrivende gengivelse. Solid konstruktion, fleksibel håndtering og pålidelige tilslutninger gør kablet let at installere og driftssikkert i hverdagen. Det fremragende forhold mellem pris og kvalitet gør kablet til et overbevisende alternativ til langt dyrere coaxialkabler.",
    "headlines": {
-    "clear, detailed and lively sound": {
-     "sentimentAnalysis": "Kablet roses for klar, detaljeret, sprød og kraftfuld digital lyd.",
-     "simpleTitle": "Klar, detaljeret og livlig lyd",
+    "well made and easy to route": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående kvalitetsindtrykket, den pæne finish, fleksibiliteten og den robuste konstruktion.",
+     "simpleTitle": "Godt fremstillet og let at føre",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "321bb9cf-c137-4584-b1f5-873c5fd3dd28"
+     "key": "build",
+     "groupId": "537632e1-c431-4251-a18c-4babb016a235"
     },
-    "solid construction and neat flexibility": {
-     "sentimentAnalysis": "Kablet beskrives gentagne gange som af høj kvalitet, pænt udført, solidt og fleksibelt nok til diskret montering.",
-     "simpleTitle": "Solid konstruktion og praktisk fleksibilitet",
-     "bias": "positive",
-     "key": "build-quality",
-     "groupId": "2e8cc201-66d9-466a-b559-82b1abbc89cd"
-    },
-    "exceptional value versus expensive cables": {
-     "sentimentAnalysis": "Kablet roses som billigt, prisvenligt og tæt på langt dyrere alternativer i ydeevne.",
-     "simpleTitle": "Fremragende værdi sammenlignet med dyre kabler",
+    "outstanding value versus premium cables": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som billigt, effektivt og overraskende tæt på premiumalternativer til en brøkdel af prisen.",
+     "simpleTitle": "Fremragende værdi sammenlignet med premiumkabler",
      "bias": "positive",
      "key": "value",
-     "groupId": "75e7fa78-fc1b-44f9-8270-d6a1a9c375de"
+     "groupId": "1b83c2ed-2935-46ee-a4d6-3f260f00537d"
     },
-    "a major upgrade over conventional connections": {
-     "sentimentAnalysis": "Den digitale coaxialforbindelse beskrives som en markant forbedring i forhold til traditionel RCA eller tidligere cd-afspilning.",
-     "simpleTitle": "En markant forbedring i forhold til traditionelle forbindelser",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver lyden som fremragende, detaljeret og tydeligt forbedret i forhold til traditionelle forbindelser.",
+     "simpleTitle": "Klar, detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "321bb9cf-c137-4584-b1f5-873c5fd3dd28"
+     "key": "sound",
+     "groupId": "1d0bbb6a-99f3-4824-a917-1973add9ed5b"
     },
-    "easy connection and discreet installation": {
-     "sentimentAnalysis": "Kablet anses for problemfrit at tilslutte og tilpas tyndt og fleksibelt til skjult montering.",
-     "simpleTitle": "Nem tilslutning og diskret montering",
+    "a major upgrade over ordinary cables": {
+     "sentimentAnalysis": "Flere anmeldelser rapporterer en tydelig forbedring i forhold til ældre RCA- eller traditionelle forbindelser, mens forskellen fra optisk kabel er lille i ét system.",
+     "simpleTitle": "En markant forbedring i forhold til almindelige kabler",
      "bias": "positive",
-     "key": "connection-installation",
-     "groupId": "ccd8c64d-1cbf-4d2b-9a79-e9e182143d96"
+     "key": "sound",
+     "groupId": "1d0bbb6a-99f3-4824-a917-1973add9ed5b"
     },
-    "only a small difference from other digital cables": {
-     "sentimentAnalysis": "Nogle kommentarer beskriver kablet som funktionelt eller bemærker, at forskelle mellem digitale kabler kan være næsten uhørlige.",
-     "simpleTitle": "Kun en lille forskel i forhold til andre digitale kabler",
-     "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "321bb9cf-c137-4584-b1f5-873c5fd3dd28"
-    },
-    "some connectors appear untidy": {
-     "sentimentAnalysis": "Et mindretal af kommentarerne udtrykker bekymring over stikkenes udførelse eller pasform.",
-     "simpleTitle": "Nogle stik virker sjuskede",
-     "bias": "negative",
-     "key": "build-quality",
-     "groupId": "2e8cc201-66d9-466a-b559-82b1abbc89cd"
+    "reliable connections": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en sikker eller problemfri forbindelse og en god pasform.",
+     "simpleTitle": "Pålidelige tilslutninger",
+     "bias": "positive",
+     "key": "connections",
+     "groupId": "35a92631-d00d-4c0e-87a8-95bf28590da1"
     }
    },
    "grouping": {
-    "321bb9cf-c137-4584-b1f5-873c5fd3dd28": {
+    "1d0bbb6a-99f3-4824-a917-1973add9ed5b": {
      "title": "Lydkvalitet",
-     "id": "321bb9cf-c137-4584-b1f5-873c5fd3dd28",
+     "id": "1d0bbb6a-99f3-4824-a917-1973add9ed5b",
      "references": [
       "4acd062a-cb63-4c7e-8a5d-9aa8a1b12d18",
       "c80b9568-ea47-48ed-ae16-188668ecf886",
@@ -461,39 +447,36 @@
       "cf4bd60a-2556-4104-8cc3-2fbb6643e9eb"
      ]
     },
-    "2e8cc201-66d9-466a-b559-82b1abbc89cd": {
+    "537632e1-c431-4251-a18c-4babb016a235": {
      "title": "Byggekvalitet",
-     "id": "2e8cc201-66d9-466a-b559-82b1abbc89cd",
+     "id": "537632e1-c431-4251-a18c-4babb016a235",
      "references": [
+      "3cfa8d8a-12ee-413b-9930-a69785ff866c",
       "a41fe4b0-888f-4bf3-9996-55157ca9ffa6",
       "f7c9c1f3-dfa8-4b25-94d2-826de856f4cc",
       "c80b9568-ea47-48ed-ae16-188668ecf886",
       "b062e6e3-b005-4b28-b0b7-9745c2bddd8b",
       "cfafeac7-b6a9-4b7c-9b2b-c2c9930c2101",
-      "9e44481d-39db-4c54-9fc7-fa6f98c80180",
-      "b423a28c-0ab1-4208-8b24-dacc1a027f13"
+      "9e44481d-39db-4c54-9fc7-fa6f98c80180"
      ]
     },
-    "75e7fa78-fc1b-44f9-8270-d6a1a9c375de": {
+    "1b83c2ed-2935-46ee-a4d6-3f260f00537d": {
      "title": "Værdi for pengene",
-     "id": "75e7fa78-fc1b-44f9-8270-d6a1a9c375de",
+     "id": "1b83c2ed-2935-46ee-a4d6-3f260f00537d",
      "references": [
       "7ef92303-8ac4-475d-8df1-bd5701871174",
-      "c80b9568-ea47-48ed-ae16-188668ecf886",
       "5fb4c433-5615-4426-a917-311e004898c0",
       "bf5b977d-f386-4318-981c-16971561c0b2",
       "88d89b77-7e20-4f01-b37a-63eff8a3b6d7",
       "650d5104-45f4-4a9c-9afa-9d7cd56e58c5"
      ]
     },
-    "ccd8c64d-1cbf-4d2b-9a79-e9e182143d96": {
-     "title": "Tilslutning og installation",
-     "id": "ccd8c64d-1cbf-4d2b-9a79-e9e182143d96",
+    "35a92631-d00d-4c0e-87a8-95bf28590da1": {
+     "title": "Tilslutninger og pasform",
+     "id": "35a92631-d00d-4c0e-87a8-95bf28590da1",
      "references": [
       "3cfa8d8a-12ee-413b-9930-a69785ff866c",
       "5acfe2f3-fc3e-4d2c-911a-13ffe5029fe3",
-      "b062e6e3-b005-4b28-b0b7-9745c2bddd8b",
-      "cfafeac7-b6a9-4b7c-9b2b-c2c9930c2101",
       "b423a28c-0ab1-4208-8b24-dacc1a027f13"
      ]
     }

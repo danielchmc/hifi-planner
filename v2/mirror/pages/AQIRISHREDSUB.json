@@ -138,7 +138,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 27,
+     "availableQuantity": 24,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -217,7 +217,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 50,
+     "availableQuantity": 44,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -292,12 +292,11 @@
      "productCode": "AQIRISHREDSUB5,0"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 6,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -373,7 +372,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 3,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -622,41 +621,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQIRISHREDSUB roses bredt som et velbygget, fleksibelt og pålideligt subwooferkabel. Kablet forbindes med varmere, fyldigere, klarere og mere kontant bas, og flere anmeldelser beskriver en medrivende forbedring i forhold til tidligere kabler. Den stærke ydelse og nemme installation giver et begejstret indtryk, selv om AudioQuest-præmien får prisen til at virke høj for nogle købere.",
+   "summary": "AQIRISHREDSUB leverer en fyldig, dynamisk og klar gengivelse til subwooferen, og flere anmeldelser beskriver en tydelig forbedring sammenlignet med tidligere kabler. Kablet fungerer pålideligt, er fleksibelt og nemt at installere og har en solid kvalitet til mange anlæg. Den stærke ydelse og de tilfredsstillende resultater dominerer tilbagemeldingerne, selv om AudioQuest-tillægget af nogle opfattes som dyrt.",
    "headlines": {
-    "fuller, clearer and more powerful bass": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en mærkbart fyldigere, klarere, mere kontant og kraftigere subwooferlyd efter skiftet til dette kabel.",
-     "simpleTitle": "Fyldigere, klarere og kraftigere bas",
+    "noticeably fuller and clearer sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydeligt forbedret, fyldigere, renere og kraftigere subwooferlyd, som nogle gange kræver lavere volumen.",
+     "simpleTitle": "Mærkbart fyldigere og klarere lyd",
      "bias": "positive",
-     "key": "fuller-clearer-bass",
-     "groupId": "60158b9b-49d1-4e42-aef9-3343ccc6bb97"
+     "key": "sound-quality",
+     "groupId": "8ee09478-30dc-4f41-a4f1-74adc3fb5f2b"
+    },
+    "reliable everyday operation": {
+     "sentimentAnalysis": "Kablet beskrives konsekvent som velfungerende og uden funktionsproblemer.",
+     "simpleTitle": "Pålidelig funktion i hverdagen",
+     "bias": "positive",
+     "key": "functionality",
+     "groupId": "374954f7-81a5-449f-b3ab-4fb9ca70296b"
+    },
+    "good value, but the premium is noticeable": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter ydelsen og forholdet mellem pris og kvalitet, mens en anmeldelse finder AudioQuest-tillægget dyrt.",
+     "simpleTitle": "God værdi, men tillægget kan mærkes",
+     "bias": "meh",
+     "key": "value",
+     "groupId": "bab30e8f-3236-472e-8170-36c594821bef"
     },
     "flexible and easy to install": {
-     "sentimentAnalysis": "Kablet opleves som praktisk med en passende stikstørrelse og tilstrækkelig fleksibilitet til snævrere bøjninger og nem placering.",
+     "sentimentAnalysis": "Kablet er nemt at føre og bruge og fleksibelt nok til snævrere bøjninger og praktisk placering.",
      "simpleTitle": "Fleksibelt og nemt at installere",
      "bias": "positive",
-     "key": "easy-installation",
-     "groupId": "7d89ae8d-c888-4cc5-91b3-c8a2d0dbb156"
-    },
-    "reliable, trouble-free operation": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående en fejlfri funktion præcis som forventet.",
-     "simpleTitle": "Pålidelig og problemfri funktion",
-     "bias": "positive",
-     "key": "reliable-operation",
-     "groupId": "7d89ae8d-c888-4cc5-91b3-c8a2d0dbb156"
-    },
-    "good value despite premium pricing": {
-     "sentimentAnalysis": "Den mærkbare forbedring vurderes som pengene værd, også sammenlignet med et langt billigere tidligere kabel.",
-     "simpleTitle": "God værdi trods premiumpris",
-     "bias": "positive",
-     "key": "value-for-money",
-     "groupId": "31db3bc6-5a74-43e1-be57-ccc0ab880429"
+     "key": "installation",
+     "groupId": "be034832-c076-41d3-a12a-c6b0a6b0a196"
     }
    },
    "grouping": {
-    "60158b9b-49d1-4e42-aef9-3343ccc6bb97": {
+    "8ee09478-30dc-4f41-a4f1-74adc3fb5f2b": {
      "title": "Lydkvalitet",
-     "id": "60158b9b-49d1-4e42-aef9-3343ccc6bb97",
+     "id": "8ee09478-30dc-4f41-a4f1-74adc3fb5f2b",
      "references": [
       "cda8b0d9-9eb7-4b17-93d3-28fdc9f8ae9b",
       "10767cdb-832a-491f-989f-9e0b1477d436",
@@ -670,24 +669,31 @@
       "9ae241fd-328e-4292-a707-29acd9c704d3"
      ]
     },
-    "7d89ae8d-c888-4cc5-91b3-c8a2d0dbb156": {
-     "title": "Kabelhåndtering",
-     "id": "7d89ae8d-c888-4cc5-91b3-c8a2d0dbb156",
+    "374954f7-81a5-449f-b3ab-4fb9ca70296b": {
+     "title": "Funktionalitet",
+     "id": "374954f7-81a5-449f-b3ab-4fb9ca70296b",
      "references": [
-      "cda8b0d9-9eb7-4b17-93d3-28fdc9f8ae9b",
       "bb7d13e4-b8c9-4655-b9cd-0fc12f1cb6a8",
-      "10767cdb-832a-491f-989f-9e0b1477d436",
       "88935582-9d09-48ed-9ffb-fec1449c53ad",
+      "ef8af8a6-72e6-4d63-ad9b-da741518f0ef",
       "b96e29f4-27f5-4b31-ae25-e0e2454f9253"
      ]
     },
-    "31db3bc6-5a74-43e1-be57-ccc0ab880429": {
+    "bab30e8f-3236-472e-8170-36c594821bef": {
      "title": "Pris og værdi",
-     "id": "31db3bc6-5a74-43e1-be57-ccc0ab880429",
+     "id": "bab30e8f-3236-472e-8170-36c594821bef",
      "references": [
+      "c5941845-fed7-47aa-9380-2a4ac1208ad6",
       "3ea7532c-0ed5-4a93-8927-a504b0496f46",
-      "07b99692-9830-4b83-8b91-3534b411d257",
-      "9ae241fd-328e-4292-a707-29acd9c704d3"
+      "07b99692-9830-4b83-8b91-3534b411d257"
+     ]
+    },
+    "be034832-c076-41d3-a12a-c6b0a6b0a196": {
+     "title": "Installation og fleksibilitet",
+     "id": "be034832-c076-41d3-a12a-c6b0a6b0a196",
+     "references": [
+      "bb7d13e4-b8c9-4655-b9cd-0fc12f1cb6a8",
+      "10767cdb-832a-491f-989f-9e0b1477d436"
      ]
     }
    },

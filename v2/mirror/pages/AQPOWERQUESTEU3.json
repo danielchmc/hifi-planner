@@ -122,7 +122,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 37,
+     "availableQuantity": 34,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -142,41 +142,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AudioQuest PowerQuest 3 roses bredt som et solidt og betryggende netfilter, der giver mange anlæg renere, roligere og mere detaljeret lyd. Musikken får ofte en varm, punchy og medrivende karakter med større åbenhed, dybde, baskontrol og flere mikrodetailler; tv-billeder kan også fremstå skarpere og mere tredimensionelle. Overspændingsbeskyttelse, solid konstruktion og stabil drift skaber ekstra tryghed, selv om én anmeldelse ikke hørte nogen fordel sammenlignet med en almindelig stikdåse og fandt placeringen af tilslutningerne begrænset.",
+   "summary": "AQ PowerQuest 3 får bred ros for en renere, roligere og mere detaljeret lyd med en mere åben, rummelig og kontrolleret gengivelse. Flere anmeldelser beskriver også forbedret billedkvalitet og værdsætter den tryghed, som beskyttelse mod overspænding og lynnedslag giver. Den solide konstruktion og pålidelige funktion styrker værdien, selv om én anmeldelse ikke oplevede nogen hørbar forbedring og fandt placeringen af tilslutningerne begrænset.",
    "headlines": {
     "cleaner, quieter and more detailed sound": {
-     "sentimentAnalysis": "PowerQuest 3 forbindes gentagne gange med en renere, roligere og mere kontrolleret gengivelse samt en sortere baggrund og større klarhed.",
+     "sentimentAnalysis": "Anmeldelserne beskriver en renere, roligere, mere kontrolleret og detaljeret gengivelse, ofte med en sortere baggrund.",
      "simpleTitle": "Renere, roligere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "cleaner-sound",
-     "groupId": "3c151aea-50d8-4319-854b-ea2b317a09da"
+     "key": "cleaner sound",
+     "groupId": "dede11e1-aa82-4e6d-b2c2-d45fe701d400"
     },
-    "more openness, depth and microdetail": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver en mere åben og rummelig lyd med større dybde, opløsning og tydeligere fine detaljer; én anmeldelse nævner også et skarpere og dybere tv-billede.",
-     "simpleTitle": "Mere åbenhed, dybde og mikrodetaIjer",
+    "reassuring protection against surges and lightning": {
+     "sentimentAnalysis": "Beskyttelsesfunktionerne giver tillid og en følelse af sikkerhed for tilsluttet udstyr.",
+     "simpleTitle": "Tryg beskyttelse mod overspænding og lynnedslag",
      "bias": "positive",
-     "key": "soundstage-detail",
-     "groupId": "3c151aea-50d8-4319-854b-ea2b317a09da"
+     "key": "surge safety",
+     "groupId": "8f0dfa44-be80-4b21-b640-b5095440b8de"
     },
-    "protection creates peace of mind": {
-     "sentimentAnalysis": "Overspændings- og lynbeskyttelse værdsættes især, fordi det giver en tryg følelse af, at dyrt udstyr er bedre beskyttet.",
-     "simpleTitle": "Beskyttelse giver tryghed",
+    "more open, spacious and immersive presentation": {
+     "sentimentAnalysis": "Gengivelsen beskrives som mere åben og dyb med større lydbillede og skarpere billede.",
+     "simpleTitle": "Mere åben, rummelig og opslugende gengivelse",
      "bias": "positive",
-     "key": "reassuring-protection",
-     "groupId": "0e31efbb-6544-4eea-96cc-80f84d98755b"
+     "key": "soundstage",
+     "groupId": "dede11e1-aa82-4e6d-b2c2-d45fe701d400"
     },
-    "sturdy, dependable construction": {
-     "sentimentAnalysis": "Produktet opfattes som solidt bygget, pålideligt og stabilt i daglig brug.",
+    "solid, dependable construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver enheden som velbygget, stabil og pålidelig i daglig brug.",
      "simpleTitle": "Solid og pålidelig konstruktion",
      "bias": "positive",
-     "key": "solid-construction",
-     "groupId": "cae1ad2f-5fc7-404c-a649-46d3bc7f9856"
+     "key": "solid build",
+     "groupId": "e81d9205-87c5-4ecf-a5f3-9867efc9732e"
+    },
+    "no audible improvement for one setup": {
+     "sentimentAnalysis": "To anmeldelser antyder, at hørbare lydforbedringer kan afhænge af anlægget og de elektriske forhold.",
+     "simpleTitle": "Ingen hørbar forbedring med ét setup",
+     "bias": "negative",
+     "key": "no improvement",
+     "groupId": "dede11e1-aa82-4e6d-b2c2-d45fe701d400"
     }
    },
    "grouping": {
-    "3c151aea-50d8-4319-854b-ea2b317a09da": {
+    "dede11e1-aa82-4e6d-b2c2-d45fe701d400": {
      "title": "Lydkvalitet",
-     "id": "3c151aea-50d8-4319-854b-ea2b317a09da",
+     "id": "dede11e1-aa82-4e6d-b2c2-d45fe701d400",
      "references": [
       "47aafa77-916d-48d2-a587-b9e51c62ca3f",
       "510e78fc-f908-470b-be16-760e54045efb",
@@ -189,15 +196,16 @@
       "48939874-68c8-4f1d-8c31-d44d064928d3",
       "bc23fb14-587c-47d7-be40-989602650968",
       "365df42f-2a48-467f-8320-1a3c88292124",
+      "109a902b-0d59-4a07-a471-f4b3a50edcb1",
       "c5e2d916-af90-4501-b9f1-96110106cf57",
       "026632eb-4884-4e6f-91f7-2c4ae7c4f245",
       "abde2b2d-52df-4e59-b7b6-25720bd2e7d7",
       "dd77afab-6fca-4882-b8fd-733c37372b3d"
      ]
     },
-    "0e31efbb-6544-4eea-96cc-80f84d98755b": {
+    "8f0dfa44-be80-4b21-b640-b5095440b8de": {
      "title": "Overspændingsbeskyttelse",
-     "id": "0e31efbb-6544-4eea-96cc-80f84d98755b",
+     "id": "8f0dfa44-be80-4b21-b640-b5095440b8de",
      "references": [
       "c8ef429e-0816-45ae-bce5-5f202e16089d",
       "97b2f3a0-0424-41e5-84f0-24c5a5c9516d",
@@ -205,11 +213,10 @@
       "0bffb308-3db0-493d-bec9-f35226b1320e"
      ]
     },
-    "cae1ad2f-5fc7-404c-a649-46d3bc7f9856": {
+    "e81d9205-87c5-4ecf-a5f3-9867efc9732e": {
      "title": "Byggekvalitet",
-     "id": "cae1ad2f-5fc7-404c-a649-46d3bc7f9856",
+     "id": "e81d9205-87c5-4ecf-a5f3-9867efc9732e",
      "references": [
-      "97b2f3a0-0424-41e5-84f0-24c5a5c9516d",
       "8dd65931-f1bb-4781-9b70-0bb179ea91e3",
       "f4011706-03c6-4d97-9de5-7071b1faf575",
       "e46724be-dd76-4cb9-b884-f101bea2fa35"

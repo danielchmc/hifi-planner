@@ -194,7 +194,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "19,5 x 28,000000000000004 x 6 cm (bredde x højde x dybde)"
+        "value": "19,5 x 28 x 6 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -203,8 +203,8 @@
      "productCode": "AQROCKET22SCBK"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
      "inventoryStatusType": "notInStockAtpDate"
@@ -224,48 +224,55 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET22SC leverer en varm, kraftfuld og mere omsluttende lyd med forbedrede detaljer, bedre bas og større rumfornemmelse i flere anlæg. Bygge- og kabelkvaliteten roses bredt, mens bi-wire-designet anses for effektivt og velegnet til kompatible opsætninger. Den høje pris kritiseres, og nogle tests antyder, at den hørbare forbedring kan være begrænset eller overdrevet.",
+   "summary": "AQROCKET22SC leverer en varm, fyldig og omsluttende lyd med forbedret bas, flere detaljer samt et bredere og dybere lydbillede. Byggekvaliteten og den generelle kabelkvalitet bliver i høj grad rost, mens flere brugere synes, at prisen er høj. Begejstrede lyttere oplever en tydelig lydforbedring, selv om omhyggelige sammenligninger delvist ikke viser nogen målbar eller hørbar fordel i forhold til billigere alternativer.",
    "headlines": {
-    "clearer, fuller and more spacious sound": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for en rigere, mere detaljeret, kraftfuld og rummelig gengivelse.",
-     "simpleTitle": "Klarere, fyldigere og mere rummelig lyd",
+    "richer, more spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig lydforbedring med mere fylde, detaljer, bredde og dybde.",
+     "simpleTitle": "Fyldigere og mere rummelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "25a91d07-1247-4e9b-9e70-63d7977b6e13"
+     "groupId": "f60fc1b0-7b16-419b-b958-93291b3a4ce7"
     },
-    "premium pricing is hard to justify": {
-     "sentimentAnalysis": "Flere anmeldelser betragter kablet som dyrt, uden at den høje pris konsekvent modsvares af en tydelig hørbar fordel.",
-     "simpleTitle": "Premiumprisen er svær at retfærdiggøre",
+    "premium pricing": {
+     "sentimentAnalysis": "Flere anmeldelser synes, at kablet er dyrt, og stiller spørgsmål ved værdien sammenlignet med billigere alternativer.",
+     "simpleTitle": "Høj premiumpris",
      "bias": "negative",
      "key": "price",
-     "groupId": "c2bd3924-984e-4a78-9d5c-4b75df024641"
+     "groupId": "1df3285c-9fd3-44fa-9095-9004fa20ac10"
     },
-    "strong overall cable quality": {
-     "sentimentAnalysis": "Kablet beskrives konsekvent som godt, fremragende og meget anbefalelsesværdigt med hensyn til den samlede kvalitet.",
-     "simpleTitle": "Høj overordnet kabelkvalitet",
-     "bias": "positive",
-     "key": "quality",
-     "groupId": "0fc710d3-189f-45a0-b4de-95933d06a5ac"
-    },
-    "helpful and attentive retailer service": {
-     "sentimentAnalysis": "Butikspersonalet roses for at være hjælpsomt, venligt og for at yde praktisk hjælp med opsætningen.",
-     "simpleTitle": "Hjælpsom og opmærksom butiksservice",
+    "helpful retailer service": {
+     "sentimentAnalysis": "Butikspersonalet roses for at være venligt, hjælpsomt og opmærksomt på behovene ved opsætningen.",
+     "simpleTitle": "Hjælpsom forhandlerservice",
      "bias": "positive",
      "key": "service",
-     "groupId": "e8f4a67a-c4fa-483a-b927-d80b33b3896a"
+     "groupId": "3c601981-bbed-494d-a8fe-e41421b80873"
     },
-    "sound improvement can be limited or overstated": {
-     "sentimentAnalysis": "Nogle sammenligninger viste ingen målbar eller overbevisende fordel i forhold til billigere alternativer.",
-     "simpleTitle": "Lydforbedringen kan være begrænset eller overvurderet",
+    "improved bass and musical detail": {
+     "sentimentAnalysis": "Kablet tilskrives kraftigere bas, flere klangfarver og tydeligere musikalske detaljer.",
+     "simpleTitle": "Forbedret bas og flere musikalske detaljer",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "f60fc1b0-7b16-419b-b958-93291b3a4ce7"
+    },
+    "limited improvement over cheaper cables": {
+     "sentimentAnalysis": "Nogle sammenligninger vurderer lydforbedringen som oversolgt eller umulig at skelne fra billigere alternativer.",
+     "simpleTitle": "Begrænset forbedring i forhold til billigere kabler",
      "bias": "negative",
      "key": "sound",
-     "groupId": "25a91d07-1247-4e9b-9e70-63d7977b6e13"
+     "groupId": "f60fc1b0-7b16-419b-b958-93291b3a4ce7"
+    },
+    "strong cable quality": {
+     "sentimentAnalysis": "Kablet beskrives generelt som vellavet og af høj kvalitet.",
+     "simpleTitle": "Høj kabelkvalitet",
+     "bias": "positive",
+     "key": "quality",
+     "groupId": "62608432-50f0-4e3f-bd82-688562213b44"
     }
    },
    "grouping": {
-    "25a91d07-1247-4e9b-9e70-63d7977b6e13": {
+    "f60fc1b0-7b16-419b-b958-93291b3a4ce7": {
      "title": "Lydkvalitet",
-     "id": "25a91d07-1247-4e9b-9e70-63d7977b6e13",
+     "id": "f60fc1b0-7b16-419b-b958-93291b3a4ce7",
      "references": [
       "f4f4a098-45de-4e6e-8ff8-58bacbabd9f5",
       "7a5552cf-9528-4787-82a5-84956e00590a",
@@ -279,9 +286,9 @@
       "ccad2266-d253-4286-8e28-8f2de90e485d"
      ]
     },
-    "c2bd3924-984e-4a78-9d5c-4b75df024641": {
-     "title": "Pris og værdi",
-     "id": "c2bd3924-984e-4a78-9d5c-4b75df024641",
+    "1df3285c-9fd3-44fa-9095-9004fa20ac10": {
+     "title": "Pris",
+     "id": "1df3285c-9fd3-44fa-9095-9004fa20ac10",
      "references": [
       "7a5552cf-9528-4787-82a5-84956e00590a",
       "0c48b931-3a73-446c-951f-c3fabb723185",
@@ -289,22 +296,21 @@
       "fd3b8728-25a9-4b53-9bf3-3e6379c27679"
      ]
     },
-    "0fc710d3-189f-45a0-b4de-95933d06a5ac": {
-     "title": "Kabelkvalitet",
-     "id": "0fc710d3-189f-45a0-b4de-95933d06a5ac",
-     "references": [
-      "1833495f-03c3-41bf-88dd-2f7d5f66d147",
-      "a2904af8-ebe2-434e-8606-c3f3f4a2ad21",
-      "b067e7ad-ebee-4ab3-825b-98c7f91aee7e"
-     ]
-    },
-    "e8f4a67a-c4fa-483a-b927-d80b33b3896a": {
+    "3c601981-bbed-494d-a8fe-e41421b80873": {
      "title": "Kundeservice",
-     "id": "e8f4a67a-c4fa-483a-b927-d80b33b3896a",
+     "id": "3c601981-bbed-494d-a8fe-e41421b80873",
      "references": [
       "469d3f20-2dcb-48b9-a396-5a905a2b7dc3",
       "4b98f020-edaa-4955-a4ed-bdfad04374a9",
       "14eb7cb4-c095-4f9e-abff-50e8f6b24d25"
+     ]
+    },
+    "62608432-50f0-4e3f-bd82-688562213b44": {
+     "title": "Produktkvalitet",
+     "id": "62608432-50f0-4e3f-bd82-688562213b44",
+     "references": [
+      "1833495f-03c3-41bf-88dd-2f7d5f66d147",
+      "a2904af8-ebe2-434e-8606-c3f3f4a2ad21"
      ]
     }
    },

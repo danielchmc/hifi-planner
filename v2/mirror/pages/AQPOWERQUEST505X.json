@@ -121,7 +121,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 8,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -159,41 +159,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ PowerQuest 505X roses bredt for at gøre hi-fi-lyden renere, roligere, mere rummelig og mere detaljeret, med strammere bas og et mere stabilt stereoperspektiv. Enheden tilbyder også praktisk strømfiltrering, samlede tilslutninger og beskyttelse, mens installationen virker enkel. Prisen vurderes positivt af nogle, men kritiseres af andre, og en anmeldelse nævner forstyrrelser af FM-radiomodtagelsen som en bivirkning.",
+   "summary": "AQ PowerQuest 505X leverer en klart renere, roligere og mere medrivende gengivelse med større rumfornemmelse, flere detaljer og strammere bas. Strømfiltreringen hjælper også med at samle og beskytte et komplet hi-fi-anlæg, samtidig med at musikken får en varm, slagkraftig og kontrolleret karakter. Den høje pris og mulig forstyrrelse af FM-modtagelsen er dog bemærkelsesværdige ulemper, men den samlede lydforbedring er meget imponerende på kompetente hi-fi-anlæg.",
    "headlines": {
-    "cleaner, more spacious and more detailed sound": {
-     "sentimentAnalysis": "Strømfilteret forbindes med en renere og mere åben gengivelse, bedre detaljer og større rumlig dybde.",
-     "simpleTitle": "Renere, mere rummelig og mere detaljeret lyd",
+    "cleaner, more detailed and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende en renere, roligere og mere rummelig gengivelse med bedre detaljer og stereoperspektiv.",
+     "simpleTitle": "Renere, mere detaljeret og rummelig lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "cb42ea0d-e130-4fd2-99eb-5ce7c41cc210"
+     "groupId": "83acb6a0-23e3-41d0-8868-0bacdc913253"
     },
-    "tighter bass and a more stable stereo image": {
-     "sentimentAnalysis": "Gengivelsen beskrives som roligere og mere kontrolleret med strammere bas og et mere stabilt lydbillede.",
-     "simpleTitle": "Strammere bas og et mere stabilt stereoperspektiv",
+    "more stable and controlled presentation": {
+     "sentimentAnalysis": "Produktet roses for en roligere gengivelse, strammere bas og et mere stabilt lydbillede.",
+     "simpleTitle": "Mere stabil og kontrolleret gengivelse",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "cb42ea0d-e130-4fd2-99eb-5ce7c41cc210"
+     "groupId": "83acb6a0-23e3-41d0-8868-0bacdc913253"
     },
-    "good performance for the price": {
-     "sentimentAnalysis": "Produktet betragtes af nogle som et godt køb med tilfredsstillende ydeevne i forhold til prisen.",
-     "simpleTitle": "God ydeevne til prisen",
+    "effective filtering and system protection": {
+     "sentimentAnalysis": "Strømfilteret vurderes som meget effektivt og nyttigt til at samle og beskytte lydanlægget.",
+     "simpleTitle": "Effektiv filtrering og beskyttelse af anlægget",
      "bias": "positive",
-     "key": "value",
-     "groupId": "5d0a42c3-db55-4751-85d8-6baa5e5b2153"
-    },
-    "not fully worth the price": {
-     "sentimentAnalysis": "Den hørbare forbedring anerkendes, men udgiften vurderes af nogle som for høj.",
-     "simpleTitle": "Ikke helt pengene værd",
-     "bias": "negative",
-     "key": "value",
-     "groupId": "5d0a42c3-db55-4751-85d8-6baa5e5b2153"
+     "key": "power-filtering",
+     "groupId": "9c272193-6dc7-4772-898a-886cb7dc08cc"
     }
    },
    "grouping": {
-    "cb42ea0d-e130-4fd2-99eb-5ce7c41cc210": {
+    "83acb6a0-23e3-41d0-8868-0bacdc913253": {
      "title": "Lydkvalitet",
-     "id": "cb42ea0d-e130-4fd2-99eb-5ce7c41cc210",
+     "id": "83acb6a0-23e3-41d0-8868-0bacdc913253",
      "references": [
       "bf61a0a5-82ca-4a4c-85a3-6552f55e3e34",
       "d10ee3ea-fec1-4bf4-849b-8580ef141c5b",
@@ -202,12 +195,14 @@
       "ad212727-518b-4e16-9187-88bbaa5ce671"
      ]
     },
-    "5d0a42c3-db55-4751-85d8-6baa5e5b2153": {
-     "title": "Pris og værdi",
-     "id": "5d0a42c3-db55-4751-85d8-6baa5e5b2153",
+    "9c272193-6dc7-4772-898a-886cb7dc08cc": {
+     "title": "Strømfiltrering",
+     "id": "9c272193-6dc7-4772-898a-886cb7dc08cc",
      "references": [
-      "6e041f33-4de9-466f-9847-021d6f7a8a38",
-      "ad212727-518b-4e16-9187-88bbaa5ce671"
+      "d10ee3ea-fec1-4bf4-849b-8580ef141c5b",
+      "2e4f5c98-064d-4521-aa5b-d63e571d6a0c",
+      "84eaaf2c-9b93-40f2-a11c-af98a7547eea",
+      "0e5bdb6a-4352-4608-af03-98336406ad58"
      ]
     }
    },

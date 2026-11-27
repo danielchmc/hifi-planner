@@ -117,7 +117,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 63,
+     "availableQuantity": 58,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -147,45 +147,68 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ Perch 1 er et robust, tungt og vellavet hovedtelefonstativ med et varmt, elegant udtryk og fremragende stabilitet. Det enkle, moderne design virker næsten immersivt sammen med eksklusive hovedtelefoner, selv om overfladen er lidt diskret, og prisen kan føles høj. Kompatibiliteten er generelt god, men nogle hovedbøjler passer ikke perfekt, og enkelte problemer med justeringen er blevet bemærket.",
+   "summary": "AQPERCH1BKX er et solidt, tungt og vellavet hovedtelefonstativ med et varmt og elegant udtryk, der passer smukt sammen med mange hovedtelefoner. Den stabile konstruktion og praktiske form får stor ros, mens kompatibiliteten ikke er universel: Nogle hovedbøjler passer perfekt, mens andre ligger lidt uhensigtsmæssigt på grund af den flade kurve eller anderledes placerede støttepunkter. Overflade og design deler vandene en smule, men helhedsindtrykket er fortsat meget positivt med en stærk kombination af holdbarhed, funktion og flot udseende.",
    "headlines": {
     "heavy, stable construction": {
-     "sentimentAnalysis": "Stativet roses gentagne gange for at være tungt, solidt, stabilt og vellavet.",
+     "sentimentAnalysis": "Stativet roses gentagne gange for at være tungt, solidt, stabilt og holdbart.",
      "simpleTitle": "Tung og stabil konstruktion",
      "bias": "positive",
-     "key": "heavy_stable_construction",
-     "groupId": "c6dae442-c4b1-49b7-bcf8-b13a523eca58"
+     "key": "stability",
+     "groupId": "e5d2ab33-d2dc-4229-974a-75d317476594"
     },
-    "clean, stylish design": {
-     "sentimentAnalysis": "Det moderne, elegante og diskrete udtryk bliver især værdsat sammen med passende hovedtelefoner.",
-     "simpleTitle": "Enkelt og stilfuldt design",
+    "elegant, functional styling": {
+     "sentimentAnalysis": "Det enkle, moderne design opleves som attraktivt, stilfuldt og velegnet til hovedtelefoner.",
+     "simpleTitle": "Elegant og funktionelt design",
      "bias": "positive",
-     "key": "clean_stylish_design",
-     "groupId": "c512ade6-902f-4d04-8198-7d6365819665"
+     "key": "design",
+     "groupId": "238abfb7-9d12-464f-9198-d17ba4745858"
     },
-    "some headbands do not fit perfectly": {
-     "sentimentAnalysis": "Stativet passer ikke lige godt til alle hovedtelefonformer; nogle hovedbøjler ligger uhensigtsmæssigt eller for fladt.",
-     "simpleTitle": "Nogle hovedbøjler passer ikke perfekt",
+    "finish can feel plain": {
+     "sentimentAnalysis": "Nogle kommentarer oplever udseendet som enkelt eller mere praktisk end moderigtigt.",
+     "simpleTitle": "Overfladen kan virke kedelig",
      "bias": "negative",
-     "key": "imperfect_headband_fit",
-     "groupId": "fd8942b7-7aae-4572-9880-bc4e56ca92e1"
+     "key": "design",
+     "groupId": "238abfb7-9d12-464f-9198-d17ba4745858"
     },
-    "finish and price are less compelling": {
-     "sentimentAnalysis": "Den diskrete overflade og den forholdsvis høje pris dæmper den ellers store begejstring for stativet.",
-     "simpleTitle": "Overflade og pris er mindre overbevisende",
-     "bias": "meh",
-     "key": "finish_price_ drawbacks",
-     "groupId": "699d4b61-b8bf-4a80-bf0a-2625f232d486"
+    "fit varies by headphone model": {
+     "sentimentAnalysis": "Nogle hovedbøjler sidder ikke korrekt, fordi kurven er for flad, eller støttepunkterne rammer siderne i stedet for toppen.",
+     "simpleTitle": "Pasformen varierer efter hovedtelefonmodel",
+     "bias": "negative",
+     "key": "fit",
+     "groupId": "c61dca09-3d5f-487e-a3c0-b225ef3d5e99"
+    },
+    "good fit for compatible headphones": {
+     "sentimentAnalysis": "Kompatible hovedtelefoner passer ifølge anmeldelserne meget godt på stativet.",
+     "simpleTitle": "God pasform til kompatible hovedtelefoner",
+     "bias": "positive",
+     "key": "fit",
+     "groupId": "c61dca09-3d5f-487e-a3c0-b225ef3d5e99"
     }
    },
    "grouping": {
-    "c512ade6-902f-4d04-8198-7d6365819665": {
+    "e5d2ab33-d2dc-4229-974a-75d317476594": {
+     "title": "Stabilitet og byggekvalitet",
+     "id": "e5d2ab33-d2dc-4229-974a-75d317476594",
+     "references": [
+      "33151bf8-b343-43d8-9dee-d279e7a60682",
+      "b3774321-3acd-4599-9c06-16907b22a52a",
+      "913840c4-a9de-4611-99b5-ae96cc0d5920",
+      "da412bb7-0544-4948-9e31-b34b8062a615",
+      "63a3cba8-cc7f-4fd9-b4e1-3d992a8bff17",
+      "db49055d-db8f-47a7-883f-4eb5831eb76f",
+      "68bd89f1-20a3-4a93-93b1-5f72cb278a55",
+      "3459f713-157f-4c38-9ff8-5675ddad55d5",
+      "58b114c6-ab3a-4206-a04c-3bc97833978e",
+      "403e787c-a567-41a5-9d6a-0b1814fe4411",
+      "6611cfd0-5080-418a-8186-8c906d529309"
+     ]
+    },
+    "238abfb7-9d12-464f-9198-d17ba4745858": {
      "title": "Design og udseende",
-     "id": "c512ade6-902f-4d04-8198-7d6365819665",
+     "id": "238abfb7-9d12-464f-9198-d17ba4745858",
      "references": [
       "33151bf8-b343-43d8-9dee-d279e7a60682",
       "d28a9c65-438c-4c50-9cd4-7351016696eb",
-      "35e41fb1-12ab-428f-868b-0699a230eda9",
       "da412bb7-0544-4948-9e31-b34b8062a615",
       "dac76764-a12a-4177-bf00-0f378c7970c8",
       "6c2fe5e8-3f76-4111-9f82-f448afaa2bb9",
@@ -195,35 +218,14 @@
       "3459f713-157f-4c38-9ff8-5675ddad55d5"
      ]
     },
-    "c6dae442-c4b1-49b7-bcf8-b13a523eca58": {
-     "title": "Stabilitet og byggekvalitet",
-     "id": "c6dae442-c4b1-49b7-bcf8-b13a523eca58",
-     "references": [
-      "33151bf8-b343-43d8-9dee-d279e7a60682",
-      "b3774321-3acd-4599-9c06-16907b22a52a",
-      "913840c4-a9de-4611-99b5-ae96cc0d5920",
-      "63a3cba8-cc7f-4fd9-b4e1-3d992a8bff17",
-      "db49055d-db8f-47a7-883f-4eb5831eb76f",
-      "68bd89f1-20a3-4a93-93b1-5f72cb278a55",
-      "403e787c-a567-41a5-9d6a-0b1814fe4411",
-      "6611cfd0-5080-418a-8186-8c906d529309"
-     ]
-    },
-    "fd8942b7-7aae-4572-9880-bc4e56ca92e1": {
-     "title": "Kompatibilitet med hovedtelefoner",
-     "id": "fd8942b7-7aae-4572-9880-bc4e56ca92e1",
+    "c61dca09-3d5f-487e-a3c0-b225ef3d5e99": {
+     "title": "Pasform og kompatibilitet",
+     "id": "c61dca09-3d5f-487e-a3c0-b225ef3d5e99",
      "references": [
       "913840c4-a9de-4611-99b5-ae96cc0d5920",
       "bad17e4f-7845-4323-ada7-954288602bf3",
-      "01c3d664-f4eb-413e-91c9-f04d82cf9083"
-     ]
-    },
-    "699d4b61-b8bf-4a80-bf0a-2625f232d486": {
-     "title": "Pris og værdi",
-     "id": "699d4b61-b8bf-4a80-bf0a-2625f232d486",
-     "references": [
-      "35e41fb1-12ab-428f-868b-0699a230eda9",
-      "58b114c6-ab3a-4206-a04c-3bc97833978e"
+      "01c3d664-f4eb-413e-91c9-f04d82cf9083",
+      "7f6b96a8-ac1b-4c06-8c78-5c63ab246de1"
      ]
     }
    },

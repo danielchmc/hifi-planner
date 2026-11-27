@@ -140,11 +140,11 @@
      "productCode": "AQMACKENZIEIN0,5"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -298,7 +298,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 6,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -662,7 +662,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "19,5 x 28,000000000000004 x 4 cm (bredde x højde x dybde)"
+        "value": "19,5 x 28 x 4 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -691,47 +691,38 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQMACKENZIEIN roses bredt som et førsteklasses RCA-kabel med varm, kraftfuld og meget præcis lyd. Kablet tilfører dybde og fylde og skaber en medrivende, tredimensionel gengivelse, hvor stemmer og instrumenter står mere stabilt og livagtigt. Den flotte konstruktion og den tydeligt hørbare forbedring af anlægget gør den højere pris værd at betale.",
+   "summary": "AQMACKENZIEIN betragtes som et RCA-kabel i høj kvalitet med en raffineret, præcis og omsluttende lyd. Kablet giver stemmer og instrumenter mere klarhed, krop og kontur samt et mere stabilt og tredimensionelt lydbillede, samtidig med at det giver en tydelig opgradering i forhold til standardkabler. Den solide konstruktion og den eksklusive kvalitet gør investeringen værdifuld.",
    "headlines": {
-    "more precise, spacious and immersive sound": {
-     "sentimentAnalysis": "Kablet beskrives som en tydeligt hørbar opgradering, der forbedrer præcision, rumlig stabilitet og tredimensional realisme.",
-     "simpleTitle": "Mere præcis, rummelig og medrivende lyd",
+    "clear, immersive sound upgrade": {
+     "sentimentAnalysis": "Kablet roses for en tydeligt hørbar forbedring med større præcision, krop, kontur og tredimensional stabilitet end tidligere kabler eller standardkabler.",
+     "simpleTitle": "Tydelig og omsluttende lydopgradering",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3"
+     "key": "sound-upgrade",
+     "groupId": "f0c394c5-e649-4386-ae45-33f1c82e5a6e"
     },
-    "deep bass and a broad soundstage": {
-     "sentimentAnalysis": "Gengivelsen roses for at udvide lydbilledet og levere overbevisende dybde med kraftig basgengivelse.",
-     "simpleTitle": "Dyb bas og et bredt lydbillede",
+    "attractive, solid construction": {
+     "sentimentAnalysis": "Kablet får positive bemærkninger for sit flotte udseende og sin høje forarbejdningskvalitet.",
+     "simpleTitle": "Flot og solid konstruktion",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3"
-    },
-    "premium-looking, well-finished construction": {
-     "sentimentAnalysis": "Kablet får positive kommentarer for sit flotte udseende og sin høje forarbejdningskvalitet.",
-     "simpleTitle": "Eksklusivt udseende og flot forarbejdning",
-     "bias": "positive",
-     "key": "build-quality",
-     "groupId": "72b7b8e6-fe10-400c-a733-54bdcd69824c"
+     "key": "solid-construction",
+     "groupId": "b6ad885c-e13d-4565-a720-8e78fb9de591"
     }
    },
    "grouping": {
-    "26c7256c-e48b-492e-8e0d-26cf5c34dcf3": {
+    "f0c394c5-e649-4386-ae45-33f1c82e5a6e": {
      "title": "Lydkvalitet",
-     "id": "26c7256c-e48b-492e-8e0d-26cf5c34dcf3",
+     "id": "f0c394c5-e649-4386-ae45-33f1c82e5a6e",
      "references": [
       "3a6ced73-7431-49fa-a2df-4cd306f07f2f",
       "8874cbd6-68ca-4575-b37d-034fbaa5730f",
       "032f2b16-162e-4a50-ac3f-29e436478956",
-      "75f07582-a85f-4a08-bf68-51cdd6533fd2",
       "0425b082-08ed-4a94-80bb-b8babf10b968",
-      "5d5f53bc-98ae-4318-bdc6-3cf099fcdad3",
-      "e227fd76-7521-414a-9c74-a28df3216811"
+      "5d5f53bc-98ae-4318-bdc6-3cf099fcdad3"
      ]
     },
-    "72b7b8e6-fe10-400c-a733-54bdcd69824c": {
+    "b6ad885c-e13d-4565-a720-8e78fb9de591": {
      "title": "Byggekvalitet",
-     "id": "72b7b8e6-fe10-400c-a733-54bdcd69824c",
+     "id": "b6ad885c-e13d-4565-a720-8e78fb9de591",
      "references": [
       "8874cbd6-68ca-4575-b37d-034fbaa5730f",
       "43a1ae99-12bf-470b-8d81-9d101c825250"

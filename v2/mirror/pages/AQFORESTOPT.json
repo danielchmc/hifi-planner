@@ -149,7 +149,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 75,
+     "availableQuantity": 59,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -228,7 +228,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 93,
+     "availableQuantity": 87,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -307,7 +307,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 5,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -638,41 +638,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQFORESTOPT leverer en pålidelig og brugervenlig forbindelse med klar, detaljeret og omsluttende lyd. Kablet roses bredt for solid kvalitet og fremragende værdi for pengene med en varm og slagkraftig gengivelse, der gør musik og tv-lyd fornøjelig. Enkelte lyttere hører kun ringe eller ingen forbedring i forhold til billigere kabler, men den samlede ydelse er stadig meget overbevisende.",
+   "summary": "AQFORESTOPT betragtes generelt som et pålideligt optisk kabel i god kvalitet, der leverer stabile forbindelser samt klar, detaljeret og omsluttende lyd. Kablet giver god værdi for pengene, selv om nogle lyttere tvivler på, at et dyrt kabel giver en hørbar forskel. Samlet set er produktet en varm, slagkraftig og driftssikker opgradering til tilslutning af lydudstyr.",
    "headlines": {
-    "reliable, trouble-free connections": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent nem installation og pålidelige, fejlfrie forbindelser.",
-     "simpleTitle": "Pålidelige, problemfri forbindelser",
+    "good quality at a fair price": {
+     "sentimentAnalysis": "Flere anmeldelser roser kablet som vellavet, prisvenligt eller pengene værd, med en kvalitet der matcher prisen.",
+     "simpleTitle": "God kvalitet til en rimelig pris",
+     "bias": "positive",
+     "key": "build_value",
+     "groupId": "de5c83c1-4b2c-4663-a819-8ab6e6c36b12"
+    },
+    "stable, trouble-free connections": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som nemt at tilslutte og driftssikkert med rene, fejlfri forbindelser mellem enheder.",
+     "simpleTitle": "Stabile, problemfri forbindelser",
      "bias": "positive",
      "key": "connection",
-     "groupId": "fba3801b-8751-47a2-b225-c480775b0879"
+     "groupId": "0c1ba8a6-6551-400f-91e0-dc74e7e91e54"
     },
-    "strong value for money": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gentagne gange kablet som prisvenligt, rimeligt prissat og pengene værd.",
-     "simpleTitle": "Fremragende værdi for pengene",
-     "bias": "positive",
-     "key": "value",
-     "groupId": "1dc751e9-ff82-4eca-96e1-e315d3c81f8a"
-    },
-    "clear and detailed sound": {
-     "sentimentAnalysis": "Flere anmeldelser roser kablet for klar og detaljeret lydgengivelse.",
+    "clear, detailed sound": {
+     "sentimentAnalysis": "Lyden roses som klar, detaljeret og forbedret, og flere lyttere bemærker en positiv forskel.",
      "simpleTitle": "Klar og detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "18cade23-06c6-4fb9-af47-519eca2da9e4"
+     "groupId": "6d18bdd9-83c2-40a9-b47c-55fae25a4761"
     },
-    "little audible improvement over cheaper cables": {
-     "sentimentAnalysis": "Nogle anmeldelser oplever kun en mindre eller umærkelig lydforskel sammenlignet med almindelige kabler.",
-     "simpleTitle": "Ringe hørbar forbedring i forhold til billigere kabler",
+    "audible improvement is not guaranteed": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne rapporterer om ingen eller kun en lille hørbar forskel, hvilket nuancerer de ellers positive lydindtryk.",
+     "simpleTitle": "En hørbar forbedring er ikke garanteret",
      "bias": "negative",
      "key": "sound",
-     "groupId": "18cade23-06c6-4fb9-af47-519eca2da9e4"
+     "groupId": "6d18bdd9-83c2-40a9-b47c-55fae25a4761"
     }
    },
    "grouping": {
-    "fba3801b-8751-47a2-b225-c480775b0879": {
-     "title": "Forbindelse og pålidelighed",
-     "id": "fba3801b-8751-47a2-b225-c480775b0879",
+    "0c1ba8a6-6551-400f-91e0-dc74e7e91e54": {
+     "title": "Forbindelse og driftssikkerhed",
+     "id": "0c1ba8a6-6551-400f-91e0-dc74e7e91e54",
      "references": [
       "90b12c33-16ff-47d5-a9d7-3a34a723fda4",
       "cbbb0f1d-00c0-4b34-817b-0b22d603c2f4",
@@ -689,43 +689,53 @@
       "996beba9-05b3-4225-b8af-18381d26b12b",
       "514a6c50-2b62-43ee-8ab9-5f0170ff82b5",
       "2a5d04f3-00b2-4a8c-85c2-d52d54c83c47",
-      "f079188f-4a7f-4a52-9618-1ad425ff8cd0"
+      "f079188f-4a7f-4a52-9618-1ad425ff8cd0",
+      "cae9db9b-2ecc-4267-86ac-001796f80820"
      ]
     },
-    "18cade23-06c6-4fb9-af47-519eca2da9e4": {
+    "de5c83c1-4b2c-4663-a819-8ab6e6c36b12": {
+     "title": "Byggekvalitet og værdi",
+     "id": "de5c83c1-4b2c-4663-a819-8ab6e6c36b12",
+     "references": [
+      "938ad1b0-009d-4f0a-bcd6-a9d4cc24142c",
+      "834f4dc3-3b5c-4627-b7f2-20c3c532c275",
+      "cae2998a-61e8-4e62-859d-4b9ea24f8aeb",
+      "9ef109b4-02ca-4455-a221-ce159ffb93d7",
+      "542b2443-7472-4f7f-b716-306e33244625",
+      "08c0cc8c-a243-484d-9b0e-53f0074ca1ea",
+      "5f55528a-1065-4692-addb-1d8ec170fc58",
+      "0e2a94b6-e615-4a3d-a9f7-64696f44ebf8",
+      "f686813d-4963-4cf8-8280-2e790f1c17ad",
+      "a05f75c8-abcc-497c-93e4-b31b2771ab27",
+      "c336cc26-3bc9-4403-9789-f9698562f560",
+      "5cd1c352-4df3-4977-85ff-7d4c318e6504",
+      "2e4c100d-2c06-41b0-9c23-f492c325fe11",
+      "9cf79958-f870-44c9-ba4f-dacafdff653b",
+      "9696f701-c561-4ef1-82d0-f8961c1d95d5"
+     ]
+    },
+    "6d18bdd9-83c2-40a9-b47c-55fae25a4761": {
      "title": "Lydkvalitet",
-     "id": "18cade23-06c6-4fb9-af47-519eca2da9e4",
+     "id": "6d18bdd9-83c2-40a9-b47c-55fae25a4761",
      "references": [
       "8a22422b-26fb-443c-8dc6-0c87a5019cfd",
       "c9acff4c-4372-498e-beda-6f03ab8b8980",
       "5f55528a-1065-4692-addb-1d8ec170fc58",
       "854013b0-bcfa-439f-9c7c-6749aa674970",
       "88fc7419-f765-4590-a473-92ebba0488eb",
-      "2a5d04f3-00b2-4a8c-85c2-d52d54c83c47"
-     ]
-    },
-    "1dc751e9-ff82-4eca-96e1-e315d3c81f8a": {
-     "title": "Pris og værdi",
-     "id": "1dc751e9-ff82-4eca-96e1-e315d3c81f8a",
-     "references": [
-      "938ad1b0-009d-4f0a-bcd6-a9d4cc24142c",
-      "834f4dc3-3b5c-4627-b7f2-20c3c532c275",
-      "cae2998a-61e8-4e62-859d-4b9ea24f8aeb",
-      "08c0cc8c-a243-484d-9b0e-53f0074ca1ea",
-      "a05f75c8-abcc-497c-93e4-b31b2771ab27",
-      "2e4c100d-2c06-41b0-9c23-f492c325fe11"
+      "f686813d-4963-4cf8-8280-2e790f1c17ad"
      ]
     }
    },
-   "rating": 4.74590163934426,
-   "count": 122,
+   "rating": 4.75,
+   "count": 124,
    "reviewCount": 51,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 5,
     "4": 21,
-    "5": 96
+    "5": 98
    }
   },
   "brandName": "AudioQuest",

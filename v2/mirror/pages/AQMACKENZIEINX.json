@@ -133,11 +133,11 @@
      "productCode": "AQMACKENZIEIN0,75X"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -466,34 +466,34 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQMACKENZIEINX roses som et smukt færdiggjort og solidt bygget signalkabel, der giver tydelige lydmæssige forbedringer. Det balancerede XLR-design forbindes med strammere bas, et bredere lydbillede, højere niveau og en mere helstøbt, punchy gengivelse, hvilket gør kablet til en overbevisende opgradering af hi-fi-anlæg.",
+   "summary": "AQMACKENZIEINX er et smukt forarbejdet og solidt bygget kabel, der tilfører et raffineret og engagerende udtryk til et hi-fi-anlæg. Anmeldelserne fremhæver tydelige lydforbedringer, blandt andet en strammere bas, et bredere lydbillede og en mærkbar fordel i forhold til RCA-forbindelser. Resultatet er en varm, punchy og medrivende opgradering, der fuldender et kvalitetsanlæg.",
    "headlines": {
-    "solid, polished construction": {
-     "sentimentAnalysis": "Kablet beskrives konsekvent som solidt, smukt færdiggjort og veludført.",
-     "simpleTitle": "Solid og gennemført konstruktion",
+    "solid, premium construction": {
+     "sentimentAnalysis": "Kablet roses konsekvent for at være solidt, flot fremstillet og gennemført.",
+     "simpleTitle": "Solid og eksklusiv konstruktion",
      "bias": "positive",
-     "key": "build",
-     "groupId": "4040eaa4-397e-468b-a829-ebacef4ded3a"
+     "key": "build-quality",
+     "groupId": "cdea7eef-5ad9-4c27-9628-0bd03dcaad81"
     },
-    "clear upgrade over RCA": {
-     "sentimentAnalysis": "Den balancerede forbindelse opleves som et tydeligt lydmæssigt løft i forhold til RCA, med højere niveau og en mere kontrolleret gengivelse.",
-     "simpleTitle": "Tydelig forbedring i forhold til RCA",
+    "clear, engaging sound": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som vellydende med en engagerende gengivelse og hørbare forbedringer i anlægget.",
+     "simpleTitle": "Klar og engagerende lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "668e4575-cba4-435c-900c-801b3991edba"
+     "key": "sound-quality",
+     "groupId": "66744bbb-eca9-46bf-ada8-279f9c49b969"
     },
     "tighter bass and wider soundstage": {
-     "sentimentAnalysis": "Kablet forbindes med strammere dybe frekvenser og et bredere, mere immersivt stereobillede.",
+     "sentimentAnalysis": "Anmeldelserne peger på en tydelig forbedring i forhold til RCA samt strammere bas og et bredere lydbillede.",
      "simpleTitle": "Strammere bas og bredere lydbillede",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "668e4575-cba4-435c-900c-801b3991edba"
+     "key": "sound-quality",
+     "groupId": "66744bbb-eca9-46bf-ada8-279f9c49b969"
     }
    },
    "grouping": {
-    "4040eaa4-397e-468b-a829-ebacef4ded3a": {
+    "cdea7eef-5ad9-4c27-9628-0bd03dcaad81": {
      "title": "Byggekvalitet",
-     "id": "4040eaa4-397e-468b-a829-ebacef4ded3a",
+     "id": "cdea7eef-5ad9-4c27-9628-0bd03dcaad81",
      "references": [
       "962c5b68-d9f1-4c83-962c-ec0d5c521c3d",
       "9d92615e-fa7b-4854-b9cc-705728d2590d",
@@ -501,9 +501,9 @@
       "40abcfef-5a5d-4aeb-8181-286ef29cc0f1"
      ]
     },
-    "668e4575-cba4-435c-900c-801b3991edba": {
+    "66744bbb-eca9-46bf-ada8-279f9c49b969": {
      "title": "Lydkvalitet",
-     "id": "668e4575-cba4-435c-900c-801b3991edba",
+     "id": "66744bbb-eca9-46bf-ada8-279f9c49b969",
      "references": [
       "d7626d95-b101-467f-9841-0836f64aae2a",
       "9791e812-9cdf-4f41-a363-d60e9497a0de",

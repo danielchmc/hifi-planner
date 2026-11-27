@@ -210,11 +210,11 @@
      "productCode": "AQFORESTHDMIA12,5"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -235,7 +235,7 @@
     "productCode": "AQFORESTHDMIA750",
     "ean": "092592016637",
     "priceDetails": {
-     "priceValueId": 1214595,
+     "priceValueId": 1222568,
      "price": 2999,
      "priceFormatted": "2.999,-",
      "salesUnit": "stk",

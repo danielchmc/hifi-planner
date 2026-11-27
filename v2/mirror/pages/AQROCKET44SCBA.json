@@ -112,7 +112,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -189,7 +189,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -264,11 +264,11 @@
      "productCode": "AQROCKET44SC2,0BA"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "numberOfStoresExperience": 3,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -344,7 +344,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -422,7 +422,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "availableQuantity": 2,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -499,7 +499,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -576,7 +576,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -653,7 +653,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -730,7 +730,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -807,7 +807,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -884,7 +884,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -961,7 +961,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 3,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -983,41 +983,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET44SCBA leverer en varm, neutral og meget detaljeret lyd med stram, kraftfuld bas, klare diskanttoner og overbevisende dynamik. Kablet får højttalerne til at gengive flere musikalske detaljer og bevarer samtidig en ren og omsluttende lyd. Den solide konstruktion og den fremragende værdi gør Rocket 44 til en stærk anbefaling til en kvalitetsopgradering af hi-fi-anlægget.",
+   "summary": "AQROCKET44SCBA roses bredt for en varm, neutral og meget detaljeret lyd med stram, punchy bas, behagelig diskant og tydeligt forbedret dynamik. Kablet hjælper højttalerne med at gengive flere detaljer og skaber en ren og medrivende lydoplevelse, mens kvalitetsstik og en stærk oplevet værdi gør pakken særligt attraktiv. En særdeles overbevisende opgradering for lyttere, der ønsker bedre højttalerydelse uden en urimelig pris.",
    "headlines": {
-    "detailed and dynamic sound": {
-     "sentimentAnalysis": "Kablet roses for at overføre detaljer præcist, forbedre detaljerne i mellemtoner og diskant samt gøre dynamikken mere hørbar.",
-     "simpleTitle": "Detaljeret og dynamisk lyd",
+    "more detail and clarity": {
+     "sentimentAnalysis": "Kablet roses for at overføre detaljer rent og gøre information i mellemtonen og diskanten tydeligere.",
+     "simpleTitle": "Flere detaljer og større klarhed",
      "bias": "positive",
-     "key": "detailed-dynamic-sound",
-     "groupId": "5ce708d6-464c-400c-8f55-e8b69ddc5b3a"
+     "key": "detail",
+     "groupId": "684c221e-d2d5-489d-81b7-41532811ad7b"
     },
-    "strong value for the price": {
-     "sentimentAnalysis": "Kablet betragtes som en god investering og som et særligt godt højttalerkabel i sin prisklasse.",
-     "simpleTitle": "Meget for pengene",
+    "good value for the investment": {
+     "sentimentAnalysis": "Kablet betragtes som et godt køb med stærk ydelse uden en urimelig pris.",
+     "simpleTitle": "God værdi for investeringen",
      "bias": "positive",
-     "key": "strong-value",
-     "groupId": "998d18dc-37a2-4264-9c8e-36ee47e50abc"
+     "key": "value",
+     "groupId": "21ead96c-65fd-4dba-ae2e-65d5e8bcc669"
     },
-    "tight, rich bass": {
-     "sentimentAnalysis": "Basgengivelsen beskrives som både stram og særdeles god og giver et fyldigere fundament i de dybe toner.",
-     "simpleTitle": "Stram og fyldig bas",
+    "tight bass and warmer treble": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en neutral gengivelse med kontrolleret bas og en varmere, mere behagelig diskantbalance.",
+     "simpleTitle": "Stram bas og varmere diskant",
      "bias": "positive",
-     "key": "tight-rich-bass",
-     "groupId": "5ce708d6-464c-400c-8f55-e8b69ddc5b3a"
+     "key": "tonality",
+     "groupId": "684c221e-d2d5-489d-81b7-41532811ad7b"
     },
-    "warm, neutral tonal balance": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver en overordnet neutral klang sammen med en varmere diskantgengivelse.",
-     "simpleTitle": "Varm og neutral klangbalance",
+    "strong dynamics and a tight presentation": {
+     "sentimentAnalysis": "Kablet forbindes med kontrolleret, slagkraftig bas og tydelig dynamik i en samlet stram gengivelse.",
+     "simpleTitle": "Stærk dynamik og stram gengivelse",
      "bias": "positive",
-     "key": "warm-neutral-balance",
-     "groupId": "5ce708d6-464c-400c-8f55-e8b69ddc5b3a"
+     "key": "dynamics",
+     "groupId": "684c221e-d2d5-489d-81b7-41532811ad7b"
     }
    },
    "grouping": {
-    "5ce708d6-464c-400c-8f55-e8b69ddc5b3a": {
+    "684c221e-d2d5-489d-81b7-41532811ad7b": {
      "title": "Lydkvalitet",
-     "id": "5ce708d6-464c-400c-8f55-e8b69ddc5b3a",
+     "id": "684c221e-d2d5-489d-81b7-41532811ad7b",
      "references": [
       "ed8d3c3d-02b2-45ab-a082-ed302331211b",
       "a8c95cd1-8984-4241-922d-2ead3b2a137b",
@@ -1027,9 +1027,9 @@
       "c8b5fd28-7a60-418d-8c6a-f217450ba79a"
      ]
     },
-    "998d18dc-37a2-4264-9c8e-36ee47e50abc": {
+    "21ead96c-65fd-4dba-ae2e-65d5e8bcc669": {
      "title": "Værdi for pengene",
-     "id": "998d18dc-37a2-4264-9c8e-36ee47e50abc",
+     "id": "21ead96c-65fd-4dba-ae2e-65d5e8bcc669",
      "references": [
       "12613fde-4ccd-4bca-966b-f2caac65afa5",
       "7fb2eb20-1381-4567-817f-b33c6be4166f",

@@ -289,13 +289,17 @@
      "productCode": "AQROCKET33SC2,5AA"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
-    "images": [],
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/f67fb8ac-639b-436c-b47d-631a85c45e14"
+     }
+    ],
     "lifestyleImages": [],
     "energySpecifications": {},
     "url": "/audioquest-rocket-33-single-wire-hoejtalerkabel/aqrocket33sc2,5aa/",
@@ -671,11 +675,11 @@
      "productCode": "AQROCKET33SC5,0AA"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -754,7 +758,11 @@
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
-    "images": [],
+    "images": [
+     {
+      "url": "https://images.hifiklubben.com/image/54283505-9fbb-4c68-8458-c4be923fb8c4"
+     }
+    ],
     "lifestyleImages": [],
     "energySpecifications": {},
     "url": "/audioquest-rocket-33-single-wire-hoejtalerkabel/aqrocket33sc6,0aa/",

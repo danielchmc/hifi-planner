@@ -260,6 +260,28 @@
    ]
   },
   {
+   "type": "Subwoofer",
+   "keys": {
+    "Subwoofer": 27
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 27
+   },
+   "count": 28,
+   "bundles": 1,
+   "outlet": 1,
+   "products": 26,
+   "inCatalogue": 26,
+   "variantAxes": {
+    "colorOptions": 27,
+    "none": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
+   ]
+  },
+  {
    "type": "Soundbar",
    "keys": {
     "Soundbar": 25
@@ -281,28 +303,6 @@
    "mapped": "cats",
    "hifiPlanner": [
     "Soundbar/TV Audio"
-   ]
-  },
-  {
-   "type": "Subwoofer",
-   "keys": {
-    "Subwoofer": 27
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 27
-   },
-   "count": 27,
-   "bundles": 1,
-   "outlet": 0,
-   "products": 26,
-   "inCatalogue": 26,
-   "variantAxes": {
-    "colorOptions": 26,
-    "none": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Subwoofers"
    ]
   },
   {
@@ -635,18 +635,57 @@
    ]
   },
   {
-   "type": "Centerhøjtaler",
+   "type": "Vægbeslag for højtalere",
    "keys": {
-    "Center": 14
+    "WallMountForLoudspeakers": 14
    },
    "cats": {
-    "Højtaler > Centerhøjtaler": 14
+    "Tilbehør > Højtaler tilbehør": 14
+   },
+   "count": 15,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 14,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 15
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Adapter",
+   "keys": {
+    "Adapter": 14
+   },
+   "cats": {
+    "Kabler > Diverse kabler, stik & adaptere": 14
+   },
+   "count": 14,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 14,
+   "inCatalogue": 1,
+   "variantAxes": {
+    "colorOptions": 13,
+    "none": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Centerhøjtaler",
+   "keys": {
+    "Center": 13
+   },
+   "cats": {
+    "Højtaler > Centerhøjtaler": 13
    },
    "count": 14,
    "bundles": 1,
-   "outlet": 0,
-   "products": 13,
-   "inCatalogue": 13,
+   "outlet": 1,
+   "products": 12,
+   "inCatalogue": 12,
    "variantAxes": {
     "colorOptions": 13,
     "none": 1
@@ -699,25 +738,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Vægbeslag for højtalere",
-   "keys": {
-    "WallMountForLoudspeakers": 14
-   },
-   "cats": {
-    "Tilbehør > Højtaler tilbehør": 14
-   },
-   "count": 14,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 14,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 14
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Vægbeslag for Sonos",
    "keys": {
     "WallBracketForSonos": 10
@@ -732,25 +752,6 @@
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 14
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "Adapter",
-   "keys": {
-    "Adapter": 13
-   },
-   "cats": {
-    "Kabler > Diverse kabler, stik & adaptere": 13
-   },
-   "count": 13,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 13,
-   "inCatalogue": 1,
-   "variantAxes": {
-    "colorOptions": 13
    },
    "mapped": null,
    "hifiPlanner": []
@@ -834,25 +835,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "TV-beslag",
-   "keys": {
-    "TvBracket": 12
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 12
-   },
-   "count": 13,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 12,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 13
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Hjemmebio-system",
    "keys": {
     "HomeCinemaSystem": 11
@@ -867,6 +849,25 @@
    "inCatalogue": 0,
    "variantAxes": {
     "none": 12
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "TV-beslag",
+   "keys": {
+    "TvBracket": 11
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 11
+   },
+   "count": 12,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 11,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 12
    },
    "mapped": null,
    "hifiPlanner": []

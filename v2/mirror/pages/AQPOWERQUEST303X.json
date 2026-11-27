@@ -25,7 +25,7 @@
    "67f17767-fc74-422c-851e-c208d0c0308a",
    "94c8c560-eb94-42af-a442-7b9b1a9e38fe"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 218444,
@@ -115,12 +115,11 @@
      "productCode": "AQPOWERQUEST303"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
-     "availableQuantity": 8,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 5,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

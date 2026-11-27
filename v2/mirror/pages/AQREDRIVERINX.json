@@ -136,7 +136,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
+     "numberOfStoresExperience": 16,
      "availableQuantity": 33,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -544,41 +544,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQREDRIVERINX roses bredt som et velkonstrueret og teknisk imponerende kabel med fremragende værdi for pengene. Den balancerede forbindelse forbindes med en klarere, mere transparent og rummelig lyd med en varm og afslappet karakter sammenlignet med billigere alternativer. Samlet set giver kablet en slagkraftig og medrivende opgradering til en attraktiv pris.",
+   "summary": "AQREDRIVERINX får stor ros for solid konstruktion, attraktiv værdi og en tydelig lydmæssig forbedring ved balancerede forbindelser. Kablerne forbindes med krystalklar, transparent, bred og kontrolleret lyd samt en afslappet klang sammenlignet med billigere alternativer. Samlet leverer produktet en varm, punchy og immersiv gengivelse og føles særligt overbevisende til prisen.",
    "headlines": {
-    "clearer, more spacious sound": {
-     "sentimentAnalysis": "Det balancerede kabel roses for krystalklar, transparent lyd samt et bredere og mere kontrolleret lydbillede.",
-     "simpleTitle": "Klarere og mere rummelig lyd",
+    "a major upgrade over cheaper cables": {
+     "sentimentAnalysis": "Anmeldelserne beskriver balancerede kabler som en god investering, der kan få anlægget til at lyde som et nyt system, med en mere afslappet gengivelse end billige kabler.",
+     "simpleTitle": "En markant forbedring i forhold til billigere kabler",
      "bias": "positive",
-     "key": "clearer-more-spacious-sound",
-     "groupId": "0959c010-5f1d-4590-b0cd-98748ab794fb"
+     "key": "sound-upgrade",
+     "groupId": "d44293e0-0d96-4335-b791-9eb05b2ab52c"
     },
-    "solid, well-made construction": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende kablet som robust, teknisk solidt og velbygget.",
-     "simpleTitle": "Solid og velbygget konstruktion",
+    "solid, well-made cables": {
+     "sentimentAnalysis": "Kablerne vurderes konsekvent som teknisk og visuelt veludførte med en pålidelig samlet kvalitet.",
+     "simpleTitle": "Solide kabler i god kvalitet",
      "bias": "positive",
      "key": "solid-construction",
-     "groupId": "8ce2cb63-b2f5-4054-aa60-9535c8c43c42"
+     "groupId": "76407027-7378-437a-9832-bd7db47f19fe"
     },
-    "more relaxed than cheaper cables": {
-     "sentimentAnalysis": "Kablet ses som en god opgradering, der giver en mere afslappet og behagelig gengivelse end billige alternativer.",
-     "simpleTitle": "Mere afslappet end billigere kabler",
+    "clear and spacious sound": {
+     "sentimentAnalysis": "Den balancerede forbindelse roses for at åbne lydbilledet og levere krystalklar, transparent lyd.",
+     "simpleTitle": "Klar og rummelig lyd",
      "bias": "positive",
-     "key": "relaxed-sound",
-     "groupId": "0959c010-5f1d-4590-b0cd-98748ab794fb"
+     "key": "clear-spacious-sound",
+     "groupId": "d44293e0-0d96-4335-b791-9eb05b2ab52c"
     },
-    "excellent value for the price": {
-     "sentimentAnalysis": "Kablet vurderes som overraskende godt til prisen, og både værdien og købsoplevelsen får ros.",
-     "simpleTitle": "Fremragende værdi for pengene",
+    "strong value in the price range": {
+     "sentimentAnalysis": "Produktet vurderes som overraskende godt til prisen, og købsoplevelsen beskrives også positivt.",
+     "simpleTitle": "Stærk værdi i prisklassen",
      "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "3202cd96-c75e-45ae-8d0a-f01fa8d34be8"
+     "key": "good-value",
+     "groupId": "022a33a1-08d4-4e2b-bbd4-620f0677a14b"
     }
    },
    "grouping": {
-    "0959c010-5f1d-4590-b0cd-98748ab794fb": {
+    "d44293e0-0d96-4335-b791-9eb05b2ab52c": {
      "title": "Lydkvalitet",
-     "id": "0959c010-5f1d-4590-b0cd-98748ab794fb",
+     "id": "d44293e0-0d96-4335-b791-9eb05b2ab52c",
      "references": [
       "8467b76d-b564-4cbb-9368-fd0c046836dc",
       "f5485b16-dfed-42d2-a858-9f21ad6ccd0d",
@@ -586,19 +586,18 @@
       "38670e21-d961-4ca9-b9eb-ac535d83ed34"
      ]
     },
-    "8ce2cb63-b2f5-4054-aa60-9535c8c43c42": {
+    "76407027-7378-437a-9832-bd7db47f19fe": {
      "title": "Byggekvalitet",
-     "id": "8ce2cb63-b2f5-4054-aa60-9535c8c43c42",
+     "id": "76407027-7378-437a-9832-bd7db47f19fe",
      "references": [
       "f36d1ca0-cce2-461e-8985-2248977e873d",
       "dde68325-5e72-42c8-a314-f12805d3a9a7",
-      "351b1c35-4a5f-47ce-90be-47557333f6c1",
       "76f438ab-078f-4fcd-9ab4-d6efc1967b90"
      ]
     },
-    "3202cd96-c75e-45ae-8d0a-f01fa8d34be8": {
-     "title": "Værdi for pengene",
-     "id": "3202cd96-c75e-45ae-8d0a-f01fa8d34be8",
+    "022a33a1-08d4-4e2b-bbd4-620f0677a14b": {
+     "title": "Pris i forhold til kvalitet",
+     "id": "022a33a1-08d4-4e2b-bbd4-620f0677a14b",
      "references": [
       "351b1c35-4a5f-47ce-90be-47557333f6c1",
       "c5512928-6137-42ea-a541-bddcba7bca06"

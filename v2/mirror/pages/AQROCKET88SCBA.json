@@ -78,12 +78,6 @@
    "url": "/kabler/hojtaler-kabel/",
    "id": 69919
   },
-  "stockItemAlternative": {
-   "save": "2.600,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=AQROCKET88SCBA",
-   "availableQuantity": 1,
-   "lowestPrice": "8.499,-"
-  },
   "variants": [
    {
     "id": 65173,
@@ -145,11 +139,11 @@
      "productCode": "AQROCKET88SC1,5BA"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -863,41 +857,41 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQROCKET88SCBA roses for en varm, åben og veldefineret lyd med punchy nærvær, større bredde og overbevisende dybde. Den solide konstruktion og gode systemtilpasning styrker premiumindtrykket, selv om en anmelder synes, at kablet er dyrt. Den samlede vurdering er meget begejstret med ubesværet, medrivende musikalitet og stor tilfredshed.",
+   "summary": "AQROCKET88SCBA leverer en varm, åben og veldefineret lyd med masser af musikalitet samt overbevisende bredde, dybde og nærvær. Den solide konstruktion og den raffinerede gengivelse passer godt til kvalitetsanlæg fra Hegel og Epicon. Den store tilfredshed gør kablet til en stærk anbefaling, selv om premiumprisen kan få nogle købere til at tøve.",
    "headlines": {
-    "open, expansive and immersive sound": {
-     "sentimentAnalysis": "Kablet roses for at udvide bredden og dybden samt gøre gengivelsen mere åben, nærværende og ubesværet.",
-     "simpleTitle": "Åben, bred og medrivende lyd",
+    "clear, full and musical sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en fyldig, veldefineret og meget tilfredsstillende musikalsk gengivelse.",
+     "simpleTitle": "Klar, fyldig og musikalsk lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "381fc4bd-2190-4277-bf59-29cbc4a6674b"
+     "key": "sound-quality",
+     "groupId": "807d768c-fa4d-41f3-bb79-77a2a57821df"
     },
-    "clear, defined and satisfying performance": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydeligt forbedret, veldefineret og meget behagelig lyd samt stor tilfredshed trods indledende skepsis.",
-     "simpleTitle": "Klar, veldefineret og tilfredsstillende lyd",
+    "wide, deep and present soundstage": {
+     "sentimentAnalysis": "Kablet roses for større rumlig bredde og dybde samt en mere åben, ubesværet og nærværende gengivelse.",
+     "simpleTitle": "Bred, dyb og nærværende lydbillede",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "381fc4bd-2190-4277-bf59-29cbc4a6674b"
+     "key": "sound-quality",
+     "groupId": "807d768c-fa4d-41f3-bb79-77a2a57821df"
     },
-    "solid premium construction": {
-     "sentimentAnalysis": "Kablet opleves som velbygget og solidt med en kvalitet, der passer til avanceret lydudstyr.",
-     "simpleTitle": "Solid konstruktion i premiumklasse",
+    "solid, high-quality construction": {
+     "sentimentAnalysis": "Kablet opleves som flot, solidt og passende eksklusivt i konstruktionen.",
+     "simpleTitle": "Solid konstruktion i høj kvalitet",
      "bias": "positive",
-     "key": "build",
-     "groupId": "4901e9d3-f91b-4824-9c12-e24bb40f2127"
+     "key": "build-quality",
+     "groupId": "6e98839f-34fe-4a64-b1ad-99ee1fc0cfa0"
     },
-    "good match for high-end systems": {
-     "sentimentAnalysis": "Kablet beskrives som særligt velegnet til udstyr fra Hegel og Epicon.",
-     "simpleTitle": "Godt match til high-end-systemer",
+    "good match for Hegel-based systems": {
+     "sentimentAnalysis": "Synergien med Hegel-udstyr og en Hegel/Epicon-kombination roses specifikt.",
+     "simpleTitle": "Godt match til Hegel-systemer",
      "bias": "positive",
-     "key": "compatibility",
-     "groupId": "b7c2b72d-81ab-4628-b6f4-fd1f95a87075"
+     "key": "system-matching",
+     "groupId": "cc583eac-8785-403f-8cdf-17b25df12d14"
     }
    },
    "grouping": {
-    "381fc4bd-2190-4277-bf59-29cbc4a6674b": {
+    "807d768c-fa4d-41f3-bb79-77a2a57821df": {
      "title": "Lydkvalitet",
-     "id": "381fc4bd-2190-4277-bf59-29cbc4a6674b",
+     "id": "807d768c-fa4d-41f3-bb79-77a2a57821df",
      "references": [
       "1faff2b3-6687-4a91-9243-763fb7429807",
       "f57f8527-5e09-4ebd-81b9-dcceaa93f541",
@@ -905,17 +899,17 @@
       "a04ed380-dc44-464a-815c-07dfb8b82d79"
      ]
     },
-    "4901e9d3-f91b-4824-9c12-e24bb40f2127": {
+    "6e98839f-34fe-4a64-b1ad-99ee1fc0cfa0": {
      "title": "Byggekvalitet",
-     "id": "4901e9d3-f91b-4824-9c12-e24bb40f2127",
+     "id": "6e98839f-34fe-4a64-b1ad-99ee1fc0cfa0",
      "references": [
       "1faff2b3-6687-4a91-9243-763fb7429807",
       "a04ed380-dc44-464a-815c-07dfb8b82d79"
      ]
     },
-    "b7c2b72d-81ab-4628-b6f4-fd1f95a87075": {
-     "title": "Systemkompatibilitet",
-     "id": "b7c2b72d-81ab-4628-b6f4-fd1f95a87075",
+    "cc583eac-8785-403f-8cdf-17b25df12d14": {
+     "title": "Systemtilpasning",
+     "id": "cc583eac-8785-403f-8cdf-17b25df12d14",
      "references": [
       "5b02e2d1-a275-46d1-8df5-5fe748464f36",
       "a04ed380-dc44-464a-815c-07dfb8b82d79"

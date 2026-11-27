@@ -125,7 +125,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 6,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -154,41 +154,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQPOWERQUEST707X roses bredt for at forvandle anlæg med varmere, renere, roligere og mere omsluttende lyd samt større klarhed, flere detaljer, mere åbenhed, bedre dynamik og fastere bas. Flere anlæg oplever en markant forbedring i forhold til almindelige strømfordelere, med bedre billede og lyd samt fremragende samspil med kvalitetsudstyr. Ét system mistede noget diskantens sprødhed, men den samlede vurdering er stadig meget begejstret, og prisen anses som rimelig.",
+   "summary": "AQ PowerQuest 707X giver en markant opgradering med renere, roligere og mere stabil lyd i både hi-fi- og hjemmebiografsystemer. Gengivelsen bliver mere åben, detaljeret og omsluttende med mere punch i bassen, stærkere dynamik og større præcision. En førsteklasses investering med varm, kontrolleret og engagerende musikalitet, selv om systemmatchning kan påvirke diskantens karakter.",
    "headlines": {
-    "cleaner, calmer and more detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver markant mindre hårdhed og støj samt musikalske detaljer, der fremstår klarere, mere stabile og finere opløste.",
-     "simpleTitle": "Renere, roligere og mere detaljeret lyd",
+    "cleaner, clearer and more detailed sound": {
+     "sentimentAnalysis": "Filteret roses gentagne gange for at gøre gengivelsen klarere, renere, mere åben og mere detaljeret.",
+     "simpleTitle": "Renere, klarere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "cleaner-calm-detail",
-     "groupId": "898fa1d0-99f9-48da-ad21-850359470910"
+     "key": "sound-clarity",
+     "groupId": "10fd4382-9f32-494c-88c9-444d4e5d1b61"
     },
-    "more open, dynamic and immersive presentation": {
-     "sentimentAnalysis": "Netfilteret forbindes med et større, mere åbent og mere energisk lydbillede, som gør musikken mere engagerende.",
-     "simpleTitle": "Mere åben, dynamisk og omsluttende gengivelse",
+    "calmer, more stable and more dynamic presentation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en roligere, mere stabil og mere kontrolleret lyd med bedre dynamik og et mere afslappet musikalsk flow.",
+     "simpleTitle": "Roligere, mere stabil og mere dynamisk gengivelse",
      "bias": "positive",
-     "key": "open-dynamic",
-     "groupId": "898fa1d0-99f9-48da-ad21-850359470910"
+     "key": "sound-control",
+     "groupId": "10fd4382-9f32-494c-88c9-444d4e5d1b61"
     },
-    "tighter, more powerful bass and dynamics": {
-     "sentimentAnalysis": "Anmeldelserne peger på stærkere dynamik, mere bastryk og bedre baspræcision, selv om der stadig findes basforvrængning i ét setup.",
-     "simpleTitle": "Strammere, kraftigere bas og bedre dynamik",
+    "more powerful and precise bass": {
+     "sentimentAnalysis": "Bassen får ifølge anmeldelserne mere styrke, punch og præcision, mens resterende forvrængning reduceres, men ikke altid forsvinder helt.",
+     "simpleTitle": "Kraftigere og mere præcis bas",
      "bias": "positive",
-     "key": "bass-dynamics",
-     "groupId": "898fa1d0-99f9-48da-ad21-850359470910"
-    },
-    "premium price considered justified": {
-     "sentimentAnalysis": "Den rapporterede forbedring af anlæggets ydeevne får den forholdsvis høje købspris til at føles pengene værd.",
-     "simpleTitle": "Premiumprisen anses berettiget",
-     "bias": "positive",
-     "key": "worth-price",
-     "groupId": "38ec2ed6-bf2b-4af3-9bbc-b995d84c80de"
+     "key": "bass-performance",
+     "groupId": "10fd4382-9f32-494c-88c9-444d4e5d1b61"
     }
    },
    "grouping": {
-    "898fa1d0-99f9-48da-ad21-850359470910": {
+    "10fd4382-9f32-494c-88c9-444d4e5d1b61": {
      "title": "Lydkvalitet",
-     "id": "898fa1d0-99f9-48da-ad21-850359470910",
+     "id": "10fd4382-9f32-494c-88c9-444d4e5d1b61",
      "references": [
       "669e912c-0b8c-40b3-8cfd-edecb4f1813f",
       "22bf9fab-6bc1-47e7-885c-cc77019160b5",
@@ -200,14 +193,6 @@
       "36d6b575-76eb-41ef-86a0-d15b51d6f805",
       "04846b57-83f3-439b-90e5-8e0467e8fbb9",
       "8c99f2e9-6590-4d2c-91b4-b594f4cdc30b",
-      "97ce844f-61e2-49c1-ac5f-52c03eca451b"
-     ]
-    },
-    "38ec2ed6-bf2b-4af3-9bbc-b995d84c80de": {
-     "title": "Værdi for pengene",
-     "id": "38ec2ed6-bf2b-4af3-9bbc-b995d84c80de",
-     "references": [
-      "d4cafc0f-e486-4d30-a47c-377a88204129",
       "97ce844f-61e2-49c1-ac5f-52c03eca451b"
      ]
     }

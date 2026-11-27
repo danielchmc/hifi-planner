@@ -163,64 +163,79 @@
   "variantNavigationType": "meterQuantitySelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQQ2SCX betragtes generelt som et velbygget højttalerkabel med god værdi for pengene, der leverer en klar, varm og detaljeret lyd. Musikken føles mere fornøjelig og omsluttende på forskellige anlæg, og flere anmeldelser beskriver en tydelig forbedring i forhold til almindelig højttalerledning. Meningerne om håndteringen er delte: Nogle finder kablet fleksibelt og nemt at fastgøre, mens en anden oplever kablet som stift og vanskeligt at arbejde med.",
+   "summary": "AQQ2SCX roses bredt som et veludført og prisvenligt højttalerkabel, der leverer en klar, varm og detaljeret lyd. Kablet fungerer pålideligt med forskellige højttaler- og forstærkersystemer, og flere lyttere beskriver resultatet som overraskende imponerende og behageligt. Den fleksible montering og pæne finish giver ekstra praktisk værdi, selv om én anmeldelse fandt kablet stift og vanskeligt at arbejde med.",
    "headlines": {
     "warmer, more detailed and immersive sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver en tydelig lydforbedring med varmere, mere detaljeret og meget fornøjelig musikgengivelse på flere anlæg.",
-     "simpleTitle": "Varmere, mere detaljeret og omsluttende lyd",
+     "sentimentAnalysis": "Lyttere oplever en tydeligt forbedret, varmere, mere detaljeret og behagelig gengivelse i musik- og hjemmeaudiosystemer.",
+     "simpleTitle": "Varmere, mere detaljeret og medrivende lyd",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "34c71371-4531-4895-9d4a-ddd4cd9fa42f"
+     "key": "warm-detailed-sound",
+     "groupId": "54ca8537-82a1-4398-8842-e2fd409ff6c2"
     },
-    "solid quality at an attractive price": {
-     "sentimentAnalysis": "Flere anmeldelser roser kablet for solid udførelse, god kvalitet og en attraktiv pris.",
-     "simpleTitle": "Solid kvalitet til en attraktiv pris",
+    "solid, neat construction": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende kablet som flot, pænt udført, solidt og af god kvalitet.",
+     "simpleTitle": "Solid og pæn udførelse",
      "bias": "positive",
-     "key": "build",
-     "groupId": "88085104-8ae2-43df-9d43-ac25e6f3d9e7"
+     "key": "solid-neat-build",
+     "groupId": "5e275fb7-84c7-4494-897a-bd4c172fde4a"
     },
-    "flexible and easy to secure": {
-     "sentimentAnalysis": "Flere anmeldelser oplever kablet som forholdsvis nemt at arbejde med, fleksibelt og enkelt at føre eller fastgøre.",
-     "simpleTitle": "Fleksibel og nem at fastgøre",
+    "easy to route and secure": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver enkel håndtering, fleksibilitet samt nem føring og fastgørelse.",
+     "simpleTitle": "Nem at føre og fastgøre",
      "bias": "positive",
-     "key": "handling",
-     "groupId": "7ec7c601-477f-46d7-80b9-822a3fb6aed3"
+     "key": "easy-installation",
+     "groupId": "5023a2aa-a395-4783-b898-37f4b9d32397"
+    },
+    "attractive price": {
+     "sentimentAnalysis": "Kablet betragtes som et godt køb til en attraktiv pris.",
+     "simpleTitle": "Attraktiv pris",
+     "bias": "positive",
+     "key": "attractive-price",
+     "groupId": "5ef4d00c-e420-4f43-87e6-bcc2584663d8"
     }
    },
    "grouping": {
-    "88085104-8ae2-43df-9d43-ac25e6f3d9e7": {
-     "title": "Byggekvalitet og værdi",
-     "id": "88085104-8ae2-43df-9d43-ac25e6f3d9e7",
-     "references": [
-      "e1f7b5da-5eb1-4a47-b578-35d82c48c9bc",
-      "c2886a53-1f2e-403f-90b5-b2a5f3899a58",
-      "8781b90b-cd0b-4eee-a7d9-36c6a8e65e09",
-      "06f63108-b5e2-44ed-87b3-59d1a3583a5b",
-      "66c234b9-29bc-4eee-b258-4519b74197b4",
-      "336cc0e3-ccf3-4844-8eb9-f6e2d99fd641",
-      "b012cc92-46d8-4b72-ab22-869dec2a9659"
-     ]
-    },
-    "34c71371-4531-4895-9d4a-ddd4cd9fa42f": {
+    "54ca8537-82a1-4398-8842-e2fd409ff6c2": {
      "title": "Lydkvalitet",
-     "id": "34c71371-4531-4895-9d4a-ddd4cd9fa42f",
+     "id": "54ca8537-82a1-4398-8842-e2fd409ff6c2",
      "references": [
       "8044bf7f-4a4c-4cea-a99e-35ab207aaa4d",
       "bda1b68f-8a33-4d58-9ca4-43a88aef88d2",
+      "1fc79fd7-e11b-46e9-8c9f-9a82acb49c99",
       "6801d6a7-496b-45bc-ad15-64a08d22fea0",
       "3bbc3c3c-51fd-44d3-82e7-476fc162f592",
       "e3c8146d-804d-4182-84cf-e07b00c5f7e6",
       "ae7bb616-08e1-445e-bfa9-8d83595749c7"
      ]
     },
-    "7ec7c601-477f-46d7-80b9-822a3fb6aed3": {
+    "5e275fb7-84c7-4494-897a-bd4c172fde4a": {
+     "title": "Byggekvalitet",
+     "id": "5e275fb7-84c7-4494-897a-bd4c172fde4a",
+     "references": [
+      "e1f7b5da-5eb1-4a47-b578-35d82c48c9bc",
+      "c2886a53-1f2e-403f-90b5-b2a5f3899a58",
+      "8781b90b-cd0b-4eee-a7d9-36c6a8e65e09",
+      "06f63108-b5e2-44ed-87b3-59d1a3583a5b",
+      "66c234b9-29bc-4eee-b258-4519b74197b4",
+      "336cc0e3-ccf3-4844-8eb9-f6e2d99fd641"
+     ]
+    },
+    "5023a2aa-a395-4783-b898-37f4b9d32397": {
      "title": "Håndtering og installation",
-     "id": "7ec7c601-477f-46d7-80b9-822a3fb6aed3",
+     "id": "5023a2aa-a395-4783-b898-37f4b9d32397",
      "references": [
       "192f7107-3d52-40d8-96e1-e1b046ccc00d",
       "bf849230-2f7a-4b32-9a13-13277e66db69",
       "0197b7de-315d-4b1d-ac66-51da97088c68",
       "1ca8c1c5-7917-4add-9b3d-dc675a543f1f"
+     ]
+    },
+    "5ef4d00c-e420-4f43-87e6-bcc2584663d8": {
+     "title": "Pris og kvalitet",
+     "id": "5ef4d00c-e420-4f43-87e6-bcc2584663d8",
+     "references": [
+      "8781b90b-cd0b-4eee-a7d9-36c6a8e65e09",
+      "b012cc92-46d8-4b72-ab22-869dec2a9659"
      ]
     }
    },

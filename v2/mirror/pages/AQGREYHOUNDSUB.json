@@ -137,8 +137,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 2,
-     "availableQuantity": 30,
+     "numberOfStoresExperience": 3,
+     "availableQuantity": 25,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -217,7 +217,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 5,
-     "availableQuantity": 20,
+     "availableQuantity": 14,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -296,7 +296,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 9,
+     "availableQuantity": 7,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -448,12 +448,11 @@
      "productCode": "AQGREYHOUNDSUB12,0"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -604,8 +603,8 @@
      "productCode": "AQGREYHOUNDSUB20,0"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager søndag den 13. december",
-     "deliveryDate": "2026-12-13T00:00:00Z",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
      "inventoryStatusType": "notInStockAtpDate"
@@ -628,58 +627,70 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQGREYHOUNDSUB er et særdeles effektivt subwooferkabel, der leverer ren, præcis og punchy bas og fungerer problemfrit med mange forskellige højttalere og forstærkere. Det slanke og diskrete design gør installation og skjult kabelføring meget nem. Fremragende værdi for pengene og pålidelig hverdagsydelse præger tilbagemeldingerne, selv om lange kabeltræk kan give brum i enkelte opsætninger.",
+   "summary": "AQGREYHOUNDSUB er et meget praktisk subwooferkabel, der leverer ren, defineret og punchy bas og fungerer problemfrit med flere højttaler- og forstærkeropsætninger. Den slanke og diskrete konstruktion gør installation og skjult kabelføring særligt nem, samtidig med at prisen er attraktiv. Enkelte lange kabelopsætninger gav brum, hvilket tyder på, at kabellængde eller systemkonfiguration bør tages i betragtning.",
    "headlines": {
-    "clean, defined and powerful bass": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for ren, præcis og punchy lyd samt fremragende basintegration.",
-     "simpleTitle": "Ren, præcis og kraftfuld bas",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "b8dbf619-f3cd-4d29-acf6-36f0e27a958d"
-    },
     "reliable plug-and-play connection": {
-     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende et ukompliceret kabel, der passer til kompatible systemer og uden besvær klarer subwooferforbindelsen.",
-     "simpleTitle": "Pålidelig plug-and-play-forbindelse",
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som en effektiv og enkel forbindelse mellem subwoofere og lydudstyr.",
+     "simpleTitle": "Pålidelig plug-and-play-tilslutning",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "221eb68c-c952-471b-bbfd-d953e87738f4"
+     "groupId": "cf5e16fa-8597-4eca-b571-95d261048c25"
+    },
+    "clean and punchy bass": {
+     "sentimentAnalysis": "Anmeldelserne beskriver kablet som transparent og defineret med meget god basgengivelse og forbedret subwooferintegration.",
+     "simpleTitle": "Ren og punchy bas",
+     "bias": "positive",
+     "key": "bass",
+     "groupId": "779ffed2-1d0a-4475-8be7-45853e672317"
     },
     "slim and easy to hide": {
-     "sentimentAnalysis": "Den tynde konstruktion opleves som meget praktisk til kabelføring rundt i rummet og skjult montering bag paneler eller i kabelkanaler.",
+     "sentimentAnalysis": "Den tynde konstruktion roses gentagne gange for diskret kabelføring i rummet og nem skjulning i paneler eller kabelkanaler.",
      "simpleTitle": "Slankt og nemt at skjule",
      "bias": "positive",
-     "key": "installation",
-     "groupId": "a718a671-6faf-4231-9618-4c7d5d9659c7"
+     "key": "design",
+     "groupId": "b38ae4c3-92d0-4e16-8493-ea1064b9f509"
+    },
+    "buzz may occur with long runs": {
+     "sentimentAnalysis": "En anmeldelse rapporterer brum fra kabler på 8 og 12 meter, mens kortere kabler på 3 meter var støjfri; en anden anmeldelse er kun generelt tilfreds med resultatet.",
+     "simpleTitle": "Brum kan forekomme ved lange kabler",
+     "bias": "negative",
+     "key": "bass",
+     "groupId": "779ffed2-1d0a-4475-8be7-45853e672317"
     }
    },
    "grouping": {
-    "b8dbf619-f3cd-4d29-acf6-36f0e27a958d": {
-     "title": "Lydkvalitet",
-     "id": "b8dbf619-f3cd-4d29-acf6-36f0e27a958d",
+    "cf5e16fa-8597-4eca-b571-95d261048c25": {
+     "title": "Kompatibilitet og tilslutning",
+     "id": "cf5e16fa-8597-4eca-b571-95d261048c25",
+     "references": [
+      "c07664c0-3f15-4b3d-b8fd-fa95d4b72f41",
+      "16be0f54-54c8-408f-928f-cb8b63bb9229",
+      "35b1e785-b357-4651-8bc7-6ba6369e6df5",
+      "5479466d-7232-4344-bc61-0f39a850d47a",
+      "da7b85a8-bde1-4bb0-89fc-fdeefa5ca485",
+      "009a7a3b-f457-4ba3-8bde-604689744419",
+      "ad903bf9-66d7-4345-924e-2343a4baae5e",
+      "d257f536-160c-42ec-bd7a-4a04baaa38d5"
+     ]
+    },
+    "779ffed2-1d0a-4475-8be7-45853e672317": {
+     "title": "Bas og lydkvalitet",
+     "id": "779ffed2-1d0a-4475-8be7-45853e672317",
      "references": [
       "16be0f54-54c8-408f-928f-cb8b63bb9229",
       "a18d1fa9-7d6c-401b-9e78-e907a4bfbf5a",
       "da7b85a8-bde1-4bb0-89fc-fdeefa5ca485",
       "cc1d2bbb-4272-4f0d-9749-799fe9df71c9",
       "c0f26709-87c7-4b46-849d-3a3c78ad4d9c",
-      "ad903bf9-66d7-4345-924e-2343a4baae5e"
+      "d257f536-160c-42ec-bd7a-4a04baaa38d5",
+      "0929eea2-1b60-4b3c-a6aa-6b98dfc6c5bf"
      ]
     },
-    "221eb68c-c952-471b-bbfd-d953e87738f4": {
-     "title": "Kompatibilitet og tilslutning",
-     "id": "221eb68c-c952-471b-bbfd-d953e87738f4",
+    "b38ae4c3-92d0-4e16-8493-ea1064b9f509": {
+     "title": "Kabeldesign og installation",
+     "id": "b38ae4c3-92d0-4e16-8493-ea1064b9f509",
      "references": [
-      "c07664c0-3f15-4b3d-b8fd-fa95d4b72f41",
-      "35b1e785-b357-4651-8bc7-6ba6369e6df5",
-      "5479466d-7232-4344-bc61-0f39a850d47a",
-      "009a7a3b-f457-4ba3-8bde-604689744419",
-      "d257f536-160c-42ec-bd7a-4a04baaa38d5"
-     ]
-    },
-    "a718a671-6faf-4231-9618-4c7d5d9659c7": {
-     "title": "Installation og skjult kabelføring",
-     "id": "a718a671-6faf-4231-9618-4c7d5d9659c7",
-     "references": [
+      "c0f26709-87c7-4b46-849d-3a3c78ad4d9c",
       "7b01bd4a-0ef1-4f26-b505-ee2d7309f97a",
       "ad903bf9-66d7-4345-924e-2343a4baae5e",
       "787cc78c-9395-47a1-b9f0-f89b9b8e88f3"

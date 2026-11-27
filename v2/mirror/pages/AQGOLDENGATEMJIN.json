@@ -136,7 +136,7 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
      "availableQuantity": 1,
@@ -154,7 +154,7 @@
     "energySpecifications": {},
     "url": "/audioquest-golden-gate-mj-minijack-kabel/aqgoldengatemjin1,0/",
     "canonicalUrl": "/audioquest-golden-gate-mj-minijack-kabel/aqgoldengatemjin1,0/",
-    "lowestShippingPriceRaw": 29,
+    "lowestShippingPriceRaw": 299,
     "addOns": []
    },
    {
@@ -217,11 +217,11 @@
      "productCode": "AQGOLDENGATEMJIN2,0"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

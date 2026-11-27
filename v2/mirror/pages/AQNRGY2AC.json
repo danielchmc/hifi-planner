@@ -117,7 +117,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 11,
+     "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -195,7 +195,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 5,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -293,51 +293,60 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AudioQuest NRG-Y2 er et flot fremstillet og godt afskærmet strømkabel med et eksklusivt indtryk, som passer til mange hi-fi-anlæg. Den lydmæssige effekt er overvejende positiv med mere ro, dynamik og en smule højere niveau, men forbedringen er snarere subtil end en dramatisk forskel på dag og nat. En varm, slagkraftig og omsluttende gengivelse gør kablet til en begejstrende opgradering trods en vis stivhed og tykkelse.",
+   "summary": "AQ NRG-Y2 er et smukt udført netkabel i høj kvalitet med effektiv afskærmning og en god pasform. Kablet giver en subtil, men tydeligt hørbar lydforbedring med mere ro, lydstyrke, dynamik og klarhed i tilsluttet hi-fi-udstyr. Den solide konstruktion, flotte finish og brede systemkompatibilitet gør kablet til en overbevisende opgradering, selv om den betydelige tykkelse og stivhed bør tages i betragtning.",
    "headlines": {
-    "premium construction and shielding": {
-     "sentimentAnalysis": "Kablet roses for solidt håndværk, høj kvalitet og effektiv afskærmning.",
-     "simpleTitle": "Eksklusiv konstruktion og afskærmning",
+    "high-quality construction and finish": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som veludført, attraktivt og af høj kvalitet.",
+     "simpleTitle": "Konstruktion og finish i høj kvalitet",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "4ffe8923-48e6-4f49-b3c9-83d000889b0b"
+     "key": "build",
+     "groupId": "cea97886-f9ba-478d-91dd-88c708a606da"
     },
-    "clear but subtle sonic improvement": {
-     "sentimentAnalysis": "Kablet giver en hørbar forbedring med en lidt højere og mere rolig gengivelse, men forskellen er snarere subtil end dramatisk.",
-     "simpleTitle": "Tydelig, men subtil lydforbedring",
+    "subtle but clearly audible sound improvement": {
+     "sentimentAnalysis": "Kablet roses for en mærkbar lydforbedring med mere ro, lydstyrke og dynamik.",
+     "simpleTitle": "Subtil, men tydeligt hørbar lydforbedring",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "46d2e61c-6280-4a8e-a14d-57fe59bd2326"
+     "key": "sound",
+     "groupId": "1a356df8-49c1-4fd0-bb1b-3fdefaeff078"
     },
-    "more dynamic sound": {
-     "sentimentAnalysis": "Kablet forbindes med større dynamik og en mere tilfredsstillende, levende gengivelse.",
-     "simpleTitle": "Mere dynamisk lyd",
+    "effective shielding": {
+     "sentimentAnalysis": "Afskærmningen fremhæves specifikt som en nyttig egenskab ved kablet.",
+     "simpleTitle": "Effektiv afskærmning",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "46d2e61c-6280-4a8e-a14d-57fe59bd2326"
+     "key": "shielding",
+     "groupId": "d0f0b1bc-a479-4324-a3b7-50a378f84f91"
     }
    },
    "grouping": {
-    "4ffe8923-48e6-4f49-b3c9-83d000889b0b": {
+    "cea97886-f9ba-478d-91dd-88c708a606da": {
      "title": "Byggekvalitet",
-     "id": "4ffe8923-48e6-4f49-b3c9-83d000889b0b",
+     "id": "cea97886-f9ba-478d-91dd-88c708a606da",
      "references": [
       "e228efbb-b2be-4ae5-9f31-c6792f17c5a8",
       "22d6fc4d-a64d-487d-9cfb-870b7a9bd3c7",
+      "8258e873-094f-43c6-b4ae-3423c7f1ae6f",
       "384090e4-f8ca-448b-9939-f10f135143a3",
       "d5d6652f-ee3e-4d27-9c53-c51b42844db7",
       "527a83fa-9e01-49f1-b42e-9897920c4734",
       "5e44b04a-790d-4ed0-abf5-68f62ffdf04e"
      ]
     },
-    "46d2e61c-6280-4a8e-a14d-57fe59bd2326": {
+    "1a356df8-49c1-4fd0-bb1b-3fdefaeff078": {
      "title": "Lydkvalitet",
-     "id": "46d2e61c-6280-4a8e-a14d-57fe59bd2326",
+     "id": "1a356df8-49c1-4fd0-bb1b-3fdefaeff078",
      "references": [
       "60bbe799-19e1-42ef-87df-f002e06a89ea",
       "5a23beaa-3a8c-4dc0-8a73-17fdd15dca0e",
       "328ddc32-b256-4fc2-b1a3-2c3c3ef84f07",
       "ae8c2470-a4b6-4d14-b939-4a928056180a"
+     ]
+    },
+    "d0f0b1bc-a479-4324-a3b7-50a378f84f91": {
+     "title": "Afskærmning",
+     "id": "d0f0b1bc-a479-4324-a3b7-50a378f84f91",
+     "references": [
+      "60bbe799-19e1-42ef-87df-f002e06a89ea",
+      "d5d6652f-ee3e-4d27-9c53-c51b42844db7"
      ]
     }
    },

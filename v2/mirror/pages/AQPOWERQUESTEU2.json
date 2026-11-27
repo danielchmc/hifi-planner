@@ -118,7 +118,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 59,
+     "availableQuantity": 47,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -138,58 +138,57 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQPOWERQUESTEU2 leverer en varmere, roligere og mere detaljeret gengivelse i mange anlæg, med mere punch i dynamikken, bedre rumlig fokusering og et mere medrivende stereoperspektiv. Netfiltrering og beskyttelse giver en betryggende ren og stabil strømforsyning, mens flere anlæg også får et klarere og roligere tv-billede. Resultaterne afhænger dog af anlæg og strømforhold, og i nogle installationer er den hørbare forskel begrænset, så værdien afhænger af det konkrete setup.",
+   "summary": "AudioQuest PowerQuest 2 roses bredt for renere, roligere og mere detaljeret lyd med forbedret stereoperspektiv, dynamik og mere præcis bas. Flere anmeldelser nævner også et roligere og klarere tv-billede, mens overspændingsbeskyttelsen og den stabile strømforsyning giver værdifuldt udstyr ekstra sikkerhed. Et mindre antal brugere hører ingen eller kun ringe lydforbedring, så den relativt høje pris er den største reservation, men samlet set betragtes enheden som en kvalitetsmæssig og værdifuld opgradering.",
    "headlines": {
     "cleaner, calmer and more detailed sound": {
-     "sentimentAnalysis": "Netfilteret forbindes gentagne gange med renere, roligere og mere detaljeret gengivelse.",
+     "sentimentAnalysis": "Lyden opleves som renere, roligere og mere opløst med større klarhed og en mere ubesværet gengivelse.",
      "simpleTitle": "Renere, roligere og mere detaljeret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "9048011d-638f-4caf-a751-98bc68d7f40a"
+     "key": "sound",
+     "groupId": "a584108f-6ba8-4252-be46-952f6c253265"
     },
-    "reliable protection against power problems": {
-     "sentimentAnalysis": "Overspændingsbeskyttelse, stabil strøm og færre udløste sikringer ses som værdifuld beskyttelse af dyrt udstyr.",
+    "reliable protection from power problems": {
+     "sentimentAnalysis": "Overspændingsbeskyttelse, stabil strøm og færre udløste sikringer værdsættes som vigtig beskyttelse af tilsluttet udstyr.",
      "simpleTitle": "Pålidelig beskyttelse mod strømproblemer",
      "bias": "positive",
-     "key": "power-protection",
-     "groupId": "b904915e-31b6-41cd-8575-b91533cf33d4"
+     "key": "protection",
+     "groupId": "081c64b4-afb8-422b-a39c-66a62753cb9d"
     },
-    "more depth, dynamics and precise imaging": {
-     "sentimentAnalysis": "Flere anlæg får mere dynamik, dybde og en skarpere rumlig gengivelse.",
-     "simpleTitle": "Mere dybde, dynamik og præcis rumlig gengivelse",
+    "solid construction and dependable operation": {
+     "sentimentAnalysis": "Enheden opfattes som velbygget, attraktiv og pålidelig med enkel betjening og god samlet værdi.",
+     "simpleTitle": "Solid konstruktion og pålidelig drift",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "9048011d-638f-4caf-a751-98bc68d7f40a"
+     "key": "build",
+     "groupId": "decc0f37-7d1e-4c57-a00e-35ac47c988f2"
     },
-    "clearer and calmer television pictures": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver et klarere og roligere billede med færre synlige forstyrrelser.",
-     "simpleTitle": "Klarere og roligere tv-billeder",
+    "improved imaging, dynamics and bass precision": {
+     "sentimentAnalysis": "Gengivelsen får mere dybde, rumligt fokus, dynamik og strammere bas, hvilket giver et mere medrivende og præcist lydbillede.",
+     "simpleTitle": "Forbedret stereoperspektiv, dynamik og baspræcision",
      "bias": "positive",
-     "key": "picture-quality",
-     "groupId": "e036b38b-f09f-4d86-9b22-6cecf1e92351"
+     "key": "sound",
+     "groupId": "a584108f-6ba8-4252-be46-952f6c253265"
     },
-    "audible improvement depends on the system": {
-     "sentimentAnalysis": "Nogle anlæg giver kun lille eller ingen mærkbar lydændring, især når det eksisterende udstyr allerede er stærkt.",
-     "simpleTitle": "Den hørbare forbedring afhænger af anlægget",
+    "no clearly audible sound improvement": {
+     "sentimentAnalysis": "Nogle anlæg afslører kun en ringe eller ingen hørbar ændring, hvilket skaber tvivl om, hvorvidt den lydmæssige gevinst retfærdiggør prisen.",
+     "simpleTitle": "Ingen tydelig hørbar lydforbedring",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "9048011d-638f-4caf-a751-98bc68d7f40a"
+     "key": "sound",
+     "groupId": "a584108f-6ba8-4252-be46-952f6c253265"
     },
-    "picture improvement is not universal": {
-     "sentimentAnalysis": "Forbedringer på tv afhænger af systemet, og nogle skærme viser ingen tydelig forskel.",
-     "simpleTitle": "Billedforbedringen er ikke universel",
-     "bias": "negative",
-     "key": "picture-quality",
-     "groupId": "e036b38b-f09f-4d86-9b22-6cecf1e92351"
+    "clearer and calmer television picture": {
+     "sentimentAnalysis": "Tv-billedet beskrives som klarere, roligere og mindre påvirket af synlige forstyrrelser.",
+     "simpleTitle": "Klarere og roligere tv-billede",
+     "bias": "positive",
+     "key": "picture",
+     "groupId": "5c363d26-fc91-460a-a55d-4df5f9dd2e1a"
     }
    },
    "grouping": {
-    "9048011d-638f-4caf-a751-98bc68d7f40a": {
+    "a584108f-6ba8-4252-be46-952f6c253265": {
      "title": "Lydkvalitet",
-     "id": "9048011d-638f-4caf-a751-98bc68d7f40a",
+     "id": "a584108f-6ba8-4252-be46-952f6c253265",
      "references": [
       "074103cb-634c-4893-a8ba-83301dec0d50",
-      "90ee315d-4539-40c0-bde7-e1beed39acf0",
       "43d71c9a-3b7f-42bb-9866-953e952c94e2",
       "39fec3ba-6d7f-43c4-b4b1-58a179758d2a",
       "b1a4e749-9aeb-4294-b1f3-b1a99dcbe4c9",
@@ -197,6 +196,7 @@
       "2d459bbc-bbd8-4f5a-9a69-3954e75a5337",
       "c5a628d7-d133-4bc7-98c7-87230e7fdb62",
       "3fb60fec-f763-4167-8722-5263a523f718",
+      "f5c88dc6-573b-456f-a2e5-a2002efb6f29",
       "65835cb3-2fad-4563-9684-34037a6bddd0",
       "6b491eb9-7f56-42ab-bb57-a5ba9e6ca0b4",
       "756035fa-6d96-4444-a2cb-cf5952c707a7",
@@ -209,9 +209,9 @@
       "44fb9dbb-8fc9-48d0-9d52-97afeebb926c"
      ]
     },
-    "b904915e-31b6-41cd-8575-b91533cf33d4": {
+    "081c64b4-afb8-422b-a39c-66a62753cb9d": {
      "title": "Strømbeskyttelse",
-     "id": "b904915e-31b6-41cd-8575-b91533cf33d4",
+     "id": "081c64b4-afb8-422b-a39c-66a62753cb9d",
      "references": [
       "b75af3f7-1eb4-4cdc-b3f0-da1f699e65d7",
       "c021b2b0-67c7-45cb-a7ae-9dbf5dba954e",
@@ -222,9 +222,21 @@
       "44fb9dbb-8fc9-48d0-9d52-97afeebb926c"
      ]
     },
-    "e036b38b-f09f-4d86-9b22-6cecf1e92351": {
+    "decc0f37-7d1e-4c57-a00e-35ac47c988f2": {
+     "title": "Byggekvalitet og værdi",
+     "id": "decc0f37-7d1e-4c57-a00e-35ac47c988f2",
+     "references": [
+      "7932e986-e1a0-4e38-aa87-73932b2583df",
+      "41991c24-cafd-4883-9c49-b7c16bc699e3",
+      "e0af9fa6-2e7b-44f8-acbf-a0c3cb71cde5",
+      "63086e48-a31e-49ac-b399-ef7c8fb3e4ea",
+      "83cafcb1-d049-481c-a840-fff544396994",
+      "e754e016-ac5a-4179-9e99-2f282d87829e"
+     ]
+    },
+    "5c363d26-fc91-460a-a55d-4df5f9dd2e1a": {
      "title": "Billedkvalitet",
-     "id": "e036b38b-f09f-4d86-9b22-6cecf1e92351",
+     "id": "5c363d26-fc91-460a-a55d-4df5f9dd2e1a",
      "references": [
       "90ee315d-4539-40c0-bde7-e1beed39acf0",
       "b1a4e749-9aeb-4294-b1f3-b1a99dcbe4c9",
