@@ -34,7 +34,7 @@
    "7106c1d7-1314-47ef-bef9-0c113b585fd8",
    "b03e9546-36c7-4b0a-b626-35d660b03c64"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 258820,
@@ -43,6 +43,7 @@
   "brandPage": "/marker/sony/",
   "recommendedProducts": {
    "productCodes": [
+    "SONYUBPX700KBX",
     "ARGFORTEA5WIFIX",
     "ARGFORTEA55WIFIX",
     "ARGSA2X",
@@ -53,8 +54,7 @@
     "DALIOPTICON6MK2",
     "NADC700V2",
     "BWM1BR",
-    "BWASW610M",
-    "SONYUBPX700KBX"
+    "BWASW610M"
    ],
    "isOutlet": "false"
   },
@@ -305,12 +305,11 @@
      "productCode": "SONYK55XR8M2B"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 9,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -582,12 +581,11 @@
      "productCode": "SONYK65XR8M2B"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 14,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -732,55 +730,48 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SonyKXR82B leverer en fremragende OLED-oplevelse med varme, naturlige farver, dyb sort, skarpe detaljer og et medrivende billede, der næsten kan give biograffornemmelse. Menuer og opsætning er generelt ligetil, med stærk Smart TV-ydeevne, nyttige apps og gode tilslutningsmuligheder, selv om enkelte begrænsninger i kompatibilitet og opsætning forekommer. Den indbyggede lyd er udmærket for et TV, mens en soundbar eller surround-anlæg giver et fyldigere, mere slagkraftigt og mere biograflignende resultat.",
+   "summary": "Dette Sony OLED-TV roses bredt for et usædvanligt skarpt, naturligt og farverigt billede med dybe sorte nuancer, stærk kontrast og god lysstyrke. Opsætning og daglig betjening er generelt enkel, mens smart-platformen og tilslutningsmulighederne er nyttige; enkelte brugere finder dog den første indstilling vanskelig og savner understøttelse af visse formater eller apps. De indbyggede højttalere er acceptable til gode for et TV, men en soundbar eller surround-anlæg giver en mere omsluttende, slagkraftig og biograflignende lydoplevelse.",
    "headlines": {
-    "sharp, natural and immersive picture": {
-     "sentimentAnalysis": "Anmeldelserne roser det usædvanligt skarpe, klare og naturlige billede med levende farver og en stærk helhedsoplevelse.",
-     "simpleTitle": "Skarpt, naturligt og medrivende billede",
+    "sharp, natural and colorful picture": {
+     "sentimentAnalysis": "Anmeldelserne roser samstemmigt billedet for skarphed, naturlig gengivelse, stærke farver, dybe sorte nuancer og fremragende kvalitet.",
+     "simpleTitle": "Skarpt, naturligt og farverigt billede",
      "bias": "positive",
-     "key": "sharp_natural_picture",
-     "groupId": "c5ff5617-b109-4a7a-a76f-17c33d53afab"
+     "key": "picture",
+     "groupId": "349e05c8-bfdb-4def-93cb-ed3606cb6d8a"
     },
-    "simple menus and setup": {
-     "sentimentAnalysis": "De fleste kommentarer beskriver opsætning, menuer og daglig betjening som enkel og logisk.",
-     "simpleTitle": "Enkle menuer og opsætning",
+    "easy everyday operation": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver opsætning, menuer og betjening som enkel og logisk.",
+     "simpleTitle": "Nem daglig betjening",
      "bias": "positive",
-     "key": "simple_operation",
-     "groupId": "89fa4f7a-f39e-49a9-b414-95e8127c7731"
+     "key": "usability",
+     "groupId": "5875af2d-a21a-4b18-96b3-c353965b5530"
     },
-    "built-in sound is good, but external audio is better": {
-     "sentimentAnalysis": "Flere anmeldelser oplever TV-lyden som overraskende god, men anbefaler en soundbar, et surround-anlæg eller en ekstern løsning for en mere kraftfuld filmoplevelse.",
-     "simpleTitle": "Den indbyggede lyd er god, men ekstern lyd er bedre",
+    "soundbar or surround system enhances the experience": {
+     "sentimentAnalysis": "Anmeldelserne anbefaler eksternt lydudstyr, der kan matche det fremragende billede og skabe et mere omsluttende, biograflignende lydbillede.",
+     "simpleTitle": "Soundbar eller surround-anlæg løfter oplevelsen",
      "bias": "positive",
-     "key": "external_audio_better",
-     "groupId": "6e400199-5976-40fb-bc80-421ae9b0f2d7"
+     "key": "sound",
+     "groupId": "e328accf-ba11-4c22-aef9-e1585d43806b"
     },
     "deep blacks and strong HDR performance": {
-     "sentimentAnalysis": "OLED-panelet fremhæves for stor dybde, overbevisende sort og fremragende SDR- og HDR-gengivelse efter mindre justeringer.",
-     "simpleTitle": "Dyb sort og stærk HDR-ydeevne",
+     "sentimentAnalysis": "Flere anmeldelser fremhæver specifikt den imponerende dybde, de sorte nuancer samt den fremragende SDR- og HDR-billedkvalitet.",
+     "simpleTitle": "Dybe sorte nuancer og stærk HDR-ydeevne",
      "bias": "positive",
-     "key": "deep_blacks_hdr",
-     "groupId": "c5ff5617-b109-4a7a-a76f-17c33d53afab"
+     "key": "picture",
+     "groupId": "349e05c8-bfdb-4def-93cb-ed3606cb6d8a"
     },
-    "some setup and compatibility limitations": {
-     "sentimentAnalysis": "Enkelte anmeldelser nævner vanskelig indledende justering, få understøttede videostandarder eller en utilgængelig app.",
-     "simpleTitle": "Visse begrænsninger i opsætning og kompatibilitet",
+    "initial adjustment can be difficult": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne bemærker, at optimale indstillinger kræver en indsats, eller at vejledningen er utilstrækkelig.",
+     "simpleTitle": "Den første indstilling kan være vanskelig",
      "bias": "negative",
-     "key": "setup_limitations",
-     "groupId": "89fa4f7a-f39e-49a9-b414-95e8127c7731"
-    },
-    "fast smart-TV performance and useful apps": {
-     "sentimentAnalysis": "Smart-platformen roses for hurtig behandling, et godt udvalg af apps og praktisk Bluetooth-lydtilslutning.",
-     "simpleTitle": "Hurtig Smart TV-ydeevne og nyttige apps",
-     "bias": "positive",
-     "key": "smart_performance_apps",
-     "groupId": "c5b77a84-5ccc-49cb-a785-1e6fa9d00b4c"
+     "key": "usability",
+     "groupId": "5875af2d-a21a-4b18-96b3-c353965b5530"
     }
    },
    "grouping": {
-    "c5ff5617-b109-4a7a-a76f-17c33d53afab": {
+    "349e05c8-bfdb-4def-93cb-ed3606cb6d8a": {
      "title": "Billedkvalitet",
-     "id": "c5ff5617-b109-4a7a-a76f-17c33d53afab",
+     "id": "349e05c8-bfdb-4def-93cb-ed3606cb6d8a",
      "references": [
       "0b1048ba-5a9e-409a-aefa-c9cad70501f5",
       "ab3e1355-4b21-4e83-9d12-c80ecc571115",
@@ -810,9 +801,9 @@
       "ce782a4c-cc9d-49c9-86c1-f86dabb9ba7a"
      ]
     },
-    "89fa4f7a-f39e-49a9-b414-95e8127c7731": {
+    "5875af2d-a21a-4b18-96b3-c353965b5530": {
      "title": "Opsætning og betjening",
-     "id": "89fa4f7a-f39e-49a9-b414-95e8127c7731",
+     "id": "5875af2d-a21a-4b18-96b3-c353965b5530",
      "references": [
       "ab3e1355-4b21-4e83-9d12-c80ecc571115",
       "9e2320be-1c84-48db-b6b4-c1ae93acb355",
@@ -826,9 +817,9 @@
       "cba9df30-84fb-405f-bc67-0f7056bba9c2"
      ]
     },
-    "6e400199-5976-40fb-bc80-421ae9b0f2d7": {
+    "e328accf-ba11-4c22-aef9-e1585d43806b": {
      "title": "Lydkvalitet",
-     "id": "6e400199-5976-40fb-bc80-421ae9b0f2d7",
+     "id": "e328accf-ba11-4c22-aef9-e1585d43806b",
      "references": [
       "0b1048ba-5a9e-409a-aefa-c9cad70501f5",
       "f12e2c11-b849-4477-b3b3-3452a3a0c312",
@@ -839,18 +830,6 @@
       "22fd646a-5bfb-48bd-975f-55346ae1be34",
       "5c632bf7-13cf-40f8-b935-66173a9ca56d",
       "ce782a4c-cc9d-49c9-86c1-f86dabb9ba7a"
-     ]
-    },
-    "c5b77a84-5ccc-49cb-a785-1e6fa9d00b4c": {
-     "title": "Smartfunktioner og tilslutninger",
-     "id": "c5b77a84-5ccc-49cb-a785-1e6fa9d00b4c",
-     "references": [
-      "b69d4d2e-c04f-4f5d-b239-89e64e53a6a1",
-      "f04239a4-91de-41ec-a0ff-9d3fd31a47a4",
-      "be11b2c5-cee3-4f85-bdc4-e6334b5d8bd3",
-      "c4b1fe4c-e49d-4432-9bd7-d54bc3971948",
-      "786cd672-e9f9-4cd5-9fb2-80f4869a2198",
-      "5c632bf7-13cf-40f8-b935-66173a9ca56d"
      ]
     }
    },

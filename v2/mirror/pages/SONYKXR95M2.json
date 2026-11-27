@@ -412,13 +412,14 @@
     "productCode": "SONYK65XR95M2",
     "ean": "4548736178137",
     "priceDetails": {
-     "priceValueId": 1150550,
-     "price": 29999,
-     "priceFormatted": "29.999,-",
+     "priceValueId": 1223072,
+     "price": 22222,
+     "priceFormatted": "22.222,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 29999
+     "unitPrice": 22222,
+     "unitPriceBefore": 22222
     },
     "techSpecs": [
      {
@@ -642,8 +643,8 @@
      "productCode": "SONYK65XR95M2"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager torsdag den 26. november",
-     "deliveryDate": "2026-11-26T00:00:00Z",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
      "inventoryStatusType": "notInStockAtpDate"
@@ -728,13 +729,14 @@
     "productCode": "SONYK75XR95M2",
     "ean": "4548736178090",
     "priceDetails": {
-     "priceValueId": 1150564,
-     "price": 34999,
-     "priceFormatted": "34.999,-",
+     "priceValueId": 1223086,
+     "price": 25999,
+     "priceFormatted": "25.999,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 34999
+     "unitPrice": 25999,
+     "unitPriceBefore": 25999
     },
     "techSpecs": [
      {
@@ -958,12 +960,11 @@
      "productCode": "SONYK75XR95M2"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Forventes på lager lørdag den 28. november",
+     "deliveryDate": "2026-11-28T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -1045,13 +1046,14 @@
     "productCode": "SONYK85XR95M2",
     "ean": "4548736178052",
     "priceDetails": {
-     "priceValueId": 1150576,
-     "price": 44999,
-     "priceFormatted": "44.999,-",
+     "priceValueId": 1223089,
+     "price": 33990,
+     "priceFormatted": "33.990,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 44999
+     "unitPrice": 33990,
+     "unitPriceBefore": 33990
     },
     "techSpecs": [
      {
@@ -1275,8 +1277,8 @@
      "productCode": "SONYK85XR95M2"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager fredag den 04. december",
-     "deliveryDate": "2026-12-04T00:00:00Z",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 14,
      "inventoryStatusType": "notInStockAtpDate"
@@ -1388,33 +1390,41 @@
   "variantNavigationTypeHeader": "Skærmstørrelse",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony Bravia 9 leverer en spektakulær og naturligt udseende billedkvalitet med levende farver, høj lysstyrke og fremragende ydeevne i lyse rum. Billedet føles fyldigt, detaljerigt og medrivende, mens TV'et også byder på imponerende indbygget lyd. Mindre forbehold omfatter en mat skærm, der kræver tilvænning, en sart antirefleksbelægning og lejlighedsvis hakken ved kamerabevægelser.",
+   "summary": "Sony Bravia 9 leverer et fremragende, varmt og medrivende billede med levende, men naturlige farver, høj 4K-lysstyrke og fremragende blooming-håndtering. Den matte skærm med antirefleksbehandling gør TV’et særligt velegnet til lyse rum, fordi kontrast og detaljer bevares med næsten ingen refleksioner. Den kraftfulde, klare lyd og den solide premium-fornemmelse fuldender en usædvanligt imponerende pakke.",
    "headlines": {
-    "vivid, natural colors and outstanding image quality": {
-     "sentimentAnalysis": "Anmeldelserne roser de levende, mættede og samtidig naturlige farver, den stærke 4K-lysstyrke, de fremragende detaljer og den enestående samlede billedkvalitet.",
-     "simpleTitle": "Levende, naturlige farver og fremragende billedkvalitet",
+    "vivid, natural picture with excellent colour and contrast": {
+     "sentimentAnalysis": "Anmelderne roser de levende, mættede og naturlige farver, den exceptionelle billedkvalitet, den stærke 4K-lysstyrke og den effektive blooming-håndtering.",
+     "simpleTitle": "Levende, naturligt billede med fremragende farver og kontrast",
      "bias": "positive",
-     "key": "picture_quality",
-     "groupId": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e"
+     "key": "picture-quality",
+     "groupId": "963583e9-c787-40b9-b9d2-f6961c679d24"
     },
     "excellent for bright rooms with minimal reflections": {
-     "sentimentAnalysis": "TV'et egner sig især til lyse stuer, hvor kontrast og detaljer bevares, mens refleksioner næsten forsvinder.",
-     "simpleTitle": "Fremragende til lyse rum med minimale refleksioner",
+     "sentimentAnalysis": "Den matte skærm og antirefleksydelsen vurderes som særligt velegnede til lyse rum og rum med meget dagslys.",
+     "simpleTitle": "Fremragende til lyse rum med næsten ingen refleksioner",
      "bias": "positive",
-     "key": "picture_quality",
-     "groupId": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e"
+     "key": "reflection-handling",
+     "groupId": "2908b2aa-f4d3-4403-a842-2c0dafa7c47e"
     }
    },
    "grouping": {
-    "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e": {
+    "963583e9-c787-40b9-b9d2-f6961c679d24": {
      "title": "Billedkvalitet",
-     "id": "3d269deb-8cf9-4f77-b340-5c1ab7a1bf1e",
+     "id": "963583e9-c787-40b9-b9d2-f6961c679d24",
      "references": [
       "60d35c46-aea3-40cd-990c-7622568a9301",
       "9eafade7-b8c0-43b8-a201-0bb5cf887aed",
       "de6fe5be-a07e-4868-a277-2caa129bfd7d",
-      "ccc3e148-9e24-4474-a0bc-0a03873191f6",
       "30c246d3-974d-43a0-aeeb-0570db75d9b5"
+     ]
+    },
+    "2908b2aa-f4d3-4403-a842-2c0dafa7c47e": {
+     "title": "Refleksionshåndtering",
+     "id": "2908b2aa-f4d3-4403-a842-2c0dafa7c47e",
+     "references": [
+      "9eafade7-b8c0-43b8-a201-0bb5cf887aed",
+      "de6fe5be-a07e-4868-a277-2caa129bfd7d",
+      "ccc3e148-9e24-4474-a0bc-0a03873191f6"
      ]
     }
    },

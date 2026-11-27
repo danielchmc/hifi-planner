@@ -128,7 +128,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 209,
+     "availableQuantity": 123,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -239,38 +239,39 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SOUNDCHARGERUSBC leverer hurtig og pålidelig opladning med en behageligt enkel anvendelse i hverdagen. Den kraftfulde ladeydelse fylder batterier hurtigt, mens den ligetil betjening gør oplevelsen ubesværet. Samlet set er værdien stærk, selv om USB-C-forbindelsen kan virke overfølsom, og prisen giver anledning til lidt tøven.",
+   "summary": "SOUNDCHARGERUSBC leverer imponerende hurtig og pålidelig opladning i et praktisk og enkelt design. Opladeren fylder batteriet helt op på meget kort tid og gør præcis det, den skal, hvilket gør produktet særligt attraktivt til prisen. Et følsomt USB-C-stik og spørgsmål om værdien sammenlignet med billigere alternativer med høj wattstyrke dæmper dog det ellers meget positive indtryk.",
    "headlines": {
-    "fast battery charging": {
-     "sentimentAnalysis": "Opladningen beskrives konsekvent som imponerende hurtig, også når batteriet skal fyldes helt på kort tid.",
-     "simpleTitle": "Hurtig batteriopladning",
+    "reliable, straightforward operation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver pålidelig drift og bekræfter, at opladeren udfører sin grundlæggende funktion som forventet.",
+     "simpleTitle": "Pålidelig og enkel funktion",
      "bias": "positive",
-     "key": "fast_charging",
-     "groupId": "e731debe-5d76-4a40-9a40-9d6855bd73fa"
+     "key": "reliable-operation",
+     "groupId": "d4292aed-5c09-4b71-b73f-e151d0704885"
     },
-    "simple, reliable operation": {
-     "sentimentAnalysis": "Laderen roses for at gøre præcis det, den skal, med enkel og pålidelig plug-and-charge-brug.",
-     "simpleTitle": "Enkel og pålidelig funktion",
+    "fast full charging": {
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående opladeren for hurtigt at lade batteriet helt op.",
+     "simpleTitle": "Hurtig fuld opladning",
      "bias": "positive",
-     "key": "reliable_operation",
-     "groupId": "638ef758-eb84-40a6-9241-05e5ce42eafe"
+     "key": "fast-charging",
+     "groupId": "24e50471-e286-4ba0-9628-74f33f0a7c4f"
     }
    },
    "grouping": {
-    "638ef758-eb84-40a6-9241-05e5ce42eafe": {
-     "title": "Funktionalitet",
-     "id": "638ef758-eb84-40a6-9241-05e5ce42eafe",
+    "d4292aed-5c09-4b71-b73f-e151d0704885": {
+     "title": "Ydeevne",
+     "id": "d4292aed-5c09-4b71-b73f-e151d0704885",
      "references": [
       "516365d7-e4e2-4dd2-9842-daff41ccdd4e",
       "999754a3-b7a4-4e9a-8bf9-121efabbe6cd",
       "cec1b138-0fe5-4bdd-b540-aa3a0aa657d0",
       "b24318b4-9d76-4897-a436-5875bfa571ea",
+      "d2699aba-1bb3-4106-b553-043d7a7c86c6",
       "053896de-48c5-4ab6-b15e-2da5d6109b4d"
      ]
     },
-    "e731debe-5d76-4a40-9a40-9d6855bd73fa": {
-     "title": "Ladehastighed",
-     "id": "e731debe-5d76-4a40-9a40-9d6855bd73fa",
+    "24e50471-e286-4ba0-9628-74f33f0a7c4f": {
+     "title": "Opladningshastighed",
+     "id": "24e50471-e286-4ba0-9628-74f33f0a7c4f",
      "references": [
       "8c0307e2-2263-4275-95a3-07b7a4843ced",
       "23e857b3-c0a8-4ff1-991a-373e690e44ba",

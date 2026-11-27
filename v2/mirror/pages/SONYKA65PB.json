@@ -306,8 +306,8 @@
      "productCode": "SONYK55A65PB"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "description": "Forventes på lager lørdag den 12. december",
+     "deliveryDate": "2026-12-12T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
      "inventoryStatusType": "notInStockAtpDate"
@@ -463,8 +463,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
-     "availableQuantity": 3,
+     "numberOfStoresExperience": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -615,12 +615,11 @@
      "productCode": "SONYK77A65PB"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 3,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -770,11 +769,11 @@
      "productCode": "SONYK83A65PB"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

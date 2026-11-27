@@ -184,8 +184,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 519,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 442,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -257,127 +257,126 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONPORT er en kompakt og særdeles effektiv bro mellem pladespillere, stereoanlæg og Sonos-højttalere, så vinyl og andre ældre lydkilder kan bruges i hele hjemmet. Opsætningen er som regel hurtig, og integrationen fungerer problemfrit, mens lyden ofte beskrives som fyldig, detaljeret, rummelig og omsluttende. De største forbehold handler om den høje pris og en app, der i visse opsætninger kan føles forvirrende, begrænset eller ustabil.",
+   "summary": "SONPORT er en kompakt og pålidelig bro, der bringer pladespillere, stereoanlæg, DJ-udstyr og andre analoge kilder ind i Sonos-økosystemet. Opsætningen er som regel hurtig og problemfri, mens lyden ofte beskrives som fyldig, detaljeret, rummelig og medrivende. De største forbehold gælder den høje pris, lejlighedsvise problemer med app og opsætning, kompatibilitetsbegrænsninger samt enkelte forbindelses- og lydstyrkeproblemer.",
    "headlines": {
-    "brings vinyl and legacy equipment into the Sonos system": {
-     "sentimentAnalysis": "Anmelderne værdsætter Port som en enkel måde at distribuere pladespiller-, cd- og anden ældre lyd gennem Sonos-højttalere.",
-     "simpleTitle": "Bringer vinyl og ældre udstyr ind i Sonos-systemet",
+    "brings analogue equipment into the Sonos system": {
+     "sentimentAnalysis": "SONPORT værdsættes især for at gøre pladespillere, stereoanlæg og andre analoge kilder tilgængelige i hele Sonos-opsætningen.",
+     "simpleTitle": "Bringer analogt udstyr ind i Sonos-systemet",
      "bias": "positive",
-     "key": "analog",
-     "groupId": "8640afe5-1e13-49b1-821c-55bd6503145e"
+     "key": "analogue-integration",
+     "groupId": "7d5a77ab-0776-4dc4-aeb7-9b4658301b42"
     },
-    "usually quick and seamless to install": {
-     "sentimentAnalysis": "De fleste anmeldelser roser den ligetil opsætning, den nemme Sonos-forbindelse og den pålidelige integration med eksisterende systemer.",
-     "simpleTitle": "Som regel hurtig og problemfri opsætning",
+    "setup is generally quick and straightforward": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver opsætningen som enkel, hurtig og stort set automatisk efter tilslutning.",
+     "simpleTitle": "Opsætningen er som regel hurtig og enkel",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "0214045d-55e3-49a8-95ae-da10f9e49c0c"
+     "key": "easy-setup",
+     "groupId": "5db530ce-09eb-41ba-8ce3-61981d649198"
     },
-    "app navigation and compatibility can be frustrating": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer forvirrende appvalg, svært tilgængelige kilder, begrænset kontrol og kompatibilitetsproblemer på tværs af app- og hardwaregenerationer.",
-     "simpleTitle": "Appens navigation og kompatibilitet kan være frustrerende",
+    "the price feels too high": {
+     "sentimentAnalysis": "En tilbagevendende kritik er, at SONPORT trods sin nytteværdi koster mere end forventet i forhold til funktionerne.",
+     "simpleTitle": "Prisen føles for høj",
      "bias": "negative",
-     "key": "app",
-     "groupId": "2bcb07a3-2a7f-49ba-a184-268bf2fc10f4"
+     "key": "high-price",
+     "groupId": "e528a988-6cd7-4486-ab84-72a9b6eedead"
     },
-    "rich, detailed and spacious sound": {
-     "sentimentAnalysis": "De stærkeste lydvurderinger beskriver en fyldigere, mere detaljeret, rummelig og omsluttende gengivelse, hvor nogle oplever en tydelig forbedring i forhold til den ældre Connect.",
-     "simpleTitle": "Fyldig, detaljeret og rummelig lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "8f5ce788-5082-4be3-ac27-1a60dc738fa1"
-    },
-    "high price limits the value proposition": {
-     "sentimentAnalysis": "En tilbagevendende kritik er, at Porten er for dyr, selv om nytte og ydeevne anerkendes.",
-     "simpleTitle": "Den høje pris svækker værdien",
+    "the Sonos app can be confusing": {
+     "sentimentAnalysis": "Flere anmeldelser oplever appen som uintuitiv, især ved valg af indgange, opsætning eller håndtering af ældre Sonos-produkter.",
+     "simpleTitle": "Sonos-appen kan være forvirrende",
      "bias": "negative",
-     "key": "price",
-     "groupId": "fcadbbb1-e8cc-43fb-bc4c-83075794f851"
+     "key": "app-friction",
+     "groupId": "c5d5f7b7-9dea-4884-a2b2-f528202365a2"
+    },
+    "rich, detailed and immersive sound": {
+     "sentimentAnalysis": "Lyden roses for at være fyldig, rummelig og detaljeret samt for at give en medrivende musikoplevelse.",
+     "simpleTitle": "Fyldig, detaljeret og medrivende lyd",
+     "bias": "positive",
+     "key": "rich-sound",
+     "groupId": "cef03b0e-a873-4d3e-b86a-58a6252abe7c"
     }
    },
    "grouping": {
-    "8640afe5-1e13-49b1-821c-55bd6503145e": {
-     "title": "Analog tilslutning",
-     "id": "8640afe5-1e13-49b1-821c-55bd6503145e",
+    "7d5a77ab-0776-4dc4-aeb7-9b4658301b42": {
+     "title": "Forbindelse og integration",
+     "id": "7d5a77ab-0776-4dc4-aeb7-9b4658301b42",
      "references": [
       "d50f71c9-b977-48c5-9fc1-f1c0cc3f48d6",
+      "60f11ec5-7823-4fd3-8117-d0abf2ae8bca",
       "c1bb9926-0726-4c42-b23c-5f84c54b4691",
       "ae5effa3-23bf-4d33-9644-50424a93f1c7",
+      "508246b3-1885-4706-98ff-2c6f7370a57c",
+      "4afb35e6-942a-49a0-9901-ad042ce1c9ed",
       "1270393b-187d-4b4a-a715-2d4feca36c71",
-      "0058b518-6fc2-40bb-a0ee-a6c7e1929157",
-      "5e7af1c7-1be3-4fc9-a94c-45697294e327",
+      "b8760086-d204-4e64-b742-e730a68ce06c",
       "07ecb8bb-ca59-4399-a3d7-cb328c712f08",
+      "52e5e196-23d7-44a2-a1a7-3ac4b7abadb0",
       "b77d3ade-5372-4279-b11b-ed6bb69e8b8a",
       "b52d87ca-b153-46bb-a223-cd60e1318720",
       "a0a1dda1-c2eb-4e94-a755-c4c34e290976",
       "247f42fc-2909-47fb-bc3a-97827ee1f656",
       "af062b60-4e37-412f-b40c-920f094bc541",
+      "85113252-8e0c-41f3-add8-21237f8c1957",
       "07a0a736-7e5c-49f3-8cc8-9fc61a4290dd",
       "658825a6-69bf-41cb-8c71-abd2cdcd39e9",
       "a52bd703-6a70-4878-98a4-9567b64e79ff",
+      "7d9c1096-4450-479b-901c-0b1d8379218e",
+      "17ecf16e-bb66-499c-a586-f2cd8b3cbd2d",
+      "c2c2e97d-eca7-40fa-97a7-76675994ce9b",
       "c8d04ee7-6fd7-491f-9a7d-c109f5e334a0",
+      "df245af8-7a7b-4022-8b45-4876bb40db97",
+      "8821aaab-a649-4f2a-a7af-f64c41d86976",
       "9baedcbf-2d5e-46d3-951a-817b6ff77eb4",
       "dac23f73-51b6-4eb6-9140-a7bfcc13ffca",
+      "494f24aa-e9cc-4b4c-af60-00c5d3f46c5d",
       "de60e2b1-b4f5-4452-90c0-b53b4712aaf4"
      ]
     },
-    "0214045d-55e3-49a8-95ae-da10f9e49c0c": {
-     "title": "Opsætning og integration",
-     "id": "0214045d-55e3-49a8-95ae-da10f9e49c0c",
-     "references": [
-      "60f11ec5-7823-4fd3-8117-d0abf2ae8bca",
-      "508246b3-1885-4706-98ff-2c6f7370a57c",
-      "afd1702c-3bd2-49a0-8567-1532f50f23b2",
-      "4afb35e6-942a-49a0-9901-ad042ce1c9ed",
-      "c42e0fcf-616f-468d-8304-2e525831bdc3",
-      "c43de916-8fa3-4e02-a4cd-77bcbbdda7bd",
-      "e97f4f67-df47-480a-a4b3-d32f9a6a37a7",
-      "52e5e196-23d7-44a2-a1a7-3ac4b7abadb0",
-      "a0a1dda1-c2eb-4e94-a755-c4c34e290976",
-      "5d8303d8-2a91-46a3-86f5-94ca1cf68410",
-      "2ef2168e-dd82-41f3-bb16-ec1befad4b2a",
-      "24ffe8e7-4373-4a9f-8ac5-eaf399dcbb28",
-      "be97a091-6b2d-439b-b1c9-471ed7cc79ee",
-      "330b37f1-02ad-474b-805f-3653d569b6b3",
-      "b0451872-cde9-4edb-9d72-000d5cda12ac",
-      "195958d5-9ad4-49ca-9eed-ccddd67d5522"
-     ]
-    },
-    "2bcb07a3-2a7f-49ba-a184-268bf2fc10f4": {
-     "title": "Appens brugervenlighed",
-     "id": "2bcb07a3-2a7f-49ba-a184-268bf2fc10f4",
+    "5db530ce-09eb-41ba-8ce3-61981d649198": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "5db530ce-09eb-41ba-8ce3-61981d649198",
      "references": [
       "3273d9b1-858b-4d6c-8c9f-4384d3e0729e",
       "5aef2ad0-4559-46e9-87c2-13c7af4f336e",
+      "c42e0fcf-616f-468d-8304-2e525831bdc3",
       "a42dbd14-fefc-40f1-95d8-707ae649f603",
+      "52994319-9efd-40df-86f0-ac35ed05f13e",
+      "95bbb57f-a218-49f0-88b6-1d4d3a6e1970",
+      "c43de916-8fa3-4e02-a4cd-77bcbbdda7bd",
+      "e97f4f67-df47-480a-a4b3-d32f9a6a37a7",
+      "7213a9f0-2610-419c-9ebd-02209fbb40f0",
+      "a0a1dda1-c2eb-4e94-a755-c4c34e290976",
+      "af062b60-4e37-412f-b40c-920f094bc541",
+      "07a0a736-7e5c-49f3-8cc8-9fc61a4290dd",
+      "17ecf16e-bb66-499c-a586-f2cd8b3cbd2d",
+      "330b37f1-02ad-474b-805f-3653d569b6b3",
+      "b0451872-cde9-4edb-9d72-000d5cda12ac",
+      "2ef2168e-dd82-41f3-bb16-ec1befad4b2a",
+      "be97a091-6b2d-439b-b1c9-471ed7cc79ee",
+      "64dc2276-8f74-4d12-849c-638b3d8d754b"
+     ]
+    },
+    "c5d5f7b7-9dea-4884-a2b2-f528202365a2": {
+     "title": "App-oplevelse",
+     "id": "c5d5f7b7-9dea-4884-a2b2-f528202365a2",
+     "references": [
+      "3273d9b1-858b-4d6c-8c9f-4384d3e0729e",
+      "5aef2ad0-4559-46e9-87c2-13c7af4f336e",
       "07ecb8bb-ca59-4399-a3d7-cb328c712f08",
       "6b50ab04-3a78-4f89-9b9c-0c57896ecd55",
+      "52e5e196-23d7-44a2-a1a7-3ac4b7abadb0",
       "2df6fb37-42ba-4fc7-91ca-43910e83de94",
       "7213a9f0-2610-419c-9ebd-02209fbb40f0",
+      "5ca6d5ff-f636-4239-b0b3-a945f5674c26",
       "1a500edd-8931-4e1b-815f-22f78b5fdcb3",
       "782821e4-04dc-4b56-ae8f-79cd12deea10",
-      "c7b7a8fb-f57e-4848-afd2-88349a51adb2",
-      "17ecf16e-bb66-499c-a586-f2cd8b3cbd2d"
+      "c7b7a8fb-f57e-4848-afd2-88349a51adb2"
      ]
     },
-    "8f5ce788-5082-4be3-ac27-1a60dc738fa1": {
-     "title": "Lydkvalitet",
-     "id": "8f5ce788-5082-4be3-ac27-1a60dc738fa1",
+    "e528a988-6cd7-4486-ab84-72a9b6eedead": {
+     "title": "Pris og værdi",
+     "id": "e528a988-6cd7-4486-ab84-72a9b6eedead",
      "references": [
-      "b5356ecf-0845-442c-b031-5e896e030ab6",
-      "4ec6ae6f-03cd-471f-9829-3e8a40a6db07",
-      "d08a0f46-089a-45e6-9264-98d86acad157",
-      "af020bbd-cb78-4571-b793-e3319df8a6b9",
-      "d0fb9636-ee0e-4b6a-b46e-68441468c681",
-      "6f69100e-1d27-47f5-836b-514b1a29756c",
-      "81809305-42dc-497d-b25c-f8ed5d7e2e3e",
-      "de60e2b1-b4f5-4452-90c0-b53b4712aaf4"
-     ]
-    },
-    "fcadbbb1-e8cc-43fb-bc4c-83075794f851": {
-     "title": "Pris",
-     "id": "fcadbbb1-e8cc-43fb-bc4c-83075794f851",
-     "references": [
+      "3273d9b1-858b-4d6c-8c9f-4384d3e0729e",
       "113da2ea-28d8-4f30-a2af-1701c6ea0d4e",
       "0058b518-6fc2-40bb-a0ee-a6c7e1929157",
       "b77d3ade-5372-4279-b11b-ed6bb69e8b8a",
@@ -385,7 +384,20 @@
       "fcf21049-d5b9-4cba-8252-abc068436b1f",
       "657918b7-50c8-44aa-86bf-80ddfae7bd60",
       "ce84b672-7566-4949-91c0-9303c9c3fba8",
-      "cffe9d92-7a2b-43c5-ace5-5adadf4e36b"
+      "cffe9d92-7a2b-43c5-ace5-5adadf4e36b6"
+     ]
+    },
+    "cef03b0e-a873-4d3e-b86a-58a6252abe7c": {
+     "title": "Lydkvalitet",
+     "id": "cef03b0e-a873-4d3e-b86a-58a6252abe7c",
+     "references": [
+      "b5356ecf-0845-442c-b031-5e896e030ab6",
+      "4ec6ae6f-03cd-471f-9829-3e8a40a6db07",
+      "d08a0f46-089a-45e6-9264-98d86acad157",
+      "af020bbd-cb78-4571-b793-e3319df8a6b9",
+      "d0fb9636-ee0e-4b6a-b46e-68441468c681",
+      "6f69100e-1d27-47f5-836b-514b1a29756c",
+      "de60e2b1-b4f5-4452-90c0-b53b4712aaf4"
      ]
     }
    },

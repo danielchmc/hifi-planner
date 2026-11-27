@@ -127,19 +127,14 @@
      "priceValueId": 1214859,
      "price": 2999,
      "priceFormatted": "2.999,-",
-     "priceBefore": 3749,
-     "priceBeforeFormatted": "3.749,-",
-     "priceSavingsFormatted": "750,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2999,
-     "unitPriceBefore": 3749
+     "unitPrice": 2999
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -188,8 +183,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 248,
+     "numberOfStoresExperience": 27,
+     "availableQuantity": 86,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -260,19 +255,14 @@
      "priceValueId": 1214865,
      "price": 2999,
      "priceFormatted": "2.999,-",
-     "priceBefore": 3749,
-     "priceBeforeFormatted": "3.749,-",
-     "priceSavingsFormatted": "750,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2999,
-     "unitPriceBefore": 3749
+     "unitPrice": 2999
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -321,8 +311,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 218,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 60,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -391,20 +381,16 @@
     "price": {
      "price": 5578,
      "priceFormatted": "5.578,-",
-     "priceBefore": 7439,
-     "priceBeforeFormatted": "7.439,-",
-     "priceSavingsFormatted": "1.861,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 5578,
-     "unitPriceBefore": 7439
+     "unitPriceBefore": 5578
     },
     "image": "https://images.hifiklubben.com/image/3bc984e4-8f99-4f2f-b2ea-0cffff289abe",
     "ribbons": [
      {
-      "text": "Spar 25%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -418,138 +404,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 7827,
-     "priceFormatted": "7.827,-",
-     "priceBefore": 10437,
-     "priceBeforeFormatted": "10.437,-",
-     "priceSavingsFormatted": "2.610,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 7827,
-     "unitPriceBefore": 10437
-    },
-    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
-    "ribbons": [
-     {
-      "text": "Spar 25%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos Beam (Gen 2) + Era 100 SL + Sub Mini",
-    "url": "/beam-era100sl-sub/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 11627,
-     "priceFormatted": "11.627,-",
-     "priceBefore": 14996,
-     "priceBeforeFormatted": "14.996,-",
-     "priceSavingsFormatted": "3.369,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 11627,
-     "unitPriceBefore": 14996
-    },
-    "image": "https://images.hifiklubben.com/image/060bd159-9729-442e-b61c-f1d1da6539d6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub Mini + Era 100 SL",
-    "url": "/ultra-mini-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 9378,
-     "priceFormatted": "9.378,-",
-     "priceBefore": 11998,
-     "priceBeforeFormatted": "11.998,-",
-     "priceSavingsFormatted": "2.620,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 9378,
-     "unitPriceBefore": 11998
-    },
-    "image": "https://images.hifiklubben.com/image/bab7be79-4d41-4b8f-9bf4-f42cbcd8fe5e",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub Mini",
-    "url": "/sonarcultra-sonsubmini/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 6577,
-     "priceFormatted": "6.577,-",
-     "priceBefore": 8076,
-     "priceBeforeFormatted": "8.076,-",
-     "priceSavingsFormatted": "1.499,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 6577,
-     "unitPriceBefore": 8076
-    },
-    "image": "https://images.hifiklubben.com/image/9ac4a085-8c49-4676-b980-06bd0c5054ce",
-    "ribbons": [
-     {
-      "text": "Spar 19%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos-Ray-Era-100-SL-Sub-Mini",
-    "url": "/ray-era100sl-mini/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
      "price": 8958,
      "priceFormatted": "8.958,-",
-     "priceBefore": 10819,
-     "priceBeforeFormatted": "10.819,-",
-     "priceSavingsFormatted": "1.861,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 8958,
-     "unitPriceBefore": 10819
+     "unitPriceBefore": 8958
     },
     "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
     "ribbons": [
      {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -565,20 +431,16 @@
     "price": {
      "price": 12758,
      "priceFormatted": "12.758,-",
-     "priceBefore": 15378,
-     "priceBeforeFormatted": "15.378,-",
-     "priceSavingsFormatted": "2.620,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12758,
-     "unitPriceBefore": 15378
+     "unitPriceBefore": 12758
     },
     "image": "https://images.hifiklubben.com/image/6319c4d7-b6d3-40b7-8f70-eed20e4b463d",
     "ribbons": [
      {
-      "text": "Spar 17%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -592,22 +454,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 4328,
-     "priceFormatted": "4.328,-",
-     "priceBefore": 5078,
-     "priceBeforeFormatted": "5.078,-",
-     "priceSavingsFormatted": "750,-",
+     "price": 9378,
+     "priceFormatted": "9.378,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 4328,
-     "unitPriceBefore": 5078
+     "unitPrice": 9378,
+     "unitPriceBefore": 9378
     },
-    "image": "https://images.hifiklubben.com/image/33db37d2-4da5-426c-a704-643b87f34ff6",
+    "image": "https://images.hifiklubben.com/image/bab7be79-4d41-4b8f-9bf4-f42cbcd8fe5e",
     "ribbons": [
      {
-      "text": "Spar 15%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -615,86 +473,54 @@
       }
      }
     ],
-    "title": "Sonos Ray + Sub Mini",
-    "url": "/ray_submini_1/"
+    "title": "Arc Ultra + Sub Mini",
+    "url": "/sonarcultra-sonsubmini/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 7708,
-     "priceFormatted": "7.708,-",
-     "priceBefore": 8458,
-     "priceBeforeFormatted": "8.458,-",
-     "priceSavingsFormatted": "750,-",
+     "price": 11627,
+     "priceFormatted": "11.627,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 7708,
-     "unitPriceBefore": 8458
+     "unitPrice": 11627,
+     "unitPriceBefore": 11776
     },
-    "image": "https://images.hifiklubben.com/image/9ac4a085-8c49-4676-b980-06bd0c5054ce",
-    "ribbons": [
-     {
-      "text": "Spar 9%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Sonos-Ray-Era-100-Sub-Mini",
-    "url": "/ray-era100-mini/"
+    "image": "https://images.hifiklubben.com/image/060bd159-9729-442e-b61c-f1d1da6539d6",
+    "title": "Arc Ultra + Sub Mini + Era 100 SL",
+    "url": "/ultra-mini-era100sl/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 8689,
-     "priceFormatted": "8.689,-",
-     "priceBefore": 9439,
-     "priceBeforeFormatted": "9.439,-",
-     "priceSavingsFormatted": "750,-",
+     "price": 7827,
+     "priceFormatted": "7.827,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 8689,
-     "unitPriceBefore": 9439
+     "unitPrice": 7827,
+     "unitPriceBefore": 7976
     },
-    "image": "https://images.hifiklubben.com/image/5bee8251-e304-4518-b071-e434a9b00652",
-    "ribbons": [
-     {
-      "text": "Spar 8%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Beam Ultra + Sub Mini",
-    "url": "/sonbeamultra-submini/"
+    "image": "https://images.hifiklubben.com/image/3e175f28-3c5f-4d98-8381-87bde5426336",
+    "title": "Sonos Beam (Gen 2) + Era 100 SL + Sub Mini",
+    "url": "/beam-era100sl-sub/"
    },
    {
     "modelType": "Soundbar system/pakke",
     "price": {
      "price": 12069,
      "priceFormatted": "12.069,-",
-     "priceBefore": 12819,
-     "priceBeforeFormatted": "12.819,-",
-     "priceSavingsFormatted": "750,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12069,
-     "unitPriceBefore": 12819
+     "unitPriceBefore": 12069
     },
     "image": "https://images.hifiklubben.com/image/2482252b-9ba2-40fd-96ec-48b35a8cb4b7",
     "ribbons": [
      {
-      "text": "Spar 6%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -704,59 +530,125 @@
     ],
     "title": "Beam Ultra + Era 100 + Sub Mini",
     "url": "/sonbeamultra-era100-submini/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 8689,
+     "priceFormatted": "8.689,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8689,
+     "unitPriceBefore": 8689
+    },
+    "image": "https://images.hifiklubben.com/image/5bee8251-e304-4518-b071-e434a9b00652",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Beam Ultra + Sub Mini",
+    "url": "/sonbeamultra-submini/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONOS Sub Mini roses bredt for sin varme, kontante og overraskende dybe bas, som gør musik og film fyldigere, bredere og mere medrivende. Det kompakte design passer godt i små og mellemstore rum, mens integrationen med Beam, Arc, Era og andre Sonos-højttalere som regel er problemfri. Opsætning og appstyring er ofte enkel, men lejlighedsvise Wi-Fi- eller appproblemer, den høje pris og mindre dybde i større rum nævnes som forbehold.",
+   "summary": "SONOS SUBMINI leverer varm, slagkraftig og overraskende dyb bas fra et kompakt kabinet og skaber et fyldigere, mere omsluttende lydbillede til musik og film. Integrationen med Beam, Arc, Era og andre Sonos-højttalere er som regel problemfri, med enkel app-styring og stærk ydelse i små og mellemstore rum. De største forbehold gælder lejlighedsvise problemer med app eller forbindelse, en pris som nogle synes er høj, samt mindre dybde end den større Sub i større rum.",
    "headlines": {
-    "warm, deep and powerful bass": {
-     "sentimentAnalysis": "Sub Mini tilfører konsekvent en fyldigere, dybere og kraftigere bas end de tilsluttede højttalere alene.",
-     "simpleTitle": "Varm, dyb og kraftfuld bas",
+    "easy to add to an existing Sonos system": {
+     "sentimentAnalysis": "De fleste anmeldelser beskriver opsætning og integration i et eksisterende Sonos-system som hurtig, enkel og pålidelig.",
+     "simpleTitle": "Nem at tilføje til et eksisterende Sonos-system",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
+     "key": "integration",
+     "groupId": "4ccfaa19-048f-4751-a932-b6fa51a5a1f7"
     },
-    "easy Sonos integration": {
-     "sentimentAnalysis": "De fleste beskriver hurtig tilslutning og problemfri integration med eksisterende Sonos-systemer og Sonos-appen.",
-     "simpleTitle": "Nem Sonos-integration",
+    "warm, deep bass transforms music and films": {
+     "sentimentAnalysis": "Anmeldelserne roser Sub Mini for dyb, kontrolleret og kraftfuld bas, der gør musik og film fyldigere og mere omsluttende.",
+     "simpleTitle": "Varm og dyb bas forvandler musik og film",
      "bias": "positive",
-     "key": "setup_integration",
-     "groupId": "229af36b-bc69-42a0-b4c2-ff126e887bbe"
+     "key": "sound",
+     "groupId": "b0f189fa-ee4a-460a-9714-1e0e91ffab37"
     },
-    "a more immersive music and film experience": {
-     "sentimentAnalysis": "Den ekstra dybde forbedrer indlevelse, surroundeffekt og fyldig lyd ved film, tv og musik.",
-     "simpleTitle": "En mere medrivende musik- og filmoplevelse",
+    "compact design suits smaller rooms": {
+     "sentimentAnalysis": "Anmeldelserne roser gentagne gange det diskrete, flotte og kompakte design, især til mindre rum og fleksibel placering.",
+     "simpleTitle": "Kompakt design passer til mindre rum",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
+     "key": "design",
+     "groupId": "ef9dc1ad-ae63-42ec-a296-4e4a8592ea18"
     },
-    "compact design with room-friendly output": {
-     "sentimentAnalysis": "De kompakte mål, det flotte design og den nemme placering gør Sub Mini særligt velegnet til små og mellemstore rum.",
-     "simpleTitle": "Kompakt design med passende ydelse til rummet",
-     "bias": "positive",
-     "key": "design_size",
-     "groupId": "30550f9b-f9de-4d58-aa0c-13dd6021f084"
-    },
-    "app and connectivity issues": {
-     "sentimentAnalysis": "En mindre gruppe oplever vanskelig opsætning, appnedbrud eller ustabile forbindelser, blandt andet efter skift af Wi-Fi.",
-     "simpleTitle": "Problemer med app og forbindelse",
+    "app and connection problems can complicate setup": {
+     "sentimentAnalysis": "Flere anmeldelser nævner vanskelig opsætning, app-fejl eller tilbagevendende forbindelsesproblemer trods ellers positiv produktoplevelse.",
+     "simpleTitle": "App- og forbindelsesproblemer kan gøre opsætningen vanskelig",
      "bias": "negative",
-     "key": "setup_integration",
-     "groupId": "229af36b-bc69-42a0-b4c2-ff126e887bbe"
+     "key": "integration",
+     "groupId": "4ccfaa19-048f-4751-a932-b6fa51a5a1f7"
     },
-    "less depth than expected in larger rooms": {
-     "sentimentAnalysis": "Nogle ønsker mere effekt ved lav lydstyrke samt dybere og fyldigere bas, især i større rum eller sammenlignet med den store Sub.",
-     "simpleTitle": "Mindre dybde end forventet i større rum",
+    "occasionally less bass than expected": {
+     "sentimentAnalysis": "En mindre del af anmeldelserne oplever mindre fyldig eller dyb bas end forventet, især ved lav lydstyrke eller i større rum.",
+     "simpleTitle": "Lejlighedsvis mindre bas end forventet",
      "bias": "negative",
-     "key": "sound_quality",
-     "groupId": "52c4b5f5-a731-4784-a987-a8e698de5fd3"
+     "key": "sound",
+     "groupId": "b0f189fa-ee4a-460a-9714-1e0e91ffab37"
     }
    },
    "grouping": {
-    "52c4b5f5-a731-4784-a987-a8e698de5fd3": {
+    "4ccfaa19-048f-4751-a932-b6fa51a5a1f7": {
+     "title": "Systemintegration og opsætning",
+     "id": "4ccfaa19-048f-4751-a932-b6fa51a5a1f7",
+     "references": [
+      "8bb4d68f-2e10-4938-8ae8-9b594501d71f",
+      "940cac89-44d8-418d-b812-dcc51125f8ef",
+      "58be06fa-f81e-4cd0-a699-fe336ab760dd",
+      "45514039-a9ab-4f9f-8bef-0ba5f4e9157a",
+      "d9dc50d7-4ee2-40ac-b4c7-e18ec9a9058b",
+      "27a151cb-e4d0-482b-87cf-40f266de1a1e",
+      "8ca506b3-20f6-4d41-a975-8cc6b8be302f",
+      "7bfaff71-af1e-479f-9d98-cd299aba7da1",
+      "123da7b6-4797-4af1-ae70-dcf37844c037",
+      "3eb6c8d5-fa9f-4c65-8d20-87a867c14d2b",
+      "7f632d36-b047-48fa-ae7c-c57c897cd70d",
+      "6f9ac95a-fc00-45f2-b310-73a379d0f981",
+      "3f28ee5b-218c-48c9-bf2e-a666474a26c6",
+      "a786ebcc-cf38-4273-a8aa-2d6e9c2be43d",
+      "ad9c3ce5-66db-4b23-9c23-03505e94f346",
+      "9a7c8412-606d-44db-a136-177b523b6dbe",
+      "ddc719dc-abfa-4b79-b537-18d586dcb4a0",
+      "f6150870-dce5-4229-a13b-32a1bbfd1bfe",
+      "5b2d1b1f-b42e-453e-9d96-6e1e639f7b0f",
+      "5ae2c09e-2cd2-4b7f-95c8-74a694bb0bb9",
+      "b5b7ddf9-e007-4e95-b995-3f9ae381fa67",
+      "1cc09fc5-1b1a-4700-86a4-6fda13a2efd5",
+      "1b2b62a0-3c54-4db1-942a-f4a1f8efeb6d",
+      "b28ce466-af40-4ee3-9c5e-01005c104042",
+      "9061fab9-e1ee-456d-a187-fa1fe28dd1da",
+      "869e7f62-ebba-4914-bce0-a585364d9645",
+      "a89cabc1-e724-4ffb-aa91-ae3979eb8105",
+      "15ac4a9b-9934-49ce-aab6-cd3fa4f2cfa0",
+      "15aae121-4599-4db3-b2c6-d067b580034d",
+      "4e72ec76-108f-42df-adca-013ff3c9957e",
+      "97a1c9d5-0942-4d77-acfd-ed5014a2b952",
+      "af845ecb-cb4b-4251-b564-09d7237f2213",
+      "4e312312-cf94-44b6-adfe-912a66a3c55c",
+      "c28dd9f9-ff0b-48d3-9eeb-b9c4ee5f47cc",
+      "5470219b-892f-4276-83c6-c4d4d2bfccb5",
+      "27617649-1a7e-4cdf-953b-e5c8615b14c7",
+      "d886c512-86a5-4736-88fd-166d03e3cb9a",
+      "fc36dc8c-03fb-41b0-a153-a8d95e1dba40",
+      "bee8e254-2614-419b-af3c-2a5afbb9bfd2",
+      "8617234c-e25d-4c0f-81a2-2511c80570ed",
+      "36698058-c98e-46d3-afa6-390128b6cfea",
+      "1cbcb4f5-ef7d-4ae7-b4cc-80ba9ec2576e"
+     ]
+    },
+    "b0f189fa-ee4a-460a-9714-1e0e91ffab37": {
      "title": "Lydkvalitet",
-     "id": "52c4b5f5-a731-4784-a987-a8e698de5fd3",
+     "id": "b0f189fa-ee4a-460a-9714-1e0e91ffab37",
      "references": [
       "eab229f3-1968-445b-97c6-8c4f31f87540",
       "988231e5-c4d1-43ba-9ebf-efd9be28ba78",
@@ -767,7 +659,6 @@
       "69889d52-ca7f-4b1b-822d-5b3628b403f4",
       "23e1aa4c-549f-4651-b612-fd539893e98e",
       "e6baa3ad-4291-4de4-85d4-bd6a6049276e",
-      "624047db-a804-43ad-8787-91f2b1780494",
       "647f5307-8492-4255-b1bd-cf1596461edf",
       "289fbf05-f305-406a-a7d5-b695212fdb7f",
       "34aed335-f60d-4292-b843-8b6b0dbc6fc1",
@@ -778,121 +669,57 @@
       "445b0e49-caf3-4f7e-ab64-80b1060ac5e8",
       "90a0ccdf-c1de-47d3-b4d4-08c9713d0fdc",
       "2b15a3eb-a714-4748-a026-ab03e6548dfa",
+      "442b95a9-fcdf-4e13-bcf1-0c25d99754aa",
       "271f385b-4a4f-4034-becd-29c0ede6a955",
       "9ac46186-5b8a-491c-8125-3a77ddcfa7bc",
       "37b616d3-0e30-4034-84f6-89a6747e837b",
-      "b39fb040-d6ad-4208-9e3b-7e233e4a1bb1",
-      "0981a3bb-fcad-4a7a-abbb-196e1932980d",
-      "5876352c-6345-454e-a647-0e16dc2e888d",
-      "cc500e17-4fd5-4976-8737-778f1d8eff34",
-      "340a7110-54da-4c0b-a62b-3573b3aa4ba4",
-      "111e0c1a-27f9-4943-ab88-b41fadb5b5e1",
-      "9062608b-929d-4381-97ff-408ff635d942",
-      "4e312312-cf94-44b6-adfe-912a66a3c55c",
-      "61528e50-ec2b-401c-97c1-84c200fc7e24",
-      "d757744f-c9ec-4e7c-a619-69caad6e3255",
-      "78b883a9-1265-4c19-b2c1-e93e6c0e7713",
-      "66327219-e8ae-4574-9fb5-77cf63cc1e23",
-      "344b3206-100f-40af-85e4-e85ddc0319c5",
-      "ad90c427-3751-462f-8cba-72a1f9c8381a",
-      "28bcb2e8-c179-44d9-b063-beb0d626a9a7",
-      "fc36dc8c-03fb-41b0-a153-a8d95e1dba40",
-      "bee8e254-2614-419b-af3c-2a5afbb9bfd2",
-      "2e640202-477b-446b-b4bc-de684660b9ae",
-      "f916cf20-46d1-45f0-8c90-60793abd5536",
-      "e6fd036d-fdca-461d-9f1e-5063b556d7cf",
-      "1461012d-e919-4344-a75b-3b45493cb651",
-      "dc711213-5d51-4058-9543-817d99516b07",
-      "3224841f-fb12-4c87-9644-e2cabadf56f1",
-      "65b0bd47-138a-467b-af80-2f1dee7a6159",
-      "cb86cce7-0c68-445d-b851-80dc99e6cefa",
-      "f0ca1895-7b05-4901-9339-02825e75e31d",
+      "17eb2df9-1528-447f-b04a-e21102da3d1c",
+      "b3fc4e66-8f85-43cb-90cf-b6401cb67fad",
+      "d95c9a6e-6bfe-43c0-874e-57a1e5156b61",
+      "075b349d-ec03-4f50-af16-622ec50948c1",
+      "7b0a6cf6-ecbb-4d5a-892a-b70e22b9bd98",
+      "33c2bc2f-7ff6-4482-ba44-cde81f7f6196",
+      "8fdf511f-2464-43eb-85bf-da3b9be423fc",
+      "eec8df45-5162-4d94-8b10-a1bc1f3cf12d",
+      "d1b886c1-3b8f-4c93-bace-12f26fa36930",
       "e855a16e-096c-42f1-9d20-8e54d844ae99",
       "4829b011-a5f6-426d-b3ce-06fe26f81782",
       "d20857e7-9859-486d-bc75-4c95cd84b1b6",
-      "6a9369fe-b37d-42cb-9f71-61a7dd0471c5",
       "e9d9961d-a385-472c-a216-81a2983f02e9",
-      "7b0a6cf6-ecbb-4d5a-892a-b70e22b9bd98",
-      "e13401c8-429d-4899-acb3-1da1b6794386",
-      "8fdf511f-2464-43eb-85bf-da3b9be423fc",
-      "eec8df45-5162-4d94-8b10-a1bc1f3cf12d",
-      "710bee82-2033-44ff-b4d3-d18bb9dc7ebd",
-      "95c89d65-0cd1-4f61-b6ad-26f318143746",
-      "8e9cab10-19d8-40d7-8959-71710c409be4",
-      "d1b886c1-3b8f-4c93-bace-12f26fa36930",
-      "240518cf-fec8-4f7b-b45f-b2fd9a49a173",
-      "6a9369fe-b37d-42cb-9f71-61a7dd0471c5",
-      "8617234c-e25d-4c0f-81a2-2511c80570ed"
+      "66327219-e8ae-4574-9fb5-77cf63cc1e23",
+      "d757744f-c9ec-4e7c-a619-69caad6e3255",
+      "1461012d-e919-4344-a75b-3b45493cb651",
+      "dc711213-5d51-4058-9543-817d99516b07"
      ]
     },
-    "229af36b-bc69-42a0-b4c2-ff126e887bbe": {
-     "title": "Opsætning og integration",
-     "id": "229af36b-bc69-42a0-b4c2-ff126e887bbe",
-     "references": [
-      "8bb4d68f-2e10-4938-8ae8-9b594501d71f",
-      "d9dc50d7-4ee2-40ac-b4c7-e18ec9a9058b",
-      "27a151cb-e4d0-482b-87cf-40f266de1a1e",
-      "123da7b6-4797-4af1-ae70-dcf37844c037",
-      "3eb6c8d5-fa9f-4c65-8d20-87a867c14d2b",
-      "fa796878-61dc-49a3-a962-fa67e4aed6f2",
-      "7f632d36-b047-48fa-ae7c-c57c897cd70d",
-      "6f9ac95a-fc00-45f2-b310-73a379d0f981",
-      "3f28ee5b-218c-48c9-bf2e-a666474a26c6",
-      "9a7c8412-606d-44db-a136-177b523b6dbe",
-      "651227de-b47a-4125-b84e-dce334efc204",
-      "f6150870-dce5-4229-a13b-32a1bbfd1bfe",
-      "5b2d1b1f-b42e-453e-9d96-6e1e639f7b0f",
-      "f5ddcc98-94a3-42a8-8f05-9dee3c3d69ea",
-      "57087143-c3da-451d-93fe-1d0e6e1d7784",
-      "1b2b62a0-3c54-4db1-942a-f4a1f8efeb6d",
-      "b28ce466-af40-4ee3-9c5e-01005c104042",
-      "9061fab9-e1ee-456d-a187-fa1fe28dd1da",
-      "869e7f62-ebba-4914-bce0-a585364d9645",
-      "4e72ec76-108f-42df-adca-013ff3c9957e",
-      "a3274e6d-4d92-4071-bab6-35abae5a398b",
-      "9ac46186-5b8a-491c-8125-3a77ddcfa7bc",
-      "6a4d9d2f-48b6-44fe-8cb5-a01614f7f927",
-      "af845ecb-cb4b-4251-b564-09d7237f2213",
-      "3039af31-d34c-4ed2-a770-9e55ac53d637",
-      "3b75332d-4b8e-4487-9c00-68aae2f31ebe",
-      "99f13977-5326-4104-9d38-24ec2deaad59",
-      "eb2f6d45-9508-430f-a18f-4a5d392f3235",
-      "70c9b0e3-5957-4777-a13b-6a50780ff81c",
-      "cc500e17-4fd5-4976-8737-778f1d8eff34",
-      "111e0c1a-27f9-4943-ab88-b41fadb5b5e1",
-      "ab962578-bd1e-4a71-a267-a98c1418089f",
-      "c28dd9f9-ff0b-48d3-9eeb-b9c4ee5f47cc",
-      "5470219b-892f-4276-83c6-c4d4d2bfccb5",
-      "27617649-1a7e-4cdf-953b-e5c8615b14c7",
-      "1cbcb4f5-ef7d-4ae7-b4cc-80ba9ec2576e",
-      "36698058-c98e-46d3-afa6-390128b6cfea",
-      "8617234c-e25d-4c0f-81a2-2511c80570ed"
-     ]
-    },
-    "30550f9b-f9de-4d58-aa0c-13dd6021f084": {
-     "title": "Design og størrelse",
-     "id": "30550f9b-f9de-4d58-aa0c-13dd6021f084",
+    "ef9dc1ad-ae63-42ec-a296-4e4a8592ea18": {
+     "title": "Størrelse og design",
+     "id": "ef9dc1ad-ae63-42ec-a296-4e4a8592ea18",
      "references": [
       "e94e0dd8-5377-4a33-b8f9-1dbd95e5103d",
       "27a151cb-e4d0-482b-87cf-40f266de1a1e",
-      "a786ebcc-cf38-4273-a8aa-2d6e9c2be43d",
       "70f127cd-8fd9-48da-99ee-4c05436c97fd",
-      "ddc719dc-abfa-4b79-b537-18d586dcb4a0",
       "62b1abb1-e9b6-4bc3-8fd2-4a71c3dd90b6",
+      "624047db-a804-43ad-8787-91f2b1780494",
+      "dd7e0caf-c77c-44f0-af4f-72df94e29ad2",
       "445b0e49-caf3-4f7e-ab64-80b1060ac5e8",
       "90a0ccdf-c1de-47d3-b4d4-08c9713d0fdc",
+      "ab9078e0-6e15-4df4-b7f7-3f991156cc53",
       "b3fc4e66-8f85-43cb-90cf-b6401cb67fad",
       "e0252055-9861-4dbb-bb7b-0fb2cc0be089",
-      "1cc09fc5-1b1a-4700-86a4-6fda13a2efd5",
       "3b75332d-4b8e-4487-9c00-68aae2f31ebe",
       "e6fd036d-fdca-461d-9f1e-5063b556d7cf",
-      "816d9922-8efa-4205-893d-b0b50dcf9290",
+      "816d9922-8efa-4205-893d-b0b50fcf9290",
       "887874e2-c483-486a-80a6-53fa9da15464",
+      "f0ca1895-7b05-4901-9339-02825e75e31d",
+      "e05401f9-4e4d-4685-b2e7-1385d89c9746",
+      "2fae3386-6e06-456e-bb5f-0924602c220f",
       "e13401c8-429d-4899-acb3-1da1b6794386",
-      "8fdf511f-2464-43eb-85bf-da3b9be423fc",
-      "84aeb69a-4e62-4188-9da2-c80b80768cd4",
-      "95c89d65-0cd1-4f61-b6ad-26f318143746",
-      "ffce1f58-7c6c-4556-a752-39c458ccb06c"
+      "cba8fe9e-f211-4c7a-960b-7b153a9aad77",
+      "99167cc1-eb78-4073-9339-6d64c3d45056",
+      "6a9369fe-b37d-42cb-9f71-61a7dd0471c5",
+      "240518cf-fec8-4f7b-b45f-b2fd9a49a173",
+      "d20857e7-9859-486d-bc75-4c95cd84b1b6"
      ]
     }
    },

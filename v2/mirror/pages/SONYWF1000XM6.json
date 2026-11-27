@@ -38,26 +38,26 @@
    "productCodes": [
     "ESSCLEANKITINEARX",
     "ESSPSUSBACX",
+    "COMTGTW200C",
     "ESSCL1USBCCX",
     "ESSPSUSBAC65WX",
-    "SENBTD700",
-    "COMTGTW200C"
+    "SENBTD700"
    ],
    "isOutlet": "false"
   },
   "recommendedAlternatives": {
    "productCodes": [
-    "DENAHC15PL",
-    "BWPI6",
-    "DENAHC840NCW",
-    "KEFMU3",
     "BWPI8",
     "BWPI8MCLAREN",
+    "DENAHC15PL",
     "SENMOMENTUMTW5",
+    "BWPI6",
+    "DENAHC840NCW",
     "BO11X",
     "JBLLIVEBUDS4",
     "SONYWFLC900",
     "BEOGRACE",
+    "KEFMU3",
     "JBLTOURPRO3"
    ],
    "isOutlet": "false"
@@ -214,7 +214,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "5,6 x 8,7 x 9,1 cm (bredde x højde x dybde)"
+        "value": "5,55 x 8,7 x 9,1 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -368,7 +368,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 6,
+     "availableQuantity": 22,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -522,78 +522,78 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony WF-1000XM6 leverer en varm, fyldig og ofte meget detaljeret lyd med især imponerende støjreduktion og en nyttig app. Komfort og pasform varierer betydeligt, mens batteritid, forbindelsesstabilitet og touchstyring får en del kritik. Den høje pris er svær at retfærdiggøre for ejere af XM5, men den samlede pakke er stadig overbevisende for lyttere, der ønsker en omsluttende lyd og effektiv støjisolering.",
+   "summary": "SONY WF-1000XM6 leverer varm, fyldig og meget detaljeret lyd med fremragende støjreduktion og en velfungerende app. Komfort og pasform varierer fra øre til øre, mens batteritid, pris og lejlighedsvise forbindelses- eller opladningsproblemer trækker ned i et ellers imponerende produkt. Den samlede gengivelse er medrivende og velafstemt, men XM5-ejere vil muligvis synes, at opgraderingen er for lille til prisen.",
    "headlines": {
-    "warm, powerful and detailed sound": {
-     "sentimentAnalysis": "Lyden roses bredt som fremragende, afbalanceret, organisk og kraftfuld.",
-     "simpleTitle": "Varm, kraftfuld og detaljeret lyd",
+    "rich, enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses bredt som fremragende, klar og behagelig.",
+     "simpleTitle": "Fyldig og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "aa063d06-02e8-49ea-84e7-0efa2d18b881"
+     "groupId": "8b70e3f0-70e8-4124-8247-51995fa031e8"
     },
     "outstanding noise cancellation": {
-     "sentimentAnalysis": "Støjreduktionen beskrives som usædvanligt effektiv og behagelig under lytning.",
+     "sentimentAnalysis": "Støjreduktionen roses gentagne gange som usædvanligt stærk og behagelig.",
      "simpleTitle": "Fremragende støjreduktion",
      "bias": "positive",
-     "key": "anc",
-     "groupId": "529840cc-8831-4d80-98f8-7e4c9998c70b"
+     "key": "noise-cancellation",
+     "groupId": "39be293c-30d5-4fa0-9b41-16ddc917ea7a"
     },
-    "wind noise weakens cycling performance": {
-     "sentimentAnalysis": "Trods stærk generel støjreduktion vurderes håndteringen af vind under cykling gentagne gange skuffende.",
-     "simpleTitle": "Vindstøj svækker brug under cykling",
-     "bias": "negative",
-     "key": "anc",
-     "groupId": "529840cc-8831-4d80-98f8-7e4c9998c70b"
-    },
-    "app customization is a strong advantage": {
-     "sentimentAnalysis": "Appen værdsættes for lydtilpasning, justeringsmuligheder og enkel betjening.",
-     "simpleTitle": "Tilpasning i appen er en stor fordel",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "aa063d06-02e8-49ea-84e7-0efa2d18b881"
-    },
-    "premium pricing limits the value": {
+    "high price limits value": {
      "sentimentAnalysis": "Produktet anses for dyrt, og værdien vurderes som acceptabel snarere end enestående.",
      "simpleTitle": "Den høje pris begrænser værdien",
      "bias": "negative",
-     "key": "price",
-     "groupId": "0f0df0be-87b8-466d-afd3-f47e7a94f4de"
+     "key": "price-app",
+     "groupId": "6d4e574d-e6c9-43ad-9a1a-0b25da923fe9"
+    },
+    "useful app customization": {
+     "sentimentAnalysis": "Appen værdsættes for tilpasning, lydprofiler og praktisk betjening.",
+     "simpleTitle": "Nyttig tilpasning i appen",
+     "bias": "positive",
+     "key": "price-app",
+     "groupId": "6d4e574d-e6c9-43ad-9a1a-0b25da923fe9"
+    },
+    "balanced, natural tuning": {
+     "sentimentAnalysis": "Tuningen beskrives som balanceret og naturlig frem for overdrevet.",
+     "simpleTitle": "Balanceret, naturlig tuning",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "8b70e3f0-70e8-4124-8247-51995fa031e8"
     },
     "bass and dynamics can feel restrained": {
-     "sentimentAnalysis": "Nogle lyttere oplever bas, dybde og dynamik som mindre fremtrædende end forventet.",
-     "simpleTitle": "Bas og dynamik kan virke begrænset",
+     "sentimentAnalysis": "Nogle lyttere savner basdybde og dynamisk energi.",
+     "simpleTitle": "Bas og dynamik kan virke afdæmpet",
      "bias": "negative",
      "key": "sound",
-     "groupId": "aa063d06-02e8-49ea-84e7-0efa2d18b881"
+     "groupId": "8b70e3f0-70e8-4124-8247-51995fa031e8"
     },
-    "battery life is underwhelming": {
-     "sentimentAnalysis": "Batteritiden anses for svagere end forventet, selv om hyppig opladning kan håndteres.",
-     "simpleTitle": "Batteritiden skuffer",
+    "wind noise weakens cycling performance": {
+     "sentimentAnalysis": "Den generelle støjreduktion er fremragende, men vindhåndteringen under cykling skuffer.",
+     "simpleTitle": "Vindstøj svækker ydelsen på cykelture",
      "bias": "negative",
-     "key": "battery",
-     "groupId": "2fb9bbeb-bd0c-499e-a23e-6f5cdd51c2e4"
+     "key": "noise-cancellation",
+     "groupId": "39be293c-30d5-4fa0-9b41-16ddc917ea7a"
     }
    },
    "grouping": {
-    "aa063d06-02e8-49ea-84e7-0efa2d18b881": {
+    "8b70e3f0-70e8-4124-8247-51995fa031e8": {
      "title": "Lydkvalitet",
-     "id": "aa063d06-02e8-49ea-84e7-0efa2d18b881",
+     "id": "8b70e3f0-70e8-4124-8247-51995fa031e8",
      "references": [
       "14b9189f-b8a8-4d07-9cbc-410b243d596d",
       "1be6835f-5712-426e-baee-0337bba314ea",
-      "d471ee4b-0ece-4e6b-bddf-6f53c45a490c",
       "0e943d31-56b0-480f-86ce-22f9a71814d3",
-      "aeb23888-e3a7-4ca8-a640-6a97c6d2b01b",
       "92f7c82a-72ed-4fb5-b08a-088fd712c496",
+      "aeb23888-e3a7-4ca8-a640-6a97c6d2b01b",
       "96f38a07-b151-4af8-b296-29b9d966e0af",
       "5d7f1078-6baf-41c9-b854-aed5a3eb0199",
       "d3a2136e-4744-4199-b489-01c44865e673",
+      "20c87bb0-810d-4036-98aa-34b632522157",
       "d7ac3430-0694-419c-bc17-5b2ca4b97b27"
      ]
     },
-    "529840cc-8831-4d80-98f8-7e4c9998c70b": {
+    "39be293c-30d5-4fa0-9b41-16ddc917ea7a": {
      "title": "Støjreduktion",
-     "id": "529840cc-8831-4d80-98f8-7e4c9998c70b",
+     "id": "39be293c-30d5-4fa0-9b41-16ddc917ea7a",
      "references": [
       "7c5d4687-68b4-4561-a6df-d405cdc77983",
       "d471ee4b-0ece-4e6b-bddf-6f53c45a490c",
@@ -603,22 +603,15 @@
       "d7ac3430-0694-419c-bc17-5b2ca4b97b27"
      ]
     },
-    "2fb9bbeb-bd0c-499e-a23e-6f5cdd51c2e4": {
-     "title": "Batteritid",
-     "id": "2fb9bbeb-bd0c-499e-a23e-6f5cdd51c2e4",
-     "references": [
-      "c3e48176-667c-425b-8d44-afb3ecae68e5",
-      "92f7c82a-72ed-4fb5-b08a-088fd712c496",
-      "aeb23888-e3a7-4ca8-a640-6a97c6d2b01b"
-     ]
-    },
-    "0f0df0be-87b8-466d-afd3-f47e7a94f4de": {
-     "title": "Pris",
-     "id": "0f0df0be-87b8-466d-afd3-f47e7a94f4de",
+    "6d4e574d-e6c9-43ad-9a1a-0b25da923fe9": {
+     "title": "Pris og app",
+     "id": "6d4e574d-e6c9-43ad-9a1a-0b25da923fe9",
      "references": [
       "d471ee4b-0ece-4e6b-bddf-6f53c45a490c",
       "c3e48176-667c-425b-8d44-afb3ecae68e5",
-      "bfb097d0-07f2-4c70-9937-0b3a2408875d"
+      "bfb097d0-07f2-4c70-9937-0b3a2408875d",
+      "aeb23888-e3a7-4ca8-a640-6a97c6d2b01b",
+      "5d7f1078-6baf-41c9-b854-aed5a3eb0199"
      ]
     }
    },

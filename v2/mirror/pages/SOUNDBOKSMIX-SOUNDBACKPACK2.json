@@ -134,7 +134,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 93,
+        "availableQuantity": 87,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "799,-",
@@ -146,39 +146,25 @@
      ],
      "parentProductCode": "SOUNDBACKPACK2",
      "reviews": {
-      "summary": "SOUNDBACKPACK2 gør transporten af højttaleren praktisk, nem og overraskende behagelig. Det robuste rygsækdesign gør det muligt at nyde fyldig, punchy og immersiv lyd undervejs. Højttalerens vægt kan gøre det besværligt at gå, og et regnslag ville være en god tilføjelse.",
+      "summary": "SOUNDBACKPACK2 er en praktisk og slidstærk rygsæk, der gør det nemt at transportere højttaleren og lytte til musik undervejs. Den enkle betjening og det gennemtænkte bæresystem bliver især værdsat, mens højttalerens vægt og høje placering kan gøre det besværligt at gå. Et regnslag ville være en nyttig tilføjelse; samlet set understøtter rygsækken en livlig, kraftfuld og omsluttende lytteoplevelse på farten.",
       "headlines": {
-       "easy and practical to carry": {
-        "sentimentAnalysis": "Rygsækken anses for at være en effektiv og praktisk måde at transportere højttaleren på, også mens musikken spiller.",
-        "simpleTitle": "Nem og praktisk at bære",
+       "easy to use and carry": {
+        "sentimentAnalysis": "Rygsækken opfattes som nem at bruge og praktisk til at bære højttaleren.",
+        "simpleTitle": "Nem at bruge og bære",
         "bias": "positive",
-        "key": "transport",
-        "groupId": "1623e561-e85a-4140-ae7c-dac40051d3a9"
-       },
-       "simple to use": {
-        "sentimentAnalysis": "Rygsækken roses for at være enkel og behagelig at bruge.",
-        "simpleTitle": "Nem at bruge",
-        "bias": "positive",
-        "key": "usability",
-        "groupId": "95ac2ab2-e8f4-4f75-be07-555b80039da4"
+        "key": "easy_carrying",
+        "groupId": "c8511583-6c1c-4cbd-844d-d0cb390dd203"
        }
       },
       "grouping": {
-       "1623e561-e85a-4140-ae7c-dac40051d3a9": {
-        "title": "Transport",
-        "id": "1623e561-e85a-4140-ae7c-dac40051d3a9",
+       "c8511583-6c1c-4cbd-844d-d0cb390dd203": {
+        "title": "Transport og bæring",
+        "id": "c8511583-6c1c-4cbd-844d-d0cb390dd203",
         "references": [
          "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
          "3e579c9b-ea8e-490c-8b27-86f1158031c5",
          "dcda85ff-058a-478b-95db-5bb8282b96a3",
-         "3103b24d-50cb-486c-98fc-5d2b71dcb92a"
-        ]
-       },
-       "95ac2ab2-e8f4-4f75-be07-555b80039da4": {
-        "title": "Brugervenlighed",
-        "id": "95ac2ab2-e8f4-4f75-be07-555b80039da4",
-        "references": [
-         "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
+         "3103b24d-50cb-486c-98fc-5d2b71dcb92a",
          "457e29c1-ffc0-410a-95d0-850fca255caa"
         ]
        }
@@ -215,7 +201,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 154,
+        "availableQuantity": 105,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "3.999,-",
@@ -227,46 +213,53 @@
      ],
      "parentProductCode": "SOUNDBOKSMIX",
      "reviews": {
-      "summary": "SOUNDBOKS MIX leverer varm, fyldig og omsluttende lyd med bemærkelsesværdigt velafbalancerede høje toner, mellemtoner og bas for en kompakt festhøjttaler. Det lettere og transportable design, den lange batteritid og den justerbare equalizer gør højttaleren alsidig til fester, strandture og hverdagslytning. Forventningerne til dyb bas bør være realistiske sammenlignet med større SOUNDBOKS-modeller, mens manglen på WiFi eller AirPlay er en tydelig begrænsning.",
+      "summary": "SOUNDBOKSMIX leverer en varm, punchy og imponerende afbalanceret lyd med kraftig bas i forhold til den kompakte størrelse. Den lette og robuste højttaler er nem at tage med, enkel at betjene og har lang batteritid til fester, strandture og udendørs brug. Brugerdefinerede EQ-indstillinger giver ekstra fleksibilitet, men manglen på WiFi eller AirPlay er en tydelig begrænsning, og den dybeste bas kan ikke måle sig med de større Soundboks-modeller.",
       "headlines": {
        "powerful, balanced sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den kraftfulde lyd, klare høje toner, tydelige dybe toner og den generelt afbalancerede gengivelse, mens equalizerindstillinger giver ekstra alsidighed.",
-        "simpleTitle": "Kraftfuld, afbalanceret lyd",
+        "sentimentAnalysis": "Anmeldelserne roser den høje lydstyrke, de klare høje toner, mellemtoner og bassen samt den generelt velafbalancerede lyd.",
+        "simpleTitle": "Kraftig, afbalanceret lyd",
         "bias": "positive",
-        "key": "powerful-balanced-sound",
-        "groupId": "351b5472-5aef-406a-bafc-96d21a99446d"
+        "key": "powerful-sound",
+        "groupId": "6b109e01-b417-4212-ba28-298f2cf94a92"
        },
-       "compact size still delivers impressive bass": {
-        "sentimentAnalysis": "Det kompakte kabinet beskrives gentagne gange som overraskende kraftfuldt og basstærkt med masser af tryk trods den mindre størrelse.",
-        "simpleTitle": "Kompakt størrelse med imponerende bas",
+       "easy to carry": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter den mindre og lettere konstruktion samt egnetheden til fester, strande og udendørs steder.",
+        "simpleTitle": "Nem at bære",
+        "bias": "positive",
+        "key": "easy-carry",
+        "groupId": "72b2b079-601b-422d-9c7f-aaea9e45319f"
+       },
+       "strong bass for a compact speaker": {
+        "sentimentAnalysis": "Det kompakte kabinet leverer overraskende kraftig og fyldig bas, især med basforstærkede indstillinger.",
+        "simpleTitle": "Kraftig bas i en kompakt højttaler",
         "bias": "positive",
         "key": "compact-bass",
-        "groupId": "351b5472-5aef-406a-bafc-96d21a99446d"
+        "groupId": "6b109e01-b417-4212-ba28-298f2cf94a92"
        },
-       "lighter and easier to carry": {
-        "sentimentAnalysis": "Det mindre og lettere format værdsættes, fordi højttaleren kan bæres med én hånd og nemmere tages med til strande og fester.",
-        "simpleTitle": "Lettere og nemmere at bære",
-        "bias": "positive",
-        "key": "easy-to-carry",
-        "groupId": "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa"
+       "deepest bass cannot match larger models": {
+        "sentimentAnalysis": "En anmeldelse bemærker specifikt, at den mindste model ikke kan gengive den dybeste bas fra større Soundboks-højttalere, mens en anden sammenligning fremhæver den mindre models stærke ydelse.",
+        "simpleTitle": "Den dybeste bas kan ikke måle sig med større modeller",
+        "bias": "negative",
+        "key": "bass-limit",
+        "groupId": "6b109e01-b417-4212-ba28-298f2cf94a92"
        },
        "long-lasting battery": {
-        "sentimentAnalysis": "Batteritiden roses for at være lang nok til langvarig lytning og fester.",
+        "sentimentAnalysis": "Anmeldelserne fremhæver den pålidelige, lange batteritid som en stor fordel ved længere tids musik og arrangementer.",
         "simpleTitle": "Lang batteritid",
         "bias": "positive",
         "key": "long-battery",
-        "groupId": "6f1ffa02-69c6-42dc-86d3-0d01b381fb39"
+        "groupId": "787134dc-fb04-4467-94d1-1dd5d6f0ff10"
        }
       },
       "grouping": {
-       "351b5472-5aef-406a-bafc-96d21a99446d": {
+       "6b109e01-b417-4212-ba28-298f2cf94a92": {
         "title": "Lydkvalitet",
-        "id": "351b5472-5aef-406a-bafc-96d21a99446d",
+        "id": "6b109e01-b417-4212-ba28-298f2cf94a92",
         "references": [
          "15f38738-f6f0-4460-9aaa-0d23c8979025",
+         "26f775dc-a1ed-4ac5-979b-b485a7b56d13",
          "6019fa02-9852-430e-bc40-5525fde404fe",
          "eebf791f-1304-4887-9bef-111fbf8ac8c7",
-         "86a6ba9d-6606-4953-99eb-1c8a529075b7",
          "d150432a-b059-4270-9a2a-5ec8ce68f1e9",
          "204600c7-c4b8-43aa-ad0e-f2fb80195202",
          "7efd3c44-c8d1-47b0-b94b-7bca58749586",
@@ -276,18 +269,18 @@
          "bf3532ad-5274-4af1-a1c7-739e604ba60a"
         ]
        },
-       "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa": {
-        "title": "Bærbarhed",
-        "id": "ccdfd6a3-9a91-49e9-8efe-e0da4af090aa",
+       "72b2b079-601b-422d-9c7f-aaea9e45319f": {
+        "title": "Mobilitet",
+        "id": "72b2b079-601b-422d-9c7f-aaea9e45319f",
         "references": [
          "eebf791f-1304-4887-9bef-111fbf8ac8c7",
          "86a6ba9d-6606-4953-99eb-1c8a529075b7",
          "bf3532ad-5274-4af1-a1c7-739e604ba60a"
         ]
        },
-       "6f1ffa02-69c6-42dc-86d3-0d01b381fb39": {
+       "787134dc-fb04-4467-94d1-1dd5d6f0ff10": {
         "title": "Batteritid",
-        "id": "6f1ffa02-69c6-42dc-86d3-0d01b381fb39",
+        "id": "787134dc-fb04-4467-94d1-1dd5d6f0ff10",
         "references": [
          "86a6ba9d-6606-4953-99eb-1c8a529075b7",
          "82ee8401-f34b-4cc7-9317-84159cb92571"
@@ -312,7 +305,7 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 14
+    "numberOfStoresExperience": 12
    }
   },
   "variantNavigationType": "dropDown",

@@ -119,22 +119,17 @@
     "productCode": "SONSUBG4SABK",
     "ean": "8720862503717",
     "priceDetails": {
-     "priceValueId": 1211419,
+     "priceValueId": 1224060,
      "price": 5949,
      "priceFormatted": "5.949,-",
-     "priceBefore": 7449,
-     "priceBeforeFormatted": "7.449,-",
-     "priceSavingsFormatted": "1.500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5949,
-     "unitPriceBefore": 7449
+     "unitPrice": 5949
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -180,7 +175,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 522,
+     "availableQuantity": 308,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -218,22 +213,17 @@
     "productCode": "SONSUBG4SAWH",
     "ean": "8720862503700",
     "priceDetails": {
-     "priceValueId": 1211425,
+     "priceValueId": 1224065,
      "price": 5949,
      "priceFormatted": "5.949,-",
-     "priceBefore": 7449,
-     "priceBeforeFormatted": "7.449,-",
-     "priceSavingsFormatted": "1.500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 5949,
-     "unitPriceBefore": 7449
+     "unitPrice": 5949
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -279,7 +269,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 421,
+     "availableQuantity": 298,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -344,80 +334,18 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
-     "price": 8528,
-     "priceFormatted": "8.528,-",
-     "priceBefore": 11139,
-     "priceBeforeFormatted": "11.139,-",
-     "priceSavingsFormatted": "2.611,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 8528,
-     "unitPriceBefore": 11139
-    },
-    "image": "https://images.hifiklubben.com/image/9e18ac79-c4af-4f27-bda6-1ecc0b856de1",
-    "ribbons": [
-     {
-      "text": "Spar 23%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Beam G2 + Sub G4",
-    "url": "/sonbeamg2-sonsubg4/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
-     "price": 14577,
-     "priceFormatted": "14.577,-",
-     "priceBefore": 18696,
-     "priceBeforeFormatted": "18.696,-",
-     "priceSavingsFormatted": "4.119,-",
-     "salesUnit": "System",
-     "rawSalesUnit": "system",
-     "salesQuantity": 1,
-     "unitPrice": 14577,
-     "unitPriceBefore": 18696
-    },
-    "image": "https://images.hifiklubben.com/image/305079cf-bfa6-4a19-acf6-777a0e5063b6",
-    "ribbons": [
-     {
-      "text": "Spar 22%",
-      "ribbonType": "discount",
-      "link": {
-       "title": "",
-       "target": "_blank",
-       "kind": "LinkInfo"
-      }
-     }
-    ],
-    "title": "Arc Ultra + Sub G4 + Era 100 SL",
-    "url": "/ultra-subg4-era100sl/"
-   },
-   {
-    "modelType": "Soundbar system/pakke",
-    "price": {
      "price": 12328,
      "priceFormatted": "12.328,-",
-     "priceBefore": 15698,
-     "priceBeforeFormatted": "15.698,-",
-     "priceSavingsFormatted": "3.370,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 12328,
-     "unitPriceBefore": 15698
+     "unitPriceBefore": 12328
     },
     "image": "https://images.hifiklubben.com/image/af94aed2-1951-474e-a4e5-eda357476a9a",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -431,22 +359,43 @@
    {
     "modelType": "Soundbar system/pakke",
     "price": {
+     "price": 8528,
+     "priceFormatted": "8.528,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 8528,
+     "unitPriceBefore": 8528
+    },
+    "image": "https://images.hifiklubben.com/image/9e18ac79-c4af-4f27-bda6-1ecc0b856de1",
+    "ribbons": [
+     {
+      "text": "Skarp pris",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
+    "title": "Beam G2 + Sub G4",
+    "url": "/sonbeamg2-sonsubg4/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
      "price": 18886,
      "priceFormatted": "18.886,-",
-     "priceBefore": 23896,
-     "priceBeforeFormatted": "23.896,-",
-     "priceSavingsFormatted": "5.010,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 18886,
-     "unitPriceBefore": 23896
+     "unitPriceBefore": 18886
     },
     "image": "https://images.hifiklubben.com/image/5d12b0a9-f09f-4339-b381-f614159726ca",
     "ribbons": [
      {
-      "text": "Spar 21%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -462,20 +411,16 @@
     "price": {
      "price": 15708,
      "priceFormatted": "15.708,-",
-     "priceBefore": 19078,
-     "priceBeforeFormatted": "19.078,-",
-     "priceSavingsFormatted": "3.370,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
      "unitPrice": 15708,
-     "unitPriceBefore": 19078
+     "unitPriceBefore": 15708
     },
     "image": "https://images.hifiklubben.com/image/76e7d609-92d8-4b74-9652-8d621d8f63ad",
     "ribbons": [
      {
-      "text": "Spar 18%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -485,59 +430,87 @@
     ],
     "title": "Arc Ultra + Sub G4 + Era 100",
     "url": "/sonarcultra-sonsubg4-sonera100/"
+   },
+   {
+    "modelType": "Soundbar system/pakke",
+    "price": {
+     "price": 14577,
+     "priceFormatted": "14.577,-",
+     "salesUnit": "System",
+     "rawSalesUnit": "system",
+     "salesQuantity": 1,
+     "unitPrice": 14577,
+     "unitPriceBefore": 14726
+    },
+    "image": "https://images.hifiklubben.com/image/305079cf-bfa6-4a19-acf6-777a0e5063b6",
+    "title": "Arc Ultra + Sub G4 + Era 100 SL",
+    "url": "/ultra-subg4-era100sl/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sonos Sub 4 får stor ros for sin dybe, kraftfulde og kontrollerede bas, der tilfører varme, punch og indlevelse til tv, film og musik. Opsætning og integration med Sonos-soundbars og højttalere er som regel enkel, mens det stilfulde og diskrete design passer ind i hjemmet. Enkelte anmeldelser nævner ustabil forbindelse eller begrænset output, og nogle synes, at prisen er høj, men den samlede stemning er meget positiv.",
+   "summary": "SONOSUBG4 leverer varm, dyb og kontant bas, som giver tv, film og musik større biografstemning og en mere omsluttende lyd. Den nemme trådløse integration med Sonos-soundbars og højttalere gør opsætningen enkel, mens appen giver præcis justering fra diskret til rumrystende. Det stilfulde og diskrete design samt den rene, kontrollerede gengivelse får stor ros, selv om nogle synes, at bassen er mindre kraftig end forventet, produktet er dyrt, eller app og kompatibilitet har begrænsninger.",
    "headlines": {
-    "deep, powerful bass adds cinematic impact": {
-     "sentimentAnalysis": "Anmeldelserne beskriver gennemgående bassen som dyb, kraftfuld og meget medrivende, især til film og hjemmebio.",
-     "simpleTitle": "Dybt og kraftfuldt bastryk giver biograflyd",
+    "deep, powerful and clean bass": {
+     "sentimentAnalysis": "Anmeldelserne roser Sub 4 for dyb og kraftfuld bas med stor effekt, klarhed og kontrol uden uønsket raslen eller forvrængning.",
+     "simpleTitle": "Dyb, kraftfuld og ren bas",
      "bias": "positive",
-     "key": "deep_powerful_bass",
-     "groupId": "dea139f9-0013-4a57-9e64-372ee460b8f8"
+     "key": "sound",
+     "groupId": "94e59c58-bee4-4ef1-a62b-b646e4787516"
+    },
+    "a major upgrade for TV, films and music": {
+     "sentimentAnalysis": "Sub 4 beskrives gentagne gange som en kilde til større dybde, omsluttende lyd og et fyldigere lydbillede i Sonos-hjemmebiografer, især sammen med Arc Ultra og Era-højttalere.",
+     "simpleTitle": "En stor opgradering til tv, film og musik",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "94e59c58-bee4-4ef1-a62b-b646e4787516"
     },
     "easy setup and seamless Sonos integration": {
-     "sentimentAnalysis": "De fleste anmeldelser fremhæver den hurtige, enkle opsætning og den gode kompatibilitet med Arc-, Arc Ultra-, Beam- og Era-systemer.",
+     "sentimentAnalysis": "Opsætningen opleves generelt som hurtig, enkel og brugervenlig med særligt godt samspil i Arc Ultra-, Beam- og Era-systemer.",
      "simpleTitle": "Nem opsætning og problemfri Sonos-integration",
      "bias": "positive",
-     "key": "easy_integration",
-     "groupId": "de8c29ea-634b-4ef4-a05a-51cb236fea73"
+     "key": "setup",
+     "groupId": "ef1936c0-d0a7-42cd-8515-9b906f312710"
     },
-    "bass stays controlled and tunable": {
-     "sentimentAnalysis": "Bassen forbliver ren, naturlig og fri for raslen og kan nemt justeres i appen til rum og optagelser.",
-     "simpleTitle": "Kontrollerbar og justerbar bas",
-     "bias": "positive",
-     "key": "controlled_tunable_bass",
-     "groupId": "dea139f9-0013-4a57-9e64-372ee460b8f8"
-    },
-    "some users report limited output or connectivity issues": {
-     "sentimentAnalysis": "Et lille mindretal oplever, at subwooferen nogle gange ikke aktiveres, leverer mindre output end forventet eller mangler den dybeste biografbas.",
-     "simpleTitle": "Nogle brugere oplever begrænset output eller forbindelsesproblemer",
+    "some listeners expected deeper or stronger bass": {
+     "sentimentAnalysis": "Et mindretal oplever mindre output end forventet, utilstrækkelig dybde eller begrænset effekt ved høj lydstyrke, mens en anden anmeldelse kritiserer den høje pris.",
+     "simpleTitle": "Nogle lyttere forventede dybere eller kraftigere bas",
      "bias": "negative",
-     "key": "limitations",
-     "groupId": "dea139f9-0013-4a57-9e64-372ee460b8f8"
+     "key": "sound",
+     "groupId": "94e59c58-bee4-4ef1-a62b-b646e4787516"
+    },
+    "flexible bass control through the app": {
+     "sentimentAnalysis": "Appstyringen værdsættes, fordi bassen kan tilpasses forskellige rum, indspilninger, lydstyrker og personlige præferencer.",
+     "simpleTitle": "Fleksibel basstyring via appen",
+     "bias": "positive",
+     "key": "adjustment",
+     "groupId": "96639528-0cc2-48af-a8bc-aab31453cd79"
     }
    },
    "grouping": {
-    "dea139f9-0013-4a57-9e64-372ee460b8f8": {
-     "title": "Bas og lydkvalitet",
-     "id": "dea139f9-0013-4a57-9e64-372ee460b8f8",
+    "94e59c58-bee4-4ef1-a62b-b646e4787516": {
+     "title": "Lydkvalitet",
+     "id": "94e59c58-bee4-4ef1-a62b-b646e4787516",
      "references": [
+      "bae2d438-d37e-4907-a983-275675d6f572",
+      "b7b9157e-6f57-4164-ab6b-44e66af0a5e6",
+      "7ad72f23-595c-425c-a606-dc0bd4986f8b",
       "f57f9c28-93eb-4bf4-978d-847502e126f1",
       "ed06a8a7-6738-4e21-8ec7-63e5e67b440f",
+      "ac767dc0-69d0-404c-bef6-6d9e87d73d66",
       "e6e495ef-2d04-44f4-a70a-e12b9c43255a",
       "103f1c05-f1ef-4b37-987e-45565e8e4d26",
       "652be674-6453-402b-bbcd-031f40eb2b3c",
       "be94be00-5504-4153-b250-70f2a2bc0090",
       "ba362a3c-14cc-42d7-b4d8-637b383f5006",
+      "0aafcce8-34a4-4789-9682-4256b7802e65",
       "30926cd5-d06a-4f5c-bd0d-bab42395a836",
       "841bdbcb-eb77-437e-a582-21a146004864",
       "cf2b45ee-30cd-4367-b582-2c19df835d96",
       "67cdc14e-4062-41e0-99ce-8f0a53e0012a",
       "fcc03e3d-b5c7-4b3e-951b-644a72c88a6f",
       "452c1de2-6640-4844-8221-8ab3463a8535",
+      "36956753-44d9-4095-b24c-48cf68fb991f",
       "14593296-ab74-4261-be10-aab5844590a8",
       "7cec6f56-ceb2-42ed-906d-42581b8306fc",
       "03aa2e2c-4ca9-4525-a78e-8af6520e6a16",
@@ -546,19 +519,21 @@
       "1c0e3ed5-bfe2-4a19-a87b-cd15a4b7d36d",
       "ca78094d-af6a-4bf7-9162-507a02b583f9",
       "130f511a-b9cd-408d-921a-9b9bbb2a6471",
-      "87b62210-d6c7-4e01-99ce-8f0a53e0012a",
+      "87b62210-d6c7-4e01-a954-db2db4f4ea3a",
       "6f35ef65-e8f9-4343-a112-cc533a1fc660",
       "a6a8524c-0a72-476f-b1a5-7705024b76f8",
       "e5659b0e-039d-43af-8ef9-e7438ac8ab94",
       "23b1d034-5f71-4740-bf6f-0052259935c1",
       "a34fe133-3ffe-4f1a-9887-79ad0fc34d2c",
       "7f04601e-5c9c-4d73-9143-761450a75b0e",
+      "6df654de-ced6-4da4-8e84-744a57091872",
       "e8daafb8-9e86-4a3a-869c-27e252b36e33",
-      "5cc6db76-7820-43e9-ac39-e0915ab15d7d",
+      "0a2c3c06-e276-4f80-a2e9-1e2113b6ee44",
       "ba20478b-9e18-49da-ba29-6fa14f2fa9ae",
       "534bcf7a-4b03-4748-a95d-3b15d1507941",
       "7fa6cf90-2227-4b24-a6d9-d0b29e825b0d",
       "b9ffaaa1-b40b-46e8-8daf-603ebf2068be",
+      "7d1a1f34-41c7-4384-b02f-8445519dbd8b",
       "ebb713bd-2338-4e91-a96f-05c49170cbcb",
       "2c872dbd-6917-4f49-a3a5-30daa02fee20",
       "70b64f9e-85f7-455e-a489-d27e14b69571",
@@ -566,6 +541,7 @@
       "4ce63685-1867-40ac-b871-5b2b2ea385e9",
       "1316b33d-64b5-4f9f-9a55-1e2984d984e3",
       "fedb987e-de0d-4f1b-8d57-7d809f54e2c8",
+      "c7498749-12a9-4f25-a746-c8c49f803219",
       "d16f86f5-d08e-4c1d-b7ac-f7a8fb619b9d",
       "0fa68900-9fe9-4c6b-9660-8a16198b9e13",
       "54d5bc6e-0b35-41a3-aea3-e34a5558c9e6",
@@ -590,9 +566,9 @@
       "7c2c2710-4368-4648-8142-b9e9ddb177ba"
      ]
     },
-    "de8c29ea-634b-4ef4-a05a-51cb236fea73": {
-     "title": "Opsætning og forbindelse",
-     "id": "de8c29ea-634b-4ef4-a05a-51cb236fea73",
+    "ef1936c0-d0a7-42cd-8515-9b906f312710": {
+     "title": "Opsætning og integration",
+     "id": "ef1936c0-d0a7-42cd-8515-9b906f312710",
      "references": [
       "a9b6019a-6be6-4454-9f61-acbb4be1e73c",
       "9ccb63ad-e00d-4a41-acd8-572ee7d9fe8b",
@@ -602,27 +578,41 @@
       "1c0e3ed5-bfe2-4a19-a87b-cd15a4b7d36d",
       "ca78094d-af6a-4bf7-9162-507a02b583f9",
       "130f511a-b9cd-408d-921a-9b9bbb2a6471",
+      "25939485-cb3a-40ea-8ea4-fcbf0f775f71",
       "e94a8da2-7e2c-4fc5-bf69-3455fd98354d",
-      "54d5bc6e-0b35-41a3-aea3-e34a5558c9e6",
-      "d0203c88-4f58-4558-81ae-e15f7467d6b8",
       "783bbb98-94b3-40e5-b32b-8594d1aa668d",
       "af0c4026-534f-492a-b5cc-403f95a406a8",
-      "25939485-cb3a-40ea-8ea4-fcbf0f775f71",
       "861e9437-b0fe-4202-b8bd-65831584305d",
+      "f22095d5-8656-4894-9694-7e31b7994e2f",
+      "d0203c88-4f58-4558-81ae-e15f7467d6b8",
       "c6033ba9-b0fc-4dd4-b9ea-041216c98998",
-      "f22095d5-8656-4894-9694-7e31b7994e2f"
+      "54d5bc6e-0b35-41a3-aea3-e34a5558c9e6",
+      "7d1a1f34-41c7-4384-b02f-8445519dbd8b"
+     ]
+    },
+    "96639528-0cc2-48af-a8bc-aab31453cd79": {
+     "title": "Basjustering",
+     "id": "96639528-0cc2-48af-a8bc-aab31453cd79",
+     "references": [
+      "e8daafb8-9e86-4a3a-869c-27e252b36e33",
+      "0a2c3c06-e276-4f80-a2e9-1e2113b6ee44",
+      "5cc6db76-7820-43e9-ac39-e0915ab15d7d",
+      "77f33363-e168-4fa2-bf81-88dc219ad349",
+      "25939485-cb3a-40ea-8ea4-fcbf0f775f71",
+      "f22095d5-8656-4894-9694-7e31b7994e2f",
+      "54d5bc6e-0b35-41a3-aea3-e34a5558c9e6"
      ]
     }
    },
-   "rating": 4.79858657243816,
-   "count": 283,
-   "reviewCount": 111,
+   "rating": 4.79929577464789,
+   "count": 284,
+   "reviewCount": 112,
    "distribution": {
     "1": 1,
     "2": 2,
     "3": 8,
     "4": 31,
-    "5": 241
+    "5": 242
    }
   },
   "boxContent": [

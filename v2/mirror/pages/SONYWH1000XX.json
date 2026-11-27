@@ -216,7 +216,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 37,
+     "availableQuantity": 34,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -343,7 +343,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 10,
+     "availableQuantity": 9,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -443,25 +443,39 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony WH-1000XX leverer en varm, fyldig og omsluttende lyd med fremragende trådløs kvalitet. Høretelefonerne føles som en stærk opgradering i forhold til tidligere versioner og kombinerer forbedret ydeevne med en lettere og mere behagelig pasform. Den samlede kvalitet og funktionalitet gør modellen til et oplagt valg til hverdagslytning og rejser.",
+   "summary": "Sony WH-1000X leverer varm, slagkraftig og omsluttende lyd med høj samlet kvalitet. Høretelefonerne føles som en værdifuld forbedring i forhold til den tidligere generation og virker lettere med en bedre pasform. Fremragende trådløse funktioner og stor tilfredshed gør produktet særligt attraktivt.",
    "headlines": {
-    "rich, high-quality sound": {
-     "sentimentAnalysis": "Høretelefonerne beskrives konsekvent som meget gode med stærk lydkvalitet og fremragende trådløs ydeevne.",
-     "simpleTitle": "Fyldig lyd i høj kvalitet",
+    "high-quality headphones with good sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samlet set høretelefonerne som meget gode med god lyd og pålidelig ydeevne.",
+     "simpleTitle": "Høretelefoner i høj kvalitet med god lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "e61f3a9c-65b2-4a41-bff0-167a099fd411"
+     "key": "overall-quality",
+     "groupId": "af5c9405-ac7b-4ec3-ac41-521a90e91b8a"
+    },
+    "a worthwhile upgrade over the previous generation": {
+     "sentimentAnalysis": "Produktet opfattes som et tydeligt og værdifuldt fremskridt i forhold til den tidligere model, hvilket gør en opgradering attraktiv.",
+     "simpleTitle": "En værdifuld opgradering i forhold til tidligere generation",
+     "bias": "positive",
+     "key": "generation-upgrade",
+     "groupId": "f822b95e-f91c-4a95-b324-10bafcff7830"
     }
    },
    "grouping": {
-    "e61f3a9c-65b2-4a41-bff0-167a099fd411": {
-     "title": "Lydkvalitet",
-     "id": "e61f3a9c-65b2-4a41-bff0-167a099fd411",
+    "af5c9405-ac7b-4ec3-ac41-521a90e91b8a": {
+     "title": "Samlet kvalitet",
+     "id": "af5c9405-ac7b-4ec3-ac41-521a90e91b8a",
      "references": [
       "84627bb6-e956-4cd5-9d84-2abbccf7547a",
-      "ffc56a6f-c46c-4f24-b63d-f27bca0c50c4",
       "f5ca9865-d0be-427b-8bca-ec6d577aa895",
       "0c1abd58-92f8-4135-9d5a-ba44a7dcddc6"
+     ]
+    },
+    "f822b95e-f91c-4a95-b324-10bafcff7830": {
+     "title": "Forbedring i forhold til tidligere generation",
+     "id": "f822b95e-f91c-4a95-b324-10bafcff7830",
+     "references": [
+      "f5ca9865-d0be-427b-8bca-ec6d577aa895",
+      "2526f90a-2ac9-4cfd-8ae4-cc580cf05f06"
      ]
     }
    },

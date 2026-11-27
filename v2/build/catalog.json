@@ -8,7 +8,7 @@
    "parent": null,
    "website": true,
    "products": 0,
-   "all": 218,
+   "all": 217,
    "bundles": 0
   },
   {
@@ -340,8 +340,8 @@
    "title": "TV tilbehør",
    "parent": "/tilbehor/",
    "website": true,
-   "products": 29,
-   "all": 29,
+   "products": 28,
+   "all": 28,
    "bundles": 0
   },
   {
@@ -952,7 +952,7 @@
     "da": "Minijack-kabel"
    },
    "cat": "/kabler/minijack-kabel/",
-   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin1,0/",
+   "url": "/audioquest-big-sur-minijack-kabel/aqbigsurmjin800/",
    "kind": "cable",
    "scope": "pricelist",
    "facets": {
@@ -10503,7 +10503,7 @@
     "da": "Kompakt højtaler – Aktive"
    },
    "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4ash/",
+   "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4wa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -10515,19 +10515,19 @@
    },
    "variants": [
     {
-     "sku": "ARGFENRISA4ASH",
-     "label": "Ask",
+     "sku": "ARGFENRISA4WA",
+     "label": "Valnød",
      "price": 2199,
      "was": 2799,
      "colorKey": "Wood",
-     "ean": "5706957014316",
-     "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4ash/",
-     "img": "hk:517a0446-e217-49a6-9e79-41acc1fd6736",
+     "ean": "5706957019014",
+     "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4wa/",
+     "img": "hk:3ffc272a-61b7-46b5-ba9c-eb479247c74b",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,5",
       "Vægt emballage (kg)": "6,6",
-      "Mål (emballage)": "28 x 40 x 31 cm (bredde x højde x dybde)",
+      "Mål (emballage)": "28 x 31 x 40 cm (bredde x højde x dybde)",
       "Mål (produkt)": "14 x 24 x 22 cm (bredde x højde x dybde)"
      }
     },
@@ -10566,19 +10566,19 @@
      }
     },
     {
-     "sku": "ARGFENRISA4WA",
-     "label": "Valnød",
+     "sku": "ARGFENRISA4ASH",
+     "label": "Ask",
      "price": 2199,
      "was": 2799,
      "colorKey": "Wood",
-     "ean": "5706957019014",
-     "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4wa/",
-     "img": "hk:3ffc272a-61b7-46b5-ba9c-eb479247c74b",
+     "ean": "5706957014316",
+     "url": "/argon-audio-fenris-a4-kompakt-hoejtaler--aktive/argfenrisa4ash/",
+     "img": "hk:517a0446-e217-49a6-9e79-41acc1fd6736",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,5",
       "Vægt emballage (kg)": "6,6",
-      "Mål (emballage)": "28 x 31 x 40 cm (bredde x højde x dybde)",
+      "Mål (emballage)": "28 x 40 x 31 cm (bredde x højde x dybde)",
       "Mål (produkt)": "14 x 24 x 22 cm (bredde x højde x dybde)"
      }
     },
@@ -11789,22 +11789,6 @@
      }
     },
     {
-     "sku": "ARGFORTEA5WIFIWA",
-     "label": "Valnød",
-     "price": 6499,
-     "colorKey": "Wood",
-     "ean": "5706957014811",
-     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifiwa/",
-     "img": "hk:2a8536d2-98b5-456d-b229-93d384da0d10",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "10",
-      "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "ARGFORTEA5WIFIBK",
      "label": "Sort",
      "price": 6499,
@@ -11817,6 +11801,22 @@
       "Vægt (kg)": "9",
       "Vægt emballage (kg)": "10",
       "Mål (emballage)": "31 x 38 x 45 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGFORTEA5WIFIWA",
+     "label": "Valnød",
+     "price": 6499,
+     "colorKey": "Wood",
+     "ean": "5706957014811",
+     "url": "/argon-audio-forte-a5-wifi-kompakt-hoejtaler--aktive/argfortea5wifiwa/",
+     "img": "hk:2a8536d2-98b5-456d-b229-93d384da0d10",
+     "stock": "notInStockNonStockedItem",
+     "specs": {
+      "Vægt (kg)": "9",
+      "Vægt emballage (kg)": "10",
+      "Mål (emballage)": "30 x 39 x 45 cm (bredde x højde x dybde)",
       "Mål (produkt)": "16,5 x 27 x 23 cm (bredde x højde x dybde)"
      }
     },
@@ -13888,7 +13888,7 @@
     "da": "Pladespiller"
    },
    "cat": "/pladespiller/pladespillere/",
-   "url": "/argon-audio-tt-3-pladespiller/argtt3wh/",
+   "url": "/argon-audio-tt-3-pladespiller/argtt3bk/",
    "kind": "source",
    "scope": "diagram",
    "facets": {
@@ -13896,23 +13896,6 @@
     "axis": "colour"
    },
    "variants": [
-    {
-     "sku": "ARGTT3WH",
-     "label": "Hvid",
-     "price": 2399,
-     "was": 2999,
-     "colorKey": "White",
-     "ean": "5706957013234",
-     "url": "/argon-audio-tt-3-pladespiller/argtt3wh/",
-     "img": "hk:7e634ac3-d8ab-454a-9a22-ae0559cb3e0e",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "4,6",
-      "Vægt emballage (kg)": "5,8",
-      "Mål (emballage)": "42 x 20,5 x 55 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "42 x 12,1 x 35,5 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "ARGTT3BK",
      "label": "Sort",
@@ -13939,6 +13922,23 @@
      "ean": "5706957013258",
      "url": "/argon-audio-tt-3-pladespiller/argtt3ash/",
      "img": "hk:4dc29b0b-4a84-4af4-b64c-6938593a7c71",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "4,6",
+      "Vægt emballage (kg)": "5,8",
+      "Mål (emballage)": "42 x 20,5 x 55 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "42 x 12,1 x 35,5 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "ARGTT3WH",
+     "label": "Hvid",
+     "price": 2399,
+     "was": 2999,
+     "colorKey": "White",
+     "ean": "5706957013234",
+     "url": "/argon-audio-tt-3-pladespiller/argtt3wh/",
+     "img": "hk:7e634ac3-d8ab-454a-9a22-ae0559cb3e0e",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "4,6",
@@ -14821,13 +14821,13 @@
      }
     },
     {
-     "sku": "ARGTTSNPDACH",
-     "label": "Dark Cherry - Ekskl. pickup",
+     "sku": "ARGTTSNPWA",
+     "label": "Valnød - Ekskl. pickup",
      "price": 9999,
-     "colorKey": "Black",
-     "ean": "5706957022120",
-     "url": "/argon-audio-tt-signature-pladespiller/argttsnpdach/",
-     "img": "hk:45acd38a-4996-48d1-bb6b-10e86b1f71b4",
+     "colorKey": "Wood",
+     "ean": "5706957022137",
+     "url": "/argon-audio-tt-signature-pladespiller/argttsnpwa/",
+     "img": "hk:f704d9aa-0b11-4616-95af-ebb3f1db4328",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "9",
@@ -14836,13 +14836,13 @@
      }
     },
     {
-     "sku": "ARGTTSNPWA",
-     "label": "Valnød - Ekskl. pickup",
+     "sku": "ARGTTSNPDACH",
+     "label": "Dark Cherry - Ekskl. pickup",
      "price": 9999,
-     "colorKey": "Wood",
-     "ean": "5706957022137",
-     "url": "/argon-audio-tt-signature-pladespiller/argttsnpwa/",
-     "img": "hk:f704d9aa-0b11-4616-95af-ebb3f1db4328",
+     "colorKey": "Black",
+     "ean": "5706957022120",
+     "url": "/argon-audio-tt-signature-pladespiller/argttsnpdach/",
+     "img": "hk:45acd38a-4996-48d1-bb6b-10e86b1f71b4",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "9",
@@ -19609,7 +19609,7 @@
     "da": "Trådløst headset"
    },
    "cat": "/horetelefoner/on-ear-over-ear/",
-   "url": "/bang--olufsen-beoplay-h95-traadloest-headset/boh95go/",
+   "url": "/bang--olufsen-beoplay-h95-traadloest-headset/boh95bk/",
    "kind": "headphones",
    "scope": "diagram",
    "facets": {
@@ -19619,22 +19619,6 @@
     "wifi": false
    },
    "variants": [
-    {
-     "sku": "BOH95GO",
-     "label": "Guld",
-     "price": 5249,
-     "was": 7490,
-     "colorKey": "Gold",
-     "ean": "5705260087253",
-     "url": "/bang--olufsen-beoplay-h95-traadloest-headset/boh95go/",
-     "img": "hk:a15812db-d2b7-4a4f-b6b5-7534f8418e75",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,32",
-      "Vægt emballage (kg)": "1",
-      "Mål (emballage)": "23 x 9 x 21 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "BOH95BK",
      "label": "Black",
@@ -19678,6 +19662,22 @@
      "ean": "5705260095043",
      "url": "/bang--olufsen-beoplay-h95-traadloest-headset/boh95navy/",
      "img": "hk:a74593e7-43f5-4cc1-a9c0-0d00a576ff4d",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,32",
+      "Vægt emballage (kg)": "1",
+      "Mål (emballage)": "23 x 9 x 21 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "BOH95GO",
+     "label": "Guld",
+     "price": 5249,
+     "was": 7490,
+     "colorKey": "Gold",
+     "ean": "5705260087253",
+     "url": "/bang--olufsen-beoplay-h95-traadloest-headset/boh95go/",
+     "img": "hk:a15812db-d2b7-4a4f-b6b5-7534f8418e75",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,32",
@@ -33383,7 +33383,7 @@
     "da": "Kompakt højtaler"
    },
    "cat": "/hojtalere/kompakt-hojtaler/",
-   "url": "/dali-opticon-2-mk2-kompakt-hoejtaler/daliopticon2mk2bk/",
+   "url": "/dali-opticon-2-mk2-kompakt-hoejtaler/daliopticon2mk2doa/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33392,6 +33392,23 @@
     "axis": "colour"
    },
    "variants": [
+    {
+     "sku": "DALIOPTICON2MK2DOA",
+     "label": "Mørk eg",
+     "price": 7298,
+     "was": 9398,
+     "colorKey": "Wood",
+     "ean": "5703120111452",
+     "url": "/dali-opticon-2-mk2-kompakt-hoejtaler/daliopticon2mk2doa/",
+     "img": "hk:4bd4c536-4c9e-49b6-96bb-c6e3a332b378",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "8,8",
+      "Vægt emballage (kg)": "10",
+      "Mål (emballage)": "27,7 x 45,8 x 38,6 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "19,5 x 35,1 x 29,7 cm (bredde x højde x dybde)"
+     }
+    },
     {
      "sku": "DALIOPTICON2MK2BK",
      "label": "Sort ask",
@@ -33418,23 +33435,6 @@
      "ean": "5703120111438",
      "url": "/dali-opticon-2-mk2-kompakt-hoejtaler/daliopticon2mk2wh/",
      "img": "hk:e2c9f6e0-93f2-4b7a-8f1f-d36e78696dd7",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "8,8",
-      "Vægt emballage (kg)": "10",
-      "Mål (emballage)": "27,7 x 45,8 x 38,6 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "19,5 x 35,1 x 29,7 cm (bredde x højde x dybde)"
-     }
-    },
-    {
-     "sku": "DALIOPTICON2MK2DOA",
-     "label": "Mørk eg",
-     "price": 7298,
-     "was": 9398,
-     "colorKey": "Wood",
-     "ean": "5703120111452",
-     "url": "/dali-opticon-2-mk2-kompakt-hoejtaler/daliopticon2mk2doa/",
-     "img": "hk:4bd4c536-4c9e-49b6-96bb-c6e3a332b378",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "8,8",
@@ -33516,7 +33516,7 @@
     "da": "Gulvhøjtaler"
    },
    "cat": "/hojtalere/gulvhojtaler/",
-   "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2doa/",
+   "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2wh/",
    "kind": "speaker",
    "scope": "diagram",
    "facets": {
@@ -33526,19 +33526,19 @@
    },
    "variants": [
     {
-     "sku": "DALIOPTICON6MK2DOA",
-     "label": "Mørk eg",
+     "sku": "DALIOPTICON6MK2WH",
+     "label": "Satin White",
      "price": 11998,
      "was": 15798,
-     "colorKey": "Wood",
-     "ean": "5703120111483",
-     "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2doa/",
-     "img": "hk:9c0edbbf-9873-4105-adb2-c8167dd1aab8",
+     "colorKey": "White",
+     "ean": "5703120111469",
+     "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2wh/",
+     "img": "hk:a5e15a95-77de-4e42-bee1-de447e73cce2",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "20,4",
       "Vægt emballage (kg)": "22",
-      "Mål (emballage)": "39 x 29 x 111 cm (bredde x højde x dybde)",
+      "Mål (emballage)": "39 x 29 x 110 cm (bredde x højde x dybde)",
       "Mål (produkt)": "19,5 x 100,1 x 33 cm (bredde x højde x dybde)"
      }
     },
@@ -33560,19 +33560,19 @@
      }
     },
     {
-     "sku": "DALIOPTICON6MK2WH",
-     "label": "Satin White",
+     "sku": "DALIOPTICON6MK2DOA",
+     "label": "Mørk eg",
      "price": 11998,
      "was": 15798,
-     "colorKey": "White",
-     "ean": "5703120111469",
-     "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2wh/",
-     "img": "hk:a5e15a95-77de-4e42-bee1-de447e73cce2",
+     "colorKey": "Wood",
+     "ean": "5703120111483",
+     "url": "/dali-opticon-6-mk2-gulvhoejtaler/daliopticon6mk2doa/",
+     "img": "hk:9c0edbbf-9873-4105-adb2-c8167dd1aab8",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "20,4",
       "Vægt emballage (kg)": "22",
-      "Mål (emballage)": "39 x 29 x 110 cm (bredde x højde x dybde)",
+      "Mål (emballage)": "39 x 29 x 111 cm (bredde x højde x dybde)",
       "Mål (produkt)": "19,5 x 100,1 x 33 cm (bredde x højde x dybde)"
      }
     }
@@ -42906,7 +42906,7 @@
     "da": "Integreret forstærker"
    },
    "cat": "/stereo/forstarker/",
-   "url": "/denon-pma-600ne-integreret-forstaerker/denpma600neps/",
+   "url": "/denon-pma-600ne-integreret-forstaerker/denpma600nebk/",
    "kind": "amplifier",
    "scope": "diagram",
    "facets": {
@@ -42916,22 +42916,6 @@
     "wifi": false
    },
    "variants": [
-    {
-     "sku": "DENPMA600NEPS",
-     "label": "Premium Silver",
-     "price": 3799,
-     "colorKey": "Silver",
-     "ean": "4951035070963",
-     "url": "/denon-pma-600ne-integreret-forstaerker/denpma600neps/",
-     "img": "hk:21b54347-ccd9-4b6d-ac80-908250147d0c",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "9",
-      "Vægt emballage (kg)": "9",
-      "Mål (emballage)": "3,9 x 21 x 52 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "43,4 x 12,1 x 30,8 cm (bredde x højde x dybde)"
-     }
-    },
     {
      "sku": "DENPMA600NEBK",
      "label": "Sort",
@@ -42945,6 +42929,22 @@
       "Vægt (kg)": "8",
       "Vægt emballage (kg)": "9",
       "Mål (emballage)": "38 x 20 x 51 cm (bredde x højde x dybde)",
+      "Mål (produkt)": "43,4 x 12,1 x 30,8 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "DENPMA600NEPS",
+     "label": "Premium Silver",
+     "price": 3799,
+     "colorKey": "Silver",
+     "ean": "4951035070963",
+     "url": "/denon-pma-600ne-integreret-forstaerker/denpma600neps/",
+     "img": "hk:21b54347-ccd9-4b6d-ac80-908250147d0c",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "9",
+      "Vægt emballage (kg)": "9",
+      "Mål (emballage)": "3,9 x 21 x 52 cm (bredde x højde x dybde)",
       "Mål (produkt)": "43,4 x 12,1 x 30,8 cm (bredde x højde x dybde)"
      }
     }
@@ -49076,62 +49076,6 @@
    "read": "2026-11-25"
   },
   {
-   "sku": "ESSTVBMICROGAP09X",
-   "brand": "Essentials",
-   "model": "TVB Micro Gap 09",
-   "type": {
-    "key": "TvBracket",
-    "da": "TV-beslag"
-   },
-   "cat": "/tilbehor/tv-tilbehor/",
-   "url": "",
-   "kind": "mounting",
-   "scope": "pricelist",
-   "facets": {
-    "mount": "wall",
-    "axis": "colour"
-   },
-   "variants": [
-    {
-     "sku": "ESSTVBMICROGAP09BK",
-     "label": "Sort",
-     "price": 399,
-     "was": 499,
-     "colorKey": "Black",
-     "ean": "5706957016921",
-     "img": "hk:1f38ce0b-cc9c-4a2f-ae91-594fbdec1840",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Vægt (kg)": "1,6",
-      "Vægt emballage (kg)": "1,7",
-      "Mål (emballage)": "14,5 x 73,5 x 3,1 cm (bredde x højde x dybde)",
-      "Mål (produkt)": "73 x 25,3 x 1 cm (bredde x højde x dybde)"
-     }
-    }
-   ],
-   "specs": {
-    "Min. TV størrelse": "43\"",
-    "Maks. TV størrelse": "85\"",
-    "VESA kompatibel": "200x200, 300x200, 300x300, 400x200, 400x300, 400x400, 600x400",
-    "Min. afstand til væg": "9,5 mm",
-    "Maks. afstand til væg": "9,5 cm",
-    "Indbygget kabelhåndtering": "Nej",
-    "Maks. belastning": "75 kg",
-    "Indbygget vaterpas": "Ja",
-    "Indbygget motordrev": "Nej"
-   },
-   "rel": {
-    "alt": [
-     "ESSTVBSLIM18X",
-     "ESSTVBMOTSMALL58X",
-     "ESSTVBMOTFULL40X",
-     "ESSTVBMOTSLIM19X",
-     "ESSTVBSCREWKIT1X"
-    ]
-   },
-   "read": "2026-11-25"
-  },
-  {
    "sku": "ESSTVBMOTFULL40X",
    "brand": "Essentials",
    "model": "TVB Motion Full 40",
@@ -53540,22 +53484,6 @@
      }
     },
     {
-     "sku": "JBLLIVE680OR",
-     "label": "Orange",
-     "price": 799,
-     "was": 1199,
-     "colorKey": "Orange",
-     "ean": "1200130039829",
-     "url": "/jbl-live-680nc-traadloest-headset/jbllive680or/",
-     "img": "hk:d8c034c3-45da-4bed-9a5f-53676e746c55",
-     "stock": "warehouseInStock",
-     "specs": {
-      "Vægt (kg)": "0,24",
-      "Vægt emballage (kg)": "0,45",
-      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVE680BL",
      "label": "Blå",
      "price": 799,
@@ -53564,6 +53492,22 @@
      "ean": "1200130033193",
      "url": "/jbl-live-680nc-traadloest-headset/jbllive680bl/",
      "img": "hk:a79c1635-2e10-4f0c-b6a1-5d6ddec31d71",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,24",
+      "Vægt emballage (kg)": "0,45",
+      "Mål (emballage)": "5 x 20,5 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVE680OR",
+     "label": "Orange",
+     "price": 799,
+     "was": 1199,
+     "colorKey": "Orange",
+     "ean": "1200130039829",
+     "url": "/jbl-live-680nc-traadloest-headset/jbllive680or/",
+     "img": "hk:d8c034c3-45da-4bed-9a5f-53676e746c55",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,24",
@@ -53711,22 +53655,6 @@
      }
     },
     {
-     "sku": "JBLLIVE780GR",
-     "label": "Grøn",
-     "price": 799,
-     "was": 1299,
-     "colorKey": "Green",
-     "ean": "1200130039072",
-     "url": "/jbl-live-780nc-traadloest-headset/jbllive780gr/",
-     "img": "hk:6bb39357-883d-4602-af29-f1044a66d382",
-     "stock": "notInStockAtpDate",
-     "specs": {
-      "Vægt (kg)": "0,26",
-      "Vægt emballage (kg)": "0,48",
-      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
-     }
-    },
-    {
      "sku": "JBLLIVE780BL",
      "label": "Blå",
      "price": 799,
@@ -53736,6 +53664,22 @@
      "url": "/jbl-live-780nc-traadloest-headset/jbllive780bl/",
      "img": "hk:dccf6b7f-80c1-4c9b-b76a-58cbf9b874db",
      "stock": "warehouseInStock",
+     "specs": {
+      "Vægt (kg)": "0,26",
+      "Vægt emballage (kg)": "0,48",
+      "Mål (emballage)": "5,2 x 22,7 x 22,3 cm (bredde x højde x dybde)"
+     }
+    },
+    {
+     "sku": "JBLLIVE780GR",
+     "label": "Grøn",
+     "price": 799,
+     "was": 1299,
+     "colorKey": "Green",
+     "ean": "1200130039072",
+     "url": "/jbl-live-780nc-traadloest-headset/jbllive780gr/",
+     "img": "hk:6bb39357-883d-4602-af29-f1044a66d382",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "0,26",
       "Vægt emballage (kg)": "0,48",
@@ -56095,13 +56039,13 @@
      }
     },
     {
-     "sku": "KEFLSLUXEWH",
-     "label": "Mineral White",
+     "sku": "KEFLSLUXEBK",
+     "label": "Eclipse Black",
      "price": 29995,
-     "colorKey": "White",
-     "ean": "637203052729",
-     "url": "/kef-ls-luxe-kompakt-hoejtaler--aktive/keflsluxewh/",
-     "img": "hk:1befc71c-61f3-4ed3-9e19-6b61dace17e0",
+     "colorKey": "Black",
+     "ean": "637203052644",
+     "url": "/kef-ls-luxe-kompakt-hoejtaler--aktive/keflsluxebk/",
+     "img": "hk:761cd21f-55d6-44e6-84c2-8f6e0fd1acad",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "20",
@@ -56111,13 +56055,13 @@
      }
     },
     {
-     "sku": "KEFLSLUXEBK",
-     "label": "Eclipse Black",
+     "sku": "KEFLSLUXEWH",
+     "label": "Mineral White",
      "price": 29995,
-     "colorKey": "Black",
-     "ean": "637203052644",
-     "url": "/kef-ls-luxe-kompakt-hoejtaler--aktive/keflsluxebk/",
-     "img": "hk:761cd21f-55d6-44e6-84c2-8f6e0fd1acad",
+     "colorKey": "White",
+     "ean": "637203052729",
+     "url": "/kef-ls-luxe-kompakt-hoejtaler--aktive/keflsluxewh/",
+     "img": "hk:1befc71c-61f3-4ed3-9e19-6b61dace17e0",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "20",
@@ -74114,13 +74058,13 @@
      }
     },
     {
-     "sku": "PEDMOONTRAYSHELFMGR",
-     "label": "Grøn",
+     "sku": "PEDMOONTRAYSHELFPRL",
+     "label": "Beige",
      "price": 900,
-     "colorKey": "Green",
-     "ean": "5740027301463",
-     "url": "/pedestal-moon-tray-shelf-moebeltilbehoer/pedmoontrayshelfmgr/",
-     "img": "hk:f16f908d-5662-41c5-b2ba-27a9c0916c68",
+     "colorKey": "Beige",
+     "ean": "5740027301456",
+     "url": "/pedestal-moon-tray-shelf-moebeltilbehoer/pedmoontrayshelfprl/",
+     "img": "hk:9303824a-9ff5-4858-bdff-20591131bad9",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,17",
@@ -74129,13 +74073,13 @@
      }
     },
     {
-     "sku": "PEDMOONTRAYSHELFPRL",
-     "label": "Beige",
+     "sku": "PEDMOONTRAYSHELFMGR",
+     "label": "Grøn",
      "price": 900,
-     "colorKey": "Beige",
-     "ean": "5740027301456",
-     "url": "/pedestal-moon-tray-shelf-moebeltilbehoer/pedmoontrayshelfprl/",
-     "img": "hk:9303824a-9ff5-4858-bdff-20591131bad9",
+     "colorKey": "Green",
+     "ean": "5740027301463",
+     "url": "/pedestal-moon-tray-shelf-moebeltilbehoer/pedmoontrayshelfmgr/",
+     "img": "hk:f16f908d-5662-41c5-b2ba-27a9c0916c68",
      "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "5,17",
@@ -84971,8 +84915,8 @@
      "SONMOVEG2",
      "DALIKATCHG2",
      "SONROAMG2",
-     "SOUNDBOKSRIDER",
      "MARBROMLEY150",
+     "SOUNDBOKSRIDER",
      "MARSTOCKWELL3",
      "SOUNDBOKSMIX",
      "MARKILBURN3",
@@ -84980,7 +84924,7 @@
      "BOEXPLORE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONPORT",
@@ -85049,7 +84993,7 @@
      "ARGFORTEA5MK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONRAYWM",
@@ -85092,7 +85036,7 @@
      "SONRAY"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONROAMG2",
@@ -85168,9 +85112,6 @@
     }
    ],
    "specs": {
-    "Højtaler type": "Trådløs højtaler",
-    "IP certificering": "IP67",
-    "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect",
     "Batteritid": "10",
     "Kabinet type": "Lukket",
     "Fjernbetjening": "Nej",
@@ -85184,8 +85125,11 @@
     "Teknologier": "TruePlay",
     "Stemmestyring": "Indbygget",
     "Streamingtjenester": "Spotify, Tidal, youSee musik, Soundcloud, Apple Music, Deezer",
-    "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom",
-    "Streaming services, musik": "Spotify, Tidal, youSee musik, Apple Music, Soundcloud, Deezer"
+    "Streaming services, musik": "Spotify, Tidal, youSee musik, Apple Music, Soundcloud, Deezer",
+    "Højtaler type": "Trådløs højtaler",
+    "IP certificering": "IP67",
+    "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect",
+    "Trådløs overførsel": "Bluetooth-indgang, Wi-Fi, Airplay 2, Spotify Connect, TIDAL Connect, Sonos Multiroom"
    },
    "rel": {
     "alt": [
@@ -85199,7 +85143,7 @@
      "NOONADVENTURE"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONSUBG4",
@@ -85278,7 +85222,7 @@
      "SONRAY"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONSUBMINI",
@@ -85358,7 +85302,7 @@
      "SONERA300"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYHTA9000",
@@ -85387,7 +85331,7 @@
      "ean": "5013493402287",
      "url": "/sony-bravia-theatre-bar-9-soundbar/sonyhta9000bk/",
      "img": "hk:c58c9cef-7ef2-41cc-9d2b-250595578f1f",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "5,5",
       "Vægt emballage (kg)": "9,8",
@@ -85412,7 +85356,7 @@
      "SONYSARS9"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKA65PB",
@@ -85500,7 +85444,7 @@
      "ean": "4548736183063",
      "url": "/sony-bravia-6-oled-tv/sonyk77a65pb/",
      "img": "hk:f99872bc-46ca-4a31-910f-ee6c76946c27",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "25,9",
       "Vægt emballage (kg)": "37",
@@ -85520,7 +85464,7 @@
      "ean": "4548736183087",
      "url": "/sony-bravia-6-oled-tv/sonyk83a65pb/",
      "img": "hk:b0f027d1-bbdb-4046-b955-d8eb435b19b3",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "17",
       "Vægt emballage (kg)": "39",
@@ -85538,7 +85482,7 @@
      "SONYKXR35M2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKD32W804PX",
@@ -85629,7 +85573,7 @@
      "ARGFORTEA55MK2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKXR35M2",
@@ -85657,7 +85601,7 @@
      "ean": "4548736177987",
      "url": "/sony-bravia-3-ii-led-tv/sonyk43xr35m2/",
      "img": "hk:bc1063fe-3f2d-4603-b12d-1bfe11866c50",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Total HDMI Inputs": "4x",
       "HDMI": "2.1",
@@ -85808,7 +85752,7 @@
      "ean": "4548736177925",
      "url": "/sony-bravia-3-ii-led-tv/sonyk65xr35m2/",
      "img": "hk:97c6b28e-6e28-47d4-b6bc-3ea668fb23b7",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Bluetooth ": "Ja",
       "Bluetooth version": "5.3",
@@ -85899,7 +85843,7 @@
      "ean": "4548736177864",
      "url": "/sony-bravia-3-ii-led-tv/sonyk100xr35m2/",
      "img": "hk:0ef3b0b5-af1d-4c7b-92b5-d08994027e6a",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Total HDMI Inputs": "4x",
       "HDMI": "2.1",
@@ -86013,7 +85957,7 @@
      "BLSP530"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKXR75M2",
@@ -86094,7 +86038,7 @@
      "ean": "4548736178250",
      "url": "/sony-bravia-7-ii-true-rgb-tv/sonyk85xr75m2/",
      "img": "hk:9fb268f4-32a5-42ca-8717-92a78ee21658",
-     "stock": "notInStockNonStockedItem",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Total HDMI Inputs": "4x",
       "HDMI": "2.1",
@@ -86191,6 +86135,59 @@
      }
     },
     {
+     "sku": "SONYK55XR75M2",
+     "label": "55\"",
+     "price": 12999,
+     "was": 18999,
+     "colorKey": "Black",
+     "ean": "4548736178373",
+     "url": "/sony-bravia-7-ii-true-rgb-tv/sonyk55xr75m2/",
+     "img": "hk:158ceb57-4385-4c5a-8011-9de1c19837c9",
+     "stock": "warehouseInStock",
+     "specs": {
+      "Total HDMI Inputs": "4x",
+      "HDMI": "2.1",
+      "Antal HDMI 2.1 Indgange": "2x",
+      "HDMI 2.1 porte": "3, 4",
+      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
+      "HDMI ARC/eARC": "eARC",
+      "Antal USB-porte": "2x",
+      "DVB-tuners": "DVB-T, DVB-C, DVB-S",
+      "HDCP": "2.3",
+      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
+      "Vægt (kg)": "21,4",
+      "Vægt emballage (kg)": "28",
+      "Skærmstørrelse": "55\"",
+      "VESA": "300x300",
+      "Vægt inkl. bordstativ, kg": "21,4",
+      "Mål inkl. stander, cm (BxHxD)": "122.8 x 78.4 x 20.9 cm",
+      "Vægt ekskl. bordstativ, kg": "18,4",
+      "Mål ekskl. stander, cm (BxHxD)": "122.8 x 70.4 x 5.4 (5.7) cm",
+      "Slim Fit Wallmount kompatibel": "Nej",
+      "Full-motion Slim Wallmount kompatibel": "Nej",
+      "Auto Rotating Wallmount kompatibel": "Nej",
+      "Mål (emballage)": "20,6 x 82,7 x 139,8 cm (bredde x højde x dybde)",
+      "Bluetooth ": "Ja",
+      "Bluetooth version": "5.3",
+      "Understøttede lydformater": "DTS, Dolby Atmos, Dolby Digital",
+      "Styresystem": "Android",
+      "Mikrofon": "Ja",
+      "USB Recording": "Ja",
+      "Stemmestyring": "Indbygget",
+      "Elektronisk Programguide (EPG)": "Ja",
+      "EPREL Code": "2603748",
+      "Opløsning": "4K Ultra HD",
+      "Skærmteknologi": "LED",
+      "HDR-formater": "HDR10, Dolby Vision, HLG",
+      "Billedprocessor": "XR Processor",
+      "Game mode": "Ja",
+      "Full / edge backlight": "RGB LED",
+      "Skærmopdatering (Hz)": "120Hz",
+      "Energy Efficiency": "E",
+      "Standby strømforbrug (watt)": "0,5"
+     }
+    },
+    {
      "sku": "SONYK75XR75M2",
      "label": "75\"",
      "price": 17999,
@@ -86239,59 +86236,6 @@
       "Full / edge backlight": "RGB LED",
       "Skærmopdatering (Hz)": "120Hz",
       "Energy Efficiency": "C",
-      "Standby strømforbrug (watt)": "0,5"
-     }
-    },
-    {
-     "sku": "SONYK55XR75M2",
-     "label": "55\"",
-     "price": 12999,
-     "was": 18999,
-     "colorKey": "Black",
-     "ean": "4548736178373",
-     "url": "/sony-bravia-7-ii-true-rgb-tv/sonyk55xr75m2/",
-     "img": "hk:158ceb57-4385-4c5a-8011-9de1c19837c9",
-     "stock": "notInStockNonStockedItem",
-     "specs": {
-      "Total HDMI Inputs": "4x",
-      "HDMI": "2.1",
-      "Antal HDMI 2.1 Indgange": "2x",
-      "HDMI 2.1 porte": "3, 4",
-      "HDMI 2.1 funktioner": "Auto Game Mode (ALLM), HFR (High Frame Rate (4K/120), Variable Refresh Rate",
-      "HDMI ARC/eARC": "eARC",
-      "Antal USB-porte": "2x",
-      "DVB-tuners": "DVB-T, DVB-C, DVB-S",
-      "HDCP": "2.3",
-      "Wi-Fi version": "Wi-Fi 6E (802.11ax)",
-      "Vægt (kg)": "21,4",
-      "Vægt emballage (kg)": "28",
-      "Skærmstørrelse": "55\"",
-      "VESA": "300x300",
-      "Vægt inkl. bordstativ, kg": "21,4",
-      "Mål inkl. stander, cm (BxHxD)": "122.8 x 78.4 x 20.9 cm",
-      "Vægt ekskl. bordstativ, kg": "18,4",
-      "Mål ekskl. stander, cm (BxHxD)": "122.8 x 70.4 x 5.4 (5.7) cm",
-      "Slim Fit Wallmount kompatibel": "Nej",
-      "Full-motion Slim Wallmount kompatibel": "Nej",
-      "Auto Rotating Wallmount kompatibel": "Nej",
-      "Mål (emballage)": "20,6 x 82,7 x 139,8 cm (bredde x højde x dybde)",
-      "Bluetooth ": "Ja",
-      "Bluetooth version": "5.3",
-      "Understøttede lydformater": "DTS, Dolby Atmos, Dolby Digital",
-      "Styresystem": "Android",
-      "Mikrofon": "Ja",
-      "USB Recording": "Ja",
-      "Stemmestyring": "Indbygget",
-      "Elektronisk Programguide (EPG)": "Ja",
-      "EPREL Code": "2603748",
-      "Opløsning": "4K Ultra HD",
-      "Skærmteknologi": "LED",
-      "HDR-formater": "HDR10, Dolby Vision, HLG",
-      "Billedprocessor": "XR Processor",
-      "Game mode": "Ja",
-      "Full / edge backlight": "RGB LED",
-      "Skærmopdatering (Hz)": "120Hz",
-      "Energy Efficiency": "E",
       "Standby strømforbrug (watt)": "0,5"
      }
     },
@@ -86375,7 +86319,7 @@
      "BLSP530"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKXR82B",
@@ -86403,7 +86347,7 @@
      "ean": "4548736170216",
      "url": "/sony-bravia-8-ii-qd-oled-tv/sonyk65xr8m2b/",
      "img": "hk:d0c1dfb4-a098-44a9-a11f-cfb381f96d6c",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "HDMI": "2.1",
       "Antal HDMI 2.1 Indgange": "4x",
@@ -86447,7 +86391,7 @@
      "ean": "4548736170346",
      "url": "/sony-bravia-8-ii-qd-oled-tv/sonyk55xr8m2b/",
      "img": "hk:6e62dfcb-24fe-4daa-8912-83c4eb832dac",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "HDMI": "2.1",
       "Antal HDMI 2.1 Indgange": "4x",
@@ -86500,6 +86444,7 @@
      "SONYKXR5B"
     ],
     "rec": [
+     "SONYUBPX700KBX",
      "ARGFORTEA5WIFIX",
      "ARGFORTEA55WIFIX",
      "ARGSA2X",
@@ -86510,11 +86455,10 @@
      "DALIOPTICON6MK2",
      "NADC700V2",
      "BWM1BR",
-     "BWASW610M",
-     "SONYUBPX700KBX"
+     "BWASW610M"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYKXR95M2",
@@ -86594,7 +86538,7 @@
      "ean": "4548736178090",
      "url": "/sony-bravia-9-ii-true-rgb-tv/sonyk75xr95m2/",
      "img": "hk:313830c7-d0af-4cd2-8e67-d520df173a85",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Total HDMI Inputs": "4x",
       "HDMI": "2.1",
@@ -86773,7 +86717,7 @@
      "KEFLSX2"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYSARS9",
@@ -86818,7 +86762,7 @@
      "SONYHTA8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYSASW9",
@@ -86861,7 +86805,7 @@
      "SONYHTA8"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYSUWL900X",
@@ -86902,7 +86846,7 @@
      "SONYKD32W804PX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYUBPX700KBX",
@@ -86970,7 +86914,7 @@
      "PANDPUB9000"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYVPLXW5000ESX",
@@ -86996,7 +86940,7 @@
      "ean": "4548736132900",
      "url": "/sony-vpl-xw5000es-videoprojektor/sonyvplxw5000esbk/",
      "img": "hk:2fdb35e7-0ad3-4ecc-bdfa-d148a8c26e45",
-     "stock": "warehouseInStock",
+     "stock": "notInStockAtpDate",
      "specs": {
       "Vægt (kg)": "13",
       "Vægt emballage (kg)": "16,5",
@@ -87069,7 +87013,7 @@
      "HISC3ULTRAX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYVPLXW5100ES",
@@ -87174,7 +87118,7 @@
      "LYNGMP60H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYVPLXW6100ES",
@@ -87271,7 +87215,7 @@
      "LYNGMP60H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYVPLXW8100ES",
@@ -87368,7 +87312,7 @@
      "LYNGMP60H21"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWF1000XM6",
@@ -87403,7 +87347,7 @@
      "specs": {
       "Vægt (kg)": "0,13",
       "Vægt emballage (kg)": "0,28",
-      "Mål (emballage)": "5,6 x 8,7 x 9,1 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "5,55 x 8,7 x 9,1 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -87445,27 +87389,27 @@
     "acc": [
      "ESSCLEANKITINEARX",
      "ESSPSUSBACX",
+     "COMTGTW200C",
      "ESSCL1USBCCX",
      "ESSPSUSBAC65WX",
-     "SENBTD700",
-     "COMTGTW200C"
+     "SENBTD700"
     ],
     "alt": [
-     "DENAHC15PL",
-     "BWPI6",
-     "DENAHC840NCW",
-     "KEFMU3",
      "BWPI8",
      "BWPI8MCLAREN",
+     "DENAHC15PL",
      "SENMOMENTUMTW5",
+     "BWPI6",
+     "DENAHC840NCW",
      "BO11X",
      "JBLLIVEBUDS4",
      "SONYWFLC900",
      "BEOGRACE",
+     "KEFMU3",
      "JBLTOURPRO3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWFLC900",
@@ -87594,7 +87538,7 @@
      "SENBTD700"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWH1000XM4C",
@@ -87628,7 +87572,7 @@
      "specs": {
       "Vægt (kg)": "0,25",
       "Vægt emballage (kg)": "0,67",
-      "Mål (emballage)": "20,3 x 26,900000000000002 x 32,4 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "20,3 x 26,9 x 32,4 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -87643,7 +87587,7 @@
      "specs": {
       "Vægt (kg)": "0,25",
       "Vægt emballage (kg)": "0,67",
-      "Mål (emballage)": "20,3 x 26,900000000000002 x 32,4 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "20,3 x 26,9 x 32,4 cm (bredde x højde x dybde)"
      }
     },
     {
@@ -87658,7 +87602,7 @@
      "specs": {
       "Vægt (kg)": "0,25",
       "Vægt emballage (kg)": "0,67",
-      "Mål (emballage)": "20,3 x 26,900000000000002 x 32,4 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "20,3 x 26,9 x 32,4 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -87687,8 +87631,8 @@
      "SENBTD700"
     ],
     "alt": [
-     "SONYWH1000XM6",
      "SONYWH1000XM5",
+     "SONYWH1000XM6",
      "SENMOMENTUM5",
      "SENHDB630",
      "SENRS275",
@@ -87697,7 +87641,7 @@
      "NOONWHNX5X"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWH1000XM5",
@@ -87824,7 +87768,7 @@
      "BOHX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWH1000XM6",
@@ -87886,7 +87830,7 @@
      "ean": "4548736176850",
      "url": "/sony-wh-1000xm6-traadloest-headset/sonywh1000xm6sast/",
      "img": "hk:3d27dada-1632-4741-bc4c-5476ace08a86",
-     "stock": "notInStockAtpDate",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,27",
       "Vægt emballage (kg)": "0,71",
@@ -87987,7 +87931,7 @@
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SONYWH1000XX",
@@ -88079,7 +88023,7 @@
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDBACKPACK2",
@@ -88122,7 +88066,7 @@
      "SOUNDBOKSGOBB4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDBATTERYBOKSUSBC",
@@ -88171,7 +88115,7 @@
      "SOUNDBOKS4BB4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDBOKS4BB4",
@@ -88271,7 +88215,7 @@
      "SOUNDBOKSRIDER"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDBOKSMIX",
@@ -88356,7 +88300,7 @@
      "BOA1G3"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDBOKSRIDER",
@@ -88435,7 +88379,7 @@
      "MARBROMLEY750"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDCHARGERUSBC",
@@ -88482,7 +88426,7 @@
      "SOUNDBOKSMIX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDLIGHTBOKS",
@@ -88543,7 +88487,7 @@
      "SOUNDBOKSRIDER"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUNDMIXSTRAPX",
@@ -88585,7 +88529,7 @@
      "SOUNDBOKSMIX"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "SOUSL2W4MX",
@@ -88626,7 +88570,7 @@
      "SOUNDBOKS4BB4"
     ]
    },
-   "read": "2026-11-21"
+   "read": "2026-11-27"
   },
   {
    "sku": "TTTI3",

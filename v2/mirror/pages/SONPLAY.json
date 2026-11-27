@@ -48,8 +48,8 @@
     "SONMOVEG2",
     "DALIKATCHG2",
     "SONROAMG2",
-    "SOUNDBOKSRIDER",
     "MARBROMLEY150",
+    "SOUNDBOKSRIDER",
     "MARSTOCKWELL3",
     "SOUNDBOKSMIX",
     "MARKILBURN3",
@@ -144,12 +144,6 @@
    "url": "/hojtalere/bluetooth-tradlos-hojtaler/",
    "id": 69679
   },
-  "stockItemAlternative": {
-   "save": "180,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SONPLAY",
-   "availableQuantity": 2,
-   "lowestPrice": "1.899,-"
-  },
   "variants": [
    {
     "id": 278875,
@@ -162,19 +156,14 @@
      "priceValueId": 1211388,
      "price": 2079,
      "priceFormatted": "2.079,-",
-     "priceBefore": 2599,
-     "priceBeforeFormatted": "2.599,-",
-     "priceSavingsFormatted": "520,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2079,
-     "unitPriceBefore": 2599
+     "unitPrice": 2079
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -220,7 +209,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 575,
+     "availableQuantity": 540,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -308,19 +297,14 @@
      "priceValueId": 1211401,
      "price": 2079,
      "priceFormatted": "2.079,-",
-     "priceBefore": 2599,
-     "priceBeforeFormatted": "2.599,-",
-     "priceSavingsFormatted": "520,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2079,
-     "unitPriceBefore": 2599
+     "unitPrice": 2079
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -366,7 +350,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 704,
+     "availableQuantity": 654,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -457,19 +441,14 @@
      "priceValueId": 1211395,
      "price": 2079,
      "priceFormatted": "2.079,-",
-     "priceBefore": 2599,
-     "priceBeforeFormatted": "2.599,-",
-     "priceSavingsFormatted": "520,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2079,
-     "unitPriceBefore": 2599
+     "unitPrice": 2079
     },
     "ribbons": [
      {
-      "text": "Spar 20%",
-      "ribbonType": "discount",
+      "text": "Skarp pris",
       "link": {
        "title": "",
        "target": "_blank",
@@ -515,7 +494,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 376,
+     "availableQuantity": 304,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -614,47 +593,47 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SONPLAY leverer varm, fyldig og overraskende omsluttende lyd for så kompakt en højttaler. Den fremragende mobilitet og praktiske størrelse gør SONPLAY særligt velegnet til rejser, altaner, soveværelser og badeværelser med stærk kompatibilitet i Sonos-økosystemet. Den samlede modtagelse er meget begejstret, selv om lyttere, der ønsker ekstra kraftig bas, måske vil foretrække en større Sonos-model.",
+   "summary": "SONPLAY leverer varm, fyldig og overraskende omsluttende lyd i et kompakt, rejsevenligt design. Fremragende mobilitet, lav vægt og god batterikapacitet gør SONPLAY særligt velegnet til altaner, soveværelser og rejser. Kompatibilitet med SONOS-økosystemet og god service styrker værdien, mens større højttalere kan levere dybere bas og mere kraft.",
    "headlines": {
-    "surprisingly rich sound for a compact speaker": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent SONPLAYs klare, kraftige og for størrelsen overraskende gode lyd.",
-     "simpleTitle": "Overraskende fyldig lyd fra en kompakt højttaler",
+    "strong sound for a compact speaker": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare og overraskende kraftige lyd fra den kompakte højttaler.",
+     "simpleTitle": "Kraftig lyd fra en kompakt højttaler",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "33034573-6a58-4034-8c2e-9c337915eacf"
+     "key": "sound",
+     "groupId": "280e3d7f-7949-49fb-8602-276b77842cda"
     },
-    "a lighter, more travel-friendly alternative to larger speakers": {
-     "sentimentAnalysis": "De kompakte mål og lave vægt gør SONPLAY praktisk til rejser og daglig brug i forskellige rum eller udendørs.",
-     "simpleTitle": "Et lettere og mere rejsevenligt alternativ til større højttalere",
+    "easy to take on trips": {
+     "sentimentAnalysis": "Kompakte mål og lav vægt gør højttaleren praktisk til rejser og udendørs brug.",
+     "simpleTitle": "Nem at tage med på rejser",
      "bias": "positive",
      "key": "portability",
-     "groupId": "358d8ce5-d2ef-4202-b874-7791eaca6773"
+     "groupId": "b3346497-7347-470e-80f0-ec7789b2a94d"
     },
-    "helpful and knowledgeable purchase support": {
-     "sentimentAnalysis": "Købsservicen beskrives som både venlig og kompetent med mulighed for at teste højttaleren grundigt.",
-     "simpleTitle": "Hjælpsom og kompetent købsservice",
+    "helpful and knowledgeable service": {
+     "sentimentAnalysis": "Købsservicen beskrives som både venlig og kompetent, inklusive mulighed for at afprøve produktet grundigt.",
+     "simpleTitle": "Hjælpsom og kompetent service",
      "bias": "positive",
      "key": "service",
-     "groupId": "18ed120a-3dcd-4bbc-ba5c-4ea454da55a2"
+     "groupId": "497ff661-a948-41e4-9146-5d006da0e786"
     }
    },
    "grouping": {
-    "33034573-6a58-4034-8c2e-9c337915eacf": {
+    "280e3d7f-7949-49fb-8602-276b77842cda": {
      "title": "Lydkvalitet",
-     "id": "33034573-6a58-4034-8c2e-9c337915eacf",
+     "id": "280e3d7f-7949-49fb-8602-276b77842cda",
      "references": [
       "b245a957-f1a2-4021-a762-1f6d8c967872",
       "1df7b67b-fae9-4e6b-8870-b4e0ec45ea65",
       "955de521-1f7f-4bf3-a35e-61baa770da77",
+      "a3851dc4-13d6-4ae1-a207-99215f51758f",
       "821a35d0-c2db-4da5-8a6b-0ed70d82e0e1",
       "2e3095d8-f9b8-46d2-86e1-94a03f3ae4d3",
-      "01e3ad00-62ca-4ef6-85f0-59f81e50719f",
-      "a3851dc4-13d6-4ae1-a207-99215f51758f"
+      "01e3ad00-62ca-4ef6-85f0-59f81e50719f"
      ]
     },
-    "358d8ce5-d2ef-4202-b874-7791eaca6773": {
+    "b3346497-7347-470e-80f0-ec7789b2a94d": {
      "title": "Mobilitet og størrelse",
-     "id": "358d8ce5-d2ef-4202-b874-7791eaca6773",
+     "id": "b3346497-7347-470e-80f0-ec7789b2a94d",
      "references": [
       "b245a957-f1a2-4021-a762-1f6d8c967872",
       "1df7b67b-fae9-4e6b-8870-b4e0ec45ea65",
@@ -662,9 +641,9 @@
       "01e3ad00-62ca-4ef6-85f0-59f81e50719f"
      ]
     },
-    "18ed120a-3dcd-4bbc-ba5c-4ea454da55a2": {
+    "497ff661-a948-41e4-9146-5d006da0e786": {
      "title": "Kundeservice",
-     "id": "18ed120a-3dcd-4bbc-ba5c-4ea454da55a2",
+     "id": "497ff661-a948-41e4-9146-5d006da0e786",
      "references": [
       "a3851dc4-13d6-4ae1-a207-99215f51758f",
       "ce072981-1889-46aa-ae29-c912e6875984"

@@ -28,7 +28,7 @@
    "78fe48f4-e3e7-4e98-bdf1-4e70e11f3090",
    "6970fb8e-769c-4589-be18-89e2d4aaa084"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 177697,
@@ -60,6 +60,15 @@
    "isOutlet": "false"
   },
   "techSpecs": [
+   {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Native UHD/4K (2160p) Triluminos\nDigital Contrast Optimizer / Dynamic laser control / Digital Focus Optimizer\n3-panel SXRD teknologi\nProcessor: X1 Ultimate for projector \nHDR-kompatibel inkl. HDR10/HLG\nObject-based HDR remaster / Dynamic HDR Enhancer\nIMAX Enhanced Picture Mode\nLens Shift (±71% lodret, ±25% vandret) \nHDMI 2.0 m/HDCP 2.3 (op til 18 Gbps)\n4K Motionflow\nInput lag reduction/Low latency gaming (21ms/4K60p eller 13ms/2K120p)\n9 præ-kalibrerede billedindstillinger til film, fotos, gaming, TV m.m. (kan finjusteres manuelt)\nUSB-A strøm-ud (5V/1,5A)  til f.eks. Google Chromecast \nFjernbetjening medfølger (RM-PJ28)\nLoftbeslag fås som ekstratilbehør \n"
+     }
+    ]
+   },
    {
     "index": 3,
     "title": "Billede (Tekniske)",
@@ -105,15 +114,6 @@
      {
       "term": "Indgang (andet)",
       "value": "HDMI, RS-232, IR"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Native UHD/4K (2160p) Triluminos\nDigital Contrast Optimizer / Dynamic laser control / Digital Focus Optimizer\n3-panel SXRD teknologi\nProcessor: X1 Ultimate for projector \nHDR-kompatibel inkl. HDR10/HLG\nObject-based HDR remaster / Dynamic HDR Enhancer\nIMAX Enhanced Picture Mode\nLens Shift (±71% lodret, ±25% vandret) \nHDMI 2.0 m/HDCP 2.3 (op til 18 Gbps)\n4K Motionflow\nInput lag reduction/Low latency gaming (21ms/4K60p eller 13ms/2K120p)\n9 præ-kalibrerede billedindstillinger til film, fotos, gaming, TV m.m. (kan finjusteres manuelt)\nUSB-A strøm-ud (5V/1,5A)  til f.eks. Google Chromecast \nFjernbetjening medfølger (RM-PJ28)\nLoftbeslag fås som ekstratilbehør \n"
      }
     ]
    },
@@ -380,12 +380,11 @@
      "productCode": "SONYVPLXW5000ESBK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

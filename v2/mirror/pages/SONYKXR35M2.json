@@ -95,6 +95,12 @@
    "url": "/tv/tv/",
    "id": 69664
   },
+  "stockItemAlternative": {
+   "save": "691,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=SONYKXR35M2",
+   "availableQuantity": 1,
+   "lowestPrice": "6.799,-"
+  },
   "variants": [
    {
     "id": 285274,
@@ -346,11 +352,11 @@
      "productCode": "SONYK43XR35M2"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -634,8 +640,8 @@
      "productCode": "SONYK50XR35M2"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 05. december",
-     "deliveryDate": "2026-12-05T00:00:00Z",
+     "description": "Forventes på lager mandag den 07. december",
+     "deliveryDate": "2026-12-07T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
      "inventoryStatusType": "notInStockAtpDate"
@@ -958,7 +964,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 6,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1005,6 +1011,13 @@
     },
     "url": "/sony-bravia-3-mii-lcd-tv/sonyk55xr35m2/",
     "canonicalUrl": "/sony-bravia-3-mii-lcd-tv/sonyk55xr35m2/",
+    "recommendedAccessories": {
+     "productCodes": [
+      "ESSTVBMOTSLIM19X",
+      "ESSTVBSLIM18X"
+     ],
+     "isOutlet": "false"
+    },
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",
@@ -1243,12 +1256,11 @@
      "productCode": "SONYK65XR35M2"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "Forventes på lager mandag den 30. november",
+     "deliveryDate": "2026-11-30T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -1540,7 +1552,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 1,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -1813,7 +1825,7 @@
      "description": "På lager. Leveringstid 2-4 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "availableQuantity": 2,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -2134,11 +2146,11 @@
      "productCode": "SONYK100XR35M2"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 12,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -2184,6 +2196,13 @@
     },
     "url": "/sony-bravia-9-mii-lcd-tv/sonyk100xr35m2/",
     "canonicalUrl": "/sony-bravia-9-mii-lcd-tv/sonyk100xr35m2/",
+    "recommendedAccessories": {
+     "productCodes": [
+      "ESSTVBMICROGAP09X",
+      "VOGTVM5855X"
+     ],
+     "isOutlet": "false"
+    },
     "addOns": [
      {
       "sku": "AQPEARL48HDMI2,0",

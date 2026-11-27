@@ -469,28 +469,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "USB-kabel",
-   "keys": {
-    "USBCabel": 16
-   },
-   "cats": {
-    "Kabler > Digital kabel": 16
-   },
-   "count": 18,
-   "bundles": 0,
-   "outlet": 2,
-   "products": 16,
-   "inCatalogue": 16,
-   "variantAxes": {
-    "sizeSelector": 17,
-    "colorOptions": 1
-   },
-   "mapped": "cable",
-   "hifiPlanner": [
-    "Cable: usb"
-   ]
-  },
-  {
    "type": "Videoprojektor",
    "keys": {
     "VideoProjector": 18
@@ -510,6 +488,28 @@
    "mapped": "cats",
    "hifiPlanner": [
     "TV"
+   ]
+  },
+  {
+   "type": "USB-kabel",
+   "keys": {
+    "USBCabel": 16
+   },
+   "cats": {
+    "Kabler > Digital kabel": 16
+   },
+   "count": 17,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 16,
+   "inCatalogue": 16,
+   "variantAxes": {
+    "sizeSelector": 16,
+    "colorOptions": 1
+   },
+   "mapped": "cable",
+   "hifiPlanner": [
+    "Cable: usb"
    ]
   },
   {
@@ -834,25 +834,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "TV-beslag",
-   "keys": {
-    "TvBracket": 12
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 12
-   },
-   "count": 13,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 12,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 13
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Hjemmebio-system",
    "keys": {
     "HomeCinemaSystem": 11
@@ -867,6 +848,25 @@
    "inCatalogue": 0,
    "variantAxes": {
     "none": 12
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "TV-beslag",
+   "keys": {
+    "TvBracket": 11
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 11
+   },
+   "count": 12,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 11,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 12
    },
    "mapped": null,
    "hifiPlanner": []

@@ -158,7 +158,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 164,
+        "availableQuantity": 110,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.999,-",
@@ -181,7 +181,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 38,
+        "availableQuantity": 27,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "5.999,-",
@@ -193,57 +193,52 @@
      ],
      "parentProductCode": "SOUNDBOKS4BB4",
      "reviews": {
-      "summary": "SOUNDBOKS4BB4 leverer en varm, slagkraftig og medrivende lyd med imponerende volumen, tydelig dynamik og stærk ydeevne udendørs. Den lange batteritid, robuste konstruktion og bærbarhed gør højttaleren særligt velegnet til fester, festivaler og arrangementer. Opsætning og app-styring er generelt enkel, men basbalancen, Bluetooth-rækkevidden samt enkelte hardware- og tilbehørsproblemer kritiseres.",
+      "summary": "SOUNDBOKS4BB4 leverer en varm, kraftfuld og medrivende lyd med imponerende lydstyrke, tydelig dynamik og stærk præstation udendørs. Batteritiden er konsekvent fremragende, mens det robuste, transportable design og den enkle app gør højttaleren meget praktisk til fester, festivaler og arrangementer. Mindre forbehold gælder basbalancen, vægten, prisen, manglende opladertilbehør samt enkelte forbindelses- eller opsætningsproblemer, men den samlede vurdering er særdeles begejstret.",
       "headlines": {
        "powerful, clear and dynamic sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den høje volumen, klare gengivelse, markante bas og overraskende stærke dynamik.",
+        "sentimentAnalysis": "Anmeldelserne roser den høje lydstyrke, klarhed, kraft og overraskende stærke dynamik, også ved høj volumen.",
         "simpleTitle": "Kraftfuld, klar og dynamisk lyd",
         "bias": "positive",
-        "key": "sound",
-        "groupId": "3c08a25d-1ff7-4978-99e0-608deebde8e9"
+        "key": "sound_quality",
+        "groupId": "88ebe0a6-8b5c-4756-b23f-9fdce3c242f1"
        },
-       "long-lasting batteries support full-day events": {
-        "sentimentAnalysis": "Batteritiden beskrives gentagne gange som fremragende, også til weekender og festivaler.",
-        "simpleTitle": "Lang batteritid til hele dage",
+       "long-lasting battery": {
+        "sentimentAnalysis": "Anmeldelserne beskriver konsekvent fremragende batteritid, også til en hel weekend og afspilning ved høj volumen.",
+        "simpleTitle": "Langtidsholdbart batteri",
         "bias": "positive",
-        "key": "battery",
-        "groupId": "61a93e48-54ce-40db-ad9d-fee84ae61918"
+        "key": "battery_life",
+        "groupId": "61f8825c-f433-44d5-9943-855198aeee09"
        },
-       "rugged and highly portable for outdoor use": {
-        "sentimentAnalysis": "Anmeldelserne værdsætter den robuste konstruktion, bærbarheden og egnetheden til udendørs fester, festivaler og aktiv brug.",
-        "simpleTitle": "Robust og meget bærbar til udendørs brug",
+       "robust and effective outdoors": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter højttalerens robusthed, mobilitet og særligt stærke præstation udendørs.",
+        "simpleTitle": "Robust og stærk udendørs",
         "bias": "positive",
-        "key": "portability",
-        "groupId": "416f036b-0261-4791-9915-7da1de26fce4"
+        "key": "portability_durability",
+        "groupId": "2c221528-3b74-46da-841c-758559ef8bb3"
        },
-       "easy setup and app control": {
-        "sentimentAnalysis": "Flere anmeldelser fremhæver enkel opsætning, appstyring og nem sammenkobling af flere højttalere.",
-        "simpleTitle": "Nem opsætning og appstyring",
+       "simple app control and pairing": {
+        "sentimentAnalysis": "Flere anmeldelser fremhæver enkel opsætning, ukompliceret Bluetooth-forbindelse og nyttig appstyring.",
+        "simpleTitle": "Enkel appstyring og parring",
         "bias": "positive",
-        "key": "setup",
-        "groupId": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406"
+        "key": "setup_connectivity",
+        "groupId": "9c6e2dd4-5b67-41ac-aff4-927739319c77"
        },
-       "bass can feel underpowered": {
-        "sentimentAnalysis": "Nogle anmeldelser finder bassen skuffende i forhold til prisen og den ellers stærke lyd.",
-        "simpleTitle": "Bassen kan virke for svag",
+       "bass can feel underwhelming": {
+        "sentimentAnalysis": "Trods den generelt stærke lyd synes to anmeldelser, at bassen er for beskeden i forhold til pris eller forventninger.",
+        "simpleTitle": "Bassen kan skuffe",
         "bias": "negative",
-        "key": "sound",
-        "groupId": "3c08a25d-1ff7-4978-99e0-608deebde8e9"
-       },
-       "bluetooth pairing and range need improvement": {
-        "sentimentAnalysis": "Nogle brugere rapporterer langsom Bluetooth-parring og begrænset rækkevidde, og én kunne heller ikke bruge en trådløs mikrofon.",
-        "simpleTitle": "Bluetooth-parring og rækkevidde kan forbedres",
-        "bias": "negative",
-        "key": "setup",
-        "groupId": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406"
+        "key": "sound_quality",
+        "groupId": "88ebe0a6-8b5c-4756-b23f-9fdce3c242f1"
        }
       },
       "grouping": {
-       "3c08a25d-1ff7-4978-99e0-608deebde8e9": {
+       "88ebe0a6-8b5c-4756-b23f-9fdce3c242f1": {
         "title": "Lydkvalitet",
-        "id": "3c08a25d-1ff7-4978-99e0-608deebde8e9",
+        "id": "88ebe0a6-8b5c-4756-b23f-9fdce3c242f1",
         "references": [
+         "696d00ba-9b26-418d-8e55-41d04f65ab50",
          "97c9e110-fd79-4822-929e-d836a6f347d3",
+         "c5cb843f-5db7-4992-8030-fe0677d8ec73",
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "6a4967e5-fdd0-4640-ae10-4e7b0107e262",
          "39cd76db-6552-48f0-9010-ffbb158837a4",
@@ -257,6 +252,7 @@
          "0bf5d731-967f-4e38-bc52-573973d36341",
          "a71adf28-3a04-4379-9a2f-a167b6e8235d",
          "4c536d0b-b1bd-4481-8ae0-e5d5419d6bcd",
+         "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
          "dbf4af27-8a37-4a68-b0cd-65cfeaa14a78",
          "9cf418c8-5e58-4300-987a-5cf4e4b8a01d",
          "f8a248cb-a8df-4c6e-a5e9-45b418c8d5f2",
@@ -274,6 +270,7 @@
          "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
          "1aa2ba5e-9edd-40a7-a06f-06a85d4d4643",
          "9c7aafd2-a905-4568-8b25-6c9cda090d24",
+         "9b2d386d-2eb9-4a5d-bb05-4985730fe0d7",
          "c340f3b2-1c0f-48ff-a5c3-c5b35a5a48ad",
          "f351aca2-1653-4113-b614-089c5b05a1ab",
          "419ebf3f-1c20-4f0c-90bd-7d339e60672e",
@@ -281,9 +278,9 @@
          "0014da28-aab7-4628-b069-23041abd10a6"
         ]
        },
-       "61a93e48-54ce-40db-ad9d-fee84ae61918": {
+       "61f8825c-f433-44d5-9943-855198aeee09": {
         "title": "Batteritid",
-        "id": "61a93e48-54ce-40db-ad9d-fee84ae61918",
+        "id": "61f8825c-f433-44d5-9943-855198aeee09",
         "references": [
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "6a4967e5-fdd0-4640-ae10-4e7b0107e262",
@@ -291,6 +288,7 @@
          "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
          "cfac94ef-285b-4453-9ed8-6cc5632fc29d",
          "15d96995-b232-401e-a137-48808d8ba5c6",
+         "52a9f76d-e9dd-4668-b01a-6c7ce77c81c7",
          "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
          "f351aca2-1653-4113-b614-089c5b05a1ab",
          "46d32b1f-595c-4d44-b0be-a4b7061ee55b",
@@ -298,28 +296,30 @@
          "bf62d835-3838-4f71-b7aa-cad9a9bdda52"
         ]
        },
-       "416f036b-0261-4791-9915-7da1de26fce4": {
-        "title": "Bærbarhed og holdbarhed",
-        "id": "416f036b-0261-4791-9915-7da1de26fce4",
+       "2c221528-3b74-46da-841c-758559ef8bb3": {
+        "title": "Mobilitet og holdbarhed",
+        "id": "2c221528-3b74-46da-841c-758559ef8bb3",
         "references": [
          "c1e26889-ce5f-4715-8d2f-9d9fa5ce9447",
-         "9cf418c8-5e58-4300-987a-5cf4e4b8a01d",
+         "da3244a3-c506-4d38-b131-063a3230052b",
+         "4c536d0b-b1bd-4481-8ae0-e5d5419d6bcd",
          "b9a1d935-2b7c-40ab-9fa6-954fbb5efa41",
          "9e04b921-d1a8-412b-82b5-f0b4030d43d1",
          "9c7aafd2-a905-4568-8b25-6c9cda090d24",
-         "c340f3b2-1c0f-48ff-a5c3-c5b35a5a48ad",
-         "bf62d835-3838-4f71-b7aa-cad9a9bdda52",
-         "f351aca2-1653-4113-b614-089c5b05a1ab"
+         "f351aca2-1653-4113-b614-089c5b05a1ab",
+         "bf62d835-3838-4f71-b7aa-cad9a9bdda52"
         ]
        },
-       "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406": {
-        "title": "Opsætning og forbindelse",
-        "id": "5d20d6cb-532a-4fc0-8aaf-79d6e55a9406",
+       "9c6e2dd4-5b67-41ac-aff4-927739319c77": {
+        "title": "Opsætning og tilslutning",
+        "id": "9c6e2dd4-5b67-41ac-aff4-927739319c77",
         "references": [
+         "696d00ba-9b26-418d-8e55-41d04f65ab50",
          "6154afe5-f62b-458b-93e2-516729bf4e3f",
          "7b3fee1c-1862-4809-bdfe-f0fa09abf673",
-         "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
          "b1793cbb-0dbc-4770-a986-f55dc6d5ccbf",
+         "accdc844-2dd0-4c26-9c83-8ee44ee733fd",
+         "15d96995-b232-401e-a137-48808d8ba5c6",
          "23cd557d-0007-425d-ad1c-307411dd5e91"
         ]
        }
@@ -341,7 +341,7 @@
    "inventoryStatus": {
     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 2
+    "numberOfStoresExperience": 1
    }
   },
   "variantNavigationType": "dropDown",

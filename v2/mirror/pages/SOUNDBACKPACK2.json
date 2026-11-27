@@ -125,8 +125,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 17,
-     "availableQuantity": 93,
+     "numberOfStoresExperience": 16,
+     "availableQuantity": 87,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -250,39 +250,25 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SOUNDBACKPACK2 gør transporten af højttaleren praktisk, nem og overraskende behagelig. Det robuste rygsækdesign gør det muligt at nyde fyldig, punchy og immersiv lyd undervejs. Højttalerens vægt kan gøre det besværligt at gå, og et regnslag ville være en god tilføjelse.",
+   "summary": "SOUNDBACKPACK2 er en praktisk og slidstærk rygsæk, der gør det nemt at transportere højttaleren og lytte til musik undervejs. Den enkle betjening og det gennemtænkte bæresystem bliver især værdsat, mens højttalerens vægt og høje placering kan gøre det besværligt at gå. Et regnslag ville være en nyttig tilføjelse; samlet set understøtter rygsækken en livlig, kraftfuld og omsluttende lytteoplevelse på farten.",
    "headlines": {
-    "easy and practical to carry": {
-     "sentimentAnalysis": "Rygsækken anses for at være en effektiv og praktisk måde at transportere højttaleren på, også mens musikken spiller.",
-     "simpleTitle": "Nem og praktisk at bære",
+    "easy to use and carry": {
+     "sentimentAnalysis": "Rygsækken opfattes som nem at bruge og praktisk til at bære højttaleren.",
+     "simpleTitle": "Nem at bruge og bære",
      "bias": "positive",
-     "key": "transport",
-     "groupId": "1623e561-e85a-4140-ae7c-dac40051d3a9"
-    },
-    "simple to use": {
-     "sentimentAnalysis": "Rygsækken roses for at være enkel og behagelig at bruge.",
-     "simpleTitle": "Nem at bruge",
-     "bias": "positive",
-     "key": "usability",
-     "groupId": "95ac2ab2-e8f4-4f75-be07-555b80039da4"
+     "key": "easy_carrying",
+     "groupId": "c8511583-6c1c-4cbd-844d-d0cb390dd203"
     }
    },
    "grouping": {
-    "1623e561-e85a-4140-ae7c-dac40051d3a9": {
-     "title": "Transport",
-     "id": "1623e561-e85a-4140-ae7c-dac40051d3a9",
+    "c8511583-6c1c-4cbd-844d-d0cb390dd203": {
+     "title": "Transport og bæring",
+     "id": "c8511583-6c1c-4cbd-844d-d0cb390dd203",
      "references": [
       "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
       "3e579c9b-ea8e-490c-8b27-86f1158031c5",
       "dcda85ff-058a-478b-95db-5bb8282b96a3",
-      "3103b24d-50cb-486c-98fc-5d2b71dcb92a"
-     ]
-    },
-    "95ac2ab2-e8f4-4f75-be07-555b80039da4": {
-     "title": "Brugervenlighed",
-     "id": "95ac2ab2-e8f4-4f75-be07-555b80039da4",
-     "references": [
-      "0ca1e5dd-dfbf-4cea-b3b0-a2d7761f44a8",
+      "3103b24d-50cb-486c-98fc-5d2b71dcb92a",
       "457e29c1-ffc0-410a-95d0-850fca255caa"
      ]
     }

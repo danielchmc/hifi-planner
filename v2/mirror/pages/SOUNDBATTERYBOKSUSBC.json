@@ -133,7 +133,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 378,
+     "availableQuantity": 341,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -280,55 +280,53 @@
    }
   ],
   "reviews": {
-   "summary": "SOUNDBOKS-batterier leverer lang og pålidelig batteritid og gør det nemt at holde gang i en langvarig, punchy og medrivende afspilning. Ekstra batterier holder festen kørende, mens USB-C-opladning og opladning under brug giver stor fleksibilitet. Batterisystemet er kompakt og kraftfuldt, men nogle opladningsopsætninger kræver en tilstrækkeligt kraftig oplader, og enkelte langtidsfejl er blevet rapporteret.",
+   "summary": "SOUNDBOKS-batteriet leverer imponerende, langvarig strøm til energisk, punchy lyd og lange fester. USB-C-opladning er praktisk, og batteriet kan også være tilsluttet under brug, men en oplader med tilstrækkelig effekt kan være nødvendig. Ekstra batterier gør det nemt at holde musikken kørende uden afbrydelser, mens produktet generelt roses for pålidelighed og god værdi.",
    "headlines": {
-    "long battery life": {
-     "sentimentAnalysis": "Anmeldelserne roser batteriets lange driftstid ved længere tids brug af højttaleren.",
-     "simpleTitle": "Lang batteritid",
+    "long-lasting, powerful battery": {
+     "sentimentAnalysis": "Batteriet roses for lang driftstid og høj effekt i et kompakt format.",
+     "simpleTitle": "Langtidsholdbart batteri med høj effekt",
      "bias": "positive",
-     "key": "long-battery-life",
-     "groupId": "557fa7b5-5f99-426e-bc61-70bd8c2059af"
+     "key": "battery-life",
+     "groupId": "fdf18f57-afdb-4f02-a854-69a737b4b9cf"
     },
-    "extra batteries extend uninterrupted playback": {
-     "sentimentAnalysis": "Udskiftelige ekstra batterier værdsættes, fordi de holder højttaleren klar og forhindrer unødvendige afbrydelser.",
-     "simpleTitle": "Ekstra batterier forlænger uafbrudt afspilning",
+    "usB-C charging is convenient": {
+     "sentimentAnalysis": "USB-C opfattes som en stor fordel og en forbedring i forhold til ældre opladningsmetoder.",
+     "simpleTitle": "USB-C-opladning er praktisk",
      "bias": "positive",
-     "key": "uninterrupted-playback",
-     "groupId": "3185ce26-fcc3-4b3f-b873-2f31833da654"
+     "key": "charging",
+     "groupId": "ea92b8d4-91e6-4fb7-bba8-b2c63b011037"
     },
-    "convenient USB-C charging": {
-     "sentimentAnalysis": "USB-C-opladning opfattes som enkel, moderne og en klar forbedring i forhold til den tidligere opladningsmetode.",
-     "simpleTitle": "Praktisk USB-C-opladning",
+    "extra batteries keep the party going": {
+     "sentimentAnalysis": "Udskiftelige eller ekstra batterier giver praktisk reservekraft til uafbrudt brug udendørs og til fester.",
+     "simpleTitle": "Ekstra batterier holder festen kørende",
      "bias": "positive",
-     "key": "usb-c-charging",
-     "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
+     "key": "extra-battery",
+     "groupId": "bf9e6ae1-7ada-4393-9d41-37410cabd7f2"
     },
-    "some chargers lack sufficient power": {
-     "sentimentAnalysis": "Opladning kan kræve en tilstrækkeligt kraftig USB-C-oplader, og standardalternativer virker ikke altid.",
-     "simpleTitle": "Nogle opladere leverer ikke nok strøm",
-     "bias": "negative",
-     "key": "charger-power-requirement",
-     "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
-    },
-    "charging while playing": {
-     "sentimentAnalysis": "Muligheden for at have batteriet tilsluttet under afspilning roses som en praktisk forbedring.",
-     "simpleTitle": "Opladning under afspilning",
+    "playback while charging": {
+     "sentimentAnalysis": "Muligheden for at have batteriet tilsluttet under afspilning værdsættes for praktisk, uafbrudt brug ved høj lydstyrke.",
+     "simpleTitle": "Afspilning under opladning",
      "bias": "positive",
-     "key": "charging-while-playing",
-     "groupId": "384f0a67-a1dd-40bb-881f-73228052baf8"
-    },
-    "mixed long-term reliability": {
-     "sentimentAnalysis": "Langtidserfaringerne er blandede: Daglig brug over lang tid kan fungere problemfrit, men enkelte batterier er gået i stykker og har krævet udskiftning.",
-     "simpleTitle": "Blandet langsigtet driftssikkerhed",
-     "bias": "meh",
-     "key": "long-term-reliability",
-     "groupId": "c037f797-bdb7-42d2-89d8-d71fb783b202"
+     "key": "charging",
+     "groupId": "ea92b8d4-91e6-4fb7-bba8-b2c63b011037"
     }
    },
    "grouping": {
-    "384f0a67-a1dd-40bb-881f-73228052baf8": {
+    "fdf18f57-afdb-4f02-a854-69a737b4b9cf": {
+     "title": "Batteritid og strøm",
+     "id": "fdf18f57-afdb-4f02-a854-69a737b4b9cf",
+     "references": [
+      "a802a422-cc1a-4221-a43d-9a516ed7509f",
+      "8712ac3a-2b70-4e71-89b5-723f3c7244cb",
+      "2ae700b7-bd2e-4751-97cc-1b841898d662",
+      "28dff4f5-4abc-4a5c-abba-a2cc8abf0b81",
+      "34b52919-c2bf-477c-ad94-6cbe734dc647",
+      "35a284c9-0edc-400e-a2af-1b8ea7e631cf"
+     ]
+    },
+    "ea92b8d4-91e6-4fb7-bba8-b2c63b011037": {
      "title": "Opladning",
-     "id": "384f0a67-a1dd-40bb-881f-73228052baf8",
+     "id": "ea92b8d4-91e6-4fb7-bba8-b2c63b011037",
      "references": [
       "88f8d04b-da30-4800-b72c-6e9d9b91b7c8",
       "50129367-95d1-46ad-8f47-80a225ebc133",
@@ -338,34 +336,14 @@
       "3479473a-deda-4148-9488-49f9f92d2ef0"
      ]
     },
-    "557fa7b5-5f99-426e-bc61-70bd8c2059af": {
-     "title": "Batteritid",
-     "id": "557fa7b5-5f99-426e-bc61-70bd8c2059af",
+    "bf9e6ae1-7ada-4393-9d41-37410cabd7f2": {
+     "title": "Ekstra batteri",
+     "id": "bf9e6ae1-7ada-4393-9d41-37410cabd7f2",
      "references": [
-      "a802a422-cc1a-4221-a43d-9a516ed7509f",
-      "2ae700b7-bd2e-4751-97cc-1b841898d662",
-      "28dff4f5-4abc-4a5c-abba-a2cc8abf0b81",
-      "34b52919-c2bf-477c-ad94-6cbe734dc647",
-      "35a284c9-0edc-400e-a2af-1b8ea7e631cf"
-     ]
-    },
-    "3185ce26-fcc3-4b3f-b873-2f31833da654": {
-     "title": "Ekstra batterier",
-     "id": "3185ce26-fcc3-4b3f-b873-2f31833da654",
-     "references": [
-      "a802a422-cc1a-4221-a43d-9a516ed7509f",
       "8712ac3a-2b70-4e71-89b5-723f3c7244cb",
       "ce31fba4-4eed-44fe-a3f9-b9d23874d47a",
-      "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
-      "33596b7c-25a9-4190-8f54-bd5025b59448"
-     ]
-    },
-    "c037f797-bdb7-42d2-89d8-d71fb783b202": {
-     "title": "Driftsikkerhed",
-     "id": "c037f797-bdb7-42d2-89d8-d71fb783b202",
-     "references": [
-      "35a284c9-0edc-400e-a2af-1b8ea7e631cf",
-      "51e3735c-03b2-4b4e-964d-81c16e2b3b6f"
+      "33596b7c-25a9-4190-8f54-bd5025b59448",
+      "35a284c9-0edc-400e-a2af-1b8ea7e631cf"
      ]
     }
    },

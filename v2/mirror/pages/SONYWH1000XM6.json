@@ -246,7 +246,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 57,
+     "availableQuantity": 61,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -389,7 +389,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 66,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -532,7 +532,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 53,
+     "availableQuantity": 68,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -672,7 +672,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 5,
+     "availableQuantity": 18,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -815,11 +815,12 @@
      "productCode": "SONYWH1000XM6SAST"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager lørdag den 28. november",
-     "deliveryDate": "2026-11-28T00:00:00Z",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "inventoryStatusType": "notInStockAtpDate"
+     "availableQuantity": 13,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {
@@ -952,8 +953,8 @@
      "productCode": "SONYWH1000XM6OLGR"
     },
     "inventoryStatus": {
-     "description": "Forventes på lager mandag den 14. december",
-     "deliveryDate": "2026-12-14T00:00:00Z",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
      "inventoryStatusType": "notInStockAtpDate"
@@ -1175,76 +1176,55 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Sony WH-1000XM6 er et imponerende premium-headset med exceptionelt stærk støjreduktion, medrivende og generelt detaljeret lyd, god komfort og pålidelig batteritid. Den varme, kraftfulde og rummelige gengivelse fungerer især godt til pendling, kontor og rejser, mens EQ’en i appen giver nyttige justeringsmuligheder. Komfort, mikrofonydeevne, pris, materialer og personlige lydpræferencer deler vandene, men helheden kan varmt anbefales.",
+   "summary": "Sony WH-1000XM6 leverer en immersiv, varm og slagkraftig lydoplevelse med enestående støjreduktion. Komfort, batteritid og alsidighed i hverdagen roses bredt, hvilket gør hovedtelefonerne attraktive til pendling, kontor og rejser. Lydsignatur, trykket mod hovedet, varmeudvikling og den høje pris er dog væsentlige ulemper for nogle lyttere.",
    "headlines": {
-    "outstanding noise cancellation": {
-     "sentimentAnalysis": "Støjreduktionen beskrives gentagne gange som fremragende, klasseledende og meget effektiv i offentlig transport, på kontorer og derhjemme.",
-     "simpleTitle": "Fremragende støjreduktion",
+    "exceptional noise cancellation": {
+     "sentimentAnalysis": "Støjreduktionen beskrives gentagne gange som fremragende, førende i klassen og særdeles effektiv i offentlig transport, på kontorer og under rejser.",
+     "simpleTitle": "Enestående støjreduktion",
      "bias": "positive",
      "key": "noise_cancellation",
-     "groupId": "29b981f3-32a8-44a9-b1c8-4f1bf8e39169"
+     "groupId": "f0cf1c64-4884-4883-9119-c27594dab694"
     },
-    "rich, clear and enjoyable sound": {
-     "sentimentAnalysis": "Lyden roses bredt som klar, behagelig og velafbalanceret og fungerer godt selv ved lav lydstyrke med en behagelig basgengivelse.",
-     "simpleTitle": "Fyldig, klar og behagelig lyd",
+    "clear, rich and immersive sound": {
+     "sentimentAnalysis": "De fleste kommentarer om lyden roser klarhed, fylde, kraftig bas og en omsluttende gengivelse til musik, podcasts og streaming.",
+     "simpleTitle": "Klar, fyldig og omsluttende lyd",
      "bias": "positive",
      "key": "sound_quality",
-     "groupId": "4cc9dc63-3819-458b-9e91-deb13418e04d"
+     "groupId": "5cfeb208-30b3-4235-85e3-338bc07fc08b"
     },
     "comfortable for extended wear": {
-     "sentimentAnalysis": "Flere anmeldelser roser pasformen, de bløde puder og egnetheden til lang tids lytning, også med briller.",
-     "simpleTitle": "Behagelig ved længere tids brug",
+     "sentimentAnalysis": "Komfort, bløde ørepuder og en sikker pasform roses ofte, også af brugere med briller.",
+     "simpleTitle": "Behagelige ved længere tids brug",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "20fbbd03-c630-4b58-9c2d-491b09c7948c"
+     "groupId": "88347ed3-4875-496d-a362-92cde172613b"
     },
-    "bass can obscure detail and the treble may feel restrained": {
-     "sentimentAnalysis": "En minoritet fandt klangen mudret eller utilstrækkeligt detaljeret, især ved mindre bastung musik og set i forhold til premiumprisen.",
-     "simpleTitle": "Bassen kan skjule detaljer, og diskanten kan virke afdæmpet",
+    "sound can lack detail and balance": {
+     "sentimentAnalysis": "Nogle lyttere oplever lyden som mudret eller bastung og savner diskant, detaljer og finesse i forhold til prisen.",
+     "simpleTitle": "Lyden kan mangle detaljer og balance",
      "bias": "negative",
      "key": "sound_quality",
-     "groupId": "4cc9dc63-3819-458b-9e91-deb13418e04d"
+     "groupId": "5cfeb208-30b3-4235-85e3-338bc07fc08b"
     },
-    "tight fit and warm ear cushions can reduce comfort": {
-     "sentimentAnalysis": "Nogle brugere oplever varme, tryk omkring hovedet eller ørerne og mindre komfort ved længere tids brug.",
-     "simpleTitle": "Stram pasform og varme ørepuder kan mindske komforten",
+    "pressure and heat can limit comfort": {
+     "sentimentAnalysis": "Andre oplevelser nævner varme ørepuder eller for kraftigt tryk, især ved længere tids lytning.",
+     "simpleTitle": "Tryk og varme kan begrænse komforten",
      "bias": "negative",
      "key": "comfort",
-     "groupId": "20fbbd03-c630-4b58-9c2d-491b09c7948c"
+     "groupId": "88347ed3-4875-496d-a362-92cde172613b"
     },
-    "long battery life and quick charging": {
-     "sentimentAnalysis": "Batteritiden roses konsekvent, og en anmeldelse fremhæver også den hurtige opladning.",
+    "long battery life and fast charging": {
+     "sentimentAnalysis": "Batteritiden vurderes konsekvent som meget god, og den hurtige opladning fremhæves også positivt.",
      "simpleTitle": "Lang batteritid og hurtig opladning",
      "bias": "positive",
-     "key": "battery",
-     "groupId": "3ce75db1-9d17-4284-be3b-c2857a0d926f"
-    },
-    "useful app controls and EQ": {
-     "sentimentAnalysis": "Appen værdsættes for EQ-justering, omfattende indstillinger og praktiske funktioner i hverdagen.",
-     "simpleTitle": "Nyttige appfunktioner og EQ",
-     "bias": "positive",
-     "key": "app_features",
-     "groupId": "d35d90e2-acee-4817-9ff0-c9b6d22c2778"
-    },
-    "noise reduction can fall short for highly sensitive listeners": {
-     "sentimentAnalysis": "Nogle lyttere forventede næsten fuldstændig stilhed og fandt især støjreduktionen uden musik blot god eller tilstrækkelig.",
-     "simpleTitle": "Støjreduktionen kan være utilstrækkelig for meget lydfølsomme lyttere",
-     "bias": "negative",
-     "key": "noise_cancellation",
-     "groupId": "29b981f3-32a8-44a9-b1c8-4f1bf8e39169"
-    },
-    "device switching in the software could be better": {
-     "sentimentAnalysis": "Softwarestyring af flere forbundne enheder opleves som besværlig, og fysiske betjeningsknapper savnes.",
-     "simpleTitle": "Enhedsskift i softwaren kunne være bedre",
-     "bias": "negative",
-     "key": "app_features",
-     "groupId": "d35d90e2-acee-4817-9ff0-c9b6d22c2778"
+     "key": "battery_life",
+     "groupId": "fd2466b2-d795-4697-bfee-324fdafd48c3"
     }
    },
    "grouping": {
-    "29b981f3-32a8-44a9-b1c8-4f1bf8e39169": {
+    "f0cf1c64-4884-4883-9119-c27594dab694": {
      "title": "Støjreduktion",
-     "id": "29b981f3-32a8-44a9-b1c8-4f1bf8e39169",
+     "id": "f0cf1c64-4884-4883-9119-c27594dab694",
      "references": [
       "20c78918-60e9-4af6-aa14-36b34e1aec99",
       "72a5e0ad-0638-4bdb-abcc-94c20162bfd9",
@@ -1255,6 +1235,7 @@
       "9672e985-82fa-4a76-ae10-54a5d08cae6e",
       "460c0ee4-590d-4d58-9ddb-35f5d8ad5245",
       "8d30f02f-e2e3-4a00-b7bd-31f6ba975395",
+      "c82a8940-75de-4746-b141-a1e35ca02acd",
       "ddd5f5c0-4ae4-4a80-82b2-74fdd3cd11c0",
       "cf8e355c-1bc9-4063-aaac-75ef26d6b456",
       "bf9fe883-fe0a-4b74-bf54-38c394f5d826",
@@ -1263,8 +1244,6 @@
       "4baccde9-b35f-421d-95ea-3c08ca5d7dac",
       "94506116-e278-4dbb-a073-1895b956e0a9",
       "52ce17c1-fc70-49a1-8357-7d3f63704f3f",
-      "97434d72-ec6a-4e6f-b3c6-deacc548137c",
-      "61c52877-0fbd-43b1-9a04-866bc9642ddd",
       "48e6c292-ab84-40bd-b4e4-73b4c9105f44",
       "a06cc88f-1d48-4278-b476-ae47f0f6c3c3",
       "623972cb-1670-4ec6-b955-59369815ee11",
@@ -1272,34 +1251,36 @@
       "7b4047a7-e980-4528-9513-5e16e23944d0"
      ]
     },
-    "4cc9dc63-3819-458b-9e91-deb13418e04d": {
+    "5cfeb208-30b3-4235-85e3-338bc07fc08b": {
      "title": "Lydkvalitet",
-     "id": "4cc9dc63-3819-458b-9e91-deb13418e04d",
+     "id": "5cfeb208-30b3-4235-85e3-338bc07fc08b",
      "references": [
       "72a5e0ad-0638-4bdb-abcc-94c20162bfd9",
       "9debb373-7359-45c5-a883-17779cf6dc21",
       "bc88cba0-4153-4de9-9533-b6ef9fce68d2",
       "d8d27515-a2b4-4653-b062-7e2075177eab",
       "9e10694a-642b-435c-9ace-269df65a302a",
+      "9672e985-82fa-4a76-ae10-54a5d08cae6e",
       "460c0ee4-590d-4d58-9ddb-35f5d8ad5245",
       "8d30f02f-e2e3-4a00-b7bd-31f6ba975395",
+      "c82a8940-75de-4746-b141-a1e35ca02acd",
       "cf8e355c-1bc9-4063-aaac-75ef26d6b456",
       "bf9fe883-fe0a-4b74-bf54-38c394f5d826",
       "a84fd9e4-71df-4230-9dfa-8accbccf99ca",
       "d1be7f1a-32ee-4071-9a35-87252fa2afaf",
+      "94506116-e278-4dbb-a073-1895b956e0a9",
       "a9b1c6c8-52ae-4aa7-b099-1eb2fad36b80",
       "d3c5de9d-91ee-4b9a-8fbf-f96a2a6cfd95",
       "52ce17c1-fc70-49a1-8357-7d3f63704f3f",
       "48e6c292-ab84-40bd-b4e4-73b4c9105f44",
-      "a06cc88f-1d48-4278-b476-ae47f0f6c3c3",
       "623972cb-1670-4ec6-b955-59369815ee11",
       "5cad8d75-2e9f-4273-9d68-2d418ba0bdd1",
       "7b4047a7-e980-4528-9513-5e16e23944d0"
      ]
     },
-    "20fbbd03-c630-4b58-9c2d-491b09c7948c": {
+    "88347ed3-4875-496d-a362-92cde172613b": {
      "title": "Komfort",
-     "id": "20fbbd03-c630-4b58-9c2d-491b09c7948c",
+     "id": "88347ed3-4875-496d-a362-92cde172613b",
      "references": [
       "72a5e0ad-0638-4bdb-abcc-94c20162bfd9",
       "9debb373-7359-45c5-a883-17779cf6dc21",
@@ -1312,24 +1293,14 @@
       "623972cb-1670-4ec6-b955-59369815ee11"
      ]
     },
-    "3ce75db1-9d17-4284-be3b-c2857a0d926f": {
+    "fd2466b2-d795-4697-bfee-324fdafd48c3": {
      "title": "Batteritid",
-     "id": "3ce75db1-9d17-4284-be3b-c2857a0d926f",
+     "id": "fd2466b2-d795-4697-bfee-324fdafd48c3",
      "references": [
       "72a5e0ad-0638-4bdb-abcc-94c20162bfd9",
       "8d30f02f-e2e3-4a00-b7bd-31f6ba975395",
       "97434d72-ec6a-4e6f-b3c6-deacc548137c",
       "7b4047a7-e980-4528-9513-5e16e23944d0"
-     ]
-    },
-    "d35d90e2-acee-4817-9ff0-c9b6d22c2778": {
-     "title": "App og funktioner",
-     "id": "d35d90e2-acee-4817-9ff0-c9b6d22c2778",
-     "references": [
-      "9debb373-7359-45c5-a883-17779cf6dc21",
-      "460c0ee4-590d-4d58-9ddb-35f5d8ad5245",
-      "52ce17c1-fc70-49a1-8357-7d3f63704f3f",
-      "a06cc88f-1d48-4278-b476-ae47f0f6c3c3"
      ]
     }
    },

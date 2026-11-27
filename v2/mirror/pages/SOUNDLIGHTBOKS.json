@@ -197,8 +197,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 82,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 35,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -390,20 +390,34 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "SOUNDLIGHTBOKS tilfører levende og stemningsfuldt lys med god spredning og imponerende effekter i både stuer og store sale. Den enkle betjening og appstyring gør oplevelsen særligt bekvem, mens den musikstyrede lysoplevelse skaber en immersiv feststemning. God batteritid, høj kvalitet og mulighed for at koble flere enheder sammen gør systemet til et varmt, punchy og engagerende supplement til Soundboks-højttalere.",
+   "summary": "SOUNDLIGHTBOKS leverer levende og stemningsfuld festbelysning med god spredning og en imponerende, immersiv effekt. Lyset fungerer særligt godt sammen med Soundboks-højttalere og bliver endnu mere imponerende, når flere enheder kobles sammen. Den nemme betjening og de musikresponsive effekter giver en gennemført og energisk oplevelse både i stuen og i store sale.",
    "headlines": {
-    "broad, impressive lighting creates a strong atmosphere": {
-     "sentimentAnalysis": "Belysningen roses for sin gode spredning, imponerende effekt og evne til at skabe stemning i forskellige rum.",
-     "simpleTitle": "Bred og imponerende belysning skaber en stærk stemning",
+    "vibrant lighting creates an impressive atmosphere": {
+     "sentimentAnalysis": "Belysningen beskrives som levende, stemningsfuld og imponerende både hjemme og i store lokaler.",
+     "simpleTitle": "Levende lys skaber en imponerende atmosfære",
      "bias": "positive",
-     "key": "lighting-atmosphere",
-     "groupId": "cd771483-53eb-4767-b6f2-97f360ebfd73"
+     "key": "lighting",
+     "groupId": "6d8db785-1f70-40bb-b1dc-a6ee4efb2062"
+    },
+    "good light spread complements Soundboks speakers": {
+     "sentimentAnalysis": "Den brede lysdækning værdsættes som et stærkt visuelt supplement til Soundboks-højttalere.",
+     "simpleTitle": "God lysspredning supplerer Soundboks-højttalere",
+     "bias": "positive",
+     "key": "lighting",
+     "groupId": "6d8db785-1f70-40bb-b1dc-a6ee4efb2062"
+    },
+    "linking multiple units enhances the party effect": {
+     "sentimentAnalysis": "Flere sammenkoblede enheder forbindes med en stærkere og mere imponerende festbelysning.",
+     "simpleTitle": "Sammenkobling af flere enheder forstærker festeffekten",
+     "bias": "positive",
+     "key": "lighting",
+     "groupId": "6d8db785-1f70-40bb-b1dc-a6ee4efb2062"
     }
    },
    "grouping": {
-    "cd771483-53eb-4767-b6f2-97f360ebfd73": {
-     "title": "Lyseffekter",
-     "id": "cd771483-53eb-4767-b6f2-97f360ebfd73",
+    "6d8db785-1f70-40bb-b1dc-a6ee4efb2062": {
+     "title": "Belysning",
+     "id": "6d8db785-1f70-40bb-b1dc-a6ee4efb2062",
      "references": [
       "e8780c54-d50f-4605-a425-3c0a42863667",
       "0731d00f-874e-4fea-8c30-a64a7ab41fd5",

@@ -24,7 +24,7 @@
    "efb1c0bd-33b7-4b20-bcca-e7e5b0da81e8",
    "797b92e6-4d9c-4de1-9faa-73e53a08e135"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 293035,
@@ -132,11 +132,10 @@
      "productCode": "SONYHTA9000BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager fredag den 04. december",
+     "deliveryDate": "2026-12-04T00:00:00Z",
      "canBuyOnline": true,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
