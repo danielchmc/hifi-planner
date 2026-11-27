@@ -89,7 +89,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "7,000000000000001 x 7,000000000000001 x 7,000000000000001 cm (bredde x højde x dybde)"
+        "value": "7 x 7 x 7 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -104,7 +104,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 5,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -175,7 +175,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "14,000000000000002 x 5 x 16 cm (bredde x højde x dybde)"
+        "value": "14 x 5 x 16 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -189,7 +189,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "availableQuantity": 27,
+     "availableQuantity": 26,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -271,12 +271,11 @@
      "productCode": "VESTMCCBL500BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 21. januar",
+     "deliveryDate": "2027-01-21T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

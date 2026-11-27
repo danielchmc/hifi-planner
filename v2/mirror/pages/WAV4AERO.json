@@ -224,7 +224,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 91,
+     "availableQuantity": 66,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -288,41 +288,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "WAV4AERO leverer en varm, klar og behagelig lydoplevelse med særligt veldefinerede vokaler og instrumenter. Den lette, sikre pasform og det åbne design gør hovedtelefonerne velegnede til løb, træning og hverdagssituationer, hvor omgivelserne skal kunne høres. Den lange batteritid giver stor praktisk værdi, selv om vindstøj ved cykling, begrænset samtalekvalitet og lejlighedsvise opladningsproblemer er ulemper.",
+   "summary": "WAV4AERO sidder sikkert og usædvanligt behageligt under løb og andre aktive aktiviteter, samtidig med at omgivelserne stadig kan høres. Lyden er generelt klar, varm og behagelig med særligt god gengivelse af vokaler og instrumenter, men bassen er mindre stram end på in-ear-modeller, og vindstøj er stadig et problem ved cykling. Batteritiden roses normalt som lang, men en anmeldelse beskriver alvorlige problemer med opladning og ulige batteriniveauer.",
    "headlines": {
-    "secure and comfortable for active use": {
-     "sentimentAnalysis": "Hovedtelefonerne roses gentagne gange for at være lette, behagelige og sikre, selv under løb eller kraftige bevægelser.",
-     "simpleTitle": "Sikker og behagelig til aktiv brug",
+    "secure and barely noticeable during exercise": {
+     "sentimentAnalysis": "Open-ear-designet sidder sikkert og føles særdeles behageligt under løb, gang og kraftige bevægelser.",
+     "simpleTitle": "Sikker og næsten umærkelig under træning",
      "bias": "positive",
-     "key": "fit",
-     "groupId": "52a991ce-8896-489f-8517-1c64ad7d1039"
+     "key": "secure-and-barely-noticeable",
+     "groupId": "549eb147-ab20-45fd-ab80-3b512fe32099"
     },
-    "keeps the surroundings audible": {
-     "sentimentAnalysis": "Det åbne design gør det muligt at høre normale omgivelseslyde, hvilket gør hovedtelefonerne praktiske til løb, cykling og sociale situationer.",
+    "surroundings remain audible": {
+     "sentimentAnalysis": "Open-ear-konstruktionen bevarer opmærksomheden på normale omgivelseslyde og gør høretelefonerne velegnede til sport og sociale situationer.",
      "simpleTitle": "Omgivelserne forbliver hørbare",
      "bias": "positive",
-     "key": "awareness",
-     "groupId": "10f6be87-ca1f-489f-838d-d7999983630e"
+     "key": "surroundings-remain-audible",
+     "groupId": "edd85151-5642-4dc4-a2b2-369c34626b6b"
     },
-    "clear, well-defined sound": {
-     "sentimentAnalysis": "Lyden beskrives overordnet som god med særligt klare vokaler og instrumenter samt en tilfredsstillende gengivelse til sport og hverdagsbrug.",
-     "simpleTitle": "Klar og veldefineret lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "333051be-8cbb-4e36-885c-13860c6b3659"
-    },
-    "long-lasting battery": {
-     "sentimentAnalysis": "Batteriydelsen vurderes konsekvent som god, idet kapaciteten lever op til forventningerne og holder længere end mange trådløse in-ear-alternativer.",
+    "long-lasting battery life": {
+     "sentimentAnalysis": "Batteritiden lever op til forventningerne og holder væsentligt længere end mange trådløse in-ear-alternativer.",
      "simpleTitle": "Lang batteritid",
      "bias": "positive",
-     "key": "battery",
-     "groupId": "38a39349-e3ca-4aa6-8572-a8d11407940c"
+     "key": "long-lasting-battery",
+     "groupId": "6ef57485-26d4-4b67-b3fc-6bffa0d9a78f"
+    },
+    "clear, detailed and enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses for klare vokaler, veldefinerede instrumenter og generelt god kvalitet.",
+     "simpleTitle": "Klar, detaljeret og behagelig lyd",
+     "bias": "positive",
+     "key": "clear-detailed-enjoyable-sound",
+     "groupId": "68b191f0-1d4b-4237-abca-943bec2f6524"
+    },
+    "less punchy bass than in-ear headphones": {
+     "sentimentAnalysis": "Det åbne design leverer acceptabel lyd, men mangler den fyldigere og strammere bas fra andre in-ear-høretelefoner.",
+     "simpleTitle": "Mindre fyldig bas end i in-ear-høretelefoner",
+     "bias": "negative",
+     "key": "less-punchy-bass",
+     "groupId": "68b191f0-1d4b-4237-abca-943bec2f6524"
     }
    },
    "grouping": {
-    "52a991ce-8896-489f-8517-1c64ad7d1039": {
-     "title": "Pasform og komfort",
-     "id": "52a991ce-8896-489f-8517-1c64ad7d1039",
+    "549eb147-ab20-45fd-ab80-3b512fe32099": {
+     "title": "Komfort og pasform",
+     "id": "549eb147-ab20-45fd-ab80-3b512fe32099",
      "references": [
       "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "32082b96-9d37-415b-be8a-b555f990fd96",
@@ -331,45 +338,45 @@
       "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     },
-    "333051be-8cbb-4e36-885c-13860c6b3659": {
+    "edd85151-5642-4dc4-a2b2-369c34626b6b": {
+     "title": "Opmærksomhed på omgivelserne",
+     "id": "edd85151-5642-4dc4-a2b2-369c34626b6b",
+     "references": [
+      "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
+      "f2197591-3f7d-443f-9d4f-4bff344e4b09",
+      "fbb1206c-3cb7-495e-9999-e5721c4e12d1",
+      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
+     ]
+    },
+    "6ef57485-26d4-4b67-b3fc-6bffa0d9a78f": {
+     "title": "Batteritid og opladning",
+     "id": "6ef57485-26d4-4b67-b3fc-6bffa0d9a78f",
+     "references": [
+      "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
+      "f2197591-3f7d-443f-9d4f-4bff344e4b09",
+      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5",
+      "226b8c2f-72c7-4bbc-b8dc-7d1af3c43de2"
+     ]
+    },
+    "68b191f0-1d4b-4237-abca-943bec2f6524": {
      "title": "Lydkvalitet",
-     "id": "333051be-8cbb-4e36-885c-13860c6b3659",
+     "id": "68b191f0-1d4b-4237-abca-943bec2f6524",
      "references": [
-      "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
       "f2197591-3f7d-443f-9d4f-4bff344e4b09",
       "fbb1206c-3cb7-495e-9999-e5721c4e12d1",
-      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
-     ]
-    },
-    "10f6be87-ca1f-489f-838d-d7999983630e": {
-     "title": "Hørelse af omgivende lyd",
-     "id": "10f6be87-ca1f-489f-838d-d7999983630e",
-     "references": [
-      "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
-      "f2197591-3f7d-443f-9d4f-4bff344e4b09",
-      "fbb1206c-3cb7-495e-9999-e5721c4e12d1",
-      "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
-     ]
-    },
-    "38a39349-e3ca-4aa6-8572-a8d11407940c": {
-     "title": "Batteritid",
-     "id": "38a39349-e3ca-4aa6-8572-a8d11407940c",
-     "references": [
-      "2d2fc761-ad12-4288-8422-6dd7f3f200b9",
-      "f2197591-3f7d-443f-9d4f-4bff344e4b09",
       "8faa8abf-68ba-4bb3-ab2b-dc7dce21c6b5"
      ]
     }
    },
-   "rating": 4.5,
-   "count": 14,
-   "reviewCount": 8,
+   "rating": 4.53333333333333,
+   "count": 15,
+   "reviewCount": 9,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 3,
-    "5": 9
+    "5": 10
    }
   },
   "boxContent": [

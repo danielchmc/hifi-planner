@@ -163,8 +163,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
-     "availableQuantity": 26,
+     "numberOfStoresExperience": 6,
+     "availableQuantity": 11,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -259,7 +259,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 1,
+     "availableQuantity": 3,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -304,69 +304,70 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VOGTVM5645X er et fremragende og klippestabilt TV-beslag med en imponerende smidig og dynamisk montering. Det solide, fuldt bevægelige design skaber en medrivende TV-oplevelse og gør det muligt at placere store, tunge TV’er med varm og præcis fleksibilitet. Den fremragende byggekvalitet, det diskrete design og den vægnære placering gør beslaget til et særdeles overbevisende valg.",
+   "summary": "Et førsteklasses og stabilt TV-vægbeslag med smidig fuld bevægelighed, nem montering og et imponerende slankt og flot design. Den robuste konstruktion håndterer store og tunge TV-apparater sikkert og giver nem adgang til tilslutningerne på bagsiden. Varm, punchy og medrivende lyd og billedoplevelse bliver lettere at opnå med præcis placering, mens beslaget ligger tæt ind mod væggen, når det er slået ind.",
    "headlines": {
     "easy to install": {
-     "sentimentAnalysis": "Anmeldelserne beskriver beslaget som nemt at montere, mens skabeloner og en app hjælper med præcis placering.",
+     "sentimentAnalysis": "Monteringen beskrives gentagne gange som enkel og understøttes af skabeloner og en app.",
      "simpleTitle": "Nem at montere",
      "bias": "positive",
-     "key": "easy-installation",
-     "groupId": "38a8fb0b-5de6-4a89-aded-d3c5e31727f8"
+     "key": "easy_installation",
+     "groupId": "37ca732f-931d-4819-bf83-ab15e7095294"
     },
-    "extremely stable for heavy TVs": {
-     "sentimentAnalysis": "Beslaget roses for at være ekstraordinært stabilt, selv ved TV’er på op til 35 kg.",
-     "simpleTitle": "Ekstremt stabilt til tunge TV’er",
+    "very stable for large TVs": {
+     "sentimentAnalysis": "Beslaget roses for at være særdeles stabilt med 35 kg tunge og 77 tommer store TV-apparater.",
+     "simpleTitle": "Meget stabilt til store TV",
      "bias": "positive",
-     "key": "heavy-duty-stability",
-     "groupId": "e2df46b2-e826-4bf4-8945-985090673fbd"
+     "key": "large_tv_stability",
+     "groupId": "eb3ca2a8-f400-40a0-9050-a503f99ade4c"
     },
-    "discreet, attractive design": {
-     "sentimentAnalysis": "Anmeldelserne roser det solide og flotte udseende samt den mindre synlighed end ved bredere alternativer.",
-     "simpleTitle": "Diskret og flot design",
+    "smooth, flexible positioning": {
+     "sentimentAnalysis": "Den fulde bevægelighed værdsættes for nem vinkling, justering og adgang til tilslutninger på bagsiden.",
+     "simpleTitle": "Smidig og fleksibel justering",
      "bias": "positive",
-     "key": "discreet-design",
-     "groupId": "c242c495-992e-41a2-8085-eb317a6938d6"
+     "key": "smooth_adjustment",
+     "groupId": "d807ef7e-b0d6-4086-a88c-a4ec40bdb642"
     },
-    "smooth full-motion adjustment": {
-     "sentimentAnalysis": "Den fuldt bevægelige arm beskrives som let at betjene og giver brede betragtningsvinkler samt nem adgang til tilslutningerne på bagsiden.",
-     "simpleTitle": "Smidig fuld bevægelighed",
+    "slim, attractive appearance": {
+     "sentimentAnalysis": "Det smalle og kraftfulde design opfattes som flot og mindre synligt, når TV'et er vinklet.",
+     "simpleTitle": "Slankt og flot udseende",
      "bias": "positive",
-     "key": "smooth-adjustment",
-     "groupId": "acff2fc5-2523-416a-b284-7d760cf3997b"
+     "key": "slim_design",
+     "groupId": "a71d4891-401c-47d3-b71e-e8e5508781ae"
     }
    },
    "grouping": {
-    "e2df46b2-e826-4bf4-8945-985090673fbd": {
+    "eb3ca2a8-f400-40a0-9050-a503f99ade4c": {
      "title": "Stabilitet",
-     "id": "e2df46b2-e826-4bf4-8945-985090673fbd",
+     "id": "eb3ca2a8-f400-40a0-9050-a503f99ade4c",
      "references": [
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "9da4e06f-27a9-43dd-9616-ccbd452e6f3f",
       "49337088-ec34-4980-9b43-da8e81fde62f",
-      "bc5a2682-3f30-424c-88ac-06e16b7e9fba"
+      "bc5a2682-3f30-424c-88ac-06e16b7e9fba",
+      "880be15e-c7a4-4e9a-a841-f5d07647042a"
      ]
     },
-    "38a8fb0b-5de6-4a89-aded-d3c5e31727f8": {
+    "37ca732f-931d-4819-bf83-ab15e7095294": {
      "title": "Montering",
-     "id": "38a8fb0b-5de6-4a89-aded-d3c5e31727f8",
+     "id": "37ca732f-931d-4819-bf83-ab15e7095294",
      "references": [
       "3b258b89-5dfc-4be4-bea8-413be2c39bf1",
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "9da4e06f-27a9-43dd-9616-ccbd452e6f3f"
      ]
     },
-    "c242c495-992e-41a2-8085-eb317a6938d6": {
-     "title": "Design og afstand til væggen",
-     "id": "c242c495-992e-41a2-8085-eb317a6938d6",
+    "a71d4891-401c-47d3-b71e-e8e5508781ae": {
+     "title": "Design",
+     "id": "a71d4891-401c-47d3-b71e-e8e5508781ae",
      "references": [
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "49337088-ec34-4980-9b43-da8e81fde62f",
       "880be15e-c7a4-4e9a-a841-f5d07647042a"
      ]
     },
-    "acff2fc5-2523-416a-b284-7d760cf3997b": {
-     "title": "Justerbarhed og adgang",
-     "id": "acff2fc5-2523-416a-b284-7d760cf3997b",
+    "d807ef7e-b0d6-4086-a88c-a4ec40bdb642": {
+     "title": "Justerbarhed",
+     "id": "d807ef7e-b0d6-4086-a88c-a4ec40bdb642",
      "references": [
       "250826f7-4385-49c7-a524-ce5f3882ecae",
       "bc5a2682-3f30-424c-88ac-06e16b7e9fba"

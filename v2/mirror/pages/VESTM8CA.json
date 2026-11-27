@@ -79,6 +79,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker \nUdgangseffekt: 4 x 75 watt (PWM Klasse D, RMS) \nHDMI/eARC for optimal digital TV-lyd\nBluetooth 5.1 med aptX HD og AAC \nMaks. opløsning: 24-bit/192 kHz\n3 EQ-forvalg på fjernbetjening (Music / Movie / Flat)\nAuto tænd/sluk*\nDedikeret højtalerkabel til indbyrdes forbindelse (5 meter)\nSpecialdesignet gulvstander fås som ekstratilbehør (Vestlyd M-Stands)\nMulighed for montering på PA-højtalerstander eller vægbeslag (standard Ø 3,5cm)\n*Ikke auto-tænd på Bluetooth eller pladespillerindgang \n"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -143,15 +152,6 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker \nUdgangseffekt: 4 x 75 watt (PWM Klasse D, RMS) \nHDMI/eARC for optimal digital TV-lyd\nBluetooth 5.1 med aptX HD og AAC \nMaks. opløsning: 24-bit/192 kHz\n3 EQ-forvalg på fjernbetjening (Music / Movie / Flat)\nAuto tænd/sluk*\nDedikeret højtalerkabel til indbyrdes forbindelse (5 meter)\nSpecialdesignet gulvstander fås som ekstratilbehør (Vestlyd M-Stands)\nMulighed for montering på PA-højtalerstander eller vægbeslag (standard Ø 3,5cm)\n*Ikke auto-tænd på Bluetooth eller pladespillerindgang \n"
-     }
-    ]
-   },
-   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -204,10 +204,10 @@
    "id": 69678
   },
   "stockItemAlternative": {
-   "save": "700,-",
+   "save": "1.200,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=VESTM8CA",
-   "availableQuantity": 3,
-   "lowestPrice": "7.799,-"
+   "availableQuantity": 4,
+   "lowestPrice": "7.299,-"
   },
   "variants": [
    {
@@ -264,7 +264,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 353,
+     "availableQuantity": 350,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -387,7 +387,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 86,
+     "availableQuantity": 71,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -481,43 +481,44 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTM8CA leverer varm, kraftfuld og engagerende lyd med imponerende bas og stærk værdi for pengene, især til vinyl, elektronisk musik, pop og rock. Højttalerne har et klassisk, markant design og er nemme at sætte op uden behov for en separat forstærker. Audiophile detaljer, præcis rumgengivelse og kompleks klassisk musik er mindre overbevisende, men den samlede lyd er stadig medrivende, livlig og meget underholdende.",
+   "summary": "VESTM8CA leverer en varm, slagkraftig og meget underholdende lyd med imponerende bas, høj lydstyrke og fremragende værdi for pengene. Højttalerne egner sig især godt til vinyl, pop, elektronisk musik, rock og daglig lytning, mens det klassiske design også ser godt ud. Opløsning og stereoperspektiv er mindre overbevisende ved komplekse klassiske optagelser, men den enkle opsætning og livlige gengivelse gør helheden særdeles attraktiv.",
    "headlines": {
-    "powerful, enjoyable bass": {
-     "sentimentAnalysis": "Bassen roses gentagne gange for at være kraftfuld og underholdende og stærk nok til at mindske eller helt fjerne behovet for en subwoofer.",
-     "simpleTitle": "Kraftfuld og underholdende bas",
+    "lively, powerful sound at an attractive price": {
+     "sentimentAnalysis": "Højttalerne roses gentagne gange for en klar, behagelig og energisk lyd med usædvanligt god værdi for pengene.",
+     "simpleTitle": "Livlig og kraftfuld lyd til en attraktiv pris",
      "bias": "positive",
-     "key": "powerful-bass",
-     "groupId": "8c2c80b2-218d-45c6-a146-8cb01ede15f7"
+     "key": "lively-powerful-sound",
+     "groupId": "448bb457-76eb-4059-84ee-68cd3c848a35"
     },
-    "excellent sound for the price": {
-     "sentimentAnalysis": "Produktet vurderes til at levere en usædvanligt fyldig og kompetent lyd til prisen.",
-     "simpleTitle": "Fremragende lyd til prisen",
+    "deep, satisfying bass": {
+     "sentimentAnalysis": "Den kraftige bas er et gennemgående højdepunkt og beskrives som sjov og stærk nok til at erstatte en subwoofer.",
+     "simpleTitle": "Dyb og fyldig bas",
      "bias": "positive",
-     "key": "sound-value",
-     "groupId": "b3991a0e-ece5-4a9c-ab38-97c898d769ae"
+     "key": "deep-bass",
+     "groupId": "448bb457-76eb-4059-84ee-68cd3c848a35"
     },
-    "lively, versatile sound": {
-     "sentimentAnalysis": "Højttalerne håndterer forskellige musikgenrer med en engagerende og musikalsk gengivelse, der er særdeles underholdende.",
-     "simpleTitle": "Livlig og alsidig lyd",
-     "bias": "positive",
-     "key": "lively-versatile-sound",
-     "groupId": "8c2c80b2-218d-45c6-a146-8cb01ede15f7"
+    "limited resolution with complex recordings": {
+     "sentimentAnalysis": "Den livlige gengivelse sker på bekostning af raffinement, med svagere detaljegengivelse og stereoperspektiv ved komplekst materiale.",
+     "simpleTitle": "Begrænset opløsning ved komplekse optagelser",
+     "bias": "negative",
+     "key": "complex-recording-limitations",
+     "groupId": "448bb457-76eb-4059-84ee-68cd3c848a35"
     },
-    "classic, substantial appearance": {
-     "sentimentAnalysis": "Det gammeldags design, den imponerende størrelse og det attraktive klassiske udseende bliver værdsat.",
-     "simpleTitle": "Klassisk og markant udformning",
+    "classic, attractive styling": {
+     "sentimentAnalysis": "Højttalerne værdsættes for et markant retrolook, store kabinetter og et klassisk udtryk, der passer til produktets karakter.",
+     "simpleTitle": "Klassisk og attraktivt design",
      "bias": "positive",
      "key": "classic-design",
-     "groupId": "c992a278-ccb8-4aa9-9bf5-d89ffa7f0ac9"
+     "groupId": "0a251e6f-0713-4293-91ba-6ba30b696fe3"
     }
    },
    "grouping": {
-    "8c2c80b2-218d-45c6-a146-8cb01ede15f7": {
+    "448bb457-76eb-4059-84ee-68cd3c848a35": {
      "title": "Lydkvalitet",
-     "id": "8c2c80b2-218d-45c6-a146-8cb01ede15f7",
+     "id": "448bb457-76eb-4059-84ee-68cd3c848a35",
      "references": [
       "4c202ecc-e630-463d-9244-423c120e647b",
+      "83bee201-9faf-4308-9279-986a10ea412b",
       "256a5253-d144-41fe-8bce-7fa5a80999ad",
       "196fcd0d-7df1-4dd9-8d4b-ca4a3cd2d902",
       "c26591b0-a4c7-441b-8667-b515e30239aa",
@@ -528,18 +529,9 @@
       "4580c5c5-fa26-4fd6-9f62-6a9724354ff6"
      ]
     },
-    "b3991a0e-ece5-4a9c-ab38-97c898d769ae": {
-     "title": "Værdi for pengene",
-     "id": "b3991a0e-ece5-4a9c-ab38-97c898d769ae",
-     "references": [
-      "256a5253-d144-41fe-8bce-7fa5a80999ad",
-      "c26591b0-a4c7-441b-8667-b515e30239aa",
-      "8a9558d5-5268-4d39-b3d6-d8c61177b852"
-     ]
-    },
-    "c992a278-ccb8-4aa9-9bf5-d89ffa7f0ac9": {
+    "0a251e6f-0713-4293-91ba-6ba30b696fe3": {
      "title": "Design",
-     "id": "c992a278-ccb8-4aa9-9bf5-d89ffa7f0ac9",
+     "id": "0a251e6f-0713-4293-91ba-6ba30b696fe3",
      "references": [
       "83bee201-9faf-4308-9279-986a10ea412b",
       "6947e592-01ba-4a95-a917-b27b893058d6"

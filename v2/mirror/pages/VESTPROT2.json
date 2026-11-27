@@ -159,14 +159,30 @@
     "productCode": "VESTPROT2BK",
     "ean": "5706957020164",
     "priceDetails": {
-     "priceValueId": 1006983,
-     "price": 4499,
-     "priceFormatted": "4.499,-",
+     "priceValueId": 1212513,
+     "price": 2999,
+     "priceFormatted": "2.999,-",
+     "priceBefore": 3799,
+     "priceBeforeFormatted": "3.799,-",
+     "priceSavingsFormatted": "800,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 4499
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 2999,
+     "unitPriceBefore": 3799
     },
+    "ribbons": [
+     {
+      "text": "Spar 21%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -205,7 +221,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 90,
+     "availableQuantity": 153,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -302,48 +318,34 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTPROT2 roses bredt som en robust, attraktiv og fornøjelig pladespiller med varm, slagkraftig lyd og en god medfølgende pickup. Den indbyggede RIAA-forstærker giver ekstra bekvemmelighed, mens hurtig opstart, stabil drift og modstandsdygtighed over for resonans forbedrer lytteoplevelsen. De største ulemper er følsomhed over for akustisk feedback og manglen på automatiske funktioner, hvilket gør pladespilleren bedre egnet til hjemmebrug end krævende klubbrug.",
+   "summary": "VESTPROT2 er en meget rost pladespiller med varm, fyldig og detaljeret lyd fra den medfølgende pickup. Den solide konstruktion, stilfulde udformning og indbyggede RIAA-forforstærker giver stor værdi i hverdagen. De største ulemper er manglen på automatisk afbrydelse og den større følsomhed over for akustisk feedback, så pladespilleren egner sig især til hjemmebrug.",
    "headlines": {
-    "warm, powerful sound from the included cartridge": {
-     "sentimentAnalysis": "Pladespilleren leverer detaljeret, fornøjelig og slagkraftig gengivelse, hvor den medfølgende pickup bidrager markant til den gode lyd.",
-     "simpleTitle": "Varm og kraftfuld lyd fra den medfølgende pickup",
+    "warm, punchy sound from the supplied cartridge": {
+     "sentimentAnalysis": "Den medfølgende pickup leverer gennemgående behagelig, levende og kraftfuld lyd, og i én sammenligning blev pladespilleren vurderet bedre end en langt dyrere model.",
+     "simpleTitle": "Varm og fyldig lyd fra den medfølgende pickup",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "fc368960-fc67-4245-a8e5-f24bcdc5642f"
+     "key": "sound-quality",
+     "groupId": "c5c1d783-f7e9-47a8-88b3-8cb1214b31da"
     },
-    "solid construction and attractive styling": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent den robuste konstruktion, den pålidelige stabilitet og det eksklusive udseende.",
-     "simpleTitle": "Solid konstruktion og flot design",
+    "solid construction and premium appearance": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver den robuste, veludførte konstruktion og den attraktive eksklusive finish, herunder det markante guldfarvede udseende.",
+     "simpleTitle": "Solid konstruktion og eksklusivt udseende",
      "bias": "positive",
-     "key": "build",
-     "groupId": "11884933-59a2-4869-aac4-865d18d754c3"
+     "key": "build-and-design",
+     "groupId": "d4407f08-0df8-4010-8898-afd031f37777"
     },
-    "built-in RIAA stage adds convenience": {
-     "sentimentAnalysis": "Den integrerede RIAA-forstærker ses som en nyttig funktion, der gør opsætningen enklere.",
-     "simpleTitle": "Indbygget RIAA-forstærker giver ekstra bekvemmelighed",
+    "useful built-in RIAA preamplifier": {
+     "sentimentAnalysis": "Den indbyggede RIAA-forforstærker opfattes som en værdifuld og praktisk funktion, der gør tilslutning til et musikanlæg enklere.",
+     "simpleTitle": "Praktisk indbygget RIAA-forforstærker",
      "bias": "positive",
-     "key": "riaa",
-     "groupId": "6df3c755-c49b-4e38-88a8-2fad362ca277"
-    },
-    "no automatic stop or pickup operation": {
-     "sentimentAnalysis": "Manglen på automatisk stop ved pladens slutning er den tydeligste kritik af betjeningen, selv om en anmeldelse bemærker, at det er let at vænne sig til.",
-     "simpleTitle": "Ingen automatisk afbrydelse eller pickup-betjening",
-     "bias": "negative",
-     "key": "operation",
-     "groupId": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3"
-    },
-    "fast, stable and resonance-resistant operation": {
-     "sentimentAnalysis": "Hurtig opstart, stabil sporing og god modstandsdygtighed over for resonans giver sikker afspilning i hverdagen.",
-     "simpleTitle": "Hurtig, stabil og resonansfri drift",
-     "bias": "positive",
-     "key": "operation",
-     "groupId": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3"
+     "key": "riaa-preamplifier",
+     "groupId": "9eeed1fe-fd05-4a6f-a312-4cb893d2bbc5"
     }
    },
    "grouping": {
-    "fc368960-fc67-4245-a8e5-f24bcdc5642f": {
+    "c5c1d783-f7e9-47a8-88b3-8cb1214b31da": {
      "title": "Lydkvalitet",
-     "id": "fc368960-fc67-4245-a8e5-f24bcdc5642f",
+     "id": "c5c1d783-f7e9-47a8-88b3-8cb1214b31da",
      "references": [
       "86840c78-d6e3-4f59-86cf-fb973061ced0",
       "155fb82b-c49b-4ae8-b8d0-00e6f6330ba7",
@@ -353,30 +355,19 @@
       "4813c28b-74a4-4140-a77e-051bc5e766bd"
      ]
     },
-    "11884933-59a2-4869-aac4-865d18d754c3": {
+    "d4407f08-0df8-4010-8898-afd031f37777": {
      "title": "Byggekvalitet og design",
-     "id": "11884933-59a2-4869-aac4-865d18d754c3",
+     "id": "d4407f08-0df8-4010-8898-afd031f37777",
      "references": [
       "e9fdba4c-ccd2-41cc-a8e9-cc59cc751a3c",
       "b33b283d-241f-4faf-b7f9-f2481077ab0d",
       "a45105df-b30d-47f0-90c2-1c5871b83dd3",
-      "34595062-5468-4ab6-8c4c-292729f7c565",
-      "4813c28b-74a4-4140-a77e-051bc5e766bd"
+      "34595062-5468-4ab6-8c4c-292729f7c565"
      ]
     },
-    "8ab6bb20-0a86-4593-8d79-d9299c82bbd3": {
-     "title": "Betjening og funktioner",
-     "id": "8ab6bb20-0a86-4593-8d79-d9299c82bbd3",
-     "references": [
-      "fb16834f-c06f-4311-b9b5-c3a47738b966",
-      "34595062-5468-4ab6-8c4c-292729f7c565",
-      "dfde6fc3-5405-4c98-a10a-474eb9ffcbcc",
-      "4813c28b-74a4-4140-a77e-051bc5e766bd"
-     ]
-    },
-    "6df3c755-c49b-4e38-88a8-2fad362ca277": {
-     "title": "Indbygget RIAA-forstærker",
-     "id": "6df3c755-c49b-4e38-88a8-2fad362ca277",
+    "9eeed1fe-fd05-4a6f-a312-4cb893d2bbc5": {
+     "title": "Indbygget RIAA-forforstærker",
+     "id": "9eeed1fe-fd05-4a6f-a312-4cb893d2bbc5",
      "references": [
       "e9fdba4c-ccd2-41cc-a8e9-cc59cc751a3c",
       "72c92e89-a1d5-4630-929c-3596bad76489"

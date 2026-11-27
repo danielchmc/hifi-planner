@@ -27,13 +27,13 @@
    "cats": {
     "Højtaler > Trådløs / Bluetooth højtaler": 38
    },
-   "count": 38,
+   "count": 39,
    "bundles": 11,
-   "outlet": 0,
+   "outlet": 1,
    "products": 27,
    "inCatalogue": 27,
    "variantAxes": {
-    "colorOptions": 26,
+    "colorOptions": 27,
     "none": 11,
     "dropDown": 1
    },
@@ -1339,6 +1339,27 @@
    "hifiPlanner": []
   },
   {
+   "type": "Trådløs subwoofer",
+   "keys": {
+    "WirelessSubwoofer": 6
+   },
+   "cats": {
+    "Højtaler > Subwoofer": 6
+   },
+   "count": 7,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 6,
+   "inCatalogue": 6,
+   "variantAxes": {
+    "colorOptions": 7
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Subwoofers"
+   ]
+  },
+  {
    "type": "Udendørshøjtaler",
    "keys": {
     "OutdoorLoudspeaker": 7
@@ -1458,27 +1479,6 @@
    "mapped": "cable",
    "hifiPlanner": [
     "Cable: sub"
-   ]
-  },
-  {
-   "type": "Trådløs subwoofer",
-   "keys": {
-    "WirelessSubwoofer": 6
-   },
-   "cats": {
-    "Højtaler > Subwoofer": 6
-   },
-   "count": 6,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 6,
-   "inCatalogue": 6,
-   "variantAxes": {
-    "colorOptions": 6
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Subwoofers"
    ]
   },
   {

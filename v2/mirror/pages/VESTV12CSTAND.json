@@ -111,8 +111,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 23,
-     "availableQuantity": 126,
+     "numberOfStoresExperience": 24,
+     "availableQuantity": 110,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -135,116 +135,111 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTV12CSTAND-højttalerstanderne roses bredt for den robuste konstruktion, det flotte udseende, den sikre pasform og den forbedrede placering af højttalerne. Standene giver en renere og mere omsluttende gengivelse med strammere bas og bedre diskantretning, samtidig med at uønskede vibrationer reduceres. Enkelte anmeldelser bemærker dog den høje pris, finishen, justeringen under samling og den selvklæbende montering.",
+   "summary": "VESTV12CSTAND roses bredt som en robust og flot måde at hæve og vinkle højttalere korrekt på, hvilket giver en fyldigere, mere direkte og omsluttende lytteoplevelse samt reducerer uønskede vibrationer. Pasform, stabilitet og udseende er generelt fremragende med forskellige højttalere, og samlingen er som regel enkel. Enkelte anmeldelser nævner dog ujævne eller beskadigede dele, upræcis justering, skuffende tape og en pris, der føles høj i forhold til finishen.",
    "headlines": {
-    "solid and stable construction": {
-     "sentimentAnalysis": "Tunge, robuste materialer giver pålidelig støtte og god stabilitet.",
-     "simpleTitle": "Solid og stabil konstruktion",
+    "sturdy construction provides secure speaker support": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ofte stativerne som tunge, solide og stabile samt egnede til større eller tungere højttalere.",
+     "simpleTitle": "Den robuste konstruktion giver sikker støtte",
      "bias": "positive",
      "key": "stability",
-     "groupId": "aa016b33-25f1-4e72-865b-c73171a1d7dd"
+     "groupId": "4abecbca-1747-4fc9-90d4-e5510eaa4978"
     },
-    "stylish design elevates the speakers": {
-     "sentimentAnalysis": "Standene giver store højttalere et mere elegant og gennemtænkt udtryk og passer flot ind i rummet.",
-     "simpleTitle": "Stilrent design løfter højttalerne",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "2238fbf2-c7a6-46ae-81d3-a11043dca189"
-    },
-    "better speaker positioning improves bass and treble": {
-     "sentimentAnalysis": "Standene løfter højttalerne fra gulvet og retter lyden mod lyttepositionen, hvilket giver mere kraftfuld bas og klarere diskant.",
-     "simpleTitle": "Bedre højttalerplacering forbedrer bas og diskant",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "7314a2ae-1ea4-4e9b-b737-4260767ace78"
-    },
-    "broad speaker compatibility": {
-     "sentimentAnalysis": "Standene passer til en række store højttalere, herunder modeller fra JBL, AR, Cerwin-Vega og Vestlyd.",
-     "simpleTitle": "Bred kompatibilitet med højttalere",
+    "the design makes large speakers look more refined": {
+     "sentimentAnalysis": "Standerne roses gentagne gange for at passe til højttalerne og få deres proportioner til at virke mindre klodsede og mere gennemførte.",
+     "simpleTitle": "Designet får store højttalere til at se mere elegante ud",
      "bias": "positive",
      "key": "fit",
-     "groupId": "632f60be-6f9f-438b-9287-481faba6213f"
+     "groupId": "82f4bac6-c3e8-4e2b-acaa-4d8244b4c563"
     },
-    "price and finish leave room for improvement": {
-     "sentimentAnalysis": "Flere anmeldelser finder standene dyre i forhold til finishen og den medfølgende monteringsløsning.",
-     "simpleTitle": "Pris og finish kunne være bedre",
+    "the stands improve clarity, bass and listening direction": {
+     "sentimentAnalysis": "At hæve og vinkle højttalerne forbindes med kraftigere bas, bedre diskantretning og en mere præcis lytteposition.",
+     "simpleTitle": "Standerne forbedrer klarhed, bas og lydretning",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "cc036556-8514-4bc2-b683-4ec82e450d43"
+    },
+    "some units have finish and leveling problems": {
+     "sentimentAnalysis": "Et mindretal af anmeldelserne nævner skæv belægning, ujævne bunde, transportskader eller arme, der kan flytte sig under samlingen.",
+     "simpleTitle": "Nogle eksemplarer har problemer med finish og nivellering",
      "bias": "negative",
-     "key": "price",
-     "groupId": "5bcf8a94-be49-49bc-9a6e-60d5a9c6db98"
+     "key": "stability",
+     "groupId": "4abecbca-1747-4fc9-90d4-e5510eaa4978"
+    },
+    "the adhesive mounting method is a weak point": {
+     "sentimentAnalysis": "Den medfølgende tape kritiseres som grim og mindre sikker end en skrueforbindelse i højttalernes eksisterende gevind.",
+     "simpleTitle": "Den selvklæbende montering er et svagt punkt",
+     "bias": "negative",
+     "key": "installation",
+     "groupId": "a6c7cba0-7c1e-49ce-9bd3-ad20e48b6496"
     }
    },
    "grouping": {
-    "632f60be-6f9f-438b-9287-481faba6213f": {
-     "title": "Pasform og kompatibilitet",
-     "id": "632f60be-6f9f-438b-9287-481faba6213f",
+    "82f4bac6-c3e8-4e2b-acaa-4d8244b4c563": {
+     "title": "Pasform og design",
+     "id": "82f4bac6-c3e8-4e2b-acaa-4d8244b4c563",
      "references": [
+      "a3a90eec-ef56-4828-9e27-7b791c272c26",
+      "39768f51-131e-435c-adb3-b0d07ce85358",
+      "76f17952-e5e1-471d-85be-19f02f3e6883",
+      "7a1890eb-88b1-4407-843b-df573235e94c",
       "22fd2711-52a6-402a-b521-b17a7403c8de",
+      "e64c1184-50d6-41be-a7ab-af32fec019b8",
       "d3624024-75c1-44f9-99e6-b07a522dd914",
       "c3c60bea-245e-4fad-8a63-40f7f4240859",
       "2979f6ac-c0ad-4c70-9a6a-26c334d70568",
       "57942c1f-cbd0-4fb7-9a47-2a2a740f6445",
       "d6ad6a29-3117-4500-875e-54e789a586ae",
       "0794d8cb-46b8-4687-b0fe-322c18610a82",
+      "85863df5-b556-4dc3-a85b-089034d2dcaf",
       "f2ba4f50-79e2-450a-9fdb-8db9d9f711b4",
-      "ccab117b-3457-45d2-85b7-cd7a23e6fe31",
-      "568d1b87-0296-4ac9-af52-a2155182cc1f",
-      "62e19c17-3b67-43eb-8e2b-5e62a4b0e65d",
-      "85cf7f7a-69fe-48ba-833e-160a57c52ed5"
+      "15fa6568-73cf-4969-85a4-6173b6c00131",
+      "85cf7f7a-69fe-48ba-833e-160a57c52ed5",
+      "492d35ed-e13c-48f7-98e9-859e76ec6ee2",
+      "d580de94-9542-44dc-a437-de8a291851dc",
+      "568d1b87-0296-4ac9-af52-a2155182cc1f"
      ]
     },
-    "aa016b33-25f1-4e72-865b-c73171a1d7dd": {
+    "4abecbca-1747-4fc9-90d4-e5510eaa4978": {
      "title": "Byggekvalitet og stabilitet",
-     "id": "aa016b33-25f1-4e72-865b-c73171a1d7dd",
+     "id": "4abecbca-1747-4fc9-90d4-e5510eaa4978",
      "references": [
       "fb4f92e7-cb58-471b-ab06-8e61e2a24b70",
-      "9deaa459-64ce-4245-8f79-a89460694897",
       "7a1890eb-88b1-4407-843b-df573235e94c",
       "b9a940b5-b1e2-48f0-a895-635ee2708a2d",
-      "367dc519-eda7-4093-adf1-226f9568d0b2",
       "88c51ae8-e7f2-4c51-9b33-1d7d4aced551",
       "f5ee6f49-0fa2-4fe2-9ed9-55137218b0d3",
-      "0eda3948-1def-42d6-92c8-91c88b1e8e6e",
-      "370b0d41-2f2d-402e-99f7-aac6fb68e54e",
-      "9d72b6c5-9496-4aa3-bb4f-9d7660140bcb",
+      "62e19c17-3b67-43eb-8e2b-5e62a4b0e65d",
+      "2d8233c4-05b9-408f-9cf2-7053c0db3cf4",
       "bcd36e39-8d8b-48c4-a04b-5f27c149c03e",
-      "85863df5-b556-4dc3-a85b-089034d2dcaf"
+      "9d72b6c5-9496-4aa3-bb4f-9d7660140bcb",
+      "ccab117b-3457-45d2-85b7-cd7a23e6fe31",
+      "568d1b87-0296-4ac9-af52-a2155182cc1f",
+      "367dc519-eda7-4093-adf1-226f9568d0b2",
+      "0eda3948-1def-42d6-92c8-91c88b1e8e6e"
      ]
     },
-    "7314a2ae-1ea4-4e9b-b737-4260767ace78": {
-     "title": "Lydkvalitet",
-     "id": "7314a2ae-1ea4-4e9b-b737-4260767ace78",
+    "cc036556-8514-4bc2-b683-4ec82e450d43": {
+     "title": "Lyd og placering",
+     "id": "cc036556-8514-4bc2-b683-4ec82e450d43",
      "references": [
       "feb5e1b1-4fa5-4f84-90ef-496cc4073110",
       "e7b531e0-3964-4ba9-88d5-eacfdb2ac6cb",
       "88c51ae8-e7f2-4c51-9b33-1d7d4aced551",
       "49a802b9-f113-4501-a5a9-197023306223",
       "15fa6568-73cf-4969-85a4-6173b6c00131",
-      "d580de94-9542-44dc-a437-de8a291851dc",
-      "660daad1-0783-494a-996e-10f84e2845ea"
+      "660daad1-0783-494a-996e-10f84e2845ea",
+      "370b0d41-2f2d-402e-99f7-aac6fb68e54c",
+      "d580de94-9542-44dc-a437-de8a291851dc"
      ]
     },
-    "2238fbf2-c7a6-46ae-81d3-a11043dca189": {
-     "title": "Design og udseende",
-     "id": "2238fbf2-c7a6-46ae-81d3-a11043dca189",
+    "a6c7cba0-7c1e-49ce-9bd3-ad20e48b6496": {
+     "title": "Montering og tilbehør",
+     "id": "a6c7cba0-7c1e-49ce-9bd3-ad20e48b6496",
      "references": [
-      "a3a90eec-ef56-4828-9e27-7b791c272c26",
-      "39768f51-131e-435c-adb3-b0d07ce85358",
-      "76f17952-e5e1-471d-85be-19f02f3e6883",
-      "7a1890eb-88b1-4407-843b-df573235e94c",
-      "15fa6568-73cf-4969-85a4-6173b6c00131",
-      "d580de94-9542-44dc-a437-de8a291851dc",
-      "85cf7f7a-69fe-48ba-833e-160a57c52ed5"
-     ]
-    },
-    "5bcf8a94-be49-49bc-9a6e-60d5a9c6db98": {
-     "title": "Pris og værdi",
-     "id": "5bcf8a94-be49-49bc-9a6e-60d5a9c6db98",
-     "references": [
-      "9749e0ee-e849-48e9-9ec7-6b7e3523aca8",
-      "7a1890eb-88b1-4407-843b-df573235e94c",
-      "e64c1184-50d6-41be-a7ab-af32fec019b8",
-      "b24136d3-92a2-49d0-952e-4c5c6197c2c7",
-      "2d8233c4-05b9-408f-9cf2-7053c0db3cf4",
+      "d111b522-0369-4bc3-9ca9-18ad57fcb26e",
+      "88c51ae8-e7f2-4c51-9b33-1d7d4aced551",
+      "f5ee6f49-0fa2-4fe2-9ed9-55137218b0d3",
+      "a8207e6e-d441-414c-8382-a50ef448ae88",
       "98a46ed4-abd3-413e-a128-916831015ad7"
      ]
     }

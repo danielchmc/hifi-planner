@@ -21,7 +21,7 @@
    "bde165ec-147d-493e-8ea2-50024547e871",
    "72013690-042d-47d8-baca-6ab3a754cf90"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 169114,
@@ -30,9 +30,9 @@
   "brandPage": "/marker/vogels/",
   "recommendedAlternatives": {
    "productCodes": [
+    "VOGTVM3215X",
     "VOGTVM5605X",
     "ESSBASICWMMFLATX",
-    "VOGTVM3215X",
     "ESSBASICWMLFLATX"
    ],
    "isOutlet": "false"
@@ -150,12 +150,11 @@
      "productCode": "VOGTVM3615BK"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager torsdag den 03. december",
+     "deliveryDate": "2026-12-03T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 2,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

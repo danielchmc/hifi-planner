@@ -80,6 +80,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker \nUdgangseffekt: 4 x 75 watt (PWM Klasse D, RMS) \nHDMI/eARC for optimal digital TV-lyd\nBluetooth 5.1 med aptX HD og AAC \nMaks. opløsning: 24-bit/192 kHz\n3 EQ-forvalg på fjernbetjening (Music / Movie / Flat)\nAuto tænd/sluk*\nDedikeret højtalerkabel til indbyrdes forbindelse (3 meter)\nSpecialdesignet gulvstander fås som ekstratilbehør (Vestlyd M-Stands)\nMulighed for montering på PA-højtalerstander eller vægbeslag (standard Ø 3,5cm)\n*Ikke auto-tænd på Bluetooth eller pladespillerindgang "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -144,15 +153,6 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker \nUdgangseffekt: 4 x 75 watt (PWM Klasse D, RMS) \nHDMI/eARC for optimal digital TV-lyd\nBluetooth 5.1 med aptX HD og AAC \nMaks. opløsning: 24-bit/192 kHz\n3 EQ-forvalg på fjernbetjening (Music / Movie / Flat)\nAuto tænd/sluk*\nDedikeret højtalerkabel til indbyrdes forbindelse (3 meter)\nSpecialdesignet gulvstander fås som ekstratilbehør (Vestlyd M-Stands)\nMulighed for montering på PA-højtalerstander eller vægbeslag (standard Ø 3,5cm)\n*Ikke auto-tænd på Bluetooth eller pladespillerindgang "
-     }
-    ]
-   },
-   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -207,7 +207,7 @@
   "stockItemAlternative": {
    "save": "700,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=VESTM6CA",
-   "availableQuantity": 4,
+   "availableQuantity": 3,
    "lowestPrice": "5.799,-"
   },
   "variants": [
@@ -265,7 +265,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 256,
+     "availableQuantity": 252,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -394,7 +394,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 416,
+     "availableQuantity": 396,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -488,42 +488,65 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTM6CA leverer en varm, kraftfuld og levende lyd med klare detaljer, dyb bas og rigelig styrke til mange forskellige musikgenrer. De kompakte aktive højttalere kombinerer imponerende lydkvalitet med et flot design og et stærkt forhold mellem pris og kvalitet. VESTM6CA er et særligt overbevisende valg for lyttere, der ønsker en medrivende oplevelse uden et stort setup.",
+   "summary": "VESTM6CA leverer en varm, kraftfuld og medrivende lyd med dyb bas, klare detaljer og rigelig effekt til musik, film og flere lydkilder. Kompakte aktive højttalere kombinerer et flot design, fleksible tilslutningsmuligheder og god værdi for pengene, mens lydkvaliteten afslører forskelle mellem optagelser. En svag transformatorlignende brummen kan høres i stille rum, men helhedsindtrykket er særdeles positivt.",
    "headlines": {
-    "warm, powerful sound with strong bass": {
-     "sentimentAnalysis": "Lyden roses gentagne gange som kraftfuld, varm, levende og fyldig i bassen.",
-     "simpleTitle": "Varm og kraftfuld lyd med god bas",
+    "warm, powerful sound with deep bass": {
+     "sentimentAnalysis": "Anmeldelserne roser den varme, klare, levende og kraftfulde lyd, især den stærke bas.",
+     "simpleTitle": "Varm og kraftfuld lyd med dyb bas",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f75e33a6-1e92-47de-bc88-1e27cb926f5a"
+     "key": "sound-quality",
+     "groupId": "93a7067b-fb75-43b4-ba86-6fb9462d2dbc"
     },
-    "clear, versatile sound for different music": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver klarhed, musikalsk alsidighed og afslørende detaljer i optagelserne.",
-     "simpleTitle": "Klar og alsidig lyd til forskellig musik",
+    "clear detail across music and sources": {
+     "sentimentAnalysis": "Lyden beskrives som klar, alsidig på tværs af genrer og afslørende over for optagekvaliteten.",
+     "simpleTitle": "Klar detaljegengivelse med musik og flere kilder",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "f75e33a6-1e92-47de-bc88-1e27cb926f5a"
+     "key": "sound-quality",
+     "groupId": "93a7067b-fb75-43b4-ba86-6fb9462d2dbc"
     },
-    "attractive, compact design": {
-     "sentimentAnalysis": "Højttalerne værdsættes for deres kompakte størrelse og flotte udseende.",
-     "simpleTitle": "Flot og kompakt design",
+    "compact active design looks attractive": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter den kompakte størrelse, den aktive konstruktion og det flotte udseende.",
+     "simpleTitle": "Kompakt aktivt design med flot udseende",
      "bias": "positive",
      "key": "design",
-     "groupId": "d3b2b41c-c362-44a6-8840-1d0934d0fc81"
+     "groupId": "913f160f-3b3e-4a14-bd5f-70698540603e"
     },
-    "excellent value for money": {
-     "sentimentAnalysis": "Produktet betragtes som usædvanligt godt til prisen.",
-     "simpleTitle": "Fremragende pris-kvalitet",
+    "very high output power": {
+     "sentimentAnalysis": "Højttalerne leverer stor effekt og tilstrækkelig lydstyrke til større rum.",
+     "simpleTitle": "Meget høj lydstyrke",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "93a7067b-fb75-43b4-ba86-6fb9462d2dbc"
+    },
+    "flexible connections for many sources": {
+     "sentimentAnalysis": "Højttalerne understøtter mange praktiske tilslutninger, herunder trådløse og traditionelle kilder.",
+     "simpleTitle": "Fleksible tilslutninger til mange kilder",
+     "bias": "positive",
+     "key": "connectivity",
+     "groupId": "00d2a577-91bb-4814-8d4f-6a9a82ecff1e"
+    },
+    "faint transformer hum in quiet rooms": {
+     "sentimentAnalysis": "En svag elektrisk støj kan bemærkes, når rummet ellers er helt stille.",
+     "simpleTitle": "Svag transformatorbrummen i stille rum",
+     "bias": "negative",
+     "key": "sound-quality",
+     "groupId": "93a7067b-fb75-43b4-ba86-6fb9462d2dbc"
+    },
+    "excellent value for the price": {
+     "sentimentAnalysis": "Produktet vurderes som særdeles god værdi, fordi ydelse og design passer godt til prisen.",
+     "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "c6e2c996-aa3a-4c68-bed2-0b55ca7eb242"
+     "groupId": "95be1198-fbad-4554-b40f-96784bb8dd1b"
     }
    },
    "grouping": {
-    "f75e33a6-1e92-47de-bc88-1e27cb926f5a": {
+    "93a7067b-fb75-43b4-ba86-6fb9462d2dbc": {
      "title": "Lydkvalitet",
-     "id": "f75e33a6-1e92-47de-bc88-1e27cb926f5a",
+     "id": "93a7067b-fb75-43b4-ba86-6fb9462d2dbc",
      "references": [
+      "703f68c3-117f-4af8-89a0-4115a5ab38ff",
+      "69e1284b-b7fa-4459-ab5f-2816fcc5715d",
       "5a3a7df6-9173-496a-824a-4066a83ab636",
       "315e5779-afa8-404b-8005-87c551066bba",
       "2545bde1-7f65-4126-91b0-20a48531de9a",
@@ -535,33 +558,42 @@
       "a606beb6-5f95-4c65-8c66-a03179a74855"
      ]
     },
-    "d3b2b41c-c362-44a6-8840-1d0934d0fc81": {
+    "913f160f-3b3e-4a14-bd5f-70698540603e": {
      "title": "Design",
-     "id": "d3b2b41c-c362-44a6-8840-1d0934d0fc81",
+     "id": "913f160f-3b3e-4a14-bd5f-70698540603e",
      "references": [
+      "69e1284b-b7fa-4459-ab5f-2816fcc5715d",
       "421dd4c1-a33e-4702-8bfa-d180ba4018df",
       "b46c5d1f-c2e2-41a5-826a-1a70ec3427bf",
       "a606beb6-5f95-4c65-8c66-a03179a74855"
      ]
     },
-    "c6e2c996-aa3a-4c68-bed2-0b55ca7eb242": {
-     "title": "Pris-kvalitet",
-     "id": "c6e2c996-aa3a-4c68-bed2-0b55ca7eb242",
+    "00d2a577-91bb-4814-8d4f-6a9a82ecff1e": {
+     "title": "Tilslutningsmuligheder",
+     "id": "00d2a577-91bb-4814-8d4f-6a9a82ecff1e",
+     "references": [
+      "703f68c3-117f-4af8-89a0-4115a5ab38ff",
+      "b46c5d1f-c2e2-41a5-826a-1a70ec3427bf"
+     ]
+    },
+    "95be1198-fbad-4554-b40f-96784bb8dd1b": {
+     "title": "Pris og kvalitet",
+     "id": "95be1198-fbad-4554-b40f-96784bb8dd1b",
      "references": [
       "14204227-1c7e-4268-bc1a-f6fc12cdf231",
       "a606beb6-5f95-4c65-8c66-a03179a74855"
      ]
     }
    },
-   "rating": 4.83333333333333,
-   "count": 18,
-   "reviewCount": 11,
+   "rating": 4.8,
+   "count": 20,
+   "reviewCount": 13,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
-    "4": 1,
-    "5": 16
+    "4": 2,
+    "5": 17
    }
   },
   "boxContent": [

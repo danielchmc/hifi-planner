@@ -136,8 +136,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 26,
-     "availableQuantity": 348,
+     "numberOfStoresExperience": 25,
+     "availableQuantity": 319,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -177,49 +177,50 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "TTTI3 er en kompakt, velbygget og meget transportabel DAC/hovedtelefonforstærker, der giver en markant forbedring af lyden fra telefoner og computere. Lyden beskrives generelt som klar, detaljeret, varm, fyldig, punchy og kraftig nok til krævende hovedtelefoner, med et fremragende forhold mellem pris og kvalitet. Varmeudvikling og højt batteriforbrug på telefonen er de største ulemper, mens skarpe kanter gør den lidt mindre behagelig i bukselommen.",
+   "summary": "TTTI3 leverer en varm, fyldig og meget detaljeret hovedtelefonoplevelse med en slagkraftig og medrivende lyd fra telefoner og computere, samtidig med at mere krævende hovedtelefoner drives uden problemer. Den kompakte og solidt byggede DAC giver fremragende værdi for pengene og er nem at tage med takket være plug-and-play-funktionalitet. Varmeudvikling og et betydeligt batteriforbrug på telefonen er dog tydelige ulemper, mens skarpe kanter gør daglig brug i lommen lidt mindre behagelig.",
    "headlines": {
+    "warm, rich and detailed sound": {
+     "sentimentAnalysis": "DAC’en roses gentagne gange for klare detaljer og en varm, fyldig gengivelse.",
+     "simpleTitle": "Varm, fyldig og detaljeret lyd",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "3eecb29d-de95-40c5-bc8a-9b9334b639ec"
+    },
+    "stronger headphone performance": {
+     "sentimentAnalysis": "TTTI3 opfattes som en markant forbedring til hovedtelefonlytning og kan drive mere krævende modeller.",
+     "simpleTitle": "Bedre hovedtelefonydelse",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "3eecb29d-de95-40c5-bc8a-9b9334b639ec"
+    },
     "excellent value for money": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer ydelse og forstærkning som særligt stærk i forhold til prisen.",
+     "sentimentAnalysis": "Flere anmeldelser vurderer produktet som særdeles godt eller rimeligt prissat.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "0487c782-f0cb-40ef-b56c-1385751195e5"
+     "key": "value",
+     "groupId": "a468b5b0-7bc3-4dbd-a200-e2e4761993b0"
     },
-    "clear, detailed and powerful sound": {
-     "sentimentAnalysis": "Forstærkeren roses for klarhed, hørbare detaljer, ren lyd og rigelig lydstyrke.",
-     "simpleTitle": "Klar, detaljeret og kraftfuld lyd",
+    "compact and convenient to carry": {
+     "sentimentAnalysis": "De små mål og den praktiske mobilbrug gør enheden meget bærbar trods mindre betænkeligheder ved skarpe kanter.",
+     "simpleTitle": "Kompakt og nem at tage med",
      "bias": "positive",
-     "key": "clear-detailed-powerful",
-     "groupId": "1bdc0c9f-dff5-4c30-8078-72bce595fdd2"
+     "key": "portability",
+     "groupId": "00d985be-b9f7-485d-a518-1dfad004381e"
     },
-    "warm, rich and full-bodied presentation": {
-     "sentimentAnalysis": "Klangbalancen værdsættes for varme, fylde, rigdom og en medrivende karakter.",
-     "simpleTitle": "Varm, fyldig og voluminøs gengivelse",
-     "bias": "positive",
-     "key": "warm-rich-sound",
-     "groupId": "1bdc0c9f-dff5-4c30-8078-72bce595fdd2"
-    },
-    "compact and convenient for mobile use": {
-     "sentimentAnalysis": "De kompakte mål, lommevenligheden og den enkle brug med telefon gør enheden meget praktisk.",
-     "simpleTitle": "Kompakt og praktisk til mobil brug",
-     "bias": "positive",
-     "key": "compact-mobile-use",
-     "groupId": "c1c02d94-dad5-4122-9e1d-951aa61c9e74"
-    },
-    "runs hot and drains the phone battery quickly": {
-     "sentimentAnalysis": "Den hurtige varmeudvikling er mærkbar, og i én opsætning reduceres telefonens batteritid markant.",
-     "simpleTitle": "Bliver varm og tømmer telefonens batteri hurtigt",
+    "runs hot and drains the phone battery": {
+     "sentimentAnalysis": "Begge anmeldelser bemærker varmeudviklingen, mens den ene også rapporterer et stort batteriforbrug på telefonen.",
+     "simpleTitle": "Bliver varm og dræner telefonens batteri",
      "bias": "negative",
-     "key": "heat-battery-drain",
-     "groupId": "e9253048-50f3-4546-84cf-414c4fef8c38"
+     "key": "heat",
+     "groupId": "db6bd2f9-b908-46fe-b0c1-1f99eac63b75"
     }
    },
    "grouping": {
-    "1bdc0c9f-dff5-4c30-8078-72bce595fdd2": {
+    "3eecb29d-de95-40c5-bc8a-9b9334b639ec": {
      "title": "Lydkvalitet",
-     "id": "1bdc0c9f-dff5-4c30-8078-72bce595fdd2",
+     "id": "3eecb29d-de95-40c5-bc8a-9b9334b639ec",
      "references": [
+      "c626bb4f-c299-416c-91f1-5f4fc25593c5",
       "1e9f1d26-27b5-4f3c-a833-8203e2bd4473",
       "288b2e97-5137-43c9-87cd-4c5859352237",
       "16c39f70-e4fa-4959-9ab3-2c1ebe88c483",
@@ -231,19 +232,9 @@
       "7b370438-f54f-4acb-8fc5-211312f869ec"
      ]
     },
-    "c1c02d94-dad5-4122-9e1d-951aa61c9e74": {
-     "title": "Mobilitet og design",
-     "id": "c1c02d94-dad5-4122-9e1d-951aa61c9e74",
-     "references": [
-      "86b5538d-7ee7-4816-b811-195d9dd2f1fd",
-      "91458e31-9278-4f87-ada7-0f91dc76a49a",
-      "03ab6053-661b-48df-951d-dfc560b5ecbb",
-      "7b370438-f54f-4acb-8fc5-211312f869ec"
-     ]
-    },
-    "0487c782-f0cb-40ef-b56c-1385751195e5": {
-     "title": "Pris og værdi",
-     "id": "0487c782-f0cb-40ef-b56c-1385751195e5",
+    "a468b5b0-7bc3-4dbd-a200-e2e4761993b0": {
+     "title": "Pris for pengene",
+     "id": "a468b5b0-7bc3-4dbd-a200-e2e4761993b0",
      "references": [
       "86b5538d-7ee7-4816-b811-195d9dd2f1fd",
       "19d3966a-de06-4f07-beb1-694cf17a8b98",
@@ -251,24 +242,33 @@
       "95609da2-afb0-41a4-8461-67f42fc809bf"
      ]
     },
-    "e9253048-50f3-4546-84cf-414c4fef8c38": {
+    "00d985be-b9f7-485d-a518-1dfad004381e": {
+     "title": "Bærbarhed og design",
+     "id": "00d985be-b9f7-485d-a518-1dfad004381e",
+     "references": [
+      "86b5538d-7ee7-4816-b811-195d9dd2f1fd",
+      "91458e31-9278-4f87-ada7-0f91dc76a49a",
+      "7b370438-f54f-4acb-8fc5-211312f869ec"
+     ]
+    },
+    "db6bd2f9-b908-46fe-b0c1-1f99eac63b75": {
      "title": "Varmeudvikling og batteriforbrug",
-     "id": "e9253048-50f3-4546-84cf-414c4fef8c38",
+     "id": "db6bd2f9-b908-46fe-b0c1-1f99eac63b75",
      "references": [
       "a0aad483-6a67-462b-9618-e534372ed996",
       "7b370438-f54f-4acb-8fc5-211312f869ec"
      ]
     }
    },
-   "rating": 4.74074074074074,
-   "count": 27,
-   "reviewCount": 18,
+   "rating": 4.75,
+   "count": 28,
+   "reviewCount": 19,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 1,
     "4": 5,
-    "5": 21
+    "5": 22
    }
   },
   "boxContent": [

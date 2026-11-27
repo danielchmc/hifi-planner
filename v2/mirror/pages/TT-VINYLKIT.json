@@ -50,7 +50,7 @@
   "featureLogos": [],
   "testGroups": [],
   "bundle": {
-   "name": "Argon Audio TT MK2 + Vinylkit 10 Pladespiller system",
+   "name": "Argon Audio TT MK2 + Vinylkit 100 Pladespiller system",
    "code": "TT-VINYLKIT",
    "ribbons": [
     {
@@ -121,7 +121,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2214,
+        "availableQuantity": 2103,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -144,7 +144,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 942,
+        "availableQuantity": 1269,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -167,7 +167,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1705,
+        "availableQuantity": 1544,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -190,7 +190,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 491,
+        "availableQuantity": 372,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -214,7 +214,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 859,
+        "availableQuantity": 593,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -238,7 +238,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1105,
+        "availableQuantity": 639,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -262,7 +262,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2007,
+        "availableQuantity": 1780,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "1.599,-",
@@ -274,78 +274,149 @@
      ],
      "parentProductCode": "ARGTTMK2",
      "reviews": {
-      "summary": "ARGON TT MK2 er en varm, kontant og stilfuld pladespiller til begyndere med et imponerende forhold mellem pris og kvalitet. Den nemme opsætning, den indbyggede RIAA-forstærker og den klare, behagelige lyd gør vinyloplevelsen tilgængelig og medrivende. Den fuldt manuelle betjening, især manglen på auto-stop, er den mest tilbagevendende ulempe, mens enkelte også nævner justering af tonearmen, pladetallerkenens hastighed og knirkende låg.",
+      "summary": "ARGON TT MK2 er en stilfuld, solid og meget tilgængelig pladespiller til begyndere, som leverer varm, klar og overraskende engagerende lyd til prisen. Nem opsætning, indbygget RIAA-forforstærker og flotte farver gør vinylafspilning særligt let for begyndere og tilbagevendende lyttere. De største kompromiser er fuldt manuel betjening, en til tider besværlig justering af tonearmen, lejlighedsvis støj eller problemer med hastigheden samt begrænsede opgraderingsmuligheder.",
       "headlines": {
-       "the lack of auto-stop is the main drawback": {
-        "sentimentAnalysis": "Mange anmeldelser værdsætter det enkle manuelle design, men kritiserer specifikt manglen på automatisk tilbageføring eller stop, når pladen er færdig. Nogle accepterer det som en konsekvens af den lave pris, mens andre finder det frustrerende og ellers ville have valgt en mere automatisk model.",
-        "simpleTitle": "Manglen på auto-stop er den største ulempe",
+       "warm, clear sound with strong value": {
+        "sentimentAnalysis": "Anmeldelserne beskriver ofte lyden som varm, klar, detaljeret og overraskende god til prisen, især med passende forstærkning og højttalere.",
+        "simpleTitle": "Varm og klar lyd til prisen",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "60be027f-cbdd-4145-8ddf-932b0c9081d0"
+       },
+       "easy setup and beginner-friendly operation": {
+        "sentimentAnalysis": "Mange anmeldelser roser den hurtige opsætning, den enkle betjening og de nyttige videoguides, mens nogle finder justering af tonearmen eller papirvejledningen mindre tydelig.",
+        "simpleTitle": "Nem opsætning og betjening for begyndere",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "e0b40776-796e-4fd7-9628-8ca684d4728c"
+       },
+       "missing automatic stop is the main drawback": {
+        "sentimentAnalysis": "Det fuldt manuelle design kritiseres gentagne gange, fordi tonearmen ikke vender tilbage eller stopper, når pladen er slut, selv om nogle lyttere sætter pris på den aktive vinyloplevelse.",
+        "simpleTitle": "Manglende automatisk stop er den største ulempe",
         "bias": "negative",
-        "key": "auto_stop",
-        "groupId": "e1908bb9-8440-4290-ad41-06047138e7ae"
+        "key": "autostop",
+        "groupId": "0c1f2356-d659-403d-b520-ebbd945d657b"
        }
       },
       "grouping": {
-       "e1908bb9-8440-4290-ad41-06047138e7ae": {
+       "60be027f-cbdd-4145-8ddf-932b0c9081d0": {
+        "title": "Lydkvalitet",
+        "id": "60be027f-cbdd-4145-8ddf-932b0c9081d0",
+        "references": [
+         "3192bbf3-f53b-41d8-833f-caabdafc64a7",
+         "a97bb9af-5833-4a90-830b-9766b139b43a",
+         "d7639225-cf64-4ac7-8116-6e9ca1416de3",
+         "4ce56f2b-2d71-4ff4-a897-2cce09c62556",
+         "5e367635-8c90-4618-89bf-6782779030ae",
+         "e96feeb2-0907-410c-b06f-a517c97d7dc8",
+         "dd3f2b4e-1478-48f3-8d50-d1365b0c99e6",
+         "e52747f8-f1fe-4b3f-b4bf-768149bebc0a",
+         "d63b3a4a-e44c-4be6-ba42-748bddfc5db6",
+         "dd3f0cf1-c92b-45da-8b86-f6e603b21ef9",
+         "d7e80144-e770-4e5c-a426-4a3a46e71dd5",
+         "3490789e-820c-42bd-973c-c7d7e6f5466b",
+         "e05c55d9-e87b-40b7-bcad-853ecfdf766e",
+         "aa2207ba-fc5f-4e67-a4f0-e5a68351f63f",
+         "d84bb592-5afa-41b6-88bc-040477872b40",
+         "e8496f87-0399-45d8-9a94-97ad3282c83d",
+         "0e142935-e791-42ac-8e87-25c369d97409",
+         "e59cd60f-4a59-4ad3-b87c-23d24346e4bc",
+         "b8d0aed1-9f0d-458c-9b4d-872d311c35ba",
+         "9c49cdf9-f7c5-494a-9f2e-84a925d468cd",
+         "782293ea-659a-4595-ab2d-0e222f110ff8",
+         "f7a182ab-73b6-4ee7-a2de-81db22778c63",
+         "0fcdaaba-c2e3-4b26-b96a-ad3537c1e64d",
+         "b9432ee2-c5d9-49c0-aca2-8929dfdc87df",
+         "f9e78ae9-ee98-4499-be84-9738d847c1b9",
+         "0b4219a8-8845-4ee6-a1ce-3d80e2e1a3aa",
+         "f3a90913-850b-49d8-8f59-6f8cf5658877",
+         "fe95b6ed-9efe-4126-a4df-0457b1f91e27",
+         "bb1c8829-22e1-4ea2-8587-3ca4a6b75bbd",
+         "d95c8c27-02f2-4db4-8660-45f57cbb1d91"
+        ]
+       },
+       "e0b40776-796e-4fd7-9628-8ca684d4728c": {
+        "title": "Opsætning og betjening",
+        "id": "e0b40776-796e-4fd7-9628-8ca684d4728c",
+        "references": [
+         "7e1ab344-8baa-4e79-bad6-39d9d0c2cece",
+         "92ec3407-c3b5-4018-8fcb-593e37079129",
+         "f3b959ab-a355-4bca-b40a-27ce360065bc",
+         "4186de30-b443-4b1b-9fd5-a0d5d7e4b2c5",
+         "eadb3ad4-2dac-4357-8377-9fc112077f39",
+         "f83141e8-4abb-4292-92e2-51aac6a6dd7a",
+         "d983fddf-5fdf-48c2-a2c2-abf89664b8c8",
+         "4588a355-2072-4d12-abbd-c1e46c5bccf5",
+         "35e7644b-aae5-408e-8c73-05a55a7ee140",
+         "8903441b-d9eb-4da2-8dce-eb5e4974ba9d",
+         "d1eec98a-285a-426b-a818-8275b5fe295f",
+         "d93fd8b7-e786-4b68-9caa-e13a483bb057",
+         "e05c55d9-e87b-40b7-bcad-853ecfdf766e",
+         "78f0901a-9430-4ae3-8102-8822c2a39314",
+         "60232bc5-5502-41e8-8ed6-c8c605202341",
+         "3e660ce9-bc15-4ad2-9347-af6a5a45370d",
+         "d5612e63-2f34-4247-a37e-2911d7caa395",
+         "95770cf0-a00d-438e-ac55-bd013c5ee362",
+         "7c5dd0cf-df0f-41c3-9e5c-b36a06c422cf",
+         "31ef5381-8e46-4540-9f71-71dcd4b41055",
+         "ef8b0510-1f05-4a88-ac7d-682e110c957c",
+         "8ccd2458-34ea-483e-86fa-8e9010b812b8",
+         "89901b34-7159-4f8d-94a2-bb51bb767596",
+         "db01bfc3-cf08-4528-b189-0033dfec6766",
+         "e87267bc-b7f7-4c00-b542-a94dabd570e2",
+         "eaae5e35-d50e-467f-a597-99f86fa19854",
+         "e0d5f76d-0376-4ec6-acd9-d9345db80cc1",
+         "ac400398-3f74-4788-a0f6-12270c6512ff",
+         "d7b7aaf1-9a61-4512-973d-49879d8e70a6",
+         "7547b26e-d223-4399-b611-10a5790cd911"
+        ]
+       },
+       "0c1f2356-d659-403d-b520-ebbd945d657b": {
         "title": "Automatisk stop",
-        "id": "e1908bb9-8440-4290-ad41-06047138e7ae",
+        "id": "0c1f2356-d659-403d-b520-ebbd945d657b",
         "references": [
          "02edc084-417b-4f33-a1aa-8ead9f4a5ebf",
          "9f4a80e7-5164-48e6-abdb-f813a8f5e954",
          "e3aecc5b-0c1e-4d11-aa6d-c31cd01c80ed",
          "ee4662b3-3430-4924-9fcb-88740690ee02",
-         "18f0022f-3e00-45fd-8c93-b4a3482c3977",
          "7c24c8c9-0290-42c5-a111-59ff93ed9b6d",
          "57878fbf-264f-40b9-95f8-fca810ebe96b",
-         "7660ce4b-5b36-425f-86c8-84e69cf146d6",
          "68d2148e-9753-4e77-ba53-207b100636ca",
-         "c0f5b785-b394-43a3-95ce-c8b75006b18c",
-         "c15a07ca-fb41-4a86-b337-d34b7ea408c8",
+         "7660ce4b-5b36-425f-86c8-84e69cf146d6",
          "ea897c12-5c0a-4966-b32d-abbeb8bd25bd",
-         "3d4e6cfc-2fbe-4023-a4ec-fb43eb5b25ae",
          "b928a1fb-bff7-423b-9ea0-dc5b86ff290b",
          "d3a09bfd-bfa9-4881-a561-f794b839e83f",
-         "4d4970fc-9549-4cc3-9377-bc98f7db225c",
-         "ea13f958-b504-4a96-8af9-0acdd05a0adc",
-         "cfaac491-4892-45f4-8151-2b9c24a2e14d",
+         "3e660ce9-bc15-4ad2-9347-af6a5a45370d",
+         "fd90d9ac-f9d7-42df-b78b-a2cb12adc024",
+         "c15a07ca-fb41-4a86-b337-d34b7ea408c8",
+         "f3a20688-11e8-467d-b05e-b086dec20eb9",
+         "c0f5b785-b394-43a3-95ce-c8b75006b18c",
+         "ea750ad6-4b3d-43be-9dbd-8f6fef9a3874",
          "b8cf0649-32a7-4184-871c-f3d5e515fa89",
          "5c313bc6-94b3-45ef-abe1-6b0463f336d7",
          "cc645d89-db54-476f-86b4-7f94a7e15fc0",
+         "73f95782-d587-4e25-b350-50ac393df5b9",
          "22a04939-de66-4e9c-af8f-a4e50d1542df",
-         "f3a20688-11e8-467d-b05e-b086dec20eb9",
+         "220b3756-6383-4f86-b859-247921f25ecd",
+         "a09459b8-1ffb-4a7f-a354-6fbeb31910c9",
          "fa28068f-9ab7-4cf1-8934-1069b1765054",
          "eda288a5-9078-46f9-8fc4-6d511075d307",
-         "220b3756-6383-4f86-b859-247921f25ecd",
-         "73f95782-d587-4e25-b350-50ac393df5b9",
+         "d3a09bfd-bfa9-4881-a561-f794b839e83f",
          "5c7e4274-04ca-43b1-b136-b36a92e3e2a7",
-         "a09459b8-1ffb-4a7f-a354-6fbeb31910c9",
-         "3e660ce9-bc15-4ad2-9347-af6a5a45370d",
-         "78f0901a-9430-4ae3-8102-8822c2a39314",
-         "1932f27a-66cc-44e0-940d-85a2788d0eda",
-         "c15a07ca-fb41-4a86-b337-d34b7ea408c8",
-         "5c313bc6-94b3-45ef-abe1-6b0463f336d7",
-         "cc645d89-db54-476f-86b4-7f94a7e15fc0",
-         "fd90d9ac-f9d7-42df-b78b-a2cb12adc024",
-         "b54c2ce8-9080-4921-b80b-098f4290ea04",
-         "c0f5b785-b394-43a3-95ce-c8b75006b18c",
-         "9f4a80e7-5164-48e6-abdb-f813a8f5e954",
-         "d7e80144-e770-4e5c-a426-4a3a46e71dd5",
-         "ca993979-8c82-4a95-8ce3-e614a4ab885d",
          "0b4219a8-8845-4ee6-a1ce-3d80e2e1a3aa",
-         "b8cf0649-32a7-4184-871c-f3d5e515fa89",
-         "5c313bc6-94b3-45ef-abe1-6b0463f336d7",
-         "a37cb4e2-54c5-47ee-a641-4180fe052fa6"
+         "4d33e734-26b6-4169-8f9c-8523a6ae9f22"
         ]
        }
       },
-      "rating": 4.65675057208238,
-      "count": 1311,
-      "reviewCount": 575,
+      "rating": 4.65755504935459,
+      "count": 1317,
+      "reviewCount": 578,
       "distribution": {
        "1": 10,
        "2": 17,
        "3": 58,
-       "4": 243,
-       "5": 983
+       "4": 244,
+       "5": 988
       }
      }
     },
@@ -369,7 +440,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 7524,
+        "availableQuantity": 6163,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "249,-",
@@ -380,7 +451,18 @@
       }
      ],
      "parentProductCode": "ESSTTVINYLKIT100X",
-     "reviews": {}
+     "reviews": {
+      "rating": 5,
+      "count": 1,
+      "reviewCount": 1,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 0,
+       "4": 0,
+       "5": 1
+      }
+     }
     }
    ],
    "sellableOnWeb": true,
@@ -388,21 +470,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 20
+    "numberOfStoresExperience": 18
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.65675057208238,
-   "count": 1311,
-   "reviewCount": 575,
+   "rating": 4.65781487101669,
+   "count": 1318,
+   "reviewCount": 579,
    "distribution": {
     "1": 10,
     "2": 17,
     "3": 58,
-    "4": 243,
-    "5": 983
+    "4": 244,
+    "5": 989
    }
   },
   "boxContent": [
@@ -469,7 +551,7 @@
    }
   ],
   "brandName": "Argon Audio",
-  "modelName": "TT MK2 + Vinylkit 10",
+  "modelName": "TT MK2 + Vinylkit 100",
   "modelType": "Pladespiller system",
   "modelTypeKey": "TurntableSystem"
  }

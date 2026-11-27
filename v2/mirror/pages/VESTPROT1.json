@@ -43,8 +43,8 @@
     "ORTCONCORDEMK2DJX",
     "ARGFORTEA4MK2",
     "ORTCONCORDEMK2SCRATX",
-    "ORTCONCORDEMK2MIXX",
-    "ORTCONCORDEMK2CLUBX"
+    "ORTCONCORDEMK2CLUBX",
+    "ORTCONCORDEMK2MIXX"
    ],
    "isOutlet": "false"
   },
@@ -155,14 +155,30 @@
     "productCode": "VESTPROT1BK",
     "ean": "5706957020140",
     "priceDetails": {
-     "priceValueId": 1006977,
-     "price": 2999,
-     "priceFormatted": "2.999,-",
+     "priceValueId": 1212501,
+     "price": 1999,
+     "priceFormatted": "1.999,-",
+     "priceBefore": 2499,
+     "priceBeforeFormatted": "2.499,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 1999,
+     "unitPriceBefore": 2499
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -200,8 +216,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 15,
-     "availableQuantity": 1403,
+     "numberOfStoresExperience": 16,
+     "availableQuantity": 1378,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -278,14 +294,30 @@
     "productCode": "VESTPROT1SI",
     "ean": "5706957020157",
     "priceDetails": {
-     "priceValueId": 1006907,
-     "price": 2999,
-     "priceFormatted": "2.999,-",
+     "priceValueId": 1212507,
+     "price": 1999,
+     "priceFormatted": "1.999,-",
+     "priceBefore": 2499,
+     "priceBeforeFormatted": "2.499,-",
+     "priceSavingsFormatted": "500,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 2999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 1999,
+     "unitPriceBefore": 2499
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -324,7 +356,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 15,
-     "availableQuantity": 409,
+     "availableQuantity": 392,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -409,89 +441,75 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "VESTPROT1 leverer varm, ren og engagerende vinylafspilning med et imponerende pris-kvalitetsforhold. Solide funktioner, et attraktivt klassisk design og understøttelse af forskellige pladetyper gør pladespilleren til en overbevisende opgradering. Små irritationer er den løse plademåtte, den manglende automatiske retur og de ufuldstændige kabler, men helhedsindtrykket er stadig særdeles anbefalelsesværdigt.",
+   "summary": "VESTPROT1 betragtes bredt som en fremragende, attraktiv og fornøjelig pladespiller til prisen med klar, ren og varm lyd, jævn direct drive og nyttige funktioner som understøttelse af 78 omdrejninger. Byggekvalitet, udseende og brugervenlighed får generelt ros, hvilket gør den til en stærk opgradering fra ældre pladespillere. De største ulemper er den løse måtte, manglen på automatisk tilbageføring eller afslag samt visse problemer med tilbehør og antiskating-mekanismen.",
    "headlines": {
     "excellent value for money": {
-     "sentimentAnalysis": "Pladespilleren roses gentagne gange for at give usædvanligt meget for pengene og være en værdifuld opgradering.",
-     "simpleTitle": "Fremragende pris-kvalitetsforhold",
+     "sentimentAnalysis": "Pladespilleren roses gentagne gange som et særdeles godt køb og en værdifuld opgradering.",
+     "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "4574116f-50a6-45ae-8f1a-287f41dcc9e8"
+     "key": "value-quality",
+     "groupId": "40cfde86-7e6b-47b1-8694-eb3bc8adecdf"
     },
-    "attractive, well-made design": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver det klassiske udseende, den pæne finish, de dæmpende fødder og den generelt solide kvalitet.",
-     "simpleTitle": "Attraktivt design i god kvalitet",
+    "clear, clean and enjoyable sound": {
+     "sentimentAnalysis": "Gengivelsen beskrives som præcis, ren og imponerende med en behageligt varm og musikalsk karakter.",
+     "simpleTitle": "Klar, ren og behagelig lyd",
      "bias": "positive",
-     "key": "design",
-     "groupId": "9c4635ee-7f6f-4877-8988-1a67d3fe07be"
+     "key": "sound-quality",
+     "groupId": "5fe4c663-9d47-42fa-8143-efef67445fb9"
     },
-    "clean, accurate sound": {
-     "sentimentAnalysis": "De tilgængelige lytteindtryk beskriver en præcis, ren og behagelig gengivelse.",
-     "simpleTitle": "Ren og præcis lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "926847a3-4323-4b03-9c1f-1fc99b04b493"
-    },
-    "loose platter mat is irritating": {
-     "sentimentAnalysis": "Måtten kan hænge fast i pladerne og løfte sig fra pladetallerkenen under håndtering.",
-     "simpleTitle": "Løs plademåtte er irriterende",
+    "no automatic return or shutoff": {
+     "sentimentAnalysis": "Manglen på automatisk tilbageføring af armen eller automatisk afslag opleves gentagne gange som en ulempe.",
+     "simpleTitle": "Ingen automatisk tilbageføring eller afslag",
      "bias": "negative",
-     "key": "platter_mat",
-     "groupId": "4721c3ea-c304-48a6-9a63-60c9e3e11893"
+     "key": "automatic-operation",
+     "groupId": "b30cd78e-a4f3-4aea-940b-70133b8df2b3"
     },
-    "no automatic tonearm return": {
-     "sentimentAnalysis": "Manglen på automatisk retur ved pladens slutning er en tydelig brugsmæssig ulempe.",
-     "simpleTitle": "Ingen automatisk retur af tonearmen",
+    "the platter mat sticks to records": {
+     "sentimentAnalysis": "Den løse måtte kan følge med pladen op og skabe irritation ved pladeskift.",
+     "simpleTitle": "Plademåtten hænger fast i pladerne",
      "bias": "negative",
-     "key": "automatic_return",
-     "groupId": "b3a1c728-c4ae-4f55-a9c2-959cb5a88229"
+     "key": "platter-mat",
+     "groupId": "3acc9407-399e-4873-a596-4cfaab9cdb8e"
     }
    },
    "grouping": {
-    "4574116f-50a6-45ae-8f1a-287f41dcc9e8": {
-     "title": "Pris og værdi",
-     "id": "4574116f-50a6-45ae-8f1a-287f41dcc9e8",
+    "40cfde86-7e6b-47b1-8694-eb3bc8adecdf": {
+     "title": "Pris og byggekvalitet",
+     "id": "40cfde86-7e6b-47b1-8694-eb3bc8adecdf",
      "references": [
       "5fe0523f-7425-4ca0-84e2-7cb5499fa327",
       "e0194d2d-0d13-4766-a117-253383a73224",
       "89c98984-4ea9-49a5-bc95-2430dcb7d3ca",
-      "7de54864-4088-4991-9427-1084b90dddf2",
-      "ae6d6049-7fe5-48a3-a810-0193f44c7ae1",
-      "336cd4ae-9446-40af-942c-44e2dad49eb6"
-     ]
-    },
-    "9c4635ee-7f6f-4877-8988-1a67d3fe07be": {
-     "title": "Design og byggekvalitet",
-     "id": "9c4635ee-7f6f-4877-8988-1a67d3fe07be",
-     "references": [
       "839141a6-7731-4d18-a504-6eac86b90aaa",
       "7de54864-4088-4991-9427-1084b90dddf2",
+      "ae6d6049-7fe5-48a3-a810-0193f44c7ae1",
+      "086b33b6-831d-48bd-a32c-c0e1e3a60955",
       "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
       "1798f149-7514-4bdc-8069-6e93b2c33e84"
      ]
     },
-    "926847a3-4323-4b03-9c1f-1fc99b04b493": {
+    "5fe4c663-9d47-42fa-8143-efef67445fb9": {
      "title": "Lydkvalitet",
-     "id": "926847a3-4323-4b03-9c1f-1fc99b04b493",
+     "id": "5fe4c663-9d47-42fa-8143-efef67445fb9",
      "references": [
       "336cd4ae-9446-40af-942c-44e2dad49eb6",
       "1798f149-7514-4bdc-8069-6e93b2c33e84"
      ]
     },
-    "4721c3ea-c304-48a6-9a63-60c9e3e11893": {
-     "title": "Plademåtte",
-     "id": "4721c3ea-c304-48a6-9a63-60c9e3e11893",
-     "references": [
-      "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
-      "cad146bf-2e97-4abd-b0e0-e9f0459c6350"
-     ]
-    },
-    "b3a1c728-c4ae-4f55-a9c2-959cb5a88229": {
-     "title": "Automatisk retur af tonearm",
-     "id": "b3a1c728-c4ae-4f55-a9c2-959cb5a88229",
+    "b30cd78e-a4f3-4aea-940b-70133b8df2b3": {
+     "title": "Automatiske funktioner",
+     "id": "b30cd78e-a4f3-4aea-940b-70133b8df2b3",
      "references": [
       "c8176a01-edcd-45f3-907f-987bc8084d4e",
       "08749b30-39d1-4eed-85fa-0a8da19a7767"
+     ]
+    },
+    "3acc9407-399e-4873-a596-4cfaab9cdb8e": {
+     "title": "Plademåtte",
+     "id": "3acc9407-399e-4873-a596-4cfaab9cdb8e",
+     "references": [
+      "7ea40b1d-52e5-461b-bd48-d35c1af7d9af",
+      "cad146bf-2e97-4abd-b0e0-e9f0459c6350"
      ]
     }
    },
