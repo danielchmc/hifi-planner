@@ -215,7 +215,7 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
+     "numberOfStoresExperience": 5,
      "availableQuantity": 10,
      "inventoryStatusType": "warehouseInStock"
     },
@@ -290,12 +290,11 @@
      "productCode": "AQBOXERSUB5,0"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 3,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "numberOfStoresExperience": 4,
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -370,7 +369,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
+     "numberOfStoresExperience": 2,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -447,7 +446,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
+     "numberOfStoresExperience": 2,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -524,7 +523,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
+     "numberOfStoresExperience": 2,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -601,7 +600,7 @@
     "inventoryStatus": {
      "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 1,
+     "numberOfStoresExperience": 2,
      "hideNotificationOption": true,
      "inventoryStatusType": "notInStockNonStockedItem"
     },
@@ -623,46 +622,45 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQBOXERSUB leverer et varmt, dynamisk og meget detaljeret subwoofersignal med kraftigere dynamik og en mere medrivende basgengivelse. Kablet kan give en tydeligt hørbar forbedring i forhold til simple alternativer og kan fjerne generende brum. Den høje pris er den største ulempe, men det samlede indtryk er meget positivt.",
+   "summary": "AQBOXERSUB leverer ren signaloverførsel i høj kvalitet og giver en slagkraftig, dynamisk og mere detaljeret subwoofer-gengivelse. Flere anmeldelser beskriver en tydeligt hørbar forbedring i forhold til enkle kabler eller standardkabler, herunder dybere og kraftigere bas. Den effektive ydeevne roses meget, selv om én anmelder bemærker den høje pris.",
    "headlines": {
-    "clear signal with detailed, dynamic sound": {
-     "sentimentAnalysis": "Kablet roses for renere, dybere og kraftigere bas, detaljer i høj kvalitet, stærk dynamik og meget god signaloverførsel.",
-     "simpleTitle": "Klar signaloverførsel med detaljeret, dynamisk lyd",
+    "clearly improves sound over basic cables": {
+     "sentimentAnalysis": "Kablet opleves som en tydeligt hørbar forbedring i forhold til standardalternativer.",
+     "simpleTitle": "Giver tydeligt bedre lyd end simple kabler",
      "bias": "positive",
-     "key": "signal-quality",
-     "groupId": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb"
+     "key": "sound-quality",
+     "groupId": "dffe484a-9a79-45f9-9b55-0625d028f564"
     },
-    "noticeable upgrade over basic cables": {
-     "sentimentAnalysis": "Kablet beskrives som en løsning, der gør en reel forskel og giver en mærkbar forbedring i forhold til et standardkabel af samme type.",
-     "simpleTitle": "Mærkbar forbedring i forhold til standardkabler",
+    "provides high-quality signal transmission": {
+     "sentimentAnalysis": "Anmeldelserne roser den pålidelige signaloverførsel og forbinder den med detaljeret, kraftfuld og dynamisk subwooferlyd.",
+     "simpleTitle": "Giver signaloverførsel i høj kvalitet",
      "bias": "positive",
-     "key": "signal-quality",
-     "groupId": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb"
+     "key": "sound-quality",
+     "groupId": "dffe484a-9a79-45f9-9b55-0625d028f564"
     }
    },
    "grouping": {
-    "71eaf6f8-b66c-4e01-8d39-807e01fe07bb": {
-     "title": "Signalkvalitet",
-     "id": "71eaf6f8-b66c-4e01-8d39-807e01fe07bb",
+    "dffe484a-9a79-45f9-9b55-0625d028f564": {
+     "title": "Lydkvalitet",
+     "id": "dffe484a-9a79-45f9-9b55-0625d028f564",
      "references": [
       "43680c1d-b06c-4182-b7f8-14735eff895e",
       "222bd407-f725-46cc-803f-467eff4d9f6b",
       "53e8fc6b-9ccd-4c8e-902c-f3ab76c8eda0",
       "272fd993-dab6-4ec9-baa5-013f84d1a1cb",
-      "ca984c2a-29b2-4f0b-b1da-27b37fafe1ca",
       "7ce067a4-63af-46c4-ba4b-f0af2806bd00"
      ]
     }
    },
-   "rating": 4.95454545454545,
-   "count": 22,
-   "reviewCount": 8,
+   "rating": 4.95652173913043,
+   "count": 23,
+   "reviewCount": 9,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 1,
-    "5": 21
+    "5": 22
    }
   },
   "brandName": "AudioQuest",

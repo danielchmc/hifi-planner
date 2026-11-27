@@ -244,12 +244,11 @@
      "productCode": "AQBWTBIRD-B"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "hideNotificationOption": true,
+     "inventoryStatusType": "notInStockNonStockedItem"
     },
     "images": [
      {

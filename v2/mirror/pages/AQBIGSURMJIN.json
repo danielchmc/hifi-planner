@@ -142,10 +142,10 @@
      "productCode": "AQBIGSURMJIN1,0"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -242,7 +242,7 @@
     "productCode": "AQBIGSURMJIN300",
     "ean": "092592063327",
     "priceDetails": {
-     "priceValueId": 1214548,
+     "priceValueId": 1223400,
      "price": 1999,
      "priceFormatted": "1.999,-",
      "salesUnit": "stk",
@@ -319,7 +319,7 @@
     "productCode": "AQBIGSURMJIN500",
     "ean": "092592063365",
     "priceDetails": {
-     "priceValueId": 1214525,
+     "priceValueId": 1222562,
      "price": 2499,
      "priceFormatted": "2.499,-",
      "salesUnit": "stk",
@@ -395,7 +395,7 @@
     "productCode": "AQBIGSURMJIN800",
     "ean": "092592063396",
     "priceDetails": {
-     "priceValueId": 1214584,
+     "priceValueId": 1223407,
      "price": 3299,
      "priceFormatted": "3.299,-",
      "salesUnit": "stk",
@@ -470,7 +470,7 @@
     "productCode": "AQBIGSURMJIN1200",
     "ean": "092592063426",
     "priceDetails": {
-     "priceValueId": 1214541,
+     "priceValueId": 1222678,
      "price": 4299,
      "priceFormatted": "4.299,-",
      "salesUnit": "stk",
@@ -546,7 +546,7 @@
     "productCode": "AQBIGSURMJIN1600",
     "ean": "092592075658",
     "priceDetails": {
-     "priceValueId": 1214496,
+     "priceValueId": 1222637,
      "price": 5299,
      "priceFormatted": "5.299,-",
      "salesUnit": "stk",
@@ -622,7 +622,7 @@
     "productCode": "AQBIGSURMJIN2000",
     "ean": "092592075702",
     "priceDetails": {
-     "priceValueId": 1214500,
+     "priceValueId": 1222611,
      "price": 6399,
      "priceFormatted": "6.399,-",
      "salesUnit": "stk",

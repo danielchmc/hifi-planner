@@ -162,6 +162,17 @@
   "bundle": {
    "name": "Denon Home 400 X2 Trådløs højtaler",
    "code": "X2-DENON-HOME-400",
+   "ribbons": [
+    {
+     "text": "Spar 13%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/4a4878b4-82e3-4e5f-b800-902dd64e04a4"
@@ -191,12 +202,15 @@
     }
    ],
    "priceDetails": {
-    "price": 7998,
-    "priceFormatted": "7.998,-",
+    "price": 6998,
+    "priceFormatted": "6.998,-",
+    "priceBefore": 7998,
+    "priceBeforeFormatted": "7.998,-",
+    "priceSavingsFormatted": "1.000,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 7998,
+    "unitPrice": 6998,
     "unitPriceBefore": 7998
    },
    "bundleProducts": [
@@ -220,11 +234,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 160,
+        "availableQuantity": 212,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "7.998,-",
-       "priceRaw": 3999,
+       "priceFormatted": "6.998,-",
+       "priceRaw": 3499,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 2
@@ -243,11 +257,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 126,
+        "availableQuantity": 167,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "7.998,-",
-       "priceRaw": 3999,
+       "priceFormatted": "6.998,-",
+       "priceRaw": 3499,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 2
@@ -255,78 +269,86 @@
      ],
      "parentProductCode": "DENHOME400",
      "reviews": {
-      "summary": "Denon Home 400 leverer varm, detaljeret og kraftfuld lyd i en stilfuld og brugervenlig højttaler. Den nemme opsætning, den behagelige app-betjening og den nyttige HEOS-integration gør højttaleren alsidig til både enkeltstående og multiroom-lytning. Manglen på en fysisk eller appstyret standbyfunktion samt lejlighedsvis uklarhed i multiroom-driften er mærkbare ulemper, men den samlede lytteoplevelse er stadig meget tilfredsstillende.",
+      "summary": "Denon Home 400 roses bredt for sin fyldige, detaljerede og rummelige lyd, det flotte design samt den enkle opsætning og betjening. HEOS-integration og multiroom-brug giver ekstra fleksibilitet, selv om multiroom-funktionen kan være uklar, og manglen på en rigtig standbyknap er frustrerende. Samlet leverer højttaleren en varm, punchy og omsluttende lyd med stærk værdi i prisklassen.",
       "headlines": {
-       "easy setup and control": {
-        "sentimentAnalysis": "Højttaleren beskrives konsekvent som nem at installere, betjene og styre.",
+       "detailed, room-filling sound": {
+        "sentimentAnalysis": "Anmeldelserne roser højttalerens klare, detaljerede, rummelige lyd i høj kvalitet.",
+        "simpleTitle": "Detaljeret, rumfyldende lyd",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "31bfc94c-fb1c-41b7-8fbe-87e64912500a"
+       },
+       "easy installation and operation": {
+        "sentimentAnalysis": "Anmeldelserne beskriver opsætning, app-brug og daglig betjening som nem og brugervenlig.",
         "simpleTitle": "Nem opsætning og betjening",
         "bias": "positive",
-        "key": "easy-setup-control",
-        "groupId": "a1f98c43-d140-41a8-a185-bd7d8ac9a8a9"
+        "key": "setup-control",
+        "groupId": "83f6193e-97ea-4924-99ae-0f0e4e254d76"
        },
-       "detailed, powerful sound": {
-        "sentimentAnalysis": "Anmeldelserne roser Home 400 for detaljeret, fremragende og overlegen lyd, inklusive en tydelig forbedring i forhold til ældre Bose-højttalere.",
-        "simpleTitle": "Detaljeret, kraftfuld lyd",
+       "attractive design": {
+        "sentimentAnalysis": "Flere anmeldelser værdsætter højttalerens flotte og veludførte udseende.",
+        "simpleTitle": "Flot design",
         "bias": "positive",
-        "key": "detailed-powerful-sound",
-        "groupId": "3dab1b59-85d7-42bf-b5a2-a9a345fed1ac"
+        "key": "design",
+        "groupId": "a19809de-5da9-4914-920d-ad5386342a76"
        },
-       "pleasant HEOS app experience": {
-        "sentimentAnalysis": "HEOS-appen opleves som behagelig og mere praktisk at bruge og understøtter fleksibel lytning i hele hjemmet.",
-        "simpleTitle": "Behagelig oplevelse med HEOS-appen",
-        "bias": "positive",
-        "key": "pleasant-heos-app",
-        "groupId": "05e194c3-ad48-484c-bc17-c66d7db92a0c"
+       "multiroom behavior can be unclear": {
+        "sentimentAnalysis": "Multiroom-integrationen er nyttig, men aktiveringen af højttaleren fungerer ikke altid forudsigeligt.",
+        "simpleTitle": "Multiroom-funktionen kan være uklar",
+        "bias": "negative",
+        "key": "setup-control",
+        "groupId": "83f6193e-97ea-4924-99ae-0f0e4e254d76"
        }
       },
       "grouping": {
-       "3dab1b59-85d7-42bf-b5a2-a9a345fed1ac": {
+       "31bfc94c-fb1c-41b7-8fbe-87e64912500a": {
         "title": "Lydkvalitet",
-        "id": "3dab1b59-85d7-42bf-b5a2-a9a345fed1ac",
+        "id": "31bfc94c-fb1c-41b7-8fbe-87e64912500a",
         "references": [
+         "2de1d657-328f-4ad1-86cf-a2d8cd6e7d71",
          "06d6c790-69c5-457f-9283-0fb077d38bb6",
          "0548f4d6-b15d-4a8f-b0b3-b10d16ac4787",
          "dd95f98f-1346-44f8-8573-788434e5719c",
          "9e5adeb1-11cb-44f1-9de4-93db819a98aa",
          "29c673ec-59c4-4bdd-ab2a-e712989523a3",
-         "f3a7b800-3631-4812-8851-fe9f49c79bb6",
+         "f3a7b800-3631-4812-8851-fe9f49c79e",
          "79526833-9b5f-4b0c-b8ca-6b3cebd618be",
          "924823eb-978c-46be-aec5-3cd28b031e2e",
          "75de4e57-9d92-4bcf-9778-91d972831e3d",
          "d80c3eb9-d4c3-47b0-9658-c4c5c0a612a8"
         ]
        },
-       "a1f98c43-d140-41a8-a185-bd7d8ac9a8a9": {
-        "title": "Brugervenlighed",
-        "id": "a1f98c43-d140-41a8-a185-bd7d8ac9a8a9",
+       "83f6193e-97ea-4924-99ae-0f0e4e254d76": {
+        "title": "Opsætning og betjening",
+        "id": "83f6193e-97ea-4924-99ae-0f0e4e254d76",
         "references": [
          "0548f4d6-b15d-4a8f-b0b3-b10d16ac4787",
          "9e5adeb1-11cb-44f1-9de4-93db819a98aa",
          "29c673ec-59c4-4bdd-ab2a-e712989523a3",
-         "f3a7b800-3631-4812-8851-fe9f49c79bb6",
+         "f3a7b800-3631-4812-8851-fe9f49c79e",
          "79526833-9b5f-4b0c-b8ca-6b3cebd618be",
+         "dd95f98f-1346-44f8-8573-788434e5719c",
          "75de4e57-9d92-4bcf-9778-91d972831e3d"
         ]
        },
-       "05e194c3-ad48-484c-bc17-c66d7db92a0c": {
-        "title": "HEOS-app",
-        "id": "05e194c3-ad48-484c-bc17-c66d7db92a0c",
+       "a19809de-5da9-4914-920d-ad5386342a76": {
+        "title": "Design",
+        "id": "a19809de-5da9-4914-920d-ad5386342a76",
         "references": [
-         "0548f4d6-b15d-4a8f-b0b3-b10d16ac4787",
-         "dd95f98f-1346-44f8-8573-788434e5719c",
-         "79526833-9b5f-4b0c-b8ca-6b3cebd618be",
-         "75de4e57-9d92-4bcf-9778-91d972831e3d"
+         "2de1d657-328f-4ad1-86cf-a2d8cd6e7d71",
+         "29c673ec-59c4-4bdd-ab2a-e712989523a3",
+         "79526833-9b5f-4b0c-b8ca-6b3cebd618be"
         ]
        }
       },
-      "rating": 4.77777777777778,
-      "count": 27,
-      "reviewCount": 14,
+      "rating": 4.75,
+      "count": 28,
+      "reviewCount": 15,
       "distribution": {
        "1": 0,
        "2": 0,
        "3": 0,
-       "4": 6,
+       "4": 7,
        "5": 21
       }
      }
@@ -337,20 +359,20 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 22
+    "numberOfStoresExperience": 19
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.77777777777778,
-   "count": 27,
-   "reviewCount": 14,
+   "rating": 4.75,
+   "count": 28,
+   "reviewCount": 15,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
-    "4": 6,
+    "4": 7,
     "5": 21
    }
   },

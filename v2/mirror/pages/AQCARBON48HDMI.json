@@ -249,7 +249,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 4,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -327,7 +327,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 6,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -503,37 +503,39 @@
   "bundleRelations": [],
   "variantNavigationType": "sizeSelector",
   "reviews": {
-   "summary": "AudioQuest Carbon 48 giver især i avancerede anlæg en varm, kraftfuld og omsluttende forbedring af både lyd og billede. Ren signaltransmission, finere detaljer og et stærkt samspil mellem komponenterne gør kablet til et overbevisende valg til egnede 4K-systemer. Den førsteklasses konstruktion og de fremragende resultater imponerer, selv om den stive opbygning og høje pris kræver passende installation og udstyr.",
+   "summary": "AudioQuest Carbon 48 HDMI roses bredt som et premiumkabel, der giver en varm, kraftfuld og omsluttende forbedring af både lyd og billede. Især avancerede anlæg får glæde af den klare signaloverførsel og de fine detaljer, mens den solide forarbejdning understøtter premiumindtrykket. Prisen er høj, men den stærke ydeevne og fremragende kvalitet gør investeringen værdifuld med kompatibelt udstyr.",
    "headlines": {
-    "noticeable improvements in sound and picture": {
-     "sentimentAnalysis": "Kablet roses for klarere, mere detaljeret lyd og synligt forbedret billedkvalitet, især i avancerede systemer.",
-     "simpleTitle": "Mærkbare forbedringer i lyd og billede",
+    "clear improvements in sound and picture": {
+     "sentimentAnalysis": "Kablet får gentagne gange æren for at gøre lyd og billede mere detaljeret, klart og imponerende, især i avancerede anlæg.",
+     "simpleTitle": "Tydelige forbedringer i lyd og billede",
      "bias": "positive",
-     "key": "audio-video",
-     "groupId": "8484d6fc-880d-42fc-92dc-1098bdd06681"
+     "key": "audio_video",
+     "groupId": "a050fc95-5979-4916-aa6f-d0a4a961c2cb"
     },
-    "good results at an acceptable price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer, at kablets ydeevne er god nok til at retfærdiggøre prisen.",
-     "simpleTitle": "Gode resultater til en acceptabel pris",
+    "good quality for the price": {
+     "sentimentAnalysis": "Flere anmeldelser vurderer kabellets resultat og kvalitet som rimelig eller god i forhold til prisen trods premiumplaceringen.",
+     "simpleTitle": "God kvalitet til prisen",
      "bias": "positive",
      "key": "value",
-     "groupId": "299d1e6b-ff06-4652-8302-8d652110bb2f"
+     "groupId": "c626d7d0-a9b3-4f2f-82c3-d84d40da293a"
     },
-    "a premium, well-finished construction": {
-     "sentimentAnalysis": "Den fysiske konstruktion og finish vurderes som førsteklasses og tydeligt raffineret.",
-     "simpleTitle": "Førsteklasses og veludført konstruktion",
+    "premium, well-finished construction": {
+     "sentimentAnalysis": "Forarbejdningen beskrives som førsteklasses og flot udført, hvilket understøtter kablets premiumkarakter.",
+     "simpleTitle": "Premiumforarbejdning og flot finish",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "d45794db-498c-4a5b-82f4-85d50aa9fcc9"
+     "key": "build_quality",
+     "groupId": "ddbb5f3b-a12f-43b5-a618-71fe72687846"
     }
    },
    "grouping": {
-    "8484d6fc-880d-42fc-92dc-1098bdd06681": {
+    "a050fc95-5979-4916-aa6f-d0a4a961c2cb": {
      "title": "Lyd- og billedkvalitet",
-     "id": "8484d6fc-880d-42fc-92dc-1098bdd06681",
+     "id": "a050fc95-5979-4916-aa6f-d0a4a961c2cb",
      "references": [
       "baaed9e8-1b37-439a-a620-b0284d77074a",
       "e862afcc-662e-4175-bff3-ff1720fb110a",
+      "cd57a536-8793-4044-a28b-36e90cba290a",
+      "3c8bfa44-19eb-4872-8e0e-95321317da98",
       "7bd5cec7-0943-4796-acc9-b37da3e1c478",
       "42635ea8-d920-452f-afea-e6f224d736de",
       "9628574b-4564-4530-a71e-b20bfe0fbe7c",
@@ -541,18 +543,19 @@
       "8cdad242-854d-4794-987f-0352dd46f726"
      ]
     },
-    "299d1e6b-ff06-4652-8302-8d652110bb2f": {
-     "title": "Værdi for pengene",
-     "id": "299d1e6b-ff06-4652-8302-8d652110bb2f",
+    "c626d7d0-a9b3-4f2f-82c3-d84d40da293a": {
+     "title": "Pris og værdi",
+     "id": "c626d7d0-a9b3-4f2f-82c3-d84d40da293a",
      "references": [
       "c3a6b3c6-fc49-4100-9111-74486e62da50",
       "cd57a536-8793-4044-a28b-36e90cba290a",
-      "3c8bfa44-19eb-4872-8e0e-95321317da98"
+      "3c8bfa44-19eb-4872-8e0e-95321317da98",
+      "9628574b-4564-4530-a71e-b20bfe0fbe7c"
      ]
     },
-    "d45794db-498c-4a5b-82f4-85d50aa9fcc9": {
+    "ddbb5f3b-a12f-43b5-a618-71fe72687846": {
      "title": "Byggekvalitet",
-     "id": "d45794db-498c-4a5b-82f4-85d50aa9fcc9",
+     "id": "ddbb5f3b-a12f-43b5-a618-71fe72687846",
      "references": [
       "7e95c6a3-afd8-4261-82bc-4e2f1150db64",
       "9628574b-4564-4530-a71e-b20bfe0fbe7c"

@@ -155,6 +155,17 @@
   "bundle": {
    "name": "Denon Home 600 X2 Trådløs højtaler",
    "code": "X2-DENON-HOME-600",
+   "ribbons": [
+    {
+     "text": "Spar 9%",
+     "ribbonType": "discount",
+     "link": {
+      "title": "",
+      "target": "_blank",
+      "kind": "LinkInfo"
+     }
+    }
+   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/a731898e-32eb-4c19-8266-1150239526a5"
@@ -184,12 +195,15 @@
     }
    ],
    "priceDetails": {
-    "price": 10998,
-    "priceFormatted": "10.998,-",
+    "price": 9998,
+    "priceFormatted": "9.998,-",
+    "priceBefore": 10998,
+    "priceBeforeFormatted": "10.998,-",
+    "priceSavingsFormatted": "1.000,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 10998,
+    "unitPrice": 9998,
     "unitPriceBefore": 10998
    },
    "bundleProducts": [
@@ -213,11 +227,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 75,
+        "availableQuantity": 61,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "10.998,-",
-       "priceRaw": 5499,
+       "priceFormatted": "9.998,-",
+       "priceRaw": 4999,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 2
@@ -233,19 +247,115 @@
         "productCode": "DENHOME600SI"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager lørdag den 28. november",
-        "deliveryDate": "2026-11-28T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 17,
+        "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "10.998,-",
-       "priceRaw": 5499,
+       "priceFormatted": "9.998,-",
+       "priceRaw": 4999,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 2
       }
      ],
-     "parentProductCode": "DENHOME600"
+     "parentProductCode": "DENHOME600",
+     "reviews": {
+      "summary": "DENHOME600 leverer en varm, fyldig og omsluttende lyd med særligt imponerende klarhed, bas og rumfornemmelse for en kompakt højttaler. Stereoparring og streaming giver god bekvemmelighed, mens det attraktive design og de praktiske knapper på højttaleren styrker oplevelsen. App, software og forbindelsesstabilitet kan være frustrerende, men den samlede lydpræstation får stor ros.",
+      "headlines": {
+       "excellent, spacious sound": {
+        "sentimentAnalysis": "Anmeldelserne beskriver lyden som fremragende, kraftfuld, klar og rummelig, mens stereoparring giver en bredere og mindre trættende lytteoplevelse.",
+        "simpleTitle": "Fremragende, rummelig lyd",
+        "bias": "positive",
+        "key": "excellent-spacious-sound",
+        "groupId": "5fef388d-806e-4569-9516-ce763f8145ef"
+       },
+       "app and connections can be unreliable": {
+        "sentimentAnalysis": "Appen er til tider vanskelig at bruge, og der rapporteres om forbindelsesafbrydelser, ustabil Bluetooth og upålidelig enhedsregistrering.",
+        "simpleTitle": "App og forbindelser kan være ustabile",
+        "bias": "negative",
+        "key": "app-connection-issues",
+        "groupId": "267ed19f-fb11-42d2-b6a5-23bb1a7709ff"
+       },
+       "strong, bass-rich presentation": {
+        "sentimentAnalysis": "Bassen får ros for at være fyldig og markant, og den ekstra dybde fremhæves især ved opgraderingen fra en ældre højttaler.",
+        "simpleTitle": "Kraftfuld lyd med fyldig bas",
+        "bias": "positive",
+        "key": "bass-rich-presentation",
+        "groupId": "5fef388d-806e-4569-9516-ce763f8145ef"
+       },
+       "bass can lack extra impact": {
+        "sentimentAnalysis": "Nogle lytteindtryk oplever bassen som mindre kraftfuld end ønsket, og visse numre lyder ikke altid lige overbevisende.",
+        "simpleTitle": "Bassen kunne være kraftigere",
+        "bias": "negative",
+        "key": "bass-lacks-impact",
+        "groupId": "5fef388d-806e-4569-9516-ce763f8145ef"
+       },
+       "streaming is convenient when connections work": {
+        "sentimentAnalysis": "HEOS, AirPlay og streaming generelt beskrives som problemfrit og praktisk til daglig musik.",
+        "simpleTitle": "Streaming er praktisk, når forbindelsen fungerer",
+        "bias": "positive",
+        "key": "streaming-convenience",
+        "groupId": "267ed19f-fb11-42d2-b6a5-23bb1a7709ff"
+       },
+       "attractive design": {
+        "sentimentAnalysis": "Højttaleren får ros for sit elegante og attraktive udseende.",
+        "simpleTitle": "Attraktivt design",
+        "bias": "positive",
+        "key": "attractive-design",
+        "groupId": "ef518f7e-f3c5-4ea7-988c-30f01ab3bad9"
+       }
+      },
+      "grouping": {
+       "5fef388d-806e-4569-9516-ce763f8145ef": {
+        "title": "Lydkvalitet",
+        "id": "5fef388d-806e-4569-9516-ce763f8145ef",
+        "references": [
+         "6ad3b4aa-c947-480e-9b34-8ea6d9238dde",
+         "a1f079e0-aa7a-49c7-8e4f-8f805c8de695",
+         "43d9c6c8-3271-432d-bd9e-a6c9270d04e4",
+         "68647763-a191-4efd-bd77-9a244d01c305",
+         "00d8a7ac-c25f-4695-8fe9-6054adf1db79",
+         "72d249d3-9a24-47c7-8cc2-4d4930af6c61",
+         "93951e1a-6fd2-44c4-9d2d-1aaa8b0e9de4",
+         "90b8ba1e-489c-4f9f-8594-75b64c72c5f7",
+         "d73e2396-e208-4034-bc79-d584f0f0565c",
+         "ed952f6b-3e62-478e-92a2-86bb7a0e5556",
+         "44fe5ce7-b39c-486f-a647-74025e3e1a52"
+        ]
+       },
+       "267ed19f-fb11-42d2-b6a5-23bb1a7709ff": {
+        "title": "Streaming og app",
+        "id": "267ed19f-fb11-42d2-b6a5-23bb1a7709ff",
+        "references": [
+         "a1f079e0-aa7a-49c7-8e4f-8f805c8de695",
+         "eed91e49-0dc5-4df4-a454-8db167b5621e",
+         "72d249d3-9a24-47c7-8cc2-4d4930af6c61",
+         "90b8ba1e-489c-4f9f-8594-75b64c72c5f7",
+         "d73e2396-e208-4034-bc79-d584f0f0565c"
+        ]
+       },
+       "ef518f7e-f3c5-4ea7-988c-30f01ab3bad9": {
+        "title": "Design",
+        "id": "ef518f7e-f3c5-4ea7-988c-30f01ab3bad9",
+        "references": [
+         "43d9c6c8-3271-432d-bd9e-a6c9270d04e4",
+         "72d249d3-9a24-47c7-8cc2-4d4930af6c61"
+        ]
+       }
+      },
+      "rating": 4.60869565217391,
+      "count": 23,
+      "reviewCount": 13,
+      "distribution": {
+       "1": 0,
+       "2": 0,
+       "3": 2,
+       "4": 5,
+       "5": 16
+      }
+     }
     }
    ],
    "sellableOnWeb": true,

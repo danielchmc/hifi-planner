@@ -146,47 +146,46 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ Dragon Tail USB-C-kablet opfattes generelt som praktisk, vellavet og pålideligt med god kompatibilitet med forskellige telefoner og lydopsætninger. Sammen med passende hovedtelefoner og en DAC kan kablet levere en varm, detaljeret, omsluttende og fyldig lyd. Værdien vurderes overvejende positivt, selv om én anmeldelse synes, at prisen er høj.",
+   "summary": "AQ Dragon Tail USB-C er et meget praktisk kabel i høj kvalitet, som fungerer pålideligt med telefoner og lydopsætninger. Lyden roses bredt som varm, detaljeret, punchy og omsluttende, især sammen med en DragonFly og gode hovedtelefoner. Den stærke kompatibilitet og gode værdi gør kablet let at anbefale, selv om én anmeldelse synes, at prisen er høj.",
    "headlines": {
-    "reliable and well-made cable": {
-     "sentimentAnalysis": "Anmeldelserne beskriver kablet som praktisk, funktionelt, pålideligt og af høj kvalitet.",
-     "simpleTitle": "Pålideligt kabel i høj kvalitet",
+    "reliable, practical cable": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som vellavet, enkelt, praktisk og pålideligt i daglig brug.",
+     "simpleTitle": "Pålideligt og praktisk kabel",
      "bias": "positive",
-     "key": "cable-quality",
-     "groupId": "804d04fe-25d2-4c06-9197-fe254c9bdb14"
+     "key": "quality-function",
+     "groupId": "77ebf6bb-a4d0-4b70-98ab-d7cfa0116e20"
     },
     "warm, detailed and immersive sound": {
-     "sentimentAnalysis": "Kablet roses for at løfte hovedtelefonernes lyd med en fyldig, følelsesladet og detaljeret gengivelse.",
+     "sentimentAnalysis": "Kablet forbindes med en markant forbedring af hovedtelefonlyden samt en punchy, følelsesladet, detaljeret og særdeles engagerende gengivelse.",
      "simpleTitle": "Varm, detaljeret og omsluttende lyd",
      "bias": "positive",
      "key": "sound-quality",
-     "groupId": "7fe54c44-8cd4-4ce9-894a-d0482ab524ed"
+     "groupId": "18a47ccf-6f26-4084-9be0-4bedac1d7535"
     },
-    "works well with phones and audio setups": {
-     "sentimentAnalysis": "Anmeldelserne beskriver vellykket brug med Samsung-telefoner og moderne telefonbaserede hovedtelefon- eller DAC-opsætninger.",
-     "simpleTitle": "Fungerer godt med telefoner og lydopsætninger",
+    "works well with phones and audio gear": {
+     "sentimentAnalysis": "Kablet forbinder Samsung-telefoner og moderne USB-C-lydopstillinger uden problemer, herunder kombinationer med DragonFly og Woojer.",
+     "simpleTitle": "Fungerer godt med telefoner og lydudstyr",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "205f26cf-0abd-48bd-92dd-42b8fcc5759b"
+     "groupId": "0911ed68-dc17-4016-8980-b8a3071c20bf"
     }
    },
    "grouping": {
-    "804d04fe-25d2-4c06-9197-fe254c9bdb14": {
-     "title": "Kabelkvalitet og funktionalitet",
-     "id": "804d04fe-25d2-4c06-9197-fe254c9bdb14",
+    "77ebf6bb-a4d0-4b70-98ab-d7cfa0116e20": {
+     "title": "Kvalitet og funktion",
+     "id": "77ebf6bb-a4d0-4b70-98ab-d7cfa0116e20",
      "references": [
       "9c88f2df-3751-49d9-b5ed-4af56e380f50",
       "5633c271-21f0-41d2-9a9c-d14cff8538c4",
       "707265ee-4ffd-4726-9137-ffcdde8f924e",
       "44244601-2de4-46cb-a1a5-39c2d1be38ab",
       "02dfddfa-4753-4377-ab70-45613d256c0e",
-      "838c5eaa-c581-4202-8a92-8adaf0b56ff9",
       "b77a0313-f621-40ab-bd16-d1be8f4fd510"
      ]
     },
-    "7fe54c44-8cd4-4ce9-894a-d0482ab524ed": {
+    "18a47ccf-6f26-4084-9be0-4bedac1d7535": {
      "title": "Lydkvalitet",
-     "id": "7fe54c44-8cd4-4ce9-894a-d0482ab524ed",
+     "id": "18a47ccf-6f26-4084-9be0-4bedac1d7535",
      "references": [
       "45fa87cc-b234-441b-9ef0-e84bacfe4b3c",
       "777b0415-22fd-4f6c-8740-b78ede7b4fc3",
@@ -194,9 +193,9 @@
       "c16aacb4-5183-4ffa-8085-cd5591b54e33"
      ]
     },
-    "205f26cf-0abd-48bd-92dd-42b8fcc5759b": {
-     "title": "Enhedskompatibilitet",
-     "id": "205f26cf-0abd-48bd-92dd-42b8fcc5759b",
+    "0911ed68-dc17-4016-8980-b8a3071c20bf": {
+     "title": "Kompatibilitet",
+     "id": "0911ed68-dc17-4016-8980-b8a3071c20bf",
      "references": [
       "133863b4-b31d-4863-9f40-95a1539349e6",
       "3ac6a1ce-cbdd-455c-adc5-cde370004c48",

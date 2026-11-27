@@ -159,7 +159,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 76,
+        "availableQuantity": 36,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "6.999,-",
@@ -171,48 +171,48 @@
      ],
      "parentProductCode": "SENAMBEOSBPLUS",
      "reviews": {
-      "summary": "SENAMBEOSBPLUS leverer enestående klar, fyldig og kraftfuld lyd til tv, film og musik med dyb bas og en imponerende rumlig gengivelse, selv uden subwoofer. Dialoger er særligt tydelige, mens AMBEO-behandlingen skaber en medrivende biograflignende lyd, selv om surroundeffekter bagfra er mindre overbevisende end lydbilledet forfra og fra siderne. Opsætning og appstyring fungerer generelt godt, men tilbagevendende forbindelses-, opstarts-, app- og firmwareproblemer gør, at oplevelsen ikke altid er helt problemfri.",
+      "summary": "SENNHEISER AMBEO Plus leverer en varm, detaljeret og kraftfuld lyd, der løfter tv, film og musik markant, med imponerende bas selv uden subwoofer. Immersiv lyd fra fronten, overbevisende 3D-effekter og særdeles tydelig dialog skaber biografstemning i et kompakt og elegant design. Opsætning og stabilitet i daglig brug kan dog være ujævn, da appnedbrud, forbindelsesproblemer og lejlighedsvise opstartsforsinkelser forhindrer en helt fejlfri oplevelse.",
       "headlines": {
-       "rich, powerful sound with deep bass": {
-        "sentimentAnalysis": "Anmeldelserne roser konsekvent lyden som klar, fyldig, balanceret og kraftfuld med overraskende stærk bas selv uden subwoofer.",
-        "simpleTitle": "Fyldig og kraftfuld lyd med dyb bas",
+       "rich, powerful sound with strong bass": {
+        "sentimentAnalysis": "Anmelderne roser den fyldige, klare og kraftfulde gengivelse, især den dybe bas selv uden ekstra subwoofer.",
+        "simpleTitle": "Fyldig og kraftfuld lyd med stærk bas",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "99c1d57a-7a73-4141-bfeb-0efe9cccafec"
+        "key": "sound",
+        "groupId": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541"
        },
-       "setup is easy, but reliability is inconsistent": {
-        "sentimentAnalysis": "Selv om opsætningen er enkel for mange ejere, skaber gentagne appnedbrud, forbindelsesfejl, opstartsproblemer, fastlåsninger og nulstillinger betydelig frustration.",
-        "simpleTitle": "Nem opsætning, men ustabil drift",
+       "clear dialogue and balanced detail": {
+        "sentimentAnalysis": "Tydelig tale, taleforstærkning og en naturlig, afbalanceret klang gør dialoger nemme at følge i film, tv og spil.",
+        "simpleTitle": "Tydelig dialog og afbalancerede detaljer",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541"
+       },
+       "app and startup reliability issues": {
+        "sentimentAnalysis": "Flere anmeldelser nævner appnedbrud, fastfrysninger, opdateringsproblemer, manglende lyd ved opstart samt langsom eller ustabil opstart, der kræver nulstilling eller genstart.",
+        "simpleTitle": "Problemer med app og opstart",
         "bias": "negative",
         "key": "reliability",
-        "groupId": "31655bb9-0aa6-4e45-81df-73b97c9a0893"
+        "groupId": "56b0d454-d48f-4dc5-9469-d350d0085a26"
        },
-       "dialogue is exceptionally clear": {
-        "sentimentAnalysis": "Anmeldelserne fremhæver gentagne gange tydelig tale og nyttig taleforstærkning til film, serier og tv.",
-        "simpleTitle": "Ekstremt tydelig dialog",
+       "convincing 3D sound, but limited rear surround": {
+        "sentimentAnalysis": "Lydscenen og 3D-behandlingen roses bredt, mens effekter bagfra er mindre overbevisende end den brede gengivelse forfra og fra siderne.",
+        "simpleTitle": "Overbevisende 3D-lyd, men begrænset surround bagfra",
+        "bias": "meh",
+        "key": "surround",
+        "groupId": "21e69dad-39b2-4818-84c9-d1544f7ed51c"
+       },
+       "easy app-based setup and adjustment": {
+        "sentimentAnalysis": "App, manual og indstillingsmuligheder gør opsætning og lydtilpasning enkel for mange brugere.",
+        "simpleTitle": "Nem opsætning og justering via app",
         "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "99c1d57a-7a73-4141-bfeb-0efe9cccafec"
-       },
-       "immersive front and side soundstage": {
-        "sentimentAnalysis": "AMBEO skaber en stor, biograflignende lydboble med overbevisende 3D- og sideeffekter, så film føles medrivende selv uden baghøjttalere.",
-        "simpleTitle": "Medrivende lydbillede forfra og fra siderne",
-        "bias": "positive",
-        "key": "surround-soundstage",
-        "groupId": "701ddec0-109c-4b28-a67d-cc8c12367176"
-       },
-       "rear surround effects are limited": {
-        "sentimentAnalysis": "Flere anmeldelser bemærker, at soundbaren ikke kan gengive fuld surroundlyd bagfra, og at der mangler fysiske trådløse baghøjttalere.",
-        "simpleTitle": "Begrænsede surroundeffekter bagfra",
-        "bias": "negative",
-        "key": "surround-soundstage",
-        "groupId": "701ddec0-109c-4b28-a67d-cc8c12367176"
+        "key": "setup",
+        "groupId": "29411992-2c82-4147-b2aa-d91028124f2a"
        }
       },
       "grouping": {
-       "99c1d57a-7a73-4141-bfeb-0efe9cccafec": {
+       "9b70ee5d-c5e0-4253-b671-4f5f9b85b541": {
         "title": "Lydkvalitet",
-        "id": "99c1d57a-7a73-4141-bfeb-0efe9cccafec",
+        "id": "9b70ee5d-c5e0-4253-b671-4f5f9b85b541",
         "references": [
          "7612093c-da71-410f-8dab-e92d523f7923",
          "8e43d287-7b5c-488a-aaff-c81c208451d2",
@@ -253,9 +253,9 @@
          "ff43c54b-2f74-4782-bc1c-3e861bd47188"
         ]
        },
-       "31655bb9-0aa6-4e45-81df-73b97c9a0893": {
-        "title": "Driftssikkerhed og forbindelse",
-        "id": "31655bb9-0aa6-4e45-81df-73b97c9a0893",
+       "56b0d454-d48f-4dc5-9469-d350d0085a26": {
+        "title": "Stabilitet og forbindelser",
+        "id": "56b0d454-d48f-4dc5-9469-d350d0085a26",
         "references": [
          "57066ff1-3c93-4444-974b-ced4f72d84a3",
          "a15a746d-4fad-4904-81d2-c94ef1c38fa9",
@@ -268,16 +268,32 @@
          "ff43c54b-2f74-4782-bc1c-3e861bd47188"
         ]
        },
-       "701ddec0-109c-4b28-a67d-cc8c12367176": {
-        "title": "Surroundlyd",
-        "id": "701ddec0-109c-4b28-a67d-cc8c12367176",
+       "29411992-2c82-4147-b2aa-d91028124f2a": {
+        "title": "Opsætning og betjening",
+        "id": "29411992-2c82-4147-b2aa-d91028124f2a",
+        "references": [
+         "8e43d287-7b5c-488a-aaff-c81c208451d2",
+         "26f66d38-7bbf-424d-96bc-659c48eefa63",
+         "8c3466bc-a0c2-48fa-a4a2-a8f610dcf449",
+         "8da9c15d-775d-4436-9f5e-0e81c4f63b5e",
+         "44b35fc8-e397-4417-9979-0c462204df8f",
+         "957bd61a-f83f-40ae-bc51-8c2295cfe951",
+         "546c3c65-85f4-4a83-abe4-df692f6197ae",
+         "e0273fa4-2703-43a3-9768-60b5b80a139a"
+        ]
+       },
+       "21e69dad-39b2-4818-84c9-d1544f7ed51c": {
+        "title": "Surround og rumlig lyd",
+        "id": "21e69dad-39b2-4818-84c9-d1544f7ed51c",
         "references": [
          "8cf2cff0-e013-46be-90bb-b8fe86dea816",
-         "6daffb82-06a4-4599-bd45-c2a9e6e28ccb",
          "668ce6a6-3114-489c-9b27-8abcf5413f66",
+         "6daffb82-06a4-4599-bd45-c2a9e6e28ccb",
          "1d92363f-3b29-4d2b-9fc2-7b0af4ade418",
+         "452db3bf-d2c0-4936-9684-4bd856810b67",
          "5fe0b60e-a083-4446-8d03-484222a1e1f0",
-         "452db3bf-d2c0-4936-9684-4bd856810b67"
+         "8d7a89bf-86c9-490f-80cc-9150bb313b7a",
+         "957bd61a-f83f-40ae-bc51-8c2295cfe951"
         ]
        }
       },
@@ -313,7 +329,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 44,
+        "availableQuantity": 39,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "4.490,-",
@@ -323,97 +339,15 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "SENAMBEOSUB",
-     "reviews": {
-      "summary": "SENAMBEOSUB leverer varm, kraftfuld og omsluttende bas, som løfter AMBEO-soundbaroplevelsen markant. Opsætning og integration er generelt nem på kompatible AMBEO-modeller, og effekten gør film og musik langt mere medrivende. Kablet drift kan dog give alvorlige problemer med opdateringer, kalibrering og aktivering, mens trådløs kompatibilitet og standbyadfærd heller ikke er fejlfri.",
-      "headlines": {
-       "powerful, deep bass": {
-        "sentimentAnalysis": "Subwooferen roses gentagne gange for sin dybe, kraftfulde og rumfyldende bas.",
-        "simpleTitle": "Kraftfuld, dyb bas",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
-       },
-       "easy pairing with compatible AMBEO soundbars": {
-        "sentimentAnalysis": "Flere anmeldelser beskriver, at subwooferen passer til eller nemt forbindes med AMBEO-soundbars.",
-        "simpleTitle": "Nem tilslutning til kompatible AMBEO-soundbars",
-        "bias": "positive",
-        "key": "compatibility",
-        "groupId": "471da204-3fc2-4ac2-8d6f-2de72aed55bb"
-       },
-       "a major upgrade to the AMBEO system": {
-        "sentimentAnalysis": "Subwooferen forbedrer den samlede lyd tydeligt, ikke kun bassen.",
-        "simpleTitle": "En markant opgradering af AMBEO-systemet",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802"
-       },
-       "wired connection has major technical problems": {
-        "sentimentAnalysis": "De fælles forbindelsesproblemer omfatter begrænset trådløs kompatibilitet og ustabil kablet drift.",
-        "simpleTitle": "Kablet forbindelse har store tekniske problemer",
-        "bias": "negative",
-        "key": "connectivity",
-        "groupId": "1fa0401a-deab-45e8-8a29-3b9495f0048a"
-       }
-      },
-      "grouping": {
-       "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802": {
-        "title": "Lydkvalitet",
-        "id": "904a0bd6-0cff-4d4f-8b3d-bce9fe05d802",
-        "references": [
-         "cad0bc27-aecc-475e-96da-254e9c9121b7",
-         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
-         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
-         "b035644b-45cc-4873-8c0c-d231fd846b18",
-         "b127c05e-4d48-4173-b224-f10c820bd1fb",
-         "946b650c-6d16-47fd-a655-43531efd1e89",
-         "5585073b-7a79-4c4d-8921-dc89f9c230e0",
-         "538053da-43c7-419e-852b-442d5299fdd3",
-         "8e39db97-d632-4360-9e37-c94c4e20fcb2"
-        ]
-       },
-       "471da204-3fc2-4ac2-8d6f-2de72aed55bb": {
-        "title": "Kompatibilitet og opsætning",
-        "id": "471da204-3fc2-4ac2-8d6f-2de72aed55bb",
-        "references": [
-         "4dff2e90-0aab-4b4f-8be5-34b2ffbe74c0",
-         "d5e36f77-d778-4a0d-9bd9-0a61ad766333",
-         "1795f296-9af8-4d1e-9126-ce8793b2538b",
-         "a983b921-d8eb-42f7-bbdc-2b44a6c53578",
-         "946b650c-6d16-47fd-a655-43531efd1e89",
-         "72037b3f-be1c-412d-b33e-bd81e6a3c331",
-         "0aa8ae45-e59e-41b8-a4ee-da1e7032b762",
-         "74cf1b88-5c0c-4b85-bc9e-2be41db584b0",
-         "f8f91aa5-d816-4750-ae4f-6cedb686b9ff"
-        ]
-       },
-       "1fa0401a-deab-45e8-8a29-3b9495f0048a": {
-        "title": "Forbindelse",
-        "id": "1fa0401a-deab-45e8-8a29-3b9495f0048a",
-        "references": [
-         "ab634f66-7e4c-4c6e-bc0d-946736a29c10",
-         "1795f296-9af8-4d1e-9126-ce8793b2538b"
-        ]
-       }
-      },
-      "rating": 4.86486486486486,
-      "count": 37,
-      "reviewCount": 18,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 2,
-       "4": 1,
-       "5": 34
-      }
-     }
+     "parentProductCode": "SENAMBEOSUB"
     }
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
-    "canBuyOnline": true
+    "canBuyOnline": true,
+    "numberOfStoresExperiencePartly": 1
    }
   },
   "variantNavigationType": "dropDown",

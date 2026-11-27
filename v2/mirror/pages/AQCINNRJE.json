@@ -143,7 +143,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 15,
+     "availableQuantity": 13,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -219,10 +219,10 @@
     },
     "inventoryStatus": {
      "inStock": true,
-     "description": "På lager. Leveringstid 2-4 hverdage",
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -234,7 +234,6 @@
     "energySpecifications": {},
     "url": "/audioquest-cinnamon-netvaerkskabel/aqcinnrje1,5/",
     "canonicalUrl": "/audioquest-cinnamon-netvaerkskabel/aqcinnrje1,5/",
-    "lowestShippingPriceRaw": 299,
     "addOns": []
    },
    {
@@ -553,36 +552,43 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQCINNRJE leverer en klar, engagerende og mærkbart mere raffineret lyd med strammere bas, lysere diskant og flere detaljer end almindelige kabler. Den solide konstruktion, pålidelige funktion og AudioQuest-kvalitet skaber tillid, mens værdien for pengene vurderes som stærk. Samlet set giver AQCINNRJE en varm, slagkraftig og medrivende opgradering til streaming og daglig lytning.",
+   "summary": "AQCINNRJE betragtes generelt som et vellavet og pålideligt kabel, der gør det, det skal, og giver god værdi for pengene. Lyden beskrives som klarere, varmere, mere detaljeret og strammere, og flere anmeldelser nævner en øjeblikkeligt hørbar forbedring. AQCINNRJE leverer en slagkraftig, raffineret og omsluttende lyd og gør førsteklasses kabelydelse mere tilgængelig.",
    "headlines": {
-    "reliable operation and solid construction": {
-     "sentimentAnalysis": "Produktet beskrives gentagne gange som funktionelt, solidt og pålideligt til den tilsigtede brug.",
-     "simpleTitle": "Pålidelig funktion og solid konstruktion",
+    "reliable, well-made cable": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som solidt, veludført og pålideligt i daglig brug.",
+     "simpleTitle": "Pålideligt kabel i god kvalitet",
      "bias": "positive",
-     "key": "reliable-construction",
-     "groupId": "a2793b20-95a4-42fa-a03d-20079b4d08b2"
+     "key": "quality",
+     "groupId": "d84513f9-1a71-4a70-8661-2482c2dfb33b"
     },
-    "clearer sound with tighter bass and brighter treble": {
-     "sentimentAnalysis": "Kablet forbindes med en umiddelbart hørbar, klarere og mere kontrolleret gengivelse med strammere bas og lysere diskant.",
-     "simpleTitle": "Klarere lyd med strammere bas og lysere diskant",
+    "strong value without needing a pricier cable": {
+     "sentimentAnalysis": "Produktet vurderes som pengene værd og leverer god ydeevne uden behov for et dyrere kabel.",
+     "simpleTitle": "God værdi uden behov for et dyrere kabel",
      "bias": "positive",
-     "key": "sound-improvement",
-     "groupId": "1cac44f2-b690-4d19-905d-0873f2e69d42"
+     "key": "value",
+     "groupId": "83419d86-3cbd-440b-a5ef-28c1457f71dd"
     },
-    "strong value and premium AudioQuest quality": {
-     "sentimentAnalysis": "Kablet vurderes til at være pengene værd og så kvalitetsfuldt, at et dyrere alternativ anses for unødvendigt.",
-     "simpleTitle": "God værdi og førsteklasses AudioQuest-kvalitet",
+    "clearer, tighter and more refined sound": {
+     "sentimentAnalysis": "Kablet får æren for tydeligt at forbedre klarhed, åbenhed i diskanten og baskontrol, især ved high-resolution streaming.",
+     "simpleTitle": "Klarere, strammere og mere raffineret lyd",
      "bias": "positive",
-     "key": "value-quality",
-     "groupId": "a2793b20-95a4-42fa-a03d-20079b4d08b2"
+     "key": "sound",
+     "groupId": "90b2b25b-531e-4844-90a1-fc8000678c34"
+    },
+    "a warm, detailed and immediately audible upgrade": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver en øjeblikkeligt hørbar effekt med varm klang og gode detaljer.",
+     "simpleTitle": "En varm, detaljeret og øjeblikkeligt hørbar opgradering",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "90b2b25b-531e-4844-90a1-fc8000678c34"
     }
    },
    "grouping": {
-    "a2793b20-95a4-42fa-a03d-20079b4d08b2": {
-     "title": "Byggekvalitet og pålidelighed",
-     "id": "a2793b20-95a4-42fa-a03d-20079b4d08b2",
+    "d84513f9-1a71-4a70-8661-2482c2dfb33b": {
+     "title": "Byggekvalitet og funktionalitet",
+     "id": "d84513f9-1a71-4a70-8661-2482c2dfb33b",
      "references": [
-      "674b2840-21e4-454c-9833-1bd53833860d",
+      "9a42494e-800c-4605-8c94-f006f1ab4846",
       "698df432-e842-4ba8-9728-27e27fb390eb",
       "ad7e6c8a-1829-4816-a66b-22437381da81",
       "82af36ca-aaba-4655-8818-97fe56aca1b1",
@@ -594,9 +600,9 @@
       "1d9e9c01-23eb-417c-9f6f-18a80555720b"
      ]
     },
-    "1cac44f2-b690-4d19-905d-0873f2e69d42": {
+    "90b2b25b-531e-4844-90a1-fc8000678c34": {
      "title": "Lydkvalitet",
-     "id": "1cac44f2-b690-4d19-905d-0873f2e69d42",
+     "id": "90b2b25b-531e-4844-90a1-fc8000678c34",
      "references": [
       "9a42494e-800c-4605-8c94-f006f1ab4846",
       "03cd8798-c970-4a80-be05-51c820d742bf",
@@ -604,6 +610,15 @@
       "6cee61a2-cf38-43fa-aee6-6e4af5ceed02",
       "529e6387-5412-4f11-b575-2b637478d490",
       "49d91f52-c40b-4f3a-a275-253eee4af535"
+     ]
+    },
+    "83419d86-3cbd-440b-a5ef-28c1457f71dd": {
+     "title": "Værdi for pengene",
+     "id": "83419d86-3cbd-440b-a5ef-28c1457f71dd",
+     "references": [
+      "674b2840-21e4-454c-9833-1bd53833860d",
+      "49d91f52-c40b-4f3a-a275-253eee4af535",
+      "1d9e9c01-23eb-417c-9f6f-18a80555720b"
      ]
     }
    },

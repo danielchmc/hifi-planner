@@ -148,8 +148,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 10,
-     "availableQuantity": 84,
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 79,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -228,7 +228,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 8,
-     "availableQuantity": 20,
+     "availableQuantity": 17,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -307,7 +307,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 10,
+     "availableQuantity": 5,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -382,12 +382,11 @@
      "productCode": "AQEVERGREENIN3"
     },
     "inventoryStatus": {
-     "inStock": true,
-     "description": "På lager. Leveringstid 1-2 hverdage",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "availableQuantity": 1,
-     "inventoryStatusType": "warehouseInStock"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -460,11 +459,11 @@
      "productCode": "AQEVERGREENIN5"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 20. december",
+     "deliveryDate": "2026-12-20T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 2,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {
@@ -792,51 +791,55 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ Evergreen-kablerne får bred ros for en ren, afbalanceret og musikalsk lyd med en varm, rummelig og detaljeret gengivelse. Konstruktionen føles solid, og tilslutningerne sidder sikkert, mens forholdet mellem pris og kvalitet generelt vurderes stærkt. Et mindretal oplever brummen i et pladespiller-setup, og de faktiske mørke plastikstik skuffer sammenlignet med de lysegrønne metalfarvede produktbilleder.",
+   "summary": "AQ Evergreen-kablerne roses bredt for ren, afbalanceret og til tider varm og rumlig lyd samt solid konstruktion og et sikkert greb. Flere anmeldelser beskriver tydelige forbedringer i forhold til standardkabler og fremragende værdi, mens det annoncerede stikdesign skuffer nogle købere, og ét setup gav brum med en pladespiller. Samlet leverer kablerne en fyldig, neutral til varm lyd og imponerende ydeevne til prisen.",
    "headlines": {
-    "clean, balanced and immersive sound": {
-     "sentimentAnalysis": "Kablerne beskrives med god, neutral, afbalanceret, ren, varm og rummelig lyd samt tydeligere diskant og en medrivende gengivelse.",
-     "simpleTitle": "Ren, afbalanceret og medrivende lyd",
+    "balanced, detailed and spacious sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en klar, neutral eller varm klangbalance med forbedret diskant, flere detaljer og større rumlighed.",
+     "simpleTitle": "Balanceret, detaljeret og rumlig lyd",
      "bias": "positive",
-     "key": "sound_quality",
-     "groupId": "0dac6293-6ea2-4ee4-96f8-4038a4432e72"
+     "key": "sound",
+     "groupId": "d52c7d21-96a3-4e81-a553-66e69b193eca"
     },
     "solid construction and secure connections": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver solid konstruktion, pæn finish og stik, der sidder fast og fungerer som forventet.",
+     "sentimentAnalysis": "Anmeldelserne roser kablet for at være solidt, pænt udført, pålideligt og sidde fast.",
      "simpleTitle": "Solid konstruktion og sikre forbindelser",
      "bias": "positive",
-     "key": "build_quality",
-     "groupId": "4f52effa-98f0-4d90-b8e4-88a965f2abe0"
+     "key": "build",
+     "groupId": "a059c888-53f1-4d8e-a98d-4a901459ff18"
     },
     "excellent value for the price": {
-     "sentimentAnalysis": "Flere anmeldelser vurderer kablet som meget pengene værd, rimeligt prissat og med stærk ydeevne i forhold til prisen.",
+     "sentimentAnalysis": "Flere anmeldelser vurderer kablet som attraktivt prissat og meget tilfredsstillende i forhold til ydelsen.",
      "simpleTitle": "Fremragende værdi til prisen",
      "bias": "positive",
      "key": "value",
-     "groupId": "87b88a15-ae53-4e79-8686-516b2042cd2a"
+     "groupId": "6417ddf3-108a-46cf-a7c2-d1aaf21a4141"
     },
-    "plug appearance does not match the images": {
-     "sentimentAnalysis": "De medfølgende mørke plastikstik kritiseres for at se mindre attraktive ud end de lysegrønne metalfarvede stik, der vises online og på emballagen.",
-     "simpleTitle": "Stikkenes udseende svarer ikke til billederne",
+    "audible improvement over standard cables": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver en mærkbar forbedring af klarhed, balance eller musikalsk indlevelse i forhold til simple kabler.",
+     "simpleTitle": "Hørbar forbedring i forhold til standardkabler",
+     "bias": "positive",
+     "key": "sound",
+     "groupId": "d52c7d21-96a3-4e81-a553-66e69b193eca"
+    },
+    "plug appearance falls short of the photos": {
+     "sentimentAnalysis": "Anmeldelserne kritiserer de mørke plastikhætter, fordi produktbilleder og emballage viser lysere metalgrønne stik.",
+     "simpleTitle": "Stikkenes udseende lever ikke op til billederne",
      "bias": "negative",
-     "key": "appearance",
-     "groupId": "6ca8cbc6-da88-4431-b994-fead7c840199"
+     "key": "build",
+     "groupId": "a059c888-53f1-4d8e-a98d-4a901459ff18"
     }
    },
    "grouping": {
-    "0dac6293-6ea2-4ee4-96f8-4038a4432e72": {
+    "d52c7d21-96a3-4e81-a553-66e69b193eca": {
      "title": "Lydkvalitet",
-     "id": "0dac6293-6ea2-4ee4-96f8-4038a4432e72",
+     "id": "d52c7d21-96a3-4e81-a553-66e69b193eca",
      "references": [
       "9268cc75-9199-4d1c-bc7b-80598b86cf25",
-      "69bc3c73-6f68-42b9-ad4d-709ae424e418",
-      "cda1577c-4698-4625-8729-7ee1b45499ae",
       "c064a387-e9e1-4302-ac2a-4e7501aa343c",
       "5e16b891-4f12-410c-83b8-fd7e47181158",
-      "44f8e460-5208-4100-9585-b54177985171",
-      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
       "6a7f2690-5e61-491f-ad35-8e2f9f9bad34",
       "5fa29e30-ba07-428b-a79b-05053376eec5",
+      "d46aee7f-1dc7-4cbd-a4c5-8e568ae4bb68",
       "76eea446-8c62-4db1-a39d-0b3f17ba3cde",
       "e95be396-9ce8-4439-bfac-4fff280ba1d7",
       "f12075ee-8207-471d-8cb3-8fcf8f8743c0",
@@ -844,39 +847,32 @@
       "861dd9a8-241c-4937-9aa7-1d6a35170d23"
      ]
     },
-    "4f52effa-98f0-4d90-b8e4-88a965f2abe0": {
+    "a059c888-53f1-4d8e-a98d-4a901459ff18": {
      "title": "Byggekvalitet",
-     "id": "4f52effa-98f0-4d90-b8e4-88a965f2abe0",
+     "id": "a059c888-53f1-4d8e-a98d-4a901459ff18",
      "references": [
       "9268cc75-9199-4d1c-bc7b-80598b86cf25",
       "17ac1969-338b-4021-ba0e-16fe147aa15f",
-      "44f8e460-5208-4100-9585-b54177985171",
-      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
-      "76eea446-8c62-4db1-a39d-0b3f17ba3cde",
       "d4426b3c-8a8d-47b3-aa72-a17a64bc39a2",
       "1ddb52e1-1662-4a13-ab60-b082974a0e26",
-      "fed1c471-356d-4c4c-aa3a-8fb7e75d9075",
-      "0c153137-40ba-44c5-a88f-ef049fce00b4"
+      "69bc3c73-6f68-42b9-ad4d-709ae424e418",
+      "cda1577c-4698-4625-8729-7ee1b45499ae",
+      "44f8e460-5208-4100-9585-b54177985171",
+      "30e85871-9ee0-4c1f-99a3-1108ee5a1b54",
+      "76eea446-8c62-4db1-a39d-0b3f17ba3cde"
      ]
     },
-    "87b88a15-ae53-4e79-8686-516b2042cd2a": {
+    "6417ddf3-108a-46cf-a7c2-d1aaf21a4141": {
      "title": "Værdi for pengene",
-     "id": "87b88a15-ae53-4e79-8686-516b2042cd2a",
+     "id": "6417ddf3-108a-46cf-a7c2-d1aaf21a4141",
      "references": [
-      "7eb882ed-c157-4ad7-ae6e-2d5336cc649e",
       "c064a387-e9e1-4302-ac2a-4e7501aa343c",
       "5e16b891-4f12-410c-83b8-fd7e47181158",
       "23c1f521-5dfc-4f66-9689-771bfde147b5",
-      "e95be396-9ce8-4439-bfac-4fff280ba1d7"
-     ]
-    },
-    "6ca8cbc6-da88-4431-b994-fead7c840199": {
-     "title": "Udseende",
-     "id": "6ca8cbc6-da88-4431-b994-fead7c840199",
-     "references": [
       "69bc3c73-6f68-42b9-ad4d-709ae424e418",
       "cda1577c-4698-4625-8729-7ee1b45499ae",
-      "f12075ee-8207-471d-8cb3-8fcf8f8743c0"
+      "e95be396-9ce8-4439-bfac-4fff280ba1d7",
+      "6a7f2690-5e61-491f-ad35-8e2f9f9bad34"
      ]
     }
    },

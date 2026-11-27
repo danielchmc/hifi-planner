@@ -117,7 +117,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 9,
+     "availableQuantity": 8,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -347,11 +347,11 @@
      "productCode": "AQCARBONCOX2,0"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "description": "Forventes på lager søndag den 06. december",
+     "deliveryDate": "2026-12-06T00:00:00Z",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "inventoryStatusType": "notInStockAtpDate"
     },
     "images": [
      {

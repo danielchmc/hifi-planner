@@ -834,6 +834,25 @@
    "hifiPlanner": []
   },
   {
+   "type": "TV-beslag",
+   "keys": {
+    "TvBracket": 12
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 12
+   },
+   "count": 13,
+   "bundles": 0,
+   "outlet": 1,
+   "products": 12,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 13
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
    "type": "Hjemmebio-system",
    "keys": {
     "HomeCinemaSystem": 11
@@ -848,25 +867,6 @@
    "inCatalogue": 0,
    "variantAxes": {
     "none": 12
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "TV-beslag",
-   "keys": {
-    "TvBracket": 11
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 11
-   },
-   "count": 12,
-   "bundles": 0,
-   "outlet": 1,
-   "products": 11,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 12
    },
    "mapped": null,
    "hifiPlanner": []
@@ -1279,25 +1279,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Justérbart TV vægbeslag",
-   "keys": {
-    "AdjustableWallmount": 7
-   },
-   "cats": {
-    "Tilbehør > TV tilbehør": 7
-   },
-   "count": 7,
-   "bundles": 0,
-   "outlet": 0,
-   "products": 7,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 7
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Optisk kabel",
    "keys": {
     "Opticalcabel": 6
@@ -1418,6 +1399,25 @@
    "variantAxes": {
     "colorOptions": 4,
     "none": 2
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Justérbart TV vægbeslag",
+   "keys": {
+    "AdjustableWallmount": 6
+   },
+   "cats": {
+    "Tilbehør > TV tilbehør": 6
+   },
+   "count": 6,
+   "bundles": 0,
+   "outlet": 0,
+   "products": 6,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 6
    },
    "mapped": null,
    "hifiPlanner": []
@@ -1885,26 +1885,6 @@
    "hifiPlanner": []
   },
   {
-   "type": "Høretelefoner",
-   "keys": {
-    "Headphone": 3
-   },
-   "cats": {
-    "Høretelefoner > On-ear / over-ear høretelefoner": 3
-   },
-   "count": 4,
-   "bundles": 3,
-   "outlet": 1,
-   "products": 0,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 1,
-    "none": 3
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
    "type": "Micro RGB TV",
    "keys": {
     "MicroRGB": 4
@@ -2087,6 +2067,25 @@
    "inCatalogue": 0,
    "variantAxes": {
     "colorOptions": 3
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
+   "type": "Høretelefoner",
+   "keys": {
+    "Headphone": 3
+   },
+   "cats": {
+    "Høretelefoner > On-ear / over-ear høretelefoner": 3
+   },
+   "count": 3,
+   "bundles": 3,
+   "outlet": 0,
+   "products": 0,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "none": 3
    },
    "mapped": null,
    "hifiPlanner": []

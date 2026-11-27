@@ -253,7 +253,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 29,
+     "availableQuantity": 26,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -331,7 +331,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 41,
+     "availableQuantity": 39,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -409,7 +409,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 6,
-     "availableQuantity": 27,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -584,78 +584,70 @@
   "bundleRelations": [],
   "variantNavigationType": "sizeSelector",
   "reviews": {
-   "summary": "AQCINN48HDMI leverer et imponerende skarpt og levende billede samt varm, ren og dynamisk lyd med tydelige forbedringer i forhold til standardkabler. HDMI 2.1-ydeevnen og den stabile signaloverførsel gør kablet særligt attraktivt til moderne hjemmebio- og gaming-systemer. Den førsteklasses konstruktion føles solid, men det meget stive kabel og den høje pris kan gøre installationen mindre praktisk.",
+   "summary": "AQCINN48HDMI giver en markant forbedring af billede og lyd med skarpe, medrivende billeder, dybere bas samt renere og mere dynamisk lyd. HDMI 2.1- og eARC-understøttelse gør kablet særligt velegnet til moderne tv, spillekonsoller og hjemmebiografer. Den høje byggekvalitet og ydeevne bliver værdsat, selv om det stive kabel og den høje pris dæmper begejstringen lidt.",
    "headlines": {
-    "sharper, more vivid picture": {
-     "sentimentAnalysis": "Kablet roses gentagne gange for et skarpere, renere og mere levende billede med dybere farver.",
-     "simpleTitle": "Skarpere og mere levende billede",
+    "sharper picture and cleaner, more immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver synligt skarpere billeder og renere, mere detaljeret lyd end med tidligere kabler eller standardkabler.",
+     "simpleTitle": "Skarpere billede og renere, mere medrivende lyd",
      "bias": "positive",
-     "key": "picture",
-     "groupId": "54c09d6b-4eac-4e60-904a-bf1c74e280d9"
-    },
-    "cleaner, deeper and more dynamic sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver hørbare forbedringer i klarhed, basdybde og dynamik, så lyden bliver renere og mere medrivende.",
-     "simpleTitle": "Renere, dybere og mere dynamisk lyd",
-     "bias": "positive",
-     "key": "sound",
-     "groupId": "d6197c6f-aa9f-4415-aa1b-4daafa020716"
+     "key": "picture_sound",
+     "groupId": "32e6fc71-5b42-49ea-b4d5-cda092d5dbf1"
     },
     "very stiff and difficult to route": {
-     "sentimentAnalysis": "Kablets stivhed er den mest gennemgående kritik og gør bøjninger, håndtering og skjult installation vanskelig.",
+     "sentimentAnalysis": "Gentagne anmeldelser fremhæver den store stivhed, som gør bøjninger og skjult kabelføring vanskelig.",
      "simpleTitle": "Meget stift og svært at føre",
      "bias": "negative",
-     "key": "stiffness",
-     "groupId": "2bcbe5dd-a12d-4fbc-a4ba-f8145e98ba0a"
+     "key": "cable_flexibility",
+     "groupId": "45193c87-8f24-4d3b-8eb5-bfc8e62ce473"
     },
-    "premium price limits the value": {
-     "sentimentAnalysis": "Flere anmeldelser betragter kablet som dyrt, selv om den fremragende ydeevne eller tydelige forbedringer anerkendes.",
-     "simpleTitle": "Den høje pris begrænser værdien",
+    "premium price, usually seen as worthwhile": {
+     "sentimentAnalysis": "Trods den høje pris anser flere anmeldelser kablet for pengene værd eller som god værdi i forhold til ydeevnen.",
+     "simpleTitle": "Høj pris, som regel pengene værd",
+     "bias": "positive",
+     "key": "price_value",
+     "groupId": "2040112c-cf05-4c50-a7a0-02fd8514c195"
+    },
+    "price feels excessive for digital signal transfer": {
+     "sentimentAnalysis": "Nogle anmeldelser finder kablet dyrt og stiller spørgsmål ved, om ydeevnen retfærdiggør merprisen i forhold til billigere alternativer.",
+     "simpleTitle": "Prisen virker høj for digital signaloverførsel",
      "bias": "negative",
-     "key": "value",
-     "groupId": "bee03cc7-2a47-4182-bfa8-cf1d7ce7e54d"
+     "key": "price_value",
+     "groupId": "2040112c-cf05-4c50-a7a0-02fd8514c195"
+    },
+    "deeper bass and greater dynamics": {
+     "sentimentAnalysis": "Kablet tilskrives mere fylde i bassen samt en mere dynamisk og musikalsk engagerende gengivelse.",
+     "simpleTitle": "Dybere bas og større dynamik",
+     "bias": "positive",
+     "key": "picture_sound",
+     "groupId": "32e6fc71-5b42-49ea-b4d5-cda092d5dbf1"
     }
    },
    "grouping": {
-    "54c09d6b-4eac-4e60-904a-bf1c74e280d9": {
-     "title": "Billedkvalitet",
-     "id": "54c09d6b-4eac-4e60-904a-bf1c74e280d9",
+    "32e6fc71-5b42-49ea-b4d5-cda092d5dbf1": {
+     "title": "Billed- og lydkvalitet",
+     "id": "32e6fc71-5b42-49ea-b4d5-cda092d5dbf1",
      "references": [
       "f5926654-0230-4a8d-9b9b-bf2c937403f6",
       "69b50f09-5db8-4f8a-a387-1bf952d127a6",
-      "a62739b0-d9d2-4feb-9f44-c1d2ddc31574",
-      "0b8bead3-41d0-464d-88be-dd4d1d3d8a62",
-      "ad4251d7-7249-4dd6-905d-4c48dadc9f5f",
-      "203ab4fe-e66e-4f91-b6e2-db0cb9b9c6bd",
-      "10ec694e-15eb-4771-b4de-61c3e8758ddd",
-      "981b49aa-52e5-4795-b048-afa4f86711d0",
-      "9da9d38c-542a-4025-97e0-efdd9744e6b0",
-      "b7d01aac-89d1-4363-8d81-306b81aadfeb",
-      "32eb8392-c671-4404-83ca-985b2d756f0b",
-      "22bcbd4b-3623-449d-b960-821670b13432",
       "eb01d27a-acfc-4145-9ac7-6426abbcd838",
-      "a7019237-3ae6-47bc-b8ef-a7a3ce92dd56"
-     ]
-    },
-    "d6197c6f-aa9f-4415-aa1b-4daafa020716": {
-     "title": "Lydkvalitet",
-     "id": "d6197c6f-aa9f-4415-aa1b-4daafa020716",
-     "references": [
-      "f5926654-0230-4a8d-9b9b-bf2c937403f6",
       "a62739b0-d9b2-4feb-9f44-c1d2ddc31574",
       "0b8bead3-41d0-464d-88be-dd4d1d3d8a62",
       "ad4251d7-7249-4dd6-905d-4c48dadc9f5f",
+      "22bcbd4b-3623-449d-b960-821670b13432",
       "203ab4fe-e66e-4f91-b6e2-db0cb9b9c6bd",
       "10ec694e-15eb-4771-b4de-61c3e8758ddd",
       "869caeec-8ff9-45ff-913b-951d4d071b9f",
+      "981b49aa-52e5-4795-b048-afa4f86711d0",
       "30a30792-13d3-4fde-a6af-53ebb6dd0432",
       "2bd3f4b7-e091-4f42-838d-3a526988cf85",
+      "32eb8392-c671-4404-83ca-985b2d756f0b",
       "9da9d38c-542a-4025-97e0-efdd9744e6b0",
       "b7d01aac-89d1-4363-8d81-306b81aadfeb"
      ]
     },
-    "2bcbe5dd-a12d-4fbc-a4ba-f8145e98ba0a": {
-     "title": "Kablets fleksibilitet",
-     "id": "2bcbe5dd-a12d-4fbc-a4ba-f8145e98ba0a",
+    "45193c87-8f24-4d3b-8eb5-bfc8e62ce473": {
+     "title": "Kabel fleksibilitet",
+     "id": "45193c87-8f24-4d3b-8eb5-bfc8e62ce473",
      "references": [
       "75c3f26d-b4e0-4ebf-a0f5-b3c596b102a8",
       "83bceff0-ec2b-4e99-acca-4ed2c3697b9b",
@@ -666,13 +658,12 @@
       "1c39a0e8-7363-43c0-98ef-8ee72faba6b2"
      ]
     },
-    "bee03cc7-2a47-4182-bfa8-cf1d7ce7e54d": {
+    "2040112c-cf05-4c50-a7a0-02fd8514c195": {
      "title": "Pris og værdi",
-     "id": "bee03cc7-2a47-4182-bfa8-cf1d7ce7e54d",
+     "id": "2040112c-cf05-4c50-a7a0-02fd8514c195",
      "references": [
+      "702bcf20-d502-48a6-94ae-b59367687be7",
       "1c39a0e8-7363-43c0-98ef-8ee72faba6b2",
-      "2bd3f4b7-e091-4f42-838d-3a526988cf85",
-      "32eb8392-c671-4404-83ca-985b2d756f0b",
       "9da9d38c-542a-4025-97e0-efdd9744e6b0",
       "b7d01aac-89d1-4363-8d81-306b81aadfeb",
       "774e3c14-fab4-46a3-8a4e-1944e553ff8a",

@@ -150,7 +150,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 58,
+     "availableQuantity": 55,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -406,41 +406,48 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQCINNCOX roses som et velbygget digitalt kabel med varm, detaljeret og slagkraftig lyd. Kablet giver en roligere, mere rummelig og medrivende gengivelse med kraftigere bas og bedre opløsning end optiske forbindelser. Nem tilslutning, flot udførelse og god værdi for pengene gør kablet til en overbevisende opgradering af kompatible lydsystemer.",
+   "summary": "AQCINNCOX leverer en varm, detaljeret og omsluttende lydopgradering med punchy bas og et mere åbent, afslappet lydbillede. Solid konstruktion, flot finish, nem håndtering og god værdi gør kablet til et overbevisende valg til digitale lydsystemer. Klarere opløsning, afbalanceret tonalitet og præcis signaloverførsel skaber en særligt tilfredsstillende lytteoplevelse.",
    "headlines": {
-    "more detail and a more spacious soundstage": {
-     "sentimentAnalysis": "Kablet roses for at gengive flere detaljer, forbedre opløsningen og skabe et roligere, mere luftigt lydbillede.",
-     "simpleTitle": "Flere detaljer og et mere rummeligt lydbillede",
+    "clearer detail and resolution": {
+     "sentimentAnalysis": "Kablet roses gentagne gange for bedre detaljer, opløsning og klarhed.",
+     "simpleTitle": "Klarere detaljer og opløsning",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "570135a4-5f4b-40bf-9b6b-009862a0e866"
+     "key": "clearer-detail",
+     "groupId": "e41fc6b8-dac0-4c24-9d9a-55e56601473b"
     },
-    "solid and attractive construction": {
-     "sentimentAnalysis": "Kablet opfattes som solidt, flot udført, pænt og fleksibelt.",
-     "simpleTitle": "Solid og flot udførelse",
-     "bias": "positive",
-     "key": "build-quality",
-     "groupId": "bb8833b8-f6c8-40ef-885b-8269c5b121ce"
-    },
-    "good value for the price": {
-     "sentimentAnalysis": "Kablet opfattes som en prisvenlig opgradering med stærk ydeevne i forhold til prisen.",
+    "good value for money": {
+     "sentimentAnalysis": "Kablet opfattes som en overkommelig og givtig opgradering med stærk ydelse til prisen.",
      "simpleTitle": "God værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "c272ec90-0c93-40ce-bbe8-d20c41b0169e"
+     "key": "good-value",
+     "groupId": "29483eba-f495-46ae-9188-1aeb60871771"
     },
-    "stronger bass and balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne beskriver fyldigere bas, afbalanceret klang og en generelt forbedret musikgengivelse.",
-     "simpleTitle": "Kraftigere bas og afbalanceret lyd",
+    "solid construction and attractive finish": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver solid konstruktion, flot finish og et fleksibelt fysisk design.",
+     "simpleTitle": "Solid konstruktion og flot finish",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "570135a4-5f4b-40bf-9b6b-009862a0e866"
+     "key": "solid-finish",
+     "groupId": "d9d414cb-0926-40b5-9752-305d0642f99a"
+    },
+    "punchier bass and a more spacious soundstage": {
+     "sentimentAnalysis": "Lydgengivelsen beskrives som mere rummelig, luftig og basrig efter skift fra optiske forbindelser.",
+     "simpleTitle": "Mere punchy bas og et mere rummeligt lydbillede",
+     "bias": "positive",
+     "key": "bass-soundstage",
+     "groupId": "e41fc6b8-dac0-4c24-9d9a-55e56601473b"
+    },
+    "easy connection and handling": {
+     "sentimentAnalysis": "Kablet anses for nemt at tilslutte og enkelt at bruge.",
+     "simpleTitle": "Nem tilslutning og håndtering",
+     "bias": "positive",
+     "key": "easy-use",
+     "groupId": "20ad23e4-9856-453a-bf24-ce9874cb6ac8"
     }
    },
    "grouping": {
-    "570135a4-5f4b-40bf-9b6b-009862a0e866": {
+    "e41fc6b8-dac0-4c24-9d9a-55e56601473b": {
      "title": "Lydkvalitet",
-     "id": "570135a4-5f4b-40bf-9b6b-009862a0e866",
+     "id": "e41fc6b8-dac0-4c24-9d9a-55e56601473b",
      "references": [
       "6cd6945c-599a-48f9-a1b6-9d391643779b",
       "1ad9c8e9-b919-499c-84c2-278aab4def85",
@@ -449,7 +456,6 @@
       "75a2bd70-c0d7-417a-aeb0-09bd3af4e532",
       "6add7b18-7a72-4130-b348-61eb949cf0d2",
       "2fe2c4f1-82ac-4282-b023-0680c3808b3f",
-      "f1bc42ab-e1b1-486d-b281-0cb2a4165dd7",
       "65880789-7d1b-4e18-b007-ee4a8c159bd2",
       "28924c42-6055-4774-8022-ebd5129c0432",
       "41b2723d-4ab5-4fce-b5d9-d09caa0df4dd",
@@ -457,22 +463,22 @@
       "b55220cc-3f48-4f85-969c-5512727e563d"
      ]
     },
-    "bb8833b8-f6c8-40ef-885b-8269c5b121ce": {
+    "d9d414cb-0926-40b5-9752-305d0642f99a": {
      "title": "Byggekvalitet",
-     "id": "bb8833b8-f6c8-40ef-885b-8269c5b121ce",
+     "id": "d9d414cb-0926-40b5-9752-305d0642f99a",
      "references": [
+      "33fcb6b0-e04c-443a-ba75-b1622c12882f",
       "3d149c4d-7a9d-443f-9027-f915ce21c9e1",
       "cd9618f8-2818-420c-8b8f-adede9c3c21e",
       "a887010c-3d70-430b-b45f-5765998e043b",
       "b937a9d9-92a2-4881-9770-89a630a7a735",
       "8e5b9327-c20f-4fa7-a41e-5de9eeffeb89",
-      "b55220cc-3f48-4f85-969c-5512727e563d",
       "7a2dadd6-09b8-4808-84c0-f3d8ae777585"
      ]
     },
-    "c272ec90-0c93-40ce-bbe8-d20c41b0169e": {
+    "29483eba-f495-46ae-9188-1aeb60871771": {
      "title": "Værdi for pengene",
-     "id": "c272ec90-0c93-40ce-bbe8-d20c41b0169e",
+     "id": "29483eba-f495-46ae-9188-1aeb60871771",
      "references": [
       "1ad9c8e9-b919-499c-84c2-278aab4def85",
       "270bac87-3fad-4476-b2b3-9cdc7925efee",
@@ -480,17 +486,26 @@
       "41b2723d-4ab5-4fce-b5d9-d09caa0df4dd",
       "c509836c-ab93-4d0b-9136-d25e4db26891"
      ]
+    },
+    "20ad23e4-9856-453a-bf24-ce9874cb6ac8": {
+     "title": "Brugervenlighed",
+     "id": "20ad23e4-9856-453a-bf24-ce9874cb6ac8",
+     "references": [
+      "cc875664-3603-41c0-84b4-27e6e9c9b7ae",
+      "28924c42-6055-4774-8022-ebd5129c0432",
+      "7a2dadd6-09b8-4808-84c0-f3d8ae777585"
+     ]
     }
    },
-   "rating": 4.6986301369863,
-   "count": 73,
-   "reviewCount": 27,
+   "rating": 4.7027027027027,
+   "count": 74,
+   "reviewCount": 28,
    "distribution": {
     "1": 1,
     "2": 1,
     "3": 1,
     "4": 13,
-    "5": 57
+    "5": 58
    }
   },
   "brandName": "AudioQuest",

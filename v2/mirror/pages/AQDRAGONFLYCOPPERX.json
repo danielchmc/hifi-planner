@@ -47,19 +47,19 @@
     "DALIIO12",
     "AUDMM100",
     "AUDLCD2CLASSIC",
-    "AUDLCD2CLASSICCB",
     "AUDLCDX",
     "AUDLCDXC",
-    "AUDMM500"
+    "AUDMM500",
+    "AUDLCD2CLASSICCB"
    ],
    "isOutlet": "false"
   },
   "recommendedAccessories": {
    "productCodes": [
+    "AQJITTERBUGFMJ",
     "AQEVERGREENMJIN",
     "AQGOLDENGATEMJIN",
-    "ESSCL1MJINX",
-    "AQJITTERBUGFMJ"
+    "ESSCL1MJINX"
    ],
    "isOutlet": "false"
   },
@@ -73,6 +73,15 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Stereo USB høretelefon-forstærker / DAC \nKan bruges både til computer og mobile enheder (Windows/Mac/Linux/iOS/Android) \nMaks. udgangspænding: 2,1 volt\nAfspiller audiosignaler op til 24-bit/96 kHz (PCM stereo) \nD/A-konverter/forstærker: 32-bit ESS Sabre ES9218\nAnalog audio-ud: L/R (stereo minijack) \nUSB-C til USB-C kabel medfølger (10 cm)\nForgyldte kontaktflader\nMål: 1,9 x 1,2 x 5,7 cm (BxHxD)\nVægt: 18 gram\nFarve: Kobber  "
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
@@ -83,15 +92,6 @@
      {
       "term": "Udgang (andet)",
       "value": "USB A, USB C"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Stereo USB høretelefon-forstærker / DAC \nKan bruges både til computer og mobile enheder (Windows/Mac/Linux/iOS/Android) \nMaks. udgangspænding: 2,1 volt\nAfspiller audiosignaler op til 24-bit/96 kHz (PCM stereo) \nD/A-konverter/forstærker: 32-bit ESS Sabre ES9218\nAnalog audio-ud: L/R (stereo minijack) \nUSB-C til USB-C kabel medfølger (10 cm)\nForgyldte kontaktflader\nMål: 1,9 x 1,2 x 5,7 cm (BxHxD)\nVægt: 18 gram\nFarve: Kobber  "
      }
     ]
    },
@@ -120,6 +120,12 @@
    "text": "Se alt fra kategorien: Høretelefon-forstærker",
    "url": "/horetelefoner/horetelefon-forstarker/",
    "id": 79118
+  },
+  "stockItemAlternative": {
+   "save": "200,-",
+   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=AQDRAGONFLYCOPPERX",
+   "availableQuantity": 1,
+   "lowestPrice": "1.799,-"
   },
   "variants": [
    {
@@ -180,7 +186,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 25,
-     "availableQuantity": 198,
+     "availableQuantity": 179,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -222,41 +228,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQDragonFlyCopperX leverer en varm, klar og meget detaljeret opgradering i forhold til tidligere DragonFly-modeller med fyldig bas, bløde diskanttoner og en afbalanceret, medrivende gengivelse. Den kompakte DAC og hovedtelefonforstærker fungerer særligt godt med telefoner, computere samt gode hovedtelefoner eller højttalere og leverer høj lydstyrke med næsten ingen hørbar forvrængning. Den gode mobilitet, enkle betjening og stærke værdi gør CopperX til en begejstrende anbefaling til både hverdagslytning og mere ambitiøse lydanlæg.",
+   "summary": "AQDragonFlyCopperX leverer varm, detaljeret og rummelig lyd med kontant bas, behagelige høje toner og imponerende klarhed. Den kompakte DAC og hovedtelefonforstærker betragtes bredt som en markant opgradering i forhold til tidligere DragonFly-modeller og driver både hovedtelefoner og højttalere med autoritet. Nem transport, bred enhedskompatibilitet og god værdi gør produktet særligt attraktivt til musikfokuserede anlæg.",
    "headlines": {
-    "a clear improvement over DragonFly Cobalt": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver CopperX som en klar og værdifuld opgradering fra Cobalt.",
-     "simpleTitle": "En klar forbedring i forhold til DragonFly Cobalt",
+    "a clear upgrade over earlier DragonFly models": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver udtrykkeligt produktet som en markant forbedring i forhold til Cobalt eller Red.",
+     "simpleTitle": "En klar opgradering i forhold til tidligere DragonFly-modeller",
      "bias": "positive",
-     "key": "cobalt-upgrade",
-     "groupId": "025e07de-590f-49d0-8252-c64ff416042c"
+     "key": "upgrade",
+     "groupId": "f086d4f1-b67c-4b2b-9d26-668b487b7ccd"
     },
-    "detailed, clear and balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne roser mere detalje, klarhed, nuancer og balance i musikken.",
-     "simpleTitle": "Detaljeret, klar og afbalanceret lyd",
+    "a spacious, detailed and balanced presentation": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en levende, rummelig, klar, detaljeret og velafbalanceret musikgengivelse.",
+     "simpleTitle": "En rummelig, detaljeret og afbalanceret gengivelse",
      "bias": "positive",
-     "key": "detailed-clear-balanced",
-     "groupId": "d1952a49-e805-420d-932b-566bcf5cdbfe"
+     "key": "sound",
+     "groupId": "19d0fbe8-d87f-4492-a5fa-1ef6f8503b80"
     },
-    "small and easy to carry": {
-     "sentimentAnalysis": "Det kompakte design og den praktiske mobilitet bliver gentagne gange rost.",
-     "simpleTitle": "Lille og nem at tage med",
+    "clean, powerful output at high volume": {
+     "sentimentAnalysis": "Forstærkeren roses for dyb bas, rolige høje toner, høj effekt og næsten uhørlig forvrængning.",
+     "simpleTitle": "Ren og kraftfuld lyd ved høj lydstyrke",
      "bias": "positive",
-     "key": "compact-portable",
-     "groupId": "55afa129-ca19-4aa9-ac9b-0375f7407b75"
+     "key": "sound",
+     "groupId": "19d0fbe8-d87f-4492-a5fa-1ef6f8503b80"
     },
-    "rich bass and smooth treble": {
-     "sentimentAnalysis": "Klangbalancen beskrives som blød og røragtig med dyb bas og rolige høje toner.",
-     "simpleTitle": "Fyldig bas og blød diskant",
+    "small enough for effortless portable use": {
+     "sentimentAnalysis": "Det kompakte design værdsættes gentagne gange for nem transport og brug med mobile enheder.",
+     "simpleTitle": "Lille nok til nem mobil brug",
      "bias": "positive",
-     "key": "rich-tonality",
-     "groupId": "d1952a49-e805-420d-932b-566bcf5cdbfe"
+     "key": "portability",
+     "groupId": "8ea5ee6b-ef5b-4358-bd09-0dd191747dc0"
+    },
+    "premium performance that justifies the price": {
+     "sentimentAnalysis": "Produktet anses for pengene værd, fordi ydelsen klarer sig godt mod langt dyrere alternativer.",
+     "simpleTitle": "Premiumydelse, der retfærdiggør prisen",
+     "bias": "positive",
+     "key": "value",
+     "groupId": "99156d3f-cf6f-4a38-ad48-4397d5386178"
     }
    },
    "grouping": {
-    "d1952a49-e805-420d-932b-566bcf5cdbfe": {
+    "19d0fbe8-d87f-4492-a5fa-1ef6f8503b80": {
      "title": "Lydkvalitet",
-     "id": "d1952a49-e805-420d-932b-566bcf5cdbfe",
+     "id": "19d0fbe8-d87f-4492-a5fa-1ef6f8503b80",
      "references": [
       "2a6ecb3f-eedf-457f-86b6-b84a143eb04d",
       "8f02b872-4f86-489b-9412-ccac7f17d71e",
@@ -267,40 +280,49 @@
       "73f39282-96f9-4678-a6d7-6f229fc876ef",
       "c96e6a6d-771b-41d2-8dc3-188c9f28feba",
       "dc593dba-18de-48f4-bc17-8fc7e3dd83a3",
-      "aa7cadaa-eecf-4b5b-809a-d0a63b24b488"
+      "aa7cadaa-eecf-4b5b-809a-d0a63b24b488",
+      "937f9aa6-f611-4d73-a327-635a0e6a0da4"
      ]
     },
-    "025e07de-590f-49d0-8252-c64ff416042c": {
-     "title": "Forbedring i forhold til tidligere modeller",
-     "id": "025e07de-590f-49d0-8252-c64ff416042c",
+    "f086d4f1-b67c-4b2b-9d26-668b487b7ccd": {
+     "title": "Opgradering i forhold til tidligere modeller",
+     "id": "f086d4f1-b67c-4b2b-9d26-668b487b7ccd",
      "references": [
       "2a6ecb3f-eedf-457f-86b6-b84a143eb04d",
       "8f02b872-4f86-489b-9412-ccac7f17d71e",
       "61a65f50-d577-4ca0-bc04-4c477ea79867",
       "b1206b52-73f3-4cff-9015-0880194e1390",
       "bde9d569-a58e-4640-a7e0-0f48b6bc5869",
-      "1d487edb-ef25-44b6-9bf3-6ef71aa3eeb2"
+      "1d487edb-ef25-44b6-9bf3-6ef71aa3eaeb2"
      ]
     },
-    "55afa129-ca19-4aa9-ac9b-0375f7407b75": {
+    "8ea5ee6b-ef5b-4358-bd09-0dd191747dc0": {
      "title": "Mobilitet og størrelse",
-     "id": "55afa129-ca19-4aa9-ac9b-0375f7407b75",
+     "id": "8ea5ee6b-ef5b-4358-bd09-0dd191747dc0",
      "references": [
       "d2266b6c-d07a-499a-bd4b-af419664687d",
       "73f39282-96f9-4678-a6d7-6f229fc876ef",
       "aa7cadaa-eecf-4b5b-809a-d0a63b24b488"
      ]
+    },
+    "99156d3f-cf6f-4a38-ad48-4397d5386178": {
+     "title": "Værdi for pengene",
+     "id": "99156d3f-cf6f-4a38-ad48-4397d5386178",
+     "references": [
+      "73f39282-96f9-4678-a6d7-6f229fc876ef",
+      "937f9aa6-f611-4d73-a327-635a0e6a0da4"
+     ]
     }
    },
-   "rating": 4.91666666666667,
-   "count": 24,
-   "reviewCount": 15,
+   "rating": 4.93103448275862,
+   "count": 29,
+   "reviewCount": 18,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 2,
-    "5": 22
+    "5": 27
    }
   },
   "boxContent": [

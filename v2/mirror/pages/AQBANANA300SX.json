@@ -126,7 +126,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 384,
+     "availableQuantity": 368,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -146,48 +146,41 @@
   "testGroups": [],
   "bundleRelations": [],
   "reviews": {
-   "summary": "AQBANANA300SX-stik giver en varm, kontant og medrivende opgradering gennem solid konstruktion og pålidelige forbindelser. Sølvbelagte kontakter sikrer en klar og energisk signaloverførsel, mens monteringen generelt er enkel og brugervenlig. Den fremragende værdi for pengene og det praktiske design gør disse bananstik til et stærkt anbefalet valg til højttalersystemer.",
+   "summary": "AQBANANA300SX-bananstikkene roses bredt for høj kvalitet, stabilitet og pålidelighed samt for nem montering og sikre forbindelser. Sølvbelægningen værdsættes især for sin gode ledeevne og evnen til at bevare en klar, punchy og omsluttende lyd. Produktet giver fremragende værdi, selv om den medfølgende L-formede unbrakonøgle gør monteringen lidt mindre behagelig.",
    "headlines": {
     "solid, high-quality construction": {
-     "sentimentAnalysis": "Stikkene beskrives gentagne gange som stabile, solide, vellavede og af høj kvalitet.",
+     "sentimentAnalysis": "Stikkene beskrives gentagne gange som stabile, solide og af høj kvalitet.",
      "simpleTitle": "Solid konstruktion i høj kvalitet",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "ff3a9d18-5935-4e57-bf63-b96ff6002b99"
+     "key": "build",
+     "groupId": "f1bceb73-66da-4de3-b75a-58fc6e1aa7ae"
     },
-    "easy, user-friendly installation": {
-     "sentimentAnalysis": "Flere anmeldelser roser den ligetil, enkle og brugervenlige monteringsproces.",
-     "simpleTitle": "Enkel og brugervenlig montering",
+    "easy installation and secure connections": {
+     "sentimentAnalysis": "Monteringen opleves som enkel, og de færdige forbindelser er pålidelige.",
+     "simpleTitle": "Nem montering og sikre forbindelser",
      "bias": "positive",
-     "key": "easy-installation",
-     "groupId": "794cdbe0-0904-43ce-b658-a33ff163c3f9"
+     "key": "easy",
+     "groupId": "0c3e0139-7a45-4439-be79-13d0733299d2"
     },
-    "reliable, effective connections": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver god ledningsevne, at stikkene fungerer som tiltænkt, og en fast forbindelse til lydudstyr.",
-     "simpleTitle": "Pålidelige og effektive forbindelser",
+    "strong conductivity and clean sound": {
+     "sentimentAnalysis": "Stikkene roses for effektiv ledeevne og for at forbedre eller bevare lydkvaliteten.",
+     "simpleTitle": "God ledeevne og ren lyd",
      "bias": "positive",
-     "key": "reliable-connections",
-     "groupId": "19f58958-82ef-4b77-b79b-173b08fb00c5"
+     "key": "conductivity",
+     "groupId": "749002ab-5495-4022-b019-eb2ed1510b3a"
     },
-    "silver plating improves sound and conductivity": {
-     "sentimentAnalysis": "Sølvbelagte stik får æren for at give et mere levende stereobillede, bedre ledningsevne end guld og mindre lydforringelse end andre stiktyper.",
-     "simpleTitle": "Sølvbelægning forbedrer lyd og ledningsevne",
+    "silver plating is a valuable touch": {
+     "sentimentAnalysis": "Sølvbelægningen opfattes som en meningsfuld funktion og en attraktiv ekstra detalje.",
+     "simpleTitle": "Sølvbelægningen er en værdifuld detalje",
      "bias": "positive",
-     "key": "silver-performance",
-     "groupId": "19f58958-82ef-4b77-b79b-173b08fb00c5"
-    },
-    "the L-shaped Allen key limits handling comfort": {
-     "sentimentAnalysis": "En anmeldelse kritiserer det L-formede værktøj, mens en anden rapporterer om en defekt skrueforbindelse, der måtte udskiftes. Den generelt enkle montering har derfor enkelte mindre svagheder.",
-     "simpleTitle": "Den L-formede unbrakonøgle gør håndteringen vanskeligere",
-     "bias": "negative",
-     "key": "tool-design",
-     "groupId": "794cdbe0-0904-43ce-b658-a33ff163c3f9"
+     "key": "silver-benefit",
+     "groupId": "566a6298-b5a1-4c2c-a095-a6f1ad8c7586"
     }
    },
    "grouping": {
-    "ff3a9d18-5935-4e57-bf63-b96ff6002b99": {
+    "f1bceb73-66da-4de3-b75a-58fc6e1aa7ae": {
      "title": "Byggekvalitet",
-     "id": "ff3a9d18-5935-4e57-bf63-b96ff6002b99",
+     "id": "f1bceb73-66da-4de3-b75a-58fc6e1aa7ae",
      "references": [
       "fdab5fd5-dae0-4451-b375-119f56b50c5c",
       "22c53652-48d5-4765-9f8f-88efa1ffc74c",
@@ -200,23 +193,30 @@
       "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
      ]
     },
-    "19f58958-82ef-4b77-b79b-173b08fb00c5": {
-     "title": "Forbindelsesydelse",
-     "id": "19f58958-82ef-4b77-b79b-173b08fb00c5",
-     "references": [
-      "fdab5fd5-dae0-4451-b375-119f56b50c5c",
-      "583696ed-2c52-4b8d-8f93-223f77f1aadf",
-      "28870c2a-a8a4-4d40-8f6d-0c2f6af2be56",
-      "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
-     ]
-    },
-    "794cdbe0-0904-43ce-b658-a33ff163c3f9": {
+    "0c3e0139-7a45-4439-be79-13d0733299d2": {
      "title": "Montering",
-     "id": "794cdbe0-0904-43ce-b658-a33ff163c3f9",
+     "id": "0c3e0139-7a45-4439-be79-13d0733299d2",
      "references": [
       "59b0334c-9ee0-4371-a4d3-1ed176d8b1b0",
       "d1c0f9e2-e64b-4ca7-88bb-4f87cdca7a6a",
       "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
+     ]
+    },
+    "749002ab-5495-4022-b019-eb2ed1510b3a": {
+     "title": "Forbindelseskvalitet",
+     "id": "749002ab-5495-4022-b019-eb2ed1510b3a",
+     "references": [
+      "fdab5fd5-dae0-4451-b375-119f56b50c5c",
+      "28870c2a-a8a4-4d40-8f6d-0c2f6af2be56",
+      "47f2ff3b-b90d-48f6-8c43-6d90865a5292"
+     ]
+    },
+    "566a6298-b5a1-4c2c-a095-a6f1ad8c7586": {
+     "title": "Sølvbelægning",
+     "id": "566a6298-b5a1-4c2c-a095-a6f1ad8c7586",
+     "references": [
+      "28870c2a-a8a4-4d40-8f6d-0c2f6af2be56",
+      "d1c0f9e2-e64b-4ca7-88bb-4f87cdca7a6a"
      ]
     }
    },
