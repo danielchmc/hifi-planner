@@ -202,7 +202,7 @@
   "stockItemAlternative": {
    "save": "400,-",
    "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=ARGSA2X",
-   "availableQuantity": 2,
+   "availableQuantity": 1,
    "lowestPrice": "3.399,-"
   },
   "variants": [
@@ -260,7 +260,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 44,
+     "availableQuantity": 38,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -374,7 +374,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 207,
+     "availableQuantity": 195,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -497,7 +497,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 268,
+     "availableQuantity": 177,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -729,68 +729,68 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGSA2X roses bredt for sit kompakte skandinaviske design, sin kraftige og detaljerede lyd, de mange tilslutninger og det fremragende forhold mellem pris og kvalitet. Forstærkeren leverer varm, punchy og ofte fyldig lyd med praktisk automatisk inputskift, TV-integration og mulighed for subwoofer. De største svagheder er langsom opstart, ustabil eller kompliceret opsætning af Wi-Fi, Play-Fi og Bluetooth, lejlighedsvise HDMI- eller streamingproblemer samt manglende tonekontroller og equalizer.",
+   "summary": "ARGSA2X leverer varm, kraftfuld og detaljeret lyd med imponerende effekt i det kompakte format og løfter ofte både TV-, vinyl- og streamingafspilning. Det kompakte skandinaviske design, de mange tilslutninger og den automatiske indgangsregistrering gør forstærkeren meget praktisk og attraktiv til prisen. Trådløs opsætning, Play-Fi-betjening, langsom opstart og manglende tonekontroller er de største irritationspunkter, men helhedsindtrykket er meget positivt.",
    "headlines": {
+    "streaming and wireless setup can be troublesome": {
+     "sentimentAnalysis": "Wi-Fi, AirPlay, Bluetooth og Play-Fi roses, når forbindelsen fungerer, men opsætning, genforbindelse og appens brugervenlighed kritiseres ofte.",
+     "simpleTitle": "Streaming og trådløs opsætning kan være besværlig",
+     "bias": "negative",
+     "key": "wireless",
+     "groupId": "a6393628-7e54-4264-9d4f-b3ded5181371"
+    },
+    "startup and HDMI switching can be too slow or erratic": {
+     "sentimentAnalysis": "Flere anmeldelser nævner 5-30 sekunders opstartsforsinkelse samt ustabil HDMI- eller automatisk indgangsskift, som kan forstyrre TV-lytning.",
+     "simpleTitle": "Opstart og HDMI-skift kan være for langsomme eller ustabile",
+     "bias": "negative",
+     "key": "startup",
+     "groupId": "e6810c46-dec5-47ae-b643-1cccfa9b91b1"
+    },
+    "missing tone controls limit sound adjustment": {
+     "sentimentAnalysis": "Forstærkeren lyder godt fra start, men manglen på bas-, diskant- og equalizerindstillinger begrænser personlig tilpasning og matching med højttalere.",
+     "simpleTitle": "Manglende toneindstillinger begrænser lydtilpasningen",
+     "bias": "negative",
+     "key": "tone",
+     "groupId": "375f96a4-e45f-4e27-83c0-0e7b1287bb31"
+    },
+    "compact, attractive and easy to integrate": {
+     "sentimentAnalysis": "Det lille format, det rene skandinaviske design og den solide byggekvalitet værdsættes især til små rum og TV-møbler.",
+     "simpleTitle": "Kompakt, flot og nem at integrere",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "250f58f2-036d-4e17-b64b-be19c28a64f6"
+    },
     "warm, detailed and powerful sound": {
-     "sentimentAnalysis": "Forstærkeren beskrives gentagne gange som klar, detaljeret, balanceret, dynamisk og kraftfuld med fyldig bas og en omsluttende gengivelse trods det kompakte kabinet.",
+     "sentimentAnalysis": "Anmeldelserne roser gennemgående den fyldige, klare, dynamiske og detaljerede gengivelse med kraftig bas og rigelig effekt til forskellige højttalere og rumstørrelser.",
      "simpleTitle": "Varm, detaljeret og kraftfuld lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "bc76ba15-43d3-4de9-b802-6f7a6148c926"
-    },
-    "streaming setup and Play-Fi can be frustrating": {
-     "sentimentAnalysis": "Wi-Fi, Play-Fi, AirPlay og Bluetooth er ofte vanskelige at konfigurere eller ustabile, selv om nogle brugere oplever stabil streaming efter firmwareopdateringer eller den første opsætning.",
-     "simpleTitle": "Streamingopsætning og Play-Fi kan være frustrerende",
-     "bias": "negative",
-     "key": "streaming",
-     "groupId": "488030bc-a22a-413a-9577-1f90cd2b607b"
-    },
-    "compact, attractive and easy to use": {
-     "sentimentAnalysis": "Det kompakte skandinaviske format, det enkle design, den solide betjening og den ukomplicerede daglige brug fremhæves især til små rum og TV-møbler.",
-     "simpleTitle": "Kompakt, flot og nem at bruge",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "35397ddf-4339-470a-a5d4-ecf7955a1855"
-    },
-    "startup is noticeably slow": {
-     "sentimentAnalysis": "Flere anmeldelser nævner forsinkelser på cirka 5 til 30 sekunder, før lyden bliver tilgængelig, hvilket især er irriterende, når TV'et tændes.",
-     "simpleTitle": "Opstarten er mærkbart langsom",
-     "bias": "negative",
-     "key": "startup",
-     "groupId": "6730719f-bbcf-49f2-8c98-08ac9f84b975"
-    },
-    "no equalizer or tone adjustment": {
-     "sentimentAnalysis": "Manglen på bas-, diskant- og equalizerindstillinger begrænser muligheden for at tilpasse lyden til højttalere, rum og personlige præferencer.",
-     "simpleTitle": "Ingen equalizer eller tonekontrol",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "4a801e36-f3be-4a50-bec7-3db9f8a35803"
+     "groupId": "0819d323-b491-4c33-8971-3550b72e6f43"
     }
    },
    "grouping": {
-    "bc76ba15-43d3-4de9-b802-6f7a6148c926": {
+    "0819d323-b491-4c33-8971-3550b72e6f43": {
      "title": "Lydkvalitet",
-     "id": "bc76ba15-43d3-4de9-b802-6f7a6148c926",
+     "id": "0819d323-b491-4c33-8971-3550b72e6f43",
      "references": [
+      "7e90795a-7c27-4636-89f1-b87923773aa5",
       "f657f20b-1b8d-4b0d-b761-077e3b91b83c",
       "036808f8-554f-44e1-8f66-d47bfc3d4216",
       "fb3b0278-dd97-4f0d-ad1a-14d46f66883b",
       "10bb912a-3ec1-4d3c-9244-33cc91388a2f",
       "7ae240ca-5c82-4432-8c9b-1cb887cfebb5",
-      "5e5f3ba4-6073-46b0-a68b-65bdac07cd6f",
       "c9a3ff28-1360-48b6-aa96-0ad684623f84",
       "64205f48-d22b-44a1-b371-b32c7a9cde8a",
       "5c2a2810-a69b-44f1-914e-7db2986a2f86",
-      "e4ac753b-bf8a-44f1-b903-9f51cab7f787",
-      "41fbd673-9ff3-487b-af35-108902f9d93a",
       "6101147a-1b7f-4430-a247-a179b5e0ad9c",
-      "5aab72c5-6d35-4770-94ae-3da8112e12f3",
+      "5e5f3ba4-6073-46b0-a68b-65bdac07cd6f",
+      "21624e8b-a148-49ad-98c6-d512eab1adbe",
+      "438e0df3-9601-457c-b0b9-d35af2c6a081",
       "9cc1f2a8-87ef-4bc8-923d-f0f90038904c",
       "ee404944-5fb1-447f-9267-67ad6a85d895",
       "80e1fbed-72e5-493c-acfa-719c680658aa",
+      "7f4b747f-6f4d-4c84-9877-9c623f6fc88b",
       "f9a517fc-0469-4f95-b659-c27499241a3f",
       "06b386a3-d99c-4603-8f81-d194180d8cf9",
-      "107f1cef-b6e9-43f7-8ec0-97f96c1be55d",
       "defa5a5b-d267-4159-9b6f-1449e939b7e9",
       "6946e754-b6ee-473a-b2d0-5abeef908581",
       "cb59a41e-a8b5-413d-a9d3-6256738b9300",
@@ -810,19 +810,20 @@
       "a7a1ac2d-035b-4afc-95ba-c3afa91c8cf7",
       "7ad2798b-e159-4b15-8677-ac8ef0ea8e11",
       "cab3b6a3-20c9-4c5e-b98d-3567741d2a84",
+      "235cd29b-d059-41f3-9ad4-1fb4e9d0a036",
       "dd9686c2-39c9-4957-91a7-5c425e574b01",
       "6ab37519-f181-4e15-a193-e4a6634cea03",
       "2d97633e-9556-4d3f-8a67-67abcb8562ff",
       "24389cbd-a9ac-4fac-8308-fc2865885d67",
       "a25a357e-ef8e-4835-b40b-ad1ade51449d",
-      "ca80a924-52e7-44ea-bb50-cc716dbf9c3a",
       "00add30a-a6e8-4396-8acf-be37cdd3e474",
-      "d5364086-cb9e-4d54-b6b2-59f1e993155a"
+      "d5364086-cb9e-4d54-b6b2-59f1e993155a",
+      "0edcc284-27f6-4284-add7-757bd39a9380"
      ]
     },
-    "488030bc-a22a-413a-9577-1f90cd2b607b": {
-     "title": "Wi-Fi og streaming",
-     "id": "488030bc-a22a-413a-9577-1f90cd2b607b",
+    "a6393628-7e54-4264-9d4f-b3ded5181371": {
+     "title": "Trådløs forbindelse",
+     "id": "a6393628-7e54-4264-9d4f-b3ded5181371",
      "references": [
       "57a6daec-43e1-431c-be86-6e6aae49cd7e",
       "036808f8-554f-44e1-8f66-d47bfc3d4216",
@@ -831,81 +832,68 @@
       "f51d4031-8ee4-43ab-a553-d67c4b31447f",
       "e4ac753b-bf8a-44f1-b903-9f51cab7f787",
       "41fbd673-9ff3-487b-af35-108902f9d93a",
-      "fed2bce9-799c-4f6f-9003-d9e4355ff4de",
       "1abf5344-451f-4b76-a0fb-acabacb96dba",
-      "5e5f3ba4-6073-46b0-a68b-65bdac07cd6f",
       "5aab72c5-6d35-4770-94ae-3da8112e12f3",
       "17d916f6-d7ee-4628-a9e5-603674575dda",
       "23353ac4-e3ea-425a-b681-314edf1f91c7",
       "9db6661e-8c0d-4ad4-9a5d-69afe273e19d",
       "318a67a0-48cd-4bc0-8969-a8d8b17f699b",
       "21624e8b-a148-49ad-98c6-d512eab1adbe",
-      "438e0df3-9601-457c-b0b9-d35af2c6a081",
       "9cc1f2a8-87ef-4bc8-923d-f0f90038904c",
       "ced3b595-268e-44fc-9417-f53c1a3c2c11",
       "5a295fe9-a18c-4948-a46d-3d83c252120e",
       "eeff68a2-7673-48e8-98e5-80797c503b85",
       "5102403b-defb-48d0-9bd7-0a03cd344f15",
+      "7b1845e5-2dfd-4dcf-91de-8079b490fdee",
+      "d6d827f0-b773-42bd-9eb1-4e7c310e505e",
       "c8788a7a-4b7f-4cd2-b687-d8e0c78b7fbd",
       "e4c3c0fc-cda0-4ab2-ac1a-bdb3cf225601",
-      "c7c5b8e0-ebfb-4c0e-97fa-1d39f4b52fea",
       "cc2fa9d1-8893-4001-8128-da77a2d93c38",
       "1b6f13f6-1b92-42a4-8f82-0bf52c5e6e7e",
-      "c41f40e5-028f-4827-81c4-5b302bbe47b5",
-      "f4c0538f-0085-43a0-a005-1f593e4b64b5",
       "a3618e8b-e660-43b6-96b3-f348fdb315e6",
       "4bf037d2-346f-4092-a04b-25ab62679326",
       "235cd29b-d059-41f3-9ad4-1fb4e9d0a036",
       "dd9686c2-39c9-4957-91a7-5c425e574b01",
-      "6ab37519-f181-4e15-a193-e4a6634cea03",
-      "2d97633e-9556-4d3f-8a67-67abcb8562ff",
-      "a25a357e-ef8e-4835-b40b-ad1ade51449d",
-      "b54538ab-1f35-4e68-878d-b7945ae4e720"
+      "ba2976fc-a56d-4657-95d1-afa90e4ad011",
+      "f4c0538f-0085-43a0-a005-1f593e4b64b5",
+      "6ab37519-f181-4e15-a193-e4a6634cea03"
      ]
     },
-    "35397ddf-4339-470a-a5d4-ecf7955a1855": {
+    "250f58f2-036d-4e17-b64b-be19c28a64f6": {
      "title": "Design og størrelse",
-     "id": "35397ddf-4339-470a-a5d4-ecf7955a1855",
+     "id": "250f58f2-036d-4e17-b64b-be19c28a64f6",
      "references": [
       "7cdff17e-fb92-4edd-a13c-8080bb0642e9",
-      "5da3bbe7-6a5f-4925-92db-4fe27d361203",
       "10bb912a-3ec1-4d3c-9244-33cc91388a2f",
+      "5da3bbe7-6a5f-4925-92db-4fe27d361203",
       "f517b7f4-be36-4959-a319-bde511de6f06",
-      "6cf0aef7-f7f5-4511-a2ab-720d110153ee",
       "528b81ac-e328-4604-a8f4-7f1c93f568f2",
       "4c4f0776-d70d-4d5a-9791-25a4ea425ac9",
+      "6cf0aef7-f7f5-4511-a2ab-720d110153ee",
       "318a67a0-48cd-4bc0-8969-a8d8b17f699b",
       "438e0df3-9601-457c-b0b9-d35af2c6a081",
       "ee404944-5fb1-447f-9267-67ad6a85d895",
       "80e1fbed-72e5-493c-acfa-719c680658aa",
       "7f4b747f-6f4d-4c84-9877-9c623f6fc88b",
-      "f9a517fc-0469-4f95-b659-c27499241a3f",
-      "defa5a5b-d267-4159-9b6f-1449e939b7e9",
-      "c7488c6e-d7bb-44a5-88bb-0faf90ff73e0",
-      "d6d827f0-b773-42bd-9eb1-4e7c310e505e",
-      "bf3392af-8784-4b31-a78f-74ad0881ef12",
-      "ab0b162b-de4d-4b28-a0ef-e73f1e4937f6",
-      "3157c8d6-bcba-4473-803f-856cc0f41910",
       "e013dc8b-6700-45fb-a796-9e7946f5510b",
+      "c7488c6e-d7bb-44a5-88bb-0faf90ff73e0",
+      "3157c8d6-bcba-4473-803f-856cc0f41910",
       "33cdef83-9338-4e93-b807-902228000329",
-      "a7a1ac2d-035b-4afc-95ba-c3afa91c8cf7",
       "cab3b6a3-20c9-4c5e-b98d-3567741d2a84",
-      "24389cbd-a9ac-4fac-8308-fc2865885d67",
-      "00add30a-a6e8-4396-8acf-be37cdd3e474",
-      "44139145-1a7a-4390-8f3b-99c4e612c3d8"
+      "1b6f13f6-1b92-42a4-8f82-0bf52c5e6e7e",
+      "00add30a-a6e8-4396-8acf-be37cdd3e474"
      ]
     },
-    "6730719f-bbcf-49f2-8c98-08ac9f84b975": {
-     "title": "Opstart og inputskift",
-     "id": "6730719f-bbcf-49f2-8c98-08ac9f84b975",
+    "e6810c46-dec5-47ae-b643-1cccfa9b91b1": {
+     "title": "Opstart og indgangsskift",
+     "id": "e6810c46-dec5-47ae-b643-1cccfa9b91b1",
      "references": [
       "656305a1-801d-44f0-9f32-09a5301a4bb3",
       "5a8cb8eb-4039-4dbf-9326-b870fa8d2684",
       "a70c0a78-4322-49c0-b372-4b6f383b35d1",
-      "318a67a0-48cd-4bc0-8969-a8d8b17f699b",
-      "21624e8b-a148-49ad-98c6-d512eab1adbe",
-      "438e0df3-9601-457c-b0b9-d35af2c6a081",
       "eeff68a2-7673-48e8-98e5-80797c503b85",
+      "438e0df3-9601-457c-b0b9-d35af2c6a081",
+      "c6016ed4-2e07-4423-968f-630a2e9152c8",
       "c7c5b8e0-ebfb-4c0e-97fa-1d39f4b52fea",
       "88143c53-5ed7-4713-9b6d-62f7baf90f56",
       "e15d9524-cc65-410f-85e6-fe5c44240bad",
@@ -914,14 +902,12 @@
       "cb337999-fff9-43bb-9eae-333d102775c6",
       "dd9686c2-39c9-4957-91a7-5c425e574b01",
       "d5364086-cb9e-4d54-b6b2-59f1e993155a",
-      "c7488c6e-d7bb-44a5-88bb-0faf90ff73e0",
-      "5e5f3ba4-6073-46b0-a68b-65bdac07cd6f",
-      "235cd29b-d059-41f3-9ad4-1fb4e9d0a036"
+      "61dad35d-4030-44c3-8c87-3612c40bc94f"
      ]
     },
-    "4a801e36-f3be-4a50-bec7-3db9f8a35803": {
-     "title": "Tonekontroller",
-     "id": "4a801e36-f3be-4a50-bec7-3db9f8a35803",
+    "375f96a4-e45f-4e27-83c0-0e7b1287bb31": {
+     "title": "Toneindstillinger",
+     "id": "375f96a4-e45f-4e27-83c0-0e7b1287bb31",
      "references": [
       "9c311e4b-4904-4889-a0ea-868f7e941511",
       "318a67a0-48cd-4bc0-8969-a8d8b17f699b",
@@ -931,20 +917,20 @@
       "c7054ae7-0b61-490a-8f17-d25b63a87983",
       "58d0df23-fc3c-4073-8e8e-2708b2621f37",
       "b97e7c0b-e237-46f2-9232-15a5ec640c4a",
-      "6ab37519-f181-4e15-a193-e4a6634cea03",
-      "c41f40e5-028f-4827-81c4-5b302bbe47b5"
+      "c41f40e5-028f-4827-81c4-5b302bbe47b5",
+      "6ab37519-f181-4e15-a193-e4a6634cea03"
      ]
     }
    },
-   "rating": 4.40890688259109,
-   "count": 247,
-   "reviewCount": 117,
+   "rating": 4.4136546184739,
+   "count": 249,
+   "reviewCount": 118,
    "distribution": {
     "1": 5,
     "2": 1,
     "3": 29,
     "4": 65,
-    "5": 147
+    "5": 149
    }
   },
   "brandName": "Argon Audio",

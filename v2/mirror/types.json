@@ -66,6 +66,26 @@
    ]
   },
   {
+   "type": "Trådløst headset",
+   "keys": {
+    "Wirelessheadset": 35
+   },
+   "cats": {
+    "Høretelefoner > On-ear / over-ear høretelefoner": 35
+   },
+   "count": 37,
+   "bundles": 1,
+   "outlet": 2,
+   "products": 34,
+   "inCatalogue": 0,
+   "variantAxes": {
+    "colorOptions": 36,
+    "none": 1
+   },
+   "mapped": null,
+   "hifiPlanner": []
+  },
+  {
    "type": "Soundbar system/pakke",
    "keys": {
     "SoundbarSystem": 34
@@ -81,26 +101,6 @@
    "variantAxes": {
     "none": 35,
     "colorOptions": 1
-   },
-   "mapped": null,
-   "hifiPlanner": []
-  },
-  {
-   "type": "Trådløst headset",
-   "keys": {
-    "Wirelessheadset": 35
-   },
-   "cats": {
-    "Høretelefoner > On-ear / over-ear høretelefoner": 35
-   },
-   "count": 36,
-   "bundles": 1,
-   "outlet": 1,
-   "products": 34,
-   "inCatalogue": 0,
-   "variantAxes": {
-    "colorOptions": 35,
-    "none": 1
    },
    "mapped": null,
    "hifiPlanner": []
@@ -260,6 +260,30 @@
    ]
   },
   {
+   "type": "Soundbar",
+   "keys": {
+    "Soundbar": 26
+   },
+   "cats": {
+    "TV > Soundbar højtaler / TV-lyd": 26
+   },
+   "count": 28,
+   "bundles": 4,
+   "outlet": 3,
+   "products": 21,
+   "inCatalogue": 21,
+   "variantAxes": {
+    "colorOptions": 22,
+    "none": 4,
+    "sizeSelector": 1,
+    "dropDown": 1
+   },
+   "mapped": "cats",
+   "hifiPlanner": [
+    "Soundbar/TV Audio"
+   ]
+  },
+  {
    "type": "Subwoofer",
    "keys": {
     "Subwoofer": 27
@@ -279,30 +303,6 @@
    "mapped": "cats",
    "hifiPlanner": [
     "Subwoofers"
-   ]
-  },
-  {
-   "type": "Soundbar",
-   "keys": {
-    "Soundbar": 25
-   },
-   "cats": {
-    "TV > Soundbar højtaler / TV-lyd": 25
-   },
-   "count": 27,
-   "bundles": 4,
-   "outlet": 2,
-   "products": 21,
-   "inCatalogue": 21,
-   "variantAxes": {
-    "colorOptions": 21,
-    "none": 4,
-    "sizeSelector": 1,
-    "dropDown": 1
-   },
-   "mapped": "cats",
-   "hifiPlanner": [
-    "Soundbar/TV Audio"
    ]
   },
   {

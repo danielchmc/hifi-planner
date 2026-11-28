@@ -85,6 +85,33 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "2-vejs aktivt højtalersystem til skrivebord/computer\nMatlakeret finish\nIndbygget Klasse D-forstærker (4 x 40 watt RMS)\nIndbygget D/A-konverter til højkvalitets digital lyd fra computer \nMax opløsning: 24-bit/192 kHz\nStøjfri konstruktion (S/N 105 dB)\nBluetooth 5.1 med aptX HD, AAC og Low Latency \nLatency AUX / Optical / USB-C / Bluetooth: 10ms / 15ms / 15ms / 68ms (aptX LL)\nDiskant: 0,75” softdome med neodym-magnet \nBas/mellemtone: 3,5” long-throw \nSubwoofer-udgang\nIndgangsvælger, højre/venstre opsætning og finjustering af bas og diskant via knapper på bagside (±2 dB)\nEnergiforbrug tændt/standby: 7 watt/ < 0,5 watt \n2 meter dedikeret højtalerkabel til indbyrdes forbindelse og strømforsyning medfølger\nMål: 13,0 x 20,0 x 17,0 cm (inkl. terminaler) (BxHxD)\nVægt: 6,0 kg (sæt)"
+     }
+    ]
+   },
+   {
+    "index": 9,
+    "title": "Tilslutninger",
+    "content": [
+     {
+      "term": "Lydudgang",
+      "value": "Subwoofer-out"
+     },
+     {
+      "term": "Lydindgang",
+      "value": "Optisk, Analog RCA, USB C"
+     },
+     {
+      "term": "Trådløs overførsel",
+      "value": "Bluetooth-indgang, Bluetooth-udgang"
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Ydelse",
     "content": [
@@ -127,33 +154,6 @@
      {
       "term": "Brugsscenarier",
       "value": "TV, PC/Mac, Pladespiller, Subwoofer"
-     }
-    ]
-   },
-   {
-    "index": 9,
-    "title": "Tilslutninger",
-    "content": [
-     {
-      "term": "Lydudgang",
-      "value": "Subwoofer-out"
-     },
-     {
-      "term": "Lydindgang",
-      "value": "Optisk, Analog RCA, USB C"
-     },
-     {
-      "term": "Trådløs overførsel",
-      "value": "Bluetooth-indgang, Bluetooth-udgang"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "2-vejs aktivt højtalersystem til skrivebord/computer\nMatlakeret finish\nIndbygget Klasse D-forstærker (4 x 40 watt RMS)\nIndbygget D/A-konverter til højkvalitets digital lyd fra computer \nMax opløsning: 24-bit/192 kHz\nStøjfri konstruktion (S/N 105 dB)\nBluetooth 5.1 med aptX HD, AAC og Low Latency \nLatency AUX / Optical / USB-C / Bluetooth: 10ms / 15ms / 15ms / 68ms (aptX LL)\nDiskant: 0,75” softdome med neodym-magnet \nBas/mellemtone: 3,5” long-throw \nSubwoofer-udgang\nIndgangsvælger, højre/venstre opsætning og finjustering af bas og diskant via knapper på bagside (±2 dB)\nEnergiforbrug tændt/standby: 7 watt/ < 0,5 watt \n2 meter dedikeret højtalerkabel til indbyrdes forbindelse og strømforsyning medfølger\nMål: 13,0 x 20,0 x 17,0 cm (inkl. terminaler) (BxHxD)\nVægt: 6,0 kg (sæt)"
      }
     ]
    },
@@ -286,7 +286,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 193,
+     "availableQuantity": 181,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -402,7 +402,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 497,
+     "availableQuantity": 490,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -480,55 +480,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGSTUDIE3 leverer en usædvanligt klar, afbalanceret og dynamisk lyd fra et kompakt skrivebordskabinet med præcise diskanttoner, overbevisende detaljer og overraskende fyldig bas. Solid konstruktion, attraktivt design, fleksible tilslutninger og praktiske lydindstillinger gør højttalerne alsidige til musik, film, gaming og PC-brug. De største ulemper er manglen på en fysisk volumenkontrol, lejlighedsvise USB-C-kompatibilitetsproblemer og en upraktisk automatisk tænd/sluk-funktion.",
+   "summary": "ARGSTUDIE3 leverer en imponerende klar, afbalanceret og dynamisk lyd fra et kompakt skrivebordsdesign med tydelige diskanttoner, fyldig bas og mange detaljer. Solid konstruktion, flot design, fleksible tilslutninger og praktiske lydindstillinger gør højttalerne alsidige til musik, film, gaming og PC-brug. Enkelte begrænsninger består: Bassen kan virke beskeden for nogle, USB-C-kompatibiliteten kan være kræsen, og manglen på en fysisk volumeknap samt langsom automatisk opvågning giver lejlighedsvis irritation.",
    "headlines": {
-    "clear, balanced and highly detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare, afbalancerede, rene og detaljerede gengivelse samt det brede lydbillede og den høje dynamik.",
-     "simpleTitle": "Klar, afbalanceret og detaljeret lyd",
+    "clear, detailed and dynamic sound": {
+     "sentimentAnalysis": "Anmeldelserne roser konsekvent den klare, afbalancerede, detaljerede og dynamiske gengivelse med god rumfornemmelse og imponerende ydelse for den kompakte størrelse.",
+     "simpleTitle": "Klar, detaljeret og dynamisk lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "859e81b5-fe76-4527-80ae-4b010648994c"
+     "groupId": "32f6a4b3-863b-422b-8337-60282695087a"
     },
-    "premium construction and attractive compact design": {
-     "sentimentAnalysis": "Anmeldelserne beskriver højttalerne som solidt byggede, stabile, moderne og kompakte nok til skrivebord eller køkken.",
-     "simpleTitle": "Høj kvalitet og attraktivt kompakt design",
+    "premium construction and compact styling": {
+     "sentimentAnalysis": "Anmeldelserne beskriver højttalerne som solidt byggede, attraktive og ideelt dimensionerede til skriveborde og mindre rum.",
+     "simpleTitle": "Førsteklasses konstruktion og kompakt design",
      "bias": "positive",
      "key": "design",
-     "groupId": "9b33fdc8-76fa-4ade-8840-504792926684"
+     "groupId": "80c7df40-b014-44a1-8621-e86cde4a2ec2"
     },
-    "surprisingly powerful bass for a compact speaker": {
-     "sentimentAnalysis": "Flere anmeldelser fremhæver den fyldige, kraftige og overraskende stærke bas, selv om den kompakte størrelse naturligt sætter grænser.",
-     "simpleTitle": "Overraskende kraftig bas fra en kompakt højttaler",
+    "flexible connections and sound controls": {
+     "sentimentAnalysis": "Anmeldelserne værdsætter det brede udvalg af indgange, fjernbetjeningen samt de justerbare bas-, diskant- og lydindstillinger.",
+     "simpleTitle": "Fleksible tilslutninger og lydindstillinger",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "859e81b5-fe76-4527-80ae-4b010648994c"
+     "key": "connectivity",
+     "groupId": "fb84e7ec-98ee-438a-8e66-1a1283238786"
     },
-    "bass can feel too restrained": {
-     "sentimentAnalysis": "Et mindretal af anmeldelserne oplever, at bassen er begrænset i forhold til størrelsen, og antyder, at en subwoofer kan være ønskelig.",
-     "simpleTitle": "Bassen kan virke lidt tilbageholdende",
+    "bass can be limited for some listeners": {
+     "sentimentAnalysis": "Flere anmeldelser bemærker, at de kompakte kabinetter ikke kan levere ubegrænset bas, og nogle finder dybden beskeden trods anden ros for bastrykket.",
+     "simpleTitle": "Bassen kan virke begrænset for nogle lyttere",
      "bias": "negative",
      "key": "sound",
-     "groupId": "859e81b5-fe76-4527-80ae-4b010648994c"
+     "groupId": "32f6a4b3-863b-422b-8337-60282695087a"
     },
-    "missing physical volume control": {
-     "sentimentAnalysis": "To anmeldelser kritiserer specifikt, at fjernbetjeningen skal bruges, fordi højttaleren ikke har en fysisk volumeknap.",
-     "simpleTitle": "Manglende fysisk volumenkontrol",
+    "usB-C and automatic wake-up can frustrate": {
+     "sentimentAnalysis": "Nogle PC-brugere oplever upålidelig USB-C-kabelkompatibilitet, besværligt Bluetooth-valg og langsom automatisk opvågning.",
+     "simpleTitle": "USB-C og automatisk opvågning kan irritere",
      "bias": "negative",
-     "key": "controls",
-     "groupId": "366ad7c3-354e-4cff-9a61-53be99d6d59c"
-    },
-    "automatic power behavior is inconvenient": {
-     "sentimentAnalysis": "Anmeldelserne fortæller, at den automatiske aktivering reagerer for langsomt, og at statuslampen ikke kan slukkes helt, hvilket gør PC-brug mindre praktisk.",
-     "simpleTitle": "Den automatiske tænd/sluk-funktion er upraktisk",
-     "bias": "negative",
-     "key": "controls",
-     "groupId": "366ad7c3-354e-4cff-9a61-53be99d6d59c"
+     "key": "connectivity",
+     "groupId": "fb84e7ec-98ee-438a-8e66-1a1283238786"
     }
    },
    "grouping": {
-    "859e81b5-fe76-4527-80ae-4b010648994c": {
+    "32f6a4b3-863b-422b-8337-60282695087a": {
      "title": "Lydkvalitet",
-     "id": "859e81b5-fe76-4527-80ae-4b010648994c",
+     "id": "32f6a4b3-863b-422b-8337-60282695087a",
      "references": [
       "8373cf91-a255-43e7-a8aa-56a6fce0e809",
       "8ad14882-78b5-4905-93de-39c4b05a76a5",
@@ -538,6 +531,7 @@
       "1c27ab7c-1c62-49db-9166-14be6ba85c98",
       "d20538f4-a026-4886-bcaf-1508a63b15ae",
       "afb42540-d1ba-46e6-8056-7ebf7895de5b",
+      "3a99a88d-8f2a-4129-8808-1f4d603702d9",
       "158dd136-14d9-4283-9d05-cf9b0c974c11",
       "f1c61ff3-235f-45a1-b003-069fddd54c43",
       "a620b85c-753c-450f-b409-5a3524f3d250",
@@ -560,9 +554,9 @@
       "f9f85cfa-7a42-4622-a7e1-58e44d874955"
      ]
     },
-    "9b33fdc8-76fa-4ade-8840-504792926684": {
+    "80c7df40-b014-44a1-8621-e86cde4a2ec2": {
      "title": "Design og byggekvalitet",
-     "id": "9b33fdc8-76fa-4ade-8840-504792926684",
+     "id": "80c7df40-b014-44a1-8621-e86cde4a2ec2",
      "references": [
       "8ad14882-78b5-4905-93de-39c4b05a76a5",
       "1dfaccfa-2505-4271-b997-24cd6c60a664",
@@ -571,19 +565,23 @@
       "5bc2c625-b949-4266-a755-624d689437b8",
       "d2bf3264-c348-41fd-b68a-d9756bb533d6",
       "4c71bf51-0899-49bf-8ed7-ff51c09d7c36",
-      "ce4f4166-a0a5-4362-a5e3-ecf6f2089823"
+      "ce4f4166-a0a5-4362-a5e3-ecf6f2089823",
+      "f9f85cfa-7a42-4622-a7e1-58e44d874955"
      ]
     },
-    "366ad7c3-354e-4cff-9a61-53be99d6d59c": {
-     "title": "Betjening og styring",
-     "id": "366ad7c3-354e-4cff-9a61-53be99d6d59c",
+    "fb84e7ec-98ee-438a-8e66-1a1283238786": {
+     "title": "Tilslutninger og betjening",
+     "id": "fb84e7ec-98ee-438a-8e66-1a1283238786",
      "references": [
       "8ad14882-78b5-4905-93de-39c4b05a76a5",
-      "5bc2c625-b949-4266-a755-624d689437b8",
+      "afb42540-d1ba-46e6-8056-7ebf7895de5b",
+      "158dd136-14d9-4283-9d05-cf9b0c974c11",
+      "d2bf3264-c348-41fd-b68a-d9756bb533d6",
       "4d98c0a9-2af6-4d7c-b048-b07c6cc561d3",
-      "b9ec3df7-14df-47fe-85dd-99a171a6b652",
+      "3a98f1c2-fc18-49fd-a76c-3043dc8c517c",
       "ce4f4166-a0a5-4362-a5e3-ecf6f2089823",
-      "2b2e94fc-087b-449e-9929-505e31740722"
+      "2b2e94fc-087b-449e-9929-505e31740722",
+      "b9ec3df7-14df-47fe-85dd-99a171a6b652"
      ]
     }
    },

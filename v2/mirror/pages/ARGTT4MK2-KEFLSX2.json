@@ -22,7 +22,7 @@
    "eaef4ad0-3518-4c1c-a758-dd0b409358d7",
    "884da883-f849-4e45-837d-6869beeced59"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 279841,
@@ -106,7 +106,7 @@
    "code": "ARGTT4MK2-KEFLSX2",
    "ribbons": [
     {
-     "text": "Spar 14%",
+     "text": "Spar 21%",
      "ribbonType": "discount",
      "link": {
       "title": "",
@@ -153,15 +153,15 @@
     }
    ],
    "priceDetails": {
-    "price": 14867,
-    "priceFormatted": "14.867,-",
+    "price": 13667,
+    "priceFormatted": "13.667,-",
     "priceBefore": 17218,
     "priceBeforeFormatted": "17.218,-",
-    "priceSavingsFormatted": "2.351,-",
+    "priceSavingsFormatted": "3.551,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 14867,
+    "unitPrice": 13667,
     "unitPriceBefore": 17218
    },
    "bundleProducts": [
@@ -185,7 +185,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 747,
+        "availableQuantity": 678,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "229,-",
@@ -208,7 +208,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2109,
+        "availableQuantity": 1936,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "229,-",
@@ -231,7 +231,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 700,
+        "availableQuantity": 635,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "249,-",
@@ -254,7 +254,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 193,
+        "availableQuantity": 164,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "299,-",
@@ -277,7 +277,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 110,
+        "availableQuantity": 104,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "399,-",
@@ -289,55 +289,55 @@
      ],
      "parentProductCode": "ESSCL1MJINX",
      "reviews": {
-      "summary": "Et pålideligt og alsidigt kabel, der skaber rene forbindelser mellem kilder, højttalere, Sonos-systemer og forstærkere. Lyden forbliver klar, støjfri og fyldig, mens konstruktionen er solid, kablet fleksibelt og stikkene sikre. De største forbehold gælder lejlighedsvis kort længde, begrænset farveudvalg og en pris, som nogle synes er høj.",
+      "summary": "ESSCL1MJINX er et pålideligt og alsidigt kabel, der gør det nemt at forbinde pladespillere, cd-afspillere, computere, Sonos, soundbarer og højttalere. Forbindelsen sidder sikkert, kablet er generelt robust og fleksibelt, og lyden opleves som ren, varm og fyldig med god dæmpning af forstyrrelser. Enkelte købere synes, at kablet er for kort, og andre synes, at prisen er høj, men samlet giver kablet en enkel, elegant og medrivende lydløsning.",
       "headlines": {
-       "reliable connections across many audio setups": {
-        "sentimentAnalysis": "Kablet giver konsekvent enkle og problemfri forbindelser mellem forskellige lydkomponenter.",
-        "simpleTitle": "Pålidelige forbindelser til mange lydsystemer",
+       "reliable connections across many audio devices": {
+        "sentimentAnalysis": "Kablet giver konsekvent en enkel og problemfri forbindelse mellem forskellige kilder og højttalere.",
+        "simpleTitle": "Pålidelige forbindelser til mange lydenheder",
         "bias": "positive",
-        "key": "connection",
-        "groupId": "05a1449c-8c12-4009-9b4e-3b6c57852b26"
+        "key": "functionality",
+        "groupId": "70eb31cb-49db-4f5c-af2b-1e23cd3bf6f1"
        },
-       "solid, well-finished construction": {
-        "sentimentAnalysis": "Anmeldelserne fremhæver robuste materialer, god forarbejdning, flot finish og sikre forgyldte kontakter.",
-        "simpleTitle": "Solid og veludført konstruktion",
+       "solid construction and attractive finishes": {
+        "sentimentAnalysis": "Anmeldelserne beskriver kablet som af høj kvalitet, solidt, velbygget og stilfuldt, blandt andet med forgyldte kontakter og hvid finish.",
+        "simpleTitle": "Solid konstruktion og flot finish",
         "bias": "positive",
-        "key": "quality",
-        "groupId": "4e4b1543-09de-4617-81a8-0195120c992c"
+        "key": "build_quality",
+        "groupId": "411d7553-0846-4b90-8b03-c44247624cca"
        },
-       "clear, quiet and improved sound": {
-        "sentimentAnalysis": "Kablet forbindes med klar, ren og støjfri lyd samt mærkbare forbedringer af anlæggets lyd.",
-        "simpleTitle": "Klar, støjfri og forbedret lyd",
+       "clean, full and interference-free sound": {
+        "sentimentAnalysis": "Kablet forbindes med behagelig, fyldig lyd og transparent signaloverførsel uden hørbar støj eller knitren.",
+        "simpleTitle": "Ren, fyldig og støjfri lyd",
         "bias": "positive",
-        "key": "sound",
-        "groupId": "92eb2a4e-2312-4c24-a433-8a92f25d64fb"
+        "key": "sound_quality",
+        "groupId": "3d77f682-a173-4267-b795-a19bd97b0e8b"
        },
-       "flexible cable with useful length options": {
-        "sentimentAnalysis": "Kablet roses for at være blødt, fleksibelt og fås i længder, der passer til forskellige installationer.",
-        "simpleTitle": "Fleksibelt kabel med praktiske længder",
+       "flexible cable with effective interference control": {
+        "sentimentAnalysis": "Kablet roses for at være blødt, fleksibelt og effektivt til at dæmpe forstyrrelser, samtidig med at det ser pænt ud.",
+        "simpleTitle": "Fleksibelt kabel med effektiv støjdæmpning",
         "bias": "positive",
-        "key": "length",
-        "groupId": "6e922ab6-c44d-45d4-a8fd-fc4b1cb61911"
+        "key": "length_design",
+        "groupId": "28ff2f4f-16ef-4db4-9192-67b7986b1dd4"
        },
-       "some cables are too short": {
-        "sentimentAnalysis": "Flere anmeldelser advarer om, at den valgte kabellængde kan være utilstrækkelig, så omhyggelig opmåling er vigtig.",
-        "simpleTitle": "Nogle kabler er for korte",
+       "some installations need a longer cable": {
+        "sentimentAnalysis": "Flere købere fortæller, at den valgte kabellængde ikke var tilstrækkelig til deres opsætning.",
+        "simpleTitle": "Nogle installationer kræver et længere kabel",
         "bias": "negative",
-        "key": "length",
-        "groupId": "6e922ab6-c44d-45d4-a8fd-fc4b1cb61911"
+        "key": "length_design",
+        "groupId": "28ff2f4f-16ef-4db4-9192-67b7986b1dd4"
        },
-       "limited colour choice": {
-        "sentimentAnalysis": "Nogle anmeldelser efterlyser en sort version i stedet for den hvide udførelse.",
-        "simpleTitle": "Begrænset farveudvalg",
-        "bias": "negative",
-        "key": "length",
-        "groupId": "6e922ab6-c44d-45d4-a8fd-fc4b1cb61911"
+       "limited audible improvement for some systems": {
+        "sentimentAnalysis": "Kablet fungerer og sidder sikkert, men den hørbare forbedring er beskeden i nogle anlæg, og prisen kan føles høj.",
+        "simpleTitle": "Begrænset hørbar forbedring i nogle anlæg",
+        "bias": "meh",
+        "key": "sound_quality",
+        "groupId": "3d77f682-a173-4267-b795-a19bd97b0e8b"
        }
       },
       "grouping": {
-       "05a1449c-8c12-4009-9b4e-3b6c57852b26": {
-        "title": "Tilslutning og kompatibilitet",
-        "id": "05a1449c-8c12-4009-9b4e-3b6c57852b26",
+       "70eb31cb-49db-4f5c-af2b-1e23cd3bf6f1": {
+        "title": "Funktionalitet og kompatibilitet",
+        "id": "70eb31cb-49db-4f5c-af2b-1e23cd3bf6f1",
         "references": [
          "4d77ad71-acd9-4f0a-a496-00c9c0e7f19b",
          "5cc52393-6858-4e0a-82ed-8826d4e48458",
@@ -345,7 +345,6 @@
          "1bb9369f-c231-4428-b8ed-492e01749102",
          "28f897f8-b421-456e-9975-16518d596125",
          "cf0a4dfb-6670-4211-89ef-2d78ce1c022f",
-         "04b1a778-2992-4524-9428-25fefa17f7d5",
          "90686f9c-20ae-47f2-a58f-0f241d1cf019",
          "187931a2-38fc-46ac-8ab3-5cb97efd0622",
          "401b7e17-21d2-4c3a-b900-f14ba8884e10",
@@ -353,32 +352,39 @@
          "9eeaf7aa-c536-4c2f-846a-0058295e3bba",
          "01d46fa9-5406-4b0b-90a1-1c812a2ad4ee",
          "854e32a6-d8cd-42dc-95da-eb4de1be4476",
+         "d935baf1-fd0a-4d3c-8380-62d9fee2cfe7",
+         "4bb74187-601f-44ed-a3fc-60a36b54a324",
+         "1b193498-1a36-407b-a51d-9c06fd71f4f3",
+         "9422e34e-4f6e-476d-b922-52f25066552c",
+         "69224dc3-d86c-4b35-b3f9-eac1b5dfaeab",
          "6d715ff1-d5e7-4bd5-ad68-a4bb962019d5",
          "3f3113dd-77ea-4818-81f4-fd98e684da95",
-         "1b193498-1a36-407b-a51d-9c06fd71f4f3",
+         "33a0041d-ef45-4aa5-b7ae-4486692fcfb0",
          "1d018760-a674-4ac5-af22-e529bdab0660",
+         "7364c876-8ea0-4cf6-89f1-02f153a33094",
          "e3ce88fb-cc3a-4356-b814-44e8f62c74f1",
          "53b3af96-9ee3-41d4-944e-e3daba24fb50"
         ]
        },
-       "4e4b1543-09de-4617-81a8-0195120c992c": {
+       "411d7553-0846-4b90-8b03-c44247624cca": {
         "title": "Byggekvalitet",
-        "id": "4e4b1543-09de-4617-81a8-0195120c992c",
+        "id": "411d7553-0846-4b90-8b03-c44247624cca",
         "references": [
+         "58f54509-a3b4-4604-8c4f-f498369c8246",
          "59e2ea6c-cda3-4525-8c2b-1867cb7042fe",
          "2959090a-66cc-44b8-a669-4155f74e4d93",
          "1029ecb8-4bfb-476a-8d03-b507dda2d72f",
-         "4bb74187-601f-44ed-a3fc-60a36b54a324",
          "b8a762eb-45b5-4035-9a88-f3cd7ad23201",
          "036865e5-1bc0-479d-8441-e94162825723",
          "e7d25927-8fcf-4848-8d95-f798bb003c4f",
          "091fa1d9-89f4-473c-b5c1-5d511e4ab497",
-         "3a34b0f8-8638-4c19-b257-94c7f5040ea9"
+         "3a34b0f8-8638-4c19-b257-94c7f5040ea9",
+         "d2f1339c-dfe7-4d08-9030-98142b4d5930"
         ]
        },
-       "6e922ab6-c44d-45d4-a8fd-fc4b1cb61911": {
-        "title": "Længde og fleksibilitet",
-        "id": "6e922ab6-c44d-45d4-a8fd-fc4b1cb61911",
+       "28ff2f4f-16ef-4db4-9192-67b7986b1dd4": {
+        "title": "Længde og design",
+        "id": "28ff2f4f-16ef-4db4-9192-67b7986b1dd4",
         "references": [
          "dcc79ffc-5042-4fdf-b1c5-6041b06e1959",
          "ffda8225-04fb-4ead-9ffb-1f0b44760973",
@@ -391,29 +397,28 @@
          "e531531e-c0bf-4b23-a71a-80881f391790"
         ]
        },
-       "92eb2a4e-2312-4c24-a433-8a92f25d64fb": {
+       "3d77f682-a173-4267-b795-a19bd97b0e8b": {
         "title": "Lydkvalitet",
-        "id": "92eb2a4e-2312-4c24-a433-8a92f25d64fb",
+        "id": "3d77f682-a173-4267-b795-a19bd97b0e8b",
         "references": [
          "58f54509-a3b4-4604-8c4f-f498369c8246",
          "cf0a4dfb-6670-4211-89ef-2d78ce1c022f",
          "41adde6c-d775-4891-b653-b26c7992143e",
          "ffda8225-04fb-4ead-9ffb-1f0b44760973",
          "4bb74187-601f-44ed-a3fc-60a36b54a324",
-         "a65c0e88-8df4-42be-8b80-3ffc29abaab0",
          "ff5fea85-de77-4370-a975-53003111a367"
         ]
        }
       },
-      "rating": 4.65413533834586,
-      "count": 266,
+      "rating": 4.65543071161049,
+      "count": 267,
       "reviewCount": 81,
       "distribution": {
        "1": 4,
        "2": 1,
        "3": 17,
        "4": 39,
-       "5": 205
+       "5": 206
       }
      },
      "variantNavigationType": "sizeSelector"
@@ -435,11 +440,10 @@
         "productCode": "KEFLSX2AMBERHAZE"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 1,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "8.639,-",
        "priceRaw": 8639,
@@ -458,11 +462,10 @@
         "productCode": "KEFLSX2CARBONBLACK"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 22,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "8.639,-",
        "priceRaw": 8639,
@@ -482,11 +485,10 @@
         "productCode": "KEFLSX2SOUNDWAVE"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 05. december",
+        "deliveryDate": "2026-12-05T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 11,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "8.795,-",
        "priceRaw": 8795,
@@ -505,10 +507,11 @@
         "productCode": "KEFLSX2COTTONWHITE"
        },
        "inventoryStatus": {
-        "description": "Forventes på lager mandag den 30. november",
-        "deliveryDate": "2026-11-30T00:00:00Z",
+        "inStock": true,
+        "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "inventoryStatusType": "notInStockAtpDate"
+        "availableQuantity": 3,
+        "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "8.639,-",
        "priceRaw": 8639,
@@ -517,145 +520,7 @@
        "quantity": 1
       }
      ],
-     "parentProductCode": "KEFLSX2",
-     "reviews": {
-      "summary": "KEF LSX II leverer en bemærkelsesværdigt stor, klar og naturlig lyd fra en kompakt og stilfuld højttaler med tydelige vokaler, detaljerede instrumenter og tilfredsstillende bas i forhold til størrelsen. Trådløs streaming, mange tilslutningsmuligheder og fleksibel placering gør systemet særligt attraktivt til skrivebord, kontor, tv og mindre stuer. Den dybe bas kan være begrænset uden en subwoofer, mens appopsætning, lejlighedsvise forbindelsesproblemer og registreringskrav trækker lidt ned i en ellers fremragende oplevelse.",
-      "headlines": {
-       "crisp, natural and detailed sound": {
-        "sentimentAnalysis": "Højttalerne roses bredt for klar, naturlig, detaljeret og musikalsk gengivelse med tydelige vokaler og et bredt lydbillede.",
-        "simpleTitle": "Klar, naturlig og detaljeret lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "6311e0b8-463d-41b1-86da-ca8f31811085"
-       },
-       "remarkably big sound from a compact design": {
-        "sentimentAnalysis": "De kompakte størrelse og flotte finish forbindes gentagne gange med en overraskende stor og rumfyldende gengivelse.",
-        "simpleTitle": "Bemærkelsesværdigt stor lyd fra et kompakt design",
-        "bias": "positive",
-        "key": "design",
-        "groupId": "48e6e087-db88-407e-8bd3-a760fd4f3320"
-       },
-       "app setup and connections can be troublesome": {
-        "sentimentAnalysis": "Nogle ejere rapporterer om lejlighedsvise problemer med Wi-Fi, app, HDMI eller streaming, mens andre finder appregistrering og justering unødigt krævende.",
-        "simpleTitle": "Appopsætning og forbindelser kan give problemer",
-        "bias": "negative",
-        "key": "connectivity",
-        "groupId": "4ee3c157-46a4-4ecd-85a5-28a9a5739379"
-       },
-       "bass is satisfying but limited at the deepest frequencies": {
-        "sentimentAnalysis": "Flere anmeldelser finder bassen imponerende i forhold til kabinetstørrelsen, men anbefaler en subwoofer, hvis der ønskes ægte fuldtonegengivelse eller dybere bas.",
-        "simpleTitle": "Bassen er tilfredsstillende, men begrænset i de dybeste frekvenser",
-        "bias": "negative",
-        "key": "bass",
-        "groupId": "f10822c6-e2fd-43be-9435-25d028472f2c"
-       },
-       "versatile wireless and wired connectivity": {
-        "sentimentAnalysis": "Anmeldelser fremhæver de mange indgange, Wi-Fi-streaming, AirPlay og integration med tjenester som Spotify som store styrker.",
-        "simpleTitle": "Fleksible trådløse og kablede tilslutninger",
-        "bias": "positive",
-        "key": "connectivity",
-        "groupId": "4ee3c157-46a4-4ecd-85a5-28a9a5739379"
-       }
-      },
-      "grouping": {
-       "6311e0b8-463d-41b1-86da-ca8f31811085": {
-        "title": "Lydkvalitet",
-        "id": "6311e0b8-463d-41b1-86da-ca8f31811085",
-        "references": [
-         "ac11290a-8d0a-41a3-b004-c09798a04ff9",
-         "eba3d557-8b73-43e2-ab00-0525a48853e9",
-         "db5f53c5-646f-4f3f-a908-6a41217ac5af",
-         "6865539d-d744-4b7b-bd82-ad9b9b6a4d3e",
-         "5085b7a9-44f0-4eb1-932c-520b39bbad35",
-         "863a3d7b-e3f2-487f-bd49-30bd52398dec",
-         "999a0871-94bd-4d97-8341-96d874e7fcbb",
-         "56210cfe-38ac-46e3-9f2c-4dc6515db8e0",
-         "711f1848-9d43-416f-86bb-1af4e853fa41",
-         "f61e1d23-c749-4485-9f70-ffe98cacf450",
-         "6efc243c-47c6-4d38-bd25-748c4bb18eec",
-         "849aff62-c39f-48c0-93bf-d30d72d284c4",
-         "4ed86bcf-3bcd-47d7-a165-a85765ff42c4",
-         "5fcb6d56-7d0c-400b-a762-19f557351a09",
-         "a10c6b59-ab8d-4513-a4cc-8a3b32df0bca",
-         "63c4e815-259e-46ba-acfa-f1b2916489d5",
-         "4df0dfb1-8c1a-42ce-a3e5-077ec503a23a",
-         "f631e238-1d2c-4999-99cf-cea3b9046cde",
-         "16356489-0387-4f9a-a221-dbc07b55ffe2",
-         "01667af6-3055-4c87-860c-b2eee37f9b79",
-         "87219871-689f-4286-9b72-4a5c06a0a067",
-         "75744aab-6fd5-4a63-85f4-17ba68884f44",
-         "c6a15d86-851d-48bf-95b4-27c81d35635e",
-         "7c1f750a-da40-4427-ba80-8ae94fcadaf2",
-         "9a8d81c0-38ef-4dd2-b088-3ed8c53fa002",
-         "4990c5c2-ae73-4ee8-9866-3f197c11477f",
-         "cef8f693-8fd5-4ea3-a59c-495a1fb8cee7"
-        ]
-       },
-       "f10822c6-e2fd-43be-9435-25d028472f2c": {
-        "title": "Bas og subwoofer",
-        "id": "f10822c6-e2fd-43be-9435-25d028472f2c",
-        "references": [
-         "6865539d-d744-4b7b-bd82-ad9b9b6a4d3e",
-         "5085b7a9-44f0-4eb1-932c-520b39bbad35",
-         "231f3ab0-5e2f-49fb-90d2-4f6fa86a590d",
-         "575ea12c-09f2-49db-9149-c73079bd30ef",
-         "849aff62-c39f-48c0-93bf-d30d72d284c4",
-         "5fcb6d56-7d0c-400b-a762-19f557351a09",
-         "a10c6b59-ab8d-4513-a4cc-8a3b32df0bca",
-         "2164e2bd-3f12-42b3-baa9-383966d66738",
-         "63c4e815-259e-46ba-acfa-f1b2916489d5",
-         "87219871-689f-4286-9b72-4a5c06a0a067",
-         "75744aab-6fd5-4a63-85f4-17ba68884f44",
-         "c6a15d86-851d-48bf-95b4-27c81d35635e",
-         "7c1f750a-da40-4427-ba80-8ae94fcadaf2",
-         "2b0a660d-3328-4448-b38f-415221c7521d"
-        ]
-       },
-       "4ee3c157-46a4-4ecd-85a5-28a9a5739379": {
-        "title": "Tilslutning og opsætning",
-        "id": "4ee3c157-46a4-4ecd-85a5-28a9a5739379",
-        "references": [
-         "c435d524-5670-4937-81f7-da844dbb5b46",
-         "6865539d-d744-4b7b-bd82-ad9b9b6a4d3e",
-         "b04fa3e4-651a-4847-b775-2167b1c90ad6",
-         "575ea12c-09f2-49db-9149-c73079bd30ef",
-         "71f3facb-30db-4e67-bb75-dca1f77b173f",
-         "f61e1d23-c749-4485-9f70-ffe98cacf450",
-         "849aff62-c39f-48c0-93bf-d30d72d284c4",
-         "5fcb6d56-7d0c-400b-a762-19f557351a09",
-         "6c1897f0-aaab-4d8c-93b7-b1f2c481273d",
-         "2164e2bd-3f12-42b3-baa9-383966d66738",
-         "4df0dfb1-8c1a-42ce-a3e5-077ec503a23a",
-         "cad6a5b4-9949-414c-9ad2-664c0a1d4cfb",
-         "2b0a660d-3328-4448-b38f-415221c7521d",
-         "4990c5c2-ae73-4ee8-9866-3f197c11477f"
-        ]
-       },
-       "48e6e087-db88-407e-8bd3-a760fd4f3320": {
-        "title": "Design og størrelse",
-        "id": "48e6e087-db88-407e-8bd3-a760fd4f3320",
-        "references": [
-         "db5f53c5-646f-4f3f-a908-6a41217ac5af",
-         "863a3d7b-e3f2-487f-bd49-30bd52398dec",
-         "999a0871-94bd-4d97-8341-96d874e7fcbb",
-         "849aff62-c39f-48c0-93bf-d30d72d284c4",
-         "5fcb6d56-7d0c-400b-a762-19f557351a09",
-         "c6a15d86-851d-48bf-95b4-27c81d35635e",
-         "cef8f693-8fd5-4ea3-a59c-495a1fb8cee7"
-        ]
-       }
-      },
-      "rating": 4.77777777777778,
-      "count": 81,
-      "reviewCount": 44,
-      "distribution": {
-       "1": 1,
-       "2": 0,
-       "3": 1,
-       "4": 12,
-       "5": 67
-      }
-     }
+     "parentProductCode": "KEFLSX2"
     },
     {
      "brand": "Argon Audio",
@@ -677,11 +542,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 351,
+        "availableQuantity": 297,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.999,-",
-       "priceRaw": 5999,
+       "priceFormatted": "4.799,-",
+       "priceRaw": 4799,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -700,11 +565,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1042,
+        "availableQuantity": 922,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.999,-",
-       "priceRaw": 5999,
+       "priceFormatted": "4.799,-",
+       "priceRaw": 4799,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -723,11 +588,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1026,
+        "availableQuantity": 929,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.999,-",
-       "priceRaw": 5999,
+       "priceFormatted": "4.799,-",
+       "priceRaw": 4799,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -746,242 +611,39 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 487,
+        "availableQuantity": 457,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "5.999,-",
-       "priceRaw": 5999,
+       "priceFormatted": "4.799,-",
+       "priceRaw": 4799,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
       }
      ],
-     "parentProductCode": "ARGTT4MK2",
-     "reviews": {
-      "summary": "Argon TT-4 MK2 roses bredt for sin varme, detaljerede og medrivende lyd, især sammen med Ortofon 2M Blue-pickuppen. Den solide konstruktion, det elegante minimalistiske design og den gode værdi for pengene gør den til en meget tilfredsstillende opgradering for både nye og erfarne vinyllyttere. Opsætningen er som regel overkommelig, men manglen på automatisk løft eller stop ved pladens slutning kritiseres ofte, og enkelte nævner mindre mangler ved opsætning eller tilbehør.",
-      "headlines": {
-       "warm, detailed and immersive sound": {
-        "sentimentAnalysis": "Anmelderne beskriver gennemgående gengivelsen som varm, klar, rummelig, dynamisk og meget detaljeret. Ortofon 2M Blue får ofte æren for at hente flere informationer frem fra velkendte plader.",
-        "simpleTitle": "Varm, detaljeret og medrivende lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "bd602e09-e46d-4023-9247-ef41211f1eb1"
-       },
-       "no automatic stop at the end of a record": {
-        "sentimentAnalysis": "En tilbagevendende ulempe er den fuldt manuelle funktion ved pladens slutning: Tonearmen løfter sig ikke, og pladetallerkenen bliver ved med at dreje. Derfor forventer flere brugere automatisk stop i denne prisklasse.",
-        "simpleTitle": "Ingen automatisk stop ved pladens slutning",
-        "bias": "negative",
-        "key": "auto-stop",
-        "groupId": "616e0dea-307a-45fe-825d-c512b9db9c73"
-       },
-       "premium construction and stylish design": {
-        "sentimentAnalysis": "Pladespilleren beskrives gentagne gange som solid, velbygget, flot og minimalistisk, og materialer og finish gør den velegnet til at stå fremme i hjemmet.",
-        "simpleTitle": "Eksklusiv konstruktion og stilfuldt design",
-        "bias": "positive",
-        "key": "design",
-        "groupId": "3e39f2f9-7aac-4964-b812-daa64b8c95f3"
-       },
-       "setup is straightforward with guidance": {
-        "sentimentAnalysis": "De fleste kommentarer beskriver samling og daglig betjening som nem, især når manualen, opsætningsvideoen eller hjælp fra butikken følges.",
-        "simpleTitle": "Enkel opsætning med vejledning",
-        "bias": "positive",
-        "key": "setup",
-        "groupId": "1f38de88-202e-451a-a6cb-0af70a3d466a"
-       }
-      },
-      "grouping": {
-       "bd602e09-e46d-4023-9247-ef41211f1eb1": {
-        "title": "Lydkvalitet",
-        "id": "bd602e09-e46d-4023-9247-ef41211f1eb1",
-        "references": [
-         "7033765f-180b-4386-b7e1-2df11cd46431",
-         "cc1a85ca-3cb6-45a1-9d6a-ae78b36e93f4",
-         "da5e5b94-559a-4837-a378-bdd99266d4bc",
-         "4f5fd182-54b4-417c-8d85-4f8f47d2a8d7",
-         "8392ef15-ab48-49dd-9ea3-40a58f52acab",
-         "8ec190af-1147-4455-8ff6-8e4d69dd9087",
-         "77ac0455-20ea-4e35-b6c3-5e47f7bf78c2",
-         "5d3e9169-58da-4221-b248-b4ca1d619b0f",
-         "302a0e25-5241-409b-b377-6ded2924dd83",
-         "bdb9d836-d47e-4610-b260-98668ea6cc15",
-         "3cfb7818-93f5-4e6d-92a8-e3e35be7a85b",
-         "4b5c0b84-0c97-4c22-8f66-334916632a8d",
-         "6fa438c4-e459-404c-9012-8d0638a7861b",
-         "a9916392-2361-45a5-a8b4-e1db7599780b",
-         "c3a4ef4a-0e73-46c9-942b-a9d4eeaa50e8",
-         "e0414f16-bfb7-4f37-9138-a3bdf8578144",
-         "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
-         "abd632dd-735c-4767-90a3-779d5d0437f0",
-         "f75ffa31-1bd2-4e8c-908a-c342dbadf531",
-         "75a5d0be-e1e3-46ec-8fc0-dc5f0b0e02ec",
-         "b28f9267-4a9b-4f90-8027-df0997654b5a",
-         "b1abdb2c-68cb-4f1c-9b50-1dfe097a28b6",
-         "bd25ef92-4782-4b64-b988-897bd157eee4",
-         "10b67826-8fb8-4052-9026-9b6083f8c9d8",
-         "edcb4950-df1d-44f1-8d89-eb6b0154ef67",
-         "20af6f6b-c1ca-45a0-ae55-e2196649f448",
-         "08b50ffd-a183-4d6e-bcd0-6b7ce9d15787",
-         "a3cb0a40-dfd8-4375-a90e-cbb96b5e6d23",
-         "73792d4b-7c91-4b71-86b2-f3a34e268f34",
-         "4deaa2b6-8d55-482f-8947-abbf699d56b3",
-         "a37ad14d-ad57-4789-8330-91c7734fef74",
-         "8f6139c9-a5ac-45a9-a55c-6862eb71e721",
-         "0faea194-ba5f-48d4-91ca-a7917bc6fac5",
-         "04db8b0d-b3b8-4490-bab0-bf956a0c8d53",
-         "df599e3b-00d6-4ba7-b2af-b33fffab6675",
-         "574d73f2-9eb1-4b01-acdb-4f0fd91227df",
-         "eb0418a4-a51c-481f-8359-9308d13057b8",
-         "4342c046-acab-4d3e-a5f7-736b2d5a2d2a",
-         "6264d262-1bc7-41f7-84e8-0b2d21fe2dbb",
-         "3dfb5d80-f094-4d50-8941-992d5eb6fabb",
-         "84934be6-20fd-45e6-9473-123e45fc60ff",
-         "6551bf05-0f9c-4fd8-9918-653f42c2315a",
-         "cbbd57d7-9e4f-4097-8fcb-109665cff8a5",
-         "da417329-bcd3-4b17-b9b7-925b81824aae",
-         "1fdcc1f9-fc99-4678-ab60-f22cd6f9b9ec",
-         "13d9379d-319c-4c5d-831e-c9e98c12c690",
-         "89958df1-a84e-4f6d-83ac-71c8f1eb4a5c",
-         "810c491c-6417-4ff5-b52b-d3dae74a455f",
-         "1516b5cf-2cea-46f9-b46e-b2507af48ce7",
-         "47323d38-af4e-4cdb-9e02-42e969f7018b",
-         "a8a31f96-bdea-4895-a2c4-065a0551f834",
-         "8ac3e92e-79c4-4ddd-a12d-a460da741e45",
-         "20aded77-be25-4921-a9b8-75d313ee3c54",
-         "f30d3905-7193-4368-9311-20efdf75f582",
-         "4680e70c-9abf-45dc-9a82-43c342fd5e96",
-         "b20934e3-cb99-412f-a8f0-0b5834345ef0",
-         "a0867e95-2de2-4f3e-bea2-1a37378c0e9e",
-         "c8091dd1-eb48-48b4-9ae1-85a3e4f25b1e",
-         "0ba519f2-6457-4689-b475-c77e43ff329d",
-         "6ebd78c2-1636-4736-87eb-88152e11dc17",
-         "ae5ef9f3-bc5e-4f50-b4a6-fd1022874967",
-         "4bf08a23-d927-4e2c-aa57-beb586e94c50",
-         "0dcd9a14-f730-4bb0-9045-4e245f0320fe",
-         "dd832411-ecb2-4efb-9d02-42bcc9985212"
-        ]
-       },
-       "3e39f2f9-7aac-4964-b812-daa64b8c95f3": {
-        "title": "Design og byggekvalitet",
-        "id": "3e39f2f9-7aac-4964-b812-daa64b8c95f3",
-        "references": [
-         "7033765f-180b-4386-b7e1-2df11cd46431",
-         "c67a49cc-e540-4afe-88f4-362c474ca78e",
-         "88dc2da3-612d-4eff-812a-a018a41b5ee8",
-         "8e73570e-8476-45af-be28-160d39af9338",
-         "6857eb68-ee33-4964-92fd-70bc2e1deda0",
-         "bdb9d836-d47e-4610-b260-98668ea6cc15",
-         "6fa438c4-e459-404c-9012-8d0638a7861b",
-         "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
-         "abd632dd-735c-4767-90a3-779d5d0437f0",
-         "c9f6023c-1e25-4677-a024-ff1b21ac15e0",
-         "7dd886a2-9c12-4954-9939-d648f20c6fd2",
-         "bf24f027-a27d-4dd5-be45-af0d7f0fb0fc",
-         "33ffd30d-1b9e-4b7a-b8cf-93f16159f9f0",
-         "bd25ef92-4782-4b64-b988-897bd157eee4",
-         "10b67826-8fb8-4052-9026-9b6083f8c9d8",
-         "f893aca3-fd95-450d-9ae3-877b3648840e",
-         "edcb4950-df1d-44f1-8d89-eb6b0154ef67",
-         "a3cb0a40-dfd8-4375-a90e-cbb96b5e6d23",
-         "8f6139c9-a5ac-45a9-a55c-6862eb71e721",
-         "04db8b0d-b3b8-4490-bab0-bf956a0c8d53",
-         "4342c046-acab-4d3e-a5f7-736b2d5a2d2a",
-         "3dfb5d80-f094-4d50-8941-992d5eb6fabb",
-         "810c491c-6417-4ff5-b52b-d3dae74a455f",
-         "a8a31f96-bdea-4895-a2c4-065a0551f834",
-         "8ac3e92e-79c4-4ddd-a12d-a460da741e45",
-         "20aded77-be25-4921-a9b8-75d313ee3c54",
-         "50f8787e-a440-401a-9195-b66d832bf975",
-         "f30d3905-7193-4368-9311-20efdf75f582",
-         "448283fc-b45b-4282-9315-dc4cab3f6950",
-         "155a9d91-a09f-4799-8673-969473327108",
-         "586d53b8-64ec-4350-96bf-3fd4c7b94f22",
-         "998fa0b6-d874-4a0e-92c4-45dac17fde9f",
-         "4bf08a23-d927-4e2c-aa57-beb586e94c50",
-         "0dcd9a14-f730-4bb0-9045-4e245f0320fe",
-         "1f1f1404-98ac-4b01-98e5-cd3d2c04a256",
-         "b20934e3-cb99-412f-a8f0-0b5834345ef0"
-        ]
-       },
-       "1f38de88-202e-451a-a6cb-0af70a3d466a": {
-        "title": "Opsætning og brugervenlighed",
-        "id": "1f38de88-202e-451a-a6cb-0af70a3d466a",
-        "references": [
-         "c67a49cc-e540-4afe-88f4-362c474ca78e",
-         "7e2d367b-ae36-4476-b9e4-c58ebb9ac059",
-         "39eb5ea7-c46d-4628-a541-c7d91a076889",
-         "e0414f16-bfb7-4f37-9138-a3bdf8578144",
-         "89a772a9-8b97-46aa-8b1f-bda97d9037eb",
-         "c9f6023c-1e25-4677-a024-ff1b21ac15e0",
-         "df2ddaf8-5a79-4f63-a8bc-9418b85ba9d6",
-         "73792d4b-7c91-4b71-86b2-f3a34e268f34",
-         "60990910-1e89-456a-84df-4653c6b32e6b",
-         "574d73f2-9eb1-4b01-acdb-4f0fd91227df",
-         "41543028-0e10-4a3f-96d7-504c5a6e1753",
-         "df599e3b-00d6-4ba7-b2af-b33fffab6675",
-         "6551bf05-0f9c-4fd8-9918-653f42c2315a",
-         "7b74832d-b723-4e25-898f-f4dc0d38d23a",
-         "47323d38-af4e-4cdb-9e02-42e969f7018b",
-         "229b7571-d60c-44a9-bef7-6582bada48e0",
-         "77dede7a-1770-4534-b51d-247bad40898d",
-         "20aded77-be25-4921-a9b8-75d313ee3c54",
-         "f30d3905-7193-4368-9311-20efdf75f582",
-         "dd832411-ecb2-4efb-9d02-42bcc9985212"
-        ]
-       },
-       "616e0dea-307a-45fe-825d-c512b9db9c73": {
-        "title": "Automatisk stop ved pladens slutning",
-        "id": "616e0dea-307a-45fe-825d-c512b9db9c73",
-        "references": [
-         "41a63134-1331-4232-85d2-b455f57317d5",
-         "74be34da-22d1-4e67-a8b7-922b71e7d1f1",
-         "7e2d367b-ae36-4476-b9e4-c58ebb9ac059",
-         "39eb5ea7-c46d-4628-a541-c7d91a076889",
-         "983f676b-ac85-497e-a7ef-f6c255dc530f",
-         "f5d912ab-fbd8-47d0-b742-bd4c349007e6",
-         "e09b9f31-da6f-4ad7-8a63-8fd40987ac01",
-         "215fff36-c4ce-47f7-8824-1608a3283455",
-         "8cf3e8b0-e314-4a23-ba48-5bf95300be83",
-         "47323d38-af4e-4cdb-9e02-42e969f7018b",
-         "eb0418a4-a51c-481f-8359-9308d13057b8",
-         "448283fc-b45b-4282-9315-dc4cab3f6950",
-         "76e5817c-2e49-4a52-b26f-4b9ac4ad44bb",
-         "6fe895a5-cd07-47c4-9682-341a3fb34268"
-        ]
-       }
-      },
-      "rating": 4.88163265306122,
-      "count": 245,
-      "reviewCount": 124,
-      "distribution": {
-       "1": 0,
-       "2": 0,
-       "3": 5,
-       "4": 19,
-       "5": 221
-      }
-     }
+     "parentProductCode": "ARGTT4MK2"
     }
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "inStock": true,
-    "description": "På lager. Leveringstid 1-2 hverdage",
+    "description": "Forventes på lager lørdag den 05. december",
+    "deliveryDate": "2026-12-05T00:00:00Z",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 25
+    "numberOfStoresExperiencePartly": 24
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.7652027027027,
-   "count": 592,
-   "reviewCount": 249,
+   "rating": 4.76599326599327,
+   "count": 594,
+   "reviewCount": 250,
    "distribution": {
     "1": 5,
     "2": 1,
     "3": 23,
     "4": 70,
-    "5": 493
+    "5": 495
    }
   },
   "boxContent": [],

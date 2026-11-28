@@ -300,7 +300,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 708,
+        "availableQuantity": 634,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.799,-",
@@ -323,7 +323,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 317,
+        "availableQuantity": 425,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.799,-",
@@ -355,7 +355,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 194,
+        "availableQuantity": 182,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.698,-",
@@ -401,7 +401,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 112,
+        "availableQuantity": 108,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.698,-",
@@ -424,7 +424,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 140,
+        "availableQuantity": 136,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.698,-",
@@ -447,7 +447,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 144,
+        "availableQuantity": 141,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.698,-",
@@ -459,48 +459,55 @@
      ],
      "parentProductCode": "DALIKUPID",
      "reviews": {
-      "summary": "DALIKUPID leverer en imponerende varm, klar og detaljeret lyd fra et bemærkelsesværdigt kompakt kabinet. Kontant bas, klare diskanttoner og en medrivende, veladskilt gengivelse gør højttalerne særligt velegnede til skriveborde, små rum, TV-anlæg og surroundsystemer. Det fremragende forhold mellem pris og kvalitet samt det flotte design er gennemgående styrker, selv om den dybe bas naturligt er begrænset, og nogle anlæg kræver en kraftig forstærker.",
+      "summary": "DALIKUPID leverer en imponerende varm, klar og detaljeret lyd fra et meget kompakt kabinet med et bredt, omsluttende lydbillede og slagkraftig bas i forhold til størrelsen. Højttalerne egner sig især til skriveborde, soveværelser, små stuer og surroundsystemer, mens flotte farver og solidt design giver et stærkt visuelt indtryk. Basdybden er naturligt begrænset sammenlignet med større modeller, og nogle opsætninger kræver en kraftig forstærker, men pris-kvalitetsforholdet vurderes bredt som fremragende.",
       "headlines": {
        "compact and easy to place": {
-        "sentimentAnalysis": "Det kompakte format værdsættes gentagne gange til skriveborde, soveværelser, køkkener, TV-møbler, hylder og andre pladskrævende opsætninger.",
-        "simpleTitle": "Kompakt og let at placere",
+        "sentimentAnalysis": "Det lille format og den fleksible placering gør højttalerne særligt velegnede til skriveborde, hylder, små rum, tv-opsætninger og surroundanlæg.",
+        "simpleTitle": "Kompakt og nem at placere",
         "bias": "positive",
         "key": "compact",
-        "groupId": "f1579b91-6cb0-4eaf-8cc5-8a5ea613273e"
+        "groupId": "d79c9053-bf65-4385-a574-453c034cd1e4"
        },
-       "clear, detailed and immersive sound": {
-        "sentimentAnalysis": "Anmeldelserne roser den klare, detaljerede, afbalancerede og rummelige gengivelse med god instrumentadskillelse og stærk ydelse til både musik og film.",
-        "simpleTitle": "Klar, detaljeret og medrivende lyd",
-        "bias": "positive",
-        "key": "sound",
-        "groupId": "935e20ff-8c2e-47dd-aa0a-5fecffe9b727"
-       },
-       "excellent value for money": {
-        "sentimentAnalysis": "Anmeldelserne beskriver gentagne gange lyd og samlet ydelse som fremragende til prisen, og nogle sammenligner højttalerne positivt med dyrere modeller.",
-        "simpleTitle": "Fremragende pris-kvalitetsforhold",
+       "exceptional value for money": {
+        "sentimentAnalysis": "Anmeldelserne beskriver gentagne gange lyd og samlet ydelse som fremragende til prisen og sammenligner ofte højttalerne positivt med dyrere alternativer.",
+        "simpleTitle": "Fremragende værdi for pengene",
         "bias": "positive",
         "key": "value",
-        "groupId": "e9e652b8-6bc0-4ca4-8317-3d447d8be372"
+        "groupId": "863c1ba3-6343-4f8e-81c5-14a1403e33a1"
        },
-       "surprisingly full bass for the size": {
-        "sentimentAnalysis": "Mange anmeldelser oplever bunden som overraskende fyldig og kraftfuld for så lille en højttaler, og nogle finder en subwoofer unødvendig.",
-        "simpleTitle": "Overraskende fyldig bas i størrelsen",
+       "attractive colours and solid construction": {
+        "sentimentAnalysis": "Designet værdsættes bredt for flotte farver, et enkelt udtryk, det kompakte udseende og solide detaljer i udførelsen.",
+        "simpleTitle": "Flotte farver og solid konstruktion",
         "bias": "positive",
-        "key": "bass",
-        "groupId": "bf8b4ce8-9dbb-4f82-9763-7301ec4c14c7"
+        "key": "design",
+        "groupId": "2a693aeb-b872-4e2b-986a-b434d1149083"
        },
-       "deep bass is limited without support": {
-        "sentimentAnalysis": "Kritiske anmeldelser nævner en tilbageholdende eller utilstrækkelig bas og anbefaler en subwoofer for dybere og kraftigere lave frekvenser.",
-        "simpleTitle": "Den dybe bas er begrænset uden støtte",
+       "clear, detailed and immersive sound": {
+        "sentimentAnalysis": "Anmeldelserne roser den rene, veladskilte detaljegengivelse, den brede lydbillede og den balancerede præstation ved musik og forskellige lydstyrker.",
+        "simpleTitle": "Klar, detaljeret og omsluttende lyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "25519fa3-b8db-49ab-8ae9-5e0e37f6c746"
+       },
+       "limited deep bass and occasional tonal issues": {
+        "sentimentAnalysis": "Nogle anmeldelser bemærker, at kompakte kabinetter ikke kan levere dybbas, der ryster rummet; lejlighedsvis kritiseres for meget eller for lidt bas samt en træagtig klang.",
+        "simpleTitle": "Begrænset dybbas og lejlighedsvise klangproblemer",
         "bias": "negative",
         "key": "bass",
-        "groupId": "bf8b4ce8-9dbb-4f82-9763-7301ec4c14c7"
+        "groupId": "f68c6a8c-e859-4edc-8794-7c73ceb5c556"
+       },
+       "surprisingly full bass for the size": {
+        "sentimentAnalysis": "Flere anmeldelser oplever bunden som fyldig, slagkraftig og usædvanligt kapabel for så kompakt en højttaler, nogle gange så en subwoofer ikke længere er nødvendig.",
+        "simpleTitle": "Overraskende fyldig bas i forhold til størrelsen",
+        "bias": "positive",
+        "key": "bass",
+        "groupId": "f68c6a8c-e859-4edc-8794-7c73ceb5c556"
        }
       },
       "grouping": {
-       "935e20ff-8c2e-47dd-aa0a-5fecffe9b727": {
+       "25519fa3-b8db-49ab-8ae9-5e0e37f6c746": {
         "title": "Lydkvalitet",
-        "id": "935e20ff-8c2e-47dd-aa0a-5fecffe9b727",
+        "id": "25519fa3-b8db-49ab-8ae9-5e0e37f6c746",
         "references": [
          "131dc97e-3557-44ff-b927-f50e3c0533d4",
          "486eefab-0f08-4e2c-b7de-34c3e0993a68",
@@ -508,21 +515,43 @@
          "6989f631-cb7c-454a-bf18-dbd82bbbc038",
          "70d22453-af1c-49f1-be34-85b65559800a",
          "313a8cbb-2d46-40ab-aa7a-b8719879bcfb",
+         "361ea6cf-d053-4f80-9b9e-a62d255515f5",
          "c8b72f65-dd13-4db7-a046-8820fca56e68",
+         "52dc42ec-77d7-48d0-a226-c1b5eef5be16",
          "ff6531bf-c41e-4a77-8d28-cffd0a128abf",
+         "947c0c39-b0dc-45e4-bc68-92bf0f467052",
          "e17fa963-9c2e-40c1-bd95-1ff1172a3dfd",
          "797314ff-c5f1-4d82-bdd4-81371a8f4655",
          "9ffe68ae-ad84-4dd3-be4e-81dca8cc382d",
+         "0ebc4265-300b-444a-9eb2-7ed631e2f5ec",
+         "983ed7cb-36a0-4155-a5e3-50810c69645f",
+         "b69894e3-0c0f-4077-8223-c59aca7906be",
+         "0c447df7-1b22-4d96-a988-4a20af8bfb3d",
+         "610ea5f0-cda3-4670-b090-326efccf71f9",
+         "ea664732-dcbc-4e1d-b04f-dd12263a52e5",
+         "8ded9e83-cf26-478d-ac7b-730cfcd1dffe",
          "71f2ca18-4007-4bdd-919b-dbb9a66c1a0c",
          "e9c761d0-00e5-49cf-a738-cf0fcf902ee3",
+         "c90bbcfb-8cc7-4caa-a35a-690fd5d176c4",
          "9f6c6d35-f493-429b-b80a-45d84a461ede",
+         "f6b817e0-f2c0-4878-9635-140ef35a6a12",
          "542b8655-e3ce-4aef-9406-c4e1b8c656f1",
          "7fcabda2-a683-407f-a432-545c583f7d3b",
+         "e8cc3e8f-ea07-4b04-929c-2f1844b5ec0f",
          "a6e2d89a-1e16-4a7f-8d6d-d8b7fb409d6e",
+         "02bd619a-51a5-4f1a-8c8d-070b4a087a7b",
          "e99a9883-439a-48c4-a0bb-fc51392bdeb5",
+         "73c28c7b-39f5-45ed-a83d-5263b612a871",
+         "9816efcf-6748-4e8b-807e-fc1946484b24",
          "ebd5c3aa-7d4f-4888-9036-cba58cbbc0af",
+         "5eb9a7ab-2174-4fba-9dcd-27f9348330ff",
          "a826f526-ab7b-4a19-a90c-bc0008684c8c",
-         "82eff022-07a3-4f37-afff-f693a9074158",
+         "ca56f787-8172-4573-b465-2e2637012288",
+         "2711aed5-a949-4f77-af80-45f75f3d3a1d",
+         "82eff022-07a3-4f37-afff-f693a907415b",
+         "564a5cdf-e240-4261-88f9-5fbbbf75f510",
+         "839168f3-592f-4c8e-8024-271e8d988e03",
+         "a83107da-e8f7-4cf1-968f-93a485457cb0",
          "78357f52-1d46-4093-af3b-f849e81b20f4",
          "f9801d89-5e2f-4585-8353-c4f814074b2b",
          "6f40f042-4f41-49b2-8658-ccd9377525a6",
@@ -530,80 +559,74 @@
          "ef9079f5-531a-4d62-a349-acb170740259",
          "7feed07d-2e5a-4b32-a84b-ada1484fd38b",
          "82335836-2e10-4c2c-a1d0-1cb19dbbaab3",
+         "568832c1-2508-462a-809b-4333d5a1f295",
          "84429c88-bca8-416c-9fa7-4b05a19a0519",
          "199d5d3b-43e0-47c4-9afc-43b66f7e3973",
          "4507aa8d-8a89-4f20-8cf3-1acb02dbc4a3",
+         "82d6b246-b59d-4781-9bf9-38a4b3c53387",
+         "54935e48-9bc1-4e46-aa8f-6ddbd86ce1ec",
          "da460b7e-7278-4952-8635-82f4d5b26d10",
          "697e8047-c8b8-4cfb-8639-d97daae8effe",
          "83fee167-3628-4ff4-a59c-251710a9e36e",
+         "a6876da0-b8c1-4567-9d99-aa7c8abaf91e",
          "77b04fdd-db4c-4a15-8b85-e7e4500d0f5c",
+         "fc0fdaee-d8b9-4092-9ca5-b60a23529282",
          "fb65b4e5-1f83-47bd-b793-9a8827f01e26",
+         "c6e5c9d0-cf7e-4d9d-83f2-d3d5fc90ec86",
          "1484e4e5-32a3-4818-8623-41105f0e42df"
         ]
        },
-       "f1579b91-6cb0-4eaf-8cc5-8a5ea613273e": {
-        "title": "Kompakt størrelse",
-        "id": "f1579b91-6cb0-4eaf-8cc5-8a5ea613273e",
+       "d79c9053-bf65-4385-a574-453c034cd1e4": {
+        "title": "Størrelse og placering",
+        "id": "d79c9053-bf65-4385-a574-453c034cd1e4",
         "references": [
          "f9f01fec-2adc-4cca-85e3-4d494515d6f3",
+         "70d22453-af1c-49f1-be34-85b65559800a",
          "f57d69ba-f9c9-41d2-8ee9-3abb22adb334",
          "361ea6cf-d053-4f80-9b9e-a62d255515f5",
          "907f1117-a7e0-4883-8e8a-285efd3cba27",
          "c8b72f65-dd13-4db7-a046-8820fca56e68",
          "52dc42ec-77d7-48d0-a226-c1b5eef5be16",
          "797314ff-c5f1-4d82-bdd4-81371a8f4655",
-         "185cf5dd-be28-4fb6-b36f-48765400828d",
+         "5007e132-c8fa-418d-a838-163f0883446f",
          "983ed7cb-36a0-4155-a5e3-50810c69645f",
-         "b69894e3-0c0f-4077-8223-c59aca7906be",
          "610ea5f0-cda3-4670-b090-326efccf71f9",
          "ea664732-dcbc-4e1d-b04f-dd12263a52e5",
+         "c90bbcfb-8cc7-4caa-a35a-690fd5d176c4",
+         "e8cc3e8f-ea07-4b04-929c-2f1844b5ec0f",
          "a6e2d89a-1e16-4a7f-8d6d-d8b7fb409d6e",
          "73c28c7b-39f5-45ed-a83d-5263b612a871",
+         "ebd5c3aa-7d4f-4888-9036-cba58cbbc0af",
          "5eb9a7ab-2174-4fba-9dcd-27f9348330ff",
          "ca56f787-8172-4573-b465-2e2637012288",
-         "82eff022-07a3-4f37-afff-f693a9074158",
-         "f9801d89-5e2f-4585-8353-c4f814074b2b",
-         "54935e48-9bc1-4e46-aa8f-6ddbd86ce1ec",
-         "697e8047-c8b8-4cfb-8639-d97daae8effe",
-         "a6876da0-b8c1-4567-9d99-aa7c8abaf91e",
-         "77b04fdd-db4c-4a15-8b85-e7e4500d0f5c",
-         "c6e5c9d0-cf7e-4d9d-83f2-d3d5fc90ec86",
-         "1484e4e5-32a3-4818-8623-41105f0e42df"
-        ]
-       },
-       "bf8b4ce8-9dbb-4f82-9763-7301ec4c14c7": {
-        "title": "Basgengivelse",
-        "id": "bf8b4ce8-9dbb-4f82-9763-7301ec4c14c7",
-        "references": [
-         "313a8cbb-2d46-40ab-aa7a-b8719879bcfb",
-         "c8b72f65-dd13-4db7-a046-8820fca56e68",
-         "52dc42ec-77d7-48d0-a226-c1b5eef5be16",
-         "94a3f840-6c73-4ae9-bd5a-0514dada86c5",
-         "797314ff-c5f1-4d82-bdd4-81371a8f4655",
-         "9ffe68ae-ad84-4dd3-be4e-81dca8cc382d",
-         "542b8655-e3ce-4aef-9406-c4e1b8c656f1",
-         "7fcabda2-a683-407f-a432-545c583f7d3b",
-         "e99a9883-439a-48c4-a0bb-fc51392bdeb5",
-         "a826f526-ab7b-4a19-a90c-bc0008684c8c",
-         "ca56f787-8172-4573-b465-2e2637012288",
-         "2711aed5-a949-4f77-af80-45f75f3d3a1d",
-         "82eff022-07a3-4f37-afff-f693a9074158",
+         "82eff022-07a3-4f37-afff-f693a907415b",
+         "a83107da-e8f7-4cf1-968f-93a485457cb0",
+         "78357f52-1d46-4093-af3b-f849e81b20f4",
          "f9801d89-5e2f-4585-8353-c4f814074b2b",
          "6f40f042-4f41-49b2-8658-ccd9377525a6",
-         "82d6b246-b59d-4781-9bf9-38a4b3c53387",
+         "f963915c-cb8e-4747-917e-a4a6a5bffbad",
+         "7feed07d-2e5a-4b32-a84b-ada1484fd38b",
+         "82335836-2e10-4c2c-a1d0-1cb19dbbaab3",
+         "568832c1-2508-462a-809b-4333d5a1f295",
+         "199d5d3b-43e0-47c4-9afc-43b66f7e3973",
+         "54935e48-9bc1-4e46-aa8f-6ddbd86ce1ec",
+         "697e8047-c8b8-4cfb-8639-d97daae8effe",
+         "83fee167-3628-4ff4-a59c-251710a9e36e",
          "a6876da0-b8c1-4567-9d99-aa7c8abaf91e",
          "77b04fdd-db4c-4a15-8b85-e7e4500d0f5c",
          "c6e5c9d0-cf7e-4d9d-83f2-d3d5fc90ec86",
          "1484e4e5-32a3-4818-8623-41105f0e42df"
         ]
        },
-       "e9e652b8-6bc0-4ca4-8317-3d447d8be372": {
-        "title": "Pris-kvalitetsforhold",
-        "id": "e9e652b8-6bc0-4ca4-8317-3d447d8be372",
+       "863c1ba3-6343-4f8e-81c5-14a1403e33a1": {
+        "title": "Pris og værdi",
+        "id": "863c1ba3-6343-4f8e-81c5-14a1403e33a1",
         "references": [
+         "b9d4b6a6-4210-4116-9664-98f9b7c6b26e",
          "361ea6cf-d053-4f80-9b9e-a62d255515f5",
          "94a3f840-6c73-4ae9-bd5a-0514dada86c5",
-         "0eb4265c-300b-444a-9eb2-7ed631e2f5ec",
+         "0ebc4265-300b-444a-9eb2-7ed631e2f5ec",
+         "983ed7cb-36a0-4155-a5e3-50810c69645f",
          "73c28c7b-39f5-45ed-a83d-5263b612a871",
          "9816efcf-6748-4e8b-807e-fc1946484b24",
          "5eb9a7ab-2174-4fba-9dcd-27f9348330ff",
@@ -612,11 +635,65 @@
          "839168f3-592f-4c8e-8024-271e8d988e03",
          "eb1644a8-58fa-4a27-9574-672a0003c20b",
          "354840ef-b2a8-4768-94a7-fe0ad1f84fb6",
+         "a83107da-e8f7-4cf1-968f-93a485457cb0",
          "29c5e60b-0c64-4684-b8f5-d2140174714f",
+         "f963915c-cb8e-4747-917e-a4a6a5bffbad",
+         "ef9079f5-531a-4d62-a349-acb170740259",
          "7feed07d-2e5a-4b32-a84b-ada1484fd38b",
          "54935e48-9bc1-4e46-aa8f-6ddbd86ce1ec",
          "45e00b7a-7aed-4153-ad61-80b65c5ab45d",
-         "fc0fdaee-d8b9-4092-9ca5-b60a23529282"
+         "fc0fdaee-d8b9-4092-9ca5-b60a23529282",
+         "1484e4e5-32a3-4818-8623-41105f0e42df"
+        ]
+       },
+       "f68c6a8c-e859-4edc-8794-7c73ceb5c556": {
+        "title": "Basgengivelse",
+        "id": "f68c6a8c-e859-4edc-8794-7c73ceb5c556",
+        "references": [
+         "9ffe68ae-ad84-4dd3-be4e-81dca8cc382d",
+         "542b8655-e3ce-4aef-9406-c4e1b8c656f1",
+         "7fcabda2-a683-407f-a432-545c583f7d3b",
+         "e99a9883-439a-48c4-a0bb-fc51392bdeb5",
+         "ebd5c3aa-7d4f-4888-9036-cba58cbbc0af",
+         "a826f526-ab7b-4a19-a90c-bc0008684c8c",
+         "ca56f787-8172-4573-b465-2e2637012288",
+         "2711aed5-a949-4f77-af80-45f75f3d3a1d",
+         "82eff022-07a3-4f37-afff-f693a907415b",
+         "78357f52-1d46-4093-af3b-f849e81b20f4",
+         "f9801d89-5e2f-4585-8353-c4f814074b2b",
+         "6f40f042-4f41-49b2-8658-ccd9377525a6",
+         "6c8cc171-7a47-455e-91ac-4337996af2b4",
+         "7feed07d-2e5a-4b32-a84b-ada1484fd38b",
+         "199d5d3b-43e0-47c4-9afc-43b66f7e3973",
+         "82d6b246-b59d-4781-9bf9-38a4b3c53387",
+         "a6876da0-b8c1-4567-9d99-aa7c8abaf91e",
+         "77b04fdd-db4c-4a15-8b85-e7e4500d0f5c",
+         "c6e5c9d0-cf7e-4d9d-83f2-d3d5fc90ec86",
+         "1484e4e5-32a3-4818-8623-41105f0e42df"
+        ]
+       },
+       "2a693aeb-b872-4e2b-986a-b434d1149083": {
+        "title": "Design og udførelse",
+        "id": "2a693aeb-b872-4e2b-986a-b434d1149083",
+        "references": [
+         "313a8cbb-2d46-40ab-aa7a-b8719879bcfb",
+         "4b2081fe-539e-4e1d-9660-5eed193f8da1",
+         "947c0c39-b0dc-45e4-bc68-92bf0f467052",
+         "ff6531bf-c41e-4a77-8d28-cffd0a128abf",
+         "5007e132-c8fa-418d-a838-163f0883446f",
+         "c0d51e28-6e79-4dc4-ae72-579f40e1b74e",
+         "0ebc4265-300b-444a-9eb2-7ed631e2f5ec",
+         "8ded9e83-cf26-478d-ac7b-730cfcd1dffe",
+         "c1336275-e32b-4b05-8386-5341eea8aaf9",
+         "73c28c7b-39f5-45ed-a83d-5263b612a871",
+         "82eff022-07a3-4f37-afff-f693a907415b",
+         "564a5cdf-e240-4261-88f9-5fbbbf75f510",
+         "fb65b4e5-1f83-47bd-b793-9a8827f01e26",
+         "697e8047-c8b8-4cfb-8639-d97daae8effe",
+         "83fee167-3628-4ff4-a59c-251710a9e36e",
+         "199d5d3b-43e0-47c4-9afc-43b66f7e3973",
+         "c6e5c9d0-cf7e-4d9d-83f2-d3d5fc90ec86",
+         "6790cacc-465e-4044-b4fc-799ad9131003"
         ]
        }
       },
@@ -638,21 +715,21 @@
     "inStock": true,
     "description": "På lager. Leveringstid 1-2 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 14
+    "numberOfStoresExperience": 13
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.72007722007722,
-   "count": 518,
-   "reviewCount": 260,
+   "rating": 4.7208413001912,
+   "count": 523,
+   "reviewCount": 263,
    "distribution": {
     "1": 5,
     "2": 1,
     "3": 20,
-    "4": 82,
-    "5": 410
+    "4": 83,
+    "5": 414
    }
   },
   "boxContent": [],

@@ -71,21 +71,21 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Forforstærker/hub til trådløse Bluesound systemer\nARM Cortex A53 processor\nHDMI-CEC / eARC\nDedikeret pladespillerindgang med  indbygget RIAA-forstærker (MM)\nDual-band trådløs netværksfunktion 802.11 ac (2,4GHz / 5GHz)\nMaks. opløsning på digitale indgangssignaler: 24-bit/192kHz\nStrømforsyning, USB-C kabel og Ethernet-kabel medfølger\nIntegreret nøglehuls-beslag til montering på væg\n1U rack højde, 1/3 rack bredde\n"
+     }
+    ]
+   },
+   {
     "index": 9,
     "title": "Tilslutninger",
     "content": [
      {
       "term": "Indgang (andet)",
       "value": "HDMI"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Forforstærker/hub til trådløse Bluesound systemer\nARM Cortex A53 processor\nHDMI-CEC / eARC\nDedikeret pladespillerindgang med  indbygget RIAA-forstærker (MM)\nDual-band trådløs netværksfunktion 802.11 ac (2,4GHz / 5GHz)\nMaks. opløsning på digitale indgangssignaler: 24-bit/192kHz\nStrømforsyning, USB-C kabel og Ethernet-kabel medfølger\nIntegreret nøglehuls-beslag til montering på væg\n1U rack højde, 1/3 rack bredde\n"
      }
     ]
    }
@@ -147,8 +147,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 16,
-     "availableQuantity": 115,
+     "numberOfStoresExperience": 17,
+     "availableQuantity": 93,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -190,56 +190,78 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSCB130 er en alsidig plug-and-play-hub, der integrerer pladespillere, cd-afspillere og TV-lyd i et Bluesound-system med varm, fyldig og overraskende klar lyd. Den trådløse integration giver fleksibel placering og en medrivende lytteoplevelse på tværs af Bluesound-højttalere og streamere. En stabil netværksforbindelse er vigtig, da Wi-Fi-udsving kan påvirke ydelse og appens stabilitet, men løsningen føles samlet set problemfri og meget praktisk.",
+   "summary": "BLSCB130 er en alsidig hub, der er nem at installere, og som forbinder pladespillere, cd-afspillere og tv-lyd med et Bluesound-system og giver fleksibel trådløs placering. Lyden beskrives generelt som klar, behagelig og overraskende god med problemfri, punchy gengivelse, når netværket er stabilt. Wi-fi-forbindelse og appens driftssikkerhed kan dog lejlighedsvis svække den ellers varme og medrivende lytteoplevelse.",
    "headlines": {
-    "easy plug-and-play setup": {
-     "sentimentAnalysis": "Hubben er generelt hurtig, overskuelig og enkel at installere og bruge.",
-     "simpleTitle": "Nem plug-and-play-opsætning",
+    "easy setup and straightforward operation": {
+     "sentimentAnalysis": "Opsætningen roses gentagne gange som hurtig, enkel, plug-and-play og nem at bruge, selv om den i ét tilfælde var uklar i starten.",
+     "simpleTitle": "Nem opsætning og enkel betjening",
      "bias": "positive",
      "key": "setup",
-     "groupId": "51501388-16b3-4152-a7ca-72ac1e815060"
+     "groupId": "61303b89-61fb-4700-86b2-30a3177d7134"
     },
-    "flexible wireless integration": {
-     "sentimentAnalysis": "Hubben forbinder nemt analoge kilder og TV-lyd med Bluesound-udstyr uden krav om placering tæt på hinanden.",
-     "simpleTitle": "Fleksibel trådløs integration",
+    "flexible integration of turntables, CD players and TV audio": {
+     "sentimentAnalysis": "Hubben værdsættes for at forbinde analoge kilder og tv-lyd med Bluesound-udstyr, især når kilde og højttalere står i forskellige rum.",
+     "simpleTitle": "Fleksibel integration af pladespillere, cd-afspillere og tv-lyd",
      "bias": "positive",
      "key": "integration",
-     "groupId": "7420f1f5-8146-40f8-b2d4-3269faf58b13"
+     "groupId": "a8e98b8e-0113-4bfe-86be-c724f0bcdc29"
     },
-    "clear, punchy sound with no delay": {
-     "sentimentAnalysis": "Lyden beskrives som god til overraskende fremragende med pålidelig transmission uden forsinkelse og forvrængning.",
-     "simpleTitle": "Klar og fyldig lyd uden forsinkelse",
+    "clear and enjoyable sound": {
+     "sentimentAnalysis": "Lyden roses ofte som fri for forvrængning, behagelig og overraskende god med en tilfredsstillende lytteoplevelse.",
+     "simpleTitle": "Klar og behagelig lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "755a82b6-77c6-408c-80d1-33c852459671"
+     "groupId": "ba30bc1c-304e-4e70-8172-392fab187e14"
     },
-    "wi-Fi stability can affect performance": {
-     "sentimentAnalysis": "Flere anmeldelser viser, at ustabilt eller svingende Wi-Fi kan forringe lydkvaliteten eller driften; Ethernet er mere stabilt.",
-     "simpleTitle": "Wi-Fi-stabilitet kan påvirke ydelsen",
+    "stable network connection is important": {
+     "sentimentAnalysis": "Wi-fi-udsving kan påvirke lydkvaliteten og driften; en kablet Ethernet-forbindelse beskrives som mere stabil, mens ustabile forbindelser kan forhindre, at afspillere bliver fundet.",
+     "simpleTitle": "En stabil netværksforbindelse er vigtig",
      "bias": "negative",
      "key": "network",
-     "groupId": "02c0d1f6-c427-4468-b4b1-3bfce657b80a"
+     "groupId": "0acf4750-651a-46fe-a1ce-e17b4ad4f87e"
     },
-    "the app can be unreliable": {
-     "sentimentAnalysis": "Appens design og stabilitet kritiseres, blandt andet fordi afspillere ikke altid findes, og appen må nulstilles.",
-     "simpleTitle": "Appen kan være ustabil",
+    "app experience is inconsistent": {
+     "sentimentAnalysis": "Appen kritiseres for upålidelig afspillerregistrering, lejlighedsvise nulstillinger samt et design og en brugervenlighed, der kan forbedres.",
+     "simpleTitle": "Appen fungerer ikke altid stabilt",
      "bias": "negative",
      "key": "network",
-     "groupId": "02c0d1f6-c427-4468-b4b1-3bfce657b80a"
+     "groupId": "0acf4750-651a-46fe-a1ce-e17b4ad4f87e"
     }
    },
    "grouping": {
-    "51501388-16b3-4152-a7ca-72ac1e815060": {
+    "a8e98b8e-0113-4bfe-86be-c724f0bcdc29": {
+     "title": "Systemintegration og fleksibilitet",
+     "id": "a8e98b8e-0113-4bfe-86be-c724f0bcdc29",
+     "references": [
+      "94f1de58-4575-4e84-9e40-74a80e0adc0b",
+      "0cb832e4-883a-49bb-a228-f1de31bd31de",
+      "48b2a8ff-d1cf-410e-bf2a-19da42613ebc",
+      "78039fdd-e935-4d2f-aa3c-dc7d7fbd1bd2",
+      "2051143b-01fa-45e4-9363-dc16b753051d",
+      "24a45f4e-60de-4fac-a16b-9f11751a9f56",
+      "fdbf7eed-1bd1-407e-a889-ca037305c1c5",
+      "d9e5a4d7-9516-4c87-85f5-e9c909782e99",
+      "fe884996-3b38-42aa-8a02-e6a17c81461b",
+      "cb9d03f5-73c3-41a1-b794-3eefba2bc4e5",
+      "6a183906-a573-49d0-a06d-1b22cb8f0506",
+      "45123335-6d44-4290-bc93-2036cf4de1ea",
+      "e18ab382-a00a-4c55-b6ca-dcedfbdec27c",
+      "4188509c-3d04-4a1c-84e5-5b4a169e737b",
+      "551c853a-9a49-4a48-b68c-dc8385381b3e"
+     ]
+    },
+    "61303b89-61fb-4700-86b2-30a3177d7134": {
      "title": "Opsætning og brugervenlighed",
-     "id": "51501388-16b3-4152-a7ca-72ac1e815060",
+     "id": "61303b89-61fb-4700-86b2-30a3177d7134",
      "references": [
       "fad9b555-0755-4f45-9cc2-24c34db0c56d",
       "b4ccda33-2e85-49e1-9c1b-ed8754465e3c",
-      "78039fdd-e935-4d2f-aa3c-dc7d7fbd1bd2",
       "5044e34b-9541-4a55-98a1-f72241e248c7",
       "eae5aa60-e2ca-47a2-a98f-4c77f42212f1",
       "cc08f517-9edf-441f-8d38-986e99537d94",
+      "24cb430a-20c8-41d6-a48a-8062db55599e",
       "614decca-fa38-4d10-baee-b9a94e2b132d",
+      "1f046960-5499-44e6-8258-5205f2792932",
       "fe884996-3b38-42aa-8a02-e6a17c81461b",
       "6a183906-a573-49d0-a06d-1b22cb8f0506",
       "45123335-6d44-4290-bc93-2036cf4de1ea",
@@ -247,38 +269,23 @@
       "deadb08c-f3c4-4718-8f85-28b71bfc50cc"
      ]
     },
-    "7420f1f5-8146-40f8-b2d4-3269faf58b13": {
-     "title": "Systemintegration og fleksibilitet",
-     "id": "7420f1f5-8146-40f8-b2d4-3269faf58b13",
-     "references": [
-      "94f1de58-4575-4e84-9e40-74a80e0adc0b",
-      "48b2a8ff-d1cf-410e-bf2a-19da42613ebc",
-      "2051143b-01fa-45e4-9363-dc16b753051d",
-      "24a45f4e-60de-4fac-a16b-9f11751a9f56",
-      "1f046960-5499-44e6-8258-5205f2792932",
-      "d9e5a4d7-9516-4c87-85f5-e9c909782e99",
-      "cb9d03f5-73c3-41a1-b794-3eefba2bc4e5",
-      "45123335-6d44-4290-bc93-2036cf4de1ea",
-      "e18ab382-a00a-4c55-b6ca-dcedfbdec27c",
-      "4188509c-3d04-4a1c-84e5-5b4a169e737b"
-     ]
-    },
-    "755a82b6-77c6-408c-80d1-33c852459671": {
+    "ba30bc1c-304e-4e70-8172-392fab187e14": {
      "title": "Lydkvalitet",
-     "id": "755a82b6-77c6-408c-80d1-33c852459671",
+     "id": "ba30bc1c-304e-4e70-8172-392fab187e14",
      "references": [
       "0cb832e4-883a-49bb-a228-f1de31bd31de",
       "78039fdd-e935-4d2f-aa3c-dc7d7fbd1bd2",
       "f8ca3007-91ec-4ea5-a4d0-5f9baf39a06c",
+      "57a90512-f651-459b-93cd-777358112d22",
       "3e1fd45e-80c1-44c0-83e9-033552047503",
       "8d2d9f96-8352-4819-a8ae-51e490cdc4b0",
-      "57a90512-f651-459b-93cd-777358112d22",
-      "deadb08c-f3c4-4718-8f85-28b71bfc50cc"
+      "24cb430a-20c8-41d6-a48a-8062db55599e",
+      "cc08f517-9edf-441f-8d38-986e99537d94"
      ]
     },
-    "02c0d1f6-c427-4468-b4b1-3bfce657b80a": {
+    "0acf4750-651a-46fe-a1ce-e17b4ad4f87e": {
      "title": "Netværks- og app-stabilitet",
-     "id": "02c0d1f6-c427-4468-b4b1-3bfce657b80a",
+     "id": "0acf4750-651a-46fe-a1ce-e17b4ad4f87e",
      "references": [
       "2051143b-01fa-45e4-9363-dc16b753051d",
       "c94cc830-88d1-4590-a3e2-3ccb9e304467",
@@ -288,15 +295,15 @@
      ]
     }
    },
-   "rating": 4.63636363636364,
-   "count": 55,
+   "rating": 4.64285714285714,
+   "count": 56,
    "reviewCount": 35,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 7,
     "4": 6,
-    "5": 42
+    "5": 43
    }
   },
   "brandName": "Bluesound",

@@ -111,7 +111,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 22,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -132,7 +132,17 @@
   "bundleRelations": [],
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
-  "reviews": {},
+  "reviews": {
+   "rating": 5,
+   "count": 1,
+   "distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
   "boxContent": [
    {
     "productName": "Beyerdynamic Audiophile Connection Cable XLR–4 Minijack-kabel",

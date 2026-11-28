@@ -18,7 +18,7 @@
   "gallery": [
    "6a22aeae-8442-4ea0-a7f6-0acbd5379033"
   ],
-  "avail": "InStock"
+  "avail": "OutOfStock"
  },
  "product": {
   "id": 285360,
@@ -120,17 +120,6 @@
   "bundle": {
    "name": "Sonos Beam (Gen 2) + Era 100 SL Soundbar system/pakke",
    "code": "BEAM-ERA100SL",
-   "ribbons": [
-    {
-     "text": "Spar 28%",
-     "ribbonType": "discount",
-     "link": {
-      "title": "",
-      "target": "_blank",
-      "kind": "LinkInfo"
-     }
-    }
-   ],
    "images": [
     {
      "url": "https://images.hifiklubben.com/image/6a22aeae-8442-4ea0-a7f6-0acbd5379033"
@@ -156,14 +145,11 @@
    "priceDetails": {
     "price": 4828,
     "priceFormatted": "4.828,-",
-    "priceBefore": 6688,
-    "priceBeforeFormatted": "6.688,-",
-    "priceSavingsFormatted": "1.860,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
     "unitPrice": 4828,
-    "unitPriceBefore": 6688
+    "unitPriceBefore": 4977
    },
    "bundleProducts": [
     {
@@ -183,11 +169,10 @@
         "productCode": "SONBEAMG2BK"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager søndag den 13. december",
+        "deliveryDate": "2026-12-13T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 547,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "2.579,-",
        "priceRaw": 2579,
@@ -206,11 +191,10 @@
         "productCode": "SONBEAMG2WH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager søndag den 13. december",
+        "deliveryDate": "2026-12-13T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 62,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "2.579,-",
        "priceRaw": 2579,
@@ -221,161 +205,227 @@
      ],
      "parentProductCode": "SONBEAMG2",
      "reviews": {
-      "summary": "SONOS Beam Gen 2 leverer varm, kraftfuld og imponerende rummelig TV-lyd fra en kompakt og elegant soundbar. Dialoger bliver tydeligere, film får mere dybde og bas, og integrationen med andre Sonos-højttalere gør udvidelse til et komplet hjemmebiografsystem imponerende enkel. Musik og Dolby Atmos kan dog føles begrænset uden subwoofer eller baghøjttalere, mens Sonos-appen og lejlighedsvise netværksproblemer er de største frustrationer.",
+      "summary": "SONOS Beam Gen 2 leverer varm, fyldig og imponerende rummelig TV-lyd fra et kompakt kabinet, med tydelig tale og en markant forbedring i forhold til TV’ets indbyggede højttalere. Nem Sonos-integration, kompakt design og fleksibel udvidelse med subwoofer og baghøjttalere gør Beam særligt attraktiv til hjemmebio. Musikgengivelse og Atmos-effekter kan være begrænsede uden ekstra højttalere, mens problemer med app, netværk og synkronisering lejlighedsvis svækker helhedsoplevelsen.",
       "headlines": {
-       "rich, powerful sound from a compact bar": {
-        "sentimentAnalysis": "Beam roses for varm, fyldig og overraskende kraftfuld lyd trods den kompakte størrelse.",
-        "simpleTitle": "Fyldig og kraftfuld lyd fra en kompakt soundbar",
+       "a major upgrade for TV sound": {
+        "sentimentAnalysis": "Beam forvandler konsekvent tynd TV-lyd til fyldigere, klarere og mere engagerende lyd.",
+        "simpleTitle": "En markant forbedring af TV-lyden",
         "bias": "positive",
-        "key": "sound_quality",
-        "groupId": "7f7cc2ac-0694-4844-9a3b-f5e9e6be1f76"
+        "key": "tv-upgrade",
+        "groupId": "57b81463-5ac8-445a-8388-aba346dea002"
        },
-       "easy setup and seamless Sonos expansion": {
-        "sentimentAnalysis": "Sonos-ejere værdsætter den enkle opsætning og fleksible forbindelse med subwoofere, surround- og eksisterende højttalere.",
-        "simpleTitle": "Nem opsætning og problemfri Sonos-udvidelse",
-        "bias": "positive",
-        "key": "sonos_expansion",
-        "groupId": "bbc0539c-5227-4e13-a719-8e437900952c"
-       },
-       "music and surround impact can feel limited": {
-        "sentimentAnalysis": "Nogle lyttere oplever musik som mindre detaljeret og rummelig end fra stereohøjttalere; større biografeffekt kræver en subwoofer eller surroundhøjttalere.",
-        "simpleTitle": "Musik og surround kan føles begrænset",
+       "app and connection reliability issues": {
+        "sentimentAnalysis": "En mindre gruppe oplever en frustrerende app, vanskelig opsætning, ustabilt Wi-Fi eller forsinkelser i lydsynkroniseringen.",
+        "simpleTitle": "Problemer med app og forbindelser",
         "bias": "negative",
-        "key": "sound_quality",
-        "groupId": "7f7cc2ac-0694-4844-9a3b-f5e9e6be1f76"
+        "key": "reliability",
+        "groupId": "50cbaa38-ba09-47af-9434-a47bb292c3f9"
        },
-       "the app and connectivity can be frustrating": {
-        "sentimentAnalysis": "Selvom opsætningen ofte er enkel, giver appens brugervenlighed, netværkskompatibilitet samt lejlighedsvise forbindelses- og synkroniseringsproblemer betydelig frustration.",
-        "simpleTitle": "App og forbindelse kan være frustrerende",
-        "bias": "negative",
-        "key": "setup_app",
-        "groupId": "c8a50fa0-d2d6-40c9-ad9a-5663eada8d43"
-       },
-       "a major upgrade for TV sound and speech": {
-        "sentimentAnalysis": "Soundbaren gør TV-lyden klarere og tale lettere at forstå, så undertekster ofte ikke længere er nødvendige.",
-        "simpleTitle": "En markant forbedring af TV-lyd og tale",
+       "clear dialogue and speech": {
+        "sentimentAnalysis": "Tydelig tale og taleforbedring er blandt Beams mest værdsatte TV-fordele.",
+        "simpleTitle": "Tydelig tale og dialog",
         "bias": "positive",
-        "key": "tv_dialogue",
-        "groupId": "43802645-3613-4ce2-8766-b9ad6c6a3ac2"
+        "key": "dialogue",
+        "groupId": "57b81463-5ac8-445a-8388-aba346dea002"
+       },
+       "easy setup and Sonos expansion": {
+        "sentimentAnalysis": "De fleste opsætninger er hurtige og enkle, og eksisterende Sonos-højttalere kan nemt tilføjes til surround eller lyd i hele hjemmet.",
+        "simpleTitle": "Nem opsætning og Sonos-udvidelse",
+        "bias": "positive",
+        "key": "setup-expansion",
+        "groupId": "50cbaa38-ba09-47af-9434-a47bb292c3f9"
+       },
+       "music and Atmos can feel limited": {
+        "sentimentAnalysis": "TV-lyden roses bredt, men musik kan lyde smal eller mellemtonepræget, og Atmos-oplevelsen kan kræve subwoofer eller baghøjttalere.",
+        "simpleTitle": "Musik og Atmos kan virke begrænset",
+        "bias": "negative",
+        "key": "limitations",
+        "groupId": "57b81463-5ac8-445a-8388-aba346dea002"
        }
       },
       "grouping": {
-       "7f7cc2ac-0694-4844-9a3b-f5e9e6be1f76": {
+       "57b81463-5ac8-445a-8388-aba346dea002": {
         "title": "Lydkvalitet",
-        "id": "7f7cc2ac-0694-4844-9a3b-f5e9e6be1f76",
+        "id": "57b81463-5ac8-445a-8388-aba346dea002",
         "references": [
          "8d7c0818-065f-49df-b080-4ac60bc7c308",
          "c9d92a1a-627d-4de8-bff7-04bb7a0d092a",
          "4a4c9ac8-89f1-41fd-92e2-4a5418739ac9",
          "24f7d1e0-1f23-4882-8f41-dd8a3221f60f",
          "0db2df10-76df-46d1-a1ff-53a12e8ac7a2",
+         "78555d44-8d12-4519-9575-0005b1089fa0",
+         "8d70ebe5-6b26-4adc-b595-58ab990e4d3a",
          "c03279d6-6aff-49f0-82d5-bd7305a6e0ec",
          "3a427319-b675-45a7-adab-ca9fcb574fd2",
          "52325294-4ad7-497b-bf5c-deef7f11f55d",
+         "1372fba6-698b-497c-b2bf-afb1c90404b8",
+         "c8a62477-5786-424a-8be6-dee126012ad0",
+         "08448b87-9dae-4cf8-849c-1c44be0081ea",
+         "8b2de255-d2cf-493f-af1d-334ccbc80e1d",
          "0116ba06-15f0-42c7-a4f2-1595f9b4833b",
          "eccff14d-68f1-4aa5-a9c3-603d63f297ea",
          "611efa2a-35fc-4f06-833c-1ade3f4c6eea",
          "0101a652-efaa-48d2-95f5-3c9c41499af4",
+         "10db3dc7-47b9-4b08-9ff4-5a2c552d2460",
+         "3989268a-98a0-407e-92d0-3223cce0260a",
+         "c103a8a6-84f9-4792-8e32-888f0109b4ad",
+         "63dce6ec-9726-438c-9877-fce2cea0390b",
          "9ecafda3-a217-4880-8214-4f0775126940",
+         "9faef3ec-8bc9-4da2-adff-1d0f372cef8c",
          "4c894f60-a325-4901-89bb-80c9c70fddc7",
+         "6b0bebb1-1476-48ee-8626-717e92cf200b",
          "27b94e09-3d1a-4543-9708-ae36a682e1c9",
          "3ce7402e-fe94-4afd-819c-8c6bbfbb84b5",
+         "74cfe827-29c0-4c3b-8eac-a9ef841dedc9",
+         "711353d4-765a-4bb8-a736-9f8c091a1516",
+         "e2ff8eef-bb79-4662-aa77-0cd92d17e672",
+         "3a820810-e7e6-4863-8e3c-fc167e705a48",
          "158438ea-1f7e-4c8e-8f30-61a44543e23e",
+         "390efbdd-e159-4d2b-88fb-399925c1ee39",
          "38ac7450-b40d-4e8b-aca7-20b9028e8409",
          "a4bd6240-168c-431f-84cb-e1ca8e258a52",
+         "6848a03e-552d-43f4-b8e8-339f0d1b3390",
+         "190dbf66-5824-40fd-8ef4-a0c34ccd1cf2",
          "70b60be8-fa10-4f50-88c5-87b02c4e3331",
+         "32c3d664-a6e9-4574-b7d7-2d478dd5a07a",
+         "121f46fc-1854-4352-b6f4-c4d32915505f",
          "f03e20ce-275f-4b50-84ef-79698f03c57d",
+         "530c96f2-6e59-4505-99a7-8f4f548497b1",
          "9cb377fa-4ef5-4313-887d-dba1e6dbe03c",
+         "329759bf-5208-4a63-8a8d-e15e48bb32e7",
+         "136c4700-ac8a-4165-a774-5d729a7ea2cc",
+         "0b915cdb-502e-41ac-bf57-7e721bb0ebb0",
+         "eb663e40-742b-41a1-950a-3a3dc7795f0d",
+         "0794997c-28af-4874-bb4b-fc0630580ed6",
+         "056c427a-1faa-4283-8cdd-46fb7e6d958d",
+         "7f2f58bf-1c03-4b8f-9816-602a1e0376c0",
+         "e830fcd5-5895-4b79-a88d-d54a796235d8",
+         "564333df-2609-4a93-ae8b-6177c7bd299f",
+         "648c103e-2592-4b07-9705-10e63e97f60f",
+         "93676836-c352-420b-8c56-f4fb168cbb32",
+         "d9a58402-d5d4-455d-8455-05c659d5abb3",
+         "66f633c6-afb1-4ab7-9e57-00270da1c5aa",
+         "2d49c022-3fb4-48e6-8cbf-9b589f6cf8e7",
+         "289d1e04-a820-415d-99cc-ef2299815dce",
+         "266097db-2045-4cc1-9134-11c81ace19d0",
+         "9ce002d3-51b6-4c85-9fb5-b53411e6a6bd",
+         "69589460-e5ec-4cac-b8f0-1d21655ea730",
+         "e84deab6-9cf3-41e3-9572-eac6098cb5e3",
+         "be97a551-4c10-452f-9bcb-942fd130223b",
          "f7cb35fb-cb65-46ce-b68c-5834b8dea137",
+         "0d444ace-b5ba-45bf-aa7f-93939180d758",
          "edc14819-8aac-4071-a032-0e1e2b0b08b8",
          "5e7c3899-e0f0-447a-a874-214a61ee9b37",
+         "4c571090-18a0-4c77-b577-fb8bf1d11d0b",
+         "ac0dc752-f45e-408e-ba0b-5954e498754a",
          "b4ebabf8-e034-47fb-bdd8-233bac0dee1c",
          "3a9d86e4-bdf4-477b-b5ff-41d85c03654f",
          "f43cb930-f9f5-45f6-94bb-d0dac414272e",
          "15022250-a28a-4179-9796-21aa185e7729",
-         "4c3720fc-aaf6-410d-931b-9a8e7dfcc035",
-         "5387be3b-afc7-48aa-8f20-2b1c536fcd82",
+         "a4b0736a-5f8e-4bf9-9b56-303e9cc09154",
+         "f9cf0cb6-5d37-4a4b-8697-c39638061b06",
+         "196a271c-1edc-481a-861d-01c4ed3a9376",
+         "c8452dc9-8538-4cd2-baee-651546976418",
+         "f3f9540d-b77a-4ab3-be06-e2e4a799e55c",
+         "0e1237e2-8c11-4d53-aa9a-02fbc6aa4342",
+         "c51c02f6-77ab-4041-b464-3b43e9c7bfb7",
+         "2b914e91-145b-4a78-bdfa-9deaba55147d",
+         "b539198c-0371-4b44-bedc-77827e57d7ed",
+         "e2eaf324-284a-4337-bbce-0a9f85ec08c2",
          "86a10070-1675-4854-b0c9-b6cfe1169864",
          "6085f944-6a19-4d27-86f8-1b90427bfb3c",
+         "51287a66-3bd5-4333-88bf-976eb250e03a",
+         "9dd25ee0-0223-433b-899f-0fb940affcea",
+         "3d3d83a1-f6bb-4e49-aa85-413131b3faf8",
+         "42bda3bf-aa05-45e6-ba33-560652ae42c6",
+         "54ffd680-8fc4-48f4-aba0-ff49886c2b87",
+         "93355b70-6e51-4acd-a059-3d6db6cb8b47",
+         "59f6b05c-926a-47c2-aa02-873ea635eb29",
+         "84301b3f-ab23-482d-bc1e-1ffc24a2ff4d",
+         "abf2d277-dbab-4b07-803e-6c8bde3fe9f8",
+         "79320960-b56f-45e6-af4e-67dd9c06c195",
+         "514e7e47-1d59-48d7-a865-2350162ee5a9",
+         "1d64b6bd-8760-4843-9dac-3c70692a28e2",
+         "5b264d2d-08ff-45dc-b118-be7b0da3147a",
+         "5f4f5f1a-9c09-43e3-bd14-613f064a50eb",
+         "b358d806-c109-490b-b2a8-7fcd73521998",
+         "45fe126d-0ce0-4993-b56a-8a9d0dca5edd",
+         "a377d8d5-320e-40bd-bd92-2172af0354db",
+         "147674a3-ada2-418f-b64c-61a45313bb51",
+         "e3c5ddaa-b45b-4559-8f15-10738e1a2508",
+         "14c49490-4256-4e82-8585-409a8b057dd2",
+         "273697d9-6b2b-46b0-b872-b8c6f71446a4",
+         "5485ad03-164a-48f4-bb2e-f1f4cdea3dfe",
+         "869984ec-3603-4130-ae56-9a4ce657a39e",
+         "348d0e12-081c-4d66-b8b6-a04ebab78cff",
+         "05286402-da27-4bbf-966d-d7f003e1bbf3",
+         "81c35a82-163e-4488-94b6-fba83217d9dc",
+         "74fc4e1e-1975-409d-9444-90e8351812a4",
+         "6efb601d-3b25-4942-839f-b4816b907837",
+         "e9f41f54-a35c-407c-a21c-f4ed04fe8eea",
+         "9b317897-fb8f-495c-9be2-3a2ea803b125",
+         "c817fc51-4e6e-4a26-8b21-c59ce8cbfc2d",
+         "223814be-d7c9-4f90-90fa-a16c0b9ec104",
+         "6c59784a-bfa9-4002-b195-90b909d2ea40",
+         "52a3156a-33b6-44a0-b6a3-5060dcae0ec8",
+         "ae4f0e1f-373a-4d97-b43c-50aa67596124",
+         "58c71b16-c592-48ce-b6f6-c0a2cfc5a40f",
+         "027e154c-9cc7-4c5a-b763-86eb27b3d00c",
+         "839d30d3-e49b-47ea-b953-bce543fe1cdf",
+         "6a7402a8-7bb9-46bc-b050-005ba3ac8e9b",
+         "f04e5a36-044d-4d56-bf2b-1cbdd3a48f00",
          "65d8dd5a-cd9b-4285-b523-c117c24a3edf",
          "e528f8f5-71e2-4230-a192-4edfce3c825a",
-         "6a7402a8-7bb9-46bc-b050-005ba3ac8e9b",
+         "f21eb68a-24f6-4bbf-9c6e-66f66e59fa3d",
+         "09367fa1-91e9-4dac-b063-760fa19295c6",
+         "6a46f002-f479-4561-bcfe-2f7a95242e9d",
+         "04e61ad5-68e0-4ea8-993c-81b095298105",
+         "35c1add6-6f24-4578-bd1f-b02413e19ab4",
+         "011590f7-78d0-4f91-bd26-6f838febc093",
+         "6f45bb49-db18-408c-bc33-38e9cb4da60e",
+         "3ca3ff6d-e8cb-49e6-b08e-27d5d82e000a",
          "deaa55ac-7fbe-4899-a426-b0a9cf4f1b15",
          "4c3720fc-aaf6-410d-931b-9a8e7dfcc035",
+         "5c91796e-39b2-461b-8ffd-3878b2248757",
+         "2c7cb6b8-31a2-4bd2-b2d0-098fa6a1def8",
+         "7310a1e8-07f3-40f8-9e78-4d9a092a82a3",
+         "d2a8b8dd-b166-4474-8218-6ee647804761",
+         "1e53b9cd-2963-4424-94ea-6ccbb27d8ae2",
+         "410bb208-16a6-4756-909e-8682b2249f16",
+         "0b4420a9-d054-436c-be97-33bc53b79ddd",
+         "7c1194ab-a6fc-41ca-ad9a-fd684d2a6bdf",
+         "edc8797e-0c44-4084-94ce-bb9cf340b68a",
+         "2b443cb3-7bec-48e9-9b05-a2eac201858b",
+         "2ee6d489-bb6d-4f61-934c-c29aa3134ba3",
+         "4b736476-2b5e-48c6-91b6-a1420d427c23",
+         "18d46639-a070-4665-ad70-51bfef550dda",
+         "9d1f438e-885f-4136-802f-31a83c8cc16c",
+         "032d56cc-b16b-4acd-b987-fe9c94b23821",
+         "3c09a397-e5e6-4460-8362-c58282bc3d56",
+         "66fef124-c0c7-4d3e-9e1d-6bf6f7b296f6",
+         "4108fa2c-a2d8-416e-a0cc-5162a2bed757",
+         "b74dc1d0-5d5a-49d8-917c-42b70c004970",
+         "202ba2ea-9ca3-46b1-95c5-af55c45a97f0",
+         "ded6a82e-359d-4a97-9d39-b3098fd22096",
+         "133845ca-c6b7-4d65-88a5-dcb2a4952531",
+         "1cf756f6-bafe-453b-b4cc-0afe71499290",
+         "5387be3b-afc7-48aa-8f20-2b1c536fcd82",
          "b41f0da2-6254-43b4-9b87-80f71b3c827d",
          "5487916b-86d1-463c-992c-ef7a85cb9940",
          "86a6f253-fac4-46dc-a8a1-04d6a77865ee",
+         "6bb70c35-2790-4e24-8ace-90602e34cd8c",
          "c8fba22c-fffd-493e-a317-b9a38ff14500",
+         "6664c110-fed8-48b3-97c6-f85ccdd1bd2c",
+         "54aa1faf-a96c-4e3f-9512-e952fa46611a",
          "11ec6a19-dbc2-498f-8706-30f125d4e819"
         ]
        },
-       "43802645-3613-4ce2-8766-b9ad6c6a3ac2": {
-        "title": "TV-lyd og tale",
-        "id": "43802645-3613-4ce2-8766-b9ad6c6a3ac2",
-        "references": [
-         "0db2df10-76df-46d1-a1ff-53a12e8ac7a2",
-         "78555d44-8d12-4519-9575-0005b1089fa0",
-         "8d70ebe5-6b26-4adc-b595-58ab990e4d3a",
-         "3a427319-b675-45a7-adab-ca9fcb574fd2",
-         "281c8285-ed8d-4f8b-b028-85fb0f232292",
-         "3989268a-98a0-407e-92d0-3223cce0260a",
-         "4c894f60-a325-4901-89bb-80c9c70fddc7",
-         "27b94e09-3d1a-4543-9708-ae36a682e1c9",
-         "530c96f2-6e59-4505-99a7-8f4f548497b1",
-         "9cb377fa-4ef5-4313-887d-dba1e6dbe03c",
-         "289d1e04-a820-415d-99cc-ef2299815dce",
-         "be97a551-4c10-452f-9bcb-942fd130223b",
-         "93676836-c352-420b-8c56-f4fb168cbb32",
-         "289d1e04-a820-415d-99cc-ef2299815dce",
-         "860b309a-e5d7-4799-b9b8-db1413403dde",
-         "38c1d0e5-77c9-47d1-8891-6b38d2bab941",
-         "f43cb930-f9f5-45f6-94bb-d0dac414272e",
-         "c817fc51-4e6e-4a26-8b21-c59ce8cbfc2d",
-         "5485ad03-164a-48f4-bb2e-f1f4cdea3dfe",
-         "05286402-da27-4bbf-966d-d7f003e1bbf3",
-         "6664c110-fed8-48b3-97c6-f85ccdd1bd2c",
-         "84301b3f-ab23-482d-bc1e-1ffc24a2ff4d",
-         "45fe126d-0ce0-4993-b56a-8a9d0dca5edd",
-         "9dd25ee0-0223-433b-899f-0fb940affcea",
-         "c8fba22c-fffd-493e-a317-b9a38ff14500"
-        ]
-       },
-       "bbc0539c-5227-4e13-a719-8e437900952c": {
-        "title": "Sonos-integration og udvidelse",
-        "id": "bbc0539c-5227-4e13-a719-8e437900952c",
+       "50cbaa38-ba09-47af-9434-a47bb292c3f9": {
+        "title": "Installation og opsætning",
+        "id": "50cbaa38-ba09-47af-9434-a47bb292c3f9",
         "references": [
          "c9d92a1a-627d-4de8-bff7-04bb7a0d092a",
-         "4a4c9ac8-89f1-41fd-92e2-4a5418739ac9",
          "8d70ebe5-6b26-4adc-b595-58ab990e4d3a",
-         "36be4671-db47-466a-8a3c-da48671f9793",
-         "1372fba6-698b-497c-b2bf-afb1c90404b8",
-         "44f16846-b53b-4fdc-b588-237cc595d699",
-         "647e5991-ae9c-47b2-9b8d-8ee6a6953d1a",
-         "c103a8a6-84f9-4792-8e32-888f0109b4ad",
-         "9ecafda3-a217-4880-8214-4f0775126940",
-         "9faef3ec-8bc9-4da2-adff-1d0f372cef8c",
-         "27b94e09-3d1a-4543-9708-ae36a682e1c9",
-         "3ce7402e-fe94-4afd-819c-8c6bbfbb84b5",
-         "e2ff8eef-bb79-4662-aa77-0cd92d17e672",
-         "66f633c6-afb1-4ab7-9e57-00270da1c5aa",
-         "648c103e-2592-4b07-9705-10e63e97f60f",
-         "42bda3bf-aa05-45e6-ba33-560652ae42c6",
-         "147674a3-ada2-418f-b64c-61a45313bb51",
-         "348d0e12-081c-4d66-b8b6-a04ebab78cff",
-         "9091c74f-ebf3-4ef9-9c7d-d5c9d5c9613c",
-         "62d2467d-f9e0-498d-a440-159e302760b4",
-         "a3b3fc09-b1cf-4652-bac0-934fb092f5c6",
-         "c7d4be96-eb56-4338-8be7-9aece63f13fb",
-         "824e2929-68f8-4737-8955-5c9973d19d1d",
-         "f5afecf2-8eba-4f97-a62c-cad81c1e54db"
-        ]
-       },
-       "c8a50fa0-d2d6-40c9-ad9a-5663eada8d43": {
-        "title": "Opsætning og app",
-        "id": "c8a50fa0-d2d6-40c9-ad9a-5663eada8d43",
-        "references": [
-         "8d70ebe5-6b26-4adc-b595-58ab990e4d3a",
-         "c9d92a1a-627d-4de8-bff7-04bb7a0d092a",
          "eccff14d-68f1-4aa5-a9c3-603d63f297ea",
          "611efa2a-35fc-4f06-833c-1ade3f4c6eea",
          "63dce6ec-9726-438c-9877-fce2cea0390b",
@@ -384,19 +434,19 @@
          "8c48504b-07af-4884-a9a1-f2c0890136d6",
          "70b60be8-fa10-4f50-88c5-87b02c4e3331",
          "e84deab6-9cf3-41e3-9572-eac6098cb5e3",
-         "530c96f2-6e59-4505-99a7-8f4f548497b1",
          "0d444ace-b5ba-45bf-aa7f-93939180d758",
+         "ac0dc752-f45e-408e-ba0b-5954e498754a",
          "3a9d86e4-bdf4-477b-b5ff-41d85c03654f",
          "e3e83f1d-7bb5-43de-b5ef-2452db4b4f98",
-         "ac0dc752-f45e-408e-ba0b-5954e498754a",
          "ccb95089-bf7f-45ee-9822-65a0511e36f3",
          "04930b19-546f-4be6-bb27-3ce55d3255e1",
-         "79320960-b56f-45e6-af4e-67dd7a?",
          "273697d9-6b2b-46b0-b872-b8c6f71446a4",
-         "35c1add6-6f24-4578-bd1f-b02413e19ab4",
-         "f3f9540d-b77a-4ab3-be06-e2e4a799e55c",
-         "09367fa1-91e9-4dac-b063-760fa19295c6",
          "5f4f5f1a-9c09-43e3-bd14-613f064a50eb",
+         "f3f9540d-b77a-4ab3-be06-e2e4a799e55c",
+         "35c1add6-6f24-4578-bd1f-b02413e19ab4",
+         "09367fa1-91e9-4dac-b063-760fa19295c6",
+         "3c09a397-e5e6-4460-8362-c58282bc3d56",
+         "7c1194ab-a6fc-41ca-ad9a-fd684d2a6bdf",
          "11ec6a19-dbc2-498f-8706-30f125d4e819"
         ]
        }
@@ -430,11 +480,10 @@
         "productCode": "SONERA100SLWH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager lørdag den 12. december",
+        "deliveryDate": "2026-12-12T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 2764,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "2.398,-",
        "priceRaw": 1199,
@@ -456,7 +505,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 2176,
+        "availableQuantity": 352,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "2.398,-",
@@ -468,57 +517,56 @@
      ],
      "parentProductCode": "SONERA100SL",
      "reviews": {
-      "summary": "Sonos Era 100SL leverer bemærkelsesværdig varm, fyldig og rummelig lyd fra et kompakt kabinet med overraskende dyb bas og klar adskillelse. Enkel Wi-Fi-forbindelse, nem multiroom-integration og stærk ydelse i køkken, soveværelse, kontor og hjemmebiograf gør højttaleren meget alsidig. Enkelte ejere nævner installationsproblemer, TV-synkronisering eller radioafspilning, begrænsede monteringsmuligheder og manglende batteri, men den samlede værdi og tilfredshed er meget høj.",
+      "summary": "SONOS Era 100SL leverer varm, slagkraftig og overraskende rummelig lyd fra et kompakt kabinet med kraftig bas, tydelig separation og rigelig lydstyrke til mindre rum. Nem Wi-Fi-integration, enkel betjening og problemfri sammenkobling med Beam, Sub Mini og andre Sonos-produkter gør højttaleren alsidig i køkkener, soveværelser, kontorer og surroundsystemer. Det kompakte design og den kabelfri multiroom-komfort gør den samlede pakke endnu mere attraktiv, selv om installationen lejlighedsvis kan være besværlig, og nogle lyttere kunne ønske sig genopladelig drift eller fyldigere lyd.",
       "headlines": {
-       "clear, enjoyable sound across everyday spaces": {
-        "sentimentAnalysis": "Brug i køkken, soveværelse og kontor roses konsekvent for klar, behagelig baggrundslyd, der fylder rummet.",
-        "simpleTitle": "Klar og behagelig lyd i hverdagsrum",
+       "strong pairing for Sonos systems": {
+        "sentimentAnalysis": "Era 100SL roses gentagne gange som en effektiv stereo-, baghøjttaler- eller multiroom-udvidelse til Sonos-systemer.",
+        "simpleTitle": "Stærk kombination med Sonos-systemer",
         "bias": "positive",
-        "key": "sound",
-        "groupId": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5"
-       },
-       "easy installation and convenient control": {
-        "sentimentAnalysis": "De fleste kommentarer beskriver enkel installation, hurtig parring og ubesværet daglig betjening.",
-        "simpleTitle": "Nem installation og praktisk betjening",
-        "bias": "positive",
-        "key": "setup",
-        "groupId": "d2ee3870-a692-4d54-a30c-eac578614641"
-       },
-       "strong surround and stereo integration": {
-        "sentimentAnalysis": "Stereopar og baghøjttalerkonfigurationer roses for problemfri integration, overbevisende stereoperspektiv og fyldigere TV-lyd.",
-        "simpleTitle": "Stærk surround- og stereo-integration",
-        "bias": "positive",
-        "key": "integration",
-        "groupId": "6d8425ca-aca9-4344-b568-99335b98b143"
+        "key": "multiroom",
+        "groupId": "e8c5ca46-6148-45ed-9655-2fa8ba096eae"
        },
        "surprisingly powerful, detailed sound": {
-        "sentimentAnalysis": "De kompakte højttalere roses for høj lydstyrke, dyb bas, klar frekvensadskillelse og en medrivende gengivelse.",
-        "simpleTitle": "Overraskende kraftfuld og detaljeret lyd",
+        "sentimentAnalysis": "Højttaleren roses for sin fyldige, kraftige og tydeligt separerede lyd trods den kompakte størrelse.",
+        "simpleTitle": "Overraskende kraftig og detaljeret lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5"
+        "groupId": "6fc15467-d201-4d8e-9314-5a40d5800b60"
        },
-       "installation can occasionally be troublesome": {
-        "sentimentAnalysis": "En installationsoplevelse beskriver store softwareproblemer, som først blev løst efter en nulstilling, mens en anden rapporterer tilbagevendende fejl ved radioafspilning.",
-        "simpleTitle": "Installationen kan lejlighedsvis være besværlig",
+       "easy to install and use": {
+        "sentimentAnalysis": "Installation og daglig brug beskrives ofte som enkel og bekvem.",
+        "simpleTitle": "Nem at installere og bruge",
+        "bias": "positive",
+        "key": "setup",
+        "groupId": "bb0882dd-c505-4019-990f-8c60a896773f"
+       },
+       "excellent for compact spaces": {
+        "sentimentAnalysis": "Det kompakte kabinet og den nemme placering værdsættes især i køkkener, kontorer og andre mindre rum.",
+        "simpleTitle": "Fremragende til små rum",
+        "bias": "positive",
+        "key": "size",
+        "groupId": "8d4c0baf-4816-49cb-b97d-82a62918c58c"
+       },
+       "occasional installation and playback issues": {
+        "sentimentAnalysis": "En mindre del rapporterer om vanskelig softwareinstallation eller radioafspilning, der uventet springer tilbage og gentager sig.",
+        "simpleTitle": "Lejlighedsvise problemer med installation og afspilning",
         "bias": "negative",
         "key": "setup",
-        "groupId": "d2ee3870-a692-4d54-a30c-eac578614641"
+        "groupId": "bb0882dd-c505-4019-990f-8c60a896773f"
        }
       },
       "grouping": {
-       "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5": {
+       "6fc15467-d201-4d8e-9314-5a40d5800b60": {
         "title": "Lydkvalitet",
-        "id": "4e7cb31b-5d8d-49ff-baa9-0360a8d026c5",
+        "id": "6fc15467-d201-4d8e-9314-5a40d5800b60",
         "references": [
          "19defdce-8b27-4d91-8571-343a4c38742f",
          "ab626b4d-8527-4d29-9154-7e42fcf2dfec",
          "34bbd5d0-4d97-4a98-8aa1-d3d8cc11030f",
          "9012fc24-4de4-4b8a-b400-0ad69a932586",
          "778806f2-0e91-4a2f-b150-6149a8132116",
-         "f87c6fd2-3d02-4239-b358-b1a85916946a",
          "a801b575-7ae8-48e2-92e5-b996ac5686cf",
-         "6763a9da-8034-4d82-bcc6-f7e75a6dab75",
+         "d1d5ab8d-8aa5-4396-ab8f-1cee2e9925da",
          "79137ede-c8e6-4448-9021-9340cff6ed1e",
          "9aaa1dc4-a024-412a-8e0a-bcadb879aa50",
          "794001c4-c13d-442d-804e-cfdc499e6682",
@@ -545,33 +593,53 @@
          "c0a532fe-fda8-4894-8f8b-f07839b6870f"
         ]
        },
-       "d2ee3870-a692-4d54-a30c-eac578614641": {
-        "title": "Installation og brugervenlighed",
-        "id": "d2ee3870-a692-4d54-a30c-eac578614641",
+       "bb0882dd-c505-4019-990f-8c60a896773f": {
+        "title": "Installation og betjening",
+        "id": "bb0882dd-c505-4019-990f-8c60a896773f",
         "references": [
          "19defdce-8b27-4d91-8571-343a4c38742f",
          "6dab19bf-972e-4f43-8cb2-aa35168ebb98",
          "794001c4-c13d-442d-804e-cfdc499e6682",
          "71890e33-64b1-42b5-b2d2-ad7f4d9359c8",
+         "485b393f-26c8-4be7-8095-771562749b05",
          "455055f5-d3c7-4e1e-8df2-53b7486f2ee2",
          "860f8e00-6d22-4425-9bf1-04375bc7831d",
          "32fc68be-0760-41e0-b0e4-ec8bce9e2f35",
+         "d9266d5a-95e7-4527-a219-7d9a40ce3d66",
          "89d84aac-06ee-40f3-b233-614e1db42dfa",
          "926ee434-0d36-4359-809a-38a019a1e8e1",
          "7ed65896-45eb-43ea-926e-38d2482480ed",
          "de86d711-15ea-427e-b41b-674bcdb0a109"
         ]
        },
-       "6d8425ca-aca9-4344-b568-99335b98b143": {
-        "title": "Multiroom og hjemmebiograf",
-        "id": "6d8425ca-aca9-4344-b568-99335b98b143",
+       "8d4c0baf-4816-49cb-b97d-82a62918c58c": {
+        "title": "Størrelse og placering",
+        "id": "8d4c0baf-4816-49cb-b97d-82a62918c58c",
+        "references": [
+         "34bbd5d0-4d97-4a98-8aa1-d3d8cc11030f",
+         "43b1d852-40d4-4835-9a48-85c605a6ea15",
+         "d1d5ab8d-8aa5-4396-ab8f-1cee2e9925da",
+         "9aaa1dc4-a024-412a-8e0a-bcadb879aa50",
+         "4f1a25f9-3943-4d07-a8ed-3aebcf80fee4",
+         "c7f8e3fd-bddc-494f-981d-04f06ad99ec4",
+         "19996dc5-9e3d-478f-bc0c-bf5dd05cf9d6",
+         "6f3eaa9c-0cf6-4420-901d-8ded9bdb711d",
+         "353d7ac4-edca-4671-81d6-065b00b6fd5e",
+         "dc107379-8050-4535-956a-d679c716511b",
+         "8f302a72-211b-4234-b880-d6f70d5914f6",
+         "9ea2b2e2-b15e-4acf-aeda-fb23cb682009"
+        ]
+       },
+       "e8c5ca46-6148-45ed-9655-2fa8ba096eae": {
+        "title": "Multiroom og surround",
+        "id": "e8c5ca46-6148-45ed-9655-2fa8ba096eae",
         "references": [
          "0eb0b82c-1df5-47b9-8b0a-fcedd8a1bd1e",
          "d3ced33d-2025-4ba1-b6b6-d01d0103c354",
          "e87a0781-e43d-45c8-832b-a0f9d1785fcb",
          "f87c6fd2-3d02-4239-b358-b1a85916946a",
-         "794001c4-c13d-442d-804e-cfdc499e6682",
          "73f9d7ab-1111-48ec-a5e7-f876821979b9",
+         "485b393f-26c8-4be7-8095-771562749b05",
          "bdb136f1-cca6-46b2-b88c-01b62a82499a",
          "e612c960-2daf-460e-9e67-f16399e16bf0",
          "860f8e00-6d22-4425-9bf1-04375bc7831d",
@@ -595,10 +663,10 @@
    ],
    "sellableOnWeb": true,
    "inventoryStatus": {
-    "inStock": true,
-    "description": "På lager. Leveringstid 1-2 hverdage",
+    "description": "Forventes på lager søndag den 13. december",
+    "deliveryDate": "2026-12-13T00:00:00Z",
     "canBuyOnline": true,
-    "numberOfStoresExperience": 14
+    "numberOfStoresExperience": 9
    }
   },
   "variantNavigationType": "dropDown",

@@ -25,7 +25,7 @@
    "58df2040-5dc9-4e48-86f6-0c9804c58928",
    "ab8b452b-6767-4665-862c-8db65327962a"
   ],
-  "avail": "OutOfStock"
+  "avail": "InStock"
  },
  "product": {
   "id": 292298,
@@ -146,7 +146,7 @@
     "condition": "NewNeverUsedAndNotOpened",
     "sellableOnWeb": true,
     "productCode": "AUDLCDS20BK",
-    "ean": "0819343014724",
+    "ean": "819343014724",
     "priceDetails": {
      "priceValueId": 1217877,
      "price": 4190,
@@ -154,8 +154,7 @@
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 4190,
-     "unitPriceBefore": 4199
+     "unitPrice": 4190
     },
     "techSpecs": [
      {
@@ -187,11 +186,12 @@
      "productCode": "AUDLCDS20BK"
     },
     "inventoryStatus": {
-     "description": "Bestillingsvare. Forventet leveringstid 3-4 uger",
+     "inStock": true,
+     "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "hideNotificationOption": true,
-     "inventoryStatusType": "notInStockNonStockedItem"
+     "availableQuantity": 1,
+     "inventoryStatusType": "warehouseInStock"
     },
     "images": [
      {

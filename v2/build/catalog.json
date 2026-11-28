@@ -13250,7 +13250,7 @@
      "ARGTTMK2BT"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSA1MK2X",
@@ -13363,7 +13363,7 @@
      "ARGFORUS5WX"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSA2X",
@@ -13492,7 +13492,7 @@
      "DALISONIK7"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSOLO",
@@ -13576,7 +13576,7 @@
      "ARGFENRISA5"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSPASTUDIE3CBL",
@@ -13698,7 +13698,7 @@
      "ARGSTUDIE3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSTREAM2MK3",
@@ -13760,7 +13760,7 @@
      "DENPMA600NE"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGSTUDIE3",
@@ -13816,6 +13816,9 @@
     }
    ],
    "specs": {
+    "Lydudgang": "Subwoofer-out",
+    "Lydindgang": "Optisk, Analog RCA, USB C",
+    "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
     "Højtaler type": "Aktive HiFi højtalere",
     "Frekvensområde (-3dB)": "61-22.000 Hz",
     "Frekvensområde (-6dB)": "56-24.000 Hz",
@@ -13826,9 +13829,6 @@
     "Streaming": "Bluetooth",
     "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Pre-out, Analog RCA, Minijack/AUX",
     "Brugsscenarier": "TV, PC/Mac, Pladespiller, Subwoofer",
-    "Lydudgang": "Subwoofer-out",
-    "Lydindgang": "Optisk, Analog RCA, USB C",
-    "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
     "Kabinet type": "Basrefleks",
     "Fjernbetjening": "Ja",
     "Integreret vægbeslag": "Nej",
@@ -13877,7 +13877,7 @@
      "ESSWBUNI20X"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTT3",
@@ -14006,7 +14006,7 @@
      "MARAMODEL50"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTT3PLUSX",
@@ -14126,7 +14126,7 @@
      "ARGFORTEA55WIFIX"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTT4MK2",
@@ -14270,7 +14270,7 @@
      "NADC389"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTT4SE",
@@ -14362,7 +14362,7 @@
      "MARAMODEL50"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTTAURORA",
@@ -14462,7 +14462,7 @@
      "ORTCONCMBLAC"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTTMK2",
@@ -14653,7 +14653,7 @@
      "ARGFENRISA55"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTTMK2BT",
@@ -14767,7 +14767,7 @@
     "Typisk energiforbrug, normal brug": "5 watt"
    },
    "rel": {},
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGTTS",
@@ -14902,7 +14902,7 @@
      "DALIRUBIKORE6"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "ARGWMMFLAT1",
@@ -14955,7 +14955,7 @@
      "VOGTVM3215X"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCD2CLASSIC",
@@ -15023,7 +15023,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCD3X",
@@ -15081,11 +15081,11 @@
      "AUDLCDXC",
      "AUDLCDX",
      "AUDLCD5",
-     "AUDLCD5SX",
-     "AUDMM520",
      "SENHD800S",
      "DENAHD9200",
-     "SENHD820"
+     "SENHD820",
+     "AUDLCD5SX",
+     "AUDMM520"
     ],
     "rec": [
      "TTTI3",
@@ -15094,7 +15094,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCD5",
@@ -15148,13 +15148,13 @@
     ],
     "alt": [
      "AUDLCD5SX",
-     "AUDLCD3X",
      "SENHD800S",
      "SENHD820",
      "AUDMM500",
      "DENAHD9200",
      "BEYT1V3",
-     "BEYT5V3"
+     "BEYT5V3",
+     "AUDLCD3X"
     ],
     "rec": [
      "LUXX8",
@@ -15164,7 +15164,7 @@
      "TTTI3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCD5SX",
@@ -15234,7 +15234,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCDGX",
@@ -15297,7 +15297,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCDS20X",
@@ -15323,10 +15323,10 @@
      "label": "Sort",
      "price": 4190,
      "colorKey": "Black",
-     "ean": "0819343014724",
+     "ean": "819343014724",
      "url": "/audeze-lcd-s20-head-fi-hoeretelefoner/audlcds20bk/",
      "img": "hk:c3dd18fa-0f41-432b-91ab-a4cc1c987905",
-     "stock": "notInStockNonStockedItem",
+     "stock": "warehouseInStock",
      "specs": {
       "Vægt (kg)": "0,55",
       "Vægt emballage (kg)": "1,36",
@@ -15367,7 +15367,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCDX",
@@ -15454,7 +15454,7 @@
      "TTTI3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDLCDXC",
@@ -15543,7 +15543,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDMAXWELL2",
@@ -15614,7 +15614,7 @@
      "AQPERCH1BKX"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDMM100",
@@ -15645,7 +15645,7 @@
      "specs": {
       "Vægt (kg)": "1",
       "Vægt emballage (kg)": "1,36",
-      "Mål (emballage)": "15,2 x 25,4 x 27,9 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "15,24 x 25,4 x 27,94 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -15683,7 +15683,7 @@
      "TTTI3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDMM500",
@@ -15756,7 +15756,7 @@
      "TTTI3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "AUDMM520",
@@ -15787,7 +15787,7 @@
      "specs": {
       "Vægt (kg)": "0,56",
       "Vægt emballage (kg)": "3,62",
-      "Mål (emballage)": "27,900000000000002 x 33 x 22,900000000000002 cm (bredde x højde x dybde)"
+      "Mål (emballage)": "27,9 x 33 x 22,9 cm (bredde x højde x dybde)"
      }
     }
    ],
@@ -15821,7 +15821,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BEOGRACE",
@@ -15911,7 +15911,7 @@
      "BWPI8"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BEYIN",
@@ -15954,7 +15954,7 @@
      "BEYT1V3"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BEYT1V3",
@@ -16023,7 +16023,7 @@
      "LUXX9"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BEYT5V3",
@@ -16092,7 +16092,7 @@
      "AQDRAGONFLYCOPPERX"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BLSCB130",
@@ -16163,7 +16163,7 @@
      "ARGTT4MK2"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BLSDIRACCALKITX",
@@ -16215,7 +16215,7 @@
      "MARACINEMA50S2"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BLSFS231",
@@ -16273,7 +16273,7 @@
      "BLSPULSEFLEX2I"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BLSN030",
@@ -16354,7 +16354,7 @@
      "NADC268"
     ]
    },
-   "read": "2026-11-22"
+   "read": "2026-11-28"
   },
   {
    "sku": "BLSN132",
@@ -93602,8 +93602,8 @@
    },
    "cat": "/pladespiller/pladespiller-system/",
    "url": "/argtt3-argphono1/",
-   "price": 3798,
-   "was": 0,
+   "price": 3198,
+   "was": 3798,
    "img": "hk:c67a93dc-6a73-464d-a6b7-243f294c391f",
    "parts": [
     {
@@ -93685,7 +93685,7 @@
    },
    "cat": "/pladespiller/pladespiller-system/",
    "url": "/argtt4mk2-blsn331-dalisonik3/",
-   "price": 19694,
+   "price": 18494,
    "was": 20694,
    "img": "hk:4d7adb69-a9e2-40f8-b678-971f605cccbd",
    "parts": [
@@ -93732,7 +93732,7 @@
    },
    "cat": "/pladespiller/pladespiller-system/",
    "url": "/argtt4mk2-keflsx2/",
-   "price": 14867,
+   "price": 13667,
    "was": 17218,
    "img": "hk:8f8020e3-8ead-46b5-96a0-37e510f0eca2",
    "parts": [
@@ -93783,7 +93783,7 @@
    "cat": "/pladespiller/pladespiller-system/",
    "url": "/argttmk2-argforus5-blsn230/",
    "price": 8596,
-   "was": 9696,
+   "was": 8996,
    "img": "hk:44cb963a-7d46-409a-ba06-5ce3e357ed1d",
    "parts": [
     {
@@ -93979,7 +93979,7 @@
    },
    "cat": "/surround/hjemmebio-system/",
    "url": "/avc-x3900h-rubikore-6/",
-   "price": 104993,
+   "price": 104684,
    "was": 0,
    "img": "hk:6559f073-c6a2-4c7f-ba69-61d5a990db40",
    "parts": [
@@ -94042,7 +94042,7 @@
    },
    "cat": "/surround/hjemmebio-system/",
    "url": "/avcx3900h-704s3/",
-   "price": 81593,
+   "price": 81284,
    "was": 0,
    "img": "hk:b0c554f1-d7a9-4993-9a87-51a036378689",
    "parts": [
@@ -94138,7 +94138,7 @@
    "cat": "/tv/soundbar-hojtaler-tv-lyd/",
    "url": "/beam-era100sl/",
    "price": 4828,
-   "was": 6688,
+   "was": 0,
    "img": "hk:6a22aeae-8442-4ea0-a7f6-0acbd5379033",
    "parts": [
     {
@@ -94172,7 +94172,7 @@
    "cat": "/tv/soundbar-hojtaler-tv-lyd/",
    "url": "/beam-era100sl-sub/",
    "price": 7827,
-   "was": 10437,
+   "was": 0,
    "img": "hk:3e175f28-3c5f-4d98-8381-87bde5426336",
    "parts": [
     {
@@ -94215,7 +94215,7 @@
    "cat": "/tv/soundbar-hojtaler-tv-lyd/",
    "url": "/beam-sub-mini_1/",
    "price": 5578,
-   "was": 7439,
+   "was": 0,
    "img": "hk:3bc984e4-8f99-4f2f-b2ea-0cffff289abe",
    "parts": [
     {

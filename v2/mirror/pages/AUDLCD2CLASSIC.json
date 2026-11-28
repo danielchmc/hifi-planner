@@ -170,7 +170,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 8,
+     "availableQuantity": 4,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -211,37 +211,43 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "LCD-2 Classic leverer en medrivende, varm og meget detaljeret gengivelse med rene mellemtoner, sprøde højder og kraftfuld, kontrolleret bas. Komforten er generelt god ved længere lytning, men den solide metalkonstruktion gør hovedtelefonerne tunge, og pasformen kan føles usikker ved foroverbøjning. En kraftig forstærker og lejlighedsvis EQ hjælper med at få hele lydens punch, præcision og tilpasningsevne frem.",
+   "summary": "AUDLCD2CLASSIC leverer en fyldig, varm og særdeles detaljeret lytteoplevelse med punchy, kontrolleret bas, et rummeligt lydbillede og en imponerende naturlig gengivelse. Den solide komfort og brede anvendelighed til forskellige musikgenrer øger attraktiviteten, mens den tunge konstruktion og behovet for en kraftig forstærker begrænser hverdagsbrug. Samlet set gør den immersive lydkvalitet AUDLCD2CLASSIC til et overbevisende valg til seriøs lytning og omhyggelig systemtilpasning.",
    "headlines": {
-    "detailed, spacious and powerful sound": {
-     "sentimentAnalysis": "Anmeldelserne roser samstemmende lyden som detaljeret, rummelig, naturlig, afbalanceret og kraftfuld, især med stærk bas.",
-     "simpleTitle": "Detaljeret, rummelig og kraftfuld lyd",
+    "detailed, spacious and natural sound": {
+     "sentimentAnalysis": "Hovedtelefonerne roses for imponerende detaljegrad, naturlig og afbalanceret klang samt en bred og rummelig gengivelse.",
+     "simpleTitle": "Detaljeret, rummelig og naturlig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "317cbe47-d5cc-4743-a293-6786a132702a"
+     "key": "detailed-spacious-natural-sound",
+     "groupId": "3f0915e7-b4ee-4c2a-a189-956ebb813851"
     },
     "comfortable for extended listening": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pasformen som komfortabel, også under længere sessioner, med generelt god bærekomfort.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver pasformen som komfortabel og egnet til længere lyttesessioner.",
      "simpleTitle": "Komfortabel ved længere tids lytning",
      "bias": "positive",
-     "key": "comfort-and-weight",
-     "groupId": "b4694bed-49cb-45db-9b7c-d60ac73e0748"
+     "key": "comfortable-extended-listening",
+     "groupId": "2f162b84-6c89-497d-bc77-c4383c0773e7"
     },
     "heavy construction limits everyday use": {
-     "sentimentAnalysis": "Metalkonstruktionen giver soliditet, men gør hovedtelefonerne mærkbart tunge og mindre velegnede til afslappet hverdagsbrug.",
-     "simpleTitle": "Den høje vægt begrænser daglig brug",
+     "sentimentAnalysis": "Den solide metalkonstruktion opfattes som en ulempe, fordi hovedtelefonerne kan føles meget tunge og mindre egnede til hverdagsbrug.",
+     "simpleTitle": "Tung konstruktion begrænser hverdagsbrug",
      "bias": "negative",
-     "key": "comfort-and-weight",
-     "groupId": "b4694bed-49cb-45db-9b7c-d60ac73e0748"
+     "key": "heavy-everyday-use",
+     "groupId": "2f162b84-6c89-497d-bc77-c4383c0773e7"
+    },
+    "warm, powerful bass": {
+     "sentimentAnalysis": "Lyden beskrives som behageligt varm med kraftfuld, dyb og tilfredsstillende bas.",
+     "simpleTitle": "Varm og kraftfuld bas",
+     "bias": "positive",
+     "key": "warm-powerful-bass",
+     "groupId": "3f0915e7-b4ee-4c2a-a189-956ebb813851"
     }
    },
    "grouping": {
-    "317cbe47-d5cc-4743-a293-6786a132702a": {
+    "3f0915e7-b4ee-4c2a-a189-956ebb813851": {
      "title": "Lydkvalitet",
-     "id": "317cbe47-d5cc-4743-a293-6786a132702a",
+     "id": "3f0915e7-b4ee-4c2a-a189-956ebb813851",
      "references": [
       "6eea646b-c382-4346-91c4-57fd049eba80",
-      "9beeb8d1-3b27-45da-bc02-22c0229ea944",
       "08172722-aed0-4707-a9bd-65f3f562b753",
       "21ee3879-8a9a-40ed-9707-e547a897db7f",
       "ae880f1f-aa68-4a6b-ba73-c92e5f6fe9a2",
@@ -250,9 +256,9 @@
       "645a1e4c-c029-497e-b41a-b81ddff32e31"
      ]
     },
-    "b4694bed-49cb-45db-9b7c-d60ac73e0748": {
+    "2f162b84-6c89-497d-bc77-c4383c0773e7": {
      "title": "Komfort og vægt",
-     "id": "b4694bed-49cb-45db-9b7c-d60ac73e0748",
+     "id": "2f162b84-6c89-497d-bc77-c4383c0773e7",
      "references": [
       "6eea646b-c382-4346-91c4-57fd049eba80",
       "9beeb8d1-3b27-45da-bc02-22c0229ea944",
@@ -263,15 +269,15 @@
      ]
     }
    },
-   "rating": 4.80952380952381,
-   "count": 21,
+   "rating": 4.81818181818182,
+   "count": 22,
    "reviewCount": 10,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 4,
-    "5": 17
+    "5": 18
    }
   },
   "brandName": "Audeze",

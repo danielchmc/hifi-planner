@@ -154,13 +154,13 @@
     }
    ],
    "priceDetails": {
-    "price": 81593,
-    "priceFormatted": "81.593,-",
+    "price": 81284,
+    "priceFormatted": "81.284,-",
     "salesUnit": "System",
     "rawSalesUnit": "system",
     "salesQuantity": 1,
-    "unitPrice": 81593,
-    "unitPriceBefore": 81593
+    "unitPrice": 81284,
+    "unitPriceBefore": 81284
    },
    "bundleProducts": [
     {
@@ -183,7 +183,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24,
+        "availableQuantity": 21,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "17.999,-",
@@ -203,11 +203,10 @@
         "productCode": "BWDB4WH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager tirsdag den 22. december",
+        "deliveryDate": "2026-12-22T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 1,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "17.999,-",
        "priceRaw": 17999,
@@ -238,7 +237,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 1,
+        "availableQuantity": 4,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "10.499,-",
@@ -258,11 +257,10 @@
         "productCode": "BWHTM72S3WH"
        },
        "inventoryStatus": {
-        "inStock": true,
-        "description": "På lager. Leveringstid 1-2 hverdage",
+        "description": "Forventes på lager tirsdag den 22. december",
+        "deliveryDate": "2026-12-22T00:00:00Z",
         "canBuyOnline": true,
-        "availableQuantity": 1,
-        "inventoryStatusType": "warehouseInStock"
+        "inventoryStatusType": "notInStockAtpDate"
        },
        "priceFormatted": "10.499,-",
        "priceRaw": 10499,
@@ -284,7 +282,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 4,
+        "availableQuantity": 3,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "10.499,-",
@@ -316,7 +314,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 16,
+        "availableQuantity": 8,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "28.998,-",
@@ -339,7 +337,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 30,
+        "availableQuantity": 26,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "28.998,-",
@@ -362,7 +360,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 2-4 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 50,
+        "availableQuantity": 48,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "28.998,-",
@@ -394,7 +392,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 16,
+        "availableQuantity": 14,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.598,-",
@@ -417,7 +415,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 40,
+        "availableQuantity": 36,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.598,-",
@@ -440,7 +438,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 42,
+        "availableQuantity": 34,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "12.598,-",
@@ -472,11 +470,11 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 143,
+        "availableQuantity": 108,
         "inventoryStatusType": "warehouseInStock"
        },
-       "priceFormatted": "11.499,-",
-       "priceRaw": 11499,
+       "priceFormatted": "11.190,-",
+       "priceRaw": 11190,
        "salesUnit": "stk",
        "rawSalesUnit": "piece",
        "quantity": 1
@@ -484,90 +482,72 @@
      ],
      "parentProductCode": "DENAVCX3900H",
      "reviews": {
-      "summary": "Denon AVC-X3900H roses bredt for varm, klar og kraftfuld lyd, imponerende surroundindlevelse, dyb bas og avanceret signalbehandling. Dirac Live værdsættes især for bedre baskontrol, timing og dialogklarhed, mens Auro-3D tilfører en spændende ekstra dimension til musiklytning. Opsætning og kalibrering kan være krævende, og enkelte begrænsninger som manglende EU-tuner og kun én 12 V-trigger nævnes.",
+      "summary": "Denon AVC-X3900H roses bredt for en varm, punchy og meget detaljeret lyd med dybere bas, tydelig dialog og et omsluttende surroundfelt. Avanceret signalbehandling, Dirac Live og Auro-3D tilfører musikalitet, dynamik og fleksibilitet, mens de mange funktioner gør receiveren til en stærk opgradering af hjemmebiografen. Opsætning og kalibrering kan være krævende, men resultatet vurderes som besværet værd.",
       "headlines": {
-       "clear, powerful and immersive sound": {
-        "sentimentAnalysis": "Anmeldelserne beskriver markante forbedringer i klarhed, detaljer, dynamik, basdybde og surroundindlevelse samt en behagelig diskant uden skarphed.",
-        "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+       "clear, warm and immersive sound": {
+        "sentimentAnalysis": "Anmeldelserne beskriver en markant forbedring af klarhed, detaljer og surroundoplevelse med dyb bas og en behagelig diskant uden skarphed.",
+        "simpleTitle": "Klar, varm og omsluttende lyd",
         "bias": "positive",
         "key": "sound",
-        "groupId": "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f"
+        "groupId": "d17df700-62c8-48bb-ae19-762840c61606"
        },
-       "dirac Live improves bass, timing and dialogue": {
-        "sentimentAnalysis": "Dirac Live får æren for bedre baskontrol, timing på effekter og tydeligere dialog og foretrækkes af en anmelder frem for Audyssey.",
-        "simpleTitle": "Dirac Live forbedrer bas, timing og dialog",
+       "extensive features and immersive formats": {
+        "sentimentAnalysis": "Anmeldelserne værdsætter den avancerede signalbehandling, de mange lydindstillinger, bi-amping-understøttelsen og Auro-3D til musik og film.",
+        "simpleTitle": "Omfattende funktioner og omsluttende formater",
         "bias": "positive",
         "key": "features",
-        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
+        "groupId": "6f564b2a-4156-4129-9594-8b07a54144d7"
        },
-       "advanced sound modes add musical depth": {
-        "sentimentAnalysis": "De mange behandlingsmuligheder og Auro-3D-tilstanden roses for at udvide musikoplevelsen og tilføre en ny dimension.",
-        "simpleTitle": "Avancerede lydtilstande giver musikken mere dybde",
+       "dynamic home-cinema performance": {
+        "sentimentAnalysis": "Receiveren roses for kraftfuld og dynamisk filmlyd, tydeligere dialog og bedre kontrol over effekterne efter kalibrering.",
+        "simpleTitle": "Dynamisk hjemmebiograflyd",
+        "bias": "positive",
+        "key": "sound",
+        "groupId": "d17df700-62c8-48bb-ae19-762840c61606"
+       },
+       "dirac improves bass and timing": {
+        "sentimentAnalysis": "Dirac foretrækkes, fordi den bevarer bassen i musik, og får ros for bedre baskontrol, timing og tydeligere dialog.",
+        "simpleTitle": "Dirac forbedrer bas og timing",
         "bias": "positive",
         "key": "features",
-        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
-       },
-       "setup and calibration can be difficult": {
-        "sentimentAnalysis": "Nogle anmeldere finder TV-integration, lydopsætning og den nødvendige kalibrering kompliceret og vejledningen utilstrækkelig.",
-        "simpleTitle": "Opsætning og kalibrering kan være vanskelig",
-        "bias": "negative",
-        "key": "setup",
-        "groupId": "063fce37-a522-4595-9861-a95d9a6c8cfe"
-       },
-       "some connectivity features are limited": {
-        "sentimentAnalysis": "Manglen på EU-tuner, manglende mulighed for at sortere webradiokanaler og kun én 12 V-trigger nævnes som funktionelle begrænsninger.",
-        "simpleTitle": "Nogle tilslutningsfunktioner er begrænsede",
-        "bias": "negative",
-        "key": "features",
-        "groupId": "7bde3f17-2429-4000-b2b7-cc55abbca93e"
+        "groupId": "6f564b2a-4156-4129-9594-8b07a54144d7"
        }
       },
       "grouping": {
-       "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f": {
+       "d17df700-62c8-48bb-ae19-762840c61606": {
         "title": "Lydkvalitet",
-        "id": "29000df3-e8b1-46c8-b8d6-e7c83d5ce82f",
+        "id": "d17df700-62c8-48bb-ae19-762840c61606",
         "references": [
-         "204dfc13-ca7d-4d3c-a8db-3c6b16bff220",
          "957805f8-c92c-4eb7-aec3-63ae836d8373",
          "06ca9205-d72b-4da3-80af-4bd971f0b9c9",
-         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
          "1ca29f9a-7750-48f9-9bb9-41acee176ec9",
          "98400810-f5fb-4d25-bb69-49e8bcdcd1ea",
          "29aac145-a113-497e-a2a7-c1621bd4cde2",
          "0dde59db-4d78-4499-bacf-e905cc082a14",
-         "41f33456-165c-4664-9cd2-db3cb0010e91"
+         "41f33456-165c-4664-9cd2-db3cb0010e91",
+         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455"
         ]
        },
-       "7bde3f17-2429-4000-b2b7-cc55abbca93e": {
+       "6f564b2a-4156-4129-9594-8b07a54144d7": {
         "title": "Funktioner og signalbehandling",
-        "id": "7bde3f17-2429-4000-b2b7-cc55abbca93e",
+        "id": "6f564b2a-4156-4129-9594-8b07a54144d7",
         "references": [
          "957805f8-c92c-4eb7-aec3-63ae836d8373",
-         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
          "29aac145-a113-497e-a2a7-c1621bd4cde2",
          "0dde59db-4d78-4499-bacf-e905cc082a14",
          "41f33456-165c-4664-9cd2-db3cb0010e91"
         ]
-       },
-       "063fce37-a522-4595-9861-a95d9a6c8cfe": {
-        "title": "Opsætning og kalibrering",
-        "id": "063fce37-a522-4595-9861-a95d9a6c8cfe",
-        "references": [
-         "3d0cdff9-ad1f-444c-a097-29df753f4f60",
-         "79e04b0c-06d4-4e09-8fc4-2bc8e0ee1455",
-         "41f33456-165c-4664-9cd2-db3cb0010e91"
-        ]
        }
       },
-      "rating": 4.8,
-      "count": 20,
-      "reviewCount": 11,
+      "rating": 4.80952380952381,
+      "count": 21,
+      "reviewCount": 12,
       "distribution": {
        "1": 0,
        "2": 0,
        "3": 1,
        "4": 2,
-       "5": 17
+       "5": 18
       }
      }
     }
@@ -575,23 +555,23 @@
    "sellableOnWeb": true,
    "inventoryStatus": {
     "inStock": true,
-    "description": "På lager. Leveringstid 1-2 hverdage",
+    "description": "På lager. Leveringstid 2-4 hverdage",
     "canBuyOnline": true,
-    "numberOfStoresExperiencePartly": 11
+    "numberOfStoresExperiencePartly": 13
    }
   },
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.82492581602374,
-   "count": 337,
-   "reviewCount": 162,
+   "rating": 4.82647058823529,
+   "count": 340,
+   "reviewCount": 165,
    "distribution": {
     "1": 4,
     "2": 1,
     "3": 4,
     "4": 32,
-    "5": 296
+    "5": 299
    }
   },
   "boxContent": [],

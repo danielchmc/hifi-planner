@@ -187,7 +187,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 954,
+     "availableQuantity": 910,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -247,95 +247,77 @@
    {
     "modelType": "Pladespiller system",
     "price": {
-     "price": 3798,
-     "priceFormatted": "3.798,-",
+     "price": 3198,
+     "priceFormatted": "3.198,-",
+     "priceBefore": 3798,
+     "priceBeforeFormatted": "3.798,-",
+     "priceSavingsFormatted": "600,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 3798,
+     "unitPrice": 3198,
      "unitPriceBefore": 3798
     },
     "image": "https://images.hifiklubben.com/image/c67a93dc-6a73-464d-a6b7-243f294c391f",
+    "ribbons": [
+     {
+      "text": "Spar 16%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "title": "Argon Audio TT-3 + PHONO1",
     "url": "/argtt3-argphono1/"
    }
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon Phono1 får bred ros som en prisvenlig og kompakt RIAA-forforstærker, der er nem at installere og giver vinylafspilning et klart, varmt, detaljeret og kraftfuldt løft. Den solide konstruktion, det lille format og det stærke forhold mellem pris og ydelse gør den til en attraktiv opgradering til ældre pladespillere og moderne systemer som Sonos eller HEOS. De fleste enheder spiller støjsvagt og stabilt, men flere anmeldelser nævner brum eller kraftig støj på grund af jordforbindelse eller mulige kvalitetsproblemer.",
+   "summary": "ARGPHONO1 roses bredt som en kompakt og prisvenlig phono-forforstærker, der er nem at installere og giver klar, varm, detaljeret og kraftfuld lyd fra både vintage- og moderne pladespillere. Konstruktionen føles solid, og enheden fungerer godt med forskellige opsætninger inklusive Sonos, HEOS og soundbarer. De fleste oplevelser er støjfri og tilfredsstillende, men enkelte anmeldelser nævner brum eller kraftig støj på grund af jordforbindelse eller mulige kvalitetsproblemer.",
    "headlines": {
+    "clear, warm and detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver en markant forbedring med klar, varm, fyldig, detaljeret og mere kraftfuld gengivelse.",
+     "simpleTitle": "Klar, varm og detaljeret lyd",
+     "bias": "positive",
+     "key": "sound-quality",
+     "groupId": "16921aeb-a141-4892-aaf1-75193d88c697"
+    },
     "excellent value for money": {
-     "sentimentAnalysis": "Produktet vurderes gentagne gange som usædvanligt effektivt og prisvenligt i sin prisklasse.",
+     "sentimentAnalysis": "Kombinationen af lav pris, god lyd og pålidelig funktion roses gentagne gange.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "ad1e32ef-6c1c-4c4d-9b4a-dda1bcf859f3"
+     "groupId": "aa39e151-c4ff-47ef-901b-05e40bd41493"
     },
-    "clear, warm and detailed sound": {
-     "sentimentAnalysis": "Anmeldelserne roser en markant forbedring af klarhed, varme, detaljer, dybde, bas og musikalitet.",
-     "simpleTitle": "Klar, varm og detaljeret lyd",
+    "easy plug-and-play setup": {
+     "sentimentAnalysis": "Enheden beskrives gentagne gange som nem at tilslutte, hurtig at installere og bredt kompatibel med pladespillere og tilsluttede lydsystemer.",
+     "simpleTitle": "Nem plug-and-play-opsætning",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "46adebbf-cd3b-4e90-a8a6-d194734757ba"
+     "key": "ease-compatibility",
+     "groupId": "5af2680f-b000-4c76-9ca2-43d1c6067fbf"
     },
-    "easy plug-and-play installation": {
-     "sentimentAnalysis": "Forforstærkeren beskrives gentagne gange som nem at tilslutte og kompatibel med mange pladespillere, forstærkere, soundbars og trådløse systemer.",
-     "simpleTitle": "Nem plug-and-play-installation",
+    "compact, sturdy construction": {
+     "sentimentAnalysis": "Det lille metalhus anses for solidt, stabilt og nemt at placere diskret.",
+     "simpleTitle": "Kompakt og robust konstruktion",
      "bias": "positive",
-     "key": "setup",
-     "groupId": "cf36f7e2-c1d3-45a7-adb9-312f707485e2"
-    },
-    "compact and solid construction": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver konsekvent det lille format, den diskrete placering og den robuste, tunge metalkonstruktion.",
-     "simpleTitle": "Kompakt og solid konstruktion",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "95856b2b-8891-40e6-9622-a6af3f99430b"
-    },
-    "quiet performance after correct grounding": {
-     "sentimentAnalysis": "Flere anmeldelser rapporterer om et stille eller brumfrit signal, nogle efter korrekt tilslutning af pladespillerens og forstærkerens jord.",
-     "simpleTitle": "Støjsvag drift efter korrekt jording",
-     "bias": "positive",
-     "key": "noise",
-     "groupId": "fb34e63b-a4f4-447b-9248-3e4f394b563a"
+     "key": "build-design",
+     "groupId": "9c6ead3c-809e-4db8-ab49-6aed6da00d09"
     },
     "hum and noise can occur": {
-     "sentimentAnalysis": "Et mindretal af anmeldelserne beskriver vedvarende brum eller kraftig støj og peger på mulige defekte enheder eller uensartet kvalitetskontrol.",
+     "sentimentAnalysis": "Nogle enheder gav vedvarende brum eller betydelig støj; jordforbindelse løste ét tilfælde, mens andre førte til returnering eller mistanke om kvalitetsproblemer i en hel batch.",
      "simpleTitle": "Brum og støj kan forekomme",
      "bias": "negative",
-     "key": "noise",
-     "groupId": "fb34e63b-a4f4-447b-9248-3e4f394b563a"
+     "key": "noise-grounding",
+     "groupId": "715d160f-4094-4851-b3ff-ac6779b7f01b"
     }
    },
    "grouping": {
-    "cf36f7e2-c1d3-45a7-adb9-312f707485e2": {
-     "title": "Installation og kompatibilitet",
-     "id": "cf36f7e2-c1d3-45a7-adb9-312f707485e2",
-     "references": [
-      "35f7fcdc-d61b-40b4-bc15-157a0e8f2c5f",
-      "abd4a79a-b0d1-46e6-9eea-cf3602e7b9c4",
-      "da457c1b-439e-459e-afae-4223b1beef1c",
-      "ae23df76-16d8-4793-8a1f-6fec0c4b3c50",
-      "de5f95b9-54e4-435b-a64c-3fac4fff0946",
-      "c2533132-13fb-4ca7-add8-10f72a8c2947",
-      "6036e6b4-b97d-40a5-acca-eeb686698cc1",
-      "e64be80d-3cb3-42a7-b2cf-553c7b3d546a",
-      "eaa464e4-ecfe-4e67-805e-c9930f6bcb54",
-      "a72425fc-da35-43b6-b495-113b518b6c47",
-      "3cd45e47-dfb1-40d5-a12a-044cb51b6268",
-      "123131d8-46f5-4e81-a7e7-73a4ed18ce33",
-      "b06d53ac-804a-467f-ab9e-01bb9f6ad0ac",
-      "35a26fd7-8ca4-4c58-b374-f836c01f40db",
-      "bc543664-75e7-45e3-a8f2-d3beacc0a67b",
-      "963fcae3-87d8-4a0c-90e6-08a292c6c587",
-      "0dac31d6-c83b-4e59-a87c-18062bb0b305",
-      "4a0c1311-ee62-44a5-9c58-9c0895ff14af",
-      "249c114c-cd97-4e27-b1ad-d041e6d53206"
-     ]
-    },
-    "46adebbf-cd3b-4e90-a8a6-d194734757ba": {
+    "16921aeb-a141-4892-aaf1-75193d88c697": {
      "title": "Lydkvalitet",
-     "id": "46adebbf-cd3b-4e90-a8a6-d194734757ba",
+     "id": "16921aeb-a141-4892-aaf1-75193d88c697",
      "references": [
       "23c6455b-0d4b-45c8-94a2-a131c26d919c",
       "da457c1b-439e-459e-afae-4223b1beef1c",
@@ -348,38 +330,46 @@
       "7f14901a-b2c3-4ac9-89b2-5db72606ca23",
       "f65c967d-5a58-4bfd-bfb3-882d59de882f",
       "c6352eb3-4b88-4799-ab21-473cb02ccb8c",
+      "cc597daf-d2f1-41b3-8a9f-c3dacaba902d",
+      "635b47b1-9420-40d8-ac23-eef6c3f0f4c5",
+      "5ff109fe-f339-4558-a7fc-6ef784d6ba26",
       "5bb01d94-01ef-4308-87a7-f092912a3d9b",
+      "8db5a40e-eb4b-4379-8af9-87858a61a5ab",
       "bdc979c4-a9ed-48ea-89af-92b92d5f9acc",
-      "51349df8-5e7c-40a1-9b82-33edea089792",
-      "4f528169-47a6-4e53-9161-53b1f8385294",
       "b021be00-11c2-47ac-aeb5-f86a6dc9efe1",
       "8b9ead80-9c73-407e-ac29-c35c031b647a",
       "796164e5-6889-4924-bd7f-60688c05689d"
      ]
     },
-    "95856b2b-8891-40e6-9622-a6af3f99430b": {
-     "title": "Byggekvalitet og design",
-     "id": "95856b2b-8891-40e6-9622-a6af3f99430b",
+    "5af2680f-b000-4c76-9ca2-43d1c6067fbf": {
+     "title": "Brugervenlighed og kompatibilitet",
+     "id": "5af2680f-b000-4c76-9ca2-43d1c6067fbf",
      "references": [
-      "de119d81-756e-4e00-822d-708c1409fdf2",
-      "68197879-f913-4c83-a3e6-daff7b15d60a",
-      "a3b40b57-57ea-4784-b042-4c7be2969ed1",
-      "43a5eaff-c6e6-4e35-a31c-8d558ef0d2a3",
-      "13a27fb7-034a-448f-8b66-8e5ac6053e42",
-      "83745d0d-c7f0-45eb-a072-7d2d4b3c2875",
-      "5ff109fe-f339-4558-a7fc-6ef784d6ba26",
-      "5d2cf304-0f2b-4060-8461-ade9a7db97f2",
-      "8db5a40e-eb4b-4379-8af9-87858a61a5ab",
-      "bdc979c4-a9ed-48ea-89af-92b92d5f9acc",
-      "1952cabf-f36c-4ced-b00c-0762fb580d68",
-      "05377e84-a744-418f-9563-57349a230769",
-      "27586796-aec0-4029-ad92-d14316dbfe07",
-      "87dcf20f-8592-4866-a92f-d2625669367e"
+      "35f7fcdc-d61b-40b4-bc15-157a0e8f2c5f",
+      "abd4a79a-b0d1-46e6-9eea-cf3602e7b9c4",
+      "da457c1b-439e-459e-afae-4223b1beef1c",
+      "ae23df76-16d8-4793-8a1f-6fec0c4b3c50",
+      "104d9ccd-574f-4d5f-93fc-2f815a75c006",
+      "4d8965fa-20fd-4841-bf03-9c6bb0a20659",
+      "c2533132-13fb-4ca7-add8-10f72a8c2947",
+      "e64be80d-3cb3-42a7-b2cf-553c7b3d546a",
+      "eaa464e4-ecfe-4e67-805e-c9930f6bcb54",
+      "35a26fd7-8ca4-4c58-b374-f836c01f40db",
+      "b06d53ac-804a-467f-ab9e-01bb9f6ad0ac",
+      "51349df8-5e7c-40a1-9b82-33edea089792",
+      "de5f95b9-54e4-435b-a64c-3fac4fff0946",
+      "cf6e5550-590d-4fd8-97e5-202c4acf1eba",
+      "2fb4e444-2046-4e49-9bf7-495310eba5f2",
+      "249c114c-cd97-4e27-b1ad-d041e6d53206",
+      "bc543664-75e7-45e3-a8f2-d3beacc0a67b",
+      "963fcae3-87d8-4a0c-90e6-08a292c6c587",
+      "0dac31d6-c83b-4e59-a87c-18062bb0b305",
+      "4a0c1311-ee62-44a5-9c58-9c0895ff14af"
      ]
     },
-    "ad1e32ef-6c1c-4c4d-9b4a-dda1bcf859f3": {
-     "title": "Pris og værdi",
-     "id": "ad1e32ef-6c1c-4c4d-9b4a-dda1bcf859f3",
+    "aa39e151-c4ff-47ef-901b-05e40bd41493": {
+     "title": "Værdi for pengene",
+     "id": "aa39e151-c4ff-47ef-901b-05e40bd41493",
      "references": [
       "f8171373-695e-4b16-9468-dfa9b2ffb6a1",
       "2c19f3ce-7818-425e-b1f5-2037edbd28c6",
@@ -387,26 +377,42 @@
       "0844355e-6f5e-4cbd-bd25-7fc2a10593ff",
       "4bd6ab63-a80a-4cb8-83c0-f694bca56303",
       "a72425fc-da35-43b6-b495-113b518b6c47",
-      "cc597daf-d2f1-41b3-8a9f-c3dacaba902d",
-      "635b47b1-9420-40d8-ac23-eef6c3f0f4c5",
-      "5ff109fe-f339-4558-a7fc-6ef784d6ba26",
       "d7fde173-4624-4c71-b9b6-34c43d8640c6",
+      "05377e84-a744-418f-9563-57349a230769",
       "fc8a0adf-62c5-48bf-89ec-cc686c1b755c",
       "a14a0f77-5f3b-4e85-9fe5-3a9d7a708132",
-      "e8ab5e9b-4f2d-4ad2-886c-c9dc14fb7dea"
+      "e8ab5e9b-4f2d-4ad2-886c-c9dc14fb7dea",
+      "87dcf20f-8592-4866-a92f-d2625669367e"
      ]
     },
-    "fb34e63b-a4f4-447b-9248-3e4f394b563a": {
-     "title": "Støj og jording",
-     "id": "fb34e63b-a4f4-447b-9248-3e4f394b563a",
+    "9c6ead3c-809e-4db8-ab49-6aed6da00d09": {
+     "title": "Konstruktion og design",
+     "id": "9c6ead3c-809e-4db8-ab49-6aed6da00d09",
+     "references": [
+      "de119d81-756e-4e00-822d-708c1409fdf2",
+      "68197879-f913-4c83-a3e6-daff7b15d60a",
+      "a3b40b57-57ea-4784-b042-4c7be2969ed1",
+      "43a5eaff-c6e6-4e35-a31c-8d558ef0d2a3",
+      "13a27fb7-034a-448f-8b66-8e5ac6053e42",
+      "83745d0d-c7f0-45eb-a072-7d2d4b3c2875",
+      "5d2cf304-0f2b-4060-8461-ade9a7db97f2",
+      "8db5a40e-eb4b-4379-8af9-87858a61a5ab",
+      "bdc979c4-a9ed-48ea-89af-92b92d5f9acc",
+      "27586796-aec0-4029-ad92-d14316dbfe07",
+      "1952cabf-f36c-4ced-b00c-0762fb580d68"
+     ]
+    },
+    "715d160f-4094-4851-b3ff-ac6779b7f01b": {
+     "title": "Støj og jordforbindelse",
+     "id": "715d160f-4094-4851-b3ff-ac6779b7f01b",
      "references": [
       "656f7cbb-a89c-4206-a5f3-19c5787e7021",
       "da457c1b-439e-459e-afae-4223b1beef1c",
+      "4f528169-47a6-4e53-9161-53b1f8385294",
       "8db5a40e-eb4b-4379-8af9-87858a61a5ab",
       "cf84ba3a-1052-4367-9417-e8c388d60bba",
-      "4f528169-47a6-4e53-9161-53b1f8385294",
-      "8fcf1367-2154-4a87-aee4-164cd0198b5f",
       "1952cabf-f36c-4ced-b00c-0762fb580d68",
+      "8fcf1367-2154-4a87-aee4-164cd0198b5f",
       "894be934-8d9c-4ae2-ac37-b701e7aaef52"
      ]
     }

@@ -90,7 +90,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 20330,
+        "availableQuantity": 19857,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "180,-",
@@ -102,73 +102,81 @@
      ],
      "parentProductCode": "ESSBA1SCX",
      "reviews": {
-      "summary": "ESSBA1SCX leverer varm, klar og slagkraftig lyd med pålidelige tilslutninger og solid ydeevne i hverdagen. Kablet giver især god værdi til budgetanlæg, og flere brugere oplever lyden som tydeligt bedre end fra ældre kabler. Den største ulempe er den forholdsvis stive og ufleksible PVC-konstruktion, mens udseendet virker mere funktionelt end eksklusivt.",
+      "summary": "ESSBA1SCX leverer varm, fyldig og behagelig lyd til daglig musiklytning og giver en tydelig forbedring i forhold til ældre kabler. Den solide konstruktion, pålidelige tilslutninger og lave pris gør kablet til et overbevisende valg til praktiske lydanlæg. Den største ulempe er den stive og ufleksible PVC-kappe, som kræver forsigtig håndtering for at undgå knæk.",
       "headlines": {
-       "cable is stiff and inflexible": {
-        "sentimentAnalysis": "Flere anmeldelser kritiserer kablet for at være stift og kræve forsigtig håndtering for at undgå knæk.",
-        "simpleTitle": "Kablet er stift og ufleksibelt",
+       "solid quality at a budget price": {
+        "sentimentAnalysis": "Anmeldelserne beskriver ofte kablet som solidt, af god kvalitet og pengene værd.",
+        "simpleTitle": "Solid kvalitet til en lav pris",
+        "bias": "positive",
+        "key": "build-value",
+        "groupId": "3fb26b25-1328-46db-92b7-232a0afdd887"
+       },
+       "enjoyable sound for everyday listening": {
+        "sentimentAnalysis": "Kablet roses gentagne gange for god og behagelig lyd, der egner sig til regelmæssig musiklytning.",
+        "simpleTitle": "Behagelig lyd til daglig musiklytning",
+        "bias": "positive",
+        "key": "sound-quality",
+        "groupId": "256733ff-8bba-4691-b694-6ecc785bf03f"
+       },
+       "stiff and inflexible cable jacket": {
+        "sentimentAnalysis": "Flere anmeldelser peger på den ringe fleksibilitet som den største praktiske svaghed; PVC-kappen beskrives som stiv og tilbøjelig til at knække ved forkert håndtering.",
+        "simpleTitle": "Stiv og ufleksibel kabelkappe",
         "bias": "negative",
-        "key": "build-flexibility",
-        "groupId": "3fe93a52-d458-45de-b046-431462ce77f1"
+        "key": "flexibility",
+        "groupId": "5ec9e65a-1a34-462b-8d28-7bbc4ec097be"
        },
-       "affordable choice for budget systems": {
-        "sentimentAnalysis": "Kablet betragtes gennemgående som prisvenligt og velegnet til budgetudstyr.",
-        "simpleTitle": "Prisvenligt valg til budgetanlæg",
+       "connections work as intended": {
+        "sentimentAnalysis": "Kablet opfattes som enkelt og pålideligt, og fungerende kabler samt passende tilslutninger lever op til de grundlæggende forventninger.",
+        "simpleTitle": "Tilslutningerne fungerer som de skal",
         "bias": "positive",
-        "key": "value",
-        "groupId": "2b01df30-f3d1-419b-b834-a6510641e956"
-       },
-       "clear, enjoyable sound": {
-        "sentimentAnalysis": "Kablet roses for at levere god og behagelig lyd.",
-        "simpleTitle": "Klar og behagelig lyd",
-        "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "afccf4a4-b391-4e79-9108-efae57f00031"
-       },
-       "sound improves on older cables": {
-        "sentimentAnalysis": "Lyden opleves som en mærkbar forbedring i forhold til tidligere kabler.",
-        "simpleTitle": "Bedre lyd end med ældre kabler",
-        "bias": "positive",
-        "key": "sound-quality",
-        "groupId": "afccf4a4-b391-4e79-9108-efae57f00031"
-       },
-       "solid and durable construction": {
-        "sentimentAnalysis": "Kablet opleves som solidt og tilstrækkeligt godt bygget til formålet.",
-        "simpleTitle": "Solid og holdbar konstruktion",
-        "bias": "positive",
-        "key": "build-flexibility",
-        "groupId": "3fe93a52-d458-45de-b046-431462ce77f1"
+        "key": "functionality",
+        "groupId": "2d872c3d-d463-42f9-928a-d4b4af860a27"
        }
       },
       "grouping": {
-       "3fe93a52-d458-45de-b046-431462ce77f1": {
-        "title": "Byggekvalitet og fleksibilitet",
-        "id": "3fe93a52-d458-45de-b046-431462ce77f1",
+       "3fb26b25-1328-46db-92b7-232a0afdd887": {
+        "title": "Byggekvalitet og værdi",
+        "id": "3fb26b25-1328-46db-92b7-232a0afdd887",
+        "references": [
+         "663d0921-186e-49c0-b426-5515511dd6a1",
+         "77a7fd13-f9d7-4989-8ee1-8328d661db57",
+         "f0ad41f6-7cb8-4662-9f41-681d0323a584",
+         "88ad7c34-4431-49b8-9544-c22bc92e33ad",
+         "e89e5dc9-9baf-422c-a37d-6c7d6fff33cf",
+         "d0de5221-90ff-4be3-b12c-fc132f6af87d",
+         "0794111e-e30e-450b-a2e0-f769549491e8",
+         "df57dbb6-e791-496c-8ead-136f716fc9f3"
+        ]
+       },
+       "256733ff-8bba-4691-b694-6ecc785bf03f": {
+        "title": "Lydkvalitet",
+        "id": "256733ff-8bba-4691-b694-6ecc785bf03f",
+        "references": [
+         "126724ef-9cc3-4628-9e43-fc7489f22894",
+         "178b6386-cca4-42fb-aa25-8c5e564f5a84",
+         "7d846274-8a95-4f28-b28f-8389c46d47f5",
+         "ca084ab5-60bd-41d8-ae3b-f8ebef6339d2",
+         "959e8b9b-ebd1-413f-a46f-9c29442d1f38",
+         "6051ef55-97a9-49af-8786-bae45bcc4594"
+        ]
+       },
+       "2d872c3d-d463-42f9-928a-d4b4af860a27": {
+        "title": "Funktionalitet og tilslutninger",
+        "id": "2d872c3d-d463-42f9-928a-d4b4af860a27",
+        "references": [
+         "22c13f29-e829-4ccc-a504-7b916e6f9828",
+         "126724ef-9cc3-4628-9e43-fc7489f22894",
+         "178b6386-cca4-42fb-aa25-8c5e564f5a84",
+         "0794111e-e30e-450b-a2e0-f769549491e8"
+        ]
+       },
+       "5ec9e65a-1a34-462b-8d28-7bbc4ec097be": {
+        "title": "Kablets fleksibilitet",
+        "id": "5ec9e65a-1a34-462b-8d28-7bbc4ec097be",
         "references": [
          "72953760-cfd7-4adc-89c3-9364c9049316",
          "6ca88a8b-bfe1-4882-b0a1-434f2b0f6fb3",
-         "d71fa9aa-fe14-4223-92b1-0f993df259dd",
-         "77a7fd13-f9d7-4989-8ee1-8328d661db57",
-         "d0de5221-90ff-4be3-b12c-fc132f6af87d"
-        ]
-       },
-       "2b01df30-f3d1-419b-b834-a6510641e956": {
-        "title": "Værdi for pengene",
-        "id": "2b01df30-f3d1-419b-b834-a6510641e956",
-        "references": [
-         "663d0921-186e-49c0-b426-5515511dd6a1",
-         "f0ad41f6-7cb8-4662-9f41-681d0323a584",
-         "e89e5dc9-9baf-422c-a37d-6c7d6fff33cf",
-         "d0de5221-90ff-4be3-b12c-fc132f6af87d"
-        ]
-       },
-       "afccf4a4-b391-4e79-9108-efae57f00031": {
-        "title": "Lydkvalitet",
-        "id": "afccf4a4-b391-4e79-9108-efae57f00031",
-        "references": [
-         "178b6386-cca4-42fb-aa25-8c5e564f5a84",
-         "7d846274-8a95-4f28-b28f-8389c46d47f5",
-         "ca084ab5-60bd-41d8-ae3b-f8ebef6339d2"
+         "d71fa9aa-fe14-4223-92b1-0f993df259dd"
         ]
        }
       },
@@ -205,7 +213,7 @@
         "inStock": true,
         "description": "På lager. Leveringstid 1-2 hverdage",
         "canBuyOnline": true,
-        "availableQuantity": 24524,
+        "availableQuantity": 23236,
         "inventoryStatusType": "warehouseInStock"
        },
        "priceFormatted": "280,-",
@@ -217,15 +225,15 @@
      ],
      "parentProductCode": "ESSBA1BANBFASIX",
      "reviews": {
-      "rating": 4.70588235294118,
-      "count": 17,
+      "rating": 4.73684210526316,
+      "count": 19,
       "reviewCount": 3,
       "distribution": {
        "1": 0,
        "2": 0,
        "3": 1,
        "4": 3,
-       "5": 13
+       "5": 15
       }
      }
     }
@@ -242,15 +250,15 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "rating": 4.51923076923077,
-   "count": 104,
+   "rating": 4.52830188679245,
+   "count": 106,
    "reviewCount": 32,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 14,
     "4": 18,
-    "5": 71
+    "5": 73
    }
   },
   "boxContent": [],

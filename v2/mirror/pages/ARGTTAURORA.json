@@ -136,14 +136,30 @@
     "productCode": "ARGTTAURORABK",
     "ean": "5706957021406",
     "priceDetails": {
-     "priceValueId": 1185103,
-     "price": 9999,
-     "priceFormatted": "9.999,-",
+     "priceValueId": 1212099,
+     "price": 7999,
+     "priceFormatted": "7.999,-",
+     "priceBefore": 9999,
+     "priceBeforeFormatted": "9.999,-",
+     "priceSavingsFormatted": "2.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 9999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 7999,
+     "unitPriceBefore": 9999
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -178,7 +194,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 135,
+     "availableQuantity": 24,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -247,14 +263,30 @@
     "productCode": "ARGTTAURORAWA",
     "ean": "5706957021413",
     "priceDetails": {
-     "priceValueId": 1185108,
-     "price": 9999,
-     "priceFormatted": "9.999,-",
+     "priceValueId": 1212105,
+     "price": 7999,
+     "priceFormatted": "7.999,-",
+     "priceBefore": 9999,
+     "priceBeforeFormatted": "9.999,-",
+     "priceSavingsFormatted": "2.000,-",
      "salesUnit": "stk",
      "rawSalesUnit": "piece",
      "salesQuantity": 1,
-     "unitPrice": 9999
+     "offerExpiryDate": "2026-11-30T22:59:00Z",
+     "unitPrice": 7999,
+     "unitPriceBefore": 9999
     },
+    "ribbons": [
+     {
+      "text": "Spar 20%",
+      "ribbonType": "discount",
+      "link": {
+       "title": "",
+       "target": "_blank",
+       "kind": "LinkInfo"
+      }
+     }
+    ],
     "techSpecs": [
      {
       "index": 37,
@@ -288,8 +320,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 24,
-     "availableQuantity": 254,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 212,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -357,14 +389,14 @@
   "displayBookDemo": true,
   "reviews": {
    "rating": 5,
-   "count": 7,
-   "reviewCount": 2,
+   "count": 11,
+   "reviewCount": 5,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 0,
-    "5": 7
+    "5": 11
    }
   },
   "boxContent": [

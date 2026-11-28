@@ -149,7 +149,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 11,
-     "availableQuantity": 9,
+     "availableQuantity": 6,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -197,103 +197,69 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGON STREAM2MK3 er en kompakt, alsidig og generelt brugervenlig streamer, som opgraderer ældre hi-fi-anlæg med pålidelig internet-radio og Spotify-adgang. Lyden beskrives oftest som god, klar og overraskende kompetent til prisen, selv om enkelte anmeldelser nævner skuffende Spotify-kvalitet eller svag dynamik. Enkel opsætning og et stort udvalg af radiostationer er tydelige styrker, mens netværksudfald, begrænsede tilslutningsmuligheder, manglende NAS-understøttelse og et lille display går igen som kritikpunkter. Varm, punchy og immersiv streaming gør produktet til en levende moderne opgradering af eksisterende lydanlæg.",
+   "summary": "Argon Stream 2 MK3 er en kompakt, alsidig og generelt pålidelig streamer, der med nem opsætning tilføjer internet radio og Spotify til eksisterende hi-fi-anlæg. Lyden beskrives oftest som klar, god eller mærkbart forbedret med varm, fyldig og behagelig gengivelse, selv om enkelte anmeldelser kun finder Spotify-lyden acceptabel eller lidt mat. De største forbehold gælder de begrænsede tilslutningsmuligheder, manglende understøttelse af NAS eller lokale musikbiblioteker, lejlighedsvise buffer- eller netværksudfald samt det lille display og den sparsomme dokumentation.",
    "headlines": {
-    "good sound and a clear improvement for older hi-fi systems": {
-     "sentimentAnalysis": "Streameren roses ofte for god lyd i høj kvalitet og for tydeligt at forbedre ældre lydanlæg.",
-     "simpleTitle": "God lyd og en tydelig forbedring af ældre hi-fi-anlæg",
+    "clearer, fuller and improved sound": {
+     "sentimentAnalysis": "Mange anmeldelser beskriver lyden som god, af høj kvalitet eller mærkbart forbedret, især ved radio og Spotify.",
+     "simpleTitle": "Klarere, fyldigere og bedre lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "8643108b-eb09-4cad-92e3-ecd969d51473"
+     "groupId": "bc540b54-268f-44a0-831e-a457dfe8d365"
     },
-    "excellent access to internet radio and Spotify": {
-     "sentimentAnalysis": "Internet-radio, det store udvalg af stationer og Spotify-streaming værdsættes konsekvent som nyttige funktioner.",
-     "simpleTitle": "Fremragende adgang til internet-radio og Spotify",
-     "bias": "positive",
-     "key": "features",
-     "groupId": "3292f0ff-3ca0-402d-a58f-fa804f526102"
-    },
-    "easy setup and convenient everyday use": {
-     "sentimentAnalysis": "Opsætning og betjening roses gentagne gange som hurtig, enkel og intuitiv.",
-     "simpleTitle": "Nem opsætning og bekvem daglig brug",
+    "simple setup and convenient operation": {
+     "sentimentAnalysis": "Opsætningen roses gentagne gange for at være hurtig, enkel og nem at betjene.",
+     "simpleTitle": "Nem opsætning og betjening",
      "bias": "positive",
      "key": "setup",
-     "groupId": "8db998c8-e4e0-4ae1-80af-25104f5d5182"
+     "groupId": "1b9ae7a6-a31a-4be6-8ebe-371360dd95b7"
     },
-    "reliable network connection in many setups": {
-     "sentimentAnalysis": "Flere brugere oplever hurtig Wi-Fi-registrering, stabil modtagelse og problemfri netværksdrift.",
-     "simpleTitle": "Stabil netværksforbindelse i mange opsætninger",
+    "useful internet radio and Spotify functionality": {
+     "sentimentAnalysis": "Internet radio, mange stationer og Spotify-integration værdsættes ofte som nyttige tilføjelser til ældre hi-fi-anlæg.",
+     "simpleTitle": "Nyttige funktioner til internet radio og Spotify",
+     "bias": "positive",
+     "key": "features",
+     "groupId": "9e6674d3-5383-4314-b549-3b1e0acbefd7"
+    },
+    "reliable Wi-Fi and stable playback": {
+     "sentimentAnalysis": "Flere anmeldelser roser den pålidelige netværksforbindelse, hurtige Wi-Fi-registrering og problemfri drift.",
+     "simpleTitle": "Stabilt Wi-Fi og pålidelig afspilning",
      "bias": "positive",
      "key": "network",
-     "groupId": "43d90010-7db5-487f-b1e6-974b90d84205"
+     "groupId": "99d66510-7822-431c-bf53-3e414cc2e360"
     },
-    "limited compatibility and connections": {
-     "sentimentAnalysis": "Flere anmeldelser savner afspilning fra NAS eller lokale biblioteker, kablet netværk eller bredere Bluetooth- og Wi-Fi-streamingmuligheder.",
-     "simpleTitle": "Begrænset kompatibilitet og tilslutninger",
+    "the display is too small or hard to read": {
+     "sentimentAnalysis": "Flere anmeldelser finder displayet lille, svært at aflæse eller ønsker et større format.",
+     "simpleTitle": "Displayet er for lille eller svært at aflæse",
      "bias": "negative",
-     "key": "features",
-     "groupId": "3292f0ff-3ca0-402d-a58f-fa804f526102"
+     "key": "display",
+     "groupId": "f7b51b9c-b5f1-42c3-9d98-5772309c4006"
     },
-    "sound quality can be disappointing": {
-     "sentimentAnalysis": "Flere anmeldelser kritiserer svag Spotify-lyd, begrænset dynamik eller middelmådig samlet kvalitet.",
-     "simpleTitle": "Lydkvaliteten kan skuffe",
+    "spotify sound can be dull or underwhelming": {
+     "sentimentAnalysis": "Et mindretal oplever trods indstillinger for høj kvalitet en mudret, mat eller generelt skuffende Spotify-gengivelse.",
+     "simpleTitle": "Spotify-lyden kan virke mat eller skuffende",
      "bias": "negative",
      "key": "sound",
-     "groupId": "8643108b-eb09-4cad-92e3-ecd969d51473"
+     "groupId": "bc540b54-268f-44a0-831e-a457dfe8d365"
     },
-    "dropouts and network limitations can disrupt listening": {
-     "sentimentAnalysis": "Nogle anmeldelser beskriver buffering, ustabile radioforbindelser og inkompatibilitet med visse Wi-Fi-opsætninger.",
-     "simpleTitle": "Udfald og netværksbegrænsninger kan forstyrre lytningen",
+    "buffering and connection dropouts interrupt listening": {
+     "sentimentAnalysis": "Nogle brugere rapporterer begrænsninger ved skjulte netværk, korte udfald på internet radio eller hyppig buffering ved både radio og Spotify.",
+     "simpleTitle": "Buffering og forbindelsesudfald forstyrrer lytningen",
      "bias": "negative",
      "key": "network",
-     "groupId": "43d90010-7db5-487f-b1e6-974b90d84205"
+     "groupId": "99d66510-7822-431c-bf53-3e414cc2e360"
     },
-    "compact design is attractive but the display is too small": {
-     "sentimentAnalysis": "De kompakte mål og det flotte design værdsættes, mens displayets læsbarhed gentagne gange kritiseres.",
-     "simpleTitle": "Det kompakte design er attraktivt, men displayet er for lille",
-     "bias": "meh",
-     "key": "design",
-     "groupId": "d2419842-b2ac-4787-9536-1b490e81f8ea"
-    },
-    "some users find installation difficult": {
-     "sentimentAnalysis": "Et mindretal rapporterer om vanskelig opsætning eller utilstrækkelige instruktioner.",
-     "simpleTitle": "Nogle brugere synes, opsætningen er vanskelig",
+    "nas and local-library streaming is missing": {
+     "sentimentAnalysis": "Flere anmeldelser kritiserer specifikt den manglende afspilning fra NAS- eller LAN-musikbiblioteker.",
+     "simpleTitle": "NAS- og streaming fra lokale musikbiblioteker mangler",
      "bias": "negative",
-     "key": "setup",
-     "groupId": "8db998c8-e4e0-4ae1-80af-25104f5d5182"
+     "key": "features",
+     "groupId": "9e6674d3-5383-4314-b549-3b1e0acbefd7"
     }
    },
    "grouping": {
-    "8db998c8-e4e0-4ae1-80af-25104f5d5182": {
-     "title": "Opsætning og betjening",
-     "id": "8db998c8-e4e0-4ae1-80af-25104f5d5182",
-     "references": [
-      "42b6925f-3737-43c1-aa7e-562e1a776157",
-      "068a64cb-d26f-4065-913e-a752ca08185c",
-      "98a637b3-203f-4f7f-9b94-d737c648ea4c",
-      "4643ac33-8502-4541-9d16-0bdd3335673a",
-      "22579ea2-bdca-4875-ae1c-785658553b99",
-      "21ec26c3-78c6-4385-a3b1-0cfda2e78848",
-      "102af7c0-bb6c-4a47-94f2-c1754da71ebc",
-      "1f1a41b6-9567-4abc-8bd5-d2d91a4337dd",
-      "30cb8a64-eca6-4fea-bdc4-921b71a802a9",
-      "e36e44c7-70cf-4910-9d23-979f10efe577",
-      "f2a88304-4954-470e-90e4-8ab355f41b96",
-      "9c22a7bb-94fc-4084-9a3b-1e57781f43e0",
-      "19a25bd5-137d-46d8-baca-db6ae8b561f3",
-      "c855d186-08f4-40a1-8c3e-85d39ec39b1",
-      "0cbc7e6f-808c-41e7-a0a4-4a199215fa3e",
-      "07a789ec-486a-41cf-b41b-7bd636faddaa",
-      "55bafc57-69b1-45dd-9372-3f80a108dc8e",
-      "fd9befcf-5344-4662-8641-ecdd15081e16",
-      "585da624-6ec8-4d45-b121-a6f729b4123d",
-      "957f141d-0899-4283-a782-3b0421918c24",
-      "82a894da-7ad3-449c-8b0c-961c9442cf82"
-     ]
-    },
-    "8643108b-eb09-4cad-92e3-ecd969d51473": {
+    "bc540b54-268f-44a0-831e-a457dfe8d365": {
      "title": "Lydkvalitet",
-     "id": "8643108b-eb09-4cad-92e3-ecd969d51473",
+     "id": "bc540b54-268f-44a0-831e-a457dfe8d365",
      "references": [
       "068a64cb-d26f-4065-913e-a752ca08185c",
       "52d2e590-7f93-4905-9dbc-c49a8131c22e",
@@ -302,6 +268,7 @@
       "f77d16db-6b36-4256-a3e6-a7fdc25aa904",
       "b4385316-53d9-4e6a-8205-47b0d3cf47a9",
       "557f546c-7bba-46ad-9c10-4a68d1aa2f38",
+      "e36e44c7-70cf-4910-9d23-979f10efe577",
       "c135b546-198b-4d95-805d-64b6465a808e",
       "387fbbdf-1286-4c5c-a248-03e947e5da16",
       "442b8bdc-0031-4e2b-a468-ca2588ff7831",
@@ -310,57 +277,74 @@
       "0cbc7e6f-808c-41e7-a0a4-4a199215fa3e",
       "90bc92cc-3267-4fed-9f86-ff6629a5bd91",
       "22b20651-ec8b-4c3b-84cb-e66e0d366f9f",
-      "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c",
       "cf20a04f-cca7-4a63-bfbf-658675bbc070",
       "bca2be92-e4c9-4fdb-9e4a-0ab05f395739",
+      "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c",
       "82a894da-7ad3-449c-8b0c-961c9442cf82"
      ]
     },
-    "3292f0ff-3ca0-402d-a58f-fa804f526102": {
-     "title": "Streamingfunktioner og kompatibilitet",
-     "id": "3292f0ff-3ca0-402d-a58f-fa804f526102",
+    "1b9ae7a6-a31a-4be6-8ebe-371360dd95b7": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "1b9ae7a6-a31a-4be6-8ebe-371360dd95b7",
+     "references": [
+      "42b6925f-3737-43c1-aa7e-562e1a776157",
+      "068a64cb-d26f-4065-913e-a752ca08185c",
+      "4643ac33-8502-4541-9d16-0bdd3335673a",
+      "22579ea2-bdca-4875-ae1c-785658553b99",
+      "21ec26c3-78c6-4385-a3b1-0cfda2e78848",
+      "102af7c0-bb6c-4a47-94f2-c1754da71ebc",
+      "1f1a41b6-9567-4abc-8bd5-d2d91a4337dd",
+      "30cb8a64-eca6-4fea-bdc4-921b71a802a9",
+      "e36e44c7-70cf-4910-9d23-979f10efe577",
+      "c855d186-08f4-40a1-8c3e-85d39fc39b1",
+      "9c22a7bb-94fc-4084-9a3b-1e57781f43e0",
+      "19a25bd5-137d-46d8-baca-db6ae8b561f3",
+      "07a789ec-486a-41cf-b41b-7bd636faddaa",
+      "55bafc57-69b1-45dd-9372-3f80a108dc8e",
+      "0cbc7e6f-808c-41e7-a0a4-4a199215fa3e",
+      "585da624-6ec8-4d45-b121-a6f729b4123d",
+      "82a894da-7ad3-449c-8b0c-961c9442cf82"
+     ]
+    },
+    "99d66510-7822-431c-bf53-3e414cc2e360": {
+     "title": "Netværks- og streamingstabilitet",
+     "id": "99d66510-7822-431c-bf53-3e414cc2e360",
+     "references": [
+      "a10d86a3-85a8-4f77-a63f-d6f3ff61e3e8",
+      "08dff3d6-4355-49d1-bb7d-e02165bec410",
+      "30cb8a64-eca6-4fea-bdc4-921b71a802a9",
+      "44db3499-52d0-4bb3-9f38-954bc9e2e6d8",
+      "c135b546-198b-4d95-805d-64b6465a808e",
+      "bc7c6244-7d1d-4fff-9417-f6701c09f99f",
+      "957f141d-0899-4283-a782-3b0421918c24",
+      "867622cf-a728-41f3-a239-422d3de92c1c",
+      "bca2be92-e4c9-4fdb-9e4a-0ab05f395739"
+     ]
+    },
+    "9e6674d3-5383-4314-b549-3b1e0acbefd7": {
+     "title": "Tilslutninger og funktioner",
+     "id": "9e6674d3-5383-4314-b549-3b1e0acbefd7",
      "references": [
       "516e7aa3-95dd-4197-9133-b2e1c03f33b6",
       "08dff3d6-4355-49d1-bb7d-e02165bec410",
       "0217ab80-4356-49aa-af9b-f033c6dc533e",
-      "557f546c-7bba-46ad-9c10-4a68d1aa2f38",
       "d68f8ca8-ad22-4532-8a76-416653d4be10",
       "c135b546-198b-4d95-805d-64b6465a808e",
-      "cba5d533-938a-4a48-8945-b07d8dc403ca",
       "90bc92cc-3267-4fed-9f86-ff6629a5bd91",
-      "9a23def6-2cc1-467c-9af2-11eaf7e05dd9",
       "e7972382-14fd-4c76-8597-1302795aad03",
       "f339b922-e07f-4188-bfc0-ee5f98235397",
-      "22b20651-ec8b-4c3b-84cb-e66e0d366f9f",
-      "302c96e2-9a55-4c64-9147-4937b6bc6740",
       "295b25c5-6e9b-4e1b-a4a7-7bbc9f8c937c"
      ]
     },
-    "43d90010-7db5-487f-b1e6-974b90d84205": {
-     "title": "Netværksstabilitet og tilslutning",
-     "id": "43d90010-7db5-487f-b1e6-974b90d84205",
-     "references": [
-      "516e7aa3-95dd-4197-9133-b2e1c03f33b6",
-      "a10d86a3-85a8-4f77-a63f-d6f3ff61e3e8",
-      "08dff3d6-4355-49d1-bb7d-e02165bec410",
-      "c135b546-198b-4d95-805d-64b6465a808e",
-      "bc7c6244-7d1d-4fff-9417-f6701c09f99f",
-      "de024133-361f-45cd-b08e-fbebdb7d7dc3",
-      "957f141d-0899-4283-a782-3b0421918c24",
-      "867622cf-a728-41f3-a239-422d3de92c1c",
-      "bca2be92-e4c9-4fdb-9e4a-0ab05f395739",
-      "30cb8a64-eca6-4fea-bdc4-921b71a802a9"
-     ]
-    },
-    "d2419842-b2ac-4787-9536-1b490e81f8ea": {
+    "f7b51b9c-b5f1-42c3-9d98-5772309c4006": {
      "title": "Display og design",
-     "id": "d2419842-b2ac-4787-9536-1b490e81f8ea",
+     "id": "f7b51b9c-b5f1-42c3-9d98-5772309c4006",
      "references": [
       "de208541-42b5-467a-a524-619a57b2256b",
+      "de024133-361f-45cd-b08e-fbebdb7d7dc3",
       "29e29643-aad6-4913-af0e-a6cbd44d2f37",
       "90bc92cc-3267-4fed-9f86-ff6629a5bd91",
       "9a23def6-2cc1-467c-9af2-11eaf7e05dd9",
-      "4d1278ae-5451-45ab-b6c4-da483ba068bf",
       "82a894da-7ad3-449c-8b0c-961c9442cf82"
      ]
     }

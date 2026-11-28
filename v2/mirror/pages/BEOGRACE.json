@@ -220,7 +220,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 24,
+     "availableQuantity": 21,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -352,7 +352,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 4,
-     "availableQuantity": 14,
+     "availableQuantity": 12,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -428,50 +428,51 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BEOGRACE leverer en førsteklasses og medrivende lytteoplevelse med varm, kraftfuld og meget detaljeret lyd, imponerende støjkontrol, luksuriøs konstruktion og alsidige funktioner. Øretelefonerne roses som yderst kompetente allroundere til musik, rejser, sport og gaming. Den ekstravagante pris og det hurtigt afladede batteri i etuiet er de største forbehold, men den samlede vurdering er stadig meget begejstret.",
+   "summary": "BEOGRACE leverer en førsteklasses high-end-oplevelse med varm, slagkraftig og meget detaljeret lyd, et stort og omsluttende lydbillede samt en fremragende balance mellem bas, mellemtone og diskant. Stærk ANC, en fremragende transparenstilstand og alsidige funktioner gør øretelefonerne imponerende til rejser, sport, gaming og hverdagslytning. Den luksuriøse konstruktion og det brede funktionsudvalg retfærdiggør premium-positioneringen, selv om prisen er høj, og etuiets batteri kan tømmes hurtigt i standby.",
    "headlines": {
-    "rich, spacious and well-balanced sound": {
-     "sentimentAnalysis": "Anmeldelserne roser en detaljeret, kraftfuld og medrivende gengivelse med stor lydboble, præcis placering af instrumenter samt afbalanceret bas, mellemtone og diskant.",
-     "simpleTitle": "Fyldig, rummelig og velafbalanceret lyd",
+    "rich, spacious and highly detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser lyden som high-end, fantastisk og usædvanligt detaljeret med en stor scene samt afbalanceret bas, mellemtone og diskant.",
+     "simpleTitle": "Fyldig, rummelig og meget detaljeret lyd",
      "bias": "positive",
      "key": "sound",
-     "groupId": "9b46e29e-ff34-4c98-bd01-1db5d14476c0"
+     "groupId": "729ccb6e-55af-46a6-b83e-6d0efe38fc52"
     },
-    "premium materials and construction": {
-     "sentimentAnalysis": "Luksuriøse materialer, et flot udseende og førsteklasses forarbejdning understreger premiumkarakteren.",
-     "simpleTitle": "Eksklusive materialer og konstruktion",
-     "bias": "positive",
-     "key": "design",
-     "groupId": "bcdaad49-0b4a-46a8-b860-703eed143732"
-    },
-    "effective ANC and exceptional transparency mode": {
-     "sentimentAnalysis": "ANC'en opleves som effektiv på rejser og under pendling, mens transparenstilstanden er naturlig nok til samtaler og opmærksomhed på trafikken omkring en.",
-     "simpleTitle": "Effektiv ANC og fremragende transparenstilstand",
+    "effective ANC with exceptional transparency": {
+     "sentimentAnalysis": "ANC opfattes som effektiv, mens transparenstilstanden roses for en naturlig gengivelse og tydeligt hørbare samtaler og trafiklyde.",
+     "simpleTitle": "Effektiv ANC med fremragende transparens",
      "bias": "positive",
      "key": "noise-control",
-     "groupId": "be7d5366-c1b3-4981-94cd-33608d6b663c"
+     "groupId": "8b2b470b-dcd0-44b0-ade2-aeab7545c807"
     },
-    "versatile features for sport, gaming and daily use": {
-     "sentimentAnalysis": "Funktionssættet opleves som omfattende og praktisk, især til sport, gaming med lav latenstid og hverdagslytning.",
-     "simpleTitle": "Alsidige funktioner til sport, gaming og hverdagsbrug",
+    "premium materials and luxurious construction": {
+     "sentimentAnalysis": "Øretelefonerne forbindes konsekvent med attraktivt design, eksklusive materialer og fremragende byggekvalitet.",
+     "simpleTitle": "Eksklusive materialer og luksuriøs konstruktion",
      "bias": "positive",
-     "key": "features",
-     "groupId": "817fd594-251c-47e5-af9c-0915f8c8c53b"
-    },
-    "the premium price is difficult to ignore": {
-     "sentimentAnalysis": "Den høje pris bliver tydeligt fremhævet, selv om den samlede værdi stadig vurderes som god.",
-     "simpleTitle": "Premiumprisen er svær at overse",
-     "bias": "negative",
      "key": "design",
-     "groupId": "bcdaad49-0b4a-46a8-b860-703eed143732"
+     "groupId": "2c3d6037-f62e-47a3-9abb-34a0393729d1"
+    },
+    "premium pricing is justified by the feature set": {
+     "sentimentAnalysis": "Selv om prisen beskrives som høj eller ekstravagant, vurderes den samlede værdi som pengene værd på grund af lyd, konstruktion og alsidighed.",
+     "simpleTitle": "Premiumprisen retfærdiggøres af funktionerne",
+     "bias": "positive",
+     "key": "price",
+     "groupId": "aa205495-5541-4fb4-80d5-86515ac6f2a4"
+    },
+    "the price is undeniably high": {
+     "sentimentAnalysis": "Den høje premiumpris nævnes udtrykkeligt som en ulempe, selv om købet stadig vurderes som pengene værd.",
+     "simpleTitle": "Prisen er ubestrideligt høj",
+     "bias": "negative",
+     "key": "price",
+     "groupId": "aa205495-5541-4fb4-80d5-86515ac6f2a4"
     }
    },
    "grouping": {
-    "9b46e29e-ff34-4c98-bd01-1db5d14476c0": {
+    "729ccb6e-55af-46a6-b83e-6d0efe38fc52": {
      "title": "Lydkvalitet",
-     "id": "9b46e29e-ff34-4c98-bd01-1db5d14476c0",
+     "id": "729ccb6e-55af-46a6-b83e-6d0efe38fc52",
      "references": [
       "1700657d-4bab-4c73-9f2c-fe1aa053fb1b",
+      "b4470354-ab1a-4774-af46-4b5c59fbab17",
       "78e38fad-e4b9-40e4-a95c-f64c69906c23",
       "d64010e1-c808-40db-8f7f-e45e2f116ffc",
       "70458b88-dfb1-42b4-9f40-d49a9708d53e",
@@ -482,30 +483,29 @@
       "593e92d1-0c2f-4bd1-8017-a4166eb36163"
      ]
     },
-    "bcdaad49-0b4a-46a8-b860-703eed143732": {
-     "title": "Design og byggekvalitet",
-     "id": "bcdaad49-0b4a-46a8-b860-703eed143732",
-     "references": [
-      "d82e3fad-fbf9-44fe-b37b-37212e269f59",
-      "f793d090-d29b-48c6-9f01-4fa3fc528885",
-      "ad7c3d09-9388-47a2-8a06-d60ea71ffed0",
-      "6208a855-883f-4c8e-85f1-773688dbfd0a"
-     ]
-    },
-    "be7d5366-c1b3-4981-94cd-33608d6b663c": {
+    "8b2b470b-dcd0-44b0-ade2-aeab7545c807": {
      "title": "Støjreduktion og transparens",
-     "id": "be7d5366-c1b3-4981-94cd-33608d6b663c",
+     "id": "8b2b470b-dcd0-44b0-ade2-aeab7545c807",
      "references": [
       "78e38fad-e4b9-40e4-a95c-f64c69906c23",
       "d82e3fad-fbf9-44fe-b37b-37212e269f59",
       "ad7c3d09-9388-47a2-8a06-d60ea71ffed0"
      ]
     },
-    "817fd594-251c-47e5-af9c-0915f8c8c53b": {
-     "title": "Funktioner og alsidighed",
-     "id": "817fd594-251c-47e5-af9c-0915f8c8c53b",
+    "2c3d6037-f62e-47a3-9abb-34a0393729d1": {
+     "title": "Design og byggekvalitet",
+     "id": "2c3d6037-f62e-47a3-9abb-34a0393729d1",
      "references": [
-      "70458b88-dfb1-42b4-9f40-d49a9708d53e",
+      "d82e3fad-fbf9-44fe-b37b-37212e269f59",
+      "ad7c3d09-9388-47a2-8a06-d60ea71ffed0",
+      "6208a855-883f-4c8e-85f1-773688dbfd0a"
+     ]
+    },
+    "aa205495-5541-4fb4-80d5-86515ac6f2a4": {
+     "title": "Pris",
+     "id": "aa205495-5541-4fb4-80d5-86515ac6f2a4",
+     "references": [
+      "78e38fad-e4b9-40e4-a95c-f64c69906c23",
       "ad7c3d09-9388-47a2-8a06-d60ea71ffed0"
      ]
     }

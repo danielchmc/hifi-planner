@@ -42,21 +42,21 @@
   },
   "techSpecs": [
    {
+    "index": 125,
+    "title": "Generelle egenskaber",
+    "content": [
+     {
+      "value": "Trådløst gaming headset\nPlayStation-version passer til PlayStation 4/5, PC, macOS, Android, iOS, Nintendo Switch\nXbox-version passer til Xbox One, Xbox Series X/S, PC, macOS, Android, iOS, Nintendo Switch\n90 mm drivere (Planar Magnetic)  \nUltra-thin Uniforce membraner \nEnkeltsidet Neodym N50 Fluxor/Fazor magnetsystem \nSLAM-teknologi (Symmetric Linear Acoustic Modulator)\nMaksimalt lydtryk >115 dB\nMultipoint Bluetooth (samtidig forbindelse til 2 enheder)\nUltra Low Latency Wireless op til 24-bit/96kHz ved brug af medfølgende USB-C dongle eller LC3plus kompatibel enhed\nLossless 24-bit/96kHz HD-audio via USB-kabel\nDedikeret Audeze App til EQ, presets, sidetone og Game/Chat mix*\nHøjkvalitets aftagelig boom-mikrofon + 2 retningsbestemte mikrofoner pr. ørekop med FILTER AI støjreduktion\nØrepuder i kunstlæder og memoryskum\nBatteritid: 80 timer, 20 min hurtigopladning giver 20 timers batteritid\n* Dolby Atmos og Game/Chat mix understøttes kun i Xbox-version."
+     }
+    ]
+   },
+   {
     "index": 10,
     "title": "Produktdata",
     "content": [
      {
       "term": "Teknologier",
       "value": "Dolby Atmos"
-     }
-    ]
-   },
-   {
-    "index": 125,
-    "title": "Generelle egenskaber",
-    "content": [
-     {
-      "value": "Trådløst gaming headset\nPlayStation-version passer til PlayStation 4/5, PC, macOS, Android, iOS, Nintendo Switch\nXbox-version passer til Xbox One, Xbox Series X/S, PC, macOS, Android, iOS, Nintendo Switch\n90 mm drivere (Planar Magnetic)  \nUltra-thin Uniforce membraner \nEnkeltsidet Neodym N50 Fluxor/Fazor magnetsystem \nSLAM-teknologi (Symmetric Linear Acoustic Modulator)\nMaksimalt lydtryk >115 dB\nMultipoint Bluetooth (samtidig forbindelse til 2 enheder)\nUltra Low Latency Wireless op til 24-bit/96kHz ved brug af medfølgende USB-C dongle eller LC3plus kompatibel enhed\nLossless 24-bit/96kHz HD-audio via USB-kabel\nDedikeret Audeze App til EQ, presets, sidetone og Game/Chat mix*\nHøjkvalitets aftagelig boom-mikrofon + 2 retningsbestemte mikrofoner pr. ørekop med FILTER AI støjreduktion\nØrepuder i kunstlæder og memoryskum\nBatteritid: 80 timer, 20 min hurtigopladning giver 20 timers batteritid\n* Dolby Atmos og Game/Chat mix understøttes kun i Xbox-version."
      }
     ]
    },
@@ -190,8 +190,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 4,
-     "availableQuantity": 179,
+     "numberOfStoresExperience": 6,
+     "availableQuantity": 132,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -296,8 +296,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 5,
-     "availableQuantity": 75,
+     "numberOfStoresExperience": 4,
+     "availableQuantity": 78,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -359,48 +359,41 @@
   "variantNavigationTypeHeader": "Type",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AUDMAXWELL2 leverer varm, klar og omsluttende lyd til musik, film og konsolspil og giver især trådløst en stærk oplevelse. Komfort ved lange sessioner, nemt EQ-skift og bred platformunderstøttelse giver betydelig værdi. Den tunge konstruktion, besværlige opsætning, lejlighedsvise knitren uden lyd og mindre overbevisende surround- eller musikgengivelse gør den høje pris sværere at forsvare til visse formål.",
+   "summary": "AUDMAXWELL2 leverer enestående klar, varm og omsluttende lyd til musik, film og konsolspil, og især lydgengivelsen, mikrofonen og den fleksible EQ-funktion får ros. Komforten er god nok til lange sessioner, mens batteritiden imponerer. De største forbehold gælder besværlig opsætning, høj vægt, skuffende musik- eller surroundydelse for nogle brugere, lejlighedsvis knitren og prisen.",
    "headlines": {
-    "clear, powerful and immersive sound": {
-     "sentimentAnalysis": "Lyden roses bredt som klar, kraftfuld og en markant forbedring i forhold til tidligere headsets, især til musik og film.",
-     "simpleTitle": "Klar, kraftfuld og omsluttende lyd",
+    "strong gaming experience": {
+     "sentimentAnalysis": "Headsettet beskrives gentagne gange som et fremragende valg til PlayStation, Xbox og gaming generelt, med en mærkbar forbedring af spillyden.",
+     "simpleTitle": "Stærk gamingoplevelse",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b"
+     "key": "strong-gaming-experience",
+     "groupId": "76c74226-ba47-4d01-a804-7d5c3cd32878"
     },
-    "strong choice for console gaming": {
-     "sentimentAnalysis": "Konsolspil får begejstret ros, og headsettet vurderes som særligt velegnet til PlayStation og Xbox.",
-     "simpleTitle": "Stærkt valg til konsolspil",
+    "clear, powerful sound": {
+     "sentimentAnalysis": "Anmeldelserne roser det usædvanligt klare og kraftfulde lydbillede samt den forbedrede lydscene.",
+     "simpleTitle": "Klar og kraftfuld lyd",
      "bias": "positive",
-     "key": "gaming",
-     "groupId": "11ce498c-b20d-4637-b24f-3082d9271626"
+     "key": "clear-powerful-sound",
+     "groupId": "401eb3cf-3122-40d6-bf42-be11eec537b1"
     },
-    "surround and music performance can disappoint": {
-     "sentimentAnalysis": "Surround mangler den ønskede lydspredning, mens musikgengivelsen beskrives som skuffende i forhold til prisen.",
-     "simpleTitle": "Surround- og musikgengivelsen kan skuffe",
+    "music and surround sound disappoint some": {
+     "sentimentAnalysis": "Nogle anmeldelser finder musik- eller surroundgengivelsen mindre imponerende end forventet, især sammenlignet med prisen eller konkurrerende kablede løsninger.",
+     "simpleTitle": "Musik og surroundlyd skuffer nogle",
      "bias": "negative",
-     "key": "sound",
-     "groupId": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b"
+     "key": "music-surround-limitations",
+     "groupId": "401eb3cf-3122-40d6-bf42-be11eec537b1"
     },
     "comfortable for long sessions": {
-     "sentimentAnalysis": "Komforten er god nok til længere tids brug, selv om den betydelige vægt bemærkes.",
-     "simpleTitle": "Komfortabelt til lange sessioner",
+     "sentimentAnalysis": "Anmeldelserne viser, at headsettet forbliver komfortabelt ved længere tids brug, selv om en anmeldelse bemærker den høje vægt.",
+     "simpleTitle": "Komfortabel til lange sessioner",
      "bias": "positive",
-     "key": "comfort",
-     "groupId": "2a7c42e2-6184-47de-a294-a98f83f28be6"
-    },
-    "setup takes effort but works well": {
-     "sentimentAnalysis": "Den indledende opsætning opleves som vanskelig, men det fungerende resultat og de fleksible EQ-funktioner gør besværet umagen værd.",
-     "simpleTitle": "Opsætningen kræver arbejde, men fungerer godt",
-     "bias": "meh",
-     "key": "setup",
-     "groupId": "43e5e402-2429-4b30-915d-1600ceb19981"
+     "key": "long-session-comfort",
+     "groupId": "6cb58e82-7708-47f8-8521-ba5a768da42b"
     }
    },
    "grouping": {
-    "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b": {
+    "401eb3cf-3122-40d6-bf42-be11eec537b1": {
      "title": "Lydkvalitet",
-     "id": "1c3e02d2-1f3a-42d3-9fa5-d5f7eadd391b",
+     "id": "401eb3cf-3122-40d6-bf42-be11eec537b1",
      "references": [
       "2e467ea6-b211-4289-afb7-a3d07b27842a",
       "2d1e284f-acd5-4a9c-b21e-a3c78b4719a7",
@@ -410,9 +403,9 @@
       "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc"
      ]
     },
-    "11ce498c-b20d-4637-b24f-3082d9271626": {
-     "title": "Gaming",
-     "id": "11ce498c-b20d-4637-b24f-3082d9271626",
+    "76c74226-ba47-4d01-a804-7d5c3cd32878": {
+     "title": "Gaming-ydeevne",
+     "id": "76c74226-ba47-4d01-a804-7d5c3cd32878",
      "references": [
       "2e467ea6-b211-4289-afb7-a3d07b27842a",
       "f1e334c9-246e-48ea-9a99-ac1a8b9315f7",
@@ -422,32 +415,24 @@
       "6629b447-9f28-444f-a220-de7d86428256"
      ]
     },
-    "2a7c42e2-6184-47de-a294-a98f83f28be6": {
-     "title": "Komfort",
-     "id": "2a7c42e2-6184-47de-a294-a98f83f28be6",
+    "6cb58e82-7708-47f8-8521-ba5a768da42b": {
+     "title": "Komfort og vægt",
+     "id": "6cb58e82-7708-47f8-8521-ba5a768da42b",
      "references": [
       "2d1e284f-acd5-4a9c-b21e-a3c78b4719a7",
       "0960e9e9-5558-4bae-99ab-af177df92614"
      ]
-    },
-    "43e5e402-2429-4b30-915d-1600ceb19981": {
-     "title": "Opsætning og software",
-     "id": "43e5e402-2429-4b30-915d-1600ceb19981",
-     "references": [
-      "4b4116ee-73fc-4fc3-bd3f-c17a8c94c738",
-      "cab39b30-8ea9-42ea-9ee9-c24f9c921ddc"
-     ]
     }
    },
-   "rating": 4.71428571428571,
-   "count": 21,
+   "rating": 4.72727272727273,
+   "count": 22,
    "reviewCount": 11,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 2,
     "4": 2,
-    "5": 17
+    "5": 18
    }
   },
   "boxContent": [

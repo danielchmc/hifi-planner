@@ -108,7 +108,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 7,
-     "availableQuantity": 156,
+     "availableQuantity": 106,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -143,21 +143,21 @@
    {
     "modelType": "Musikstreamer",
     "price": {
-     "price": 9097,
-     "priceFormatted": "9.097,-",
+     "price": 8757,
+     "priceFormatted": "8.757,-",
      "priceBefore": 11097,
      "priceBeforeFormatted": "11.097,-",
-     "priceSavingsFormatted": "2.000,-",
+     "priceSavingsFormatted": "2.340,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 9097,
+     "unitPrice": 8757,
      "unitPriceBefore": 11097
     },
     "image": "https://images.hifiklubben.com/image/57c80949-37e1-4582-b9ca-59db092b2db6",
     "ribbons": [
      {
-      "text": "Spar 18%",
+      "text": "Spar 21%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -172,21 +172,21 @@
    {
     "modelType": "Musikstreamer",
     "price": {
-     "price": 6097,
-     "priceFormatted": "6.097,-",
+     "price": 5757,
+     "priceFormatted": "5.757,-",
      "priceBefore": 7097,
      "priceBeforeFormatted": "7.097,-",
-     "priceSavingsFormatted": "1.000,-",
+     "priceSavingsFormatted": "1.340,-",
      "salesUnit": "System",
      "rawSalesUnit": "system",
      "salesQuantity": 1,
-     "unitPrice": 6097,
+     "unitPrice": 5757,
      "unitPriceBefore": 7097
     },
     "image": "https://images.hifiklubben.com/image/2b5b0c1e-2364-4004-8f16-048aeea65e22",
     "ribbons": [
      {
-      "text": "Spar 14%",
+      "text": "Spar 19%",
       "ribbonType": "discount",
       "link": {
        "title": "",
@@ -201,51 +201,52 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "BLSDIRACCALKITX er en særdeles effektiv og brugervenlig målemikrofon, der giver fremragende resultater med Dirac-kompatible Bluesound- og NAD-systemer. Dirac-kalibreringen giver en fyldigere, bredere og mere omsluttende lyd med strammere, mere kontrolleret bas og tydeligere definition. God kvalitet, en rimelig pris og bred anvendelighed gør sættet til en værdifuld investering.",
+   "summary": "BLSDIRACCALKITX er et brugervenligt og prisvenligt mikrofonsæt, der fungerer pålideligt med kompatibelt Bluesound- og NAD-udstyr. Sammen med Dirac leverer sættet en varm, slagkraftig og mere omsluttende lyd med bredere stereoperspektiv, strammere bas og tydeligere rumkorrektion. Den enkle opsætning og de stærke resultater gør sættet til en særdeles god investering i en bedre lytteoplevelse.",
    "headlines": {
-    "worthwhile investment and fair pricing": {
-     "sentimentAnalysis": "Sættet vurderes som god værdi, fordi den rimelige pris og resultaterne retfærdiggør investeringen.",
-     "simpleTitle": "Værdifuld investering og rimelig pris",
+    "easy to install and use": {
+     "sentimentAnalysis": "Flere anmeldelser beskriver sættet som nemt at tilslutte, installere og betjene.",
+     "simpleTitle": "Nem at installere og bruge",
      "bias": "positive",
-     "key": "quality_value",
-     "groupId": "2e7140bf-00cb-4296-891b-c102bfabd165"
+     "key": "setup-use",
+     "groupId": "5d4ee394-4ef5-4577-8926-b9c02dff8238"
     },
-    "works well with NAD and Bluesound systems": {
-     "sentimentAnalysis": "Sættet fungerer ifølge anmeldelserne godt sammen med flere NAD- og Bluesound-Powernode-enheder.",
-     "simpleTitle": "Fungerer godt med NAD- og Bluesound-systemer",
+    "dirac creates a much wider, clearer and tighter sound": {
+     "sentimentAnalysis": "Dirac roses gentagne gange for en tydelig hørbar forbedring med fyldigere lyd, bredere stereoperspektiv, strammere bas og bedre definition.",
+     "simpleTitle": "Dirac giver en meget bredere, klarere og strammere lyd",
+     "bias": "positive",
+     "key": "dirac-results",
+     "groupId": "939047fa-fc65-4d70-af0b-da46de656951"
+    },
+    "reliable compatibility with NAD and Bluesound devices": {
+     "sentimentAnalysis": "Ifølge anmeldelserne fungerer sættet perfekt med flere NAD- og Bluesound-komponenter, herunder NAD C658, Powernode 331 og Powernode N330.",
+     "simpleTitle": "Pålidelig kompatibilitet med NAD- og Bluesound-enheder",
      "bias": "positive",
      "key": "compatibility",
-     "groupId": "a15307c5-f16f-4df0-8c0b-ba5d231daa8d"
+     "groupId": "bea307bc-22bb-4ecd-8cb6-441b607c2a26"
     },
-    "simple installation and operation": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver sættet som nemt at installere og bruge med gode resultater.",
-     "simpleTitle": "Enkel installation og betjening",
+    "good value for the quality and results": {
+     "sentimentAnalysis": "Anmeldelserne beskriver sættet som af høj kvalitet, rimeligt prissat og investeringen værd.",
+     "simpleTitle": "God værdi for kvalitet og resultater",
      "bias": "positive",
-     "key": "ease_of_use",
-     "groupId": "9cb6f28f-db30-499c-886c-eda473eebc0e"
-    },
-    "fuller, wider and tighter sound": {
-     "sentimentAnalysis": "Dirac-kalibreringen roses for fyldigere, bredere og bedre defineret lyd samt strammere bas.",
-     "simpleTitle": "Fyldigere, bredere og strammere lyd",
-     "bias": "positive",
-     "key": "sound_results",
-     "groupId": "1969283f-82b1-43a8-ba3b-29c93d752351"
+     "key": "value-quality",
+     "groupId": "f7d01652-4057-4f85-8bdf-fed8cee29efe"
     }
    },
    "grouping": {
-    "a15307c5-f16f-4df0-8c0b-ba5d231daa8d": {
-     "title": "Systemkompatibilitet",
-     "id": "a15307c5-f16f-4df0-8c0b-ba5d231daa8d",
+    "5d4ee394-4ef5-4577-8926-b9c02dff8238": {
+     "title": "Opsætning og brugervenlighed",
+     "id": "5d4ee394-4ef5-4577-8926-b9c02dff8238",
      "references": [
-      "0d209d38-c3e9-4f0a-b9a8-be4b2e23b1fd",
-      "39d40030-6692-4ed7-850a-714e4228745b",
-      "b963a18a-e187-4b79-9743-917d6992290f",
-      "2676e493-9736-4809-8c63-8f8fc52bb63e"
+      "ab2f131c-e7ed-4590-aa11-5cb2f159f538",
+      "ddd90d6f-7761-457f-9556-e6f6f05bbb66",
+      "64aa04e5-a66a-4fd9-b03b-cf0f7a457928",
+      "48f3e5c3-5b0c-4d81-9a7a-49ea36eead12",
+      "9ee1d29e-6d2f-4756-90b9-3078b5d26e9a"
      ]
     },
-    "1969283f-82b1-43a8-ba3b-29c93d752351": {
-     "title": "Lydforbedring",
-     "id": "1969283f-82b1-43a8-ba3b-29c93d752351",
+    "939047fa-fc65-4d70-af0b-da46de656951": {
+     "title": "Lydforbedring med Dirac",
+     "id": "939047fa-fc65-4d70-af0b-da46de656951",
      "references": [
       "b963a18a-e187-4b79-9743-917d6992290f",
       "ddd90d6f-7761-457f-9556-e6f6f05bbb66",
@@ -253,36 +254,34 @@
       "48f3e5c3-5b0c-4d81-9a7a-49ea36eead12"
      ]
     },
-    "9cb6f28f-db30-499c-886c-eda473eebc0e": {
-     "title": "Brugervenlighed",
-     "id": "9cb6f28f-db30-499c-886c-eda473eebc0e",
+    "bea307bc-22bb-4ecd-8cb6-441b607c2a26": {
+     "title": "Enhedskompatibilitet",
+     "id": "bea307bc-22bb-4ecd-8cb6-441b607c2a26",
      "references": [
-      "ddd90d6f-7761-457f-9556-e6f6f05bbb66",
-      "64aa04e5-a66a-4fd9-b03b-cf0f7a457928",
-      "48f3e5c3-5b0c-4d81-9a7a-49ea36eead12",
-      "9ee1d29e-6d2f-4756-90b9-3078b5d26e9a"
+      "0d209d38-c3e9-4f0a-b9a8-be4b2e23b1fd",
+      "39d40030-6692-4ed7-850a-714e4228745b",
+      "2676e493-9736-4809-8c63-8f8fc52bb63e"
      ]
     },
-    "2e7140bf-00cb-4296-891b-c102bfabd165": {
+    "f7d01652-4057-4f85-8bdf-fed8cee29efe": {
      "title": "Kvalitet og værdi",
-     "id": "2e7140bf-00cb-4296-891b-c102bfabd165",
+     "id": "f7d01652-4057-4f85-8bdf-fed8cee29efe",
      "references": [
-      "b963a18a-e187-4b79-9743-917d6992290f",
       "2676e493-9736-4809-8c63-8f8fc52bb63e",
       "56bec6fd-3d8c-487e-9074-12cd536c596b",
       "c43f4650-b143-4c13-b6e1-bf1336449521"
      ]
     }
    },
-   "rating": 4.60714285714286,
-   "count": 28,
-   "reviewCount": 16,
+   "rating": 4.62068965517241,
+   "count": 29,
+   "reviewCount": 17,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 2,
     "4": 3,
-    "5": 22
+    "5": 23
    }
   },
   "brandName": "Bluesound",

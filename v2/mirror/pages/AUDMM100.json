@@ -174,7 +174,7 @@
        },
        {
         "term": "Mål (emballage)",
-        "value": "15,2 x 25,4 x 27,9 cm (bredde x højde x dybde)"
+        "value": "15,24 x 25,4 x 27,94 cm (bredde x højde x dybde)"
        }
       ]
      }
@@ -189,7 +189,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 9,
-     "availableQuantity": 17,
+     "availableQuantity": 15,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -274,41 +274,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AUDMM100 leverer en varm, klar og meget detaljeret lyd med stram bas, god instrumentadskillelse og en ærlig, analytisk karakter. Komforten er generelt god trods den lidt høje vægt, mens forholdet mellem pris og kvalitet gentagne gange roses. Den rummelige og medrivende gengivelse egner sig især til detaljerede klassiske optagelser, kammermusik og jazz, hvilket gør AUDMM100 til en stærk anbefaling til seriøse lyttere.",
+   "summary": "Audeze MM-100 får stor ros for en varm, klar, meget detaljeret og ærlig lyd med kontrolleret bas, fremragende instrumentspredning og en engagerende gengivelse. Komforten er generelt god trods den mærkbare vægt, og den åbne, analytiske tuning passer især godt til jazz, kammermusik, klassisk musik og højopløselige optagelser. Det fremragende forhold mellem pris og ydelse gør de kablede hovedtelefoner til en klar anbefaling, selv om stor symfonisk musik kan virke mindre rummelig for nogle lyttere.",
    "headlines": {
-    "excellent value for money": {
-     "sentimentAnalysis": "Anmeldelserne betragter konsekvent produktet som et stærkt køb i forhold til prisen med meget ydelse og kvalitet for pengene.",
+    "excellent value for the money": {
+     "sentimentAnalysis": "Anmeldelserne beskriver samstemmende MM-100 som et fremragende køb, hvis lyd og samlede ydelse retfærdiggør prisen.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "value",
-     "groupId": "ab94dfa1-184c-4d23-8873-938623fff8f6"
+     "key": "excellent-value",
+     "groupId": "58934631-63a5-43ce-af77-b72fcfd4341a"
     },
     "clear, detailed and honest sound": {
-     "sentimentAnalysis": "Anmeldelserne roser hovedtelefonens klarhed, fine detaljer, analytiske ærlighed og naturlige gengivelse.",
+     "sentimentAnalysis": "Anmelderne roser MM-100 for klar, meget detaljeret, analytisk og ærlig lyd med god instrumentspredning.",
      "simpleTitle": "Klar, detaljeret og ærlig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "3d3ceaf8-cbb0-4be4-83e3-8fd0ab4ff0d7"
+     "key": "sound-detail",
+     "groupId": "912f97c0-5d94-4da8-95a9-c49182539aed"
+    },
+    "controlled bass without excess": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den stramme, afbalancerede bas uden overdreven betoning af de lave frekvenser.",
+     "simpleTitle": "Kontrolleret bas uden overdrivelse",
+     "bias": "positive",
+     "key": "controlled-bass",
+     "groupId": "912f97c0-5d94-4da8-95a9-c49182539aed"
     },
     "comfortable despite the weight": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver pasformen som behagelig, og vægten bliver normalt ikke mærkbar under brug.",
+     "sentimentAnalysis": "De fleste kommentarer om komfort beskriver en sikker og behagelig pasform, hvor vægten næsten ikke mærkes under brug.",
      "simpleTitle": "Behagelig trods vægten",
      "bias": "positive",
-     "key": "comfort",
-     "groupId": "d1a1d013-e750-4c87-834a-7ee254ec232c"
+     "key": "comfortable-fit",
+     "groupId": "408ffb9a-0335-4813-8d94-219cdacc3614"
     },
-    "the build feels heavy": {
-     "sentimentAnalysis": "To anmeldelser peger på vægten som en ulempe for komforten, selv om den samlede bærekomfort stadig er acceptabel.",
-     "simpleTitle": "Konstruktionen føles tung",
+    "noticeably heavy": {
+     "sentimentAnalysis": "Flere anmeldere bemærker, at hovedtelefonerne er tungere end forventet, selv om vægten forbliver håndterbar under brug.",
+     "simpleTitle": "Mærkbart tung",
      "bias": "negative",
-     "key": "comfort",
-     "groupId": "d1a1d013-e750-4c87-834a-7ee254ec232c"
+     "key": "heavy-fit",
+     "groupId": "408ffb9a-0335-4813-8d94-219cdacc3614"
     }
    },
    "grouping": {
-    "3d3ceaf8-cbb0-4be4-83e3-8fd0ab4ff0d7": {
+    "912f97c0-5d94-4da8-95a9-c49182539aed": {
      "title": "Lydkvalitet",
-     "id": "3d3ceaf8-cbb0-4be4-83e3-8fd0ab4ff0d7",
+     "id": "912f97c0-5d94-4da8-95a9-c49182539aed",
      "references": [
       "bc30912f-d531-459a-8f90-d543d485001a",
       "1ab61203-0873-4869-8d21-204fd541138f",
@@ -318,20 +325,21 @@
       "aadd48eb-6ec9-4b0a-9ab5-45f719c5a9af"
      ]
     },
-    "ab94dfa1-184c-4d23-8873-938623fff8f6": {
-     "title": "Pris og værdi",
-     "id": "ab94dfa1-184c-4d23-8873-938623fff8f6",
+    "58934631-63a5-43ce-af77-b72fcfd4341a": {
+     "title": "Pris og kvalitet",
+     "id": "58934631-63a5-43ce-af77-b72fcfd4341a",
      "references": [
       "3636b156-fb6e-49dd-ba1b-1c2544c0108d",
       "6e7b190a-925b-44a9-aa46-8108576e2cc8",
+      "1ab61203-0873-4869-8d21-204fd541138f",
       "bc057188-52da-4ad1-8996-83db73f5d385",
       "fbafafbd-a479-4d48-99d7-c2527d4b1f26",
       "1d507f11-0e52-4730-bb43-e3a91ba46ca6"
      ]
     },
-    "d1a1d013-e750-4c87-834a-7ee254ec232c": {
+    "408ffb9a-0335-4813-8d94-219cdacc3614": {
      "title": "Komfort",
-     "id": "d1a1d013-e750-4c87-834a-7ee254ec232c",
+     "id": "408ffb9a-0335-4813-8d94-219cdacc3614",
      "references": [
       "1ab61203-0873-4869-8d21-204fd541138f",
       "bc057188-52da-4ad1-8996-83db73f5d385",

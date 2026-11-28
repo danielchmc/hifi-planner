@@ -164,7 +164,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 16,
-     "availableQuantity": 50,
+     "availableQuantity": 41,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -216,46 +216,47 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Dette slanke og robuste TV-vægbeslag giver et rent, vægnært udtryk med enkel montering og sikkert hold. Der er stadig praktisk adgang til kabler trods det kompakte design, og det omfattende udvalg af monteringsdele passer til mange fjernsyn. Samlet set er beslaget en imponerende enkel, stabil og pladsbesparende løsning, med kun begrænset kritik af justeringen og den manglende vippefunktion.",
+   "summary": "En klar, ren og harmonisk vægbeslagløsning med en imponerende slank profil. Monteringen er generelt hurtig, enkel og sikker, mens den praktiske kabeladgang giver ekstra bekvemmelighed. Den stærke værdi for pengene og den brede kompatibilitet med monteringsdele gør beslaget til et meget attraktivt valg.",
    "headlines": {
     "easy installation": {
-     "sentimentAnalysis": "Monteringen beskrives gentagne gange som enkel, hurtig og nem at håndtere.",
+     "sentimentAnalysis": "Beslaget beskrives gentagne gange som hurtigt, enkelt og nemt at montere og bruge.",
      "simpleTitle": "Nem montering",
      "bias": "positive",
      "key": "easy-installation",
-     "groupId": "4000a999-3aa6-4eba-a1d0-7173499a7b57"
+     "groupId": "90022027-eed4-47bc-8582-34c24c8b7f98"
     },
-    "solid and reliable support": {
-     "sentimentAnalysis": "Beslaget opfattes bredt som stabilt, funktionelt og pålideligt efter monteringen.",
+    "fits close to the wall": {
+     "sentimentAnalysis": "Det slanke design holder tv’et meget tæt på væggen og giver et pænt, diskret udtryk.",
+     "simpleTitle": "Sidder tæt på væggen",
+     "bias": "positive",
+     "key": "close-to-wall",
+     "groupId": "4f545f96-e462-4bf8-8625-a6b9453dddc8"
+    },
+    "stable and reliable support": {
+     "sentimentAnalysis": "Beslaget opleves som stabilt, funktionelt og i stand til at holde tv’et som lovet.",
      "simpleTitle": "Stabil og pålidelig støtte",
      "bias": "positive",
-     "key": "solid-reliable",
-     "groupId": "522ed305-d4e3-41ef-a147-6c8223019db0"
+     "key": "stable-support",
+     "groupId": "ad3f4585-f93c-4685-8d02-68d7f0397bfb"
     },
-    "slim, close-to-wall design": {
-     "sentimentAnalysis": "Det kompakte beslag holder TV’et bemærkelsesværdigt tæt på væggen og giver et rent, diskret udtryk.",
-     "simpleTitle": "Slankt, vægnært design",
+    "convenient cable access": {
+     "sentimentAnalysis": "De nederste støtter og det enkle design giver praktisk adgang til kablerne bag tv’et.",
+     "simpleTitle": "Praktisk kabeladgang",
      "bias": "positive",
-     "key": "slim-close-wall",
-     "groupId": "28805eea-b4d2-49b9-8630-333cb5d27781"
-    },
-    "practical access to cables": {
-     "sentimentAnalysis": "Designet giver trods den slanke montering god adgang til tilslutningerne bag TV’et.",
-     "simpleTitle": "Praktisk adgang til kabler",
-     "bias": "positive",
-     "key": "practical-cables",
-     "groupId": "0d90e231-d8af-4ce5-a026-d2ce41a70f3b"
+     "key": "convenient-cable-access",
+     "groupId": "70b3f911-a85e-4dc0-96ac-c7e3ec8192d5"
     }
    },
    "grouping": {
-    "4000a999-3aa6-4eba-a1d0-7173499a7b57": {
+    "90022027-eed4-47bc-8582-34c24c8b7f98": {
      "title": "Montering",
-     "id": "4000a999-3aa6-4eba-a1d0-7173499a7b57",
+     "id": "90022027-eed4-47bc-8582-34c24c8b7f98",
      "references": [
       "41eff209-66df-48da-bb19-aa6d22837be7",
       "ea5267f6-7917-4cc4-8c83-90dd3fc3cb5e",
       "c2e7b7fd-b9ee-4104-9a7b-96dd3e8d3497",
       "a4f56404-50ef-42f2-a1ba-2f9f3ca49968",
+      "cd742e3d-8db4-4903-9cb7-b68e66f9156b",
       "1acc86d4-726e-491e-8c58-7cd34affa731",
       "340238aa-d94b-41d7-8faa-c9057d998c54",
       "f48015dd-af73-4af3-b206-da46d9fba823",
@@ -263,31 +264,16 @@
       "a6882e37-1b75-4a14-b1c4-6cc2b35b23a9",
       "a42c4c08-6405-4957-97e2-c3561d7ff815",
       "107dcafb-02a8-4c27-828c-b2707379be34",
+      "594e5ce0-70a0-48aa-9fd0-3eb041c75ee7",
       "65b25b05-65cd-4530-8442-af281e0571bf",
+      "5ccd0c8f-bacb-4e68-900c-1c85f81cce40",
       "0fcb5979-4fdf-479c-b57e-2c7cfd89f566",
       "fb7f4e26-0608-4dba-98ce-686bf86e5f5c"
      ]
     },
-    "522ed305-d4e3-41ef-a147-6c8223019db0": {
-     "title": "Stabilitet og pasform",
-     "id": "522ed305-d4e3-41ef-a147-6c8223019db0",
-     "references": [
-      "62226a02-e4f5-4916-a59b-959c55c37ee0",
-      "cd742e3d-8db4-4903-9cb7-b68e66f9156b",
-      "f2984f59-88e3-40c4-bd32-d0bb71aeb911",
-      "0d55551a-b6f0-4ac4-924b-6dfe3cb7dcea",
-      "340238aa-d94b-41d7-8faa-c9057d998c54",
-      "f69bbb75-57ef-433e-91b1-4186ff8e716c",
-      "a42c4c08-6405-4957-97e2-c3561d7ff815",
-      "a41ae01f-8bf3-4361-a369-e528fee0a03a",
-      "107dcafb-02a8-4c27-828c-b2707379be34",
-      "0fcb5979-4fdf-479c-b57e-2c7cfd89f566",
-      "fb7f4e26-0608-4dba-98ce-686bf86e5f5c"
-     ]
-    },
-    "28805eea-b4d2-49b9-8630-333cb5d27781": {
+    "4f545f96-e462-4bf8-8625-a6b9453dddc8": {
      "title": "Slankt design",
-     "id": "28805eea-b4d2-49b9-8630-333cb5d27781",
+     "id": "4f545f96-e462-4bf8-8625-a6b9453dddc8",
      "references": [
       "c2e7b7fd-b9ee-4104-9a7b-96dd3e8d3497",
       "a4f56404-50ef-42f2-a1ba-2f9f3ca49968",
@@ -297,9 +283,18 @@
       "5ccd0c8f-bacb-4e68-900c-1c85f81cce40"
      ]
     },
-    "0d90e231-d8af-4ce5-a026-d2ce41a70f3b": {
+    "ad3f4585-f93c-4685-8d02-68d7f0397bfb": {
+     "title": "Stabilitet",
+     "id": "ad3f4585-f93c-4685-8d02-68d7f0397bfb",
+     "references": [
+      "62226a02-e4f5-4916-a59b-959c55c37ee0",
+      "cd742e3d-8db4-4903-9cb7-b68e66f9156b",
+      "f69bbb75-57ef-433e-91b1-4186ff8e716c"
+     ]
+    },
+    "70b3f911-a85e-4dc0-96ac-c7e3ec8192d5": {
      "title": "Kabeladgang",
-     "id": "0d90e231-d8af-4ce5-a026-d2ce41a70f3b",
+     "id": "70b3f911-a85e-4dc0-96ac-c7e3ec8192d5",
      "references": [
       "c2e7b7fd-b9ee-4104-9a7b-96dd3e8d3497",
       "dfe2e273-e06e-48da-99e3-228abccb7bda"
