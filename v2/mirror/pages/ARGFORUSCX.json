@@ -145,7 +145,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 314,
+     "availableQuantity": 396,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -233,7 +233,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 11,
+     "availableQuantity": 97,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -320,7 +320,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 26,
-     "availableQuantity": 200,
+     "availableQuantity": 187,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -434,56 +434,50 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFORUSCX leverer klar, ren og ofte kraftfuld lyd med en varm og medrivende gengivelse, der tydeligt forbedrer hjemmebio- og TV-opsætninger. Den fremragende værdi for pengene, det flotte design og den solide byggekvalitet gør centerhøjttaleren til et særligt godt valg til kompakte surroundsystemer. Enkelte anmeldelser nævner dog begrænset tryk og for svage dialoger ved moderat lydstyrke, mens nogle opsætninger får mindre ud af surroundeffekten end forventet.",
+   "summary": "ARGFORUSCX leverer en klar, varm og kontant lyd, der mærkbart løfter hjemmebio- og surroundanlæg. Den stærke værdi for pengene, det flotte design og den solide byggekvalitet gør højttaleren til en oplagt anbefaling til kompakte anlæg og mindre budgetter. Dialogerne er generelt tydelige og medrivende, selv om nogle opsætninger kan have brug for mere bastryk eller lydstyrke.",
    "headlines": {
-    "clear, clean and immersive sound": {
-     "sentimentAnalysis": "Den klare, rene og detaljerede gengivelse roses gentagne gange, sammen med det medrivende lydbillede og den tydelige forbedring i forhold til TV- eller soundbar-lyd.",
-     "simpleTitle": "Klar, ren og medrivende lyd",
-     "bias": "positive",
-     "key": "clear-sound",
-     "groupId": "c220f32a-1a12-4138-845f-85f68709ebc3"
-    },
-    "strong value for money": {
-     "sentimentAnalysis": "Den lave pris forbindes gentagne gange med overraskende god lyd, hvilket gør højttaleren til et fremragende budgetkøb.",
+    "excellent value for money": {
+     "sentimentAnalysis": "Produktet anses for usædvanligt kompetent og tilfredsstillende til prisen og er derfor attraktivt for budgetbevidste hjemmebiokøbere.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
-     "key": "excellent-value",
-     "groupId": "0f3be977-c7bc-48a9-9573-8d656e928dfc"
+     "key": "excellent_value",
+     "groupId": "68ad17a7-21c5-40b2-893a-f3ef7c697cd5"
     },
-    "easy fit in compact surround systems": {
-     "sentimentAnalysis": "Centerhøjttaleren beskrives som en vellykket tilføjelse til surround- og hjemmebiosystemer, især i kompakte opsætninger.",
-     "simpleTitle": "Passer godt i kompakte surroundsystemer",
+    "clear, powerful and immersive sound": {
+     "sentimentAnalysis": "Højttaleren roses gentagne gange for ren, klar og kraftfuld gengivelse, en medrivende lydscene og særligt tydelige dialoger.",
+     "simpleTitle": "Klar, kraftfuld og medrivende lyd",
      "bias": "positive",
-     "key": "surround-integration",
-     "groupId": "f1dfb6a3-8e9c-4546-9f38-09953854bd82"
+     "key": "clear_sound",
+     "groupId": "a42b2d6d-1eb0-4a28-acd0-7fdfc73dabef"
     },
-    "attractive design and solid build": {
-     "sentimentAnalysis": "Anmeldelserne roser det flotte udseende, den problemfri integration i stuen og en byggekvalitet, der kan måle sig med langt dyrere højttalere.",
-     "simpleTitle": "Flot design og solid byggekvalitet",
+    "a major improvement in surround and home cinema systems": {
+     "sentimentAnalysis": "Centerhøjttaleren beskrives som et stærkt supplement til eksisterende anlæg, der forbedrer surroundoplevelsen og overgår svagere soundbar- eller systemydelse.",
+     "simpleTitle": "En markant opgradering af surround- og hjemmebioanlæg",
      "bias": "positive",
-     "key": "design-build",
-     "groupId": "ec17fe6b-6813-4aef-90fa-61ccf0d595f7"
+     "key": "system_upgrade",
+     "groupId": "a42b2d6d-1eb0-4a28-acd0-7fdfc73dabef"
     },
-    "limited punch and weak dialogue at volume": {
-     "sentimentAnalysis": "Nogle lyttere savner tryk og vurderer, at kabinet eller enhed er for lille til stærkere dialoggengivelse og dynamik.",
-     "simpleTitle": "Begrænset tryk og svage dialoger ved højere lydstyrke",
-     "bias": "negative",
-     "key": "limited-punch",
-     "groupId": "c220f32a-1a12-4138-845f-85f68709ebc3"
+    "attractive design and solid construction": {
+     "sentimentAnalysis": "Højttaleren roses for sit flotte udseende, sin gode kvalitet og en finish, der passer naturligt ind i stuen.",
+     "simpleTitle": "Flot design og solid konstruktion",
+     "bias": "positive",
+     "key": "design_quality",
+     "groupId": "b9a03065-3b1c-4d13-991b-21b20dbdc052"
     }
    },
    "grouping": {
-    "c220f32a-1a12-4138-845f-85f68709ebc3": {
+    "a42b2d6d-1eb0-4a28-acd0-7fdfc73dabef": {
      "title": "Lydkvalitet",
-     "id": "c220f32a-1a12-4138-845f-85f68709ebc3",
+     "id": "a42b2d6d-1eb0-4a28-acd0-7fdfc73dabef",
      "references": [
-      "08b81483-0dcf-4258-874a-c1853bc6fdca",
+      "079e161e-832d-437c-9002-ed3f88114685",
       "a92de1e9-f5b5-4894-a32b-b294aac5e5b6",
       "6844caaf-c6af-49d1-8444-720293b8a7df",
       "372a874c-6f83-4ed0-91f0-0946591fb2a7",
       "8361c4eb-2443-40fc-bcc6-3fa90e0c6a82",
       "23820958-3518-41aa-a4ec-0f08727bab95",
       "327b75da-2965-4414-b0da-bc073438e2d8",
+      "b59134f4-b7c9-4824-ab9a-00f9ca07c9dc",
       "0990c601-1fe9-4045-b1f5-8893c9498022",
       "8203f605-2e12-49ea-900f-2fefd1dc6af1",
       "b478e0b4-a09d-4a2c-97f5-ff35c6b32a8c",
@@ -493,15 +487,18 @@
       "4c38cec6-1c87-4697-90f3-be039db7f6c5",
       "7d2d2f58-2275-4715-a0a7-8f888cf6dfab",
       "5ac09eb9-b74c-41d0-9719-b4d0a48f1857",
+      "f4a54e1a-ce72-4677-b60e-c4a6968eae78",
       "41f2c97f-d7b4-4001-b76e-ee605302ebab",
+      "b7289545-e3b2-4500-a431-be10a4081896",
+      "ac7409be-1829-4519-8054-fbe9adf82a89",
+      "765d6a64-d557-439f-977c-dd34f7c01f7c",
       "4daac8bd-8b22-4db0-a060-3b55dad69073"
      ]
     },
-    "0f3be977-c7bc-48a9-9573-8d656e928dfc": {
-     "title": "Pris og værdi",
-     "id": "0f3be977-c7bc-48a9-9573-8d656e928dfc",
+    "68ad17a7-21c5-40b2-893a-f3ef7c697cd5": {
+     "title": "Værdi for pengene",
+     "id": "68ad17a7-21c5-40b2-893a-f3ef7c697cd5",
      "references": [
-      "fb030c5e-5ab1-4ad6-88b8-23e3e547df55",
       "8361c4eb-2443-40fc-bcc6-3fa90e0c6a82",
       "23820958-3518-41aa-a4ec-0f08727bab95",
       "0990c601-1fe9-4045-b1f5-8893c9498022",
@@ -510,29 +507,16 @@
       "470eb528-1d67-4886-a253-6a3a9f682745",
       "4c38cec6-1c87-4697-90f3-be039db7f6c5",
       "f4a54e1a-ce72-4677-b60e-c4a6968eae78",
+      "832d9339-4d7f-43c3-9031-ace67dff8c7f",
       "765d6a64-d557-439f-977c-dd34f7c01f7c",
       "4daac8bd-8b22-4db0-a060-3b55dad69073"
      ]
     },
-    "f1dfb6a3-8e9c-4546-9f38-09953854bd82": {
-     "title": "Systemintegration",
-     "id": "f1dfb6a3-8e9c-4546-9f38-09953854bd82",
-     "references": [
-      "6844caaf-c6af-49d1-8444-720293b8a7df",
-      "b59134f4-b7c9-4824-ab9a-00f9ca07c9dc",
-      "8203f605-2e12-49ea-900f-2fefd1dc6af1",
-      "b7289545-e3b2-4500-a431-be10a4081896",
-      "ac7409be-1829-4519-8054-fbe9adf82a89",
-      "5ac09eb9-b74c-41d0-9719-b4d0a48f1857",
-      "4daac8bd-8b22-4db0-a060-3b55dad69073"
-     ]
-    },
-    "ec17fe6b-6813-4aef-90fa-61ccf0d595f7": {
+    "b9a03065-3b1c-4d13-991b-21b20dbdc052": {
      "title": "Design og byggekvalitet",
-     "id": "ec17fe6b-6813-4aef-90fa-61ccf0d595f7",
+     "id": "b9a03065-3b1c-4d13-991b-21b20dbdc052",
      "references": [
       "fb030c5e-5ab1-4ad6-88b8-23e3e547df55",
-      "0ee6284b-2a77-45b7-bc4b-3cbc2f211aad",
       "470eb528-1d67-4886-a253-6a3a9f682745",
       "832d9339-4d7f-43c3-9031-ace67dff8c7f",
       "6449b452-88f3-4a20-a853-3840e4aeca26",
@@ -540,15 +524,15 @@
      ]
     }
    },
-   "rating": 4.66981132075472,
-   "count": 106,
-   "reviewCount": 35,
+   "rating": 4.67592592592593,
+   "count": 108,
+   "reviewCount": 36,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 6,
     "4": 23,
-    "5": 77
+    "5": 79
    }
   },
   "displayDecadeWarranty": true,

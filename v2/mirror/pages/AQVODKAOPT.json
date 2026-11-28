@@ -139,7 +139,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 3,
-     "availableQuantity": 2,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -393,27 +393,34 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQVODKAOPT leverer en imponerende varm, detaljeret, dynamisk og musikalsk lyd med et dybere, klarere og mere medrivende lydbillede. Flere anmeldelser beskriver markante forbedringer sammenlignet med almindelige optiske kabler eller coaxialkabler, herunder et stærkere tredimensionelt perspektiv og større musikalsk engagement. Den høje pris nævnes, men den fremragende lydkvalitet anses generelt for at være investeringen værd.",
+   "summary": "AQVODKAOPT roses bredt for en markant forbedring af lydkvaliteten med en varm, fyldig, slagkraftig og meget musikalsk gengivelse. Det optiske kabel leverer imponerende detaljer, klarhed, dybde og et omsluttende tredimensionelt lydbillede og overgår ofte almindelige koaksialkabler. Trods den høje pris gør den fremragende lydkvalitet investeringen værd.",
    "headlines": {
-    "detailed, rich, and musical sound": {
-     "sentimentAnalysis": "Anmeldelserne roser kablet for en usædvanligt detaljeret, klar, fyldig og musikalsk lyd, hvor den dybe bas også fremhæves.",
-     "simpleTitle": "Detaljeret, fyldig og musikalsk lyd",
+    "immersive three-dimensional soundstage": {
+     "sentimentAnalysis": "Kablet roses gentagne gange for at udvide lydbilledet og skabe en overbevisende, rummelig tredimensionel gengivelse.",
+     "simpleTitle": "Omsluttende tredimensionelt lydbillede",
      "bias": "positive",
-     "key": "sound-detail",
-     "groupId": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49"
+     "key": "three-dimensional-soundstage",
+     "groupId": "42435f69-4010-4d5e-a261-53bf2cdafc3b"
     },
-    "major improvement in soundstage and immersion": {
-     "sentimentAnalysis": "Anmeldelserne beskriver et markant løft af hele lydbilledet med mere tredimensional rumfornemmelse, større indlevelse og flere hørbare musikalske detaljer.",
-     "simpleTitle": "Markant forbedring af lydbillede og rumfornemmelse",
+    "rich, detailed and musical sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver gengivelsen som lagdelt, musikalsk, detaljeret, fyldig og klar med især imponerende bas.",
+     "simpleTitle": "Fyldig, detaljeret og musikalsk lyd",
      "bias": "positive",
-     "key": "soundstage-improvement",
-     "groupId": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49"
+     "key": "rich-detailed-musical-sound",
+     "groupId": "42435f69-4010-4d5e-a261-53bf2cdafc3b"
+    },
+    "major overall sound improvement": {
+     "sentimentAnalysis": "Kablet tilskrives en markant forbedring af hele gengivelsen og afsløringen af hidtil uhørte musikalske detaljer.",
+     "simpleTitle": "Markant generel lydforbedring",
+     "bias": "positive",
+     "key": "overall-sound-improvement",
+     "groupId": "42435f69-4010-4d5e-a261-53bf2cdafc3b"
     }
    },
    "grouping": {
-    "ad5e6cd3-9051-431e-b8b3-2f9de8291d49": {
+    "42435f69-4010-4d5e-a261-53bf2cdafc3b": {
      "title": "Lydkvalitet",
-     "id": "ad5e6cd3-9051-431e-b8b3-2f9de8291d49",
+     "id": "42435f69-4010-4d5e-a261-53bf2cdafc3b",
      "references": [
       "1a9db6c4-83a1-4c3e-84c0-63e737118955",
       "160532e6-400f-4f03-8cf2-2f3f4aff5f52",

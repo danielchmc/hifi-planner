@@ -20,9 +20,9 @@
    "Udgang (andet)": "USB A",
    "Trådløs overførsel": "Bluetooth-indgang, Bluetooth-udgang",
    "Wi-Fi version": "Wi-Fi 5 (802.11ac)",
+   "Bluetooth type": "4.2",
    "Streaming": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast, DTS Play-Fi",
    "Tilslutninger (kablet)": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX",
-   "Bluetooth type": "4.2",
    "Fra beskrivelsen": "HDMI/ARC for nem digital TV-lyd · USB-til-Ethernet adapter fås som ekstraudstyr · *Ikke auto-tænd på pladespillerindgang"
   },
   "gallery": [
@@ -85,40 +85,11 @@
   },
   "techSpecs": [
    {
-    "index": 10,
-    "title": "Ydelse",
+    "index": 125,
+    "title": "Generelle egenskaber",
     "content": [
      {
-      "term": "Frekvensområde (-3dB)",
-      "value": "50-20.000 Hz"
-     },
-     {
-      "term": "Forstærker",
-      "value": "80 watt"
-     },
-     {
-      "term": "Diskant størrelse",
-      "value": "1\""
-     },
-     {
-      "term": "Tweeter type",
-      "value": "Softdome med neodym-magnet"
-     },
-     {
-      "term": "Bas størrelse",
-      "value": "4\""
-     },
-     {
-      "term": "Streaming",
-      "value": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast, DTS Play-Fi"
-     },
-     {
-      "term": "Tilslutninger (kablet)",
-      "value": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX"
-     },
-     {
-      "term": "Brugsscenarier",
-      "value": "TV, PC/Mac, Pladespiller, Subwoofer"
+      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker\nTrådløs musikstreaming via indbygget wi-fi\nUdgangseffekt: 4 x 80 watt (Klasse D, RMS) \nHDMI/ARC for nem digital TV-lyd\nAktivt elektronisk delefilter med DSP\nMaksimal opløsning: 24-bit/96kHz (via optisk indgang)\nFrontstof magnetisk fastgjort \nAuto tænd/sluk*\nEnergiforbrug i standby: <0,5 watt (deep standby), 3,5 watt (network standby)\nDedikeret højtalerkabel til indbyrdes forbindelse (3 meter), fjernbetjening og strømforsyning medfølger\nUSB-til-Ethernet adapter fås som ekstraudstyr\n*Ikke auto-tænd på pladespillerindgang"
      }
     ]
    },
@@ -187,11 +158,40 @@
     ]
    },
    {
-    "index": 125,
-    "title": "Generelle egenskaber",
+    "index": 10,
+    "title": "Ydelse",
     "content": [
      {
-      "value": "2-vejs aktivt højtalersystem med indbygget stereoforstærker\nTrådløs musikstreaming via indbygget wi-fi\nUdgangseffekt: 4 x 80 watt (Klasse D, RMS) \nHDMI/ARC for nem digital TV-lyd\nAktivt elektronisk delefilter med DSP\nMaksimal opløsning: 24-bit/96kHz (via optisk indgang)\nFrontstof magnetisk fastgjort \nAuto tænd/sluk*\nEnergiforbrug i standby: <0,5 watt (deep standby), 3,5 watt (network standby)\nDedikeret højtalerkabel til indbyrdes forbindelse (3 meter), fjernbetjening og strømforsyning medfølger\nUSB-til-Ethernet adapter fås som ekstraudstyr\n*Ikke auto-tænd på pladespillerindgang"
+      "term": "Frekvensområde (-3dB)",
+      "value": "50-20.000 Hz"
+     },
+     {
+      "term": "Forstærker",
+      "value": "80 watt"
+     },
+     {
+      "term": "Diskant størrelse",
+      "value": "1\""
+     },
+     {
+      "term": "Tweeter type",
+      "value": "Softdome med neodym-magnet"
+     },
+     {
+      "term": "Bas størrelse",
+      "value": "4\""
+     },
+     {
+      "term": "Streaming",
+      "value": "Bluetooth, Wi-Fi, Airplay 2, Spotify Connect, Tidal Connect, Google Cast, DTS Play-Fi"
+     },
+     {
+      "term": "Tilslutninger (kablet)",
+      "value": "HDMI, Pladespiller/Phono, Subwoofer, Pre-out, Analog RCA, Minijack/AUX"
+     },
+     {
+      "term": "Brugsscenarier",
+      "value": "TV, PC/Mac, Pladespiller, Subwoofer"
      }
     ]
    },
@@ -283,8 +283,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 50,
+     "numberOfStoresExperience": 21,
+     "availableQuantity": 36,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -409,8 +409,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 20,
-     "availableQuantity": 97,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 96,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -536,8 +536,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 21,
-     "availableQuantity": 45,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 29,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -663,7 +663,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 21,
-     "availableQuantity": 38,
+     "availableQuantity": 31,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -849,62 +849,48 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Højttalerne leverer varm, klar og omsluttende lyd med imponerende værdi for pengene, især til musik og TV-lyd. Det kompakte format, det attraktive design og de mange streaming- og tilslutningsmuligheder gør systemet nemt at integrere i hverdagen. Opsætningen er som regel enkel, men forsinkelser ved AirPlay og Wi-Fi, lejlighedsvise forbindelsesudfald og en mindre gennemarbejdet app trækker lidt ned i et ellers meget positivt indtryk.",
+   "summary": "ARGFORTEA4WIFIX leverer en varm, klar og medrivende lyd med særligt stærk gengivelse af TV og musik, samtidig med at produktet giver stor værdi i et kompakt og stilfuldt design. Opsætning og daglig betjening er generelt enkel, og der er gode streaming- og tilslutningsmuligheder. Langsom registrering på Wi-Fi, lejlighedsvise forbindelsesudfald, begrænsede app-funktioner og forskellige præferencer for bas er de største forbehold, men helhedsindtrykket er meget positivt og anbefalelsesværdigt.",
    "headlines": {
-    "clear, rich sound with strong value": {
-     "sentimentAnalysis": "Anmeldelserne beskriver lyden som klar, fyldig, kraftfuld og usædvanligt god til prisen, især ved musikafspilning.",
-     "simpleTitle": "Klar og fyldig lyd til en god pris",
+    "clear, powerful sound for music and TV": {
+     "sentimentAnalysis": "Højttalerne roses bredt for en klar, behagelig og kraftfuld lyd, især til musik og TV.",
+     "simpleTitle": "Klar og kraftfuld lyd til musik og TV",
      "bias": "positive",
-     "key": "sound",
-     "groupId": "386a82b4-d0df-4016-a3bb-f6dc7deda68b"
+     "key": "sound_quality",
+     "groupId": "ce12c468-74ed-4c28-8e56-43c697116d53"
     },
-    "compact and attractive design": {
-     "sentimentAnalysis": "Det kompakte format og det attraktive design, især træfinishen, roses gentagne gange for at være let at placere og flot at se på.",
+    "compact, attractive design": {
+     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som stilfulde, kompakte og nemme at placere i boligen eller i møbler.",
      "simpleTitle": "Kompakt og attraktivt design",
      "bias": "positive",
-     "key": "design",
-     "groupId": "66f97662-2c8b-4d34-95fa-e7b10864ab0a"
+     "key": "design_compact",
+     "groupId": "e7ea9693-5f00-4031-a9ed-004e025254fa"
     },
-    "very effective TV sound": {
-     "sentimentAnalysis": "Højttalerne roses gentagne gange som en markant forbedring af TV-lyden med klarere og mere behagelig lyd uden behov for en synlig subwoofer.",
-     "simpleTitle": "Meget god TV-lyd",
+    "simple setup and operation": {
+     "sentimentAnalysis": "Flere anmeldelser fremhæver den ukomplicerede opsætning og nemme daglige betjening.",
+     "simpleTitle": "Enkel opsætning og betjening",
      "bias": "positive",
-     "key": "tv-sound",
-     "groupId": "386a82b4-d0df-4016-a3bb-f6dc7deda68b"
+     "key": "setup_simple",
+     "groupId": "a52b6cb8-12c7-4f9c-8f65-20bc44a1776c"
     },
-    "airPlay and Wi-Fi can connect slowly or drop out": {
-     "sentimentAnalysis": "Flere anmeldelser nævner langsom registrering, forbindelsesforsinkelser og lejlighedsvise Wi-Fi- eller trådløse udfald trods generelt gode streamingfunktioner.",
-     "simpleTitle": "AirPlay og Wi-Fi kan forbinde langsomt eller falde ud",
+    "wireless discovery and stability can be slow or unreliable": {
+     "sentimentAnalysis": "Det kan tage for lang tid at finde den trådløse forbindelse, og flere anmeldelser nævner lejlighedsvise eller gentagne forbindelsesudfald.",
+     "simpleTitle": "Trådløs registrering og stabilitet kan være langsom eller ustabil",
      "bias": "negative",
-     "key": "connectivity-issues",
-     "groupId": "22e66a50-65f0-48b6-87f4-13f89aa4b8a9"
+     "key": "connectivity_issues",
+     "groupId": "98705db8-fb2b-4ca7-95cb-c481ff22f2ae"
     },
-    "installation is usually simple": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver opsætning og daglig betjening som nem og ligetil.",
-     "simpleTitle": "Opsætningen er som regel enkel",
-     "bias": "positive",
-     "key": "setup",
-     "groupId": "483e3f31-651b-4445-8db6-a579375f0c89"
-    },
-    "bass can be expanded with a subwoofer": {
-     "sentimentAnalysis": "Anmeldelserne nævner en tilfredsstillende bas samt muligheden for at tilføje mere bund med en subwoofer.",
-     "simpleTitle": "Bassen kan udvides med en subwoofer",
-     "bias": "positive",
-     "key": "bass",
-     "groupId": "386a82b4-d0df-4016-a3bb-f6dc7deda68b"
-    },
-    "instructions and app experience need refinement": {
-     "sentimentAnalysis": "En anmeldelse kritiserer instruktionerne og den vanskelige opsætning, mens en anden finder appen besværlig.",
-     "simpleTitle": "Instruktioner og appoplevelse kan forbedres",
-     "bias": "negative",
-     "key": "usability-issues",
-     "groupId": "483e3f31-651b-4445-8db6-a579375f0c89"
+    "bass and treble balance varies by preference": {
+     "sentimentAnalysis": "Bassen vurderes som tilstrækkelig eller lidt tilbageholdende, mens diskanten kan være fremtrædende; placering og en valgfri subwoofer påvirker balancen.",
+     "simpleTitle": "Balancen mellem bas og diskant afhænger af præferencer",
+     "bias": "meh",
+     "key": "sound_balance",
+     "groupId": "ce12c468-74ed-4c28-8e56-43c697116d53"
     }
    },
    "grouping": {
-    "386a82b4-d0df-4016-a3bb-f6dc7deda68b": {
+    "ce12c468-74ed-4c28-8e56-43c697116d53": {
      "title": "Lydkvalitet",
-     "id": "386a82b4-d0df-4016-a3bb-f6dc7deda68b",
+     "id": "ce12c468-74ed-4c28-8e56-43c697116d53",
      "references": [
       "9e3ff463-a108-43ed-9df2-46b7625ed116",
       "7b949691-b64d-4e3c-af15-595b072e676e",
@@ -918,8 +904,9 @@
       "31ed2306-59bb-440d-94ed-f000dea7fa81",
       "fedd9504-6f47-40b5-b90f-1274989eb73c",
       "4101d8b8-3b7c-4f82-b747-a4ff229faba0",
-      "3581e011-3717-4537-a272-f6c1f15049da",
       "54292897-6182-4c46-a77b-2515ec21300c",
+      "3581e011-3717-4537-a272-f6c1f15049da",
+      "d86c55f0-840f-4d3d-a823-276dfb788b6f",
       "6da70b54-61f0-4d40-adc3-32623db6ba24",
       "c14cf1d4-5324-4b21-85a3-85c4b45e1cdf",
       "c9dca2f7-47d5-4a57-b8fe-2356184070b2",
@@ -930,25 +917,23 @@
       "937ab66e-baa5-439e-9a58-f3dbcdd70763"
      ]
     },
-    "22e66a50-65f0-48b6-87f4-13f89aa4b8a9": {
-     "title": "Forbindelse og streaming",
-     "id": "22e66a50-65f0-48b6-87f4-13f89aa4b8a9",
+    "e7ea9693-5f00-4031-a9ed-004e025254fa": {
+     "title": "Design og størrelse",
+     "id": "e7ea9693-5f00-4031-a9ed-004e025254fa",
      "references": [
       "7b949691-b64d-4e3c-af15-595b072e676e",
-      "d8157cb1-9a7b-4276-8e0e-ce8475fc8c4e",
-      "cb3c218e-1129-4bde-a821-99d325581f15",
-      "d01fa1b0-eb98-45b2-8303-cd3d72c46d68",
-      "37aeebee-dda5-410e-ae46-71fccf3e2f58",
-      "81d3bea5-04ff-4984-be92-8e738a676074",
-      "69788207-d427-4c32-97f8-f617d5edee7e",
-      "d86c55f0-840f-4d3d-a823-276dfb788b6f",
-      "6da70b54-61f0-4d40-adc3-32623db6ba24",
-      "de98b601-84aa-42d5-a1ef-0befeeb0d8cd"
+      "830a3a47-069c-4370-bf82-036130a1b797",
+      "9de61088-5430-4ff1-84bb-0ec999b5661c",
+      "4101d8b8-3b7c-4f82-b747-a4ff229faba0",
+      "54292897-6182-4c46-a77b-2515ec21300c",
+      "0cf3ca98-189b-420d-b039-dbf1dc462c85",
+      "3ac1de46-4c88-4a62-b462-d6ebccec3c53",
+      "937ab66e-baa5-439e-9a58-f3dbcdd70763"
      ]
     },
-    "483e3f31-651b-4445-8db6-a579375f0c89": {
+    "a52b6cb8-12c7-4f9c-8f65-20bc44a1776c": {
      "title": "Opsætning og betjening",
-     "id": "483e3f31-651b-4445-8db6-a579375f0c89",
+     "id": "a52b6cb8-12c7-4f9c-8f65-20bc44a1776c",
      "references": [
       "689bbec8-15ae-4e4d-a207-09ec533dad73",
       "491be337-4a6f-4f4e-be59-27f0dc3c724f",
@@ -956,32 +941,33 @@
       "5e3220d0-1980-4667-9bcc-9206f7f9bd5c",
       "6da70b54-61f0-4d40-adc3-32623db6ba24",
       "c14cf1d4-5324-4b21-85a3-85c4b45e1cdf",
-      "46fb884a-934a-4a05-8321-e57e4da5af8f",
-      "a5bf813c-c37a-4f5b-93a1-f21509af2bd7"
+      "a5bf813c-c37a-4f5b-93a1-f21509af2bd7",
+      "46fb884a-934a-4a05-8321-e57e4da5af8f"
      ]
     },
-    "66f97662-2c8b-4d34-95fa-e7b10864ab0a": {
-     "title": "Design og størrelse",
-     "id": "66f97662-2c8b-4d34-95fa-e7b10864ab0a",
+    "98705db8-fb2b-4ca7-95cb-c481ff22f2ae": {
+     "title": "Trådløs forbindelse",
+     "id": "98705db8-fb2b-4ca7-95cb-c481ff22f2ae",
      "references": [
-      "830a3a47-069c-4370-bf82-036130a1b797",
-      "9de61088-5430-4ff1-84bb-0ec999b5661c",
-      "4101d8b8-3b7c-4f82-b747-a4ff229faba0",
-      "0cf3ca98-189b-420d-b039-dbf1dc462c85",
-      "3ac1de46-4c88-4a62-b462-d6ebccec3c53",
-      "937ab66e-baa5-439e-9a58-f3dbcdd70763"
+      "d8157cb1-9a7b-4276-8e0e-ce8475fc8c4e",
+      "d01fa1b0-eb98-45b2-8303-cd3d72c46d68",
+      "37aeebee-dda5-410e-ae46-71fccf3e2f58",
+      "81d3bea5-04ff-4984-be92-8e738a676074",
+      "69788207-d427-4c32-97f8-f617d5edee7e",
+      "d86c55f0-840f-4d3d-a823-276dfb788b6f",
+      "de98b601-84aa-42d5-a1ef-0befeeb0d8cd"
      ]
     }
    },
-   "rating": 4.62650602409639,
-   "count": 83,
+   "rating": 4.63095238095238,
+   "count": 84,
    "reviewCount": 39,
    "distribution": {
     "1": 0,
     "2": 0,
     "3": 7,
     "4": 17,
-    "5": 59
+    "5": 60
    }
   },
   "brandName": "Argon Audio",

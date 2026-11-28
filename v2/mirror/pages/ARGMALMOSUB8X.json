@@ -149,12 +149,6 @@
    "url": "/hojtalere/subwoofer/",
    "id": 69681
   },
-  "stockItemAlternative": {
-   "save": "500,-",
-   "url": "https://www.hifiklubben.dk/tilbud/outlet/?outletParent=ARGMALMOSUB8X",
-   "availableQuantity": 1,
-   "lowestPrice": "1.799,-"
-  },
   "variants": [
    {
     "id": 217204,
@@ -225,8 +219,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 27,
-     "availableQuantity": 295,
+     "numberOfStoresExperience": 26,
+     "availableQuantity": 652,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -337,7 +331,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 338,
+     "availableQuantity": 497,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -457,7 +451,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 27,
-     "availableQuantity": 268,
+     "availableQuantity": 506,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -691,61 +685,46 @@
   ],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Argon Malmö SUB 8 roses bredt som en kompakt, men kraftfuld subwoofer, der tilfører dyb, varm og kontant bas, fuldender stereo- og tv-anlæg og giver imponerende værdi for pengene. Integrationen med Argon-højttalere og andre anlæg er generelt fremragende, med ren, kontrolleret og rumfyldende lyd i små og mellemstore rum. Enkelte anmeldelser nævner brummen, afbrydelser fra auto-standby samt udfordringer med placering og indstilling, mens større rum i nogle tilfælde kræver en kraftigere subwoofer.",
+   "summary": "ARGMALMOSUB8X leverer varm, dyb og overraskende kraftfuld bas, der fuldender musik, film og tv-lyd uden at blive en buldrende basmonster. De kompakte mål, den nemme integration og det stærke pris-kvalitetsforhold gør subwooferen særligt attraktiv til små og mellemstore rum. Omhyggelig placering og indstilling er vigtig, mens enkelte oplever brummen, problemer med auto-standby eller vanskeligheder med at balancere basniveauet.",
    "headlines": {
-    "completes music and home cinema systems": {
-     "sentimentAnalysis": "Subwooferen roses gentagne gange for at tilføre det manglende dybbasfundament og gøre musik, tv og film mere engagerende.",
-     "simpleTitle": "Fuldender musik- og hjemmebiografsystemer",
+    "deep, warm and controlled bass completes the sound": {
+     "sentimentAnalysis": "Anmeldelserne beskriver ofte bassen som dyb, varm, ren og kontrolleret samt effektiv til at fuldende helhedslyden.",
+     "simpleTitle": "Dyb, varm og kontrolleret bas fuldender lyden",
      "bias": "positive",
-     "key": "system-complement",
-     "groupId": "f2da0c4c-2814-47f2-bd87-c06a929ca8f2"
+     "key": "deep-bass",
+     "groupId": "a5bfb40d-cd66-445b-9b14-2e9131395d1d"
     },
-    "strong value for the price": {
-     "sentimentAnalysis": "Mange anmeldelser vurderer ydelse, kvalitet og bas som usædvanligt stærk i forhold til prisen.",
-     "simpleTitle": "Stærk værdi for pengene",
+    "compact size works especially well in smaller rooms": {
+     "sentimentAnalysis": "Anmeldelserne fremhæver det kompakte kabinet, der er nemt at placere, og anbefaler det ofte til små eller mellemstore rum.",
+     "simpleTitle": "Den kompakte størrelse passer især godt til mindre rum",
      "bias": "positive",
-     "key": "value-for-money",
-     "groupId": "5ffa9349-e0e4-4a34-8779-73c898e791ed"
+     "key": "compact-size",
+     "groupId": "67c1e2f6-536d-438d-991c-17c6e935eaf2"
     },
-    "compact design suits smaller rooms": {
-     "sentimentAnalysis": "Det kompakte kabinet er nemt at placere og særligt velegnet til små og mellemstore rum.",
-     "simpleTitle": "Kompakt design til mindre rum",
-     "bias": "positive",
-     "key": "compact-placement",
-     "groupId": "2f96153e-a93f-406f-aafb-547a751535cb"
-    },
-    "deep, clean and room-filling bass": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent dyb, kontrolleret og omsluttende bas med høj ydelse for det kompakte kabinet.",
-     "simpleTitle": "Dyb, ren og rumfyldende bas",
-     "bias": "positive",
-     "key": "deep-clean-bass",
-     "groupId": "f2da0c4c-2814-47f2-bd87-c06a929ca8f2"
-    },
-    "auto-standby and hum can be distracting": {
-     "sentimentAnalysis": "En mindre del af anmeldelserne rapporterer hørbar brummen eller upålidelig auto-standby, især under stille passager.",
-     "simpleTitle": "Auto-standby og brummen kan være forstyrrende",
+    "auto-standby and adjustment can be frustrating": {
+     "sentimentAnalysis": "Flere anmeldelser nævner brummen eller standby-adfærd og siger, at det kan kræve ekstra arbejde at finde den ideelle balance eller placering.",
+     "simpleTitle": "Auto-standby og indstilling kan være frustrerende",
      "bias": "negative",
-     "key": "standby-hum",
-     "groupId": "f2da0c4c-2814-47f2-bd87-c06a929ca8f2"
+     "key": "standby-adjustment",
+     "groupId": "254279a2-f9b1-4c0e-8b34-8ef92287a2f9"
     }
    },
    "grouping": {
-    "f2da0c4c-2814-47f2-bd87-c06a929ca8f2": {
+    "a5bfb40d-cd66-445b-9b14-2e9131395d1d": {
      "title": "Lydkvalitet",
-     "id": "f2da0c4c-2814-47f2-bd87-c06a929ca8f2",
+     "id": "a5bfb40d-cd66-445b-9b14-2e9131395d1d",
      "references": [
+      "e80dea42-d631-4ca5-a073-1d643f9f40d2",
       "e97bea81-f1f9-451b-b046-8240e49bbac0",
       "be9798a1-b325-4b38-8e59-77caefcddb52",
       "a13698c4-a591-4b9b-945c-1df808332209",
-      "c128b2e-0ffa-462b-8ad0-5f70ed1e8d11",
+      "c1280b2e-0ffa-462b-8ad0-5f70ed1e8d11",
       "bbd56d52-1744-42aa-98db-7f3294f47cd9",
       "71d7e3e2-7a8b-46d2-9e1f-5df77debbc6a",
       "5f5f5e73-c0b9-49ec-9a76-5eb9f11b0b8b",
-      "392207ab-e05f-4493-bfb5-d0967e67f5cd",
       "b6dd6901-4b0b-4f27-b113-4f4accb0887d",
       "e743003e-a032-43ed-bd05-363fc828a0de",
       "3eaabc05-095a-4e4c-aad4-8d9fc91af8a8",
-      "1458567d-7dcc-4439-9eef-cbb2b34cc89f",
       "4384b7af-5e41-45dd-b0ce-045adf246638",
       "e62cc7af-0064-4b89-a75c-0642d4d829d3",
       "fcc58e09-ebf0-4ae8-81bc-e6fdf84bfd2c",
@@ -754,9 +733,7 @@
       "ac320d08-16bb-440b-a0e3-55cbe5d01c0b",
       "823693e3-f11f-4530-9b7c-7af85cd3f47c",
       "28930b7e-42cf-4961-9c3a-99ca019758c3",
-      "fc7c0226-495a-4a57-9d6f-90d435856eb4",
       "eb684cf5-d559-4a21-9bdd-3617e344d269",
-      "31a44e3d-688e-4f1b-8f32-e40664d156b5",
       "57937336-b391-4060-9bbd-2dfc7fc1f5fa",
       "58d15e97-c37e-4e4f-b8e5-3ec4b13a908a",
       "b075f9d9-4ea6-4fcb-bb19-180baba90839",
@@ -766,23 +743,17 @@
       "8213b3b5-bddf-4c59-8b45-e13c618cad4d",
       "4f6c21a1-e7df-49b0-b2eb-ea18d856cc37",
       "584af1e0-bfd7-4265-b334-bc6a5b8411f6",
-      "9c998570-d08d-426a-9fe2-08077ce75f5f",
       "3bbc7284-91b3-4df4-b3a4-18313b1dbe15",
-      "04d1d796-2e7d-4416-bfb6-6796af098c11",
       "54138598-d6d8-43c5-95c0-10347c61414f",
       "a2c99da2-c7e6-48cf-9a5f-ae3e68827868",
       "a3e11119-c7fc-4cbe-b71d-457406ab9b90",
       "b7882c6e-e4c5-4a75-86ac-1f8f9a080c04",
       "a6746f53-5658-452f-9da0-0e791651ffd0",
-      "6e5e0e9b-29de-4aad-8c8d-693b061c4d45",
-      "cf1bb952-1c83-4cd3-bfbf-ed91fc2834bb",
       "e3ac1636-8b65-438f-ae4b-daf943ac2253",
       "df4d652f-6091-461d-972a-483d4c9968f9",
       "554a76f7-22b0-4d97-aa7d-fde4a4833fb0",
       "90598a11-8a43-4b4d-a0ab-7d05195cb54e",
-      "77ba14c7-8a53-448a-bc66-643c3ab8847d",
-      "0deb9020-a2da-4ab9-bf1d-7849b77a9717",
-      "7560c1a0-db6b-49f2-8874-7a3ecc168f47",
+      "0deb9020-a2da-4ab9-bf1d-7849b77a9716",
       "d0668479-370a-4c59-a5b8-815439ccf417",
       "f29f2211-b844-46a0-aef7-ac77da7c65a5",
       "871864aa-81a8-436d-b9d5-8fc4b36ce22c",
@@ -798,6 +769,7 @@
       "6edf02c3-174c-4826-9e7e-cc22ffce10c9",
       "cb4d1121-6bca-45b8-896b-1c8af17123a2",
       "49865d96-b12f-4c31-b6ac-be619c1b6b6b",
+      "2242046f-8944-4076-804e-1015404aa756",
       "777b190e-4680-4273-85ca-3ce2c26f9922",
       "2e1e3c5d-7bbc-4361-8a02-75bb67c1dc08",
       "6f6cc643-e497-420c-9a73-7217ca631756",
@@ -810,7 +782,6 @@
       "89cf7c8b-e451-49a2-a572-ce388899ac64",
       "82c22379-6d47-4bae-bdc1-ae11a9cf926a",
       "323c038c-8002-4da6-8bc7-325b848dbfed",
-      "aa2984cc-628a-4981-bda5-ffceb0367f2c",
       "cd34c26b-51c0-4d0d-a327-23d16133cc09",
       "ae1a8480-40d3-4e55-86b5-42a281232393",
       "93272768-c7d7-4238-a5d5-0901c6a2d30e",
@@ -825,78 +796,72 @@
       "7a5c23d1-af61-4905-a670-605ac95d5082",
       "b401192c-090a-473e-87e1-c8959c5e3bfa",
       "ef477ff2-14d6-4b5c-82aa-7170176a3230",
-      "a8b2dc12-f99b-472c-b869-140ac708f7a7",
+      "5db0613f-e7b8-4867-87ea-db148e5ed022",
+      "55bf7435-4e63-4067-833f-55812c8d6fd0",
+      "4be291fa-b014-45c5-bad9-d425311fe74e",
       "229d54c1-40e5-4316-aea2-144bb76d3a2a",
-      "bb7f39f7-87f4-44f1-a55a-bee4b13162af",
       "4a53919f-4ddd-4fd3-b42e-c8727ad077bc",
       "a4ee3750-fcf8-45a1-8f3f-be9c213c0c03",
-      "5d04725c-4da4-453e-8a0a-62e6e8f044f3",
-      "d02c8420-2aab-40a3-a7ca-2993ad6349b6",
-      "b4e8c981-052e-4e2b-a7f2-26965932b637",
       "b04cde94-f112-44ef-9ccb-c4968c0a53da",
-      "661023ad-6693-460b-9b05-885b8500a636",
-      "f0ffa328-e841-4859-b787-d3386a0ce1c7",
-      "03c208d4-ef24-4bf9-9fe0-59eab6af5d34",
       "8ba90504-6774-46b0-b38d-d7c6c5c50cfb",
       "3cdb9aef-656e-4a7e-8323-6c61b5ba390f",
       "4479f7e5-adbf-4919-b013-a3cff6167afc"
      ]
     },
-    "2f96153e-a93f-406f-aafb-547a751535cb": {
-     "title": "Størrelse og placering",
-     "id": "2f96153e-a93f-406f-aafb-547a751535cb",
+    "254279a2-f9b1-4c0e-8b34-8ef92287a2f9": {
+     "title": "Opsætning og integration",
+     "id": "254279a2-f9b1-4c0e-8b34-8ef92287a2f9",
      "references": [
-      "c128b2e-0ffa-462b-8ad0-5f70ed1e8d11",
-      "392207ab-e05f-4493-bfb5-d0967e67f5cd",
-      "e743003e-a032-43ed-bd05-363fc828a0de",
+      "bbd56d52-1744-42aa-98db-7f3294f47cd9",
+      "6eea291c-7587-4c2e-b0b0-e085fdce66af",
       "4384b7af-5e41-45dd-b0ce-045adf246638",
       "abf5ae59-a7fb-465c-afe1-e412c4e52250",
-      "202827db-b56d-43af-a37a-4cb7538e4114",
+      "3af988a7-6744-4a52-b0e1-f18427b791a6",
+      "004edd39-a595-4da9-b274-cc4ae1796317",
+      "d0668479-370a-4c59-a5b8-815439ccf417",
+      "f29f2211-b844-46a0-aef7-ac77da7c65a5",
+      "0c6b17db-59e9-492b-9fd7-0f1d12f881e3",
+      "e3ac1636-8b65-438f-ae4b-daf943ac2253",
+      "56b5b54d-39be-40e2-8e7c-528c9e06868d",
+      "2242046f-8944-4076-804e-1015404aa756",
+      "8c3f3a25-db67-4739-8d77-f45fa96d9745",
+      "36a38874-1cc0-4bfc-8c2a-46f3416c121e",
+      "ae1a8480-40d3-4e55-86b5-42a281232393",
+      "ef477ff2-14d6-4b5c-82aa-7170176a3230",
+      "a4ee3750-fcf8-45a1-8f3f-be9c213c0c03",
+      "2775694c-d7f5-41a5-b573-a5b0aad04861"
+     ]
+    },
+    "67c1e2f6-536d-438d-991c-17c6e935eaf2": {
+     "title": "Størrelse og design",
+     "id": "67c1e2f6-536d-438d-991c-17c6e935eaf2",
+     "references": [
+      "c1280b2e-0ffa-462b-8ad0-5f70ed1e8d11",
+      "392207ab-e05f-4493-bfb5-d0967e67f5cd",
+      "4384b7af-5e41-45dd-b0ce-045adf246638",
+      "abf5ae59-a7fb-465c-afe1-e412c4e52250",
       "31a44e3d-688e-4f1b-8f32-e40664d156b5",
-      "b075f9d9-4ea6-4fcb-bb19-180baba90839",
       "ccf79d61-8d55-4096-a56b-04bd490b0719",
       "7560c1a0-db6b-49f2-8874-7a3ecc168f47",
       "c93eb8fd-ccdf-46ff-a390-4ba6f449fb00",
-      "7ae4d1b6-1c2c-480b-b21a-70dfd4cf4e88",
-      "36a38874-1cc0-4bfc-8c2a-46f3416c121e",
-      "473e80b7-9ea2-4494-8e01-5deff48a3017",
-      "ae1a8480-40d3-4e55-86b5-42a281232393",
       "5b9845a9-fb1d-48e5-99d3-912d7f611979",
+      "461dd678-e787-4baa-aeae-f36760636193",
       "5333c9ba-765f-4ca0-9a24-fad1a76f45d5",
-      "aa07eac0-467e-41df-84c5-57ba8526585a"
-     ]
-    },
-    "5ffa9349-e0e4-4a34-8779-73c898e791ed": {
-     "title": "Pris og værdi",
-     "id": "5ffa9349-e0e4-4a34-8779-73c898e791ed",
-     "references": [
-      "be9798a1-b325-4b38-8e59-77caefcddb52",
-      "392207ab-e05f-4493-bfb5-d0967e67f5cd",
-      "cde0ef1b-75bc-485c-997a-a9764cf97976",
-      "4384b7af-5e41-45dd-b0ce-045adf246638",
-      "584af1e0-bfd7-4265-b334-bc6a5b8411f6",
-      "6e5e0e9b-29de-4aad-8c8d-693b061c4d45",
-      "77ba14c7-8a53-448a-bc66-643c3ab8847d",
-      "7560c1a0-db6b-49f2-8874-7a3ecc168f47",
-      "c1e036ce-80f3-49ea-9155-141470a592fa",
-      "d02c8420-2aab-40a3-a7ca-2993ad6349b6",
-      "b4e8c981-052e-4e2b-a7f2-26965932b637",
-      "bb7f39f7-87f4-44f1-a55a-bee4b13162af",
-      "5d04725c-4da4-453e-8a0a-62e6e8f044f3",
-      "4be291fa-b014-45c5-bad9-d425311fe74e",
-      "2c0f32ca-c08a-483b-8474-412973352648"
+      "55bf7435-4e63-4067-833f-55812c8d6fd0",
+      "aa07eac0-467e-41df-84c5-57ba8526585a",
+      "d9dcef0e-cc92-4499-b322-298b77c183e2"
      ]
     }
    },
-   "rating": 4.74223602484472,
-   "count": 322,
-   "reviewCount": 153,
+   "rating": 4.74617737003058,
+   "count": 327,
+   "reviewCount": 156,
    "distribution": {
     "1": 3,
     "2": 2,
     "3": 3,
     "4": 59,
-    "5": 255
+    "5": 260
    }
   },
   "brandName": "Argon Audio",

@@ -213,7 +213,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 23,
-     "availableQuantity": 59,
+     "availableQuantity": 1,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -309,8 +309,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 112,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 86,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -355,41 +355,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGCD1 er en kompakt og brugervenlig cd-afspiller, der leverer varm, detaljeret og åben lyd. Byggekvalitet, design og systemkompatibilitet bliver i høj grad værdsat, med dynamisk og medrivende afspilning sammen med Argon og andet lydudstyr. En mindre ulempe er lejlighedsvis mekanisk støj og manglende genoptagelse af afspilningen efter slukning.",
+   "summary": "ARGCD1 leverer en varm, detaljeret og åben lyd med punch og musikalitet, især sammen med kompatible Argon- eller Bluesound-systemer. Det kompakte design, den enkle betjening og den solide kvalitet gør afspilleren nem at integrere og nyde. En mindre begrænsning ved genoptagelse af afspilning og lejlighedsvis mekanisk støj ændrer kun lidt ved det overvejende begejstrede indtryk.",
    "headlines": {
     "detailed, open and enjoyable sound": {
-     "sentimentAnalysis": "Lyden roses som detaljeret, åben, af høj kvalitet og behagelig i tilsluttede systemer.",
+     "sentimentAnalysis": "Anmeldelserne roser den detaljerede, åbne og behagelige lyd samt den stærke ydelse i komplette lydsystemer.",
      "simpleTitle": "Detaljeret, åben og behagelig lyd",
      "bias": "positive",
-     "key": "detailed_open_sound",
-     "groupId": "a45a3915-bfa5-42d7-bf97-04f614cff720"
+     "key": "sound",
+     "groupId": "27d61db7-5056-41ac-a864-5aae777be315"
     },
-    "works well with other audio systems": {
-     "sentimentAnalysis": "Afspilleren ses som et stærkt supplement til Bluesound, Argon-højttalere og Argon-forstærkere.",
-     "simpleTitle": "Fungerer godt med andre lydsystemer",
+    "strong match with Argon and Bluesound systems": {
+     "sentimentAnalysis": "Afspilleren fungerer især godt med Argon-udstyr og roses også sammen med Bluesound-komponenter.",
+     "simpleTitle": "God kombination med Argon- og Bluesound-systemer",
      "bias": "positive",
-     "key": "system_pairing",
-     "groupId": "f50aef4e-a5bc-4876-b667-e645fddc3149"
+     "key": "compatibility",
+     "groupId": "e94430bc-f844-40ac-8c05-ff1ae6d3c959"
     },
-    "compact and well made": {
-     "sentimentAnalysis": "Det kompakte format, det flotte design og den solide udførelse bliver værdsat.",
-     "simpleTitle": "Kompakt og velbygget",
+    "good quality for the price": {
+     "sentimentAnalysis": "Anmeldelserne beskriver produktet som overraskende kompetent, velbygget og med god værdi for pengene.",
+     "simpleTitle": "God kvalitet til prisen",
      "bias": "positive",
-     "key": "compact_build",
-     "groupId": "b0ba1314-c039-4777-857f-68ba69d83aac"
+     "key": "quality",
+     "groupId": "ff09145a-33ef-4641-8509-5a3c6a62a24b"
     },
     "easy to operate": {
-     "sentimentAnalysis": "Afspilleren opfattes som enkel og nem at betjene.",
-     "simpleTitle": "Nem at betjene",
+     "sentimentAnalysis": "Afspilleren opleves som enkel og nem at betjene.",
+     "simpleTitle": "Nem betjening",
      "bias": "positive",
-     "key": "easy_operation",
-     "groupId": "3fa74607-2dc3-4bed-8ace-7b37508af71e"
+     "key": "usability",
+     "groupId": "f8414266-377b-48b1-b4e8-ddff8eca5391"
+    },
+    "compact and attractive design": {
+     "sentimentAnalysis": "Den kompakte størrelse og det flotte design fremhæves som praktiske og attraktive.",
+     "simpleTitle": "Kompakt og flot design",
+     "bias": "positive",
+     "key": "design",
+     "groupId": "3479364a-87b2-4a85-9dfb-dd39879828ad"
     }
    },
    "grouping": {
-    "a45a3915-bfa5-42d7-bf97-04f614cff720": {
+    "27d61db7-5056-41ac-a864-5aae777be315": {
      "title": "Lydkvalitet",
-     "id": "a45a3915-bfa5-42d7-bf97-04f614cff720",
+     "id": "27d61db7-5056-41ac-a864-5aae777be315",
      "references": [
       "6b9dbd68-c56f-4dfa-8ce4-6a45a790dbb0",
       "5b07e365-1ac7-4342-9792-70dc5aba38b2",
@@ -397,31 +404,38 @@
       "ea98de18-2634-4706-8aa9-3795dc5c7f12"
      ]
     },
-    "f50aef4e-a5bc-4876-b667-e645fddc3149": {
+    "e94430bc-f844-40ac-8c05-ff1ae6d3c959": {
      "title": "Systemkompatibilitet",
-     "id": "f50aef4e-a5bc-4876-b667-e645fddc3149",
+     "id": "e94430bc-f844-40ac-8c05-ff1ae6d3c959",
      "references": [
       "bc33c4e7-991c-4744-968d-9e8ae24205a0",
       "5c7075ec-8355-4cba-9b64-e314854d1666",
-      "5b07e365-1ac7-4342-9792-70dc5aba38b2",
       "ea98de18-2634-4706-8aa9-3795dc5c7f12"
      ]
     },
-    "b0ba1314-c039-4777-857f-68ba69d83aac": {
-     "title": "Design og byggekvalitet",
-     "id": "b0ba1314-c039-4777-857f-68ba69d83aac",
+    "ff09145a-33ef-4641-8509-5a3c6a62a24b": {
+     "title": "Byggekvalitet og værdi",
+     "id": "ff09145a-33ef-4641-8509-5a3c6a62a24b",
      "references": [
-      "1d85501e-33ca-49a3-9a57-a82551ea5f72",
-      "5c7075ec-8355-4cba-9b64-e314854d1666",
-      "e08286fd-6b6f-4ff3-b8a2-cdd6784771b1"
+      "0b55c502-db59-4cf0-8492-47ec17fdebc7",
+      "e08286fd-6b6f-4ff3-b8a2-cdd6784771b1",
+      "0bde58a1-8979-4beb-a892-5ee6b4e8036c"
      ]
     },
-    "3fa74607-2dc3-4bed-8ace-7b37508af71e": {
+    "f8414266-377b-48b1-b4e8-ddff8eca5391": {
      "title": "Brugervenlighed",
-     "id": "3fa74607-2dc3-4bed-8ace-7b37508af71e",
+     "id": "f8414266-377b-48b1-b4e8-ddff8eca5391",
      "references": [
       "0b55c502-db59-4cf0-8492-47ec17fdebc7",
       "1d85501e-33ca-49a3-9a57-a82551ea5f72"
+     ]
+    },
+    "3479364a-87b2-4a85-9dfb-dd39879828ad": {
+     "title": "Design og størrelse",
+     "id": "3479364a-87b2-4a85-9dfb-dd39879828ad",
+     "references": [
+      "1d85501e-33ca-49a3-9a57-a82551ea5f72",
+      "5c7075ec-8355-4cba-9b64-e314854d1666"
      ]
     }
    },

@@ -135,37 +135,38 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Et pålideligt kabel leverer den ønskede forbindelse med overbevisende ydelse og stærk værdi for pengene. Den solide konstruktion og det flotte design giver et kvalitetspræg og en god, immersiv oplevelse. Den samlede tilfredshed er høj, selv om kabelføringen og supporten kan forbedres.",
+   "summary": "Et pålideligt og velbygget kabel, der udfører sin grundlæggende funktion til en fremragende pris. Den solide konstruktion og det flotte design skaber tillid, mens helhedsoplevelsen peger på en ren og punchy forbindelse uden unødvendig kompleksitet. Samlet set en varm og immersiv vurdering, selv om opsætning og support kan forbedres.",
    "headlines": {
-    "works exactly as intended": {
-     "sentimentAnalysis": "Kablet roses konsekvent for at udføre sin grundlæggende funktion pålideligt og uden problemer.",
-     "simpleTitle": "Fungerer præcis som tilsigtet",
+    "works reliably as intended": {
+     "sentimentAnalysis": "Kablet udfører konsekvent sin grundlæggende funktion, og anmeldelserne beskriver problemfri og tilfredsstillende drift.",
+     "simpleTitle": "Fungerer pålideligt som forventet",
      "bias": "positive",
-     "key": "functionality",
-     "groupId": "7db26c7d-6eab-4ef0-9881-626ac4332e78"
+     "key": "works_reliably",
+     "groupId": "173ee783-1508-404b-964d-0ecb27dd9588"
     },
-    "solid and attractive construction": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver den robuste konstruktion, og designet passer desuden flot ind i omgivelserne.",
-     "simpleTitle": "Solid og flot konstruktion",
+    "solid construction and attractive fit": {
+     "sentimentAnalysis": "Produktet roses for solid konstruktion og et tiltalende udseende, der passer godt ind i omgivelserne.",
+     "simpleTitle": "Solid konstruktion og flot pasform",
      "bias": "positive",
-     "key": "build-design",
-     "groupId": "dd7221d4-889e-4146-86b5-a8c74893aacf"
+     "key": "solid_attractive_design",
+     "groupId": "92bc6b4f-bd69-4167-bda6-9b5fecd20424"
     }
    },
    "grouping": {
-    "7db26c7d-6eab-4ef0-9881-626ac4332e78": {
+    "173ee783-1508-404b-964d-0ecb27dd9588": {
      "title": "Funktionalitet",
-     "id": "7db26c7d-6eab-4ef0-9881-626ac4332e78",
+     "id": "173ee783-1508-404b-964d-0ecb27dd9588",
      "references": [
       "f0851931-1e83-4562-8e5f-589fb521b0d5",
       "647ca9dd-0407-41ef-a1fc-060629729fc5",
       "8ed74b04-8cab-4ca1-80f1-a7b94300070a",
+      "4780c0e1-cdb0-4a58-b077-f46192aa5db3",
       "16c6a654-a4d4-4cfc-80b6-166066661e20"
      ]
     },
-    "dd7221d4-889e-4146-86b5-a8c74893aacf": {
+    "92bc6b4f-bd69-4167-bda6-9b5fecd20424": {
      "title": "Byggekvalitet og design",
-     "id": "dd7221d4-889e-4146-86b5-a8c74893aacf",
+     "id": "92bc6b4f-bd69-4167-bda6-9b5fecd20424",
      "references": [
       "647ca9dd-0407-41ef-a1fc-060629729fc5",
       "8989be23-6217-4011-88fe-6a3e7a6200ff"

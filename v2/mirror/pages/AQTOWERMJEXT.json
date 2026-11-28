@@ -121,7 +121,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 1,
-     "availableQuantity": 11,
+     "availableQuantity": 9,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -218,24 +218,38 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQTOWERMJEXT opfattes som et kabel i høj kvalitet og et pålideligt forlængerkabel til hovedtelefoner, der udfører sin opgave perfekt. Kablet leverer en klar og kraftfuld lydforbindelse og fungerer især godt med hovedtelefoner som Denon-modeller. Den samlede tilfredshed er meget høj; kun den lokale service blev kritiseret i en enkelt anmeldelse, ikke selve produktet.",
+   "summary": "AQTOWERMJEXT betragtes generelt som et kabel af høj kvalitet og et pålideligt forlængerkabel til hovedtelefoner, der fungerer perfekt. Kablet fungerer særligt godt med hovedtelefoner som Denon-modeller og giver en varm, fyldig og medrivende lytteoplevelse. Den samlede tilfredshed er meget høj, og kun den lokale service blev kritiseret i én enkelt anmeldelse, ikke selve produktet.",
    "headlines": {
-    "reliable extension cable with flawless performance": {
-     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som pålideligt, perfekt fungerende og effektivt som forlængerkabel til hovedtelefoner.",
-     "simpleTitle": "Pålideligt forlængerkabel med fejlfri ydeevne",
+    "works perfectly as a headphone extension": {
+     "sentimentAnalysis": "Forlængerkablet roses for pålidelig ydeevne og for at gøre præcis det, det skal.",
+     "simpleTitle": "Fungerer perfekt som hovedtelefonforlænger",
      "bias": "positive",
-     "key": "cable-performance",
-     "groupId": "41e8f27d-2a27-4653-8eb9-4b90c86503cd"
+     "key": "extension_performance",
+     "groupId": "ad54a6dc-f30a-4708-9988-13f1cbc2d2a7"
+    },
+    "high-quality cable": {
+     "sentimentAnalysis": "Kablet beskrives konsekvent som fremragende og af høj kvalitet.",
+     "simpleTitle": "Kabel af høj kvalitet",
+     "bias": "positive",
+     "key": "cable_quality",
+     "groupId": "730e99fe-f439-49c9-bf80-9affed814f30"
     }
    },
    "grouping": {
-    "41e8f27d-2a27-4653-8eb9-4b90c86503cd": {
-     "title": "Ydeevne for hovedtelefonkabel",
-     "id": "41e8f27d-2a27-4653-8eb9-4b90c86503cd",
+    "ad54a6dc-f30a-4708-9988-13f1cbc2d2a7": {
+     "title": "Forlængerkablets ydeevne",
+     "id": "ad54a6dc-f30a-4708-9988-13f1cbc2d2a7",
      "references": [
       "854b8988-8379-4333-a588-e2504826a709",
       "e953ff83-6766-40ff-8354-4d404fe57295",
-      "74edefc1-84ea-44b6-8828-17833fde0fd3",
+      "74edefc1-84ea-44b6-8828-17833fde0fd3"
+     ]
+    },
+    "730e99fe-f439-49c9-bf80-9affed814f30": {
+     "title": "Kabelkvalitet",
+     "id": "730e99fe-f439-49c9-bf80-9affed814f30",
+     "references": [
+      "a9437290-5b42-4c40-b710-853f824cb0be",
       "ec5229c6-a5ac-4d2a-8e80-d77a8bdb24fe"
      ]
     }

@@ -114,7 +114,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 101,
+     "availableQuantity": 96,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -192,8 +192,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 9,
-     "availableQuantity": 154,
+     "numberOfStoresExperience": 8,
+     "availableQuantity": 149,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -215,57 +215,50 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "En varm, ren og detaljeret lyd leverer imponerende lydstyrke for kompakte højttalere og skaber en engagerende lytteoplevelse. Ydeevnen virker pålidelig og meget tilfredsstillende, mens den punchy klarhed især imponerer i forhold til størrelsen. Det proprietære stik og de oplevede produktionsomkostninger får prisen til at virke for høj for nogle købere.",
+   "summary": "ARGFORTECBL10 leverer en varm, ren og detaljeret lyd med en imponerende fyldig og rummelig gengivelse i forhold til størrelsen. Samlet set er ydelsen meget tilfredsstillende og giver god værdi, når dyb bas i en stor stue ikke er førsteprioritet. Det proprietære stik og den oplevede høje pris er de største ulemper, mens den generelle tilfredshed er meget høj.",
    "headlines": {
-    "clean and detailed sound": {
-     "sentimentAnalysis": "Lyden roses for at være meget detaljeret og ren med stærk tonal klarhed.",
+    "clean, detailed sound": {
+     "sentimentAnalysis": "Anmeldelserne roser lyden som meget detaljeret og ren med en overbevisende samlet gengivelse.",
      "simpleTitle": "Ren og detaljeret lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "b90f5a9f-b583-4b96-b714-002cf7febc30"
+     "key": "clean-detailed-sound",
+     "groupId": "c8f1cd39-906b-4a33-b67b-055e0abbc4cb"
     },
-    "impressive volume for the size": {
-     "sentimentAnalysis": "De kompakte højttalere vurderes til at kunne levere overraskende fyldig og kraftfuld lyd.",
-     "simpleTitle": "Imponerende lydstyrke i forhold til størrelsen",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "b90f5a9f-b583-4b96-b714-002cf7febc30"
-    },
-    "pricing feels excessive": {
-     "sentimentAnalysis": "Prisen kritiseres som for høj, især på grund af det proprietære stik og de oplevede produktionsomkostninger.",
-     "simpleTitle": "Prisen virker for høj",
+    "perceived as too expensive": {
+     "sentimentAnalysis": "Begge anmeldelser kritiserer prisen; den ene peger især på det proprietære stik, mens den anden stiller spørgsmål ved fremstillingsomkostningerne.",
+     "simpleTitle": "Opleves som for dyr",
      "bias": "negative",
-     "key": "price-value",
-     "groupId": "776ae2ff-5acc-45bf-b200-db6c4160abb9"
+     "key": "high-price",
+     "groupId": "24769ea9-cda9-41a2-b47d-eab056958bbd"
     }
    },
    "grouping": {
-    "b90f5a9f-b583-4b96-b714-002cf7febc30": {
+    "c8f1cd39-906b-4a33-b67b-055e0abbc4cb": {
      "title": "Lydkvalitet",
-     "id": "b90f5a9f-b583-4b96-b714-002cf7febc30",
+     "id": "c8f1cd39-906b-4a33-b67b-055e0abbc4cb",
      "references": [
       "1cba522a-4715-4656-830e-c6c8ceebcb3f",
       "f514a7f1-b549-4d70-abb6-5e79e62be879"
      ]
     },
-    "776ae2ff-5acc-45bf-b200-db6c4160abb9": {
+    "24769ea9-cda9-41a2-b47d-eab056958bbd": {
      "title": "Pris og værdi",
-     "id": "776ae2ff-5acc-45bf-b200-db6c4160abb9",
+     "id": "24769ea9-cda9-41a2-b47d-eab056958bbd",
      "references": [
       "677d69ff-1b4e-4ce8-9c0f-5d621484bc93",
       "02eccc9f-c899-4dd8-9806-539ac7dffc6a"
      ]
     }
    },
-   "rating": 4.66666666666667,
-   "count": 24,
+   "rating": 4.68,
+   "count": 25,
    "reviewCount": 11,
    "distribution": {
     "1": 0,
     "2": 1,
     "3": 1,
     "4": 3,
-    "5": 19
+    "5": 20
    }
   },
   "brandName": "Argon Audio",

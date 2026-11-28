@@ -113,8 +113,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 13,
-     "availableQuantity": 75,
+     "numberOfStoresExperience": 14,
+     "availableQuantity": 49,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -136,56 +136,54 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "AQ-splitteren er en vellavet, kompakt og pålidelig løsning til tilslutning af subwoofere, DAC'er og forstærkere. Splitteren fungerer som forventet, leverer et rent signal og kan forbedre subwooferens ydeevne, når begge RCA-indgange bruges. Den robuste konstruktion, gode afskærmning og lave pris gør den til et stærkt anbefalet tilbehør.",
+   "summary": "AQYSPLITTER1F2MX betragtes generelt som en pålidelig kvalitetsløsning, der fungerer som forventet i opsætninger med subwoofer og flere forstærkere. Det kompakte design, den flotte finish, det robuste kabel og den gode afskærmning bidrager til et rent og støjfrit signal. Splitteren løser tilslutningsproblemer enkelt og prisvenligt og kan give en mere punchy og medrivende subwoofergengivelse.",
    "headlines": {
     "works reliably as intended": {
-     "sentimentAnalysis": "Splitteren udfører konsekvent sin grundlæggende funktion og anses generelt for at være pålidelig.",
+     "sentimentAnalysis": "Flere anmeldelser beskriver en pålidelig funktion og tilfredshed med splitterens grundlæggende funktion.",
      "simpleTitle": "Fungerer pålideligt som forventet",
      "bias": "positive",
-     "key": "works_reliably",
-     "groupId": "58eefa29-fb1f-4e60-88eb-3be003902498"
+     "key": "functionality",
+     "groupId": "51d2a3ac-5d1d-4a97-a345-ba5ba8b564ad"
     },
-    "high-quality, robust construction": {
-     "sentimentAnalysis": "Anmeldelserne roser de førsteklasses materialer, det attraktive udseende og den robuste fornemmelse.",
-     "simpleTitle": "Høj kvalitet og robust konstruktion",
+    "compact, attractive and well built": {
+     "sentimentAnalysis": "Splitteren roses for høj kvalitet, kompakte mål, flot udseende og robust konstruktion.",
+     "simpleTitle": "Kompakt, flot og solidt bygget",
      "bias": "positive",
-     "key": "quality_construction",
-     "groupId": "ef92e814-a429-43ce-abe0-b8034d64b989"
+     "key": "build_quality",
+     "groupId": "ee893809-5bc0-4c67-ad09-c80fa7f777e4"
     },
-    "a practical subwoofer upgrade": {
-     "sentimentAnalysis": "Splitteren giver en effektiv tilslutningsløsning til subwoofere og forbindes med et kraftigere output.",
-     "simpleTitle": "Praktisk subwoofer-opgradering",
+    "solves subwoofer and amplifier connection needs": {
+     "sentimentAnalysis": "Anmeldelserne beskriver splitteren som en praktisk løsning til subwoofere med behov for to RCA-indgange og til at forbinde en DAC med to forstærkere.",
+     "simpleTitle": "Løser tilslutningsbehov til subwoofer og forstærker",
      "bias": "positive",
-     "key": "subwoofer_upgrade",
-     "groupId": "668ec8d5-1c75-4327-ae46-56659fd27fa5"
+     "key": "connectivity",
+     "groupId": "f3f25558-cc75-4bbe-8025-62078af6f397"
     },
-    "compact and interference-free": {
-     "sentimentAnalysis": "Det kompakte design er ikke i vejen, mens den korte kabelføring og afskærmning hjælper med at bevare et rent signal.",
-     "simpleTitle": "Kompakt og uden forstyrrelser",
+    "clean, interference-free signal": {
+     "sentimentAnalysis": "Positive kommentarer forbinder splitterens ydelse med forbedret lyd og effektiv afskærmning, der holder signalet fri for støj.",
+     "simpleTitle": "Rent og støjfrit signal",
      "bias": "positive",
-     "key": "compact_clean_signal",
-     "groupId": "58eefa29-fb1f-4e60-88eb-3be003902498"
+     "key": "signal_quality",
+     "groupId": "3c612872-7344-4eb5-96db-8e5d94480499"
     }
    },
    "grouping": {
-    "58eefa29-fb1f-4e60-88eb-3be003902498": {
+    "51d2a3ac-5d1d-4a97-a345-ba5ba8b564ad": {
      "title": "Funktionalitet",
-     "id": "58eefa29-fb1f-4e60-88eb-3be003902498",
+     "id": "51d2a3ac-5d1d-4a97-a345-ba5ba8b564ad",
      "references": [
       "64106b7a-f095-43cc-a4ed-a395b860248e",
       "19ca87e7-89c1-4dcc-a5b6-c611c55e0641",
       "db4ca157-b931-4a48-812a-96a909e7d6a5",
       "ddb2ca73-ba0c-4c4e-85d9-7da68cd70ef2",
       "31a632e4-9730-42c7-8acc-6ef55960a5de",
-      "ae942b9b-e942-4ba0-a1d5-615616b84d31",
       "ae315603-2a49-43d8-8849-50e1c56f8890",
-      "6d24a1a3-08da-4700-976c-db61bbe111a3",
-      "f84ac1ae-4f68-4fa3-9583-5b968f478655"
+      "6d24a1a3-08da-4700-976c-db61bbe111a3"
      ]
     },
-    "ef92e814-a429-43ce-abe0-b8034d64b989": {
-     "title": "Byggekvalitet",
-     "id": "ef92e814-a429-43ce-abe0-b8034d64b989",
+    "ee893809-5bc0-4c67-ad09-c80fa7f777e4": {
+     "title": "Byggekvalitet og design",
+     "id": "ee893809-5bc0-4c67-ad09-c80fa7f777e4",
      "references": [
       "710b9f50-bef7-40c1-b386-99ec6b3bb9dc",
       "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
@@ -193,13 +191,24 @@
       "f84ac1ae-4f68-4fa3-9583-5b968f478655"
      ]
     },
-    "668ec8d5-1c75-4327-ae46-56659fd27fa5": {
-     "title": "Subwoofer-tilslutning",
-     "id": "668ec8d5-1c75-4327-ae46-56659fd27fa5",
+    "f3f25558-cc75-4bbe-8025-62078af6f397": {
+     "title": "Tilslutning og kompatibilitet",
+     "id": "f3f25558-cc75-4bbe-8025-62078af6f397",
      "references": [
       "db4ca157-b931-4a48-812a-96a909e7d6a5",
       "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
-      "ae942b9b-e942-4ba0-a1d5-615616b84d31"
+      "ae942b9b-e942-4ba0-a1d5-615616b84d31",
+      "f84ac1ae-4f68-4fa3-9583-5b968f478655"
+     ]
+    },
+    "3c612872-7344-4eb5-96db-8e5d94480499": {
+     "title": "Signalkvalitet",
+     "id": "3c612872-7344-4eb5-96db-8e5d94480499",
+     "references": [
+      "db4ca157-b931-4a48-812a-96a909e7d6a5",
+      "fdfd0a4e-2612-42a9-a461-2b217ac0da29",
+      "f84ac1ae-4f68-4fa3-9583-5b968f478655",
+      "9af86be6-e3e9-4590-8f7e-3ee79061e095"
      ]
     }
    },

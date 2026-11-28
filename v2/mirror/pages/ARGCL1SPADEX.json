@@ -107,8 +107,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 18,
-     "availableQuantity": 7973,
+     "numberOfStoresExperience": 19,
+     "availableQuantity": 7871,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -129,41 +129,41 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "Disse spadestik kombinerer et stilfuldt, solidt design med nem kabeltilslutning og et sikkert greb. De store, veludførte kontakter passer især godt til højttalerkabinetter og understøtter en ren og stabil signalvej. Den største svaghed er de skrøbelige skruer, som kan knække ved for hård tilspænding, så omhyggelig montering er vigtig.",
+   "summary": "ARGCL1SPADEX-spaderne roses bredt for deres elegante udseende, solide konstruktion, sikre forbindelser og nemme montering. Connectorerne fungerer godt til højttalere og giver en ren, stabil kabelforbindelse med et eksklusivt udtryk. Flere anmeldelser advarer dog om, at de små skruer kan knække ved for hård tilspænding, og nogle brugere synes, at spaderne er større end forventet. Den robuste forbindelse understøtter en varm, punchy og omsluttende lydoplevelse.",
    "headlines": {
-    "solid, stylish construction": {
-     "sentimentAnalysis": "Stikkene roses gentagne gange for deres flotte udseende, solide konstruktion og eksklusive kvalitet.",
-     "simpleTitle": "Solid og stilfuld konstruktion",
+    "solid, elegant construction": {
+     "sentimentAnalysis": "Spaderne beskrives gentagne gange som flotte, robuste, vellavede og eksklusive.",
+     "simpleTitle": "Solid og elegant konstruktion",
      "bias": "positive",
-     "key": "build-quality",
-     "groupId": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7"
+     "key": "build",
+     "groupId": "1031bc89-5c9d-4fc8-8f11-8f9183b04bad"
     },
-    "screws can break when overtightened": {
-     "sentimentAnalysis": "Flere anmeldelser peger på svage skruer som det største problem med pålideligheden, især ved lidt for hård tilspænding.",
-     "simpleTitle": "Skruer kan knække ved for hård tilspænding",
+    "small screws can break when overtightened": {
+     "sentimentAnalysis": "Flere anmeldelser peger på skrøbelige skruer som den største svaghed og anbefaler forsigtig tilspænding.",
+     "simpleTitle": "Små skruer kan knække ved for hård tilspænding",
      "bias": "negative",
-     "key": "build-quality",
-     "groupId": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7"
+     "key": "screws",
+     "groupId": "c79640c9-88fd-4797-9184-c57879586c68"
     },
     "easy cable connection": {
-     "sentimentAnalysis": "Stikkene opleves som nemme at montere og praktiske til kabeltilslutning.",
+     "sentimentAnalysis": "Montering og kabeltilslutning opleves som enkel og praktisk.",
      "simpleTitle": "Nem kabeltilslutning",
      "bias": "positive",
      "key": "installation",
-     "groupId": "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c"
+     "groupId": "e104e2a5-e00f-4cb5-af56-e8e2dd2e7298"
     },
-    "may be too large for some equipment": {
-     "sentimentAnalysis": "Begge anmeldelser om størrelsen finder spadestikkene lidt store, selv om ydeevnen er acceptabel eller god.",
-     "simpleTitle": "Kan være for store til visse enheder",
+    "can be too large for some terminals": {
+     "sentimentAnalysis": "Spaderne fungerer, men passer muligvis ikke godt til mindre udstyr.",
+     "simpleTitle": "Kan være for store til visse terminaler",
      "bias": "negative",
-     "key": "size-fit",
-     "groupId": "e45caaa9-094c-486f-8156-6bb2c1e47352"
+     "key": "installation",
+     "groupId": "e104e2a5-e00f-4cb5-af56-e8e2dd2e7298"
     }
    },
    "grouping": {
-    "6b0c4529-a61f-4716-8d4e-1fc21ce542a7": {
-     "title": "Byggekvalitet",
-     "id": "6b0c4529-a61f-4716-8d4e-1fc21ce542a7",
+    "1031bc89-5c9d-4fc8-8f11-8f9183b04bad": {
+     "title": "Kvalitet og udseende",
+     "id": "1031bc89-5c9d-4fc8-8f11-8f9183b04bad",
      "references": [
       "a040f9da-107a-4152-a6a6-c7c6a7d0cdcb",
       "9e6a9525-bdd5-4569-b4f8-6ee22d909a27",
@@ -172,43 +172,44 @@
       "3b9c14da-bbb0-4c4f-99f1-0a0580b96617",
       "a82771af-86d5-4eaa-a5ab-8b6688fea581",
       "90b66a86-d0b5-49a9-9aed-58a14deb902c",
-      "a36eaa00-2e24-4b25-8c2f-610ad0031943",
       "b09062e4-82eb-44e6-bc96-2bec93986419",
-      "5bdac6b6-4f9f-402d-8b37-7fa8c783b94d",
-      "f222feec-05c4-43db-92dc-2915e12eeb46",
+      "f222ecfe-05c4-43db-92dc-2915e12eeb46",
       "7c840f65-8f63-4c08-890b-d2b4951db524",
       "923f6169-0f31-410c-a5d6-63f107a3ec5b",
       "8578ced1-e35b-4421-b949-722d10224340",
-      "c504c2f8-a2de-4791-9853-4f17c38b1065",
-      "f960aa93-f0a5-48e5-8604-60c548d9c301"
+      "c504c2f8-a2de-4791-9853-4f17c38b1065"
      ]
     },
-    "e45caaa9-094c-486f-8156-6bb2c1e47352": {
-     "title": "Størrelse og pasform",
-     "id": "e45caaa9-094c-486f-8156-6bb2c1e47352",
-     "references": [
-      "16b1906a-10c2-41e6-b94b-824f4edfdec9",
-      "7adaa468-0c5e-4977-8b42-5a4b98a1acda"
-     ]
-    },
-    "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c": {
-     "title": "Montering",
-     "id": "ea43de4b-d1ea-42de-9540-3e8a1aa7e65c",
+    "e104e2a5-e00f-4cb5-af56-e8e2dd2e7298": {
+     "title": "Montering og pasform",
+     "id": "e104e2a5-e00f-4cb5-af56-e8e2dd2e7298",
      "references": [
       "b73a31c8-e212-4c55-aaec-f67b3d567c73",
+      "16b1906a-10c2-41e6-b94b-824f4edfdec9",
+      "7adaa468-0c5e-4977-8b42-5a4b98a1acda",
       "f960aa93-f0a5-48e5-8604-60c548d9c301"
+     ]
+    },
+    "c79640c9-88fd-4797-9184-c57879586c68": {
+     "title": "Skrueholdbarhed",
+     "id": "c79640c9-88fd-4797-9184-c57879586c68",
+     "references": [
+      "1f60ec4a-958a-4526-bb95-0cb2cc0cec2c",
+      "a2a68573-0089-41da-b02c-f94b3cafe2ae",
+      "a36eaa00-2e24-4b25-8c2f-610ad0031943",
+      "5bdac6b6-4f9f-402d-8b37-7fa8c783b94d"
      ]
     }
    },
-   "rating": 4.65217391304348,
-   "count": 69,
-   "reviewCount": 22,
+   "rating": 4.65714285714286,
+   "count": 70,
+   "reviewCount": 23,
    "distribution": {
     "1": 1,
     "2": 0,
     "3": 4,
     "4": 12,
-    "5": 52
+    "5": 53
    }
   },
   "brandName": "Argon Audio",

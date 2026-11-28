@@ -53,7 +53,6 @@
     "WAV4SIGNATURE",
     "NOONWHNX5X",
     "ARGHPQUIETSTORM",
-    "WAVJUNIOR",
     "MARMAJOR5",
     "WAV5SIGNATURE",
     "MARMILTON",
@@ -62,7 +61,8 @@
     "DALIIO8",
     "BWPX7S2E",
     "BWPX7S3",
-    "KEFMU7"
+    "KEFMU7",
+    "WAVJUNIOR"
    ],
    "isOutlet": "false"
   },
@@ -261,7 +261,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 24,
-     "availableQuantity": 216,
+     "availableQuantity": 208,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -349,48 +349,55 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGHPSOUL3 leverer en varm, fyldig og ofte overraskende detaljeret lyd til en fremragende pris. Den behagelige over-ear-pasform, den nyttige passive støjdæmpning og den lange batteritid gør hovedtelefonerne velegnede til hverdagsbrug og rejser. Byggekvalitet, betjening og basbalance får en del kritik, men den samlede værdi er stadig meget overbevisende.",
+   "summary": "ARGHPSOUL3 leverer en varm, fyldig og ofte overraskende detaljeret lyd til en fremragende pris. Den komfortable over-ear-konstruktion, sikre pasform og enkle betjening gør høretelefonerne behagelige til lange lyttesessioner, mens den passive isolering hjælper med at holde musikken privat. Batteritid og praktisk anvendelse er stærk, selv om nogle lyttere synes, at bassen er for fremtrædende, lydstyrken for lav eller byggekvalitet og pasform mindre holdbare end håbet.",
    "headlines": {
-    "comfortable for extended listening": {
-     "sentimentAnalysis": "Pasformen beskrives ofte som behagelig, sikker og egnet til lange lytteperioder.",
-     "simpleTitle": "Behagelige ved længere tids brug",
+    "comfortable fit for extended listening": {
+     "sentimentAnalysis": "Høretelefonerne beskrives gentagne gange som behagelige, lette og velegnede til lang tids brug.",
+     "simpleTitle": "Behagelig pasform til lang tids lytning",
      "bias": "positive",
      "key": "comfort",
-     "groupId": "7d1b4bfc-5d34-4ab0-ba90-ef829a27db11"
+     "groupId": "9248db2b-5916-4e6d-ad97-855e97507f04"
     },
-    "excellent value for the money": {
-     "sentimentAnalysis": "Kombinationen af lyd, komfort og enkel funktionalitet vurderes gentagne gange som fremragende til prisen.",
+    "excellent value for money": {
+     "sentimentAnalysis": "Pris-ydelsen er en klar styrke med god lyd og nyttige funktioner til en moderat pris.",
      "simpleTitle": "Fremragende værdi for pengene",
      "bias": "positive",
      "key": "value",
-     "groupId": "e364eb23-6bfa-4762-b219-987ffeb0cb7e"
+     "groupId": "0ab3b67f-0ee4-4393-8afb-e1470eef2faa"
     },
-    "rich, clear sound with strong value": {
-     "sentimentAnalysis": "Anmeldelserne roser ofte den fyldige, klare og detaljerede gengivelse, især prisen taget i betragtning.",
-     "simpleTitle": "Fyldig, klar lyd med stærk værdi",
+    "warm, powerful sound with impressive detail": {
+     "sentimentAnalysis": "Lyden roses som fyldig, kraftfuld, afbalanceret og detaljeret, især til prisen.",
+     "simpleTitle": "Varm og kraftfuld lyd med imponerende detaljer",
      "bias": "positive",
      "key": "sound",
-     "groupId": "6b53349e-ce5c-46fc-87eb-da076e88d456"
+     "groupId": "a8dd7a11-06a3-4dd4-9c0b-e5268f559c56"
     },
-    "bass and volume are not perfect for everyone": {
-     "sentimentAnalysis": "Nogle lyttere synes, lyden er for lav, for bastung eller mangler bastryk, mens andre ønsker en klarere eller kraftigere gengivelse.",
-     "simpleTitle": "Bas og lydstyrke passer ikke alle",
+    "fit can feel tight, hot or loose over time": {
+     "sentimentAnalysis": "Nogle brugere synes, at bøjlen er for stram, ørepuderne bliver varme, pasformen er for stor, eller at bøjlen bliver slap.",
+     "simpleTitle": "Pasformen kan føles stram, varm eller blive løs med tiden",
+     "bias": "negative",
+     "key": "comfort",
+     "groupId": "9248db2b-5916-4e6d-ad97-855e97507f04"
+    },
+    "passive isolation reduces background noise": {
+     "sentimentAnalysis": "De tætsluttende ørekopper reducerer effektivt omgivende lyd i mange hverdagssituationer på trods af manglende aktiv støjreduktion.",
+     "simpleTitle": "Passiv isolering dæmper baggrundsstøj",
+     "bias": "positive",
+     "key": "isolation",
+     "groupId": "92ff9ec4-351b-4d7d-b2c4-ab901f83ed8e"
+    },
+    "bass can be too strong or overall sound less refined": {
+     "sentimentAnalysis": "Nogle lyttere oplever lav lydstyrke, for meget bas eller mindre klarhed og raffinement end i dyrere alternativer.",
+     "simpleTitle": "Bassen kan være for kraftig, og lyden mindre raffineret",
      "bias": "negative",
      "key": "sound",
-     "groupId": "6b53349e-ce5c-46fc-87eb-da076e88d456"
-    },
-    "passive isolation works, but there is no active noise cancellation": {
-     "sentimentAnalysis": "De lukkede ørekopper dæmper en del baggrundsstøj, men aktiv støjreduktion mangler eller savnes ikke af nogle lyttere.",
-     "simpleTitle": "Passiv isolering virker, men der er ingen aktiv støjreduktion",
-     "bias": "meh",
-     "key": "isolation",
-     "groupId": "e923d78c-038f-44c6-bde4-ccf9042a8142"
+     "groupId": "a8dd7a11-06a3-4dd4-9c0b-e5268f559c56"
     }
    },
    "grouping": {
-    "6b53349e-ce5c-46fc-87eb-da076e88d456": {
+    "a8dd7a11-06a3-4dd4-9c0b-e5268f559c56": {
      "title": "Lydkvalitet",
-     "id": "6b53349e-ce5c-46fc-87eb-da076e88d456",
+     "id": "a8dd7a11-06a3-4dd4-9c0b-e5268f559c56",
      "references": [
       "75fe21a4-1367-4d79-a7fa-4b405ecfed7d",
       "b612a3ba-891b-4ce5-a7f9-296764c3e287",
@@ -400,8 +407,8 @@
       "894d1dd5-c5d7-49fc-bac4-b81440552dc5",
       "58c1e2b3-e72e-42e8-ae23-859af1c63e90",
       "0093b40d-5d36-45a3-aacb-798c4c79c917",
-      "a70b8002-ed91-4bae-8ea6-578408e15026",
       "38d7817c-8900-49a7-a3c1-cef4c8020fc6",
+      "a70b8002-ed91-4bae-8ea6-578408e15026",
       "b9b6e5ff-3f07-44a9-a06a-03f9e5e3e1f8",
       "caff16f9-3620-4032-8527-01d27c26b748",
       "62e65393-9b8c-4007-a700-75a82576a6d8",
@@ -497,18 +504,18 @@
       "5af5a2e1-34cc-47cc-83e2-9677ef9017f0"
      ]
     },
-    "7d1b4bfc-5d34-4ab0-ba90-ef829a27db11": {
+    "9248db2b-5916-4e6d-ad97-855e97507f04": {
      "title": "Komfort og pasform",
-     "id": "7d1b4bfc-5d34-4ab0-ba90-ef829a27db11",
+     "id": "9248db2b-5916-4e6d-ad97-855e97507f04",
      "references": [
       "b612a3ba-891b-4ce5-a7f9-296764c3e287",
       "4da6daf3-57a3-429d-8609-b414b4c7e617",
+      "f60c9add-d362-4713-8a3b-23db6f1c572b",
       "bf0fb046-4c92-47f1-bd1d-d1c8e8d57161",
       "45b9abf6-65c4-4084-bca8-bda0c5d26278",
       "30416391-b8bf-4e0d-bafb-80e004f18686",
       "79041625-29d7-4657-b25a-35b94ac8267d",
       "90ecf855-3828-47e0-8b32-a429618160f3",
-      "48ae16b3-422f-41f8-9c04-1598d81f336",
       "2b365f08-8603-487e-95c7-e9e80b53bd83",
       "9c84a337-54e5-4c66-832c-5f40382ed27c",
       "7a4628ee-2893-448a-aa6b-31f942454da0",
@@ -519,12 +526,15 @@
       "ccaa41b7-c0ea-4fab-8d81-58ffce8afc61",
       "6d541608-cc2b-4086-975a-ff4a80385e30",
       "b3c4bdce-1c76-43de-8ca0-9e51bbdd0563",
+      "b2b94433-82aa-4d09-8dba-a3c6c4edbc4c",
       "a63784e1-d716-4242-8cdd-bfad8e52f824",
       "92f10b63-49d8-486a-b3ba-f7532e824e08",
-      "b2b94433-82aa-4d09-8dba-a3c6c4edbc4c",
+      "e6207065-43cc-4c1f-acbf-32a22005da8e",
       "f4f04451-9a01-462b-8b50-528b0c342955",
       "d45b2407-9864-45c1-9574-a31cc43a5bbf",
       "d89389a7-774b-4585-9cee-487fe2fcaaec",
+      "07adec23-c6e7-48b5-94f0-301ad6b4107f",
+      "3d7c5515-2a01-4423-8ecd-86a075ed2ab5",
       "f931dbf6-d32c-47ed-9e9b-f97951d83e4c",
       "58ace6e7-4ff6-48ee-8bb1-3dc63142526c",
       "26f122fd-42ab-44b7-a0fd-d22e3843c21f",
@@ -532,16 +542,17 @@
       "87b324a5-ea40-4d7b-92a8-cf839bb790b6",
       "a9247849-81e4-4ec1-a84e-11b75b46182c",
       "6b6a38c7-f37a-4ef8-a683-323cceb8ad37",
+      "4267562c-91c6-481e-931f-f8b3f96d7393",
+      "8738b78c-2cf1-46b7-a2cd-002659123010",
       "423eb1c5-55ad-434b-82a0-5f5968a5f3ff",
       "5af5a2e1-34cc-47cc-83e2-9677ef9017f0"
      ]
     },
-    "e364eb23-6bfa-4762-b219-987ffeb0cb7e": {
+    "0ab3b67f-0ee4-4393-8afb-e1470eef2faa": {
      "title": "Pris og værdi",
-     "id": "e364eb23-6bfa-4762-b219-987ffeb0cb7e",
+     "id": "0ab3b67f-0ee4-4393-8afb-e1470eef2faa",
      "references": [
       "75fe21a4-1367-4d79-a7fa-4b405ecfed7d",
-      "4da6daf3-57a3-429d-8609-b414b4c7e617",
       "894d1dd5-c5d7-49fc-bac4-b81440552dc5",
       "88fa4a26-873e-446e-b6fb-67543d184299",
       "58c1e2b3-e72e-42e8-ae23-859af1c63e90",
@@ -551,11 +562,17 @@
       "84cc6431-0a27-415a-8720-85163897f07e",
       "008343c6-d52a-4233-a47d-bef172b2beef",
       "c45c43a0-7692-48d0-b2e4-85834ebf1d2d",
+      "48ae16b3-422f-41f8-9c04-1598d81f336",
+      "7a4628ee-2893-448a-aa6b-31f942454da0",
+      "3dcda044-42f3-4748-a307-c8b0398ee7c8",
+      "2ab0b951-a48a-4b97-9e39-5bc8367f30b2",
+      "dc7299f1-6438-483e-a45a-c99366cd8a7d",
+      "89d47f0c-07ba-48e1-88ae-372fba216495",
       "2dfaf6e5-c6d7-40a4-9548-abf312348039",
       "026ace56-f72c-4b47-966a-b46b52ad33eb",
       "1a1af8e5-f0b4-45e3-8160-c0cf50523c3c",
       "7f15f2e7-1535-4a54-aff4-875f060c9efc",
-      "e6207065-43cc-4c1f-acbf-32a22005da8e",
+      "425e8835-2652-4b30-9bd9-6cb3619d45cc",
       "d13eda78-e046-422e-9e36-ff7d94b784dd",
       "78c151bd-9029-49d3-b85f-65b05fde7993",
       "8b7ab575-0e92-40eb-8e2a-e5e99dedc567",
@@ -574,9 +591,9 @@
       "423eb1c5-55ad-434b-82a0-5f5968a5f3ff"
      ]
     },
-    "e923d78c-038f-44c6-bde4-ccf9042a8142": {
+    "92ff9ec4-351b-4d7d-b2c4-ab901f83ed8e": {
      "title": "Støjisolering",
-     "id": "e923d78c-038f-44c6-bde4-ccf9042a8142",
+     "id": "92ff9ec4-351b-4d7d-b2c4-ab901f83ed8e",
      "references": [
       "4da6daf3-57a3-429d-8609-b414b4c7e617",
       "90ecf855-3828-47e0-8b32-a429618160f3",

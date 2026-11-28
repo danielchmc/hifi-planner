@@ -113,8 +113,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 14,
-     "availableQuantity": 260,
+     "numberOfStoresExperience": 15,
+     "availableQuantity": 243,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -192,8 +192,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 12,
-     "availableQuantity": 227,
+     "numberOfStoresExperience": 11,
+     "availableQuantity": 218,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -215,25 +215,26 @@
   "variantNavigationType": "dropDown",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFORTECBL6 får en positiv vurdering som et pålideligt kabel i god kvalitet, der fungerer som tilsigtet. Forbindelsen leverer en klar og ren lyd med en varm og behagelig klang. Den fleksible konstruktion og enkle betjening gør kablet til et praktisk valg til kompatibelt Argon Forte-udstyr.",
+   "summary": "ARGFORTECBL6 er et enkelt kabel, der fungerer pålideligt og giver et solidt indtryk af god kvalitet. For kompatibelt udstyr leverer forbindelsen en ren, varm og fyldig lyd. Kompatibiliteten er dog noget begrænset, da en anmeldelse angiver brug med Argon Forte A5.",
    "headlines": {
-    "works as intended": {
-     "sentimentAnalysis": "Kablet beskrives konsekvent som korrekt og pålideligt fungerende.",
-     "simpleTitle": "Fungerer som tilsigtet",
+    "works as expected": {
+     "sentimentAnalysis": "Kablet beskrives gentagne gange som korrekt og pålideligt fungerende.",
+     "simpleTitle": "Virker som forventet",
      "bias": "positive",
-     "key": "works-as-intended",
-     "groupId": "0087536c-d98b-4eaa-b45c-acdb1a592d3a"
+     "key": "functionality",
+     "groupId": "a7024633-8473-4eb8-8260-742f2d0bc747"
     }
    },
    "grouping": {
-    "0087536c-d98b-4eaa-b45c-acdb1a592d3a": {
+    "a7024633-8473-4eb8-8260-742f2d0bc747": {
      "title": "Funktionalitet",
-     "id": "0087536c-d98b-4eaa-b45c-acdb1a592d3a",
+     "id": "a7024633-8473-4eb8-8260-742f2d0bc747",
      "references": [
       "7cc84383-7a29-4b61-9261-aca2c9736185",
       "f36cc980-90e1-4186-ba22-aafa592e46ac",
       "90380304-7192-40fa-a9fa-e76f297cf80f",
-      "2294bf81-06e1-4fcf-b666-722a73e41979"
+      "2294bf81-06e1-4fcf-b666-722a73e41979",
+      "ec1121c3-adfe-491d-9c70-63021f4b9d6f"
      ]
     }
    },

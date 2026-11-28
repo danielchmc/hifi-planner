@@ -246,7 +246,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 120,
+     "availableQuantity": 105,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -356,8 +356,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 195,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 168,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -487,8 +487,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 22,
-     "availableQuantity": 100,
+     "numberOfStoresExperience": 23,
+     "availableQuantity": 85,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -607,7 +607,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 22,
-     "availableQuantity": 76,
+     "availableQuantity": 30,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -733,62 +733,48 @@
   "bundleRelations": [],
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFENRISA55 leverer en imponerende klar, varm og rummelig stereogengivelse til prisen med sprød bas, detaljerede diskanttoner og en medrivende opgradering i forhold til typiske tv-højttalere og soundbarer. Den indbyggede forstærker samt Bluetooth, HDMI og optiske tilslutninger gør opsætningen enkel til tv, musik og vinyl. Meningerne er delte om basdybde og klangbalance, hvor nogle ønsker en subwoofer eller tonekontroller, mens enkelte nævner støj, Bluetooth-forsinkelse og forbindelsesbegrænsninger.",
+   "summary": "ARGFENRISA55 leverer varm, klar og detaljeret stereolyd med en energisk og rummelig gengivelse, der løfter både tv, film og musik markant. Den indbyggede forstærker, Bluetooth og de mange kablede indgange gør opsætningen meget enkel, mens det kompakte design og det stærke forhold mellem pris og ydelse får stor ros. Bassen er generelt tilfredsstillende og velkontrolleret, men lyttere, der ønsker meget dyb bas, kan få glæde af en subwoofer; enkelte nævner også manglende tonekontroller, støj eller forsinkelse fra bestemte kilder samt ujævnhed ved høj lydstyrke.",
    "headlines": {
-    "clear, detailed and enjoyable sound": {
-     "sentimentAnalysis": "Anmeldelserne roser ofte den klare, afbalancerede, detaljerede og rummelige lyd til musik, film og tv.",
-     "simpleTitle": "Klar, detaljeret og behagelig lyd",
+    "clear, detailed and immersive sound": {
+     "sentimentAnalysis": "Anmeldelserne roser den klare, afbalancerede, detaljerede og behagelige lyd til tv, film og mange musikgenrer.",
+     "simpleTitle": "Klar, detaljeret og rummelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "baf78152-aa4c-418c-a4c7-70fc01764356"
+     "key": "sound",
+     "groupId": "728bdddf-f5ec-4cbe-962e-8c344d1947f4"
     },
-    "simple, versatile plug-and-play connectivity": {
-     "sentimentAnalysis": "Anmeldelserne fremhæver nem opsætning, automatisk kildeskift og bred understøttelse af Bluetooth, HDMI, optiske og RCA-kilder, streaming og pladespillere.",
-     "simpleTitle": "Enkel og alsidig plug-and-play-tilslutning",
+    "deep bass, with room for a subwoofer": {
+     "sentimentAnalysis": "Bassen beskrives ofte som fyldig, dyb eller tilstrækkelig, mens flere anbefaler en subwoofer for mere bastryk.",
+     "simpleTitle": "Dyb bas med mulighed for subwoofer",
      "bias": "positive",
-     "key": "connectivity-setup",
-     "groupId": "3e104e62-102a-452f-80ef-bea5f71efe5f"
+     "key": "sound",
+     "groupId": "728bdddf-f5ec-4cbe-962e-8c344d1947f4"
     },
-    "attractive, compact and well-built design": {
-     "sentimentAnalysis": "Højttalerne beskrives gentagne gange som flotte, diskrete, kompakte og velbyggede, og flere finishvarianter værdsættes i hjemmet.",
-     "simpleTitle": "Flot, kompakt og solidt design",
+    "simple setup with flexible connections": {
+     "sentimentAnalysis": "Den indbyggede forstærker samt Bluetooth, HDMI, optiske og andre indgange gør det nemt at tilslutte tv, pladespillere, telefoner og computere.",
+     "simpleTitle": "Enkel opsætning med fleksible tilslutninger",
      "bias": "positive",
-     "key": "design",
-     "groupId": "1baf146b-4a0f-4ae4-a87b-910c24c6ae99"
+     "key": "setup",
+     "groupId": "fdce7a9a-1713-4eb2-8cda-f190e9448045"
     },
-    "excellent value compared with pricier alternatives": {
-     "sentimentAnalysis": "God lyd, mange funktioner og sammenligninger med dyrere systemer gør prisværdien til et gennemgående positivt tema.",
-     "simpleTitle": "Fremragende værdi sammenlignet med dyrere alternativer",
+    "excellent value and attractive design": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent højttalerne som stilfulde, velbyggede og usædvanligt gode til prisen.",
+     "simpleTitle": "Fremragende værdi og flot design",
      "bias": "positive",
-     "key": "value",
-     "groupId": "6d4d8eeb-0e0c-4f16-9fe9-3c2ee2c7a635"
+     "key": "value-design",
+     "groupId": "6b609344-a5b3-42eb-9099-e25307fd6383"
     },
-    "strong bass, but a subwoofer can add deeper impact": {
-     "sentimentAnalysis": "Mange finder den indbyggede bas tilstrækkelig eller behagelig, mens flere anbefaler en subwoofer for mere dybde i basrig musik og film.",
-     "simpleTitle": "God bas, men en subwoofer kan give mere dybde",
-     "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "baf78152-aa4c-418c-a4c7-70fc01764356"
-    },
-    "some listeners find the tonal balance uneven": {
-     "sentimentAnalysis": "Et mindretal oplever for kraftig bas, tilbageholdte mellemtoner eller diskant, hvilket viser forskellige klangpræferencer og mulig nytte af en equalizer.",
-     "simpleTitle": "Nogle lyttere synes, at klangbalancen er ujævn",
+    "limited tone control and occasional source issues": {
+     "sentimentAnalysis": "Et mindretal kritiserer manglende justering af bas og diskant, mens andre nævner analog støj, Bluetooth-forsinkelse ved tv eller en ujævn frekvensgang, der kan kræve equalizer.",
+     "simpleTitle": "Begrænset tonekontrol og lejlighedsvise kildeproblemer",
      "bias": "negative",
-     "key": "sound-quality",
-     "groupId": "baf78152-aa4c-418c-a4c7-70fc01764356"
-    },
-    "integrated amplification makes TV use especially convenient": {
-     "sentimentAnalysis": "Indbygget forstærker, HDMI-styring og tydeligere tale gør højttalerne til et populært alternativ til soundbarer til tv.",
-     "simpleTitle": "Den indbyggede forstærker gør tv-brug særligt praktisk",
-     "bias": "positive",
-     "key": "connectivity-setup",
-     "groupId": "3e104e62-102a-452f-80ef-bea5f71efe5f"
+     "key": "setup",
+     "groupId": "fdce7a9a-1713-4eb2-8cda-f190e9448045"
     }
    },
    "grouping": {
-    "baf78152-aa4c-418c-a4c7-70fc01764356": {
+    "728bdddf-f5ec-4cbe-962e-8c344d1947f4": {
      "title": "Lydkvalitet",
-     "id": "baf78152-aa4c-418c-a4c7-70fc01764356",
+     "id": "728bdddf-f5ec-4cbe-962e-8c344d1947f4",
      "references": [
       "2cc778d7-409d-4457-8fd8-d05ef995b09d",
       "8f1d3304-3869-41a0-8478-1118da6f1ea5",
@@ -822,9 +808,9 @@
       "cb000795-22c3-482e-9777-97144907f278",
       "edb4b489-94ef-4103-8249-65533f8c2a2b",
       "2011f459-4521-4500-a39b-b305386d903a",
+      "57e69917-0aa7-4fe6-95e5-029a17d815b2",
       "1579b7a1-e594-41e4-bcdd-bce0afa11eeb",
       "4f2c49d7-283f-40be-bf11-37fba7cb2f13",
-      "1adad4fc-0ee4-4ab4-a8ae-0f71ee9db73e",
       "230b6f8e-5e63-4755-8c3c-ba1576e393d1",
       "3e067644-2570-4e3c-9d8f-edb7d9ff31dc",
       "bb0d0f35-ec76-4e14-ab09-ca43ea611d5c",
@@ -839,7 +825,7 @@
       "f15130ce-0503-46cb-a842-3341a638bb7f",
       "72d20a70-dfe9-475d-bed5-851bf8351591",
       "515cdf2a-5039-4e52-8eb5-7120c5635506",
-      "2f971cd1-3425-4278-b010-3dc81db55827",
+      "938cdb5c-568e-4432-82e3-40f25f6cda4d",
       "871563cb-0973-42fc-9c6e-c979fd2bfcfb",
       "c3319884-faaf-4951-83ab-34564479503c",
       "30d298e6-4f6b-41d5-a85d-39d8aee5fe39",
@@ -860,78 +846,69 @@
       "bfba8110-7abb-418a-bd32-cea265a77356"
      ]
     },
-    "6d4d8eeb-0e0c-4f16-9fe9-3c2ee2c7a635": {
-     "title": "Pris og kvalitet",
-     "id": "6d4d8eeb-0e0c-4f16-9fe9-3c2ee2c7a635",
+    "6b609344-a5b3-42eb-9099-e25307fd6383": {
+     "title": "Design og værdi",
+     "id": "6b609344-a5b3-42eb-9099-e25307fd6383",
      "references": [
       "8f1d3304-3869-41a0-8478-1118da6f1ea5",
-      "37ff7172-f3b9-4ae2-89ae-2d24d9430d4a",
-      "c1327687-6b06-4caf-8710-1b5c424f2738",
-      "62cb111c-0e7b-4cc2-9d28-1a1893c36bef",
-      "ced5e012-bcde-4f5e-b117-e529364805fd",
-      "d0395d90-cc24-4b8b-973b-a87c9f76e8ff",
-      "8bf2d763-e217-4949-8237-dc5ab6f89c5f",
-      "dad18e1c-ceaa-4e3e-bcca-a30f62970bda",
-      "cb000795-22c3-482e-9777-97144907f278",
-      "2011f459-4521-4500-a39b-b305386d903a",
-      "1adad4fc-0ee4-4ab4-a8ae-0f71ee9db73e",
-      "3e067644-2570-4e3c-9d8f-edb7d9ff31dc",
-      "30d298e6-4f6b-41d5-a85d-39d8aee5fe39",
-      "1c93fb91-847d-417d-82f0-e880514f5179",
-      "230616a0-eec7-47ad-b701-0c875c65c12b",
-      "0a35619f-adde-4583-be55-83a7cd8dac44",
-      "d805379b-a556-47b0-a332-bfb6d777476b",
-      "72d20a70-dfe9-475d-bed5-851bf8351591",
-      "515cdf2a-5039-4e52-8eb5-7120c5635506",
-      "871563cb-0973-42fc-9c6e-c979fd2bfcfb",
-      "c3319884-faaf-4951-83ab-34564479503c",
-      "72d95752-9228-43d8-98f8-8355fb596970",
-      "c85599a2-db41-4499-8065-d9f1770e4b58"
-     ]
-    },
-    "3e104e62-102a-452f-80ef-bea5f71efe5f": {
-     "title": "Tilslutning og opsætning",
-     "id": "3e104e62-102a-452f-80ef-bea5f71efe5f",
-     "references": [
-      "2cc778d7-409d-4457-8fd8-d05ef995b09d",
-      "37ff7172-f3b9-4ae2-89ae-2d24d9430d4a",
-      "62cb111c-0e7b-4cc2-9d28-1a1893c36bef",
-      "ad845320-42fc-4447-9287-f238e25542c1",
-      "c9bfc1e6-13c8-48b0-817c-3382ea733a37",
-      "3f4d88b6-ef5f-4d41-9a63-41c04005d58a",
-      "4c1c999c-8b2f-4178-a520-6a39512d9c87",
-      "57f8b7a9-4311-44c5-88c8-39f5478c8730",
-      "af1e07f8-877a-4fac-b74c-6452a75862a9",
-      "761a8156-d7c5-42c4-aab6-08f146b5c443",
-      "4f2c49d7-283f-40be-bf11-37fba7cb2f13",
-      "1adad4fc-0ee4-4ab4-a8ae-0f71ee9db73e",
-      "3e067644-2570-4e3c-9d8f-edb7d9ff31dc",
-      "fc9cb1b4-ee84-4b11-9d38-036fca388cf3",
-      "938cdb5c-568e-4432-82e3-40f25f6cda4d",
-      "c6ebdf7c-471a-4d54-a7aa-c3da2c7c3fa2",
-      "56002ecc-f93c-4ae8-b73c-448071073ddd",
-      "06b6a3b5-2438-41fc-a20e-64cb989a60cf",
-      "29e3e28b-5764-4a82-9b69-d70473ac82c1",
-      "bfba8110-7abb-418a-bd32-cea265a77356"
-     ]
-    },
-    "1baf146b-4a0f-4ae4-a87b-910c24c6ae99": {
-     "title": "Design og byggekvalitet",
-     "id": "1baf146b-4a0f-4ae4-a87b-910c24c6ae99",
-     "references": [
-      "4a90f5f5-07fa-4ccf-a611-1da204f0da65",
+      "4976bf9d-f1dc-49f2-b735-cbb8efe16ec0",
       "7704a237-4231-4367-9b61-9b0ea28fd8ec",
       "53e55ae6-d8bc-4143-b47c-240cf86b5153",
       "3615bcf8-2eb7-4d36-bb46-95334a1b83e4",
       "5ef5658b-4863-43dc-a17e-dd97e04571e7",
       "07ef0a43-9456-48d4-a0b5-96951ce84e55",
       "0ca6f035-3394-4db7-be1b-f975e4ad5253",
+      "d0395d90-cc24-4b8b-973b-a87c9f76e8ff",
+      "dad18e1c-ceaa-4e3e-bcca-a30f62970bda",
+      "761a8156-d7c5-42c4-aab6-08f146b5c443",
+      "cb000795-22c3-482e-9777-97144907f278",
+      "2011f459-4521-4500-a39b-b305386d903a",
       "57e69917-0aa7-4fe6-95e5-029a17d815b2",
       "1579b7a1-e594-41e4-bcdd-bce0afa11eeb",
-      "bb0d0f35-ec76-4e14-ab09-ca43ea611d5c",
+      "1adad4fc-0ee4-4ab4-a8ae-0f71ee9db73e",
+      "230b6f8e-5e63-4755-8c3c-ba1576e393d1",
+      "9e0c30ef-5c68-4432-87e7-e0a868151e86",
+      "bd0b208d-8477-43ea-ac32-b12cce0d8ae2",
+      "0a35619f-adde-4583-be55-83a7cd8dac44",
       "bcb471dc-f0d9-4a10-9023-8a7a62722cae",
+      "d805379b-a556-47b0-a332-bfb6d777476b",
+      "230616a0-eec7-47ad-b701-0c875c65c12b",
+      "a1575a1a-c431-4625-b276-5a45b6898df0",
+      "72d20a70-dfe9-475d-bed5-851bf8351591",
+      "515cdf2a-5039-4e52-8eb5-7120c5635506",
+      "871563cb-0973-42fc-9c6e-c979fd2bfcfb",
+      "c3319884-faaf-4951-83ab-34564479503c",
+      "30d298e6-4f6b-41d5-a85d-39d8aee5fe39",
+      "1c93fb91-847d-417d-82f0-e880514f5179",
+      "f13faffa-2dcb-425f-b13d-33ab26e15fac",
+      "5cecb16c-728d-4f7e-a8f2-ddf72c0d8a10",
       "c6ebdf7c-471a-4d54-a7aa-c3da2c7c3fa2",
+      "c85599a2-db41-4499-8065-d9f1770e4b58",
+      "29e3e28b-5764-4a82-9b69-d70473ac82c1"
+     ]
+    },
+    "fdce7a9a-1713-4eb2-8cda-f190e9448045": {
+     "title": "Tilslutning og opsætning",
+     "id": "fdce7a9a-1713-4eb2-8cda-f190e9448045",
+     "references": [
+      "2cc778d7-409d-4457-8fd8-d05ef995b09d",
+      "37ff7172-f3b9-4ae2-89ae-2d24d9430d4a",
+      "62cb111c-0e7b-4cc2-9d28-1a1893c36bef",
+      "ad845320-42fc-4447-9287-f238e25542c1",
+      "32a84d26-7955-4662-bc2f-ba5adc2ddda7",
+      "c9bfc1e6-13c8-48b0-817c-3382ea733a37",
+      "3f4d88b6-ef5f-4d41-9a63-41c04005d58a",
+      "4c1c999c-8b2f-4178-a520-6a39512d9c87",
+      "af1e07f8-877a-4fac-b74c-6452a75862a9",
+      "1adad4fc-0ee4-4ab4-a8ae-0f71ee9db73e",
+      "3e067644-2570-4e3c-9d8f-edb7d9ff31dc",
+      "fc9cb1b4-ee84-4b11-9d38-036fca388cf3",
       "938cdb5c-568e-4432-82e3-40f25f6cda4d",
+      "eb7a770b-4c07-442f-9cf5-7e705e330df2",
+      "c6ebdf7c-471a-4d54-a7aa-c3da2c7c3fa2",
+      "56002ecc-f93c-4ae8-b73c-448071073ddd",
+      "06b6a3b5-2438-41fc-a20e-64cb989a60cf",
+      "29e3e28b-5764-4a82-9b69-d70473ac82c1",
       "bfba8110-7abb-418a-bd32-cea265a77356"
      ]
     }

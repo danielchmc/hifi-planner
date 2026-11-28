@@ -110,8 +110,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 7,
-     "availableQuantity": 113,
+     "numberOfStoresExperience": 6,
+     "availableQuantity": 110,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -190,7 +190,7 @@
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
      "numberOfStoresExperience": 10,
-     "availableQuantity": 272,
+     "availableQuantity": 246,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -268,8 +268,8 @@
      "inStock": true,
      "description": "På lager. Leveringstid 1-2 hverdage",
      "canBuyOnline": true,
-     "numberOfStoresExperience": 6,
-     "availableQuantity": 132,
+     "numberOfStoresExperience": 7,
+     "availableQuantity": 107,
      "inventoryStatusType": "warehouseInStock"
     },
     "images": [
@@ -291,67 +291,67 @@
   "variantNavigationType": "sizeSelector",
   "displayBookDemo": true,
   "reviews": {
-   "summary": "ARGFENRISCBLANX leverer en varm, fyldig og omsluttende lytteoplevelse med klar og tilfredsstillende lyd. Justerbare kabellængder, enkel betjening og solid byggekvalitet gør produktet særligt praktisk. Hurtig levering, god service og en attraktiv pris fuldender det meget positive indtryk.",
+   "summary": "Et vellavet og pålideligt kabel, der leverer klar og behagelig lyd samt enkel betjening til en fair pris. Fleksible længdemuligheder og hurtig levering giver ekstra praktisk værdi. Varm, ren lyd og solid anvendelighed i hverdagen gør produktet nemt at anbefale.",
    "headlines": {
-    "reliable overall quality": {
-     "sentimentAnalysis": "Flere anmeldelser beskriver produktet eller kablet som af god kvalitet og i overensstemmelse med forventningerne.",
-     "simpleTitle": "Pålidelig samlet kvalitet",
+    "solid overall quality": {
+     "sentimentAnalysis": "Anmeldelserne beskriver konsekvent kablet som af god kvalitet, pålideligt og som forventet.",
+     "simpleTitle": "Solid overordnet kvalitet",
      "bias": "positive",
-     "key": "product-quality",
-     "groupId": "b0cdb0c2-0d5d-4a5c-9e58-decba1611f6c"
-    },
-    "fast delivery and helpful service": {
-     "sentimentAnalysis": "Service og levering roses gennem positiv servicefeedback, hurtig afsendelse og hurtig modtagelse.",
-     "simpleTitle": "Hurtig levering og god service",
-     "bias": "positive",
-     "key": "delivery-service",
-     "groupId": "945012ec-7b9f-4495-930a-5734202c8a4a"
+     "key": "build_quality",
+     "groupId": "89c165df-0f53-44d0-8a17-867279809aed"
     },
     "flexible cable length options": {
-     "sentimentAnalysis": "Muligheden for at vælge eller få et længere kabel fremhæves som en praktisk fordel.",
-     "simpleTitle": "Fleksible muligheder for kabellængde",
+     "sentimentAnalysis": "Muligheden for at vælge eller få et længere kabel værdsættes for den praktiske fleksibilitet.",
+     "simpleTitle": "Fleksible kabellængder",
      "bias": "positive",
-     "key": "cable-length",
-     "groupId": "88c1c79a-9ea5-470d-8a0b-ac63b7650786"
+     "key": "cable_length",
+     "groupId": "aba7fd24-db64-4325-8c32-1056351c43cb"
     },
-    "clear, good sound": {
-     "sentimentAnalysis": "Lydkvaliteten vurderes som god, især til prisen, og højttalerne beskrives som vellydende.",
-     "simpleTitle": "Klar og god lyd",
+    "clear, pleasing sound": {
+     "sentimentAnalysis": "Kablet forbindes med velfungerende højttalere og god lyd til prisen.",
+     "simpleTitle": "Klar og behagelig lyd",
      "bias": "positive",
-     "key": "sound-quality",
-     "groupId": "109f797a-1724-45d7-92a0-37d0eb2ec600"
+     "key": "sound_quality",
+     "groupId": "ee47c7d2-65e7-4aed-84cf-37c6363c8979"
+    },
+    "fast delivery": {
+     "sentimentAnalysis": "Bestillingsoplevelsen roses for hurtig levering.",
+     "simpleTitle": "Hurtig levering",
+     "bias": "positive",
+     "key": "delivery_service",
+     "groupId": "c0a44029-cd53-4016-866d-356b23961e08"
     }
    },
    "grouping": {
-    "b0cdb0c2-0d5d-4a5c-9e58-decba1611f6c": {
-     "title": "Produktkvalitet",
-     "id": "b0cdb0c2-0d5d-4a5c-9e58-decba1611f6c",
+    "89c165df-0f53-44d0-8a17-867279809aed": {
+     "title": "Byggekvalitet",
+     "id": "89c165df-0f53-44d0-8a17-867279809aed",
      "references": [
       "d7b04f80-6ea2-45a1-936b-c6f6bdb1563a",
       "bd14ed95-0faf-418e-a4d7-85849e9cd8a6",
       "8cdbed69-051a-4467-a37c-6eb55c17b569"
      ]
     },
-    "945012ec-7b9f-4495-930a-5734202c8a4a": {
+    "c0a44029-cd53-4016-866d-356b23961e08": {
      "title": "Levering og service",
-     "id": "945012ec-7b9f-4495-930a-5734202c8a4a",
+     "id": "c0a44029-cd53-4016-866d-356b23961e08",
      "references": [
       "8562431f-f54f-40b5-9834-441a9f5692ba",
       "a664b35c-3141-4e55-bad7-3e662664c855",
       "0345d05f-5be2-41b4-a5c6-9e0048dca510"
      ]
     },
-    "88c1c79a-9ea5-470d-8a0b-ac63b7650786": {
+    "aba7fd24-db64-4325-8c32-1056351c43cb": {
      "title": "Kabellængde",
-     "id": "88c1c79a-9ea5-470d-8a0b-ac63b7650786",
+     "id": "aba7fd24-db64-4325-8c32-1056351c43cb",
      "references": [
       "09a3f0e3-1626-414d-8af9-946a18c9ffa0",
       "befc6eab-0e85-4f4a-a2b1-f78a19c01d02"
      ]
     },
-    "109f797a-1724-45d7-92a0-37d0eb2ec600": {
+    "ee47c7d2-65e7-4aed-84cf-37c6363c8979": {
      "title": "Lydkvalitet",
-     "id": "109f797a-1724-45d7-92a0-37d0eb2ec600",
+     "id": "ee47c7d2-65e7-4aed-84cf-37c6363c8979",
      "references": [
       "9fe20440-8d1f-4dff-b5f8-cfac724335d1",
       "8cdbed69-051a-4467-a37c-6eb55c17b569"
